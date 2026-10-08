@@ -11,3 +11,4 @@
 body{font-size:1rem}.head-inner{flex-wrap:wrap}.header-nav{flex-wrap:wrap;justify-content:center}.article-title,.article-body,.context-rail{overflow-wrap:break-word}html{scroll-padding-top:var(--header-offset,110px)}.article-section{scroll-margin-top:var(--header-offset,110px)}.contents,.context-rail{top:var(--header-offset,110px)}
 @media(max-width:760px){.header-nav{justify-content:space-between}.wordmark{font-size:1.5rem}}
 @media print{details::details-content{content-visibility:visible!important;height:auto!important}.article-body{max-width:none}.citation-card{display:none}}
+@media(min-width:1101px){.context-rail{max-height:calc(100vh - var(--header-offset,110px) - 20px);overflow:auto}.contents{max-height:calc(100vh - var(--header-offset,110px) - 20px)}}
