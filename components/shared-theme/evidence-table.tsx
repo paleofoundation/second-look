@@ -3,6 +3,7 @@
 import {useRef,useState,type ReactNode} from 'react';
 import {Dialog} from 'radix-ui';
 import {FileText,ChevronDown,X} from 'lucide-react';
+import {normalizeCitationSentence} from './citations';
 import {describeEvidenceConfidence,type ConfidenceRow} from './evidence-confidence';
 
 /** PepsAnon EvidenceTable/ResearchPanel port. Canonical identities replace URL dedupe.
@@ -13,7 +14,7 @@ export type CitationRenderer=(sourceIds:string[])=>ReactNode;
 const validUrl=(url?:string|null)=>!!url&&(/^https:\/\//.test(url)||/^\/(?!\/)/.test(url));
 function SourceLink({url,children}:{url?:string|null;children:ReactNode}){return validUrl(url)?<a href={url!} target={url!.startsWith('https:')?'_blank':undefined} rel="noreferrer">{children}</a>:<span>{children} unavailable</span>}
 export function EvidenceTable({rows,sources,cite,emptyMessage='No completed outcome synthesis for this target yet. Available context and specific gaps follow.'}:{rows:EvidenceFinding[];sources:EvidenceSource[];cite:CitationRenderer;emptyMessage?:string}){
- const cited=(text:string,ids:string[],mapped?:{text:string;sources:string[]}[])=>mapped?mapped.map((part,i)=><span key={i}>{part.text}{cite(part.sources)}</span>):Array.from(new Intl.Segmenter('en',{granularity:'sentence'}).segment(text),(part,i)=><span key={i}>{part.segment}{cite(ids)}{' '}</span>);
+ const cited=(text:string,ids:string[],mapped?:{text:string;sources:string[]}[])=>mapped?mapped.map((part,i)=><span key={i}>{normalizeCitationSentence(part.text)}{cite(part.sources)}{' '}</span>):Array.from(new Intl.Segmenter('en',{granularity:'sentence'}).segment(text),(part,i)=><span key={i}>{normalizeCitationSentence(part.segment)}{cite(ids)}{' '}</span>);
  const [selected,setSelected]=useState<EvidenceFinding|null>(null);
  const [portalContainer,setPortalContainer]=useState<HTMLElement|undefined>(undefined);
  const opener=useRef<HTMLButtonElement|null>(null);

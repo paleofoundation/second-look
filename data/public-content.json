@@ -2423,24 +2423,27 @@
       "slug": "/drugs/metformin",
       "title": "Metformin",
       "type": "Drug",
-      "description": "Metformin repurposing research: Long COVID, Parkinson disease, schizophrenia and other investigated uses.",
+      "description": "Metformin repurposing research across Parkinson disease, schizophrenia, sarcopenia and Long COVID, with findings and limits kept specific to each use.",
       "topicIds": [
         "DR001",
-        "DR002"
+        "DR002",
+        "DR013",
+        "DR014",
+        "DR015"
       ],
       "sections": [
         {
           "id": "overview",
           "label": "Overview",
           "title": "What is metformin?",
-          "paragraph": "Metformin is a medicine used for type 2 diabetes. Repurposing research asks whether it can change outcomes beyond glucose control: the recorded trials address later Long COVID after acute infection, recovery from established symptoms, and Parkinson disease. The results differ by question: COVID-OUT’s reported lower diagnosis hazard is provisional pending correction review, ACTIV-6 did not meet its primary efficacy threshold, and the recorded treatment and Parkinson comparisons did not demonstrate clinical benefit. The schizophrenia report is exploratory, while the sarcopenia material is a review rather than independently acquired trial evidence. These findings do not establish an overall benefit across diseases, and safety, interactions and current approved uses still need separate assessment.",
+          "paragraph": "Metformin is a medicine used for type 2 diabetes. Repurposing research represented here spans Parkinson disease, cognition-related questions in schizophrenia, sarcopenia and physical function, and Long COVID prevention and treatment. The source types differ: a Parkinson trial, an exploratory schizophrenia analysis, a sarcopenia review and separate Long COVID trials answer distinct questions. These findings do not establish an overall benefit across diseases, and safety, interactions and current approved uses still need separate assessment.",
           "sources": [
             "CP016",
+            "CP017",
+            "CP018",
             "P-COVIDOUT-2023",
             "P-KOREA-2026",
-            "P-ACTIV6-2026",
-            "CP017",
-            "CP018"
+            "P-ACTIV6-2026"
           ],
           "sentences": [
             {
@@ -2450,27 +2453,24 @@
               ]
             },
             {
-              "text": "Repurposing research asks whether it can change outcomes beyond glucose control: the recorded trials address later Long COVID after acute infection, recovery from established symptoms, and Parkinson disease.",
+              "text": "Repurposing research represented here spans Parkinson disease, cognition-related questions in schizophrenia, sarcopenia and physical function, and Long COVID prevention and treatment.",
               "sources": [
+                "CP016",
+                "CP017",
+                "CP018",
                 "P-COVIDOUT-2023",
-                "P-KOREA-2026",
-                "CP016"
+                "P-KOREA-2026"
               ]
             },
             {
-              "text": "The results differ by question: COVID-OUT’s reported lower diagnosis hazard is provisional pending correction review, ACTIV-6 did not meet its primary efficacy threshold, and the recorded treatment and Parkinson comparisons did not demonstrate clinical benefit.",
+              "text": "The source types differ: a Parkinson trial, an exploratory schizophrenia analysis, a sarcopenia review and separate Long COVID trials answer distinct questions.",
               "sources": [
+                "CP016",
+                "CP017",
+                "CP018",
                 "P-COVIDOUT-2023",
                 "P-ACTIV6-2026",
-                "P-KOREA-2026",
-                "CP016"
-              ]
-            },
-            {
-              "text": "The schizophrenia report is exploratory, while the sarcopenia material is a review rather than independently acquired trial evidence.",
-              "sources": [
-                "CP017",
-                "CP018"
+                "P-KOREA-2026"
               ]
             },
             {
@@ -2480,16 +2480,32 @@
           ]
         },
         {
-          "id": "benefits",
-          "label": "Benefits",
-          "title": "Read each possible benefit in its own scope",
-          "paragraph": "The prevention results answer different questions: COVID-OUT’s reported lower diagnosis hazard remains provisional on correction HOLD, whereas ACTIV-6 did not meet its primary symptom efficacy threshold. The acquired Korean treatment abstract did not demonstrate improved recovery after its tested short course. These findings describe particular uses of metformin and should not become a general badge saying that the drug works or fails. The linked answers explain the result and its boundary together.",
+          "id": "drug-wide-evidence",
+          "label": "Uses",
+          "title": "How to read the evidence across conditions",
+          "paragraph": "A finding for one population, illness stage or outcome cannot establish benefit for another use of metformin. The Parkinson clinical comparison, the exploratory schizophrenia analysis and the review-level sarcopenia findings are described separately below. The prevention results answer different questions: COVID-OUT’s reported lower diagnosis hazard remains provisional on correction HOLD, whereas ACTIV-6 did not meet its primary symptom efficacy threshold. The acquired Korean treatment abstract did not demonstrate improved recovery after its tested short course. A separate fatigue trial involving metformin has a retraction-and-republication notice; its original report is excluded from supportive claims while the replacement remains unresolved. The Long COVID detail below keeps prevention and established-illness treatment distinct. Formal evidence assessment and independent scientific review remain incomplete.",
           "sources": [
+            "CP016",
+            "CP017",
+            "CP018",
             "P-COVIDOUT-2023",
             "P-ACTIV6-2026",
-            "P-KOREA-2026"
+            "P-KOREA-2026",
+            "P-REVIVE-2026"
           ],
           "sentences": [
+            {
+              "text": "A finding for one population, illness stage or outcome cannot establish benefit for another use of metformin.",
+              "sources": []
+            },
+            {
+              "text": "The Parkinson clinical comparison, the exploratory schizophrenia analysis and the review-level sarcopenia findings are described separately below.",
+              "sources": [
+                "CP016",
+                "CP017",
+                "CP018"
+              ]
+            },
             {
               "text": "The prevention results answer different questions: COVID-OUT’s reported lower diagnosis hazard remains provisional on correction HOLD, whereas ACTIV-6 did not meet its primary symptom efficacy threshold.",
               "sources": [
@@ -2504,40 +2520,145 @@
               ]
             },
             {
-              "text": "These findings describe particular uses of metformin and should not become a general badge saying that the drug works or fails.",
+              "text": "A separate fatigue trial involving metformin has a retraction-and-republication notice; its original report is excluded from supportive claims while the replacement remains unresolved.",
               "sources": [
-                "P-COVIDOUT-2023",
-                "P-ACTIV6-2026",
-                "P-KOREA-2026"
+                "P-REVIVE-2026"
               ]
             },
             {
-              "text": "The linked answers explain the result and its boundary together.",
+              "text": "The Long COVID detail below keeps prevention and established-illness treatment distinct. Formal evidence assessment and independent scientific review remain incomplete.",
+              "sources": []
+            }
+          ]
+        },
+        {
+          "id": "parkinson-research",
+          "label": "Parkinson",
+          "title": "Parkinson disease: a clinical pilot",
+          "paragraph": "The original clinical report tests metformin added to levodopa/carbidopa in Parkinson disease, using a randomized, double-blind, placebo-controlled pilot design. The pilot did not demonstrate a between-group clinical benefit on UPDRS total, despite improvement within the metformin arm. The short, single-center study used a per-protocol analysis and a single metformin dose. Biomarker differences are separate outcomes and do not establish clinical superiority. The certainty of this scoped evidence has not been appraised.",
+          "sources": [
+            "CP016"
+          ],
+          "sentences": [
+            {
+              "text": "The original clinical report tests metformin added to levodopa/carbidopa in Parkinson disease, using a randomized, double-blind, placebo-controlled pilot design.",
               "sources": [
-                "P-COVIDOUT-2023",
-                "P-ACTIV6-2026",
-                "P-KOREA-2026"
+                "CP016"
               ]
+            },
+            {
+              "text": "The pilot did not demonstrate a between-group clinical benefit on UPDRS total, despite improvement within the metformin arm.",
+              "sources": [
+                "CP016"
+              ]
+            },
+            {
+              "text": "The short, single-center study used a per-protocol analysis and a single metformin dose.",
+              "sources": [
+                "CP016"
+              ]
+            },
+            {
+              "text": "Biomarker differences are separate outcomes and do not establish clinical superiority.",
+              "sources": [
+                "CP016"
+              ]
+            },
+            {
+              "text": "The certainty of this scoped evidence has not been appraised.",
+              "sources": []
+            }
+          ]
+        },
+        {
+          "id": "schizophrenia-research",
+          "label": "Schizophrenia",
+          "title": "Schizophrenia: exploratory cognition-related findings",
+          "paragraph": "The metformin record concerns cognitive impairment associated with schizophrenia during antipsychotic treatment. It is an exploratory metabolomic and imaging analysis of an open-label randomized parent trial; the reported associations do not constitute a new independent randomized efficacy cohort. The report describes exploratory metabolic and brain-connectivity findings, but the accepted record has no current between-arm cognitive efficacy estimate. Unadjusted exploratory tests, missing samples and potential confounding limit interpretation. The certainty of this scoped evidence has not been appraised.",
+          "sources": [
+            "CP017"
+          ],
+          "sentences": [
+            {
+              "text": "The metformin record concerns cognitive impairment associated with schizophrenia during antipsychotic treatment.",
+              "sources": [
+                "CP017"
+              ]
+            },
+            {
+              "text": "It is an exploratory metabolomic and imaging analysis of an open-label randomized parent trial; the reported associations do not constitute a new independent randomized efficacy cohort.",
+              "sources": [
+                "CP017"
+              ]
+            },
+            {
+              "text": "The report describes exploratory metabolic and brain-connectivity findings, but the accepted record has no current between-arm cognitive efficacy estimate.",
+              "sources": [
+                "CP017"
+              ]
+            },
+            {
+              "text": "Unadjusted exploratory tests, missing samples and potential confounding limit interpretation.",
+              "sources": [
+                "CP017"
+              ]
+            },
+            {
+              "text": "The certainty of this scoped evidence has not been appraised.",
+              "sources": []
+            }
+          ]
+        },
+        {
+          "id": "sarcopenia-research",
+          "label": "Sarcopenia",
+          "title": "Sarcopenia and physical function: review background",
+          "paragraph": "This part of the evidence comes from one narrative review; the original reports it cites have not been assessed as independent results here. The review describes mixed physical-function findings, including a walking-speed signal, null strength outcomes and attenuated exercise responses. The review says few trials specifically recruit sarcopenia, and the exercise trials did not test metformin alone. The certainty of this scoped evidence has not been appraised.",
+          "sources": [
+            "CP018"
+          ],
+          "sentences": [
+            {
+              "text": "This part of the evidence comes from one narrative review; the original reports it cites have not been assessed as independent results here.",
+              "sources": [
+                "CP018"
+              ]
+            },
+            {
+              "text": "The review describes mixed physical-function findings, including a walking-speed signal, null strength outcomes and attenuated exercise responses.",
+              "sources": [
+                "CP018"
+              ]
+            },
+            {
+              "text": "The review says few trials specifically recruit sarcopenia, and the exercise trials did not test metformin alone.",
+              "sources": [
+                "CP018"
+              ]
+            },
+            {
+              "text": "The certainty of this scoped evidence has not been appraised.",
+              "sources": []
             }
           ]
         },
         {
           "id": "safety",
           "label": "Safety",
-          "title": "Clinical safety interpretation remains pending",
-          "paragraph": "The selected reports do not provide this project with a completed clinical safety assessment of metformin for long COVID. ACTIV-6 monitored selected safety events and explicitly did not comprehensively assess tolerability, while trial eligibility and follow-up constrain what any study can reveal. Current product labeling, contraindications, interactions, and individual clinical circumstances require their own source review. Those topics remain open in this profile; absence of a completed assessment is not reassurance and the research schedules are not personal dosing instructions.",
+          "title": "Safety and clinical interpretation remain incomplete",
+          "paragraph": "This page does not provide a completed safety assessment for the investigated uses of metformin. The Parkinson’s pilot reported adverse effects, but its small selected population does not settle safety for people with Long COVID. Current product labeling, contraindications, interactions, and individual clinical circumstances require their own source review. Those topics remain open in this profile; absence of a completed assessment is not reassurance and the research schedules are not personal dosing instructions.",
           "sources": [
-            "P-ACTIV6-2026"
+            "CP016"
           ],
           "sentences": [
             {
-              "text": "The selected reports do not provide this project with a completed clinical safety assessment of metformin for long COVID.",
+              "text": "This page does not provide a completed safety assessment for the investigated uses of metformin.",
               "sources": []
             },
             {
-              "text": "ACTIV-6 monitored selected safety events and explicitly did not comprehensively assess tolerability, while trial eligibility and follow-up constrain what any study can reveal.",
+              "text": "The Parkinson’s pilot reported adverse effects, but its small selected population does not settle safety for people with Long COVID.",
               "sources": [
-                "P-ACTIV6-2026"
+                "CP016"
               ]
             },
             {
@@ -2590,31 +2711,6 @@
           ]
         },
         {
-          "id": "results",
-          "label": "Results",
-          "title": "Results",
-          "paragraph": "The result belongs to the question that produced it. Use the prevention answer to inspect later symptoms and diagnoses after treatment started during acute infection, and the treatment answer to inspect recovery after illness was already established. Each answer links to the report behind its conclusion. This profile does not pool those endpoints or present a combined numerical effect; the separate pages preserve the outcome, comparator, and uncertainty needed to read each result.",
-          "sources": [],
-          "sentences": [
-            {
-              "text": "The result belongs to the question that produced it.",
-              "sources": []
-            },
-            {
-              "text": "Use the prevention answer to inspect later symptoms and diagnoses after treatment started during acute infection, and the treatment answer to inspect recovery after illness was already established.",
-              "sources": []
-            },
-            {
-              "text": "Each answer links to the report behind its conclusion.",
-              "sources": []
-            },
-            {
-              "text": "This profile does not pool those endpoints or present a combined numerical effect; the separate pages preserve the outcome, comparator, and uncertainty needed to read each result.",
-              "sources": []
-            }
-          ]
-        },
-        {
           "id": "quality",
           "label": "Quality",
           "title": "Quality review pending",
@@ -2628,73 +2724,18 @@
           ]
         },
         {
-          "id": "status",
-          "label": "Status",
-          "title": "What has been checked in this edition",
-          "paragraph": "The evidence collection includes two prevention reports and an abstract-level established-illness trial, with their identities and source locations preserved. COVID-OUT has a linked correction still awaiting exact-text reconciliation, and a separate fatigue trial involving metformin has an authoritative retraction-and-republication notice. We exclude that original report from supportive claims while the replacement is pending. This AI-assisted summary still requires formal appraisal, current regulatory checks and independent editorial review.",
-          "sources": [
-            "P-COVIDOUT-2023",
-            "P-ACTIV6-2026",
-            "P-KOREA-2026",
-            "P-REVIVE-2026"
-          ],
-          "sentences": [
-            {
-              "text": "The evidence collection includes two prevention reports and an abstract-level established-illness trial, with their identities and source locations preserved.",
-              "sources": []
-            },
-            {
-              "text": "COVID-OUT has a linked correction still awaiting exact-text reconciliation, and a separate fatigue trial involving metformin has an authoritative retraction-and-republication notice.",
-              "sources": []
-            },
-            {
-              "text": "We exclude that original report from supportive claims while the replacement is pending.",
-              "sources": []
-            },
-            {
-              "text": "This AI-assisted summary still requires formal appraisal, current regulatory checks and independent editorial review.",
-              "sources": []
-            }
-          ]
-        },
-        {
-          "id": "evidence",
-          "label": "Evidence",
-          "title": "Evidence",
-          "paragraph": "This profile is a map of the selected reports, not a completed assessment of the whole literature. Its linked answers separate the prevention and established-illness questions and retain contradictory or unfinished records. The Research section lists the underlying reports once, while the study pages explain what was extracted and what still needs checking. No certainty grade has been assigned here, and a quarantined report contributes no supportive claim to this edition.",
-          "sources": [],
-          "sentences": [
-            {
-              "text": "This profile is a map of the selected reports, not a completed assessment of the whole literature.",
-              "sources": []
-            },
-            {
-              "text": "Its linked answers separate the prevention and established-illness questions and retain contradictory or unfinished records.",
-              "sources": []
-            },
-            {
-              "text": "The Research section lists the underlying reports once, while the study pages explain what was extracted and what still needs checking.",
-              "sources": []
-            },
-            {
-              "text": "No certainty grade has been assigned here, and a quarantined report contributes no supportive claim to this edition.",
-              "sources": []
-            }
-          ]
-        },
-        {
           "id": "connections",
           "label": "Connections",
-          "title": "Connections",
-          "paragraph": "Use the related pages below to move from this broad topic to a specific question. The prevention and treatment answers keep their own populations, outcomes, and source records visible, while the comparison guide explains why their results cannot simply be ranked. A link indicates a relevant reading path within this collection; it does not establish that a medicine is suitable for a reader. Questions without an accepted answer remain visible in the question directory.",
+          "title": "Follow each condition and question",
+          "paragraph": "The related pages link metformin to Parkinson disease, schizophrenia, sarcopenia and Long COVID, with separate answers for prevention and established-illness treatment. Each finding retains its own population, outcome, source type and uncertainty. A link indicates a relevant reading path within this collection; it does not establish that a medicine is suitable for a reader. Questions without an accepted answer remain visible in the question directory.",
           "sources": [],
           "sentences": [
             {
-              "text": "Use the related pages below to move from this broad topic to a specific question.",
+              "text": "The related pages link metformin to Parkinson disease, schizophrenia, sarcopenia and Long COVID, with separate answers for prevention and established-illness treatment.",
               "sources": []
             },
             {
-              "text": "The prevention and treatment answers keep their own populations, outcomes, and source records visible, while the comparison guide explains why their results cannot simply be ranked.",
+              "text": "Each finding retains its own population, outcome, source type and uncertainty.",
               "sources": []
             },
             {
@@ -2709,6 +2750,141 @@
         }
       ],
       "faqs": [
+        {
+          "id": "faq-g-metformin-scope",
+          "questionId": "G-METFORMIN-SCOPE",
+          "question": "Which uses of metformin are represented here?",
+          "answer": "Metformin is a medicine used for type 2 diabetes. Repurposing research asks whether it can change outcomes beyond glucose control: the recorded trials address later Long COVID after acute infection, recovery from established symptoms, and Parkinson disease. The results differ by question: COVID-OUT’s reported lower diagnosis hazard is provisional pending correction review, ACTIV-6 did not meet its primary efficacy threshold, and the recorded treatment and Parkinson comparisons did not demonstrate clinical benefit. The schizophrenia report is exploratory, while the sarcopenia material is a review rather than independently acquired trial evidence. These entries identify the scope of research represented here; they are not a general treatment endorsement.",
+          "sentences": [
+            {
+              "text": "Metformin is a medicine used for type 2 diabetes.",
+              "sources": [
+                "CP016"
+              ]
+            },
+            {
+              "text": "Repurposing research asks whether it can change outcomes beyond glucose control: the recorded trials address later Long COVID after acute infection, recovery from established symptoms, and Parkinson disease.",
+              "sources": [
+                "P-COVIDOUT-2023",
+                "P-KOREA-2026",
+                "CP016"
+              ]
+            },
+            {
+              "text": "The results differ by question: COVID-OUT’s reported lower diagnosis hazard is provisional pending correction review, ACTIV-6 did not meet its primary efficacy threshold, and the recorded treatment and Parkinson comparisons did not demonstrate clinical benefit.",
+              "sources": [
+                "P-COVIDOUT-2023",
+                "P-ACTIV6-2026",
+                "P-KOREA-2026",
+                "CP016"
+              ]
+            },
+            {
+              "text": "The schizophrenia report is exploratory, while the sarcopenia material is a review rather than independently acquired trial evidence.",
+              "sources": [
+                "CP017",
+                "CP018"
+              ]
+            },
+            {
+              "text": "These entries identify the scope of research represented here; they are not a general treatment endorsement.",
+              "sources": []
+            }
+          ],
+          "sources": [
+            "CP016",
+            "P-COVIDOUT-2023",
+            "P-KOREA-2026",
+            "P-ACTIV6-2026",
+            "CP017",
+            "CP018"
+          ],
+          "status": "answered_scoped_draft"
+        },
+        {
+          "id": "faq-row-syn-d01-c24-updrs",
+          "questionId": "ROW-SYN-D01-C24-UPDRS",
+          "question": "What did the research show about parkinson symptom score with adjunctive metformin?",
+          "answer": "The pilot did not demonstrate a between-group clinical benefit on UPDRS total, despite improvement within the metformin arm. The short, single-center study used a per-protocol analysis and a single metformin dose. The certainty of this scoped evidence has not been appraised.",
+          "sentences": [
+            {
+              "text": "The pilot did not demonstrate a between-group clinical benefit on UPDRS total, despite improvement within the metformin arm.",
+              "sources": [
+                "CP016"
+              ]
+            },
+            {
+              "text": "The short, single-center study used a per-protocol analysis and a single metformin dose.",
+              "sources": [
+                "CP016"
+              ]
+            },
+            {
+              "text": "The certainty of this scoped evidence has not been appraised.",
+              "sources": []
+            }
+          ],
+          "sources": [
+            "CP016"
+          ],
+          "status": "partial"
+        },
+        {
+          "id": "faq-row-syn-d01-c25-exploratory",
+          "questionId": "ROW-SYN-D01-C25-EXPLORATORY",
+          "question": "What did the research show about cognition-related exploratory findings in schizophrenia?",
+          "answer": "The report describes exploratory metabolic and brain-connectivity findings, but the accepted record has no current between-arm cognitive efficacy estimate. Unadjusted exploratory tests, missing samples and potential confounding limit interpretation. The certainty of this scoped evidence has not been appraised.",
+          "sentences": [
+            {
+              "text": "The report describes exploratory metabolic and brain-connectivity findings, but the accepted record has no current between-arm cognitive efficacy estimate.",
+              "sources": [
+                "CP017"
+              ]
+            },
+            {
+              "text": "Unadjusted exploratory tests, missing samples and potential confounding limit interpretation.",
+              "sources": [
+                "CP017"
+              ]
+            },
+            {
+              "text": "The certainty of this scoped evidence has not been appraised.",
+              "sources": []
+            }
+          ],
+          "sources": [
+            "CP017"
+          ],
+          "status": "partial"
+        },
+        {
+          "id": "faq-row-syn-d01-c30-background",
+          "questionId": "ROW-SYN-D01-C30-BACKGROUND",
+          "question": "What did the research show about sarcopenia and physical-function research?",
+          "answer": "The review describes mixed physical-function findings, including a walking-speed signal, null strength outcomes and attenuated exercise responses. The review says few trials specifically recruit sarcopenia, and the exercise trials did not test metformin alone. The certainty of this scoped evidence has not been appraised.",
+          "sentences": [
+            {
+              "text": "The review describes mixed physical-function findings, including a walking-speed signal, null strength outcomes and attenuated exercise responses.",
+              "sources": [
+                "CP018"
+              ]
+            },
+            {
+              "text": "The review says few trials specifically recruit sarcopenia, and the exercise trials did not test metformin alone.",
+              "sources": [
+                "CP018"
+              ]
+            },
+            {
+              "text": "The certainty of this scoped evidence has not been appraised.",
+              "sources": []
+            }
+          ],
+          "sources": [
+            "CP018"
+          ],
+          "status": "partial"
+        },
         {
           "question": "Where should I start if I already have long COVID?",
           "answer": "Use the established-illness evidence answer. Results from treatment begun during acute infection cannot directly answer that question.",
@@ -2872,141 +3048,6 @@
           ],
           "sources": [],
           "status": "pending_investigation"
-        },
-        {
-          "id": "faq-g-metformin-scope",
-          "questionId": "G-METFORMIN-SCOPE",
-          "question": "Which uses of metformin are represented here?",
-          "answer": "Metformin is a medicine used for type 2 diabetes. Repurposing research asks whether it can change outcomes beyond glucose control: the recorded trials address later Long COVID after acute infection, recovery from established symptoms, and Parkinson disease. The results differ by question: COVID-OUT’s reported lower diagnosis hazard is provisional pending correction review, ACTIV-6 did not meet its primary efficacy threshold, and the recorded treatment and Parkinson comparisons did not demonstrate clinical benefit. The schizophrenia report is exploratory, while the sarcopenia material is a review rather than independently acquired trial evidence. These entries identify the scope of research represented here; they are not a general treatment endorsement.",
-          "sentences": [
-            {
-              "text": "Metformin is a medicine used for type 2 diabetes.",
-              "sources": [
-                "CP016"
-              ]
-            },
-            {
-              "text": "Repurposing research asks whether it can change outcomes beyond glucose control: the recorded trials address later Long COVID after acute infection, recovery from established symptoms, and Parkinson disease.",
-              "sources": [
-                "P-COVIDOUT-2023",
-                "P-KOREA-2026",
-                "CP016"
-              ]
-            },
-            {
-              "text": "The results differ by question: COVID-OUT’s reported lower diagnosis hazard is provisional pending correction review, ACTIV-6 did not meet its primary efficacy threshold, and the recorded treatment and Parkinson comparisons did not demonstrate clinical benefit.",
-              "sources": [
-                "P-COVIDOUT-2023",
-                "P-ACTIV6-2026",
-                "P-KOREA-2026",
-                "CP016"
-              ]
-            },
-            {
-              "text": "The schizophrenia report is exploratory, while the sarcopenia material is a review rather than independently acquired trial evidence.",
-              "sources": [
-                "CP017",
-                "CP018"
-              ]
-            },
-            {
-              "text": "These entries identify the scope of research represented here; they are not a general treatment endorsement.",
-              "sources": []
-            }
-          ],
-          "sources": [
-            "CP016",
-            "P-COVIDOUT-2023",
-            "P-KOREA-2026",
-            "P-ACTIV6-2026",
-            "CP017",
-            "CP018"
-          ],
-          "status": "answered_scoped_draft"
-        },
-        {
-          "id": "faq-row-syn-d01-c24-updrs",
-          "questionId": "ROW-SYN-D01-C24-UPDRS",
-          "question": "What did the research show about parkinson symptom score with adjunctive metformin?",
-          "answer": "The pilot did not demonstrate a between-group clinical benefit on UPDRS total, despite improvement within the metformin arm. The short, single-center study used a per-protocol analysis and a single metformin dose. The certainty of this scoped evidence has not been appraised.",
-          "sentences": [
-            {
-              "text": "The pilot did not demonstrate a between-group clinical benefit on UPDRS total, despite improvement within the metformin arm.",
-              "sources": [
-                "CP016"
-              ]
-            },
-            {
-              "text": "The short, single-center study used a per-protocol analysis and a single metformin dose.",
-              "sources": [
-                "CP016"
-              ]
-            },
-            {
-              "text": "The certainty of this scoped evidence has not been appraised.",
-              "sources": []
-            }
-          ],
-          "sources": [
-            "CP016"
-          ],
-          "status": "partial"
-        },
-        {
-          "id": "faq-row-syn-d01-c25-exploratory",
-          "questionId": "ROW-SYN-D01-C25-EXPLORATORY",
-          "question": "What did the research show about cognition-related exploratory findings in schizophrenia?",
-          "answer": "The report describes exploratory metabolic and brain-connectivity findings, but the accepted record has no current between-arm cognitive efficacy estimate. Unadjusted exploratory tests, missing samples and potential confounding limit interpretation. The certainty of this scoped evidence has not been appraised.",
-          "sentences": [
-            {
-              "text": "The report describes exploratory metabolic and brain-connectivity findings, but the accepted record has no current between-arm cognitive efficacy estimate.",
-              "sources": [
-                "CP017"
-              ]
-            },
-            {
-              "text": "Unadjusted exploratory tests, missing samples and potential confounding limit interpretation.",
-              "sources": [
-                "CP017"
-              ]
-            },
-            {
-              "text": "The certainty of this scoped evidence has not been appraised.",
-              "sources": []
-            }
-          ],
-          "sources": [
-            "CP017"
-          ],
-          "status": "partial"
-        },
-        {
-          "id": "faq-row-syn-d01-c30-background",
-          "questionId": "ROW-SYN-D01-C30-BACKGROUND",
-          "question": "What did the research show about sarcopenia and physical-function research?",
-          "answer": "The review describes mixed physical-function findings, including a walking-speed signal, null strength outcomes and attenuated exercise responses. The review says few trials specifically recruit sarcopenia, and the exercise trials did not test metformin alone. The certainty of this scoped evidence has not been appraised.",
-          "sentences": [
-            {
-              "text": "The review describes mixed physical-function findings, including a walking-speed signal, null strength outcomes and attenuated exercise responses.",
-              "sources": [
-                "CP018"
-              ]
-            },
-            {
-              "text": "The review says few trials specifically recruit sarcopenia, and the exercise trials did not test metformin alone.",
-              "sources": [
-                "CP018"
-              ]
-            },
-            {
-              "text": "The certainty of this scoped evidence has not been appraised.",
-              "sources": []
-            }
-          ],
-          "sources": [
-            "CP018"
-          ],
-          "status": "partial"
         }
       ],
       "sourceIds": [
@@ -3019,6 +3060,10 @@
         "CP018"
       ],
       "related": [
+        "G-CONDITION-C24",
+        "G-CONDITION-C25",
+        "G-CONDITION-C30",
+        "G-LONGCOVID",
         "G-MET-PREVENT",
         "G-MET-TREAT",
         "G-COMPARE"
@@ -3032,8 +3077,8 @@
         "SYN-D01-C25-EXPLORATORY",
         "SYN-D01-C30-BACKGROUND"
       ],
-      "coverageLabel": "Partial evidence guide: Long COVID, plus selected local-corpus findings",
-      "scope": "metformin research questions; candidate relationships and source support remain distinct.",
+      "coverageLabel": "Selected findings across conditions · scientific review incomplete",
+      "scope": "Metformin research across distinct conditions and outcomes; selected primary reports, exploratory analysis and review background.",
       "originalUse": {
         "text": "Type 2 diabetes, as described by the acquired trial",
         "sourceIds": [
@@ -3107,7 +3152,161 @@
           "title": "Sarcopenia",
           "state": "Background only; originals needed"
         }
-      ]
+      ],
+      "scopedSections": [
+        {
+          "id": "benefits",
+          "label": "Benefits",
+          "title": "Read each possible benefit in its own scope",
+          "paragraph": "The prevention results answer different questions: COVID-OUT’s reported lower diagnosis hazard remains provisional on correction HOLD, whereas ACTIV-6 did not meet its primary symptom efficacy threshold. The acquired Korean treatment abstract did not demonstrate improved recovery after its tested short course. These findings describe particular uses of metformin and should not become a general badge saying that the drug works or fails. The linked answers explain the result and its boundary together.",
+          "sources": [
+            "P-COVIDOUT-2023",
+            "P-ACTIV6-2026",
+            "P-KOREA-2026"
+          ],
+          "sentences": [
+            {
+              "text": "The prevention results answer different questions: COVID-OUT’s reported lower diagnosis hazard remains provisional on correction HOLD, whereas ACTIV-6 did not meet its primary symptom efficacy threshold.",
+              "sources": [
+                "P-COVIDOUT-2023",
+                "P-ACTIV6-2026"
+              ]
+            },
+            {
+              "text": "The acquired Korean treatment abstract did not demonstrate improved recovery after its tested short course.",
+              "sources": [
+                "P-KOREA-2026"
+              ]
+            },
+            {
+              "text": "These findings describe particular uses of metformin and should not become a general badge saying that the drug works or fails.",
+              "sources": [
+                "P-COVIDOUT-2023",
+                "P-ACTIV6-2026",
+                "P-KOREA-2026"
+              ]
+            },
+            {
+              "text": "The linked answers explain the result and its boundary together.",
+              "sources": [
+                "P-COVIDOUT-2023",
+                "P-ACTIV6-2026",
+                "P-KOREA-2026"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "results",
+          "label": "Results",
+          "title": "Results",
+          "paragraph": "The result belongs to the question that produced it. Use the prevention answer to inspect later symptoms and diagnoses after treatment started during acute infection, and the treatment answer to inspect recovery after illness was already established. Each answer links to the report behind its conclusion. This profile does not pool those endpoints or present a combined numerical effect; the separate pages preserve the outcome, comparator, and uncertainty needed to read each result.",
+          "sources": [],
+          "sentences": [
+            {
+              "text": "The result belongs to the question that produced it.",
+              "sources": []
+            },
+            {
+              "text": "Use the prevention answer to inspect later symptoms and diagnoses after treatment started during acute infection, and the treatment answer to inspect recovery after illness was already established.",
+              "sources": []
+            },
+            {
+              "text": "Each answer links to the report behind its conclusion.",
+              "sources": []
+            },
+            {
+              "text": "This profile does not pool those endpoints or present a combined numerical effect; the separate pages preserve the outcome, comparator, and uncertainty needed to read each result.",
+              "sources": []
+            }
+          ]
+        },
+        {
+          "id": "status",
+          "label": "Status",
+          "title": "What has been checked in this edition",
+          "paragraph": "The evidence collection includes two prevention reports and an abstract-level established-illness trial, with their identities and source locations preserved. COVID-OUT has a linked correction still awaiting exact-text reconciliation, and a separate fatigue trial involving metformin has an authoritative retraction-and-republication notice. We exclude that original report from supportive claims while the replacement is pending. This AI-assisted summary still requires formal appraisal, current regulatory checks and independent editorial review.",
+          "sources": [
+            "P-COVIDOUT-2023",
+            "P-ACTIV6-2026",
+            "P-KOREA-2026",
+            "P-REVIVE-2026"
+          ],
+          "sentences": [
+            {
+              "text": "The evidence collection includes two prevention reports and an abstract-level established-illness trial, with their identities and source locations preserved.",
+              "sources": []
+            },
+            {
+              "text": "COVID-OUT has a linked correction still awaiting exact-text reconciliation, and a separate fatigue trial involving metformin has an authoritative retraction-and-republication notice.",
+              "sources": []
+            },
+            {
+              "text": "We exclude that original report from supportive claims while the replacement is pending.",
+              "sources": []
+            },
+            {
+              "text": "This AI-assisted summary still requires formal appraisal, current regulatory checks and independent editorial review.",
+              "sources": []
+            }
+          ]
+        },
+        {
+          "id": "evidence",
+          "label": "Evidence",
+          "title": "Evidence",
+          "paragraph": "This profile is a map of the selected reports, not a completed assessment of the whole literature. Its linked answers separate the prevention and established-illness questions and retain contradictory or unfinished records. The Research section lists the underlying reports once, while the study pages explain what was extracted and what still needs checking. No certainty grade has been assigned here, and a quarantined report contributes no supportive claim to this edition.",
+          "sources": [],
+          "sentences": [
+            {
+              "text": "This profile is a map of the selected reports, not a completed assessment of the whole literature.",
+              "sources": []
+            },
+            {
+              "text": "Its linked answers separate the prevention and established-illness questions and retain contradictory or unfinished records.",
+              "sources": []
+            },
+            {
+              "text": "The Research section lists the underlying reports once, while the study pages explain what was extracted and what still needs checking.",
+              "sources": []
+            },
+            {
+              "text": "No certainty grade has been assigned here, and a quarantined report contributes no supportive claim to this edition.",
+              "sources": []
+            }
+          ]
+        },
+        {
+          "id": "long-covid-safety",
+          "label": "Safety",
+          "title": "Clinical safety interpretation remains pending",
+          "paragraph": "The selected reports do not provide this project with a completed clinical safety assessment of metformin for long COVID. ACTIV-6 monitored selected safety events and explicitly did not comprehensively assess tolerability, while trial eligibility and follow-up constrain what any study can reveal. Current product labeling, contraindications, interactions, and individual clinical circumstances require their own source review. Those topics remain open in this profile; absence of a completed assessment is not reassurance and the research schedules are not personal dosing instructions.",
+          "sources": [
+            "P-ACTIV6-2026"
+          ],
+          "sentences": [
+            {
+              "text": "The selected reports do not provide this project with a completed clinical safety assessment of metformin for long COVID.",
+              "sources": []
+            },
+            {
+              "text": "ACTIV-6 monitored selected safety events and explicitly did not comprehensively assess tolerability, while trial eligibility and follow-up constrain what any study can reveal.",
+              "sources": [
+                "P-ACTIV6-2026"
+              ]
+            },
+            {
+              "text": "Current product labeling, contraindications, interactions, and individual clinical circumstances require their own source review.",
+              "sources": []
+            },
+            {
+              "text": "Those topics remain open in this profile; absence of a completed assessment is not reassurance and the research schedules are not personal dosing instructions.",
+              "sources": []
+            }
+          ]
+        }
+      ],
+      "scopedSectionsTitle": "Long COVID: prevention, treatment and source limits"
     },
     {
       "id": "G-LONGCOVID",
