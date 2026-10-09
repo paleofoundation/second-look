@@ -5,6 +5,9 @@ import { readExecutionProfile } from "./execution-profile.mjs";
 const [command, ...args] = process.argv.slice(2);
 if (!["dev", "build"].includes(command)) throw new Error("Expected dev or build.");
 if (command === "build") {
+  const readerBoundary = spawnSync(process.execPath, [fileURLToPath(new URL("./verify-reader-boundary.mjs", import.meta.url)), "--source-only"], { stdio: "inherit" });
+  if (readerBoundary.error) throw readerBoundary.error;
+  if (readerBoundary.status !== 0) process.exit(readerBoundary.status ?? 1);
   const check = spawnSync(process.execPath, [fileURLToPath(new URL("./update-guide-marketing-hashes.mjs", import.meta.url)), "--check"], { stdio: "inherit" });
   if (check.error) throw check.error;
   if (check.status !== 0) process.exit(check.status ?? 1);
