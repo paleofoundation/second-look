@@ -51,7 +51,9 @@ export type ThemeHomeContent = {
 export type ArticleHeroProps = {
   title: string; description?: ReactNode; breadcrumbs: ThemeLink[];
   art?: ThemeImage; leftContext?: ReactNode; author?: ThemeAuthor;
-  /** Host's existing verified author card can replace the generic configured card. */
+  /** One verified author block in the hero image/author area. Overrides author and creditSlot. */
+  authorSlot?: ReactNode;
+  /** @deprecated Alias for authorSlot. Since 0.1.1 this renders in the hero image area, never the right rail. */
   creditSlot?: ReactNode;
   updatedLabel?: string; snapshot?: ReactNode; actions?: ReactNode;
   kindLabel?: string;

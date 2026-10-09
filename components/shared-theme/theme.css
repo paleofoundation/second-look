@@ -36,18 +36,20 @@
 .omr-theme .omr-search-suggestions { position:absolute; inset:100% 0 auto; max-height:360px; overflow:auto; z-index:100; color:var(--color-text); }
 .omr-theme .omr-search-suggestions a { color:var(--color-primary); }
 
-/* OMR-05: source author position, current verified-portrait/ORCID/bio interaction requirement. */
+/* OMR-05 / OMR-13: verified portrait, ORCID and bio in the hero image/author area. */
 .omr-theme .omr-author { position:relative; color:inherit; }
 .omr-theme .omr-author__portrait { display:block; border:0; border-radius:12px; padding:0; margin:0 0 12px; width:112px; height:128px; overflow:hidden; background:var(--omr-accent); color:var(--omr-main); cursor:pointer; }
 .omr-theme .omr-author__portrait img { width:100%; height:100%; object-fit:contain; object-position:bottom; display:block; }
 .omr-theme .omr-author__identity { font-size:1rem; line-height:1.5; }
 .omr-theme .omr-author__identity small { font-size:14px; display:block; }
-.omr-theme .omr-author__identity>div { display:flex; align-items:center; gap:8px; }
+.omr-theme .omr-author__identity>div { display:block; min-width:0; overflow-wrap:anywhere; }
 .omr-theme .omr-author__identity a { color:inherit; text-decoration:none; }
 .omr-theme .omr-author__identity a:hover { text-decoration:underline; }
-.omr-theme .omr-orcid { display:inline-flex; width:24px; height:24px; flex-shrink:0; color:#a6ce39!important; }
-.omr-theme .omr-orcid svg { width:100%; height:100%; }
-.omr-theme .omr-author__bio { position:absolute; top:100%; right:0; width:300px; max-width:calc(100vw - 48px); background:#fff; color:var(--color-text); padding:20px; border:1px solid #dee2e6; border-radius:8px; box-shadow:0 12px 32px #0002; font-size:15px; line-height:1.55; z-index:40; }
+.omr-theme .omr-orcid { display:flex; align-items:center; gap:6px; width:fit-content; max-width:100%; margin-top:8px; color:inherit!important; font-size:13px; line-height:1.5; }
+.omr-theme .omr-orcid svg { width:24px; height:24px; flex-shrink:0; color:#a6ce39; }
+.omr-theme .omr-orcid span { overflow-wrap:anywhere; }
+.omr-theme .omr-author__missing { display:block; font-size:13px; margin-top:8px; }
+.omr-theme .omr-author__bio { position:absolute; top:100%; left:0; width:300px; max-width:calc(100vw - 48px); background:#fff; color:var(--color-text); padding:20px; border:1px solid #dee2e6; border-radius:8px; box-shadow:0 12px 32px #0002; font-size:15px; line-height:1.55; z-index:40; overflow-wrap:anywhere; }
 .omr-theme .omr-author__bio[hidden] { display:none; }
 .omr-theme .omr-author__bio>button { position:absolute; right:4px; top:4px; color:var(--color-primary); background:none; border:0; min-height:28px; min-width:28px; }
 .omr-theme .omr-author__bio a { color:var(--color-primary); }
@@ -103,3 +105,40 @@
   .omr-theme .header__actions .btn { max-width:94px; white-space:normal; line-height:1.15; }
 }
 @media (prefers-reduced-motion:reduce) { .omr-theme *,.omr-theme *::before,.omr-theme *::after { scroll-behavior:auto!important; transition:none!important; animation:none!important; } }
+
+/* OMR-13: v1.18 owner correction. One author lives in the hero image area.
+   Geometry preserves the destination's inspected source-derived hero arrangement. */
+.omr-theme .research-hero--with-author .research-hero__left { display:flex; visibility:visible; align-items:stretch; justify-content:flex-start; flex:0 0 260px; max-width:260px; gap:28px; padding:36px 24px; overflow:visible; }
+.omr-theme .research-hero__author { width:100%; min-width:0; position:relative; overflow:visible; margin-top:auto; }
+.omr-theme .research-hero__author .omr-author__identity { min-width:0; }
+@media (min-width:992px) and (max-width:1439px) {
+  .omr-theme .research-hero--with-author .research-hero__left { flex-basis:220px; max-width:220px; padding-inline:20px; }
+  .omr-theme .research-hero--with-author .research-hero__center { padding-inline:40px; }
+  .omr-theme .research-hero--with-author .research-hero__right { max-width:260px; }
+}
+@media (min-width:992px) and (max-width:1199px) {
+  .omr-theme .research-hero--with-author .research-hero__wrapper { display:grid; grid-template-columns:220px minmax(0,1fr); grid-template-areas:"media main" "meta main"; }
+  .omr-theme .research-hero--with-author .research-hero__left { grid-area:media; max-width:none; }
+  .omr-theme .research-hero--with-author .research-hero__center { grid-area:main; }
+  .omr-theme .research-hero--with-author .research-hero__right { grid-area:meta; max-width:none; padding:24px; }
+}
+@media (max-width:991px) {
+  .omr-theme .research-hero--with-author .research-hero__wrapper { display:flex; flex-direction:column; min-height:auto; }
+  .omr-theme .research-hero--with-author .research-hero__center { order:0; }
+  .omr-theme .research-hero--with-author .research-hero__left { order:1; display:grid; grid-template-columns:minmax(72px,140px) minmax(0,1fr); flex:auto; max-width:none; width:100%; padding:24px; gap:24px; align-items:center; }
+  .omr-theme .research-hero--with-author .research-hero__left-image { max-width:140px; }
+  .omr-theme .research-hero--with-author .research-hero__right { order:2; max-width:none; }
+  .omr-theme .research-hero__author { grid-column:2; margin-top:0; }
+  .omr-theme .research-hero__author .omr-author { display:block; }
+  .omr-theme .research-hero__author .omr-author__portrait { margin-bottom:12px; }
+  .omr-theme .research-hero__author .omr-author__bio { left:auto; right:0; }
+}
+@media (max-width:479px) {
+  .omr-theme .research-hero--with-author .research-hero__left { grid-template-columns:72px minmax(0,1fr); gap:20px; }
+  .omr-theme .research-hero--with-author .research-hero__left-image { max-width:72px; }
+}
+@media print {
+  .omr-theme .research-hero--with-author .research-hero__left { display:block!important; visibility:visible!important; max-width:none; padding:16px 0; color:#212529; }
+  .omr-theme .research-hero--with-author .research-hero__left-image { display:none; }
+  .omr-theme .research-hero__author { break-inside:avoid; }
+}
