@@ -1,0 +1,105 @@
+@import "./theme-source.css";
+
+/* OMR-01: local owner-source regular fonts replace the reference's remote font service. */
+@font-face { font-family:Inter; src:url("../assets/fonts/Inter-Regular.woff2") format("woff2"); font-weight:400; font-style:normal; font-display:swap; }
+@font-face { font-family:Lora; src:url("../assets/fonts/Lora-Regular.woff2") format("woff2"); font-weight:400; font-style:normal; font-display:swap; }
+
+/* OMR-02: application-scoped tokens replace source identity and global resets. */
+.omr-theme { --color-bg:#fff; --color-white:#fff; --color-text:#212529; --color-primary:#20324f; --color-primary-dark:#17253c; --color-primary-100:#f8f3e6; --color-primary-200:#f8f3e6; --color-primary-500:#20324f; --color-primary-600:#17253c; --omr-main:#20324f; --omr-accent:#f6bc45; --omr-pale:#fff9eb; --omr-ink:#1a1a2e; --omr-muted:#6c757d; --omr-link:#20324f; --font-sans:Inter,Arial,sans-serif; --font-serif:Lora,Georgia,serif; font-family:var(--font-sans); font-size:16px; line-height:1.25; color:var(--color-text); min-width:0; min-height:100vh; background:#fff; overflow-x:clip; }
+.omr-theme h1,.omr-theme h2,.omr-theme h3,.omr-theme h4,.omr-theme h5,.omr-theme h6 { font-family:var(--font-serif); }
+/* The active source globals force 400; preserve its visual hierarchy through size and color. */
+.omr-theme,.omr-theme :not(i):not(svg):not(path):not([class*="icon"]):not([class*="logo"]) { font-weight:400; }
+.omr-theme button,.omr-theme input,.omr-theme select { font-family:inherit; }
+.omr-theme a:focus-visible,.omr-theme button:focus-visible,.omr-theme summary:focus-visible,.omr-theme input:focus-visible { outline:2px solid var(--omr-accent); outline-offset:4px; }
+.omr-theme [id] { scroll-margin-top:100px; }
+.omr-theme .omr-skip { position:fixed; z-index:1200; left:12px; top:-120px; padding:12px 18px; background:white; color:var(--color-primary); border:2px solid currentColor; }
+.omr-theme .omr-skip:focus { top:12px; }
+.omr-theme .entry-content a:not([class*="btn"]),.omr-theme .article a:not([class*="btn"]) { color:var(--omr-link); text-decoration:none; }
+.omr-theme .entry-content a:not([class*="btn"]):hover,.omr-theme .article a:not([class*="btn"]):hover { text-decoration:underline; }
+.omr-theme .research-hero__center-title,.omr-theme .rgbc-hero__title { text-transform:none; }
+.omr-theme .research-hero__center,.omr-theme .research-content__center,.omr-theme .rgbc-content__main { min-width:0; }
+
+/* OMR-04: equivalent captured menu structure with semantic expansion controls and focus access. */
+.omr-theme .header { border-bottom:1px solid #e9ecef; }
+.omr-theme .header__logo { flex-shrink:0; }
+.omr-theme .omr-wordmark { white-space:nowrap; font-family:var(--font-serif); }
+.omr-theme .header__login { color:var(--color-primary); text-decoration:none; white-space:nowrap; }
+.omr-theme .header__search { text-decoration:none; }
+.omr-theme .header__search svg { fill:none; }
+.omr-theme .omr-menu-label { display:flex; align-items:center; }
+.omr-theme .omr-menu-toggle { background:none; border:0; padding:12px 5px; margin:0; color:var(--color-primary); font-size:18px; min-height:44px; min-width:32px; }
+.omr-theme .header .menu>li>.omr-menu-label>a { padding-block:22px; }
+.omr-theme .header .menu>li>ul.sub-menu>li.menu-item-has-children>.omr-menu-label>a { font-family:var(--font-serif); font-size:1.5rem; line-height:2rem; }
+.omr-theme .header .menu>li>ul.sub-menu>li.menu-item-has-children>.omr-menu-label>.omr-menu-toggle { display:none; }
+.omr-theme .header .menu>li>ul.sub-menu>li ul.sub-menu { padding:0; list-style:none; }
+.omr-theme .omr-menu-backdrop { position:fixed; inset:0; background:#0005; border:0; z-index:999; }
+.omr-theme .omr-search-suggestions { position:absolute; inset:100% 0 auto; max-height:360px; overflow:auto; z-index:100; color:var(--color-text); }
+.omr-theme .omr-search-suggestions a { color:var(--color-primary); }
+
+/* OMR-05: source author position, current verified-portrait/ORCID/bio interaction requirement. */
+.omr-theme .omr-author { position:relative; color:inherit; }
+.omr-theme .omr-author__portrait { display:block; border:0; border-radius:12px; padding:0; margin:0 0 12px; width:112px; height:128px; overflow:hidden; background:var(--omr-accent); color:var(--omr-main); cursor:pointer; }
+.omr-theme .omr-author__portrait img { width:100%; height:100%; object-fit:contain; object-position:bottom; display:block; }
+.omr-theme .omr-author__identity { font-size:1rem; line-height:1.5; }
+.omr-theme .omr-author__identity small { font-size:14px; display:block; }
+.omr-theme .omr-author__identity>div { display:flex; align-items:center; gap:8px; }
+.omr-theme .omr-author__identity a { color:inherit; text-decoration:none; }
+.omr-theme .omr-author__identity a:hover { text-decoration:underline; }
+.omr-theme .omr-orcid { display:inline-flex; width:24px; height:24px; flex-shrink:0; color:#a6ce39!important; }
+.omr-theme .omr-orcid svg { width:100%; height:100%; }
+.omr-theme .omr-author__bio { position:absolute; top:100%; right:0; width:300px; max-width:calc(100vw - 48px); background:#fff; color:var(--color-text); padding:20px; border:1px solid #dee2e6; border-radius:8px; box-shadow:0 12px 32px #0002; font-size:15px; line-height:1.55; z-index:40; }
+.omr-theme .omr-author__bio[hidden] { display:none; }
+.omr-theme .omr-author__bio>button { position:absolute; right:4px; top:4px; color:var(--color-primary); background:none; border:0; min-height:28px; min-width:28px; }
+.omr-theme .omr-author__bio a { color:var(--color-primary); }
+.omr-theme .omr-updated { font-size:14px; margin:20px 0; }
+.omr-theme .research-hero__right>.snapshot { margin-top:auto; }
+.omr-theme .omr-toc-label { display:flex; align-items:center; }
+.omr-theme .omr-toc-label>a { flex:1; }
+.omr-theme .omr-toc-label>button { min-width:30px; min-height:30px; border:0; background:transparent; color:var(--color-primary); font-size:22px; }
+.omr-theme .post-content__list[hidden] { display:none!important; }
+/* OMR-12: the captured <=1440px rule hid an expanded React contents rail.
+   PepsAnon active globals restore this 20rem rail; React hidden is authoritative. */
+.omr-theme .research-content__left:not(.collapsed) { max-width:20rem; flex:0 0 20rem; padding:40px 20px; }
+.omr-theme .research-content__left .post-content__list:not([hidden]) { display:block; padding-right:0; }
+.omr-theme .research-content__left.collapsed { max-width:64px; flex:0 0 64px; }
+.omr-theme .omr-directory-group { display:flow-root; }
+.omr-theme .omr-directory-description { font-size:16px; line-height:1.5; margin:0 0 8px; }
+.omr-theme .omr-directory-status { display:block; font-size:13px; color:var(--omr-muted); margin-bottom:20px; }
+.omr-theme .footer__title { white-space:normal; }
+.omr-theme .footer__right p,.omr-theme .footer__form-wrapper p { font-size:14px; line-height:1.5; margin-top:14px; }
+.omr-theme .footer .btn--outline { color:white; border-color:white; }
+
+@media (min-width:992px) {
+  .omr-theme .header .menu>li.menu-item-has-children.open>ul.sub-menu { visibility:visible; opacity:1; top:100%; }
+  .omr-theme .header .menu>li.menu-item-has-children:not(.open):hover>ul.sub-menu { visibility:hidden; opacity:0; }
+  .omr-theme .omr-menu-backdrop { display:none; }
+}
+@media (max-width:991.98px) {
+  .omr-theme .header__nav { width:min(384px,calc(100vw - 24px)); visibility:hidden; }
+  .omr-theme .header__nav.is-open { visibility:visible; }
+  .omr-theme .header .menu>li>.omr-menu-label>a { padding-block:6px; flex:1; }
+  .omr-theme .header .menu>li>ul.sub-menu>li.menu-item-has-children>.omr-menu-label>.omr-menu-toggle { display:block; }
+  .omr-theme .header .menu>li>ul.sub-menu>li.menu-item-has-children>.omr-menu-label>a { font-size:1.2rem; }
+  .omr-theme .header .menu li>ul.sub-menu { display:none; }
+  .omr-theme .header .menu li.open>ul.sub-menu { display:flex; }
+  .omr-theme .header__actions .btn { padding:8px 12px; min-height:40px; font-size:13px; }
+  .omr-theme .header__login { font-size:13px; }
+  /* The reference hid credits here. Current rule retains author/snapshot access on mobile. */
+  .omr-theme .research-hero__right { display:flex; max-width:none; padding:24px; gap:20px; }
+  .omr-theme .research-hero__right>.snapshot { margin-top:0; }
+  .omr-theme .omr-author { display:flex; gap:18px; align-items:center; }
+  .omr-theme .omr-author__portrait { flex-shrink:0; margin:0; width:88px; height:104px; }
+  .omr-theme .omr-author__bio { left:0; right:auto; }
+  .omr-theme .research-content__right { max-width:none; }
+  .omr-theme .research-content__left,.omr-theme .research-content__left:not(.collapsed),.omr-theme .research-content__left.collapsed { display:flex; max-width:none; flex:auto; padding:16px 24px; }
+  .omr-theme .research-content__left-menu { position:static; }
+  .omr-theme .research-content__left.omr-empty-rail { display:none; }
+}
+@media (max-width:767px) { .omr-theme .research-content__right { display:flex; padding:24px; } }
+@media (max-width:479px) {
+  .omr-theme .header__wrapper { gap:8px; padding-inline:12px; }
+  .omr-theme .header__logo { padding:0; font-size:1.35rem; height:1.5rem; }
+  .omr-theme .header__actions { gap:8px; }
+  .omr-theme .header__actions .btn { max-width:94px; white-space:normal; line-height:1.15; }
+}
+@media (prefers-reduced-motion:reduce) { .omr-theme *,.omr-theme *::before,.omr-theme *::after { scroll-behavior:auto!important; transition:none!important; animation:none!important; } }

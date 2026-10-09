@@ -1,4 +1,5 @@
 import vinext from "vinext";
+import {privateSourceBoundary} from "./build/private-source-boundary";
 import { defineConfig } from "vite";
 import hostingConfig from "./.openai/hosting.json";
 import { readExecutionProfile } from "./scripts/execution-profile.mjs";
@@ -61,6 +62,7 @@ export default defineConfig(async ({ command }) => {
         : {}),
     },
     plugins: [
+      privateSourceBoundary(),
       vinext(),
       sites({ mockAuth: !managedLinux }),
       connectorPreview(),

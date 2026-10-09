@@ -1,0 +1,4 @@
+import type {Plugin} from 'vite';
+// Vite is a source server. Private review/corpus files must never become HTTP assets,
+// including direct, encoded and /@fs paths. Server module loading remains internal.
+export function privateSourceBoundary():Plugin{return {name:'second-look-private-source-boundary',apply:'serve',enforce:'pre',configureServer(server){server.middlewares.use((req,res,next)=>{let path=(req.url||'').split('?')[0];try{for(let i=0;i<4;i++){const decoded=decodeURIComponent(path);if(decoded===path)break;path=decoded}}catch{res.statusCode=400;res.end('Bad path');return}path=path.replaceAll('\\','/');if(/(?:^|\/)(?:private-[^/]+|content\.json|reader-evidence\.json|ingested-topic-pages\.json|acquisition-pages\.json|review-repository\.server\.[^/]+)$/.test(path)){res.statusCode=404;res.setHeader('Cache-Control','no-store');res.end('Not found');return}next()})}}}

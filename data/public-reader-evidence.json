@@ -1,0 +1,1465 @@
+{
+  "version": "reader-view-1.0.0",
+  "synthesisRows": [
+    {
+      "id": "SYN-D01-C01-DIAGNOSIS",
+      "drugId": "D01",
+      "conditionId": "C01",
+      "title": "Later clinician diagnosis after acute infection",
+      "use": "Prevention during acute COVID",
+      "population": "Acute COVID outpatients; trial populations differ",
+      "comparison": "Metformin versus matched placebo",
+      "endpoint": "Participant-reported clinician diagnosis of Long COVID",
+      "timepoint": "COVID-OUT day 300; ACTIV-6 day 180",
+      "status": "provisional_correction_hold",
+      "finding": {
+        "text": "COVID-OUT’s reported hazard ratio is provisional while an indexed correction remains unresolved; it is not treated as a settled efficacy conclusion. ACTIV-6’s secondary diagnosis estimate favored metformin but its interval included no difference.",
+        "sources": [
+          "P-COVIDOUT-2023",
+          "P-ACTIV6-2026"
+        ],
+        "evidenceRefs": [
+          "R-CO-HR",
+          "R-A6-CD"
+        ],
+        "kind": "bounded_interpretation"
+      },
+      "magnitudeText": "COVID-OUT: source-reported hazard ratio 0.59 (95% CI 0.39–0.89), provisional and on correction HOLD; cumulative-incidence percentages withheld. ACTIV-6: risk difference −0.7 percentage points (95% credible interval −1.5 to 0.1). No pooled estimate.",
+      "certainty": {
+        "label": "Not appraised",
+        "method": null,
+        "rationale": "A body-of-evidence certainty method and its required domains have not been completed and independently reviewed. This label is not a Low-certainty grade.",
+        "reviewState": "pending_human_scientific_review"
+      },
+      "evidenceBase": "2 randomized trial families; endpoint definitions, populations and timepoints remain separate.",
+      "limitations": [
+        {
+          "text": "COVID-OUT enrolled adults with overweight or obesity and no known prior infection; ACTIV-6 allowed prior infection and vaccination.",
+          "sources": [
+            "P-COVIDOUT-2023",
+            "P-ACTIV6-2026"
+          ],
+          "evidenceRefs": [
+            "S-COVIDOUT-2023-population",
+            "S-ACTIV6-2026-population"
+          ],
+          "kind": "source_fact"
+        },
+        {
+          "text": "COVID-OUT’s indexed correction has not been reconciled; the current result stays provisional.",
+          "sources": [
+            "P-COVIDOUT-2023"
+          ],
+          "evidenceRefs": [
+            "P-COVIDOUT-2023-correction"
+          ],
+          "kind": "source_integrity"
+        },
+        {
+          "text": "The ACTIV-6 diagnosis endpoint was secondary, and its interval was not adjusted for multiple comparisons.",
+          "sources": [
+            "P-ACTIV6-2026"
+          ],
+          "evidenceRefs": [
+            "R-A6-CD"
+          ],
+          "kind": "source_fact"
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "P-COVIDOUT-2023",
+          "evidenceRef": "R-CO-HR",
+          "label": "Figure 2 and Results paragraph beginning cumulative incidence"
+        },
+        {
+          "sourceId": "P-ACTIV6-2026",
+          "evidenceRef": "R-A6-CD",
+          "label": "Table 3 secondary clinician diagnosis; Table 2 raw counts"
+        }
+      ],
+      "sourceIds": [
+        "P-COVIDOUT-2023",
+        "P-ACTIV6-2026"
+      ],
+      "studyFamilyIds": [
+        "S-COVIDOUT-2023",
+        "S-ACTIV6-2026"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [
+        "/answers/metformin-prevention"
+      ],
+      "coverage": {
+        "scope": "Bounded recorded corpus, not a systematic review",
+        "complete": false,
+        "pending": [
+          "Reconcile COVID-OUT correction",
+          "Obtain complete ACTIV-6 source and supplement",
+          "Appraise each result and the body of evidence",
+          "No settled efficacy synthesis until the COVID-OUT correction and conflicting control percentage are reconciled"
+        ]
+      },
+      "effects": [
+        {
+          "sourceId": "P-COVIDOUT-2023",
+          "design": "Quadruple-blind randomized placebo-controlled 2×3 factorial trial",
+          "population": "Adults 30–85, overweight or obesity, acute COVID symptoms under 7 days; no known prior infection",
+          "timepoint": "Day 300",
+          "sampleRandomized": 1431,
+          "sampleAnalyzed": 1126,
+          "sampleDenominatorNote": "Study-level totals; do not substitute them for endpoint-specific denominators.",
+          "locators": [
+            {
+              "paper_id": "P-COVIDOUT-2023",
+              "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11259948/",
+              "file": "work/evidence/raw/covidout.html",
+              "pdf_page": null,
+              "printed_page": null,
+              "section": "Results",
+              "table_figure": "Figure 2 and Results paragraph beginning cumulative incidence",
+              "paragraph": null,
+              "basis": "full_text",
+              "missingness": "not_applicable"
+            }
+          ]
+        },
+        {
+          "sourceId": "P-ACTIV6-2026",
+          "design": "Quadruple-blind randomized decentralized placebo-controlled platform trial",
+          "population": "Outpatients at least 30 years old with acute COVID; prior infection/vaccination allowed",
+          "timepoint": "Day 180",
+          "sampleRandomized": 3214,
+          "sampleAnalyzed": 2983,
+          "sampleDenominatorNote": "Study-level totals; do not substitute them for endpoint-specific denominators.",
+          "locators": [
+            {
+              "paper_id": "P-ACTIV6-2026",
+              "source_url": "https://academic.oup.com/cid/advance-article/doi/10.1093/cid/ciag335/8702406",
+              "file": "work/evidence/raw/activ6-web-extract.json",
+              "pdf_page": null,
+              "printed_page": null,
+              "section": "Results",
+              "table_figure": "Table 3 secondary clinician diagnosis; Table 2 raw counts",
+              "paragraph": null,
+              "basis": "full_text",
+              "missingness": "not_applicable"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SYN-D01-C01-SYMPTOMS",
+      "drugId": "D01",
+      "conditionId": "C01",
+      "title": "Later symptoms or death after acute infection",
+      "use": "Prevention during acute COVID",
+      "population": "Outpatients aged at least 30; prior infection or vaccination allowed",
+      "comparison": "Metformin versus matched placebo",
+      "endpoint": "Symptoms attributed to COVID-19 or death",
+      "timepoint": "Day 180",
+      "status": "reported_result",
+      "finding": {
+        "text": "ACTIV-6 did not meet its reported efficacy threshold for the primary long-term endpoint; its estimate remained compatible with a reduction or a small increase.",
+        "sources": [
+          "P-ACTIV6-2026"
+        ],
+        "evidenceRefs": [
+          "R-A6-RD"
+        ],
+        "kind": "bounded_interpretation"
+      },
+      "magnitudeText": "Adjusted risk difference −0.8 percentage points (95% credible interval −2.2 to 0.6); raw events 33/1439 versus 46/1544.",
+      "certainty": {
+        "label": "Not appraised",
+        "method": null,
+        "rationale": "A body-of-evidence certainty method and its required domains have not been completed and independently reviewed. This label is not a Low-certainty grade.",
+        "reviewState": "pending_human_scientific_review"
+      },
+      "evidenceBase": "1 randomized trial family; endpoint definitions, populations and timepoints remain separate.",
+      "limitations": [
+        {
+          "text": "The model-based difference is not the subtraction of the raw event fractions; 593 symptom outcomes were missing.",
+          "sources": [
+            "P-ACTIV6-2026"
+          ],
+          "evidenceRefs": [
+            "R-A6-RD"
+          ],
+          "kind": "source_fact"
+        },
+        {
+          "text": "The acquired publisher snapshot contains only part of the full text.",
+          "sources": [],
+          "evidenceRefs": [],
+          "kind": "access_status"
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "P-ACTIV6-2026",
+          "evidenceRef": "R-A6-RD",
+          "label": "Table 3 primary endpoint; Table 2 raw counts"
+        }
+      ],
+      "sourceIds": [
+        "P-ACTIV6-2026"
+      ],
+      "studyFamilyIds": [
+        "S-ACTIV6-2026"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [
+        "/answers/metformin-prevention"
+      ],
+      "coverage": {
+        "scope": "Bounded recorded corpus, not a systematic review",
+        "complete": false,
+        "pending": [
+          "Complete source and supplement access",
+          "Missing-data appraisal",
+          "Qualified appraisal and review"
+        ]
+      },
+      "effects": [
+        {
+          "sourceId": "P-ACTIV6-2026",
+          "design": "Quadruple-blind randomized decentralized placebo-controlled platform trial",
+          "population": "Outpatients at least 30 years old with acute COVID; prior infection/vaccination allowed",
+          "timepoint": "Day 180",
+          "sampleRandomized": 3214,
+          "sampleAnalyzed": 2983,
+          "sampleDenominatorNote": "Study-level totals; do not substitute them for endpoint-specific denominators.",
+          "locators": [
+            {
+              "paper_id": "P-ACTIV6-2026",
+              "source_url": "https://academic.oup.com/cid/advance-article/doi/10.1093/cid/ciag335/8702406",
+              "file": "work/evidence/raw/activ6-web-extract.json",
+              "pdf_page": null,
+              "printed_page": null,
+              "section": "Results",
+              "table_figure": "Table 3 primary endpoint; Table 2 raw counts",
+              "paragraph": null,
+              "basis": "full_text",
+              "missingness": "not_applicable"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SYN-D01-C01-RECOVERY",
+      "drugId": "D01",
+      "conditionId": "C01",
+      "title": "Recovery after Long COVID is established",
+      "use": "Treatment of established Long COVID",
+      "population": "Adults with PASC index at least 12",
+      "comparison": "Metformin versus double placebo",
+      "endpoint": "Recovery: PASC index below 12",
+      "timepoint": "Week 8",
+      "status": "reported_result",
+      "finding": {
+        "text": "The South Korean trial did not show improved recovery with the studied metformin course; the abstract reports fewer recovered participants in the metformin arm than the placebo arm.",
+        "sources": [
+          "P-KOREA-2026"
+        ],
+        "evidenceRefs": [
+          "R-KR-RECOVERY"
+        ],
+        "kind": "bounded_interpretation"
+      },
+      "magnitudeText": "Recovered: 84/132 (63.6%) with metformin versus 90/132 (68.2%) with placebo. Between-group interval not extracted.",
+      "certainty": {
+        "label": "Not appraised",
+        "method": null,
+        "rationale": "A body-of-evidence certainty method and its required domains have not been completed and independently reviewed. This label is not a Low-certainty grade.",
+        "reviewState": "pending_human_scientific_review"
+      },
+      "evidenceBase": "1 randomized trial family; endpoint definitions, populations and timepoints remain separate.",
+      "limitations": [
+        {
+          "text": "The extracted abstract has no between-group confidence interval, and notes limited applicability to more severe or persistent Long COVID.",
+          "sources": [
+            "P-KOREA-2026"
+          ],
+          "evidenceRefs": [
+            "R-KR-RECOVERY",
+            "S-KOREA-2026-limitations"
+          ],
+          "kind": "source_fact"
+        },
+        {
+          "text": "This result does not establish equivalence between treatment and placebo.",
+          "sources": [
+            "P-KOREA-2026"
+          ],
+          "evidenceRefs": [
+            "R-KR-RECOVERY"
+          ],
+          "kind": "bounded_interpretation"
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "P-KOREA-2026",
+          "evidenceRef": "R-KR-RECOVERY",
+          "label": "Abstract Results"
+        }
+      ],
+      "sourceIds": [
+        "P-KOREA-2026"
+      ],
+      "studyFamilyIds": [
+        "S-KOREA-2026"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [
+        "/answers/metformin-treatment"
+      ],
+      "coverage": {
+        "scope": "Bounded recorded corpus, not a systematic review",
+        "complete": false,
+        "pending": [
+          "Acquire full text and supplement",
+          "Extract uncertainty and harms",
+          "Reconcile quarantined REVIVE replacement separately"
+        ]
+      },
+      "effects": [
+        {
+          "sourceId": "P-KOREA-2026",
+          "design": "Double-blind randomized placebo-controlled trial",
+          "population": "Adults with PASC index at least 12",
+          "timepoint": "Week 8",
+          "sampleRandomized": 396,
+          "sampleAnalyzed": 396,
+          "sampleDenominatorNote": "Study-level totals; do not substitute them for endpoint-specific denominators.",
+          "locators": [
+            {
+              "paper_id": "P-KOREA-2026",
+              "source_url": "https://pubmed.ncbi.nlm.nih.gov/41771135/",
+              "file": "work/evidence/raw/pubmed-metadata.xml",
+              "pdf_page": null,
+              "printed_page": null,
+              "section": "Results",
+              "table_figure": "Abstract Results",
+              "paragraph": null,
+              "basis": "abstract",
+              "missingness": "not_applicable"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SYN-D03-C01-SEVERITY",
+      "drugId": "D03",
+      "conditionId": "C01",
+      "title": "Core symptom severity in established Long COVID",
+      "use": "Treatment of established Long COVID",
+      "population": "Adults with at least two moderate or severe core symptoms for at least three months",
+      "comparison": "Nirmatrelvir plus ritonavir versus placebo plus ritonavir",
+      "endpoint": "Pooled severity of six core PASC symptoms",
+      "timepoint": "Week 10",
+      "status": "reported_result",
+      "finding": {
+        "text": "STOP-PASC did not show a statistically significant between-group difference in its primary symptom-severity outcome.",
+        "sources": [
+          "P-STOPPASC-2024"
+        ],
+        "evidenceRefs": [
+          "R-SP-PRIMARY"
+        ],
+        "kind": "bounded_interpretation"
+      },
+      "magnitudeText": "No numerical primary effect extracted. This is not an estimated zero effect.",
+      "certainty": {
+        "label": "Not appraised",
+        "method": null,
+        "rationale": "A body-of-evidence certainty method and its required domains have not been completed and independently reviewed. This label is not a Low-certainty grade.",
+        "reviewState": "pending_human_scientific_review"
+      },
+      "evidenceBase": "1 randomized trial family; endpoint definitions, populations and timepoints remain separate.",
+      "limitations": [
+        {
+          "text": "The small, single-center trial closed early after its futility criterion was reached.",
+          "sources": [
+            "P-STOPPASC-2024"
+          ],
+          "evidenceRefs": [
+            "S-STOPPASC-2024-limitations",
+            "S-STOPPASC-2024-attrition"
+          ],
+          "kind": "source_fact"
+        },
+        {
+          "text": "A numerical primary effect and interval are not present in the accepted result record; the fatigue estimate is a different endpoint.",
+          "sources": [
+            "P-STOPPASC-2024"
+          ],
+          "evidenceRefs": [
+            "R-SP-PRIMARY",
+            "R-SP-FATIGUE"
+          ],
+          "kind": "extraction_boundary"
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "P-STOPPASC-2024",
+          "evidenceRef": "R-SP-PRIMARY",
+          "label": "Results / Primary Outcome"
+        }
+      ],
+      "sourceIds": [
+        "P-STOPPASC-2024"
+      ],
+      "studyFamilyIds": [
+        "S-STOPPASC-2024"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [
+        "/answers/nirmatrelvir-treatment"
+      ],
+      "coverage": {
+        "scope": "Bounded recorded corpus, not a systematic review",
+        "complete": false,
+        "pending": [
+          "Complete primary numerical extraction under an appropriate plan",
+          "Reconcile all identified antiviral trial families",
+          "Formal appraisal and human review"
+        ]
+      },
+      "effects": [
+        {
+          "sourceId": "P-STOPPASC-2024",
+          "design": "Double-blind randomized placebo-controlled trial, 2:1 allocation",
+          "population": "Adults with established PASC and at least two moderate or severe core symptoms",
+          "timepoint": "Week 10",
+          "sampleRandomized": 155,
+          "sampleAnalyzed": 155,
+          "sampleDenominatorNote": "Study-level totals; do not substitute them for endpoint-specific denominators.",
+          "locators": [
+            {
+              "paper_id": "P-STOPPASC-2024",
+              "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11161857/",
+              "file": "work/evidence/raw/stoppasc.html",
+              "pdf_page": null,
+              "printed_page": null,
+              "section": "Results / Primary Outcome",
+              "table_figure": null,
+              "paragraph": null,
+              "basis": "full_text",
+              "missingness": "not_applicable"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SYN-D03-C01-FATIGUE",
+      "drugId": "D03",
+      "conditionId": "C01",
+      "title": "Fatigue score change in established Long COVID",
+      "use": "Treatment of established Long COVID",
+      "population": "Adults with at least two moderate or severe core symptoms for at least three months",
+      "comparison": "Nirmatrelvir plus ritonavir versus placebo plus ritonavir",
+      "endpoint": "PROMIS fatigue score change (secondary outcome)",
+      "timepoint": "Baseline to week 10",
+      "status": "reported_result",
+      "finding": {
+        "text": "The secondary fatigue comparison did not show a clear advantage for nirmatrelvir–ritonavir; the confidence interval included differences in either direction.",
+        "sources": [
+          "P-STOPPASC-2024"
+        ],
+        "evidenceRefs": [
+          "R-SP-FATIGUE"
+        ],
+        "kind": "bounded_interpretation"
+      },
+      "magnitudeText": "Adjusted between-group change difference 0.38 score points (95% CI −2.40 to 3.15).",
+      "certainty": {
+        "label": "Not appraised",
+        "method": null,
+        "rationale": "A body-of-evidence certainty method and its required domains have not been completed and independently reviewed. This label is not a Low-certainty grade.",
+        "reviewState": "pending_human_scientific_review"
+      },
+      "evidenceBase": "1 randomized trial family; endpoint definitions, populations and timepoints remain separate.",
+      "limitations": [
+        {
+          "text": "Lower fatigue scores are better; the positive point estimate does not favor the active treatment.",
+          "sources": [
+            "P-STOPPASC-2024"
+          ],
+          "evidenceRefs": [
+            "R-SP-FATIGUE"
+          ],
+          "kind": "source_fact"
+        },
+        {
+          "text": "Endpoint-specific analyzed denominators were not extracted; randomized arm sizes must not be substituted.",
+          "sources": [
+            "P-STOPPASC-2024"
+          ],
+          "evidenceRefs": [
+            "R-SP-FATIGUE"
+          ],
+          "kind": "extraction_boundary"
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "P-STOPPASC-2024",
+          "evidenceRef": "R-SP-FATIGUE",
+          "label": "Table 2 PROMIS fatigue"
+        }
+      ],
+      "sourceIds": [
+        "P-STOPPASC-2024"
+      ],
+      "studyFamilyIds": [
+        "S-STOPPASC-2024"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [
+        "/answers/nirmatrelvir-treatment"
+      ],
+      "coverage": {
+        "scope": "Bounded recorded corpus, not a systematic review",
+        "complete": false,
+        "pending": [
+          "Endpoint-specific denominator extraction",
+          "Appraise secondary endpoint and multiplicity"
+        ]
+      },
+      "effects": [
+        {
+          "sourceId": "P-STOPPASC-2024",
+          "design": "Double-blind randomized placebo-controlled trial, 2:1 allocation",
+          "population": "Adults with at least two moderate/severe core PASC symptoms, at least 3 months duration",
+          "timepoint": "Baseline to week 10",
+          "sampleRandomized": 155,
+          "sampleAnalyzed": 155,
+          "sampleDenominatorNote": "Study-level totals; do not substitute them for endpoint-specific denominators.",
+          "locators": [
+            {
+              "paper_id": "P-STOPPASC-2024",
+              "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11161857/",
+              "file": "work/evidence/raw/stoppasc.html",
+              "pdf_page": null,
+              "printed_page": null,
+              "section": "Results",
+              "table_figure": "Table 2 PROMIS fatigue",
+              "paragraph": null,
+              "basis": "full_text",
+              "missingness": "not_applicable"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SYN-D03-C01-PHENOTYPES",
+      "drugId": "D03",
+      "conditionId": "C01",
+      "title": "Clinically significant improvement across selected symptom phenotypes",
+      "use": "Treatment of established Long COVID",
+      "population": "Adults with Long COVID for at least 12 weeks; cognitive, autonomic or exercise phenotypes",
+      "comparison": "15- or 25-day nirmatrelvir–ritonavir regimens versus placebo–ritonavir",
+      "endpoint": "Phenotype-specific primary improvement outcomes",
+      "timepoint": "Day 90",
+      "status": "reported_result",
+      "finding": {
+        "text": "The RECOVER-VITAL abstract reports no statistically significant primary benefit in the selected symptom phenotypes.",
+        "sources": [
+          "P-RECOVER-2026"
+        ],
+        "evidenceRefs": [
+          "R-RV-NULL"
+        ],
+        "kind": "bounded_interpretation"
+      },
+      "magnitudeText": "Numerical phenotype-specific estimates and intervals not extracted; no pooled estimate.",
+      "certainty": {
+        "label": "Not appraised",
+        "method": null,
+        "rationale": "A body-of-evidence certainty method and its required domains have not been completed and independently reviewed. This label is not a Low-certainty grade.",
+        "reviewState": "pending_human_scientific_review"
+      },
+      "evidenceBase": "1 randomized trial family; endpoint definitions, populations and timepoints remain separate.",
+      "limitations": [
+        {
+          "text": "Different phenotypes used different primary outcomes; no pooled numerical effect is available in the accepted extraction.",
+          "sources": [
+            "P-RECOVER-2026"
+          ],
+          "evidenceRefs": [
+            "R-RV-NULL"
+          ],
+          "kind": "source_fact"
+        },
+        {
+          "text": "Full text is needed to reconcile phenotype denominators and overlapping groups.",
+          "sources": [
+            "P-RECOVER-2026"
+          ],
+          "evidenceRefs": [
+            "S-RECOVER-2026-limitations"
+          ],
+          "kind": "extraction_boundary"
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "P-RECOVER-2026",
+          "evidenceRef": "R-RV-NULL",
+          "label": "Abstract Findings"
+        }
+      ],
+      "sourceIds": [
+        "P-RECOVER-2026"
+      ],
+      "studyFamilyIds": [
+        "S-RECOVER-2026"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [
+        "/answers/nirmatrelvir-treatment"
+      ],
+      "coverage": {
+        "scope": "Bounded recorded corpus, not a systematic review",
+        "complete": false,
+        "pending": [
+          "Acquire complete report and supplement",
+          "Extract phenotype-specific estimates, intervals and denominators",
+          "Study review and appraisal"
+        ]
+      },
+      "effects": [
+        {
+          "sourceId": "P-RECOVER-2026",
+          "design": "Double-blind randomized placebo-controlled trial, 1:1:1 allocation",
+          "population": "Adults with long COVID of at least 12 weeks; cognitive, autonomic, exercise phenotypes",
+          "timepoint": "Day 90",
+          "sampleRandomized": 964,
+          "sampleAnalyzed": 959,
+          "sampleDenominatorNote": "Study-level totals; do not substitute them for endpoint-specific denominators.",
+          "locators": [
+            {
+              "paper_id": "P-RECOVER-2026",
+              "source_url": "https://pubmed.ncbi.nlm.nih.gov/42673984/",
+              "file": "work/evidence/raw/pubmed-metadata.xml",
+              "pdf_page": null,
+              "printed_page": null,
+              "section": "Results",
+              "table_figure": "Abstract Findings",
+              "paragraph": null,
+              "basis": "abstract",
+              "missingness": "not_applicable"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SYN-D01-C24-UPDRS",
+      "drugId": "D01",
+      "conditionId": "C24",
+      "title": "Parkinson symptom score with adjunctive metformin",
+      "use": "Adjunctive treatment of Parkinson disease",
+      "population": "Adults aged at least 50 receiving levodopa/carbidopa; diabetes excluded",
+      "comparison": "Metformin plus levodopa/carbidopa versus placebo plus levodopa/carbidopa",
+      "endpoint": "UPDRS total (primary clinical endpoint)",
+      "timepoint": "Three months",
+      "status": "reported_result",
+      "finding": {
+        "text": "The pilot did not demonstrate a between-group clinical benefit on UPDRS total, despite improvement within the metformin arm.",
+        "sources": [
+          "CP016"
+        ],
+        "evidenceRefs": [
+          "CP016-ARTICLE-O1"
+        ],
+        "kind": "bounded_interpretation"
+      },
+      "magnitudeText": "Post-treatment UPDRS medians 128 (IQR 98–151) versus 139 (101–151.5); rank-biserial r=0.106, P=0.515. Between-group confidence interval not recorded.",
+      "certainty": {
+        "label": "Not appraised",
+        "method": null,
+        "rationale": "A body-of-evidence certainty method and its required domains have not been completed and independently reviewed. This label is not a Low-certainty grade.",
+        "reviewState": "pending_human_scientific_review"
+      },
+      "evidenceBase": "One small double-blind randomized pilot; 60 randomized, 27 and 25 analyzed per protocol.",
+      "limitations": [
+        {
+          "text": "The short, single-center study used a per-protocol analysis and a single metformin dose.",
+          "sources": [
+            "CP016"
+          ],
+          "evidenceRefs": [
+            "CP016-ARTICLE-study_type",
+            "CP016-ARTICLE-stated_limitations"
+          ],
+          "kind": "source_fact"
+        },
+        {
+          "text": "Biomarker differences are separate outcomes and do not establish clinical superiority.",
+          "sources": [
+            "CP016"
+          ],
+          "evidenceRefs": [
+            "CP016-ARTICLE-O1",
+            "CP016-ARTICLE-O3"
+          ],
+          "kind": "bounded_interpretation"
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "CP016",
+          "evidenceRef": "CP016-ARTICLE-O1",
+          "label": "PDF p6 Table2; p7 Results"
+        },
+        {
+          "sourceId": "CP016",
+          "evidenceRef": "CP016-ARTICLE-sample_size",
+          "label": "PDF pp1–12; Table2 p6, Table3 p7, Table4 p8"
+        }
+      ],
+      "sourceIds": [
+        "CP016"
+      ],
+      "studyFamilyIds": [
+        "CP28-FAMILY-CP016"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "scope": "One acquired CP28 report; not all Parkinson repurposing evidence",
+        "complete": false,
+        "pending": [
+          "Universal Q01–Q15 review",
+          "Appraisal and independent human review",
+          "Wider study-family reconciliation"
+        ]
+      },
+      "effects": [
+        {
+          "sourceId": "CP016",
+          "sampleRandomized": 60,
+          "sampleAnalyzed": null,
+          "groupAnalyzedN": [
+            27,
+            25
+          ],
+          "locators": [
+            {
+              "pdfPage": 6,
+              "table": "Table 2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SYN-D01-C25-EXPLORATORY",
+      "drugId": "D01",
+      "conditionId": "C25",
+      "title": "Cognition-related exploratory findings in schizophrenia",
+      "use": "Metformin added to antipsychotic treatment",
+      "population": "Clinically stable schizophrenia; disease duration at most five years",
+      "comparison": "Metformin plus antipsychotics versus antipsychotics alone",
+      "endpoint": "Metabolites and brain connectivity associated with cognitive change",
+      "timepoint": "Up to 24 weeks",
+      "status": "exploratory",
+      "finding": {
+        "text": "The report describes exploratory metabolic and brain-connectivity findings, but the accepted record has no current between-arm cognitive efficacy estimate.",
+        "sources": [
+          "CP017"
+        ],
+        "evidenceRefs": [
+          "CP017-ARTICLE-O1",
+          "CP017-ARTICLE-O2",
+          "CP017-ARTICLE-O4"
+        ],
+        "kind": "bounded_interpretation"
+      },
+      "magnitudeText": "Clinical cognitive benefit cannot be quantified from this record. Metabolite, imaging and correlation numbers remain in the source record and are not substitutes.",
+      "certainty": {
+        "label": "Not appraised",
+        "method": null,
+        "rationale": "A body-of-evidence certainty method and its required domains have not been completed and independently reviewed. This label is not a Low-certainty grade.",
+        "reviewState": "pending_human_scientific_review"
+      },
+      "evidenceBase": "Post hoc analysis of an open-label randomized parent trial; plasma analysis 58 and MRI analysis 33, drawn from 72 randomized.",
+      "limitations": [
+        {
+          "text": "Unadjusted exploratory tests, missing samples and potential confounding limit interpretation.",
+          "sources": [
+            "CP017"
+          ],
+          "evidenceRefs": [
+            "CP017-ARTICLE-stated_limitations"
+          ],
+          "kind": "source_fact"
+        },
+        {
+          "text": "The report must be linked to its parent trial to prevent duplicate counting.",
+          "sources": [
+            "CP017"
+          ],
+          "evidenceRefs": [
+            "CP017-ARTICLE-P001"
+          ],
+          "kind": "extraction_boundary"
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "CP017",
+          "evidenceRef": "CP017-ARTICLE-O1",
+          "label": "PDF p8 Table3 week24"
+        },
+        {
+          "sourceId": "CP017",
+          "evidenceRef": "CP017-ARTICLE-O2",
+          "label": "PDF p7 Results; Fig1 p5"
+        },
+        {
+          "sourceId": "CP017",
+          "evidenceRef": "CP017-ARTICLE-O3",
+          "label": "PDF p7 Results; Fig2 p8"
+        },
+        {
+          "sourceId": "CP017",
+          "evidenceRef": "CP017-ARTICLE-O4",
+          "label": "PDF pp8,10; p7 opening cognition paragraph"
+        },
+        {
+          "sourceId": "CP017",
+          "evidenceRef": "CP017-ARTICLE-sample_size",
+          "label": "PDF pp1–14; Methods pp3–4; Tables1–3 pp6–8"
+        }
+      ],
+      "sourceIds": [
+        "CP017"
+      ],
+      "studyFamilyIds": [
+        "CP28-FAMILY-CP017-PARENT"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "scope": "One acquired secondary report; not a complete schizophrenia cognition synthesis",
+        "complete": false,
+        "pending": [
+          "Acquire and reconcile parent efficacy report",
+          "Verify outcome-specific effect and uncertainty",
+          "Q01–Q15 review and appraisal"
+        ]
+      },
+      "effects": []
+    },
+    {
+      "id": "SYN-D07-C18-BACKGROUND",
+      "drugId": "D07",
+      "conditionId": "C18",
+      "title": "Melanoma research leads",
+      "use": "Cancer repurposing research",
+      "population": "Preclinical cancer mechanisms",
+      "comparison": "Not verified from original reports",
+      "endpoint": "Original outcome definitions not yet verified",
+      "timepoint": "Not verified",
+      "status": "background_only",
+      "finding": {
+        "text": "The ingested textbook bibliography identifies original-report leads for melanoma, but the original reports have not been acquired or extracted.",
+        "sources": [
+          "CP027",
+          "CP028"
+        ],
+        "evidenceRefs": [
+          "FT30-ITRA-P001"
+        ],
+        "kind": "bibliography_boundary"
+      },
+      "magnitudeText": "Not assessed: primary source unavailable in the accepted corpus.",
+      "certainty": {
+        "label": "Not appraised",
+        "method": null,
+        "rationale": "A body-of-evidence certainty method and its required domains have not been completed and independently reviewed. This label is not a Low-certainty grade.",
+        "reviewState": "pending_human_scientific_review"
+      },
+      "evidenceBase": "Printed citation leads in context sources; zero acquired original studies in this row.",
+      "limitations": [
+        {
+          "text": "A title or textbook summary cannot establish human benefit, study quality or a safe treatment regimen.",
+          "sources": [],
+          "evidenceRefs": [],
+          "kind": "editorial_boundary"
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "CP027",
+          "evidenceRef": "FT30-ITRA-P001",
+          "label": "Chapter 5: body printed p. 68 / PDF p. 85; reference printed p. 83 / PDF p. 100; Table 5.1 printed p. 61 / PDF p. 78."
+        },
+        {
+          "sourceId": "CP028",
+          "evidenceRef": "FT30-ITRA-P001",
+          "label": "EPUB Chapter 1, Cancer paragraph and reference 70 (r70); OEBPS/Text/9789815123197-C1.html. No printed page recorded."
+        }
+      ],
+      "sourceIds": [
+        "CP027",
+        "CP028"
+      ],
+      "studyFamilyIds": [],
+      "countsAsPrimaryEvidence": false,
+      "answerRoutes": [],
+      "coverage": {
+        "scope": "Local book-reference discovery only",
+        "complete": false,
+        "pending": [
+          "Acquire and verify the cited original report(s)",
+          "Confirm models, population, comparator and outcomes",
+          "Extract failed/null results and harms",
+          "Appraise before benefit conclusions"
+        ]
+      },
+      "effects": []
+    },
+    {
+      "id": "SYN-D07-C16-BACKGROUND",
+      "drugId": "D07",
+      "conditionId": "C16",
+      "title": "Colon cancer research leads",
+      "use": "Cancer repurposing research",
+      "population": "Preclinical cancer-cell findings",
+      "comparison": "Not verified from original reports",
+      "endpoint": "Original outcome definitions not yet verified",
+      "timepoint": "Not verified",
+      "status": "background_only",
+      "finding": {
+        "text": "The ingested textbook bibliography identifies original-report leads for colon cancer, but the original reports have not been acquired or extracted.",
+        "sources": [
+          "CP027"
+        ],
+        "evidenceRefs": [
+          "FT30-ITRA-P002"
+        ],
+        "kind": "bibliography_boundary"
+      },
+      "magnitudeText": "Not assessed: primary source unavailable in the accepted corpus.",
+      "certainty": {
+        "label": "Not appraised",
+        "method": null,
+        "rationale": "A body-of-evidence certainty method and its required domains have not been completed and independently reviewed. This label is not a Low-certainty grade.",
+        "reviewState": "pending_human_scientific_review"
+      },
+      "evidenceBase": "Printed citation leads in context sources; zero acquired original studies in this row.",
+      "limitations": [
+        {
+          "text": "A title or textbook summary cannot establish human benefit, study quality or a safe treatment regimen.",
+          "sources": [],
+          "evidenceRefs": [],
+          "kind": "editorial_boundary"
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "CP027",
+          "evidenceRef": "FT30-ITRA-P002",
+          "label": "Chapter 5, printed 68, PDF 85, body crosslink; Chapter 5, printed 80, PDF 97, bibliographic reference; Chapter 5, printed 61, PDF 78, table crosslink"
+        }
+      ],
+      "sourceIds": [
+        "CP027"
+      ],
+      "studyFamilyIds": [],
+      "countsAsPrimaryEvidence": false,
+      "answerRoutes": [],
+      "coverage": {
+        "scope": "Local book-reference discovery only",
+        "complete": false,
+        "pending": [
+          "Acquire and verify the cited original report(s)",
+          "Confirm models, population, comparator and outcomes",
+          "Extract failed/null results and harms",
+          "Appraise before benefit conclusions"
+        ]
+      },
+      "effects": []
+    },
+    {
+      "id": "SYN-D07-C17-BACKGROUND",
+      "drugId": "D07",
+      "conditionId": "C17",
+      "title": "Pancreatic cancer research leads",
+      "use": "Cancer repurposing research",
+      "population": "Preclinical mechanisms and chemotherapy combination reports",
+      "comparison": "Not verified from original reports",
+      "endpoint": "Original outcome definitions not yet verified",
+      "timepoint": "Not verified",
+      "status": "background_only",
+      "finding": {
+        "text": "The ingested textbook bibliography identifies original-report leads for pancreatic cancer, but the original reports have not been acquired or extracted.",
+        "sources": [
+          "CP027"
+        ],
+        "evidenceRefs": [
+          "FT30-ITRA-P003",
+          "FT30-ITRA-P005"
+        ],
+        "kind": "bibliography_boundary"
+      },
+      "magnitudeText": "Not assessed: primary source unavailable in the accepted corpus.",
+      "certainty": {
+        "label": "Not appraised",
+        "method": null,
+        "rationale": "A body-of-evidence certainty method and its required domains have not been completed and independently reviewed. This label is not a Low-certainty grade.",
+        "reviewState": "pending_human_scientific_review"
+      },
+      "evidenceBase": "Printed citation leads in context sources; zero acquired original studies in this row.",
+      "limitations": [
+        {
+          "text": "A title or textbook summary cannot establish human benefit, study quality or a safe treatment regimen.",
+          "sources": [],
+          "evidenceRefs": [],
+          "kind": "editorial_boundary"
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "CP027",
+          "evidenceRef": "FT30-ITRA-P003",
+          "label": "Chapter 5, printed 68, PDF 85, body crosslink; Chapter 5, printed 82, PDF 99, bibliographic reference; Chapter 5, printed 61, PDF 78, table crosslink"
+        },
+        {
+          "sourceId": "CP027",
+          "evidenceRef": "FT30-ITRA-P005",
+          "label": "Chapter 14, printed 316, PDF 328, body crosslink; Chapter 14, printed 327, PDF 339, bibliographic reference"
+        }
+      ],
+      "sourceIds": [
+        "CP027"
+      ],
+      "studyFamilyIds": [],
+      "countsAsPrimaryEvidence": false,
+      "answerRoutes": [],
+      "coverage": {
+        "scope": "Local book-reference discovery only",
+        "complete": false,
+        "pending": [
+          "Acquire and verify the cited original report(s)",
+          "Confirm models, population, comparator and outcomes",
+          "Extract failed/null results and harms",
+          "Appraise before benefit conclusions"
+        ]
+      },
+      "effects": []
+    },
+    {
+      "id": "SYN-D07-C03-BACKGROUND",
+      "drugId": "D07",
+      "conditionId": "C03",
+      "title": "Ovarian clear cell carcinoma research leads",
+      "use": "Cancer repurposing research",
+      "population": "Chemotherapy combination report",
+      "comparison": "Not verified from original reports",
+      "endpoint": "Original outcome definitions not yet verified",
+      "timepoint": "Not verified",
+      "status": "background_only",
+      "finding": {
+        "text": "The ingested textbook bibliography identifies original-report leads for ovarian clear cell carcinoma, but the original reports have not been acquired or extracted.",
+        "sources": [
+          "CP027"
+        ],
+        "evidenceRefs": [
+          "FT30-ITRA-P004"
+        ],
+        "kind": "bibliography_boundary"
+      },
+      "magnitudeText": "Not assessed: primary source unavailable in the accepted corpus.",
+      "certainty": {
+        "label": "Not appraised",
+        "method": null,
+        "rationale": "A body-of-evidence certainty method and its required domains have not been completed and independently reviewed. This label is not a Low-certainty grade.",
+        "reviewState": "pending_human_scientific_review"
+      },
+      "evidenceBase": "Printed citation leads in context sources; zero acquired original studies in this row.",
+      "limitations": [
+        {
+          "text": "A title or textbook summary cannot establish human benefit, study quality or a safe treatment regimen.",
+          "sources": [],
+          "evidenceRefs": [],
+          "kind": "editorial_boundary"
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "CP027",
+          "evidenceRef": "FT30-ITRA-P004",
+          "label": "Chapter 14, printed 316, PDF 328, body crosslink; Chapter 14, printed 327, PDF 339, bibliographic reference"
+        }
+      ],
+      "sourceIds": [
+        "CP027"
+      ],
+      "studyFamilyIds": [],
+      "countsAsPrimaryEvidence": false,
+      "answerRoutes": [],
+      "coverage": {
+        "scope": "Local book-reference discovery only",
+        "complete": false,
+        "pending": [
+          "Acquire and verify the cited original report(s)",
+          "Confirm models, population, comparator and outcomes",
+          "Extract failed/null results and harms",
+          "Appraise before benefit conclusions"
+        ]
+      },
+      "effects": []
+    },
+    {
+      "id": "SYN-D01-C30-BACKGROUND",
+      "drugId": "D01",
+      "conditionId": "C30",
+      "title": "Sarcopenia and physical-function research",
+      "use": "Sarcopenia repurposing research",
+      "population": "Prefrailty and exercise studies summarized in a review",
+      "comparison": "Original comparisons require primary-source verification",
+      "endpoint": "Walking speed, strength and training response",
+      "timepoint": "Original primary studies not reconciled",
+      "status": "background_only",
+      "finding": {
+        "text": "The review describes mixed physical-function findings, including a walking-speed signal, null strength outcomes and attenuated exercise responses.",
+        "sources": [
+          "CP018"
+        ],
+        "evidenceRefs": [
+          "CP018-R01-O1",
+          "CP018-R01-O2"
+        ],
+        "kind": "secondary_summary"
+      },
+      "magnitudeText": "Primary magnitude not independently verified; review-reported numbers are not promoted to primary findings here.",
+      "certainty": {
+        "label": "Not appraised",
+        "method": null,
+        "rationale": "A body-of-evidence certainty method and its required domains have not been completed and independently reviewed. This label is not a Low-certainty grade.",
+        "reviewState": "pending_human_scientific_review"
+      },
+      "evidenceBase": "One narrative review; its cited trials are not independent acquired results in this row.",
+      "limitations": [
+        {
+          "text": "The review says few trials specifically recruit sarcopenia, and the exercise trials did not test metformin alone.",
+          "sources": [
+            "CP018"
+          ],
+          "evidenceRefs": [
+            "CP018-R01-stated_limitations"
+          ],
+          "kind": "source_fact"
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "CP018",
+          "evidenceRef": "CP018-R01-O1",
+          "label": "PDF p. 6 / printed p. 708"
+        },
+        {
+          "sourceId": "CP018",
+          "evidenceRef": "CP018-R01-O2",
+          "label": "PDF p. 6"
+        }
+      ],
+      "sourceIds": [
+        "CP018"
+      ],
+      "studyFamilyIds": [],
+      "countsAsPrimaryEvidence": false,
+      "answerRoutes": [],
+      "coverage": {
+        "scope": "Background from one acquired review",
+        "complete": false,
+        "pending": [
+          "Acquire cited original trials",
+          "Reconcile populations, exercise co-interventions and outcomes",
+          "Primary result extraction and appraisal"
+        ]
+      },
+      "effects": []
+    },
+    {
+      "id": "SYN-D28-C11-CMAP",
+      "drugId": "D28",
+      "conditionId": "C11",
+      "title": "Vorinostat computational nomination for anti-TNF-refractory Crohn disease",
+      "use": "Computational drug-repurposing hypothesis for anti-TNF-refractory Crohn disease",
+      "population": "GSE100833 anti-TNF refractory Crohn's disease inflamed and non-inflamed colonic transcriptomes; CMap and STRING analyses.",
+      "comparison": "Transcriptomic cluster queried against Connectivity Map drug profiles; no treated-patient comparison",
+      "endpoint": "Connectivity Map (CMap) enrichment score for a selected gene cluster",
+      "timepoint": "Computational analysis; no patient treatment follow-up",
+      "status": "computational_result",
+      "finding": {
+        "text": "Vorinostat was nominated by an original computational analysis of Crohn disease transcriptomes. The result identifies a hypothesis for experimental testing and does not demonstrate symptom improvement, remission or clinical safety.",
+        "sources": [
+          "CP002-R01"
+        ],
+        "evidenceRefs": [
+          "REF-CP002-R01-P003"
+        ],
+        "kind": "source_fact"
+      },
+      "magnitudeText": "CMap enrichment score 12.3, cluster 1. This is a computational score, not a clinical effect size; a clinical effect interval is not identifiable from this design.",
+      "certainty": {
+        "label": "Not appraised",
+        "method": null,
+        "rationale": "Formal assessment of the source design and its limitations has not been completed or independently reviewed. This is not a Low-certainty grade for clinical efficacy.",
+        "reviewState": "pending_human_scientific_review"
+      },
+      "evidenceBase": "One original computational analysis; the source describes transcriptomes from 327 patients, with no new intervention cohort. Both Crohn candidate rows belong to this same analysis.",
+      "limitations": [
+        {
+          "text": "The analysis used one transcriptome dataset; the authors note potential selection bias and the need for experimental confirmation.",
+          "sources": [
+            "CP002-R01"
+          ],
+          "evidenceRefs": [
+            "REF-CP002-DESIGN"
+          ],
+          "kind": "source_fact"
+        },
+        {
+          "text": "Candidate nomination cannot quantify patient benefit, and neither drug was tested as a Crohn treatment in this report.",
+          "sources": [
+            "CP002-R01"
+          ],
+          "evidenceRefs": [
+            "REF-CP002-R01-P003"
+          ],
+          "kind": "source_fact"
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "CP002-R01",
+          "evidenceRef": "REF-CP002-R01-P003",
+          "label": "Figure 3, PDF p.4"
+        },
+        {
+          "sourceId": "CP002-R01",
+          "evidenceRef": "REF-CP002-DESIGN",
+          "label": "Methods PDF p.7; limitations PDF pp.6–7"
+        }
+      ],
+      "sourceIds": [
+        "CP002-R01"
+      ],
+      "studyFamilyIds": [
+        "CP28-FAMILY-CP002"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "scope": "One original computational report reused from the accepted CP28 corpus",
+        "complete": false,
+        "pending": [
+          "Experimental and clinical validation",
+          "Formal computational-method appraisal",
+          "Study-family and source-integrity reconciliation",
+          "Q01–Q15 review and human approval"
+        ]
+      },
+      "effects": [
+        {
+          "sourceId": "CP002-R01",
+          "design": "Original computational transcriptome/CMap drug repositioning",
+          "population": "GSE100833 anti-TNF refractory Crohn's disease inflamed and non-inflamed colonic transcriptomes; CMap and STRING analyses.",
+          "sampleRandomized": null,
+          "sampleAnalyzed": null,
+          "sampleDescription": "327 patients described in Methods p.7; 164 small-molecule compounds described p.1. No intervention cohort.",
+          "denominatorBasis": "Dataset participants are not randomized or drug-treated participants.",
+          "locators": [
+            {
+              "pdf_page": 4,
+              "table_figure": "Figure 3",
+              "file": "697e429c81b92d268921c9c0d2564ec1.pdf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SYN-D29-C11-CMAP",
+      "drugId": "D29",
+      "conditionId": "C11",
+      "title": "Clomipramine computational nomination for anti-TNF-refractory Crohn disease",
+      "use": "Computational drug-repurposing hypothesis for anti-TNF-refractory Crohn disease",
+      "population": "GSE100833 anti-TNF refractory Crohn's disease inflamed and non-inflamed colonic transcriptomes; CMap and STRING analyses.",
+      "comparison": "Transcriptomic cluster queried against Connectivity Map drug profiles; no treated-patient comparison",
+      "endpoint": "Connectivity Map (CMap) enrichment score for a selected gene cluster",
+      "timepoint": "Computational analysis; no patient treatment follow-up",
+      "status": "computational_result",
+      "finding": {
+        "text": "Clomipramine was nominated by an original computational analysis of Crohn disease transcriptomes. The result identifies a hypothesis for experimental testing and does not demonstrate symptom improvement, remission or clinical safety.",
+        "sources": [
+          "CP002-R01"
+        ],
+        "evidenceRefs": [
+          "REF-CP002-R01-P025"
+        ],
+        "kind": "source_fact"
+      },
+      "magnitudeText": "CMap enrichment score 8.4, cluster 2. This is a computational score, not a clinical effect size; a clinical effect interval is not identifiable from this design.",
+      "certainty": {
+        "label": "Not appraised",
+        "method": null,
+        "rationale": "Formal assessment of the source design and its limitations has not been completed or independently reviewed. This is not a Low-certainty grade for clinical efficacy.",
+        "reviewState": "pending_human_scientific_review"
+      },
+      "evidenceBase": "One original computational analysis; the source describes transcriptomes from 327 patients, with no new intervention cohort. Both Crohn candidate rows belong to this same analysis.",
+      "limitations": [
+        {
+          "text": "The analysis used one transcriptome dataset; the authors note potential selection bias and the need for experimental confirmation.",
+          "sources": [
+            "CP002-R01"
+          ],
+          "evidenceRefs": [
+            "REF-CP002-DESIGN"
+          ],
+          "kind": "source_fact"
+        },
+        {
+          "text": "Candidate nomination cannot quantify patient benefit, and neither drug was tested as a Crohn treatment in this report.",
+          "sources": [
+            "CP002-R01"
+          ],
+          "evidenceRefs": [
+            "REF-CP002-R01-P025"
+          ],
+          "kind": "source_fact"
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "CP002-R01",
+          "evidenceRef": "REF-CP002-R01-P025",
+          "label": "Figure 4, PDF p.5"
+        },
+        {
+          "sourceId": "CP002-R01",
+          "evidenceRef": "REF-CP002-DESIGN",
+          "label": "Methods PDF p.7; limitations PDF pp.6–7"
+        }
+      ],
+      "sourceIds": [
+        "CP002-R01"
+      ],
+      "studyFamilyIds": [
+        "CP28-FAMILY-CP002"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "scope": "One original computational report reused from the accepted CP28 corpus",
+        "complete": false,
+        "pending": [
+          "Experimental and clinical validation",
+          "Formal computational-method appraisal",
+          "Study-family and source-integrity reconciliation",
+          "Q01–Q15 review and human approval"
+        ]
+      },
+      "effects": [
+        {
+          "sourceId": "CP002-R01",
+          "design": "Original computational transcriptome/CMap drug repositioning",
+          "population": "GSE100833 anti-TNF refractory Crohn's disease inflamed and non-inflamed colonic transcriptomes; CMap and STRING analyses.",
+          "sampleRandomized": null,
+          "sampleAnalyzed": null,
+          "sampleDescription": "327 patients described in Methods p.7; 164 small-molecule compounds described p.1. No intervention cohort.",
+          "denominatorBasis": "Dataset participants are not randomized or drug-treated participants.",
+          "locators": [
+            {
+              "pdf_page": 5,
+              "table_figure": "Figure 4",
+              "file": "697e429c81b92d268921c9c0d2564ec1.pdf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SYN-D13-C29-NBUVB-BACKGROUND",
+      "drugId": "D13",
+      "conditionId": "C29",
+      "title": "Atorvastatin added to narrowband UVB for vitiligo",
+      "use": "Adjunctive repigmentation and disease-progression research",
+      "population": "Active vitiligo, as summarized in a textbook",
+      "comparison": "Atorvastatin plus narrowband UVB versus narrowband UVB alone, as summarized in the textbook",
+      "endpoint": "Repigmentation and halting disease progression; original endpoint definitions not independently verified",
+      "timepoint": "Six-month regimen described by the book; original outcome timepoint not independently verified",
+      "status": "background_only",
+      "finding": {
+        "text": "The textbook summarizes a randomized trial as finding no added benefit from atorvastatin for repigmentation or halting vitiligo progression when added to narrowband UVB. The original trial report is not part of the acquired primary corpus.",
+        "sources": [
+          "CP027-CH25"
+        ],
+        "evidenceRefs": [
+          "REF-CP027-CH25-P031"
+        ],
+        "kind": "source_fact"
+      },
+      "magnitudeText": "No numerical treatment effect or confidence interval is recorded. The book describes 30 participants; that sample count is not an effect size.",
+      "certainty": {
+        "label": "Not appraised",
+        "method": null,
+        "rationale": "Formal assessment of the source design and its limitations has not been completed or independently reviewed. This is not a Low-certainty grade for clinical efficacy.",
+        "reviewState": "pending_human_scientific_review"
+      },
+      "evidenceBase": "One textbook summary of a bicentric, prospective, randomized, single-blind trial. Zero independently acquired original studies in this row.",
+      "limitations": [
+        {
+          "text": "The summary cannot replace the original report for endpoint definitions, analysis, harms or uncertainty.",
+          "sources": [],
+          "evidenceRefs": [],
+          "kind": "editorial_boundary"
+        },
+        {
+          "text": "This background null finding is retained without implying that it settles every atorvastatin formulation or vitiligo regimen.",
+          "sources": [],
+          "evidenceRefs": [],
+          "kind": "editorial_boundary"
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "CP027-CH25",
+          "evidenceRef": "REF-CP027-CH25-P031",
+          "label": "Chapter 25, printed p. 580; 584 (Table 25.1)"
+        }
+      ],
+      "sourceIds": [
+        "CP027-CH25"
+      ],
+      "studyFamilyIds": [],
+      "countsAsPrimaryEvidence": false,
+      "answerRoutes": [],
+      "coverage": {
+        "scope": "Chapter 25 background summary only",
+        "complete": false,
+        "pending": [
+          "Acquire the cited original trial under the accepted retrieval plan",
+          "Verify participant flow, comparator, endpoints, timing and numerical effect",
+          "Extract harms and uncertainty",
+          "Formal appraisal and human review"
+        ]
+      },
+      "effects": []
+    }
+  ]
+}

@@ -1,0 +1,1277 @@
+{
+  "schemaVersion": "1.0.0",
+  "status": "additive registry draft; metadata incomplete; no scientific approval",
+  "rowOutcomeMap": {
+    "SYN-D01-C01-DIAGNOSIS": "OUT-LONGCOVID-CLINICIAN-DIAGNOSIS",
+    "SYN-D01-C01-SYMPTOMS": "OUT-COVID-ATTRIBUTED-SYMPTOMS-OR-DEATH",
+    "SYN-D01-C01-RECOVERY": "OUT-PASC-INDEX-RECOVERY",
+    "SYN-D03-C01-SEVERITY": "OUT-PASC-CORE-SYMPTOM-SEVERITY",
+    "SYN-D03-C01-FATIGUE": "OUT-PROMIS-FATIGUE-CHANGE",
+    "SYN-D03-C01-PHENOTYPES": "OUT-LONGCOVID-PHENOTYPE-IMPROVEMENT",
+    "SYN-D01-C24-UPDRS": "OUT-UPDRS-TOTAL",
+    "SYN-D01-C25-EXPLORATORY": "OUT-METABOLITES-BRAIN-CONNECTIVITY",
+    "SYN-D07-C18-BACKGROUND": "OUT-MELANOMA-UNSPECIFIED",
+    "SYN-D07-C16-BACKGROUND": "OUT-COLORECTAL-CANCER-UNSPECIFIED",
+    "SYN-D07-C17-BACKGROUND": "OUT-PANCREATIC-CANCER-UNSPECIFIED",
+    "SYN-D07-C03-BACKGROUND": "OUT-OVARIAN-CLEAR-CELL-CARCINOMA-UNSPECIFIED",
+    "SYN-D01-C30-BACKGROUND": "OUT-WALKING-STRENGTH-TRAINING",
+    "SYN-D28-C11-CMAP": "OUT-CMAP-ENRICHMENT",
+    "SYN-D29-C11-CMAP": "OUT-CMAP-ENRICHMENT",
+    "SYN-D13-C29-NBUVB-BACKGROUND": "OUT-VITILIGO-REPIGMENTATION-PROGRESSION"
+  },
+  "outcomes": [
+    {
+      "id": "OUT-LONGCOVID-CLINICIAN-DIAGNOSIS",
+      "title": "Participant-reported clinician diagnosis of Long COVID",
+      "definition": {
+        "text": "Participant-reported clinician diagnosis of Long COVID",
+        "status": "accepted_endpoint_label",
+        "scope": "Exact endpoint label copied from accepted reader rows; not a new operational definition or validated ontology.",
+        "sources": [
+          "P-COVIDOUT-2023",
+          "P-ACTIV6-2026"
+        ],
+        "locators": [
+          {
+            "sourceId": "P-COVIDOUT-2023",
+            "evidenceRef": "R-CO-HR",
+            "label": "Figure 2 and Results paragraph beginning cumulative incidence"
+          },
+          {
+            "sourceId": "P-ACTIV6-2026",
+            "evidenceRef": "R-A6-CD",
+            "label": "Table 3 secondary clinician diagnosis; Table 2 raw counts"
+          }
+        ]
+      },
+      "aliases": [
+        "Participant-reported clinician diagnosis of Long COVID"
+      ],
+      "registryState": "structured_metadata_partial",
+      "instrument": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "No named instrument or measure is explicitly identified by the accepted endpoint label. Operational instrument details are not extracted.",
+        "sources": [],
+        "locators": []
+      },
+      "endpointHierarchy": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "No endpoint-hierarchy field is present; hierarchy is not inferred from effect significance or study narrative.",
+        "sources": [],
+        "locators": []
+      },
+      "clinicalOrSurrogateRole": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "The accepted structured inputs do not classify this endpoint as clinical or surrogate; no classification inferred from its name.",
+        "sources": [],
+        "locators": []
+      },
+      "measuredDirection": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "No separately typed measured-direction field exists in these accepted rows. Existing findings and estimates remain unchanged; no direction is inferred from effect signs.",
+        "sources": [],
+        "locators": []
+      },
+      "favorableScaleDirection": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "Scale orientation or a favorable direction is not recorded as accepted structured metadata. A larger score is not assumed better or worse.",
+        "sources": [],
+        "locators": []
+      },
+      "meaningfulChange": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "No minimally important or prespecified meaningful-change threshold is present in accepted structured row inputs. This means not extracted here, not that the source failed to report one.",
+        "sources": [],
+        "locators": []
+      },
+      "clinicalInterpretation": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "Outcome-level clinical interpretation has not been independently appraised; retain each row\u2019s original finding, magnitude, limitations and Not appraised certainty.",
+        "sources": [],
+        "locators": []
+      }
+    },
+    {
+      "id": "OUT-COVID-ATTRIBUTED-SYMPTOMS-OR-DEATH",
+      "title": "Symptoms attributed to COVID-19 or death",
+      "definition": {
+        "text": "Symptoms attributed to COVID-19 or death",
+        "status": "accepted_endpoint_label",
+        "scope": "Exact endpoint label copied from accepted reader rows; not a new operational definition or validated ontology.",
+        "sources": [
+          "P-ACTIV6-2026"
+        ],
+        "locators": [
+          {
+            "sourceId": "P-ACTIV6-2026",
+            "evidenceRef": "R-A6-RD",
+            "label": "Table 3 primary endpoint; Table 2 raw counts"
+          }
+        ]
+      },
+      "aliases": [
+        "Symptoms attributed to COVID-19 or death"
+      ],
+      "registryState": "structured_metadata_partial",
+      "instrument": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "No named instrument or measure is explicitly identified by the accepted endpoint label. Operational instrument details are not extracted.",
+        "sources": [],
+        "locators": []
+      },
+      "endpointHierarchy": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "No endpoint-hierarchy field is present; hierarchy is not inferred from effect significance or study narrative.",
+        "sources": [],
+        "locators": []
+      },
+      "clinicalOrSurrogateRole": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "The accepted structured inputs do not classify this endpoint as clinical or surrogate; no classification inferred from its name.",
+        "sources": [],
+        "locators": []
+      },
+      "measuredDirection": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "No separately typed measured-direction field exists in these accepted rows. Existing findings and estimates remain unchanged; no direction is inferred from effect signs.",
+        "sources": [],
+        "locators": []
+      },
+      "favorableScaleDirection": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "Scale orientation or a favorable direction is not recorded as accepted structured metadata. A larger score is not assumed better or worse.",
+        "sources": [],
+        "locators": []
+      },
+      "meaningfulChange": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "No minimally important or prespecified meaningful-change threshold is present in accepted structured row inputs. This means not extracted here, not that the source failed to report one.",
+        "sources": [],
+        "locators": []
+      },
+      "clinicalInterpretation": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "Outcome-level clinical interpretation has not been independently appraised; retain each row\u2019s original finding, magnitude, limitations and Not appraised certainty.",
+        "sources": [],
+        "locators": []
+      }
+    },
+    {
+      "id": "OUT-PASC-INDEX-RECOVERY",
+      "title": "Recovery: PASC index below 12",
+      "definition": {
+        "text": "Recovery: PASC index below 12",
+        "status": "accepted_endpoint_label",
+        "scope": "Exact endpoint label copied from accepted reader rows; not a new operational definition or validated ontology.",
+        "sources": [
+          "P-KOREA-2026"
+        ],
+        "locators": [
+          {
+            "sourceId": "P-KOREA-2026",
+            "evidenceRef": "R-KR-RECOVERY",
+            "label": "Abstract Results"
+          }
+        ]
+      },
+      "aliases": [
+        "Recovery: PASC index below 12"
+      ],
+      "registryState": "structured_metadata_partial",
+      "instrument": {
+        "value": "PASC index",
+        "status": "accepted_structured_input",
+        "reason": null,
+        "sources": [
+          "P-KOREA-2026"
+        ],
+        "locators": [
+          {
+            "sourceId": "P-KOREA-2026",
+            "evidenceRef": "R-KR-RECOVERY",
+            "label": "Abstract Results",
+            "rowId": "SYN-D01-C01-RECOVERY"
+          }
+        ],
+        "basis": "Literal substring of exact accepted endpoint; version, range and scoring rules are not supplied."
+      },
+      "endpointHierarchy": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "No endpoint-hierarchy field is present; hierarchy is not inferred from effect significance or study narrative.",
+        "sources": [],
+        "locators": []
+      },
+      "clinicalOrSurrogateRole": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "The accepted structured inputs do not classify this endpoint as clinical or surrogate; no classification inferred from its name.",
+        "sources": [],
+        "locators": []
+      },
+      "measuredDirection": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "No separately typed measured-direction field exists in these accepted rows. Existing findings and estimates remain unchanged; no direction is inferred from effect signs.",
+        "sources": [],
+        "locators": []
+      },
+      "favorableScaleDirection": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "Scale orientation or a favorable direction is not recorded as accepted structured metadata. A larger score is not assumed better or worse.",
+        "sources": [],
+        "locators": []
+      },
+      "meaningfulChange": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "No minimally important or prespecified meaningful-change threshold is present in accepted structured row inputs. This means not extracted here, not that the source failed to report one.",
+        "sources": [],
+        "locators": []
+      },
+      "clinicalInterpretation": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "Outcome-level clinical interpretation has not been independently appraised; retain each row\u2019s original finding, magnitude, limitations and Not appraised certainty.",
+        "sources": [],
+        "locators": []
+      }
+    },
+    {
+      "id": "OUT-PASC-CORE-SYMPTOM-SEVERITY",
+      "title": "Pooled severity of six core PASC symptoms",
+      "definition": {
+        "text": "Pooled severity of six core PASC symptoms",
+        "status": "accepted_endpoint_label",
+        "scope": "Exact endpoint label copied from accepted reader rows; not a new operational definition or validated ontology.",
+        "sources": [
+          "P-STOPPASC-2024"
+        ],
+        "locators": [
+          {
+            "sourceId": "P-STOPPASC-2024",
+            "evidenceRef": "R-SP-PRIMARY",
+            "label": "Results / Primary Outcome"
+          }
+        ]
+      },
+      "aliases": [
+        "Pooled severity of six core PASC symptoms"
+      ],
+      "registryState": "structured_metadata_partial",
+      "instrument": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "No named instrument or measure is explicitly identified by the accepted endpoint label. Operational instrument details are not extracted.",
+        "sources": [],
+        "locators": []
+      },
+      "endpointHierarchy": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "No endpoint-hierarchy field is present; hierarchy is not inferred from effect significance or study narrative.",
+        "sources": [],
+        "locators": []
+      },
+      "clinicalOrSurrogateRole": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "The accepted structured inputs do not classify this endpoint as clinical or surrogate; no classification inferred from its name.",
+        "sources": [],
+        "locators": []
+      },
+      "measuredDirection": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "No separately typed measured-direction field exists in these accepted rows. Existing findings and estimates remain unchanged; no direction is inferred from effect signs.",
+        "sources": [],
+        "locators": []
+      },
+      "favorableScaleDirection": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "Scale orientation or a favorable direction is not recorded as accepted structured metadata. A larger score is not assumed better or worse.",
+        "sources": [],
+        "locators": []
+      },
+      "meaningfulChange": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "No minimally important or prespecified meaningful-change threshold is present in accepted structured row inputs. This means not extracted here, not that the source failed to report one.",
+        "sources": [],
+        "locators": []
+      },
+      "clinicalInterpretation": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "Outcome-level clinical interpretation has not been independently appraised; retain each row\u2019s original finding, magnitude, limitations and Not appraised certainty.",
+        "sources": [],
+        "locators": []
+      }
+    },
+    {
+      "id": "OUT-PROMIS-FATIGUE-CHANGE",
+      "title": "PROMIS fatigue score change (secondary outcome)",
+      "definition": {
+        "text": "PROMIS fatigue score change (secondary outcome)",
+        "status": "accepted_endpoint_label",
+        "scope": "Exact endpoint label copied from accepted reader rows; not a new operational definition or validated ontology.",
+        "sources": [
+          "P-STOPPASC-2024"
+        ],
+        "locators": [
+          {
+            "sourceId": "P-STOPPASC-2024",
+            "evidenceRef": "R-SP-FATIGUE",
+            "label": "Table 2 PROMIS fatigue"
+          }
+        ]
+      },
+      "aliases": [
+        "PROMIS fatigue score change (secondary outcome)"
+      ],
+      "registryState": "structured_metadata_partial",
+      "instrument": {
+        "value": "PROMIS fatigue score",
+        "status": "accepted_structured_input",
+        "reason": null,
+        "sources": [
+          "P-STOPPASC-2024"
+        ],
+        "locators": [
+          {
+            "sourceId": "P-STOPPASC-2024",
+            "evidenceRef": "R-SP-FATIGUE",
+            "label": "Table 2 PROMIS fatigue",
+            "rowId": "SYN-D03-C01-FATIGUE"
+          }
+        ],
+        "basis": "Literal substring of exact accepted endpoint; version, range and scoring rules are not supplied."
+      },
+      "endpointHierarchy": {
+        "value": "secondary",
+        "status": "accepted_structured_input",
+        "reason": null,
+        "sources": [
+          "P-STOPPASC-2024"
+        ],
+        "locators": [
+          {
+            "sourceId": "P-STOPPASC-2024",
+            "evidenceRef": "R-SP-FATIGUE",
+            "label": "Table 2 PROMIS fatigue",
+            "rowId": "SYN-D03-C01-FATIGUE"
+          }
+        ],
+        "basis": "Exact accepted endpoint contains \u201csecondary outcome\u201d."
+      },
+      "clinicalOrSurrogateRole": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "The accepted structured inputs do not classify this endpoint as clinical or surrogate; no classification inferred from its name.",
+        "sources": [],
+        "locators": []
+      },
+      "measuredDirection": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "No separately typed measured-direction field exists in these accepted rows. Existing findings and estimates remain unchanged; no direction is inferred from effect signs.",
+        "sources": [],
+        "locators": []
+      },
+      "favorableScaleDirection": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "Scale orientation or a favorable direction is not recorded as accepted structured metadata. A larger score is not assumed better or worse.",
+        "sources": [],
+        "locators": []
+      },
+      "meaningfulChange": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "No minimally important or prespecified meaningful-change threshold is present in accepted structured row inputs. This means not extracted here, not that the source failed to report one.",
+        "sources": [],
+        "locators": []
+      },
+      "clinicalInterpretation": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "Outcome-level clinical interpretation has not been independently appraised; retain each row\u2019s original finding, magnitude, limitations and Not appraised certainty.",
+        "sources": [],
+        "locators": []
+      }
+    },
+    {
+      "id": "OUT-LONGCOVID-PHENOTYPE-IMPROVEMENT",
+      "title": "Phenotype-specific primary improvement outcomes",
+      "definition": {
+        "text": "Phenotype-specific primary improvement outcomes",
+        "status": "accepted_endpoint_label",
+        "scope": "Exact endpoint label copied from accepted reader rows; not a new operational definition or validated ontology.",
+        "sources": [
+          "P-RECOVER-2026"
+        ],
+        "locators": [
+          {
+            "sourceId": "P-RECOVER-2026",
+            "evidenceRef": "R-RV-NULL",
+            "label": "Abstract Findings"
+          }
+        ]
+      },
+      "aliases": [
+        "Phenotype-specific primary improvement outcomes"
+      ],
+      "registryState": "structured_metadata_partial",
+      "instrument": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "No named instrument or measure is explicitly identified by the accepted endpoint label. Operational instrument details are not extracted.",
+        "sources": [],
+        "locators": []
+      },
+      "endpointHierarchy": {
+        "value": "primary",
+        "status": "accepted_structured_input",
+        "reason": null,
+        "sources": [
+          "P-RECOVER-2026"
+        ],
+        "locators": [
+          {
+            "sourceId": "P-RECOVER-2026",
+            "evidenceRef": "R-RV-NULL",
+            "label": "Abstract Findings",
+            "rowId": "SYN-D03-C01-PHENOTYPES"
+          }
+        ],
+        "basis": "Exact accepted endpoint contains \u201cprimary\u201d."
+      },
+      "clinicalOrSurrogateRole": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "The accepted structured inputs do not classify this endpoint as clinical or surrogate; no classification inferred from its name.",
+        "sources": [],
+        "locators": []
+      },
+      "measuredDirection": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "No separately typed measured-direction field exists in these accepted rows. Existing findings and estimates remain unchanged; no direction is inferred from effect signs.",
+        "sources": [],
+        "locators": []
+      },
+      "favorableScaleDirection": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "Scale orientation or a favorable direction is not recorded as accepted structured metadata. A larger score is not assumed better or worse.",
+        "sources": [],
+        "locators": []
+      },
+      "meaningfulChange": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "No minimally important or prespecified meaningful-change threshold is present in accepted structured row inputs. This means not extracted here, not that the source failed to report one.",
+        "sources": [],
+        "locators": []
+      },
+      "clinicalInterpretation": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "Outcome-level clinical interpretation has not been independently appraised; retain each row\u2019s original finding, magnitude, limitations and Not appraised certainty.",
+        "sources": [],
+        "locators": []
+      }
+    },
+    {
+      "id": "OUT-UPDRS-TOTAL",
+      "title": "UPDRS total (primary clinical endpoint)",
+      "definition": {
+        "text": "UPDRS total (primary clinical endpoint)",
+        "status": "accepted_endpoint_label",
+        "scope": "Exact endpoint label copied from accepted reader rows; not a new operational definition or validated ontology.",
+        "sources": [
+          "CP016"
+        ],
+        "locators": [
+          {
+            "sourceId": "CP016",
+            "evidenceRef": "CP016-ARTICLE-O1",
+            "label": "PDF p6 Table2; p7 Results"
+          },
+          {
+            "sourceId": "CP016",
+            "evidenceRef": "CP016-ARTICLE-sample_size",
+            "label": "PDF pp1\u201312; Table2 p6, Table3 p7, Table4 p8"
+          }
+        ]
+      },
+      "aliases": [
+        "UPDRS total (primary clinical endpoint)"
+      ],
+      "registryState": "structured_metadata_partial",
+      "instrument": {
+        "value": "UPDRS total",
+        "status": "accepted_structured_input",
+        "reason": null,
+        "sources": [
+          "CP016"
+        ],
+        "locators": [
+          {
+            "sourceId": "CP016",
+            "evidenceRef": "CP016-ARTICLE-O1",
+            "label": "PDF p6 Table2; p7 Results",
+            "rowId": "SYN-D01-C24-UPDRS"
+          },
+          {
+            "sourceId": "CP016",
+            "evidenceRef": "CP016-ARTICLE-sample_size",
+            "label": "PDF pp1\u201312; Table2 p6, Table3 p7, Table4 p8",
+            "rowId": "SYN-D01-C24-UPDRS"
+          }
+        ],
+        "basis": "Literal substring of exact accepted endpoint; version, range and scoring rules are not supplied."
+      },
+      "endpointHierarchy": {
+        "value": "primary",
+        "status": "accepted_structured_input",
+        "reason": null,
+        "sources": [
+          "CP016"
+        ],
+        "locators": [
+          {
+            "sourceId": "CP016",
+            "evidenceRef": "CP016-ARTICLE-O1",
+            "label": "PDF p6 Table2; p7 Results",
+            "rowId": "SYN-D01-C24-UPDRS"
+          },
+          {
+            "sourceId": "CP016",
+            "evidenceRef": "CP016-ARTICLE-sample_size",
+            "label": "PDF pp1\u201312; Table2 p6, Table3 p7, Table4 p8",
+            "rowId": "SYN-D01-C24-UPDRS"
+          }
+        ],
+        "basis": "Exact accepted endpoint contains \u201cprimary\u201d."
+      },
+      "clinicalOrSurrogateRole": {
+        "value": "clinical",
+        "status": "accepted_structured_input",
+        "reason": null,
+        "sources": [
+          "CP016"
+        ],
+        "locators": [
+          {
+            "sourceId": "CP016",
+            "evidenceRef": "CP016-ARTICLE-O1",
+            "label": "PDF p6 Table2; p7 Results",
+            "rowId": "SYN-D01-C24-UPDRS"
+          },
+          {
+            "sourceId": "CP016",
+            "evidenceRef": "CP016-ARTICLE-sample_size",
+            "label": "PDF pp1\u201312; Table2 p6, Table3 p7, Table4 p8",
+            "rowId": "SYN-D01-C24-UPDRS"
+          }
+        ],
+        "basis": "Exact accepted endpoint includes \u201cprimary clinical endpoint\u201d."
+      },
+      "measuredDirection": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "No separately typed measured-direction field exists in these accepted rows. Existing findings and estimates remain unchanged; no direction is inferred from effect signs.",
+        "sources": [],
+        "locators": []
+      },
+      "favorableScaleDirection": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "Scale orientation or a favorable direction is not recorded as accepted structured metadata. A larger score is not assumed better or worse.",
+        "sources": [],
+        "locators": []
+      },
+      "meaningfulChange": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "No minimally important or prespecified meaningful-change threshold is present in accepted structured row inputs. This means not extracted here, not that the source failed to report one.",
+        "sources": [],
+        "locators": []
+      },
+      "clinicalInterpretation": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "Outcome-level clinical interpretation has not been independently appraised; retain each row\u2019s original finding, magnitude, limitations and Not appraised certainty.",
+        "sources": [],
+        "locators": []
+      }
+    },
+    {
+      "id": "OUT-METABOLITES-BRAIN-CONNECTIVITY",
+      "title": "Metabolites and brain connectivity associated with cognitive change",
+      "definition": {
+        "text": "Metabolites and brain connectivity associated with cognitive change",
+        "status": "accepted_endpoint_label",
+        "scope": "Exact endpoint label copied from accepted reader rows; not a new operational definition or validated ontology.",
+        "sources": [
+          "CP017"
+        ],
+        "locators": [
+          {
+            "sourceId": "CP017",
+            "evidenceRef": "CP017-ARTICLE-O1",
+            "label": "PDF p8 Table3 week24"
+          },
+          {
+            "sourceId": "CP017",
+            "evidenceRef": "CP017-ARTICLE-O2",
+            "label": "PDF p7 Results; Fig1 p5"
+          },
+          {
+            "sourceId": "CP017",
+            "evidenceRef": "CP017-ARTICLE-O3",
+            "label": "PDF p7 Results; Fig2 p8"
+          },
+          {
+            "sourceId": "CP017",
+            "evidenceRef": "CP017-ARTICLE-O4",
+            "label": "PDF pp8,10; p7 opening cognition paragraph"
+          },
+          {
+            "sourceId": "CP017",
+            "evidenceRef": "CP017-ARTICLE-sample_size",
+            "label": "PDF pp1\u201314; Methods pp3\u20134; Tables1\u20133 pp6\u20138"
+          }
+        ]
+      },
+      "aliases": [
+        "Metabolites and brain connectivity associated with cognitive change"
+      ],
+      "registryState": "structured_metadata_partial",
+      "instrument": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "No named instrument or measure is explicitly identified by the accepted endpoint label. Operational instrument details are not extracted.",
+        "sources": [],
+        "locators": []
+      },
+      "endpointHierarchy": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "No endpoint-hierarchy field is present; hierarchy is not inferred from effect significance or study narrative.",
+        "sources": [],
+        "locators": []
+      },
+      "clinicalOrSurrogateRole": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "The accepted structured inputs do not classify this endpoint as clinical or surrogate; no classification inferred from its name.",
+        "sources": [],
+        "locators": []
+      },
+      "measuredDirection": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "No separately typed measured-direction field exists in these accepted rows. Existing findings and estimates remain unchanged; no direction is inferred from effect signs.",
+        "sources": [],
+        "locators": []
+      },
+      "favorableScaleDirection": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "Scale orientation or a favorable direction is not recorded as accepted structured metadata. A larger score is not assumed better or worse.",
+        "sources": [],
+        "locators": []
+      },
+      "meaningfulChange": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "No minimally important or prespecified meaningful-change threshold is present in accepted structured row inputs. This means not extracted here, not that the source failed to report one.",
+        "sources": [],
+        "locators": []
+      },
+      "clinicalInterpretation": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "Outcome-level clinical interpretation has not been independently appraised; retain each row\u2019s original finding, magnitude, limitations and Not appraised certainty.",
+        "sources": [],
+        "locators": []
+      }
+    },
+    {
+      "id": "OUT-MELANOMA-UNSPECIFIED",
+      "title": "Original outcome definitions not yet verified",
+      "definition": {
+        "text": "Original outcome definitions not yet verified",
+        "status": "unresolved_placeholder",
+        "scope": "Exact endpoint label copied from accepted reader rows; not a new operational definition or validated ontology.",
+        "sources": [
+          "CP027",
+          "CP028"
+        ],
+        "locators": [
+          {
+            "sourceId": "CP027",
+            "evidenceRef": "FT30-ITRA-P001",
+            "label": "Chapter 5: body printed p. 68 / PDF p. 85; reference printed p. 83 / PDF p. 100; Table 5.1 printed p. 61 / PDF p. 78."
+          },
+          {
+            "sourceId": "CP028",
+            "evidenceRef": "FT30-ITRA-P001",
+            "label": "EPUB Chapter 1, Cancer paragraph and reference 70 (r70); OEBPS/Text/9789815123197-C1.html. No printed page recorded."
+          }
+        ]
+      },
+      "aliases": [
+        "Original outcome definitions not yet verified"
+      ],
+      "registryState": "pending_original_outcome_definition",
+      "instrument": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "No named instrument or measure is explicitly identified by the accepted endpoint label. Operational instrument details are not extracted.",
+        "sources": [],
+        "locators": []
+      },
+      "endpointHierarchy": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "No endpoint-hierarchy field is present; hierarchy is not inferred from effect significance or study narrative.",
+        "sources": [],
+        "locators": []
+      },
+      "clinicalOrSurrogateRole": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "The accepted structured inputs do not classify this endpoint as clinical or surrogate; no classification inferred from its name.",
+        "sources": [],
+        "locators": []
+      },
+      "measuredDirection": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "No separately typed measured-direction field exists in these accepted rows. Existing findings and estimates remain unchanged; no direction is inferred from effect signs.",
+        "sources": [],
+        "locators": []
+      },
+      "favorableScaleDirection": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "Scale orientation or a favorable direction is not recorded as accepted structured metadata. A larger score is not assumed better or worse.",
+        "sources": [],
+        "locators": []
+      },
+      "meaningfulChange": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "No minimally important or prespecified meaningful-change threshold is present in accepted structured row inputs. This means not extracted here, not that the source failed to report one.",
+        "sources": [],
+        "locators": []
+      },
+      "clinicalInterpretation": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "Outcome-level clinical interpretation has not been independently appraised; retain each row\u2019s original finding, magnitude, limitations and Not appraised certainty.",
+        "sources": [],
+        "locators": []
+      }
+    },
+    {
+      "id": "OUT-COLORECTAL-CANCER-UNSPECIFIED",
+      "title": "Original outcome definitions not yet verified",
+      "definition": {
+        "text": "Original outcome definitions not yet verified",
+        "status": "unresolved_placeholder",
+        "scope": "Exact endpoint label copied from accepted reader rows; not a new operational definition or validated ontology.",
+        "sources": [
+          "CP027"
+        ],
+        "locators": [
+          {
+            "sourceId": "CP027",
+            "evidenceRef": "FT30-ITRA-P002",
+            "label": "Chapter 5, printed 68, PDF 85, body crosslink; Chapter 5, printed 80, PDF 97, bibliographic reference; Chapter 5, printed 61, PDF 78, table crosslink"
+          }
+        ]
+      },
+      "aliases": [
+        "Original outcome definitions not yet verified"
+      ],
+      "registryState": "pending_original_outcome_definition",
+      "instrument": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "No named instrument or measure is explicitly identified by the accepted endpoint label. Operational instrument details are not extracted.",
+        "sources": [],
+        "locators": []
+      },
+      "endpointHierarchy": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "No endpoint-hierarchy field is present; hierarchy is not inferred from effect significance or study narrative.",
+        "sources": [],
+        "locators": []
+      },
+      "clinicalOrSurrogateRole": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "The accepted structured inputs do not classify this endpoint as clinical or surrogate; no classification inferred from its name.",
+        "sources": [],
+        "locators": []
+      },
+      "measuredDirection": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "No separately typed measured-direction field exists in these accepted rows. Existing findings and estimates remain unchanged; no direction is inferred from effect signs.",
+        "sources": [],
+        "locators": []
+      },
+      "favorableScaleDirection": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "Scale orientation or a favorable direction is not recorded as accepted structured metadata. A larger score is not assumed better or worse.",
+        "sources": [],
+        "locators": []
+      },
+      "meaningfulChange": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "No minimally important or prespecified meaningful-change threshold is present in accepted structured row inputs. This means not extracted here, not that the source failed to report one.",
+        "sources": [],
+        "locators": []
+      },
+      "clinicalInterpretation": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "Outcome-level clinical interpretation has not been independently appraised; retain each row\u2019s original finding, magnitude, limitations and Not appraised certainty.",
+        "sources": [],
+        "locators": []
+      }
+    },
+    {
+      "id": "OUT-PANCREATIC-CANCER-UNSPECIFIED",
+      "title": "Original outcome definitions not yet verified",
+      "definition": {
+        "text": "Original outcome definitions not yet verified",
+        "status": "unresolved_placeholder",
+        "scope": "Exact endpoint label copied from accepted reader rows; not a new operational definition or validated ontology.",
+        "sources": [
+          "CP027"
+        ],
+        "locators": [
+          {
+            "sourceId": "CP027",
+            "evidenceRef": "FT30-ITRA-P003",
+            "label": "Chapter 5, printed 68, PDF 85, body crosslink; Chapter 5, printed 82, PDF 99, bibliographic reference; Chapter 5, printed 61, PDF 78, table crosslink"
+          },
+          {
+            "sourceId": "CP027",
+            "evidenceRef": "FT30-ITRA-P005",
+            "label": "Chapter 14, printed 316, PDF 328, body crosslink; Chapter 14, printed 327, PDF 339, bibliographic reference"
+          }
+        ]
+      },
+      "aliases": [
+        "Original outcome definitions not yet verified"
+      ],
+      "registryState": "pending_original_outcome_definition",
+      "instrument": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "No named instrument or measure is explicitly identified by the accepted endpoint label. Operational instrument details are not extracted.",
+        "sources": [],
+        "locators": []
+      },
+      "endpointHierarchy": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "No endpoint-hierarchy field is present; hierarchy is not inferred from effect significance or study narrative.",
+        "sources": [],
+        "locators": []
+      },
+      "clinicalOrSurrogateRole": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "The accepted structured inputs do not classify this endpoint as clinical or surrogate; no classification inferred from its name.",
+        "sources": [],
+        "locators": []
+      },
+      "measuredDirection": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "No separately typed measured-direction field exists in these accepted rows. Existing findings and estimates remain unchanged; no direction is inferred from effect signs.",
+        "sources": [],
+        "locators": []
+      },
+      "favorableScaleDirection": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "Scale orientation or a favorable direction is not recorded as accepted structured metadata. A larger score is not assumed better or worse.",
+        "sources": [],
+        "locators": []
+      },
+      "meaningfulChange": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "No minimally important or prespecified meaningful-change threshold is present in accepted structured row inputs. This means not extracted here, not that the source failed to report one.",
+        "sources": [],
+        "locators": []
+      },
+      "clinicalInterpretation": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "Outcome-level clinical interpretation has not been independently appraised; retain each row\u2019s original finding, magnitude, limitations and Not appraised certainty.",
+        "sources": [],
+        "locators": []
+      }
+    },
+    {
+      "id": "OUT-OVARIAN-CLEAR-CELL-CARCINOMA-UNSPECIFIED",
+      "title": "Original outcome definitions not yet verified",
+      "definition": {
+        "text": "Original outcome definitions not yet verified",
+        "status": "unresolved_placeholder",
+        "scope": "Exact endpoint label copied from accepted reader rows; not a new operational definition or validated ontology.",
+        "sources": [
+          "CP027"
+        ],
+        "locators": [
+          {
+            "sourceId": "CP027",
+            "evidenceRef": "FT30-ITRA-P004",
+            "label": "Chapter 14, printed 316, PDF 328, body crosslink; Chapter 14, printed 327, PDF 339, bibliographic reference"
+          }
+        ]
+      },
+      "aliases": [
+        "Original outcome definitions not yet verified"
+      ],
+      "registryState": "pending_original_outcome_definition",
+      "instrument": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "No named instrument or measure is explicitly identified by the accepted endpoint label. Operational instrument details are not extracted.",
+        "sources": [],
+        "locators": []
+      },
+      "endpointHierarchy": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "No endpoint-hierarchy field is present; hierarchy is not inferred from effect significance or study narrative.",
+        "sources": [],
+        "locators": []
+      },
+      "clinicalOrSurrogateRole": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "The accepted structured inputs do not classify this endpoint as clinical or surrogate; no classification inferred from its name.",
+        "sources": [],
+        "locators": []
+      },
+      "measuredDirection": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "No separately typed measured-direction field exists in these accepted rows. Existing findings and estimates remain unchanged; no direction is inferred from effect signs.",
+        "sources": [],
+        "locators": []
+      },
+      "favorableScaleDirection": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "Scale orientation or a favorable direction is not recorded as accepted structured metadata. A larger score is not assumed better or worse.",
+        "sources": [],
+        "locators": []
+      },
+      "meaningfulChange": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "No minimally important or prespecified meaningful-change threshold is present in accepted structured row inputs. This means not extracted here, not that the source failed to report one.",
+        "sources": [],
+        "locators": []
+      },
+      "clinicalInterpretation": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "Outcome-level clinical interpretation has not been independently appraised; retain each row\u2019s original finding, magnitude, limitations and Not appraised certainty.",
+        "sources": [],
+        "locators": []
+      }
+    },
+    {
+      "id": "OUT-WALKING-STRENGTH-TRAINING",
+      "title": "Walking speed, strength and training response",
+      "definition": {
+        "text": "Walking speed, strength and training response",
+        "status": "accepted_endpoint_label",
+        "scope": "Exact endpoint label copied from accepted reader rows; not a new operational definition or validated ontology.",
+        "sources": [
+          "CP018"
+        ],
+        "locators": [
+          {
+            "sourceId": "CP018",
+            "evidenceRef": "CP018-R01-O1",
+            "label": "PDF p. 6 / printed p. 708"
+          },
+          {
+            "sourceId": "CP018",
+            "evidenceRef": "CP018-R01-O2",
+            "label": "PDF p. 6"
+          }
+        ]
+      },
+      "aliases": [
+        "Walking speed, strength and training response"
+      ],
+      "registryState": "structured_metadata_partial",
+      "instrument": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "No named instrument or measure is explicitly identified by the accepted endpoint label. Operational instrument details are not extracted.",
+        "sources": [],
+        "locators": []
+      },
+      "endpointHierarchy": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "No endpoint-hierarchy field is present; hierarchy is not inferred from effect significance or study narrative.",
+        "sources": [],
+        "locators": []
+      },
+      "clinicalOrSurrogateRole": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "The accepted structured inputs do not classify this endpoint as clinical or surrogate; no classification inferred from its name.",
+        "sources": [],
+        "locators": []
+      },
+      "measuredDirection": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "No separately typed measured-direction field exists in these accepted rows. Existing findings and estimates remain unchanged; no direction is inferred from effect signs.",
+        "sources": [],
+        "locators": []
+      },
+      "favorableScaleDirection": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "Scale orientation or a favorable direction is not recorded as accepted structured metadata. A larger score is not assumed better or worse.",
+        "sources": [],
+        "locators": []
+      },
+      "meaningfulChange": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "No minimally important or prespecified meaningful-change threshold is present in accepted structured row inputs. This means not extracted here, not that the source failed to report one.",
+        "sources": [],
+        "locators": []
+      },
+      "clinicalInterpretation": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "Outcome-level clinical interpretation has not been independently appraised; retain each row\u2019s original finding, magnitude, limitations and Not appraised certainty.",
+        "sources": [],
+        "locators": []
+      }
+    },
+    {
+      "id": "OUT-CMAP-ENRICHMENT",
+      "title": "Connectivity Map (CMap) enrichment score for a selected gene cluster",
+      "definition": {
+        "text": "Connectivity Map (CMap) enrichment score for a selected gene cluster",
+        "status": "accepted_endpoint_label",
+        "scope": "Exact endpoint label copied from accepted reader rows; not a new operational definition or validated ontology.",
+        "sources": [
+          "CP002-R01"
+        ],
+        "locators": [
+          {
+            "sourceId": "CP002-R01",
+            "evidenceRef": "REF-CP002-R01-P003",
+            "label": "Figure 3, PDF p.4"
+          },
+          {
+            "sourceId": "CP002-R01",
+            "evidenceRef": "REF-CP002-DESIGN",
+            "label": "Methods PDF p.7; limitations PDF pp.6\u20137"
+          },
+          {
+            "sourceId": "CP002-R01",
+            "evidenceRef": "REF-CP002-R01-P025",
+            "label": "Figure 4, PDF p.5"
+          }
+        ]
+      },
+      "aliases": [
+        "Connectivity Map (CMap) enrichment score for a selected gene cluster"
+      ],
+      "registryState": "structured_metadata_partial",
+      "instrument": {
+        "value": "Connectivity Map (CMap) enrichment score",
+        "status": "accepted_structured_input",
+        "reason": null,
+        "sources": [
+          "CP002-R01"
+        ],
+        "locators": [
+          {
+            "sourceId": "CP002-R01",
+            "evidenceRef": "REF-CP002-R01-P003",
+            "label": "Figure 3, PDF p.4",
+            "rowId": "SYN-D28-C11-CMAP"
+          },
+          {
+            "sourceId": "CP002-R01",
+            "evidenceRef": "REF-CP002-DESIGN",
+            "label": "Methods PDF p.7; limitations PDF pp.6\u20137",
+            "rowId": "SYN-D28-C11-CMAP"
+          },
+          {
+            "sourceId": "CP002-R01",
+            "evidenceRef": "REF-CP002-R01-P025",
+            "label": "Figure 4, PDF p.5",
+            "rowId": "SYN-D29-C11-CMAP"
+          },
+          {
+            "sourceId": "CP002-R01",
+            "evidenceRef": "REF-CP002-DESIGN",
+            "label": "Methods PDF p.7; limitations PDF pp.6\u20137",
+            "rowId": "SYN-D29-C11-CMAP"
+          }
+        ],
+        "basis": "Literal substring of exact accepted endpoint; version, range and scoring rules are not supplied."
+      },
+      "endpointHierarchy": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "No endpoint-hierarchy field is present; hierarchy is not inferred from effect significance or study narrative.",
+        "sources": [],
+        "locators": []
+      },
+      "clinicalOrSurrogateRole": {
+        "value": null,
+        "status": "not_applicable",
+        "reason": "Accepted row status is computational_result and describes an original computational model; clinical-versus-surrogate outcome classification is not applicable.",
+        "sources": [],
+        "locators": []
+      },
+      "measuredDirection": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "No separately typed measured-direction field exists in these accepted rows. Existing findings and estimates remain unchanged; no direction is inferred from effect signs.",
+        "sources": [],
+        "locators": []
+      },
+      "favorableScaleDirection": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "Scale orientation or a favorable direction is not recorded as accepted structured metadata. A larger score is not assumed better or worse.",
+        "sources": [],
+        "locators": []
+      },
+      "meaningfulChange": {
+        "value": null,
+        "status": "not_applicable",
+        "reason": "These accepted rows report computational enrichment scores, not a clinical outcome scale; no clinical meaningful-change threshold is applied.",
+        "sources": [],
+        "locators": []
+      },
+      "clinicalInterpretation": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "Outcome-level clinical interpretation has not been independently appraised; retain each row\u2019s original finding, magnitude, limitations and Not appraised certainty.",
+        "sources": [],
+        "locators": []
+      }
+    },
+    {
+      "id": "OUT-VITILIGO-REPIGMENTATION-PROGRESSION",
+      "title": "Repigmentation and halting disease progression; original endpoint definitions not independently verified",
+      "definition": {
+        "text": "Repigmentation and halting disease progression; original endpoint definitions not independently verified",
+        "status": "accepted_endpoint_label",
+        "scope": "Exact endpoint label copied from accepted reader rows; not a new operational definition or validated ontology.",
+        "sources": [
+          "CP027-CH25"
+        ],
+        "locators": [
+          {
+            "sourceId": "CP027-CH25",
+            "evidenceRef": "REF-CP027-CH25-P031",
+            "label": "Chapter 25, printed p. 580; 584 (Table 25.1)"
+          }
+        ]
+      },
+      "aliases": [
+        "Repigmentation and halting disease progression; original endpoint definitions not independently verified"
+      ],
+      "registryState": "structured_metadata_partial",
+      "instrument": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "No named instrument or measure is explicitly identified by the accepted endpoint label. Operational instrument details are not extracted.",
+        "sources": [],
+        "locators": []
+      },
+      "endpointHierarchy": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "No endpoint-hierarchy field is present; hierarchy is not inferred from effect significance or study narrative.",
+        "sources": [],
+        "locators": []
+      },
+      "clinicalOrSurrogateRole": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "The accepted structured inputs do not classify this endpoint as clinical or surrogate; no classification inferred from its name.",
+        "sources": [],
+        "locators": []
+      },
+      "measuredDirection": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "No separately typed measured-direction field exists in these accepted rows. Existing findings and estimates remain unchanged; no direction is inferred from effect signs.",
+        "sources": [],
+        "locators": []
+      },
+      "favorableScaleDirection": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "Scale orientation or a favorable direction is not recorded as accepted structured metadata. A larger score is not assumed better or worse.",
+        "sources": [],
+        "locators": []
+      },
+      "meaningfulChange": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "No minimally important or prespecified meaningful-change threshold is present in accepted structured row inputs. This means not extracted here, not that the source failed to report one.",
+        "sources": [],
+        "locators": []
+      },
+      "clinicalInterpretation": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "Outcome-level clinical interpretation has not been independently appraised; retain each row\u2019s original finding, magnitude, limitations and Not appraised certainty.",
+        "sources": [],
+        "locators": []
+      }
+    }
+  ]
+}

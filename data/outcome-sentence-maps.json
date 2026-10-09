@@ -1,0 +1,366 @@
+{
+  "schemaVersion": "1.0.0",
+  "createdAt": "2026-10-09T11:28:52.528580+00:00",
+  "status": "citation adapter draft; no scientific approval",
+  "expectedInputs": [
+    {
+      "path": "site/data/public-reader-evidence.json",
+      "sha256": "a5fe7b704c1ccc0988c922cd02562ed83dc26b38ec5d5efc04738f43f842c905"
+    },
+    {
+      "path": "site/data/reader-evidence.json",
+      "sha256": "e5df057ee2e43de8d4292ce1f197aa132c1e1c11c65a2a35e3654ed719b31311"
+    },
+    {
+      "path": "site/data/public-content.json",
+      "sha256": "cbabf5bbcdb2d0bdfefb4536a644baa0fb82f121ef7bdc49de5447c4d8e245c5"
+    }
+  ],
+  "integration": "rows[row.id].finding and rows[row.id].magnitude are ordered {text,sources} arrays. Concatenate text exactly to reconstruct existing fields. Pass as optional findingSentences and magnitudeSentences; do not replace canonical text/values.",
+  "assignmentPolicy": [
+    "Explicit field-specific source assignments; not automatic copying of all row source IDs.",
+    "Pure corpus/editorial missingness and absence of a pooled estimate receive sources:[].",
+    "Mixed sentences retain citations for their source-backed content; correction/access/pending qualifiers are internal recorded state, not claims that a paper approves this edition.",
+    "Computational interpretation describes the observed study design; it does not transform model scores into human benefit.",
+    "Background-only book/review sentences preserve background provenance and never become primary results."
+  ],
+  "rows": {
+    "SYN-D01-C01-DIAGNOSIS": {
+      "finding": [
+        {
+          "text": "COVID-OUT’s reported hazard ratio is provisional while an indexed correction remains unresolved; it is not treated as a settled efficacy conclusion. ",
+          "sources": [
+            "P-COVIDOUT-2023"
+          ]
+        },
+        {
+          "text": "ACTIV-6’s secondary diagnosis estimate favored metformin but its interval included no difference.",
+          "sources": [
+            "P-ACTIV6-2026"
+          ]
+        }
+      ],
+      "magnitude": [
+        {
+          "text": "COVID-OUT: source-reported hazard ratio 0.59 (95% CI 0.39–0.89), provisional and on correction HOLD; cumulative-incidence percentages withheld. ",
+          "sources": [
+            "P-COVIDOUT-2023"
+          ]
+        },
+        {
+          "text": "ACTIV-6: risk difference −0.7 percentage points (95% credible interval −1.5 to 0.1). ",
+          "sources": [
+            "P-ACTIV6-2026"
+          ]
+        },
+        {
+          "text": "No pooled estimate.",
+          "sources": []
+        }
+      ]
+    },
+    "SYN-D01-C01-SYMPTOMS": {
+      "finding": [
+        {
+          "text": "ACTIV-6 did not meet its reported efficacy threshold for the primary long-term endpoint; its estimate remained compatible with a reduction or a small increase.",
+          "sources": [
+            "P-ACTIV6-2026"
+          ]
+        }
+      ],
+      "magnitude": [
+        {
+          "text": "Adjusted risk difference −0.8 percentage points (95% credible interval −2.2 to 0.6); raw events 33/1439 versus 46/1544.",
+          "sources": [
+            "P-ACTIV6-2026"
+          ]
+        }
+      ]
+    },
+    "SYN-D01-C01-RECOVERY": {
+      "finding": [
+        {
+          "text": "The South Korean trial did not show improved recovery with the studied metformin course; the abstract reports fewer recovered participants in the metformin arm than the placebo arm.",
+          "sources": [
+            "P-KOREA-2026"
+          ]
+        }
+      ],
+      "magnitude": [
+        {
+          "text": "Recovered: 84/132 (63.6%) with metformin versus 90/132 (68.2%) with placebo. ",
+          "sources": [
+            "P-KOREA-2026"
+          ]
+        },
+        {
+          "text": "Between-group interval not extracted.",
+          "sources": []
+        }
+      ]
+    },
+    "SYN-D03-C01-SEVERITY": {
+      "finding": [
+        {
+          "text": "STOP-PASC did not show a statistically significant between-group difference in its primary symptom-severity outcome.",
+          "sources": [
+            "P-STOPPASC-2024"
+          ]
+        }
+      ],
+      "magnitude": [
+        {
+          "text": "No numerical primary effect extracted. ",
+          "sources": []
+        },
+        {
+          "text": "This is not an estimated zero effect.",
+          "sources": []
+        }
+      ]
+    },
+    "SYN-D03-C01-FATIGUE": {
+      "finding": [
+        {
+          "text": "The secondary fatigue comparison did not show a clear advantage for nirmatrelvir–ritonavir; the confidence interval included differences in either direction.",
+          "sources": [
+            "P-STOPPASC-2024"
+          ]
+        }
+      ],
+      "magnitude": [
+        {
+          "text": "Adjusted between-group change difference 0.38 score points (95% CI −2.40 to 3.15).",
+          "sources": [
+            "P-STOPPASC-2024"
+          ]
+        }
+      ]
+    },
+    "SYN-D03-C01-PHENOTYPES": {
+      "finding": [
+        {
+          "text": "The RECOVER-VITAL abstract reports no statistically significant primary benefit in the selected symptom phenotypes.",
+          "sources": [
+            "P-RECOVER-2026"
+          ]
+        }
+      ],
+      "magnitude": [
+        {
+          "text": "Numerical phenotype-specific estimates and intervals not extracted; no pooled estimate.",
+          "sources": []
+        }
+      ]
+    },
+    "SYN-D01-C24-UPDRS": {
+      "finding": [
+        {
+          "text": "The pilot did not demonstrate a between-group clinical benefit on UPDRS total, despite improvement within the metformin arm.",
+          "sources": [
+            "CP016"
+          ]
+        }
+      ],
+      "magnitude": [
+        {
+          "text": "Post-treatment UPDRS medians 128 (IQR 98–151) versus 139 (101–151.5); rank-biserial r=0.106, P=0.515. ",
+          "sources": [
+            "CP016"
+          ]
+        },
+        {
+          "text": "Between-group confidence interval not recorded.",
+          "sources": []
+        }
+      ]
+    },
+    "SYN-D01-C25-EXPLORATORY": {
+      "finding": [
+        {
+          "text": "The report describes exploratory metabolic and brain-connectivity findings, but the accepted record has no current between-arm cognitive efficacy estimate.",
+          "sources": [
+            "CP017"
+          ]
+        }
+      ],
+      "magnitude": [
+        {
+          "text": "Clinical cognitive benefit cannot be quantified from this record. ",
+          "sources": []
+        },
+        {
+          "text": "Metabolite, imaging and correlation numbers remain in the source record and are not substitutes.",
+          "sources": []
+        }
+      ]
+    },
+    "SYN-D07-C18-BACKGROUND": {
+      "finding": [
+        {
+          "text": "The ingested textbook bibliography identifies original-report leads for melanoma, but the original reports have not been acquired or extracted.",
+          "sources": [
+            "CP027",
+            "CP028"
+          ]
+        }
+      ],
+      "magnitude": [
+        {
+          "text": "Not assessed: primary source unavailable in the accepted corpus.",
+          "sources": []
+        }
+      ]
+    },
+    "SYN-D07-C16-BACKGROUND": {
+      "finding": [
+        {
+          "text": "The ingested textbook bibliography identifies original-report leads for colon cancer, but the original reports have not been acquired or extracted.",
+          "sources": [
+            "CP027"
+          ]
+        }
+      ],
+      "magnitude": [
+        {
+          "text": "Not assessed: primary source unavailable in the accepted corpus.",
+          "sources": []
+        }
+      ]
+    },
+    "SYN-D07-C17-BACKGROUND": {
+      "finding": [
+        {
+          "text": "The ingested textbook bibliography identifies original-report leads for pancreatic cancer, but the original reports have not been acquired or extracted.",
+          "sources": [
+            "CP027"
+          ]
+        }
+      ],
+      "magnitude": [
+        {
+          "text": "Not assessed: primary source unavailable in the accepted corpus.",
+          "sources": []
+        }
+      ]
+    },
+    "SYN-D07-C03-BACKGROUND": {
+      "finding": [
+        {
+          "text": "The ingested textbook bibliography identifies original-report leads for ovarian clear cell carcinoma, but the original reports have not been acquired or extracted.",
+          "sources": [
+            "CP027"
+          ]
+        }
+      ],
+      "magnitude": [
+        {
+          "text": "Not assessed: primary source unavailable in the accepted corpus.",
+          "sources": []
+        }
+      ]
+    },
+    "SYN-D01-C30-BACKGROUND": {
+      "finding": [
+        {
+          "text": "The review describes mixed physical-function findings, including a walking-speed signal, null strength outcomes and attenuated exercise responses.",
+          "sources": [
+            "CP018"
+          ]
+        }
+      ],
+      "magnitude": [
+        {
+          "text": "Primary magnitude not independently verified; review-reported numbers are not promoted to primary findings here.",
+          "sources": []
+        }
+      ]
+    },
+    "SYN-D28-C11-CMAP": {
+      "finding": [
+        {
+          "text": "Vorinostat was nominated by an original computational analysis of Crohn disease transcriptomes. ",
+          "sources": [
+            "CP002-R01"
+          ]
+        },
+        {
+          "text": "The result identifies a hypothesis for experimental testing and does not demonstrate symptom improvement, remission or clinical safety.",
+          "sources": [
+            "CP002-R01"
+          ]
+        }
+      ],
+      "magnitude": [
+        {
+          "text": "CMap enrichment score 12.3, cluster 1. ",
+          "sources": [
+            "CP002-R01"
+          ]
+        },
+        {
+          "text": "This is a computational score, not a clinical effect size; a clinical effect interval is not identifiable from this design.",
+          "sources": [
+            "CP002-R01"
+          ]
+        }
+      ]
+    },
+    "SYN-D29-C11-CMAP": {
+      "finding": [
+        {
+          "text": "Clomipramine was nominated by an original computational analysis of Crohn disease transcriptomes. ",
+          "sources": [
+            "CP002-R01"
+          ]
+        },
+        {
+          "text": "The result identifies a hypothesis for experimental testing and does not demonstrate symptom improvement, remission or clinical safety.",
+          "sources": [
+            "CP002-R01"
+          ]
+        }
+      ],
+      "magnitude": [
+        {
+          "text": "CMap enrichment score 8.4, cluster 2. ",
+          "sources": [
+            "CP002-R01"
+          ]
+        },
+        {
+          "text": "This is a computational score, not a clinical effect size; a clinical effect interval is not identifiable from this design.",
+          "sources": [
+            "CP002-R01"
+          ]
+        }
+      ]
+    },
+    "SYN-D13-C29-NBUVB-BACKGROUND": {
+      "finding": [
+        {
+          "text": "The textbook summarizes a randomized trial as finding no added benefit from atorvastatin for repigmentation or halting vitiligo progression when added to narrowband UVB. ",
+          "sources": [
+            "CP027-CH25"
+          ]
+        },
+        {
+          "text": "The original trial report is not part of the acquired primary corpus.",
+          "sources": []
+        }
+      ],
+      "magnitude": [
+        {
+          "text": "No numerical treatment effect or confidence interval is recorded. ",
+          "sources": []
+        },
+        {
+          "text": "The book describes 30 participants; that sample count is not an effect size.",
+          "sources": [
+            "CP027-CH25"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,5 +1,6 @@
 import { headers } from "next/headers";
 import { redirect } from "next/navigation";
+import { readerSignInPath, safeRelativeReturnPath } from "@/lib/account-paths";
 
 export type ChatGPTUser = {
   userId: string;
@@ -49,36 +50,12 @@ export async function requireChatGPTUser(
 }
 
 export function chatGPTSignInPath(returnTo = "/guides/library"): string {
-  const safeReturnTo = safeRelativeReturnPath(returnTo, "/guides/library");
-  return `${SIGN_IN_PATH}?return_to=${encodeURIComponent(safeReturnTo)}`;
+  return readerSignInPath(returnTo);
 }
 
 export function chatGPTSignOutPath(returnTo = "/"): string {
-  const safeReturnTo = safeRelativeReturnPath(returnTo);
+  const safeReturnTo = safeRelativeReturnPath(returnTo, "/");
   return `${SIGN_OUT_PATH}?return_to=${encodeURIComponent(safeReturnTo)}`;
-}
-
-function safeRelativeReturnPath(value: string, fallback = "/"): string {
-  if (!value.startsWith("/") || value.startsWith("//")) return fallback;
-
-  let url: URL;
-  try {
-    url = new URL(value, "https://app.local");
-  } catch {
-    return fallback;
-  }
-  if (url.origin !== "https://app.local") return fallback;
-  if (isReservedAuthPath(url.pathname)) return fallback;
-
-  return `${url.pathname}${url.search}${url.hash}`;
-}
-
-function isReservedAuthPath(pathname: string): boolean {
-  return (
-    pathname === SIGN_IN_PATH ||
-    pathname === SIGN_OUT_PATH ||
-    pathname === CALLBACK_PATH
-  );
 }
 
 function safeDecodeURIComponent(value: string): string | null {
