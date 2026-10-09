@@ -53,9 +53,9 @@ export type ThemeHomeContent = {
 export type ArticleHeroProps = {
   title: string; description?: ReactNode; breadcrumbs: ThemeLink[];
   art?: ThemeImage; leftContext?: ReactNode; author?: ThemeAuthor;
-  /** One verified author block in the hero image/author area. Overrides author and creditSlot. */
+  /** One verified author block in the right hero author/snapshot region. Overrides author and creditSlot. */
   authorSlot?: ReactNode;
-  /** @deprecated Alias for authorSlot. Since 0.1.1 this renders in the hero image area, never the right rail. */
+  /** @deprecated Alias for authorSlot. Since 0.2.1 this renders in the right hero region, never the body sidebar. */
   creditSlot?: ReactNode;
   updatedLabel?: string; snapshot?: ReactNode; actions?: ReactNode;
   kindLabel?: string;

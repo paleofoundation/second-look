@@ -166,6 +166,15 @@ export function ThemeHome({ content }: ThemeHomeProps) {
     {content.join && <section className={h("membership section")} id="membership"><div><h2>{content.join.title}</h2><p>{content.join.text}</p>{content.join.content}</div></section>}
   </main>;
 }
+/** All author surfaces share the same small green iD mark and canonical identity link. */
+export function OrcidLink({ orcid, name }: { orcid?: string; name: string }) {
+  const id = orcid?.trim().replace(/^https?:\/\/orcid\.org\//i, "").replace(/\/$/, "");
+  if (!id || !/^\d{4}-\d{4}-\d{4}-\d{3}[\dX]$/i.test(id)) return <span className="omr-author__missing">ORCID iD not supplied</span>;
+  return <a className="omr-orcid" href={`https://orcid.org/${id}`} rel="noopener noreferrer" target="_blank" aria-label={`${name} ORCID iD ${id}`}>
+    <svg width="20" height="20" viewBox="0 0 256 256" aria-hidden="true" focusable="false"><circle cx="128" cy="128" r="128" fill="#A6CE39" /><path fill="#fff" d="M86 186H70V80h16v106Zm-8-121a10 10 0 1 1 0-20 10 10 0 0 1 0 20Zm33 15h41c39 0 59 25 59 53s-20 53-59 53h-41V80Zm16 15v76h24c29 0 44-16 44-38s-15-38-44-38h-24Z" /></svg>
+    <span>ORCID iD · {id}</span>
+  </a>;
+}
 export function AuthorCard({ author }: { author: ThemeAuthor }) {
   const [open, setOpen] = useState(false);
   const id = useId();
@@ -173,12 +182,12 @@ export function AuthorCard({ author }: { author: ThemeAuthor }) {
   const trigger = useRef<HTMLButtonElement>(null);
   const returningFocus = useRef(false);
   const close = () => { setOpen(false); if (document.activeElement !== trigger.current) { returningFocus.current = true; trigger.current?.focus({ preventScroll: true }); } };
-  const orcid = author.orcid?.replace(/^https?:\/\/orcid.org\//, "");
+
   return <div ref={card} className="omr-author" onMouseLeave={() => { if (!card.current?.contains(document.activeElement)) setOpen(false); }} onBlur={event => { if (!event.currentTarget.contains(event.relatedTarget as Node | null)) setOpen(false); }} onKeyDown={event => { if (event.key === "Escape" && open) { event.stopPropagation(); close(); } }}>
     <button ref={trigger} type="button" className="omr-author__portrait" aria-expanded={open} aria-controls={id} aria-label={`About ${author.name}`} onMouseEnter={() => setOpen(true)} onFocus={() => { if (returningFocus.current) { returningFocus.current = false; return; } setOpen(true); }} onClick={() => setOpen(true)}>
       {author.portrait ? <Image image={author.portrait} /> : <span>Portrait not supplied</span>}
     </button>
-    <div className="omr-author__identity"><small>{author.role}</small><div>{author.profileHref ? <ThemeAnchor href={author.profileHref}>{author.name}</ThemeAnchor> : author.name}{orcid ? <a className="omr-orcid" href={`https://orcid.org/${orcid}`} rel="noopener noreferrer" target="_blank" aria-label={`${author.name} ORCID iD ${orcid}`}><svg viewBox="0 0 256 256" aria-hidden="true"><circle cx="128" cy="128" r="128" fill="currentColor" /><path fill="white" d="M86 186H70V80h16v106Zm-8-121a10 10 0 1 1 0-20 10 10 0 0 1 0 20Zm33 15h41c39 0 59 25 59 53s-20 53-59 53h-41V80Zm16 15v76h24c29 0 44-16 44-38s-15-38-44-38h-24Z" /></svg><span>ORCID iD · {orcid}</span></a> : <span className="omr-author__missing">ORCID iD not supplied</span>}</div></div>
+    <div className="omr-author__identity"><small>{author.role}</small><div>{author.profileHref ? <ThemeAnchor href={author.profileHref}>{author.name}</ThemeAnchor> : author.name}<OrcidLink orcid={author.orcid} name={author.name} /></div></div>
     <div className="omr-author__bio" id={id} hidden={!open}><strong>{author.name}</strong><p>{author.bio || "Biography not supplied."}</p>{author.profileHref && <ThemeAnchor href={author.profileHref}>Read author profile</ThemeAnchor>}<button type="button" onClick={close} aria-label="Close author biography">×</button></div>
   </div>;
 }
@@ -189,9 +198,9 @@ export function ArticleHero({ title, description, breadcrumbs, art, leftContext,
   const authorContent = authorSlot !== undefined ? authorSlot : creditSlot !== undefined ? creditSlot : author ? <AuthorCard author={author} /> : null;
   const hasAuthor = authorContent !== null && authorContent !== undefined && authorContent !== false;
   return <div className={`research-hero${hasAuthor ? " research-hero--with-author" : ""}`}><div className="research-hero__wrapper">
-    <div className="research-hero__left" data-hero-region="image-author">{art && <Image image={art} className="research-hero__left-image" />}{hasAuthor && <div className="research-hero__author">{authorContent}</div>}{leftContext && <div className="research-hero__left-content">{leftContext}</div>}</div>
+    <div className="research-hero__left" data-hero-region="image">{art && <Image image={art} className="research-hero__left-image" />}{leftContext && <div className="research-hero__left-content">{leftContext}</div>}</div>
     <div className="research-hero__center"><Breadcrumbs items={breadcrumbs} label={kindLabel} /><div className="research-hero__center-content"><h1 className="research-hero__center-title">{title}</h1>{description && <div className="research-hero__center-text">{description}</div>}</div>{actions && <div className="research-hero__center-tags">{actions}</div>}</div>
-    <aside className="research-hero__right" aria-label="Article edition and snapshot">{updatedLabel && <p className="omr-updated">{updatedLabel}</p>}{snapshot}</aside>
+    <aside className="research-hero__right" data-hero-region="author-snapshot" aria-label="Author and article snapshot">{hasAuthor && <div className="research-hero__author">{authorContent}</div>}{updatedLabel && <p className="omr-updated">{updatedLabel}</p>}{snapshot}</aside>
   </div></div>;
 }
 export function ArticleLayout({ hero, leftRail, rightRail, children }: ArticleLayoutProps) {
