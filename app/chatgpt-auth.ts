@@ -48,8 +48,8 @@ export async function requireChatGPTUser(
   redirect(chatGPTSignInPath(returnTo));
 }
 
-export function chatGPTSignInPath(returnTo: string): string {
-  const safeReturnTo = safeRelativeReturnPath(returnTo);
+export function chatGPTSignInPath(returnTo = "/guides/library"): string {
+  const safeReturnTo = safeRelativeReturnPath(returnTo, "/guides/library");
   return `${SIGN_IN_PATH}?return_to=${encodeURIComponent(safeReturnTo)}`;
 }
 
@@ -58,17 +58,17 @@ export function chatGPTSignOutPath(returnTo = "/"): string {
   return `${SIGN_OUT_PATH}?return_to=${encodeURIComponent(safeReturnTo)}`;
 }
 
-function safeRelativeReturnPath(value: string): string {
-  if (!value.startsWith("/") || value.startsWith("//")) return "/";
+function safeRelativeReturnPath(value: string, fallback = "/"): string {
+  if (!value.startsWith("/") || value.startsWith("//")) return fallback;
 
   let url: URL;
   try {
     url = new URL(value, "https://app.local");
   } catch {
-    return "/";
+    return fallback;
   }
-  if (url.origin !== "https://app.local") return "/";
-  if (isReservedAuthPath(url.pathname)) return "/";
+  if (url.origin !== "https://app.local") return fallback;
+  if (isReservedAuthPath(url.pathname)) return fallback;
 
   return `${url.pathname}${url.search}${url.hash}`;
 }
