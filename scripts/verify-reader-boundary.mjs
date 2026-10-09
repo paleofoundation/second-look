@@ -3,7 +3,7 @@ import path from 'node:path';
 
 const projections = ['public-content','topics','author-profiles','guide-catalogue','navigation-interest','public-mechanisms'];
 const privateKeys = new Set(['provenance','sourceLinks','demandTopicIds','contractException']);
-const privateCopy = /owner[-_ ](?:requested|required|priorit)|mandatory owner|coordinating task|observed_reddit_question|saved discussions|next acquisition packet|Keep required acquisition|acquisition backlog|non-preface accepted CP28|Accepted CP28 extraction/i;
+const privateCopy = /owner[-_ ](?:requested|required|priorit)|mandatory owner|coordinating task|observed_reddit_question|saved discussions|next acquisition packet|Keep required acquisition|acquisition backlog|non-preface accepted CP28|Accepted CP28 extraction|private draft|Acquisition target; source support pending|Acquire appropriate pair-specific/i;
 let fields = 0;
 function inspect(value, location) {
   if (typeof value === 'string') {
