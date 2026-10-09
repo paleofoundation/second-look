@@ -4,6 +4,14 @@ import { readExecutionProfile } from "./execution-profile.mjs";
 
 const [command, ...args] = process.argv.slice(2);
 if (!["dev", "build"].includes(command)) throw new Error("Expected dev or build.");
+if (command === "build") {
+  const check = spawnSync(process.execPath, [fileURLToPath(new URL("./update-guide-marketing-hashes.mjs", import.meta.url)), "--check"], { stdio: "inherit" });
+  if (check.error) throw check.error;
+  if (check.status !== 0) process.exit(check.status ?? 1);
+  const assets = spawnSync(process.execPath, [fileURLToPath(new URL("./verify-guide-assets.mjs", import.meta.url))], { stdio: "inherit" });
+  if (assets.error) throw assets.error;
+  if (assets.status !== 0) process.exit(assets.status ?? 1);
+}
 const managedLinux = readExecutionProfile() === "managed-linux";
 
 if (managedLinux && command === "build") {

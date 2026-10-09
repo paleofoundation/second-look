@@ -108,5 +108,36 @@
 @media(prefers-reduced-motion:reduce){.omr-theme .research-detail-panel,.omr-theme .research-panel-backdrop{animation:none!important}.omr-theme .rgbc-faq-icon:before,.omr-theme .rgbc-faq-icon:after{transition:none!important}}
 @media print{.omr-theme .research-panel-backdrop,.omr-theme .research-detail-panel{display:none!important}.omr-theme .evidence-assessments table{min-width:0;font-size:10pt}.omr-theme .wp-block-table{overflow:visible}.omr-theme .rgbc-faq-a{display:block}}
 
+/* Pending confidence explains each row without manufacturing a certainty grade. */
+.omr-theme .evidence-confidence-help{caption-side:top;text-align:left;padding:0 0 14px;font-size:13px;line-height:1.6;color:var(--theme-muted,#5a6877)}
+.omr-theme .evidence-confidence-cell{text-align:left;vertical-align:top}
+.omr-theme .evidence-confidence{display:flex;flex-direction:column;gap:10px}
+.omr-theme .evidence-confidence-label{display:block;font-size:13px;line-height:1.45;color:var(--theme-ink,#20324f)}
+.omr-theme .evidence-assessments .evidence-confidence p{margin:0;font-size:12px;line-height:1.6}
+.omr-theme .evidence-confidence-basis{font-weight:600;color:var(--theme-muted,#5a6877)}
+.omr-theme .evidence-confidence-next{padding-top:10px;border-top:1px solid var(--theme-border,#ccd3db)}
+.omr-theme .evidence-confidence-next strong{display:block;margin-bottom:4px;font-size:11px;color:var(--theme-muted,#5a6877)}
+
 /* v1.17 original evidence-exploration overlay; source table and panel retained. */
 .omr-theme .outcome-finder{margin:1.8rem 0}.omr-theme .outcome-finder>h3{font-size:1.2rem}.omr-theme .outcome-filters{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.75rem;padding:1rem;background:var(--pale);border:1px solid var(--border)}.omr-theme .outcome-filters label,.omr-theme .comparison-selectors label{display:flex;flex-direction:column;gap:.3rem;font-size:.75rem;font-weight:600}.omr-theme .outcome-filters input,.omr-theme .outcome-filters select,.omr-theme .comparison-selectors select{min-width:0;width:100%;height:2.6rem;padding:.5rem;background:var(--paper,#fff);border:1px solid var(--border);border-radius:0;color:var(--main)}.omr-theme .outcome-search{grid-column:1/-1}.omr-theme .outcome-filters button{font-size:.8rem;border:1px solid var(--main);padding:.5rem;align-self:end;min-height:2.6rem}.omr-theme .outcome-comparison{border-block:1px solid var(--border);padding:1rem 0;margin:2rem 0}.omr-theme .outcome-comparison summary{cursor:pointer;font-weight:600}.omr-theme .comparison-selectors,.omr-theme .comparison-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.3rem;margin:1rem 0}.omr-theme .comparison-grid section{min-width:0;border-top:2px solid var(--accent);padding:1rem;background:var(--pale)}.omr-theme .comparison-grid dt{font-size:.75rem;text-transform:uppercase;margin-top:1rem}.omr-theme .comparison-grid dd{font-size:.9rem;line-height:1.5;margin:0}.omr-theme .reader-snapshot{padding:1.4rem;background:var(--pale);border-block:1px solid var(--border);margin:2rem 0}.omr-theme .reader-snapshot ul{padding-left:1.2rem}.omr-theme .reader-change{border-left:3px solid var(--accent);padding-left:1rem}.omr-theme .interaction-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}.omr-theme .interaction-grid dd{margin:0}.omr-theme .interaction-grid dt{font-weight:600;font-size:.8rem}@media(max-width:640px){.omr-theme .outcome-filters{grid-template-columns:1fr 1fr}.omr-theme .comparison-selectors,.omr-theme .comparison-grid,.omr-theme .interaction-grid{grid-template-columns:1fr}}
+
+/* Preserve the same semantic outcome records when the article column is narrow. */
+.omr-theme .evidence-assessments{container-type:inline-size}
+.omr-theme .evidence-assessments th:nth-child(2),.omr-theme .evidence-assessments td:nth-child(2){width:34%}
+.omr-theme .evidence-assessments th:nth-child(3),.omr-theme .evidence-assessments td:nth-child(3){width:24%}
+.omr-theme .evidence-assessments th:last-child,.omr-theme .evidence-assessments td:last-child{width:15%}
+@container(max-width:760px){
+ .omr-theme .evidence-assessments table,.omr-theme .evidence-assessments tbody,.omr-theme .evidence-assessments caption{display:block;min-width:0;width:100%}
+ .omr-theme .evidence-assessments thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+ .omr-theme .evidence-assessments tr{display:block;border:1px solid #d8dde3;margin-bottom:24px}
+ .omr-theme .evidence-assessments td{display:block;width:100%!important;border:0;border-bottom:1px solid #e2e5e8;padding:18px;box-sizing:border-box}
+ .omr-theme .evidence-assessments td:last-child{border-bottom:0}
+ .omr-theme .evidence-assessments td::before{content:attr(data-label);display:block;font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:var(--omr-muted);margin-bottom:12px}
+ .omr-theme .evidence-assessments .evidence-confidence p{font-size:14px}
+ .omr-theme .evidence-confidence-label{font-size:15px}
+}
+@container(min-width:480px) and (max-width:760px){
+ .omr-theme .evidence-assessments tr{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr)}
+ .omr-theme .evidence-assessments td:first-child,.omr-theme .evidence-assessments td:last-child{grid-column:1/-1}
+ .omr-theme .evidence-assessments td:nth-child(2){border-right:1px solid #e2e5e8}
+}

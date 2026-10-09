@@ -1,0 +1,1 @@
+ALTER TABLE `guide_memberships` ADD `cancel_at_period_end` integer DEFAULT false NOT NULL;

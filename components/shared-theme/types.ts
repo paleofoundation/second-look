@@ -1,7 +1,8 @@
 import type { AnchorHTMLAttributes, ComponentType, ImgHTMLAttributes, ReactNode } from "react";
 
 export type ThemeLink = { label: string; href: string };
-export type ThemeNavItem = ThemeLink & { children?: ThemeNavItem[] };
+export type ThemeMegaMenu = { intro: string; columns: { title: string; links: (ThemeLink & { detail?: string })[] }[]; note: string; allLink?: ThemeLink };
+export type ThemeNavItem = ThemeLink & { children?: ThemeNavItem[]; mega?: ThemeMegaMenu };
 export type ThemeImage = { src: string; alt: string; width: number; height: number };
 export type ThemeAuthor = {
   id: string; name: string; role: string; bio: string;
@@ -46,6 +47,7 @@ export type ThemeHomeContent = {
   collections: { number: string; eyebrow: string; title: string; copy: string; href: string; links: ThemeLink[] }[];
   method: { title: string; intro: string; link: ThemeLink; steps: { title: string; text: string }[] };
   research: { title: string; link: ThemeLink; items: { title: string; kind: string; href: string }[] };
+  guides?: { title:string; text:string; label:string; link:ThemeLink; items:{title:string;description:string;href:string;status:string}[] };
   join?: { title: string; text: string; content: ReactNode };
 };
 export type ArticleHeroProps = {

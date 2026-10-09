@@ -57,6 +57,27 @@ export function ThemeSearch({ home = false }: { home?: boolean }) {
     {show && results.length > 0 && <ul className="rgbc-search__items omr-search-suggestions" aria-label="Search suggestions">{results.map(item => <li key={item.href}><ThemeAnchor className="rgbc-search__link" href={item.href}>{item.label}</ThemeAnchor></li>)}</ul>}
   </form>;
 }
+function MegaMenuItem({item}: {item: ThemeNavItem}) {
+  const [open,setOpen]=useState(false);
+  const root=useRef<HTMLLIElement>(null);
+  const trigger=useRef<HTMLButtonElement>(null);
+  const id=useId();
+  useEffect(()=>{
+    if(!open)return;
+    const outside=(event:PointerEvent)=>{if(!root.current?.contains(event.target as Node))setOpen(false)};
+    document.addEventListener('pointerdown',outside);
+    return()=>document.removeEventListener('pointerdown',outside);
+  },[open]);
+  const menu=item.mega!;
+  return <li ref={root} className="omr-mega-item" onBlur={event=>{if(!event.currentTarget.contains(event.relatedTarget as Node|null))setOpen(false)}} onKeyDown={event=>{if(event.key==='Escape'&&open){event.preventDefault();event.stopPropagation();setOpen(false);trigger.current?.focus()}}}>
+    <button ref={trigger} type="button" className="omr-mega-trigger" aria-expanded={open} aria-controls={id} onClick={()=>setOpen(value=>!value)} onKeyDown={event=>{if(event.key==='ArrowDown'){event.preventDefault();setOpen(true);requestAnimationFrame(()=>root.current?.querySelector<HTMLAnchorElement>('.omr-mega-panel a')?.focus())}}}>{item.label}</button>
+    <section className="omr-mega-panel" id={id} aria-label={item.label+' topics'} hidden={!open}>
+      <div className="omr-mega-intro"><p>{menu.intro}</p><button type="button" aria-label={'Close '+item.label+' topics'} onClick={()=>{setOpen(false);trigger.current?.focus()}}>×</button></div>
+      <div className="omr-mega-columns">{menu.columns.map(column=><div key={column.title}><h2>{column.title}</h2><ul>{column.links.map(link=><li key={link.href+link.label}><ThemeAnchor href={link.href} onClick={()=>setOpen(false)}>{link.label}{link.detail&&<small>{link.detail}</small>}</ThemeAnchor></li>)}</ul></div>)}</div>
+      <div className="omr-mega-foot"><p>{menu.note}</p>{menu.allLink&&<ThemeAnchor href={menu.allLink.href} onClick={()=>setOpen(false)}>{menu.allLink.label}</ThemeAnchor>}</div>
+    </section>
+  </li>;
+}
 function MenuItem({ item, depth = 0 }: { item: ThemeNavItem; depth?: number }) {
   const [open, setOpen] = useState(false);
   const toggleButton = useRef<HTMLButtonElement>(null);
@@ -103,7 +124,7 @@ export function ThemeHeader() {
     <div className="header__menu"><nav ref={nav} id={id} aria-label="Main navigation" className={`header__nav${open ? " is-open" : ""}`} onClick={event => { if ((event.target as HTMLElement).closest("a")) setOpen(false); }}>
       <div className="header__mobile-logo"><Brand mobile /><button className="header__close" type="button" aria-label="Close menu" onClick={() => { setOpen(false); trigger.current?.focus(); }}>×</button></div>
       <ThemeSearch /><ThemeAnchor className="header__search" href={config.search.action}><span>Search</span><SearchIcon /></ThemeAnchor>
-      <div className="menu-main-container"><ul className="menu">{config.navigation.map(item => <MenuItem key={item.href + item.label} item={item} />)}</ul></div>
+      <div className="menu-main-container"><ul className="menu">{config.navigation.map(item => item.mega ? <MegaMenuItem key={item.href + item.label} item={item}/> : <MenuItem key={item.href + item.label} item={item} />)}</ul></div>
     </nav></div>
     <div className="header__actions">{config.accountLink && <ThemeAnchor className="header__login" href={config.accountLink.href}>{config.accountLink.label}</ThemeAnchor>}{config.primaryAction && <ThemeAnchor className="btn" href={config.primaryAction.href}>{config.primaryAction.label}</ThemeAnchor>}</div>
   </div></header>;
@@ -141,6 +162,7 @@ export function ThemeHome({ content }: ThemeHomeProps) {
     <section className={h("section")} id="explore"><div className={h("section-intro centered")}><h2>{content.collectionHeading}</h2><p>{content.collectionIntro}</p></div><div className={h("collection-grid")}>{collections.map(collection => <article className={h("collection-card")} key={collection.number}><div className={h("collection-card__top")}><span>{collection.number}</span><small>{collection.eyebrow}</small></div><h3>{collection.title}</h3><p>{collection.copy}</p><ul>{collection.links.map(link => <li key={link.href}><ThemeAnchor className="rgbc-archive__link" href={link.href}>{link.label}</ThemeAnchor></li>)}</ul><ThemeAnchor href={collection.href} className={h("card-link")}>See all</ThemeAnchor></article>)}</div></section>
     <section className={h("method section")} id="method"><div className={h("method__heading")}><h2>{method.title}</h2><p>{method.intro}</p><ThemeAnchor href={method.link.href} className={h("text-link")}>{method.link.label}<span>→</span></ThemeAnchor></div><ol className={h("method__steps")}>{method.steps.map((step, index) => <li key={step.title}><span>{String(index + 1).padStart(2, "0")}</span><div><h3>{step.title}</h3><p>{step.text}</p></div></li>)}</ol></section>
     <section className={h("section")} id="research"><div className={h("research__head")}><div><h2>{research.title}</h2></div><ThemeAnchor href={research.link.href} className={h("outline-button")}>{research.link.label}<span>→</span></ThemeAnchor></div><div className={h("research-list") + " rgbc-content__details-content"}>{research.items.map(item => <ThemeAnchor className={h("research-row")} href={item.href} key={item.href}><p>{item.title}</p><div className="rgbc-content__details-meta"><small className="rgbc-content__details-date">{item.kind}</small></div></ThemeAnchor>)}</div></section>
+    {content.guides && <section className={h("section")} id="guides"><div className={h("research__head")}><div><span className="eyebrow">{content.guides.label}</span><h2>{content.guides.title}</h2><p>{content.guides.text}</p></div><ThemeAnchor className={h("outline-button")} href={content.guides.link.href}>{content.guides.link.label}</ThemeAnchor></div><div className={h("collection-grid")}>{content.guides.items.map(item=><article className={h("collection-card")} key={item.href}><small>{item.status}</small><h3><ThemeAnchor href={item.href}>{item.title}</ThemeAnchor></h3><p>{item.description}</p></article>)}</div></section>}
     {content.join && <section className={h("membership section")} id="membership"><div><h2>{content.join.title}</h2><p>{content.join.text}</p>{content.join.content}</div></section>}
   </main>;
 }
