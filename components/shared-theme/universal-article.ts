@@ -5,8 +5,8 @@
  *
  * Render blocks in order. Within each module, render `sections` in order, then
  * its built-in mechanism/FAQ/research content where applicable, then `scoped`.
- * Citation traversal must consume that same sequence. The early findings block
- * is an Evidence projection, not an additional navigation section.
+ * Citation traversal must consume that same sequence. Outcome synthesis belongs
+ * in the single Evidence module; former findings links remain aliases there.
  */
 export type UniversalPostType = 'Drug' | 'Condition';
 
@@ -41,8 +41,7 @@ export type UniversalArticleModule<S extends UniversalArticleSection> = {
 };
 
 export type UniversalArticleBlock<S extends UniversalArticleSection> =
-  | { kind: 'module'; module: UniversalArticleModule<S> }
-  | { kind: 'findings'; id: 'findings' };
+  { kind: 'module'; module: UniversalArticleModule<S> };
 
 export type UniversalArticleInput<S extends UniversalArticleSection> = {
   type: UniversalPostType;
@@ -120,11 +119,7 @@ export function buildUniversalArticlePlan<S extends UniversalArticleSection>(
       sections: [...input.scopedSections],
     };
   }
-  const blocks: UniversalArticleBlock<S>[] = modules.flatMap(module =>
-    module.kind === 'mechanisms'
-      ? [{ kind: 'module', module }, { kind: 'findings', id: 'findings' }] as UniversalArticleBlock<S>[]
-      : [{ kind: 'module', module }],
-  );
+  const blocks: UniversalArticleBlock<S>[] = modules.map(module => ({ kind: 'module', module }));
   const navigation: UniversalArticleNavItem[] = modules.map(module => ({
     id: module.id,
     label: module.label,
@@ -165,10 +160,6 @@ export function universalArticlePlanErrors<S extends UniversalArticleSection>(
       errors.push('Section order or destination changed within ' + module.label + '.');
     if (module.scoped && module.label !== 'Evidence') errors.push('Scoped sections must remain inside Evidence.');
   }
-  const findingsIndexes = plan.blocks.flatMap((block, index) => block.kind === 'findings' ? [index] : []);
-  const mechanismIndex = plan.blocks.findIndex(block => block.kind === 'module' && block.module.kind === 'mechanisms');
-  if (findingsIndexes.length !== 1 || findingsIndexes[0] !== mechanismIndex + 1)
-    errors.push('Exactly one early findings projection must follow Mechanisms.');
   const renderedModules = plan.blocks.flatMap(block => block.kind === 'module' ? [block.module] : []);
   if (renderedModules.length !== plan.modules.length || plan.modules.some((module, index) => renderedModules[index] !== module))
     errors.push('Rendering blocks differ from the canonical modules.');

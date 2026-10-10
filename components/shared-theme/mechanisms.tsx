@@ -1,4 +1,4 @@
-import type {ReactNode} from 'react';
+import {Fragment, type ReactNode} from 'react';
 
 export type MechanismPresentation = {
   heading: string;
@@ -25,7 +25,20 @@ export type MechanismContext = {
   clinicalMeaning: string;
 };
 
-/** Shared structure; the host supplies topic language and source-authorized content. */
+function ContextProse({context, content}: {context: MechanismContext; content: MechanismPresentation}) {
+  const fields = (['target', 'action', 'model'] as const).filter(field => context.evidence[field]);
+  return <>
+    <p className="small muted" data-evidence-basis={context.evidence.basis}>{context.evidence.label}</p>
+    {context.explanation}
+    {fields.length > 0 && <p>{fields.map((field, index) => <Fragment key={field}>
+      {index > 0 ? '; ' : ''}{content.detailLabels[field]}: {context.evidence[field]}
+    </Fragment>)}</p>}
+    {context.evidence.source}
+    <p>{context.clinicalMeaning}</p>
+  </>;
+}
+
+/** One visible explanation; multiple bounded contexts reuse the canonical disclosure. */
 export function MechanismSection({content, originalAction, contexts = [], originalActionApplicable = true}: {
   content: MechanismPresentation;
   originalAction?: ReactNode;
@@ -33,15 +46,23 @@ export function MechanismSection({content, originalAction, contexts = [], origin
   originalActionApplicable?: boolean;
 }) {
   return <section id="mechanisms" className="article-section mechanism-section">
-    <h2>{content.heading}</h2><p>{content.introduction}</p>
-    {originalActionApplicable && <div><h3>{content.originalHeading}</h3>{originalAction || <p>{content.originalUnavailable}</p>}</div>}
-    <h3>{content.proposedHeading}</h3>
-    {contexts.length ? contexts.map(context => <div className="mechanism-context" key={context.id}>
-      <h4>{context.title}</h4><p className="small muted" data-evidence-basis={context.evidence.basis}>{context.evidence.label}</p>
-      {context.explanation}
-      {(context.evidence.target || context.evidence.action || context.evidence.model) && <dl>{(['target','action','model'] as const).map(field => context.evidence[field] ? <div key={field}><dt>{content.detailLabels[field]}</dt><dd>{context.evidence[field]}</dd></div> : null)}</dl>}
-      {context.evidence.source}<p>{context.clinicalMeaning}</p>
-    </div>) : <p>{content.proposedUnavailable}</p>}
+    <h2>{content.heading}</h2>
+    <p>{content.introduction}</p>
+    {originalActionApplicable && (originalAction || <p>{content.originalUnavailable}</p>)}
+    {contexts.length === 0 && <p>{content.proposedUnavailable}</p>}
+    {contexts.length === 1 && <div id={contexts[0].id}>
+      <p><strong>{contexts[0].title}</strong></p>
+      <ContextProse context={contexts[0]} content={content}/>
+    </div>}
     <p className="small muted">{content.evidenceBoundary}</p>
+    {contexts.length > 1 && <div className="rgbc-faq-block">
+      {contexts.map(context => <details className="rgbc-faq-item" id={context.id} key={context.id}>
+        <summary><span className="rgbc-faq-icon" aria-hidden="true"/><span className="rgbc-faq-q">{context.title}</span></summary>
+        <div className="rgbc-faq-a">
+          <strong>Quick answer:</strong>
+          <ContextProse context={context} content={content}/>
+        </div>
+      </details>)}
+    </div>}
   </section>;
 }
