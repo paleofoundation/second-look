@@ -118,3 +118,16 @@ sup.citation-sup,
 .omr-theme .outcome-filter-disclosure > summary { cursor:pointer; min-height:44px; align-content:center; }
 .omr-theme .outcome-filter-disclosure .outcome-filters { margin-top:.8rem; }
 .omr-theme .save-control { display:inline-flex; flex-direction:column; align-items:flex-start; gap:.35rem; }
+
+/* Universal wrappers retain ordinary prose; authored subsection anchors survive. */
+.omr-theme .universal-section > .article-subsection {
+ margin-block:1.5rem;
+ padding:0;
+ border:0;
+ background:transparent;
+}
+.omr-theme .article-subsection > p { font-size:18px; line-height:1.85; }
+.omr-theme .universal-section > .article-section { padding:0; border:0; background:transparent; }
+@media (max-width:575px) {
+ .omr-theme .article-subsection > p { font-size:17px; line-height:1.8; }
+}
