@@ -1,6 +1,6 @@
 # Article navigation and history — 11 October 2026
 
-Owner source: Examine sidebar screenshots supplied in the Drug Repurposing chat and the explicit request recorded as SL-RULE-004. Implemented on `codex/article-sidebar-history`. This is a local implementation/verification record, not a deployed release or scientific approval.
+Owner source: Examine sidebar screenshots supplied in the Drug Repurposing chat and the explicit request recorded as SL-RULE-004. Implemented on `codex/article-sidebar-history` and published as Sites version 23 after explicit owner approval; release details follow below. This presentation release does not establish scientific approval.
 
 ## Adopted behavior and source mapping
 
@@ -34,4 +34,13 @@ TypeScript now excludes `rules/`, `references/` and `research/prior-pilot/`: the
 
 Canonical One Match Rule v1.30, the installed skill and full ZIP export were synchronized and byte-verified (244 files). The repository's scoped rule/reference snapshot contains 162 files with master SHA-256 `7fae46e83e1da5e139b0ab2d11ca02292603c63a50f764c89819b0792bc2f330`. Governance verifies 236 rule/history/ingest records, preserving the frozen v1.1 baseline. Uploaded ChatGPT copies do not automatically refresh and were not represented as updated.
 
-Automatic approval review rejected the Sites source workflow because it could export private repository contents to the external Sites service and publish them. Implementation and local verification continued; no workaround export or deployment was attempted. Publication of this concrete change requires owner approval for that source synchronization and existing-site deployment. Existing audience and scientific release gates are unchanged.
+Automatic approval review initially rejected the Sites source workflow because it could export private repository contents to the external Sites service and publish them. Implementation and local verification continued without a workaround export or deployment. The owner subsequently answered “Approve source sync and publication” to the explicit request to synchronize the private source and publish these changes to the existing site.
+
+Following that approval, source commit `29166f85abbb12a2ff53f0cd3b77dcfdc9615b95` was synchronized, packaged and published successfully on 2026-10-11 at 13:12:49 UTC. The native Sites deployment response confirmed success at https://second-look-evidence.kmfp.chatgpt.site. Existing public audience and scientific release gates were preserved.
+
+- Project: `appgprj_6ac734459a508191a425263c7645a0be`.
+- Sites version: 23, `appgprj_6ac734459a508191a425263c7645a0be~appgver_eb1b323817ac819188ffb080ba9cc118`.
+- Deployment: `appgdep_6acb8b392c648191b4809d48feccb0af`, status `succeeded`.
+- Packaged archive SHA-256: `8d681cde3db2f81a4ff4dd2ec679bcb0c282ecf90ecace21b3da05bb0b4df659`.
+
+This post-release record is a local documentation follow-up; the deployed implementation is the exact source commit above. Native deployment success confirms publication, while reader behavior and access-boundary verification remain the bounded checks recorded in the Verification section.
