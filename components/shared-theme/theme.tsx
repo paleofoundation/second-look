@@ -70,7 +70,7 @@ function MegaMenuItem({item}: {item: ThemeNavItem}) {
   },[open]);
   const menu=item.mega!;
   return <li ref={root} className="omr-mega-item" onBlur={event=>{if(!event.currentTarget.contains(event.relatedTarget as Node|null))setOpen(false)}} onKeyDown={event=>{if(event.key==='Escape'&&open){event.preventDefault();event.stopPropagation();setOpen(false);trigger.current?.focus()}}}>
-    <button ref={trigger} type="button" className="omr-mega-trigger" aria-expanded={open} aria-controls={id} onClick={()=>setOpen(value=>!value)} onKeyDown={event=>{if(event.key==='ArrowDown'){event.preventDefault();setOpen(true);requestAnimationFrame(()=>root.current?.querySelector<HTMLAnchorElement>('.omr-mega-panel a')?.focus())}}}>{item.label}</button>
+    <button ref={trigger} type="button" className="omr-mega-trigger" aria-expanded={open} aria-controls={id} onClick={()=>setOpen(value=>!value)} onKeyDown={event=>{if(event.key==='ArrowDown'){event.preventDefault();setOpen(true);requestAnimationFrame(()=>root.current?.querySelector<HTMLAnchorElement>('.omr-mega-panel a')?.focus())}}}>{item.label}<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true"><path d="m2 4 4 4 4-4"/></svg></button>
     <section className="omr-mega-panel" id={id} aria-label={item.label+' topics'} hidden={!open}>
       <div className="omr-mega-intro"><p>{menu.intro}</p><button type="button" aria-label={'Close '+item.label+' topics'} onClick={()=>{setOpen(false);trigger.current?.focus()}}>×</button></div>
       <div className="omr-mega-columns">{menu.columns.map(column=><div key={column.title}><h2>{column.title}</h2><ul>{column.links.map(link=><li key={link.href+link.label}><ThemeAnchor href={link.href} onClick={()=>setOpen(false)}>{link.label}{link.detail&&<small>{link.detail}</small>}</ThemeAnchor></li>)}</ul></div>)}</div>
@@ -118,7 +118,7 @@ export function ThemeHeader() {
     return () => { document.body.style.overflow = old; document.removeEventListener("keydown", key); media.removeEventListener("change", resize); };
   }, [open]);
   return <header className="header"><div className="header__wrapper wrapper">
-    <button ref={trigger} className="header__burger" type="button" aria-label="Open menu" aria-expanded={open} aria-controls={id} onClick={() => setOpen(true)}><span /><span /><span /></button>
+    <button ref={trigger} className="header__burger" type="button" aria-label="Open menu" aria-expanded={open} aria-controls={id} onClick={() => setOpen(true)}>Menu</button>
     <div className="header__logo"><Brand /></div>
     {open && <button className="omr-menu-backdrop" tabIndex={-1} aria-label="Close menu" onClick={() => { setOpen(false); trigger.current?.focus(); }} />}
     <div className="header__menu"><nav ref={nav} id={id} aria-label="Main navigation" className={`header__nav${open ? " is-open" : ""}`} onClick={event => { if ((event.target as HTMLElement).closest("a")) setOpen(false); }}>
