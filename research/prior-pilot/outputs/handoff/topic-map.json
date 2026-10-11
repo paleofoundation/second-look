@@ -1,0 +1,2717 @@
+{
+  "schema_version": "second-look-demand-1.0",
+  "version": "1.0",
+  "generated_on": "2026-10-08",
+  "rule_version": "1.1",
+  "rule_sha256": "01896e3c254f37483c226da52da0ef239b03eb7c762e5171675ae6dc302150d2",
+  "status": "provisional_bounded_discovery",
+  "target_clusters": 40,
+  "observed_clusters": 36,
+  "reason_below_target": "Stopped at declared 18-query protocol plus 3 broad scoping queries and partial direct access; 36 useful clusters were supported. No padding or saturation claim.",
+  "topics": [
+    {
+      "id": "DR001",
+      "question": "Does metformin taken during acute COVID reduce the chance of later Long COVID?",
+      "reader_decision": "Does metformin taken during acute COVID reduce the chance of later Long COVID",
+      "intervention": "metformin",
+      "condition": "prevention of Long COVID after acute SARS-CoV-2 infection",
+      "source_thread_ids": [
+        "RT-1wh72y8",
+        "RT-1qrt821",
+        "RT-1u9j9ji"
+      ],
+      "source_links": [
+        "https://www.reddit.com/r/covidlonghaulers/comments/1wh72y8/metformin/",
+        "https://www.reddit.com/r/ZeroCovidCommunity/comments/1qrt821/no_that_recent_study_does_not_show_that_metformin/",
+        "https://www.reddit.com/r/ZeroCovidCommunity/comments/1u9j9ji/metformin_for_treating_long_covid/"
+      ],
+      "demand_status": "provisional_threshold_met",
+      "synonyms": [
+        "metformin"
+      ],
+      "proposed_page_type": "drug-indication",
+      "intended_canonical_page": "/questions/dr001",
+      "page_ownership": "FAQ in matching drug-indication guide by default; standalone only when depth justifies",
+      "related_topics": [
+        "DR002",
+        "DR013"
+      ],
+      "scientific_scope": {
+        "unit": "drug + exact indication + population + formulation/route + comparator + outcome",
+        "population": "To be specified from eligible studies; no directness assumed from thread",
+        "intervention": "metformin",
+        "condition": "prevention of Long COVID after acute SARS-CoV-2 infection",
+        "formulation_route": "Extract exact formulation and route; unspecified in question remains unspecified",
+        "comparator": "Relevant standard care/placebo/active comparator; do not assume comparable populations",
+        "outcomes": "Resolve the stated reader question with prespecified clinical endpoints and harms",
+        "directness_pitfall": "Keep prevention, symptom burden, and later diagnosis outcomes separate."
+      },
+      "paper_search_brief": "Search PubMed/MEDLINE, trial registries, publisher sources and lawful repositories through 2026-10-08 for metformin AND prevention of Long COVID after acute SARS-CoV-2 infection. Resolve: Does metformin taken during acute COVID reduce the chance of later Long COVID? Include null, negative, adverse, discontinued and unpublished evidence. Preserve exact population, formulation, route, comparator and endpoints. Keep prevention, symptom burden, and later diagnosis outcomes separate.",
+      "direct_evidence_needs": "Original human evidence matching indication/population/intervention/outcome; dated official sources for regulatory/access questions; preserve multiple reports per study family.",
+      "indirect_evidence_needs": "Keep animal, cell, computational, other-indication and mechanism evidence separately labeled; use reviews only for context/discovery.",
+      "answer_status": "unanswered_acquisition_required",
+      "editorial_urgency": "normal",
+      "unmet_evidence_need": "Not assessed from Reddit; literature worker must establish.",
+      "product_opportunity": "Evidence-reading worksheet/guide; willingness to pay unmeasured",
+      "demand_counts": {
+        "combined": {
+          "independent_thread_clusters": 3,
+          "distinct_subreddits": 2,
+          "subreddits": [
+            "ZeroCovidCommunity",
+            "covidlonghaulers"
+          ],
+          "score": 8,
+          "rank": 6
+        },
+        "recent": {
+          "independent_thread_clusters": 3,
+          "distinct_subreddits": 2,
+          "subreddits": [
+            "ZeroCovidCommunity",
+            "covidlonghaulers"
+          ],
+          "score": 8,
+          "rank": 6
+        },
+        "historical": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        },
+        "unknown_date": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        }
+      }
+    },
+    {
+      "id": "DR002",
+      "question": "Does metformin improve symptoms when Long COVID is already established?",
+      "reader_decision": "Does metformin improve symptoms when Long COVID is already established",
+      "intervention": "metformin",
+      "condition": "established Long COVID",
+      "source_thread_ids": [
+        "RT-1u9j9ji",
+        "RT-1nmdapx",
+        "RT-1jpgmgb",
+        "RT-1cqjzib",
+        "RT-1t3y8hp"
+      ],
+      "source_links": [
+        "https://www.reddit.com/r/ZeroCovidCommunity/comments/1u9j9ji/metformin_for_treating_long_covid/",
+        "https://www.reddit.com/r/LongCovid/comments/1nmdapx",
+        "https://www.reddit.com/r/covidlonghaulers/comments/1jpgmgb/metformin_was_a_game_changer_for_me/",
+        "https://www.reddit.com/r/covidlonghaulers/comments/1cqjzib",
+        "https://www.reddit.com/r/ZeroCovidCommunity/comments/1t3y8hp/metformin/"
+      ],
+      "demand_status": "provisional_threshold_met",
+      "synonyms": [
+        "metformin"
+      ],
+      "proposed_page_type": "drug-indication",
+      "intended_canonical_page": "/questions/dr002",
+      "page_ownership": "FAQ in matching drug-indication guide by default; standalone only when depth justifies",
+      "related_topics": [
+        "DR001",
+        "DR013",
+        "DR014"
+      ],
+      "scientific_scope": {
+        "unit": "drug + exact indication + population + formulation/route + comparator + outcome",
+        "population": "To be specified from eligible studies; no directness assumed from thread",
+        "intervention": "metformin",
+        "condition": "established Long COVID",
+        "formulation_route": "Extract exact formulation and route; unspecified in question remains unspecified",
+        "comparator": "Relevant standard care/placebo/active comparator; do not assume comparable populations",
+        "outcomes": "Resolve the stated reader question with prespecified clinical endpoints and harms",
+        "directness_pitfall": "Do not transfer prevention findings to treatment; stratify metabolic comorbidity and outcomes."
+      },
+      "paper_search_brief": "Search PubMed/MEDLINE, trial registries, publisher sources and lawful repositories through 2026-10-08 for metformin AND established Long COVID. Resolve: Does metformin improve symptoms when Long COVID is already established? Include null, negative, adverse, discontinued and unpublished evidence. Preserve exact population, formulation, route, comparator and endpoints. Do not transfer prevention findings to treatment; stratify metabolic comorbidity and outcomes.",
+      "direct_evidence_needs": "Original human evidence matching indication/population/intervention/outcome; dated official sources for regulatory/access questions; preserve multiple reports per study family.",
+      "indirect_evidence_needs": "Keep animal, cell, computational, other-indication and mechanism evidence separately labeled; use reviews only for context/discovery.",
+      "answer_status": "unanswered_acquisition_required",
+      "editorial_urgency": "normal",
+      "unmet_evidence_need": "Not assessed from Reddit; literature worker must establish.",
+      "product_opportunity": "Evidence-reading worksheet/guide; willingness to pay unmeasured",
+      "demand_counts": {
+        "combined": {
+          "independent_thread_clusters": 5,
+          "distinct_subreddits": 3,
+          "subreddits": [
+            "LongCovid",
+            "ZeroCovidCommunity",
+            "covidlonghaulers"
+          ],
+          "score": 13,
+          "rank": 1
+        },
+        "recent": {
+          "independent_thread_clusters": 4,
+          "distinct_subreddits": 3,
+          "subreddits": [
+            "LongCovid",
+            "ZeroCovidCommunity",
+            "covidlonghaulers"
+          ],
+          "score": 11,
+          "rank": 1
+        },
+        "historical": {
+          "independent_thread_clusters": 1,
+          "distinct_subreddits": 1,
+          "subreddits": [
+            "covidlonghaulers"
+          ],
+          "score": 3
+        },
+        "unknown_date": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        }
+      }
+    },
+    {
+      "id": "DR003",
+      "question": "Do extended courses of nirmatrelvir/ritonavir improve established Long COVID?",
+      "reader_decision": "Do extended courses of nirmatrelvir/ritonavir improve established Long COVID",
+      "intervention": "nirmatrelvir/ritonavir",
+      "condition": "established Long COVID",
+      "source_thread_ids": [
+        "RT-1kuub3c",
+        "RT-1e78anr",
+        "RT-1scpjev",
+        "RT-1jr4j1q"
+      ],
+      "source_links": [
+        "https://www.reddit.com/r/cfs/comments/1kuub3c",
+        "https://www.reddit.com/r/covidlonghaulers/comments/1e78anr",
+        "https://www.reddit.com/r/covidlonghaulers/comments/1scpjev/recover_vital_results/",
+        "https://www.reddit.com/r/cfs/comments/1jr4j1q"
+      ],
+      "demand_status": "provisional_threshold_met",
+      "synonyms": [
+        "nirmatrelvir/ritonavir"
+      ],
+      "proposed_page_type": "drug-indication",
+      "intended_canonical_page": "/questions/dr003",
+      "page_ownership": "FAQ in matching drug-indication guide by default; standalone only when depth justifies",
+      "related_topics": [],
+      "scientific_scope": {
+        "unit": "drug + exact indication + population + formulation/route + comparator + outcome",
+        "population": "To be specified from eligible studies; no directness assumed from thread",
+        "intervention": "nirmatrelvir/ritonavir",
+        "condition": "established Long COVID",
+        "formulation_route": "Extract exact formulation and route; unspecified in question remains unspecified",
+        "comparator": "Relevant standard care/placebo/active comparator; do not assume comparable populations",
+        "outcomes": "Resolve the stated reader question with prespecified clinical endpoints and harms",
+        "directness_pitfall": "Separate acute-infection use from established disease; distinguish 5, 15, 25 and other course lengths."
+      },
+      "paper_search_brief": "Search PubMed/MEDLINE, trial registries, publisher sources and lawful repositories through 2026-10-08 for nirmatrelvir/ritonavir AND established Long COVID. Resolve: Do extended courses of nirmatrelvir/ritonavir improve established Long COVID? Include null, negative, adverse, discontinued and unpublished evidence. Preserve exact population, formulation, route, comparator and endpoints. Separate acute-infection use from established disease; distinguish 5, 15, 25 and other course lengths.",
+      "direct_evidence_needs": "Original human evidence matching indication/population/intervention/outcome; dated official sources for regulatory/access questions; preserve multiple reports per study family.",
+      "indirect_evidence_needs": "Keep animal, cell, computational, other-indication and mechanism evidence separately labeled; use reviews only for context/discovery.",
+      "answer_status": "unanswered_acquisition_required",
+      "editorial_urgency": "normal",
+      "unmet_evidence_need": "Not assessed from Reddit; literature worker must establish.",
+      "product_opportunity": "Evidence-reading worksheet/guide; willingness to pay unmeasured",
+      "demand_counts": {
+        "combined": {
+          "independent_thread_clusters": 3,
+          "distinct_subreddits": 2,
+          "subreddits": [
+            "cfs",
+            "covidlonghaulers"
+          ],
+          "score": 8,
+          "rank": 7
+        },
+        "recent": {
+          "independent_thread_clusters": 2,
+          "distinct_subreddits": 2,
+          "subreddits": [
+            "cfs",
+            "covidlonghaulers"
+          ],
+          "score": 6,
+          "rank": 8
+        },
+        "historical": {
+          "independent_thread_clusters": 1,
+          "distinct_subreddits": 1,
+          "subreddits": [
+            "covidlonghaulers"
+          ],
+          "score": 3
+        },
+        "unknown_date": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        }
+      }
+    },
+    {
+      "id": "DR004",
+      "question": "Does fluvoxamine reduce fatigue in established Long COVID?",
+      "reader_decision": "Does fluvoxamine reduce fatigue in established Long COVID",
+      "intervention": "fluvoxamine",
+      "condition": "Long COVID fatigue",
+      "source_thread_ids": [
+        "RT-1sc8knd",
+        "RT-1wajifi",
+        "RT-1uefc93",
+        "RT-1sa0rux"
+      ],
+      "source_links": [
+        "https://www.reddit.com/r/covidlonghaulers/comments/1sc8knd/has_anyone_tried_fluvoxamine_for_long_covid/",
+        "https://www.reddit.com/r/fluvoxamine/comments/1wajifi/i_was_told_fluvoxamine_was_supposedly_good_for/",
+        "https://www.reddit.com/r/cfs/comments/1uefc93/fluvoxamine_luvox/",
+        "https://www.reddit.com/r/cfs/comments/1sa0rux/study_finds_fluvoxamine_beats_out_metformin_and/"
+      ],
+      "demand_status": "provisional_threshold_met",
+      "synonyms": [
+        "fluvoxamine"
+      ],
+      "proposed_page_type": "drug-indication",
+      "intended_canonical_page": "/questions/dr004",
+      "page_ownership": "FAQ in matching drug-indication guide by default; standalone only when depth justifies",
+      "related_topics": [
+        "DR016",
+        "DR017"
+      ],
+      "scientific_scope": {
+        "unit": "drug + exact indication + population + formulation/route + comparator + outcome",
+        "population": "To be specified from eligible studies; no directness assumed from thread",
+        "intervention": "fluvoxamine",
+        "condition": "Long COVID fatigue",
+        "formulation_route": "Extract exact formulation and route; unspecified in question remains unspecified",
+        "comparator": "Relevant standard care/placebo/active comparator; do not assume comparable populations",
+        "outcomes": "Resolve the stated reader question with prespecified clinical endpoints and harms",
+        "directness_pitfall": "Separate fatigue scores, PEM, cognition and quality of life; avoid class-wide SSRI extrapolation."
+      },
+      "paper_search_brief": "Search PubMed/MEDLINE, trial registries, publisher sources and lawful repositories through 2026-10-08 for fluvoxamine AND Long COVID fatigue. Resolve: Does fluvoxamine reduce fatigue in established Long COVID? Include null, negative, adverse, discontinued and unpublished evidence. Preserve exact population, formulation, route, comparator and endpoints. Separate fatigue scores, PEM, cognition and quality of life; avoid class-wide SSRI extrapolation.",
+      "direct_evidence_needs": "Original human evidence matching indication/population/intervention/outcome; dated official sources for regulatory/access questions; preserve multiple reports per study family.",
+      "indirect_evidence_needs": "Keep animal, cell, computational, other-indication and mechanism evidence separately labeled; use reviews only for context/discovery.",
+      "answer_status": "HOLD: correction/republication reconciliation required; evidence worker identified 2026-10-06 notice for DOI 10.7326/ANNALS-25-03959",
+      "editorial_urgency": "normal",
+      "unmet_evidence_need": "Not assessed from Reddit; literature worker must establish.",
+      "product_opportunity": "Evidence-reading worksheet/guide; willingness to pay unmeasured",
+      "demand_counts": {
+        "combined": {
+          "independent_thread_clusters": 4,
+          "distinct_subreddits": 3,
+          "subreddits": [
+            "cfs",
+            "covidlonghaulers",
+            "fluvoxamine"
+          ],
+          "score": 11,
+          "rank": 2
+        },
+        "recent": {
+          "independent_thread_clusters": 4,
+          "distinct_subreddits": 3,
+          "subreddits": [
+            "cfs",
+            "covidlonghaulers",
+            "fluvoxamine"
+          ],
+          "score": 11,
+          "rank": 2
+        },
+        "historical": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        },
+        "unknown_date": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        }
+      }
+    },
+    {
+      "id": "DR005",
+      "question": "What did fluvoxamine trials in acute COVID actually test, and how do their results differ?",
+      "reader_decision": "What did fluvoxamine trials in acute COVID actually test, and how do their results differ",
+      "intervention": "fluvoxamine",
+      "condition": "acute COVID outpatient clinical deterioration",
+      "source_thread_ids": [
+        "RT-urtv1i",
+        "RT-zrfr3m"
+      ],
+      "source_links": [
+        "https://www.reddit.com/r/Coronavirus/comments/urtv1i",
+        "https://www.reddit.com/r/COVID19/comments/zrfr3m"
+      ],
+      "demand_status": "provisional_sparse_or_context_only",
+      "synonyms": [
+        "fluvoxamine"
+      ],
+      "proposed_page_type": "comparison",
+      "intended_canonical_page": "/questions/dr005",
+      "page_ownership": "FAQ in matching drug-indication guide by default; standalone only when depth justifies",
+      "related_topics": [],
+      "scientific_scope": {
+        "unit": "drug + exact indication + population + formulation/route + comparator + outcome",
+        "population": "To be specified from eligible studies; no directness assumed from thread",
+        "intervention": "fluvoxamine",
+        "condition": "acute COVID outpatient clinical deterioration",
+        "formulation_route": "Extract exact formulation and route; unspecified in question remains unspecified",
+        "comparator": "Relevant standard care/placebo/active comparator; do not assume comparable populations",
+        "outcomes": "Resolve the stated reader question with prespecified clinical endpoints and harms",
+        "directness_pitfall": "Historical discussion seed; acute COVID outcomes do not answer established Long COVID."
+      },
+      "paper_search_brief": "Search PubMed/MEDLINE, trial registries, publisher sources and lawful repositories through 2026-10-08 for fluvoxamine AND acute COVID outpatient clinical deterioration. Resolve: What did fluvoxamine trials in acute COVID actually test, and how do their results differ? Include null, negative, adverse, discontinued and unpublished evidence. Preserve exact population, formulation, route, comparator and endpoints. Historical discussion seed; acute COVID outcomes do not answer established Long COVID.",
+      "direct_evidence_needs": "Original human evidence matching indication/population/intervention/outcome; dated official sources for regulatory/access questions; preserve multiple reports per study family.",
+      "indirect_evidence_needs": "Keep animal, cell, computational, other-indication and mechanism evidence separately labeled; use reviews only for context/discovery.",
+      "answer_status": "unanswered_acquisition_required",
+      "editorial_urgency": "normal",
+      "unmet_evidence_need": "Not assessed from Reddit; literature worker must establish.",
+      "product_opportunity": null,
+      "demand_counts": {
+        "combined": {
+          "independent_thread_clusters": 1,
+          "distinct_subreddits": 1,
+          "subreddits": [
+            "Coronavirus"
+          ],
+          "score": 3,
+          "rank": 18
+        },
+        "recent": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0,
+          "rank": 33
+        },
+        "historical": {
+          "independent_thread_clusters": 1,
+          "distinct_subreddits": 1,
+          "subreddits": [
+            "Coronavirus"
+          ],
+          "score": 3
+        },
+        "unknown_date": {
+          "independent_thread_clusters": 1,
+          "distinct_subreddits": 1,
+          "subreddits": [
+            "COVID19"
+          ],
+          "score": 3
+        }
+      }
+    },
+    {
+      "id": "DR006",
+      "question": "What evidence supports ivermectin plus mebendazole compared with ovarian or fallopian cancer maintenance therapy?",
+      "reader_decision": "What evidence supports ivermectin plus mebendazole compared with ovarian or fallopian cancer maintenance therapy",
+      "intervention": "ivermectin + mebendazole",
+      "condition": "ovarian/fallopian cancer maintenance",
+      "source_thread_ids": [
+        "RT-1gaik1w"
+      ],
+      "source_links": [
+        "https://www.reddit.com/r/ovariancancer_new/comments/1gaik1w/parp_inhibitor_v_repurposed_drug/"
+      ],
+      "demand_status": "provisional_sparse_or_context_only",
+      "synonyms": [
+        "ivermectin",
+        "mebendazole"
+      ],
+      "proposed_page_type": "comparison",
+      "intended_canonical_page": "/questions/dr006",
+      "page_ownership": "FAQ in matching drug-indication guide by default; standalone only when depth justifies",
+      "related_topics": [
+        "DR019"
+      ],
+      "scientific_scope": {
+        "unit": "drug + exact indication + population + formulation/route + comparator + outcome",
+        "population": "To be specified from eligible studies; no directness assumed from thread",
+        "intervention": "ivermectin + mebendazole",
+        "condition": "ovarian/fallopian cancer maintenance",
+        "formulation_route": "Extract exact formulation and route; unspecified in question remains unspecified",
+        "comparator": "Relevant standard care/placebo/active comparator; do not assume comparable populations",
+        "outcomes": "Resolve the stated reader question with prespecified clinical endpoints and harms",
+        "directness_pitfall": "Exact combination and indication; component, cell, or unrelated cancer evidence is indirect."
+      },
+      "paper_search_brief": "Search PubMed/MEDLINE, trial registries, publisher sources and lawful repositories through 2026-10-08 for ivermectin + mebendazole AND ovarian/fallopian cancer maintenance. Resolve: What evidence supports ivermectin plus mebendazole compared with ovarian or fallopian cancer maintenance therapy? Include null, negative, adverse, discontinued and unpublished evidence. Preserve exact population, formulation, route, comparator and endpoints. Exact combination and indication; component, cell, or unrelated cancer evidence is indirect.",
+      "direct_evidence_needs": "Original human evidence matching indication/population/intervention/outcome; dated official sources for regulatory/access questions; preserve multiple reports per study family.",
+      "indirect_evidence_needs": "Keep animal, cell, computational, other-indication and mechanism evidence separately labeled; use reviews only for context/discovery.",
+      "answer_status": "unanswered_acquisition_required",
+      "editorial_urgency": "safety_relevant",
+      "unmet_evidence_need": "Not assessed from Reddit; literature worker must establish.",
+      "product_opportunity": null,
+      "demand_counts": {
+        "combined": {
+          "independent_thread_clusters": 1,
+          "distinct_subreddits": 1,
+          "subreddits": [
+            "ovariancancer_new"
+          ],
+          "score": 3,
+          "rank": 19
+        },
+        "recent": {
+          "independent_thread_clusters": 1,
+          "distinct_subreddits": 1,
+          "subreddits": [
+            "ovariancancer_new"
+          ],
+          "score": 3,
+          "rank": 16
+        },
+        "historical": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        },
+        "unknown_date": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        }
+      }
+    },
+    {
+      "id": "DR007",
+      "question": "What is known about adding repurposed drugs to standard glioblastoma treatment?",
+      "reader_decision": "What is known about adding repurposed drugs to standard glioblastoma treatment",
+      "intervention": "candidate-specific drugs pending acquisition",
+      "condition": "glioblastoma adjunctive treatment",
+      "source_thread_ids": [
+        "RT-1i2ppeu"
+      ],
+      "source_links": [
+        "https://www.reddit.com/r/glioblastoma/comments/1i2ppeu/looking_for_advice_insights_on_incorporating/"
+      ],
+      "demand_status": "provisional_sparse_or_context_only",
+      "synonyms": [
+        "candidate-specific drugs pending acquisition"
+      ],
+      "proposed_page_type": "condition",
+      "intended_canonical_page": "/questions/dr007",
+      "page_ownership": "FAQ in matching drug-indication guide by default; standalone only when depth justifies",
+      "related_topics": [],
+      "scientific_scope": {
+        "unit": "drug + exact indication + population + formulation/route + comparator + outcome",
+        "population": "To be specified from eligible studies; no directness assumed from thread",
+        "intervention": "candidate-specific drugs pending acquisition",
+        "condition": "glioblastoma adjunctive treatment",
+        "formulation_route": "Extract exact formulation and route; unspecified in question remains unspecified",
+        "comparator": "Relevant standard care/placebo/active comparator; do not assume comparable populations",
+        "outcomes": "Resolve the stated reader question with prespecified clinical endpoints and harms",
+        "directness_pitfall": "Record standard care and co-interventions; discover candidates from sources, not memory."
+      },
+      "paper_search_brief": "Search PubMed/MEDLINE, trial registries, publisher sources and lawful repositories through 2026-10-08 for candidate-specific drugs pending acquisition AND glioblastoma adjunctive treatment. Resolve: What is known about adding repurposed drugs to standard glioblastoma treatment? Include null, negative, adverse, discontinued and unpublished evidence. Preserve exact population, formulation, route, comparator and endpoints. Record standard care and co-interventions; discover candidates from sources, not memory.",
+      "direct_evidence_needs": "Original human evidence matching indication/population/intervention/outcome; dated official sources for regulatory/access questions; preserve multiple reports per study family.",
+      "indirect_evidence_needs": "Keep animal, cell, computational, other-indication and mechanism evidence separately labeled; use reviews only for context/discovery.",
+      "answer_status": "unanswered_acquisition_required",
+      "editorial_urgency": "normal",
+      "unmet_evidence_need": "Not assessed from Reddit; literature worker must establish.",
+      "product_opportunity": null,
+      "demand_counts": {
+        "combined": {
+          "independent_thread_clusters": 1,
+          "distinct_subreddits": 1,
+          "subreddits": [
+            "glioblastoma"
+          ],
+          "score": 3,
+          "rank": 20
+        },
+        "recent": {
+          "independent_thread_clusters": 1,
+          "distinct_subreddits": 1,
+          "subreddits": [
+            "glioblastoma"
+          ],
+          "score": 3,
+          "rank": 17
+        },
+        "historical": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        },
+        "unknown_date": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        }
+      }
+    },
+    {
+      "id": "DR008",
+      "question": "What evidence matters when considering repurposed drugs during palliative cancer care?",
+      "reader_decision": "What evidence matters when considering repurposed drugs during palliative cancer care",
+      "intervention": "ivermectin; mebendazole as observed leads",
+      "condition": "advanced cancer with palliative goals",
+      "source_thread_ids": [
+        "RT-1qf8ik7"
+      ],
+      "source_links": [
+        "https://www.reddit.com/r/Cancersurvivors/comments/1qf8ik7/advanced_cancer_palliative_stage_looking_for_real/"
+      ],
+      "demand_status": "provisional_sparse_or_context_only",
+      "synonyms": [
+        "ivermectin",
+        "mebendazole as observed leads"
+      ],
+      "proposed_page_type": "practical-guide",
+      "intended_canonical_page": "/questions/dr008",
+      "page_ownership": "FAQ in matching drug-indication guide by default; standalone only when depth justifies",
+      "related_topics": [],
+      "scientific_scope": {
+        "unit": "drug + exact indication + population + formulation/route + comparator + outcome",
+        "population": "To be specified from eligible studies; no directness assumed from thread",
+        "intervention": "ivermectin; mebendazole as observed leads",
+        "condition": "advanced cancer with palliative goals",
+        "formulation_route": "Extract exact formulation and route; unspecified in question remains unspecified",
+        "comparator": "Relevant standard care/placebo/active comparator; do not assume comparable populations",
+        "outcomes": "Resolve the stated reader question with prespecified clinical endpoints and harms",
+        "directness_pitfall": "Separate comfort, survival and quality-of-life endpoints; cancer types cannot be pooled casually."
+      },
+      "paper_search_brief": "Search PubMed/MEDLINE, trial registries, publisher sources and lawful repositories through 2026-10-08 for ivermectin; mebendazole as observed leads AND advanced cancer with palliative goals. Resolve: What evidence matters when considering repurposed drugs during palliative cancer care? Include null, negative, adverse, discontinued and unpublished evidence. Preserve exact population, formulation, route, comparator and endpoints. Separate comfort, survival and quality-of-life endpoints; cancer types cannot be pooled casually.",
+      "direct_evidence_needs": "Original human evidence matching indication/population/intervention/outcome; dated official sources for regulatory/access questions; preserve multiple reports per study family.",
+      "indirect_evidence_needs": "Keep animal, cell, computational, other-indication and mechanism evidence separately labeled; use reviews only for context/discovery.",
+      "answer_status": "unanswered_acquisition_required",
+      "editorial_urgency": "safety_relevant",
+      "unmet_evidence_need": "Not assessed from Reddit; literature worker must establish.",
+      "product_opportunity": null,
+      "demand_counts": {
+        "combined": {
+          "independent_thread_clusters": 1,
+          "distinct_subreddits": 1,
+          "subreddits": [
+            "Cancersurvivors"
+          ],
+          "score": 3,
+          "rank": 21
+        },
+        "recent": {
+          "independent_thread_clusters": 1,
+          "distinct_subreddits": 1,
+          "subreddits": [
+            "Cancersurvivors"
+          ],
+          "score": 3,
+          "rank": 18
+        },
+        "historical": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        },
+        "unknown_date": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        }
+      }
+    },
+    {
+      "id": "DR009",
+      "question": "What evidence and access rules apply to pemivibart proposed for Long COVID treatment?",
+      "reader_decision": "What evidence and access rules apply to pemivibart proposed for Long COVID treatment",
+      "intervention": "pemivibart",
+      "condition": "established Long COVID",
+      "source_thread_ids": [
+        "RT-1qenh02"
+      ],
+      "source_links": [
+        "https://www.reddit.com/r/LongCovid/comments/1qenh02/how_do_people_get_a_pemgarda_prescription/"
+      ],
+      "demand_status": "provisional_sparse_or_context_only",
+      "synonyms": [
+        "pemivibart"
+      ],
+      "proposed_page_type": "drug-indication",
+      "intended_canonical_page": "/questions/dr009",
+      "page_ownership": "FAQ in matching drug-indication guide by default; standalone only when depth justifies",
+      "related_topics": [
+        "DR012"
+      ],
+      "scientific_scope": {
+        "unit": "drug + exact indication + population + formulation/route + comparator + outcome",
+        "population": "To be specified from eligible studies; no directness assumed from thread",
+        "intervention": "pemivibart",
+        "condition": "established Long COVID",
+        "formulation_route": "Extract exact formulation and route; unspecified in question remains unspecified",
+        "comparator": "Relevant standard care/placebo/active comparator; do not assume comparable populations",
+        "outcomes": "Resolve the stated reader question with prespecified clinical endpoints and harms",
+        "directness_pitfall": "Prevention authorization is a distinct regulatory question; jurisdiction/date-specific official verification required."
+      },
+      "paper_search_brief": "Search PubMed/MEDLINE, trial registries, publisher sources and lawful repositories through 2026-10-08 for pemivibart AND established Long COVID. Resolve: What evidence and access rules apply to pemivibart proposed for Long COVID treatment? Include null, negative, adverse, discontinued and unpublished evidence. Preserve exact population, formulation, route, comparator and endpoints. Prevention authorization is a distinct regulatory question; jurisdiction/date-specific official verification required.",
+      "direct_evidence_needs": "Original human evidence matching indication/population/intervention/outcome; dated official sources for regulatory/access questions; preserve multiple reports per study family.",
+      "indirect_evidence_needs": "Keep animal, cell, computational, other-indication and mechanism evidence separately labeled; use reviews only for context/discovery.",
+      "answer_status": "unanswered_acquisition_required",
+      "editorial_urgency": "normal",
+      "unmet_evidence_need": "Not assessed from Reddit; literature worker must establish.",
+      "product_opportunity": null,
+      "demand_counts": {
+        "combined": {
+          "independent_thread_clusters": 1,
+          "distinct_subreddits": 1,
+          "subreddits": [
+            "LongCovid"
+          ],
+          "score": 3,
+          "rank": 22
+        },
+        "recent": {
+          "independent_thread_clusters": 1,
+          "distinct_subreddits": 1,
+          "subreddits": [
+            "LongCovid"
+          ],
+          "score": 3,
+          "rank": 19
+        },
+        "historical": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        },
+        "unknown_date": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        }
+      }
+    },
+    {
+      "id": "DR010",
+      "question": "What evidence supports guanfacine for Long COVID brain fog, and how is prescribing considered?",
+      "reader_decision": "What evidence supports guanfacine for Long COVID brain fog, and how is prescribing considered",
+      "intervention": "guanfacine",
+      "condition": "Long COVID cognitive symptoms",
+      "source_thread_ids": [
+        "RT-1s8uaex"
+      ],
+      "source_links": [
+        "https://www.reddit.com/r/covidlonghaulers/comments/1s8uaex/looking_for_specialist_in_the_netherlands_to/"
+      ],
+      "demand_status": "provisional_sparse_or_context_only",
+      "synonyms": [
+        "guanfacine"
+      ],
+      "proposed_page_type": "drug-indication",
+      "intended_canonical_page": "/questions/dr010",
+      "page_ownership": "FAQ in matching drug-indication guide by default; standalone only when depth justifies",
+      "related_topics": [],
+      "scientific_scope": {
+        "unit": "drug + exact indication + population + formulation/route + comparator + outcome",
+        "population": "To be specified from eligible studies; no directness assumed from thread",
+        "intervention": "guanfacine",
+        "condition": "Long COVID cognitive symptoms",
+        "formulation_route": "Extract exact formulation and route; unspecified in question remains unspecified",
+        "comparator": "Relevant standard care/placebo/active comparator; do not assume comparable populations",
+        "outcomes": "Resolve the stated reader question with prespecified clinical endpoints and harms",
+        "directness_pitfall": "Do not transfer ADHD outcomes; distinguish combination and monotherapy evidence."
+      },
+      "paper_search_brief": "Search PubMed/MEDLINE, trial registries, publisher sources and lawful repositories through 2026-10-08 for guanfacine AND Long COVID cognitive symptoms. Resolve: What evidence supports guanfacine for Long COVID brain fog, and how is prescribing considered? Include null, negative, adverse, discontinued and unpublished evidence. Preserve exact population, formulation, route, comparator and endpoints. Do not transfer ADHD outcomes; distinguish combination and monotherapy evidence.",
+      "direct_evidence_needs": "Original human evidence matching indication/population/intervention/outcome; dated official sources for regulatory/access questions; preserve multiple reports per study family.",
+      "indirect_evidence_needs": "Keep animal, cell, computational, other-indication and mechanism evidence separately labeled; use reviews only for context/discovery.",
+      "answer_status": "unanswered_acquisition_required",
+      "editorial_urgency": "normal",
+      "unmet_evidence_need": "Not assessed from Reddit; literature worker must establish.",
+      "product_opportunity": null,
+      "demand_counts": {
+        "combined": {
+          "independent_thread_clusters": 1,
+          "distinct_subreddits": 1,
+          "subreddits": [
+            "covidlonghaulers"
+          ],
+          "score": 3,
+          "rank": 23
+        },
+        "recent": {
+          "independent_thread_clusters": 1,
+          "distinct_subreddits": 1,
+          "subreddits": [
+            "covidlonghaulers"
+          ],
+          "score": 3,
+          "rank": 20
+        },
+        "historical": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        },
+        "unknown_date": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        }
+      }
+    },
+    {
+      "id": "DR011",
+      "question": "How can a reader compare repurposed medication options for different Long COVID symptoms?",
+      "reader_decision": "How can a reader compare repurposed medication options for different Long COVID symptoms",
+      "intervention": "multiple candidates to be individually specified",
+      "condition": "Long COVID symptom domains",
+      "source_thread_ids": [
+        "RT-1rltd5g",
+        "RT-1ft2tvo",
+        "RT-1uf5a0r"
+      ],
+      "source_links": [
+        "https://www.reddit.com/r/covidlonghaulers/comments/1rltd5g/musttry_offlabel_prescription_treatments/",
+        "https://www.reddit.com/r/LongCovid/comments/1ft2tvo",
+        "https://www.reddit.com/r/covidlonghaulers/comments/1uf5a0r/brainfog_and_off_label_use_of_adhd_meds/"
+      ],
+      "demand_status": "provisional_sparse_or_context_only",
+      "synonyms": [
+        "multiple candidates to be individually specified"
+      ],
+      "proposed_page_type": "condition",
+      "intended_canonical_page": "/questions/dr011",
+      "page_ownership": "FAQ in matching drug-indication guide by default; standalone only when depth justifies",
+      "related_topics": [],
+      "scientific_scope": {
+        "unit": "drug + exact indication + population + formulation/route + comparator + outcome",
+        "population": "To be specified from eligible studies; no directness assumed from thread",
+        "intervention": "multiple candidates to be individually specified",
+        "condition": "Long COVID symptom domains",
+        "formulation_route": "Extract exact formulation and route; unspecified in question remains unspecified",
+        "comparator": "Relevant standard care/placebo/active comparator; do not assume comparable populations",
+        "outcomes": "Resolve the stated reader question with prespecified clinical endpoints and harms",
+        "directness_pitfall": "Do not present one protocol for heterogeneous symptoms or collapse ME/CFS and Long COVID."
+      },
+      "paper_search_brief": "Search PubMed/MEDLINE, trial registries, publisher sources and lawful repositories through 2026-10-08 for multiple candidates to be individually specified AND Long COVID symptom domains. Resolve: How can a reader compare repurposed medication options for different Long COVID symptoms? Include null, negative, adverse, discontinued and unpublished evidence. Preserve exact population, formulation, route, comparator and endpoints. Do not present one protocol for heterogeneous symptoms or collapse ME/CFS and Long COVID.",
+      "direct_evidence_needs": "Original human evidence matching indication/population/intervention/outcome; dated official sources for regulatory/access questions; preserve multiple reports per study family.",
+      "indirect_evidence_needs": "Keep animal, cell, computational, other-indication and mechanism evidence separately labeled; use reviews only for context/discovery.",
+      "answer_status": "unanswered_acquisition_required",
+      "editorial_urgency": "normal",
+      "unmet_evidence_need": "Not assessed from Reddit; literature worker must establish.",
+      "product_opportunity": null,
+      "demand_counts": {
+        "combined": {
+          "independent_thread_clusters": 2,
+          "distinct_subreddits": 1,
+          "subreddits": [
+            "covidlonghaulers"
+          ],
+          "score": 5,
+          "rank": 15
+        },
+        "recent": {
+          "independent_thread_clusters": 2,
+          "distinct_subreddits": 1,
+          "subreddits": [
+            "covidlonghaulers"
+          ],
+          "score": 5,
+          "rank": 12
+        },
+        "historical": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        },
+        "unknown_date": {
+          "independent_thread_clusters": 1,
+          "distinct_subreddits": 1,
+          "subreddits": [
+            "LongCovid"
+          ],
+          "score": 3
+        }
+      }
+    },
+    {
+      "id": "DR012",
+      "question": "What can prevent access to off-label prescribing or insurance coverage?",
+      "reader_decision": "What can prevent access to off-label prescribing or insurance coverage",
+      "intervention": "maraviroc; atorvastatin; rituximab; low-dose naltrexone; pemivibart",
+      "condition": "off-label access",
+      "source_thread_ids": [
+        "RT-1jufvro",
+        "RT-1uwabcq",
+        "RT-1qenh02"
+      ],
+      "source_links": [
+        "https://www.reddit.com/r/covidlonghaulers/comments/1jufvro/how_did_you_get_prescriptions_for_maraviroc/",
+        "https://www.reddit.com/r/cfs/comments/1uwabcq/has_anyone_been_prescribed_offlabel_meds_by_their/",
+        "https://www.reddit.com/r/LongCovid/comments/1qenh02/how_do_people_get_a_pemgarda_prescription/"
+      ],
+      "demand_status": "provisional_threshold_met",
+      "synonyms": [
+        "maraviroc",
+        "atorvastatin",
+        "rituximab",
+        "low-dose naltrexone",
+        "pemivibart"
+      ],
+      "proposed_page_type": "practical-guide",
+      "intended_canonical_page": "/questions/dr012",
+      "page_ownership": "FAQ in matching drug-indication guide by default; standalone only when depth justifies",
+      "related_topics": [
+        "DR009"
+      ],
+      "scientific_scope": {
+        "unit": "drug + exact indication + population + formulation/route + comparator + outcome",
+        "population": "To be specified from eligible studies; no directness assumed from thread",
+        "intervention": "maraviroc; atorvastatin; rituximab; low-dose naltrexone; pemivibart",
+        "condition": "off-label access",
+        "formulation_route": "Extract exact formulation and route; unspecified in question remains unspecified",
+        "comparator": "Relevant standard care/placebo/active comparator; do not assume comparable populations",
+        "outcomes": "Resolve the stated reader question with prespecified clinical endpoints and harms",
+        "directness_pitfall": "Use dated local official sources; avoid provider-shopping instructions or treating forum legal claims as fact."
+      },
+      "paper_search_brief": "Search PubMed/MEDLINE, trial registries, publisher sources and lawful repositories through 2026-10-08 for maraviroc; atorvastatin; rituximab; low-dose naltrexone; pemivibart AND off-label access. Resolve: What can prevent access to off-label prescribing or insurance coverage? Include null, negative, adverse, discontinued and unpublished evidence. Preserve exact population, formulation, route, comparator and endpoints. Use dated local official sources; avoid provider-shopping instructions or treating forum legal claims as fact.",
+      "direct_evidence_needs": "Original human evidence matching indication/population/intervention/outcome; dated official sources for regulatory/access questions; preserve multiple reports per study family.",
+      "indirect_evidence_needs": "Keep animal, cell, computational, other-indication and mechanism evidence separately labeled; use reviews only for context/discovery.",
+      "answer_status": "unanswered_acquisition_required",
+      "editorial_urgency": "normal",
+      "unmet_evidence_need": "Not assessed from Reddit; literature worker must establish.",
+      "product_opportunity": null,
+      "demand_counts": {
+        "combined": {
+          "independent_thread_clusters": 2,
+          "distinct_subreddits": 2,
+          "subreddits": [
+            "LongCovid",
+            "cfs"
+          ],
+          "score": 6,
+          "rank": 9
+        },
+        "recent": {
+          "independent_thread_clusters": 2,
+          "distinct_subreddits": 2,
+          "subreddits": [
+            "LongCovid",
+            "cfs"
+          ],
+          "score": 6,
+          "rank": 9
+        },
+        "historical": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        },
+        "unknown_date": {
+          "independent_thread_clusters": 1,
+          "distinct_subreddits": 1,
+          "subreddits": [
+            "covidlonghaulers"
+          ],
+          "score": 3
+        }
+      }
+    },
+    {
+      "id": "DR013",
+      "question": "What side effects and monitoring questions matter for metformin in Long COVID research?",
+      "reader_decision": "What side effects and monitoring questions matter for metformin in Long COVID research",
+      "intervention": "metformin",
+      "condition": "Long COVID safety/tolerability",
+      "source_thread_ids": [
+        "RT-1ruff33",
+        "RT-1meaz1b",
+        "RT-1u9j9ji"
+      ],
+      "source_links": [
+        "https://www.reddit.com/r/LongCovid/comments/1ruff33/metformin_side_effects_help/",
+        "https://www.reddit.com/r/covidlonghaulers/comments/1meaz1b/has_metformin_almost_unalived_anyone_with_lc/",
+        "https://www.reddit.com/r/ZeroCovidCommunity/comments/1u9j9ji/metformin_for_treating_long_covid/"
+      ],
+      "demand_status": "provisional_threshold_met",
+      "synonyms": [
+        "metformin"
+      ],
+      "proposed_page_type": "question",
+      "intended_canonical_page": "/questions/dr013",
+      "page_ownership": "FAQ in matching drug-indication guide by default; standalone only when depth justifies",
+      "related_topics": [
+        "DR001",
+        "DR002"
+      ],
+      "scientific_scope": {
+        "unit": "drug + exact indication + population + formulation/route + comparator + outcome",
+        "population": "To be specified from eligible studies; no directness assumed from thread",
+        "intervention": "metformin",
+        "condition": "Long COVID safety/tolerability",
+        "formulation_route": "Extract exact formulation and route; unspecified in question remains unspecified",
+        "comparator": "Relevant standard care/placebo/active comparator; do not assume comparable populations",
+        "outcomes": "Resolve the stated reader question with prespecified clinical endpoints and harms",
+        "directness_pitfall": "Separate reported personal events from causality; check glucose-related and gastrointestinal outcomes."
+      },
+      "paper_search_brief": "Search PubMed/MEDLINE, trial registries, publisher sources and lawful repositories through 2026-10-08 for metformin AND Long COVID safety/tolerability. Resolve: What side effects and monitoring questions matter for metformin in Long COVID research? Include null, negative, adverse, discontinued and unpublished evidence. Preserve exact population, formulation, route, comparator and endpoints. Separate reported personal events from causality; check glucose-related and gastrointestinal outcomes.",
+      "direct_evidence_needs": "Original human evidence matching indication/population/intervention/outcome; dated official sources for regulatory/access questions; preserve multiple reports per study family.",
+      "indirect_evidence_needs": "Keep animal, cell, computational, other-indication and mechanism evidence separately labeled; use reviews only for context/discovery.",
+      "answer_status": "unanswered_acquisition_required",
+      "editorial_urgency": "safety_relevant",
+      "unmet_evidence_need": "Not assessed from Reddit; literature worker must establish.",
+      "product_opportunity": null,
+      "demand_counts": {
+        "combined": {
+          "independent_thread_clusters": 3,
+          "distinct_subreddits": 3,
+          "subreddits": [
+            "LongCovid",
+            "ZeroCovidCommunity",
+            "covidlonghaulers"
+          ],
+          "score": 9,
+          "rank": 5
+        },
+        "recent": {
+          "independent_thread_clusters": 3,
+          "distinct_subreddits": 3,
+          "subreddits": [
+            "LongCovid",
+            "ZeroCovidCommunity",
+            "covidlonghaulers"
+          ],
+          "score": 9,
+          "rank": 4
+        },
+        "historical": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        },
+        "unknown_date": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        }
+      }
+    },
+    {
+      "id": "DR014",
+      "question": "Do immediate-release and extended-release metformin findings apply to the same use?",
+      "reader_decision": "Do immediate-release and extended-release metformin findings apply to the same use",
+      "intervention": "metformin",
+      "condition": "formulation comparability in Long COVID",
+      "source_thread_ids": [
+        "RT-1nmdapx"
+      ],
+      "source_links": [
+        "https://www.reddit.com/r/LongCovid/comments/1nmdapx"
+      ],
+      "demand_status": "provisional_sparse_or_context_only",
+      "synonyms": [
+        "metformin"
+      ],
+      "proposed_page_type": "question",
+      "intended_canonical_page": "/questions/dr014",
+      "page_ownership": "FAQ in matching drug-indication guide by default; standalone only when depth justifies",
+      "related_topics": [
+        "DR002"
+      ],
+      "scientific_scope": {
+        "unit": "drug + exact indication + population + formulation/route + comparator + outcome",
+        "population": "To be specified from eligible studies; no directness assumed from thread",
+        "intervention": "metformin",
+        "condition": "formulation comparability in Long COVID",
+        "formulation_route": "Extract exact formulation and route; unspecified in question remains unspecified",
+        "comparator": "Relevant standard care/placebo/active comparator; do not assume comparable populations",
+        "outcomes": "Resolve the stated reader question with prespecified clinical endpoints and harms",
+        "directness_pitfall": "Keep studied formulation/route explicit; do not infer equivalence from molecule name alone."
+      },
+      "paper_search_brief": "Search PubMed/MEDLINE, trial registries, publisher sources and lawful repositories through 2026-10-08 for metformin AND formulation comparability in Long COVID. Resolve: Do immediate-release and extended-release metformin findings apply to the same use? Include null, negative, adverse, discontinued and unpublished evidence. Preserve exact population, formulation, route, comparator and endpoints. Keep studied formulation/route explicit; do not infer equivalence from molecule name alone.",
+      "direct_evidence_needs": "Original human evidence matching indication/population/intervention/outcome; dated official sources for regulatory/access questions; preserve multiple reports per study family.",
+      "indirect_evidence_needs": "Keep animal, cell, computational, other-indication and mechanism evidence separately labeled; use reviews only for context/discovery.",
+      "answer_status": "unanswered_acquisition_required",
+      "editorial_urgency": "normal",
+      "unmet_evidence_need": "Not assessed from Reddit; literature worker must establish.",
+      "product_opportunity": null,
+      "demand_counts": {
+        "combined": {
+          "independent_thread_clusters": 1,
+          "distinct_subreddits": 1,
+          "subreddits": [
+            "LongCovid"
+          ],
+          "score": 3,
+          "rank": 24
+        },
+        "recent": {
+          "independent_thread_clusters": 1,
+          "distinct_subreddits": 1,
+          "subreddits": [
+            "LongCovid"
+          ],
+          "score": 3,
+          "rank": 21
+        },
+        "historical": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        },
+        "unknown_date": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        }
+      }
+    },
+    {
+      "id": "DR015",
+      "question": "What is known about symptom changes after stopping metformin used by people with Long COVID?",
+      "reader_decision": "What is known about symptom changes after stopping metformin used by people with Long COVID",
+      "intervention": "metformin",
+      "condition": "durability and discontinuation in Long COVID",
+      "source_thread_ids": [
+        "RT-1mbybr9",
+        "RT-1mb73az"
+      ],
+      "source_links": [
+        "https://www.reddit.com/r/LongCovid/comments/1mbybr9",
+        "https://www.reddit.com/r/covidlonghaulers/comments/1mb73az"
+      ],
+      "demand_status": "provisional_sparse_or_context_only",
+      "synonyms": [
+        "metformin"
+      ],
+      "proposed_page_type": "question",
+      "intended_canonical_page": "/questions/dr015",
+      "page_ownership": "FAQ in matching drug-indication guide by default; standalone only when depth justifies",
+      "related_topics": [],
+      "scientific_scope": {
+        "unit": "drug + exact indication + population + formulation/route + comparator + outcome",
+        "population": "To be specified from eligible studies; no directness assumed from thread",
+        "intervention": "metformin",
+        "condition": "durability and discontinuation in Long COVID",
+        "formulation_route": "Extract exact formulation and route; unspecified in question remains unspecified",
+        "comparator": "Relevant standard care/placebo/active comparator; do not assume comparable populations",
+        "outcomes": "Resolve the stated reader question with prespecified clinical endpoints and harms",
+        "directness_pitfall": "Two near-identical crossposts count as one independent question cluster."
+      },
+      "paper_search_brief": "Search PubMed/MEDLINE, trial registries, publisher sources and lawful repositories through 2026-10-08 for metformin AND durability and discontinuation in Long COVID. Resolve: What is known about symptom changes after stopping metformin used by people with Long COVID? Include null, negative, adverse, discontinued and unpublished evidence. Preserve exact population, formulation, route, comparator and endpoints. Two near-identical crossposts count as one independent question cluster.",
+      "direct_evidence_needs": "Original human evidence matching indication/population/intervention/outcome; dated official sources for regulatory/access questions; preserve multiple reports per study family.",
+      "indirect_evidence_needs": "Keep animal, cell, computational, other-indication and mechanism evidence separately labeled; use reviews only for context/discovery.",
+      "answer_status": "unanswered_acquisition_required",
+      "editorial_urgency": "normal",
+      "unmet_evidence_need": "Not assessed from Reddit; literature worker must establish.",
+      "product_opportunity": null,
+      "demand_counts": {
+        "combined": {
+          "independent_thread_clusters": 1,
+          "distinct_subreddits": 2,
+          "subreddits": [
+            "LongCovid",
+            "covidlonghaulers"
+          ],
+          "score": 4,
+          "rank": 17
+        },
+        "recent": {
+          "independent_thread_clusters": 1,
+          "distinct_subreddits": 2,
+          "subreddits": [
+            "LongCovid",
+            "covidlonghaulers"
+          ],
+          "score": 4,
+          "rank": 14
+        },
+        "historical": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        },
+        "unknown_date": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        }
+      }
+    },
+    {
+      "id": "DR016",
+      "question": "How do fluvoxamine interactions and tolerability compare with other SSRIs in Long COVID research?",
+      "reader_decision": "How do fluvoxamine interactions and tolerability compare with other SSRIs in Long COVID research",
+      "intervention": "fluvoxamine; other SSRIs",
+      "condition": "Long COVID interactions/tolerability",
+      "source_thread_ids": [
+        "RT-1dii4v6",
+        "RT-1rq5pgt",
+        "RT-1wajifi"
+      ],
+      "source_links": [
+        "https://www.reddit.com/r/covidlonghaulers/comments/1dii4v6/fluvoxamine_sigma_1_agonism/",
+        "https://www.reddit.com/r/covidlonghaulers/comments/1rq5pgt/if_not_prozac_fluoxetine_which_ssri_for_lc/",
+        "https://www.reddit.com/r/fluvoxamine/comments/1wajifi/i_was_told_fluvoxamine_was_supposedly_good_for/"
+      ],
+      "demand_status": "provisional_threshold_met",
+      "synonyms": [
+        "fluvoxamine",
+        "other SSRIs"
+      ],
+      "proposed_page_type": "comparison",
+      "intended_canonical_page": "/questions/dr016",
+      "page_ownership": "FAQ in matching drug-indication guide by default; standalone only when depth justifies",
+      "related_topics": [
+        "DR004"
+      ],
+      "scientific_scope": {
+        "unit": "drug + exact indication + population + formulation/route + comparator + outcome",
+        "population": "To be specified from eligible studies; no directness assumed from thread",
+        "intervention": "fluvoxamine; other SSRIs",
+        "condition": "Long COVID interactions/tolerability",
+        "formulation_route": "Extract exact formulation and route; unspecified in question remains unspecified",
+        "comparator": "Relevant standard care/placebo/active comparator; do not assume comparable populations",
+        "outcomes": "Resolve the stated reader question with prespecified clinical endpoints and harms",
+        "directness_pitfall": "Exact co-medication safety needs authoritative labels; no class-wide efficacy claim."
+      },
+      "paper_search_brief": "Search PubMed/MEDLINE, trial registries, publisher sources and lawful repositories through 2026-10-08 for fluvoxamine; other SSRIs AND Long COVID interactions/tolerability. Resolve: How do fluvoxamine interactions and tolerability compare with other SSRIs in Long COVID research? Include null, negative, adverse, discontinued and unpublished evidence. Preserve exact population, formulation, route, comparator and endpoints. Exact co-medication safety needs authoritative labels; no class-wide efficacy claim.",
+      "direct_evidence_needs": "Original human evidence matching indication/population/intervention/outcome; dated official sources for regulatory/access questions; preserve multiple reports per study family.",
+      "indirect_evidence_needs": "Keep animal, cell, computational, other-indication and mechanism evidence separately labeled; use reviews only for context/discovery.",
+      "answer_status": "unanswered_acquisition_required",
+      "editorial_urgency": "safety_relevant",
+      "unmet_evidence_need": "Not assessed from Reddit; literature worker must establish.",
+      "product_opportunity": null,
+      "demand_counts": {
+        "combined": {
+          "independent_thread_clusters": 2,
+          "distinct_subreddits": 2,
+          "subreddits": [
+            "covidlonghaulers",
+            "fluvoxamine"
+          ],
+          "score": 6,
+          "rank": 10
+        },
+        "recent": {
+          "independent_thread_clusters": 1,
+          "distinct_subreddits": 1,
+          "subreddits": [
+            "fluvoxamine"
+          ],
+          "score": 3,
+          "rank": 22
+        },
+        "historical": {
+          "independent_thread_clusters": 1,
+          "distinct_subreddits": 1,
+          "subreddits": [
+            "covidlonghaulers"
+          ],
+          "score": 3
+        },
+        "unknown_date": {
+          "independent_thread_clusters": 1,
+          "distinct_subreddits": 1,
+          "subreddits": [
+            "covidlonghaulers"
+          ],
+          "score": 3
+        }
+      }
+    },
+    {
+      "id": "DR017",
+      "question": "Do fluvoxamine findings for fatigue also address brain fog or dysautonomia?",
+      "reader_decision": "Do fluvoxamine findings for fatigue also address brain fog or dysautonomia",
+      "intervention": "fluvoxamine",
+      "condition": "Long COVID cognition and autonomic symptoms",
+      "source_thread_ids": [
+        "RT-1jmm021",
+        "RT-1sc8knd",
+        "RT-1s8s3fs"
+      ],
+      "source_links": [
+        "https://www.reddit.com/r/covidlonghaulers/comments/1jmm021",
+        "https://www.reddit.com/r/covidlonghaulers/comments/1sc8knd/has_anyone_tried_fluvoxamine_for_long_covid/",
+        "https://www.reddit.com/r/covidlonghaulers/comments/1s8s3fs/antidepressant_fluvoxamine_reduces_long_covid/"
+      ],
+      "demand_status": "provisional_sparse_or_context_only",
+      "synonyms": [
+        "fluvoxamine"
+      ],
+      "proposed_page_type": "question",
+      "intended_canonical_page": "/questions/dr017",
+      "page_ownership": "FAQ in matching drug-indication guide by default; standalone only when depth justifies",
+      "related_topics": [
+        "DR004"
+      ],
+      "scientific_scope": {
+        "unit": "drug + exact indication + population + formulation/route + comparator + outcome",
+        "population": "To be specified from eligible studies; no directness assumed from thread",
+        "intervention": "fluvoxamine",
+        "condition": "Long COVID cognition and autonomic symptoms",
+        "formulation_route": "Extract exact formulation and route; unspecified in question remains unspecified",
+        "comparator": "Relevant standard care/placebo/active comparator; do not assume comparable populations",
+        "outcomes": "Resolve the stated reader question with prespecified clinical endpoints and harms",
+        "directness_pitfall": "Outcome-specific synthesis; a fatigue result cannot establish cognitive or autonomic benefit."
+      },
+      "paper_search_brief": "Search PubMed/MEDLINE, trial registries, publisher sources and lawful repositories through 2026-10-08 for fluvoxamine AND Long COVID cognition and autonomic symptoms. Resolve: Do fluvoxamine findings for fatigue also address brain fog or dysautonomia? Include null, negative, adverse, discontinued and unpublished evidence. Preserve exact population, formulation, route, comparator and endpoints. Outcome-specific synthesis; a fatigue result cannot establish cognitive or autonomic benefit.",
+      "direct_evidence_needs": "Original human evidence matching indication/population/intervention/outcome; dated official sources for regulatory/access questions; preserve multiple reports per study family.",
+      "indirect_evidence_needs": "Keep animal, cell, computational, other-indication and mechanism evidence separately labeled; use reviews only for context/discovery.",
+      "answer_status": "unanswered_acquisition_required",
+      "editorial_urgency": "normal",
+      "unmet_evidence_need": "Not assessed from Reddit; literature worker must establish.",
+      "product_opportunity": null,
+      "demand_counts": {
+        "combined": {
+          "independent_thread_clusters": 2,
+          "distinct_subreddits": 1,
+          "subreddits": [
+            "covidlonghaulers"
+          ],
+          "score": 5,
+          "rank": 16
+        },
+        "recent": {
+          "independent_thread_clusters": 2,
+          "distinct_subreddits": 1,
+          "subreddits": [
+            "covidlonghaulers"
+          ],
+          "score": 5,
+          "rank": 13
+        },
+        "historical": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        },
+        "unknown_date": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        }
+      }
+    },
+    {
+      "id": "DR018",
+      "question": "Is there direct evidence for antiviral combinations proposed for Long COVID?",
+      "reader_decision": "Is there direct evidence for antiviral combinations proposed for Long COVID",
+      "intervention": "nirmatrelvir/ritonavir + pemivibart; valacyclovir + celecoxib with or without nirmatrelvir/ritonavir",
+      "condition": "Long COVID combination therapy",
+      "source_thread_ids": [
+        "RT-1nsboou",
+        "RT-1i0goxn"
+      ],
+      "source_links": [
+        "https://www.reddit.com/r/LongCovid/comments/1nsboou",
+        "https://www.reddit.com/r/LongCovidTrials/comments/1i0goxn"
+      ],
+      "demand_status": "provisional_sparse_or_context_only",
+      "synonyms": [
+        "nirmatrelvir/ritonavir",
+        "pemivibart",
+        "valacyclovir",
+        "celecoxib with or without nirmatrelvir/ritonavir"
+      ],
+      "proposed_page_type": "combination",
+      "intended_canonical_page": "/questions/dr018",
+      "page_ownership": "FAQ in matching drug-indication guide by default; standalone only when depth justifies",
+      "related_topics": [],
+      "scientific_scope": {
+        "unit": "drug + exact indication + population + formulation/route + comparator + outcome",
+        "population": "To be specified from eligible studies; no directness assumed from thread",
+        "intervention": "nirmatrelvir/ritonavir + pemivibart; valacyclovir + celecoxib with or without nirmatrelvir/ritonavir",
+        "condition": "Long COVID combination therapy",
+        "formulation_route": "Extract exact formulation and route; unspecified in question remains unspecified",
+        "comparator": "Relevant standard care/placebo/active comparator; do not assume comparable populations",
+        "outcomes": "Resolve the stated reader question with prespecified clinical endpoints and harms",
+        "directness_pitfall": "Keep exact combinations separate; promotional recruitment thread excluded from organic score."
+      },
+      "paper_search_brief": "Search PubMed/MEDLINE, trial registries, publisher sources and lawful repositories through 2026-10-08 for nirmatrelvir/ritonavir + pemivibart; valacyclovir + celecoxib with or without nirmatrelvir/ritonavir AND Long COVID combination therapy. Resolve: Is there direct evidence for antiviral combinations proposed for Long COVID? Include null, negative, adverse, discontinued and unpublished evidence. Preserve exact population, formulation, route, comparator and endpoints. Keep exact combinations separate; promotional recruitment thread excluded from organic score.",
+      "direct_evidence_needs": "Original human evidence matching indication/population/intervention/outcome; dated official sources for regulatory/access questions; preserve multiple reports per study family.",
+      "indirect_evidence_needs": "Keep animal, cell, computational, other-indication and mechanism evidence separately labeled; use reviews only for context/discovery.",
+      "answer_status": "unanswered_acquisition_required",
+      "editorial_urgency": "normal",
+      "unmet_evidence_need": "Not assessed from Reddit; literature worker must establish.",
+      "product_opportunity": null,
+      "demand_counts": {
+        "combined": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0,
+          "rank": 34
+        },
+        "recent": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0,
+          "rank": 34
+        },
+        "historical": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        },
+        "unknown_date": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        }
+      }
+    },
+    {
+      "id": "DR019",
+      "question": "How can readers distinguish a cancer repurposing headline from evidence in human patients?",
+      "reader_decision": "How can readers distinguish a cancer repurposing headline from evidence in human patients",
+      "intervention": "candidate-specific cancer agents",
+      "condition": "translation from preclinical to clinical cancer evidence",
+      "source_thread_ids": [
+        "RT-1iwa1h0",
+        "RT-1gaik1w"
+      ],
+      "source_links": [
+        "https://www.reddit.com/r/biotech/comments/1iwa1h0",
+        "https://www.reddit.com/r/ovariancancer_new/comments/1gaik1w/parp_inhibitor_v_repurposed_drug/"
+      ],
+      "demand_status": "provisional_sparse_or_context_only",
+      "synonyms": [
+        "candidate-specific cancer agents"
+      ],
+      "proposed_page_type": "practical-guide",
+      "intended_canonical_page": "/questions/dr019",
+      "page_ownership": "FAQ in matching drug-indication guide by default; standalone only when depth justifies",
+      "related_topics": [
+        "DR006"
+      ],
+      "scientific_scope": {
+        "unit": "drug + exact indication + population + formulation/route + comparator + outcome",
+        "population": "To be specified from eligible studies; no directness assumed from thread",
+        "intervention": "candidate-specific cancer agents",
+        "condition": "translation from preclinical to clinical cancer evidence",
+        "formulation_route": "Extract exact formulation and route; unspecified in question remains unspecified",
+        "comparator": "Relevant standard care/placebo/active comparator; do not assume comparable populations",
+        "outcomes": "Resolve the stated reader question with prespecified clinical endpoints and harms",
+        "directness_pitfall": "Commercial/self-promotion uncertainty and model/population directness must remain visible."
+      },
+      "paper_search_brief": "Search PubMed/MEDLINE, trial registries, publisher sources and lawful repositories through 2026-10-08 for candidate-specific cancer agents AND translation from preclinical to clinical cancer evidence. Resolve: How can readers distinguish a cancer repurposing headline from evidence in human patients? Include null, negative, adverse, discontinued and unpublished evidence. Preserve exact population, formulation, route, comparator and endpoints. Commercial/self-promotion uncertainty and model/population directness must remain visible.",
+      "direct_evidence_needs": "Original human evidence matching indication/population/intervention/outcome; dated official sources for regulatory/access questions; preserve multiple reports per study family.",
+      "indirect_evidence_needs": "Keep animal, cell, computational, other-indication and mechanism evidence separately labeled; use reviews only for context/discovery.",
+      "answer_status": "unanswered_acquisition_required",
+      "editorial_urgency": "normal",
+      "unmet_evidence_need": "Not assessed from Reddit; literature worker must establish.",
+      "product_opportunity": "Evidence-reading worksheet/guide; willingness to pay unmeasured",
+      "demand_counts": {
+        "combined": {
+          "independent_thread_clusters": 1,
+          "distinct_subreddits": 1,
+          "subreddits": [
+            "ovariancancer_new"
+          ],
+          "score": 3,
+          "rank": 25
+        },
+        "recent": {
+          "independent_thread_clusters": 1,
+          "distinct_subreddits": 1,
+          "subreddits": [
+            "ovariancancer_new"
+          ],
+          "score": 3,
+          "rank": 23
+        },
+        "historical": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        },
+        "unknown_date": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        }
+      }
+    },
+    {
+      "id": "DR020",
+      "question": "What can computational repurposing predictions tell us before clinical testing?",
+      "reader_decision": "What can computational repurposing predictions tell us before clinical testing",
+      "intervention": "model-generated candidate drugs",
+      "condition": "computational drug repurposing",
+      "source_thread_ids": [
+        "RT-1s4oyqm",
+        "RT-1s4n1t1",
+        "RT-18l1ptq"
+      ],
+      "source_links": [
+        "https://www.reddit.com/r/Gastroenterology/comments/1s4oyqm/cmaplincs_drug_repurposing_for_gerdbarrettseac/",
+        "https://www.reddit.com/r/bioinformatics/comments/1s4n1t1/cmaplincs_drug_repurposing_for_gerdbarrettseac/",
+        "https://www.reddit.com/r/bioinformatics/comments/18l1ptq"
+      ],
+      "demand_status": "provisional_threshold_met",
+      "synonyms": [
+        "model-generated candidate drugs"
+      ],
+      "proposed_page_type": "practical-guide",
+      "intended_canonical_page": "/questions/dr020",
+      "page_ownership": "FAQ in matching drug-indication guide by default; standalone only when depth justifies",
+      "related_topics": [],
+      "scientific_scope": {
+        "unit": "drug + exact indication + population + formulation/route + comparator + outcome",
+        "population": "To be specified from eligible studies; no directness assumed from thread",
+        "intervention": "model-generated candidate drugs",
+        "condition": "computational drug repurposing",
+        "formulation_route": "Extract exact formulation and route; unspecified in question remains unspecified",
+        "comparator": "Relevant standard care/placebo/active comparator; do not assume comparable populations",
+        "outcomes": "Resolve the stated reader question with prespecified clinical endpoints and harms",
+        "directness_pitfall": "Two matching CMap questions form one crosspost cluster; prediction rank is not efficacy."
+      },
+      "paper_search_brief": "Search PubMed/MEDLINE, trial registries, publisher sources and lawful repositories through 2026-10-08 for model-generated candidate drugs AND computational drug repurposing. Resolve: What can computational repurposing predictions tell us before clinical testing? Include null, negative, adverse, discontinued and unpublished evidence. Preserve exact population, formulation, route, comparator and endpoints. Two matching CMap questions form one crosspost cluster; prediction rank is not efficacy.",
+      "direct_evidence_needs": "Original human evidence matching indication/population/intervention/outcome; dated official sources for regulatory/access questions; preserve multiple reports per study family.",
+      "indirect_evidence_needs": "Keep animal, cell, computational, other-indication and mechanism evidence separately labeled; use reviews only for context/discovery.",
+      "answer_status": "unanswered_acquisition_required",
+      "editorial_urgency": "normal",
+      "unmet_evidence_need": "Not assessed from Reddit; literature worker must establish.",
+      "product_opportunity": "Evidence-reading worksheet/guide; willingness to pay unmeasured",
+      "demand_counts": {
+        "combined": {
+          "independent_thread_clusters": 2,
+          "distinct_subreddits": 2,
+          "subreddits": [
+            "Gastroenterology",
+            "bioinformatics"
+          ],
+          "score": 6,
+          "rank": 11
+        },
+        "recent": {
+          "independent_thread_clusters": 1,
+          "distinct_subreddits": 2,
+          "subreddits": [
+            "Gastroenterology",
+            "bioinformatics"
+          ],
+          "score": 4,
+          "rank": 15
+        },
+        "historical": {
+          "independent_thread_clusters": 1,
+          "distinct_subreddits": 1,
+          "subreddits": [
+            "bioinformatics"
+          ],
+          "score": 3
+        },
+        "unknown_date": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        }
+      }
+    },
+    {
+      "id": "DR021",
+      "question": "What makes a disease or patient group suitable for a drug-repurposing study?",
+      "reader_decision": "What makes a disease or patient group suitable for a drug-repurposing study",
+      "intervention": "not yet specified",
+      "condition": "rare disease and population applicability",
+      "source_thread_ids": [
+        "RT-1nto6nb"
+      ],
+      "source_links": [
+        "https://www.reddit.com/r/IAmA/comments/1nto6nb/im_dr_david_fajgenbaum_physicianscientist_rare/"
+      ],
+      "demand_status": "provisional_sparse_or_context_only",
+      "synonyms": [
+        "not yet specified"
+      ],
+      "proposed_page_type": "practical-guide",
+      "intended_canonical_page": "/questions/dr021",
+      "page_ownership": "FAQ in matching drug-indication guide by default; standalone only when depth justifies",
+      "related_topics": [],
+      "scientific_scope": {
+        "unit": "drug + exact indication + population + formulation/route + comparator + outcome",
+        "population": "To be specified from eligible studies; no directness assumed from thread",
+        "intervention": "not yet specified",
+        "condition": "rare disease and population applicability",
+        "formulation_route": "Extract exact formulation and route; unspecified in question remains unspecified",
+        "comparator": "Relevant standard care/placebo/active comparator; do not assume comparable populations",
+        "outcomes": "Resolve the stated reader question with prespecified clinical endpoints and harms",
+        "directness_pitfall": "AMA is promotional context with organic questions; not scored as organic demand in primary ranking."
+      },
+      "paper_search_brief": "Search PubMed/MEDLINE, trial registries, publisher sources and lawful repositories through 2026-10-08 for not yet specified AND rare disease and population applicability. Resolve: What makes a disease or patient group suitable for a drug-repurposing study? Include null, negative, adverse, discontinued and unpublished evidence. Preserve exact population, formulation, route, comparator and endpoints. AMA is promotional context with organic questions; not scored as organic demand in primary ranking.",
+      "direct_evidence_needs": "Original human evidence matching indication/population/intervention/outcome; dated official sources for regulatory/access questions; preserve multiple reports per study family.",
+      "indirect_evidence_needs": "Keep animal, cell, computational, other-indication and mechanism evidence separately labeled; use reviews only for context/discovery.",
+      "answer_status": "unanswered_acquisition_required",
+      "editorial_urgency": "normal",
+      "unmet_evidence_need": "Not assessed from Reddit; literature worker must establish.",
+      "product_opportunity": null,
+      "demand_counts": {
+        "combined": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0,
+          "rank": 35
+        },
+        "recent": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0,
+          "rank": 35
+        },
+        "historical": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        },
+        "unknown_date": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        }
+      }
+    },
+    {
+      "id": "DR022",
+      "question": "How can families evaluate and discuss cancer cure claims about repurposed drugs?",
+      "reader_decision": "How can families evaluate and discuss cancer cure claims about repurposed drugs",
+      "intervention": "ivermectin; fenbendazole as observed claims",
+      "condition": "cancer treatment claims",
+      "source_thread_ids": [
+        "RT-1tdui95",
+        "RT-1po5qp0"
+      ],
+      "source_links": [
+        "https://www.reddit.com/r/skeptic/comments/1tdui95/dealing_with_ivermectin_believers/",
+        "https://www.reddit.com/r/cancer/comments/1po5qp0/my_moms_taking_ivermectin_for_cancer/"
+      ],
+      "demand_status": "provisional_sparse_or_context_only",
+      "synonyms": [
+        "ivermectin",
+        "fenbendazole as observed claims"
+      ],
+      "proposed_page_type": "practical-guide",
+      "intended_canonical_page": "/questions/dr022",
+      "page_ownership": "FAQ in matching drug-indication guide by default; standalone only when depth justifies",
+      "related_topics": [],
+      "scientific_scope": {
+        "unit": "drug + exact indication + population + formulation/route + comparator + outcome",
+        "population": "To be specified from eligible studies; no directness assumed from thread",
+        "intervention": "ivermectin; fenbendazole as observed claims",
+        "condition": "cancer treatment claims",
+        "formulation_route": "Extract exact formulation and route; unspecified in question remains unspecified",
+        "comparator": "Relevant standard care/placebo/active comparator; do not assume comparable populations",
+        "outcomes": "Resolve the stated reader question with prespecified clinical endpoints and harms",
+        "directness_pitfall": "Communication and evidence appraisal, not individualized treatment advice."
+      },
+      "paper_search_brief": "Search PubMed/MEDLINE, trial registries, publisher sources and lawful repositories through 2026-10-08 for ivermectin; fenbendazole as observed claims AND cancer treatment claims. Resolve: How can families evaluate and discuss cancer cure claims about repurposed drugs? Include null, negative, adverse, discontinued and unpublished evidence. Preserve exact population, formulation, route, comparator and endpoints. Communication and evidence appraisal, not individualized treatment advice.",
+      "direct_evidence_needs": "Original human evidence matching indication/population/intervention/outcome; dated official sources for regulatory/access questions; preserve multiple reports per study family.",
+      "indirect_evidence_needs": "Keep animal, cell, computational, other-indication and mechanism evidence separately labeled; use reviews only for context/discovery.",
+      "answer_status": "unanswered_acquisition_required",
+      "editorial_urgency": "safety_relevant",
+      "unmet_evidence_need": "Not assessed from Reddit; literature worker must establish.",
+      "product_opportunity": "Evidence-reading worksheet/guide; willingness to pay unmeasured",
+      "demand_counts": {
+        "combined": {
+          "independent_thread_clusters": 1,
+          "distinct_subreddits": 1,
+          "subreddits": [
+            "skeptic"
+          ],
+          "score": 3,
+          "rank": 26
+        },
+        "recent": {
+          "independent_thread_clusters": 1,
+          "distinct_subreddits": 1,
+          "subreddits": [
+            "skeptic"
+          ],
+          "score": 3,
+          "rank": 24
+        },
+        "historical": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        },
+        "unknown_date": {
+          "independent_thread_clusters": 1,
+          "distinct_subreddits": 1,
+          "subreddits": [
+            "cancer"
+          ],
+          "score": 3
+        }
+      }
+    },
+    {
+      "id": "DR023",
+      "question": "How do low-dose naltrexone formulations, pharmacy preparations and costs differ?",
+      "reader_decision": "How do low-dose naltrexone formulations, pharmacy preparations and costs differ",
+      "intervention": "low-dose naltrexone",
+      "condition": "formulation/compounding and cost",
+      "source_thread_ids": [
+        "RT-1iy7hry",
+        "RT-1u9ycap"
+      ],
+      "source_links": [
+        "https://www.reddit.com/r/LowDoseNaltrexone/comments/1iy7hry",
+        "https://www.reddit.com/r/PGADsupport/comments/1u9ycap/naltrexone/"
+      ],
+      "demand_status": "provisional_threshold_met",
+      "synonyms": [
+        "low-dose naltrexone"
+      ],
+      "proposed_page_type": "question",
+      "intended_canonical_page": "/questions/dr023",
+      "page_ownership": "FAQ in matching drug-indication guide by default; standalone only when depth justifies",
+      "related_topics": [
+        "DR027"
+      ],
+      "scientific_scope": {
+        "unit": "drug + exact indication + population + formulation/route + comparator + outcome",
+        "population": "To be specified from eligible studies; no directness assumed from thread",
+        "intervention": "low-dose naltrexone",
+        "condition": "formulation/compounding and cost",
+        "formulation_route": "Extract exact formulation and route; unspecified in question remains unspecified",
+        "comparator": "Relevant standard care/placebo/active comparator; do not assume comparable populations",
+        "outcomes": "Resolve the stated reader question with prespecified clinical endpoints and harms",
+        "directness_pitfall": "Do not provide dilution recipes; verify product/formulation and jurisdiction-specific access."
+      },
+      "paper_search_brief": "Search PubMed/MEDLINE, trial registries, publisher sources and lawful repositories through 2026-10-08 for low-dose naltrexone AND formulation/compounding and cost. Resolve: How do low-dose naltrexone formulations, pharmacy preparations and costs differ? Include null, negative, adverse, discontinued and unpublished evidence. Preserve exact population, formulation, route, comparator and endpoints. Do not provide dilution recipes; verify product/formulation and jurisdiction-specific access.",
+      "direct_evidence_needs": "Original human evidence matching indication/population/intervention/outcome; dated official sources for regulatory/access questions; preserve multiple reports per study family.",
+      "indirect_evidence_needs": "Keep animal, cell, computational, other-indication and mechanism evidence separately labeled; use reviews only for context/discovery.",
+      "answer_status": "unanswered_acquisition_required",
+      "editorial_urgency": "normal",
+      "unmet_evidence_need": "Not assessed from Reddit; literature worker must establish.",
+      "product_opportunity": null,
+      "demand_counts": {
+        "combined": {
+          "independent_thread_clusters": 2,
+          "distinct_subreddits": 2,
+          "subreddits": [
+            "LowDoseNaltrexone",
+            "PGADsupport"
+          ],
+          "score": 6,
+          "rank": 12
+        },
+        "recent": {
+          "independent_thread_clusters": 2,
+          "distinct_subreddits": 2,
+          "subreddits": [
+            "LowDoseNaltrexone",
+            "PGADsupport"
+          ],
+          "score": 6,
+          "rank": 10
+        },
+        "historical": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        },
+        "unknown_date": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        }
+      }
+    },
+    {
+      "id": "DR024",
+      "question": "How should the actual reason for low-dose naltrexone use be recorded and understood?",
+      "reader_decision": "How should the actual reason for low-dose naltrexone use be recorded and understood",
+      "intervention": "low-dose naltrexone",
+      "condition": "off-label documentation and care coordination",
+      "source_thread_ids": [
+        "RT-1uglyx2",
+        "RT-1uco32g",
+        "RT-1kh0ci0",
+        "RT-1ucqyo3"
+      ],
+      "source_links": [
+        "https://www.reddit.com/r/LowDoseNaltrexone/comments/1uglyx2/how_did_you_handle_your_diagnosticprocedure_codes/",
+        "https://www.reddit.com/r/LowDoseNaltrexone/comments/1uco32g/has_anyone_been_rejected_from_other_doctors/",
+        "https://www.reddit.com/r/LowDoseNaltrexone/comments/1kh0ci0",
+        "https://www.reddit.com/r/LowDoseNaltrexone/comments/1ucqyo3/advice_regarding_how_to_record_ldn_in_medical/"
+      ],
+      "demand_status": "provisional_sparse_or_context_only",
+      "synonyms": [
+        "low-dose naltrexone"
+      ],
+      "proposed_page_type": "practical-guide",
+      "intended_canonical_page": "/questions/dr024",
+      "page_ownership": "FAQ in matching drug-indication guide by default; standalone only when depth justifies",
+      "related_topics": [],
+      "scientific_scope": {
+        "unit": "drug + exact indication + population + formulation/route + comparator + outcome",
+        "population": "To be specified from eligible studies; no directness assumed from thread",
+        "intervention": "low-dose naltrexone",
+        "condition": "off-label documentation and care coordination",
+        "formulation_route": "Extract exact formulation and route; unspecified in question remains unspecified",
+        "comparator": "Relevant standard care/placebo/active comparator; do not assume comparable populations",
+        "outcomes": "Resolve the stated reader question with prespecified clinical endpoints and harms",
+        "directness_pitfall": "Coding/legal statements require official local sources; no inference of a person's diagnosis."
+      },
+      "paper_search_brief": "Search PubMed/MEDLINE, trial registries, publisher sources and lawful repositories through 2026-10-08 for low-dose naltrexone AND off-label documentation and care coordination. Resolve: How should the actual reason for low-dose naltrexone use be recorded and understood? Include null, negative, adverse, discontinued and unpublished evidence. Preserve exact population, formulation, route, comparator and endpoints. Coding/legal statements require official local sources; no inference of a person's diagnosis.",
+      "direct_evidence_needs": "Original human evidence matching indication/population/intervention/outcome; dated official sources for regulatory/access questions; preserve multiple reports per study family.",
+      "indirect_evidence_needs": "Keep animal, cell, computational, other-indication and mechanism evidence separately labeled; use reviews only for context/discovery.",
+      "answer_status": "unanswered_acquisition_required",
+      "editorial_urgency": "normal",
+      "unmet_evidence_need": "Not assessed from Reddit; literature worker must establish.",
+      "product_opportunity": null,
+      "demand_counts": {
+        "combined": {
+          "independent_thread_clusters": 3,
+          "distinct_subreddits": 1,
+          "subreddits": [
+            "LowDoseNaltrexone"
+          ],
+          "score": 7,
+          "rank": 8
+        },
+        "recent": {
+          "independent_thread_clusters": 3,
+          "distinct_subreddits": 1,
+          "subreddits": [
+            "LowDoseNaltrexone"
+          ],
+          "score": 7,
+          "rank": 7
+        },
+        "historical": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        },
+        "unknown_date": {
+          "independent_thread_clusters": 1,
+          "distinct_subreddits": 1,
+          "subreddits": [
+            "LowDoseNaltrexone"
+          ],
+          "score": 3
+        }
+      }
+    },
+    {
+      "id": "DR025",
+      "question": "What do controlled studies and nonresponse tell us about low-dose naltrexone for chronic symptoms?",
+      "reader_decision": "What do controlled studies and nonresponse tell us about low-dose naltrexone for chronic symptoms",
+      "intervention": "low-dose naltrexone",
+      "condition": "fibromyalgia/chronic pain; separately Long COVID or ME/CFS",
+      "source_thread_ids": [
+        "RT-1wh3asc"
+      ],
+      "source_links": [
+        "https://www.reddit.com/r/LowDoseNaltrexone/comments/1wh3asc/i_read_through_the_published_ldn_trials_what_they/"
+      ],
+      "demand_status": "provisional_sparse_or_context_only",
+      "synonyms": [
+        "low-dose naltrexone"
+      ],
+      "proposed_page_type": "drug-indication",
+      "intended_canonical_page": "/questions/dr025",
+      "page_ownership": "FAQ in matching drug-indication guide by default; standalone only when depth justifies",
+      "related_topics": [],
+      "scientific_scope": {
+        "unit": "drug + exact indication + population + formulation/route + comparator + outcome",
+        "population": "To be specified from eligible studies; no directness assumed from thread",
+        "intervention": "low-dose naltrexone",
+        "condition": "fibromyalgia/chronic pain; separately Long COVID or ME/CFS",
+        "formulation_route": "Extract exact formulation and route; unspecified in question remains unspecified",
+        "comparator": "Relevant standard care/placebo/active comparator; do not assume comparable populations",
+        "outcomes": "Resolve the stated reader question with prespecified clinical endpoints and harms",
+        "directness_pitfall": "Split exact indications during acquisition; do not combine heterogeneous conditions into one effect."
+      },
+      "paper_search_brief": "Search PubMed/MEDLINE, trial registries, publisher sources and lawful repositories through 2026-10-08 for low-dose naltrexone AND fibromyalgia/chronic pain; separately Long COVID or ME/CFS. Resolve: What do controlled studies and nonresponse tell us about low-dose naltrexone for chronic symptoms? Include null, negative, adverse, discontinued and unpublished evidence. Preserve exact population, formulation, route, comparator and endpoints. Split exact indications during acquisition; do not combine heterogeneous conditions into one effect.",
+      "direct_evidence_needs": "Original human evidence matching indication/population/intervention/outcome; dated official sources for regulatory/access questions; preserve multiple reports per study family.",
+      "indirect_evidence_needs": "Keep animal, cell, computational, other-indication and mechanism evidence separately labeled; use reviews only for context/discovery.",
+      "answer_status": "unanswered_acquisition_required",
+      "editorial_urgency": "normal",
+      "unmet_evidence_need": "Not assessed from Reddit; literature worker must establish.",
+      "product_opportunity": null,
+      "demand_counts": {
+        "combined": {
+          "independent_thread_clusters": 1,
+          "distinct_subreddits": 1,
+          "subreddits": [
+            "LowDoseNaltrexone"
+          ],
+          "score": 3,
+          "rank": 27
+        },
+        "recent": {
+          "independent_thread_clusters": 1,
+          "distinct_subreddits": 1,
+          "subreddits": [
+            "LowDoseNaltrexone"
+          ],
+          "score": 3,
+          "rank": 25
+        },
+        "historical": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        },
+        "unknown_date": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        }
+      }
+    },
+    {
+      "id": "DR026",
+      "question": "What evidence supports naltrexone for compulsive sexual behavior?",
+      "reader_decision": "What evidence supports naltrexone for compulsive sexual behavior",
+      "intervention": "naltrexone",
+      "condition": "compulsive sexual behavior",
+      "source_thread_ids": [
+        "RT-1suf1pe"
+      ],
+      "source_links": [
+        "https://www.reddit.com/r/AskPsychiatry/comments/1suf1pe/anyone_prescribing_naltrexone_offlabel/"
+      ],
+      "demand_status": "provisional_sparse_or_context_only",
+      "synonyms": [
+        "naltrexone"
+      ],
+      "proposed_page_type": "drug-indication",
+      "intended_canonical_page": "/questions/dr026",
+      "page_ownership": "FAQ in matching drug-indication guide by default; standalone only when depth justifies",
+      "related_topics": [],
+      "scientific_scope": {
+        "unit": "drug + exact indication + population + formulation/route + comparator + outcome",
+        "population": "To be specified from eligible studies; no directness assumed from thread",
+        "intervention": "naltrexone",
+        "condition": "compulsive sexual behavior",
+        "formulation_route": "Extract exact formulation and route; unspecified in question remains unspecified",
+        "comparator": "Relevant standard care/placebo/active comparator; do not assume comparable populations",
+        "outcomes": "Resolve the stated reader question with prespecified clinical endpoints and harms",
+        "directness_pitfall": "Small reports versus controlled evidence; avoid conflating with licensed substance-use indications."
+      },
+      "paper_search_brief": "Search PubMed/MEDLINE, trial registries, publisher sources and lawful repositories through 2026-10-08 for naltrexone AND compulsive sexual behavior. Resolve: What evidence supports naltrexone for compulsive sexual behavior? Include null, negative, adverse, discontinued and unpublished evidence. Preserve exact population, formulation, route, comparator and endpoints. Small reports versus controlled evidence; avoid conflating with licensed substance-use indications.",
+      "direct_evidence_needs": "Original human evidence matching indication/population/intervention/outcome; dated official sources for regulatory/access questions; preserve multiple reports per study family.",
+      "indirect_evidence_needs": "Keep animal, cell, computational, other-indication and mechanism evidence separately labeled; use reviews only for context/discovery.",
+      "answer_status": "unanswered_acquisition_required",
+      "editorial_urgency": "normal",
+      "unmet_evidence_need": "Not assessed from Reddit; literature worker must establish.",
+      "product_opportunity": null,
+      "demand_counts": {
+        "combined": {
+          "independent_thread_clusters": 1,
+          "distinct_subreddits": 1,
+          "subreddits": [
+            "AskPsychiatry"
+          ],
+          "score": 3,
+          "rank": 28
+        },
+        "recent": {
+          "independent_thread_clusters": 1,
+          "distinct_subreddits": 1,
+          "subreddits": [
+            "AskPsychiatry"
+          ],
+          "score": 3,
+          "rank": 26
+        },
+        "historical": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        },
+        "unknown_date": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        }
+      }
+    },
+    {
+      "id": "DR027",
+      "question": "What evidence supports naltrexone for persistent genital arousal or associated pain?",
+      "reader_decision": "What evidence supports naltrexone for persistent genital arousal or associated pain",
+      "intervention": "naltrexone",
+      "condition": "persistent genital arousal disorder/genitopelvic dysesthesia",
+      "source_thread_ids": [
+        "RT-1u9ycap"
+      ],
+      "source_links": [
+        "https://www.reddit.com/r/PGADsupport/comments/1u9ycap/naltrexone/"
+      ],
+      "demand_status": "provisional_sparse_or_context_only",
+      "synonyms": [
+        "naltrexone"
+      ],
+      "proposed_page_type": "drug-indication",
+      "intended_canonical_page": "/questions/dr027",
+      "page_ownership": "FAQ in matching drug-indication guide by default; standalone only when depth justifies",
+      "related_topics": [
+        "DR023"
+      ],
+      "scientific_scope": {
+        "unit": "drug + exact indication + population + formulation/route + comparator + outcome",
+        "population": "To be specified from eligible studies; no directness assumed from thread",
+        "intervention": "naltrexone",
+        "condition": "persistent genital arousal disorder/genitopelvic dysesthesia",
+        "formulation_route": "Extract exact formulation and route; unspecified in question remains unspecified",
+        "comparator": "Relevant standard care/placebo/active comparator; do not assume comparable populations",
+        "outcomes": "Resolve the stated reader question with prespecified clinical endpoints and harms",
+        "directness_pitfall": "Do not infer this indication from fibromyalgia or other pain conditions."
+      },
+      "paper_search_brief": "Search PubMed/MEDLINE, trial registries, publisher sources and lawful repositories through 2026-10-08 for naltrexone AND persistent genital arousal disorder/genitopelvic dysesthesia. Resolve: What evidence supports naltrexone for persistent genital arousal or associated pain? Include null, negative, adverse, discontinued and unpublished evidence. Preserve exact population, formulation, route, comparator and endpoints. Do not infer this indication from fibromyalgia or other pain conditions.",
+      "direct_evidence_needs": "Original human evidence matching indication/population/intervention/outcome; dated official sources for regulatory/access questions; preserve multiple reports per study family.",
+      "indirect_evidence_needs": "Keep animal, cell, computational, other-indication and mechanism evidence separately labeled; use reviews only for context/discovery.",
+      "answer_status": "unanswered_acquisition_required",
+      "editorial_urgency": "normal",
+      "unmet_evidence_need": "Not assessed from Reddit; literature worker must establish.",
+      "product_opportunity": null,
+      "demand_counts": {
+        "combined": {
+          "independent_thread_clusters": 1,
+          "distinct_subreddits": 1,
+          "subreddits": [
+            "PGADsupport"
+          ],
+          "score": 3,
+          "rank": 29
+        },
+        "recent": {
+          "independent_thread_clusters": 1,
+          "distinct_subreddits": 1,
+          "subreddits": [
+            "PGADsupport"
+          ],
+          "score": 3,
+          "rank": 27
+        },
+        "historical": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        },
+        "unknown_date": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        }
+      }
+    },
+    {
+      "id": "DR028",
+      "question": "Does pramipexole improve depression or anhedonia after other treatments have failed?",
+      "reader_decision": "Does pramipexole improve depression or anhedonia after other treatments have failed",
+      "intervention": "pramipexole",
+      "condition": "treatment-resistant depression/anhedonia",
+      "source_thread_ids": [
+        "RT-1qrzy1l",
+        "RT-1tu2306",
+        "RT-1ugmdc5",
+        "RT-1u639t7"
+      ],
+      "source_links": [
+        "https://www.reddit.com/r/depression/comments/1qrzy1l/pramipexole_for_depression_anhedonia/",
+        "https://www.reddit.com/r/depression/comments/1tu2306/looking_for_pramipexole_experiences_good_bad_or/",
+        "https://www.reddit.com/r/depressionregimens/comments/1ugmdc5/pramipexole_experiences_last_resort_and/",
+        "https://www.reddit.com/r/anhedonia/comments/1u639t7/pramipexole/"
+      ],
+      "demand_status": "provisional_threshold_met",
+      "synonyms": [
+        "pramipexole"
+      ],
+      "proposed_page_type": "drug-indication",
+      "intended_canonical_page": "/questions/dr028",
+      "page_ownership": "FAQ in matching drug-indication guide by default; standalone only when depth justifies",
+      "related_topics": [],
+      "scientific_scope": {
+        "unit": "drug + exact indication + population + formulation/route + comparator + outcome",
+        "population": "To be specified from eligible studies; no directness assumed from thread",
+        "intervention": "pramipexole",
+        "condition": "treatment-resistant depression/anhedonia",
+        "formulation_route": "Extract exact formulation and route; unspecified in question remains unspecified",
+        "comparator": "Relevant standard care/placebo/active comparator; do not assume comparable populations",
+        "outcomes": "Resolve the stated reader question with prespecified clinical endpoints and harms",
+        "directness_pitfall": "Separate augmentation/monotherapy, unipolar/bipolar groups and symptom scales."
+      },
+      "paper_search_brief": "Search PubMed/MEDLINE, trial registries, publisher sources and lawful repositories through 2026-10-08 for pramipexole AND treatment-resistant depression/anhedonia. Resolve: Does pramipexole improve depression or anhedonia after other treatments have failed? Include null, negative, adverse, discontinued and unpublished evidence. Preserve exact population, formulation, route, comparator and endpoints. Separate augmentation/monotherapy, unipolar/bipolar groups and symptom scales.",
+      "direct_evidence_needs": "Original human evidence matching indication/population/intervention/outcome; dated official sources for regulatory/access questions; preserve multiple reports per study family.",
+      "indirect_evidence_needs": "Keep animal, cell, computational, other-indication and mechanism evidence separately labeled; use reviews only for context/discovery.",
+      "answer_status": "unanswered_acquisition_required",
+      "editorial_urgency": "normal",
+      "unmet_evidence_need": "Not assessed from Reddit; literature worker must establish.",
+      "product_opportunity": null,
+      "demand_counts": {
+        "combined": {
+          "independent_thread_clusters": 4,
+          "distinct_subreddits": 3,
+          "subreddits": [
+            "anhedonia",
+            "depression",
+            "depressionregimens"
+          ],
+          "score": 11,
+          "rank": 3
+        },
+        "recent": {
+          "independent_thread_clusters": 4,
+          "distinct_subreddits": 3,
+          "subreddits": [
+            "anhedonia",
+            "depression",
+            "depressionregimens"
+          ],
+          "score": 11,
+          "rank": 3
+        },
+        "historical": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        },
+        "unknown_date": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        }
+      }
+    },
+    {
+      "id": "DR029",
+      "question": "What adverse effects, response timing and withdrawal uncertainties matter for pramipexole?",
+      "reader_decision": "What adverse effects, response timing and withdrawal uncertainties matter for pramipexole",
+      "intervention": "pramipexole",
+      "condition": "depression/anhedonia tolerability",
+      "source_thread_ids": [
+        "RT-1jxz7ib",
+        "RT-1w6mdgc",
+        "RT-1c2i94a",
+        "RT-1wac3t2"
+      ],
+      "source_links": [
+        "https://www.reddit.com/r/depressionregimens/comments/1jxz7ib",
+        "https://www.reddit.com/r/anhedonia/comments/1w6mdgc/pramipexole_trial_not_going_well/",
+        "https://www.reddit.com/r/anhedonia/comments/1c2i94a",
+        "https://www.reddit.com/r/RestlessLegs/comments/1wac3t2/pramipexole_for_the_win/"
+      ],
+      "demand_status": "provisional_threshold_met",
+      "synonyms": [
+        "pramipexole"
+      ],
+      "proposed_page_type": "question",
+      "intended_canonical_page": "/questions/dr029",
+      "page_ownership": "FAQ in matching drug-indication guide by default; standalone only when depth justifies",
+      "related_topics": [],
+      "scientific_scope": {
+        "unit": "drug + exact indication + population + formulation/route + comparator + outcome",
+        "population": "To be specified from eligible studies; no directness assumed from thread",
+        "intervention": "pramipexole",
+        "condition": "depression/anhedonia tolerability",
+        "formulation_route": "Extract exact formulation and route; unspecified in question remains unspecified",
+        "comparator": "Relevant standard care/placebo/active comparator; do not assume comparable populations",
+        "outcomes": "Resolve the stated reader question with prespecified clinical endpoints and harms",
+        "directness_pitfall": "Do not estimate incidence from anecdotes; distinguish withdrawal, nonresponse and other indications."
+      },
+      "paper_search_brief": "Search PubMed/MEDLINE, trial registries, publisher sources and lawful repositories through 2026-10-08 for pramipexole AND depression/anhedonia tolerability. Resolve: What adverse effects, response timing and withdrawal uncertainties matter for pramipexole? Include null, negative, adverse, discontinued and unpublished evidence. Preserve exact population, formulation, route, comparator and endpoints. Do not estimate incidence from anecdotes; distinguish withdrawal, nonresponse and other indications.",
+      "direct_evidence_needs": "Original human evidence matching indication/population/intervention/outcome; dated official sources for regulatory/access questions; preserve multiple reports per study family.",
+      "indirect_evidence_needs": "Keep animal, cell, computational, other-indication and mechanism evidence separately labeled; use reviews only for context/discovery.",
+      "answer_status": "unanswered_acquisition_required",
+      "editorial_urgency": "safety_relevant",
+      "unmet_evidence_need": "Not assessed from Reddit; literature worker must establish.",
+      "product_opportunity": null,
+      "demand_counts": {
+        "combined": {
+          "independent_thread_clusters": 4,
+          "distinct_subreddits": 3,
+          "subreddits": [
+            "RestlessLegs",
+            "anhedonia",
+            "depressionregimens"
+          ],
+          "score": 11,
+          "rank": 4
+        },
+        "recent": {
+          "independent_thread_clusters": 3,
+          "distinct_subreddits": 3,
+          "subreddits": [
+            "RestlessLegs",
+            "anhedonia",
+            "depressionregimens"
+          ],
+          "score": 9,
+          "rank": 5
+        },
+        "historical": {
+          "independent_thread_clusters": 1,
+          "distinct_subreddits": 1,
+          "subreddits": [
+            "anhedonia"
+          ],
+          "score": 3
+        },
+        "unknown_date": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        }
+      }
+    },
+    {
+      "id": "DR030",
+      "question": "How is access to pramipexole for depression considered in clinical care?",
+      "reader_decision": "How is access to pramipexole for depression considered in clinical care",
+      "intervention": "pramipexole",
+      "condition": "off-label depression access",
+      "source_thread_ids": [
+        "RT-1j8bq8v",
+        "RT-1u7u096"
+      ],
+      "source_links": [
+        "https://www.reddit.com/r/anhedonia/comments/1j8bq8v",
+        "https://www.reddit.com/r/AskPsychiatry/comments/1u7u096/any_psychiatrist_in_miami_that_could_prescribe/"
+      ],
+      "demand_status": "provisional_threshold_met",
+      "synonyms": [
+        "pramipexole"
+      ],
+      "proposed_page_type": "practical-guide",
+      "intended_canonical_page": "/questions/dr030",
+      "page_ownership": "FAQ in matching drug-indication guide by default; standalone only when depth justifies",
+      "related_topics": [],
+      "scientific_scope": {
+        "unit": "drug + exact indication + population + formulation/route + comparator + outcome",
+        "population": "To be specified from eligible studies; no directness assumed from thread",
+        "intervention": "pramipexole",
+        "condition": "off-label depression access",
+        "formulation_route": "Extract exact formulation and route; unspecified in question remains unspecified",
+        "comparator": "Relevant standard care/placebo/active comparator; do not assume comparable populations",
+        "outcomes": "Resolve the stated reader question with prespecified clinical endpoints and harms",
+        "directness_pitfall": "Do not repeat suggestions to misrepresent diagnoses; verify jurisdiction and specialty context."
+      },
+      "paper_search_brief": "Search PubMed/MEDLINE, trial registries, publisher sources and lawful repositories through 2026-10-08 for pramipexole AND off-label depression access. Resolve: How is access to pramipexole for depression considered in clinical care? Include null, negative, adverse, discontinued and unpublished evidence. Preserve exact population, formulation, route, comparator and endpoints. Do not repeat suggestions to misrepresent diagnoses; verify jurisdiction and specialty context.",
+      "direct_evidence_needs": "Original human evidence matching indication/population/intervention/outcome; dated official sources for regulatory/access questions; preserve multiple reports per study family.",
+      "indirect_evidence_needs": "Keep animal, cell, computational, other-indication and mechanism evidence separately labeled; use reviews only for context/discovery.",
+      "answer_status": "unanswered_acquisition_required",
+      "editorial_urgency": "normal",
+      "unmet_evidence_need": "Not assessed from Reddit; literature worker must establish.",
+      "product_opportunity": null,
+      "demand_counts": {
+        "combined": {
+          "independent_thread_clusters": 2,
+          "distinct_subreddits": 2,
+          "subreddits": [
+            "AskPsychiatry",
+            "anhedonia"
+          ],
+          "score": 6,
+          "rank": 13
+        },
+        "recent": {
+          "independent_thread_clusters": 2,
+          "distinct_subreddits": 2,
+          "subreddits": [
+            "AskPsychiatry",
+            "anhedonia"
+          ],
+          "score": 6,
+          "rank": 11
+        },
+        "historical": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        },
+        "unknown_date": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        }
+      }
+    },
+    {
+      "id": "DR031",
+      "question": "What evidence could compare pramipexole with tranylcypromine for anhedonia?",
+      "reader_decision": "What evidence could compare pramipexole with tranylcypromine for anhedonia",
+      "intervention": "pramipexole vs tranylcypromine",
+      "condition": "anhedonia after prior antidepressant exposure",
+      "source_thread_ids": [
+        "RT-1scffy3"
+      ],
+      "source_links": [
+        "https://www.reddit.com/r/anhedonia/comments/1scffy3/should_i_ask_for_pramipexole_or_parnate/"
+      ],
+      "demand_status": "provisional_sparse_or_context_only",
+      "synonyms": [
+        "pramipexole vs tranylcypromine"
+      ],
+      "proposed_page_type": "comparison",
+      "intended_canonical_page": "/questions/dr031",
+      "page_ownership": "FAQ in matching drug-indication guide by default; standalone only when depth justifies",
+      "related_topics": [],
+      "scientific_scope": {
+        "unit": "drug + exact indication + population + formulation/route + comparator + outcome",
+        "population": "To be specified from eligible studies; no directness assumed from thread",
+        "intervention": "pramipexole vs tranylcypromine",
+        "condition": "anhedonia after prior antidepressant exposure",
+        "formulation_route": "Extract exact formulation and route; unspecified in question remains unspecified",
+        "comparator": "Relevant standard care/placebo/active comparator; do not assume comparable populations",
+        "outcomes": "Resolve the stated reader question with prespecified clinical endpoints and harms",
+        "directness_pitfall": "Head-to-head evidence may be absent; indirect comparisons require explicit limitations."
+      },
+      "paper_search_brief": "Search PubMed/MEDLINE, trial registries, publisher sources and lawful repositories through 2026-10-08 for pramipexole vs tranylcypromine AND anhedonia after prior antidepressant exposure. Resolve: What evidence could compare pramipexole with tranylcypromine for anhedonia? Include null, negative, adverse, discontinued and unpublished evidence. Preserve exact population, formulation, route, comparator and endpoints. Head-to-head evidence may be absent; indirect comparisons require explicit limitations.",
+      "direct_evidence_needs": "Original human evidence matching indication/population/intervention/outcome; dated official sources for regulatory/access questions; preserve multiple reports per study family.",
+      "indirect_evidence_needs": "Keep animal, cell, computational, other-indication and mechanism evidence separately labeled; use reviews only for context/discovery.",
+      "answer_status": "unanswered_acquisition_required",
+      "editorial_urgency": "normal",
+      "unmet_evidence_need": "Not assessed from Reddit; literature worker must establish.",
+      "product_opportunity": null,
+      "demand_counts": {
+        "combined": {
+          "independent_thread_clusters": 1,
+          "distinct_subreddits": 1,
+          "subreddits": [
+            "anhedonia"
+          ],
+          "score": 3,
+          "rank": 30
+        },
+        "recent": {
+          "independent_thread_clusters": 1,
+          "distinct_subreddits": 1,
+          "subreddits": [
+            "anhedonia"
+          ],
+          "score": 3,
+          "rank": 28
+        },
+        "historical": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        },
+        "unknown_date": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        }
+      }
+    },
+    {
+      "id": "DR032",
+      "question": "What human evidence and safety uncertainties matter for rapamycin used for longevity?",
+      "reader_decision": "What human evidence and safety uncertainties matter for rapamycin used for longevity",
+      "intervention": "sirolimus/rapamycin",
+      "condition": "human healthspan/longevity",
+      "source_thread_ids": [
+        "RT-1mdifrx",
+        "RT-1au6wmt",
+        "RT-1grrwwd"
+      ],
+      "source_links": [
+        "https://www.reddit.com/r/Rapamycin/comments/1mdifrx",
+        "https://www.reddit.com/r/PeterAttia/comments/1au6wmt/rapamycin_a_physicians_critical_perspective/",
+        "https://www.reddit.com/r/LongevityEssentials/comments/1grrwwd"
+      ],
+      "demand_status": "provisional_threshold_met",
+      "synonyms": [
+        "sirolimus/rapamycin"
+      ],
+      "proposed_page_type": "drug-indication",
+      "intended_canonical_page": "/questions/dr032",
+      "page_ownership": "FAQ in matching drug-indication guide by default; standalone only when depth justifies",
+      "related_topics": [
+        "DR034",
+        "DR035"
+      ],
+      "scientific_scope": {
+        "unit": "drug + exact indication + population + formulation/route + comparator + outcome",
+        "population": "To be specified from eligible studies; no directness assumed from thread",
+        "intervention": "sirolimus/rapamycin",
+        "condition": "human healthspan/longevity",
+        "formulation_route": "Extract exact formulation and route; unspecified in question remains unspecified",
+        "comparator": "Relevant standard care/placebo/active comparator; do not assume comparable populations",
+        "outcomes": "Resolve the stated reader question with prespecified clinical endpoints and harms",
+        "directness_pitfall": "Animal lifespan, biomarkers and human clinical outcomes are distinct; self-experiment reports not safety rates."
+      },
+      "paper_search_brief": "Search PubMed/MEDLINE, trial registries, publisher sources and lawful repositories through 2026-10-08 for sirolimus/rapamycin AND human healthspan/longevity. Resolve: What human evidence and safety uncertainties matter for rapamycin used for longevity? Include null, negative, adverse, discontinued and unpublished evidence. Preserve exact population, formulation, route, comparator and endpoints. Animal lifespan, biomarkers and human clinical outcomes are distinct; self-experiment reports not safety rates.",
+      "direct_evidence_needs": "Original human evidence matching indication/population/intervention/outcome; dated official sources for regulatory/access questions; preserve multiple reports per study family.",
+      "indirect_evidence_needs": "Keep animal, cell, computational, other-indication and mechanism evidence separately labeled; use reviews only for context/discovery.",
+      "answer_status": "unanswered_acquisition_required",
+      "editorial_urgency": "normal",
+      "unmet_evidence_need": "Not assessed from Reddit; literature worker must establish.",
+      "product_opportunity": null,
+      "demand_counts": {
+        "combined": {
+          "independent_thread_clusters": 2,
+          "distinct_subreddits": 2,
+          "subreddits": [
+            "PeterAttia",
+            "Rapamycin"
+          ],
+          "score": 6,
+          "rank": 14
+        },
+        "recent": {
+          "independent_thread_clusters": 1,
+          "distinct_subreddits": 1,
+          "subreddits": [
+            "Rapamycin"
+          ],
+          "score": 3,
+          "rank": 29
+        },
+        "historical": {
+          "independent_thread_clusters": 1,
+          "distinct_subreddits": 1,
+          "subreddits": [
+            "PeterAttia"
+          ],
+          "score": 3
+        },
+        "unknown_date": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        }
+      }
+    },
+    {
+      "id": "DR033",
+      "question": "How should rapamycin ovarian-preservation claims be weighed against exercise-related concerns?",
+      "reader_decision": "How should rapamycin ovarian-preservation claims be weighed against exercise-related concerns",
+      "intervention": "sirolimus/rapamycin",
+      "condition": "ovarian aging and exercise performance",
+      "source_thread_ids": [
+        "RT-1tp5jld"
+      ],
+      "source_links": [
+        "https://www.reddit.com/r/immortalists/comments/1tp5jld/is_rapamycin_for_ovarian_preservation_worth_the/"
+      ],
+      "demand_status": "provisional_sparse_or_context_only",
+      "synonyms": [
+        "sirolimus/rapamycin"
+      ],
+      "proposed_page_type": "comparison",
+      "intended_canonical_page": "/questions/dr033",
+      "page_ownership": "FAQ in matching drug-indication guide by default; standalone only when depth justifies",
+      "related_topics": [],
+      "scientific_scope": {
+        "unit": "drug + exact indication + population + formulation/route + comparator + outcome",
+        "population": "To be specified from eligible studies; no directness assumed from thread",
+        "intervention": "sirolimus/rapamycin",
+        "condition": "ovarian aging and exercise performance",
+        "formulation_route": "Extract exact formulation and route; unspecified in question remains unspecified",
+        "comparator": "Relevant standard care/placebo/active comparator; do not assume comparable populations",
+        "outcomes": "Resolve the stated reader question with prespecified clinical endpoints and harms",
+        "directness_pitfall": "Separate ovarian reserve biomarkers, menopause timing and measured exercise adaptations."
+      },
+      "paper_search_brief": "Search PubMed/MEDLINE, trial registries, publisher sources and lawful repositories through 2026-10-08 for sirolimus/rapamycin AND ovarian aging and exercise performance. Resolve: How should rapamycin ovarian-preservation claims be weighed against exercise-related concerns? Include null, negative, adverse, discontinued and unpublished evidence. Preserve exact population, formulation, route, comparator and endpoints. Separate ovarian reserve biomarkers, menopause timing and measured exercise adaptations.",
+      "direct_evidence_needs": "Original human evidence matching indication/population/intervention/outcome; dated official sources for regulatory/access questions; preserve multiple reports per study family.",
+      "indirect_evidence_needs": "Keep animal, cell, computational, other-indication and mechanism evidence separately labeled; use reviews only for context/discovery.",
+      "answer_status": "unanswered_acquisition_required",
+      "editorial_urgency": "normal",
+      "unmet_evidence_need": "Not assessed from Reddit; literature worker must establish.",
+      "product_opportunity": null,
+      "demand_counts": {
+        "combined": {
+          "independent_thread_clusters": 1,
+          "distinct_subreddits": 1,
+          "subreddits": [
+            "immortalists"
+          ],
+          "score": 3,
+          "rank": 31
+        },
+        "recent": {
+          "independent_thread_clusters": 1,
+          "distinct_subreddits": 1,
+          "subreddits": [
+            "immortalists"
+          ],
+          "score": 3,
+          "rank": 30
+        },
+        "historical": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        },
+        "unknown_date": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        }
+      }
+    },
+    {
+      "id": "DR034",
+      "question": "What is known about rapamycin interactions with bupropion and other medications?",
+      "reader_decision": "What is known about rapamycin interactions with bupropion and other medications",
+      "intervention": "sirolimus/rapamycin + bupropion",
+      "condition": "drug interactions",
+      "source_thread_ids": [
+        "RT-1mdifrx"
+      ],
+      "source_links": [
+        "https://www.reddit.com/r/Rapamycin/comments/1mdifrx"
+      ],
+      "demand_status": "provisional_sparse_or_context_only",
+      "synonyms": [
+        "sirolimus/rapamycin",
+        "bupropion"
+      ],
+      "proposed_page_type": "question",
+      "intended_canonical_page": "/questions/dr034",
+      "page_ownership": "FAQ in matching drug-indication guide by default; standalone only when depth justifies",
+      "related_topics": [
+        "DR032",
+        "DR035"
+      ],
+      "scientific_scope": {
+        "unit": "drug + exact indication + population + formulation/route + comparator + outcome",
+        "population": "To be specified from eligible studies; no directness assumed from thread",
+        "intervention": "sirolimus/rapamycin + bupropion",
+        "condition": "drug interactions",
+        "formulation_route": "Extract exact formulation and route; unspecified in question remains unspecified",
+        "comparator": "Relevant standard care/placebo/active comparator; do not assume comparable populations",
+        "outcomes": "Resolve the stated reader question with prespecified clinical endpoints and harms",
+        "directness_pitfall": "Check pharmacokinetics, official labels and clinical interaction evidence; no individual risk calculation."
+      },
+      "paper_search_brief": "Search PubMed/MEDLINE, trial registries, publisher sources and lawful repositories through 2026-10-08 for sirolimus/rapamycin + bupropion AND drug interactions. Resolve: What is known about rapamycin interactions with bupropion and other medications? Include null, negative, adverse, discontinued and unpublished evidence. Preserve exact population, formulation, route, comparator and endpoints. Check pharmacokinetics, official labels and clinical interaction evidence; no individual risk calculation.",
+      "direct_evidence_needs": "Original human evidence matching indication/population/intervention/outcome; dated official sources for regulatory/access questions; preserve multiple reports per study family.",
+      "indirect_evidence_needs": "Keep animal, cell, computational, other-indication and mechanism evidence separately labeled; use reviews only for context/discovery.",
+      "answer_status": "unanswered_acquisition_required",
+      "editorial_urgency": "safety_relevant",
+      "unmet_evidence_need": "Not assessed from Reddit; literature worker must establish.",
+      "product_opportunity": null,
+      "demand_counts": {
+        "combined": {
+          "independent_thread_clusters": 1,
+          "distinct_subreddits": 1,
+          "subreddits": [
+            "Rapamycin"
+          ],
+          "score": 3,
+          "rank": 32
+        },
+        "recent": {
+          "independent_thread_clusters": 1,
+          "distinct_subreddits": 1,
+          "subreddits": [
+            "Rapamycin"
+          ],
+          "score": 3,
+          "rank": 31
+        },
+        "historical": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        },
+        "unknown_date": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        }
+      }
+    },
+    {
+      "id": "DR035",
+      "question": "Does rapamycin research in periodontal disease apply to people considering off-label use?",
+      "reader_decision": "Does rapamycin research in periodontal disease apply to people considering off-label use",
+      "intervention": "sirolimus/rapamycin",
+      "condition": "periodontal disease",
+      "source_thread_ids": [
+        "RT-1mdifrx"
+      ],
+      "source_links": [
+        "https://www.reddit.com/r/Rapamycin/comments/1mdifrx"
+      ],
+      "demand_status": "provisional_sparse_or_context_only",
+      "synonyms": [
+        "sirolimus/rapamycin"
+      ],
+      "proposed_page_type": "drug-indication",
+      "intended_canonical_page": "/questions/dr035",
+      "page_ownership": "FAQ in matching drug-indication guide by default; standalone only when depth justifies",
+      "related_topics": [
+        "DR032",
+        "DR034"
+      ],
+      "scientific_scope": {
+        "unit": "drug + exact indication + population + formulation/route + comparator + outcome",
+        "population": "To be specified from eligible studies; no directness assumed from thread",
+        "intervention": "sirolimus/rapamycin",
+        "condition": "periodontal disease",
+        "formulation_route": "Extract exact formulation and route; unspecified in question remains unspecified",
+        "comparator": "Relevant standard care/placebo/active comparator; do not assume comparable populations",
+        "outcomes": "Resolve the stated reader question with prespecified clinical endpoints and harms",
+        "directness_pitfall": "Separate animal periodontal findings from clinical patient outcomes."
+      },
+      "paper_search_brief": "Search PubMed/MEDLINE, trial registries, publisher sources and lawful repositories through 2026-10-08 for sirolimus/rapamycin AND periodontal disease. Resolve: Does rapamycin research in periodontal disease apply to people considering off-label use? Include null, negative, adverse, discontinued and unpublished evidence. Preserve exact population, formulation, route, comparator and endpoints. Separate animal periodontal findings from clinical patient outcomes.",
+      "direct_evidence_needs": "Original human evidence matching indication/population/intervention/outcome; dated official sources for regulatory/access questions; preserve multiple reports per study family.",
+      "indirect_evidence_needs": "Keep animal, cell, computational, other-indication and mechanism evidence separately labeled; use reviews only for context/discovery.",
+      "answer_status": "unanswered_acquisition_required",
+      "editorial_urgency": "normal",
+      "unmet_evidence_need": "Not assessed from Reddit; literature worker must establish.",
+      "product_opportunity": null,
+      "demand_counts": {
+        "combined": {
+          "independent_thread_clusters": 1,
+          "distinct_subreddits": 1,
+          "subreddits": [
+            "Rapamycin"
+          ],
+          "score": 3,
+          "rank": 33
+        },
+        "recent": {
+          "independent_thread_clusters": 1,
+          "distinct_subreddits": 1,
+          "subreddits": [
+            "Rapamycin"
+          ],
+          "score": 3,
+          "rank": 32
+        },
+        "historical": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        },
+        "unknown_date": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        }
+      }
+    },
+    {
+      "id": "DR036",
+      "question": "What evidence supports acarbose for human longevity, and what are its tolerability tradeoffs?",
+      "reader_decision": "What evidence supports acarbose for human longevity, and what are its tolerability tradeoffs",
+      "intervention": "acarbose",
+      "condition": "human longevity",
+      "source_thread_ids": [
+        "RT-1i8zvxs"
+      ],
+      "source_links": [
+        "https://www.reddit.com/r/blueprint_/comments/1i8zvxs"
+      ],
+      "demand_status": "provisional_sparse_or_context_only",
+      "synonyms": [
+        "acarbose"
+      ],
+      "proposed_page_type": "drug-indication",
+      "intended_canonical_page": "/questions/dr036",
+      "page_ownership": "FAQ in matching drug-indication guide by default; standalone only when depth justifies",
+      "related_topics": [],
+      "scientific_scope": {
+        "unit": "drug + exact indication + population + formulation/route + comparator + outcome",
+        "population": "To be specified from eligible studies; no directness assumed from thread",
+        "intervention": "acarbose",
+        "condition": "human longevity",
+        "formulation_route": "Extract exact formulation and route; unspecified in question remains unspecified",
+        "comparator": "Relevant standard care/placebo/active comparator; do not assume comparable populations",
+        "outcomes": "Resolve the stated reader question with prespecified clinical endpoints and harms",
+        "directness_pitfall": "Commercial self-link in source: organic comments kept separately, primary score excludes this thread; animal findings indirect."
+      },
+      "paper_search_brief": "Search PubMed/MEDLINE, trial registries, publisher sources and lawful repositories through 2026-10-08 for acarbose AND human longevity. Resolve: What evidence supports acarbose for human longevity, and what are its tolerability tradeoffs? Include null, negative, adverse, discontinued and unpublished evidence. Preserve exact population, formulation, route, comparator and endpoints. Commercial self-link in source: organic comments kept separately, primary score excludes this thread; animal findings indirect.",
+      "direct_evidence_needs": "Original human evidence matching indication/population/intervention/outcome; dated official sources for regulatory/access questions; preserve multiple reports per study family.",
+      "indirect_evidence_needs": "Keep animal, cell, computational, other-indication and mechanism evidence separately labeled; use reviews only for context/discovery.",
+      "answer_status": "unanswered_acquisition_required",
+      "editorial_urgency": "normal",
+      "unmet_evidence_need": "Not assessed from Reddit; literature worker must establish.",
+      "product_opportunity": null,
+      "demand_counts": {
+        "combined": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0,
+          "rank": 36
+        },
+        "recent": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0,
+          "rank": 36
+        },
+        "historical": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        },
+        "unknown_date": {
+          "independent_thread_clusters": 0,
+          "distinct_subreddits": 0,
+          "subreddits": [],
+          "score": 0
+        }
+      }
+    }
+  ]
+}

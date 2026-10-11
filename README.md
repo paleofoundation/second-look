@@ -1,126 +1,72 @@
-# vinext-starter
+# Second Look — drug repurposing evidence
 
-A clean full-stack starter running on [vinext](https://github.com/cloudflare/vinext), with optional Cloudflare D1 and Drizzle support.
+**Research collaborators: start with [Research ingestion — required runbook](docs/RESEARCH-INGEST.md).** It maps the actual plans, schemas, source ledgers, review obligations and handoff checkpoints. Preserve these records with each batch so research can resume without losing accepted work.
 
-## Prerequisites
+Second Look is a research website for examining proposed uses of existing drugs. It connects drug, condition and outcome pages to source records, shared evidence assessments and research disclosures. Research acquisition and independent review remain incomplete; guide sales have not launched.
 
-- Node.js `>=22.13.0`
-- Portable: Windows, macOS, or Linux; no Bash required
-- Managed Linux: managed Linux runtime with Bash, `flock`, `curl`, `sha256sum`, and GNU `timeout`
-- Git is required only for publishing
+This is the source build for the private collaborator repository [paleofoundation/second-look](https://github.com/paleofoundation/second-look). Repository access includes internal editorial records and protected review drafts. The website's public projections and account permissions are a separate boundary from GitHub access.
 
-## Sites Lifecycle
+## Start with the project instructions
 
-The Sites initializer copies the shared starter and selects managed-linux only when `SITES_MANAGED_LINUX_CONTAINER=1`; otherwise it selects portable. It saves the selection only in ignored `.sites-runtime/execution-profile.json`. Both profiles copy/configure first, then use the plugin's separate `install-dependencies.mjs` step to measure installation independently. Edit source under `app/` and follow the Sites skill for installation, preview, builds, and publishing.
+Read these before changing content, behavior or research methods:
 
-Run `node <plugin-root>/scripts/configure-execution-profile.mjs` only when the profile is unknown for the current checkout and environment. Profile changes do not alter tracked source or require reinstalling otherwise-valid dependencies; restart an existing preview to use the new selection. Do not commit or upload `.sites-runtime/`.
+1. [AGENTS.md](AGENTS.md) — entry point for contributors and coding agents.
+2. [Project rules](docs/PROJECT-RULES.md) and [rule changelog](docs/RULE-CHANGELOG.md) — Second Look requirements and their history.
+3. [Canonical One Match Rule](rules/one-match-rule/ONE-MATCH-RULE.md) — the preserved reusable research and publishing method.
+4. [Collaborator handoff](docs/COLLABORATOR-HANDOFF.md) — architecture, data changes, verification, services and remaining work.
 
-This starter does not use `wrangler.jsonc`.
+Keep new requirements in the repository: update the applicable rule and its changelog in the same pull request as the implementation. A chat, a personal skill installation or a local file outside this checkout is not sufficient preservation. The original [v1.1 pilot baseline](docs/one-match-rule-baseline.md) and its [hash record](docs/baseline-record.json) are historical records; do not silently replace them with newer rules.
 
-`install:ci` runs `npm ci` once against the shared lockfile, disables parent-workspace discovery, and includes required dev/optional dependencies despite production/omit settings. Sharp defaults to prebuilt binaries unless explicitly configured otherwise. Do not overlap installers.
+## Run locally
 
-- **Portable:** Preserve host HOME, npm cache, registry, proxy, temporary paths, retry/concurrency settings, and lifecycle-script policy. Use `--prefer-offline --no-audit --no-fund`.
-- **Managed Linux:** Use the existing project-local HOME/cache/tmp setup and Linux install lock, tarball preflight, and timeout. Restore the image-seeded npm cache only when its lockfile hash matches; retain network fallback. Builds keep their existing timeout. These helpers are not invoked by the portable profile.
-
-`scripts/sites-env.mjs` preserves the caller's HOME, npm cache, proxy, XDG, and temporary-directory configuration while defaulting Wrangler and Miniflare state to the checkout. If npm reports an unwritable cache, select a writable path with `npm_config_cache` for that install. The `dev` and `start` scripts also keep Wrangler logs inside the checkout. Generated `.sites-runtime/` and `.wrangler/` directories are disposable and ignored by Git.
-
-On portable, `npm run dev` uses `vinext dev` with HMR, starting at port 5173. Vinext records the running server in ignored `.vinext/` state, rejects an ordinary duplicate launch, and recovers stale state after a stopped process; exactly simultaneous starts can race. Pass `--port <port>` or `--hostname <host>` after `npm run dev --` when needed; keep portable previews on loopback.
-
-For browser QA on managed Linux, use `sites-preview start`. The project's dev script runs Vite and accepts the supervisor's `--host 0.0.0.0 --port 4173 --strictPort` arguments. The internal browser uses `http://terminal.local:4173/`; it is not a user-facing URL. The supervisor owns the preview lifecycle. The ignored local profile survives the supervisor's cleared process environment.
-
-The portable profile simulates ChatGPT sign-in only for loopback development requests. Visit `/signin-with-chatgpt?return_to=/` to sign in as `local_seedy` (`seedy@sites.test`, display name `Seedy`) and `/signout-with-chatgpt?return_to=/` to sign out. The development cookie preserves that identity across server restarts. Mock auth is disabled in the managed-linux profile and is not included in production builds; hosted authentication remains dispatch-owned.
-
-The Worker uses `vinext/server/fetch-handler`, including Vinext's config-aware image handling. After building, `npm start` runs that Worker locally through Wrangler on `127.0.0.1`, sharing `.wrangler/state` with dev preview and local D1 migrations; it does not deploy the site or simulate sign-in. Use the URL printed by the server. Pass `npm start -- --port <port>` to select a different built-preview port.
-
-Local previews use Miniflare's placeholder `Request.cf` metadata without a network lookup. Set `CLOUDFLARE_CF_FETCH_ENABLED=true` to opt into fetching preview metadata; this setting does not change hosted request metadata.
-
-Local tool usage metrics are disabled by default. Set `WRANGLER_SEND_METRICS=true` to opt in.
-
-## Included Shape
-
-- edit site code under `app/`
-- `app/chatgpt-auth.ts` provides optional dispatch-owned ChatGPT sign-in helpers
-- `.openai/hosting.json` declares optional Sites D1 and R2 bindings
-- `vite.config.ts` simulates declared bindings for local development
-- `db/index.ts` reads the D1 binding from the Cloudflare Worker environment
-- `db/schema.ts` starts intentionally empty
-- `@cloudflare/workers-types` provides Worker types; `cloudflare-env.d.ts` declares optional `DB`/`BUCKET` bindings—update these declarations if binding names change
-- `examples/d1/` contains an optional D1 example surface
-- `drizzle.config.ts` supports local migration generation when needed
-
-## Workspace Auth Headers
-
-Signed-in visitors receive both `oai-authenticated-user-id` and `oai-authenticated-user-email`. Private Sites require every visitor to sign in; public Sites may also have anonymous visitors, for whom neither header is present.
-
-The user ID is stable for the same user on the same Site and different across Sites. Use it as the durable user key; use email and name for display or contact purposes.
-
-SIWC-authenticated workspace sites may also receive `oai-authenticated-user-full-name` when the user's SIWC profile has a non-empty `name` claim. The full-name value is percent-encoded UTF-8 and is accompanied by `oai-authenticated-user-full-name-encoding: percent-encoded-utf-8`.
-
-Treat the full name as optional and fall back to email when it is absent:
-
-```tsx
-import { headers } from "next/headers";
-
-export default async function Home() {
-  const requestHeaders = await headers();
-  const userId = requestHeaders.get("oai-authenticated-user-id");
-  const email = requestHeaders.get("oai-authenticated-user-email");
-  const encodedFullName = requestHeaders.get("oai-authenticated-user-full-name");
-  const fullName =
-    encodedFullName &&
-    requestHeaders.get("oai-authenticated-user-full-name-encoding") ===
-      "percent-encoded-utf-8"
-      ? decodeURIComponent(encodedFullName)
-      : null;
-
-  const displayName = fullName ?? email;
-  // ...
-}
-```
-
-## Optional Dispatch-Owned ChatGPT Sign-In
-
-Import the ready-to-use helpers from `app/chatgpt-auth.ts` when the site needs optional or required ChatGPT sign-in:
-
-- Use `getChatGPTUser()` for optional signed-in UI.
-- Use the returned `userId` as the stable user key for user-owned records; do not use email as a durable identifier.
-- Use `requireChatGPTUser(returnTo)` for server-rendered pages that should send anonymous visitors through Sign in with ChatGPT.
-- In a Server Component, start sign-in with `<a href={chatGPTSignInPath(returnTo)} target="_top">`. The auth helper module is server-only; do not import it into a Client Component.
-- Do not use `fetch`, XHR, a client-side router, or a framework link that can prefetch the sign-in route. SIWC must start as a top-level navigation.
-- Never request the AuthAPI authorization endpoint directly. The dispatch-owned `/signin-with-chatgpt` route must start the SIWC flow.
-- Use `chatGPTSignOutPath(returnTo)` for browser sign-out links or actions.
-- Pass a same-origin relative `returnTo` path for the destination after sign-in or sign-out. The helper validates and safely encodes it.
-- Mark protected pages with `export const dynamic = "force-dynamic"` because they depend on per-request identity headers.
-
-Dispatch owns `/signin-with-chatgpt`, `/signout-with-chatgpt`, `/callback`, the OAuth cookies, and identity header injection. Do not implement app routes for those reserved paths. Routes that do not import and call the helper remain anonymous-compatible.
-
-SIWC establishes identity only; it does not prove workspace membership. Use the Sites hosting platform's access policy controls for workspace-wide restrictions, or enforce explicit server-side membership or allowlist checks.
-
-Use SIWC for account pages, user-specific dashboards, saved records, and write actions tied to the current ChatGPT user. Leave public content anonymous.
-
-## Local D1 migrations
-
-For a D1-backed local preview, generate SQL with `npm run db:generate`. Build once through the Sites skill's build entrypoint (or `npm run build` for standalone use) to generate `dist/server/wrangler.json`, rebuilding if bindings change. From the project root, apply each pending migration in order:
+Requirements: Git, Node.js **22.13.0 or newer**, and npm. Python 3 is needed only for the editorial import/generation scripts. The application uses React 19, TypeScript, Vinext/Vite and Cloudflare Workers with D1/R2 bindings.
 
 ```sh
-node --import ./scripts/sites-env.mjs ./node_modules/wrangler/bin/wrangler.js d1 execute DB --local --config dist/server/wrangler.json --persist-to .wrangler/state --file drizzle/0000_example.sql
+git clone https://github.com/paleofoundation/second-look.git
+cd second-look
+npm run install:ci
+npm run dev
 ```
 
-Replace the filename with the pending migration and `DB` with your D1 binding name if different. Use `.wrangler/state`, not `.wrangler/state/v3`; Wrangler adds the versioned directories. Do not replay migrations already applied locally. This updates only the preview database; publishing applies production migrations separately.
+Open the loopback URL printed by the server, normally `http://localhost:5173`. No application API key is required for local public-page development. A clean clone selects the portable execution profile automatically. Keep local previews on loopback; change the port with `npm run dev -- --port 5174`.
 
-## Diagnostic Commands
+To build and preview the compiled Worker:
 
-- `npm run install:ci`: perform the one locked dependency install
-- `npm run dev`: start the Vite/Vinext development server
-- `npm run build`: build the deployable Sites artifact
-- `npm run start`: preview the built Worker locally with D1/R2 support
-- `npm run db:generate`: generate Drizzle migrations after schema changes
+```sh
+npm run build
+npm start
+```
 
-When using the Sites plugin, follow its skill instructions for installation, builds, and publishing. These npm commands remain available for standalone use.
+`npm start` serves the existing build through local Wrangler; it does not deploy. Pass `npm start -- --port 8788` for a different port. Account/library features need the local database migrations described in the [handoff](docs/COLLABORATOR-HANDOFF.md#local-database-and-sign-in).
 
-The portable build runs Vinext directly without a host `timeout` command. The managed-linux build uses `scripts/build-verified.sh` and its existing `SITES_BUILD_TIMEOUT` setting.
+## Check a change
 
-## Learn More
+Run from the repository root after installing dependencies:
 
-- [vinext Documentation](https://github.com/cloudflare/vinext)
-- [Drizzle D1 Guide](https://orm.drizzle.team/docs/get-started/d1-new)
+```sh
+node scripts/content-check.mjs
+node scripts/reader-check.mjs
+node scripts/check-reader-sections.mjs --all-profiles
+node scripts/check-evidence-section.mjs
+node scripts/check-evidence-grading.mjs
+node scripts/check-wiki-links.mjs
+npm run build
+node scripts/verify-reader-boundary.mjs
+```
+
+These commands are existing source, rendering and evidence-integrity checks, not a claim that every current change has passed them. The last command inspects `dist/client`, so run it after a successful build. Also use `npm run lint` and `npx tsc --noEmit --incremental false` for code changes, and inspect affected interactions in a browser. The handoff explains what each check covers.
+
+## Where to work
+
+| Path | Purpose |
+| --- | --- |
+| `app/`, `components/`, `styles/`, `lib/` | Routes, shared rendering, styles and application logic |
+| `data/` | Canonical research records, public projections, review envelopes and protected drafts |
+| `editorial/` | Corrections, assessments, source ledgers and extraction provenance |
+| `scripts/` | Validation, content updates, dependency installation and runtime helpers |
+| `db/`, `drizzle/` | D1 schema and ordered SQL migrations |
+| `public/` | Public assets, fonts and explicitly public guide previews/resources |
+| `docs/`, `rules/` | Durable project instructions, methods, decisions and handoff material |
+| `.openai/hosting.json`, `build/`, `vite.config.ts` | Existing Sites hosting association and Worker build integration |
+
+The committed source does not include production database contents, private R2 assets, a production authentication service or the complete downloaded research corpus. Hosted operation depends on the existing Sites environment. Publishing, review approval and commercial launch remain separate from merging code.

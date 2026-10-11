@@ -1,0 +1,625 @@
+{
+  "plan_id": "SL-INGEST-3.1-FETCH30",
+  "version": "3.1",
+  "created_at": "2026-10-09T09:18:03.866907+00:00",
+  "status": "Candidate plan. Root readiness required before a ready-to-send handoff; no dispatch or extraction authorized by this repair.",
+  "supersedes": "SL-INGEST-3.0-FETCH30 for future acquisition only; retain old plan and completed CP28 plan2.0/history unchanged.",
+  "owner_requirement": "30distinct high-leverage repurposing drugs AND30distinct conditions, answer existing Reddit questions, explicitly cover itraconazole for cancer.",
+  "applicable_rule": {
+    "version": "1.11",
+    "path": "applicable-rule-v1.11.md",
+    "sha256": "56d59baed0d41a0398f02924dbe3e53209757ade03d06def2c9b2ffa0c870195",
+    "scope": "Current acquisition location/reverse-ingest/30+30 scope contract; no claim of site-wide rule compliance; frozen1.1 unchanged."
+  },
+  "scope": {
+    "mode": "Future acquisition/discovery handoff; preparation uses local sources only. This turn performs no web search or external dispatch.",
+    "search_cutoff": "2026-10-09",
+    "drug_ids": [
+      "D01",
+      "D02",
+      "D03",
+      "D04",
+      "D05",
+      "D06",
+      "D07",
+      "D08",
+      "D09",
+      "D10",
+      "D11",
+      "D12",
+      "D13",
+      "D14",
+      "D15",
+      "D16",
+      "D17",
+      "D18",
+      "D19",
+      "D20",
+      "D21",
+      "D22",
+      "D23",
+      "D24",
+      "D25",
+      "D26",
+      "D27",
+      "D28",
+      "D29",
+      "D30"
+    ],
+    "condition_ids": [
+      "C01",
+      "C02",
+      "C03",
+      "C04",
+      "C05",
+      "C06",
+      "C07",
+      "C08",
+      "C09",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "request_ids": [
+      "DRUG-D01",
+      "DRUG-D02",
+      "DRUG-D03",
+      "DRUG-D04",
+      "DRUG-D05",
+      "DRUG-D06",
+      "DRUG-D07",
+      "DRUG-D08",
+      "DRUG-D09",
+      "DRUG-D10",
+      "DRUG-D11",
+      "DRUG-D12",
+      "DRUG-D13",
+      "DRUG-D14",
+      "DRUG-D15",
+      "DRUG-D16",
+      "DRUG-D17",
+      "DRUG-D18",
+      "DRUG-D19",
+      "DRUG-D20",
+      "DRUG-D21",
+      "DRUG-D22",
+      "DRUG-D23",
+      "DRUG-D24",
+      "DRUG-D25",
+      "DRUG-D26",
+      "DRUG-D27",
+      "DRUG-D28",
+      "DRUG-D29",
+      "DRUG-D30",
+      "COND-C01",
+      "COND-C02",
+      "COND-C03",
+      "COND-C04",
+      "COND-C05",
+      "COND-C06",
+      "COND-C07",
+      "COND-C08",
+      "COND-C09",
+      "COND-C10",
+      "COND-C11",
+      "COND-C12",
+      "COND-C13",
+      "COND-C14",
+      "COND-C15",
+      "COND-C16",
+      "COND-C17",
+      "COND-C18",
+      "COND-C19",
+      "COND-C20",
+      "COND-C21",
+      "COND-C22",
+      "COND-C23",
+      "COND-C24",
+      "COND-C25",
+      "COND-C26",
+      "COND-C27",
+      "COND-C28",
+      "COND-C29",
+      "COND-C30",
+      "DR001",
+      "DR002",
+      "DR003",
+      "DR004",
+      "DR005",
+      "DR006",
+      "DR007",
+      "DR008",
+      "DR009",
+      "DR010",
+      "DR011",
+      "DR012",
+      "DR013",
+      "DR014",
+      "DR015",
+      "DR016",
+      "DR017",
+      "DR018",
+      "DR019",
+      "DR020",
+      "DR021",
+      "DR022",
+      "DR023",
+      "DR024",
+      "DR025",
+      "DR026",
+      "DR027",
+      "DR028",
+      "DR029",
+      "DR030",
+      "DR031",
+      "DR032",
+      "DR033",
+      "DR034",
+      "DR035",
+      "DR036",
+      "ITRACONAZOLE-CANCER",
+      "RECOVERY"
+    ],
+    "boundaries": {
+      "source_classes": "Original human randomized and nonrandomized studies, observational studies, case series/reports; animal, cell/ex-vivo and computational originals separately labeled. Protocols, supplements, registry results, corrections/retractions/replacements linked to the parent family. REVIEW/TEXTBOOK/OTHER and official context remain separate.",
+      "inclusions": "Database inception through2026-10-09; all languages. Include positive, null, harmful, contrary, replication, discontinued and unpublished/registry findings. Discover paywalled records even when retrieval fails. Exact indication/population/route/comparator boundaries govern applicability.",
+      "exclusions": "No vendor efficacy claims, Reddit anecdotes as clinical evidence, duplicate independent-study counting, unrelated homonyms, invented papers/DOIs, or silently substituted combinations. No excluded CP28 CSVs. No brand names in publishable copy.",
+      "required_files": "Lawful original report PDF plus available supplementary appendices, protocol/statistical plan, correction/retraction/replacement notices. Full HTML is a disclosed fallback, not a recovered PDF. Relevant official identity/original-use/safety context is separately classified.",
+      "completion": "Run and log all relevant index, registry and citation-chasing searches; reconcile every screened record, returned file, identity conflict and access gap. Report incomplete until unresolved scope/access work is explicit. No fixed PDF quota and no source count proves efficacy."
+    },
+    "count_policy": "30 distinct generic drug entities; sirolimus/rapamycin one entity, nirmatrelvir with ritonavir one regimen entity. No umbrella cancer, symptoms, formulations, longevity goals or aliases inflate30 conditions.",
+    "demand_limit": "Owner-required itraconazole + observed provisional Reddit questions + source-located CP28 expansion + safety/null-result value. This is an editorial starting selection, not a measured top30 ranking.",
+    "not_a_pdf_quota": "30drugs+30conditions are coverage axes, not30PDFs,900pair claims, or a guarantee of available human studies."
+  },
+  "inputs": [
+    {
+      "path": "30-conditions.csv",
+      "sha256": "698afaea6917362d290c7271b402c5fba85e5d3642ab2e4878b1808cef0bf4e8"
+    },
+    {
+      "path": "30-drugs.csv",
+      "sha256": "c073c3573e17d8d61494f774eaa011eccd9a9acc32b2f9ff8c9af0836fd09017"
+    },
+    {
+      "path": "acquisition-return.schema.json",
+      "sha256": "a9a51e67f49cca9dd5046953f538a171842f512b719ed6b97d0d5777b17228a1"
+    },
+    {
+      "path": "applicable-rule-v1.11.md",
+      "sha256": "56d59baed0d41a0398f02924dbe3e53209757ade03d06def2c9b2ffa0c870195"
+    },
+    {
+      "path": "check_delivery.py",
+      "sha256": "c7660c60343ac08e32675241556ae08ed17e2bbabc3ce6771e9f70d41a66a676"
+    },
+    {
+      "path": "check_packet.py",
+      "sha256": "a853cc6ec2fdea57b2e7f41812a92bc2b6dd78c09b4912d77236ea7707fe4f6a"
+    },
+    {
+      "path": "coverage-catalogue.json",
+      "sha256": "653075faceae03d7b33528bdfb87db8100c512f1bdb13f18d17388d50ab9a395"
+    },
+    {
+      "path": "delivery-receipt.schema.json",
+      "sha256": "0b63f0ae7208d685c2e280e11b84d0a086d5dcb804408464e8d370b710d40c5e"
+    },
+    {
+      "path": "drug-condition-searches.csv",
+      "sha256": "b728d8ce4b96762a1b58c22bf66145b53f8db3ade78ceb3bf9727602754ea380"
+    },
+    {
+      "path": "existing-cp28-sources.json",
+      "sha256": "e240488f96edf802627de573abf8b4a5d93696f306ff926b28ce9335089d6ec1"
+    },
+    {
+      "path": "existing-pilot-identities.json",
+      "sha256": "1b79530cc8a3af629ef5cd1c97362c49e291c0292138eedfaa9ec6141890cf1c"
+    },
+    {
+      "path": "existing-pilot-sources.json",
+      "sha256": "09262bf8504e5416089129ec6d04b3be516426953ac24d2c24ae2b3a9d740bca"
+    },
+    {
+      "path": "frozen-rule-v1.1.md",
+      "sha256": "01896e3c254f37483c226da52da0ef239b03eb7c762e5171675ae6dc302150d2"
+    },
+    {
+      "path": "future-source-record.schema.json",
+      "sha256": "36bcad009b224e41247ee798d1765253c5ef679a0c13b176e56d3e530942f785"
+    },
+    {
+      "path": "itraconazole-primary-leads.json",
+      "sha256": "0062284db095a38db560352b08e8158695f31fff6035a462333ab0f1300a9ba9"
+    },
+    {
+      "path": "known-source-locations.json",
+      "sha256": "e51b5581dfe5cf9dd4f10ef5d39d3c6cc0d1539e6d0816addb84e9fb3ad5208b"
+    },
+    {
+      "path": "prepare_return.py",
+      "sha256": "33bdc0af380cc16fe207985d0cf110885d035f5a15562f960c1710cd73a802c1"
+    },
+    {
+      "path": "query-locations.json",
+      "sha256": "568cc978e66c2bd73ef00197ae2fa7b60d78f1ffa589f7c84f65ee09214def55"
+    },
+    {
+      "path": "recovery-targets.json",
+      "sha256": "418166797d261d812019c0101f190fed479b80cb2b0d78b6a7045579847de64f"
+    },
+    {
+      "path": "reddit-question-map.json",
+      "sha256": "ce58df49879cc47d639f8fbd92cdaa379558722d28d5d19da085ad835acd3473"
+    },
+    {
+      "path": "requests.json",
+      "sha256": "0eb6a60cf4c7804118c0d651b5c6130ab578ec362fb4e3f5670fb33065eb7348"
+    },
+    {
+      "path": "return-manifest.schema.json",
+      "sha256": "34076af0bfe99b11276b2c7cd4df52e081439b35c46387f04a79a8dc4d517cc2"
+    },
+    {
+      "path": "search-locations.json",
+      "sha256": "f8a27b6a3066c234483d7a01e576bf9f0deb8e5385f22f452498e4aa59e63663"
+    },
+    {
+      "path": "selection-provenance.json",
+      "sha256": "df63a3597754a94d69c9f626794167d8eb4c1193c378e8028c317eb6634d76c1"
+    },
+    {
+      "path": "transfer-contract.json",
+      "sha256": "1a1c75dcebcb8e7dc7ca53431b84fd674a66d61db689ec88108dfe2fee8fa171"
+    },
+    {
+      "path": "worker-packets.json",
+      "sha256": "2bc1c254f2689eac95eda79650805bb56f1b65d27f7e14bcbcd2f8c258850733"
+    }
+  ],
+  "delivery": {
+    "schema": "acquisition-return.schema.json",
+    "schema_version": "SL-ACQUISITION-3.1",
+    "encoding": "UTF-8",
+    "return": "ZIP attachment to Second Look Mission Control current task01a11a22-f81b-7682-b4a9-64ed1859b295; external worker is not assumed to access this Mac.",
+    "layout": "return/Fxx/acquisition-return.json plus PRIMARY/<source_id>__<role>__<shorttitle>.pdf and CONTEXT/{REVIEW,TEXTBOOK,OTHER}/<source_id>.<ext>. Derived OCR/text kept apart with source hash. No source PDF embedded in this outgoing packet.",
+    "required_fields": "Actual downloaded bytes/hash/MIME, original/resolvedURL, retrieval time, rights/license or missing reason, access state, title/authors/year/DOI printed and separately verified, PMID/registry, collection/tier/design/report/family/version links, all applicable request/drug/condition/demand IDs.",
+    "missingness": "Unknown metadata remains null with explanation. doi_printed is DOI NOT PRINTED when absent. A newly verified DOI is stored separately with authoritative verification provenance; never overwrite a blank CP28manifest DOI. Future scientific facts absent from sources remain NOT IN CORPUS.",
+    "return_manifest_schema": "return-manifest.schema.json",
+    "delivery_receipt_schema": "delivery-receipt.schema.json",
+    "contract": "transfer-contract.json",
+    "input_archive": "second-look-fetch-30x30-v2.1-input.zip",
+    "source_entry_locations": "search-locations.json",
+    "question_queries": "query-locations.json",
+    "known_paper_links": "known-source-locations.json",
+    "reverse_prompt": "Mandatory CHATGPT-INGEST-PROMPT.txt and identical full final copyable block, filled from actual delivered files; blocked-transfer branch required when attachments unavailable.",
+    "receipt": "Actual access/hashes verified independently by receiving Mission Control; sender cannot assert receiver access. check_packet.py --return-file requires --delivery-receipt."
+  },
+  "ownership": {
+    "acquisition": "Assigned Grokbot batch only after actual dispatch",
+    "integrator": "Mission Control /root",
+    "independent_audit": "Separate agent or reviewer before acceptance",
+    "scientific_review": "Not performed by acquisition; exact-version human gates unchanged"
+  },
+  "batch_order": [
+    {
+      "id": "F00",
+      "title": "Mandatory itraconazole cancer source recovery",
+      "request_ids": [
+        "ITRACONAZOLE-CANCER",
+        "DRUG-D07"
+      ],
+      "wave": "first",
+      "plan_id": "SL-INGEST-3.1-FETCH30",
+      "plan_file": "ingestion-plan-v3.1.json",
+      "readiness_file": "readiness.json",
+      "schema_file": "acquisition-return.schema.json",
+      "owner": "Grokbot acquisition worker when dispatched; root remains integrator",
+      "launch_status": "NOT_DISPATCHED",
+      "instructions": "Read each assigned request in requests.json. Shared DOI/title/registry ledger prevents duplicate downloads across batches. Run breadth alongside first-wave work; do not let Long COVID consume or replace the30+30scope.",
+      "return_path": "return/F00/acquisition-return.json",
+      "completion": "Per-request search/screening/coverage, lawful files, manifest metadata, unresolved gaps; no scientific result extraction or publication."
+    },
+    {
+      "id": "F01",
+      "title": "Prior packet integrity and full-text recovery",
+      "request_ids": [
+        "RECOVERY"
+      ],
+      "wave": "first",
+      "plan_id": "SL-INGEST-3.1-FETCH30",
+      "plan_file": "ingestion-plan-v3.1.json",
+      "readiness_file": "readiness.json",
+      "schema_file": "acquisition-return.schema.json",
+      "owner": "Grokbot acquisition worker when dispatched; root remains integrator",
+      "launch_status": "NOT_DISPATCHED",
+      "instructions": "Read each assigned request in requests.json. Shared DOI/title/registry ledger prevents duplicate downloads across batches. Run breadth alongside first-wave work; do not let Long COVID consume or replace the30+30scope.",
+      "return_path": "return/F01/acquisition-return.json",
+      "completion": "Per-request search/screening/coverage, lawful files, manifest metadata, unresolved gaps; no scientific result extraction or publication."
+    },
+    {
+      "id": "F02",
+      "title": "All36 observed Reddit questions",
+      "request_ids": [
+        "DR002",
+        "DR004",
+        "DR028",
+        "DR029",
+        "DR013",
+        "DR001",
+        "DR003",
+        "DR024",
+        "DR012",
+        "DR016",
+        "DR020",
+        "DR023",
+        "DR030",
+        "DR032",
+        "DR011",
+        "DR017",
+        "DR015",
+        "DR005",
+        "DR006",
+        "DR007",
+        "DR008",
+        "DR009",
+        "DR010",
+        "DR014",
+        "DR019",
+        "DR022",
+        "DR025",
+        "DR026",
+        "DR027",
+        "DR031",
+        "DR033",
+        "DR034",
+        "DR035",
+        "DR018",
+        "DR021",
+        "DR036"
+      ],
+      "wave": "first",
+      "plan_id": "SL-INGEST-3.1-FETCH30",
+      "plan_file": "ingestion-plan-v3.1.json",
+      "readiness_file": "readiness.json",
+      "schema_file": "acquisition-return.schema.json",
+      "owner": "Grokbot acquisition worker when dispatched; root remains integrator",
+      "launch_status": "NOT_DISPATCHED",
+      "instructions": "Read each assigned request in requests.json. Shared DOI/title/registry ledger prevents duplicate downloads across batches. Run breadth alongside first-wave work; do not let Long COVID consume or replace the30+30scope.",
+      "return_path": "return/F02/acquisition-return.json",
+      "completion": "Per-request search/screening/coverage, lawful files, manifest metadata, unresolved gaps; no scientific result extraction or publication."
+    },
+    {
+      "id": "F03",
+      "title": "Breadth batch 1: 5 drugs and 5 conditions",
+      "request_ids": [
+        "DRUG-D01",
+        "DRUG-D02",
+        "DRUG-D03",
+        "DRUG-D04",
+        "DRUG-D05",
+        "COND-C01",
+        "COND-C02",
+        "COND-C03",
+        "COND-C04",
+        "COND-C05"
+      ],
+      "wave": "parallel_breadth",
+      "plan_id": "SL-INGEST-3.1-FETCH30",
+      "plan_file": "ingestion-plan-v3.1.json",
+      "readiness_file": "readiness.json",
+      "schema_file": "acquisition-return.schema.json",
+      "owner": "Grokbot acquisition worker when dispatched; root remains integrator",
+      "launch_status": "NOT_DISPATCHED",
+      "instructions": "Read each assigned request in requests.json. Shared DOI/title/registry ledger prevents duplicate downloads across batches. Run breadth alongside first-wave work; do not let Long COVID consume or replace the30+30scope.",
+      "return_path": "return/F03/acquisition-return.json",
+      "completion": "Per-request search/screening/coverage, lawful files, manifest metadata, unresolved gaps; no scientific result extraction or publication."
+    },
+    {
+      "id": "F04",
+      "title": "Breadth batch 2: 4 drugs and 5 conditions",
+      "request_ids": [
+        "DRUG-D06",
+        "DRUG-D08",
+        "DRUG-D09",
+        "DRUG-D10",
+        "COND-C06",
+        "COND-C07",
+        "COND-C08",
+        "COND-C09",
+        "COND-C10"
+      ],
+      "wave": "parallel_breadth",
+      "plan_id": "SL-INGEST-3.1-FETCH30",
+      "plan_file": "ingestion-plan-v3.1.json",
+      "readiness_file": "readiness.json",
+      "schema_file": "acquisition-return.schema.json",
+      "owner": "Grokbot acquisition worker when dispatched; root remains integrator",
+      "launch_status": "NOT_DISPATCHED",
+      "instructions": "Read each assigned request in requests.json. Shared DOI/title/registry ledger prevents duplicate downloads across batches. Run breadth alongside first-wave work; do not let Long COVID consume or replace the30+30scope.",
+      "return_path": "return/F04/acquisition-return.json",
+      "completion": "Per-request search/screening/coverage, lawful files, manifest metadata, unresolved gaps; no scientific result extraction or publication."
+    },
+    {
+      "id": "F05",
+      "title": "Breadth batch 3: 5 drugs and 5 conditions",
+      "request_ids": [
+        "DRUG-D11",
+        "DRUG-D12",
+        "DRUG-D13",
+        "DRUG-D14",
+        "DRUG-D15",
+        "COND-C11",
+        "COND-C12",
+        "COND-C13",
+        "COND-C14",
+        "COND-C15"
+      ],
+      "wave": "parallel_breadth",
+      "plan_id": "SL-INGEST-3.1-FETCH30",
+      "plan_file": "ingestion-plan-v3.1.json",
+      "readiness_file": "readiness.json",
+      "schema_file": "acquisition-return.schema.json",
+      "owner": "Grokbot acquisition worker when dispatched; root remains integrator",
+      "launch_status": "NOT_DISPATCHED",
+      "instructions": "Read each assigned request in requests.json. Shared DOI/title/registry ledger prevents duplicate downloads across batches. Run breadth alongside first-wave work; do not let Long COVID consume or replace the30+30scope.",
+      "return_path": "return/F05/acquisition-return.json",
+      "completion": "Per-request search/screening/coverage, lawful files, manifest metadata, unresolved gaps; no scientific result extraction or publication."
+    },
+    {
+      "id": "F06",
+      "title": "Breadth batch 4: 5 drugs and 5 conditions",
+      "request_ids": [
+        "DRUG-D16",
+        "DRUG-D17",
+        "DRUG-D18",
+        "DRUG-D19",
+        "DRUG-D20",
+        "COND-C16",
+        "COND-C17",
+        "COND-C18",
+        "COND-C19",
+        "COND-C20"
+      ],
+      "wave": "parallel_breadth",
+      "plan_id": "SL-INGEST-3.1-FETCH30",
+      "plan_file": "ingestion-plan-v3.1.json",
+      "readiness_file": "readiness.json",
+      "schema_file": "acquisition-return.schema.json",
+      "owner": "Grokbot acquisition worker when dispatched; root remains integrator",
+      "launch_status": "NOT_DISPATCHED",
+      "instructions": "Read each assigned request in requests.json. Shared DOI/title/registry ledger prevents duplicate downloads across batches. Run breadth alongside first-wave work; do not let Long COVID consume or replace the30+30scope.",
+      "return_path": "return/F06/acquisition-return.json",
+      "completion": "Per-request search/screening/coverage, lawful files, manifest metadata, unresolved gaps; no scientific result extraction or publication."
+    },
+    {
+      "id": "F07",
+      "title": "Breadth batch 5: 5 drugs and 5 conditions",
+      "request_ids": [
+        "DRUG-D21",
+        "DRUG-D22",
+        "DRUG-D23",
+        "DRUG-D24",
+        "DRUG-D25",
+        "COND-C21",
+        "COND-C22",
+        "COND-C23",
+        "COND-C24",
+        "COND-C25"
+      ],
+      "wave": "parallel_breadth",
+      "plan_id": "SL-INGEST-3.1-FETCH30",
+      "plan_file": "ingestion-plan-v3.1.json",
+      "readiness_file": "readiness.json",
+      "schema_file": "acquisition-return.schema.json",
+      "owner": "Grokbot acquisition worker when dispatched; root remains integrator",
+      "launch_status": "NOT_DISPATCHED",
+      "instructions": "Read each assigned request in requests.json. Shared DOI/title/registry ledger prevents duplicate downloads across batches. Run breadth alongside first-wave work; do not let Long COVID consume or replace the30+30scope.",
+      "return_path": "return/F07/acquisition-return.json",
+      "completion": "Per-request search/screening/coverage, lawful files, manifest metadata, unresolved gaps; no scientific result extraction or publication."
+    },
+    {
+      "id": "F08",
+      "title": "Breadth batch 6: 5 drugs and 5 conditions",
+      "request_ids": [
+        "DRUG-D26",
+        "DRUG-D27",
+        "DRUG-D28",
+        "DRUG-D29",
+        "DRUG-D30",
+        "COND-C26",
+        "COND-C27",
+        "COND-C28",
+        "COND-C29",
+        "COND-C30"
+      ],
+      "wave": "parallel_breadth",
+      "plan_id": "SL-INGEST-3.1-FETCH30",
+      "plan_file": "ingestion-plan-v3.1.json",
+      "readiness_file": "readiness.json",
+      "schema_file": "acquisition-return.schema.json",
+      "owner": "Grokbot acquisition worker when dispatched; root remains integrator",
+      "launch_status": "NOT_DISPATCHED",
+      "instructions": "Read each assigned request in requests.json. Shared DOI/title/registry ledger prevents duplicate downloads across batches. Run breadth alongside first-wave work; do not let Long COVID consume or replace the30+30scope.",
+      "return_path": "return/F08/acquisition-return.json",
+      "completion": "Per-request search/screening/coverage, lawful files, manifest metadata, unresolved gaps; no scientific result extraction or publication."
+    }
+  ],
+  "parallelism": "F00 mandatory itraconazole + F01 repairs + F02 Reddit questions launch first alongside bounded F03–F08breadth; all required. One shared source ledger, each request has one primary owner.",
+  "calibration": "First returned tranche should include one itraconazole clinical citation lead, one preclinical lead and one correction/supplement recovery. Verify file identity, rights, schema and family links before scaling receipt processing; absence/access failure is explicit, not substituted with a positive paper.",
+  "workload": "No verified external throughput yet. Measure retrieval/access/identity time in the calibration return; no fabricated hours or fixed paper counts.",
+  "search_protocol": {
+    "databases": [
+      "PubMed/MEDLINE",
+      "Europe PMC",
+      "ClinicalTrials.gov",
+      "WHO ICTRP",
+      "ISRCTN",
+      "EU CTIS",
+      "publisher pages",
+      "lawful institutional repositories"
+    ],
+    "conditional_databases": "Embase/CENTRAL when available; log access limitations. Do not fabricate execution.",
+    "query_rules": "Translate neutral per-request queries and condition/drug aliases; separately search human originals, preclinical originals, harms/nulls and registry results. Do backward/forward citation chasing, exact identity lookups and a final update through cutoff.",
+    "logs": "Exact query/database/filter/time/hits/exported IDs; title/abstract screening decisions and exclusions; missing hits count remains null with reason. All-language discovery, original language preserved, significant translation awaiting qualified verification."
+  },
+  "identity": "Deduplicate reports by verified DOI/PMID/title/authors/year and exact file hashes. One source can support many requests. Family links use registration/cohort/experiment identity; report/protocol/supplement/review are not independent studies. Ambiguous merges remain unresolved. Preserve all preexistingCP28andpilot IDs and quarantine.",
+  "verification": {
+    "acquisition": "Validate JSON schema, exact files/hash/MIME, safe paths, per-request links, collection/tier, counts and source-version conflicts. No URL or HTML challenge may count asPDF.",
+    "later_ingestion": "Not authorized by this fetch-only worker contract. Before substantive extraction, persist a plan-matched source receipt, exact hashes and assignments, validate applicable source-record schema (bundledCP28v2 supports model/review/chapter records) and any typed result/synthesis extension. Recheck affected readiness first.",
+    "source_extraction_when_authorized": "Capture only printed drug/originaluse/newindication, design, population/model, exactN/arms, numerical outcomes/units/timepoints/uncertainty/harms and stated limitations with file, printed/PDFpage or EPUBchapter/XPath, table/figure and sourcehash. Numbers absent: NOT IN CORPUS; preserve context tiers. Inspect important tables/figures.",
+    "audit_when_authorized": "All launch-supporting claims/criticalnumbers and a recorded stratified sample; original results, author conclusions and reviewer judgments separate. Appraisal/Q01–Q15 are a separate reviewed layer, not acquisition metadata."
+  },
+  "mapping": {
+    "graph": "request/drug/condition/DR → source/report → studyfamily/experiment → locatedresult → scopedclaim → synthesisrow → overview/conditionpage/FAQ/review/citation; originalpaper and context remain distinct.",
+    "reader_output": "Drug overview explains identity/originaluse and proposeduses. Shared condition/use/outcome rows feed both drug and condition pages, including population/comparator, finding, magnitude/uncertainty, evidencecertainty orNotappraised, independentfamilies/design, principal limitation and source/review state.",
+    "typed_synthesis_boundary": "The future result/claim/synthesis schema and sharedrenderer must be tested before those new data are accepted or published. This acquisition schema carries request/page targets and sourceprovenance, not prefilled efficacy or grades.",
+    "coverage_states": [
+      "not_started",
+      "incomplete",
+      "complete_against_declared_search"
+    ],
+    "clinical_directness": "Human efficacy, preclinicalonly, noeligibleevidence in searchedscope and missingfulltext are different states."
+  },
+  "recovery": {
+    "attempts": "Try publisher, authoritative repository and author/institution copy where lawful; log each route. Return inaccessible/identityconflict as gaps. Never bypass access control.",
+    "resume": "Immutable sourcebytes and sourceIDs; changedfile is a version linked to priorhash. Retry only open gaps. Repeating same return must produce zero new canonical records.",
+    "rollback": "Stage under work/ingest/FETCH30/<batch>/<attempt>; snapshot acceptedcorpus before any laterimport. Preserve packet1.1history and oldCP28records. Failedreturns remain quarantined, existingdata unchanged."
+  },
+  "gates": {
+    "GP": "Packet/input/schema/hash/coverage readiness PASS before owner-facing readyhandoff or dispatch.",
+    "G2": "HOLD until searches/files/coverage actually returned and reconciled; preparedpacket does not mean fetched.",
+    "P2": "HOLD pending actualsource receipt and scientificextraction schema/mapping compatibility checks.",
+    "P3": "HOLD pending actual extraction, independent sourceaudit, countreconciliation and deterministic repeatimport.",
+    "publication": "No deployment, email, externalmessaging, efficacyconclusions or scientificapproval from this packet."
+  },
+  "downstream_ingestion": {
+    "authorization": "Acquisition worker must not perform scientific extraction/import. Plan3.1 records the future receipt/transfer sequence; before source extraction/import the integrator persists/rechecks a downstream source-ingestion plan and schema compatible with actual returned designs and evidence graph.",
+    "prerequisites": [
+      "Actual archives and separate receipt present in correct project",
+      "All schemas and source/identity/graph/manifest/hash checks pass; discrepancies reconciled",
+      "P2 receipt and extraction-plan/schema compatibility recorded prospectively",
+      "CP28 record schema is illustrative prior source schema; not silently universal or permission to extract computational designs",
+      "Then eligible data are extracted/verified/appraised/synthesized idempotently under existing review/publication gates"
+    ],
+    "destination": "Entity/condition overviews, shared uses/findings rows, scoped answers/FAQs, study appraisals and citations; preserve all target/question gaps."
+  }
+}

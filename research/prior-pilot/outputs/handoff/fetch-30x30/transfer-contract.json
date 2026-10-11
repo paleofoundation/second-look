@@ -1,0 +1,53 @@
+{
+  "contract_version": "SL-TRANSFER-3.1",
+  "project": "Second Look — Mission Control",
+  "project_id": "01a11a22-f81b-7682-b4a9-64ed1859b295",
+  "input_archive": "second-look-fetch-30x30-v2.1-input.zip",
+  "input_location": "Actual downloadable outgoing attachment named above, after root finalizes readiness and attaches it. All files are at extracted ZIP root. A sender Mac path alone is not an input location.",
+  "input_files": [
+    "ingestion-plan-v3.1.json",
+    "readiness.json",
+    "acquisition-return.schema.json",
+    "return-manifest.schema.json",
+    "delivery-receipt.schema.json",
+    "coverage-catalogue.json",
+    "requests.json",
+    "worker-packets.json",
+    "reddit-question-map.json",
+    "existing-cp28-sources.json",
+    "existing-pilot-identities.json",
+    "itraconazole-primary-leads.json",
+    "recovery-targets.json",
+    "search-locations.json",
+    "query-locations.json",
+    "known-source-locations.json",
+    "applicable-rule-v1.11.md",
+    "frozen-rule-v1.1.md",
+    "packet-manifest.json"
+  ],
+  "existing_fulltexts": "None supplied in this outgoing ZIP. It contains provenance/metadata only. No remote access to the owner Mac, connected folder or credentials is supplied. Reuse held files later through receiver reconciliation; fetch missing permitted originals without pretending to have read held books.",
+  "send_steps": [
+    "Root finalizes GP PASS, packet hashes and ZIP; attach second-look-fetch-30x30-v2.1-input.zip to Grok",
+    "Paste complete grokbot-prompt.txt from that exact ZIP and name the assigned F00–F08 batch(es)",
+    "If attachment is inaccessible, report exact transfer dependency; do not call pasted prompt self-contained or start dependent file acquisition"
+  ],
+  "return_mechanism": "Downloadable ZIP attachment(s) and a separate delivery-receipt.json attachment in the same Grok reply. Owner downloads all files and attaches them to exact Second Look Mission Control task, then pastes identical reverse prompt. Future attachment capability is unverified until actual dispatch/worker environment; inability to attach means blocked-transfer handoff, never invented shared link.",
+  "return_archive_pattern": "second-look-fetch-30x30-v2.1-F00-return.zip through second-look-fetch-30x30-v2.1-F08-return.zip",
+  "split_archive_pattern": "second-look-fetch-30x30-v2.1-Fxx-return-part-01-of-NN.zip (enumerate every actual part in receipt/prompt; no missing or duplicate payload across parts)",
+  "root_pattern": "return/Fxx/",
+  "manifest_pattern": "return/Fxx/manifest-part-01.json (one per archive; 1-based contiguous part_number/part_count)",
+  "data_path": "return/Fxx/acquisition-return.json; sources filenames relative to its directory under PRIMARY/ or CONTEXT/{REVIEW,TEXTBOOK,OTHER}/",
+  "receipt_filename_pattern": "second-look-fetch-30x30-v2.1-Fxx-delivery-receipt.json, separately attached outside ZIP",
+  "receiver_local_staging": "/Users/kmfp/Documents/Codex/2026-10-08/one-match-drug-repurposing/work/ingest/fetch-30x30/v2.1/Fxx/ (receiver local only; not shared)",
+  "hash_order": [
+    "Create actual source/data/contract files",
+    "Generate CHATGPT-INGEST-PROMPT.txt from actual batch files/counts and exact planned archive names; no absent-value placeholders",
+    "Create each manifest hashing all its payload including prompt; manifest omits itself",
+    "Build actual archives and compute archive bytes/hash and manifest hashes",
+    "Write separately attached delivery receipt with final hashes; never place this receipt in an archive that it hashes",
+    "Attach actual archives and receipt; print identical full prompt in one copyable block; if attachment fails use blocked-transfer branch"
+  ],
+  "reverse_prompt": "Mandatory return/Fxx/CHATGPT-INGEST-PROMPT.txt plus identical one-block final reply. prepare_return.py produces a filled single-archive prompt from actual acquisition data. For split returns adapt with every actual part/manifest, preserve all checks and exact-value fields.",
+  "blocked_transfer": "Final reply must begin BLOCKED TRANSFER — NOT READY TO INGEST. State exact project/task/batch/plan, what files actually exist, that sender-local paths are not receiver access, absent attachments/counts/hashes (null/not produced where absent), exact next download/attachment action and source/coverage gaps. Include a copyable blocked ingest prompt; do not invent a link or claim receipt. Delivery receipt may use blocked_transfer but cannot pass acquisition handoff completion.",
+  "acceptance": "JSON Schemas + check_packet.py packet checks, source/graph checks and check_delivery.py actual receipt/archive/prompt checks; receiving Mission Control alone accepts. No acquisition, extraction, ingestion or publication inferred from passing outgoing structure."
+}

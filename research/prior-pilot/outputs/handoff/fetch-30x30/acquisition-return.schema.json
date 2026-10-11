@@ -1,0 +1,818 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://second-look.local/schemas/acquisition-return-3.1.json",
+  "title": "Second Look acquisition-only return 3.1",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "SL-ACQUISITION-3.1"
+    },
+    "plan_id": {
+      "const": "SL-INGEST-3.1-FETCH30"
+    },
+    "plan_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "packet_version": {
+      "const": "2.1"
+    },
+    "batch_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "created_at": {
+      "type": "string",
+      "minLength": 1
+    },
+    "synthetic": {
+      "type": "boolean"
+    },
+    "scope_request_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "status": {
+      "enum": [
+        "candidate_return",
+        "incomplete"
+      ]
+    },
+    "searches": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/search"
+      }
+    },
+    "screening": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/screening"
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/source"
+      }
+    },
+    "coverage": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/coverage"
+      }
+    },
+    "gaps": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/gap"
+      }
+    },
+    "reconciliation": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "candidates_screened": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "included_sources": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "excluded_candidates": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "duplicate_candidates": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "uncertain_candidates": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "files_received": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "unavailable_sources": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "candidates_screened",
+        "included_sources",
+        "excluded_candidates",
+        "duplicate_candidates",
+        "uncertain_candidates",
+        "files_received",
+        "unavailable_sources"
+      ]
+    },
+    "validation_notes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "publication_status": {
+      "const": "not_authorized"
+    },
+    "extraction_status": {
+      "const": "not_started"
+    }
+  },
+  "required": [
+    "schema_version",
+    "plan_id",
+    "plan_sha256",
+    "packet_version",
+    "batch_id",
+    "created_at",
+    "synthetic",
+    "scope_request_ids",
+    "status",
+    "searches",
+    "screening",
+    "sources",
+    "coverage",
+    "gaps",
+    "reconciliation",
+    "validation_notes",
+    "publication_status",
+    "extraction_status"
+  ],
+  "$defs": {
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "source_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "report_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "study_family_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "family_identity_status": {
+          "enum": [
+            "verified",
+            "unresolved",
+            "not_applicable"
+          ]
+        },
+        "request_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "drug_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "condition_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "demand_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "authors": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "year": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1500,
+          "maximum": 2100
+        },
+        "doi_printed": {
+          "type": "string",
+          "minLength": 1
+        },
+        "doi_verified": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "doi_verification_source": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "pmid": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "pmcid": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "registry_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "identity_status": {
+          "enum": [
+            "verified",
+            "conflict",
+            "not_resolved"
+          ]
+        },
+        "identity_notes": {
+          "type": "string",
+          "minLength": 1
+        },
+        "collection": {
+          "enum": [
+            "PRIMARY",
+            "CONTEXT"
+          ]
+        },
+        "context_tier": {
+          "enum": [
+            null,
+            "REVIEW",
+            "TEXTBOOK",
+            "OTHER"
+          ]
+        },
+        "report_role": {
+          "enum": [
+            "original_report",
+            "protocol",
+            "supplement",
+            "correction",
+            "retraction_notice",
+            "replacement",
+            "registry",
+            "review",
+            "textbook",
+            "official_context",
+            "other"
+          ]
+        },
+        "design": {
+          "enum": [
+            "human_randomized",
+            "human_nonrandomized",
+            "human_observational",
+            "case_series",
+            "case_report",
+            "animal",
+            "cell_ex_vivo",
+            "computational",
+            "not_identified",
+            "not_applicable"
+          ]
+        },
+        "directness": {
+          "enum": [
+            "direct",
+            "indirect",
+            "mixed",
+            "not_checked",
+            "not_applicable"
+          ]
+        },
+        "access_state": {
+          "enum": [
+            "full_pdf",
+            "full_html",
+            "partial",
+            "abstract_only",
+            "metadata_only",
+            "registry_only",
+            "inaccessible",
+            "unreadable"
+          ]
+        },
+        "filename": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "media_type": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "bytes": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "sha256": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "original_url": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "resolved_url": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "retrieved_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "access_checked_at": {
+          "type": "string",
+          "minLength": 1
+        },
+        "rights_or_missing_reason": {
+          "type": "string",
+          "minLength": 1
+        },
+        "language": {
+          "type": "string",
+          "minLength": 1
+        },
+        "translated": {
+          "type": "boolean"
+        },
+        "translation_verification": {
+          "type": "string",
+          "minLength": 1
+        },
+        "duplicate_of": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "version_of": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "related_source_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "correction_check": {
+          "type": "string",
+          "minLength": 1
+        },
+        "fulltext_read": {
+          "const": false
+        },
+        "result_extraction_status": {
+          "const": "not_started"
+        },
+        "missing_reason": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "notes": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "source_id",
+        "report_id",
+        "study_family_id",
+        "family_identity_status",
+        "request_ids",
+        "drug_ids",
+        "condition_ids",
+        "demand_ids",
+        "title",
+        "authors",
+        "year",
+        "doi_printed",
+        "doi_verified",
+        "doi_verification_source",
+        "pmid",
+        "pmcid",
+        "registry_ids",
+        "identity_status",
+        "identity_notes",
+        "collection",
+        "context_tier",
+        "report_role",
+        "design",
+        "directness",
+        "access_state",
+        "filename",
+        "media_type",
+        "bytes",
+        "sha256",
+        "original_url",
+        "resolved_url",
+        "retrieved_at",
+        "access_checked_at",
+        "rights_or_missing_reason",
+        "language",
+        "translated",
+        "translation_verification",
+        "duplicate_of",
+        "version_of",
+        "related_source_ids",
+        "correction_check",
+        "fulltext_read",
+        "result_extraction_status",
+        "missing_reason",
+        "notes"
+      ]
+    },
+    "search": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "search_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "request_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "database": {
+          "type": "string",
+          "minLength": 1
+        },
+        "query": {
+          "type": "string",
+          "minLength": 1
+        },
+        "filters": {
+          "type": "string",
+          "minLength": 1
+        },
+        "executed_at": {
+          "type": "string",
+          "minLength": 1
+        },
+        "cutoff": {
+          "type": "string",
+          "minLength": 1
+        },
+        "hit_count": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "hit_count_missing_reason": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "exported_identifiers": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "database_access": {
+          "enum": [
+            "searched",
+            "unavailable",
+            "partially_accessible"
+          ]
+        },
+        "limitations": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "search_id",
+        "request_ids",
+        "database",
+        "query",
+        "filters",
+        "executed_at",
+        "cutoff",
+        "hit_count",
+        "hit_count_missing_reason",
+        "exported_identifiers",
+        "database_access",
+        "limitations"
+      ]
+    },
+    "screening": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "screening_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "search_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "candidate_identity": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "request_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "decision": {
+          "enum": [
+            "include",
+            "exclude",
+            "duplicate",
+            "uncertain"
+          ]
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        },
+        "stage": {
+          "enum": [
+            "title_abstract",
+            "identity_fulltext_metadata"
+          ]
+        },
+        "duplicate_of": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "reviewed_at": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "screening_id",
+        "search_id",
+        "candidate_identity",
+        "source_id",
+        "request_ids",
+        "decision",
+        "reason",
+        "stage",
+        "duplicate_of",
+        "reviewed_at"
+      ]
+    },
+    "coverage": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "request_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "enum": [
+            "complete_against_declared_search",
+            "incomplete",
+            "not_started"
+          ]
+        },
+        "search_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "source_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "primary_fulltexts": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "background_sources": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "independent_study_families": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "family_count_reason": {
+          "type": "string",
+          "minLength": 1
+        },
+        "human_primary_available": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "preclinical_only": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "remaining_gaps": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "next_action": {
+          "type": "string",
+          "minLength": 1
+        },
+        "completion_basis": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "request_id",
+        "status",
+        "search_ids",
+        "source_ids",
+        "primary_fulltexts",
+        "background_sources",
+        "independent_study_families",
+        "family_count_reason",
+        "human_primary_available",
+        "preclinical_only",
+        "remaining_gaps",
+        "next_action",
+        "completion_basis"
+      ]
+    },
+    "gap": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "gap_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "request_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "source_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "type": {
+          "enum": [
+            "access",
+            "identity",
+            "coverage",
+            "supplement",
+            "correction",
+            "registry_result",
+            "rights",
+            "format",
+            "unmapped_candidate"
+          ]
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "attempts": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "next_action": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "enum": [
+            "open",
+            "resolved"
+          ]
+        }
+      },
+      "required": [
+        "gap_id",
+        "request_ids",
+        "source_ids",
+        "type",
+        "description",
+        "attempts",
+        "next_action",
+        "status"
+      ]
+    }
+  }
+}

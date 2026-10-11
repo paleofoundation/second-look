@@ -1,0 +1,84 @@
+{
+  "version": "SL-MECHANISM-GOVERNANCE-1.0",
+  "recorded_at": "2026-10-09T14:53:37.135656+00:00",
+  "inspection": "Local plan/receipt/ledger metadata only; no new scientific source extraction or independent re-verification of archive bytes.",
+  "future_acquisition": {
+    "plan_id": "SL-INGEST-3.1-FETCH30",
+    "plan": {
+      "path": "outputs/handoff/fetch-30x30/ingestion-plan-v3.1.json",
+      "sha256": "67222fa44cb06e332d407bf113f0adcb6ab7908e81358a10282c7d6933ccf9b5"
+    },
+    "schema": {
+      "path": "outputs/handoff/fetch-30x30/acquisition-return.schema.json",
+      "sha256": "a9a51e67f49cca9dd5046953f538a171842f512b719ed6b97d0d5777b17228a1"
+    },
+    "readiness": {
+      "path": "outputs/handoff/fetch-30x30/readiness.json",
+      "sha256": "80a88dabd7020282df5fa03d6c499c1614a048afabf71df135867dee4a15c55d"
+    },
+    "operation_scope": "Future acquisition only; preserved, not edited or dispatched"
+  },
+  "historical_returns": {
+    "plan_id": "SL-INGEST-3.0-FETCH30",
+    "plan": {
+      "path": "outputs/handoff/history/acquisition-packet-v2.0/ingestion-plan-v3.0.json",
+      "sha256": "90150fe725c7d7c964e4aeb3c3c5574c8dfd64865d2c288857040725e98cad28"
+    },
+    "schema": {
+      "path": "outputs/handoff/history/acquisition-packet-v2.0/acquisition-return.schema.json",
+      "sha256": "b7be5e448c9b54e12e1145f9102e0664a101e67480f354117c476221da9155cb"
+    },
+    "worker_b": {
+      "receipt": {
+        "path": "outputs/ingest/FETCH30-B-20261009T101312Z/source-receipt.json",
+        "sha256": "aa2212c6bd149400853b7e973309d05f9b9e9fb9084660551b3d7ca5b7c6950a"
+      },
+      "archive_sha256_recorded": "54f7c76acac994c4d218c1c948d2715384e6dea5807b990371956e7341bc48bd",
+      "received_at_recorded": "2026-10-09T11:07:49.849165+00:00",
+      "source_records": 834,
+      "report_aliases": 674,
+      "file_records": 594,
+      "unique_file_blobs": 593,
+      "independent_studies": null,
+      "independent_studies_missing_reason": "unverified_registry_family_links",
+      "human_review_status": "pending",
+      "publication_state": "draft"
+    },
+    "worker_a_inspected_subset": {
+      "receipt": {
+        "path": "outputs/ingest/FETCH30-B-20261009T101312Z/audit/f00-receipt.json",
+        "sha256": "ee033cb35a0afaacebcea4d083f7bed3185898d9618a3663aafc9c6d9181580f"
+      },
+      "scope": "F00 source receipt for Worker B itraconazole cross-reference only; F01/F02 not imported by this subtask",
+      "archive_sha256_recorded": "59968e4e65cf1338d7a6be6614c250d426c8170e715b69561c5f758f60316ee6",
+      "receipt_state_recorded": "validated",
+      "outcome_extraction": "not_started",
+      "proposed_candidate_edges": 83,
+      "held_mapping_edges": 12,
+      "full_F01_F02_ingestion": "not established by inspected F00 subset receipt"
+    }
+  },
+  "current_state_reconciliation": {
+    "plan": {
+      "path": "outputs/ingest/FETCH30-B-20261009T101312Z/planning-repair/ingest-plan.json",
+      "sha256": "c4149ee2c0ff67f6a879e67c60d2b5ee9365bbd9284e849fd19bfd80832d15de"
+    },
+    "decision": {
+      "path": "outputs/ingest/FETCH30-B-20261009T101312Z/planning-repair/reconciliation-decision.json",
+      "sha256": "1f452de15810ad16187b41ba2c66171f83ee273b9b77fb765e8ab4e5b90dbe76"
+    },
+    "original_pre_ingestion_gate": "NOT_SATISFIED",
+    "retroactive_compliance": false,
+    "scope": "Existing source identities/files and three private candidates only",
+    "new_extractions_in_revalidation": 0,
+    "states_preserved": "Three candidates remain pending/pending/draft; no accepted results or claims created"
+  },
+  "holds": [
+    "Retracted REVIVE original and unlinked replacement remain excluded from scientific support",
+    "Itraconazole source links remain candidates/held mappings, not accepted mechanism or clinical findings",
+    "Unresolved neurological narrative/table and eligibility/age conflicts remain unresolved",
+    "Missing reported between-group estimate/CI is not filled from inference",
+    "No independent-study count inferred from report/source/file totals"
+  ],
+  "adoption_rule": "This prospective addendum supplements the next affected operation. It never rewrites an old dispatch/receipt contract, approves scientific content or retroactively passes an earlier planning gate."
+}

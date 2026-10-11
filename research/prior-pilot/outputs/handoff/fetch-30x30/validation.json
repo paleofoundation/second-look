@@ -1,0 +1,304 @@
+{
+  "checked_at": "2026-10-09T09:36:32.466407+00:00",
+  "status": "PASS",
+  "scope": "Authorized maintenance recheck of active packet2.1: schema, semantic, delivery and query-location regression checks. Synthetic tests create no acquired evidence or actual return. Final ZIP hash checks follow separately.",
+  "packet_checks": {
+    "status": "PASS",
+    "plan_id": "SL-INGEST-3.1-FETCH30",
+    "plan_sha256": "67222fa44cb06e332d407bf113f0adcb6ab7908e81358a10282c7d6933ccf9b5",
+    "drug_count": 30,
+    "condition_count": 30,
+    "request_count": 98,
+    "worker_count": 9,
+    "failures": [],
+    "performed_acquisition": false,
+    "performed_ingestion": false
+  },
+  "tests": [
+    {
+      "test": "Synthetic data denied as evidence",
+      "expected": "FAIL",
+      "observed": "FAIL",
+      "pass": true,
+      "reasons": [
+        "Synthetic fixture cannot be received as evidence"
+      ]
+    },
+    {
+      "test": "Unsearched incomplete data valid only as metadata candidate",
+      "expected": "PASS",
+      "observed": "PASS",
+      "pass": true,
+      "reasons": []
+    },
+    {
+      "test": "Wrong plan hash",
+      "expected": "FAIL",
+      "observed": "FAIL",
+      "pass": true,
+      "reasons": [
+        "Wrong plan hash"
+      ]
+    },
+    {
+      "test": "Old packet rejected",
+      "expected": "FAIL",
+      "observed": "FAIL",
+      "pass": true,
+      "reasons": [
+        "'2.1' was expected"
+      ]
+    },
+    {
+      "test": "Old schema rejected",
+      "expected": "FAIL",
+      "observed": "FAIL",
+      "pass": true,
+      "reasons": [
+        "'SL-ACQUISITION-3.1' was expected"
+      ]
+    },
+    {
+      "test": "Missing coverage",
+      "expected": "FAIL",
+      "observed": "FAIL",
+      "pass": true,
+      "reasons": [
+        "Coverage omissions"
+      ]
+    },
+    {
+      "test": "Unsearched complete claim",
+      "expected": "FAIL",
+      "observed": "FAIL",
+      "pass": true,
+      "reasons": [
+        "Complete coverage lacks search or still has gaps"
+      ]
+    },
+    {
+      "test": "Scientific extraction prohibited",
+      "expected": "FAIL",
+      "observed": "FAIL",
+      "pass": true,
+      "reasons": [
+        "'not_started' was expected"
+      ]
+    },
+    {
+      "test": "Phantom source count",
+      "expected": "FAIL",
+      "observed": "FAIL",
+      "pass": true,
+      "reasons": [
+        "Primary counts include duplicates/background/access gaps"
+      ]
+    },
+    {
+      "test": "Complete test-only empty-return packaging and receipt valid (zero acquisition)",
+      "expected": "PASS",
+      "observed": "PASS",
+      "pass": true,
+      "reasons": []
+    },
+    {
+      "test": "Wrong receiving project",
+      "expected": "FAIL",
+      "observed": "FAIL",
+      "pass": true,
+      "reasons": [
+        "Wrong project/batch/version"
+      ]
+    },
+    {
+      "test": "Sender claims receiver access verified",
+      "expected": "FAIL",
+      "observed": "FAIL",
+      "pass": true,
+      "reasons": [
+        "Sender cannot certify ChatGPT receipt/access"
+      ]
+    },
+    {
+      "test": "Missing all archives",
+      "expected": "FAIL",
+      "observed": "FAIL",
+      "pass": true,
+      "reasons": [
+        "No actual archives delivered",
+        "Missing return contract payload: return/F01/acquisition-return.json",
+        "Missing return contract payload: return/F01/CHATGPT-INGEST-PROMPT.txt",
+        "Missing return contract payload: return/F01/contract/ingestion-plan-v3.1.json",
+        "Missing return contract payload: return/F01/contract/readiness.json",
+        "Missing return contract payload: return/F01/contract/acquisition-return.schema.json",
+        "Missing return contract payload: return/F01/contract/delivery-receipt.schema.json",
+        "Missing return contract payload: return/F01/contract/return-manifest.schema.json",
+        "Missing return contract payload: return/F01/contract/coverage-catalogue.json",
+        "Missing return contract payload: return/F01/contract/requests.json",
+        "Missing return contract payload: return/F01/contract/worker-packets.json"
+      ]
+    },
+    {
+      "test": "Missing split part",
+      "expected": "FAIL",
+      "observed": "FAIL",
+      "pass": true,
+      "reasons": [
+        "Archive name/part ordering mismatch",
+        "Manifest split-part mismatch",
+        "Archive name/part ordering mismatch",
+        "Missing archive: missing-part.zip",
+        "Reverse prompt omits returned part/manifest"
+      ]
+    },
+    {
+      "test": "Bad archive hash",
+      "expected": "FAIL",
+      "observed": "FAIL",
+      "pass": true,
+      "reasons": [
+        "Archive byte/hash mismatch: second-look-fetch-30x30-v2.1-F01-return.zip"
+      ]
+    },
+    {
+      "test": "Bad manifest hash",
+      "expected": "FAIL",
+      "observed": "FAIL",
+      "pass": true,
+      "reasons": [
+        "Manifest hash mismatch"
+      ]
+    },
+    {
+      "test": "False file count",
+      "expected": "FAIL",
+      "observed": "FAIL",
+      "pass": true,
+      "reasons": [
+        "Receipt file count mismatch"
+      ]
+    },
+    {
+      "test": "False covered drug",
+      "expected": "FAIL",
+      "observed": "FAIL",
+      "pass": true,
+      "reasons": [
+        "Receipt drug coverage mismatch"
+      ]
+    },
+    {
+      "test": "Blocked transfer cannot pass delivery",
+      "expected": "FAIL",
+      "observed": "FAIL",
+      "pass": true,
+      "reasons": [
+        "Delivery did not create the contracted attachments"
+      ]
+    },
+    {
+      "test": "Synthetic delivery rejected",
+      "expected": "FAIL",
+      "observed": "FAIL",
+      "pass": true,
+      "reasons": [
+        "Synthetic delivery cannot be received as evidence"
+      ]
+    },
+    {
+      "test": "Missing reverse prompt with fresh archive hashes",
+      "expected": "FAIL",
+      "observed": "FAIL",
+      "pass": true,
+      "reasons": [
+        "Missing return contract payload: return/F01/CHATGPT-INGEST-PROMPT.txt"
+      ]
+    },
+    {
+      "test": "Prompt omits actual project after rehash",
+      "expected": "FAIL",
+      "observed": "FAIL",
+      "pass": true,
+      "reasons": [
+        "Reverse prompt missing required value/boundary: 01a11a22-f81b-7682-b4a9-64ed1859b295"
+      ]
+    },
+    {
+      "test": "Unfilled reverse-prompt placeholder after rehash",
+      "expected": "FAIL",
+      "observed": "FAIL",
+      "pass": true,
+      "reasons": [
+        "Reverse prompt retains unfilled placeholders"
+      ]
+    },
+    {
+      "test": "Traversal payload rejected without extraction",
+      "expected": "FAIL",
+      "observed": "FAIL",
+      "pass": true,
+      "reasons": [
+        "Unsafe/cross-batch ZIP member",
+        "Unsafe manifest payload path"
+      ]
+    },
+    {
+      "test": "Missing required schema payload after rehash",
+      "expected": "FAIL",
+      "observed": "FAIL",
+      "pass": true,
+      "reasons": [
+        "Missing return contract payload: return/F01/contract/acquisition-return.schema.json"
+      ]
+    },
+    {
+      "test": "Returned schema changed after rehash",
+      "expected": "FAIL",
+      "observed": "FAIL",
+      "pass": true,
+      "reasons": [
+        "Returned contract differs: acquisition-return.schema.json"
+      ]
+    },
+    {
+      "test": "All real Boolean/identifier query URLs and other96 location rows retained exactly",
+      "expected": "PASS",
+      "observed": "PASS",
+      "pass": true,
+      "reasons": []
+    },
+    {
+      "test": "Prose re-encoded as PubMed query rejected even with repinned input hash",
+      "expected": "FAIL",
+      "observed": "FAIL",
+      "pass": true,
+      "reasons": [
+        "RECOVERY retrieval instruction encoded as search query"
+      ]
+    },
+    {
+      "test": "All98 existing request bodies retained exactly; only wrapper plan/version updated",
+      "expected": "PASS",
+      "observed": "PASS",
+      "pass": true,
+      "reasons": []
+    },
+    {
+      "test": "Every request has query-location or retrieval-instruction entries",
+      "expected": "PASS",
+      "observed": "PASS",
+      "pass": true,
+      "reasons": []
+    }
+  ],
+  "test_count": 30,
+  "schema_hashes": {
+    "acquisition-return.schema.json": "a9a51e67f49cca9dd5046953f538a171842f512b719ed6b97d0d5777b17228a1",
+    "delivery-receipt.schema.json": "0b63f0ae7208d685c2e280e11b84d0a086d5dcb804408464e8d370b710d40c5e",
+    "return-manifest.schema.json": "34076af0bfe99b11276b2c7cd4df52e081439b35c46387f04a79a8dc4d517cc2"
+  },
+  "performed_acquisition": false,
+  "performed_ingestion": false,
+  "canonical_outputs_modified": true,
+  "integration_state": "Active packet maintenance accepted under root delegated repair; no dispatch or ingestion."
+}

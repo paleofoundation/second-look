@@ -1,0 +1,800 @@
+{
+  "schema_version": "1.0",
+  "artifact_type": "internal citation-discovery notes for future 30-drug/30-condition fetch plan",
+  "scope": {
+    "drug": "itraconazole",
+    "domain": "cancer",
+    "source_boundary": "Already-ingested CP28 local books/reviews only",
+    "no_web": true,
+    "no_acquisition": true,
+    "no_external_dispatch": true,
+    "no_substantive_new_fulltext_study_extraction": true,
+    "new_request_plan": "Root is preparing the versioned plan; this scratch artifact does not authorize or constitute a file-request handoff."
+  },
+  "counts": {
+    "distinct_named_probable_primary_reports": 5,
+    "printed_doi_primary_reports": 3,
+    "registry_only_leads": 13,
+    "secondary_context_leads": 9,
+    "acquired_primary_reports": 0
+  },
+  "source_manifest": [
+    {
+      "source_id": "CP027",
+      "filename": "Ranbir Chander Sobti, Sunil K. Lal, Ramesh K. Goyal - Drug Repurposing for Emerging Infectious Diseases and Cancer-Springer (2023).pdf",
+      "sha256": "31cc447b4f988bae3281f5e922ff5057c1bd9f04e75be4d45e530a0268042bd3",
+      "tier": "TEXTBOOK"
+    },
+    {
+      "source_id": "CP028",
+      "filename": "Tabish Qidwai - Drug Repurposing Against SARS-CoV-2-Bentham Science Publishers (2023).epub",
+      "sha256": "8aa90318e5ad69b6c7ffe4976224ffd11251e570ddedc76d2eeba43732723ac8",
+      "tier": "TEXTBOOK"
+    },
+    {
+      "source_id": "CP019",
+      "filename": "s41392-020-00280-x.pdf",
+      "sha256": "5cb8109dd41dbcef279a66cccfb72411c9b97252c8ab6481dd3c85a06f763798",
+      "tier": "REVIEW"
+    }
+  ],
+  "registry_leads": [
+    {
+      "lead_id": "FT30-ITRA-R001",
+      "registry_id": "NCT00887458",
+      "cancer_as_printed": "prostate cancer",
+      "intervention_as_printed": "itraconazole",
+      "locators": [
+        "Ch1 Table1.2 printed14/PDF34",
+        "Ch5 Table5.3 printed76/PDF93 and body75–77/PDF92–94",
+        "Ch14 body304/PDF316"
+      ],
+      "source_id": "CP027",
+      "filename": "Ranbir Chander Sobti, Sunil K. Lal, Ramesh K. Goyal - Drug Repurposing for Emerging Infectious Diseases and Cancer-Springer (2023).pdf",
+      "title": "NOT IN CORPUS",
+      "authors": "NOT IN CORPUS",
+      "year": "NOT IN CORPUS",
+      "doi": "DOI NOT PRINTED",
+      "article_type": "registry identifier only; not a primary publication",
+      "article_type_confidence": "high for presence of printed registry ID; underlying study/report unverified",
+      "why_fetch": "After the versioned plan is ready, resolve the registry and any linked primary reports, including unpublished/null results, without assuming recruitment status is current.",
+      "ambiguity": "Printed phase II; Ch14 sentence intermixes this identifier with NCT02357837. Reconcile identities.",
+      "already_in_cp28_manifest": false,
+      "original_record_acquired": false,
+      "dispatch_status": "NOT SENT"
+    },
+    {
+      "lead_id": "FT30-ITRA-R002",
+      "registry_id": "NCT03664115",
+      "cancer_as_printed": "lung cancer",
+      "intervention_as_printed": "itraconazole",
+      "locators": [
+        "Ch1 Table1.2 printed14/PDF34"
+      ],
+      "source_id": "CP027",
+      "filename": "Ranbir Chander Sobti, Sunil K. Lal, Ramesh K. Goyal - Drug Repurposing for Emerging Infectious Diseases and Cancer-Springer (2023).pdf",
+      "title": "NOT IN CORPUS",
+      "authors": "NOT IN CORPUS",
+      "year": "NOT IN CORPUS",
+      "doi": "DOI NOT PRINTED",
+      "article_type": "registry identifier only; not a primary publication",
+      "article_type_confidence": "high for presence of printed registry ID; underlying study/report unverified",
+      "why_fetch": "After the versioned plan is ready, resolve the registry and any linked primary reports, including unpublished/null results, without assuming recruitment status is current.",
+      "ambiguity": "Printed phase II; subtype and report identity not supplied.",
+      "already_in_cp28_manifest": false,
+      "original_record_acquired": false,
+      "dispatch_status": "NOT SENT"
+    },
+    {
+      "lead_id": "FT30-ITRA-R003",
+      "registry_id": "NCT02749513",
+      "cancer_as_printed": "oesophageal cancer",
+      "intervention_as_printed": "itraconazole",
+      "locators": [
+        "Ch1 Table1.2 printed14/PDF34"
+      ],
+      "source_id": "CP027",
+      "filename": "Ranbir Chander Sobti, Sunil K. Lal, Ramesh K. Goyal - Drug Repurposing for Emerging Infectious Diseases and Cancer-Springer (2023).pdf",
+      "title": "NOT IN CORPUS",
+      "authors": "NOT IN CORPUS",
+      "year": "NOT IN CORPUS",
+      "doi": "DOI NOT PRINTED",
+      "article_type": "registry identifier only; not a primary publication",
+      "article_type_confidence": "high for presence of printed registry ID; underlying study/report unverified",
+      "why_fetch": "After the versioned plan is ready, resolve the registry and any linked primary reports, including unpublished/null results, without assuming recruitment status is current.",
+      "ambiguity": "Printed early phase I; no result report supplied.",
+      "already_in_cp28_manifest": false,
+      "original_record_acquired": false,
+      "dispatch_status": "NOT SENT"
+    },
+    {
+      "lead_id": "FT30-ITRA-R004",
+      "registry_id": "NCT03081702",
+      "cancer_as_printed": "ovarian cancer / platinum-resistant epithelial ovarian cancer",
+      "intervention_as_printed": "itraconazole; hydroxychloroquine combination assignment requires registry confirmation",
+      "locators": [
+        "Ch1 Table1.2 printed14/PDF34",
+        "Ch5 Table5.3 printed76/PDF93"
+      ],
+      "source_id": "CP027",
+      "filename": "Ranbir Chander Sobti, Sunil K. Lal, Ramesh K. Goyal - Drug Repurposing for Emerging Infectious Diseases and Cancer-Springer (2023).pdf",
+      "title": "NOT IN CORPUS",
+      "authors": "NOT IN CORPUS",
+      "year": "NOT IN CORPUS",
+      "doi": "DOI NOT PRINTED",
+      "article_type": "registry identifier only; not a primary publication",
+      "article_type_confidence": "high for presence of printed registry ID; underlying study/report unverified",
+      "why_fetch": "After the versioned plan is ready, resolve the registry and any linked primary reports, including unpublished/null results, without assuming recruitment status is current.",
+      "ambiguity": "Ch5 groups this row below itraconazole and hydroxychloroquine; do not silently merge with the 2014 ovarian clear-cell report.",
+      "already_in_cp28_manifest": false,
+      "original_record_acquired": false,
+      "dispatch_status": "NOT SENT"
+    },
+    {
+      "lead_id": "FT30-ITRA-R005",
+      "registry_id": "NCT01900028",
+      "cancer_as_printed": "solid tumours",
+      "intervention_as_printed": "itraconazole",
+      "locators": [
+        "Ch1 Table1.2 printed14/PDF34"
+      ],
+      "source_id": "CP027",
+      "filename": "Ranbir Chander Sobti, Sunil K. Lal, Ramesh K. Goyal - Drug Repurposing for Emerging Infectious Diseases and Cancer-Springer (2023).pdf",
+      "title": "NOT IN CORPUS",
+      "authors": "NOT IN CORPUS",
+      "year": "NOT IN CORPUS",
+      "doi": "DOI NOT PRINTED",
+      "article_type": "registry identifier only; not a primary publication",
+      "article_type_confidence": "high for presence of printed registry ID; underlying study/report unverified",
+      "why_fetch": "After the versioned plan is ready, resolve the registry and any linked primary reports, including unpublished/null results, without assuming recruitment status is current.",
+      "ambiguity": "Printed phase I; broad label is not every individual cancer.",
+      "already_in_cp28_manifest": false,
+      "original_record_acquired": false,
+      "dispatch_status": "NOT SENT"
+    },
+    {
+      "lead_id": "FT30-ITRA-R006",
+      "registry_id": "NCT02259010",
+      "cancer_as_printed": "advanced solid tumours",
+      "intervention_as_printed": "itraconazole",
+      "locators": [
+        "Ch1 Table1.2 printed14/PDF34"
+      ],
+      "source_id": "CP027",
+      "filename": "Ranbir Chander Sobti, Sunil K. Lal, Ramesh K. Goyal - Drug Repurposing for Emerging Infectious Diseases and Cancer-Springer (2023).pdf",
+      "title": "NOT IN CORPUS",
+      "authors": "NOT IN CORPUS",
+      "year": "NOT IN CORPUS",
+      "doi": "DOI NOT PRINTED",
+      "article_type": "registry identifier only; not a primary publication",
+      "article_type_confidence": "high for presence of printed registry ID; underlying study/report unverified",
+      "why_fetch": "After the versioned plan is ready, resolve the registry and any linked primary reports, including unpublished/null results, without assuming recruitment status is current.",
+      "ambiguity": "Printed phase I; specific tumour types not supplied.",
+      "already_in_cp28_manifest": false,
+      "original_record_acquired": false,
+      "dispatch_status": "NOT SENT"
+    },
+    {
+      "lead_id": "FT30-ITRA-R007",
+      "registry_id": "NCT03513211",
+      "cancer_as_printed": "prostate cancer",
+      "intervention_as_printed": "itraconazole plus hydroxychloroquine",
+      "locators": [
+        "Ch5 Table5.3 printed76/PDF93"
+      ],
+      "source_id": "CP027",
+      "filename": "Ranbir Chander Sobti, Sunil K. Lal, Ramesh K. Goyal - Drug Repurposing for Emerging Infectious Diseases and Cancer-Springer (2023).pdf",
+      "title": "NOT IN CORPUS",
+      "authors": "NOT IN CORPUS",
+      "year": "NOT IN CORPUS",
+      "doi": "DOI NOT PRINTED",
+      "article_type": "registry identifier only; not a primary publication",
+      "article_type_confidence": "high for presence of printed registry ID; underlying study/report unverified",
+      "why_fetch": "After the versioned plan is ready, resolve the registry and any linked primary reports, including unpublished/null results, without assuming recruitment status is current.",
+      "ambiguity": "Printed phase I & II; no primary report title supplied.",
+      "already_in_cp28_manifest": false,
+      "original_record_acquired": false,
+      "dispatch_status": "NOT SENT"
+    },
+    {
+      "lead_id": "FT30-ITRA-R008",
+      "registry_id": "NCT04081831",
+      "cancer_as_printed": "gastrointestinal cancer",
+      "intervention_as_printed": "itraconazole",
+      "locators": [
+        "Ch5 Table5.3 printed76/PDF93"
+      ],
+      "source_id": "CP027",
+      "filename": "Ranbir Chander Sobti, Sunil K. Lal, Ramesh K. Goyal - Drug Repurposing for Emerging Infectious Diseases and Cancer-Springer (2023).pdf",
+      "title": "NOT IN CORPUS",
+      "authors": "NOT IN CORPUS",
+      "year": "NOT IN CORPUS",
+      "doi": "DOI NOT PRINTED",
+      "article_type": "registry identifier only; not a primary publication",
+      "article_type_confidence": "high for presence of printed registry ID; underlying study/report unverified",
+      "why_fetch": "After the versioned plan is ready, resolve the registry and any linked primary reports, including unpublished/null results, without assuming recruitment status is current.",
+      "ambiguity": "No phase supplied in the printed row; do not expand to all GI cancers.",
+      "already_in_cp28_manifest": false,
+      "original_record_acquired": false,
+      "dispatch_status": "NOT SENT"
+    },
+    {
+      "lead_id": "FT30-ITRA-R009",
+      "registry_id": "NCT02357836",
+      "cancer_as_printed": "non-small-cell lung cancer",
+      "intervention_as_printed": "itraconazole",
+      "locators": [
+        "Ch5 Table5.3 printed76/PDF93 and body77/PDF94",
+        "Ch14 body304/PDF316"
+      ],
+      "source_id": "CP027",
+      "filename": "Ranbir Chander Sobti, Sunil K. Lal, Ramesh K. Goyal - Drug Repurposing for Emerging Infectious Diseases and Cancer-Springer (2023).pdf",
+      "title": "NOT IN CORPUS",
+      "authors": "NOT IN CORPUS",
+      "year": "NOT IN CORPUS",
+      "doi": "DOI NOT PRINTED",
+      "article_type": "registry identifier only; not a primary publication",
+      "article_type_confidence": "high for presence of printed registry ID; underlying study/report unverified",
+      "why_fetch": "After the versioned plan is ready, resolve the registry and any linked primary reports, including unpublished/null results, without assuming recruitment status is current.",
+      "ambiguity": "Ch5 prints early phase I; Ch14 confusing sentence describes phase II. Identity/design reconciliation HOLD; no result report title supplied.",
+      "already_in_cp28_manifest": false,
+      "original_record_acquired": false,
+      "dispatch_status": "NOT SENT"
+    },
+    {
+      "lead_id": "FT30-ITRA-R010",
+      "registry_id": "NCT01108094",
+      "cancer_as_printed": "skin cancer",
+      "intervention_as_printed": "itraconazole",
+      "locators": [
+        "Ch5 Table5.3 printed76/PDF93"
+      ],
+      "source_id": "CP027",
+      "filename": "Ranbir Chander Sobti, Sunil K. Lal, Ramesh K. Goyal - Drug Repurposing for Emerging Infectious Diseases and Cancer-Springer (2023).pdf",
+      "title": "NOT IN CORPUS",
+      "authors": "NOT IN CORPUS",
+      "year": "NOT IN CORPUS",
+      "doi": "DOI NOT PRINTED",
+      "article_type": "registry identifier only; not a primary publication",
+      "article_type_confidence": "high for presence of printed registry ID; underlying study/report unverified",
+      "why_fetch": "After the versioned plan is ready, resolve the registry and any linked primary reports, including unpublished/null results, without assuming recruitment status is current.",
+      "ambiguity": "Printed phase II; exact subtype not established by the generic table label.",
+      "already_in_cp28_manifest": false,
+      "original_record_acquired": false,
+      "dispatch_status": "NOT SENT"
+    },
+    {
+      "lead_id": "FT30-ITRA-R011",
+      "registry_id": "NCT04018872",
+      "cancer_as_printed": "esophageal squamous-cell cancer",
+      "intervention_as_printed": "itraconazole",
+      "locators": [
+        "Ch5 Table5.3 printed76/PDF93"
+      ],
+      "source_id": "CP027",
+      "filename": "Ranbir Chander Sobti, Sunil K. Lal, Ramesh K. Goyal - Drug Repurposing for Emerging Infectious Diseases and Cancer-Springer (2023).pdf",
+      "title": "NOT IN CORPUS",
+      "authors": "NOT IN CORPUS",
+      "year": "NOT IN CORPUS",
+      "doi": "DOI NOT PRINTED",
+      "article_type": "registry identifier only; not a primary publication",
+      "article_type_confidence": "high for presence of printed registry ID; underlying study/report unverified",
+      "why_fetch": "After the versioned plan is ready, resolve the registry and any linked primary reports, including unpublished/null results, without assuming recruitment status is current.",
+      "ambiguity": "Printed registry lead; no primary report title supplied.",
+      "already_in_cp28_manifest": false,
+      "original_record_acquired": false,
+      "dispatch_status": "NOT SENT"
+    },
+    {
+      "lead_id": "FT30-ITRA-R012",
+      "registry_id": "NCT02357837",
+      "cancer_as_printed": "prostate cancer as assigned by the Ch14 sentence; mapping uncertain",
+      "intervention_as_printed": "itraconazole attribution in ambiguous sentence",
+      "locators": [
+        "Ch14 body304/PDF316"
+      ],
+      "source_id": "CP027",
+      "filename": "Ranbir Chander Sobti, Sunil K. Lal, Ramesh K. Goyal - Drug Repurposing for Emerging Infectious Diseases and Cancer-Springer (2023).pdf",
+      "title": "NOT IN CORPUS",
+      "authors": "NOT IN CORPUS",
+      "year": "NOT IN CORPUS",
+      "doi": "DOI NOT PRINTED",
+      "article_type": "registry identifier only; not a primary publication",
+      "article_type_confidence": "high for presence of printed registry ID; underlying study/report unverified",
+      "why_fetch": "After the versioned plan is ready, resolve the registry and any linked primary reports, including unpublished/null results, without assuming recruitment status is current.",
+      "ambiguity": "Potential identifier/assignment inconsistency alongside NCT02357836 and NCT00887458; do not auto-correct or treat as a distinct confirmed cancer study.",
+      "already_in_cp28_manifest": false,
+      "original_record_acquired": false,
+      "dispatch_status": "NOT SENT"
+    },
+    {
+      "lead_id": "FT30-ITRA-R013",
+      "registry_id": "NCT02401295",
+      "cancer_as_printed": "multiple myeloma",
+      "intervention_as_printed": "printed combination 'ARTA and itraconazole' under the celecoxib table group",
+      "locators": [
+        "CP019 PDF p7 Table1"
+      ],
+      "source_id": "CP019",
+      "filename": "s41392-020-00280-x.pdf",
+      "title": "NOT IN CORPUS",
+      "authors": "NOT IN CORPUS",
+      "year": "NOT IN CORPUS",
+      "doi": "DOI NOT PRINTED",
+      "article_type": "registry identifier only; not a primary publication",
+      "article_type_confidence": "high for presence of printed registry ID; underlying study/report unverified",
+      "why_fetch": "After the versioned plan is ready, resolve the registry and any linked primary reports, including unpublished/null results, without assuming recruitment status is current.",
+      "ambiguity": "ARTA is preserved as printed; no generic expansion inferred. Historical completed status is not proof of a published result.",
+      "already_in_cp28_manifest": false,
+      "original_record_acquired": false,
+      "dispatch_status": "NOT SENT"
+    }
+  ],
+  "secondary_context_leads": [
+    {
+      "lead_id": "FT30-ITRA-C001",
+      "authors_printed": "Turanli B, Grøtli M, Boren J, Nielsen J, Uhlen M, Arga KY, Mardinoglu A",
+      "year": 2018,
+      "title": "Drug repositioning for effective prostate cancer treatment.",
+      "journal_volume_pages_printed": "Front Physiol 9:500",
+      "doi": "DOI NOT PRINTED",
+      "source_id": "CP027",
+      "filename": "Ranbir Chander Sobti, Sunil K. Lal, Ramesh K. Goyal - Drug Repurposing for Emerging Infectious Diseases and Cancer-Springer (2023).pdf",
+      "locator": "Ch11 body230/PDF243; ref251/PDF264",
+      "article_type": "secondary review/context; not an itraconazole primary-result report",
+      "article_type_confidence": "provisional from citation title and book context; original article not inspected",
+      "why_fetch": "Optional citation-chasing source when a named cancer branch lacks a directly printed primary report; never count as original evidence.",
+      "already_in_cp28_manifest": false,
+      "dispatch_status": "NOT SENT"
+    },
+    {
+      "lead_id": "FT30-ITRA-C002",
+      "authors_printed": "Turanli B, Altay O, Borén J, Turkez H, Nielsen J, Uhlen M, Arga KY, Mardinoglu A",
+      "year": 2021,
+      "title": "Systems biology based drug repositioning for development of cancer therapy.",
+      "journal_volume_pages_printed": "Seminars in cancer biology 68:47–58",
+      "doi": "DOI NOT PRINTED",
+      "source_id": "CP027",
+      "filename": "Ranbir Chander Sobti, Sunil K. Lal, Ramesh K. Goyal - Drug Repurposing for Emerging Infectious Diseases and Cancer-Springer (2023).pdf",
+      "locator": "Ch11 Table11.3 printed235/PDF248; ref251/PDF264",
+      "article_type": "secondary review/context; not an itraconazole primary-result report",
+      "article_type_confidence": "provisional from citation title and book context; original article not inspected",
+      "why_fetch": "Optional citation-chasing source when a named cancer branch lacks a directly printed primary report; never count as original evidence.",
+      "already_in_cp28_manifest": false,
+      "dispatch_status": "NOT SENT"
+    },
+    {
+      "lead_id": "FT30-ITRA-C003",
+      "authors_printed": "Gupta SC, Sung B, Prasad S, Webb LJ, Aggarwal BB",
+      "year": 2013,
+      "title": "Cancer drug discovery by repurposing: teaching new tricks to old dogs.",
+      "journal_volume_pages_printed": "Trends Pharmacol Sci 34(9):508–517",
+      "doi": "DOI NOT PRINTED",
+      "source_id": "CP027",
+      "filename": "Ranbir Chander Sobti, Sunil K. Lal, Ramesh K. Goyal - Drug Repurposing for Emerging Infectious Diseases and Cancer-Springer (2023).pdf",
+      "locator": "Ch11 pooled Table11.3 citations printed235/PDF248; ref249/PDF262",
+      "article_type": "secondary review/context; not an itraconazole primary-result report",
+      "article_type_confidence": "provisional from citation title and book context; original article not inspected",
+      "why_fetch": "Optional citation-chasing source when a named cancer branch lacks a directly printed primary report; never count as original evidence.",
+      "already_in_cp28_manifest": false,
+      "dispatch_status": "NOT SENT"
+    },
+    {
+      "lead_id": "FT30-ITRA-C004",
+      "authors_printed": "Kale VP, Habib H, Chitren R, Patel M, Pramanik KC, Jonnalagadda SC, …, Pandey MK",
+      "year": 2021,
+      "title": "Old drugs, new uses: drug repurposing in hematological malignancies.",
+      "journal_volume_pages_printed": "Seminars in cancer biology 68:242–248",
+      "doi": "DOI NOT PRINTED",
+      "source_id": "CP027",
+      "filename": "Ranbir Chander Sobti, Sunil K. Lal, Ramesh K. Goyal - Drug Repurposing for Emerging Infectious Diseases and Cancer-Springer (2023).pdf",
+      "locator": "Ch11 pooled Table11.3/11.4 citations printed235–236/PDF248–249; ref249/PDF262",
+      "article_type": "secondary review/context; not an itraconazole primary-result report",
+      "article_type_confidence": "provisional from citation title and book context; original article not inspected",
+      "why_fetch": "Optional citation-chasing source when a named cancer branch lacks a directly printed primary report; never count as original evidence.",
+      "already_in_cp28_manifest": false,
+      "dispatch_status": "NOT SENT"
+    },
+    {
+      "lead_id": "FT30-ITRA-C005",
+      "authors_printed": "Wojcicki AV, Kadapakkam M, Frymoyer A, Lacayo N, Chae HD, Sakamoto KM",
+      "year": 2020,
+      "title": "Repurposing drugs for acute myeloid leukemia: a worthy cause or a futile pursuit?",
+      "journal_volume_pages_printed": "Cancers 12(2):441",
+      "doi": "DOI NOT PRINTED",
+      "source_id": "CP027",
+      "filename": "Ranbir Chander Sobti, Sunil K. Lal, Ramesh K. Goyal - Drug Repurposing for Emerging Infectious Diseases and Cancer-Springer (2023).pdf",
+      "locator": "Ch11 Table11.4 printed236/PDF249; ref252/PDF265",
+      "article_type": "secondary review/context; not an itraconazole primary-result report",
+      "article_type_confidence": "provisional from citation title and book context; original article not inspected",
+      "why_fetch": "Optional citation-chasing source when a named cancer branch lacks a directly printed primary report; never count as original evidence.",
+      "already_in_cp28_manifest": false,
+      "dispatch_status": "NOT SENT"
+    },
+    {
+      "lead_id": "FT30-ITRA-C006",
+      "authors_printed": "Ioannidou E, Moschetta M, Shah S, Parker JS, Ozturk MA, Pappas-Gogos G, Sheriff M, Rassy E, Boussios S",
+      "year": 2021,
+      "title": "Angiogenesis and anti-angiogenic treatment in prostate cancer: mechanisms of action and molecular targets.",
+      "journal_volume_pages_printed": "Int J Mol Sci 22(18):9926",
+      "doi": "10.3390/ijms22189926",
+      "source_id": "CP027",
+      "filename": "Ranbir Chander Sobti, Sunil K. Lal, Ramesh K. Goyal - Drug Repurposing for Emerging Infectious Diseases and Cancer-Springer (2023).pdf",
+      "locator": "Ch14 body304/PDF316; ref325/PDF337",
+      "article_type": "secondary review/context; not an itraconazole primary-result report",
+      "article_type_confidence": "provisional from citation title and book context; original article not inspected",
+      "why_fetch": "Optional citation-chasing source when a named cancer branch lacks a directly printed primary report; never count as original evidence.",
+      "already_in_cp28_manifest": false,
+      "dispatch_status": "NOT SENT"
+    },
+    {
+      "lead_id": "FT30-ITRA-C007",
+      "authors_printed": "Zhong L, Li Y, Xiong L, Wang W, Wu M, Yuan T, Yang W, Tian C, Miao Z, Wang T, Yang S",
+      "year": 2021,
+      "title": "Small molecules in targeted cancer therapy: advances, challenges, and future perspectives.",
+      "journal_volume_pages_printed": "Signal Transduct Target Ther 6(1):201",
+      "doi": "10.1038/s41392-021-00572-w",
+      "source_id": "CP027",
+      "filename": "Ranbir Chander Sobti, Sunil K. Lal, Ramesh K. Goyal - Drug Repurposing for Emerging Infectious Diseases and Cancer-Springer (2023).pdf",
+      "locator": "Ch14 body304/PDF316; ref328/PDF340",
+      "article_type": "secondary review/context; not an itraconazole primary-result report",
+      "article_type_confidence": "provisional from citation title and book context; original article not inspected",
+      "why_fetch": "Optional citation-chasing source when a named cancer branch lacks a directly printed primary report; never count as original evidence.",
+      "already_in_cp28_manifest": false,
+      "dispatch_status": "NOT SENT"
+    },
+    {
+      "lead_id": "FT30-ITRA-C008",
+      "authors_printed": "Zhang Z et al.",
+      "year": 2020,
+      "title": "Overcoming cancer therapeutic bottleneck by drug repurposing.",
+      "journal_volume_pages_printed": "Signal Transduction Target Ther 5(1):1–25",
+      "doi": "DOI NOT PRINTED",
+      "source_id": "CP027",
+      "filename": "Ranbir Chander Sobti, Sunil K. Lal, Ramesh K. Goyal - Drug Repurposing for Emerging Infectious Diseases and Cancer-Springer (2023).pdf",
+      "locator": "Ch22 Table22.4 printed527/PDF537; ref528/PDF538 (printed year suffix 2020b)",
+      "article_type": "secondary review/context; not an itraconazole primary-result report",
+      "article_type_confidence": "provisional from citation title and book context; original article not inspected",
+      "why_fetch": "Optional citation-chasing source when a named cancer branch lacks a directly printed primary report; never count as original evidence.",
+      "already_in_cp28_manifest": false,
+      "dispatch_status": "NOT SENT"
+    },
+    {
+      "lead_id": "FT30-ITRA-C009",
+      "authors_printed": "Tran AA, Prasad V",
+      "year": 2020,
+      "title": "Drug repurposing for cancer treatments: a well-intentioned, but misguided strategy.",
+      "journal_volume_pages_printed": "Lancet Oncol 21(9):1134–1136",
+      "doi": "DOI NOT PRINTED",
+      "source_id": "CP027",
+      "filename": "Ranbir Chander Sobti, Sunil K. Lal, Ramesh K. Goyal - Drug Repurposing for Emerging Infectious Diseases and Cancer-Springer (2023).pdf",
+      "locator": "Ch22 discussion526–527/PDF536–537; ref528/PDF538",
+      "article_type": "commentary / general methodological criticism",
+      "article_type_confidence": "provisional from citation title and book context; original article not inspected",
+      "why_fetch": "Optional context for limitations of the repurposing strategy; not a null itraconazole study.",
+      "already_in_cp28_manifest": false,
+      "dispatch_status": "NOT SENT"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "source_id": "CP027",
+      "filename": "Ranbir Chander Sobti, Sunil K. Lal, Ramesh K. Goyal - Drug Repurposing for Emerging Infectious Diseases and Cancer-Springer (2023).pdf",
+      "locator": "Preface printed vi–vii/PDF6–7",
+      "cancers": [
+        "medulloblastoma",
+        "non-small-cell lung cancer",
+        "basal-cell carcinoma"
+      ],
+      "reason": "No exact original-study citation attached to these preface mentions. Do not infer report identities."
+    },
+    {
+      "source_id": "CP027",
+      "filename": "Ranbir Chander Sobti, Sunil K. Lal, Ramesh K. Goyal - Drug Repurposing for Emerging Infectious Diseases and Cancer-Springer (2023).pdf",
+      "locator": "Ch11 Table11.3 printed235/PDF248; Table11.4 printed236/PDF249",
+      "cancers": [
+        "lung cancer",
+        "prostate cancer",
+        "esophageal cancer",
+        "brain cancer",
+        "acute myeloid leukemia",
+        "acute lymphoid leukemia"
+      ],
+      "reason": "Pooled secondary references, not one attributable primary report per indication. Do not expand an umbrella cancer label or treat these as verified treatment evidence."
+    },
+    {
+      "source_id": "CP027",
+      "filename": "Ranbir Chander Sobti, Sunil K. Lal, Ramesh K. Goyal - Drug Repurposing for Emerging Infectious Diseases and Cancer-Springer (2023).pdf",
+      "locator": "Ch22 Tables22.3–22.4 printed526–527/PDF536–537",
+      "cancers": [
+        "prostate cancer",
+        "lung cancer"
+      ],
+      "reason": "Candidate/mechanistic tables with secondary citation chains; no new primary report identity."
+    }
+  ],
+  "coverage": {
+    "springer": "All local itracona* occurrences searched in existing book text; direct body/reference and table continuation links traced by rule_audit and checked by evidence worker for the five primary references and added registry rows.",
+    "bentham": "All seven existing chapter texts searched, including split-word normalization. Ch1 cancer paragraph/ref70 provides the melanoma report. Ch4 itraconazole virus-cell mention is outside this cancer task.",
+    "reviews": "All eight REVIEW texts searched with split-word normalization. CP019 only has a cancer trial-registry row; CP006,CP008,CP010,CP014,CP018,CP020,CP023 have no itraconazole match.",
+    "other": "CP001 contains veterinary FIP itraconazole mentions and is outside cancer scope.",
+    "null_negative_leads": "No explicitly identified itraconazole-specific null/negative original report found in these matched local passages. This is not evidence that null reports do not exist; future acquisition must search for them.",
+    "fallback_30candidate_doi_search": "Not needed: five itraconazole primary-report leads exist. No other-drug DOI discovery performed."
+  },
+  "review_state": "Private AI bibliographic discovery; not scientific appraisal or human approval",
+  "primary_report_candidates": [
+    {
+      "drug": "itraconazole",
+      "discovery_state": "printed citation lead only",
+      "original_fulltext_acquired": false,
+      "substantive_result_extraction_performed": false,
+      "already_in_cp28_manifest": false,
+      "manifest_match_basis": "No exact DOI/title match among the 28 manifest entries; the citing books are present but these cited reports are not.",
+      "dispatch_status": "NOT SENT",
+      "original_version_correction_retraction_status": "NOT CHECKED; verify during future authorized acquisition",
+      "candidate_id": "FT30-ITRA-P001",
+      "title": "Itraconazole exerts its anti-melanoma effect by suppressing Hedgehog, Wnt, and PI3K/mTOR signaling pathways.",
+      "authors_printed": "Liang G, Liu M, Wang Q, Shen Y, Mei H, Li D, Liu W",
+      "year": 2017,
+      "journal_printed": "Oncotarget",
+      "volume_issue_pages_printed": "8(17):28510–28525",
+      "doi": "10.18632/oncotarget.15324",
+      "pmid_printed": "28212537",
+      "article_type": {
+        "classification": "probable original preclinical report",
+        "confidence": "moderate; based on cited title and textbook narrative, not the original report"
+      },
+      "cancer_model": "Melanoma; exact cell lines, animal models and experimental designs NOT IN CORPUS for this discovery record.",
+      "why_fetch": "Both books link itraconazole specifically to melanoma mechanisms. Obtain the original report to verify models, design, negative experiments, numerical outcomes and source integrity; do not expand to all skin cancers.",
+      "source_locations": [
+        {
+          "source_id": "CP027",
+          "filename": "Ranbir Chander Sobti, Sunil K. Lal, Ramesh K. Goyal - Drug Repurposing for Emerging Infectious Diseases and Cancer-Springer (2023).pdf",
+          "chapter": 5,
+          "printed_page": "68",
+          "pdf_page": 85,
+          "role": "body crosslink",
+          "detail": "Section 5.5.2.10.2 cites Liang et al. 2017 for melanoma."
+        },
+        {
+          "source_id": "CP027",
+          "filename": "Ranbir Chander Sobti, Sunil K. Lal, Ramesh K. Goyal - Drug Repurposing for Emerging Infectious Diseases and Cancer-Springer (2023).pdf",
+          "chapter": 5,
+          "printed_page": "83",
+          "pdf_page": 100,
+          "role": "bibliographic reference",
+          "detail": "Full printed author list, title, journal, pages and DOI."
+        },
+        {
+          "source_id": "CP027",
+          "filename": "Ranbir Chander Sobti, Sunil K. Lal, Ramesh K. Goyal - Drug Repurposing for Emerging Infectious Diseases and Cancer-Springer (2023).pdf",
+          "chapter": 5,
+          "printed_page": "61",
+          "pdf_page": 78,
+          "role": "table crosslink",
+          "detail": "Table 5.1 (continued), itraconazole row."
+        },
+        {
+          "source_id": "CP028",
+          "filename": "Tabish Qidwai - Drug Repurposing Against SARS-CoV-2-Bentham Science Publishers (2023).epub",
+          "chapter": 1,
+          "printed_page": "NOT IN CORPUS",
+          "internal_file": "OEBPS/Text/9789815123197-C1.html",
+          "body_xpath": "/x:html[1]/x:body[1]/x:div[2]/x:div[3]/x:div[2]/x:p[1]",
+          "reference_xpath": "/x:html[1]/x:body[1]/x:div[3]/x:table[1]/x:tr[71]",
+          "reference_anchor": "r70",
+          "reference_number": 70,
+          "role": "body-to-reference crosslink",
+          "detail": "Cancer paragraph explicitly links the itraconazole statement to reference 70."
+        }
+      ],
+      "metadata_notes": [
+        "EPUB prints the abbreviated author list Liang G, Liu M, Wang Q, et al. and page range 28510–25; Springer supplies the full printed list and expanded range. These are one candidate report, not two."
+      ]
+    },
+    {
+      "drug": "itraconazole",
+      "discovery_state": "printed citation lead only",
+      "original_fulltext_acquired": false,
+      "substantive_result_extraction_performed": false,
+      "already_in_cp28_manifest": false,
+      "manifest_match_basis": "No exact DOI/title match among the 28 manifest entries; the citing books are present but these cited reports are not.",
+      "dispatch_status": "NOT SENT",
+      "original_version_correction_retraction_status": "NOT CHECKED; verify during future authorized acquisition",
+      "candidate_id": "FT30-ITRA-P002",
+      "title": "Itraconazole inhibits the Hedgehog signaling pathway thereby inducing autophagy-mediated apoptosis of colon cancer cells.",
+      "authors_printed": "Deng H, Huang L, Liao Z, Liu M, Li Q, Xu R",
+      "year": 2020,
+      "journal_printed": "Cell Death Dis",
+      "volume_issue_pages_printed": "11(7):539",
+      "doi": "10.1038/s41419-020-02742-0",
+      "pmid_printed": "NOT IN CORPUS",
+      "article_type": {
+        "classification": "probable original cell/preclinical report",
+        "confidence": "moderate; title and body explicitly concern colon cancer cells"
+      },
+      "cancer_model": "Colon cancer cells; specific models and any additional in vivo work NOT IN CORPUS for this discovery record.",
+      "why_fetch": "Direct named reference for the colon-cancer branch; original report is needed before making efficacy, mechanism or model-specific claims.",
+      "source_locations": [
+        {
+          "source_id": "CP027",
+          "filename": "Ranbir Chander Sobti, Sunil K. Lal, Ramesh K. Goyal - Drug Repurposing for Emerging Infectious Diseases and Cancer-Springer (2023).pdf",
+          "chapter": 5,
+          "printed_page": "68",
+          "pdf_page": 85,
+          "role": "body crosslink",
+          "detail": "Section 5.5.2.10.2 cites Deng et al. 2020."
+        },
+        {
+          "source_id": "CP027",
+          "filename": "Ranbir Chander Sobti, Sunil K. Lal, Ramesh K. Goyal - Drug Repurposing for Emerging Infectious Diseases and Cancer-Springer (2023).pdf",
+          "chapter": 5,
+          "printed_page": "80",
+          "pdf_page": 97,
+          "role": "bibliographic reference",
+          "detail": "Printed title, authors, journal and DOI."
+        },
+        {
+          "source_id": "CP027",
+          "filename": "Ranbir Chander Sobti, Sunil K. Lal, Ramesh K. Goyal - Drug Repurposing for Emerging Infectious Diseases and Cancer-Springer (2023).pdf",
+          "chapter": 5,
+          "printed_page": "61",
+          "pdf_page": 78,
+          "role": "table crosslink",
+          "detail": "Table 5.1 row prints Dend et al. 2020; body and bibliography print Deng."
+        }
+      ],
+      "metadata_notes": [
+        "Author discrepancy preserved: table Dend versus body/reference Deng. Candidate identity uses the explicit reference entry, not an inferred new report."
+      ]
+    },
+    {
+      "drug": "itraconazole",
+      "discovery_state": "printed citation lead only",
+      "original_fulltext_acquired": false,
+      "substantive_result_extraction_performed": false,
+      "already_in_cp28_manifest": false,
+      "manifest_match_basis": "No exact DOI/title match among the 28 manifest entries; the citing books are present but these cited reports are not.",
+      "dispatch_status": "NOT SENT",
+      "original_version_correction_retraction_status": "NOT CHECKED; verify during future authorized acquisition",
+      "candidate_id": "FT30-ITRA-P003",
+      "title": "Itraconazole inhibits proliferation of pancreatic cancer cells through activation of Bak-1.",
+      "authors_printed": "Jiang F, Xing HS, Chen WY, Du J, Ruan YL, Lin AY, Zhou CZ",
+      "year": 2019,
+      "journal_printed": "J Cell Biochem",
+      "volume_issue_pages_printed": "120(3):4333–4341",
+      "doi": "10.1002/jcb.27719",
+      "pmid_printed": "NOT IN CORPUS",
+      "article_type": {
+        "classification": "probable original cell/preclinical report",
+        "confidence": "moderate; title and body explicitly concern pancreatic cancer cells"
+      },
+      "cancer_model": "Pancreatic cancer cells; specific cell lines and additional model details NOT IN CORPUS for this discovery record.",
+      "why_fetch": "Separates a pancreatic-cell mechanism report from the human combination-chemotherapy report below; acquire both without pooling their evidence levels.",
+      "source_locations": [
+        {
+          "source_id": "CP027",
+          "filename": "Ranbir Chander Sobti, Sunil K. Lal, Ramesh K. Goyal - Drug Repurposing for Emerging Infectious Diseases and Cancer-Springer (2023).pdf",
+          "chapter": 5,
+          "printed_page": "68",
+          "pdf_page": 85,
+          "role": "body crosslink",
+          "detail": "Section 5.5.2.10.2 cites Jiang et al. 2019."
+        },
+        {
+          "source_id": "CP027",
+          "filename": "Ranbir Chander Sobti, Sunil K. Lal, Ramesh K. Goyal - Drug Repurposing for Emerging Infectious Diseases and Cancer-Springer (2023).pdf",
+          "chapter": 5,
+          "printed_page": "82",
+          "pdf_page": 99,
+          "role": "bibliographic reference",
+          "detail": "Printed title, authors, journal and DOI."
+        },
+        {
+          "source_id": "CP027",
+          "filename": "Ranbir Chander Sobti, Sunil K. Lal, Ramesh K. Goyal - Drug Repurposing for Emerging Infectious Diseases and Cancer-Springer (2023).pdf",
+          "chapter": 5,
+          "printed_page": "61",
+          "pdf_page": 78,
+          "role": "table crosslink",
+          "detail": "Table 5.1 (continued), itraconazole row."
+        }
+      ]
+    },
+    {
+      "drug": "itraconazole",
+      "discovery_state": "printed citation lead only",
+      "original_fulltext_acquired": false,
+      "substantive_result_extraction_performed": false,
+      "already_in_cp28_manifest": false,
+      "manifest_match_basis": "No exact DOI/title match among the 28 manifest entries; the citing books are present but these cited reports are not.",
+      "dispatch_status": "NOT SENT",
+      "original_version_correction_retraction_status": "NOT CHECKED; verify during future authorized acquisition",
+      "candidate_id": "FT30-ITRA-P004",
+      "title": "Impact of combination chemotherapy with itraconazole on survival for patients with recurrent or persistent ovarian clear cell carcinoma.",
+      "authors_printed": "Tsubamoto H, Sonoda T, Yamasaki M, Inoue K",
+      "year": 2014,
+      "journal_printed": "Anticancer Res",
+      "volume_issue_pages_printed": "34(4):2007–2014",
+      "doi": "DOI NOT PRINTED",
+      "pmid_printed": "NOT IN CORPUS",
+      "article_type": {
+        "classification": "probable original human treatment report; randomized/observational design unconfirmed",
+        "confidence": "moderate; patients, combination chemotherapy and survival appear in the printed title"
+      },
+      "cancer_model": "Recurrent or persistent ovarian clear-cell carcinoma in patients; do not generalize to all ovarian cancers.",
+      "why_fetch": "A directly named clinical report for a narrow ovarian subtype; obtain the original to establish design, comparator, combination components, patient selection, outcomes and limitations.",
+      "source_locations": [
+        {
+          "source_id": "CP027",
+          "filename": "Ranbir Chander Sobti, Sunil K. Lal, Ramesh K. Goyal - Drug Repurposing for Emerging Infectious Diseases and Cancer-Springer (2023).pdf",
+          "chapter": 14,
+          "printed_page": "316",
+          "pdf_page": 328,
+          "role": "body crosslink",
+          "detail": "Section 14.9.1 jointly cites Tsubamoto et al. 2014 and 2015 for pancreatic/ovarian combination claims."
+        },
+        {
+          "source_id": "CP027",
+          "filename": "Ranbir Chander Sobti, Sunil K. Lal, Ramesh K. Goyal - Drug Repurposing for Emerging Infectious Diseases and Cancer-Springer (2023).pdf",
+          "chapter": 14,
+          "printed_page": "327",
+          "pdf_page": 339,
+          "role": "bibliographic reference",
+          "detail": "Title resolves the 2014 report to recurrent/persistent ovarian clear-cell carcinoma."
+        }
+      ],
+      "metadata_notes": [
+        "No DOI is printed with this reference; none supplied from memory or external lookup.",
+        "Joint body citation does not justify assigning every mechanistic sentence to this clinical report."
+      ]
+    },
+    {
+      "drug": "itraconazole",
+      "discovery_state": "printed citation lead only",
+      "original_fulltext_acquired": false,
+      "substantive_result_extraction_performed": false,
+      "already_in_cp28_manifest": false,
+      "manifest_match_basis": "No exact DOI/title match among the 28 manifest entries; the citing books are present but these cited reports are not.",
+      "dispatch_status": "NOT SENT",
+      "original_version_correction_retraction_status": "NOT CHECKED; verify during future authorized acquisition",
+      "candidate_id": "FT30-ITRA-P005",
+      "title": "Combination chemotherapy with Itraconazole for treating metastatic pancreatic cancer in the second-line or additional setting.",
+      "authors_printed": "Tsubamoto H, Sonoda T, Ikuta S, Tani S, Inoue K, Yamanaka N",
+      "year": 2015,
+      "journal_printed": "Anticancer Res",
+      "volume_issue_pages_printed": "35(7):4191–4196",
+      "doi": "DOI NOT PRINTED",
+      "pmid_printed": "NOT IN CORPUS",
+      "article_type": {
+        "classification": "probable original human treatment report; randomized/observational design unconfirmed",
+        "confidence": "moderate; disease stage, treatment line and combination therapy appear in the printed title"
+      },
+      "cancer_model": "Metastatic pancreatic cancer, second-line or additional setting; exact histology and design NOT IN CORPUS for this discovery record.",
+      "why_fetch": "A directly named human combination report distinct from Jiang's pancreatic-cell experiment; verify treatment lines, comparator, all outcomes and harms in the original.",
+      "source_locations": [
+        {
+          "source_id": "CP027",
+          "filename": "Ranbir Chander Sobti, Sunil K. Lal, Ramesh K. Goyal - Drug Repurposing for Emerging Infectious Diseases and Cancer-Springer (2023).pdf",
+          "chapter": 14,
+          "printed_page": "316",
+          "pdf_page": 328,
+          "role": "body crosslink",
+          "detail": "Section 14.9.1 jointly cites Tsubamoto et al. 2014 and 2015."
+        },
+        {
+          "source_id": "CP027",
+          "filename": "Ranbir Chander Sobti, Sunil K. Lal, Ramesh K. Goyal - Drug Repurposing for Emerging Infectious Diseases and Cancer-Springer (2023).pdf",
+          "chapter": 14,
+          "printed_page": "327",
+          "pdf_page": 339,
+          "role": "bibliographic reference",
+          "detail": "Printed reference title establishes metastatic pancreatic cancer and treatment setting."
+        }
+      ],
+      "metadata_notes": [
+        "No DOI is printed with this reference; no external or memory-based DOI added."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,522 @@
+{
+  "plan_id": "SL-INGEST-1.0",
+  "version": "1.0",
+  "created_at": "2026-10-08T06:51:18.683276+00:00",
+  "status": "immutable plan; readiness is recorded separately in Mission Control",
+  "mission_control_task": "01a11a22-f81b-7682-b4a9-64ed1859b295",
+  "owner_instruction": {
+    "source_task": "01a11a00-93aa-7bc1-975f-35668cc5e282",
+    "turn_id": "01a11a44-7627-77b0-afa4-139acd286ce2",
+    "message_id": "01a11a44-76da-77c1-909e-b78064109c7f",
+    "text": "plan must exist before the first ingest, and before the first file requests go out to grok bot",
+    "source_started_at": "2026-10-08T06:47:36+00:00",
+    "adoption": "Produce autonomously; no added owner approval round. Applies to Grokbot handoff, scoping/file requests, extraction and import. Drafting a prompt internally is not dispatch."
+  },
+  "historical_boundary": {
+    "prior_work": "Earlier selected-source acquisition/extraction, canonical corpus, three draft study reviews and site imports already occurred. Scoping/full prompts were handed back as artifacts before this consolidated plan. No external Grokbot request/job was sent by this task or its workers.",
+    "compliance": "Retrospective adoption; this plan did not exist before earlier work. Do not backdate or relabel earlier ingestion as plan-gated.",
+    "prior_site_commit": "4e41803cc8f0fe26f034f4b3875f38fe92e0bbd7",
+    "sequence_audit": "../governance/ingestion-sequence-audit.json",
+    "next_dependent_operation": "B01 request handoff or extraction only after Mission Control READY and operation-specific preflight."
+  },
+  "inputs": [
+    {
+      "role": "frozen_rule",
+      "path": "docs/one-match-rule-baseline.md",
+      "sha256": "01896e3c254f37483c226da52da0ef239b03eb7c762e5171675ae6dc302150d2"
+    },
+    {
+      "role": "schema",
+      "path": "outputs/research/evidence/evidence.schema.json",
+      "sha256": "32953789f4b96f19d7f7f44394f930aa33dceb33245478cde2fcab2c28cc5a70"
+    },
+    {
+      "role": "synthetic_fixture",
+      "path": "outputs/research/evidence/synthetic-fixture.json",
+      "sha256": "196ac8fb0346c1a92e4993ba4bdb3d47c1bf141a599f7baf761dadfec6479d0c"
+    },
+    {
+      "role": "existing_corpus",
+      "path": "outputs/research/evidence/corpus.json",
+      "sha256": "244413d005d0af52564aa7161d67e73e5a8c3f6ca4e796071d1723aad4842516"
+    },
+    {
+      "role": "existing_source_manifest",
+      "path": "outputs/research/evidence/source-manifest.json",
+      "sha256": "09262bf8504e5416089129ec6d04b3be516426953ac24d2c24ae2b3a9d740bca"
+    },
+    {
+      "role": "topic_map",
+      "path": "outputs/research/demand/topic-map.json",
+      "sha256": "ce58df49879cc47d639f8fbd92cdaa379558722d28d5d19da085ad835acd3473"
+    },
+    {
+      "role": "staging_schema",
+      "path": "outputs/handoff/staging-manifest.schema.json",
+      "sha256": "92cf0389dda5b41094787a1df1cddee43078583797a21e2a3fa56076a7ed51a5"
+    }
+  ],
+  "scope": {
+    "search_cutoff": "2026-10-08",
+    "execution_date_policy": "Log actual timestamp; later searches require revised cutoff/scope version, not a backdated search.",
+    "topic_ids": [
+      "DR001",
+      "DR002",
+      "DR003",
+      "DR004",
+      "DR005",
+      "DR006",
+      "DR007",
+      "DR008",
+      "DR009",
+      "DR010",
+      "DR011",
+      "DR012",
+      "DR013",
+      "DR014",
+      "DR015",
+      "DR016",
+      "DR017",
+      "DR018",
+      "DR019",
+      "DR020",
+      "DR021",
+      "DR022",
+      "DR023",
+      "DR024",
+      "DR025",
+      "DR026",
+      "DR027",
+      "DR028",
+      "DR029",
+      "DR030",
+      "DR031",
+      "DR032",
+      "DR033",
+      "DR034",
+      "DR035",
+      "DR036"
+    ],
+    "question_definition": "Exact drug/combination, indication, population, formulation/route, comparator, endpoint and timepoint; missing fields stay explicit.",
+    "discovery": "PubMed/MEDLINE, Europe PMC, ClinicalTrials.gov, WHO ICTRP, ISRCTN, EU CTIS, publishers and lawful repositories; Embase/CENTRAL only when available. Dated jurisdiction/product/use-specific official context for regulation and safety. Log database access limits, query, filters, counts, screening, null results and citation chasing.",
+    "primary": "Original human randomized/nonrandomized, animal, cell/ex-vivo and modeling separated by design; negative, null, harm and contradictory findings retained. Study-family identities distinguish reports from independent studies.",
+    "context": "Reviews, methods, official regulation/product labeling and definitions kept outside original study counts. Community discussions measure demand only.",
+    "exclude": "Duplicate independent-study counting, vendor efficacy claims, unrelated homonyms, anecdotes as causal evidence, synthetic fixtures as evidence, fabricated sources or results.",
+    "closed_packet_mode": "If later restricted to supplied files: read manifest/rules/gaps and every eligible supplied PRIMARY; no web supplementation; NOT IN CORPUS is not absent from literature.",
+    "raw_rights": "Raw source bytes private unless explicit redistribution rights permit; never bypass paywalls/access controls."
+  },
+  "delivery": {
+    "encoding": "UTF-8",
+    "root_schema_version": "1.0.0",
+    "schema_file": "evidence.schema.json",
+    "schema_sha256": "32953789f4b96f19d7f7f44394f930aa33dceb33245478cde2fcab2c28cc5a70",
+    "root": "corpus.json, synthetic=false; all schema-required collections, including empty ones with explicit reason",
+    "entity_exports": [
+      "searches.jsonl",
+      "screening.jsonl",
+      "papers.jsonl",
+      "studies.jsonl",
+      "results.jsonl",
+      "claims.jsonl",
+      "reviews.jsonl",
+      "context.jsonl",
+      "coverage.json"
+    ],
+    "operational_exports": [
+      "manifest.json",
+      "identity-map.json",
+      "exceptions.jsonl",
+      "validation.json",
+      "receipt.json",
+      "completion-report.json"
+    ],
+    "raw_layout": "PRIMARY/ and CONTEXT/ preserve original immutable bytes; derived OCR/text separate with source hash and tool/version.",
+    "manifest_fields": [
+      "batch_id",
+      "plan_id",
+      "plan_sha256",
+      "schema_version",
+      "source_id",
+      "original_url",
+      "resolved_url",
+      "retrieved_at",
+      "filename",
+      "media_type",
+      "bytes",
+      "sha256",
+      "rights_or_missing_reason",
+      "access_state",
+      "language",
+      "collection",
+      "duplicate_of_or_null"
+    ],
+    "access_states": "Full PDF, full HTML, partial snapshot, abstract, metadata, registry, unreadable and inaccessible must remain distinct. A URL or challenge page is not an acquired paper.",
+    "stable_identity": "Verify DOI, PMID/PMCID, title/year/authors; preserve paper\u2192study family\u2192experiment\u2192result/outcome\u2192claim\u2192review version. Resolve conflicts explicitly; no fuzzy auto-merge.",
+    "missingness": [
+      "not_reported",
+      "not_extracted",
+      "not_accessible",
+      "not_applicable",
+      "not_checked",
+      "not_identifiable"
+    ],
+    "handoff_rule": "Every outbound request includes this exact plan, schema/fixture, topic briefs, existing identity snapshot and readiness receipt. An external worker returns a candidate patch and cannot accept or publish it.",
+    "portable_return": "External workers receive the attached acquisition ZIP, resolve bundled relative file names and return a ZIP as an attachment to this Mission Control task. They are not assumed to have access to this Mac. Local integrator stages it under work/ingest/<batch>/<attempt>/.",
+    "canonical_mapping": {
+      "supported_paper_types": [
+        "human_randomized",
+        "human_observational",
+        "animal",
+        "cell_ex_vivo",
+        "engineering",
+        "preprint",
+        "context"
+      ],
+      "supported_paper_access": [
+        "full_text_html",
+        "full_text_pdf",
+        "abstract_only",
+        "metadata_only",
+        "not_accessible",
+        "partial_full_text_html"
+      ],
+      "modeling": "Retain original modeling file and discovered metadata in raw staging manifest, candidate_type=modeling, disposition=schema_extension_required; do not coerce into engineering/clinical/context solely to pass. Substantive extraction/canonical import HOLD for this class until a versioned schema/plan migration and fixture are checked. Acquisition is allowed under the declared staging contract.",
+      "registry": "Retain registry/protocol as related source metadata and CONTEXT record source_type=registry_protocol with role and excluded_from_study_counts=true; do not fabricate a published paper or clinical result. Link to a known family via identity-map. Unsupported outcome extraction requires a schema extension first.",
+      "unreadable": "Retain operational manifest access_state=unreadable, exception/attempt log and raw bytes. Existing identifiable paper can remain metadata_only or not_accessible as accurate; never fulltext/extracted. Unknown required bibliographic fields stay staged rather than fabricated to satisfy paper schema.",
+      "staging_schema": "Operational manifest fields/types and disposition vocabulary in staging-manifest.schema.json; this is acquisition inventory, separate from canonical evidence schema 1.0.0."
+    },
+    "staging_schema_sha256": "92cf0389dda5b41094787a1df1cddee43078583797a21e2a3fa56076a7ed51a5"
+  },
+  "ownership": {
+    "accountable_integrator": "/root in this Mission Control task; exclusive owner of accepted corpus merge, site adaptation, acceptance and deployment",
+    "acquisition": "Grokbot for explicitly dispatched future requests; external job not launched",
+    "extraction": "/root/evidence when assigned an active bounded batch; fallback /root; proposed assignment is not a running job",
+    "independent_technical_audit": "/root/rule_audit when assigned a bounded read-only review; distinct from extractor",
+    "demand_scope": "/root/demand maintains DR IDs and discussion provenance; no efficacy inference",
+    "human_scientific_review": "Unassigned external reviewer; no fabricated identity/approval",
+    "write_isolation": "Incoming batches under work/ingest/<batch_id>/<attempt_id>/; accepted outputs remain outputs/research/evidence. Workers never overwrite the accepted corpus or site."
+  },
+  "batch_order": [
+    {
+      "batch_id": "B00",
+      "title": "Retrospective pilot reconciliation",
+      "topic_ids": [
+        "DR001",
+        "DR002",
+        "DR003",
+        "DR004"
+      ],
+      "prerequisites": [],
+      "named_sources_or_leads": [
+        "P-COVIDOUT-2023",
+        "P-ACTIV6-2026",
+        "P-STOPPASC-2024",
+        "P-KOREA-2026",
+        "P-RECOVER-2026",
+        "P-REVIVE-2026"
+      ],
+      "accountable_owner": "/root",
+      "extraction_owner": "/root/evidence when dispatched; otherwise /root",
+      "audit_owner": "/root/rule_audit when dispatched",
+      "status": "retrospective_reconciliation_pending",
+      "return_directory": "work/ingest/B00/",
+      "completion_focus": "Preserve original timestamps and hashes; reconcile six reports/five accepted families/one quarantine/three drafts/zero human releases. Record earlier requests and actual ingestion sequence."
+    },
+    {
+      "batch_id": "B01",
+      "title": "Source integrity and safety repair",
+      "topic_ids": [
+        "DR001",
+        "DR002",
+        "DR003",
+        "DR004",
+        "DR013",
+        "DR014",
+        "DR016"
+      ],
+      "prerequisites": [
+        "B00"
+      ],
+      "named_sources_or_leads": [
+        "P-COVIDOUT-2023 correction PMID37666258",
+        "P-ACTIV6-2026 supplements/protocol",
+        "P-REVIVE-2026 notice PMID42832813 and replacement",
+        "P-STOPPASC-2024 correction",
+        "Current product-specific labeling/interaction sources"
+      ],
+      "accountable_owner": "/root",
+      "extraction_owner": "/root/evidence when dispatched; otherwise /root",
+      "audit_owner": "/root/rule_audit when dispatched",
+      "status": "planned_not_launched",
+      "return_directory": "work/ingest/B01/",
+      "completion_focus": "Resolve or explicitly retain correction, retraction, supplement and jurisdiction-specific safety gaps before affected clinical claims advance."
+    },
+    {
+      "batch_id": "B02",
+      "title": "Established illness trial completion",
+      "topic_ids": [
+        "DR002",
+        "DR003",
+        "DR004",
+        "DR017",
+        "DR018"
+      ],
+      "prerequisites": [
+        "B01 integrity triage"
+      ],
+      "named_sources_or_leads": [
+        "P-KOREA-2026 full report",
+        "P-RECOVER-2026 full report",
+        "PAX LC primary report",
+        "Exact combination trial searches"
+      ],
+      "accountable_owner": "/root",
+      "extraction_owner": "/root/evidence when dispatched; otherwise /root",
+      "audit_owner": "/root/rule_audit when dispatched",
+      "status": "planned_not_launched",
+      "return_directory": "work/ingest/B02/",
+      "completion_focus": "Keep treatment separate from prevention; complete full reports/family links and map new evidence to existing claims/pages."
+    },
+    {
+      "batch_id": "B03",
+      "title": "Remaining Long COVID and process coverage",
+      "topic_ids": [
+        "DR001",
+        "DR002",
+        "DR003",
+        "DR004",
+        "DR005",
+        "DR009",
+        "DR010",
+        "DR011",
+        "DR012",
+        "DR013",
+        "DR014",
+        "DR015",
+        "DR016",
+        "DR017",
+        "DR018",
+        "DR020",
+        "DR021"
+      ],
+      "prerequisites": [
+        "B00",
+        "P0",
+        "varied calibration before scale"
+      ],
+      "named_sources_or_leads": [],
+      "accountable_owner": "/root",
+      "extraction_owner": "/root/evidence when dispatched; otherwise /root",
+      "audit_owner": "/root/rule_audit when dispatched",
+      "status": "planned_not_launched",
+      "return_directory": "work/ingest/B03/",
+      "completion_focus": "Complete each declared topic protocol, candidate discovery, access/regulatory context and directness-aware mappings."
+    },
+    {
+      "batch_id": "B04",
+      "title": "Oncology questions",
+      "topic_ids": [
+        "DR006",
+        "DR007",
+        "DR008",
+        "DR019",
+        "DR022"
+      ],
+      "prerequisites": [
+        "B00",
+        "P0",
+        "varied calibration before scale"
+      ],
+      "named_sources_or_leads": [],
+      "accountable_owner": "/root",
+      "extraction_owner": "/root/evidence when dispatched; otherwise /root",
+      "audit_owner": "/root/rule_audit when dispatched",
+      "status": "planned_not_launched",
+      "return_directory": "work/ingest/B04/",
+      "completion_focus": "Separate human clinical outcomes, adjunct use, mechanisms and unsupported cure claims; clinical interpretations require qualified review."
+    },
+    {
+      "batch_id": "B05",
+      "title": "Naltrexone and pramipexole",
+      "topic_ids": [
+        "DR023",
+        "DR024",
+        "DR025",
+        "DR026",
+        "DR027",
+        "DR028",
+        "DR029",
+        "DR030",
+        "DR031"
+      ],
+      "prerequisites": [
+        "B00",
+        "P0",
+        "varied calibration before scale"
+      ],
+      "named_sources_or_leads": [],
+      "accountable_owner": "/root",
+      "extraction_owner": "/root/evidence when dispatched; otherwise /root",
+      "audit_owner": "/root/rule_audit when dispatched",
+      "status": "planned_not_launched",
+      "return_directory": "work/ingest/B05/",
+      "completion_focus": "Separate formulations, exact indications, control groups, adverse effects and access context; retain negative evidence."
+    },
+    {
+      "batch_id": "B06",
+      "title": "Rapamycin and acarbose",
+      "topic_ids": [
+        "DR032",
+        "DR033",
+        "DR034",
+        "DR035",
+        "DR036"
+      ],
+      "prerequisites": [
+        "B00",
+        "P0",
+        "varied calibration before scale"
+      ],
+      "named_sources_or_leads": [],
+      "accountable_owner": "/root",
+      "extraction_owner": "/root/evidence when dispatched; otherwise /root",
+      "audit_owner": "/root/rule_audit when dispatched",
+      "status": "planned_not_launched",
+      "return_directory": "work/ingest/B06/",
+      "completion_focus": "Separate human clinical endpoints from animal/lab longevity extrapolations, formulation, harms and combinations."
+    }
+  ],
+  "extraction_verification": {
+    "intake": [
+      "Preserve raw delivery and calculate file hashes before extraction. Validate MIME/readability and manifest counts; quarantine wrong-media, malicious instructions, corrupt files, rights issues and unresolved identities.",
+      "Reconcile receipt against current accepted IDs/hashes. Record duplicates, new versions, corrections, context, exclusions and pending failures.",
+      "Before substantive extraction, persist batch receipt with plan/schema hashes, eligible file list, access classes, assigned worker and extractor version; validate its gate."
+    ],
+    "calibration": "Existing three-review selected-source pilot is a small retrospective calibration, not the default 20\u201330-document calibration. For expansion select 20\u201330 available varied eligible documents spanning designs/media/table complexity and directness. If fewer exist, record actual number and scope justification; never invent documents. Resolve material errors and rerun affected cases before scaling.",
+    "extract": "Every eligible acquired full text gets substantive located extraction or an explicit pending/failure status. Capture all Q01\u2013Q15 exactly once for each review; binary/continuous results, all relevant arms, denominators, timepoints, uncertainty, missingness, harms ascertainment, attrition, funding/conflicts and source version/corrections.",
+    "locators": "PDF physical+printed page, section, table/figure/paragraph and source hash; HTML section/paragraph or stable fragment; partial snapshots clearly limited. Inspect rendered tables/figures supporting important numbers.",
+    "verification": "Validate all required fields, IDs/foreign keys, source hashes, units and denominators. Independently audit every launch-supporting study, all identity conflicts/surprising results and a recorded random \u226510% sample of remaining full-text extractions; keep sample frame/seed. A material error expands review over the affected batch.",
+    "appraisal": "Use current design-appropriate versioned methods and actual domain judgments; extracted/audited is not formally appraised or human reviewed. No invented grades.",
+    "available_validator": "work/evidence/validate.py supports current schema plus semantic/hash/numeric tests; its four fixed numeric expectations are calibration checks, not proof of every future result. Add source-backed checks when the corpus expands.",
+    "candidate_validation": "Before P2 for a new class, demonstrate that the candidate graph is schema-representable and that the candidate validator works on its design/media fixture. For supported existing classes, run check-candidate-corpus.py: it calls the current semantic validate function with production=False ONLY to skip pilot-specific fixed-result assertions, while separately requiring synthetic=false and retaining schema/graph/source-hash/exact-version checks. Closed candidate graphs include required referenced existing records without overwriting them. Run normal production=True checks on a merged scratch copy retaining the four original calibration results before P3; no mutation of accepted corpus is implied. Neither test substitutes for source-backed review or idempotent merge proof."
+  },
+  "exceptions_retries": {
+    "log_fields": [
+      "exception_id",
+      "batch_id",
+      "source_id",
+      "stage",
+      "reason",
+      "observed_at",
+      "attempt",
+      "evidence",
+      "owner",
+      "next_action",
+      "status",
+      "affected_claims_pages"
+    ],
+    "retry_policy": "One initial lawful retrieval plus up to two documented alternate official/repository/format attempts per source. For transient429/5xx honor Retry-After and bounded backoff; no blind retries. Repeated failure becomes not_accessible/pending with next lawful action; request user-provided lawful file only if needed.",
+    "parser_or_ocr": "Preserve failed output; retry with a second method and inspect source images. Low confidence never silently populates numeric claims.",
+    "identity_conflict": "Quarantine candidate, preserve old accepted record, compare DOI/PMID/version/family and resolve with explicit alias map; no overwrite.",
+    "retraction": "Quarantine affected supportive claims and all mapped pages. Acquire notice and replacement; compare changed data before reactivating any claim.",
+    "schema_change": "Stop dependent ingest; version schema/plan, migrate fixture and validate old+new records; preserve previous approvals/history.",
+    "partial_batch": "Return all received/disposition totals and INCOMPLETE topic rows. Accept bounded verified records independently; never claim whole-topic completion.",
+    "rollback": "Snapshot accepted corpus and site commit before merge; rollback affected records/claims/pages together. Do not revert unrelated concurrent changes; invalidate affected approvals."
+  },
+  "mapping": {
+    "pipeline": "DR question \u2192 canonical report/study/result \u2192 claim ledger with support/directness/locators \u2192 versioned review and sentence source mapping \u2192 guide section/FAQ/Research catalogue \u2192 tested private preview \u2192 exact-version human release gate",
+    "existing_topic_pages": [
+      {
+        "topic_id": "DR001",
+        "paper_ids": [
+          "P-COVIDOUT-2023",
+          "P-ACTIV6-2026"
+        ],
+        "claim_ids": [
+          "C-PREVENT-CO",
+          "C-PREVENT-A6",
+          "C-PREVENT-NUM",
+          "C-PREVENT-CD"
+        ],
+        "page_ids": [
+          "G-MET-PREVENT"
+        ]
+      },
+      {
+        "topic_id": "DR002",
+        "paper_ids": [
+          "P-KOREA-2026",
+          "P-REVIVE-2026"
+        ],
+        "claim_ids": [
+          "C-TREAT-KR"
+        ],
+        "page_ids": [
+          "G-MET-TREAT"
+        ]
+      },
+      {
+        "topic_id": "DR003",
+        "paper_ids": [
+          "P-STOPPASC-2024",
+          "P-RECOVER-2026"
+        ],
+        "claim_ids": [
+          "C-TREAT-SP",
+          "C-TREAT-RV"
+        ],
+        "page_ids": [
+          "G-NMV-TREAT"
+        ]
+      },
+      {
+        "topic_id": "DR004",
+        "paper_ids": [
+          "P-REVIVE-2026"
+        ],
+        "claim_ids": [],
+        "page_ids": []
+      }
+    ],
+    "cross_cutting_pages": {
+      "G-METFORMIN": "/drugs/metformin",
+      "G-LONGCOVID": "/conditions/long-covid",
+      "G-COMPARE": "/comparisons/prevention-versus-treatment"
+    },
+    "new_topics": "Remain question-directory acquisition-pending entries until accepted mapped claims exist. Propose canonical page IDs/routes and reciprocal links; no empty efficacy pages or inferred answers.",
+    "serialization": "Run deterministic adapter only against the accepted batch snapshot after import preflight. Keep raw papers, private notes, synthetic fixtures and future premium fields outside public assets. Recalculate counts, sentence-level citations and study-family totals; retain fragment aliases.",
+    "change_impact": "Return claim IDs, guide/review/term routes, old/new hashes, source reasons and invalidated approvals for every candidate update."
+  },
+  "gates": {
+    "P0_plan_ready": "Versioned plan exists; exact input hashes validated; owner instruction/chronology reconciled; Mission Control records READY with digest and time. No owner signoff added.",
+    "P1_dispatch": "Before handing off or sending any file request, including scoping: preflight plan readiness/hash, attach exact plan/schema/topic packet, record requester/recipient/batch/scope/operation timestamp. Internal drafting alone is not dispatch.",
+    "P2_extract": "P0 plus frozen received manifest, source identity/media triage, assigned worker, declared eligible list and receipt. Record begin timestamp; no hidden preliminary extraction. Candidate schema/validator compatibility must PASS for the received evidence class; unsupported modeling class remains HOLD until versioned migration.",
+    "P3_import": "P2 plus candidate schema/semantic tests, exception disposition, record/page diffs, independent technical check, unchanged-input reimport test and fresh accepted-base hash. Mission Control alone merges.",
+    "P4_release": "Separate from ingest: build/browser checks plus required source/appraisal/human exact-version approvals; no automated proof of clinical correctness. Owner-private technical draft is a distinct status."
+  },
+  "completion": {
+    "batch": "Every received file has a disposition; eligible fulltexts extracted or explicitly pending; accepted+duplicate+context+excluded+quarantined+unreadable+pending reconcile to received without loss. Maintain separate report/study-family/PDF/review counts. Exact new source and schema versions validated; candidate import repeat has no new IDs/changes; affected pages pass source/route/fragment tests.",
+    "topic": "Documented search coverage plus every in-scope record disposition, unresolved accesses, direct/indirect evidence and linked claim/page outcomes. INCOMPLETE whenever protocol, source, appraisal or answer gaps remain.",
+    "states": [
+      "discovered",
+      "received",
+      "identity_checked",
+      "extracted",
+      "verified",
+      "mapped",
+      "synthesized",
+      "previewed",
+      "human_approved",
+      "publicly_released"
+    ],
+    "readiness_is_not_completion": true,
+    "next_actions": "Reconcile prior pilot as B00; begin B01 current-source repairs; then B02 and bounded B03\u2013B06 batches. No new Grokbot job or ingestion is launched by creating this plan."
+  },
+  "draft_finalized_at": "2026-10-08T06:53:34.284697+00:00",
+  "workload": {
+    "observed": "Three full review drafts exist, but no reliable separate per-document acquisition/extraction/verification timers were collected. Parallel activity and file mtimes cannot establish review throughput.",
+    "estimate": "No defensible document-per-hour or full-corpus ETA yet. The 36-question scope is not a paper-count estimate.",
+    "measurement": "Next calibration logs start/end and active minutes per source and stage, medium/design, retries and reviewer corrections; report median/range and audited rework before estimating the remaining discovered eligible corpus.",
+    "scale_gate": "Do not scale automatically from three drafts. Apply varied calibration, close material errors and estimate from measured throughput; unfinished sources remain explicit."
+  }
+}

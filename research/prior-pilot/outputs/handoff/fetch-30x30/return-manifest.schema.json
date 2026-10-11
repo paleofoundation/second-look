@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "SL-RETURN-MANIFEST-3.1"
+    },
+    "project_id": {
+      "const": "01a11a22-f81b-7682-b4a9-64ed1859b295"
+    },
+    "packet_version": {
+      "const": "2.1"
+    },
+    "batch_id": {
+      "type": "string",
+      "pattern": "^F0[0-8]$"
+    },
+    "plan_id": {
+      "const": "SL-INGEST-3.1-FETCH30"
+    },
+    "plan_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "synthetic": {
+      "type": "boolean"
+    },
+    "part_number": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "part_count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "files": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "bytes": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          }
+        },
+        "required": [
+          "path",
+          "bytes",
+          "sha256"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "project_id",
+    "packet_version",
+    "batch_id",
+    "plan_id",
+    "plan_sha256",
+    "synthetic",
+    "part_number",
+    "part_count",
+    "files"
+  ],
+  "additionalProperties": false
+}

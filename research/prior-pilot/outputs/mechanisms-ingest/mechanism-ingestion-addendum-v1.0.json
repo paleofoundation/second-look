@@ -1,0 +1,73 @@
+{
+  "plan_id": "SL-MECHANISMS-ADDENDUM-1.0",
+  "version": "1.0",
+  "created_at": "2026-10-09T14:48:53.353098+00:00",
+  "status": "PROPOSED_NEXT_OPERATION_ADDENDUM",
+  "owner_requirement": "Mechanism of Action per drug and proposed condition; universal sidebar label Mechanisms, rooted in source evidence; ingestion must collect the fields.",
+  "scope": "Prospective contract and coverage preparation only. No new acquisition, source extraction, import, web, dispatch, site or canonical edits.",
+  "base_future_acquisition": {
+    "plan_id": "SL-INGEST-3.1-FETCH30",
+    "sha256": "67222fa44cb06e332d407bf113f0adcb6ab7908e81358a10282c7d6933ccf9b5",
+    "meaning": "Current future acquisition-only plan is preserved; integrate this addendum into a new explicitly versioned operation before next affected request/extraction."
+  },
+  "historical_return_contract": {
+    "plan_id": "SL-INGEST-3.0-FETCH30",
+    "plan_sha256": "90150fe725c7d7c964e4aeb3c3c5574c8dfd64865d2c288857040725e98cad28",
+    "schema_sha256": "b7be5e448c9b54e12e1145f9102e0664a101e67480f354117c476221da9155cb",
+    "meaning": "Actual Worker B and F00 Worker A subset retain their recorded dispatch contract; no retrofit failure for absent new mechanism fields."
+  },
+  "schema": {
+    "path": "mechanism-record.schema.json",
+    "sha256": "e117c68d990560a41ca8bd64ab24b0fb41f8494a7d1097708dff662baccc0e5e",
+    "scope": "Source-reported candidate intake with pending verification/pending human review/draft publication; downstream release requires separate accepted scientific and exact-version review contracts."
+  },
+  "coverage": {
+    "path": "coverage-requirements.json",
+    "sha256": "603e35eee799285d68545ec28269298ea0fe309445ad2466fac3ac9465ed42ad",
+    "drugs": 30,
+    "conditions": 30,
+    "candidate_pairs": 126,
+    "owner_required": "D07 itraconazole by exact cancer condition; no umbrella-cancer extrapolation"
+  },
+  "input_fingerprints": "input-fingerprints.json",
+  "permissions": {
+    "web": false,
+    "acquisition": false,
+    "new_scientific_extraction": false,
+    "canonical_mutation": false,
+    "dispatch": false,
+    "publication": false
+  },
+  "field_contract": [
+    "target_pathway",
+    "direction_action",
+    "original_use_mechanism",
+    "condition_rationale",
+    "model_population",
+    "exposure",
+    "target_engagement",
+    "causal_evidence",
+    "limitations",
+    "counterevidence"
+  ],
+  "units": "Each source-reported mechanism assertion is scoped to a drug, original/proposed use, exact model/population, exposure and comparator where reported; measured markers are not clinical outcomes.",
+  "mapping": "source/version -> exact locator -> mechanism claim/number -> original-use or drug-condition mechanism record -> Mechanism of Action section plus matching review Q03/Q05/Q09/Q10/Q13/Q14/Q15. Keep clinical result/synthesis links separate.",
+  "states": "not_extracted, not_reported after full-source inspection, not_accessible, not_applicable, not_checked, not_identifiable, conflicting remain distinct. Every real source stays pending/pending/draft until separate acceptance.",
+  "calibration": "Before later scaling, assign a varied source set containing human mechanistic work, animal/cell, computational prediction, secondary rationale and a null/contradictory or quarantined example if actually available. No invented source quota or fabricated specimen.",
+  "verification": "Schema plus semantic validator; exact IDs, file and source hashes, per-claim and per-number locator references, tier/basis consistency, full-source-only not_reported, counterevidence, no efficacy/clinical-count promotion, quarantine and unchanged historical input checks. Visual table/figure checks during later authorized extraction, not this contract task.",
+  "resume": "Reuse existing stable source/report/family IDs and accepted claims. New mechanism IDs additive, deterministic from source hash and scoped extraction identity; unchanged input must create zero new records. Never re-run completed ingest merely to populate new fields.",
+  "next_operation_prerequisites": [
+    "Root adopts a dated prospective operation plan linking exact addendum/schema/coverage hashes; no extra owner confirmation is introduced.",
+    "Receipt and exact-file assignments use each actual return governing contract; reconcile latest inventory and preserve quarantines.",
+    "Create bounded extraction patch from permitted source versions, reusing accepted facts first; distinguish missing extraction from absent reporting.",
+    "Independent source/number review and cross-record validation; unresolved contradictions remain held.",
+    "Separate mechanism interpretation/appraisal and human approval; no automatic scientific or publication PASS."
+  ],
+  "readiness": {
+    "contract": "awaiting validator",
+    "external_request": "HOLD - no new handoff/dispatch authorized here",
+    "extraction": "HOLD - no new extraction authorized here; future operation needs adopted receipt-matched plan",
+    "canonical_import": "HOLD",
+    "scientific_release": "HOLD"
+  }
+}

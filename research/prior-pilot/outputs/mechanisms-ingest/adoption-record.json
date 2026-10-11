@@ -1,0 +1,58 @@
+{
+  "record_id": "SL-MECHANISMS-PROSPECTIVE-ADOPTION-1.0",
+  "recorded_at": "2026-10-09T15:02:10.345270+00:00",
+  "decision_owner": "Mission Control /root; delegated implementation by /root/evidence",
+  "authority": "Current coordinator instruction to complete prospective operational adoption",
+  "status": "ADOPTED_PROSPECTIVELY",
+  "plan_id": "SL-MECHANISMS-ADDENDUM-1.0",
+  "schema_version": "SL-MECHANISMS-1.0",
+  "contracts": [
+    {
+      "role": "plan",
+      "path": "mechanisms-ingest/mechanism-ingestion-addendum-v1.0.json",
+      "sha256": "8a7f7b7364ef0740f5b4956660aa7106a9299799dc16041eccc1fb20e8b9b3aa"
+    },
+    {
+      "role": "schema",
+      "path": "mechanisms-ingest/mechanism-record.schema.json",
+      "sha256": "e117c68d990560a41ca8bd64ab24b0fb41f8494a7d1097708dff662baccc0e5e"
+    },
+    {
+      "role": "coverage",
+      "path": "mechanisms-ingest/coverage-requirements.json",
+      "sha256": "603e35eee799285d68545ec28269298ea0fe309445ad2466fac3ac9465ed42ad"
+    }
+  ],
+  "applies_to": [
+    "Next compatible scientific source extraction",
+    "Next compatible canonical scientific corpus import"
+  ],
+  "operation_performed": "governance registration and read-only readiness integration only",
+  "source_assignments_created": false,
+  "source_extraction_performed": false,
+  "corpus_import_performed": false,
+  "acquisition_performed": false,
+  "external_dispatch_performed": false,
+  "site_modified": false,
+  "scientific_release_changed": false,
+  "owner_confirmation_required": false,
+  "remaining_operation_dependencies": [
+    "Actual receipt-matched source manifest and permitted file assignments",
+    "Prospective operation plan incorporating exact mechanism contract hashes",
+    "P2 checks before extraction; candidate/source audit/independent review/idempotent P3 checks before import"
+  ],
+  "preserved_contracts": {
+    "future_acquisition_plan": "SL-INGEST-3.1-FETCH30 remains acquisition-only",
+    "historical_return_plan": "SL-INGEST-3.0-FETCH30 for actual A/B receipts",
+    "closed_packet": "CP28 preserved2.0",
+    "historical_planning_failures": "unchanged; not backdated",
+    "scientific_states": "quarantines and pending/pending/draft unchanged"
+  },
+  "before_snapshots": "adoption-before/manifest.json",
+  "registered_instruction_hashes": {
+    "AGENTS.md": "60c81462d6ead35fde810a58eec319c50e86f56d37b38e4a8452ef77f4157fa9",
+    "outputs/handoff/update-runbook.md": "58e40dc0e33a44c798552117109d251b4d510496a5fc0b55b62a8f8d1ec253bf",
+    "outputs/handoff/check-ingestion-readiness.py": "02a7ec1f8bf30e3fb3b51dbb42ffac585bc18e2d7681e5594e2ee975e5dd3916"
+  },
+  "mission_control_before_sha256": "340554bc4a299881a5c18f4d393a2a8788d5f9cd7fef37b62b0d62ea06d934bf"
+}

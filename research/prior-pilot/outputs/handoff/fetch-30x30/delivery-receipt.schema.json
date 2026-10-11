@@ -1,0 +1,223 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "SL-DELIVERY-3.1"
+    },
+    "project_id": {
+      "const": "01a11a22-f81b-7682-b4a9-64ed1859b295"
+    },
+    "packet_version": {
+      "const": "2.1"
+    },
+    "batch_id": {
+      "type": "string",
+      "pattern": "^F0[0-8]$"
+    },
+    "plan_id": {
+      "const": "SL-INGEST-3.1-FETCH30"
+    },
+    "plan_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "synthetic": {
+      "type": "boolean"
+    },
+    "created_at": {
+      "type": "string",
+      "minLength": 1
+    },
+    "transfer_status": {
+      "enum": [
+        "attachments_created_awaiting_manual_transfer",
+        "blocked_transfer"
+      ]
+    },
+    "receiver_access_status": {
+      "const": "not_verified_by_sender"
+    },
+    "archives": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "filename": {
+            "type": "string",
+            "minLength": 1
+          },
+          "bytes": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "manifest_path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "manifest_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          }
+        },
+        "required": [
+          "filename",
+          "bytes",
+          "sha256",
+          "manifest_path",
+          "manifest_sha256"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "acquisition_data_path": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "ingest_prompt_path": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "ingest_prompt_sha256": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "counts": {
+      "type": "object",
+      "properties": {
+        "source_records": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "files_received": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "requests": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "completed_requests": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "drug_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "condition_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "demand_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "source_records",
+        "files_received",
+        "requests",
+        "completed_requests",
+        "drug_ids",
+        "condition_ids",
+        "demand_ids"
+      ],
+      "additionalProperties": false
+    },
+    "transfer_action": {
+      "type": "string",
+      "minLength": 1
+    },
+    "blocked_reason": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "project_id",
+    "packet_version",
+    "batch_id",
+    "plan_id",
+    "plan_sha256",
+    "synthetic",
+    "created_at",
+    "transfer_status",
+    "receiver_access_status",
+    "archives",
+    "acquisition_data_path",
+    "ingest_prompt_path",
+    "ingest_prompt_sha256",
+    "counts",
+    "transfer_action",
+    "blocked_reason"
+  ],
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "transfer_status": {
+            "const": "attachments_created_awaiting_manual_transfer"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "archives": {
+            "minItems": 1
+          },
+          "acquisition_data_path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "ingest_prompt_path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "ingest_prompt_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "blocked_reason": {
+            "type": "null"
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "blocked_reason": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  ]
+}

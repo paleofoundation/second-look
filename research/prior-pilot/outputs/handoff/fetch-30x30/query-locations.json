@@ -1,0 +1,2506 @@
+{
+  "requests": [
+    {
+      "request_id": "DRUG-D01",
+      "drug_ids": [
+        "D01"
+      ],
+      "condition_ids": [
+        "C01",
+        "C02",
+        "C13",
+        "C14",
+        "C15",
+        "C16",
+        "C17",
+        "C21",
+        "C24",
+        "C25",
+        "C30"
+      ],
+      "demand_ids": [
+        "DR001",
+        "DR002",
+        "DR013",
+        "DR014",
+        "DR015"
+      ],
+      "query_seeds": [
+        "(\"metformin\") AND (repurpos* OR reposition* OR off-label)",
+        "\"metformin\" AND (\"Long COVID\" OR \"Acute COVID-19\" OR \"Prostate cancer\" OR \"Non-small-cell lung cancer\" OR \"Breast cancer\" OR \"Colorectal cancer\" OR \"Pancreatic cancer\" OR \"Multiple myeloma\" OR \"Parkinson disease\" OR \"Schizophrenia\" OR \"Sarcopenia\")",
+        "\"metformin\" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22metformin%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22metformin%22%20AND%20%28%22Long%20COVID%22%20OR%20%22Acute%20COVID-19%22%20OR%20%22Prostate%20cancer%22%20OR%20%22Non-small-cell%20lung%20cancer%22%20OR%20%22Breast%20cancer%22%20OR%20%22Colorectal%20cancer%22%20OR%20%22Pancreatic%20cancer%22%20OR%20%22Multiple%20myeloma%22%20OR%20%22Parkinson%20disease%22%20OR%20%22Schizophrenia%22%20OR%20%22Sarcopenia%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22metformin%22%20AND%20%28trial%20OR%20randomized%20OR%20observational%20OR%20adverse%20OR%20negative%20OR%20null%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DRUG-D02",
+      "drug_ids": [
+        "D02"
+      ],
+      "condition_ids": [
+        "C01",
+        "C02"
+      ],
+      "demand_ids": [
+        "DR004",
+        "DR005",
+        "DR016",
+        "DR017"
+      ],
+      "query_seeds": [
+        "(\"fluvoxamine\") AND (repurpos* OR reposition* OR off-label)",
+        "\"fluvoxamine\" AND (\"Long COVID\" OR \"Acute COVID-19\")",
+        "\"fluvoxamine\" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22fluvoxamine%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22fluvoxamine%22%20AND%20%28%22Long%20COVID%22%20OR%20%22Acute%20COVID-19%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22fluvoxamine%22%20AND%20%28trial%20OR%20randomized%20OR%20observational%20OR%20adverse%20OR%20negative%20OR%20null%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DRUG-D03",
+      "drug_ids": [
+        "D03"
+      ],
+      "condition_ids": [
+        "C01",
+        "C02"
+      ],
+      "demand_ids": [
+        "DR003",
+        "DR018"
+      ],
+      "query_seeds": [
+        "(\"nirmatrelvir\") AND (repurpos* OR reposition* OR off-label)",
+        "\"nirmatrelvir\" AND (\"Long COVID\" OR \"Acute COVID-19\")",
+        "\"nirmatrelvir\" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)",
+        "(\"nirmatrelvir\" AND \"ritonavir\") AND (\"Long COVID\" OR PASC OR \"post-COVID\")"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22nirmatrelvir%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22nirmatrelvir%22%20AND%20%28%22Long%20COVID%22%20OR%20%22Acute%20COVID-19%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22nirmatrelvir%22%20AND%20%28trial%20OR%20randomized%20OR%20observational%20OR%20adverse%20OR%20negative%20OR%20null%20OR%20discontinued%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22nirmatrelvir%22%20AND%20%22ritonavir%22%29%20AND%20%28%22Long%20COVID%22%20OR%20PASC%20OR%20%22post-COVID%22%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DRUG-D04",
+      "drug_ids": [
+        "D04"
+      ],
+      "condition_ids": [
+        "C01",
+        "C05",
+        "C06",
+        "C07",
+        "C08"
+      ],
+      "demand_ids": [
+        "DR023",
+        "DR024",
+        "DR025",
+        "DR026",
+        "DR027"
+      ],
+      "query_seeds": [
+        "(\"naltrexone\") AND (repurpos* OR reposition* OR off-label)",
+        "\"naltrexone\" AND (\"Long COVID\" OR \"Fibromyalgia\" OR \"Myalgic encephalomyelitis/chronic fatigue syndrome\" OR \"Compulsive sexual behavior disorder\" OR \"Persistent genital arousal disorder/genitopelvic dysesthesia\")",
+        "\"naltrexone\" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22naltrexone%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22naltrexone%22%20AND%20%28%22Long%20COVID%22%20OR%20%22Fibromyalgia%22%20OR%20%22Myalgic%20encephalomyelitis%2Fchronic%20fatigue%20syndrome%22%20OR%20%22Compulsive%20sexual%20behavior%20disorder%22%20OR%20%22Persistent%20genital%20arousal%20disorder%2Fgenitopelvic%20dysesthesia%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22naltrexone%22%20AND%20%28trial%20OR%20randomized%20OR%20observational%20OR%20adverse%20OR%20negative%20OR%20null%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DRUG-D05",
+      "drug_ids": [
+        "D05"
+      ],
+      "condition_ids": [
+        "C09"
+      ],
+      "demand_ids": [
+        "DR028",
+        "DR029",
+        "DR030",
+        "DR031"
+      ],
+      "query_seeds": [
+        "(\"pramipexole\") AND (repurpos* OR reposition* OR off-label)",
+        "\"pramipexole\" AND (\"Treatment-resistant depression\")",
+        "\"pramipexole\" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22pramipexole%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22pramipexole%22%20AND%20%28%22Treatment-resistant%20depression%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22pramipexole%22%20AND%20%28trial%20OR%20randomized%20OR%20observational%20OR%20adverse%20OR%20negative%20OR%20null%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DRUG-D06",
+      "drug_ids": [
+        "D06"
+      ],
+      "condition_ids": [
+        "C03",
+        "C10",
+        "C13",
+        "C15",
+        "C16",
+        "C22",
+        "C23"
+      ],
+      "demand_ids": [
+        "DR032",
+        "DR033",
+        "DR034",
+        "DR035"
+      ],
+      "query_seeds": [
+        "(\"sirolimus\" OR \"rapamycin\") AND (repurpos* OR reposition* OR off-label)",
+        "\"sirolimus\" AND (\"Epithelial ovarian or fallopian-tube carcinoma\" OR \"Periodontitis\" OR \"Prostate cancer\" OR \"Breast cancer\" OR \"Colorectal cancer\" OR \"Acute myeloid leukemia\" OR \"Chronic myeloid leukemia\")",
+        "\"sirolimus\" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22sirolimus%22%20OR%20%22rapamycin%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22sirolimus%22%20AND%20%28%22Epithelial%20ovarian%20or%20fallopian-tube%20carcinoma%22%20OR%20%22Periodontitis%22%20OR%20%22Prostate%20cancer%22%20OR%20%22Breast%20cancer%22%20OR%20%22Colorectal%20cancer%22%20OR%20%22Acute%20myeloid%20leukemia%22%20OR%20%22Chronic%20myeloid%20leukemia%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22sirolimus%22%20AND%20%28trial%20OR%20randomized%20OR%20observational%20OR%20adverse%20OR%20negative%20OR%20null%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DRUG-D07",
+      "drug_ids": [
+        "D07"
+      ],
+      "condition_ids": [
+        "C03",
+        "C13",
+        "C14",
+        "C16",
+        "C17",
+        "C18",
+        "C19",
+        "C22",
+        "C21"
+      ],
+      "demand_ids": [
+        "DR006",
+        "DR007",
+        "DR008",
+        "DR019",
+        "DR022"
+      ],
+      "query_seeds": [
+        "(\"itraconazole\") AND (repurpos* OR reposition* OR off-label)",
+        "\"itraconazole\" AND (\"Epithelial ovarian or fallopian-tube carcinoma\" OR \"Prostate cancer\" OR \"Non-small-cell lung cancer\" OR \"Colorectal cancer\" OR \"Pancreatic cancer\" OR \"Melanoma\" OR \"Basal-cell carcinoma\" OR \"Acute myeloid leukemia\" OR \"Multiple myeloma\")",
+        "\"itraconazole\" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22itraconazole%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22itraconazole%22%20AND%20%28%22Epithelial%20ovarian%20or%20fallopian-tube%20carcinoma%22%20OR%20%22Prostate%20cancer%22%20OR%20%22Non-small-cell%20lung%20cancer%22%20OR%20%22Colorectal%20cancer%22%20OR%20%22Pancreatic%20cancer%22%20OR%20%22Melanoma%22%20OR%20%22Basal-cell%20carcinoma%22%20OR%20%22Acute%20myeloid%20leukemia%22%20OR%20%22Multiple%20myeloma%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22itraconazole%22%20AND%20%28trial%20OR%20randomized%20OR%20observational%20OR%20adverse%20OR%20negative%20OR%20null%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DRUG-D08",
+      "drug_ids": [
+        "D08"
+      ],
+      "condition_ids": [
+        "C02",
+        "C03",
+        "C04",
+        "C15",
+        "C16",
+        "C20"
+      ],
+      "demand_ids": [
+        "DR006",
+        "DR008",
+        "DR022"
+      ],
+      "query_seeds": [
+        "(\"ivermectin\") AND (repurpos* OR reposition* OR off-label)",
+        "\"ivermectin\" AND (\"Acute COVID-19\" OR \"Epithelial ovarian or fallopian-tube carcinoma\" OR \"Glioblastoma\" OR \"Breast cancer\" OR \"Colorectal cancer\" OR \"Hepatocellular carcinoma\")",
+        "\"ivermectin\" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22ivermectin%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22ivermectin%22%20AND%20%28%22Acute%20COVID-19%22%20OR%20%22Epithelial%20ovarian%20or%20fallopian-tube%20carcinoma%22%20OR%20%22Glioblastoma%22%20OR%20%22Breast%20cancer%22%20OR%20%22Colorectal%20cancer%22%20OR%20%22Hepatocellular%20carcinoma%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22ivermectin%22%20AND%20%28trial%20OR%20randomized%20OR%20observational%20OR%20adverse%20OR%20negative%20OR%20null%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DRUG-D09",
+      "drug_ids": [
+        "D09"
+      ],
+      "condition_ids": [
+        "C03",
+        "C04",
+        "C12"
+      ],
+      "demand_ids": [
+        "DR006",
+        "DR008"
+      ],
+      "query_seeds": [
+        "(\"mebendazole\") AND (repurpos* OR reposition* OR off-label)",
+        "\"mebendazole\" AND (\"Epithelial ovarian or fallopian-tube carcinoma\" OR \"Glioblastoma\" OR \"Head and neck squamous cell carcinoma\")",
+        "\"mebendazole\" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22mebendazole%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22mebendazole%22%20AND%20%28%22Epithelial%20ovarian%20or%20fallopian-tube%20carcinoma%22%20OR%20%22Glioblastoma%22%20OR%20%22Head%20and%20neck%20squamous%20cell%20carcinoma%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22mebendazole%22%20AND%20%28trial%20OR%20randomized%20OR%20observational%20OR%20adverse%20OR%20negative%20OR%20null%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DRUG-D10",
+      "drug_ids": [
+        "D10"
+      ],
+      "condition_ids": [
+        "C03"
+      ],
+      "demand_ids": [
+        "DR022"
+      ],
+      "query_seeds": [
+        "(\"fenbendazole\") AND (repurpos* OR reposition* OR off-label)",
+        "\"fenbendazole\" AND (\"Epithelial ovarian or fallopian-tube carcinoma\")",
+        "\"fenbendazole\" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22fenbendazole%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22fenbendazole%22%20AND%20%28%22Epithelial%20ovarian%20or%20fallopian-tube%20carcinoma%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22fenbendazole%22%20AND%20%28trial%20OR%20randomized%20OR%20observational%20OR%20adverse%20OR%20negative%20OR%20null%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DRUG-D11",
+      "drug_ids": [
+        "D11"
+      ],
+      "condition_ids": [
+        "C01"
+      ],
+      "demand_ids": [
+        "DR010"
+      ],
+      "query_seeds": [
+        "(\"guanfacine\") AND (repurpos* OR reposition* OR off-label)",
+        "\"guanfacine\" AND (\"Long COVID\")",
+        "\"guanfacine\" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22guanfacine%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22guanfacine%22%20AND%20%28%22Long%20COVID%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22guanfacine%22%20AND%20%28trial%20OR%20randomized%20OR%20observational%20OR%20adverse%20OR%20negative%20OR%20null%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DRUG-D12",
+      "drug_ids": [
+        "D12"
+      ],
+      "condition_ids": [
+        "C15",
+        "C16",
+        "C17"
+      ],
+      "demand_ids": [
+        "DR012"
+      ],
+      "query_seeds": [
+        "(\"maraviroc\") AND (repurpos* OR reposition* OR off-label)",
+        "\"maraviroc\" AND (\"Breast cancer\" OR \"Colorectal cancer\" OR \"Pancreatic cancer\")",
+        "\"maraviroc\" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22maraviroc%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22maraviroc%22%20AND%20%28%22Breast%20cancer%22%20OR%20%22Colorectal%20cancer%22%20OR%20%22Pancreatic%20cancer%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22maraviroc%22%20AND%20%28trial%20OR%20randomized%20OR%20observational%20OR%20adverse%20OR%20negative%20OR%20null%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DRUG-D13",
+      "drug_ids": [
+        "D13"
+      ],
+      "condition_ids": [
+        "C04",
+        "C13",
+        "C15",
+        "C22",
+        "C29"
+      ],
+      "demand_ids": [
+        "DR012"
+      ],
+      "query_seeds": [
+        "(\"atorvastatin\") AND (repurpos* OR reposition* OR off-label)",
+        "\"atorvastatin\" AND (\"Glioblastoma\" OR \"Prostate cancer\" OR \"Breast cancer\" OR \"Acute myeloid leukemia\" OR \"Vitiligo\")",
+        "\"atorvastatin\" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22atorvastatin%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22atorvastatin%22%20AND%20%28%22Glioblastoma%22%20OR%20%22Prostate%20cancer%22%20OR%20%22Breast%20cancer%22%20OR%20%22Acute%20myeloid%20leukemia%22%20OR%20%22Vitiligo%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22atorvastatin%22%20AND%20%28trial%20OR%20randomized%20OR%20observational%20OR%20adverse%20OR%20negative%20OR%20null%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DRUG-D14",
+      "drug_ids": [
+        "D14"
+      ],
+      "condition_ids": [
+        "C29"
+      ],
+      "demand_ids": [
+        "DR012"
+      ],
+      "query_seeds": [
+        "(\"rituximab\") AND (repurpos* OR reposition* OR off-label)",
+        "\"rituximab\" AND (\"Vitiligo\")",
+        "\"rituximab\" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22rituximab%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22rituximab%22%20AND%20%28%22Vitiligo%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22rituximab%22%20AND%20%28trial%20OR%20randomized%20OR%20observational%20OR%20adverse%20OR%20negative%20OR%20null%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DRUG-D15",
+      "drug_ids": [
+        "D15"
+      ],
+      "condition_ids": [
+        "C01",
+        "C03",
+        "C12",
+        "C15",
+        "C16",
+        "C17",
+        "C20"
+      ],
+      "demand_ids": [
+        "DR018"
+      ],
+      "query_seeds": [
+        "(\"celecoxib\") AND (repurpos* OR reposition* OR off-label)",
+        "\"celecoxib\" AND (\"Long COVID\" OR \"Epithelial ovarian or fallopian-tube carcinoma\" OR \"Head and neck squamous cell carcinoma\" OR \"Breast cancer\" OR \"Colorectal cancer\" OR \"Pancreatic cancer\" OR \"Hepatocellular carcinoma\")",
+        "\"celecoxib\" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22celecoxib%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22celecoxib%22%20AND%20%28%22Long%20COVID%22%20OR%20%22Epithelial%20ovarian%20or%20fallopian-tube%20carcinoma%22%20OR%20%22Head%20and%20neck%20squamous%20cell%20carcinoma%22%20OR%20%22Breast%20cancer%22%20OR%20%22Colorectal%20cancer%22%20OR%20%22Pancreatic%20cancer%22%20OR%20%22Hepatocellular%20carcinoma%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22celecoxib%22%20AND%20%28trial%20OR%20randomized%20OR%20observational%20OR%20adverse%20OR%20negative%20OR%20null%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DRUG-D16",
+      "drug_ids": [
+        "D16"
+      ],
+      "condition_ids": [
+        "C03",
+        "C09",
+        "C24",
+        "C25",
+        "C26",
+        "C27",
+        "C28",
+        "C29"
+      ],
+      "demand_ids": [
+        "DR019",
+        "DR020"
+      ],
+      "query_seeds": [
+        "(\"minocycline\") AND (repurpos* OR reposition* OR off-label)",
+        "\"minocycline\" AND (\"Epithelial ovarian or fallopian-tube carcinoma\" OR \"Treatment-resistant depression\" OR \"Parkinson disease\" OR \"Schizophrenia\" OR \"Alzheimer disease\" OR \"Multiple sclerosis\" OR \"Amyotrophic lateral sclerosis\" OR \"Vitiligo\")",
+        "\"minocycline\" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22minocycline%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22minocycline%22%20AND%20%28%22Epithelial%20ovarian%20or%20fallopian-tube%20carcinoma%22%20OR%20%22Treatment-resistant%20depression%22%20OR%20%22Parkinson%20disease%22%20OR%20%22Schizophrenia%22%20OR%20%22Alzheimer%20disease%22%20OR%20%22Multiple%20sclerosis%22%20OR%20%22Amyotrophic%20lateral%20sclerosis%22%20OR%20%22Vitiligo%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22minocycline%22%20AND%20%28trial%20OR%20randomized%20OR%20observational%20OR%20adverse%20OR%20negative%20OR%20null%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DRUG-D17",
+      "drug_ids": [
+        "D17"
+      ],
+      "condition_ids": [
+        "C02",
+        "C10",
+        "C12",
+        "C15",
+        "C17"
+      ],
+      "demand_ids": [
+        "DR035",
+        "DR019"
+      ],
+      "query_seeds": [
+        "(\"doxycycline\") AND (repurpos* OR reposition* OR off-label)",
+        "\"doxycycline\" AND (\"Acute COVID-19\" OR \"Periodontitis\" OR \"Head and neck squamous cell carcinoma\" OR \"Breast cancer\" OR \"Pancreatic cancer\")",
+        "\"doxycycline\" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22doxycycline%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22doxycycline%22%20AND%20%28%22Acute%20COVID-19%22%20OR%20%22Periodontitis%22%20OR%20%22Head%20and%20neck%20squamous%20cell%20carcinoma%22%20OR%20%22Breast%20cancer%22%20OR%20%22Pancreatic%20cancer%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22doxycycline%22%20AND%20%28trial%20OR%20randomized%20OR%20observational%20OR%20adverse%20OR%20negative%20OR%20null%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DRUG-D18",
+      "drug_ids": [
+        "D18"
+      ],
+      "condition_ids": [
+        "C04",
+        "C13",
+        "C14",
+        "C15",
+        "C16",
+        "C18"
+      ],
+      "demand_ids": [
+        "DR019",
+        "DR020"
+      ],
+      "query_seeds": [
+        "(\"disulfiram\") AND (repurpos* OR reposition* OR off-label)",
+        "\"disulfiram\" AND (\"Glioblastoma\" OR \"Prostate cancer\" OR \"Non-small-cell lung cancer\" OR \"Breast cancer\" OR \"Colorectal cancer\" OR \"Melanoma\")",
+        "\"disulfiram\" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22disulfiram%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22disulfiram%22%20AND%20%28%22Glioblastoma%22%20OR%20%22Prostate%20cancer%22%20OR%20%22Non-small-cell%20lung%20cancer%22%20OR%20%22Breast%20cancer%22%20OR%20%22Colorectal%20cancer%22%20OR%20%22Melanoma%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22disulfiram%22%20AND%20%28trial%20OR%20randomized%20OR%20observational%20OR%20adverse%20OR%20negative%20OR%20null%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DRUG-D19",
+      "drug_ids": [
+        "D19"
+      ],
+      "condition_ids": [
+        "C13",
+        "C15",
+        "C17",
+        "C18"
+      ],
+      "demand_ids": [
+        "DR019"
+      ],
+      "query_seeds": [
+        "(\"propranolol\") AND (repurpos* OR reposition* OR off-label)",
+        "\"propranolol\" AND (\"Prostate cancer\" OR \"Breast cancer\" OR \"Pancreatic cancer\" OR \"Melanoma\")",
+        "\"propranolol\" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22propranolol%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22propranolol%22%20AND%20%28%22Prostate%20cancer%22%20OR%20%22Breast%20cancer%22%20OR%20%22Pancreatic%20cancer%22%20OR%20%22Melanoma%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22propranolol%22%20AND%20%28trial%20OR%20randomized%20OR%20observational%20OR%20adverse%20OR%20negative%20OR%20null%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DRUG-D20",
+      "drug_ids": [
+        "D20"
+      ],
+      "condition_ids": [
+        "C15",
+        "C16",
+        "C17",
+        "C21",
+        "C29"
+      ],
+      "demand_ids": [
+        "DR019"
+      ],
+      "query_seeds": [
+        "(\"simvastatin\") AND (repurpos* OR reposition* OR off-label)",
+        "\"simvastatin\" AND (\"Breast cancer\" OR \"Colorectal cancer\" OR \"Pancreatic cancer\" OR \"Multiple myeloma\" OR \"Vitiligo\")",
+        "\"simvastatin\" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22simvastatin%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22simvastatin%22%20AND%20%28%22Breast%20cancer%22%20OR%20%22Colorectal%20cancer%22%20OR%20%22Pancreatic%20cancer%22%20OR%20%22Multiple%20myeloma%22%20OR%20%22Vitiligo%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22simvastatin%22%20AND%20%28trial%20OR%20randomized%20OR%20observational%20OR%20adverse%20OR%20negative%20OR%20null%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DRUG-D21",
+      "drug_ids": [
+        "D21"
+      ],
+      "condition_ids": [
+        "C13",
+        "C14",
+        "C15",
+        "C16",
+        "C18"
+      ],
+      "demand_ids": [
+        "DR019"
+      ],
+      "query_seeds": [
+        "(\"niclosamide\") AND (repurpos* OR reposition* OR off-label)",
+        "\"niclosamide\" AND (\"Prostate cancer\" OR \"Non-small-cell lung cancer\" OR \"Breast cancer\" OR \"Colorectal cancer\" OR \"Melanoma\")",
+        "\"niclosamide\" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22niclosamide%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22niclosamide%22%20AND%20%28%22Prostate%20cancer%22%20OR%20%22Non-small-cell%20lung%20cancer%22%20OR%20%22Breast%20cancer%22%20OR%20%22Colorectal%20cancer%22%20OR%20%22Melanoma%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22niclosamide%22%20AND%20%28trial%20OR%20randomized%20OR%20observational%20OR%20adverse%20OR%20negative%20OR%20null%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DRUG-D22",
+      "drug_ids": [
+        "D22"
+      ],
+      "condition_ids": [
+        "C02",
+        "C03",
+        "C13"
+      ],
+      "demand_ids": [
+        "DR005",
+        "DR019"
+      ],
+      "query_seeds": [
+        "(\"hydroxychloroquine\") AND (repurpos* OR reposition* OR off-label)",
+        "\"hydroxychloroquine\" AND (\"Acute COVID-19\" OR \"Epithelial ovarian or fallopian-tube carcinoma\" OR \"Prostate cancer\")",
+        "\"hydroxychloroquine\" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22hydroxychloroquine%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22hydroxychloroquine%22%20AND%20%28%22Acute%20COVID-19%22%20OR%20%22Epithelial%20ovarian%20or%20fallopian-tube%20carcinoma%22%20OR%20%22Prostate%20cancer%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22hydroxychloroquine%22%20AND%20%28trial%20OR%20randomized%20OR%20observational%20OR%20adverse%20OR%20negative%20OR%20null%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DRUG-D23",
+      "drug_ids": [
+        "D23"
+      ],
+      "condition_ids": [
+        "C03",
+        "C12",
+        "C15",
+        "C16",
+        "C20",
+        "C21",
+        "C27"
+      ],
+      "demand_ids": [
+        "DR019",
+        "DR020"
+      ],
+      "query_seeds": [
+        "(\"aspirin\" OR \"acetylsalicylic acid\") AND (repurpos* OR reposition* OR off-label)",
+        "\"aspirin\" AND (\"Epithelial ovarian or fallopian-tube carcinoma\" OR \"Head and neck squamous cell carcinoma\" OR \"Breast cancer\" OR \"Colorectal cancer\" OR \"Hepatocellular carcinoma\" OR \"Multiple myeloma\" OR \"Multiple sclerosis\")",
+        "\"aspirin\" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22aspirin%22%20OR%20%22acetylsalicylic%20acid%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22aspirin%22%20AND%20%28%22Epithelial%20ovarian%20or%20fallopian-tube%20carcinoma%22%20OR%20%22Head%20and%20neck%20squamous%20cell%20carcinoma%22%20OR%20%22Breast%20cancer%22%20OR%20%22Colorectal%20cancer%22%20OR%20%22Hepatocellular%20carcinoma%22%20OR%20%22Multiple%20myeloma%22%20OR%20%22Multiple%20sclerosis%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22aspirin%22%20AND%20%28trial%20OR%20randomized%20OR%20observational%20OR%20adverse%20OR%20negative%20OR%20null%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DRUG-D24",
+      "drug_ids": [
+        "D24"
+      ],
+      "condition_ids": [
+        "C13",
+        "C14",
+        "C17",
+        "C22",
+        "C23",
+        "C30"
+      ],
+      "demand_ids": [
+        "DR019",
+        "DR032",
+        "DR033"
+      ],
+      "query_seeds": [
+        "(\"pioglitazone\") AND (repurpos* OR reposition* OR off-label)",
+        "\"pioglitazone\" AND (\"Prostate cancer\" OR \"Non-small-cell lung cancer\" OR \"Pancreatic cancer\" OR \"Acute myeloid leukemia\" OR \"Chronic myeloid leukemia\" OR \"Sarcopenia\")",
+        "\"pioglitazone\" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22pioglitazone%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22pioglitazone%22%20AND%20%28%22Prostate%20cancer%22%20OR%20%22Non-small-cell%20lung%20cancer%22%20OR%20%22Pancreatic%20cancer%22%20OR%20%22Acute%20myeloid%20leukemia%22%20OR%20%22Chronic%20myeloid%20leukemia%22%20OR%20%22Sarcopenia%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22pioglitazone%22%20AND%20%28trial%20OR%20randomized%20OR%20observational%20OR%20adverse%20OR%20negative%20OR%20null%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DRUG-D25",
+      "drug_ids": [
+        "D25"
+      ],
+      "condition_ids": [
+        "C04"
+      ],
+      "demand_ids": [
+        "DR007",
+        "DR020"
+      ],
+      "query_seeds": [
+        "(\"memantine\") AND (repurpos* OR reposition* OR off-label)",
+        "\"memantine\" AND (\"Glioblastoma\")",
+        "\"memantine\" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22memantine%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22memantine%22%20AND%20%28%22Glioblastoma%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22memantine%22%20AND%20%28trial%20OR%20randomized%20OR%20observational%20OR%20adverse%20OR%20negative%20OR%20null%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DRUG-D26",
+      "drug_ids": [
+        "D26"
+      ],
+      "condition_ids": [
+        "C04",
+        "C17"
+      ],
+      "demand_ids": [
+        "DR007",
+        "DR019"
+      ],
+      "query_seeds": [
+        "(\"sildenafil\") AND (repurpos* OR reposition* OR off-label)",
+        "\"sildenafil\" AND (\"Glioblastoma\" OR \"Pancreatic cancer\")",
+        "\"sildenafil\" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22sildenafil%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22sildenafil%22%20AND%20%28%22Glioblastoma%22%20OR%20%22Pancreatic%20cancer%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22sildenafil%22%20AND%20%28trial%20OR%20randomized%20OR%20observational%20OR%20adverse%20OR%20negative%20OR%20null%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DRUG-D27",
+      "drug_ids": [
+        "D27"
+      ],
+      "condition_ids": [
+        "C12",
+        "C15",
+        "C22"
+      ],
+      "demand_ids": [
+        "DR019"
+      ],
+      "query_seeds": [
+        "(\"valproic acid\" OR \"valproicacid\") AND (repurpos* OR reposition* OR off-label)",
+        "\"valproic acid\" AND (\"Head and neck squamous cell carcinoma\" OR \"Breast cancer\" OR \"Acute myeloid leukemia\")",
+        "\"valproic acid\" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22valproic%20acid%22%20OR%20%22valproicacid%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22valproic%20acid%22%20AND%20%28%22Head%20and%20neck%20squamous%20cell%20carcinoma%22%20OR%20%22Breast%20cancer%22%20OR%20%22Acute%20myeloid%20leukemia%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22valproic%20acid%22%20AND%20%28trial%20OR%20randomized%20OR%20observational%20OR%20adverse%20OR%20negative%20OR%20null%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DRUG-D28",
+      "drug_ids": [
+        "D28"
+      ],
+      "condition_ids": [
+        "C11"
+      ],
+      "demand_ids": [
+        "DR020"
+      ],
+      "query_seeds": [
+        "(\"vorinostat\") AND (repurpos* OR reposition* OR off-label)",
+        "\"vorinostat\" AND (\"Crohn disease\")",
+        "\"vorinostat\" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22vorinostat%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22vorinostat%22%20AND%20%28%22Crohn%20disease%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22vorinostat%22%20AND%20%28trial%20OR%20randomized%20OR%20observational%20OR%20adverse%20OR%20negative%20OR%20null%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DRUG-D29",
+      "drug_ids": [
+        "D29"
+      ],
+      "condition_ids": [
+        "C11"
+      ],
+      "demand_ids": [
+        "DR020"
+      ],
+      "query_seeds": [
+        "(\"clomipramine\") AND (repurpos* OR reposition* OR off-label)",
+        "\"clomipramine\" AND (\"Crohn disease\")",
+        "\"clomipramine\" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22clomipramine%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22clomipramine%22%20AND%20%28%22Crohn%20disease%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22clomipramine%22%20AND%20%28trial%20OR%20randomized%20OR%20observational%20OR%20adverse%20OR%20negative%20OR%20null%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DRUG-D30",
+      "drug_ids": [
+        "D30"
+      ],
+      "condition_ids": [
+        "C03",
+        "C13",
+        "C16",
+        "C21",
+        "C26"
+      ],
+      "demand_ids": [
+        "DR019",
+        "DR008"
+      ],
+      "query_seeds": [
+        "(\"thalidomide\") AND (repurpos* OR reposition* OR off-label)",
+        "\"thalidomide\" AND (\"Epithelial ovarian or fallopian-tube carcinoma\" OR \"Prostate cancer\" OR \"Colorectal cancer\" OR \"Multiple myeloma\" OR \"Alzheimer disease\")",
+        "\"thalidomide\" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22thalidomide%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22thalidomide%22%20AND%20%28%22Epithelial%20ovarian%20or%20fallopian-tube%20carcinoma%22%20OR%20%22Prostate%20cancer%22%20OR%20%22Colorectal%20cancer%22%20OR%20%22Multiple%20myeloma%22%20OR%20%22Alzheimer%20disease%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22thalidomide%22%20AND%20%28trial%20OR%20randomized%20OR%20observational%20OR%20adverse%20OR%20negative%20OR%20null%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "COND-C01",
+      "drug_ids": [
+        "D01",
+        "D02",
+        "D03",
+        "D04",
+        "D11",
+        "D15"
+      ],
+      "condition_ids": [
+        "C01"
+      ],
+      "demand_ids": [
+        "DR001",
+        "DR002",
+        "DR003",
+        "DR004",
+        "DR009",
+        "DR010",
+        "DR011",
+        "DR013",
+        "DR014",
+        "DR015",
+        "DR016",
+        "DR017",
+        "DR018",
+        "DR025"
+      ],
+      "query_seeds": [
+        "(\"Long COVID\" OR \"post-COVID condition\" OR \"PASC\") AND (repurpos* OR reposition* OR off-label)",
+        "\"Long COVID\" AND (\"metformin\" OR \"fluvoxamine\" OR \"nirmatrelvir\" OR \"naltrexone\" OR \"guanfacine\" OR \"celecoxib\")",
+        "\"Long COVID\" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22Long%20COVID%22%20OR%20%22post-COVID%20condition%22%20OR%20%22PASC%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Long%20COVID%22%20AND%20%28%22metformin%22%20OR%20%22fluvoxamine%22%20OR%20%22nirmatrelvir%22%20OR%20%22naltrexone%22%20OR%20%22guanfacine%22%20OR%20%22celecoxib%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Long%20COVID%22%20AND%20%28trial%20OR%20randomized%20OR%20registry%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "COND-C02",
+      "drug_ids": [
+        "D01",
+        "D02",
+        "D03",
+        "D08",
+        "D17",
+        "D22"
+      ],
+      "condition_ids": [
+        "C02"
+      ],
+      "demand_ids": [
+        "DR005"
+      ],
+      "query_seeds": [
+        "(\"Acute COVID-19\" OR \"SARS-CoV-2 infection\") AND (repurpos* OR reposition* OR off-label)",
+        "\"Acute COVID-19\" AND (\"metformin\" OR \"fluvoxamine\" OR \"nirmatrelvir\" OR \"ivermectin\" OR \"doxycycline\" OR \"hydroxychloroquine\")",
+        "\"Acute COVID-19\" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22Acute%20COVID-19%22%20OR%20%22SARS-CoV-2%20infection%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Acute%20COVID-19%22%20AND%20%28%22metformin%22%20OR%20%22fluvoxamine%22%20OR%20%22nirmatrelvir%22%20OR%20%22ivermectin%22%20OR%20%22doxycycline%22%20OR%20%22hydroxychloroquine%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Acute%20COVID-19%22%20AND%20%28trial%20OR%20randomized%20OR%20registry%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "COND-C03",
+      "drug_ids": [
+        "D06",
+        "D07",
+        "D08",
+        "D09",
+        "D10",
+        "D15",
+        "D16",
+        "D22",
+        "D23",
+        "D30"
+      ],
+      "condition_ids": [
+        "C03"
+      ],
+      "demand_ids": [
+        "DR006"
+      ],
+      "query_seeds": [
+        "(\"Epithelial ovarian or fallopian-tube carcinoma\" OR \"ovarian/fallopian cancer\") AND (repurpos* OR reposition* OR off-label)",
+        "\"Epithelial ovarian or fallopian-tube carcinoma\" AND (\"sirolimus\" OR \"itraconazole\" OR \"ivermectin\" OR \"mebendazole\" OR \"fenbendazole\" OR \"celecoxib\" OR \"minocycline\" OR \"hydroxychloroquine\" OR \"aspirin\" OR \"thalidomide\")",
+        "\"Epithelial ovarian or fallopian-tube carcinoma\" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22Epithelial%20ovarian%20or%20fallopian-tube%20carcinoma%22%20OR%20%22ovarian%2Ffallopian%20cancer%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Epithelial%20ovarian%20or%20fallopian-tube%20carcinoma%22%20AND%20%28%22sirolimus%22%20OR%20%22itraconazole%22%20OR%20%22ivermectin%22%20OR%20%22mebendazole%22%20OR%20%22fenbendazole%22%20OR%20%22celecoxib%22%20OR%20%22minocycline%22%20OR%20%22hydroxychloroquine%22%20OR%20%22aspirin%22%20OR%20%22thalidomide%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Epithelial%20ovarian%20or%20fallopian-tube%20carcinoma%22%20AND%20%28trial%20OR%20randomized%20OR%20registry%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "COND-C04",
+      "drug_ids": [
+        "D08",
+        "D09",
+        "D13",
+        "D18",
+        "D25",
+        "D26"
+      ],
+      "condition_ids": [
+        "C04"
+      ],
+      "demand_ids": [
+        "DR007"
+      ],
+      "query_seeds": [
+        "(\"Glioblastoma\" OR \"glioblastoma multiforme\" OR \"GBM\") AND (repurpos* OR reposition* OR off-label)",
+        "\"Glioblastoma\" AND (\"ivermectin\" OR \"mebendazole\" OR \"atorvastatin\" OR \"disulfiram\" OR \"memantine\" OR \"sildenafil\")",
+        "\"Glioblastoma\" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22Glioblastoma%22%20OR%20%22glioblastoma%20multiforme%22%20OR%20%22GBM%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Glioblastoma%22%20AND%20%28%22ivermectin%22%20OR%20%22mebendazole%22%20OR%20%22atorvastatin%22%20OR%20%22disulfiram%22%20OR%20%22memantine%22%20OR%20%22sildenafil%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Glioblastoma%22%20AND%20%28trial%20OR%20randomized%20OR%20registry%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "COND-C05",
+      "drug_ids": [
+        "D04"
+      ],
+      "condition_ids": [
+        "C05"
+      ],
+      "demand_ids": [
+        "DR025"
+      ],
+      "query_seeds": [
+        "(\"Fibromyalgia\" OR \"fibromyalgia-associated chronic pain\") AND (repurpos* OR reposition* OR off-label)",
+        "\"Fibromyalgia\" AND (\"naltrexone\")",
+        "\"Fibromyalgia\" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22Fibromyalgia%22%20OR%20%22fibromyalgia-associated%20chronic%20pain%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Fibromyalgia%22%20AND%20%28%22naltrexone%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Fibromyalgia%22%20AND%20%28trial%20OR%20randomized%20OR%20registry%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "COND-C06",
+      "drug_ids": [
+        "D04"
+      ],
+      "condition_ids": [
+        "C06"
+      ],
+      "demand_ids": [
+        "DR025"
+      ],
+      "query_seeds": [
+        "(\"Myalgic encephalomyelitis/chronic fatigue syndrome\" OR \"ME/CFS\") AND (repurpos* OR reposition* OR off-label)",
+        "\"Myalgic encephalomyelitis/chronic fatigue syndrome\" AND (\"naltrexone\")",
+        "\"Myalgic encephalomyelitis/chronic fatigue syndrome\" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22Myalgic%20encephalomyelitis%2Fchronic%20fatigue%20syndrome%22%20OR%20%22ME%2FCFS%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Myalgic%20encephalomyelitis%2Fchronic%20fatigue%20syndrome%22%20AND%20%28%22naltrexone%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Myalgic%20encephalomyelitis%2Fchronic%20fatigue%20syndrome%22%20AND%20%28trial%20OR%20randomized%20OR%20registry%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "COND-C07",
+      "drug_ids": [
+        "D04"
+      ],
+      "condition_ids": [
+        "C07"
+      ],
+      "demand_ids": [
+        "DR026"
+      ],
+      "query_seeds": [
+        "(\"Compulsive sexual behavior disorder\" OR \"CSBD\") AND (repurpos* OR reposition* OR off-label)",
+        "\"Compulsive sexual behavior disorder\" AND (\"naltrexone\")",
+        "\"Compulsive sexual behavior disorder\" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22Compulsive%20sexual%20behavior%20disorder%22%20OR%20%22CSBD%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Compulsive%20sexual%20behavior%20disorder%22%20AND%20%28%22naltrexone%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Compulsive%20sexual%20behavior%20disorder%22%20AND%20%28trial%20OR%20randomized%20OR%20registry%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "COND-C08",
+      "drug_ids": [
+        "D04"
+      ],
+      "condition_ids": [
+        "C08"
+      ],
+      "demand_ids": [
+        "DR027"
+      ],
+      "query_seeds": [
+        "(\"Persistent genital arousal disorder/genitopelvic dysesthesia\" OR \"PGAD/GPD\") AND (repurpos* OR reposition* OR off-label)",
+        "\"Persistent genital arousal disorder/genitopelvic dysesthesia\" AND (\"naltrexone\")",
+        "\"Persistent genital arousal disorder/genitopelvic dysesthesia\" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22Persistent%20genital%20arousal%20disorder%2Fgenitopelvic%20dysesthesia%22%20OR%20%22PGAD%2FGPD%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Persistent%20genital%20arousal%20disorder%2Fgenitopelvic%20dysesthesia%22%20AND%20%28%22naltrexone%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Persistent%20genital%20arousal%20disorder%2Fgenitopelvic%20dysesthesia%22%20AND%20%28trial%20OR%20randomized%20OR%20registry%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "COND-C09",
+      "drug_ids": [
+        "D05",
+        "D16"
+      ],
+      "condition_ids": [
+        "C09"
+      ],
+      "demand_ids": [
+        "DR028",
+        "DR029",
+        "DR030",
+        "DR031"
+      ],
+      "query_seeds": [
+        "(\"Treatment-resistant depression\" OR \"depression with persistent anhedonia after treatment\") AND (repurpos* OR reposition* OR off-label)",
+        "\"Treatment-resistant depression\" AND (\"pramipexole\" OR \"minocycline\")",
+        "\"Treatment-resistant depression\" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22Treatment-resistant%20depression%22%20OR%20%22depression%20with%20persistent%20anhedonia%20after%20treatment%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Treatment-resistant%20depression%22%20AND%20%28%22pramipexole%22%20OR%20%22minocycline%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Treatment-resistant%20depression%22%20AND%20%28trial%20OR%20randomized%20OR%20registry%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "COND-C10",
+      "drug_ids": [
+        "D06",
+        "D17"
+      ],
+      "condition_ids": [
+        "C10"
+      ],
+      "demand_ids": [
+        "DR035"
+      ],
+      "query_seeds": [
+        "(\"Periodontitis\" OR \"periodontal disease\") AND (repurpos* OR reposition* OR off-label)",
+        "\"Periodontitis\" AND (\"sirolimus\" OR \"doxycycline\")",
+        "\"Periodontitis\" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22Periodontitis%22%20OR%20%22periodontal%20disease%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Periodontitis%22%20AND%20%28%22sirolimus%22%20OR%20%22doxycycline%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Periodontitis%22%20AND%20%28trial%20OR%20randomized%20OR%20registry%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "COND-C11",
+      "drug_ids": [
+        "D28",
+        "D29"
+      ],
+      "condition_ids": [
+        "C11"
+      ],
+      "demand_ids": [
+        "DR020"
+      ],
+      "query_seeds": [
+        "(\"Crohn disease\" OR \"anti-TNF refractory Crohn disease subset\") AND (repurpos* OR reposition* OR off-label)",
+        "\"Crohn disease\" AND (\"vorinostat\" OR \"clomipramine\")",
+        "\"Crohn disease\" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22Crohn%20disease%22%20OR%20%22anti-TNF%20refractory%20Crohn%20disease%20subset%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Crohn%20disease%22%20AND%20%28%22vorinostat%22%20OR%20%22clomipramine%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Crohn%20disease%22%20AND%20%28trial%20OR%20randomized%20OR%20registry%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "COND-C12",
+      "drug_ids": [
+        "D09",
+        "D15",
+        "D17",
+        "D23",
+        "D27"
+      ],
+      "condition_ids": [
+        "C12"
+      ],
+      "demand_ids": [
+        "DR019",
+        "DR008"
+      ],
+      "query_seeds": [
+        "(\"Head and neck squamous cell carcinoma\" OR \"HNSCC\" OR \"oral SCC within the family\") AND (repurpos* OR reposition* OR off-label)",
+        "\"Head and neck squamous cell carcinoma\" AND (\"mebendazole\" OR \"celecoxib\" OR \"doxycycline\" OR \"aspirin\" OR \"valproic acid\")",
+        "\"Head and neck squamous cell carcinoma\" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22Head%20and%20neck%20squamous%20cell%20carcinoma%22%20OR%20%22HNSCC%22%20OR%20%22oral%20SCC%20within%20the%20family%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Head%20and%20neck%20squamous%20cell%20carcinoma%22%20AND%20%28%22mebendazole%22%20OR%20%22celecoxib%22%20OR%20%22doxycycline%22%20OR%20%22aspirin%22%20OR%20%22valproic%20acid%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Head%20and%20neck%20squamous%20cell%20carcinoma%22%20AND%20%28trial%20OR%20randomized%20OR%20registry%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "COND-C13",
+      "drug_ids": [
+        "D01",
+        "D06",
+        "D07",
+        "D13",
+        "D18",
+        "D19",
+        "D21",
+        "D22",
+        "D24",
+        "D30"
+      ],
+      "condition_ids": [
+        "C13"
+      ],
+      "demand_ids": [
+        "DR019",
+        "DR008"
+      ],
+      "query_seeds": [
+        "(\"Prostate cancer\" OR \"prostatic carcinoma\") AND (repurpos* OR reposition* OR off-label)",
+        "\"Prostate cancer\" AND (\"metformin\" OR \"sirolimus\" OR \"itraconazole\" OR \"atorvastatin\" OR \"disulfiram\" OR \"propranolol\" OR \"niclosamide\" OR \"hydroxychloroquine\" OR \"pioglitazone\" OR \"thalidomide\")",
+        "\"Prostate cancer\" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22Prostate%20cancer%22%20OR%20%22prostatic%20carcinoma%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Prostate%20cancer%22%20AND%20%28%22metformin%22%20OR%20%22sirolimus%22%20OR%20%22itraconazole%22%20OR%20%22atorvastatin%22%20OR%20%22disulfiram%22%20OR%20%22propranolol%22%20OR%20%22niclosamide%22%20OR%20%22hydroxychloroquine%22%20OR%20%22pioglitazone%22%20OR%20%22thalidomide%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Prostate%20cancer%22%20AND%20%28trial%20OR%20randomized%20OR%20registry%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "COND-C14",
+      "drug_ids": [
+        "D01",
+        "D07",
+        "D18",
+        "D21",
+        "D24"
+      ],
+      "condition_ids": [
+        "C14"
+      ],
+      "demand_ids": [
+        "DR019",
+        "DR008"
+      ],
+      "query_seeds": [
+        "(\"Non-small-cell lung cancer\" OR \"NSCLC\") AND (repurpos* OR reposition* OR off-label)",
+        "\"Non-small-cell lung cancer\" AND (\"metformin\" OR \"itraconazole\" OR \"disulfiram\" OR \"niclosamide\" OR \"pioglitazone\")",
+        "\"Non-small-cell lung cancer\" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22Non-small-cell%20lung%20cancer%22%20OR%20%22NSCLC%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Non-small-cell%20lung%20cancer%22%20AND%20%28%22metformin%22%20OR%20%22itraconazole%22%20OR%20%22disulfiram%22%20OR%20%22niclosamide%22%20OR%20%22pioglitazone%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Non-small-cell%20lung%20cancer%22%20AND%20%28trial%20OR%20randomized%20OR%20registry%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "COND-C15",
+      "drug_ids": [
+        "D01",
+        "D06",
+        "D08",
+        "D12",
+        "D13",
+        "D15",
+        "D17",
+        "D18",
+        "D19",
+        "D20",
+        "D21",
+        "D23",
+        "D27"
+      ],
+      "condition_ids": [
+        "C15"
+      ],
+      "demand_ids": [
+        "DR019",
+        "DR008"
+      ],
+      "query_seeds": [
+        "(\"Breast cancer\" OR \"breast carcinoma\") AND (repurpos* OR reposition* OR off-label)",
+        "\"Breast cancer\" AND (\"metformin\" OR \"sirolimus\" OR \"ivermectin\" OR \"maraviroc\" OR \"atorvastatin\" OR \"celecoxib\" OR \"doxycycline\" OR \"disulfiram\" OR \"propranolol\" OR \"simvastatin\" OR \"niclosamide\" OR \"aspirin\" OR \"valproic acid\")",
+        "\"Breast cancer\" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22Breast%20cancer%22%20OR%20%22breast%20carcinoma%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Breast%20cancer%22%20AND%20%28%22metformin%22%20OR%20%22sirolimus%22%20OR%20%22ivermectin%22%20OR%20%22maraviroc%22%20OR%20%22atorvastatin%22%20OR%20%22celecoxib%22%20OR%20%22doxycycline%22%20OR%20%22disulfiram%22%20OR%20%22propranolol%22%20OR%20%22simvastatin%22%20OR%20%22niclosamide%22%20OR%20%22aspirin%22%20OR%20%22valproic%20acid%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Breast%20cancer%22%20AND%20%28trial%20OR%20randomized%20OR%20registry%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "COND-C16",
+      "drug_ids": [
+        "D01",
+        "D06",
+        "D07",
+        "D08",
+        "D12",
+        "D15",
+        "D18",
+        "D20",
+        "D21",
+        "D23",
+        "D30"
+      ],
+      "condition_ids": [
+        "C16"
+      ],
+      "demand_ids": [
+        "DR019",
+        "DR008"
+      ],
+      "query_seeds": [
+        "(\"Colorectal cancer\" OR \"colon cancer\" OR \"rectal cancer\") AND (repurpos* OR reposition* OR off-label)",
+        "\"Colorectal cancer\" AND (\"metformin\" OR \"sirolimus\" OR \"itraconazole\" OR \"ivermectin\" OR \"maraviroc\" OR \"celecoxib\" OR \"disulfiram\" OR \"simvastatin\" OR \"niclosamide\" OR \"aspirin\" OR \"thalidomide\")",
+        "\"Colorectal cancer\" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22Colorectal%20cancer%22%20OR%20%22colon%20cancer%22%20OR%20%22rectal%20cancer%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Colorectal%20cancer%22%20AND%20%28%22metformin%22%20OR%20%22sirolimus%22%20OR%20%22itraconazole%22%20OR%20%22ivermectin%22%20OR%20%22maraviroc%22%20OR%20%22celecoxib%22%20OR%20%22disulfiram%22%20OR%20%22simvastatin%22%20OR%20%22niclosamide%22%20OR%20%22aspirin%22%20OR%20%22thalidomide%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Colorectal%20cancer%22%20AND%20%28trial%20OR%20randomized%20OR%20registry%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "COND-C17",
+      "drug_ids": [
+        "D01",
+        "D07",
+        "D12",
+        "D15",
+        "D17",
+        "D19",
+        "D20",
+        "D24",
+        "D26"
+      ],
+      "condition_ids": [
+        "C17"
+      ],
+      "demand_ids": [
+        "DR019",
+        "DR008"
+      ],
+      "query_seeds": [
+        "(\"Pancreatic cancer\" OR \"pancreatic carcinoma\") AND (repurpos* OR reposition* OR off-label)",
+        "\"Pancreatic cancer\" AND (\"metformin\" OR \"itraconazole\" OR \"maraviroc\" OR \"celecoxib\" OR \"doxycycline\" OR \"propranolol\" OR \"simvastatin\" OR \"pioglitazone\" OR \"sildenafil\")",
+        "\"Pancreatic cancer\" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22Pancreatic%20cancer%22%20OR%20%22pancreatic%20carcinoma%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Pancreatic%20cancer%22%20AND%20%28%22metformin%22%20OR%20%22itraconazole%22%20OR%20%22maraviroc%22%20OR%20%22celecoxib%22%20OR%20%22doxycycline%22%20OR%20%22propranolol%22%20OR%20%22simvastatin%22%20OR%20%22pioglitazone%22%20OR%20%22sildenafil%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Pancreatic%20cancer%22%20AND%20%28trial%20OR%20randomized%20OR%20registry%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "COND-C18",
+      "drug_ids": [
+        "D07",
+        "D18",
+        "D19",
+        "D21"
+      ],
+      "condition_ids": [
+        "C18"
+      ],
+      "demand_ids": [
+        "DR019",
+        "DR008"
+      ],
+      "query_seeds": [
+        "(\"Melanoma\" OR \"cutaneous melanoma\") AND (repurpos* OR reposition* OR off-label)",
+        "\"Melanoma\" AND (\"itraconazole\" OR \"disulfiram\" OR \"propranolol\" OR \"niclosamide\")",
+        "\"Melanoma\" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22Melanoma%22%20OR%20%22cutaneous%20melanoma%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Melanoma%22%20AND%20%28%22itraconazole%22%20OR%20%22disulfiram%22%20OR%20%22propranolol%22%20OR%20%22niclosamide%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Melanoma%22%20AND%20%28trial%20OR%20randomized%20OR%20registry%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "COND-C19",
+      "drug_ids": [
+        "D07"
+      ],
+      "condition_ids": [
+        "C19"
+      ],
+      "demand_ids": [
+        "DR019"
+      ],
+      "query_seeds": [
+        "(\"Basal-cell carcinoma\" OR \"BCC\") AND (repurpos* OR reposition* OR off-label)",
+        "\"Basal-cell carcinoma\" AND (\"itraconazole\")",
+        "\"Basal-cell carcinoma\" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22Basal-cell%20carcinoma%22%20OR%20%22BCC%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Basal-cell%20carcinoma%22%20AND%20%28%22itraconazole%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Basal-cell%20carcinoma%22%20AND%20%28trial%20OR%20randomized%20OR%20registry%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "COND-C20",
+      "drug_ids": [
+        "D08",
+        "D15",
+        "D23"
+      ],
+      "condition_ids": [
+        "C20"
+      ],
+      "demand_ids": [
+        "DR019",
+        "DR008"
+      ],
+      "query_seeds": [
+        "(\"Hepatocellular carcinoma\" OR \"HCC\") AND (repurpos* OR reposition* OR off-label)",
+        "\"Hepatocellular carcinoma\" AND (\"ivermectin\" OR \"celecoxib\" OR \"aspirin\")",
+        "\"Hepatocellular carcinoma\" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22Hepatocellular%20carcinoma%22%20OR%20%22HCC%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Hepatocellular%20carcinoma%22%20AND%20%28%22ivermectin%22%20OR%20%22celecoxib%22%20OR%20%22aspirin%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Hepatocellular%20carcinoma%22%20AND%20%28trial%20OR%20randomized%20OR%20registry%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "COND-C21",
+      "drug_ids": [
+        "D01",
+        "D20",
+        "D23",
+        "D30",
+        "D07"
+      ],
+      "condition_ids": [
+        "C21"
+      ],
+      "demand_ids": [
+        "DR019",
+        "DR008"
+      ],
+      "query_seeds": [
+        "(\"Multiple myeloma\" OR \"plasma-cell myeloma\") AND (repurpos* OR reposition* OR off-label)",
+        "\"Multiple myeloma\" AND (\"metformin\" OR \"simvastatin\" OR \"aspirin\" OR \"thalidomide\" OR \"itraconazole\")",
+        "\"Multiple myeloma\" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22Multiple%20myeloma%22%20OR%20%22plasma-cell%20myeloma%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Multiple%20myeloma%22%20AND%20%28%22metformin%22%20OR%20%22simvastatin%22%20OR%20%22aspirin%22%20OR%20%22thalidomide%22%20OR%20%22itraconazole%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Multiple%20myeloma%22%20AND%20%28trial%20OR%20randomized%20OR%20registry%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "COND-C22",
+      "drug_ids": [
+        "D06",
+        "D07",
+        "D13",
+        "D24",
+        "D27"
+      ],
+      "condition_ids": [
+        "C22"
+      ],
+      "demand_ids": [
+        "DR019",
+        "DR008"
+      ],
+      "query_seeds": [
+        "(\"Acute myeloid leukemia\" OR \"AML\" OR \"acute myelogenous leukemia\") AND (repurpos* OR reposition* OR off-label)",
+        "\"Acute myeloid leukemia\" AND (\"sirolimus\" OR \"itraconazole\" OR \"atorvastatin\" OR \"pioglitazone\" OR \"valproic acid\")",
+        "\"Acute myeloid leukemia\" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22Acute%20myeloid%20leukemia%22%20OR%20%22AML%22%20OR%20%22acute%20myelogenous%20leukemia%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Acute%20myeloid%20leukemia%22%20AND%20%28%22sirolimus%22%20OR%20%22itraconazole%22%20OR%20%22atorvastatin%22%20OR%20%22pioglitazone%22%20OR%20%22valproic%20acid%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Acute%20myeloid%20leukemia%22%20AND%20%28trial%20OR%20randomized%20OR%20registry%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "COND-C23",
+      "drug_ids": [
+        "D06",
+        "D24"
+      ],
+      "condition_ids": [
+        "C23"
+      ],
+      "demand_ids": [
+        "DR019",
+        "DR008"
+      ],
+      "query_seeds": [
+        "(\"Chronic myeloid leukemia\" OR \"CML\") AND (repurpos* OR reposition* OR off-label)",
+        "\"Chronic myeloid leukemia\" AND (\"sirolimus\" OR \"pioglitazone\")",
+        "\"Chronic myeloid leukemia\" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22Chronic%20myeloid%20leukemia%22%20OR%20%22CML%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Chronic%20myeloid%20leukemia%22%20AND%20%28%22sirolimus%22%20OR%20%22pioglitazone%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Chronic%20myeloid%20leukemia%22%20AND%20%28trial%20OR%20randomized%20OR%20registry%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "COND-C24",
+      "drug_ids": [
+        "D01",
+        "D16"
+      ],
+      "condition_ids": [
+        "C24"
+      ],
+      "demand_ids": [],
+      "query_seeds": [
+        "(\"Parkinson disease\" OR \"PD\") AND (repurpos* OR reposition* OR off-label)",
+        "\"Parkinson disease\" AND (\"metformin\" OR \"minocycline\")",
+        "\"Parkinson disease\" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22Parkinson%20disease%22%20OR%20%22PD%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Parkinson%20disease%22%20AND%20%28%22metformin%22%20OR%20%22minocycline%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Parkinson%20disease%22%20AND%20%28trial%20OR%20randomized%20OR%20registry%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "COND-C25",
+      "drug_ids": [
+        "D01",
+        "D16"
+      ],
+      "condition_ids": [
+        "C25"
+      ],
+      "demand_ids": [],
+      "query_seeds": [
+        "(\"Schizophrenia\" OR \"schizophrenia-associated cognitive impairment\") AND (repurpos* OR reposition* OR off-label)",
+        "\"Schizophrenia\" AND (\"metformin\" OR \"minocycline\")",
+        "\"Schizophrenia\" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22Schizophrenia%22%20OR%20%22schizophrenia-associated%20cognitive%20impairment%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Schizophrenia%22%20AND%20%28%22metformin%22%20OR%20%22minocycline%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Schizophrenia%22%20AND%20%28trial%20OR%20randomized%20OR%20registry%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "COND-C26",
+      "drug_ids": [
+        "D16",
+        "D30"
+      ],
+      "condition_ids": [
+        "C26"
+      ],
+      "demand_ids": [],
+      "query_seeds": [
+        "(\"Alzheimer disease\" OR \"AD\") AND (repurpos* OR reposition* OR off-label)",
+        "\"Alzheimer disease\" AND (\"minocycline\" OR \"thalidomide\")",
+        "\"Alzheimer disease\" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22Alzheimer%20disease%22%20OR%20%22AD%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Alzheimer%20disease%22%20AND%20%28%22minocycline%22%20OR%20%22thalidomide%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Alzheimer%20disease%22%20AND%20%28trial%20OR%20randomized%20OR%20registry%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "COND-C27",
+      "drug_ids": [
+        "D16",
+        "D23"
+      ],
+      "condition_ids": [
+        "C27"
+      ],
+      "demand_ids": [
+        "DR020"
+      ],
+      "query_seeds": [
+        "(\"Multiple sclerosis\" OR \"MS\" OR \"RRMS\") AND (repurpos* OR reposition* OR off-label)",
+        "\"Multiple sclerosis\" AND (\"minocycline\" OR \"aspirin\")",
+        "\"Multiple sclerosis\" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22Multiple%20sclerosis%22%20OR%20%22MS%22%20OR%20%22RRMS%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Multiple%20sclerosis%22%20AND%20%28%22minocycline%22%20OR%20%22aspirin%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Multiple%20sclerosis%22%20AND%20%28trial%20OR%20randomized%20OR%20registry%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "COND-C28",
+      "drug_ids": [
+        "D16"
+      ],
+      "condition_ids": [
+        "C28"
+      ],
+      "demand_ids": [],
+      "query_seeds": [
+        "(\"Amyotrophic lateral sclerosis\" OR \"ALS\") AND (repurpos* OR reposition* OR off-label)",
+        "\"Amyotrophic lateral sclerosis\" AND (\"minocycline\")",
+        "\"Amyotrophic lateral sclerosis\" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22Amyotrophic%20lateral%20sclerosis%22%20OR%20%22ALS%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Amyotrophic%20lateral%20sclerosis%22%20AND%20%28%22minocycline%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Amyotrophic%20lateral%20sclerosis%22%20AND%20%28trial%20OR%20randomized%20OR%20registry%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "COND-C29",
+      "drug_ids": [
+        "D13",
+        "D14",
+        "D16",
+        "D20"
+      ],
+      "condition_ids": [
+        "C29"
+      ],
+      "demand_ids": [],
+      "query_seeds": [
+        "(\"Vitiligo\" OR \"non-segmental/segmental vitiligo\") AND (repurpos* OR reposition* OR off-label)",
+        "\"Vitiligo\" AND (\"atorvastatin\" OR \"rituximab\" OR \"minocycline\" OR \"simvastatin\")",
+        "\"Vitiligo\" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22Vitiligo%22%20OR%20%22non-segmental%2Fsegmental%20vitiligo%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Vitiligo%22%20AND%20%28%22atorvastatin%22%20OR%20%22rituximab%22%20OR%20%22minocycline%22%20OR%20%22simvastatin%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Vitiligo%22%20AND%20%28trial%20OR%20randomized%20OR%20registry%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "COND-C30",
+      "drug_ids": [
+        "D01",
+        "D24"
+      ],
+      "condition_ids": [
+        "C30"
+      ],
+      "demand_ids": [
+        "DR032",
+        "DR033",
+        "DR036"
+      ],
+      "query_seeds": [
+        "(\"Sarcopenia\" OR \"age-related loss of muscle strength/mass/function\") AND (repurpos* OR reposition* OR off-label)",
+        "\"Sarcopenia\" AND (\"metformin\" OR \"pioglitazone\")",
+        "\"Sarcopenia\" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22Sarcopenia%22%20OR%20%22age-related%20loss%20of%20muscle%20strength%2Fmass%2Ffunction%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20off-label%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Sarcopenia%22%20AND%20%28%22metformin%22%20OR%20%22pioglitazone%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22Sarcopenia%22%20AND%20%28trial%20OR%20randomized%20OR%20registry%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DR001",
+      "drug_ids": [
+        "D01"
+      ],
+      "condition_ids": [
+        "C01"
+      ],
+      "demand_ids": [
+        "DR001"
+      ],
+      "query_seeds": [
+        "metformin AND (COVID-19 OR SARS-CoV-2) AND ((\"Long COVID\" OR \"post-COVID condition\" OR PASC) OR prevention)",
+        "metformin AND (COVID-19 OR SARS-CoV-2) AND ((\"Long COVID\" OR \"post-COVID condition\" OR PASC) OR prevention) AND (trial OR safety OR null OR adverse OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=metformin%20AND%20%28COVID-19%20OR%20SARS-CoV-2%29%20AND%20%28%28%22Long%20COVID%22%20OR%20%22post-COVID%20condition%22%20OR%20PASC%29%20OR%20prevention%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=metformin%20AND%20%28COVID-19%20OR%20SARS-CoV-2%29%20AND%20%28%28%22Long%20COVID%22%20OR%20%22post-COVID%20condition%22%20OR%20PASC%29%20OR%20prevention%29%20AND%20%28trial%20OR%20safety%20OR%20null%20OR%20adverse%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DR002",
+      "drug_ids": [
+        "D01"
+      ],
+      "condition_ids": [
+        "C01"
+      ],
+      "demand_ids": [
+        "DR002"
+      ],
+      "query_seeds": [
+        "metformin AND (\"Long COVID\" OR \"post-COVID condition\" OR PASC)",
+        "metformin AND (\"Long COVID\" OR \"post-COVID condition\" OR PASC) AND (trial OR safety OR null OR adverse OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=metformin%20AND%20%28%22Long%20COVID%22%20OR%20%22post-COVID%20condition%22%20OR%20PASC%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=metformin%20AND%20%28%22Long%20COVID%22%20OR%20%22post-COVID%20condition%22%20OR%20PASC%29%20AND%20%28trial%20OR%20safety%20OR%20null%20OR%20adverse%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DR003",
+      "drug_ids": [
+        "D03"
+      ],
+      "condition_ids": [
+        "C01"
+      ],
+      "demand_ids": [
+        "DR003"
+      ],
+      "query_seeds": [
+        "(nirmatrelvir AND ritonavir) AND (\"Long COVID\" OR \"post-COVID condition\" OR PASC)",
+        "(nirmatrelvir AND ritonavir) AND (\"Long COVID\" OR \"post-COVID condition\" OR PASC) AND (trial OR safety OR null OR adverse OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28nirmatrelvir%20AND%20ritonavir%29%20AND%20%28%22Long%20COVID%22%20OR%20%22post-COVID%20condition%22%20OR%20PASC%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28nirmatrelvir%20AND%20ritonavir%29%20AND%20%28%22Long%20COVID%22%20OR%20%22post-COVID%20condition%22%20OR%20PASC%29%20AND%20%28trial%20OR%20safety%20OR%20null%20OR%20adverse%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DR004",
+      "drug_ids": [
+        "D02"
+      ],
+      "condition_ids": [
+        "C01"
+      ],
+      "demand_ids": [
+        "DR004"
+      ],
+      "query_seeds": [
+        "fluvoxamine AND (\"Long COVID\" OR \"post-COVID condition\" OR PASC) AND (fatigue OR symptom*)",
+        "fluvoxamine AND (\"Long COVID\" OR \"post-COVID condition\" OR PASC) AND (fatigue OR symptom*) AND (trial OR safety OR null OR adverse OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=fluvoxamine%20AND%20%28%22Long%20COVID%22%20OR%20%22post-COVID%20condition%22%20OR%20PASC%29%20AND%20%28fatigue%20OR%20symptom%2A%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=fluvoxamine%20AND%20%28%22Long%20COVID%22%20OR%20%22post-COVID%20condition%22%20OR%20PASC%29%20AND%20%28fatigue%20OR%20symptom%2A%29%20AND%20%28trial%20OR%20safety%20OR%20null%20OR%20adverse%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DR005",
+      "drug_ids": [
+        "D02",
+        "D22"
+      ],
+      "condition_ids": [
+        "C02"
+      ],
+      "demand_ids": [
+        "DR005"
+      ],
+      "query_seeds": [
+        "fluvoxamine AND (COVID-19 OR SARS-CoV-2) AND (outpatient OR hospitalization OR deterioration)",
+        "fluvoxamine AND (COVID-19 OR SARS-CoV-2) AND (outpatient OR hospitalization OR deterioration) AND (trial OR safety OR null OR adverse OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=fluvoxamine%20AND%20%28COVID-19%20OR%20SARS-CoV-2%29%20AND%20%28outpatient%20OR%20hospitalization%20OR%20deterioration%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=fluvoxamine%20AND%20%28COVID-19%20OR%20SARS-CoV-2%29%20AND%20%28outpatient%20OR%20hospitalization%20OR%20deterioration%29%20AND%20%28trial%20OR%20safety%20OR%20null%20OR%20adverse%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DR006",
+      "drug_ids": [
+        "D07",
+        "D08",
+        "D09"
+      ],
+      "condition_ids": [
+        "C03"
+      ],
+      "demand_ids": [
+        "DR006"
+      ],
+      "query_seeds": [
+        "(ivermectin OR mebendazole OR (ivermectin AND mebendazole)) AND (ovarian OR \"fallopian tube\") AND (cancer OR carcinoma OR maintenance)",
+        "(ivermectin OR mebendazole OR (ivermectin AND mebendazole)) AND (ovarian OR \"fallopian tube\") AND (cancer OR carcinoma OR maintenance) AND (trial OR safety OR null OR adverse OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28ivermectin%20OR%20mebendazole%20OR%20%28ivermectin%20AND%20mebendazole%29%29%20AND%20%28ovarian%20OR%20%22fallopian%20tube%22%29%20AND%20%28cancer%20OR%20carcinoma%20OR%20maintenance%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28ivermectin%20OR%20mebendazole%20OR%20%28ivermectin%20AND%20mebendazole%29%29%20AND%20%28ovarian%20OR%20%22fallopian%20tube%22%29%20AND%20%28cancer%20OR%20carcinoma%20OR%20maintenance%29%20AND%20%28trial%20OR%20safety%20OR%20null%20OR%20adverse%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DR007",
+      "drug_ids": [
+        "D07",
+        "D25",
+        "D26"
+      ],
+      "condition_ids": [
+        "C04"
+      ],
+      "demand_ids": [
+        "DR007"
+      ],
+      "query_seeds": [
+        "(glioblastoma OR \"glioblastoma multiforme\") AND (repurpos* OR reposition* OR \"off-label\") AND (adjunct* OR trial OR treatment)",
+        "(glioblastoma OR \"glioblastoma multiforme\") AND (repurpos* OR reposition* OR \"off-label\") AND (adjunct* OR trial OR treatment) AND (trial OR safety OR null OR adverse OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28glioblastoma%20OR%20%22glioblastoma%20multiforme%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20%22off-label%22%29%20AND%20%28adjunct%2A%20OR%20trial%20OR%20treatment%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28glioblastoma%20OR%20%22glioblastoma%20multiforme%22%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20%22off-label%22%29%20AND%20%28adjunct%2A%20OR%20trial%20OR%20treatment%29%20AND%20%28trial%20OR%20safety%20OR%20null%20OR%20adverse%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DR008",
+      "drug_ids": [
+        "D07",
+        "D08",
+        "D09",
+        "D30"
+      ],
+      "condition_ids": [
+        "C12",
+        "C13",
+        "C14",
+        "C15",
+        "C16",
+        "C17",
+        "C18",
+        "C20",
+        "C21",
+        "C22",
+        "C23"
+      ],
+      "demand_ids": [
+        "DR008"
+      ],
+      "query_seeds": [
+        "(ivermectin OR mebendazole OR repurpos*) AND (\"advanced cancer\" OR \"metastatic cancer\" OR palliative OR \"quality of life\")",
+        "(ivermectin OR mebendazole OR repurpos*) AND (\"advanced cancer\" OR \"metastatic cancer\" OR palliative OR \"quality of life\") AND (trial OR safety OR null OR adverse OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28ivermectin%20OR%20mebendazole%20OR%20repurpos%2A%29%20AND%20%28%22advanced%20cancer%22%20OR%20%22metastatic%20cancer%22%20OR%20palliative%20OR%20%22quality%20of%20life%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28ivermectin%20OR%20mebendazole%20OR%20repurpos%2A%29%20AND%20%28%22advanced%20cancer%22%20OR%20%22metastatic%20cancer%22%20OR%20palliative%20OR%20%22quality%20of%20life%22%29%20AND%20%28trial%20OR%20safety%20OR%20null%20OR%20adverse%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DR009",
+      "drug_ids": [],
+      "condition_ids": [
+        "C01"
+      ],
+      "demand_ids": [
+        "DR009"
+      ],
+      "query_seeds": [
+        "pemivibart AND (\"Long COVID\" OR \"post-COVID condition\" OR PASC)",
+        "pemivibart AND (\"Long COVID\" OR \"post-COVID condition\" OR PASC) AND (trial OR safety OR null OR adverse OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=pemivibart%20AND%20%28%22Long%20COVID%22%20OR%20%22post-COVID%20condition%22%20OR%20PASC%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=pemivibart%20AND%20%28%22Long%20COVID%22%20OR%20%22post-COVID%20condition%22%20OR%20PASC%29%20AND%20%28trial%20OR%20safety%20OR%20null%20OR%20adverse%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DR010",
+      "drug_ids": [
+        "D11"
+      ],
+      "condition_ids": [
+        "C01"
+      ],
+      "demand_ids": [
+        "DR010"
+      ],
+      "query_seeds": [
+        "guanfacine AND (\"Long COVID\" OR \"post-COVID condition\" OR PASC) AND (cognition OR \"brain fog\" OR cognitive)",
+        "guanfacine AND (\"Long COVID\" OR \"post-COVID condition\" OR PASC) AND (cognition OR \"brain fog\" OR cognitive) AND (trial OR safety OR null OR adverse OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=guanfacine%20AND%20%28%22Long%20COVID%22%20OR%20%22post-COVID%20condition%22%20OR%20PASC%29%20AND%20%28cognition%20OR%20%22brain%20fog%22%20OR%20cognitive%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=guanfacine%20AND%20%28%22Long%20COVID%22%20OR%20%22post-COVID%20condition%22%20OR%20PASC%29%20AND%20%28cognition%20OR%20%22brain%20fog%22%20OR%20cognitive%29%20AND%20%28trial%20OR%20safety%20OR%20null%20OR%20adverse%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DR011",
+      "drug_ids": [],
+      "condition_ids": [
+        "C01"
+      ],
+      "demand_ids": [
+        "DR011"
+      ],
+      "query_seeds": [
+        "(\"Long COVID\" OR \"post-COVID condition\" OR PASC) AND (repurpos* OR reposition* OR \"off-label\") AND (fatigue OR cognition OR dysautonomia OR symptom*)",
+        "(\"Long COVID\" OR \"post-COVID condition\" OR PASC) AND (repurpos* OR reposition* OR \"off-label\") AND (fatigue OR cognition OR dysautonomia OR symptom*) AND (trial OR safety OR null OR adverse OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22Long%20COVID%22%20OR%20%22post-COVID%20condition%22%20OR%20PASC%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20%22off-label%22%29%20AND%20%28fatigue%20OR%20cognition%20OR%20dysautonomia%20OR%20symptom%2A%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22Long%20COVID%22%20OR%20%22post-COVID%20condition%22%20OR%20PASC%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%20OR%20%22off-label%22%29%20AND%20%28fatigue%20OR%20cognition%20OR%20dysautonomia%20OR%20symptom%2A%29%20AND%20%28trial%20OR%20safety%20OR%20null%20OR%20adverse%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DR012",
+      "drug_ids": [
+        "D12",
+        "D13",
+        "D14"
+      ],
+      "condition_ids": [],
+      "demand_ids": [
+        "DR012"
+      ],
+      "query_seeds": [
+        "(maraviroc OR atorvastatin OR rituximab OR naltrexone OR pemivibart) AND (\"off-label\" OR prescribing OR reimbursement OR insurance OR access)",
+        "(maraviroc OR atorvastatin OR rituximab OR naltrexone OR pemivibart) AND (\"off-label\" OR prescribing OR reimbursement OR insurance OR access) AND (trial OR safety OR null OR adverse OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28maraviroc%20OR%20atorvastatin%20OR%20rituximab%20OR%20naltrexone%20OR%20pemivibart%29%20AND%20%28%22off-label%22%20OR%20prescribing%20OR%20reimbursement%20OR%20insurance%20OR%20access%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28maraviroc%20OR%20atorvastatin%20OR%20rituximab%20OR%20naltrexone%20OR%20pemivibart%29%20AND%20%28%22off-label%22%20OR%20prescribing%20OR%20reimbursement%20OR%20insurance%20OR%20access%29%20AND%20%28trial%20OR%20safety%20OR%20null%20OR%20adverse%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DR013",
+      "drug_ids": [
+        "D01"
+      ],
+      "condition_ids": [
+        "C01"
+      ],
+      "demand_ids": [
+        "DR013"
+      ],
+      "query_seeds": [
+        "metformin AND (\"Long COVID\" OR \"post-COVID condition\" OR PASC) AND (safety OR tolerability OR adverse OR monitoring)",
+        "metformin AND (\"Long COVID\" OR \"post-COVID condition\" OR PASC) AND (safety OR tolerability OR adverse OR monitoring) AND (trial OR safety OR null OR adverse OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=metformin%20AND%20%28%22Long%20COVID%22%20OR%20%22post-COVID%20condition%22%20OR%20PASC%29%20AND%20%28safety%20OR%20tolerability%20OR%20adverse%20OR%20monitoring%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=metformin%20AND%20%28%22Long%20COVID%22%20OR%20%22post-COVID%20condition%22%20OR%20PASC%29%20AND%20%28safety%20OR%20tolerability%20OR%20adverse%20OR%20monitoring%29%20AND%20%28trial%20OR%20safety%20OR%20null%20OR%20adverse%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DR014",
+      "drug_ids": [
+        "D01"
+      ],
+      "condition_ids": [
+        "C01"
+      ],
+      "demand_ids": [
+        "DR014"
+      ],
+      "query_seeds": [
+        "metformin AND (\"immediate release\" OR \"extended release\" OR formulation OR bioavailability) AND ((\"Long COVID\" OR \"post-COVID condition\" OR PASC) OR pharmacokinetics)",
+        "metformin AND (\"immediate release\" OR \"extended release\" OR formulation OR bioavailability) AND ((\"Long COVID\" OR \"post-COVID condition\" OR PASC) OR pharmacokinetics) AND (trial OR safety OR null OR adverse OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=metformin%20AND%20%28%22immediate%20release%22%20OR%20%22extended%20release%22%20OR%20formulation%20OR%20bioavailability%29%20AND%20%28%28%22Long%20COVID%22%20OR%20%22post-COVID%20condition%22%20OR%20PASC%29%20OR%20pharmacokinetics%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=metformin%20AND%20%28%22immediate%20release%22%20OR%20%22extended%20release%22%20OR%20formulation%20OR%20bioavailability%29%20AND%20%28%28%22Long%20COVID%22%20OR%20%22post-COVID%20condition%22%20OR%20PASC%29%20OR%20pharmacokinetics%29%20AND%20%28trial%20OR%20safety%20OR%20null%20OR%20adverse%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DR015",
+      "drug_ids": [
+        "D01"
+      ],
+      "condition_ids": [
+        "C01"
+      ],
+      "demand_ids": [
+        "DR015"
+      ],
+      "query_seeds": [
+        "metformin AND (\"Long COVID\" OR \"post-COVID condition\" OR PASC) AND (discontinuation OR withdrawal OR recurrence OR durability)",
+        "metformin AND (\"Long COVID\" OR \"post-COVID condition\" OR PASC) AND (discontinuation OR withdrawal OR recurrence OR durability) AND (trial OR safety OR null OR adverse OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=metformin%20AND%20%28%22Long%20COVID%22%20OR%20%22post-COVID%20condition%22%20OR%20PASC%29%20AND%20%28discontinuation%20OR%20withdrawal%20OR%20recurrence%20OR%20durability%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=metformin%20AND%20%28%22Long%20COVID%22%20OR%20%22post-COVID%20condition%22%20OR%20PASC%29%20AND%20%28discontinuation%20OR%20withdrawal%20OR%20recurrence%20OR%20durability%29%20AND%20%28trial%20OR%20safety%20OR%20null%20OR%20adverse%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DR016",
+      "drug_ids": [
+        "D02"
+      ],
+      "condition_ids": [
+        "C01"
+      ],
+      "demand_ids": [
+        "DR016"
+      ],
+      "query_seeds": [
+        "fluvoxamine AND (\"selective serotonin reuptake inhibitor\" OR SSRI OR interaction OR tolerability) AND ((\"Long COVID\" OR \"post-COVID condition\" OR PASC) OR safety)",
+        "fluvoxamine AND (\"selective serotonin reuptake inhibitor\" OR SSRI OR interaction OR tolerability) AND ((\"Long COVID\" OR \"post-COVID condition\" OR PASC) OR safety) AND (trial OR safety OR null OR adverse OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=fluvoxamine%20AND%20%28%22selective%20serotonin%20reuptake%20inhibitor%22%20OR%20SSRI%20OR%20interaction%20OR%20tolerability%29%20AND%20%28%28%22Long%20COVID%22%20OR%20%22post-COVID%20condition%22%20OR%20PASC%29%20OR%20safety%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=fluvoxamine%20AND%20%28%22selective%20serotonin%20reuptake%20inhibitor%22%20OR%20SSRI%20OR%20interaction%20OR%20tolerability%29%20AND%20%28%28%22Long%20COVID%22%20OR%20%22post-COVID%20condition%22%20OR%20PASC%29%20OR%20safety%29%20AND%20%28trial%20OR%20safety%20OR%20null%20OR%20adverse%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DR017",
+      "drug_ids": [
+        "D02"
+      ],
+      "condition_ids": [
+        "C01"
+      ],
+      "demand_ids": [
+        "DR017"
+      ],
+      "query_seeds": [
+        "fluvoxamine AND (\"Long COVID\" OR \"post-COVID condition\" OR PASC) AND (cognition OR dysautonomia OR autonomic OR fatigue)",
+        "fluvoxamine AND (\"Long COVID\" OR \"post-COVID condition\" OR PASC) AND (cognition OR dysautonomia OR autonomic OR fatigue) AND (trial OR safety OR null OR adverse OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=fluvoxamine%20AND%20%28%22Long%20COVID%22%20OR%20%22post-COVID%20condition%22%20OR%20PASC%29%20AND%20%28cognition%20OR%20dysautonomia%20OR%20autonomic%20OR%20fatigue%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=fluvoxamine%20AND%20%28%22Long%20COVID%22%20OR%20%22post-COVID%20condition%22%20OR%20PASC%29%20AND%20%28cognition%20OR%20dysautonomia%20OR%20autonomic%20OR%20fatigue%29%20AND%20%28trial%20OR%20safety%20OR%20null%20OR%20adverse%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DR018",
+      "drug_ids": [
+        "D03",
+        "D15"
+      ],
+      "condition_ids": [
+        "C01"
+      ],
+      "demand_ids": [
+        "DR018"
+      ],
+      "query_seeds": [
+        "(\"Long COVID\" OR \"post-COVID condition\" OR PASC) AND ((nirmatrelvir AND ritonavir AND pemivibart) OR (valacyclovir AND celecoxib) OR (valacyclovir AND celecoxib AND nirmatrelvir AND ritonavir))",
+        "(\"Long COVID\" OR \"post-COVID condition\" OR PASC) AND ((nirmatrelvir AND ritonavir AND pemivibart) OR (valacyclovir AND celecoxib) OR (valacyclovir AND celecoxib AND nirmatrelvir AND ritonavir)) AND (trial OR safety OR null OR adverse OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22Long%20COVID%22%20OR%20%22post-COVID%20condition%22%20OR%20PASC%29%20AND%20%28%28nirmatrelvir%20AND%20ritonavir%20AND%20pemivibart%29%20OR%20%28valacyclovir%20AND%20celecoxib%29%20OR%20%28valacyclovir%20AND%20celecoxib%20AND%20nirmatrelvir%20AND%20ritonavir%29%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22Long%20COVID%22%20OR%20%22post-COVID%20condition%22%20OR%20PASC%29%20AND%20%28%28nirmatrelvir%20AND%20ritonavir%20AND%20pemivibart%29%20OR%20%28valacyclovir%20AND%20celecoxib%29%20OR%20%28valacyclovir%20AND%20celecoxib%20AND%20nirmatrelvir%20AND%20ritonavir%29%29%20AND%20%28trial%20OR%20safety%20OR%20null%20OR%20adverse%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DR019",
+      "drug_ids": [
+        "D07",
+        "D16",
+        "D17",
+        "D18",
+        "D19",
+        "D20",
+        "D21",
+        "D22",
+        "D23",
+        "D24",
+        "D26",
+        "D27",
+        "D30"
+      ],
+      "condition_ids": [
+        "C12",
+        "C13",
+        "C14",
+        "C15",
+        "C16",
+        "C17",
+        "C18",
+        "C19",
+        "C20",
+        "C21",
+        "C22",
+        "C23"
+      ],
+      "demand_ids": [
+        "DR019"
+      ],
+      "query_seeds": [
+        "(cancer OR neoplasm* OR carcinoma) AND (repurpos* OR reposition*) AND (preclinical OR clinical OR translation OR exposure)",
+        "(cancer OR neoplasm* OR carcinoma) AND (repurpos* OR reposition*) AND (preclinical OR clinical OR translation OR exposure) AND (trial OR safety OR null OR adverse OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28cancer%20OR%20neoplasm%2A%20OR%20carcinoma%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%29%20AND%20%28preclinical%20OR%20clinical%20OR%20translation%20OR%20exposure%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28cancer%20OR%20neoplasm%2A%20OR%20carcinoma%29%20AND%20%28repurpos%2A%20OR%20reposition%2A%29%20AND%20%28preclinical%20OR%20clinical%20OR%20translation%20OR%20exposure%29%20AND%20%28trial%20OR%20safety%20OR%20null%20OR%20adverse%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DR020",
+      "drug_ids": [
+        "D16",
+        "D18",
+        "D23",
+        "D25",
+        "D28",
+        "D29"
+      ],
+      "condition_ids": [
+        "C11",
+        "C27"
+      ],
+      "demand_ids": [
+        "DR020"
+      ],
+      "query_seeds": [
+        "(\"drug repurposing\" OR \"drug repositioning\") AND (computational OR docking OR prediction OR \"network pharmacology\") AND (validation OR replication OR clinical)",
+        "(\"drug repurposing\" OR \"drug repositioning\") AND (computational OR docking OR prediction OR \"network pharmacology\") AND (validation OR replication OR clinical) AND (trial OR safety OR null OR adverse OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22drug%20repurposing%22%20OR%20%22drug%20repositioning%22%29%20AND%20%28computational%20OR%20docking%20OR%20prediction%20OR%20%22network%20pharmacology%22%29%20AND%20%28validation%20OR%20replication%20OR%20clinical%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22drug%20repurposing%22%20OR%20%22drug%20repositioning%22%29%20AND%20%28computational%20OR%20docking%20OR%20prediction%20OR%20%22network%20pharmacology%22%29%20AND%20%28validation%20OR%20replication%20OR%20clinical%29%20AND%20%28trial%20OR%20safety%20OR%20null%20OR%20adverse%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DR021",
+      "drug_ids": [],
+      "condition_ids": [],
+      "demand_ids": [
+        "DR021"
+      ],
+      "query_seeds": [
+        "(\"drug repurposing\" OR \"drug repositioning\") AND (\"rare disease\" OR \"disease selection\" OR population OR applicability)",
+        "(\"drug repurposing\" OR \"drug repositioning\") AND (\"rare disease\" OR \"disease selection\" OR population OR applicability) AND (trial OR safety OR null OR adverse OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22drug%20repurposing%22%20OR%20%22drug%20repositioning%22%29%20AND%20%28%22rare%20disease%22%20OR%20%22disease%20selection%22%20OR%20population%20OR%20applicability%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22drug%20repurposing%22%20OR%20%22drug%20repositioning%22%29%20AND%20%28%22rare%20disease%22%20OR%20%22disease%20selection%22%20OR%20population%20OR%20applicability%29%20AND%20%28trial%20OR%20safety%20OR%20null%20OR%20adverse%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DR022",
+      "drug_ids": [
+        "D07",
+        "D08",
+        "D10"
+      ],
+      "condition_ids": [],
+      "demand_ids": [
+        "DR022"
+      ],
+      "query_seeds": [
+        "(ivermectin OR fenbendazole) AND (cancer OR neoplasm* OR carcinoma) AND (trial OR case OR toxicity OR preclinical)",
+        "(ivermectin OR fenbendazole) AND (cancer OR neoplasm* OR carcinoma) AND (trial OR case OR toxicity OR preclinical) AND (trial OR safety OR null OR adverse OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28ivermectin%20OR%20fenbendazole%29%20AND%20%28cancer%20OR%20neoplasm%2A%20OR%20carcinoma%29%20AND%20%28trial%20OR%20case%20OR%20toxicity%20OR%20preclinical%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28ivermectin%20OR%20fenbendazole%29%20AND%20%28cancer%20OR%20neoplasm%2A%20OR%20carcinoma%29%20AND%20%28trial%20OR%20case%20OR%20toxicity%20OR%20preclinical%29%20AND%20%28trial%20OR%20safety%20OR%20null%20OR%20adverse%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DR023",
+      "drug_ids": [
+        "D04"
+      ],
+      "condition_ids": [],
+      "demand_ids": [
+        "DR023"
+      ],
+      "query_seeds": [
+        "naltrexone AND (\"low dose\" OR compounded OR compounding OR formulation OR cost OR bioavailability)",
+        "naltrexone AND (\"low dose\" OR compounded OR compounding OR formulation OR cost OR bioavailability) AND (trial OR safety OR null OR adverse OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=naltrexone%20AND%20%28%22low%20dose%22%20OR%20compounded%20OR%20compounding%20OR%20formulation%20OR%20cost%20OR%20bioavailability%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=naltrexone%20AND%20%28%22low%20dose%22%20OR%20compounded%20OR%20compounding%20OR%20formulation%20OR%20cost%20OR%20bioavailability%29%20AND%20%28trial%20OR%20safety%20OR%20null%20OR%20adverse%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DR024",
+      "drug_ids": [
+        "D04"
+      ],
+      "condition_ids": [],
+      "demand_ids": [
+        "DR024"
+      ],
+      "query_seeds": [
+        "naltrexone AND (\"off-label\" OR indication OR documentation OR prescribing OR \"care coordination\")",
+        "naltrexone AND (\"off-label\" OR indication OR documentation OR prescribing OR \"care coordination\") AND (trial OR safety OR null OR adverse OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=naltrexone%20AND%20%28%22off-label%22%20OR%20indication%20OR%20documentation%20OR%20prescribing%20OR%20%22care%20coordination%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=naltrexone%20AND%20%28%22off-label%22%20OR%20indication%20OR%20documentation%20OR%20prescribing%20OR%20%22care%20coordination%22%29%20AND%20%28trial%20OR%20safety%20OR%20null%20OR%20adverse%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DR025",
+      "drug_ids": [
+        "D04"
+      ],
+      "condition_ids": [
+        "C01",
+        "C05",
+        "C06"
+      ],
+      "demand_ids": [
+        "DR025"
+      ],
+      "query_seeds": [
+        "naltrexone AND (fibromyalgia OR \"chronic pain\" OR \"Long COVID\" OR \"myalgic encephalomyelitis\" OR \"chronic fatigue syndrome\") AND (trial OR placebo OR controlled OR nonresponse)",
+        "naltrexone AND (fibromyalgia OR \"chronic pain\" OR \"Long COVID\" OR \"myalgic encephalomyelitis\" OR \"chronic fatigue syndrome\") AND (trial OR placebo OR controlled OR nonresponse) AND (trial OR safety OR null OR adverse OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=naltrexone%20AND%20%28fibromyalgia%20OR%20%22chronic%20pain%22%20OR%20%22Long%20COVID%22%20OR%20%22myalgic%20encephalomyelitis%22%20OR%20%22chronic%20fatigue%20syndrome%22%29%20AND%20%28trial%20OR%20placebo%20OR%20controlled%20OR%20nonresponse%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=naltrexone%20AND%20%28fibromyalgia%20OR%20%22chronic%20pain%22%20OR%20%22Long%20COVID%22%20OR%20%22myalgic%20encephalomyelitis%22%20OR%20%22chronic%20fatigue%20syndrome%22%29%20AND%20%28trial%20OR%20placebo%20OR%20controlled%20OR%20nonresponse%29%20AND%20%28trial%20OR%20safety%20OR%20null%20OR%20adverse%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DR026",
+      "drug_ids": [
+        "D04"
+      ],
+      "condition_ids": [
+        "C07"
+      ],
+      "demand_ids": [
+        "DR026"
+      ],
+      "query_seeds": [
+        "naltrexone AND (\"compulsive sexual behavior\" OR \"compulsive sexual behaviour\" OR hypersexuality)",
+        "naltrexone AND (\"compulsive sexual behavior\" OR \"compulsive sexual behaviour\" OR hypersexuality) AND (trial OR safety OR null OR adverse OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=naltrexone%20AND%20%28%22compulsive%20sexual%20behavior%22%20OR%20%22compulsive%20sexual%20behaviour%22%20OR%20hypersexuality%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=naltrexone%20AND%20%28%22compulsive%20sexual%20behavior%22%20OR%20%22compulsive%20sexual%20behaviour%22%20OR%20hypersexuality%29%20AND%20%28trial%20OR%20safety%20OR%20null%20OR%20adverse%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DR027",
+      "drug_ids": [
+        "D04"
+      ],
+      "condition_ids": [
+        "C08"
+      ],
+      "demand_ids": [
+        "DR027"
+      ],
+      "query_seeds": [
+        "naltrexone AND (\"persistent genital arousal disorder\" OR \"genitopelvic dysesthesia\" OR PGAD)",
+        "naltrexone AND (\"persistent genital arousal disorder\" OR \"genitopelvic dysesthesia\" OR PGAD) AND (trial OR safety OR null OR adverse OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=naltrexone%20AND%20%28%22persistent%20genital%20arousal%20disorder%22%20OR%20%22genitopelvic%20dysesthesia%22%20OR%20PGAD%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=naltrexone%20AND%20%28%22persistent%20genital%20arousal%20disorder%22%20OR%20%22genitopelvic%20dysesthesia%22%20OR%20PGAD%29%20AND%20%28trial%20OR%20safety%20OR%20null%20OR%20adverse%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DR028",
+      "drug_ids": [
+        "D05"
+      ],
+      "condition_ids": [
+        "C09"
+      ],
+      "demand_ids": [
+        "DR028"
+      ],
+      "query_seeds": [
+        "pramipexole AND (\"treatment resistant depression\" OR \"treatment-resistant depression\" OR anhedonia)",
+        "pramipexole AND (\"treatment resistant depression\" OR \"treatment-resistant depression\" OR anhedonia) AND (trial OR safety OR null OR adverse OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=pramipexole%20AND%20%28%22treatment%20resistant%20depression%22%20OR%20%22treatment-resistant%20depression%22%20OR%20anhedonia%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=pramipexole%20AND%20%28%22treatment%20resistant%20depression%22%20OR%20%22treatment-resistant%20depression%22%20OR%20anhedonia%29%20AND%20%28trial%20OR%20safety%20OR%20null%20OR%20adverse%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DR029",
+      "drug_ids": [
+        "D05"
+      ],
+      "condition_ids": [
+        "C09"
+      ],
+      "demand_ids": [
+        "DR029"
+      ],
+      "query_seeds": [
+        "pramipexole AND (depression OR anhedonia) AND (adverse OR tolerability OR withdrawal OR discontinuation OR timing)",
+        "pramipexole AND (depression OR anhedonia) AND (adverse OR tolerability OR withdrawal OR discontinuation OR timing) AND (trial OR safety OR null OR adverse OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=pramipexole%20AND%20%28depression%20OR%20anhedonia%29%20AND%20%28adverse%20OR%20tolerability%20OR%20withdrawal%20OR%20discontinuation%20OR%20timing%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=pramipexole%20AND%20%28depression%20OR%20anhedonia%29%20AND%20%28adverse%20OR%20tolerability%20OR%20withdrawal%20OR%20discontinuation%20OR%20timing%29%20AND%20%28trial%20OR%20safety%20OR%20null%20OR%20adverse%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DR030",
+      "drug_ids": [
+        "D05"
+      ],
+      "condition_ids": [
+        "C09"
+      ],
+      "demand_ids": [
+        "DR030"
+      ],
+      "query_seeds": [
+        "pramipexole AND depression AND (\"off-label\" OR prescribing OR access OR insurance)",
+        "pramipexole AND depression AND (\"off-label\" OR prescribing OR access OR insurance) AND (trial OR safety OR null OR adverse OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=pramipexole%20AND%20depression%20AND%20%28%22off-label%22%20OR%20prescribing%20OR%20access%20OR%20insurance%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=pramipexole%20AND%20depression%20AND%20%28%22off-label%22%20OR%20prescribing%20OR%20access%20OR%20insurance%29%20AND%20%28trial%20OR%20safety%20OR%20null%20OR%20adverse%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DR031",
+      "drug_ids": [
+        "D05"
+      ],
+      "condition_ids": [
+        "C09"
+      ],
+      "demand_ids": [
+        "DR031"
+      ],
+      "query_seeds": [
+        "(pramipexole OR tranylcypromine) AND (anhedonia OR depression) AND (comparison OR trial OR response)",
+        "(pramipexole OR tranylcypromine) AND (anhedonia OR depression) AND (comparison OR trial OR response) AND (trial OR safety OR null OR adverse OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28pramipexole%20OR%20tranylcypromine%29%20AND%20%28anhedonia%20OR%20depression%29%20AND%20%28comparison%20OR%20trial%20OR%20response%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28pramipexole%20OR%20tranylcypromine%29%20AND%20%28anhedonia%20OR%20depression%29%20AND%20%28comparison%20OR%20trial%20OR%20response%29%20AND%20%28trial%20OR%20safety%20OR%20null%20OR%20adverse%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DR032",
+      "drug_ids": [
+        "D06",
+        "D24"
+      ],
+      "condition_ids": [
+        "C30"
+      ],
+      "demand_ids": [
+        "DR032"
+      ],
+      "query_seeds": [
+        "(sirolimus OR rapamycin) AND (longevity OR healthspan OR aging OR ageing) AND (human OR clinical OR trial)",
+        "(sirolimus OR rapamycin) AND (longevity OR healthspan OR aging OR ageing) AND (human OR clinical OR trial) AND (trial OR safety OR null OR adverse OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28sirolimus%20OR%20rapamycin%29%20AND%20%28longevity%20OR%20healthspan%20OR%20aging%20OR%20ageing%29%20AND%20%28human%20OR%20clinical%20OR%20trial%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28sirolimus%20OR%20rapamycin%29%20AND%20%28longevity%20OR%20healthspan%20OR%20aging%20OR%20ageing%29%20AND%20%28human%20OR%20clinical%20OR%20trial%29%20AND%20%28trial%20OR%20safety%20OR%20null%20OR%20adverse%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DR033",
+      "drug_ids": [
+        "D06",
+        "D24"
+      ],
+      "condition_ids": [
+        "C30"
+      ],
+      "demand_ids": [
+        "DR033"
+      ],
+      "query_seeds": [
+        "(sirolimus OR rapamycin) AND (\"ovarian aging\" OR \"ovarian ageing\" OR \"ovarian reserve\" OR \"exercise performance\")",
+        "(sirolimus OR rapamycin) AND (\"ovarian aging\" OR \"ovarian ageing\" OR \"ovarian reserve\" OR \"exercise performance\") AND (trial OR safety OR null OR adverse OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28sirolimus%20OR%20rapamycin%29%20AND%20%28%22ovarian%20aging%22%20OR%20%22ovarian%20ageing%22%20OR%20%22ovarian%20reserve%22%20OR%20%22exercise%20performance%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28sirolimus%20OR%20rapamycin%29%20AND%20%28%22ovarian%20aging%22%20OR%20%22ovarian%20ageing%22%20OR%20%22ovarian%20reserve%22%20OR%20%22exercise%20performance%22%29%20AND%20%28trial%20OR%20safety%20OR%20null%20OR%20adverse%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DR034",
+      "drug_ids": [
+        "D06"
+      ],
+      "condition_ids": [],
+      "demand_ids": [
+        "DR034"
+      ],
+      "query_seeds": [
+        "(sirolimus OR rapamycin) AND bupropion AND (interaction OR pharmacokinetics OR safety)",
+        "(sirolimus OR rapamycin) AND bupropion AND (interaction OR pharmacokinetics OR safety) AND (trial OR safety OR null OR adverse OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28sirolimus%20OR%20rapamycin%29%20AND%20bupropion%20AND%20%28interaction%20OR%20pharmacokinetics%20OR%20safety%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28sirolimus%20OR%20rapamycin%29%20AND%20bupropion%20AND%20%28interaction%20OR%20pharmacokinetics%20OR%20safety%29%20AND%20%28trial%20OR%20safety%20OR%20null%20OR%20adverse%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DR035",
+      "drug_ids": [
+        "D06",
+        "D17"
+      ],
+      "condition_ids": [
+        "C10"
+      ],
+      "demand_ids": [
+        "DR035"
+      ],
+      "query_seeds": [
+        "(sirolimus OR rapamycin) AND (periodontitis OR \"periodontal disease\")",
+        "(sirolimus OR rapamycin) AND (periodontitis OR \"periodontal disease\") AND (trial OR safety OR null OR adverse OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28sirolimus%20OR%20rapamycin%29%20AND%20%28periodontitis%20OR%20%22periodontal%20disease%22%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%28sirolimus%20OR%20rapamycin%29%20AND%20%28periodontitis%20OR%20%22periodontal%20disease%22%29%20AND%20%28trial%20OR%20safety%20OR%20null%20OR%20adverse%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "DR036",
+      "drug_ids": [],
+      "condition_ids": [
+        "C30"
+      ],
+      "demand_ids": [
+        "DR036"
+      ],
+      "query_seeds": [
+        "acarbose AND (longevity OR healthspan OR aging OR ageing) AND (human OR clinical OR trial)",
+        "acarbose AND (longevity OR healthspan OR aging OR ageing) AND (human OR clinical OR trial) AND (trial OR safety OR null OR adverse OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=acarbose%20AND%20%28longevity%20OR%20healthspan%20OR%20aging%20OR%20ageing%29%20AND%20%28human%20OR%20clinical%20OR%20trial%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=acarbose%20AND%20%28longevity%20OR%20healthspan%20OR%20aging%20OR%20ageing%29%20AND%20%28human%20OR%20clinical%20OR%20trial%29%20AND%20%28trial%20OR%20safety%20OR%20null%20OR%20adverse%20OR%20discontinued%29"
+      ],
+      "translation_status": "Unexecuted query seeds. Worker logs database-specific translated syntax; these URLs do not prove a search ran."
+    },
+    {
+      "request_id": "ITRACONAZOLE-CANCER",
+      "drug_ids": [
+        "D07"
+      ],
+      "condition_ids": [
+        "C03",
+        "C13",
+        "C14",
+        "C16",
+        "C17",
+        "C18",
+        "C19",
+        "C22",
+        "C21"
+      ],
+      "demand_ids": [
+        "DR006",
+        "DR007",
+        "DR019",
+        "DR022"
+      ],
+      "query_seeds": [
+        "\"itraconazole\" AND (cancer OR carcinoma OR melanoma OR myeloma OR leukemia OR neoplasm)",
+        "\"itraconazole\" AND (trial OR phase OR randomized OR survival OR toxicity OR discontinued)"
+      ],
+      "pubmed_seed_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22itraconazole%22%20AND%20%28cancer%20OR%20carcinoma%20OR%20melanoma%20OR%20myeloma%20OR%20leukemia%20OR%20neoplasm%29",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=%22itraconazole%22%20AND%20%28trial%20OR%20phase%20OR%20randomized%20OR%20survival%20OR%20toxicity%20OR%20discontinued%29"
+      ],
+      "translation_status": "Executable seeds above have unexecuted PubMed query URLs. Separately labeled retrieval instructions have no executable search URL; follow their named lead records and log actual identifier/title lookups. No search has run.",
+      "retrieval_instructions": [
+        {
+          "kind": "retrieval_instruction",
+          "text": "Run exact-title/printed-DOI lookups for all five primary_report_candidates; resolve all13 registry_leads against current registry, publications and results.",
+          "executable_search_url": null,
+          "location_refs": [
+            "itraconazole-primary-leads.json",
+            "known-source-locations.json"
+          ]
+        }
+      ]
+    },
+    {
+      "request_id": "RECOVERY",
+      "drug_ids": [
+        "D01",
+        "D02",
+        "D03"
+      ],
+      "condition_ids": [
+        "C01",
+        "C02"
+      ],
+      "demand_ids": [
+        "DR001",
+        "DR002",
+        "DR003",
+        "DR004",
+        "DR013",
+        "DR014",
+        "DR016",
+        "DR017",
+        "DR018"
+      ],
+      "query_seeds": [],
+      "pubmed_seed_urls": [],
+      "translation_status": "Executable seeds above have unexecuted PubMed query URLs. Separately labeled retrieval instructions have no executable search URL; follow their named lead records and log actual identifier/title lookups. No search has run.",
+      "retrieval_instructions": [
+        {
+          "kind": "retrieval_instruction",
+          "text": "Resolve all named recovery-targets.json records against publishers, PubMed, registries and repositories; inspect current related-article/version notices.",
+          "executable_search_url": null,
+          "location_refs": [
+            "recovery-targets.json",
+            "known-source-locations.json"
+          ]
+        }
+      ]
+    }
+  ],
+  "no_search_executed": true
+}

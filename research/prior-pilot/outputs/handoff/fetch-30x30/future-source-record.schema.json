@@ -1,0 +1,132 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Closed printed-corpus extraction record",
+  "type": "object",
+  "required": [
+    "record_id",
+    "source_id",
+    "tier",
+    "filename",
+    "doi",
+    "chapter",
+    "page_locator",
+    "study_type",
+    "population_or_model",
+    "sample_size",
+    "outcomes",
+    "stated_limitations",
+    "drug_indication_pairs"
+  ],
+  "properties": {
+    "record_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "filename": {
+      "type": "string",
+      "minLength": 1
+    },
+    "doi": {
+      "type": "string",
+      "minLength": 1
+    },
+    "chapter": {
+      "type": "string",
+      "minLength": 1
+    },
+    "page_locator": {
+      "type": "string",
+      "minLength": 1
+    },
+    "study_type": {
+      "type": "string",
+      "minLength": 1
+    },
+    "population_or_model": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sample_size": {
+      "type": "string",
+      "minLength": 1
+    },
+    "tier": {
+      "enum": [
+        "PRIMARY",
+        "REVIEW",
+        "TEXTBOOK",
+        "OTHER"
+      ]
+    },
+    "outcomes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "outcome",
+          "result",
+          "locator"
+        ],
+        "properties": {
+          "outcome": {
+            "type": "string",
+            "minLength": 1
+          },
+          "result": {
+            "type": "string",
+            "minLength": 1
+          },
+          "locator": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "stated_limitations": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "drug_indication_pairs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "drug",
+          "original_indication",
+          "new_indication",
+          "locator"
+        ],
+        "properties": {
+          "drug": {
+            "type": "string",
+            "minLength": 1
+          },
+          "original_indication": {
+            "type": "string",
+            "minLength": 1
+          },
+          "new_indication": {
+            "type": "string",
+            "minLength": 1
+          },
+          "locator": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

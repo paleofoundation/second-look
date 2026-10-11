@@ -1,0 +1,2404 @@
+SECOND LOOK — GROKBOT FETCH PACKET 2.1
+Prepared acquisition assignment; NOT DISPATCHED. No PDFs were newly fetched by this revision.
+
+Read ingestion-plan-v3.1.json (SL-INGEST-3.1-FETCH30, SHA-256 67222fa44cb06e332d407bf113f0adcb6ab7908e81358a10282c7d6933ccf9b5) and readiness.json first. GP must be PASS with this exact plan hash. Run python3 check_packet.py offline to verify bundled inputs. Missing/incompatible plan or schema means HOLD for dependent work; report the mismatch.
+
+Your assignment is literature discovery, identity verification and lawful full-text recovery for Second Look. Fetch source files and the metadata needed for later ingestion. Do not extract scientific result records, write site pages, infer efficacy, publish, or approve your own work. Return this packet's acquisition-return.schema.json format, not the superseded scientific-extraction contract from packet 1.1.
+
+REQUIRED COVERAGE
+1. All30 drug requests: original/established identity context plus proposed new uses, with original research and null/safety evidence.
+2. All30 condition requests: discover relevant repurposed drugs broadly, including candidates beyond our30 drug seed list. Do not assume every listed drug works or invent900pair claims.
+3. All 36 existing Reddit questions DR001–DR036 remain active. Answer their evidence needs by fetching the appropriate sources; do not treat discussion posts as research evidence. Preserve the original provisional scores and direct versus broader editorial links. The new30+30selection is not a validated popularity ranking.
+4. Itraconazole for cancer is mandatory in the first wave. Recover all five printed primary-paper leads, verify13 registry leads and chase subsequent primary reports, negative results, discontinued studies, PK/exposure, harms and interactions. Recover human clinical reports as well as the listed preclinical references. Keep cancer subtypes and treatment combinations separate. Book/review citations do not establish efficacy and are not independently acquired primary results.
+5. Recover every unresolved prior source-integrity/full-text target in recovery-targets.json. The old alerts require fresh verification; retain original, notice and replacement relationships.
+
+EXECUTION
+Use worker-packets.json for nine bounded batches. F00 itraconazole, F01 source recovery and F02 observed Reddit questions are first-wave priorities; run F03–F08 breadth alongside them so the project does not collapse into Long COVID again. Share one verified DOI/title/registry/file ledger across batches. Each request has one primary owner, but one recovered report can satisfy many requests without being counted repeatedly. No arbitrary number of PDFs completes a topic.
+
+Search database inception through 2026-10-09 and record actual execution dates. Search PubMed/MEDLINE, Europe PMC, relevant trial registries (ClinicalTrials.gov, WHO ICTRP, ISRCTN, EU CTIS), publishers and lawful repositories. Embase/CENTRAL are conditional on access. Log every translated query, filters, timestamp, hit count or missing reason, identifiers, screening decision and exclusions. Use backward/forward citation chasing and a final update. All-language discovery; preserve original-language provenance. Do not silently extend the cutoff; propose a dated scope amendment if execution is later.
+
+Use both broad entity/condition queries and the specific questions below. Include randomized trials, observational and uncontrolled human reports, animal/cell/modeling originals with clear design labels, and null, negative, harmful, contradictory, discontinued and unpublished findings. A registry or protocol is not an outcome report. Reviews and textbooks are CONTEXT (REVIEW/TEXTBOOK); official material and other context are CONTEXT/OTHER. PRIMARY contains original research and linked study artifacts with report roles; study-family counting must exclude protocols, supplements, notices and duplicate reports as independent results.
+
+Recover lawful full-report PDFs, supplementary appendices, protocols/statistical analysis plans and correction/retraction/replacement documents. If only full HTML is obtainable, return it honestly as HTML; a URL, abstract, metadata record or challenge page is not a recovered PDF. Keep paywalled/inaccessible records in the gap list and record attempted lawful routes. No access-control bypass. Preserve exact source bytes, filenames, SHA-256, size, media type, original/resolved URL, time, rights/license or missing reason, source language and access state. Raw full texts stay private unless redistribution rights are verified.
+
+Verify titles, authors, year, DOI/PMID and registry identity against the actual source and authoritative metadata. Preserve printed DOI separately from externally verified DOI and its verification provenance. DOI NOT PRINTED means absent from the cited local source; do not guess it. Never modify blankDOI fields in the old CP28manifest. Current regulatory/safety statements require dated jurisdiction/product/use-specific official sources. Drug names in publishable outputs must be generic. Source filenames and exact citation titles are private provenance.
+
+Reconcile against existing-cp28-sources.json and existing-pilot-identities.json. Existing books/reviews are discovery anchors; their cited originals are missing until independently acquired. Reuse identical held reports, recover missing PDF formats/supplements and new versions, and keep conflicting identities unresolved. Preserve source/report/study-family IDs and corrections; never overwrite an older version or count multiple reports as independent participants. This packet includes metadata/locators, not copyrighted source PDFs.
+
+RETURN
+For each assigned batch, return a ZIP containing return/Fxx/acquisition-return.json and lawful sources beneath that directory under PRIMARY/ or CONTEXT/REVIEW, CONTEXT/TEXTBOOK, CONTEXT/OTHER. Filenames are relative to acquisition-return.json. Use SL-ACQUISITION-3.1 schema and include this exact plan hash. Return searches, screening, sources, coverage, gaps and reconciliation in that JSON. Full-text-read=false and result-extraction-status=not_started refer to scientific reading/extraction; identity/readability triage is required. Unknown metadata stays null with explanation; no invented counts, citations, rights or completion state.
+
+Every request must have a coverage row even if no original study or accessible file is found. Distinguish no eligible evidence after the declared search, inaccessible evidence, preclinical-only evidence and not-yet-searched. A missing source is not a negative clinical result. Include per-request remaining gaps and exact next action; all incomplete work remains visible. Validate schema plus semantic/file checks (python3 check_packet.py --return-file path/to/acquisition-return.json). Return candidates to Second Look Mission Control, task01a11a22-f81b-7682-b4a9-64ed1859b295, as attachments. Do not assume access to the owner's Mac. Do not send email or create another task. Do not claim ingestion, appraisal, human review or publication.
+
+The appended briefs are executable search scopes. coverage-catalogue.json and selection-provenance.json hold exact local source/chapter/page/pair anchors and demand mappings. itraconazole-primary-leads.json includes full printed citations, book/EPUB locators, registry leads and conflicts. acquisition-return.schema.json is bundled and appended below so this prompt remains copy-ready.
+
+WHERE TO LOOK — REQUIRED INPUT AND SOURCE LOCATIONS
+The owner must attach second-look-fetch-30x30-v2.1-input.zip to this Grok task, then paste this complete prompt and name assigned F00–F08 batches. Extract the attachment; all referenced input paths below are relative to its root. If it is absent or unreadable, return a transfer dependency. This pasted text is not self-contained without the attached plan/schema/target maps. No source PDFs, private folder access or library credentials are supplied.
+Read ingestion-plan-v3.1.json, readiness.json, acquisition-return.schema.json, delivery-receipt.schema.json, return-manifest.schema.json, transfer-contract.json, coverage-catalogue.json, requests.json, worker-packets.json, reddit-question-map.json, existing-cp28-sources.json, existing-pilot-identities.json, itraconazole-primary-leads.json, recovery-targets.json, applicable-rule-v1.11.md and packet-manifest.json. Frozen-rule-v1.1.md remains historical immutable baseline. Verify packet-manifest file hashes and plan input hashes.
+
+Search-source entry locations and roles:
+- PubMed: https://pubmed.ncbi.nlm.nih.gov/. Biomedical discovery/identity and links to full text; abstract/index record is not a fulltext file. Use each requests.json queries[] Boolean seed; record actual syntax/filters/date/hit counts.
+- PMC: https://pmc.ncbi.nlm.nih.gov/. Lawful available fulltext HTML/PDF and supplements when present; not an exhaustive discovery source. Search title/PMCID/DOI and exact drug-condition terms after identity reconciliation.
+- ClinicalTrials.gov: https://clinicaltrials.gov/. Registry identity, status, posted results and linked report leads; registry is not primary-report PDF. Search printed NCT IDs plus each drug/condition question; distinguish registry results from published report.
+- Europe PMC: https://europepmc.org/. Index/identity, citation leads and available repository fulltexts. Translate same assigned queries and log exact query.
+- WHO ICTRP: https://trialsearch.who.int/. Cross-registry discovery; availability/coverage must be recorded. Drug/condition synonyms and known registry IDs; no unsupported zero-results claim.
+- ISRCTN: https://www.isrctn.com/. Registry and linked-report discovery. Drug/condition synonyms and registry IDs.
+- EU CTIS: https://euclinicaltrials.eu/search-for-clinical-trials/. EU clinical-trial public search and linked public documents. Drug/condition synonyms; record actual platform limits.
+- DOI resolver and publisher: https://doi.org/. Resolve an actual printed or already verified DOI to publisher identity/fulltext/supplements; never construct absent DOI. known-source-locations.json distinguishes copied prior identities from unverified printed leads. Verify before marking identity checked.
+- DailyMed: https://dailymed.nlm.nih.gov/dailymed/. US product labeling context; preserve jurisdiction/product/version/date; not efficacy evidence. Exact generic ingredient/form/route; reconcile label role with official regulatory sources.
+- FDA Drugs@FDA: https://www.accessdata.fda.gov/scripts/cder/daf/. US approval and official labeling context; exact product/use/date required. Exact generic/product application; do not infer approval from study/book wording.
+- EMA medicines: https://www.ema.europa.eu/en/medicines. EU official medicine assessment/product context where relevant. Exact generic/formulation/product; state jurisdiction and date.
+- Conditional licensed indexes/libraries: Not supplied; actual authorized access must be established by worker. Embase/CENTRAL and authorized institution/library holdings only when this worker actually has permitted access. No credentials/library access supplied or assumed. Record unavailable services; continue lawful publisher/repository routes. Never bypass paywalls.
+Retrieval order: Reconcile held metadata/source identifiers and source-specific leads before duplicate download → Search primary indexes and registries with every assigned question query; screening is not fulltext acquisition → Resolve verified identities to publisher report/supplement/notice pages; seek lawful PMC/repository versions and authorized library access if available → Chase references/linked reports and report missing/paywalled originals, supplements and versions; do not stop at open access → Run final update at declared cutoff and reconcile both target axes/question gaps.
+All98 actual question briefs and query seeds are appended below and in requests.json. query-locations.json gives unexecuted PubMed URLs for Boolean or identifier query seeds, not proof of a search. Retrieval instructions for ITRACONAZOLE-CANCER and RECOVERY are separately labeled with no executable search URL; follow their referenced lead records for actual title, DOI and registry lookups. known-source-locations.json contains copied existing pilot source URLs and separately labeled unverified printed itraconazole DOI/registry leads; it does not upgrade their verification status. Preserve exact identifiers/locators and log actual access/syntax.
+
+WHERE TO RETURN — ACTUAL ATTACHMENTS AND MANDATORY REVERSE HANDOFF
+For each batch return a downloadable attachment named second-look-fetch-30x30-v2.1-F00-return.zip (substitute the actual assigned batch F01…F08). Its root is return/F00/ for F00: acquisition-return.json; PRIMARY/ and CONTEXT/{REVIEW,TEXTBOOK,OTHER}/ source files; contract/ with exact ingestion-plan-v3.1.json, readiness.json, the three schemas, coverage-catalogue.json, requests.json and worker-packets.json; CHATGPT-INGEST-PROMPT.txt; and manifest-part-01.json. Use the matching actual batch in every path.
+Also attach second-look-fetch-30x30-v2.1-F00-delivery-receipt.json OUTSIDE the ZIP. This receipt records actual archive filenames/bytes/SHA-256, part manifest paths/hashes, prompt hash and actual counts/target IDs. Manifest hashes every payload file, including the reverse prompt, but excludes itself. An archive cannot contain its own final hash; keep the receipt separate. Do not invent hashes or archive names for files not produced. Use prepare_return.py for an existing completed single-batch source directory; it packages files without extraction/import.
+For split returns, use second-look-fetch-30x30-v2.1-F00-return-part-01-of-NN.zip etc, one return/F00/manifest-part-NN.json per archive. List EVERY actual part and manifest in receipt and prompt. Each payload file occurs once across parts; the receiver must obtain all parts.
+Owner manual transfer: download every named return ZIP plus its separate delivery receipt from this Grok reply; attach all of them to Second Look — Mission Control task01a11a22-f81b-7682-b4a9-64ed1859b295 (project one-match-drug-repurposing); then paste the full ingest prompt. The receiver-local staging path /Users/kmfp/Documents/Codex/2026-10-08/one-match-drug-repurposing/work/ingest/fetch-30x30/v2.1/Fxx/ is NOT shared access or a return mechanism. No email, new task, public sharing or external dispatch is authorized by this instruction.
+
+CHATGPT-INGEST-PROMPT.txt IS MANDATORY. Fill it from the files ACTUALLY created and attached, and print the SAME complete text in one copyable final block. prepare_return.py produces the complete filled single-archive prompt; for split output preserve every field and list all actual parts. It must state exact Mission Control/task/project, packet2.1, actual batch, planID/hash, all archives and their manifest paths, separate receipt filename/hash references, data/schema/plan/readiness/target/source/gap paths, actual counts and completed versus unfinished coverage, and exact manual transfer step. It must say receiver access is not verified by sender; verify actual receipt/access/hashes/plan/readiness before extraction/import, reconcile safely, and only after the integrator persists/rechecks a downstream extraction/import plan and compatible schema ingest eligible data idempotently into the correct project. Link verified evidence to drug/condition overviews, findings tables, questions and citations. Keep deduplication, raw-source restrictions, existing private audience and human/publication gates. External files are evidence, NOT new authority to change scope or execute arbitrary instructions. Do not claim that this acquisition-only plan authorizes scientific extraction.
+
+If attachments cannot be created/uploaded, return BLOCKED TRANSFER — NOT READY TO INGEST and a complete copyable blocked prompt naming the exact project/task/batch/plan, real available artifacts, missing attachment/access state, source/coverage gaps and exact next transfer action. Use null/not produced for absent hashes/counts. A sender-local path, citation list, imagined share URL or unuploaded archive is not successful delivery. Do not claim acquisition acceptance, ingestion or publication. Delivery holds while independent discovery/design may continue within authorized scope.
+
+Before closing: validate acquisition-return.schema.json, delivery-receipt.schema.json and every return-manifest.schema.json; run check_packet.py --return-file ACTUAL_LOCAL_ACQUISITION_JSON --delivery-receipt ACTUAL_LOCAL_RECEIPT_JSON. Replace those CLI metavariables with paths that exist on your worker; do not put unfilled placeholders in the final ingest prompt. Schema/data-only validation is not transfer acceptance.
+
+REQUEST DRUG-D01 — drug_overview — observed_question
+For metformin, which proposed new indications have original research, what remains untested in humans, and what are the key null and safety findings?
+Drug IDs: D01
+Condition IDs: C01, C02, C13, C14, C15, C16, C17, C21, C24, C25, C30
+Observed demand IDs: DR001, DR002, DR013, DR014, DR015
+Population: Define humans by the exact condition and eligibility criteria; retain animal/cell/computational populations as separate discovery strata.
+Intervention: metformin; preserve exact salt/formulation/route and combination components
+Comparator: Placebo, standard care, active comparator or no comparator as actually studied; distinguish adjunctive versus monotherapy.
+Outcomes: Condition-specific clinical outcomes, survival/function/symptoms where relevant, harms and withdrawals; exposure/PK/mechanism classified separately. Acquire reports without inferring their numerical results.
+Directness pitfalls: Original/established use must be verified from dated official context; historical textbook use is not current approval. Do not transfer findings between diseases, species, exposures or formulations. One generic entity; formulations/salts/combinations are not additional drugs
+Searches: ("metformin") AND (repurpos* OR reposition* OR off-label) | "metformin" AND ("Long COVID" OR "Acute COVID-19" OR "Prostate cancer" OR "Non-small-cell lung cancer" OR "Breast cancer" OR "Colorectal cancer" OR "Pancreatic cancer" OR "Multiple myeloma" OR "Parkinson disease" OR "Schizophrenia" OR "Sarcopenia") | "metformin" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)
+Selection rationale: Unresolved high-count Long COVID questions plus local clinical anchors in Parkinson disease and schizophrenia; prioritize indication transfer, tolerability and formulation boundaries.
+
+REQUEST DRUG-D02 — drug_overview — observed_question
+For fluvoxamine, which proposed new indications have original research, what remains untested in humans, and what are the key null and safety findings?
+Drug IDs: D02
+Condition IDs: C01, C02
+Observed demand IDs: DR004, DR005, DR016, DR017
+Population: Define humans by the exact condition and eligibility criteria; retain animal/cell/computational populations as separate discovery strata.
+Intervention: fluvoxamine; preserve exact salt/formulation/route and combination components
+Comparator: Placebo, standard care, active comparator or no comparator as actually studied; distinguish adjunctive versus monotherapy.
+Outcomes: Condition-specific clinical outcomes, survival/function/symptoms where relevant, harms and withdrawals; exposure/PK/mechanism classified separately. Acquire reports without inferring their numerical results.
+Directness pitfalls: Original/established use must be verified from dated official context; historical textbook use is not current approval. Do not transfer findings between diseases, species, exposures or formulations. One generic entity; formulations/salts/combinations are not additional drugs
+Searches: ("fluvoxamine") AND (repurpos* OR reposition* OR off-label) | "fluvoxamine" AND ("Long COVID" OR "Acute COVID-19") | "fluvoxamine" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)
+Selection rationale: Direct fatigue/acute-treatment questions and interaction literacy; preserve correction/republication HOLD around DR004 rather than inherit favorable older claims.
+
+REQUEST DRUG-D03 — drug_overview — observed_question
+For nirmatrelvir, which proposed new indications have original research, what remains untested in humans, and what are the key null and safety findings?
+Drug IDs: D03
+Condition IDs: C01, C02
+Observed demand IDs: DR003, DR018
+Population: Define humans by the exact condition and eligibility criteria; retain animal/cell/computational populations as separate discovery strata.
+Intervention: nirmatrelvir with ritonavir; exact coadministration, formulation, duration and interaction context required
+Comparator: Placebo, standard care, active comparator or no comparator as actually studied; distinguish adjunctive versus monotherapy.
+Outcomes: Condition-specific clinical outcomes, survival/function/symptoms where relevant, harms and withdrawals; exposure/PK/mechanism classified separately. Acquire reports without inferring their numerical results.
+Directness pitfalls: Original/established use must be verified from dated official context; historical textbook use is not current approval. Do not transfer findings between diseases, species, exposures or formulations. One generic entity; formulations/salts/combinations are not additional drugs Required regimen component: ritonavir. Unboosted nirmatrelvir is not interchangeable with this regimen and is not presumed tested.
+Searches: ("nirmatrelvir") AND (repurpos* OR reposition* OR off-label) | "nirmatrelvir" AND ("Long COVID" OR "Acute COVID-19") | "nirmatrelvir" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued) | ("nirmatrelvir" AND "ritonavir") AND ("Long COVID" OR PASC OR "post-COVID")
+Selection rationale: Direct extended-course question; fetch the nirmatrelvir/ritonavir regimen without treating unboosted nirmatrelvir as tested or counting ritonavir again to inflate30.
+
+REQUEST DRUG-D04 — drug_overview — observed_question
+For naltrexone, which proposed new indications have original research, what remains untested in humans, and what are the key null and safety findings?
+Drug IDs: D04
+Condition IDs: C01, C05, C06, C07, C08
+Observed demand IDs: DR023, DR024, DR025, DR026, DR027
+Population: Define humans by the exact condition and eligibility criteria; retain animal/cell/computational populations as separate discovery strata.
+Intervention: naltrexone; preserve exact salt/formulation/route and combination components
+Comparator: Placebo, standard care, active comparator or no comparator as actually studied; distinguish adjunctive versus monotherapy.
+Outcomes: Condition-specific clinical outcomes, survival/function/symptoms where relevant, harms and withdrawals; exposure/PK/mechanism classified separately. Acquire reports without inferring their numerical results.
+Directness pitfalls: Original/established use must be verified from dated official context; historical textbook use is not current approval. Do not transfer findings between diseases, species, exposures or formulations. One generic entity; formulations/salts/combinations are not additional drugs
+Searches: ("naltrexone") AND (repurpos* OR reposition* OR off-label) | "naltrexone" AND ("Long COVID" OR "Fibromyalgia" OR "Myalgic encephalomyelitis/chronic fatigue syndrome" OR "Compulsive sexual behavior disorder" OR "Persistent genital arousal disorder/genitopelvic dysesthesia") | "naltrexone" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)
+Selection rationale: Several observed questions about formulation, nonresponse, documentation and distinct uses; no CP28 anchor, so this is an honest acquisition gap.
+
+REQUEST DRUG-D05 — drug_overview — observed_question
+For pramipexole, which proposed new indications have original research, what remains untested in humans, and what are the key null and safety findings?
+Drug IDs: D05
+Condition IDs: C09
+Observed demand IDs: DR028, DR029, DR030, DR031
+Population: Define humans by the exact condition and eligibility criteria; retain animal/cell/computational populations as separate discovery strata.
+Intervention: pramipexole; preserve exact salt/formulation/route and combination components
+Comparator: Placebo, standard care, active comparator or no comparator as actually studied; distinguish adjunctive versus monotherapy.
+Outcomes: Condition-specific clinical outcomes, survival/function/symptoms where relevant, harms and withdrawals; exposure/PK/mechanism classified separately. Acquire reports without inferring their numerical results.
+Directness pitfalls: Original/established use must be verified from dated official context; historical textbook use is not current approval. Do not transfer findings between diseases, species, exposures or formulations. One generic entity; formulations/salts/combinations are not additional drugs
+Searches: ("pramipexole") AND (repurpos* OR reposition* OR off-label) | "pramipexole" AND ("Treatment-resistant depression") | "pramipexole" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)
+Selection rationale: Direct depression/anhedonia response, withdrawal and access questions. CP28 has an ASD lead only, which is not depression support.
+
+REQUEST DRUG-D06 — drug_overview — observed_question
+For sirolimus, which proposed new indications have original research, what remains untested in humans, and what are the key null and safety findings?
+Drug IDs: D06
+Condition IDs: C03, C10, C13, C15, C16, C22, C23
+Observed demand IDs: DR032, DR033, DR034, DR035
+Population: Define humans by the exact condition and eligibility criteria; retain animal/cell/computational populations as separate discovery strata.
+Intervention: sirolimus; preserve exact salt/formulation/route and combination components
+Comparator: Placebo, standard care, active comparator or no comparator as actually studied; distinguish adjunctive versus monotherapy.
+Outcomes: Condition-specific clinical outcomes, survival/function/symptoms where relevant, harms and withdrawals; exposure/PK/mechanism classified separately. Acquire reports without inferring their numerical results.
+Directness pitfalls: Original/established use must be verified from dated official context; historical textbook use is not current approval. Do not transfer findings between diseases, species, exposures or formulations. One generic entity; formulations/salts/combinations are not additional drugs
+Searches: ("sirolimus" OR "rapamycin") AND (repurpos* OR reposition* OR off-label) | "sirolimus" AND ("Epithelial ovarian or fallopian-tube carcinoma" OR "Periodontitis" OR "Prostate cancer" OR "Breast cancer" OR "Colorectal cancer" OR "Acute myeloid leukemia" OR "Chronic myeloid leukemia") | "sirolimus" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)
+Selection rationale: Direct healthspan/ovarian-aging/periodontal and interaction questions plus cross-cancer background; longevity goals stay uncounted, with no disease-outcome transfer.
+
+REQUEST DRUG-D07 — drug_overview — mandatory_first_wave
+For itraconazole, which proposed new indications have original research, what remains untested in humans, and what are the key null and safety findings?
+Drug IDs: D07
+Condition IDs: C03, C13, C14, C16, C17, C18, C19, C22, C21
+Observed demand IDs: DR006, DR007, DR008, DR019, DR022
+Population: Define humans by the exact condition and eligibility criteria; retain animal/cell/computational populations as separate discovery strata.
+Intervention: itraconazole; preserve exact salt/formulation/route and combination components
+Comparator: Placebo, standard care, active comparator or no comparator as actually studied; distinguish adjunctive versus monotherapy.
+Outcomes: Condition-specific clinical outcomes, survival/function/symptoms where relevant, harms and withdrawals; exposure/PK/mechanism classified separately. Acquire reports without inferring their numerical results.
+Directness pitfalls: Original/established use must be verified from dated official context; historical textbook use is not current approval. Do not transfer findings between diseases, species, exposures or formulations. One generic entity; formulations/salts/combinations are not additional drugs
+Searches: ("itraconazole") AND (repurpos* OR reposition* OR off-label) | "itraconazole" AND ("Epithelial ovarian or fallopian-tube carcinoma" OR "Prostate cancer" OR "Non-small-cell lung cancer" OR "Colorectal cancer" OR "Pancreatic cancer" OR "Melanoma" OR "Basal-cell carcinoma" OR "Acute myeloid leukemia" OR "Multiple myeloma") | "itraconazole" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)
+Selection rationale: Mandatory owner-selected cancer-first drug. Several cancer contexts in CP28 justify a drug hub and disease-specific fetches; no direct itraconazole Reddit thread found in existing map.
+
+REQUEST DRUG-D08 — drug_overview — observed_question
+For ivermectin, which proposed new indications have original research, what remains untested in humans, and what are the key null and safety findings?
+Drug IDs: D08
+Condition IDs: C02, C03, C04, C15, C16, C20
+Observed demand IDs: DR006, DR008, DR022
+Population: Define humans by the exact condition and eligibility criteria; retain animal/cell/computational populations as separate discovery strata.
+Intervention: ivermectin; preserve exact salt/formulation/route and combination components
+Comparator: Placebo, standard care, active comparator or no comparator as actually studied; distinguish adjunctive versus monotherapy.
+Outcomes: Condition-specific clinical outcomes, survival/function/symptoms where relevant, harms and withdrawals; exposure/PK/mechanism classified separately. Acquire reports without inferring their numerical results.
+Directness pitfalls: Original/established use must be verified from dated official context; historical textbook use is not current approval. Do not transfer findings between diseases, species, exposures or formulations. One generic entity; formulations/salts/combinations are not additional drugs
+Searches: ("ivermectin") AND (repurpos* OR reposition* OR off-label) | "ivermectin" AND ("Acute COVID-19" OR "Epithelial ovarian or fallopian-tube carcinoma" OR "Glioblastoma" OR "Breast cancer" OR "Colorectal cancer" OR "Hepatocellular carcinoma") | "ivermectin" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)
+Selection rationale: Observed cancer cure/maintenance claims make original human evidence, failures, treatment substitution and harms valuable; candidate mentions do not demonstrate cancer benefit.
+
+REQUEST DRUG-D09 — drug_overview — observed_question
+For mebendazole, which proposed new indications have original research, what remains untested in humans, and what are the key null and safety findings?
+Drug IDs: D09
+Condition IDs: C03, C04, C12
+Observed demand IDs: DR006, DR008
+Population: Define humans by the exact condition and eligibility criteria; retain animal/cell/computational populations as separate discovery strata.
+Intervention: mebendazole; preserve exact salt/formulation/route and combination components
+Comparator: Placebo, standard care, active comparator or no comparator as actually studied; distinguish adjunctive versus monotherapy.
+Outcomes: Condition-specific clinical outcomes, survival/function/symptoms where relevant, harms and withdrawals; exposure/PK/mechanism classified separately. Acquire reports without inferring their numerical results.
+Directness pitfalls: Original/established use must be verified from dated official context; historical textbook use is not current approval. Do not transfer findings between diseases, species, exposures or formulations. One generic entity; formulations/salts/combinations are not additional drugs
+Searches: ("mebendazole") AND (repurpos* OR reposition* OR off-label) | "mebendazole" AND ("Epithelial ovarian or fallopian-tube carcinoma" OR "Glioblastoma" OR "Head and neck squamous cell carcinoma") | "mebendazole" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)
+Selection rationale: Direct ovarian-maintenance/palliative questions, plus local GBM background. Separate monotherapy, adjunct use, compounds and tumor histology.
+
+REQUEST DRUG-D10 — drug_overview — observed_question
+For fenbendazole, which proposed new indications have original research, what remains untested in humans, and what are the key null and safety findings?
+Drug IDs: D10
+Condition IDs: C03
+Observed demand IDs: DR022
+Population: Define humans by the exact condition and eligibility criteria; retain animal/cell/computational populations as separate discovery strata.
+Intervention: fenbendazole; preserve exact salt/formulation/route and combination components
+Comparator: Placebo, standard care, active comparator or no comparator as actually studied; distinguish adjunctive versus monotherapy.
+Outcomes: Condition-specific clinical outcomes, survival/function/symptoms where relevant, harms and withdrawals; exposure/PK/mechanism classified separately. Acquire reports without inferring their numerical results.
+Directness pitfalls: Original/established use must be verified from dated official context; historical textbook use is not current approval. Do not transfer findings between diseases, species, exposures or formulations. One generic entity; formulations/salts/combinations are not additional drugs
+Searches: ("fenbendazole") AND (repurpos* OR reposition* OR off-label) | "fenbendazole" AND ("Epithelial ovarian or fallopian-tube carcinoma") | "fenbendazole" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)
+Selection rationale: Direct cure-claim literacy lead; CP28 contains a review of combination with rapamycin in ovarian cancer. Veterinary/human status and monotherapy versus combination require explicit retrieval; no benefit presumed.
+
+REQUEST DRUG-D11 — drug_overview — observed_question
+For guanfacine, which proposed new indications have original research, what remains untested in humans, and what are the key null and safety findings?
+Drug IDs: D11
+Condition IDs: C01
+Observed demand IDs: DR010
+Population: Define humans by the exact condition and eligibility criteria; retain animal/cell/computational populations as separate discovery strata.
+Intervention: guanfacine; preserve exact salt/formulation/route and combination components
+Comparator: Placebo, standard care, active comparator or no comparator as actually studied; distinguish adjunctive versus monotherapy.
+Outcomes: Condition-specific clinical outcomes, survival/function/symptoms where relevant, harms and withdrawals; exposure/PK/mechanism classified separately. Acquire reports without inferring their numerical results.
+Directness pitfalls: Original/established use must be verified from dated official context; historical textbook use is not current approval. Do not transfer findings between diseases, species, exposures or formulations. One generic entity; formulations/salts/combinations are not additional drugs
+Searches: ("guanfacine") AND (repurpos* OR reposition* OR off-label) | "guanfacine" AND ("Long COVID") | "guanfacine" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)
+Selection rationale: Exact cognitive-symptom question, although sparse; no CP28 pair anchor. Useful gap page rather than invented evidence.
+
+REQUEST DRUG-D12 — drug_overview — observed_question
+For maraviroc, which proposed new indications have original research, what remains untested in humans, and what are the key null and safety findings?
+Drug IDs: D12
+Condition IDs: C15, C16, C17
+Observed demand IDs: DR012
+Population: Define humans by the exact condition and eligibility criteria; retain animal/cell/computational populations as separate discovery strata.
+Intervention: maraviroc; preserve exact salt/formulation/route and combination components
+Comparator: Placebo, standard care, active comparator or no comparator as actually studied; distinguish adjunctive versus monotherapy.
+Outcomes: Condition-specific clinical outcomes, survival/function/symptoms where relevant, harms and withdrawals; exposure/PK/mechanism classified separately. Acquire reports without inferring their numerical results.
+Directness pitfalls: Original/established use must be verified from dated official context; historical textbook use is not current approval. Do not transfer findings between diseases, species, exposures or formulations. One generic entity; formulations/salts/combinations are not additional drugs
+Searches: ("maraviroc") AND (repurpos* OR reposition* OR off-label) | "maraviroc" AND ("Breast cancer" OR "Colorectal cancer" OR "Pancreatic cancer") | "maraviroc" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)
+Selection rationale: Observed access question names this drug, not these tumor indications. Cross-cancer reuse is an editorial extension supported by corpus tables.
+
+REQUEST DRUG-D13 — drug_overview — observed_question
+For atorvastatin, which proposed new indications have original research, what remains untested in humans, and what are the key null and safety findings?
+Drug IDs: D13
+Condition IDs: C04, C13, C15, C22, C29
+Observed demand IDs: DR012
+Population: Define humans by the exact condition and eligibility criteria; retain animal/cell/computational populations as separate discovery strata.
+Intervention: atorvastatin; preserve exact salt/formulation/route and combination components
+Comparator: Placebo, standard care, active comparator or no comparator as actually studied; distinguish adjunctive versus monotherapy.
+Outcomes: Condition-specific clinical outcomes, survival/function/symptoms where relevant, harms and withdrawals; exposure/PK/mechanism classified separately. Acquire reports without inferring their numerical results.
+Directness pitfalls: Original/established use must be verified from dated official context; historical textbook use is not current approval. Do not transfer findings between diseases, species, exposures or formulations. One generic entity; formulations/salts/combinations are not additional drugs
+Searches: ("atorvastatin") AND (repurpos* OR reposition* OR off-label) | "atorvastatin" AND ("Glioblastoma" OR "Prostate cancer" OR "Breast cancer" OR "Acute myeloid leukemia" OR "Vitiligo") | "atorvastatin" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)
+Selection rationale: Observed drug/access mention; local GBM/cancer leads plus a no-added-benefit vitiligo trial make safety and selective-result literacy useful.
+
+REQUEST DRUG-D14 — drug_overview — observed_question
+For rituximab, which proposed new indications have original research, what remains untested in humans, and what are the key null and safety findings?
+Drug IDs: D14
+Condition IDs: C29
+Observed demand IDs: DR012
+Population: Define humans by the exact condition and eligibility criteria; retain animal/cell/computational populations as separate discovery strata.
+Intervention: rituximab; preserve exact salt/formulation/route and combination components
+Comparator: Placebo, standard care, active comparator or no comparator as actually studied; distinguish adjunctive versus monotherapy.
+Outcomes: Condition-specific clinical outcomes, survival/function/symptoms where relevant, harms and withdrawals; exposure/PK/mechanism classified separately. Acquire reports without inferring their numerical results.
+Directness pitfalls: Original/established use must be verified from dated official context; historical textbook use is not current approval. Do not transfer findings between diseases, species, exposures or formulations. One generic entity; formulations/salts/combinations are not additional drugs
+Searches: ("rituximab") AND (repurpos* OR reposition* OR off-label) | "rituximab" AND ("Vitiligo") | "rituximab" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)
+Selection rationale: Access question names drug; small vitiligo pilot offers an explicitly indirect new-condition example. Do not imply demand or efficacy for vitiligo from the access thread.
+
+REQUEST DRUG-D15 — drug_overview — observed_question
+For celecoxib, which proposed new indications have original research, what remains untested in humans, and what are the key null and safety findings?
+Drug IDs: D15
+Condition IDs: C01, C03, C12, C15, C16, C17, C20
+Observed demand IDs: DR018
+Population: Define humans by the exact condition and eligibility criteria; retain animal/cell/computational populations as separate discovery strata.
+Intervention: celecoxib; preserve exact salt/formulation/route and combination components
+Comparator: Placebo, standard care, active comparator or no comparator as actually studied; distinguish adjunctive versus monotherapy.
+Outcomes: Condition-specific clinical outcomes, survival/function/symptoms where relevant, harms and withdrawals; exposure/PK/mechanism classified separately. Acquire reports without inferring their numerical results.
+Directness pitfalls: Original/established use must be verified from dated official context; historical textbook use is not current approval. Do not transfer findings between diseases, species, exposures or formulations. One generic entity; formulations/salts/combinations are not additional drugs
+Searches: ("celecoxib") AND (repurpos* OR reposition* OR off-label) | "celecoxib" AND ("Long COVID" OR "Epithelial ovarian or fallopian-tube carcinoma" OR "Head and neck squamous cell carcinoma" OR "Breast cancer" OR "Colorectal cancer" OR "Pancreatic cancer" OR "Hepatocellular carcinoma") | "celecoxib" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)
+Selection rationale: Mentioned in Long COVID combination thread excluded from primary demand scoring; retain provenance and sparse/context-only status. Cancer and antimicrobial contexts are separate.
+
+REQUEST DRUG-D16 — drug_overview — breadth
+For minocycline, which proposed new indications have original research, what remains untested in humans, and what are the key null and safety findings?
+Drug IDs: D16
+Condition IDs: C03, C09, C24, C25, C26, C27, C28, C29
+Observed demand IDs: DR019, DR020
+Population: Define humans by the exact condition and eligibility criteria; retain animal/cell/computational populations as separate discovery strata.
+Intervention: minocycline; preserve exact salt/formulation/route and combination components
+Comparator: Placebo, standard care, active comparator or no comparator as actually studied; distinguish adjunctive versus monotherapy.
+Outcomes: Condition-specific clinical outcomes, survival/function/symptoms where relevant, harms and withdrawals; exposure/PK/mechanism classified separately. Acquire reports without inferring their numerical results.
+Directness pitfalls: Original/established use must be verified from dated official context; historical textbook use is not current approval. Do not transfer findings between diseases, species, exposures or formulations. One generic entity; formulations/salts/combinations are not additional drugs
+Searches: ("minocycline") AND (repurpos* OR reposition* OR off-label) | "minocycline" AND ("Epithelial ovarian or fallopian-tube carcinoma" OR "Treatment-resistant depression" OR "Parkinson disease" OR "Schizophrenia" OR "Alzheimer disease" OR "Multiple sclerosis" OR "Amyotrophic lateral sclerosis" OR "Vitiligo") | "minocycline" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)
+Selection rationale: One corpus drug spans multiple diseases and contrasting positive/negative accounts, especially ALS and MS; no exact drug question in existing Reddit map.
+
+REQUEST DRUG-D17 — drug_overview — breadth
+For doxycycline, which proposed new indications have original research, what remains untested in humans, and what are the key null and safety findings?
+Drug IDs: D17
+Condition IDs: C02, C10, C12, C15, C17
+Observed demand IDs: DR035, DR019
+Population: Define humans by the exact condition and eligibility criteria; retain animal/cell/computational populations as separate discovery strata.
+Intervention: doxycycline; preserve exact salt/formulation/route and combination components
+Comparator: Placebo, standard care, active comparator or no comparator as actually studied; distinguish adjunctive versus monotherapy.
+Outcomes: Condition-specific clinical outcomes, survival/function/symptoms where relevant, harms and withdrawals; exposure/PK/mechanism classified separately. Acquire reports without inferring their numerical results.
+Directness pitfalls: Original/established use must be verified from dated official context; historical textbook use is not current approval. Do not transfer findings between diseases, species, exposures or formulations. One generic entity; formulations/salts/combinations are not additional drugs
+Searches: ("doxycycline") AND (repurpos* OR reposition* OR off-label) | "doxycycline" AND ("Acute COVID-19" OR "Periodontitis" OR "Head and neck squamous cell carcinoma" OR "Breast cancer" OR "Pancreatic cancer") | "doxycycline" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)
+Selection rationale: Connect periodontal translation question to an explicitly different drug, plus cancer/host-inflammation context; not a direct doxycycline demand claim.
+
+REQUEST DRUG-D18 — drug_overview — breadth
+For disulfiram, which proposed new indications have original research, what remains untested in humans, and what are the key null and safety findings?
+Drug IDs: D18
+Condition IDs: C04, C13, C14, C15, C16, C18
+Observed demand IDs: DR019, DR020
+Population: Define humans by the exact condition and eligibility criteria; retain animal/cell/computational populations as separate discovery strata.
+Intervention: disulfiram; preserve exact salt/formulation/route and combination components
+Comparator: Placebo, standard care, active comparator or no comparator as actually studied; distinguish adjunctive versus monotherapy.
+Outcomes: Condition-specific clinical outcomes, survival/function/symptoms where relevant, harms and withdrawals; exposure/PK/mechanism classified separately. Acquire reports without inferring their numerical results.
+Directness pitfalls: Original/established use must be verified from dated official context; historical textbook use is not current approval. Do not transfer findings between diseases, species, exposures or formulations. One generic entity; formulations/salts/combinations are not additional drugs
+Searches: ("disulfiram") AND (repurpos* OR reposition* OR off-label) | "disulfiram" AND ("Glioblastoma" OR "Prostate cancer" OR "Non-small-cell lung cancer" OR "Breast cancer" OR "Colorectal cancer" OR "Melanoma") | "disulfiram" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)
+Selection rationale: Cancer translation and original antimicrobial experiments offer a cross-indication source-reading example; clinical cancer evidence must be fetched independently.
+
+REQUEST DRUG-D19 — drug_overview — breadth
+For propranolol, which proposed new indications have original research, what remains untested in humans, and what are the key null and safety findings?
+Drug IDs: D19
+Condition IDs: C13, C15, C17, C18
+Observed demand IDs: DR019
+Population: Define humans by the exact condition and eligibility criteria; retain animal/cell/computational populations as separate discovery strata.
+Intervention: propranolol; preserve exact salt/formulation/route and combination components
+Comparator: Placebo, standard care, active comparator or no comparator as actually studied; distinguish adjunctive versus monotherapy.
+Outcomes: Condition-specific clinical outcomes, survival/function/symptoms where relevant, harms and withdrawals; exposure/PK/mechanism classified separately. Acquire reports without inferring their numerical results.
+Directness pitfalls: Original/established use must be verified from dated official context; historical textbook use is not current approval. Do not transfer findings between diseases, species, exposures or formulations. One generic entity; formulations/salts/combinations are not additional drugs
+Searches: ("propranolol") AND (repurpos* OR reposition* OR off-label) | "propranolol" AND ("Prostate cancer" OR "Breast cancer" OR "Pancreatic cancer" OR "Melanoma") | "propranolol" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)
+Selection rationale: Cross-tumor repurposing tables fit the observed cancer headline-to-human-evidence question; no drug-specific Reddit demand in existing map.
+
+REQUEST DRUG-D20 — drug_overview — breadth
+For simvastatin, which proposed new indications have original research, what remains untested in humans, and what are the key null and safety findings?
+Drug IDs: D20
+Condition IDs: C15, C16, C17, C21, C29
+Observed demand IDs: DR019
+Population: Define humans by the exact condition and eligibility criteria; retain animal/cell/computational populations as separate discovery strata.
+Intervention: simvastatin; preserve exact salt/formulation/route and combination components
+Comparator: Placebo, standard care, active comparator or no comparator as actually studied; distinguish adjunctive versus monotherapy.
+Outcomes: Condition-specific clinical outcomes, survival/function/symptoms where relevant, harms and withdrawals; exposure/PK/mechanism classified separately. Acquire reports without inferring their numerical results.
+Directness pitfalls: Original/established use must be verified from dated official context; historical textbook use is not current approval. Do not transfer findings between diseases, species, exposures or formulations. One generic entity; formulations/salts/combinations are not additional drugs
+Searches: ("simvastatin") AND (repurpos* OR reposition* OR off-label) | "simvastatin" AND ("Breast cancer" OR "Colorectal cancer" OR "Pancreatic cancer" OR "Multiple myeloma" OR "Vitiligo") | "simvastatin" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)
+Selection rationale: Cancer leads and worsening in a placebo-controlled vitiligo account provide a useful negative-evidence comparison; drug-specific demand absent.
+
+REQUEST DRUG-D21 — drug_overview — breadth
+For niclosamide, which proposed new indications have original research, what remains untested in humans, and what are the key null and safety findings?
+Drug IDs: D21
+Condition IDs: C13, C14, C15, C16, C18
+Observed demand IDs: DR019
+Population: Define humans by the exact condition and eligibility criteria; retain animal/cell/computational populations as separate discovery strata.
+Intervention: niclosamide; preserve exact salt/formulation/route and combination components
+Comparator: Placebo, standard care, active comparator or no comparator as actually studied; distinguish adjunctive versus monotherapy.
+Outcomes: Condition-specific clinical outcomes, survival/function/symptoms where relevant, harms and withdrawals; exposure/PK/mechanism classified separately. Acquire reports without inferring their numerical results.
+Directness pitfalls: Original/established use must be verified from dated official context; historical textbook use is not current approval. Do not transfer findings between diseases, species, exposures or formulations. One generic entity; formulations/salts/combinations are not additional drugs
+Searches: ("niclosamide") AND (repurpos* OR reposition* OR off-label) | "niclosamide" AND ("Prostate cancer" OR "Non-small-cell lung cancer" OR "Breast cancer" OR "Colorectal cancer" OR "Melanoma") | "niclosamide" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)
+Selection rationale: Cancer repurposing and formulation/exposure translation lead; source tables support discovery only.
+
+REQUEST DRUG-D22 — drug_overview — breadth
+For hydroxychloroquine, which proposed new indications have original research, what remains untested in humans, and what are the key null and safety findings?
+Drug IDs: D22
+Condition IDs: C02, C03, C13
+Observed demand IDs: DR005, DR019
+Population: Define humans by the exact condition and eligibility criteria; retain animal/cell/computational populations as separate discovery strata.
+Intervention: hydroxychloroquine; preserve exact salt/formulation/route and combination components
+Comparator: Placebo, standard care, active comparator or no comparator as actually studied; distinguish adjunctive versus monotherapy.
+Outcomes: Condition-specific clinical outcomes, survival/function/symptoms where relevant, harms and withdrawals; exposure/PK/mechanism classified separately. Acquire reports without inferring their numerical results.
+Directness pitfalls: Original/established use must be verified from dated official context; historical textbook use is not current approval. Do not transfer findings between diseases, species, exposures or formulations. One generic entity; formulations/salts/combinations are not additional drugs
+Searches: ("hydroxychloroquine") AND (repurpos* OR reposition* OR off-label) | "hydroxychloroquine" AND ("Acute COVID-19" OR "Epithelial ovarian or fallopian-tube carcinoma" OR "Prostate cancer") | "hydroxychloroquine" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)
+Selection rationale: COVID failure and itraconazole cancer-combination context help compare indirect mechanisms with clinical outcomes; not observed direct drug demand.
+
+REQUEST DRUG-D23 — drug_overview — breadth
+For aspirin, which proposed new indications have original research, what remains untested in humans, and what are the key null and safety findings?
+Drug IDs: D23
+Condition IDs: C03, C12, C15, C16, C20, C21, C27
+Observed demand IDs: DR019, DR020
+Population: Define humans by the exact condition and eligibility criteria; retain animal/cell/computational populations as separate discovery strata.
+Intervention: aspirin; preserve exact salt/formulation/route and combination components
+Comparator: Placebo, standard care, active comparator or no comparator as actually studied; distinguish adjunctive versus monotherapy.
+Outcomes: Condition-specific clinical outcomes, survival/function/symptoms where relevant, harms and withdrawals; exposure/PK/mechanism classified separately. Acquire reports without inferring their numerical results.
+Directness pitfalls: Original/established use must be verified from dated official context; historical textbook use is not current approval. Do not transfer findings between diseases, species, exposures or formulations. One generic entity; formulations/salts/combinations are not additional drugs
+Searches: ("aspirin" OR "acetylsalicylic acid") AND (repurpos* OR reposition* OR off-label) | "aspirin" AND ("Epithelial ovarian or fallopian-tube carcinoma" OR "Head and neck squamous cell carcinoma" OR "Breast cancer" OR "Colorectal cancer" OR "Hepatocellular carcinoma" OR "Multiple myeloma" OR "Multiple sclerosis") | "aspirin" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)
+Selection rationale: Cancer prevention/treatment separation plus MS computational candidate supports two observed evidence-literacy themes; no direct aspirin demand measured.
+
+REQUEST DRUG-D24 — drug_overview — breadth
+For pioglitazone, which proposed new indications have original research, what remains untested in humans, and what are the key null and safety findings?
+Drug IDs: D24
+Condition IDs: C13, C14, C17, C22, C23, C30
+Observed demand IDs: DR019, DR032, DR033
+Population: Define humans by the exact condition and eligibility criteria; retain animal/cell/computational populations as separate discovery strata.
+Intervention: pioglitazone; preserve exact salt/formulation/route and combination components
+Comparator: Placebo, standard care, active comparator or no comparator as actually studied; distinguish adjunctive versus monotherapy.
+Outcomes: Condition-specific clinical outcomes, survival/function/symptoms where relevant, harms and withdrawals; exposure/PK/mechanism classified separately. Acquire reports without inferring their numerical results.
+Directness pitfalls: Original/established use must be verified from dated official context; historical textbook use is not current approval. Do not transfer findings between diseases, species, exposures or formulations. One generic entity; formulations/salts/combinations are not additional drugs
+Searches: ("pioglitazone") AND (repurpos* OR reposition* OR off-label) | "pioglitazone" AND ("Prostate cancer" OR "Non-small-cell lung cancer" OR "Pancreatic cancer" OR "Acute myeloid leukemia" OR "Chronic myeloid leukemia" OR "Sarcopenia") | "pioglitazone" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)
+Selection rationale: Sarcopenia and residual-leukemia background gives cross-condition reuse; links to healthspan/exercise demand are editorial, not direct.
+
+REQUEST DRUG-D25 — drug_overview — breadth
+For memantine, which proposed new indications have original research, what remains untested in humans, and what are the key null and safety findings?
+Drug IDs: D25
+Condition IDs: C04
+Observed demand IDs: DR007, DR020
+Population: Define humans by the exact condition and eligibility criteria; retain animal/cell/computational populations as separate discovery strata.
+Intervention: memantine; preserve exact salt/formulation/route and combination components
+Comparator: Placebo, standard care, active comparator or no comparator as actually studied; distinguish adjunctive versus monotherapy.
+Outcomes: Condition-specific clinical outcomes, survival/function/symptoms where relevant, harms and withdrawals; exposure/PK/mechanism classified separately. Acquire reports without inferring their numerical results.
+Directness pitfalls: Original/established use must be verified from dated official context; historical textbook use is not current approval. Do not transfer findings between diseases, species, exposures or formulations. One generic entity; formulations/salts/combinations are not additional drugs
+Searches: ("memantine") AND (repurpos* OR reposition* OR off-label) | "memantine" AND ("Glioblastoma") | "memantine" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)
+Selection rationale: Specific GBM trial-table lead supports an observed glioblastoma adjunct question; ASD computational input is separate context.
+
+REQUEST DRUG-D26 — drug_overview — breadth
+For sildenafil, which proposed new indications have original research, what remains untested in humans, and what are the key null and safety findings?
+Drug IDs: D26
+Condition IDs: C04, C17
+Observed demand IDs: DR007, DR019
+Population: Define humans by the exact condition and eligibility criteria; retain animal/cell/computational populations as separate discovery strata.
+Intervention: sildenafil; preserve exact salt/formulation/route and combination components
+Comparator: Placebo, standard care, active comparator or no comparator as actually studied; distinguish adjunctive versus monotherapy.
+Outcomes: Condition-specific clinical outcomes, survival/function/symptoms where relevant, harms and withdrawals; exposure/PK/mechanism classified separately. Acquire reports without inferring their numerical results.
+Directness pitfalls: Original/established use must be verified from dated official context; historical textbook use is not current approval. Do not transfer findings between diseases, species, exposures or formulations. One generic entity; formulations/salts/combinations are not additional drugs
+Searches: ("sildenafil") AND (repurpos* OR reposition* OR off-label) | "sildenafil" AND ("Glioblastoma" OR "Pancreatic cancer") | "sildenafil" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)
+Selection rationale: Drug-specific GBM/pancreatic table leads fit broad cancer adjunct/translation questions; no direct drug-specific Reddit signal.
+
+REQUEST DRUG-D27 — drug_overview — breadth
+For valproic acid, which proposed new indications have original research, what remains untested in humans, and what are the key null and safety findings?
+Drug IDs: D27
+Condition IDs: C12, C15, C22
+Observed demand IDs: DR019
+Population: Define humans by the exact condition and eligibility criteria; retain animal/cell/computational populations as separate discovery strata.
+Intervention: valproic acid; preserve exact salt/formulation/route and combination components
+Comparator: Placebo, standard care, active comparator or no comparator as actually studied; distinguish adjunctive versus monotherapy.
+Outcomes: Condition-specific clinical outcomes, survival/function/symptoms where relevant, harms and withdrawals; exposure/PK/mechanism classified separately. Acquire reports without inferring their numerical results.
+Directness pitfalls: Original/established use must be verified from dated official context; historical textbook use is not current approval. Do not transfer findings between diseases, species, exposures or formulations. One generic entity; formulations/salts/combinations are not additional drugs
+Searches: ("valproic acid" OR "valproicacid") AND (repurpos* OR reposition* OR off-label) | "valproic acid" AND ("Head and neck squamous cell carcinoma" OR "Breast cancer" OR "Acute myeloid leukemia") | "valproic acid" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)
+Selection rationale: Cancer epigenetic/AML background can populate mechanism-to-patient boundaries; no direct drug demand assumed.
+
+REQUEST DRUG-D28 — drug_overview — breadth
+For vorinostat, which proposed new indications have original research, what remains untested in humans, and what are the key null and safety findings?
+Drug IDs: D28
+Condition IDs: C11
+Observed demand IDs: DR020
+Population: Define humans by the exact condition and eligibility criteria; retain animal/cell/computational populations as separate discovery strata.
+Intervention: vorinostat; preserve exact salt/formulation/route and combination components
+Comparator: Placebo, standard care, active comparator or no comparator as actually studied; distinguish adjunctive versus monotherapy.
+Outcomes: Condition-specific clinical outcomes, survival/function/symptoms where relevant, harms and withdrawals; exposure/PK/mechanism classified separately. Acquire reports without inferring their numerical results.
+Directness pitfalls: Original/established use must be verified from dated official context; historical textbook use is not current approval. Do not transfer findings between diseases, species, exposures or formulations. One generic entity; formulations/salts/combinations are not additional drugs
+Searches: ("vorinostat") AND (repurpos* OR reposition* OR off-label) | "vorinostat" AND ("Crohn disease") | "vorinostat" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)
+Selection rationale: Source-located original computational Crohn candidate provides a clean test of the observed modeling question; no treatment effect inferred.
+
+REQUEST DRUG-D29 — drug_overview — breadth
+For clomipramine, which proposed new indications have original research, what remains untested in humans, and what are the key null and safety findings?
+Drug IDs: D29
+Condition IDs: C11
+Observed demand IDs: DR020
+Population: Define humans by the exact condition and eligibility criteria; retain animal/cell/computational populations as separate discovery strata.
+Intervention: clomipramine; preserve exact salt/formulation/route and combination components
+Comparator: Placebo, standard care, active comparator or no comparator as actually studied; distinguish adjunctive versus monotherapy.
+Outcomes: Condition-specific clinical outcomes, survival/function/symptoms where relevant, harms and withdrawals; exposure/PK/mechanism classified separately. Acquire reports without inferring their numerical results.
+Directness pitfalls: Original/established use must be verified from dated official context; historical textbook use is not current approval. Do not transfer findings between diseases, species, exposures or formulations. One generic entity; formulations/salts/combinations are not additional drugs
+Searches: ("clomipramine") AND (repurpos* OR reposition* OR off-label) | "clomipramine" AND ("Crohn disease") | "clomipramine" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)
+Selection rationale: A second original computational Crohn candidate enables candidate comparison without presenting the screen as a clinical trial.
+
+REQUEST DRUG-D30 — drug_overview — breadth
+For thalidomide, which proposed new indications have original research, what remains untested in humans, and what are the key null and safety findings?
+Drug IDs: D30
+Condition IDs: C03, C13, C16, C21, C26
+Observed demand IDs: DR019, DR008
+Population: Define humans by the exact condition and eligibility criteria; retain animal/cell/computational populations as separate discovery strata.
+Intervention: thalidomide; preserve exact salt/formulation/route and combination components
+Comparator: Placebo, standard care, active comparator or no comparator as actually studied; distinguish adjunctive versus monotherapy.
+Outcomes: Condition-specific clinical outcomes, survival/function/symptoms where relevant, harms and withdrawals; exposure/PK/mechanism classified separately. Acquire reports without inferring their numerical results.
+Directness pitfalls: Original/established use must be verified from dated official context; historical textbook use is not current approval. Do not transfer findings between diseases, species, exposures or formulations. One generic entity; formulations/salts/combinations are not additional drugs
+Searches: ("thalidomide") AND (repurpos* OR reposition* OR off-label) | "thalidomide" AND ("Epithelial ovarian or fallopian-tube carcinoma" OR "Prostate cancer" OR "Colorectal cancer" OR "Multiple myeloma" OR "Alzheimer disease") | "thalidomide" AND (trial OR randomized OR observational OR adverse OR negative OR null OR discontinued)
+Selection rationale: Established repurposing history in myeloma and distinct speculative uses make a boundary/safety case; no contemporary efficacy inference from textbook status.
+
+REQUEST COND-C01 — condition_options — observed_question
+Which repurposed drugs have been studied for Long COVID, how direct is the human evidence, and which trials were null, harmful or discontinued?
+Drug IDs: D01, D02, D03, D04, D11, D15
+Condition IDs: C01
+Observed demand IDs: DR001, DR002, DR003, DR004, DR009, DR010, DR011, DR013, DR014, DR015, DR016, DR017, DR018, DR025
+Population: Long COVID; retain subtype, disease stage, prior treatment, age and eligibility. Prevention after acute infection and treatment of established illness remain separate subscopes; fatigue, cognition, PEM and autonomic outcomes are not extra conditions.
+Intervention: Discover all relevant repurposed interventions; initial seeds: metformin, fluvoxamine, nirmatrelvir, naltrexone, guanfacine, celecoxib
+Comparator: Standard care/placebo/active comparisons and add-on regimens; do not infer head-to-head comparisons from separate studies.
+Outcomes: Clinical primary and secondary outcomes, functioning/quality of life, harms, withdrawals and follow-up. For cancer distinguish overall survival, progression, response, symptom palliation and surrogate/model endpoints.
+Directness pitfalls: Prevention after acute infection and treatment of established illness remain separate subscopes; fatigue, cognition, PEM and autonomic outcomes are not extra conditions. Seed pairs are hypotheses to investigate, not accepted treatment options.
+Searches: ("Long COVID" OR "post-COVID condition" OR "PASC") AND (repurpos* OR reposition* OR off-label) | "Long COVID" AND ("metformin" OR "fluvoxamine" OR "nirmatrelvir" OR "naltrexone" OR "guanfacine" OR "celecoxib") | "Long COVID" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)
+
+REQUEST COND-C02 — condition_options — observed_question
+Which repurposed drugs have been studied for Acute COVID-19, how direct is the human evidence, and which trials were null, harmful or discontinued?
+Drug IDs: D01, D02, D03, D08, D17, D22
+Condition IDs: C02
+Observed demand IDs: DR005
+Population: Acute COVID-19; retain subtype, disease stage, prior treatment, age and eligibility. Outpatient deterioration, hospitalized severe disease and prophylaxis have different PICO; never infer Long COVID treatment from acute effects.
+Intervention: Discover all relevant repurposed interventions; initial seeds: metformin, fluvoxamine, nirmatrelvir, ivermectin, doxycycline, hydroxychloroquine
+Comparator: Standard care/placebo/active comparisons and add-on regimens; do not infer head-to-head comparisons from separate studies.
+Outcomes: Clinical primary and secondary outcomes, functioning/quality of life, harms, withdrawals and follow-up. For cancer distinguish overall survival, progression, response, symptom palliation and surrogate/model endpoints.
+Directness pitfalls: Outpatient deterioration, hospitalized severe disease and prophylaxis have different PICO; never infer Long COVID treatment from acute effects. Seed pairs are hypotheses to investigate, not accepted treatment options.
+Searches: ("Acute COVID-19" OR "SARS-CoV-2 infection") AND (repurpos* OR reposition* OR off-label) | "Acute COVID-19" AND ("metformin" OR "fluvoxamine" OR "nirmatrelvir" OR "ivermectin" OR "doxycycline" OR "hydroxychloroquine") | "Acute COVID-19" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)
+
+REQUEST COND-C03 — condition_options — observed_question
+Which repurposed drugs have been studied for Epithelial ovarian or fallopian-tube carcinoma, how direct is the human evidence, and which trials were null, harmful or discontinued?
+Drug IDs: D06, D07, D08, D09, D10, D15, D16, D22, D23, D30
+Condition IDs: C03
+Observed demand IDs: DR006
+Population: Epithelial ovarian or fallopian-tube carcinoma; retain subtype, disease stage, prior treatment, age and eligibility. One related disease family reflecting the observed question; split site, histology, platinum sensitivity, stage and maintenance versus active therapy within it. These are not five additional conditions.
+Intervention: Discover all relevant repurposed interventions; initial seeds: sirolimus, itraconazole, ivermectin, mebendazole, fenbendazole, celecoxib, minocycline, hydroxychloroquine, aspirin, thalidomide
+Comparator: Standard care/placebo/active comparisons and add-on regimens; do not infer head-to-head comparisons from separate studies.
+Outcomes: Clinical primary and secondary outcomes, functioning/quality of life, harms, withdrawals and follow-up. For cancer distinguish overall survival, progression, response, symptom palliation and surrogate/model endpoints.
+Directness pitfalls: One related disease family reflecting the observed question; split site, histology, platinum sensitivity, stage and maintenance versus active therapy within it. These are not five additional conditions. Seed pairs are hypotheses to investigate, not accepted treatment options.
+Searches: ("Epithelial ovarian or fallopian-tube carcinoma" OR "ovarian/fallopian cancer") AND (repurpos* OR reposition* OR off-label) | "Epithelial ovarian or fallopian-tube carcinoma" AND ("sirolimus" OR "itraconazole" OR "ivermectin" OR "mebendazole" OR "fenbendazole" OR "celecoxib" OR "minocycline" OR "hydroxychloroquine" OR "aspirin" OR "thalidomide") | "Epithelial ovarian or fallopian-tube carcinoma" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)
+
+REQUEST COND-C04 — condition_options — observed_question
+Which repurposed drugs have been studied for Glioblastoma, how direct is the human evidence, and which trials were null, harmful or discontinued?
+Drug IDs: D08, D09, D13, D18, D25, D26
+Condition IDs: C04
+Observed demand IDs: DR007
+Population: Glioblastoma; retain subtype, disease stage, prior treatment, age and eligibility. Do not count glioma, astrocytoma and GBM as synonyms without pathology; only exact GBM anchors qualify below.
+Intervention: Discover all relevant repurposed interventions; initial seeds: ivermectin, mebendazole, atorvastatin, disulfiram, memantine, sildenafil
+Comparator: Standard care/placebo/active comparisons and add-on regimens; do not infer head-to-head comparisons from separate studies.
+Outcomes: Clinical primary and secondary outcomes, functioning/quality of life, harms, withdrawals and follow-up. For cancer distinguish overall survival, progression, response, symptom palliation and surrogate/model endpoints.
+Directness pitfalls: Do not count glioma, astrocytoma and GBM as synonyms without pathology; only exact GBM anchors qualify below. Seed pairs are hypotheses to investigate, not accepted treatment options.
+Searches: ("Glioblastoma" OR "glioblastoma multiforme" OR "GBM") AND (repurpos* OR reposition* OR off-label) | "Glioblastoma" AND ("ivermectin" OR "mebendazole" OR "atorvastatin" OR "disulfiram" OR "memantine" OR "sildenafil") | "Glioblastoma" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)
+
+REQUEST COND-C05 — condition_options — observed_question
+Which repurposed drugs have been studied for Fibromyalgia, how direct is the human evidence, and which trials were null, harmful or discontinued?
+Drug IDs: D04
+Condition IDs: C05
+Observed demand IDs: DR025
+Population: Fibromyalgia; retain subtype, disease stage, prior treatment, age and eligibility. Chronic pain is broader than fibromyalgia. DR025 is a shared multi-condition question, not an independently validated fibromyalgia demand estimate.
+Intervention: Discover all relevant repurposed interventions; initial seeds: naltrexone
+Comparator: Standard care/placebo/active comparisons and add-on regimens; do not infer head-to-head comparisons from separate studies.
+Outcomes: Clinical primary and secondary outcomes, functioning/quality of life, harms, withdrawals and follow-up. For cancer distinguish overall survival, progression, response, symptom palliation and surrogate/model endpoints.
+Directness pitfalls: Chronic pain is broader than fibromyalgia. DR025 is a shared multi-condition question, not an independently validated fibromyalgia demand estimate. Seed pairs are hypotheses to investigate, not accepted treatment options.
+Searches: ("Fibromyalgia" OR "fibromyalgia-associated chronic pain") AND (repurpos* OR reposition* OR off-label) | "Fibromyalgia" AND ("naltrexone") | "Fibromyalgia" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)
+
+REQUEST COND-C06 — condition_options — observed_question
+Which repurposed drugs have been studied for Myalgic encephalomyelitis/chronic fatigue syndrome, how direct is the human evidence, and which trials were null, harmful or discontinued?
+Drug IDs: D04
+Condition IDs: C06
+Observed demand IDs: DR025
+Population: Myalgic encephalomyelitis/chronic fatigue syndrome; retain subtype, disease stage, prior treatment, age and eligibility. Separate from Long COVID even when diagnoses overlap; do not count fatigue alone as this diagnosis. Shared DR025 signal is not additive.
+Intervention: Discover all relevant repurposed interventions; initial seeds: naltrexone
+Comparator: Standard care/placebo/active comparisons and add-on regimens; do not infer head-to-head comparisons from separate studies.
+Outcomes: Clinical primary and secondary outcomes, functioning/quality of life, harms, withdrawals and follow-up. For cancer distinguish overall survival, progression, response, symptom palliation and surrogate/model endpoints.
+Directness pitfalls: Separate from Long COVID even when diagnoses overlap; do not count fatigue alone as this diagnosis. Shared DR025 signal is not additive. Seed pairs are hypotheses to investigate, not accepted treatment options.
+Searches: ("Myalgic encephalomyelitis/chronic fatigue syndrome" OR "ME/CFS") AND (repurpos* OR reposition* OR off-label) | "Myalgic encephalomyelitis/chronic fatigue syndrome" AND ("naltrexone") | "Myalgic encephalomyelitis/chronic fatigue syndrome" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)
+
+REQUEST COND-C07 — condition_options — observed_question
+Which repurposed drugs have been studied for Compulsive sexual behavior disorder, how direct is the human evidence, and which trials were null, harmful or discontinued?
+Drug IDs: D04
+Condition IDs: C07
+Observed demand IDs: DR026
+Population: Compulsive sexual behavior disorder; retain subtype, disease stage, prior treatment, age and eligibility. Distinct behavioral disorder; not a synonym for persistent genital arousal or a general libido concern.
+Intervention: Discover all relevant repurposed interventions; initial seeds: naltrexone
+Comparator: Standard care/placebo/active comparisons and add-on regimens; do not infer head-to-head comparisons from separate studies.
+Outcomes: Clinical primary and secondary outcomes, functioning/quality of life, harms, withdrawals and follow-up. For cancer distinguish overall survival, progression, response, symptom palliation and surrogate/model endpoints.
+Directness pitfalls: Distinct behavioral disorder; not a synonym for persistent genital arousal or a general libido concern. Seed pairs are hypotheses to investigate, not accepted treatment options.
+Searches: ("Compulsive sexual behavior disorder" OR "CSBD") AND (repurpos* OR reposition* OR off-label) | "Compulsive sexual behavior disorder" AND ("naltrexone") | "Compulsive sexual behavior disorder" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)
+
+REQUEST COND-C08 — condition_options — observed_question
+Which repurposed drugs have been studied for Persistent genital arousal disorder/genitopelvic dysesthesia, how direct is the human evidence, and which trials were null, harmful or discontinued?
+Drug IDs: D04
+Condition IDs: C08
+Observed demand IDs: DR027
+Population: Persistent genital arousal disorder/genitopelvic dysesthesia; retain subtype, disease stage, prior treatment, age and eligibility. Separate involuntary arousal/dysesthesia and associated pain endpoints from compulsive behavior; one overlapping diagnostic construct.
+Intervention: Discover all relevant repurposed interventions; initial seeds: naltrexone
+Comparator: Standard care/placebo/active comparisons and add-on regimens; do not infer head-to-head comparisons from separate studies.
+Outcomes: Clinical primary and secondary outcomes, functioning/quality of life, harms, withdrawals and follow-up. For cancer distinguish overall survival, progression, response, symptom palliation and surrogate/model endpoints.
+Directness pitfalls: Separate involuntary arousal/dysesthesia and associated pain endpoints from compulsive behavior; one overlapping diagnostic construct. Seed pairs are hypotheses to investigate, not accepted treatment options.
+Searches: ("Persistent genital arousal disorder/genitopelvic dysesthesia" OR "PGAD/GPD") AND (repurpos* OR reposition* OR off-label) | "Persistent genital arousal disorder/genitopelvic dysesthesia" AND ("naltrexone") | "Persistent genital arousal disorder/genitopelvic dysesthesia" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)
+
+REQUEST COND-C09 — condition_options — observed_question
+Which repurposed drugs have been studied for Treatment-resistant depression, how direct is the human evidence, and which trials were null, harmful or discontinued?
+Drug IDs: D05, D16
+Condition IDs: C09
+Observed demand IDs: DR028, DR029, DR030, DR031
+Population: Treatment-resistant depression; retain subtype, disease stage, prior treatment, age and eligibility. Do not count anhedonia as another condition; distinguish unipolar/bipolar diagnosis, prior treatment and augmentation. Generic depression evidence is indirect.
+Intervention: Discover all relevant repurposed interventions; initial seeds: pramipexole, minocycline
+Comparator: Standard care/placebo/active comparisons and add-on regimens; do not infer head-to-head comparisons from separate studies.
+Outcomes: Clinical primary and secondary outcomes, functioning/quality of life, harms, withdrawals and follow-up. For cancer distinguish overall survival, progression, response, symptom palliation and surrogate/model endpoints.
+Directness pitfalls: Do not count anhedonia as another condition; distinguish unipolar/bipolar diagnosis, prior treatment and augmentation. Generic depression evidence is indirect. Seed pairs are hypotheses to investigate, not accepted treatment options.
+Searches: ("Treatment-resistant depression" OR "depression with persistent anhedonia after treatment") AND (repurpos* OR reposition* OR off-label) | "Treatment-resistant depression" AND ("pramipexole" OR "minocycline") | "Treatment-resistant depression" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)
+
+REQUEST COND-C10 — condition_options — observed_question
+Which repurposed drugs have been studied for Periodontitis, how direct is the human evidence, and which trials were null, harmful or discontinued?
+Drug IDs: D06, D17
+Condition IDs: C10
+Observed demand IDs: DR035
+Population: Periodontitis; retain subtype, disease stage, prior treatment, age and eligibility. Keep inflammatory periodontal disease separate from caries, microbiome shifts and oral cancer; sirolimus demand does not establish doxycycline demand.
+Intervention: Discover all relevant repurposed interventions; initial seeds: sirolimus, doxycycline
+Comparator: Standard care/placebo/active comparisons and add-on regimens; do not infer head-to-head comparisons from separate studies.
+Outcomes: Clinical primary and secondary outcomes, functioning/quality of life, harms, withdrawals and follow-up. For cancer distinguish overall survival, progression, response, symptom palliation and surrogate/model endpoints.
+Directness pitfalls: Keep inflammatory periodontal disease separate from caries, microbiome shifts and oral cancer; sirolimus demand does not establish doxycycline demand. Seed pairs are hypotheses to investigate, not accepted treatment options.
+Searches: ("Periodontitis" OR "periodontal disease") AND (repurpos* OR reposition* OR off-label) | "Periodontitis" AND ("sirolimus" OR "doxycycline") | "Periodontitis" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)
+
+REQUEST COND-C11 — condition_options — breadth
+Which repurposed drugs have been studied for Crohn disease, how direct is the human evidence, and which trials were null, harmful or discontinued?
+Drug IDs: D28, D29
+Condition IDs: C11
+Observed demand IDs: DR020
+Population: Crohn disease; retain subtype, disease stage, prior treatment, age and eligibility. Computational-screen example linked to the observed modeling question; no Crohn-specific Reddit question established. Separate refractory colonic subgroup and clinical benefit.
+Intervention: Discover all relevant repurposed interventions; initial seeds: vorinostat, clomipramine
+Comparator: Standard care/placebo/active comparisons and add-on regimens; do not infer head-to-head comparisons from separate studies.
+Outcomes: Clinical primary and secondary outcomes, functioning/quality of life, harms, withdrawals and follow-up. For cancer distinguish overall survival, progression, response, symptom palliation and surrogate/model endpoints.
+Directness pitfalls: Computational-screen example linked to the observed modeling question; no Crohn-specific Reddit question established. Separate refractory colonic subgroup and clinical benefit. Seed pairs are hypotheses to investigate, not accepted treatment options.
+Searches: ("Crohn disease" OR "anti-TNF refractory Crohn disease subset") AND (repurpos* OR reposition* OR off-label) | "Crohn disease" AND ("vorinostat" OR "clomipramine") | "Crohn disease" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)
+
+REQUEST COND-C12 — condition_options — breadth
+Which repurposed drugs have been studied for Head and neck squamous cell carcinoma, how direct is the human evidence, and which trials were null, harmful or discontinued?
+Drug IDs: D09, D15, D17, D23, D27
+Condition IDs: C12
+Observed demand IDs: DR019, DR008
+Population: Head and neck squamous cell carcinoma; retain subtype, disease stage, prior treatment, age and eligibility. Broad cancer evidence-reading extension; do not combine with esophageal SCC or skin SCC. Stratify site and HPV status if sources report them.
+Intervention: Discover all relevant repurposed interventions; initial seeds: mebendazole, celecoxib, doxycycline, aspirin, valproic acid
+Comparator: Standard care/placebo/active comparisons and add-on regimens; do not infer head-to-head comparisons from separate studies.
+Outcomes: Clinical primary and secondary outcomes, functioning/quality of life, harms, withdrawals and follow-up. For cancer distinguish overall survival, progression, response, symptom palliation and surrogate/model endpoints.
+Directness pitfalls: Broad cancer evidence-reading extension; do not combine with esophageal SCC or skin SCC. Stratify site and HPV status if sources report them. Seed pairs are hypotheses to investigate, not accepted treatment options.
+Searches: ("Head and neck squamous cell carcinoma" OR "HNSCC" OR "oral SCC within the family") AND (repurpos* OR reposition* OR off-label) | "Head and neck squamous cell carcinoma" AND ("mebendazole" OR "celecoxib" OR "doxycycline" OR "aspirin" OR "valproic acid") | "Head and neck squamous cell carcinoma" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)
+
+REQUEST COND-C13 — condition_options — breadth
+Which repurposed drugs have been studied for Prostate cancer, how direct is the human evidence, and which trials were null, harmful or discontinued?
+Drug IDs: D01, D06, D07, D13, D18, D19, D21, D22, D24, D30
+Condition IDs: C13
+Observed demand IDs: DR019, DR008
+Population: Prostate cancer; retain subtype, disease stage, prior treatment, age and eligibility. Owner-required itraconazole cancer lead. Separate localized, biochemical relapse and metastatic castration-resistant disease; no direct prostate-specific demand measured.
+Intervention: Discover all relevant repurposed interventions; initial seeds: metformin, sirolimus, itraconazole, atorvastatin, disulfiram, propranolol, niclosamide, hydroxychloroquine, pioglitazone, thalidomide
+Comparator: Standard care/placebo/active comparisons and add-on regimens; do not infer head-to-head comparisons from separate studies.
+Outcomes: Clinical primary and secondary outcomes, functioning/quality of life, harms, withdrawals and follow-up. For cancer distinguish overall survival, progression, response, symptom palliation and surrogate/model endpoints.
+Directness pitfalls: Owner-required itraconazole cancer lead. Separate localized, biochemical relapse and metastatic castration-resistant disease; no direct prostate-specific demand measured. Seed pairs are hypotheses to investigate, not accepted treatment options.
+Searches: ("Prostate cancer" OR "prostatic carcinoma") AND (repurpos* OR reposition* OR off-label) | "Prostate cancer" AND ("metformin" OR "sirolimus" OR "itraconazole" OR "atorvastatin" OR "disulfiram" OR "propranolol" OR "niclosamide" OR "hydroxychloroquine" OR "pioglitazone" OR "thalidomide") | "Prostate cancer" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)
+
+REQUEST COND-C14 — condition_options — breadth
+Which repurposed drugs have been studied for Non-small-cell lung cancer, how direct is the human evidence, and which trials were null, harmful or discontinued?
+Drug IDs: D01, D07, D18, D21, D24
+Condition IDs: C14
+Observed demand IDs: DR019, DR008
+Population: Non-small-cell lung cancer; retain subtype, disease stage, prior treatment, age and eligibility. Lung cancer with unspecified histology is related context, not exact NSCLC evidence; SCLC is excluded from this node.
+Intervention: Discover all relevant repurposed interventions; initial seeds: metformin, itraconazole, disulfiram, niclosamide, pioglitazone
+Comparator: Standard care/placebo/active comparisons and add-on regimens; do not infer head-to-head comparisons from separate studies.
+Outcomes: Clinical primary and secondary outcomes, functioning/quality of life, harms, withdrawals and follow-up. For cancer distinguish overall survival, progression, response, symptom palliation and surrogate/model endpoints.
+Directness pitfalls: Lung cancer with unspecified histology is related context, not exact NSCLC evidence; SCLC is excluded from this node. Seed pairs are hypotheses to investigate, not accepted treatment options.
+Searches: ("Non-small-cell lung cancer" OR "NSCLC") AND (repurpos* OR reposition* OR off-label) | "Non-small-cell lung cancer" AND ("metformin" OR "itraconazole" OR "disulfiram" OR "niclosamide" OR "pioglitazone") | "Non-small-cell lung cancer" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)
+
+REQUEST COND-C15 — condition_options — breadth
+Which repurposed drugs have been studied for Breast cancer, how direct is the human evidence, and which trials were null, harmful or discontinued?
+Drug IDs: D01, D06, D08, D12, D13, D15, D17, D18, D19, D20, D21, D23, D27
+Condition IDs: C15
+Observed demand IDs: DR019, DR008
+Population: Breast cancer; retain subtype, disease stage, prior treatment, age and eligibility. One condition entity with molecular subtype/stage strata; triple-negative disease is not counted as an extra condition.
+Intervention: Discover all relevant repurposed interventions; initial seeds: metformin, sirolimus, ivermectin, maraviroc, atorvastatin, celecoxib, doxycycline, disulfiram, propranolol, simvastatin, niclosamide, aspirin, valproic acid
+Comparator: Standard care/placebo/active comparisons and add-on regimens; do not infer head-to-head comparisons from separate studies.
+Outcomes: Clinical primary and secondary outcomes, functioning/quality of life, harms, withdrawals and follow-up. For cancer distinguish overall survival, progression, response, symptom palliation and surrogate/model endpoints.
+Directness pitfalls: One condition entity with molecular subtype/stage strata; triple-negative disease is not counted as an extra condition. Seed pairs are hypotheses to investigate, not accepted treatment options.
+Searches: ("Breast cancer" OR "breast carcinoma") AND (repurpos* OR reposition* OR off-label) | "Breast cancer" AND ("metformin" OR "sirolimus" OR "ivermectin" OR "maraviroc" OR "atorvastatin" OR "celecoxib" OR "doxycycline" OR "disulfiram" OR "propranolol" OR "simvastatin" OR "niclosamide" OR "aspirin" OR "valproic acid") | "Breast cancer" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)
+
+REQUEST COND-C16 — condition_options — breadth
+Which repurposed drugs have been studied for Colorectal cancer, how direct is the human evidence, and which trials were null, harmful or discontinued?
+Drug IDs: D01, D06, D07, D08, D12, D15, D18, D20, D21, D23, D30
+Condition IDs: C16
+Observed demand IDs: DR019, DR008
+Population: Colorectal cancer; retain subtype, disease stage, prior treatment, age and eligibility. Colon and rectal site-specific treatment retained as strata in one family; prevention and established-cancer therapy separate.
+Intervention: Discover all relevant repurposed interventions; initial seeds: metformin, sirolimus, itraconazole, ivermectin, maraviroc, celecoxib, disulfiram, simvastatin, niclosamide, aspirin, thalidomide
+Comparator: Standard care/placebo/active comparisons and add-on regimens; do not infer head-to-head comparisons from separate studies.
+Outcomes: Clinical primary and secondary outcomes, functioning/quality of life, harms, withdrawals and follow-up. For cancer distinguish overall survival, progression, response, symptom palliation and surrogate/model endpoints.
+Directness pitfalls: Colon and rectal site-specific treatment retained as strata in one family; prevention and established-cancer therapy separate. Seed pairs are hypotheses to investigate, not accepted treatment options.
+Searches: ("Colorectal cancer" OR "colon cancer" OR "rectal cancer") AND (repurpos* OR reposition* OR off-label) | "Colorectal cancer" AND ("metformin" OR "sirolimus" OR "itraconazole" OR "ivermectin" OR "maraviroc" OR "celecoxib" OR "disulfiram" OR "simvastatin" OR "niclosamide" OR "aspirin" OR "thalidomide") | "Colorectal cancer" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)
+
+REQUEST COND-C17 — condition_options — breadth
+Which repurposed drugs have been studied for Pancreatic cancer, how direct is the human evidence, and which trials were null, harmful or discontinued?
+Drug IDs: D01, D07, D12, D15, D17, D19, D20, D24, D26
+Condition IDs: C17
+Observed demand IDs: DR019, DR008
+Population: Pancreatic cancer; retain subtype, disease stage, prior treatment, age and eligibility. Prioritize original clinical verification of textbook adjunctive itraconazole claims; do not merge neuroendocrine and ductal disease.
+Intervention: Discover all relevant repurposed interventions; initial seeds: metformin, itraconazole, maraviroc, celecoxib, doxycycline, propranolol, simvastatin, pioglitazone, sildenafil
+Comparator: Standard care/placebo/active comparisons and add-on regimens; do not infer head-to-head comparisons from separate studies.
+Outcomes: Clinical primary and secondary outcomes, functioning/quality of life, harms, withdrawals and follow-up. For cancer distinguish overall survival, progression, response, symptom palliation and surrogate/model endpoints.
+Directness pitfalls: Prioritize original clinical verification of textbook adjunctive itraconazole claims; do not merge neuroendocrine and ductal disease. Seed pairs are hypotheses to investigate, not accepted treatment options.
+Searches: ("Pancreatic cancer" OR "pancreatic carcinoma") AND (repurpos* OR reposition* OR off-label) | "Pancreatic cancer" AND ("metformin" OR "itraconazole" OR "maraviroc" OR "celecoxib" OR "doxycycline" OR "propranolol" OR "simvastatin" OR "pioglitazone" OR "sildenafil") | "Pancreatic cancer" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)
+
+REQUEST COND-C18 — condition_options — breadth
+Which repurposed drugs have been studied for Melanoma, how direct is the human evidence, and which trials were null, harmful or discontinued?
+Drug IDs: D07, D18, D19, D21
+Condition IDs: C18
+Observed demand IDs: DR019, DR008
+Population: Melanoma; retain subtype, disease stage, prior treatment, age and eligibility. Distinct from basal-cell and squamous skin carcinoma; unspecified skin-cancer evidence cannot fill this node.
+Intervention: Discover all relevant repurposed interventions; initial seeds: itraconazole, disulfiram, propranolol, niclosamide
+Comparator: Standard care/placebo/active comparisons and add-on regimens; do not infer head-to-head comparisons from separate studies.
+Outcomes: Clinical primary and secondary outcomes, functioning/quality of life, harms, withdrawals and follow-up. For cancer distinguish overall survival, progression, response, symptom palliation and surrogate/model endpoints.
+Directness pitfalls: Distinct from basal-cell and squamous skin carcinoma; unspecified skin-cancer evidence cannot fill this node. Seed pairs are hypotheses to investigate, not accepted treatment options.
+Searches: ("Melanoma" OR "cutaneous melanoma") AND (repurpos* OR reposition* OR off-label) | "Melanoma" AND ("itraconazole" OR "disulfiram" OR "propranolol" OR "niclosamide") | "Melanoma" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)
+
+REQUEST COND-C19 — condition_options — breadth
+Which repurposed drugs have been studied for Basal-cell carcinoma, how direct is the human evidence, and which trials were null, harmful or discontinued?
+Drug IDs: D07
+Condition IDs: C19
+Observed demand IDs: DR019
+Population: Basal-cell carcinoma; retain subtype, disease stage, prior treatment, age and eligibility. Itraconazole preface lead only; distinguish locally advanced disease and prevention, and keep melanoma separate.
+Intervention: Discover all relevant repurposed interventions; initial seeds: itraconazole
+Comparator: Standard care/placebo/active comparisons and add-on regimens; do not infer head-to-head comparisons from separate studies.
+Outcomes: Clinical primary and secondary outcomes, functioning/quality of life, harms, withdrawals and follow-up. For cancer distinguish overall survival, progression, response, symptom palliation and surrogate/model endpoints.
+Directness pitfalls: Itraconazole preface lead only; distinguish locally advanced disease and prevention, and keep melanoma separate. Seed pairs are hypotheses to investigate, not accepted treatment options.
+Searches: ("Basal-cell carcinoma" OR "BCC") AND (repurpos* OR reposition* OR off-label) | "Basal-cell carcinoma" AND ("itraconazole") | "Basal-cell carcinoma" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)
+
+REQUEST COND-C20 — condition_options — breadth
+Which repurposed drugs have been studied for Hepatocellular carcinoma, how direct is the human evidence, and which trials were null, harmful or discontinued?
+Drug IDs: D08, D15, D23
+Condition IDs: C20
+Observed demand IDs: DR019, DR008
+Population: Hepatocellular carcinoma; retain subtype, disease stage, prior treatment, age and eligibility. Exact hepatocellular pathology required; liver metastases or generic liver cancer do not automatically qualify.
+Intervention: Discover all relevant repurposed interventions; initial seeds: ivermectin, celecoxib, aspirin
+Comparator: Standard care/placebo/active comparisons and add-on regimens; do not infer head-to-head comparisons from separate studies.
+Outcomes: Clinical primary and secondary outcomes, functioning/quality of life, harms, withdrawals and follow-up. For cancer distinguish overall survival, progression, response, symptom palliation and surrogate/model endpoints.
+Directness pitfalls: Exact hepatocellular pathology required; liver metastases or generic liver cancer do not automatically qualify. Seed pairs are hypotheses to investigate, not accepted treatment options.
+Searches: ("Hepatocellular carcinoma" OR "HCC") AND (repurpos* OR reposition* OR off-label) | "Hepatocellular carcinoma" AND ("ivermectin" OR "celecoxib" OR "aspirin") | "Hepatocellular carcinoma" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)
+
+REQUEST COND-C21 — condition_options — breadth
+Which repurposed drugs have been studied for Multiple myeloma, how direct is the human evidence, and which trials were null, harmful or discontinued?
+Drug IDs: D01, D20, D23, D30, D07
+Condition IDs: C21
+Observed demand IDs: DR019, DR008
+Population: Multiple myeloma; retain subtype, disease stage, prior treatment, age and eligibility. Separate from monoclonal gammopathy and lymphoma; line, combination and supportive role remain distinct.
+Intervention: Discover all relevant repurposed interventions; initial seeds: metformin, simvastatin, aspirin, thalidomide, itraconazole
+Comparator: Standard care/placebo/active comparisons and add-on regimens; do not infer head-to-head comparisons from separate studies.
+Outcomes: Clinical primary and secondary outcomes, functioning/quality of life, harms, withdrawals and follow-up. For cancer distinguish overall survival, progression, response, symptom palliation and surrogate/model endpoints.
+Directness pitfalls: Separate from monoclonal gammopathy and lymphoma; line, combination and supportive role remain distinct. Seed pairs are hypotheses to investigate, not accepted treatment options.
+Searches: ("Multiple myeloma" OR "plasma-cell myeloma") AND (repurpos* OR reposition* OR off-label) | "Multiple myeloma" AND ("metformin" OR "simvastatin" OR "aspirin" OR "thalidomide" OR "itraconazole") | "Multiple myeloma" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)
+
+REQUEST COND-C22 — condition_options — breadth
+Which repurposed drugs have been studied for Acute myeloid leukemia, how direct is the human evidence, and which trials were null, harmful or discontinued?
+Drug IDs: D06, D07, D13, D24, D27
+Condition IDs: C22
+Observed demand IDs: DR019, DR008
+Population: Acute myeloid leukemia; retain subtype, disease stage, prior treatment, age and eligibility. Distinct from CML and ALL; no umbrella leukemia node counted in addition. Preserve molecular subtype and induction/maintenance/residual-disease roles.
+Intervention: Discover all relevant repurposed interventions; initial seeds: sirolimus, itraconazole, atorvastatin, pioglitazone, valproic acid
+Comparator: Standard care/placebo/active comparisons and add-on regimens; do not infer head-to-head comparisons from separate studies.
+Outcomes: Clinical primary and secondary outcomes, functioning/quality of life, harms, withdrawals and follow-up. For cancer distinguish overall survival, progression, response, symptom palliation and surrogate/model endpoints.
+Directness pitfalls: Distinct from CML and ALL; no umbrella leukemia node counted in addition. Preserve molecular subtype and induction/maintenance/residual-disease roles. Seed pairs are hypotheses to investigate, not accepted treatment options.
+Searches: ("Acute myeloid leukemia" OR "AML" OR "acute myelogenous leukemia") AND (repurpos* OR reposition* OR off-label) | "Acute myeloid leukemia" AND ("sirolimus" OR "itraconazole" OR "atorvastatin" OR "pioglitazone" OR "valproic acid") | "Acute myeloid leukemia" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)
+
+REQUEST COND-C23 — condition_options — breadth
+Which repurposed drugs have been studied for Chronic myeloid leukemia, how direct is the human evidence, and which trials were null, harmful or discontinued?
+Drug IDs: D06, D24
+Condition IDs: C23
+Observed demand IDs: DR019, DR008
+Population: Chronic myeloid leukemia; retain subtype, disease stage, prior treatment, age and eligibility. Biologically distinct chronic leukemia; residual disease plus TKI therapy is not interchangeable with untreated CML.
+Intervention: Discover all relevant repurposed interventions; initial seeds: sirolimus, pioglitazone
+Comparator: Standard care/placebo/active comparisons and add-on regimens; do not infer head-to-head comparisons from separate studies.
+Outcomes: Clinical primary and secondary outcomes, functioning/quality of life, harms, withdrawals and follow-up. For cancer distinguish overall survival, progression, response, symptom palliation and surrogate/model endpoints.
+Directness pitfalls: Biologically distinct chronic leukemia; residual disease plus TKI therapy is not interchangeable with untreated CML. Seed pairs are hypotheses to investigate, not accepted treatment options.
+Searches: ("Chronic myeloid leukemia" OR "CML") AND (repurpos* OR reposition* OR off-label) | "Chronic myeloid leukemia" AND ("sirolimus" OR "pioglitazone") | "Chronic myeloid leukemia" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)
+
+REQUEST COND-C24 — condition_options — breadth
+Which repurposed drugs have been studied for Parkinson disease, how direct is the human evidence, and which trials were null, harmful or discontinued?
+Drug IDs: D01, D16
+Condition IDs: C24
+Observed demand IDs: No direct observed DRquestion; editorial/source-led expansion
+Population: Parkinson disease; retain subtype, disease stage, prior treatment, age and eligibility. Corpus-led metformin trial and minocycline futility example; no condition-specific Reddit demand in this discovery set.
+Intervention: Discover all relevant repurposed interventions; initial seeds: metformin, minocycline
+Comparator: Standard care/placebo/active comparisons and add-on regimens; do not infer head-to-head comparisons from separate studies.
+Outcomes: Clinical primary and secondary outcomes, functioning/quality of life, harms, withdrawals and follow-up. For cancer distinguish overall survival, progression, response, symptom palliation and surrogate/model endpoints.
+Directness pitfalls: Corpus-led metformin trial and minocycline futility example; no condition-specific Reddit demand in this discovery set. Seed pairs are hypotheses to investigate, not accepted treatment options.
+Searches: ("Parkinson disease" OR "PD") AND (repurpos* OR reposition* OR off-label) | "Parkinson disease" AND ("metformin" OR "minocycline") | "Parkinson disease" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)
+
+REQUEST COND-C25 — condition_options — breadth
+Which repurposed drugs have been studied for Schizophrenia, how direct is the human evidence, and which trials were null, harmful or discontinued?
+Drug IDs: D01, D16
+Condition IDs: C25
+Observed demand IDs: No direct observed DRquestion; editorial/source-led expansion
+Population: Schizophrenia; retain subtype, disease stage, prior treatment, age and eligibility. Clinical metformin cognition and computational candidates remain different evidence types; not generic psychosis or depression.
+Intervention: Discover all relevant repurposed interventions; initial seeds: metformin, minocycline
+Comparator: Standard care/placebo/active comparisons and add-on regimens; do not infer head-to-head comparisons from separate studies.
+Outcomes: Clinical primary and secondary outcomes, functioning/quality of life, harms, withdrawals and follow-up. For cancer distinguish overall survival, progression, response, symptom palliation and surrogate/model endpoints.
+Directness pitfalls: Clinical metformin cognition and computational candidates remain different evidence types; not generic psychosis or depression. Seed pairs are hypotheses to investigate, not accepted treatment options.
+Searches: ("Schizophrenia" OR "schizophrenia-associated cognitive impairment") AND (repurpos* OR reposition* OR off-label) | "Schizophrenia" AND ("metformin" OR "minocycline") | "Schizophrenia" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)
+
+REQUEST COND-C26 — condition_options — breadth
+Which repurposed drugs have been studied for Alzheimer disease, how direct is the human evidence, and which trials were null, harmful or discontinued?
+Drug IDs: D16, D30
+Condition IDs: C26
+Observed demand IDs: No direct observed DRquestion; editorial/source-led expansion
+Population: Alzheimer disease; retain subtype, disease stage, prior treatment, age and eligibility. Minocycline negative clinical summary supports failure-literacy fetch; preclinical tau/amyloid models cannot establish patient benefit.
+Intervention: Discover all relevant repurposed interventions; initial seeds: minocycline, thalidomide
+Comparator: Standard care/placebo/active comparisons and add-on regimens; do not infer head-to-head comparisons from separate studies.
+Outcomes: Clinical primary and secondary outcomes, functioning/quality of life, harms, withdrawals and follow-up. For cancer distinguish overall survival, progression, response, symptom palliation and surrogate/model endpoints.
+Directness pitfalls: Minocycline negative clinical summary supports failure-literacy fetch; preclinical tau/amyloid models cannot establish patient benefit. Seed pairs are hypotheses to investigate, not accepted treatment options.
+Searches: ("Alzheimer disease" OR "AD") AND (repurpos* OR reposition* OR off-label) | "Alzheimer disease" AND ("minocycline" OR "thalidomide") | "Alzheimer disease" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)
+
+REQUEST COND-C27 — condition_options — breadth
+Which repurposed drugs have been studied for Multiple sclerosis, how direct is the human evidence, and which trials were null, harmful or discontinued?
+Drug IDs: D16, D23
+Condition IDs: C27
+Observed demand IDs: DR020
+Population: Multiple sclerosis; retain subtype, disease stage, prior treatment, age and eligibility. Computational aspirin example plus minocycline null adjunctive trial; first demyelinating event, RRMS and progressive MS remain separate strata.
+Intervention: Discover all relevant repurposed interventions; initial seeds: minocycline, aspirin
+Comparator: Standard care/placebo/active comparisons and add-on regimens; do not infer head-to-head comparisons from separate studies.
+Outcomes: Clinical primary and secondary outcomes, functioning/quality of life, harms, withdrawals and follow-up. For cancer distinguish overall survival, progression, response, symptom palliation and surrogate/model endpoints.
+Directness pitfalls: Computational aspirin example plus minocycline null adjunctive trial; first demyelinating event, RRMS and progressive MS remain separate strata. Seed pairs are hypotheses to investigate, not accepted treatment options.
+Searches: ("Multiple sclerosis" OR "MS" OR "RRMS") AND (repurpos* OR reposition* OR off-label) | "Multiple sclerosis" AND ("minocycline" OR "aspirin") | "Multiple sclerosis" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)
+
+REQUEST COND-C28 — condition_options — breadth
+Which repurposed drugs have been studied for Amyotrophic lateral sclerosis, how direct is the human evidence, and which trials were null, harmful or discontinued?
+Drug IDs: D16
+Condition IDs: C28
+Observed demand IDs: No direct observed DRquestion; editorial/source-led expansion
+Population: Amyotrophic lateral sclerosis; retain subtype, disease stage, prior treatment, age and eligibility. Deliberate negative/harm calibration based on minocycline chapter; no direct ALS Reddit signal established.
+Intervention: Discover all relevant repurposed interventions; initial seeds: minocycline
+Comparator: Standard care/placebo/active comparisons and add-on regimens; do not infer head-to-head comparisons from separate studies.
+Outcomes: Clinical primary and secondary outcomes, functioning/quality of life, harms, withdrawals and follow-up. For cancer distinguish overall survival, progression, response, symptom palliation and surrogate/model endpoints.
+Directness pitfalls: Deliberate negative/harm calibration based on minocycline chapter; no direct ALS Reddit signal established. Seed pairs are hypotheses to investigate, not accepted treatment options.
+Searches: ("Amyotrophic lateral sclerosis" OR "ALS") AND (repurpos* OR reposition* OR off-label) | "Amyotrophic lateral sclerosis" AND ("minocycline") | "Amyotrophic lateral sclerosis" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)
+
+REQUEST COND-C29 — condition_options — breadth
+Which repurposed drugs have been studied for Vitiligo, how direct is the human evidence, and which trials were null, harmful or discontinued?
+Drug IDs: D13, D14, D16, D20
+Condition IDs: C29
+Observed demand IDs: No direct observed DRquestion; editorial/source-led expansion
+Population: Vitiligo; retain subtype, disease stage, prior treatment, age and eligibility. Corpus-led adverse/negative statin calibration and rituximab small pilot; segmental status and light co-treatment must be retained.
+Intervention: Discover all relevant repurposed interventions; initial seeds: atorvastatin, rituximab, minocycline, simvastatin
+Comparator: Standard care/placebo/active comparisons and add-on regimens; do not infer head-to-head comparisons from separate studies.
+Outcomes: Clinical primary and secondary outcomes, functioning/quality of life, harms, withdrawals and follow-up. For cancer distinguish overall survival, progression, response, symptom palliation and surrogate/model endpoints.
+Directness pitfalls: Corpus-led adverse/negative statin calibration and rituximab small pilot; segmental status and light co-treatment must be retained. Seed pairs are hypotheses to investigate, not accepted treatment options.
+Searches: ("Vitiligo" OR "non-segmental/segmental vitiligo") AND (repurpos* OR reposition* OR off-label) | "Vitiligo" AND ("atorvastatin" OR "rituximab" OR "minocycline" OR "simvastatin") | "Vitiligo" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)
+
+REQUEST COND-C30 — condition_options — breadth
+Which repurposed drugs have been studied for Sarcopenia, how direct is the human evidence, and which trials were null, harmful or discontinued?
+Drug IDs: D01, D24
+Condition IDs: C30
+Observed demand IDs: DR032, DR033, DR036
+Population: Sarcopenia; retain subtype, disease stage, prior treatment, age and eligibility. Clinical condition connected editorially to healthspan/exercise questions; longevity, ovarian aging and exercise performance are not diagnostic synonyms or separate counted conditions.
+Intervention: Discover all relevant repurposed interventions; initial seeds: metformin, pioglitazone
+Comparator: Standard care/placebo/active comparisons and add-on regimens; do not infer head-to-head comparisons from separate studies.
+Outcomes: Clinical primary and secondary outcomes, functioning/quality of life, harms, withdrawals and follow-up. For cancer distinguish overall survival, progression, response, symptom palliation and surrogate/model endpoints.
+Directness pitfalls: Clinical condition connected editorially to healthspan/exercise questions; longevity, ovarian aging and exercise performance are not diagnostic synonyms or separate counted conditions. Seed pairs are hypotheses to investigate, not accepted treatment options.
+Searches: ("Sarcopenia" OR "age-related loss of muscle strength/mass/function") AND (repurpos* OR reposition* OR off-label) | "Sarcopenia" AND ("metformin" OR "pioglitazone") | "Sarcopenia" AND (trial OR randomized OR registry) AND (repurpos* OR reposition*)
+
+REQUEST DR001 — observed_reddit_question — observed_question
+Does metformin taken during acute COVID reduce the chance of later Long COVID?
+Drug IDs: D01
+Condition IDs: C01
+Observed demand IDs: DR001
+Population: To be specified from eligible studies; no directness assumed from thread
+Intervention: metformin
+Comparator: Relevant standard care/placebo/active comparator; do not assume comparable populations
+Outcomes: Resolve the stated reader question with prespecified clinical endpoints and harms
+Directness pitfalls: Keep prevention, symptom burden, and later diagnosis outcomes separate.
+Searches: metformin AND (COVID-19 OR SARS-CoV-2) AND (("Long COVID" OR "post-COVID condition" OR PASC) OR prevention) | metformin AND (COVID-19 OR SARS-CoV-2) AND (("Long COVID" OR "post-COVID condition" OR PASC) OR prevention) AND (trial OR safety OR null OR adverse OR discontinued)
+Existing Discussion links: https://www.reddit.com/r/covidlonghaulers/comments/1wh72y8/metformin/ | https://www.reddit.com/r/ZeroCovidCommunity/comments/1qrt821/no_that_recent_study_does_not_show_that_metformin/ | https://www.reddit.com/r/ZeroCovidCommunity/comments/1u9j9ji/metformin_for_treating_long_covid/
+
+REQUEST DR002 — observed_reddit_question — observed_question
+Does metformin improve symptoms when Long COVID is already established?
+Drug IDs: D01
+Condition IDs: C01
+Observed demand IDs: DR002
+Population: To be specified from eligible studies; no directness assumed from thread
+Intervention: metformin
+Comparator: Relevant standard care/placebo/active comparator; do not assume comparable populations
+Outcomes: Resolve the stated reader question with prespecified clinical endpoints and harms
+Directness pitfalls: Do not transfer prevention findings to treatment; stratify metabolic comorbidity and outcomes.
+Searches: metformin AND ("Long COVID" OR "post-COVID condition" OR PASC) | metformin AND ("Long COVID" OR "post-COVID condition" OR PASC) AND (trial OR safety OR null OR adverse OR discontinued)
+Existing Discussion links: https://www.reddit.com/r/ZeroCovidCommunity/comments/1u9j9ji/metformin_for_treating_long_covid/ | https://www.reddit.com/r/LongCovid/comments/1nmdapx | https://www.reddit.com/r/covidlonghaulers/comments/1jpgmgb/metformin_was_a_game_changer_for_me/ | https://www.reddit.com/r/covidlonghaulers/comments/1cqjzib | https://www.reddit.com/r/ZeroCovidCommunity/comments/1t3y8hp/metformin/
+
+REQUEST DR003 — observed_reddit_question — observed_question
+Do extended courses of nirmatrelvir/ritonavir improve established Long COVID?
+Drug IDs: D03
+Condition IDs: C01
+Observed demand IDs: DR003
+Population: To be specified from eligible studies; no directness assumed from thread
+Intervention: nirmatrelvir/ritonavir
+Comparator: Relevant standard care/placebo/active comparator; do not assume comparable populations
+Outcomes: Resolve the stated reader question with prespecified clinical endpoints and harms
+Directness pitfalls: Separate acute-infection use from established disease; distinguish 5, 15, 25 and other course lengths.
+Searches: (nirmatrelvir AND ritonavir) AND ("Long COVID" OR "post-COVID condition" OR PASC) | (nirmatrelvir AND ritonavir) AND ("Long COVID" OR "post-COVID condition" OR PASC) AND (trial OR safety OR null OR adverse OR discontinued)
+Existing Discussion links: https://www.reddit.com/r/cfs/comments/1kuub3c | https://www.reddit.com/r/covidlonghaulers/comments/1e78anr | https://www.reddit.com/r/covidlonghaulers/comments/1scpjev/recover_vital_results/ | https://www.reddit.com/r/cfs/comments/1jr4j1q
+
+REQUEST DR004 — observed_reddit_question — observed_question
+Does fluvoxamine reduce fatigue in established Long COVID?
+Drug IDs: D02
+Condition IDs: C01
+Observed demand IDs: DR004
+Population: To be specified from eligible studies; no directness assumed from thread
+Intervention: fluvoxamine
+Comparator: Relevant standard care/placebo/active comparator; do not assume comparable populations
+Outcomes: Resolve the stated reader question with prespecified clinical endpoints and harms
+Directness pitfalls: Separate fatigue scores, PEM, cognition and quality of life; avoid class-wide SSRI extrapolation.
+Searches: fluvoxamine AND ("Long COVID" OR "post-COVID condition" OR PASC) AND (fatigue OR symptom*) | fluvoxamine AND ("Long COVID" OR "post-COVID condition" OR PASC) AND (fatigue OR symptom*) AND (trial OR safety OR null OR adverse OR discontinued)
+Existing Discussion links: https://www.reddit.com/r/covidlonghaulers/comments/1sc8knd/has_anyone_tried_fluvoxamine_for_long_covid/ | https://www.reddit.com/r/fluvoxamine/comments/1wajifi/i_was_told_fluvoxamine_was_supposedly_good_for/ | https://www.reddit.com/r/cfs/comments/1uefc93/fluvoxamine_luvox/ | https://www.reddit.com/r/cfs/comments/1sa0rux/study_finds_fluvoxamine_beats_out_metformin_and/
+
+REQUEST DR005 — observed_reddit_question — observed_question
+What did fluvoxamine trials in acute COVID actually test, and how do their results differ?
+Drug IDs: D02, D22
+Condition IDs: C02
+Observed demand IDs: DR005
+Population: To be specified from eligible studies; no directness assumed from thread
+Intervention: fluvoxamine
+Comparator: Relevant standard care/placebo/active comparator; do not assume comparable populations
+Outcomes: Resolve the stated reader question with prespecified clinical endpoints and harms
+Directness pitfalls: Historical discussion seed; acute COVID outcomes do not answer established Long COVID.
+Searches: fluvoxamine AND (COVID-19 OR SARS-CoV-2) AND (outpatient OR hospitalization OR deterioration) | fluvoxamine AND (COVID-19 OR SARS-CoV-2) AND (outpatient OR hospitalization OR deterioration) AND (trial OR safety OR null OR adverse OR discontinued)
+Existing Discussion links: https://www.reddit.com/r/Coronavirus/comments/urtv1i | https://www.reddit.com/r/COVID19/comments/zrfr3m
+
+REQUEST DR006 — observed_reddit_question — observed_question
+What evidence supports ivermectin plus mebendazole compared with ovarian or fallopian cancer maintenance therapy?
+Drug IDs: D07, D08, D09
+Condition IDs: C03
+Observed demand IDs: DR006
+Population: To be specified from eligible studies; no directness assumed from thread
+Intervention: ivermectin + mebendazole
+Comparator: Relevant standard care/placebo/active comparator; do not assume comparable populations
+Outcomes: Resolve the stated reader question with prespecified clinical endpoints and harms
+Directness pitfalls: Exact combination and indication; component, cell, or unrelated cancer evidence is indirect.
+Searches: (ivermectin OR mebendazole OR (ivermectin AND mebendazole)) AND (ovarian OR "fallopian tube") AND (cancer OR carcinoma OR maintenance) | (ivermectin OR mebendazole OR (ivermectin AND mebendazole)) AND (ovarian OR "fallopian tube") AND (cancer OR carcinoma OR maintenance) AND (trial OR safety OR null OR adverse OR discontinued)
+Existing Discussion links: https://www.reddit.com/r/ovariancancer_new/comments/1gaik1w/parp_inhibitor_v_repurposed_drug/
+
+REQUEST DR007 — observed_reddit_question — observed_question
+What is known about adding repurposed drugs to standard glioblastoma treatment?
+Drug IDs: D07, D25, D26
+Condition IDs: C04
+Observed demand IDs: DR007
+Population: To be specified from eligible studies; no directness assumed from thread
+Intervention: candidate-specific drugs pending acquisition
+Comparator: Relevant standard care/placebo/active comparator; do not assume comparable populations
+Outcomes: Resolve the stated reader question with prespecified clinical endpoints and harms
+Directness pitfalls: Record standard care and co-interventions; discover candidates from sources, not memory.
+Searches: (glioblastoma OR "glioblastoma multiforme") AND (repurpos* OR reposition* OR "off-label") AND (adjunct* OR trial OR treatment) | (glioblastoma OR "glioblastoma multiforme") AND (repurpos* OR reposition* OR "off-label") AND (adjunct* OR trial OR treatment) AND (trial OR safety OR null OR adverse OR discontinued)
+Existing Discussion links: https://www.reddit.com/r/glioblastoma/comments/1i2ppeu/looking_for_advice_insights_on_incorporating/
+
+REQUEST DR008 — observed_reddit_question — observed_question
+What evidence matters when considering repurposed drugs during palliative cancer care?
+Drug IDs: D07, D08, D09, D30
+Condition IDs: C12, C13, C14, C15, C16, C17, C18, C20, C21, C22, C23
+Observed demand IDs: DR008
+Population: To be specified from eligible studies; no directness assumed from thread
+Intervention: ivermectin; mebendazole as observed leads
+Comparator: Relevant standard care/placebo/active comparator; do not assume comparable populations
+Outcomes: Resolve the stated reader question with prespecified clinical endpoints and harms
+Directness pitfalls: Separate comfort, survival and quality-of-life endpoints; cancer types cannot be pooled casually.
+Searches: (ivermectin OR mebendazole OR repurpos*) AND ("advanced cancer" OR "metastatic cancer" OR palliative OR "quality of life") | (ivermectin OR mebendazole OR repurpos*) AND ("advanced cancer" OR "metastatic cancer" OR palliative OR "quality of life") AND (trial OR safety OR null OR adverse OR discontinued)
+Existing Discussion links: https://www.reddit.com/r/Cancersurvivors/comments/1qf8ik7/advanced_cancer_palliative_stage_looking_for_real/
+
+REQUEST DR009 — observed_reddit_question — observed_question
+What evidence and access rules apply to pemivibart proposed for Long COVID treatment?
+Drug IDs: Scope includes candidates outside the30 drug seed list
+Condition IDs: C01
+Observed demand IDs: DR009
+Population: To be specified from eligible studies; no directness assumed from thread
+Intervention: pemivibart
+Comparator: Relevant standard care/placebo/active comparator; do not assume comparable populations
+Outcomes: Resolve the stated reader question with prespecified clinical endpoints and harms
+Directness pitfalls: Prevention authorization is a distinct regulatory question; jurisdiction/date-specific official verification required.
+Searches: pemivibart AND ("Long COVID" OR "post-COVID condition" OR PASC) | pemivibart AND ("Long COVID" OR "post-COVID condition" OR PASC) AND (trial OR safety OR null OR adverse OR discontinued)
+Existing Discussion links: https://www.reddit.com/r/LongCovid/comments/1qenh02/how_do_people_get_a_pemgarda_prescription/
+
+REQUEST DR010 — observed_reddit_question — observed_question
+What evidence supports guanfacine for Long COVID brain fog, and how is prescribing considered?
+Drug IDs: D11
+Condition IDs: C01
+Observed demand IDs: DR010
+Population: To be specified from eligible studies; no directness assumed from thread
+Intervention: guanfacine
+Comparator: Relevant standard care/placebo/active comparator; do not assume comparable populations
+Outcomes: Resolve the stated reader question with prespecified clinical endpoints and harms
+Directness pitfalls: Do not transfer ADHD outcomes; distinguish combination and monotherapy evidence.
+Searches: guanfacine AND ("Long COVID" OR "post-COVID condition" OR PASC) AND (cognition OR "brain fog" OR cognitive) | guanfacine AND ("Long COVID" OR "post-COVID condition" OR PASC) AND (cognition OR "brain fog" OR cognitive) AND (trial OR safety OR null OR adverse OR discontinued)
+Existing Discussion links: https://www.reddit.com/r/covidlonghaulers/comments/1s8uaex/looking_for_specialist_in_the_netherlands_to/
+
+REQUEST DR011 — observed_reddit_question — observed_question
+How can a reader compare repurposed medication options for different Long COVID symptoms?
+Drug IDs: Scope includes candidates outside the30 drug seed list
+Condition IDs: C01
+Observed demand IDs: DR011
+Population: To be specified from eligible studies; no directness assumed from thread
+Intervention: multiple candidates to be individually specified
+Comparator: Relevant standard care/placebo/active comparator; do not assume comparable populations
+Outcomes: Resolve the stated reader question with prespecified clinical endpoints and harms
+Directness pitfalls: Do not present one protocol for heterogeneous symptoms or collapse ME/CFS and Long COVID.
+Searches: ("Long COVID" OR "post-COVID condition" OR PASC) AND (repurpos* OR reposition* OR "off-label") AND (fatigue OR cognition OR dysautonomia OR symptom*) | ("Long COVID" OR "post-COVID condition" OR PASC) AND (repurpos* OR reposition* OR "off-label") AND (fatigue OR cognition OR dysautonomia OR symptom*) AND (trial OR safety OR null OR adverse OR discontinued)
+Existing Discussion links: https://www.reddit.com/r/covidlonghaulers/comments/1rltd5g/musttry_offlabel_prescription_treatments/ | https://www.reddit.com/r/LongCovid/comments/1ft2tvo | https://www.reddit.com/r/covidlonghaulers/comments/1uf5a0r/brainfog_and_off_label_use_of_adhd_meds/
+
+REQUEST DR012 — observed_reddit_question — observed_question
+What can prevent access to off-label prescribing or insurance coverage?
+Drug IDs: D12, D13, D14
+Condition IDs: Companion goal/access scope; not counted among30 conditions
+Observed demand IDs: DR012
+Population: To be specified from eligible studies; no directness assumed from thread
+Intervention: maraviroc; atorvastatin; rituximab; low-dose naltrexone; pemivibart
+Comparator: Relevant standard care/placebo/active comparator; do not assume comparable populations
+Outcomes: Resolve the stated reader question with prespecified clinical endpoints and harms
+Directness pitfalls: Use dated local official sources; avoid provider-shopping instructions or treating forum legal claims as fact.
+Searches: (maraviroc OR atorvastatin OR rituximab OR naltrexone OR pemivibart) AND ("off-label" OR prescribing OR reimbursement OR insurance OR access) | (maraviroc OR atorvastatin OR rituximab OR naltrexone OR pemivibart) AND ("off-label" OR prescribing OR reimbursement OR insurance OR access) AND (trial OR safety OR null OR adverse OR discontinued)
+Existing Discussion links: https://www.reddit.com/r/covidlonghaulers/comments/1jufvro/how_did_you_get_prescriptions_for_maraviroc/ | https://www.reddit.com/r/cfs/comments/1uwabcq/has_anyone_been_prescribed_offlabel_meds_by_their/ | https://www.reddit.com/r/LongCovid/comments/1qenh02/how_do_people_get_a_pemgarda_prescription/
+
+REQUEST DR013 — observed_reddit_question — observed_question
+What side effects and monitoring questions matter for metformin in Long COVID research?
+Drug IDs: D01
+Condition IDs: C01
+Observed demand IDs: DR013
+Population: To be specified from eligible studies; no directness assumed from thread
+Intervention: metformin
+Comparator: Relevant standard care/placebo/active comparator; do not assume comparable populations
+Outcomes: Resolve the stated reader question with prespecified clinical endpoints and harms
+Directness pitfalls: Separate reported personal events from causality; check glucose-related and gastrointestinal outcomes.
+Searches: metformin AND ("Long COVID" OR "post-COVID condition" OR PASC) AND (safety OR tolerability OR adverse OR monitoring) | metformin AND ("Long COVID" OR "post-COVID condition" OR PASC) AND (safety OR tolerability OR adverse OR monitoring) AND (trial OR safety OR null OR adverse OR discontinued)
+Existing Discussion links: https://www.reddit.com/r/LongCovid/comments/1ruff33/metformin_side_effects_help/ | https://www.reddit.com/r/covidlonghaulers/comments/1meaz1b/has_metformin_almost_unalived_anyone_with_lc/ | https://www.reddit.com/r/ZeroCovidCommunity/comments/1u9j9ji/metformin_for_treating_long_covid/
+
+REQUEST DR014 — observed_reddit_question — observed_question
+Do immediate-release and extended-release metformin findings apply to the same use?
+Drug IDs: D01
+Condition IDs: C01
+Observed demand IDs: DR014
+Population: To be specified from eligible studies; no directness assumed from thread
+Intervention: metformin
+Comparator: Relevant standard care/placebo/active comparator; do not assume comparable populations
+Outcomes: Resolve the stated reader question with prespecified clinical endpoints and harms
+Directness pitfalls: Keep studied formulation/route explicit; do not infer equivalence from molecule name alone.
+Searches: metformin AND ("immediate release" OR "extended release" OR formulation OR bioavailability) AND (("Long COVID" OR "post-COVID condition" OR PASC) OR pharmacokinetics) | metformin AND ("immediate release" OR "extended release" OR formulation OR bioavailability) AND (("Long COVID" OR "post-COVID condition" OR PASC) OR pharmacokinetics) AND (trial OR safety OR null OR adverse OR discontinued)
+Existing Discussion links: https://www.reddit.com/r/LongCovid/comments/1nmdapx
+
+REQUEST DR015 — observed_reddit_question — observed_question
+What is known about symptom changes after stopping metformin used by people with Long COVID?
+Drug IDs: D01
+Condition IDs: C01
+Observed demand IDs: DR015
+Population: To be specified from eligible studies; no directness assumed from thread
+Intervention: metformin
+Comparator: Relevant standard care/placebo/active comparator; do not assume comparable populations
+Outcomes: Resolve the stated reader question with prespecified clinical endpoints and harms
+Directness pitfalls: Two near-identical crossposts count as one independent question cluster.
+Searches: metformin AND ("Long COVID" OR "post-COVID condition" OR PASC) AND (discontinuation OR withdrawal OR recurrence OR durability) | metformin AND ("Long COVID" OR "post-COVID condition" OR PASC) AND (discontinuation OR withdrawal OR recurrence OR durability) AND (trial OR safety OR null OR adverse OR discontinued)
+Existing Discussion links: https://www.reddit.com/r/LongCovid/comments/1mbybr9 | https://www.reddit.com/r/covidlonghaulers/comments/1mb73az
+
+REQUEST DR016 — observed_reddit_question — observed_question
+How do fluvoxamine interactions and tolerability compare with other SSRIs in Long COVID research?
+Drug IDs: D02
+Condition IDs: C01
+Observed demand IDs: DR016
+Population: To be specified from eligible studies; no directness assumed from thread
+Intervention: fluvoxamine; other SSRIs
+Comparator: Relevant standard care/placebo/active comparator; do not assume comparable populations
+Outcomes: Resolve the stated reader question with prespecified clinical endpoints and harms
+Directness pitfalls: Exact co-medication safety needs authoritative labels; no class-wide efficacy claim.
+Searches: fluvoxamine AND ("selective serotonin reuptake inhibitor" OR SSRI OR interaction OR tolerability) AND (("Long COVID" OR "post-COVID condition" OR PASC) OR safety) | fluvoxamine AND ("selective serotonin reuptake inhibitor" OR SSRI OR interaction OR tolerability) AND (("Long COVID" OR "post-COVID condition" OR PASC) OR safety) AND (trial OR safety OR null OR adverse OR discontinued)
+Existing Discussion links: https://www.reddit.com/r/covidlonghaulers/comments/1dii4v6/fluvoxamine_sigma_1_agonism/ | https://www.reddit.com/r/covidlonghaulers/comments/1rq5pgt/if_not_prozac_fluoxetine_which_ssri_for_lc/ | https://www.reddit.com/r/fluvoxamine/comments/1wajifi/i_was_told_fluvoxamine_was_supposedly_good_for/
+
+REQUEST DR017 — observed_reddit_question — observed_question
+Do fluvoxamine findings for fatigue also address brain fog or dysautonomia?
+Drug IDs: D02
+Condition IDs: C01
+Observed demand IDs: DR017
+Population: To be specified from eligible studies; no directness assumed from thread
+Intervention: fluvoxamine
+Comparator: Relevant standard care/placebo/active comparator; do not assume comparable populations
+Outcomes: Resolve the stated reader question with prespecified clinical endpoints and harms
+Directness pitfalls: Outcome-specific synthesis; a fatigue result cannot establish cognitive or autonomic benefit.
+Searches: fluvoxamine AND ("Long COVID" OR "post-COVID condition" OR PASC) AND (cognition OR dysautonomia OR autonomic OR fatigue) | fluvoxamine AND ("Long COVID" OR "post-COVID condition" OR PASC) AND (cognition OR dysautonomia OR autonomic OR fatigue) AND (trial OR safety OR null OR adverse OR discontinued)
+Existing Discussion links: https://www.reddit.com/r/covidlonghaulers/comments/1jmm021 | https://www.reddit.com/r/covidlonghaulers/comments/1sc8knd/has_anyone_tried_fluvoxamine_for_long_covid/ | https://www.reddit.com/r/covidlonghaulers/comments/1s8s3fs/antidepressant_fluvoxamine_reduces_long_covid/
+
+REQUEST DR018 — observed_reddit_question — observed_question
+Is there direct evidence for antiviral combinations proposed for Long COVID?
+Drug IDs: D03, D15
+Condition IDs: C01
+Observed demand IDs: DR018
+Population: To be specified from eligible studies; no directness assumed from thread
+Intervention: nirmatrelvir/ritonavir + pemivibart; valacyclovir + celecoxib with or without nirmatrelvir/ritonavir
+Comparator: Relevant standard care/placebo/active comparator; do not assume comparable populations
+Outcomes: Resolve the stated reader question with prespecified clinical endpoints and harms
+Directness pitfalls: Keep exact combinations separate; promotional recruitment thread excluded from organic score.
+Searches: ("Long COVID" OR "post-COVID condition" OR PASC) AND ((nirmatrelvir AND ritonavir AND pemivibart) OR (valacyclovir AND celecoxib) OR (valacyclovir AND celecoxib AND nirmatrelvir AND ritonavir)) | ("Long COVID" OR "post-COVID condition" OR PASC) AND ((nirmatrelvir AND ritonavir AND pemivibart) OR (valacyclovir AND celecoxib) OR (valacyclovir AND celecoxib AND nirmatrelvir AND ritonavir)) AND (trial OR safety OR null OR adverse OR discontinued)
+Existing Discussion links: https://www.reddit.com/r/LongCovid/comments/1nsboou | https://www.reddit.com/r/LongCovidTrials/comments/1i0goxn
+
+REQUEST DR019 — observed_reddit_question — observed_question
+How can readers distinguish a cancer repurposing headline from evidence in human patients?
+Drug IDs: D07, D16, D17, D18, D19, D20, D21, D22, D23, D24, D26, D27, D30
+Condition IDs: C12, C13, C14, C15, C16, C17, C18, C19, C20, C21, C22, C23
+Observed demand IDs: DR019
+Population: To be specified from eligible studies; no directness assumed from thread
+Intervention: candidate-specific cancer agents
+Comparator: Relevant standard care/placebo/active comparator; do not assume comparable populations
+Outcomes: Resolve the stated reader question with prespecified clinical endpoints and harms
+Directness pitfalls: Commercial/self-promotion uncertainty and model/population directness must remain visible.
+Searches: (cancer OR neoplasm* OR carcinoma) AND (repurpos* OR reposition*) AND (preclinical OR clinical OR translation OR exposure) | (cancer OR neoplasm* OR carcinoma) AND (repurpos* OR reposition*) AND (preclinical OR clinical OR translation OR exposure) AND (trial OR safety OR null OR adverse OR discontinued)
+Existing Discussion links: https://www.reddit.com/r/biotech/comments/1iwa1h0 | https://www.reddit.com/r/ovariancancer_new/comments/1gaik1w/parp_inhibitor_v_repurposed_drug/
+
+REQUEST DR020 — observed_reddit_question — observed_question
+What can computational repurposing predictions tell us before clinical testing?
+Drug IDs: D16, D18, D23, D25, D28, D29
+Condition IDs: C11, C27
+Observed demand IDs: DR020
+Population: To be specified from eligible studies; no directness assumed from thread
+Intervention: model-generated candidate drugs
+Comparator: Relevant standard care/placebo/active comparator; do not assume comparable populations
+Outcomes: Resolve the stated reader question with prespecified clinical endpoints and harms
+Directness pitfalls: Two matching CMap questions form one crosspost cluster; prediction rank is not efficacy.
+Searches: ("drug repurposing" OR "drug repositioning") AND (computational OR docking OR prediction OR "network pharmacology") AND (validation OR replication OR clinical) | ("drug repurposing" OR "drug repositioning") AND (computational OR docking OR prediction OR "network pharmacology") AND (validation OR replication OR clinical) AND (trial OR safety OR null OR adverse OR discontinued)
+Existing Discussion links: https://www.reddit.com/r/Gastroenterology/comments/1s4oyqm/cmaplincs_drug_repurposing_for_gerdbarrettseac/ | https://www.reddit.com/r/bioinformatics/comments/1s4n1t1/cmaplincs_drug_repurposing_for_gerdbarrettseac/ | https://www.reddit.com/r/bioinformatics/comments/18l1ptq
+
+REQUEST DR021 — observed_reddit_question — observed_question
+What makes a disease or patient group suitable for a drug-repurposing study?
+Drug IDs: Scope includes candidates outside the30 drug seed list
+Condition IDs: Companion goal/access scope; not counted among30 conditions
+Observed demand IDs: DR021
+Population: To be specified from eligible studies; no directness assumed from thread
+Intervention: not yet specified
+Comparator: Relevant standard care/placebo/active comparator; do not assume comparable populations
+Outcomes: Resolve the stated reader question with prespecified clinical endpoints and harms
+Directness pitfalls: AMA is promotional context with organic questions; not scored as organic demand in primary ranking.
+Searches: ("drug repurposing" OR "drug repositioning") AND ("rare disease" OR "disease selection" OR population OR applicability) | ("drug repurposing" OR "drug repositioning") AND ("rare disease" OR "disease selection" OR population OR applicability) AND (trial OR safety OR null OR adverse OR discontinued)
+Existing Discussion links: https://www.reddit.com/r/IAmA/comments/1nto6nb/im_dr_david_fajgenbaum_physicianscientist_rare/
+
+REQUEST DR022 — observed_reddit_question — observed_question
+How can families evaluate and discuss cancer cure claims about repurposed drugs?
+Drug IDs: D07, D08, D10
+Condition IDs: Companion goal/access scope; not counted among30 conditions
+Observed demand IDs: DR022
+Population: To be specified from eligible studies; no directness assumed from thread
+Intervention: ivermectin; fenbendazole as observed claims
+Comparator: Relevant standard care/placebo/active comparator; do not assume comparable populations
+Outcomes: Resolve the stated reader question with prespecified clinical endpoints and harms
+Directness pitfalls: Communication and evidence appraisal, not individualized treatment advice.
+Searches: (ivermectin OR fenbendazole) AND (cancer OR neoplasm* OR carcinoma) AND (trial OR case OR toxicity OR preclinical) | (ivermectin OR fenbendazole) AND (cancer OR neoplasm* OR carcinoma) AND (trial OR case OR toxicity OR preclinical) AND (trial OR safety OR null OR adverse OR discontinued)
+Existing Discussion links: https://www.reddit.com/r/skeptic/comments/1tdui95/dealing_with_ivermectin_believers/ | https://www.reddit.com/r/cancer/comments/1po5qp0/my_moms_taking_ivermectin_for_cancer/
+
+REQUEST DR023 — observed_reddit_question — observed_question
+How do low-dose naltrexone formulations, pharmacy preparations and costs differ?
+Drug IDs: D04
+Condition IDs: Companion goal/access scope; not counted among30 conditions
+Observed demand IDs: DR023
+Population: To be specified from eligible studies; no directness assumed from thread
+Intervention: low-dose naltrexone
+Comparator: Relevant standard care/placebo/active comparator; do not assume comparable populations
+Outcomes: Resolve the stated reader question with prespecified clinical endpoints and harms
+Directness pitfalls: Do not provide dilution recipes; verify product/formulation and jurisdiction-specific access.
+Searches: naltrexone AND ("low dose" OR compounded OR compounding OR formulation OR cost OR bioavailability) | naltrexone AND ("low dose" OR compounded OR compounding OR formulation OR cost OR bioavailability) AND (trial OR safety OR null OR adverse OR discontinued)
+Existing Discussion links: https://www.reddit.com/r/LowDoseNaltrexone/comments/1iy7hry | https://www.reddit.com/r/PGADsupport/comments/1u9ycap/naltrexone/
+
+REQUEST DR024 — observed_reddit_question — observed_question
+How should the actual reason for low-dose naltrexone use be recorded and understood?
+Drug IDs: D04
+Condition IDs: Companion goal/access scope; not counted among30 conditions
+Observed demand IDs: DR024
+Population: To be specified from eligible studies; no directness assumed from thread
+Intervention: low-dose naltrexone
+Comparator: Relevant standard care/placebo/active comparator; do not assume comparable populations
+Outcomes: Resolve the stated reader question with prespecified clinical endpoints and harms
+Directness pitfalls: Coding/legal statements require official local sources; no inference of a person's diagnosis.
+Searches: naltrexone AND ("off-label" OR indication OR documentation OR prescribing OR "care coordination") | naltrexone AND ("off-label" OR indication OR documentation OR prescribing OR "care coordination") AND (trial OR safety OR null OR adverse OR discontinued)
+Existing Discussion links: https://www.reddit.com/r/LowDoseNaltrexone/comments/1uglyx2/how_did_you_handle_your_diagnosticprocedure_codes/ | https://www.reddit.com/r/LowDoseNaltrexone/comments/1uco32g/has_anyone_been_rejected_from_other_doctors/ | https://www.reddit.com/r/LowDoseNaltrexone/comments/1kh0ci0 | https://www.reddit.com/r/LowDoseNaltrexone/comments/1ucqyo3/advice_regarding_how_to_record_ldn_in_medical/
+
+REQUEST DR025 — observed_reddit_question — observed_question
+What do controlled studies and nonresponse tell us about low-dose naltrexone for chronic symptoms?
+Drug IDs: D04
+Condition IDs: C01, C05, C06
+Observed demand IDs: DR025
+Population: To be specified from eligible studies; no directness assumed from thread
+Intervention: low-dose naltrexone
+Comparator: Relevant standard care/placebo/active comparator; do not assume comparable populations
+Outcomes: Resolve the stated reader question with prespecified clinical endpoints and harms
+Directness pitfalls: Split exact indications during acquisition; do not combine heterogeneous conditions into one effect.
+Searches: naltrexone AND (fibromyalgia OR "chronic pain" OR "Long COVID" OR "myalgic encephalomyelitis" OR "chronic fatigue syndrome") AND (trial OR placebo OR controlled OR nonresponse) | naltrexone AND (fibromyalgia OR "chronic pain" OR "Long COVID" OR "myalgic encephalomyelitis" OR "chronic fatigue syndrome") AND (trial OR placebo OR controlled OR nonresponse) AND (trial OR safety OR null OR adverse OR discontinued)
+Existing Discussion links: https://www.reddit.com/r/LowDoseNaltrexone/comments/1wh3asc/i_read_through_the_published_ldn_trials_what_they/
+
+REQUEST DR026 — observed_reddit_question — observed_question
+What evidence supports naltrexone for compulsive sexual behavior?
+Drug IDs: D04
+Condition IDs: C07
+Observed demand IDs: DR026
+Population: To be specified from eligible studies; no directness assumed from thread
+Intervention: naltrexone
+Comparator: Relevant standard care/placebo/active comparator; do not assume comparable populations
+Outcomes: Resolve the stated reader question with prespecified clinical endpoints and harms
+Directness pitfalls: Small reports versus controlled evidence; avoid conflating with licensed substance-use indications.
+Searches: naltrexone AND ("compulsive sexual behavior" OR "compulsive sexual behaviour" OR hypersexuality) | naltrexone AND ("compulsive sexual behavior" OR "compulsive sexual behaviour" OR hypersexuality) AND (trial OR safety OR null OR adverse OR discontinued)
+Existing Discussion links: https://www.reddit.com/r/AskPsychiatry/comments/1suf1pe/anyone_prescribing_naltrexone_offlabel/
+
+REQUEST DR027 — observed_reddit_question — observed_question
+What evidence supports naltrexone for persistent genital arousal or associated pain?
+Drug IDs: D04
+Condition IDs: C08
+Observed demand IDs: DR027
+Population: To be specified from eligible studies; no directness assumed from thread
+Intervention: naltrexone
+Comparator: Relevant standard care/placebo/active comparator; do not assume comparable populations
+Outcomes: Resolve the stated reader question with prespecified clinical endpoints and harms
+Directness pitfalls: Do not infer this indication from fibromyalgia or other pain conditions.
+Searches: naltrexone AND ("persistent genital arousal disorder" OR "genitopelvic dysesthesia" OR PGAD) | naltrexone AND ("persistent genital arousal disorder" OR "genitopelvic dysesthesia" OR PGAD) AND (trial OR safety OR null OR adverse OR discontinued)
+Existing Discussion links: https://www.reddit.com/r/PGADsupport/comments/1u9ycap/naltrexone/
+
+REQUEST DR028 — observed_reddit_question — observed_question
+Does pramipexole improve depression or anhedonia after other treatments have failed?
+Drug IDs: D05
+Condition IDs: C09
+Observed demand IDs: DR028
+Population: To be specified from eligible studies; no directness assumed from thread
+Intervention: pramipexole
+Comparator: Relevant standard care/placebo/active comparator; do not assume comparable populations
+Outcomes: Resolve the stated reader question with prespecified clinical endpoints and harms
+Directness pitfalls: Separate augmentation/monotherapy, unipolar/bipolar groups and symptom scales.
+Searches: pramipexole AND ("treatment resistant depression" OR "treatment-resistant depression" OR anhedonia) | pramipexole AND ("treatment resistant depression" OR "treatment-resistant depression" OR anhedonia) AND (trial OR safety OR null OR adverse OR discontinued)
+Existing Discussion links: https://www.reddit.com/r/depression/comments/1qrzy1l/pramipexole_for_depression_anhedonia/ | https://www.reddit.com/r/depression/comments/1tu2306/looking_for_pramipexole_experiences_good_bad_or/ | https://www.reddit.com/r/depressionregimens/comments/1ugmdc5/pramipexole_experiences_last_resort_and/ | https://www.reddit.com/r/anhedonia/comments/1u639t7/pramipexole/
+
+REQUEST DR029 — observed_reddit_question — observed_question
+What adverse effects, response timing and withdrawal uncertainties matter for pramipexole?
+Drug IDs: D05
+Condition IDs: C09
+Observed demand IDs: DR029
+Population: To be specified from eligible studies; no directness assumed from thread
+Intervention: pramipexole
+Comparator: Relevant standard care/placebo/active comparator; do not assume comparable populations
+Outcomes: Resolve the stated reader question with prespecified clinical endpoints and harms
+Directness pitfalls: Do not estimate incidence from anecdotes; distinguish withdrawal, nonresponse and other indications.
+Searches: pramipexole AND (depression OR anhedonia) AND (adverse OR tolerability OR withdrawal OR discontinuation OR timing) | pramipexole AND (depression OR anhedonia) AND (adverse OR tolerability OR withdrawal OR discontinuation OR timing) AND (trial OR safety OR null OR adverse OR discontinued)
+Existing Discussion links: https://www.reddit.com/r/depressionregimens/comments/1jxz7ib | https://www.reddit.com/r/anhedonia/comments/1w6mdgc/pramipexole_trial_not_going_well/ | https://www.reddit.com/r/anhedonia/comments/1c2i94a | https://www.reddit.com/r/RestlessLegs/comments/1wac3t2/pramipexole_for_the_win/
+
+REQUEST DR030 — observed_reddit_question — observed_question
+How is access to pramipexole for depression considered in clinical care?
+Drug IDs: D05
+Condition IDs: C09
+Observed demand IDs: DR030
+Population: To be specified from eligible studies; no directness assumed from thread
+Intervention: pramipexole
+Comparator: Relevant standard care/placebo/active comparator; do not assume comparable populations
+Outcomes: Resolve the stated reader question with prespecified clinical endpoints and harms
+Directness pitfalls: Do not repeat suggestions to misrepresent diagnoses; verify jurisdiction and specialty context.
+Searches: pramipexole AND depression AND ("off-label" OR prescribing OR access OR insurance) | pramipexole AND depression AND ("off-label" OR prescribing OR access OR insurance) AND (trial OR safety OR null OR adverse OR discontinued)
+Existing Discussion links: https://www.reddit.com/r/anhedonia/comments/1j8bq8v | https://www.reddit.com/r/AskPsychiatry/comments/1u7u096/any_psychiatrist_in_miami_that_could_prescribe/
+
+REQUEST DR031 — observed_reddit_question — observed_question
+What evidence could compare pramipexole with tranylcypromine for anhedonia?
+Drug IDs: D05
+Condition IDs: C09
+Observed demand IDs: DR031
+Population: To be specified from eligible studies; no directness assumed from thread
+Intervention: pramipexole vs tranylcypromine
+Comparator: Relevant standard care/placebo/active comparator; do not assume comparable populations
+Outcomes: Resolve the stated reader question with prespecified clinical endpoints and harms
+Directness pitfalls: Head-to-head evidence may be absent; indirect comparisons require explicit limitations.
+Searches: (pramipexole OR tranylcypromine) AND (anhedonia OR depression) AND (comparison OR trial OR response) | (pramipexole OR tranylcypromine) AND (anhedonia OR depression) AND (comparison OR trial OR response) AND (trial OR safety OR null OR adverse OR discontinued)
+Existing Discussion links: https://www.reddit.com/r/anhedonia/comments/1scffy3/should_i_ask_for_pramipexole_or_parnate/
+
+REQUEST DR032 — observed_reddit_question — observed_question
+What human evidence and safety uncertainties matter for rapamycin used for longevity?
+Drug IDs: D06, D24
+Condition IDs: C30
+Observed demand IDs: DR032
+Population: To be specified from eligible studies; no directness assumed from thread
+Intervention: sirolimus/rapamycin
+Comparator: Relevant standard care/placebo/active comparator; do not assume comparable populations
+Outcomes: Resolve the stated reader question with prespecified clinical endpoints and harms
+Directness pitfalls: Animal lifespan, biomarkers and human clinical outcomes are distinct; self-experiment reports not safety rates.
+Searches: (sirolimus OR rapamycin) AND (longevity OR healthspan OR aging OR ageing) AND (human OR clinical OR trial) | (sirolimus OR rapamycin) AND (longevity OR healthspan OR aging OR ageing) AND (human OR clinical OR trial) AND (trial OR safety OR null OR adverse OR discontinued)
+Existing Discussion links: https://www.reddit.com/r/Rapamycin/comments/1mdifrx | https://www.reddit.com/r/PeterAttia/comments/1au6wmt/rapamycin_a_physicians_critical_perspective/ | https://www.reddit.com/r/LongevityEssentials/comments/1grrwwd
+
+REQUEST DR033 — observed_reddit_question — observed_question
+How should rapamycin ovarian-preservation claims be weighed against exercise-related concerns?
+Drug IDs: D06, D24
+Condition IDs: C30
+Observed demand IDs: DR033
+Population: To be specified from eligible studies; no directness assumed from thread
+Intervention: sirolimus/rapamycin
+Comparator: Relevant standard care/placebo/active comparator; do not assume comparable populations
+Outcomes: Resolve the stated reader question with prespecified clinical endpoints and harms
+Directness pitfalls: Separate ovarian reserve biomarkers, menopause timing and measured exercise adaptations.
+Searches: (sirolimus OR rapamycin) AND ("ovarian aging" OR "ovarian ageing" OR "ovarian reserve" OR "exercise performance") | (sirolimus OR rapamycin) AND ("ovarian aging" OR "ovarian ageing" OR "ovarian reserve" OR "exercise performance") AND (trial OR safety OR null OR adverse OR discontinued)
+Existing Discussion links: https://www.reddit.com/r/immortalists/comments/1tp5jld/is_rapamycin_for_ovarian_preservation_worth_the/
+
+REQUEST DR034 — observed_reddit_question — observed_question
+What is known about rapamycin interactions with bupropion and other medications?
+Drug IDs: D06
+Condition IDs: Companion goal/access scope; not counted among30 conditions
+Observed demand IDs: DR034
+Population: To be specified from eligible studies; no directness assumed from thread
+Intervention: sirolimus/rapamycin + bupropion
+Comparator: Relevant standard care/placebo/active comparator; do not assume comparable populations
+Outcomes: Resolve the stated reader question with prespecified clinical endpoints and harms
+Directness pitfalls: Check pharmacokinetics, official labels and clinical interaction evidence; no individual risk calculation.
+Searches: (sirolimus OR rapamycin) AND bupropion AND (interaction OR pharmacokinetics OR safety) | (sirolimus OR rapamycin) AND bupropion AND (interaction OR pharmacokinetics OR safety) AND (trial OR safety OR null OR adverse OR discontinued)
+Existing Discussion links: https://www.reddit.com/r/Rapamycin/comments/1mdifrx
+
+REQUEST DR035 — observed_reddit_question — observed_question
+Does rapamycin research in periodontal disease apply to people considering off-label use?
+Drug IDs: D06, D17
+Condition IDs: C10
+Observed demand IDs: DR035
+Population: To be specified from eligible studies; no directness assumed from thread
+Intervention: sirolimus/rapamycin
+Comparator: Relevant standard care/placebo/active comparator; do not assume comparable populations
+Outcomes: Resolve the stated reader question with prespecified clinical endpoints and harms
+Directness pitfalls: Separate animal periodontal findings from clinical patient outcomes.
+Searches: (sirolimus OR rapamycin) AND (periodontitis OR "periodontal disease") | (sirolimus OR rapamycin) AND (periodontitis OR "periodontal disease") AND (trial OR safety OR null OR adverse OR discontinued)
+Existing Discussion links: https://www.reddit.com/r/Rapamycin/comments/1mdifrx
+
+REQUEST DR036 — observed_reddit_question — observed_question
+What evidence supports acarbose for human longevity, and what are its tolerability tradeoffs?
+Drug IDs: Scope includes candidates outside the30 drug seed list
+Condition IDs: C30
+Observed demand IDs: DR036
+Population: To be specified from eligible studies; no directness assumed from thread
+Intervention: acarbose
+Comparator: Relevant standard care/placebo/active comparator; do not assume comparable populations
+Outcomes: Resolve the stated reader question with prespecified clinical endpoints and harms
+Directness pitfalls: Commercial self-link in source: organic comments kept separately, primary score excludes this thread; animal findings indirect.
+Searches: acarbose AND (longevity OR healthspan OR aging OR ageing) AND (human OR clinical OR trial) | acarbose AND (longevity OR healthspan OR aging OR ageing) AND (human OR clinical OR trial) AND (trial OR safety OR null OR adverse OR discontinued)
+Existing Discussion links: https://www.reddit.com/r/blueprint_/comments/1i8zvxs
+
+REQUEST ITRACONAZOLE-CANCER — mandatory_source_recovery — mandatory_first_wave
+What primary clinical and preclinical research tests itraconazole for specific cancers, and what limits or contradicts its proposed benefit?
+Drug IDs: D07
+Condition IDs: C03, C13, C14, C16, C17, C18, C19, C22, C21
+Observed demand IDs: DR006, DR007, DR019, DR022
+Population: Each cancer subtype, stage, treatment line and human/model population separately; prioritize human reports while recovering the named preclinical bibliography leads.
+Intervention: Itraconazole monotherapy and exact combination regimens; other components must be recorded.
+Comparator: Randomized/controlled comparisons where present; label uncontrolled and combination-only reports.
+Outcomes: Overall survival, progression-free survival, response, quality of life, toxicity, exposure and discontinuation; keep pathway/cell findings separate.
+Directness pitfalls: Do not equate ovarian clear-cell disease with every ovarian histology, colon cell lines with colorectal clinical efficacy, or combinations with itraconazole monotherapy. Registry entries are not published outcomes. Resolve textbook trial-ID/design conflicts.
+Searches: "itraconazole" AND (cancer OR carcinoma OR melanoma OR myeloma OR leukemia OR neoplasm) | "itraconazole" AND (trial OR phase OR randomized OR survival OR toxicity OR discontinued) | Run exact-title/printed-DOI lookups for all five primary_report_candidates; resolve all13 registry_leads against current registry, publications and results.
+
+REQUEST RECOVERY — previous_packet_recovery — source_integrity_first_wave
+Recover unresolved original reports and source-integrity documents already requested in packet 1.1.
+Drug IDs: D01, D02, D03
+Condition IDs: C01, C02
+Observed demand IDs: DR001, DR002, DR003, DR004, DR013, DR014, DR016, DR017, DR018
+Population: Keep acute-COVID prevention versus established Long COVID treatment distinct.
+Intervention: metformin; fluvoxamine; nirmatrelvir with ritonavir
+Comparator: As specified in each parent study
+Outcomes: Source completeness, report identity and current correction/retraction/version status; no outcome extraction in this phase.
+Directness pitfalls: Prior alerts are unresolved leads to verify, not newly confirmed statuses. Link notices and replacements to original IDs; preserve quarantine until reconciled.
+Searches: Resolve all named recovery-targets.json records against publishers, PubMed, registries and repositories; inspect current related-article/version notices.
+
+MANDATORY PRINTED ITRACONAZOLE PRIMARY-PAPER LEADS
+[
+  {
+    "drug": "itraconazole",
+    "discovery_state": "printed citation lead only",
+    "original_fulltext_acquired": false,
+    "substantive_result_extraction_performed": false,
+    "already_in_cp28_manifest": false,
+    "manifest_match_basis": "No exact DOI/title match among the 28 manifest entries; the citing books are present but these cited reports are not.",
+    "dispatch_status": "NOT SENT",
+    "original_version_correction_retraction_status": "NOT CHECKED; verify during future authorized acquisition",
+    "candidate_id": "FT30-ITRA-P001",
+    "title": "Itraconazole exerts its anti-melanoma effect by suppressing Hedgehog, Wnt, and PI3K/mTOR signaling pathways.",
+    "authors_printed": "Liang G, Liu M, Wang Q, Shen Y, Mei H, Li D, Liu W",
+    "year": 2017,
+    "journal_printed": "Oncotarget",
+    "volume_issue_pages_printed": "8(17):28510–28525",
+    "doi": "10.18632/oncotarget.15324",
+    "pmid_printed": "28212537",
+    "article_type": {
+      "classification": "probable original preclinical report",
+      "confidence": "moderate; based on cited title and textbook narrative, not the original report"
+    },
+    "cancer_model": "Melanoma; exact cell lines, animal models and experimental designs NOT IN CORPUS for this discovery record.",
+    "why_fetch": "Both books link itraconazole specifically to melanoma mechanisms. Obtain the original report to verify models, design, negative experiments, numerical outcomes and source integrity; do not expand to all skin cancers.",
+    "source_locations": [
+      {
+        "source_id": "CP027",
+        "filename": "Ranbir Chander Sobti, Sunil K. Lal, Ramesh K. Goyal - Drug Repurposing for Emerging Infectious Diseases and Cancer-Springer (2023).pdf",
+        "chapter": 5,
+        "printed_page": "68",
+        "pdf_page": 85,
+        "role": "body crosslink",
+        "detail": "Section 5.5.2.10.2 cites Liang et al. 2017 for melanoma."
+      },
+      {
+        "source_id": "CP027",
+        "filename": "Ranbir Chander Sobti, Sunil K. Lal, Ramesh K. Goyal - Drug Repurposing for Emerging Infectious Diseases and Cancer-Springer (2023).pdf",
+        "chapter": 5,
+        "printed_page": "83",
+        "pdf_page": 100,
+        "role": "bibliographic reference",
+        "detail": "Full printed author list, title, journal, pages and DOI."
+      },
+      {
+        "source_id": "CP027",
+        "filename": "Ranbir Chander Sobti, Sunil K. Lal, Ramesh K. Goyal - Drug Repurposing for Emerging Infectious Diseases and Cancer-Springer (2023).pdf",
+        "chapter": 5,
+        "printed_page": "61",
+        "pdf_page": 78,
+        "role": "table crosslink",
+        "detail": "Table 5.1 (continued), itraconazole row."
+      },
+      {
+        "source_id": "CP028",
+        "filename": "Tabish Qidwai - Drug Repurposing Against SARS-CoV-2-Bentham Science Publishers (2023).epub",
+        "chapter": 1,
+        "printed_page": "NOT IN CORPUS",
+        "internal_file": "OEBPS/Text/9789815123197-C1.html",
+        "body_xpath": "/x:html[1]/x:body[1]/x:div[2]/x:div[3]/x:div[2]/x:p[1]",
+        "reference_xpath": "/x:html[1]/x:body[1]/x:div[3]/x:table[1]/x:tr[71]",
+        "reference_anchor": "r70",
+        "reference_number": 70,
+        "role": "body-to-reference crosslink",
+        "detail": "Cancer paragraph explicitly links the itraconazole statement to reference 70."
+      }
+    ],
+    "metadata_notes": [
+      "EPUB prints the abbreviated author list Liang G, Liu M, Wang Q, et al. and page range 28510–25; Springer supplies the full printed list and expanded range. These are one candidate report, not two."
+    ]
+  },
+  {
+    "drug": "itraconazole",
+    "discovery_state": "printed citation lead only",
+    "original_fulltext_acquired": false,
+    "substantive_result_extraction_performed": false,
+    "already_in_cp28_manifest": false,
+    "manifest_match_basis": "No exact DOI/title match among the 28 manifest entries; the citing books are present but these cited reports are not.",
+    "dispatch_status": "NOT SENT",
+    "original_version_correction_retraction_status": "NOT CHECKED; verify during future authorized acquisition",
+    "candidate_id": "FT30-ITRA-P002",
+    "title": "Itraconazole inhibits the Hedgehog signaling pathway thereby inducing autophagy-mediated apoptosis of colon cancer cells.",
+    "authors_printed": "Deng H, Huang L, Liao Z, Liu M, Li Q, Xu R",
+    "year": 2020,
+    "journal_printed": "Cell Death Dis",
+    "volume_issue_pages_printed": "11(7):539",
+    "doi": "10.1038/s41419-020-02742-0",
+    "pmid_printed": "NOT IN CORPUS",
+    "article_type": {
+      "classification": "probable original cell/preclinical report",
+      "confidence": "moderate; title and body explicitly concern colon cancer cells"
+    },
+    "cancer_model": "Colon cancer cells; specific models and any additional in vivo work NOT IN CORPUS for this discovery record.",
+    "why_fetch": "Direct named reference for the colon-cancer branch; original report is needed before making efficacy, mechanism or model-specific claims.",
+    "source_locations": [
+      {
+        "source_id": "CP027",
+        "filename": "Ranbir Chander Sobti, Sunil K. Lal, Ramesh K. Goyal - Drug Repurposing for Emerging Infectious Diseases and Cancer-Springer (2023).pdf",
+        "chapter": 5,
+        "printed_page": "68",
+        "pdf_page": 85,
+        "role": "body crosslink",
+        "detail": "Section 5.5.2.10.2 cites Deng et al. 2020."
+      },
+      {
+        "source_id": "CP027",
+        "filename": "Ranbir Chander Sobti, Sunil K. Lal, Ramesh K. Goyal - Drug Repurposing for Emerging Infectious Diseases and Cancer-Springer (2023).pdf",
+        "chapter": 5,
+        "printed_page": "80",
+        "pdf_page": 97,
+        "role": "bibliographic reference",
+        "detail": "Printed title, authors, journal and DOI."
+      },
+      {
+        "source_id": "CP027",
+        "filename": "Ranbir Chander Sobti, Sunil K. Lal, Ramesh K. Goyal - Drug Repurposing for Emerging Infectious Diseases and Cancer-Springer (2023).pdf",
+        "chapter": 5,
+        "printed_page": "61",
+        "pdf_page": 78,
+        "role": "table crosslink",
+        "detail": "Table 5.1 row prints Dend et al. 2020; body and bibliography print Deng."
+      }
+    ],
+    "metadata_notes": [
+      "Author discrepancy preserved: table Dend versus body/reference Deng. Candidate identity uses the explicit reference entry, not an inferred new report."
+    ]
+  },
+  {
+    "drug": "itraconazole",
+    "discovery_state": "printed citation lead only",
+    "original_fulltext_acquired": false,
+    "substantive_result_extraction_performed": false,
+    "already_in_cp28_manifest": false,
+    "manifest_match_basis": "No exact DOI/title match among the 28 manifest entries; the citing books are present but these cited reports are not.",
+    "dispatch_status": "NOT SENT",
+    "original_version_correction_retraction_status": "NOT CHECKED; verify during future authorized acquisition",
+    "candidate_id": "FT30-ITRA-P003",
+    "title": "Itraconazole inhibits proliferation of pancreatic cancer cells through activation of Bak-1.",
+    "authors_printed": "Jiang F, Xing HS, Chen WY, Du J, Ruan YL, Lin AY, Zhou CZ",
+    "year": 2019,
+    "journal_printed": "J Cell Biochem",
+    "volume_issue_pages_printed": "120(3):4333–4341",
+    "doi": "10.1002/jcb.27719",
+    "pmid_printed": "NOT IN CORPUS",
+    "article_type": {
+      "classification": "probable original cell/preclinical report",
+      "confidence": "moderate; title and body explicitly concern pancreatic cancer cells"
+    },
+    "cancer_model": "Pancreatic cancer cells; specific cell lines and additional model details NOT IN CORPUS for this discovery record.",
+    "why_fetch": "Separates a pancreatic-cell mechanism report from the human combination-chemotherapy report below; acquire both without pooling their evidence levels.",
+    "source_locations": [
+      {
+        "source_id": "CP027",
+        "filename": "Ranbir Chander Sobti, Sunil K. Lal, Ramesh K. Goyal - Drug Repurposing for Emerging Infectious Diseases and Cancer-Springer (2023).pdf",
+        "chapter": 5,
+        "printed_page": "68",
+        "pdf_page": 85,
+        "role": "body crosslink",
+        "detail": "Section 5.5.2.10.2 cites Jiang et al. 2019."
+      },
+      {
+        "source_id": "CP027",
+        "filename": "Ranbir Chander Sobti, Sunil K. Lal, Ramesh K. Goyal - Drug Repurposing for Emerging Infectious Diseases and Cancer-Springer (2023).pdf",
+        "chapter": 5,
+        "printed_page": "82",
+        "pdf_page": 99,
+        "role": "bibliographic reference",
+        "detail": "Printed title, authors, journal and DOI."
+      },
+      {
+        "source_id": "CP027",
+        "filename": "Ranbir Chander Sobti, Sunil K. Lal, Ramesh K. Goyal - Drug Repurposing for Emerging Infectious Diseases and Cancer-Springer (2023).pdf",
+        "chapter": 5,
+        "printed_page": "61",
+        "pdf_page": 78,
+        "role": "table crosslink",
+        "detail": "Table 5.1 (continued), itraconazole row."
+      }
+    ]
+  },
+  {
+    "drug": "itraconazole",
+    "discovery_state": "printed citation lead only",
+    "original_fulltext_acquired": false,
+    "substantive_result_extraction_performed": false,
+    "already_in_cp28_manifest": false,
+    "manifest_match_basis": "No exact DOI/title match among the 28 manifest entries; the citing books are present but these cited reports are not.",
+    "dispatch_status": "NOT SENT",
+    "original_version_correction_retraction_status": "NOT CHECKED; verify during future authorized acquisition",
+    "candidate_id": "FT30-ITRA-P004",
+    "title": "Impact of combination chemotherapy with itraconazole on survival for patients with recurrent or persistent ovarian clear cell carcinoma.",
+    "authors_printed": "Tsubamoto H, Sonoda T, Yamasaki M, Inoue K",
+    "year": 2014,
+    "journal_printed": "Anticancer Res",
+    "volume_issue_pages_printed": "34(4):2007–2014",
+    "doi": "DOI NOT PRINTED",
+    "pmid_printed": "NOT IN CORPUS",
+    "article_type": {
+      "classification": "probable original human treatment report; randomized/observational design unconfirmed",
+      "confidence": "moderate; patients, combination chemotherapy and survival appear in the printed title"
+    },
+    "cancer_model": "Recurrent or persistent ovarian clear-cell carcinoma in patients; do not generalize to all ovarian cancers.",
+    "why_fetch": "A directly named clinical report for a narrow ovarian subtype; obtain the original to establish design, comparator, combination components, patient selection, outcomes and limitations.",
+    "source_locations": [
+      {
+        "source_id": "CP027",
+        "filename": "Ranbir Chander Sobti, Sunil K. Lal, Ramesh K. Goyal - Drug Repurposing for Emerging Infectious Diseases and Cancer-Springer (2023).pdf",
+        "chapter": 14,
+        "printed_page": "316",
+        "pdf_page": 328,
+        "role": "body crosslink",
+        "detail": "Section 14.9.1 jointly cites Tsubamoto et al. 2014 and 2015 for pancreatic/ovarian combination claims."
+      },
+      {
+        "source_id": "CP027",
+        "filename": "Ranbir Chander Sobti, Sunil K. Lal, Ramesh K. Goyal - Drug Repurposing for Emerging Infectious Diseases and Cancer-Springer (2023).pdf",
+        "chapter": 14,
+        "printed_page": "327",
+        "pdf_page": 339,
+        "role": "bibliographic reference",
+        "detail": "Title resolves the 2014 report to recurrent/persistent ovarian clear-cell carcinoma."
+      }
+    ],
+    "metadata_notes": [
+      "No DOI is printed with this reference; none supplied from memory or external lookup.",
+      "Joint body citation does not justify assigning every mechanistic sentence to this clinical report."
+    ]
+  },
+  {
+    "drug": "itraconazole",
+    "discovery_state": "printed citation lead only",
+    "original_fulltext_acquired": false,
+    "substantive_result_extraction_performed": false,
+    "already_in_cp28_manifest": false,
+    "manifest_match_basis": "No exact DOI/title match among the 28 manifest entries; the citing books are present but these cited reports are not.",
+    "dispatch_status": "NOT SENT",
+    "original_version_correction_retraction_status": "NOT CHECKED; verify during future authorized acquisition",
+    "candidate_id": "FT30-ITRA-P005",
+    "title": "Combination chemotherapy with Itraconazole for treating metastatic pancreatic cancer in the second-line or additional setting.",
+    "authors_printed": "Tsubamoto H, Sonoda T, Ikuta S, Tani S, Inoue K, Yamanaka N",
+    "year": 2015,
+    "journal_printed": "Anticancer Res",
+    "volume_issue_pages_printed": "35(7):4191–4196",
+    "doi": "DOI NOT PRINTED",
+    "pmid_printed": "NOT IN CORPUS",
+    "article_type": {
+      "classification": "probable original human treatment report; randomized/observational design unconfirmed",
+      "confidence": "moderate; disease stage, treatment line and combination therapy appear in the printed title"
+    },
+    "cancer_model": "Metastatic pancreatic cancer, second-line or additional setting; exact histology and design NOT IN CORPUS for this discovery record.",
+    "why_fetch": "A directly named human combination report distinct from Jiang's pancreatic-cell experiment; verify treatment lines, comparator, all outcomes and harms in the original.",
+    "source_locations": [
+      {
+        "source_id": "CP027",
+        "filename": "Ranbir Chander Sobti, Sunil K. Lal, Ramesh K. Goyal - Drug Repurposing for Emerging Infectious Diseases and Cancer-Springer (2023).pdf",
+        "chapter": 14,
+        "printed_page": "316",
+        "pdf_page": 328,
+        "role": "body crosslink",
+        "detail": "Section 14.9.1 jointly cites Tsubamoto et al. 2014 and 2015."
+      },
+      {
+        "source_id": "CP027",
+        "filename": "Ranbir Chander Sobti, Sunil K. Lal, Ramesh K. Goyal - Drug Repurposing for Emerging Infectious Diseases and Cancer-Springer (2023).pdf",
+        "chapter": 14,
+        "printed_page": "327",
+        "pdf_page": 339,
+        "role": "bibliographic reference",
+        "detail": "Printed reference title establishes metastatic pancreatic cancer and treatment setting."
+      }
+    ],
+    "metadata_notes": [
+      "No DOI is printed with this reference; no external or memory-based DOI added."
+    ]
+  }
+]
+
+RETURN SCHEMA
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://second-look.local/schemas/acquisition-return-3.1.json",
+  "title": "Second Look acquisition-only return 3.1",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "SL-ACQUISITION-3.1"
+    },
+    "plan_id": {
+      "const": "SL-INGEST-3.1-FETCH30"
+    },
+    "plan_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "packet_version": {
+      "const": "2.1"
+    },
+    "batch_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "created_at": {
+      "type": "string",
+      "minLength": 1
+    },
+    "synthetic": {
+      "type": "boolean"
+    },
+    "scope_request_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "status": {
+      "enum": [
+        "candidate_return",
+        "incomplete"
+      ]
+    },
+    "searches": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/search"
+      }
+    },
+    "screening": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/screening"
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/source"
+      }
+    },
+    "coverage": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/coverage"
+      }
+    },
+    "gaps": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/gap"
+      }
+    },
+    "reconciliation": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "candidates_screened": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "included_sources": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "excluded_candidates": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "duplicate_candidates": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "uncertain_candidates": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "files_received": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "unavailable_sources": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "candidates_screened",
+        "included_sources",
+        "excluded_candidates",
+        "duplicate_candidates",
+        "uncertain_candidates",
+        "files_received",
+        "unavailable_sources"
+      ]
+    },
+    "validation_notes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "publication_status": {
+      "const": "not_authorized"
+    },
+    "extraction_status": {
+      "const": "not_started"
+    }
+  },
+  "required": [
+    "schema_version",
+    "plan_id",
+    "plan_sha256",
+    "packet_version",
+    "batch_id",
+    "created_at",
+    "synthetic",
+    "scope_request_ids",
+    "status",
+    "searches",
+    "screening",
+    "sources",
+    "coverage",
+    "gaps",
+    "reconciliation",
+    "validation_notes",
+    "publication_status",
+    "extraction_status"
+  ],
+  "$defs": {
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "source_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "report_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "study_family_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "family_identity_status": {
+          "enum": [
+            "verified",
+            "unresolved",
+            "not_applicable"
+          ]
+        },
+        "request_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "drug_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "condition_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "demand_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "authors": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "year": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1500,
+          "maximum": 2100
+        },
+        "doi_printed": {
+          "type": "string",
+          "minLength": 1
+        },
+        "doi_verified": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "doi_verification_source": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "pmid": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "pmcid": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "registry_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "identity_status": {
+          "enum": [
+            "verified",
+            "conflict",
+            "not_resolved"
+          ]
+        },
+        "identity_notes": {
+          "type": "string",
+          "minLength": 1
+        },
+        "collection": {
+          "enum": [
+            "PRIMARY",
+            "CONTEXT"
+          ]
+        },
+        "context_tier": {
+          "enum": [
+            null,
+            "REVIEW",
+            "TEXTBOOK",
+            "OTHER"
+          ]
+        },
+        "report_role": {
+          "enum": [
+            "original_report",
+            "protocol",
+            "supplement",
+            "correction",
+            "retraction_notice",
+            "replacement",
+            "registry",
+            "review",
+            "textbook",
+            "official_context",
+            "other"
+          ]
+        },
+        "design": {
+          "enum": [
+            "human_randomized",
+            "human_nonrandomized",
+            "human_observational",
+            "case_series",
+            "case_report",
+            "animal",
+            "cell_ex_vivo",
+            "computational",
+            "not_identified",
+            "not_applicable"
+          ]
+        },
+        "directness": {
+          "enum": [
+            "direct",
+            "indirect",
+            "mixed",
+            "not_checked",
+            "not_applicable"
+          ]
+        },
+        "access_state": {
+          "enum": [
+            "full_pdf",
+            "full_html",
+            "partial",
+            "abstract_only",
+            "metadata_only",
+            "registry_only",
+            "inaccessible",
+            "unreadable"
+          ]
+        },
+        "filename": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "media_type": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "bytes": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "sha256": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "original_url": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "resolved_url": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "retrieved_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "access_checked_at": {
+          "type": "string",
+          "minLength": 1
+        },
+        "rights_or_missing_reason": {
+          "type": "string",
+          "minLength": 1
+        },
+        "language": {
+          "type": "string",
+          "minLength": 1
+        },
+        "translated": {
+          "type": "boolean"
+        },
+        "translation_verification": {
+          "type": "string",
+          "minLength": 1
+        },
+        "duplicate_of": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "version_of": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "related_source_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "correction_check": {
+          "type": "string",
+          "minLength": 1
+        },
+        "fulltext_read": {
+          "const": false
+        },
+        "result_extraction_status": {
+          "const": "not_started"
+        },
+        "missing_reason": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "notes": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "source_id",
+        "report_id",
+        "study_family_id",
+        "family_identity_status",
+        "request_ids",
+        "drug_ids",
+        "condition_ids",
+        "demand_ids",
+        "title",
+        "authors",
+        "year",
+        "doi_printed",
+        "doi_verified",
+        "doi_verification_source",
+        "pmid",
+        "pmcid",
+        "registry_ids",
+        "identity_status",
+        "identity_notes",
+        "collection",
+        "context_tier",
+        "report_role",
+        "design",
+        "directness",
+        "access_state",
+        "filename",
+        "media_type",
+        "bytes",
+        "sha256",
+        "original_url",
+        "resolved_url",
+        "retrieved_at",
+        "access_checked_at",
+        "rights_or_missing_reason",
+        "language",
+        "translated",
+        "translation_verification",
+        "duplicate_of",
+        "version_of",
+        "related_source_ids",
+        "correction_check",
+        "fulltext_read",
+        "result_extraction_status",
+        "missing_reason",
+        "notes"
+      ]
+    },
+    "search": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "search_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "request_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "database": {
+          "type": "string",
+          "minLength": 1
+        },
+        "query": {
+          "type": "string",
+          "minLength": 1
+        },
+        "filters": {
+          "type": "string",
+          "minLength": 1
+        },
+        "executed_at": {
+          "type": "string",
+          "minLength": 1
+        },
+        "cutoff": {
+          "type": "string",
+          "minLength": 1
+        },
+        "hit_count": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "hit_count_missing_reason": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "exported_identifiers": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "database_access": {
+          "enum": [
+            "searched",
+            "unavailable",
+            "partially_accessible"
+          ]
+        },
+        "limitations": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "search_id",
+        "request_ids",
+        "database",
+        "query",
+        "filters",
+        "executed_at",
+        "cutoff",
+        "hit_count",
+        "hit_count_missing_reason",
+        "exported_identifiers",
+        "database_access",
+        "limitations"
+      ]
+    },
+    "screening": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "screening_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "search_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "candidate_identity": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "request_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "decision": {
+          "enum": [
+            "include",
+            "exclude",
+            "duplicate",
+            "uncertain"
+          ]
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        },
+        "stage": {
+          "enum": [
+            "title_abstract",
+            "identity_fulltext_metadata"
+          ]
+        },
+        "duplicate_of": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "reviewed_at": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "screening_id",
+        "search_id",
+        "candidate_identity",
+        "source_id",
+        "request_ids",
+        "decision",
+        "reason",
+        "stage",
+        "duplicate_of",
+        "reviewed_at"
+      ]
+    },
+    "coverage": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "request_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "enum": [
+            "complete_against_declared_search",
+            "incomplete",
+            "not_started"
+          ]
+        },
+        "search_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "source_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "primary_fulltexts": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "background_sources": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "independent_study_families": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "family_count_reason": {
+          "type": "string",
+          "minLength": 1
+        },
+        "human_primary_available": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "preclinical_only": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "remaining_gaps": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "next_action": {
+          "type": "string",
+          "minLength": 1
+        },
+        "completion_basis": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "request_id",
+        "status",
+        "search_ids",
+        "source_ids",
+        "primary_fulltexts",
+        "background_sources",
+        "independent_study_families",
+        "family_count_reason",
+        "human_primary_available",
+        "preclinical_only",
+        "remaining_gaps",
+        "next_action",
+        "completion_basis"
+      ]
+    },
+    "gap": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "gap_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "request_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "source_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "type": {
+          "enum": [
+            "access",
+            "identity",
+            "coverage",
+            "supplement",
+            "correction",
+            "registry_result",
+            "rights",
+            "format",
+            "unmapped_candidate"
+          ]
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "attempts": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "next_action": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "enum": [
+            "open",
+            "resolved"
+          ]
+        }
+      },
+      "required": [
+        "gap_id",
+        "request_ids",
+        "source_ids",
+        "type",
+        "description",
+        "attempts",
+        "next_action",
+        "status"
+      ]
+    }
+  }
+}

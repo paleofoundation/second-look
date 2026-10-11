@@ -1,0 +1,98 @@
+{
+  "at": "2026-10-08T07:05:30.178588+00:00",
+  "batch_id": "B00",
+  "plan_id": "SL-INGEST-1.0",
+  "status": "retrospective_metadata_reconciliation_complete",
+  "historical_pre_ingestion_plan": "NOT SATISFIED",
+  "historical_pre_handoff_plan": "NOT SATISFIED",
+  "new_ingestion": false,
+  "grokbot_dispatched": false,
+  "root_sequence": [
+    {
+      "sequence": 1,
+      "date": "2026-10-08",
+      "event": "Frozen v1.1 and bounded research worker dispatch; internal scoping prompt prepared.",
+      "time_basis": "Retained task execution history; exact first action time not reconstructed."
+    },
+    {
+      "sequence": 2,
+      "date": "2026-10-08",
+      "event": "Scoping prompt location delivered in early handoff; selected-source acquisition/extraction subsequently recorded by evidence worker. Precise overlap of early prompt handoff and first extraction not asserted.",
+      "time_basis": "Prior commentary and first-handoff.md; worker sequence audit."
+    },
+    {
+      "sequence": 3,
+      "date": "2026-10-08",
+      "event": "Root ran work/sync-content.py to import accepted selected-source adapter plus practical guide into site/data/content.json. This predates consolidated plan; repeated adapter revisions followed.",
+      "time_basis": "Retained command calls and source commit history; first-import exact time unknown."
+    },
+    {
+      "sequence": 4,
+      "at": "2026-10-08T06:44:58.934982+00:00",
+      "event": "Private site v2 deployed from 4e41803cc8f0fe26f034f4b3875f38fe92e0bbd7.",
+      "time_basis": "Sites deployment response."
+    },
+    {
+      "sequence": 5,
+      "date": "2026-10-08",
+      "event": "Final acquisition ZIP and prompt were handed back as ready artifacts before this owner intervention. No Grokbot tool/job/file request was sent by root or workers.",
+      "time_basis": "Prior final response and launch_status=not_launched; no inference about any action the owner may have taken outside this task."
+    },
+    {
+      "sequence": 6,
+      "at": "2026-10-08T06:47:36+00:00",
+      "event": "Owner explicitly requires plan before first ingest and first Grokbot file request.",
+      "time_basis": "Source task user turn timestamp."
+    },
+    {
+      "sequence": 7,
+      "at": "2026-10-08T06:51:18.683276+00:00",
+      "event": "Concrete SL-INGEST-1.0 plan first persisted in this task.",
+      "time_basis": "Actual creation record; draft finalized before readiness."
+    }
+  ],
+  "worker_audit": "ingestion-sequence-audit.json",
+  "items": [
+    {
+      "id": "RECON-01",
+      "status": "RECONCILED_AS_RECORDED",
+      "resolution": "B00 now associated with SL-INGEST-1.0 retrospectively. Existing corpus/schema/source/adapter hashes retained; historical first-request/ingest ordering NOT SATISFIED."
+    },
+    {
+      "id": "RECON-02",
+      "status": "RECONCILED_AS_RECORDED",
+      "resolution": "Initial schema/minimal fixture history retained in sequence audit. Final schema hash is a later revision; future semantic changes require new version or immutable revision+plan recheck."
+    },
+    {
+      "id": "RECON-03",
+      "status": "RECONCILED_AS_RECORDED",
+      "resolution": "Validation and adapter imports were post-extraction. Root command work/sync-content.py and exact deployed commit recorded as corroboration; first-import timestamp remains unknown."
+    },
+    {
+      "id": "RECON-04",
+      "status": "RECONCILED_AS_RECORDED",
+      "resolution": "Earlier user-facing request handoffs occurred before plan. No root/worker external Grokbot dispatch. Pre-plan prompts/manifest/ZIP archived; current full packet will be linked only after GP prospective PASS. Legacy scoping prompt superseded."
+    },
+    {
+      "id": "RECON-05",
+      "status": "RECONCILED_AS_RECORDED",
+      "resolution": "All full/partial/abstract states, COVID-OUT correction discrepancy, ACTIV6 supplement gap and REVIVE quarantine retained. B01 schedules repair; no scientific gap marked resolved."
+    },
+    {
+      "id": "RECON-06",
+      "status": "RECONCILED_AS_RECORDED",
+      "resolution": "New exact owner instruction and delegated requirement appended to governance and research instruction ledger with historical zero-instruction state preserved."
+    },
+    {
+      "id": "RECON-07",
+      "status": "RECONCILED_AS_RECORDED",
+      "resolution": "Audit observed three failed/challenge HTML downloads (covidout-correction.html, korea-abstract.html, recover.html), whereas historical source manifest says two. Diagnostic count reconciled here to three; zero are paper full texts. This correction does not change six paper identities, two acquired full HTMLs, three reviews or any result. Historical manifest retained byte-for-byte; discrepancy accompanies future packets."
+    },
+    {
+      "id": "RECON-08",
+      "status": "RECONCILED_AS_RECORDED",
+      "resolution": "No repeat extraction needed solely to write a plan. Existing drafts remain private, not human approved; re-extraction only after a material defect or new/corrected source triggers P2."
+    }
+  ],
+  "scientific_gates": "HOLD unchanged"
+}

@@ -1,0 +1,97 @@
+{
+  "at": "2026-10-08T07:07:47.928672+00:00",
+  "scope": "Read-only planning and validator compatibility; no extraction/import/dispatch",
+  "checks": [
+    {
+      "test": "unchanged_existing_graph",
+      "result": "PASS",
+      "details": {
+        "status": "PASS",
+        "scope": "Schema, graph, source hashes and version checks; pilot-specific four numeric expectations skipped",
+        "imported": false,
+        "source_audit": "Separate source-backed verification still required"
+      }
+    },
+    {
+      "test": "closed_existing_subset_without_fixed_results",
+      "result": "PASS",
+      "details": {
+        "status": "PASS",
+        "scope": "Schema, graph, source hashes and version checks; pilot-specific four numeric expectations skipped",
+        "imported": false,
+        "source_audit": "Separate source-backed verification still required"
+      }
+    },
+    {
+      "test": "reject_synthetic_fixture",
+      "result": "PASS",
+      "details": {
+        "status": "HOLD",
+        "reason": "Synthetic fixture cannot be an evidence candidate",
+        "imported": false
+      }
+    }
+  ],
+  "existing_corpus_unchanged": true,
+  "plan_sha256": "94aa213b11cd7ce879eb83e3ea819b706000725ed6ed31b379d4e87b0cd3b07c",
+  "preflight_tests": [
+    {
+      "operation": "grokbot-handoff",
+      "expected": "READY",
+      "result": {
+        "operation": "grokbot-handoff",
+        "batch": "B01",
+        "status": "READY",
+        "reasons": [],
+        "performed_operation": false,
+        "next": "Record actual operation with plan hash in operation log before dispatch/extraction/import; READY is not execution evidence."
+      },
+      "pass": true
+    },
+    {
+      "operation": "grokbot-request",
+      "expected": "READY",
+      "result": {
+        "operation": "grokbot-request",
+        "batch": "B01",
+        "status": "READY",
+        "reasons": [],
+        "performed_operation": false,
+        "next": "Record actual operation with plan hash in operation log before dispatch/extraction/import; READY is not execution evidence."
+      },
+      "pass": true
+    },
+    {
+      "operation": "source-extraction",
+      "expected": "HOLD without receipt",
+      "result": {
+        "operation": "source-extraction",
+        "batch": "B01",
+        "status": "HOLD",
+        "reasons": [
+          "Received source receipt required before extraction/import"
+        ],
+        "performed_operation": false,
+        "next": "Record actual operation with plan hash in operation log before dispatch/extraction/import; READY is not execution evidence."
+      },
+      "pass": true
+    },
+    {
+      "operation": "corpus-import",
+      "expected": "HOLD without receipt",
+      "result": {
+        "operation": "corpus-import",
+        "batch": "B01",
+        "status": "HOLD",
+        "reasons": [
+          "Received source receipt required before extraction/import",
+          "Candidate acceptance required before import"
+        ],
+        "performed_operation": false,
+        "next": "Record actual operation with plan hash in operation log before dispatch/extraction/import; READY is not execution evidence."
+      },
+      "pass": true
+    }
+  ],
+  "all_checks_pass": true
+}

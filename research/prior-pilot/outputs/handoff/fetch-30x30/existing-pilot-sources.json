@@ -1,0 +1,99 @@
+{
+  "schema_version": "1.0.0",
+  "baseline_version": "1.1",
+  "baseline_sha256": "01896e3c254f37483c226da52da0ef239b03eb7c762e5171675ae6dc302150d2",
+  "cutoff": "2026-10-08",
+  "execution_date": "2026-10-08",
+  "files": [
+    {
+      "path": "work/evidence/raw/covidout.html",
+      "sha256": "452f584b76e446310416521227c0c12935eeafc12f582b19bc8cf98854196c4d",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11259948/",
+      "retrieved_at": "2026-10-08",
+      "media_type": "text/html",
+      "collection": "PRIMARY",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    },
+    {
+      "path": "work/evidence/raw/stoppasc.html",
+      "sha256": "101012946b847f38eb21170ab0a7270275cf7a1fc250c1e08843437364ad2a8d",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11161857/",
+      "retrieved_at": "2026-10-08",
+      "media_type": "text/html",
+      "collection": "PRIMARY",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    },
+    {
+      "path": "work/evidence/raw/activ6-web-extract.json",
+      "sha256": "2d52a49a41b93f6c027d0035d476a9d54419c32e5535444b3992fd128b64da44",
+      "source_url": "https://academic.oup.com/cid/advance-article/doi/10.1093/cid/ciag335/8702406",
+      "retrieved_at": "2026-10-08",
+      "media_type": "application/json (partial tool-rendered HTML extract)",
+      "collection": "PRIMARY",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    },
+    {
+      "path": "work/evidence/raw/pubmed-metadata.xml",
+      "sha256": "8ead1a1db2322f2472a14f6485db7539e8b94861ecff61a4b0bbed656e3ea3bb",
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42832813,41771135,41911553,42673984,42240559,37666258&retmode=xml",
+      "retrieved_at": "2026-10-08",
+      "media_type": "application/xml",
+      "collection": "PRIMARY",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    },
+    {
+      "path": "work/evidence/raw/current-candidates-web-extract.json",
+      "sha256": "27354efd9b0dba8865206e3f9ab4559b760f8f035ad8b1c241beafab24c451f9",
+      "source_url": "Primary-source search results",
+      "retrieved_at": "2026-10-08",
+      "media_type": "application/json",
+      "collection": "PRIMARY",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    },
+    {
+      "path": "work/evidence/raw/retraction-check-web-extract.json",
+      "sha256": "e410bd2c99e3aef061c36c66d22d2ea97e216ae71a47aa406e24a94738f340d5",
+      "source_url": "Retraction discovery search results; lead only, NCBI is verification",
+      "retrieved_at": "2026-10-08",
+      "media_type": "application/json",
+      "collection": "CONTEXT",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    },
+    {
+      "path": "work/evidence/raw/stoppasc-correction.html",
+      "sha256": "742c00f8d15dc30fc0007aa0d893935847f1faee88931434d878316e5ea2661b",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11264073/",
+      "retrieved_at": "2026-10-08",
+      "media_type": "text/html",
+      "collection": "CONTEXT",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    }
+  ],
+  "reconciliation": {
+    "paper_records": 6,
+    "accepted_primary": 5,
+    "quarantined_primary": 1,
+    "full_html_acquired": 2,
+    "partial_fulltext_web_extract": 1,
+    "abstract_only": 3,
+    "pdf_files": 0,
+    "substantive_draft_reviews": 3,
+    "formal_appraisals": 0,
+    "human_approved": 0,
+    "released": 0,
+    "accepted_independent_study_families": 5,
+    "unacquired_named_trial_leads": 1
+  },
+  "completeness": "INCOMPLETE selected-source calibration, not a systematic review. Three substantive draft reviews, two newer abstract-level records, one quarantined original, PAX LC pending outside corpus.",
+  "exceptions": [
+    "3-report substantive calibration rather than normal 20–30; initial pilot with current-source checks prioritized, scaling remains pending",
+    "ACTIV-6 direct download 403; relevant HTML sections accessed through web tool and saved as partial snapshot, not complete raw HTML",
+    "Two downloaded PubMed challenge pages are quarantined access failures, not paper files",
+    "Full-text Korean report and RECOVER-VITAL, supplements, registries, backward/forward citation coverage pending",
+    "No formal RoB 2, certainty grade, human scientific approval, or public release",
+    "COVID-OUT correction exact text and 10.4/10.6 discrepancy unresolved",
+    "REVIVE original quarantined after primary metadata retraction/republication check",
+    "Guide contract: question/answer and comparison variants used; glossary short-form exception; no manufactured entity safety/dosing advice"
+  ],
+  "source_version": "pilot-evidence-1.0.0"
+}

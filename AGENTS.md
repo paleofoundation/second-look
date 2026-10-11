@@ -1,0 +1,19 @@
+# Second Look contributor instructions
+
+This is the source repository for Second Look, the Drug Repurposing project. Read `docs/PROJECT-RULES.md` and `docs/RULE-CHANGELOG.md` before changing it. For evidence work, read `docs/RESEARCH-INGEST.md` **before acquisition requests, extraction or import**, then the complete `rules/one-match-rule/ONE-MATCH-RULE.md` and the applicable plan/schema. Do not assume chat memory or a locally installed skill supplies these instructions to another researcher.
+
+## Preserve instructions with the work
+
+Record each new explicit requirement or confirmed rule correction in the applicable project contract and `docs/RULE-CHANGELOG.md` in the same commit/PR as related work, even when implementation is pending. Record date, source, scope, superseded behavior, implementation/verification/release status and remaining work. A conversation-only decision is not a durable handoff. Update research plans, schemas and handoff checkpoints when ingestion requirements change. Preserve previous accepted records and decisions.
+
+Current explicit user instructions govern their actual scope; Second Look deltas in `docs/PROJECT-RULES.md` take precedence over the imported rule's generic defaults. `rules/one-match-rule/` is a pinned upstream snapshot, not a competing editable global master. Propose reusable corrections upstream and record pending synchronization; refresh the complete package and its manifest deliberately. Never overwrite `docs/one-match-rule-baseline.md` or historical receipts to make old work appear compliant.
+
+## Functional references
+
+The user requested Microbiome Medicine and PepsAnon as code and behavior references. Before implementing or changing navigation, guide layouts, condition links, research disclosures, citations or related interactions, consult `references/README.md` and relevant packaged source references. Compare rendered behavior when needed; keep the PepsAnon reference tab available during comparison. Apply current Second Look requirements: the references can have different interaction patterns. Preserve changes in their separate repositories.
+
+## Working and release boundaries
+
+Use the existing shared rendering and canonical data paths. Do not run historical corpus generators over current reviewed work. Make bounded branches/PRs, inspect concurrent changes, and record exact-version acceptance. Keep raw research files, credentials and reader account data out of Git; keep editorial provenance out of public client payloads. Do not treat a successful build, GitHub push, AI assessment or authentication as human scientific approval. GitHub publication does not deploy the website or change its audience, billing or release gates.
+
+Run `node scripts/check-governance.mjs` for rule changes and the relevant checks in `docs/COLLABORATOR-HANDOFF.md` for code/content changes. Check in the requirements, source mappings, validation results and unresolved work needed by the next researcher.

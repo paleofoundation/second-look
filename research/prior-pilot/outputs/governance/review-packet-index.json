@@ -1,0 +1,658 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-08T06:28:53.062965+00:00",
+  "scope": "Private evidence review workspace index; original raw sources remain in work/evidence/raw and are not public assets",
+  "sourceVersion": "pilot-evidence-1.0.0",
+  "corpusSha256": "244413d005d0af52564aa7161d67e73e5a8c3f6ca4e796071d1723aad4842516",
+  "records": [
+    {
+      "paperId": "P-COVIDOUT-2023",
+      "studyFamilyId": "S-COVIDOUT-2023",
+      "source": {
+        "title": "Outpatient treatment of COVID-19 and incidence of post-COVID-19 condition over 10 months (COVID-OUT): a multicentre, randomised, quadruple-blind, parallel-group, phase 3 trial",
+        "urls": [
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC11259948/",
+          "https://doi.org/10.1016/s1473-3099(23)00299-2"
+        ],
+        "localPrivateFiles": [
+          "work/evidence/raw/covidout.html"
+        ],
+        "access": "full_text_html",
+        "correctionCheck": {
+          "checked_at": "2026-10-08",
+          "sources": [
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC11259948/",
+            "https://pubmed.ncbi.nlm.nih.gov/37666258/"
+          ],
+          "result": "Correction indexed as PMID 37666258; exact amended content not yet reconciled. PMC abstract/results report placebo 10.4%; Discussion says 10.6%. Use results/figure value provisionally; publication remains HOLD.",
+          "complete": false
+        }
+      },
+      "extraction": {
+        "file": "outputs/research/evidence/results.jsonl",
+        "resultIds": [
+          "R-CO-HR"
+        ],
+        "locators": [
+          {
+            "paper_id": "P-COVIDOUT-2023",
+            "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11259948/",
+            "file": "work/evidence/raw/covidout.html",
+            "pdf_page": null,
+            "printed_page": null,
+            "section": "Results",
+            "table_figure": "Figure 2 and Results paragraph beginning cumulative incidence",
+            "paragraph": null,
+            "basis": "full_text",
+            "missingness": "not_applicable"
+          }
+        ]
+      },
+      "claims": {
+        "file": "outputs/research/evidence/claims.jsonl",
+        "items": [
+          {
+            "id": "C-PREVENT-CO",
+            "sentence": "COVID-OUT reported fewer later clinician diagnoses of long COVID after metformin begun during acute infection.",
+            "resultIds": [
+              "R-CO-HR"
+            ],
+            "scope": "Selected trial evidence only; not clinical recommendation",
+            "limits": "Secondary outcome; selected population; correction notice still requires reconciliation; not established-long-COVID treatment.",
+            "state": "source_checked"
+          }
+        ]
+      },
+      "appraisals": {
+        "file": "outputs/research/evidence/reviews.jsonl",
+        "items": [
+          {
+            "id": "REVIEW-P-COVIDOUT-2023",
+            "version": "pilot-evidence-1.0.0",
+            "sha256": "d32779333a980acde178edd2d5861a7cd6186c04f9cb82cdec4599cc4f7fb786",
+            "method": {
+              "method": "RoB 2 proposed, not executed",
+              "version": "Not yet assigned: current method guidance must be verified before appraisal",
+              "status": "not_appraised",
+              "domains": [],
+              "outcome_scope": "Secondary outcome: participant-reported clinician diagnosis of long COVID",
+              "qualified_review": "pending"
+            },
+            "questions": "Q01–Q15 in this record",
+            "approval": [
+              {
+                "status": "pending",
+                "content_version": "pilot-evidence-1.0.0",
+                "content_sha256": "d32779333a980acde178edd2d5861a7cd6186c04f9cb82cdec4599cc4f7fb786",
+                "reviewer_id": null,
+                "reviewer_qualifications": null,
+                "conflicts": null,
+                "decision_at": null,
+                "scope": "editorial",
+                "notes": "Exact-version human review required before release"
+              }
+            ]
+          }
+        ]
+      },
+      "pageDiff": {
+        "base": "No earlier published edition in this pilot",
+        "proposed": "outputs/research/evidence/site-content.json",
+        "canonicalPageRecords": "outputs/research/evidence/corpus.json#/pages",
+        "pageIds": [
+          "G-MET-PREVENT",
+          "G-COMPARE",
+          "G-METFORMIN",
+          "G-LONGCOVID"
+        ],
+        "routes": [
+          "/answers/metformin-prevention",
+          "/answers/metformin-treatment",
+          "/comparisons/prevention-versus-treatment",
+          "/drugs/metformin",
+          "/conditions/long-covid"
+        ],
+        "note": "Review proposed source-linked sentences against original locator; future revisions require before/after diff against accepted version."
+      },
+      "decisions": {
+        "sourceAudit": "pending independent audit",
+        "humanEditorial": "pending",
+        "qualifiedSafety": "pending where applicable",
+        "disposition": "HOLD for release",
+        "reviewer": null,
+        "date": null,
+        "corrections": []
+      }
+    },
+    {
+      "paperId": "P-ACTIV6-2026",
+      "studyFamilyId": "S-ACTIV6-2026",
+      "source": {
+        "title": "Metformin on the Presence of COVID-19 Symptoms 6 Months after Infection: The ACTIV-6 Randomized Clinical Trial.",
+        "urls": [
+          "https://academic.oup.com/cid/advance-article/doi/10.1093/cid/ciag335/8702406",
+          "https://doi.org/10.1093/cid/ciag335"
+        ],
+        "localPrivateFiles": [
+          "work/evidence/raw/activ6-web-extract.json"
+        ],
+        "access": "partial_full_text_html",
+        "correctionCheck": {
+          "checked_at": "2026-10-08",
+          "sources": [
+            "https://academic.oup.com/cid/advance-article/doi/10.1093/cid/ciag335/8702406"
+          ],
+          "result": "Publisher shows corrected/typeset 9 July 2026; NCBI metadata links earlier preprint (PMID 40832427) as UpdateOf. No separate correction notice retrieved. Full correction search remains bounded.",
+          "complete": false
+        }
+      },
+      "extraction": {
+        "file": "outputs/research/evidence/results.jsonl",
+        "resultIds": [
+          "R-A6-RD",
+          "R-A6-CD"
+        ],
+        "locators": [
+          {
+            "paper_id": "P-ACTIV6-2026",
+            "source_url": "https://academic.oup.com/cid/advance-article/doi/10.1093/cid/ciag335/8702406",
+            "file": "work/evidence/raw/activ6-web-extract.json",
+            "pdf_page": null,
+            "printed_page": null,
+            "section": "Results",
+            "table_figure": "Table 3 primary endpoint; Table 2 raw counts",
+            "paragraph": null,
+            "basis": "full_text",
+            "missingness": "not_applicable"
+          },
+          {
+            "paper_id": "P-ACTIV6-2026",
+            "source_url": "https://academic.oup.com/cid/advance-article/doi/10.1093/cid/ciag335/8702406",
+            "file": "work/evidence/raw/activ6-web-extract.json",
+            "pdf_page": null,
+            "printed_page": null,
+            "section": "Results",
+            "table_figure": "Table 3 secondary clinician diagnosis; Table 2 raw counts",
+            "paragraph": null,
+            "basis": "full_text",
+            "missingness": "not_applicable"
+          }
+        ]
+      },
+      "claims": {
+        "file": "outputs/research/evidence/claims.jsonl",
+        "items": [
+          {
+            "id": "C-PREVENT-A6",
+            "sentence": "ACTIV-6 did not reach its efficacy threshold for the primary long-term symptom outcome.",
+            "resultIds": [
+              "R-A6-RD"
+            ],
+            "scope": "Selected trial evidence only; not clinical recommendation",
+            "limits": "Possible benefit not ruled out; lower event rate and missing follow-up; secondary diagnosis is separate.",
+            "state": "source_checked"
+          },
+          {
+            "id": "C-PREVENT-NUM",
+            "sentence": "The ACTIV-6 adjusted day-180 symptom risk difference was −0.8 percentage points, with a 95% credible interval from −2.2 to 0.6.",
+            "resultIds": [
+              "R-A6-RD"
+            ],
+            "scope": "Selected trial evidence only; not clinical recommendation",
+            "limits": "Bayesian credible interval; not a percentage risk reduction; not proof of no effect.",
+            "state": "source_checked"
+          },
+          {
+            "id": "C-PREVENT-CD",
+            "sentence": "The ACTIV-6 secondary diagnosis result cannot substitute for its primary symptom result.",
+            "resultIds": [
+              "R-A6-RD",
+              "R-A6-CD"
+            ],
+            "scope": "Selected trial evidence only; not clinical recommendation",
+            "limits": "Editorial interpretation of endpoint hierarchy; secondary intervals unadjusted for multiplicity.",
+            "state": "source_checked"
+          }
+        ]
+      },
+      "appraisals": {
+        "file": "outputs/research/evidence/reviews.jsonl",
+        "items": [
+          {
+            "id": "REVIEW-P-ACTIV6-2026",
+            "version": "pilot-evidence-1.0.0",
+            "sha256": "9dcaa398ef24e5957f02985eef10712dcf9d07c3f0ed7378f2b5eb08fe62db13",
+            "method": {
+              "method": "RoB 2 proposed, not executed",
+              "version": "Not yet assigned: current method guidance must be verified before appraisal",
+              "status": "not_appraised",
+              "domains": [],
+              "outcome_scope": "Primary: symptoms attributed to COVID-19 or death on day 180; secondary clinician diagnosis",
+              "qualified_review": "pending"
+            },
+            "questions": "Q01–Q15 in this record",
+            "approval": [
+              {
+                "status": "pending",
+                "content_version": "pilot-evidence-1.0.0",
+                "content_sha256": "9dcaa398ef24e5957f02985eef10712dcf9d07c3f0ed7378f2b5eb08fe62db13",
+                "reviewer_id": null,
+                "reviewer_qualifications": null,
+                "conflicts": null,
+                "decision_at": null,
+                "scope": "editorial",
+                "notes": "Exact-version human review required before release"
+              }
+            ]
+          }
+        ]
+      },
+      "pageDiff": {
+        "base": "No earlier published edition in this pilot",
+        "proposed": "outputs/research/evidence/site-content.json",
+        "canonicalPageRecords": "outputs/research/evidence/corpus.json#/pages",
+        "pageIds": [
+          "G-MET-PREVENT",
+          "G-COMPARE",
+          "G-METFORMIN",
+          "G-LONGCOVID"
+        ],
+        "routes": [
+          "/answers/metformin-prevention",
+          "/comparisons/prevention-versus-treatment",
+          "/drugs/metformin",
+          "/conditions/long-covid"
+        ],
+        "note": "Review proposed source-linked sentences against original locator; future revisions require before/after diff against accepted version."
+      },
+      "decisions": {
+        "sourceAudit": "pending independent audit",
+        "humanEditorial": "pending",
+        "qualifiedSafety": "pending where applicable",
+        "disposition": "HOLD for release",
+        "reviewer": null,
+        "date": null,
+        "corrections": []
+      }
+    },
+    {
+      "paperId": "P-STOPPASC-2024",
+      "studyFamilyId": "S-STOPPASC-2024",
+      "source": {
+        "title": "Nirmatrelvir-Ritonavir and Symptoms in Adults With Postacute Sequelae of SARS-CoV-2 Infection: The STOP-PASC Randomized Clinical Trial",
+        "urls": [
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC11161857/",
+          "https://doi.org/10.1001/jamainternmed.2024.2007"
+        ],
+        "localPrivateFiles": [
+          "work/evidence/raw/stoppasc.html"
+        ],
+        "access": "full_text_html",
+        "correctionCheck": {
+          "checked_at": "2026-10-08",
+          "sources": [
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC11161857/",
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC11264073/"
+          ],
+          "result": "July 22 2024 correction repositions dashed lines in Figure 2. Current PMC article explicitly includes correction.",
+          "complete": true
+        }
+      },
+      "extraction": {
+        "file": "outputs/research/evidence/results.jsonl",
+        "resultIds": [
+          "R-SP-FATIGUE",
+          "R-SP-PRIMARY"
+        ],
+        "locators": [
+          {
+            "paper_id": "P-STOPPASC-2024",
+            "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11161857/",
+            "file": "work/evidence/raw/stoppasc.html",
+            "pdf_page": null,
+            "printed_page": null,
+            "section": "Results",
+            "table_figure": "Table 2 PROMIS fatigue",
+            "paragraph": null,
+            "basis": "full_text",
+            "missingness": "not_applicable"
+          },
+          {
+            "paper_id": "P-STOPPASC-2024",
+            "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11161857/",
+            "file": "work/evidence/raw/stoppasc.html",
+            "pdf_page": null,
+            "printed_page": null,
+            "section": "Results / Primary Outcome",
+            "table_figure": null,
+            "paragraph": null,
+            "basis": "full_text",
+            "missingness": "not_applicable"
+          }
+        ]
+      },
+      "claims": {
+        "file": "outputs/research/evidence/claims.jsonl",
+        "items": [
+          {
+            "id": "C-TREAT-SP",
+            "sentence": "STOP-PASC did not find a significant improvement in its selected symptom outcomes after a 15-day nirmatrelvir–ritonavir course.",
+            "resultIds": [
+              "R-SP-PRIMARY",
+              "R-SP-FATIGUE"
+            ],
+            "scope": "Selected trial evidence only; not clinical recommendation",
+            "limits": "Overall primary pooled null reported in Results; fatigue estimate illustrative secondary only, not proxy for pooled effect.",
+            "state": "source_checked"
+          }
+        ]
+      },
+      "appraisals": {
+        "file": "outputs/research/evidence/reviews.jsonl",
+        "items": [
+          {
+            "id": "REVIEW-P-STOPPASC-2024",
+            "version": "pilot-evidence-1.0.0",
+            "sha256": "137fc6d3ac478a3b00dc345a5c6f2ec9b7839a0807285ff84ceae9016fd414c3",
+            "method": {
+              "method": "RoB 2 proposed, not executed",
+              "version": "Not yet assigned: current method guidance must be verified before appraisal",
+              "status": "not_appraised",
+              "domains": [],
+              "outcome_scope": "Primary: pooled severity of six core symptoms at week 10",
+              "qualified_review": "pending"
+            },
+            "questions": "Q01–Q15 in this record",
+            "approval": [
+              {
+                "status": "pending",
+                "content_version": "pilot-evidence-1.0.0",
+                "content_sha256": "137fc6d3ac478a3b00dc345a5c6f2ec9b7839a0807285ff84ceae9016fd414c3",
+                "reviewer_id": null,
+                "reviewer_qualifications": null,
+                "conflicts": null,
+                "decision_at": null,
+                "scope": "editorial",
+                "notes": "Exact-version human review required before release"
+              }
+            ]
+          }
+        ]
+      },
+      "pageDiff": {
+        "base": "No earlier published edition in this pilot",
+        "proposed": "outputs/research/evidence/site-content.json",
+        "canonicalPageRecords": "outputs/research/evidence/corpus.json#/pages",
+        "pageIds": [
+          "G-NMV-TREAT",
+          "G-COMPARE",
+          "G-LONGCOVID"
+        ],
+        "routes": [
+          "/answers/paxlovid-treatment",
+          "/comparisons/prevention-versus-treatment",
+          "/conditions/long-covid"
+        ],
+        "note": "Review proposed source-linked sentences against original locator; future revisions require before/after diff against accepted version."
+      },
+      "decisions": {
+        "sourceAudit": "pending independent audit",
+        "humanEditorial": "pending",
+        "qualifiedSafety": "pending where applicable",
+        "disposition": "HOLD for release",
+        "reviewer": null,
+        "date": null,
+        "corrections": []
+      }
+    },
+    {
+      "paperId": "P-KOREA-2026",
+      "studyFamilyId": "S-KOREA-2026",
+      "source": {
+        "title": "Neither Metformin nor Ursodeoxycholic Acid Effectively Treats Postacute Sequelae of COVID-19 : A Randomized Clinical Trial.",
+        "urls": [
+          "https://pubmed.ncbi.nlm.nih.gov/41771135/",
+          "https://doi.org/10.7326/annals-25-04883"
+        ],
+        "localPrivateFiles": [
+          "work/evidence/raw/pubmed-metadata.xml"
+        ],
+        "access": "abstract_only",
+        "correctionCheck": {
+          "checked_at": "2026-10-08",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/41771135/"
+          ],
+          "result": "NCBI metadata checked; no linked correction/retraction in retrieved record. Publisher full-text/correction check incomplete.",
+          "complete": false
+        }
+      },
+      "extraction": {
+        "file": "outputs/research/evidence/results.jsonl",
+        "resultIds": [
+          "R-KR-RECOVERY"
+        ],
+        "locators": [
+          {
+            "paper_id": "P-KOREA-2026",
+            "source_url": "https://pubmed.ncbi.nlm.nih.gov/41771135/",
+            "file": "work/evidence/raw/pubmed-metadata.xml",
+            "pdf_page": null,
+            "printed_page": null,
+            "section": "Results",
+            "table_figure": "Abstract Results",
+            "paragraph": null,
+            "basis": "abstract",
+            "missingness": "not_applicable"
+          }
+        ]
+      },
+      "claims": {
+        "file": "outputs/research/evidence/claims.jsonl",
+        "items": [
+          {
+            "id": "C-TREAT-KR",
+            "sentence": "A South Korean randomized trial did not demonstrate improved long COVID recovery with a two-week metformin course.",
+            "resultIds": [
+              "R-KR-RECOVERY"
+            ],
+            "scope": "Selected trial evidence only; not clinical recommendation",
+            "limits": "Abstract-level result; does not settle every population or regimen.",
+            "state": "source_checked"
+          }
+        ]
+      },
+      "appraisals": {
+        "file": "outputs/research/evidence/reviews.jsonl",
+        "items": []
+      },
+      "pageDiff": {
+        "base": "No earlier published edition in this pilot",
+        "proposed": "outputs/research/evidence/site-content.json",
+        "canonicalPageRecords": "outputs/research/evidence/corpus.json#/pages",
+        "pageIds": [
+          "G-MET-TREAT",
+          "G-COMPARE",
+          "G-METFORMIN",
+          "G-LONGCOVID"
+        ],
+        "routes": [
+          "/answers/metformin-treatment",
+          "/comparisons/prevention-versus-treatment",
+          "/drugs/metformin",
+          "/conditions/long-covid"
+        ],
+        "note": "Review proposed source-linked sentences against original locator; future revisions require before/after diff against accepted version."
+      },
+      "decisions": {
+        "sourceAudit": "pending independent audit",
+        "humanEditorial": "pending",
+        "qualifiedSafety": "pending where applicable",
+        "disposition": "HOLD for release",
+        "reviewer": null,
+        "date": null,
+        "corrections": []
+      }
+    },
+    {
+      "paperId": "P-RECOVER-2026",
+      "studyFamilyId": "S-RECOVER-2026",
+      "source": {
+        "title": "Nirmatrelvir-ritonavir targeting viral persistence in post-COVID-19 condition (long COVID) in the USA (RECOVER-VITAL): a randomised, double-blind, placebo-controlled, phase 2 trial.",
+        "urls": [
+          "https://pubmed.ncbi.nlm.nih.gov/42673984/",
+          "https://doi.org/10.1016/s1473-3099(26)00406-8"
+        ],
+        "localPrivateFiles": [
+          "work/evidence/raw/pubmed-metadata.xml"
+        ],
+        "access": "abstract_only",
+        "correctionCheck": {
+          "checked_at": "2026-10-08",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/42673984/"
+          ],
+          "result": "NCBI metadata checked; no linked correction/retraction in retrieved record. Full text and supplements pending.",
+          "complete": false
+        }
+      },
+      "extraction": {
+        "file": "outputs/research/evidence/results.jsonl",
+        "resultIds": [
+          "R-RV-NULL"
+        ],
+        "locators": [
+          {
+            "paper_id": "P-RECOVER-2026",
+            "source_url": "https://pubmed.ncbi.nlm.nih.gov/42673984/",
+            "file": "work/evidence/raw/pubmed-metadata.xml",
+            "pdf_page": null,
+            "printed_page": null,
+            "section": "Results",
+            "table_figure": "Abstract Findings",
+            "paragraph": null,
+            "basis": "abstract",
+            "missingness": "not_applicable"
+          }
+        ]
+      },
+      "claims": {
+        "file": "outputs/research/evidence/claims.jsonl",
+        "items": [
+          {
+            "id": "C-TREAT-RV",
+            "sentence": "RECOVER-VITAL reported no significant primary-outcome benefit across its studied symptom phenotypes.",
+            "resultIds": [
+              "R-RV-NULL"
+            ],
+            "scope": "Selected trial evidence only; not clinical recommendation",
+            "limits": "Abstract only; full text and supplement appraisal pending; cannot rule out all antiviral strategies.",
+            "state": "source_checked"
+          }
+        ]
+      },
+      "appraisals": {
+        "file": "outputs/research/evidence/reviews.jsonl",
+        "items": []
+      },
+      "pageDiff": {
+        "base": "No earlier published edition in this pilot",
+        "proposed": "outputs/research/evidence/site-content.json",
+        "canonicalPageRecords": "outputs/research/evidence/corpus.json#/pages",
+        "pageIds": [
+          "G-NMV-TREAT"
+        ],
+        "routes": [
+          "/answers/paxlovid-treatment",
+          "/conditions/long-covid"
+        ],
+        "note": "Review proposed source-linked sentences against original locator; future revisions require before/after diff against accepted version."
+      },
+      "decisions": {
+        "sourceAudit": "pending independent audit",
+        "humanEditorial": "pending",
+        "qualifiedSafety": "pending where applicable",
+        "disposition": "HOLD for release",
+        "reviewer": null,
+        "date": null,
+        "corrections": []
+      }
+    },
+    {
+      "paperId": "P-REVIVE-2026",
+      "studyFamilyId": "S-REVIVE-2026",
+      "source": {
+        "title": "The Effect of Fluvoxamine and Metformin for Fatigue in Patients With Long COVID : An Adaptive Randomized Trial.",
+        "urls": [
+          "https://pubmed.ncbi.nlm.nih.gov/41911553/",
+          "https://doi.org/10.7326/annals-25-03959"
+        ],
+        "localPrivateFiles": [
+          "work/evidence/raw/pubmed-metadata.xml"
+        ],
+        "access": "abstract_only",
+        "correctionCheck": {
+          "checked_at": "2026-10-08",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/41911553/",
+            "https://pubmed.ncbi.nlm.nih.gov/42832813/",
+            "https://doi.org/10.7326/ANNALS-26-03050"
+          ],
+          "result": "QUARANTINE: NCBI RetractionIn points to PMID 42832813 (6 October 2026), Notice of Retraction and Republication, DOI 10.7326/ANNALS-26-03050. Replacement version and reason not yet acquired; no efficacy claim may use original.",
+          "complete": false
+        }
+      },
+      "extraction": {
+        "file": "outputs/research/evidence/results.jsonl",
+        "resultIds": [],
+        "locators": []
+      },
+      "claims": {
+        "file": "outputs/research/evidence/claims.jsonl",
+        "items": []
+      },
+      "appraisals": {
+        "file": "outputs/research/evidence/reviews.jsonl",
+        "items": []
+      },
+      "pageDiff": {
+        "base": "No earlier published edition in this pilot",
+        "proposed": "outputs/research/evidence/site-content.json",
+        "canonicalPageRecords": "outputs/research/evidence/corpus.json#/pages",
+        "pageIds": [
+          "G-MET-TREAT",
+          "G-METFORMIN"
+        ],
+        "routes": [
+          "/answers/metformin-treatment",
+          "/drugs/metformin"
+        ],
+        "note": "Review proposed source-linked sentences against original locator; future revisions require before/after diff against accepted version."
+      },
+      "decisions": {
+        "sourceAudit": "pending independent audit",
+        "humanEditorial": "pending",
+        "qualifiedSafety": "pending where applicable",
+        "disposition": "HOLD for release",
+        "reviewer": null,
+        "date": null,
+        "corrections": []
+      }
+    }
+  ],
+  "reviewProtocol": [
+    "Open original source/notice and exact locator.",
+    "Compare extracted field/units/denominator with source.",
+    "Assess design and Q01-Q15; distinguish missing from not identifiable.",
+    "Check claim applicability and exact page sentence/citation.",
+    "Record accept/reject/correct/adjudicate for exact version/hash in review record; never overwrite earlier decisions.",
+    "Reopen affected page/product gates after any change."
+  ],
+  "extraSiteContent": {
+    "note": "Site includes navigation/entities/condition/practical content beyond original4page corpus. Track source provenance and review separately; not implicitly accepted by corpus validator.",
+    "adapter": "site/data/content.json",
+    "practicalAdapter": "outputs/governance/practical-guide-adapter.json",
+    "practicalReviewManifest": "outputs/governance/guide-release-manifest.json"
+  },
+  "schemaSha256": "32953789f4b96f19d7f7f44394f930aa33dceb33245478cde2fcab2c28cc5a70"
+}

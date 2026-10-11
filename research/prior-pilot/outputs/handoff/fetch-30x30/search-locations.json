@@ -1,0 +1,88 @@
+{
+  "version": "1.0",
+  "verification": "Entry URLs supplied as retrieval starting points; no network/access check or source verification performed in this repair. The worker logs actual availability and translated searches.",
+  "retrieval_order": [
+    "Reconcile held metadata/source identifiers and source-specific leads before duplicate download",
+    "Search primary indexes and registries with every assigned question query; screening is not fulltext acquisition",
+    "Resolve verified identities to publisher report/supplement/notice pages; seek lawful PMC/repository versions and authorized library access if available",
+    "Chase references/linked reports and report missing/paywalled originals, supplements and versions; do not stop at open access",
+    "Run final update at declared cutoff and reconcile both target axes/question gaps"
+  ],
+  "entries": [
+    {
+      "name": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "role": "Biomedical discovery/identity and links to full text; abstract/index record is not a fulltext file",
+      "query_policy": "Use each requests.json queries[] Boolean seed; record actual syntax/filters/date/hit counts."
+    },
+    {
+      "name": "PMC",
+      "url": "https://pmc.ncbi.nlm.nih.gov/",
+      "role": "Lawful available fulltext HTML/PDF and supplements when present; not an exhaustive discovery source",
+      "query_policy": "Search title/PMCID/DOI and exact drug-condition terms after identity reconciliation."
+    },
+    {
+      "name": "ClinicalTrials.gov",
+      "url": "https://clinicaltrials.gov/",
+      "role": "Registry identity, status, posted results and linked report leads; registry is not primary-report PDF",
+      "query_policy": "Search printed NCT IDs plus each drug/condition question; distinguish registry results from published report."
+    },
+    {
+      "name": "Europe PMC",
+      "url": "https://europepmc.org/",
+      "role": "Index/identity, citation leads and available repository fulltexts",
+      "query_policy": "Translate same assigned queries and log exact query."
+    },
+    {
+      "name": "WHO ICTRP",
+      "url": "https://trialsearch.who.int/",
+      "role": "Cross-registry discovery; availability/coverage must be recorded",
+      "query_policy": "Drug/condition synonyms and known registry IDs; no unsupported zero-results claim."
+    },
+    {
+      "name": "ISRCTN",
+      "url": "https://www.isrctn.com/",
+      "role": "Registry and linked-report discovery",
+      "query_policy": "Drug/condition synonyms and registry IDs."
+    },
+    {
+      "name": "EU CTIS",
+      "url": "https://euclinicaltrials.eu/search-for-clinical-trials/",
+      "role": "EU clinical-trial public search and linked public documents",
+      "query_policy": "Drug/condition synonyms; record actual platform limits."
+    },
+    {
+      "name": "DOI resolver and publisher",
+      "url": "https://doi.org/",
+      "role": "Resolve an actual printed or already verified DOI to publisher identity/fulltext/supplements; never construct absent DOI",
+      "query_policy": "known-source-locations.json distinguishes copied prior identities from unverified printed leads. Verify before marking identity checked."
+    },
+    {
+      "name": "DailyMed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/",
+      "role": "US product labeling context; preserve jurisdiction/product/version/date; not efficacy evidence",
+      "query_policy": "Exact generic ingredient/form/route; reconcile label role with official regulatory sources."
+    },
+    {
+      "name": "FDA Drugs@FDA",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+      "role": "US approval and official labeling context; exact product/use/date required",
+      "query_policy": "Exact generic/product application; do not infer approval from study/book wording."
+    },
+    {
+      "name": "EMA medicines",
+      "url": "https://www.ema.europa.eu/en/medicines",
+      "role": "EU official medicine assessment/product context where relevant",
+      "query_policy": "Exact generic/formulation/product; state jurisdiction and date."
+    },
+    {
+      "name": "Conditional licensed indexes/libraries",
+      "url": null,
+      "role": "Embase/CENTRAL and authorized institution/library holdings only when this worker actually has permitted access",
+      "query_policy": "No credentials/library access supplied or assumed. Record unavailable services; continue lawful publisher/repository routes. Never bypass paywalls."
+    }
+  ],
+  "query_briefs_path": "requests.json",
+  "specific_query_links_path": "query-locations.json",
+  "known_identifiers_path": "known-source-locations.json"
+}

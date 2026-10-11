@@ -1,0 +1,16 @@
+name: Rules and research continuity
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  governance:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify rule package, frozen baseline and ingestion handoff
+        run: node scripts/check-governance.mjs

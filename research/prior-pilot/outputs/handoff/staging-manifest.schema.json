@@ -1,0 +1,136 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:second-look:staging-manifest:1.0",
+  "title": "Second Look operational acquisition inventory; not canonical evidence",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "batch_id": {
+        "type": "string"
+      },
+      "plan_id": {
+        "type": "string"
+      },
+      "plan_sha256": {
+        "type": "string",
+        "pattern": "^[a-f0-9]{64}$"
+      },
+      "schema_version": {
+        "const": "1.0.0"
+      },
+      "source_id": {
+        "type": "string"
+      },
+      "original_url": {
+        "type": "string"
+      },
+      "resolved_url": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "retrieved_at": {
+        "type": "string"
+      },
+      "filename": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "media_type": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "bytes": {
+        "type": [
+          "integer",
+          "null"
+        ],
+        "minimum": 0
+      },
+      "sha256": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "pattern": "^[a-f0-9]{64}$"
+      },
+      "rights_or_missing_reason": {
+        "type": "string"
+      },
+      "access_state": {
+        "enum": [
+          "full_text_pdf",
+          "full_text_html",
+          "partial_snapshot",
+          "abstract",
+          "metadata",
+          "registry",
+          "unreadable",
+          "not_accessible"
+        ]
+      },
+      "language": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "collection": {
+        "enum": [
+          "PRIMARY",
+          "CONTEXT"
+        ]
+      },
+      "candidate_type": {
+        "type": "string"
+      },
+      "disposition": {
+        "enum": [
+          "pending_triage",
+          "eligible_supported",
+          "duplicate",
+          "context",
+          "excluded",
+          "quarantined",
+          "unreadable",
+          "pending_access",
+          "schema_extension_required"
+        ]
+      },
+      "duplicate_of_or_null": {
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "required": [
+      "batch_id",
+      "plan_id",
+      "plan_sha256",
+      "schema_version",
+      "source_id",
+      "original_url",
+      "resolved_url",
+      "retrieved_at",
+      "filename",
+      "media_type",
+      "bytes",
+      "sha256",
+      "rights_or_missing_reason",
+      "access_state",
+      "language",
+      "collection",
+      "candidate_type",
+      "disposition",
+      "duplicate_of_or_null"
+    ]
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "schemaVersion": "second-look-ingestion-plan-review-1",
+  "reviewedAt": "2026-10-08T07:06:47.828488+00:00",
+  "reviewer": "Independent AI plan auditor /root/rule_audit; not scientific or human approval",
+  "scope": "Read-only review of persisted plan against canonical v1.3 §4 and current schema/fixture/corpus/topic map. No new acquisition, source extraction, canonical evidence import, site or rule modification.",
+  "plan": {
+    "id": "SL-INGEST-1.0",
+    "version": "1.0",
+    "createdAt": "2026-10-08T06:51:18.683276+00:00",
+    "draftFinalizedAt": "2026-10-08T06:53:34.284697+00:00",
+    "path": "outputs/handoff/ingestion-plan-v1.0.json",
+    "sha256": "94aa213b11cd7ce879eb83e3ea819b706000725ed6ed31b379d4e87b0cd3b07c"
+  },
+  "rule": {
+    "version": "1.3",
+    "section": "§4 Ingestion plan comes before requests and ingestion",
+    "path": "/Users/kmfp/Documents/ChatGPT/Pepsanon.com/one-match-rule/ONE-MATCH-RULE.md",
+    "sha256": "361e8beb93c7544ea3afe0af2f5bb5aaf223b4916ab4dc112e7a228c929efa12",
+    "frozenPilotBaselineUnchanged": true
+  },
+  "decision": {
+    "planContentAndUsability": "PASS for declared staged acquisition and supported-class calibration scope",
+    "recommendation": "Mission Control may record GP Plan PASS/READY for this exact digest autonomously. No additional owner-approval step is required.",
+    "operationAuthority": "This review does not itself dispatch a request, extract a source or merge evidence. The actual outgoing packet and each operation must pass the plan-specific preflight after Mission Control readiness is recorded.",
+    "historicalCompliance": "RETROSPECTIVE: earlier pilot acquisition/extraction/import and prompt handoff occurred without this concrete plan. Current readiness must not be represented as prior compliance.",
+    "unsupportedClasses": "Modeling extraction/import remains HOLD until schema/plan revision and fixture validation. Registry outcome extraction outside the current representation is likewise HOLD; raw acquisition/inventory remains allowed by the staging contract."
+  },
+  "requirementChecks": [
+    {
+      "requirement": "Scope, questions, inclusion/exclusion, discovery/closed packet, PRIMARY/CONTEXT, known gaps",
+      "result": "PASS",
+      "evidence": "36 actual DR IDs match topic-map exactly; B00–B06 union covers all and only those IDs. Cutoff, directness, exclusions and current correction/retraction/access gaps are explicit."
+    },
+    {
+      "requirement": "Requested files/metadata, actual schema, naming/manifest/hash conventions and return/staging",
+      "result": "PASS within declared scope",
+      "evidence": "Current schema/fixture are accessible and validate. Fixed filenames and operational fields are explicit; staging-manifest.schema.json handles acquisition-only states. External ZIP attachments return to Mission Control; local directories are assigned only to the integrator."
+    },
+    {
+      "requirement": "Canonical identity, deduplication/families, provenance, result/claim/page relations",
+      "result": "PASS",
+      "evidence": "Identity/version conflict and quarantine paths, existing stable IDs, relation chain and DR001–004 mappings specified; no fuzzy overwrite or synthetic evidence accepted."
+    },
+    {
+      "requirement": "Batch priorities/dependencies, worker/integrator responsibility, calibration/scaling/workload",
+      "result": "PASS",
+      "evidence": "B00 chronology then B01 integrity/safety repair precede broader topics; owners and unlaunched state explicit. Varied20–30-document calibration with justified smaller scope; material errors block scale. No reliable observed throughput claimed; timing and rework collection required next calibration."
+    },
+    {
+      "requirement": "Extraction, numeric/source verification, review boundaries, acceptance/counts/missingness",
+      "result": "PASS",
+      "evidence": "Every eligible full text gets located extraction or pending state; all launch-supporting records plus random≥10% of other full texts audited. Counts, missing/unreadable/contradictory material and exact-version human release remain separate."
+    },
+    {
+      "requirement": "Retry/resume, idempotence, preservation, rollback/revisions",
+      "result": "PASS",
+      "evidence": "Bounded documented retrieval attempts and stage exceptions; raw preservation, candidate patch, fresh accepted-base hash, unchanged-input reimport and affected-record rollback specified."
+    },
+    {
+      "requirement": "Actual guide/review/FAQ/citation mapping and batch completion evidence",
+      "result": "PASS",
+      "evidence": "DR→report/study/result→claim→review/sentence→page path explicit; record/page diffs and invalidated approvals returned. Unanswered topics remain acquisition-pending rather than invented answer pages."
+    },
+    {
+      "requirement": "Readiness provenance, no retrospective compliance and per-operation gate",
+      "result": "PLAN READY FOR MISSION CONTROL RECORD",
+      "evidence": "Plan ID/version/time/digest known, exact owner instruction recorded, sequence audit exists. Root must record readiness and attach this exact version before any new ready-to-send handoff or dependent operation."
+    }
+  ],
+  "initialFindingsResolved": [
+    {
+      "id": "IPR-001",
+      "initial": "Referenced chronology audit absent at first read",
+      "resolution": "outputs/governance/ingestion-sequence-audit.json now exists and distinguishes retained order from filesystem timestamps; no backdating."
+    },
+    {
+      "id": "IPR-002",
+      "initial": "Modeling, registry and unreadable inventory not directly represented by paper enums",
+      "resolution": "Explicit supported enums and canonical/staging mapping added. Modeling is schema_extension_required/HOLD; registry protocol uses CONTEXT with excluded_from_study_counts=true; unreadable stays operational exception or truthful metadata."
+    },
+    {
+      "id": "IPR-003",
+      "initial": "Four required pilot result IDs make production validator unusable on isolated unrelated batches",
+      "resolution": "Read-only candidate wrapper separately requires synthetic=false and safely uses semantic/schema checks without fixed calibration-ID assertions. Closed graphs include dependencies; normal fixed regression runs on merged scratch before P3. New evidence classes require compatible fixture validation before P2."
+    },
+    {
+      "id": "IPR-004",
+      "initial": "Only local Mac return paths documented for external Grokbot",
+      "resolution": "Portable attached ZIP return to Mission Control explicitly specified; integrator performs local staging."
+    }
+  ],
+  "executedChecks": [
+    {
+      "check": "Input digests",
+      "result": "PASS all 7 declared inputs match, including typed staging schema"
+    },
+    {
+      "check": "Topic/batch scope",
+      "result": "PASS exactly36 DR IDs, no omissions/extras"
+    },
+    {
+      "check": "Current schema and synthetic fixture",
+      "result": "PASS Draft2020-12 schema valid; corpus and illustrative graph have zero structural errors"
+    },
+    {
+      "check": "Staging schema",
+      "result": "PASS schema valid and an in-memory illustrative modeling/schema_extension_required inventory validates; not retained as real evidence"
+    },
+    {
+      "check": "Candidate wrapper against current corpus",
+      "result": "PASS exit0, imported=false"
+    },
+    {
+      "check": "Candidate wrapper against synthetic fixture",
+      "result": "EXPECTED HOLD exit1: Synthetic fixture cannot be an evidence candidate"
+    },
+    {
+      "check": "Closed illustrative graph lacking fixed pilot IDs",
+      "result": "PASS semantic validation with production=False; wrapper synthetic guard independently confirmed"
+    }
+  ],
+  "artifactSha256": {
+    "outputs/handoff/ingestion-plan-v1.0.json": "94aa213b11cd7ce879eb83e3ea819b706000725ed6ed31b379d4e87b0cd3b07c",
+    "outputs/handoff/ingestion-plan-v1.0.md": "3d9e3b6c858d661fcc64247e38a3efdc54e216988611382b6d3567b63b83a939",
+    "outputs/handoff/staging-manifest.schema.json": "92cf0389dda5b41094787a1df1cddee43078583797a21e2a3fa56076a7ed51a5",
+    "outputs/handoff/check-candidate-corpus.py": "c3a359b4c12dfd293d1a286e9e52d961f3cc0dfb1aa44a15eb614f285c5ffcf1",
+    "outputs/handoff/check-ingestion-readiness.py": "20d61044355e5f9c0b57d7335d35278b4db4a31689580e6992f3b24cd3a0ad79",
+    "outputs/governance/ingestion-sequence-audit.json": "b42b772bfd29860232a6a58d8fcb1b19729923d8f30e0a651800c6fed2dec7bd",
+    "outputs/governance/ingestion-reconciliation.json": "fc76a6ac37232b93c624d24e812792922552ce6a69828a299e4b025f642fbae1",
+    "outputs/governance/ingestion-plan-validation.json": "c6f6e3a2fb65b01e7e48aab096e9a22b8ef22b74f41df369b04134c1a7cda3ac"
+  },
+  "remainingPlanDefects": [],
+  "nextGateActions": [
+    "Mission Control records GP Plan readiness with this plan ID/version/time/location/digest; preserve retrospective chronology.",
+    "Rebuild/attach outgoing acquisition packet with exact plan, current schema, fixture, typed staging inventory, topics/identity snapshot and readiness receipt. Supersede earlier unplanned handoff artifacts without rewriting their history.",
+    "Before next handoff/dispatch run P1; before extraction run P2 against real receipt and supported class; before any merge require P3 diffs, fresh base, repeat-import and independent check.",
+    "Collect actual extraction/verification active minutes at next calibration before forecasting scale."
+  ],
+  "notCompletedByThisReview": [
+    "No Grokbot job or request sent",
+    "No new source acquired/extracted/imported",
+    "No unsupported-class schema migration",
+    "No complete literature review or human approval",
+    "No production scientific/commercial release"
+  ],
+  "validationLimits": "These are plan and current-fixture checks. The new operational wrapper is not a generic merge engine and does not prove future numeric accuracy, rights or source completeness. Real packets require their own gate records and representability checks.",
+  "retrospectiveReconciliationReadback": {
+    "artifact": "outputs/governance/ingestion-reconciliation.json",
+    "result": "All eight reconciliation items recorded complete as historical metadata, not scientific remediation or prior compliance. B00 need not repeat source extraction solely to create a plan.",
+    "historicalChallengeFiles": "Three failed/challenge HTML files versus historical manifest count two; correction carried separately while historical source manifest stays immutable. Zero count as full-text papers."
+  },
+  "reportedSupplementalValidation": {
+    "artifact": "outputs/governance/ingestion-plan-validation.json",
+    "scope": "Root read-only validation record inspected; distinguish from this worker executed checks",
+    "result": "Current graph PASS; closed real-record subset without four fixed result IDs PASS; synthetic candidate rejected; existing corpus unchanged."
+  }
+}

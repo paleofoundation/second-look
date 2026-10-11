@@ -1,0 +1,909 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:second-look:mechanisms:1.0",
+  "title": "Prospective source-reported mechanisms intake, not a scientific release schema",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "SL-MECHANISMS-1.0"
+    },
+    "plan_id": {
+      "const": "SL-MECHANISMS-ADDENDUM-1.0"
+    },
+    "plan_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "fixture": {
+      "type": "boolean"
+    },
+    "production_eligible": {
+      "const": false
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/source"
+      },
+      "minItems": 0
+    },
+    "locators": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/locator"
+      },
+      "minItems": 0
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/record"
+      },
+      "minItems": 0
+    }
+  },
+  "required": [
+    "schema_version",
+    "plan_id",
+    "plan_sha256",
+    "fixture",
+    "production_eligible",
+    "sources",
+    "locators",
+    "records"
+  ],
+  "$defs": {
+    "field": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "enum": [
+            "reported",
+            "not_extracted",
+            "not_reported",
+            "not_accessible",
+            "not_applicable",
+            "not_checked",
+            "not_identifiable",
+            "conflicting"
+          ]
+        },
+        "value": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "claim_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true,
+          "minItems": 0
+        },
+        "reason": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "status",
+        "value",
+        "claim_ids",
+        "reason"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "reported"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "type": "string",
+                "minLength": 1
+              },
+              "claim_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "uniqueItems": true,
+                "minItems": 1
+              },
+              "reason": {
+                "type": "null"
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "value": {
+                "type": "null"
+              },
+              "reason": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "source_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "report_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "study_family_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "study_family_missing_reason": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "filename": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "doi_printed": {
+          "type": "string",
+          "minLength": 1
+        },
+        "manifest_doi": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "doi_authority": {
+          "enum": [
+            "printed_source",
+            "manifest_authoritative"
+          ]
+        },
+        "metadata_conflict": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "governing_acquisition_plan_id": {
+          "enum": [
+            "SL-INGEST-3.0-FETCH30",
+            "SL-INGEST-3.1-FETCH30",
+            "CP28-INGEST-2.0",
+            "SYNTHETIC-EXCLUDED"
+          ]
+        },
+        "receipt_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "collection": {
+          "enum": [
+            "PRIMARY",
+            "CONTEXT"
+          ]
+        },
+        "declared_tier": {
+          "type": "string",
+          "minLength": 1
+        },
+        "observed_type": {
+          "enum": [
+            "original_report",
+            "review",
+            "textbook",
+            "regulatory",
+            "protocol",
+            "registry",
+            "supplement",
+            "other"
+          ]
+        },
+        "evidence_tier": {
+          "enum": [
+            "human_mechanistic",
+            "human_clinical",
+            "animal",
+            "cell",
+            "ex_vivo",
+            "computational",
+            "secondary_context",
+            "regulatory_context",
+            "protocol",
+            "registry",
+            "not_classified"
+          ]
+        },
+        "access": {
+          "enum": [
+            "full_text_pdf",
+            "full_text_html",
+            "full_text_xml",
+            "full_text_epub",
+            "abstract_only",
+            "metadata_only",
+            "partial",
+            "registry"
+          ]
+        },
+        "inspection_scope": {
+          "enum": [
+            "not_inspected",
+            "full_source",
+            "partial_source",
+            "abstract_only"
+          ]
+        },
+        "correction_state": {
+          "enum": [
+            "not_checked",
+            "no_notice_in_supplied_packet",
+            "correction_unresolved",
+            "corrected_version_verified",
+            "retracted",
+            "replacement_unlinked"
+          ]
+        },
+        "quarantined": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "source_id",
+        "report_id",
+        "study_family_id",
+        "study_family_missing_reason",
+        "filename",
+        "sha256",
+        "doi_printed",
+        "manifest_doi",
+        "doi_authority",
+        "metadata_conflict",
+        "governing_acquisition_plan_id",
+        "receipt_ref",
+        "collection",
+        "declared_tier",
+        "observed_type",
+        "evidence_tier",
+        "access",
+        "inspection_scope",
+        "correction_state",
+        "quarantined"
+      ]
+    },
+    "locator": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "kind": {
+          "enum": [
+            "pdf",
+            "html",
+            "xml",
+            "epub",
+            "registry"
+          ]
+        },
+        "pdf_page": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "printed_page": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "printed_page_missing_reason": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "native_path": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "xpath_or_fragment": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "section": {
+          "type": "string",
+          "minLength": 1
+        },
+        "anchor": {
+          "type": "string",
+          "minLength": 1
+        },
+        "table": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "figure": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "row_column": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "source_id",
+        "source_sha256",
+        "kind",
+        "pdf_page",
+        "printed_page",
+        "printed_page_missing_reason",
+        "native_path",
+        "xpath_or_fragment",
+        "section",
+        "anchor",
+        "table",
+        "figure",
+        "row_column"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "pdf"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "pdf_page": {
+                "type": "integer",
+                "minimum": 1
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "pdf_page": {
+                "type": "null"
+              },
+              "native_path": {
+                "type": "string",
+                "minLength": 1
+              },
+              "xpath_or_fragment": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "printed_page": {
+                "type": "null"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "printed_page_missing_reason": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "printed_page_missing_reason": {
+                "type": "null"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "claim": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1
+        },
+        "facet": {
+          "enum": [
+            "target_pathway",
+            "direction_action",
+            "original_use_mechanism",
+            "condition_rationale",
+            "model_population",
+            "exposure",
+            "target_engagement",
+            "causal_evidence",
+            "limitations",
+            "counterevidence"
+          ]
+        },
+        "basis": {
+          "enum": [
+            "direct_measurement",
+            "author_inference",
+            "author_hypothesis",
+            "computational_prediction",
+            "secondary_description",
+            "regulatory_description"
+          ]
+        },
+        "reported_direction": {
+          "enum": [
+            "increase",
+            "decrease",
+            "activation",
+            "inhibition",
+            "binding",
+            "no_detected_change",
+            "mixed",
+            "not_tested",
+            "not_reported",
+            "not_identifiable"
+          ]
+        },
+        "support_state": {
+          "enum": [
+            "supporting",
+            "contradictory",
+            "null_mechanistic_result",
+            "mixed",
+            "uncertain",
+            "not_tested"
+          ]
+        },
+        "locator_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true,
+          "minItems": 1
+        },
+        "numeric_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true,
+          "minItems": 0
+        },
+        "wording_origin": {
+          "enum": [
+            "source_reported_paraphrase",
+            "editorial_paraphrase"
+          ]
+        },
+        "clinical_benefit_inferred": {
+          "const": false
+        }
+      },
+      "required": [
+        "id",
+        "text",
+        "facet",
+        "basis",
+        "reported_direction",
+        "support_state",
+        "locator_ids",
+        "numeric_ids",
+        "wording_origin",
+        "clinical_benefit_inferred"
+      ]
+    },
+    "number": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "claim_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "value": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "missing_reason": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "reported_text": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "quantity_type": {
+          "enum": [
+            "dose",
+            "concentration",
+            "sample_size",
+            "percentage",
+            "percentage_points",
+            "relative_change",
+            "target_activity",
+            "binding_parameter",
+            "model_score",
+            "time",
+            "other"
+          ]
+        },
+        "units": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "denominator": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "denominator_missing_reason": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "uncertainty_as_reported": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "uncertainty_missing_reason": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "locator_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true,
+          "minItems": 1
+        }
+      },
+      "required": [
+        "id",
+        "claim_id",
+        "value",
+        "missing_reason",
+        "reported_text",
+        "quantity_type",
+        "units",
+        "denominator",
+        "denominator_missing_reason",
+        "uncertainty_as_reported",
+        "uncertainty_missing_reason",
+        "locator_ids"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "value": {
+                "type": "null"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "missing_reason": {
+                "enum": [
+                  "not_extracted",
+                  "not_reported",
+                  "not_accessible",
+                  "not_applicable",
+                  "not_checked",
+                  "not_identifiable",
+                  "conflicting"
+                ]
+              },
+              "reported_text": {
+                "type": "null"
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "missing_reason": {
+                "type": "null"
+              },
+              "reported_text": {
+                "type": "string",
+                "minLength": 1
+              },
+              "units": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "record": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "drug_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "condition_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "purpose": {
+          "enum": [
+            "original_use",
+            "repurposed_use"
+          ]
+        },
+        "scope_as_reported": {
+          "$ref": "#/$defs/field"
+        },
+        "source_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true,
+          "minItems": 1
+        },
+        "primary_source_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "mechanism_fields": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "target_pathway": {
+              "$ref": "#/$defs/field"
+            },
+            "direction_action": {
+              "$ref": "#/$defs/field"
+            },
+            "original_use_mechanism": {
+              "$ref": "#/$defs/field"
+            },
+            "condition_rationale": {
+              "$ref": "#/$defs/field"
+            },
+            "model_population": {
+              "$ref": "#/$defs/field"
+            },
+            "exposure": {
+              "$ref": "#/$defs/field"
+            },
+            "target_engagement": {
+              "$ref": "#/$defs/field"
+            },
+            "causal_evidence": {
+              "$ref": "#/$defs/field"
+            },
+            "limitations": {
+              "$ref": "#/$defs/field"
+            },
+            "counterevidence": {
+              "$ref": "#/$defs/field"
+            }
+          },
+          "required": [
+            "target_pathway",
+            "direction_action",
+            "original_use_mechanism",
+            "condition_rationale",
+            "model_population",
+            "exposure",
+            "target_engagement",
+            "causal_evidence",
+            "limitations",
+            "counterevidence"
+          ]
+        },
+        "claims": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/claim"
+          },
+          "minItems": 0
+        },
+        "numbers": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/number"
+          },
+          "minItems": 0
+        },
+        "counts_as_original_research": {
+          "type": "boolean"
+        },
+        "counts_as_clinical_mechanism_evidence": {
+          "type": "boolean"
+        },
+        "processing_state": {
+          "enum": [
+            "not_extracted",
+            "extracted_candidate",
+            "audited_candidate"
+          ]
+        },
+        "verification_state": {
+          "const": "pending"
+        },
+        "human_review_state": {
+          "const": "pending"
+        },
+        "publication_state": {
+          "const": "draft"
+        },
+        "appraisal": {
+          "const": "Not appraised"
+        },
+        "excluded_from_support": {
+          "type": "boolean"
+        },
+        "clinical_efficacy_established": {
+          "const": false
+        },
+        "pending_actions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "id",
+        "drug_id",
+        "condition_id",
+        "purpose",
+        "scope_as_reported",
+        "source_ids",
+        "primary_source_id",
+        "mechanism_fields",
+        "claims",
+        "numbers",
+        "counts_as_original_research",
+        "counts_as_clinical_mechanism_evidence",
+        "processing_state",
+        "verification_state",
+        "human_review_state",
+        "publication_state",
+        "appraisal",
+        "excluded_from_support",
+        "clinical_efficacy_established",
+        "pending_actions"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "purpose": {
+                "const": "repurposed_use"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "condition_id": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "purpose": {
+                "const": "original_use"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "condition_id": {
+                "type": "null"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
