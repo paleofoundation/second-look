@@ -52,6 +52,10 @@ Use [editorial/EVIDENCE-GRADING.md](../editorial/EVIDENCE-GRADING.md) for the ad
 
 Released full research reviews are free after supported login and persisted role intake under the current policy. Enforce access server-side. Reader roles do not grant editorial privileges. Git does not carry production users, D1 data, R2 assets, authentication credentials or payment entitlements. Preserve the existing scientific and commercial release gates and hosting audience.
 
+## Custom domain scope
+
+Owner instruction adopted 11 October 2026: connect the existing public Sites publication to the apex `remaprx.com` using the existing GoDaddy DNS. Do not change nameservers. Leave `www` unchanged unless it becomes necessary, and explicitly report that need before expanding the domain scope. Confirm hosting-side domain and SSL activation and an HTTPS page load with certificate validation before declaring the connection complete. Report any additional required DNS record with its exact type, host and value. The hosting identity, configured records and dated verification receipt are in [CUSTOM-DOMAIN.md](CUSTOM-DOMAIN.md).
+
 ## Maintaining the rules
 
 Update this contract or the appropriate ingestion/editorial contract and append a source-linked entry to `RULE-CHANGELOG.md` in the same PR. Separate requested/adopted, implemented, verified and released status. For a reusable global correction, submit it to the existing One Match Rule integrator; the upstream source on the original host is `Pepsanon.com/one-match-rule/`. Another host must locate that upstream rather than create a second master. Record pending upstream, installed-skill and exported/uploaded-copy synchronization honestly. Never overwrite concurrent work or the frozen baseline.
