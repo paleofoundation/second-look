@@ -35,8 +35,6 @@ export type UniversalArticleModule<S extends UniversalArticleSection> = {
   label: UniversalArticleLabel;
   title: string;
   sections: S[];
-  /** Fallback for an unpopulated prose module; never a scientific conclusion. */
-  emptyText: string;
   scoped?: { id: 'condition-details'; title: string; sections: S[] };
 };
 
@@ -55,25 +53,6 @@ export type UniversalArticlePlan<S extends UniversalArticleSection> = {
   modules: UniversalArticleModule<S>[];
   blocks: UniversalArticleBlock<S>[];
   navigation: UniversalArticleNavItem[];
-};
-
-const missingText: Record<UniversalArticleLabel, string> = {
-  Overview: 'An overview of this topic is not yet available in this article.',
-  Mechanisms: 'A source-backed mechanism assessment is not yet available in this article.',
-  Benefits: 'A drug-wide assessment of potential benefits is not yet available. Individual findings remain specific to their studied condition, population and outcome.',
-  Safety: 'A complete safety assessment is not yet available in this article. Missing assessment is not evidence of safety.',
-  Contraindications: 'Contraindications have not been fully assessed for this article.',
-  Interactions: 'Drug interactions have not been fully assessed for this article.',
-  Dosing: 'Studied doses and exposure have not been assessed across the uses covered here. This article does not provide personal dosing instructions.',
-  Results: 'A complete results synthesis is not yet available. Individual reported outcomes retain their own populations, comparators and follow-up periods.',
-  Quality: 'A complete assessment of source quality and study limitations is not yet available.',
-  Status: 'Evidence coverage and assessment remain incomplete.',
-  FAQs: 'Page-specific questions and answers are not yet available.',
-  Evidence: 'A complete evidence assessment is not yet available for this article.',
-  Connections: 'Related reading has not yet been mapped for this article.',
-  Research: 'Source records are not yet available for this article.',
-  Options: 'An assessment of the investigated drug options is not yet available for this condition.',
-  Comparisons: 'A supported comparison of the investigated options is not yet available.',
 };
 
 function moduleId(label: UniversalArticleLabel): string {
@@ -106,7 +85,6 @@ export function buildUniversalArticlePlan<S extends UniversalArticleSection>(
     label,
     title: label === 'Mechanisms' ? 'Mechanism of Action' : label,
     sections: [],
-    emptyText: missingText[label],
   }));
   for (const section of input.sections) {
     const destination = sectionDestination(input.type, section.label);
@@ -154,11 +132,11 @@ export function universalArticlePlanErrors<S extends UniversalArticleSection>(
   for (const section of preserved) counts.set(section, (counts.get(section) || 0) - 1);
   if ([...counts.values()].some(count => count !== 0))
     errors.push('Original section objects were lost, duplicated or replaced.');
-  for (const module of plan.modules) {
-    const expectedSections = input.sections.filter(section => sectionDestination(input.type, section.label) === module.label);
-    if (expectedSections.length !== module.sections.length || expectedSections.some((section, index) => module.sections[index] !== section))
-      errors.push('Section order or destination changed within ' + module.label + '.');
-    if (module.scoped && module.label !== 'Evidence') errors.push('Scoped sections must remain inside Evidence.');
+  for (const articleModule of plan.modules) {
+    const expectedSections = input.sections.filter(section => sectionDestination(input.type, section.label) === articleModule.label);
+    if (expectedSections.length !== articleModule.sections.length || expectedSections.some((section, index) => articleModule.sections[index] !== section))
+      errors.push('Section order or destination changed within ' + articleModule.label + '.');
+    if (articleModule.scoped && articleModule.label !== 'Evidence') errors.push('Scoped sections must remain inside Evidence.');
   }
   const renderedModules = plan.blocks.flatMap(block => block.kind === 'module' ? [block.module] : []);
   if (renderedModules.length !== plan.modules.length || plan.modules.some((module, index) => renderedModules[index] !== module))

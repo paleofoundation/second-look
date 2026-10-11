@@ -1,0 +1,329 @@
+{
+  "evidenceRecords": [
+    {
+      "sourceId": "P-D07-LUNG-2013",
+      "drugId": "D07",
+      "conditionId": "C14",
+      "population": "23 patients with previously treated metastatic nonsquamous NSCLC",
+      "comparison": "Pemetrexed plus itraconazole versus pemetrexed",
+      "endpoint": "Progression-free survival proportion",
+      "timepoint": "3 months",
+      "finding": "The 23-person trial found 67% versus 29% progression-free at three months (p=0.11); the small, prematurely closed study leaves substantial uncertainty.",
+      "magnitude": "67 versus 29 percent; p=0.11",
+      "limits": "Small trial stopped early; the three-month progression-free difference was not statistically significant.",
+      "effects": [
+        {
+          "sourceId": "P-D07-LUNG-2013",
+          "endpoint": "Progression-free survival proportion",
+          "timepoint": "3 months",
+          "armValues": [
+            67,
+            29
+          ],
+          "armNames": [
+            "Pemetrexed plus itraconazole",
+            "Pemetrexed"
+          ],
+          "units": "percent",
+          "p": 0.11
+        },
+        {
+          "sourceId": "P-D07-LUNG-2013",
+          "endpoint": "Median progression-free survival",
+          "armValues": [
+            5.5,
+            2.8
+          ],
+          "units": "months",
+          "hazardRatio": 0.399,
+          "p": 0.089
+        },
+        {
+          "sourceId": "P-D07-LUNG-2013",
+          "endpoint": "Median overall survival",
+          "armValues": [
+            32,
+            8
+          ],
+          "units": "months",
+          "hazardRatio": 0.194,
+          "p": 0.012
+        }
+      ],
+      "N": null
+    },
+    {
+      "sourceId": "P-D07-PANCREAS-2015",
+      "drugId": "D07",
+      "conditionId": "C17",
+      "population": "38 patients with progressive pancreatic cancer",
+      "comparison": "Itraconazole plus multidrug chemotherapy; no concurrent control",
+      "endpoint": "Objective response",
+      "timepoint": "Study follow-up",
+      "finding": "The 38-patient retrospective series used itraconazole with docetaxel, gemcitabine and carboplatin; observed responses cannot be attributed to itraconazole alone.",
+      "magnitude": "37 percent",
+      "limits": "No concurrent comparison; the contribution of itraconazole cannot be isolated.",
+      "effects": [
+        {
+          "sourceId": "P-D07-PANCREAS-2015",
+          "endpoint": "Objective response",
+          "value": 37,
+          "units": "percent",
+          "completeResponses": 1,
+          "partialResponses": 13
+        }
+      ],
+      "N": null
+    },
+    {
+      "sourceId": "P-D09-GBM-2022",
+      "drugId": "D09",
+      "conditionId": "C04",
+      "population": "88 adults with recurrent glioblastoma",
+      "comparison": "Temozolomide plus mebendazole versus lomustine plus mebendazole",
+      "endpoint": "Overall survival proportion",
+      "timepoint": "9 months",
+      "finding": "Nine-month survival was 36.6% with temozolomide–mebendazole and 45% with lomustine–mebendazole, below the 55% benchmark; both arms included mebendazole.",
+      "magnitude": "36.6 versus 45 percent",
+      "limits": "Both groups received mebendazole; neither reached the prespecified 55% nine-month survival benchmark.",
+      "effects": [
+        {
+          "sourceId": "P-D09-GBM-2022",
+          "endpoint": "Overall survival proportion",
+          "timepoint": "9 months",
+          "armValues": [
+            36.6,
+            45
+          ],
+          "armCIs": [
+            [
+              22.3,
+              51
+            ],
+            [
+              29.6,
+              59.2
+            ]
+          ],
+          "units": "percent"
+        }
+      ],
+      "N": null
+    },
+    {
+      "sourceId": "P-D13-GBM-2021",
+      "drugId": "D13",
+      "conditionId": "C04",
+      "population": "36 patients with glioblastoma",
+      "comparison": "Atorvastatin with chemoradiation; single arm",
+      "endpoint": "Progression-free survival proportion",
+      "timepoint": "6 months",
+      "finding": "The single-arm 36-patient study reported 66% progression-free at six months but concluded that improvement was not demonstrated.",
+      "magnitude": "66 percent",
+      "limits": "Single-arm study; the reported progression-free proportion does not establish improvement over chemoradiation alone.",
+      "effects": [
+        {
+          "sourceId": "P-D13-GBM-2021",
+          "endpoint": "Progression-free survival proportion",
+          "timepoint": "6 months",
+          "value": 66,
+          "units": "percent"
+        },
+        {
+          "sourceId": "P-D13-GBM-2021",
+          "endpoint": "Median progression-free survival",
+          "value": 7.6,
+          "ci95": [
+            5.7,
+            9.4
+          ],
+          "units": "months"
+        }
+      ],
+      "N": null
+    },
+    {
+      "sourceId": "P-D13-BREAST-2013",
+      "drugId": "D13",
+      "conditionId": "C15",
+      "population": "50 patients enrolled with invasive breast cancer",
+      "comparison": "Atorvastatin before surgery; baseline comparison",
+      "endpoint": "Ki67 relative change",
+      "timepoint": "2 weeks",
+      "finding": "Overall Ki-67 decreased by 7.6% (p=0.39); a larger decrease in the HMGCR-positive subgroup was exploratory and not a survival result.",
+      "magnitude": "-7.6 percent; p=0.39",
+      "limits": "Two-week uncontrolled presurgical study; Ki-67 is a proliferation biomarker, not recurrence or survival.",
+      "effects": [
+        {
+          "sourceId": "P-D13-BREAST-2013",
+          "endpoint": "Ki67 relative change",
+          "value": -7.6,
+          "units": "percent",
+          "p": 0.39
+        },
+        {
+          "sourceId": "P-D13-BREAST-2013",
+          "endpoint": "Ki67 relative change in HMGCR-positive subgroup",
+          "value": -24,
+          "units": "percent",
+          "p": 0.02
+        }
+      ],
+      "N": null
+    },
+    {
+      "sourceId": "P-D15-BREAST-2021",
+      "drugId": "D15",
+      "conditionId": "C15",
+      "population": "2639 patients with primary breast cancer",
+      "comparison": "Celecoxib versus placebo after primary breast-cancer treatment",
+      "endpoint": "Disease-free survival",
+      "timepoint": "Study follow-up",
+      "finding": "REACT found no disease-free survival advantage: hazard ratio 0.97 (95% CI 0.80 to 1.17).",
+      "magnitude": "Hazard ratio: 0.97 ratio (95% CI 0.8 to 1.17)",
+      "limits": "Disease-free survival was not improved; the estimate applies to the REACT trial population.",
+      "effects": [
+        {
+          "sourceId": "P-D15-BREAST-2021",
+          "endpoint": "Disease-free survival",
+          "effect": "Hazard ratio",
+          "value": 0.97,
+          "ci95": [
+            0.8,
+            1.17
+          ],
+          "units": "ratio"
+        }
+      ],
+      "N": null
+    },
+    {
+      "sourceId": "P-D15-COLON-2021",
+      "drugId": "D15",
+      "conditionId": "C16",
+      "population": "Resected stage III colon cancer receiving adjuvant chemotherapy",
+      "comparison": "Celecoxib versus placebo alongside adjuvant chemotherapy",
+      "endpoint": "Disease-free survival",
+      "timepoint": "Study follow-up",
+      "finding": "Overall disease-free survival was not significantly improved (HR 0.89, 95% CI 0.76 to 1.03); a preplanned PIK3CA subgroup analysis reported a more favorable result.",
+      "magnitude": "Hazard ratio: 0.89 ratio (95% CI 0.76 to 1.03); p=0.12",
+      "limits": "Overall disease-free survival was not significantly improved. The PIK3CA subgroup analysis comes from the same study family.",
+      "effects": [
+        {
+          "sourceId": "P-D15-COLON-2021",
+          "endpoint": "Disease-free survival",
+          "effect": "Hazard ratio",
+          "value": 0.89,
+          "ci95": [
+            0.76,
+            1.03
+          ],
+          "units": "ratio",
+          "p": 0.12
+        },
+        {
+          "sourceId": "P-D15-COLON-2021",
+          "endpoint": "Disease-free survival proportion",
+          "timepoint": "3 years",
+          "armValues": [
+            76.3,
+            73.4
+          ],
+          "units": "percent"
+        }
+      ],
+      "N": null
+    },
+    {
+      "sourceId": "P-D15-HCC-2017",
+      "drugId": "D15",
+      "conditionId": "C20",
+      "population": "71 people with unresectable hepatocellular carcinoma",
+      "comparison": "TACE plus celecoxib and lanreotide versus TACE",
+      "endpoint": "Median overall survival",
+      "timepoint": "Study follow-up",
+      "finding": "Median survival was 15 months with TACE plus celecoxib and lanreotide versus 7.5 months with TACE alone; adding two drugs prevents assigning the benefit to celecoxib alone.",
+      "magnitude": "15 versus 7.5 months; p=0.012",
+      "limits": "Pilot trial adding two drugs; the survival difference cannot be assigned to celecoxib alone.",
+      "effects": [
+        {
+          "sourceId": "P-D15-HCC-2017",
+          "endpoint": "Median overall survival",
+          "armValues": [
+            15,
+            7.5
+          ],
+          "armCIs": [
+            [
+              12.1,
+              17.9
+            ],
+            [
+              2.4,
+              12.6
+            ]
+          ],
+          "units": "months",
+          "p": 0.012
+        }
+      ],
+      "N": null
+    },
+    {
+      "sourceId": "P-D16-TRD-2022",
+      "drugId": "D16",
+      "conditionId": "C09",
+      "population": "173 randomized; 168 intention-to-treat participants with TRD",
+      "comparison": "Adjunctive minocycline versus placebo",
+      "endpoint": "MADRS score change",
+      "timepoint": "6 weeks",
+      "finding": "Six weeks of adjunctive minocycline did not significantly improve depression severity versus placebo in the 168-person analysis.",
+      "magnitude": "Between-group difference: 1.46 MADRS points (95% CI -1.04 to 3.96); p=0.25",
+      "limits": "Six-week adjunctive-treatment trial; the confidence interval includes no difference.",
+      "effects": [
+        {
+          "sourceId": "P-D16-TRD-2022",
+          "endpoint": "MADRS score change",
+          "timepoint": "6 weeks",
+          "effect": "Between-group difference",
+          "value": 1.46,
+          "ci95": [
+            -1.04,
+            3.96
+          ],
+          "units": "MADRS points",
+          "p": 0.25
+        }
+      ],
+      "N": null
+    },
+    {
+      "sourceId": "P-D16-MS-2017",
+      "drugId": "D16",
+      "conditionId": "C27",
+      "population": "142 people after a first demyelinating event",
+      "comparison": "Minocycline versus placebo after a first demyelinating event",
+      "endpoint": "Conversion to multiple sclerosis",
+      "timepoint": "6 months",
+      "finding": "After a first demyelinating event, adjusted six-month conversion risk was 18.5 percentage points lower (95% CI 3.7 to 33.3); the 24-month difference was not significant.",
+      "magnitude": "Adjusted absolute risk reduction: 18.5 percentage points (95% CI 3.7 to 33.3); p=0.01",
+      "limits": "The adjusted six-month difference favored minocycline; the 24-month difference was not statistically significant.",
+      "effects": [
+        {
+          "sourceId": "P-D16-MS-2017",
+          "endpoint": "Conversion to multiple sclerosis",
+          "timepoint": "6 months",
+          "effect": "Adjusted absolute risk reduction",
+          "value": 18.5,
+          "ci95": [
+            3.7,
+            33.3
+          ],
+          "units": "percentage points",
+          "p": 0.01
+        }
+      ],
+      "N": null
+    }
+  ]
+}

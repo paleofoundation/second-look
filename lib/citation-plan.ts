@@ -1,6 +1,6 @@
 import sentenceMapData from '@/data/outcome-sentence-maps.json';
 import {synthesisRows,isPrimarySource,type Guide,type Source,type SynthesisRow} from './content';
-import {mechanismContextsFor} from './mechanisms';
+import {mechanismCitationIds} from './mechanisms';
 import {buildUniversalArticlePlan} from '@/components/shared-theme/universal-article';
 import {createCitationOrder} from '@/components/shared-theme/citations';
 import {describeEvidenceConfidence} from '@/components/shared-theme/evidence-confidence';
@@ -26,18 +26,21 @@ export function guideCitationOrder(guide:Guide,sources:Source[],additionalGroups
  const isRecord=['Study','Background source','Glossary'].includes(guide.type);
  const rows=(guide.synthesisIds||[]).map(id=>synthesisRows.find(row=>row.id===id)).filter((row):row is SynthesisRow=>!!row);
  const {first,rest,scoped,later,evidence}=articleSectionGroups(guide);
- const sectionSources=(sections:Guide['sections'])=>sections.flatMap(section=>section.sentences?section.sentences.flatMap(sentence=>sentence.sources):section.sources);
+ const sectionSources=(sections:Guide['sections'])=>sections.flatMap(section=>[
+  ...(section.sentences?section.sentences.flatMap(sentence=>sentence.sources):section.sources),
+  ...(section.questions||[]).flatMap(question=>question.sentences?question.sentences.flatMap(sentence=>sentence.sources):question.sources)
+ ]);
  if(guide.type==='Drug'||guide.type==='Condition'){
   const plan=buildUniversalArticlePlan({...guide,type:guide.type});
   const groups=plan.blocks.flatMap(block=>{
-   const module=block.module;
-   return [sectionSources(module.sections),
-    module.kind==='mechanisms'?mechanismContextsFor(guide).flatMap(context=>context.sourceIds):[],
-    module.kind==='faqs'?guide.faqs.flatMap(faq=>faq.sentences?faq.sentences.flatMap(sentence=>sentence.sources):faq.sources):[],
-    module.label==='Evidence'?outcomeCitationIds(rows,sources):[],
-    sectionSources(module.scoped?.sections||[])];
+   const articleModule=block.module;
+   return [sectionSources(articleModule.sections),
+    articleModule.kind==='mechanisms'?mechanismCitationIds(guide):[],
+    articleModule.kind==='faqs'?guide.faqs.flatMap(faq=>faq.sentences?faq.sentences.flatMap(sentence=>sentence.sources):faq.sources):[],
+    articleModule.label==='Evidence'?outcomeCitationIds(rows,sources):[],
+    sectionSources(articleModule.scoped?.sections||[])];
   });
   return createCitationOrder([...groups,...additionalGroups,guide.sourceIds],sources.map(source=>source.id));
  }
- return createCitationOrder([sectionSources(first),mechanismContextsFor(guide).flatMap(context=>context.sourceIds),sectionSources(rest),sectionSources(scoped),!isRecord?guide.faqs.flatMap(faq=>faq.sentences?faq.sentences.flatMap(sentence=>sentence.sources):faq.sources):[],sectionSources(later),sectionSources(evidence),hasArticleEvidence(guide)?outcomeCitationIds(rows,sources):[],...additionalGroups,guide.sourceIds],sources.map(source=>source.id));
+ return createCitationOrder([sectionSources(first),mechanismCitationIds(guide),sectionSources(rest),sectionSources(scoped),!isRecord?guide.faqs.flatMap(faq=>faq.sentences?faq.sentences.flatMap(sentence=>sentence.sources):faq.sources):[],sectionSources(later),sectionSources(evidence),hasArticleEvidence(guide)?outcomeCitationIds(rows,sources):[],...additionalGroups,guide.sourceIds],sources.map(source=>source.id));
 }

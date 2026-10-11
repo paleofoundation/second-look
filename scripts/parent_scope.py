@@ -48,11 +48,12 @@ def apply_reader_metadata(reader, scope=None):
         if entity is None:
             continue
         guide = parent['guide']
-        overview = next(s for s in guide['sections'] if s['id'] == 'overview')
+        overview = next(s for s in guide['sections'] if s['label'] == 'Overview')
         entity.update(coverageLabel=guide['coverageLabel'], scope=guide['scope'],
                       overview={k:deepcopy(overview[k]) for k in ('paragraph', 'sentences')},
-                      conditionIds=[c['conditionId'] for c in parent['conditionCoverage']],
                       topicIds=list(guide['topicIds']), parentScopeVersion=(scope or read_scope())['version'])
+        if parent.get('conditionCoverage'):
+            entity['conditionIds'] = [c['conditionId'] for c in parent['conditionCoverage']]
     assert output.get('synthesisRows') == reader.get('synthesisRows')
     return output
 

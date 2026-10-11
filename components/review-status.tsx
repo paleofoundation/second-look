@@ -1,12 +1,12 @@
 import {chatGPTSignInPath} from '@/app/chatgpt-auth';
 import {intakePath} from '@/lib/account-paths';
-import {content} from '@/lib/content';
-import reviewMetadata from '@/data/public-review-metadata.json';
+
+/** Access controls remain authoritative; draft production status stays editorial. */
 export function ReviewStatus({sourceId,access,reason}:{sourceId:string;access:string;reason?:string}){
- const source=content.sources.find(s=>s.id===sourceId)!;
- const released=access==='full'||reason==='signed_out'||reason==='intake_required';
- const title=access==='full'?'Released full review':reason==='review_withdrawn'?'Review withdrawn':released?'Full review access':access==='unavailable'||reason==='content_unavailable'?'Review temporarily unavailable':'Review pending';
- const coverage=reviewMetadata.records.find(r=>r.sourceId===sourceId);
  const destination='/research/'+sourceId+'#review-status';
- return <section className="article-section review-state" id="review-status"><h2>{title}</h2><p className="notice">{access==='full'?'The full review is available below.':reason==='review_withdrawn'?'This review has been withdrawn. It is currently unavailable.':reason==='signed_out'?'This review is released. Sign in for free access to its complete text.':reason==='intake_required'?'This review is released. Complete the short private reader intake to read its complete text.':access==='unavailable'||reason==='content_unavailable'?'The review is temporarily unavailable. Please try again.':'A completed, independently reviewed analysis is not yet available for this paper. The source and its known limitations remain available.'}</p>{access!=='full'?<><p>Full released reviews are free after reader intake. Principal findings, source links and decisive limitations remain visible.</p><div className="inline-actions">{reason==='intake_required'?<a className="button" href={intakePath(destination)}>Complete reader intake</a>:<a className="button" target="_top" href={chatGPTSignInPath(destination)}>Sign in for free research access</a>}<a href="/account/profile">Reader profile</a></div></>:null}<p className="small">Source access: {source.access||'Not recorded'} · Scientific approval: {released?'recorded for this released version':'pending or unavailable'}.</p>{access==='full'?null:coverage?<><h3>Questions about this study</h3><p className="small">These questions have not yet received a complete, independently reviewed answer.</p><ol className="review-question-map">{coverage.questions.map(q=><li key={q.id} id={q.id.toLowerCase()}><strong>{q.question}</strong><br/>Answer not yet available</li>)}</ol></>:<p className="small">This non-paper source retains a source record. It does not contribute a completed primary-paper review.</p>}<p><a href="/methods">How we assess research</a></p></section>
+ if(access==='full')return null;
+ if(reason==='signed_out')return <section className="article-section" id="review-status"><h2>Full study review</h2><p>Sign in for free access to the complete review.</p><a className="button" target="_top" href={chatGPTSignInPath(destination)}>Read full review</a></section>;
+ if(reason==='intake_required')return <section className="article-section" id="review-status"><h2>Full study review</h2><p>Complete your reader profile to access the complete review.</p><a className="button" href={intakePath(destination)}>Complete reader profile</a></section>;
+ if(reason==='review_withdrawn')return <section className="article-section" id="review-status"><h2>Review withdrawn</h2><p>The review has been withdrawn. The original source and its correction notices are listed above.</p></section>;
+ return null;
 }

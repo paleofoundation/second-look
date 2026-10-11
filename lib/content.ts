@@ -10,7 +10,9 @@ export type AuthorProfile={id:string;name:string;portrait:string;orcid:string;bi
 export const authorProfiles=authors as {profiles:AuthorProfile[];assignments:Record<string,string>;defaultAuthorId?:string};
 export const synthesisRows=(readerData as unknown as {synthesisRows:SynthesisRow[]}).synthesisRows;
 export function isPrimarySource(s:Source){return !['context','review','textbook','other'].includes(s.sourceType||'primary')}
-export type Section={id:string;label:string;title:string;paragraph:string;sources:string[];sentences?:{text:string;sources:string[]}[]};
+export type CitedSentence={text:string;sources:string[]};
+export type SectionQuestion={id:string;question:string;answer:string;sources:string[];sentences?:CitedSentence[]};
+export type Section={id:string;label:string;title:string;paragraph:string;sources:string[];sentences?:CitedSentence[];questions?:SectionQuestion[]};
 export type Guide={researchGoal?:boolean;id:string;slug:string;title:string;type:string;description:string;topicIds:string[];sections:Section[];scopedSections?:Section[];scopedSectionsTitle?:string;faqs:{id?:string;questionId?:string;status?:string;question:string;answer:string;sources:string[];sentences?:{text:string;sources:string[]}[]}[];sourceIds:string[];related:string[];entityId?:string;synthesisIds?:string[];coverageLabel?:string;scope?:string;candidateLinks?:{id:string;title:string;url:string;state:string}[];originalUse?:{text:string;sourceIds:string[]};authorId?:string};
 export type Term={slug:string;title:string;meaning:string;context:string;examples:string;sources:string[];sentenceMaps?:Record<string,{text:string;sources:string[]}[]>};
 const canonicalContent=raw as unknown as {sources:SourceDetail[];guides:Guide[];glossary:Term[]};

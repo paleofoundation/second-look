@@ -26,7 +26,7 @@ for(const g of guides.values()){
 for(const row of rows.values())checkRow(row);
 const negative=[];
 for(const [name,mutate] of [['invented grade',r=>r.certainty.label='High'],['false completion',r=>r.coverage.complete=true],['quarantined source',r=>r.sourceIds.push('P-REVIVE-2026')],['unknown source',r=>r.sourceIds.push('missing')],['unapproved release',r=>r.publicationState='public']]){const fixture=structuredClone(reader.synthesisRows[1]);mutate(fixture);assert.throws(()=>checkRow(fixture));negative.push(name)}
-const bg=structuredClone(reader.synthesisRows.find(r=>r.status==='background_only'));bg.countsAsPrimaryEvidence=true;assert.throws(()=>checkRow(bg));negative.push('background inflated to primary');
+const bg=structuredClone(reader.synthesisRows.find(r=>r.status==='background_only')||JSON.parse(fs.readFileSync('editorial/retired-background-outcome-rows.json','utf8'))[0]);bg.countsAsPrimaryEvidence=true;assert.throws(()=>checkRow(bg));negative.push('background inflated to primary');
 assert(data.guides.find(g=>g.entityId==='D07').synthesisIds.length>0);
 const report={status:'PASS',drugParents:30,conditionParents:30,sharedRows:rows.size,backgroundRows:reader.synthesisRows.filter(r=>r.status==='background_only').length,reciprocalLinks:[...parents.values()].reduce((n,g)=>n+(g.candidateLinks||[]).length,0),checks:'Reader FK closure, sentence/source closure, same row reused on both parents, exact tier and approval boundaries, all target routes',negativeCasesRejected:negative};
 console.log(JSON.stringify(report));
