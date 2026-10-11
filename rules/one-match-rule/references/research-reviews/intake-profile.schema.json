@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:one-match:reader-intake-profile:1",
+  "title": "One Match completed private reader intake profile",
+  "description": "Storage contract for completed or explicitly declined intake only. Server supplies authenticated user ID, version and timestamps. Pending drafts are not access grants. Optional destination fields need their own validated schema extension.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "userId",
+    "intakeVersion",
+    "roles",
+    "intakeState",
+    "completedAt",
+    "updatedAt"
+  ],
+  "properties": {
+    "userId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "intakeVersion": {
+      "const": 1
+    },
+    "roles": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "clinician",
+          "general_reader",
+          "researcher",
+          "industry",
+          "student",
+          "other",
+          "prefer_not_to_say"
+        ]
+      }
+    },
+    "intakeState": {
+      "enum": [
+        "complete",
+        "declined"
+      ]
+    },
+    "completedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "roles": {
+            "contains": {
+              "const": "prefer_not_to_say"
+            },
+            "type": "array"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "roles": {
+            "maxItems": 1,
+            "type": "array"
+          },
+          "intakeState": {
+            "const": "declined"
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "intakeState": {
+            "const": "complete"
+          }
+        }
+      }
+    }
+  ]
+}

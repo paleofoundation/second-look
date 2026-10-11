@@ -56,6 +56,8 @@ const ancestor = (node, predicate) => { for (let parent = node.parent; parent; p
 const flowTags = new Set(['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'details', 'figure', 'table', 'form', 'button', 'a']);
 const flow = node => (node.children || []).flatMap(child => flowTags.has(child.tag) && textOf(child) ? [child] : flow(child));
 
+const visibleGrade = node => textOf(all(node, child => hasClass(child, 'evidence-grade-trigger'))[0]);
+
 function inspect(guide, pageSources, {expectScoped = false} = {}) {
   const label = guideUrl(guide);
   const inputBefore = JSON.stringify(guide);
@@ -103,7 +105,9 @@ function inspect(guide, pageSources, {expectScoped = false} = {}) {
       const rendered = renderedRows[index];
       assert.equal((rendered.children || []).filter(node => node.tag === 'td').length, 3, label + ': three cells for ' + row.id);
       const controls = all(rendered, node => node.tag === 'button' && node.attrs['aria-haspopup'] === 'dialog');
-      assert.equal(controls.length, 2, label + ': outcome and evidence count are separate drawer buttons for ' + row.id);
+      assert.equal(controls.length, 3, label + ': outcome, grade and evidence count open the same drawer for ' + row.id);
+      assert(controls.some(control => hasClass(control, 'evidence-grade-trigger')), label + ': grade rationale opener');
+      assert(visibleGrade(rendered) === row.certainty.label, label + ': rendered grade matches canonical assessment');
       assert(controls.every(control => decode(control.attrs['aria-label'] || '').includes(row.title)), label + ': both openers identify the same outcome ' + row.id);
       assert(controls.some(control => hasClass(control, 'research-outcome-trigger')), label + ': outcome drawer trigger');
       assert(controls.some(control => hasClass(control, 'evidence-count-link')), label + ': document-count drawer trigger');

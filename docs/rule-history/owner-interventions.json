@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "interventions": [
+    {
+      "id": "OWNER-INTERVENTION-001",
+      "recorded_at": "2026-10-08T07:05:30.178588+00:00",
+      "owner_message": {
+        "source_task": "01a11a00-93aa-7bc1-975f-35668cc5e282",
+        "turn_id": "01a11a44-7627-77b0-afa4-139acd286ce2",
+        "message_id": "01a11a44-76da-77c1-909e-b78064109c7f",
+        "text": "plan must exist before the first ingest, and before the first file requests go out to grok bot",
+        "source_started_at": "2026-10-08T06:47:36+00:00",
+        "adoption": "Produce autonomously; no added owner approval round. Applies to Grokbot handoff, scoping/file requests, extraction and import. Drafting a prompt internally is not dispatch."
+      },
+      "delegation": "Apply now without owner approval; preserve chronology/baseline; coordinator owns canonical v1.3 edit",
+      "classification": "explicit owner requirement / consolidated planning prerequisite",
+      "prior_state": "No separate versioned ingestion plan before earlier extraction/import and request handoff. No Grokbot dispatched.",
+      "current_artifacts": [
+        "handoff/ingestion-plan-v1.0.json",
+        "handoff/ingestion-plan-v1.0.md",
+        "governance/ingestion-sequence-audit.json",
+        "governance/ingestion-reconciliation.json",
+        "governance/rule-v1.3-adoption.json"
+      ],
+      "state": "implemented; GP prospective PASS with exact plan hash; historical ordering NOT SATISFIED"
+    },
+    {
+      "id": "OWNER-INTERVENTION-CP28",
+      "recorded_at": "2026-10-08T15:55:02.609749+00:00",
+      "classification": "Explicit closed-corpus ingest authorization and constraints",
+      "owner_request": "Run ingest now for28manifest files; no web; printed facts only; preserve tiers; chapter/page textbook records; exact missing-value markers; generic names only; no excluded CSVs or email; deliver counts,pair filename table,unreadable files,and background-only gaps.",
+      "implementation": "Version2plan/schema and28file receipt persisted before extraction dispatch;60records accepted in separate private collection; allfilesaccounted; explicitpartialfigure/pagination/supplement/source-conflict gaps preserved.",
+      "current_artifacts": [
+        "ingest/CP28/completion-report.md",
+        "ingest/CP28/corpus.json",
+        "ingest/CP28/index.html",
+        "ingest/CP28/validation.json",
+        "ingest/CP28/reimport-validation.json"
+      ],
+      "state": "IMPLEMENTED; no public release claim"
+    },
+    {
+      "id": "OWNER-FETCH-30X30-20261009",
+      "recorded_at": "2026-10-09T05:40:39.671512+00:00",
+      "classification": "Explicit site-specific breadth and mandatory entity requirement",
+      "owner_request": "30high-leverage repurposing drugs AND30conditions and their repurposed drugs; fetch must answer discovered Reddit questions and include itraconazole for cancer.",
+      "source": "Current user message in this Mission Control task; exact text retained in independent requirements audit.",
+      "implementation": "Packet2.0, plan3.0,30+30catalogue, all36DRquestions, five printed itraconazole primary-report leads and13registry leads,126candidate search edges,9batchassignments, versioned acquisition-only returncontract.",
+      "state": "PREPARED_AND_CHECKED_NOT_DISPATCHED",
+      "artifacts": [
+        "handoff/fetch-30x30/index.html",
+        "handoff/fetch-30x30/ingestion-plan-v3.0.json",
+        "handoff/fetch-30x30/readiness.json"
+      ],
+      "rule_scope": "Exact30+30count is this site’s owner choice. Canonicalv1.9 already requires broad scope and question-to-source-to-page mapping; no new universal30quota inferred."
+    },
+    {
+      "id": "OWNER-COMPLETENESS-REPAIR-20261009",
+      "recorded_at": "2026-10-09T09:40:18.280493+00:00",
+      "classification": "Explicit existing site repair request",
+      "owner_request": "Re-run drug-repurposing page for One Match completeness and fix gaps/mistakes. Preserve earlier30+30,itraconazole,Redditfetch,corpus-only/generic-name requirements.",
+      "implementation": "Shared data/rendering,source corrections,target profiles,author profile,prepared fetch transfer contract,private deployment. Full scientific completion remains HOLD.",
+      "artifacts": [
+        "completeness/review-index.json",
+        "completeness/deployment-record.json"
+      ]
+    }
+  ]
+}

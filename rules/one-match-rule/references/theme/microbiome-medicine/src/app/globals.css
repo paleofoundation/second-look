@@ -1,0 +1,367 @@
+@import "tailwindcss";
+
+/* Brand tokens kept for the listing/utility components; the original theme
+   stylesheet (theme-wp.css) governs base typography, header, footer, and
+   article content so the site matches the original WordPress design. */
+@theme {
+  --color-primary: #cc3333;
+  --color-primary-dark: #a02727;
+  --color-primary-100: #f7e6e6;
+  --font-sans: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-serif: Lora, Georgia, "Times New Roman", serif;
+}
+
+/* Content-link convention (the theme's :where() rules lose to Tailwind's reset,
+   so set these explicitly): blue, no underline, underline on hover. */
+.entry-content a:not([class*="btn"]):not(.research-hero__center-tag),
+.article a:not([class*="btn"]) {
+  color: #183fab !important;
+  text-decoration: none !important;
+}
+.entry-content a:not([class*="btn"]):not(.research-hero__center-tag):hover,
+.article a:not([class*="btn"]):hover {
+  text-decoration: underline !important;
+}
+
+/* Hover tooltips render smaller than the article body text. */
+.tooltip,
+.tooltip__content,
+.tooltip__header {
+  font-size: 0.8rem;
+  line-height: 1.45;
+  color: #222;
+}
+.tooltip__header { font-weight: 600; color: #111; }
+.tooltip__content { color: #333; }
+.tooltip__content p { margin: 0 0 0.4rem; }
+/* Citation "View source"/"Review" links read on-brand red, not the blue
+   content-link convention (which sets .entry-content a blue with !important,
+   so we match its specificity and override). */
+.entry-content .tooltip__content a:not([class*="btn"]),
+.tooltip__content a:not([class*="btn"]) { color: var(--color-primary) !important; font-weight: 600; }
+/* Filled buttons must never inherit the brand-red content-link color (white-on-red, not red-on-red).
+   The modal__details link rule lacks a button exclusion; outline buttons keep their own color. */
+.tooltip__content a[class*="btn"]:not(.btn--outline),
+.modal__details a[class*="btn"]:not(.btn--outline) { color: #fff !important; }
+/* Tooltip windows are solid white (never bleed the red hero through); the header
+   keeps the brand light-red tint (theme-wp.css), never purple. */
+.tooltip { background-color: #fff !important; }
+.tooltip__content { background-color: #fff; }
+
+/* Research-feed hero category tags sit on the red hero — must be white (they were
+   inheriting the brand red and rendering nearly invisible). */
+.research-hero__categories,
+.research-hero__categories a,
+.research-hero__categories li::before { color: #fff !important; }
+
+/* Explore / search directory (header search → /search). */
+.rgbc-explore { max-width: 1180px; margin: 0 auto; padding: 56px 24px 88px; }
+.rgbc-explore__form { display: flex; max-width: 760px; margin: 0 auto 52px; }
+.rgbc-explore__grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 44px 56px; align-items: start; }
+.rgbc-explore__head { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; border-bottom: 1px dotted #cbd5e1; padding-bottom: 8px; margin-bottom: 16px; }
+.rgbc-explore__title { font-family: var(--font-serif); font-size: 1.5rem; color: #111; margin: 0; }
+.rgbc-explore__viewall { font-size: 0.85rem; color: var(--color-primary); font-weight: 600; text-decoration: none; white-space: nowrap; }
+.rgbc-explore__viewall:hover { text-decoration: underline; }
+.rgbc-explore__list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 11px; }
+.rgbc-explore__list a { color: var(--color-primary); text-decoration: none; font-size: 1.0625rem; line-height: 1.35; }
+.rgbc-explore__list a:hover { text-decoration: underline; }
+.rgbc-explore__results-title { font-family: var(--font-serif); font-size: 1.6rem; margin: 0 0 20px; color: #111; }
+.rgbc-explore__results .rgbc-explore__list { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 12px 40px; }
+
+/* FAQ accordion (brand red) — chevron-circle items + "Quick answer:" + left border. */
+.rgbc-faq-block { margin: 1.25rem 0 1.5rem; }
+.rgbc-faq-item { padding: 1.1rem 0; }
+.rgbc-faq-item summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 0.85rem; color: var(--color-primary); font-family: var(--font-serif); font-size: 1.5rem; font-weight: 500; line-height: 1.3; }
+.rgbc-faq-item summary::-webkit-details-marker { display: none; }
+/* Icon matches the canonical research-feed .accordion__icon exactly. */
+.rgbc-faq-icon {
+  flex: 0 0 auto; width: 24px; height: 24px; position: relative; display: inline-block;
+  padding: 5px; border: 1px solid var(--color-primary); border-radius: 9999px;
+}
+.rgbc-faq-icon::before, .rgbc-faq-icon::after {
+  content: ""; display: block; position: absolute; top: 0; left: 0; right: 0; bottom: 0; margin: auto;
+  width: 12px; height: 1.5px; background-color: var(--color-primary); transition: 0.35s;
+}
+.rgbc-faq-icon::before { transform: translatey(-50%); }
+.rgbc-faq-icon::after { transform: translatey(-50%) rotate(90deg); }
+.rgbc-faq-item[open] .rgbc-faq-icon::before { transform: translatey(-50%) rotate(-90deg); opacity: 0; }
+.rgbc-faq-item[open] .rgbc-faq-icon::after { transform: translatey(-50%) rotate(0); }
+/* Center the +/− glyph inside the research-feed accordion toggle circle (it defaulted to
+   grid top-left; this matches the centered FAQ icon). !important beats the inline captured CSS. */
+.research-feed__toggle-icon { place-items: center !important; place-content: center !important; line-height: 1 !important; }
+.rgbc-faq-a { margin: 0.85rem 0 0 2.6rem; padding-left: 1.1rem; border-left: 3px solid #e3b9b9; color: #333; line-height: 1.65; }
+.rgbc-faq-a strong { display: block; color: var(--color-primary); margin-bottom: 0.35rem; }
+
+/* Author "Connect" social row (author hero) — white circular buttons, branded icons. */
+.author-socials { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1rem; justify-content: center; }
+.author-socials__link { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 9999px; border: 1.5px solid rgba(255,255,255,.85); background: transparent; color: #fff; transition: background .15s ease, color .15s ease, border-color .15s ease; }
+.author-socials__link:hover { background: #fff; color: var(--color-primary); border-color: #fff; }
+.author-socials__link svg { width: 20px; height: 20px; display: block; fill: currentColor; }
+
+/* Join the Waitlist — form (ported from the original theme's template-auth.css) + modal. */
+.auth-form { display: flex; flex-direction: column; gap: 22px; }
+.auth-form--signup .auth-form__row { text-align: left; }
+.auth-form__title { font-family: var(--font-serif, Lora, serif); font-weight: 500; font-size: 32px; line-height: 1.2; margin: 0 0 0.25rem; color: var(--color-primary); }
+.auth-form__group { display: flex; flex-direction: column; gap: 22px; }
+.auth-form__row { text-align: center; display: flex; flex-direction: column; gap: 8px; position: relative; }
+.auth-form__row p { margin: 0; }
+.auth-form__row p a { font-weight: 600; color: var(--color-primary); text-decoration: none; }
+.auth-form__row p a:hover { text-decoration: underline; }
+.role-selection { display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 0.25rem; }
+.mbio-radio { display: flex; align-items: center; cursor: pointer; font-size: 15px; user-select: none; position: relative; padding-left: 28px; color: #111; }
+.mbio-radio input[type=radio] { position: absolute; opacity: 0; cursor: pointer; }
+.mbio-radio span::before { content: ""; position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 18px; height: 18px; border: 2px solid var(--color-primary); border-radius: 50%; background: #fff; box-sizing: border-box; }
+.mbio-radio input[type=radio]:checked + span::after { content: ""; position: absolute; left: 5px; top: 50%; transform: translateY(-50%); width: 8px; height: 8px; background: var(--color-primary); border-radius: 50%; }
+
+.waitlist-overlay { position: fixed; inset: 0; z-index: 1000; background: rgba(0,0,0,.5); display: flex; align-items: flex-start; justify-content: center; overflow-y: auto; padding: 4vh 1rem; }
+.waitlist-overlay__card { position: relative; background: #fff; border-radius: 1rem; box-shadow: 0 8px 40px rgba(0,0,0,.25); padding: 2.5rem; width: 100%; max-width: 560px; margin: auto; }
+.waitlist-overlay__close { position: absolute; top: 0.6rem; right: 1rem; background: none; border: none; font-size: 1.9rem; line-height: 1; color: #999; cursor: pointer; }
+.waitlist-overlay__close:hover { color: var(--color-primary); }
+@media (max-width: 575px) { .waitlist-overlay__card { padding: 1.5rem; } .auth-form__title { font-size: 26px; } }
+
+/* Cosmetic account-wall on gated summaries (text stays in DOM for SEO; JS adds the lock for logged-out visitors). */
+[data-gated].rgbc-gated--locked { position: relative; overflow: hidden; max-height: 70vh; }
+[data-gated].rgbc-gated--locked > *:not(.rgbc-gate__wall) { filter: blur(6px); pointer-events: none; user-select: none; }
+.rgbc-gate__wall { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background: linear-gradient(180deg, rgba(255,255,255,.45) 0%, rgba(255,255,255,.92) 55%); z-index: 5; }
+.rgbc-gate__wall-inner { text-align: center; max-width: 440px; padding: 1.5rem; }
+.rgbc-gate__wall-title { font-family: var(--font-serif, Lora, serif); font-size: 1.3rem; line-height: 1.35; color: var(--color-primary); font-weight: 500; margin-bottom: 1.1rem; }
+
+/* Real ORCID iD logo next to author names (replaces the old CSS "ID" text badge). */
+.orchid-id { display: inline-flex; align-items: center; vertical-align: middle; line-height: 0; }
+.orchid-id svg { width: 18px; height: 18px; display: block; }
+.research-hero a.orchid-id { background-color: transparent; width: auto; height: auto; border-radius: 0; }
+
+/* References (.rgbc-references) intentionally use the original WordPress theme's
+   default ordered-list rendering — the original had no custom badge/counter CSS,
+   so we do NOT override it here. */
+
+/* Research-feed card action buttons: the theme's base .btn is a filled red button;
+   inside the feed footer they should read as quiet text+icon actions on the grey
+   pill (red only on hover), matching the gold-standard cards. */
+.research-feed__footer .btn {
+  background: transparent !important;
+  border: none !important;
+  min-height: auto !important;
+  margin-top: 0 !important;
+  padding: 0.25rem 0.6rem !important;
+}
+.research-feed__footer .btn:hover { background: var(--color-primary) !important; color: #fff !important; }
+
+/* Research-feed card TITLE is a plain <div class="research-feed__title"> (NOT a link),
+   matching the canonical endometriosis card: it inherits the dark body text color, and the
+   header-wrap (.accordion__header) toggles the accordion to reveal the summary inline. The
+   only navigation to the summary page is the footer "Open" button. Do NOT style it as a
+   colored link and do NOT make it an <a>. */
+
+/* Connections: the other library entities a page links to, listed as blue links in the
+   right rail above Send feedback (auto-derived from the page's internal links). */
+/* Center the connections list between the collapse arrow above and the Send
+   feedback button below: gap above (this margin-top) matches the gap below
+   (.research-content__right-actions margin-top, 2.5rem), instead of hugging the arrow. */
+.research-content__connections { margin-top: 2.5rem; margin-bottom: 0; }
+.research-content__connections-title { display: block; font-weight: 700; color: #1a1a2e; margin-bottom: 0.5rem; }
+.research-content__connections-list { list-style: none; margin: 0; padding: 0; }
+.research-content__connections-list li { margin: 0 0 0.3rem; line-height: 1.4; }
+/* Right-rail entity links: no "Connections" title (removed), and every label starts
+   capitalized even when the source link text was lowercase (e.g. "tuberculosis"). */
+.research-content__connections-list a { color: #1c43ad; text-decoration: none; font-size: 0.9rem; text-transform: capitalize; }
+.research-content__connections-list a:hover { text-decoration: underline; }
+
+/* ── Site rule: NO bold text. Anywhere. Ever. ───────────────────────────────
+   Every text element renders at normal weight. Icon fonts (<i>, [class*="fa-"],
+   [class*="icon"]), SVG, and the logo are excluded so their glyphs/marks keep
+   the weight they depend on. */
+body,
+body :not(i):not(svg):not(path):not([class*="fa-"]):not([class*="icon"]):not([class*="logo"]) {
+  font-weight: 400 !important;
+}
+
+/* Author archive pagination (matches the original .mbio-pagination). */
+.mbio-pagination { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 6px; padding: 52px 0 8px; font-size: 14px; }
+.mbio-pagination__item { border-radius: 100px; min-height: 36px; min-width: 36px; display: flex; align-items: center; justify-content: center; padding: 0 13px; color: #1c43ad; text-decoration: none; }
+.mbio-pagination__item:hover { background-color: #f7e6e6; }
+.mbio-pagination__item.current { background-color: var(--color-primary); color: #fff !important; }
+.mbio-pagination__item.disabled { color: #9399b0; pointer-events: none; }
+.mbio-pagination__ellipsis { color: #9399b0; padding: 0 4px; }
+
+/* Definition list — restores a failed table migration as readable term/definition
+   content (e.g. the drug-repurposing synonyms). Term in brand-red serif (no bold). */
+.rgbc-deflist { margin: 1rem 0 1.25rem; }
+.rgbc-deflist dt { color: var(--color-primary); font-family: var(--font-serif); font-size: 1.05rem; margin: 0.7rem 0 0.15rem; }
+.rgbc-deflist dd { margin: 0 0 0.5rem; line-height: 1.6; }
+
+/* Two-column content tables: a narrow label column on the LEFT (short input) and a wide
+   explanation column on the RIGHT — the gold-standard look. The original WP tables that
+   read correctly use auto layout (content-sized); our generated tables shipped with
+   `has-fixed-layout` (table-layout: fixed → a forced 50/50). Force auto layout for any
+   content table whose body rows have exactly two cells, so the short left column shrinks
+   to its content and the explanation takes the rest. (3-column tables are unaffected.) */
+.research-content__center table:has(tbody tr > td:nth-child(2):last-child) {
+  table-layout: auto;
+  width: 100%;
+}
+/* Floor + ceiling on the label column so very short labels don't collapse to a sliver
+   and long ones still stay clearly the narrower of the two columns. */
+.research-content__center table:has(tbody tr > td:nth-child(2):last-child) th:first-child,
+.research-content__center table:has(tbody tr > td:nth-child(2):last-child) td:first-child {
+  min-width: 9rem;
+  max-width: 30%;
+}
+
+/* Search results page (/?s=term or /search?q=) — "Search Results for: X" hero + result
+   cards (title + type badge + excerpt), matching the original WordPress search page. */
+.rgbc-searchhero { max-width: 1180px; margin: 0 auto; padding: 38px 24px 46px; }
+.rgbc-searchhero .breadcrumb, .rgbc-searchhero .breadcrumb a, .rgbc-searchhero .breadcrumb__link { color: rgba(255, 255, 255, 0.92); }
+.rgbc-searchhero .research-hero__title { margin: 0.4rem 0 0; }
+.rgbc-searchresults__form { display: flex; max-width: 760px; margin: 1.6rem 0 0; }
+.rgbc-searchresults__form .rgbc-search__input { background: #fff; }
+.rgbc-searchresults { max-width: 1180px; margin: 0 auto; padding: 36px 24px 80px; }
+.rgbc-searchresult { padding: 1.4rem 0; border-bottom: 1px solid #eef0f4; }
+.rgbc-searchresult__head { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; }
+.rgbc-searchresult__title { color: var(--color-primary); font-family: var(--font-serif); font-size: 1.4rem; line-height: 1.3; text-decoration: none; }
+.rgbc-searchresult__title:hover { text-decoration: underline; }
+.rgbc-searchresult__type { flex: 0 0 auto; color: #9399b0; font-size: 0.8rem; white-space: nowrap; }
+.rgbc-searchresult__excerpt { margin: 0.6rem 0 0; padding-left: 1rem; border-left: 3px solid #e3b9b9; color: #444; line-height: 1.6; }
+.rgbc-searchresults__empty { max-width: 1180px; margin: 0 auto; padding: 24px; color: #444; }
+
+/* Hero search autocomplete: the type pill on the right of each suggestion. */
+.rgbc-search__link-type {
+  flex: 0 0 auto;
+  white-space: nowrap;
+  font-size: 0.78rem;
+  line-height: 1;
+  font-weight: 500;
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary-200);
+  border-radius: 999px;
+  padding: 0.28em 0.85em;
+}
+.rgbc-search__link .search__link-text { color: #1f2430; }
+
+/* Subtle captions on substantive in-body content figures (image SEO/LLMO + editorial
+   authority). Injected by normalizeImages() in src/lib/textRules.ts ONLY for content
+   images that have a generated caption; hero illustrations and decorative avatars/icons
+   are never captioned. Style = Option A from the approved mockup (small, muted, italic). */
+figure.rgbc-figure { margin: 1.25rem 0; }
+figure.rgbc-figure img { display: block; max-width: 100%; height: auto; }
+.rgbc-figcaption {
+  margin-top: 0.5rem;
+  padding-top: 0.4rem;
+  border-top: 1px solid #ececec;
+  font-family: var(--font-sans, Inter, sans-serif);
+  font-size: 0.8125rem;
+  line-height: 1.45;
+  font-style: italic;
+  color: #6b6b6b;
+}
+
+/* ============================================================================
+   Taxon "Conditions" table + study drawer. Examine-inspired STRUCTURE, rendered
+   entirely in the microbiomemedicine system (brand red, Lora headings, the
+   #f7e6e6 tint). The heavy-metal-index magenta styling is never used here.
+   Direction color follows the site's signature convention: enriched = red,
+   depleted = blue. Grade = a gradient of brand red (saturated = strong).
+   ============================================================================ */
+
+/* Brand callout note (replaces the off-brand magenta detection box). */
+.mbio-note { background: #faeeee; border-left: 4px solid var(--color-primary); border-radius: 8px; padding: 0.9rem 1.15rem; margin: 1.25rem 0 1.5rem; }
+.mbio-note p { margin: 0; color: #4a3a3a; line-height: 1.6; font-size: 0.92rem; }
+.mbio-note__lead { color: var(--color-primary-dark); }
+
+.mbio-cond { margin: 1.25rem 0 1.75rem; font-family: var(--font-sans, Inter, sans-serif); color: #333; }
+
+/* Summary band — the taxon "group header" (Examine's Vitamin D row analog). */
+.mbio-cond__summary { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1.3rem; background: #f7e6e6; border: 1px solid #eccccc; border-radius: 12px; padding: 0.8rem 1.2rem; margin-bottom: 0.85rem; }
+.mbio-cond__summary-taxon { font-family: var(--font-serif); font-style: italic; font-size: 1.2rem; color: var(--color-primary); }
+.mbio-cond__summary-stat { font-size: 0.9rem; color: #6a4a4a; }
+.mbio-cond__summary-tier { margin-left: auto; font-size: 0.82rem; color: #7a2a2a; background: #fff; border: 1px solid #e3c9c9; border-radius: 999px; padding: 0.2rem 0.75rem; }
+
+.mbio-cond__wrap { overflow-x: auto; border: 1px solid #eee; border-radius: 12px; box-shadow: 0 4px 24px rgba(0, 0, 0, 0.05); background: #fff; }
+.mbio-cond__grid { min-width: 720px; }
+.mbio-cond__head, .mbio-cond__row { display: grid; grid-template-columns: minmax(170px, 2.1fr) 116px 104px 138px minmax(160px, 1.2fr); align-items: center; }
+.mbio-cond__head { background: var(--color-primary); color: #fff; }
+.mbio-cond__head > div { padding: 0.8rem 1rem; font-size: 1rem; white-space: nowrap; }
+.mbio-cond__row { border-top: 1px solid #f0eaea; cursor: pointer; transition: background 0.12s ease; text-align: left; width: 100%; background: none; font: inherit; color: inherit; }
+.mbio-cond__row:hover { background: #fbf5f5; }
+.mbio-cond__row > div { padding: 0.9rem 1rem; }
+.mbio-cond__c-cond { font-family: var(--font-serif); font-size: 1.02rem; color: #7a1d1d; line-height: 1.3; }
+.mbio-cond__flag { color: #b98a2e; margin-left: 0.35rem; cursor: help; }
+
+.mbio-cond__dir { display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.92rem; }
+.mbio-cond__dir svg { width: 15px; height: 15px; }
+.mbio-cond__dir--enriched { color: #a02727; }
+.mbio-cond__dir--depleted { color: #183fab; }
+.mbio-cond__dir--mixed { color: #6b7280; }
+
+/* Grade badge: bg/fg come from inline CSS vars (set per-row by score). The !important +
+   .mbio-cond scoping wins over a dev-injected sheet that otherwise flattens inline background. */
+.mbio-cond .mbio-grade { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 9px; font-size: 1.1rem; box-shadow: 0 3px 0 rgba(0, 0, 0, 0.08); background: var(--g-bg, #cccccc) !important; color: var(--g-fg, #ffffff) !important; }
+
+.mbio-eff { display: flex; flex-direction: column; gap: 0.25rem; }
+.mbio-eff__arrows { display: inline-flex; gap: 2px; }
+.mbio-eff__arrows svg { width: 14px; height: 18px; }
+.mbio-eff__cap { font-size: 0.74rem; color: #8a8a8a; }
+
+.mbio-cond__ev { line-height: 1.3; }
+.mbio-cond__studies { background: none; border: none; padding: 0; font: inherit; font-size: 0.92rem; color: #183fab; cursor: pointer; display: inline-flex; align-items: center; gap: 0.35rem; }
+.mbio-cond__studies span { text-decoration: underline; }
+.mbio-cond__studies:hover { color: var(--color-primary); }
+.mbio-cond__studies svg, .mbio-cond__parts svg { width: 15px; height: 15px; color: #d99; flex: 0 0 auto; }
+.mbio-cond__parts { display: flex; align-items: center; gap: 0.35rem; font-size: 0.74rem; color: #6b7280; margin-top: 0.35rem; }
+
+.mbio-cond__legend { font-size: 0.82rem; color: #6b7280; line-height: 1.6; margin-top: 0.95rem; }
+.mbio-cond__legend strong { color: #4a4a4a; }
+
+/* Header info tooltip (i) — sits as a small superscript so header labels stay on one baseline.
+   hover/focus reveals a white brand tooltip with an up-caret. */
+.mbio-info { position: relative; display: inline-flex; vertical-align: super; margin-left: 0.18rem; }
+.mbio-info__btn { background: none; border: none; padding: 0; margin: 0; cursor: pointer; display: inline-flex; align-items: center; color: #fff; opacity: 0.8; }
+.mbio-info__btn:hover, .mbio-info:focus-within .mbio-info__btn { opacity: 1; }
+.mbio-info__btn svg { width: 13px; height: 13px; }
+.mbio-info__pop { position: absolute; top: calc(100% + 12px); left: 50%; transform: translateX(-50%) translateY(4px); width: 320px; max-width: 80vw; background: #fff; color: #3a3a3a; box-shadow: 0 10px 34px rgba(60, 20, 20, 0.22); border-radius: 10px; padding: 0.9rem 1.05rem; font-family: var(--font-sans, Inter, sans-serif); font-size: 0.82rem; line-height: 1.6; font-weight: 400; text-align: left; white-space: normal; z-index: 60; opacity: 0; visibility: hidden; pointer-events: none; transition: opacity 0.16s ease, transform 0.16s ease; }
+.mbio-info:hover .mbio-info__pop, .mbio-info:focus-within .mbio-info__pop { opacity: 1; visibility: visible; transform: translateX(-50%) translateY(0); }
+.mbio-info__pop::before { content: ""; position: absolute; bottom: 100%; left: 50%; transform: translateX(-50%); border: 7px solid transparent; border-bottom-color: #fff; }
+
+/* Page Snapshot — on-brand red card (the captured migration CSS flattened .snapshot to a
+   translucent-white box with 📄 emoji bullets). `.snapshot--brand` restores a two-tone red
+   card: darker header bar, red body, per-row SVG icons. Compound selector + !important beats
+   the migrated `.snapshot{background-color:hsla(0,0%,100%,.1)}` override. */
+.snapshot.snapshot--brand { background: #a72929 !important; color: #fff; border-radius: 12px; padding: 0; overflow: hidden; box-shadow: 0 8px 26px rgba(80, 15, 15, 0.28); font-family: var(--font-sans, Inter, sans-serif); }
+.snapshot--brand .snapshot__header { background: rgba(0, 0, 0, 0.17); margin: 0; padding: 0.7rem 1.05rem; }
+.snapshot--brand .snapshot__title { font-size: 1.05rem; color: #fff; }
+.snapshot--brand .snapshot__content { padding: 0.85rem 1.05rem 0.95rem; }
+.snapshot--brand .snapshot__list { margin: 0; }
+.snapshot--brand .snapshot__list-item { align-items: flex-start; gap: 0.6rem; font-size: 0.9rem; line-height: 1.4; margin-bottom: 0.75rem; color: #fff; }
+.snapshot--brand .snapshot__list-item:last-child { margin-bottom: 0; }
+.snapshot--brand .snapshot__list-item::before { content: none !important; }
+.snapshot--brand .snapshot__ico { flex: 0 0 auto; width: 18px; height: 18px; margin-top: 1px; opacity: 0.92; }
+.snapshot--brand .snapshot__link, .snapshot--brand .snapshot__list-item a { color: #fff !important; text-decoration: none; }
+.snapshot--brand .snapshot__link:hover { opacity: 0.82; text-decoration: none; }
+.snapshot--brand .snapshot__list-item.js-show-mmas { cursor: pointer; }
+
+/* ---- Study drawer (right slide-in) ---- */
+.mbio-drawer-root { position: fixed; inset: 0; z-index: 1000; visibility: hidden; pointer-events: none; }
+.mbio-drawer-root.mbio-drawer--open { visibility: visible; pointer-events: auto; }
+.mbio-drawer__backdrop { position: absolute; inset: 0; background: rgba(26, 10, 10, 0.35); opacity: 0; transition: opacity 0.25s ease; }
+.mbio-drawer--open .mbio-drawer__backdrop { opacity: 1; }
+.mbio-drawer { position: absolute; top: 0; right: 0; height: 100%; width: min(468px, 93vw); background: #fff; box-shadow: -8px 0 40px rgba(0, 0, 0, 0.18); transform: translateX(100%); transition: transform 0.28s cubic-bezier(0.4, 0, 0.2, 1); overflow-y: auto; padding: 1.6rem 1.7rem 3rem; }
+.mbio-drawer--open .mbio-drawer { transform: translateX(0); }
+.mbio-drawer__head { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; }
+.mbio-drawer__title { font-family: var(--font-serif); font-size: 1.55rem; color: #1a1a2e; line-height: 1.15; }
+.mbio-drawer__close { background: none; border: none; font-size: 1.8rem; line-height: 1; color: #999; cursor: pointer; }
+.mbio-drawer__close:hover { color: var(--color-primary); }
+.mbio-drawer__sub { color: #6b7280; font-size: 0.9rem; margin-top: 0.2rem; }
+.mbio-drawer__divider { border-top: 1px dashed #d8c3c3; margin: 1rem 0 1.35rem; }
+.mbio-study + .mbio-study { border-top: 1px solid #f1eaea; padding-top: 1.2rem; }
+.mbio-study { margin-bottom: 1.4rem; }
+.mbio-study__title { font-family: var(--font-serif); font-size: 1.05rem; color: var(--color-primary); line-height: 1.35; text-decoration: none; display: block; }
+.mbio-study__title:hover { text-decoration: underline; }
+/* When the study name links to our internal review, it sits below the Study Summary. */
+.mbio-study__title--below { margin-top: 0.95rem; }
+.mbio-study__band { background: #f6eeee; border-left: 4px solid var(--color-primary); border-radius: 8px; padding: 0.65rem 0.95rem; margin: 0.85rem 0 0.6rem; }
+.mbio-study__band-title { font-family: var(--font-serif); color: var(--color-primary); font-size: 1.05rem; }
+.mbio-kv { margin: 0.4rem 0 0; }
+.mbio-kv__row { display: flex; justify-content: space-between; gap: 1rem; padding: 0.6rem 0; border-bottom: 1px solid #f0eaea; }
+.mbio-kv__k { color: #1a1a2e; font-size: 0.92rem; white-space: nowrap; flex: 0 0 auto; }
+.mbio-kv__v { color: var(--color-primary-dark); font-size: 0.92rem; text-align: right; }
+.mbio-study__caveat { margin-top: 0.75rem; background: #faeeee; border-left: 4px solid var(--color-primary); border-radius: 6px; padding: 0.55rem 0.8rem; font-size: 0.82rem; color: #5a3a3a; line-height: 1.5; }

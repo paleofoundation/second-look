@@ -1,0 +1,17 @@
+--- a/one-match-rule/ONE-MATCH-RULE.md
++++ b/one-match-rule/ONE-MATCH-RULE.md
+@@ -427,9 +427,11 @@
+ 
+ The user-facing handoff should say what is live and useful, what was verified, what remains HOLD and why, and the smallest necessary owner action. Supply work chips for remaining bounded tasks. Do not end with a generic offer to begin work that was already authorized.
+ 
+-## 15. Keep this rule current as PepsAnon changes
+-
+-The owner has requested that **new PepsAnon requirements update this rule**. Treat this as a living user instruction, not a one-time export. When handling a new PepsAnon request, check whether it adds, changes or retires a reusable requirement. Incorporate confirmed user intent immediately, even while implementation continues, and record implementation/review/release status separately. Do not wait for a feature to ship before remembering what was requested.
++## 15. Keep this rule current as requirements and pilots evolve
++
++The owner has requested that **new PepsAnon requirements and confirmed findings from authorized evidence-site pilots update this rule**. This includes the drug-repurposing pilot. Treat this as a living user instruction, not a one-time export. When handling a new PepsAnon request or an authorized pilot finding, check whether it adds, changes or retires a reusable requirement. Incorporate confirmed user intent immediately, even while implementation continues, and record implementation/review/release status separately. Do not wait for a feature to ship before remembering what was requested.
++
++For an authorized rule-testing pilot, preserve a project-local copy of the complete starting rule before implementation and record its version and SHA-256. Keep that baseline immutable while the canonical rule evolves. Maintain a durable gap log containing the baseline clause or missing instruction, observed failure or ambiguity, concrete evidence, classification (missing rule, ambiguous rule, implementation defect, host/tool limitation, external dependency or owner choice), correction and retest result. Record every additional owner instruction after the initial prompt with its source. Separate ordinary incomplete work from a rule defect. Propose only confirmed reusable corrections; do not add speculative features to make the rule longer. Keep a baseline-versus-revised comparison and distinguish requested, proposed, implemented and released states. Apply confirmed changes through the same canonical source and existing updater, preserving concurrent edits; if a destination cannot be synchronized, provide a reviewable patch and record it as pending.
+ 
+ Before starting a new evidence site or preparing a fresh rule handoff, reconcile accessible recent PepsAnon chats and current versioned contracts against the recorded sync checkpoint. Prefer exact user messages. Assistant plans provide proposed implementation detail and must remain labeled as proposals until adopted; completion statements require corroboration appropriate to the claim. A schema passing validation, a local preview or a worker saying done does not prove release or human review.
+ 

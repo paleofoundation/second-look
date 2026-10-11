@@ -70,7 +70,7 @@ export function EvidenceTable({rows,sources,cite,renderText=plainText,emptyMessa
        {outcomeState(row)?<span className="table-state">{outcomeState(row)}</span>:null}
       </td>
       <td data-label="Grade" className="evidence-grade-cell">
-       <Link className={`grade ${gradeClass(confidence.label,confidence.category==='assessed')}`} data-confidence-state={confidence.category} href="/methods" title={confidence.category==='assessed'?'Read how evidence is assessed':'This outcome has no completed evidence grade. Read how evidence is assessed.'} aria-label={`${confidence.label}: ${row.title}. How we assess evidence.`}>{confidence.label}</Link>
+       <button type="button" className={`grade evidence-grade-trigger ${gradeClass(confidence.label,confidence.category==='assessed')}`} data-confidence-state={confidence.category} aria-haspopup="dialog" onClick={event=>open(row,event.currentTarget)} title="Read the outcome-specific grading rationale" aria-label={`${confidence.label} evidence. Why this grade: ${row.title}`}>{confidence.label}</button>
       </td>
       <td data-label="Evidence">
        <button type="button" className="evidence-count-link" aria-haspopup="dialog" aria-label={'View evidence for '+row.title} onClick={event=>open(row,event.currentTarget)}><FileText aria-hidden="true"/><span>{count.reports?`${count.reports} ${count.reports===1?'report':'reports'}`:`${count.total} ${count.total===1?'source':'sources'}`}</span></button>
@@ -90,6 +90,16 @@ export function EvidenceTable({rows,sources,cite,renderText=plainText,emptyMessa
      <Dialog.Close className="research-panel-close" aria-label="Close research details"><X aria-hidden="true"/></Dialog.Close>
     </header>
     <div className="research-detail-panel__body">{selected?<>
+     {selectedConfidence?.category==='assessed'?<details open className="research-outcome-details evidence-grade-rationale">
+      <summary>Why this grade? <ChevronDown aria-hidden="true"/></summary>
+      <div>
+       <p><strong>{selectedConfidence.label} evidence.</strong> {cited(selected.certainty.rationale,selected.certainty.sourceIds||selected.sourceIds)}</p>
+       {selected.certainty.domains?.map(domain=><p key={domain.name}><strong>{domain.name}:</strong> {cited(domain.text,domain.sourceIds)}</p>)}
+       <dl className="research-facts"><dt>Assessment scope</dt><dd>{renderText(selected.certainty.scope||'')}</dd><dt>Method</dt><dd><Link href="/methods">{selected.certainty.method}</Link></dd>{selected.certainty.assessedAt?<><dt>Assessed</dt><dd>{selected.certainty.assessedAt}</dd></>:null}</dl>
+       {selected.certainty.basis?.length?<details className="research-study-details"><summary>Assessment source locations <ChevronDown aria-hidden="true"/></summary><ul className="research-page-locators">{selected.certainty.basis.map((basis,index)=><li key={index}>{cited(basis.locator,[basis.sourceId])}</li>)}</ul></details>:null}
+       {selected.certainty.reviewStatus?<p className="evidence-assessment-note">{selected.certainty.reviewStatus} This grade describes confidence in the stated finding, not treatment benefit or safety.</p>:null}
+      </div>
+     </details>:null}
      <details className="research-outcome-details">
       <summary>Findings and limitations <ChevronDown aria-hidden="true"/></summary>
       <div>
@@ -105,7 +115,7 @@ export function EvidenceTable({rows,sources,cite,renderText=plainText,emptyMessa
         {selected.details?.map((detail,index)=><div className="fact-pair" key={index}><dt>{detail.label}</dt><dd>{detail.value}</dd></div>)}
        </dl>
        <p>{renderText(selected.evidenceBase)}</p>
-       {selectedConfidence?<><p><strong>{selectedConfidence.label}.</strong> {renderText(selectedConfidence.basis)}</p>{selectedConfidence.limitation.input!=='missing'?<p className="research-panel-limitation">{cited(selectedConfidence.limitation.text,selectedConfidence.limitation.sourceIds)}</p>:null}</>:null}
+       {selectedConfidence&&selectedConfidence.category!=='assessed'?<><p><strong>{selectedConfidence.label}.</strong> {renderText(selectedConfidence.basis)}</p>{selectedConfidence.limitation.input!=='missing'?<p className="research-panel-limitation">{cited(selectedConfidence.limitation.text,selectedConfidence.limitation.sourceIds)}</p>:null}</>:null}
        {selected.limits.filter(limit=>limit.text!==selectedConfidence?.limitation.text).map((limit,index)=><p className="research-panel-limitation" key={index}>{cited(limit.text,limit.sourceIds)}</p>)}
       </div>
      </details>

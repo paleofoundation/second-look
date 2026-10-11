@@ -1,0 +1,4 @@
+'use client';
+import {HoverCard,HoverCardTrigger,HoverCardContent} from '@/components/ui/hover-card';
+import type {Source} from '@/lib/peptides';
+export function Citation({source,index,href}:{source:Source;index:number;href?:string}){return <HoverCard openDelay={150} closeDelay={180}><HoverCardTrigger asChild><sup className="citation-marker"><a className="rgbc-reference" href={href||source.url} target={href?undefined:'_blank'} rel={href?undefined:'noreferrer'} aria-label={`Reference ${index}: ${source.title}`}>[{index}]</a></sup></HoverCardTrigger><HoverCardContent className="citation-popup" side="top"><a href={source.url} target="_blank" rel="noreferrer">{source.title}</a><p>{source.kind}{source.year?` (${source.year})`:source.accessedAt?` · Accessed ${source.accessedAt}`:''}</p></HoverCardContent></HoverCard>}

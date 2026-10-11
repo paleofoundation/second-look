@@ -1,0 +1,3299 @@
+{
+  "method": "selected-source-editorial-v1",
+  "records": [
+    {
+      "rowId": "SYN-D01-C01-DIAGNOSIS",
+      "label": "Low",
+      "rationale": "Two masked randomized trials directly inform diagnosis after acute COVID, but COVID-OUT has an unresolved correction and conflicting cumulative-incidence values. ACTIV-6’s secondary estimate is compatible with no difference and is affected by missing outcomes and unadjusted multiple comparisons. Low confidence reflects these unresolved limitations; the available results do not establish a settled prevention benefit.",
+      "assessmentStatus": "assessed",
+      "assessmentKind": "selected-source-editorial-v1",
+      "method": "Selected-source editorial assessment · v1",
+      "scope": "Metformin · Long COVID · Prevention during acute COVID · Acute COVID outpatients; trial populations differ · Oral · Metformin versus matched placebo · Participant-reported clinician diagnosis of Long COVID · COVID-OUT day 300; ACTIV-6 day 180",
+      "assessedAt": "2026-10-11",
+      "sourceIds": [
+        "P-COVIDOUT-2023",
+        "P-ACTIV6-2026"
+      ],
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "Both trials used masked random allocation; selective extended follow-up in COVID-OUT and missing diagnosis outcomes in ACTIV-6 limit the comparisons.",
+          "sourceIds": [
+            "P-COVIDOUT-2023",
+            "P-ACTIV6-2026"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "Both concern prevention during acute infection, not treatment of established Long COVID; their populations and diagnosis follow-up times differ.",
+          "sourceIds": [
+            "P-COVIDOUT-2023",
+            "P-ACTIV6-2026"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "COVID-OUT’s provisional hazard ratio is 0.59 (95% CI 0.39–0.89); ACTIV-6’s difference is −0.7 percentage points (95% credible interval −1.5 to 0.1).",
+          "sourceIds": [
+            "P-COVIDOUT-2023",
+            "P-ACTIV6-2026"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "The point estimates both favor metformin, but two differently defined follow-ups with different uncertainty do not establish a replicated common effect.",
+          "sourceIds": [
+            "P-COVIDOUT-2023",
+            "P-ACTIV6-2026"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "COVID-OUT’s indexed correction and conflicting control percentages remain unresolved; ACTIV-6 has only a partial full-text record. The diagnosis synthesis remains on hold.",
+          "sourceIds": [
+            "P-COVIDOUT-2023",
+            "P-ACTIV6-2026"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "P-COVIDOUT-2023",
+          "locator": "Figure 2 and Results paragraph beginning cumulative incidence"
+        },
+        {
+          "sourceId": "P-ACTIV6-2026",
+          "locator": "Table 3 secondary clinician diagnosis; Table 2 raw counts"
+        }
+      ],
+      "integrity": "correction_unresolved",
+      "reviewStatus": "AI-assisted editorial assessment; independent clinical review has not been completed."
+    },
+    {
+      "rowId": "SYN-D01-C01-SYMPTOMS",
+      "label": "Moderate",
+      "rationale": "ACTIV-6 supplies a large masked randomized comparison for the prespecified six-month symptom-or-death outcome, so the finding is more informative than an uncontrolled symptom report. The trial did not meet its efficacy threshold, and the interval permits both benefit and a small increase. Missing symptom outcomes and incomplete access to the full methods reduce editorial confidence to Moderate, rather than demonstrating treatment equivalence.",
+      "assessmentStatus": "assessed",
+      "assessmentKind": "selected-source-editorial-v1",
+      "method": "Selected-source editorial assessment · v1",
+      "scope": "Metformin · Long COVID · Prevention during acute COVID · Outpatients aged at least 30; prior infection or vaccination allowed · Oral · Metformin versus matched placebo · Symptoms attributed to COVID-19 or death · Day 180",
+      "assessedAt": "2026-10-11",
+      "sourceIds": [
+        "P-ACTIV6-2026"
+      ],
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "Quadruple-blind randomized allocation supports comparison, but 593 symptom outcomes were missing and the review record identifies analysis-plan changes requiring further scrutiny.",
+          "sourceIds": [
+            "P-ACTIV6-2026"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "The endpoint directly concerns symptoms attributed to COVID or death at day 180 after acute treatment; it does not assess treatment of established illness.",
+          "sourceIds": [
+            "P-ACTIV6-2026"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "The adjusted difference is −0.8 percentage points (95% credible interval −2.2 to 0.6); uncommon events and missing responses leave benefit uncertain.",
+          "sourceIds": [
+            "P-ACTIV6-2026"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "One trial family supports this exact endpoint; the clinician-diagnosis secondary analysis is a different outcome, not an independent replication.",
+          "sourceIds": [
+            "P-ACTIV6-2026"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "Only part of the published article was available. Missing protocol and supplement details limit assessment of analysis changes and missing outcomes.",
+          "sourceIds": [
+            "P-ACTIV6-2026"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "P-ACTIV6-2026",
+          "locator": "Table 3 primary endpoint; Table 2 raw counts"
+        }
+      ],
+      "integrity": "limited_access",
+      "reviewStatus": "AI-assisted editorial assessment; independent clinical review has not been completed."
+    },
+    {
+      "rowId": "SYN-D01-C01-RECOVERY",
+      "label": "Low",
+      "rationale": "A double-blind randomized comparison directly tests recovery after established Long COVID, but only the abstract is available for this assessment. Recovery occurred in 84 of 132 metformin recipients and 90 of 132 placebo recipients, without an extracted between-group uncertainty interval. Low confidence reflects incomplete methods and precision information; the reported absence of improvement does not establish equivalence.",
+      "assessmentStatus": "assessed",
+      "assessmentKind": "selected-source-editorial-v1",
+      "method": "Selected-source editorial assessment · v1",
+      "scope": "Metformin · Long COVID · Treatment of established Long COVID · Adults with PASC index at least 12 · Oral · Metformin versus double placebo · Recovery: PASC index below 12 · Week 8",
+      "assessedAt": "2026-10-11",
+      "sourceIds": [
+        "P-KOREA-2026"
+      ],
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "Randomization and masking support the comparison, but abstract access prevents complete assessment of allocation, missing data and analysis decisions.",
+          "sourceIds": [
+            "P-KOREA-2026"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "Recovery is defined as PASC index below 12 at eight weeks in the enrolled population; applicability to more severe or persistent illness is limited.",
+          "sourceIds": [
+            "P-KOREA-2026"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "Arm event counts are available, but no between-group interval is recorded. The direction of the counts alone cannot rule out a clinically relevant difference.",
+          "sourceIds": [
+            "P-KOREA-2026"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "One trial family supports the specified recovery endpoint; there is no independently replicated estimate in the selected sources.",
+          "sourceIds": [
+            "P-KOREA-2026"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "Only the abstract was available; full-text methods, supplements, harms details and a complete correction check are unavailable for this assessment.",
+          "sourceIds": [
+            "P-KOREA-2026"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "P-KOREA-2026",
+          "locator": "Abstract Results"
+        }
+      ],
+      "integrity": "limited_access",
+      "reviewStatus": "AI-assisted editorial assessment; independent clinical review has not been completed."
+    },
+    {
+      "rowId": "SYN-D03-C01-SEVERITY",
+      "label": "Moderate",
+      "rationale": "STOP-PASC directly tests persistent symptoms using a masked randomized comparison and did not demonstrate benefit on its primary pooled severity outcome. The 155-person, single-center trial stopped early for futility, and the available outcome record lacks a numerical pooled effect interval. Those limitations support Moderate editorial confidence in the bounded finding, while leaving smaller effects and other regimens unresolved.",
+      "assessmentStatus": "assessed",
+      "assessmentKind": "selected-source-editorial-v1",
+      "method": "Selected-source editorial assessment · v1",
+      "scope": "Nirmatrelvir with ritonavir · Long COVID · Treatment of established Long COVID · Adults with at least two moderate or severe core symptoms for at least three months · Oral · Nirmatrelvir plus ritonavir versus placebo plus ritonavir · Pooled severity of six core PASC symptoms · Week 10",
+      "assessedAt": "2026-10-11",
+      "sourceIds": [
+        "P-STOPPASC-2024"
+      ],
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "Double-blind random allocation supports the primary comparison; early futility stopping and possible unmasking from taste disturbance limit confidence in self-reported symptoms.",
+          "sourceIds": [
+            "P-STOPPASC-2024"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "The comparison applies to the studied 15-day course and six pooled core symptom groups at week 10; both arms received ritonavir.",
+          "sourceIds": [
+            "P-STOPPASC-2024"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "The available evidence records no significant primary difference but no numerical pooled interval; exact effect size and the range of compatible smaller effects remain unquantified.",
+          "sourceIds": [
+            "P-STOPPASC-2024"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "This row contains one trial family. Its separate fatigue analysis uses the same participants and does not count as replication.",
+          "sourceIds": [
+            "P-STOPPASC-2024"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "Full-text HTML includes the acknowledged Figure 2 line-placement correction. No unresolved numerical correction is identified for this endpoint in the material checked.",
+          "sourceIds": [
+            "P-STOPPASC-2024"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "P-STOPPASC-2024",
+          "locator": "Results / Primary Outcome"
+        }
+      ],
+      "integrity": "clear",
+      "reviewStatus": "AI-assisted editorial assessment; independent clinical review has not been completed."
+    },
+    {
+      "rowId": "SYN-D03-C01-FATIGUE",
+      "label": "Low",
+      "rationale": "The randomized STOP-PASC comparison provides direct fatigue data, but fatigue was a secondary measure in a small trial that stopped early. The estimate of 0.38 points has an interval from −2.40 to 3.15, and the endpoint-specific analyzed denominators are not recorded. These precision and reporting limits, alongside multiple symptom comparisons, make confidence Low for the fatigue effect rather than proving no effect.",
+      "assessmentStatus": "assessed",
+      "assessmentKind": "selected-source-editorial-v1",
+      "method": "Selected-source editorial assessment · v1",
+      "scope": "Nirmatrelvir with ritonavir · Long COVID · Treatment of established Long COVID · Adults with at least two moderate or severe core symptoms for at least three months · Oral · Nirmatrelvir plus ritonavir versus placebo plus ritonavir · PROMIS fatigue score change (secondary outcome) · Baseline to week 10",
+      "assessedAt": "2026-10-11",
+      "sourceIds": [
+        "P-STOPPASC-2024"
+      ],
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "Masking and randomization strengthen the comparison, but secondary-outcome multiplicity, early stopping and possible taste-related unmasking remain relevant.",
+          "sourceIds": [
+            "P-STOPPASC-2024"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "PROMIS fatigue is the specific outcome at week 10; the result does not establish effects on every Long COVID symptom or other antiviral durations.",
+          "sourceIds": [
+            "P-STOPPASC-2024"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "The 95% interval spans −2.40 to 3.15 score points. Endpoint-specific analyzed denominators and a prespecified meaningful-change threshold are not available in this assessment.",
+          "sourceIds": [
+            "P-STOPPASC-2024"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "This is a secondary result from the same STOP-PASC family, not confirmation independent of its pooled primary symptom result.",
+          "sourceIds": [
+            "P-STOPPASC-2024"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "The full-text article retains the Figure 2 correction. No unresolved numerical conflict affecting the Table 2 fatigue result is identified in the material checked.",
+          "sourceIds": [
+            "P-STOPPASC-2024"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "P-STOPPASC-2024",
+          "locator": "Table 2 PROMIS fatigue"
+        }
+      ],
+      "integrity": "clear",
+      "reviewStatus": "AI-assisted editorial assessment; independent clinical review has not been completed."
+    },
+    {
+      "rowId": "SYN-D03-C01-PHENOTYPES",
+      "label": "Low",
+      "rationale": "RECOVER-VITAL is a large masked randomized trial, but the available evidence supports the combined phenotype assessment only through its abstract. Different symptom groups use different primary outcomes, and no phenotype-specific effect sizes or uncertainty intervals are extracted here. Low confidence reflects those missing details; the abstract’s negative primary finding is not proof of equal outcomes across every phenotype.",
+      "assessmentStatus": "assessed",
+      "assessmentKind": "selected-source-editorial-v1",
+      "method": "Selected-source editorial assessment · v1",
+      "scope": "Nirmatrelvir with ritonavir · Long COVID · Treatment of established Long COVID · Adults with Long COVID for at least 12 weeks; cognitive, autonomic or exercise phenotypes · Oral · 15- or 25-day nirmatrelvir–ritonavir regimens versus placebo–ritonavir · Phenotype-specific primary improvement outcomes · Day 90",
+      "assessedAt": "2026-10-11",
+      "sourceIds": [
+        "P-RECOVER-2026"
+      ],
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "Double-blind randomization to two active durations and control is a strength; the abstract alone is insufficient for a full analysis and missing-data assessment.",
+          "sourceIds": [
+            "P-RECOVER-2026"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "The trial concerns selected cognitive, autonomic and exercise phenotypes at day 90; combining them must not imply a single uniform clinical endpoint.",
+          "sourceIds": [
+            "P-RECOVER-2026"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "The record lists 964 randomized and 959 analyzed at study level, but contains no phenotype-specific numerical effect intervals or analyzed denominators.",
+          "sourceIds": [
+            "P-RECOVER-2026"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "This assessment describes one trial family with several outcome definitions; parallel phenotype results are not independent study replications.",
+          "sourceIds": [
+            "P-RECOVER-2026"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "Only the abstract supports this assessment; full-text and supplement details are unavailable, including the information needed to reconcile separate phenotype results.",
+          "sourceIds": [
+            "P-RECOVER-2026"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "P-RECOVER-2026",
+          "locator": "Abstract Findings"
+        }
+      ],
+      "integrity": "limited_access",
+      "reviewStatus": "AI-assisted editorial assessment; independent clinical review has not been completed."
+    },
+    {
+      "rowId": "SYN-D01-C24-UPDRS",
+      "label": "Low",
+      "rationale": "This randomized, masked Parkinson pilot directly measured UPDRS, but its clinical comparison is based on a small per-protocol sample over three months. The between-group result was not significant, and an uncertainty interval is not recorded. Withdrawals, short follow-up and imprecision reduce confidence to Low; improvement within the metformin arm and biomarker differences do not establish clinical superiority.",
+      "assessmentStatus": "assessed",
+      "assessmentKind": "selected-source-editorial-v1",
+      "method": "Selected-source editorial assessment · v1",
+      "scope": "Metformin · Parkinson disease · Adjunctive treatment of Parkinson disease · Adults aged at least 50 receiving levodopa/carbidopa; diabetes excluded · Oral · Metformin plus levodopa/carbidopa versus placebo plus levodopa/carbidopa · UPDRS total (primary clinical endpoint) · Three months",
+      "assessedAt": "2026-10-11",
+      "sourceIds": [
+        "CP016"
+      ],
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "Sixty participants were randomized; 27 metformin and 25 control participants were analyzed after withdrawals. Per-protocol analysis can weaken the protection supplied by randomization.",
+          "sourceIds": [
+            "CP016"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "The result concerns adjunctive metformin in older patients receiving levodopa/carbidopa at one center; it does not establish disease modification or effects in excluded diabetes populations.",
+          "sourceIds": [
+            "CP016"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "Post-treatment comparison gave rank-biserial r=0.106 and P=0.515 without a recorded between-group interval; the small sample does not demonstrate equivalence.",
+          "sourceIds": [
+            "CP016"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "One pilot trial supports the clinical assessment. Its multiple biomarker and subscore analyses share the cohort and are not independent confirmation.",
+          "sourceIds": [
+            "CP016"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "Full text supports the results and participant counts. No outcome-specific unresolved correction is identified in the sources checked; absence of a detected issue is not proof that every issue has been excluded.",
+          "sourceIds": [
+            "CP016"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "CP016",
+          "locator": "PDF p6 Table2; p7 Results"
+        },
+        {
+          "sourceId": "CP016",
+          "locator": "PDF pp1–12; Table2 p6, Table3 p7, Table4 p8"
+        }
+      ],
+      "integrity": "clear",
+      "reviewStatus": "AI-assisted editorial assessment; independent clinical review has not been completed."
+    },
+    {
+      "rowId": "SYN-D01-C25-EXPLORATORY",
+      "label": "Low",
+      "rationale": "These exploratory metabolomic and imaging associations arise from a small companion analysis of an open-label randomized trial. Blood and MRI subsets were incomplete, and unadjusted exploratory tests are vulnerable to multiplicity and confounding. Confidence is Low for a cognition mechanism: an association with cognitive change neither establishes mediation nor independently replicates clinical efficacy.",
+      "assessmentStatus": "assessed",
+      "assessmentKind": "selected-source-editorial-v1",
+      "method": "Selected-source editorial assessment · v1",
+      "scope": "Metformin · Schizophrenia · Metformin added to antipsychotic treatment · Clinically stable schizophrenia; disease duration at most five years · Oral · Metformin plus antipsychotics versus antipsychotics alone · Metabolites and brain connectivity associated with cognitive change · Up to 24 weeks",
+      "assessedAt": "2026-10-11",
+      "sourceIds": [
+        "CP017"
+      ],
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "The post hoc analysis used 58 blood-sample participants and 33 MRI participants, with incomplete time points, unadjusted exploratory testing and potential adherence-related confounding.",
+          "sourceIds": [
+            "CP017"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "Metabolites and functional connectivity are mechanistic measurements; correlations with cognitive scores do not establish that these changes caused a clinical benefit.",
+          "sourceIds": [
+            "CP017"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "Small and differing analytic subsets restrict precision. Numerous correlation and interaction tests were exploratory and not adjusted to support confirmatory causal conclusions.",
+          "sourceIds": [
+            "CP017"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "This report reuses the parent schizophrenia trial cohort; it supplies companion observations rather than a new independent clinical replication.",
+          "sourceIds": [
+            "CP017"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "Full-text methods, figures and tables support the analysis. No unresolved correction is identified in the material checked, although reporting and methodological limitations remain.",
+          "sourceIds": [
+            "CP017"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "CP017",
+          "locator": "PDF p8 Table3 week24"
+        },
+        {
+          "sourceId": "CP017",
+          "locator": "PDF p7 Results; Fig1 p5"
+        },
+        {
+          "sourceId": "CP017",
+          "locator": "PDF p7 Results; Fig2 p8"
+        },
+        {
+          "sourceId": "CP017",
+          "locator": "PDF pp8,10; p7 opening cognition paragraph"
+        },
+        {
+          "sourceId": "CP017",
+          "locator": "PDF pp1–14; Methods pp3–4; Tables1–3 pp6–8"
+        }
+      ],
+      "integrity": "clear",
+      "reviewStatus": "AI-assisted editorial assessment; independent clinical review has not been completed."
+    },
+    {
+      "rowId": "SYN-D28-C11-CMAP",
+      "label": "Low",
+      "rationale": "Vorinostat was nominated from transcriptome and Connectivity Map analysis rather than administered to people with Crohn disease. The enrichment score cannot quantify symptom improvement, remission or clinical safety, and the analysis relies on one selected dataset. Confidence is Low for clinical inference; this is a hypothesis requiring experimental and human confirmation, not demonstrated treatment benefit.",
+      "assessmentStatus": "assessed",
+      "assessmentKind": "selected-source-editorial-v1",
+      "method": "Selected-source editorial assessment · v1",
+      "scope": "Vorinostat · Crohn disease · Computational drug-repurposing hypothesis for anti-TNF-refractory Crohn disease · GSE100833 anti-TNF refractory Crohn's disease inflamed and non-inflamed colonic transcriptomes; CMap and STRING analyses. · Not applicable: no drug administered to patients · Transcriptomic cluster queried against Connectivity Map drug profiles; no treated-patient comparison · Connectivity Map (CMap) enrichment score for a selected gene cluster · Computational analysis; no patient treatment follow-up",
+      "assessedAt": "2026-10-11",
+      "sourceIds": [
+        "CP002-R01"
+      ],
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "The original computational study linked gene-expression clusters with drug profiles; it had no randomized treatment allocation or treated-patient comparison.",
+          "sourceIds": [
+            "CP002-R01"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "Human disease transcriptomes supply biological context, but vorinostat was not tested as a Crohn intervention and no patient treatment outcome was measured.",
+          "sourceIds": [
+            "CP002-R01"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "The recorded CMap score of 12.3 is not a clinical effect size. A patient-benefit confidence interval is not identifiable from this design.",
+          "sourceIds": [
+            "CP002-R01"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "One transcriptome dataset and one computational report support the nomination; independent experimental or clinical replication is not represented.",
+          "sourceIds": [
+            "CP002-R01"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "The full article supports a computational nomination only. The preclinical-only classification denotes absent clinical treatment evidence, rather than a defect in the report.",
+          "sourceIds": [
+            "CP002-R01"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "CP002-R01",
+          "locator": "Figure 3, PDF p.4"
+        },
+        {
+          "sourceId": "CP002-R01",
+          "locator": "Methods PDF p.7; limitations PDF pp.6–7"
+        }
+      ],
+      "integrity": "preclinical_only",
+      "reviewStatus": "AI-assisted editorial assessment; independent clinical review has not been completed."
+    },
+    {
+      "rowId": "SYN-D29-C11-CMAP",
+      "label": "Low",
+      "rationale": "Clomipramine was nominated by a gene-expression matching analysis, without treating patients or measuring Crohn symptom improvement. The score is a computational ranking rather than a clinical effect, and the single-dataset analysis requires external experimental confirmation. Confidence is Low for clinical inference; the finding does not establish remission, safety or a reason to prescribe clomipramine for Crohn disease.",
+      "assessmentStatus": "assessed",
+      "assessmentKind": "selected-source-editorial-v1",
+      "method": "Selected-source editorial assessment · v1",
+      "scope": "Clomipramine · Crohn disease · Computational drug-repurposing hypothesis for anti-TNF-refractory Crohn disease · GSE100833 anti-TNF refractory Crohn's disease inflamed and non-inflamed colonic transcriptomes; CMap and STRING analyses. · Not applicable: no drug administered to patients · Transcriptomic cluster queried against Connectivity Map drug profiles; no treated-patient comparison · Connectivity Map (CMap) enrichment score for a selected gene cluster · Computational analysis; no patient treatment follow-up",
+      "assessedAt": "2026-10-11",
+      "sourceIds": [
+        "CP002-R01"
+      ],
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "The original computational analysis matched a transcriptomic cluster to Connectivity Map profiles without intervention groups or a clinical comparator.",
+          "sourceIds": [
+            "CP002-R01"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "Disease-derived molecular data are indirect evidence for treatment: clomipramine was not given to patients in this study and no clinical response was tested.",
+          "sourceIds": [
+            "CP002-R01"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "The recorded CMap score of 8.4 does not measure clinical benefit. Clinical uncertainty cannot be estimated from the drug-profile matching score.",
+          "sourceIds": [
+            "CP002-R01"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "The nomination comes from the same single-dataset report as the other computational candidates, not from independent clinical studies.",
+          "sourceIds": [
+            "CP002-R01"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "The full article and Figure 4 support the nomination. They provide no human treatment experiment, maintaining the distinction between computational evidence and clinical evidence.",
+          "sourceIds": [
+            "CP002-R01"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "CP002-R01",
+          "locator": "Figure 4, PDF p.5"
+        },
+        {
+          "sourceId": "CP002-R01",
+          "locator": "Methods PDF p.7; limitations PDF pp.6–7"
+        }
+      ],
+      "integrity": "preclinical_only",
+      "reviewStatus": "AI-assisted editorial assessment; independent clinical review has not been completed."
+    },
+    {
+      "rowId": "SYN-D01-C25-COGNITION",
+      "label": "Moderate",
+      "rationale": "Random allocation and blinded cognitive evaluation support the reported 24-week MCCB score improvement with adjunctive metformin. Confidence is Moderate because the small trial was open-label without placebo, 59 of 72 participants completed follow-up, and the practical importance of the score difference remains uncertain. The positive interval supports this test-score finding, not proof of improved everyday functioning or broad schizophrenia benefit.",
+      "assessmentStatus": "assessed",
+      "assessmentKind": "selected-source-editorial-v1",
+      "method": "Selected-source editorial assessment · v1",
+      "scope": "Metformin · Schizophrenia · Metformin 500 mg three times daily added to antipsychotics for 24 weeks · Clinically stable schizophrenia of at most five years duration; young adults at the Second Xiangya Hospital, China; mean age 22.8 years. · Oral · Antipsychotics alone; no placebo · MATRICS Consensus Cognitive Battery composite score · 24 weeks",
+      "assessedAt": "2026-10-11",
+      "sourceIds": [
+        "MF-SCHIZOPHRENIA-PARENT-2023"
+      ],
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "The evaluator-blinded trial randomized 72 participants but did not blind patients with placebo. Attrition and treatment expectations can still affect the comparison.",
+          "sourceIds": [
+            "MF-SCHIZOPHRENIA-PARENT-2023"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "The endpoint is a cognitive-test composite in young, clinically stable patients with relatively recent schizophrenia receiving antipsychotics; everyday function was not established by this assessment.",
+          "sourceIds": [
+            "MF-SCHIZOPHRENIA-PARENT-2023"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "The estimated difference is +3.43 MCCB points (95% CI 1.83–5.02). The exact mixed-model analysis denominator and meaningful-change threshold are not separately verified.",
+          "sourceIds": [
+            "MF-SCHIZOPHRENIA-PARENT-2023"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "One parent trial supports the finding. Its metabolomic and MRI companion report shares participants and must not be counted as replication.",
+          "sourceIds": [
+            "MF-SCHIZOPHRENIA-PARENT-2023"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "Primary full-text results support the reported cognitive score estimate. No unresolved correction affecting that result is identified in the material checked.",
+          "sourceIds": [
+            "MF-SCHIZOPHRENIA-PARENT-2023"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "MF-SCHIZOPHRENIA-PARENT-2023",
+          "locator": "Results: Metformin ameliorated cognitive dysfunction as evaluated by the MCCB; Figure 2"
+        }
+      ],
+      "integrity": "clear",
+      "reviewStatus": "AI-assisted editorial assessment; independent clinical review has not been completed."
+    },
+    {
+      "rowId": "SYN-D01-C30-METPREVENT",
+      "label": "Moderate",
+      "rationale": "MET-PREVENT directly assessed walking speed in a masked placebo-controlled trial, with complete follow-up recorded for 70 of 72 randomized participants. Its near-zero estimate and interval support no demonstrated improvement over four months, while leaving smaller differences possible. Moderate confidence reflects the small, narrowly selected older population and abstract-level access; the result does not establish equivalence or describe younger adults.",
+      "assessmentStatus": "assessed",
+      "assessmentKind": "selected-source-editorial-v1",
+      "method": "Selected-source editorial assessment · v1",
+      "scope": "Metformin · Sarcopenia · Metformin 500 mg three times daily for four months · Adults 65 years or older with probable sarcopenia, slow 4-m walking speed and physical prefrailty or frailty; Gateshead and Newcastle, England; mean age 80.4 years. · Oral · Matching placebo · Adjusted between-group difference in 4-m walking speed · 4 months",
+      "assessedAt": "2026-10-11",
+      "sourceIds": [
+        "MF-METPREVENT-2025"
+      ],
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "Double-blind random allocation and near-complete outcome follow-up support comparison; the complete report is still needed to assess adherence and other analytical decisions.",
+          "sourceIds": [
+            "MF-METPREVENT-2025"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "Walking speed was directly measured in older adults with probable sarcopenia and frailty, predominantly White British and averaging 80.4 years; applicability beyond this setting is limited.",
+          "sourceIds": [
+            "MF-METPREVENT-2025"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "The adjusted difference is +0.001 m/s (95% CI −0.06 to 0.06). This is a bounded estimate around zero, not a formal demonstration of equivalence.",
+          "sourceIds": [
+            "MF-METPREVENT-2025"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "One trial family supports this particular frailty and walking-speed question; broader replication is not established by this selected record.",
+          "sourceIds": [
+            "MF-METPREVENT-2025"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "Only the primary abstract and its repository copy support this assessment. The available participant counts and interval do not replace full-text and supplement assessment.",
+          "sourceIds": [
+            "MF-METPREVENT-2025"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "MF-METPREVENT-2025",
+          "locator": "Primary report abstract: Methods, Findings and Interpretation, mirrored in Newcastle University repository"
+        }
+      ],
+      "integrity": "limited_access",
+      "reviewStatus": "AI-assisted editorial assessment; independent clinical review has not been completed."
+    },
+    {
+      "rowId": "SYN-D17-C02-P-D17-PRINCIPLE",
+      "label": "Moderate",
+      "rationale": "PRINCIPLE directly compared doxycycline with usual care in community patients and found no clinically meaningful improvement in recovery or hospitalization outcomes. Random allocation is informative, but the open-label design can affect self-reported recovery and the severe-outcome estimate is less precise. Moderate confidence applies to these selected acute-COVID outcomes; it does not establish exact equivalence or address prophylaxis.",
+      "assessmentStatus": "assessed",
+      "assessmentKind": "selected-source-editorial-v1",
+      "method": "Selected-source editorial assessment · v1",
+      "scope": "Doxycycline · Acute COVID-19 · Doxycycline versus usual care · Older or vulnerable community patients with acute suspected COVID-19 · Doxycycline versus usual care · Recovery; COVID-19 hospitalization or death · 28 days",
+      "assessedAt": "2026-10-11",
+      "sourceIds": [
+        "P-D17-PRINCIPLE"
+      ],
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "The randomized community platform trial was open-label. Knowledge of treatment is particularly relevant to the self-reported recovery component.",
+          "sourceIds": [
+            "P-D17-PRINCIPLE"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "The studied patients were older or clinically vulnerable with suspected or confirmed acute COVID; the comparison concerns community treatment over 28 days.",
+          "sourceIds": [
+            "P-D17-PRINCIPLE"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "The primary report’s recovery and hospitalization intervals include no difference. Hospitalization or death was relatively uncommon, so smaller severe-outcome effects remain uncertain.",
+          "sourceIds": [
+            "P-D17-PRINCIPLE"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "One PRINCIPLE trial family supplies both outcomes; reporting two endpoints does not create two independent replications.",
+          "sourceIds": [
+            "P-D17-PRINCIPLE"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "The available primary-publication summary supports the reported outcomes. Full methods and supplement detail are insufficiently represented for a complete assessment of reporting limitations.",
+          "sourceIds": [
+            "P-D17-PRINCIPLE"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "P-D17-PRINCIPLE",
+          "locator": "Abstract: methods and results"
+        }
+      ],
+      "integrity": "limited_access",
+      "reviewStatus": "AI-assisted editorial assessment; independent clinical review has not been completed."
+    },
+    {
+      "rowId": "SYN-D18-C04-P-D18-GBM",
+      "label": "Moderate",
+      "rationale": "A randomized comparison in recurrent glioblastoma directly tests adding disulfiram and copper to chemotherapy and shows no significant survival improvement with more severe toxicity. Confidence is Moderate because the trial is small and survival precision is limited, even though the toxicity signal is clinically relevant. This assessment concerns the tested combination, not disulfiram alone or all cancers.",
+      "assessmentStatus": "assessed",
+      "assessmentKind": "selected-source-editorial-v1",
+      "method": "Selected-source editorial assessment · v1",
+      "scope": "Disulfiram · Glioblastoma · Disulfiram and copper plus chemotherapy versus chemotherapy · Recurrent glioblastoma · Disulfiram and copper plus chemotherapy versus chemotherapy · Survival and serious toxicity · Six months",
+      "assessedAt": "2026-10-11",
+      "sourceIds": [
+        "P-D18-GBM"
+      ],
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "Random allocation compares the same chemotherapy strategy with and without the combination; the 88-patient study offers limited power for smaller survival effects.",
+          "sourceIds": [
+            "P-D18-GBM"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "Survival and toxicity are direct clinical endpoints in recurrent glioblastoma, but the findings apply to disulfiram plus copper with chemotherapy.",
+          "sourceIds": [
+            "P-D18-GBM"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "Grade 3 or higher events were reported in 34% versus 11%; the nonsignificant survival comparison does not establish equivalent survival.",
+          "sourceIds": [
+            "P-D18-GBM"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "One randomized trial supports this assessment; preclinical antitumor findings do not independently replicate the human survival or toxicity results.",
+          "sourceIds": [
+            "P-D18-GBM"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "The primary publication supports the survival and toxicity findings. No unresolved correction affecting these outcomes is identified in the material checked.",
+          "sourceIds": [
+            "P-D18-GBM"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "P-D18-GBM",
+          "locator": "Abstract: methods and results"
+        }
+      ],
+      "integrity": "clear",
+      "reviewStatus": "AI-assisted editorial assessment; independent clinical review has not been completed."
+    },
+    {
+      "rowId": "SYN-D19-C18-P-D19-MELANOMA",
+      "label": "Low",
+      "rationale": "Responses in nine patients receiving propranolol plus pembrolizumab are preliminary observations from a dose-escalation study. Without a control group, the 78% response rate cannot separate propranolol’s contribution from that of the active immunotherapy. The very small sample and exploratory efficacy objective make confidence Low for an added melanoma treatment benefit.",
+      "assessmentStatus": "assessed",
+      "assessmentKind": "selected-source-editorial-v1",
+      "method": "Selected-source editorial assessment · v1",
+      "scope": "Propranolol · Melanoma · Propranolol plus pembrolizumab; no control · Advanced melanoma · Propranolol plus pembrolizumab; no control · Objective response · Six months",
+      "assessedAt": "2026-10-11",
+      "sourceIds": [
+        "P-D19-MELANOMA"
+      ],
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "The phase I study was designed chiefly for dose and tolerability assessment and had no randomized or concurrent control group.",
+          "sourceIds": [
+            "P-D19-MELANOMA"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "Tumor response is clinically relevant, but every participant received pembrolizumab; the design cannot directly estimate the additional effect of propranolol.",
+          "sourceIds": [
+            "P-D19-MELANOMA"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "Only nine patients contributed to the reported 78% response rate. This does not provide a stable comparative efficacy or rare-harm estimate.",
+          "sourceIds": [
+            "P-D19-MELANOMA"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "A single small dose-escalation study supports this combination observation; no independent controlled replication is included in the row.",
+          "sourceIds": [
+            "P-D19-MELANOMA"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "The primary abstract supports the response observation. Abstract-level access leaves full methods and adverse-event interpretation incompletely assessed.",
+          "sourceIds": [
+            "P-D19-MELANOMA"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "P-D19-MELANOMA",
+          "locator": "Abstract: methods and results"
+        }
+      ],
+      "integrity": "limited_access",
+      "reviewStatus": "AI-assisted editorial assessment; independent clinical review has not been completed."
+    },
+    {
+      "rowId": "SYN-D20-C17-P-D20-PANCREAS",
+      "label": "Moderate",
+      "rationale": "The randomized, double-blind gemcitabine comparison directly tested whether adding simvastatin delayed progression in advanced pancreatic cancer. The reported medians of 2.4 versus 3.6 months did not show a significant advantage, but the 114-person phase II sample and lack of an extracted between-group interval limit conclusions about smaller effects. Moderate confidence applies to the tested combination and disease setting, without asserting equivalence.",
+      "assessmentStatus": "assessed",
+      "assessmentKind": "selected-source-editorial-v1",
+      "method": "Selected-source editorial assessment · v1",
+      "scope": "Simvastatin · Pancreatic cancer · Gemcitabine plus simvastatin versus gemcitabine plus placebo · Advanced pancreatic cancer · Gemcitabine plus simvastatin versus gemcitabine plus placebo · Time to progression · During trial follow-up",
+      "assessedAt": "2026-10-11",
+      "sourceIds": [
+        "P-D20-PANCREAS"
+      ],
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "Randomization, placebo control and double blinding support the comparison; the available abstract is insufficient to fully assess attrition and analysis decisions.",
+          "sourceIds": [
+            "P-D20-PANCREAS"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "Time to progression is directly measured in advanced pancreatic cancer receiving gemcitabine; the result cannot be transferred to other statins or cancer regimens.",
+          "sourceIds": [
+            "P-D20-PANCREAS"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "The median progression times are 2.4 and 3.6 months. A nonsignificant comparison without a recorded between-group interval does not exclude all relevant benefit or harm.",
+          "sourceIds": [
+            "P-D20-PANCREAS"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "One randomized phase II trial supplies this outcome; mechanistic or other-cancer findings do not count as replication of this comparison.",
+          "sourceIds": [
+            "P-D20-PANCREAS"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "The publisher abstract supports the progression result; full text was unavailable for this assessment. No unresolved correction is identified for this endpoint in the material checked.",
+          "sourceIds": [
+            "P-D20-PANCREAS"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "P-D20-PANCREAS",
+          "locator": "Abstract: methods and results"
+        }
+      ],
+      "integrity": "limited_access",
+      "reviewStatus": "AI-assisted editorial assessment; independent clinical review has not been completed."
+    },
+    {
+      "rowId": "SYN-D21-C13-P-D21-PROSTATE",
+      "label": "Low",
+      "rationale": "This five-patient dose-escalation study reports no PSA declines and gastrointestinal toxicity that prevented further escalation. Confidence is Low because the uncontrolled phase I design cannot estimate comparative anticancer efficacy or a reliable toxicity frequency. A published correction affects plasma-concentration reporting; no uncorrected exposure value is used to justify this outcome assessment.",
+      "assessmentStatus": "assessed",
+      "assessmentKind": "selected-source-editorial-v1",
+      "method": "Selected-source editorial assessment · v1",
+      "scope": "Niclosamide · Prostate cancer · Niclosamide plus enzalutamide; no control · Castration-resistant prostate cancer · Niclosamide plus enzalutamide; no control · PSA response and tolerability · Dose escalation",
+      "assessedAt": "2026-10-11",
+      "sourceIds": [
+        "P-D21-PROSTATE"
+      ],
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "The uncontrolled phase I study primarily assessed safety and drug exposure. Five enrolled patients cannot support a randomized efficacy comparison.",
+          "sourceIds": [
+            "P-D21-PROSTATE"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "PSA response and tolerability concern the tested niclosamide–enzalutamide combination in castration-resistant prostate cancer, not every formulation or disease stage.",
+          "sourceIds": [
+            "P-D21-PROSTATE"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "No PSA decline among five participants is highly imprecise as evidence about efficacy; dose-limiting events identify a signal without estimating population risk accurately.",
+          "sourceIds": [
+            "P-D21-PROSTATE"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "One small dose-escalation study supports the assessment. Preclinical activity is a separate observation and cannot substitute for clinical replication.",
+          "sourceIds": [
+            "P-D21-PROSTATE"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "The primary report links the August 2018 correction to plasma concentrations. No exposure number from the uncorrected report is used to assess PSA response or dose-limiting toxicity.",
+          "sourceIds": [
+            "P-D21-PROSTATE"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "P-D21-PROSTATE",
+          "locator": "Abstract: methods and results"
+        },
+        {
+          "sourceId": "P-D21-PROSTATE",
+          "locator": "Primary report Abstract and linked Correction, 15 August 2018, DOI 10.1371/journal.pone.0202709"
+        }
+      ],
+      "integrity": "clear",
+      "reviewStatus": "AI-assisted editorial assessment; independent clinical review has not been completed."
+    },
+    {
+      "rowId": "SYN-D22-C02-P-D22-RECOVERY",
+      "label": "High",
+      "rationale": "RECOVERY provides a large randomized comparison with an objective 28-day mortality endpoint and near-complete recorded follow-up. The rate ratio of 1.09 (95% CI 0.97–1.23) excludes a substantial mortality reduction in the studied hospitalized population, giving High editorial confidence in the bounded negative finding. The interval still permits a small reduction and increased mortality, so this is not a claim of exact equivalence or a conclusion about prevention.",
+      "assessmentStatus": "assessed",
+      "assessmentKind": "selected-source-editorial-v1",
+      "method": "Selected-source editorial assessment · v1",
+      "scope": "Hydroxychloroquine · Acute COVID-19 · Hydroxychloroquine versus usual care · Hospitalized COVID-19 · Hydroxychloroquine versus usual care · All-cause mortality · 28 days",
+      "assessedAt": "2026-10-11",
+      "sourceIds": [
+        "P-D22-RECOVERY"
+      ],
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "The large randomized trial was open-label, but mortality is less susceptible to expectation effects than subjective symptoms; follow-up forms were available for 99.5% in both groups.",
+          "sourceIds": [
+            "P-D22-RECOVERY"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "The endpoint directly measures all-cause death by day 28 among hospitalized COVID patients receiving hydroxychloroquine or usual care; it does not test prophylaxis.",
+          "sourceIds": [
+            "P-D22-RECOVERY"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "The 1,561 versus 3,155 patient comparison gives a mortality rate ratio of 1.09 (95% CI 0.97–1.23), ruling out a substantial relative mortality benefit in this setting.",
+          "sourceIds": [
+            "P-D22-RECOVERY"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "This grade rests on the strength of the specified large randomized result; independent replication is not inferred from multiple reports or subgroup analyses of the same trial.",
+          "sourceIds": [
+            "P-D22-RECOVERY"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "The primary report supports the mortality estimate and follow-up completeness. No unresolved correction affecting this endpoint is identified in the sources checked.",
+          "sourceIds": [
+            "P-D22-RECOVERY"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "P-D22-RECOVERY",
+          "locator": "Abstract: methods and results"
+        },
+        {
+          "sourceId": "P-D22-RECOVERY",
+          "locator": "Primary report Results and Figure 1: enrollment, 28-day outcomes and follow-up completeness; DOI 10.1056/NEJMoa2022926"
+        }
+      ],
+      "integrity": "clear",
+      "reviewStatus": "AI-assisted editorial assessment; independent clinical review has not been completed."
+    },
+    {
+      "rowId": "SYN-D22-C03-P-D22-OVARIAN",
+      "label": "Low",
+      "rationale": "The randomized ovarian-cancer study directly measured response and progression, but only 59 participants were randomized and 56 were response-evaluable. The progression-free-survival interval from 0.45 to 1.57 is compatible with substantial benefit or harm, so the nonsignificant findings remain inconclusive. Confidence is Low for the treatment effect despite the randomized design, and the result does not establish equivalent efficacy.",
+      "assessmentStatus": "assessed",
+      "assessmentKind": "selected-source-editorial-v1",
+      "method": "Selected-source editorial assessment · v1",
+      "scope": "Hydroxychloroquine · Epithelial ovarian or fallopian-tube carcinoma · Hydroxychloroquine plus chemotherapy versus chemotherapy · Platinum-sensitive recurrent ovarian cancer · Hydroxychloroquine plus chemotherapy versus chemotherapy · Response and progression-free survival · Response after three cycles",
+      "assessedAt": "2026-10-11",
+      "sourceIds": [
+        "P-D22-OVARIAN"
+      ],
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "Randomization strengthens the comparison, but the small phase II sample and response analysis restricted to those receiving at least three cycles limit confidence.",
+          "sourceIds": [
+            "P-D22-OVARIAN"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "The result concerns adding hydroxychloroquine to chemotherapy for platinum-sensitive relapsed ovarian cancer; it does not establish effects in other cancer settings.",
+          "sourceIds": [
+            "P-D22-OVARIAN"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "Response was 85% versus 80%, with a PFS hazard ratio of 0.84 (95% CI 0.45–1.57). The wide interval leaves clinically different treatment effects compatible with the data.",
+          "sourceIds": [
+            "P-D22-OVARIAN"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "One small trial supports the outcome; mechanistic rationale and studies in other tumors are indirect and do not resolve its uncertainty.",
+          "sourceIds": [
+            "P-D22-OVARIAN"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "The primary publication supports the response denominators and survival interval. No unresolved correction affecting these findings is identified in the material checked.",
+          "sourceIds": [
+            "P-D22-OVARIAN"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "P-D22-OVARIAN",
+          "locator": "Methods; response and survival results"
+        }
+      ],
+      "integrity": "clear",
+      "reviewStatus": "AI-assisted editorial assessment; independent clinical review has not been completed."
+    },
+    {
+      "rowId": "SYN-D24-C23-COND-C23-ACTIM-2017",
+      "label": "Low",
+      "rationale": "ACTIM observed a 56% cumulative deep molecular response at 12 months in 24 patients receiving pioglitazone with imatinib. Its single-arm design cannot separate the added drug from continued imatinib response, patient selection or time. The small sample, molecular rather than clinical endpoint and incomplete methods and precision records keep this exploratory finding at Low.",
+      "assessmentStatus": "assessed",
+      "assessmentKind": "selected-source-editorial-v1",
+      "method": "Selected-source editorial assessment · v1",
+      "scope": "Pioglitazone · Chronic myeloid leukemia · Pioglitazone added to imatinib; nonrandomized comparison · CML with molecular residual disease on imatinib · Pioglitazone added to imatinib; nonrandomized comparison · MR 4.5 · 12 months",
+      "assessedAt": "2026-10-11",
+      "sourceIds": [
+        "COND-C23-ACTIM-2017"
+      ],
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "Single-arm phase II study without a randomized concurrent comparison; causal attribution to pioglitazone remains weak.",
+          "sourceIds": [
+            "COND-C23-ACTIM-2017"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "Direct for molecular residual disease during imatinib treatment in CML, but MR4.5 is a molecular endpoint and does not itself establish improved survival or durable treatment-free remission.",
+          "sourceIds": [
+            "COND-C23-ACTIM-2017"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "Only 24 participants are recorded. The 56% response proportion has no confidence interval in the extraction, limiting assessment of the range of plausible response rates.",
+          "sourceIds": [
+            "COND-C23-ACTIM-2017"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "One study supports this row; the supplied evidence does not establish independent replication of the molecular-response result.",
+          "sourceIds": [
+            "COND-C23-ACTIM-2017"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "The source is labeled public, with an abstract/methods/results locator, but documented full-text appraisal and detailed bias assessment are absent.",
+          "sourceIds": [
+            "COND-C23-ACTIM-2017"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "COND-C23-ACTIM-2017",
+          "locator": "Abstract; methods and results"
+        }
+      ],
+      "integrity": "limited_access",
+      "reviewStatus": "AI-assisted editorial assessment; independent clinical review has not been completed."
+    },
+    {
+      "rowId": "SYN-D24-C30-P-D24-MUSCLE",
+      "label": "Low",
+      "rationale": "This 88-person factorial trial found a resistance-training interaction in women but not men during intentional weight loss. That sex-dependent result is indirect for treating diagnosed sarcopenia, and the recorded interaction P values do not quantify the size or precision of the leg-power effect. Subgroup prespecification and multiplicity handling are not documented, limiting confidence in a general pioglitazone benefit.",
+      "assessmentStatus": "assessed",
+      "assessmentKind": "selected-source-editorial-v1",
+      "method": "Selected-source editorial assessment · v1",
+      "scope": "Pioglitazone · Sarcopenia · Pioglitazone or placebo with or without resistance training · Older overweight or obese adults during intentional weight loss · Pioglitazone or placebo with or without resistance training · Leg-press power · End of weight-loss program",
+      "assessedAt": "2026-10-11",
+      "sourceIds": [
+        "P-D24-MUSCLE"
+      ],
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "Randomized factorial design is useful for separating assigned interventions, but the extraction does not establish prespecification, multiplicity adjustment or detailed handling of the sex-specific interaction analyses.",
+          "sourceIds": [
+            "P-D24-MUSCLE"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "Participants were older overweight or obese adults losing weight, rather than a general population with diagnosed sarcopenia; the endpoint was leg-press power at the end of that program.",
+          "sourceIds": [
+            "P-D24-MUSCLE"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "The sample was 88 overall. Interaction P values of 0.006 in women and 0.88 in men lack effect sizes and confidence intervals, so precision and clinical importance cannot be established.",
+          "sourceIds": [
+            "P-D24-MUSCLE"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "The sex-specific findings differ within one trial; no independently replicated training interaction is established by this row.",
+          "sourceIds": [
+            "P-D24-MUSCLE"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "Published-report-or-abstract access and an abstract methods/results locator are recorded. Full methods were not established from this extraction.",
+          "sourceIds": [
+            "P-D24-MUSCLE"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "P-D24-MUSCLE",
+          "locator": "Abstract: methods and results"
+        }
+      ],
+      "integrity": "limited_access",
+      "reviewStatus": "AI-assisted editorial assessment; independent clinical review has not been completed."
+    },
+    {
+      "rowId": "SYN-D27-C12-P-D27-HNSCC",
+      "label": "Low",
+      "rationale": "Ten patients received valproate together with active cisplatin chemoradiation, with response reported for nine. The uncontrolled combination cannot isolate valproate’s contribution, and prohibitive toxicity caused early termination. This is a limited feasibility and safety signal, not dependable evidence of an added tumor-response benefit.",
+      "assessmentStatus": "assessed",
+      "assessmentKind": "selected-source-editorial-v1",
+      "method": "Selected-source editorial assessment · v1",
+      "scope": "Valproic acid · Head and neck squamous cell carcinoma · Valproate with cisplatin chemoradiation; no control · Locally advanced p 16-negative oropharyngeal squamous carcinoma · Valproate with cisplatin chemoradiation; no control · Response and toxicity · Eight weeks after combined treatment",
+      "assessedAt": "2026-10-11",
+      "sourceIds": [
+        "P-D27-HNSCC"
+      ],
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "Single-arm phase II study, early termination and no concurrent comparison leave treatment attribution and selection bias unresolved.",
+          "sourceIds": [
+            "P-D27-HNSCC"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "Direct for the tested combination in locally advanced p16-negative oropharyngeal carcinoma; neither valproate alone nor other head-and-neck populations were established by this study.",
+          "sourceIds": [
+            "P-D27-HNSCC"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "The 88% response estimate concerns only nine evaluable patients among ten enrolled, with no response or toxicity interval recorded.",
+          "sourceIds": [
+            "P-D27-HNSCC"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "One early-terminated study supplies both response and toxicity observations. A high response proportion does not offset the treatment-limiting toxicity or establish reproducibility.",
+          "sourceIds": [
+            "P-D27-HNSCC"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "The recorded basis is an abstract methods/results locator with published-report-or-abstract access. Detailed adverse-event attribution and full methods have not been verified in the available extraction.",
+          "sourceIds": [
+            "P-D27-HNSCC"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "P-D27-HNSCC",
+          "locator": "Abstract: methods and results"
+        }
+      ],
+      "integrity": "limited_access",
+      "reviewStatus": "AI-assisted editorial assessment; independent clinical review has not been completed."
+    },
+    {
+      "rowId": "SYN-D27-C22-COND-C22-VPA-2019",
+      "label": "Low",
+      "rationale": "The 200-patient factorial trial directly compared decitabine with and without valproate, but the remission estimate was very imprecise: odds ratio 1.06, 95% interval 0.51–2.21. The result supports no demonstrated advantage, rather than ruling out a clinically important benefit or harm, and a survival-effect interval is not recorded. The separately randomized ATRA result cannot strengthen the evidence for valproate.",
+      "assessmentStatus": "assessed",
+      "assessmentKind": "selected-source-editorial-v1",
+      "method": "Selected-source editorial assessment · v1",
+      "scope": "Valproic acid · Acute myeloid leukemia · Decitabine with versus without valproate in factorial trial · Older AML patients ineligible for intensive induction · Decitabine with versus without valproate in factorial trial · Remission and survival · Trial follow-up",
+      "assessedAt": "2026-10-11",
+      "sourceIds": [
+        "COND-C22-VPA-2019"
+      ],
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "Randomized factorial phase II comparison supports attribution to assigned valproate, but allocation details, missing-data handling and interaction assessment are not established in the extraction.",
+          "sourceIds": [
+            "COND-C22-VPA-2019"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "Direct for older AML patients ineligible for intensive induction receiving decitabine; effects attributed to the separate ATRA assignment do not answer the valproate question.",
+          "sourceIds": [
+            "COND-C22-VPA-2019"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "Remission was 17.8% versus 17.2%; its odds-ratio interval of 0.51–2.21 remains broad despite 200 participants overall. Survival precision is not recorded.",
+          "sourceIds": [
+            "COND-C22-VPA-2019"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "Remission and survival were reported without a valproate advantage in one trial. The two outcomes and the ATRA assignment are not independent replication.",
+          "sourceIds": [
+            "COND-C22-VPA-2019"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "Public-source access is recorded without a confirmed full-text appraisal. This limits verification of the factorial analysis and detailed bias safeguards.",
+          "sourceIds": [
+            "COND-C22-VPA-2019"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "COND-C22-VPA-2019",
+          "locator": "Abstract; methods and results"
+        }
+      ],
+      "integrity": "limited_access",
+      "reviewStatus": "AI-assisted editorial assessment; independent clinical review has not been completed."
+    },
+    {
+      "rowId": "SYN-D30-C26-P-D30-ALZHEIMER",
+      "label": "Low",
+      "rationale": "The placebo-controlled Alzheimer trial randomized only 25 participants and 14 terminated early. Failure to sustain the target dose and substantial attrition severely weaken the cognitive comparison, while providing a direct warning about tolerability of the tested regimen. No cognitive effect estimate or interval is recorded, so absence of demonstrated benefit should not be read as a precise estimate of no effect.",
+      "assessmentStatus": "assessed",
+      "assessmentKind": "selected-source-editorial-v1",
+      "method": "Selected-source editorial assessment · v1",
+      "scope": "Thalidomide · Alzheimer disease · Thalidomide versus placebo · Mild-to-moderate Alzheimer disease · Thalidomide versus placebo · Cognitive performance and tolerability · 24 weeks",
+      "assessedAt": "2026-10-11",
+      "sourceIds": [
+        "P-D30-ALZHEIMER"
+      ],
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "Randomized double-blind placebo-controlled design is a strength, but early termination in 14 of 25 participants and failure to sustain target dosing create major exposure and missing-outcome limitations.",
+          "sourceIds": [
+            "P-D30-ALZHEIMER"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "Direct for the tested 24-week thalidomide regimen in mild-to-moderate Alzheimer disease; it does not establish what a different dose or longer tolerable exposure would do.",
+          "sourceIds": [
+            "P-D30-ALZHEIMER"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "The very small randomized sample and attrition make cognitive estimates unstable; the extraction provides no between-group cognitive estimate or confidence interval.",
+          "sourceIds": [
+            "P-D30-ALZHEIMER"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "One small trial supports this row. Poor tolerability and failure to show cognitive benefit are different findings, not two independent tests of efficacy.",
+          "sourceIds": [
+            "P-D30-ALZHEIMER"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "The record provides a published-report-or-abstract access label and safety/cognitive-results locator, without documented full-text appraisal of missing outcomes.",
+          "sourceIds": [
+            "P-D30-ALZHEIMER"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "P-D30-ALZHEIMER",
+          "locator": "Abstract; safety and cognitive results"
+        }
+      ],
+      "integrity": "limited_access",
+      "reviewStatus": "AI-assisted editorial assessment; independent clinical review has not been completed."
+    },
+    {
+      "rowId": "SYN-D30-C03-P-D30-OVARIAN",
+      "label": "Moderate",
+      "rationale": "The randomized phase III comparison provides direct evidence of worse outcomes with thalidomide than tamoxifen in biochemical-only recurrence: the mortality hazard ratio was 1.76 with a 95% interval of 1.16–2.68, alongside substantially more severe toxicity. The study enrolled 139 women and closed after an interim analysis failed to show reduced recurrence, which limits confidence and precision beyond this comparison. The narrow recurrence setting and abstract-based methods verification prevent a High grade; the harmful direction itself does not lower evidence strength.",
+      "assessmentStatus": "assessed",
+      "assessmentKind": "selected-source-editorial-v1",
+      "method": "Selected-source editorial assessment · v1",
+      "scope": "Thalidomide · Epithelial ovarian or fallopian-tube carcinoma · Thalidomide versus tamoxifen · Biochemical recurrent ovarian, fallopian-tube or peritoneal carcinoma · Thalidomide versus tamoxifen · Progression, mortality and toxicity · Trial follow-up",
+      "assessedAt": "2026-10-11",
+      "sourceIds": [
+        "P-D30-OVARIAN"
+      ],
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "Randomized phase III design supports comparison, but closure after an interim analysis and incomplete full-methods verification limit certainty about analysis and follow-up safeguards.",
+          "sourceIds": [
+            "P-D30-OVARIAN"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "Direct for thalidomide versus tamoxifen after a first-line response with biochemical-only ovarian, fallopian-tube or peritoneal recurrence; it should not be generalized to all recurrent disease.",
+          "sourceIds": [
+            "P-D30-OVARIAN"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "The mortality interval of 1.16–2.68 excludes equal hazards but permits a broad range of harm. Progression HR 1.31 (0.93–1.85) does not exclude a meaningful disadvantage.",
+          "sourceIds": [
+            "P-D30-OVARIAN"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "Mortality and severe toxicity favor tamoxifen within the same trial; they do not constitute independent replication. The progression result does not demonstrate equivalence.",
+          "sourceIds": [
+            "P-D30-OVARIAN"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "The primary abstract was verified; a full-text methods appraisal was not completed. No source correction is recorded in the supplied source entry.",
+          "sourceIds": [
+            "P-D30-OVARIAN"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "P-D30-OVARIAN",
+          "locator": "Abstract: methods and results"
+        }
+      ],
+      "integrity": "limited_access",
+      "reviewStatus": "AI-assisted editorial assessment; independent clinical review has not been completed."
+    },
+    {
+      "rowId": "SYN-D30-C13-P-D30-PROSTATE",
+      "label": "Low",
+      "rationale": "The 75-person phase II trial reported more PSA declines when thalidomide was added to docetaxel, but the progression-free survival comparison was not significant. PSA response is not interchangeable with longer survival, and neither response nor PFS confidence intervals are recorded. The small sample and introduction of thromboprophylaxis during the trial limit the certainty and applicability of the combined efficacy and safety interpretation.",
+      "assessmentStatus": "assessed",
+      "assessmentKind": "selected-source-editorial-v1",
+      "method": "Selected-source editorial assessment · v1",
+      "scope": "Thalidomide · Prostate cancer · Docetaxel plus thalidomide versus docetaxel · Metastatic androgen-independent prostate cancer · Docetaxel plus thalidomide versus docetaxel · PSA response and progression-free survival · Trial follow-up",
+      "assessedAt": "2026-10-11",
+      "sourceIds": [
+        "P-D30-PROSTATE"
+      ],
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "Randomization supports the assigned-combination comparison, but this was a small phase II trial and thromboprophylaxis was introduced during the study; detailed masking and analysis safeguards are not recorded.",
+          "sourceIds": [
+            "P-D30-PROSTATE"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "Direct for adding thalidomide to docetaxel in metastatic androgen-independent prostate cancer; PSA decline is a surrogate response and does not establish a survival benefit.",
+          "sourceIds": [
+            "P-D30-PROSTATE"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "Only 75 participants are recorded. PSA response was 53% versus 37% and PFS P=0.32, but confidence intervals are absent from the extraction.",
+          "sourceIds": [
+            "P-D30-PROSTATE"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "PSA response and PFS did not provide a uniform efficacy signal within this trial; independent replication is not established by this row.",
+          "sourceIds": [
+            "P-D30-PROSTATE"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "Published-report-or-abstract access is documented at an abstract methods/results locator, without a verified full-text appraisal.",
+          "sourceIds": [
+            "P-D30-PROSTATE"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "P-D30-PROSTATE",
+          "locator": "Abstract: methods and results"
+        }
+      ],
+      "integrity": "limited_access",
+      "reviewStatus": "AI-assisted editorial assessment; independent clinical review has not been completed."
+    },
+    {
+      "rowId": "SYN-D30-C16-P-D30-CRC",
+      "label": "Low",
+      "rationale": "This small randomized study did not establish an improvement from adding thalidomide to irinotecan, fluorouracil and leucovorin. Response and time to progression numerically favored the combination, but neither comparison was significant and confidence intervals and the sample size are absent from the extracted record. These limitations prevent a reliable estimate of benefit or a conclusion that the regimens are equivalent.",
+      "assessmentStatus": "assessed",
+      "assessmentKind": "selected-source-editorial-v1",
+      "method": "Selected-source editorial assessment · v1",
+      "scope": "Thalidomide · Colorectal cancer · Irinotecan/fluorouracil/leucovorin with or without thalidomide · Advanced colorectal cancer · Irinotecan/fluorouracil/leucovorin with or without thalidomide · Response and time to progression · Trial follow-up",
+      "assessedAt": "2026-10-11",
+      "sourceIds": [
+        "P-D30-CRC"
+      ],
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "Randomized comparison is a strength, but the available extraction omits sample size, masking, allocation and missing-outcome details needed for a fuller methods assessment.",
+          "sourceIds": [
+            "P-D30-CRC"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "Direct for thalidomide added to this chemotherapy regimen in advanced colorectal cancer, not for thalidomide alone or other disease stages.",
+          "sourceIds": [
+            "P-D30-CRC"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "Response was 28.1% versus 15.2% (P=0.2034), and time to progression 3.8 versus 2.5 months (P=0.1312). Without intervals or an extracted sample size, precision cannot be adequately assessed.",
+          "sourceIds": [
+            "P-D30-CRC"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "Both comparisons are nonsignificant within one small trial; that is not independent confirmation or evidence that clinically relevant differences are absent.",
+          "sourceIds": [
+            "P-D30-CRC"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "The basis is a published-report-or-abstract record with an abstract methods/results locator. Full trial methods and complete numerical extraction remain unavailable for this assessment.",
+          "sourceIds": [
+            "P-D30-CRC"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "P-D30-CRC",
+          "locator": "Abstract: methods and results"
+        }
+      ],
+      "integrity": "limited_access",
+      "reviewStatus": "AI-assisted editorial assessment; independent clinical review has not been completed."
+    },
+    {
+      "rowId": "SYN-D07-C03-COND-C03-ITRA-2014",
+      "label": "Low",
+      "rationale": "The reported 44% tumor-response rate comes from nine patients in a retrospective chemotherapy-plus-itraconazole series. With no concurrent comparison, the antifungal’s contribution cannot be separated from chemotherapy or selection effects. The 95% interval of 12–77% is extremely broad, making this a weak signal rather than reliable evidence of added efficacy.",
+      "assessmentStatus": "assessed",
+      "assessmentKind": "selected-source-editorial-v1",
+      "method": "Selected-source editorial assessment · v1",
+      "scope": "Itraconazole · Epithelial ovarian or fallopian-tube carcinoma · Itraconazole with chemotherapy; no concurrent control · Recurrent or persistent ovarian clear cell carcinoma · Itraconazole with chemotherapy; no concurrent control · Tumor response · During treatment",
+      "assessedAt": "2026-10-11",
+      "sourceIds": [
+        "COND-C03-ITRA-2014"
+      ],
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "Retrospective uncontrolled series creates substantial selection and confounding limitations; there was no randomized comparison to isolate itraconazole.",
+          "sourceIds": [
+            "COND-C03-ITRA-2014"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "Direct for observed response during the combination in recurrent or persistent ovarian clear cell carcinoma, but indirect for the causal effect of adding itraconazole.",
+          "sourceIds": [
+            "COND-C03-ITRA-2014"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "Nine patients and a response interval spanning 12–77% leave substantial uncertainty around the reported 44% response rate.",
+          "sourceIds": [
+            "COND-C03-ITRA-2014"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "One series supports this row. Other endpoints from these same patients are not independent replication of the response finding.",
+          "sourceIds": [
+            "COND-C03-ITRA-2014"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "Public access and an abstract locator are recorded. A full-text appraisal establishing patient selection, response ascertainment and missing outcomes is not documented.",
+          "sourceIds": [
+            "COND-C03-ITRA-2014"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "COND-C03-ITRA-2014",
+          "locator": "Abstract: Background, Patients and methods, Results"
+        }
+      ],
+      "integrity": "limited_access",
+      "reviewStatus": "AI-assisted editorial assessment; independent clinical review has not been completed."
+    },
+    {
+      "rowId": "SYN-D09-C04-COND-C04-MEB-2021",
+      "label": "Low",
+      "rationale": "This 24-person dose-escalation trial supplies preliminary information about combining mebendazole with temozolomide, including liver-enzyme elevations. Its small mixed-histology sample and absence of a control limit conclusions about the frequency and attribution of toxicity, while quantitative exposure estimates are not recorded here. The design cannot establish a survival benefit or general safety of the combination.",
+      "assessmentStatus": "assessed",
+      "assessmentKind": "selected-source-editorial-v1",
+      "method": "Selected-source editorial assessment · v1",
+      "scope": "Mebendazole · Glioblastoma · Mebendazole added to temozolomide; dose-escalation without control · Newly diagnosed high-grade gliomas, 18 glioblastoma · Mebendazole added to temozolomide; dose-escalation without control · Combination tolerability and drug exposure · Phase 1 treatment",
+      "assessedAt": "2026-10-11",
+      "sourceIds": [
+        "COND-C04-MEB-2021"
+      ],
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "Phase I dose escalation is appropriate for initial tolerability and exposure work, but is uncontrolled and too small for dependable comparative safety or efficacy conclusions.",
+          "sourceIds": [
+            "COND-C04-MEB-2021"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "Direct for the tested mebendazole–temozolomide regimens in newly diagnosed high-grade gliomas, including 18 glioblastomas; mixed histologies and changing doses constrain generalization.",
+          "sourceIds": [
+            "COND-C04-MEB-2021"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "Only 24 participants were enrolled. The extraction reports liver-enzyme elevations but lacks event rates with intervals and quantitative exposure estimates needed to judge precision.",
+          "sourceIds": [
+            "COND-C04-MEB-2021"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "One early-phase trial supplies this row; repeated dose cohorts within it do not establish independent replication or consistent safety across regimens.",
+          "sourceIds": [
+            "COND-C04-MEB-2021"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "The source is labeled public with abstract, safety-results and introduction locators. A complete full-text pharmacokinetic and methods appraisal is not documented.",
+          "sourceIds": [
+            "COND-C04-MEB-2021"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "COND-C04-MEB-2021",
+          "locator": "Abstract; Safety results; Introduction"
+        }
+      ],
+      "integrity": "limited_access",
+      "reviewStatus": "AI-assisted editorial assessment; independent clinical review has not been completed."
+    },
+    {
+      "rowId": "SYN-D04-C05-P-D04-FIBRO-2024",
+      "label": "Moderate",
+      "rationale": "The randomized, double-blind trial directly tested 6 mg daily naltrexone for 12-week pain in 99 women with fibromyalgia. The difference was −0.34 points with a 95% interval of −0.95 to 0.27, supporting no demonstrated superiority while still allowing modest benefit. Masking and intention-to-treat analysis strengthen this result, but one short study in women and abstract-only appraisal limit a broader or High-confidence conclusion.",
+      "assessmentStatus": "assessed",
+      "assessmentKind": "selected-source-editorial-v1",
+      "method": "Selected-source editorial assessment · v1",
+      "scope": "Naltrexone · Fibromyalgia · Naltrexone 6 mg daily versus placebo · Women with fibromyalgia · Naltrexone 6 mg daily versus placebo · Average pain on 11-point scale · 12 weeks",
+      "assessedAt": "2026-10-11",
+      "sourceIds": [
+        "P-D04-FIBRO-2024"
+      ],
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "The primary abstract describes identical-appearing placebo, computerized randomization, masking of participants and assessors, intention-to-treat analysis and no loss to follow-up; the complete protocol and analysis were not appraised.",
+          "sourceIds": [
+            "P-D04-FIBRO-2024"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "Direct for 6 mg daily over 12 weeks in women with fibromyalgia; it does not determine effectiveness in men, at other doses or over longer treatment.",
+          "sourceIds": [
+            "P-D04-FIBRO-2024"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "The −0.34-point estimate has a 95% interval of −0.95 to 0.27 on an 11-point pain scale. Modest benefit and no benefit remain compatible with these data.",
+          "sourceIds": [
+            "P-D04-FIBRO-2024"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "One trial supports this row; independent replication and long-term consistency are not established by its record.",
+          "sourceIds": [
+            "P-D04-FIBRO-2024"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "The primary PubMed abstract was verified. Full text was not appraised, which limits verification of detailed bias and analysis choices.",
+          "sourceIds": [
+            "P-D04-FIBRO-2024"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "P-D04-FIBRO-2024",
+          "locator": "Abstract"
+        }
+      ],
+      "integrity": "limited_access",
+      "reviewStatus": "AI-assisted editorial assessment; independent clinical review has not been completed."
+    },
+    {
+      "rowId": "SYN-D04-C07-P-D04-CSBD-2022",
+      "label": "Low",
+      "rationale": "The 73-man randomized trial provides direct but limited evidence because naltrexone did not separate from placebo on self-report measures, while some clinician-interview measures favored active treatment. Only 24 participants received naltrexone, and multiple differing symptom measures do not support one clear efficacy conclusion. The restricted population and lack of a precise, consistent naltrexone-specific effect keep confidence Low despite the blinded comparison.",
+      "assessmentStatus": "assessed",
+      "assessmentKind": "selected-source-editorial-v1",
+      "method": "Selected-source editorial assessment · v1",
+      "scope": "Naltrexone · Compulsive sexual behavior disorder · Naltrexone versus paroxetine versus placebo · Heterosexual cisgender men with compulsive sexual behavior disorder · Naltrexone versus paroxetine versus placebo · Self-report and clinician-interview symptom outcomes · 20 weeks",
+      "assessedAt": "2026-10-11",
+      "sourceIds": [
+        "P-D04-CSBD-2022"
+      ],
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "Double-blind randomized placebo-controlled trial; the short full-text report does not by itself establish all prespecification and multiplicity safeguards for the numerous symptom comparisons.",
+          "sourceIds": [
+            "P-D04-CSBD-2022"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "Direct for 20-week treatment in heterosexual cisgender men with compulsive sexual behavior disorder; broader populations and longer-term control remain outside the evidence.",
+          "sourceIds": [
+            "P-D04-CSBD-2022"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "The naltrexone arm included 24 participants. A single naltrexone-versus-placebo effect estimate with an interval for this combined symptom outcome is not available in the extracted record.",
+          "sourceIds": [
+            "P-D04-CSBD-2022"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "Self-report and clinician-interview results differ within one study. Interview findings should not replace the self-report findings or be treated as replication.",
+          "sourceIds": [
+            "P-D04-CSBD-2022"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "Full-text HTML was checked at the recorded methods/results source. No correction or retraction is flagged in the supplied source entry; no independent integrity clearance is claimed.",
+          "sourceIds": [
+            "P-D04-CSBD-2022"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "P-D04-CSBD-2022",
+          "locator": "Trial methods and results"
+        }
+      ],
+      "integrity": "clear",
+      "reviewStatus": "AI-assisted editorial assessment; independent clinical review has not been completed."
+    },
+    {
+      "rowId": "SYN-D05-C09-P-D05-PAXD-2025",
+      "label": "Low",
+      "rationale": "The blinded randomized trial reported a precise 12-week symptom advantage for pramipexole augmentation, but the source has a published correction whose effect on these results has not been reconciled. This unresolved source-integrity issue keeps the presently usable evidence at Low rather than treating the uncorrected estimate as definitive. Adverse-event discontinuation was also higher with pramipexole, and the comparison does not establish superiority to another active augmentation treatment.",
+      "assessmentStatus": "assessed",
+      "assessmentKind": "selected-source-editorial-v1",
+      "method": "Selected-source editorial assessment · v1",
+      "scope": "Pramipexole · Treatment-resistant depression · Pramipexole augmentation versus placebo augmentation · Adults with treatment-resistant unipolar major depression · Pramipexole augmentation versus placebo augmentation · QIDS-SR depressive-symptom change · 12 weeks",
+      "assessedAt": "2026-10-11",
+      "sourceIds": [
+        "P-D05-PAXD-2025"
+      ],
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "Randomized double-blind adjunctive design is a strength, but 20% versus 5% stopped for adverse events; the implications for missing outcomes cannot be assumed absent.",
+          "sourceIds": [
+            "P-D05-PAXD-2025"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "Direct for 12-week QIDS-SR change with pramipexole augmentation in treatment-resistant unipolar depression, not for long-term benefit or superiority to another active treatment.",
+          "sourceIds": [
+            "P-D05-PAXD-2025"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "The recorded adjusted difference is −3.91 points (95% interval −5.37 to −2.45) in 150 eligible participants. Its interpretation remains provisional until the indexed correction is reconciled.",
+          "sourceIds": [
+            "P-D05-PAXD-2025"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "One trial supports the row. Its symptom estimate and adverse-event findings address different outcomes, and independent replication is not established here.",
+          "sourceIds": [
+            "P-D05-PAXD-2025"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "Full-text PDF access is recorded, but a 2025 correction (PMID 40683279; DOI 10.1016/S2215-0366(25)00235-4) is unresolved. The correction index was verified; its content was not recovered, so unchanged results cannot be assumed.",
+          "sourceIds": [
+            "P-D05-PAXD-2025"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "P-D05-PAXD-2025",
+          "locator": "Table 2; Results; Discussion"
+        }
+      ],
+      "integrity": "correction_unresolved",
+      "reviewStatus": "AI-assisted editorial assessment; independent clinical review has not been completed."
+    },
+    {
+      "rowId": "SYN-D17-C10-COND-C10-DOXY-2004",
+      "label": "Low",
+      "rationale": "A 209-person multicenter randomized trial directly supports an adjunctive doxycycline signal for attachment gain and pocket-depth reduction over nine months. However, the extracted record supplies neither the size of either improvement nor its confidence interval, and detailed full-text methods were not appraised. Without those details, confidence in the clinical magnitude remains Low and the finding does not support replacing scaling and root planing.",
+      "assessmentStatus": "assessed",
+      "assessmentKind": "selected-source-editorial-v1",
+      "method": "Selected-source editorial assessment · v1",
+      "scope": "Doxycycline · Periodontitis · Scaling/root planing plus subantimicrobial doxycycline versus placebo · Adults with chronic periodontitis · Scaling/root planing plus subantimicrobial doxycycline versus placebo · Clinical attachment level and probing depth · 9 months",
+      "assessedAt": "2026-10-11",
+      "sourceIds": [
+        "COND-C10-DOXY-2004"
+      ],
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "Multicenter randomization is a strength, but the available record does not establish masking, allocation concealment, missing-data handling or the analysis of multiple periodontal sites.",
+          "sourceIds": [
+            "COND-C10-DOXY-2004"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "Direct for subantimicrobial doxycycline added to scaling and root planing in chronic periodontitis; this comparison cannot establish doxycycline as a replacement for mechanical treatment.",
+          "sourceIds": [
+            "COND-C10-DOXY-2004"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "The recorded sample is 209, but attachment-gain and probing-depth differences and confidence intervals are absent. Sample size alone cannot establish precision or clinical importance.",
+          "sourceIds": [
+            "COND-C10-DOXY-2004"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "One trial reports two related periodontal outcomes in the same participants; this does not establish independent replication.",
+          "sourceIds": [
+            "COND-C10-DOXY-2004"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "Public-source access and abstract/results locators are documented, but full-text methods and complete numerical outcome extraction are not.",
+          "sourceIds": [
+            "COND-C10-DOXY-2004"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "COND-C10-DOXY-2004",
+          "locator": "Abstract; Results"
+        }
+      ],
+      "integrity": "limited_access",
+      "reviewStatus": "AI-assisted editorial assessment; independent clinical review has not been completed."
+    },
+    {
+      "rowId": "SYN-D07-C13-P-D07-PROSTATE-2013",
+      "label": "Low",
+      "rationale": "The higher-dose itraconazole arm met a PSA progression-free activity threshold in a 46-man study, but both arms received itraconazole and there was no standard-care control. The low-dose arm stopped for futility, leaving small unequal groups and uncertain comparative precision. Abstract-only access and missing effect intervals mean this is an exploratory activity signal, not established clinical benefit.",
+      "assessmentStatus": "assessed",
+      "assessmentKind": "selected-source-editorial-v1",
+      "method": "Selected-source editorial assessment · v1",
+      "scope": "Itraconazole · Prostate cancer · Itraconazole 200 mg/day versus 600 mg/day; noncomparative design · Chemotherapy-naive metastatic castration-resistant prostate cancer · Itraconazole 200 mg/day versus 600 mg/day; noncomparative design · PSA progression-free status · 24 weeks",
+      "assessedAt": "2026-10-11",
+      "sourceIds": [
+        "P-D07-PROSTATE-2013"
+      ],
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "Randomized dose allocation occurred within a noncomparative phase II design; early closure of the low-dose arm and lack of a standard-care comparison limit efficacy inference.",
+          "sourceIds": [
+            "P-D07-PROSTATE-2013"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "Direct for PSA progression-free status at 24 weeks in chemotherapy-naive metastatic castration-resistant prostate cancer; not direct evidence of benefit over standard care or improved overall survival.",
+          "sourceIds": [
+            "P-D07-PROSTATE-2013"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "Only 17 low-dose and 29 high-dose participants were enrolled. The 11.8% versus 48.0% proportions and median PFS values have no recorded confidence intervals.",
+          "sourceIds": [
+            "P-D07-PROSTATE-2013"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "Two dose arms from one trial are not independent replication. Meeting a prespecified activity threshold does not establish a consistent benefit across doses.",
+          "sourceIds": [
+            "P-D07-PROSTATE-2013"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "The recorded source basis is abstract only. Full methods and detailed analysis of early arm closure were not appraised.",
+          "sourceIds": [
+            "P-D07-PROSTATE-2013"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "P-D07-PROSTATE-2013",
+          "locator": "Abstract"
+        }
+      ],
+      "integrity": "limited_access",
+      "reviewStatus": "AI-assisted editorial assessment; independent clinical review has not been completed."
+    },
+    {
+      "rowId": "SYN-D07-C14-COND-C14-ITRA-2013",
+      "label": "Low",
+      "rationale": "The randomized pemetrexed–itraconazole study enrolled only 23 of 112 planned patients before closing for slow accrual as pemetrexed moved into first-line care. Median PFS favored the combination numerically, but the estimate remained uncertain and no confidence interval was reported with the hazard ratio. The open-label design and sparse data leave Low confidence in an added PFS benefit.",
+      "assessmentStatus": "assessed",
+      "assessmentKind": "selected-source-editorial-v1",
+      "method": "Selected-source editorial assessment · v1",
+      "scope": "Itraconazole · Non-small-cell lung cancer · Pemetrexed plus itraconazole versus pemetrexed alone · Previously treated metastatic nonsquamous NSCLC · Pemetrexed plus itraconazole versus pemetrexed alone · Progression-free survival · Median follow-up outcome",
+      "assessedAt": "2026-10-11",
+      "sourceIds": [
+        "COND-C14-ITRA-2013"
+      ],
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "Open-label randomized phase II design; enrollment stopped at 23 of 112 planned patients for slow accrual, leaving the planned comparison severely underpowered.",
+          "sourceIds": [
+            "COND-C14-ITRA-2013"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "Direct for adding itraconazole to pemetrexed in previously treated metastatic nonsquamous NSCLC, not other lung-cancer populations or regimens.",
+          "sourceIds": [
+            "COND-C14-ITRA-2013"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "Only 15 combination and eight control patients were enrolled. PFS was 5.5 versus 2.8 months, HR 0.399 and P=0.089; the report supplies no corresponding confidence interval.",
+          "sourceIds": [
+            "COND-C14-ITRA-2013"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "This row represents one early-closed trial. Alternate catalogue entries for the same trial must not be counted as independent replication.",
+          "sourceIds": [
+            "COND-C14-ITRA-2013"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "The matching full-text author manuscript was checked in PMC. No correction or retraction is flagged in the supplied source entry; independent integrity clearance is not claimed.",
+          "sourceIds": [
+            "COND-C14-ITRA-2013"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "COND-C14-ITRA-2013",
+          "locator": "Abstract; methods and results"
+        }
+      ],
+      "integrity": "clear",
+      "reviewStatus": "AI-assisted editorial assessment; independent clinical review has not been completed."
+    },
+    {
+      "rowId": "SYN-D01-C15-COND-C15-MA32-2022",
+      "label": "Moderate",
+      "rationale": "MA.32 provides substantial direct evidence that adding metformin did not demonstrate improved invasive disease-free survival in high-risk operable breast cancer without diabetes. In the primary hormone-receptor-positive analysis, the hazard ratio was 1.01 with a 95% interval of 0.84–1.21, so modest effects remain possible despite the large randomized trial. Abstract verification supports Moderate confidence for this defined result, while incomplete full-methods appraisal and subgroup-specific scope prevent a High grade.",
+      "assessmentStatus": "assessed",
+      "assessmentKind": "selected-source-editorial-v1",
+      "method": "Selected-source editorial assessment · v1",
+      "scope": "Metformin · Breast cancer · Metformin versus placebo added to standard treatment · High-risk operable nonmetastatic breast cancer without diabetes · Metformin versus placebo added to standard treatment · Invasive disease-free survival · Planned 5-year treatment",
+      "assessedAt": "2026-10-11",
+      "sourceIds": [
+        "COND-C15-MA32-2022"
+      ],
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "Phase III double-blind placebo-controlled trial with 3,649 randomized participants; the verified abstract reports all were included in analyses, but a complete protocol and methods appraisal was not performed.",
+          "sourceIds": [
+            "COND-C15-MA32-2022"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "Direct for metformin added to standard care in high-risk operable breast cancer without diabetes. The primary analysis was hormone-receptor-positive disease; exploratory tumor subgroups should not replace it.",
+          "sourceIds": [
+            "COND-C15-MA32-2022"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "Primary-analysis HR 1.01 (95% interval 0.84–1.21) excludes very large effects but not modest benefit or harm; a null significance test is not an equivalence test.",
+          "sourceIds": [
+            "COND-C15-MA32-2022"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "The primary and receptor-negative analyses reported no significant benefit within the same trial; these are not independent replication.",
+          "sourceIds": [
+            "COND-C15-MA32-2022"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "The PMC full-text page was inaccessible to this check. The matching primary PubMed abstract was verified; full-text risk-of-bias appraisal remains incomplete.",
+          "sourceIds": [
+            "COND-C15-MA32-2022"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "COND-C15-MA32-2022",
+          "locator": "Abstract; methods and results"
+        }
+      ],
+      "integrity": "limited_access",
+      "reviewStatus": "AI-assisted editorial assessment; independent clinical review has not been completed."
+    },
+    {
+      "rowId": "SYN-D23-C16-COND-C16-ALASCCA-2025",
+      "label": "Moderate",
+      "rationale": "The blinded randomized ALASCCA comparison directly supports reduced three-year recurrence in the prespecified PIK3CA-hotspot population. The hazard ratio was 0.49 with a 95% interval of 0.24–0.98, leaving substantial uncertainty about the size of benefit despite excluding equal hazards narrowly. Molecular selection, higher severe adverse-event frequency and abstract-only methods appraisal limit broader conclusions and prevent a High grade.",
+      "assessmentStatus": "assessed",
+      "assessmentKind": "selected-source-editorial-v1",
+      "method": "Selected-source editorial assessment · v1",
+      "scope": "Aspirin · Colorectal cancer · Aspirin versus placebo · Resected localized CRC with selected PI 3 K-pathway alterations; subgroup A PIK 3 CA hotspots · Aspirin versus placebo · Cancer recurrence · 3 years",
+      "assessedAt": "2026-10-11",
+      "sourceIds": [
+        "COND-C16-ALASCCA-2025"
+      ],
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "Double-blind randomized placebo-controlled trial with the hotspot-group recurrence endpoint prespecified as primary; full allocation, missing-data and event-adjudication methods were not appraised.",
+          "sourceIds": [
+            "COND-C16-ALASCCA-2025"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "Direct for resected localized colorectal cancer with the specified PIK3CA hotspot alterations over three years; not evidence for aspirin in all colorectal cancers.",
+          "sourceIds": [
+            "COND-C16-ALASCCA-2025"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "The three-year recurrence estimates were 7.7% versus 14.1%, HR 0.49 (95% interval 0.24–0.98). The wide interval and upper bound near 1 limit confidence in the benefit magnitude.",
+          "sourceIds": [
+            "COND-C16-ALASCCA-2025"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "One trial underlies this row. Findings in another molecular group within it are not independent replication of the prespecified hotspot-group result.",
+          "sourceIds": [
+            "COND-C16-ALASCCA-2025"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "The primary PubMed abstract was checked, confirming molecular selection and recurrence estimates. Full text and supplementary analyses were not appraised.",
+          "sourceIds": [
+            "COND-C16-ALASCCA-2025"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "COND-C16-ALASCCA-2025",
+          "locator": "Abstract; methods and results"
+        }
+      ],
+      "integrity": "limited_access",
+      "reviewStatus": "AI-assisted editorial assessment; independent clinical review has not been completed."
+    },
+    {
+      "rowId": "SYN-D01-C17-COND-C17-MET-2015",
+      "label": "Low",
+      "rationale": "The blinded randomized trial directly tested adding metformin to gemcitabine/erlotinib in 121 patients with advanced pancreatic cancer. It did not establish a survival advantage, but the overall-survival interval of 0.72–1.55 remains too broad to exclude meaningful benefit or harm. The limited phase II sample, regimen-specific scope and abstract-only appraisal keep confidence Low.",
+      "assessmentStatus": "assessed",
+      "assessmentKind": "selected-source-editorial-v1",
+      "method": "Selected-source editorial assessment · v1",
+      "scope": "Metformin · Pancreatic cancer · Gemcitabine/erlotinib plus metformin versus same regimen plus placebo · Advanced pancreatic cancer · Gemcitabine/erlotinib plus metformin versus same regimen plus placebo · Overall survival · Phase II follow-up",
+      "assessedAt": "2026-10-11",
+      "sourceIds": [
+        "COND-C17-MET-2015"
+      ],
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "Double-blind randomized placebo-controlled phase II trial; the primary abstract reports stratified computerized allocation and intention-to-treat analysis, but full methods were not appraised.",
+          "sourceIds": [
+            "COND-C17-MET-2015"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "Direct for adding metformin to gemcitabine/erlotinib in advanced pancreatic cancer; other disease stages or regimens remain outside this comparison.",
+          "sourceIds": [
+            "COND-C17-MET-2015"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "There were 121 participants. Overall-survival HR 1.056 (95% interval 0.72–1.55) permits meaningful benefit and harm; nonsignificance does not demonstrate equivalence.",
+          "sourceIds": [
+            "COND-C17-MET-2015"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "Six-month and overall-survival analyses came from the same trial and both failed to establish benefit; they are not independent replication.",
+          "sourceIds": [
+            "COND-C17-MET-2015"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "The primary PubMed abstract was verified. Full-text methods and supplements were not appraised; no correction is recorded in the supplied source entry.",
+          "sourceIds": [
+            "COND-C17-MET-2015"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "COND-C17-MET-2015",
+          "locator": "Abstract; methods and results"
+        }
+      ],
+      "integrity": "limited_access",
+      "reviewStatus": "AI-assisted editorial assessment; independent clinical review has not been completed."
+    },
+    {
+      "rowId": "SYN-D19-C18-COND-C18-PROP-2021",
+      "label": "Low",
+      "rationale": "The absence of dose-limiting toxicity comes from only nine people receiving propranolol with pembrolizumab. This is useful early tolerability information, but the uncontrolled dose-finding study cannot establish comparative safety or exclude uncommon serious harms.",
+      "assessmentStatus": "assessed",
+      "assessmentKind": "selected-source-editorial-v1",
+      "method": "Selected-source editorial assessment · v1",
+      "scope": "Propranolol · Melanoma · Propranolol with pembrolizumab; no control · Advanced or metastatic melanoma; checkpoint-treatment-naive · Propranolol with pembrolizumab; no control · Safety and dose-limiting toxicity · Phase I treatment",
+      "assessedAt": "2026-10-11",
+      "sourceIds": [
+        "COND-C18-PROP-2021"
+      ],
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "An open-label, single-center 3+3 dose-escalation study observed nine participants without a pembrolizumab-alone group; treatment attribution is therefore uncertain.",
+          "sourceIds": [
+            "COND-C18-PROP-2021"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "Directly addresses initial combination tolerability in checkpoint-treatment-naive metastatic melanoma, not propranolol alone or broad long-term safety.",
+          "sourceIds": [
+            "COND-C18-PROP-2021"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "Zero dose-limiting toxicities in nine participants is a sparse estimate. Rash, fatigue and vitiligo each affected four participants; zero dose-limiting events does not mean zero adverse events.",
+          "sourceIds": [
+            "COND-C18-PROP-2021"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "One small cohort is cited. Dose cohorts within it are not independent replications.",
+          "sourceIds": [
+            "COND-C18-PROP-2021"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "The primary report’s study-design and safety sections were accessible in indexed text. Serious events and discontinuations are reported, so the narrow dose-limiting-toxicity finding must not be expanded to a claim of safety.",
+          "sourceIds": [
+            "COND-C18-PROP-2021"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "COND-C18-PROP-2021",
+          "locator": "Methods: Study Design; Results: Safety and tolerability; Table 2; primary source checked: https://pmc.ncbi.nlm.nih.gov/articles/PMC7785669/"
+        }
+      ],
+      "integrity": "clear",
+      "reviewStatus": "AI-assisted editorial assessment; independent clinical review has not been completed."
+    },
+    {
+      "rowId": "SYN-D07-C19-P-D07-BCC-2014",
+      "label": "Low",
+      "rationale": "The 24% tumor-area reduction is an exploratory short-term finding from an open-label study with 19 treated participants among 29 enrolled. Its reported interval describes shrinkage during treatment, but the small selected sample and limited comparison do not establish durable tumor control or cure.",
+      "assessmentStatus": "assessed",
+      "assessmentKind": "selected-source-editorial-v1",
+      "method": "Selected-source editorial assessment · v1",
+      "scope": "Itraconazole · Basal-cell carcinoma · Itraconazole open-label; exploratory comparison · Basal cell carcinoma · Itraconazole open-label; exploratory comparison · Tumor area change · Short-term treatment",
+      "assessedAt": "2026-10-11",
+      "sourceIds": [
+        "P-D07-BCC-2014"
+      ],
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "Open-label exploratory phase II study; tumor size was a secondary assessment in patients with multiple tumors. Untreated comparisons were reported, but this was not a robust randomized efficacy comparison.",
+          "sourceIds": [
+            "P-D07-BCC-2014"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "Tumor area is directly relevant to short-term basal-cell-carcinoma response. It is not a cure, recurrence or long-term survival endpoint.",
+          "sourceIds": [
+            "P-D07-BCC-2014"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "The reported reduction was 24% with a 95% CI of 18.2%–30.0%; that interval does not account for selection or open-label measurement bias.",
+          "sourceIds": [
+            "P-D07-BCC-2014"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "One exploratory study is cited. Biomarker changes in the same participants are not independent confirmation of clinical benefit.",
+          "sourceIds": [
+            "P-D07-BCC-2014"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "Assessment is based on the PubMed abstract and stored extraction. Full methods, outcome completeness and analysis details remain unverified; the reported grade 4 heart-failure event is retained.",
+          "sourceIds": [
+            "P-D07-BCC-2014"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "P-D07-BCC-2014",
+          "locator": "Abstract: Methods and Results; primary source checked: https://pubmed.ncbi.nlm.nih.gov/24493717/"
+        }
+      ],
+      "integrity": "limited_access",
+      "reviewStatus": "AI-assisted editorial assessment; independent clinical review has not been completed."
+    },
+    {
+      "rowId": "SYN-D23-C20-COND-C20-ASP-2020",
+      "label": "Moderate",
+      "rationale": "A large registry cohort directly supports an association between aspirin use and lower subsequent HCC incidence in chronic viral hepatitis. The adjusted hazard ratio is precise, but nonrandom treatment selection and residual confounding prevent interpreting this association as a proven preventive effect.",
+      "assessmentStatus": "assessed",
+      "assessmentKind": "selected-source-editorial-v1",
+      "method": "Selected-source editorial assessment · v1",
+      "scope": "Aspirin · Hepatocellular carcinoma · Aspirin use versus nonuse in observational cohort · Chronic hepatitis B or C; future HCC prevention · Aspirin use versus nonuse in observational cohort · HCC incidence · 10 years",
+      "assessedAt": "2026-10-11",
+      "sourceIds": [
+        "COND-C20-ASP-2020"
+      ],
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "The nationwide Swedish cohort compared aspirin users with nonusers using adjusted analyses. Adjustment reduces measured confounding but cannot eliminate unmeasured differences between groups.",
+          "sourceIds": [
+            "COND-C20-ASP-2020"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "The endpoint is incident HCC in chronic hepatitis B or C. It does not address treating established HCC.",
+          "sourceIds": [
+            "COND-C20-ASP-2020"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "The adjusted HR of 0.69 (95% CI 0.62–0.76) is statistically precise; the recorded cumulative incidences were 4.0% versus 8.3%. Precision does not resolve confounding.",
+          "sourceIds": [
+            "COND-C20-ASP-2020"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "This row cites one cohort; related mortality outcomes are not independent replication of HCC incidence.",
+          "sourceIds": [
+            "COND-C20-ASP-2020"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "The primary abstract was checked through PubMed, matching DOI 10.1056/NEJMoa1912035. Publisher/full-text access was unavailable in this assessment, limiting checks of exposure definitions, missing covariates and sensitivity analyses.",
+          "sourceIds": [
+            "COND-C20-ASP-2020"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "COND-C20-ASP-2020",
+          "locator": "Abstract: Methods and Results; DOI 10.1056/NEJMoa1912035 (PubMed PMID 32160663); primary source checked: https://pubmed.ncbi.nlm.nih.gov/32160663/"
+        }
+      ],
+      "integrity": "limited_access",
+      "reviewStatus": "AI-assisted editorial assessment; independent clinical review has not been completed."
+    },
+    {
+      "rowId": "SYN-D16-C25-COND-C25-BENEMIN-2018",
+      "label": "Moderate",
+      "rationale": "BeneMin directly tested adjunctive minocycline in 207 people with recent-onset schizophrenia-spectrum illness and found a small, near-zero PANSS negative-symptom difference. Randomization and masking support the result, but later attrition and the selected population reduce certainty about the full year of treatment; this is not proof of equivalence.",
+      "assessmentStatus": "assessed",
+      "assessmentKind": "selected-source-editorial-v1",
+      "method": "Selected-source editorial assessment · v1",
+      "scope": "Minocycline · Schizophrenia · Minocycline versus placebo added to ongoing care · Schizophrenia-spectrum illness within 5 years of onset · Minocycline versus placebo added to ongoing care · PANSS negative-symptom score · Across 2, 6, 9, 12 months",
+      "assessedAt": "2026-10-11",
+      "sourceIds": [
+        "COND-C25-BENEMIN-2018"
+      ],
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "Double-blind placebo-controlled allocation used an automated, stratified randomization process. The stored extraction identifies substantial later attrition, which can affect repeated symptom estimates.",
+          "sourceIds": [
+            "COND-C25-BENEMIN-2018"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "PANSS negative symptoms were the primary clinical outcome across months 2, 6, 9 and 12, in people within five years of illness onset receiving ongoing care.",
+          "sourceIds": [
+            "COND-C25-BENEMIN-2018"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "The difference was −0.19 points (95% CI −1.23 to 0.85); small effects remain possible despite p=0.73.",
+          "sourceIds": [
+            "COND-C25-BENEMIN-2018"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "One trial is cited. Its repeated visits and biomarker outcomes do not constitute independent replication.",
+          "sourceIds": [
+            "COND-C25-BENEMIN-2018"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "The primary abstract confirms allocation, endpoint and estimate. Detailed missing-data assumptions and full follow-up tables were not reverified; lack of those details is not evidence of low bias.",
+          "sourceIds": [
+            "COND-C25-BENEMIN-2018"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "COND-C25-BENEMIN-2018",
+          "locator": "Abstract: Methods and Findings; stored extraction: limitations and follow-up timepoints; primary source checked: https://pubmed.ncbi.nlm.nih.gov/30322824/"
+        }
+      ],
+      "integrity": "limited_access",
+      "reviewStatus": "AI-assisted editorial assessment; independent clinical review has not been completed."
+    },
+    {
+      "rowId": "SYN-D16-C26-P-D16-AD-2020",
+      "label": "Moderate",
+      "rationale": "The two-year randomized trial provides direct evidence that minocycline did not demonstrate slower cognitive decline in mild Alzheimer disease. The near-zero sMMSE estimate is informative, but substantial high-dose treatment discontinuation and incomplete follow-up limit confidence in a sustained-treatment effect.",
+      "assessmentStatus": "assessed",
+      "assessmentKind": "selected-source-editorial-v1",
+      "method": "Selected-source editorial assessment · v1",
+      "scope": "Minocycline · Alzheimer disease · Minocycline 200 mg/day or 400 mg/day versus placebo · Mild Alzheimer disease; 544 eligible · Minocycline 200 mg/day or 400 mg/day versus placebo · Cognitive decline on sMMSE · 24 months",
+      "assessedAt": "2026-10-11",
+      "sourceIds": [
+        "P-D16-AD-2020"
+      ],
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "554 participants were randomized and 544 who began treatment were eligible for analysis. Repeated-measures analyses used available assessments, while poor 400-mg tolerability and differential retention remain concerns.",
+          "sourceIds": [
+            "P-D16-AD-2020"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "Direct evidence for sMMSE decline over 24 months in mild Alzheimer disease; this does not establish effects in advanced disease or with uninterrupted high-dose exposure.",
+          "sourceIds": [
+            "P-D16-AD-2020"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "The sMMSE difference was about 0.1 points (95% CI −1.1 to 1.2), allowing modest benefit or harm rather than proving equivalence.",
+          "sourceIds": [
+            "P-D16-AD-2020"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "The accompanying daily-function result also lacked a demonstrated benefit, but both endpoints belong to the same trial.",
+          "sourceIds": [
+            "P-D16-AD-2020"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "The full primary article was accessible. Its Results and statistical-analysis sections distinguish treatment completion from availability of cognitive assessments; neither missingness nor poor tolerability was ignored.",
+          "sourceIds": [
+            "P-D16-AD-2020"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "P-D16-AD-2020",
+          "locator": "Methods: Statistical Analysis; Results; Figure 1; Table 2; primary source checked: https://jamanetwork.com/journals/jamaneurology/fullarticle/2755279"
+        }
+      ],
+      "integrity": "clear",
+      "reviewStatus": "AI-assisted editorial assessment; independent clinical review has not been completed."
+    },
+    {
+      "rowId": "SYN-D16-C27-COND-C27-MINOCIS-2017",
+      "label": "Moderate",
+      "rationale": "The 142-person randomized trial supports a reduction in six-month conversion after a first demyelinating event, but the adjusted benefit ranges widely from 3.7 to 33.3 percentage points. The 24-month secondary comparison did not establish a difference, so the early signal cannot be presented as durable prevention or reduced disability.",
+      "assessmentStatus": "assessed",
+      "assessmentKind": "selected-source-editorial-v1",
+      "method": "Selected-source editorial assessment · v1",
+      "scope": "Minocycline · Multiple sclerosis · Minocycline versus placebo · First clinically isolated demyelinating syndrome · Minocycline versus placebo · Conversion to MS · 6 months (primary); 24 months (secondary)",
+      "assessedAt": "2026-10-11",
+      "sourceIds": [
+        "COND-C27-MINOCIS-2017"
+      ],
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "Placebo-controlled randomization directly compared treatments; the six-month result was adjusted for baseline enhancing lesions. More withdrawals in the minocycline group are a meaningful limitation.",
+          "sourceIds": [
+            "COND-C27-MINOCIS-2017"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "Conversion after a first demyelinating event, using the trial’s diagnostic criteria, is the endpoint. There was no active disease-modifying-treatment comparison or demonstrated disability benefit.",
+          "sourceIds": [
+            "COND-C27-MINOCIS-2017"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "The six-month adjusted risk reduction was 18.5 percentage points (95% CI 3.7–33.3). The nonsignificant 24-month result does not establish equivalence.",
+          "sourceIds": [
+            "COND-C27-MINOCIS-2017"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "Six- and 24-month results are follow-up from the same trial, not independent studies; the later result leaves durability uncertain.",
+          "sourceIds": [
+            "COND-C27-MINOCIS-2017"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "The primary abstract was checked through PubMed for the same DOI. Full missing-data and diagnostic-adjudication details were not accessible for reassessment.",
+          "sourceIds": [
+            "COND-C27-MINOCIS-2017"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "COND-C27-MINOCIS-2017",
+          "locator": "Abstract: Methods and Results; DOI 10.1056/NEJMoa1608889 (PubMed PMID 28564557); primary source checked: https://pubmed.ncbi.nlm.nih.gov/28564557/"
+        }
+      ],
+      "integrity": "limited_access",
+      "reviewStatus": "AI-assisted editorial assessment; independent clinical review has not been completed."
+    },
+    {
+      "rowId": "SYN-D16-C28-COND-C28-MINO-2007",
+      "label": "Moderate",
+      "rationale": "A 412-person randomized phase III trial found faster ALSFRS-R decline with minocycline on its primary functional endpoint. The confidence interval excludes no difference and supports a harmful functional signal, but limited access to detailed methods prevents the highest confidence rating; the nonsignificant mortality result is a separate question.",
+      "assessmentStatus": "assessed",
+      "assessmentKind": "selected-source-editorial-v1",
+      "method": "Selected-source editorial assessment · v1",
+      "scope": "Minocycline · Amyotrophic lateral sclerosis · Minocycline versus placebo · Adults with ALS · Minocycline versus placebo · ALSFRS-R monthly decline · 9-month treatment",
+      "assessedAt": "2026-10-11",
+      "sourceIds": [
+        "COND-C28-MINO-2007"
+      ],
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "A multicenter placebo-controlled trial used intention-to-treat analysis after a four-month lead-in and nine months of treatment. Detailed allocation, attrition and missing-data procedures were not available for reassessment.",
+          "sourceIds": [
+            "COND-C28-MINO-2007"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "ALSFRS-R decline directly measures function in adults with ALS receiving the trial regimen; it is not a surrogate inference from laboratory findings.",
+          "sourceIds": [
+            "COND-C28-MINO-2007"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "Decline was −1.30 versus −1.04 points/month, with a difference CI of −0.44 to −0.08 and p=0.005. Mortality remained uncertain and should not inherit this grade.",
+          "sourceIds": [
+            "COND-C28-MINO-2007"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "One trial is cited. Other functional and respiratory measures from it are not independent replication.",
+          "sourceIds": [
+            "COND-C28-MINO-2007"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "The PubMed primary abstract confirms the sample, intention-to-treat analysis and harmful primary outcome. Missing full-text detail limits bias appraisal, not the direction of the reported result.",
+          "sourceIds": [
+            "COND-C28-MINO-2007"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "COND-C28-MINO-2007",
+          "locator": "Abstract: Methods and Findings (PubMed PMID 17980667); primary source checked: https://pubmed.ncbi.nlm.nih.gov/17980667/"
+        }
+      ],
+      "integrity": "limited_access",
+      "reviewStatus": "AI-assisted editorial assessment; independent clinical review has not been completed."
+    },
+    {
+      "rowId": "SYN-D13-C29-COND-C29-ATOR-2018",
+      "label": "Low",
+      "rationale": "The six-month vitiligo comparison randomized only 30 participants and analyzed 29. Although outcome assessment was blinded, the interval around the VASI difference is broad and the small single-blind trial cannot establish that adding atorvastatin has no meaningful effect.",
+      "assessmentStatus": "assessed",
+      "assessmentKind": "selected-source-editorial-v1",
+      "method": "Selected-source editorial assessment · v1",
+      "scope": "Atorvastatin · Vitiligo · Atorvastatin plus NB-UVB versus NB-UVB alone · Active nonsegmental vitiligo in adults · Atorvastatin plus NB-UVB versus NB-UVB alone · VASI score change · 6 months",
+      "assessedAt": "2026-10-11",
+      "sourceIds": [
+        "COND-C29-ATOR-2018"
+      ],
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "Centralized randomization compared atorvastatin plus NB-UVB with NB-UVB alone; three blinded physicians assessed standardized photographs. Participants were not fully masked to the added treatment.",
+          "sourceIds": [
+            "COND-C29-ATOR-2018"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "Directly measures VASI change in adults with active nonsegmental vitiligo receiving phototherapy, not atorvastatin monotherapy or other vitiligo populations.",
+          "sourceIds": [
+            "COND-C29-ATOR-2018"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "The difference was 1.43 VASI points (95% CI −2.76 to 5.62; p=0.49), leaving substantial uncertainty in both directions.",
+          "sourceIds": [
+            "COND-C29-ATOR-2018"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "Only one small trial is cited, with no independent replication in this row.",
+          "sourceIds": [
+            "COND-C29-ATOR-2018"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "The primary report’s indexed Methods and the stored extraction support the endpoint and interval. Detailed analysis and adverse-event tables were not fully rechecked; reported adverse events in ten combination recipients preclude a blanket safety claim.",
+          "sourceIds": [
+            "COND-C29-ATOR-2018"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "COND-C29-ATOR-2018",
+          "locator": "Methods: randomization and primary endpoint; Results: VASI comparison; stored extraction READER-D13-C29; primary source checked: https://pmc.ncbi.nlm.nih.gov/articles/PMC6583848/"
+        }
+      ],
+      "integrity": "limited_access",
+      "reviewStatus": "AI-assisted editorial assessment; independent clinical review has not been completed."
+    },
+    {
+      "rowId": "SYN-D07-C14-P-D07-LUNG-2013",
+      "label": "Low",
+      "rationale": "The apparent three-month progression-free advantage, 67% versus 29%, rests on only 23 randomized participants and was not statistically significant. Premature closure and the very small comparison group leave severe uncertainty about the magnitude and reproducibility of this endpoint.",
+      "assessmentStatus": "assessed",
+      "assessmentKind": "selected-source-editorial-v1",
+      "method": "Selected-source editorial assessment · v1",
+      "scope": "Itraconazole · Non-small-cell lung cancer · Pemetrexed plus itraconazole versus pemetrexed · 23 patients with previously treated metastatic nonsquamous NSCLC · Pemetrexed plus itraconazole versus pemetrexed · Progression-free survival proportion · 3 months",
+      "assessedAt": "2026-10-11",
+      "sourceIds": [
+        "P-D07-LUNG-2013"
+      ],
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "Randomization was 2:1 in a phase II comparison of pemetrexed with or without itraconazole. Recruitment stopped early because first-line pemetrexed use increased, not because efficacy was established.",
+          "sourceIds": [
+            "P-D07-LUNG-2013"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "The comparison directly addresses three-month progression-free survival in previously treated metastatic nonsquamous NSCLC.",
+          "sourceIds": [
+            "P-D07-LUNG-2013"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "The endpoint had p=0.11 and no confidence interval in the stored extraction. With 23 participants, the point-estimate difference alone is not a precise treatment effect.",
+          "sourceIds": [
+            "P-D07-LUNG-2013"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "Median PFS and overall survival are other analyses from this same small trial, not independent confirmation of three-month benefit.",
+          "sourceIds": [
+            "P-D07-LUNG-2013"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "The primary PMC report was accessible. Its documented early closure and separate progression and survival outcomes were kept distinct; no absent interval was invented.",
+          "sourceIds": [
+            "P-D07-LUNG-2013"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "P-D07-LUNG-2013",
+          "locator": "Abstract; Patients and Methods; Results; primary source checked: https://pmc.ncbi.nlm.nih.gov/articles/PMC3636564/"
+        }
+      ],
+      "integrity": "clear",
+      "reviewStatus": "AI-assisted editorial assessment; independent clinical review has not been completed."
+    },
+    {
+      "rowId": "SYN-D07-C17-P-D07-PANCREAS-2015",
+      "label": "Low",
+      "rationale": "A retrospective series observed a 37% response rate in 38 people receiving itraconazole with three chemotherapy drugs. Without a concurrent control, patient selection and the other active drugs prevent attributing those responses to itraconazole.",
+      "assessmentStatus": "assessed",
+      "assessmentKind": "selected-source-editorial-v1",
+      "method": "Selected-source editorial assessment · v1",
+      "scope": "Itraconazole · Pancreatic cancer · Itraconazole plus multidrug chemotherapy; no concurrent control · 38 patients with progressive pancreatic cancer · Itraconazole plus multidrug chemotherapy; no concurrent control · Objective response · Study follow-up",
+      "assessedAt": "2026-10-11",
+      "sourceIds": [
+        "P-D07-PANCREAS-2015"
+      ],
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "Retrospective combination-treatment series without randomization or a concurrent comparison; treatment selection and outcome ascertainment can bias the observed response rate.",
+          "sourceIds": [
+            "P-D07-PANCREAS-2015"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "The finding concerns response to itraconazole with docetaxel, gemcitabine and carboplatin in progressive pancreatic cancer, not itraconazole alone or a survival benefit.",
+          "sourceIds": [
+            "P-D07-PANCREAS-2015"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "The 37% figure represents one complete and 13 partial responses among 38 patients. A response-rate confidence interval is not provided in the available extraction.",
+          "sourceIds": [
+            "P-D07-PANCREAS-2015"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "One series is cited; individual responders do not supply independent comparative evidence.",
+          "sourceIds": [
+            "P-D07-PANCREAS-2015"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "Only the primary abstract and stored extraction were available. Full eligibility, response-assessment procedures, missing outcomes and follow-up details could not be appraised.",
+          "sourceIds": [
+            "P-D07-PANCREAS-2015"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "P-D07-PANCREAS-2015",
+          "locator": "Abstract: Patients and Methods; Results; primary source checked: https://pubmed.ncbi.nlm.nih.gov/26124377/"
+        }
+      ],
+      "integrity": "limited_access",
+      "reviewStatus": "AI-assisted editorial assessment; independent clinical review has not been completed."
+    },
+    {
+      "rowId": "SYN-D09-C04-P-D09-GBM-2022",
+      "label": "Moderate",
+      "rationale": "The randomized 88-person study directly measured nine-month survival on two mebendazole-containing regimens, with both point estimates below the prespecified 55% target. The broad intervals and absence of a mebendazole-free arm mean these results are informative for the tested regimens but cannot determine mebendazole’s added benefit.",
+      "assessmentStatus": "assessed",
+      "assessmentKind": "selected-source-editorial-v1",
+      "method": "Selected-source editorial assessment · v1",
+      "scope": "Mebendazole · Glioblastoma · Temozolomide plus mebendazole versus lomustine plus mebendazole · 88 adults with recurrent glioblastoma · Temozolomide plus mebendazole versus lomustine plus mebendazole · Overall survival proportion · 9 months",
+      "assessedAt": "2026-10-11",
+      "sourceIds": [
+        "P-D09-GBM-2022"
+      ],
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "Open-label randomization assigned 44 participants to each regimen, with intention-to-treat survival analysis. Both arms contained mebendazole, so randomization does not isolate its effect.",
+          "sourceIds": [
+            "P-D09-GBM-2022"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "Overall survival is a direct clinical endpoint in recurrent glioblastoma; the historical benchmark is not a contemporaneous untreated control.",
+          "sourceIds": [
+            "P-D09-GBM-2022"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "Nine-month survival was 36.6% (95% CI 22.3–51.0) and 45% (29.6–59.2). The second interval includes the 55% target, so point estimates below target do not precisely exclude it.",
+          "sourceIds": [
+            "P-D09-GBM-2022"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "Both arms and per-protocol analyses come from one trial. They are not independent replications.",
+          "sourceIds": [
+            "P-D09-GBM-2022"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "The primary report’s indexed overall-survival section agrees with the full-text extraction. Grade applies to the reported regimen outcomes, not a claim that mebendazole is ineffective in every setting.",
+          "sourceIds": [
+            "P-D09-GBM-2022"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "P-D09-GBM-2022",
+          "locator": "Results: Primary outcome – overall survival; Figure 2; Abstract; primary source checked: https://pmc.ncbi.nlm.nih.gov/articles/PMC9156991/"
+        }
+      ],
+      "integrity": "clear",
+      "reviewStatus": "AI-assisted editorial assessment; independent clinical review has not been completed."
+    },
+    {
+      "rowId": "SYN-D13-C04-P-D13-GBM-2021",
+      "label": "Low",
+      "rationale": "The reported 66% six-month progression-free proportion came from a single-arm study of 36 patients receiving atorvastatin with chemoradiation. Without a concurrent chemoradiation-only group, the study cannot reliably measure atorvastatin’s contribution, even though the authors did not find improvement over their benchmark.",
+      "assessmentStatus": "assessed",
+      "assessmentKind": "selected-source-editorial-v1",
+      "method": "Selected-source editorial assessment · v1",
+      "scope": "Atorvastatin · Glioblastoma · Atorvastatin with chemoradiation; single arm · 36 patients with glioblastoma · Atorvastatin with chemoradiation; single arm · Progression-free survival proportion · 6 months",
+      "assessedAt": "2026-10-11",
+      "sourceIds": [
+        "P-D13-GBM-2021"
+      ],
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "Prospective phase II single-arm design; selection and changes in background care can confound comparison with an external benchmark.",
+          "sourceIds": [
+            "P-D13-GBM-2021"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "Six-month progression-free survival is directly measured in glioblastoma, but the comparison needed to attribute benefit to atorvastatin is absent.",
+          "sourceIds": [
+            "P-D13-GBM-2021"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "No interval for the 66% six-month proportion is available in the extraction. The median-PFS interval of 5.7–9.4 months describes a different estimate and cannot replace it.",
+          "sourceIds": [
+            "P-D13-GBM-2021"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "One small cohort is cited; its median and landmark PFS measures are correlated outcomes, not replication.",
+          "sourceIds": [
+            "P-D13-GBM-2021"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "The primary abstract was accessible; full progression-assessment, censoring and benchmark-selection details were not available for appraisal.",
+          "sourceIds": [
+            "P-D13-GBM-2021"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "P-D13-GBM-2021",
+          "locator": "Abstract: Methods; Results; Conclusion; primary source checked: https://pubmed.ncbi.nlm.nih.gov/32851510/"
+        }
+      ],
+      "integrity": "limited_access",
+      "reviewStatus": "AI-assisted editorial assessment; independent clinical review has not been completed."
+    },
+    {
+      "rowId": "SYN-D13-C15-P-D13-BREAST-2013",
+      "label": "Low",
+      "rationale": "The two-week presurgical study found a nonsignificant 7.6% overall Ki-67 decrease without a placebo or untreated concurrent group. The exploratory HMGCR-positive subgroup signal cannot resolve that uncertainty or establish a recurrence or survival benefit.",
+      "assessmentStatus": "assessed",
+      "assessmentKind": "selected-source-editorial-v1",
+      "method": "Selected-source editorial assessment · v1",
+      "scope": "Atorvastatin · Breast cancer · Atorvastatin before surgery; baseline comparison · 50 patients enrolled with invasive breast cancer · Atorvastatin before surgery; baseline comparison · Ki 67 relative change · 2 weeks",
+      "assessedAt": "2026-10-11",
+      "sourceIds": [
+        "P-D13-BREAST-2013"
+      ],
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "An uncontrolled pre/post study enrolled 50 patients and compared paired tumor samples. Sampling variation and time-related changes cannot be separated from treatment effects.",
+          "sourceIds": [
+            "P-D13-BREAST-2013"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "Ki-67 is a proliferation biomarker measured over two weeks, not a patient-important recurrence or survival outcome.",
+          "sourceIds": [
+            "P-D13-BREAST-2013"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "The overall change had p=0.39, with no confidence interval or complete paired-sample denominator supplied in the available extraction. The subgroup p=0.02 does not quantify a reliable overall benefit.",
+          "sourceIds": [
+            "P-D13-BREAST-2013"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "The subgroup and overall results arise from one study, not independent confirmation; subgroup selection adds uncertainty.",
+          "sourceIds": [
+            "P-D13-BREAST-2013"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "The primary PubMed abstract supports the overall and subgroup findings. Full sample-accounting, assay methods and multiplicity details were unavailable for reassessment.",
+          "sourceIds": [
+            "P-D13-BREAST-2013"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "P-D13-BREAST-2013",
+          "locator": "Abstract: paired tumor samples, primary endpoint and overall/subgroup Ki-67 results; primary source checked: https://pubmed.ncbi.nlm.nih.gov/23471651/"
+        }
+      ],
+      "integrity": "limited_access",
+      "reviewStatus": "AI-assisted editorial assessment; independent clinical review has not been completed."
+    },
+    {
+      "rowId": "SYN-D15-C15-P-D15-BREAST-2021",
+      "label": "Moderate",
+      "rationale": "REACT provides strong direct randomized evidence that two years of adjuvant celecoxib did not demonstrate a disease-free-survival advantage in its breast-cancer population. The HR of 0.97 is near null, but its interval still permits clinically relevant benefit or harm, and lower-than-expected event accrual limits certainty about a small effect.",
+      "assessmentStatus": "assessed",
+      "assessmentKind": "selected-source-editorial-v1",
+      "method": "Selected-source editorial assessment · v1",
+      "scope": "Celecoxib · Breast cancer · Celecoxib versus placebo after primary breast-cancer treatment · 2639 patients with primary breast cancer · Celecoxib versus placebo after primary breast-cancer treatment · Disease-free survival · Study follow-up",
+      "assessedAt": "2026-10-11",
+      "sourceIds": [
+        "P-D15-BREAST-2021"
+      ],
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "A double-blind multicenter trial randomized 2639 patients. Treatment completion was similar between groups; lower-than-expected relapse rates required revised analysis timing and power assessment.",
+          "sourceIds": [
+            "P-D15-BREAST-2021"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "Direct evidence for disease-free survival after resection and usual treatment of ERBB2-negative breast cancer, at the studied celecoxib regimen.",
+          "sourceIds": [
+            "P-D15-BREAST-2021"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "HR 0.97 (95% CI 0.80–1.17) does not show superiority but does not prove equivalence; it permits about 20% lower to 17% higher event hazard.",
+          "sourceIds": [
+            "P-D15-BREAST-2021"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "Overall survival also lacked a demonstrated difference, but is an outcome from the same trial rather than independent replication.",
+          "sourceIds": [
+            "P-D15-BREAST-2021"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "The full primary JAMA Oncology article was accessible, including Results and Limitations. Self-reported follow-up at some centers and its reported validation were considered, rather than assuming complete outcome ascertainment.",
+          "sourceIds": [
+            "P-D15-BREAST-2021"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "P-D15-BREAST-2021",
+          "locator": "Methods; Results: disease-free survival; Figure 2; Limitations; DOI 10.1001/jamaoncol.2021.2193; primary source checked: https://jamanetwork.com/journals/jamaoncology/fullarticle/2781890"
+        }
+      ],
+      "integrity": "clear",
+      "reviewStatus": "AI-assisted editorial assessment; independent clinical review has not been completed."
+    },
+    {
+      "rowId": "SYN-D15-C16-P-D15-COLON-2021",
+      "label": "Moderate",
+      "rationale": "The large randomized trial gives useful direct evidence that celecoxib did not significantly improve overall disease-free survival alongside adjuvant chemotherapy. Its HR of 0.89 still allows meaningful benefit, while treatment discontinuation and fewer events than originally planned reduce certainty about the size of an effect.",
+      "assessmentStatus": "assessed",
+      "assessmentKind": "selected-source-editorial-v1",
+      "method": "Selected-source editorial assessment · v1",
+      "scope": "Celecoxib · Colorectal cancer · Celecoxib versus placebo alongside adjuvant chemotherapy · Resected stage III colon cancer receiving adjuvant chemotherapy · Celecoxib versus placebo alongside adjuvant chemotherapy · Disease-free survival · Study follow-up",
+      "assessedAt": "2026-10-11",
+      "sourceIds": [
+        "P-D15-COLON-2021"
+      ],
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "2526 patients were randomized and 2524 analyzed; approximately 30% stopped assigned medication early. Lower event accrual led to revised power assumptions.",
+          "sourceIds": [
+            "P-D15-COLON-2021"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "The overall comparison applies to resected stage III colon cancer receiving adjuvant FOLFOX, not a biomarker-selected subgroup.",
+          "sourceIds": [
+            "P-D15-COLON-2021"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "HR 0.89 (95% CI 0.76–1.03; p=0.12) permits meaningful benefit and slight harm. Nonsignificance does not establish no effect.",
+          "sourceIds": [
+            "P-D15-COLON-2021"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "This row assesses one trial’s overall population. Analyses of subgroups or other endpoints from the same participants are not independent replication.",
+          "sourceIds": [
+            "P-D15-COLON-2021"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "The accessible full primary JAMA report supports the overall estimate and identifies the discontinuation and power limitations. The assessment is confined to the overall endpoint in the corrected row.",
+          "sourceIds": [
+            "P-D15-COLON-2021"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "P-D15-COLON-2021",
+          "locator": "Abstract; Methods: Sample Size and Statistical Analyses; Results; Discussion: molecular analyses; Limitations; primary source checked: https://jamanetwork.com/journals/jama/fullarticle/2778113"
+        }
+      ],
+      "integrity": "clear",
+      "reviewStatus": "AI-assisted editorial assessment; independent clinical review has not been completed."
+    },
+    {
+      "rowId": "SYN-D15-C20-P-D15-HCC-2017",
+      "label": "Moderate",
+      "rationale": "The randomized pilot directly supports a longer observed median survival for the full TACE–celecoxib–lanreotide combination compared with TACE alone. Certainty is reduced by the 71-person single-center sample and imprecise survival estimates, and adding two drugs prevents assigning the difference to celecoxib itself.",
+      "assessmentStatus": "assessed",
+      "assessmentKind": "selected-source-editorial-v1",
+      "method": "Selected-source editorial assessment · v1",
+      "scope": "Celecoxib · Hepatocellular carcinoma · TACE plus celecoxib and lanreotide versus TACE · 71 people with unresectable hepatocellular carcinoma · TACE plus celecoxib and lanreotide versus TACE · Median overall survival · Study follow-up",
+      "assessedAt": "2026-10-11",
+      "sourceIds": [
+        "P-D15-HCC-2017"
+      ],
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "Computer-generated randomization allocated 35 and 36 participants in a single-center pilot. A small pilot remains vulnerable to chance imbalances; masking and allocation-concealment detail are insufficient for a low-bias judgment.",
+          "sourceIds": [
+            "P-D15-HCC-2017"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "Overall survival is directly relevant to unresectable HCC, but the intervention is a three-part regimen, not isolated celecoxib.",
+          "sourceIds": [
+            "P-D15-HCC-2017"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "Median survival was 15.0 months (95% CI 12.1–17.9) versus 7.5 (2.4–12.6), p=0.012. The wide control-arm interval limits precision of the size of benefit.",
+          "sourceIds": [
+            "P-D15-HCC-2017"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "One pilot is cited. Stage-specific analyses from it are exploratory related observations, not independent replication.",
+          "sourceIds": [
+            "P-D15-HCC-2017"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "The primary full text, Methods and Table 2 were accessible and match the stored extraction. This grade is restricted to the tested combination and recorded survival outcome.",
+          "sourceIds": [
+            "P-D15-HCC-2017"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "P-D15-HCC-2017",
+          "locator": "Methods: study design and participants; Results: Overall survival; Table 2; primary source checked: https://pmc.ncbi.nlm.nih.gov/articles/PMC5564648/"
+        }
+      ],
+      "integrity": "clear",
+      "reviewStatus": "AI-assisted editorial assessment; independent clinical review has not been completed."
+    },
+    {
+      "rowId": "SYN-D16-C09-P-D16-TRD-2022",
+      "label": "Moderate",
+      "rationale": "The masked randomized trial directly tested six weeks of adjunctive minocycline and did not demonstrate greater improvement in depression severity than placebo. The 168-person analysis and confidence interval are informative, but they do not exclude modest effects or address benefit from longer treatment.",
+      "assessmentStatus": "assessed",
+      "assessmentKind": "selected-source-editorial-v1",
+      "method": "Selected-source editorial assessment · v1",
+      "scope": "Minocycline · Treatment-resistant depression · Adjunctive minocycline versus placebo · 173 randomized; 168 intention-to-treat participants with TRD · Adjunctive minocycline versus placebo · MADRS score change · 6 weeks",
+      "assessedAt": "2026-10-11",
+      "sourceIds": [
+        "P-D16-TRD-2022"
+      ],
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "Central computerized randomization and matching placebo masked clinicians and participants; 173 were randomized and 168 entered the intention-to-treat analysis.",
+          "sourceIds": [
+            "P-D16-TRD-2022"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "MADRS change at six weeks was the primary outcome in treatment-resistant depression on ongoing antidepressants, without selection for elevated inflammation.",
+          "sourceIds": [
+            "P-D16-TRD-2022"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "The between-group difference was 1.46 MADRS points (95% CI −1.04 to 3.96; p=0.25). The interval includes zero and potentially meaningful differences; this was not an equivalence trial.",
+          "sourceIds": [
+            "P-D16-TRD-2022"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "One trial is cited. Exploratory biomarker strata and secondary scales from it do not independently confirm the primary finding.",
+          "sourceIds": [
+            "P-D16-TRD-2022"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "The full primary report was accessible, including masking, outcome definition and stated duration limitation. This assessment makes no claim of independent or human review.",
+          "sourceIds": [
+            "P-D16-TRD-2022"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "P-D16-TRD-2022",
+          "locator": "Methods: Trial Procedures, Outcome Measures and Statistical Analysis; Results; Strengths and Limitations; primary source checked: https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2796182"
+        }
+      ],
+      "integrity": "clear",
+      "reviewStatus": "AI-assisted editorial assessment; independent clinical review has not been completed."
+    },
+    {
+      "rowId": "SYN-D16-C27-P-D16-MS-2017",
+      "label": "Moderate",
+      "rationale": "Randomized comparison after a first demyelinating event supports a lower six-month conversion risk, with an adjusted absolute reduction of 18.5 percentage points. The broad interval, baseline-lesion adjustment and more withdrawals with minocycline limit certainty about the magnitude; the later nonsignificant result does not establish lasting prevention.",
+      "assessmentStatus": "assessed",
+      "assessmentKind": "selected-source-editorial-v1",
+      "method": "Selected-source editorial assessment · v1",
+      "scope": "Minocycline · Multiple sclerosis · Minocycline versus placebo after a first demyelinating event · 142 people after a first demyelinating event · Minocycline versus placebo after a first demyelinating event · Conversion to multiple sclerosis · 6 months",
+      "assessedAt": "2026-10-11",
+      "sourceIds": [
+        "P-D16-MS-2017"
+      ],
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "142 participants were randomized to minocycline or placebo; the primary six-month conversion analysis included adjustment for baseline enhancing lesions. More withdrawals in the treatment group warrant caution.",
+          "sourceIds": [
+            "P-D16-MS-2017"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "Directly addresses six-month diagnostic conversion after a first event using the trial’s criteria, not disability progression or comparison with an active MS therapy.",
+          "sourceIds": [
+            "P-D16-MS-2017"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "The adjusted reduction ranged from 3.7 to 33.3 percentage points (95% CI), supporting direction more clearly than magnitude.",
+          "sourceIds": [
+            "P-D16-MS-2017"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "The 24-month follow-up did not establish a difference. It is the same cohort, as is the parallel condition-page record, not independent replication.",
+          "sourceIds": [
+            "P-D16-MS-2017"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "The stored extraction records full-text access; this reassessment could verify the primary abstract via the same DOI only. Detailed missing-data and diagnostic-adjudication methods remain unchecked.",
+          "sourceIds": [
+            "P-D16-MS-2017"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "P-D16-MS-2017",
+          "locator": "Abstract: Methods and Results; stored full-text extraction: Abstract and Results; DOI 10.1056/NEJMoa1608889 (PubMed PMID 28564557); primary source checked: https://pubmed.ncbi.nlm.nih.gov/28564557/"
+        }
+      ],
+      "integrity": "limited_access",
+      "reviewStatus": "AI-assisted editorial assessment; independent clinical review has not been completed."
+    }
+  ]
+}

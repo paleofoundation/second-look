@@ -5,6 +5,9 @@ import { readExecutionProfile } from "./execution-profile.mjs";
 const [command, ...args] = process.argv.slice(2);
 if (!["dev", "build"].includes(command)) throw new Error("Expected dev or build.");
 if (command === "build") {
+  const grading = spawnSync(process.execPath, [fileURLToPath(new URL("./evidence-assessments.mjs", import.meta.url)), "--check"], { stdio: "inherit" });
+  if (grading.error) throw grading.error;
+  if (grading.status !== 0) process.exit(grading.status ?? 1);
   const readerBoundary = spawnSync(process.execPath, [fileURLToPath(new URL("./verify-reader-boundary.mjs", import.meta.url)), "--source-only"], { stdio: "inherit" });
   if (readerBoundary.error) throw readerBoundary.error;
   if (readerBoundary.status !== 0) process.exit(readerBoundary.status ?? 1);

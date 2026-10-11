@@ -1,4 +1,9 @@
-"""Add located trial findings to both parent profiles and the outcome registry."""
+"""Add located trial findings to both parent profiles and the outcome registry.
+
+This extracts records, not grades. Complete the outcome-specific editorial
+assessment step in editorial/EVIDENCE-GRADING.md, then compile its projection.
+The production build rejects missing or stale assessments after this import.
+"""
 from pathlib import Path
 import argparse,json,re
 ROOT=Path(__file__).resolve().parents[1]

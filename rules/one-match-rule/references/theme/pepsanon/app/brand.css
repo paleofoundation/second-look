@@ -1,0 +1,41 @@
+/* Approved palette lives in lib/brand.ts and is rendered on <html>.
+   Yellow is an accent, never body text on white. Keep all core UI on these tokens. */
+:root{--primary:var(--brand-teal);--ring:var(--brand-teal);--sidebar-primary:var(--brand-teal);--sidebar-ring:var(--brand-teal);--color-primary:var(--brand-teal);--color-primary-dark:var(--brand-hero);--color-primary-600:var(--brand-hero);--color-primary-500:var(--brand-teal)}
+/* Restore the two-tone article hero: a lighter title panel and darker side panels. */
+.research-hero{background-color:var(--brand-hero)}
+.research-hero__center{background-color:hsla(0,0%,100%,.1)}
+.research-hero__right{background-color:var(--brand-hero)}
+.pe-site-header .account-sign-in{display:inline-flex;align-items:center;justify-content:center;min-height:44px;background:var(--brand-yellow);border-color:var(--brand-yellow);color:var(--brand-ink);font-size:.875rem;font-weight:600;line-height:1.5}
+.pe-site-header .account-sign-in:hover{background:var(--brand-yellow-hover);border-color:var(--brand-yellow-hover)}
+.pe-site-header .account-sign-in:focus-visible{outline:2px solid var(--brand-teal);outline-offset:4px}
+.site-footer{background:var(--brand-paper);border-top:5px solid var(--brand-yellow);color:var(--brand-ink)}
+.site-footer-main,.site-footer-people{max-width:1440px;margin:0 auto;padding-inline:clamp(24px,5.5vw,88px)}
+.site-footer-main{display:grid;grid-template-columns:minmax(240px,1fr) minmax(0,2fr);gap:clamp(40px,6vw,100px);padding-block:58px 44px}
+.site-footer-brand img{display:block;width:290px;max-width:100%;height:auto;margin:-14px 0 14px -12px}
+.site-footer-brand p{font-size:1rem;line-height:1.8;color:var(--brand-muted);max-width:350px;margin:0 0 23px}
+.site-footer a{color:var(--brand-teal);text-decoration:none}
+.site-footer a:hover{text-decoration:underline;text-underline-offset:4px}
+.site-footer a:focus-visible,.site-footer button:focus-visible{outline:2px solid var(--brand-teal);outline-offset:5px}
+.site-footer .site-footer-browse{display:inline-flex;align-items:center;gap:11px;min-height:46px;padding:10px 14px;background:var(--brand-yellow);color:var(--brand-ink);border:1px solid transparent;border-radius:4px;font-size:.9375rem}
+.site-footer .site-footer-browse:hover{background:var(--brand-yellow-hover)}
+.site-footer-navigation{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}
+.site-footer-group h2{font-family:Inter,Arial,sans-serif;font-size:1rem;line-height:1.5;color:var(--brand-ink);margin:4px 0 19px}
+.site-footer-group h2::after{content:'';display:block;width:28px;height:3px;background:var(--brand-yellow);margin-top:13px}
+.site-footer-group ul{list-style:none;padding:0;margin:0}
+.site-footer-group li+li{margin-top:5px}
+.site-footer-group a{display:inline-block;font-size:.9375rem;line-height:1.6;padding-block:6px}
+.site-footer-people{display:flex;align-items:center;justify-content:space-between;gap:25px;padding-block:27px 32px;border-top:1px solid var(--brand-line)}
+.site-footer .credit-label{font-size:.8125rem;color:var(--brand-muted);letter-spacing:.06em}
+.site-footer .credit-people{gap:18px 35px;margin-top:9px;flex-wrap:wrap}
+.site-footer .author-button-text strong{font-size:.9375rem;color:var(--brand-teal)}
+.site-footer .author-credentials{font-size:.8125rem;color:var(--brand-muted)}
+.site-footer .author-portrait{background:#ffffff;color:var(--brand-teal);border-color:#adbdbe;width:34px;height:34px}
+.site-footer-people>a{display:inline-flex;align-items:center;gap:8px;font-size:.9375rem;min-height:44px}
+.site-footer-bottom{background:var(--brand-deep);padding:28px max(24px,5.5vw,calc((100vw - 1264px)/2));color:#ffffff;font-size:.875rem;line-height:1.8}
+.site-footer-bottom>p{max-width:850px;margin:0 0 20px}
+.site-footer-bottom>div{display:flex;flex-wrap:wrap;gap:12px 30px;align-items:center;padding-top:18px;border-top:1px solid #ffffff35}
+.site-footer-bottom span{margin-right:auto;color:#d5e2e4}
+.site-footer-bottom a{color:var(--brand-yellow);text-decoration:underline;text-underline-offset:4px;padding-block:5px}
+.site-footer-bottom a:focus-visible{outline-color:var(--brand-yellow)}
+@media(max-width:1050px){.site-footer-main{grid-template-columns:1fr;gap:40px}.site-footer-brand{max-width:600px}.site-footer-brand p{max-width:560px}.site-footer-navigation{gap:30px}.site-footer-people{align-items:flex-start}}
+@media(max-width:640px){.site-footer-main{padding-block:40px 30px;gap:34px}.site-footer-navigation{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 22px}.site-footer-group:last-child{grid-column:1/-1}.site-footer-brand img{width:260px}.site-footer-group h2{font-size:.9375rem;margin-bottom:12px}.site-footer-people{flex-direction:column;gap:14px}.site-footer .credit-people{flex-direction:column;gap:11px}.site-footer-bottom>div{flex-direction:column;align-items:flex-start;gap:9px}.site-footer-bottom{padding-block:25px}.site-footer-bottom span{margin-bottom:2px}}

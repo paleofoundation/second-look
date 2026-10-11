@@ -1,11 +1,16 @@
-/** Reader adaptation for unappraised evidence. Never calculates an evidence grade. */
+/** Display validated, source-backed assessments; never derive a grade from a design label. */
+export type OutcomeCertainty = {
+  label: string; rationale: string; assessmentStatus?: 'assessed' | 'pending' | 'held'; method?: string; scope?: string;
+  assessmentKind?: string; assessedAt?: string; sourceIds?: string[]; integrity?: string; reviewStatus?: string;
+  domains?: {name:string;text:string;sourceIds:string[]}[]; basis?: {sourceId:string;locator:string}[];
+};
 export type ConfidenceRow = {
   status: string;
   background: boolean;
   sourceIds: string[];
   limits: { text: string; sourceIds: string[] }[];
   pending: string[];
-  certainty?: { label: string; rationale: string; assessmentStatus?: 'assessed' | 'pending' | 'held'; method?: string; scope?: string };
+  certainty?: OutcomeCertainty;
 };
 
 export type EvidenceConfidence = Omit<PendingConfidence, 'label' | 'category' | 'nextAction'> & {
@@ -19,7 +24,10 @@ export type EvidenceConfidence = Omit<PendingConfidence, 'label' | 'category' | 
 export function describeEvidenceConfidence(row: ConfidenceRow, sources: ConfidenceSource[]): EvidenceConfidence {
   const pending = describePendingConfidence(row, sources);
   const appraisal = row.certainty;
-  const held = ['quarantined', 'correction_hold'].includes(pending.category) || appraisal?.assessmentStatus === 'held';
+  // An explicit Low editorial assessment can explain compromised evidence while
+  // the result remains on correction hold. It never releases the held conclusion.
+  const correctionExplained = appraisal?.assessmentKind === 'selected-source-editorial-v1' && appraisal.integrity === 'correction_unresolved' && appraisal.label === 'Low';
+  const held = pending.category === 'quarantined' || (pending.category === 'correction_hold' && !correctionExplained) || appraisal?.assessmentStatus === 'held';
   if (!held && appraisal?.assessmentStatus === 'assessed' && appraisal.method?.trim() && appraisal.scope?.trim() && appraisal.rationale.trim() && appraisal.label.trim()) {
     return { label: appraisal.label, category: 'assessed', basis: `${appraisal.method} · ${appraisal.scope}`,
       limitation: { text: appraisal.rationale, sourceIds: [...row.sourceIds], input: 'certainty.rationale' } };

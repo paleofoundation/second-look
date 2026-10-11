@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "baseline": {
+    "version": "1.1",
+    "sha256": "01896e3c254f37483c226da52da0ef239b03eb7c762e5171675ae6dc302150d2"
+  },
+  "candidate": {
+    "status": "proposed only",
+    "sha256": "e5c48283ed44e6c723e2f9352a13897b646c70f583cfa620d80f027a093fc205",
+    "version": "unchanged in candidate; integrator allocates version after concurrent-read check"
+  },
+  "changedSections": [
+    "15"
+  ],
+  "unchangedSections": "1-14 and Appendices A-D",
+  "delta": [
+    {
+      "gapId": "GAP-001",
+      "before": "PepsAnon requirements feed canonical maintenance; no pilot experiment record",
+      "after": "Explicit pilot feedback with frozen baseline, evidence/classification/correction/retest, extra owner instructions, baseline/revised comparison",
+      "evidence": "source-reconciliation.json + rule-gap-log.json"
+    }
+  ],
+  "destinations": {
+    "canonical": "pending integrator",
+    "installed_skill": "pending integrator",
+    "zip": "pending integrator",
+    "uploaded_chatgpt_copy": "separate destination; not synchronized by local writes"
+  }
+}

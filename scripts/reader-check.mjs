@@ -1,5 +1,7 @@
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
+import {compileAssessments,readAssessmentInputs} from './evidence-assessments.mjs';
+compileAssessments(readAssessmentInputs());
 const data=JSON.parse(fs.readFileSync('data/content.json','utf8'));
 const reader=JSON.parse(fs.readFileSync('data/reader-evidence.json','utf8'));
 const sources=new Map(data.sources.map(s=>[s.id,s]));
@@ -10,7 +12,7 @@ const drugParents=parentRecords.filter(g=>g.type==='Drug').length;
 const conditionParents=parentRecords.filter(g=>g.type==='Condition').length;
 const rows=new Map(reader.synthesisRows.map(r=>[r.id,r]));
 function checkRow(row){
- assert.equal(row.certainty.label,'Not appraised','No formal grade authorized');
+ assert.equal(row.certainty.label,'Not appraised','Raw extraction preserves formal-appraisal status; validated editorial grades are compiled separately');
  assert.equal(row.coverage.complete,false,'Incomplete body must not claim complete');
  assert.equal(row.publicationState,'private_ai_draft');
  assert(!row.sourceIds.includes('P-REVIVE-2026'),'Quarantined report cannot support efficacy');

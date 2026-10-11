@@ -1,0 +1,13 @@
+.form-error,.favorite-error{color:#a32d2d}
+.favorite-control{display:inline-flex;flex-direction:column;align-items:flex-start;gap:5px;max-width:100%}
+.favorite-button{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:34px;border:1px solid #bed5d7;border-radius:4px;padding:6px 9px;background:transparent;color:var(--color-primary)!important;font-family:Inter,Arial,sans-serif;font-size:13px;line-height:1.4;text-decoration:none!important;white-space:nowrap;cursor:pointer}
+.favorite-button:hover{background:#e8f5f4}
+.favorite-button.is-saved{background:#e8f5f4;border-color:#abd0d1}
+.favorite-button:disabled{opacity:.55;cursor:wait}
+.favorite-button-hero{color:white!important;border-color:#8cbabf;background:#ffffff0b;min-height:38px}
+.favorite-button-hero:hover,.favorite-button-hero.is-saved{background:#ffffff1c}
+.favorite-error{font-size:12px;line-height:1.5;max-width:240px}
+.archive-links .favorite-button{margin-top:9px}
+.rgbc-references .favorite-control,.rgbc-references>.rgbc-references__item>.favorite-button,.source-list>li>.favorite-control,.source-list>li>.favorite-button{margin-top:9px;display:flex;width:fit-content}
+.saved-list .favorite-control,.saved-list>.favorite-button,.search-result-row .favorite-control,.search-result-row>.favorite-button{flex-shrink:0;margin-top:10px}
+@media(max-width:639px){.home-library-preview .favorite-button{font-size:12px}}

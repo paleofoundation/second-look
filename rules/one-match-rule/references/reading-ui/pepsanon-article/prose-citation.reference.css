@@ -1,0 +1,23 @@
+.section-answer{scroll-margin-top:115px}.section-answer h3{color:var(--color-primary);font-size:24px;line-height:1.4;margin-bottom:18px}.section-answer p{font-size:18px;line-height:1.8}.faq-index{padding-left:1.2em}.faq-index li{margin-bottom:14px;line-height:1.6}.entry-content sup,.answer-body sup{font-size:.72em;line-height:0;vertical-align:super;white-space:nowrap}.entry-content sup a,.answer-body sup a{padding:0 1px}.source-section li:target{background:#e1f1ef;outline:2px solid #007b83;outline-offset:5px}#research h3{margin-top:24px}#community,#evidence{scroll-margin-top:115px}
+.citation-tail{white-space:nowrap}
+/* Raise inline references once, without changing the paragraph's line boxes.
+   Tailwind's relative offset plus vertical-align:super otherwise lifts them twice. */
+sup.citation-marker{position:relative;inset:auto;top:-.35em;vertical-align:baseline;font-size:max(.75em,.75rem);line-height:0;white-space:nowrap;margin-inline-start:.15em}
+.citation-marker>.rgbc-reference{font-size:inherit;line-height:inherit;margin:0;padding:0 .05em}
+/* Reserve line-box space for table citations; do not combine a raised offset
+   with superscript alignment or let a source group wrap apart. */
+.evidence-table table{min-width:34rem}
+.wp-block-table.evidence-table td,.wp-block-table.evidence-table th{word-break:normal;overflow-wrap:normal}
+.evidence-table .table-sub{font-size:14px;line-height:1.75}
+.evidence-table .table-sub sup{position:static;inset:auto;display:inline-block;font-size:12px;line-height:1;vertical-align:super}
+.evidence-table .table-sub .rgbc-reference{font-size:inherit;line-height:inherit}
+/* Editorial reading hierarchy: visible explanations first; secondary FAQs last. */
+.guide-prose{font-size:18px;line-height:1.85}
+.guide-prose .guide-introduction,.guide-prose .answer-paragraph{margin:0 0 1.5rem;font-size:inherit;line-height:inherit}
+.guide-prose .section-answer{margin:2rem 0 2.4rem}
+.guide-prose .section-answer h3{font-family:Lora,Georgia,serif;font-size:1.5rem;line-height:1.4;color:#24454a;font-weight:500;margin:0 0 .9rem}
+.guide-introduction{scroll-margin-top:115px}
+#overview>.answer-paragraph{font-size:18px;line-height:1.85}
+#answers>.rgbc-faq-block{border-top:1px solid #dce6e5}
+#answers .rgbc-faq-item{border-bottom:1px solid #dce6e5;padding:1.2rem 0}
+@media(max-width:575px){.guide-prose,#overview>.answer-paragraph{font-size:17px;line-height:1.8}.guide-prose .section-answer h3{font-size:22px}.guide-prose .section-answer{margin:1.5rem 0 2rem}}

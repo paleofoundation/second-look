@@ -1,0 +1,1055 @@
+{
+  "schemaVersion": 1,
+  "snapshotDate": "2026-10-11",
+  "ruleVersion": "1.28",
+  "source": {
+    "package": "PepsAnon canonical One Match Rule",
+    "relativeRoot": "one-match-rule",
+    "master": "ONE-MATCH-RULE.md",
+    "sourceRole": "Upstream editable canonical master",
+    "snapshotRole": "Byte-preserved adopted snapshot; propose reusable changes upstream and refresh deliberately; keep Second Look deltas in project rules."
+  },
+  "masterSha256": "0b5157f2239e56acf05210febfd744b90fe80cddd740d4d5b67a890545775d20",
+  "files": [
+    {
+      "path": "ONE-MATCH-RULE.md",
+      "sourceRelativePath": "ONE-MATCH-RULE.md",
+      "sha256": "0b5157f2239e56acf05210febfd744b90fe80cddd740d4d5b67a890545775d20",
+      "bytes": 210378
+    },
+    {
+      "path": "SKILL.md",
+      "sourceRelativePath": "SKILL.md",
+      "sha256": "3ddeb49fb6f63a0ebca21f88be281bd564b858c4ee959c95b7ae278bde279cc2",
+      "bytes": 11855
+    },
+    {
+      "path": "PROJECT-INSTRUCTIONS.txt",
+      "sourceRelativePath": "PROJECT-INSTRUCTIONS.txt",
+      "sha256": "959308e5f54459fa7b890e1a9cd546fdf34cd816acab87668331b728309bf35b",
+      "bytes": 12522
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sourceRelativePath": "agents/openai.yaml",
+      "sha256": "8838ef939e43310483f41f84f6da5a3c7a83f2b7bbfacc1ad0925d622d6a944b",
+      "bytes": 264
+    },
+    {
+      "path": "references/consumer-guides.md",
+      "sourceRelativePath": "references/consumer-guides.md",
+      "sha256": "e314a5a2d8abb07364c2cc65d18e9e6d794a4fd2f50c563b687ac5e3a9d70a21",
+      "bytes": 15067
+    },
+    {
+      "path": "references/evidence-exploration.md",
+      "sourceRelativePath": "references/evidence-exploration.md",
+      "sha256": "e926e4d459ac688b147e47c6abae16b2f2893977a0789b08900fe3e8f62cc185",
+      "bytes": 6780
+    },
+    {
+      "path": "references/evidence-grading.md",
+      "sourceRelativePath": "references/evidence-grading.md",
+      "sha256": "bbbe0a3603cb1918b851c0b91bddb3ab7157920d64adb7e20a400dfe4c02b396",
+      "bytes": 7866
+    },
+    {
+      "path": "references/mechanisms-and-reader-copy.md",
+      "sourceRelativePath": "references/mechanisms-and-reader-copy.md",
+      "sha256": "c63d2ade9458512947d50223df5957a78b69c7260062f908ef6bc6d5089e15e7",
+      "bytes": 3699
+    },
+    {
+      "path": "references/reading-ui/README.md",
+      "sourceRelativePath": "references/reading-ui/README.md",
+      "sha256": "64ad1479abce89fb8224be9c59e3b53705f3e41f7329d2c5fc65eb84394e8561",
+      "bytes": 10495
+    },
+    {
+      "path": "references/reading-ui/article-presentation.md",
+      "sourceRelativePath": "references/reading-ui/article-presentation.md",
+      "sha256": "d96851bcd0a57e2014fbdc8bb0ed013280bff1d79cdac45f82f25e8e6ab75e31",
+      "bytes": 9812
+    },
+    {
+      "path": "references/reading-ui/microbiome-medicine/AUDIT.md",
+      "sourceRelativePath": "references/reading-ui/microbiome-medicine/AUDIT.md",
+      "sha256": "a047eff76a5d38a3de8bb11a270782fd6989bfeea05e214cbf19bf307210dd64",
+      "bytes": 7103
+    },
+    {
+      "path": "references/reading-ui/microbiome-medicine/DESIGN-SYSTEM-FAQ-excerpt.md",
+      "sourceRelativePath": "references/reading-ui/microbiome-medicine/DESIGN-SYSTEM-FAQ-excerpt.md",
+      "sha256": "e0e1daf289ee7826697cb58120a0c92301b50ad18ed3b6bdda153b85c2444646",
+      "bytes": 1051
+    },
+    {
+      "path": "references/reading-ui/microbiome-medicine/faq-source.css",
+      "sourceRelativePath": "references/reading-ui/microbiome-medicine/faq-source.css",
+      "sha256": "aff757fb3f0750a7994fe2e38777c557d1d0513360623284a2a8da487a4f9e0f",
+      "bytes": 1823
+    },
+    {
+      "path": "references/reading-ui/microbiome-medicine/faqs.ts",
+      "sourceRelativePath": "references/reading-ui/microbiome-medicine/faqs.ts",
+      "sha256": "5bb673751797ab3c43a419bf7151022797ba2215ff1e4b3400e7612de00382e1",
+      "bytes": 2948
+    },
+    {
+      "path": "references/reading-ui/microbiome-medicine/framework-neutral-markup.html",
+      "sourceRelativePath": "references/reading-ui/microbiome-medicine/framework-neutral-markup.html",
+      "sha256": "afe488ffb9ae1e2639e3445fe7e9fd60921005eb7bf7c29398a655873c3b5501",
+      "bytes": 662
+    },
+    {
+      "path": "references/reading-ui/microbiome-medicine/manifest.json",
+      "sourceRelativePath": "references/reading-ui/microbiome-medicine/manifest.json",
+      "sha256": "3cc77d03bd4e8bf8bee3e22f5a9df40aa413fb4e4f69ce58aa0e69d02ef349b6",
+      "bytes": 5650
+    },
+    {
+      "path": "references/reading-ui/pepsanon/evidence-table.tsx",
+      "sourceRelativePath": "references/reading-ui/pepsanon/evidence-table.tsx",
+      "sha256": "79a75c0b7f43031ab556a8431f2f503ada57ebab8ebff2150449898c8bb6ce25",
+      "bytes": 2395
+    },
+    {
+      "path": "references/reading-ui/pepsanon/manifest.json",
+      "sourceRelativePath": "references/reading-ui/pepsanon/manifest.json",
+      "sha256": "9d2d7d28305ee864fcb8f9abfef34a439b0d7a0479e509ee8ee7e139c9422b1e",
+      "bytes": 4217
+    },
+    {
+      "path": "references/reading-ui/pepsanon/research-details.reference.css",
+      "sourceRelativePath": "references/reading-ui/pepsanon/research-details.reference.css",
+      "sha256": "b31f2dc8d985887d502e3b5d586c2b8a4e577fb81cfe108fd8e96b7d08d3f9e4",
+      "bytes": 6172
+    },
+    {
+      "path": "references/reading-ui/pepsanon/research-panel.tsx",
+      "sourceRelativePath": "references/reading-ui/pepsanon/research-panel.tsx",
+      "sha256": "b49ebd6d9f30749291e899abbce61496d6c07d741ccec2ae19463af1f4f4dcc1",
+      "bytes": 4959
+    },
+    {
+      "path": "references/reading-ui/pepsanon/sheet.tsx",
+      "sourceRelativePath": "references/reading-ui/pepsanon/sheet.tsx",
+      "sha256": "63863cf2df8f8973e52b3459ac9bdbf81be1262dbc70eb53d5271ffb03488e16",
+      "bytes": 4188
+    },
+    {
+      "path": "references/reading-ui/pepsanon/table-base.reference.css",
+      "sourceRelativePath": "references/reading-ui/pepsanon/table-base.reference.css",
+      "sha256": "981721456277df6fda6d6054d1fa3e4e873a9ef9191deb23660624ac219f2bf9",
+      "bytes": 2098
+    },
+    {
+      "path": "references/reading-ui/pepsanon/table-overflow.reference.css",
+      "sourceRelativePath": "references/reading-ui/pepsanon/table-overflow.reference.css",
+      "sha256": "00b5be6e456fb1d0ddff12177300adfaaaa10748340a263e8e18a3f7cf19192b",
+      "bytes": 33
+    },
+    {
+      "path": "references/reading-ui/pepsanon/types.reference.ts",
+      "sourceRelativePath": "references/reading-ui/pepsanon/types.reference.ts",
+      "sha256": "5b5db04115118ad86b44cdfb81a54bc21d4b3ab8da09d5805fc2bb094757d2ad",
+      "bytes": 394
+    },
+    {
+      "path": "references/reading-ui/pepsanon/utils.ts",
+      "sourceRelativePath": "references/reading-ui/pepsanon/utils.ts",
+      "sha256": "53f3d3d070f0a9082934da25b875f9499855c2b0693868dd28be8c23d8730f68",
+      "bytes": 177
+    },
+    {
+      "path": "references/reading-ui/pepsanon-article/README.md",
+      "sourceRelativePath": "references/reading-ui/pepsanon-article/README.md",
+      "sha256": "0ed436eab0e456384d2378e89dd2229d0e5965a301b980559a890158c3f29347",
+      "bytes": 9437
+    },
+    {
+      "path": "references/reading-ui/pepsanon-article/article-reading-order.reference.tsx",
+      "sourceRelativePath": "references/reading-ui/pepsanon-article/article-reading-order.reference.tsx",
+      "sha256": "596aac3632173a2e5e549699d9cdd1e62b73e3c0e24f3935f534130c99c4b1b6",
+      "bytes": 1379
+    },
+    {
+      "path": "references/reading-ui/pepsanon-article/canonical-prose.tsx",
+      "sourceRelativePath": "references/reading-ui/pepsanon-article/canonical-prose.tsx",
+      "sha256": "87a00554309b54dd900ccff03c001b81666449235543256f8ddeead6b2c975d7",
+      "bytes": 1001
+    },
+    {
+      "path": "references/reading-ui/pepsanon-article/canonical-types-order.reference.ts",
+      "sourceRelativePath": "references/reading-ui/pepsanon-article/canonical-types-order.reference.ts",
+      "sha256": "c16e17a4e7e1db88b9a4fcccf3dd6866849a94eac3b1e82ca5aa54a978bd5c7f",
+      "bytes": 521
+    },
+    {
+      "path": "references/reading-ui/pepsanon-article/citation-order.ts",
+      "sourceRelativePath": "references/reading-ui/pepsanon-article/citation-order.ts",
+      "sha256": "b0325685d0850507a0adb4fadaff670291c9905147f6d3a6accd87aaff761386",
+      "bytes": 250
+    },
+    {
+      "path": "references/reading-ui/pepsanon-article/citations.tsx",
+      "sourceRelativePath": "references/reading-ui/pepsanon-article/citations.tsx",
+      "sha256": "84cd8c7ffb96f11e9f512727c3320c734c91255dcb88eff13a8e8bb70c5b881d",
+      "bytes": 825
+    },
+    {
+      "path": "references/reading-ui/pepsanon-article/cited-text.tsx",
+      "sourceRelativePath": "references/reading-ui/pepsanon-article/cited-text.tsx",
+      "sha256": "eb8ffe2a33d1a5f6996f672ceec5c0f9379d1a16e254f370ae736de65031d983",
+      "bytes": 3366
+    },
+    {
+      "path": "references/reading-ui/pepsanon-article/faq-item.tsx",
+      "sourceRelativePath": "references/reading-ui/pepsanon-article/faq-item.tsx",
+      "sha256": "85cc5f7106cc1e97eafa883343e3addf78fc78eac5e8286058ba2cbce8d6de08",
+      "bytes": 482
+    },
+    {
+      "path": "references/reading-ui/pepsanon-article/favorite-button.reference.css",
+      "sourceRelativePath": "references/reading-ui/pepsanon-article/favorite-button.reference.css",
+      "sha256": "7d5d1cce3d17d54ad74d612b5b3634e5d72fb1cb291b26101351929ea4e7775b",
+      "bytes": 1410
+    },
+    {
+      "path": "references/reading-ui/pepsanon-article/favorite-button.reference.tsx",
+      "sourceRelativePath": "references/reading-ui/pepsanon-article/favorite-button.reference.tsx",
+      "sha256": "f5687648fed30b3bdfbb9097f5518d761118320d17f7969fdab8d7296f488f70",
+      "bytes": 1533
+    },
+    {
+      "path": "references/reading-ui/pepsanon-article/hero-action-bar.reference.tsx",
+      "sourceRelativePath": "references/reading-ui/pepsanon-article/hero-action-bar.reference.tsx",
+      "sha256": "799f9a22d5a1096a6e1980befc0ef8382b61402d1b05520709b022416fc9493b",
+      "bytes": 808
+    },
+    {
+      "path": "references/reading-ui/pepsanon-article/hero-actions.reference.css",
+      "sourceRelativePath": "references/reading-ui/pepsanon-article/hero-actions.reference.css",
+      "sha256": "891d11fff0df9dea4422dd9a12612b52526d0b8df07cfb0876684b13047594e4",
+      "bytes": 1100
+    },
+    {
+      "path": "references/reading-ui/pepsanon-article/hover-card.tsx",
+      "sourceRelativePath": "references/reading-ui/pepsanon-article/hover-card.tsx",
+      "sha256": "f5d8df42c59370ec14d61bcc54f7d68e9bb7dfa0d6a872b2f7cffc2aafbf23b8",
+      "bytes": 1526
+    },
+    {
+      "path": "references/reading-ui/pepsanon-article/manifest.json",
+      "sourceRelativePath": "references/reading-ui/pepsanon-article/manifest.json",
+      "sha256": "b79f87f7a13aa4b15c3f8af323c8e2166b3447cce00a076be1662043b8062c81",
+      "bytes": 6230
+    },
+    {
+      "path": "references/reading-ui/pepsanon-article/prose-citation.reference.css",
+      "sourceRelativePath": "references/reading-ui/pepsanon-article/prose-citation.reference.css",
+      "sha256": "e04af8d3e620faad151dcf9e96af1fb600becab646ef3741e581aa6362881ed3",
+      "bytes": 2498
+    },
+    {
+      "path": "references/research-reviews/README.md",
+      "sourceRelativePath": "references/research-reviews/README.md",
+      "sha256": "3a6db3fd83e749981446fdf2dff692ea8b67ae515d9321487d85613de56f99ac",
+      "bytes": 10936
+    },
+    {
+      "path": "references/research-reviews/intake-profile.schema.json",
+      "sourceRelativePath": "references/research-reviews/intake-profile.schema.json",
+      "sha256": "94979645f133b2a9e4e925dd383f89370b7d07caacf56ce49354459cfd101bc0",
+      "bytes": 1892
+    },
+    {
+      "path": "references/research-reviews/microbiome-medicine/AUDIT.md",
+      "sourceRelativePath": "references/research-reviews/microbiome-medicine/AUDIT.md",
+      "sha256": "6a5118b673d97ff96c42d4eef2c383f6ea62d2958715ee7193796d458db7a14b",
+      "bytes": 14703
+    },
+    {
+      "path": "references/research-reviews/microbiome-medicine/DESIGN-SYSTEM-research-excerpt.md",
+      "sourceRelativePath": "references/research-reviews/microbiome-medicine/DESIGN-SYSTEM-research-excerpt.md",
+      "sha256": "bf6317bf551487d3473823a7fba9d66563750edda414a6b0d9160592e36cea34",
+      "bytes": 4174
+    },
+    {
+      "path": "references/research-reviews/microbiome-medicine/ResearchFeedView.reference.tsx",
+      "sourceRelativePath": "references/research-reviews/microbiome-medicine/ResearchFeedView.reference.tsx",
+      "sha256": "ad0b7df7d700b0848d170c9a126f2ab08032ca5f919914f088c392271d5c6abd",
+      "bytes": 10864
+    },
+    {
+      "path": "references/research-reviews/microbiome-medicine/abstract-seeding.audit-only.mjs",
+      "sourceRelativePath": "references/research-reviews/microbiome-medicine/abstract-seeding.audit-only.mjs",
+      "sha256": "91d10ff3db28a25e1190b38e24b894e4ed951b6c7bcf840c16e0255914afaff9",
+      "bytes": 5663
+    },
+    {
+      "path": "references/research-reviews/microbiome-medicine/cosmetic-gate.audit-only.css",
+      "sourceRelativePath": "references/research-reviews/microbiome-medicine/cosmetic-gate.audit-only.css",
+      "sha256": "c9fc981864366ae9faa6c7244228cacf378639968c2021218f43e224320ef523",
+      "bytes": 808
+    },
+    {
+      "path": "references/research-reviews/microbiome-medicine/cosmetic-gate.audit-only.tsx",
+      "sourceRelativePath": "references/research-reviews/microbiome-medicine/cosmetic-gate.audit-only.tsx",
+      "sha256": "2caf5c199fb5423620f3e40a215ffcd90220358501461cbaa21961caf1830e68",
+      "bytes": 1728
+    },
+    {
+      "path": "references/research-reviews/microbiome-medicine/dashboard-auth-boundary.extract.tsx",
+      "sourceRelativePath": "references/research-reviews/microbiome-medicine/dashboard-auth-boundary.extract.tsx",
+      "sha256": "1b7fed9a30d5058b230d522d29f24ca4d4857f125555e55b5d70b55df86421a0",
+      "bytes": 586
+    },
+    {
+      "path": "references/research-reviews/microbiome-medicine/feed-card.reference.css",
+      "sourceRelativePath": "references/research-reviews/microbiome-medicine/feed-card.reference.css",
+      "sha256": "e7e3a6d86a3faaac64ca975cf58980a81bdca1f2f71303879304ea68ea29142f",
+      "bytes": 3480
+    },
+    {
+      "path": "references/research-reviews/microbiome-medicine/feed-card.reference.ts",
+      "sourceRelativePath": "references/research-reviews/microbiome-medicine/feed-card.reference.ts",
+      "sha256": "62b0d332c72c812b37552ae7cbdb5d28190fb6c5f2432a22bda3a26f9a7c3959",
+      "bytes": 1561
+    },
+    {
+      "path": "references/research-reviews/microbiome-medicine/feed-footer.reference.css",
+      "sourceRelativePath": "references/research-reviews/microbiome-medicine/feed-footer.reference.css",
+      "sha256": "860c7c9651db915dbabdc980a5ad0353635f036b3f5c271e2b6bbb92f6a3d27d",
+      "bytes": 941
+    },
+    {
+      "path": "references/research-reviews/microbiome-medicine/feed-reveal-call.extract.tsx",
+      "sourceRelativePath": "references/research-reviews/microbiome-medicine/feed-reveal-call.extract.tsx",
+      "sha256": "f19ed005522d7194227bdceda1f79817de498e15b80399ea8ba1ec99c7cde40e",
+      "bytes": 292
+    },
+    {
+      "path": "references/research-reviews/microbiome-medicine/manifest.json",
+      "sourceRelativePath": "references/research-reviews/microbiome-medicine/manifest.json",
+      "sha256": "d3f3411afe96aeebd14ae6c386688cbb1337041a95cf949a0e8d75dde99b35cc",
+      "bytes": 19525
+    },
+    {
+      "path": "references/research-reviews/microbiome-medicine/public-read-policy.audit-only.sql",
+      "sourceRelativePath": "references/research-reviews/microbiome-medicine/public-read-policy.audit-only.sql",
+      "sha256": "ab6d26f843ea4d248df5fc78e6413a1a7e4c57ee95d0cc5d24e727f97e0b1873",
+      "bytes": 512
+    },
+    {
+      "path": "references/research-reviews/microbiome-medicine/research-body-gate.audit-only.tsx",
+      "sourceRelativePath": "references/research-reviews/microbiome-medicine/research-body-gate.audit-only.tsx",
+      "sha256": "23901b5329a65a702faf9dd0249d57998fe43820372a2e7bfc6bbcd9feef9e78",
+      "bytes": 855
+    },
+    {
+      "path": "references/research-reviews/microbiome-medicine/research-route.reference.tsx",
+      "sourceRelativePath": "references/research-reviews/microbiome-medicine/research-route.reference.tsx",
+      "sha256": "21d395370c7b887d2faeaaabe023402d2da78a4bcfd6693f895d59ac50d64c81",
+      "bytes": 550
+    },
+    {
+      "path": "references/research-reviews/microbiome-medicine/review-body.reference.css",
+      "sourceRelativePath": "references/research-reviews/microbiome-medicine/review-body.reference.css",
+      "sha256": "779d5f571fd8cb0775777ed1a8388079ea5c477f6e2f943ed53d951e1b283d3a",
+      "bytes": 4575
+    },
+    {
+      "path": "references/research-reviews/microbiome-medicine/review-hero.reference.css",
+      "sourceRelativePath": "references/research-reviews/microbiome-medicine/review-hero.reference.css",
+      "sha256": "0bc140993dddfb3ce1ee37eaf74e0bac2175e3512e61cedd1788143cdd0c3bb2",
+      "bytes": 6033
+    },
+    {
+      "path": "references/research-reviews/microbiome-medicine/role-intake.reference.css",
+      "sourceRelativePath": "references/research-reviews/microbiome-medicine/role-intake.reference.css",
+      "sha256": "3b611ea4d7b254aa96b85138be2cedf12b57079f193e988164d029f8f2d8ff28",
+      "bytes": 1350
+    },
+    {
+      "path": "references/research-reviews/microbiome-medicine/role-intake.reference.tsx",
+      "sourceRelativePath": "references/research-reviews/microbiome-medicine/role-intake.reference.tsx",
+      "sha256": "c2ccb05d563613d390c1e22eb331a63481d97282404dfa7134b5cb0935acd16d",
+      "bytes": 7913
+    },
+    {
+      "path": "references/research-reviews/microbiome-medicine/server-session.reference.ts",
+      "sourceRelativePath": "references/research-reviews/microbiome-medicine/server-session.reference.ts",
+      "sha256": "7b2e52cb3f1fd04ca5b891306c570e6270ed68e580e1e149e04b70d8fdfdd9c9",
+      "bytes": 1273
+    },
+    {
+      "path": "references/research-reviews/microbiome-medicine/signup-endpoint.audit-only.ts",
+      "sourceRelativePath": "references/research-reviews/microbiome-medicine/signup-endpoint.audit-only.ts",
+      "sha256": "b62598176cc093fd1334d03b266c7fbe2541cb1f04d3d4f50bf1d4e2a7be1c79",
+      "bytes": 2487
+    },
+    {
+      "path": "references/research-reviews/review-questions-and-inputs.json",
+      "sourceRelativePath": "references/research-reviews/review-questions-and-inputs.json",
+      "sha256": "02edeacc65227e5feeaf25b6c9568be406b48024216f83d2dda2ccfcc5042f3b",
+      "bytes": 10309
+    },
+    {
+      "path": "references/theme/README.md",
+      "sourceRelativePath": "references/theme/README.md",
+      "sha256": "dab31d0046e0d8b0670de14e4288815ca82b9d3745b4db8a4278a75fc44b7309",
+      "bytes": 13464
+    },
+    {
+      "path": "references/theme/manifest.json",
+      "sourceRelativePath": "references/theme/manifest.json",
+      "sha256": "7f6fe030e8428c092cb9b036d1547d8bb07925b886464ca9b274fd8fe93f529b",
+      "bytes": 77473
+    },
+    {
+      "path": "references/theme/microbiome-medicine/DESIGN.md.reference.txt",
+      "sourceRelativePath": "references/theme/microbiome-medicine/DESIGN.md.reference.txt",
+      "sha256": "ca588551a84f8a6900a4d5d7718b3932a5856d643807dbd4121b259e87968076",
+      "bytes": 4206
+    },
+    {
+      "path": "references/theme/microbiome-medicine/docs/DESIGN-SYSTEM.md.reference.txt",
+      "sourceRelativePath": "references/theme/microbiome-medicine/docs/DESIGN-SYSTEM.md.reference.txt",
+      "sha256": "1d0e73386e599c234a3ba55720a4fadec283090878c7529986b77728b720d815",
+      "bytes": 16606
+    },
+    {
+      "path": "references/theme/microbiome-medicine/docs/IMAGE-CONVENTIONS.md.reference.txt",
+      "sourceRelativePath": "references/theme/microbiome-medicine/docs/IMAGE-CONVENTIONS.md.reference.txt",
+      "sha256": "e2110fc2af66766910d6abb927c1a8c50d1eeb08d6c0c799fc0f97b5828ded25",
+      "bytes": 7128
+    },
+    {
+      "path": "references/theme/microbiome-medicine/next.config.ts",
+      "sourceRelativePath": "references/theme/microbiome-medicine/next.config.ts",
+      "sha256": "e210357094a6b67bf11c59f7c067e116d67bc0c46454f9ce40c2a141dc34e65a",
+      "bytes": 2056
+    },
+    {
+      "path": "references/theme/microbiome-medicine/package.json",
+      "sourceRelativePath": "references/theme/microbiome-medicine/package.json",
+      "sha256": "4f2fb47622beb46c14fbc81ba0080ffcd1013b7a5f27e42afda6f8be673b98a9",
+      "bytes": 916
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/app/[slug]/page.tsx",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/app/[slug]/page.tsx",
+      "sha256": "7a78b2420ffd97ec1e3f0a2c0d1778d332dcf70454e00f11fc870c8c6c3a429d",
+      "bytes": 2735
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/app/auth/signup/page.tsx",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/app/auth/signup/page.tsx",
+      "sha256": "4fab701cbde1801a3d433110df596136989c6f5d6db834ec7bc05e39d65bb3d1",
+      "bytes": 839
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/app/conditions/[slug]/page.tsx",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/app/conditions/[slug]/page.tsx",
+      "sha256": "caf59e37044f8172c6fb34359c2461b16ae4da90b6afb6008d9668113fb61edb",
+      "bytes": 509
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/app/conditions/page.tsx",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/app/conditions/page.tsx",
+      "sha256": "be6e9176f6c99c271af2f4b68dbbe94884862a5e7002adee5d429c9f7da5db8e",
+      "bytes": 483
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/app/dashboard/followed/page.tsx",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/app/dashboard/followed/page.tsx",
+      "sha256": "c423a44a660b51254aa79669c8ef9e4238b1e59634ad2de7927d9e591f766243",
+      "bytes": 2295
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/app/dashboard/layout.tsx",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/app/dashboard/layout.tsx",
+      "sha256": "4fc8685c0b4dfd2e9627418c65b2c23d35b92b68954a99cbbc6c2d345e027769",
+      "bytes": 1404
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/app/dashboard/page.tsx",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/app/dashboard/page.tsx",
+      "sha256": "e50c8dae9ba3b6e308b993e1d160e50d61b224094005aff2689e58cd38eb985f",
+      "bytes": 2498
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/app/dashboard/profile/page.tsx",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/app/dashboard/profile/page.tsx",
+      "sha256": "9920470def37a5e7adf1a3da89d843b86e0d6ebfb8c7d7d8e21ecde377e29b1a",
+      "bytes": 2658
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/app/dashboard/receipts/page.tsx",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/app/dashboard/receipts/page.tsx",
+      "sha256": "4dfd8e01f992496efbaccfb1a9d470e321424d7d9ec55329aacb0da72d97921f",
+      "bytes": 398
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/app/dashboard/subscription/page.tsx",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/app/dashboard/subscription/page.tsx",
+      "sha256": "acae9414e26ecb82a1c6fe74dbfdccbb6ac49413f91067b9e0e83c42d65503f4",
+      "bytes": 1258
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/app/globals.css",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/app/globals.css",
+      "sha256": "375b8e9543b663f4677007d22ede4d77ee2a15410b8f2ff3145df364ac75eb48",
+      "bytes": 27266
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/app/layout.tsx",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/app/layout.tsx",
+      "sha256": "e4015f206d4e1a2d27ac0c2e3425e93d44c2eb07cc1e93dd8b4f92e0d7b16871",
+      "bytes": 3527
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/app/login/page.tsx",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/app/login/page.tsx",
+      "sha256": "6edc89dbece2761b06c05e0b41ae1eed299152d081c585ba173a11b94d1f2763",
+      "bytes": 4325
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/app/page.tsx",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/app/page.tsx",
+      "sha256": "84d24ef511cfc1994b22804aa05a30b746ac99a36fa5fc0eb8377cec6ac4ad14",
+      "bytes": 287
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/app/research-feeds/[slug]/page.tsx",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/app/research-feeds/[slug]/page.tsx",
+      "sha256": "21d395370c7b887d2faeaaabe023402d2da78a4bcfd6693f895d59ac50d64c81",
+      "bytes": 550
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/app/research-feeds/page.tsx",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/app/research-feeds/page.tsx",
+      "sha256": "854df04c226d33f1a9e1a7d9d489dfaf36bbf170a92ea8620f3fc49e47a9ee9d",
+      "bytes": 4121
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/app/search/page.tsx",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/app/search/page.tsx",
+      "sha256": "971ebc50a4655d39335f195784e4237e95b2424c99cef073945a172c4300aa01",
+      "bytes": 6702
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/components/AccessGate.tsx",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/components/AccessGate.tsx",
+      "sha256": "2caf5c199fb5423620f3e40a215ffcd90220358501461cbaa21961caf1830e68",
+      "bytes": 1728
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/components/ArchiveView.tsx",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/components/ArchiveView.tsx",
+      "sha256": "88c097593b68188875283cd42f3290cc0386cd36aadde23ca66282aec8cf4d8d",
+      "bytes": 2891
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/components/ArticleBody.tsx",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/components/ArticleBody.tsx",
+      "sha256": "bb19970bb52a8e5445d3cce04a88ae92ffc7a38ade5290f1437d7b1c5264aba5",
+      "bytes": 262
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/components/ArticleView.tsx",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/components/ArticleView.tsx",
+      "sha256": "963d270cf24781b6df84dc180f299b436f7926160fc6db42bbdbe5e98fff1c92",
+      "bytes": 20188
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/components/AuthorSocials.tsx",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/components/AuthorSocials.tsx",
+      "sha256": "247f71af390b78619ed45ceb2993e9ac896a50290f8793992a1307d49359e514",
+      "bytes": 3574
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/components/AuthorView.tsx",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/components/AuthorView.tsx",
+      "sha256": "548517a39eb73e764db575756317e2303a1a6acb420acde5914f2196cee16875",
+      "bytes": 5685
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/components/ConditionsTable.tsx",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/components/ConditionsTable.tsx",
+      "sha256": "1f0bd7672d8a12f496a2c8143a4a9ca83622254156d87da1895637eccf174d3c",
+      "bytes": 7209
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/components/ContentAccordions.tsx",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/components/ContentAccordions.tsx",
+      "sha256": "0c7cabf68aca5f40c31f88fbdc0f1c7e179ea66c75246346da88a8abf8d60dfc",
+      "bytes": 1340
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/components/DashboardNav.tsx",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/components/DashboardNav.tsx",
+      "sha256": "28ff68c86009e9b756ac796ca53aa9b26f1f089083d89432ffbf901344e3b4fd",
+      "bytes": 1706
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/components/FavoriteStudyButton.tsx",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/components/FavoriteStudyButton.tsx",
+      "sha256": "d011fe9bd5b30d682f0d3ebd724fe05a1d6b9729994a8bb8f8ab805b64fb7954",
+      "bytes": 1776
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/components/Feedback.tsx",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/components/Feedback.tsx",
+      "sha256": "083d7bcb02214075b2f04a06ac1193c1c281fc79a8c7481c30fc59e26f3f93db",
+      "bytes": 3827
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/components/FollowButton.tsx",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/components/FollowButton.tsx",
+      "sha256": "4b756b922137a9a66b0e5df87b46d702a0ac36949b3d3dca304159e272bc92cc",
+      "bytes": 1473
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/components/HeaderSearch.tsx",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/components/HeaderSearch.tsx",
+      "sha256": "7ddb3687cccb56c17c237c762967dfbcc1b2afc80c9e74e603637ef8d7e00165",
+      "bytes": 702
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/components/Highlights.tsx",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/components/Highlights.tsx",
+      "sha256": "40e7edb65310ec5a0fde1f2ba5e160d5e7049895ee4f44e1a20df3014e86c4a9",
+      "bytes": 1527
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/components/JsonLd.tsx",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/components/JsonLd.tsx",
+      "sha256": "ee73041dc8ea6e20a7f0d9b0bd1fe1ef3ed1d2c2cdc0e326d7ddb9806bac7716",
+      "bytes": 338
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/components/MicrobiomeSignature.tsx",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/components/MicrobiomeSignature.tsx",
+      "sha256": "23f699af9a4de3e62134f87e6409d638b88a8d68d693f2a86e93bd7ca014898b",
+      "bytes": 14752
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/components/OrcidIcon.tsx",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/components/OrcidIcon.tsx",
+      "sha256": "091a542b4b8c9764b72394da9ebd79f6774d7432872aeab4635e2937ef4c8694",
+      "bytes": 1378
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/components/PageSnapshot.tsx",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/components/PageSnapshot.tsx",
+      "sha256": "b22e5c9193e058a767b647a3194ad594266eb32fbb72b9b024dbb0abff4d7ee9",
+      "bytes": 4050
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/components/ResearchFeedView.tsx",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/components/ResearchFeedView.tsx",
+      "sha256": "ad0b7df7d700b0848d170c9a126f2ab08032ca5f919914f088c392271d5c6abd",
+      "bytes": 10864
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/components/RightRail.tsx",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/components/RightRail.tsx",
+      "sha256": "c063263f87e35f0a15ce2a99e555a027c507232a6e32e1bbd072d76c978297ad",
+      "bytes": 1996
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/components/ScrollToTop.tsx",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/components/ScrollToTop.tsx",
+      "sha256": "52baea7c7568193ed030941304f3f5a8153f378e2c5bde89f84d6caecfde5123",
+      "bytes": 1597
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/components/SearchAutocomplete.tsx",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/components/SearchAutocomplete.tsx",
+      "sha256": "f318a9df6b6fc5ed1b59cc201ef30b688b7ce38329f73229be826d68c7640fa5",
+      "bytes": 3867
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/components/SectionNav.tsx",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/components/SectionNav.tsx",
+      "sha256": "002edec9dd44e65a41026c7e83206261a38cbe4c04ea2584e9e8921a6f831505",
+      "bytes": 3989
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/components/ShareButton.tsx",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/components/ShareButton.tsx",
+      "sha256": "d33fc13da4d30fd1f7d76c316b7eee132070ff7d2c2f8760ad8bfa9f68776633",
+      "bytes": 8542
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/components/SiteFooter.tsx",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/components/SiteFooter.tsx",
+      "sha256": "6ab2152caae74566b5b0202307283420869618884c775853598d4b7db3301daf",
+      "bytes": 1984
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/components/SiteHeader.tsx",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/components/SiteHeader.tsx",
+      "sha256": "a1585e560870f9a181fb98c9a6d07103b7d96069d589b4130091e081537c1619",
+      "bytes": 1026
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/components/StudyActions.tsx",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/components/StudyActions.tsx",
+      "sha256": "96a4f23b09dfd4e208a5c0b253517517196f94e13f1a3d94199605eeb0d3a15c",
+      "bytes": 2395
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/components/StudyDrawer.tsx",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/components/StudyDrawer.tsx",
+      "sha256": "a676b571b507c55a528b9606e0cdae07f47c8e34dd3573f4a57d339fe336ffe8",
+      "bytes": 4739
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/components/Tooltips.tsx",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/components/Tooltips.tsx",
+      "sha256": "dfab7e04b63255fdfedb228c7d64b41661ca90eba80795ede68ae315e1d901ce",
+      "bytes": 3219
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/components/WaitlistForm.tsx",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/components/WaitlistForm.tsx",
+      "sha256": "c2ccb05d563613d390c1e22eb331a63481d97282404dfa7134b5cb0935acd16d",
+      "bytes": 7913
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/components/WaitlistModal.tsx",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/components/WaitlistModal.tsx",
+      "sha256": "81bb26d68f6844ce88b6b200abdfbfd0cf1285478d3426f85f3c0b77b3961a02",
+      "bytes": 1965
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/components/WpDiagram.tsx",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/components/WpDiagram.tsx",
+      "sha256": "251198ed86a72cb4bc8e5985ea5b0670d8339cdefea3661df237e611e09cb3ce",
+      "bytes": 4861
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/components/WpInteractivity.tsx",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/components/WpInteractivity.tsx",
+      "sha256": "4c7f7a5c663220374ef43c02b18641f667e844592efd705769bf4582b320f899",
+      "bytes": 7400
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/components/WpRender.tsx",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/components/WpRender.tsx",
+      "sha256": "d2eae71d80464fe0f2b56257b7c538d4cc13550422512d88aa686d16ca2a4ed1",
+      "bytes": 14191
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/components/home/HomePage.module.css",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/components/home/HomePage.module.css",
+      "sha256": "c34d5dd71e84a137cb92215b2cba5fb73163d34821c48773a9bda73ec63fe0bf",
+      "bytes": 11297
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/components/home/HomePage.tsx",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/components/home/HomePage.tsx",
+      "sha256": "66815c8a13f4188f028f69237b761425375580967dadcc2f027c5b5df202f849",
+      "bytes": 8818
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/lib/canonicalSlug.ts",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/lib/canonicalSlug.ts",
+      "sha256": "f1703163570a70a6bb0bfa1c4192cafee54afb68d232a3222d4dee45bead0e9b",
+      "bytes": 607
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/lib/classifications.ts",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/lib/classifications.ts",
+      "sha256": "66ce21932b9a479de79b24c47f989819f6b3a3d7d88e52de904c6c67ead5a6b9",
+      "bytes": 1388
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/lib/connections.ts",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/lib/connections.ts",
+      "sha256": "d36c773cb2498a6eb28f438687fc38d3d17b53d1623c2348960fe8e2a969367e",
+      "bytes": 11563
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/lib/content.ts",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/lib/content.ts",
+      "sha256": "3ee6fed3cc641bd3ae6ce5101a1e4ac7c2ac6ef84bf820aa788cfc138c923952",
+      "bytes": 8735
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/lib/faqs.ts",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/lib/faqs.ts",
+      "sha256": "5bb673751797ab3c43a419bf7151022797ba2215ff1e4b3400e7612de00382e1",
+      "bytes": 2948
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/lib/imageClassify.ts",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/lib/imageClassify.ts",
+      "sha256": "2347882e77ec77064c80652a05b811b85e4a45281f54b384a11c9a44b44682a9",
+      "bytes": 1959
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/lib/imageMeta.ts",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/lib/imageMeta.ts",
+      "sha256": "57beb25a35f607572133cc88934335f9ba9efe20a9b59b65c2824ab23e968b0f",
+      "bytes": 1246
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/lib/linkTargets.ts",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/lib/linkTargets.ts",
+      "sha256": "868c5d5e10a275e1ccc0588abc133dc787580e73a908a5a4b84252fa6203f4f4",
+      "bytes": 1158
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/lib/researchFeedReveal.ts",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/lib/researchFeedReveal.ts",
+      "sha256": "4ddd9bb81ada0bb0b4638f75e491b4e66e2f818fe911d2cbb695d2ae8661fa98",
+      "bytes": 7929
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/lib/seo.ts",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/lib/seo.ts",
+      "sha256": "50bc03dab384ebb8a7c73ee418e138bd679c395adee38a6136f7de5b247c8882",
+      "bytes": 8582
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/lib/seoIndexing.ts",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/lib/seoIndexing.ts",
+      "sha256": "6e82362d789d5531211b0060c5669b72da10d18a0b27c3804f873f6cf6a8ce31",
+      "bytes": 5001
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/lib/slugs.ts",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/lib/slugs.ts",
+      "sha256": "b39928d79a370cc2cbb536fe3a6e8b56b3d61712c28c998b4797ab0146e10a24",
+      "bytes": 2443
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/lib/supabase/client.ts",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/lib/supabase/client.ts",
+      "sha256": "23e588c4b4d5dd8c7c2ab5ab599a2494664cf9576bddcdcd6092f28686f95558",
+      "bytes": 291
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/lib/supabase/server.ts",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/lib/supabase/server.ts",
+      "sha256": "7b2e52cb3f1fd04ca5b891306c570e6270ed68e580e1e149e04b70d8fdfdd9c9",
+      "bytes": 1273
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/lib/supabase.ts",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/lib/supabase.ts",
+      "sha256": "b39dac229c2e2c32c2707696dd79b37c7049cb32ff360e3338745f53ba806ce8",
+      "bytes": 356
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/lib/textRules.ts",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/lib/textRules.ts",
+      "sha256": "24ed06df17bc4f9a9ffe31d7892170b806b8adda41a1339244d7cd8f67f7a923",
+      "bytes": 8586
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/styles/theme-wp.css",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/styles/theme-wp.css",
+      "sha256": "d9cc2c4cc1689dcb5e5fab37deb7680b2277be48bb82278b6e3d9c1036e50a70",
+      "bytes": 117339
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/theme/authorsBios.ts",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/theme/authorsBios.ts",
+      "sha256": "927b04acb4cfeea5090909e32478730c88f6fced064ce1d9dd6bb51e1f38256e",
+      "bytes": 5411
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/theme/homeMain.ts",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/theme/homeMain.ts",
+      "sha256": "560366945aeeb26b512afad2cc129074704664e1e85e6527de377f5f360a243e",
+      "bytes": 6547
+    },
+    {
+      "path": "references/theme/microbiome-medicine/src/theme/themeHtml.ts",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/theme/themeHtml.ts",
+      "sha256": "f9e888df1a9233afb05d64c1ce5bb6fda1bbe3fe5a732699757a04b0766ccd29",
+      "bytes": 55101
+    },
+    {
+      "path": "references/theme/microbiome-medicine/tsconfig.json",
+      "sourceRelativePath": "references/theme/microbiome-medicine/tsconfig.json",
+      "sha256": "17414c943d9bd95448eeeb95caac925d689707b6c869fa399ce0cbe36f16e4ab",
+      "bytes": 690
+    },
+    {
+      "path": "references/theme/pepsanon/app/brand.css",
+      "sourceRelativePath": "references/theme/pepsanon/app/brand.css",
+      "sha256": "efaf119bf993d38f304bdd6b80ca307a5c5e2c71d5227ee84d0fd72ef4ddd41c",
+      "bytes": 4927
+    },
+    {
+      "path": "references/theme/pepsanon/components/peptide/home.module.css",
+      "sourceRelativePath": "references/theme/pepsanon/components/peptide/home.module.css",
+      "sha256": "6b2c805a46aa921a9a0d4bb63e749d4b66d6a778b2d1c735747b9d2436519a14",
+      "bytes": 16455
+    },
+    {
+      "path": "references/theme/pepsanon/components/peptide/home.tsx",
+      "sourceRelativePath": "references/theme/pepsanon/components/peptide/home.tsx",
+      "sha256": "7cbeda8d7c032c814d0ba129aa8a5c5679fdbe12857aa5f67fc4aec800af83a3",
+      "bytes": 6597
+    },
+    {
+      "path": "references/theme/pepsanon/lib/brand.ts",
+      "sourceRelativePath": "references/theme/pepsanon/lib/brand.ts",
+      "sha256": "34ea0b770860b6281de8f1d992860af48dcfd5bd4d4903866246cd3d86b3ca33",
+      "bytes": 646
+    },
+    {
+      "path": "references/theme/releases/README.md",
+      "sourceRelativePath": "references/theme/releases/README.md",
+      "sha256": "632fda5f0babf6057ac2b04180386802eb0cb44f8d5808505830ed7b062d4701",
+      "bytes": 6639
+    },
+    {
+      "path": "references/theme/releases/consumer-guide-theme-0.1.0.zip",
+      "sourceRelativePath": "references/theme/releases/consumer-guide-theme-0.1.0.zip",
+      "sha256": "28523c617a86cf5316b1f5b683931f6d846351f51248d35f7e3796b9f82d3cb9",
+      "bytes": 5504963
+    },
+    {
+      "path": "references/theme/releases/consumer-guide-theme-0.1.1.zip",
+      "sourceRelativePath": "references/theme/releases/consumer-guide-theme-0.1.1.zip",
+      "sha256": "99a59a1de0b8e4b9e676fcc7684eb4b52f9941672763325438617627449c9da5",
+      "bytes": 1193353
+    },
+    {
+      "path": "references/theme/releases/manifest.json",
+      "sourceRelativePath": "references/theme/releases/manifest.json",
+      "sha256": "005b38be9a1e4f141f29d9121f4c38e1ddeb6dd6d09b4214b1c6468c8dc89168",
+      "bytes": 6957
+    },
+    {
+      "path": "references/theme/releases/one-match-theme-0.2.0.zip",
+      "sourceRelativePath": "references/theme/releases/one-match-theme-0.2.0.zip",
+      "sha256": "f082dde0f1701e472342c2453e62cfe4e8db53234f2153071bc2bca5f7a53ef8",
+      "bytes": 1065325
+    },
+    {
+      "path": "references/theme/releases/one-match-theme-0.2.1.zip",
+      "sourceRelativePath": "references/theme/releases/one-match-theme-0.2.1.zip",
+      "sha256": "b8417536a8540db9647ad5d7afe9710d7dc8ad4a2934b3df4d962e167b6ff06e",
+      "bytes": 594824
+    },
+    {
+      "path": "references/theme/releases/one-match-theme-0.2.2.zip",
+      "sourceRelativePath": "references/theme/releases/one-match-theme-0.2.2.zip",
+      "sha256": "2ca4a554c9dd642cc6a27bd6f059a88ffce67ca811fa26d82e009e655e54b363",
+      "bytes": 609784
+    },
+    {
+      "path": "references/theme/releases/one-match-theme-0.2.3.zip",
+      "sourceRelativePath": "references/theme/releases/one-match-theme-0.2.3.zip",
+      "sha256": "cec88d849ab213276e0991111c4c91fc1c1280daaaa6075786b200cdcc7df90f",
+      "bytes": 649830
+    },
+    {
+      "path": "references/theme/releases/one-match-theme-0.2.6-evidence-table.zip",
+      "sourceRelativePath": "references/theme/releases/one-match-theme-0.2.6-evidence-table.zip",
+      "sha256": "832c6563a0667b3d27a6a5f37b2c97e37a46b598f0c0870bcbd4d2b69c811c04",
+      "bytes": 53908
+    },
+    {
+      "path": "references/topic-scope-and-directories.md",
+      "sourceRelativePath": "references/topic-scope-and-directories.md",
+      "sha256": "a746735dde44a4c46ed634a592bb4bab492d648ece528317c238cdb6e12d1794",
+      "bytes": 7528
+    }
+  ],
+  "excludedUpstreamPaths": [
+    "sync-state.json",
+    "source-notes/",
+    "SOURCE-AUDIT.md",
+    "RULE-UPDATE-LOG.md",
+    "START-HERE.md",
+    "handoffs/"
+  ],
+  "exclusionReason": "Preserve executable instructions and source reference dependency closure without cross-project transcript checkpoints, private task histories, or unrelated handoff/audit material. This is a scoped snapshot, not the full upstream export.",
+  "historicalLinks": "Byte-preserved master and skill may refer to upstream source notes or local installation paths. These are provenance/maintenance pointers, not dependencies supplied by this repository. Reference implementation files are examples; their old instructions never override project rules or the current master.",
+  "archiveInspection": {
+    "scope": "ZIP member inventory and CRC checks; common private-key, GitHub-token, OpenAI/Stripe secret and AWS-access-key pattern scan across reference files and archive members. This is a bounded check, not a comprehensive security audit.",
+    "result": "All ZIP CRC checks passed; no credential-pattern matches or .env/database/research-paper-corpus/node_modules/.git members found in the inspected inventory.",
+    "retainedHistoricalArtifacts": "Versioned archives are immutable source provenance. Full-theme acceptance, scientific approval and guide release must be assessed separately; generated teaching drafts are not consumer products.",
+    "archives": [
+      {
+        "path": "references/theme/releases/consumer-guide-theme-0.1.0.zip",
+        "members": 67,
+        "crcCheck": null,
+        "pdfMembers": [
+          "consumer-guide-theme-0.1.0/proof/harbors/synthetic-harbors-0.1-fixture-full.pdf",
+          "consumer-guide-theme-0.1.0/proof/harbors/synthetic-harbors-0.1-fixture-preview.pdf",
+          "consumer-guide-theme-0.1.0/proof/harbors/synthetic-harbors-0.1-fixture-summary.pdf",
+          "consumer-guide-theme-0.1.0/proof/reading/evidence-reading-guide-0.3-draft-full.pdf",
+          "consumer-guide-theme-0.1.0/proof/reading/evidence-reading-guide-0.3-draft-preview.pdf",
+          "consumer-guide-theme-0.1.0/proof/reading/evidence-reading-guide-0.3-draft-summary.pdf",
+          "consumer-guide-theme-0.1.0/proof/signals/synthetic-signals-0.1-fixture-full.pdf",
+          "consumer-guide-theme-0.1.0/proof/signals/synthetic-signals-0.1-fixture-preview.pdf",
+          "consumer-guide-theme-0.1.0/proof/signals/synthetic-signals-0.1-fixture-summary.pdf"
+        ],
+        "purpose": "Pinned implementation provenance and reusable code; any PDF members are documented original draft or synthetic renderer proof outputs, not research-paper fulltext."
+      },
+      {
+        "path": "references/theme/releases/consumer-guide-theme-0.1.1.zip",
+        "members": 38,
+        "crcCheck": null,
+        "pdfMembers": [
+          "consumer-guide-theme-0.1.1/proof/harbors/synthetic-harbors-0.1-fixture-full.pdf",
+          "consumer-guide-theme-0.1.1/proof/harbors/synthetic-harbors-0.1-fixture-preview.pdf",
+          "consumer-guide-theme-0.1.1/proof/harbors/synthetic-harbors-0.1-fixture-summary.pdf",
+          "consumer-guide-theme-0.1.1/proof/reading/evidence-reading-guide-0.4-draft-full.pdf",
+          "consumer-guide-theme-0.1.1/proof/reading/evidence-reading-guide-0.4-draft-preview.pdf",
+          "consumer-guide-theme-0.1.1/proof/reading/evidence-reading-guide-0.4-draft-summary.pdf",
+          "consumer-guide-theme-0.1.1/proof/signals/synthetic-signals-0.1-fixture-full.pdf",
+          "consumer-guide-theme-0.1.1/proof/signals/synthetic-signals-0.1-fixture-preview.pdf",
+          "consumer-guide-theme-0.1.1/proof/signals/synthetic-signals-0.1-fixture-summary.pdf"
+        ],
+        "purpose": "Pinned implementation provenance and reusable code; any PDF members are documented original draft or synthetic renderer proof outputs, not research-paper fulltext."
+      },
+      {
+        "path": "references/theme/releases/one-match-theme-0.2.0.zip",
+        "members": 100,
+        "crcCheck": null,
+        "pdfMembers": [],
+        "purpose": "Pinned implementation provenance and reusable code; any PDF members are documented original draft or synthetic renderer proof outputs, not research-paper fulltext."
+      },
+      {
+        "path": "references/theme/releases/one-match-theme-0.2.1.zip",
+        "members": 95,
+        "crcCheck": null,
+        "pdfMembers": [],
+        "purpose": "Pinned implementation provenance and reusable code; any PDF members are documented original draft or synthetic renderer proof outputs, not research-paper fulltext."
+      },
+      {
+        "path": "references/theme/releases/one-match-theme-0.2.2.zip",
+        "members": 103,
+        "crcCheck": null,
+        "pdfMembers": [],
+        "purpose": "Pinned implementation provenance and reusable code; any PDF members are documented original draft or synthetic renderer proof outputs, not research-paper fulltext."
+      },
+      {
+        "path": "references/theme/releases/one-match-theme-0.2.3.zip",
+        "members": 118,
+        "crcCheck": null,
+        "pdfMembers": [],
+        "purpose": "Pinned implementation provenance and reusable code; any PDF members are documented original draft or synthetic renderer proof outputs, not research-paper fulltext."
+      },
+      {
+        "path": "references/theme/releases/one-match-theme-0.2.6-evidence-table.zip",
+        "members": 16,
+        "crcCheck": null,
+        "pdfMembers": [],
+        "purpose": "Pinned implementation provenance and reusable code; any PDF members are documented original draft or synthetic renderer proof outputs, not research-paper fulltext."
+      }
+    ]
+  }
+}

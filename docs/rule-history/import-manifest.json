@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "importDate": "2026-10-11",
+  "purpose": "Preserved project-specific pilot history; append current findings separately without rewriting these source records.",
+  "frozenBaseline": {
+    "path": "../one-match-rule-baseline.md",
+    "record": "../baseline-record.json",
+    "version": "1.1",
+    "sha256": "01896e3c254f37483c226da52da0ef239b03eb7c762e5171675ae6dc302150d2"
+  },
+  "files": [
+    {
+      "path": "rule-gap-log.json",
+      "sourceRelativePath": "one-match-drug-repurposing/outputs/governance/rule-gap-log.json",
+      "sha256": "7e50ecb15b6d1fdc8859d8292a34364e511e28af15280e0699c1f43b4ed6f006",
+      "bytes": 34082
+    },
+    {
+      "path": "owner-interventions.json",
+      "sourceRelativePath": "one-match-drug-repurposing/outputs/governance/owner-interventions.json",
+      "sha256": "d9fece962370a467e840803635d8edd255d09d1d2403c52f764c650e954647c3",
+      "bytes": 4351
+    },
+    {
+      "path": "baseline-versus-revised-rule.json",
+      "sourceRelativePath": "one-match-drug-repurposing/outputs/governance/baseline-versus-revised-rule.json",
+      "sha256": "a12c20f730973432ab9bad96b2688783987860d45d86bc86c717b05b96a9ccf2",
+      "bytes": 1430
+    },
+    {
+      "path": "baseline-versus-revised-rule.patch",
+      "sourceRelativePath": "one-match-drug-repurposing/outputs/governance/baseline-versus-revised-rule.patch",
+      "sha256": "7f062d968e0e986eb43bcf9d55b0f0245276287cd6342e9505be15993f4719b6",
+      "bytes": 3277
+    },
+    {
+      "path": "baseline-versus-proposed-rule.json",
+      "sourceRelativePath": "one-match-drug-repurposing/outputs/governance/baseline-versus-proposed-rule.json",
+      "sha256": "bbaa928f0ac70a767362489cc55fcd1731168bff19e058afd64d9b68eb9fdd25",
+      "bytes": 1077
+    },
+    {
+      "path": "canonical-rule-proposal.patch",
+      "sourceRelativePath": "one-match-drug-repurposing/outputs/governance/canonical-rule-proposal.patch",
+      "sha256": "876026f137d511137fac072b996c070e6cb6c66c5da2c9c8471f2b21756d0b13",
+      "bytes": 3123
+    },
+    {
+      "path": "rule-update-log-proposal.txt",
+      "sourceRelativePath": "one-match-drug-repurposing/outputs/governance/rule-update-log-proposal.txt",
+      "sha256": "423bda806bb9bc36601cbe85dd5f7b8dbe482f63c3d582f8f59db67be9887527",
+      "bytes": 1679
+    },
+    {
+      "path": "rule-sync-report.json",
+      "sourceRelativePath": "one-match-drug-repurposing/outputs/governance/rule-sync-report.json",
+      "sha256": "36e652f76e43b2cff7fe5e76dbe453f57207bcacf91b2eb8efcd362616b80d3b",
+      "bytes": 541
+    },
+    {
+      "path": "reader-rule-correction.md",
+      "sourceRelativePath": "Drug Repurposing/reader-rule-correction.md",
+      "sha256": "aa5bd7ee24fc92cb85f6dd2c24a83bde034a13319a12c92ebec67b32ee1c9023",
+      "bytes": 12456
+    }
+  ],
+  "scopeNotes": [
+    "The baseline-versus-revised artifacts and rule-sync report describe the historical v1.1 to v1.2 change, not the current v1.28 snapshot.",
+    "Historical proposed, implemented, released and HOLD labels are retained exactly; this import does not assert present release/scientific acceptance.",
+    "The reader-rule-correction records an explicit Second Look instruction and a proposed reusable wording reconciliation. Exact proposed wording is absent from imported v1.28; current project rules must retain the site requirement while global reconciliation remains separately tracked.",
+    "Original records contain project-specific task IDs and historical local artifact paths. Those identify provenance and may not resolve on a collaborator machine. No raw research corpus or unrelated task history was imported."
+  ]
+}

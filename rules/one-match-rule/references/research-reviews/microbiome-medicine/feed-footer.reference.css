@@ -1,0 +1,17 @@
+/* Research-feed card action buttons: the theme's base .btn is a filled red button;
+   inside the feed footer they should read as quiet text+icon actions on the grey
+   pill (red only on hover), matching the gold-standard cards. */
+.research-feed__footer .btn {
+  background: transparent !important;
+  border: none !important;
+  min-height: auto !important;
+  margin-top: 0 !important;
+  padding: 0.25rem 0.6rem !important;
+}
+.research-feed__footer .btn:hover { background: var(--color-primary) !important; color: #fff !important; }
+
+/* Research-feed card TITLE is a plain <div class="research-feed__title"> (NOT a link),
+   matching the canonical endometriosis card: it inherits the dark body text color, and the
+   header-wrap (.accordion__header) toggles the accordion to reveal the summary inline. The
+   only navigation to the summary page is the footer "Open" button. Do NOT style it as a
+   colored link and do NOT make it an <a>. */

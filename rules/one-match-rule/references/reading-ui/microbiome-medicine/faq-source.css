@@ -1,0 +1,23 @@
+/* FAQ accordion (brand red) — chevron-circle items + "Quick answer:" + left border. */
+.rgbc-faq-block { margin: 1.25rem 0 1.5rem; }
+.rgbc-faq-item { padding: 1.1rem 0; }
+.rgbc-faq-item summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 0.85rem; color: var(--color-primary); font-family: var(--font-serif); font-size: 1.5rem; font-weight: 500; line-height: 1.3; }
+.rgbc-faq-item summary::-webkit-details-marker { display: none; }
+/* Icon matches the canonical research-feed .accordion__icon exactly. */
+.rgbc-faq-icon {
+  flex: 0 0 auto; width: 24px; height: 24px; position: relative; display: inline-block;
+  padding: 5px; border: 1px solid var(--color-primary); border-radius: 9999px;
+}
+.rgbc-faq-icon::before, .rgbc-faq-icon::after {
+  content: ""; display: block; position: absolute; top: 0; left: 0; right: 0; bottom: 0; margin: auto;
+  width: 12px; height: 1.5px; background-color: var(--color-primary); transition: 0.35s;
+}
+.rgbc-faq-icon::before { transform: translatey(-50%); }
+.rgbc-faq-icon::after { transform: translatey(-50%) rotate(90deg); }
+.rgbc-faq-item[open] .rgbc-faq-icon::before { transform: translatey(-50%) rotate(-90deg); opacity: 0; }
+.rgbc-faq-item[open] .rgbc-faq-icon::after { transform: translatey(-50%) rotate(0); }
+/* Center the +/− glyph inside the research-feed accordion toggle circle (it defaulted to
+   grid top-left; this matches the centered FAQ icon). !important beats the inline captured CSS. */
+.research-feed__toggle-icon { place-items: center !important; place-content: center !important; line-height: 1 !important; }
+.rgbc-faq-a { margin: 0.85rem 0 0 2.6rem; padding-left: 1.1rem; border-left: 3px solid #e3b9b9; color: #333; line-height: 1.65; }
+.rgbc-faq-a strong { display: block; color: var(--color-primary); margin-bottom: 0.35rem; }

@@ -1,0 +1,6 @@
+/* Cosmetic account-wall on gated summaries (text stays in DOM for SEO; JS adds the lock for logged-out visitors). */
+[data-gated].rgbc-gated--locked { position: relative; overflow: hidden; max-height: 70vh; }
+[data-gated].rgbc-gated--locked > *:not(.rgbc-gate__wall) { filter: blur(6px); pointer-events: none; user-select: none; }
+.rgbc-gate__wall { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background: linear-gradient(180deg, rgba(255,255,255,.45) 0%, rgba(255,255,255,.92) 55%); z-index: 5; }
+.rgbc-gate__wall-inner { text-align: center; max-width: 440px; padding: 1.5rem; }
+.rgbc-gate__wall-title { font-family: var(--font-serif, Lora, serif); font-size: 1.3rem; line-height: 1.35; color: var(--color-primary); font-weight: 500; margin-bottom: 1.1rem; }

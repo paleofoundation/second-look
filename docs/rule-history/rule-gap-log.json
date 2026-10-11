@@ -1,0 +1,565 @@
+{
+  "schemaVersion": 1,
+  "baselineVersion": "1.1",
+  "baselineSha256": "01896e3c254f37483c226da52da0ef239b03eb7c762e5171675ae6dc302150d2",
+  "policy": "Append evidence; classify ordinary unfinished work as backlog, not a rule defect. A request can be recorded before code is shipped. Mission Control alone accepts or releases.",
+  "entries": [
+    {
+      "id": "GAP-001",
+      "baselineClause": "§15 heading and first paragraph limit feedback to PepsAnon; no pilot-baseline or observation protocol",
+      "observedFailureOrAmbiguity": "The owner asked to use a separate drug-repurposing build to discover rule omissions. Baseline has maintenance rules but no explicit instruction to freeze the tested rule, log extra instructions, or feed confirmed pilot findings into canonical maintenance. This is a confirmed requested extension, not an observed site failure.",
+      "evidence": [
+        {
+          "type": "exact_user_message",
+          "taskId": "01a11a00-93aa-7bc1-975f-35668cc5e282",
+          "turnId": "01a11a21-90a5-7e91-86a7-c8943199b858",
+          "text": "Are you able to start a new project for the one match rule, make a examine site for drug repurposing. This will help us refine this, so that we know what the rule is still missing."
+        },
+        {
+          "type": "delegated_user_prompt",
+          "taskId": "01a11a22-f81b-7682-b4a9-64ed1859b295",
+          "text": "At the start, copy that master into this project’s docs/one-match-rule-baseline.md and record its version and SHA-256. Use that frozen baseline for the pilot and explicitly log any later rule revisions. Maintain a durable rule-gap log… This feedback path explicitly includes this drug-repurposing pilot."
+        }
+      ],
+      "classification": "missing rule",
+      "correction": "Extend §15 to explicitly include authorized evidence-site pilots and require frozen baseline, classified observed gap log, extra instruction provenance, minimal confirmed reusable corrections, and an auditable baseline-versus-revised comparison. Preserve no-op, concurrency and no duplicate updater requirements.",
+      "states": {
+        "requested": "2026-10-08",
+        "proposed": "reviewable patch prepared by rule audit worker",
+        "implemented": "Canonical v1.2, installed master and portable ZIP synchronized by integrator after eight concurrent-file hash checks; independent master equality confirmed.",
+        "released": "v1.2 local rule package released; uploaded ChatGPT copy pending supported destination. This does not release the site or health products."
+      },
+      "retest": {
+        "status": "PASS for rule synchronization scope",
+        "evidence": [
+          "rule-sync-report.json",
+          "baseline-versus-revised-rule.json",
+          "baseline-versus-revised-rule.patch"
+        ],
+        "verifiedMasterSha256": "6e530618fd3039c87392005c2876bd16208afcae066d33043b5b48628355c859",
+        "baselineStillFrozen": true
+      }
+    },
+    {
+      "id": "OBS-002",
+      "baselineClause": "§14 portable artifact handoff and §13 real verification; PDF skill environment-specific runtime",
+      "observedFailureOrAmbiguity": "Bundled PDF renderer could not use default fontconfig cache; repeated errors prevented first render.",
+      "evidence": [
+        "work/audit/fonts.conf",
+        "work/audit/font-cache",
+        "governance-validation.json:recoveredToolIssues"
+      ],
+      "classification": "host/tool limitation",
+      "correction": "Use project-local font configuration and writable cache; terminate failed render processes. No rule patch needed.",
+      "states": {
+        "requested": "PDF assets required by pilot business work",
+        "proposed": "local runtime configuration",
+        "implemented": "local fontconfig and embedded heading font",
+        "released": "private review PDFs only"
+      },
+      "retest": {
+        "status": "PASS",
+        "evidence": "All four final Poppler renders exited 0; all 14 pages inspected."
+      }
+    },
+    {
+      "id": "AUDIT-IR-001",
+      "baselineClause": "§8 citations; §5 claim source locators",
+      "observedFailureOrAmbiguity": "Paragraph-wide source arrays are applied to every sentence, including project-status prose, without an exact sentence/claim source mapping. This makes the displayed citations claim support that the paired source does not supply.",
+      "evidence": {
+        "file": "site/components/article.tsx",
+        "symbol": "CitedProse",
+        "example": "G-MET-PREVENT limits sentence “The findings have not received ... human scientific approval in this project” inherits COVID-OUT and ACTIV-6 citations even though those papers cannot establish Second Look review state. Mixed two-source comparison paragraphs cite both papers after every statement."
+      },
+      "classification": "implementation defect",
+      "correction": "Render explicit sentence/claim blocks with source IDs and locators. Keep internal review/status and original editorial instructions uncited or explicitly sourced to project records. Validate that each cited source supports the sentence and that first-appearance numbering matches actual rendered order.",
+      "states": {
+        "requested": "Baseline requirement already existed",
+        "proposed": "Implementation correction",
+        "implemented": "Implemented and retested",
+        "released": "Owner-private site v2; scientific/public approval remains HOLD"
+      },
+      "retest": {
+        "status": "PASS for private technical scope",
+        "at": "2026-10-08T06:47:02.353789+00:00",
+        "evidence": "Explicit guide/FAQ/glossary sentence maps and page source union integrated; independent audit resolved source mapping implementation. Exact human clinical claim approval remains pending.",
+        "sourceCommit": "4e41803cc8f0fe26f034f4b3875f38fe92e0bbd7"
+      },
+      "ruleCorrection": "None; ordinary implementation or release backlog, not a reusable rule omission.",
+      "retestHistory": [
+        {
+          "status": "PARTIALLY FIXED; FAQ MAPPING PENDING",
+          "at": "2026-10-08T06:32:20.582912+00:00",
+          "evidence": "Code readback: main sections consume section.sentences and original-status sentences have empty arrays. FAQs still call CitedProse without mapped blocks, giving every FAQ sentence all sources. Confirmed examples: G-NMV-TREAT prescription policy inherits STOP-PASC; G-LONGCOVID project access/review policy inherits Korea/RECOVER; G-COMPARE corpus absence inherits component studies. Exact clinical claim audit remains pending."
+        }
+      ]
+    },
+    {
+      "id": "AUDIT-IR-002",
+      "baselineClause": "§8 numeric fidelity; §13 regression checks",
+      "observedFailureOrAmbiguity": "Initial punctuation splitter placed citations within decimal values. Example 6.3% split after 6.",
+      "evidence": {
+        "initialSymbol": "CitedProse text.match(/[^.!?]+[.!?]+.../)",
+        "initialFile": "site/components/article.tsx",
+        "affected": "COVID-OUT Results 6.3%,10.4%,0.59,0.39,0.89; other numerical results",
+        "currentChange": "Root replaced regex with Intl.Segmenter during audit."
+      },
+      "classification": "implementation defect",
+      "correction": "Keep decimals intact; add meaningful rendered regression for decimal result and citation placement. Prefer exact sentence blocks over runtime sentence inference.",
+      "states": {
+        "requested": "Baseline requirement already existed",
+        "proposed": "Implementation correction",
+        "implemented": "Implemented and retested",
+        "released": "Owner-private site v2; scientific/public approval remains HOLD"
+      },
+      "retest": {
+        "status": "PASS for private technical scope",
+        "at": "2026-10-08T06:47:02.353789+00:00",
+        "evidence": "Rendered decimals and explicit sentence maps checked.",
+        "sourceCommit": "4e41803cc8f0fe26f034f4b3875f38fe92e0bbd7"
+      },
+      "ruleCorrection": "None; ordinary implementation or release backlog, not a reusable rule omission.",
+      "retestHistory": [
+        {
+          "status": "IMPLEMENTED; RENDER RETEST PENDING",
+          "evidence": "Intl.Segmenter read back; original decimal-splitting regex absent."
+        }
+      ]
+    },
+    {
+      "id": "AUDIT-IR-003",
+      "baselineClause": "§6 stable links; §12 genuine routes; §13 route tests",
+      "observedFailureOrAmbiguity": "Several advertised routes and download links had no route/data/file target in the inspected snapshot.",
+      "evidence": {
+        "snapshotTargets": [
+          "/conditions/long-covid",
+          "/glossary/off-label",
+          "/glossary/randomization",
+          "/glossary/absolute-risk",
+          "/guides/evidence-reading",
+          "/downloads/second-look-worksheet.pdf",
+          "/downloads/second-look-guide-preview.pdf"
+        ],
+        "files": [
+          "site/app/page.tsx",
+          "site/components/site-header.tsx",
+          "site/components/article.tsx",
+          "site/app/[...path]/page.tsx"
+        ],
+        "method": "Derived known dispatcher routes plus guide/source/term slugs; checked literal targets and site/public paths."
+      },
+      "classification": "implementation defect",
+      "correction": "Create the promised routes from supported data, replace links with actual canonical targets, and copy only intended private-preview downloadable artifacts. Run crawler against built server. Do not invent drug efficacy to fill a page.",
+      "states": {
+        "requested": "Baseline requirement already existed",
+        "proposed": "Implementation correction",
+        "implemented": "Implemented and retested",
+        "released": "Owner-private site v2; scientific/public approval remains HOLD"
+      },
+      "retest": {
+        "status": "PASS for private technical scope",
+        "at": "2026-10-08T06:47:02.353789+00:00",
+        "evidence": "All55 local routes/files/fragments passed, including linked downloads.",
+        "sourceCommit": "4e41803cc8f0fe26f034f4b3875f38fe92e0bbd7"
+      },
+      "ruleCorrection": "None; ordinary implementation or release backlog, not a reusable rule omission.",
+      "retestHistory": [
+        {
+          "status": "PARTIALLY IMPLEMENTED; ROUTE RETEST PENDING",
+          "evidence": "Drug/Condition/Practical data and missing glossary terms added. Download copy + crawl must be checked after integration."
+        }
+      ]
+    },
+    {
+      "id": "AUDIT-IR-004",
+      "baselineClause": "§7 typed rails; §8 study review three depths; §14 post contract",
+      "observedFailureOrAmbiguity": "Generic article rail/Research tail is not a complete per-type contract; source detail and comparison sections are omitted or mismatched.",
+      "evidence": {
+        "Study": "Sources terminal was added during audit, but initially review.sources omitted and Studies/References nested catalogue rendered on the study itself. Required right-rail design/population/year/N/DOI/access/corrections not supplied by generic rail.",
+        "Glossary": "Uses generic Drug + indication ... evidence-unit rail; synonyms and guides using term absent; terminal originally Research rather than Sources.",
+        "Comparison": "Only Question, Findings, Gaps in adapter; protocol/eligibility/Methods/Studies/Bias and specific right rail lack a documented exception.",
+        "plannedButMissing": "First handoff plans Drug, Condition, Practical guide; initial content has only 3 evidence answers + 1 comparison + study/glossary records. No durable post-type contract observed yet."
+      },
+      "classification": "implementation defect",
+      "correction": "Define versioned type configuration and demonstrate each planned type. Retain actual source-review Sources prose and provenance. Add meaningful unresolved sections where evidence is missing; record any legitimate contract adaptation once. Keep G4 scoped HOLD for undemonstrated planned types.",
+      "states": {
+        "requested": "Baseline requirement already existed",
+        "proposed": "Implementation correction",
+        "implemented": "Implemented and retested",
+        "released": "Owner-private site v2; scientific/public approval remains HOLD"
+      },
+      "retest": {
+        "status": "PASS for private technical scope",
+        "at": "2026-10-08T06:47:02.353789+00:00",
+        "evidence": "Typed rails/backlinks and missing sections completed; recorded contract variants accepted for private pilot and browser checked.",
+        "sourceCommit": "4e41803cc8f0fe26f034f4b3875f38fe92e0bbd7"
+      },
+      "ruleCorrection": "None; ordinary implementation or release backlog, not a reusable rule omission.",
+      "retestHistory": [
+        {
+          "status": "PARTIALLY IMPLEMENTED; SCOPED ACCEPTANCE PENDING",
+          "at": "2026-10-08T06:32:20.582912+00:00",
+          "evidence": "Post-type contract saved. Practical guide now uses required five focused sections and explicit sentence mapping. Drug now includes Contraindications, Interactions, Dosing, Quality. Typed Study/Glossary Sources and metadata remain present; remaining default sections and specific rails documented in contract. Rendered acceptance remains Mission Control responsibility."
+        }
+      ]
+    },
+    {
+      "id": "AUDIT-IR-005",
+      "baselineClause": "§4 PRIMARY vs CONTEXT; §8 counts; §6 grouped search",
+      "observedFailureOrAmbiguity": "Authoritative glossary definitions become Study search items and appear in the Studies catalogue.",
+      "evidence": {
+        "file": "site/lib/content.ts",
+        "symbol": "allItems maps every source to type Study",
+        "catalogue": "ResearchCatalog iterates all sources under Studies",
+        "siteSourceCounts": "6 paper records plus 3 normalized terminology sources at snapshot; normalized sources correctly say Context but renderer ignores sourceType."
+      },
+      "classification": "implementation defect",
+      "correction": "Carry sourceType through typed model. Group contextual definitions separately and keep them in References/context collections, never original-study counts or Study type. Preserve original study-family and quarantine counts.",
+      "states": {
+        "requested": "Baseline requirement already existed",
+        "proposed": "Implementation correction",
+        "implemented": "Implemented and retested",
+        "released": "Owner-private site v2; scientific/public approval remains HOLD"
+      },
+      "retest": {
+        "status": "PASS for private technical scope",
+        "at": "2026-10-08T06:47:02.353789+00:00",
+        "evidence": "Context excluded from Studies/search Study counts; canonical source filters and rendered Sources verified.",
+        "sourceCommit": "4e41803cc8f0fe26f034f4b3875f38fe92e0bbd7"
+      },
+      "ruleCorrection": "None; ordinary implementation or release backlog, not a reusable rule omission.",
+      "retestHistory": [
+        {
+          "status": "IMPLEMENTED IN CODE; RENDER RETEST PENDING",
+          "at": "2026-10-08T06:32:20.582912+00:00",
+          "evidence": "Code readback: context records use Context search type and are filtered from Studies. Bibliography now omits Study details action for sourceType=context, so no generated #study-CTX target. Local HTTP independent probe was blocked by sandbox Operation not permitted; root route-validation report is separate evidence, not this worker's rendered test."
+        }
+      ]
+    },
+    {
+      "id": "AUDIT-IR-006",
+      "baselineClause": "§7 deep links; §8 inline FAQ behavior",
+      "observedFailureOrAmbiguity": "Hash reveal opens native details only; Radix FAQ accordions remain closed on FAQ fragment navigation.",
+      "evidence": {
+        "file": "site/components/article.tsx",
+        "symbol": "revealFragment; Accordion type=multiple",
+        "reproduction": "Navigate directly to answer #question-0: target scrolls but Accordion value is uncontrolled and no open state set."
+      },
+      "classification": "implementation defect",
+      "correction": "Control accordion values and reveal matching question on initial load, hash change, repeated same-fragment clicks and back/forward. Verify focus/scroll at mobile and keyboard widths.",
+      "states": {
+        "requested": "Baseline requirement already existed",
+        "proposed": "Implementation correction",
+        "implemented": "Implemented and retested",
+        "released": "Owner-private site v2; scientific/public approval remains HOLD"
+      },
+      "retest": {
+        "status": "PASS for private technical scope",
+        "at": "2026-10-08T06:47:02.353789+00:00",
+        "evidence": "Hydration-aware FAQ fragment and repeated activation observed.",
+        "sourceCommit": "4e41803cc8f0fe26f034f4b3875f38fe92e0bbd7"
+      },
+      "ruleCorrection": "None; ordinary implementation or release backlog, not a reusable rule omission.",
+      "retestHistory": [
+        {
+          "status": "IMPLEMENTED IN CODE; BROWSER RETEST PENDING",
+          "evidence": "Controlled openFaqs and hashchange/repeated anchor listener read back."
+        }
+      ]
+    },
+    {
+      "id": "AUDIT-IR-007",
+      "baselineClause": "§5 numerical provenance; §8 Q06/Q07",
+      "observedFailureOrAmbiguity": "STOP-PASC result record labels randomized arm counts as the result arm n even though endpoint-specific analyzed n is explicitly not extracted.",
+      "evidence": {
+        "jsonPointer": "corpus.results[R-SP-FATIGUE].arm_data",
+        "values": "n 102 and 53 paired with means/SD; notes say randomized counts and endpoint-specific analyzed denominators not extracted",
+        "study": "sample_analyzed=155 while attrition says primary outcomes available 99/102 and49/53, requiring analysis-population clarification rather than simple equation."
+      },
+      "classification": "implementation defect",
+      "correction": "Use nullable endpoint-specific n with not_extracted reason and explicit denominator_basis. Keep randomized n only in enrollment fields; preserve any model analysis set separately. Audit Table 2 and planned analysis population before release.",
+      "states": {
+        "requested": "Baseline requirement already existed",
+        "proposed": "Implementation correction",
+        "implemented": "IMPLEMENTED; SOURCE AUDIT STILL PENDING",
+        "released": "No release established by audit"
+      },
+      "retest": {
+        "status": "IMPLEMENTED; SOURCE AUDIT STILL PENDING",
+        "evidence": "Result arm n now null with not_extracted and denominator_basis; complete endpoint analysis population awaits source audit."
+      },
+      "ruleCorrection": "None; ordinary implementation or release backlog, not a reusable rule omission."
+    },
+    {
+      "id": "AUDIT-IR-008",
+      "baselineClause": "§4 processing/access status; §5 manifest",
+      "observedFailureOrAmbiguity": "ACTIV-6 is labeled full_text_html in paper/site record while manifest states only a partial tool-rendered HTML extraction was acquired.",
+      "evidence": {
+        "jsonPointer": "papers[P-ACTIV6-2026].access_status; site-content.sources[P-ACTIV6-2026].access",
+        "manifest": "partial_fulltext_web_extract=1; relevant sections accessed, direct download403; supplement and protocol gaps explicit."
+      },
+      "classification": "implementation defect",
+      "correction": "Represent partial source acquisition explicitly and display the relevant access limit. Preserve full_text extraction basis only for claims whose actual full-text sections were read.",
+      "states": {
+        "requested": "Baseline requirement already existed",
+        "proposed": "Implementation correction",
+        "implemented": "IMPLEMENTED IN CANONICAL AND ADAPTER",
+        "released": "No release established by audit"
+      },
+      "retest": {
+        "status": "IMPLEMENTED IN CANONICAL AND ADAPTER",
+        "evidence": "ACTIV6 access is partial_full_text_html."
+      },
+      "ruleCorrection": "None; ordinary implementation or release backlog, not a reusable rule omission."
+    },
+    {
+      "id": "AUDIT-IR-009",
+      "baselineClause": "§5 machine validation; §8 exact-version approval; §13 failure fixtures",
+      "observedFailureOrAmbiguity": "JSON Schema alone accepts impossible event counts, orphan result IDs, null values without a reason, and released clinical-safety approval with a wrong hash and no qualifications.",
+      "evidence": {
+        "proof": "outputs/governance/schema-negative-probes.json",
+        "probesAccepted": [
+          "null_without_reason",
+          "events_exceed_n",
+          "orphan_result",
+          "approved_wrong_hash_unqualified"
+        ],
+        "positiveCheck": "Missing Q15 correctly rejected; baseline corpus had zero structural errors.",
+        "limit": "Schema description explicitly requires additional semantic validators; this is a verification gap in the inspected snapshot, not a claim the schema alone must enforce all graph relationships."
+      },
+      "classification": "implementation defect",
+      "correction": "Require semantic validator in release/build checks: relationships, denominators/units, missingness, source file hashes, exact content approval, reviewer qualification/conflict fields for applicable scope, release state and serialization. Run deliberate failures.",
+      "states": {
+        "requested": "Baseline requirement already existed",
+        "proposed": "Implementation correction",
+        "implemented": "PARTIALLY RETESTED; FOLLOW-UP PROBES OPEN",
+        "released": "No release established by audit"
+      },
+      "retest": {
+        "status": "PASS for tested semantic probes",
+        "evidence": "semantic-retest.json finalRetest"
+      },
+      "ruleCorrection": "None; ordinary implementation or release backlog, not a reusable rule omission.",
+      "recheckHistory": [
+        {
+          "at": "2026-10-08T06:30:12.869590+00:00",
+          "state": "PASS for enumerated semantic failure probes",
+          "evidence": "semantic-retest.json finalRetest: all four follow-up page/claim release and graph cases reject after rehash; original four cases rejected in prior retest. This does not constitute human source or public release approval."
+        }
+      ]
+    },
+    {
+      "id": "AUDIT-IR-010",
+      "baselineClause": "§5 claim graph; §8 consumer→claim→review→source",
+      "observedFailureOrAmbiguity": "Site adapter and renderer retain paper links but do not expose exact claim/source locators or the Q01–Q15 detail records for the reviewable source trail.",
+      "evidence": {
+        "data": "site-content source includes locators/reviewHash/claimIds, but Source type and renderer mostly use prose preview and whole-report URL; review Q records absent from site adapter",
+        "specific": "STOP-PASC overall primary conclusion links to secondary fatigue result plus separate primary text locator; explicit qualitative primary result would make machine trace clearer."
+      },
+      "classification": "implementation defect",
+      "correction": "Expose durable evidence details or a review packet with source locator, extraction, claim and exact version. Add a primary qualitative result record if material primary conclusion otherwise only points at secondary estimate. Do not imply agent draft is formal appraisal.",
+      "states": {
+        "requested": "Baseline requirement already existed",
+        "proposed": "Implementation correction",
+        "implemented": "Implemented and retested",
+        "released": "Owner-private site v2; scientific/public approval remains HOLD"
+      },
+      "retest": {
+        "status": "PASS for private technical scope",
+        "at": "2026-10-08T06:47:02.353789+00:00",
+        "evidence": "Source locators rendered; Q01–Q15 durable review packet remains private optional evidence details.",
+        "sourceCommit": "4e41803cc8f0fe26f034f4b3875f38fe92e0bbd7"
+      },
+      "ruleCorrection": "None; ordinary implementation or release backlog, not a reusable rule omission.",
+      "retestHistory": [
+        {
+          "status": "PARTIALLY IMPLEMENTED",
+          "evidence": "Study record Sources shows source locators; durable review packet index added. Q01-Q15 remain in private canonical review packet, not falsely presented as formal appraisal."
+        }
+      ]
+    },
+    {
+      "id": "AUDIT-IR-011",
+      "baselineClause": "§11 server-side premium serialization",
+      "observedFailureOrAmbiguity": "Canonical review sections have public/premium access fields, but site adapter flattens them to strings and Article renders all sections without entitlement checks.",
+      "evidence": {
+        "data": "reviews.sections Methods/Results marked premium; site-content.sources.review object contains plain text only",
+        "scopeLimit": "Private AI pilot and not-launched membership are explicit. No public paywall leak is claimed; this is a commercial-launch blocker before any audience expansion."
+      },
+      "classification": "implementation defect",
+      "correction": "Complete server entitlement serialization before membership launch. This ordinary unfinished implementation is not a rule defect or an external dependency. Preserve access metadata, enforce it before HTML/JSON/search/export/cache, and keep main finding, limitation, critical notices and bibliography public.",
+      "states": {
+        "requested": "Baseline requirement already existed",
+        "proposed": "Implementation correction",
+        "implemented": "DEFERRED MEMBERSHIP IMPLEMENTATION",
+        "released": "No release established by audit"
+      },
+      "retest": {
+        "status": "DEFERRED MEMBERSHIP IMPLEMENTATION",
+        "evidence": "Commerce/membership not launched. Server premium serialization remains required before membership launch; no actual public leak asserted."
+      },
+      "ruleCorrection": "None; ordinary implementation or release backlog, not a reusable rule omission."
+    },
+    {
+      "id": "OBS-013",
+      "baselineClause": "§13 responsive verification",
+      "observedFailureOrAmbiguity": "Closed dropdown panel produced320px overflow",
+      "classification": "implementation defect",
+      "correction": "Hide closed panel and bound mobile menu within viewport;320px retest no overflow",
+      "evidence": [
+        "handoff/ui-validation.json"
+      ],
+      "states": {
+        "requested": "Existing frozen baseline requirement",
+        "proposed": "Hide closed panel and bound mobile menu within viewport;320px retest no overflow",
+        "implemented": "Complete",
+        "released": "Private v2 / final handoff"
+      },
+      "retest": {
+        "status": "PASS",
+        "at": "2026-10-08T06:47:02.353789+00:00"
+      },
+      "ruleCorrection": "None; existing rule covered this requirement."
+    },
+    {
+      "id": "OBS-014",
+      "baselineClause": "§8 citation keyboard/focus",
+      "observedFailureOrAmbiguity": "preventDefault suppressed Radix toggle; focus did not return after Escape",
+      "classification": "implementation defect",
+      "correction": "Explicit toggle and trigger-ref onCloseAutoFocus; Enter/Escape focus return observed",
+      "evidence": [
+        "handoff/ui-validation.json"
+      ],
+      "states": {
+        "requested": "Existing frozen baseline requirement",
+        "proposed": "Explicit toggle and trigger-ref onCloseAutoFocus; Enter/Escape focus return observed",
+        "implemented": "Complete",
+        "released": "Private v2 / final handoff"
+      },
+      "retest": {
+        "status": "PASS",
+        "at": "2026-10-08T06:47:02.353789+00:00"
+      },
+      "ruleCorrection": "None; existing rule covered this requirement."
+    },
+    {
+      "id": "OBS-015",
+      "baselineClause": "§5 hash manifest / §14 handoff",
+      "observedFailureOrAmbiguity": "Acquisition packet retained earlier schema/corpus snapshot after final evidence updates",
+      "classification": "implementation defect",
+      "correction": "Rebuilt snapshots and archive, verified all36briefs/11packets and final schema/corpus hashes",
+      "evidence": [
+        "handoff/acquisition-refresh-validation.json"
+      ],
+      "states": {
+        "requested": "Existing frozen baseline requirement",
+        "proposed": "Rebuilt snapshots and archive, verified all36briefs/11packets and final schema/corpus hashes",
+        "implemented": "Complete",
+        "released": "Private v2 / final handoff"
+      },
+      "retest": {
+        "status": "PASS",
+        "at": "2026-10-08T06:47:02.353789+00:00"
+      },
+      "ruleCorrection": "None; existing rule covered this requirement."
+    },
+    {
+      "id": "GAP-016",
+      "baselineClause": "Frozen v1.1 §§4–5 distributed planning; no consolidated plan-before-request prerequisite",
+      "observedFailureOrAmbiguity": "Initial extraction/import and owner-facing scoping/full acquisition handoffs occurred before any standalone versioned ingestion plan. No external Grokbot job was sent.",
+      "classification": "missing explicit rule, confirmed by owner requirement",
+      "evidence": [
+        "owner-interventions.json",
+        "ingestion-sequence-audit.json",
+        "ingestion-reconciliation.json"
+      ],
+      "correction": "Apply coordinator-owned v1.3 planning prerequisite; persist plan, schema compatibility and GP prospective readiness before next request/extraction/import. Preserve historical noncompliance.",
+      "states": {
+        "requested": {
+          "source_task": "01a11a00-93aa-7bc1-975f-35668cc5e282",
+          "turn_id": "01a11a44-7627-77b0-afa4-139acd286ce2",
+          "message_id": "01a11a44-76da-77c1-909e-b78064109c7f",
+          "text": "plan must exist before the first ingest, and before the first file requests go out to grok bot",
+          "source_started_at": "2026-10-08T06:47:36+00:00",
+          "adoption": "Produce autonomously; no added owner approval round. Applies to Grokbot handoff, scoping/file requests, extraction and import. Drafting a prompt internally is not dispatch."
+        },
+        "proposed": "Consolidated versioned ingestion plan and operational gate",
+        "implemented": "SL-INGEST-1.0 and v1.3 clause adoption recorded; coordinator edited canonical rule",
+        "released": "Plan and packet1.1 ready prospectively; no Grokbot dispatch/new ingest; site v2 unchanged"
+      },
+      "retest": {
+        "status": "PASS planning readiness for next dependent operation",
+        "plan_sha256": "94aa213b11cd7ce879eb83e3ea819b706000725ed6ed31b379d4e87b0cd3b07c",
+        "historical_first_operation_compliance": false,
+        "evidence": [
+          "ingestion-plan-review.json",
+          "ingestion-plan-validation.json",
+          "ingestion-reconciliation.json"
+        ]
+      }
+    },
+    {
+      "id": "OBS-FETCH-30X30",
+      "baselineClause": "Broad topic scope and demand-to-acquisition mapping; currentv1.9 §§2–5",
+      "observedFailureOrAmbiguity": "Packet1.1 organized36questions but lacked separate30drug/30condition coverage and a named itraconazole recovery assignment after textbook ingestion.",
+      "classification": "Implementation coverage gap plus explicit site-specific owner choice",
+      "correction": "Replace active acquisition handoff with checkedpacket2.0 and preserve priorpacket history.",
+      "evidence": [
+        "handoff/history/acquisition-packet-v1.1/",
+        "handoff/fetch-30x30/coverage-catalogue.json",
+        "handoff/fetch-30x30/independent-review.json"
+      ],
+      "states": {
+        "requested": "Owner30+30anditraconazole requirement",
+        "implemented": "Fetchpacket ready",
+        "released": "No new dispatch, ingestion or site release"
+      },
+      "retest": {
+        "status": "PASS for revised acquisition handoff",
+        "at": "2026-10-09T05:40:39.671512+00:00",
+        "plan_sha256": "90150fe725c7d7c964e4aeb3c3c5574c8dfd64865d2c288857040725e98cad28"
+      },
+      "ruleCorrection": "No canonical rewrite needed: breadth already required; exact30+30belongs to this site’s plan. Coordinator retains canonical maintenance ownership."
+    }
+  ],
+  "implementationBacklogIsNotGap": [
+    "Research corpus acquisition beyond bounded pilot",
+    "Human editorial/qualified review",
+    "Merchant setup and test payments",
+    "Hosted authentication tests",
+    "Representative reader comprehension test"
+  ],
+  "extraInstructionLog": [],
+  "agentCoordinationLog": [
+    {
+      "source": "root worker packet",
+      "instruction": "Audit/governance/business artifact ownership only; root owns actual canonical synchronization; await real demand shortlist; draft evidence-reading process guide",
+      "classification": "implementation coordination",
+      "newOwnerRequirement": false
+    },
+    {
+      "source": "root brand message",
+      "instruction": "Second Look ink #183153, amber #F6BC45, white/#f4f7fb, serif headings and sans body",
+      "classification": "owner choice",
+      "newOwnerRequirement": false,
+      "note": "Agent-chosen reversible brand default under §1/§9, not an extra user instruction or rule defect."
+    },
+    {
+      "source": "demand worker message",
+      "instruction": "Tie business hypothesis to DR001/DR002/DR003/DR004; paid demand unmeasured",
+      "classification": "implementation coordination",
+      "newOwnerRequirement": false
+    }
+  ],
+  "extraInstructionExplanation": "No additional owner prompt after initial pilot delegation was observed. Agent coordination requests are logged separately and are implementations of the baseline, not owner amendments.",
+  "finalSummary": {
+    "confirmedReusableRuleChanges": [
+      "GAP-001: authorized pilot feedback protocol added to canonical §15",
+      "GAP-016: owner-required consolidated plan before requests/ingest; canonical v1.3 implemented by coordinating task"
+    ],
+    "extraUserInstructionsDuringPilot": 1,
+    "coordinationMessages": "Worker task requests, corrections and scoped exceptions preserved in task/tool history and worker coordination logs; not new owner requirements.",
+    "allGatesPassed": false,
+    "publicRelease": "HOLD"
+  }
+}
