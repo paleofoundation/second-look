@@ -1,0 +1,155 @@
+{
+  "schemaVersion": "second-look-evidence-presentation-1.0",
+  "date": "2026-10-11",
+  "scope": "Shared Evidence presentation and generator inheritance; no scientific record changes",
+  "ownerRequirement": "Match the PepsAnon Evidence section, including Outcome and study design / Grade / Evidence table and the right-side study-information drawer. Evidence begins with prose and ends with the table.",
+  "references": {
+    "pepsanonLive": "https://pepsanon.com/peptides/bpc-157#evidence",
+    "pepsanonSource": "/Users/kmfp/Documents/ChatGPT/Pepsanon.com/site-study-records",
+    "pepsanonTable": "components/peptide/evidence-table.tsx",
+    "pepsanonPanel": "components/peptide/research-panel.tsx",
+    "rule": {
+      "version": "1.28",
+      "path": "/Users/kmfp/Documents/ChatGPT/Pepsanon.com/one-match-rule/ONE-MATCH-RULE.md",
+      "sha256": "0fa813540e2747bbed38321f67d2ec2c711ed10821712ee3f0e3ed8576dd099c"
+    },
+    "priorReusableAddendum": "/Users/kmfp/Documents/ChatGPT/One Match Rule/work/evidence-style-fix/one-match-theme-0.2.5-evidence-presentation",
+    "priorRuleObserved": {
+      "version": "1.27",
+      "sha256": "95186eed9806ed0dcd8f9b797f44815b8a848ce09d866965ed4887aa0db62624"
+    }
+  },
+  "sharedImplementation": [
+    "components/shared-theme/universal-article.ts",
+    "components/article.tsx",
+    "components/shared-theme/evidence-table.tsx",
+    "components/shared-theme/reading-modules.css",
+    "lib/evidence-presentation.ts",
+    "lib/citation-plan.ts",
+    "components/shared-theme/outcome-finder.tsx"
+  ],
+  "acceptanceContract": [
+    "One shared Evidence section per article; its heading leads into substantive existing prose.",
+    "Authored and scoped Evidence explanations appear before the final table; controls and discovery links do not trail the table.",
+    "Semantic Outcome and study design / Grade / Evidence columns retain source-backed design citations.",
+    "Outcome and evidence-count buttons open the same row-specific right-side study drawer.",
+    "An empty synthesis collection retains table headers and one truthful empty-state row; it creates no source count or grade.",
+    "The right-side modal preserves scientific findings, magnitude, uncertainty, source identity, design, sample details, corrections, links and source locators.",
+    "Grade presentation preserves unassessed, correction-held, preclinical and background states rather than inventing a certainty rating.",
+    "Drawer closes via X, Escape and backdrop, restores focus to the actual opener, and preserves underlying route and scroll position.",
+    "The existing inline Research / Studies / References catalogue remains separate and singular.",
+    "Source design and other citations follow the same first-appearance plan; opening the drawer never renumbers them.",
+    "Every Drug and Condition guide, additional evidence renderer branch, synthetic scoped variant and repeat generation inherits the same contract.",
+    "A filter yielding zero matches still renders the semantic table last, with a filter-specific message and reset control before the table; it does not replace the table with a generic empty panel."
+  ],
+  "regressionCommands": [
+    "node scripts/check-evidence-section.mjs",
+    "node scripts/check-reader-sections.mjs --all-profiles"
+  ],
+  "validation": {
+    "ssr": {
+      "status": "PASS",
+      "profiles": 64,
+      "additionalEvidenceGuides": 4,
+      "populatedTables": 52,
+      "emptyTables": 16,
+      "rows": 124,
+      "syntheticScopedFixtures": 2,
+      "repeatGeneration": "PASS",
+      "scientificDataHashesUnchanged": 21,
+      "filteredEmptyFixture": "PASS: actual OutcomeFinder renderer with a nonempty record set and unmatched query; calls real empty EvidenceTable; 0-of-1 status and reset precede final table."
+    },
+    "browserInteractionAndVisualParity": {
+      "status": "PASS",
+      "reference": "Live PepsAnon BPC-157 Evidence table and drawer",
+      "pages": [
+        "/drugs/metformin",
+        "/conditions/long-covid",
+        "/drugs/itraconazole"
+      ],
+      "checks": [
+        "Prose precedes final three-column table",
+        "Outcome and count openers select matching findings and sources",
+        "Findings and study metadata expand with numeric results, limitations and source links",
+        "Multi-source drawer shows both matching reports and correction context",
+        "Keyboard Enter, focus trap, Escape, X and backdrop close; focus returns to actual opener",
+        "Drawer body scroll lock is removed on close; route is preserved",
+        "Empty filter retains headers and table as final element; reset restores records",
+        "390px mobile viewport contains horizontal table scrolling; full-width drawer remains within viewport"
+      ],
+      "viewports": [
+        {
+          "width": 1280
+        },
+        {
+          "width": 390,
+          "height": 844
+        }
+      ]
+    },
+    "deployment": "Release receipt is recorded outside source after publishing the exact built commit.",
+    "articleProfileRegression": "PASS:64profiles, preserved authored prose and question/citation invariants",
+    "independentReactSourceReview": {
+      "status": "NO_ACTIONABLE_FINDINGS",
+      "scope": "Changed Article/EvidenceTable/OutcomeFinder composition, study-design adapter, citation plan and table/panel styles; source accuracy and React/accessibility integration only.",
+      "sourceHashes": {
+        "components/shared-theme/universal-article.ts": "cc4da23bb362a72553ca4b3c4e21202975b72111f8be1eecee80074c8f0d659f",
+        "components/article.tsx": "b7606d9ce5f194805c120d4514ca046c583adccf3926728a85b30e583151e2fc",
+        "components/shared-theme/evidence-table.tsx": "e28bee9a10b7a41c84c8ebfe57a8302ccdf81ab2bd55d3fe266e34853a3d4e2e",
+        "components/shared-theme/reading-modules.css": "302bc8ab8b596228502db786cb3d0ea3fc4e9988f046c7e03295ff88beae48a2",
+        "lib/evidence-presentation.ts": "6f5b325db12f21ce9c91c1dad0180f76954f3ea5bdd9d86e2bb95a41bc0bc1a8",
+        "lib/citation-plan.ts": "fd0a000ba82fa2f5ef6e26e1fd0161ffff9819a73cf15682ce6819510ef6407f",
+        "components/shared-theme/outcome-finder.tsx": "8c24bca2513ab7611488f7b1cff74913a391fe430c8b43786bf46c36c99042a1"
+      },
+      "checks": [
+        "Hooks remain unconditional; interactive state remains local.",
+        "Both row-specific controls capture their actual opener before selecting the row.",
+        "Radix modal retains labelled title/description, focus containment and dismissal; custom focus restoration preserves scroll.",
+        "Scientific source/design/sample projection uses existing records; no full protected reviews added.",
+        "Neutral ungraded states retain completed-appraisal guard; grade color is not the sole label.",
+        "Three-column and filter-empty rendering preserve semantic table and source relationships.",
+        "Generated article and citation traversal place authored/scoped material before table."
+      ],
+      "limits": "Runtime focus, scroll locking, touch and visual parity require coordinator browser checks; no independent deployment claim."
+    }
+  },
+  "preservedScientificDataSha256": {
+    "data/acquisition-pages.json": "86a5546dd46fd8850d0c6b0f70aa8073f8e905fc4142105e329b892f9316fb73",
+    "data/acquisition-status.json": "8d8a0448d46f54e808968dadae14228e3a0709783880aeb3d4fe423b0739c42a",
+    "data/author-profiles.json": "c2c5455101bad72310d46260471e1f601336b570cfe964463dcd77129fc75a90",
+    "data/content.json": "f8252d1140ba1b522bdb60a7e5f2e2b507c6fe0fea8454b69caf82808a94aafc",
+    "data/discovery-pages.json": "b8d39490af621c2e494762ee9d0ffdf3416a564950b305587f20b6573a83a827",
+    "data/guide-catalogue.json": "eb836628b1efa4e92b21d85ad2380bc7ff8df858366b4fa3122a7f6564515e62",
+    "data/ingested-topic-pages.json": "1e22b6f66a154ea32eda389a2638138b1c0c29333ddd398f0a4be8ffb7c29416",
+    "data/ingestion-status.json": "c5df70454c5a87d19d63513654f2ae903139228b26539610c43b34bc0adfc8df",
+    "data/navigation-interest.json": "a0d238eacd195fbd07d5e8d58b807f8efbbd762f8ec64cf5d03f895acc548ad5",
+    "data/outcome-registry.json": "076ded1a7216e647e7af22fddb8b4c70688704ef83d0a8a7bc1d69095039a810",
+    "data/outcome-sentence-maps.json": "fc0c5ea67b78e44bb01c7ed32b21e4dcb809e20849ab7853e93dfd8b413af30d",
+    "data/private-reviews.json": "b3b5f75443899b359d78575d693d82444143897154c22862023598c2c873401c",
+    "data/public-content.json": "f36ceaf62d7faf82027289373e8132c55567a3a50e336cca0c2b9b227f5acb30",
+    "data/public-mechanisms.json": "d9032de7e6e5c6ed5a1c335528154e091aa16d4e331f688b70cfdaba9ba97689",
+    "data/public-reader-evidence.json": "825c039b573a9ed23d0213e900e11c66a2febe5e68d3ecda7cef7d9210496637",
+    "data/public-review-metadata.json": "6e8710372c6f98746b1f03a539cedbf5a403dbc38665dfaf69ffe7da1c9db529",
+    "data/question-ownership.json": "57c822952441b08ef25496d0ed3aea5d122da904d36cd255622d532448a01147",
+    "data/reader-evidence.json": "4b25ebb52b46e5bef39c74e3d170ec8b34374af8aa282c7c6eaa3b87af952cee",
+    "data/review-envelopes.json": "9dbc05bec5d78002e4f1cd78fb7494ef4d00c7b04c6cd5ab9abb020312f2d8e0",
+    "data/topics.json": "328094f358b9e0a56eabdc03bf64cb1e8e48300d71039fc5a2301e20fb924a1a",
+    "data/wiki-foundations.json": "4d557eb192e0f6baa6881e590824672085b7b346b77c219d13b7e51061f28415"
+  },
+  "boundaries": {
+    "scientificFactsModified": false,
+    "scientificAppraisalsOrHumanApprovalsCreated": false,
+    "frozenPilotBaselineModified": false,
+    "historicalScientificGeneratorsRun": false,
+    "referenceRepositoriesModified": false,
+    "newIngestionOrAcquisition": false,
+    "completeWebsiteGeneratorAcceptance": "Not established by this presentation correction",
+    "ruleInstalledAndPortableSync": "Coordinator-owned; no claim from this adoption record"
+  },
+  "presentationOverride": {
+    "scope": "Second Look Evidence presentation",
+    "change": "Compact outcome/design, grade and evidence-count rows match PepsAnon; full numerical findings, magnitude, limitations and study metadata are inspected in the right-side drawer. Existing authored Benefits, Results and Evidence prose is preserved.",
+    "basis": "Current explicit owner request to match the PepsAnon Evidence section and sidebar behavior; implemented by the shared renderer.",
+    "acceptanceLimit": "This scoped presentation correction does not establish complete G4R, appraisal or scientific-release acceptance."
+  }
+}

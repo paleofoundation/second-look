@@ -5,7 +5,8 @@
  * performs no scientific transformation and never mutates source records.
  *
  * Render blocks in order. Within each module, render `sections` in order, then
- * its built-in mechanism/FAQ/research content where applicable, then `scoped`.
+ * its built-in mechanism/FAQ/research content where applicable. In Evidence,
+ * render authored prose, then `scoped` details, then the evidence table last.
  * Citation traversal must consume that same sequence. Outcome synthesis belongs
  * in the single Evidence module; former findings links remain aliases there.
  */

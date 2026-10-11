@@ -4,14 +4,19 @@ import {mechanismCitationIds} from './mechanisms';
 import {buildUniversalArticlePlan,isRetiredArticleSection} from '@/components/shared-theme/universal-article';
 import {createCitationOrder} from '@/components/shared-theme/citations';
 import {describeEvidenceConfidence} from '@/components/shared-theme/evidence-confidence';
+import {studyDesignsFor} from './evidence-presentation';
 const sentenceMaps=sentenceMapData.rows as Record<string,{finding:{text:string;sources:string[]}[];magnitude:{text:string;sources:string[]}[]}>;
 export function outcomeCitationOrder(rows:SynthesisRow[],sources:Source[]){return createCitationOrder([outcomeCitationIds(rows,sources),rows.flatMap(row=>row.sourceIds),sources.map(source=>source.id)],sources.map(source=>source.id));}
-function outcomeCitationIds(rows:SynthesisRow[],sources:Source[]){return rows.toSorted((a,b)=>a.title.localeCompare(b.title)).flatMap(row=>[
+function outcomeCitationIds(rows:SynthesisRow[],sources:Source[]){const sorted=rows.toSorted((a,b)=>a.title.localeCompare(b.title));return [
+ // The closed table shows every row's study designs. Drawer-only findings must
+ // not preempt citations in a later visible row; opening a drawer never renumbers.
+ ...sorted.flatMap(row=>studyDesignsFor(row,sources).flatMap(design=>design.sourceIds)),
+ ...sorted.flatMap(row=>[
  ...(sentenceMaps[row.id]?.finding.flatMap(part=>part.sources)||row.finding.sources),
  ...(sentenceMaps[row.id]?.magnitude.flatMap(part=>part.sources)||row.sourceIds),
  ...(row.limitations[0]?.sources||[]),
  ...describeEvidenceConfidence({...row,limits:row.limitations.map(limit=>({text:limit.text,sourceIds:limit.sources})),background:!row.countsAsPrimaryEvidence,pending:row.coverage.pending},sources.map(source=>({...source,primary:isPrimarySource(source),quarantined:source.status==='Quarantined'}))).limitation.sourceIds
- ]);}
+ ])];}
 
 export function hasArticleEvidence(guide:Guide){return ['Drug','Condition','Evidence comparison'].includes(guide.type)||guide.type.includes('evidence answer')||!!guide.synthesisIds?.length;}
 
@@ -37,8 +42,8 @@ export function guideCitationOrder(guide:Guide,sources:Source[],additionalGroups
    return [sectionSources(articleModule.sections),
     articleModule.kind==='mechanisms'?mechanismCitationIds(guide):[],
     articleModule.kind==='faqs'?guide.faqs.flatMap(faq=>faq.sentences?faq.sentences.flatMap(sentence=>sentence.sources):faq.sources):[],
-    articleModule.label==='Evidence'?outcomeCitationIds(rows,sources):[],
-    sectionSources(articleModule.scoped?.sections||[])];
+    sectionSources(articleModule.scoped?.sections||[]),
+    articleModule.label==='Evidence'?outcomeCitationIds(rows,sources):[]];
   });
   return createCitationOrder([...groups,...additionalGroups,guide.sourceIds],sources.map(source=>source.id));
  }

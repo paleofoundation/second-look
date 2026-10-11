@@ -239,3 +239,7 @@ if (process.argv.includes('--all-profiles')) {
  }
  console.log(JSON.stringify({status:'PASS',profiles:profiles.length,questions:totalQuestions,checks:'Every canonical content section populated; actual SSR; no production placeholders; unique IDs; all fragments; canonical questions; source closure; citation order'}));
 }
+
+// Reuse the real-module loader and SSR host in the Evidence composition checks.
+// No test-only renderer or scientific data projection should stand in for Article.
+export {load, render};
