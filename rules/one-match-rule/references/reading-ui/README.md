@@ -1,8 +1,10 @@
-# Reading UI references — One Match Rule 1.22
+# Reading UI references — One Match Rule 1.30
 
 This module packet supplements the [whole-site theme contract](../theme/README.md). Start from the active Microbiome Medicine theme; isolated matching modules within a redesigned shell do not satisfy G4T.
 
 Use this packet with master sections 7–8 and G4/G4R/G4P in section 13. These are pinned owner-source **implementation references**, not an installable app, finished destination code or approved research. Port code and styles into shared destination components; do not copy topic content, accounts, author assignments or scientific grades. A newer verified owner revision may supersede these snapshots; record its version and the change.
+
+Read [Article navigation, study summaries and Update History](article-navigation.md) for compact sidebar icons, matching body/navigation order and the Microbiome history source mapping.
 
 Read [Prose, ordered citations and hero actions](article-presentation.md) for the owner's current article-presentation correction and its acceptance cases.
 
@@ -62,7 +64,7 @@ Import `table-overflow.reference.css`, `table-base.reference.css`, then `researc
 
 `ResearchPanel` uses React, Radix Dialog through `radix-ui`, Lucide icons, the Sheet wrapper, and `cn` from clsx/tailwind-merge. Sheet utilities assume the destination's Tailwind and animation setup. Another stack may port the same accessible behavior; never import these files blindly and claim a working component. Source snapshots deliberately omit topic data and private services. Implement destination-native adapters for `CitedText`, `Grade`, source/study identity and synthesis rows; the recorded source types explain the reference API, not a replacement for richer destination schemas.
 
-The reference panel is `min(44rem,100vw)`, sits above the backdrop and header, has a fixed-in-panel header and independently scrolling body, and adapts facts/padding at narrow widths. Both outcome and count controls open the matching row's research. Preserve findings/limits, source identities, study detail disclosures, source/PDF links and locators; metadata belongs once in its source area. Preserve the separate inline Research → Studies/References catalogue.
+The reference panel is `min(44rem,100vw)`, sits above the backdrop and header, has a fixed-in-panel header and independently scrolling body, and adapts facts/padding at narrow widths. Both outcome and count controls open the matching row's research. Preserve findings/limits, source identities, study detail disclosures, source/PDF links and locators; metadata belongs once in its source area. Preserve one inline study catalogue in Research Feed and one References bibliography, placed by the shared article plan after Evidence and around FAQs/Update History as specified in the navigation contract.
 
 Required corrective adapters:
 

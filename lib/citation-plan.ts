@@ -23,12 +23,13 @@ export function hasArticleEvidence(guide:Guide){return ['Drug','Condition','Evid
 // The renderer and citation registry consume the same section groups.
 export function articleSectionGroups(guide:Guide){
  const active=guide.sections.filter(section=>!isRetiredArticleSection(section));
- const evidence=hasArticleEvidence(guide)?active.filter(section=>section.label==='Evidence'):[];
+ const evidence=['Study','Background source','Glossary'].includes(guide.type)?[]:active.filter(section=>section.label==='Evidence');
  const before=active.filter(section=>!evidence.includes(section));
  return {first:before.slice(0,1),rest:before.slice(1),scoped:(guide.scopedSections||[]).filter(section=>!isRetiredArticleSection(section)),later:[] as Guide['sections'],evidence};
 }
 export function guideCitationOrder(guide:Guide,sources:Source[],additionalGroups:string[][]=[]){
  const isRecord=['Study','Background source','Glossary'].includes(guide.type);
+ const feedSourceIds=sources.filter(isPrimarySource).map(source=>source.id);
  const rows=(guide.synthesisIds||[]).map(id=>synthesisRows.find(row=>row.id===id)).filter((row):row is SynthesisRow=>!!row);
  const {first,rest,scoped,later,evidence}=articleSectionGroups(guide);
  const sectionSources=(sections:Guide['sections'])=>sections.filter(section=>!isRetiredArticleSection(section)).flatMap(section=>[
@@ -43,9 +44,10 @@ export function guideCitationOrder(guide:Guide,sources:Source[],additionalGroups
     articleModule.kind==='mechanisms'?mechanismCitationIds(guide):[],
     articleModule.kind==='faqs'?guide.faqs.flatMap(faq=>faq.sentences?faq.sentences.flatMap(sentence=>sentence.sources):faq.sources):[],
     sectionSources(articleModule.scoped?.sections||[]),
-    articleModule.label==='Evidence'?outcomeCitationIds(rows,sources):[]];
+    articleModule.label==='Evidence'?outcomeCitationIds(rows,sources):[],
+    ...(articleModule.kind==='research'?[...additionalGroups,feedSourceIds]:[])];
   });
-  return createCitationOrder([...groups,...additionalGroups,guide.sourceIds],sources.map(source=>source.id));
+  return createCitationOrder([...groups,guide.sourceIds],sources.map(source=>source.id));
  }
- return createCitationOrder([sectionSources(first),mechanismCitationIds(guide),sectionSources(rest),sectionSources(scoped),!isRecord?guide.faqs.flatMap(faq=>faq.sentences?faq.sentences.flatMap(sentence=>sentence.sources):faq.sources):[],sectionSources(later),sectionSources(evidence),hasArticleEvidence(guide)?outcomeCitationIds(rows,sources):[],...additionalGroups,guide.sourceIds],sources.map(source=>source.id));
+ return createCitationOrder([sectionSources(first),mechanismCitationIds(guide),sectionSources(rest),sectionSources(scoped),sectionSources(later),sectionSources(evidence),hasArticleEvidence(guide)?outcomeCitationIds(rows,sources):[],...additionalGroups,!isRecord?feedSourceIds:[],!isRecord?guide.faqs.flatMap(faq=>faq.sentences?faq.sentences.flatMap(sentence=>sentence.sources):faq.sources):[],guide.sourceIds],sources.map(source=>source.id));
 }

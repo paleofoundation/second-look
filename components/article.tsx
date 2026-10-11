@@ -12,13 +12,15 @@ import {AuthorCard} from '@/components/author-card';
 import {HeroActions} from '@/components/shared-theme/article-actions';
 import {orderCitationGroup,normalizeCitationSentence,sourceReferenceId} from '@/components/shared-theme/citations';
 import {guideCitationOrder,articleSectionGroups,hasArticleEvidence} from '@/lib/citation-plan';
-import {buildUniversalArticlePlan,type UniversalArticleModule} from '@/components/shared-theme/universal-article';
+import {buildUniversalArticlePlan,buildArticleReaderTail,type UniversalArticleModule} from '@/components/shared-theme/universal-article';
 import {ArticleLayout,ThemeSectionNav} from '@/components/shared-theme/theme';
 import {EvidenceTable,type EvidenceFinding,type EvidenceSource} from '@/components/shared-theme/evidence-table';
 import {MedicalScopeNotice} from '@/components/shared-theme/guide-catalogue';
 import {MechanismSection} from '@/components/shared-theme/mechanisms';
 import {hasMechanismSection,drugMechanismFor,mechanismContextsFor,mechanismPresentation} from '@/lib/mechanisms';
 import {InlineFaqs} from '@/components/shared-theme/faqs';
+import {UpdateHistory} from '@/components/shared-theme/update-history';
+import type {ProtectedReview,ReviewAccess} from '@/lib/review-access';
 import {OutcomeFinder,type OutcomeOption} from '@/components/shared-theme/outcome-finder';
 import {wikiText,wikiTextRenderer} from '@/lib/wiki-links';
 import {relatedReadingFor} from '@/lib/related-reading';
@@ -33,7 +35,78 @@ export function CitedProse({text,sourceIds,sources,order,mapped,currentPath=''}:
  const linked=new Set<string>();
  return <p>{sentences.map((sentence,i)=><span key={i}>{wikiText(normalizeCitationSentence(sentence.text),currentPath,linked)}{orderCitationGroup(sentence.sources,order).map(id=>{const s=sources.find(x=>x.id===id);return s?<Citation key={id} source={s} n={order.indexOf(id)+1}/>:null})}{' '}</span>)}</p>;
 }
-export function ResearchCatalog({sources,order=sources.map(s=>s.id),currentPath=''}:{sources:Source[];order?:string[];currentPath?:string}){return <><div id="studies"><h3>Studies</h3>{sources.filter(isPrimarySource).length===0?<p>This profile draws on the sources listed in References.</p>:sources.filter(isPrimarySource).map(s=><details className="research-item" id={'study-'+s.id} key={s.id}><summary>{s.title}<span className="meta" style={{display:'block'}}>{s.population||''} · {s.year||''} · {s.design||''}</span>{s.status==='Quarantined'?<span className="evidence-tag">Quarantined · not evidence for efficacy</span>:null}</summary><div className="research-item__body"><p>{wikiText(s.preview,currentPath)}</p>{s.decisiveLimit?<p className="notice">{wikiText(s.decisiveLimit,currentPath)}</p>:null}{s.correction?<p className="notice">{wikiText(s.correction,currentPath)}</p>:null}<div className="inline-actions"><a href={'/research/'+s.id}>Source details</a><OriginalSource source={s}/></div></div></details>)}</div><details id="references" className="research-item"><summary>References</summary><ol className="bibliography">{order.map((id,i)=>{const s=sources.find(x=>x.id===id);return s?<li key={id} id={`ref-${i+1}`} data-source-id={id} value={i+1}><span id={sourceReferenceId(id)} className="reference-alias"/><ReferenceTitle source={s}/>. {s.year}. {s.doi?`DOI: ${s.doi}. `:(s as SourceDetail).doiMissingReason==='not_printed'?'DOI NOT PRINTED. ':''}<span>{s.design||'Source'}.</span> {s.locators?<p className="small">{(s.locators as {section?:string;table_figure?:string}[]).map(l=>[l.section,l.table_figure].filter(Boolean).join(' · ')).join('; ')}</p>:null} {isPrimarySource(s)?<a href={'#study-'+id}>Study details</a>:null}</li>:null})}</ol></details></>}
+/** Preserve this page's frozen citations when an authorized study opens. */
+export function canRenderStudyReviewInline(review:ProtectedReview,sourceId:string,sources:Source[],order:string[]){
+ const openingAnswers=(review.openingBlocks||[]).flatMap(block=>block.questionIds.map(id=>review.questionAnswers?.find(answer=>answer.id===id)));
+ if(openingAnswers.some(answer=>!answer))return false;
+ const citedIds=[...review.sourceIds,...review.sections.flatMap(section=>[
+  ...section.sources,...(section.sentences||[]).flatMap(sentence=>sentence.sources),
+ ]),...openingAnswers.flatMap(answer=>answer?.sources||[])];
+ return review.id===sourceId&&citedIds.every(id=>id===sourceId&&sources.some(source=>source.id===id)&&order.includes(id));
+}
+/** Caller supplies this body only after the protected endpoint grants access. */
+export function InlineStudyReview({review,sources,order,currentPath}:{review:ProtectedReview;sources:Source[];order:string[];currentPath:string}){
+ return <div className="study-summary__review">
+  {review.openingBlocks?.map(block=><section key={block.id} id={'study-'+review.id+'-opening-'+block.id}>
+   <h4>{block.title}</h4>{block.questionIds.map(id=>{
+    const answer=review.questionAnswers?.find(question=>question.id===id);
+    return answer?<div key={id} id={'study-'+review.id+'-opening-'+block.id+'-'+id}>
+     <CitedProse text={answer.answer} sourceIds={answer.sources} sources={sources} order={order} currentPath={currentPath}/>
+     {answer.locators.length?<ul className="small">{answer.locators.map((locator,index)=><li key={index}>{[locator.file||locator.filename,locator.chapter,locator.section,locator.table_figure,locator.pdf_page!=null?'PDF page '+locator.pdf_page:null,locator.printed_page!=null?'Printed page '+locator.printed_page:null,locator.nativeLocator].filter(Boolean).join(' · ')}</li>)}</ul>:null}
+    </div>:null;
+   })}
+  </section>)}
+  {review.sections.map(section=><div key={section.id} id={'study-'+review.id+'-review-'+section.id}><h4>{section.title}</h4><CitedProse text={section.paragraph} mapped={section.sentences} sourceIds={section.sources} sources={sources} order={order} currentPath={currentPath}/></div>)}
+ </div>;
+}
+/** Only the authorized review endpoint may supply a complete authored review. */
+function StudySummary({source,sources,order,currentPath}:{source:Source;sources:Source[];order:string[];currentPath:string}){
+ const [review,setReview]=useState<ProtectedReview|null>(null);
+ const [requested,setRequested]=useState(false);
+ const [busy,setBusy]=useState(false);
+ const [error,setError]=useState(false);
+ async function loadReview(){
+  if(requested||busy)return;
+  setBusy(true);setError(false);
+  try{
+   const response=await fetch('/api/reviews/'+encodeURIComponent(source.id),{credentials:'same-origin',cache:'no-store'});
+   if(response.status===404){setRequested(true);return;}
+   if(!response.ok)throw new Error('Review unavailable');
+   const result=await response.json() as ReviewAccess;
+   if(result.kind==='full'&&result.review.id===source.id){
+    const candidate=result.review;
+    // The public summary reserves this study's citation before FAQs. A review
+    // with other sources uses its dedicated page so expansion cannot introduce
+    // an earlier citation, renumber this page, or silently drop an unknown source.
+    if(canRenderStudyReviewInline(candidate,source.id,sources,order))setReview(candidate);
+   }
+   setRequested(true);
+  }catch{setError(true);}finally{setBusy(false);}
+ }
+ return <details className="research-item study-summary" id={'study-'+source.id} data-study-id={source.id} onToggle={event=>{if(event.currentTarget.open)void loadReview()}}>
+  <summary>{source.title}<span className="meta" style={{display:'block'}}>{[source.population,source.year,source.design].filter(Boolean).join(' · ')}</span>{source.status==='Quarantined'?<span className="evidence-tag">Quarantined · not evidence for efficacy</span>:null}</summary>
+  <div className="research-item__body">
+   <h4>Study summary</h4><CitedProse text={source.preview} sourceIds={[source.id]} sources={sources} order={order} currentPath={currentPath}/>
+   {source.decisiveLimit?<p className="notice">{wikiText(source.decisiveLimit,currentPath)}</p>:null}
+   {source.correction?<p className="notice">{wikiText(source.correction,currentPath)}</p>:null}
+   {busy?<p className="small" role="status">Loading study review…</p>:null}
+   {error?<p className="small" role="status">The study review could not be loaded. <button type="button" onClick={()=>void loadReview()}>Retry</button></p>:null}
+   {review?<InlineStudyReview review={review} sources={sources} order={order} currentPath={currentPath}/>:null}
+   <div className="inline-actions"><a href={'/research/'+source.id}>Open study summary</a><OriginalSource source={source}/></div>
+  </div>
+ </details>;
+}
+function ResearchStudies({sources,order,currentPath=''}:{sources:Source[];order:string[];currentPath?:string}){
+ const primary=sources.filter(isPrimarySource);
+ return <div id="studies" data-research-feed><h3>Study summaries</h3>{primary.length?primary.map(source=><StudySummary key={source.id} source={source} sources={sources} order={order} currentPath={currentPath}/>):<p>This profile draws on the sources listed in References.</p>}</div>;
+}
+function ReferenceList({sources,order,linkStudies=true}:{sources:Source[];order:string[];linkStudies?:boolean}){
+ return <ol className="bibliography">{order.map((id,i)=>{const source=sources.find(item=>item.id===id);return source?<li key={id} id={'ref-'+(i+1)} data-source-id={id} value={i+1}><span id={sourceReferenceId(id)} className="reference-alias"/><ReferenceTitle source={source}/>. {source.year}. {source.doi?'DOI: '+source.doi+'. ':(source as SourceDetail).doiMissingReason==='not_printed'?'DOI NOT PRINTED. ':''}<span>{source.design||'Source'}.</span>{source.locators?<p className="small">{(source.locators as {section?:string;table_figure?:string;basis?:string}[]).map(locator=>[locator.section,locator.table_figure,locator.basis].filter(Boolean).join(' · ')).join('; ')}</p>:null}{linkStudies&&isPrimarySource(source)?<a href={'#study-'+id}>Study summary</a>:null}</li>:null})}</ol>;
+}
+/** Directory/outcome callers retain the combined catalogue; articles use separate modules. */
+export function ResearchCatalog({sources,order=sources.map(source=>source.id),currentPath=''}:{sources:Source[];order?:string[];currentPath?:string}){
+ return <><ResearchStudies sources={sources} order={order} currentPath={currentPath}/><section id="references" className="article-section"><h2>References</h2><ReferenceList sources={sources} order={order}/></section></>;
+}
 function RelatedReading({guide}:{guide:Guide}){const related=relatedReadingFor(guide);return related.length?<nav className="related-reading" aria-label="Related reading"><h2>Related reading</h2><ul>{related.map(g=><li key={g.id}><a href={guideUrl(g)}>{g.title}</a></li>)}</ul></nav>:null}
 function ContextRail({guide,sources,order}:{guide:Guide;sources:Source[];order:string[]}){const available=(value:unknown)=>value!==undefined&&value!==null&&String(value).trim()!==''&&!/^(?:not extracted|not recorded|not in corpus|unknown)(?:[.;]|$)/i.test(String(value).trim());const primary=sources.filter(source=>isPrimarySource(source)&&available(source.population));const source=sources[0];const sample=(source as SourceDetail|undefined)?.sampleDescription||source?.n;const prose=wikiTextRenderer(guideUrl(guide));const fact=(label:string,value:React.ReactNode)=>available(value)?<Fragment key={label}><dt>{label}</dt><dd>{typeof value==='string'?prose(value):value}</dd></Fragment>:null;const term=content.glossary.find(t=>'/glossary/'+t.slug===guide.slug);const sourceFact=(s:Source,value:React.ReactNode)=><>{typeof value==='string'?prose(value):value}<Citation source={s} n={order.indexOf(s.id)+1}/></>;return <aside className="context-rail"><RelatedReading guide={guide}/><dl>{guide.type==='Background source'||guide.type==='Study'?<>
  {guide.type==='Background source'?fact('Evidence role','Background source'):null}
@@ -60,13 +133,14 @@ function EvidenceIntroduction(){return <p>Each assessment applies to the outcome
 function EvidenceContent({rows,guide,sources,order}:{rows:SynthesisRow[];guide:Guide;sources:Source[];order:string[]}){return <><span id="findings" className="reference-alias"/><p className="small"><Link href="/outcomes">Explore and compare recorded outcomes</Link></p><OutcomeEvidence rows={rows} guide={guide} sources={sources} order={order}/></>}
 
 export function Article({guide,sources,children,additionalCitationGroups=[]}:{guide:Guide;additionalCitationGroups?:string[][];sources:Source[];children?:React.ReactNode;acquisitionStatus?:{coverage_state:string;readerSummary:string;readerNextStep:string}}){
- const isRecord=['Study','Background source','Glossary'].includes(guide.type);const terminal=isRecord?'sources':'research';const terminalLabel=isRecord?'Sources':'Research';
+ const isRecord=['Study','Background source','Glossary'].includes(guide.type);const terminal=isRecord?'sources':'research-feed';const terminalLabel=isRecord?'Sources':'Research Feed';
  const rows=(guide.synthesisIds||[]).map(id=>synthesisRows.find(r=>r.id===id)).filter((r):r is SynthesisRow=>!!r);
  const hasEvidence=hasArticleEvidence(guide);
  const evidenceTarget=hasEvidence?'#section-evidence':'#'+(guide.sections.find(section=>section.label==='Evidence')?.id||terminal);
  const showMechanisms=hasMechanismSection(guide);const mechanismContexts=mechanismContextsFor(guide);const drugMechanism=drugMechanismFor(guide);
  const {first,rest,scoped,later,evidence}=articleSectionGroups(guide);
  const universal=guide.type==='Drug'||guide.type==='Condition'?buildUniversalArticlePlan({...guide,type:guide.type}):null;
+ const readerTail=buildArticleReaderTail({includeEvidence:hasEvidence||evidence.length>0,evidenceSections:evidence});
  const ordered=guideCitationOrder(guide,sources,additionalCitationGroups);
  const renderSection=(section:Guide['sections'][number],nested=false,showTitle=true)=><section className={nested?'article-subsection':'article-section'} id={section.id} key={section.id}>
   {showTitle&&section.title&&(nested?<h3>{section.title}</h3>:<h2>{section.title}</h2>)}
@@ -79,32 +153,35 @@ export function Article({guide,sources,children,additionalCitationGroups=[]}:{gu
  useEffect(()=>{const reveal=()=>revealFragment();const click=(event:MouseEvent)=>{const link=(event.target as Element).closest?.('a[href^="#"]');if(link&&!event.defaultPrevented)requestAnimationFrame(reveal)};reveal();window.addEventListener('hashchange',reveal);document.addEventListener('click',click);return()=>{window.removeEventListener('hashchange',reveal);document.removeEventListener('click',click)}},[guide.id]);
  const primary=sources.filter(s=>isPrimarySource(s)&&s.status!=='Quarantined');
  const railLabel=(label:string)=>label.replace(/[^a-zA-Z0-9 ]/g,'').split(' ')[0]||'Overview';
- const groups=universal?.navigation||[...first.map(s=>({id:s.id,label:railLabel(s.label)})),...(showMechanisms?[{id:'mechanisms',label:'Mechanisms'}]:[]),...rest.map(s=>({id:s.id,label:railLabel(s.label)})),...(scoped.length?[{id:'condition-details',label:'Details'}]:[]),...(!isRecord?[{id:'faqs',label:'FAQs'}]:[]),...later.map(s=>({id:s.id,label:railLabel(s.label)})),...(hasEvidence?[{id:'section-evidence',label:'Evidence'}]:[]),{id:terminal,label:terminalLabel,children:!isRecord?[{id:'studies',label:'Studies'},{id:'references',label:'References'}]:[]},{id:'edition',label:'Updates'}];
+ const groups=universal?.navigation||[...first.map(section=>({id:section.id,label:railLabel(section.label)})),...(showMechanisms?[{id:'mechanisms',label:'Mechanisms'}]:[]),...rest.map(section=>({id:section.id,label:railLabel(section.label)})),...(scoped.length?[{id:'condition-details',label:'Details'}]:[]),...later.map(section=>({id:section.id,label:railLabel(section.label)})),...(isRecord?[{id:'update-history',label:'Update History'},{id:terminal,label:terminalLabel}]:readerTail.map(module=>({id:module.id,label:module.label})))];
  const parent=guide.type==='Drug'?{label:'Drugs',href:'/drugs'}:guide.type==='Condition'?{label:'Conditions',href:'/conditions'}:isRecord?{label:guide.type==='Glossary'?'Glossary':'Research',href:guide.type==='Glossary'?'/glossary':'/research'}:{label:'Questions',href:'/questions'};
 
  const mechanismProse=(prose:NonNullable<typeof drugMechanism>['summary'])=>prose?<CitedProse text={prose.text} mapped={prose.sentences} currentPath={guideUrl(guide)} sourceIds={prose.sourceIds} sources={sources} order={ordered}/>:null;
  const mechanismsContent=<MechanismSection content={mechanismPresentation} renderText={wikiTextRenderer(guideUrl(guide))} originalAction={mechanismProse(drugMechanism?.originalAction)} summary={mechanismProse(drugMechanism?.summary)} questions={(drugMechanism?.questions||[]).map(question=>({id:question.id,title:question.title,answer:mechanismProse(question)}))} contexts={mechanismContexts.map(context=>({id:context.id,title:context.title,evidence:{basis:'secondary_description' as const,label:context.evidenceType,source:<p className="small muted">{context.locator}</p>},clinicalMeaning:context.clinicalMeaning,explanation:<><CitedProse text={context.text} currentPath={guideUrl(guide)} sourceIds={context.sourceIds} sources={sources} order={ordered}/></>}))}/>;
  const faqContent=guide.faqs.length?<InlineFaqs items={guide.faqs.map((f,i)=>({id:f.id||'question-'+i,aliases:f.id?['question-'+i]:[],question:f.question,answer:<CitedProse text={f.answer} mapped={f.sentences} currentPath={guideUrl(guide)} sourceIds={f.sources} sources={sources} order={ordered}/>}))}/>:<section id="faqs" className="article-section"><h2>FAQs</h2></section>;
- const researchContent=<section className="article-section" id={terminal}><h2>{terminalLabel}</h2>{isRecord?<ol id="references" className="bibliography">{ordered.map((id,i)=>{const s=sources.find(v=>v.id===id) as SourceDetail|undefined;return s?<li id={'ref-'+(i+1)} data-source-id={id} key={id}><span id={sourceReferenceId(id)} className="reference-alias"/><ReferenceTitle source={s}/>. {s.year}. {s.doi?'DOI: '+s.doi:s.doiMissingReason==='not_printed'?'DOI NOT PRINTED':null}{s.locators?<p className="small">Source sections: {(s.locators as {section?:string;table_figure?:string;basis?:string}[]).map(l=>[l.section,l.table_figure,l.basis].filter(Boolean).join(' · ')).join('; ')}</p>:null}</li>:null})}</ol>:<ResearchCatalog sources={sources} order={ordered} currentPath={guideUrl(guide)}/>}</section>;
+ const sectionIds=[...groups.map(group=>group.id),...guide.sections.map(section=>section.id),'research','studies','edition','references'];
+ const researchContent=(authored?:React.ReactNode)=><section className="article-section" id="research-feed" data-universal-section="Research Feed"><span id="research" className="reference-alias"/><h2>Research Feed</h2>{authored}{children}<ResearchStudies sources={sources} order={ordered} currentPath={guideUrl(guide)}/></section>;
+ const referencesContent=(authored?:React.ReactNode)=><section className="article-section" id="references" data-universal-section="References"><h2>References</h2>{authored}<ReferenceList sources={sources} order={ordered}/></section>;
+ const updatesContent=(authored?:React.ReactNode)=><section className="article-section" id="update-history" data-universal-section="Update History"><span id="edition" className="reference-alias"/><h2>Update History</h2>{authored}<UpdateHistory pagePath={guideUrl(guide)} sectionIds={sectionIds}/></section>;
+ const sourceContent=<section className="article-section" id="sources"><h2>Sources</h2><div id="references"><ReferenceList sources={sources} order={ordered} linkStudies={false}/></div></section>;
  const renderModule=(module:UniversalArticleModule<Guide['sections'][number]>)=>{
-  const authored=module.sections.map(section=>renderSection(section,true,!['Overview','Evidence'].includes(module.label)));
+  const authored=module.sections.map(section=>renderSection(section,true,module.label!=='Overview'&&!(module.label==='Evidence'&&hasEvidence)));
   if(module.kind==='mechanisms')return <Fragment key={module.id}>{authored}{mechanismsContent}</Fragment>;
   if(module.kind==='faqs')return <Fragment key={module.id}>{authored}{faqContent}</Fragment>;
-  if(module.kind==='research')return <Fragment key={module.id}>{children}{authored}{researchContent}</Fragment>;
+  if(module.kind==='research')return <Fragment key={module.id}>{researchContent(authored)}</Fragment>;
+  if(module.kind==='updates')return <Fragment key={module.id}>{updatesContent(authored)}</Fragment>;
+  if(module.kind==='references')return <Fragment key={module.id}>{referencesContent(authored)}</Fragment>;
   return <section key={module.id} id={module.id} className="article-section universal-section" data-universal-section={module.label}>
-   <h2>{module.title}</h2>{module.label==='Evidence'&&!module.sections.some(section=>section.paragraph)?<EvidenceIntroduction/>:null}{authored}{module.label==='Evidence'&&module.sections.some(section=>section.paragraph)?<EvidenceIntroduction/>:null}
+   <h2>{module.title}</h2>{module.label==='Evidence'&&hasEvidence&&!module.sections.some(section=>section.paragraph)?<EvidenceIntroduction/>:null}{authored}{module.label==='Evidence'&&hasEvidence&&module.sections.some(section=>section.paragraph)?<EvidenceIntroduction/>:null}
    {module.scoped?<details className="research-item scoped-reading" id={module.scoped.id}><summary>{module.scoped.title}</summary><div className="research-item__body">{module.scoped.sections.map(section=>renderSection(section,true))}</div></details>:null}
-   {module.label==='Evidence'?<EvidenceContent rows={rows} guide={guide} sources={sources} order={ordered}/>:null}
+   {module.label==='Evidence'&&hasEvidence?<EvidenceContent rows={rows} guide={guide} sources={sources} order={ordered}/>:null}
   </section>;
  };
  return <ArticleLayout hero={{title:guide.title,description:guide.description,breadcrumbs:[{label:'Second Look',href:'/'},parent],kindLabel:guide.researchGoal?'Research goal':guide.type,art:{src:'/art/second-look-study.svg',alt:'A lens over a source page and its evidence trail',width:600,height:700},authorSlot:<div className="sl-hero-author"><AuthorCard guide={guide}/></div>,updatedLabel:'Reader edition · 11 October 2026',actions:<HeroActions saveSlot={<SaveButton id={guide.id} returnTo={guideUrl(guide)} label={'Save '+(guide.type==='Drug'?guide.title:'article')} className="research-hero__center-tag"/>} links={[...(universal||guide.sections.some(section=>section.id==='safety')?[{label:'Safety',href:universal?'#section-safety':'#safety',icon:<ShieldCheck/>}]:[]),...(!isRecord&&guide.faqs.length?[{label:'FAQs',href:'#faqs',icon:<MessagesSquare/>}]:[]),{label:'Evidence',href:evidenceTarget,icon:<ChartNoAxesColumnIncreasing/>},{label:'References',href:'#references',icon:<BookOpen/>}]}/>,snapshot:<div className="sl-hero-snapshot"><strong>Research sources</strong><p>{primary.length} primary report records · {sources.filter(s=>!isPrimarySource(s)).length} background sources</p><a href={'#'+terminal}>Inspect the source set</a>{hasEvidence?<a href="#section-evidence">Evidence</a>:null}</div>}} leftRail={<ThemeSectionNav groups={groups}/>} rightRail={<ContextRail guide={guide} sources={sources} order={ordered}/> }>
  {guide.coverageLabel?<p className="coverage-label">{guide.coverageLabel}</p>:null}
  {/cancer/i.test(guide.title+' '+(guide.scope||''))?<MedicalScopeNotice cancer/>:null}{universal?universal.blocks.map(block=>renderModule(block.module)):<Fragment>{first.map(section=>renderSection(section))}{showMechanisms?mechanismsContent:null}{rest.map(section=>renderSection(section))}
  {scoped.length?<details className="research-item scoped-reading" id="condition-details"><summary>{guide.scopedSectionsTitle||'Condition-specific research details'}</summary><div className="research-item__body">{scoped.map(section=>renderSection(section))}</div></details>:null}
- {!isRecord?faqContent:null}
- {later.map(section=>renderSection(section))}{hasEvidence?<section id="section-evidence" className="article-section"><h2>Evidence</h2>{!evidence.some(section=>section.paragraph)?<EvidenceIntroduction/>:null}{evidence.map(section=>renderSection(section,true,false))}{evidence.some(section=>section.paragraph)?<EvidenceIntroduction/>:null}<EvidenceContent rows={rows} guide={guide} sources={sources} order={ordered}/></section>:null}{children}
- {researchContent}</Fragment>}
- <section id="edition" className="article-section reader-snapshot"><h2>Evidence snapshot</h2><p>{primary.length} primary reports; {sources.filter(s=>!isPrimarySource(s)).length} background records.</p><div className="reader-change">{guide.sourceIds.includes('P-COVIDOUT-2023')?<p>Conflicting COVID-OUT cumulative-incidence percentages remain withheld until the correction is resolved. <Link href="/research/P-COVIDOUT-2023">Inspect the source status</Link>.</p>:null}</div></section>
+ {later.map(section=>renderSection(section))}{isRecord?<>{children}{updatesContent()}{sourceContent}</>:readerTail.map(renderModule)}</Fragment>}
  </ArticleLayout>
 }
 

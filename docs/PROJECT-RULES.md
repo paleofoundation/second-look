@@ -27,6 +27,16 @@ No article Connections body section or corresponding navigation entry, including
 
 Use shared after-punctuation superscript citations in first-appearance order, page-specific inline FAQs, substantive mechanisms and verified author identity. Detailed requirements and acceptance gates remain in the pinned master and references; this summary does not weaken them.
 
+### Article navigation, Research Feed and Update History
+
+Adopted 11 October 2026 from the owner's Examine sidebar screenshots and explicit follow-up. Every top-level article contents link has a small, consistent outline icon beside its visible label. Icons are decorative for assistive technology; the link retains its text, focus state and real fragment target. Use the shared semantic icon mapping for every applicable post type and mobile contents view. Preserve the existing scientific modules and brand palette.
+
+The reader-facing tail is **Evidence → Research Feed → FAQs → Update History → References**, omitting only genuinely inapplicable modules for the post type. The sidebar and actual body must consume the same ordered contract. Move condition Safety and Comparisons before this tail. Preserve existing scientific prose, canonical citations and legacy fragments. Research Feed and Update History are explicit two-word labels; the earlier blanket one-word convention does not shorten them to Research or Updates. References is its own top-level destination.
+
+Research Feed contains the page's canonical study summaries, with inline expansion, source identity, available findings and limits, and access to the dedicated review. Keep the Evidence table's separate right-side research panel. Reuse existing summaries and server-authorized released review bodies; neither a source preview nor a relabeled catalogue completes the substantive Q01–Q15 review obligation. Preserve all access and release gates and keep unpublished review bodies out of public payloads.
+
+Update History is a real, durable, page-scoped, newest-first timeline adapted from Microbiome Medicine's `mbio-update-history` / `mbio-card` implementation. Entries record an actual date, stable identity, change type, title and specific reader-facing change, with affected sections/sources when supported. Preserve correction notices and evidence snapshots as distinct information. Never manufacture earlier publication dates, scientific reassessment, author review or release approval. New scientific changes require traceable editorial provenance and meaningful history notes; a build date, source count or generic Updated label does not satisfy this contract. See [the implementation and verification record](ARTICLE-NAVIGATION.md).
+
 ## Reader-value correction preserved pending upstream reconciliation
 
 The owner's 11 October correction in [reader-rule-correction.md](rule-history/reader-rule-correction.md) is an accepted local requirement; its proposed reusable wording is not represented as already synchronized upstream.

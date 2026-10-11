@@ -1,0 +1,47 @@
+/* Microbiome Medicine theme-wp.css .mbio-card timeline, scoped to this component
+   and using Second Look's existing typography and color tokens. */
+.omr-theme .mbio-update-history .mbio-card {
+  position: relative;
+  padding: 0 0 2em 2em;
+  font-family: var(--font-sans, Inter, sans-serif);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+.omr-theme .mbio-update-history .mbio-card:last-child { padding-bottom: 0; }
+.omr-theme .mbio-update-history .mbio-card__border {
+  position: absolute;
+  inset: .8em auto 0 0;
+  width: 1px;
+  background: var(--color-primary);
+}
+.omr-theme .mbio-update-history .mbio-card__border::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -.3125em;
+  width: .75em;
+  height: .75em;
+  border-radius: 50%;
+  background: var(--color-primary);
+}
+.omr-theme .mbio-update-history .mbio-card__date { margin: 0 0 .2em; }
+.omr-theme .mbio-update-history .mbio-card__title {
+  display: block;
+  margin: 0 0 1em;
+  font-family: inherit;
+  font-size: 1.25em;
+  font-weight: 400;
+  line-height: 1.75;
+}
+.omr-theme .mbio-update-history .mbio-card__type {
+  display: inline-block;
+  padding: .17em .9em;
+  border-radius: 999px;
+  background: var(--color-primary-100);
+  color: var(--color-primary);
+  font-size: .6em;
+  line-height: 1.333;
+  vertical-align: middle;
+}
+.omr-theme .mbio-update-history .mbio-card__links,
+.omr-theme .mbio-update-history .mbio-card__reviewer { font-size: .875em; }

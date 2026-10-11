@@ -20,6 +20,7 @@ Useful source paths relative to the checkout:
 | Condition evidence and study drawer | `src/components/ConditionsTable.tsx`, `src/components/StudyDrawer.tsx` |
 | Internal linking | `src/lib/linkTargets.ts`, `src/lib/slugs.ts` |
 | Visual styles | `src/styles/theme-wp.css`, `src/app/globals.css` |
+| Update History timeline | `src/styles/theme-wp.css` (`.mbio-update-history`, `.mbio-card`), `_generator/pages/salmonella/build.mjs` (dated entry markup), `src/components/ArticleView.tsx` (updates icon mapping) |
 
 The clone contains source code, not a provisioned copy of the site's external database. No dependencies or database credentials were installed for this reference checkout.
 
@@ -44,6 +45,8 @@ Useful source paths relative to the PepsAnon source:
 PepsAnon's Evidence section begins with prose and ends with an Outcome and study design / Grade / Evidence table. Its outcome and evidence-count buttons open a right-side study-information panel. The separate Research catalogue uses inline study disclosures and reveals enclosing disclosures when following fragment links. These are distinct interactions; preserve the table's drawer behavior when adapting Evidence.
 
 Use each implementation to understand the relevant interaction, then adapt it to Drug Repurposing's current requirements and content.
+
+The owner's 11 October Examine sidebar screenshots and [live endometriosis page](https://examine.com/conditions/endometriosis/) establish the small outline icons and Evidence / Research Feed / FAQs / Update History / References ordering for this correction. They do not authorize copying scientific content or replacing the site's existing scientific modules, branding or account policy. Source-to-destination adaptations are recorded in `docs/ARTICLE-NAVIGATION.md`.
 
 ## Portable collaborator access
 

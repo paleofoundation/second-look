@@ -2,6 +2,8 @@
 
 This is the reusable correction from the owner's 9 October 2026 screenshots and explicit instructions. It extends master sections 7–8 and gates G4/G4P/G8. Use the real PepsAnon source with the existing Microbiome Medicine base; do not rebuild the article as a dashboard. Read the [PepsAnon code/style packet and adaptation notes](pepsanon-article/README.md), which retains exact source hashes and bounded extracts.
 
+Read the [article navigation/history contract](article-navigation.md) for the 11 October sidebar-icon and terminal-order correction. Move content and navigation together; feed summaries, FAQs, history and bibliography remain distinct destinations backed by shared canonical records.
+
 ## Narrative section contract
 
 Most explanatory sections are visible, connected prose under descriptive headings. Overview, mechanism explanations, benefits and consequential safety context should be readable without opening controls. Do not render ordinary explanations as repeated metadata cards, fact grids, disconnected label/value rows or unnecessary bullet collections. Use a genuine accessible accordion for bounded questions or optional deeper detail when useful; a heading styled as a button without disclosure behavior is not an accordion. This does not require collapsing every section.

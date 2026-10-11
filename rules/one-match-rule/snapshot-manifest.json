@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "snapshotDate": "2026-10-11",
-  "ruleVersion": "1.29",
+  "ruleVersion": "1.30",
   "source": {
     "package": "PepsAnon canonical One Match Rule",
     "relativeRoot": "one-match-rule",
@@ -9,25 +9,25 @@
     "sourceRole": "Upstream editable canonical master",
     "snapshotRole": "Byte-preserved adopted snapshot; propose reusable changes upstream and refresh deliberately; keep Second Look deltas in project rules."
   },
-  "masterSha256": "0b5157f2239e56acf05210febfd744b90fe80cddd740d4d5b67a890545775d20",
+  "masterSha256": "7fae46e83e1da5e139b0ab2d11ca02292603c63a50f764c89819b0792bc2f330",
   "files": [
     {
       "path": "ONE-MATCH-RULE.md",
       "sourceRelativePath": "ONE-MATCH-RULE.md",
-      "sha256": "0b5157f2239e56acf05210febfd744b90fe80cddd740d4d5b67a890545775d20",
-      "bytes": 210378
-    },
-    {
-      "path": "SKILL.md",
-      "sourceRelativePath": "SKILL.md",
-      "sha256": "3ddeb49fb6f63a0ebca21f88be281bd564b858c4ee959c95b7ae278bde279cc2",
-      "bytes": 11855
+      "sha256": "7fae46e83e1da5e139b0ab2d11ca02292603c63a50f764c89819b0792bc2f330",
+      "bytes": 215494
     },
     {
       "path": "PROJECT-INSTRUCTIONS.txt",
       "sourceRelativePath": "PROJECT-INSTRUCTIONS.txt",
-      "sha256": "959308e5f54459fa7b890e1a9cd546fdf34cd816acab87668331b728309bf35b",
-      "bytes": 12522
+      "sha256": "b06c2230338af69193f051f18ebb8b7f0002899e0c048799111dd7273fbf9bc7",
+      "bytes": 13377
+    },
+    {
+      "path": "SKILL.md",
+      "sourceRelativePath": "SKILL.md",
+      "sha256": "254964b50262b28e396e3ef6326a5f99ddeb72333bcf802a9c0cd908d6133219",
+      "bytes": 12710
     },
     {
       "path": "agents/openai.yaml",
@@ -62,14 +62,20 @@
     {
       "path": "references/reading-ui/README.md",
       "sourceRelativePath": "references/reading-ui/README.md",
-      "sha256": "64ad1479abce89fb8224be9c59e3b53705f3e41f7329d2c5fc65eb84394e8561",
-      "bytes": 10495
+      "sha256": "345144d7846793aa002f6a33f8e5b692c499727997326c43825d79c26f327171",
+      "bytes": 10817
+    },
+    {
+      "path": "references/reading-ui/article-navigation.md",
+      "sourceRelativePath": "references/reading-ui/article-navigation.md",
+      "sha256": "89264ca5ffef920b4247d639bd055c9a291afa3e85385e7b31be414d72c820e9",
+      "bytes": 9130
     },
     {
       "path": "references/reading-ui/article-presentation.md",
       "sourceRelativePath": "references/reading-ui/article-presentation.md",
-      "sha256": "d96851bcd0a57e2014fbdc8bb0ed013280bff1d79cdac45f82f25e8e6ab75e31",
-      "bytes": 9812
+      "sha256": "9830f837bcf82b0f92127ff0acfe8c2472bbfade631d21dc82b53eac60b828c6",
+      "bytes": 10096
     },
     {
       "path": "references/reading-ui/microbiome-medicine/AUDIT.md",
@@ -102,64 +108,22 @@
       "bytes": 662
     },
     {
+      "path": "references/reading-ui/microbiome-medicine/history-manifest.json",
+      "sourceRelativePath": "references/reading-ui/microbiome-medicine/history-manifest.json",
+      "sha256": "30b47bcf6024bd97c09120d1ae525f115f9f1d1b5f2c5c4261ee8cc479410729",
+      "bytes": 1332
+    },
+    {
+      "path": "references/reading-ui/microbiome-medicine/history-structure.reference.html",
+      "sourceRelativePath": "references/reading-ui/microbiome-medicine/history-structure.reference.html",
+      "sha256": "7fae846a875494498ed663b2595415bef5a2db71371ac18dfd1ed2de58974eb7",
+      "bytes": 777
+    },
+    {
       "path": "references/reading-ui/microbiome-medicine/manifest.json",
       "sourceRelativePath": "references/reading-ui/microbiome-medicine/manifest.json",
       "sha256": "3cc77d03bd4e8bf8bee3e22f5a9df40aa413fb4e4f69ce58aa0e69d02ef349b6",
       "bytes": 5650
-    },
-    {
-      "path": "references/reading-ui/pepsanon/evidence-table.tsx",
-      "sourceRelativePath": "references/reading-ui/pepsanon/evidence-table.tsx",
-      "sha256": "79a75c0b7f43031ab556a8431f2f503ada57ebab8ebff2150449898c8bb6ce25",
-      "bytes": 2395
-    },
-    {
-      "path": "references/reading-ui/pepsanon/manifest.json",
-      "sourceRelativePath": "references/reading-ui/pepsanon/manifest.json",
-      "sha256": "9d2d7d28305ee864fcb8f9abfef34a439b0d7a0479e509ee8ee7e139c9422b1e",
-      "bytes": 4217
-    },
-    {
-      "path": "references/reading-ui/pepsanon/research-details.reference.css",
-      "sourceRelativePath": "references/reading-ui/pepsanon/research-details.reference.css",
-      "sha256": "b31f2dc8d985887d502e3b5d586c2b8a4e577fb81cfe108fd8e96b7d08d3f9e4",
-      "bytes": 6172
-    },
-    {
-      "path": "references/reading-ui/pepsanon/research-panel.tsx",
-      "sourceRelativePath": "references/reading-ui/pepsanon/research-panel.tsx",
-      "sha256": "b49ebd6d9f30749291e899abbce61496d6c07d741ccec2ae19463af1f4f4dcc1",
-      "bytes": 4959
-    },
-    {
-      "path": "references/reading-ui/pepsanon/sheet.tsx",
-      "sourceRelativePath": "references/reading-ui/pepsanon/sheet.tsx",
-      "sha256": "63863cf2df8f8973e52b3459ac9bdbf81be1262dbc70eb53d5271ffb03488e16",
-      "bytes": 4188
-    },
-    {
-      "path": "references/reading-ui/pepsanon/table-base.reference.css",
-      "sourceRelativePath": "references/reading-ui/pepsanon/table-base.reference.css",
-      "sha256": "981721456277df6fda6d6054d1fa3e4e873a9ef9191deb23660624ac219f2bf9",
-      "bytes": 2098
-    },
-    {
-      "path": "references/reading-ui/pepsanon/table-overflow.reference.css",
-      "sourceRelativePath": "references/reading-ui/pepsanon/table-overflow.reference.css",
-      "sha256": "00b5be6e456fb1d0ddff12177300adfaaaa10748340a263e8e18a3f7cf19192b",
-      "bytes": 33
-    },
-    {
-      "path": "references/reading-ui/pepsanon/types.reference.ts",
-      "sourceRelativePath": "references/reading-ui/pepsanon/types.reference.ts",
-      "sha256": "5b5db04115118ad86b44cdfb81a54bc21d4b3ab8da09d5805fc2bb094757d2ad",
-      "bytes": 394
-    },
-    {
-      "path": "references/reading-ui/pepsanon/utils.ts",
-      "sourceRelativePath": "references/reading-ui/pepsanon/utils.ts",
-      "sha256": "53f3d3d070f0a9082934da25b875f9499855c2b0693868dd28be8c23d8730f68",
-      "bytes": 177
     },
     {
       "path": "references/reading-ui/pepsanon-article/README.md",
@@ -250,6 +214,60 @@
       "sourceRelativePath": "references/reading-ui/pepsanon-article/prose-citation.reference.css",
       "sha256": "e04af8d3e620faad151dcf9e96af1fb600becab646ef3741e581aa6362881ed3",
       "bytes": 2498
+    },
+    {
+      "path": "references/reading-ui/pepsanon/evidence-table.tsx",
+      "sourceRelativePath": "references/reading-ui/pepsanon/evidence-table.tsx",
+      "sha256": "79a75c0b7f43031ab556a8431f2f503ada57ebab8ebff2150449898c8bb6ce25",
+      "bytes": 2395
+    },
+    {
+      "path": "references/reading-ui/pepsanon/manifest.json",
+      "sourceRelativePath": "references/reading-ui/pepsanon/manifest.json",
+      "sha256": "9d2d7d28305ee864fcb8f9abfef34a439b0d7a0479e509ee8ee7e139c9422b1e",
+      "bytes": 4217
+    },
+    {
+      "path": "references/reading-ui/pepsanon/research-details.reference.css",
+      "sourceRelativePath": "references/reading-ui/pepsanon/research-details.reference.css",
+      "sha256": "b31f2dc8d985887d502e3b5d586c2b8a4e577fb81cfe108fd8e96b7d08d3f9e4",
+      "bytes": 6172
+    },
+    {
+      "path": "references/reading-ui/pepsanon/research-panel.tsx",
+      "sourceRelativePath": "references/reading-ui/pepsanon/research-panel.tsx",
+      "sha256": "b49ebd6d9f30749291e899abbce61496d6c07d741ccec2ae19463af1f4f4dcc1",
+      "bytes": 4959
+    },
+    {
+      "path": "references/reading-ui/pepsanon/sheet.tsx",
+      "sourceRelativePath": "references/reading-ui/pepsanon/sheet.tsx",
+      "sha256": "63863cf2df8f8973e52b3459ac9bdbf81be1262dbc70eb53d5271ffb03488e16",
+      "bytes": 4188
+    },
+    {
+      "path": "references/reading-ui/pepsanon/table-base.reference.css",
+      "sourceRelativePath": "references/reading-ui/pepsanon/table-base.reference.css",
+      "sha256": "981721456277df6fda6d6054d1fa3e4e873a9ef9191deb23660624ac219f2bf9",
+      "bytes": 2098
+    },
+    {
+      "path": "references/reading-ui/pepsanon/table-overflow.reference.css",
+      "sourceRelativePath": "references/reading-ui/pepsanon/table-overflow.reference.css",
+      "sha256": "00b5be6e456fb1d0ddff12177300adfaaaa10748340a263e8e18a3f7cf19192b",
+      "bytes": 33
+    },
+    {
+      "path": "references/reading-ui/pepsanon/types.reference.ts",
+      "sourceRelativePath": "references/reading-ui/pepsanon/types.reference.ts",
+      "sha256": "5b5db04115118ad86b44cdfb81a54bc21d4b3ab8da09d5805fc2bb094757d2ad",
+      "bytes": 394
+    },
+    {
+      "path": "references/reading-ui/pepsanon/utils.ts",
+      "sourceRelativePath": "references/reading-ui/pepsanon/utils.ts",
+      "sha256": "53f3d3d070f0a9082934da25b875f9499855c2b0693868dd28be8c23d8730f68",
+      "bytes": 177
     },
     {
       "path": "references/research-reviews/README.md",
@@ -828,6 +846,12 @@
       "bytes": 2443
     },
     {
+      "path": "references/theme/microbiome-medicine/src/lib/supabase.ts",
+      "sourceRelativePath": "references/theme/microbiome-medicine/src/lib/supabase.ts",
+      "sha256": "b39dac229c2e2c32c2707696dd79b37c7049cb32ff360e3338745f53ba806ce8",
+      "bytes": 356
+    },
+    {
       "path": "references/theme/microbiome-medicine/src/lib/supabase/client.ts",
       "sourceRelativePath": "references/theme/microbiome-medicine/src/lib/supabase/client.ts",
       "sha256": "23e588c4b4d5dd8c7c2ab5ab599a2494664cf9576bddcdcd6092f28686f95558",
@@ -838,12 +862,6 @@
       "sourceRelativePath": "references/theme/microbiome-medicine/src/lib/supabase/server.ts",
       "sha256": "7b2e52cb3f1fd04ca5b891306c570e6270ed68e580e1e149e04b70d8fdfdd9c9",
       "bytes": 1273
-    },
-    {
-      "path": "references/theme/microbiome-medicine/src/lib/supabase.ts",
-      "sourceRelativePath": "references/theme/microbiome-medicine/src/lib/supabase.ts",
-      "sha256": "b39dac229c2e2c32c2707696dd79b37c7049cb32ff360e3338745f53ba806ce8",
-      "bytes": 356
     },
     {
       "path": "references/theme/microbiome-medicine/src/lib/textRules.ts",
@@ -1053,8 +1071,10 @@
     ]
   },
   "captureVerification": {
-    "sourceByteComparison": "All included source bytes matched the captured file hashes after copy.",
-    "scope": "Scoped source files only; excluded upstream audit/checkpoint files not copied.",
-    "concurrentUpdate": "Canonical changed from v1.28 to v1.29 during audit. Snapshot captures v1.29; no earlier bytes overwritten upstream."
+    "sourceByteComparison": "All included source bytes matched captured hashes after copy.",
+    "scope": "Complete executable instruction/reference dependency snapshot using existing exclusions; no upstream cross-project source notes/checkpoints copied.",
+    "concurrentUpdate": "Prior v1.29 snapshot verified before refresh; all v1.30 source hashes rechecked after copy.",
+    "refreshedAt": "2026-10-11T09:52:12.460891+00:00",
+    "adoptedCorrection": "Small sidebar icons; shared Evidence/Research Feed/FAQs/Update History/References ordering; canonical study summaries; Microbiome history structure/style."
   }
 }

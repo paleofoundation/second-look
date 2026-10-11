@@ -14,12 +14,12 @@ export type UniversalPostType = 'Drug' | 'Condition';
 
 export type UniversalArticleSection = { id: string; label: string };
 
+export const ARTICLE_READER_TAIL = ['Evidence', 'Research Feed', 'FAQs', 'Update History', 'References'] as const;
+
 export const UNIVERSAL_ARTICLE_LABELS = {
   Drug: ['Overview', 'Mechanisms', 'Benefits', 'Safety', 'Contraindications',
-    'Interactions', 'Dosing', 'Results', 'Quality', 'Status', 'FAQs',
-    'Evidence', 'Research'],
-  Condition: ['Overview', 'Options', 'Mechanisms', 'Evidence', 'Safety',
-    'Comparisons', 'FAQs', 'Research'],
+    'Interactions', 'Dosing', 'Results', 'Quality', 'Status', ...ARTICLE_READER_TAIL],
+  Condition: ['Overview', 'Options', 'Mechanisms', 'Safety', 'Comparisons', ...ARTICLE_READER_TAIL],
 } as const;
 
 export type UniversalArticleLabel =
@@ -28,11 +28,11 @@ export type UniversalArticleLabel =
 export type UniversalArticleNavItem = {
   id: string;
   label: UniversalArticleLabel;
-  children?: { id: string; label: 'Studies' | 'References' }[];
+  children?: { id: string; label: string }[];
 };
 
 export type UniversalArticleModule<S extends UniversalArticleSection> = {
-  kind: 'prose' | 'mechanisms' | 'faqs' | 'research';
+  kind: 'prose' | 'mechanisms' | 'faqs' | 'research' | 'updates' | 'references';
   id: string;
   label: UniversalArticleLabel;
   title: string;
@@ -60,14 +60,18 @@ export type UniversalArticlePlan<S extends UniversalArticleSection> = {
 function moduleId(label: UniversalArticleLabel): string {
   if (label === 'Mechanisms') return 'mechanisms';
   if (label === 'FAQs') return 'faqs';
-  if (label === 'Research') return 'research';
+  if (label === 'Research Feed') return 'research-feed';
+  if (label === 'Update History') return 'update-history';
+  if (label === 'References') return 'references';
   return 'section-' + label.toLowerCase();
 }
 
 function moduleKind(label: UniversalArticleLabel): UniversalArticleModule<UniversalArticleSection>['kind'] {
   if (label === 'Mechanisms') return 'mechanisms';
   if (label === 'FAQs') return 'faqs';
-  if (label === 'Research') return 'research';
+  if (label === 'Research Feed') return 'research';
+  if (label === 'Update History') return 'updates';
+  if (label === 'References') return 'references';
   return 'prose';
 }
 
@@ -79,6 +83,7 @@ export function isRetiredArticleSection(section: UniversalArticleSection): boole
 function sectionDestination(type: UniversalPostType, label: string): UniversalArticleLabel | null {
   const normalized = label.trim().toLowerCase();
   if (normalized === 'connections') return null;
+  if (normalized === 'research') return 'Research Feed';
   if (normalized === 'gaps') return type === 'Drug' ? 'Status' : 'Evidence';
   return UNIVERSAL_ARTICLE_LABELS[type].find(candidate => candidate.toLowerCase() === normalized)
     ?? (type === 'Drug' ? 'Benefits' : 'Options');
@@ -111,11 +116,18 @@ export function buildUniversalArticlePlan<S extends UniversalArticleSection>(
   const navigation: UniversalArticleNavItem[] = modules.map(module => ({
     id: module.id,
     label: module.label,
-    ...(module.kind === 'research' ? {
-      children: [{ id: 'studies', label: 'Studies' }, { id: 'references', label: 'References' }] as UniversalArticleNavItem['children'],
-    } : {}),
   }));
   return { type: input.type, modules, blocks, navigation };
+}
+
+/** Shared tail for other article types; navigation and body consume these modules. */
+export function buildArticleReaderTail<S extends UniversalArticleSection>({
+  includeEvidence = true, evidenceSections = [],
+}: { includeEvidence?: boolean; evidenceSections?: S[] } = {}): UniversalArticleModule<S>[] {
+  return ARTICLE_READER_TAIL.filter(label => includeEvidence || label !== 'Evidence').map(label => ({
+    kind: moduleKind(label), id: moduleId(label), label, title: label,
+    sections: label === 'Evidence' ? evidenceSections : [],
+  }));
 }
 
 /** Pure acceptance checks, usable by generation and rendered-route checks. */
@@ -133,8 +145,7 @@ export function universalArticlePlanErrors<S extends UniversalArticleSection>(
   if (plan.navigation.some(item => item.id !== moduleId(item.label)))
     errors.push('Navigation target differs from its canonical module ID.');
   const children = plan.navigation.flatMap(item => (item.children || []).map(child => [item.label, child.id, child.label]));
-  if (JSON.stringify(children) !== JSON.stringify([['Research', 'studies', 'Studies'], ['Research', 'references', 'References']]))
-    errors.push('Only Research may have children, exactly Studies and References.');
+  if (children.length) errors.push('Research Feed and References are separate top-level sections.');
   const original = [...input.sections, ...(input.scopedSections || [])]
     .filter(section => !isRetiredArticleSection(section));
   const preserved = plan.modules.flatMap(module => [...module.sections, ...(module.scoped?.sections || [])]);

@@ -103,6 +103,7 @@ These commands were verified to exist in the inspected checkout. Their listing i
 | `node scripts/content-check.mjs` | Canonical IDs/routes, sidebar labels, citation and sentence closure, source classes and draft boundaries |
 | `node scripts/reader-check.mjs` | Parent coverage, shared outcome identity, source links, extraction status and negative boundary cases |
 | `node scripts/check-reader-sections.mjs --all-profiles` | Actual article SSR, section population, fragments, citations and all canonical profiles |
+| `node scripts/check-article-navigation.mjs` | Matching icon navigation/body order, Research Feed summaries, dated page history, protected-summary rendering fixtures and citation stability |
 | `node scripts/check-evidence-section.mjs` | Evidence section composition and shared outcome/table rendering |
 | `node scripts/check-evidence-grading.mjs` | Compiled grading projection and rejection of invalid/stale assessments |
 | `node scripts/check-wiki-links.mjs` | Wiki links, shared registry, related reading and rendered references |

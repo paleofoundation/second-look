@@ -56,8 +56,15 @@
 .omr-theme .omr-updated { font-size:14px; margin:20px 0; }
 .omr-theme .research-hero__right>.snapshot { margin-top:auto; }
 .omr-theme .omr-toc-label { display:flex; align-items:center; }
+.omr-theme .post-content__item--h2 .omr-toc-label { display:flex; }
 .omr-theme .omr-toc-label>a { flex:1; }
 .omr-theme .omr-toc-label>button { min-width:30px; min-height:30px; border:0; background:transparent; color:var(--color-primary); font-size:22px; }
+.omr-theme .omr-toc-label>a { display:flex; align-items:center; gap:12px; min-height:44px; line-height:1.4; }
+.omr-theme .omr-toc-icon { display:inline-flex; width:22px; height:24px; flex:0 0 22px; align-items:center; justify-content:center; color:currentColor; }
+.omr-theme .omr-toc-icon svg { width:22px; height:24px; }
+.omr-theme .omr-toc-label>button svg { width:16px; height:16px; }
+.omr-theme .research-content__left .research-content__left-btn svg { width:18px; height:18px; transform:none; }
+.omr-theme .omr-toc-label>a:focus-visible,.omr-theme .omr-toc-label>button:focus-visible { outline:2px solid var(--color-primary); outline-offset:2px; border-radius:3px; }
 .omr-theme .post-content__list[hidden] { display:none!important; }
 /* OMR-12: the captured <=1440px rule hid an expanded React contents rail.
    PepsAnon active globals restore this 20rem rail; React hidden is authoritative. */
@@ -72,6 +79,7 @@
 .omr-theme .footer .btn--outline { color:white; border-color:white; }
 
 @media (min-width:992px) {
+  .omr-theme .research-content__left-menu { max-height:calc(100dvh - 140px); overflow-y:auto; overscroll-behavior:contain; }
   .omr-theme .header .menu>li.menu-item-has-children.open>ul.sub-menu { visibility:visible; opacity:1; top:100%; }
   .omr-theme .header .menu>li.menu-item-has-children:not(.open):hover>ul.sub-menu { visibility:hidden; opacity:0; }
   .omr-theme .omr-menu-backdrop { display:none; }
