@@ -1,7 +1,8 @@
 /**
  * Shared drug/condition article composition. Page-authored headings never define
  * the left navigation. This module is data-only and preserves source section
- * objects and their legacy IDs; it performs no scientific transformation.
+ * objects and their legacy IDs except for retired presentation sections; it
+ * performs no scientific transformation and never mutates source records.
  *
  * Render blocks in order. Within each module, render `sections` in order, then
  * its built-in mechanism/FAQ/research content where applicable, then `scoped`.
@@ -15,9 +16,9 @@ export type UniversalArticleSection = { id: string; label: string };
 export const UNIVERSAL_ARTICLE_LABELS = {
   Drug: ['Overview', 'Mechanisms', 'Benefits', 'Safety', 'Contraindications',
     'Interactions', 'Dosing', 'Results', 'Quality', 'Status', 'FAQs',
-    'Evidence', 'Connections', 'Research'],
+    'Evidence', 'Research'],
   Condition: ['Overview', 'Options', 'Mechanisms', 'Evidence', 'Safety',
-    'Comparisons', 'FAQs', 'Connections', 'Research'],
+    'Comparisons', 'FAQs', 'Research'],
 } as const;
 
 export type UniversalArticleLabel =
@@ -69,8 +70,14 @@ function moduleKind(label: UniversalArticleLabel): UniversalArticleModule<Univer
   return 'prose';
 }
 
-function sectionDestination(type: UniversalPostType, label: string): UniversalArticleLabel {
+/** Legacy relationship prose stays in the data, outside the reading sequence. */
+export function isRetiredArticleSection(section: UniversalArticleSection): boolean {
+  return section.label.trim().toLowerCase() === 'connections';
+}
+
+function sectionDestination(type: UniversalPostType, label: string): UniversalArticleLabel | null {
   const normalized = label.trim().toLowerCase();
+  if (normalized === 'connections') return null;
   if (normalized === 'gaps') return type === 'Drug' ? 'Status' : 'Evidence';
   return UNIVERSAL_ARTICLE_LABELS[type].find(candidate => candidate.toLowerCase() === normalized)
     ?? (type === 'Drug' ? 'Benefits' : 'Options');
@@ -88,13 +95,15 @@ export function buildUniversalArticlePlan<S extends UniversalArticleSection>(
   }));
   for (const section of input.sections) {
     const destination = sectionDestination(input.type, section.label);
+    if (destination === null) continue;
     modules.find(module => module.label === destination)!.sections.push(section);
   }
-  if (input.scopedSections?.length) {
+  const scopedSections = input.scopedSections?.filter(section => !isRetiredArticleSection(section)) || [];
+  if (scopedSections.length) {
     modules.find(module => module.label === 'Evidence')!.scoped = {
       id: 'condition-details',
       title: input.scopedSectionsTitle || 'Condition-specific research details',
-      sections: [...input.scopedSections],
+      sections: scopedSections,
     };
   }
   const blocks: UniversalArticleBlock<S>[] = modules.map(module => ({ kind: 'module', module }));
@@ -125,13 +134,16 @@ export function universalArticlePlanErrors<S extends UniversalArticleSection>(
   const children = plan.navigation.flatMap(item => (item.children || []).map(child => [item.label, child.id, child.label]));
   if (JSON.stringify(children) !== JSON.stringify([['Research', 'studies', 'Studies'], ['Research', 'references', 'References']]))
     errors.push('Only Research may have children, exactly Studies and References.');
-  const original = [...input.sections, ...(input.scopedSections || [])];
+  const original = [...input.sections, ...(input.scopedSections || [])]
+    .filter(section => !isRetiredArticleSection(section));
   const preserved = plan.modules.flatMap(module => [...module.sections, ...(module.scoped?.sections || [])]);
+  if (preserved.some(isRetiredArticleSection))
+    errors.push('Retired sections must not appear in article modules.');
   const counts = new Map<S, number>();
   for (const section of original) counts.set(section, (counts.get(section) || 0) + 1);
   for (const section of preserved) counts.set(section, (counts.get(section) || 0) - 1);
   if ([...counts.values()].some(count => count !== 0))
-    errors.push('Original section objects were lost, duplicated or replaced.');
+    errors.push('Active original section objects were lost, duplicated or replaced.');
   for (const articleModule of plan.modules) {
     const expectedSections = input.sections.filter(section => sectionDestination(input.type, section.label) === articleModule.label);
     if (expectedSections.length !== articleModule.sections.length || expectedSections.some((section, index) => articleModule.sections[index] !== section))

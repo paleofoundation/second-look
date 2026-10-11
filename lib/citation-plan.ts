@@ -1,7 +1,7 @@
 import sentenceMapData from '@/data/outcome-sentence-maps.json';
 import {synthesisRows,isPrimarySource,type Guide,type Source,type SynthesisRow} from './content';
 import {mechanismCitationIds} from './mechanisms';
-import {buildUniversalArticlePlan} from '@/components/shared-theme/universal-article';
+import {buildUniversalArticlePlan,isRetiredArticleSection} from '@/components/shared-theme/universal-article';
 import {createCitationOrder} from '@/components/shared-theme/citations';
 import {describeEvidenceConfidence} from '@/components/shared-theme/evidence-confidence';
 const sentenceMaps=sentenceMapData.rows as Record<string,{finding:{text:string;sources:string[]}[];magnitude:{text:string;sources:string[]}[]}>;
@@ -17,16 +17,16 @@ export function hasArticleEvidence(guide:Guide){return ['Drug','Condition','Evid
 
 // The renderer and citation registry consume the same section groups.
 export function articleSectionGroups(guide:Guide){
- const evidence=hasArticleEvidence(guide)?guide.sections.filter(section=>section.label==='Evidence'):[];
- const later=guide.sections.filter(section=>section.label==='Connections');
- const before=guide.sections.filter(section=>!later.includes(section)&&!evidence.includes(section));
- return {first:before.slice(0,1),rest:before.slice(1),scoped:guide.scopedSections||[],later,evidence};
+ const active=guide.sections.filter(section=>!isRetiredArticleSection(section));
+ const evidence=hasArticleEvidence(guide)?active.filter(section=>section.label==='Evidence'):[];
+ const before=active.filter(section=>!evidence.includes(section));
+ return {first:before.slice(0,1),rest:before.slice(1),scoped:(guide.scopedSections||[]).filter(section=>!isRetiredArticleSection(section)),later:[] as Guide['sections'],evidence};
 }
 export function guideCitationOrder(guide:Guide,sources:Source[],additionalGroups:string[][]=[]){
  const isRecord=['Study','Background source','Glossary'].includes(guide.type);
  const rows=(guide.synthesisIds||[]).map(id=>synthesisRows.find(row=>row.id===id)).filter((row):row is SynthesisRow=>!!row);
  const {first,rest,scoped,later,evidence}=articleSectionGroups(guide);
- const sectionSources=(sections:Guide['sections'])=>sections.flatMap(section=>[
+ const sectionSources=(sections:Guide['sections'])=>sections.filter(section=>!isRetiredArticleSection(section)).flatMap(section=>[
   ...(section.sentences?section.sentences.flatMap(sentence=>sentence.sources):section.sources),
   ...(section.questions||[]).flatMap(question=>question.sentences?question.sentences.flatMap(sentence=>sentence.sources):question.sources)
  ]);

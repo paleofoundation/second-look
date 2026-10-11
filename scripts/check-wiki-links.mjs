@@ -32,6 +32,7 @@ function load(file) {
 
 const {createWikiRegistry, wikiRegistry, wikiTokens, wikiTextRenderer} = load(path.join(root, 'lib/wiki-links.tsx'));
 const {content, guideUrl} = load(path.join(root, 'lib/content.ts'));
+const {relatedReadingFor} = load(path.join(root, 'lib/related-reading.ts'));
 const {Article, CitedProse, ResearchCatalog} = load(path.join(root, 'components/article.tsx'));
 const {ThemeProvider} = load(path.join(root, 'components/shared-theme/theme.tsx'));
 const {EvidenceTable} = load(path.join(root, 'components/shared-theme/evidence-table.tsx'));
@@ -86,6 +87,81 @@ assert.equal((cited.match(/class="citation-sup"/g) || []).length, 2, 'Inline lin
 assert(cited.includes('href="#source-ref-fixture-source"'), 'Citation destinations stay intact');
 
 const config = {mainId: 'main', identity: {name: 'Fixture', homeHref: '/'}};
+const renderArticle = guide => renderToStaticMarkup(React.createElement(ThemeProvider, {config},
+  React.createElement(Article, {guide, sources: content.sources.filter(s => guide.sourceIds.includes(s.id))})));
+const relatedUrls = guide => relatedReadingFor(guide).map(guideUrl);
+const renderedRelatedUrls = (guide, rendered = renderArticle(guide)) => {
+  const panels = [...rendered.matchAll(/<nav class="related-reading" aria-label="Related reading">([\s\S]*?)<\/nav>/g)];
+  assert(panels.length <= 1, 'At most one related-reading navigation: ' + guideUrl(guide));
+  return panels.flatMap(panel => [...panel[1].matchAll(/href="([^"]+)"/g)].map(match => match[1]));
+};
+const metformin = content.guides.find(guide => guide.slug === '/drugs/metformin');
+assert(metformin, 'Metformin remains in the guide registry');
+const metforminRelated = ['/conditions/parkinson-disease', '/conditions/schizophrenia', '/conditions/sarcopenia'];
+assert.deepEqual(relatedUrls(metformin), metforminRelated, 'Metformin keeps authored broad-profile relationship priority');
+assert.deepEqual(renderedRelatedUrls(metformin), metforminRelated, 'Sidebar renders Metformin relationships in authored order');
+for (const guide of content.guides) {
+  const selected = relatedUrls(guide);
+  assert(selected.length <= 3, 'Related reading is capped at three: ' + guideUrl(guide));
+  assert.equal(selected.length, new Set(selected).size, 'Related destinations are unique: ' + guideUrl(guide));
+  for (const href of selected) {
+    assert(routes.has(href), 'Related destination exists: ' + href);
+    assert.notEqual(href, guideUrl(guide), 'Related reading excludes self: ' + href);
+  }
+  assert.deepEqual(renderedRelatedUrls(guide), selected, 'Rendered related links match the resolver: ' + guideUrl(guide));
+}
+for (const [condition, drug] of [
+  ['/conditions/long-covid', '/drugs/guanfacine'],
+  ['/conditions/epithelial-ovarian-or-fallopian-tube-carcinoma', '/drugs/fenbendazole'],
+  ['/conditions/glioblastoma', '/drugs/memantine'],
+]) {
+  const guide = content.guides.find(candidate => guideUrl(candidate) === condition);
+  assert(guide, 'Parent condition remains available: ' + condition);
+  const section = guide.sections.find(candidate => candidate.label === 'Options');
+  assert(section, 'Parent condition retains Options prose: ' + condition);
+  const rendered = renderArticle(guide);
+  const options = rendered.match(new RegExp('<section class="article-subsection" id="' + section.id + '">([\\s\\S]*?)<div class="rgbc-faq-block">'))?.[1];
+  assert(options?.includes('href="' + drug + '" class="wiki-link"'),
+    'Inline Options prose preserves drug access without a Connections section: ' + drug);
+  const navigationSentence = section.sentences?.find(sentence => links(wikiTokens(sentence.text, condition)).includes(drug));
+  assert(navigationSentence, 'Navigation sentence participates in the exact paragraph map: ' + drug);
+  assert.deepEqual(navigationSentence.sources, [], 'Navigation-only text does not borrow an unrelated study citation: ' + drug);
+}
+const relatedFixture = {
+  id: 'fixture-related-reading', entityId: 'fixture-entity', slug: '/fixtures/related-reading', title: 'Fixture', type: 'Drug',
+  description: '', topicIds: [], sections: [], faqs: [], sourceIds: [], related: [],
+};
+const parkinson = content.guides.find(guide => guide.slug === '/conditions/parkinson-disease');
+assert(parkinson);
+const fallbackFixture = {...relatedFixture,
+  related: ['missing-guide', metformin.id, metformin.id],
+  description: 'Long COVID and Parkinson disease.',
+  candidateLinks: [{id: 'missing', title: 'Missing', url: '/conditions/missing', state: ''}],
+};
+assert.deepEqual(relatedUrls(fallbackFixture), ['/drugs/metformin', '/conditions/long-covid', '/conditions/parkinson-disease'],
+  'Invalid and duplicate curated IDs leave room for relevant canonical fallback');
+const selfFixture = {...relatedFixture, id: metformin.id, slug: metformin.slug,
+  related: [metformin.id, 'missing-guide', parkinson.id, parkinson.id],
+};
+assert.deepEqual(relatedUrls(selfFixture), ['/conditions/parkinson-disease'], 'Self and duplicate IDs do not consume sidebar slots');
+assert.deepEqual(renderedRelatedUrls(selfFixture), ['/conditions/parkinson-disease'], 'Fewer than three relevant links render without filler');
+const legacyOnly = {...relatedFixture,
+  sections: [{id: 'old-connections', label: ' Connections ', title: 'Connections', paragraph: 'Metformin and Long COVID.', sources: []}],
+  scopedSections: [{id: 'old-scoped-connections', label: 'connections', title: 'Connections', paragraph: 'Parkinson disease.', sources: []}],
+};
+assert.deepEqual(relatedUrls(legacyOnly), [], 'Removed Connections-only mentions cannot supply sidebar relevance');
+assert.deepEqual(renderedRelatedUrls(relatedFixture), [], 'An unrelated page has no empty related-reading panel');
+const autophagy = content.glossary.find(term => term.slug === 'autophagy');
+assert(autophagy, 'Autophagy glossary page exists for backlink coverage');
+const glossaryFixture = {...relatedFixture, id: 'term-autophagy', slug: '/glossary/autophagy', title: autophagy.title,
+  type: 'Glossary', sections: [{id: 'meaning', label: 'Meaning', title: 'Meaning', paragraph: autophagy.meaning, sources: autophagy.sources}],
+  sourceIds: autophagy.sources,
+};
+const glossaryRelated = relatedUrls(glossaryFixture);
+assert.equal(glossaryRelated.length, 3, 'A widely used glossary term selects three contextual backlinks');
+assert.equal(new Set(glossaryRelated).size, 3, 'Glossary backlinks are unique');
+assert(!glossaryRelated.includes(glossaryFixture.slug), 'Glossary backlinks exclude self');
+assert.deepEqual(renderedRelatedUrls(glossaryFixture), glossaryRelated, 'Glossary rendered backlinks share the three-link cap');
 for (const slug of ['/drugs/metformin', '/conditions/long-covid']) {
   const guide = content.guides.find(g => g.slug === slug);
   assert(guide);
@@ -163,4 +239,4 @@ if (process.argv.includes('--require-new-content')) {
     }
   }
 }
-console.log('PASS: canonical wiki routes, aliases, longest whole-word matches, paragraph deduplication, self/URL protection, article SSR, reciprocal condition/drug links, Overview headings, source/citation integrity, evidence and mechanism prose.');
+console.log('PASS: canonical wiki routes, aliases, longest whole-word matches, paragraph deduplication, self/URL protection, article SSR, reciprocal condition/drug links, Overview headings, source/citation integrity, evidence and mechanism prose; ordered related reading, canonical fallback, legacy Connections exclusion, and three-link sidebar/backlink cap.');

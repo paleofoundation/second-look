@@ -143,3 +143,10 @@ sup.citation-sup,
 .omr-theme a.wiki-link:focus-visible {
   text-decoration-color: currentColor;
 }
+.omr-theme .related-reading { margin: 0 0 28px; }
+.omr-theme .related-reading h2 { font-family: Inter, Arial, sans-serif; font-size: 16px; line-height: 1.5; margin: 0 0 12px; padding-bottom: 10px; border-bottom: 1px solid var(--omr-border, #dce3e6); }
+.omr-theme .related-reading ul { list-style: none; padding: 0; margin: 0; }
+.omr-theme .related-reading li + li { margin-top: 6px; }
+.omr-theme .related-reading a { display: block; padding: 8px 0; color: var(--omr-link); font-size: 14px; line-height: 1.6; text-decoration: none; overflow-wrap: anywhere; }
+.omr-theme .related-reading a:hover, .omr-theme .related-reading a:focus-visible { text-decoration: underline; text-underline-offset: 3px; }
+@media (max-width: 991px) { .omr-theme .related-reading a { padding: 11px 0; font-size: 16px; } }

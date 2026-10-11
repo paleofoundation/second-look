@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-11",
+  "change": "Retire Connections from article and navigation; inline wiki relationships and maximum three contextual sidebar links",
+  "baselineCommit": "db070638f2a9aaf545cf52364a8cece368813ac5",
+  "references": {
+    "microbiomeMedicine": {
+      "commit": "28ed85b6d510dfddf1720775b456771c7dc62763",
+      "files": [
+        "src/lib/connections.ts",
+        "src/components/RightRail.tsx"
+      ],
+      "adaptation": "Authored priority before relevant fallback; maximum three."
+    },
+    "pepsanon": {
+      "files": [
+        "components/peptide/shell.tsx",
+        "lib/peptides.ts",
+        "app/globals.css"
+      ],
+      "adaptation": "Curated ResearchRail links and compact link presentation."
+    }
+  },
+  "selection": "Canonical unique nonself destinations; authored order, then opposite-type paragraph relevance, then valid candidate relationship fallback. No efficacy ranking. Fewer than three allowed.",
+  "metforminTopThree": [
+    "/conditions/parkinson-disease",
+    "/conditions/schizophrenia",
+    "/conditions/sarcopenia"
+  ],
+  "preservedInlineAccess": {
+    "/conditions/long-covid": "/drugs/guanfacine",
+    "/conditions/epithelial-ovarian-or-fallopian-tube-carcinoma": "/drugs/fenbendazole",
+    "/conditions/glioblastoma": "/drugs/memantine"
+  },
+  "checks": [
+    "TypeScript noEmit passed",
+    "64 profile article SSR and 396 question checks passed",
+    "all-guide related reading cap/routes/order/dedup/self/legacy exclusions passed",
+    "content and reader boundary checks passed",
+    "No unique scientific findings lost in retired prose audit"
+  ],
+  "browser": {
+    "widths": [
+      320,
+      390,
+      768,
+      1280
+    ],
+    "overflow": false,
+    "journeys": [
+      "Metformin related link to Parkinson disease and back",
+      "Metformin inline type 2 diabetes and back"
+    ],
+    "overviewConditionLinks": 5,
+    "mobileRailAfterArticle": true
+  },
+  "scope": "Navigation and presentation; three navigation-only sentences added, no new scientific assertion, appraisal or audience change."
+}

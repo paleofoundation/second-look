@@ -48,7 +48,8 @@ function load(file) {
 
 const {Article} = load(path.join(root, 'components/article.tsx'));
 const {ThemeProvider} = load(path.join(root, 'components/shared-theme/theme.tsx'));
-const {guideCitationOrder} = load(path.join(root, 'lib/citation-plan.ts'));
+const {guideCitationOrder,articleSectionGroups} = load(path.join(root, 'lib/citation-plan.ts'));
+const {buildUniversalArticlePlan,universalArticlePlanErrors,isRetiredArticleSection} = load(path.join(root, 'components/shared-theme/universal-article.ts'));
 const {drugMechanismFor} = load(path.join(root, 'lib/mechanisms.ts'));
 const sourceIds = ['overview', 'original', 'summary', 'mechanism-question', 'benefits', 'benefit-question', 'faq'];
 const sources = sourceIds.map(id => ({id, title: id + ' source', preview: 'Source finding.',
@@ -89,6 +90,41 @@ assert(missing.includes('id="mechanisms"'), 'Canonical mechanism anchor remains 
 assert(!missing.includes('Original action.'), 'An unrelated guide does not inherit another drug’s mechanism');
 assert(!missing.includes('not yet available') && !missing.includes('FAQ coverage is incomplete'));
 console.log('PASS: actual article SSR, prose and canonical accordions, mechanism scope, first-appearance citations, blank and missing content, and workflow-copy regression checks.');
+
+// Relationship data is retained, but its retired article module must never be
+// reassigned to Benefits/Options or enter the body/citation reading sequence.
+const retiredSection = {id:'retired-connections',label:'Connections',title:'Connections',
+ paragraph:'Retired relationship prose sentinel.',sources:['retired-only'],
+ questions:[{id:'retired-question',question:'Retired relationship question?',answer:'Retired relationship answer sentinel.',sources:['retired-only']}]};
+const retiredScoped = {...retiredSection,id:'retired-scoped-connections',label:' connections ',questions:[]};
+const activeScoped = {id:'active-scoped',label:'Details',title:'Scoped evidence',paragraph:'Active scoped evidence sentinel.',sources:['scoped']};
+const retirementSources = [...sources,...['retired-only','scoped'].map(id=>({id,title:id+' source',preview:'Source finding.',url:'https://example.org/'+id,sourceType:'context'}))];
+for(const type of ['Drug','Condition','Explainer','Drug–condition evidence answer','Evidence comparison','Glossary','Study','Background source']){
+ const fixture={...guide,type,sourceIds:[...guide.sourceIds,'scoped'],
+  sections:[retiredSection,...guide.sections],scopedSections:[retiredScoped,activeScoped]};
+ const snapshot=JSON.stringify(fixture);
+ const groups=articleSectionGroups(fixture);
+ assert(!Object.values(groups).flat().some(isRetiredArticleSection),type+': retired main/scoped sections excluded from render groups');
+ const order=guideCitationOrder(fixture,retirementSources);
+ assert(!order.includes('retired-only'),type+': retired section citations excluded from traversal');
+ assert(order.includes('scoped'),type+': active scoped citation retained');
+ if(type==='Drug'||type==='Condition'){
+  const plan=buildUniversalArticlePlan(fixture);
+  assert.deepEqual(universalArticlePlanErrors(fixture,plan),[],type+': retirement preserves active-section invariants');
+  assert(!plan.modules.some(module=>module.label==='Connections'),type+': no Connections module');
+  assert(!plan.navigation.some(item=>item.label==='Connections'),type+': no Connections navigation');
+  assert(!plan.modules.flatMap(module=>[...module.sections,...(module.scoped?.sections||[])]).some(isRetiredArticleSection),type+': no fallback destination for retired sections');
+  const retiredOnlyPlan=buildUniversalArticlePlan({...fixture,scopedSections:[retiredScoped]});
+  assert(!retiredOnlyPlan.modules.some(module=>module.scoped),type+': no empty scoped wrapper after retirement');
+ }
+ const retiredHtml=render(fixture,retirementSources);
+ assert(!retiredHtml.includes('Retired relationship prose sentinel.')&&!retiredHtml.includes('Retired relationship answer sentinel.'),type+': retired prose and questions absent from body');
+ assert(!retiredHtml.includes('href="#retired-connections"')&&!retiredHtml.includes('href="#section-connections"'),type+': no retired navigation targets');
+ assert(!retiredHtml.includes('data-universal-section="Connections"'),type+': no retired body module');
+ assert(retiredHtml.includes('Active scoped evidence sentinel.'),type+': active scoped body remains');
+ assert.equal(JSON.stringify(fixture),snapshot,type+': original relationship data remains intact');
+}
+console.log('PASS: Connections retired from all guide render groups, universal modules/navigation and main/scoped citation traversal; active content and legacy data preserved.');
 
 // Run the same checks against the actual public Metformin content, not a fixture.
 const {content} = load(path.join(root, 'lib/content.ts'));
@@ -163,7 +199,7 @@ if (process.argv.includes('--all-profiles')) {
  let totalQuestions=0;
  for(const profile of profiles){
   const label=profile.slug;
-  const required=profile.type==='Drug'?['Overview','Benefits','Safety','Contraindications','Interactions','Dosing','Results','Quality','Status','Evidence','Connections']:['Overview','Options','Evidence','Safety','Comparisons','Connections'];
+  const required=profile.type==='Drug'?['Overview','Benefits','Safety','Contraindications','Interactions','Dosing','Results','Quality','Status','Evidence']:['Overview','Options','Evidence','Safety','Comparisons'];
   for(const name of required)assert(profile.sections.some(s=>s.label===name&&s.paragraph.trim().length>25),label+': substantive '+name+' prose');
   const opening=profile.sections.find(s=>s.label===(profile.type==='Drug'?'Benefits':'Options'));
   assert(opening.questions?.length,label+': specific benefit/option questions');
@@ -177,6 +213,10 @@ if (process.argv.includes('--all-profiles')) {
   const page=render(profile,pageSources);
   const center=page.match(/<article class="research-content__center entry-content">([\s\S]*?)<\/article>/)?.[1];
   assert(center,label+': article rendered');
+  const plan=buildUniversalArticlePlan(profile);
+  assert.deepEqual(universalArticlePlanErrors(profile,plan),[],label+': active section invariants');
+  assert(!plan.modules.some(module=>module.label==='Connections')&&!plan.navigation.some(item=>item.label==='Connections'),label+': Connections module and navigation absent');
+  assert(!center.includes('data-universal-section="Connections"')&&!page.includes('href="#section-connections"'),label+': Connections absent from rendered body and navigation');
   const overview=center.match(/data-universal-section="Overview">([\s\S]*?)<\/section><\/section>/)?.[1];
   assert(overview&&overview.includes('<h2>Overview</h2>'),label+': canonical Overview heading');
   assert(!overview.includes('<h3>'),label+': Overview has no duplicate authored question heading');
@@ -192,7 +232,7 @@ if (process.argv.includes('--all-profiles')) {
   for(const c of citations){assert.equal(+c[2],order.indexOf(c[1])+1,label+': sequential citation');assert(pageIds.includes('source-ref-'+encodeURIComponent(c[1])),label+': citation target');}
   for(const section of profile.sections){
    if(section.sentences)assert.equal(section.sentences.map(s=>s.text.trim()).join(' '),section.paragraph.trim(),label+': section sentence map');
-   for(const q of section.questions||[]){assert(center.includes('class="rgbc-faq-item" id="'+q.id+'"'),label+': canonical question '+q.id);assert(q.answer.length>30&&q.sources.length,label+': sourced question answer');assert(q.sources.every(id=>profile.sourceIds.includes(id)),label+': question source closure');totalQuestions++;}
+   for(const q of section.questions||[]){if(!isRetiredArticleSection(section)){assert(center.includes('class="rgbc-faq-item" id="'+q.id+'"'),label+': canonical question '+q.id);totalQuestions++;}assert(q.answer.length>30&&q.sources.length,label+': sourced question answer');assert(q.sources.every(id=>profile.sourceIds.includes(id)),label+': question source closure');}
   }
   for(const p of [mechanism.originalAction,mechanism.summary,...mechanism.questions].filter(Boolean))assert(p.sourceIds.length&&p.sourceIds.every(id=>profile.sourceIds.includes(id)),label+': mechanism source closure');
   totalQuestions+=mechanism.questions.length+profile.faqs.length;
