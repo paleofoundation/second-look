@@ -4,7 +4,10 @@ const data=JSON.parse(fs.readFileSync('data/content.json','utf8'));
 const reader=JSON.parse(fs.readFileSync('data/reader-evidence.json','utf8'));
 const sources=new Map(data.sources.map(s=>[s.id,s]));
 const guides=new Map(data.guides.map(g=>[g.id,g]));
-const parents=new Map(data.guides.filter(g=>g.entityId).map(g=>[g.entityId,g]));
+const parentRecords=data.guides.filter(g=>g.entityId);
+const parents=new Map(parentRecords.map(g=>[g.entityId,g]));
+const drugParents=parentRecords.filter(g=>g.type==='Drug').length;
+const conditionParents=parentRecords.filter(g=>g.type==='Condition').length;
 const rows=new Map(reader.synthesisRows.map(r=>[r.id,r]));
 function checkRow(row){
  assert.equal(row.certainty.label,'Not appraised','No formal grade authorized');
@@ -16,7 +19,15 @@ function checkRow(row){
  for(const effect of row.effects){assert(row.sourceIds.includes(effect.sourceId));if(effect.value===null)assert(effect.missingReason||effect.uncertainty.missing_reason||effect.recordedResult,'Missing effect must have a reason')}
  for(const id of [row.drugId,row.conditionId])assert(parents.get(id)?.synthesisIds.includes(row.id),'Parent must reuse exact row');
 }
-assert.equal([...parents.values()].filter(g=>g.type==='Drug').length,30);assert.equal([...parents.values()].filter(g=>g.type==='Condition').length,30);
+assert.equal(guides.size,data.guides.length,'Guide IDs must be unique');
+assert.equal(parents.size,parentRecords.length,'Every entity ID must have exactly one canonical parent');
+const routes=data.guides.map(g=>g.slug.startsWith('/')?g.slug:`/answers/${g.slug}`);
+assert.equal(new Set(routes).size,routes.length,'Canonical guide routes must be unique');
+for(let index=1;index<=30;index++){
+ const suffix=String(index).padStart(2,'0');
+ assert.equal(parents.get('D'+suffix)?.type,'Drug','Baseline drug parent D'+suffix+' remains present with its type');
+ assert.equal(parents.get('C'+suffix)?.type,'Condition','Baseline condition parent C'+suffix+' remains present with its type');
+}
 for(const g of guides.values()){
  const used=[...g.sections.flatMap(s=>[...s.sources,...(s.sentences||[]).flatMap(v=>v.sources)]),...g.faqs.flatMap(f=>[...f.sources,...(f.sentences||[]).flatMap(v=>v.sources)])];
  for(const rid of g.synthesisIds||[]){const row=rows.get(rid);assert(row);used.push(...row.sourceIds)}
@@ -28,5 +39,5 @@ const negative=[];
 for(const [name,mutate] of [['invented grade',r=>r.certainty.label='High'],['false completion',r=>r.coverage.complete=true],['quarantined source',r=>r.sourceIds.push('P-REVIVE-2026')],['unknown source',r=>r.sourceIds.push('missing')],['unapproved release',r=>r.publicationState='public']]){const fixture=structuredClone(reader.synthesisRows[1]);mutate(fixture);assert.throws(()=>checkRow(fixture));negative.push(name)}
 const bg=structuredClone(reader.synthesisRows.find(r=>r.status==='background_only')||JSON.parse(fs.readFileSync('editorial/retired-background-outcome-rows.json','utf8'))[0]);bg.countsAsPrimaryEvidence=true;assert.throws(()=>checkRow(bg));negative.push('background inflated to primary');
 assert(data.guides.find(g=>g.entityId==='D07').synthesisIds.length>0);
-const report={status:'PASS',drugParents:30,conditionParents:30,sharedRows:rows.size,backgroundRows:reader.synthesisRows.filter(r=>r.status==='background_only').length,reciprocalLinks:[...parents.values()].reduce((n,g)=>n+(g.candidateLinks||[]).length,0),checks:'Reader FK closure, sentence/source closure, same row reused on both parents, exact tier and approval boundaries, all target routes',negativeCasesRejected:negative};
+const report={status:'PASS',drugParents,conditionParents,sharedRows:rows.size,backgroundRows:reader.synthesisRows.filter(r=>r.status==='background_only').length,reciprocalLinks:[...parents.values()].reduce((n,g)=>n+(g.candidateLinks||[]).length,0),checks:'Baseline D01-D30 and C01-C30 coverage/types, unique entity IDs and routes, reader FK closure, sentence/source closure, same row reused on both parents, exact tier and approval boundaries, all target routes',negativeCasesRejected:negative};
 console.log(JSON.stringify(report));

@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "sourceFields": [
+    "id",
+    "title",
+    "doi",
+    "url",
+    "year",
+    "design",
+    "population",
+    "access",
+    "reviewState",
+    "sourceType",
+    "preview",
+    "decisiveLimit",
+    "locators"
+  ],
+  "extractionFields": {
+    "sourceId": "canonical string",
+    "drugId": "canonical string",
+    "conditionIds": "array (may be empty for parent mechanism)",
+    "tier": "PRIMARY | CONTEXT",
+    "sourceUrl": "URL",
+    "sourceHash": "SHA256 of acquired source if saved; null if web-only",
+    "nativeLocator": "section/figure/table and paragraph detail",
+    "modelSpeciesTissue": "string",
+    "exposure": {
+      "molecule": "string",
+      "formulation": "string | null",
+      "route": "string | null",
+      "concentration": "value/unit | null",
+      "duration": "string | null",
+      "missingState": "not_extracted | not_reported | not_applicable | null"
+    },
+    "causalSteps": "array of {step,basis:tested|proposed|inferred,measuredReadout,locator}",
+    "translationLimits": "array",
+    "status": "extracted | partial | access_blocked | pending",
+    "sourceIntegrity": "checked source page; further corrections/supplement audit pending unless performed"
+  },
+  "reviewSchema": {
+    "questions": "keyed Q01\u2013Q15; each value {fields,status,sourceId,sourceHash,nativeLocator,extractionBasis,missingReason,nextAction}",
+    "questionMap": "review-question-input-map.json",
+    "approvalState": "pending",
+    "studies": "distinct study identity",
+    "experiments": "distinct model/experimental unit per assay; no pooling technical and biological n",
+    "arms": "defined comparator/exposure",
+    "outcomes": "instrument/timepoint/units",
+    "results": "estimate value numeric|null, unit, comparator, uncertainty|null; missingState explicit"
+  },
+  "publicMechanismFormat": "DrugMechanism-compatible records; preserve sourceIds/sentences; no provenance/process fields in public prose"
+}

@@ -157,7 +157,9 @@ console.log('PASS: public Metformin SSR; condition-specific mechanisms; visible 
 
 if (process.argv.includes('--all-profiles')) {
  const profiles=content.guides.filter(g=>g.type==='Drug'||g.type==='Condition');
- assert.equal(profiles.length,62,'All 31 drugs, 30 conditions and one aging goal are included');
+ const expectedProfiles=content.guides.filter(g=>g.slug.startsWith('/drugs/')||g.slug.startsWith('/conditions/'));
+ assert.deepEqual(new Set(profiles.map(g=>g.slug)),new Set(expectedProfiles.map(g=>g.slug)),'Every drug/condition route participates in profile checks');
+ assert(profiles.some(g=>g.slug==='/drugs/metformin')&&profiles.some(g=>g.slug==='/conditions/long-covid'),'Core drug and condition coverage remains present');
  let totalQuestions=0;
  for(const profile of profiles){
   const label=profile.slug;
@@ -175,6 +177,9 @@ if (process.argv.includes('--all-profiles')) {
   const page=render(profile,pageSources);
   const center=page.match(/<article class="research-content__center entry-content">([\s\S]*?)<\/article>/)?.[1];
   assert(center,label+': article rendered');
+  const overview=center.match(/data-universal-section="Overview">([\s\S]*?)<\/section><\/section>/)?.[1];
+  assert(overview&&overview.includes('<h2>Overview</h2>'),label+': canonical Overview heading');
+  assert(!overview.includes('<h3>'),label+': Overview has no duplicate authored question heading');
   const visible=textOf(center);
   assert(!/not yet available|not yet reviewed|source-backed explanation.*not|assessment remains incomplete|accepted record|in this corpus|full review pending|How to read the evidence across conditions|Laboratory activity, a proposed pathway|Scientific review pending/i.test(visible),label+': production placeholders cannot replace answers');
   const pageIds=[...page.matchAll(/\sid="([^"]+)"/g)].map(m=>m[1]);

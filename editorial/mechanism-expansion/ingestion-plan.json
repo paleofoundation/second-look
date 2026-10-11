@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "scope": "Bounded primary mechanism expansion for eight named drugs; mechanistic evidence distinct from clinical benefit",
+  "drugs": {
+    "D01": "metformin",
+    "D06": "sirolimus/rapamycin",
+    "D07": "itraconazole",
+    "D08": "ivermectin",
+    "D10": "fenbendazole",
+    "D26": "sildenafil",
+    "D31": "tadalafil",
+    "D34": "fluconazole"
+  },
+  "inputs": [
+    "data/content.json",
+    "data/public-mechanisms.json",
+    "data/public-content.json",
+    "editorial/metformin-source-additions.json"
+  ],
+  "sourcePolicy": {
+    "reuse": "Deduplicate source IDs/DOIs/URLs against canonical content; retain accepted source IDs",
+    "new": "Original experiments with lawfully accessible full-text methods/results, native headings/figures and exact URLs",
+    "secondary": "Acquisition leads/context only, never upgrade to primary",
+    "disallowedInference": [
+      "cell effect proves patient benefit",
+      "vasodilation proves tissue oxygenation",
+      "azole class implies identical antitumor/biofilm effects",
+      "autophagy is always beneficial or synonymous with apoptosis"
+    ]
+  },
+  "searchPlan": [
+    {
+      "family": "itraconazole",
+      "queries": [
+        "itraconazole hedgehog inhibitor Kim 2010 full text",
+        "itraconazole cholesterol trafficking mTOR endothelial cells 2010 full text NPC1"
+      ]
+    },
+    {
+      "family": "fenbendazole",
+      "queries": [
+        "fenbendazole microtubule destabilizing agent multiple cellular pathways cancer 2018 full text"
+      ]
+    },
+    {
+      "family": "fluconazole",
+      "queries": [
+        "Candida albicans fluconazole mature biofilm resistance hyphal formation original full text"
+      ]
+    },
+    {
+      "family": "ivermectin",
+      "queries": [
+        "ivermectin WNT TCF 2014 full text",
+        "ivermectin PAK1 Akt cytostatic autophagy 2016 full text"
+      ]
+    },
+    {
+      "family": "perfusion",
+      "queries": [
+        "sildenafil tadalafil tissue oxygenation perfusion randomized trial full text Raynaud"
+      ]
+    },
+    {
+      "family": "existing mechanistic source verification",
+      "queries": [
+        "metformin Parkinson autophagy 2016 full text",
+        "rapamycin oral health aging mice 2020 full text"
+      ]
+    }
+  ],
+  "boundedWork": "At least one inspected original primary mechanism per drug where accessible; log verified access gaps, do not force completeness. New scholarly sources receive unique Q01\u2013Q15 input map. No human approval claimed.",
+  "outputs": [
+    "mechanism-additions.json",
+    "source-extraction-ledger.json",
+    "review-inputs.jsonl",
+    "retrieval-brief.md",
+    "coverage-ledger.json"
+  ],
+  "acceptance": [
+    "Every new material mechanistic sentence resolves to a verified source and native locator",
+    "Tested vs proposed vs inferred and model/exposure/translation limit are explicit in ledger",
+    "Existing IDs reused; new sources pending review; no added duplicate study",
+    "Eight-drug coverage ledger separates supported expansion from pending gaps",
+    "No scientific approval or clinical efficacy inferred from mechanism"
+  ],
+  "readiness": {
+    "status": "PASS",
+    "scope": "Planning readiness only, not scientific acceptance",
+    "checks": {
+      "canonicalInputsReadable": true,
+      "outputOwnershipBounded": true,
+      "sourceSchemaPersisted": true,
+      "Q01_Q15MapPersisted": true,
+      "dedupPlanDefined": true,
+      "accessAndExposureStatesExplicit": true,
+      "clinicalInferenceBoundaryDefined": true,
+      "fluconazoleCanonicalIDConfirmed": true
+    },
+    "approval": "No owner or human scientific approval inferred"
+  }
+}

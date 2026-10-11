@@ -1,0 +1,299 @@
+{
+  "schemaVersion": 1,
+  "questionSetVersion": "one-match-1.14-Q01-Q15",
+  "status": "required_by_owner_in_rule; not scientific review completion",
+  "source": "ONE-MATCH-RULE.md section 8",
+  "inputMapPurpose": "Plan requests and per-paper review-inputs.jsonl before first handoff/ingest; reported extraction is separate from appraisal. Source requests are conditional on design and permitted scope.",
+  "questions": [
+    {
+      "id": "Q01",
+      "question": "What question was actually tested?",
+      "requiredCoverage": "Objective, prespecification and the precise claim/outcome addressed",
+      "inputFields": [
+        "objective",
+        "prespecification",
+        "claim_outcome"
+      ],
+      "sourceRequests": [
+        "full report objectives",
+        "protocol/registration/analysis plan where available"
+      ],
+      "interpretationOwner": "review author; never worker-inferred human approval"
+    },
+    {
+      "id": "Q02",
+      "question": "Who or what was studied?",
+      "requiredCoverage": "Human participants versus animals, isolated human tissue or cells; eligibility, setting and recruited/treated/analyzed counts",
+      "inputFields": [
+        "population_species",
+        "eligibility_setting",
+        "recruited_treated_analyzed_counts"
+      ],
+      "sourceRequests": [
+        "methods",
+        "participant flow",
+        "baseline table",
+        "supplements"
+      ],
+      "interpretationOwner": "review author; never worker-inferred human approval"
+    },
+    {
+      "id": "Q03",
+      "question": "What exactly was used?",
+      "requiredCoverage": "Molecule/formulation, route, exposure, schedule, follow-up, product identity and co-interventions",
+      "inputFields": [
+        "identity_formulation",
+        "route_exposure_schedule",
+        "cointerventions",
+        "followup"
+      ],
+      "sourceRequests": [
+        "intervention methods",
+        "supplements",
+        "product characterization as reported"
+      ],
+      "interpretationOwner": "review author; never worker-inferred human approval"
+    },
+    {
+      "id": "Q04",
+      "question": "What was the comparator?",
+      "requiredCoverage": "Control, allocation, randomization, blinding and timing; state their absence",
+      "inputFields": [
+        "comparator",
+        "allocation",
+        "randomization",
+        "blinding",
+        "timing"
+      ],
+      "sourceRequests": [
+        "methods",
+        "protocol/registration",
+        "analysis plan"
+      ],
+      "interpretationOwner": "review author; never worker-inferred human approval"
+    },
+    {
+      "id": "Q05",
+      "question": "What was measured and does it matter?",
+      "requiredCoverage": "Primary/secondary/exploratory outcome, instrument, timepoint, clinical versus surrogate endpoint and meaningful-change threshold if established",
+      "inputFields": [
+        "outcome_hierarchy",
+        "instrument",
+        "timepoint",
+        "endpoint_class",
+        "meaningful_change_threshold"
+      ],
+      "sourceRequests": [
+        "protocol/registration",
+        "methods/outcome definitions",
+        "source for any claimed threshold"
+      ],
+      "interpretationOwner": "review author; never worker-inferred human approval"
+    },
+    {
+      "id": "Q06",
+      "question": "How large was the result?",
+      "requiredCoverage": "Each relevant arm, numerator/denominator, units, absolute contrast and uncertainty; within-group versus between-group distinction",
+      "inputFields": [
+        "arm_results",
+        "numerators_denominators",
+        "estimate_units",
+        "contrast",
+        "uncertainty"
+      ],
+      "sourceRequests": [
+        "results tables/figures",
+        "supplements",
+        "statistical methods"
+      ],
+      "interpretationOwner": "review author; never worker-inferred human approval"
+    },
+    {
+      "id": "Q07",
+      "question": "What happened to the other observations?",
+      "requiredCoverage": "Attrition, missing outcomes, adherence, exclusions, analysis population and experimental unit; repeated measurements are not extra participants",
+      "inputFields": [
+        "attrition",
+        "missingness",
+        "adherence",
+        "exclusions",
+        "analysis_population",
+        "experimental_unit"
+      ],
+      "sourceRequests": [
+        "flow diagram",
+        "analysis methods",
+        "supplements"
+      ],
+      "interpretationOwner": "review author; never worker-inferred human approval"
+    },
+    {
+      "id": "Q08",
+      "question": "What harms were sought and found?",
+      "requiredCoverage": "Ascertainment method, exposed denominator, follow-up, severity/events/withdrawals and detection limits",
+      "inputFields": [
+        "harms_ascertainment",
+        "exposure_denominator",
+        "events_severity",
+        "withdrawals",
+        "observation_time"
+      ],
+      "sourceRequests": [
+        "safety methods/results",
+        "supplements",
+        "available registry results"
+      ],
+      "interpretationOwner": "review author; never worker-inferred human approval"
+    },
+    {
+      "id": "Q09",
+      "question": "How could the design or analysis mislead?",
+      "requiredCoverage": "Applicable bias, confounding, selective reporting, multiplicity, precision and internal inconsistencies with source locators",
+      "inputFields": [
+        "bias_domains",
+        "confounding",
+        "selective_reporting",
+        "multiplicity",
+        "precision",
+        "inconsistencies"
+      ],
+      "sourceRequests": [
+        "full design/statistical methods",
+        "protocol/analysis plan comparison",
+        "results/supplements"
+      ],
+      "interpretationOwner": "review author; never worker-inferred human approval"
+    },
+    {
+      "id": "Q10",
+      "question": "Does this apply to the reader or product?",
+      "requiredCoverage": "Population, indication, molecule, formulation, route, exposure and endpoint matches/mismatches",
+      "inputFields": [
+        "population_indication_match",
+        "formulation_route_exposure_match",
+        "endpoint_match",
+        "limits"
+      ],
+      "sourceRequests": [
+        "paper details plus scoped destination question/product facts"
+      ],
+      "interpretationOwner": "review author; never worker-inferred human approval"
+    },
+    {
+      "id": "Q11",
+      "question": "Is this independent evidence?",
+      "requiredCoverage": "Cohort/study/experiment identity, overlapping reports, follow-ups and replication search scope",
+      "inputFields": [
+        "study_family",
+        "related_reports",
+        "overlap",
+        "replication_search_scope"
+      ],
+      "sourceRequests": [
+        "trial/cohort identifiers",
+        "related reports",
+        "documented scoped search when permitted"
+      ],
+      "interpretationOwner": "review author; never worker-inferred human approval"
+    },
+    {
+      "id": "Q12",
+      "question": "Who conducted and supported it?",
+      "requiredCoverage": "Authors, setting, funding, supplied products and disclosed conflicts without treating funding alone as proof of validity or invalidity",
+      "inputFields": [
+        "authors",
+        "setting",
+        "funding",
+        "supplied_products",
+        "conflicts"
+      ],
+      "sourceRequests": [
+        "byline/affiliations",
+        "funding and conflict disclosures",
+        "supplementary disclosures"
+      ],
+      "interpretationOwner": "review author; never worker-inferred human approval"
+    },
+    {
+      "id": "Q13",
+      "question": "Is the source current and intact?",
+      "requiredCoverage": "Version/preprint status, access, supplements, protocol/registration, corrections/retractions, check dates and unfinished checks",
+      "inputFields": [
+        "source_version",
+        "access",
+        "supplements",
+        "registration",
+        "corrections_retractions",
+        "check_date"
+      ],
+      "sourceRequests": [
+        "publisher/version/correction notices",
+        "registry",
+        "dated integrity checks within permitted scope"
+      ],
+      "interpretationOwner": "review author; never worker-inferred human approval"
+    },
+    {
+      "id": "Q14",
+      "question": "Which claims does it support or contradict?",
+      "requiredCoverage": "Explicit guide/outcome/claim links and supported, indirect, contradictory or unassessed applicability; observed data versus authors' conclusions versus reviewer interpretation",
+      "inputFields": [
+        "claim_links",
+        "support_relation",
+        "observed_vs_author_vs_editorial"
+      ],
+      "sourceRequests": [
+        "verified results/locators",
+        "guide/outcome claim ledger"
+      ],
+      "interpretationOwner": "review author; never worker-inferred human approval"
+    },
+    {
+      "id": "Q15",
+      "question": "What should this change in our understanding?",
+      "requiredCoverage": "Bounded takeaway, remaining unknowns and the future evidence that could change the guide, without individualized treatment instructions",
+      "inputFields": [
+        "bounded_takeaway",
+        "unknowns",
+        "evidence_needed_to_change_conclusion"
+      ],
+      "sourceRequests": [
+        "reviewed answers Q01\u2013Q14",
+        "synthesis context within declared scope"
+      ],
+      "interpretationOwner": "review author; never worker-inferred human approval"
+    }
+  ],
+  "answerStatuses": [
+    "answered",
+    "partial",
+    "not_reported",
+    "not_extracted",
+    "not_accessible",
+    "not_applicable",
+    "not_checked",
+    "not_identifiable"
+  ],
+  "unfinishedStatuses": [
+    "partial",
+    "not_extracted",
+    "not_accessible",
+    "not_checked"
+  ],
+  "requiredReviewInputEntryFields": [
+    "paperId",
+    "questionId",
+    "questionSetVersion",
+    "field",
+    "value_or_null",
+    "status",
+    "reason",
+    "sourceId",
+    "sourceHash",
+    "nativeLocator",
+    "extractionBasis",
+    "verificationState",
+    "nextAction"
+  ],
+  "caveat": "This map is a planning contract, not a full production review schema. Generate and validate the project-specific typed schema, provenance links, explicit scientific state and access serializers before request/ingest. Q01\u2013Q15 remain present across all research designs; document design-specific applicability."
+}

@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-11",
+  "status": "PASS",
+  "scope": "Content packet structural and source verification; integration/render checks belong to root",
+  "sha256": "4d557eb192e0f6baa6881e590824672085b7b346b77c219d13b7e51061f28415",
+  "counts": {
+    "sources": 20,
+    "guides": 3,
+    "glossary": 13,
+    "mechanisms": 2
+  },
+  "checks": [
+    "All new sources context tier, exact URLs, dated retrieval and array locators.",
+    "All section paragraphs and FAQ answers equal joined sentence maps.",
+    "Every referenced source ID resolves against packet plus existing public-content.",
+    "All related guide IDs resolve against existing + discovery + packet.",
+    "No duplicate source IDs or glossary slugs against existing data.",
+    "New Drug includes all eleven standard narrative sections, benefits questions, FAQs and original/summary/questions mechanism records.",
+    "New Condition includes all six standard narrative sections, options questions, FAQs and summary/questions mechanism record.",
+    "Canonical Overview titles blank; no redundant What is heading.",
+    "No fabricated clinical magnitude/certainty or new Q01–Q15 paper review claimed.",
+    "All section labels contain a single alphabetic word.",
+    "mTOR complexes are not aliases for mTOR.",
+    "Cholesterol inhibition aliases require an inhibition phrase.",
+    "Fluconazole Quality explains evidence basis/limits; Dosing includes shake-well instruction.",
+    "Explainer sections have descriptive visible titles; universal Drug/Condition titles remain blank."
+  ],
+  "openItems": [
+    "Root integrates guide/term/source/mechanism records, navigation and canonical entity registry.",
+    "Mechanism expansion worker may add primary evidence; this foundations packet only supplies official context.",
+    "Type 2 diabetes intentionally does not claim completed repurposing outcome coverage."
+  ],
+  "revision": "Explainer heading render correction"
+}

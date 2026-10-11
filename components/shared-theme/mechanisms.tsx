@@ -19,22 +19,27 @@ export type MechanismContext = {
   clinicalMeaning: string;
 };
 
-function ContextProse({context, content}: {context: MechanismContext; content: MechanismPresentation}) {
+type MechanismTextRenderer = (text: string, linked?: Set<string>) => ReactNode;
+const plainText: MechanismTextRenderer = text => text;
+
+function ContextProse({context, content, renderText}: {context: MechanismContext; content: MechanismPresentation; renderText: MechanismTextRenderer}) {
   const fields = (['target', 'action', 'model'] as const).filter(field => context.evidence[field]);
+  const linked = new Set<string>();
   return <>
-    <p className="small muted" data-evidence-basis={context.evidence.basis}>{context.evidence.label}</p>
+    <p className="small muted" data-evidence-basis={context.evidence.basis}>{renderText(context.evidence.label)}</p>
     {context.explanation}
     {fields.length > 0 && <p>{fields.map((field, index) => <Fragment key={field}>
-      {index > 0 ? '; ' : ''}{content.detailLabels[field]}: {context.evidence[field]}
+      {index > 0 ? '; ' : ''}{content.detailLabels[field]}: {renderText(context.evidence[field]!, linked)}
     </Fragment>)}</p>}
     {context.evidence.source}
-    {context.clinicalMeaning && <p>{context.clinicalMeaning}</p>}
+    {context.clinicalMeaning && <p>{renderText(context.clinicalMeaning)}</p>}
   </>;
 }
 
 /** One visible explanation; multiple bounded contexts reuse the canonical disclosure. */
-export function MechanismSection({content, originalAction, summary, questions = [], contexts = []}: {
+export function MechanismSection({content, originalAction, summary, questions = [], contexts = [], renderText = plainText}: {
   content: MechanismPresentation;
+  renderText?: MechanismTextRenderer;
   originalAction?: ReactNode;
   summary?: ReactNode;
   questions?: {id: string; title: string; answer: ReactNode}[];
@@ -52,14 +57,14 @@ export function MechanismSection({content, originalAction, summary, questions = 
     </div>}
     {contexts.length === 1 && <div id={contexts[0].id}>
       <p><strong>{contexts[0].title}</strong></p>
-      <ContextProse context={contexts[0]} content={content}/>
+      <ContextProse context={contexts[0]} content={content} renderText={renderText}/>
     </div>}
     {contexts.length > 1 && <div className="rgbc-faq-block">
       {contexts.map(context => <details className="rgbc-faq-item" id={context.id} key={context.id}>
         <summary><span className="rgbc-faq-icon" aria-hidden="true"/><span className="rgbc-faq-q">{context.title}</span></summary>
         <div className="rgbc-faq-a">
           <strong>Quick answer:</strong>
-          <ContextProse context={context} content={content}/>
+          <ContextProse context={context} content={content} renderText={renderText}/>
         </div>
       </details>)}
     </div>}

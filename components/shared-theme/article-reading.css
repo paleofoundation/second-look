@@ -131,3 +131,15 @@ sup.citation-sup,
 @media (max-width:575px) {
  .omr-theme .article-subsection > p { font-size:17px; line-height:1.8; }
 }
+.omr-theme .entry-content a.wiki-link,
+.omr-theme .context-rail a.wiki-link,
+.omr-theme .research-panel a.wiki-link {
+  color: var(--omr-link);
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, currentColor 45%, transparent);
+  text-underline-offset: .16em;
+}
+.omr-theme a.wiki-link:hover,
+.omr-theme a.wiki-link:focus-visible {
+  text-decoration-color: currentColor;
+}

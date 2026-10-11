@@ -1,0 +1,31 @@
+{
+  "id": "SL-WIKI-FOUNDATIONS-20261011",
+  "date": "2026-10-11",
+  "scope": "Official context sources for a drug-repurposing explainer, type 2 diabetes and fluconazole foundation guides, and mechanism glossary definitions.",
+  "ownership": ["editorial/wiki-foundations/", "data/wiki-foundations.json"],
+  "entityIds": {"type2Diabetes": "C31", "fluconazole": "D34"},
+  "sourceInputs": [
+    {"target": "drug-repurposing", "providers": ["NCATS", "FDA", "NCCIH"], "queries": ["site.ncats.nih.gov drug repurposing", "site.fda.gov understanding unapproved use approved drugs off label"], "extract": ["definition", "development rationale", "clinical testing limits", "off-label versus approval"]},
+    {"target": "type-2-diabetes", "providers": ["NIDDK", "DailyMed"], "queries": ["site.niddk.nih.gov type 2 diabetes", "metformin existing label MF-LABEL-2025"], "extract": ["definition", "insulin action", "clinical context", "complications", "established metformin use"]},
+    {"target": "fluconazole", "providers": ["DailyMed", "FDA"], "queries": ["site.dailymed.nlm.nih.gov fluconazole microbiology ergosterol"], "extract": ["original use", "target", "mechanism", "susceptibility limitations", "liver and QT safety", "interactions"]},
+    {"target": "glossary", "providers": ["NCI dictionaries", "NLM MeSH", "CDC", "MedlinePlus Genetics", "DailyMed"], "queries": ["official definitions for hedgehog signaling, apoptosis, autophagy, biofilm, Candida albicans, hyphae, angiogenesis, hypoxia, mTOR, PDE5, ergosterol, cholesterol transport"], "extract": ["plain definition", "mechanistic interpretation", "clinical inference limit"]}
+  ],
+  "schema": {
+    "output": "{sources: Source[], guides: Guide[], glossary: Term[]}; types from lib/content.ts",
+    "Source": "id,title,url,sourceType=context,preview,locators={retrievedAt,sections,sourceKind},access,reviewState",
+    "Guide": "id,entityId?,slug,title,type,description,topicIds,sections[{id,label,title,paragraph,sources,sentences:[{text,sources}],questions?}],faqs[{question,answer,sources,sentences}],sourceIds,related,scope,synthesisIds",
+    "Term": "slug,title,meaning,context,examples,sources,sentenceMaps:{meaning:[{text,sources}],context:[{text,sources}],examples:[{text,sources}]}",
+    "mechanismFields": "original action and condition-specific hypotheses separated; sourceId, tier=CONTEXT, exact section locator, target/action, tested versus proposed basis, model/species/exposure if provided, uncertainty and translation limits. No invented primary experiment or clinical synthesis.",
+    "researchReviewRule": "New papers require substantive Q01-Q15 reviews and source-located extraction before use. This bounded packet uses official definitions, labels and agency explanation pages instead of scholarly reviews or primary papers."
+  },
+  "checks": [
+    {"check": "Exact output paths and source scope fixed before acquisition", "status": "PASS"},
+    {"check": "Existing glossary checked; no overlapping mechanism definitions", "status": "PASS"},
+    {"check": "Entity IDs C31 and D34 absent from current guide registry", "status": "PASS"},
+    {"check": "Schema preserves source-dependent sentences, locators and context tier", "status": "PASS"},
+    {"check": "No mechanism-to-efficacy inference or fabricated dosing/outcome table", "status": "PASS"},
+    {"check": "No new research paper ingestion without complete review", "status": "PASS"}
+  ],
+  "planningStatus": "PASS",
+  "limitations": ["This context packet does not replace drug-condition mechanistic primary-study review.", "Authoritative sources will be opened and verified before drafting their claims."]
+}

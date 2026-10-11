@@ -6,6 +6,7 @@ const drugLinks = discovery.mega.columns[0].links.filter(link => link.href.start
 const conditionLinks = discovery.mega.columns[1].links.filter(link => link.href.startsWith('/conditions/'));
 const otherDrugLinks = discovery.mega.columns[2].links.filter(link => link.href.startsWith('/drugs/'));
 const readingLinks = [
+  { label: 'Drug repurposing explained', href: '/drug-repurposing' },
   { label: 'Explore outcomes', href: '/outcomes' },
   { label: 'Compare findings', href: '/comparisons' },
   { label: 'Reader questions', href: '/questions' },
