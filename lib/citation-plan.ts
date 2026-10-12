@@ -1,3 +1,4 @@
+import {suitabilityCitationIds} from './treatment-suitability';
 import sentenceMapData from '@/data/outcome-sentence-maps.json';
 import {synthesisRows,isPrimarySource,type Guide,type Source,type SynthesisRow} from './content';
 import {mechanismCitationIds} from './mechanisms';
@@ -41,6 +42,7 @@ export function guideCitationOrder(guide:Guide,sources:Source[],additionalGroups
   const groups=plan.blocks.flatMap(block=>{
    const articleModule=block.module;
    return [sectionSources(articleModule.sections),
+    ((guide.type==='Drug'&&articleModule.label==='Contraindications')||(guide.type==='Condition'&&articleModule.label==='Safety'))?suitabilityCitationIds(guide.slug):[],
     articleModule.kind==='mechanisms'?mechanismCitationIds(guide):[],
     articleModule.kind==='faqs'?guide.faqs.flatMap(faq=>faq.sentences?faq.sentences.flatMap(sentence=>sentence.sources):faq.sources):[],
     sectionSources(articleModule.scoped?.sections||[]),

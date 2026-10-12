@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
-const projections = ['public-content','discovery-pages','topics','author-profiles','guide-catalogue','navigation-interest','public-mechanisms','public-evidence-assessments'];
+const projections = ['public-content','treatment-suitability','discovery-pages','topics','author-profiles','guide-catalogue','navigation-interest','public-mechanisms','public-evidence-assessments'];
 const privateKeys = new Set(['provenance','sourceLinks','demandTopicIds','contractException']);
 const privateCopy = /owner[-_ ](?:requested|required|priorit)|mandatory owner|coordinating task|observed_reddit_question|saved discussions|next acquisition packet|Keep required acquisition|acquisition backlog|non-preface accepted CP28|Accepted CP28 extraction|private draft|Acquisition target; source support pending|Acquire appropriate pair-specific/i;
 let fields = 0;

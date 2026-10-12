@@ -64,3 +64,7 @@ On this host, final files are under `/Users/kmfp/Documents/ChatGPT/Drug Repurpos
 ## Acceptance and remaining work
 
 Check every displayed number, source link and citation destination; render and visually inspect all five pages; verify selectable PDF text, page numbering and an editable DOCX. Record source verification separately from full study appraisal and qualified clinical approval. The static sample does not implement authentication, subscriptions, patient storage, secure links or actual email delivery. Those features and the existing clinical/commercial release checks remain future work.
+
+## Treatment suitability follow-up — October 12, 2026
+
+The owner also requires who should not be considered and treatment contraindications. Apply [TREATMENT-SUITABILITY.md](TREATMENT-SUITABILITY.md). Packet schema version 2 requires cited suitability rows for each repurposed drug. The NSCLC design sample is now seven pages, edition 3.0: clinical brief; two evidence-detail pages; two treatment-suitability tables (itraconazole, metformin); consultation; references/accountability. This replaces the earlier five-page layout for the revised sample. Selected U.S. label restrictions are distinct from precautions/interactions and trial applicability; exact formulation and indication qualifiers remain. No clinical approval or released-member sample is implied.

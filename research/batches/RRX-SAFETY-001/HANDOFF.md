@@ -1,0 +1,11 @@
+# RRX-SAFETY-001 handoff
+
+Owner scope: who should not be considered, including treatment contraindications, on articles and physician packets. Prospective PLAN/schema/readiness were saved before official-label acquisition. Source manifest and eight candidates record exact source versions and locators. Raw web captures are outside Git.
+
+Implemented: explicit contraindication heading on all 32 existing drug pages; condition Safety links to discussed drugs; shared selected-label tables on metformin, itraconazole and NSCLC; schema-2 packet coverage per repurposed drug; seven-page NSCLC edition 3.0 sample. All prior authored restrictions and trial findings are preserved. Website and packet rows match exactly. Specialist credit remains blank. No dosing, automatic eligibility decision or real approved packet was added.
+
+Verified: see VERIFICATION.json. TypeScript, governance, 64 article profile checks, 68 navigation profiles and packet authorization/integrity tests pass. All seven PDF pages were rendered and visually inspected; selectable text and 42 links verified. Browser confirms mobile table containment, condition-to-drug links, the new SPORANOX source popover, seven preview pages/nine tables and manual-attachment email wording. The initial local dev server needed normal sandbox escalation to bind its port; the successful server was used for QA.
+
+Source reconciliation: scoped Git diff applied cleanly to the canonical repository; unrelated dirty work preserved. Requirement/changelog and dated history were appended/merged. Publishing uses the existing public Sites project. Production build/publication receipts are recorded after completion in docs/TREATMENT-SUITABILITY-DEPLOYMENT.json in canonical source; do not infer publication from this pre-publication handoff.
+
+Limits: fresh label checks cover two drugs only; the other 30 existing drug sections received presentation changes, not a new scientific reassessment. This is a selected-restriction summary, not complete labeling or an interaction checker. Clinical review remains pending for the sample. No production packet approvals, membership entitlements, billing, email send or changes to the current audience occurred. Existing paid-asset exact-edition gates still apply. Future editions must retain suitability coverage and pass qualified review under the existing packet contract.

@@ -1,8 +1,8 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "condition": "non-small-cell-lung-cancer",
   "title": "Non-small-cell lung cancer",
-  "edition": "2.0 sample",
+  "edition": "3.0 sample",
   "checkedOn": "2026-10-12",
   "scope": "Illustrative selection of four reports. These studies do not test replacing surgery with a repurposed drug. Applicability depends on the individual clinical setting.",
   "summary": [
@@ -51,7 +51,8 @@
       "sourceIds": [
         "PP-PMID-32847935"
       ],
-      "primaryLabel": "Biological measurements"
+      "primaryLabel": "Biological measurements",
+      "drug": "Itraconazole"
     },
     {
       "id": "P-D07-LUNG-2013",
@@ -86,7 +87,8 @@
       },
       "sourceIds": [
         "P-D07-LUNG-2013"
-      ]
+      ],
+      "drug": "Itraconazole"
     },
     {
       "id": "MF-NRG-LU001-2021",
@@ -121,7 +123,8 @@
       },
       "sourceIds": [
         "MF-NRG-LU001-2021"
-      ]
+      ],
+      "drug": "Metformin"
     },
     {
       "id": "MF-ALMERA-2021",
@@ -156,7 +159,8 @@
       },
       "sourceIds": [
         "MF-ALMERA-2021"
-      ]
+      ],
+      "drug": "Metformin"
     }
   ],
   "safety": [
@@ -178,7 +182,7 @@
   ],
   "questions": [
     "Which studies, if any, match my stage, histology, biomarkers and treatment history?",
-    "If a repurposed approach is unsuitable, is the reason evidence quality, applicability, safety or another concern?",
+    "Do any contraindications, interactions, organ-function limits or evidence gaps make these approaches unsuitable for me? Please explain the reason.",
     "Would a specialist opinion or trial inquiry be appropriate within the recommended treatment timeline?"
   ],
   "sources": [
@@ -214,11 +218,99 @@
     },
     {
       "id": "DAILYMED-ITRA-20260713",
-      "citation": "DailyMed. SPORANOX (itraconazole) capsules. U.S. prescribing information updated July 13, 2026. Boxed warning, hepatic effects, cardiac disease and drug interactions. Accessed October 12, 2026.",
+      "citation": "DailyMed. SPORANOX (itraconazole) capsules. U.S. prescribing information updated July 13, 2026. Contraindications; cardiac/hepatic warnings; interactions; pregnancy and nursing. Accessed October 12, 2026.",
       "url": "https://www.dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a4d555fa-787c-40fb-bb7d-b0d4f7318fd0",
+      "basis": "Official prescribing information"
+    },
+    {
+      "id": "MF-LABEL-2025",
+      "citation": "DailyMed. Metformin hydrochloride tablets, U.S. prescribing information. Updated February 10, 2025. Sections 2.3, 2.4, 4, 5.1, 5.3 and 7. Accessed October 12, 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=542cec22-eeae-4704-9bb6-4176640e5ea8",
       "basis": "Official prescribing information"
     }
   ],
   "coverage": "Selected-source sample of four reports from 2013, 2020 and 2021. This is not a systematic review or a comprehensive search through the check date. Two summaries use abstracts and two use accessible full-text sections. Complete scientific appraisals and independent clinical review remain pending. Article PDFs are not reproduced.",
-  "credit": null
+  "credit": null,
+  "eligibility": [
+    {
+      "id": "itra-contraindications",
+      "drug": "Itraconazole",
+      "category": "contraindication",
+      "label": "Contraindications",
+      "text": "Itraconazole hypersensitivity. Certain co-medications are also contraindicated; examples include simvastatin, lovastatin, oral midazolam and irinotecan. The full product-label interaction list must be checked.",
+      "sourceIds": [
+        "DAILYMED-ITRA-20260713"
+      ]
+    },
+    {
+      "id": "itra-indication-specific",
+      "drug": "Itraconazole",
+      "category": "contraindication",
+      "label": "Indication-specific restrictions",
+      "text": "For fungal nail infection, the capsule label prohibits use with ventricular dysfunction or a history of heart failure, and during pregnancy or when pregnancy is planned. Other indications require the separate cardiac risk assessment below.",
+      "sourceIds": [
+        "DAILYMED-ITRA-20260713"
+      ]
+    },
+    {
+      "id": "itra-cardiac-hepatic",
+      "drug": "Itraconazole",
+      "category": "precaution",
+      "label": "Heart and liver precautions",
+      "text": "For other indications, ventricular dysfunction requires a benefit that clearly outweighs risk. Active liver disease, abnormal liver enzymes or prior drug-related liver toxicity strongly discourage use unless the situation is serious or life-threatening and benefit exceeds risk.",
+      "sourceIds": [
+        "DAILYMED-ITRA-20260713"
+      ]
+    },
+    {
+      "id": "itra-pregnancy-interactions",
+      "drug": "Itraconazole",
+      "category": "precaution",
+      "label": "Pregnancy, breastfeeding and medicines",
+      "text": "Pregnancy and breastfeeding require a separate benefit-risk assessment. An oncology pharmacist should review the complete regimen: contraindicated combinations differ from combinations needing adjustment or monitoring.",
+      "sourceIds": [
+        "DAILYMED-ITRA-20260713"
+      ]
+    },
+    {
+      "id": "metformin-contraindications",
+      "drug": "Metformin",
+      "category": "contraindication",
+      "label": "Contraindications",
+      "text": "eGFR below 30 mL/min/1.73 m²; acute or chronic metabolic acidosis, including diabetic ketoacidosis; or metformin hypersensitivity.",
+      "sourceIds": [
+        "MF-LABEL-2025"
+      ]
+    },
+    {
+      "id": "metformin-renal-initiation",
+      "drug": "Metformin",
+      "category": "precaution",
+      "label": "Kidney function before starting",
+      "text": "Starting metformin at eGFR 30-45 mL/min/1.73 m² is not recommended. This is different from the formal contraindication below 30. eGFR estimates kidney filtration.",
+      "sourceIds": [
+        "MF-LABEL-2025"
+      ]
+    },
+    {
+      "id": "metformin-procedures",
+      "drug": "Metformin",
+      "category": "precaution",
+      "label": "Illness, liver disease and procedures",
+      "text": "The label advises avoiding use with hepatic disease. Hypoxic illness, excessive alcohol, restricted food/fluid intake around procedures, and certain contrast studies raise lactic-acidosis concerns or require a clinician-directed temporary hold.",
+      "sourceIds": [
+        "MF-LABEL-2025"
+      ]
+    },
+    {
+      "id": "metformin-interactions",
+      "drug": "Metformin",
+      "category": "interaction",
+      "label": "Medication review",
+      "text": "Insulin or insulin-releasing medicines increase hypoglycemia risk. Carbonic anhydrase inhibitors and drugs that reduce metformin clearance can increase acidosis or accumulation risks. These are interaction precautions, not universal contraindications.",
+      "sourceIds": [
+        "MF-LABEL-2025"
+      ]
+    }
+  ]
 }

@@ -89,3 +89,7 @@ Owner approval, October 12, 2026: use the mapping-round-4 logo and favicon, carr
 ### Physician packet portal follow-up — October 12, 2026
 
 The owner authorizes building condition-specific physician packets into the paid-member portal, using professional tables and print/email outputs. Follow [PHYSICIAN-PACKETS.md](PHYSICIAN-PACKETS.md). Leave the specialist name and contact blank until a real, consenting contributor is identified. Contributor credit is distinct from clinical approval. This supersedes the earlier sample-only scope; pricing, actual billing, clinical approvals and messages to physicians are not created by implementation.
+
+## Treatment suitability in articles and physician packets
+
+Owner follow-up, October 12, 2026: include who should not be considered for each treatment and its contraindications on the website and physician packets. Follow [TREATMENT-SUITABILITY.md](TREATMENT-SUITABILITY.md): distinguish formal/indication-specific restrictions, precautions, interactions and trial applicability; use source-bound tables, retain formulation and indication qualifiers, and require suitability coverage for every repurposed drug in a packet. Existing article sections remain; condition pages link to the relevant intervention restrictions. Record fresh source checks separately from presentation-only changes and preserve exact-edition release gates.

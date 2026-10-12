@@ -29,6 +29,8 @@ import {wikiText,wikiTextRenderer} from '@/lib/wiki-links';
 import {relatedReadingFor} from '@/lib/related-reading';
 import {studyDesignsFor} from '@/lib/evidence-presentation';
 import {getTopicHeroArt} from '@/lib/hero-art';
+import {TreatmentSuitability} from '@/components/shared-theme/treatment-suitability';
+import {suitabilityFor,suitabilityScope} from '@/lib/treatment-suitability';
 
 function OriginalSource({source}:{source:Source}){return /^https:\/\//.test(source.url)?<a href={source.url} target="_blank" rel="noreferrer">Original source</a>:<span className="small">Original source URL not recorded</span>}
 function ReferenceTitle({source}:{source:Source}){return /^https:\/\//.test(source.url)?<a href={source.url} target="_blank" rel="noreferrer">{source.title}</a>:<span>{source.title}</span>}
@@ -164,6 +166,8 @@ export function Article({guide,sources,children,additionalCitationGroups=[]}:{gu
  const referencesContent=(authored?:React.ReactNode)=><section className="article-section" id="references" data-universal-section="References"><h2>References</h2>{authored}<ReferenceList sources={sources} order={ordered}/></section>;
  const updatesContent=(authored?:React.ReactNode)=><section className="article-section" id="update-history" data-universal-section="Update History"><span id="edition" className="reference-alias"/><h2>Update History</h2>{authored}<UpdateHistory pagePath={guideUrl(guide)} sectionIds={sectionIds}/></section>;
  const sourceContent=<section className="article-section" id="sources"><h2>Sources</h2><div id="references"><ReferenceList sources={sources} order={ordered} linkStudies={false}/></div></section>;
+ const suitability=suitabilityFor(guideUrl(guide));
+ const restrictionPeers=guide.type==='Condition'?content.guides.filter(g=>g.type==='Drug'&&(rows.some(row=>row.drugId===g.entityId)||suitability.some(row=>row.drug===g.title))):[];
  const renderModule=(module:UniversalArticleModule<Guide['sections'][number]>)=>{
   const authored=module.sections.map(section=>renderSection(section,true,module.label!=='Overview'&&!(module.label==='Evidence'&&hasEvidence)));
   if(module.kind==='mechanisms')return <Fragment key={module.id}>{authored}{mechanismsContent}</Fragment>;
@@ -172,7 +176,10 @@ export function Article({guide,sources,children,additionalCitationGroups=[]}:{gu
   if(module.kind==='updates')return <Fragment key={module.id}>{updatesContent(authored)}</Fragment>;
   if(module.kind==='references')return <Fragment key={module.id}>{referencesContent(authored)}</Fragment>;
   return <section key={module.id} id={module.id} className="article-section universal-section" data-universal-section={module.label}>
-   <h2>{module.title}</h2>{module.label==='Evidence'&&hasEvidence&&!module.sections.some(section=>section.paragraph)?<EvidenceIntroduction/>:null}{authored}{module.label==='Evidence'&&hasEvidence&&module.sections.some(section=>section.paragraph)?<EvidenceIntroduction/>:null}
+   <h2>{module.title}</h2>{guide.type==='Drug'&&module.label==='Contraindications'&&!suitability.length?<h3>Who should not be considered?</h3>:null}{module.label==='Evidence'&&hasEvidence&&!module.sections.some(section=>section.paragraph)?<EvidenceIntroduction/>:null}{authored}{module.label==='Evidence'&&hasEvidence&&module.sections.some(section=>section.paragraph)?<EvidenceIntroduction/>:null}
+   {((guide.type==='Drug'&&module.label==='Contraindications')||(guide.type==='Condition'&&module.label==='Safety'))&&suitability.length>0?<TreatmentSuitability rows={suitability} scope={suitabilityScope} renderStatement={row=><CitedProse text={row.text} sourceIds={row.sourceIds} sources={sources} order={ordered} currentPath={guideUrl(guide)}/>}/>:null}
+   {guide.type==='Drug'&&module.label==='Contraindications'&&!suitability.length?<p className="small">These restrictions apply to the product and use described. Precautions, interactions and absence of trial evidence are different from formal contraindications; see the Safety and Interactions sections as well.</p>:null}
+   {guide.type==='Condition'&&module.label==='Safety'&&restrictionPeers.length>0?<div className="treatment-suitability-links"><h3>Contraindications by intervention</h3><p>Check the drug-specific restrictions for the interventions discussed on this page.</p>{restrictionPeers.map(peer=><Link key={peer.id} href={guideUrl(peer)+'#section-contraindications'}>{peer.title}</Link>)}</div>:null}
    {module.scoped?<details className="research-item scoped-reading" id={module.scoped.id}><summary>{module.scoped.title}</summary><div className="research-item__body">{module.scoped.sections.map(section=>renderSection(section,true))}</div></details>:null}
    {module.label==='Evidence'&&hasEvidence?<EvidenceContent rows={rows} guide={guide} sources={sources} order={ordered}/>:null}
   </section>;
