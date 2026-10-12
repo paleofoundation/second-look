@@ -1,0 +1,504 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:remaprx:mechanism-candidate:1.0",
+  "title": "Source-bound draft mechanism candidate",
+  "description": "Prospective executable mechanism payload contract. Source/result/family identity relationships still require semantic validation and independent source review. Mechanism findings never establish clinical benefit or human approval.",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "RRX-MECHANISM-CANDIDATE-1.0"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "source_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "canonical_report_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "source_url": {
+            "type": "string",
+            "pattern": "^https?://"
+          }
+        },
+        "required": [
+          "source_id",
+          "canonical_report_id",
+          "sha256",
+          "source_url"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    },
+    "mechanisms": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/mechanism"
+      },
+      "minItems": 1
+    },
+    "verification_state": {
+      "const": "pending"
+    },
+    "human_review_status": {
+      "const": "pending"
+    },
+    "publication_state": {
+      "const": "draft"
+    }
+  },
+  "required": [
+    "schema_version",
+    "sources",
+    "mechanisms",
+    "verification_state",
+    "human_review_status",
+    "publication_state"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "locator": {
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "else": {
+            "properties": {
+              "native_path": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "pdf_page": {
+                "type": "null"
+              }
+            }
+          },
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "pdf"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "pdf_page": {
+                "minimum": 1,
+                "type": "integer"
+              }
+            }
+          }
+        }
+      ],
+      "properties": {
+        "anchor": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "figure": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "kind": {
+          "enum": [
+            "pdf",
+            "html",
+            "xml"
+          ]
+        },
+        "native_path": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "pdf_page": {
+          "minimum": 1,
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "quoted_text": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "row_column": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "section": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "source_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "source_sha256": {
+          "pattern": "^[a-f0-9]{64}$",
+          "type": "string"
+        },
+        "table": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "source_id",
+        "source_sha256",
+        "kind",
+        "pdf_page",
+        "native_path",
+        "section",
+        "anchor",
+        "table",
+        "figure",
+        "row_column",
+        "quoted_text"
+      ],
+      "type": "object"
+    },
+    "field": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "enum": [
+            "reported",
+            "not_extracted",
+            "not_reported",
+            "not_applicable"
+          ]
+        },
+        "value": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "units": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "reason": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source_locators": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/locator"
+          }
+        }
+      },
+      "required": [
+        "status",
+        "value",
+        "units",
+        "reason",
+        "source_locators"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "reported"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "type": "string",
+                "minLength": 1
+              },
+              "source_locators": {
+                "minItems": 1
+              },
+              "reason": {
+                "type": "null"
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "value": {
+                "type": "null"
+              },
+              "reason": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "causal_step": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "statement": {
+          "type": "string",
+          "minLength": 1
+        },
+        "basis": {
+          "enum": [
+            "tested",
+            "proposed",
+            "inferred"
+          ]
+        },
+        "measured_readout": {
+          "$ref": "#/$defs/field"
+        },
+        "result_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "source_locators": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/locator"
+          },
+          "minItems": 1
+        },
+        "causal_limitations": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "statement",
+        "basis",
+        "measured_readout",
+        "result_ids",
+        "source_locators",
+        "causal_limitations"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "basis": {
+                "const": "tested"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "result_ids": {
+                "minItems": 1
+              },
+              "measured_readout": {
+                "properties": {
+                  "status": {
+                    "const": "reported"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "mechanism": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true,
+          "minItems": 1
+        },
+        "drug_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "condition_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "context_role": {
+          "enum": [
+            "original_use",
+            "repurposed_use",
+            "shared_pathway"
+          ]
+        },
+        "original_use_boundary": {
+          "type": "string",
+          "minLength": 1
+        },
+        "pathway_or_target": {
+          "type": "string",
+          "minLength": 1
+        },
+        "tier": {
+          "enum": [
+            "PRIMARY",
+            "CONTEXT"
+          ]
+        },
+        "model": {
+          "type": "object",
+          "properties": {
+            "system": {
+              "type": "string",
+              "minLength": 1
+            },
+            "species": {
+              "type": "string",
+              "minLength": 1
+            },
+            "tissue": {
+              "type": "string",
+              "minLength": 1
+            },
+            "experimental_unit": {
+              "type": "string",
+              "minLength": 1
+            },
+            "independence_notes": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "system",
+            "species",
+            "tissue",
+            "experimental_unit",
+            "independence_notes"
+          ],
+          "additionalProperties": false
+        },
+        "exposure": {
+          "type": "object",
+          "properties": {
+            "molecule": {
+              "type": "string",
+              "minLength": 1
+            },
+            "formulation": {
+              "$ref": "#/$defs/field"
+            },
+            "route": {
+              "$ref": "#/$defs/field"
+            },
+            "concentration": {
+              "$ref": "#/$defs/field"
+            },
+            "duration": {
+              "$ref": "#/$defs/field"
+            }
+          },
+          "required": [
+            "molecule",
+            "formulation",
+            "route",
+            "concentration",
+            "duration"
+          ],
+          "additionalProperties": false
+        },
+        "causal_steps": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/causal_step"
+          },
+          "minItems": 1
+        },
+        "translation_limits": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true,
+          "minItems": 1
+        },
+        "source_locators": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/locator"
+          },
+          "minItems": 1
+        },
+        "status": {
+          "enum": [
+            "partial",
+            "candidate_complete"
+          ]
+        },
+        "source_integrity": {
+          "type": "string",
+          "minLength": 1
+        },
+        "clinical_benefit_established": {
+          "const": false
+        }
+      },
+      "required": [
+        "id",
+        "source_ids",
+        "drug_id",
+        "condition_ids",
+        "context_role",
+        "original_use_boundary",
+        "pathway_or_target",
+        "tier",
+        "model",
+        "exposure",
+        "causal_steps",
+        "translation_limits",
+        "source_locators",
+        "status",
+        "source_integrity",
+        "clinical_benefit_established"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

@@ -1,0 +1,292 @@
+{
+  "plan_id": "SL-INGEST-3.0-FETCH30",
+  "archive_sha256": "54f7c76acac994c4d218c1c948d2715384e6dea5807b990371956e7341bc48bd",
+  "batch_checks": [
+    {
+      "batch_id": "F03",
+      "schema_errors": 0,
+      "packet_check_failures": 0,
+      "records": 256,
+      "file_appearances": 205,
+      "report_ids": 188,
+      "screening_appearances": 3522,
+      "gap_appearances": 61,
+      "request_count": 10
+    },
+    {
+      "batch_id": "F04",
+      "schema_errors": 0,
+      "packet_check_failures": 0,
+      "records": 139,
+      "file_appearances": 87,
+      "report_ids": 111,
+      "screening_appearances": 1960,
+      "gap_appearances": 61,
+      "request_count": 9
+    },
+    {
+      "batch_id": "F05",
+      "schema_errors": 0,
+      "packet_check_failures": 0,
+      "records": 221,
+      "file_appearances": 139,
+      "report_ids": 198,
+      "screening_appearances": 3138,
+      "gap_appearances": 92,
+      "request_count": 10
+    },
+    {
+      "batch_id": "F06",
+      "schema_errors": 0,
+      "packet_check_failures": 0,
+      "records": 254,
+      "file_appearances": 177,
+      "report_ids": 210,
+      "screening_appearances": 3374,
+      "gap_appearances": 87,
+      "request_count": 10
+    },
+    {
+      "batch_id": "F07",
+      "schema_errors": 0,
+      "packet_check_failures": 0,
+      "records": 211,
+      "file_appearances": 149,
+      "report_ids": 179,
+      "screening_appearances": 3207,
+      "gap_appearances": 73,
+      "request_count": 10
+    },
+    {
+      "batch_id": "F08",
+      "schema_errors": 0,
+      "packet_check_failures": 0,
+      "records": 141,
+      "file_appearances": 96,
+      "report_ids": 115,
+      "screening_appearances": 2181,
+      "gap_appearances": 55,
+      "request_count": 10
+    }
+  ],
+  "worker_b_reconciliation": {
+    "source_appearances": 1222,
+    "source_records": 834,
+    "source_manifest_rows": 834,
+    "cross_batch_source_copies": 388,
+    "reports": 674,
+    "file_appearances": 853,
+    "file_records": 594,
+    "unique_file_hashes": 593,
+    "actual_unique_file_hashes": 593,
+    "cross_batch_file_copies": 259,
+    "screening_appearances": 17382,
+    "screening_unique": 14007,
+    "screening_csv": 14007,
+    "screening_decisions_batch_appearances": {
+      "include": 961,
+      "exclude": 13118,
+      "uncertain": 3153,
+      "duplicate": 150
+    },
+    "screening_decisions_unique": {
+      "include": 673,
+      "exclude": 10980,
+      "uncertain": 2246,
+      "duplicate": 108
+    },
+    "screening_decisions_csv": {
+      "include": 673,
+      "exclude": 10980,
+      "uncertain": 2246,
+      "duplicate": 108
+    },
+    "search_appearances": 1005,
+    "searches_unique": 723,
+    "searches_csv": 723,
+    "gap_appearances": 429,
+    "gaps_unique": 300,
+    "coverage_requests": 59,
+    "physical_file_appearances_above_unique_blob_hashes": 260,
+    "base_gaps": 241,
+    "per_request_coverage_gaps": 59,
+    "gaps_by_type": {
+      "access": 240,
+      "coverage": 60
+    },
+    "no_file_source_records": 240
+  },
+  "f00_crossref_receipt": {
+    "sources": 152,
+    "reports": 129,
+    "files": 105,
+    "searches": 82,
+    "screening": 2276,
+    "gaps": 58,
+    "duplicates": 0,
+    "unavailable_schema_count": 97,
+    "no_file_sources": 47,
+    "asserted_family_ids": 107,
+    "independent_studies": null,
+    "independent_studies_reason": "Family and overlapping-cohort verification incomplete.",
+    "primary_original_fulltexts": 33,
+    "primary_source_records": 95,
+    "context_review_source_records": 15,
+    "context_other_source_records": 42
+  },
+  "existing_report_matches": [
+    {
+      "report_id": "A-F00-R046",
+      "canonical_report_id": "P-OVCA-REPURP-CASE-2023",
+      "basis": "PMID",
+      "origin": "evidence"
+    },
+    {
+      "report_id": "B-R0010",
+      "canonical_report_id": "P-REVIVE-2026",
+      "basis": "DOI",
+      "origin": "evidence"
+    },
+    {
+      "report_id": "B-R0016",
+      "canonical_report_id": "P-SGLT2MET-LC-2026",
+      "basis": "DOI",
+      "origin": "evidence"
+    },
+    {
+      "report_id": "B-R0051",
+      "canonical_report_id": "CP016",
+      "basis": "DOI",
+      "origin": "CP28"
+    },
+    {
+      "report_id": "B-R0052",
+      "canonical_report_id": "CP017",
+      "basis": "DOI",
+      "origin": "CP28"
+    },
+    {
+      "report_id": "B-R0065",
+      "canonical_report_id": "P-FLVPCS-2023",
+      "basis": "DOI",
+      "origin": "evidence"
+    },
+    {
+      "report_id": "B-R0071",
+      "canonical_report_id": "P-STOPCOVID2-2023",
+      "basis": "PMID",
+      "origin": "evidence"
+    },
+    {
+      "report_id": "B-R0079",
+      "canonical_report_id": "P-STOPPASC-2024",
+      "basis": "DOI",
+      "origin": "evidence"
+    },
+    {
+      "report_id": "B-R0092",
+      "canonical_report_id": "P-CSBD-FLX-NTX-2026",
+      "basis": "PMID",
+      "origin": "evidence"
+    },
+    {
+      "report_id": "B-R0099",
+      "canonical_report_id": "P-LDN-FM-INNOVA-2026",
+      "basis": "PMID",
+      "origin": "evidence"
+    },
+    {
+      "report_id": "B-R0116",
+      "canonical_report_id": "P-PRAM-ANHED-2026",
+      "basis": "PMID",
+      "origin": "evidence"
+    },
+    {
+      "report_id": "B-R0377",
+      "canonical_report_id": "A-F00-R020",
+      "basis": "DOI",
+      "origin": "acquisition"
+    },
+    {
+      "report_id": "B-R0394",
+      "canonical_report_id": "A-F00-R027",
+      "basis": "DOI",
+      "origin": "acquisition"
+    },
+    {
+      "report_id": "B-R0551",
+      "canonical_report_id": "A-F00-R044",
+      "basis": "DOI",
+      "origin": "acquisition"
+    },
+    {
+      "report_id": "B-R0562",
+      "canonical_report_id": "A-F00-R099",
+      "basis": "DOI",
+      "origin": "acquisition"
+    },
+    {
+      "report_id": "B-R0563",
+      "canonical_report_id": "A-F00-R029",
+      "basis": "DOI",
+      "origin": "acquisition"
+    },
+    {
+      "report_id": "B-R0696",
+      "canonical_report_id": "CP018",
+      "basis": "DOI",
+      "origin": "CP28"
+    }
+  ],
+  "different_doi_kept_separate": [],
+  "same_file_different_reports": [
+    {
+      "sha256": "f18eb712a7ab216b15844b704b6c9e708dd7979f67bb65634f36cfc63bf1ae8e",
+      "sources": [
+        {
+          "source_id": "B-R0323-F01",
+          "report_id": "B-R0323",
+          "doi_verified": "10.1186/s13063-018-3168-4",
+          "pmid": "30683146",
+          "report_role": "protocol",
+          "filename": "PRIMARY/B-R0323__original_report__the-evaluation-of-vitiligous-lesions-repigmentation-after-th.pdf"
+        },
+        {
+          "source_id": "B-R0324-S01",
+          "report_id": "B-R0324",
+          "doi_verified": "10.1038/s41598-024-65722-w",
+          "pmid": "38918590",
+          "report_role": "supplement",
+          "filename": "PRIMARY/B-R0324-S01__supplement__topical-application-of-simvastatin-acid-sodium-salt-and-ator.pdf"
+        }
+      ],
+      "required_action": "Retain both source records and different report DOIs. One blob may serve two provenance links; do not merge report identities."
+    }
+  ],
+  "records_imported": {
+    "worker_b_sources": 834,
+    "worker_b_report_aliases": 674,
+    "worker_b_files": 594,
+    "f00_crossref_sources": 152,
+    "f00_crossref_report_aliases": 129,
+    "f00_crossref_files": 105,
+    "combined_canonical_report_identities": 798,
+    "combined_source_records": 986,
+    "combined_file_records": 699,
+    "combined_unique_assets": 695,
+    "worker_b_screening_decisions": 14007,
+    "worker_b_searches": 723,
+    "worker_b_gaps": 300,
+    "f00_crossref_gaps": 58,
+    "scientific_results": 0,
+    "claims": 0,
+    "reviews": 0
+  },
+  "itraconazole_candidate_links": 83,
+  "itraconazole_links_held": 12,
+  "publication_state": "draft",
+  "review_status": "pending",
+  "existing_corpus_unmodified": true,
+  "worker_a_scope": "F00 source subset imported for requested itraconazole references; F01/F02 not ingested in this Worker B operation",
+  "extraction": "Three-source private calibration authorized by persisted source-receipt; broader relevance/family verification pending."
+}

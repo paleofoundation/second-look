@@ -1,0 +1,175 @@
+{
+  "schemaVersion": "remaprx-independent-code-review-v1",
+  "recordedAt": "2026-10-12T12:24:42Z",
+  "status": "PASS_WITH_EXPLICIT_SCOPE",
+  "scope": "Technical code review and regression evidence for private research tools; no scientific appraisal, extraction approval, canonical import, publication approval or dispatch.",
+  "reportAuthor": "codex/pipeline_audit",
+  "authorshipAndIndependence": [
+    {
+      "files": [
+        "scripts/research_fanout.py",
+        "tests/research_ingest/test_fanout.py"
+      ],
+      "codeAuthor": "codex/pipeline_audit",
+      "independentReviewer": "codex/identity_review",
+      "reviewStatus": "PASS",
+      "evidence": "Independent reviewer confirmed exact final helper c2ca993473107efb97ce18647298cc8ac35f44fada47979bbf0c6bcc49e9de96 and test 40d45a5362174ce65279ba27e9312d7bd87d7962a46696491c20c5d207a1e5f7; independently ran all 15 fanout tests. Confirmation received through task collaboration on 2026-10-12."
+    },
+    {
+      "files": [
+        "scripts/research-audit-sample.py",
+        "tests/research_ingest/test_audit_sample.py"
+      ],
+      "codeAuthor": "codex/root",
+      "independentReviewer": "codex/pipeline_audit",
+      "reviewStatus": "PASS",
+      "evidence": "Read final implementation and tests; independently ran the 8 sampler tests and final complete suite. Reproduced the original whitespace identity defect before the author repaired it."
+    },
+    {
+      "files": [
+        "scripts/package-research-gap-request.py"
+      ],
+      "codeAuthor": "codex/root",
+      "independentReviewer": "codex/pipeline_audit",
+      "reviewStatus": "PASS_CODE_REVIEW_ONLY",
+      "evidence": "Read the exact final package script. This reviewer did not execute packaging or independently inspect the delivery archive."
+    }
+  ],
+  "files": [
+    {
+      "path": "scripts/research_fanout.py",
+      "sha256": "c2ca993473107efb97ce18647298cc8ac35f44fada47979bbf0c6bcc49e9de96",
+      "bytes": 28114
+    },
+    {
+      "path": "tests/research_ingest/test_fanout.py",
+      "sha256": "40d45a5362174ce65279ba27e9312d7bd87d7962a46696491c20c5d207a1e5f7",
+      "bytes": 19965
+    },
+    {
+      "path": "scripts/research-audit-sample.py",
+      "sha256": "88a62a904b2935e83a86fb42e92a3d5c454755725d5cc0f786a2a0caa667b66d",
+      "bytes": 4837
+    },
+    {
+      "path": "tests/research_ingest/test_audit_sample.py",
+      "sha256": "3f3b9e54f8db814fd4b6f829e3fcad91800f73c8e5b8561948bbee474cef5e79",
+      "bytes": 4472
+    },
+    {
+      "path": "scripts/package-research-gap-request.py",
+      "sha256": "a12e3aa34b8470d14be96ea65009e35f16c527ab9eaf19a928df6d6d437e09ed",
+      "bytes": 4436
+    }
+  ],
+  "testEnvironment": {
+    "interpreter": "python3",
+    "additionalDependencyPath": "/Users/kmfp/Documents/Codex/2026-10-08/one-match-drug-repurposing/work/evidence/python",
+    "purpose": "Local jsonschema dependency location, supplied by PYTHONPATH rather than embedded in production CLI."
+  },
+  "testRuns": [
+    {
+      "executor": "codex/pipeline_audit",
+      "command": "python3 -m unittest discover -s tests/research_ingest -q",
+      "passed": 86,
+      "failed": 0,
+      "durationSeconds": 14.755,
+      "exitCode": 0,
+      "scope": "Synthetic regression suite; author involvement in core/fanout means this is not an independent scientific audit."
+    },
+    {
+      "executor": "codex/pipeline_audit",
+      "command": "python3 -m unittest discover -s tests/research_ingest -p test_fanout.py -q",
+      "passed": 15,
+      "failed": 0,
+      "durationSeconds": 0.805,
+      "exitCode": 0
+    },
+    {
+      "executor": "codex/identity_review",
+      "command": "python3 -m unittest discover -s tests/research_ingest -p test_fanout.py -q",
+      "passed": 15,
+      "failed": 0,
+      "evidence": "Exact-hash independent reviewer confirmation in task collaboration; no fabricated duration or stdout."
+    },
+    {
+      "executor": "codex/pipeline_audit",
+      "command": "python3 -m unittest discover -s tests/research_ingest -p test_audit_sample.py -q",
+      "passed": 8,
+      "failed": 0,
+      "exitCode": 0
+    }
+  ],
+  "checks": [
+    {
+      "area": "fanout",
+      "status": "PASS",
+      "details": "Pinned source candidate, extractor receipt, independent audit, claim/result dependencies and current app inputs bind read-only private proposals. Exact scope remains shared across parent destinations. Cross-scope claims require explicit source-located restatement; no automatic acquisition-tag mappings."
+    },
+    {
+      "area": "condition routing and reproducibility",
+      "status": "PASS",
+      "details": "Drug mechanism proposals retain Mechanism of Action. Condition rationale proposes Interventions with pending_layout when absent; no rendered availability assertion. Null condition cannot match an answer guide with no entityId. Canonical plan proposalDate determines dates/history IDs; repeated identical plans reproduce output."
+    },
+    {
+      "area": "mixed mechanism collection",
+      "status": "PASS_AFTER_REPAIR",
+      "details": "Actual CAL07 execution exposed condition objects without drugId in the historical drugs array. The prior empty mechanism fixture missed this production shape. Filter now uses a nonnull optional drugId; the standard fixture includes drug and condition records. The new end-to-end regression verifies the selected drug snapshot, condition pending-layout output and duplicate matching-drug HOLD."
+    },
+    {
+      "area": "audit sampling",
+      "status": "PASS_AFTER_REPAIR",
+      "details": "100% calibration/public-number/launch obligations; remaining full texts use SHA-ranked ceil(10%) per worker/design/format stratum. Mandatory obligations are excluded from sample denominator. Material errors expand all matching known dimensions using OR; all-unknown expands all records. Duplicate report/version, nonboolean flags and leading/trailing whitespace in identities, seed or dimensions fail closed."
+    },
+    {
+      "area": "metadata packaging",
+      "status": "PASS_CODE_REVIEW_ONLY",
+      "details": "Checks approved plan/readiness and exact inputs before and after ZIP creation; safe private work output, create-only ZIP, metadata/code extensions, deterministic ZIP entry metadata, exact member-byte readback and external ZIP receipt. PREPARED_NOT_DISPATCHED and receiverAccessVerified false remain explicit."
+    }
+  ],
+  "actualFanout": {
+    "executionOwner": "codex/root",
+    "inspectionBy": "codex/pipeline_audit",
+    "planId": "RRX-INGEST-001-FANOUT-CAL07-1.1",
+    "plan": {
+      "path": "research/batches/RRX-INGEST-001/fanout/CAL-07/plan.json",
+      "sha256": "0c427165751155cf135e832949c017ab0f89db3a48ee5b447c5447630fea01bc",
+      "bytes": 25479
+    },
+    "proposals": {
+      "path": "research/batches/RRX-INGEST-001/fanout/CAL-07/proposals.json",
+      "sha256": "daf40aa7a692ece9a7ad4ac3d8a5b4a160ad531bba4d675b0351e57a32da8259",
+      "bytes": 87568
+    },
+    "priorExecutionHold": {
+      "path": "research/batches/RRX-INGEST-001/fanout/CAL-07/history/1.0-held/execution-hold.json",
+      "sha256": "dbc37651ff7c2b4b704af6b60eb9d5ebe9724641a9dd20cc677431ec0b1d727d",
+      "bytes": 212
+    },
+    "priorPlan": {
+      "path": "research/batches/RRX-INGEST-001/fanout/CAL-07/history/1.0-held/plan.json",
+      "sha256": "e59730cd4e46a931f552e35ca9caca98dee4729d20736b52e592f1ba2a28c953",
+      "bytes": 25479
+    },
+    "status": "PASS",
+    "synthesisProposals": 0,
+    "mechanismProposals": 2,
+    "pageProposals": 3,
+    "historyProposals": 3,
+    "reviewQuestionInputs": 15,
+    "performedImport": false,
+    "humanApproval": false,
+    "meaning": "The reviewer inspected the actual output status, counts and exact bytes. Source science remains the separate named independent audit; this report does not reapprove it."
+  },
+  "remainingLimits": [
+    "Tests and structural validation do not prove scientific correctness, full-source reading or complete Q01-Q15 appraisal. Independent source verification and current human/editorial/release gates remain required.",
+    "CAL07 output is a bounded private proposal with pending approvals, not an imported or public review. Condition Interventions requires its recorded layout dependency and future rendered verification.",
+    "The audit sampler selects obligations only: auditPerformed and scientificApproval remain false.",
+    "The package review is static code review only. Metadata/code extension filtering does not independently establish document content; the exact approved packet defines this package scope. Receiver attachment accessibility and acquisition were not verified here.",
+    "Whole-file canonical integration remains a separate guarded operation owned by the integrator; no canonical or public app files were written by this review."
+  ],
+  "scientificApproval": false,
+  "performedImport": false,
+  "publicPublicationApproval": false,
+  "externalDispatch": false
+}

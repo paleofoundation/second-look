@@ -1,0 +1,775 @@
+{
+  "plan_id": "SL-INGEST-1.0",
+  "plan_sha256": "94aa213b11cd7ce879eb83e3ea819b706000725ed6ed31b379d4e87b0cd3b07c",
+  "generated_at": "2026-10-09T05:04:07+00:00",
+  "pilot_ids_preserved": {
+    "papers": [
+      "P-ACTIV6-2026",
+      "P-COVIDOUT-2023",
+      "P-KOREA-2026",
+      "P-RECOVER-2026",
+      "P-REVIVE-2026",
+      "P-STOPPASC-2024"
+    ],
+    "studies": [
+      "S-ACTIV6-2026",
+      "S-COVIDOUT-2023",
+      "S-KOREA-2026",
+      "S-RECOVER-2026",
+      "S-REVIVE-2026",
+      "S-STOPPASC-2024"
+    ],
+    "results": [
+      "R-A6-CD",
+      "R-A6-RD",
+      "R-CO-HR",
+      "R-KR-RECOVERY",
+      "R-RV-NULL",
+      "R-SP-FATIGUE",
+      "R-SP-PRIMARY"
+    ],
+    "claims": [
+      "C-PREVENT-A6",
+      "C-PREVENT-CD",
+      "C-PREVENT-CO",
+      "C-PREVENT-NUM",
+      "C-TREAT-KR",
+      "C-TREAT-RV",
+      "C-TREAT-SP"
+    ],
+    "reviews": [
+      "REVIEW-P-ACTIV6-2026",
+      "REVIEW-P-COVIDOUT-2023",
+      "REVIEW-P-STOPPASC-2024"
+    ],
+    "context": [
+      "CTX-CO-CORR",
+      "CTX-GLOSSARY-ABSOLUTE-RISK",
+      "CTX-GLOSSARY-CONFIDENCE-INTERVAL",
+      "CTX-GLOSSARY-OFF-LABEL",
+      "CTX-GLOSSARY-PLACEBO",
+      "CTX-GLOSSARY-RANDOMIZATION",
+      "CTX-GLOSSARY-RELATIVE-RISK",
+      "CTX-REVIVE-RETRACTION",
+      "CTX-SP-CORR"
+    ],
+    "pages": [
+      "G-COMPARE",
+      "G-LONGCOVID",
+      "G-MET-PREVENT",
+      "G-MET-TREAT",
+      "G-METFORMIN",
+      "G-NMV-TREAT"
+    ]
+  },
+  "pilot_ids_all_present": true,
+  "papers": [
+    {
+      "paper_id": "P-COVIDOUT-2023",
+      "doi": "10.1016/s1473-3099(23)00299-2",
+      "pmid": "37302406",
+      "pmcid": "PMC11259948",
+      "study_family_id": "S-COVIDOUT-2023",
+      "origin": "pilot",
+      "access_status": "full_text_html"
+    },
+    {
+      "paper_id": "P-ACTIV6-2026",
+      "doi": "10.1093/cid/ciag335",
+      "pmid": "42240559",
+      "pmcid": null,
+      "study_family_id": "S-ACTIV6-2026",
+      "origin": "pilot",
+      "access_status": "partial_full_text_html"
+    },
+    {
+      "paper_id": "P-STOPPASC-2024",
+      "doi": "10.1001/jamainternmed.2024.2007",
+      "pmid": "38848477",
+      "pmcid": "PMC11161857",
+      "study_family_id": "S-STOPPASC-2024",
+      "origin": "pilot",
+      "access_status": "full_text_html"
+    },
+    {
+      "paper_id": "P-KOREA-2026",
+      "doi": "10.7326/annals-25-04883",
+      "pmid": "41771135",
+      "pmcid": null,
+      "study_family_id": "S-KOREA-2026",
+      "origin": "pilot",
+      "access_status": "abstract_only"
+    },
+    {
+      "paper_id": "P-RECOVER-2026",
+      "doi": "10.1016/s1473-3099(26)00406-8",
+      "pmid": "42673984",
+      "pmcid": null,
+      "study_family_id": "S-RECOVER-2026",
+      "origin": "pilot",
+      "access_status": "abstract_only"
+    },
+    {
+      "paper_id": "P-REVIVE-2026",
+      "doi": "10.7326/annals-25-03959",
+      "pmid": "41911553",
+      "pmcid": null,
+      "study_family_id": "S-REVIVE-2026",
+      "origin": "pilot",
+      "access_status": "abstract_only"
+    },
+    {
+      "paper_id": "P-REVIVE-REPUB-2026",
+      "doi": "10.7326/annals-26-02144",
+      "pmid": "42832803",
+      "pmcid": null,
+      "study_family_id": "S-REVIVE-2026",
+      "origin": "this_dispatch",
+      "access_status": "abstract_only"
+    },
+    {
+      "paper_id": "P-ACTIV6-PREPRINT-2025",
+      "doi": "10.1101/2025.08.08.25333305",
+      "pmid": "40832427",
+      "pmcid": "PMC12363699",
+      "study_family_id": "S-ACTIV6-2026",
+      "origin": "this_dispatch",
+      "access_status": "abstract_only"
+    },
+    {
+      "paper_id": "P-PAXLC-2025",
+      "doi": "10.1016/s1473-3099(25)00073-8",
+      "pmid": "40188838",
+      "pmcid": null,
+      "study_family_id": "S-PAXLC-2025",
+      "origin": "this_dispatch",
+      "access_status": "abstract_only"
+    },
+    {
+      "paper_id": "P-STOPPASC-PRO-2025",
+      "doi": "10.1093/ofid/ofaf634",
+      "pmid": "41164784",
+      "pmcid": "PMC12560753",
+      "study_family_id": "S-STOPPASC-2024",
+      "origin": "this_dispatch",
+      "access_status": "full_text_html"
+    },
+    {
+      "paper_id": "P-STOPPASC-BIOM-2025",
+      "doi": "10.1001/jamanetworkopen.2025.26901",
+      "pmid": "40810942",
+      "pmcid": "PMC12355292",
+      "study_family_id": "S-STOPPASC-2024",
+      "origin": "this_dispatch",
+      "access_status": "full_text_html"
+    },
+    {
+      "paper_id": "P-IMC2NMVR-2025",
+      "doi": "10.3389/fimmu.2025.1698271",
+      "pmid": "41562079",
+      "pmcid": "PMC12812670",
+      "study_family_id": "S-IMC2NMVR-2025",
+      "origin": "this_dispatch",
+      "access_status": "full_text_html"
+    },
+    {
+      "paper_id": "P-MVCPRAV-2023",
+      "doi": "10.3389/fmed.2023.1122529",
+      "pmid": "36844201",
+      "pmcid": "PMC9944830",
+      "study_family_id": "S-MVCPRAV-2023",
+      "origin": "this_dispatch",
+      "access_status": "full_text_html"
+    },
+    {
+      "paper_id": "P-FLVPCS-2023",
+      "doi": "10.1186/s12879-023-08172-5",
+      "pmid": "37003990",
+      "pmcid": "PMC10064948",
+      "study_family_id": "S-FLVPCS-2023",
+      "origin": "this_dispatch",
+      "access_status": "full_text_html"
+    },
+    {
+      "paper_id": "P-ACTIV6-ACUTE-2025",
+      "doi": null,
+      "pmid": "40658388",
+      "pmcid": "PMC12261116",
+      "study_family_id": "S-ACTIV6-2026",
+      "origin": "this_dispatch",
+      "access_status": "full_text_html"
+    },
+    {
+      "paper_id": "P-ACTIV6-FLVHD-2023",
+      "doi": null,
+      "pmid": "37976072",
+      "pmcid": "PMC10656670",
+      "study_family_id": "S-ACTIV6-FLVHD-2023",
+      "origin": "this_dispatch",
+      "access_status": "full_text_html"
+    },
+    {
+      "paper_id": "P-STOPCOVID2-2023",
+      "doi": null,
+      "pmid": "37622035",
+      "pmcid": "PMC10445518",
+      "study_family_id": "S-STOPCOVID2-2023",
+      "origin": "this_dispatch",
+      "access_status": "full_text_html"
+    },
+    {
+      "paper_id": "P-TOGETHER-FLVBUD-2023",
+      "doi": null,
+      "pmid": "37068273",
+      "pmcid": "PMC10111398",
+      "study_family_id": "S-TOGETHER-FLVBUD-2023",
+      "origin": "this_dispatch",
+      "access_status": "full_text_html"
+    },
+    {
+      "paper_id": "P-SGLT2MET-LC-2026",
+      "doi": "10.1007/s40121-026-01362-z",
+      "pmid": "42236640",
+      "pmcid": "PMC13280275",
+      "study_family_id": "S-SGLT2MET-LC-2026",
+      "origin": "this_dispatch",
+      "access_status": "full_text_html"
+    },
+    {
+      "paper_id": "P-PEMI-CS-2025",
+      "doi": "10.7759/cureus.96246",
+      "pmid": "41357034",
+      "pmcid": "PMC12681373",
+      "study_family_id": "S-PEMI-CS-2025",
+      "origin": "this_dispatch",
+      "access_status": "full_text_html"
+    },
+    {
+      "paper_id": "P-METXR-IR-2018",
+      "doi": null,
+      "pmid": "28857388",
+      "pmcid": "PMC5813139",
+      "study_family_id": "S-METXR-IR-2018",
+      "origin": "this_dispatch",
+      "access_status": "full_text_html"
+    },
+    {
+      "paper_id": "P-OVCA-REPURP-CASE-2023",
+      "doi": null,
+      "pmid": "37323625",
+      "pmcid": "PMC10266906",
+      "study_family_id": "S-OVCA-REPURP-CASE-2023",
+      "origin": "this_dispatch",
+      "access_status": "full_text_html"
+    },
+    {
+      "paper_id": "P-FBZ-DILI-CASE-2026",
+      "doi": null,
+      "pmid": "41608149",
+      "pmcid": "PMC12836008",
+      "study_family_id": "S-FBZ-DILI-CASE-2026",
+      "origin": "this_dispatch",
+      "access_status": "full_text_html"
+    },
+    {
+      "paper_id": "P-GBM-LEV-2022",
+      "doi": null,
+      "pmid": "34845868",
+      "pmcid": "PMC8729048",
+      "study_family_id": "S-GBM-LEV-2022",
+      "origin": "this_dispatch",
+      "access_status": "full_text_html"
+    },
+    {
+      "paper_id": "P-LDN-FM-INNOVA-2026",
+      "doi": null,
+      "pmid": "42385209",
+      "pmcid": "PMC13322712",
+      "study_family_id": "S-LDN-FM-INNOVA-2026",
+      "origin": "this_dispatch",
+      "access_status": "full_text_html"
+    },
+    {
+      "paper_id": "P-CSBD-FLX-NTX-2026",
+      "doi": null,
+      "pmid": "42838712",
+      "pmcid": null,
+      "study_family_id": "S-CSBD-FLX-NTX-2026",
+      "origin": "this_dispatch",
+      "access_status": "abstract_only"
+    },
+    {
+      "paper_id": "P-PAXBD-2025",
+      "doi": null,
+      "pmid": "39829389",
+      "pmcid": "PMC11831867",
+      "study_family_id": "S-PAXBD-2025",
+      "origin": "this_dispatch",
+      "access_status": "full_text_html"
+    },
+    {
+      "paper_id": "P-PRAM-ANHED-2026",
+      "doi": null,
+      "pmid": "42286321",
+      "pmcid": "PMC13375643",
+      "study_family_id": "S-PRAM-ANHED-2026",
+      "origin": "this_dispatch",
+      "access_status": "full_text_html"
+    },
+    {
+      "paper_id": "P-PEARL-2025",
+      "doi": null,
+      "pmid": "40188830",
+      "pmcid": "PMC12074816",
+      "study_family_id": "S-PEARL-2025",
+      "origin": "this_dispatch",
+      "access_status": "full_text_html"
+    },
+    {
+      "paper_id": "P-RAPAEX-2026",
+      "doi": null,
+      "pmid": "41985884",
+      "pmcid": "PMC13082878",
+      "study_family_id": "S-RAPAEX-2026",
+      "origin": "this_dispatch",
+      "access_status": "full_text_html"
+    }
+  ],
+  "links": [
+    {
+      "from": "P-REVIVE-REPUB-2026",
+      "to": "P-REVIVE-2026",
+      "relation": "candidate_replacement_unconfirmed",
+      "basis": "Same NCT06128967, title and authors; PubMed has no formal link; original RetractionIn PMID 42832813",
+      "merged": false,
+      "reason_not_merged": "Different DOIs (10.7326/ANNALS-26-02144 vs 10.7326/ANNALS-25-03959); plan forbids auto-merge",
+      "formal_link": false
+    },
+    {
+      "from": "CTX-REVIVE-RETRACTION",
+      "to": "P-REVIVE-2026",
+      "relation": "retraction_notice",
+      "basis": "PubMed RetractionOf; notice DOI 10.7326/ANNALS-26-03050 PMID 42832813",
+      "merged": false
+    },
+    {
+      "from": "CTX-REVIVE-PS-RETRACTION",
+      "to": "patient summary PMID 41911555",
+      "relation": "retraction_notice",
+      "basis": "PubMed notice 42832812 (DOI 10.7326/ANNALS-26-03295)",
+      "merged": false
+    },
+    {
+      "from": "P-ACTIV6-PREPRINT-2025",
+      "to": "P-ACTIV6-2026",
+      "relation": "preprint_of",
+      "basis": "Same title/trial NCT04885530",
+      "merged": false
+    },
+    {
+      "from": "P-ACTIV6-ACUTE-2025",
+      "to": "S-ACTIV6-2026",
+      "relation": "companion_report_same_randomization",
+      "basis": "Same ACTIV-6 metformin arm NCT04885530; arm n differs (1443/1548 vs 1439/1544)",
+      "merged": false
+    },
+    {
+      "from": "P-STOPPASC-PRO-2025",
+      "to": "S-STOPPASC-2024",
+      "relation": "secondary_report",
+      "merged": false
+    },
+    {
+      "from": "P-STOPPASC-BIOM-2025",
+      "to": "S-STOPPASC-2024",
+      "relation": "secondary_report",
+      "merged": false
+    },
+    {
+      "from": "CTX-PAXLC-DESIGN",
+      "to": "S-PAXLC-2025",
+      "relation": "protocol_publication",
+      "merged": false
+    },
+    {
+      "from": "CTX-CSBD-PROTOCOL",
+      "to": "S-CSBD-FLX-NTX-2026",
+      "relation": "protocol_publication",
+      "merged": false
+    }
+  ],
+  "registries": [
+    {
+      "context_id": "CTX-B01-REG-NCT06128967",
+      "url": "https://clinicaltrials.gov/study/NCT06128967"
+    },
+    {
+      "context_id": "CTX-B01-REG-NCT04510194",
+      "url": "https://clinicaltrials.gov/study/NCT04510194"
+    },
+    {
+      "context_id": "CTX-B01-REG-NCT04885530",
+      "url": "https://clinicaltrials.gov/study/NCT04885530"
+    },
+    {
+      "context_id": "CTX-B01-REG-NCT05576662",
+      "url": "https://clinicaltrials.gov/study/NCT05576662"
+    },
+    {
+      "context_id": "CTX-B02-REG-NCT05668091",
+      "url": "https://clinicaltrials.gov/study/NCT05668091"
+    },
+    {
+      "context_id": "CTX-B02-REG-NCT05595369",
+      "url": "https://clinicaltrials.gov/study/NCT05595369"
+    },
+    {
+      "context_id": "CTX-B03-REG-NCT05877508",
+      "url": "https://clinicaltrials.gov/study/NCT05877508"
+    },
+    {
+      "context_id": "CTX-B03-REG-NCT07021794",
+      "url": "https://clinicaltrials.gov/study/NCT07021794"
+    },
+    {
+      "context_id": "CTX-B03-REG-NCT05911906",
+      "url": "https://clinicaltrials.gov/study/NCT05911906"
+    },
+    {
+      "context_id": "CTX-B03-REG-NCT06316843",
+      "url": "https://clinicaltrials.gov/study/NCT06316843"
+    }
+  ],
+  "auto_merges": [],
+  "conflicts_open": [
+    "ACTIV-6 arm n mismatch across reports",
+    "COVID-OUT 10.4% vs 10.6% unresolved",
+    "IMC-2 86.7% vs n=12 denominator",
+    "REVIVE republished full text not acquired"
+  ],
+  "import_aliases": {
+    "doi:10.1016/s1473-3099(23)00299-2": [
+      "P-COVIDOUT-2023"
+    ],
+    "pmid:37302406": [
+      "P-COVIDOUT-2023"
+    ],
+    "pmcid:pmc11259948": [
+      "P-COVIDOUT-2023"
+    ],
+    "doi:10.1093/cid/ciag335": [
+      "P-ACTIV6-2026"
+    ],
+    "pmid:42240559": [
+      "P-ACTIV6-2026"
+    ],
+    "doi:10.1001/jamainternmed.2024.2007": [
+      "P-STOPPASC-2024"
+    ],
+    "pmid:38848477": [
+      "P-STOPPASC-2024"
+    ],
+    "pmcid:pmc11161857": [
+      "P-STOPPASC-2024"
+    ],
+    "doi:10.7326/annals-25-04883": [
+      "P-KOREA-2026"
+    ],
+    "pmid:41771135": [
+      "P-KOREA-2026"
+    ],
+    "doi:10.1016/s1473-3099(26)00406-8": [
+      "P-RECOVER-2026"
+    ],
+    "pmid:42673984": [
+      "P-RECOVER-2026"
+    ],
+    "doi:10.7326/annals-25-03959": [
+      "P-REVIVE-2026"
+    ],
+    "pmid:41911553": [
+      "P-REVIVE-2026"
+    ],
+    "doi:10.7326/annals-26-02144": [
+      "P-REVIVE-REPUB-2026"
+    ],
+    "pmid:42832803": [
+      "P-REVIVE-REPUB-2026"
+    ],
+    "doi:10.1101/2025.08.08.25333305": [
+      "P-ACTIV6-PREPRINT-2025"
+    ],
+    "pmid:40832427": [
+      "P-ACTIV6-PREPRINT-2025"
+    ],
+    "pmcid:pmc12363699": [
+      "P-ACTIV6-PREPRINT-2025"
+    ],
+    "doi:10.1016/s1473-3099(25)00073-8": [
+      "P-PAXLC-2025"
+    ],
+    "pmid:40188838": [
+      "P-PAXLC-2025"
+    ],
+    "doi:10.1093/ofid/ofaf634": [
+      "P-STOPPASC-PRO-2025"
+    ],
+    "pmid:41164784": [
+      "P-STOPPASC-PRO-2025"
+    ],
+    "pmcid:pmc12560753": [
+      "P-STOPPASC-PRO-2025"
+    ],
+    "doi:10.1001/jamanetworkopen.2025.26901": [
+      "P-STOPPASC-BIOM-2025"
+    ],
+    "pmid:40810942": [
+      "P-STOPPASC-BIOM-2025"
+    ],
+    "pmcid:pmc12355292": [
+      "P-STOPPASC-BIOM-2025"
+    ],
+    "doi:10.3389/fimmu.2025.1698271": [
+      "P-IMC2NMVR-2025"
+    ],
+    "pmid:41562079": [
+      "P-IMC2NMVR-2025"
+    ],
+    "pmcid:pmc12812670": [
+      "P-IMC2NMVR-2025"
+    ],
+    "doi:10.3389/fmed.2023.1122529": [
+      "P-MVCPRAV-2023"
+    ],
+    "pmid:36844201": [
+      "P-MVCPRAV-2023"
+    ],
+    "pmcid:pmc9944830": [
+      "P-MVCPRAV-2023"
+    ],
+    "doi:10.1186/s12879-023-08172-5": [
+      "P-FLVPCS-2023"
+    ],
+    "pmid:37003990": [
+      "P-FLVPCS-2023"
+    ],
+    "pmcid:pmc10064948": [
+      "P-FLVPCS-2023"
+    ],
+    "pmid:40658388": [
+      "P-ACTIV6-ACUTE-2025"
+    ],
+    "pmcid:pmc12261116": [
+      "P-ACTIV6-ACUTE-2025"
+    ],
+    "pmid:37976072": [
+      "P-ACTIV6-FLVHD-2023"
+    ],
+    "pmcid:pmc10656670": [
+      "P-ACTIV6-FLVHD-2023"
+    ],
+    "pmid:37622035": [
+      "P-STOPCOVID2-2023"
+    ],
+    "pmcid:pmc10445518": [
+      "P-STOPCOVID2-2023"
+    ],
+    "pmid:37068273": [
+      "P-TOGETHER-FLVBUD-2023"
+    ],
+    "pmcid:pmc10111398": [
+      "P-TOGETHER-FLVBUD-2023"
+    ],
+    "doi:10.1007/s40121-026-01362-z": [
+      "P-SGLT2MET-LC-2026"
+    ],
+    "pmid:42236640": [
+      "P-SGLT2MET-LC-2026"
+    ],
+    "pmcid:pmc13280275": [
+      "P-SGLT2MET-LC-2026"
+    ],
+    "doi:10.7759/cureus.96246": [
+      "P-PEMI-CS-2025"
+    ],
+    "pmid:41357034": [
+      "P-PEMI-CS-2025"
+    ],
+    "pmcid:pmc12681373": [
+      "P-PEMI-CS-2025"
+    ],
+    "pmid:28857388": [
+      "P-METXR-IR-2018"
+    ],
+    "pmcid:pmc5813139": [
+      "P-METXR-IR-2018"
+    ],
+    "pmid:37323625": [
+      "P-OVCA-REPURP-CASE-2023"
+    ],
+    "pmcid:pmc10266906": [
+      "P-OVCA-REPURP-CASE-2023"
+    ],
+    "pmid:41608149": [
+      "P-FBZ-DILI-CASE-2026"
+    ],
+    "pmcid:pmc12836008": [
+      "P-FBZ-DILI-CASE-2026"
+    ],
+    "pmid:34845868": [
+      "P-GBM-LEV-2022"
+    ],
+    "pmcid:pmc8729048": [
+      "P-GBM-LEV-2022"
+    ],
+    "pmid:42385209": [
+      "P-LDN-FM-INNOVA-2026"
+    ],
+    "pmcid:pmc13322712": [
+      "P-LDN-FM-INNOVA-2026"
+    ],
+    "pmid:42838712": [
+      "P-CSBD-FLX-NTX-2026"
+    ],
+    "pmid:39829389": [
+      "P-PAXBD-2025"
+    ],
+    "pmcid:pmc11831867": [
+      "P-PAXBD-2025"
+    ],
+    "pmid:42286321": [
+      "P-PRAM-ANHED-2026"
+    ],
+    "pmcid:pmc13375643": [
+      "P-PRAM-ANHED-2026"
+    ],
+    "pmid:40188830": [
+      "P-PEARL-2025"
+    ],
+    "pmcid:pmc12074816": [
+      "P-PEARL-2025"
+    ],
+    "pmid:41985884": [
+      "P-RAPAEX-2026"
+    ],
+    "pmcid:pmc13082878": [
+      "P-RAPAEX-2026"
+    ],
+    "topic:T-MET-LC-PREVENT": [
+      "DR001"
+    ],
+    "topic:metformin prevention": [
+      "DR001"
+    ],
+    "topic:T-MET-LC-TREAT": [
+      "DR002"
+    ],
+    "topic:T-NMV-LC-TREAT": [
+      "DR003"
+    ],
+    "topic:Paxlovid long COVID": [
+      "DR003"
+    ],
+    "topic:fluvoxamine long COVID": [
+      "DR004"
+    ],
+    "topic:fluvoxamine": [
+      "DR005",
+      "DR016",
+      "DR017"
+    ],
+    "topic:ivermectin": [
+      "DR006",
+      "DR008",
+      "DR022"
+    ],
+    "topic:mebendazole": [
+      "DR006"
+    ],
+    "topic:candidate-specific drugs pending acquisition": [
+      "DR007"
+    ],
+    "topic:mebendazole as observed leads": [
+      "DR008"
+    ],
+    "topic:pemivibart": [
+      "DR009",
+      "DR012",
+      "DR018"
+    ],
+    "topic:guanfacine": [
+      "DR010"
+    ],
+    "topic:multiple candidates to be individually specified": [
+      "DR011"
+    ],
+    "topic:maraviroc": [
+      "DR012"
+    ],
+    "topic:atorvastatin": [
+      "DR012"
+    ],
+    "topic:rituximab": [
+      "DR012"
+    ],
+    "topic:low-dose naltrexone": [
+      "DR012",
+      "DR023",
+      "DR024",
+      "DR025"
+    ],
+    "topic:metformin": [
+      "DR013",
+      "DR014",
+      "DR015"
+    ],
+    "topic:other SSRIs": [
+      "DR016"
+    ],
+    "topic:nirmatrelvir/ritonavir": [
+      "DR018"
+    ],
+    "topic:valacyclovir": [
+      "DR018"
+    ],
+    "topic:celecoxib with or without nirmatrelvir/ritonavir": [
+      "DR018"
+    ],
+    "topic:candidate-specific cancer agents": [
+      "DR019"
+    ],
+    "topic:model-generated candidate drugs": [
+      "DR020"
+    ],
+    "topic:not yet specified": [
+      "DR021"
+    ],
+    "topic:fenbendazole as observed claims": [
+      "DR022"
+    ],
+    "topic:naltrexone": [
+      "DR026",
+      "DR027"
+    ],
+    "topic:pramipexole": [
+      "DR028",
+      "DR029",
+      "DR030"
+    ],
+    "topic:pramipexole vs tranylcypromine": [
+      "DR031"
+    ],
+    "topic:sirolimus/rapamycin": [
+      "DR032",
+      "DR033",
+      "DR034",
+      "DR035"
+    ],
+    "topic:bupropion": [
+      "DR034"
+    ],
+    "topic:acarbose": [
+      "DR036"
+    ]
+  }
+}

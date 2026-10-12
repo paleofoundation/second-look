@@ -2,6 +2,14 @@
 
 Record requirements when adopted, even if implementation is pending. Keep history append-only; describe supersession explicitly. Each entry needs source/date, scope, requirement, affected contracts, implementation/verification/release status and unresolved work.
 
+## 2026-10-12 — SL-RULE-007: implement reconciled research ingestion and fan-out
+
+Source: owner's explicit “PLEASE IMPLEMENT THIS PLAN” request in the RemapRx research chat, adopting hybrid Codex/Grok, repair-before-expansion and MOA-01 within current targets. The complete adopted scope is in `research/batches/RRX-INGEST-001/PLAN.md`.
+
+Adopted: reconcile current app and external private acquisition/scientific stores without summing overlapping history; retain the 30+30 portfolio, all 36 questions, current additions, eight-drug mechanism scope and mandatory D07 oncology. Preserve historical closed-packet restrictions. Use prospective hashed plans/schemas, logical source roots, immutable receipts, centralized identity ownership, exact outcome scope, isolated worker outputs, independent checks and a store-wide guarded importer. Reuse later verified tooling rather than overwriting current data with pilot generators. Require 24-report calibration, separate completion dimensions and honest release gates.
+
+Scope: repository research infrastructure, private checkpoint reconciliation and bounded source-backed content candidates. Implementation/verification checkpoints and remaining scientific work are recorded in the batch handoff; this adoption entry does not claim those operations ran. No deployment or scientific release is implied. Reusable upstream synchronization remains pending; the pinned rule and historical receipts are preserved.
+
 ## 2026-10-11 — SL-RULE-001: durable collaborator repository
 
 Source: owner request in the Drug Repurposing chat: the Second Look website needs a GitHub repository for research collaborators, including all canonical instructions and One Match rules so rules created on this build are not lost. Owner selected private `paleofoundation/second-look`.

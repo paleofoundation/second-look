@@ -1,0 +1,113 @@
+{
+  "date": "2026-10-08",
+  "schema_version": "1.0.0",
+  "corpus_sha256": "244413d005d0af52564aa7161d67e73e5a8c3f6ca4e796071d1723aad4842516",
+  "schema_sha256": "32953789f4b96f19d7f7f44394f930aa33dceb33245478cde2fcab2c28cc5a70",
+  "schema_validation": "PASS",
+  "foreign_keys_unique_ids_Q01_Q15_exact_hashes": "PASS",
+  "source_file_hashes": "PASS",
+  "known_numeric_values_and_units": "PASS (four effect estimates; every source-dependent number still needs independent human audit)",
+  "failure_cases": [
+    {
+      "case": "wrong units",
+      "result": "rejected",
+      "reason": "source audit numeric/unit mismatch R-A6-RD"
+    },
+    {
+      "case": "citation mismatch",
+      "result": "rejected",
+      "reason": "citation mismatch"
+    },
+    {
+      "case": "duplicate record",
+      "result": "rejected",
+      "reason": "duplicate id papers"
+    },
+    {
+      "case": "orphan claim",
+      "result": "rejected",
+      "reason": "orphan claim result"
+    },
+    {
+      "case": "inaccessible source released",
+      "result": "rejected",
+      "reason": "unacquired source released full review"
+    },
+    {
+      "case": "overlapping study counted separately",
+      "result": "rejected",
+      "reason": "overlapping study family mismatch"
+    },
+    {
+      "case": "retracted source supportive claim",
+      "result": "rejected",
+      "reason": "quarantined source supportive claim"
+    },
+    {
+      "case": "binary events exceed n",
+      "result": "rejected",
+      "reason": "impossible binary numerator"
+    },
+    {
+      "case": "null without reason",
+      "result": "rejected",
+      "reason": "None is not one of ['not_reported', 'not_extracted', 'not_accessible', 'not_applicable', 'not_checked', 'not_identifiable']"
+    },
+    {
+      "case": "Q15 missing",
+      "result": "rejected",
+      "reason": "'Q15' is a required property"
+    },
+    {
+      "case": "stale exact version",
+      "result": "rejected",
+      "reason": "review hash stale"
+    },
+    {
+      "case": "unqualified clinical approval",
+      "result": "rejected",
+      "reason": "None is not of type 'string'"
+    },
+    {
+      "case": "released page without approval",
+      "result": "rejected",
+      "reason": "released page without human approval"
+    },
+    {
+      "case": "released claim without approval",
+      "result": "rejected",
+      "reason": "released claim without human approval"
+    },
+    {
+      "case": "claim locator mismatch",
+      "result": "rejected",
+      "reason": "claim locator source mismatch"
+    },
+    {
+      "case": "orphan section claim",
+      "result": "rejected",
+      "reason": "orphan section claim"
+    },
+    {
+      "case": "malicious document instruction",
+      "result": "quarantined inert fixture",
+      "reason": "No document text evaluator exists; raw text is data and never action authority."
+    }
+  ],
+  "review_words": {
+    "REVIEW-P-COVIDOUT-2023": 503,
+    "REVIEW-P-ACTIV6-2026": 510,
+    "REVIEW-P-STOPPASC-2024": 517
+  },
+  "guide_minimum_words": 68,
+  "human_review": "HOLD",
+  "fulltext_acquisition": "INCOMPLETE",
+  "independent_source_audit": "PENDING",
+  "PDF_visual_audit": "PENDING; no acquired PDFs",
+  "idempotency": "Repeated validation and JSONL export preserve IDs and bytes; rerun full builder only with finalize step; no automatic import overwrites reviewed edits",
+  "limitations": [
+    "Sentence maps are draft source attribution, not a claim of independent source audit",
+    "No formal appraisal or public scientific release",
+    "Failure fixtures excluded from canonical corpus"
+  ]
+}

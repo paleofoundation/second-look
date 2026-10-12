@@ -1,0 +1,607 @@
+{
+  "schemaVersion": "remaprx-gp-planning-review-v1",
+  "status": "PASS",
+  "scope": "GP_PLAN_REVIEW",
+  "reviewer": "codex/identity_review",
+  "planAuthor": "corpus_audit under codex/root integration",
+  "reviewedAt": "2026-10-12T12:11:38.628864+00:00",
+  "planId": "RRX-INGEST-001-1.3",
+  "planSha256": "4f7100d3aa5df7ad98768c5c4be1d6f863bdcf4d0e115417c84e9f0577a02d71",
+  "independence": "Reviewer did not author this prospective plan, its source candidate, calibration assignments, inventory, or source validator. Prior authored synthesis-ID/coverage utilities were audited separately and confer no scientific acceptance.",
+  "checks": {
+    "planSchemaValid": true,
+    "all134PinnedInputsCurrent": true,
+    "twentySnapshotBytesEqualCurrentInputs": true,
+    "thirtyHistoricalArtifactsPreserved": true,
+    "all47RecoveredFilesRemainExactAndPinned": true,
+    "recoveryMutationDisabledByValidateOnlyOperation": true,
+    "twentyFourReportPacketsThreeTranchesOfEightPreserved": true,
+    "thirtySevenSourceAssignmentsAndHoldsPreserved": true,
+    "allThirtyFiveUniqueSourceHashesReverified": true,
+    "nineExecutableSchemasValid": true,
+    "candidateSchemaMatchesPlanId": true,
+    "executableMechanismContractAndSemanticValidatorPinned": true,
+    "currentAmericanEnglishAndConditionScopeRequirementsRead": true,
+    "newConditionOperationExcluded": true,
+    "CAL07CandidateUnchangedBeforeReadiness": true,
+    "humanReleaseAndFreeAuthenticatedAccessGatesRetained": true,
+    "priorFailedProposalAndHoldPreserved": true
+  },
+  "blockingFindings": [],
+  "approvedScope": [
+    "Rebind the already authored CAL-07 candidate to this exact plan and validate its unchanged source content, locators, Q01–Q15 inputs and retained missingness.",
+    "Independently audit the bounded CAL-07 qualitative candidate; keep all full-scientific-review, human-review and release states pending."
+  ],
+  "excludedScope": [
+    "New acquisition, Grok dispatch or extraction of missing figures/supplements.",
+    "Further CAL-01/CAL-03 extraction, other calibration activation or scale-up.",
+    "Stage/apply or any mutation of the completed private checkpoint, canonical reader/app data, grades, approvals or release.",
+    "Structured mechanism payload authoring or completing a full scientific review by relabeling the partial candidate.",
+    "Condition-led expansion or layout changes under the separate RRX-CONDITION-001 operation; page fanout requires its own current plan and independently accepted bindings."
+  ],
+  "verification": {
+    "planInputHashes": [
+      {
+        "path": "AGENTS.md",
+        "sha256": "36c103a973f80b67a36c6311ab0282fcca4b4f4b34358f6149e8e2dc5416a2e3"
+      },
+      {
+        "path": "components/shared-theme/universal-article.ts",
+        "sha256": "280f3841722058a4efae981d3911d91890af0899183e3b826bf816765874cdb2"
+      },
+      {
+        "path": "data/content.json",
+        "sha256": "f8252d1140ba1b522bdb60a7e5f2e2b507c6fe0fea8454b69caf82808a94aafc"
+      },
+      {
+        "path": "data/discovery-pages.json",
+        "sha256": "b8d39490af621c2e494762ee9d0ffdf3416a564950b305587f20b6573a83a827"
+      },
+      {
+        "path": "data/private-reviews.json",
+        "sha256": "b3b5f75443899b359d78575d693d82444143897154c22862023598c2c873401c"
+      },
+      {
+        "path": "data/public-content.json",
+        "sha256": "528ecedb600be4b252a6d2269eafad381caf803c49b7f044ed9df865fbf443e4"
+      },
+      {
+        "path": "data/public-mechanisms.json",
+        "sha256": "a93db68a5b119da91bafc8de03d44968baafa39e0733b8440f9ebf52e3bf4b5b"
+      },
+      {
+        "path": "data/public-reader-evidence.json",
+        "sha256": "c1ec8e426af268dfb89f69f29dfed0ec887d5e7bfc4e9e08e11102791c3143bd"
+      },
+      {
+        "path": "data/reader-evidence.json",
+        "sha256": "8ec76d5e8fb500df1dac7e6167332c7b283806018f1c900ea46fa9120b74c32b"
+      },
+      {
+        "path": "data/review-envelopes.json",
+        "sha256": "9dbc05bec5d78002e4f1cd78fb7494ef4d00c7b04c6cd5ab9abb020312f2d8e0"
+      },
+      {
+        "path": "docs/PROJECT-RULES.md",
+        "sha256": "17836fb0c484ea0f8c4f5e30945a51ec11540f903a13116364bedd1168a17472"
+      },
+      {
+        "path": "docs/RESEARCH-INGEST.md",
+        "sha256": "a9f56c76c20a1a4e74fc1e94ef8cb5020962208c95efcc1fbc57301e0e026642"
+      },
+      {
+        "path": "docs/RULE-CHANGELOG.md",
+        "sha256": "2410aee4edf2693249428ef968b63a0de97f1f2e57ec6dc390c3904f12bd0627"
+      },
+      {
+        "path": "editorial/mechanism-expansion/mechanism-extraction-schema.json",
+        "sha256": "0f1f7b2a215593e08099f1be5ece3a98b2f2f8b34720689c7a0ff72f85261c1e"
+      },
+      {
+        "path": "editorial/reader-source-aliases.json",
+        "sha256": "70186e5e5ced9232a4a21b321c5c988058191c514131dbea8ce442e352cb2fef"
+      },
+      {
+        "path": "editorial/reader-source-corrections.json",
+        "sha256": "06561277b96ef2f869312715e2a55ebcc9a9c84662b8e0d59714dd8395e7b0e2"
+      },
+      {
+        "path": "lib/citation-plan.ts",
+        "sha256": "d0e97ecafa997e29474a2290ee1040ebb18c7b9669abdc0f843c5321a44f552f"
+      },
+      {
+        "path": "lib/mechanisms.ts",
+        "sha256": "74c18405714bd8c4038c6808a7bb2d0dcb42da47a46f8639ba6e5d5977ca8f5a"
+      },
+      {
+        "path": "lib/review-access.ts",
+        "sha256": "6063c013f62e383dce95d2ca62e241c173f3ab5ad8d19bfe8b7808bcf4aebc67"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/PLAN.md",
+        "sha256": "f3b1eafd069d9eb14f6d04c43175e127d044b6c0235c6749ae458a2314736e54"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/app-inputs/1.3/revision-2/AGENTS.md",
+        "sha256": "36c103a973f80b67a36c6311ab0282fcca4b4f4b34358f6149e8e2dc5416a2e3"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/app-inputs/1.3/revision-2/components/shared-theme/universal-article.ts",
+        "sha256": "280f3841722058a4efae981d3911d91890af0899183e3b826bf816765874cdb2"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/app-inputs/1.3/revision-2/data/content.json",
+        "sha256": "f8252d1140ba1b522bdb60a7e5f2e2b507c6fe0fea8454b69caf82808a94aafc"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/app-inputs/1.3/revision-2/data/discovery-pages.json",
+        "sha256": "b8d39490af621c2e494762ee9d0ffdf3416a564950b305587f20b6573a83a827"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/app-inputs/1.3/revision-2/data/private-reviews.json",
+        "sha256": "b3b5f75443899b359d78575d693d82444143897154c22862023598c2c873401c"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/app-inputs/1.3/revision-2/data/public-content.json",
+        "sha256": "528ecedb600be4b252a6d2269eafad381caf803c49b7f044ed9df865fbf443e4"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/app-inputs/1.3/revision-2/data/public-mechanisms.json",
+        "sha256": "a93db68a5b119da91bafc8de03d44968baafa39e0733b8440f9ebf52e3bf4b5b"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/app-inputs/1.3/revision-2/data/public-reader-evidence.json",
+        "sha256": "c1ec8e426af268dfb89f69f29dfed0ec887d5e7bfc4e9e08e11102791c3143bd"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/app-inputs/1.3/revision-2/data/reader-evidence.json",
+        "sha256": "8ec76d5e8fb500df1dac7e6167332c7b283806018f1c900ea46fa9120b74c32b"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/app-inputs/1.3/revision-2/data/review-envelopes.json",
+        "sha256": "9dbc05bec5d78002e4f1cd78fb7494ef4d00c7b04c6cd5ab9abb020312f2d8e0"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/app-inputs/1.3/revision-2/docs/PROJECT-RULES.md",
+        "sha256": "17836fb0c484ea0f8c4f5e30945a51ec11540f903a13116364bedd1168a17472"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/app-inputs/1.3/revision-2/docs/RESEARCH-INGEST.md",
+        "sha256": "a9f56c76c20a1a4e74fc1e94ef8cb5020962208c95efcc1fbc57301e0e026642"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/app-inputs/1.3/revision-2/docs/RULE-CHANGELOG.md",
+        "sha256": "2410aee4edf2693249428ef968b63a0de97f1f2e57ec6dc390c3904f12bd0627"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/app-inputs/1.3/revision-2/editorial/mechanism-expansion/mechanism-extraction-schema.json",
+        "sha256": "0f1f7b2a215593e08099f1be5ece3a98b2f2f8b34720689c7a0ff72f85261c1e"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/app-inputs/1.3/revision-2/editorial/reader-source-aliases.json",
+        "sha256": "70186e5e5ced9232a4a21b321c5c988058191c514131dbea8ce442e352cb2fef"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/app-inputs/1.3/revision-2/editorial/reader-source-corrections.json",
+        "sha256": "06561277b96ef2f869312715e2a55ebcc9a9c84662b8e0d59714dd8395e7b0e2"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/app-inputs/1.3/revision-2/lib/citation-plan.ts",
+        "sha256": "d0e97ecafa997e29474a2290ee1040ebb18c7b9669abdc0f843c5321a44f552f"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/app-inputs/1.3/revision-2/lib/mechanisms.ts",
+        "sha256": "74c18405714bd8c4038c6808a7bb2d0dcb42da47a46f8639ba6e5d5977ca8f5a"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/app-inputs/1.3/revision-2/lib/review-access.ts",
+        "sha256": "6063c013f62e383dce95d2ca62e241c173f3ab5ad8d19bfe8b7808bcf4aebc67"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/app-inputs/1.3/revision-2/rules/one-match-rule/ONE-MATCH-RULE.md",
+        "sha256": "7fae46e83e1da5e139b0ab2d11ca02292603c63a50f764c89819b0792bc2f330"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/app-inputs/1.3/revision-2/source-map.json",
+        "sha256": "5ecba6b6f4f6c48eed8edb71aa7d30441b0093b5960c9b196fa0b9148a262684"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/calibration/assignments.json",
+        "sha256": "fe60bfc9908daab15d9eb7708a9405b2a4dcc482c948f31e594837f07276d49b"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/cited-paper-ledger.json",
+        "sha256": "ec004d13609954263a2953ee280bf9bff65f7600dd166850a66078b59d82d4a7"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/history/plan-1.2-preserved/disposition.json",
+        "sha256": "2dc43241094c4abe40d03d8d8530e2415a5a4a9254d6c17d179783337254cb0c"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/inventory/bindings.jsonl",
+        "sha256": "e209b478978f58af171444cae5de356be7ccf33769a0f879bf26aec1d04aa806"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/inventory/calibration-candidates.json",
+        "sha256": "5759f823b6da344708f749f10cf01e5af2b43f38a1a7c6c2e90cad171d4b9f3a"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/inventory/gaps.jsonl",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/inventory/identity-groups.jsonl",
+        "sha256": "73c5e0e6956fe9a30df02c84cb0ae4d22c46537eca99c677123e77de51c650d6"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/inventory/input-manifest.json",
+        "sha256": "4efc30f453319c2f81e5b43d1e3e534cbd6d2189cb5f1eaf3d6793150841af7b"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/inventory/lineage.jsonl",
+        "sha256": "1f78ca1debd24948f4e442bf5de4810bb4e17312c30845783651deb8ab53a949"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/inventory/ownership.json",
+        "sha256": "770edc65d995109d882338d53f61a85f277b2962660e176459954b88421436a2"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/inventory/preserved-aliases.json",
+        "sha256": "43734d399a07a48cff7fbf24e68a1fca38377e24d8f6074d18405654d3879dd9"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/inventory/return-appearances.jsonl",
+        "sha256": "3ca970d1a95bd43a16debbfc5d40099e96709ce5e5e1ec4b09d6e1455aa53ddf"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/inventory/source-locations.json",
+        "sha256": "3e0092f16975438c3eb4c2d280d5b03cd9beb5fb80cc129b52dfadd44c468f7f"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/inventory/source-records.jsonl",
+        "sha256": "dc399e094efb0628a477c5d828adfb956557eda2f49eb6650b0aaed54e373be7"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/inventory/summary.json",
+        "sha256": "9fd7572074fbbbd27e8ea1c241ab8432591a9f2d50fc8f826903e06ff330059c"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/inventory/target-registry.json",
+        "sha256": "23c9e49c113edd378b577eb880e4e90ef0f2acbc1199aa4be124fb6f3dcfbc44"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/recovery-inputs.json",
+        "sha256": "bb8f412bc4d5dbf55d3e5c4c1ff3762cf9723f6cbbdfa82c7ccc8daf2fc2e576"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/schemas/acceptance.schema.json",
+        "sha256": "136311113f64fd949d869e35b8b6cf4f4920498fafbd7a656a0e68411d41a12a"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/schemas/candidate.schema.json",
+        "sha256": "b8b2d5f1a371992364551b09fd86daeed05a4efb6e34a2dd436a961d48ab6091"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/schemas/journal.schema.json",
+        "sha256": "05f90a9a8af7bf8fa2b2e315e137a9558d10f9752f932978aa2e6dddc17ed2b5"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/schemas/manifest.schema.json",
+        "sha256": "fbfa9e390a83658137626ae98c1ac596a0fc917abc48e15d3c55819cb3eb5a5c"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/schemas/mechanism-candidate.schema.json",
+        "sha256": "f3753770372a2e0b1a11fc762920e84bae1b85d844d6eaeae8bcfcad97dd427f"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/schemas/plan.schema.json",
+        "sha256": "3db14dd624e4cc3e411fb812fc146585c36cd20d1d5bca2a51574dada3ab4764"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/schemas/provenance.json",
+        "sha256": "4a3b343b63f24b230425c8f8936f0f1635e85736b1283c7f1ce54c41cc66d868"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/schemas/readiness.schema.json",
+        "sha256": "aebd6d559f6133d9ff8c3861ee775613ab62061d89b6b83263eb46704421ca87"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/schemas/report.schema.json",
+        "sha256": "a9b07d6d6ad2296a7489f835be2cfc43f821fd63e13c2ca8d95c42545c2449bf"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/schemas/results.schema.json",
+        "sha256": "2eef6845104eb74a7a80c3ca967acd9cb9b41313ab390e439ba516b2ce5b602b"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/schemas/review-questions-and-inputs.json",
+        "sha256": "02edeacc65227e5feeaf25b6c9568be406b48024216f83d2dda2ccfcc5042f3b"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/synthesis-identity-map.json",
+        "sha256": "bb40d6b40d14bde29d6a85c5b4e70b0a8624daab29cb07d079b2db974633d10a"
+      },
+      {
+        "path": "research/corpus/RRX-INGEST-001/acquisition/assets.jsonl",
+        "sha256": "cf4b75ab0954bc8680ed9337052148f2ed9e442f166a71c1c02d04ed16bdff8f"
+      },
+      {
+        "path": "research/corpus/RRX-INGEST-001/acquisition/coverage.json",
+        "sha256": "8b47c967ca20cf584ef29baa0b33f49341ddf8a20a3bec3dc92ece19984cdf45"
+      },
+      {
+        "path": "research/corpus/RRX-INGEST-001/acquisition/f00-crossref-gaps.jsonl",
+        "sha256": "dd09a00bc97588634aa5b4bc5b7e0366bf23134ca22ae94dcaf327048a59197a"
+      },
+      {
+        "path": "research/corpus/RRX-INGEST-001/acquisition/f01-f02-import-report.json",
+        "sha256": "12915fd5678ea88dff7fb6f215289e242ce63e363c566fe5305b89e490aaf07c"
+      },
+      {
+        "path": "research/corpus/RRX-INGEST-001/acquisition/f01-f02-receipt-appearances.jsonl",
+        "sha256": "6e1c05557b55131231241d7ab021c271a58e8c10491626e964acb254fb87d5bc"
+      },
+      {
+        "path": "research/corpus/RRX-INGEST-001/acquisition/f01-f02-source-references.jsonl",
+        "sha256": "46d3cf4a6b4e9a2f33900a43e50900e50650975340cdc9db8cd4ad103728a52d"
+      },
+      {
+        "path": "research/corpus/RRX-INGEST-001/acquisition/gaps.jsonl",
+        "sha256": "2cd2261ab19e9a81baf0a707f1869b007a7436f1858413e8a113825febcde56a"
+      },
+      {
+        "path": "research/corpus/RRX-INGEST-001/acquisition/import-report.json",
+        "sha256": "038a8b90549f3932ca78d1c363118a9dd92d0fd7cd6f93c72540a210342db5ea"
+      },
+      {
+        "path": "research/corpus/RRX-INGEST-001/acquisition/itraconazole-links.json",
+        "sha256": "6328cfbe961ee15bd2b670b8c78a52ccde306b3f8a99fb58a1177369669f1b4e"
+      },
+      {
+        "path": "research/corpus/RRX-INGEST-001/acquisition/open-flags.json",
+        "sha256": "0fbb7c55cf938fe5680fb4af6e33d1fd0b47a5e883aec312276cd5bc4aa39d62"
+      },
+      {
+        "path": "research/corpus/RRX-INGEST-001/acquisition/quarantine.json",
+        "sha256": "0a2f096cf9c53293225888731d020be01ac0e0dba35a731b7eff914436c6b325"
+      },
+      {
+        "path": "research/corpus/RRX-INGEST-001/acquisition/report-aliases.json",
+        "sha256": "b2e8872232822ef6a4040eddd88167df83a35e0ecb511f204757d2baad9b8297"
+      },
+      {
+        "path": "research/corpus/RRX-INGEST-001/acquisition/reports.jsonl",
+        "sha256": "493bd2cb5c6b4d5db7796251ff9a780c680a5b4dace3ed3706f2e89fc0693d91"
+      },
+      {
+        "path": "research/corpus/RRX-INGEST-001/acquisition/request-source-mapping.jsonl",
+        "sha256": "6d7232600b5b0c5dcdf63ed74f3d3072033177ebce4dc9ea686d593885d55996"
+      },
+      {
+        "path": "research/corpus/RRX-INGEST-001/acquisition/screening.jsonl",
+        "sha256": "13747bc1455673f106eccd5f27d9fb3cf7ce2b7393d3d144de55b24757ada5b6"
+      },
+      {
+        "path": "research/corpus/RRX-INGEST-001/acquisition/searches.jsonl",
+        "sha256": "2b4bb1b7308fb1d6ca3fdcdda587ccc1dbe53a0c12168f1d2b8b22f10f75a1be"
+      },
+      {
+        "path": "research/corpus/RRX-INGEST-001/acquisition/source-receipt.json",
+        "sha256": "aa2212c6bd149400853b7e973309d05f9b9e9fb9084660551b3d7ca5b7c6950a"
+      },
+      {
+        "path": "research/corpus/RRX-INGEST-001/acquisition/sources.jsonl",
+        "sha256": "0b195b7ce902d03ca9b40400baf032cd1ce281b399736d77af6b33187a58c781"
+      },
+      {
+        "path": "research/corpus/RRX-INGEST-001/draft-science/claims.jsonl",
+        "sha256": "2d65686d37eb2c1f9d3c77ee2eecc167e287569dd5b6b0bac3aeb6660c4f71f7"
+      },
+      {
+        "path": "research/corpus/RRX-INGEST-001/draft-science/corpus.json",
+        "sha256": "9cf84068d3cdbcc9485122147101fef368cc00e9c4a073c13c84de948a3c0289"
+      },
+      {
+        "path": "research/corpus/RRX-INGEST-001/draft-science/integration-holds.json",
+        "sha256": "1355b95f67c3153b0ff225f3a0e321ffe8e9e281cf1d7e1358c84ac122e9f957"
+      },
+      {
+        "path": "research/corpus/RRX-INGEST-001/draft-science/manifest.json",
+        "sha256": "0278d057c41b7256393a2f5f3a3887615e39f0899c2d83e1433e39c26d9bf253"
+      },
+      {
+        "path": "research/corpus/RRX-INGEST-001/draft-science/mechanism-duplicate-dispositions.json",
+        "sha256": "2fa34a9343d9e37540c8d30c892bd6b1a6923b18096450ada4fe7a82a133794a"
+      },
+      {
+        "path": "research/corpus/RRX-INGEST-001/draft-science/mechanisms.json",
+        "sha256": "d6f15c398521c43f856058542f9698afc59f873519d5552e23cad53d1c9707f0"
+      },
+      {
+        "path": "research/corpus/RRX-INGEST-001/draft-science/new-source-flags.json",
+        "sha256": "246e20028e9039b07f672e973ce27eafe63110df5ab9f701e2a9e3ffc20040bb"
+      },
+      {
+        "path": "research/corpus/RRX-INGEST-001/draft-science/result-bindings.json",
+        "sha256": "3a8fec614a50abf549eab9f011373079a9e9eca3cdb794867a7de639d318168a"
+      },
+      {
+        "path": "research/corpus/RRX-INGEST-001/draft-science/result-dispositions.json",
+        "sha256": "7f3fd6db3de1d3f1280f1a0cf40bc0c6f3cb303d4a9e8af585c5ee80547c60c3"
+      },
+      {
+        "path": "research/corpus/RRX-INGEST-001/draft-science/results.jsonl",
+        "sha256": "11daf4897d09e8dfd47737719c4abb1d56e67e88e2d89e408274073fc2aa16bd"
+      },
+      {
+        "path": "research/corpus/RRX-INGEST-001/draft-science/reviews.jsonl",
+        "sha256": "729ded0fd78712e3fd026ab22e259becd51a7678bbfd25cc44dca9d38d81ceb8"
+      },
+      {
+        "path": "research/corpus/RRX-INGEST-001/draft-science/source-dispositions.json",
+        "sha256": "092b6bf73f230479eaae2d5163e559c42a2b5e4864bed7582898edea74bdfc0c"
+      },
+      {
+        "path": "research/corpus/RRX-INGEST-001/draft-science/source-integrity-notices.json",
+        "sha256": "d047af47cc9e68a2a3b2b8ab601087dd4ae78db0333fa6c4de1d9ec044c6669f"
+      },
+      {
+        "path": "research/corpus/RRX-INGEST-001/prior-evidence/claims.jsonl",
+        "sha256": "6aceaeef3c04bcf892fa13e56887ed72f30cef5cfb3ebd2283156ade6029d12a"
+      },
+      {
+        "path": "research/corpus/RRX-INGEST-001/prior-evidence/context.jsonl",
+        "sha256": "89f2d087faf198484b39cc2908adf0ca67613b0e0c56065ea71436ceb65d10dd"
+      },
+      {
+        "path": "research/corpus/RRX-INGEST-001/prior-evidence/corpus.json",
+        "sha256": "b8b26e152ea0c12c1246cd1304f7f799919a9b9b9d9c414920b4eed9f3e4ee2c"
+      },
+      {
+        "path": "research/corpus/RRX-INGEST-001/prior-evidence/coverage.json",
+        "sha256": "a10fda3550f8c5ec40b4c66a6a01a9868e0544ae738a5019e26b0afd4e9cb7c7"
+      },
+      {
+        "path": "research/corpus/RRX-INGEST-001/prior-evidence/evidence.schema.json",
+        "sha256": "32953789f4b96f19d7f7f44394f930aa33dceb33245478cde2fcab2c28cc5a70"
+      },
+      {
+        "path": "research/corpus/RRX-INGEST-001/prior-evidence/identity-map.json",
+        "sha256": "bb30ceb8c3f8b23bc402c62c74ab8e97dbedbaa67ab58b397c6a17aad7460ed9"
+      },
+      {
+        "path": "research/corpus/RRX-INGEST-001/prior-evidence/numerical-audit.json",
+        "sha256": "0cef0693e575479fac332f0a2085fa1c0eafab10aafaa54109ecf728aa481f64"
+      },
+      {
+        "path": "research/corpus/RRX-INGEST-001/prior-evidence/open-flags.json",
+        "sha256": "4cd2af9d13730904eccbd93b5894d24f96ca32a3f3ea4c8ca15895b8b44bb745"
+      },
+      {
+        "path": "research/corpus/RRX-INGEST-001/prior-evidence/pages.jsonl",
+        "sha256": "d70950c395c7e2bfc284e23fedad0952d73fc0d83a14893f1febca66f4e2d157"
+      },
+      {
+        "path": "research/corpus/RRX-INGEST-001/prior-evidence/papers.jsonl",
+        "sha256": "adacb8ad20bd8356d462e7340ceaca226d743f7fdf27eb26aa5af66d68e3bbcd"
+      },
+      {
+        "path": "research/corpus/RRX-INGEST-001/prior-evidence/quarantine.json",
+        "sha256": "df59268952a9649d57add9d4366efea63da508f4e2bbfd4cdf3c50e76c5bfb3e"
+      },
+      {
+        "path": "research/corpus/RRX-INGEST-001/prior-evidence/results.jsonl",
+        "sha256": "95bf25bf61ae6ac7125301ff37d7a67ceecfb687fd092cddff2f9a21a6ce6c79"
+      },
+      {
+        "path": "research/corpus/RRX-INGEST-001/prior-evidence/reviews.jsonl",
+        "sha256": "90f95532f11beb3eb8e45000303b098f3c2fccd70817110c69deed710288d679"
+      },
+      {
+        "path": "research/corpus/RRX-INGEST-001/prior-evidence/source-manifest.json",
+        "sha256": "653e758df04bbc3e5253798c823a5dcaededa019b8acd67470fe3ac8560ada52"
+      },
+      {
+        "path": "research/corpus/RRX-INGEST-001/prior-evidence/studies.jsonl",
+        "sha256": "f2a1661e99df50d92a3f9fe447240540bd82c7f752e5124db327e1831327f36d"
+      },
+      {
+        "path": "research/corpus/RRX-INGEST-001/prior-evidence/validation.json",
+        "sha256": "34caf3dbc5574fa1db5b846322a208281dd13e8b2624c15c521e41bc9f309a37"
+      },
+      {
+        "path": "rules/one-match-rule/ONE-MATCH-RULE.md",
+        "sha256": "7fae46e83e1da5e139b0ab2d11ca02292603c63a50f764c89819b0792bc2f330"
+      },
+      {
+        "path": "scripts/apply-reader-outcomes.py",
+        "sha256": "4f0fd627142c7c548a428a5ca4a265a61e8189e84545cd983143372718a38a99"
+      },
+      {
+        "path": "scripts/prepare-research-batch.py",
+        "sha256": "daecf0fa328be91b235078f4e2a70309d433aa638210b0f8328a4ef4e0e595cd"
+      },
+      {
+        "path": "scripts/research-review-coverage.mjs",
+        "sha256": "1194d5123893af0fa043b57d39e0e885b24c4497d6b119e3320d539bfd5c6893"
+      },
+      {
+        "path": "scripts/research_ingest/README.md",
+        "sha256": "24ebacb31bd9d262f5876ff97e9cac5566bd3c80ba1d933d02f7b72f1d6e588a"
+      },
+      {
+        "path": "scripts/research_ingest/__init__.py",
+        "sha256": "84ac829b59c21c8f5fce985cb7c0344d09d9eb4cb3fccb6a5e4dc64089d84bec"
+      },
+      {
+        "path": "scripts/research_ingest/__main__.py",
+        "sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d"
+      },
+      {
+        "path": "scripts/research_ingest/cli.py",
+        "sha256": "70394939b3711f7049fb73af61fc32cf0d7c56eab442dff82d79362f1667d7b0"
+      },
+      {
+        "path": "scripts/research_ingest/contracts.py",
+        "sha256": "de9b8d26d7356663ee385cb7a0c80661620ff70810984b78632564d4f38d2994"
+      },
+      {
+        "path": "scripts/research_ingest/requirements.txt",
+        "sha256": "67fcc67e78013678c851fea9b933facd03361ab399cba302b4ee3ce18125d1c2"
+      },
+      {
+        "path": "scripts/research_ingest/source_validation.py",
+        "sha256": "b5af770bba265faa3135679c86c2a9a2b57d2cb139db5c61fc5b72ea9e283868"
+      },
+      {
+        "path": "scripts/research_inventory.py",
+        "sha256": "c7b3f54d4a23898de4f504d38733ed4a80dd745a722f0b0c8488b6eeb76c2ee8"
+      },
+      {
+        "path": "tests/research_ingest/test_engine.py",
+        "sha256": "a0e2e502d8ff0c63c4af99d86de21c15ebba52134284aa1bd9c10e3d6e79e90b"
+      },
+      {
+        "path": "tests/research_ingest/test_inventory.py",
+        "sha256": "11c646436b02c441715c727ce0b58c3c94af2b9b3d203a9b841deb5dbf323f02"
+      },
+      {
+        "path": "tests/research_ingest/test_mechanism_schema.py",
+        "sha256": "fe5d770b71924e5f09b30ff6856f622220250e1b39feb5bf0517ebc886d75053"
+      },
+      {
+        "path": "tests/research_ingest/test_recovery_audit.py",
+        "sha256": "4cf7e97f892dbcfdf1d4b497568da1a48f952186dc346b8cd24fc59efe0efc66"
+      },
+      {
+        "path": "tests/research_ingest/test_source_validation.py",
+        "sha256": "95373ce9981ded61715c04430c187a79ee34787fca4e70f49e7312ec55ce5591"
+      }
+    ],
+    "inputsVerified": 134,
+    "appSnapshotsVerified": 20,
+    "historyFilesVerified": 30,
+    "recoveredFilesVerified": 47,
+    "calibrationPackets": 24,
+    "assignedSourceFiles": 37,
+    "uniqueSourceHashes": 35,
+    "diagnosticHeldPackets": 5,
+    "schemaCount": 9,
+    "testCommand": "PYTHONPATH='/Users/kmfp/Documents/Codex/2026-10-08/one-match-drug-repurposing/work/evidence/python' python3 -m unittest discover -s tests/research_ingest -q",
+    "testsPassed": 78,
+    "failures": 0,
+    "sourceValidatorSha256": "b5af770bba265faa3135679c86c2a9a2b57d2cb139db5c61fc5b72ea9e283868",
+    "sourceInspectionDuringPlanningCheck": false,
+    "canonicalImportDuringPlanningCheck": false
+  },
+  "limitations": [
+    "Planning PASS is not scientific acceptance. CAL-07 remains a partial-source candidate; remote figure pixels, supplement, quantitative extraction, external integrity and formal appraisal are unfinished.",
+    "The cited-paper denominator remains provisional with nine unclassified references and zero structurally complete or released scholarly reviews.",
+    "All five diagnostic packets and held unsupported companions retain their holds.",
+    "The separate fanout must honor the current condition-first destination contract and cannot copy the drug Mechanism of Action section into a condition without review.",
+    "Any future pinned-input change requires reconciliation before dependent work."
+  ],
+  "readinessRecorded": true,
+  "scientificApproval": false,
+  "nextAction": "Extractor may rebind only plan_id/plan_sha256 in the unchanged CAL-07 source content and update an exact authorship receipt; independent source/fanout verification follows under its separately pinned contract."
+}

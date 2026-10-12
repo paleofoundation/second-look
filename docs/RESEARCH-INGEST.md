@@ -4,6 +4,8 @@
 
 ## Start from the accepted state
 
+The active continuation is [RRX-INGEST-001](../research/batches/RRX-INGEST-001/PLAN.md), adopted 12 October 2026. Use its current handoff/readiness and source resolver, not the stale pilot totals. It reconciles the original external acquisition/draft-science stores, later F00–F08 returns, the mechanism expansion and MOA-01 with the application. Its private checkpoint and scientific acceptance are distinct. The prospective plan must pass before dependent work; an inventory or recovered historical receipt is not that pass.
+
 Pull the current branch, record the Git commit, inspect changes from other researchers and identify the integrator for the batch. Read `data/ingestion-status.json`, `data/acquisition-status.json` and relevant editorial ledgers. Determine the last **accepted** batch and exact source/record versions; the most recent file or historical PASS is not automatically acceptance. If acceptance cannot be established, keep that portion on HOLD while reconciling it. Do not restart the corpus or backdate readiness.
 
 | Material to carry forward | Repository location |

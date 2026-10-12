@@ -1,0 +1,93 @@
+{
+  "schemaVersion": "remaprx-captured-test-result-v1",
+  "status": "PASS",
+  "recordedBy": "codex/identity_review",
+  "recordedAt": "2026-10-12T12:33:41.403106+00:00",
+  "scope": "Captured actual completed unittest process; current hashes identify frozen implementation/test files. This is a technical regression check, not scientific completion.",
+  "command": "PYTHONPATH='/Users/kmfp/Documents/Codex/2026-10-08/one-match-drug-repurposing/work/evidence/python' python3 -m unittest discover -s tests/research_ingest -q",
+  "workingDirectory": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/second-look-navigation",
+  "toolSession": 99942,
+  "exitCode": 0,
+  "testsPassed": 100,
+  "failures": 0,
+  "elapsedSeconds": 13.306,
+  "capturedOutput": "----------------------------------------------------------------------\nRan 100 tests in 13.306s\n\nOK\n",
+  "implementationFiles": [
+    {
+      "path": "scripts/audit-research-checkpoint.py",
+      "sha256": "c192333a4cc1e9ee6f6748505653f6598e175adb240d89ba72ff580264a2f68f"
+    },
+    {
+      "path": "scripts/audit-research-recovery.py",
+      "sha256": "b6f52ff09170aea277e64f47a8d097336455e5fa57adb9e735ed6f7337f95853"
+    },
+    {
+      "path": "scripts/prepare-research-checkpoint.py",
+      "sha256": "fe96ae982fbdf08a0f2fbe7343db1fdc6858494305e64b10c488607d1e9f4f87"
+    },
+    {
+      "path": "scripts/check-research-checkpoint.py",
+      "sha256": "3799b19251e182daf56301c9f4f2048354e65e3990354e453203b97f19ac5fea"
+    },
+    {
+      "path": "scripts/research_fanout.py",
+      "sha256": "c2ca993473107efb97ce18647298cc8ac35f44fada47979bbf0c6bcc49e9de96"
+    },
+    {
+      "path": "scripts/research_ingest/cli.py",
+      "sha256": "70394939b3711f7049fb73af61fc32cf0d7c56eab442dff82d79362f1667d7b0"
+    },
+    {
+      "path": "scripts/research_ingest/contracts.py",
+      "sha256": "de9b8d26d7356663ee385cb7a0c80661620ff70810984b78632564d4f38d2994"
+    },
+    {
+      "path": "scripts/research_ingest/source_validation.py",
+      "sha256": "b5af770bba265faa3135679c86c2a9a2b57d2cb139db5c61fc5b72ea9e283868"
+    }
+  ],
+  "testFiles": [
+    {
+      "path": "tests/research_ingest/test_audit_sample.py",
+      "sha256": "3f3b9e54f8db814fd4b6f829e3fcad91800f73c8e5b8561948bbee474cef5e79"
+    },
+    {
+      "path": "tests/research_ingest/test_checkpoint_audit.py",
+      "sha256": "f22dbb70ee4d32e9d73e8bc137872ab89e6b8a431ee8394c4ae128db41e1dac0"
+    },
+    {
+      "path": "tests/research_ingest/test_engine.py",
+      "sha256": "a0e2e502d8ff0c63c4af99d86de21c15ebba52134284aa1bd9c10e3d6e79e90b"
+    },
+    {
+      "path": "tests/research_ingest/test_fanout.py",
+      "sha256": "40d45a5362174ce65279ba27e9312d7bd87d7962a46696491c20c5d207a1e5f7"
+    },
+    {
+      "path": "tests/research_ingest/test_gap_receipt.py",
+      "sha256": "be660fcfed363e138743f0eb55728c930c3b9267897723d4ceb2a92b2d64c810"
+    },
+    {
+      "path": "tests/research_ingest/test_inventory.py",
+      "sha256": "11c646436b02c441715c727ce0b58c3c94af2b9b3d203a9b841deb5dbf323f02"
+    },
+    {
+      "path": "tests/research_ingest/test_mechanism_schema.py",
+      "sha256": "fe5d770b71924e5f09b30ff6856f622220250e1b39feb5bf0517ebc886d75053"
+    },
+    {
+      "path": "tests/research_ingest/test_recovery_audit.py",
+      "sha256": "4cf7e97f892dbcfdf1d4b497568da1a48f952186dc346b8cd24fc59efe0efc66"
+    },
+    {
+      "path": "tests/research_ingest/test_source_validation.py",
+      "sha256": "95373ce9981ded61715c04430c187a79ee34787fca4e70f49e7312ec55ce5591"
+    }
+  ],
+  "checkpointPlan": {
+    "path": "research/batches/RRX-INGEST-001/checkpoint/plan.json",
+    "sha256": "5980c31dd277060ac480e47536ebd8da156dfbfbc22a7bc9faff80f585cdc03e"
+  },
+  "scientificApproval": false,
+  "performedCanonicalImport": false
+}

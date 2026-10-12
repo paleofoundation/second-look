@@ -1,0 +1,308 @@
+{
+  "schemaVersion": "remaprx-held-packet-audit/1.0",
+  "auditor": "codex/identity_review",
+  "auditedAt": "2026-10-12T11:46:48.939491+00:00",
+  "scope": "Independent identity-page and preserved-metadata diagnostic audit; no full-source scientific review.",
+  "planId": "RRX-INGEST-001-1.2",
+  "planSha256": "590613abf20c2dc5930a6a47c01f60b5a4c7fcc5ee8bc48693c013ff045971f0",
+  "inputHashes": {
+    "research/batches/RRX-INGEST-001/plan.json": "590613abf20c2dc5930a6a47c01f60b5a4c7fcc5ee8bc48693c013ff045971f0",
+    "research/batches/RRX-INGEST-001/readiness.json": "d699a2731706ed11e5989ce2ffe337c773402212903cb2da68bd80e1b4f8b84a",
+    "research/batches/RRX-INGEST-001/calibration/assignments.json": "cbf38f304e2f541d6b4bd186a8c5d7bdd357be45692295f64edbf7f28055d9c0",
+    "research/corpus/RRX-INGEST-001/acquisition/sources.jsonl": "0b195b7ce902d03ca9b40400baf032cd1ce281b399736d77af6b33187a58c781",
+    "research/corpus/RRX-INGEST-001/acquisition/quarantine.json": "0a2f096cf9c53293225888731d020be01ac0e0dba35a731b7eff914436c6b325",
+    "research/corpus/RRX-INGEST-001/draft-science/source-integrity-notices.json": "d047af47cc9e68a2a3b2b8ab601087dd4ae78db0333fa6c4de1d9ec044c6669f"
+  },
+  "auditStatus": "PASS_PRESERVED_HOLDS",
+  "packets": [
+    {
+      "packetId": "CAL-04",
+      "status": "HOLD",
+      "auditStatus": "PASS_PRESERVED_HOLD",
+      "auditor": "codex/identity_review",
+      "sourceVersions": [
+        {
+          "sourceId": "A-F01-R029-F01",
+          "assignmentId": "CAL-04-S01",
+          "logicalSource": {
+            "fileId": "SHA256:e4c9f3140046204bd0d487f0cf44733a309e919d8d6ba714b4145aa87767ce5e",
+            "path": "ingest/SL-F01-F02-20261011/receipt/input/return/F01/PRIMARY/A-F01-R029__original_report__metformin-and-time-to-sustained-recovery-in-adults.pdf",
+            "rootId": "WORK"
+          },
+          "sha256": "e4c9f3140046204bd0d487f0cf44733a309e919d8d6ba714b4145aa87767ce5e",
+          "bytes": 478783,
+          "integrityHold": true,
+          "hashMismatch": false
+        }
+      ],
+      "preservedRecords": [
+        {
+          "sourceId": "A-F01-R029-F01",
+          "canonicalReportId": "P-ACTIV6-ACUTE-2025",
+          "recordSha256": "e0b2b0142bbb60dff11dc2c7b2ce167b7c5224135bd0b079a74e6765481df311",
+          "assetSha256": "e4c9f3140046204bd0d487f0cf44733a309e919d8d6ba714b4145aa87767ce5e",
+          "quarantined": false,
+          "accessState": "full_pdf",
+          "fullTextAvailable": true,
+          "humanReviewStatus": "pending",
+          "publicationState": "draft",
+          "sourceIntegrityNotices": [
+            {
+              "affected_source_ids": [
+                "A-F01-R029-F01",
+                "A-F01-R030-F01"
+              ],
+              "author_query_pending": false,
+              "canonical_report_id": "P-ACTIV6-ACUTE-2025",
+              "human_review_status": "pending",
+              "identity_notes": "Receipt identity retained; observed source classification supplied by curator.",
+              "notice_id": null,
+              "notice_locator": null,
+              "preserved_result_ids": [],
+              "publication_state": "draft",
+              "reason": "Acquired bytes print preprint DOI10.1101/2025.01.13.25320485 while receipt identifies journal DOI10.1001/jamainternmed.2025.2570. No journal findings may be extracted under this identity; the same bytes are processed under the separate preprint identity A-F01-R030-F01.",
+              "retraction_reason": null,
+              "retraction_reason_status": "not_in_corpus",
+              "retraction_status": "conflicting",
+              "scope": "Additive integrity notice; aliases retain their separate IDs and original DOI identity. No existing scientific row is rewritten.",
+              "source_id": "A-F01-R029-F01",
+              "source_integrity": "conflicting",
+              "source_sha256": "e4c9f3140046204bd0d487f0cf44733a309e919d8d6ba714b4145aa87767ce5e",
+              "state": "held"
+            }
+          ],
+          "quarantineEntries": []
+        }
+      ],
+      "scientificResultsExtracted": 0,
+      "scientificClaimsAccepted": 0,
+      "fullScientificReviewCompleted": false,
+      "humanReviewed": false,
+      "released": false,
+      "sourceIdentityInspection": {
+        "scope": "First PDF page header and title only; no scientific results inspected or extracted.",
+        "pdfPage": 1,
+        "printedDoi": "10.1101/2025.01.13.25320485",
+        "printedVersionDate": "January 14, 2025",
+        "printedSourceType": "medRxiv preprint; not certified by peer review",
+        "title": "Metformin on Time to Sustained Recovery in Adults with COVID-19: The ACTIV-6 Randomized Clinical Trial",
+        "visualInspection": true,
+        "renderEvidence": {
+          "path": "work/research-ingest/RRX-INGEST-001/independent-held-audit/activ6-first-page.png",
+          "sha256": "b9366496755dbef54b5aa9405e0a57d6b6a7810c78cb0900cf5fc776b39af654"
+        }
+      },
+      "holdReason": "The bytes are a preprint; CAL-04 assigns the journal identity. CAL-05 matches the printed preprint DOI, but the preserved shared-file/source-version conflict remains unresolved.",
+      "conflictDetail": {
+        "conflictKind": "report_identity_and_version_not_byte_corruption",
+        "sharedAssetSha256": "e4c9f3140046204bd0d487f0cf44733a309e919d8d6ba714b4145aa87767ce5e",
+        "journalReceiptDoi": "10.1001/jamainternmed.2025.2570",
+        "preprintPrintedDoi": "10.1101/2025.01.13.25320485",
+        "bothAssignmentsResolveSameBytes": true,
+        "sameCohortNotIndependentStudies": true
+      },
+      "resolutionNeeded": [
+        "Integrator must preserve both source IDs while explicitly mapping the shared asset to the printed preprint version and retaining the journal identity as lacking its correct assigned full text.",
+        "Resolve the existing held SCI-A-F01-R030-F01-SUSTAINED-RECOVERY result and source-version dependencies with an additive disposition; do not treat the second alias as another study.",
+        "Acquire any missing journal version only under a separate approved gap-acquisition packet, verify its identity/hash and compare outcome/version relationships before reconsidering the hold."
+      ]
+    },
+    {
+      "packetId": "CAL-05",
+      "status": "HOLD",
+      "auditStatus": "PASS_PRESERVED_HOLD",
+      "auditor": "codex/identity_review",
+      "sourceVersions": [
+        {
+          "sourceId": "A-F01-R030-F01",
+          "assignmentId": "CAL-05-S01",
+          "logicalSource": {
+            "fileId": "SHA256:e4c9f3140046204bd0d487f0cf44733a309e919d8d6ba714b4145aa87767ce5e",
+            "path": "ingest/SL-F01-F02-20261011/receipt/input/return/F01/PRIMARY/A-F01-R029__original_report__metformin-and-time-to-sustained-recovery-in-adults.pdf",
+            "rootId": "WORK"
+          },
+          "sha256": "e4c9f3140046204bd0d487f0cf44733a309e919d8d6ba714b4145aa87767ce5e",
+          "bytes": 478783,
+          "integrityHold": true,
+          "hashMismatch": false
+        }
+      ],
+      "preservedRecords": [
+        {
+          "sourceId": "A-F01-R030-F01",
+          "canonicalReportId": "A-F01-R030",
+          "recordSha256": "f034c7b68da37421f6e83211db51a3e688738f1650969d3f5b551b21fb61884c",
+          "assetSha256": "e4c9f3140046204bd0d487f0cf44733a309e919d8d6ba714b4145aa87767ce5e",
+          "quarantined": false,
+          "accessState": "full_pdf",
+          "fullTextAvailable": true,
+          "humanReviewStatus": "pending",
+          "publicationState": "draft",
+          "sourceIntegrityNotices": [],
+          "quarantineEntries": []
+        }
+      ],
+      "scientificResultsExtracted": 0,
+      "scientificClaimsAccepted": 0,
+      "fullScientificReviewCompleted": false,
+      "humanReviewed": false,
+      "released": false,
+      "sourceIdentityInspection": {
+        "scope": "First PDF page header and title only; no scientific results inspected or extracted.",
+        "pdfPage": 1,
+        "printedDoi": "10.1101/2025.01.13.25320485",
+        "printedVersionDate": "January 14, 2025",
+        "printedSourceType": "medRxiv preprint; not certified by peer review",
+        "title": "Metformin on Time to Sustained Recovery in Adults with COVID-19: The ACTIV-6 Randomized Clinical Trial",
+        "visualInspection": true,
+        "renderEvidence": {
+          "path": "work/research-ingest/RRX-INGEST-001/independent-held-audit/activ6-first-page.png",
+          "sha256": "b9366496755dbef54b5aa9405e0a57d6b6a7810c78cb0900cf5fc776b39af654"
+        }
+      },
+      "holdReason": "The bytes are a preprint; CAL-04 assigns the journal identity. CAL-05 matches the printed preprint DOI, but the preserved shared-file/source-version conflict remains unresolved.",
+      "conflictDetail": {
+        "conflictKind": "report_identity_and_version_not_byte_corruption",
+        "sharedAssetSha256": "e4c9f3140046204bd0d487f0cf44733a309e919d8d6ba714b4145aa87767ce5e",
+        "journalReceiptDoi": "10.1001/jamainternmed.2025.2570",
+        "preprintPrintedDoi": "10.1101/2025.01.13.25320485",
+        "bothAssignmentsResolveSameBytes": true,
+        "sameCohortNotIndependentStudies": true
+      },
+      "resolutionNeeded": [
+        "Integrator must preserve both source IDs while explicitly mapping the shared asset to the printed preprint version and retaining the journal identity as lacking its correct assigned full text.",
+        "Resolve the existing held SCI-A-F01-R030-F01-SUSTAINED-RECOVERY result and source-version dependencies with an additive disposition; do not treat the second alias as another study.",
+        "Acquire any missing journal version only under a separate approved gap-acquisition packet, verify its identity/hash and compare outcome/version relationships before reconsidering the hold."
+      ]
+    },
+    {
+      "packetId": "CAL-06",
+      "status": "HOLD",
+      "auditStatus": "PASS_PRESERVED_HOLD",
+      "auditor": "codex/identity_review",
+      "sourceVersions": [],
+      "preservedRecords": [
+        {
+          "sourceId": "A-F01-R009-F00",
+          "canonicalReportId": "P-REVIVE-2026",
+          "recordSha256": "e329e8d6133c1d310f5b680b5d7eff0a8892872a213586f68e32f4640a549ba1",
+          "assetSha256": null,
+          "quarantined": true,
+          "accessState": "abstract_only",
+          "fullTextAvailable": false,
+          "humanReviewStatus": "pending",
+          "publicationState": "draft",
+          "sourceIntegrityNotices": [
+            {
+              "affected_source_ids": [
+                "A-F01-R009-F00",
+                "B-R0010-F00"
+              ],
+              "author_query_pending": true,
+              "canonical_report_id": "P-REVIVE-2026",
+              "human_review_status": "pending",
+              "identity_notes": "Preserved receipt integrity quarantine.",
+              "notice_id": "PMID:42832813",
+              "notice_locator": null,
+              "preserved_result_ids": [],
+              "publication_state": "draft",
+              "reason": "Unresolved source integrity quarantine; the source remains visible.",
+              "retraction_reason": null,
+              "retraction_reason_status": "not_in_corpus",
+              "retraction_status": "retracted",
+              "scope": "Additive notice; scientific ledger retained.",
+              "source_id": "A-F01-R009-F00",
+              "source_integrity": "quarantined_unresolved",
+              "source_sha256": null,
+              "state": "quarantined"
+            }
+          ],
+          "quarantineEntries": [
+            {
+              "canonical_report_id": "P-REVIVE-2026",
+              "numerical_extraction_allowed": false,
+              "reason": "Retracted report, notice, or unlinked candidate replacement; no supportive claims permitted.",
+              "source_id": "A-F01-R009-F00"
+            }
+          ]
+        },
+        {
+          "sourceId": "B-R0010-F00",
+          "canonicalReportId": "P-REVIVE-2026",
+          "recordSha256": "d1954dc4b1d64086b022340487fe2baea388f6a13c40953162daa1110f31af85",
+          "assetSha256": null,
+          "quarantined": true,
+          "accessState": "abstract_only",
+          "fullTextAvailable": false,
+          "humanReviewStatus": "pending",
+          "publicationState": "draft",
+          "sourceIntegrityNotices": [
+            {
+              "affected_source_ids": [
+                "A-F01-R009-F00",
+                "B-R0010-F00"
+              ],
+              "author_query_pending": true,
+              "canonical_report_id": "P-REVIVE-2026",
+              "human_review_status": "pending",
+              "identity_notes": "Preserved receipt integrity quarantine.",
+              "notice_id": "PMID:42832813",
+              "notice_locator": null,
+              "preserved_result_ids": [],
+              "publication_state": "draft",
+              "reason": "Unresolved source integrity quarantine; the source remains visible.",
+              "retraction_reason": null,
+              "retraction_reason_status": "not_in_corpus",
+              "retraction_status": "retracted",
+              "scope": "Additive notice; scientific ledger retained.",
+              "source_id": "B-R0010-F00",
+              "source_integrity": "quarantined_unresolved",
+              "source_sha256": null,
+              "state": "quarantined"
+            }
+          ],
+          "quarantineEntries": [
+            {
+              "canonical_report_id": "P-REVIVE-2026",
+              "numerical_extraction_allowed": false,
+              "reason": "Retracted original or unlinked candidate replacement; all favorable findings withheld",
+              "source_id": "B-R0010-F00"
+            }
+          ]
+        }
+      ],
+      "scientificResultsExtracted": 0,
+      "scientificClaimsAccepted": 0,
+      "fullScientificReviewCompleted": false,
+      "humanReviewed": false,
+      "released": false,
+      "holdReason": "Both historical acquisition records remain quarantined and have no eligible local full-text asset; current assignment contains no extractable source version.",
+      "conflictDetail": {
+        "conflictKind": "quarantine_and_missing_source",
+        "noticeIdFromHistoricalMetadata": "PMID:42832813",
+        "noticeFileAvailableInAssignedPacket": false,
+        "currentRetractionStatusIndependentlyRechecked": false,
+        "retractionReason": "not_in_corpus",
+        "replacementLinkResolved": false
+      },
+      "resolutionNeeded": [
+        "Obtain and inspect the original notice and any candidate replacement under an approved source packet; establish the explicit correction/retraction/republication linkage and reason.",
+        "Resolve FAM-NCT06128967 versus S-REVIVE-2026 as a family mapping without merging independent outcomes or creating a second study.",
+        "Preserve quarantine and all favorable-claim/numerical-extraction vetoes until independent review accepts an exact corrected source version; metadata alone cannot complete Q01-Q15."
+      ]
+    }
+  ],
+  "counts": {
+    "diagnosticPacketsAudited": 3,
+    "heldPackets": 3,
+    "distinctAssignedFulltextAssets": 1,
+    "completedFullScientificReviews": 0,
+    "scientificClaimsAccepted": 0,
+    "released": 0
+  },
+  "limitations": [
+    "Integrator diagnostic returns were not authored by this auditor and are not accepted by this evidence alone.",
+    "The preprint first page was inspected for report identity only. No full-paper or numerical extraction was performed.",
+    "The REVIVE quarantine is preserved from historical records, not a fresh external verification of the notice or replacement."
+  ]
+}

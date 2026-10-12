@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "remaprx-author-validation-attempt-v1",
+  "status": "HOLD",
+  "checkedAt": "2026-10-12T11:53:30.413078+00:00",
+  "checker": "corpus_audit / extractor-a",
+  "scope": "CLI readiness validation failed before source scientific validation",
+  "candidatePath": "research/batches/RRX-INGEST-001/calibration/candidates/CAL-07/CAL-07-S01.candidate.json",
+  "candidateSha256": "d4de221136ff49e978162058ea02dbdc0a60740fdc444a728728f287adf3ddc8",
+  "planSha256": "590613abf20c2dc5930a6a47c01f60b5a4c7fcc5ee8bc48693c013ff045971f0",
+  "error": "Pinned input changed: docs/PROJECT-RULES.md",
+  "driftedInputs": [
+    {
+      "path": "docs/PROJECT-RULES.md",
+      "pinnedSha256": "be0309cea512978442bf168a2f0dc70d05eb3a92ef46b9913541548ee61033c1",
+      "observedSha256": "55fc3e7b142abb5e398b674ac40271bd0625856799b08ee126a9faa9e756482e"
+    }
+  ],
+  "performedImport": false,
+  "scientificApproval": false,
+  "publicationPerformed": false
+}

@@ -1,0 +1,195 @@
+{
+  "schemaVersion": "remaprx-gap-acquisition-plan-v1",
+  "planId": "RRX-GAP-001-1.0",
+  "parentBatchId": "RRX-INGEST-001",
+  "mode": "new_gap_acquisition_separate_from_historical_closed_packet",
+  "preparedDate": "2026-10-12",
+  "cutoff": "Record actual execution timestamp/date per query; no search has been run by preparing this packet.",
+  "status": "PROPOSED_FOR_GP",
+  "restrictions": [
+    "Lawfully accessible files only; no bypassing paywalls, credentials or rate controls.",
+    "Acquire only the named missing exact reports, notices and their linked companions. Do not collect the portfolio again.",
+    "Preserve original and amended/replacement identities separately; do not remove quarantine or infer clinical benefit.",
+    "Record unavailable source as a gap; an abstract/URL is not delivered full text.",
+    "No unrequested drugs, no page generation, no public release."
+  ],
+  "gaps": [
+    {
+      "id": "GAP-JOURNAL-ACTIV6",
+      "sourceIds": [
+        "A-F01-R029-F01",
+        "A-F01-R030-F01"
+      ],
+      "canonicalReportId": "P-ACTIV6-ACUTE-2025",
+      "requiredDoi": "10.1001/jamainternmed.2025.2570",
+      "pmid": "40658388",
+      "existingWrongVersionDoi": "10.1101/2025.01.13.25320485",
+      "existingAssetSha256": "e4c9f3140046204bd0d487f0cf44733a309e919d8d6ba714b4145aa87767ce5e",
+      "verifiedGap": "Both receipts currently resolve to the same medRxiv preprint bytes, visually confirmed on PDF page1. The journal-version file remains absent from this assigned packet.",
+      "questions": [
+        "Does the delivered asset identify the exact journal DOI?",
+        "Which changes, supplement versions and outcomes differ from the retained preprint?",
+        "Which participants overlap the other ACTIV-6 reports? Do not count reports as independent studies."
+      ],
+      "queries": [
+        {
+          "location": "PubMed",
+          "query": "40658388[PMID] OR \"10.1001/jamainternmed.2025.2570\"[AID]"
+        },
+        {
+          "location": "Europe PMC",
+          "query": "DOI:\"10.1001/jamainternmed.2025.2570\""
+        },
+        {
+          "location": "JAMA Internal Medicine",
+          "query": "10.1001/jamainternmed.2025.2570"
+        }
+      ],
+      "lawfulSources": [
+        "https://pubmed.ncbi.nlm.nih.gov/40658388/",
+        "https://europepmc.org/",
+        "https://jamanetwork.com/journals/jamainternalmedicine"
+      ],
+      "reviewInputPriorities": [
+        "Q01",
+        "Q02",
+        "Q03",
+        "Q04",
+        "Q05",
+        "Q06",
+        "Q07",
+        "Q08",
+        "Q09",
+        "Q10",
+        "Q11",
+        "Q12",
+        "Q13",
+        "Q14",
+        "Q15"
+      ],
+      "exclusions": [
+        "Do not redeliver the known preprint as the journal article.",
+        "Do not mix acute recovery and long-term symptom reports."
+      ]
+    },
+    {
+      "id": "GAP-REVIVE-NOTICE-REPLACEMENT",
+      "sourceIds": [
+        "A-F01-R009-F00",
+        "B-R0010-F00"
+      ],
+      "canonicalReportId": "P-REVIVE-2026",
+      "originalDoi": "10.7326/annals-25-03959",
+      "originalPmid": "41911553",
+      "noticePmid": "42832813",
+      "verifiedGap": "The retained source appearances are quarantined and have no verified full-text assets. Notice/replacement linkage and the exact changed content remain uninspected.",
+      "questions": [
+        "What does the notice change or withdraw?",
+        "Which exact replacement report/version and companions does the notice link?",
+        "Which findings remain affected, and what original/replacement differences can be located?"
+      ],
+      "queries": [
+        {
+          "location": "PubMed",
+          "query": "42832813[PMID] OR 41911553[PMID]"
+        },
+        {
+          "location": "Europe PMC",
+          "query": "EXT_ID:42832813 OR DOI:\"10.7326/annals-25-03959\""
+        },
+        {
+          "location": "Annals of Internal Medicine",
+          "query": "\"10.7326/annals-25-03959\" correction retraction republication"
+        },
+        {
+          "location": "ClinicalTrials.gov",
+          "query": "NCT06128967"
+        }
+      ],
+      "lawfulSources": [
+        "https://pubmed.ncbi.nlm.nih.gov/42832813/",
+        "https://pubmed.ncbi.nlm.nih.gov/41911553/",
+        "https://europepmc.org/",
+        "https://www.acpjournals.org/",
+        "https://clinicaltrials.gov/study/NCT06128967"
+      ],
+      "reviewInputPriorities": [
+        "Q01",
+        "Q02",
+        "Q03",
+        "Q04",
+        "Q05",
+        "Q06",
+        "Q07",
+        "Q08",
+        "Q09",
+        "Q10",
+        "Q11",
+        "Q12",
+        "Q13",
+        "Q14",
+        "Q15"
+      ],
+      "exclusions": [
+        "Original retracted findings must not be restored as support.",
+        "Do not assume replacement identity from a title alone."
+      ]
+    }
+  ],
+  "delivery": {
+    "outbound": "RRX-GAP-001-input.zip plus REQUEST.txt, manually attached to Grok by project owner",
+    "inbound": "Grok downloadable RRX-GAP-001-return.zip containing actual files, manifest.json, search-log.json, screening-log.json, gaps.json, review-inputs.jsonl and CHATGPT-INGEST-PROMPT.txt",
+    "receiver": "Owner downloads attachment, places it outside Git/public assets and supplies path to this RemapRx chat. The integrator verifies access, zip members/manifest/schema/counts/hashes before any ingestion.",
+    "noDispatchClaim": true
+  },
+  "inputs": [
+    {
+      "path": "research/batches/RRX-INGEST-001/grok/RRX-GAP-001/CHATGPT-INGEST-PROMPT.template.txt",
+      "sha256": "8f6accefc2310fa15ec02fdcb33fb1e068527ef74115c8a7340e7a78ad576de8"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/grok/RRX-GAP-001/REQUEST.txt",
+      "sha256": "3f6b8964c006b94672c6e11c557c520a0101da01cac9c173ab96eac7bf70e1f4"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/grok/RRX-GAP-001/candidate.schema.json",
+      "sha256": "1a1c86d0c19b6a946a1222b13fd231776694b4788127b2881ae87727e570909a"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/grok/RRX-GAP-001/existing-inventory.json",
+      "sha256": "c8a8d9b640115d1ea133ae58ea85622aacddc4dd1115f3286c24abf25709a5f1"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/grok/RRX-GAP-001/results.schema.json",
+      "sha256": "2eef6845104eb74a7a80c3ca967acd9cb9b41313ab390e439ba516b2ce5b602b"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/grok/RRX-GAP-001/return.schema.json",
+      "sha256": "9d4fca415e56b8a9402b069a77b3c0c07d5121235b6d1a667d559fac67fc798c"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/grok/RRX-GAP-001/review-questions-and-inputs.json",
+      "sha256": "02edeacc65227e5feeaf25b6c9568be406b48024216f83d2dda2ccfcc5042f3b"
+    },
+    {
+      "path": "scripts/verify-research-gap-return.py",
+      "sha256": "ed8b351d2f4a30c31d607c396a23ad57dd24ceec4d7bd522c69ce47e4933c2c5"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/calibration/audits/held-packets.json",
+      "sha256": "48d420e9ef21f1ce4e9d4ee58550e40174ec68c3ffd65348d0b4f42642f09039"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/calibration/candidates/CAL-04/diagnostic.json",
+      "sha256": "17ea825f84e73d20232ff7af2c8323abeb2d924cc88962c2e227e87fd4957166"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/calibration/candidates/CAL-05/diagnostic.json",
+      "sha256": "d8a01644c1b7ac7993a6585c1ef38a98ba26fad7721db9fc30759e25c143abd5"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/calibration/candidates/CAL-06/diagnostic.json",
+      "sha256": "16cc387a4e750203e012b2c072443b7ed17681fec50fbb9c1611dae85f1438f6"
+    }
+  ]
+}

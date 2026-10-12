@@ -1,0 +1,85 @@
+{
+  "schemaVersion": "remaprx-checkpoint-closeout-v1",
+  "recordedAt": "2026-10-12T12:40:52.588205+00:00",
+  "status": "PRIVATE_CHECKPOINT_ACCEPTED",
+  "planId": "RRX-INGEST-001-CHECKPOINT-1.3",
+  "candidateDigest": "6db8ad4626d866a05366cc378754015174402365618037089c10125ef58bacb4",
+  "canonicalFiles": 48,
+  "historicalFilesUnchanged": 47,
+  "newBoundedContentBundles": 1,
+  "firstChangedFiles": 1,
+  "unchangedSecondImportChanges": 0,
+  "progress": {
+    "received": {
+      "historicalAcquisitionRecords": 2765,
+      "historicalReportIdentities": 1990,
+      "historicalAssets": 1930,
+      "newlyAcquiredSources": 0
+    },
+    "extracted": {
+      "historicalDraftResults": 570,
+      "historicalDraftClaims": 525,
+      "newBoundedQualitativeResults": 3,
+      "newClaims": 4,
+      "newCompleteSourceExtractions": 0
+    },
+    "verified": {
+      "recoveredMetadataFiles": 47,
+      "newPartialSourcePackets": 1,
+      "newFullScientificReviews": 0,
+      "sourceQuoteLocatorOccurrences": 67,
+      "diagnosticHoldPackets": 3
+    },
+    "appraised": {
+      "newCompleted": 0
+    },
+    "humanReviewed": {
+      "newApproved": 0,
+      "historicalDraftReviewRecordsPending": 1152
+    },
+    "synthesized": {
+      "newClinicalSyntheses": 0,
+      "privateMechanismProposals": 2,
+      "privateParentPageProposals": 3
+    },
+    "released": {
+      "newSourcesOrClaims": 0
+    }
+  },
+  "calibration": {
+    "assigned": 24,
+    "boundedPartialSourceVerified": 1,
+    "diagnosticHoldsIndependentlyAudited": 3,
+    "unprocessed": 20,
+    "fullScientificReviewsComplete": 0
+  },
+  "receipts": [
+    {
+      "path": "research/batches/RRX-INGEST-001/checkpoint-final/plan.json",
+      "sha256": "074291612970da2ea5cfcdb15640550115ebe8428e916a24a7f6abd83f879ce4"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/checkpoint-final/readiness.json",
+      "sha256": "a21b18d85f1e338a7d88d1003b135ced469d54278cb0ab8c20c2edf982952f63"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/checkpoint-final/acceptance.json",
+      "sha256": "656be297f69aa29ac60cd3f86b3c1f9a6d19bdf0e112b1198970ae08dfd9e636"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/checkpoint-final/apply-first.json",
+      "sha256": "d03bd1a68030b04d7536abd3915c9248bec493d8bf3b1661416fb4156a55289e"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/checkpoint-final/apply-repeat.json",
+      "sha256": "b859c5f733868eace9797360b838f7f7b8912337c32a619cbc81e24774bf980a"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/checkpoint-final/audit/independent_audit.json",
+      "sha256": "80e4719b4dfc544077354e3bdfdd7127191417d5fcea1bdbbd6e69d3caa68fbb"
+    }
+  ],
+  "scientificApproval": false,
+  "publicationPerformed": false,
+  "nextAssignment": "Finish CAL07 figure, supplement, integrity and quantitative gaps under fresh GP; resume eligible first-tranche packets; resolve CAL04/05/06 holds with the prepared Grok gap packet."
+}

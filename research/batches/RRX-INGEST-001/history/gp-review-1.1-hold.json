@@ -1,0 +1,302 @@
+{
+  "approvedScope": [],
+  "blockingFindings": [
+    {
+      "component": "scripts/research_ingest/source_validation.py",
+      "finding": "Numeric value may disagree with the source-supported reported_text while validation returns no errors.",
+      "id": "GP-001",
+      "reproduction": {
+        "fixture": "tests/research_ingest/test_source_validation.py SourceCandidateTests.setUp",
+        "mutation": "results[0].numbers[0].value = 999; reported_text remains 12; source quote remains There were 12 events.",
+        "observedValidationErrors": []
+      },
+      "requiredFix": "Validate each reported numeric value against its printed numeric text without silently converting units; add negative regression coverage, revise prospective pins and recheck GP before dependent extraction.",
+      "severity": "major"
+    }
+  ],
+  "excludedScope": [
+    "New acquisition or Grok dispatch.",
+    "Canonical app/reader changes or public apply.",
+    "Release, human review or scientific acceptance.",
+    "Extraction under unresolved identity/quarantine/unsupported-format holds."
+  ],
+  "independence": "Reviewer did not author the prospective plan or source validator. Reviewer authored the metadata inventory and calibration assignments; this planning check is not an independent scientific acceptance of any extraction.",
+  "limitations": [
+    "Planning and byte continuity do not establish source correctness, independent study identities, appraisal completeness or clinical benefit.",
+    "Cited-paper ledger is provisional: nine unresolved reference classifications; no structurally complete or released scholarly reviews.",
+    "Five diagnostic report packets and six unsupported companions remain held; those are not completed scientific extractions.",
+    "Any pinned file change requires current plan/readiness reconciliation."
+  ],
+  "nextAction": "Preserve this HOLD with superseded proposal 1.1; correct validator and repin proposed plan/schema/assignments as 1.2, then repeat planning check before readiness.",
+  "passedChecks": {
+    "all55PinnedInputsMatch": true,
+    "allExplicitCompanionsRetained": true,
+    "calibration24DistinctReportsThreeTranchesOfEight": true,
+    "calibration37FileAssignments35UniqueHashesVerified": true,
+    "candidateSchemaPlanIdMatches": true,
+    "closedPacketRestrictionsPreserved": true,
+    "eightExecutableSchemasValid": true,
+    "futureGapDeliverySeparatelyGated": true,
+    "mechanismPriorityTargetsEightCovered": true,
+    "noRawPapersOrFixturesInRecoveryTargets": true,
+    "planSchemaValid": true,
+    "privateRecovery47FilesAndHashesMatch": true,
+    "recoveryTargetsExact47AllowedTargets": true,
+    "reviewAndPublicationGatesPreserved": true,
+    "schemaSourceAndDestinationProvenanceMatches": true,
+    "sourcePathRemappingReproduces": true,
+    "sourceResolverGraphCloses": true,
+    "unresolvedVersionsAndQuarantineRemainHeld": true
+  },
+  "planAuthor": "root integrator",
+  "planId": "RRX-INGEST-001-1.1",
+  "planSha256": "c530c9b39f7b3869a388b621094e3ca53e2f0eff721ec96f4af1c4a85988ca76",
+  "proposedScope": [
+    "Byte-preserving recovery of 47 private metadata files.",
+    "Calibrated private source-candidate extraction under exact assignments and schemas; only tranche 1 initially."
+  ],
+  "readinessRecorded": false,
+  "reviewedAt": "2026-10-12T11:36:37.271550+00:00",
+  "reviewer": "corpus_audit",
+  "schemaVersion": "remaprx-gp-planning-review-v1",
+  "scope": "GP_PLAN_REVIEW",
+  "status": "HOLD",
+  "verification": {
+    "adversarialCheck": "Numeric mismatch independently reproduced despite the 42 passing existing tests.",
+    "inventoryCheck": {
+      "command": "python3 scripts/research_inventory.py --check",
+      "errors": [],
+      "reproducibilityDifferences": [],
+      "status": "PASS_INVENTORY_ONLY"
+    },
+    "planInputHashes": [
+      {
+        "path": "components/shared-theme/universal-article.ts",
+        "sha256": "280f3841722058a4efae981d3911d91890af0899183e3b826bf816765874cdb2"
+      },
+      {
+        "path": "data/content.json",
+        "sha256": "f8252d1140ba1b522bdb60a7e5f2e2b507c6fe0fea8454b69caf82808a94aafc"
+      },
+      {
+        "path": "data/discovery-pages.json",
+        "sha256": "b8d39490af621c2e494762ee9d0ffdf3416a564950b305587f20b6573a83a827"
+      },
+      {
+        "path": "data/private-reviews.json",
+        "sha256": "b3b5f75443899b359d78575d693d82444143897154c22862023598c2c873401c"
+      },
+      {
+        "path": "data/public-content.json",
+        "sha256": "f36ceaf62d7faf82027289373e8132c55567a3a50e336cca0c2b9b227f5acb30"
+      },
+      {
+        "path": "data/public-mechanisms.json",
+        "sha256": "bac453f5234c3c1b3f126e564c36ba0f2f5a8ea570d46799e3cf5f88bd596127"
+      },
+      {
+        "path": "data/public-reader-evidence.json",
+        "sha256": "c1ec8e426af268dfb89f69f29dfed0ec887d5e7bfc4e9e08e11102791c3143bd"
+      },
+      {
+        "path": "data/reader-evidence.json",
+        "sha256": "8ec76d5e8fb500df1dac7e6167332c7b283806018f1c900ea46fa9120b74c32b"
+      },
+      {
+        "path": "data/review-envelopes.json",
+        "sha256": "9dbc05bec5d78002e4f1cd78fb7494ef4d00c7b04c6cd5ab9abb020312f2d8e0"
+      },
+      {
+        "path": "docs/PROJECT-RULES.md",
+        "sha256": "be0309cea512978442bf168a2f0dc70d05eb3a92ef46b9913541548ee61033c1"
+      },
+      {
+        "path": "docs/RESEARCH-INGEST.md",
+        "sha256": "f7464fcdefa80e08f6152cab7da892a4bb709d79e8babf41c76e5a42011469e1"
+      },
+      {
+        "path": "editorial/mechanism-expansion/mechanism-extraction-schema.json",
+        "sha256": "0f1f7b2a215593e08099f1be5ece3a98b2f2f8b34720689c7a0ff72f85261c1e"
+      },
+      {
+        "path": "editorial/reader-source-aliases.json",
+        "sha256": "70186e5e5ced9232a4a21b321c5c988058191c514131dbea8ce442e352cb2fef"
+      },
+      {
+        "path": "editorial/reader-source-corrections.json",
+        "sha256": "06561277b96ef2f869312715e2a55ebcc9a9c84662b8e0d59714dd8395e7b0e2"
+      },
+      {
+        "path": "lib/citation-plan.ts",
+        "sha256": "d0e97ecafa997e29474a2290ee1040ebb18c7b9669abdc0f843c5321a44f552f"
+      },
+      {
+        "path": "lib/mechanisms.ts",
+        "sha256": "74c18405714bd8c4038c6808a7bb2d0dcb42da47a46f8639ba6e5d5977ca8f5a"
+      },
+      {
+        "path": "lib/review-access.ts",
+        "sha256": "6063c013f62e383dce95d2ca62e241c173f3ab5ad8d19bfe8b7808bcf4aebc67"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/PLAN.md",
+        "sha256": "f3b1eafd069d9eb14f6d04c43175e127d044b6c0235c6749ae458a2314736e54"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/calibration/assignments.json",
+        "sha256": "1d63faf0986ae3af33361a305f023f12c296ebd610c7d0c3504bc907ecc55dda"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/cited-paper-ledger.json",
+        "sha256": "41b5d3e8f3ae3569f972214fbefcb9b23b576caade6316da2285a0ff08a9e703"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/inventory/bindings.jsonl",
+        "sha256": "e209b478978f58af171444cae5de356be7ccf33769a0f879bf26aec1d04aa806"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/inventory/calibration-candidates.json",
+        "sha256": "5759f823b6da344708f749f10cf01e5af2b43f38a1a7c6c2e90cad171d4b9f3a"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/inventory/gaps.jsonl",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/inventory/identity-groups.jsonl",
+        "sha256": "73c5e0e6956fe9a30df02c84cb0ae4d22c46537eca99c677123e77de51c650d6"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/inventory/input-manifest.json",
+        "sha256": "4efc30f453319c2f81e5b43d1e3e534cbd6d2189cb5f1eaf3d6793150841af7b"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/inventory/lineage.jsonl",
+        "sha256": "1f78ca1debd24948f4e442bf5de4810bb4e17312c30845783651deb8ab53a949"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/inventory/ownership.json",
+        "sha256": "770edc65d995109d882338d53f61a85f277b2962660e176459954b88421436a2"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/inventory/preserved-aliases.json",
+        "sha256": "43734d399a07a48cff7fbf24e68a1fca38377e24d8f6074d18405654d3879dd9"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/inventory/return-appearances.jsonl",
+        "sha256": "3ca970d1a95bd43a16debbfc5d40099e96709ce5e5e1ec4b09d6e1455aa53ddf"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/inventory/source-locations.json",
+        "sha256": "3e0092f16975438c3eb4c2d280d5b03cd9beb5fb80cc129b52dfadd44c468f7f"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/inventory/source-records.jsonl",
+        "sha256": "dc399e094efb0628a477c5d828adfb956557eda2f49eb6650b0aaed54e373be7"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/inventory/summary.json",
+        "sha256": "9fd7572074fbbbd27e8ea1c241ab8432591a9f2d50fc8f826903e06ff330059c"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/inventory/target-registry.json",
+        "sha256": "23c9e49c113edd378b577eb880e4e90ef0f2acbc1199aa4be124fb6f3dcfbc44"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/recovery-inputs.json",
+        "sha256": "bb8f412bc4d5dbf55d3e5c4c1ff3762cf9723f6cbbdfa82c7ccc8daf2fc2e576"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/schemas/acceptance.schema.json",
+        "sha256": "136311113f64fd949d869e35b8b6cf4f4920498fafbd7a656a0e68411d41a12a"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/schemas/candidate.schema.json",
+        "sha256": "ce6a9d87dd03f08e970843b8cae11e324aef983b334e2511fb40a52b02c7c6c3"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/schemas/journal.schema.json",
+        "sha256": "05f90a9a8af7bf8fa2b2e315e137a9558d10f9752f932978aa2e6dddc17ed2b5"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/schemas/manifest.schema.json",
+        "sha256": "fbfa9e390a83658137626ae98c1ac596a0fc917abc48e15d3c55819cb3eb5a5c"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/schemas/plan.schema.json",
+        "sha256": "3db14dd624e4cc3e411fb812fc146585c36cd20d1d5bca2a51574dada3ab4764"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/schemas/provenance.json",
+        "sha256": "0859fcae33a0aaba38872b6151eb0e3e603031a41039ce66cc2fbe1a3e204a5d"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/schemas/readiness.schema.json",
+        "sha256": "aebd6d559f6133d9ff8c3861ee775613ab62061d89b6b83263eb46704421ca87"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/schemas/report.schema.json",
+        "sha256": "a9b07d6d6ad2296a7489f835be2cfc43f821fd63e13c2ca8d95c42545c2449bf"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/schemas/results.schema.json",
+        "sha256": "2eef6845104eb74a7a80c3ca967acd9cb9b41313ab390e439ba516b2ce5b602b"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/schemas/review-questions-and-inputs.json",
+        "sha256": "02edeacc65227e5feeaf25b6c9568be406b48024216f83d2dda2ccfcc5042f3b"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/synthesis-identity-map.json",
+        "sha256": "bb40d6b40d14bde29d6a85c5b4e70b0a8624daab29cb07d079b2db974633d10a"
+      },
+      {
+        "path": "rules/one-match-rule/ONE-MATCH-RULE.md",
+        "sha256": "7fae46e83e1da5e139b0ab2d11ca02292603c63a50f764c89819b0792bc2f330"
+      },
+      {
+        "path": "scripts/apply-reader-outcomes.py",
+        "sha256": "4f0fd627142c7c548a428a5ca4a265a61e8189e84545cd983143372718a38a99"
+      },
+      {
+        "path": "scripts/prepare-research-batch.py",
+        "sha256": "ed6901ca0f5faaabcbba2b19872a3e49f164eef6a11d318be403d58498c10da3"
+      },
+      {
+        "path": "scripts/research-review-coverage.mjs",
+        "sha256": "1194d5123893af0fa043b57d39e0e885b24c4497d6b119e3320d539bfd5c6893"
+      },
+      {
+        "path": "scripts/research_ingest/__init__.py",
+        "sha256": "84ac829b59c21c8f5fce985cb7c0344d09d9eb4cb3fccb6a5e4dc64089d84bec"
+      },
+      {
+        "path": "scripts/research_ingest/__main__.py",
+        "sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d"
+      },
+      {
+        "path": "scripts/research_ingest/cli.py",
+        "sha256": "70394939b3711f7049fb73af61fc32cf0d7c56eab442dff82d79362f1667d7b0"
+      },
+      {
+        "path": "scripts/research_ingest/contracts.py",
+        "sha256": "de9b8d26d7356663ee385cb7a0c80661620ff70810984b78632564d4f38d2994"
+      },
+      {
+        "path": "scripts/research_ingest/source_validation.py",
+        "sha256": "617df5602decb72d7a8cdc4a51c7fc3510bf1bcd23f0bd6aa73aab3bb6422ed2"
+      },
+      {
+        "path": "scripts/research_inventory.py",
+        "sha256": "c7b3f54d4a23898de4f504d38733ed4a80dd745a722f0b0c8488b6eeb76c2ee8"
+      }
+    ],
+    "recoveryFileGroups": {
+      "acquisition": 18,
+      "draft-science": 13,
+      "prior-evidence": 16
+    },
+    "testCommand": "PYTHONPATH='/Users/kmfp/Documents/Codex/2026-10-08/one-match-drug-repurposing/work/evidence/python' python3 -m unittest discover -s tests/research_ingest -v",
+    "testsPassed": 42
+  }
+}

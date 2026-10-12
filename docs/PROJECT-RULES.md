@@ -58,4 +58,8 @@ Owner instruction adopted 11 October 2026: connect the existing public Sites pub
 
 ## Maintaining the rules
 
+### RemapRx research continuation — RRX-INGEST-001
+
+Owner implementation instruction, 12 October 2026: adopt the [RRX-INGEST-001 plan](../research/batches/RRX-INGEST-001/PLAN.md). Use hybrid Codex/Grok acquisition, repair then expand, and reconcile the original private research lineage before repeating work. MOA-01 is restricted to current target scope; extra drugs remain leads. Preserve 30 distinct drugs, 30 distinct conditions, DR001–DR036, subsequent canonical additions and mandatory itraconazole–cancer coverage. Use one integrator, isolated worker returns, exact-scope result/synthesis identities, prospective GP readiness, an audited candidate/diff and guarded idempotent integration. Evidence-to-page mappings require scientific relevance rather than acquisition tags. The batch handoff records actual technical/scientific/release status; no historical or AI acceptance supplies human approval. Raw files remain external private dependencies and source locations must be resolvable by another collaborator.
+
 Update this contract or the appropriate ingestion/editorial contract and append a source-linked entry to `RULE-CHANGELOG.md` in the same PR. Separate requested/adopted, implemented, verified and released status. For a reusable global correction, submit it to the existing One Match Rule integrator; the upstream source on the original host is `Pepsanon.com/one-match-rule/`. Another host must locate that upstream rather than create a second master. Record pending upstream, installed-skill and exported/uploaded-copy synchronization honestly. Never overwrite concurrent work or the frozen baseline.

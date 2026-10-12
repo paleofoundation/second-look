@@ -1,0 +1,1019 @@
+{
+  "schemaVersion": "remaprx-calibration-status-v1",
+  "asOf": "2026-10-12T12:20:33.675914+00:00",
+  "preparedBy": "corpus_audit",
+  "planId": "RRX-INGEST-001-1.3",
+  "planSha256": "4f7100d3aa5df7ad98768c5c4be1d6f863bdcf4d0e115417c84e9f0577a02d71",
+  "scope": "This 24-packet calibration only; recovered historical science is preserved separately and is not newly completed calibration work.",
+  "unitDefinitions": {
+    "reportPacket": "One assigned canonical report identity plus its companions; not an independent-study count.",
+    "sourceFileVersion": "One assigned sourceId/bytes/hash; 37 appearances correspond to 35 distinct hashes and are not 37 independent studies.",
+    "result": "One source-bound endpoint/model/comparison/timepoint result; CAL-07 has 3 qualitative results from one paper, not 3 studies.",
+    "questionInput": "One Q01-Q15 candidate input; present/located/partial is not a completed scientific review."
+  },
+  "counts": {
+    "reportPacketsAssigned": 24,
+    "reportPacketsWithAnyCurrentCalibrationOutput": 4,
+    "diagnosticPacketsProcessed": 3,
+    "independentlyAuditedDiagnosticHolds": 3,
+    "reportPacketsWithPartialSourceCandidate": 1,
+    "reportPacketsPendingCalibrationWork": 20,
+    "assignedSourceFileVersions": 37,
+    "uniqueAssignedSourceIds": 37,
+    "distinctAssignedAssetHashes": 35,
+    "fileAssignmentsWithIntegrityOrFormatHold": 11,
+    "reportPacketsWithAssignedPrimaryHold": 5,
+    "diagnosticFileVersionAppearancesInspected": 2,
+    "diagnosticDistinctPhysicalAssetsInspected": 1,
+    "diagnosticPacketsWithoutAssignedFulltext": 1,
+    "boundedSourceContentObservationsPassed": 1,
+    "currentExactCandidateAuditsPassed": 1,
+    "currentExactCandidateAuditsPending": 0,
+    "sourceCandidateResults": 3,
+    "sourceCandidateClaims": 4,
+    "qInputsPresent": 15,
+    "qInputsLocatedCandidate": 5,
+    "qInputsPartial": 10,
+    "typedQuantitativeResults": 0,
+    "completedFullScientificReviews": 0,
+    "reportPacketsWithoutCompletedFullScientificReview": 24,
+    "humanReviewedFullReports": 0,
+    "releasedReports": 0
+  },
+  "packets": [
+    {
+      "packetId": "CAL-01",
+      "canonicalReportId": "P-STOPCOVID2-2023",
+      "tranche": 1,
+      "assignedFileVersionCount": 2,
+      "assignedSourceIds": [
+        "B-R0071-F01",
+        "A-F02-R4154-S01"
+      ],
+      "assignedDistinctAssetHashes": 2,
+      "assignmentHold": false,
+      "currentActivation": "not_active_under_plan_1.3",
+      "fullScientificReviewComplete": false,
+      "humanReviewStatus": "pending",
+      "publicationState": "draft",
+      "released": false,
+      "disposition": "pending_calibration_work",
+      "scientificSourceCandidateCount": 0,
+      "results": 0,
+      "claims": 0,
+      "qInputCount": 0,
+      "independentDiagnosticAudit": "not_started",
+      "nextAction": [
+        "Retain historical recovered records and any assignment holds; new calibration activity requires matching prospective readiness."
+      ]
+    },
+    {
+      "packetId": "CAL-02",
+      "canonicalReportId": "P-SGLT2MET-LC-2026",
+      "tranche": 1,
+      "assignedFileVersionCount": 2,
+      "assignedSourceIds": [
+        "B-R0016-F01",
+        "A-F02-R1018-S01"
+      ],
+      "assignedDistinctAssetHashes": 2,
+      "assignmentHold": false,
+      "currentActivation": "not_active_under_plan_1.3",
+      "fullScientificReviewComplete": false,
+      "humanReviewStatus": "pending",
+      "publicationState": "draft",
+      "released": false,
+      "disposition": "pending_calibration_work",
+      "scientificSourceCandidateCount": 0,
+      "results": 0,
+      "claims": 0,
+      "qInputCount": 0,
+      "independentDiagnosticAudit": "not_started",
+      "nextAction": [
+        "Retain historical recovered records and any assignment holds; new calibration activity requires matching prospective readiness."
+      ]
+    },
+    {
+      "packetId": "CAL-03",
+      "canonicalReportId": "P-CSBD-FLX-NTX-2026",
+      "tranche": 1,
+      "assignedFileVersionCount": 4,
+      "assignedSourceIds": [
+        "B-R0092-F01",
+        "A-F02-R3266-S02",
+        "A-F02-R3266-S03",
+        "A-F02-R3266-S01"
+      ],
+      "assignedDistinctAssetHashes": 4,
+      "assignmentHold": false,
+      "currentActivation": "not_active_under_plan_1.3",
+      "fullScientificReviewComplete": false,
+      "humanReviewStatus": "pending",
+      "publicationState": "draft",
+      "released": false,
+      "disposition": "pending_calibration_work",
+      "scientificSourceCandidateCount": 0,
+      "results": 0,
+      "claims": 0,
+      "qInputCount": 0,
+      "independentDiagnosticAudit": "not_started",
+      "nextAction": [
+        "Retain historical recovered records and any assignment holds; new calibration activity requires matching prospective readiness."
+      ]
+    },
+    {
+      "packetId": "CAL-04",
+      "canonicalReportId": "P-ACTIV6-ACUTE-2025",
+      "tranche": 1,
+      "assignedFileVersionCount": 1,
+      "assignedSourceIds": [
+        "A-F01-R029-F01"
+      ],
+      "assignedDistinctAssetHashes": 1,
+      "assignmentHold": true,
+      "currentActivation": "not_active_under_plan_1.3",
+      "fullScientificReviewComplete": false,
+      "humanReviewStatus": "pending",
+      "publicationState": "draft",
+      "released": false,
+      "disposition": "diagnostic_processed_hold_preserved",
+      "diagnosticStatus": "HOLD_PRESERVED",
+      "independentDiagnosticAudit": "PASS_PRESERVED_HOLD",
+      "independentDiagnosticEvidence": {
+        "path": "research/batches/RRX-INGEST-001/calibration/audits/held-packets.json",
+        "sha256": "48d420e9ef21f1ce4e9d4ee58550e40174ec68c3ffd65348d0b4f42642f09039"
+      },
+      "diagnosticEvidence": {
+        "path": "research/batches/RRX-INGEST-001/calibration/candidates/CAL-04/diagnostic.json",
+        "sha256": "17ea825f84e73d20232ff7af2c8323abeb2d924cc88962c2e227e87fd4957166"
+      },
+      "scientificSourceCandidateCount": 0,
+      "results": 0,
+      "claims": 0,
+      "qInputCount": 0,
+      "nextAction": [
+        "Integrator must preserve both source IDs while explicitly mapping the shared asset to the printed preprint version and retaining the journal identity as lacking its correct assigned full text.",
+        "Resolve the existing held SCI-A-F01-R030-F01-SUSTAINED-RECOVERY result and source-version dependencies with an additive disposition; do not treat the second alias as another study.",
+        "Acquire any missing journal version only under a separate approved gap-acquisition packet, verify its identity/hash and compare outcome/version relationships before reconsidering the hold."
+      ]
+    },
+    {
+      "packetId": "CAL-05",
+      "canonicalReportId": "A-F01-R030",
+      "tranche": 1,
+      "assignedFileVersionCount": 1,
+      "assignedSourceIds": [
+        "A-F01-R030-F01"
+      ],
+      "assignedDistinctAssetHashes": 1,
+      "assignmentHold": true,
+      "currentActivation": "not_active_under_plan_1.3",
+      "fullScientificReviewComplete": false,
+      "humanReviewStatus": "pending",
+      "publicationState": "draft",
+      "released": false,
+      "disposition": "diagnostic_processed_hold_preserved",
+      "diagnosticStatus": "HOLD_PRESERVED",
+      "independentDiagnosticAudit": "PASS_PRESERVED_HOLD",
+      "independentDiagnosticEvidence": {
+        "path": "research/batches/RRX-INGEST-001/calibration/audits/held-packets.json",
+        "sha256": "48d420e9ef21f1ce4e9d4ee58550e40174ec68c3ffd65348d0b4f42642f09039"
+      },
+      "diagnosticEvidence": {
+        "path": "research/batches/RRX-INGEST-001/calibration/candidates/CAL-05/diagnostic.json",
+        "sha256": "d8a01644c1b7ac7993a6585c1ef38a98ba26fad7721db9fc30759e25c143abd5"
+      },
+      "scientificSourceCandidateCount": 0,
+      "results": 0,
+      "claims": 0,
+      "qInputCount": 0,
+      "nextAction": [
+        "Integrator must preserve both source IDs while explicitly mapping the shared asset to the printed preprint version and retaining the journal identity as lacking its correct assigned full text.",
+        "Resolve the existing held SCI-A-F01-R030-F01-SUSTAINED-RECOVERY result and source-version dependencies with an additive disposition; do not treat the second alias as another study.",
+        "Acquire any missing journal version only under a separate approved gap-acquisition packet, verify its identity/hash and compare outcome/version relationships before reconsidering the hold."
+      ]
+    },
+    {
+      "packetId": "CAL-06",
+      "canonicalReportId": "P-REVIVE-2026",
+      "tranche": 1,
+      "assignedFileVersionCount": 0,
+      "assignedSourceIds": [],
+      "assignedDistinctAssetHashes": 0,
+      "assignmentHold": true,
+      "currentActivation": "not_active_under_plan_1.3",
+      "fullScientificReviewComplete": false,
+      "humanReviewStatus": "pending",
+      "publicationState": "draft",
+      "released": false,
+      "disposition": "diagnostic_processed_hold_preserved",
+      "diagnosticStatus": "HOLD_PRESERVED",
+      "independentDiagnosticAudit": "PASS_PRESERVED_HOLD",
+      "independentDiagnosticEvidence": {
+        "path": "research/batches/RRX-INGEST-001/calibration/audits/held-packets.json",
+        "sha256": "48d420e9ef21f1ce4e9d4ee58550e40174ec68c3ffd65348d0b4f42642f09039"
+      },
+      "diagnosticEvidence": {
+        "path": "research/batches/RRX-INGEST-001/calibration/candidates/CAL-06/diagnostic.json",
+        "sha256": "16cc387a4e750203e012b2c072443b7ed17681fec50fbb9c1611dae85f1438f6"
+      },
+      "scientificSourceCandidateCount": 0,
+      "results": 0,
+      "claims": 0,
+      "qInputCount": 0,
+      "nextAction": [
+        "Obtain and inspect the original notice and any candidate replacement under an approved source packet; establish the explicit correction/retraction/republication linkage and reason.",
+        "Resolve FAM-NCT06128967 versus S-REVIVE-2026 as a family mapping without merging independent outcomes or creating a second study.",
+        "Preserve quarantine and all favorable-claim/numerical-extraction vetoes until independent review accepts an exact corrected source version; metadata alone cannot complete Q01-Q15."
+      ]
+    },
+    {
+      "packetId": "CAL-07",
+      "canonicalReportId": "MECH-D07-HEDGEHOG-2010",
+      "tranche": 1,
+      "assignedFileVersionCount": 1,
+      "assignedSourceIds": [
+        "MECH-D07-HEDGEHOG-2010"
+      ],
+      "assignedDistinctAssetHashes": 1,
+      "assignmentHold": false,
+      "currentActivation": "existing_candidate_binding_only_after_independent_gp",
+      "fullScientificReviewComplete": false,
+      "humanReviewStatus": "pending",
+      "publicationState": "draft",
+      "released": false,
+      "disposition": "partial_source_candidate",
+      "sourceInspectionScope": "partial_source",
+      "scientificSourceCandidateCount": 1,
+      "results": 3,
+      "claims": 4,
+      "qInputCount": 15,
+      "qStatuses": {
+        "located_candidate": 5,
+        "partial": 10
+      },
+      "technicalValidation": "PASS",
+      "candidate": {
+        "path": "research/batches/RRX-INGEST-001/calibration/candidates/CAL-07/CAL-07-S01.candidate.json",
+        "sha256": "aed9959303463b67519c1de979479e002d86b72ccfa1e803c41ee504bec6c4e3"
+      },
+      "validation": {
+        "path": "research/batches/RRX-INGEST-001/calibration/candidates/CAL-07/validation.json",
+        "sha256": "9008c0bea7691e0a28aefa39099f8e5b759f20a8bfb88aa9136fa09eaea21066"
+      },
+      "boundedContentObservation": {
+        "status": "PASS_BOUNDED_TEXT_AND_BINDINGS",
+        "candidateSha256": "d4de221136ff49e978162058ea02dbdc0a60740fdc444a728728f287adf3ddc8",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "evidence": {
+          "path": "research/batches/RRX-INGEST-001/calibration/audits/CAL-07-source-observations.json",
+          "sha256": "f5386509396e4db46ed2964618de114322d6f274890fea314a97a8c9414848e0"
+        },
+        "scope": "Historical source-text and binding observations; source content unchanged through plan-only rebound, not full-source completion."
+      },
+      "currentExactCandidateAudit": {
+        "status": "PASS",
+        "evidence": {
+          "path": "research/batches/RRX-INGEST-001/fanout/CAL-07/independent-audit.json",
+          "sha256": "5f5f1ab05ee86b8a150f08c34258ad20f4ad303e519e1098f71c6d4f690f1ba9"
+        }
+      },
+      "mechanismPayloadState": "not_extracted",
+      "nextAction": [
+        "Preserve missing figure/supplement and quantitative appraisal work; no full-review completion claim.",
+        "Proceed only through independently ready, exact-binding downstream proposals; no canonical content import asserted here."
+      ]
+    },
+    {
+      "packetId": "CAL-08",
+      "canonicalReportId": "MECH-D31-PASTIS-2022",
+      "tranche": 1,
+      "assignedFileVersionCount": 1,
+      "assignedSourceIds": [
+        "MECH-D31-PASTIS-2022"
+      ],
+      "assignedDistinctAssetHashes": 1,
+      "assignmentHold": false,
+      "currentActivation": "not_active_under_plan_1.3",
+      "fullScientificReviewComplete": false,
+      "humanReviewStatus": "pending",
+      "publicationState": "draft",
+      "released": false,
+      "disposition": "pending_calibration_work",
+      "scientificSourceCandidateCount": 0,
+      "results": 0,
+      "claims": 0,
+      "qInputCount": 0,
+      "independentDiagnosticAudit": "not_started",
+      "nextAction": [
+        "Retain historical recovered records and any assignment holds; new calibration activity requires matching prospective readiness."
+      ]
+    },
+    {
+      "packetId": "CAL-09",
+      "canonicalReportId": "MF-PD-MECHANISM-2016",
+      "tranche": 2,
+      "assignedFileVersionCount": 1,
+      "assignedSourceIds": [
+        "MF-PD-MECHANISM-2016"
+      ],
+      "assignedDistinctAssetHashes": 1,
+      "assignmentHold": false,
+      "currentActivation": "not_active_under_plan_1.3",
+      "fullScientificReviewComplete": false,
+      "humanReviewStatus": "pending",
+      "publicationState": "draft",
+      "released": false,
+      "disposition": "pending_calibration_work",
+      "scientificSourceCandidateCount": 0,
+      "results": 0,
+      "claims": 0,
+      "qInputCount": 0,
+      "independentDiagnosticAudit": "not_started",
+      "nextAction": [
+        "Retain historical recovered records and any assignment holds; new calibration activity requires matching prospective readiness."
+      ]
+    },
+    {
+      "packetId": "CAL-10",
+      "canonicalReportId": "MECH-D06-AUTOPHAGY-2009",
+      "tranche": 2,
+      "assignedFileVersionCount": 1,
+      "assignedSourceIds": [
+        "MECH-D06-AUTOPHAGY-2009"
+      ],
+      "assignedDistinctAssetHashes": 1,
+      "assignmentHold": false,
+      "currentActivation": "not_active_under_plan_1.3",
+      "fullScientificReviewComplete": false,
+      "humanReviewStatus": "pending",
+      "publicationState": "draft",
+      "released": false,
+      "disposition": "pending_calibration_work",
+      "scientificSourceCandidateCount": 0,
+      "results": 0,
+      "claims": 0,
+      "qInputCount": 0,
+      "independentDiagnosticAudit": "not_started",
+      "nextAction": [
+        "Retain historical recovered records and any assignment holds; new calibration activity requires matching prospective readiness."
+      ]
+    },
+    {
+      "packetId": "CAL-11",
+      "canonicalReportId": "P-D08-CRC-2014",
+      "tranche": 2,
+      "assignedFileVersionCount": 1,
+      "assignedSourceIds": [
+        "P-D08-CRC-2014"
+      ],
+      "assignedDistinctAssetHashes": 1,
+      "assignmentHold": false,
+      "currentActivation": "not_active_under_plan_1.3",
+      "fullScientificReviewComplete": false,
+      "humanReviewStatus": "pending",
+      "publicationState": "draft",
+      "released": false,
+      "disposition": "pending_calibration_work",
+      "scientificSourceCandidateCount": 0,
+      "results": 0,
+      "claims": 0,
+      "qInputCount": 0,
+      "independentDiagnosticAudit": "not_started",
+      "nextAction": [
+        "Retain historical recovered records and any assignment holds; new calibration activity requires matching prospective readiness."
+      ]
+    },
+    {
+      "packetId": "CAL-12",
+      "canonicalReportId": "MECH-D10-MICROTUBULE-2018",
+      "tranche": 2,
+      "assignedFileVersionCount": 1,
+      "assignedSourceIds": [
+        "MECH-D10-MICROTUBULE-2018"
+      ],
+      "assignedDistinctAssetHashes": 1,
+      "assignmentHold": false,
+      "currentActivation": "not_active_under_plan_1.3",
+      "fullScientificReviewComplete": false,
+      "humanReviewStatus": "pending",
+      "publicationState": "draft",
+      "released": false,
+      "disposition": "pending_calibration_work",
+      "scientificSourceCandidateCount": 0,
+      "results": 0,
+      "claims": 0,
+      "qInputCount": 0,
+      "independentDiagnosticAudit": "not_started",
+      "nextAction": [
+        "Retain historical recovered records and any assignment holds; new calibration activity requires matching prospective readiness."
+      ]
+    },
+    {
+      "packetId": "CAL-13",
+      "canonicalReportId": "MECH-D26-HYPOXIA-2025",
+      "tranche": 2,
+      "assignedFileVersionCount": 1,
+      "assignedSourceIds": [
+        "MECH-D26-HYPOXIA-2025"
+      ],
+      "assignedDistinctAssetHashes": 1,
+      "assignmentHold": false,
+      "currentActivation": "not_active_under_plan_1.3",
+      "fullScientificReviewComplete": false,
+      "humanReviewStatus": "pending",
+      "publicationState": "draft",
+      "released": false,
+      "disposition": "pending_calibration_work",
+      "scientificSourceCandidateCount": 0,
+      "results": 0,
+      "claims": 0,
+      "qInputCount": 0,
+      "independentDiagnosticAudit": "not_started",
+      "nextAction": [
+        "Retain historical recovered records and any assignment holds; new calibration activity requires matching prospective readiness."
+      ]
+    },
+    {
+      "packetId": "CAL-14",
+      "canonicalReportId": "MECH-D34-HYPHAE-1999",
+      "tranche": 2,
+      "assignedFileVersionCount": 1,
+      "assignedSourceIds": [
+        "MECH-D34-HYPHAE-1999"
+      ],
+      "assignedDistinctAssetHashes": 1,
+      "assignmentHold": false,
+      "currentActivation": "not_active_under_plan_1.3",
+      "fullScientificReviewComplete": false,
+      "humanReviewStatus": "pending",
+      "publicationState": "draft",
+      "released": false,
+      "disposition": "pending_calibration_work",
+      "scientificSourceCandidateCount": 0,
+      "results": 0,
+      "claims": 0,
+      "qInputCount": 0,
+      "independentDiagnosticAudit": "not_started",
+      "nextAction": [
+        "Retain historical recovered records and any assignment holds; new calibration activity requires matching prospective readiness."
+      ]
+    },
+    {
+      "packetId": "CAL-15",
+      "canonicalReportId": "CP018",
+      "tranche": 2,
+      "assignedFileVersionCount": 1,
+      "assignedSourceIds": [
+        "B-R0696-F01"
+      ],
+      "assignedDistinctAssetHashes": 1,
+      "assignmentHold": false,
+      "currentActivation": "not_active_under_plan_1.3",
+      "fullScientificReviewComplete": false,
+      "humanReviewStatus": "pending",
+      "publicationState": "draft",
+      "released": false,
+      "disposition": "pending_calibration_work",
+      "scientificSourceCandidateCount": 0,
+      "results": 0,
+      "claims": 0,
+      "qInputCount": 0,
+      "independentDiagnosticAudit": "not_started",
+      "nextAction": [
+        "Retain historical recovered records and any assignment holds; new calibration activity requires matching prospective readiness."
+      ]
+    },
+    {
+      "packetId": "CAL-16",
+      "canonicalReportId": "P-COVIDOUT-2023",
+      "tranche": 2,
+      "assignedFileVersionCount": 1,
+      "assignedSourceIds": [
+        "A-F01-R001-F01"
+      ],
+      "assignedDistinctAssetHashes": 1,
+      "assignmentHold": false,
+      "currentActivation": "not_active_under_plan_1.3",
+      "fullScientificReviewComplete": false,
+      "humanReviewStatus": "pending",
+      "publicationState": "draft",
+      "released": false,
+      "disposition": "pending_calibration_work",
+      "scientificSourceCandidateCount": 0,
+      "results": 0,
+      "claims": 0,
+      "qInputCount": 0,
+      "independentDiagnosticAudit": "not_started",
+      "nextAction": [
+        "Retain historical recovered records and any assignment holds; new calibration activity requires matching prospective readiness."
+      ]
+    },
+    {
+      "packetId": "CAL-17",
+      "canonicalReportId": "P-STOPPASC-2024",
+      "tranche": 3,
+      "assignedFileVersionCount": 6,
+      "assignedSourceIds": [
+        "A-F01-R005-F01",
+        "A-F01-R005-S02",
+        "A-F01-R005-S04",
+        "A-F01-R005-S03",
+        "A-F01-R005-S01",
+        "B-R0079-F01"
+      ],
+      "assignedDistinctAssetHashes": 6,
+      "assignmentHold": false,
+      "currentActivation": "not_active_under_plan_1.3",
+      "fullScientificReviewComplete": false,
+      "humanReviewStatus": "pending",
+      "publicationState": "draft",
+      "released": false,
+      "disposition": "pending_calibration_work",
+      "scientificSourceCandidateCount": 0,
+      "results": 0,
+      "claims": 0,
+      "qInputCount": 0,
+      "independentDiagnosticAudit": "not_started",
+      "nextAction": [
+        "Retain historical recovered records and any assignment holds; new calibration activity requires matching prospective readiness."
+      ]
+    },
+    {
+      "packetId": "CAL-18",
+      "canonicalReportId": "CP016",
+      "tranche": 3,
+      "assignedFileVersionCount": 1,
+      "assignedSourceIds": [
+        "B-R0051-F01"
+      ],
+      "assignedDistinctAssetHashes": 1,
+      "assignmentHold": false,
+      "currentActivation": "not_active_under_plan_1.3",
+      "fullScientificReviewComplete": false,
+      "humanReviewStatus": "pending",
+      "publicationState": "draft",
+      "released": false,
+      "disposition": "pending_calibration_work",
+      "scientificSourceCandidateCount": 0,
+      "results": 0,
+      "claims": 0,
+      "qInputCount": 0,
+      "independentDiagnosticAudit": "not_started",
+      "nextAction": [
+        "Retain historical recovered records and any assignment holds; new calibration activity requires matching prospective readiness."
+      ]
+    },
+    {
+      "packetId": "CAL-19",
+      "canonicalReportId": "CP017",
+      "tranche": 3,
+      "assignedFileVersionCount": 2,
+      "assignedSourceIds": [
+        "B-R0052-F01",
+        "B-R0052-S01"
+      ],
+      "assignedDistinctAssetHashes": 2,
+      "assignmentHold": false,
+      "currentActivation": "not_active_under_plan_1.3",
+      "fullScientificReviewComplete": false,
+      "humanReviewStatus": "pending",
+      "publicationState": "draft",
+      "released": false,
+      "disposition": "pending_calibration_work",
+      "scientificSourceCandidateCount": 0,
+      "results": 0,
+      "claims": 0,
+      "qInputCount": 0,
+      "independentDiagnosticAudit": "not_started",
+      "nextAction": [
+        "Retain historical recovered records and any assignment holds; new calibration activity requires matching prospective readiness."
+      ]
+    },
+    {
+      "packetId": "CAL-20",
+      "canonicalReportId": "B-R0323",
+      "tranche": 3,
+      "assignedFileVersionCount": 2,
+      "assignedSourceIds": [
+        "B-R0323-F01",
+        "B-R0323-S01"
+      ],
+      "assignedDistinctAssetHashes": 2,
+      "assignmentHold": true,
+      "currentActivation": "not_active_under_plan_1.3",
+      "fullScientificReviewComplete": false,
+      "humanReviewStatus": "pending",
+      "publicationState": "draft",
+      "released": false,
+      "disposition": "pending_calibration_work",
+      "scientificSourceCandidateCount": 0,
+      "results": 0,
+      "claims": 0,
+      "qInputCount": 0,
+      "independentDiagnosticAudit": "not_started",
+      "nextAction": [
+        "Retain historical recovered records and any assignment holds; new calibration activity requires matching prospective readiness."
+      ]
+    },
+    {
+      "packetId": "CAL-21",
+      "canonicalReportId": "B-R0324",
+      "tranche": 3,
+      "assignedFileVersionCount": 3,
+      "assignedSourceIds": [
+        "B-R0324-F01",
+        "B-R0324-S02",
+        "B-R0324-S01"
+      ],
+      "assignedDistinctAssetHashes": 3,
+      "assignmentHold": true,
+      "currentActivation": "not_active_under_plan_1.3",
+      "fullScientificReviewComplete": false,
+      "humanReviewStatus": "pending",
+      "publicationState": "draft",
+      "released": false,
+      "disposition": "pending_calibration_work",
+      "scientificSourceCandidateCount": 0,
+      "results": 0,
+      "claims": 0,
+      "qInputCount": 0,
+      "independentDiagnosticAudit": "not_started",
+      "nextAction": [
+        "Retain historical recovered records and any assignment holds; new calibration activity requires matching prospective readiness."
+      ]
+    },
+    {
+      "packetId": "CAL-22",
+      "canonicalReportId": "MECH-D07-CHOLESTEROL-2010",
+      "tranche": 3,
+      "assignedFileVersionCount": 1,
+      "assignedSourceIds": [
+        "MECH-D07-CHOLESTEROL-2010"
+      ],
+      "assignedDistinctAssetHashes": 1,
+      "assignmentHold": false,
+      "currentActivation": "not_active_under_plan_1.3",
+      "fullScientificReviewComplete": false,
+      "humanReviewStatus": "pending",
+      "publicationState": "draft",
+      "released": false,
+      "disposition": "pending_calibration_work",
+      "scientificSourceCandidateCount": 0,
+      "results": 0,
+      "claims": 0,
+      "qInputCount": 0,
+      "independentDiagnosticAudit": "not_started",
+      "nextAction": [
+        "Retain historical recovered records and any assignment holds; new calibration activity requires matching prospective readiness."
+      ]
+    },
+    {
+      "packetId": "CAL-23",
+      "canonicalReportId": "MECH-D07-NPC1-2017",
+      "tranche": 3,
+      "assignedFileVersionCount": 1,
+      "assignedSourceIds": [
+        "MECH-D07-NPC1-2017"
+      ],
+      "assignedDistinctAssetHashes": 1,
+      "assignmentHold": false,
+      "currentActivation": "not_active_under_plan_1.3",
+      "fullScientificReviewComplete": false,
+      "humanReviewStatus": "pending",
+      "publicationState": "draft",
+      "released": false,
+      "disposition": "pending_calibration_work",
+      "scientificSourceCandidateCount": 0,
+      "results": 0,
+      "claims": 0,
+      "qInputCount": 0,
+      "independentDiagnosticAudit": "not_started",
+      "nextAction": [
+        "Retain historical recovered records and any assignment holds; new calibration activity requires matching prospective readiness."
+      ]
+    },
+    {
+      "packetId": "CAL-24",
+      "canonicalReportId": "P-D06-PERIODONTAL-2020",
+      "tranche": 3,
+      "assignedFileVersionCount": 1,
+      "assignedSourceIds": [
+        "P-D06-PERIODONTAL-2020"
+      ],
+      "assignedDistinctAssetHashes": 1,
+      "assignmentHold": false,
+      "currentActivation": "not_active_under_plan_1.3",
+      "fullScientificReviewComplete": false,
+      "humanReviewStatus": "pending",
+      "publicationState": "draft",
+      "released": false,
+      "disposition": "pending_calibration_work",
+      "scientificSourceCandidateCount": 0,
+      "results": 0,
+      "claims": 0,
+      "qInputCount": 0,
+      "independentDiagnosticAudit": "not_started",
+      "nextAction": [
+        "Retain historical recovered records and any assignment holds; new calibration activity requires matching prospective readiness."
+      ]
+    }
+  ],
+  "stages": {
+    "sourcePlanReadiness": {
+      "status": "PASS",
+      "scope": "GP_PLAN",
+      "checkedAt": "2026-10-12T12:11:38.629455+00:00",
+      "evidence": {
+        "path": "research/batches/RRX-INGEST-001/readiness.json",
+        "sha256": "d2f6eb651d9e70c0b67a302ba6d36b036c88c63278251da21f97709234edace6"
+      }
+    },
+    "sourceCandidateTechnicalValidation": {
+      "status": "PASS",
+      "evidence": {
+        "path": "research/batches/RRX-INGEST-001/calibration/candidates/CAL-07/validation.json",
+        "sha256": "9008c0bea7691e0a28aefa39099f8e5b759f20a8bfb88aa9136fa09eaea21066"
+      }
+    },
+    "boundedIndependentContentReview": {
+      "status": "PASS_BOUNDED_TEXT_AND_BINDINGS",
+      "evidence": {
+        "path": "research/batches/RRX-INGEST-001/calibration/audits/CAL-07-source-observations.json",
+        "sha256": "f5386509396e4db46ed2964618de114322d6f274890fea314a97a8c9414848e0"
+      }
+    },
+    "currentExactCandidateAudit": {
+      "status": "PASS",
+      "evidence": {
+        "path": "research/batches/RRX-INGEST-001/fanout/CAL-07/independent-audit.json",
+        "sha256": "5f5f1ab05ee86b8a150f08c34258ad20f4ad303e519e1098f71c6d4f690f1ba9"
+      }
+    },
+    "fullScientificReview": {
+      "status": "incomplete",
+      "completed": 0,
+      "incompletePackets": 24
+    },
+    "canonicalContentBatchImport": {
+      "status": "not_claimed_without_integrator_receipt",
+      "receipt": null,
+      "note": "This status does not establish the current content batch was imported. The separately recorded 47-file private recovery is a historical metadata checkpoint, not publication or new scientific completion."
+    },
+    "humanReview": {
+      "status": "pending",
+      "completed": 0
+    },
+    "release": {
+      "status": "not_released",
+      "completed": 0
+    }
+  },
+  "auditSelection": {
+    "sourceVersionObligations": 23,
+    "metadataOnlyDiagnosticObligations": 1,
+    "totalPacketObligations": 24,
+    "selectionIsAuditCompletion": false
+  },
+  "sourcePlanPortability": {
+    "status": "PASS",
+    "snapshotMap": {
+      "path": "research/batches/RRX-INGEST-001/app-inputs/1.3/revision-2/source-map.json",
+      "sha256": "5ecba6b6f4f6c48eed8edb71aa7d30441b0093b5960c9b196fa0b9148a262684"
+    },
+    "sharedInputsCovered": 20,
+    "allPlanPinnedSharedMutableInputsMapped": true,
+    "requiredRuleFilesCovered": [
+      "docs/PROJECT-RULES.md",
+      "docs/RESEARCH-INGEST.md",
+      "docs/RULE-CHANGELOG.md"
+    ],
+    "planInputCount": 134,
+    "currentInputDrift": [],
+    "files": [
+      {
+        "bytes": 2966,
+        "originalPath": "AGENTS.md",
+        "sha256": "36c103a973f80b67a36c6311ab0282fcca4b4f4b34358f6149e8e2dc5416a2e3",
+        "snapshotPath": "research/batches/RRX-INGEST-001/app-inputs/1.3/revision-2/AGENTS.md",
+        "snapshotMatches": true,
+        "currentOriginalMatches": true
+      },
+      {
+        "bytes": 8441,
+        "originalPath": "components/shared-theme/universal-article.ts",
+        "sha256": "280f3841722058a4efae981d3911d91890af0899183e3b826bf816765874cdb2",
+        "snapshotPath": "research/batches/RRX-INGEST-001/app-inputs/1.3/revision-2/components/shared-theme/universal-article.ts",
+        "snapshotMatches": true,
+        "currentOriginalMatches": true
+      },
+      {
+        "bytes": 1041967,
+        "originalPath": "data/content.json",
+        "sha256": "f8252d1140ba1b522bdb60a7e5f2e2b507c6fe0fea8454b69caf82808a94aafc",
+        "snapshotPath": "research/batches/RRX-INGEST-001/app-inputs/1.3/revision-2/data/content.json",
+        "snapshotMatches": true,
+        "currentOriginalMatches": true
+      },
+      {
+        "bytes": 22837,
+        "originalPath": "data/discovery-pages.json",
+        "sha256": "b8d39490af621c2e494762ee9d0ffdf3416a564950b305587f20b6573a83a827",
+        "snapshotPath": "research/batches/RRX-INGEST-001/app-inputs/1.3/revision-2/data/discovery-pages.json",
+        "snapshotMatches": true,
+        "currentOriginalMatches": true
+      },
+      {
+        "bytes": 447786,
+        "originalPath": "data/private-reviews.json",
+        "sha256": "b3b5f75443899b359d78575d693d82444143897154c22862023598c2c873401c",
+        "snapshotPath": "research/batches/RRX-INGEST-001/app-inputs/1.3/revision-2/data/private-reviews.json",
+        "snapshotMatches": true,
+        "currentOriginalMatches": true
+      },
+      {
+        "bytes": 985956,
+        "originalPath": "data/public-content.json",
+        "sha256": "528ecedb600be4b252a6d2269eafad381caf803c49b7f044ed9df865fbf443e4",
+        "snapshotPath": "research/batches/RRX-INGEST-001/app-inputs/1.3/revision-2/data/public-content.json",
+        "snapshotMatches": true,
+        "currentOriginalMatches": true
+      },
+      {
+        "bytes": 205448,
+        "originalPath": "data/public-mechanisms.json",
+        "sha256": "a93db68a5b119da91bafc8de03d44968baafa39e0733b8440f9ebf52e3bf4b5b",
+        "snapshotPath": "research/batches/RRX-INGEST-001/app-inputs/1.3/revision-2/data/public-mechanisms.json",
+        "snapshotMatches": true,
+        "currentOriginalMatches": true
+      },
+      {
+        "bytes": 137983,
+        "originalPath": "data/public-reader-evidence.json",
+        "sha256": "c1ec8e426af268dfb89f69f29dfed0ec887d5e7bfc4e9e08e11102791c3143bd",
+        "snapshotPath": "research/batches/RRX-INGEST-001/app-inputs/1.3/revision-2/data/public-reader-evidence.json",
+        "snapshotMatches": true,
+        "currentOriginalMatches": true
+      },
+      {
+        "bytes": 302194,
+        "originalPath": "data/reader-evidence.json",
+        "sha256": "8ec76d5e8fb500df1dac7e6167332c7b283806018f1c900ea46fa9120b74c32b",
+        "snapshotPath": "research/batches/RRX-INGEST-001/app-inputs/1.3/revision-2/data/reader-evidence.json",
+        "snapshotMatches": true,
+        "currentOriginalMatches": true
+      },
+      {
+        "bytes": 60263,
+        "originalPath": "data/review-envelopes.json",
+        "sha256": "9dbc05bec5d78002e4f1cd78fb7494ef4d00c7b04c6cd5ab9abb020312f2d8e0",
+        "snapshotPath": "research/batches/RRX-INGEST-001/app-inputs/1.3/revision-2/data/review-envelopes.json",
+        "snapshotMatches": true,
+        "currentOriginalMatches": true
+      },
+      {
+        "bytes": 16466,
+        "originalPath": "docs/PROJECT-RULES.md",
+        "sha256": "17836fb0c484ea0f8c4f5e30945a51ec11540f903a13116364bedd1168a17472",
+        "snapshotPath": "research/batches/RRX-INGEST-001/app-inputs/1.3/revision-2/docs/PROJECT-RULES.md",
+        "snapshotMatches": true,
+        "currentOriginalMatches": true
+      },
+      {
+        "bytes": 13216,
+        "originalPath": "docs/RESEARCH-INGEST.md",
+        "sha256": "a9f56c76c20a1a4e74fc1e94ef8cb5020962208c95efcc1fbc57301e0e026642",
+        "snapshotPath": "research/batches/RRX-INGEST-001/app-inputs/1.3/revision-2/docs/RESEARCH-INGEST.md",
+        "snapshotMatches": true,
+        "currentOriginalMatches": true
+      },
+      {
+        "bytes": 18133,
+        "originalPath": "docs/RULE-CHANGELOG.md",
+        "sha256": "2410aee4edf2693249428ef968b63a0de97f1f2e57ec6dc390c3904f12bd0627",
+        "snapshotPath": "research/batches/RRX-INGEST-001/app-inputs/1.3/revision-2/docs/RULE-CHANGELOG.md",
+        "snapshotMatches": true,
+        "currentOriginalMatches": true
+      },
+      {
+        "bytes": 1946,
+        "originalPath": "editorial/mechanism-expansion/mechanism-extraction-schema.json",
+        "sha256": "0f1f7b2a215593e08099f1be5ece3a98b2f2f8b34720689c7a0ff72f85261c1e",
+        "snapshotPath": "research/batches/RRX-INGEST-001/app-inputs/1.3/revision-2/editorial/mechanism-expansion/mechanism-extraction-schema.json",
+        "snapshotMatches": true,
+        "currentOriginalMatches": true
+      },
+      {
+        "bytes": 341,
+        "originalPath": "editorial/reader-source-aliases.json",
+        "sha256": "70186e5e5ced9232a4a21b321c5c988058191c514131dbea8ce442e352cb2fef",
+        "snapshotPath": "research/batches/RRX-INGEST-001/app-inputs/1.3/revision-2/editorial/reader-source-aliases.json",
+        "snapshotMatches": true,
+        "currentOriginalMatches": true
+      },
+      {
+        "bytes": 2665,
+        "originalPath": "editorial/reader-source-corrections.json",
+        "sha256": "06561277b96ef2f869312715e2a55ebcc9a9c84662b8e0d59714dd8395e7b0e2",
+        "snapshotPath": "research/batches/RRX-INGEST-001/app-inputs/1.3/revision-2/editorial/reader-source-corrections.json",
+        "snapshotMatches": true,
+        "currentOriginalMatches": true
+      },
+      {
+        "bytes": 4691,
+        "originalPath": "lib/citation-plan.ts",
+        "sha256": "d0e97ecafa997e29474a2290ee1040ebb18c7b9669abdc0f843c5321a44f552f",
+        "snapshotPath": "research/batches/RRX-INGEST-001/app-inputs/1.3/revision-2/lib/citation-plan.ts",
+        "snapshotMatches": true,
+        "currentOriginalMatches": true
+      },
+      {
+        "bytes": 2816,
+        "originalPath": "lib/mechanisms.ts",
+        "sha256": "74c18405714bd8c4038c6808a7bb2d0dcb42da47a46f8639ba6e5d5977ca8f5a",
+        "snapshotPath": "research/batches/RRX-INGEST-001/app-inputs/1.3/revision-2/lib/mechanisms.ts",
+        "snapshotMatches": true,
+        "currentOriginalMatches": true
+      },
+      {
+        "bytes": 13220,
+        "originalPath": "lib/review-access.ts",
+        "sha256": "6063c013f62e383dce95d2ca62e241c173f3ab5ad8d19bfe8b7808bcf4aebc67",
+        "snapshotPath": "research/batches/RRX-INGEST-001/app-inputs/1.3/revision-2/lib/review-access.ts",
+        "snapshotMatches": true,
+        "currentOriginalMatches": true
+      },
+      {
+        "bytes": 215494,
+        "originalPath": "rules/one-match-rule/ONE-MATCH-RULE.md",
+        "sha256": "7fae46e83e1da5e139b0ab2d11ca02292603c63a50f764c89819b0792bc2f330",
+        "snapshotPath": "research/batches/RRX-INGEST-001/app-inputs/1.3/revision-2/rules/one-match-rule/ONE-MATCH-RULE.md",
+        "snapshotMatches": true,
+        "currentOriginalMatches": true
+      }
+    ],
+    "replayLimit": "A fresh clone may require the verified snapshot overlay in an isolated checkout. This does not authorize overwriting the active app or supply external raw sources."
+  },
+  "inputs": [
+    {
+      "path": "research/batches/RRX-INGEST-001/plan.json",
+      "sha256": "4f7100d3aa5df7ad98768c5c4be1d6f863bdcf4d0e115417c84e9f0577a02d71"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/readiness.json",
+      "sha256": "d2f6eb651d9e70c0b67a302ba6d36b036c88c63278251da21f97709234edace6"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/calibration/assignments.json",
+      "sha256": "fe60bfc9908daab15d9eb7708a9405b2a4dcc482c948f31e594837f07276d49b"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/calibration/candidates/CAL-07/CAL-07-S01.candidate.json",
+      "sha256": "aed9959303463b67519c1de979479e002d86b72ccfa1e803c41ee504bec6c4e3"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/calibration/candidates/CAL-07/source-inspection-notes.json",
+      "sha256": "2e4f04425eb8f85258da7dd9e0ebf7a4554a59b7b5ad7fa684740069fb7a2554"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/calibration/candidates/CAL-07/authoring-receipt.json",
+      "sha256": "3566376ef2c6e9674bf36f28d442628289c00fd37baf1e5489f51ad6b0ea640b"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/calibration/candidates/CAL-07/source-authorship.json",
+      "sha256": "5a1efeaadb541004ed2589af55d6eb2bc5d7a8648d7ec3de61f7cf48fd761196"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/calibration/candidates/CAL-07/validation.json",
+      "sha256": "9008c0bea7691e0a28aefa39099f8e5b759f20a8bfb88aa9136fa09eaea21066"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/calibration/audits/held-packets.json",
+      "sha256": "48d420e9ef21f1ce4e9d4ee58550e40174ec68c3ffd65348d0b4f42642f09039"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/calibration/audits/CAL-07-source-observations.json",
+      "sha256": "f5386509396e4db46ed2964618de114322d6f274890fea314a97a8c9414848e0"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/calibration/audit-selection.json",
+      "sha256": "3b11139791cb188b38794bcb32792a6d693eb13ef52e6d30f614a8dc397625d4"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/calibration/diagnostic-audit-obligations.json",
+      "sha256": "9eb7514668ec9680abbb4a1cc73e3033d5fd60080fb7b033eb9bd16476b4fa16"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/app-inputs/1.3/revision-2/source-map.json",
+      "sha256": "5ecba6b6f4f6c48eed8edb71aa7d30441b0093b5960c9b196fa0b9148a262684"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/fanout/CAL-07/independent-audit.json",
+      "sha256": "5f5f1ab05ee86b8a150f08c34258ad20f4ad303e519e1098f71c6d4f690f1ba9"
+    }
+  ],
+  "noIndependentStudyTotalInferred": true,
+  "conditionCompletenessClaimed": false,
+  "statusCompilationPerformedSourceExtraction": false,
+  "statusCompilationPerformedCanonicalMutation": false
+}

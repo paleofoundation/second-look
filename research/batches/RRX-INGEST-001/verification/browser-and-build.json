@@ -1,0 +1,54 @@
+{
+  "scope": "Local research integration regression checks; no deployment or scientific acceptance",
+  "build": {
+    "command": "npm run build",
+    "exitCode": 0,
+    "result": "PASS",
+    "limits": ["Existing client chunk larger than 500 kB warning", "Shared checkout includes concurrent mechanism, visual and language work"]
+  },
+  "readerBoundary": {
+    "command": "node scripts/verify-reader-boundary.mjs",
+    "status": "PASS",
+    "projections": 8,
+    "fields": 16018,
+    "builtPayloads": 30,
+    "mechanismContexts": 2
+  },
+  "privateSourceBoundary": {
+    "command": "node scripts/check-private-research-boundary.mjs",
+    "status": "PASS",
+    "privatePathCases": 14,
+    "publicPathCases": 4,
+    "malformedCase": 1
+  },
+  "builtClientScan": {
+    "status": "PASS",
+    "files": 56,
+    "sentinels": ["CAL-07-S01", "remaprx-candidate-v1", "RRX-INGEST-001-RECOVERY", "RRX-SCIENTIFIC-CANDIDATE-1.0"],
+    "matches": [],
+    "limit": "Sentinel scan supplements projection and endpoint checks; it is not an exhaustive proof about every possible private string."
+  },
+  "productionServer": {
+    "origin": "http://127.0.0.1:8751",
+    "privatePath": "/research/corpus/RRX-INGEST-001/draft-science/results.jsonl",
+    "privatePathStatus": 404,
+    "reviewPath": "/api/reviews/P-COVIDOUT-2023",
+    "reviewHttpStatus": 200,
+    "reviewResponseKind": "preview",
+    "policy": "free_authenticated",
+    "reason": "review_pending",
+    "privateReviewBodyReturned": false
+  },
+  "renderedJourney": {
+    "performedInThisSession": true,
+    "pages": ["/drugs/metformin", "/conditions/long-covid", "/answers/metformin-prevention", "/research/P-COVIDOUT-2023"],
+    "sourceHref": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11259948/",
+    "originalSourceDownloadedOrAcquired": false,
+    "evidencePanelSources": ["P-COVIDOUT-2023", "P-ACTIV6-2026"],
+    "checks": ["Drug to condition and scoped answer navigation", "Canonical review route and original-source link", "Exact selected outcome sources in Evidence panel", "Pending review has public summary without private Q01-Q15 body", "Keyboard expansion of study disclosure", "Evidence panel readable and dismissible at 390 by 844"],
+    "reference": "PepsAnon reference browser tab remained open for comparison",
+    "limitations": ["Nonfatal vinext RSC prefetch TypeError appeared during navigation; normal navigation continued", "Browser journey preceded the final shared-checkout build; no reader UI changes were made by this ingestion task", "Review release and authenticated released-body behavior were not newly exercised because no review was approved"]
+  },
+  "humanApproval": false,
+  "scientificRelease": false
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": "remaprx-packet-diagnostic-v1",
+  "packetId": "CAL-04",
+  "canonicalReportId": "P-ACTIV6-ACUTE-2025",
+  "planId": "RRX-INGEST-001-1.2",
+  "planSha256": "590613abf20c2dc5930a6a47c01f60b5a4c7fcc5ee8bc48693c013ff045971f0",
+  "author": "codex/root",
+  "checkedAt": "2026-10-12T11:46:01.509449+00:00",
+  "status": "HOLD_PRESERVED",
+  "sourceAssignments": [
+    {
+      "assignment_id": "CAL-04-S01",
+      "batch_id": "RRX-INGEST-001",
+      "bytes": 478783,
+      "canonical_report_id": "P-ACTIV6-ACUTE-2025",
+      "equivalentFileIds": [
+        "SHA256:e4c9f3140046204bd0d487f0cf44733a309e919d8d6ba714b4145aa87767ce5e"
+      ],
+      "holdReasons": [
+        "identity_conflict"
+      ],
+      "integrity_hold": true,
+      "logicalSource": {
+        "fileId": "SHA256:e4c9f3140046204bd0d487f0cf44733a309e919d8d6ba714b4145aa87767ce5e",
+        "path": "ingest/SL-F01-F02-20261011/receipt/input/return/F01/PRIMARY/A-F01-R029__original_report__metformin-and-time-to-sustained-recovery-in-adults.pdf",
+        "rootId": "WORK"
+      },
+      "media_type": "application/pdf",
+      "ownerSlot": "extractor-b",
+      "path": "/Users/kmfp/Documents/ChatGPT/One Match Rule/work/ingest/SL-F01-F02-20261011/receipt/input/return/F01/PRIMARY/A-F01-R029__original_report__metformin-and-time-to-sustained-recovery-in-adults.pdf",
+      "permittedActionAfterGP": "diagnostic_only_no_scientific_extraction",
+      "role": "original_report",
+      "sha256": "e4c9f3140046204bd0d487f0cf44733a309e919d8d6ba714b4145aa87767ce5e",
+      "sourceIdsAtSameBytes": [
+        "A-F01-R029-F01"
+      ],
+      "source_id": "A-F01-R029-F01"
+    }
+  ],
+  "gaps": [],
+  "newResults": [],
+  "newClaims": [],
+  "fullReviewComplete": false,
+  "humanReviewStatus": "pending",
+  "publicationState": "draft",
+  "canonicalMutation": false,
+  "independentAudit": "pending",
+  "inspection": {
+    "scope": "bibliographic_identity_only",
+    "physicalPdfPagesRead": [
+      1
+    ],
+    "totalPdfPages": 34,
+    "sourceSha256": "e4c9f3140046204bd0d487f0cf44733a309e919d8d6ba714b4145aa87767ce5e",
+    "observedDoi": "10.1101/2025.01.13.25320485",
+    "observedVersion": "medRxiv preprint posted January 14, 2025",
+    "locator": "PDF physical page 1 footer DOI and preprint/version statements",
+    "clinicalResultsInspected": false
+  },
+  "finding": "The same acquired asset is a preprint. It cannot establish the separately recorded journal report/version. Preserve both report identities and the held historical findings.",
+  "nextAction": "Acquire the exact journal article DOI 10.1001/jamainternmed.2025.2570 and version/companion evidence under a separate prospective gap packet. Reconcile family/version links individually before lifting holds."
+}

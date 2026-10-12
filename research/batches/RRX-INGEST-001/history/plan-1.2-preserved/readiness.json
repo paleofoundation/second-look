@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "remaprx-gp-readiness-v1",
+  "status": "PASS",
+  "scope": "GP_PLAN",
+  "planId": "RRX-INGEST-001-1.2",
+  "planSha256": "590613abf20c2dc5930a6a47c01f60b5a4c7fcc5ee8bc48693c013ff045971f0",
+  "checkedAt": "2026-10-12T11:42:26.838186+00:00",
+  "integrator": "codex/root",
+  "planningReview": {
+    "path": "research/batches/RRX-INGEST-001/gp-review.json",
+    "sha256": "564eff0c33660ef008b1f4bfea6cb68317d375a74b5980d50a9bf4c144e91469"
+  },
+  "approvedScope": [
+    "Byte-preserving recovery of the 47 explicitly allowlisted private metadata files.",
+    "Draft source-candidate extraction and diagnostic hold verification using pinned calibration assignments/source bytes/schemas; only tranche 1 may activate initially."
+  ],
+  "excludedScope": [
+    "New acquisition or Grok dispatch.",
+    "Canonical app/reader changes or public apply.",
+    "Release, human review or scientific acceptance.",
+    "Extraction under unresolved identity/quarantine/unsupported-format holds.",
+    "Tranches 2 and 3 before independent acceptance of their prior tranche; scientific extraction from held assignments."
+  ],
+  "technicalOnly": true,
+  "scientificApproval": false
+}

@@ -1,0 +1,567 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:remaprx:gap-review-inputs-v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "paperId",
+    "questionId",
+    "questionSetVersion",
+    "field",
+    "value_or_null",
+    "status",
+    "reason",
+    "sourceId",
+    "sourceHash",
+    "nativeLocator",
+    "extractionBasis",
+    "verificationState",
+    "nextAction"
+  ],
+  "properties": {
+    "paperId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "questionId": {
+      "enum": [
+        "Q01",
+        "Q02",
+        "Q03",
+        "Q04",
+        "Q05",
+        "Q06",
+        "Q07",
+        "Q08",
+        "Q09",
+        "Q10",
+        "Q11",
+        "Q12",
+        "Q13",
+        "Q14",
+        "Q15"
+      ]
+    },
+    "questionSetVersion": {
+      "const": "one-match-1.14-Q01-Q15"
+    },
+    "field": {
+      "type": "string",
+      "minLength": 1
+    },
+    "value_or_null": {},
+    "status": {
+      "enum": [
+        "answered",
+        "partial",
+        "not_reported",
+        "not_extracted",
+        "not_accessible",
+        "not_applicable",
+        "not_checked",
+        "not_identifiable"
+      ]
+    },
+    "reason": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "sourceId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sourceHash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "nativeLocator": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "kind": {
+          "enum": [
+            "pdf",
+            "html",
+            "xml",
+            "text"
+          ]
+        },
+        "location": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "quotedText": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        }
+      },
+      "required": [
+        "kind",
+        "location",
+        "quotedText"
+      ],
+      "additionalProperties": false
+    },
+    "extractionBasis": {
+      "type": "string",
+      "minLength": 1
+    },
+    "verificationState": {
+      "const": "pending"
+    },
+    "nextAction": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "questionId": {
+            "const": "Q01"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "field": {
+            "enum": [
+              "objective",
+              "prespecification",
+              "claim_outcome"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "questionId": {
+            "const": "Q02"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "field": {
+            "enum": [
+              "population_species",
+              "eligibility_setting",
+              "recruited_treated_analyzed_counts"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "questionId": {
+            "const": "Q03"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "field": {
+            "enum": [
+              "identity_formulation",
+              "route_exposure_schedule",
+              "cointerventions",
+              "followup"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "questionId": {
+            "const": "Q04"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "field": {
+            "enum": [
+              "comparator",
+              "allocation",
+              "randomization",
+              "blinding",
+              "timing"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "questionId": {
+            "const": "Q05"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "field": {
+            "enum": [
+              "outcome_hierarchy",
+              "instrument",
+              "timepoint",
+              "endpoint_class",
+              "meaningful_change_threshold"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "questionId": {
+            "const": "Q06"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "field": {
+            "enum": [
+              "arm_results",
+              "numerators_denominators",
+              "estimate_units",
+              "contrast",
+              "uncertainty"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "questionId": {
+            "const": "Q07"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "field": {
+            "enum": [
+              "attrition",
+              "missingness",
+              "adherence",
+              "exclusions",
+              "analysis_population",
+              "experimental_unit"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "questionId": {
+            "const": "Q08"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "field": {
+            "enum": [
+              "harms_ascertainment",
+              "exposure_denominator",
+              "events_severity",
+              "withdrawals",
+              "observation_time"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "questionId": {
+            "const": "Q09"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "field": {
+            "enum": [
+              "bias_domains",
+              "confounding",
+              "selective_reporting",
+              "multiplicity",
+              "precision",
+              "inconsistencies"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "questionId": {
+            "const": "Q10"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "field": {
+            "enum": [
+              "population_indication_match",
+              "formulation_route_exposure_match",
+              "endpoint_match",
+              "limits"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "questionId": {
+            "const": "Q11"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "field": {
+            "enum": [
+              "study_family",
+              "related_reports",
+              "overlap",
+              "replication_search_scope"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "questionId": {
+            "const": "Q12"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "field": {
+            "enum": [
+              "authors",
+              "setting",
+              "funding",
+              "supplied_products",
+              "conflicts"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "questionId": {
+            "const": "Q13"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "field": {
+            "enum": [
+              "source_version",
+              "access",
+              "supplements",
+              "registration",
+              "corrections_retractions",
+              "check_date"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "questionId": {
+            "const": "Q14"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "field": {
+            "enum": [
+              "claim_links",
+              "support_relation",
+              "observed_vs_author_vs_editorial"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "questionId": {
+            "const": "Q15"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "field": {
+            "enum": [
+              "bounded_takeaway",
+              "unknowns",
+              "evidence_needed_to_change_conclusion"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "answered"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "value_or_null": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "\\S"
+              },
+              {
+                "type": "number"
+              },
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "array",
+                "minItems": 1
+              },
+              {
+                "type": "object",
+                "minProperties": 1
+              }
+            ]
+          },
+          "nativeLocator": {
+            "type": "object"
+          },
+          "reason": {
+            "type": "null"
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "reason": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "nextAction": {
+            "type": "string",
+            "pattern": "\\S"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "not": {
+              "enum": [
+                "answered",
+                "partial"
+              ]
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "value_or_null": {
+            "type": "null"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "partial"
+          },
+          "value_or_null": {
+            "not": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "value_or_null": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "\\S"
+              },
+              {
+                "type": "number"
+              },
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "array",
+                "minItems": 1
+              },
+              {
+                "type": "object",
+                "minProperties": 1
+              }
+            ]
+          },
+          "nativeLocator": {
+            "type": "object"
+          }
+        }
+      }
+    }
+  ],
+  "description": "One required Q01-Q15 field per canonical report, with exactly one delivered source version as provenance. Missing input is explicit, and receipt validity never means scientific verification or review completion."
+}

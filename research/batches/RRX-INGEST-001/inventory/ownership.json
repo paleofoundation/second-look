@@ -1,0 +1,211 @@
+{
+  "acquisitionTagsNeverAuthorizeFindingFanout": true,
+  "historicalPartitions": [
+    {
+      "id": "F00",
+      "requestIds": [
+        "ITRACONAZOLE-CANCER",
+        "DRUG-D07"
+      ],
+      "status": "ownership_reference_not_dispatch_authority"
+    },
+    {
+      "id": "F01",
+      "requestIds": [
+        "RECOVERY"
+      ],
+      "status": "ownership_reference_not_dispatch_authority"
+    },
+    {
+      "id": "F02",
+      "requestIds": [
+        "DR002",
+        "DR004",
+        "DR028",
+        "DR029",
+        "DR013",
+        "DR001",
+        "DR003",
+        "DR024",
+        "DR012",
+        "DR016",
+        "DR020",
+        "DR023",
+        "DR030",
+        "DR032",
+        "DR011",
+        "DR017",
+        "DR015",
+        "DR005",
+        "DR006",
+        "DR007",
+        "DR008",
+        "DR009",
+        "DR010",
+        "DR014",
+        "DR019",
+        "DR022",
+        "DR025",
+        "DR026",
+        "DR027",
+        "DR031",
+        "DR033",
+        "DR034",
+        "DR035",
+        "DR018",
+        "DR021",
+        "DR036"
+      ],
+      "status": "ownership_reference_not_dispatch_authority"
+    },
+    {
+      "id": "F03",
+      "requestIds": [
+        "DRUG-D01",
+        "DRUG-D02",
+        "DRUG-D03",
+        "DRUG-D04",
+        "DRUG-D05",
+        "COND-C01",
+        "COND-C02",
+        "COND-C03",
+        "COND-C04",
+        "COND-C05"
+      ],
+      "status": "ownership_reference_not_dispatch_authority"
+    },
+    {
+      "id": "F04",
+      "requestIds": [
+        "DRUG-D06",
+        "DRUG-D08",
+        "DRUG-D09",
+        "DRUG-D10",
+        "COND-C06",
+        "COND-C07",
+        "COND-C08",
+        "COND-C09",
+        "COND-C10"
+      ],
+      "status": "ownership_reference_not_dispatch_authority"
+    },
+    {
+      "id": "F05",
+      "requestIds": [
+        "DRUG-D11",
+        "DRUG-D12",
+        "DRUG-D13",
+        "DRUG-D14",
+        "DRUG-D15",
+        "COND-C11",
+        "COND-C12",
+        "COND-C13",
+        "COND-C14",
+        "COND-C15"
+      ],
+      "status": "ownership_reference_not_dispatch_authority"
+    },
+    {
+      "id": "F06",
+      "requestIds": [
+        "DRUG-D16",
+        "DRUG-D17",
+        "DRUG-D18",
+        "DRUG-D19",
+        "DRUG-D20",
+        "COND-C16",
+        "COND-C17",
+        "COND-C18",
+        "COND-C19",
+        "COND-C20"
+      ],
+      "status": "ownership_reference_not_dispatch_authority"
+    },
+    {
+      "id": "F07",
+      "requestIds": [
+        "DRUG-D21",
+        "DRUG-D22",
+        "DRUG-D23",
+        "DRUG-D24",
+        "DRUG-D25",
+        "COND-C21",
+        "COND-C22",
+        "COND-C23",
+        "COND-C24",
+        "COND-C25"
+      ],
+      "status": "ownership_reference_not_dispatch_authority"
+    },
+    {
+      "id": "F08",
+      "requestIds": [
+        "DRUG-D26",
+        "DRUG-D27",
+        "DRUG-D28",
+        "DRUG-D29",
+        "DRUG-D30",
+        "COND-C26",
+        "COND-C27",
+        "COND-C28",
+        "COND-C29",
+        "COND-C30"
+      ],
+      "status": "ownership_reference_not_dispatch_authority"
+    }
+  ],
+  "integrator": "RRX-INGEST-001 integrator",
+  "schemaVersion": "remaprx-research-inventory-v1",
+  "sourceOwnership": "One extraction owner per canonical source version; requests share accepted findings by explicit scope bindings.",
+  "waves": [
+    {
+      "id": "R0",
+      "scope": "all existing records",
+      "work": "Reconcile metadata, byte access, identities and preserved draft checkpoints"
+    },
+    {
+      "conditionIds": [
+        "C01",
+        "C02"
+      ],
+      "drugIds": [
+        "D01",
+        "D02",
+        "D03"
+      ],
+      "id": "R1",
+      "questionIds": [
+        "DR001",
+        "DR002",
+        "DR003",
+        "DR004",
+        "DR005",
+        "DR013",
+        "DR014",
+        "DR015",
+        "DR016",
+        "DR017",
+        "DR018"
+      ],
+      "work": "Source integrity and compatibility repair"
+    },
+    {
+      "drugIds": [
+        "D01",
+        "D06",
+        "D07",
+        "D08",
+        "D10",
+        "D26",
+        "D31",
+        "D34"
+      ],
+      "id": "R2",
+      "work": "Current cited reviews and existing-target mechanism completion"
+    },
+    {
+      "id": "R3",
+      "work": "Delta breadth after repair; existing holdings first, separate Grok gap packets"
+    }
+  ]
+}

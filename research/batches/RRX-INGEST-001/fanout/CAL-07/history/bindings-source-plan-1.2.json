@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "remaprx-scientific-bindings-v1",
+  "author": "codex/root",
+  "sourceId": "MECH-D07-HEDGEHOG-2010",
+  "canonicalReportId": "MECH-D07-HEDGEHOG-2010",
+  "appSourceId": "MECH-D07-HEDGEHOG-2010",
+  "candidateSha256": "d4de221136ff49e978162058ea02dbdc0a60740fdc444a728728f287adf3ddc8",
+  "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+  "familyIds": [],
+  "familyIdentityStatus": "unknown",
+  "identityRationale": "The printed DOI, title, PMCID and PMID match the existing mechanism source. No study-family identity is invented from this paper or from acquisition tags.",
+  "bindings": [
+    {
+      "id": "BIND-CAL07-SMO",
+      "kind": "mechanism",
+      "scope": {
+        "drugId": "D07",
+        "conditionId": null,
+        "population": "NIH-3T3 cell immunofluorescence model",
+        "comparison": "ShhN-stimulated cells with itraconazole versus ShhN stimulation without itraconazole",
+        "endpoint": "Shh-induced Smoothened accumulation in primary cilia",
+        "timepoint": "After 6 hours of immunofluorescence treatment",
+        "formulation": null,
+        "route": "Cell-culture exposure"
+      },
+      "resultIds": [
+        "RRX-CAL07-R01"
+      ],
+      "claimIds": [
+        "RRX-CAL07-CL01"
+      ],
+      "scopedClaims": [],
+      "rationale": "Directly relevant to the itraconazole repurposing mechanism: the experiment measured Smoothened localization in stimulated cells. It does not address the original antifungal use or cancer benefit in humans.",
+      "summary": "In the tested NIH-3T3 cells, itraconazole reduced Hedgehog-stimulated Smoothened accumulation in primary cilia.",
+      "magnitude": "Qualitative source-reported contrast; no quantitative effect size imported.",
+      "limits": "This is a cell-localization observation. Direct binding of itraconazole to Smoothened was not demonstrated, and an indirect mechanism remained possible. Figure-pixel and quantitative verification are unfinished.",
+      "mechanismState": "tested",
+      "questionRoutes": [],
+      "pageHistory": [
+        {
+          "guideId": "G-DRUG-D07",
+          "title": "Smoothened localization evidence traced to its experiment",
+          "summary": "Proposes a source-located cell-model explanation for the itraconazole mechanism section, distinguishing observed localization from unproved direct binding."
+        }
+      ]
+    },
+    {
+      "id": "BIND-CAL07-BCC",
+      "kind": "mechanism",
+      "scope": {
+        "drugId": "D07",
+        "conditionId": "C19",
+        "population": "K14-CreER; Ptch+/−; p53 fl/fl mouse model",
+        "comparison": "Itraconazole versus cyclodextrin vehicle",
+        "endpoint": "Growth of endogenous basal-cell carcinoma tumors",
+        "timepoint": "18 days of itraconazole treatment; discontinued on day 19, with remaining treated mice followed through day 22 and vehicle controls treated for an average of 22 days",
+        "formulation": "Itraconazole oral solution",
+        "route": "Oral gavage in mice"
+      },
+      "resultIds": [
+        "RRX-CAL07-R03"
+      ],
+      "claimIds": [
+        "RRX-CAL07-CL04"
+      ],
+      "scopedClaims": [],
+      "rationale": "The source explicitly studied endogenous basal-cell carcinoma tumors in genetically engineered mice. That supports a bounded rationale on the itraconazole and basal-cell-carcinoma pages; request tags are not used as evidence.",
+      "summary": "In the tested genetically engineered mouse model, the authors reported suppressed basal-cell carcinoma tumor growth with itraconazole compared with cyclodextrin vehicle.",
+      "magnitude": "Qualitative source-reported tumor-growth contrast; numerical effects remain unextracted.",
+      "limits": "Tumors are clustered within mice, so tumors cannot be counted as independent subjects or studies. This preclinical observation does not establish benefit in patients, and it does not prove that the proposed molecular pathway mediated the tumor result. Figure-pixel and quantitative verification remain pending.",
+      "mechanismState": "tested",
+      "questionRoutes": [],
+      "pageHistory": [
+        {
+          "guideId": "G-DRUG-D07",
+          "title": "Basal-cell carcinoma rationale scoped to the mouse experiment",
+          "summary": "Proposes an itraconazole mechanism note that preserves the mouse tumor-growth finding and explicitly limits translation to patients."
+        },
+        {
+          "guideId": "G-CONDITION-C19",
+          "title": "Preclinical itraconazole rationale linked to its source",
+          "summary": "Proposes the same source-bound mouse basal-cell carcinoma record for this condition page, without adding a human efficacy outcome or increasing the study count."
+        }
+      ]
+    }
+  ]
+}
