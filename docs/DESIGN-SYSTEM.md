@@ -40,7 +40,7 @@ Consulted the Microbiome Medicine ArticleView, image/hero styles and design-syst
 
 ## Verification and release
 
-The color migration was rendered and checked before generating the two topic illustrations. Source-level CSS parsing and key contrast checks passed. Final type/build, governance, source-boundary, image HTTP/metadata and responsive browser checks are recorded in `DESIGN-VALIDATION.md`. Publication is recorded separately from scientific approval. Future illustration expansion and the PepsAnon rollout remain outside this first two-page pass.
+The color migration was rendered and checked before generating the two topic illustrations. Source-level CSS parsing and key contrast checks passed. Final type/build, governance, source-boundary, image HTTP/metadata and responsive browser checks are recorded in `DESIGN-VALIDATION.md`. Publication is recorded separately from scientific approval. This preserves the initial two-page pass; subsequent authorized expansion is recorded separately.
 
 ## Internal link presentation
 
@@ -61,3 +61,11 @@ The hero card is labeled Page Snapshot. Drug pages show studies referenced and c
 Count distinct opposite-type entities supported by an explicit synthesis pairing with a cited primary source, or an existing canonical candidate relationship supported by primary-cited investigation prose/mechanisms or a primary study shared by both profiles. Bare candidates, related-reading links, uncited sources, safety-only mentions and original-use labels do not add investigations. Keep broad canonical entity boundaries; do not invent new medical mappings from similar wording. The information control explains the count and lists included linked entities. Zero is a page-coverage count, not a claim that no research exists. Other article types show the study count without an invented drug/condition metric.
 
 Implementation: `lib/page-snapshot.ts`, `components/page-snapshot.tsx`, shared article/author rendering and CSS. Reference: Microbiome Medicine `OrcidIcon.tsx`, `ArticleView.tsx` and `PageSnapshot.tsx`; PepsAnon reference remains separate. The existing brand palette, scientific values and release gates are preserved.
+
+## Remaining topic illustration rollout — October 12, 2026
+
+The owner requested matching hero images for all remaining drug and condition pages, using the accepted blue style and metadata. This expands the first two-page pass to the entire current canonical route inventory, including discovery entries for Tadalafil and Aging & longevity. The merged registry contains 32 drug and 32 condition pages; 62 new originals join the two approved masters. The implementation uses a distinct asset for each topic, with generic medication forms for drugs and neutral anatomy or topic imagery for conditions. These are editorial illustrations, not photographs of commercial products, diagnostic images or treatment claims. PepsAnon remains outside this rollout.
+
+`data/topic-hero-art.json` is the public descriptive catalog. `lib/hero-art.ts` derives the typed rendering, responsive files and social records from it. Internal generation records and exact prompts remain in `assets/hero-art/*-generation.json`, separate from runtime metadata. `scripts/build-hero-catalog.mjs` requires every canonical drug and condition page to have an explicit assignment and rejects duplicate or unknown routes. Its `--partial` option is for local work in progress only. Final publication requires complete coverage.
+
+Run the catalog builder, exporter and `scripts/check-hero-art.mjs` in order after creating artwork. Retain original alpha and compositions; technical resizing and PNG/WebP exports use the existing pipeline. The validator checks every rendered topic, all file dimensions, actual transparency and hashes, unique masters and descriptive metadata. Record responsive browser checks and the exact deployment in `HERO-ROLLOUT-VALIDATION.md`. Existing layout, navigation, scientific content, access and indexing gates remain in force.
