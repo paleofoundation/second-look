@@ -9,6 +9,9 @@ export type DrugMechanism = {
   summary?: MechanismProse;
   originalAction?: MechanismProse;
   questions?: (MechanismProse & {id: string; title: string})[];
+  presentation?: 'pathway-table-pilot';
+  pathways?: (MechanismProse & {id: string; title: string})[];
+  rationales?: {id: string; condition: string; conditionHref: string; rationale: MechanismProse; tested: MechanismProse; limits: MechanismProse}[];
 };
 type MechanismContextRecord = {
   id: string; drugId: string; conditionIds: string[]; title: string;
@@ -37,7 +40,7 @@ export function hasMechanismSection(guide: Guide) {
     !!drugMechanismFor(guide) || mechanismContextsFor(guide).length > 0;
 }
 
-/** Matches MechanismSection's visible prose, question answers, then contexts. */
+/** Matches rendered prose, pathways, condition rows, question answers, then contexts. */
 export function mechanismCitationIds(guide: Guide) {
   const record = drugMechanismFor(guide);
   const proseIds = (prose?: MechanismProse) =>
@@ -45,6 +48,8 @@ export function mechanismCitationIds(guide: Guide) {
   return [
     ...proseIds(record?.originalAction),
     ...proseIds(record?.summary),
+    ...(record?.pathways || []).flatMap(proseIds),
+    ...(record?.rationales || []).flatMap(row => [row.rationale, row.tested, row.limits].flatMap(proseIds)),
     ...(record?.questions || []).flatMap(proseIds),
     ...mechanismContextsFor(guide).flatMap(context => context.sourceIds),
   ];

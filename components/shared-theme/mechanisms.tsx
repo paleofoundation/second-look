@@ -37,18 +37,41 @@ function ContextProse({context, content, renderText}: {context: MechanismContext
 }
 
 /** One visible explanation; multiple bounded contexts reuse the canonical disclosure. */
-export function MechanismSection({content, originalAction, summary, questions = [], contexts = [], renderText = plainText}: {
+export function MechanismSection({content, originalAction, summary, pathways = [], rationales = [], questions = [], contexts = [], renderText = plainText}: {
   content: MechanismPresentation;
   renderText?: MechanismTextRenderer;
   originalAction?: ReactNode;
   summary?: ReactNode;
+  pathways?: {id: string; title: string; explanation: ReactNode}[];
+  rationales?: {id: string; condition: string; conditionHref: string; rationale: ReactNode; tested: ReactNode; limits: ReactNode}[];
   questions?: {id: string; title: string; answer: ReactNode}[];
   contexts?: MechanismContext[];
 }) {
-  return <section id="mechanisms" className="article-section mechanism-section">
+  return <section id="mechanisms" className={`article-section mechanism-section${rationales.length ? ' mechanism-pilot' : ''}`}>
     <h2>{content.heading}</h2>
     {originalAction}
     {summary}
+    {pathways.map(pathway => <div className="mechanism-pathway" id={pathway.id} key={pathway.id}>
+      <h3>{pathway.title}</h3>{pathway.explanation}
+    </div>)}
+    {rationales.length > 0 && <>
+      <h3 id="condition-rationales">Rationale by condition</h3>
+      <figure className="wp-block-table mechanism-rationale-table">
+        <table role="table" aria-labelledby="condition-rationales">
+          <thead role="rowgroup"><tr role="row">
+            {['Condition', 'Mechanism and rationale', 'What was tested', 'Limits'].map(label => <th role="columnheader" scope="col" key={label}>{label}</th>)}
+          </tr></thead>
+          <tbody role="rowgroup">{rationales.map(row => <tr role="row" id={row.id} key={row.id}>
+            <th role="rowheader" scope="row"><a href={row.conditionHref}>{row.condition}</a></th>
+            {(['rationale', 'tested', 'limits'] as const).map((field, index) => <td role="cell" key={field}>
+              <span className="mechanism-cell-label" aria-hidden="true">{['Mechanism and rationale', 'What was tested', 'Limits'][index]}</span>
+              {row[field]}
+            </td>)}
+          </tr>)}</tbody>
+        </table>
+      </figure>
+      <p className="small mechanism-evidence-link">For treatment outcomes, see <a href="#section-evidence">Evidence</a>.</p>
+    </>}
     {questions.length > 0 && <div className="rgbc-faq-block">
       {questions.map(question => <details className="rgbc-faq-item" id={question.id} key={question.id}>
         <summary><span className="rgbc-faq-icon" aria-hidden="true"/><span className="rgbc-faq-q">{question.title}</span></summary>

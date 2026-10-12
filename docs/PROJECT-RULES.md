@@ -46,6 +46,12 @@ The owner's 11 October correction in [reader-rule-correction.md](rule-history/re
 - Safety gives supported harms, consequential contraindications/precautions, interactions and applicable populations. Trial exclusions are not automatically contraindications.
 - Do not replace these answers with generic evidence warnings, internal process commentary or explanations that the website has not finished writing/reviewing them. Keep meaningful source-specific scientific uncertainty, correction notices and honest availability. Missing work remains in private ledgers and still blocks completeness claims.
 
+### Mechanism presentation completion requirement
+
+Owner clarification, 11 October 2026: establish a canonical generator style for Mechanism of Action and assess whether its existing eleven disclosures belong in that section. The owner identified the visible introduction as two sentences rather than a developed paragraph. The count of eleven describes existing content, not a required number of questions. A table was suggested as a possibility; table conversion is not yet an adopted layout decision. Pending design resolution, preserve the existing source-bound mechanism requirements and distinguish biological explanations and condition-specific rationale from clinical effectiveness results, which belong primarily in Benefits/Evidence. This requirement is recorded; generator and rendered-layout changes remain pending.
+
+The owner's 12 October follow-up authorizes a one-page itraconazole pilot of connected opening prose, visible shared pathway explanations and a condition-rationale table with labeled cards in narrow article columns. Keep all source citations, condition relationships and legacy mechanism fragments. This is a scoped experiment, not adoption of a site-wide canonical style; broader generator/rule changes depend on the owner's assessment. See [MECHANISM-PILOT.md](MECHANISM-PILOT.md) for the data contract, source mapping and verification.
+
 ## Review, access and release
 
 Use [editorial/EVIDENCE-GRADING.md](../editorial/EVIDENCE-GRADING.md) for the adopted selected-source outcome assessments. This is separate from formal GRADE, Q01–Q15 study-review completion, human review and release approval. Every cited scholarly paper retains its dedicated review obligation and source traceability.

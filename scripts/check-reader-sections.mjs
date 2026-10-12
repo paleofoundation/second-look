@@ -205,9 +205,9 @@ if (process.argv.includes('--all-profiles')) {
   assert(opening.questions?.length,label+': specific benefit/option questions');
   assert(profile.faqs.length,label+': additional reader FAQs');
   const mechanism=drugMechanismFor(profile);
-  assert(mechanism?.summary?.text?.length>40,label+': explanatory mechanism summary');
+  assert((mechanism?.summary?.text || mechanism?.originalAction?.text)?.length>40,label+': explanatory mechanism prose');
   if(profile.type==='Drug')assert(mechanism.originalAction?.text?.length>30,label+': original pharmacological action');
-  assert(mechanism.questions?.length,label+': mechanism questions');
+  assert(mechanism.questions?.length || (mechanism.pathways?.length && mechanism.rationales?.length),label+': mechanism explanations');
   const pageSources=content.sources.filter(s=>profile.sourceIds.includes(s.id));
   assert.equal(pageSources.length,profile.sourceIds.length,label+': all sources resolve');
   const page=render(profile,pageSources);
@@ -234,11 +234,28 @@ if (process.argv.includes('--all-profiles')) {
    if(section.sentences)assert.equal(section.sentences.map(s=>s.text.trim()).join(' '),section.paragraph.trim(),label+': section sentence map');
    for(const q of section.questions||[]){if(!isRetiredArticleSection(section)){assert(center.includes('class="rgbc-faq-item" id="'+q.id+'"'),label+': canonical question '+q.id);totalQuestions++;}assert(q.answer.length>30&&q.sources.length,label+': sourced question answer');assert(q.sources.every(id=>profile.sourceIds.includes(id)),label+': question source closure');}
   }
-  for(const p of [mechanism.originalAction,mechanism.summary,...mechanism.questions].filter(Boolean))assert(p.sourceIds.length&&p.sourceIds.every(id=>profile.sourceIds.includes(id)),label+': mechanism source closure');
-  totalQuestions+=mechanism.questions.length+profile.faqs.length;
+  for(const p of [mechanism.originalAction,mechanism.summary,...(mechanism.questions||[]),...(mechanism.pathways||[]),...(mechanism.rationales||[]).flatMap(row=>[row.rationale,row.tested,row.limits])].filter(Boolean))assert(p.sourceIds.length&&p.sourceIds.every(id=>profile.sourceIds.includes(id)),label+': mechanism source closure');
+  totalQuestions+=(mechanism.questions||[]).length+profile.faqs.length;
  }
  console.log(JSON.stringify({status:'PASS',profiles:profiles.length,questions:totalQuestions,checks:'Every canonical content section populated; actual SSR; no production placeholders; unique IDs; all fragments; canonical questions; source closure; citation order'}));
 }
+
+// The one-page pilot preserves source closure and legacy deep links without disclosures.
+const pilot = content.guides.find(g=>g.slug==='/drugs/itraconazole');
+const pilotRecord = drugMechanismFor(pilot);
+const pilotHtml = render(pilot, content.sources.filter(s=>pilot.sourceIds.includes(s.id)));
+const pilotSection = pilotHtml.match(/<section id="mechanisms"[\s\S]*?<\/section>/)[0];
+assert(!pilotSection.includes('<details'), 'Pilot mechanisms are visible without opening disclosures');
+assert.equal((pilotSection.match(/role="rowheader"/g)||[]).length,9,'Nine condition rows');
+assert.equal((pilotSection.match(/class="mechanism-pathway"/g)||[]).length,2,'Two shared pathway explanations');
+assert(pilotSection.indexOf('hedgehog-cellular')<pilotSection.indexOf('condition-rationales'),'Shared pathways precede condition table');
+for(const id of ['ovarian','prostate','lung','colorectal','pancreatic','melanoma','bcc','aml','myeloma','hedgehog-cellular','cholesterol-transport']) assert(pilotSection.includes('id="'+id+'"'),'Legacy mechanism fragment survives: '+id);
+for(const prose of [pilotRecord.originalAction,...pilotRecord.pathways,...pilotRecord.rationales.flatMap(row=>[row.rationale,row.tested,row.limits])]) {
+ assert.equal(prose.sentences.map(sentence=>sentence.text).join(' '),prose.text,'Pilot sentence mapping');
+ assert.deepEqual(new Set(prose.sentences.flatMap(sentence=>sentence.sources)),new Set(prose.sourceIds),'Pilot citation mapping');
+}
+assert.equal(publicMechanisms.drugs.filter(record=>record.presentation==='pathway-table-pilot').length,1,'Pilot limited to one record');
+console.log('PASS: itraconazole pilot structure, nine condition rows, eleven legacy fragments and mapped claims.');
 
 // Reuse the real-module loader and SSR host in the Evidence composition checks.
 // No test-only renderer or scientific data projection should stand in for Article.

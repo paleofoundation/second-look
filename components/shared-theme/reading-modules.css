@@ -130,3 +130,27 @@
 
 .omr-theme .mechanism-section > div > p { font-size:18px;line-height:1.85; }
 @media(max-width:575px){.omr-theme .mechanism-section > div > p { font-size:17px;line-height:1.8; }}
+
+/* Itraconazole pilot: shared explanations, then a responsive rationale table. */
+.omr-theme .mechanism-pilot { container-type: inline-size; container-name: mechanism; }
+.omr-theme .mechanism-pathway { margin: 28px 0; }
+.omr-theme .mechanism-rationale-table { margin: 24px 0; overflow: visible; }
+.omr-theme .mechanism-rationale-table table { width: 100%; table-layout: fixed; border-collapse: collapse; font-size: 16px; }
+.omr-theme .mechanism-rationale-table thead { background: var(--color-primary); color: #fff; }
+.omr-theme .mechanism-rationale-table th,.omr-theme .mechanism-rationale-table td { text-align: left; vertical-align: top; padding: 16px 14px; border: 1px solid var(--theme-border,#dee2e6); overflow-wrap: anywhere; line-height: 1.65; }
+.omr-theme .mechanism-rationale-table thead th { border-color: var(--color-primary); }
+.omr-theme .mechanism-rationale-table th:first-child { width: 20%; }
+.omr-theme .mechanism-rationale-table th:nth-child(2) { width: 28%; }
+.omr-theme .mechanism-rationale-table td p { font-size: inherit; line-height: inherit; margin: 0; }
+.omr-theme .mechanism-rationale-table tbody th { color: var(--color-primary); background: #f8f9fa; }
+.omr-theme .mechanism-cell-label { display: none; }
+.omr-theme .mechanism-section [id] { scroll-margin-top: 100px; }
+@container mechanism (max-width:640px) {
+  .omr-theme .mechanism-rationale-table table,.omr-theme .mechanism-rationale-table tbody { display: block; }
+  .omr-theme .mechanism-rationale-table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+  .omr-theme .mechanism-rationale-table tr { display: block; margin-bottom: 20px; border: 1px solid var(--theme-border,#dee2e6); }
+  .omr-theme .mechanism-rationale-table tbody th,.omr-theme .mechanism-rationale-table td { display: block; width: auto; border: 0; padding: 12px 16px; }
+  .omr-theme .mechanism-rationale-table tbody th:first-child { width: auto; font-size: 18px; background: #f1f3f5; color: var(--color-primary); }
+  .omr-theme .mechanism-rationale-table tbody th a { color: inherit; }
+  .omr-theme .mechanism-cell-label { display: block; color: var(--color-primary); font-size: 14px; margin-bottom: 5px; }
+}
