@@ -84,7 +84,7 @@ Owner follow-up, October 12, 2026: extend this same blue illustration and metada
 
 ## Approved identity and atlas homepage
 
-Owner approval, October 12, 2026: use the mapping-round-4 logo and favicon, carry the mapping visual into the homepage hero, replace current reader-facing Second Look branding and publish the new identity/category language. The category is “The drug repurposing atlas”; the headline is “New targets for approved medications.” Full copy, production assets and bounded implementation/release status are in `REMAPRX-IDENTITY.md`. Preserve source traceability and approval-specific language, historical records, stable routes/identifiers, topic illustrations, access/indexing settings and scientific/commercial gates. Logo selection is complete. The earlier broader mechanism/preliminary-evidence plan remains separate work, not implied complete by this identity release.
+Owner approval, October 12, 2026: use the mapping-round-4 logo and favicon, carry the mapping visual into the homepage hero, replace current reader-facing Second Look branding and publish the new identity/category language. The category is “The drug repurposing atlas”; the headline is “Mapping new targets for approved medications.” Full copy, production assets and bounded implementation/release status are in `REMAPRX-IDENTITY.md`. Preserve source traceability and approval-specific language, historical records, stable routes/identifiers, topic illustrations, access/indexing settings and scientific/commercial gates. Logo selection is complete. The earlier broader mechanism/preliminary-evidence plan remains separate work, not implied complete by this identity release.
 
 ### Physician packet portal follow-up — October 12, 2026
 

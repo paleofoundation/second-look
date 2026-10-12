@@ -4,12 +4,12 @@
 
 October 12, 2026: the owner approved `assets/brand-concepts/mapping-round-4/`, requested application of that logo and favicon, and explicitly authorized publication of the identity and homepage category claim. The owner prioritizes the mapping meaning over perfect minification. Preserve the close heavy Rx, concentric open rings, crosshair marks, radial connectors and flat direction arrow. The x sits at the target center. The earlier simplified round 3 is superseded, not selected.
 
-Category: **The drug repurposing atlas**. Tagline: **RemapRx: New targets for approved medications.** Promise: make the evidence behind each connection understandable and traceable. No open-source claim or unsupported competitor comparison.
+Category: **The drug repurposing atlas**. Tagline: **RemapRx: Mapping new targets for approved medications.** Promise: make the evidence behind each connection understandable and traceable. No open-source claim or unsupported competitor comparison.
 
 Homepage copy:
 
 - Eyebrow: “The drug repurposing atlas”
-- Headline: “New targets for approved medications.”
+- Headline: “Mapping new targets for approved medications.”
 - Supporting copy: “Explore how existing medications are being studied for new uses. Follow the proposed mechanisms, examine the findings, and map each connection to its sources.”
 
 ## Implementation
@@ -54,3 +54,8 @@ Application-only integration diagnostics passed with 12 copied research handoff 
 ### Brand vocabulary correction — October 12, 2026
 
 Owner correction: use “and map each connection to its sources” in the hero. Map, mapping and remap are the preferred vocabulary for current brand copy. This supersedes the earlier “trace each connection” hero wording. The About description, Open Graph/Twitter descriptions and default social artwork use the same mapping language. Scientific source-traceability terms and historical records retain their precise meanings. This is a copy-only correction; publication and verification are recorded below after completion.
+
+
+### Mapping headline correction — October 12, 2026
+
+Owner follow-up: “why not mapping new targets for approved medications.” Adopt “Mapping new targets for approved medications.” as the homepage headline and matching brand tagline. This supersedes “New targets for approved medications.” in current copy. Apply the wording to the footer, page descriptions, social-image description and default social artwork. Preserve prior publication receipts. Implementation is a bounded copy change. Governance passed; the updated homepage headline and footer were verified in the local browser, with readable wrapping at 1280 and 390 pixels. The regenerated social image was visually inspected. Production build, public-payload validation and publication are pending.
