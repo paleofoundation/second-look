@@ -26,6 +26,7 @@
   gap: clamp(48px, 7vw, 120px); align-items: center;
 }
 .home .hero__copy { max-width: 760px; }
+.home .hero__eyebrow { margin:0 0 20px; color:var(--omr-accent); font-size:14px; letter-spacing:.05em; text-transform:uppercase; }
 /* Keep the original desktop title size with a readable mobile minimum. */
 .home h1 { font-size: clamp(2rem, 5vw, 3.75rem); line-height: 1.25; margin: 0 0 28px; }
 .home .hero__intro { color: var(--home-muted); margin: 0 0 32px; max-width: 680px; }
@@ -138,7 +139,7 @@
 .home .hero { background:var(--omr-main); color:var(--omr-pale); }
 .home .hero h1 { color:var(--omr-pale); }
 .home .hero__intro,.home .quick-searches { color:var(--omr-pale); }
-.home .quick-searches a {color:var(--omr-accent);border-color:var(--omr-accent)}
+.home .quick-searches a {color:var(--omr-accent);border-bottom:0}
 .home .image-frame {background:var(--omr-pale)}
 .home .hero__media {display:block}
 .home .search button {background:var(--omr-accent);color:var(--omr-main)}

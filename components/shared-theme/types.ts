@@ -18,7 +18,7 @@ export type ThemeConfig = {
   schemaVersion: "1.0.0";
   /** Match the destination's main landmark; defaults to main-content. */
   mainId?: string;
-  identity: { name: string; homeHref: string; logo?: ThemeImage };
+  identity: { name: string; homeHref: string; logo?: ThemeImage; footerLogo?: ThemeImage };
   palette: {
     main: string; accent: string; pale: string;
     mainDark?: string; mainTint?: string; ink?: string; muted?: string; link?: string;
@@ -37,7 +37,7 @@ export type ThemeConfig = {
 };
 export type ThemeHomeContent = {
   hero: {
-    title: string; intro: string; image: ThemeImage;
+    title: string; intro: string; eyebrow?: string; image?: ThemeImage; illustration?: ReactNode;
     caption?: { eyebrow: string; title: string };
     quickLinks?: ThemeLink[]; quickLinksLabel?: string;
     note?: { mark: string; title: string; text: string; link: ThemeLink };

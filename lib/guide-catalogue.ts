@@ -6,7 +6,7 @@ export function getGuideProduct(id:string){return guideProducts.find(product=>pr
 export function getGuideProductBySlug(slug:string){return guideProducts.find(product=>product.slug===slug)}
 
 export const guidePresentation:GuidePresentation = {
- brand:'Second Look', headline:'Better questions. A clearer view of the evidence.',
+ brand:'RemapRx', headline:'Better questions. A clearer view of the evidence.',
  intro:'Focused reading companions with source-linked findings, limitations and printable questions to discuss with a professional.',
  shelfTitle:'The first guides we’re building',
  shelfNote:'One complete draft; seven planned companions. Every product shows its current stage. An outline is not a finished guide.',
