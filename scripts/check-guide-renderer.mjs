@@ -1,0 +1,51 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import os from 'node:os';
+import path from 'node:path';
+import crypto from 'node:crypto';
+import { spawnSync } from 'node:child_process';
+import { buildGuide, prepareSource } from './guide-renderer/build.mjs';
+const root = path.resolve(import.meta.dirname, '..');
+const base = path.join(root, 'scripts/guide-renderer');
+const sourceFile = path.join(base, 'fixtures/synthetic-guide.json');
+const source = JSON.parse(fs.readFileSync(sourceFile, 'utf8'));
+const sha = value => crypto.createHash('sha256').update(value).digest('hex');
+const provenance = JSON.parse(fs.readFileSync(path.join(base, 'vendor/PROVENANCE.json'), 'utf8'));
+assert.equal(sha(fs.readFileSync(path.join(root, provenance.sourceArchive))), provenance.sourceArchiveSha256);
+for (const file of provenance.files) assert.equal(sha(fs.readFileSync(path.join(base, 'vendor', file.path))), file.sha256, 'Vendored upstream changed: ' + file.path);
+const prepared = prepareSource(source);
+assert.deepEqual(prepared.web, source.manuscript, 'The protected web edition follows the authoritative typed manuscript');
+for (const sample of [prepared.preview, prepared.summary]) {
+  assert.equal(sample.version, prepared.web.version);
+  assert.equal(sample.editionId, prepared.web.editionId);
+  assert.equal(sample.medicalNotice, prepared.web.medicalNotice);
+  assert(!JSON.stringify(sample).includes('PRIVATE-ONLY-SENTINEL'));
+  assert(!JSON.stringify(sample).includes('PRIVATE-REFERENCE-SENTINEL'));
+  assert(sample.chapters.some(chapter => chapter.blocks.some(block => block.text?.includes('completion does not demonstrate clinical review'))), 'Shared limits are retained');
+}
+const modified = edit => { const value = structuredClone(source); edit(value); return value; };
+assert.throws(() => prepareSource(modified(value => { value.previewSelections[0].blockIndexes = [300]; })), /resolve/);
+assert.throws(() => prepareSource(modified(value => { value.previewSelections[0].blockIndexes = [0, 0]; })), /Duplicate/);
+assert.throws(() => prepareSource(modified(value => { value.manuscript.chapters[0].blocks[0].sourceIds = ['missing-reference']; })), /citation/);
+assert.throws(() => prepareSource(modified(value => { value.manuscript.references[0].url = 'javascript:alert(1)'; })));
+assert.throws(() => prepareSource(modified(value => { value.manuscript.version = '../unsafe'; })), /filename/);
+assert.throws(() => prepareSource(modified(value => { value.sharedLimitSelections = [{ chapterId: 'reading-a-record', blockIndexes: [3] }]; })), /Shared limits/);
+assert.throws(() => prepareSource(modified(value => { value.previewSelections = value.manuscript.chapters.map(chapter => ({ chapterId: chapter.id, blockIndexes: chapter.blocks.map((_, index) => index) })); })), /omit/);
+assert.throws(() => prepareSource(modified(value => { value.approved = true; })), /Unrecognized/);
+assert.throws(() => buildGuide({ sourceFile, output: path.join(root, 'public/blocked-guide-fixture') }), /outside/);
+assert(!fs.existsSync(path.join(root, 'public/blocked-guide-fixture')));
+const pythonIndex = process.argv.indexOf('--python');
+const python = pythonIndex === -1 ? process.env.REMAPRX_PYTHON ?? 'python3' : process.argv[pythonIndex + 1];
+const output = fs.mkdtempSync(path.join(os.tmpdir(), 'remaprx-renderer-check-'));
+const first = buildGuide({ sourceFile, output: path.join(output, 'first'), python });
+const second = buildGuide({ sourceFile, output: path.join(output, 'second'), python });
+assert.deepEqual(first, second, 'Rendering is deterministic for the same source, fonts and renderer');
+assert.equal(first.releaseState, 'private_draft'); assert.equal(first.sampleApproval, 'pending');
+assert.equal(first.pdf.releaseState, 'private_draft');
+for (const [file, asset] of Object.entries(first.assets)) {
+  assert.equal(sha(fs.readFileSync(path.join(output, 'first', file))), asset.sha256);
+  assert.equal(fs.statSync(path.join(output, 'first', file)).mode & 0o777, 0o600);
+}
+const proof = spawnSync(python, [path.join(base, 'verify-pdfs.py'), '--out', path.join(output, 'first')], { encoding: 'utf8' });
+assert.equal(proof.status, 0, proof.stderr);
+console.log(JSON.stringify({ status: 'PASS', assertions: 'vendor integrity; schema/version/content parity; explicit sample boundary; safety retention; malformed/unsafe input; private output permissions; deterministic PDF hashes; every-block PDF content; bookmark and link destinations; page geometry', pdfs: JSON.parse(proof.stdout), output, visualReview: 'Separate every-page visual inspection is required for a changed manuscript or renderer.' }, null, 2));

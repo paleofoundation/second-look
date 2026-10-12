@@ -204,9 +204,10 @@ export function ArticleHero({ title, description, breadcrumbs, art, artVariant, 
     <aside className="research-hero__right" data-hero-region="author-snapshot" aria-label="Author and article snapshot">{hasAuthor && <div className="research-hero__author">{authorContent}</div>}{updatedLabel && <p className="omr-updated">{updatedLabel}</p>}{snapshot}</aside>
   </div></div>;
 }
-export function ArticleLayout({ hero, leftRail, rightRail, children }: ArticleLayoutProps) {
+export function ArticleLayout({ hero, leftRail, rightRail, shareRail, children }: ArticleLayoutProps) {
   const config = useThemeConfig();
-  return <main className="main omr-article" id={config.mainId || "main-content"}><ArticleHero {...hero} /><div className="research-content"><div className="research-content__wrapper">
+  return <main className="main omr-article" id={config.mainId || "main-content"}><ArticleHero {...hero} /><div className="research-content"><div className={`research-content__wrapper${shareRail ? " article-reader-grid" : ""}`}>
+    {shareRail && <aside className="article-share-rail" aria-label="Sharing and guide">{shareRail}</aside>}
     {leftRail || <div className="research-content__left omr-empty-rail" aria-hidden="true" />}
     <article className="research-content__center entry-content">{children}</article>
     <aside className="research-content__right" aria-label="Related reading">{rightRail}</aside>

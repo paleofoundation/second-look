@@ -1,0 +1,14 @@
+import { getChatGPTUser } from '@/app/chatgpt-auth';
+import { libraryDb } from '@/lib/library';
+import { readerProfiles } from '@/lib/profile-server';
+import { guideRepository } from '@/lib/guide-repository.server';
+import { getGuideProduct } from '@/lib/guide-catalogue';
+import { topicGuideMappings } from '@/lib/topic-guides';
+import { createGuideSavesRepository } from '@/lib/guide-saves';
+import { createGuideSavesHandlers } from '@/lib/guide-saves-api';
+export const dynamic = 'force-dynamic';
+const handlers = createGuideSavesHandlers({ getUser: getChatGPTUser, repository: () => createGuideSavesRepository(libraryDb()), profiles: readerProfiles, guides: guideRepository, getProduct: getGuideProduct, topics: topicGuideMappings });
+export const GET = handlers.GET;
+export const POST = handlers.POST;
+export const DELETE = handlers.DELETE;
+export const PATCH = handlers.PATCH;
