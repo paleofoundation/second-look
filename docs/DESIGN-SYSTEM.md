@@ -41,3 +41,7 @@ Consulted the Microbiome Medicine ArticleView, image/hero styles and design-syst
 ## Verification and release
 
 The color migration was rendered and checked before generating the two topic illustrations. Source-level CSS parsing and key contrast checks passed. Final type/build, governance, source-boundary, image HTTP/metadata and responsive browser checks are recorded in `DESIGN-VALIDATION.md`. Publication is recorded separately from scientific approval. Future illustration expansion and the PepsAnon rollout remain outside this first two-page pass.
+
+## Internal link presentation
+
+Owner instruction, October 12, 2026: internal page links display without underlines, including hover, active, visited and keyboard-focus states. Apply the same treatment to internal fragment/citation anchors. Retain link color, native navigation and visible keyboard focus outlines. This supersedes inherited wiki-link and internal-link hover underlines; external source-link styling remains unchanged.
