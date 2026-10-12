@@ -3,7 +3,7 @@ import type { AnchorHTMLAttributes, ComponentType, ImgHTMLAttributes, ReactNode 
 export type ThemeLink = { label: string; href: string };
 export type ThemeMegaMenu = { intro: string; columns: { title: string; links: (ThemeLink & { detail?: string })[] }[]; note: string; allLink?: ThemeLink };
 export type ThemeNavItem = ThemeLink & { children?: ThemeNavItem[]; mega?: ThemeMegaMenu };
-export type ThemeImage = { src: string; alt: string; width: number; height: number };
+export type ThemeImage = { src: string; alt: string; width: number; height: number; srcSet?: string; sizes?: string; title?: string };
 export type ThemeAuthor = {
   id: string; name: string; role: string; bio: string;
   portrait?: ThemeImage; profileHref?: string; orcid?: string;
@@ -52,7 +52,7 @@ export type ThemeHomeContent = {
 };
 export type ArticleHeroProps = {
   title: string; description?: ReactNode; breadcrumbs: ThemeLink[];
-  art?: ThemeImage; leftContext?: ReactNode; author?: ThemeAuthor;
+  art?: ThemeImage; artVariant?: "topic"; leftContext?: ReactNode; author?: ThemeAuthor;
   /** One verified author block in the right hero author/snapshot region. Overrides author and creditSlot. */
   authorSlot?: ReactNode;
   /** @deprecated Alias for authorSlot. Since 0.2.1 this renders in the right hero region, never the body sidebar. */

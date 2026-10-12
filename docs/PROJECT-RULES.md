@@ -65,3 +65,7 @@ Owner instruction adopted 11 October 2026: connect the existing public Sites pub
 ## Maintaining the rules
 
 Update this contract or the appropriate ingestion/editorial contract and append a source-linked entry to `RULE-CHANGELOG.md` in the same PR. Separate requested/adopted, implemented, verified and released status. For a reusable global correction, submit it to the existing One Match Rule integrator; the upstream source on the original host is `Pepsanon.com/one-match-rule/`. Another host must locate that upstream rather than create a second master. Record pending upstream, installed-skill and exported/uploaded-copy synchronization honestly. Never overwrite concurrent work or the frozen baseline.
+
+## RemapRx visual system and topic illustrations
+
+Owner instruction, 12 October 2026: adopt the supplied blue `#1736F5`, yellow `#FFC709`, gray `#808080` and light gray `#DEDEDE` palette across RemapRx, then create coordinated blue illustrations for Metformin and Parkinson’s disease in the left article-hero section. This supersedes preserving the earlier navy/gold brand palette for this visual scope. Preserve semantic evidence/error colors and readability. Use the versioned [design system](DESIGN-SYSTEM.md), original topic illustrations, responsive browser assets, explicit page mappings and descriptive image metadata. The illustration conventions may later be reused on PepsAnon; that separate site is not migrated in this pass. Existing scientific, commercial, access and indexing release gates remain unchanged.

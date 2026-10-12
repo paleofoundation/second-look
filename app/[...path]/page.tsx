@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import type {Metadata} from 'next';
+import {getTopicHeroArt,REMAPRX_ORIGIN} from '@/lib/hero-art';
 import sourceAliases from '@/editorial/reader-source-aliases.json';
 import {outcomeCitationOrder,guideCitationOrder} from '@/lib/citation-plan';
 import {GuideCatalogue,GuideProductDetail,GuideMembership,MedicalScopeNotice} from '@/components/shared-theme/guide-catalogue';
@@ -38,10 +40,47 @@ const policies:Record<string,{title:string;text:string}[]>={
 
 };
 function Intro({title,description}:{title:string;description?:string}){return <div className="page-intro"><div className="eyebrow">Second Look library</div><h1>{title}</h1>{description?<p className="muted">{description}</p>:null}</div>}
-export async function generateMetadata({params}:Props){const path=(await params).path.join('/');const product=path.startsWith('guides/products/')?getGuideProductBySlug(path.slice('guides/products/'.length)):undefined;const g=content.guides.find(g=>guideUrl(g)==='/'+path);const ingested=ingestedTopicForPath(path);if(!g&&ingested)return {title:ingested.title,description:ingested.notice,robots:{index:false,follow:false}};const s=content.sources.find(s=>'research/'+s.id===path);const t=content.glossary.find(t=>'glossary/'+t.slug===path);return {title:product?.title||g?.title||s?.title||t?.title||titles[path]||'Page not found',description:product?.description||g?.description||s?.preview||t?.meaning||'Explore the evidence and limitations behind drug repurposing.',alternates:{canonical:'https://second-look-evidence.kmfp.chatgpt.site/'+path},robots:{index:false,follow:false}}}
+export async function generateMetadata({params}:Props):Promise<Metadata>{
+ const path=(await params).path.join('/');
+ const canonicalPath='/'+path;
+ const product=path.startsWith('guides/products/')?getGuideProductBySlug(path.slice('guides/products/'.length)):undefined;
+ const g=content.guides.find(g=>guideUrl(g)===canonicalPath);
+ const ingested=!g?ingestedTopicForPath(path):undefined;
+ const s=content.sources.find(s=>'research/'+s.id===path);
+ const t=content.glossary.find(t=>'glossary/'+t.slug===path);
+ const title=product?.title||g?.title||ingested?.title||s?.title||t?.title||titles[path]||'Page not found';
+ const description=product?.description||g?.description||ingested?.notice||s?.preview||t?.meaning||'Explore the evidence and limitations behind drug repurposing.';
+ const art=getTopicHeroArt(canonicalPath);
+ const canonical=REMAPRX_ORIGIN+canonicalPath;
+ return {
+  title,description,alternates:{canonical},robots:{index:false,follow:false},
+  ...(art?{
+   openGraph:{
+    type:'article',siteName:'Second Look',url:canonical,title,description,
+    images:[{url:REMAPRX_ORIGIN+art.socialImage.src,width:art.socialImage.width,height:art.socialImage.height,type:art.socialImage.encodingFormat,alt:art.socialImage.alt}],
+   },
+   twitter:{card:'summary_large_image',title,description,images:[{url:REMAPRX_ORIGIN+art.socialImage.src,alt:art.socialImage.alt}]},
+  }:{}),
+ };
+}
+function TopicImageMetadata({guide}:{guide:Guide}){
+ const art=getTopicHeroArt(guideUrl(guide));
+ if(!art)return null;
+ const pageUrl=REMAPRX_ORIGIN+art.canonicalPath;
+ const imageUrl=REMAPRX_ORIGIN+art.src;
+ const imageId=pageUrl+'#primaryimage';
+ const data={
+  '@context':'https://schema.org',
+  '@graph':[
+   {'@type':'WebPage','@id':pageUrl+'#webpage',url:pageUrl,name:guide.title,description:guide.description,primaryImageOfPage:{'@id':imageId}},
+   {'@type':'ImageObject','@id':imageId,url:imageUrl,contentUrl:imageUrl,name:art.title,caption:art.caption,description:art.description,encodingFormat:art.encodingFormat,width:art.width,height:art.height},
+  ],
+ };
+ return <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(data).replace(/</g,'\\u003c')}}/>;
+}
 export default async function Page({params,searchParams}:Props){const path=(await params).path.join('/');if(path==='answers/paxlovid-treatment')redirect('/answers/nirmatrelvir-treatment');const query=await searchParams;const guide=content.guides.find(g=>guideUrl(g)==='/'+path);let body:React.ReactNode;
- if(guide){return <Article guide={guide} sources={content.sources.filter(s=>guide.sourceIds.includes(s.id))}/>}
- else if(ingestedTopicForPath(path)){const page=ingestedTopicForPath(path)!;const g=ingestionStatusGuide(page,path);return <Article guide={g} sources={content.sources.filter(s=>g.sourceIds.includes(s.id))}></Article>}
+ if(guide){return <><TopicImageMetadata guide={guide}/><Article guide={guide} sources={content.sources.filter(s=>guide.sourceIds.includes(s.id))}/></>}
+ else if(ingestedTopicForPath(path)){const page=ingestedTopicForPath(path)!;const g=ingestionStatusGuide(page,path);return <><TopicImageMetadata guide={g}/><Article guide={g} sources={content.sources.filter(s=>g.sourceIds.includes(s.id))}></Article></>}
  else if(path.startsWith('research/')){const alias=(sourceAliases as Record<string,string>)[path.slice(9)];if(alias)redirect('/research/'+alias);const s=content.sources.find(x=>x.id===path.slice(9));if(!s)notFound();const access=await getReviewForRequest(reviewRepository,s.id);const g:Guide={id:s.id,slug:'/'+path,title:s.title,type:isPrimarySource(s)?'Study':'Background source',description:s.preview,topicIds:[],sections:access.kind==='full'?access.review.sections.map(section=>({...section,id:section.id==='sources'?'source-note':section.id,label:section.title})):[{id:'source-summary',label:'Summary',title:'Study summary',paragraph:s.preview,sources:[s.id]},...(s.decisiveLimit?[{id:'limits',label:'Limits',title:'Study limitations',paragraph:s.decisiveLimit,sources:[s.id]}]:[])],faqs:[],sourceIds:access.kind==='full'?access.review.sourceIds:[s.id],related:[]};const reviewSources=content.sources.filter(source=>g.sourceIds.includes(source.id));const extraCitations=access.kind==='full'?[...(access.review.openingBlocks||[]).flatMap(block=>block.questionIds.map(id=>access.review.questionAnswers?.find(question=>question.id===id)?.sources||[])),...(access.review.questionAnswers||[]).map(question=>question.sources)]:[];return <Article guide={g} sources={reviewSources} additionalCitationGroups={extraCitations}>{access.kind==='full'?<ReviewAnswers review={access.review} citationOrder={guideCitationOrder(g,reviewSources,extraCitations)}/>:null}{access.kind!=='not_found'&&<ReviewStatus sourceId={s.id} access={access.kind} reason={'reason' in access?access.reason:undefined}/>}<section className="article-section"><h2>Questions using this source</h2>{content.guides.filter(g=>g.sourceIds.includes(s.id)).map(g=><a className="result-row" key={g.id} href={guideUrl(g)}>{g.title}</a>)}</section></Article>}
  else if(path.startsWith('glossary/')){const t=content.glossary.find(t=>t.slug===path.slice(9));if(!t)notFound();const sources=content.sources.filter(s=>t.sources.includes(s.id));const g:Guide={id:'term-'+t.slug,slug:'/'+path,title:t.title,type:'Glossary',description:'A scientific term, with its context intact.',topicIds:[],sections:[{id:'meaning',label:'Meaning',title:'Meaning',paragraph:t.meaning,sources:t.sources,sentences:t.sentenceMaps?.meaning},{id:'context',label:'Context',title:'Why the distinction matters',paragraph:t.context,sources:t.sources,sentences:t.sentenceMaps?.context},{id:'examples',label:'Examples',title:'Read it in context',paragraph:t.examples,sources:t.sources,sentences:t.sentenceMaps?.examples}],faqs:[],sourceIds:t.sources,related:[]};return <Article guide={g} sources={sources}/>;}
  else if(path==='search'){body=<><Intro title={titles.search}/><SearchResults items={allItems()} initialQuery={typeof query.q==='string'?query.q:''}/></>}

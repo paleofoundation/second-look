@@ -196,11 +196,11 @@ export function AuthorCard({ author }: { author: ThemeAuthor }) {
 function Breadcrumbs({ items, label }: { items: { label: string; href: string }[]; label?: string }) {
   return <nav className="breadcrumb" aria-label="Breadcrumb"><ol className="breadcrumb__wrapper">{items.map(item => <li className="breadcrumb__item" key={item.href}><ThemeAnchor className="breadcrumb__link" href={item.href}>{item.label}</ThemeAnchor></li>)}{label && <li className="breadcrumb__item"><span className="breadcrumb_last"><span className="badge">{label}</span></span></li>}</ol></nav>;
 }
-export function ArticleHero({ title, description, breadcrumbs, art, leftContext, author, authorSlot, creditSlot, updatedLabel, snapshot, actions, kindLabel }: ArticleHeroProps) {
+export function ArticleHero({ title, description, breadcrumbs, art, artVariant, leftContext, author, authorSlot, creditSlot, updatedLabel, snapshot, actions, kindLabel }: ArticleHeroProps) {
   const authorContent = authorSlot !== undefined ? authorSlot : creditSlot !== undefined ? creditSlot : author ? <AuthorCard author={author} /> : null;
   const hasAuthor = authorContent !== null && authorContent !== undefined && authorContent !== false;
-  return <div className={`research-hero${hasAuthor ? " research-hero--with-author" : ""}`}><div className="research-hero__wrapper">
-    <div className="research-hero__left" data-hero-region="image">{art && <Image image={art} className="research-hero__left-image" />}{leftContext && <div className="research-hero__left-content">{leftContext}</div>}</div>
+  return <div className={`research-hero${hasAuthor ? " research-hero--with-author" : ""}${artVariant === "topic" ? " research-hero--topic-art" : ""}`}><div className="research-hero__wrapper">
+    <div className="research-hero__left" data-hero-region="image">{art && <Image image={art} className="research-hero__left-image" fetchPriority={artVariant === "topic" ? "high" : undefined} decoding="async" />}{leftContext && <div className="research-hero__left-content">{leftContext}</div>}</div>
     <div className="research-hero__center"><Breadcrumbs items={breadcrumbs} label={kindLabel} /><div className="research-hero__center-content"><h1 className="research-hero__center-title">{title}</h1>{description && <div className="research-hero__center-text">{description}</div>}</div>{actions && <div className="research-hero__center-tags">{actions}</div>}</div>
     <aside className="research-hero__right" data-hero-region="author-snapshot" aria-label="Author and article snapshot">{hasAuthor && <div className="research-hero__author">{authorContent}</div>}{updatedLabel && <p className="omr-updated">{updatedLabel}</p>}{snapshot}</aside>
   </div></div>;

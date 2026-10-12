@@ -6,18 +6,17 @@ import "@/styles/second-look.css";
 import "@/components/shared-theme/guide-library.css";
 import "@/styles/reader-profile.css";
 import "@/components/shared-theme/article-reading.css";
+import "@/styles/hero-art.css";
 import {ThemeShell} from "@/components/shared-theme/theme";
 import {getChatGPTUser,chatGPTSignInPath} from "@/app/chatgpt-auth";
 import {secondLookTheme} from "@/lib/theme/config";
 import {LayoutMetrics} from "@/components/layout-metrics";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://remaprx.com"),
   title: {default: "Second Look — Drug repurposing, in context", template: "%s | Second Look"},
   description: "Explore the questions, original studies and limitations behind drug repurposing. A private evidence pilot.",
   robots: {index: false, follow: false},
-  other: {
-    "codex-preview": "development",
-  },
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",

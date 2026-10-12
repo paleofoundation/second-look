@@ -47,7 +47,7 @@
   text-decoration:none;
 }
 .omr-theme .omr-hero-actions :is(a,button):focus-visible {
-  outline:2px solid var(--omr-accent,#f6bc45);
+  outline:2px solid var(--omr-accent,var(--brand-yellow));
   outline-offset:3px;
 }
 .omr-theme .omr-hero-action__icon {
@@ -144,7 +144,7 @@ sup.citation-sup,
   text-decoration-color: currentColor;
 }
 .omr-theme .related-reading { margin: 0 0 28px; }
-.omr-theme .related-reading h2 { font-family: Inter, Arial, sans-serif; font-size: 16px; line-height: 1.5; margin: 0 0 12px; padding-bottom: 10px; border-bottom: 1px solid var(--omr-border, #dce3e6); }
+.omr-theme .related-reading h2 { font-family: Inter, Arial, sans-serif; font-size: 16px; line-height: 1.5; margin: 0 0 12px; padding-bottom: 10px; border-bottom: 1px solid var(--omr-border, var(--brand-line)); }
 .omr-theme .related-reading ul { list-style: none; padding: 0; margin: 0; }
 .omr-theme .related-reading li + li { margin-top: 6px; }
 .omr-theme .related-reading a { display: block; padding: 8px 0; color: var(--omr-link); font-size: 14px; line-height: 1.6; text-decoration: none; overflow-wrap: anywhere; }
