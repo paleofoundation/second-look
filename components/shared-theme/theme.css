@@ -22,6 +22,11 @@
 /* OMR-04: equivalent captured menu structure with semantic expansion controls and focus access. */
 .omr-theme .header { border-bottom:1px solid var(--brand-line); }
 .omr-theme .header__logo { flex-shrink:0; }
+.omr-theme .header__logo:has(.custom-logo) { height:58px; padding:0; }
+.omr-theme .header__logo .custom-logo { display:block; width:226px; height:58px; object-fit:contain; }
+.omr-theme .header__mobile-logo .custom-logo-link { max-width:226px; }
+.omr-theme .header__mobile-logo .custom-logo { display:block; width:210px; height:56px; object-fit:contain; }
+.omr-theme .footer__logo .custom-logo { display:block; width:240px; max-width:100%; height:auto; }
 .omr-theme .omr-wordmark { white-space:nowrap; font-family:var(--font-serif); }
 .omr-theme .header__login { color:var(--color-primary); text-decoration:none; white-space:nowrap; }
 .omr-theme .header__search { text-decoration:none; }
@@ -109,6 +114,8 @@
 @media (max-width:479px) {
   .omr-theme .header__wrapper { gap:8px; padding-inline:12px; }
   .omr-theme .header__logo { padding:0; font-size:1.35rem; height:1.5rem; }
+  .omr-theme .header__logo:has(.custom-logo) { height:48px; }
+  .omr-theme .header__logo .custom-logo { width:168px; height:48px; }
   .omr-theme .header__actions { gap:8px; }
   .omr-theme .header__actions .btn { max-width:94px; white-space:normal; line-height:1.15; }
 }

@@ -80,3 +80,8 @@ Owner instruction, 12 October 2026: adopt the supplied blue `#1736F5`, yellow `#
 
 
 Owner follow-up, October 12, 2026: extend this same blue illustration and metadata setup to every remaining drug and condition page on RemapRx, including canonical discovery entries. Require explicit topic assignments, accurate descriptions, responsive transparent assets and individual social previews; preserve the two accepted originals. The expanded contract is in `DESIGN-SYSTEM.md`, and verification/release status in `HERO-ROLLOUT-VALIDATION.md`.
+
+
+## Approved identity and atlas homepage
+
+Owner approval, October 12, 2026: use the mapping-round-4 logo and favicon, carry the mapping visual into the homepage hero, replace current reader-facing Second Look branding and publish the new identity/category language. The category is “The drug repurposing atlas”; the headline is “New targets for approved medications.” Full copy, production assets and bounded implementation/release status are in `REMAPRX-IDENTITY.md`. Preserve source traceability and approval-specific language, historical records, stable routes/identifiers, topic illustrations, access/indexing settings and scientific/commercial gates. Logo selection is complete. The earlier broader mechanism/preliminary-evidence plan remains separate work, not implied complete by this identity release.
