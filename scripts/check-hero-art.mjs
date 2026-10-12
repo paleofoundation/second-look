@@ -10,15 +10,32 @@ const {getTopicHeroArt} = load(path.resolve('lib/hero-art.ts'));
 const definitions = JSON.parse(await readFile('data/topic-hero-art.json', 'utf8'));
 const manifest = JSON.parse(await readFile('assets/hero-art/manifest.json', 'utf8'));
 const topics = content.guides.filter(page => /^\/(drugs|conditions)\//.test(guideUrl(page)));
-assert.deepEqual(definitions.map(item => item.canonicalPath).sort(), topics.map(guideUrl).sort(), 'Every existing drug and condition route has exactly one image mapping');
-assert.equal(new Set(definitions.map(item => item.subject)).size, topics.length, 'Every topic has an individual asset');
-assert.equal(manifest.items.length, topics.length);
+// Glossary artwork is adopted one term at a time; every drug/condition stays required.
+const glossary = content.glossary.map(term => ({
+  id: 'term-' + term.slug, slug: '/glossary/' + term.slug, title: term.title, type: 'Glossary',
+  description: 'A scientific term, with its context intact.', topicIds: [],
+  sections: [
+    {id: 'meaning', label: 'Meaning', title: 'Meaning', paragraph: term.meaning, sources: term.sources, sentences: term.sentenceMaps?.meaning},
+    {id: 'context', label: 'Context', title: 'Why the distinction matters', paragraph: term.context, sources: term.sources, sentences: term.sentenceMaps?.context},
+    {id: 'examples', label: 'Examples', title: 'Read it in context', paragraph: term.examples, sources: term.sources, sentences: term.sentenceMaps?.examples},
+  ],
+  faqs: [], sourceIds: term.sources, related: [],
+}));
+const knownPages = new Map([...topics, ...glossary].map(page => [guideUrl(page), page]));
+const assignedPaths = new Set(definitions.map(item => item.canonicalPath));
+assert.equal(assignedPaths.size, definitions.length, 'Each canonical path has at most one image mapping');
+for (const page of topics) assert(assignedPaths.has(guideUrl(page)), guideUrl(page) + ': required drug/condition artwork');
+for (const item of definitions) assert(knownPages.has(item.canonicalPath), item.canonicalPath + ': known drug, condition or glossary page');
+assert.equal(new Set(definitions.map(item => item.subject)).size, definitions.length, 'Every illustrated page has an individual asset');
+assert.deepEqual(manifest.items.map(item => item.subject).sort(), definitions.map(item => item.subject).sort(), 'The manifest contains exactly the assigned illustrations');
 const masterHashes = new Set();
-for (const page of topics) {
-  const canonicalPath = guideUrl(page);
+for (const definition of definitions) {
+  const canonicalPath = definition.canonicalPath;
+  const page = knownPages.get(canonicalPath);
   const art = getTopicHeroArt(canonicalPath);
   assert(art && art.alt && art.title && art.caption && art.description && art.socialImage.alt, canonicalPath + ': complete descriptive fields');
   const subject = canonicalPath.split('/').at(-1);
+  assert.equal(definition.subject, subject, canonicalPath + ': canonical asset name');
   assert.equal(art.src, `/art/${subject}-blue-hero.webp`);
   assert.equal(art.socialImage.src, `/art/${subject}-blue-social.png`);
   const record = manifest.items.find(item => item.subject === subject);
@@ -48,5 +65,8 @@ for (const page of topics) {
   assert(html.includes('research-hero--topic-art'), canonicalPath + ': responsive topic layout');
   assert(html.includes('srcSet=') || html.includes('srcset='), canonicalPath + ': responsive source set');
 }
+for (const page of glossary.filter(page => !assignedPaths.has(guideUrl(page)))) {
+  assert.equal(getTopicHeroArt(guideUrl(page)), undefined, guideUrl(page) + ': unillustrated glossary entry retains its existing artwork');
+}
 assert.equal(getTopicHeroArt('/research/example'), undefined, 'Unrelated routes retain their existing artwork');
-console.log(`Verified ${topics.length} topic mappings, rendered heroes, alpha, dimensions and ${topics.length * 4} file hashes.`);
+console.log(`Verified ${definitions.length} image mappings (${topics.length} required drug/condition topics), rendered heroes, alpha, dimensions and ${definitions.length * 4} file hashes.`);
