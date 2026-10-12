@@ -139,3 +139,9 @@ Source: owner explicitly corrected the hero clause to “and map each connection
 ### SL-RULE-TOPIC-GUIDES publication receipt
 
 Infrastructure published as Sites version 36 from `c12df71db701d5f8ba180a35f326b1adde64c33b`; deployment `appgdep_6acceff26e3c81918332236af1fbbc1d` succeeded October 12 at 14:34:53 UTC. Live desktop/mobile guide offers and 13 public/private HTTP checks pass; full verification and outstanding release requirements are in `GUIDE-IMPLEMENTATION.md`. Canonical changes were synchronized without replacing concurrent research. The actual Metformin source-return checkpoint holds 12 source assets with independent receipt acceptance; scientific extraction/assessment and the paid manuscript remain outstanding. No sales or membership activated. The isolated Stripe sandbox is still unavailable in the connector.
+
+## 2026-10-12 — SL-RULE-PHYSICIAN-PORTAL: table-led member packets
+
+Source: owner request to build condition-specific physician packets into the paid-subscriber portal, organize the material with tables and support printing/emailing; follow-up permits leaving specialist name/contact blank. Scope: member feature, document redesign and owner-inspectable NSCLC sample. Supersedes sample-only implementation scope. Contract: `docs/PHYSICIAN-PACKETS.md`.
+
+Implementation: private membership/edition checks, condition selection, structured preview, print styling, verified PDF download and member-controlled email draft. The owner does not require a physician signature; no specialist credentials are invented. Credit remains separate from the existing qualified clinical and commercial release gates. Local verification and deployment are recorded in `docs/PHYSICIAN-PACKET-IMPLEMENTATION.md`; live billing, real approvals and sending messages remain outside this development operation.
