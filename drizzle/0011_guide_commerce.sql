@@ -45,6 +45,6 @@ CREATE INDEX idx_guide_invoice_charge ON guide_invoice_payments(charge_id);
 --> statement-breakpoint
 CREATE INDEX idx_guide_invoice_user ON guide_invoice_payments(user_id, status, paid_through);
 --> statement-breakpoint
-CREATE TABLE guide_stripe_events (id text PRIMARY KEY NOT NULL, type text NOT NULL, processed_at text NOT NULL);
+CREATE TABLE guide_stripe_events (id text PRIMARY KEY NOT NULL, type text NOT NULL, user_id text, processed_at text NOT NULL);
 --> statement-breakpoint
 CREATE TABLE guide_commerce_locks (name text PRIMARY KEY NOT NULL, owner text NOT NULL, expires_at integer NOT NULL);

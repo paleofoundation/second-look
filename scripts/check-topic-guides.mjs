@@ -28,6 +28,7 @@ for(const topic of topics){
 }
 assert.equal(canonicalArticleUrl('/drugs/metformin?secret=test#x'),'https://remaprx.com/drugs/metformin');
 assert.throws(()=>canonicalArticleUrl('//evil.example/drugs/x'));
+for(const privatePath of ['/guides/read/private-edition','/guides/library/owned','/account/profile'])assert.throws(()=>canonicalArticleUrl(privatePath));
 assert.deepEqual(guideOffer.launchProductIds,['SL-GUIDE-METFORMIN','SL-GUIDE-LONG-COVID','SL-GUIDE-ITRACONAZOLE-CANCER']);assert.equal(guideOffer.monthlyMinor,5900);assert(!('annualMinor' in guideOffer));assert.equal(guideOffer.enabled,false);
 const color=hex=>hex.match(/\w\w/g).map(v=>parseInt(v,16)/255).map(v=>v<=.04045?v/12.92:((v+.055)/1.055)**2.4).reduce((sum,v,i)=>sum+v*[.2126,.7152,.0722][i],0);
 const contrast=(color('FFC709')+.05)/(color('1736F5')+.05);assert(contrast>=4.5);

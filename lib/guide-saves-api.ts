@@ -55,6 +55,13 @@ export function createGuideSavesHandlers(deps: GuideSavesDependencies) {
         const at = now(); const library = await deps.guides().readLibrary(user.userId, at.toISOString());
         const view = guideLibraryView(user.userId, library, deps.getProduct, at);
         if (!view.availableGuides.some(guide => guide.productId === input.productId && guide.editionId === input.editionId)) return json({ error: 'This edition is not available for your account.' }, 403);
+        // A reader may arrive from an article before visiting the library. Save
+        // only the same purchased/matching topics that library retrieval would;
+        // insert-only reconciliation preserves every manual-removal tombstone.
+        const profile = await deps.profiles().read(user.userId);
+        const interests = new Set(profile?.interests ?? []);
+        const matching = new Set(deps.topics.filter(topic => interests.has(`${topic.kind}:${topic.slug}`)).map(topic => topic.productId));
+        await deps.repository().reconcile(user.userId, view.availableGuides, matching, activeGuideMembership(library.membership, user.userId, at));
         await deps.repository().viewed(user.userId, input.productId, input.editionId!);
         return json({ viewed: true });
       }

@@ -13,13 +13,15 @@ const glyphs:Record<string,React.ReactNode>={
 };
 export function ArticleSharing({path,title,kind}:{path:string;title:string;kind:string}) {
   const [message,setMessage]=useState('');
+  let links:ReturnType<typeof articleShareLinks>;
+  try{links=articleShareLinks(path,title)}catch{return null}
   const topic=kind==='Drug'||kind==='Condition'?getTopicGuide(kind==='Drug'?'drug':'condition',path.split('/').at(-1)||''):undefined;
   const product=topic?getGuideProduct(topic.productId):undefined;
   async function copy(){try{await navigator.clipboard.writeText(canonicalArticleUrl(path));setMessage('Link copied.')}catch{setMessage('Copy this link: '+canonicalArticleUrl(path))}}
   return <div className="article-sharing-offer">
     <p className="article-share-label">Share this article</p>
     <nav className="article-share-row" aria-label="Share this article">
-      {articleShareLinks(path,title).map(link=><a key={link.key} href={link.href} aria-label={link.label} title={link.label} target={link.key==='email'?undefined:'_blank'} rel={link.key==='email'?undefined:'noopener noreferrer'}>{glyphs[link.key]}</a>)}
+      {links.map(link=><a key={link.key} href={link.href} aria-label={link.label} title={link.label} target={link.key==='email'?undefined:'_blank'} rel={link.key==='email'?undefined:'noopener noreferrer'}>{glyphs[link.key]}</a>)}
       <button type="button" onClick={()=>void copy()} title="Copy link" aria-label="Copy article link"><Copy aria-hidden="true"/></button>
     </nav>
     <span className="article-share-status" role="status">{message}</span>

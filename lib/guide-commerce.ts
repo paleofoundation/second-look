@@ -24,6 +24,7 @@ export interface CommerceRepository {
   acquireEventLock(owner: string, now: number): Promise<boolean>;
   releaseEventLock(owner: string): Promise<void>;
   hasEvent(id: string): Promise<boolean>;
+  eventUser(id: string): Promise<string | null>;
   applyEvent(event: StripeEvent, projection: CommerceProjection, owner: string, now: Date): Promise<void>;
 }
 export type CommerceConfig = { enabled: boolean; mode: 'sandbox'; webhookSecret: string; origin: string };
@@ -32,6 +33,7 @@ export type CommerceDependencies = {
   config(): CommerceConfig; getProduct(id: string): CommerceProduct | undefined;
   offer: { enabled: boolean; monthlyMinor: number; currency: string; launchProductIds: string[]; launchMinimum: number };
   now?: () => Date; uuid?: () => string;
+  reconcileLibrary?: (userId: string) => Promise<void>;
 };
 const object = (value: unknown): StripeObject => value && typeof value === 'object' ? value as StripeObject : { id: '' };
 const id = (value: unknown): string => typeof value === 'string' ? value : typeof object(value).id === 'string' ? object(value).id : '';
@@ -78,7 +80,16 @@ export class GuidePaymentReconciler {
     const items = list(subscription.items);
     const price = object(items[0]?.price);
     if (items.length !== 1 || items[0].quantity !== 1 || price.unit_amount !== attempt.amount || price.currency !== attempt.currency.toLowerCase() || object(price.recurring).interval !== 'month' || object(price.recurring).interval_count !== 1) throw new Error('Subscription price mismatch.');
-    const result: CommerceProjection = { subscription: { userId: attempt.userId, subscriptionId, customerId: attempt.customerId, state: str(subscription.status), cancelAtPeriodEnd: subscription.cancel_at_period_end === true || subscription.status === 'canceled' } };
+    let currentSubscription = subscription;
+    const storedSubscriptionId = await this.repo.membershipSubscription(attempt.userId);
+    if (storedSubscriptionId && storedSubscriptionId !== subscriptionId) {
+      const stored = await this.get(`/v1/subscriptions/${resource('sub', storedSubscriptionId)}`);
+      if (id(stored.customer) !== attempt.customerId || typeof stored.created !== 'number' || typeof subscription.created !== 'number') throw new Error('Subscription chronology unavailable.');
+      if (stored.created > subscription.created) currentSubscription = stored;
+    }
+    // A late event for an old subscription can change its own invoice window,
+    // but must not replace the current billing identity or cancellation state.
+    const result: CommerceProjection = { subscription: { userId: attempt.userId, subscriptionId: currentSubscription.id, customerId: attempt.customerId, state: str(currentSubscription.status), cancelAtPeriodEnd: currentSubscription.cancel_at_period_end === true || currentSubscription.status === 'canceled' } };
     const targetInvoice = invoiceId || id(subscription.latest_invoice);
     if (!targetInvoice) return result;
     const invoice = await this.get(`/v1/invoices/${resource('in', targetInvoice)}`, { 'expand[]': 'payments' });
@@ -126,7 +137,12 @@ export function createCommerceHandlers(deps: CommerceDependencies) {
   const now = () => deps.now?.() ?? new Date();
   const uuid = () => deps.uuid?.() ?? crypto.randomUUID();
   const user = async () => { try { return await deps.getUser(); } catch { return null; } };
-  const settings = () => { const config = deps.config(); if (!config.enabled || config.mode !== 'sandbox' || !/^https:\/\//.test(config.origin) || new URL(config.origin).origin !== config.origin) throw new Error('Checkout not configured.'); return config; };
+  const settings = () => {
+    const config = deps.config(); const origin = new URL(config.origin);
+    const secureOrLoopback = origin.protocol === 'https:' || origin.protocol === 'http:' && ['localhost', '127.0.0.1', '[::1]'].includes(origin.hostname);
+    if (!config.enabled || config.mode !== 'sandbox' || !secureOrLoopback || origin.origin !== config.origin) throw new Error('Checkout not configured.');
+    return config;
+  };
   return {
     async checkout(request: Request) {
       const identity = await user(); if (!identity) return json({ error: 'Sign in to get a guide.' }, 401);
@@ -148,7 +164,7 @@ export function createCommerceHandlers(deps: CommerceDependencies) {
         if (input.kind === 'guide') {
           product = deps.getProduct(input.productId as string);
           if (!product || product.priceMinor !== 4900 || product.currency !== 'USD') return json({ error: 'This guide is not available for checkout.' }, 409);
-          edition = (await repo.readEditions(product.id)).filter(item => approvedGuideEdition(product, item, at)).sort((a, b) => (b.updatedAt ?? '').localeCompare(a.updatedAt ?? '') || b.version.localeCompare(a.version, undefined, { numeric: true }))[0];
+          edition = (await repo.readEditions(product.id)).filter(item => approvedGuideEdition(product, item, at)).sort((a, b) => b.version.localeCompare(a.version, 'en', { numeric: true }) || (b.updatedAt ?? '').localeCompare(a.updatedAt ?? ''))[0];
           if (!edition) return json({ error: 'This guide is in development and is not available for purchase.' }, 409);
           if (library.orders.some(order => order.userId === identity.userId && order.productId === product!.id && order.status === 'paid') || product.subscriptionIncluded && activeGuideMembership(library.membership, identity.userId, at)) return json({ error: 'This guide is already available in your library.', libraryUrl: '/guides/library' }, 409);
         } else {
@@ -166,8 +182,23 @@ export function createCommerceHandlers(deps: CommerceDependencies) {
             if (!['canceled', 'incomplete_expired'].includes(str(subscription.status))) return json({ error: 'This account already has a membership billing record. Use billing to manage or complete it.' }, 409);
           }
           const previous = await repo.membershipCheckout(identity.userId);
-          if (previous?.sessionId) {
-            const session = await stripe.request(`/v1/checkout/sessions/${resource('cs', previous.sessionId)}`);
+          let previousSessionId = previous?.sessionId;
+          if (previous && !previousSessionId) {
+            // A provider success followed by a local crash must not create a
+            // second subscription after the browser generates a new key.
+            const sessions = await stripe.request('/v1/checkout/sessions', { customer: previous.customerId, limit: '100' });
+            const recovered = list(sessions).find(session => metadataAttempt(session) === previous.id);
+            if (recovered) {
+              previousSessionId = recovered.id;
+              if (recovered.url) await repo.attachSession(previous.id, recovered.id, hostedUrl(recovered.url, 'checkout.stripe.com'));
+            } else {
+              if (sessions.has_more === true) throw new Error('Checkout recovery needs a complete provider history.');
+              existing = previous;
+            }
+          }
+          if (previousSessionId) {
+            const session = await stripe.request(`/v1/checkout/sessions/${resource('cs', previousSessionId)}`);
+            if (session.status === 'open' && session.url) return json({ url: hostedUrl(session.url, 'checkout.stripe.com') });
             if (session.status !== 'expired') {
               const subscription = id(session.subscription) ? await stripe.request(`/v1/subscriptions/${resource('sub', id(session.subscription))}`) : null;
               if (!subscription || !['canceled', 'incomplete_expired'].includes(str(subscription.status))) return json({ error: 'A membership checkout or payment is already in progress. Return to your existing checkout or manage billing.' }, 409);
@@ -209,16 +240,23 @@ export function createCommerceHandlers(deps: CommerceDependencies) {
     async webhook(request: Request) {
       let event: StripeEvent; const at = now();
       try { const config = settings(); event = await verifyStripeEvent(await request.text(), request.headers.get('stripe-signature'), config.webhookSecret, at); } catch { return json({ error: 'Webhook verification failed.' }, 400); }
-      const repo = deps.repository(); const owner = uuid(); let locked = false;
+      let repo: CommerceRepository | undefined; const owner = uuid(); let locked = false;
       try {
+        repo = deps.repository();
         locked = await repo.acquireEventLock(owner, at.getTime());
         if (!locked) return json({ error: 'Reconciliation is busy; retry this event.' }, 503);
-        if (await repo.hasEvent(event.id)) return json({ received: true, duplicate: true });
+        if (await repo.hasEvent(event.id)) {
+          const userId = await repo.eventUser(event.id);
+          if (userId) await deps.reconcileLibrary?.(userId);
+          return json({ received: true, duplicate: true });
+        }
         const projection = await new GuidePaymentReconciler(repo, deps.stripe(), at).event(event);
         await repo.applyEvent(event, projection, owner, now());
+        const userId = projection.order?.userId ?? projection.subscription?.userId;
+        if (userId) await deps.reconcileLibrary?.(userId);
         return json({ received: true });
       } catch { return json({ error: 'Payment reconciliation was not confirmed. Retry this event.' }, 503); }
-      finally { if (locked) await repo.releaseEventLock(owner).catch(() => {}); }
+      finally { if (locked && repo) await repo.releaseEventLock(owner).catch(() => {}); }
     },
   };
 }

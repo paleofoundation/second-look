@@ -35,6 +35,7 @@ export function createCommerceRepository(db: CommerceDatabase): CommerceReposito
     async acquireEventLock(owner, now) { return (await query("INSERT INTO guide_commerce_locks(name,owner,expires_at) VALUES('stripe',?,?) ON CONFLICT(name) DO UPDATE SET owner=excluded.owner,expires_at=excluded.expires_at WHERE guide_commerce_locks.expires_at < ? RETURNING owner", owner, now + 120000, now)).length === 1; },
     async releaseEventLock(owner) { await query("DELETE FROM guide_commerce_locks WHERE name='stripe' AND owner=?", owner); },
     async hasEvent(id) { return !!await first('SELECT id FROM guide_stripe_events WHERE id=?', id); },
+    async eventUser(id) { return (await first<{ user_id: string | null }>('SELECT user_id FROM guide_stripe_events WHERE id=?', id))?.user_id ?? null; },
     async applyEvent(event: StripeEvent, projection: CommerceProjection, owner: string, now: Date) {
       const statements: Statement[] = [];
       const fence = "EXISTS(SELECT 1 FROM guide_commerce_locks WHERE name='stripe' AND owner=? AND expires_at>?)";
@@ -54,7 +55,7 @@ export function createCommerceRepository(db: CommerceDatabase): CommerceReposito
         const paidEnd = "(SELECT MAX(paid_through) FROM guide_invoice_payments WHERE user_id=? AND status='paid')";
         statements.push(statement(`INSERT INTO guide_memberships(user_id,state,current_period_end,cancel_at_period_end,stripe_subscription_id,stripe_customer_id) SELECT ?,CASE WHEN ${paidEnd}>? THEN 'active' ELSE ? END,${paidEnd},?,?,? WHERE ${fence} ON CONFLICT(user_id) DO UPDATE SET state=excluded.state,current_period_end=excluded.current_period_end,cancel_at_period_end=excluded.cancel_at_period_end,stripe_subscription_id=excluded.stripe_subscription_id,stripe_customer_id=excluded.stripe_customer_id`, m.userId,m.userId,now.toISOString(),projection.invoice?.status === 'refunded' ? 'refunded' : projection.invoice?.status === 'disputed' ? 'disputed' : m.state === 'past_due' ? 'past_due' : m.state === 'canceled' ? 'cancelled' : 'pending',m.userId,Number(m.cancelAtPeriodEnd),m.subscriptionId,m.customerId,...end));
       }
-      statements.push(statement(`INSERT INTO guide_stripe_events(id,type,processed_at) SELECT ?,?,? WHERE ${fence} ON CONFLICT(id) DO NOTHING`, event.id,event.type,now.toISOString(),...end));
+      statements.push(statement(`INSERT INTO guide_stripe_events(id,type,user_id,processed_at) SELECT ?,?,?,? WHERE ${fence} ON CONFLICT(id) DO NOTHING`, event.id,event.type,projection.order?.userId ?? projection.subscription?.userId ?? null,now.toISOString(),...end));
       const results = await db.batch(statements);
       if (results.some(result => !result.success) || !await first('SELECT id FROM guide_stripe_events WHERE id=?', event.id)) throw new Error('Payment transaction was not committed.');
     },

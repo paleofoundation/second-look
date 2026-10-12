@@ -95,7 +95,7 @@ function orderDownloadDenial(order: GuideOrder, product: GuideProduct | undefine
 }
 
 export function guideLibraryView(userId: string, library: GuideLibrary, getProduct: GuideDependencies['getProduct'], now: Date) {
-  const availableGuides = library.editions.flatMap(edition => {
+  const availableGuides = [...library.editions].sort((a, b) => b.version.localeCompare(a.version, 'en', { numeric: true }) || (b.updatedAt ?? '').localeCompare(a.updatedAt ?? '') || b.id.localeCompare(a.id)).flatMap(edition => {
     const product = getProduct(edition.productId);
     const access = guideEntitlement(userId, product, edition, library, now);
     if (!product || !access) return [];

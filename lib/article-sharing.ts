@@ -1,7 +1,7 @@
 /** Share only the public canonical route, never a visitor's query, fragment or account data. */
 export function canonicalArticleUrl(path: string) {
   const route = path.split(/[?#]/, 1)[0];
-  if (!/^\/(?:drugs|conditions|research|glossary|answers|comparisons|guides)\/[A-Za-z0-9._/-]+$/.test(route) || route.includes('..')) throw new Error('Invalid public article route');
+  if (!/^\/(?:drugs|conditions|research|glossary|answers|comparisons|guides)\/[A-Za-z0-9._/-]+$/.test(route) || route.includes('..') || /^\/guides\/(?:read|library)(?:\/|$)/.test(route)) throw new Error('Invalid public article route');
   return new URL(route, 'https://remaprx.com').href;
 }
 export function articleShareLinks(path: string, title: string) {

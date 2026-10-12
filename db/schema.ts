@@ -113,7 +113,7 @@ export const guideInvoicePayments = sqliteTable('guide_invoice_payments', {
   paidThrough:text('paid_through'),updatedAt:text('updated_at').notNull(),
 }, table=>[index('idx_guide_invoice_charge').on(table.chargeId),index('idx_guide_invoice_user').on(table.userId,table.status,table.paidThrough)]);
 export const guideStripeEvents = sqliteTable('guide_stripe_events', {
-  id:text('id').primaryKey(),type:text('type').notNull(),processedAt:text('processed_at').notNull(),
+  id:text('id').primaryKey(),type:text('type').notNull(),processedAt:text('processed_at').notNull(),userId:text('user_id'),
 });
 export const guideCommerceLocks = sqliteTable('guide_commerce_locks', {
   name:text('name').primaryKey(),owner:text('owner').notNull(),expiresAt:integer('expires_at').notNull(),

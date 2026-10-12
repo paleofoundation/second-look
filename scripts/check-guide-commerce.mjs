@@ -60,7 +60,8 @@ const gateway = { async request(endpoint, params = {}, method = 'GET', key) {
 const secret = 'whsec_synthetic_only';
 const products = new Map([[product.id, product]]);
 const offer = { enabled: false, monthlyMinor: 5900, currency: 'USD', launchMinimum: 3, launchProductIds: ['FIRST', 'SECOND', 'THIRD'] };
-const deps = { getUser: async () => currentUser, repository: () => repo, guides: () => guides, stripe: () => gateway, config: () => ({ enabled: true, mode: 'sandbox', webhookSecret: secret, origin: 'https://remaprx.com' }), getProduct: value => products.get(value), offer, now: () => now, uuid: () => `fixture-attempt-${++generated}` };
+const reconciledUsers = [];
+const deps = { reconcileLibrary: async userId => { reconciledUsers.push(userId); }, getUser: async () => currentUser, repository: () => repo, guides: () => guides, stripe: () => gateway, config: () => ({ enabled: true, mode: 'sandbox', webhookSecret: secret, origin: 'https://remaprx.com' }), getProduct: value => products.get(value), offer, now: () => now, uuid: () => `fixture-attempt-${++generated}` };
 const handlers = createCommerceHandlers(deps);
 const request = (body, key = '11111111-1111-4111-8111-111111111111') => new Request('https://remaprx.com/api/checkout', { method: 'POST', headers: { origin: 'https://remaprx.com', 'content-type': 'application/json', 'idempotency-key': key }, body: JSON.stringify(body) });
 assert.equal((await handlers.checkout(request({ kind: 'guide', productId: product.id, amount: 1 }))).status, 400);
@@ -91,6 +92,7 @@ assert.equal((await event('checkout.session.async_payment_succeeded', { id: 'cs_
 assert.equal((await guides.readLibrary(attempt.userId, now.toISOString())).orders[0].status, 'paid');
 assert.equal((await (await event('checkout.session.async_payment_succeeded', { id: 'cs_test_fixture' }, 'evt_paid')).json()).duplicate, true);
 assert.equal(sql.prepare('SELECT COUNT(*) AS n FROM guide_orders').get().n, 1);
+assert(reconciledUsers.includes(attempt.userId), 'Verified payment triggers library reconciliation without a page visit');
 const versionTwo = { ...edition, id: 'FIXTURE-EDITION-2', version: '2.0', approvedVersion: '2.0', qualifiedApprovedVersion: '2.0', legalApprovedVersion: '2.0', updatedAt: '2026-10-03T00:00:00.000Z' }; insertEdition(versionTwo);
 let library = await guides.readLibrary(attempt.userId, now.toISOString()); assert.equal(library.editions.length, 2); assert.equal(guideEntitlement(attempt.userId, product, versionTwo, library, now), 'owned', 'Purchase rights cover future approved editions');
 const access = createGuideHandlers({ getUser: async () => currentUser, repository: () => guides, getProduct: value => products.get(value), now: () => now });
@@ -109,7 +111,7 @@ await event('checkout.session.completed', { id: 'cs_test_fixture', payment_statu
 
 // Membership is fulfilled from successful invoices, then remains through its paid period.
 const memberAttempt = { ...attempt, id: 'fixture-member-attempt', requestKey: '22222222-2222-4222-8222-222222222222', kind: 'membership', productId: null, editionId: null, amount: 5900, sessionId: null, sessionUrl: null }; await repo.createAttempt(memberAttempt);
-paths.set('/v1/subscriptions/sub_fixture', { id: 'sub_fixture', customer: attempt.customerId, metadata: { remaprx_attempt: memberAttempt.id }, status: 'active', cancel_at_period_end: false, latest_invoice: 'in_fixture1', items: { data: [{ id: 'si_fixture', quantity: 1, price: { unit_amount: 5900, currency: 'usd', recurring: { interval: 'month', interval_count: 1 } } }] } });
+paths.set('/v1/subscriptions/sub_fixture', { id: 'sub_fixture', created: 100, customer: attempt.customerId, metadata: { remaprx_attempt: memberAttempt.id }, status: 'active', cancel_at_period_end: false, latest_invoice: 'in_fixture1', items: { data: [{ id: 'si_fixture', quantity: 1, price: { unit_amount: 5900, currency: 'usd', recurring: { interval: 'month', interval_count: 1 } } }] } });
 const invoice = (name, end, paymentId) => ({ id: name, customer: attempt.customerId, currency: 'usd', status: 'paid', amount_paid: 5900, parent: { subscription_details: { subscription: 'sub_fixture' } }, lines: { data: [{ amount: 5900, quantity: 1, period: { end } }], has_more: false }, payments: { data: [{ payment: { payment_intent: paymentId } }], has_more: false } });
 paths.set('/v1/invoices/in_fixture1', invoice('in_fixture1', Math.floor(now.getTime() / 1000) + 86400 * 30, 'pi_member1'));
 paths.set('/v1/payment_intents/pi_member1', { id: 'pi_member1', status: 'processing', latest_charge: { id: 'ch_member1', amount_refunded: 0, disputed: false } });
@@ -129,6 +131,22 @@ for (const launchId of offer.launchProductIds) {
 offer.enabled = true;
 assert.equal((await handlers.checkout(request({ kind: 'membership' }, '33333333-3333-4333-8333-333333333333'))).status, 409);
 assert.equal(calls.filter(call => call.endpoint === '/v1/checkout/sessions').length, 1, 'No second subscription Checkout when provider membership remains nonterminal');
+// An old subscription event cannot replace newer billing identity/cancellation status.
+const secondMemberAttempt = { ...memberAttempt, id: 'fixture-new-member-attempt', requestKey: '44444444-4444-4444-8444-444444444444', createdAt: '2026-10-12T12:00:01.000Z' }; await repo.createAttempt(secondMemberAttempt);
+paths.set('/v1/subscriptions/sub_newfixture', { ...structuredClone(paths.get('/v1/subscriptions/sub_fixture')), id: 'sub_newfixture', created: 200, metadata: { remaprx_attempt: secondMemberAttempt.id }, cancel_at_period_end: false, latest_invoice: null });
+await event('customer.subscription.created', { id: 'sub_newfixture' });
+await event('customer.subscription.updated', { id: 'sub_fixture' });
+assert.equal(await repo.membershipSubscription(attempt.userId), 'sub_newfixture');
+assert.equal((await guides.readLibrary(attempt.userId, now.toISOString())).membership.cancelAtPeriodEnd, false);
+// A crash between provider creation and local session attachment recovers that same checkout.
+currentUser = { userId: 'fixture-reader-recovery' }; await repo.saveCustomer(currentUser.userId, 'cus_recovery');
+const recoveryAttempt = { ...memberAttempt, id: 'fixture-recovery-attempt', userId: currentUser.userId, customerId: 'cus_recovery', requestKey: '55555555-5555-4555-8555-555555555555' }; await repo.createAttempt(recoveryAttempt);
+paths.set('/v1/checkout/sessions', { id: '', data: [{ id: 'cs_test_recovered', metadata: { remaprx_attempt: recoveryAttempt.id }, url: 'https://checkout.stripe.com/c/pay/cs_test_recovered' }], has_more: false });
+paths.set('/v1/checkout/sessions/cs_test_recovered', { id: 'cs_test_recovered', status: 'open', url: 'https://checkout.stripe.com/c/pay/cs_test_recovered' });
+assert.equal((await handlers.checkout(request({ kind: 'membership' }, '66666666-6666-4666-8666-666666666666'))).status, 200);
+assert.equal(calls.filter(call => call.endpoint === '/v1/checkout/sessions' && call.method === 'POST').length, 1, 'Provider-created session is recovered rather than duplicated');
+assert.equal((await repo.membershipCheckout(currentUser.userId)).sessionId, 'cs_test_recovered');
+currentUser = { userId: attempt.userId };
 const stablePurchased = { ...edition, id: 'FIXTURE-PERMANENT', productId: product.id };
 const independentLibrary = { ...library, orders: [{ userId: attempt.userId, productId: product.id, editionId: 'OLDER', status: 'paid' }] };
 assert.equal(guideEntitlement(attempt.userId, product, stablePurchased, independentLibrary, new Date(now.getTime() + 86400 * 90 * 1000)), 'owned', 'Expired membership cannot revoke independent topic purchase');
@@ -138,5 +156,15 @@ assert.equal((await handlers.portal(new Request('https://remaprx.com/api/billing
 await assert.rejects(() => verifyStripeEvent('{}', 't=1,v1=' + '0'.repeat(64), secret, now));
 const raw = JSON.stringify({ id: 'evt_badmode', type: 'invoice.paid', created: 1, livemode: true, data: { object: { id: 'in_fixture1' } } }); await assert.rejects(() => verifyStripeEvent(raw, sign(raw), secret, now));
 assert(await repo.acquireEventLock('held-fixture', now.getTime())); assert.equal((await event('invoice.paid', { id: 'in_fixture2' })).status, 503); await repo.releaseEventLock('held-fixture');
+const retryRaw = JSON.stringify({ id: 'evt_libraryretry', type: 'invoice.paid', created: Math.floor(now.getTime() / 1000), livemode: false, data: { object: { id: 'in_fixture2' } } });
+const retryRequest = () => new Request('https://remaprx.com/api/stripe/webhook', { method: 'POST', headers: { 'stripe-signature': sign(retryRaw) }, body: retryRaw });
+const failedLibrary = createCommerceHandlers({ ...deps, reconcileLibrary: async () => { throw new Error('Temporary library failure'); } });
+assert.equal((await failedLibrary.webhook(retryRequest())).status, 503);
+assert(await repo.hasEvent('evt_libraryretry'), 'Payment commit remains durable when library reconciliation fails');
+const beforeRetry = reconciledUsers.length; assert.equal((await handlers.webhook(retryRequest())).status, 200); assert.equal(reconciledUsers.length, beforeRetry + 1, 'Duplicate receipt retries the failed library addition');
+const loopbackHandlers = createCommerceHandlers({ ...deps, config: () => ({ ...deps.config(), origin: 'http://127.0.0.1:3000' }) });
+assert.equal((await loopbackHandlers.portal(new Request('http://127.0.0.1:3000/api/billing/portal', { method: 'POST', headers: { origin: 'http://127.0.0.1:3000' } }))).status, 200);
+assert.equal((await loopbackHandlers.portal(new Request('http://127.0.0.1:3000/api/billing/portal', { method: 'POST', headers: { origin: 'http://localhost:3000' } }))).status, 403);
+const unsafeOrigin = createCommerceHandlers({ ...deps, config: () => ({ ...deps.config(), origin: 'http://example.com' }) }); assert.equal((await unsafeOrigin.portal(new Request('https://remaprx.com/api/billing/portal', { method: 'POST', headers: { origin: 'https://remaprx.com' } }))).status, 503);
 assert.equal((await createCommerceHandlers({ ...deps, config() { throw new Error('Not configured'); } }).checkout(request({ kind: 'guide', productId: product.id }))).status, 503);
 console.log('PASS: isolated SQLite + signed webhook fixtures cover release/price/account gates, idempotency, delayed/failing payments, current-state reconciliation, refunds/disputes, renewals/cancellation/expiry, permanent topic rights and protected reader/file integrity. No Stripe sandbox transaction was executed.');

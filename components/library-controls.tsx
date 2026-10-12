@@ -19,6 +19,23 @@ type GuideLibraryState={
  purchases:{productId:string|null;title:string;status:string;currency:string|null;totalMinor:number|null;createdAt:string;updatedAt:string;editionVersion:string|null;downloadAvailable:boolean;downloadUnavailableReason:string|null}[];
  savedGuides:SavedGuideView[];availableToSave:GuideEditionView[];
 };
+export class GuideBillingSignInRequired extends Error {}
+/** Hosted billing always binds to the signed-in account on the server. */
+export async function guideBillingPortalUrl(fetcher:typeof fetch=fetch):Promise<string>{
+ const response=await fetcher('/api/billing/portal',{method:'POST',credentials:'same-origin',cache:'no-store'});
+ if(response.status===401)throw new GuideBillingSignInRequired('Sign in again to manage billing.');
+ let payload:unknown;try{payload=await response.json()}catch{throw new Error('Billing is temporarily unavailable. Please retry.')}
+ const result=payload&&typeof payload==='object'?payload as {url?:unknown;error?:unknown}:{};
+ if(!response.ok||typeof result.url!=='string')throw new Error(typeof result.error==='string'?result.error:'Billing is temporarily unavailable. Please retry.');
+ let url:URL;try{url=new URL(result.url)}catch{throw new Error('The billing destination could not be verified. Please retry.')}
+ if(url.protocol!=='https:'||url.hostname!=='billing.stripe.com'||url.username||url.password||url.port)throw new Error('The billing destination could not be verified. Please retry.');
+ return url.href;
+}
+export function ManageGuideBilling(){
+ const[busy,setBusy]=useState(false),[error,setError]=useState(''),[signIn,setSignIn]=useState(false);
+ async function open(){if(busy)return;setBusy(true);setError('');try{window.location.assign(await guideBillingPortalUrl())}catch(reason){if(reason instanceof GuideBillingSignInRequired)setSignIn(true);setError(reason instanceof Error?reason.message:'Billing is temporarily unavailable. Please retry.')}finally{setBusy(false)}}
+ return <div className="guide-billing-control">{signIn?<a className="button ghost" target="_top" href={readerSignInPath('/guides/library')}>Sign in to manage billing</a>:<button className="button ghost" type="button" disabled={busy} aria-busy={busy} onClick={()=>void open()}>{busy?'Opening billing…':'Manage billing'}</button>}{error?<p className="small" role="alert">{error}</p>:null}</div>;
+}
 /** Render only after the server has authorized and loaded this exact web edition. */
 export function GuideViewedMarker({productId,editionId}:{productId:string;editionId:string}){
  useEffect(()=>{const controller=new AbortController();void fetch('/api/library/guides',{method:'PATCH',headers:{'Content-Type':'application/json'},body:JSON.stringify({productId,editionId}),cache:'no-store',signal:controller.signal}).catch(()=>{});return()=>controller.abort()},[productId,editionId]);
@@ -40,7 +57,7 @@ export function PurchaseStatus(){
  return <div className="guide-account-library"><div className="inline-actions"><h2>Your guides</h2><button className="button ghost" disabled={busy} onClick={refresh}>{busy?'Loading…':'Refresh library'}</button><a className="button ghost" href="/api/library/guides?export=1">Export guide library</a><a href="/account/profile">Edit your interests</a></div>
  {error?<p className="notice error" role="alert">{error}</p>:null}{message?<p role="status">{message}</p>:null}
  {!data&&!error?<p role="status">Loading your private guide library…</p>:null}
- {data?<><p>{data.explanation}</p><p className="small">{data.membership?`Guide membership: ${data.membership.state==='cancelled'?'canceled':data.membership.state}${data.membership.cancelAtPeriodEnd&&data.membership.state==='active'?' · renewal canceled; access continues through the paid period':''}${data.membership.expiresAt?' · period ends '+new Date(data.membership.expiresAt).toLocaleDateString('en-US',{dateStyle:'long'}):''}`:'No active guide membership.'}</p>
+ {data?<><p>{data.explanation}</p><p className="small">{data.membership?`Guide membership: ${data.membership.state==='cancelled'?'canceled':data.membership.state}${data.membership.cancelAtPeriodEnd&&data.membership.state==='active'?' · renewal canceled; access continues through the paid period':''}${data.membership.expiresAt?' · period ends '+new Date(data.membership.expiresAt).toLocaleDateString('en-US',{dateStyle:'long'}):''}`:'No active guide membership.'}</p>{data.membership||data.purchases.length?<ManageGuideBilling/>:null}
  {data.savedGuides.length?<div className="guide-library-grid">{data.savedGuides.map(guide=><SavedGuideCard key={guide.productId} guide={guide} busy={busy} onRemove={()=>void change(guide.productId,'DELETE')}/>)}</div>:<div className="empty"><h3>No saved guides yet.</h3><p>When you purchase a topic guide, it appears here. Membership adds released guides matching your chosen interests. You can also save available guides yourself.</p><a className="button ghost" href="/guides">Explore the guide catalog</a></div>}
  {unsaved.length?<section><h3>More guides you can open</h3><div className="guide-library-grid">{unsaved.map(guide=><article className="saved-card" key={guide.productId}><h4>{guide.title}</h4><div className="inline-actions"><a href={guide.readerUrl}>Open guide</a><button type="button" className="button ghost" disabled={busy} onClick={()=>void change(guide.productId,'POST')}>Save to your guides</button></div></article>)}</div></section>:null}
  {data.purchases.length?<section className="guide-orders"><h3>Purchase history</h3>{data.purchases.map((purchase,index)=><article className="saved-card" key={(purchase.productId||'unknown')+purchase.createdAt+index}><h4>{purchase.title}</h4><p>{purchase.status==='cancelled'?'canceled':purchase.status} · {purchase.currency&&purchase.totalMinor!==null?new Intl.NumberFormat('en-US',{style:'currency',currency:purchase.currency}).format(purchase.totalMinor/100):'Amount unavailable'}</p><p className="small">{purchase.downloadAvailable?'Your topic purchase includes future approved editions.':purchase.downloadUnavailableReason||'This order does not authorize access.'}</p></article>)}</section>:null}
