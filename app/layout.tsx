@@ -17,8 +17,8 @@ export const metadata: Metadata = {
   title: {default: "RemapRx — The drug repurposing atlas", template: "%s | RemapRx"},
   description: "New targets for approved medications. Explore investigated uses, proposed mechanisms and source-linked findings in the drug repurposing atlas.",
   robots: {index: false, follow: false},
-  openGraph: {type:"website", siteName:"RemapRx", title:"RemapRx — The drug repurposing atlas", description:"New targets for approved medications. Follow the connections and trace the evidence.", images:[{url:"/brand/remaprx-social.png",width:1200,height:630,alt:"RemapRx: New targets for approved medications."}]},
-  twitter: {card:"summary_large_image", title:"RemapRx — The drug repurposing atlas", description:"New targets for approved medications. Follow the connections and trace the evidence.", images:["/brand/remaprx-social.png"]},
+  openGraph: {type:"website", siteName:"RemapRx", title:"RemapRx — The drug repurposing atlas", description:"New targets for approved medications. Map each connection to its sources.", images:[{url:"/brand/remaprx-social.png",width:1200,height:630,alt:"RemapRx: New targets for approved medications."}]},
+  twitter: {card:"summary_large_image", title:"RemapRx — The drug repurposing atlas", description:"New targets for approved medications. Map each connection to its sources.", images:["/brand/remaprx-social.png"]},
   icons: {
     icon: [{url: "/favicon.svg?v=remaprx-map-1", type: "image/svg+xml"}, {url: "/favicon.ico?v=remaprx-map-1", sizes: "16x16 32x32 48x48", type: "image/x-icon"}],
     shortcut: "/favicon.ico?v=remaprx-map-1",

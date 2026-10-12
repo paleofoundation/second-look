@@ -118,3 +118,13 @@ Implementation begins from live Sites version 32, source `7f6138d5297a0fdc991978
 Source: owner's explicit approval of mapping round 4, instruction to apply its logo/favicon and mapping visual to the hero, and reminder to replace Second Look and the old “A familiar drug. A different question.” copy and go live. Scope: shared identity, current reader-facing branding/metadata, homepage atlas claim and generic mapping illustration. Supersedes preview-only status and the simplified mark. Production code/assets and contract are in `REMAPRX-IDENTITY.md`; earlier concepts are preserved.
 
 Implemented against live version 33 in an isolated checkout to preserve concurrent published work. The approved icon and wordmarks, SVG/ICO favicon, touch icon and default social image use the adopted blue/yellow palette. Readable HTML mapping labels, target geometry and solid/dashed routes retain the category visual. No evidence records, review approvals, clinical grades, audience or indexing gates change. Relevant checks, browser review, source integration and exact publication receipt are recorded in `REMAPRX-IDENTITY.md`. Earlier mechanism work is not included or declared complete. No upstream/installed/exported One Match Rule synchronization is claimed.
+
+
+### SL-RULE-ATLAS-IDENTITY publication receipt
+
+Sites version 34 published from `a4dc664fd2644d9c4d46d6846d9a546bdf4b8c4c`; deployment `appgdep_6acce58359408191a60c223d56d142db` succeeded October 12, 2026 at 13:50:33 UTC. https://remaprx.com now serves the approved mapping logo/favicon, atlas homepage and reader-facing RemapRx identity. Production build, 30 built public-payload checks, governance, TypeScript, content/evidence/navigation checks and responsive browser checks passed. Live verification covered seven pages and seven byte-identical identity assets. The original audience, noindex/robots, scientific and access/commercial gates are preserved. Exact archive and verification records: `REMAPRX-IDENTITY.md`. Earlier mechanism work remains pending separately.
+
+
+## 2026-10-12 — SL-RULE-ATLAS-MAP-COPY: mapping vocabulary
+
+Source: owner explicitly corrected the hero clause to “and map each connection to its sources” and emphasized map, mapping and remap. Scope: current hero, About and matching metadata/social brand copy. Supersedes the trace wording in the identity contract; preserve precise scientific provenance terminology and historical receipts. Implemented as bounded copy updates with the same approved artwork and existing release gates. Contract and verification/publication status: `REMAPRX-IDENTITY.md`. No ingestion or upstream One Match Rule changes are required.

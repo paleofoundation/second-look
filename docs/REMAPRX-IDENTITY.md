@@ -10,7 +10,7 @@ Homepage copy:
 
 - Eyebrow: “The drug repurposing atlas”
 - Headline: “New targets for approved medications.”
-- Supporting copy: “Explore how existing medications are being studied for new uses. Follow the proposed mechanisms, examine the findings, and trace each connection to its sources.”
+- Supporting copy: “Explore how existing medications are being studied for new uses. Follow the proposed mechanisms, examine the findings, and map each connection to its sources.”
 
 ## Implementation
 
@@ -35,3 +35,22 @@ Public Sites audience, D1/R2 bindings, account/access behavior, noindex/robots s
 Completed before publication: approved-symbol geometry preserved; SVG/ICO validation; native 16/32-pixel samples inspected on light and dark backgrounds; outlined header logo inspected; content, reader-identity/source closure, article navigation, evidence rendering/grades and TypeScript checks pass. React review found no added hooks, data requests or effect listeners; static map components remain top-level, decorative SVGs are hidden from assistive technology, HTML labels provide meaning, and link names remain accessible.
 
 Browser: 390-pixel layout has no horizontal overflow; artwork stays within the figure. Mobile menu opens with Enter and closes with Escape, restoring focus to its trigger. Homepage search for `metformin` navigates to `/search?q=metformin` and displays 37 matching items. Desktop (1280 and 1440 pixels), tablet (768 pixels) and mobile (390 pixels) were visually inspected, with no horizontal overflow. The complete figure and approval note remain in the page flow; desktop uses two columns and tablet/mobile stack. Desktop Drugs navigation opens with Enter and closes with Escape, restoring trigger focus. Search returned 37 matching items. Existing citation/navigation/all-profile checks, wiki-link validation and production build passed. Final packaging rebuild, built public-payload check and exact publication receipts follow after completion.
+
+
+### Publication receipt — October 12, 2026
+
+Published as Sites version 34, source `a4dc664fd2644d9c4d46d6846d9a546bdf4b8c4c`, saved version `appgprj_6ac734459a508191a425263c7645a0be~appgver_9adfb5d53bd08191bfda711110250af5`. Deployment `appgdep_6acce58359408191a60c223d56d142db` succeeded at 13:50:33 UTC. Custom domain: https://remaprx.com. The generated Sites hostname remains `https://second-look-evidence.kmfp.chatgpt.site`; it is a preserved hosting identifier, not reader-facing branding. Local tar SHA-256: `ba99cf0002421f23d617c55b13af446e74a71cb3d9a60799a6d3311bf20295ae`. Sites archive-storage content hash: `3773c4bb17b3d4807fa506772cd73294a6947a01e061560a9d885efb1a1cfc23`.
+
+The final production rebuild and 30 built public-payload boundary checks passed. Live verification passed seven representative pages and seven identity assets, including byte-for-byte SVG/ICO/touch-icon/wordmark comparisons, new category copy and absence of current Second Look branding. Live robots/noindex behavior is preserved. The live browser confirms the new title, logo, headline and complete mapping hero at 1440 pixels with no horizontal overflow. Screenshots and machine-readable local/live verification receipts are in the parent workspace `artifacts/remaprx-identity/`.
+
+Bounded code/assets were applied to the canonical `second-look-navigation` working tree after a clean patch check; concurrent edits were preserved, documentation was appended and marketing hashes were recomputed locally. This completes the requested identity/homepage release. The earlier source-linked mechanism/preliminary-evidence work remains separate pending work.
+
+
+Local integration note: the broad TypeScript command in the dirty canonical working tree also scans preexisting copied source files under `research/batches/RRX-INGEST-001/app-inputs/`, whose adjacent modules are absent. It reports missing-module/implicit-any diagnostics in those handoff snapshots. These snapshot files were not included in the published checkout, whose full TypeScript check passed. No research snapshot or compiler configuration was edited to silence them. A separate application-only diagnostic pass excludes those copied handoff source roots; its result is recorded below.
+
+Application-only integration diagnostics passed with 12 copied research handoff source files excluded; the published checkout passed the normal full TypeScript command. The live homepage browser reported no captured console errors or warnings. Both task-owned local preview servers were stopped after publication.
+
+
+### Brand vocabulary correction — October 12, 2026
+
+Owner correction: use “and map each connection to its sources” in the hero. Map, mapping and remap are the preferred vocabulary for current brand copy. This supersedes the earlier “trace each connection” hero wording. The About description, Open Graph/Twitter descriptions and default social artwork use the same mapping language. Scientific source-traceability terms and historical records retain their precise meanings. This is a copy-only correction; publication and verification are recorded below after completion.
