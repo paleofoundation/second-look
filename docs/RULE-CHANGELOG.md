@@ -134,3 +134,8 @@ Sites version 34 published from `a4dc664fd2644d9c4d46d6846d9a546bdf4b8c4c`; depl
 ## 2026-10-12 — SL-RULE-ATLAS-MAP-COPY: mapping vocabulary
 
 Source: owner explicitly corrected the hero clause to “and map each connection to its sources” and emphasized map, mapping and remap. Scope: current hero, About and matching metadata/social brand copy. Supersedes the trace wording in the identity contract; preserve precise scientific provenance terminology and historical receipts. Implemented as bounded copy updates with the same approved artwork and existing release gates. Contract and verification/publication status: `REMAPRX-IDENTITY.md`. No ingestion or upstream One Match Rule changes are required.
+
+
+### SL-RULE-TOPIC-GUIDES publication receipt
+
+Infrastructure published as Sites version 36 from `c12df71db701d5f8ba180a35f326b1adde64c33b`; deployment `appgdep_6acceff26e3c81918332236af1fbbc1d` succeeded October 12 at 14:34:53 UTC. Live desktop/mobile guide offers and 13 public/private HTTP checks pass; full verification and outstanding release requirements are in `GUIDE-IMPLEMENTATION.md`. Canonical changes were synchronized without replacing concurrent research. The actual Metformin source-return checkpoint holds 12 source assets with independent receipt acceptance; scientific extraction/assessment and the paid manuscript remain outstanding. No sales or membership activated. The isolated Stripe sandbox is still unavailable in the connector.

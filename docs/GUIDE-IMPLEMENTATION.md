@@ -26,7 +26,11 @@ Browser verification covered 1280px desktop, 390px mobile and 320px narrow mobil
 
 Work was isolated from the canonical repository's concurrent research changes. It incorporates published Sites version 35, source `70c19536f84d40153053cb4607a752dbad901c15`, including the approved RemapRx identity and native navigation changes. The project remains public with its existing indexing and scientific release gates. A bounded source sync preserves unrelated canonical work.
 
-The final saved version, deployment and live verification receipt will be recorded after publication. No guide or membership is being activated by this deployment.
+Sites **version 36** published from `c12df71db701d5f8ba180a35f326b1adde64c33b`. Deployment `appgdep_6acceff26e3c81918332236af1fbbc1d` succeeded October 12, 2026 at 14:34:53 UTC. Archive SHA-256 `c0f60ac1e593e5e0db27e420c7721d7e53774239c971f6e986fae2c5c5e16ae5` (448 files). Live verification on https://remaprx.com passed all 13 public/private HTTP probes at 14:35 UTC. The live browser verified the Metformin CTA and pending product state, desktop rail and 390px mobile offer. Screenshots are preserved in the canonical repository under `artifacts/guide-library/`. No guide or membership was activated.
+
+The canonical source sync passed governance and application TypeScript checks. Archived partial TypeScript copies under `research/batches/**/app-inputs/**` initially caused unrelated missing-module errors; these immutable handoff snapshots are now excluded from the application compiler, alongside the existing reference/prior-pilot exclusions. Their files were preserved. `docs/GUIDE-SOURCE-SYNC.json` records the bounded implementation sync.
+
+The direct Metformin acquisition return contains 12 verified source assets, including seven newly held main reports, the MASTERS corrigendum and two MA.32 metabolic supplements. Root independently accepted its schema, byte hashes, report identities/media and archive on October 12. All 165 scientific question inputs remain unextracted; four main reports, the COVID-OUT correction body, specified companions and version checks remain missing. The exact current continuation is the canonical `research/batches/RRX-GUIDE-METFORMIN-001/ACQUISITION-HANDOFF.md`.
 
 ## Outstanding release requirements
 
