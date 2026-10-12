@@ -1,0 +1,72 @@
+{
+  "id": "RRX-OUTCOME-SUMMARY-001",
+  "version": "1.0.0",
+  "createdAt": "2026-10-12T17:32:19.189287+00:00",
+  "scope": "Reconcile 62 existing selected-source synthesis rows into shared drug-condition-outcome summaries. No new acquisition, original-paper extraction, or source-status verification.",
+  "authority": "Owner October 12 2026 request for Examine-style outcome-level A\u2013F benefit assessments, separate effect and evidence counts, one condition group and right research drawer. Latest owner scope supersedes prior confidence-column presentation; original confidence assessments are retained.",
+  "inputs": [
+    {
+      "path": "data/public-reader-evidence.json",
+      "sha256": "d6f8c4bf30679070f00caee89d7c44ff0193f19c4891be86b7cf7d3073c62d1d"
+    },
+    {
+      "path": "data/reader-evidence.json",
+      "sha256": "3b97754bb68fc802146a6f1cd59faad3e63f0d36307c045c4f82b543411b8e53"
+    },
+    {
+      "path": "data/public-content.json",
+      "sha256": "f513f35f1a829a28297db4d549303290e947cf535e1782203cbb71e0d2098cac"
+    },
+    {
+      "path": "editorial/evidence-assessments.json",
+      "sha256": "f7ead7a93823347b40b3af8a4e3b128e83be28626fb231dc7ceed9135bd09acc"
+    },
+    {
+      "path": "data/public-evidence-assessments.json",
+      "sha256": "b6029f133cc17da6f91d8ecb16d3e991c8ab29ce1924f1780d811de4c09961eb"
+    },
+    {
+      "path": "editorial/reader-source-aliases.json",
+      "sha256": "70186e5e5ced9232a4a21b321c5c988058191c514131dbea8ce442e352cb2fef"
+    },
+    {
+      "path": "editorial/reader-source-corrections.json",
+      "sha256": "06561277b96ef2f869312715e2a55ebcc9a9c84662b8e0d59714dd8395e7b0e2"
+    },
+    {
+      "path": "data/outcome-registry.json",
+      "sha256": "af9726dd1c691ff6d23ab26ffe1332fedf15af63a127f79709ba35cff06d8566"
+    }
+  ],
+  "gitRevision": "1464e9e5b998bcfbf51acdcf566e80370bab3bb5",
+  "sourceAccess": "Canonical accepted extraction and prior editorial records only; not fresh source inspection.",
+  "tiers": "Eligible original clinical reports support clinical findings; context and computational evidence never increase RCT counts.",
+  "identity": "Keep every original synthesis/source identity. New summary IDs map original rows. Normalize demonstrable duplicate reports by DOI/PMID and documented common trial; dedupe participants across families and repeated outcomes.",
+  "scopeRules": [
+    "Do not pool prevention and established-disease treatment.",
+    "Keep distinct endpoints/timepoints in separate summary rows, grouped under one condition heading.",
+    "Combine compatible outcome rows only with explicit rationale; do not calculate undocumented pooled effects.",
+    "Record held/correction and nonhuman-only findings without a fabricated benefit letter.",
+    "Count only actual randomized comparisons relevant to the stated drug outcome; retain randomized dose/regimen studies with explicit attribution limits.",
+    "Missing, ambiguous and conflicting participant denominators remain null with reason."
+  ],
+  "outputs": [
+    "data/outcome-summaries.json",
+    "lib/outcome-summary.ts",
+    "editorial/OUTCOME-BENEFIT-GRADING.md",
+    "editorial/outcome-summary/assessments.json",
+    "editorial/outcome-summary/trial-identities.json",
+    "scripts/check-outcome-summaries.mjs"
+  ],
+  "schema": "schema.json",
+  "ownership": "outcome_data worker writes new data/adapter/contracts/check only; parent integrator owns component and project contract integration.",
+  "acceptance": [
+    "All 62 input syntheses mapped once; original records untouched.",
+    "Explicit rationale, source locators, authored date, source fingerprints and honest review status.",
+    "Unique study families and participant totals agree across row/group projections.",
+    "Reject stale inputs, missing rows, mismatched IDs, manufactured null-to-F grades, duplicate trial totals and zero for unknown participants.",
+    "Independent integrator acceptance after data and browser checks."
+  ],
+  "rollback": "Remove new summary adapter/projections; immutable original synthesis and assessment inputs remain untouched.",
+  "release": "AI-assisted selected-source editorial draft; no human scientific approval, exhaustive search, Q01\u2013Q15 completion or deployment implied."
+}
