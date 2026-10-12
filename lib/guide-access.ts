@@ -79,10 +79,10 @@ export function guideEntitlement(userId: string, product: GuideProduct | undefin
 function orderDownloadDenial(order: GuideOrder, product: GuideProduct | undefined, edition: GuideEdition | undefined, available: boolean) {
   const unavailable = (code: string, reason: string) => ({ downloadUnavailableCode: code, downloadUnavailableReason: reason });
   if (order.status !== 'paid') {
-    const reasons: Record<string, string> = { pending: 'Payment is pending; this order does not yet grant a download.', failed: 'Payment failed; this order does not grant a download.', refunded: 'This order was refunded and no longer grants a download.', disputed: 'This order is disputed; purchase access is unavailable.', cancelled: 'This order was cancelled and does not grant a download.' };
+    const reasons: Record<string, string> = { pending: 'Payment is pending; this order does not yet grant a download.', failed: 'Payment failed; this order does not grant a download.', refunded: 'This order was refunded and no longer grants a download.', disputed: 'This order is disputed; purchase access is unavailable.', cancelled: 'This order was canceled and does not grant a download.' };
     return unavailable(reasons[order.status] ? 'order_' + order.status : 'order_status_unverified', reasons[order.status] ?? 'The order status could not be verified; purchase access is unavailable.');
   }
-  if (!product) return unavailable('product_unavailable', 'The guide catalogue record is unavailable. Your purchase record has been retained.');
+  if (!product) return unavailable('product_unavailable', 'The guide catalog record is unavailable. Your purchase record has been retained.');
   if (!edition) return unavailable('edition_unavailable', 'The purchased edition record is unavailable. Your purchase record has been retained.');
   if (product.releaseState === 'withdrawn' || edition.releaseState === 'withdrawn') return unavailable('edition_withdrawn', 'This edition has been withdrawn from download. Your purchase record has been retained.');
   if (product.releaseState !== 'released' || edition.releaseState !== 'released') return unavailable('release_pending', 'This edition has not been released for download.');

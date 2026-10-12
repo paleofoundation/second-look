@@ -31,7 +31,7 @@ export default async function RootLayout({
   const user=await getChatGPTUser();
   const theme={...secondLookTheme,accountLink:{label:"Account",href:"/account"},primaryAction:user?{label:"My guides",href:"/guides/library"}:{label:"Log in",href:chatGPTSignInPath("/guides/library")}};
   return (
-    <html lang="en">
+    <html lang="en-US">
       <body className="antialiased"><LayoutMetrics/><ThemeShell config={theme}>{children}</ThemeShell></body>
     </html>
   );

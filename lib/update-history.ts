@@ -24,7 +24,7 @@ export function articleUpdatesForPath(pagePath: string): ArticleUpdate[] {
 }
 
 export function articleUpdateDate(date: string): string {
-  return new Intl.DateTimeFormat('en-GB', {
+  return new Intl.DateTimeFormat('en-US', {
     day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC',
   }).format(new Date(`${date}T12:00:00Z`));
 }

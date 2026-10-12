@@ -42,7 +42,7 @@ export function AcquisitionPage({page}:{page:AcquisitionPageData}){
    <section><h2>Source inventory</h2><p>Inventory labels describe acquired material. Paper-to-request mappings are candidate and unverified; they do not establish clinical relevance.</p>
     {page.source_inventory.length?<InventoryGroups rows={page.source_inventory}/>:<p>NOT IN CORPUS — no acquired source records are mapped to this request.</p>}
    </section>
-   {page.candidate_itraconazole_links.length?<section><h2>Itraconazole catalogue candidates</h2><p>Unverified catalogue references only. Candidate and held mappings do not establish clinical relevance and are excluded from clinical support.</p><InventoryGroups rows={page.candidate_itraconazole_links}/></section>:null}
+   {page.candidate_itraconazole_links.length?<section><h2>Itraconazole catalog candidates</h2><p>Unverified catalog references only. Candidate and held mappings do not establish clinical relevance and are excluded from clinical support.</p><InventoryGroups rows={page.candidate_itraconazole_links}/></section>:null}
    <details className="acq-group"><summary>Unresolved acquisition gaps</summary><ul>{page.unresolved_gaps.map(gap=><li key={gap.id}><strong>{gap.id}</strong> · {gap.kind} · unresolved<p>{gap.next_action}</p></li>)}</ul></details>
   </div></div>
  </article>;

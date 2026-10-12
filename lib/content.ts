@@ -21,7 +21,9 @@ export type Term={aliases?:string[];slug:string;title:string;meaning:string;cont
 const canonicalContent=raw as unknown as {sources:SourceDetail[];guides:Guide[];glossary:Term[]};
 // Pending discovery entries share the same route, search and directory registry.
 // An evidence-backed canonical guide replaces its discovery entry by ID or route.
-export const content={...canonicalContent,guides:[...canonicalContent.guides,...(discoveryPages as Guide[]).filter(page=>!canonicalContent.guides.some(guide=>guide.id===page.id||guide.slug===page.slug))]};
+// American English display copy preserves the fingerprinted source population record.
+const displaySources=canonicalContent.sources.map(source=>({...source,population:source.population==='73 men with compulsive sexual behaviour disorder'?'73 men with compulsive sexual behavior disorder':source.population}));
+export const content={...canonicalContent,sources:displaySources,guides:[...canonicalContent.guides,...(discoveryPages as Guide[]).filter(page=>!canonicalContent.guides.some(guide=>guide.id===page.id||guide.slug===page.slug))]};
 export const topics=rawTopics as unknown as {id:string;question:string;related?:string;category?:string}[];
 export function sourceById(id:string){return content.sources.find(x=>x.id===id)}
 export function guideUrl(g:Guide){return g.slug.startsWith('/')?g.slug:`/answers/${g.slug}`}

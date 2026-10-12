@@ -52,7 +52,7 @@ for (const update of articleUpdates) {
   assert(update.title && update.summary && update.changeType, 'Meaningful history fields are present');
   assert.equal(new Set(update.pagePaths).size, update.pagePaths.length, 'History scope does not duplicate routes');
 }
-assert.equal(articleUpdateDate('2026-10-11'), '11 October 2026', 'Dates are timezone-stable');
+assert.equal(articleUpdateDate('2026-10-11'), 'October 11, 2026', 'Dates are timezone-stable');
 assert.deepEqual(articleUpdatesForPath('/drugs/a-future-article'), [], 'New pages do not inherit old changes');
 assert.deepEqual(articleUpdatesForPath('/drugs/metformin/?view=reader#edition'), articleUpdatesForPath('/drugs/metformin'), 'History scope tolerates query and fragment URLs');
 

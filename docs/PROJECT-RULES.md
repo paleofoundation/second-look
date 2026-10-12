@@ -17,6 +17,12 @@ Every researcher starts with [RESEARCH-INGEST.md](RESEARCH-INGEST.md). A new col
 
 No acquisition/file-request handoff or substantive extraction/import starts without a persisted matching plan and recorded GP Plan readiness. Raw files may be inventoried beforehand. A historical plan PASS does not authorize a new batch or prove receipt, extraction, appraisal or release. Complete the applicable checks autonomously; this prerequisite does not add a routine owner-approval step.
 
+## Language and spelling
+
+Owner instruction, October 12, 2026: all Drug Repurposing / Second Look / RemapRx pages must be written in **American English, with American English spelling**. This applies to new, generated, imported and revised reader-facing prose, including headings, navigation labels, explanations, study summaries, tables, FAQs, disclosures, interface messages, image descriptions and page metadata. Use forms such as `behavior`, `aging`, `hematological`, `randomized`, `analyzed`, `catalog` and `canceled`. Declare the document language as `en-US` and use American English for prose date formatting.
+
+Preserve exact published study titles, verbatim quotations, proper names and source records when their original spelling is required for fidelity. Write surrounding explanations and paraphrases in American English. Preserve stable URLs, identifiers, schema keys and compatibility aliases; normalize their visible labels without changing stored identity. Check authored copy and generated public projections before publication. This supersedes any inherited British English default for this project's pages; the reference sites and pinned upstream rule snapshot remain separate.
+
 ## Second Look presentation and scope
 
 Preserve broad drug and condition parents, separate drug/condition registries and scoped child questions. The initial portfolio target is 30 distinct drugs and 30 distinct conditions; records or directory counts do not establish complete research. Preserve explicitly required candidates separately from demand rankings and efficacy claims.
