@@ -2,6 +2,12 @@
 
 Record requirements when adopted, even if implementation is pending. Keep history append-only; describe supersession explicitly. Each entry needs source/date, scope, requirement, affected contracts, implementation/verification/release status and unresolved work.
 
+## 2026-10-12 — SL-RULE-PHYSICIAN-PORTAL: table-led member packets
+
+Source: owner request to build condition-specific physician packets into the paid-subscriber portal, organize the material with tables and support printing/emailing; follow-up permits leaving specialist name/contact blank. Scope: member feature, document redesign and owner-inspectable NSCLC sample. Supersedes sample-only implementation scope. Contract: `docs/PHYSICIAN-PACKETS.md`.
+
+Implementation: private membership/edition checks, condition selection, structured preview, print styling, verified PDF download and member-controlled email draft. The owner does not require a physician signature; no specialist credentials are invented. Credit remains separate from the existing qualified clinical and commercial release gates. Local verification and deployment are recorded in `docs/PHYSICIAN-PACKET-IMPLEMENTATION.md`; live billing, real approvals and sending messages remain outside this development operation.
+
 ## 2026-10-11 — SL-RULE-001: durable collaborator repository
 
 Source: owner request in the Drug Repurposing chat: the Second Look website needs a GitHub repository for research collaborators, including all canonical instructions and One Match rules so rules created on this build are not lost. Owner selected private `paleofoundation/second-look`.

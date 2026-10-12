@@ -20,7 +20,7 @@ export function PurchaseStatus(){
  const[data,setData]=useState<GuideLibraryState|null>(null);const[error,setError]=useState('');const[busy,setBusy]=useState(false);
  async function refresh(){setBusy(true);setError('');try{const response=await fetch('/api/purchases',{cache:'no-store'});const result=await response.json() as GuideLibraryState & {error?:string};if(!response.ok){setError(result.error||'Your guide library could not load. Please retry.');return}setData(result)}catch{setError('Your guide library could not load. Please retry.')}finally{setBusy(false)}}
  useEffect(()=>{void refresh()},[]);
- return <div className="guide-account-library"><div className="inline-actions"><h2>Your guide editions</h2><button className="button ghost" disabled={busy} onClick={refresh}>{busy?'Loading…':'Refresh library'}</button></div>
+ return <div className="guide-account-library"><div className="inline-actions"><h2>Your guide editions</h2><a className="button ghost" href="/account/physician-packets">Physician packets</a><button className="button ghost" disabled={busy} onClick={refresh}>{busy?'Loading…':'Refresh library'}</button></div>
  {error?<p className="notice error" role="alert">{error}</p>:null}
  {!data&&!error?<p role="status">Loading your private guide library…</p>:null}
  {data?<><p role="status">{data.message}</p><p className="small">{data.membership?`Guide membership: ${data.membership.state==='cancelled'?'canceled':data.membership.state}${data.membership.cancelAtPeriodEnd&&data.membership.state==='active'?' · renewal canceled; access continues through the paid period':''}${data.membership.expiresAt?' · period ends '+data.membership.expiresAt:''}`:'No active guide membership.'}</p>
