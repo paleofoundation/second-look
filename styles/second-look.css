@@ -14,3 +14,21 @@
 .omr-theme .sl-hero-author{display:block}
 .omr-theme .sl-hero-author .author-card{margin:0}
 .omr-theme .sl-hero-author .author-card p{font-family:var(--font-sans);font-size:.78rem;line-height:1.5}
+
+/* Keep the identity mark beside the name without nesting a link in a button. */
+.omr-theme .author-identity{display:flex;align-items:flex-end;gap:6px;max-width:100%}
+.omr-theme .author-identity .author-trigger{min-width:0;margin-bottom:0}
+.omr-theme .author-identity .omr-orcid{margin:0 0 1px}
+.omr-theme .author-identity .author-trigger strong{font-weight:500}
+.omr-theme .sl-page-snapshot{margin-top:auto;padding:18px;background:#ffffff12;border:1px solid #ffffff30;border-radius:10px;font-size:.875rem;line-height:1.5}
+.omr-theme .sl-page-snapshot__header{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:16px}
+.omr-theme .sl-page-snapshot__header h2{margin:0;font:500 1.1rem/1.3 var(--font-sans);color:inherit}
+.omr-theme .sl-page-snapshot__info{display:flex;padding:3px;background:none;border:0;color:inherit;border-radius:50%}
+.omr-theme .sl-page-snapshot__info svg{width:18px;height:18px}
+.omr-theme .sl-page-snapshot__row{display:flex;align-items:center;gap:10px;color:inherit;margin:10px 0;text-decoration:none}
+.omr-theme .sl-page-snapshot__row svg{width:19px;height:19px;flex-shrink:0;opacity:.8}
+.omr-theme .sl-page-snapshot__row:last-child{margin-bottom:0}
+.snapshot-info{max-width:min(330px,calc(100vw - 32px));background:white;color:var(--brand-ink);padding:18px;border:1px solid var(--brand-line);font:14px/1.6 var(--font-sans);z-index:190}
+.snapshot-info p{margin:0 0 12px}.snapshot-info p:last-child{margin:0}
+@media(max-width:991px){.omr-theme .research-hero__right .sl-page-snapshot{flex:1;min-width:220px;margin-top:0}}
+@media(max-width:600px){.omr-theme .research-hero__right .sl-page-snapshot{min-width:0;width:100%;flex-basis:100%}}

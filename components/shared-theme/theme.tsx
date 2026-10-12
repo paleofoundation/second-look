@@ -172,9 +172,8 @@ export function ThemeHome({ content }: ThemeHomeProps) {
 export function OrcidLink({ orcid, name }: { orcid?: string; name: string }) {
   const id = orcid?.trim().replace(/^https?:\/\/orcid\.org\//i, "").replace(/\/$/, "");
   if (!id || !/^\d{4}-\d{4}-\d{4}-\d{3}[\dX]$/i.test(id)) return <span className="omr-author__missing">ORCID iD not supplied</span>;
-  return <a className="omr-orcid" href={`https://orcid.org/${id}`} rel="noopener noreferrer" target="_blank" aria-label={`${name} ORCID iD ${id}`}>
-    <svg width="20" height="20" viewBox="0 0 256 256" aria-hidden="true" focusable="false"><circle cx="128" cy="128" r="128" fill="#A6CE39" /><path fill="#fff" d="M86 186H70V80h16v106Zm-8-121a10 10 0 1 1 0-20 10 10 0 0 1 0 20Zm33 15h41c39 0 59 25 59 53s-20 53-59 53h-41V80Zm16 15v76h24c29 0 44-16 44-38s-15-38-44-38h-24Z" /></svg>
-    <span>ORCID iD · {id}</span>
+  return <a className="omr-orcid" href={`https://orcid.org/${id}`} rel="noopener noreferrer" target="_blank" aria-label={`${name} ORCID iD ${id}`} title={`${name} on ORCID`}>
+    <svg width="20" height="20" viewBox="0 0 256 256" aria-hidden="true" focusable="false"><path fill="#A6CE39" d="M256 128c0 70.7-57.3 128-128 128S0 198.7 0 128 57.3 0 128 0s128 57.3 128 128z"/><path fill="#fff" d="M86.3 186.2H70.9V79.1h15.4v107.1zM108.9 79.1h41.6c39.6 0 57 28.3 57 53.6 0 27.5-21.5 53.6-56.8 53.6h-41.8V79.1zm15.4 93.3h24.5c34.9 0 42.9-26.5 42.9-39.7 0-21.5-13.7-39.7-43.7-39.7h-23.7v79.4zM88.7 56.8c0 5.5-4.5 10.1-10.1 10.1s-10.1-4.6-10.1-10.1c0-5.6 4.5-10.1 10.1-10.1s10.1 4.6 10.1 10.1z"/></svg>
   </a>;
 }
 export function AuthorCard({ author }: { author: ThemeAuthor }) {
