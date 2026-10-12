@@ -16,7 +16,7 @@ Adopted 12 October 2026 from the owner's palette05.png, ten supplied health-topi
 | Muted ink | `#5B6175` | Secondary readable text |
 | White | `#FFFFFF` | Reading surface and text on blue |
 
-Use shared CSS tokens and `lib/theme/config.tsx`; component states must follow the same roles. Preserve scientific grade colors, error colors and third-party identity marks where color conveys a distinct meaning. Keep readable text in print. Key measured contrast ratios: white/brand blue 7.29:1, yellow/brand blue 4.66:1, ink/yellow 9.94:1, muted ink/white 6.16:1. Gray is a supplied swatch, not the default text color.
+Use shared CSS tokens and `lib/theme/config.tsx`; component states must follow the same roles. Evidence grades use the brand palette defined below; preserve error colors and third-party identity marks where color conveys a distinct meaning. Keep readable text in print. Key measured contrast ratios: white/brand blue 7.29:1, yellow/brand blue 4.66:1, ink/yellow 9.94:1, muted ink/white 6.16:1. Gray is a supplied swatch, not the default text color.
 
 ## Illustration feel
 
@@ -45,3 +45,7 @@ The color migration was rendered and checked before generating the two topic ill
 ## Internal link presentation
 
 Owner instruction, October 12, 2026: internal page links display without underlines, including hover, active, visited and keyboard-focus states. Apply the same treatment to internal fragment/citation anchors. Retain link color, native navigation and visible keyboard focus outlines. This supersedes inherited wiki-link and internal-link hover underlines; external source-link styling remains unchanged.
+
+## Evidence-grade colors
+
+Owner correction, October 12, 2026: evidence-grade badges use RemapRx colors. This supersedes the earlier exception preserving inherited teal grade colors. High uses deep blue with white text; Moderate uses brand blue with white text; Low uses a 22% brand-blue tint with ink text; Very low uses pale blue with ink text; Not graded uses the neutral surface and muted ink. Preserve the literal grade labels, assessed/unassessed distinction, grading logic and research-panel interactions. Color changes do not change scientific assessments.

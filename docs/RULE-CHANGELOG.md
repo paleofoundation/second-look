@@ -73,3 +73,7 @@ Verification before packaging: governance integrity, canonical content, reader i
 Source: owner's request with the Metformin introduction screenshot: “Remove the underline style from this website. internally-linked pages should show up without underline.” Adopted in `docs/DESIGN-SYSTEM.md`: no underlines for internal page and fragment/citation links in normal or interaction states, preserving blue links and keyboard focus. Supersedes inherited wiki-link and hover underline styles. Consulted Microbiome Medicine theme styles and PepsAnon prose/theme styles; current owner instruction takes precedence.
 
 Implementation: shared global internal-destination CSS override; no content or target changes. Verification and publication pending. Upstream/reference projects unchanged.
+
+## 2026-10-12 — SL-RULE-GRADE-COLORS: brand evidence-grade palette
+
+Source: owner's evidence-table screenshot and explicit request that evidence grades use the website's colors. Adopted in `docs/DESIGN-SYSTEM.md`: replace inherited teal badges with the RemapRx blue scale and neutral ungraded treatment, preserving labels and evidence semantics. Supersedes the prior grade-color preservation exception for badge styling only. Shared `reading-modules.css` is the implementation; no evidence records or grading logic are changed. Verification/publication receipt follows locally after deployment; reference sites and upstream rules remain unchanged.
