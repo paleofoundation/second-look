@@ -21,7 +21,7 @@ for (const file of generationFiles) {
   let records;
   try { records = await read(`assets/hero-art/${file}`); }
   catch (error) {
-    if (error.code === 'ENOENT' && (file === 'glossary-generation.json' || process.argv.includes('--partial'))) continue;
+    if (error.code === 'ENOENT' && process.argv.includes('--partial')) continue;
     throw error;
   }
   for (const item of records) {
@@ -46,9 +46,10 @@ for (const file of generationFiles) {
     });
   }
 }
-const missing = topics.filter(page => !definitions.has(page.slug));
+const requiredPages = [...topics, ...glossary];
+const missing = requiredPages.filter(page => !definitions.has(page.slug));
 if (!process.argv.includes('--partial')) assert.equal(missing.length, 0, `Missing artwork: ${missing.map(page => page.slug).join(', ')}`);
 assert.equal(new Set([...definitions.values()].map(item => item.subject)).size, definitions.size, 'Every illustrated page has an individual asset');
 await writeFile('data/topic-hero-art.json', JSON.stringify([...definitions.values()].sort((a, b) => a.canonicalPath.localeCompare(b.canonicalPath)), null, 2) + '\n');
 const glossaryCount = [...definitions.keys()].filter(canonicalPath => canonicalPath.startsWith('/glossary/')).length;
-console.log(`Mapped ${topics.length - missing.length}/${topics.length} required drug/condition topics and ${glossaryCount} glossary illustrations; ${missing.length} required topics remain.`);
+console.log(`Mapped ${definitions.size}/${requiredPages.length} required pages, including ${glossaryCount}/${glossary.length} glossary illustrations; ${missing.length} pages remain.`);

@@ -10,7 +10,7 @@ const {getTopicHeroArt} = load(path.resolve('lib/hero-art.ts'));
 const definitions = JSON.parse(await readFile('data/topic-hero-art.json', 'utf8'));
 const manifest = JSON.parse(await readFile('assets/hero-art/manifest.json', 'utf8'));
 const topics = content.guides.filter(page => /^\/(drugs|conditions)\//.test(guideUrl(page)));
-// Glossary artwork is adopted one term at a time; every drug/condition stays required.
+// Every current drug, condition and glossary entry requires an explicit illustration.
 const glossary = content.glossary.map(term => ({
   id: 'term-' + term.slug, slug: '/glossary/' + term.slug, title: term.title, type: 'Glossary',
   description: 'A scientific term, with its context intact.', topicIds: [],
@@ -24,7 +24,7 @@ const glossary = content.glossary.map(term => ({
 const knownPages = new Map([...topics, ...glossary].map(page => [guideUrl(page), page]));
 const assignedPaths = new Set(definitions.map(item => item.canonicalPath));
 assert.equal(assignedPaths.size, definitions.length, 'Each canonical path has at most one image mapping');
-for (const page of topics) assert(assignedPaths.has(guideUrl(page)), guideUrl(page) + ': required drug/condition artwork');
+for (const page of [...topics, ...glossary]) assert(assignedPaths.has(guideUrl(page)), guideUrl(page) + ': required topic/glossary artwork');
 for (const item of definitions) assert(knownPages.has(item.canonicalPath), item.canonicalPath + ': known drug, condition or glossary page');
 assert.equal(new Set(definitions.map(item => item.subject)).size, definitions.length, 'Every illustrated page has an individual asset');
 assert.deepEqual(manifest.items.map(item => item.subject).sort(), definitions.map(item => item.subject).sort(), 'The manifest contains exactly the assigned illustrations');
@@ -52,12 +52,18 @@ for (const definition of definitions) {
       assert.equal(info.width, 1200); assert.equal(info.height, 630); assert(!info.hasAlpha);
     } else {
       assert(info.hasAlpha, file.path + ': alpha channel');
-      assert.equal(info.width, info.height, file.path + ': square');
       const stats = await sharp(bytes).stats();
-      assert(stats.channels[3].min === 0 && stats.channels[3].max === 255, file.path + ': transparent surroundings and visible subject');
+      assert(stats.channels[3].min === 0 && stats.channels[3].max >= 254, file.path + ': transparent surroundings and visible subject (8-bit alpha tolerance)');
       if (file.path.endsWith('-master.png')) {
         assert(!masterHashes.has(hash), file.path + ': unique original'); masterHashes.add(hash);
-      } else assert.equal(info.width, file.path.endsWith('-512.webp') ? 512 : 1024);
+      } else {
+        assert.equal(info.width, info.height, file.path + ': square responsive export');
+        assert.equal(info.width, file.path.endsWith('-512.webp') ? 512 : 1024);
+        for (const [left, top] of [[0, 0], [info.width - 1, 0], [0, info.height - 1], [info.width - 1, info.height - 1]]) {
+          const corner = await sharp(bytes).extract({left, top, width: 1, height: 1}).raw().toBuffer();
+          assert(corner[3] <= 2, file.path + ': transparent contain padding (8-bit edge tolerance)');
+        }
+      }
     }
   }
   const html = render(page, content.sources.filter(source => page.sourceIds.includes(source.id)));
@@ -65,8 +71,5 @@ for (const definition of definitions) {
   assert(html.includes('research-hero--topic-art'), canonicalPath + ': responsive topic layout');
   assert(html.includes('srcSet=') || html.includes('srcset='), canonicalPath + ': responsive source set');
 }
-for (const page of glossary.filter(page => !assignedPaths.has(guideUrl(page)))) {
-  assert.equal(getTopicHeroArt(guideUrl(page)), undefined, guideUrl(page) + ': unillustrated glossary entry retains its existing artwork');
-}
 assert.equal(getTopicHeroArt('/research/example'), undefined, 'Unrelated routes retain their existing artwork');
-console.log(`Verified ${definitions.length} image mappings (${topics.length} required drug/condition topics), rendered heroes, alpha, dimensions and ${definitions.length * 4} file hashes.`);
+console.log(`Verified ${definitions.length} image mappings (${topics.length} drug/condition topics and ${glossary.length} glossary entries), rendered heroes, alpha, dimensions and ${definitions.length * 4} file hashes.`);

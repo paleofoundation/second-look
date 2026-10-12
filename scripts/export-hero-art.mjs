@@ -27,7 +27,7 @@ for (const subject of subjects) {
   };
   for (const size of [512, 1024]) {
     const path = `public/art/${subject}-blue-hero${size === 512 ? '-512' : ''}.webp`;
-    if (!(await fresh(path))) await sharp(master).resize(size, size, { fit: 'contain' }).webp({ quality: 88, alphaQuality: 100, effort: 6 }).toFile(path);
+    if (!(await fresh(path))) await sharp(master).resize(size, size, { fit: 'contain', background: {r: 0, g: 0, b: 0, alpha: 0} }).webp({ quality: 88, alphaQuality: 100, effort: 6 }).toFile(path);
     outputs.push(path);
   }
   const social = `public/art/${subject}-blue-social.png`;

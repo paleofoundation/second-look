@@ -23,3 +23,7 @@ Drug subjects are generic medication forms, without commercial branding, product
 Hedgehog pathway starts the glossary series. `glossary-generation.json` retains its exact built-in ImageGen prompt, visible description, reference and original output path. `hedgehog-pathway-blue-master.png` is the retained transparent master; responsive WebP and social PNG files use the same export pipeline. The image is a conceptual membrane-to-nucleus signaling illustration, not a complete molecular pathway map. The concept follows the existing glossary definition and its [NCI reference](https://www.cancer.gov/publications/dictionaries/cancer-terms/def/hedgehog-signaling-pathway).
 
 Glossary assignments are explicit and incremental. The catalog builder validates known glossary routes while continuing to require all drug/condition assignments. Rendering and metadata use the existing shared image registry. See `docs/GLOSSARY-HERO-PILOT.md` for the first illustration's verification and publication.
+
+## Complete glossary set
+
+The 2026-10-12 rollout adds 20 glossary originals to the existing Hedgehog illustration. See glossary-generation.json for exact prompts and original paths, manifest.json for file hashes, and ../../docs/GLOSSARY-HERO-ROLLOUT.md for verification. Original master aspect ratios are retained; WebP contain padding is transparent.
