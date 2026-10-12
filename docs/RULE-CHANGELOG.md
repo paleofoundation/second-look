@@ -81,3 +81,13 @@ Source: owner's evidence-table screenshot and explicit request that evidence gra
 ## 2026-10-12 — SL-RULE-GRADE-BARS: evidence strength icons
 
 Source: owner's request to add the screenshot's small strength bars beside grades using the blue colors. Adopted in `docs/DESIGN-SYSTEM.md`; implemented in the shared evidence table using the existing `.grade-bars` styling and PepsAnon `components/peptide/evidence.tsx` reference. Three ascending bars encode High/Moderate/Low/Very low as 3/2/1/0 filled; ungraded evidence has no strength icon. Visible labels, accessible button names, blue palette and grade-panel actions are preserved. No scientific record or grading logic changes. Verification/release receipt follows locally.
+
+## 2026-10-12 — SL-RULE-HERO-ROLLOUT: complete the blue topic illustration set
+
+Source: owner request, “Let's create matching hero images for the remaining drug and condition pages on remaprx.com, using the same blue style and metadata setup.”
+
+Adopted scope: extend the existing Metformin/Parkinson illustration system to all current drug and condition routes, including canonical discovery pages. Preserve original blue art direction, left hero placement, transparent responsive WebP assets, individual social previews and accurate descriptive metadata. This supersedes the first pass's pending remaining-topic artwork scope; PepsAnon migration remains separate. Contract: `DESIGN-SYSTEM.md`; exact prompts/master provenance: `assets/hero-art/*-generation.json`; verification and publication: `HERO-ROLLOUT-VALIDATION.md`.
+
+Implementation underway in a checkout synchronized with live Sites version 26, source `f0d929b67c8c74b23601c59565080729fa6d1f06`. The merged route inventory has 64 topic pages (32 drugs and 32 conditions), requiring 62 new originals. Scientific prose, evidence grades, access, indexing and commercial release are unchanged. Final asset coverage, validation and deployment must be recorded before marking this rollout complete. No upstream/installed/exported rule synchronization is claimed.
+
+SL-RULE-HERO-ROLLOUT implementation complete before packaging: 62 new original illustrations, 64-route public catalog, responsive WebP/social PNG derivatives, exact prompts and hashes. Source was reconciled onto `f4804463e383f0bcf44b9b51fa691056278208dc`, preserving newer link and evidence-badge updates. Complete source, local HTTP metadata/image and responsive browser checks passed; production build/publication receipt belongs in `HERO-ROLLOUT-VALIDATION.md`.

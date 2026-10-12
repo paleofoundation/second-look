@@ -40,7 +40,7 @@ Consulted the Microbiome Medicine ArticleView, image/hero styles and design-syst
 
 ## Verification and release
 
-The color migration was rendered and checked before generating the two topic illustrations. Source-level CSS parsing and key contrast checks passed. Final type/build, governance, source-boundary, image HTTP/metadata and responsive browser checks are recorded in `DESIGN-VALIDATION.md`. Publication is recorded separately from scientific approval. Future illustration expansion and the PepsAnon rollout remain outside this first two-page pass.
+The color migration was rendered and checked before generating the two topic illustrations. Source-level CSS parsing and key contrast checks passed. Final type/build, governance, source-boundary, image HTTP/metadata and responsive browser checks are recorded in `DESIGN-VALIDATION.md`. Publication is recorded separately from scientific approval. This preserves the initial two-page pass; subsequent authorized expansion is recorded separately.
 
 ## Internal link presentation
 
@@ -51,3 +51,11 @@ Owner instruction, October 12, 2026: internal page links display without underli
 Owner correction, October 12, 2026: evidence-grade badges use RemapRx colors. This supersedes the earlier exception preserving inherited teal grade colors. High uses deep blue with white text; Moderate uses brand blue with white text; Low uses a 22% brand-blue tint with ink text; Very low uses pale blue with ink text; Not graded uses the neutral surface and muted ink. Preserve the literal grade labels, assessed/unassessed distinction, grading logic and research-panel interactions. Color changes do not change scientific assessments.
 
 Owner follow-up, October 12, 2026: add the screenshot's three ascending strength bars before evidence-grade labels. High fills three, Moderate two, Low one, Very low zero; Not graded omits the strength icon to distinguish unassessed evidence. Bars inherit the badge foreground against the established blue backgrounds (white on dark blue, ink on pale blue); unfilled bars are subdued. Keep the labels and mark redundant bars decorative for assistive technology.
+
+## Remaining topic illustration rollout — October 12, 2026
+
+The owner requested matching hero images for all remaining drug and condition pages, using the accepted blue style and metadata. This expands the first two-page pass to the entire current canonical route inventory, including discovery entries for Tadalafil and Aging & longevity. The merged registry contains 32 drug and 32 condition pages; 62 new originals join the two approved masters. The implementation uses a distinct asset for each topic, with generic medication forms for drugs and neutral anatomy or topic imagery for conditions. These are editorial illustrations, not photographs of commercial products, diagnostic images or treatment claims. PepsAnon remains outside this rollout.
+
+`data/topic-hero-art.json` is the public descriptive catalog. `lib/hero-art.ts` derives the typed rendering, responsive files and social records from it. Internal generation records and exact prompts remain in `assets/hero-art/*-generation.json`, separate from runtime metadata. `scripts/build-hero-catalog.mjs` requires every canonical drug and condition page to have an explicit assignment and rejects duplicate or unknown routes. Its `--partial` option is for local work in progress only. Final publication requires complete coverage.
+
+Run the catalog builder, exporter and `scripts/check-hero-art.mjs` in order after creating artwork. Retain original alpha and compositions; technical resizing and PNG/WebP exports use the existing pipeline. The validator checks every rendered topic, all file dimensions, actual transparency and hashes, unique masters and descriptive metadata. Record responsive browser checks and the exact deployment in `HERO-ROLLOUT-VALIDATION.md`. Existing layout, navigation, scientific content, access and indexing gates remain in force.

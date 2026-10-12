@@ -75,3 +75,6 @@ Update this contract or the appropriate ingestion/editorial contract and append 
 ## RemapRx visual system and topic illustrations
 
 Owner instruction, 12 October 2026: adopt the supplied blue `#1736F5`, yellow `#FFC709`, gray `#808080` and light gray `#DEDEDE` palette across RemapRx, then create coordinated blue illustrations for Metformin and Parkinson’s disease in the left article-hero section. This supersedes preserving the earlier navy/gold brand palette for this visual scope. Preserve semantic evidence/error colors and readability. Use the versioned [design system](DESIGN-SYSTEM.md), original topic illustrations, responsive browser assets, explicit page mappings and descriptive image metadata. The illustration conventions may later be reused on PepsAnon; that separate site is not migrated in this pass. Existing scientific, commercial, access and indexing release gates remain unchanged.
+
+
+Owner follow-up, October 12, 2026: extend this same blue illustration and metadata setup to every remaining drug and condition page on RemapRx, including canonical discovery entries. Require explicit topic assignments, accurate descriptions, responsive transparent assets and individual social previews; preserve the two accepted originals. The expanded contract is in `DESIGN-SYSTEM.md`, and verification/release status in `HERO-ROLLOUT-VALIDATION.md`.
