@@ -1,6 +1,8 @@
 /** Shared data contract only: no database, session, or private profile records. */
 export const INTAKE_VERSION = 1 as const;
 export const READER_ROLES = [
+  { value: 'physician', label: 'Physician' },
+  { value: 'other_healthcare_professional', label: 'Other healthcare professional' },
   { value: 'clinician', label: 'Clinician/healthcare professional' },
   { value: 'general_reader', label: 'General reader/citizen' },
   { value: 'researcher', label: 'Researcher/academic' },
@@ -14,13 +16,15 @@ export type ReaderProfile = {
   userId: string;
   intakeVersion: typeof INTAKE_VERSION;
   roles: ReaderRole[];
+  /** Optional for compatibility with profiles created before topic interests. */
+  interests?: string[];
   intakeState: 'complete' | 'declined';
   completedAt: string;
   updatedAt: string;
 };
-export type ProfileView = Omit<ReaderProfile, 'userId'>;
+export type ProfileView = Omit<ReaderProfile, 'userId' | 'interests'> & { interests: string[] };
 export function profileView(profile: ReaderProfile): ProfileView {
-  return { intakeVersion: profile.intakeVersion, roles: [...profile.roles], intakeState: profile.intakeState,
+  return { intakeVersion: profile.intakeVersion, roles: [...profile.roles], interests: [...(profile.interests ?? [])], intakeState: profile.intakeState,
     completedAt: profile.completedAt, updatedAt: profile.updatedAt };
 }
 export function hasCurrentIntake(profile: ReaderProfile | null, userId: string): boolean {

@@ -6,6 +6,8 @@ import "@/styles/second-look.css";
 import "@/components/shared-theme/guide-library.css";
 import "@/styles/reader-profile.css";
 import "@/components/shared-theme/article-reading.css";
+import "@/components/shared-theme/article-sharing.css";
+import "@/components/shared-theme/guide-reader.css";
 import "@/styles/hero-art.css";
 import {ThemeShell} from "@/components/shared-theme/theme";
 import {getChatGPTUser,chatGPTSignInPath} from "@/app/chatgpt-auth";

@@ -1,3 +1,4 @@
+import { guideManuscriptSchema } from './guide-manuscript';
 import { ACCOUNT_PRIVATE_HEADERS, type ReaderIdentity } from './profile-api';
 
 export type GuideProduct = { id: string; title: string; slug: string; releaseState: 'pending' | 'released' | 'withdrawn'; subscriptionIncluded: boolean; medicalReviewRequired?: boolean; marketingSha256?: string | null };
@@ -5,6 +6,8 @@ export type GuideOrder = { userId: string; productId: string; editionId: string;
 export type GuideMembership = { userId: string; state: string; currentPeriodEnd: string | null; cancelAtPeriodEnd: boolean };
 export type GuideEdition = {
   id: string; productId: string; version: string; releaseState: string;
+  webAssetKey?: string | null; webSha256?: string | null; approvedWebSha256?: string | null; qualifiedApprovedWebSha256?: string | null; legalApprovedWebSha256?: string | null;
+  updatedAt?: string | null; changeSummary?: string | null;
   pdfAssetKey: string | null; pdfSha256: string | null;
   summaryAssetKey: string | null; summarySha256: string | null;
   approvedVersion: string | null; approvedPdfSha256: string | null; approvedSummarySha256: string | null;
@@ -42,6 +45,7 @@ const approvedDate = (value: string | null, now: Date) => Number.isFinite(instan
 export function approvedGuideEdition(product: GuideProduct | undefined, edition: GuideEdition, now: Date): boolean {
   if (!product || product.id !== edition.productId || product.releaseState !== 'released' || edition.releaseState !== 'released') return false;
   if (!meaningful(edition.version) || edition.approvedVersion !== edition.version || edition.humanEditorialApproved !== true || !meaningful(edition.approvedBy) || !approvedDate(edition.approvedAt, now)) return false;
+  if (!validKey(edition.webAssetKey) || !validHash(edition.webSha256) || edition.approvedWebSha256 !== edition.webSha256) return false;
   if (!validKey(edition.pdfAssetKey) || !validHash(edition.pdfSha256) || edition.approvedPdfSha256 !== edition.pdfSha256) return false;
   if (!validKey(edition.summaryAssetKey) || !validHash(edition.summarySha256) || edition.approvedSummarySha256 !== edition.summarySha256) return false;
   if (typeof edition.qualifiedReviewRequired !== 'boolean') return false;
@@ -52,11 +56,11 @@ export function approvedGuideEdition(product: GuideProduct | undefined, edition:
   if (medicalReviewRequired && (!validHash(product.marketingSha256) || edition.marketingSha256 !== product.marketingSha256 || edition.approvedMarketingSha256 !== product.marketingSha256)) return false;
   if (edition.qualifiedReviewRequired || medicalReviewRequired) {
     if (edition.qualifiedReviewApproved !== true || !meaningful(edition.qualifiedReviewedBy) || !meaningful(edition.qualifiedReviewerQualifications) || !meaningful(edition.qualifiedReviewerConflicts) || !approvedDate(edition.qualifiedReviewedAt, now) || !meaningful(edition.qualifiedReviewScope) || edition.qualifiedReviewDecision !== 'approved') return false;
-    if (edition.qualifiedApprovedVersion !== edition.version || edition.qualifiedApprovedPdfSha256 !== edition.pdfSha256 || edition.qualifiedApprovedSummarySha256 !== edition.summarySha256 || (medicalReviewRequired && edition.qualifiedApprovedMarketingSha256 !== product.marketingSha256)) return false;
+    if (edition.qualifiedApprovedWebSha256 !== edition.webSha256 || edition.qualifiedApprovedVersion !== edition.version || edition.qualifiedApprovedPdfSha256 !== edition.pdfSha256 || edition.qualifiedApprovedSummarySha256 !== edition.summarySha256 || (medicalReviewRequired && edition.qualifiedApprovedMarketingSha256 !== product.marketingSha256)) return false;
   }
   if (medicalReviewRequired) {
     if (edition.legalReviewApproved !== true || !meaningful(edition.legalReviewedBy) || !meaningful(edition.legalReviewerQualifications) || !meaningful(edition.legalReviewScope) || !meaningful(edition.legalReviewConflicts) || !meaningful(edition.legalJurisdiction) || !approvedDate(edition.legalReviewedAt, now) || edition.legalReviewDecision !== 'approved') return false;
-    if (edition.legalApprovedVersion !== edition.version || edition.legalApprovedPdfSha256 !== edition.pdfSha256 || edition.legalApprovedSummarySha256 !== edition.summarySha256 || edition.legalApprovedMarketingSha256 !== product.marketingSha256) return false;
+    if (edition.legalApprovedWebSha256 !== edition.webSha256 || edition.legalApprovedVersion !== edition.version || edition.legalApprovedPdfSha256 !== edition.pdfSha256 || edition.legalApprovedSummarySha256 !== edition.summarySha256 || edition.legalApprovedMarketingSha256 !== product.marketingSha256) return false;
   }
   return true;
 }
@@ -68,10 +72,10 @@ export function activeGuideMembership(membership: GuideMembership | null, userId
   return !!membership && membership.userId === userId && membership.state === 'active' && instant(membership.currentPeriodEnd) > now.getTime();
 }
 
-/** Paid edition ownership remains independent of membership expiry/cancellation. */
+/** Paid topic ownership remains independent of membership expiry/cancellation. */
 export function guideEntitlement(userId: string, product: GuideProduct | undefined, edition: GuideEdition, library: GuideLibrary, now: Date): 'owned' | 'membership' | null {
   if (!approvedGuideEdition(product, edition, now)) return null;
-  if (library.orders.some(order => order.userId === userId && order.productId === edition.productId && order.editionId === edition.id && order.status === 'paid')) return 'owned';
+  if (library.orders.some(order => order.userId === userId && order.productId === edition.productId && order.status === 'paid')) return 'owned';
   return product!.subscriptionIncluded && activeGuideMembership(library.membership, userId, now) ? 'membership' : null;
 }
 
@@ -96,7 +100,7 @@ export function guideLibraryView(userId: string, library: GuideLibrary, getProdu
     const access = guideEntitlement(userId, product, edition, library, now);
     if (!product || !access) return [];
     const downloadUrl = `/api/guides/${encodeURIComponent(edition.id)}/download`;
-    return [{ productId: product.id, title: product.title, slug: product.slug, editionId: edition.id, version: edition.version, access, downloadUrl, summaryDownloadUrl: edition.summaryAssetKey ? downloadUrl + '?format=summary' : null }];
+    return [{ productId: product.id, title: product.title, slug: product.slug, editionId: edition.id, version: edition.version, updatedAt: edition.updatedAt ?? null, changeSummary: edition.changeSummary ?? null, readerUrl: `/guides/read/${encodeURIComponent(edition.id)}`, access, downloadUrl, summaryDownloadUrl: edition.summaryAssetKey ? downloadUrl + '?format=summary' : null }];
   });
   const knownStatuses = ['paid', 'pending', 'failed', 'refunded', 'disputed', 'cancelled'];
   const purchases = library.orders.filter(order => order.userId === userId).map(order => {
@@ -106,8 +110,8 @@ export function guideLibraryView(userId: string, library: GuideLibrary, getProdu
     return { productId: product?.id ?? null, title: product?.title ?? 'Guide record unavailable', status: knownStatuses.includes(order.status) ? order.status : 'unknown', currency: /^[A-Z]{3}$/.test(order.currency) ? order.currency : null, totalMinor: Number.isSafeInteger(order.totalMinor) && order.totalMinor >= 0 ? order.totalMinor : null, createdAt: order.createdAt, updatedAt: order.updatedAt, editionVersion: edition && meaningful(edition.version) ? edition.version : null, downloadAvailable: order.status === 'paid' && !!available, ...orderDownloadDenial(order, product, edition, !!available) };
   });
   const member = library.membership?.userId === userId ? library.membership : null;
-  const membership = member ? { state: member.state === 'active' && !activeGuideMembership(member, userId, now) ? 'expired' : ['active', 'inactive', 'cancelled', 'terminated', 'refunded', 'expired', 'past_due', 'pending'].includes(member.state) ? member.state : 'unknown', expiresAt: Number.isFinite(instant(member.currentPeriodEnd)) ? member.currentPeriodEnd : null, cancelAtPeriodEnd: member.cancelAtPeriodEnd === true } : null;
-  return { commerce: 'not_launched' as const, purchases, membership, availableGuides, message: 'Sales and memberships have not launched. Verified purchased editions remain yours independently of membership; only released, approved files can be downloaded.' };
+  const membership = member ? { state: member.state === 'active' && !activeGuideMembership(member, userId, now) ? 'expired' : ['active', 'inactive', 'cancelled', 'terminated', 'refunded', 'disputed', 'expired', 'past_due', 'pending'].includes(member.state) ? member.state : 'unknown', expiresAt: Number.isFinite(instant(member.currentPeriodEnd)) ? member.currentPeriodEnd : null, cancelAtPeriodEnd: member.cancelAtPeriodEnd === true } : null;
+  return { commerce: 'not_launched' as const, purchases, membership, availableGuides, message: 'Sales and memberships have not launched. Purchased topics include future approved editions independently of membership; only released, approved files can be downloaded.' };
 }
 
 export function createGuideHandlers(deps: GuideDependencies) {
@@ -121,6 +125,25 @@ export function createGuideHandlers(deps: GuideDependencies) {
       if (new URL(request.url).search) return json({ error: 'Guide requests use your signed-in account; no account parameters are accepted.' }, 400);
       try { const at = now(); const library = await deps.repository().readLibrary(user.userId, at.toISOString()); return json(guideLibraryView(user.userId, library, deps.getProduct, at)); }
       catch { return json({ error: 'Your guide library is temporarily unavailable. Please retry; no purchases have been changed.' }, 503); }
+    },
+    async reader(request: Request, editionId: string) {
+      const user = await identity();
+      if (!user) return json({ error: 'Sign in to read your guide.' }, 401);
+      if (!/^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$/.test(editionId) || new URL(request.url).search) return json({ error: 'Choose a valid guide edition.' }, 400);
+      try {
+        const at = now(); const repository = deps.repository(); const library = await repository.readLibrary(user.userId, at.toISOString());
+        const edition = library.editions.find(value => value.id === editionId);
+        const product = edition ? deps.getProduct(edition.productId) : undefined;
+        const access = edition && guideEntitlement(user.userId, product, edition, library, at);
+        if (!edition || !product || !access) return json({ error: 'This edition is not available for this account, or its release is still pending.' }, 403);
+        const bytes = edition.webAssetKey ? await repository.readAsset(edition.webAssetKey) : null;
+        if (!bytes || bytes.byteLength > 4_000_000) return json({ error: 'The approved guide is temporarily unavailable.' }, 503);
+        const hash = [...new Uint8Array(await crypto.subtle.digest('SHA-256', bytes))].map(byte => byte.toString(16).padStart(2, '0')).join('');
+        if (hash !== edition.webSha256) return json({ error: 'The guide could not be verified against its approved edition.' }, 503);
+        const parsed = guideManuscriptSchema.safeParse(JSON.parse(new TextDecoder().decode(bytes)));
+        if (!parsed.success || parsed.data.productId !== product.id || parsed.data.editionId !== edition.id || parsed.data.version !== edition.version) return json({ error: 'The approved guide format could not be verified.' }, 503);
+        return json({ manuscript: parsed.data, access });
+      } catch { return json({ error: 'Your guide is temporarily unavailable. Please retry.' }, 503); }
     },
     async download(request: Request, editionId: string) {
       const user = await identity();

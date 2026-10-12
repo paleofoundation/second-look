@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "remaprx-guide-source-1",
+  "slug": "synthetic-reading-record",
+  "synthetic": true,
+  "audience": "General readers testing a document layout",
+  "manuscript": {
+    "schemaVersion": 1,
+    "productId": "FIXTURE-TOPIC",
+    "editionId": "FIXTURE-EDITION-1",
+    "version": "0.1-fixture",
+    "title": "Reading a library record",
+    "description": "A fictional example used to test a guide layout, navigation and private-content boundaries.",
+    "evidenceCutoff": "2026-10-12",
+    "updatedAt": "2026-10-12T00:00:00.000Z",
+    "medicalNotice": "Synthetic layout fixture. This is not a medical guide, a reviewed scientific claim or a product for sale.",
+    "changeSummary": "Initial synthetic fixture for the RemapRx manuscript adapter. No medical or commercial approval is represented.",
+    "contributors": [{ "name": "Synthetic fixture author", "role": "Test data, not an actual contributor", "conflicts": "Not applicable to fictional test data" }],
+    "chapters": [
+      {
+        "id": "reading-a-record",
+        "title": "Understand the record",
+        "blocks": [
+          { "type": "paragraph", "text": "A guide library lists topic products and their editions. Check the title, version and update note before returning to an earlier saved record.", "sourceIds": ["FIXTURE-REFERENCE"] },
+          { "type": "callout", "title": "A useful distinction", "text": "The topic identifies the subject. An edition identifies a particular version of its content.", "sourceIds": [] },
+          { "type": "list", "items": ["Find the topic title.", "Read the edition and update note.", "Open the source when you need its full context."], "sourceIds": [] },
+          { "type": "table", "caption": "Two fictional record fields", "columns": ["Field", "Example", "What it describes"], "rows": [["Topic", "Reading a library record", "The subject of this fictional document"], ["Edition", "0.1-fixture", "The version created for this layout test"]], "sourceIds": ["FIXTURE-REFERENCE"] },
+          { "type": "questions", "title": "Questions to take away", "items": ["Which edition am I reading?", "What changed since my last visit?"], "sourceIds": [] }
+        ]
+      },
+      {
+        "id": "limits-of-this-example",
+        "title": "Limits of this example",
+        "blocks": [
+          { "type": "paragraph", "text": "This fictional example checks presentation only. Its completion does not demonstrate clinical review, evidence quality, accessible PDF certification or readiness to accept payments.", "sourceIds": ["FIXTURE-REFERENCE"] },
+          { "type": "paragraph", "text": "PRIVATE-ONLY-SENTINEL: This deliberately unselected passage tests that full-guide blocks cannot enter the sample or printable summary.", "sourceIds": ["PRIVATE-FIXTURE-REFERENCE"] }
+        ]
+      }
+    ],
+    "references": [
+      { "id": "FIXTURE-REFERENCE", "title": "Example domain used as a synthetic link destination", "url": "https://example.com/", "note": "This link is a software fixture and is not scientific evidence." },
+      { "id": "PRIVATE-FIXTURE-REFERENCE", "title": "PRIVATE-REFERENCE-SENTINEL", "url": "https://example.com/private-fixture", "note": "Unselected synthetic reference used to test preview boundaries." }
+    ]
+  },
+  "previewSelections": [{ "chapterId": "reading-a-record", "blockIndexes": [0, 1] }],
+  "summarySelections": [{ "chapterId": "reading-a-record", "blockIndexes": [4] }],
+  "sharedLimitSelections": [{ "chapterId": "limits-of-this-example", "blockIndexes": [0] }]
+}

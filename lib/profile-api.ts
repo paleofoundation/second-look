@@ -31,11 +31,11 @@ export function createProfileHandlers(deps: ProfileDependencies) {
       const user = await identity();
       if (!user) return json({ error: 'Sign in to update your reader profile.' }, 401);
       if (!sameOriginMutation(request)) return json({ error: 'Request origin rejected.' }, 403);
-      if (!request.headers.get('content-type')?.startsWith('application/json')) return json({ error: 'Send a JSON role selection.' }, 415);
+      if (!request.headers.get('content-type')?.startsWith('application/json')) return json({ error: 'Send a JSON profile selection.' }, 415);
       let input: unknown;
       try {
         const raw = await request.text();
-        if (raw.length > 2048) return json({ error: 'Role selection is too large.' }, 413);
+        if (raw.length > 16384) return json({ error: 'Profile selection is too large.' }, 413);
         input = JSON.parse(raw);
       } catch { return json({ error: 'Invalid role selection. Please choose again.' }, 400); }
       try { return json({ profile: profileView(await deps.repository().save(user.userId, input)) }); }

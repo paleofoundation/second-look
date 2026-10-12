@@ -60,7 +60,7 @@ export type ArticleHeroProps = {
   updatedLabel?: string; snapshot?: ReactNode; actions?: ReactNode;
   kindLabel?: string;
 };
-export type ArticleLayoutProps = { hero: ArticleHeroProps; leftRail?: ReactNode; rightRail?: ReactNode; children: ReactNode };
+export type ArticleLayoutProps = { hero: ArticleHeroProps; leftRail?: ReactNode; rightRail?: ReactNode; shareRail?: ReactNode; children: ReactNode };
 export type ThemeHomeProps = { content: ThemeHomeContent };
 export type DirectoryPageProps = { title: string; description: string; items: DirectoryItem[]; breadcrumbs?: ThemeLink[]; side?: ReactNode };
 export type SectionNavGroup = { id: string; label: string; icon?: ReactNode; children?: { id: string; label: string }[] };

@@ -9,6 +9,7 @@ import {Popover,PopoverTrigger,PopoverContent} from '@/components/ui/popover';
 import {SaveButton} from '@/components/library-controls';
 import {content,guideUrl,synthesisRows,isPrimarySource,type Guide,type Source,type SourceDetail,type SynthesisRow} from '@/lib/content';
 import {AuthorCard} from '@/components/author-card';
+import {ArticleSharing} from '@/components/article-sharing';
 import {PageSnapshot} from '@/components/page-snapshot';
 import {pageSnapshotFor} from '@/lib/page-snapshot';
 import {HeroActions} from '@/components/shared-theme/article-actions';
@@ -46,6 +47,11 @@ export function canRenderStudyReviewInline(review:ProtectedReview,sourceId:strin
   ...section.sources,...(section.sentences||[]).flatMap(sentence=>sentence.sources),
  ]),...openingAnswers.flatMap(answer=>answer?.sources||[])];
  return review.id===sourceId&&citedIds.every(id=>id===sourceId&&sources.some(source=>source.id===id)&&order.includes(id));
+}
+/** Source-specific context remains with the study, rather than in the persistent rail. */
+function StudyFacts({source}:{source:Source}) {
+ const rows=[['Design',source.design],['Population',source.population],['Randomized participants',source.randomizedN],['Reported sample',(source as SourceDetail).sampleDescription||source.n],['Intervention',source.intervention],['Comparator',source.comparator],['Corrections',source.correction]].filter(([,value])=>value!==null&&value!==undefined&&String(value).trim()!==''&&!/^(unknown|not recorded|not extracted)$/i.test(String(value)));
+ return rows.length?<details className="study-source-facts"><summary>Study population and treatment details</summary><dl>{rows.map(([label,value])=><Fragment key={String(label)}><dt>{label}</dt><dd>{String(value)}</dd></Fragment>)}</dl>{source.pmid?<a href={'https://pubmed.ncbi.nlm.nih.gov/'+source.pmid+'/'} target="_blank" rel="noreferrer">PubMed record</a>:null}</details>:null;
 }
 /** Caller supplies this body only after the protected endpoint grants access. */
 export function InlineStudyReview({review,sources,order,currentPath}:{review:ProtectedReview;sources:Source[];order:string[];currentPath:string}){
@@ -92,6 +98,7 @@ function StudySummary({source,sources,order,currentPath}:{source:Source;sources:
    <h4>Study summary</h4><CitedProse text={source.preview} sourceIds={[source.id]} sources={sources} order={order} currentPath={currentPath}/>
    {source.decisiveLimit?<p className="notice">{wikiText(source.decisiveLimit,currentPath)}</p>:null}
    {source.correction?<p className="notice">{wikiText(source.correction,currentPath)}</p>:null}
+   <StudyFacts source={source}/>
    {busy?<p className="small" role="status">Loading study review…</p>:null}
    {error?<p className="small" role="status">The study review could not be loaded. <button type="button" onClick={()=>void loadReview()}>Retry</button></p>:null}
    {review?<InlineStudyReview review={review} sources={sources} order={order} currentPath={currentPath}/>:null}
@@ -111,16 +118,6 @@ export function ResearchCatalog({sources,order=sources.map(source=>source.id),cu
  return <><ResearchStudies sources={sources} order={order} currentPath={currentPath}/><section id="references" className="article-section"><h2>References</h2><ReferenceList sources={sources} order={order}/></section></>;
 }
 function RelatedReading({guide}:{guide:Guide}){const related=relatedReadingFor(guide);return related.length?<nav className="related-reading" aria-label="Related reading"><h2>Related reading</h2><ul>{related.map(g=><li key={g.id}><a href={guideUrl(g)}>{g.title}</a></li>)}</ul></nav>:null}
-function ContextRail({guide,sources,order}:{guide:Guide;sources:Source[];order:string[]}){const available=(value:unknown)=>value!==undefined&&value!==null&&String(value).trim()!==''&&!/^(?:not extracted|not recorded|not in corpus|unknown)(?:[.;]|$)/i.test(String(value).trim());const primary=sources.filter(source=>isPrimarySource(source)&&available(source.population));const source=sources[0];const sample=(source as SourceDetail|undefined)?.sampleDescription||source?.n;const prose=wikiTextRenderer(guideUrl(guide));const fact=(label:string,value:React.ReactNode)=>available(value)?<Fragment key={label}><dt>{label}</dt><dd>{typeof value==='string'?prose(value):value}</dd></Fragment>:null;const term=content.glossary.find(t=>'/glossary/'+t.slug===guide.slug);const sourceFact=(s:Source,value:React.ReactNode)=><>{typeof value==='string'?prose(value):value}<Citation source={s} n={order.indexOf(s.id)+1}/></>;return <aside className="context-rail"><RelatedReading guide={guide}/><dl>{guide.type==='Background source'||guide.type==='Study'?<>
- {guide.type==='Background source'?fact('Evidence role','Background source'):null}
- {fact('Design',source?.design)}{fact('Population',source?.population)}{fact('Year',source?.year)}
- {/computational|in silico/i.test(source?.design||'')?fact('Evidence type','Computational model; no treatment trial'):fact('Randomized N',source?.randomizedN)}
- {fact('Reported sample',sample)}
- {source&&available(source.intervention)?<><dt>Intervention</dt><dd>{sourceFact(source,source.intervention)}</dd></>:null}
- {source&&available(source.comparator)?<><dt>Comparator</dt><dd>{sourceFact(source,source.comparator)}</dd></>:null}
- {source&&available(source.pmid)?<><dt>PMID</dt><dd><a href={'https://pubmed.ncbi.nlm.nih.gov/'+source.pmid+'/'}>{source.pmid}</a></dd></>:null}
- {fact('Corrections',source?.correction)}
- </>:guide.type==='Glossary'?<><dt>Reading context</dt><dd>{term?.slug==='relative-risk'?'Also called risk ratio.':term?.title}</dd>{term?.slug==='relative-risk'?<><dt>Units</dt><dd>Ratio; the compared risks use the same event and timepoint.</dd></>:null}</>:guide.type==='Practical guide'?<><dt>Audience</dt><dd>Readers checking a research claim</dd><dt>Scope</dt><dd>Source reading and question preparation</dd><dt>Edition</dt><dd>Draft · October 8, 2026</dd><dt>Downloads</dt><dd><a href="/downloads/second-look-worksheet.pdf">Free worksheet</a><br/><a href="/downloads/second-look-guide-preview.pdf">Guide preview</a></dd></>:guide.type==='Evidence comparison'?<><dt>Selection</dt><dd>Teaching comparison; selected reports</dd><dt>Search cutoff</dt><dd>October 8, 2026</dd><dt>Independent studies</dt><dd>Not established; family links require verification.</dd><dt>Missing material</dt><dd>See each study’s access and correction state</dd></>:<><dt>{guide.type==='Drug'?'Entity':'Question scope'}</dt><dd>{guide.title}</dd><dt>Scope</dt><dd>{prose(guide.scope|| (guide.type==='Condition'?'Acute-infection prevention and established-illness treatment are separate questions.':guide.id==='G-MET-PREVENT'?'Acute infection → later long COVID outcomes':guide.id==='G-MET-TREAT'||guide.id==='G-NMV-TREAT'?'Established long COVID → symptom or recovery outcomes':'Prevention and treatment records; no product-wide verdict'))}</dd><dt>Form, population and comparison</dt><dd>Study-specific; inspect the linked report.</dd><dt>Selected source populations</dt><dd>{primary.filter(s=>s.status!=='Quarantined').map(s=><p key={s.id}>{sourceFact(s,s.population)}</p>)}</dd></>}</dl><p><Link href="/glossary">Scientific terms</Link><br/><Link href="/methods">How we assess evidence</Link></p><Link href="/corrections">Suggest a correction</Link></aside>}
 
 export function OutcomeEvidence({rows,guide,sources,order,compact=true}:{rows:SynthesisRow[];guide?:Guide;sources:Source[];order:string[];compact?:boolean}){
  const outcomeMap=outcomeRegistry.rowOutcomeMap as Record<string,string>;
@@ -182,11 +179,11 @@ export function Article({guide,sources,children,additionalCitationGroups=[]}:{gu
  };
  const topicArt=getTopicHeroArt(guideUrl(guide));
  const art=topicArt?{src:topicArt.src,srcSet:topicArt.srcSet,sizes:'(max-width: 767px) 200px, (max-width: 1199px) 30vw, 25vw',alt:topicArt.alt,title:topicArt.title,width:topicArt.width,height:topicArt.height}:{src:'/art/second-look-study.svg',alt:'A lens over a source page and its evidence trail',width:600,height:700};
- return <ArticleLayout hero={{title:guide.title,description:guide.description,breadcrumbs:[{label:'Second Look',href:'/'},parent],kindLabel:guide.researchGoal?'Research goal':guide.type,art,artVariant:topicArt?'topic':undefined,authorSlot:<div className="sl-hero-author"><AuthorCard guide={guide}/></div>,updatedLabel:'Reader edition · October 11, 2026',actions:<HeroActions saveSlot={<SaveButton id={guide.id} returnTo={guideUrl(guide)} label={'Save '+(guide.type==='Drug'?guide.title:'article')} className="research-hero__center-tag"/>} links={[...(universal||guide.sections.some(section=>section.id==='safety')?[{label:'Safety',href:universal?'#section-safety':'#safety',icon:<ShieldCheck/>}]:[]),...(!isRecord&&guide.faqs.length?[{label:'FAQs',href:'#faqs',icon:<MessagesSquare/>}]:[]),{label:'Evidence',href:evidenceTarget,icon:<ChartNoAxesColumnIncreasing/>},{label:'References',href:'#references',icon:<BookOpen/>}]}/>,snapshot:<PageSnapshot snapshot={snapshot} studiesHref={isRecord?'#references':'#research-feed'}/>}} leftRail={<ThemeSectionNav groups={groups}/>} rightRail={<ContextRail guide={guide} sources={sources} order={ordered}/> }>
+ return <ArticleLayout hero={{title:guide.title,description:guide.description,breadcrumbs:[{label:'Second Look',href:'/'},parent],kindLabel:guide.researchGoal?'Research goal':guide.type,art,artVariant:topicArt?'topic':undefined,authorSlot:<div className="sl-hero-author"><AuthorCard guide={guide}/></div>,updatedLabel:'Reader edition · October 11, 2026',actions:<HeroActions saveSlot={<SaveButton id={guide.id} returnTo={guideUrl(guide)} label={'Save '+(guide.type==='Drug'?guide.title:'article')} className="research-hero__center-tag"/>} links={[...(universal||guide.sections.some(section=>section.id==='safety')?[{label:'Safety',href:universal?'#section-safety':'#safety',icon:<ShieldCheck/>}]:[]),...(!isRecord&&guide.faqs.length?[{label:'FAQs',href:'#faqs',icon:<MessagesSquare/>}]:[]),{label:'Evidence',href:evidenceTarget,icon:<ChartNoAxesColumnIncreasing/>},{label:'References',href:'#references',icon:<BookOpen/>}]}/>,snapshot:<PageSnapshot snapshot={snapshot} studiesHref={isRecord?'#references':'#research-feed'}/>}} leftRail={<ThemeSectionNav groups={groups}/>} shareRail={<ArticleSharing path={guideUrl(guide)} title={guide.title} kind={guide.type}/>} rightRail={<RelatedReading guide={guide}/> }>
  {guide.coverageLabel?<p className="coverage-label">{guide.coverageLabel}</p>:null}
  {/cancer/i.test(guide.title+' '+(guide.scope||''))?<MedicalScopeNotice cancer/>:null}{universal?universal.blocks.map(block=>renderModule(block.module)):<Fragment>{first.map(section=>renderSection(section))}{showMechanisms?mechanismsContent:null}{rest.map(section=>renderSection(section))}
  {scoped.length?<details className="research-item scoped-reading" id="condition-details"><summary>{guide.scopedSectionsTitle||'Condition-specific research details'}</summary><div className="research-item__body">{scoped.map(section=>renderSection(section))}</div></details>:null}
- {later.map(section=>renderSection(section))}{isRecord?<>{children}{updatesContent()}{sourceContent}</>:readerTail.map(renderModule)}</Fragment>}
+ {later.map(section=>renderSection(section))}{isRecord?<>{children}{guide.type!=='Glossary'&&sources[0]?<StudyFacts source={sources[0]}/>:null}{updatesContent()}{sourceContent}</>:readerTail.map(renderModule)}</Fragment>}
  </ArticleLayout>
 }
 

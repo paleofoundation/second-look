@@ -60,6 +60,8 @@ The owner's 12 October follow-up authorizes a one-page itraconazole pilot of con
 
 ## Review, access and release
 
+The owner's October 12, 2026 implementation plan adopts [topic guides, article sharing and member library](TOPIC-GUIDES.md): $49 permanent topic purchases with future approved editions; $59 monthly membership after Metformin, Long COVID and itraconazole are released; no initial annual plan or physician edition. It supersedes previous guide prices and edition-only ownership. Replace the persistent metadata rail with sharing, an honest topic-guide offer and up to three related links. Preserve free articles/reviews, scientific review, exact asset approvals and private server authorization. Complete metformin ingestion/assessment before substantive manuscript authoring.
+
 Use [editorial/EVIDENCE-GRADING.md](../editorial/EVIDENCE-GRADING.md) for the adopted selected-source outcome assessments. This is separate from formal GRADE, Q01–Q15 study-review completion, human review and release approval. Every cited scholarly paper retains its dedicated review obligation and source traceability.
 
 Released full research reviews are free after supported login and persisted role intake under the current policy. Enforce access server-side. Reader roles do not grant editorial privileges. Git does not carry production users, D1 data, R2 assets, authentication credentials or payment entitlements. Preserve the existing scientific and commercial release gates and hosting audience.

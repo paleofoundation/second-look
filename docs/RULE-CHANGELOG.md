@@ -2,6 +2,12 @@
 
 Record requirements when adopted, even if implementation is pending. Keep history append-only; describe supersession explicitly. Each entry needs source/date, scope, requirement, affected contracts, implementation/verification/release status and unresolved work.
 
+## 2026-10-12 — SL-RULE-TOPIC-GUIDES: sharing, permanent topic guides and private member library
+
+Source: owner's explicit “PLEASE IMPLEMENT THIS PLAN” request, Metformin-first guides, sharing sidebar, and member library. Scope and acceptance: `docs/TOPIC-GUIDES.md`. Adopted prices are $49 once per topic (future approved editions included) and $59/month; membership follows three substantive releases in order Metformin, Long COVID, itraconazole. No first-release annual plan or physician edition. Supersedes prior catalogue prices, edition-only rights, and the persistent Entity/Scope/population rail. Preserve evidence panels, author/Page Snapshot, public safety and free authenticated reviews.
+
+Implementation includes canonical sharing and truthful mapped product offers; optional self-reported role/interests intake; private automatic library saves with removal/update semantics; protected versioned manuscripts; server-authorized Stripe Checkout/portal/webhooks; and a metformin source-gap reconciliation before substantive guide authoring. Research and human clinical/legal approval cannot be replaced by interface completion or payment fixtures. Status at adoption: implementation in progress in an isolated checkout of published source `b0a05596eb665f479bddb9f7517d1a8253f0877f`; no paid guide or live commerce released. Exact verification, deployment and unresolved external inputs will be recorded in `GUIDE-IMPLEMENTATION.md`. The pinned upstream/reference projects remain unchanged; reusable rule synchronization is pending.
+
 ## 2026-10-11 — SL-RULE-001: durable collaborator repository
 
 Source: owner request in the Drug Repurposing chat: the Second Look website needs a GitHub repository for research collaborators, including all canonical instructions and One Match rules so rules created on this build are not lost. Owner selected private `paleofoundation/second-look`.
