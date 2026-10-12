@@ -49,3 +49,5 @@ Owner instruction, October 12, 2026: internal page links display without underli
 ## Evidence-grade colors
 
 Owner correction, October 12, 2026: evidence-grade badges use RemapRx colors. This supersedes the earlier exception preserving inherited teal grade colors. High uses deep blue with white text; Moderate uses brand blue with white text; Low uses a 22% brand-blue tint with ink text; Very low uses pale blue with ink text; Not graded uses the neutral surface and muted ink. Preserve the literal grade labels, assessed/unassessed distinction, grading logic and research-panel interactions. Color changes do not change scientific assessments.
+
+Owner follow-up, October 12, 2026: add the screenshot's three ascending strength bars before evidence-grade labels. High fills three, Moderate two, Low one, Very low zero; Not graded omits the strength icon to distinguish unassessed evidence. Bars inherit the badge foreground against the established blue backgrounds (white on dark blue, ink on pale blue); unfilled bars are subdued. Keep the labels and mark redundant bars decorative for assistive technology.

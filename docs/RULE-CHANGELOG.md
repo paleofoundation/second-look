@@ -77,3 +77,7 @@ Implementation: shared global internal-destination CSS override; no content or t
 ## 2026-10-12 — SL-RULE-GRADE-COLORS: brand evidence-grade palette
 
 Source: owner's evidence-table screenshot and explicit request that evidence grades use the website's colors. Adopted in `docs/DESIGN-SYSTEM.md`: replace inherited teal badges with the RemapRx blue scale and neutral ungraded treatment, preserving labels and evidence semantics. Supersedes the prior grade-color preservation exception for badge styling only. Shared `reading-modules.css` is the implementation; no evidence records or grading logic are changed. Verification/publication receipt follows locally after deployment; reference sites and upstream rules remain unchanged.
+
+## 2026-10-12 — SL-RULE-GRADE-BARS: evidence strength icons
+
+Source: owner's request to add the screenshot's small strength bars beside grades using the blue colors. Adopted in `docs/DESIGN-SYSTEM.md`; implemented in the shared evidence table using the existing `.grade-bars` styling and PepsAnon `components/peptide/evidence.tsx` reference. Three ascending bars encode High/Moderate/Low/Very low as 3/2/1/0 filled; ungraded evidence has no strength icon. Visible labels, accessible button names, blue palette and grade-panel actions are preserved. No scientific record or grading logic changes. Verification/release receipt follows locally.

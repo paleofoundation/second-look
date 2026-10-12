@@ -62,6 +62,9 @@ export function EvidenceTable({rows,sources,cite,renderText=plainText,emptyMessa
     <tbody>{rows.length===0?<tr className="evidence-empty-row"><td colSpan={3}>{emptyMessage}</td></tr>:rows.map(row=>{
      const count=counts(row);
      const confidence=readerConfidence(row);
+     const badgeClass=gradeClass(confidence.label,confidence.category==='assessed');
+     const strengthBars:Record<string,number>={'grade-high':3,'grade-moderate':2,'grade-low':1,'grade-very-low':0};
+     const strength=strengthBars[badgeClass];
      return <tr id={row.id} key={row.id}>
       <td data-label="Outcome and study design">
        {row.peer?<a className="table-peer" href={row.peer.href}>{row.peer.title}</a>:null}
@@ -70,7 +73,7 @@ export function EvidenceTable({rows,sources,cite,renderText=plainText,emptyMessa
        {outcomeState(row)?<span className="table-state">{outcomeState(row)}</span>:null}
       </td>
       <td data-label="Grade" className="evidence-grade-cell">
-       <button type="button" className={`grade evidence-grade-trigger ${gradeClass(confidence.label,confidence.category==='assessed')}`} data-confidence-state={confidence.category} aria-haspopup="dialog" onClick={event=>open(row,event.currentTarget)} title="Read the outcome-specific grading rationale" aria-label={`${confidence.label} evidence. Why this grade: ${row.title}`}>{confidence.label}</button>
+       <button type="button" className={`grade evidence-grade-trigger ${badgeClass}`} data-confidence-state={confidence.category} aria-haspopup="dialog" onClick={event=>open(row,event.currentTarget)} title="Read the outcome-specific grading rationale" aria-label={`${confidence.label} evidence. Why this grade: ${row.title}`}>{strength!==undefined?<span className="grade-bars" aria-hidden="true">{[1,2,3].map(level=><i key={level} className={level<=strength?'filled':undefined}/>)}</span>:null}{confidence.label}</button>
       </td>
       <td data-label="Evidence">
        <button type="button" className="evidence-count-link" aria-haspopup="dialog" aria-label={'View evidence for '+row.title} onClick={event=>open(row,event.currentTarget)}><FileText aria-hidden="true"/><span>{count.reports?`${count.reports} ${count.reports===1?'report':'reports'}`:`${count.total} ${count.total===1?'source':'sources'}`}</span></button>
