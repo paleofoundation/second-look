@@ -70,3 +70,8 @@ Mapping-headline publication: Sites version 39, source `9750e7a59486527f8ec18bf1
 ### Favicon optical centering — October 14, 2026
 
 Owner request: center the heavier Rx lettering in the favicon and offset the lighter circle to the right. This supersedes centering the complete target artwork within the square favicon. Scope: SVG favicon, ICO at 16/32/48 pixels and matching touch icon; header/footer symbols, wordmarks and social artwork keep their approved framing. The generator applies a favicon-only `translate(103.49 76.4) scale(.86)` transform: the Rx bounds (44–413, 148–372) have their midpoint at (300, 300), with the target center to the right and all outer marks inside the 600-pixel canvas. Preserve blue/yellow colors and target details. Increment icon URL versions so browsers request the revised assets. Verification: SVG/ICO structure and 16/32/48-pixel raster outputs checked; before/after and native-size previews visually inspected; governance and TypeScript passed. Production build passed; publication pending.
+
+
+### Favicon circle refinement — October 14, 2026
+
+Source: owner confirmation to reduce the circle and surrounding marks by exactly 15%, centered on the x, leaving Rx where it is. Favicon-only generator transform scales the rings, crosshairs, connectors and arrow by 0.85 around original coordinates (313, 292); Rx path data and outer framing are unchanged. SVG, 16/32/48-pixel ICO and touch icon are regenerated, with refreshed icon URL versions. This supersedes the previous favicon target size; other brand assets retain their existing geometry. Verification: Rx path/framing identity, exact 0.85 target transforms, ICO dimensions, native-size visual inspection, governance and TypeScript passed. Publication pending.

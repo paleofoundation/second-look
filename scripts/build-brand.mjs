@@ -6,7 +6,14 @@ const source = 'assets/brand-concepts/mapping-round-4';
 const symbol = (await fs.readFile(`${source}/remaprx-target-logo.svg`, 'utf8')).replace('RemapRx Rx map target concept', 'RemapRx').replace(/[ \t]+$/gm, '');
 // Favicon-only optical framing: center the Rx bounds (228.5, 260),
 // leaving the lighter target to the right with its outer marks inside the canvas.
-const favicon = (await fs.readFile(`${source}/remaprx-target-favicon.svg`, 'utf8')).replace('RemapRx blue Rx map target and crosshairs on yellow favicon concept', 'RemapRx').replace('translate(0 10)', 'translate(103.49 76.4) scale(.86)').replace(/[ \t]+$/gm, '');
+const targetScale = 'translate(313 292) scale(.85) translate(-313 -292)';
+const favicon = (await fs.readFile(`${source}/remaprx-target-favicon.svg`, 'utf8'))
+  .replace('RemapRx blue Rx map target and crosshairs on yellow favicon concept', 'RemapRx')
+  .replace('translate(0 10)', 'translate(103.49 76.4) scale(.86)')
+  // Scale rings/crosshairs and arrow around the x; leave both letter paths untouched.
+  .replace('<g fill="none" stroke=', `<g transform="${targetScale}" fill="none" stroke=`)
+  .replace('<path d="M478', `<path transform="${targetScale}" d="M478`)
+  .replace(/[ \t]+$/gm, '');
 const lettering = JSON.parse(await fs.readFile('assets/brand/remaprx-lettering.json', 'utf8'));
 const inside = symbol.slice(symbol.indexOf('</title>') + 8, symbol.lastIndexOf('</svg>'));
 await fs.mkdir('public/brand', {recursive:true});

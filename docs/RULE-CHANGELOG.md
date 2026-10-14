@@ -319,3 +319,8 @@ Source: owner request linked to Metformin citations 3, 4, 11 and 15: remove all 
 ## 2026-10-14 — center Rx in favicon
 
 Source: owner request to balance the favicon around the heavier Rx, with the lighter circle offset right. Scope: generated SVG/ICO favicon and touch icon; supersedes complete-target centering for these icons. Contract: `REMAPRX-IDENTITY.md`. Implemented favicon-only framing and refreshed metadata cache versions. Verification: governance, TypeScript, SVG/ICO dimensions and visual inspection at native icon sizes passed. Production build passed; publication pending; other brand assets retain their approved geometry.
+
+
+## 2026-10-14 — reduce favicon target by 15%
+
+Source: owner confirmation to reduce the circle and surrounding marks by exactly 15%, centered on the x, leaving Rx where it is. Favicon-only generator transform scales the rings, crosshairs, connectors and arrow by 0.85 around original coordinates (313, 292); Rx path data and outer framing are unchanged. SVG, 16/32/48-pixel ICO and touch icon are regenerated, with refreshed icon URL versions. This supersedes the previous favicon target size; other brand assets retain their existing geometry. Verification: Rx path/framing identity, exact 0.85 target transforms, ICO dimensions, native-size visual inspection, governance and TypeScript passed. Publication pending.

@@ -23,9 +23,9 @@ export const metadata: Metadata = {
   openGraph: {type:"website", siteName:"RemapRx", title:"RemapRx — The drug repurposing atlas", description:"Mapping new targets for approved medications. Map each connection to its sources.", images:[{url:"/brand/remaprx-social.png",width:1200,height:630,alt:"RemapRx: Mapping new targets for approved medications."}]},
   twitter: {card:"summary_large_image", title:"RemapRx — The drug repurposing atlas", description:"Mapping new targets for approved medications. Map each connection to its sources.", images:["/brand/remaprx-social.png"]},
   icons: {
-    icon: [{url: "/favicon.svg?v=remaprx-rx-centered-2", type: "image/svg+xml"}, {url: "/favicon.ico?v=remaprx-rx-centered-2", sizes: "16x16 32x32 48x48", type: "image/x-icon"}],
-    shortcut: "/favicon.ico?v=remaprx-rx-centered-2",
-    apple: "/apple-touch-icon.png?v=remaprx-rx-centered-2",
+    icon: [{url: "/favicon.svg?v=remaprx-rx-centered-3", type: "image/svg+xml"}, {url: "/favicon.ico?v=remaprx-rx-centered-3", sizes: "16x16 32x32 48x48", type: "image/x-icon"}],
+    shortcut: "/favicon.ico?v=remaprx-rx-centered-3",
+    apple: "/apple-touch-icon.png?v=remaprx-rx-centered-3",
   },
 };
 
