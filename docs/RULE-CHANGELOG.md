@@ -314,3 +314,8 @@ Verification completed against base commit `7c314c29ad167a81cdd10c060ecc3add02ea
 ## 2026-10-14 — unbracketed superscript citations
 
 Source: owner request linked to Metformin citations 3, 4, 11 and 15: remove all bracketing around superscripted citations. Scope: shared article/research-review inline citations site-wide. Supersedes bracketed superscript markers; preserves numbering, source IDs, popovers, reference fragments and accessible labels. Consulted PepsAnon `components/peptide/citations.tsx`; the explicit owner correction overrides its bracketed style. Contract: `PROJECT-RULES.md`. Implemented bare-number citation links with space between adjacent markers and updated existing citation-order checks. Verification: governance, 68-article navigation, reader-section and 64-profile/four-answer evidence SSR checks, wiki links, TypeScript, production build and 36 built-client boundary scans passed. Browser verification on the production preview confirmed all 155 Metformin inline markers are bare numbers and adjacent clusters remain visibly separated. Publication pending. No scientific content or release approval changes.
+
+
+## 2026-10-14 — center Rx in favicon
+
+Source: owner request to balance the favicon around the heavier Rx, with the lighter circle offset right. Scope: generated SVG/ICO favicon and touch icon; supersedes complete-target centering for these icons. Contract: `REMAPRX-IDENTITY.md`. Implemented favicon-only framing and refreshed metadata cache versions. Verification: governance, TypeScript, SVG/ICO dimensions and visual inspection at native icon sizes passed. Production build passed; publication pending; other brand assets retain their approved geometry.
