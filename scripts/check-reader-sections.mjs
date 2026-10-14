@@ -74,7 +74,7 @@ const render = (value, pageSources = sources) => renderToStaticMarkup(React.crea
 const html = render(guide);
 const article = html.match(/<article class="research-content__center entry-content">([\s\S]*?)<\/article>/)?.[1];
 assert(article, 'The canonical article column renders');
-const citations = [...article.matchAll(/<sup class="citation-sup" data-source-id="([^"]+)"[^>]*>[\s\S]*?\[(\d+)\]/g)];
+const citations = [...article.matchAll(/<sup class="citation-sup" data-source-id="([^"]+)"[^>]*>[\s\S]*?class="citation-trigger"[^>]*>(\d+)<\/a>/g)];
 assert.deepEqual([...new Set(citations.map(match => match[1]))], renderedOrder, 'Rendered first appearances match the registry');
 for (const match of citations) assert.equal(Number(match[2]), order.indexOf(match[1]) + 1);
 for (const id of ['mechanism-question', 'benefit-question']) {
@@ -220,7 +220,7 @@ for (const href of ['#section-safety', '#faqs', '#section-evidence', '#reference
   assert(ids.includes(href.slice(1)), 'Navigation/action fragment resolves: ' + href);
 }
 const actualOrder = guideCitationOrder(metformin, metforminSources);
-const actualCitations = [...metforminArticle.matchAll(/<sup class="citation-sup" data-source-id="([^"]+)"[^>]*>[\s\S]*?\[(\d+)\]/g)];
+const actualCitations = [...metforminArticle.matchAll(/<sup class="citation-sup" data-source-id="([^"]+)"[^>]*>[\s\S]*?class="citation-trigger"[^>]*>(\d+)<\/a>/g)];
 const firstAppearances = [...new Set(actualCitations.map(match => match[1]))];
 assert.deepEqual(actualOrder.slice(0, firstAppearances.length), firstAppearances, 'Metformin first appearances follow the actual DOM order');
 for (const match of actualCitations) {
@@ -265,7 +265,7 @@ if (process.argv.includes('--all-profiles')) {
   assert.equal(pageIds.length,new Set(pageIds).size,label+': unique DOM IDs');
   for(const match of page.matchAll(/href="#([^"]+)"/g))assert(pageIds.includes(match[1]),label+': fragment '+match[1]+' resolves');
   const order=guideCitationOrder(profile,pageSources);
-  const citations=[...center.matchAll(/<sup class="citation-sup" data-source-id="([^"]+)"[^>]*>[\s\S]*?\[(\d+)\]/g)];
+  const citations=[...center.matchAll(/<sup class="citation-sup" data-source-id="([^"]+)"[^>]*>[\s\S]*?class="citation-trigger"[^>]*>(\d+)<\/a>/g)];
   const first=[...new Set(citations.map(m=>m[1]))];
   assert.deepEqual(order.slice(0,first.length),first,label+': citation first appearance');
   for(const c of citations){assert.equal(+c[2],order.indexOf(c[1])+1,label+': sequential citation');assert(pageIds.includes('source-ref-'+encodeURIComponent(c[1])),label+': citation target');}

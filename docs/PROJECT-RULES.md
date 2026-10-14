@@ -45,6 +45,8 @@ Use the prospective [RRX-CONDITION-001 addendum](../research/batches/RRX-CONDITI
 
 No article Connections body section or corresponding navigation entry, including renamed legacy relationship sections. Preserve meaningful inline relationships and canonical data. Related in the persistent right rail has at most three valid, relevant, unique non-self links, with authored priorities first. Link covered drugs, conditions and terms at their first mention per paragraph through the shared registry.
 
+Owner correction, October 14, 2026: inline superscript citation links display bare numbers without square brackets across articles and research reviews. Keep adjacent numbers visually separated, source identities, first-appearance numbering, reference targets, accessible labels and citation popovers. This supersedes the references’ bracketed superscript presentation; ordinary bibliography and popover reference labels remain unchanged.
+
 Use shared after-punctuation superscript citations in first-appearance order, page-specific inline FAQs, substantive mechanisms and verified author identity. Detailed requirements and acceptance gates remain in the pinned master and references; this summary does not weaken them.
 
 ### Article navigation, Research Feed and Update History

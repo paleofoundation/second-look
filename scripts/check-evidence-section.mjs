@@ -50,7 +50,8 @@ const decode = text => text.replace(/&#x([\da-f]+);/gi, (_, hex) => String.fromC
   .replace(/&quot;/g, '"').replace(/&apos;/g, "'").replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>');
 const rawText = node => node.tag === '#text' ? node.text : (node.children || []).map(rawText).join('');
 const textOf = node => decode(rawText(node)).replace(/\s+/g, ' ').trim();
-const normalizedText = node => textOf(node).replace(/\[\d+\]/g, '').replace(/\s+/g, ' ').trim();
+const proseWithoutCitations = node => hasClass(node, 'citation-sup') ? '' : node.tag === '#text' ? node.text : (node.children || []).map(proseWithoutCitations).join('');
+const normalizedText = node => decode(proseWithoutCitations(node)).replace(/\s+/g, ' ').trim();
 const proseText = text => text.replace(/\s+/g, ' ').trim();
 const ancestor = (node, predicate) => { for (let parent = node.parent; parent; parent = parent.parent) if (predicate(parent)) return parent; return null; };
 const flowTags = new Set(['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'details', 'figure', 'table', 'form', 'button', 'a']);
@@ -207,7 +208,7 @@ function inspect(guide, pageSources, {expectScoped = false} = {}) {
   const citations = all(article, node => node.tag === 'sup' && hasClass(node, 'citation-sup'));
   const first = [...new Set(citations.map(node => node.attrs['data-source-id']))];
   assert.deepEqual(order.slice(0, first.length), first, label + ': actual prose/scoped/effect/table first appearances agree with citation plan');
-  for (const citation of citations) assert.equal(textOf(citation), '[' + (order.indexOf(citation.attrs['data-source-id']) + 1) + ']', label + ': stable citation display number');
+  for (const citation of citations) assert.equal(textOf(citation), String(order.indexOf(citation.attrs['data-source-id']) + 1), label + ': stable citation display number');
   for (const section of guide.sections.filter(section => section.label.trim().toLowerCase() !== 'connections')) {
     if (!section.paragraph?.trim()) continue;
     const sectionNode = all(article, node => node.attrs?.id === section.id)[0];
