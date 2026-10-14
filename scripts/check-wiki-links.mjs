@@ -186,9 +186,19 @@ for (const slug of ['/drugs/metformin', '/conditions/long-covid']) {
 const catalogue = html(ResearchCatalog, {sources: [source]});
 assert(catalogue.includes('href="/drugs/metformin"'), 'Source preview prose links entities');
 assert(catalogue.includes('<a href="https://example.org/metformin" target="_blank" rel="noreferrer">Metformin source title</a>'), 'Source titles retain their original external link');
-const table = html(EvidenceTable, {sources: [], cite: () => null, renderText: wikiTextRenderer('/conditions/schizophrenia'), rows: [{id: 'row', title: 'A result', studyDesigns: [{text: 'Metformin trial in schizophrenia; relative risk reported.', sourceIds: []}], use: 'Metformin in schizophrenia', population: 'Adults', comparison: 'Placebo', endpoint: 'Score', timepoint: 'Week 4', status: 'reported_result', finding: 'Metformin was studied. Metformin was compared with placebo.', findingSources: [], magnitude: 'Relative risk was reported.', certainty: {label: 'Low', rationale: 'Small study.'}, evidenceBase: 'One trial', limits: [], sourceIds: [], familyIds: [], background: false, pending: []}]});
-assert(table.includes('href="/drugs/metformin"') && table.includes('href="/glossary/relative-risk"'), 'Visible study-design prose uses the shared linker');
-assert(!table.includes('href="/conditions/schizophrenia"'), 'Evidence prose excludes the current condition');
+const tableSummary = {
+  id: 'fixture-summary', synthesisIds: ['row'], drugId: 'fixture-drug', conditionId: 'fixture-condition',
+  label: 'A result', purpose: 'treatment', sourceIds: [], aggregationNote: 'Synthetic implementation fixture.',
+  grade: {value: null, label: 'Not assessed', rationale: 'Synthetic implementation fixture.', sourceIds: []},
+  effect: {label: 'Effect reported', detail: 'Metformin trial in schizophrenia; relative risk reported.',
+    direction: 'uncertain', rationale: 'Synthetic implementation fixture.'},
+  evidence: {rctCount: 0, participants: null, participantBasis: 'Synthetic implementation fixture.',
+    trialFamilyIds: [], sourceIds: [], trials: []},
+};
+const table = html(EvidenceTable, {summaries: [tableSummary], sources: [], cite: () => null, renderText: wikiTextRenderer('/conditions/schizophrenia'), rows: [{id: 'row', title: 'A result', studyDesigns: [{text: 'Metformin trial in schizophrenia; relative risk reported.', sourceIds: []}], use: 'Metformin in schizophrenia', population: 'Adults', comparison: 'Placebo', endpoint: 'Score', timepoint: 'Week 4', status: 'reported_result', finding: 'Metformin was studied. Metformin was compared with placebo.', findingSources: [], magnitude: 'Relative risk was reported.', certainty: {label: 'Low', rationale: 'Small study.'}, evidenceBase: 'One trial', limits: [], sourceIds: [], familyIds: [], background: false, pending: []}]});
+const visibleEffect = table.match(/class="evidence-effect-detail">([\s\S]*?)<\/span>/)?.[1];
+assert(visibleEffect?.includes('href="/drugs/metformin"') && visibleEffect.includes('href="/glossary/relative-risk"'), 'Visible effect prose uses the shared linker');
+assert(!visibleEffect.includes('href="/conditions/schizophrenia"'), 'Visible effect prose excludes the current condition');
 const mechanism = html(MechanismSection, {content: {heading: 'Mechanism of Action', detailLabels: {target: 'Target', action: 'Action', model: 'Model'}}, renderText: wikiTextRenderer('/drugs/metformin'), contexts: [{id: 'context', title: 'Context', explanation: 'Finding', evidence: {basis: 'direct_measurement', label: 'Measured', source: null, model: 'Schizophrenia'}, clinicalMeaning: 'Long COVID is a separate question.'}]});
 assert(mechanism.includes('href="/conditions/schizophrenia"') && mechanism.includes('href="/conditions/long-covid"'), 'Mechanism context fields and clinical interpretation link entities');
 

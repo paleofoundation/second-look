@@ -1,0 +1,120 @@
+{
+  "canonicalChanges": 0,
+  "canonicalReportId": "P-CSBD-FLX-NTX-2026",
+  "companionStatus": "All four scientific assets assigned; WebP association and complete PDF/image science inspection remain prospective.",
+  "doi": "10.1136/bmjment-2026-302953",
+  "exactDoiFollowup": {
+    "checkedAt": "2026-10-12T14:20:15.136314+00:00",
+    "inspector": "codex/root",
+    "interpretation": "The exact-DOI query returned a matching-title/author PMC record but no DOI/PMID fields. PMCID remains a corroborating lead; no new alias merge. Report identity rests on matched primary PDF and Crossref DOI/title.",
+    "receiptPath": "research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/next-acquisition-followup/receipt.json",
+    "receiptSha256": "572d5e6d93b3011585e36ce6a21bdbd68a45f17af472debf733763743ca6d12e",
+    "reconciliationPath": "research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/next-acquisition-followup/reconciliation.json",
+    "reconciliationSha256": "ae3df5ba196635f41b4e37050c72a301078f85bb41a811475fc7f2675a6a4ead",
+    "record": {
+      "disposition": "ExactDOIquery returns one PMC record matching title/authors; record lacks DOI/PMID fields. PMCID is a corroborating discovery lead; historical PMID42838712 remains unverified, not replaced or silently merged.",
+      "error": null,
+      "filename": "CAL-03/europepmc-doi.json",
+      "httpStatus": 200,
+      "identity": {
+        "authorString": "Savard J, Piwowar M, Adebahr R, Bystr\u00f6m M, Hallberg J, Dhejne C, G\u00f6rts \u00d6berg K, Jokinen J.",
+        "doi": null,
+        "id": "PMC13646924",
+        "pmcid": "PMC13646924",
+        "pmid": null,
+        "source": "PMC",
+        "title": "Randomised controlled trial of fluoxetine versus naltrexone in compulsive sexual behaviour disorder"
+      },
+      "packetId": "CAL-03",
+      "sha256": "f87d13531233e56da7ed1246361645aa57133b308c5cee2abd703bdde1635734",
+      "status": "RECEIVED"
+    }
+  },
+  "exactTitle": "Randomised controlled trial of fluoxetine versus naltrexone in compulsive sexual behaviour disorder",
+  "familyCoordination": {
+    "cohortIndependence": "not_established_by_assignment",
+    "familyIdentityStates": [
+      "unresolved"
+    ],
+    "familyIds": [
+      "FAM-B-R0092"
+    ],
+    "relatedExistingReports": [],
+    "rule": "Preserve report versions, arms and outcomes separately; coordinate overlapping families with same owner; never count report packets as independent studies."
+  },
+  "frontMatterVerification": {
+    "checkedAt": "2026-10-12T14:19:10.364259+00:00",
+    "inspector": "codex/root",
+    "receiptPath": "research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/next-acquisition/bibliographic-reconciliation.json",
+    "receiptSha256": "15facdc525d381820f61f89d6b71769edb21a160619c45c848bd91f3b84f4452",
+    "record": {
+      "doi": "10.1136/bmjment-2026-302953",
+      "inspector": "codex/root",
+      "method": "pdftotext physical page 1, bibliographic header filtered; actual text observed by integrator before this receipt. Incidental abstract lines are not scientific extraction inputs.",
+      "performedBeforeReceipt": true,
+      "physicalPage": 1,
+      "result": "title_and_doi_match_received_metadata",
+      "sourceFullTextInspected": false,
+      "sourceId": "B-R0092-F01",
+      "sourceSha256": "72da2c08caf73802795eb0cbe7c4615dccdf8f7ed4ebb6937ac21e7adbacec94",
+      "titleNormalized": "Randomised controlled trial of fluoxetine versus naltrexone in compulsive sexual behaviour disorder"
+    }
+  },
+  "historicalPmid": {
+    "aliasMergePerformed": false,
+    "receivedExactQueryHitCount": 0,
+    "status": "unresolved",
+    "value": "42838712"
+  },
+  "historicalResultIds": [
+    "SC-B-R0092-F01-R01",
+    "SC-B-R0092-F01-R02",
+    "SC-B-R0092-F01-R03",
+    "SCI-A-F02-R3266-F01-CONTINUATION_PREFERENCE",
+    "SCI-A-F02-R3266-S03-SECONDARY_HBI",
+    "SCI-A-F02-R3266-S03-SECONDARY_SCS"
+  ],
+  "packetId": "CAL-03",
+  "primarySourceId": "B-R0092-F01",
+  "primarySourceSha256": "72da2c08caf73802795eb0cbe7c4615dccdf8f7ed4ebb6937ac21e7adbacec94",
+  "receivedMetadata": [
+    {
+      "bytes": 16349,
+      "httpStatus": 200,
+      "identity": {
+        "doi": "10.1136/bmjment-2026-302953"
+      },
+      "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/private-research/RRX-INGEST-001/CAL-T1-20261012/CAL-03/crossref-1.json",
+      "retrievedAt": "2026-10-12T14:07:00.930061+00:00",
+      "sha256": "35cae709a07588141add34bee06c8a61ee4366dd9df309e85e3e74dfe8269e10",
+      "status": "RECEIVED",
+      "url": "https://api.crossref.org/works/10.1136%2Fbmjment-2026-302953"
+    },
+    {
+      "bytes": 236,
+      "httpStatus": 200,
+      "identity": {
+        "pmid": "42838712"
+      },
+      "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/private-research/RRX-INGEST-001/CAL-T1-20261012/CAL-03/europepmc-2.json",
+      "retrievedAt": "2026-10-12T14:07:01.082204+00:00",
+      "sha256": "d024781a118de72d7dcfee588f391bfe5b35c0c24773c30f5777bbf2de7fdd07",
+      "status": "RECEIVED",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:42838712%20AND%20SRC:MED&format=json&resultType=core"
+    },
+    {
+      "bytes": 4109,
+      "httpStatus": 200,
+      "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/private-research/RRX-INGEST-001/CAL-T1-20261012/CAL-03/europepmc-doi.json",
+      "retrievedAt": "2026-10-12T14:18:37.386232+00:00",
+      "role": "exact_doi_identity_metadata",
+      "sha256": "f87d13531233e56da7ed1246361645aa57133b308c5cee2abd703bdde1635734",
+      "status": "RECEIVED",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.1136%2Fbmjment-2026-302953&format=json&resultType=core"
+    }
+  ],
+  "reviewId": "P-CSBD-FLX-NTX-2026",
+  "schemaVersion": "remaprx-full-review-identity-provenance-v1",
+  "sourceScientificInspectionPerformed": false,
+  "sourceVersionStatus": "DOI/title matched centrally; detailed report and companion version labels must be read under source GP."
+}

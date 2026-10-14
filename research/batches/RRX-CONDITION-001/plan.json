@@ -1,0 +1,390 @@
+{
+  "schemaVersion": "remaprx-condition-planning-addendum-v1",
+  "planId": "RRX-CONDITION-001-1.0",
+  "adoptedDate": "2026-10-12",
+  "status": "ADOPTED_SCOPE_AND_DESIGN_ONLY",
+  "ownerRequirement": "Investigate the condition across all relevant potential repurposed drug interventions and present a condition-centered evidence roundup. Existing drug pages and the initial 30-drug set do not limit discovery.",
+  "parentContinuation": "RRX-INGEST-001",
+  "operationalReadiness": {
+    "status": "PENDING_GP",
+    "acquisitionDispatched": false,
+    "extractionStarted": false,
+    "importPerformed": false,
+    "publicationAuthorizedByThisPacket": false,
+    "reasons": [
+      "Condition-specific briefs and translated search queries have not been filled or checked.",
+      "Current canonical inputs, identity reconciliation and worker-accessible source inventory must be pinned for the actual operation.",
+      "Worker packet, delivery manifest, source/review input mapping and exact-version GP review are not yet prepared."
+    ],
+    "nextAction": "Reconcile the existing evidence inventory and author the first filled condition brief/worker packet, then check and record its exact-hash GP readiness."
+  },
+  "scope": {
+    "axis": "condition_first",
+    "candidateDrugCeiling": null,
+    "favorableFindingRequired": false,
+    "existingDrugPageRequired": false,
+    "retainNullHarmMixedInconclusive": true,
+    "preservePreclinicalAndRegistryOnlyDistinctions": true,
+    "conditionTargets": [
+      {
+        "id": "C01",
+        "name": "Long COVID",
+        "path": "/conditions/long-covid",
+        "scope": "initial_portfolio"
+      },
+      {
+        "id": "C02",
+        "name": "Acute COVID-19",
+        "path": "/conditions/acute-covid-19",
+        "scope": "initial_portfolio"
+      },
+      {
+        "id": "C03",
+        "name": "Epithelial ovarian or fallopian-tube carcinoma",
+        "path": "/conditions/epithelial-ovarian-or-fallopian-tube-carcinoma",
+        "scope": "initial_portfolio"
+      },
+      {
+        "id": "C04",
+        "name": "Glioblastoma",
+        "path": "/conditions/glioblastoma",
+        "scope": "initial_portfolio"
+      },
+      {
+        "id": "C05",
+        "name": "Fibromyalgia",
+        "path": "/conditions/fibromyalgia",
+        "scope": "initial_portfolio"
+      },
+      {
+        "id": "C06",
+        "name": "Myalgic encephalomyelitis/chronic fatigue syndrome",
+        "path": "/conditions/myalgic-encephalomyelitis-chronic-fatigue-syndrome",
+        "scope": "initial_portfolio"
+      },
+      {
+        "id": "C07",
+        "name": "Compulsive sexual behavior disorder",
+        "path": "/conditions/compulsive-sexual-behavior-disorder",
+        "scope": "initial_portfolio"
+      },
+      {
+        "id": "C08",
+        "name": "Persistent genital arousal disorder/genitopelvic dysesthesia",
+        "path": "/conditions/persistent-genital-arousal-disorder-genitopelvic-dysesthesia",
+        "scope": "initial_portfolio"
+      },
+      {
+        "id": "C09",
+        "name": "Treatment-resistant depression",
+        "path": "/conditions/treatment-resistant-depression",
+        "scope": "initial_portfolio"
+      },
+      {
+        "id": "C10",
+        "name": "Periodontitis",
+        "path": "/conditions/periodontitis",
+        "scope": "initial_portfolio"
+      },
+      {
+        "id": "C11",
+        "name": "Crohn disease",
+        "path": "/conditions/crohn-disease",
+        "scope": "initial_portfolio"
+      },
+      {
+        "id": "C12",
+        "name": "Head and neck squamous cell carcinoma",
+        "path": "/conditions/head-and-neck-squamous-cell-carcinoma",
+        "scope": "initial_portfolio"
+      },
+      {
+        "id": "C13",
+        "name": "Prostate cancer",
+        "path": "/conditions/prostate-cancer",
+        "scope": "initial_portfolio"
+      },
+      {
+        "id": "C14",
+        "name": "Non-small-cell lung cancer",
+        "path": "/conditions/non-small-cell-lung-cancer",
+        "scope": "initial_portfolio"
+      },
+      {
+        "id": "C15",
+        "name": "Breast cancer",
+        "path": "/conditions/breast-cancer",
+        "scope": "initial_portfolio"
+      },
+      {
+        "id": "C16",
+        "name": "Colorectal cancer",
+        "path": "/conditions/colorectal-cancer",
+        "scope": "initial_portfolio"
+      },
+      {
+        "id": "C17",
+        "name": "Pancreatic cancer",
+        "path": "/conditions/pancreatic-cancer",
+        "scope": "initial_portfolio"
+      },
+      {
+        "id": "C18",
+        "name": "Melanoma",
+        "path": "/conditions/melanoma",
+        "scope": "initial_portfolio"
+      },
+      {
+        "id": "C19",
+        "name": "Basal-cell carcinoma",
+        "path": "/conditions/basal-cell-carcinoma",
+        "scope": "initial_portfolio"
+      },
+      {
+        "id": "C20",
+        "name": "Hepatocellular carcinoma",
+        "path": "/conditions/hepatocellular-carcinoma",
+        "scope": "initial_portfolio"
+      },
+      {
+        "id": "C21",
+        "name": "Multiple myeloma",
+        "path": "/conditions/multiple-myeloma",
+        "scope": "initial_portfolio"
+      },
+      {
+        "id": "C22",
+        "name": "Acute myeloid leukemia",
+        "path": "/conditions/acute-myeloid-leukemia",
+        "scope": "initial_portfolio"
+      },
+      {
+        "id": "C23",
+        "name": "Chronic myeloid leukemia",
+        "path": "/conditions/chronic-myeloid-leukemia",
+        "scope": "initial_portfolio"
+      },
+      {
+        "id": "C24",
+        "name": "Parkinson disease",
+        "path": "/conditions/parkinson-disease",
+        "scope": "initial_portfolio"
+      },
+      {
+        "id": "C25",
+        "name": "Schizophrenia",
+        "path": "/conditions/schizophrenia",
+        "scope": "initial_portfolio"
+      },
+      {
+        "id": "C26",
+        "name": "Alzheimer disease",
+        "path": "/conditions/alzheimer-disease",
+        "scope": "initial_portfolio"
+      },
+      {
+        "id": "C27",
+        "name": "Multiple sclerosis",
+        "path": "/conditions/multiple-sclerosis",
+        "scope": "initial_portfolio"
+      },
+      {
+        "id": "C28",
+        "name": "Amyotrophic lateral sclerosis",
+        "path": "/conditions/amyotrophic-lateral-sclerosis",
+        "scope": "initial_portfolio"
+      },
+      {
+        "id": "C29",
+        "name": "Vitiligo",
+        "path": "/conditions/vitiligo",
+        "scope": "initial_portfolio"
+      },
+      {
+        "id": "C30",
+        "name": "Sarcopenia",
+        "path": "/conditions/sarcopenia",
+        "scope": "initial_portfolio"
+      },
+      {
+        "id": "C31",
+        "name": "Type 2 diabetes",
+        "path": "/conditions/type-2-diabetes",
+        "scope": "existing_addition_preserve"
+      }
+    ],
+    "separateGoals": [
+      {
+        "guideId": "G-GOAL-AGING",
+        "id": "GOAL-AGING",
+        "name": "Aging & longevity",
+        "path": "/conditions/aging",
+        "scope": "existing_addition_preserve"
+      }
+    ],
+    "suggestedValidationOrder": [
+      "C24",
+      "C01",
+      "C13",
+      "C28"
+    ],
+    "suggestedOrderIsAssignment": false,
+    "ownerRequiredDrugConditionPreserved": {
+      "drugId": "D07",
+      "conditionId": "C13",
+      "scope": "Itraconazole oncology remains required; C13 is one verified oncology condition, not the exclusive cancer scope."
+    }
+  },
+  "discovery": {
+    "requiredFamilies": [
+      "condition_wide",
+      "repurposing_terms",
+      "registry",
+      "candidate_followup",
+      "safety_and_contrary",
+      "backward_citations",
+      "forward_citations"
+    ],
+    "knownDrugNameRequiredForBroadSearch": false,
+    "repurposingKeywordRequiredForBroadSearch": false,
+    "cutoff": null,
+    "searchesExecuted": 0,
+    "sourceLocations": [
+      "https://pubmed.ncbi.nlm.nih.gov/",
+      "https://europepmc.org/",
+      "https://clinicaltrials.gov/",
+      "https://pmc.ncbi.nlm.nih.gov/"
+    ],
+    "additionalLocations": "Verified DOI/publisher/authorized repository pages, condition-relevant registries and jurisdiction-specific official labels must be named in each filled brief.",
+    "restriction": "Preserve historical closed-packet restrictions. New external discovery and acquisition require their own prospective checked scope."
+  },
+  "contracts": {
+    "coverageSchema": "research/batches/RRX-CONDITION-001/condition-coverage.schema.json",
+    "coverageSchemaSha256": "29f91dbc22b0ef4564f01eeb84a43c05f2963aff5a98ac9c4befee72778c1c2d",
+    "sourceCandidateSemantics": "research/batches/RRX-INGEST-001/schemas/candidate.schema.json",
+    "sourceCandidateRebindingRequired": true,
+    "sourceCandidateReuseLimit": "At initial inspection the schema fixed plan_id to RRX-INGEST-001-1.2. Concurrent revision is in progress. New-source extraction requires a prospectively checked schema/plan binding for its actual scope; this addendum does not change any existing binding.",
+    "exactResultSemantics": "research/batches/RRX-INGEST-001/schemas/results.schema.json",
+    "synthesisIdentityMap": "research/batches/RRX-INGEST-001/synthesis-identity-map.json",
+    "reviewInputMap": "research/batches/RRX-INGEST-001/schemas/review-questions-and-inputs.json",
+    "outcomeAppraisalMethod": "editorial/EVIDENCE-GRADING.md",
+    "readerProjection": "One canonical scoped synthesis reused for drug and condition views; no duplicate scientific grades or source counts.",
+    "conditionPageContract": "docs/CONDITION-PAGES.md",
+    "conditionEvidenceColumns": [
+      "Intervention",
+      "Outcome and finding",
+      "Evidence certainty",
+      "Evidence"
+    ],
+    "ungradedEvidence": "Retain otherwise eligible assessed and ungraded findings; no grade requirement or favorable-effect default filter.",
+    "clinicalInterpretation": "Beneficial/null/harmful/mixed/inconclusive interpretation is distinct from numerical direction such as increase or decrease, retained in canonical results.",
+    "syntheticExample": "research/batches/RRX-CONDITION-001/example.synthetic.json",
+    "syntheticExamplesAreProductionEvidence": false
+  },
+  "requiredSemanticChecks": [
+    "Condition IDs and exact scope resolve to the current canonical registry; symptoms and goals are not silently counted as conditions.",
+    "Every candidate searchId, duplicate target, source/report, review and synthesis reference resolves; IDs are unique and coverage denominators reconcile.",
+    "All required search families are covered or have an explicit justified scope exception; planned searches are not counted as executed.",
+    "Additional candidates are retained regardless of initial-portfolio membership or existing drug page.",
+    "Repurposing eligibility, regulatory status, scientific direction and certainty remain separate.",
+    "Exact-scope fingerprints and sources match canonical synthesis; indirect and preclinical support do not become direct human benefit.",
+    "Independent-study counts reconcile overlapping reports/families; stage counts retain their declared units.",
+    "Negative, harmful, mixed and inconclusive evidence is not removed by a benefit-only inclusion rule.",
+    "Safety inputs, correction/quarantine state, Q01-Q15 obligations and pending human/release gates survive reuse.",
+    "Scoped completeness is never inferred solely from source count, seed-list coverage, schema validation or a rendered table."
+  ],
+  "preservation": {
+    "existingPlansAndReceiptsRewritten": false,
+    "canonicalWritesAllowedByThisPacket": [],
+    "rawFilesInGit": false,
+    "historicalNoWebRestrictionsPreserved": true,
+    "upstreamRuleSynchronizationClaimed": false
+  },
+  "referencePins": [
+    {
+      "path": "research/batches/RRX-INGEST-001/inventory/target-registry.json",
+      "sha256": "23c9e49c113edd378b577eb880e4e90ef0f2acbc1199aa4be124fb6f3dcfbc44"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/plan.json",
+      "sha256": "590613abf20c2dc5930a6a47c01f60b5a4c7fcc5ee8bc48693c013ff045971f0"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/readiness.json",
+      "sha256": "d699a2731706ed11e5989ce2ffe337c773402212903cb2da68bd80e1b4f8b84a"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/schemas/candidate.schema.json",
+      "sha256": "1a1c86d0c19b6a946a1222b13fd231776694b4788127b2881ae87727e570909a"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/schemas/results.schema.json",
+      "sha256": "2eef6845104eb74a7a80c3ca967acd9cb9b41313ab390e439ba516b2ce5b602b"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/schemas/review-questions-and-inputs.json",
+      "sha256": "02edeacc65227e5feeaf25b6c9568be406b48024216f83d2dda2ccfcc5042f3b"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/synthesis-identity-map.json",
+      "sha256": "bb40d6b40d14bde29d6a85c5b4e70b0a8624daab29cb07d079b2db974633d10a"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/grok/RRX-GAP-001/plan.json",
+      "sha256": "6a98c63f80f0b272e0ddd0adac857c16c6ade3a2a9dc90dbe847e898944740da"
+    },
+    {
+      "path": "rules/one-match-rule/ONE-MATCH-RULE.md",
+      "sha256": "7fae46e83e1da5e139b0ab2d11ca02292603c63a50f764c89819b0792bc2f330"
+    },
+    {
+      "path": "research/prior-pilot/outputs/handoff/fetch-30x30/requests.json",
+      "sha256": "0eb6a60cf4c7804118c0d651b5c6130ab578ec362fb4e3f5670fb33065eb7348"
+    }
+  ],
+  "referencePinMeaning": "Observed references for continuity. These pins are not operational GP readiness; reconcile current live inputs and all future worker inputs before dependent work.",
+  "handoff": {
+    "completed": [
+      "Condition-first scope and search/coverage design recorded.",
+      "Additive machine-readable coverage/candidate schema prepared."
+    ],
+    "pending": [
+      "Filled condition briefs and actual translated queries.",
+      "Current-input reconciliation, packet/access checks and independent GP review.",
+      "Acquisition, extraction, source audit, appraisal, synthesis, human review and any eligible reader release."
+    ],
+    "noResearchResultsProduced": true
+  },
+  "referenceReconciliation": {
+    "status": "PENDING_CURRENT_INPUT_RECONCILIATION",
+    "checkedAt": "2026-10-12T12:07:18.393077+00:00",
+    "changedSinceReferencePin": [
+      {
+        "path": "research/batches/RRX-INGEST-001/plan.json",
+        "recordedSha256": "590613abf20c2dc5930a6a47c01f60b5a4c7fcc5ee8bc48693c013ff045971f0",
+        "currentSha256AtCheck": "906a2b41ee54787b92f035314b2e432cf26fa5eca73a7ed168f011db684bfdc0",
+        "observation": "changed_after_initial_inspection"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/readiness.json",
+        "recordedSha256": "d699a2731706ed11e5989ce2ffe337c773402212903cb2da68bd80e1b4f8b84a",
+        "currentSha256AtCheck": null,
+        "observation": "missing_during_concurrent_update"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/schemas/candidate.schema.json",
+        "recordedSha256": "1a1c86d0c19b6a946a1222b13fd231776694b4788127b2881ae87727e570909a",
+        "currentSha256AtCheck": "b8b2d5f1a371992364551b09fd86daeed05a4efb6e34a2dd436a961d48ab6091",
+        "observation": "changed_after_initial_inspection"
+      },
+      {
+        "path": "research/batches/RRX-INGEST-001/grok/RRX-GAP-001/plan.json",
+        "recordedSha256": "6a98c63f80f0b272e0ddd0adac857c16c6ade3a2a9dc90dbe847e898944740da",
+        "currentSha256AtCheck": "d83bc516f5bf1312d3170eca873032fe5f9578275c1a21955de4e08dbd5ea607",
+        "observation": "changed_after_initial_inspection"
+      }
+    ],
+    "matchingReferenceCountAtCheck": 6,
+    "action": "Preserve these initially observed reference pins as provenance. The active research integrator is changing its plan/dependencies; reconcile and pin the actual current operation before GP readiness. Do not race to refresh or overwrite active files."
+  }
+}

@@ -1,0 +1,363 @@
+{
+  "schemaVersion": "remaprx-independent-source-observations-v1",
+  "auditor": "codex/identity_review",
+  "recordedAt": "2026-10-12T13:48:17.894484+00:00",
+  "planSha256": "6fb755f1cbfd7aba822cbb97a696a51c6b3847e01ac50956b2fea0f6bd237cb8",
+  "assignmentSha256": "b000f96ac8585e623f92773433976cb4a5daf12a2734d3eb8985ff4b2f67cb0b",
+  "scope": "Independent source inspection before exact full-review candidate return; does not accept any candidate",
+  "status": "SOURCE_INSPECTION_COMPLETE_CANDIDATE_PENDING",
+  "assets": [
+    {
+      "sourceId": "MECH-D07-HEDGEHOG-2010",
+      "sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+      "bytes": 235104,
+      "unitsRead": [
+        "front-matter",
+        "abstract1",
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S7",
+        "S8",
+        "S9",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S14",
+        "S15",
+        "SM",
+        "SD1",
+        "BX1",
+        "fn-group1",
+        "ref-list1"
+      ],
+      "method": "complete native HTML text, front matter, legends and references",
+      "status": "inspected"
+    },
+    {
+      "sourceId": "CAL07-europepmc-json",
+      "sha256": "dc6c38bad7c46de1cf0aceb76610c88215d349da84829f9dbac4aa3d8b420fed",
+      "bytes": 7834,
+      "unitsRead": [
+        "metadata"
+      ],
+      "method": "complete parsed JSON including metadata relations and references",
+      "status": "inspected"
+    },
+    {
+      "sourceId": "CAL07-crossref-json",
+      "sha256": "11ef7c84b810f03ad95e0fe9a2832c6a73cd3adb87c8ace1f8c7fbd647f2c615",
+      "bytes": 24805,
+      "unitsRead": [
+        "metadata"
+      ],
+      "method": "complete parsed JSON including metadata relations and references",
+      "status": "inspected"
+    },
+    {
+      "sourceId": "CAL07-nihms199097f1-jpg",
+      "sha256": "373fff712409d379e79e7f4d0ba5546296c6db4a1138a3302b6696882b6bf166",
+      "bytes": 162815,
+      "unitsRead": [
+        "image"
+      ],
+      "method": "visual inspection of every image",
+      "status": "inspected"
+    },
+    {
+      "sourceId": "CAL07-nihms199097f2-jpg",
+      "sha256": "e23bbf5ad4df85fdbb7499fa340d6448704cef67a862b5cf3e800c6e49c11815",
+      "bytes": 171872,
+      "unitsRead": [
+        "image"
+      ],
+      "method": "visual inspection of every image",
+      "status": "inspected"
+    },
+    {
+      "sourceId": "CAL07-nihms199097f3-jpg",
+      "sha256": "64b19ff7649163d5671c147bc73d651e5b4280e43fc99dc2bae08bdd9453df4d",
+      "bytes": 136667,
+      "unitsRead": [
+        "image"
+      ],
+      "method": "visual inspection of every image",
+      "status": "inspected"
+    },
+    {
+      "sourceId": "CAL07-nihms199097f4-jpg",
+      "sha256": "b8940236894b907be85c293f6011a739abec29ac26b5549bfb29522765ca74ba",
+      "bytes": 148360,
+      "unitsRead": [
+        "image"
+      ],
+      "method": "visual inspection of every image",
+      "status": "inspected"
+    },
+    {
+      "sourceId": "CAL07-nihms199097f5-jpg",
+      "sha256": "51dcc042138ba5c7d1145b8a8717d17bf6df2ebb6ffca2988e854342a58ea06b",
+      "bytes": 192233,
+      "unitsRead": [
+        "image"
+      ],
+      "method": "visual inspection of every image",
+      "status": "inspected"
+    },
+    {
+      "sourceId": "CAL07-nihms199097f6-jpg",
+      "sha256": "ebfd22c4d47da76e81098f83a845fd5b60fd9b5b496fff229de53b225e7e2260",
+      "bytes": 120983,
+      "unitsRead": [
+        "image"
+      ],
+      "method": "visual inspection of every image",
+      "status": "inspected"
+    },
+    {
+      "sourceId": "CAL07-nihms199097f7-jpg",
+      "sha256": "a1430c5543a493cba24d00ec31fade558a494d258de7132eadac80ccb503d127",
+      "bytes": 230995,
+      "unitsRead": [
+        "image"
+      ],
+      "method": "visual inspection of every image",
+      "status": "inspected"
+    },
+    {
+      "sourceId": "CAL07-supplement-publisher-pdf",
+      "sha256": "90b42356bc5a52e53542d5ae69a8cc5e80e9a8215141471c4e87bf17700059d4",
+      "bytes": 273729,
+      "unitsRead": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6",
+        "p7",
+        "p8",
+        "p9",
+        "p10"
+      ],
+      "method": "pdftoppm 100 dpi visual inspection of every physical page",
+      "status": "inspected"
+    }
+  ],
+  "unitCount": 41,
+  "observations": [
+    {
+      "id": "version_identity",
+      "unitReferences": [
+        "front-matter",
+        "p1",
+        "metadata"
+      ],
+      "finding": "NIH manuscript byline has 14 authors; publisher supplement and both final bibliographic metadata responses have 15 including Dale Gardner. Same title/DOI/PMID linkage supports one report with version-specific authorship. Do not assert a correction reason or that final publisher body was inspected."
+    },
+    {
+      "id": "integrity_scope",
+      "unitReferences": [
+        "metadata",
+        "fn-group1"
+      ],
+      "finding": "Both dated exact-identifier responses were read in full. Crossref relation is empty and no linked correction/retraction/concern notice is supplied in these two responses. This bounded negative finding is not an exhaustive integrity search; metadata revision/index dates are not correction notices."
+    },
+    {
+      "id": "screen_scope",
+      "unitReferences": [
+        "S2",
+        "image",
+        "p2"
+      ],
+      "finding": "Screen approximately 2400 approved/post-phase-I drugs; FigureS1 shows four microtubule agents reduce reporter signal but cytotoxicity and nonmonotonic vinorelbine/paclitaxel curves limit simple selective-mechanism interpretation. Do not transform screening hits into independently reviewed studies."
+    },
+    {
+      "id": "azole_assays",
+      "unitReferences": [
+        "S2",
+        "image",
+        "p5"
+      ],
+      "finding": "Figure1B approximately 800 nM is separate from comparative Figure1D/TableS1 itraconazole 0.69 µM. TableS1 has ketoconazole 9.2, miconazole 12, clotrimazole 14 µM and fluconazole dashes (not zero). P7 says five other azoles but Figure1D/TableS1 name five total: preserve if counts are stated. Hydroxy-itraconazole Figure1E legend gives approximately 1.2 µM while P7 has an omitted numeral."
+    },
+    {
+      "id": "serum_sterols",
+      "unitReferences": [
+        "S2",
+        "image",
+        "p3",
+        "p4"
+      ],
+      "finding": "Figures2 andS2: increasing serum attenuates itraconazole; depletion largely removes effect; sterol addback does not reverse itraconazole Hh inhibition. Lovastatin/cyclodextrin controls have different assay contexts: main Figure2C signaling uses8mM pretreatment; supplement growth assay uses4mM. Do not merge these protocols."
+    },
+    {
+      "id": "growth_toxicity_control",
+      "unitReferences": [
+        "p3",
+        "p4",
+        "p9"
+      ],
+      "finding": "S2E water-soluble cholesterol can rescue lovastatin-associated growth inhibition at lower condition, while high carrier HPCD 1.4 mM or WSC 250 µM with lovastatin increases toxicity. Preserve this adverse/null control instead of reporting blanket rescue. CellTiterGlo is a two-day viability/growth proxy."
+    },
+    {
+      "id": "lipoproteins",
+      "unitReferences": [
+        "S2",
+        "image"
+      ],
+      "finding": "Figure3: HDL 100 µg/mL andVLDL 6.5 µg/mL fail rescue; LDL up to 120 µg/mL restores signaling including Ptch-null cells. LDL sequestration is a proposed explanation; direct drug-LDL binding is not measured."
+    },
+    {
+      "id": "genetic_pathway_order",
+      "unitReferences": [
+        "S2",
+        "image"
+      ],
+      "finding": "Figure4A-D: Ptch-null inhibition, SmoA1 resistance, inhibition after Smo overexpression and oxysterol activation support pathway position near Smo. These perturbations do not establish direct molecular binding. Figure4 generic assay legend must not erase specifically named Ptch-null and NIH3T3 models."
+    },
+    {
+      "id": "ciliary_result",
+      "unitReferences": [
+        "S2",
+        "S6",
+        "S7",
+        "image"
+      ],
+      "finding": "Figure4E labels 17/660 basal,614/682 ShhN,36/759 ShhN+itraconazole 2 µM; percentages in legend are approximately 90% and 5%; no calculated exact proportions adopted. Ten image means±SD and manually counted cilia are nested observations, not 660/682/759 independent cultures. Six-hour exposure. P12 Figure3E reference is a typo; actual panel is4E."
+    },
+    {
+      "id": "competition_result",
+      "unitReferences": [
+        "S2",
+        "S5",
+        "image"
+      ],
+      "finding": "Figure5A fluorescence competition after 2 day Smo induction and 4–6 hours BODIPY 10 nM exposure: itraconazole up to 10 µM does not effectively compete; KAAD 40/200 nM positive control displaces. Failure to compete neither proves no binding anywhere nor proves a distinct binding site."
+    },
+    {
+      "id": "potency_tables",
+      "unitReferences": [
+        "S2",
+        "image",
+        "p6",
+        "p7"
+      ],
+      "finding": "TableS2 KAAD IC50 21/5.7/1.8nM for no itraconazole/0.65/0.90µM. TableS3 itraconazole IC50 805/390/135nM for no KAAD/10/30 nM. Main P14 rounds 21 to 20, 1.8 to 2, 805 to 800, 135 to 130; preserve source precision. Mutual potency enhancement observed; no formal synergy score or clinical synergy established."
+    },
+    {
+      "id": "sag_table_discrepancy",
+      "unitReferences": [
+        "S2",
+        "image",
+        "p8"
+      ],
+      "finding": "TableS4 SAG EC50 literal values 17(no inhibitor),15/23/38nM with itraconazole 1.5/1.75/2.0 µM,99/260nM with KAAD 40/100 nM. Thus manuscript statement unchanged EC50 is not literally accurate. Figure5D mainly shows reduced maxima under itraconazole vs strong rightward KAAD shifts; no graph-derived maxima or ratios calculated. Confidence intervals for fits are not reported."
+    },
+    {
+      "id": "direct_binding_limit",
+      "unitReferences": [
+        "S2"
+      ],
+      "finding": "P14 explicitly says direct itraconazole–Smo binding was not demonstrated and indirect mechanisms remain possible. Inverse-agonist/noncompetitive characterization must remain author pharmacologic interpretation, not direct-binding certainty."
+    },
+    {
+      "id": "medulloblastoma_growth",
+      "unitReferences": [
+        "S2",
+        "S9",
+        "image"
+      ],
+      "finding": "Figure6A uses five arms with tumor n 8/12/10/10/10, bilateral allografts from one original Ptch+/−p53−/− tumor, clustered within recipient mice. Separate tumor count is not independent animal count. Combination uses itraconazole 100 mg/kg plus cyclopamine 25 mg/kg, whereas cyclopamine monotherapy 37.5 mg/kg; cannot call a matched-dose formal synergy experiment. Controls stop day 18; later comparisons have no concurrent control. No graph-digitized effect sizes."
+    },
+    {
+      "id": "medulloblastoma_pharmacokinetics",
+      "unitReferences": [
+        "S2",
+        "S14",
+        "image"
+      ],
+      "finding": "Bioassay measures combined itraconazole/hydroxy-itraconazole antifungal activity, not selective parent concentration. End-of-study serum/tumors sampled 4 hours after last dose from three mice per arm. 24 hour AUC reported 220 and 238 µg·hr/mL for 100 and 75 mg/kg; no conversion/inference of human safe exposure. Serum/tumor graph means not digitized."
+    },
+    {
+      "id": "gli1_assay",
+      "unitReferences": [
+        "S2",
+        "S10",
+        "image",
+        "p9",
+        "p10"
+      ],
+      "finding": "Secondary allograft Gli1/HPRT1 assay after four days treatment uses same original tumor lineage; it is an additional experiment, not independent cancer model replication. Supplement gives one-way ANOVA then unpaired pairwise t-tests. Figure6E symbols are source-specific: **p 0.0197 and ***p 0.0386, not conventional thresholds. Animal/technical-replicate mapping for each plotted dot is not fully specified."
+    },
+    {
+      "id": "bcc_growth",
+      "unitReferences": [
+        "S2",
+        "S11",
+        "S12",
+        "image"
+      ],
+      "finding": "Four treated mice/20 tumors vs two control mice/10 tumors; twice-daily itraconazole 100 mg/kg for 18 days, stopped day 19, two mice euthanized day 19, remaining two followed to 22 days. Poststop plotted n 6 tumors. Tumor-level repeated unpaired t-tests do not resolve within mouse clustering, repeated measures, multiplicity or attrition. Regrowth afterwithdrawal isnot a randomized withdrawal experiment."
+    },
+    {
+      "id": "bcc_necrosis",
+      "unitReferences": [
+        "S2",
+        "S13",
+        "image"
+      ],
+      "finding": "Figure7C p 0.017 and ordinal 0–3 necrosis score. Treated sample includes withdrawal animals and histology at differing terminal circumstances. Two-sided unpaired t-test of ordinal tumor-level scores and clustered mice limitsprecision; masking not reported. Representative H&E supports source interpretation, not blinded independent pathological rescoring."
+    },
+    {
+      "id": "statistical_reporting",
+      "unitReferences": [
+        "S4",
+        "S9",
+        "S12",
+        "S13",
+        "p10"
+      ],
+      "finding": "Triplicate well summaries, image means, tumor-level data, and mouse sampling must remain distinct. Methods report four-parameter nonlinear fit, ANOVA, t-tests; random sequence, allocation concealment, masking, sample size justification, preregistered protocol, fit CIs and general multiplicity controls are not reported in assigned report/supplement. Absence is a reporting limitation, not evidence procedures were definitely absent."
+    },
+    {
+      "id": "translation",
+      "unitReferences": [
+        "S2",
+        "BX1"
+      ],
+      "finding": "Cell reporter/ciliary endpoints and engineered mouse tumor growth are preclinical. Exposure comparisons use background human antifungal reports, not human anticancer trial outcomes. Main P19 states mouse-effective exposures exceed regular therapeutic human doses; assertions of a well-known safety profile are authors background discussion, not this study establishing human benefit/safety."
+    },
+    {
+      "id": "funding_and_bias",
+      "unitReferences": [
+        "S15",
+        "front-matter",
+        "p1",
+        "metadata"
+      ],
+      "finding": "Reported support includes Prostate Cancer Foundation, Stanford center, NIH, HHMI affiliation and ASCO award; dated EPMC metadata lists grants separately. No explicit comprehensive conflict-of-interest, funder-role or data-availability statement located. Funding alone is not evidence of misconduct; preserve authentic not reported."
+    },
+    {
+      "id": "references_scope",
+      "unitReferences": [
+        "ref-list1",
+        "p10",
+        "metadata"
+      ],
+      "finding": "Main 67 references and supplement 2 references read as report context. Cited background literature is not separately acquired/appraised by this closed packet; replication/whole-field completeness claims cannot rest on citation list alone."
+    }
+  ],
+  "limitations": [
+    "Only the 11 assigned received assets were inspected; final publisher body unavailable.",
+    "No graph digitization or calculated clinical effect sizes.",
+    "No claim of exhaustive correction/retraction/replication search.",
+    "AI scientific appraisal is not human approval, formal GRADE, canonical import or public release."
+  ],
+  "humanApproval": false,
+  "released": false
+}

@@ -1,5 +1,7 @@
 # Article navigation and history — 11 October 2026
 
+Later scope correction, October 12, 2026: [SL-RULE-011 / CONDITION-PAGES.md](CONDITION-PAGES.md) plans a condition-specific intervention roundup and replaces the forced pre-Evidence condition modules. The historical implementation/verification below remains a record of version 23. The shared Evidence → Research Feed → FAQs → Update History → References tail, icons, citations and history behavior remain applicable. This note does not claim the new condition structure has shipped.
+
 Owner source: Examine sidebar screenshots supplied in the Drug Repurposing chat and the explicit request recorded as SL-RULE-004. Implemented on `codex/article-sidebar-history` and published as Sites version 23 after explicit owner approval; release details follow below. This presentation release does not establish scientific approval.
 
 ## Adopted behavior and source mapping

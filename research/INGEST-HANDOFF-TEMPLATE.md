@@ -8,6 +8,7 @@ Copy into `research/batches/<batch-id>/HANDOFF.md` and fill with actual records.
 - Last accepted checkpoint/version and evidence of acceptance:
 - Actual completed scope and next safe action:
 - Remaining drug / condition / question / source counts and unresolved work:
+- For condition roundups: condition search protocol/cutoff, candidate discovery and dispositions (including drugs outside the initial portfolio), accepted synthesis coverage and unfinished candidates; separate searched, extracted, appraised and synthesized counts:
 
 ## Plan before work
 

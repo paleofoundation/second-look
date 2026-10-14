@@ -7,14 +7,16 @@ import {load, render} from './check-reader-sections.mjs';
 const root = path.resolve(import.meta.dirname, '..');
 const {content, guideUrl, isPrimarySource} = load(path.join(root, 'lib/content.ts'));
 const {articleUpdates, articleUpdatesForPath, articleUpdateDate} = load(path.join(root, 'lib/update-history.ts'));
+const {articleEvidenceSources, guideCitationOrder} = load(path.join(root, 'lib/citation-plan.ts'));
 const tail = [
   ['section-evidence', 'Evidence'], ['research-feed', 'Research Feed'],
   ['faqs', 'FAQs'], ['update-history', 'Update History'], ['references', 'References'],
 ];
 const profiles = content.guides.filter(guide => ['Drug', 'Condition', 'Evidence comparison'].includes(guide.type) || guide.type.includes('evidence answer'));
 for (const guide of profiles) {
-  const pageSources = content.sources.filter(source => guide.sourceIds.includes(source.id));
-  const html = render(guide, pageSources);
+  const originalSources = content.sources.filter(source => guide.sourceIds.includes(source.id));
+  const pageSources = articleEvidenceSources(guide, originalSources);
+  const html = render(guide, originalSources);
   const nav = html.match(/<nav[^>]*aria-label="On this page"[^>]*>([\s\S]*?)<\/nav>/)?.[1];
   const article = html.match(/<article class="research-content__center entry-content">([\s\S]*?)<\/article>/)?.[1];
   assert(nav && article, guide.slug + ': article and contents both render');
@@ -26,7 +28,9 @@ for (const guide of profiles) {
     assert(nextBody > bodyPosition, guide.slug + ': body order at ' + label);
     navPosition = nextNav; bodyPosition = nextBody;
   }
-  const navLinks = [...nav.matchAll(/<a\b[^>]*class="post-content__link[^>]*>[\s\S]*?<\/a>/g)];
+  // Nested group sub-items (e.g. under Overview) are text-only by design.
+  const topLevelNav = nav.replace(/<div id="toc-group-[^"]*" class="omr-toc-group__children"[\s\S]*?<\/div><\/div><\/div>(?=<\/div>|<div>)/g, '');
+  const navLinks = [...topLevelNav.matchAll(/<a\b[^>]*class="post-content__link[^>]*>[\s\S]*?<\/a>/g)];
   for (const [link] of navLinks) {
     assert(link.includes('class="omr-toc-icon" aria-hidden="true"'), guide.slug + ': decorative icon accompanies every top-level label');
     assert(/<svg[^>]*aria-hidden="true"/.test(link), guide.slug + ': icon has no duplicated accessible name');
@@ -36,13 +40,21 @@ for (const guide of profiles) {
   assert(!feed.includes('id="references"'), guide.slug + ': bibliography is separate from Research Feed');
   const studyIds = [...feed.matchAll(/data-study-id="([^"]+)"/g)].map(match => match[1]);
   assert.deepEqual(studyIds, pageSources.filter(isPrimarySource).map(source => source.id), guide.slug + ': one canonical summary per primary source');
+  const citationOrder = guideCitationOrder(guide, pageSources);
+  const citations = [...article.matchAll(/<sup class="citation-sup" data-source-id="([^"]+)"[^>]*>[\s\S]*?\[(\d+)\]/g)];
+  for (const citation of citations) {
+    assert(pageSources.some(source => source.id === citation[1]), guide.slug + ': citation resolves in the complete article evidence sources');
+    assert.equal(Number(citation[2]), citationOrder.indexOf(citation[1]) + 1, guide.slug + ': article citations retain the frozen augmented source order');
+  }
   for (const id of studyIds) {
     assert(feed.includes('id="study-' + id + '"'), guide.slug + ': stable disclosure target');
     assert(feed.includes('href="/research/' + id + '"'), guide.slug + ': dedicated summary destination');
   }
   for (const alias of ['research', 'studies', 'edition']) assert(article.includes('id="' + alias + '"'), guide.slug + ': legacy fragment ' + alias);
-  assert(articleUpdatesForPath(guideUrl(guide)).length, guide.slug + ': dated history is scoped to existing article');
-  assert(article.includes('dateTime="2026-10-11"'), guide.slug + ': persistent date rendered rather than a live build date');
+  // Update History lists material content changes only; a page may have none.
+  const materialUpdates = articleUpdatesForPath(guideUrl(guide));
+  if (materialUpdates.length) assert(materialUpdates.every(entry => article.includes('dateTime="' + entry.date + '"')), guide.slug + ': persistent date rendered rather than a live build date');
+  assert(article.includes('data-update-id="page-created"') || article.includes('No material content updates have been recorded'), guide.slug + ': page-created entry or empty material history is stated');
 }
 
 const updateIds = new Set();
@@ -52,7 +64,7 @@ for (const update of articleUpdates) {
   assert(update.title && update.summary && update.changeType, 'Meaningful history fields are present');
   assert.equal(new Set(update.pagePaths).size, update.pagePaths.length, 'History scope does not duplicate routes');
 }
-assert.equal(articleUpdateDate('2026-10-11'), '11 October 2026', 'Dates are timezone-stable');
+assert.equal(articleUpdateDate('2026-10-11'), 'October 11, 2026', 'Dates are timezone-stable');
 assert.deepEqual(articleUpdatesForPath('/drugs/a-future-article'), [], 'New pages do not inherit old changes');
 assert.deepEqual(articleUpdatesForPath('/drugs/metformin/?view=reader#edition'), articleUpdatesForPath('/drugs/metformin'), 'History scope tolerates query and fragment URLs');
 

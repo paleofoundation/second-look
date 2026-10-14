@@ -17,11 +17,31 @@ Every researcher starts with [RESEARCH-INGEST.md](RESEARCH-INGEST.md). A new col
 
 No acquisition/file-request handoff or substantive extraction/import starts without a persisted matching plan and recorded GP Plan readiness. Raw files may be inventoried beforehand. A historical plan PASS does not authorize a new batch or prove receipt, extraction, appraisal or release. Complete the applicable checks autonomously; this prerequisite does not add a routine owner-approval step.
 
+## Language and spelling
+
+Owner instruction, October 12, 2026: all Drug Repurposing / Second Look / RemapRx pages must be written in **American English, with American English spelling**. This applies to new, generated, imported and revised reader-facing prose, including headings, navigation labels, explanations, study summaries, tables, FAQs, disclosures, interface messages, image descriptions and page metadata. Use forms such as `behavior`, `aging`, `hematological`, `randomized`, `analyzed`, `catalog` and `canceled`. Declare the document language as `en-US` and use American English for prose date formatting.
+
+Preserve exact published study titles, verbatim quotations, proper names and source records when their original spelling is required for fidelity. Write surrounding explanations and paraphrases in American English. Preserve stable URLs, identifiers, schema keys and compatibility aliases; normalize their visible labels without changing stored identity. Check authored copy and generated public projections before publication. This supersedes any inherited British English default for this project's pages; the reference sites and pinned upstream rule snapshot remain separate.
+
 ## Second Look presentation and scope
 
 Preserve broad drug and condition parents, separate drug/condition registries and scoped child questions. The initial portfolio target is 30 distinct drugs and 30 distinct conditions; records or directory counts do not establish complete research. Preserve explicitly required candidates separately from demand rankings and efficacy claims.
 
-Use the Microbiome Medicine whole-site reference and scoped PepsAnon refinements. For Second Look, Evidence begins with its explanatory prose and ends with one compact Outcome and study design / Grade / Evidence table. Outcome and source-count controls open the matching right-side research panel. Keep findings, estimates, limits and exact sources in canonical records and the panel. Retain the old findings fragment as an alias. Unknown evidence must not become a fabricated grade.
+Use the Microbiome Medicine whole-site reference and scoped PepsAnon refinements. For drug pages, Evidence begins with its explanatory prose and ends with one compact Outcome and study design / Grade / Evidence table. Condition pages follow the condition-first correction below, with an explicit intervention column and visible scoped finding. Outcome and source-count controls open the matching right-side research panel. Keep findings, estimates, limits and exact sources in canonical records and the panel. Retain the old findings fragment as an alias. Unknown evidence must not become a fabricated grade.
+
+### Outcome table and study-sidebar correction
+
+Owner correction, October 12, 2026: adopt the Examine-like five-column grouped outcome table and right-side study details specified in [OUTCOME-TABLES.md](OUTCOME-TABLES.md). Conditions: Intervention / Outcome / Grade / Effect / Evidence. Drugs: Health condition / Outcome / Grade / Effect / Evidence. Group each condition or intervention once, synthesize compatible studies into one outcome row, use separately documented A–F likelihood-of-benefit assessments, show effect size and independent randomized trial/participant counts, and place condition-specific proposed mechanisms and study detail in the matching research overlay. Retain distinct prevention/treatment endpoints within the Long COVID group and exclude duplicate trial reports from counts. This supersedes the older three-column default, four-column condition plan and certainty-only Grade display below within this scope. Existing raw evidence, certainty assessments, source identities and review gates remain preserved.
+
+### Condition-first investigation and intervention roundups
+
+Owner correction, October 12, 2026: a condition page investigates all potential repurposed-drug interventions for that condition and presents their evidence together. Its scope cannot inherit one available drug/pilot or be limited to the initial 30-drug registry. The [condition page contract and implementation plan](CONDITION-PAGES.md) governs the planned condition-specific navigation, intervention-first table, right rail, source mapping and acceptance. Shared components do not imply identical drug and condition editorial structures.
+
+The condition parent must explain the condition and the investigated intervention landscape across its description, overview, mechanisms/rationales, safety, findings, FAQs and related context. The Evidence roundup names each drug or exact regimen and preserves its separate outcome/population/comparator/timepoint findings and certainty. Make supported benefit visible while retaining mixed, null, inconclusive and harmful results; preclinical rationale and candidates without clinical results must remain distinguishable. A related-reading list or candidate link is not evidence or a complete intervention roundup. The condition view and drug view reuse the same accepted synthesis identities and assessments.
+
+The planned condition sequence is Overview, Interventions, Safety, Evidence, Research Feed, FAQs, Update History, References. Disease biology belongs with condition context; drug-specific mechanisms and comparisons belong with the relevant intervention or evidence. Preserve substantive scientific content and legacy fragments when replacing the forced Options/Mechanism of Action/Comparisons structure. The condition table variant is Intervention / Outcome and finding / Evidence certainty / Evidence. This supersedes the universal three-column table and forced pre-Evidence condition modules for this scope; drug-page defaults and the shared reader tail remain intact. Implementation and rendered verification are pending, not implied by adoption.
+
+Use the prospective [RRX-CONDITION-001 addendum](../research/batches/RRX-CONDITION-001/PLAN.md) for condition-led candidate discovery and coverage. Reconcile existing records before collecting gaps, investigate candidates outside the initial portfolio, and distinguish search completion from extraction, appraisal and synthesis. Historical recovery, targeted integrity repair and extra-name lead restrictions stay scoped to their original packets; they cannot supply condition-completeness acceptance. Preserve those hashed artifacts and create fresh operational readiness before dependent new research.
 
 No article Connections body section or corresponding navigation entry, including renamed legacy relationship sections. Preserve meaningful inline relationships and canonical data. Related in the persistent right rail has at most three valid, relevant, unique non-self links, with authored priorities first. Link covered drugs, conditions and terms at their first mention per paragraph through the shared registry.
 
@@ -31,7 +51,7 @@ Use shared after-punctuation superscript citations in first-appearance order, pa
 
 Adopted 11 October 2026 from the owner's Examine sidebar screenshots and explicit follow-up. Every top-level article contents link has a small, consistent outline icon beside its visible label. Icons are decorative for assistive technology; the link retains its text, focus state and real fragment target. Use the shared semantic icon mapping for every applicable post type and mobile contents view. Preserve the existing scientific modules and brand palette.
 
-The reader-facing tail is **Evidence → Research Feed → FAQs → Update History → References**, omitting only genuinely inapplicable modules for the post type. The sidebar and actual body must consume the same ordered contract. Move condition Safety and Comparisons before this tail. Preserve existing scientific prose, canonical citations and legacy fragments. Research Feed and Update History are explicit two-word labels; the earlier blanket one-word convention does not shorten them to Research or Updates. References is its own top-level destination.
+The reader-facing tail is **Evidence → Research Feed → FAQs → Update History → References**, omitting only genuinely inapplicable modules for the post type. The sidebar and actual body must consume the same ordered contract. Condition Safety precedes this tail; the later condition-first correction places comparisons with their relevant intervention/evidence instead of requiring a standalone Comparisons module. Preserve existing scientific prose, canonical citations and legacy fragments. Research Feed and Update History are explicit two-word labels; the earlier blanket one-word convention does not shorten them to Research or Updates. References is its own top-level destination.
 
 Research Feed contains the page's canonical study summaries, with inline expansion, source identity, available findings and limits, and access to the dedicated review. Keep the Evidence table's separate right-side research panel. Reuse existing summaries and server-authorized released review bodies; neither a source preview nor a relabeled catalogue completes the substantive Q01–Q15 review obligation. Preserve all access and release gates and keep unpublished review bodies out of public payloads.
 
@@ -46,15 +66,33 @@ The owner's 11 October correction in [reader-rule-correction.md](rule-history/re
 - Safety gives supported harms, consequential contraindications/precautions, interactions and applicable populations. Trial exclusions are not automatically contraindications.
 - Do not replace these answers with generic evidence warnings, internal process commentary or explanations that the website has not finished writing/reviewing them. Keep meaningful source-specific scientific uncertainty, correction notices and honest availability. Missing work remains in private ledgers and still blocks completeness claims.
 
+### Mechanism presentation completion requirement
+
+Owner clarification, 11 October 2026: establish a canonical generator style for Mechanism of Action and assess whether its existing eleven disclosures belong in that section. The owner identified the visible introduction as two sentences rather than a developed paragraph. The count of eleven describes existing content, not a required number of questions. A table was suggested as a possibility; table conversion is not yet an adopted layout decision. Pending design resolution, preserve the existing source-bound mechanism requirements and distinguish biological explanations and condition-specific rationale from clinical effectiveness results, which belong primarily in Benefits/Evidence. This requirement is recorded; generator and rendered-layout changes remain pending.
+
+The owner's 12 October follow-up authorizes a one-page itraconazole pilot of connected opening prose, visible shared pathway explanations and a condition-rationale table with labeled cards in narrow article columns. Keep all source citations, condition relationships and legacy mechanism fragments. This is a scoped experiment, not adoption of a site-wide canonical style; broader generator/rule changes depend on the owner's assessment. See [MECHANISM-PILOT.md](MECHANISM-PILOT.md) for the data contract, source mapping and verification.
+
 ## Review, access and release
+
+The owner's October 12, 2026 implementation plan adopts [topic guides, article sharing and member library](TOPIC-GUIDES.md): $49 permanent topic purchases with future approved editions; $59 monthly membership after Metformin, Long COVID and itraconazole are released; no initial annual plan or physician edition. It supersedes previous guide prices and edition-only ownership. Replace the persistent metadata rail with sharing, an honest topic-guide offer and up to three related links. Preserve free articles/reviews, scientific review, exact asset approvals and private server authorization. Complete metformin ingestion/assessment before substantive manuscript authoring.
 
 Use [editorial/EVIDENCE-GRADING.md](../editorial/EVIDENCE-GRADING.md) for the adopted selected-source outcome assessments. This is separate from formal GRADE, Q01–Q15 study-review completion, human review and release approval. Every cited scholarly paper retains its dedicated review obligation and source traceability.
 
 Released full research reviews are free after supported login and persisted role intake under the current policy. Enforce access server-side. Reader roles do not grant editorial privileges. Git does not carry production users, D1 data, R2 assets, authentication credentials or payment entitlements. Preserve the existing scientific and commercial release gates and hosting audience.
 
+### Subscriber physician discussion packets
+
+Owner requirement, October 12, 2026: offer paid subscribers a physician-facing drug-repurposing evidence packet inside the logged-in subscriber portal, with printable and emailable outputs and firm, effective language for discussing relevant science and clinical studies with their physicians. The lung-cancer/resection scenario is an illustrative conversation use case, not an adopted clinical claim or instruction to postpone treatment. Use $59/month membership and $39 per individual guide as the owner's planning price assumptions; this does not change live pricing or authorize billing. Ten additional subscriber-value ideas were requested for consideration and are proposals until selected.
+
+Owner follow-up, October 12, 2026: create a sample non-small-cell lung cancer packet showing exactly what a subscriber could print or email. The bounded sample contract, source scope and verification are in [PHYSICIAN-PACKETS.md](PHYSICIAN-PACKETS.md). This authorizes a reviewable sample, not sending it to a physician or releasing an authenticated subscriber feature.
+
+Status: a local PDF, editable document and email template have been created and locally verified under the sample contract; independent clinical review, authenticated implementation, live export/sharing verification and subscriber release remain pending. This adds a planned subscriber tool without superseding the existing free-after-login policy for released research reviews. Existing scientific, privacy, entitlement and commercial release requirements apply.
+
 ## Custom domain scope
 
 Owner instruction adopted 11 October 2026: connect the existing public Sites publication to the apex `remaprx.com` using the existing GoDaddy DNS. Do not change nameservers. Leave `www` unchanged unless it becomes necessary, and explicitly report that need before expanding the domain scope. Confirm hosting-side domain and SSL activation and an HTTPS page load with certificate validation before declaring the connection complete. Report any additional required DNS record with its exact type, host and value. The hosting identity, configured records and dated verification receipt are in [CUSTOM-DOMAIN.md](CUSTOM-DOMAIN.md).
+
+Owner follow-up, October 12, 2026: repair the reported availability problem after diagnosis found `www.remaprx.com` failing HTTPS while the apex served HTTP 200. This authorizes adding `www` to the existing Sites publication and the necessary GoDaddy validation/routing records, superseding the earlier leave-`www`-unchanged scope for this repair. Preserve nameservers, apex records, public audience and application release. Verify hosting status and certificate-validating HTTPS before declaring the repair complete. See `CUSTOM-DOMAIN.md` for the verification record and completed repair receipt.
 
 ## Maintaining the rules
 
@@ -63,3 +101,39 @@ Owner instruction adopted 11 October 2026: connect the existing public Sites pub
 Owner implementation instruction, 12 October 2026: adopt the [RRX-INGEST-001 plan](../research/batches/RRX-INGEST-001/PLAN.md). Use hybrid Codex/Grok acquisition, repair then expand, and reconcile the original private research lineage before repeating work. MOA-01 is restricted to current target scope; extra drugs remain leads. Preserve 30 distinct drugs, 30 distinct conditions, DR001–DR036, subsequent canonical additions and mandatory itraconazole–cancer coverage. Use one integrator, isolated worker returns, exact-scope result/synthesis identities, prospective GP readiness, an audited candidate/diff and guarded idempotent integration. Evidence-to-page mappings require scientific relevance rather than acquisition tags. The batch handoff records actual technical/scientific/release status; no historical or AI acceptance supplies human approval. Raw files remain external private dependencies and source locations must be resolvable by another collaborator.
 
 Update this contract or the appropriate ingestion/editorial contract and append a source-linked entry to `RULE-CHANGELOG.md` in the same PR. Separate requested/adopted, implemented, verified and released status. For a reusable global correction, submit it to the existing One Match Rule integrator; the upstream source on the original host is `Pepsanon.com/one-match-rule/`. Another host must locate that upstream rather than create a second master. Record pending upstream, installed-skill and exported/uploaded-copy synchronization honestly. Never overwrite concurrent work or the frozen baseline.
+
+## RemapRx visual system and topic illustrations
+
+Owner instruction, 12 October 2026: adopt the supplied blue `#1736F5`, yellow `#FFC709`, gray `#808080` and light gray `#DEDEDE` palette across RemapRx, then create coordinated blue illustrations for Metformin and Parkinson’s disease in the left article-hero section. This supersedes preserving the earlier navy/gold brand palette for this visual scope. Preserve semantic evidence/error colors and readability. Use the versioned [design system](DESIGN-SYSTEM.md), original topic illustrations, responsive browser assets, explicit page mappings and descriptive image metadata. The illustration conventions may later be reused on PepsAnon; that separate site is not migrated in this pass. Existing scientific, commercial, access and indexing release gates remain unchanged.
+
+
+Owner follow-up, October 12, 2026: extend this same blue illustration and metadata setup to every remaining drug and condition page on RemapRx, including canonical discovery entries. Require explicit topic assignments, accurate descriptions, responsive transparent assets and individual social previews; preserve the two accepted originals. The expanded contract is in `DESIGN-SYSTEM.md`, and verification/release status in `HERO-ROLLOUT-VALIDATION.md`.
+
+
+## Approved identity and atlas homepage
+
+Owner approval, October 12, 2026: use the mapping-round-4 logo and favicon, carry the mapping visual into the homepage hero, replace current reader-facing Second Look branding and publish the new identity/category language. The category is “The drug repurposing atlas”; the headline is “Mapping new targets for approved medications.” Full copy, production assets and bounded implementation/release status are in `REMAPRX-IDENTITY.md`. Preserve source traceability and approval-specific language, historical records, stable routes/identifiers, topic illustrations, access/indexing settings and scientific/commercial gates. Logo selection is complete. The earlier broader mechanism/preliminary-evidence plan remains separate work, not implied complete by this identity release.
+
+
+### Physician packet portal follow-up — October 12, 2026
+
+The owner authorizes building condition-specific physician packets into the paid-member portal, using professional tables and print/email outputs. Follow [PHYSICIAN-PACKETS.md](PHYSICIAN-PACKETS.md). Leave the specialist name and contact blank until a real, consenting contributor is identified. Contributor credit is distinct from clinical approval. This supersedes the earlier sample-only scope; pricing, actual billing, clinical approvals and messages to physicians are not created by implementation.
+
+## Treatment suitability in articles and physician packets
+
+Owner follow-up, October 12, 2026: include who should not be considered for each treatment and its contraindications on the website and physician packets. Follow [TREATMENT-SUITABILITY.md](TREATMENT-SUITABILITY.md): distinguish formal/indication-specific restrictions, precautions, interactions and trial applicability; use source-bound tables, retain formulation and indication qualifiers, and require suitability coverage for every repurposed drug in a packet. Existing article sections remain; condition pages link to the relevant intervention restrictions. Record fresh source checks separately from presentation-only changes and preserve exact-edition release gates.
+
+
+## 2026-10-12 — Metformin content pilot
+
+The user designated metformin as the immediate page-completion pilot using existing evidence. Its overview introduces the drug, approved use and breadth of repurposing investigations. Mechanisms use one cohesive introductory paragraph, visible pathway explanations and a condition-specific table separating rationale, measurements and limits. Clinical outcome questions remain in Benefits. Preserve existing citation identities and mechanism anchors; this presentation change does not confer scientific-review or release approval.
+
+
+### Metformin pathway accordion pilot — October 12, 2026
+
+Owner follow-up requests FAQ-style accordions for the three metformin pathway headings: “Insulin sensitivity and growth signaling,” “AMPK, mTOR and the balance between energy use and growth,” and “Autophagy and mitochondrial stress.” Preserve these declarative headings, their cited explanations and fragment IDs; omit question wording and the FAQ “Quick answer” label. Start collapsed and allow independent expansion. The opening paragraph and condition-rationale table stay visible. This supersedes visible pathway blocks for metformin only, as a local design pilot pending owner assessment before canonical adoption. Other drug pages retain their existing presentation. Implementation and verification: `MECHANISM-PILOT.md`.
+
+
+## 2026-10-12 — Metformin rationale block removal
+
+Source: owner request “remove this” with Screenshot 2026-10-12 at 8.50.27 PM.png. Remove the complete Metformin “Rationale by condition” block: heading, explanatory paragraph, condition link list, residual multiple-myeloma table and treatment-outcomes footer. This supersedes the Metformin pilot requirement to retain that visible table. Preserve the introductory paragraph, pathway accordions, canonical source-bound records, Evidence drawer content and nonvisual legacy fragment targets. Other pages retain their existing layout. Implemented in the shared renderer with a Metformin-only option; local SSR, TypeScript and governance verification passed. This continues the existing local mechanism pilot; no publication or global adoption is claimed.

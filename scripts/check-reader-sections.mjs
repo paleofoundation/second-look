@@ -48,9 +48,9 @@ function load(file) {
 
 const {Article} = load(path.join(root, 'components/article.tsx'));
 const {ThemeProvider} = load(path.join(root, 'components/shared-theme/theme.tsx'));
-const {guideCitationOrder,articleSectionGroups} = load(path.join(root, 'lib/citation-plan.ts'));
+const {guideCitationOrder,articleSectionGroups,articleEvidenceSources,benefitQuestionPlan} = load(path.join(root, 'lib/citation-plan.ts'));
 const {buildUniversalArticlePlan,universalArticlePlanErrors,isRetiredArticleSection} = load(path.join(root, 'components/shared-theme/universal-article.ts'));
-const {drugMechanismFor} = load(path.join(root, 'lib/mechanisms.ts'));
+const {drugMechanismFor,evidenceMechanismsFor,mechanismEvidenceHref} = load(path.join(root, 'lib/mechanisms.ts'));
 const sourceIds = ['overview', 'original', 'summary', 'mechanism-question', 'benefits', 'benefit-question', 'faq'];
 const sources = sourceIds.map(id => ({id, title: id + ' source', preview: 'Source finding.',
   url: 'https://example.org/' + id, sourceType: 'context', year: 2026}));
@@ -65,7 +65,9 @@ const guide = {id: 'fixture-guide', entityId: 'fixture-drug', slug: '/drugs/fixt
   faqs: [{id: 'faq-one', question: 'What else was measured?', answer: 'Another reported outcome.', sources: ['faq']}],
 };
 const order = guideCitationOrder(guide, sources);
-assert.deepEqual(order, sourceIds, 'New sources follow rendered prose and question order, not sourceIds order');
+// Drug Benefits renders in Overview; uncovered Benefits questions render in FAQs.
+const renderedOrder = ['overview', 'benefits', 'original', 'summary', 'mechanism-question', 'faq', 'benefit-question'];
+assert.deepEqual(order, renderedOrder, 'New sources follow rendered prose and question order, not sourceIds order');
 assert.equal(drugMechanismFor({...guide, id: 'fixture-answer', type: 'Drug–condition evidence answer', entityId: undefined})?.drugId, 'fixture-drug');
 const config = {mainId: 'main', identity: {name: 'Fixture', homeHref: '/'}};
 const render = (value, pageSources = sources) => renderToStaticMarkup(React.createElement(ThemeProvider, {config}, React.createElement(Article, {guide: value, sources: pageSources})));
@@ -73,7 +75,7 @@ const html = render(guide);
 const article = html.match(/<article class="research-content__center entry-content">([\s\S]*?)<\/article>/)?.[1];
 assert(article, 'The canonical article column renders');
 const citations = [...article.matchAll(/<sup class="citation-sup" data-source-id="([^"]+)"[^>]*>[\s\S]*?\[(\d+)\]/g)];
-assert.deepEqual([...new Set(citations.map(match => match[1]))], sourceIds, 'Rendered first appearances match the registry');
+assert.deepEqual([...new Set(citations.map(match => match[1]))], renderedOrder, 'Rendered first appearances match the registry');
 for (const match of citations) assert.equal(Number(match[2]), order.indexOf(match[1]) + 1);
 for (const id of ['mechanism-question', 'benefit-question']) {
   assert(article.includes('class="rgbc-faq-item" id="' + id + '"'), 'Question uses canonical native details: ' + id);
@@ -127,7 +129,7 @@ for(const type of ['Drug','Condition','Explainer','Drug–condition evidence ans
 console.log('PASS: Connections retired from all guide render groups, universal modules/navigation and main/scoped citation traversal; active content and legacy data preserved.');
 
 // Run the same checks against the actual public Metformin content, not a fixture.
-const {content} = load(path.join(root, 'lib/content.ts'));
+const {content,synthesisRows} = load(path.join(root, 'lib/content.ts'));
 const metformin = content.guides.find(item => item.slug === '/drugs/metformin');
 assert(metformin, 'The public Metformin profile exists');
 const metforminSources = content.sources.filter(source => metformin.sourceIds.includes(source.id));
@@ -137,33 +139,70 @@ assert(metforminArticle, 'The public Metformin article renders');
 const textOf = html => html.replace(/<[^>]*>/g, '').replace(/&#x27;/g, "'").replace(/&quot;/g, '"')
   .replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/\[\d+\]/g, '')
   .replace(/\s+/g, ' ').trim();
+function assertMechanismLocations(profile, record, mechanismSection, page, pageSources) {
+ const removedBlock=profile.id==='G-METFORMIN';
+ if(removedBlock){
+  for(const text of ['Rationale by condition','mechanism-evidence-links','mechanism-rationale-table','For treatment outcomes'])assert(!mechanismSection.includes(text),'Metformin removed rationale block: '+text);
+ }
+ const resolvedSources=articleEvidenceSources(profile,pageSources);
+ const order=guideCitationOrder(profile,pageSources);
+ for(const rationale of record.rationales||[]){
+  const label=profile.slug+': '+rationale.id;
+  assert(mechanismSection.includes('id="'+rationale.id+'"'),label+': legacy mechanism anchor remains usable');
+  const evidenceHref=mechanismEvidenceHref(profile,rationale.id);
+  let selected=rationale;
+  if(evidenceHref){
+   if(!removedBlock)assert(mechanismSection.includes('<span id="'+rationale.id+'"><a href="'+evidenceHref+'">'),label+': legacy anchor links to the matching evidence row');
+   assert(page.includes('id="'+evidenceHref.slice(1)+'"'),label+': evidence destination renders');
+   assert(!mechanismSection.includes('<tr role="row" id="'+rationale.id+'"'),label+': moved rationale does not remain in the main table');
+   const row=synthesisRows.find(row=>row.id===evidenceHref.slice(1));
+   assert(row,label+': destination is a canonical synthesis row');
+   selected=evidenceMechanismsFor(row.drugId,row.conditionId).find(item=>item.id===rationale.id);
+   assert(selected,label+': exact drug/condition drawer receives this rationale');
+  }
+  for(const field of ['rationale','tested','limits']){
+   assert.deepEqual(selected[field],rationale[field],label+': '+field+' retains exact prose and sentence citations');
+   for(const sentence of rationale[field].sentences||[]){
+    if(!evidenceHref&&!removedBlock)assert(textOf(mechanismSection).includes(sentence.text),label+': unmapped rationale remains visible');
+    for(const id of sentence.sources){
+     assert(resolvedSources.some(source=>source.id===id),label+': mechanism source resolves '+id);
+     assert(order.includes(id),label+': source retains a page citation number '+id);
+     assert(page.includes('id="source-ref-'+encodeURIComponent(id)+'"'),label+': citation has a bibliography target '+id);
+     if(!evidenceHref&&!removedBlock)assert(mechanismSection.includes('data-source-id="'+id+'"'),label+': retained rationale has rendered citations');
+    }
+   }
+  }
+ }
+}
 const mechanismHtml = metforminArticle.slice(metforminArticle.indexOf('<section id="mechanisms"'),
-  metforminArticle.indexOf('id="section-benefits"'));
-const benefitsHtml = metforminArticle.slice(metforminArticle.indexOf('id="section-benefits"'),
   metforminArticle.indexOf('id="section-safety"'));
+const overviewHtml = metforminArticle.slice(metforminArticle.indexOf('id="section-overview"'), metforminArticle.indexOf('<section id="mechanisms"'));
+const faqHtml = metforminArticle.slice(metforminArticle.indexOf('id="faqs"'), metforminArticle.indexOf('id="update-history"'));
 const mechanism = drugMechanismFor(metformin);
 assert(mechanism?.originalAction?.text, 'Metformin has a sourced original action');
 assert(textOf(mechanismHtml).includes(mechanism.originalAction.sentences[0].text));
-assert(textOf(mechanismHtml.slice(0, mechanismHtml.indexOf('<details'))).includes(mechanism.summary.text), 'Mechanism summary remains visible before the questions');
-assert(mechanism.questions.length >= 10, 'Mechanism questions cover every investigated condition');
-for (const question of mechanism.questions) {
-  assert(mechanismHtml.includes('<details class="rgbc-faq-item" id="' + question.id + '"'));
-  assert(textOf(mechanismHtml).includes(question.title));
-  for (const sentence of question.sentences || []) assert(textOf(mechanismHtml).includes(sentence.text), question.id + ' answer sentence is visible in the disclosure');
+assert.equal((mechanismHtml.match(/<details\b/g) || []).length, 3, 'Metformin has three pathway disclosures');
+assert(!/<details\b[^>]*\bopen(?:\s|=|>)/.test(mechanismHtml), 'Pathway disclosures start collapsed');
+assert.equal(mechanism.pathways.length, 3, 'Metformin explains its three principal mechanism themes');
+assert.equal(mechanism.rationales.length, 10, 'Metformin distinguishes mechanisms, measurements and limits across conditions');
+assert.equal((mechanismHtml.split('class="rgbc-faq-block mechanism-pathway-disclosures"')[0].match(/<p(?:\s|>)/g) || []).length, 1, 'Mechanism introduction is one cohesive paragraph');
+for (const pathway of mechanism.pathways) {
+  assert(mechanismHtml.includes('id="' + pathway.id + '"'));
+  assert(mechanismHtml.includes('<h3 class="rgbc-faq-q">' + pathway.title + '</h3>'), 'Pathway disclosure retains its declarative heading');
+  for (const sentence of pathway.sentences || []) assert(textOf(mechanismHtml).includes(sentence.text));
 }
+assertMechanismLocations(metformin,mechanism,mechanismHtml,metforminHtml,metforminSources);
 const benefits = metformin.sections.filter(section => section.label === 'Benefits');
 assert.equal(benefits.length, 1, 'Benefits has one prose summary');
-assert(benefits[0].questions.length >= 12, 'Benefits covers the investigated conditions');
-assert.equal((benefitsHtml.match(/class="rgbc-faq-item"/g) || []).length, benefits[0].questions.length);
-assert.equal((benefitsHtml.match(/<h2>Benefits<\/h2>/g) || []).length, 1);
-assert(!benefitsHtml.includes('<h3>'), 'Benefits has no duplicate summary heading');
-for (const sentence of benefits[0].sentences || []) assert(textOf(benefitsHtml).includes(sentence.text));
-assert(benefitsHtml.indexOf('<p>') < benefitsHtml.indexOf('<details'), 'The benefits summary is outside and before the accordions');
-for (const question of benefits[0].questions) {
-  assert(benefitsHtml.includes('<details class="rgbc-faq-item" id="' + question.id + '"'));
-  assert(textOf(benefitsHtml).includes(question.question));
-  for (const sentence of question.sentences || []) assert(textOf(benefitsHtml).includes(sentence.text), question.id + ' answer sentence is present');
+assert(!metforminArticle.includes('id="section-benefits"'), 'Benefits no longer renders as its own section');
+for (const sentence of benefits[0].sentences || []) assert(textOf(overviewHtml).includes(sentence.text), 'Benefits summary renders inside Overview');
+const benefitPlan = benefitQuestionPlan(metformin, (metformin.synthesisIds || []).map(id => synthesisRows.find(row => row.id === id)).filter(Boolean));
+assert.equal(benefitPlan.moved.length + benefitPlan.dropped.length, benefits[0].questions.length);
+for (const question of benefitPlan.moved) {
+  assert(faqHtml.includes('id="' + question.id + '"'), question.id + ' moved into FAQs');
+  for (const sentence of question.sentences || []) assert(textOf(faqHtml).includes(sentence.text), question.id + ' answer sentence is present');
 }
+for (const question of benefitPlan.dropped) assert(!metforminArticle.includes('id="' + question.id + '"'), question.id + ' covered elsewhere and not duplicated');
 const text = textOf(metforminArticle);
 for (const finding of ['lactic acidosis', 'vitamin B12', 'eGFR below 30', 'cimetidine', 'retraction and republication']) {
   assert(text.includes(finding), 'Useful safety and source-integrity information remains: ' + finding);
@@ -205,9 +244,9 @@ if (process.argv.includes('--all-profiles')) {
   assert(opening.questions?.length,label+': specific benefit/option questions');
   assert(profile.faqs.length,label+': additional reader FAQs');
   const mechanism=drugMechanismFor(profile);
-  assert(mechanism?.summary?.text?.length>40,label+': explanatory mechanism summary');
+  assert((mechanism?.summary?.text || mechanism?.originalAction?.text)?.length>40,label+': explanatory mechanism prose');
   if(profile.type==='Drug')assert(mechanism.originalAction?.text?.length>30,label+': original pharmacological action');
-  assert(mechanism.questions?.length,label+': mechanism questions');
+  assert(mechanism.questions?.length || (mechanism.pathways?.length && mechanism.rationales?.length),label+': mechanism explanations');
   const pageSources=content.sources.filter(s=>profile.sourceIds.includes(s.id));
   assert.equal(pageSources.length,profile.sourceIds.length,label+': all sources resolve');
   const page=render(profile,pageSources);
@@ -234,11 +273,31 @@ if (process.argv.includes('--all-profiles')) {
    if(section.sentences)assert.equal(section.sentences.map(s=>s.text.trim()).join(' '),section.paragraph.trim(),label+': section sentence map');
    for(const q of section.questions||[]){if(!isRetiredArticleSection(section)){assert(center.includes('class="rgbc-faq-item" id="'+q.id+'"'),label+': canonical question '+q.id);totalQuestions++;}assert(q.answer.length>30&&q.sources.length,label+': sourced question answer');assert(q.sources.every(id=>profile.sourceIds.includes(id)),label+': question source closure');}
   }
-  for(const p of [mechanism.originalAction,mechanism.summary,...mechanism.questions].filter(Boolean))assert(p.sourceIds.length&&p.sourceIds.every(id=>profile.sourceIds.includes(id)),label+': mechanism source closure');
-  totalQuestions+=mechanism.questions.length+profile.faqs.length;
+  for(const p of [mechanism.originalAction,mechanism.summary,...(mechanism.questions||[]),...(mechanism.pathways||[]),...(mechanism.rationales||[]).flatMap(row=>[row.rationale,row.tested,row.limits])].filter(Boolean))assert(p.sourceIds.length&&p.sourceIds.every(id=>profile.sourceIds.includes(id)),label+': mechanism source closure');
+  totalQuestions+=(mechanism.questions||[]).length+profile.faqs.length;
  }
  console.log(JSON.stringify({status:'PASS',profiles:profiles.length,questions:totalQuestions,checks:'Every canonical content section populated; actual SSR; no production placeholders; unique IDs; all fragments; canonical questions; source closure; citation order'}));
 }
+
+// Itraconazole retains its pathways and unmapped rationale in the article; moved
+// condition explanations preserve exact sentence/source records in the drawer.
+const pilot = content.guides.find(g=>g.slug==='/drugs/itraconazole');
+const pilotRecord = drugMechanismFor(pilot);
+const pilotSources = content.sources.filter(s=>pilot.sourceIds.includes(s.id));
+const pilotHtml = render(pilot, pilotSources);
+const pilotSection = pilotHtml.match(/<section id="mechanisms"[\s\S]*?<\/section>/)[0];
+assert(!pilotSection.includes('<details'), 'Pilot mechanisms are visible without opening disclosures');
+assert.equal((pilotSection.match(/role="rowheader"/g)||[]).length,pilotRecord.rationales.filter(row=>!mechanismEvidenceHref(pilot,row.id)).length,'Only rationales without evidence rows remain in the article table');
+assert.equal((pilotSection.match(/class="mechanism-pathway"/g)||[]).length,2,'Two shared pathway explanations');
+assert(pilotSection.indexOf('hedgehog-cellular')<pilotSection.indexOf('condition-rationales'),'Shared pathways precede condition table');
+for(const id of ['ovarian','prostate','lung','colorectal','pancreatic','melanoma','bcc','aml','myeloma','hedgehog-cellular','cholesterol-transport']) assert(pilotSection.includes('id="'+id+'"'),'Legacy mechanism fragment survives: '+id);
+assertMechanismLocations(pilot,pilotRecord,pilotSection,pilotHtml,pilotSources);
+for(const prose of [pilotRecord.originalAction,...pilotRecord.pathways,...pilotRecord.rationales.flatMap(row=>[row.rationale,row.tested,row.limits])]) {
+ assert.equal(prose.sentences.map(sentence=>sentence.text).join(' '),prose.text,'Pilot sentence mapping');
+ assert.deepEqual(new Set(prose.sentences.flatMap(sentence=>sentence.sources)),new Set(prose.sourceIds),'Pilot citation mapping');
+}
+assert.deepEqual(publicMechanisms.drugs.filter(record=>record.presentation==='pathway-table-pilot').map(record=>record.drugId).sort(),['D01','D07'],'Mechanism tables are limited to the two user-authorized pilots');
+console.log('PASS: itraconazole pathways, mapped drawer rationale, retained preclinical rows, eleven legacy fragments and source closure.');
 
 // Reuse the real-module loader and SSR host in the Evidence composition checks.
 // No test-only renderer or scientific data projection should stand in for Article.

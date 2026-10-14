@@ -1,0 +1,102 @@
+{
+  "schemaVersion": "remaprx-full-review-plan-v1",
+  "planId": "RRX-CAL-T1-CAL07-REVIEW-1.0",
+  "createdAt": "2026-10-12T13:35:52.697098+00:00",
+  "operations": [
+    "full-review-extract",
+    "full-review-validate"
+  ],
+  "allowedTargets": [],
+  "author": "codex/root",
+  "inputs": [
+    {
+      "path": "research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/CAL-07/instruction-snapshots/AGENTS.md",
+      "sha256": "36c103a973f80b67a36c6311ab0282fcca4b4f4b34358f6149e8e2dc5416a2e3"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/CAL-07/instruction-snapshots/docs/PROJECT-RULES.md",
+      "sha256": "c86dfe889bad79c2e11f6493a93d30297f0a6ca17b059c91809acd7c7b0741ae"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/CAL-07/instruction-snapshots/docs/RESEARCH-INGEST.md",
+      "sha256": "a7cf38d81c3ea49e1c20ce928bae21fbf211b2bff3ebe47c898d325ecb2799fe"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/CAL-07/instruction-snapshots/docs/RULE-CHANGELOG.md",
+      "sha256": "dc1bc73a8d8424fee66366512a2e57e43a158feb42af15b6ef48d8bbbb1a2d5a"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/PLAN.md",
+      "sha256": "26b26292733b141601104ed708067cbc7dc35ecc53836e192ac42534445329b5"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/APPRAISAL-METHOD.md",
+      "sha256": "d28386022f4e8cffbe7d9ca32f47bdf46b912082167f72e82c3f56f1336e9d69"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/source-locations.json",
+      "sha256": "ba72849ed81f7180fb1ce123aa4929b3ad8e5f4e21217b2f443dd12542217554"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/CAL-07/assignment.json",
+      "sha256": "b000f96ac8585e623f92773433976cb4a5daf12a2734d3eb8985ff4b2f67cb0b"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/schemas/full-review.schema.json",
+      "sha256": "4963674102d6d7624bad3aa60ff5a474e6754c9e4e46749ece7be490937f1e18"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/schemas/full-review-assignment.schema.json",
+      "sha256": "ced789bf07ccbf23209bbf8eb5b85e9d8bf23f48a49f1b428a2204bc65a9a673"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/schemas/full-review-audit.schema.json",
+      "sha256": "48093f89a0407929826331ce2c5faafa2569f7e222187d837e72ea7c3ad17c62"
+    },
+    {
+      "path": "rules/one-match-rule/ONE-MATCH-RULE.md",
+      "sha256": "7fae46e83e1da5e139b0ab2d11ca02292603c63a50f764c89819b0792bc2f330"
+    },
+    {
+      "path": "rules/one-match-rule/references/research-reviews/review-questions-and-inputs.json",
+      "sha256": "02edeacc65227e5feeaf25b6c9568be406b48024216f83d2dda2ccfcc5042f3b"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/calibration/candidates/CAL-07/CAL-07-S01.candidate.json",
+      "sha256": "aed9959303463b67519c1de979479e002d86b72ccfa1e803c41ee504bec6c4e3"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/fanout/CAL-07/independent-audit.json",
+      "sha256": "5f5f1ab05ee86b8a150f08c34258ad20f4ad303e519e1098f71c6d4f690f1ba9"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/acquisition/reconciliation.json",
+      "sha256": "5edb587050e5cc2bdefc01289d21a4456831e9935b23eb66b239946ef01ddc77"
+    }
+  ],
+  "contract": {
+    "canonicalReportId": "MECH-D07-HEDGEHOG-2010",
+    "assignment": "research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/CAL-07/assignment.json",
+    "mode": "closed_received_report_plus_separately_acquired_companions_and_metadata",
+    "scope": "Complete scientific AI-authored Q01\u2013Q15 review of assigned NIH manuscript, all7figures, matching10page publisher supplement and2datedintegrity metadata responses. Preserve explicit unavailable finalpublisher-version limitation and versions/bylines.",
+    "reviewCompletion": "All67inputs and15substantiveanswers with complete41unitcoverage, full experiment/result/claim/numeric accounting and design-appropriate appraisal; independently verified exactcandidate required for accepted_private.",
+    "owners": {
+      "author": "codex/corpus_audit",
+      "verifier": "codex/identity_review",
+      "integrator": "codex/root"
+    },
+    "outputDirectory": "research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/CAL-07/returns",
+    "historicalPreservation": "No historicalcandidate/receipt/canonical mutation. Preserve unchangedR01\u2013R03/CL01\u201304 sourceidentity whereapplicable; explicitscope mappings forrefinements.",
+    "identity": "One canonical report/review, distinct companionassets and experiments/arms/outcomes/results/claims; donotcount tumors/technicalreplicates asindependentanimals/studies.",
+    "method": "RRX-CAL-T1 qualitative preclinical appraisal1.0 inAPPRAISAL-METHOD.md; noformalGRADE orclinicalapproval claimed.",
+    "sourceVersion": "NIHauthor manuscript plus matching publisher supplement; finalpublisherbody unavailable. MaincurrentHTMLcomparison identical except2requesttokens.",
+    "integrityCheckScope": "Datedreceived EuropePMC exactPMID core metadata andCrossref exactDOI metadata; assignedmanuscript/supplementversiondisclosures. No linkednotice found inthese metadata isnotanexhaustive integritysearch. Publisher fulltext access failure explicitly retained.",
+    "sourceAccess": "11assigned availableassets byte/hashverified,9scientific+2integritymetadata. Local paths are conveniences; source-locations.json supplies remappable logicalroot.",
+    "instructionSnapshots": "Prospective source reading pins reviewed instruction snapshots as ofGP to isolate unrelated shared visual edits. Latest applicable ownerrequirementsstilltakeprecedence. Canonicalintegration requiresnewcurrent-baseplan.",
+    "newAcquisition": false,
+    "canonicalApply": false,
+    "publicContentChanged": false,
+    "humanApproval": false,
+    "released": false
+  }
+}

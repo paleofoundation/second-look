@@ -3,7 +3,7 @@ import type { AnchorHTMLAttributes, ComponentType, ImgHTMLAttributes, ReactNode 
 export type ThemeLink = { label: string; href: string };
 export type ThemeMegaMenu = { intro: string; columns: { title: string; links: (ThemeLink & { detail?: string })[] }[]; note: string; allLink?: ThemeLink };
 export type ThemeNavItem = ThemeLink & { children?: ThemeNavItem[]; mega?: ThemeMegaMenu };
-export type ThemeImage = { src: string; alt: string; width: number; height: number };
+export type ThemeImage = { src: string; alt: string; width: number; height: number; srcSet?: string; sizes?: string; title?: string };
 export type ThemeAuthor = {
   id: string; name: string; role: string; bio: string;
   portrait?: ThemeImage; profileHref?: string; orcid?: string;
@@ -18,7 +18,7 @@ export type ThemeConfig = {
   schemaVersion: "1.0.0";
   /** Match the destination's main landmark; defaults to main-content. */
   mainId?: string;
-  identity: { name: string; homeHref: string; logo?: ThemeImage };
+  identity: { name: string; homeHref: string; logo?: ThemeImage; footerLogo?: ThemeImage };
   palette: {
     main: string; accent: string; pale: string;
     mainDark?: string; mainTint?: string; ink?: string; muted?: string; link?: string;
@@ -37,7 +37,7 @@ export type ThemeConfig = {
 };
 export type ThemeHomeContent = {
   hero: {
-    title: string; intro: string; image: ThemeImage;
+    title: string; intro: string; eyebrow?: string; image?: ThemeImage; illustration?: ReactNode;
     caption?: { eyebrow: string; title: string };
     quickLinks?: ThemeLink[]; quickLinksLabel?: string;
     note?: { mark: string; title: string; text: string; link: ThemeLink };
@@ -52,7 +52,7 @@ export type ThemeHomeContent = {
 };
 export type ArticleHeroProps = {
   title: string; description?: ReactNode; breadcrumbs: ThemeLink[];
-  art?: ThemeImage; leftContext?: ReactNode; author?: ThemeAuthor;
+  art?: ThemeImage; artVariant?: "topic"; leftContext?: ReactNode; author?: ThemeAuthor;
   /** One verified author block in the right hero author/snapshot region. Overrides author and creditSlot. */
   authorSlot?: ReactNode;
   /** @deprecated Alias for authorSlot. Since 0.2.1 this renders in the right hero region, never the body sidebar. */
@@ -60,8 +60,8 @@ export type ArticleHeroProps = {
   updatedLabel?: string; snapshot?: ReactNode; actions?: ReactNode;
   kindLabel?: string;
 };
-export type ArticleLayoutProps = { hero: ArticleHeroProps; leftRail?: ReactNode; rightRail?: ReactNode; children: ReactNode };
+export type ArticleLayoutProps = { hero: ArticleHeroProps; leftRail?: ReactNode; rightRail?: ReactNode; shareRail?: ReactNode; children: ReactNode };
 export type ThemeHomeProps = { content: ThemeHomeContent };
 export type DirectoryPageProps = { title: string; description: string; items: DirectoryItem[]; breadcrumbs?: ThemeLink[]; side?: ReactNode };
-export type SectionNavGroup = { id: string; label: string; icon?: ReactNode; children?: { id: string; label: string }[] };
+export type SectionNavGroup = { id: string; label: string; icon?: ReactNode; collapsible?: boolean; children?: { id: string; label: string }[] };
 export type DirectoryItem = { id: string; title: string; href: string; description?: string; status?: string };

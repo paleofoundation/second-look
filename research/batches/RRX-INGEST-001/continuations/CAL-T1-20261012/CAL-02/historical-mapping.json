@@ -1,0 +1,331 @@
+{
+  "schemaVersion": "remaprx-calibration-historical-mapping-v1",
+  "packetId": "CAL-02",
+  "canonicalReportId": "P-SGLT2MET-LC-2026",
+  "sourceAssignment": {
+    "path": "research/batches/RRX-INGEST-001/calibration/assignments.json",
+    "sha256": "fe60bfc9908daab15d9eb7708a9405b2a4dcc482c948f31e594837f07276d49b"
+  },
+  "previousAssignmentUnchanged": true,
+  "historicalPacket": {
+    "acceptOwnWork": false,
+    "activation": "not_active_under_plan_1.3",
+    "auditSlot": "independent-verifier",
+    "canonicalReportId": "P-SGLT2MET-LC-2026",
+    "dimensionStatus": "selection_from_preserved_metadata_not_new_appraisal",
+    "familyCoordination": {
+      "cohortIndependence": "not_established_by_assignment",
+      "familyIdentityStates": [
+        "unresolved"
+      ],
+      "familyIds": [
+        "FAM-B-R0016"
+      ],
+      "relatedExistingReports": [],
+      "rule": "Preserve report versions, arms and outcomes separately; coordinate overlapping families with same owner; never count report packets as independent studies."
+    },
+    "gaps": [],
+    "heldDiagnosticPacket": false,
+    "holdReason": null,
+    "outputDirectory": "research/batches/RRX-INGEST-001/calibration/candidates/CAL-02",
+    "ownerSlot": "extractor-b",
+    "packetId": "CAL-02",
+    "primaryRecordId": "acquisition:B-R0016-F01",
+    "primarySourceId": "B-R0016-F01",
+    "returnContract": [
+      "One draft source candidate per eligible assigned source version, with exact source hash and locators.",
+      "Exactly one Q01-Q15 entry per scholarly source, preserving missingness.",
+      "Numerical support quotes and visual inspection locators for consequential tables/figures.",
+      "Held diagnostic returns preserve the hold and include no scientific results or claims.",
+      "No new acquisition, canonical app change, human approval or publication."
+    ],
+    "sameDoiDifferentCanonicalIdLeads": [],
+    "selectionDimensions": [
+      "observational",
+      "confounding",
+      "multiple_outcomes",
+      "narrative_table_conflict"
+    ],
+    "sourceAssignments": [
+      {
+        "assignment_id": "CAL-02-S01",
+        "batch_id": "RRX-INGEST-001",
+        "bytes": 986663,
+        "canonical_report_id": "P-SGLT2MET-LC-2026",
+        "equivalentFileIds": [
+          "SHA256:2f3f0e9b7c71c9d5f0c8756e2c0a5e2f2d560953dc656858952e277760f9be3b"
+        ],
+        "holdReasons": [],
+        "integrity_hold": false,
+        "logicalSource": {
+          "fileId": "SHA256:2f3f0e9b7c71c9d5f0c8756e2c0a5e2f2d560953dc656858952e277760f9be3b",
+          "path": "work/ingest/FETCH30/source-files/2f/2f3f0e9b7c71c9d5f0c8756e2c0a5e2f2d560953dc656858952e277760f9be3b.pdf",
+          "rootId": "RESEARCH"
+        },
+        "media_type": "application/pdf",
+        "ownerSlot": "extractor-b",
+        "path": "/Users/kmfp/Documents/Codex/2026-10-08/one-match-drug-repurposing/work/ingest/FETCH30/source-files/2f/2f3f0e9b7c71c9d5f0c8756e2c0a5e2f2d560953dc656858952e277760f9be3b.pdf",
+        "permittedActionAfterGP": "bounded_source_candidate_and_q01_q15_inputs",
+        "role": "original_report",
+        "sha256": "2f3f0e9b7c71c9d5f0c8756e2c0a5e2f2d560953dc656858952e277760f9be3b",
+        "sourceIdsAtSameBytes": [
+          "A-F02-R1018-F01",
+          "A-F02-R2016-F01",
+          "B-R0016-F01"
+        ],
+        "source_id": "B-R0016-F01"
+      },
+      {
+        "assignment_id": "CAL-02-S02",
+        "batch_id": "RRX-INGEST-001",
+        "bytes": 931928,
+        "canonical_report_id": "P-SGLT2MET-LC-2026",
+        "equivalentFileIds": [
+          "SHA256:80c73fa2a2d5efc284f88d94b6676dfcf95cafcd742cfc7cf0f8639b3dd47c5b"
+        ],
+        "holdReasons": [],
+        "integrity_hold": false,
+        "logicalSource": {
+          "fileId": "SHA256:80c73fa2a2d5efc284f88d94b6676dfcf95cafcd742cfc7cf0f8639b3dd47c5b",
+          "path": "ingest/SL-F01-F02-20261011/receipt/input/return/F02/PRIMARY/A-F02-R1018__supplement-S01__prior-sglt2-inhibitor-and-metformin-use-and-risk-o.pdf",
+          "rootId": "WORK"
+        },
+        "media_type": "application/pdf",
+        "ownerSlot": "extractor-b",
+        "path": "/Users/kmfp/Documents/ChatGPT/One Match Rule/work/ingest/SL-F01-F02-20261011/receipt/input/return/F02/PRIMARY/A-F02-R1018__supplement-S01__prior-sglt2-inhibitor-and-metformin-use-and-risk-o.pdf",
+        "permittedActionAfterGP": "bounded_source_candidate_and_q01_q15_inputs",
+        "role": "supplement",
+        "sha256": "80c73fa2a2d5efc284f88d94b6676dfcf95cafcd742cfc7cf0f8639b3dd47c5b",
+        "sourceIdsAtSameBytes": [
+          "A-F02-R1018-S01",
+          "A-F02-R2016-S01"
+        ],
+        "source_id": "A-F02-R1018-S01"
+      }
+    ],
+    "sourceRecords": [
+      {
+        "canonicalReportId": "P-SGLT2MET-LC-2026",
+        "doi": "10.1007/s40121-026-01362-z",
+        "identityMetadata": {
+          "doi_verification_source": "PubMed ArticleIdList (efetch) at 2026-10-09T09:28:32+00:00",
+          "duplicate_of": null,
+          "family_identity_status": "unresolved",
+          "identity_status": "verified",
+          "related_source_ids": [],
+          "report_role": "original_report",
+          "study_family_id": null,
+          "version_of": null
+        },
+        "pmid": "42236640",
+        "priorScientificDisposition": {
+          "exact_asset_reuse_source_ids": [
+            "B-R0016-F01"
+          ],
+          "existing_result_ids": [
+            "SCI-B-R0016-F01-COMPOSITE",
+            "SCI-B-R0016-F01-SYMPTOMS"
+          ],
+          "full_review_complete": false,
+          "processing_state": "partial_candidate",
+          "reason": "Exact acquired report and file already represented by preserved result IDs; no duplicate finding imported. Previously extracted result IDs SCI-B-R0016-F01-COMPOSITE and SCI-B-R0016-F01-SYMPTOMS retain their original source locators and pending status. Acquisition alias adds no independent evidence.",
+          "result_ids": [],
+          "reuse_policy": "Original result IDs and locators retained; duplicate acquisition does not add an independent finding.",
+          "source_id": "A-F02-R1018-F01",
+          "state": "held"
+        },
+        "recordId": "acquisition:A-F02-R1018-F01",
+        "recordSha256": "b0a0e8e36a708a92784c08565900c7e5d73f99b1a4f27c478f0022e27d846366",
+        "sourceId": "A-F02-R1018-F01",
+        "sourceLocation": {
+          "fileId": "RESEARCH:outputs/research/evidence/acquisition/sources.jsonl",
+          "pointer": "line:1076"
+        },
+        "states": {
+          "access_state": "full_pdf",
+          "human_review_status": "pending",
+          "publication_state": "draft",
+          "quarantined": false,
+          "verification_state": "pending"
+        }
+      },
+      {
+        "canonicalReportId": "P-SGLT2MET-LC-2026",
+        "doi": "10.1007/s40121-026-01362-z",
+        "identityMetadata": {
+          "doi_verification_source": "PubMed ArticleIdList (efetch) at 2026-10-09T09:28:32+00:00",
+          "duplicate_of": null,
+          "family_identity_status": "unresolved",
+          "identity_status": "verified",
+          "related_source_ids": [
+            "A-F02-R1018-F01"
+          ],
+          "report_role": "supplement",
+          "study_family_id": null,
+          "version_of": null
+        },
+        "pmid": "42236640",
+        "priorScientificDisposition": {
+          "full_review_complete": false,
+          "processing_state": "partial_candidate",
+          "reason": "Supplement identity matched; additional table-specific numerical appraisal remains incomplete.",
+          "result_ids": [],
+          "source_id": "A-F02-R1018-S01",
+          "state": "pending"
+        },
+        "recordId": "acquisition:A-F02-R1018-S01",
+        "recordSha256": "ee2be566e3dd20da0727251954c1aad86304f2a4d619c8dba9a71256f78ffdc9",
+        "sourceId": "A-F02-R1018-S01",
+        "sourceLocation": {
+          "fileId": "RESEARCH:outputs/research/evidence/acquisition/sources.jsonl",
+          "pointer": "line:1077"
+        },
+        "states": {
+          "access_state": "full_pdf",
+          "human_review_status": "pending",
+          "publication_state": "draft",
+          "quarantined": false,
+          "verification_state": "pending"
+        }
+      },
+      {
+        "canonicalReportId": "P-SGLT2MET-LC-2026",
+        "doi": "10.1007/s40121-026-01362-z",
+        "identityMetadata": {
+          "doi_verification_source": "PubMed ArticleIdList (efetch) at 2026-10-09T09:28:32+00:00",
+          "duplicate_of": null,
+          "family_identity_status": "unresolved",
+          "identity_status": "verified",
+          "related_source_ids": [],
+          "report_role": "original_report",
+          "study_family_id": null,
+          "version_of": null
+        },
+        "pmid": "42236640",
+        "priorScientificDisposition": {
+          "exact_asset_reuse_source_ids": [
+            "B-R0016-F01"
+          ],
+          "existing_result_ids": [
+            "SCI-B-R0016-F01-COMPOSITE",
+            "SCI-B-R0016-F01-SYMPTOMS"
+          ],
+          "full_review_complete": false,
+          "processing_state": "partial_candidate",
+          "reason": "Exact acquired report and file already represented by preserved result IDs; no duplicate finding imported. Existing exact-byte located results are reused under their original IDs, with source-specific scope review. No additional independent result or study is counted.",
+          "result_ids": [],
+          "reuse_policy": "Original result IDs and locators retained; duplicate acquisition does not add an independent finding.",
+          "source_id": "A-F02-R2016-F01",
+          "state": "held"
+        },
+        "recordId": "acquisition:A-F02-R2016-F01",
+        "recordSha256": "c7f372d6cd8099567670eb604f7e4521dbe4752963a1725de0d04e74a6cc41e2",
+        "sourceId": "A-F02-R2016-F01",
+        "sourceLocation": {
+          "fileId": "RESEARCH:outputs/research/evidence/acquisition/sources.jsonl",
+          "pointer": "line:1557"
+        },
+        "states": {
+          "access_state": "full_pdf",
+          "human_review_status": "pending",
+          "publication_state": "draft",
+          "quarantined": false,
+          "verification_state": "pending"
+        }
+      },
+      {
+        "canonicalReportId": "P-SGLT2MET-LC-2026",
+        "doi": "10.1007/s40121-026-01362-z",
+        "identityMetadata": {
+          "doi_verification_source": "PubMed ArticleIdList (efetch) at 2026-10-09T09:28:32+00:00",
+          "duplicate_of": null,
+          "family_identity_status": "unresolved",
+          "identity_status": "verified",
+          "related_source_ids": [
+            "A-F02-R2016-F01"
+          ],
+          "report_role": "supplement",
+          "study_family_id": null,
+          "version_of": null
+        },
+        "pmid": "42236640",
+        "priorScientificDisposition": {
+          "full_review_complete": false,
+          "processing_state": "partial_candidate",
+          "reason": "Source identity/role inspected but scientific relevance or content remains unchecked; no supportive finding imported. Cohort overlap is explicit. Keep metformin and other glucose-lowering drug subgroups separate; table-level numbers await dedicated extraction.",
+          "result_ids": [],
+          "source_id": "A-F02-R2016-S01",
+          "state": "held"
+        },
+        "recordId": "acquisition:A-F02-R2016-S01",
+        "recordSha256": "8d2603cf3709ba19b4b5e98394a16aff7886e9978be4ce0018decf871e8e60bf",
+        "sourceId": "A-F02-R2016-S01",
+        "sourceLocation": {
+          "fileId": "RESEARCH:outputs/research/evidence/acquisition/sources.jsonl",
+          "pointer": "line:1558"
+        },
+        "states": {
+          "access_state": "full_pdf",
+          "human_review_status": "pending",
+          "publication_state": "draft",
+          "quarantined": false,
+          "verification_state": "pending"
+        }
+      },
+      {
+        "canonicalReportId": "P-SGLT2MET-LC-2026",
+        "doi": "10.1007/s40121-026-01362-z",
+        "identityMetadata": {
+          "doi_verification_source": "PubMed ArticleIdList (efetch) for PMID 42236640 at 2026-10-09T09:09:28+00:00",
+          "duplicate_of": null,
+          "family_identity_status": "unresolved",
+          "identity_status": "verified",
+          "related_source_ids": [],
+          "report_role": "original_report",
+          "study_family_id": "FAM-B-R0016",
+          "version_of": null
+        },
+        "pmid": "42236640",
+        "priorScientificDisposition": {
+          "full_review_complete": false,
+          "processing_state": "partial_candidate",
+          "reason": "Current metformin outcomes were extracted from the acquired full text; full endpoint and harms review remains incomplete.; Prior use in diabetes does not answer the exact acute-initiation placebo question or established long-COVID treatment question; no direct DR topic binding added.; The narrative attributes an SGLT2-inhibitor estimate to neurological outcomes, while the table assigns that estimate to memory and cognitive problems. The conflicting SGLT2 estimate is not imported.",
+          "result_ids": [
+            "SCI-B-R0016-F01-COMPOSITE",
+            "SCI-B-R0016-F01-SYMPTOMS"
+          ],
+          "source_id": "B-R0016-F01",
+          "state": "renderable_draft"
+        },
+        "recordId": "acquisition:B-R0016-F01",
+        "recordSha256": "e5c800d3e64dc843cb9b7d54043d9b9d5b1eab5e05e4d0b26794894e91a63115",
+        "sourceId": "B-R0016-F01",
+        "sourceLocation": {
+          "fileId": "RESEARCH:outputs/research/evidence/acquisition/sources.jsonl",
+          "pointer": "line:164"
+        },
+        "states": {
+          "access_state": "full_pdf",
+          "human_review_status": "pending",
+          "publication_state": "draft",
+          "quarantined": false,
+          "verification_state": "pending"
+        }
+      }
+    ],
+    "stopConditions": [
+      "GP missing or stale",
+      "source/assignment hash mismatch",
+      "printed identity conflicts with assigned report",
+      "unsupported format without approved locator contract",
+      "quarantine or correction unresolved",
+      "scope or model cannot support proposed binding"
+    ],
+    "targetDrugIds": [
+      "D01"
+    ],
+    "titleFromMetadata": "Prior SGLT2 Inhibitor and Metformin Use and Risk of Long COVID in Type 2 Diabetes: A Nationwide Population-Based Cohort Study.",
+    "tranche": 1
+  },
+  "interpretation": "This is preserved assignment/provenance metadata, not fresh scientific extraction or approval. Retain prior result identities if the source finding is the same; split or refine only through explicit old-to-new source/result mappings. FAM-B-R0016 is unresolved historical coordination, not a verified independent-study identity."
+}

@@ -1,0 +1,256 @@
+{
+  "schemaVersion": "remaprx-independent-source-observations-v1",
+  "auditor": "codex/identity_review",
+  "recordedAt": "2026-10-12T14:31:42.668374+00:00",
+  "planSha256": "d971331bebf5f9ab36ca15d3b119c275b742ba27e7be98266325d7ab2579159a",
+  "assignmentSha256": "79f37dd14c7d74ce604aa46f6a9f5576580bb32d00abb6b5c9cf17b71eae1e52",
+  "scope": "Independent full assigned source inspection before reading author candidate; does not accept any candidate",
+  "status": "SOURCE_INSPECTION_COMPLETE_CANDIDATE_PENDING",
+  "assets": [
+    {
+      "sourceId": "B-R0016-F01",
+      "sha256": "2f3f0e9b7c71c9d5f0c8756e2c0a5e2f2d560953dc656858952e277760f9be3b",
+      "bytes": 986663,
+      "unitsRead": [
+        "page-1",
+        "page-2",
+        "page-3",
+        "page-4",
+        "page-5",
+        "page-6",
+        "page-7",
+        "page-8",
+        "page-9",
+        "page-10",
+        "page-11",
+        "page-12",
+        "page-13",
+        "page-14",
+        "page-15",
+        "page-16",
+        "page-17",
+        "page-18",
+        "page-19",
+        "page-20",
+        "page-21",
+        "page-22"
+      ],
+      "method": "Every physical page read as layout text and visually inspected using pdftoppm -scale-to 1500 renders",
+      "status": "inspected"
+    },
+    {
+      "sourceId": "A-F02-R1018-S01",
+      "sha256": "80c73fa2a2d5efc284f88d94b6676dfcf95cafcd742cfc7cf0f8639b3dd47c5b",
+      "bytes": 931928,
+      "unitsRead": [
+        "page-1",
+        "page-2",
+        "page-3",
+        "page-4",
+        "page-5",
+        "page-6",
+        "page-7",
+        "page-8",
+        "page-9",
+        "page-10",
+        "page-11",
+        "page-12",
+        "page-13",
+        "page-14",
+        "page-15",
+        "page-16",
+        "page-17",
+        "page-18",
+        "page-19",
+        "page-20",
+        "page-21",
+        "page-22",
+        "page-23",
+        "page-24",
+        "page-25",
+        "page-26",
+        "page-27",
+        "page-28",
+        "page-29",
+        "page-30",
+        "page-31",
+        "page-32",
+        "page-33",
+        "page-34",
+        "page-35",
+        "page-36",
+        "page-37",
+        "page-38",
+        "page-39",
+        "page-40",
+        "page-41",
+        "page-42",
+        "page-43",
+        "page-44"
+      ],
+      "method": "Every physical page read as layout text and visually inspected using pdftoppm -scale-to 1500 renders",
+      "status": "inspected"
+    },
+    {
+      "sourceId": "CAL02-crossref-json",
+      "sha256": "398326f15e5c089e8a412a46deae5e24fafe3d5cc043f8fea4460b15e14ab9c3",
+      "bytes": 32155,
+      "unitsRead": [
+        "metadata"
+      ],
+      "method": "Complete parsed JSON including all metadata relations, abstracts, assertions and references",
+      "status": "inspected"
+    },
+    {
+      "sourceId": "CAL02-europepmc-json",
+      "sha256": "8a7687915d7ebd179d602e70058ddaed8e988d3c4248872589381998ad4171b1",
+      "bytes": 11325,
+      "unitsRead": [
+        "metadata"
+      ],
+      "method": "Complete parsed JSON including all metadata relations, abstracts, assertions and references",
+      "status": "inspected"
+    }
+  ],
+  "unitCount": 68,
+  "observations": [
+    {
+      "id": "identity_metadata",
+      "locators": "main1-2; supp1-2; both metadata",
+      "finding": "Exact DOI 10.1007/s40121-026-01362-z, PMID 42236640 and 15-author byline agree across received report, supplement and metadata. EPMC identifies PMCID PMC13280275, volume15 issue7 pages1955–1976; online June3 2026 and print July2026 differ as publication dates, not identity conflicts."
+    },
+    {
+      "id": "integrity_limits",
+      "locators": "both complete metadata responses",
+      "finding": "Crossref relation is empty and neither received exact-identifier response supplies a linked correction, retraction or concern notice. General update-policy URL and EPMC metadata-revision date are not correction notices. Indexed abstract repeats the source attribution conflict. This is a dated bounded metadata inspection, not exhaustive integrity surveillance."
+    },
+    {
+      "id": "design_population",
+      "locators": "main3-5; Fig1/main4",
+      "finding": "Retrospective Singapore population-registry cohort of people with type2 diabetes and first COVID infection July1 2021–February28 2023. Prior antidiabetic prescriptions within12months define prevalent exposures. No randomization or causal treatment assignment; comparator is users of other antidiabetic drugs, not untreated people."
+    },
+    {
+      "id": "flow_denominators",
+      "locators": "Fig1/main4; Tables1-2/main7-10",
+      "finding": "152727 initially eligible registry records; exclusions printed: missing demographics402, age under18 303, no prior-year antidiabetic use62028, chronic renal disease13615, death within30days462, reinfection within300days2517, non-mRNA vaccination1702. Final71698; metformin66792 versus4906, SGLT222501 versus49197, DPP417039 versus54659, sulfonylurea32016 versus39682. These are overlapping drug partitions of one cohort, not separate studies. Outcome-specific populations exclude history within5years and vary by endpoint."
+    },
+    {
+      "id": "time_and_selection",
+      "locators": "main4-5,17",
+      "finding": "Index is first infection; analysis considers days31–300, not initiation of drug after long-COVID diagnosis. Excluding early deaths and later reinfection conditions on postbaseline events; survivor/selection bias remains possible. Death/loss accounted for in models is not a complete numerical attrition report."
+    },
+    {
+      "id": "exposure_specificity",
+      "locators": "main4-5,17",
+      "finding": "Prescription-record exposure does not establish dose, route, formulation, adherence or sustained duration. Concurrent medications allowed. Metformin with SGLT2 versus metformin without SGLT2 should not be called metformin-alone versus combination when other drugs may remain."
+    },
+    {
+      "id": "outcome_measurement",
+      "locators": "main4-5; S24/28-40; S25/41-44",
+      "finding": "Administrative ICD diagnosis/symptom outcomes are heterogeneous proxies and do not establish independently adjudicated patient-reported long-COVID syndrome. Extensive code lists are supplied, but no obvious standalone GI/dermatological aggregate mapping or abdominal/pelvic/generalized-pain mapping is shown. Printed code-description and duplicate-code anomalies are retained as reporting limitations; no external codebook validation or invented corrections."
+    },
+    {
+      "id": "adjustment_missingness",
+      "locators": "main5-6; Tables1-2/main7-10",
+      "finding": "Overlap propensity weighting uses measured demographic, vaccination, comorbidity, medication, HbA1c/eGFR and acute-COVID variables; standardized differences rounded to0 after weighting are not proof of no residual confounding. Adjustment for hospitalization/current COVID treatment may condition on mediators/colliders. HbA1c/eGFR information-not-available categories appear; missing demographic records excluded. No assumption of multiple imputation. Exact propensity equations, positivity diagnostics and named competing-risk estimand are not fully reported."
+    },
+    {
+      "id": "metformin_primary",
+      "locators": "Table3/main11-12",
+      "finding": "Composite outcomes:1926/42906 versus160/2307, aHR0.80(0.68–0.96),p0.0149, excess burden−12.64(−23.06,−2.22)/1000. Composite symptoms:1274/55972 versus131/3790,aHR0.77(0.63–0.93),p0.0084,excess burden−7.74(−13.64,−1.84)/1000. Associations, not causal preventive effects. Other main metformin outcome confidence intervals cross1; suppressed or unavailable entries are not zeros."
+    },
+    {
+      "id": "sglt2_table_labeled",
+      "locators": "Table4/main13-14",
+      "finding": "Composite outcomes null aHR0.94(0.85–1.05),p0.2738; composite symptoms0.87(0.77–0.99),p0.035. Printed neurological row0.79(0.70–0.90),p0.0005,361/19354 versus1016/40570. Printed memory/cognitive problems diagnosis row0.60(0.45–0.81),p0.0006,59/22372 versus300/47738. Fatigue/malaise symptom0.63(0.41–0.98),p0.0389,27/22426 versus129/48840. Memory/cognitive impairment symptom is a distinct row0.47(0.13–1.68),p0.2474,3 versus14 events."
+    },
+    {
+      "id": "attribution_conflict",
+      "locators": "main abstract2; narrative6; Table4/main13-14; metadata abstracts",
+      "finding": "Abstract attributes0.60 to neurological and0.63 to memory/cognitive impairment. Main narrative also assigns0.60 to neurological. Table4 labels0.79 as neurological,0.60 as memory/cognitive problems and0.63 as fatigue/malaise. Do not silently repair the authors. Report explicitly as table-labeled associations and preserve the unresolved abstract/narrative conflict; no unqualified downstream outcome-specific claim from the inconsistent prose."
+    },
+    {
+      "id": "baseline_label_anomaly",
+      "locators": "Table2/main9",
+      "finding": "Table2 prints no-SGLT2 versus SGLT2 exposure groups but medication rows have apparent shifted labels, including a SGLT2-inhibitor row with9508 versus7531 despite group definition. Sulfonylurea row46124 versus20668 resembles metformin totals but cannot be relabeled by inference. Preserve source ambiguity; no exact drug-row assertion based on guessed label repair."
+    },
+    {
+      "id": "organ_label_anomaly",
+      "locators": "Table4/main13; Tables3/5; S1-23",
+      "finding": "Autoimmune row is6223/15003 with698/1667events, while subsequent dermatological row is22446/49009 with9/26events; respiratory22/75 and GI92/204. These are inconsistent with corresponding rare autoimmune/subgroup and other drug-partition patterns. A shifted-label hypothesis is not an authoritative correction. Autoimmune-through-GI outcome attribution stays held/qualified at source, not silently remapped."
+    },
+    {
+      "id": "concurrent_use",
+      "locators": "Table5/main15-16",
+      "finding": "Among66792 metformin users20668(30.9%) also useSGLT2;46124 do not. Composite0.92(0.82–1.02),p0.1098 is null. Table-labeled neurological0.81(0.71–0.93),p0.0034; memory/cognitive problems0.63(0.46–0.87),p0.0041; symptoms0.87(0.76–0.99),p0.0382; fatigue0.57(0.35–0.93),p0.0255. This subset is not independent replication or a randomized combination trial."
+    },
+    {
+      "id": "figure2",
+      "locators": "Figure2/main14",
+      "finding": "Cumulative-event curves show SGLT2 and comparator patterns for neurological and memory/cognitive problems. Source calls them Kaplan–Meier curves while y axis is cumulative event; time axis lacks explicit units and numbers-at-risk table. No graph-digitized effects or exact read-off values used."
+    },
+    {
+      "id": "supplement_coverage",
+      "locators": "supp1-44",
+      "finding": "All25 supplemental tables read. S1–4 age, S5–8sex, S9–12HbA1c,S13–14Omicron,S15–16nonhospital,S17–20booster,S21negativecontrol,S22DPP4,S23sulfonylurea,S24diagnosiscodecatalog,S25symptomcodecatalog. S8 TOC calls male but actual table heading says female; actual table heading is the qualified locator. Age greater-than60 versus method at-least60 and HbA1c strict inequalities leave boundary-reporting ambiguity."
+    },
+    {
+      "id": "subgroup_discrepancies",
+      "locators": "main10; S9/supp13; S11/supp15; S13/supp17",
+      "finding": "S9 metformin good-control symptoms0.59(0.43–0.81),p0.001 versus narrative0.59(0.43–0.80),p0.0008. S11 SGLT2 neurological0.68(0.53–0.87),p0.0019 versus narrativep0.0012; respiratory symptoms0.60(0.38–0.95),p0.0286 versus0.0276. S13 Omicron metformin composite0.82(0.68–0.99),p0.043 versus narrative0.0435. Retain printed table precision and explicit discrepancies, rather than harmonizing without authority."
+    },
+    {
+      "id": "contrary_subgroups",
+      "locators": "S3/supp7; S11/supp15; S12/supp16",
+      "finding": "Older SGLT2 respiratory diagnosis aHR1.47(1.07–2.03),p0.0186; good-HbA1c SGLT2 headache3.20(1.45–7.05),p0.004. Poor-HbA1c headache0.46(0.24–0.91),p0.0251. These exploratory, sparse, multiple comparisons do not establish drug harms or subgroup-effect interaction, but must not be hidden behind an overall beneficial narrative."
+    },
+    {
+      "id": "other_drug_sensitivity",
+      "locators": "S22/supp26; S23/supp27; main12",
+      "finding": "DPP4 main composite/symptom rows null. Sulfonylurea composite/symptoms null, but autoimmune0.39(0.18–0.86),p0.0196 and generalized pain0.26(0.07–0.95),p0.0409 are nominal findings, contrary to blanket no-significant-difference wording. Neither satisfies authorsp<0.01 heuristic; no formal causal or multiplicity-adjusted conclusion."
+    },
+    {
+      "id": "negative_control",
+      "locators": "S21/supp25; main5,12",
+      "finding": "Four leukemia/lymphoma negative-control rows show0.60(0.22–1.61),1.03(0.51–2.07),1.16(0.60–2.24),1.01(0.48–2.13),allCIcross1. Drug labels are not printed for these rows; do not guess assignment from denominators. Null negative controls do not exclude all unmeasured confounding."
+    },
+    {
+      "id": "ninety_day_sensitivity",
+      "locators": "main12; complete supplement",
+      "finding": "Main narrative reports90–300-day neurological/memory findings forSGLT2(p0.0014/0.0017) and metformin composite/symptoms(p0.0391/0.0436). No assigned supplemental table gives full effect/CI/event counts for this window. Report as incomplete sensitivity reporting, not reconstructed numerical verification."
+    },
+    {
+      "id": "multiplicity_precision",
+      "locators": "main5-6; Tables3-5; S1-23",
+      "finding": "Authors use95%CIexcluding1 for significance andp<0.01 as more robust to multiplicity. This is not a demonstrated formal multiplicity-control procedure. Numerous outcomes/subgroups, sparse cells and suppressed counts warrant caution. Subgroup significance differences do not prove interaction; no invented power calculation or MCID."
+    },
+    {
+      "id": "missing_design_inputs",
+      "locators": "complete main/supplement",
+      "finding": "No accessible registered protocol, SAP, full analysis code, dataset, model coefficients/diagnostics, detailed loss/death counts, validated minimal clinically important difference or comprehensive drug adverse-event/discontinuation ascertainment. Reporting omissions after full inspection are genuine not_reported, not proof procedures never occurred."
+    },
+    {
+      "id": "ethics_funding",
+      "locators": "main17-19; metadata assertions",
+      "finding": "Authors state IRB approval not required for national-surveillance analysis under Infectious Diseases Act, Helsinki adherence and all15authors no competing interests. NationalMOH/NMRC grants listed. Publication-fee text attributes payment both to NCID/TanTockSengHospital and later authors; preserve reporting ambiguity. Individual data unavailable, deidentified sharing subjectMOHapproval; no supplied code. Funding does not itself establish bias or misconduct."
+    },
+    {
+      "id": "clinical_translation",
+      "locators": "main16-18; complete packet",
+      "finding": "Qualitative design-appropriate appraisal only: residual confounding, prevalent-user/indication bias, selection, administrative measurement and multiplicity constrain causal interpretation. Highly vaccinated Singapore T2DM population/prior medication use does not establish initiating metformin/SGLT2 for established longCOVID, nondiabetic patients or clinical safety. Mechanistic discussion relies on background literature, not direct mechanisms measured here."
+    },
+    {
+      "id": "references_scope",
+      "locators": "main19-22; metadata references",
+      "finding": "Complete reference list read as context; cited studies were not separately inspected/acquired. One cohort with overlapping drug groups/outcomes/subsets does not create multiple independent studies; historical resultIDs remain preserved. No claim of exhaustive replication search or formalGRADE/ROBINS-I rating."
+    }
+  ],
+  "limitations": [
+    "Only four assigned assets inspected; no new acquisition or outside codebook/integrity search.",
+    "No graph digitization, calculated effect sizes, causal treatment conclusions or silent corrections to source labels.",
+    "Full scientific review completion can coexist with explicit source-reporting omissions and held outcome attributions.",
+    "AI appraisal is not human approval, formal evidence grading, canonical import or public release."
+  ],
+  "humanApproval": false,
+  "released": false
+}

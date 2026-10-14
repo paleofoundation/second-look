@@ -1,0 +1,249 @@
+{
+  "schemaVersion": "1.0",
+  "scope": "selected-source NSCLC product sample",
+  "sources": [
+    {
+      "number": 1,
+      "id": "NCI-NSCLC-PDQ",
+      "title": "Non-Small Cell Lung Cancer Treatment PDQ Health Professional Version",
+      "url": "https://www.cancer.gov/types/lung/hp/non-small-cell-lung-treatment-pdq",
+      "tier": "CONTEXT",
+      "basis": "official_guidance",
+      "retrievedAt": "2026-10-12",
+      "integrity": "Official live context source read October 12, 2026.",
+      "locators": [
+        "General Information",
+        "Treatment of Stages IA and IB NSCLC"
+      ]
+    },
+    {
+      "number": 2,
+      "id": "PP-PMID-32847935",
+      "title": "Concentration-dependent Early Antivascular and Antitumor Effects of Itraconazole in Non-Small Cell Lung Cancer",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32847935/",
+      "tier": "PRIMARY",
+      "basis": "abstract",
+      "retrievedAt": "2026-10-12",
+      "integrity": "Focused title/correction/retraction query and accessible source records checked; no matching notice identified in retrieved results. Full integrity and supplement appraisal pending.",
+      "locators": [
+        "Institutional record Abstract at https://utsouthwestern.elsevierpure.com/en/publications/concentration-dependent-early-antivascular-and-antitumor-effects-/"
+      ]
+    },
+    {
+      "number": 3,
+      "id": "P-D07-LUNG-2013",
+      "title": "Phase 2 Study of Pemetrexed and Itraconazole as Second-Line Therapy for Metastatic Non-Squamous Non-Small Cell Lung Cancer",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3636564/",
+      "tier": "PRIMARY",
+      "basis": "full_text",
+      "retrievedAt": "2026-10-12",
+      "integrity": "Focused title/correction/retraction query and accessible source records checked; no matching notice identified in retrieved results. Full integrity and supplement appraisal pending.",
+      "locators": [
+        "Methods: Study Design and Efficacy",
+        "Results: Patient Characteristics, Safety and Tolerability, Efficacy",
+        "Discussion paragraph beginning There are important caveats"
+      ]
+    },
+    {
+      "number": 4,
+      "id": "MF-NRG-LU001-2021",
+      "title": "Addition of Metformin to Concurrent Chemoradiation in Patients With Locally Advanced Non-Small Cell Lung Cancer: The NRG-LU001 Phase 2 Randomized Clinical Trial",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34323922/",
+      "tier": "PRIMARY",
+      "basis": "abstract",
+      "retrievedAt": "2026-10-12",
+      "integrity": "Focused title/correction/retraction query and accessible source records checked; no matching notice identified in retrieved results. Full integrity and supplement appraisal pending.",
+      "locators": [
+        "Abstract: Design, Interventions, Main outcomes, Results, Conclusions"
+      ]
+    },
+    {
+      "number": 5,
+      "id": "MF-ALMERA-2021",
+      "title": "Metformin in Combination With Chemoradiotherapy in Locally Advanced Non-Small Cell Lung Cancer: The OCOG-ALMERA Randomized Clinical Trial",
+      "url": "https://jamanetwork.com/journals/jamaoncology/fullarticle/2782110",
+      "tier": "PRIMARY",
+      "basis": "full_text",
+      "retrievedAt": "2026-10-12",
+      "integrity": "Focused title/correction/retraction query and accessible source records checked; no matching notice identified in retrieved results. Full integrity and supplement appraisal pending.",
+      "locators": [
+        "Methods: Patient Population, Assessments and Outcomes",
+        "Results: Patient Population, Efficacy, Toxic Effects",
+        "Discussion and Limitations"
+      ]
+    },
+    {
+      "number": 6,
+      "id": "DAILYMED-ITRA-20260713",
+      "title": "SPORANOX itraconazole capsule prescribing information",
+      "url": "https://www.dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a4d555fa-787c-40fb-bb7d-b0d4f7318fd0",
+      "tier": "CONTEXT",
+      "basis": "label",
+      "retrievedAt": "2026-10-12",
+      "integrity": "Official live context source read October 12, 2026.",
+      "locators": [
+        "Boxed Warning: Congestive Heart Failure, Cardiac Effects and Drug Interactions",
+        "Warnings: Hepatic Effects and Cardiac Disease"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "PP-CLAIM-01",
+      "text": "Surgery can be curative for selected patients with resectable NSCLC, and treatment depends on disease stage, histology and the patient's health.",
+      "sourceIds": [
+        "NCI-NSCLC-PDQ"
+      ],
+      "locator": "General Information; Treatment of Stages IA and IB NSCLC",
+      "kind": "context",
+      "verification": "source_checked",
+      "humanReview": "pending"
+    },
+    {
+      "id": "PP-CLAIM-02",
+      "text": "The four selected reports do not establish that itraconazole or metformin can replace potentially curative surgery. The presurgical itraconazole study retained planned surgery; the other trials evaluated additional drugs in different treatment settings.",
+      "sourceIds": [
+        "PP-PMID-32847935",
+        "P-D07-LUNG-2013",
+        "MF-NRG-LU001-2021",
+        "MF-ALMERA-2021"
+      ],
+      "locator": "Institutional record Abstract at https://utsouthwestern.elsevierpure.com/en/publications/concentration-dependent-early-antivascular-and-antitumor-effects-/ | Methods: Study Design and Efficacy; Results: Patient Characteristics, Safety and Tolerability, Efficacy; Discussion paragraph beginning There are important caveats | Abstract: Design, Interventions, Main outcomes, Results, Conclusions | Methods: Patient Population, Assessments and Outcomes; Results: Patient Population, Efficacy, Toxic Effects; Discussion and Limitations",
+      "kind": "editorial_interpretation",
+      "verification": "source_checked",
+      "humanReview": "pending"
+    },
+    {
+      "id": "PP-CLAIM-03",
+      "text": "Gerber and colleagues enrolled 13 patients with NSCLC scheduled for resection. They received itraconazole for 10-14 days before surgery, with imaging, blood and tissue measurements to investigate biological effects.",
+      "sourceIds": [
+        "PP-PMID-32847935"
+      ],
+      "locator": "Institutional record Abstract at https://utsouthwestern.elsevierpure.com/en/publications/concentration-dependent-early-antivascular-and-antitumor-effects-/",
+      "kind": "reported_result",
+      "verification": "source_checked",
+      "humanReview": "pending"
+    },
+    {
+      "id": "PP-CLAIM-04",
+      "text": "Higher drug concentrations were associated with greater reductions in tumor volume and perfusion, among other measurements. These short-term associations do not establish improved survival or show that surgery can safely be omitted.",
+      "sourceIds": [
+        "PP-PMID-32847935"
+      ],
+      "locator": "Institutional record Abstract at https://utsouthwestern.elsevierpure.com/en/publications/concentration-dependent-early-antivascular-and-antitumor-effects-/",
+      "kind": "editorial_interpretation",
+      "verification": "source_checked",
+      "humanReview": "pending"
+    },
+    {
+      "id": "PP-CLAIM-05",
+      "text": "Rudin and colleagues conducted an open-label randomized phase 2 trial in previously treated metastatic nonsquamous NSCLC. It enrolled 23 patients: 15 received pemetrexed plus itraconazole and 8 received pemetrexed alone. The trial closed early because of slow recruitment as pemetrexed use changed.",
+      "sourceIds": [
+        "P-D07-LUNG-2013"
+      ],
+      "locator": "Methods: Study Design and Efficacy; Results: Patient Characteristics, Safety and Tolerability, Efficacy; Discussion paragraph beginning There are important caveats",
+      "kind": "reported_result",
+      "verification": "source_checked",
+      "humanReview": "pending"
+    },
+    {
+      "id": "PP-CLAIM-06",
+      "text": "At 3 months, 67% versus 29% were progression-free (P = .11), the primary endpoint. Median overall survival, an additional endpoint, was 32 versus 8 months (P = .012), favoring the combination. The authors emphasized that the small sample made effect estimates highly unstable.",
+      "sourceIds": [
+        "P-D07-LUNG-2013"
+      ],
+      "locator": "Methods: Study Design and Efficacy; Results: Patient Characteristics, Safety and Tolerability, Efficacy; Discussion paragraph beginning There are important caveats",
+      "kind": "reported_result",
+      "verification": "source_checked",
+      "humanReview": "pending"
+    },
+    {
+      "id": "PP-CLAIM-07",
+      "text": "Reported events in the combination group included transient grade 4 neutropenia without fever and a possibly treatment-related intratumoral bleed within 30 days after leaving the study. This small study cannot establish broad safety or a reliable survival benefit, and it did not study initial treatment of resectable disease.",
+      "sourceIds": [
+        "P-D07-LUNG-2013"
+      ],
+      "locator": "Methods: Study Design and Efficacy; Results: Patient Characteristics, Safety and Tolerability, Efficacy; Discussion paragraph beginning There are important caveats",
+      "kind": "editorial_interpretation",
+      "verification": "source_checked",
+      "humanReview": "pending"
+    },
+    {
+      "id": "PP-CLAIM-08",
+      "text": "The U.S. capsule label warns about heart failure, serious liver toxicity and consequential drug interactions, including contraindicated combinations involving CYP3A4 substrates.",
+      "sourceIds": [
+        "DAILYMED-ITRA-20260713"
+      ],
+      "locator": "Boxed Warning: Congestive Heart Failure, Cardiac Effects and Drug Interactions; Warnings: Hepatic Effects and Cardiac Disease",
+      "kind": "context",
+      "verification": "source_checked",
+      "humanReview": "pending"
+    },
+    {
+      "id": "PP-CLAIM-09",
+      "text": "This open-label phase 2 trial studied patients without diabetes who had unresectable stage III NSCLC. Of 170 enrolled patients, 167 eligible patients were analyzed: 86 in the metformin group and 81 in the control group. Both groups received chemoradiation and consolidation chemotherapy.",
+      "sourceIds": [
+        "MF-NRG-LU001-2021"
+      ],
+      "locator": "Abstract: Design, Interventions, Main outcomes, Results, Conclusions",
+      "kind": "reported_result",
+      "verification": "source_checked",
+      "humanReview": "pending"
+    },
+    {
+      "id": "PP-CLAIM-10",
+      "text": "The primary endpoint, 1-year progression-free survival, was 51.3% with metformin and 60.4% without it (hazard ratio 1.15; 95% CI 0.77-1.73; P = .24). One-year overall survival was similar, and no significant difference in adverse events was reported. The trial did not demonstrate improved survival with metformin.",
+      "sourceIds": [
+        "MF-NRG-LU001-2021"
+      ],
+      "locator": "Abstract: Design, Interventions, Main outcomes, Results, Conclusions",
+      "kind": "reported_result",
+      "verification": "source_checked",
+      "humanReview": "pending"
+    },
+    {
+      "id": "PP-CLAIM-11",
+      "text": "This open-label phase 2 trial randomized 54 patients without diabetes and with unresected stage III NSCLC: 26 to chemoradiotherapy plus metformin and 28 to chemoradiotherapy alone. Recruitment stopped early.",
+      "sourceIds": [
+        "MF-ALMERA-2021"
+      ],
+      "locator": "Methods: Patient Population, Assessments and Outcomes; Results: Patient Population, Efficacy, Toxic Effects; Discussion and Limitations",
+      "kind": "reported_result",
+      "verification": "source_checked",
+      "humanReview": "pending"
+    },
+    {
+      "id": "PP-CLAIM-12",
+      "text": "The primary composite treatment-failure endpoint occurred within 1 year in 18/26 patients (69.2%) with metformin versus 12/28 (42.9%) in the control group (P = .05). It included progression, death, or stopping trial treatment or planned evaluations for any reason.",
+      "sourceIds": [
+        "MF-ALMERA-2021"
+      ],
+      "locator": "Methods: Patient Population, Assessments and Outcomes; Results: Patient Population, Efficacy, Toxic Effects; Discussion and Limitations",
+      "kind": "reported_result",
+      "verification": "source_checked",
+      "humanReview": "pending"
+    },
+    {
+      "id": "PP-CLAIM-13",
+      "text": "One-year overall survival was 47.4% versus 85.2% (hazard ratio 3.80; 95% CI 1.49-9.73). At least one grade 3 or higher adverse event was reported in 14/26 (53.8%) versus 7/28 (25.0%), respectively. These are all-cause adverse events, not all established as caused by metformin.",
+      "sourceIds": [
+        "MF-ALMERA-2021"
+      ],
+      "locator": "Methods: Patient Population, Assessments and Outcomes; Results: Patient Population, Efficacy, Toxic Effects; Discussion and Limitations",
+      "kind": "reported_result",
+      "verification": "source_checked",
+      "humanReview": "pending"
+    },
+    {
+      "id": "PP-CLAIM-14",
+      "text": "The small sample, open-label design and treatment imbalances limit interpretation; the unfavorable findings argue against an anticancer add-on in this setting.",
+      "sourceIds": [
+        "MF-ALMERA-2021"
+      ],
+      "locator": "Methods: Patient Population, Assessments and Outcomes; Results: Patient Population, Efficacy, Toxic Effects; Discussion and Limitations",
+      "kind": "editorial_interpretation",
+      "verification": "source_checked",
+      "humanReview": "pending"
+    }
+  ]
+}

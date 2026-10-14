@@ -1,0 +1,370 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:remaprx:metformin-acquire:return:1.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "operationId",
+    "planVersion",
+    "artifactType",
+    "fixture",
+    "preparedAt",
+    "actualCutoff",
+    "inputPlanSha256",
+    "inputSchemaSha256",
+    "assignments",
+    "assets",
+    "fileCount",
+    "totalSourceBytes",
+    "logs",
+    "scientificAssessmentComplete",
+    "humanReviewComplete",
+    "released"
+  ],
+  "properties": {
+    "operationId": {
+      "const": "RRX-GUIDE-METFORMIN-001-ACQUIRE"
+    },
+    "planVersion": {
+      "const": "1.1"
+    },
+    "artifactType": {
+      "const": "source_acquisition_return"
+    },
+    "fixture": {
+      "type": "boolean"
+    },
+    "preparedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "actualCutoff": {
+      "type": "string",
+      "format": "date"
+    },
+    "inputPlanSha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "inputSchemaSha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "assignments": {
+      "type": "array",
+      "minItems": 14,
+      "maxItems": 14,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "assignmentId",
+          "targetSourceId",
+          "status",
+          "assetIds",
+          "missingArtifacts",
+          "reason",
+          "nextAction"
+        ],
+        "properties": {
+          "assignmentId": {
+            "enum": [
+              "MF-GAP-01",
+              "MF-GAP-02",
+              "MF-GAP-03",
+              "MF-GAP-04",
+              "MF-GAP-05",
+              "MF-GAP-06",
+              "MF-GAP-07",
+              "MF-GAP-08",
+              "MF-GAP-09",
+              "MF-GAP-10",
+              "MF-GAP-11",
+              "MF-GAP-12",
+              "MF-GAP-13",
+              "MF-GAP-14"
+            ]
+          },
+          "targetSourceId": {
+            "enum": [
+              "P-KOREA-2026",
+              "MF-METPREVENT-2025",
+              "MF-MASTERS-2019",
+              "MF-SCHIZOPHRENIA-PARENT-2023",
+              "MF-NRG-LU001-2021",
+              "MF-ALMERA-2021",
+              "COND-C15-MA32-2022",
+              "COND-C15-MA32-METABOLIC",
+              "COND-C17-MET-2015",
+              "MF-ADENOMA-2016",
+              "MF-COLON-MECHANISM-2010",
+              "P-COVIDOUT-2023",
+              "MF-LABEL-2025",
+              "MF-FDA-GENERICS"
+            ]
+          },
+          "status": {
+            "enum": [
+              "acquired",
+              "partially_acquired",
+              "held_existing_asset",
+              "not_accessible",
+              "not_found",
+              "identity_conflict"
+            ]
+          },
+          "assetIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "missingArtifacts": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1
+          },
+          "nextAction": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "assets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "assetId",
+          "assignmentId",
+          "targetSourceId",
+          "canonicalReportId",
+          "role",
+          "relationshipToTarget",
+          "title",
+          "doi",
+          "pmid",
+          "identifierMissingReason",
+          "originalUrl",
+          "resolvedUrl",
+          "retrievedAt",
+          "sourceVersion",
+          "versionMissingReason",
+          "path",
+          "mediaType",
+          "bytes",
+          "sha256",
+          "rights",
+          "accessBasis",
+          "scientificExtraction",
+          "quarantine"
+        ],
+        "properties": {
+          "assetId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "assignmentId": {
+            "enum": [
+              "MF-GAP-01",
+              "MF-GAP-02",
+              "MF-GAP-03",
+              "MF-GAP-04",
+              "MF-GAP-05",
+              "MF-GAP-06",
+              "MF-GAP-07",
+              "MF-GAP-08",
+              "MF-GAP-09",
+              "MF-GAP-10",
+              "MF-GAP-11",
+              "MF-GAP-12",
+              "MF-GAP-13",
+              "MF-GAP-14"
+            ]
+          },
+          "targetSourceId": {
+            "enum": [
+              "P-KOREA-2026",
+              "MF-METPREVENT-2025",
+              "MF-MASTERS-2019",
+              "MF-SCHIZOPHRENIA-PARENT-2023",
+              "MF-NRG-LU001-2021",
+              "MF-ALMERA-2021",
+              "COND-C15-MA32-2022",
+              "COND-C15-MA32-METABOLIC",
+              "COND-C17-MET-2015",
+              "MF-ADENOMA-2016",
+              "MF-COLON-MECHANISM-2010",
+              "P-COVIDOUT-2023",
+              "MF-LABEL-2025",
+              "MF-FDA-GENERICS"
+            ]
+          },
+          "canonicalReportId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "role": {
+            "enum": [
+              "full_report",
+              "supplement",
+              "protocol",
+              "sap",
+              "registry",
+              "correction_notice",
+              "corrected_report",
+              "official_label",
+              "regulatory_context"
+            ]
+          },
+          "relationshipToTarget": {
+            "type": "string",
+            "minLength": 1
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "doi": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "pmid": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "identifierMissingReason": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "originalUrl": {
+            "type": "string",
+            "format": "uri"
+          },
+          "resolvedUrl": {
+            "type": "string",
+            "format": "uri"
+          },
+          "retrievedAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "sourceVersion": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "versionMissingReason": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "path": {
+            "type": "string",
+            "pattern": "^sources/(PRIMARY|CONTEXT)/[^.].+"
+          },
+          "mediaType": {
+            "enum": [
+              "application/pdf",
+              "text/html",
+              "application/xml",
+              "text/xml",
+              "application/json",
+              "application/zip",
+              "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+              "application/msword"
+            ]
+          },
+          "bytes": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "rights": {
+            "type": "string",
+            "minLength": 1
+          },
+          "accessBasis": {
+            "enum": [
+              "lawful_full_text",
+              "official_source",
+              "permitted_supplement",
+              "metadata_only"
+            ]
+          },
+          "scientificExtraction": {
+            "const": "not_performed"
+          },
+          "quarantine": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "fileCount": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "totalSourceBytes": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "logs": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "searches",
+        "screening",
+        "reviewInputAvailability",
+        "gaps",
+        "reversePrompt"
+      ],
+      "properties": {
+        "searches": {
+          "const": "searches.json"
+        },
+        "screening": {
+          "const": "screening.json"
+        },
+        "reviewInputAvailability": {
+          "const": "review-input-availability.json"
+        },
+        "gaps": {
+          "const": "gaps.json"
+        },
+        "reversePrompt": {
+          "const": "CHATGPT-INGEST-PROMPT.txt"
+        }
+      }
+    },
+    "scientificAssessmentComplete": {
+      "const": false
+    },
+    "humanReviewComplete": {
+      "const": false
+    },
+    "released": {
+      "const": false
+    }
+  }
+}

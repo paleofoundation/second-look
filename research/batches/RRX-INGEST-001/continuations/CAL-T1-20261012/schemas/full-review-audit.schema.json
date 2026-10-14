@@ -1,0 +1,170 @@
+{
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": "remaprx-full-review-audit-v1"
+    },
+    "status": {
+      "const": "PASS"
+    },
+    "scope": {
+      "const": "independent_full_report_review"
+    },
+    "author": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "auditor": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "reviewedAt": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "candidateSha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "planSha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "assignmentSha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "questionMapSha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "sourceHashes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "sourceId": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        },
+        "required": [
+          "sourceId",
+          "sha256"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    },
+    "checks": {
+      "type": "object",
+      "properties": {
+        "sourceIdentity": {
+          "const": true
+        },
+        "allRequiredAssetsInspected": {
+          "const": true
+        },
+        "allQuestionInputs": {
+          "const": true
+        },
+        "allAnswers": {
+          "const": true
+        },
+        "numericClaims": {
+          "const": true
+        },
+        "studyExperimentIdentity": {
+          "const": true
+        },
+        "appraisalRationale": {
+          "const": true
+        },
+        "sourceIntegrity": {
+          "const": true
+        },
+        "limitations": {
+          "const": true
+        }
+      },
+      "required": [
+        "sourceIdentity",
+        "allRequiredAssetsInspected",
+        "allQuestionInputs",
+        "allAnswers",
+        "numericClaims",
+        "studyExperimentIdentity",
+        "appraisalRationale",
+        "sourceIntegrity",
+        "limitations"
+      ],
+      "additionalProperties": false
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        },
+        "required": [
+          "path",
+          "sha256"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "\\S"
+      },
+      "uniqueItems": true
+    },
+    "humanApproval": {
+      "const": false
+    },
+    "released": {
+      "const": false
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "status",
+    "scope",
+    "author",
+    "auditor",
+    "reviewedAt",
+    "candidateSha256",
+    "planSha256",
+    "assignmentSha256",
+    "questionMapSha256",
+    "sourceHashes",
+    "checks",
+    "evidence",
+    "limitations",
+    "humanApproval",
+    "released"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

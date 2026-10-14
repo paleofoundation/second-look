@@ -1,0 +1,39 @@
+{
+  "batchId": "RRX-GUIDE-METFORMIN-001",
+  "planVersion": "1.0",
+  "preparedAt": "2026-10-12T14:00:55.393687+00:00",
+  "preparedBy": "codex/metformin_research",
+  "decision": "AWAITING_INTEGRATOR",
+  "workerRecommendation": "PASS for metadata reconciliation; HOLD for acquisition, substantive extraction, scientific assessment, manuscript and release",
+  "scope": "Current-source metadata/byte inventory and precise guide-source gap specification only",
+  "hashes": {
+    "PLAN.md": "8a2f37745854ba1405c6e374936fac860d091701e62f43486940af60fa6b2edc",
+    "packet.schema.json": "9724f572fee69352d41b322461eb48e0fbf85ef37796839128dd8149ca4cc61d",
+    "input-manifest.json": "b0e0eb3fd3a59d5180613973e9fd7006592a13129ce9b6dce5cf4e0d06950667",
+    "coverage-ledger.json": "638d6365c9e2b2a94361e5d1236b253fcc32e32cadf647a03a731b8ce1668d98",
+    "MISSING-SOURCES.md": "7c792039beefefa911ad360e251796413c609a3b7388adcb1a2b667c14fba267",
+    "MANUSCRIPT-CONTRACT.md": "832b241109de137cd52fbff788068e522b8431db72b33c89663b8ace1785207b"
+  },
+  "checks": {
+    "completePinnedRuleRead": true,
+    "currentPlansAndSchemasRead": true,
+    "sourceCoverage24of24": true,
+    "rawFilesKeptPrivate": true,
+    "noCanonicalEvidenceModified": true,
+    "preservedHolds": true,
+    "schemaAndNegativeProbesPassed": true
+  },
+  "dependentOperationStatus": {
+    "acquisition": "HOLD: source-specific operational scope/readiness and real transferable packet not yet accepted",
+    "substantiveExtraction": "HOLD: source-specific assignment/GP not yet accepted",
+    "scientificAssessment": "not_completed",
+    "independentHumanReview": "pending",
+    "guideManuscript": "HOLD until ingestion and assessment complete",
+    "commercialRelease": "not_released"
+  },
+  "confidenceBreakdown": {
+    "exactMetadataIdentityReferences": 7,
+    "titleOrUrlLeadReferences": 2,
+    "newPrintedSourceIdentityChecks": 0
+  }
+}

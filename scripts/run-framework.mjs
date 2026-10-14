@@ -5,6 +5,9 @@ import { readExecutionProfile } from "./execution-profile.mjs";
 const [command, ...args] = process.argv.slice(2);
 if (!["dev", "build"].includes(command)) throw new Error("Expected dev or build.");
 if (command === "build") {
+  const outcomes = spawnSync(process.execPath, [fileURLToPath(new URL("./check-outcome-summaries.mjs", import.meta.url))], { stdio: "inherit" });
+  if (outcomes.error) throw outcomes.error;
+  if (outcomes.status !== 0) process.exit(outcomes.status ?? 1);
   const grading = spawnSync(process.execPath, [fileURLToPath(new URL("./evidence-assessments.mjs", import.meta.url)), "--check"], { stdio: "inherit" });
   if (grading.error) throw grading.error;
   if (grading.status !== 0) process.exit(grading.status ?? 1);

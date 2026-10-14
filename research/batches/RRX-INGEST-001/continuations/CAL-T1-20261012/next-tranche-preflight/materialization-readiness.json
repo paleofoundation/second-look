@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "remaprx-gp-readiness-v1",
+  "scope": "GP_PLAN",
+  "status": "PASS",
+  "planId": "RRX-CAL01-MATERIALIZATION-1.0",
+  "planSha256": "ea95e1da67f219f79ec3bbb9d27d5147df071b9fd42e0567e0fb942d47ee1819",
+  "checkedAt": "2026-10-12T14:22:59.392996+00:00",
+  "integrator": "codex/root",
+  "reasons": [
+    "Reviewed exact PDF-only no-clobber materializer, full member identity/CRC/hash/page manifest and scoped independent code audit.",
+    "Fresh current input pins deliberately supersede stale prospective changelog pin; historical proposal retained.",
+    "Three independently hashed source members remain one report; expected92pages; only named external SHA-path PDF destinations and private receipt.",
+    "Ignored/untracked raw directory enforced at runtime; atomic no-clobber per-file writes, exclusive lock, current-controls recheck and exact-repeat semantics.",
+    "Separate source-review assignment and fresh GP required before scientific reading; no canonical import/human approval/release."
+  ]
+}

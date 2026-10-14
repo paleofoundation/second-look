@@ -1,7 +1,7 @@
 /* Port of role-intake.reference.css at Microbiome 28ed85b6. Corrections: accessible
    multi-role checkboxes, exclusive declined choice, destination tokens, no personal-
    health/license/password collection, no copied signup or auto-confirmation. */
-.reader-profile.auth{background:var(--surface,#f6f8fa)}
+.reader-profile.auth{background:var(--surface,var(--brand-surface))}
 .reader-profile .auth__wrapper{max-width:600px;margin-inline:auto;padding:4rem 1.5rem}
 .reader-profile .auth__content{box-shadow:0 2px 12px rgba(0,0,0,.08);border-radius:1rem;padding:76px;background:#fff}
 .reader-profile .auth-form{display:flex;flex-direction:column;gap:24px}
@@ -10,11 +10,11 @@
 .reader-profile .role-selection{display:flex;flex-direction:column;gap:.75rem;margin-bottom:1.5rem}
 .reader-profile fieldset{border:0;padding:0;margin:0;min-width:0}
 .reader-profile .reader-role{display:flex;align-items:flex-start;gap:.75rem;min-height:44px;cursor:pointer}
-.reader-profile .reader-role input{flex:0 0 auto;width:20px;height:20px;margin-top:.2em;accent-color:var(--main,#183153)}
-.reader-profile .reader-role input:focus-visible{outline:3px solid var(--main,#183153);outline-offset:3px}
+.reader-profile .reader-role input{flex:0 0 auto;width:20px;height:20px;margin-top:.2em;accent-color:var(--main,var(--brand-blue))}
+.reader-profile .reader-role input:focus-visible{outline:3px solid var(--main,var(--brand-blue));outline-offset:3px}
 .reader-profile .field__errors{font-size:.95em;color:var(--danger,#9b2828);font-weight:500;position:static}
 .reader-profile .auth-form__success{font-size:.95em;line-height:1.5}
-.reader-profile .profile-controls{margin-top:2rem;padding-top:1.5rem;border-top:1px solid var(--border,#d8dfe5)}
+.reader-profile .profile-controls{margin-top:2rem;padding-top:1.5rem;border-top:1px solid var(--border,var(--brand-line))}
 .reader-profile .profile-controls h2{font-size:1.4rem}
 .reader-profile p{margin:0;overflow-wrap:anywhere}
 .reader-profile .profile-controls>*+*{margin-top:1rem}

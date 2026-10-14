@@ -1,0 +1,95 @@
+{
+  "schemaVersion": "remaprx-full-review-audit-v1",
+  "status": "PASS",
+  "scope": "independent_full_report_review",
+  "author": "codex/corpus_audit",
+  "auditor": "codex/identity_review",
+  "reviewedAt": "2026-10-12T14:05:41.614773+00:00",
+  "candidateSha256": "fa3d91e967a1ad47c934109a9f0df094715f5402ee527f6710887496d8875b95",
+  "planSha256": "6fb755f1cbfd7aba822cbb97a696a51c6b3847e01ac50956b2fea0f6bd237cb8",
+  "assignmentSha256": "b000f96ac8585e623f92773433976cb4a5daf12a2734d3eb8985ff4b2f67cb0b",
+  "questionMapSha256": "02edeacc65227e5feeaf25b6c9568be406b48024216f83d2dda2ccfcc5042f3b",
+  "sourceHashes": [
+    {
+      "sourceId": "MECH-D07-HEDGEHOG-2010",
+      "sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578"
+    },
+    {
+      "sourceId": "CAL07-europepmc-json",
+      "sha256": "dc6c38bad7c46de1cf0aceb76610c88215d349da84829f9dbac4aa3d8b420fed"
+    },
+    {
+      "sourceId": "CAL07-crossref-json",
+      "sha256": "11ef7c84b810f03ad95e0fe9a2832c6a73cd3adb87c8ace1f8c7fbd647f2c615"
+    },
+    {
+      "sourceId": "CAL07-nihms199097f1-jpg",
+      "sha256": "373fff712409d379e79e7f4d0ba5546296c6db4a1138a3302b6696882b6bf166"
+    },
+    {
+      "sourceId": "CAL07-nihms199097f2-jpg",
+      "sha256": "e23bbf5ad4df85fdbb7499fa340d6448704cef67a862b5cf3e800c6e49c11815"
+    },
+    {
+      "sourceId": "CAL07-nihms199097f3-jpg",
+      "sha256": "64b19ff7649163d5671c147bc73d651e5b4280e43fc99dc2bae08bdd9453df4d"
+    },
+    {
+      "sourceId": "CAL07-nihms199097f4-jpg",
+      "sha256": "b8940236894b907be85c293f6011a739abec29ac26b5549bfb29522765ca74ba"
+    },
+    {
+      "sourceId": "CAL07-nihms199097f5-jpg",
+      "sha256": "51dcc042138ba5c7d1145b8a8717d17bf6df2ebb6ffca2988e854342a58ea06b"
+    },
+    {
+      "sourceId": "CAL07-nihms199097f6-jpg",
+      "sha256": "ebfd22c4d47da76e81098f83a845fd5b60fd9b5b496fff229de53b225e7e2260"
+    },
+    {
+      "sourceId": "CAL07-nihms199097f7-jpg",
+      "sha256": "a1430c5543a493cba24d00ec31fade558a494d258de7132eadac80ccb503d127"
+    },
+    {
+      "sourceId": "CAL07-supplement-publisher-pdf",
+      "sha256": "90b42356bc5a52e53542d5ae69a8cc5e80e9a8215141471c4e87bf17700059d4"
+    }
+  ],
+  "checks": {
+    "sourceIdentity": true,
+    "allRequiredAssetsInspected": true,
+    "allQuestionInputs": true,
+    "allAnswers": true,
+    "numericClaims": true,
+    "studyExperimentIdentity": true,
+    "appraisalRationale": true,
+    "sourceIntegrity": true,
+    "limitations": true
+  },
+  "evidence": [
+    {
+      "path": "research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/CAL-07/independent/source-observations.json",
+      "sha256": "c9c1672ccafc8d5192000b62a35d6024e21b9e8a89aeb40415a43423d8cd852c"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/CAL-07/independent/technical-recheck.json",
+      "sha256": "3b20a6d9b2888a2c22057b737b6b2bb9526a644674cb76c5ca15c187a9e6f315"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/CAL-07/independent/feedback-a13868d0.json",
+      "sha256": "e3c75e19eeeaee97e89ce90fd85a4a807e9c3252c0e81bba1fd507e36e558dab"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/CAL-07/independent/audit-evidence.json",
+      "sha256": "001e676adbe5e42a610aa9560eaa675335b40f3d51a3bf4cb464c106e9d2db4d"
+    }
+  ],
+  "limitations": [
+    "The reviewed version is the NIH accepted unedited manuscript with all seven assigned figure images and the matching ten-page publisher supplement; final publisher body was unavailable and the byline difference is preserved.",
+    "Integrity and related-report conclusions are bounded by the assigned report and two received dated exact-identity metadata responses; no exhaustive external correction or replication search is claimed.",
+    "Preclinical observations, clustered units, missing design reporting, assay-specific numerical discrepancies, unproved direct binding and human translation limits remain scientific limitations despite source-review completion.",
+    "This PASS verifies an exact AI-authored private full report review; it does not grant human approval, formal GRADE, clinical certainty, canonical import or public release."
+  ],
+  "humanApproval": false,
+  "released": false
+}

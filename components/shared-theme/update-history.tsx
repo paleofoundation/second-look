@@ -1,5 +1,5 @@
 import {Fragment} from 'react';
-import {articleUpdateDate, articleUpdatesForPath} from '@/lib/update-history';
+import {articleUpdateDate, articleUpdatesForPath, pageCreatedDate} from '@/lib/update-history';
 import './update-history.css';
 
 const changeLabels = {
@@ -15,7 +15,8 @@ export function UpdateHistory({pagePath, sectionIds = []}: {
   sectionIds?: string[];
 }) {
   const entries = articleUpdatesForPath(pagePath);
-  if (!entries.length) return <p>No dated updates have been recorded for this page.</p>;
+  const created = pageCreatedDate(pagePath);
+  if (!entries.length && !created) return <p>No material content updates have been recorded for this page yet.</p>;
 
   const availableSections = new Set(sectionIds);
   return <div className="mbio-update-history">
@@ -40,6 +41,11 @@ export function UpdateHistory({pagePath, sectionIds = []}: {
           </div>
         </div>;
       })}
+      {created ? <div className="mbio-card" key="page-created" data-update-id="page-created">
+        <div className="mbio-card__border" aria-hidden="true"/>
+        <p className="mbio-card__date"><time dateTime={created}>{articleUpdateDate(created)}</time></p>
+        <h3 className="mbio-card__title">Page created</h3>
+      </div> : null}
     </div>
   </div>;
 }

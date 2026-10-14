@@ -1,0 +1,122 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "remaprx-physician-packet-v1",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "scope",
+    "sources",
+    "claims"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0"
+    },
+    "scope": {
+      "const": "selected-source NSCLC product sample"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "url",
+          "tier",
+          "basis",
+          "retrievedAt",
+          "integrity",
+          "locators"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "tier": {
+            "enum": [
+              "PRIMARY",
+              "CONTEXT"
+            ]
+          },
+          "basis": {
+            "enum": [
+              "full_text",
+              "abstract",
+              "official_guidance",
+              "label"
+            ]
+          },
+          "retrievedAt": {
+            "type": "string"
+          },
+          "integrity": {
+            "type": "string"
+          },
+          "locators": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "text",
+          "sourceIds",
+          "locator",
+          "kind",
+          "verification",
+          "humanReview"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "text": {
+            "type": "string"
+          },
+          "sourceIds": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          },
+          "locator": {
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "reported_result",
+              "context",
+              "editorial_interpretation"
+            ]
+          },
+          "verification": {
+            "enum": [
+              "source_checked",
+              "pending"
+            ]
+          },
+          "humanReview": {
+            "const": "pending"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "schemaVersion": "remaprx-ingest-plan-v1",
+  "planId": "RRX-INGEST-001-METFORMIN-PAGE-20261012",
+  "operations": [
+    "validate",
+    "stage",
+    "diff",
+    "apply"
+  ],
+  "allowedTargets": [
+    "data/content.json",
+    "data/public-content.json",
+    "data/reader-evidence.json",
+    "data/public-reader-evidence.json",
+    "data/outcome-registry.json",
+    "editorial/parent-guide-scopes.json",
+    "editorial/evidence-assessments.json",
+    "data/public-evidence-assessments.json",
+    "editorial/synthesis-identity-map.json",
+    "data/article-updates.json"
+  ],
+  "inputs": [
+    {
+      "path": "docs/RESEARCH-INGEST.md",
+      "sha256": "a7cf38d81c3ea49e1c20ce928bae21fbf211b2bff3ebe47c898d325ecb2799fe"
+    },
+    {
+      "path": "editorial/EVIDENCE-GRADING.md",
+      "sha256": "3dff0735088f5facd539a20fa93fe7b8c99dcc88dc7aedfd384eb7bb1e59f6f1"
+    },
+    {
+      "path": "scripts/apply-reader-outcomes.py",
+      "sha256": "4f0fd627142c7c548a428a5ca4a265a61e8189e84545cd983143372718a38a99"
+    },
+    {
+      "path": "scripts/evidence-assessments.mjs",
+      "sha256": "73fb4ac3c9605dba0a0b5f9fc2e5af566a3a8e4c0887dbc72af193af49c19c99"
+    }
+  ],
+  "contract": {
+    "scope": "Existing metformin evidence fanout; bounded verification of already-received sources and exact outcome scopes",
+    "newAcquisition": false,
+    "fullScientificReviewComplete": false,
+    "humanApproval": false,
+    "releaseAuthorized": false,
+    "integrator": "codex/root",
+    "sourceVerifier": "codex/identity_review",
+    "independentIntegratorAudit": "codex/pipeline_audit",
+    "sourceIds": [
+      "MF-STAMPEDE-2025",
+      "MF-NRG-LU001-2021",
+      "MF-ALMERA-2021",
+      "MF-ADENOMA-2016",
+      "COND-C02-COVIDOUT-2022",
+      "MF-MASTERS-2019"
+    ]
+  }
+}

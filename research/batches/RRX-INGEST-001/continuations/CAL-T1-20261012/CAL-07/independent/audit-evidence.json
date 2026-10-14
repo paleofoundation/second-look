@@ -1,0 +1,3288 @@
+{
+  "schemaVersion": "remaprx-independent-full-review-evidence-v1",
+  "auditor": "codex/identity_review",
+  "reviewedAt": "2026-10-12T14:05:00.596839+00:00",
+  "candidateSha256": "fa3d91e967a1ad47c934109a9f0df094715f5402ee527f6710887496d8875b95",
+  "status": "PASS",
+  "sourceInspectionEvidence": {
+    "path": "research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/CAL-07/independent/source-observations.json",
+    "sha256": "c9c1672ccafc8d5192000b62a35d6024e21b9e8a89aeb40415a43423d8cd852c"
+  },
+  "checkedCounts": {
+    "inputs": 67,
+    "answers": 15,
+    "experiments": 15,
+    "results": 25,
+    "claims": 26,
+    "numericClaims": 43,
+    "assignedAssets": 11,
+    "assignedUnits": 41,
+    "uniqueLocators": 110,
+    "locatorOccurrences": 949
+  },
+  "sourceHashes": [
+    {
+      "sourceId": "MECH-D07-HEDGEHOG-2010",
+      "sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+      "bytes": 235104
+    },
+    {
+      "sourceId": "CAL07-europepmc-json",
+      "sha256": "dc6c38bad7c46de1cf0aceb76610c88215d349da84829f9dbac4aa3d8b420fed",
+      "bytes": 7834
+    },
+    {
+      "sourceId": "CAL07-crossref-json",
+      "sha256": "11ef7c84b810f03ad95e0fe9a2832c6a73cd3adb87c8ace1f8c7fbd647f2c615",
+      "bytes": 24805
+    },
+    {
+      "sourceId": "CAL07-nihms199097f1-jpg",
+      "sha256": "373fff712409d379e79e7f4d0ba5546296c6db4a1138a3302b6696882b6bf166",
+      "bytes": 162815
+    },
+    {
+      "sourceId": "CAL07-nihms199097f2-jpg",
+      "sha256": "e23bbf5ad4df85fdbb7499fa340d6448704cef67a862b5cf3e800c6e49c11815",
+      "bytes": 171872
+    },
+    {
+      "sourceId": "CAL07-nihms199097f3-jpg",
+      "sha256": "64b19ff7649163d5671c147bc73d651e5b4280e43fc99dc2bae08bdd9453df4d",
+      "bytes": 136667
+    },
+    {
+      "sourceId": "CAL07-nihms199097f4-jpg",
+      "sha256": "b8940236894b907be85c293f6011a739abec29ac26b5549bfb29522765ca74ba",
+      "bytes": 148360
+    },
+    {
+      "sourceId": "CAL07-nihms199097f5-jpg",
+      "sha256": "51dcc042138ba5c7d1145b8a8717d17bf6df2ebb6ffca2988e854342a58ea06b",
+      "bytes": 192233
+    },
+    {
+      "sourceId": "CAL07-nihms199097f6-jpg",
+      "sha256": "ebfd22c4d47da76e81098f83a845fd5b60fd9b5b496fff229de53b225e7e2260",
+      "bytes": 120983
+    },
+    {
+      "sourceId": "CAL07-nihms199097f7-jpg",
+      "sha256": "a1430c5543a493cba24d00ec31fade558a494d258de7132eadac80ccb503d127",
+      "bytes": 230995
+    },
+    {
+      "sourceId": "CAL07-supplement-publisher-pdf",
+      "sha256": "90b42356bc5a52e53542d5ae69a8cc5e80e9a8215141471c4e87bf17700059d4",
+      "bytes": 273729
+    }
+  ],
+  "locators": [
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "S2",
+        "kind": "html_section",
+        "locator": "#S2",
+        "figureTable": null
+      },
+      "quoteSha256": "a6abf0732a188fdb69b9e58a9b586cfb286db732b32cf4d65f53e5ad736f30b2",
+      "quoteCharacters": 481,
+      "occurrences": 8,
+      "paths": [
+        "$.experiments[0].sourceLocators[0]",
+        "$.results[3].sourceLocators[0]",
+        "$.claims[4].sourceLocators[0]",
+        "$.inputs[0].sourceLocators[1]",
+        "$.inputs[1].sourceLocators[1]",
+        "$.inputs[2].sourceLocators[1]",
+        "$.answers[0].sourceLocators[1]",
+        "$.sourceIntegrity[3].sourceLocators[0]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "S4",
+        "kind": "html_section",
+        "locator": "#S4",
+        "figureTable": null
+      },
+      "quoteSha256": "00f6ff907278b256021258592c3323bdcc98d0d23e5f16798d9c318c482eb0d8",
+      "quoteCharacters": 905,
+      "occurrences": 5,
+      "paths": [
+        "$.experiments[0].sourceLocators[1]",
+        "$.inputs[3].sourceLocators[0]",
+        "$.inputs[4].sourceLocators[0]",
+        "$.inputs[5].sourceLocators[0]",
+        "$.answers[1].sourceLocators[0]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "S4",
+        "kind": "html_section",
+        "locator": "#S4",
+        "figureTable": null
+      },
+      "quoteSha256": "bb41074f74a9d6cfc19942512b77626266bee9db1be09cadd21b0a3016154511",
+      "quoteCharacters": 1281,
+      "occurrences": 50,
+      "paths": [
+        "$.experiments[0].sourceLocators[2]",
+        "$.results[3].sourceLocators[2]",
+        "$.results[4].sourceLocators[1]",
+        "$.results[5].sourceLocators[2]",
+        "$.results[6].sourceLocators[1]",
+        "$.results[9].sourceLocators[0]",
+        "$.results[10].sourceLocators[0]",
+        "$.results[13].sourceLocators[0]",
+        "$.results[14].sourceLocators[1]",
+        "$.results[15].sourceLocators[0]",
+        "$.claims[4].sourceLocators[2]",
+        "$.claims[5].sourceLocators[1]",
+        "$.claims[6].sourceLocators[2]",
+        "$.claims[7].sourceLocators[1]",
+        "$.claims[10].sourceLocators[0]",
+        "$.claims[11].sourceLocators[0]",
+        "$.claims[14].sourceLocators[0]",
+        "$.claims[15].sourceLocators[1]",
+        "$.claims[16].sourceLocators[0]",
+        "$.inputs[6].sourceLocators[0]",
+        "$.inputs[7].sourceLocators[0]",
+        "$.inputs[8].sourceLocators[0]",
+        "$.inputs[9].sourceLocators[0]",
+        "$.inputs[15].sourceLocators[0]",
+        "$.inputs[16].sourceLocators[0]",
+        "$.inputs[17].sourceLocators[0]",
+        "$.inputs[18].sourceLocators[0]",
+        "$.inputs[19].sourceLocators[0]",
+        "$.inputs[25].sourceLocators[0]",
+        "$.inputs[26].sourceLocators[0]",
+        "$.inputs[27].sourceLocators[0]",
+        "$.inputs[28].sourceLocators[0]",
+        "$.inputs[29].sourceLocators[0]",
+        "$.inputs[30].sourceLocators[0]",
+        "$.inputs[31].sourceLocators[2]",
+        "$.inputs[32].sourceLocators[2]",
+        "$.inputs[33].sourceLocators[2]",
+        "$.inputs[34].sourceLocators[2]",
+        "$.inputs[35].sourceLocators[2]",
+        "$.inputs[36].sourceLocators[1]",
+        "$.inputs[37].sourceLocators[1]",
+        "$.inputs[38].sourceLocators[1]",
+        "$.inputs[39].sourceLocators[1]",
+        "$.inputs[40].sourceLocators[1]",
+        "$.inputs[41].sourceLocators[1]",
+        "$.answers[2].sourceLocators[0]",
+        "$.answers[4].sourceLocators[0]",
+        "$.answers[6].sourceLocators[0]",
+        "$.answers[7].sourceLocators[2]",
+        "$.answers[8].sourceLocators[1]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "CAL07-supplement-publisher-pdf",
+        "sourceSha256": "90b42356bc5a52e53542d5ae69a8cc5e80e9a8215141471c4e87bf17700059d4",
+        "unitId": "p2",
+        "kind": "pdf_page",
+        "locator": "2",
+        "figureTable": null
+      },
+      "quoteSha256": "2ede31d53d5186c9bf3ccfac8f200c49c7a985b7eb74d24c12f2aa33053a720e",
+      "quoteCharacters": 319,
+      "occurrences": 3,
+      "paths": [
+        "$.experiments[0].sourceLocators[3]",
+        "$.resultCoverage[32].sourceLocators[0]",
+        "$.sourceIntegrity[2].sourceLocators[3]"
+      ],
+      "status": "PASS",
+      "method": "Exact physical-page quote with layout-preserving extraction plus independent visual page inspection"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "S2",
+        "kind": "html_section",
+        "locator": "#S2",
+        "figureTable": null
+      },
+      "quoteSha256": "7dd7e116ce556160e086f9364e6bcb164aa216807701287a0c7b8ab32ccab823",
+      "quoteCharacters": 718,
+      "occurrences": 5,
+      "paths": [
+        "$.experiments[1].sourceLocators[0]",
+        "$.results[7].sourceLocators[0]",
+        "$.results[8].sourceLocators[0]",
+        "$.claims[8].sourceLocators[0]",
+        "$.claims[9].sourceLocators[0]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "S2",
+        "kind": "html_section",
+        "locator": "#S2",
+        "figureTable": null
+      },
+      "quoteSha256": "f1c3f6b1b301033b84e70783c09b0bec1886b9ace0db3ca5e2b1248f1dee1bd1",
+      "quoteCharacters": 780,
+      "occurrences": 8,
+      "paths": [
+        "$.experiments[1].sourceLocators[1]",
+        "$.experiments[2].sourceLocators[1]",
+        "$.results[7].sourceLocators[1]",
+        "$.results[9].sourceLocators[2]",
+        "$.results[10].sourceLocators[2]",
+        "$.claims[8].sourceLocators[1]",
+        "$.claims[10].sourceLocators[2]",
+        "$.claims[11].sourceLocators[2]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "CAL07-supplement-publisher-pdf",
+        "sourceSha256": "90b42356bc5a52e53542d5ae69a8cc5e80e9a8215141471c4e87bf17700059d4",
+        "unitId": "p4",
+        "kind": "pdf_page",
+        "locator": "4",
+        "figureTable": null
+      },
+      "quoteSha256": "f58dc38d3241e712966427ca3cad68382215ec774c06c64f7cb10d1e0442fa25",
+      "quoteCharacters": 1314,
+      "occurrences": 29,
+      "paths": [
+        "$.experiments[1].sourceLocators[2]",
+        "$.experiments[2].sourceLocators[2]",
+        "$.experiments[3].sourceLocators[0]",
+        "$.results[8].sourceLocators[2]",
+        "$.results[10].sourceLocators[5]",
+        "$.results[11].sourceLocators[1]",
+        "$.claims[9].sourceLocators[2]",
+        "$.claims[11].sourceLocators[5]",
+        "$.claims[12].sourceLocators[1]",
+        "$.resultCoverage[34].sourceLocators[0]",
+        "$.inputs[10].sourceLocators[5]",
+        "$.inputs[11].sourceLocators[5]",
+        "$.inputs[12].sourceLocators[5]",
+        "$.inputs[13].sourceLocators[5]",
+        "$.inputs[14].sourceLocators[5]",
+        "$.inputs[31].sourceLocators[6]",
+        "$.inputs[32].sourceLocators[6]",
+        "$.inputs[33].sourceLocators[6]",
+        "$.inputs[34].sourceLocators[6]",
+        "$.inputs[35].sourceLocators[6]",
+        "$.inputs[36].sourceLocators[9]",
+        "$.inputs[37].sourceLocators[9]",
+        "$.inputs[38].sourceLocators[9]",
+        "$.inputs[39].sourceLocators[9]",
+        "$.inputs[40].sourceLocators[9]",
+        "$.inputs[41].sourceLocators[9]",
+        "$.answers[3].sourceLocators[5]",
+        "$.answers[7].sourceLocators[6]",
+        "$.answers[8].sourceLocators[9]"
+      ],
+      "status": "PASS",
+      "method": "Exact physical-page quote with layout-preserving extraction plus independent visual page inspection"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "S2",
+        "kind": "html_section",
+        "locator": "#S2",
+        "figureTable": null
+      },
+      "quoteSha256": "23959102a362513967e0881a3671ee729e2a52bc3cf193b0ff63577fddafd47d",
+      "quoteCharacters": 1091,
+      "occurrences": 5,
+      "paths": [
+        "$.experiments[2].sourceLocators[0]",
+        "$.results[9].sourceLocators[1]",
+        "$.results[10].sourceLocators[1]",
+        "$.claims[10].sourceLocators[1]",
+        "$.claims[11].sourceLocators[1]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "CAL07-supplement-publisher-pdf",
+        "sourceSha256": "90b42356bc5a52e53542d5ae69a8cc5e80e9a8215141471c4e87bf17700059d4",
+        "unitId": "p9",
+        "kind": "pdf_page",
+        "locator": "9",
+        "figureTable": null
+      },
+      "quoteSha256": "2e0db8ad9c163abd44673c7a01fdc9ca0f032df1e859b93d3a6ce2a09db128dc",
+      "quoteCharacters": 2657,
+      "occurrences": 19,
+      "paths": [
+        "$.experiments[3].sourceLocators[1]",
+        "$.experiments[12].sourceLocators[2]",
+        "$.results[11].sourceLocators[2]",
+        "$.results[23].sourceLocators[4]",
+        "$.claims[12].sourceLocators[2]",
+        "$.claims[24].sourceLocators[4]",
+        "$.resultCoverage[39].sourceLocators[0]",
+        "$.inputs[6].sourceLocators[8]",
+        "$.inputs[7].sourceLocators[8]",
+        "$.inputs[8].sourceLocators[8]",
+        "$.inputs[9].sourceLocators[8]",
+        "$.inputs[50].sourceLocators[3]",
+        "$.inputs[51].sourceLocators[3]",
+        "$.inputs[52].sourceLocators[3]",
+        "$.inputs[53].sourceLocators[3]",
+        "$.inputs[54].sourceLocators[3]",
+        "$.answers[2].sourceLocators[8]",
+        "$.answers[11].sourceLocators[3]",
+        "$.sourceIntegrity[3].sourceLocators[2]"
+      ],
+      "status": "PASS",
+      "method": "Exact physical-page quote with layout-preserving extraction plus independent visual page inspection"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "S2",
+        "kind": "html_section",
+        "locator": "#S2",
+        "figureTable": null
+      },
+      "quoteSha256": "2377e76be7900bc5212497df1a98e67b678eccaec2e736ff9d4de6a16598d6f8",
+      "quoteCharacters": 1216,
+      "occurrences": 3,
+      "paths": [
+        "$.experiments[4].sourceLocators[0]",
+        "$.results[12].sourceLocators[0]",
+        "$.claims[13].sourceLocators[0]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "S2",
+        "kind": "html_section",
+        "locator": "#S2",
+        "figureTable": null
+      },
+      "quoteSha256": "fa24ecca47f825593af0bcb0eebd6d2625ddf8c837a6162c21c746fc715b29b7",
+      "quoteCharacters": 636,
+      "occurrences": 3,
+      "paths": [
+        "$.experiments[4].sourceLocators[1]",
+        "$.results[12].sourceLocators[1]",
+        "$.claims[13].sourceLocators[1]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "S2",
+        "kind": "html_section",
+        "locator": "#S2",
+        "figureTable": null
+      },
+      "quoteSha256": "7cdf209ed3f058fd69b243329716c4a959433002477de3590738274abdba5231",
+      "quoteCharacters": 1462,
+      "occurrences": 11,
+      "paths": [
+        "$.experiments[5].sourceLocators[0]",
+        "$.results[13].sourceLocators[1]",
+        "$.results[14].sourceLocators[0]",
+        "$.results[15].sourceLocators[1]",
+        "$.results[16].sourceLocators[0]",
+        "$.claims[14].sourceLocators[1]",
+        "$.claims[15].sourceLocators[0]",
+        "$.claims[16].sourceLocators[1]",
+        "$.claims[17].sourceLocators[0]",
+        "$.numericClaims[18].sourceLocators[0]",
+        "$.numericClaims[19].sourceLocators[0]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "S2",
+        "kind": "html_section",
+        "locator": "#S2",
+        "figureTable": null
+      },
+      "quoteSha256": "cb049ff2370e2d2172a2d330bfe0306efbda456ec194576fb5fd6c50bd47ab0d",
+      "quoteCharacters": 1754,
+      "occurrences": 31,
+      "paths": [
+        "$.experiments[5].sourceLocators[1]",
+        "$.experiments[6].sourceLocators[2]",
+        "$.results[0].sourceLocators[1]",
+        "$.results[13].sourceLocators[2]",
+        "$.results[14].sourceLocators[2]",
+        "$.results[15].sourceLocators[3]",
+        "$.results[16].sourceLocators[1]",
+        "$.claims[0].sourceLocators[1]",
+        "$.claims[14].sourceLocators[2]",
+        "$.claims[15].sourceLocators[2]",
+        "$.claims[16].sourceLocators[3]",
+        "$.claims[17].sourceLocators[1]",
+        "$.inputs[10].sourceLocators[3]",
+        "$.inputs[11].sourceLocators[3]",
+        "$.inputs[12].sourceLocators[3]",
+        "$.inputs[13].sourceLocators[3]",
+        "$.inputs[14].sourceLocators[3]",
+        "$.inputs[20].sourceLocators[1]",
+        "$.inputs[21].sourceLocators[1]",
+        "$.inputs[22].sourceLocators[1]",
+        "$.inputs[23].sourceLocators[1]",
+        "$.inputs[24].sourceLocators[1]",
+        "$.inputs[36].sourceLocators[7]",
+        "$.inputs[37].sourceLocators[7]",
+        "$.inputs[38].sourceLocators[7]",
+        "$.inputs[39].sourceLocators[7]",
+        "$.inputs[40].sourceLocators[7]",
+        "$.inputs[41].sourceLocators[7]",
+        "$.answers[3].sourceLocators[3]",
+        "$.answers[5].sourceLocators[1]",
+        "$.answers[8].sourceLocators[7]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "S6",
+        "kind": "html_section",
+        "locator": "#S6",
+        "figureTable": null
+      },
+      "quoteSha256": "e526e303fc6af9c566d7fd067fd51a8a344544ab0c10903231d3e00b773acd36",
+      "quoteCharacters": 660,
+      "occurrences": 7,
+      "paths": [
+        "$.experiments[6].sourceLocators[0]",
+        "$.results[0].sourceLocators[2]",
+        "$.inputs[6].sourceLocators[2]",
+        "$.inputs[7].sourceLocators[2]",
+        "$.inputs[8].sourceLocators[2]",
+        "$.inputs[9].sourceLocators[2]",
+        "$.answers[2].sourceLocators[2]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "S7",
+        "kind": "html_section",
+        "locator": "#S7",
+        "figureTable": null
+      },
+      "quoteSha256": "cb9e3fcf4f1d5de5435edd00cc58cef970a375817bbcc7ae977d36756f6ca6f6",
+      "quoteCharacters": 307,
+      "occurrences": 21,
+      "paths": [
+        "$.experiments[6].sourceLocators[1]",
+        "$.inputs[15].sourceLocators[2]",
+        "$.inputs[16].sourceLocators[2]",
+        "$.inputs[17].sourceLocators[2]",
+        "$.inputs[18].sourceLocators[2]",
+        "$.inputs[19].sourceLocators[2]",
+        "$.inputs[25].sourceLocators[1]",
+        "$.inputs[26].sourceLocators[1]",
+        "$.inputs[27].sourceLocators[1]",
+        "$.inputs[28].sourceLocators[1]",
+        "$.inputs[29].sourceLocators[1]",
+        "$.inputs[30].sourceLocators[1]",
+        "$.inputs[36].sourceLocators[3]",
+        "$.inputs[37].sourceLocators[3]",
+        "$.inputs[38].sourceLocators[3]",
+        "$.inputs[39].sourceLocators[3]",
+        "$.inputs[40].sourceLocators[3]",
+        "$.inputs[41].sourceLocators[3]",
+        "$.answers[4].sourceLocators[2]",
+        "$.answers[6].sourceLocators[1]",
+        "$.answers[8].sourceLocators[3]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "S5",
+        "kind": "html_section",
+        "locator": "#S5",
+        "figureTable": null
+      },
+      "quoteSha256": "e64e3cce43da1556f899f6a14f1d95961ace36af1640e11bc7be5f48f27462b6",
+      "quoteCharacters": 539,
+      "occurrences": 11,
+      "paths": [
+        "$.experiments[7].sourceLocators[0]",
+        "$.results[1].sourceLocators[1]",
+        "$.inputs[3].sourceLocators[1]",
+        "$.inputs[4].sourceLocators[1]",
+        "$.inputs[5].sourceLocators[1]",
+        "$.inputs[6].sourceLocators[1]",
+        "$.inputs[7].sourceLocators[1]",
+        "$.inputs[8].sourceLocators[1]",
+        "$.inputs[9].sourceLocators[1]",
+        "$.answers[1].sourceLocators[1]",
+        "$.answers[2].sourceLocators[1]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "S2",
+        "kind": "html_section",
+        "locator": "#S2",
+        "figureTable": null
+      },
+      "quoteSha256": "e365ab72e2da6b00ad1ae07d2585247d4e5c7fa955cc9bb3edeb2eb6d0c1fa09",
+      "quoteCharacters": 1565,
+      "occurrences": 27,
+      "paths": [
+        "$.experiments[7].sourceLocators[1]",
+        "$.results[1].sourceLocators[2]",
+        "$.results[17].sourceLocators[1]",
+        "$.results[18].sourceLocators[1]",
+        "$.results[19].sourceLocators[1]",
+        "$.claims[18].sourceLocators[1]",
+        "$.claims[19].sourceLocators[1]",
+        "$.claims[20].sourceLocators[1]",
+        "$.inputs[10].sourceLocators[4]",
+        "$.inputs[11].sourceLocators[4]",
+        "$.inputs[12].sourceLocators[4]",
+        "$.inputs[13].sourceLocators[4]",
+        "$.inputs[14].sourceLocators[4]",
+        "$.inputs[20].sourceLocators[2]",
+        "$.inputs[21].sourceLocators[2]",
+        "$.inputs[22].sourceLocators[2]",
+        "$.inputs[23].sourceLocators[2]",
+        "$.inputs[24].sourceLocators[2]",
+        "$.inputs[36].sourceLocators[8]",
+        "$.inputs[37].sourceLocators[8]",
+        "$.inputs[38].sourceLocators[8]",
+        "$.inputs[39].sourceLocators[8]",
+        "$.inputs[40].sourceLocators[8]",
+        "$.inputs[41].sourceLocators[8]",
+        "$.answers[3].sourceLocators[4]",
+        "$.answers[5].sourceLocators[2]",
+        "$.answers[8].sourceLocators[8]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "S2",
+        "kind": "html_section",
+        "locator": "#S2",
+        "figureTable": null
+      },
+      "quoteSha256": "190e58225b6a5229ca576d590b28d32138e1f2cf1ef295f1fc1913e6f0c02ec8",
+      "quoteCharacters": 1676,
+      "occurrences": 27,
+      "paths": [
+        "$.experiments[8].sourceLocators[0]",
+        "$.results[17].sourceLocators[0]",
+        "$.results[18].sourceLocators[0]",
+        "$.results[19].sourceLocators[0]",
+        "$.claims[1].sourceLocators[0]",
+        "$.claims[18].sourceLocators[0]",
+        "$.claims[19].sourceLocators[0]",
+        "$.claims[20].sourceLocators[0]",
+        "$.inputs[0].sourceLocators[2]",
+        "$.inputs[1].sourceLocators[2]",
+        "$.inputs[2].sourceLocators[2]",
+        "$.inputs[36].sourceLocators[0]",
+        "$.inputs[37].sourceLocators[0]",
+        "$.inputs[38].sourceLocators[0]",
+        "$.inputs[39].sourceLocators[0]",
+        "$.inputs[40].sourceLocators[0]",
+        "$.inputs[41].sourceLocators[0]",
+        "$.inputs[61].sourceLocators[1]",
+        "$.inputs[62].sourceLocators[1]",
+        "$.inputs[63].sourceLocators[1]",
+        "$.inputs[64].sourceLocators[0]",
+        "$.inputs[65].sourceLocators[0]",
+        "$.inputs[66].sourceLocators[0]",
+        "$.answers[0].sourceLocators[2]",
+        "$.answers[8].sourceLocators[0]",
+        "$.answers[13].sourceLocators[1]",
+        "$.answers[14].sourceLocators[0]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "S4",
+        "kind": "html_section",
+        "locator": "#S4",
+        "figureTable": null
+      },
+      "quoteSha256": "f28017358a4973f6ef240dd6734f2a6a0c30640ec06fa563619bacdfe8823367",
+      "quoteCharacters": 165,
+      "occurrences": 14,
+      "paths": [
+        "$.experiments[8].sourceLocators[1]",
+        "$.inputs[15].sourceLocators[1]",
+        "$.inputs[16].sourceLocators[1]",
+        "$.inputs[17].sourceLocators[1]",
+        "$.inputs[18].sourceLocators[1]",
+        "$.inputs[19].sourceLocators[1]",
+        "$.inputs[36].sourceLocators[2]",
+        "$.inputs[37].sourceLocators[2]",
+        "$.inputs[38].sourceLocators[2]",
+        "$.inputs[39].sourceLocators[2]",
+        "$.inputs[40].sourceLocators[2]",
+        "$.inputs[41].sourceLocators[2]",
+        "$.answers[4].sourceLocators[1]",
+        "$.answers[8].sourceLocators[2]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "CAL07-supplement-publisher-pdf",
+        "sourceSha256": "90b42356bc5a52e53542d5ae69a8cc5e80e9a8215141471c4e87bf17700059d4",
+        "unitId": "p6",
+        "kind": "pdf_page",
+        "locator": "6",
+        "figureTable": null
+      },
+      "quoteSha256": "2d4ca04b5b4914874a0afe62de03e51e3d4fa6fd745de6292c0fc3c57e04e80e",
+      "quoteCharacters": 236,
+      "occurrences": 2,
+      "paths": [
+        "$.experiments[8].sourceLocators[2]",
+        "$.resultCoverage[36].sourceLocators[0]"
+      ],
+      "status": "PASS",
+      "method": "Exact physical-page quote with layout-preserving extraction plus independent visual page inspection"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "CAL07-supplement-publisher-pdf",
+        "sourceSha256": "90b42356bc5a52e53542d5ae69a8cc5e80e9a8215141471c4e87bf17700059d4",
+        "unitId": "p7",
+        "kind": "pdf_page",
+        "locator": "7",
+        "figureTable": null
+      },
+      "quoteSha256": "bc51c887494a80f78a2bb00446f9504d2dc3df73fea84d02ce2c904839167620",
+      "quoteCharacters": 237,
+      "occurrences": 2,
+      "paths": [
+        "$.experiments[8].sourceLocators[3]",
+        "$.resultCoverage[37].sourceLocators[0]"
+      ],
+      "status": "PASS",
+      "method": "Exact physical-page quote with layout-preserving extraction plus independent visual page inspection"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "CAL07-supplement-publisher-pdf",
+        "sourceSha256": "90b42356bc5a52e53542d5ae69a8cc5e80e9a8215141471c4e87bf17700059d4",
+        "unitId": "p8",
+        "kind": "pdf_page",
+        "locator": "8",
+        "figureTable": null
+      },
+      "quoteSha256": "7f6b9c5fd61b37d067ea91d48990085134b8f29e6844b4b18b3a593692b3efc0",
+      "quoteCharacters": 318,
+      "occurrences": 13,
+      "paths": [
+        "$.experiments[8].sourceLocators[4]",
+        "$.resultCoverage[38].sourceLocators[0]",
+        "$.inputs[36].sourceLocators[11]",
+        "$.inputs[37].sourceLocators[11]",
+        "$.inputs[38].sourceLocators[11]",
+        "$.inputs[39].sourceLocators[11]",
+        "$.inputs[40].sourceLocators[11]",
+        "$.inputs[41].sourceLocators[11]",
+        "$.inputs[64].sourceLocators[5]",
+        "$.inputs[65].sourceLocators[5]",
+        "$.inputs[66].sourceLocators[5]",
+        "$.answers[8].sourceLocators[11]",
+        "$.answers[14].sourceLocators[5]"
+      ],
+      "status": "PASS",
+      "method": "Exact physical-page quote with layout-preserving extraction plus independent visual page inspection"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "S2",
+        "kind": "html_section",
+        "locator": "#S2",
+        "figureTable": null
+      },
+      "quoteSha256": "304ba09ec175d09be343f31349e43333bbfd439c90d897b1f3f214d6684bcead",
+      "quoteCharacters": 1080,
+      "occurrences": 13,
+      "paths": [
+        "$.experiments[9].sourceLocators[0]",
+        "$.results[20].sourceLocators[0]",
+        "$.claims[2].sourceLocators[0]",
+        "$.claims[21].sourceLocators[0]",
+        "$.inputs[0].sourceLocators[3]",
+        "$.inputs[1].sourceLocators[3]",
+        "$.inputs[2].sourceLocators[3]",
+        "$.inputs[42].sourceLocators[0]",
+        "$.inputs[43].sourceLocators[0]",
+        "$.inputs[44].sourceLocators[0]",
+        "$.inputs[45].sourceLocators[0]",
+        "$.answers[0].sourceLocators[3]",
+        "$.answers[9].sourceLocators[0]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "S9",
+        "kind": "html_section",
+        "locator": "#S9",
+        "figureTable": null
+      },
+      "quoteSha256": "bb909b033c36ed0eb9e04f8bcee84ddc1953c743a56a9e5159790a0e0b0cac42",
+      "quoteCharacters": 1533,
+      "occurrences": 53,
+      "paths": [
+        "$.experiments[9].sourceLocators[1]",
+        "$.results[20].sourceLocators[1]",
+        "$.claims[21].sourceLocators[1]",
+        "$.inputs[3].sourceLocators[2]",
+        "$.inputs[4].sourceLocators[2]",
+        "$.inputs[5].sourceLocators[2]",
+        "$.inputs[6].sourceLocators[3]",
+        "$.inputs[7].sourceLocators[3]",
+        "$.inputs[8].sourceLocators[3]",
+        "$.inputs[9].sourceLocators[3]",
+        "$.inputs[10].sourceLocators[1]",
+        "$.inputs[11].sourceLocators[1]",
+        "$.inputs[12].sourceLocators[1]",
+        "$.inputs[13].sourceLocators[1]",
+        "$.inputs[14].sourceLocators[1]",
+        "$.inputs[15].sourceLocators[3]",
+        "$.inputs[16].sourceLocators[3]",
+        "$.inputs[17].sourceLocators[3]",
+        "$.inputs[18].sourceLocators[3]",
+        "$.inputs[19].sourceLocators[3]",
+        "$.inputs[25].sourceLocators[2]",
+        "$.inputs[26].sourceLocators[2]",
+        "$.inputs[27].sourceLocators[2]",
+        "$.inputs[28].sourceLocators[2]",
+        "$.inputs[29].sourceLocators[2]",
+        "$.inputs[30].sourceLocators[2]",
+        "$.inputs[31].sourceLocators[3]",
+        "$.inputs[32].sourceLocators[3]",
+        "$.inputs[33].sourceLocators[3]",
+        "$.inputs[34].sourceLocators[3]",
+        "$.inputs[35].sourceLocators[3]",
+        "$.inputs[36].sourceLocators[4]",
+        "$.inputs[37].sourceLocators[4]",
+        "$.inputs[38].sourceLocators[4]",
+        "$.inputs[39].sourceLocators[4]",
+        "$.inputs[40].sourceLocators[4]",
+        "$.inputs[41].sourceLocators[4]",
+        "$.inputs[42].sourceLocators[3]",
+        "$.inputs[43].sourceLocators[3]",
+        "$.inputs[44].sourceLocators[3]",
+        "$.inputs[45].sourceLocators[3]",
+        "$.inputs[64].sourceLocators[3]",
+        "$.inputs[65].sourceLocators[3]",
+        "$.inputs[66].sourceLocators[3]",
+        "$.answers[1].sourceLocators[2]",
+        "$.answers[2].sourceLocators[3]",
+        "$.answers[3].sourceLocators[1]",
+        "$.answers[4].sourceLocators[3]",
+        "$.answers[6].sourceLocators[2]",
+        "$.answers[7].sourceLocators[3]",
+        "$.answers[8].sourceLocators[4]",
+        "$.answers[9].sourceLocators[3]",
+        "$.answers[14].sourceLocators[3]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "S2",
+        "kind": "html_section",
+        "locator": "#S2",
+        "figureTable": null
+      },
+      "quoteSha256": "9389898691cd8019659fd5d9465e32c388b2bfd7a270fcefdbb6d14014db500b",
+      "quoteCharacters": 1553,
+      "occurrences": 34,
+      "paths": [
+        "$.experiments[9].sourceLocators[2]",
+        "$.experiments[11].sourceLocators[1]",
+        "$.results[20].sourceLocators[2]",
+        "$.results[21].sourceLocators[3]",
+        "$.results[22].sourceLocators[2]",
+        "$.results[23].sourceLocators[2]",
+        "$.claims[21].sourceLocators[2]",
+        "$.claims[22].sourceLocators[3]",
+        "$.claims[23].sourceLocators[2]",
+        "$.claims[24].sourceLocators[2]",
+        "$.inputs[3].sourceLocators[6]",
+        "$.inputs[4].sourceLocators[6]",
+        "$.inputs[5].sourceLocators[6]",
+        "$.inputs[20].sourceLocators[3]",
+        "$.inputs[21].sourceLocators[3]",
+        "$.inputs[22].sourceLocators[3]",
+        "$.inputs[23].sourceLocators[3]",
+        "$.inputs[24].sourceLocators[3]",
+        "$.inputs[25].sourceLocators[5]",
+        "$.inputs[26].sourceLocators[5]",
+        "$.inputs[27].sourceLocators[5]",
+        "$.inputs[28].sourceLocators[5]",
+        "$.inputs[29].sourceLocators[5]",
+        "$.inputs[30].sourceLocators[5]",
+        "$.answers[1].sourceLocators[6]",
+        "$.answers[5].sourceLocators[3]",
+        "$.answers[6].sourceLocators[5]",
+        "$.numericClaims[32].sourceLocators[0]",
+        "$.numericClaims[33].sourceLocators[0]",
+        "$.numericClaims[34].sourceLocators[0]",
+        "$.numericClaims[35].sourceLocators[0]",
+        "$.numericClaims[36].sourceLocators[0]",
+        "$.numericClaims[40].sourceLocators[0]",
+        "$.numericClaims[41].sourceLocators[0]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "S2",
+        "kind": "html_section",
+        "locator": "#S2",
+        "figureTable": null
+      },
+      "quoteSha256": "0ca9b978f432fcc847e28692e9e4590fd4e15815f967abe938751dc6f3b1fad8",
+      "quoteCharacters": 1132,
+      "occurrences": 14,
+      "paths": [
+        "$.experiments[10].sourceLocators[0]",
+        "$.results[21].sourceLocators[0]",
+        "$.results[22].sourceLocators[0]",
+        "$.claims[22].sourceLocators[0]",
+        "$.claims[23].sourceLocators[0]",
+        "$.inputs[20].sourceLocators[5]",
+        "$.inputs[21].sourceLocators[5]",
+        "$.inputs[22].sourceLocators[5]",
+        "$.inputs[23].sourceLocators[5]",
+        "$.inputs[24].sourceLocators[5]",
+        "$.answers[5].sourceLocators[5]",
+        "$.numericClaims[37].sourceLocators[0]",
+        "$.numericClaims[38].sourceLocators[0]",
+        "$.numericClaims[39].sourceLocators[0]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "S14",
+        "kind": "html_section",
+        "locator": "#S14",
+        "figureTable": null
+      },
+      "quoteSha256": "8d654f4556c5d02a72092815b536ea6f9f4e038688cffd73f0adfdb017e2a097",
+      "quoteCharacters": 217,
+      "occurrences": 3,
+      "paths": [
+        "$.experiments[10].sourceLocators[1]",
+        "$.results[21].sourceLocators[1]",
+        "$.claims[22].sourceLocators[1]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "S14",
+        "kind": "html_section",
+        "locator": "#S14",
+        "figureTable": null
+      },
+      "quoteSha256": "517743ced0084c237fad049984cf97564118749e6651096f76fa834255ea8929",
+      "quoteCharacters": 610,
+      "occurrences": 9,
+      "paths": [
+        "$.experiments[10].sourceLocators[2]",
+        "$.results[21].sourceLocators[2]",
+        "$.claims[22].sourceLocators[2]",
+        "$.inputs[15].sourceLocators[6]",
+        "$.inputs[16].sourceLocators[6]",
+        "$.inputs[17].sourceLocators[6]",
+        "$.inputs[18].sourceLocators[6]",
+        "$.inputs[19].sourceLocators[6]",
+        "$.answers[4].sourceLocators[6]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "S14",
+        "kind": "html_section",
+        "locator": "#S14",
+        "figureTable": null
+      },
+      "quoteSha256": "0167900824de7fc123b7e71b7062ea1559436d9be3e9db302e3a1285cab859cb",
+      "quoteCharacters": 696,
+      "occurrences": 19,
+      "paths": [
+        "$.experiments[11].sourceLocators[0]",
+        "$.results[22].sourceLocators[1]",
+        "$.claims[23].sourceLocators[1]",
+        "$.inputs[3].sourceLocators[5]",
+        "$.inputs[4].sourceLocators[5]",
+        "$.inputs[5].sourceLocators[5]",
+        "$.inputs[6].sourceLocators[7]",
+        "$.inputs[7].sourceLocators[7]",
+        "$.inputs[8].sourceLocators[7]",
+        "$.inputs[9].sourceLocators[7]",
+        "$.inputs[25].sourceLocators[4]",
+        "$.inputs[26].sourceLocators[4]",
+        "$.inputs[27].sourceLocators[4]",
+        "$.inputs[28].sourceLocators[4]",
+        "$.inputs[29].sourceLocators[4]",
+        "$.inputs[30].sourceLocators[4]",
+        "$.answers[1].sourceLocators[5]",
+        "$.answers[2].sourceLocators[7]",
+        "$.answers[6].sourceLocators[4]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "S2",
+        "kind": "html_section",
+        "locator": "#S2",
+        "figureTable": null
+      },
+      "quoteSha256": "d1013ab61bbf95c92e60352edc0057d54ae0459238cc1c6f3f78da0a28528d77",
+      "quoteCharacters": 535,
+      "occurrences": 8,
+      "paths": [
+        "$.experiments[12].sourceLocators[0]",
+        "$.results[23].sourceLocators[0]",
+        "$.claims[24].sourceLocators[0]",
+        "$.inputs[46].sourceLocators[0]",
+        "$.inputs[47].sourceLocators[0]",
+        "$.inputs[48].sourceLocators[0]",
+        "$.inputs[49].sourceLocators[0]",
+        "$.answers[10].sourceLocators[0]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "S10",
+        "kind": "html_section",
+        "locator": "#S10",
+        "figureTable": null
+      },
+      "quoteSha256": "59519ec57438d01c88a3675085f5294f0257b55588ff26820cf9d12651e13867",
+      "quoteCharacters": 914,
+      "occurrences": 13,
+      "paths": [
+        "$.experiments[12].sourceLocators[1]",
+        "$.results[23].sourceLocators[1]",
+        "$.claims[24].sourceLocators[1]",
+        "$.inputs[6].sourceLocators[4]",
+        "$.inputs[7].sourceLocators[4]",
+        "$.inputs[8].sourceLocators[4]",
+        "$.inputs[9].sourceLocators[4]",
+        "$.inputs[46].sourceLocators[1]",
+        "$.inputs[47].sourceLocators[1]",
+        "$.inputs[48].sourceLocators[1]",
+        "$.inputs[49].sourceLocators[1]",
+        "$.answers[2].sourceLocators[4]",
+        "$.answers[10].sourceLocators[1]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "CAL07-supplement-publisher-pdf",
+        "sourceSha256": "90b42356bc5a52e53542d5ae69a8cc5e80e9a8215141471c4e87bf17700059d4",
+        "unitId": "p10",
+        "kind": "pdf_page",
+        "locator": "10",
+        "figureTable": null
+      },
+      "quoteSha256": "d75fbcd99beef8233ebd8e2f417dc90b409bd6663e6a6ee4701656f1ec71b9cd",
+      "quoteCharacters": 1392,
+      "occurrences": 18,
+      "paths": [
+        "$.experiments[12].sourceLocators[3]",
+        "$.results[23].sourceLocators[5]",
+        "$.claims[24].sourceLocators[5]",
+        "$.resultCoverage[40].sourceLocators[0]",
+        "$.inputs[15].sourceLocators[7]",
+        "$.inputs[16].sourceLocators[7]",
+        "$.inputs[17].sourceLocators[7]",
+        "$.inputs[18].sourceLocators[7]",
+        "$.inputs[19].sourceLocators[7]",
+        "$.inputs[36].sourceLocators[12]",
+        "$.inputs[37].sourceLocators[12]",
+        "$.inputs[38].sourceLocators[12]",
+        "$.inputs[39].sourceLocators[12]",
+        "$.inputs[40].sourceLocators[12]",
+        "$.inputs[41].sourceLocators[12]",
+        "$.answers[4].sourceLocators[7]",
+        "$.answers[8].sourceLocators[12]",
+        "$.sourceIntegrity[2].sourceLocators[4]"
+      ],
+      "status": "PASS",
+      "method": "Exact physical-page quote with layout-preserving extraction plus independent visual page inspection"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "S11",
+        "kind": "html_section",
+        "locator": "#S11",
+        "figureTable": null
+      },
+      "quoteSha256": "111454e6588b26350a80f28ac2974f406f7ea942b256f351d3567a58e1f47ec9",
+      "quoteCharacters": 513,
+      "occurrences": 10,
+      "paths": [
+        "$.experiments[13].sourceLocators[0]",
+        "$.inputs[3].sourceLocators[3]",
+        "$.inputs[4].sourceLocators[3]",
+        "$.inputs[5].sourceLocators[3]",
+        "$.inputs[6].sourceLocators[5]",
+        "$.inputs[7].sourceLocators[5]",
+        "$.inputs[8].sourceLocators[5]",
+        "$.inputs[9].sourceLocators[5]",
+        "$.answers[1].sourceLocators[3]",
+        "$.answers[2].sourceLocators[5]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "S12",
+        "kind": "html_section",
+        "locator": "#S12",
+        "figureTable": null
+      },
+      "quoteSha256": "f3cc877dd9f3e9989992a753de347d41190c13f5c55777290300de25217a45eb",
+      "quoteCharacters": 802,
+      "occurrences": 55,
+      "paths": [
+        "$.experiments[13].sourceLocators[1]",
+        "$.results[2].sourceLocators[1]",
+        "$.claims[3].sourceLocators[1]",
+        "$.inputs[3].sourceLocators[4]",
+        "$.inputs[4].sourceLocators[4]",
+        "$.inputs[5].sourceLocators[4]",
+        "$.inputs[6].sourceLocators[6]",
+        "$.inputs[7].sourceLocators[6]",
+        "$.inputs[8].sourceLocators[6]",
+        "$.inputs[9].sourceLocators[6]",
+        "$.inputs[10].sourceLocators[2]",
+        "$.inputs[11].sourceLocators[2]",
+        "$.inputs[12].sourceLocators[2]",
+        "$.inputs[13].sourceLocators[2]",
+        "$.inputs[14].sourceLocators[2]",
+        "$.inputs[15].sourceLocators[4]",
+        "$.inputs[16].sourceLocators[4]",
+        "$.inputs[17].sourceLocators[4]",
+        "$.inputs[18].sourceLocators[4]",
+        "$.inputs[19].sourceLocators[4]",
+        "$.inputs[25].sourceLocators[3]",
+        "$.inputs[26].sourceLocators[3]",
+        "$.inputs[27].sourceLocators[3]",
+        "$.inputs[28].sourceLocators[3]",
+        "$.inputs[29].sourceLocators[3]",
+        "$.inputs[30].sourceLocators[3]",
+        "$.inputs[31].sourceLocators[4]",
+        "$.inputs[32].sourceLocators[4]",
+        "$.inputs[33].sourceLocators[4]",
+        "$.inputs[34].sourceLocators[4]",
+        "$.inputs[35].sourceLocators[4]",
+        "$.inputs[36].sourceLocators[5]",
+        "$.inputs[37].sourceLocators[5]",
+        "$.inputs[38].sourceLocators[5]",
+        "$.inputs[39].sourceLocators[5]",
+        "$.inputs[40].sourceLocators[5]",
+        "$.inputs[41].sourceLocators[5]",
+        "$.inputs[42].sourceLocators[4]",
+        "$.inputs[43].sourceLocators[4]",
+        "$.inputs[44].sourceLocators[4]",
+        "$.inputs[45].sourceLocators[4]",
+        "$.inputs[64].sourceLocators[4]",
+        "$.inputs[65].sourceLocators[4]",
+        "$.inputs[66].sourceLocators[4]",
+        "$.answers[1].sourceLocators[4]",
+        "$.answers[2].sourceLocators[6]",
+        "$.answers[3].sourceLocators[2]",
+        "$.answers[4].sourceLocators[4]",
+        "$.answers[6].sourceLocators[3]",
+        "$.answers[7].sourceLocators[4]",
+        "$.answers[8].sourceLocators[5]",
+        "$.answers[9].sourceLocators[4]",
+        "$.answers[14].sourceLocators[4]",
+        "$.numericClaims[10].sourceLocators[0]",
+        "$.numericClaims[11].sourceLocators[0]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "S2",
+        "kind": "html_section",
+        "locator": "#S2",
+        "figureTable": null
+      },
+      "quoteSha256": "1a8ccd14205434b36140f5de995f68a59b77db7123d36128222cb53c67ef95ac",
+      "quoteCharacters": 1563,
+      "occurrences": 25,
+      "paths": [
+        "$.experiments[13].sourceLocators[2]",
+        "$.experiments[14].sourceLocators[1]",
+        "$.results[2].sourceLocators[2]",
+        "$.results[24].sourceLocators[2]",
+        "$.claims[25].sourceLocators[2]",
+        "$.inputs[3].sourceLocators[7]",
+        "$.inputs[4].sourceLocators[7]",
+        "$.inputs[5].sourceLocators[7]",
+        "$.inputs[20].sourceLocators[4]",
+        "$.inputs[21].sourceLocators[4]",
+        "$.inputs[22].sourceLocators[4]",
+        "$.inputs[23].sourceLocators[4]",
+        "$.inputs[24].sourceLocators[4]",
+        "$.inputs[25].sourceLocators[6]",
+        "$.inputs[26].sourceLocators[6]",
+        "$.inputs[27].sourceLocators[6]",
+        "$.inputs[28].sourceLocators[6]",
+        "$.inputs[29].sourceLocators[6]",
+        "$.inputs[30].sourceLocators[6]",
+        "$.answers[1].sourceLocators[7]",
+        "$.answers[5].sourceLocators[4]",
+        "$.answers[6].sourceLocators[6]",
+        "$.numericClaims[7].sourceLocators[0]",
+        "$.numericClaims[8].sourceLocators[0]",
+        "$.numericClaims[9].sourceLocators[0]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "S13",
+        "kind": "html_section",
+        "locator": "#S13",
+        "figureTable": null
+      },
+      "quoteSha256": "9a1aba9a987f399411b2113ac321bf88c1386581e8008c84ab9675dc05fd847f",
+      "quoteCharacters": 512,
+      "occurrences": 21,
+      "paths": [
+        "$.experiments[14].sourceLocators[0]",
+        "$.results[24].sourceLocators[1]",
+        "$.claims[25].sourceLocators[1]",
+        "$.inputs[15].sourceLocators[5]",
+        "$.inputs[16].sourceLocators[5]",
+        "$.inputs[17].sourceLocators[5]",
+        "$.inputs[18].sourceLocators[5]",
+        "$.inputs[19].sourceLocators[5]",
+        "$.inputs[36].sourceLocators[6]",
+        "$.inputs[37].sourceLocators[6]",
+        "$.inputs[38].sourceLocators[6]",
+        "$.inputs[39].sourceLocators[6]",
+        "$.inputs[40].sourceLocators[6]",
+        "$.inputs[41].sourceLocators[6]",
+        "$.inputs[46].sourceLocators[2]",
+        "$.inputs[47].sourceLocators[2]",
+        "$.inputs[48].sourceLocators[2]",
+        "$.inputs[49].sourceLocators[2]",
+        "$.answers[4].sourceLocators[5]",
+        "$.answers[8].sourceLocators[6]",
+        "$.answers[10].sourceLocators[2]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "S2",
+        "kind": "html_section",
+        "locator": "#S2",
+        "figureTable": null
+      },
+      "quoteSha256": "8c19dc328c877079966f2d545a4b63f5672866a50b77e82a89597da90979c415",
+      "quoteCharacters": 1028,
+      "occurrences": 6,
+      "paths": [
+        "$.results[0].sourceLocators[0]",
+        "$.claims[0].sourceLocators[0]",
+        "$.inputs[61].sourceLocators[0]",
+        "$.inputs[62].sourceLocators[0]",
+        "$.inputs[63].sourceLocators[0]",
+        "$.answers[13].sourceLocators[0]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "CAL07-nihms199097f4-jpg",
+        "sourceSha256": "b8940236894b907be85c293f6011a739abec29ac26b5549bfb29522765ca74ba",
+        "unitId": "image",
+        "kind": "image",
+        "locator": "nihms199097f4.jpg",
+        "figureTable": "Figure 4"
+      },
+      "quoteSha256": "d325cb27821deb0fd67390fd5fd96d54135cae08cdbacf6a6c85bb2a2739b321",
+      "quoteCharacters": 21,
+      "occurrences": 13,
+      "paths": [
+        "$.results[0].sourceLocators[3]",
+        "$.inputs[20].sourceLocators[6]",
+        "$.inputs[21].sourceLocators[6]",
+        "$.inputs[22].sourceLocators[6]",
+        "$.inputs[23].sourceLocators[6]",
+        "$.inputs[24].sourceLocators[6]",
+        "$.answers[5].sourceLocators[6]",
+        "$.numericClaims[0].sourceLocators[0]",
+        "$.numericClaims[1].sourceLocators[0]",
+        "$.numericClaims[2].sourceLocators[0]",
+        "$.numericClaims[3].sourceLocators[0]",
+        "$.numericClaims[4].sourceLocators[0]",
+        "$.numericClaims[5].sourceLocators[0]"
+      ],
+      "status": "PASS",
+      "method": "Independently visually checked literal figure label/count; no graph digitization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "abstract1",
+        "kind": "html_section",
+        "locator": "#abstract1",
+        "figureTable": null
+      },
+      "quoteSha256": "794198154fdf41c4378f5a88aec00c45eafaeea3c3afa134f7d9bde19e0594f4",
+      "quoteCharacters": 775,
+      "occurrences": 5,
+      "paths": [
+        "$.results[0].sourceLocators[4]",
+        "$.results[3].sourceLocators[5]",
+        "$.results[20].sourceLocators[4]",
+        "$.claims[4].sourceLocators[5]",
+        "$.claims[21].sourceLocators[4]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "S2",
+        "kind": "html_section",
+        "locator": "#S2",
+        "figureTable": null
+      },
+      "quoteSha256": "63d54993ca8bd2190a453350d5b0d249c0b7e44c90154223274d63ca0bfc8260",
+      "quoteCharacters": 1007,
+      "occurrences": 2,
+      "paths": [
+        "$.results[1].sourceLocators[0]",
+        "$.numericClaims[6].sourceLocators[0]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "CAL07-nihms199097f5-jpg",
+        "sourceSha256": "51dcc042138ba5c7d1145b8a8717d17bf6df2ebb6ffca2988e854342a58ea06b",
+        "unitId": "image",
+        "kind": "image",
+        "locator": "nihms199097f5.jpg",
+        "figureTable": "Figure 5"
+      },
+      "quoteSha256": "0b27e785a822c6caa55d304963b7948f7a50d8cb49b286a313a5c8c7fed7688d",
+      "quoteCharacters": 6,
+      "occurrences": 2,
+      "paths": [
+        "$.results[1].sourceLocators[3]",
+        "$.resultCoverage[28].sourceLocators[0]"
+      ],
+      "status": "PASS",
+      "method": "Independently visually checked literal figure label/count; no graph digitization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "S2",
+        "kind": "html_section",
+        "locator": "#S2",
+        "figureTable": null
+      },
+      "quoteSha256": "a9516d8c5f14cd1e9b922ecdbd364c1c881aa4fb102d47afa4cd8d64197af062",
+      "quoteCharacters": 1164,
+      "occurrences": 9,
+      "paths": [
+        "$.results[2].sourceLocators[0]",
+        "$.results[24].sourceLocators[0]",
+        "$.claims[2].sourceLocators[1]",
+        "$.claims[3].sourceLocators[0]",
+        "$.claims[25].sourceLocators[0]",
+        "$.inputs[61].sourceLocators[2]",
+        "$.inputs[62].sourceLocators[2]",
+        "$.inputs[63].sourceLocators[2]",
+        "$.answers[13].sourceLocators[2]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "CAL07-nihms199097f7-jpg",
+        "sourceSha256": "a1430c5543a493cba24d00ec31fade558a494d258de7132eadac80ccb503d127",
+        "unitId": "image",
+        "kind": "image",
+        "locator": "nihms199097f7.jpg",
+        "figureTable": "Figure 7"
+      },
+      "quoteSha256": "f36067ec96d3db58d234e35670a0e6a4756b7dba124d3a898637afd1510e9efe",
+      "quoteCharacters": 30,
+      "occurrences": 1,
+      "paths": [
+        "$.results[2].sourceLocators[3]"
+      ],
+      "status": "PASS",
+      "method": "Independently visually checked literal figure label/count; no graph digitization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "S2",
+        "kind": "html_section",
+        "locator": "#S2",
+        "figureTable": null
+      },
+      "quoteSha256": "02374a47daef574e0bc8062403a472d21fcac8fe158e685e668309051cdbdd63",
+      "quoteCharacters": 832,
+      "occurrences": 11,
+      "paths": [
+        "$.results[3].sourceLocators[1]",
+        "$.results[6].sourceLocators[0]",
+        "$.claims[4].sourceLocators[1]",
+        "$.claims[7].sourceLocators[0]",
+        "$.inputs[31].sourceLocators[0]",
+        "$.inputs[32].sourceLocators[0]",
+        "$.inputs[33].sourceLocators[0]",
+        "$.inputs[34].sourceLocators[0]",
+        "$.inputs[35].sourceLocators[0]",
+        "$.answers[7].sourceLocators[0]",
+        "$.numericClaims[12].sourceLocators[0]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "S1",
+        "kind": "html_section",
+        "locator": "#S1",
+        "figureTable": null
+      },
+      "quoteSha256": "bca6cdffc4b0299752816195eb251e6e93203b9f2a00f908d1efd92365f9dacb",
+      "quoteCharacters": 1694,
+      "occurrences": 13,
+      "paths": [
+        "$.results[3].sourceLocators[3]",
+        "$.results[4].sourceLocators[4]",
+        "$.results[5].sourceLocators[1]",
+        "$.claims[4].sourceLocators[3]",
+        "$.claims[5].sourceLocators[4]",
+        "$.claims[6].sourceLocators[1]",
+        "$.inputs[20].sourceLocators[0]",
+        "$.inputs[21].sourceLocators[0]",
+        "$.inputs[22].sourceLocators[0]",
+        "$.inputs[23].sourceLocators[0]",
+        "$.inputs[24].sourceLocators[0]",
+        "$.answers[5].sourceLocators[0]",
+        "$.numericClaims[17].sourceLocators[0]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "CAL07-nihms199097f1-jpg",
+        "sourceSha256": "373fff712409d379e79e7f4d0ba5546296c6db4a1138a3302b6696882b6bf166",
+        "unitId": "image",
+        "kind": "image",
+        "locator": "nihms199097f1.jpg",
+        "figureTable": "Figure 1"
+      },
+      "quoteSha256": "4cd7571056dae659033ca80d7d83226adc290518f1c73fe842c42e404ff183bb",
+      "quoteCharacters": 19,
+      "occurrences": 3,
+      "paths": [
+        "$.results[3].sourceLocators[4]",
+        "$.claims[4].sourceLocators[4]",
+        "$.resultCoverage[24].sourceLocators[0]"
+      ],
+      "status": "PASS",
+      "method": "Independently visually checked literal figure label/count; no graph digitization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "S2",
+        "kind": "html_section",
+        "locator": "#S2",
+        "figureTable": null
+      },
+      "quoteSha256": "a00592eb50518c38ce0088f55025540a4fe7adf0ee750bd4b49481b36f7a6929",
+      "quoteCharacters": 1488,
+      "occurrences": 4,
+      "paths": [
+        "$.results[4].sourceLocators[0]",
+        "$.results[5].sourceLocators[0]",
+        "$.claims[5].sourceLocators[0]",
+        "$.claims[6].sourceLocators[0]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "CAL07-nihms199097f1-jpg",
+        "sourceSha256": "373fff712409d379e79e7f4d0ba5546296c6db4a1138a3302b6696882b6bf166",
+        "unitId": "image",
+        "kind": "image",
+        "locator": "nihms199097f1.jpg",
+        "figureTable": "Figure 1"
+      },
+      "quoteSha256": "83c39786d0889f389b1350b54b940c49f1c24a7a9df125a26fb4e67579944f2d",
+      "quoteCharacters": 11,
+      "occurrences": 2,
+      "paths": [
+        "$.results[4].sourceLocators[2]",
+        "$.claims[5].sourceLocators[2]"
+      ],
+      "status": "PASS",
+      "method": "Independently visually checked literal figure label/count; no graph digitization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "CAL07-supplement-publisher-pdf",
+        "sourceSha256": "90b42356bc5a52e53542d5ae69a8cc5e80e9a8215141471c4e87bf17700059d4",
+        "unitId": "p5",
+        "kind": "pdf_page",
+        "locator": "5",
+        "figureTable": "Table S1"
+      },
+      "quoteSha256": "5e03907def822428851015d4f4a93f7b9809dfd96b29db9134d5611444549f49",
+      "quoteCharacters": 182,
+      "occurrences": 12,
+      "paths": [
+        "$.results[4].sourceLocators[3]",
+        "$.claims[5].sourceLocators[3]",
+        "$.inputs[20].sourceLocators[7]",
+        "$.inputs[21].sourceLocators[7]",
+        "$.inputs[22].sourceLocators[7]",
+        "$.inputs[23].sourceLocators[7]",
+        "$.inputs[24].sourceLocators[7]",
+        "$.answers[5].sourceLocators[7]",
+        "$.numericClaims[13].sourceLocators[0]",
+        "$.numericClaims[14].sourceLocators[0]",
+        "$.numericClaims[15].sourceLocators[0]",
+        "$.numericClaims[16].sourceLocators[0]"
+      ],
+      "status": "PASS",
+      "method": "Exact physical-page quote with layout-preserving extraction plus independent visual page inspection"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "CAL07-nihms199097f1-jpg",
+        "sourceSha256": "373fff712409d379e79e7f4d0ba5546296c6db4a1138a3302b6696882b6bf166",
+        "unitId": "image",
+        "kind": "image",
+        "locator": "nihms199097f1.jpg",
+        "figureTable": "Figure 1"
+      },
+      "quoteSha256": "dfbe78c78c511c046972b669b19d7aa3fcd32add3e78c4c52c2f7a5185ff45af",
+      "quoteCharacters": 12,
+      "occurrences": 2,
+      "paths": [
+        "$.results[5].sourceLocators[3]",
+        "$.claims[6].sourceLocators[3]"
+      ],
+      "status": "PASS",
+      "method": "Independently visually checked literal figure label/count; no graph digitization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "CAL07-supplement-publisher-pdf",
+        "sourceSha256": "90b42356bc5a52e53542d5ae69a8cc5e80e9a8215141471c4e87bf17700059d4",
+        "unitId": "p2",
+        "kind": "pdf_page",
+        "locator": "2",
+        "figureTable": "Figure S1"
+      },
+      "quoteSha256": "2ede31d53d5186c9bf3ccfac8f200c49c7a985b7eb74d24c12f2aa33053a720e",
+      "quoteCharacters": 319,
+      "occurrences": 2,
+      "paths": [
+        "$.results[6].sourceLocators[2]",
+        "$.claims[7].sourceLocators[2]"
+      ],
+      "status": "PASS",
+      "method": "Exact physical-page quote with layout-preserving extraction plus independent visual page inspection"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "CAL07-nihms199097f2-jpg",
+        "sourceSha256": "e23bbf5ad4df85fdbb7499fa340d6448704cef67a862b5cf3e800c6e49c11815",
+        "unitId": "image",
+        "kind": "image",
+        "locator": "nihms199097f2.jpg",
+        "figureTable": "Figure 2"
+      },
+      "quoteSha256": "ddcd755e810a7798a6be619e1ed67444f534fb7a651e141499e7621618a87d68",
+      "quoteCharacters": 10,
+      "occurrences": 2,
+      "paths": [
+        "$.results[7].sourceLocators[2]",
+        "$.claims[8].sourceLocators[2]"
+      ],
+      "status": "PASS",
+      "method": "Independently visually checked literal figure label/count; no graph digitization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "CAL07-supplement-publisher-pdf",
+        "sourceSha256": "90b42356bc5a52e53542d5ae69a8cc5e80e9a8215141471c4e87bf17700059d4",
+        "unitId": "p3",
+        "kind": "pdf_page",
+        "locator": "3",
+        "figureTable": "Figure S2A-B"
+      },
+      "quoteSha256": "c458f5e2b27ffad72579af3bc3690bda537c5dbafac44d2759b2efc4f2ec4c24",
+      "quoteCharacters": 9,
+      "occurrences": 2,
+      "paths": [
+        "$.results[8].sourceLocators[1]",
+        "$.claims[9].sourceLocators[1]"
+      ],
+      "status": "PASS",
+      "method": "Exact physical-page quote with layout-preserving extraction plus independent visual page inspection"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "CAL07-nihms199097f2-jpg",
+        "sourceSha256": "e23bbf5ad4df85fdbb7499fa340d6448704cef67a862b5cf3e800c6e49c11815",
+        "unitId": "image",
+        "kind": "image",
+        "locator": "nihms199097f2.jpg",
+        "figureTable": "Figure 2"
+      },
+      "quoteSha256": "7ae01daf5fecf60b291b09b1d95829cbe9b882baa100a38d490d580b4fcd2db8",
+      "quoteCharacters": 15,
+      "occurrences": 2,
+      "paths": [
+        "$.results[9].sourceLocators[3]",
+        "$.claims[10].sourceLocators[3]"
+      ],
+      "status": "PASS",
+      "method": "Independently visually checked literal figure label/count; no graph digitization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "CAL07-nihms199097f2-jpg",
+        "sourceSha256": "e23bbf5ad4df85fdbb7499fa340d6448704cef67a862b5cf3e800c6e49c11815",
+        "unitId": "image",
+        "kind": "image",
+        "locator": "nihms199097f2.jpg",
+        "figureTable": "Figure 2"
+      },
+      "quoteSha256": "05ec0adb131f88691ad2b7850b1ffe6c777afc235088e9d5ab453af041a9f01d",
+      "quoteCharacters": 11,
+      "occurrences": 2,
+      "paths": [
+        "$.results[10].sourceLocators[3]",
+        "$.claims[11].sourceLocators[3]"
+      ],
+      "status": "PASS",
+      "method": "Independently visually checked literal figure label/count; no graph digitization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "CAL07-supplement-publisher-pdf",
+        "sourceSha256": "90b42356bc5a52e53542d5ae69a8cc5e80e9a8215141471c4e87bf17700059d4",
+        "unitId": "p3",
+        "kind": "pdf_page",
+        "locator": "3",
+        "figureTable": "Figure S2F-G"
+      },
+      "quoteSha256": "c458f5e2b27ffad72579af3bc3690bda537c5dbafac44d2759b2efc4f2ec4c24",
+      "quoteCharacters": 9,
+      "occurrences": 2,
+      "paths": [
+        "$.results[10].sourceLocators[4]",
+        "$.claims[11].sourceLocators[4]"
+      ],
+      "status": "PASS",
+      "method": "Exact physical-page quote with layout-preserving extraction plus independent visual page inspection"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "CAL07-supplement-publisher-pdf",
+        "sourceSha256": "90b42356bc5a52e53542d5ae69a8cc5e80e9a8215141471c4e87bf17700059d4",
+        "unitId": "p3",
+        "kind": "pdf_page",
+        "locator": "3",
+        "figureTable": "Figure S2C-E"
+      },
+      "quoteSha256": "c458f5e2b27ffad72579af3bc3690bda537c5dbafac44d2759b2efc4f2ec4c24",
+      "quoteCharacters": 9,
+      "occurrences": 8,
+      "paths": [
+        "$.results[11].sourceLocators[0]",
+        "$.claims[12].sourceLocators[0]",
+        "$.inputs[31].sourceLocators[5]",
+        "$.inputs[32].sourceLocators[5]",
+        "$.inputs[33].sourceLocators[5]",
+        "$.inputs[34].sourceLocators[5]",
+        "$.inputs[35].sourceLocators[5]",
+        "$.answers[7].sourceLocators[5]"
+      ],
+      "status": "PASS",
+      "method": "Exact physical-page quote with layout-preserving extraction plus independent visual page inspection"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "CAL07-nihms199097f3-jpg",
+        "sourceSha256": "64b19ff7649163d5671c147bc73d651e5b4280e43fc99dc2bae08bdd9453df4d",
+        "unitId": "image",
+        "kind": "image",
+        "locator": "nihms199097f3.jpg",
+        "figureTable": "Figure 3"
+      },
+      "quoteSha256": "a5beb9abbad73d4eacd916f707acd7d3c696a564580caec6f8b08f716aa665ac",
+      "quoteCharacters": 3,
+      "occurrences": 3,
+      "paths": [
+        "$.results[12].sourceLocators[2]",
+        "$.claims[13].sourceLocators[2]",
+        "$.resultCoverage[26].sourceLocators[0]"
+      ],
+      "status": "PASS",
+      "method": "Independently visually checked literal figure label/count; no graph digitization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "CAL07-nihms199097f4-jpg",
+        "sourceSha256": "b8940236894b907be85c293f6011a739abec29ac26b5549bfb29522765ca74ba",
+        "unitId": "image",
+        "kind": "image",
+        "locator": "nihms199097f4.jpg",
+        "figureTable": "Figure 4"
+      },
+      "quoteSha256": "0a439008a2fde948d84b9da4a17c56cb41a26b0718dedb7e0282459d0a193835",
+      "quoteCharacters": 8,
+      "occurrences": 2,
+      "paths": [
+        "$.results[13].sourceLocators[3]",
+        "$.claims[14].sourceLocators[3]"
+      ],
+      "status": "PASS",
+      "method": "Independently visually checked literal figure label/count; no graph digitization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "CAL07-nihms199097f4-jpg",
+        "sourceSha256": "b8940236894b907be85c293f6011a739abec29ac26b5549bfb29522765ca74ba",
+        "unitId": "image",
+        "kind": "image",
+        "locator": "nihms199097f4.jpg",
+        "figureTable": "Figure 4"
+      },
+      "quoteSha256": "47afc7d03b8b3f8c0b342b433919e571e486a6c0a9df1a718bfe413c3f65138f",
+      "quoteCharacters": 5,
+      "occurrences": 3,
+      "paths": [
+        "$.results[14].sourceLocators[3]",
+        "$.claims[15].sourceLocators[3]",
+        "$.resultCoverage[27].sourceLocators[0]"
+      ],
+      "status": "PASS",
+      "method": "Independently visually checked literal figure label/count; no graph digitization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "S4",
+        "kind": "html_section",
+        "locator": "#S4",
+        "figureTable": null
+      },
+      "quoteSha256": "14fa3e55b1c1eafdb29d20abe554ad2e5b4a2d25c90181a1fc6b66010e24a93b",
+      "quoteCharacters": 552,
+      "occurrences": 2,
+      "paths": [
+        "$.results[15].sourceLocators[2]",
+        "$.claims[16].sourceLocators[2]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "CAL07-nihms199097f4-jpg",
+        "sourceSha256": "b8940236894b907be85c293f6011a739abec29ac26b5549bfb29522765ca74ba",
+        "unitId": "image",
+        "kind": "image",
+        "locator": "nihms199097f4.jpg",
+        "figureTable": "Figure 4"
+      },
+      "quoteSha256": "a467bc7858c26ff11106236c66fef9288cf0f713f5861d753779b9bdfc64a242",
+      "quoteCharacters": 3,
+      "occurrences": 2,
+      "paths": [
+        "$.results[15].sourceLocators[4]",
+        "$.claims[16].sourceLocators[4]"
+      ],
+      "status": "PASS",
+      "method": "Independently visually checked literal figure label/count; no graph digitization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "CAL07-nihms199097f4-jpg",
+        "sourceSha256": "b8940236894b907be85c293f6011a739abec29ac26b5549bfb29522765ca74ba",
+        "unitId": "image",
+        "kind": "image",
+        "locator": "nihms199097f4.jpg",
+        "figureTable": "Figure 4"
+      },
+      "quoteSha256": "f36d662029ced2637c578f3979c5a8dc2dd28047838d21fbed5584465ba1ccdf",
+      "quoteCharacters": 18,
+      "occurrences": 2,
+      "paths": [
+        "$.results[16].sourceLocators[2]",
+        "$.claims[17].sourceLocators[2]"
+      ],
+      "status": "PASS",
+      "method": "Independently visually checked literal figure label/count; no graph digitization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "CAL07-nihms199097f5-jpg",
+        "sourceSha256": "51dcc042138ba5c7d1145b8a8717d17bf6df2ebb6ffca2988e854342a58ea06b",
+        "unitId": "image",
+        "kind": "image",
+        "locator": "nihms199097f5.jpg",
+        "figureTable": "Figure 5"
+      },
+      "quoteSha256": "f51795d4e68be65f812dc95ab8c51ae59c1d5ad4ca181f2efc3d9997eb03b49f",
+      "quoteCharacters": 7,
+      "occurrences": 2,
+      "paths": [
+        "$.results[17].sourceLocators[2]",
+        "$.claims[18].sourceLocators[2]"
+      ],
+      "status": "PASS",
+      "method": "Independently visually checked literal figure label/count; no graph digitization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "CAL07-supplement-publisher-pdf",
+        "sourceSha256": "90b42356bc5a52e53542d5ae69a8cc5e80e9a8215141471c4e87bf17700059d4",
+        "unitId": "p6",
+        "kind": "pdf_page",
+        "locator": "6",
+        "figureTable": "Table S2"
+      },
+      "quoteSha256": "2d4ca04b5b4914874a0afe62de03e51e3d4fa6fd745de6292c0fc3c57e04e80e",
+      "quoteCharacters": 236,
+      "occurrences": 11,
+      "paths": [
+        "$.results[17].sourceLocators[3]",
+        "$.claims[18].sourceLocators[3]",
+        "$.inputs[20].sourceLocators[8]",
+        "$.inputs[21].sourceLocators[8]",
+        "$.inputs[22].sourceLocators[8]",
+        "$.inputs[23].sourceLocators[8]",
+        "$.inputs[24].sourceLocators[8]",
+        "$.answers[5].sourceLocators[8]",
+        "$.numericClaims[20].sourceLocators[0]",
+        "$.numericClaims[21].sourceLocators[0]",
+        "$.numericClaims[22].sourceLocators[0]"
+      ],
+      "status": "PASS",
+      "method": "Exact physical-page quote with layout-preserving extraction plus independent visual page inspection"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "CAL07-nihms199097f5-jpg",
+        "sourceSha256": "51dcc042138ba5c7d1145b8a8717d17bf6df2ebb6ffca2988e854342a58ea06b",
+        "unitId": "image",
+        "kind": "image",
+        "locator": "nihms199097f5.jpg",
+        "figureTable": "Figure 5"
+      },
+      "quoteSha256": "5cd66135955c8c496378e0953bfa2caeab6c80d4725f850a44b1ce60cede8333",
+      "quoteCharacters": 11,
+      "occurrences": 2,
+      "paths": [
+        "$.results[18].sourceLocators[2]",
+        "$.claims[19].sourceLocators[2]"
+      ],
+      "status": "PASS",
+      "method": "Independently visually checked literal figure label/count; no graph digitization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "CAL07-supplement-publisher-pdf",
+        "sourceSha256": "90b42356bc5a52e53542d5ae69a8cc5e80e9a8215141471c4e87bf17700059d4",
+        "unitId": "p7",
+        "kind": "pdf_page",
+        "locator": "7",
+        "figureTable": "Table S3"
+      },
+      "quoteSha256": "bc51c887494a80f78a2bb00446f9504d2dc3df73fea84d02ce2c904839167620",
+      "quoteCharacters": 237,
+      "occurrences": 11,
+      "paths": [
+        "$.results[18].sourceLocators[3]",
+        "$.claims[19].sourceLocators[3]",
+        "$.inputs[20].sourceLocators[9]",
+        "$.inputs[21].sourceLocators[9]",
+        "$.inputs[22].sourceLocators[9]",
+        "$.inputs[23].sourceLocators[9]",
+        "$.inputs[24].sourceLocators[9]",
+        "$.answers[5].sourceLocators[9]",
+        "$.numericClaims[23].sourceLocators[0]",
+        "$.numericClaims[24].sourceLocators[0]",
+        "$.numericClaims[25].sourceLocators[0]"
+      ],
+      "status": "PASS",
+      "method": "Exact physical-page quote with layout-preserving extraction plus independent visual page inspection"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "CAL07-nihms199097f5-jpg",
+        "sourceSha256": "51dcc042138ba5c7d1145b8a8717d17bf6df2ebb6ffca2988e854342a58ea06b",
+        "unitId": "image",
+        "kind": "image",
+        "locator": "nihms199097f5.jpg",
+        "figureTable": "Figure 5"
+      },
+      "quoteSha256": "35b618ca1e3f4ad067d9e6abdc7e86774165d685b3b0692a6e6c7be195e430a4",
+      "quoteCharacters": 11,
+      "occurrences": 2,
+      "paths": [
+        "$.results[19].sourceLocators[2]",
+        "$.claims[20].sourceLocators[2]"
+      ],
+      "status": "PASS",
+      "method": "Independently visually checked literal figure label/count; no graph digitization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "CAL07-supplement-publisher-pdf",
+        "sourceSha256": "90b42356bc5a52e53542d5ae69a8cc5e80e9a8215141471c4e87bf17700059d4",
+        "unitId": "p8",
+        "kind": "pdf_page",
+        "locator": "8",
+        "figureTable": "Table S4"
+      },
+      "quoteSha256": "7f6b9c5fd61b37d067ea91d48990085134b8f29e6844b4b18b3a593692b3efc0",
+      "quoteCharacters": 318,
+      "occurrences": 14,
+      "paths": [
+        "$.results[19].sourceLocators[3]",
+        "$.claims[20].sourceLocators[3]",
+        "$.inputs[20].sourceLocators[10]",
+        "$.inputs[21].sourceLocators[10]",
+        "$.inputs[22].sourceLocators[10]",
+        "$.inputs[23].sourceLocators[10]",
+        "$.inputs[24].sourceLocators[10]",
+        "$.answers[5].sourceLocators[10]",
+        "$.numericClaims[26].sourceLocators[0]",
+        "$.numericClaims[27].sourceLocators[0]",
+        "$.numericClaims[28].sourceLocators[0]",
+        "$.numericClaims[29].sourceLocators[0]",
+        "$.numericClaims[30].sourceLocators[0]",
+        "$.numericClaims[31].sourceLocators[0]"
+      ],
+      "status": "PASS",
+      "method": "Exact physical-page quote with layout-preserving extraction plus independent visual page inspection"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "CAL07-nihms199097f6-jpg",
+        "sourceSha256": "ebfd22c4d47da76e81098f83a845fd5b60fd9b5b496fff229de53b225e7e2260",
+        "unitId": "image",
+        "kind": "image",
+        "locator": "nihms199097f6.jpg",
+        "figureTable": "Figure 6"
+      },
+      "quoteSha256": "a19ecd8b55463099c2590489d388c1335157e2ca6ccf4477076c2d7c8aa73e6e",
+      "quoteCharacters": 10,
+      "occurrences": 2,
+      "paths": [
+        "$.results[20].sourceLocators[3]",
+        "$.claims[21].sourceLocators[3]"
+      ],
+      "status": "PASS",
+      "method": "Independently visually checked literal figure label/count; no graph digitization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "CAL07-nihms199097f6-jpg",
+        "sourceSha256": "ebfd22c4d47da76e81098f83a845fd5b60fd9b5b496fff229de53b225e7e2260",
+        "unitId": "image",
+        "kind": "image",
+        "locator": "nihms199097f6.jpg",
+        "figureTable": "Figure 6"
+      },
+      "quoteSha256": "82feb128a1bbbdcf7afb49478c2983e0bdb11547c76944735ef334c81be836fd",
+      "quoteCharacters": 5,
+      "occurrences": 3,
+      "paths": [
+        "$.results[21].sourceLocators[4]",
+        "$.claims[22].sourceLocators[4]",
+        "$.resultCoverage[29].sourceLocators[0]"
+      ],
+      "status": "PASS",
+      "method": "Independently visually checked literal figure label/count; no graph digitization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "CAL07-nihms199097f6-jpg",
+        "sourceSha256": "ebfd22c4d47da76e81098f83a845fd5b60fd9b5b496fff229de53b225e7e2260",
+        "unitId": "image",
+        "kind": "image",
+        "locator": "nihms199097f6.jpg",
+        "figureTable": "Figure 6"
+      },
+      "quoteSha256": "e57c9b3272934781f60a68a46233be1400fcf01c781dbfd40828f9ed8bbbd6b9",
+      "quoteCharacters": 14,
+      "occurrences": 2,
+      "paths": [
+        "$.results[22].sourceLocators[3]",
+        "$.claims[23].sourceLocators[3]"
+      ],
+      "status": "PASS",
+      "method": "Independently visually checked literal figure label/count; no graph digitization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "CAL07-nihms199097f6-jpg",
+        "sourceSha256": "ebfd22c4d47da76e81098f83a845fd5b60fd9b5b496fff229de53b225e7e2260",
+        "unitId": "image",
+        "kind": "image",
+        "locator": "nihms199097f6.jpg",
+        "figureTable": "Figure 6"
+      },
+      "quoteSha256": "a5ee7f54892b898ab6d2a421f0ff54f39aad3ba5c98142ea39ec4fa58303ff67",
+      "quoteCharacters": 29,
+      "occurrences": 2,
+      "paths": [
+        "$.results[23].sourceLocators[3]",
+        "$.claims[24].sourceLocators[3]"
+      ],
+      "status": "PASS",
+      "method": "Independently visually checked literal figure label/count; no graph digitization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "CAL07-nihms199097f7-jpg",
+        "sourceSha256": "a1430c5543a493cba24d00ec31fade558a494d258de7132eadac80ccb503d127",
+        "unitId": "image",
+        "kind": "image",
+        "locator": "nihms199097f7.jpg",
+        "figureTable": "Figure 7"
+      },
+      "quoteSha256": "9232e567f0dc63627596817f3487e6c4b4880ff3dd7cc9e7cc534cb8cec185a7",
+      "quoteCharacters": 9,
+      "occurrences": 9,
+      "paths": [
+        "$.results[24].sourceLocators[3]",
+        "$.claims[25].sourceLocators[3]",
+        "$.inputs[20].sourceLocators[11]",
+        "$.inputs[21].sourceLocators[11]",
+        "$.inputs[22].sourceLocators[11]",
+        "$.inputs[23].sourceLocators[11]",
+        "$.inputs[24].sourceLocators[11]",
+        "$.answers[5].sourceLocators[11]",
+        "$.numericClaims[42].sourceLocators[0]"
+      ],
+      "status": "PASS",
+      "method": "Independently visually checked literal figure label/count; no graph digitization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "S2",
+        "kind": "html_section",
+        "locator": "#S2",
+        "figureTable": null
+      },
+      "quoteSha256": "5636e96f151d2ba8aff48a260a40dcf18485b57ffc4070936e3fd37f3d56bfab",
+      "quoteCharacters": 815,
+      "occurrences": 14,
+      "paths": [
+        "$.claims[2].sourceLocators[2]",
+        "$.inputs[42].sourceLocators[2]",
+        "$.inputs[43].sourceLocators[2]",
+        "$.inputs[44].sourceLocators[2]",
+        "$.inputs[45].sourceLocators[2]",
+        "$.inputs[61].sourceLocators[4]",
+        "$.inputs[62].sourceLocators[4]",
+        "$.inputs[63].sourceLocators[4]",
+        "$.inputs[64].sourceLocators[2]",
+        "$.inputs[65].sourceLocators[2]",
+        "$.inputs[66].sourceLocators[2]",
+        "$.answers[9].sourceLocators[2]",
+        "$.answers[13].sourceLocators[4]",
+        "$.answers[14].sourceLocators[2]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "front-matter",
+        "kind": "html_section",
+        "locator": "document title, authors, affiliations and version metadata",
+        "figureTable": null
+      },
+      "quoteSha256": "ed86567c28624f87a2ab6c068a732ff1eb85977eff41297d40646446d5961e25",
+      "quoteCharacters": 99,
+      "occurrences": 8,
+      "paths": [
+        "$.resultCoverage[0].sourceLocators[0]",
+        "$.inputs[50].sourceLocators[0]",
+        "$.inputs[51].sourceLocators[0]",
+        "$.inputs[52].sourceLocators[0]",
+        "$.inputs[53].sourceLocators[0]",
+        "$.inputs[54].sourceLocators[0]",
+        "$.answers[11].sourceLocators[0]",
+        "$.sourceIntegrity[0].sourceLocators[1]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "abstract1",
+        "kind": "html_section",
+        "locator": "#abstract1",
+        "figureTable": null
+      },
+      "quoteSha256": "136edcb47b41082ded7cbf43b8a66f1ccf785e551cd68ec785c17f5a13e2410f",
+      "quoteCharacters": 400,
+      "occurrences": 1,
+      "paths": [
+        "$.resultCoverage[1].sourceLocators[0]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "S1",
+        "kind": "html_section",
+        "locator": "#S1",
+        "figureTable": null
+      },
+      "quoteSha256": "acde98799a9d4eddbb8f61dc6d4fc42833cb02cb91b1b8c80dc0c3eb37d5c78c",
+      "quoteCharacters": 400,
+      "occurrences": 1,
+      "paths": [
+        "$.resultCoverage[2].sourceLocators[0]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "S2",
+        "kind": "html_section",
+        "locator": "#S2",
+        "figureTable": null
+      },
+      "quoteSha256": "0bba7eb1ae6653ba351e4c0ff13facc6c570a11aaae23ed8ce8ec2f78b285f7a",
+      "quoteCharacters": 400,
+      "occurrences": 1,
+      "paths": [
+        "$.resultCoverage[3].sourceLocators[0]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "S3",
+        "kind": "html_section",
+        "locator": "#S3",
+        "figureTable": null
+      },
+      "quoteSha256": "43bfd6b75602724f00895670e5459364a9e04664654dfc5b944a9910bbc8d2a3",
+      "quoteCharacters": 400,
+      "occurrences": 1,
+      "paths": [
+        "$.resultCoverage[4].sourceLocators[0]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "S4",
+        "kind": "html_section",
+        "locator": "#S4",
+        "figureTable": null
+      },
+      "quoteSha256": "4d5aed69df055693f74eb19df58772d04675adeb018616ce82eb0125ea4c9e49",
+      "quoteCharacters": 400,
+      "occurrences": 1,
+      "paths": [
+        "$.resultCoverage[5].sourceLocators[0]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "S5",
+        "kind": "html_section",
+        "locator": "#S5",
+        "figureTable": null
+      },
+      "quoteSha256": "dead74279dbfc18689b8c3796a655b703555614bd47aae098234f43b02d4724a",
+      "quoteCharacters": 400,
+      "occurrences": 1,
+      "paths": [
+        "$.resultCoverage[6].sourceLocators[0]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "S6",
+        "kind": "html_section",
+        "locator": "#S6",
+        "figureTable": null
+      },
+      "quoteSha256": "ed2a626a1db3d4379e77554eba54efa49bd2dcb6f252e5b0cb2f83f0597a2bd7",
+      "quoteCharacters": 400,
+      "occurrences": 1,
+      "paths": [
+        "$.resultCoverage[7].sourceLocators[0]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "S7",
+        "kind": "html_section",
+        "locator": "#S7",
+        "figureTable": null
+      },
+      "quoteSha256": "21f42604ec5546385eb5d6c48ac9d6b9ed5f87e7d6fc9d4d0c220d172ffc43fc",
+      "quoteCharacters": 400,
+      "occurrences": 1,
+      "paths": [
+        "$.resultCoverage[8].sourceLocators[0]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "S8",
+        "kind": "html_section",
+        "locator": "#S8",
+        "figureTable": null
+      },
+      "quoteSha256": "a90a86296662656013a93604256a04c871db5febddb16bd88a19ecd684e79d95",
+      "quoteCharacters": 400,
+      "occurrences": 1,
+      "paths": [
+        "$.resultCoverage[9].sourceLocators[0]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "S9",
+        "kind": "html_section",
+        "locator": "#S9",
+        "figureTable": null
+      },
+      "quoteSha256": "a734a1d3885352d3121fad7c234d876dc83b841da2e400f5deea0cb22aa39ddc",
+      "quoteCharacters": 400,
+      "occurrences": 1,
+      "paths": [
+        "$.resultCoverage[10].sourceLocators[0]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "S10",
+        "kind": "html_section",
+        "locator": "#S10",
+        "figureTable": null
+      },
+      "quoteSha256": "5b9b0d915787b2dfd44d82d29875aed45efa0decce9ce79b28d9379a85484612",
+      "quoteCharacters": 400,
+      "occurrences": 1,
+      "paths": [
+        "$.resultCoverage[11].sourceLocators[0]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "S11",
+        "kind": "html_section",
+        "locator": "#S11",
+        "figureTable": null
+      },
+      "quoteSha256": "067b691197ad131f4b6c95671bc01c5a246a80db024e36df41e69a46afc46cde",
+      "quoteCharacters": 400,
+      "occurrences": 1,
+      "paths": [
+        "$.resultCoverage[12].sourceLocators[0]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "S12",
+        "kind": "html_section",
+        "locator": "#S12",
+        "figureTable": null
+      },
+      "quoteSha256": "cf36467e41f3e7e74cf4200513844fdcec5cd650c2f092c4f7166e90ba454b91",
+      "quoteCharacters": 400,
+      "occurrences": 1,
+      "paths": [
+        "$.resultCoverage[13].sourceLocators[0]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "S13",
+        "kind": "html_section",
+        "locator": "#S13",
+        "figureTable": null
+      },
+      "quoteSha256": "78c69d7ef87b2589d7c4cd2555582e3eef42162027158b373f0e3fb5b09a6236",
+      "quoteCharacters": 400,
+      "occurrences": 1,
+      "paths": [
+        "$.resultCoverage[14].sourceLocators[0]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "S14",
+        "kind": "html_section",
+        "locator": "#S14",
+        "figureTable": null
+      },
+      "quoteSha256": "da08b0358b21ce48289abf33492dd810804baad62bc03941b6a008e1ddcfa384",
+      "quoteCharacters": 400,
+      "occurrences": 1,
+      "paths": [
+        "$.resultCoverage[15].sourceLocators[0]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "S15",
+        "kind": "html_section",
+        "locator": "#S15",
+        "figureTable": null
+      },
+      "quoteSha256": "7e7df4101f3e83b0d1777f49adc76165dead79902d102f7d90315a322d4ce37c",
+      "quoteCharacters": 400,
+      "occurrences": 1,
+      "paths": [
+        "$.resultCoverage[16].sourceLocators[0]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "SM",
+        "kind": "html_section",
+        "locator": "#SM",
+        "figureTable": null
+      },
+      "quoteSha256": "1fb1ffac046eab4f784128ee243c5b5f5adc22386ed9b09de402cb6f18aad9da",
+      "quoteCharacters": 70,
+      "occurrences": 10,
+      "paths": [
+        "$.resultCoverage[17].sourceLocators[0]",
+        "$.inputs[55].sourceLocators[1]",
+        "$.inputs[56].sourceLocators[1]",
+        "$.inputs[57].sourceLocators[1]",
+        "$.inputs[58].sourceLocators[1]",
+        "$.inputs[59].sourceLocators[1]",
+        "$.inputs[60].sourceLocators[1]",
+        "$.answers[12].sourceLocators[1]",
+        "$.sourceIntegrity[1].sourceLocators[1]",
+        "$.sourceIntegrity[2].sourceLocators[0]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "SD1",
+        "kind": "html_section",
+        "locator": "#SD1",
+        "figureTable": null
+      },
+      "quoteSha256": "9e7cc95e8c99ae67a9f4a5635d25450283174aa0253c3c00429b1d1ef9a2f0ab",
+      "quoteCharacters": 47,
+      "occurrences": 2,
+      "paths": [
+        "$.resultCoverage[18].sourceLocators[0]",
+        "$.sourceIntegrity[2].sourceLocators[1]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "BX1",
+        "kind": "html_section",
+        "locator": "#BX1",
+        "figureTable": null
+      },
+      "quoteSha256": "21d06164052d0aedca12ccde7fb58c85d16203e534275b82d0efe896aa1cbbfb",
+      "quoteCharacters": 400,
+      "occurrences": 1,
+      "paths": [
+        "$.resultCoverage[19].sourceLocators[0]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "fn-group1",
+        "kind": "html_section",
+        "locator": "#fn-group1",
+        "figureTable": null
+      },
+      "quoteSha256": "321d9aaf57596003422f68373a3a3ed77b3de9cd2eacf38dc897c3bd9a90ee4c",
+      "quoteCharacters": 400,
+      "occurrences": 1,
+      "paths": [
+        "$.resultCoverage[20].sourceLocators[0]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "ref-list1",
+        "kind": "html_section",
+        "locator": "#ref-list1",
+        "figureTable": null
+      },
+      "quoteSha256": "053927dfbe24175742480ad40b49dbe5625a876e868740ed4cb64887f17a43e6",
+      "quoteCharacters": 400,
+      "occurrences": 6,
+      "paths": [
+        "$.resultCoverage[21].sourceLocators[0]",
+        "$.inputs[46].sourceLocators[3]",
+        "$.inputs[47].sourceLocators[3]",
+        "$.inputs[48].sourceLocators[3]",
+        "$.inputs[49].sourceLocators[3]",
+        "$.answers[10].sourceLocators[3]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "CAL07-europepmc-json",
+        "sourceSha256": "dc6c38bad7c46de1cf0aceb76610c88215d349da84829f9dbac4aa3d8b420fed",
+        "unitId": "metadata",
+        "kind": "text_section",
+        "locator": "complete JSON response",
+        "figureTable": null
+      },
+      "quoteSha256": "3fd1e7db82d45d2a7c4a9e0cee59bd622998d4dc48d7be4912c729b13cb90800",
+      "quoteCharacters": 17,
+      "occurrences": 23,
+      "paths": [
+        "$.resultCoverage[22].sourceLocators[0]",
+        "$.inputs[46].sourceLocators[4]",
+        "$.inputs[47].sourceLocators[4]",
+        "$.inputs[48].sourceLocators[4]",
+        "$.inputs[49].sourceLocators[4]",
+        "$.inputs[50].sourceLocators[4]",
+        "$.inputs[51].sourceLocators[4]",
+        "$.inputs[52].sourceLocators[4]",
+        "$.inputs[53].sourceLocators[4]",
+        "$.inputs[54].sourceLocators[4]",
+        "$.inputs[55].sourceLocators[3]",
+        "$.inputs[56].sourceLocators[3]",
+        "$.inputs[57].sourceLocators[3]",
+        "$.inputs[58].sourceLocators[3]",
+        "$.inputs[59].sourceLocators[3]",
+        "$.inputs[60].sourceLocators[3]",
+        "$.answers[10].sourceLocators[4]",
+        "$.answers[11].sourceLocators[4]",
+        "$.answers[12].sourceLocators[3]",
+        "$.sourceIntegrity[0].sourceLocators[3]",
+        "$.sourceIntegrity[1].sourceLocators[3]",
+        "$.sourceIntegrity[3].sourceLocators[3]",
+        "$.sourceIntegrity[4].sourceLocators[0]"
+      ],
+      "status": "PASS",
+      "method": "Exact received JSON quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "CAL07-crossref-json",
+        "sourceSha256": "11ef7c84b810f03ad95e0fe9a2832c6a73cd3adb87c8ace1f8c7fbd647f2c615",
+        "unitId": "metadata",
+        "kind": "text_section",
+        "locator": "complete JSON response",
+        "figureTable": null
+      },
+      "quoteSha256": "1d5e0ee3ab6259f74061c127f26f8415478f74504bfa7ad48a9cc1dac2a9df48",
+      "quoteCharacters": 13,
+      "occurrences": 16,
+      "paths": [
+        "$.resultCoverage[23].sourceLocators[0]",
+        "$.inputs[46].sourceLocators[5]",
+        "$.inputs[47].sourceLocators[5]",
+        "$.inputs[48].sourceLocators[5]",
+        "$.inputs[49].sourceLocators[5]",
+        "$.inputs[55].sourceLocators[4]",
+        "$.inputs[56].sourceLocators[4]",
+        "$.inputs[57].sourceLocators[4]",
+        "$.inputs[58].sourceLocators[4]",
+        "$.inputs[59].sourceLocators[4]",
+        "$.inputs[60].sourceLocators[4]",
+        "$.answers[10].sourceLocators[5]",
+        "$.answers[12].sourceLocators[4]",
+        "$.sourceIntegrity[0].sourceLocators[4]",
+        "$.sourceIntegrity[3].sourceLocators[4]",
+        "$.sourceIntegrity[4].sourceLocators[1]"
+      ],
+      "status": "PASS",
+      "method": "Exact received JSON quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "CAL07-nihms199097f2-jpg",
+        "sourceSha256": "e23bbf5ad4df85fdbb7499fa340d6448704cef67a862b5cf3e800c6e49c11815",
+        "unitId": "image",
+        "kind": "image",
+        "locator": "nihms199097f2.jpg",
+        "figureTable": "Figure 2"
+      },
+      "quoteSha256": "f8a3b5a869310c7735dbe4c1bb153ef811c26ddaa232f967b37d565e16405ab8",
+      "quoteCharacters": 4,
+      "occurrences": 1,
+      "paths": [
+        "$.resultCoverage[25].sourceLocators[0]"
+      ],
+      "status": "PASS",
+      "method": "Independently visually checked literal figure label/count; no graph digitization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "CAL07-nihms199097f7-jpg",
+        "sourceSha256": "a1430c5543a493cba24d00ec31fade558a494d258de7132eadac80ccb503d127",
+        "unitId": "image",
+        "kind": "image",
+        "locator": "nihms199097f7.jpg",
+        "figureTable": "Figure 7"
+      },
+      "quoteSha256": "c0af819153205e01127b2c11ad0e895adb4d37abcbb293c7e64ca6cd9a305ee9",
+      "quoteCharacters": 14,
+      "occurrences": 1,
+      "paths": [
+        "$.resultCoverage[30].sourceLocators[0]"
+      ],
+      "status": "PASS",
+      "method": "Independently visually checked literal figure label/count; no graph digitization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "CAL07-supplement-publisher-pdf",
+        "sourceSha256": "90b42356bc5a52e53542d5ae69a8cc5e80e9a8215141471c4e87bf17700059d4",
+        "unitId": "p1",
+        "kind": "pdf_page",
+        "locator": "1",
+        "figureTable": null
+      },
+      "quoteSha256": "0ba2217c64930b40a11709465685bdd356eee40367f4e383a91ccb9ce004fcaa",
+      "quoteCharacters": 372,
+      "occurrences": 17,
+      "paths": [
+        "$.resultCoverage[31].sourceLocators[0]",
+        "$.inputs[50].sourceLocators[2]",
+        "$.inputs[51].sourceLocators[2]",
+        "$.inputs[52].sourceLocators[2]",
+        "$.inputs[53].sourceLocators[2]",
+        "$.inputs[54].sourceLocators[2]",
+        "$.inputs[55].sourceLocators[2]",
+        "$.inputs[56].sourceLocators[2]",
+        "$.inputs[57].sourceLocators[2]",
+        "$.inputs[58].sourceLocators[2]",
+        "$.inputs[59].sourceLocators[2]",
+        "$.inputs[60].sourceLocators[2]",
+        "$.answers[11].sourceLocators[2]",
+        "$.answers[12].sourceLocators[2]",
+        "$.sourceIntegrity[0].sourceLocators[2]",
+        "$.sourceIntegrity[1].sourceLocators[2]",
+        "$.sourceIntegrity[2].sourceLocators[2]"
+      ],
+      "status": "PASS",
+      "method": "Exact physical-page quote with layout-preserving extraction plus independent visual page inspection"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "CAL07-supplement-publisher-pdf",
+        "sourceSha256": "90b42356bc5a52e53542d5ae69a8cc5e80e9a8215141471c4e87bf17700059d4",
+        "unitId": "p3",
+        "kind": "pdf_page",
+        "locator": "3",
+        "figureTable": null
+      },
+      "quoteSha256": "c458f5e2b27ffad72579af3bc3690bda537c5dbafac44d2759b2efc4f2ec4c24",
+      "quoteCharacters": 9,
+      "occurrences": 1,
+      "paths": [
+        "$.resultCoverage[33].sourceLocators[0]"
+      ],
+      "status": "PASS",
+      "method": "Exact physical-page quote with layout-preserving extraction plus independent visual page inspection"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "CAL07-supplement-publisher-pdf",
+        "sourceSha256": "90b42356bc5a52e53542d5ae69a8cc5e80e9a8215141471c4e87bf17700059d4",
+        "unitId": "p5",
+        "kind": "pdf_page",
+        "locator": "5",
+        "figureTable": null
+      },
+      "quoteSha256": "5e03907def822428851015d4f4a93f7b9809dfd96b29db9134d5611444549f49",
+      "quoteCharacters": 182,
+      "occurrences": 8,
+      "paths": [
+        "$.resultCoverage[35].sourceLocators[0]",
+        "$.inputs[36].sourceLocators[10]",
+        "$.inputs[37].sourceLocators[10]",
+        "$.inputs[38].sourceLocators[10]",
+        "$.inputs[39].sourceLocators[10]",
+        "$.inputs[40].sourceLocators[10]",
+        "$.inputs[41].sourceLocators[10]",
+        "$.answers[8].sourceLocators[10]"
+      ],
+      "status": "PASS",
+      "method": "Exact physical-page quote with layout-preserving extraction plus independent visual page inspection"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "S1",
+        "kind": "html_section",
+        "locator": "#S1",
+        "figureTable": null
+      },
+      "quoteSha256": "b253ff33051cecb2e4810afae4c9e5491117c35fbaaa7205c376dfa90d70edf8",
+      "quoteCharacters": 971,
+      "occurrences": 4,
+      "paths": [
+        "$.inputs[0].sourceLocators[0]",
+        "$.inputs[1].sourceLocators[0]",
+        "$.inputs[2].sourceLocators[0]",
+        "$.answers[0].sourceLocators[0]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "S4",
+        "kind": "html_section",
+        "locator": "#S4",
+        "figureTable": null
+      },
+      "quoteSha256": "3ec8c117191b0a8115bd04476ee9c801d2655ceb3b1354e1c1285242c341da42",
+      "quoteCharacters": 307,
+      "occurrences": 6,
+      "paths": [
+        "$.inputs[10].sourceLocators[0]",
+        "$.inputs[11].sourceLocators[0]",
+        "$.inputs[12].sourceLocators[0]",
+        "$.inputs[13].sourceLocators[0]",
+        "$.inputs[14].sourceLocators[0]",
+        "$.answers[3].sourceLocators[0]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "S2",
+        "kind": "html_section",
+        "locator": "#S2",
+        "figureTable": null
+      },
+      "quoteSha256": "8e93789ff7b458dd30f10759aa73daf7e285846eabf07c242e6c73a5ac57c78e",
+      "quoteCharacters": 1130,
+      "occurrences": 19,
+      "paths": [
+        "$.inputs[31].sourceLocators[1]",
+        "$.inputs[32].sourceLocators[1]",
+        "$.inputs[33].sourceLocators[1]",
+        "$.inputs[34].sourceLocators[1]",
+        "$.inputs[35].sourceLocators[1]",
+        "$.inputs[42].sourceLocators[1]",
+        "$.inputs[43].sourceLocators[1]",
+        "$.inputs[44].sourceLocators[1]",
+        "$.inputs[45].sourceLocators[1]",
+        "$.inputs[61].sourceLocators[3]",
+        "$.inputs[62].sourceLocators[3]",
+        "$.inputs[63].sourceLocators[3]",
+        "$.inputs[64].sourceLocators[1]",
+        "$.inputs[65].sourceLocators[1]",
+        "$.inputs[66].sourceLocators[1]",
+        "$.answers[7].sourceLocators[1]",
+        "$.answers[9].sourceLocators[1]",
+        "$.answers[13].sourceLocators[3]",
+        "$.answers[14].sourceLocators[1]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "S15",
+        "kind": "html_section",
+        "locator": "#S15",
+        "figureTable": null
+      },
+      "quoteSha256": "b943d0e78afab66c22eda9d60a39d483befc9f67df5e81d010e821805d6382c4",
+      "quoteCharacters": 622,
+      "occurrences": 6,
+      "paths": [
+        "$.inputs[50].sourceLocators[1]",
+        "$.inputs[51].sourceLocators[1]",
+        "$.inputs[52].sourceLocators[1]",
+        "$.inputs[53].sourceLocators[1]",
+        "$.inputs[54].sourceLocators[1]",
+        "$.answers[11].sourceLocators[1]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "fn-group1",
+        "kind": "html_section",
+        "locator": "#fn-group1",
+        "figureTable": null
+      },
+      "quoteSha256": "11df0dcfd48437a5b1521875619c1ce30376dde4aa052e3557621010212acee7",
+      "quoteCharacters": 496,
+      "occurrences": 10,
+      "paths": [
+        "$.inputs[55].sourceLocators[0]",
+        "$.inputs[56].sourceLocators[0]",
+        "$.inputs[57].sourceLocators[0]",
+        "$.inputs[58].sourceLocators[0]",
+        "$.inputs[59].sourceLocators[0]",
+        "$.inputs[60].sourceLocators[0]",
+        "$.answers[12].sourceLocators[0]",
+        "$.sourceIntegrity[0].sourceLocators[0]",
+        "$.sourceIntegrity[1].sourceLocators[0]",
+        "$.sourceIntegrity[4].sourceLocators[2]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    },
+    {
+      "locatorIdentity": {
+        "sourceId": "MECH-D07-HEDGEHOG-2010",
+        "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+        "unitId": "S8",
+        "kind": "html_section",
+        "locator": "#S8",
+        "figureTable": null
+      },
+      "quoteSha256": "7fe66493f77670a83407318259fb88d0619433d7bc1869b52a90e78bdcd2e836",
+      "quoteCharacters": 222,
+      "occurrences": 1,
+      "paths": [
+        "$.sourceIntegrity[3].sourceLocators[1]"
+      ],
+      "status": "PASS",
+      "method": "Exact native-element quote with whitespace normalization"
+    }
+  ],
+  "newLocatorIdentitiesSinceFirstRead": 0,
+  "numericRecordAudit": [
+    {
+      "id": "RRX-CAL07-R01-N01",
+      "value": 17,
+      "reportedText": "17",
+      "units": "cilia",
+      "status": "PASS",
+      "method": "Independent source-specific numerical and arm/endpoint/precision check; source images and physical PDF tables inspected"
+    },
+    {
+      "id": "RRX-CAL07-R01-N02",
+      "value": 660,
+      "reportedText": "660",
+      "units": "cilia",
+      "status": "PASS",
+      "method": "Independent source-specific numerical and arm/endpoint/precision check; source images and physical PDF tables inspected"
+    },
+    {
+      "id": "RRX-CAL07-R01-N03",
+      "value": 614,
+      "reportedText": "614",
+      "units": "cilia",
+      "status": "PASS",
+      "method": "Independent source-specific numerical and arm/endpoint/precision check; source images and physical PDF tables inspected"
+    },
+    {
+      "id": "RRX-CAL07-R01-N04",
+      "value": 682,
+      "reportedText": "682",
+      "units": "cilia",
+      "status": "PASS",
+      "method": "Independent source-specific numerical and arm/endpoint/precision check; source images and physical PDF tables inspected"
+    },
+    {
+      "id": "RRX-CAL07-R01-N05",
+      "value": 36,
+      "reportedText": "36",
+      "units": "cilia",
+      "status": "PASS",
+      "method": "Independent source-specific numerical and arm/endpoint/precision check; source images and physical PDF tables inspected"
+    },
+    {
+      "id": "RRX-CAL07-R01-N06",
+      "value": 759,
+      "reportedText": "759",
+      "units": "cilia",
+      "status": "PASS",
+      "method": "Independent source-specific numerical and arm/endpoint/precision check; source images and physical PDF tables inspected"
+    },
+    {
+      "id": "RRX-CAL07-R02-N01",
+      "value": 10,
+      "reportedText": "10",
+      "units": "µM",
+      "status": "PASS",
+      "method": "Independent source-specific numerical and arm/endpoint/precision check; source images and physical PDF tables inspected"
+    },
+    {
+      "id": "RRX-CAL07-R03-N01",
+      "value": 20,
+      "reportedText": "20",
+      "units": "tumors",
+      "status": "PASS",
+      "method": "Independent source-specific numerical and arm/endpoint/precision check; source images and physical PDF tables inspected"
+    },
+    {
+      "id": "RRX-CAL07-R03-N02",
+      "value": 10,
+      "reportedText": "10",
+      "units": "tumors",
+      "status": "PASS",
+      "method": "Independent source-specific numerical and arm/endpoint/precision check; source images and physical PDF tables inspected"
+    },
+    {
+      "id": "RRX-CAL07-R03-N03",
+      "value": 6,
+      "reportedText": "6",
+      "units": "tumors",
+      "status": "PASS",
+      "method": "Independent source-specific numerical and arm/endpoint/precision check; source images and physical PDF tables inspected"
+    },
+    {
+      "id": "RRX-CAL07-R03-N04",
+      "value": null,
+      "reportedText": "Four mice",
+      "units": "mice",
+      "status": "PASS",
+      "method": "Independent source-specific numerical and arm/endpoint/precision check; source images and physical PDF tables inspected"
+    },
+    {
+      "id": "RRX-CAL07-R03-N05",
+      "value": null,
+      "reportedText": "Two mice",
+      "units": "mice",
+      "status": "PASS",
+      "method": "Independent source-specific numerical and arm/endpoint/precision check; source images and physical PDF tables inspected"
+    },
+    {
+      "id": "RRX-CAL07-R04-N01",
+      "value": null,
+      "reportedText": "approximately 800 nM",
+      "units": "nM",
+      "status": "PASS",
+      "method": "Independent source-specific numerical and arm/endpoint/precision check; source images and physical PDF tables inspected"
+    },
+    {
+      "id": "RRX-CAL07-R05-N01",
+      "value": 0.69,
+      "reportedText": "0.69",
+      "units": "µM",
+      "status": "PASS",
+      "method": "Independent source-specific numerical and arm/endpoint/precision check; source images and physical PDF tables inspected"
+    },
+    {
+      "id": "RRX-CAL07-R05-N02",
+      "value": 9.2,
+      "reportedText": "9.2",
+      "units": "µM",
+      "status": "PASS",
+      "method": "Independent source-specific numerical and arm/endpoint/precision check; source images and physical PDF tables inspected"
+    },
+    {
+      "id": "RRX-CAL07-R05-N03",
+      "value": 12,
+      "reportedText": "12",
+      "units": "µM",
+      "status": "PASS",
+      "method": "Independent source-specific numerical and arm/endpoint/precision check; source images and physical PDF tables inspected"
+    },
+    {
+      "id": "RRX-CAL07-R05-N04",
+      "value": 14,
+      "reportedText": "14",
+      "units": "µM",
+      "status": "PASS",
+      "method": "Independent source-specific numerical and arm/endpoint/precision check; source images and physical PDF tables inspected"
+    },
+    {
+      "id": "RRX-CAL07-R06-N01",
+      "value": null,
+      "reportedText": "≈1.2 µM",
+      "units": "µM",
+      "status": "PASS",
+      "method": "Independent source-specific numerical and arm/endpoint/precision check; source images and physical PDF tables inspected"
+    },
+    {
+      "id": "RRX-CAL07-R14-N01",
+      "value": null,
+      "reportedText": "≈ 900 nM",
+      "units": "nM",
+      "status": "PASS",
+      "method": "Independent source-specific numerical and arm/endpoint/precision check; source images and physical PDF tables inspected"
+    },
+    {
+      "id": "RRX-CAL07-R17-N01",
+      "value": null,
+      "reportedText": "≈ 270 nM",
+      "units": "nM",
+      "status": "PASS",
+      "method": "Independent source-specific numerical and arm/endpoint/precision check; source images and physical PDF tables inspected"
+    },
+    {
+      "id": "RRX-CAL07-R18-N01",
+      "value": 21,
+      "reportedText": "21",
+      "units": "nM",
+      "status": "PASS",
+      "method": "Independent source-specific numerical and arm/endpoint/precision check; source images and physical PDF tables inspected"
+    },
+    {
+      "id": "RRX-CAL07-R18-N02",
+      "value": 5.7,
+      "reportedText": "5.7",
+      "units": "nM",
+      "status": "PASS",
+      "method": "Independent source-specific numerical and arm/endpoint/precision check; source images and physical PDF tables inspected"
+    },
+    {
+      "id": "RRX-CAL07-R18-N03",
+      "value": 1.8,
+      "reportedText": "1.8",
+      "units": "nM",
+      "status": "PASS",
+      "method": "Independent source-specific numerical and arm/endpoint/precision check; source images and physical PDF tables inspected"
+    },
+    {
+      "id": "RRX-CAL07-R19-N01",
+      "value": 805,
+      "reportedText": "805",
+      "units": "nM",
+      "status": "PASS",
+      "method": "Independent source-specific numerical and arm/endpoint/precision check; source images and physical PDF tables inspected"
+    },
+    {
+      "id": "RRX-CAL07-R19-N02",
+      "value": 390,
+      "reportedText": "390",
+      "units": "nM",
+      "status": "PASS",
+      "method": "Independent source-specific numerical and arm/endpoint/precision check; source images and physical PDF tables inspected"
+    },
+    {
+      "id": "RRX-CAL07-R19-N03",
+      "value": 135,
+      "reportedText": "135",
+      "units": "nM",
+      "status": "PASS",
+      "method": "Independent source-specific numerical and arm/endpoint/precision check; source images and physical PDF tables inspected"
+    },
+    {
+      "id": "RRX-CAL07-R20-N01",
+      "value": 17,
+      "reportedText": "17",
+      "units": "nM",
+      "status": "PASS",
+      "method": "Independent source-specific numerical and arm/endpoint/precision check; source images and physical PDF tables inspected"
+    },
+    {
+      "id": "RRX-CAL07-R20-N02",
+      "value": 15,
+      "reportedText": "15",
+      "units": "nM",
+      "status": "PASS",
+      "method": "Independent source-specific numerical and arm/endpoint/precision check; source images and physical PDF tables inspected"
+    },
+    {
+      "id": "RRX-CAL07-R20-N03",
+      "value": 23,
+      "reportedText": "23",
+      "units": "nM",
+      "status": "PASS",
+      "method": "Independent source-specific numerical and arm/endpoint/precision check; source images and physical PDF tables inspected"
+    },
+    {
+      "id": "RRX-CAL07-R20-N04",
+      "value": 38,
+      "reportedText": "38",
+      "units": "nM",
+      "status": "PASS",
+      "method": "Independent source-specific numerical and arm/endpoint/precision check; source images and physical PDF tables inspected"
+    },
+    {
+      "id": "RRX-CAL07-R20-N05",
+      "value": 99,
+      "reportedText": "99",
+      "units": "nM",
+      "status": "PASS",
+      "method": "Independent source-specific numerical and arm/endpoint/precision check; source images and physical PDF tables inspected"
+    },
+    {
+      "id": "RRX-CAL07-R20-N06",
+      "value": 260,
+      "reportedText": "260",
+      "units": "nM",
+      "status": "PASS",
+      "method": "Independent source-specific numerical and arm/endpoint/precision check; source images and physical PDF tables inspected"
+    },
+    {
+      "id": "RRX-CAL07-R21-N01",
+      "value": 8,
+      "reportedText": "8",
+      "units": "tumors",
+      "status": "PASS",
+      "method": "Independent source-specific numerical and arm/endpoint/precision check; source images and physical PDF tables inspected"
+    },
+    {
+      "id": "RRX-CAL07-R21-N02",
+      "value": 12,
+      "reportedText": "12",
+      "units": "tumors",
+      "status": "PASS",
+      "method": "Independent source-specific numerical and arm/endpoint/precision check; source images and physical PDF tables inspected"
+    },
+    {
+      "id": "RRX-CAL07-R21-N03",
+      "value": 10,
+      "reportedText": "10",
+      "units": "tumors",
+      "status": "PASS",
+      "method": "Independent source-specific numerical and arm/endpoint/precision check; source images and physical PDF tables inspected"
+    },
+    {
+      "id": "RRX-CAL07-R21-N04",
+      "value": 10,
+      "reportedText": "10",
+      "units": "tumors",
+      "status": "PASS",
+      "method": "Independent source-specific numerical and arm/endpoint/precision check; source images and physical PDF tables inspected"
+    },
+    {
+      "id": "RRX-CAL07-R21-N05",
+      "value": 10,
+      "reportedText": "10",
+      "units": "tumors",
+      "status": "PASS",
+      "method": "Independent source-specific numerical and arm/endpoint/precision check; source images and physical PDF tables inspected"
+    },
+    {
+      "id": "RRX-CAL07-R22-N01",
+      "value": 3,
+      "reportedText": "3",
+      "units": "mice per group",
+      "status": "PASS",
+      "method": "Independent source-specific numerical and arm/endpoint/precision check; source images and physical PDF tables inspected"
+    },
+    {
+      "id": "RRX-CAL07-R23-N01",
+      "value": 220,
+      "reportedText": "220",
+      "units": "µg·hr/ml",
+      "status": "PASS",
+      "method": "Independent source-specific numerical and arm/endpoint/precision check; source images and physical PDF tables inspected"
+    },
+    {
+      "id": "RRX-CAL07-R23-N02",
+      "value": 238,
+      "reportedText": "238",
+      "units": "µg·hr/ml",
+      "status": "PASS",
+      "method": "Independent source-specific numerical and arm/endpoint/precision check; source images and physical PDF tables inspected"
+    },
+    {
+      "id": "RRX-CAL07-R24-N01",
+      "value": 0.0197,
+      "reportedText": "0.0197",
+      "units": "p value",
+      "status": "PASS",
+      "method": "Independent source-specific numerical and arm/endpoint/precision check; source images and physical PDF tables inspected"
+    },
+    {
+      "id": "RRX-CAL07-R24-N02",
+      "value": 0.0386,
+      "reportedText": "0.0386",
+      "units": "p value",
+      "status": "PASS",
+      "method": "Independent source-specific numerical and arm/endpoint/precision check; source images and physical PDF tables inspected"
+    },
+    {
+      "id": "RRX-CAL07-R25-N01",
+      "value": 0.017,
+      "reportedText": "0.017",
+      "units": "p value",
+      "status": "PASS",
+      "method": "Independent source-specific numerical and arm/endpoint/precision check; source images and physical PDF tables inspected"
+    }
+  ],
+  "numericalProseAudit": {
+    "status": "PASS",
+    "scope": "Every numerical assertion in inputs, answers, experiment descriptions, result endpoints/arms/timepoints/interpretations/limitations, claim prose, numeric precision/limitations and coverage/read notes was read against assigned sources or actual packet inventory. This includes spelled-out numbers, not just numeric tokens.",
+    "checkedCategories": [
+      "Model ages, approximate starting tumor volume and version-specific author counts",
+      "Itraconazole/cyclopamine concentrations, formulation and schedule; unequal combination dose",
+      "Reporter incubation, ciliary treatment, ligand competition induction/incubation, sterol-depletion and supplemental growth timings",
+      "Cilia numerators/denominators, ten-image summaries and triplicate reporting",
+      "Tumor counts vs animal counts, three-mouse sampling, post-day-19 n=6 reported follow-up without complete-flow inference",
+      "Supplemental S1-S4 potencies with exact units and explicit rounding/assay discrepancies",
+      "AUC values, uncertainty notation and source-specific p values",
+      "Allograft/BCC treatment and follow-up durations and mismatched comparison days"
+    ]
+  },
+  "repairResolution": {
+    "priorCandidateSha256": "a13868d03e79eec0c055be011d7bea9c1eafd392e57818c80d72fa515f90b8a7",
+    "status": "ALL_SIX_FEEDBACK_GROUPS_RESOLVED",
+    "changesChecked": [
+      "Prespecification is unreported, not proven absent",
+      "Reported tissue collection/euthanasia, with no assertion of prospective planning",
+      "Post-day-19 n=6 explicitly reported plotted follow-up; no complete physical tumor inventory claim",
+      "R25 ordinal score classified other and described as ordinal",
+      "Reporter incubation made explicit with exact P26 support",
+      "Ciliary abstract and azole Figure1 legend coverage linked to existing results"
+    ]
+  },
+  "contentJudgment": "The full review faithfully represents this declared source packet, includes positive/null/control/contradictory results, separates measured observations from author proposals and reviewer appraisal, preserves local experiment/claim identities and authentic reporting omissions, and retains preclinical translation and methodological limits.",
+  "readableReview": {
+    "path": "research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/CAL-07/returns/scientific-review.md",
+    "sha256": "457204a5a723e494a85c2f37985e8aa23a8a891400edc02c0a3f15024ba34301",
+    "all15AnswersAndRationalesMatchCandidate": true
+  },
+  "unresolvedMaterialErrors": [],
+  "limitations": [
+    "Scope is the accepted manuscript plus matched scientific companions and two dated metadata responses; inaccessible final publisher body remains explicit.",
+    "No exhaustive integrity/replication search, quantitative graph estimation, formal GRADE, human approval or public release is conferred.",
+    "This evidence is independent scientific verification of an exact private candidate, not a canonical apply action."
+  ],
+  "humanApproval": false,
+  "released": false
+}

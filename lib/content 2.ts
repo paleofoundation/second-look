@@ -1,0 +1,30 @@
+import raw from '@/data/public-content.json';
+import discoveryPages from '@/data/discovery-pages.json';
+import rawTopics from '@/data/topics.json';
+import readerData from '@/data/public-reader-evidence.json';
+import assessmentData from '@/data/public-evidence-assessments.json';
+import type {OutcomeCertainty} from '@/components/shared-theme/evidence-confidence';
+import authors from '@/data/author-profiles.json';
+export type Source={reviewState?:string;hasReviewDraft?:boolean;decisiveLimit?:string;id:string;title:string;url:string;doi?:string|null;year?:number;design?:string;population?:string;n?:number|null;access?:string;preview:string;review?:Record<string,string>;reviewSentences?:Record<string,{text:string;sources:string[]}[]>;locators?:unknown;status?:string;correction?:string;sourceType?:string;authors?:string[];pmid?:string;randomizedN?:number|null;intervention?:string;comparator?:string;familyId?:string};
+export type SourceDetail=Source & {doiMissingReason?:string;recordSections?:Section[];sampleDescription?:string;filename?:string;recordId?:string;chapter?:string;page?:string;sourceClass?:string;sourceTier?:string;preview:string};
+export type SynthesisRow={id:string;drugId:string;conditionId:string;title:string;use:string;population:string;comparison:string;endpoint:string;timepoint:string;status:'reported_result'|'background_only'|'held'|'provisional_correction_hold'|'exploratory'|'computational_result';finding:{text:string;sources:string[]};magnitudeText:string;certainty:OutcomeCertainty;evidenceBase:string;limitations:{text:string;sources:string[]}[];sourceLocators?:{sourceId:string;label:string}[];sourceIds:string[];resultIds:string[];studyFamilyIds:string[];countsAsPrimaryEvidence:boolean;answerRoutes:string[];coverage:{complete:boolean;pending:string[]};effects:{sourceId:string;design?:string;population?:string;timepoint?:string;sampleRandomized?:number|null;sampleAnalyzed?:number|null;sampleDenominatorNote?:string;sampleDescription?:string;denominatorBasis?:string;groupAnalyzedN?:number[];locators:{section?:string;table_figure?:string;pdf_page?:number|null;printed_page?:number|null}[]}[]};
+export type AuthorProfile={id:string;name:string;portrait:string;orcid:string;bio:string;website?:string};
+export const authorProfiles=authors as {profiles:AuthorProfile[];assignments:Record<string,string>;defaultAuthorId?:string};
+const assessments=new Map(assessmentData.records.map(record=>[record.rowId,record as OutcomeCertainty]));
+export const synthesisRows=(readerData as unknown as {synthesisRows:SynthesisRow[]}).synthesisRows.map(row=>({...row,certainty:assessments.get(row.id)||row.certainty}));
+export function isPrimarySource(s:Source){return !['context','review','textbook','other'].includes(s.sourceType||'primary')}
+export type CitedSentence={text:string;sources:string[]};
+export type SectionQuestion={id:string;question:string;answer:string;sources:string[];sentences?:CitedSentence[]};
+export type Section={id:string;label:string;title:string;paragraph:string;sources:string[];sentences?:CitedSentence[];questions?:SectionQuestion[]};
+export type Guide={aliases?:string[];researchGoal?:boolean;id:string;slug:string;title:string;type:string;description:string;topicIds:string[];sections:Section[];scopedSections?:Section[];scopedSectionsTitle?:string;faqs:{id?:string;questionId?:string;status?:string;question:string;answer:string;sources:string[];sentences?:{text:string;sources:string[]}[]}[];sourceIds:string[];related:string[];entityId?:string;synthesisIds?:string[];coverageLabel?:string;scope?:string;candidateLinks?:{id:string;title:string;url:string;state:string}[];originalUse?:{text:string;sourceIds:string[]};authorId?:string};
+export type Term={aliases?:string[];slug:string;title:string;meaning:string;context:string;examples:string;sources:string[];sentenceMaps?:Record<string,{text:string;sources:string[]}[]>};
+const canonicalContent=raw as unknown as {sources:SourceDetail[];guides:Guide[];glossary:Term[]};
+// Pending discovery entries share the same route, search and directory registry.
+// An evidence-backed canonical guide replaces its discovery entry by ID or route.
+// American English display copy preserves the fingerprinted source population record.
+const displaySources=canonicalContent.sources.map(source=>({...source,population:source.population==='73 men with compulsive sexual behaviour disorder'?'73 men with compulsive sexual behavior disorder':source.population}));
+export const content={...canonicalContent,sources:displaySources,guides:[...canonicalContent.guides,...(discoveryPages as Guide[]).filter(page=>!canonicalContent.guides.some(guide=>guide.id===page.id||guide.slug===page.slug))]};
+export const topics=rawTopics as unknown as {id:string;question:string;related?:string;category?:string}[];
+export function sourceById(id:string){return content.sources.find(x=>x.id===id)}
+export function guideUrl(g:Guide){return g.slug.startsWith('/')?g.slug:`/answers/${g.slug}`}
+export function allItems(){return [...content.guides.map(g=>({id:g.id,title:g.title,url:guideUrl(g),type:g.researchGoal?'Research goal':g.type,description:g.description,aliases:[...(g.aliases||[]),...g.topicIds,...(g.title.toLowerCase().includes('metformin')?['metformin hydrochloride']:[]),...(g.id==='G-NMV-TREAT'?['nirmatrelvir','ritonavir']:[]),...(g.slug.includes('long-covid')?['PASC','post-COVID-19 condition','postacute sequelae']:[])].join(' ')})),...content.sources.map(s=>({id:s.id,title:s.title,url:`/research/${s.id}`,type:isPrimarySource(s)?'Study':'Background source',description:s.preview,aliases:s.doi||''})),...content.glossary.map(t=>({id:`term-${t.slug}`,title:t.title,url:`/glossary/${t.slug}`,type:'Glossary',description:t.meaning,aliases:(t.aliases||[]).join(' ')})),...topics.map(t=>({id:t.id,title:t.question,url:`/questions#${t.id}`,type:'Question',description:'Community question · evidence coverage varies',aliases:t.category||''}))]}

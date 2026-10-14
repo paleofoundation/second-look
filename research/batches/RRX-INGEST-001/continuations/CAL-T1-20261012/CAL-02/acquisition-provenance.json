@@ -1,0 +1,74 @@
+{
+  "schemaVersion": "remaprx-calibration-received-provenance-v1",
+  "recordedAt": "2026-10-12T14:21:32.919558+00:00",
+  "packetId": "CAL-02",
+  "requestReceipts": [
+    {
+      "packetId": "CAL-02",
+      "identity": {
+        "doi": "10.1007/s40121-026-01362-z"
+      },
+      "role": "dated_integrity_metadata",
+      "url": "https://api.crossref.org/works/10.1007%2Fs40121-026-01362-z",
+      "filename": "CAL-02/crossref-1.json",
+      "mediaType": "application/json",
+      "retrievedAt": "2026-10-12T14:07:00.397066+00:00",
+      "planSha256": "5c71cc402749cc7563f9b35130da1baa6852b8b6e2f3ed813714b2a029dbaafb",
+      "status": "RECEIVED",
+      "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/private-research/RRX-INGEST-001/CAL-T1-20261012/CAL-02/crossref-1.json",
+      "bytes": 32155,
+      "sha256": "398326f15e5c089e8a412a46deae5e24fafe3d5cc043f8fea4460b15e14ab9c3",
+      "finalUrl": "https://api.crossref.org/works/10.1007%2Fs40121-026-01362-z",
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "tlsVerifyResult": 0,
+      "scientificBodyInspected": false
+    },
+    {
+      "packetId": "CAL-02",
+      "identity": {
+        "pmid": "42236640"
+      },
+      "role": "dated_integrity_metadata",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:42236640%20AND%20SRC:MED&format=json&resultType=core",
+      "filename": "CAL-02/europepmc-2.json",
+      "mediaType": "application/json",
+      "retrievedAt": "2026-10-12T14:07:00.840817+00:00",
+      "planSha256": "5c71cc402749cc7563f9b35130da1baa6852b8b6e2f3ed813714b2a029dbaafb",
+      "status": "RECEIVED",
+      "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/private-research/RRX-INGEST-001/CAL-T1-20261012/CAL-02/europepmc-2.json",
+      "bytes": 11325,
+      "sha256": "8a7687915d7ebd179d602e70058ddaed8e988d3c4248872589381998ad4171b1",
+      "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:42236640%20AND%20SRC:MED&format=json&resultType=core",
+      "httpStatus": 200,
+      "contentType": "application/json;charset=UTF-8",
+      "tlsVerifyResult": 0,
+      "scientificBodyInspected": false
+    }
+  ],
+  "originalReceipt": {
+    "path": "research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/next-acquisition/receipt.json",
+    "sha256": "2f5480d0596ae6eab3e693373b3a79a9d6ffdac5e55d08c8649f4de5f33c3608"
+  },
+  "acquisitionSnapshots": [
+    {
+      "path": "research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/CAL-02/acquisition-snapshots/bibliographic-reconciliation.json",
+      "sha256": "15facdc525d381820f61f89d6b71769edb21a160619c45c848bd91f3b84f4452"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/CAL-02/acquisition-snapshots/plan.json",
+      "sha256": "5c71cc402749cc7563f9b35130da1baa6852b8b6e2f3ed813714b2a029dbaafb"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/CAL-02/acquisition-snapshots/readiness.json",
+      "sha256": "5d2b5ee7e110b6ac68e5813b6f3de07d2b5e0d89c9fa620e80c1189cc246fc18"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/CAL-02/acquisition-snapshots/receipt.json",
+      "sha256": "2f5480d0596ae6eab3e693373b3a79a9d6ffdac5e55d08c8649f4de5f33c3608"
+    }
+  ],
+  "reviewAuthority": "Acquisition receipts authorize their original retrieval/identity scope only; this new source-review plan still requires fresh GP. Incidental abstract text during bibliographic checking is not extracted evidence.",
+  "scientificInspectionPerformed": false,
+  "performedImport": false
+}

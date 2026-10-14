@@ -1,0 +1,72 @@
+{
+  "date": "2026-10-12",
+  "scope": "Synthetic renderer adaptation only; no scientific content or release approval",
+  "sourceSha256": "038412407f00b21ec2dcfa5274c7595069efaa72ed11d1d489289161b70ddb56",
+  "adapterSha256": "0c6c14639579aae53a1c44649fee56a28f01af8002c4d9d6b61eb73794e4434d",
+  "webSchemaSha256": "c9a07bf285f600a0baef5e9d17bbbad05015a954014dc455db10b9a7e7019798",
+  "configSha256": "650bd7893ff30638bb8080e8478918b26a521a75d883cb6b8f5b5c3fc45d3d05",
+  "rendererSha256": "bb951a9b474a29322c0c6f4720fb33adcb6c84681766fd448cb29c08f4dafdc1",
+  "assets": {
+    "web-manuscript.json": {
+      "sha256": "311b51b3b42efd685068c1a153e6efd8b78bdb4b785c73929499135a4009d91d",
+      "bytes": 3768
+    },
+    "sample-candidate.json": {
+      "sha256": "6a1b027532a87999d1cdc871012190931f5ab918d473b1412a33f24360c6baf8",
+      "bytes": 2147
+    },
+    "summary-candidate.json": {
+      "sha256": "f3ee51a47dfe0b44f72df5c670676afb7a4ed9c93185549d1e5128da9ea7b71a",
+      "bytes": 1877
+    },
+    "synthetic-reading-record-0.1-fixture-full.pdf": {
+      "sha256": "3f51033c40185314cfa3c1a38675afeea57639cb1377d95c26e03be382367d22",
+      "bytes": 31602
+    },
+    "synthetic-reading-record-0.1-fixture-preview.pdf": {
+      "sha256": "eb6b0fad6ab8bb728fb0a0b02f48bb300912fdd35b84c25008473067e28dbb05",
+      "bytes": 30199
+    },
+    "synthetic-reading-record-0.1-fixture-summary.pdf": {
+      "sha256": "73f893d8e0b9d87dda23f7cf140a1da61b278bc8e62d3847b6e4b84a637505ce",
+      "bytes": 26085
+    }
+  },
+  "automatedChecks": "PASS: node scripts/check-guide-renderer.mjs with bundled Python runtime",
+  "visualReview": {
+    "status": "PASS",
+    "method": "Poppler PNGs at maximum dimension 1200, each page viewed individually",
+    "pages": {
+      "full": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "preview": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "summary": [
+        1
+      ]
+    },
+    "findings": "Legible text/citations/table/worksheet and intact margins. No clipping, overlap, blank pages or missing glyphs. Header/footer/page counts consistent."
+  },
+  "bookmarks": {
+    "full": 4,
+    "preview": 4,
+    "summary": 1
+  },
+  "links": {
+    "full": 12,
+    "preview": 9,
+    "summary": 4
+  },
+  "accessibility": "HOLD: untagged PDF; semantic reading order and PDF/UA not certified",
+  "releaseState": "private_draft",
+  "sampleApproval": "pending",
+  "pdfFilesStoredInRepository": false
+}

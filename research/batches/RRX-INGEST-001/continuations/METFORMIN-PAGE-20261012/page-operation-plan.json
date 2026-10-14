@@ -1,0 +1,33 @@
+{
+  "operation": "Fan existing metformin findings into drug and condition evidence tables",
+  "newAcquisition": false,
+  "newExtraction": false,
+  "sources": [
+    "MF-STAMPEDE-2025",
+    "MF-NRG-LU001-2021",
+    "MF-ALMERA-2021",
+    "MF-ADENOMA-2016",
+    "COND-C02-COVIDOUT-2022",
+    "MF-MASTERS-2019"
+  ],
+  "schema": "scripts/apply-reader-outcomes.py evidenceRecords and editorial/EVIDENCE-GRADING.md",
+  "integrator": "root",
+  "workers": "pipeline_audit isolated candidate; identity_review independent scientific assessment",
+  "acceptance": [
+    "Existing source IDs and source-supported prose only",
+    "Preserve source limitations, holds and no human-review claims",
+    "Exact scope identity; same row on both parents",
+    "Independent numerical claim verification and bounded editorial assessment",
+    "Current-base check; staged candidate diff; repeat apply zero changes",
+    "Content, evidence, grade, build and rendered checks"
+  ],
+  "baseHashes": {
+    "data/content.json": "551c64512b7b06e3ca706e6f3829628998db30d26e062f2b36a964f44c28e464",
+    "data/public-content.json": "a9ba035d8e93ea0e3467fcab8b11a179427e95c91228d2c52b0da2ea4b69940d",
+    "data/reader-evidence.json": "8ec76d5e8fb500df1dac7e6167332c7b283806018f1c900ea46fa9120b74c32b",
+    "data/public-reader-evidence.json": "c1ec8e426af268dfb89f69f29dfed0ec887d5e7bfc4e9e08e11102791c3143bd",
+    "data/outcome-registry.json": "076ded1a7216e647e7af22fddb8b4c70688704ef83d0a8a7bc1d69095039a810",
+    "editorial/evidence-assessments.json": "2e1c5593145fe36b527c94a2306c5eb7aa562f9f0766887f9e2f8502f7b9aabc",
+    "editorial/synthesis-identity-map.json": null
+  }
+}

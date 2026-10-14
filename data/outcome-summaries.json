@@ -1,0 +1,2774 @@
+{
+  "version": "1.0.0",
+  "method": "selected-source-benefit-v1",
+  "assessedOn": "2026-10-12",
+  "records": [
+    {
+      "id": "OUTCOME-D01-C01-DIAGNOSIS",
+      "synthesisIds": [
+        "SYN-D01-C01-DIAGNOSIS"
+      ],
+      "drugId": "D01",
+      "conditionId": "C01",
+      "label": "Long COVID diagnosis after acute infection",
+      "purpose": "prevention",
+      "grade": {
+        "value": null,
+        "label": "Correction unresolved",
+        "rationale": "Two randomized trials address later diagnosis, but COVID-OUT has an unresolved correction and ACTIV-6 has an imprecise secondary estimate. A settled benefit grade cannot be assigned while that correction remains unresolved.",
+        "sourceIds": [
+          "P-COVIDOUT-2023",
+          "P-ACTIV6-2026"
+        ]
+      },
+      "effect": {
+        "label": "Uncertain reduction",
+        "detail": "HR 0.59 in COVID-OUT; −0.7 percentage points in ACTIV-6",
+        "direction": "uncertain",
+        "rationale": "COVID-OUT reported a lower hazard of clinician-diagnosed Long COVID, with interpretation limited by an indexed correction. ACTIV-6’s secondary diagnosis estimate favored metformin but its interval included no difference. The numerical contrast is reported without assigning a small or large category because a justified clinical-importance threshold is not established in these records."
+      },
+      "evidence": {
+        "rctCount": 2,
+        "participants": 4645,
+        "participantBasis": "1431 randomized in COVID-OUT; study-level population, not the 1126-person Long COVID follow-up subset.; 3214 randomized in ACTIV-6; 2983 in the recorded analysis population.",
+        "trialFamilyIds": [
+          "S-COVIDOUT-2023",
+          "S-ACTIV6-2026"
+        ],
+        "sourceIds": [
+          "P-COVIDOUT-2023",
+          "P-ACTIV6-2026"
+        ],
+        "trials": [
+          {
+            "id": "S-COVIDOUT-2023",
+            "participants": 1431,
+            "participantBasis": "1431 randomized in COVID-OUT; study-level population, not the 1126-person Long COVID follow-up subset.",
+            "sourceIds": [
+              "P-COVIDOUT-2023"
+            ]
+          },
+          {
+            "id": "S-ACTIV6-2026",
+            "participants": 3214,
+            "participantBasis": "3214 randomized in ACTIV-6; 2983 in the recorded analysis population.",
+            "sourceIds": [
+              "P-ACTIV6-2026"
+            ]
+          }
+        ]
+      },
+      "sourceIds": [
+        "P-COVIDOUT-2023",
+        "P-ACTIV6-2026"
+      ],
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate. Long COVID prevention after acute infection and treatment of established Long COVID are separate outcomes under one condition group."
+    },
+    {
+      "id": "OUTCOME-D01-C01-SYMPTOMS",
+      "synthesisIds": [
+        "SYN-D01-C01-SYMPTOMS"
+      ],
+      "drugId": "D01",
+      "conditionId": "C01",
+      "label": "Persistent symptoms or death after acute infection",
+      "purpose": "prevention",
+      "grade": {
+        "value": "E",
+        "label": "Benefit not demonstrated",
+        "rationale": "One large randomized trial did not meet its primary efficacy threshold. Its interval allows benefit and a small increase; missing outcomes and incomplete methods access prevent a conclusion of equivalence.",
+        "sourceIds": [
+          "P-ACTIV6-2026"
+        ]
+      },
+      "effect": {
+        "label": "Benefit not demonstrated",
+        "detail": "−0.8 percentage points; 95% credible interval −2.2 to 0.6",
+        "direction": "uncertain",
+        "rationale": "ACTIV-6 did not meet its reported efficacy threshold for the primary long-term endpoint; its estimate remained compatible with a reduction or a small increase. The numerical contrast is reported without assigning a small or large category because a justified clinical-importance threshold is not established in these records."
+      },
+      "evidence": {
+        "rctCount": 1,
+        "participants": 3214,
+        "participantBasis": "3214 randomized in ACTIV-6; 2983 in the recorded analysis population.",
+        "trialFamilyIds": [
+          "S-ACTIV6-2026"
+        ],
+        "sourceIds": [
+          "P-ACTIV6-2026"
+        ],
+        "trials": [
+          {
+            "id": "S-ACTIV6-2026",
+            "participants": 3214,
+            "participantBasis": "3214 randomized in ACTIV-6; 2983 in the recorded analysis population.",
+            "sourceIds": [
+              "P-ACTIV6-2026"
+            ]
+          }
+        ]
+      },
+      "sourceIds": [
+        "P-ACTIV6-2026"
+      ],
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate. Long COVID prevention after acute infection and treatment of established Long COVID are separate outcomes under one condition group."
+    },
+    {
+      "id": "OUTCOME-D01-C01-RECOVERY",
+      "synthesisIds": [
+        "SYN-D01-C01-RECOVERY"
+      ],
+      "drugId": "D01",
+      "conditionId": "C01",
+      "label": "Recovery from established Long COVID",
+      "purpose": "treatment",
+      "grade": {
+        "value": "E",
+        "label": "Benefit not demonstrated",
+        "rationale": "The randomized metformin-placebo comparison reported fewer recoveries with metformin and did not demonstrate benefit. Abstract-only access and an unavailable between-group interval leave the effect uncertain; this treatment finding does not answer prevention.",
+        "sourceIds": [
+          "P-KOREA-2026"
+        ]
+      },
+      "effect": {
+        "label": "Benefit not demonstrated",
+        "detail": "63.6% recovered versus 68.2% at 8 weeks",
+        "direction": "uncertain",
+        "rationale": "The South Korean trial did not show improved recovery with the studied metformin course; the abstract reports fewer recovered participants in the metformin arm than the placebo arm. The numerical contrast is reported without assigning a small or large category because a justified clinical-importance threshold is not established in these records."
+      },
+      "evidence": {
+        "rctCount": 1,
+        "participants": 264,
+        "participantBasis": "264 participants in the metformin and placebo comparison (132 per arm); excludes the separate ursodeoxycholic-acid arm.",
+        "trialFamilyIds": [
+          "S-KOREA-2026"
+        ],
+        "sourceIds": [
+          "P-KOREA-2026"
+        ],
+        "trials": [
+          {
+            "id": "S-KOREA-2026",
+            "participants": 264,
+            "participantBasis": "264 participants in the metformin and placebo comparison (132 per arm); excludes the separate ursodeoxycholic-acid arm.",
+            "sourceIds": [
+              "P-KOREA-2026"
+            ]
+          }
+        ]
+      },
+      "sourceIds": [
+        "P-KOREA-2026"
+      ],
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate. Long COVID prevention after acute infection and treatment of established Long COVID are separate outcomes under one condition group."
+    },
+    {
+      "id": "OUTCOME-D03-C01-SEVERITY",
+      "synthesisIds": [
+        "SYN-D03-C01-SEVERITY"
+      ],
+      "drugId": "D03",
+      "conditionId": "C01",
+      "label": "Core symptom severity after Long COVID develops",
+      "purpose": "treatment",
+      "grade": {
+        "value": "E",
+        "label": "Benefit not demonstrated",
+        "rationale": "STOP-PASC did not demonstrate benefit on its primary severity endpoint and stopped early for futility. One small trial without a recorded pooled effect interval cannot rule out smaller effects or benefits with a different regimen.",
+        "sourceIds": [
+          "P-STOPPASC-2024"
+        ]
+      },
+      "effect": {
+        "label": "Benefit not demonstrated",
+        "detail": "No significant primary symptom-severity advantage",
+        "direction": "uncertain",
+        "rationale": "STOP-PASC did not show a statistically significant between-group difference in its primary symptom-severity outcome. The numerical contrast is reported without assigning a small or large category because a justified clinical-importance threshold is not established in these records."
+      },
+      "evidence": {
+        "rctCount": 1,
+        "participants": 155,
+        "participantBasis": "155 randomized in STOP-PASC; endpoint-specific fatigue denominators were not extracted.",
+        "trialFamilyIds": [
+          "S-STOPPASC-2024"
+        ],
+        "sourceIds": [
+          "P-STOPPASC-2024"
+        ],
+        "trials": [
+          {
+            "id": "S-STOPPASC-2024",
+            "participants": 155,
+            "participantBasis": "155 randomized in STOP-PASC; endpoint-specific fatigue denominators were not extracted.",
+            "sourceIds": [
+              "P-STOPPASC-2024"
+            ]
+          }
+        ]
+      },
+      "sourceIds": [
+        "P-STOPPASC-2024"
+      ],
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate."
+    },
+    {
+      "id": "OUTCOME-D03-C01-FATIGUE",
+      "synthesisIds": [
+        "SYN-D03-C01-FATIGUE"
+      ],
+      "drugId": "D03",
+      "conditionId": "C01",
+      "label": "Fatigue after Long COVID develops",
+      "purpose": "treatment",
+      "grade": {
+        "value": "E",
+        "label": "Benefit not demonstrated",
+        "rationale": "The secondary fatigue result from STOP-PASC does not show a clear advantage and permits differences in either direction. It is the same trial as the core-symptom row, not independent replication; multiplicity and imprecision remain material.",
+        "sourceIds": [
+          "P-STOPPASC-2024"
+        ]
+      },
+      "effect": {
+        "label": "Uncertain change",
+        "detail": "+0.38 points; 95% CI −2.40 to 3.15",
+        "direction": "uncertain",
+        "rationale": "The secondary fatigue comparison did not show a clear advantage for nirmatrelvir–ritonavir; the confidence interval included differences in either direction. The numerical contrast is reported without assigning a small or large category because a justified clinical-importance threshold is not established in these records."
+      },
+      "evidence": {
+        "rctCount": 1,
+        "participants": 155,
+        "participantBasis": "155 randomized in STOP-PASC; endpoint-specific fatigue denominators were not extracted.",
+        "trialFamilyIds": [
+          "S-STOPPASC-2024"
+        ],
+        "sourceIds": [
+          "P-STOPPASC-2024"
+        ],
+        "trials": [
+          {
+            "id": "S-STOPPASC-2024",
+            "participants": 155,
+            "participantBasis": "155 randomized in STOP-PASC; endpoint-specific fatigue denominators were not extracted.",
+            "sourceIds": [
+              "P-STOPPASC-2024"
+            ]
+          }
+        ]
+      },
+      "sourceIds": [
+        "P-STOPPASC-2024"
+      ],
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate."
+    },
+    {
+      "id": "OUTCOME-D03-C01-PHENOTYPES",
+      "synthesisIds": [
+        "SYN-D03-C01-PHENOTYPES"
+      ],
+      "drugId": "D03",
+      "conditionId": "C01",
+      "label": "Improvement in selected Long COVID symptom groups",
+      "purpose": "treatment",
+      "grade": {
+        "value": "E",
+        "label": "Benefit not demonstrated",
+        "rationale": "RECOVER-VITAL did not report a significant primary benefit for the studied phenotypes. The abstract does not provide the separate numerical effects needed to determine magnitude or exclude clinically important differences; it cannot be pooled with a different symptom endpoint.",
+        "sourceIds": [
+          "P-RECOVER-2026"
+        ]
+      },
+      "effect": {
+        "label": "Benefit not demonstrated",
+        "detail": "No significant primary benefit across the tested symptom groups",
+        "direction": "uncertain",
+        "rationale": "The RECOVER-VITAL abstract reports no statistically significant primary benefit in the selected symptom phenotypes. The numerical contrast is reported without assigning a small or large category because a justified clinical-importance threshold is not established in these records."
+      },
+      "evidence": {
+        "rctCount": 1,
+        "participants": 964,
+        "participantBasis": "964 randomized in RECOVER-VITAL; 959 in the recorded analysis population.",
+        "trialFamilyIds": [
+          "S-RECOVER-2026"
+        ],
+        "sourceIds": [
+          "P-RECOVER-2026"
+        ],
+        "trials": [
+          {
+            "id": "S-RECOVER-2026",
+            "participants": 964,
+            "participantBasis": "964 randomized in RECOVER-VITAL; 959 in the recorded analysis population.",
+            "sourceIds": [
+              "P-RECOVER-2026"
+            ]
+          }
+        ]
+      },
+      "sourceIds": [
+        "P-RECOVER-2026"
+      ],
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate."
+    },
+    {
+      "id": "OUTCOME-D01-C24-UPDRS",
+      "synthesisIds": [
+        "SYN-D01-C24-UPDRS"
+      ],
+      "drugId": "D01",
+      "conditionId": "C24",
+      "label": "Parkinson symptom severity",
+      "purpose": "treatment",
+      "grade": {
+        "value": "E",
+        "label": "Benefit not demonstrated",
+        "rationale": "The 60-person randomized pilot did not demonstrate a between-group clinical improvement. Per-protocol analysis, short follow-up and a missing effect interval prevent a reliable benefit estimate; within-group improvement and biomarkers do not establish superiority.",
+        "sourceIds": [
+          "CP016"
+        ]
+      },
+      "effect": {
+        "label": "Benefit not demonstrated",
+        "detail": "UPDRS medians 128 versus 139; P=.515",
+        "direction": "uncertain",
+        "rationale": "The pilot did not demonstrate a between-group clinical benefit on UPDRS total, despite improvement within the metformin arm. The numerical contrast is reported without assigning a small or large category because a justified clinical-importance threshold is not established in these records."
+      },
+      "evidence": {
+        "rctCount": 1,
+        "participants": 60,
+        "participantBasis": "60 randomized; 52 included in the recorded per-protocol analysis.",
+        "trialFamilyIds": [
+          "CP28-FAMILY-CP016"
+        ],
+        "sourceIds": [
+          "CP016"
+        ],
+        "trials": [
+          {
+            "id": "CP28-FAMILY-CP016",
+            "participants": 60,
+            "participantBasis": "60 randomized; 52 included in the recorded per-protocol analysis.",
+            "sourceIds": [
+              "CP016"
+            ]
+          }
+        ]
+      },
+      "sourceIds": [
+        "CP016"
+      ],
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate."
+    },
+    {
+      "id": "OUTCOME-D01-C25-EXPLORATORY",
+      "synthesisIds": [
+        "SYN-D01-C25-EXPLORATORY"
+      ],
+      "drugId": "D01",
+      "conditionId": "C25",
+      "label": "Metabolic and brain correlates of cognitive change",
+      "purpose": "mechanistic",
+      "grade": {
+        "value": null,
+        "label": "Mechanistic evidence",
+        "rationale": "This companion analysis examines associations within the same schizophrenia trial, not an independent clinical benefit test. Missing samples, unadjusted exploratory analyses and potential confounding prevent assigning a clinical benefit letter.",
+        "sourceIds": [
+          "CP017"
+        ]
+      },
+      "effect": {
+        "label": "Clinical effect not assessed",
+        "detail": "Exploratory blood and MRI associations",
+        "direction": "not_applicable",
+        "rationale": "An exploratory companion analysis linked metabolic and brain-connectivity changes with cognitive scores in the metformin schizophrenia trial. This endpoint does not quantify clinical treatment benefit."
+      },
+      "evidence": {
+        "rctCount": 0,
+        "participants": null,
+        "participantBasis": "No randomized clinical trial is represented in this selected evidence.",
+        "trialFamilyIds": [],
+        "sourceIds": [],
+        "trials": []
+      },
+      "sourceIds": [
+        "CP017"
+      ],
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate."
+    },
+    {
+      "id": "OUTCOME-D28-C11-CMAP",
+      "synthesisIds": [
+        "SYN-D28-C11-CMAP"
+      ],
+      "drugId": "D28",
+      "conditionId": "C11",
+      "label": "Clinical benefit in anti-TNF-refractory Crohn disease",
+      "purpose": "mechanistic",
+      "grade": {
+        "value": null,
+        "label": "Computational evidence",
+        "rationale": "Vorinostat was nominated by transcriptomic matching without a treated-patient comparison. The computational score measures neither symptom relief nor remission and cannot support a clinical benefit grade.",
+        "sourceIds": [
+          "CP002-R01"
+        ]
+      },
+      "effect": {
+        "label": "Not measured in patients",
+        "detail": "Computational drug nomination only",
+        "direction": "not_applicable",
+        "rationale": "Vorinostat was nominated by an original computational analysis of Crohn disease transcriptomes. The result identifies a hypothesis for experimental testing and does not demonstrate symptom improvement, remission or clinical safety. This endpoint does not quantify clinical treatment benefit."
+      },
+      "evidence": {
+        "rctCount": 0,
+        "participants": null,
+        "participantBasis": "No randomized clinical trial is represented in this selected evidence.",
+        "trialFamilyIds": [],
+        "sourceIds": [],
+        "trials": []
+      },
+      "sourceIds": [
+        "CP002-R01"
+      ],
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate."
+    },
+    {
+      "id": "OUTCOME-D29-C11-CMAP",
+      "synthesisIds": [
+        "SYN-D29-C11-CMAP"
+      ],
+      "drugId": "D29",
+      "conditionId": "C11",
+      "label": "Clinical benefit in anti-TNF-refractory Crohn disease",
+      "purpose": "mechanistic",
+      "grade": {
+        "value": null,
+        "label": "Computational evidence",
+        "rationale": "Clomipramine was nominated by transcriptomic matching without a treated-patient comparison. The computational score measures neither symptom relief nor remission and cannot support a clinical benefit grade.",
+        "sourceIds": [
+          "CP002-R01"
+        ]
+      },
+      "effect": {
+        "label": "Not measured in patients",
+        "detail": "Computational drug nomination only",
+        "direction": "not_applicable",
+        "rationale": "Clomipramine was nominated by an original computational analysis of Crohn disease transcriptomes. The result identifies a hypothesis for experimental testing and does not demonstrate symptom improvement, remission or clinical safety. This endpoint does not quantify clinical treatment benefit."
+      },
+      "evidence": {
+        "rctCount": 0,
+        "participants": null,
+        "participantBasis": "No randomized clinical trial is represented in this selected evidence.",
+        "trialFamilyIds": [],
+        "sourceIds": [],
+        "trials": []
+      },
+      "sourceIds": [
+        "CP002-R01"
+      ],
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate."
+    },
+    {
+      "id": "OUTCOME-D01-C25-COGNITION",
+      "synthesisIds": [
+        "SYN-D01-C25-COGNITION"
+      ],
+      "drugId": "D01",
+      "conditionId": "C25",
+      "label": "Cognitive test performance",
+      "purpose": "treatment",
+      "grade": {
+        "value": "C",
+        "label": "Possible benefit",
+        "rationale": "One randomized trial supports improved cognitive-test scores, with an interval favoring metformin. The small open-label design, attrition and uncertain everyday importance make benefit possible rather than firmly established; the companion mechanism paper is not replication.",
+        "sourceIds": [
+          "MF-SCHIZOPHRENIA-PARENT-2023"
+        ]
+      },
+      "effect": {
+        "label": "Improvement observed",
+        "detail": "+3.43 MCCB points; 95% CI 1.83 to 5.02",
+        "direction": "benefit",
+        "rationale": "Adjunctive metformin improved the reported composite cognitive-test score compared with antipsychotic treatment alone after 24 weeks. The numerical contrast is reported without assigning a small or large category because a justified clinical-importance threshold is not established in these records."
+      },
+      "evidence": {
+        "rctCount": 1,
+        "participants": 72,
+        "participantBasis": "72 randomized in the parent schizophrenia trial; the companion analysis is not an additional trial.",
+        "trialFamilyIds": [
+          "CP28-FAMILY-CP017-PARENT"
+        ],
+        "sourceIds": [
+          "MF-SCHIZOPHRENIA-PARENT-2023"
+        ],
+        "trials": [
+          {
+            "id": "CP28-FAMILY-CP017-PARENT",
+            "participants": 72,
+            "participantBasis": "72 randomized in the parent schizophrenia trial; the companion analysis is not an additional trial.",
+            "sourceIds": [
+              "MF-SCHIZOPHRENIA-PARENT-2023"
+            ]
+          }
+        ]
+      },
+      "sourceIds": [
+        "MF-SCHIZOPHRENIA-PARENT-2023"
+      ],
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate."
+    },
+    {
+      "id": "OUTCOME-D01-C30-METPREVENT",
+      "synthesisIds": [
+        "SYN-D01-C30-METPREVENT"
+      ],
+      "drugId": "D01",
+      "conditionId": "C30",
+      "label": "Walking speed in probable sarcopenia and frailty",
+      "purpose": "treatment",
+      "grade": {
+        "value": "E",
+        "label": "Benefit not demonstrated",
+        "rationale": "The randomized trial found a near-zero walking-speed difference and poor tolerability. Its small, narrowly selected older population and interval leave smaller effects unresolved, so this supports no demonstrated benefit rather than equivalence.",
+        "sourceIds": [
+          "MF-METPREVENT-2025"
+        ]
+      },
+      "effect": {
+        "label": "Little observed change",
+        "detail": "+0.001 m/s; 95% CI −0.06 to 0.06",
+        "direction": "uncertain",
+        "rationale": "Metformin did not improve walking speed and was poorly tolerated in older adults with probable sarcopenia and prefrailty or frailty. The numerical contrast is reported without assigning a small or large category because a justified clinical-importance threshold is not established in these records."
+      },
+      "evidence": {
+        "rctCount": 1,
+        "participants": 72,
+        "participantBasis": "72 randomized; 70 with complete follow-up.",
+        "trialFamilyIds": [
+          "S-METPREVENT-2025"
+        ],
+        "sourceIds": [
+          "MF-METPREVENT-2025"
+        ],
+        "trials": [
+          {
+            "id": "S-METPREVENT-2025",
+            "participants": 72,
+            "participantBasis": "72 randomized; 70 with complete follow-up.",
+            "sourceIds": [
+              "MF-METPREVENT-2025"
+            ]
+          }
+        ]
+      },
+      "sourceIds": [
+        "MF-METPREVENT-2025"
+      ],
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate."
+    },
+    {
+      "id": "OUTCOME-D17-C02-P-D17-PRINCIPLE",
+      "synthesisIds": [
+        "SYN-D17-C02-P-D17-PRINCIPLE"
+      ],
+      "drugId": "D17",
+      "conditionId": "C02",
+      "label": "Recovery and hospitalization during acute COVID-19",
+      "purpose": "treatment",
+      "grade": {
+        "value": "E",
+        "label": "Benefit not demonstrated",
+        "rationale": "PRINCIPLE directly tested doxycycline and found no clinically meaningful recovery or hospitalization advantage. Open-label recovery reporting and less precise severe-outcome estimates limit inference beyond the tested community population.",
+        "sourceIds": [
+          "P-D17-PRINCIPLE"
+        ]
+      },
+      "effect": {
+        "label": "No meaningful benefit reported",
+        "detail": "No clinically meaningful recovery or hospitalization benefit",
+        "direction": "uncertain",
+        "rationale": "No clinically meaningful recovery or hospitalization benefit. The numerical contrast is reported without assigning a small or large category because a justified clinical-importance threshold is not established in these records."
+      },
+      "evidence": {
+        "rctCount": 1,
+        "participants": null,
+        "participantBasis": "The randomized trial participant denominator is not present in the accepted extraction.",
+        "trialFamilyIds": [
+          "STUDY-P-D17-PRINCIPLE"
+        ],
+        "sourceIds": [
+          "P-D17-PRINCIPLE"
+        ],
+        "trials": [
+          {
+            "id": "STUDY-P-D17-PRINCIPLE",
+            "participants": null,
+            "participantBasis": "The randomized trial participant denominator is not present in the accepted extraction.",
+            "sourceIds": [
+              "P-D17-PRINCIPLE"
+            ]
+          }
+        ]
+      },
+      "sourceIds": [
+        "P-D17-PRINCIPLE"
+      ],
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate."
+    },
+    {
+      "id": "OUTCOME-D18-C04-P-D18-GBM",
+      "synthesisIds": [
+        "SYN-D18-C04-P-D18-GBM"
+      ],
+      "drugId": "D18",
+      "conditionId": "C04",
+      "label": "Survival and severe adverse events",
+      "purpose": "treatment",
+      "grade": {
+        "value": "F",
+        "label": "Benefit unlikely or harm observed",
+        "rationale": "The randomized disulfiram-copper combination did not improve survival and increased severe adverse events. The balance weighs against benefit for the tested regimen; the small trial leaves the survival-effect size uncertain and does not isolate disulfiram alone.",
+        "sourceIds": [
+          "P-D18-GBM"
+        ]
+      },
+      "effect": {
+        "label": "More severe adverse events",
+        "detail": "34% versus 11% grade 3 or higher adverse events",
+        "direction": "harm",
+        "rationale": "No significant survival improvement; increased severe adverse events. The numerical contrast is reported without assigning a small or large category because a justified clinical-importance threshold is not established in these records."
+      },
+      "evidence": {
+        "rctCount": 1,
+        "participants": 88,
+        "participantBasis": "88 participants in the reported randomized trial population.",
+        "trialFamilyIds": [
+          "STUDY-P-D18-GBM"
+        ],
+        "sourceIds": [
+          "P-D18-GBM"
+        ],
+        "trials": [
+          {
+            "id": "STUDY-P-D18-GBM",
+            "participants": 88,
+            "participantBasis": "88 participants in the reported randomized trial population.",
+            "sourceIds": [
+              "P-D18-GBM"
+            ]
+          }
+        ]
+      },
+      "sourceIds": [
+        "P-D18-GBM"
+      ],
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate."
+    },
+    {
+      "id": "OUTCOME-D19-C18-P-D19-MELANOMA",
+      "synthesisIds": [
+        "SYN-D19-C18-P-D19-MELANOMA"
+      ],
+      "drugId": "D19",
+      "conditionId": "C18",
+      "label": "Tumor response with pembrolizumab",
+      "purpose": "treatment",
+      "grade": {
+        "value": "D",
+        "label": "Benefit uncertain",
+        "rationale": "Responses occurred with propranolol plus active pembrolizumab, but nine uncontrolled observations cannot isolate propranolol benefit. The dose-finding design and lack of replication keep the clinical benefit uncertain.",
+        "sourceIds": [
+          "P-D19-MELANOMA"
+        ]
+      },
+      "effect": {
+        "label": "Added benefit uncertain",
+        "detail": "78% response in an uncontrolled 9-person study",
+        "direction": "uncertain",
+        "rationale": "Responses occurred; propranolol contribution is not isolated. The numerical contrast is reported without assigning a small or large category because a justified clinical-importance threshold is not established in these records."
+      },
+      "evidence": {
+        "rctCount": 0,
+        "participants": null,
+        "participantBasis": "No randomized clinical trial is represented in this selected evidence.",
+        "trialFamilyIds": [],
+        "sourceIds": [],
+        "trials": []
+      },
+      "sourceIds": [
+        "P-D19-MELANOMA"
+      ],
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate."
+    },
+    {
+      "id": "OUTCOME-D20-C17-P-D20-PANCREAS",
+      "synthesisIds": [
+        "SYN-D20-C17-P-D20-PANCREAS"
+      ],
+      "drugId": "D20",
+      "conditionId": "C17",
+      "label": "Time to pancreatic cancer progression",
+      "purpose": "treatment",
+      "grade": {
+        "value": "E",
+        "label": "Benefit not demonstrated",
+        "rationale": "The randomized placebo-controlled combination trial did not show a progression advantage. One modest phase II sample and no recorded between-group interval leave smaller effects uncertain rather than establishing equivalence.",
+        "sourceIds": [
+          "P-D20-PANCREAS"
+        ]
+      },
+      "effect": {
+        "label": "Benefit not demonstrated",
+        "detail": "Median 2.4 versus 3.6 months",
+        "direction": "uncertain",
+        "rationale": "No significant improvement. The numerical contrast is reported without assigning a small or large category because a justified clinical-importance threshold is not established in these records."
+      },
+      "evidence": {
+        "rctCount": 1,
+        "participants": 114,
+        "participantBasis": "114 participants in the reported randomized trial population.",
+        "trialFamilyIds": [
+          "STUDY-P-D20-PANCREAS"
+        ],
+        "sourceIds": [
+          "P-D20-PANCREAS"
+        ],
+        "trials": [
+          {
+            "id": "STUDY-P-D20-PANCREAS",
+            "participants": 114,
+            "participantBasis": "114 participants in the reported randomized trial population.",
+            "sourceIds": [
+              "P-D20-PANCREAS"
+            ]
+          }
+        ]
+      },
+      "sourceIds": [
+        "P-D20-PANCREAS"
+      ],
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate."
+    },
+    {
+      "id": "OUTCOME-D21-C13-P-D21-PROSTATE",
+      "synthesisIds": [
+        "SYN-D21-C13-P-D21-PROSTATE"
+      ],
+      "drugId": "D21",
+      "conditionId": "C13",
+      "label": "PSA response with enzalutamide",
+      "purpose": "treatment",
+      "grade": {
+        "value": "D",
+        "label": "Benefit uncertain",
+        "rationale": "The five-person uncontrolled phase I study observed no PSA declines and dose-limiting toxicity. It supplies a discouraging feasibility signal but cannot estimate comparative efficacy or reliably exclude benefit.",
+        "sourceIds": [
+          "P-D21-PROSTATE"
+        ]
+      },
+      "effect": {
+        "label": "Benefit uncertain",
+        "detail": "No PSA declines; dose escalation limited by gastrointestinal toxicity",
+        "direction": "uncertain",
+        "rationale": "No PSA reductions; gastrointestinal toxicity limited escalation. The numerical contrast is reported without assigning a small or large category because a justified clinical-importance threshold is not established in these records."
+      },
+      "evidence": {
+        "rctCount": 0,
+        "participants": null,
+        "participantBasis": "No randomized clinical trial is represented in this selected evidence.",
+        "trialFamilyIds": [],
+        "sourceIds": [],
+        "trials": []
+      },
+      "sourceIds": [
+        "P-D21-PROSTATE"
+      ],
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate."
+    },
+    {
+      "id": "OUTCOME-D22-C02-P-D22-RECOVERY",
+      "synthesisIds": [
+        "SYN-D22-C02-P-D22-RECOVERY"
+      ],
+      "drugId": "D22",
+      "conditionId": "C02",
+      "label": "Mortality in hospitalized acute COVID-19",
+      "purpose": "treatment",
+      "grade": {
+        "value": "F",
+        "label": "Benefit unlikely or harm observed",
+        "rationale": "The large randomized RECOVERY comparison with objective mortality and near-complete follow-up excludes a substantial mortality reduction in this hospitalized population. A small reduction remains possible, while the estimate also permits harm; this is evidence against meaningful mortality benefit, not missing evidence.",
+        "sourceIds": [
+          "P-D22-RECOVERY"
+        ]
+      },
+      "effect": {
+        "label": "No meaningful reduction supported",
+        "detail": "27.0% versus 25.0%; rate ratio 1.09 (95% CI 0.97–1.23)",
+        "direction": "uncertain",
+        "rationale": "No mortality reduction. The numerical contrast is reported without assigning a small or large category because a justified clinical-importance threshold is not established in these records."
+      },
+      "evidence": {
+        "rctCount": 1,
+        "participants": 4716,
+        "participantBasis": "4716 participants in the reported randomized hydroxychloroquine comparison.",
+        "trialFamilyIds": [
+          "STUDY-P-D22-RECOVERY"
+        ],
+        "sourceIds": [
+          "P-D22-RECOVERY"
+        ],
+        "trials": [
+          {
+            "id": "STUDY-P-D22-RECOVERY",
+            "participants": 4716,
+            "participantBasis": "4716 participants in the reported randomized hydroxychloroquine comparison.",
+            "sourceIds": [
+              "P-D22-RECOVERY"
+            ]
+          }
+        ]
+      },
+      "sourceIds": [
+        "P-D22-RECOVERY"
+      ],
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate."
+    },
+    {
+      "id": "OUTCOME-D22-C03-P-D22-OVARIAN",
+      "synthesisIds": [
+        "SYN-D22-C03-P-D22-OVARIAN"
+      ],
+      "drugId": "D22",
+      "conditionId": "C03",
+      "label": "Tumor response and progression-free survival",
+      "purpose": "treatment",
+      "grade": {
+        "value": "E",
+        "label": "Benefit not demonstrated",
+        "rationale": "The small randomized trial did not demonstrate improved response or progression-free survival. Its wide interval spans substantial benefit and harm, so the grade records a negative but inconclusive clinical comparison rather than equivalence.",
+        "sourceIds": [
+          "P-D22-OVARIAN"
+        ]
+      },
+      "effect": {
+        "label": "Uncertain change",
+        "detail": "Response 85% versus 80%; PFS HR 0.84 (95% CI 0.45–1.57)",
+        "direction": "uncertain",
+        "rationale": "No significant efficacy advantage. The numerical contrast is reported without assigning a small or large category because a justified clinical-importance threshold is not established in these records."
+      },
+      "evidence": {
+        "rctCount": 1,
+        "participants": 59,
+        "participantBasis": "59 randomized; 56 response-evaluable participants.",
+        "trialFamilyIds": [
+          "STUDY-P-D22-OVARIAN"
+        ],
+        "sourceIds": [
+          "P-D22-OVARIAN"
+        ],
+        "trials": [
+          {
+            "id": "STUDY-P-D22-OVARIAN",
+            "participants": 59,
+            "participantBasis": "59 randomized; 56 response-evaluable participants.",
+            "sourceIds": [
+              "P-D22-OVARIAN"
+            ]
+          }
+        ]
+      },
+      "sourceIds": [
+        "P-D22-OVARIAN"
+      ],
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate."
+    },
+    {
+      "id": "OUTCOME-D24-C23-COND-C23-ACTIM-2017",
+      "synthesisIds": [
+        "SYN-D24-C23-COND-C23-ACTIM-2017"
+      ],
+      "drugId": "D24",
+      "conditionId": "C23",
+      "label": "Deep molecular response on imatinib",
+      "purpose": "treatment",
+      "grade": {
+        "value": "D",
+        "label": "Benefit uncertain",
+        "rationale": "The 24-person single-arm study observed deeper molecular responses, but continued imatinib, selection and time cannot be separated from pioglitazone. A molecular signal without a randomized comparison does not establish clinical benefit.",
+        "sourceIds": [
+          "COND-C23-ACTIM-2017"
+        ]
+      },
+      "effect": {
+        "label": "Added benefit uncertain",
+        "detail": "56% achieved MR 4.5 in an uncontrolled study",
+        "direction": "uncertain",
+        "rationale": "Deeper molecular responses observed. The numerical contrast is reported without assigning a small or large category because a justified clinical-importance threshold is not established in these records."
+      },
+      "evidence": {
+        "rctCount": 0,
+        "participants": null,
+        "participantBasis": "No randomized clinical trial is represented in this selected evidence.",
+        "trialFamilyIds": [],
+        "sourceIds": [],
+        "trials": []
+      },
+      "sourceIds": [
+        "COND-C23-ACTIM-2017"
+      ],
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate."
+    },
+    {
+      "id": "OUTCOME-D24-C30-P-D24-MUSCLE",
+      "synthesisIds": [
+        "SYN-D24-C30-P-D24-MUSCLE"
+      ],
+      "drugId": "D24",
+      "conditionId": "C30",
+      "label": "Leg-press power during weight loss",
+      "purpose": "treatment",
+      "grade": {
+        "value": "D",
+        "label": "Benefit uncertain",
+        "rationale": "The factorial trial found a sex-dependent training interaction, with no consistent general benefit and no extracted effect magnitude. Unknown prespecification and multiplicity, and a population without necessarily diagnosed sarcopenia, prevent a stronger benefit interpretation.",
+        "sourceIds": [
+          "P-D24-MUSCLE"
+        ]
+      },
+      "effect": {
+        "label": "Mixed subgroup findings",
+        "detail": "Training interaction in women; not in men",
+        "direction": "mixed",
+        "rationale": "Training interaction in women but not men. The numerical contrast is reported without assigning a small or large category because a justified clinical-importance threshold is not established in these records."
+      },
+      "evidence": {
+        "rctCount": 1,
+        "participants": 88,
+        "participantBasis": "88 participants in the reported randomized factorial trial population; sex-specific endpoint denominators are not supplied.",
+        "trialFamilyIds": [
+          "STUDY-P-D24-MUSCLE"
+        ],
+        "sourceIds": [
+          "P-D24-MUSCLE"
+        ],
+        "trials": [
+          {
+            "id": "STUDY-P-D24-MUSCLE",
+            "participants": 88,
+            "participantBasis": "88 participants in the reported randomized factorial trial population; sex-specific endpoint denominators are not supplied.",
+            "sourceIds": [
+              "P-D24-MUSCLE"
+            ]
+          }
+        ]
+      },
+      "sourceIds": [
+        "P-D24-MUSCLE"
+      ],
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate."
+    },
+    {
+      "id": "OUTCOME-D27-C12-P-D27-HNSCC",
+      "synthesisIds": [
+        "SYN-D27-C12-P-D27-HNSCC"
+      ],
+      "drugId": "D27",
+      "conditionId": "C12",
+      "label": "Tumor response with chemoradiation",
+      "purpose": "treatment",
+      "grade": {
+        "value": "D",
+        "label": "Benefit uncertain",
+        "rationale": "The uncontrolled valproate-chemoradiation study cannot isolate an added response benefit and stopped early because of prohibitive toxicity. Its small sample does not establish that response represents benefit from valproate itself.",
+        "sourceIds": [
+          "P-D27-HNSCC"
+        ]
+      },
+      "effect": {
+        "label": "Added benefit uncertain",
+        "detail": "88% response among 9 evaluable patients; prohibitive toxicity",
+        "direction": "uncertain",
+        "rationale": "High response with prohibitive toxicity and early termination. The numerical contrast is reported without assigning a small or large category because a justified clinical-importance threshold is not established in these records."
+      },
+      "evidence": {
+        "rctCount": 0,
+        "participants": null,
+        "participantBasis": "No randomized clinical trial is represented in this selected evidence.",
+        "trialFamilyIds": [],
+        "sourceIds": [],
+        "trials": []
+      },
+      "sourceIds": [
+        "P-D27-HNSCC"
+      ],
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate."
+    },
+    {
+      "id": "OUTCOME-D27-C22-COND-C22-VPA-2019",
+      "synthesisIds": [
+        "SYN-D27-C22-COND-C22-VPA-2019"
+      ],
+      "drugId": "D27",
+      "conditionId": "C22",
+      "label": "Remission and survival in older adults with AML",
+      "purpose": "treatment",
+      "grade": {
+        "value": "E",
+        "label": "Benefit not demonstrated",
+        "rationale": "The randomized factorial comparison did not demonstrate a remission or survival advantage from valproate. The remission interval is wide and the survival interval is unavailable; benefit from the separately randomized ATRA treatment cannot be assigned to valproate.",
+        "sourceIds": [
+          "COND-C22-VPA-2019"
+        ]
+      },
+      "effect": {
+        "label": "Benefit not demonstrated",
+        "detail": "Remission 17.8% versus 17.2%; OR 1.06 (95% CI 0.51–2.21)",
+        "direction": "uncertain",
+        "rationale": "No valproate remission or survival advantage. The numerical contrast is reported without assigning a small or large category because a justified clinical-importance threshold is not established in these records."
+      },
+      "evidence": {
+        "rctCount": 1,
+        "participants": 200,
+        "participantBasis": "200 participants in the reported randomized factorial trial population.",
+        "trialFamilyIds": [
+          "STUDY-COND-C22-VPA-2019"
+        ],
+        "sourceIds": [
+          "COND-C22-VPA-2019"
+        ],
+        "trials": [
+          {
+            "id": "STUDY-COND-C22-VPA-2019",
+            "participants": 200,
+            "participantBasis": "200 participants in the reported randomized factorial trial population.",
+            "sourceIds": [
+              "COND-C22-VPA-2019"
+            ]
+          }
+        ]
+      },
+      "sourceIds": [
+        "COND-C22-VPA-2019"
+      ],
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate."
+    },
+    {
+      "id": "OUTCOME-D30-C26-P-D30-ALZHEIMER",
+      "synthesisIds": [
+        "SYN-D30-C26-P-D30-ALZHEIMER"
+      ],
+      "drugId": "D30",
+      "conditionId": "C26",
+      "label": "Cognition and tolerability in Alzheimer disease",
+      "purpose": "treatment",
+      "grade": {
+        "value": "E",
+        "label": "Benefit not demonstrated",
+        "rationale": "The small placebo-controlled trial did not show cognitive benefit and was poorly tolerated. Extensive early discontinuation and inability to sustain dosing limit the efficacy comparison; the result is not a precise estimate of no effect.",
+        "sourceIds": [
+          "P-D30-ALZHEIMER"
+        ]
+      },
+      "effect": {
+        "label": "Benefit not demonstrated",
+        "detail": "No cognitive benefit; 14 of 25 stopped early",
+        "direction": "uncertain",
+        "rationale": "No cognitive benefit; poor tolerability. The numerical contrast is reported without assigning a small or large category because a justified clinical-importance threshold is not established in these records."
+      },
+      "evidence": {
+        "rctCount": 1,
+        "participants": 25,
+        "participantBasis": "25 randomized; 14 terminated treatment early.",
+        "trialFamilyIds": [
+          "STUDY-P-D30-ALZHEIMER"
+        ],
+        "sourceIds": [
+          "P-D30-ALZHEIMER"
+        ],
+        "trials": [
+          {
+            "id": "STUDY-P-D30-ALZHEIMER",
+            "participants": 25,
+            "participantBasis": "25 randomized; 14 terminated treatment early.",
+            "sourceIds": [
+              "P-D30-ALZHEIMER"
+            ]
+          }
+        ]
+      },
+      "sourceIds": [
+        "P-D30-ALZHEIMER"
+      ],
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate."
+    },
+    {
+      "id": "OUTCOME-D30-C03-P-D30-OVARIAN",
+      "synthesisIds": [
+        "SYN-D30-C03-P-D30-OVARIAN"
+      ],
+      "drugId": "D30",
+      "conditionId": "C03",
+      "label": "Progression, mortality and toxicity",
+      "purpose": "treatment",
+      "grade": {
+        "value": "F",
+        "label": "Benefit unlikely or harm observed",
+        "rationale": "The randomized comparison favored tamoxifen over thalidomide for mortality and toxicity without a progression benefit. That direct harmful signal weighs against benefit in biochemical recurrence; early closure and incomplete full-methods appraisal still limit its precision and generalizability.",
+        "sourceIds": [
+          "P-D30-OVARIAN"
+        ]
+      },
+      "effect": {
+        "label": "Worse outcomes observed",
+        "detail": "Death HR 1.76 (95% CI 1.16–2.68); severe toxicity 55% versus 3%",
+        "direction": "harm",
+        "rationale": "No progression benefit; greater mortality and toxicity. The numerical contrast is reported without assigning a small or large category because a justified clinical-importance threshold is not established in these records."
+      },
+      "evidence": {
+        "rctCount": 1,
+        "participants": 139,
+        "participantBasis": "139 women in the reported randomized trial population.",
+        "trialFamilyIds": [
+          "STUDY-P-D30-OVARIAN"
+        ],
+        "sourceIds": [
+          "P-D30-OVARIAN"
+        ],
+        "trials": [
+          {
+            "id": "STUDY-P-D30-OVARIAN",
+            "participants": 139,
+            "participantBasis": "139 women in the reported randomized trial population.",
+            "sourceIds": [
+              "P-D30-OVARIAN"
+            ]
+          }
+        ]
+      },
+      "sourceIds": [
+        "P-D30-OVARIAN"
+      ],
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate."
+    },
+    {
+      "id": "OUTCOME-D30-C13-P-D30-PROSTATE",
+      "synthesisIds": [
+        "SYN-D30-C13-P-D30-PROSTATE"
+      ],
+      "drugId": "D30",
+      "conditionId": "C13",
+      "label": "PSA response and progression-free survival",
+      "purpose": "treatment",
+      "grade": {
+        "value": "D",
+        "label": "Benefit uncertain",
+        "rationale": "The small randomized trial reported more PSA responses but no significant progression-free survival advantage. Missing effect intervals and a mid-study thromboprophylaxis change leave benefit uncertain; PSA response cannot substitute for survival.",
+        "sourceIds": [
+          "P-D30-PROSTATE"
+        ]
+      },
+      "effect": {
+        "label": "Mixed outcome findings",
+        "detail": "PSA decline >50%: 53% versus 37%; PFS P=.32",
+        "direction": "mixed",
+        "rationale": "Higher PSA decline frequency; nonsignificant PFS difference. The numerical contrast is reported without assigning a small or large category because a justified clinical-importance threshold is not established in these records."
+      },
+      "evidence": {
+        "rctCount": 1,
+        "participants": 75,
+        "participantBasis": "75 participants in the reported randomized trial population.",
+        "trialFamilyIds": [
+          "STUDY-P-D30-PROSTATE"
+        ],
+        "sourceIds": [
+          "P-D30-PROSTATE"
+        ],
+        "trials": [
+          {
+            "id": "STUDY-P-D30-PROSTATE",
+            "participants": 75,
+            "participantBasis": "75 participants in the reported randomized trial population.",
+            "sourceIds": [
+              "P-D30-PROSTATE"
+            ]
+          }
+        ]
+      },
+      "sourceIds": [
+        "P-D30-PROSTATE"
+      ],
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate."
+    },
+    {
+      "id": "OUTCOME-D30-C16-P-D30-CRC",
+      "synthesisIds": [
+        "SYN-D30-C16-P-D30-CRC"
+      ],
+      "drugId": "D30",
+      "conditionId": "C16",
+      "label": "Tumor response and time to progression",
+      "purpose": "treatment",
+      "grade": {
+        "value": "E",
+        "label": "Benefit not demonstrated",
+        "rationale": "Neither response nor progression improvement was established in the randomized comparison. Positive point estimates without intervals or a recorded sample denominator leave potentially useful effects unresolved; nonsignificance is not equivalence.",
+        "sourceIds": [
+          "P-D30-CRC"
+        ]
+      },
+      "effect": {
+        "label": "Uncertain change",
+        "detail": "Response 28.1% versus 15.2%; progression 3.8 versus 2.5 months",
+        "direction": "uncertain",
+        "rationale": "No significant improvement in response or progression. The numerical contrast is reported without assigning a small or large category because a justified clinical-importance threshold is not established in these records."
+      },
+      "evidence": {
+        "rctCount": 1,
+        "participants": null,
+        "participantBasis": "The randomized trial sample size was not extracted in the accepted record.",
+        "trialFamilyIds": [
+          "STUDY-P-D30-CRC"
+        ],
+        "sourceIds": [
+          "P-D30-CRC"
+        ],
+        "trials": [
+          {
+            "id": "STUDY-P-D30-CRC",
+            "participants": null,
+            "participantBasis": "The randomized trial sample size was not extracted in the accepted record.",
+            "sourceIds": [
+              "P-D30-CRC"
+            ]
+          }
+        ]
+      },
+      "sourceIds": [
+        "P-D30-CRC"
+      ],
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate."
+    },
+    {
+      "id": "OUTCOME-D07-C03-COND-C03-ITRA-2014",
+      "synthesisIds": [
+        "SYN-D07-C03-COND-C03-ITRA-2014"
+      ],
+      "drugId": "D07",
+      "conditionId": "C03",
+      "label": "Tumor response with chemotherapy",
+      "purpose": "treatment",
+      "grade": {
+        "value": "D",
+        "label": "Benefit uncertain",
+        "rationale": "A retrospective nine-person combination series observed responses but provides no concurrent comparison to isolate itraconazole. The broad response interval and active chemotherapy partners make the added benefit uncertain.",
+        "sourceIds": [
+          "COND-C03-ITRA-2014"
+        ]
+      },
+      "effect": {
+        "label": "Added benefit uncertain",
+        "detail": "44% response; 95% CI 12% to 77%",
+        "direction": "uncertain",
+        "rationale": "Tumor responses observed; itraconazole contribution cannot be isolated. The numerical contrast is reported without assigning a small or large category because a justified clinical-importance threshold is not established in these records."
+      },
+      "evidence": {
+        "rctCount": 0,
+        "participants": null,
+        "participantBasis": "No randomized clinical trial is represented in this selected evidence.",
+        "trialFamilyIds": [],
+        "sourceIds": [],
+        "trials": []
+      },
+      "sourceIds": [
+        "COND-C03-ITRA-2014"
+      ],
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate."
+    },
+    {
+      "id": "OUTCOME-D09-C04-COND-C04-MEB-2021",
+      "synthesisIds": [
+        "SYN-D09-C04-COND-C04-MEB-2021"
+      ],
+      "drugId": "D09",
+      "conditionId": "C04",
+      "label": "Combination tolerability and exposure",
+      "purpose": "safety",
+      "grade": {
+        "value": null,
+        "label": "Safety and feasibility",
+        "rationale": "The uncontrolled dose-escalation study assessed initial tolerability and exposure. It neither establishes a survival benefit nor supports a broad safety claim, so an efficacy letter is not applicable.",
+        "sourceIds": [
+          "COND-C04-MEB-2021"
+        ]
+      },
+      "effect": {
+        "label": "Clinical benefit not assessed",
+        "detail": "24 enrolled; liver-enzyme elevations reported",
+        "direction": "not_applicable",
+        "rationale": "Feasibility studied; no controlled survival effect. This endpoint does not quantify clinical treatment benefit."
+      },
+      "evidence": {
+        "rctCount": 0,
+        "participants": null,
+        "participantBasis": "No randomized clinical trial is represented in this selected evidence.",
+        "trialFamilyIds": [],
+        "sourceIds": [],
+        "trials": []
+      },
+      "sourceIds": [
+        "COND-C04-MEB-2021"
+      ],
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate."
+    },
+    {
+      "id": "OUTCOME-D04-C05-P-D04-FIBRO-2024",
+      "synthesisIds": [
+        "SYN-D04-C05-P-D04-FIBRO-2024"
+      ],
+      "drugId": "D04",
+      "conditionId": "C05",
+      "label": "Average fibromyalgia pain",
+      "purpose": "treatment",
+      "grade": {
+        "value": "E",
+        "label": "Benefit not demonstrated",
+        "rationale": "One blinded randomized trial did not demonstrate superiority for pain relief. The interval still allows modest improvement; the short women-only study and limited full-text appraisal do not establish equivalence or broader benefit.",
+        "sourceIds": [
+          "P-D04-FIBRO-2024"
+        ]
+      },
+      "effect": {
+        "label": "Uncertain pain reduction",
+        "detail": "−0.34 points; 95% CI −0.95 to 0.27",
+        "direction": "uncertain",
+        "rationale": "No significant superiority. The numerical contrast is reported without assigning a small or large category because a justified clinical-importance threshold is not established in these records."
+      },
+      "evidence": {
+        "rctCount": 1,
+        "participants": 99,
+        "participantBasis": "99 women in the reported randomized trial population.",
+        "trialFamilyIds": [
+          "STUDY-P-D04-FIBRO-2024"
+        ],
+        "sourceIds": [
+          "P-D04-FIBRO-2024"
+        ],
+        "trials": [
+          {
+            "id": "STUDY-P-D04-FIBRO-2024",
+            "participants": 99,
+            "participantBasis": "99 women in the reported randomized trial population.",
+            "sourceIds": [
+              "P-D04-FIBRO-2024"
+            ]
+          }
+        ]
+      },
+      "sourceIds": [
+        "P-D04-FIBRO-2024"
+      ],
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate."
+    },
+    {
+      "id": "OUTCOME-D04-C07-P-D04-CSBD-2022",
+      "synthesisIds": [
+        "SYN-D04-C07-P-D04-CSBD-2022"
+      ],
+      "drugId": "D04",
+      "conditionId": "C07",
+      "label": "Compulsive sexual behavior symptoms",
+      "purpose": "treatment",
+      "grade": {
+        "value": "D",
+        "label": "Benefit uncertain",
+        "rationale": "The small three-arm trial produced different conclusions across self-report and interview measures. Limited naltrexone exposure, multiple comparisons and a restricted male population prevent a consistent estimate of clinical benefit.",
+        "sourceIds": [
+          "P-D04-CSBD-2022"
+        ]
+      },
+      "effect": {
+        "label": "Mixed measurement findings",
+        "detail": "Self-reports showed no clear separation; some interviews favored treatment",
+        "direction": "mixed",
+        "rationale": "Self-report no clear separation; some interviews favored active treatment. The numerical contrast is reported without assigning a small or large category because a justified clinical-importance threshold is not established in these records."
+      },
+      "evidence": {
+        "rctCount": 1,
+        "participants": 73,
+        "participantBasis": "73 randomized across naltrexone, paroxetine and placebo; 24 received naltrexone. This is the full three-arm trial population.",
+        "trialFamilyIds": [
+          "STUDY-P-D04-CSBD-2022"
+        ],
+        "sourceIds": [
+          "P-D04-CSBD-2022"
+        ],
+        "trials": [
+          {
+            "id": "STUDY-P-D04-CSBD-2022",
+            "participants": 73,
+            "participantBasis": "73 randomized across naltrexone, paroxetine and placebo; 24 received naltrexone. This is the full three-arm trial population.",
+            "sourceIds": [
+              "P-D04-CSBD-2022"
+            ]
+          }
+        ]
+      },
+      "sourceIds": [
+        "P-D04-CSBD-2022"
+      ],
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate."
+    },
+    {
+      "id": "OUTCOME-D05-C09-P-D05-PAXD-2025",
+      "synthesisIds": [
+        "SYN-D05-C09-P-D05-PAXD-2025"
+      ],
+      "drugId": "D05",
+      "conditionId": "C09",
+      "label": "Depressive symptoms with augmentation",
+      "purpose": "treatment",
+      "grade": {
+        "value": null,
+        "label": "Correction unresolved",
+        "rationale": "The reported randomized symptom benefit cannot receive a settled letter until the published correction is reconciled. Higher adverse-event discontinuation also matters; the apparently precise uncorrected estimate must not bypass the source-integrity hold.",
+        "sourceIds": [
+          "P-D05-PAXD-2025"
+        ]
+      },
+      "effect": {
+        "label": "Reported improvement on hold",
+        "detail": "QIDS-SR difference −3.91; 95% CI −5.37 to −2.45",
+        "direction": "uncertain",
+        "rationale": "Greater reduction with pramipexole. The numerical contrast is reported without assigning a small or large category because a justified clinical-importance threshold is not established in these records."
+      },
+      "evidence": {
+        "rctCount": 1,
+        "participants": 151,
+        "participantBasis": "151 randomized; 150 eligible for the reported primary comparison.",
+        "trialFamilyIds": [
+          "STUDY-P-D05-PAXD-2025"
+        ],
+        "sourceIds": [
+          "P-D05-PAXD-2025"
+        ],
+        "trials": [
+          {
+            "id": "STUDY-P-D05-PAXD-2025",
+            "participants": 151,
+            "participantBasis": "151 randomized; 150 eligible for the reported primary comparison.",
+            "sourceIds": [
+              "P-D05-PAXD-2025"
+            ]
+          }
+        ]
+      },
+      "sourceIds": [
+        "P-D05-PAXD-2025"
+      ],
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate."
+    },
+    {
+      "id": "OUTCOME-D17-C10-COND-C10-DOXY-2004",
+      "synthesisIds": [
+        "SYN-D17-C10-COND-C10-DOXY-2004"
+      ],
+      "drugId": "D17",
+      "conditionId": "C10",
+      "label": "Clinical attachment and periodontal pocket depth",
+      "purpose": "treatment",
+      "grade": {
+        "value": "C",
+        "label": "Possible benefit",
+        "rationale": "One multicenter randomized trial supports an adjunctive improvement after scaling and root planing. Missing numerical effect sizes, intervals and detailed methods prevent judging clinical magnitude or stronger benefit; doxycycline does not replace mechanical treatment.",
+        "sourceIds": [
+          "COND-C10-DOXY-2004"
+        ]
+      },
+      "effect": {
+        "label": "Improvement reported",
+        "detail": "Greater attachment gain and pocket-depth reduction",
+        "direction": "benefit",
+        "rationale": "Greater improvement with doxycycline adjunct. The numerical contrast is reported without assigning a small or large category because a justified clinical-importance threshold is not established in these records."
+      },
+      "evidence": {
+        "rctCount": 1,
+        "participants": 209,
+        "participantBasis": "209 participants in the reported multicenter randomized trial population.",
+        "trialFamilyIds": [
+          "STUDY-COND-C10-DOXY-2004"
+        ],
+        "sourceIds": [
+          "COND-C10-DOXY-2004"
+        ],
+        "trials": [
+          {
+            "id": "STUDY-COND-C10-DOXY-2004",
+            "participants": 209,
+            "participantBasis": "209 participants in the reported multicenter randomized trial population.",
+            "sourceIds": [
+              "COND-C10-DOXY-2004"
+            ]
+          }
+        ]
+      },
+      "sourceIds": [
+        "COND-C10-DOXY-2004"
+      ],
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate."
+    },
+    {
+      "id": "OUTCOME-D07-C13-P-D07-PROSTATE-2013",
+      "synthesisIds": [
+        "SYN-D07-C13-P-D07-PROSTATE-2013"
+      ],
+      "drugId": "D07",
+      "conditionId": "C13",
+      "label": "PSA progression-free status",
+      "purpose": "treatment",
+      "grade": {
+        "value": "D",
+        "label": "Benefit uncertain",
+        "rationale": "The randomized dose study suggests greater activity at the higher dose, but both arms received itraconazole and there was no standard-care control. Small unequal groups, early low-dose closure and missing intervals prevent establishing its added clinical benefit.",
+        "sourceIds": [
+          "P-D07-PROSTATE-2013"
+        ]
+      },
+      "effect": {
+        "label": "Dose-specific activity signal",
+        "detail": "11.8% at low dose versus 48.0% at high dose",
+        "direction": "uncertain",
+        "rationale": "Higher-dose group met prespecified activity threshold. The numerical contrast is reported without assigning a small or large category because a justified clinical-importance threshold is not established in these records."
+      },
+      "evidence": {
+        "rctCount": 1,
+        "participants": 46,
+        "participantBasis": "46 randomized across two itraconazole doses; no standard-care control arm.",
+        "trialFamilyIds": [
+          "STUDY-P-D07-PROSTATE-2013"
+        ],
+        "sourceIds": [
+          "P-D07-PROSTATE-2013"
+        ],
+        "trials": [
+          {
+            "id": "STUDY-P-D07-PROSTATE-2013",
+            "participants": 46,
+            "participantBasis": "46 randomized across two itraconazole doses; no standard-care control arm.",
+            "sourceIds": [
+              "P-D07-PROSTATE-2013"
+            ]
+          }
+        ]
+      },
+      "sourceIds": [
+        "P-D07-PROSTATE-2013"
+      ],
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate."
+    },
+    {
+      "id": "OUTCOME-D07-C14-COND-C14-ITRA-2013",
+      "synthesisIds": [
+        "SYN-D07-C14-COND-C14-ITRA-2013",
+        "SYN-D07-C14-P-D07-LUNG-2013"
+      ],
+      "drugId": "D07",
+      "conditionId": "C14",
+      "label": "Progression-free survival with pemetrexed",
+      "purpose": "treatment",
+      "grade": {
+        "value": "D",
+        "label": "Benefit uncertain",
+        "rationale": "Both progression summaries come from the same 23-person randomized trial. They favor the itraconazole combination numerically but were not statistically significant; early closure, sparse data and missing intervals leave the added benefit uncertain.",
+        "sourceIds": [
+          "COND-C14-ITRA-2013",
+          "P-D07-LUNG-2013"
+        ]
+      },
+      "effect": {
+        "label": "Uncertain improvement",
+        "detail": "Median 5.5 versus 2.8 months; 3-month PFS 67% versus 29%",
+        "direction": "uncertain",
+        "rationale": "Numerically longer PFS; not statistically significant. The numerical contrast is reported without assigning a small or large category because a justified clinical-importance threshold is not established in these records."
+      },
+      "evidence": {
+        "rctCount": 1,
+        "participants": 23,
+        "participantBasis": "23 randomized in the single pemetrexed–itraconazole trial; both reports and progression summaries describe these same participants.",
+        "trialFamilyIds": [
+          "TRIAL-ITRACONAZOLE-NSCLC-2013"
+        ],
+        "sourceIds": [
+          "COND-C14-ITRA-2013",
+          "P-D07-LUNG-2013"
+        ],
+        "trials": [
+          {
+            "id": "TRIAL-ITRACONAZOLE-NSCLC-2013",
+            "participants": 23,
+            "participantBasis": "23 randomized in the single pemetrexed–itraconazole trial; both reports and progression summaries describe these same participants.",
+            "sourceIds": [
+              "COND-C14-ITRA-2013",
+              "P-D07-LUNG-2013"
+            ]
+          }
+        ]
+      },
+      "sourceIds": [
+        "COND-C14-ITRA-2013",
+        "P-D07-LUNG-2013"
+      ],
+      "aggregationNote": "Two original synthesis rows summarize progression-free survival in the same 23-person trial. Median follow-up and three-month proportions remain distinct estimates in study details; one trial is counted."
+    },
+    {
+      "id": "OUTCOME-D01-C15-COND-C15-MA32-2022",
+      "synthesisIds": [
+        "SYN-D01-C15-COND-C15-MA32-2022"
+      ],
+      "drugId": "D01",
+      "conditionId": "C15",
+      "label": "Invasive disease-free survival",
+      "purpose": "treatment",
+      "grade": {
+        "value": "E",
+        "label": "Benefit not demonstrated",
+        "rationale": "The large masked MA.32 trial did not demonstrate an invasive disease-free survival advantage in its primary analysis. The interval still permits modest effects; tumor subgroups cannot overturn the primary finding or establish broad breast-cancer benefit.",
+        "sourceIds": [
+          "COND-C15-MA32-2022"
+        ]
+      },
+      "effect": {
+        "label": "Benefit not demonstrated",
+        "detail": "HR 1.01; 95% CI 0.84 to 1.21 in the primary analysis",
+        "direction": "uncertain",
+        "rationale": "No benefit established. The numerical contrast is reported without assigning a small or large category because a justified clinical-importance threshold is not established in these records."
+      },
+      "evidence": {
+        "rctCount": 1,
+        "participants": 3649,
+        "participantBasis": "3649 randomized in MA.32; the primary hormone-receptor-positive endpoint is a subset of the whole trial population.",
+        "trialFamilyIds": [
+          "STUDY-COND-C15-MA32-2022"
+        ],
+        "sourceIds": [
+          "COND-C15-MA32-2022"
+        ],
+        "trials": [
+          {
+            "id": "STUDY-COND-C15-MA32-2022",
+            "participants": 3649,
+            "participantBasis": "3649 randomized in MA.32; the primary hormone-receptor-positive endpoint is a subset of the whole trial population.",
+            "sourceIds": [
+              "COND-C15-MA32-2022"
+            ]
+          }
+        ]
+      },
+      "sourceIds": [
+        "COND-C15-MA32-2022"
+      ],
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate."
+    },
+    {
+      "id": "OUTCOME-D23-C16-COND-C16-ALASCCA-2025",
+      "synthesisIds": [
+        "SYN-D23-C16-COND-C16-ALASCCA-2025"
+      ],
+      "drugId": "D23",
+      "conditionId": "C16",
+      "label": "Recurrence in PIK3CA-hotspot colorectal cancer",
+      "purpose": "treatment",
+      "grade": {
+        "value": "C",
+        "label": "Possible benefit",
+        "rationale": "The prespecified molecular subgroup in one blinded randomized trial had fewer recurrences. The wide interval, limited full-methods appraisal and lack of independent replication keep benefit possible; it must not be generalized to all colorectal cancer, and severe adverse events were more frequent.",
+        "sourceIds": [
+          "COND-C16-ALASCCA-2025"
+        ]
+      },
+      "effect": {
+        "label": "Lower recurrence observed",
+        "detail": "7.7% versus 14.1%; HR 0.49 (95% CI 0.24–0.98)",
+        "direction": "benefit",
+        "rationale": "Lower recurrence in prespecified hotspot group. The numerical contrast is reported without assigning a small or large category because a justified clinical-importance threshold is not established in these records."
+      },
+      "evidence": {
+        "rctCount": 1,
+        "participants": null,
+        "participantBasis": "The prespecified PIK3CA-hotspot subgroup participant denominator is not present in the accepted extraction.",
+        "trialFamilyIds": [
+          "STUDY-COND-C16-ALASCCA-2025"
+        ],
+        "sourceIds": [
+          "COND-C16-ALASCCA-2025"
+        ],
+        "trials": [
+          {
+            "id": "STUDY-COND-C16-ALASCCA-2025",
+            "participants": null,
+            "participantBasis": "The prespecified PIK3CA-hotspot subgroup participant denominator is not present in the accepted extraction.",
+            "sourceIds": [
+              "COND-C16-ALASCCA-2025"
+            ]
+          }
+        ]
+      },
+      "sourceIds": [
+        "COND-C16-ALASCCA-2025"
+      ],
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate."
+    },
+    {
+      "id": "OUTCOME-D01-C17-COND-C17-MET-2015",
+      "synthesisIds": [
+        "SYN-D01-C17-COND-C17-MET-2015"
+      ],
+      "drugId": "D01",
+      "conditionId": "C17",
+      "label": "Overall survival with gemcitabine and erlotinib",
+      "purpose": "treatment",
+      "grade": {
+        "value": "E",
+        "label": "Benefit not demonstrated",
+        "rationale": "The randomized phase II trial did not demonstrate improved survival when metformin was added to the tested regimen. Its wide interval includes meaningful benefit and harm, so the conclusion is limited to no demonstrated benefit.",
+        "sourceIds": [
+          "COND-C17-MET-2015"
+        ]
+      },
+      "effect": {
+        "label": "Benefit not demonstrated",
+        "detail": "No survival advantage; HR interval 0.72 to 1.55",
+        "direction": "uncertain",
+        "rationale": "No survival improvement. The numerical contrast is reported without assigning a small or large category because a justified clinical-importance threshold is not established in these records."
+      },
+      "evidence": {
+        "rctCount": 1,
+        "participants": 121,
+        "participantBasis": "121 participants in the reported randomized phase II trial population.",
+        "trialFamilyIds": [
+          "STUDY-COND-C17-MET-2015"
+        ],
+        "sourceIds": [
+          "COND-C17-MET-2015"
+        ],
+        "trials": [
+          {
+            "id": "STUDY-COND-C17-MET-2015",
+            "participants": 121,
+            "participantBasis": "121 participants in the reported randomized phase II trial population.",
+            "sourceIds": [
+              "COND-C17-MET-2015"
+            ]
+          }
+        ]
+      },
+      "sourceIds": [
+        "COND-C17-MET-2015"
+      ],
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate."
+    },
+    {
+      "id": "OUTCOME-D19-C18-COND-C18-PROP-2021",
+      "synthesisIds": [
+        "SYN-D19-C18-COND-C18-PROP-2021"
+      ],
+      "drugId": "D19",
+      "conditionId": "C18",
+      "label": "Safety with pembrolizumab",
+      "purpose": "safety",
+      "grade": {
+        "value": null,
+        "label": "Safety and feasibility",
+        "rationale": "This small uncontrolled dose-finding study does not measure whether propranolol benefits melanoma or is comparatively safer. Absence of dose-limiting toxicity cannot exclude uncommon harms; an efficacy letter is not applicable.",
+        "sourceIds": [
+          "COND-C18-PROP-2021"
+        ]
+      },
+      "effect": {
+        "label": "Comparative safety not established",
+        "detail": "No dose-limiting toxicity in 9 participants",
+        "direction": "not_applicable",
+        "rationale": "No dose-limiting toxicity observed. This endpoint does not quantify clinical treatment benefit."
+      },
+      "evidence": {
+        "rctCount": 0,
+        "participants": null,
+        "participantBasis": "No randomized clinical trial is represented in this selected evidence.",
+        "trialFamilyIds": [],
+        "sourceIds": [],
+        "trials": []
+      },
+      "sourceIds": [
+        "COND-C18-PROP-2021"
+      ],
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate."
+    },
+    {
+      "id": "OUTCOME-D07-C19-P-D07-BCC-2014",
+      "synthesisIds": [
+        "SYN-D07-C19-P-D07-BCC-2014"
+      ],
+      "drugId": "D07",
+      "conditionId": "C19",
+      "label": "Basal cell tumor area",
+      "purpose": "treatment",
+      "grade": {
+        "value": "D",
+        "label": "Benefit uncertain",
+        "rationale": "The small open-label study observed short-term shrinkage but lacked a robust randomized efficacy comparison. It cannot establish durable control, cure or reliable drug-attributable improvement, and the reported heart-failure event remains relevant.",
+        "sourceIds": [
+          "P-D07-BCC-2014"
+        ]
+      },
+      "effect": {
+        "label": "Shrinkage observed",
+        "detail": "24% reduction; 95% CI 18.2% to 30.0%",
+        "direction": "uncertain",
+        "rationale": "Tumor-area reduction observed. The numerical contrast is reported without assigning a small or large category because a justified clinical-importance threshold is not established in these records."
+      },
+      "evidence": {
+        "rctCount": 0,
+        "participants": null,
+        "participantBasis": "No randomized clinical trial is represented in this selected evidence.",
+        "trialFamilyIds": [],
+        "sourceIds": [],
+        "trials": []
+      },
+      "sourceIds": [
+        "P-D07-BCC-2014"
+      ],
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate."
+    },
+    {
+      "id": "OUTCOME-D23-C20-COND-C20-ASP-2020",
+      "synthesisIds": [
+        "SYN-D23-C20-COND-C20-ASP-2020"
+      ],
+      "drugId": "D23",
+      "conditionId": "C20",
+      "label": "Hepatocellular carcinoma incidence in viral hepatitis",
+      "purpose": "prevention",
+      "grade": {
+        "value": "D",
+        "label": "Benefit uncertain",
+        "rationale": "A large observational cohort associates aspirin with lower later liver-cancer incidence, but residual confounding and treatment selection prevent causal benefit inference. This prevention association is not evidence of treating established cancer.",
+        "sourceIds": [
+          "COND-C20-ASP-2020"
+        ]
+      },
+      "effect": {
+        "label": "Lower incidence associated",
+        "detail": "4.0% versus 8.3%; adjusted HR 0.69 (95% CI 0.62–0.76)",
+        "direction": "uncertain",
+        "rationale": "Lower incidence associated with aspirin use. The numerical contrast is reported without assigning a small or large category because a justified clinical-importance threshold is not established in these records."
+      },
+      "evidence": {
+        "rctCount": 0,
+        "participants": null,
+        "participantBasis": "No randomized clinical trial is represented in this selected evidence.",
+        "trialFamilyIds": [],
+        "sourceIds": [],
+        "trials": []
+      },
+      "sourceIds": [
+        "COND-C20-ASP-2020"
+      ],
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate."
+    },
+    {
+      "id": "OUTCOME-D16-C25-COND-C25-BENEMIN-2018",
+      "synthesisIds": [
+        "SYN-D16-C25-COND-C25-BENEMIN-2018"
+      ],
+      "drugId": "D16",
+      "conditionId": "C25",
+      "label": "Negative symptoms in schizophrenia",
+      "purpose": "treatment",
+      "grade": {
+        "value": "E",
+        "label": "Benefit not demonstrated",
+        "rationale": "The randomized BeneMin trial found a near-zero negative-symptom difference. Later attrition and the recent-onset population limit inference, and the interval must not be called proof of equal outcomes.",
+        "sourceIds": [
+          "COND-C25-BENEMIN-2018"
+        ]
+      },
+      "effect": {
+        "label": "Little observed change",
+        "detail": "−0.19 PANSS points; 95% CI −1.23 to 0.85",
+        "direction": "uncertain",
+        "rationale": "No negative-symptom benefit. The numerical contrast is reported without assigning a small or large category because a justified clinical-importance threshold is not established in these records."
+      },
+      "evidence": {
+        "rctCount": 1,
+        "participants": 207,
+        "participantBasis": "207 participants in the reported randomized BeneMin trial population.",
+        "trialFamilyIds": [
+          "STUDY-COND-C25-BENEMIN-2018"
+        ],
+        "sourceIds": [
+          "COND-C25-BENEMIN-2018"
+        ],
+        "trials": [
+          {
+            "id": "STUDY-COND-C25-BENEMIN-2018",
+            "participants": 207,
+            "participantBasis": "207 participants in the reported randomized BeneMin trial population.",
+            "sourceIds": [
+              "COND-C25-BENEMIN-2018"
+            ]
+          }
+        ]
+      },
+      "sourceIds": [
+        "COND-C25-BENEMIN-2018"
+      ],
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate."
+    },
+    {
+      "id": "OUTCOME-D16-C26-P-D16-AD-2020",
+      "synthesisIds": [
+        "SYN-D16-C26-P-D16-AD-2020"
+      ],
+      "drugId": "D16",
+      "conditionId": "C26",
+      "label": "Cognitive decline in mild Alzheimer disease",
+      "purpose": "treatment",
+      "grade": {
+        "value": "E",
+        "label": "Benefit not demonstrated",
+        "rationale": "The two-year randomized comparison did not demonstrate slower cognitive decline. Poor high-dose tolerability and incomplete follow-up leave uncertainty about sustained treatment, without evidence supporting cognitive benefit.",
+        "sourceIds": [
+          "P-D16-AD-2020"
+        ]
+      },
+      "effect": {
+        "label": "Little observed change",
+        "detail": "About +0.1 sMMSE points; 95% CI −1.1 to 1.2",
+        "direction": "uncertain",
+        "rationale": "No cognitive or functional benefit. The numerical contrast is reported without assigning a small or large category because a justified clinical-importance threshold is not established in these records."
+      },
+      "evidence": {
+        "rctCount": 1,
+        "participants": 554,
+        "participantBasis": "554 randomized; 544 who began treatment were eligible for analysis.",
+        "trialFamilyIds": [
+          "STUDY-P-D16-AD-2020"
+        ],
+        "sourceIds": [
+          "P-D16-AD-2020"
+        ],
+        "trials": [
+          {
+            "id": "STUDY-P-D16-AD-2020",
+            "participants": 554,
+            "participantBasis": "554 randomized; 544 who began treatment were eligible for analysis.",
+            "sourceIds": [
+              "P-D16-AD-2020"
+            ]
+          }
+        ]
+      },
+      "sourceIds": [
+        "P-D16-AD-2020"
+      ],
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate."
+    },
+    {
+      "id": "OUTCOME-D16-C27-COND-C27-MINOCIS-2017",
+      "synthesisIds": [
+        "SYN-D16-C27-COND-C27-MINOCIS-2017",
+        "SYN-D16-C27-P-D16-MS-2017"
+      ],
+      "drugId": "D16",
+      "conditionId": "C27",
+      "label": "Conversion to MS after a first demyelinating event",
+      "purpose": "prevention",
+      "grade": {
+        "value": "C",
+        "label": "Possible benefit",
+        "rationale": "Both source aliases describe the same 142-person randomized trial and six-month endpoint. The early reduction supports possible benefit, but its broad interval, withdrawals and nonsignificant 24-month result do not establish durable prevention or less disability.",
+        "sourceIds": [
+          "COND-C27-MINOCIS-2017",
+          "P-D16-MS-2017"
+        ]
+      },
+      "effect": {
+        "label": "Lower 6-month conversion",
+        "detail": "18.5 percentage points lower; 95% CI 3.7 to 33.3",
+        "direction": "benefit",
+        "rationale": "Lower 6-month conversion, not significant at 24 months. The numerical contrast is reported without assigning a small or large category because a justified clinical-importance threshold is not established in these records."
+      },
+      "evidence": {
+        "rctCount": 1,
+        "participants": 142,
+        "participantBasis": "142 randomized in the single minocycline clinically isolated syndrome trial; duplicate source aliases are counted once.",
+        "trialFamilyIds": [
+          "TRIAL-MINOCYCLINE-CIS-2017"
+        ],
+        "sourceIds": [
+          "COND-C27-MINOCIS-2017",
+          "P-D16-MS-2017"
+        ],
+        "trials": [
+          {
+            "id": "TRIAL-MINOCYCLINE-CIS-2017",
+            "participants": 142,
+            "participantBasis": "142 randomized in the single minocycline clinically isolated syndrome trial; duplicate source aliases are counted once.",
+            "sourceIds": [
+              "COND-C27-MINOCIS-2017",
+              "P-D16-MS-2017"
+            ]
+          }
+        ]
+      },
+      "sourceIds": [
+        "COND-C27-MINOCIS-2017",
+        "P-D16-MS-2017"
+      ],
+      "aggregationNote": "Two source aliases describe the same DOI, trial, six-month endpoint and 142 participants. They supply one outcome summary and one trial; the 24-month result remains separately described."
+    },
+    {
+      "id": "OUTCOME-D16-C28-COND-C28-MINO-2007",
+      "synthesisIds": [
+        "SYN-D16-C28-COND-C28-MINO-2007"
+      ],
+      "drugId": "D16",
+      "conditionId": "C28",
+      "label": "Functional decline in ALS",
+      "purpose": "treatment",
+      "grade": {
+        "value": "F",
+        "label": "Benefit unlikely or harm observed",
+        "rationale": "The randomized phase III trial found faster decline on the primary functional endpoint, with the confidence interval excluding no difference. This harmful signal weighs against functional benefit; the separate mortality result was not significant and detailed methods access remains limited.",
+        "sourceIds": [
+          "COND-C28-MINO-2007"
+        ]
+      },
+      "effect": {
+        "label": "Faster decline observed",
+        "detail": "−1.30 versus −1.04 ALSFRS-R points per month",
+        "direction": "harm",
+        "rationale": "Faster functional decline with minocycline. The numerical contrast is reported without assigning a small or large category because a justified clinical-importance threshold is not established in these records."
+      },
+      "evidence": {
+        "rctCount": 1,
+        "participants": 412,
+        "participantBasis": "412 participants in the reported randomized phase III trial population.",
+        "trialFamilyIds": [
+          "STUDY-COND-C28-MINO-2007"
+        ],
+        "sourceIds": [
+          "COND-C28-MINO-2007"
+        ],
+        "trials": [
+          {
+            "id": "STUDY-COND-C28-MINO-2007",
+            "participants": 412,
+            "participantBasis": "412 participants in the reported randomized phase III trial population.",
+            "sourceIds": [
+              "COND-C28-MINO-2007"
+            ]
+          }
+        ]
+      },
+      "sourceIds": [
+        "COND-C28-MINO-2007"
+      ],
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate."
+    },
+    {
+      "id": "OUTCOME-D13-C29-COND-C29-ATOR-2018",
+      "synthesisIds": [
+        "SYN-D13-C29-COND-C29-ATOR-2018"
+      ],
+      "drugId": "D13",
+      "conditionId": "C29",
+      "label": "Vitiligo severity with narrowband UVB",
+      "purpose": "treatment",
+      "grade": {
+        "value": "E",
+        "label": "Benefit not demonstrated",
+        "rationale": "The small randomized add-on trial did not demonstrate benefit for vitiligo severity. Limited masking, sparse data and a broad interval prevent ruling out meaningful effects; reported adverse events remain part of the interpretation.",
+        "sourceIds": [
+          "COND-C29-ATOR-2018"
+        ]
+      },
+      "effect": {
+        "label": "Benefit not demonstrated",
+        "detail": "Between-group VASI difference 1.43; P=.49",
+        "direction": "uncertain",
+        "rationale": "No significant added benefit. The numerical contrast is reported without assigning a small or large category because a justified clinical-importance threshold is not established in these records."
+      },
+      "evidence": {
+        "rctCount": 1,
+        "participants": 30,
+        "participantBasis": "30 randomized; 29 analyzed.",
+        "trialFamilyIds": [
+          "STUDY-COND-C29-ATOR-2018"
+        ],
+        "sourceIds": [
+          "COND-C29-ATOR-2018"
+        ],
+        "trials": [
+          {
+            "id": "STUDY-COND-C29-ATOR-2018",
+            "participants": 30,
+            "participantBasis": "30 randomized; 29 analyzed.",
+            "sourceIds": [
+              "COND-C29-ATOR-2018"
+            ]
+          }
+        ]
+      },
+      "sourceIds": [
+        "COND-C29-ATOR-2018"
+      ],
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate."
+    },
+    {
+      "id": "OUTCOME-D07-C17-P-D07-PANCREAS-2015",
+      "synthesisIds": [
+        "SYN-D07-C17-P-D07-PANCREAS-2015"
+      ],
+      "drugId": "D07",
+      "conditionId": "C17",
+      "label": "Pancreatic tumor response with chemotherapy",
+      "purpose": "treatment",
+      "grade": {
+        "value": "D",
+        "label": "Benefit uncertain",
+        "rationale": "The retrospective combination series cannot separate itraconazole from three active chemotherapy drugs or patient selection. Observed response is therefore insufficient to establish added benefit.",
+        "sourceIds": [
+          "P-D07-PANCREAS-2015"
+        ]
+      },
+      "effect": {
+        "label": "Added benefit uncertain",
+        "detail": "37% response in an uncontrolled 38-person series",
+        "direction": "uncertain",
+        "rationale": "The 38-patient retrospective series used itraconazole with docetaxel, gemcitabine and carboplatin; observed responses cannot be attributed to itraconazole alone. The numerical contrast is reported without assigning a small or large category because a justified clinical-importance threshold is not established in these records."
+      },
+      "evidence": {
+        "rctCount": 0,
+        "participants": null,
+        "participantBasis": "No randomized clinical trial is represented in this selected evidence.",
+        "trialFamilyIds": [],
+        "sourceIds": [],
+        "trials": []
+      },
+      "sourceIds": [
+        "P-D07-PANCREAS-2015"
+      ],
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate."
+    },
+    {
+      "id": "OUTCOME-D09-C04-P-D09-GBM-2022",
+      "synthesisIds": [
+        "SYN-D09-C04-P-D09-GBM-2022"
+      ],
+      "drugId": "D09",
+      "conditionId": "C04",
+      "label": "Survival on mebendazole-containing regimens",
+      "purpose": "treatment",
+      "grade": {
+        "value": "D",
+        "label": "Benefit uncertain",
+        "rationale": "Randomization compared two regimens that both contained mebendazole, so it cannot isolate the drug contribution. Both missed the prespecified survival benchmark and intervals were broad; mebendazole benefit remains uncertain.",
+        "sourceIds": [
+          "P-D09-GBM-2022"
+        ]
+      },
+      "effect": {
+        "label": "Added benefit uncertain",
+        "detail": "9-month survival 36.6% versus 45%; both below the 55% benchmark",
+        "direction": "uncertain",
+        "rationale": "Nine-month survival was 36.6% with temozolomide–mebendazole and 45% with lomustine–mebendazole, below the 55% benchmark; both arms included mebendazole. The numerical contrast is reported without assigning a small or large category because a justified clinical-importance threshold is not established in these records."
+      },
+      "evidence": {
+        "rctCount": 1,
+        "participants": 88,
+        "participantBasis": "88 randomized, 44 to each mebendazole-containing regimen; neither arm omitted mebendazole.",
+        "trialFamilyIds": [
+          "STUDY-P-D09-GBM-2022"
+        ],
+        "sourceIds": [
+          "P-D09-GBM-2022"
+        ],
+        "trials": [
+          {
+            "id": "STUDY-P-D09-GBM-2022",
+            "participants": 88,
+            "participantBasis": "88 randomized, 44 to each mebendazole-containing regimen; neither arm omitted mebendazole.",
+            "sourceIds": [
+              "P-D09-GBM-2022"
+            ]
+          }
+        ]
+      },
+      "sourceIds": [
+        "P-D09-GBM-2022"
+      ],
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate."
+    },
+    {
+      "id": "OUTCOME-D13-C04-P-D13-GBM-2021",
+      "synthesisIds": [
+        "SYN-D13-C04-P-D13-GBM-2021"
+      ],
+      "drugId": "D13",
+      "conditionId": "C04",
+      "label": "Progression-free survival with chemoradiation",
+      "purpose": "treatment",
+      "grade": {
+        "value": "D",
+        "label": "Benefit uncertain",
+        "rationale": "A 36-person single-arm study did not establish improvement over its benchmark and had no concurrent chemoradiation-only group. The reported survival proportion cannot identify an atorvastatin benefit.",
+        "sourceIds": [
+          "P-D13-GBM-2021"
+        ]
+      },
+      "effect": {
+        "label": "Added benefit uncertain",
+        "detail": "66% progression-free at 6 months in a single-arm study",
+        "direction": "uncertain",
+        "rationale": "The single-arm 36-patient study reported 66% progression-free at six months but concluded that improvement was not demonstrated. The numerical contrast is reported without assigning a small or large category because a justified clinical-importance threshold is not established in these records."
+      },
+      "evidence": {
+        "rctCount": 0,
+        "participants": null,
+        "participantBasis": "No randomized clinical trial is represented in this selected evidence.",
+        "trialFamilyIds": [],
+        "sourceIds": [],
+        "trials": []
+      },
+      "sourceIds": [
+        "P-D13-GBM-2021"
+      ],
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate."
+    },
+    {
+      "id": "OUTCOME-D13-C15-P-D13-BREAST-2013",
+      "synthesisIds": [
+        "SYN-D13-C15-P-D13-BREAST-2013"
+      ],
+      "drugId": "D13",
+      "conditionId": "C15",
+      "label": "Tumor-cell proliferation marker Ki-67",
+      "purpose": "mechanistic",
+      "grade": {
+        "value": null,
+        "label": "Biomarker evidence",
+        "rationale": "The uncontrolled two-week biomarker study does not measure recurrence or survival, and its overall Ki-67 change was not significant. An exploratory subgroup cannot turn this marker result into a clinical benefit grade.",
+        "sourceIds": [
+          "P-D13-BREAST-2013"
+        ]
+      },
+      "effect": {
+        "label": "Clinical benefit not assessed",
+        "detail": "7.6% decrease; P=.39",
+        "direction": "not_applicable",
+        "rationale": "Overall Ki-67 decreased by 7.6% (p=0.39); a larger decrease in the HMGCR-positive subgroup was exploratory and not a survival result. This endpoint does not quantify clinical treatment benefit."
+      },
+      "evidence": {
+        "rctCount": 0,
+        "participants": null,
+        "participantBasis": "No randomized clinical trial is represented in this selected evidence.",
+        "trialFamilyIds": [],
+        "sourceIds": [],
+        "trials": []
+      },
+      "sourceIds": [
+        "P-D13-BREAST-2013"
+      ],
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate."
+    },
+    {
+      "id": "OUTCOME-D15-C15-P-D15-BREAST-2021",
+      "synthesisIds": [
+        "SYN-D15-C15-P-D15-BREAST-2021"
+      ],
+      "drugId": "D15",
+      "conditionId": "C15",
+      "label": "Disease-free survival after breast cancer treatment",
+      "purpose": "treatment",
+      "grade": {
+        "value": "E",
+        "label": "Benefit not demonstrated",
+        "rationale": "The large randomized REACT trial did not demonstrate an adjuvant disease-free survival advantage. Fewer events than expected and an interval allowing clinically relevant effects prevent a precise no-effect conclusion.",
+        "sourceIds": [
+          "P-D15-BREAST-2021"
+        ]
+      },
+      "effect": {
+        "label": "Benefit not demonstrated",
+        "detail": "HR 0.97; 95% CI 0.80 to 1.17",
+        "direction": "uncertain",
+        "rationale": "REACT found no disease-free survival advantage: hazard ratio 0.97 (95% CI 0.80 to 1.17). The numerical contrast is reported without assigning a small or large category because a justified clinical-importance threshold is not established in these records."
+      },
+      "evidence": {
+        "rctCount": 1,
+        "participants": 2639,
+        "participantBasis": "2639 randomized in REACT.",
+        "trialFamilyIds": [
+          "STUDY-P-D15-BREAST-2021"
+        ],
+        "sourceIds": [
+          "P-D15-BREAST-2021"
+        ],
+        "trials": [
+          {
+            "id": "STUDY-P-D15-BREAST-2021",
+            "participants": 2639,
+            "participantBasis": "2639 randomized in REACT.",
+            "sourceIds": [
+              "P-D15-BREAST-2021"
+            ]
+          }
+        ]
+      },
+      "sourceIds": [
+        "P-D15-BREAST-2021"
+      ],
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate."
+    },
+    {
+      "id": "OUTCOME-D15-C16-P-D15-COLON-2021",
+      "synthesisIds": [
+        "SYN-D15-C16-P-D15-COLON-2021"
+      ],
+      "drugId": "D15",
+      "conditionId": "C16",
+      "label": "Disease-free survival with adjuvant chemotherapy",
+      "purpose": "treatment",
+      "grade": {
+        "value": "E",
+        "label": "Benefit not demonstrated",
+        "rationale": "The randomized colon-cancer trial did not establish a disease-free survival benefit. Its favorable point estimate still permits meaningful benefit, while early medication discontinuation and fewer events limit the estimate; nonsignificance is not equivalence.",
+        "sourceIds": [
+          "P-D15-COLON-2021"
+        ]
+      },
+      "effect": {
+        "label": "Uncertain improvement",
+        "detail": "HR 0.89; 95% CI 0.76 to 1.03",
+        "direction": "uncertain",
+        "rationale": "Overall disease-free survival was not significantly improved (HR 0.89, 95% CI 0.76 to 1.03). The numerical contrast is reported without assigning a small or large category because a justified clinical-importance threshold is not established in these records."
+      },
+      "evidence": {
+        "rctCount": 1,
+        "participants": 2526,
+        "participantBasis": "2526 randomized; 2524 analyzed.",
+        "trialFamilyIds": [
+          "STUDY-P-D15-COLON-2021"
+        ],
+        "sourceIds": [
+          "P-D15-COLON-2021"
+        ],
+        "trials": [
+          {
+            "id": "STUDY-P-D15-COLON-2021",
+            "participants": 2526,
+            "participantBasis": "2526 randomized; 2524 analyzed.",
+            "sourceIds": [
+              "P-D15-COLON-2021"
+            ]
+          }
+        ]
+      },
+      "sourceIds": [
+        "P-D15-COLON-2021"
+      ],
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate."
+    },
+    {
+      "id": "OUTCOME-D15-C20-P-D15-HCC-2017",
+      "synthesisIds": [
+        "SYN-D15-C20-P-D15-HCC-2017"
+      ],
+      "drugId": "D15",
+      "conditionId": "C20",
+      "label": "Overall survival with TACE and lanreotide",
+      "purpose": "treatment",
+      "grade": {
+        "value": "D",
+        "label": "Benefit uncertain",
+        "rationale": "The randomized pilot supports benefit for the complete combination, but added celecoxib and lanreotide together. Without separating those contributions, it cannot establish celecoxib-specific benefit; the small single-center sample adds uncertainty.",
+        "sourceIds": [
+          "P-D15-HCC-2017"
+        ]
+      },
+      "effect": {
+        "label": "Combination benefit observed",
+        "detail": "Median 15 versus 7.5 months",
+        "direction": "uncertain",
+        "rationale": "Median survival was 15 months with TACE plus celecoxib and lanreotide versus 7.5 months with TACE alone; adding two drugs prevents assigning the benefit to celecoxib alone. The numerical contrast is reported without assigning a small or large category because a justified clinical-importance threshold is not established in these records."
+      },
+      "evidence": {
+        "rctCount": 1,
+        "participants": 71,
+        "participantBasis": "71 randomized across TACE and the TACE–celecoxib–lanreotide combination.",
+        "trialFamilyIds": [
+          "STUDY-P-D15-HCC-2017"
+        ],
+        "sourceIds": [
+          "P-D15-HCC-2017"
+        ],
+        "trials": [
+          {
+            "id": "STUDY-P-D15-HCC-2017",
+            "participants": 71,
+            "participantBasis": "71 randomized across TACE and the TACE–celecoxib–lanreotide combination.",
+            "sourceIds": [
+              "P-D15-HCC-2017"
+            ]
+          }
+        ]
+      },
+      "sourceIds": [
+        "P-D15-HCC-2017"
+      ],
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate."
+    },
+    {
+      "id": "OUTCOME-D16-C09-P-D16-TRD-2022",
+      "synthesisIds": [
+        "SYN-D16-C09-P-D16-TRD-2022"
+      ],
+      "drugId": "D16",
+      "conditionId": "C09",
+      "label": "Depressive symptoms with minocycline augmentation",
+      "purpose": "treatment",
+      "grade": {
+        "value": "E",
+        "label": "Benefit not demonstrated",
+        "rationale": "The masked randomized trial did not demonstrate better depression outcomes after six weeks. Its interval permits modest differences and does not answer longer treatment, so this is a negative but bounded efficacy assessment.",
+        "sourceIds": [
+          "P-D16-TRD-2022"
+        ]
+      },
+      "effect": {
+        "label": "Benefit not demonstrated",
+        "detail": "MADRS difference 1.46; 95% CI −1.04 to 3.96",
+        "direction": "uncertain",
+        "rationale": "Six weeks of adjunctive minocycline did not significantly improve depression severity versus placebo in the 168-person analysis. The numerical contrast is reported without assigning a small or large category because a justified clinical-importance threshold is not established in these records."
+      },
+      "evidence": {
+        "rctCount": 1,
+        "participants": 173,
+        "participantBasis": "173 randomized; 168 included in the intention-to-treat analysis.",
+        "trialFamilyIds": [
+          "STUDY-P-D16-TRD-2022"
+        ],
+        "sourceIds": [
+          "P-D16-TRD-2022"
+        ],
+        "trials": [
+          {
+            "id": "STUDY-P-D16-TRD-2022",
+            "participants": 173,
+            "participantBasis": "173 randomized; 168 included in the intention-to-treat analysis.",
+            "sourceIds": [
+              "P-D16-TRD-2022"
+            ]
+          }
+        ]
+      },
+      "sourceIds": [
+        "P-D16-TRD-2022"
+      ],
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate."
+    },
+    {
+      "id": "OUTCOME-D01-C13-MF-STAMPEDE-2025-73355A05E6EE9764AE1A",
+      "synthesisIds": [
+        "SYN-D01-C13-MF-STAMPEDE-2025-73355A05E6EE9764AE1A"
+      ],
+      "drugId": "D01",
+      "conditionId": "C13",
+      "label": "Overall survival in metastatic prostate cancer",
+      "purpose": "treatment",
+      "grade": {
+        "value": "E",
+        "label": "Benefit not demonstrated",
+        "rationale": "The large randomized comparison did not demonstrate an overall-survival benefit. Its interval still permits useful improvement, and abstract-only methods appraisal cannot resolve the remaining uncertainty or support equivalence.",
+        "sourceIds": [
+          "MF-STAMPEDE-2025"
+        ]
+      },
+      "effect": {
+        "label": "Uncertain improvement",
+        "detail": "HR 0.91; 95% CI 0.80 to 1.03",
+        "direction": "uncertain",
+        "rationale": "Metformin did not demonstrate an overall-survival improvement. The numerical contrast is reported without assigning a small or large category because a justified clinical-importance threshold is not established in these records."
+      },
+      "evidence": {
+        "rctCount": 1,
+        "participants": 1874,
+        "participantBasis": "1874 participants in the reported randomized STAMPEDE comparison.",
+        "trialFamilyIds": [
+          "STUDY-MF-STAMPEDE-2025"
+        ],
+        "sourceIds": [
+          "MF-STAMPEDE-2025"
+        ],
+        "trials": [
+          {
+            "id": "STUDY-MF-STAMPEDE-2025",
+            "participants": 1874,
+            "participantBasis": "1874 participants in the reported randomized STAMPEDE comparison.",
+            "sourceIds": [
+              "MF-STAMPEDE-2025"
+            ]
+          }
+        ]
+      },
+      "sourceIds": [
+        "MF-STAMPEDE-2025"
+      ],
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate."
+    },
+    {
+      "id": "OUTCOME-D01-C14-MF-NRG-LU001-2021-868676D72A2E752656A0",
+      "synthesisIds": [
+        "SYN-D01-C14-MF-NRG-LU001-2021-868676D72A2E752656A0"
+      ],
+      "drugId": "D01",
+      "conditionId": "C14",
+      "label": "Progression-free survival with chemoradiation",
+      "purpose": "treatment",
+      "grade": {
+        "value": "E",
+        "label": "Benefit not demonstrated",
+        "rationale": "NRG-LU001 did not demonstrate better progression-free survival. The wide interval, open treatment allocation and limited adherence leave benefit or harm possible; a different overall-survival endpoint from ALMERA is not pooled into this estimate.",
+        "sourceIds": [
+          "MF-NRG-LU001-2021"
+        ]
+      },
+      "effect": {
+        "label": "Benefit not demonstrated",
+        "detail": "1-year PFS 51.3% versus 60.4%; HR 1.15 (95% CI 0.77–1.73)",
+        "direction": "uncertain",
+        "rationale": "Metformin did not demonstrate a progression-free-survival improvement. The numerical contrast is reported without assigning a small or large category because a justified clinical-importance threshold is not established in these records."
+      },
+      "evidence": {
+        "rctCount": 1,
+        "participants": 170,
+        "participantBasis": "170 randomized in NRG-LU001; 167 eligible participants analyzed by assignment.",
+        "trialFamilyIds": [
+          "STUDY-MF-NRG-LU001-2021"
+        ],
+        "sourceIds": [
+          "MF-NRG-LU001-2021"
+        ],
+        "trials": [
+          {
+            "id": "STUDY-MF-NRG-LU001-2021",
+            "participants": 170,
+            "participantBasis": "170 randomized in NRG-LU001; 167 eligible participants analyzed by assignment.",
+            "sourceIds": [
+              "MF-NRG-LU001-2021"
+            ]
+          }
+        ]
+      },
+      "sourceIds": [
+        "MF-NRG-LU001-2021"
+      ],
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate."
+    },
+    {
+      "id": "OUTCOME-D01-C14-MF-ALMERA-2021-B05C4C42E69AE6236E3E",
+      "synthesisIds": [
+        "SYN-D01-C14-MF-ALMERA-2021-B05C4C42E69AE6236E3E"
+      ],
+      "drugId": "D01",
+      "conditionId": "C14",
+      "label": "Overall survival with chemoradiation",
+      "purpose": "treatment",
+      "grade": {
+        "value": "F",
+        "label": "Benefit unlikely or harm observed",
+        "rationale": "ALMERA reported a randomized harmful survival signal that weighs against adding metformin in this setting. Early closure, only 54 participants, baseline imbalance and a wide interval limit the magnitude and generalizability; it does not establish harm in every metformin use.",
+        "sourceIds": [
+          "MF-ALMERA-2021"
+        ]
+      },
+      "effect": {
+        "label": "Worse survival observed",
+        "detail": "1-year OS 47.4% versus 85.2%; HR 3.80 (95% CI 1.49–9.73)",
+        "direction": "harm",
+        "rationale": "This small trial reported worse overall survival with metformin. The numerical contrast is reported without assigning a small or large category because a justified clinical-importance threshold is not established in these records."
+      },
+      "evidence": {
+        "rctCount": 1,
+        "participants": 54,
+        "participantBasis": "54 randomized in ALMERA before early closure.",
+        "trialFamilyIds": [
+          "STUDY-MF-ALMERA-2021"
+        ],
+        "sourceIds": [
+          "MF-ALMERA-2021"
+        ],
+        "trials": [
+          {
+            "id": "STUDY-MF-ALMERA-2021",
+            "participants": 54,
+            "participantBasis": "54 randomized in ALMERA before early closure.",
+            "sourceIds": [
+              "MF-ALMERA-2021"
+            ]
+          }
+        ]
+      },
+      "sourceIds": [
+        "MF-ALMERA-2021"
+      ],
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate."
+    },
+    {
+      "id": "OUTCOME-D01-C16-MF-ADENOMA-2016-83730B0D0B926F1511A1",
+      "synthesisIds": [
+        "SYN-D01-C16-MF-ADENOMA-2016-83730B0D0B926F1511A1"
+      ],
+      "drugId": "D01",
+      "conditionId": "C16",
+      "label": "Colorectal adenoma recurrence after polyp removal",
+      "purpose": "prevention",
+      "grade": {
+        "value": "C",
+        "label": "Possible benefit",
+        "rationale": "One masked randomized trial supports possible reduction of adenoma recurrence, not treatment of colorectal cancer. Missing follow-up colonoscopies, a printed percentage discrepancy and short follow-up limit confidence; the source-reported risk ratio is retained without inventing a corrected absolute effect.",
+        "sourceIds": [
+          "MF-ADENOMA-2016"
+        ]
+      },
+      "effect": {
+        "label": "Lower recurrence observed",
+        "detail": "Reported RR 0.60; 95% CI 0.39 to 0.92",
+        "direction": "benefit",
+        "rationale": "Metformin reduced reported one-year adenoma recurrence. The numerical contrast is reported without assigning a small or large category because a justified clinical-importance threshold is not established in these records."
+      },
+      "evidence": {
+        "rctCount": 1,
+        "participants": 151,
+        "participantBasis": "151 randomized; 133 underwent one-year colonoscopy.",
+        "trialFamilyIds": [
+          "STUDY-MF-ADENOMA-2016"
+        ],
+        "sourceIds": [
+          "MF-ADENOMA-2016"
+        ],
+        "trials": [
+          {
+            "id": "STUDY-MF-ADENOMA-2016",
+            "participants": 151,
+            "participantBasis": "151 randomized; 133 underwent one-year colonoscopy.",
+            "sourceIds": [
+              "MF-ADENOMA-2016"
+            ]
+          }
+        ]
+      },
+      "sourceIds": [
+        "MF-ADENOMA-2016"
+      ],
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate."
+    },
+    {
+      "id": "OUTCOME-D01-C02-COND-C02-COVIDOUT-2022-B1E71756C16B18BBC77C",
+      "synthesisIds": [
+        "SYN-D01-C02-COND-C02-COVIDOUT-2022-B1E71756C16B18BBC77C"
+      ],
+      "drugId": "D01",
+      "conditionId": "C02",
+      "label": "Acute hypoxemia, emergency visits, hospitalization or death",
+      "purpose": "treatment",
+      "grade": {
+        "value": "E",
+        "label": "Benefit not demonstrated",
+        "rationale": "The primary acute-COVID composite did not show a demonstrated benefit. Its interval permits benefit and the home-oximetry component has measurement limitations; this acute endpoint is separate from later Long COVID diagnosis in the same trial.",
+        "sourceIds": [
+          "COND-C02-COVIDOUT-2022"
+        ]
+      },
+      "effect": {
+        "label": "Benefit not demonstrated",
+        "detail": "Adjusted OR 0.84; 95% CI 0.66 to 1.09",
+        "direction": "uncertain",
+        "rationale": "Metformin did not demonstrate a reduction in the primary acute COVID-19 composite outcome. The numerical contrast is reported without assigning a small or large category because a justified clinical-importance threshold is not established in these records."
+      },
+      "evidence": {
+        "rctCount": 1,
+        "participants": 1431,
+        "participantBasis": "1431 randomized in COVID-OUT; study-level population, not the 1126-person Long COVID follow-up subset.",
+        "trialFamilyIds": [
+          "S-COVIDOUT-2023"
+        ],
+        "sourceIds": [
+          "COND-C02-COVIDOUT-2022"
+        ],
+        "trials": [
+          {
+            "id": "S-COVIDOUT-2023",
+            "participants": 1431,
+            "participantBasis": "1431 randomized in COVID-OUT; study-level population, not the 1126-person Long COVID follow-up subset.",
+            "sourceIds": [
+              "COND-C02-COVIDOUT-2022"
+            ]
+          }
+        ]
+      },
+      "sourceIds": [
+        "COND-C02-COVIDOUT-2022"
+      ],
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate."
+    },
+    {
+      "id": "OUTCOME-D01-C30-MF-MASTERS-2019-CA65ECB67C3BDB523F7D",
+      "synthesisIds": [
+        "SYN-D01-C30-MF-MASTERS-2019-CA65ECB67C3BDB523F7D"
+      ],
+      "drugId": "D01",
+      "conditionId": "C30",
+      "label": "Lean-body-mass gain during resistance training",
+      "purpose": "treatment",
+      "grade": {
+        "value": "F",
+        "label": "Benefit unlikely or harm observed",
+        "rationale": "The randomized comparison found less lean-mass gain with metformin during training, weighing against benefit for this endpoint. Completer-only analysis, baseline imbalance and no effect interval limit magnitude and applicability; the separate corrected strength endpoint is excluded.",
+        "sourceIds": [
+          "MF-MASTERS-2019"
+        ]
+      },
+      "effect": {
+        "label": "Smaller gains observed",
+        "detail": "0.41% gain versus 1.95%; P=.003",
+        "direction": "harm",
+        "rationale": "Total lean-body-mass gains during resistance training were smaller with metformin. The numerical contrast is reported without assigning a small or large category because a justified clinical-importance threshold is not established in these records."
+      },
+      "evidence": {
+        "rctCount": 1,
+        "participants": 109,
+        "participantBasis": "109 randomized; 94 completers analyzed.",
+        "trialFamilyIds": [
+          "STUDY-MF-MASTERS-2019"
+        ],
+        "sourceIds": [
+          "MF-MASTERS-2019"
+        ],
+        "trials": [
+          {
+            "id": "STUDY-MF-MASTERS-2019",
+            "participants": 109,
+            "participantBasis": "109 randomized; 94 completers analyzed.",
+            "sourceIds": [
+              "MF-MASTERS-2019"
+            ]
+          }
+        ]
+      },
+      "sourceIds": [
+        "MF-MASTERS-2019"
+      ],
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate."
+    }
+  ]
+}

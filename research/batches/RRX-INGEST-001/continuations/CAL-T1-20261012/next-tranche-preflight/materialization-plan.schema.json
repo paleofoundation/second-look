@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "planId", "operations", "preparer", "canonicalReportId", "archive", "manifestPath", "privateOutputRoot", "memberDirectory", "allowedDestinations", "receiptRelativePath", "inputs", "scopeLimits"],
+  "properties": {
+    "schemaVersion": {"const": "remaprx-zip-materialization-plan-v1"},
+    "planId": {"$ref": "#/$defs/text"},
+    "operations": {"const": ["materialize-zip"]},
+    "preparer": {"$ref": "#/$defs/text"},
+    "canonicalReportId": {"$ref": "#/$defs/text"},
+    "archive": {
+      "type": "object", "additionalProperties": false,
+      "required": ["sourceId", "sha256", "bytes"],
+      "properties": {
+        "sourceId": {"$ref": "#/$defs/text"},
+        "sha256": {"$ref": "#/$defs/hash"},
+        "bytes": {"type": "integer", "minimum": 1, "maximum": 314572800}
+      }
+    },
+    "manifestPath": {"$ref": "#/$defs/text"},
+    "privateOutputRoot": {"$ref": "#/$defs/text"},
+    "memberDirectory": {"$ref": "#/$defs/text"},
+    "allowedDestinations": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"$ref": "#/$defs/text"}},
+    "receiptRelativePath": {"$ref": "#/$defs/text"},
+    "inputs": {
+      "type": "array", "minItems": 1,
+      "items": {"type": "object", "additionalProperties": false, "required": ["path", "sha256"],
+        "properties": {"path": {"$ref": "#/$defs/text"}, "sha256": {"$ref": "#/$defs/hash"}}}
+    },
+    "scopeLimits": {"const": {"scientificReading": false, "canonicalWrites": false, "humanApproval": false, "released": false}},
+    "contract": {"type": "object"}
+  },
+  "$defs": {
+    "text": {"type": "string", "minLength": 1, "pattern": "^\\S(?:.*\\S)?$"},
+    "hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  }
+}
