@@ -157,7 +157,7 @@ export function ThemeHome({ content }: ThemeHomeProps) {
   return <main className={homeStyles.home} id={config.mainId || "main-content"}>
     <section className={h("hero")} id="top"><div className={h("hero__copy")}><h1>{hero.title}</h1><p className={h("hero__intro")}>{hero.intro}</p><ThemeSearch home />
       {!!hero.quickLinks?.length && <div className={h("quick-searches")}><span>{hero.quickLinksLabel || "Start exploring"}</span>{hero.quickLinks.map(link => <ThemeAnchor key={link.href} href={link.href}>{link.label}</ThemeAnchor>)}</div>}
-    </div><div className={h("hero__media")}><div className={h("image-frame")}><Image image={hero.image} sizes="(max-width: 1023px) 100vw, 42vw" fetchPriority="high" />{hero.caption && <div className={h("image-caption")}><span>{hero.caption.eyebrow}</span><strong>{hero.caption.title}</strong></div>}</div>
+    </div><div className={h("hero__media")}><div className={h("image-frame")}>{hero.image && <Image image={hero.image} sizes="(max-width: 1023px) 100vw, 42vw" fetchPriority="high" />}{hero.caption && <div className={h("image-caption")}><span>{hero.caption.eyebrow}</span><strong>{hero.caption.title}</strong></div>}</div>
       {hero.note && <div className={h("evidence-note")}><span className={h("evidence-note__mark")}>{hero.note.mark}</span><p><strong>{hero.note.title}</strong><br />{hero.note.text}</p><ThemeAnchor href={hero.note.link.href} aria-label={hero.note.link.label}>→</ThemeAnchor></div>}
     </div></section>
     <section className={h("credibility")} aria-label="Platform principles">{content.principles.map(principle => <span key={principle}>{principle}</span>)}</section>
