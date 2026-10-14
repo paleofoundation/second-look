@@ -18,7 +18,8 @@ for(const topic of topics){
  assert(!html.includes('Selected source populations'));assert(!html.includes('class="context-rail"'));
  const visible=html.replace(/&#x27;/g,"'").replace(/&amp;/g,'&').replace(/<!--.*?-->/g,'');
  assert(visible.includes('Explore the '+product.topic+' Guide'),'Pending CTA: '+topic.slug);
- assert(html.indexOf('class="article-share-rail"')<html.indexOf('<article class="research-content__center'),'mobile DOM order');
+ assert(html.indexOf('class="article-share-rail"')>html.indexOf('</article>'),'sharing follows the article in reading order');
+ assert(html.indexOf('class="article-share-rail"')>html.indexOf('aria-label="Related reading"'),'sharing follows related reading');
  assert(html.indexOf('class="related-reading"')>html.indexOf('</article>'),'related reading after body');
  for(const link of articleShareLinks(guideUrl(topic)+'?account=private&utm_source=test#safety',topic.title)){
   const url=new URL(link.href);assert(!decodeURIComponent(link.href).includes('private'));assert(!decodeURIComponent(link.href).includes('utm_'));
@@ -33,4 +34,4 @@ assert.deepEqual(guideOffer.launchProductIds,['SL-GUIDE-METFORMIN','SL-GUIDE-LON
 const color=hex=>hex.match(/\w\w/g).map(v=>parseInt(v,16)/255).map(v=>v<=.04045?v/12.92:((v+.055)/1.055)**2.4).reduce((sum,v,i)=>sum+v*[.2126,.7152,.0722][i],0);
 const contrast=(color('FFC709')+.05)/(color('1736F5')+.05);assert(contrast>=4.5);
 for(const p of guideProducts)assert(p.releaseState!=='released','This acceptance snapshot must not fabricate released guides');
-console.log(`PASS: ${topics.length} explicit topic products, pending CTAs, single canonical sharing row, no account/tracking leakage, mobile DOM order, $49/$59 three-guide gate, ${contrast.toFixed(2)}:1 CTA contrast.`);
+console.log(`PASS: ${topics.length} explicit topic products, pending CTAs, single canonical sharing row, no account/tracking leakage, article/related/sharing DOM order, $49/$59 three-guide gate, ${contrast.toFixed(2)}:1 CTA contrast.`);

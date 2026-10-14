@@ -46,3 +46,9 @@ Following that approval, source commit `29166f85abbb12a2ff53f0cd3b77dcfdc9615b95
 - Packaged archive SHA-256: `8d681cde3db2f81a4ff4dd2ec679bcb0c282ecf90ecace21b3da05bb0b4df659`.
 
 This post-release record is a local documentation follow-up; the deployed implementation is the exact source commit above. Native deployment success confirms publication, while reader behavior and access-boundary verification remain the bounded checks recorded in the Verification section.
+
+## October 14, 2026 — preserve the published design in verification
+
+Owner request: fix the four failing layout checks and typecheck without changing the current design, then rerun checks. The version 41 presentation is the baseline: drug Benefits summaries appear in Overview, uncovered Benefits questions move to FAQs and questions already covered by Evidence/existing FAQs are not duplicated. Results is omitted, generic-only Quality is omitted, and regulatory Status records replace Status prose while retaining its anchor. Sharing follows the article and Related reading in DOM order; CSS continues to control visual placement. Page Snapshot counts the same expanded evidence-source list used by Article.
+
+Only verification expectations and the optional-image guard in the retained `theme 2.tsx` backup are changed. Active components, styles, scientific records and citation behavior remain unchanged. Checks continue to require source closure, retained prose, regulatory table values/citations, FAQ destinations, unique fragments and explicit Quality omissions. Verification results are recorded in the changelog. No new deployment is requested or claimed.

@@ -61,6 +61,10 @@ const columnHeaders = table => all(table, node => node.tag === 'th' && ancestor(
 const expectedHeaders = type => [type === 'Condition' ? 'Intervention' : 'Health condition', 'Outcome', 'Grade', 'Effect', 'Evidence'];
 const cellsOf = row => row.children.filter(node => node.tag === 'td' || node.tag === 'th');
 const summaryViews = new Map();
+// Accepted current layout: these drug pages have generic-only Quality copy.
+// Keep this explicit so accidentally hiding a substantive Quality section fails.
+const genericQualityRoutes = new Set(['fluvoxamine', 'ivermectin', 'mebendazole', 'maraviroc', 'atorvastatin', 'rituximab', 'celecoxib', 'vorinostat', 'clomipramine', 'thalidomide', 'fluconazole'].map(slug => '/drugs/' + slug));
+const drugStatusRows = JSON.parse(fs.readFileSync(path.join(root, 'data/drug-status-table.json'), 'utf8')).drugs;
 
 function assertEvidenceCount(node, summaries, label, {participants = true} = {}) {
   // Compute the expected count independently from the displayed aggregate.
@@ -207,7 +211,35 @@ function inspect(guide, pageSources, {expectScoped = false} = {}) {
   for (const section of guide.sections.filter(section => section.label.trim().toLowerCase() !== 'connections')) {
     if (!section.paragraph?.trim()) continue;
     const sectionNode = all(article, node => node.attrs?.id === section.id)[0];
+    if (guide.type === 'Drug' && section.label === 'Results') {
+      assert(!sectionNode, label + ': redundant Results prose is retired in favor of Evidence');
+      continue;
+    }
+    if (guide.type === 'Drug' && section.label === 'Quality' && genericQualityRoutes.has(guide.slug)) {
+      assert(!sectionNode, label + ': generic-only Quality prose stays omitted');
+      assert(!all(article, node => node.attrs?.id === 'section-quality').length, label + ': omitted Quality has no empty module');
+      continue;
+    }
+    const statusRows = guide.type === 'Drug' && drugStatusRows[guide.slug];
+    if (section.label === 'Status' && statusRows?.length) {
+      assert(sectionNode, label + ': Status prose retains its legacy anchor');
+      const table = all(article, node => node.tag === 'table' && hasClass(node, 'status-table'))[0];
+      assert(table, label + ': Status uses the regulatory table');
+      assert.deepEqual(columnHeaders(table).map(textOf), ['Use / indication', 'Regulator', 'Status', 'Year approved', 'Source']);
+      const rows = all(table, node => node.tag === 'tr' && ancestor(node, parent => parent.tag === 'tbody'));
+      assert.equal(rows.length, statusRows.length, label + ': every regulatory record rendered');
+      rows.forEach((row, index) => {
+        const record = statusRows[index];
+        assert.deepEqual(cellsOf(row).slice(0, 4).map(textOf), [record.use, record.regulator, record.status, String(record.year ?? '—')]);
+        assert.deepEqual(all(row, node => node.tag === 'sup').map(node => node.attrs['data-source-id']).sort(), [...record.sourceIds].sort(), label + ': Status source citations');
+      });
+      continue;
+    }
     assert(sectionNode && normalizedText(sectionNode).includes(proseText(section.paragraph)), label + ': existing visible article explanation preserved: ' + section.id);
+    if (guide.type === 'Drug' && section.label === 'Benefits') {
+      assert(ancestor(sectionNode, node => node.attrs?.['data-universal-section'] === 'Overview'), label + ': Benefits summary belongs to Overview');
+      assert(!all(article, node => node.attrs?.id === 'section-benefits').length, label + ': no standalone Benefits module');
+    }
   }
   assert.equal(JSON.stringify(guide), inputBefore, label + ': renderer never mutates canonical guide data');
   return {route: label, rows: expectedRows.length, groups: expectedGroups.length, citations: citations.length};

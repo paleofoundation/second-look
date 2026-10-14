@@ -4,7 +4,7 @@ import {load, render} from './check-reader-sections.mjs';
 const root = path.resolve(import.meta.dirname, '..');
 const {content} = load(path.join(root, 'lib/content.ts'));
 const {pageSnapshotFor, studyIdentityIndex} = load(path.join(root, 'lib/page-snapshot.ts'));
-const {guideCitationOrder} = load(path.join(root, 'lib/citation-plan.ts'));
+const {guideCitationOrder, articleEvidenceSources} = load(path.join(root, 'lib/citation-plan.ts'));
 const source = (id, extra = {}) => ({id, title: id, url: '', preview: '', sourceType: 'primary', ...extra});
 const fixtureSources = [source('a', {familyId: 'trial'}), source('b', {doi: 'https://doi.org/10.test/paper'}), source('c', {doi: '10.TEST/PAPER'}), source('d'), source('review', {sourceType: 'review'})];
 const index = studyIdentityIndex(fixtureSources, [{sourceIds: ['a', 'b', 'review'], studyFamilyIds: ['trial']}, {sourceIds: ['a', 'd'], studyFamilyIds: ['trial', 'other-trial']}]);
@@ -12,7 +12,7 @@ assert.equal(index.get('a'), index.get('c'), 'Family and DOI aliases deduplicate
 assert.notEqual(index.get('a'), index.get('d'), 'Multiple study families in one synthesis are not collapsed');
 assert(!index.has('review'), 'Reviews are not primary studies');
 const get = slug => content.guides.find(guide => guide.slug === slug);
-const snapshot = guide => {const sources = content.sources.filter(source => guide.sourceIds.includes(source.id)); return pageSnapshotFor(guide, sources, guideCitationOrder(guide, sources));};
+const snapshot = guide => {const sources = articleEvidenceSources(guide, content.sources.filter(source => guide.sourceIds.includes(source.id))); return pageSnapshotFor(guide, sources, guideCitationOrder(guide, sources));};
 assert.equal(snapshot(get('/conditions/long-covid')).studies, 5, 'COVID-OUT companion report does not inflate five referenced studies');
 assert.deepEqual(snapshot(get('/conditions/long-covid')).peers.map(peer => peer.id).sort(), ['D01', 'D03'], 'Candidate-only drug leads do not inflate Long COVID count');
 assert.equal(snapshot(get('/conditions/parkinson-disease')).peers.length, 1, 'Parkinson page counts its sourced investigation, not both candidate links');
@@ -24,7 +24,7 @@ const sample = [source('present'), source('absent'), source('background', {sourc
 assert.equal(pageSnapshotFor(empty, sample, ['present', 'background', 'disputed']).studies, 2, 'Counts cited studies including disputed work, excluding uncited and background records');
 const receipt = [];
 for (const guide of content.guides.filter(guide => ['Drug', 'Condition'].includes(guide.type))) {
- const sources = content.sources.filter(source => guide.sourceIds.includes(source.id));
+ const sources = articleEvidenceSources(guide, content.sources.filter(source => guide.sourceIds.includes(source.id)));
  const order = guideCitationOrder(guide, sources);
  const stats = pageSnapshotFor(guide, sources, order);
  assert.deepEqual(stats, pageSnapshotFor(guide, [...sources, ...sources].reverse(), order), guide.slug + ': duplicates/order do not change counts');

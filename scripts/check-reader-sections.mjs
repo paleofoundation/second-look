@@ -269,9 +269,22 @@ if (process.argv.includes('--all-profiles')) {
   const first=[...new Set(citations.map(m=>m[1]))];
   assert.deepEqual(order.slice(0,first.length),first,label+': citation first appearance');
   for(const c of citations){assert.equal(+c[2],order.indexOf(c[1])+1,label+': sequential citation');assert(pageIds.includes('source-ref-'+encodeURIComponent(c[1])),label+': citation target');}
+  const benefitPlan=benefitQuestionPlan(profile,synthesisRows.filter(row=>(profile.synthesisIds||[]).includes(row.id)));
   for(const section of profile.sections){
    if(section.sentences)assert.equal(section.sentences.map(s=>s.text.trim()).join(' '),section.paragraph.trim(),label+': section sentence map');
-   for(const q of section.questions||[]){if(!isRetiredArticleSection(section)){assert(center.includes('class="rgbc-faq-item" id="'+q.id+'"'),label+': canonical question '+q.id);totalQuestions++;}assert(q.answer.length>30&&q.sources.length,label+': sourced question answer');assert(q.sources.every(id=>profile.sourceIds.includes(id)),label+': question source closure');}
+   for(const q of section.questions||[]){
+    if(!isRetiredArticleSection(section)){
+     const benefit=profile.type==='Drug'&&section.label==='Benefits';
+     const covered=benefit&&benefitPlan.dropped.some(question=>question.id===q.id);
+     if(!covered){
+      assert(center.includes('class="rgbc-faq-item" id="'+q.id+'"'),label+': canonical question '+q.id);
+      if(benefit)assert(center.indexOf('id="'+q.id+'"')>center.indexOf('id="faqs"'),label+': uncovered benefit question moved to FAQs');
+      totalQuestions++;
+     }
+    }
+    assert(q.answer.length>30&&q.sources.length,label+': sourced question answer');
+    assert(q.sources.every(id=>profile.sourceIds.includes(id)),label+': question source closure');
+   }
   }
   for(const p of [mechanism.originalAction,mechanism.summary,...(mechanism.questions||[]),...(mechanism.pathways||[]),...(mechanism.rationales||[]).flatMap(row=>[row.rationale,row.tested,row.limits])].filter(Boolean))assert(p.sourceIds.length&&p.sourceIds.every(id=>profile.sourceIds.includes(id)),label+': mechanism source closure');
   totalQuestions+=(mechanism.questions||[]).length+profile.faqs.length;
