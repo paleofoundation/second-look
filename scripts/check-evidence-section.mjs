@@ -208,7 +208,7 @@ function inspect(guide, pageSources, {expectScoped = false} = {}) {
   const citations = all(article, node => node.tag === 'sup' && hasClass(node, 'citation-sup'));
   const first = [...new Set(citations.map(node => node.attrs['data-source-id']))];
   assert.deepEqual(order.slice(0, first.length), first, label + ': actual prose/scoped/effect/table first appearances agree with citation plan');
-  for (const citation of citations) assert.equal(textOf(citation), String(order.indexOf(citation.attrs['data-source-id']) + 1), label + ': stable citation display number');
+  for (const citation of citations) assert.equal(textOf(citation), '[' + (order.indexOf(citation.attrs['data-source-id']) + 1) + ']', label + ': stable citation display number');
   for (const section of guide.sections.filter(section => section.label.trim().toLowerCase() !== 'connections')) {
     if (!section.paragraph?.trim()) continue;
     const sectionNode = all(article, node => node.attrs?.id === section.id)[0];

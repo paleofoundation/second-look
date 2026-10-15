@@ -45,7 +45,7 @@ Use the prospective [RRX-CONDITION-001 addendum](../research/batches/RRX-CONDITI
 
 No article Connections body section or corresponding navigation entry, including renamed legacy relationship sections. Preserve meaningful inline relationships and canonical data. Related in the persistent right rail has at most three valid, relevant, unique non-self links, with authored priorities first. Link covered drugs, conditions and terms at their first mention per paragraph through the shared registry.
 
-Owner correction, October 14, 2026: inline superscript citation links display bare numbers without square brackets across articles and research reviews. Keep adjacent numbers visually separated, source identities, first-appearance numbering, reference targets, accessible labels and citation popovers. This supersedes the references’ bracketed superscript presentation; ordinary bibliography and popover reference labels remain unchanged.
+Owner correction, October 15, 2026: restore square brackets around inline superscript citation numbers across articles and research reviews, such as `[3][4]`. This supersedes the October 14 bare-number correction, which the owner withdrew as a mistake. Preserve source identities, first-appearance numbering, reference targets, accessible labels and citation popovers; restore the original tight cluster spacing.
 
 Use shared after-punctuation superscript citations in first-appearance order, page-specific inline FAQs, substantive mechanisms and verified author identity. Detailed requirements and acceptance gates remain in the pinned master and references; this summary does not weaken them.
 

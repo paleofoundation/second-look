@@ -41,7 +41,7 @@ for (const guide of profiles) {
   const studyIds = [...feed.matchAll(/data-study-id="([^"]+)"/g)].map(match => match[1]);
   assert.deepEqual(studyIds, pageSources.filter(isPrimarySource).map(source => source.id), guide.slug + ': one canonical summary per primary source');
   const citationOrder = guideCitationOrder(guide, pageSources);
-  const citations = [...article.matchAll(/<sup class="citation-sup" data-source-id="([^"]+)"[^>]*>[\s\S]*?class="citation-trigger"[^>]*>(\d+)<\/a>/g)];
+  const citations = [...article.matchAll(/<sup class="citation-sup" data-source-id="([^"]+)"[^>]*>[\s\S]*?class="citation-trigger"[^>]*>\[(\d+)\]<\/a>/g)];
   for (const citation of citations) {
     assert(pageSources.some(source => source.id === citation[1]), guide.slug + ': citation resolves in the complete article evidence sources');
     assert.equal(Number(citation[2]), citationOrder.indexOf(citation[1]) + 1, guide.slug + ': article citations retain the frozen augmented source order');
@@ -85,7 +85,7 @@ for (const source of fixtureSources) {
   const body = renderToStaticMarkup(React.createElement(InlineStudyReview, {review, sources: fixtureSources, order: frozenOrder, currentPath: '/fixture'}));
   for (const id of openingIds) assert(body.includes('id="study-' + source.id + '-opening-' + id + '"'), 'Every canonical opening is present and scoped to its study');
   assert(body.includes('Results · PDF page 3'), 'Source locator remains visible');
-  const citations = [...body.matchAll(/data-source-id="([^"]+)"[\s\S]*?class="citation-trigger"[^>]*>(\d+)<\/a>/g)];
+  const citations = [...body.matchAll(/data-source-id="([^"]+)"[\s\S]*?class="citation-trigger"[^>]*>\[(\d+)\]<\/a>/g)];
   assert(citations.length >= 5 && citations.every(match => match[1] === source.id && +match[2] === frozenOrder.indexOf(source.id) + 1), 'Opening answers and sections retain frozen citations');
   combined += body;
   assert(!canRenderStudyReviewInline({...review, sourceIds: ['unknown']}, source.id, fixtureSources, frozenOrder), 'Unknown citations stay on the dedicated review page');

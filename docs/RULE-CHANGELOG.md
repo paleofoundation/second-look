@@ -324,3 +324,8 @@ Source: owner request to balance the favicon around the heavier Rx, with the lig
 ## 2026-10-14 — reduce favicon target by 15%
 
 Source: owner confirmation to reduce the circle and surrounding marks by exactly 15%, centered on the x, leaving Rx where it is. Favicon-only generator transform scales the rings, crosshairs, connectors and arrow by 0.85 around original coordinates (313, 292); Rx path data and outer framing are unchanged. SVG, 16/32/48-pixel ICO and touch icon are regenerated, with refreshed icon URL versions. This supersedes the previous favicon target size; other brand assets retain their existing geometry. Verification: Rx path/framing identity, exact 0.85 target transforms, ICO dimensions, native-size visual inspection, governance and TypeScript passed. Publication pending.
+
+
+## 2026-10-15 — restore citation brackets
+
+Source: owner request, “please put citation brackets back. Mistake.” Scope: shared article and research-review superscript links site-wide. Supersedes the October 14 unbracketed-citation requirement; restore square-bracketed numbers and original tight cluster spacing. Consulted PepsAnon citation component. Contract: `PROJECT-RULES.md`. Shared renderer, CSS and existing citation-number checks updated; source identity/order and popover behavior preserved. Verification: governance, 68-article navigation, reader sections, 64-profile/four-answer evidence SSR, TypeScript, production build and 36 built-client boundary scans passed. Publication pending.
