@@ -41,10 +41,16 @@ function validate(record){
  assert.deepEqual(record.evidence.trialFamilyIds,record.evidence.trials.map(t=>t.id),'Family count mapping');
  for(const trial of record.evidence.trials){
   const canonical=trialIndex.get(trial.id);assert(canonical,'Unknown trial identity');
-  assert.equal(trial.participants,canonical.participants,'Unreviewed participant denominator');
-  assert.equal(trial.participantBasis,canonical.participantBasis,'Unreviewed denominator basis');
+  const denominator=trial.comparisonId?canonical.comparisons?.[trial.comparisonId]:canonical;
+  assert(denominator,'Unknown trial comparison');
+  if(trial.comparisonId){
+   assert.equal(denominator.drugId,record.drugId,'Trial comparison belongs to another drug');
+   assert(record.synthesisIds.every(id=>denominator.synthesisIds.includes(id)),'Trial comparison scope mismatch');
+  }
+  assert.equal(trial.participants,denominator.participants,'Unreviewed participant denominator');
+  assert.equal(trial.participantBasis,denominator.participantBasis,'Unreviewed denominator basis');
   assert(trial.participants===null||Number.isInteger(trial.participants)&&trial.participants>0,'Unknown count is null, never zero');
-  assert(trial.sourceIds.length&&trial.sourceIds.every(id=>record.sourceIds.includes(id)&&canonical.sourceIds.includes(id)),'Trial support escapes this outcome');
+  assert(trial.sourceIds.length&&trial.sourceIds.every(id=>record.sourceIds.includes(id)&&canonical.sourceIds.includes(id)&&denominator.sourceIds.includes(id)),'Trial support escapes this outcome');
  }
  const complete=record.evidence.trials.length>0&&record.evidence.trials.every(t=>t.participants!==null);
  assert.equal(record.evidence.participants,complete?record.evidence.trials.reduce((n,t)=>n+t.participants,0):null,'Unknown or repeated denominator');
@@ -55,6 +61,7 @@ function validate(record){
  assert.equal(hash(record),p.publicRecordSha256,'Public projection differs from assessed record');
  assert(p.sourceLocators.length&&record.sourceIds.every(id=>p.sourceLocators.some(b=>b.sourceId===id&&b.locator)),'Every source needs a real retained locator');
  assert.equal(p.humanApproval,'not recorded','No invented human approval');
+ if(a.assessedOn){assert.equal(p.assessedOn,a.assessedOn);assert.equal(record.assessedOn,a.assessedOn,'New assessment date must not inherit a historical date');}
 }
 assert.equal(data.method,'selected-source-benefit-v1');
 assert.equal(new Set(data.records.map(r=>r.id)).size,data.records.length);
@@ -86,4 +93,21 @@ const held=structuredClone(data.records[0]);held.grade.value='F';assert.throws((
 const stale=structuredClone(data.records[1]);stale.effect.detail='invented effect';assert.throws(()=>validate(stale),/projection differs/);
 const missing=structuredClone(lung);missing.sourceIds=[];assert.throws(()=>validate(missing),/support/);
 const wrongCount=structuredClone(lung);wrongCount.evidence.participants=46;assert.throws(()=>validate(wrongCount),/denominator/);
+// Exact new comparison bases stay within the shared factorial family.
+const fluvox=outcomeSummaryFor('SYN-FILL2-D02-COVIDOUT-COMPOSITE');
+const ivermectin=outcomeSummaryFor('SYN-FILL2-D08-COVIDOUT-COMPOSITE');
+assert.equal(fluvox.evidence.participants,661);assert.equal(ivermectin.evidence.participants,808);
+assert.equal(fluvox.evidence.trials[0].id,ivermectin.evidence.trials[0].id);
+assert.equal(evidenceForSummaries([fluvox,ivermectin]).rctCount,1);
+assert.equal(evidenceForSummaries([fluvox,ivermectin]).participants,null,'Overlapping distinct comparison sets are not additive');
+const pearl=['SYN-FILL2-D06-AGING-VAT','SYN-FILL2-D06-AGING-LEAN'].map(outcomeSummaryFor);
+assert.equal(evidenceForSummaries(pearl).rctCount,1);assert.equal(evidenceForSummaries(pearl).participants,125);
+for(const summary of [...pearl,fluvox,ivermectin])assert.equal(summary.assessedOn,'2026-10-26');
+for(const mutate of [
+ r=>r.evidence.trials[0].comparisonId='unknown',
+ r=>{r.evidence.trials[0].comparisonId='D08';r.evidence.trials[0].participants=808;},
+ r=>r.evidence.trials[0].participants=1431,
+ r=>r.evidence.trials[0].participantBasis='Invented same-trial population',
+ r=>r.assessedOn='2026-10-12',
+]){const fixture=structuredClone(fluvox);mutate(fixture);assert.throws(()=>validate(fixture),'Reject wrong comparison, denominator or backdate');}
 console.log(JSON.stringify({status:'PASS',syntheses:raw.length,summaries:data.records.length,uniqueRCTs:identities.length,missingRCTParticipantCounts:identities.filter(t=>t.participants===null).length,letters:Object.fromEntries(['A','B','C','D','E','F','ungraded'].map(g=>[g,data.records.filter(r=>(r.grade.value??'ungraded')===g).length])),longCovidMetformin:evidenceForSummaries(longCovid),checks:['source and row closure','explicit source-located assessments','stale input and projection rejection','held/computational grade rejection','overlap-aware trial and participant totals','conflicting denominator rejection','unknown is null','single-summary explanation preserved']},null,2));

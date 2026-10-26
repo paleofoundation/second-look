@@ -1,0 +1,106 @@
+{
+  "id": "FILL-REMAPRX-1-STEP2-APPRAISAL",
+  "version": "1.0",
+  "createdAt": "2026-10-26T08:19:07.726127+02:00",
+  "authority": "Elon 2026-10-26 07:58 OPTION1; exact existing-corpus appraisal authorized; no new retrieval; option2 rejected",
+  "baseCommit": "7d853a12b6159e492fa4a5fb68151b0aea236a71",
+  "inputInventory": "../inventory.json",
+  "scope": "16 initial profiles / 93 source associations / 86 distinct existing sources, reusing audit and exact locally hash-resolved originals only",
+  "sessions": [
+    {
+      "drugId": "D02",
+      "sourceIds": [
+        "P-D02-ACTIV6-2023",
+        "COND-C02-COVIDOUT-2022"
+      ],
+      "maxPapers": 25,
+      "execution": "sequential, one drug per scientific session; shared report reuses exact bytes with separate arm/outcome attribution"
+    },
+    {
+      "drugId": "D06",
+      "sourceIds": [
+        "P-D06-PERIODONTAL-2020",
+        "MECH-D06-AUTOPHAGY-2009",
+        "AGING-PEARL-2025"
+      ],
+      "maxPapers": 25,
+      "execution": "sequential, one drug per scientific session; shared report reuses exact bytes with separate arm/outcome attribution"
+    },
+    {
+      "drugId": "D08",
+      "sourceIds": [
+        "P-D08-CRC-2014",
+        "P-D08-HCC-2022",
+        "COND-C02-COVIDOUT-2022"
+      ],
+      "maxPapers": 25,
+      "execution": "sequential, one drug per scientific session; shared report reuses exact bytes with separate arm/outcome attribution"
+    },
+    {
+      "drugId": "D10",
+      "sourceIds": [
+        "P-D10-LIVER-2024",
+        "P-D10-LIVER-2026",
+        "MECH-D10-MICROTUBULE-2018"
+      ],
+      "maxPapers": 25,
+      "execution": "sequential, one drug per scientific session; shared report reuses exact bytes with separate arm/outcome attribution"
+    },
+    {
+      "drugId": "D26",
+      "sourceIds": [
+        "MECH-D26-HYPOXIA-2025"
+      ],
+      "maxPapers": 25,
+      "execution": "sequential, one drug per scientific session; shared report reuses exact bytes with separate arm/outcome attribution"
+    },
+    {
+      "drugId": "D34",
+      "sourceIds": [
+        "MECH-D34-HYPHAE-1999",
+        "MECH-D34-BIOFILM-2019",
+        "MECH-D07-HEDGEHOG-2010"
+      ],
+      "maxPapers": 25,
+      "execution": "sequential, one drug per scientific session; shared report reuses exact bytes with separate arm/outcome attribution"
+    },
+    {
+      "drugId": "D31",
+      "sourceIds": [
+        "MECH-D31-OXYGENATION-2020",
+        "MECH-D31-PASTIS-2022"
+      ],
+      "maxPapers": 25,
+      "execution": "sequential, one drug per scientific session; shared report reuses exact bytes with separate arm/outcome attribution"
+    }
+  ],
+  "sourcePolicy": "No web, no new source requests, no metadata enrichment from memory. Match existing DOI/PMID/PMCID/exact title and verify stored source hashes before reading. Raw bytes/derived full text remain private outside Git. Quarantine/corrections and missing inputs retained.",
+  "eligibility": "Existing exact drug/regimen, condition/goal, population/model, comparator, endpoint and timepoint; no cross-scope borrowing; no human benefit from animal/cell/mechanism/context/protocol. Human harm/null and contrary findings retained. Missing exact originals/companions become Reed queue lines. Ineligible registered condition scopes do not receive invented IDs.",
+  "assessment": "Unchanged selected-source-editorial-v1, all five named domains with actual source locators, rationale, date, source IDs and compiler fingerprint. Separate selected-source-benefit-v1 assessment/effect/trial-family accounting. No grade by design alone and no hash refresh without actual assessment.",
+  "schemas": [
+    "candidate.schema.json"
+  ],
+  "outputs": [
+    "source-access.json",
+    "candidates.json",
+    "assessments.json",
+    "REED-QUEUE.csv",
+    "profile-accounting.json",
+    "validation.json"
+  ],
+  "reviewStates": "Authoring/local source-verification recorded honestly; formal Q01-Q15, independent/human review and publication remain pending; no self-acceptance as an independent/human reviewer",
+  "projection": "Bounded candidate in isolated draft checkout; exact source/row IDs, public privacy projection, outcome registry/summaries and reciprocal parent mapping. No merge/deploy or production apply. Preserve unrelated rows and original D22/PR1/PR2/review4106.",
+  "checks": [
+    "source hashes/identity/locators/numerics/visual consequential tables",
+    "unchanged assessment compiler and grading checks",
+    "outcome-summary source/fingerprint/family/denominator checks",
+    "actual completed and gap profile SSR/citations",
+    "privacy/governance/review-boundaries/typecheck/build",
+    "repeat unchanged projection zero diff"
+  ],
+  "stopConditions": [
+    "Two failures at a step",
+    "Missing/unresolved exact source or material scope/identity/numerical contradiction holds that candidate, continue unaffected rows",
+    "No independent/human/release acceptance invented"
+  ]
+}

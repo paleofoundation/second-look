@@ -69,7 +69,15 @@
     "SYN-D01-C14-MF-ALMERA-2021-B05C4C42E69AE6236E3E": "OUT-D01-C14-MF-ALMERA-2021-B05C4C42E69AE6236E3E",
     "SYN-D01-C16-MF-ADENOMA-2016-83730B0D0B926F1511A1": "OUT-D01-C16-MF-ADENOMA-2016-83730B0D0B926F1511A1",
     "SYN-D01-C02-COND-C02-COVIDOUT-2022-B1E71756C16B18BBC77C": "OUT-D01-C02-COND-C02-COVIDOUT-2022-B1E71756C16B18BBC77C",
-    "SYN-D01-C30-MF-MASTERS-2019-CA65ECB67C3BDB523F7D": "OUT-D01-C30-MF-MASTERS-2019-CA65ECB67C3BDB523F7D"
+    "SYN-D01-C30-MF-MASTERS-2019-CA65ECB67C3BDB523F7D": "OUT-D01-C30-MF-MASTERS-2019-CA65ECB67C3BDB523F7D",
+    "SYN-FILL2-D02-ACTIV6-RECOVERY": "OUT-FILL2-D02-ACTIV6-RECOVERY",
+    "SYN-FILL2-D02-COVIDOUT-COMPOSITE": "OUT-FILL2-D02-COVIDOUT-COMPOSITE",
+    "SYN-FILL2-D08-COVIDOUT-COMPOSITE": "OUT-FILL2-D08-COVIDOUT-COMPOSITE",
+    "SYN-FILL2-D06-AGING-VAT": "OUT-FILL2-D06-AGING-VAT",
+    "SYN-FILL2-D06-AGING-LEAN": "OUT-FILL2-D06-AGING-LEAN",
+    "SYN-FILL2-D06-PERIODONTAL-MICE": "OUT-FILL2-D06-PERIODONTAL-MICE",
+    "SYN-FILL2-D08-CRC-XENOGRAFT": "OUT-FILL2-D08-CRC-XENOGRAFT",
+    "SYN-FILL2-D10-NSCLC-XENOGRAFT": "OUT-FILL2-D10-NSCLC-XENOGRAFT"
   },
   "outcomes": [
     {
@@ -4604,6 +4612,512 @@
         "value": null,
         "status": "not_extracted",
         "reason": "Not separately extracted in this bounded outcome assessment.",
+        "sources": []
+      }
+    },
+    {
+      "id": "OUT-FILL2-D02-ACTIV6-RECOVERY",
+      "label": "Time from study-drug receipt to the third of three consecutive symptom-free days",
+      "aliases": [
+        "Time from study-drug receipt to the third of three consecutive symptom-free days"
+      ],
+      "definition": {
+        "text": "Time from study-drug receipt to the third of three consecutive symptom-free days in US outpatients aged 30 or older with acute COVID-19; Omicron period; vaccination allowed.",
+        "sources": [
+          "P-D02-ACTIV6-2023"
+        ]
+      },
+      "registryState": "source_defined",
+      "instrument": {
+        "value": "Time from study-drug receipt to the third of three consecutive symptom-free days",
+        "status": "reported",
+        "reason": null,
+        "sources": [
+          "P-D02-ACTIV6-2023"
+        ]
+      },
+      "endpointHierarchy": {
+        "value": "primary",
+        "status": "reported",
+        "reason": null,
+        "sources": [
+          "P-D02-ACTIV6-2023"
+        ]
+      },
+      "clinicalOrSurrogateRole": {
+        "value": "Clinical symptom-recovery or acute-event endpoint",
+        "status": "reported",
+        "reason": null,
+        "sources": [
+          "P-D02-ACTIV6-2023"
+        ]
+      },
+      "measuredDirection": {
+        "value": "Higher-dose fluvoxamine did not shorten sustained recovery: adjusted hazard ratio 0.99 (95% Bayesian credible interval 0.89–1.09). Median recovery was 10 days in both groups.",
+        "status": "reported",
+        "reason": null,
+        "sources": [
+          "P-D02-ACTIV6-2023"
+        ]
+      },
+      "favorableScaleDirection": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "Not separately established in this bounded selected-source appraisal.",
+        "sources": []
+      },
+      "meaningfulChange": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "Not separately established in this bounded selected-source appraisal.",
+        "sources": []
+      },
+      "clinicalInterpretation": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "Not separately established in this bounded selected-source appraisal.",
+        "sources": []
+      }
+    },
+    {
+      "id": "OUT-FILL2-D02-COVIDOUT-COMPOSITE",
+      "label": "Composite of home oxygen saturation at or below 93%, emergency department visit, hospitalization, or death",
+      "aliases": [
+        "Composite of home oxygen saturation at or below 93%, emergency department visit, hospitalization, or death"
+      ],
+      "definition": {
+        "text": "Composite of home oxygen saturation at or below 93%, emergency department visit, hospitalization, or death in Nonhospitalized US adults aged 30–85 with overweight or obesity, positive test within 3 days and symptoms for less than 7 days.",
+        "sources": [
+          "COND-C02-COVIDOUT-2022"
+        ]
+      },
+      "registryState": "source_defined",
+      "instrument": {
+        "value": "Composite of home oxygen saturation at or below 93%, emergency department visit, hospitalization, or death",
+        "status": "reported",
+        "reason": null,
+        "sources": [
+          "COND-C02-COVIDOUT-2022"
+        ]
+      },
+      "endpointHierarchy": {
+        "value": "primary",
+        "status": "reported",
+        "reason": null,
+        "sources": [
+          "COND-C02-COVIDOUT-2022"
+        ]
+      },
+      "clinicalOrSurrogateRole": {
+        "value": "Clinical symptom-recovery or acute-event endpoint",
+        "status": "reported",
+        "reason": null,
+        "sources": [
+          "COND-C02-COVIDOUT-2022"
+        ]
+      },
+      "measuredDirection": {
+        "value": "Fluvoxamine did not demonstrate a reduction in the primary composite: adjusted odds ratio 0.94 (95% CI 0.66–1.36). Complete-case primary events were 79/329 versus 80/321; the adjusted model used multiple imputation.",
+        "status": "reported",
+        "reason": null,
+        "sources": [
+          "COND-C02-COVIDOUT-2022"
+        ]
+      },
+      "favorableScaleDirection": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "Not separately established in this bounded selected-source appraisal.",
+        "sources": []
+      },
+      "meaningfulChange": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "Not separately established in this bounded selected-source appraisal.",
+        "sources": []
+      },
+      "clinicalInterpretation": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "Not separately established in this bounded selected-source appraisal.",
+        "sources": []
+      }
+    },
+    {
+      "id": "OUT-FILL2-D08-COVIDOUT-COMPOSITE",
+      "label": "Composite of home oxygen saturation at or below 93%, emergency department visit, hospitalization, or death",
+      "aliases": [
+        "Composite of home oxygen saturation at or below 93%, emergency department visit, hospitalization, or death"
+      ],
+      "definition": {
+        "text": "Composite of home oxygen saturation at or below 93%, emergency department visit, hospitalization, or death in Nonhospitalized US adults aged 30–85 with overweight or obesity, positive test within 3 days and symptoms for less than 7 days.",
+        "sources": [
+          "COND-C02-COVIDOUT-2022"
+        ]
+      },
+      "registryState": "source_defined",
+      "instrument": {
+        "value": "Composite of home oxygen saturation at or below 93%, emergency department visit, hospitalization, or death",
+        "status": "reported",
+        "reason": null,
+        "sources": [
+          "COND-C02-COVIDOUT-2022"
+        ]
+      },
+      "endpointHierarchy": {
+        "value": "primary",
+        "status": "reported",
+        "reason": null,
+        "sources": [
+          "COND-C02-COVIDOUT-2022"
+        ]
+      },
+      "clinicalOrSurrogateRole": {
+        "value": "Clinical symptom-recovery or acute-event endpoint",
+        "status": "reported",
+        "reason": null,
+        "sources": [
+          "COND-C02-COVIDOUT-2022"
+        ]
+      },
+      "measuredDirection": {
+        "value": "Ivermectin did not demonstrate a reduction in the primary composite: adjusted odds ratio 1.05 (95% CI 0.76–1.45). Complete-case primary events were 105/407 versus 96/391; the adjusted model used multiple imputation.",
+        "status": "reported",
+        "reason": null,
+        "sources": [
+          "COND-C02-COVIDOUT-2022"
+        ]
+      },
+      "favorableScaleDirection": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "Not separately established in this bounded selected-source appraisal.",
+        "sources": []
+      },
+      "meaningfulChange": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "Not separately established in this bounded selected-source appraisal.",
+        "sources": []
+      },
+      "clinicalInterpretation": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "Not separately established in this bounded selected-source appraisal.",
+        "sources": []
+      }
+    },
+    {
+      "id": "OUT-FILL2-D06-AGING-VAT",
+      "label": "DXA-measured visceral adiposity change",
+      "aliases": [
+        "DXA-measured visceral adiposity change"
+      ],
+      "definition": {
+        "text": "DXA-measured visceral adiposity change in Generally healthy adults aged 50–85; selected health-conscious cohort.",
+        "sources": [
+          "AGING-PEARL-2025"
+        ]
+      },
+      "registryState": "source_defined",
+      "instrument": {
+        "value": "DXA-measured visceral adiposity change",
+        "status": "reported",
+        "reason": null,
+        "sources": [
+          "AGING-PEARL-2025"
+        ]
+      },
+      "endpointHierarchy": {
+        "value": "primary",
+        "status": "reported",
+        "reason": null,
+        "sources": [
+          "AGING-PEARL-2025"
+        ]
+      },
+      "clinicalOrSurrogateRole": {
+        "value": "Body-composition measure; not a lifespan endpoint",
+        "status": "reported",
+        "reason": null,
+        "sources": [
+          "AGING-PEARL-2025"
+        ]
+      },
+      "measuredDirection": {
+        "value": "PEARL did not demonstrate a difference in its primary visceral-adiposity outcome. Dose-specific odds ratios for improvement were 1.81 (95% CI 0.73–4.50) at 5 mg and 1.68 (0.66–4.32) at 10 mg; both intervals included no difference.",
+        "status": "reported",
+        "reason": null,
+        "sources": [
+          "AGING-PEARL-2025"
+        ]
+      },
+      "favorableScaleDirection": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "Not separately established in this bounded selected-source appraisal.",
+        "sources": []
+      },
+      "meaningfulChange": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "Not separately established in this bounded selected-source appraisal.",
+        "sources": []
+      },
+      "clinicalInterpretation": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "Not separately established in this bounded selected-source appraisal.",
+        "sources": []
+      }
+    },
+    {
+      "id": "OUT-FILL2-D06-AGING-LEAN",
+      "label": "Between-group difference in baseline-normalized DXA lean tissue mass percentage change",
+      "aliases": [
+        "Between-group difference in baseline-normalized DXA lean tissue mass percentage change"
+      ],
+      "definition": {
+        "text": "Between-group difference in baseline-normalized DXA lean tissue mass percentage change in Women aged 50–85 in PEARL; 8 women in the 10 mg and 15 in placebo groups among completers; endpoint-specific missingness.",
+        "sources": [
+          "AGING-PEARL-2025"
+        ]
+      },
+      "registryState": "source_defined",
+      "instrument": {
+        "value": "Between-group difference in baseline-normalized DXA lean tissue mass percentage change",
+        "status": "reported",
+        "reason": null,
+        "sources": [
+          "AGING-PEARL-2025"
+        ]
+      },
+      "endpointHierarchy": {
+        "value": "secondary",
+        "status": "reported",
+        "reason": null,
+        "sources": [
+          "AGING-PEARL-2025"
+        ]
+      },
+      "clinicalOrSurrogateRole": {
+        "value": "Body-composition measure; not a lifespan endpoint",
+        "status": "reported",
+        "reason": null,
+        "sources": [
+          "AGING-PEARL-2025"
+        ]
+      },
+      "measuredDirection": {
+        "value": "Women in the 10 mg group had a larger percentage change in lean tissue mass than placebo: between-group difference 6.194 percentage points (95% CI 0.8773–11.5105; Bonferroni-adjusted P = 0.018). This small secondary subgroup finding does not demonstrate longer life or better physical function.",
+        "status": "reported",
+        "reason": null,
+        "sources": [
+          "AGING-PEARL-2025"
+        ]
+      },
+      "favorableScaleDirection": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "Not separately established in this bounded selected-source appraisal.",
+        "sources": []
+      },
+      "meaningfulChange": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "Not separately established in this bounded selected-source appraisal.",
+        "sources": []
+      },
+      "clinicalInterpretation": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "Not separately established in this bounded selected-source appraisal.",
+        "sources": []
+      }
+    },
+    {
+      "id": "OUT-FILL2-D06-PERIODONTAL-MICE",
+      "label": "Periodontal bone loss measured by cementoenamel-junction to alveolar-bone-crest distance",
+      "aliases": [
+        "Periodontal bone loss measured by cementoenamel-junction to alveolar-bone-crest distance"
+      ],
+      "definition": {
+        "text": "Periodontal bone loss measured by cementoenamel-junction to alveolar-bone-crest distance in Female C57BL/6 mice, treatment beginning at about 20 months, in two research colonies.",
+        "sources": [
+          "P-D06-PERIODONTAL-2020"
+        ]
+      },
+      "registryState": "source_defined",
+      "instrument": {
+        "value": "Periodontal bone loss measured by cementoenamel-junction to alveolar-bone-crest distance",
+        "status": "reported",
+        "reason": null,
+        "sources": [
+          "P-D06-PERIODONTAL-2020"
+        ]
+      },
+      "endpointHierarchy": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "Not separately established in this bounded selected-source appraisal.",
+        "sources": []
+      },
+      "clinicalOrSurrogateRole": {
+        "value": "Nonclinical experimental outcome",
+        "status": "reported",
+        "reason": null,
+        "sources": [
+          "P-D06-PERIODONTAL-2020"
+        ]
+      },
+      "measuredDirection": {
+        "value": "Rapamycin-treated aged mice had more periodontal bone than vehicle controls; longitudinal scans in one colony also showed bone gain relative to baseline. This is an animal finding and does not establish periodontal benefit in people.",
+        "status": "reported",
+        "reason": null,
+        "sources": [
+          "P-D06-PERIODONTAL-2020"
+        ]
+      },
+      "favorableScaleDirection": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "Not separately established in this bounded selected-source appraisal.",
+        "sources": []
+      },
+      "meaningfulChange": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "Not separately established in this bounded selected-source appraisal.",
+        "sources": []
+      },
+      "clinicalInterpretation": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "Not separately established in this bounded selected-source appraisal.",
+        "sources": []
+      }
+    },
+    {
+      "id": "OUT-FILL2-D08-CRC-XENOGRAFT",
+      "label": "Growth of established colorectal cancer xenografts dependent on WNT-TCF signaling",
+      "aliases": [
+        "Growth of established colorectal cancer xenografts dependent on WNT-TCF signaling"
+      ],
+      "definition": {
+        "text": "Growth of established colorectal cancer xenografts dependent on WNT-TCF signaling in Human colorectal cancer cell lines and primary cells; xenografts in female nude mice.",
+        "sources": [
+          "P-D08-CRC-2014"
+        ]
+      },
+      "registryState": "source_defined",
+      "instrument": {
+        "value": "Growth of established colorectal cancer xenografts dependent on WNT-TCF signaling",
+        "status": "reported",
+        "reason": null,
+        "sources": [
+          "P-D08-CRC-2014"
+        ]
+      },
+      "endpointHierarchy": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "Not separately established in this bounded selected-source appraisal.",
+        "sources": []
+      },
+      "clinicalOrSurrogateRole": {
+        "value": "Nonclinical experimental outcome",
+        "status": "reported",
+        "reason": null,
+        "sources": [
+          "P-D08-CRC-2014"
+        ]
+      },
+      "measuredDirection": {
+        "value": "Ivermectin inhibited growth of WNT-TCF-dependent colorectal xenografts; TCF-independent growth was not similarly inhibited, and constitutively active TCF rescued growth. These experiments support a pathway hypothesis rather than clinical colorectal-cancer efficacy.",
+        "status": "reported",
+        "reason": null,
+        "sources": [
+          "P-D08-CRC-2014"
+        ]
+      },
+      "favorableScaleDirection": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "Not separately established in this bounded selected-source appraisal.",
+        "sources": []
+      },
+      "meaningfulChange": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "Not separately established in this bounded selected-source appraisal.",
+        "sources": []
+      },
+      "clinicalInterpretation": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "Not separately established in this bounded selected-source appraisal.",
+        "sources": []
+      }
+    },
+    {
+      "id": "OUT-FILL2-D10-NSCLC-XENOGRAFT",
+      "label": "Excised xenograft size and weight",
+      "aliases": [
+        "Excised xenograft size and weight"
+      ],
+      "definition": {
+        "text": "Excised xenograft size and weight in A549 human NSCLC xenografts in female athymic mice, with supporting NSCLC cell experiments.",
+        "sources": [
+          "MECH-D10-MICROTUBULE-2018"
+        ]
+      },
+      "registryState": "source_defined",
+      "instrument": {
+        "value": "Excised xenograft size and weight",
+        "status": "reported",
+        "reason": null,
+        "sources": [
+          "MECH-D10-MICROTUBULE-2018"
+        ]
+      },
+      "endpointHierarchy": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "Not separately established in this bounded selected-source appraisal.",
+        "sources": []
+      },
+      "clinicalOrSurrogateRole": {
+        "value": "Nonclinical experimental outcome",
+        "status": "reported",
+        "reason": null,
+        "sources": [
+          "MECH-D10-MICROTUBULE-2018"
+        ]
+      },
+      "measuredDirection": {
+        "value": "Fenbendazole reduced A549 xenograft size and weight in the reported mouse experiment, with supporting apoptosis and vascularity assays. This does not establish cancer control or safe dosing in people.",
+        "status": "reported",
+        "reason": null,
+        "sources": [
+          "MECH-D10-MICROTUBULE-2018"
+        ]
+      },
+      "favorableScaleDirection": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "Not separately established in this bounded selected-source appraisal.",
+        "sources": []
+      },
+      "meaningfulChange": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "Not separately established in this bounded selected-source appraisal.",
+        "sources": []
+      },
+      "clinicalInterpretation": {
+        "value": null,
+        "status": "not_extracted",
+        "reason": "Not separately established in this bounded selected-source appraisal.",
         "sources": []
       }
     }

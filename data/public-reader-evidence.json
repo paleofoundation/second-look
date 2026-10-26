@@ -4665,6 +4665,819 @@
       ],
       "route": "oral",
       "formulation": "Release formulation not established in the bounded material inspected"
+    },
+    {
+      "id": "SYN-FILL2-D02-ACTIV6-RECOVERY",
+      "version": "fill-remaprx-1-step2-2026-10-26",
+      "drugId": "D02",
+      "conditionId": "C02",
+      "title": "Sustained recovery with higher-dose fluvoxamine",
+      "use": "Early outpatient acute COVID-19 treatment",
+      "population": "US outpatients aged 30 or older with acute COVID-19; Omicron period; vaccination allowed",
+      "comparison": "Fluvoxamine 50 mg twice on day 1, then 100 mg twice daily for 12 days versus matched placebo",
+      "endpoint": "Time from study-drug receipt to the third of three consecutive symptom-free days",
+      "timepoint": "Through day 28",
+      "route": "Oral",
+      "formulation": "Higher-dose fluvoxamine, 13-day course",
+      "status": "reported_result",
+      "finding": {
+        "text": "Higher-dose fluvoxamine did not shorten sustained recovery: adjusted hazard ratio 0.99 (95% Bayesian credible interval 0.89–1.09). Median recovery was 10 days in both groups.",
+        "sources": [
+          "P-D02-ACTIV6-2023"
+        ]
+      },
+      "magnitudeText": "Adjusted recovery HR 0.99 (95% credible interval 0.89–1.09); 10-day median in both groups.",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "Double-blind randomized placebo-controlled ACTIV-6 comparison",
+      "limitations": [
+        {
+          "text": "The modified intention-to-treat analysis included 1175 of 1208 randomized participants; 33 without timely drug delivery were excluded after randomization.",
+          "sources": [
+            "P-D02-ACTIV6-2023"
+          ]
+        },
+        {
+          "text": "Participant-reported recovery in largely vaccinated Omicron-era outpatients does not establish effects on hospitalization, mortality, or established Long COVID.",
+          "sources": [
+            "P-D02-ACTIV6-2023"
+          ]
+        },
+        {
+          "text": "The prespecified Bayesian model used a skeptical prior; a null result does not prove exact equivalence.",
+          "sources": [
+            "P-D02-ACTIV6-2023"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "P-D02-ACTIV6-2023"
+      ],
+      "resultIds": [
+        "SYN-FILL2-D02-ACTIV6-RECOVERY-R1"
+      ],
+      "studyFamilyIds": [
+        "STUDY-ACTIV6-HIGHDOSE-FLUVOX-2023"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "complete": false,
+        "pending": [
+          "Additional corpus sources and independent scientific review remain pending."
+        ]
+      },
+      "effects": [
+        {
+          "resultId": "SYN-FILL2-D02-ACTIV6-RECOVERY-R1",
+          "sourceId": "P-D02-ACTIV6-2023",
+          "studyFamilyId": "STUDY-ACTIV6-HIGHDOSE-FLUVOX-2023",
+          "design": "Double-blind randomized placebo-controlled ACTIV-6 comparison",
+          "population": "US outpatients aged 30 or older with acute COVID-19; Omicron period; vaccination allowed",
+          "timepoint": "Through day 28",
+          "locators": [
+            {
+              "section": "Abstract Results; Methods: Participants, Randomization, Outcome Measures and Statistical Analysis Plan; Results: Study Population and Primary Outcome; Discussion: Limitations",
+              "basis": "full_text"
+            }
+          ],
+          "type": "hazard_ratio_bayesian",
+          "value": 0.99,
+          "units": "ratio",
+          "uncertainty": {
+            "level": 95,
+            "lower": 0.89,
+            "upper": 1.09,
+            "type": "credible_interval",
+            "missing_reason": null
+          },
+          "sampleRandomized": 1208,
+          "sampleAnalyzed": 1175,
+          "sampleDenominatorNote": "601 active and 607 placebo randomized; 589 active and 586 placebo included in the modified intention-to-treat analysis.",
+          "endpointClass": "primary"
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "P-D02-ACTIV6-2023",
+          "label": "Abstract Results; Methods: Participants, Randomization, Outcome Measures and Statistical Analysis Plan; Results: Study Population and Primary Outcome; Discussion: Limitations"
+        }
+      ]
+    },
+    {
+      "id": "SYN-FILL2-D02-COVIDOUT-COMPOSITE",
+      "version": "fill-remaprx-1-step2-2026-10-26",
+      "drugId": "D02",
+      "conditionId": "C02",
+      "title": "Hypoxemia, emergency care, hospitalization or death",
+      "use": "Early outpatient acute COVID-19 treatment with fluvoxamine",
+      "population": "Nonhospitalized US adults aged 30–85 with overweight or obesity, positive test within 3 days and symptoms for less than 7 days",
+      "comparison": "Fluvoxamine 50 mg twice daily for 14 days versus concurrently randomized matched control, adjusted for other factorial assignments",
+      "endpoint": "Composite of home oxygen saturation at or below 93%, emergency department visit, hospitalization, or death",
+      "timepoint": "Through day 14",
+      "route": "Oral",
+      "formulation": "50 mg twice daily for 14 days",
+      "status": "reported_result",
+      "finding": {
+        "text": "Fluvoxamine did not demonstrate a reduction in the primary composite: adjusted odds ratio 0.94 (95% CI 0.66–1.36). Complete-case primary events were 79/329 versus 80/321; the adjusted model used multiple imputation.",
+        "sources": [
+          "COND-C02-COVIDOUT-2022"
+        ]
+      },
+      "magnitudeText": "Adjusted OR 0.94 (95% CI 0.66–1.36); complete-case events 79/329 versus 80/321.",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "Blinded randomized 2×3 factorial COVID-OUT trial",
+      "limitations": [
+        {
+          "text": "Home oximetry drove much of the composite and had measurement and reporting limitations; this is not a precise estimate of mortality or hospitalization alone.",
+          "sources": [
+            "COND-C02-COVIDOUT-2022"
+          ]
+        },
+        {
+          "text": "The relevant modified intention-to-treat comparison comprised 334 active and 327 concurrent controls; 1431 were randomized across the whole factorial trial.",
+          "sources": [
+            "COND-C02-COVIDOUT-2022"
+          ]
+        },
+        {
+          "text": "Only concurrent controls are valid for each drug. Marginal event rates between drugs cannot be compared; the intervals allow benefit and harm. Fluvoxamine recruitment stopped for prespecified futility.",
+          "sources": [
+            "COND-C02-COVIDOUT-2022"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "COND-C02-COVIDOUT-2022"
+      ],
+      "resultIds": [
+        "SYN-FILL2-D02-COVIDOUT-COMPOSITE-R1"
+      ],
+      "studyFamilyIds": [
+        "S-COVIDOUT-2023"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "complete": false,
+        "pending": [
+          "Additional corpus sources and independent scientific review remain pending."
+        ]
+      },
+      "effects": [
+        {
+          "resultId": "SYN-FILL2-D02-COVIDOUT-COMPOSITE-R1",
+          "sourceId": "COND-C02-COVIDOUT-2022",
+          "studyFamilyId": "S-COVIDOUT-2023",
+          "design": "Blinded randomized 2×3 factorial COVID-OUT trial",
+          "population": "Nonhospitalized US adults aged 30–85 with overweight or obesity, positive test within 3 days and symptoms for less than 7 days",
+          "timepoint": "Through day 14",
+          "locators": [
+            {
+              "section": "Methods: Randomization, Treatment, End Points and Statistical Analysis; Results: Patients and Primary Outcome; Table 2 primary composite row and comparison headers; Discussion: limitations",
+              "basis": "full_text"
+            }
+          ],
+          "type": "odds_ratio",
+          "value": 0.94,
+          "units": "ratio",
+          "uncertainty": {
+            "level": 95,
+            "lower": 0.66,
+            "upper": 1.36,
+            "type": "confidence_interval",
+            "missing_reason": null
+          },
+          "sampleRandomized": 1431,
+          "sampleAnalyzed": 661,
+          "sampleDenominatorNote": "Whole-trial randomized N; comparison-specific modified intention-to-treat N 661. Event denominators differ because primary data were missing and imputed for adjusted analysis.",
+          "armData": [
+            {
+              "arm_id": "D02-active",
+              "n": 329,
+              "events": 79,
+              "denominator_basis": "primary_endpoint_complete_case"
+            },
+            {
+              "arm_id": "D02-control",
+              "n": 321,
+              "events": 80,
+              "denominator_basis": "primary_endpoint_complete_case"
+            }
+          ],
+          "endpointClass": "primary"
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "COND-C02-COVIDOUT-2022",
+          "label": "Methods: Randomization, Treatment, End Points and Statistical Analysis; Results: Patients and Primary Outcome; Table 2 primary composite row and comparison headers; Discussion: limitations"
+        }
+      ]
+    },
+    {
+      "id": "SYN-FILL2-D08-COVIDOUT-COMPOSITE",
+      "version": "fill-remaprx-1-step2-2026-10-26",
+      "drugId": "D08",
+      "conditionId": "C02",
+      "title": "Hypoxemia, emergency care, hospitalization or death",
+      "use": "Early outpatient acute COVID-19 treatment with ivermectin",
+      "population": "Nonhospitalized US adults aged 30–85 with overweight or obesity, positive test within 3 days and symptoms for less than 7 days",
+      "comparison": "Ivermectin 390–470 micrograms/kg daily for 3 days versus concurrently randomized matched control, adjusted for other factorial assignments",
+      "endpoint": "Composite of home oxygen saturation at or below 93%, emergency department visit, hospitalization, or death",
+      "timepoint": "Through day 14",
+      "route": "Oral",
+      "formulation": "390–470 micrograms/kg daily for 3 days",
+      "status": "reported_result",
+      "finding": {
+        "text": "Ivermectin did not demonstrate a reduction in the primary composite: adjusted odds ratio 1.05 (95% CI 0.76–1.45). Complete-case primary events were 105/407 versus 96/391; the adjusted model used multiple imputation.",
+        "sources": [
+          "COND-C02-COVIDOUT-2022"
+        ]
+      },
+      "magnitudeText": "Adjusted OR 1.05 (95% CI 0.76–1.45); complete-case events 105/407 versus 96/391.",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "Blinded randomized 2×3 factorial COVID-OUT trial",
+      "limitations": [
+        {
+          "text": "Home oximetry drove much of the composite and had measurement and reporting limitations; this is not a precise estimate of mortality or hospitalization alone.",
+          "sources": [
+            "COND-C02-COVIDOUT-2022"
+          ]
+        },
+        {
+          "text": "The relevant modified intention-to-treat comparison comprised 410 active and 398 concurrent controls; 1431 were randomized across the whole factorial trial.",
+          "sources": [
+            "COND-C02-COVIDOUT-2022"
+          ]
+        },
+        {
+          "text": "Only concurrent controls are valid for each drug. Marginal event rates between drugs cannot be compared; the intervals allow benefit and harm.",
+          "sources": [
+            "COND-C02-COVIDOUT-2022"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "COND-C02-COVIDOUT-2022"
+      ],
+      "resultIds": [
+        "SYN-FILL2-D08-COVIDOUT-COMPOSITE-R1"
+      ],
+      "studyFamilyIds": [
+        "S-COVIDOUT-2023"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "complete": false,
+        "pending": [
+          "Additional corpus sources and independent scientific review remain pending."
+        ]
+      },
+      "effects": [
+        {
+          "resultId": "SYN-FILL2-D08-COVIDOUT-COMPOSITE-R1",
+          "sourceId": "COND-C02-COVIDOUT-2022",
+          "studyFamilyId": "S-COVIDOUT-2023",
+          "design": "Blinded randomized 2×3 factorial COVID-OUT trial",
+          "population": "Nonhospitalized US adults aged 30–85 with overweight or obesity, positive test within 3 days and symptoms for less than 7 days",
+          "timepoint": "Through day 14",
+          "locators": [
+            {
+              "section": "Methods: Randomization, Treatment, End Points and Statistical Analysis; Results: Patients and Primary Outcome; Table 2 primary composite row and comparison headers; Discussion: limitations",
+              "basis": "full_text"
+            }
+          ],
+          "type": "odds_ratio",
+          "value": 1.05,
+          "units": "ratio",
+          "uncertainty": {
+            "level": 95,
+            "lower": 0.76,
+            "upper": 1.45,
+            "type": "confidence_interval",
+            "missing_reason": null
+          },
+          "sampleRandomized": 1431,
+          "sampleAnalyzed": 808,
+          "sampleDenominatorNote": "Whole-trial randomized N; comparison-specific modified intention-to-treat N 808. Event denominators differ because primary data were missing and imputed for adjusted analysis.",
+          "armData": [
+            {
+              "arm_id": "D08-active",
+              "n": 407,
+              "events": 105,
+              "denominator_basis": "primary_endpoint_complete_case"
+            },
+            {
+              "arm_id": "D08-control",
+              "n": 391,
+              "events": 96,
+              "denominator_basis": "primary_endpoint_complete_case"
+            }
+          ],
+          "endpointClass": "primary"
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "COND-C02-COVIDOUT-2022",
+          "label": "Methods: Randomization, Treatment, End Points and Statistical Analysis; Results: Patients and Primary Outcome; Table 2 primary composite row and comparison headers; Discussion: limitations"
+        }
+      ]
+    },
+    {
+      "id": "SYN-FILL2-D06-AGING-VAT",
+      "version": "fill-remaprx-1-step2-2026-10-26",
+      "drugId": "D06",
+      "conditionId": "GOAL-AGING",
+      "title": "Visceral adiposity during healthy aging",
+      "use": "Body-composition change during normative aging",
+      "population": "Generally healthy adults aged 50–85; selected health-conscious cohort",
+      "comparison": "Compounded rapamycin 5 mg or 10 mg once weekly versus placebo",
+      "endpoint": "DXA-measured visceral adiposity change",
+      "timepoint": "48 weeks",
+      "route": "Oral",
+      "formulation": "Compounded rapamycin 5 mg or 10 mg once weekly",
+      "status": "reported_result",
+      "finding": {
+        "text": "PEARL did not demonstrate a difference in its primary visceral-adiposity outcome. Dose-specific odds ratios for improvement were 1.81 (95% CI 0.73–4.50) at 5 mg and 1.68 (0.66–4.32) at 10 mg; both intervals included no difference.",
+        "sources": [
+          "AGING-PEARL-2025"
+        ]
+      },
+      "magnitudeText": "Improvement OR: 5 mg 1.81 (95% CI 0.73–4.50); 10 mg 1.68 (0.66–4.32).",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "Double-blind randomized three-arm PEARL trial",
+      "limitations": [
+        {
+          "text": "This was a small completer analysis: 125 randomized, 114 completed (40 at 5 mg, 35 at 10 mg, 39 placebo); missing outcome values were removed pairwise.",
+          "sources": [
+            "AGING-PEARL-2025"
+          ]
+        },
+        {
+          "text": "The compounded formulation had lower measured exposure than commercial sirolimus; nominal study doses cannot be assumed interchangeable with commercial tablets.",
+          "sources": [
+            "AGING-PEARL-2025"
+          ]
+        },
+        {
+          "text": "Healthy, health-conscious adults aged 50–85 were selected; lifespan and prevention of age-related diseases were not established. All authors reported employment and/or ownership interests in AgelessRx.",
+          "sources": [
+            "AGING-PEARL-2025"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "AGING-PEARL-2025"
+      ],
+      "resultIds": [
+        "SYN-FILL2-D06-AGING-VAT-R1",
+        "SYN-FILL2-D06-AGING-VAT-R2"
+      ],
+      "studyFamilyIds": [
+        "STUDY-PEARL-2025"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "complete": false,
+        "pending": [
+          "Additional corpus sources and independent scientific review remain pending."
+        ]
+      },
+      "effects": [
+        {
+          "resultId": "SYN-FILL2-D06-AGING-VAT-R1",
+          "sourceId": "AGING-PEARL-2025",
+          "studyFamilyId": "STUDY-PEARL-2025",
+          "design": "Double-blind randomized three-arm PEARL trial",
+          "population": "Generally healthy adults aged 50–85; selected health-conscious cohort",
+          "timepoint": "48 weeks",
+          "locators": [
+            {
+              "section": "PDF pp. 2–3 (printed 909–910), Results; p. 4 (printed 911), Table 1 VAT rows; pp. 12–15 (printed 919–922), Discussion, Methods and Conflicts; p. 23, Supplementary Figure 1",
+              "basis": "full_text"
+            }
+          ],
+          "type": "odds_ratio",
+          "value": 1.81,
+          "units": "ratio",
+          "uncertainty": {
+            "level": 95,
+            "lower": 0.73,
+            "upper": 4.5,
+            "type": "confidence_interval",
+            "missing_reason": null
+          },
+          "endpointClass": "primary",
+          "sampleRandomized": 125,
+          "sampleAnalyzed": 114,
+          "recordedNotes": "5 mg/week versus placebo; odds of improvement, not a continuous mean change."
+        },
+        {
+          "resultId": "SYN-FILL2-D06-AGING-VAT-R2",
+          "sourceId": "AGING-PEARL-2025",
+          "studyFamilyId": "STUDY-PEARL-2025",
+          "design": "Double-blind randomized three-arm PEARL trial",
+          "population": "Generally healthy adults aged 50–85; selected health-conscious cohort",
+          "timepoint": "48 weeks",
+          "locators": [
+            {
+              "section": "PDF pp. 2–3 (printed 909–910), Results; p. 4 (printed 911), Table 1 VAT rows; pp. 12–15 (printed 919–922), Discussion, Methods and Conflicts; p. 23, Supplementary Figure 1",
+              "basis": "full_text"
+            }
+          ],
+          "type": "odds_ratio",
+          "value": 1.68,
+          "units": "ratio",
+          "uncertainty": {
+            "level": 95,
+            "lower": 0.66,
+            "upper": 4.32,
+            "type": "confidence_interval",
+            "missing_reason": null
+          },
+          "endpointClass": "primary",
+          "sampleRandomized": 125,
+          "sampleAnalyzed": 114,
+          "recordedNotes": "10 mg/week versus placebo; shared placebo, not an independent trial."
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "AGING-PEARL-2025",
+          "label": "PDF pp. 2–3 (printed 909–910), Results; p. 4 (printed 911), Table 1 VAT rows; pp. 12–15 (printed 919–922), Discussion, Methods and Conflicts; p. 23, Supplementary Figure 1"
+        }
+      ]
+    },
+    {
+      "id": "SYN-FILL2-D06-AGING-LEAN",
+      "version": "fill-remaprx-1-step2-2026-10-26",
+      "drugId": "D06",
+      "conditionId": "GOAL-AGING",
+      "title": "Lean tissue in women during healthy aging",
+      "use": "Secondary body-composition outcome during normative aging",
+      "population": "Women aged 50–85 in PEARL; 8 women in the 10 mg and 15 in placebo groups among completers; endpoint-specific missingness",
+      "comparison": "Compounded rapamycin 10 mg once weekly versus placebo; 5 mg arm retained in the three-arm analysis",
+      "endpoint": "Between-group difference in baseline-normalized DXA lean tissue mass percentage change",
+      "timepoint": "48 weeks",
+      "route": "Oral",
+      "formulation": "Compounded rapamycin 10 mg once weekly",
+      "status": "reported_result",
+      "finding": {
+        "text": "Women in the 10 mg group had a larger percentage change in lean tissue mass than placebo: between-group difference 6.194 percentage points (95% CI 0.8773–11.5105; Bonferroni-adjusted P = 0.018). This small secondary subgroup finding does not demonstrate longer life or better physical function.",
+        "sources": [
+          "AGING-PEARL-2025"
+        ]
+      },
+      "magnitudeText": "Women, 10 mg versus placebo: +6.194 percentage points (95% CI 0.8773–11.5105).",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "Secondary sex-specific analysis of the randomized PEARL trial",
+      "limitations": [
+        {
+          "text": "The positive finding is a small secondary sex-specific comparison amid many body-composition and survey analyses; replication and clinical importance remain uncertain.",
+          "sources": [
+            "AGING-PEARL-2025"
+          ]
+        },
+        {
+          "text": "This was a small completer analysis: 125 randomized, 114 completed (40 at 5 mg, 35 at 10 mg, 39 placebo); missing outcome values were removed pairwise.",
+          "sources": [
+            "AGING-PEARL-2025"
+          ]
+        },
+        {
+          "text": "The compounded formulation had lower measured exposure than commercial sirolimus; nominal study doses cannot be assumed interchangeable with commercial tablets.",
+          "sources": [
+            "AGING-PEARL-2025"
+          ]
+        },
+        {
+          "text": "Healthy, health-conscious adults aged 50–85 were selected; lifespan and prevention of age-related diseases were not established. All authors reported employment and/or ownership interests in AgelessRx.",
+          "sources": [
+            "AGING-PEARL-2025"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "AGING-PEARL-2025"
+      ],
+      "resultIds": [
+        "SYN-FILL2-D06-AGING-LEAN-R1"
+      ],
+      "studyFamilyIds": [
+        "STUDY-PEARL-2025"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "complete": false,
+        "pending": [
+          "Additional corpus sources and independent scientific review remain pending."
+        ]
+      },
+      "effects": [
+        {
+          "resultId": "SYN-FILL2-D06-AGING-LEAN-R1",
+          "sourceId": "AGING-PEARL-2025",
+          "studyFamilyId": "STUDY-PEARL-2025",
+          "design": "Secondary sex-specific analysis of the randomized PEARL trial",
+          "population": "Women aged 50–85 in PEARL; 8 women in the 10 mg and 15 in placebo groups among completers; endpoint-specific missingness",
+          "timepoint": "48 weeks",
+          "locators": [
+            {
+              "section": "PDF p. 3 (printed 910), Results; p. 5 (printed 912), Table 2 Females after 48 weeks, LTM 10 mg versus Placebo; Methods pp. 13–15; Supplementary Figure 1",
+              "basis": "full_text"
+            }
+          ],
+          "type": "mean_difference",
+          "value": 6.1939,
+          "units": "percentage_points_of_baseline_normalized_change",
+          "uncertainty": {
+            "level": 95,
+            "lower": 0.8773,
+            "upper": 11.5105,
+            "type": "confidence_interval",
+            "missing_reason": null
+          },
+          "endpointClass": "secondary",
+          "sampleRandomized": 125,
+          "sampleAnalyzed": null,
+          "sampleDenominatorNote": "125 randomized overall; 114 completers overall; 40 women among completers, including 8 at 10 mg and 15 placebo. Endpoint-specific subgroup analyzed N is not independently reconciled; do not substitute these for exact contrast N.",
+          "recordedNotes": "Table 2, females after 48 weeks, 10 mg minus placebo; baseline normalized to percentage change. Bonferroni-adjusted P=.018."
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "AGING-PEARL-2025",
+          "label": "PDF p. 3 (printed 910), Results; p. 5 (printed 912), Table 2 Females after 48 weeks, LTM 10 mg versus Placebo; Methods pp. 13–15; Supplementary Figure 1"
+        }
+      ]
+    },
+    {
+      "id": "SYN-FILL2-D06-PERIODONTAL-MICE",
+      "version": "fill-remaprx-1-step2-2026-10-26",
+      "drugId": "D06",
+      "conditionId": "C10",
+      "title": "Periodontal bone in aged mice",
+      "use": "Experimental age-associated periodontal disease",
+      "population": "Female C57BL/6 mice, treatment beginning at about 20 months, in two research colonies",
+      "comparison": "Encapsulated rapamycin 42 ppm in chow versus matched eudragit vehicle chow",
+      "endpoint": "Periodontal bone loss measured by cementoenamel-junction to alveolar-bone-crest distance",
+      "timepoint": "8 weeks",
+      "route": "Dietary",
+      "formulation": "Encapsulated rapamycin 42 ppm chow",
+      "status": "preclinical_result",
+      "finding": {
+        "text": "Rapamycin-treated aged mice had more periodontal bone than vehicle controls; longitudinal scans in one colony also showed bone gain relative to baseline. This is an animal finding and does not establish periodontal benefit in people.",
+        "sources": [
+          "P-D06-PERIODONTAL-2020"
+        ]
+      },
+      "magnitudeText": "Directional bone preservation/regrowth in mice; human effect size unavailable.",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "Controlled animal experiments in two colonies; no human randomized trial",
+      "limitations": [
+        {
+          "text": "Only female mice were studied, with small colony-specific groups; human dose, durability and clinical benefit were not established.",
+          "sources": [
+            "P-D06-PERIODONTAL-2020"
+          ]
+        },
+        {
+          "text": "The experiments measured multiple bone and inflammatory outcomes; a numeric pooled estimate and confidence interval were not extracted.",
+          "sources": [
+            "P-D06-PERIODONTAL-2020"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "P-D06-PERIODONTAL-2020"
+      ],
+      "resultIds": [
+        "SYN-FILL2-D06-PERIODONTAL-MICE-R1"
+      ],
+      "studyFamilyIds": [
+        "STUDY-P-D06-PERIODONTAL-2020"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "complete": false,
+        "pending": [
+          "Additional corpus sources and independent scientific review remain pending."
+        ]
+      },
+      "effects": [
+        {
+          "resultId": "SYN-FILL2-D06-PERIODONTAL-MICE-R1",
+          "sourceId": "P-D06-PERIODONTAL-2020",
+          "studyFamilyId": "STUDY-P-D06-PERIODONTAL-2020",
+          "design": "Controlled animal experiments in two colonies; no human randomized trial",
+          "population": "Female C57BL/6 mice, treatment beginning at about 20 months, in two research colonies",
+          "timepoint": "8 weeks",
+          "locators": [
+            {
+              "section": "Results and Figures 1–2, especially Figure 2C and 2F; Materials and methods: Animal studies, Encapsulated rapamycin feeding and Micro-computed tomography analysis",
+              "basis": "full_text"
+            }
+          ],
+          "value": null,
+          "missingReason": "Qualitative experimental finding extracted; a numeric effect and uncertainty were not extracted from the plots.",
+          "recordedResult": "Rapamycin-treated aged mice had more periodontal bone than vehicle controls; longitudinal scans in one colony also showed bone gain relative to baseline. This is an animal finding and does not establish periodontal benefit in people."
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "P-D06-PERIODONTAL-2020",
+          "label": "Results and Figures 1–2, especially Figure 2C and 2F; Materials and methods: Animal studies, Encapsulated rapamycin feeding and Micro-computed tomography analysis"
+        }
+      ]
+    },
+    {
+      "id": "SYN-FILL2-D08-CRC-XENOGRAFT",
+      "version": "fill-remaprx-1-step2-2026-10-26",
+      "drugId": "D08",
+      "conditionId": "C16",
+      "title": "Growth of WNT-TCF-dependent colorectal xenografts",
+      "use": "Experimental colorectal-cancer pathway inhibition",
+      "population": "Human colorectal cancer cell lines and primary cells; xenografts in female nude mice",
+      "comparison": "Ivermectin in cyclodextrin versus carrier; TCF-independent and TCFVP16 rescue controls",
+      "endpoint": "Growth of established colorectal cancer xenografts dependent on WNT-TCF signaling",
+      "timepoint": "Serial tumor measurements every 2–3 days during treatment",
+      "route": "Intraperitoneal in mice",
+      "formulation": "Ivermectin conjugated with cyclodextrin, 10 mg/kg daily in xenograft experiments",
+      "status": "preclinical_result",
+      "finding": {
+        "text": "Ivermectin inhibited growth of WNT-TCF-dependent colorectal xenografts; TCF-independent growth was not similarly inhibited, and constitutively active TCF rescued growth. These experiments support a pathway hypothesis rather than clinical colorectal-cancer efficacy.",
+        "sources": [
+          "P-D08-CRC-2014"
+        ]
+      },
+      "magnitudeText": "Pathway-dependent xenograft growth inhibition; no human effect estimate.",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "Cell and mouse xenograft experiments; no human randomized trial",
+      "limitations": [
+        {
+          "text": "Preclinical model, nonclinical route and exposure, small experimental groups and incomplete allocation/blinding information prevent a clinical efficacy inference.",
+          "sources": [
+            "P-D08-CRC-2014"
+          ]
+        },
+        {
+          "text": "The exact molecular target remained unresolved; TCF-independent models were not responsive. No clinical survival, response or toxicity benefit was tested.",
+          "sources": [
+            "P-D08-CRC-2014"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "P-D08-CRC-2014"
+      ],
+      "resultIds": [
+        "SYN-FILL2-D08-CRC-XENOGRAFT-R1"
+      ],
+      "studyFamilyIds": [
+        "STUDY-P-D08-CRC-2014"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "complete": false,
+        "pending": [
+          "Additional corpus sources and independent scientific review remain pending."
+        ]
+      },
+      "effects": [
+        {
+          "resultId": "SYN-FILL2-D08-CRC-XENOGRAFT-R1",
+          "sourceId": "P-D08-CRC-2014",
+          "studyFamilyId": "STUDY-P-D08-CRC-2014",
+          "design": "Cell and mouse xenograft experiments; no human randomized trial",
+          "population": "Human colorectal cancer cell lines and primary cells; xenografts in female nude mice",
+          "timepoint": "Serial tumor measurements every 2–3 days during treatment",
+          "locators": [
+            {
+              "section": "Results: Ivermectin selectively represses TCF-dependent human colon cancer xenograft growth in vivo; Figures 4–5 (including TCFVP16 rescue); Discussion; Materials and Methods: Mouse xenografts",
+              "basis": "full_text"
+            }
+          ],
+          "value": null,
+          "missingReason": "Qualitative experimental finding extracted; a numeric effect and uncertainty were not extracted from the plots.",
+          "recordedResult": "Ivermectin inhibited growth of WNT-TCF-dependent colorectal xenografts; TCF-independent growth was not similarly inhibited, and constitutively active TCF rescued growth. These experiments support a pathway hypothesis rather than clinical colorectal-cancer efficacy."
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "P-D08-CRC-2014",
+          "label": "Results: Ivermectin selectively represses TCF-dependent human colon cancer xenograft growth in vivo; Figures 4–5 (including TCFVP16 rescue); Discussion; Materials and Methods: Mouse xenografts"
+        }
+      ]
+    },
+    {
+      "id": "SYN-FILL2-D10-NSCLC-XENOGRAFT",
+      "version": "fill-remaprx-1-step2-2026-10-26",
+      "drugId": "D10",
+      "conditionId": "C14",
+      "title": "NSCLC xenograft growth in mice",
+      "use": "Experimental fenbendazole cancer investigation",
+      "population": "A549 human NSCLC xenografts in female athymic mice, with supporting NSCLC cell experiments",
+      "comparison": "Fenbendazole versus untreated/control xenografts",
+      "endpoint": "Excised xenograft size and weight",
+      "timepoint": "12 days of mouse treatment",
+      "route": "Oral in mice",
+      "formulation": "Fenbendazole 1 mg per mouse every second day",
+      "status": "preclinical_result",
+      "finding": {
+        "text": "Fenbendazole reduced A549 xenograft size and weight in the reported mouse experiment, with supporting apoptosis and vascularity assays. This does not establish cancer control or safe dosing in people.",
+        "sources": [
+          "MECH-D10-MICROTUBULE-2018"
+        ]
+      },
+      "magnitudeText": "Reduced xenograft size and weight in mice; no human efficacy estimate.",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "Cell and mouse xenograft experiments; no human randomized trial",
+      "limitations": [
+        {
+          "text": "Randomization, allocation concealment and blinded tumor assessment were not established; a numeric effect and confidence interval were not extracted.",
+          "sources": [
+            "MECH-D10-MICROTUBULE-2018"
+          ]
+        },
+        {
+          "text": "This veterinary-drug experiment does not establish human NSCLC treatment, survival benefit, or safety. Separate human liver-injury reports remain safety evidence, not cancer-efficacy evidence.",
+          "sources": [
+            "MECH-D10-MICROTUBULE-2018"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "MECH-D10-MICROTUBULE-2018"
+      ],
+      "resultIds": [
+        "SYN-FILL2-D10-NSCLC-XENOGRAFT-R1"
+      ],
+      "studyFamilyIds": [
+        "STUDY-MECH-D10-MICROTUBULE-2018"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "complete": false,
+        "pending": [
+          "Additional corpus sources and independent scientific review remain pending."
+        ]
+      },
+      "effects": [
+        {
+          "resultId": "SYN-FILL2-D10-NSCLC-XENOGRAFT-R1",
+          "sourceId": "MECH-D10-MICROTUBULE-2018",
+          "studyFamilyId": "STUDY-MECH-D10-MICROTUBULE-2018",
+          "design": "Cell and mouse xenograft experiments; no human randomized trial",
+          "population": "A549 human NSCLC xenografts in female athymic mice, with supporting NSCLC cell experiments",
+          "timepoint": "12 days of mouse treatment",
+          "locators": [
+            {
+              "section": "Results: In vivo tumour suppression by FZ treatment, Figure 9d–h; Materials and methods: Nude mice experiments and Statistical Analysis",
+              "basis": "full_text"
+            }
+          ],
+          "value": null,
+          "missingReason": "Qualitative experimental finding extracted; a numeric effect and uncertainty were not extracted from the plots.",
+          "recordedResult": "Fenbendazole reduced A549 xenograft size and weight in the reported mouse experiment, with supporting apoptosis and vascularity assays. This does not establish cancer control or safe dosing in people."
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "MECH-D10-MICROTUBULE-2018",
+          "label": "Results: In vivo tumour suppression by FZ treatment, Figure 9d–h; Materials and methods: Nude mice experiments and Statistical Analysis"
+        }
+      ]
     }
   ]
 }

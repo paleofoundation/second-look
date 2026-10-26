@@ -1,10 +1,15 @@
-# FILL-REMAPRX-1 step 2 — outcome-table inventory and gate
+# FILL-REMAPRX-1 step 2 — exact-source outcomes and preserved initial audit
+
+**Current continuation:** eight new canonical outcomes, eight real five-domain editorial assessments (40 judgments), five target profiles with rows and 11 truthful empty profiles. All 93 initial associations/86 sources are reconciled; the offline Reed queue has 76 lines/72 source IDs and has not been sent. See the [appraisal continuation](appraisal/README.md), [per-profile accounting](appraisal/profile-accounting.json), [exact assessments](appraisal/assessments.json) and [current validation](appraisal/validation.json). Independent/human review and release remain pending; this is a draft candidate, not live completion.
+
+The sections below preserve the starting inventory and 07:58 authorization correction. Their zero-row counts describe the initial checkpoint only.
+
 
 **Initial audit preserved; bounded appraisal continuation authorized at 07:58.** At the initial audit checkpoint all 16 tables remain honestly empty. This draft accounts for the existing evidence and the missing exact-scope assessment inputs; it does not claim that the literature or corpus has no results.
 
 Base: wiring PR #2, `codex/fill-remaprx-1-wiring` at `92f323f3425fd40c06787d57ff92fa672a418cd0`. Step-2 branch: `codex/fill-remaprx-1-outcomes`. Stacked on wiring PR #2; retarget after the prerequisite PRs land. The exact live source `2004fbf0…` and reviewed `4106ef7e…` references, PR #1 and PR #2 are unchanged. D22 uncommitted work is excluded and untouched.
 
-## What can be filled within the current permission
+## Initial inventory before the authorized appraisal
 
 There are **16 empty profiles (11 drugs and five conditions/goals), 93 page/source associations and 86 distinct existing source IDs**. None has an existing canonical synthesis row or exact-scope assessed outcome summary to attach. The current 62 canonical rows/assessments and 60 summaries therefore provide **zero exact reusable rows** for these 16 profiles. This differs from source availability: many records contain positive, null, harmful, uncontrolled or nonclinical findings.
 

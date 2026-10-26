@@ -1,6 +1,7 @@
 """Inventory existing records only. Does not mutate evidence, assess sources or import rows."""
 import hashlib
 import json
+import subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[3]
@@ -8,7 +9,8 @@ PACKET = Path(__file__).resolve().parent
 BASE = '92f323f3425fd40c06787d57ff92fa672a418cd0'
 
 def read(name):
-    return json.loads((ROOT / name).read_text())
+    # This is the immutable starting audit; current appraisal accounting is separate.
+    return json.loads(subprocess.check_output(['git','show',BASE+':'+name],cwd=ROOT,text=True))
 
 # Scope labels reconcile already recorded titles/previews/design/populations.
 # They are not new source extraction, an outcome assessment or an effect estimate.

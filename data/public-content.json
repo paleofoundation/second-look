@@ -2078,14 +2078,17 @@
       "sourceType": "primary",
       "design": "Preclinical combination experiments",
       "population": "Hepatocellular carcinoma models",
-      "preview": "Growth inhibition and apoptosis with investigation of combination effects.",
+      "preview": "This preclinical ivermectin–sorafenib report is retracted and excluded from efficacy conclusions.",
       "locators": [
         {
           "section": "Abstract; Results",
           "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9107598/",
           "basis": "full_text"
         }
-      ]
+      ],
+      "status": "Quarantined",
+      "correction": "The locally delivered full-text XML links “RETRACTION: Ivermectin Synergizes Sorafenib in Hepatocellular Carcinoma via Targeting Multiple Oncogenic Pathways” (2026; DOI 10.1002/prp2.70222; PMID 41689298). The original is excluded from efficacy assessment.",
+      "decisiveLimit": "Retracted original report; no efficacy inference or benefit grade."
     },
     {
       "id": "CTX-D09-LABEL",
@@ -8199,13 +8202,13 @@
           "id": "dosing",
           "label": "Dosing",
           "title": "",
-          "paragraph": "ACTIV-6 studied 100 mg twice daily for 13 days; that experimental course did not improve sustained recovery.",
+          "paragraph": "ACTIV-6 studied 50 mg twice daily on day 1, followed by 100 mg twice daily for 12 additional days; that experimental course did not improve sustained recovery.",
           "sources": [
             "P-D02-ACTIV6-2023"
           ],
           "sentences": [
             {
-              "text": "ACTIV-6 studied 100 mg twice daily for 13 days; that experimental course did not improve sustained recovery.",
+              "text": "ACTIV-6 studied 50 mg twice daily on day 1, followed by 100 mg twice daily for 12 additional days; that experimental course did not improve sustained recovery.",
               "sources": [
                 "P-D02-ACTIV6-2023"
               ]
@@ -8346,7 +8349,10 @@
         "COND-C02-COVIDOUT-2022"
       ],
       "related": [],
-      "synthesisIds": [],
+      "synthesisIds": [
+        "SYN-FILL2-D02-ACTIV6-RECOVERY",
+        "SYN-FILL2-D02-COVIDOUT-COMPOSITE"
+      ],
       "entityId": "D02",
       "scope": "An OCD medicine investigated for inflammatory effects in acute COVID-19 and persistent fatigue.",
       "coverageLabel": "",
@@ -9497,7 +9503,11 @@
         "AGING-SIROLIMUS-LABEL"
       ],
       "related": [],
-      "synthesisIds": [],
+      "synthesisIds": [
+        "SYN-FILL2-D06-AGING-VAT",
+        "SYN-FILL2-D06-AGING-LEAN",
+        "SYN-FILL2-D06-PERIODONTAL-MICE"
+      ],
       "entityId": "D06",
       "scope": "An mTOR inhibitor investigated for periodontal aging and for disrupting cancer growth and resistance pathways.",
       "coverageLabel": "",
@@ -9604,7 +9614,7 @@
           "id": "benefits",
           "label": "Benefits",
           "title": "",
-          "paragraph": "Six days of higher-dose ivermectin did not improve sustained recovery from acute COVID-19. Ovarian, brain, breast, colorectal and liver cancer experiments reported effects in cells or animals, without a patient benefit estimate from those experiments.",
+          "paragraph": "Six days of higher-dose ivermectin did not improve sustained recovery from acute COVID-19. Ovarian, brain, breast and colorectal cancer experiments reported effects in cells or animals, without a patient benefit estimate from those experiments. The liver-cancer combination report is retracted and excluded from efficacy conclusions.",
           "sources": [
             "P-D08-ACTIV6-2023",
             "P-D08-OVARIAN-2009",
@@ -9615,14 +9625,9 @@
           ],
           "sentences": [
             {
-              "text": "Six days of higher-dose ivermectin did not improve sustained recovery from acute COVID-19.",
+              "text": "Six days of higher-dose ivermectin did not improve sustained recovery from acute COVID-19. Ovarian, brain, breast and colorectal cancer experiments reported effects in cells or animals, without a patient benefit estimate from those experiments. The liver-cancer combination report is retracted and excluded from efficacy conclusions.",
               "sources": [
-                "P-D08-ACTIV6-2023"
-              ]
-            },
-            {
-              "text": "Ovarian, brain, breast, colorectal and liver cancer experiments reported effects in cells or animals, without a patient benefit estimate from those experiments.",
-              "sources": [
+                "P-D08-ACTIV6-2023",
                 "P-D08-OVARIAN-2009",
                 "P-D08-GBM-2016",
                 "P-D08-BREAST-2016",
@@ -9715,13 +9720,13 @@
             {
               "id": "hcc-benefit",
               "question": "What has the liver cancer experiment shown?",
-              "answer": "The study examined cancer-cell death and combination effects with sorafenib in preclinical models.",
+              "answer": "This preclinical ivermectin–sorafenib report is retracted and cannot support a liver-cancer benefit conclusion.",
               "sources": [
                 "P-D08-HCC-2022"
               ],
               "sentences": [
                 {
-                  "text": "The study examined cancer-cell death and combination effects with sorafenib in preclinical models.",
+                  "text": "This preclinical ivermectin–sorafenib report is retracted and cannot support a liver-cancer benefit conclusion.",
                   "sources": [
                     "P-D08-HCC-2022"
                   ]
@@ -9969,7 +9974,10 @@
         "COND-C02-COVIDOUT-2022"
       ],
       "related": [],
-      "synthesisIds": [],
+      "synthesisIds": [
+        "SYN-FILL2-D08-COVIDOUT-COMPOSITE",
+        "SYN-FILL2-D08-CRC-XENOGRAFT"
+      ],
       "entityId": "D08",
       "scope": "An antiparasitic with negative randomized COVID-19 findings and laboratory cancer research.",
       "coverageLabel": "",
@@ -10666,7 +10674,9 @@
         "MECH-D10-MICROTUBULE-2018"
       ],
       "related": [],
-      "synthesisIds": [],
+      "synthesisIds": [
+        "SYN-FILL2-D10-NSCLC-XENOGRAFT"
+      ],
       "entityId": "D10",
       "scope": "A veterinary dewormer with ovarian-cancer laboratory findings and reported human liver injury.",
       "coverageLabel": "",
@@ -18082,13 +18092,17 @@
         "MF-COVID-VIRAL-2024",
         "P-COVIDOUT-2023",
         "P-D17-PRINCIPLE",
-        "P-D22-RECOVERY"
+        "P-D22-RECOVERY",
+        "P-D02-ACTIV6-2023"
       ],
       "related": [],
       "synthesisIds": [
         "SYN-D17-C02-P-D17-PRINCIPLE",
         "SYN-D22-C02-P-D22-RECOVERY",
-        "SYN-D01-C02-COND-C02-COVIDOUT-2022-B1E71756C16B18BBC77C"
+        "SYN-D01-C02-COND-C02-COVIDOUT-2022-B1E71756C16B18BBC77C",
+        "SYN-FILL2-D02-ACTIV6-RECOVERY",
+        "SYN-FILL2-D02-COVIDOUT-COMPOSITE",
+        "SYN-FILL2-D08-COVIDOUT-COMPOSITE"
       ],
       "entityId": "C02",
       "scope": "Repurposed medicines in acute COVID-19: antiviral treatment, inflammatory pathways and randomized results.",
@@ -19728,11 +19742,13 @@
       "sourceIds": [
         "COND-C10-NIDCR",
         "COND-C10-MMP-2004",
-        "COND-C10-DOXY-2004"
+        "COND-C10-DOXY-2004",
+        "P-D06-PERIODONTAL-2020"
       ],
       "related": [],
       "synthesisIds": [
-        "SYN-D17-C10-COND-C10-DOXY-2004"
+        "SYN-D17-C10-COND-C10-DOXY-2004",
+        "SYN-FILL2-D06-PERIODONTAL-MICE"
       ],
       "entityId": "C10",
       "scope": "Doxycycline as a periodontal host-response treatment, and how its benefit differs from dental cleaning or antibiotic dosing.",
@@ -20548,14 +20564,16 @@
         "P-D07-PROSTATE-2013",
         "P-D07-LUNG-2013",
         "MF-NRG-LU001-2021",
-        "MF-ALMERA-2021"
+        "MF-ALMERA-2021",
+        "MECH-D10-MICROTUBULE-2018"
       ],
       "related": [],
       "synthesisIds": [
         "SYN-D07-C14-COND-C14-ITRA-2013",
         "SYN-D07-C14-P-D07-LUNG-2013",
         "SYN-D01-C14-MF-NRG-LU001-2021-868676D72A2E752656A0",
-        "SYN-D01-C14-MF-ALMERA-2021-B05C4C42E69AE6236E3E"
+        "SYN-D01-C14-MF-ALMERA-2021-B05C4C42E69AE6236E3E",
+        "SYN-FILL2-D10-NSCLC-XENOGRAFT"
       ],
       "entityId": "C14",
       "scope": "Itraconazole added to pemetrexed in a small trial of advanced nonsquamous lung cancer.",
@@ -21018,14 +21036,16 @@
         "COND-C20-ASP-2020",
         "P-D30-CRC",
         "P-D15-COLON-2021",
-        "MF-ADENOMA-2016"
+        "MF-ADENOMA-2016",
+        "P-D08-CRC-2014"
       ],
       "related": [],
       "synthesisIds": [
         "SYN-D23-C16-COND-C16-ALASCCA-2025",
         "SYN-D30-C16-P-D30-CRC",
         "SYN-D15-C16-P-D15-COLON-2021",
-        "SYN-D01-C16-MF-ADENOMA-2016-83730B0D0B926F1511A1"
+        "SYN-D01-C16-MF-ADENOMA-2016-83730B0D0B926F1511A1",
+        "SYN-FILL2-D08-CRC-XENOGRAFT"
       ],
       "entityId": "C16",
       "scope": "Aspirin after surgery for colorectal cancers with selected PI3K-pathway alterations.",
@@ -24722,6 +24742,238 @@
           "CTX-D34-LABEL"
         ]
       }
+    },
+    {
+      "id": "G-GOAL-AGING",
+      "entityId": "GOAL-AGING",
+      "slug": "/conditions/aging",
+      "title": "Aging & longevity",
+      "type": "Condition",
+      "researchGoal": true,
+      "description": "What drug studies tell us about lifespan, physical function and other outcomes of aging.",
+      "scope": "Human health and function in later life, alongside the animal experiments motivating longevity research.",
+      "coverageLabel": "",
+      "topicIds": [
+        "DR032",
+        "DR033"
+      ],
+      "sections": [
+        {
+          "id": "overview",
+          "label": "Overview",
+          "title": "",
+          "paragraph": "Healthy aging includes maintaining physical, mental and cognitive function, independence and quality of life. Longevity research also asks whether interventions can extend lifespan; these are related but distinct goals.",
+          "sources": [
+            "AGING-NIH"
+          ],
+          "sentences": [
+            {
+              "text": "Healthy aging includes maintaining physical, mental and cognitive function, independence and quality of life. Longevity research also asks whether interventions can extend lifespan; these are related but distinct goals.",
+              "sources": [
+                "AGING-NIH"
+              ]
+            }
+          ],
+          "questions": []
+        },
+        {
+          "id": "options",
+          "label": "Options",
+          "title": "",
+          "paragraph": "Rapamycin has extended mouse lifespan, while human studies have examined body composition and other shorter-term outcomes. Metformin has also been tested for physical function, with no walking-speed benefit in the MET-PREVENT trial.",
+          "sources": [
+            "AGING-RAPA-MICE-2009",
+            "AGING-PEARL-2025",
+            "MF-METPREVENT-2025"
+          ],
+          "sentences": [
+            {
+              "text": "Rapamycin has extended mouse lifespan, while human studies have examined body composition and other shorter-term outcomes. Metformin has also been tested for physical function, with no walking-speed benefit in the MET-PREVENT trial.",
+              "sources": [
+                "AGING-RAPA-MICE-2009",
+                "AGING-PEARL-2025",
+                "MF-METPREVENT-2025"
+              ]
+            }
+          ],
+          "questions": [
+            {
+              "id": "aging-human-life",
+              "question": "Have these trials shown that people live longer?",
+              "answer": "Neither PEARL nor MET-PREVENT tested lifespan extension as its primary outcome. They studied body composition and walking speed over months.",
+              "sources": [
+                "AGING-PEARL-2025",
+                "MF-METPREVENT-2025"
+              ],
+              "sentences": [
+                {
+                  "text": "Neither PEARL nor MET-PREVENT tested lifespan extension as its primary outcome. They studied body composition and walking speed over months.",
+                  "sources": [
+                    "AGING-PEARL-2025",
+                    "MF-METPREVENT-2025"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "aging-muscle",
+              "question": "Does metformin improve muscle function with age?",
+              "answer": "MET-PREVENT found no improvement in walking speed in older adults with probable sarcopenia and frailty or prefrailty. In MASTERS, metformin reduced gains in lean mass during resistance training compared with placebo.",
+              "sources": [
+                "MF-METPREVENT-2025",
+                "MF-MASTERS-2019"
+              ],
+              "sentences": [
+                {
+                  "text": "MET-PREVENT found no improvement in walking speed in older adults with probable sarcopenia and frailty or prefrailty. In MASTERS, metformin reduced gains in lean mass during resistance training compared with placebo.",
+                  "sources": [
+                    "MF-METPREVENT-2025",
+                    "MF-MASTERS-2019"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "evidence",
+          "label": "Evidence",
+          "title": "",
+          "paragraph": "PEARL analyzed 114 completers after 48 weeks and found no significant difference in visceral adiposity, its primary outcome. Some secondary measures, including lean mass and pain in women, improved; small subgroups, multiple comparisons and exclusion of 11 dropouts limit the result. The mouse lifespan experiments are direct survival tests in mice. Translating that result to human lifespan requires a different kind and duration of study.",
+          "sources": [
+            "AGING-PEARL-2025",
+            "AGING-RAPA-MICE-2009"
+          ],
+          "sentences": [
+            {
+              "text": "PEARL analyzed 114 completers after 48 weeks and found no significant difference in visceral adiposity, its primary outcome. Some secondary measures, including lean mass and pain in women, improved; small subgroups, multiple comparisons and exclusion of 11 dropouts limit the result.",
+              "sources": [
+                "AGING-PEARL-2025"
+              ]
+            },
+            {
+              "text": "The mouse lifespan experiments are direct survival tests in mice. Translating that result to human lifespan requires a different kind and duration of study.",
+              "sources": [
+                "AGING-RAPA-MICE-2009"
+              ]
+            }
+          ],
+          "questions": []
+        },
+        {
+          "id": "safety",
+          "label": "Safety",
+          "title": "",
+          "paragraph": "Sirolimus can increase infection risk, impair wound healing and raise blood lipids. Strong CYP3A/P-glycoprotein interactions, including grapefruit, can alter exposure. Metformin can cause gastrointestinal effects and vitamin B12 depletion; severe kidney impairment increases lactic-acidosis risk.",
+          "sources": [
+            "AGING-SIROLIMUS-LABEL",
+            "MF-LABEL-2025"
+          ],
+          "sentences": [
+            {
+              "text": "Sirolimus can increase infection risk, impair wound healing and raise blood lipids. Strong CYP3A/P-glycoprotein interactions, including grapefruit, can alter exposure.",
+              "sources": [
+                "AGING-SIROLIMUS-LABEL"
+              ]
+            },
+            {
+              "text": "Metformin can cause gastrointestinal effects and vitamin B12 depletion; severe kidney impairment increases lactic-acidosis risk.",
+              "sources": [
+                "MF-LABEL-2025"
+              ]
+            }
+          ],
+          "questions": []
+        },
+        {
+          "id": "comparisons",
+          "label": "Comparisons",
+          "title": "",
+          "paragraph": "PEARL studied generally healthy adults aged 50–85, whereas MET-PREVENT recruited much older adults with impaired physical function. The different populations and outcomes do not support ranking these drugs for a single “anti-aging” benefit.",
+          "sources": [
+            "AGING-PEARL-2025",
+            "MF-METPREVENT-2025"
+          ],
+          "sentences": [
+            {
+              "text": "PEARL studied generally healthy adults aged 50–85, whereas MET-PREVENT recruited much older adults with impaired physical function. The different populations and outcomes do not support ranking these drugs for a single “anti-aging” benefit.",
+              "sources": [
+                "AGING-PEARL-2025",
+                "MF-METPREVENT-2025"
+              ]
+            }
+          ],
+          "questions": []
+        },
+        {
+          "id": "connections",
+          "label": "Connections",
+          "title": "",
+          "paragraph": "The sirolimus, metformin and sarcopenia profiles explain the individual drugs and physical-function outcomes in greater detail.",
+          "sources": [],
+          "sentences": [
+            {
+              "text": "The sirolimus, metformin and sarcopenia profiles explain the individual drugs and physical-function outcomes in greater detail.",
+              "sources": []
+            }
+          ],
+          "questions": []
+        }
+      ],
+      "faqs": [
+        {
+          "id": "aging-formulation",
+          "question": "Does the rapamycin formulation matter?",
+          "answer": "PEARL used compounded rapamycin; the authors found substantially lower blood concentrations than with commercial formulations. Its nominal weekly doses therefore cannot be assumed equivalent to commercial tablets.",
+          "sources": [
+            "AGING-PEARL-2025"
+          ],
+          "sentences": [
+            {
+              "text": "PEARL used compounded rapamycin; the authors found substantially lower blood concentrations than with commercial formulations. Its nominal weekly doses therefore cannot be assumed equivalent to commercial tablets.",
+              "sources": [
+                "AGING-PEARL-2025"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "aging-physical-function",
+          "question": "What does walking speed add to this question?",
+          "answer": "Walking speed measures physical performance. It can inform a question about mobility, but the four-month MET-PREVENT comparison did not measure how long participants lived.",
+          "sources": [
+            "MF-METPREVENT-2025"
+          ],
+          "sentences": [
+            {
+              "text": "Walking speed measures physical performance. It can inform a question about mobility, but the four-month MET-PREVENT comparison did not measure how long participants lived.",
+              "sources": [
+                "MF-METPREVENT-2025"
+              ]
+            }
+          ]
+        }
+      ],
+      "sourceIds": [
+        "AGING-NIH",
+        "AGING-RAPA-MICE-2009",
+        "AGING-PEARL-2025",
+        "MF-METPREVENT-2025",
+        "MF-MASTERS-2019",
+        "AGING-SIROLIMUS-LABEL",
+        "MF-LABEL-2025",
+        "P-D06-PERIODONTAL-2020"
+      ],
+      "synthesisIds": [
+        "SYN-FILL2-D06-AGING-VAT",
+        "SYN-FILL2-D06-AGING-LEAN"
+      ],
+      "related": [
+        "G-DRUG-D06",
+        "G-METFORMIN",
+        "G-CONDITION-C30"
+      ],
+      "scopedSections": []
     }
   ],
   "glossary": [

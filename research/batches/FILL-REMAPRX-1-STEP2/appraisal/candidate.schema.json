@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "sourceId",
+    "drugId",
+    "conditionId",
+    "population",
+    "comparison",
+    "endpoint",
+    "timepoint",
+    "finding",
+    "limits",
+    "sourceBindings",
+    "assessment"
+  ],
+  "properties": {
+    "sourceId": {
+      "type": "string"
+    },
+    "drugId": {
+      "type": "string"
+    },
+    "conditionId": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "population": {
+      "type": "string"
+    },
+    "comparison": {
+      "type": "string"
+    },
+    "endpoint": {
+      "type": "string"
+    },
+    "timepoint": {
+      "type": "string"
+    },
+    "finding": {
+      "type": "string"
+    },
+    "limits": {
+      "type": "string"
+    },
+    "sourceBindings": {
+      "type": "array",
+      "minItems": 1
+    },
+    "assessment": {
+      "type": "object",
+      "required": [
+        "grade",
+        "rationale",
+        "domains",
+        "basis",
+        "assessedAt",
+        "integrity"
+      ],
+      "properties": {
+        "grade": {
+          "enum": [
+            "High",
+            "Moderate",
+            "Low"
+          ]
+        },
+        "domains": {
+          "type": "array",
+          "minItems": 5,
+          "maxItems": 5
+        },
+        "basis": {
+          "type": "array",
+          "minItems": 1
+        }
+      }
+    }
+  }
+}
