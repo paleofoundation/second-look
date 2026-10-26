@@ -1,6 +1,6 @@
 # FILL-REMAPRX-1 step 2 — outcome-table inventory and gate
 
-**GATE, not an outcome-fill PASS-CANDIDATE.** All 16 tables remain honestly empty. This draft accounts for the existing evidence and the missing exact-scope assessment inputs; it does not claim that the literature or corpus has no results.
+**Initial audit preserved; bounded appraisal continuation authorized at 07:58.** At the initial audit checkpoint all 16 tables remain honestly empty. This draft accounts for the existing evidence and the missing exact-scope assessment inputs; it does not claim that the literature or corpus has no results.
 
 Base: wiring PR #2, `codex/fill-remaprx-1-wiring` at `92f323f3425fd40c06787d57ff92fa672a418cd0`. Step-2 branch: `codex/fill-remaprx-1-outcomes`. Stacked on wiring PR #2; retarget after the prerequisite PRs land. The exact live source `2004fbf0…` and reviewed `4106ef7e…` references, PR #1 and PR #2 are unchanged. D22 uncommitted work is excluded and untouched.
 
@@ -12,19 +12,15 @@ Five potential transfers share source IDs across four existing canonical rows, b
 
 The recovered private draft-science corpus explicitly remains INCOMPLETE, verification pending, human review pending and draft; it contains no reusable `selected-source-editorial-v1` assessment store. Historical extraction, acquired files or a different packet's readiness does not supply the missing exact outcome assessment.
 
-## Actual gate and options
+## 07:58 correction and authorized continuation
 
-The current grading contract (`editorial/EVIDENCE-GRADING.md`, Assessment step in generation) requires examining the actual source finding, methods, denominator, uncertainty, outcome hierarchy, limitations and integrity before completing five domain judgments. `scripts/evidence-assessments.mjs` requires one such record for every new synthesis and accepts only an actual High/Moderate/Low assessment. Its canonical input fingerprint also binds the public finding and exact scope. `editorial/OUTCOME-BENEFIT-GRADING.md` separately forbids manufacturing a letter or converting an old confidence label mechanically. The existing `RRX-OUTCOME-SUMMARY-001/plan.json` and readiness cover its original 62-row reconciliation, not newly assessed outcomes.
+The earlier sentence attributing a no-new-appraisal restriction to Elon's 07:14 order was incorrect. That limit came from CONDUCTOR's dispatch, and it is withdrawn. The original audit remains preserved at commit `bbe952a2b53ae6901ce54223a46a5ff9f7c93e2d`; it is partial progress, not an outcome-fill PASS.
 
-Elon's 07:14 step-2 authorization explicitly prohibits new source appraisal or automatic review/approval upgrades. Completing a new five-domain judgment would exceed that boundary; assigning Low because the assessment is missing would violate the method. Adding pending rows currently fails the real compiler. This is demonstrated by synthetic, in-memory negative fixtures, without changing production evidence or weakening the validator.
+Elon's 07:58 answer explicitly authorizes OPTION 1: bounded exact-source outcome appraisal for the 16 profiles, using only sources already accessible in the existing corpus. Missing existing assessments alone do not block this work. Every new canonical row must receive an actual source-bound five-domain assessment and fingerprint under unchanged `editorial/EVIDENCE-GRADING.md` and `scripts/evidence-assessments.mjs`. The audit's synthetic fixtures demonstrate that the compiler requires a real assessment; they do not establish that appraisal is forbidden.
 
-**GATE FILL-REMAPRX-STEP2-ASSESSMENT**:
+Inspect existing local full texts, extractions, receipts and hashes under matching plan/readiness controls, without new scientific-source retrieval. Preserve exact drug/regimen, condition, population, comparison, endpoint and timepoint; null/harm findings, missingness, uncertainty, integrity and review/release states remain explicit. A local selected-source assessment supplies no independent or human approval.
 
-1. **Recommended:** authorize separately scoped, source-located outcome assessment sessions under the current research plan/readiness rules, reusing actual existing source inputs where accessible. Keep the one-drug/bounded batch, integrity, independent/human review and apply/release boundaries. First candidates can be the direct acute-COVID reports or small clinical reports only within their actual scopes; priority is not an efficacy judgment. Reed handles missing retrieval separately. Do not declare any new assessment completed in this inventory.
-2. Alternatively, explicitly authorize a versioned **pending, ungraded outcome representation** in the canonical pipeline, with no automatic grade, false assessment date, domain judgment, trial count or review upgrade. Specify how incomplete scope, source integrity, public limitations and zero/unknown counts must render, then test the complete pipeline. This is a proposed model change, not an adopted permission or a silent bypass.
-3. Retain the current truthful empty table states until accepted exact-scope rows exist. A documented gap is preferable to invented comparisons. This option does not mean no relevant evidence exists.
-
-No option is executed by this audit. No outcome, estimate, confidence/benefit grade, approval, review or scientific release state is created or upgraded. No compiler/model change is proposed as already implemented. Step 3/4 work and any shipping remain outside this draft.
+OPTION 2 (ungraded canonical rows) is rejected. OPTION 3 (truthful empty) is the fallback when no exact source is locally accessible/appraisable. Each unavailable required source gets an exact Reed queue line rather than an invented assessment. The inventory below is the starting accounting; actual appraisal rows, local source bindings, five-domain assessments, completed/empty counts and queue entries will be recorded by the continuation. Step 3/4 and merge/deploy/publication remain gated.
 
 ## All 16 profiles
 
@@ -158,4 +154,4 @@ Existing plans, historical readiness and prior receipts are preserved, not rewri
 
 Role counts (source associations, not independent studies): {"clinical_report": 15, "context_only": 39, "harm_case_report": 2, "incomplete_scope": 2, "mechanistic_report": 7, "negative_comparator_context": 1, "no_intervention_result": 2, "nonclinical_report": 21, "other_exact_scope": 2, "quarantined": 1, "wrong_condition": 1}.
 
-Current outcome-fill result: **0 rows added; 16 empty tables retained; assessment/pending-model decision required.** This gate and the draft are not a live-completion claim.
+Initial audit checkpoint: **0 rows added; 16 empty tables retained.** Bounded appraisal is now authorized; this checkpoint is not a current appraisal result or live-completion claim.
