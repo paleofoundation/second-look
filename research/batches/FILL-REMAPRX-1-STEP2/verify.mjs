@@ -40,6 +40,10 @@ for(const file of ['editorial/EVIDENCE-GRADING.md','scripts/evidence-assessments
 const dosing=canonical.guides.find(g=>g.entityId==='D02').sections.find(s=>s.id==='dosing');
 assert(dosing.paragraph.includes('50 mg twice daily on day 1, followed by 100 mg twice daily for 12 additional days'));
 assert.deepEqual(dosing.sources,['P-D02-ACTIV6-2023']);
+const ivermectinCopy=canonical.guides.find(g=>g.entityId==='D08').sections.find(s=>s.id==='benefits').sentences;
+assert.deepEqual(ivermectinCopy[0].sources,['P-D08-ACTIV6-2023']);
+assert(!ivermectinCopy[1].sources.includes('P-D08-HCC-2022'),'Retracted report is not a citation for other findings');
+assert.deepEqual(ivermectinCopy[2].sources,['P-D08-HCC-2022']);
 const baselineSources=fromBase('data/content.json').sources;
 for(const source of canonical.sources){
  const old=baselineSources.find(s=>s.id===source.id);assert(old,'No new source identities');

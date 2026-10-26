@@ -225,5 +225,41 @@
       "git diff --check"
     ]
   },
-  "browserStatus": "PASS_SCOPED_OUTCOME_FLOW_WITH_RUNTIME_LIMITATIONS; see browser-validation.json"
+  "browserStatus": "PASS_SCOPED_OUTCOME_FLOW_WITH_RUNTIME_LIMITATIONS; see browser-validation.json",
+  "postAttributionVerification": {
+    "recordedAt": "2026-10-26T12:45:42.953705+02:00",
+    "reason": "Preserve exact per-sentence D08 attribution: acute recovery cites ACTIV6 only, other model findings exclude retracted HCC, retraction disclosure cites HCC only. Outcomes/assessment fingerprints unchanged.",
+    "checks": [
+      {
+        "command": "node research/batches/FILL-REMAPRX-1-STEP2/verify.mjs",
+        "status": "PASS",
+        "log": "../attribution-verify.log",
+        "logSha256": "1af995e7de8a41e97b2dc9a7e2570351c9e251209e0cae19c6f2c8da96165537"
+      },
+      {
+        "command": "node scripts/content-check.mjs",
+        "status": "PASS",
+        "log": "../attribution-content.log",
+        "logSha256": "007b94486722d34b88e791734d8ffa711933d7ad042bf83c41f54c452ffc7837"
+      },
+      {
+        "command": "node scripts/check-reader-sections.mjs --all-profiles",
+        "status": "PASS",
+        "log": "../attribution-ssr.log",
+        "logSha256": "80ed4d16de040ad6ecf4d2918ba2a5fcf7c6b72db0e4028836ab160127f38e3a"
+      },
+      {
+        "command": "npm run build",
+        "status": "PASS",
+        "log": "../attribution-build.log",
+        "logSha256": "38fbabc0d65eb5ce0fdc596e1e0818bd9c5947bf0702e81b7faeada6f622de25"
+      },
+      {
+        "command": "node scripts/verify-reader-boundary.mjs",
+        "status": "PASS",
+        "log": "../attribution-privacy.log",
+        "logSha256": "a98e7c410bbe9020018e6663708dccb49a1b1e797b0df514b1c7df6206fc538f"
+      }
+    ]
+  }
 }

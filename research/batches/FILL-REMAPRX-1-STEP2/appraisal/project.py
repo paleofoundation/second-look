@@ -33,7 +33,10 @@ for store in [raw,pub]:
   for sec in g['sections']:
    if sec['id']=='benefits':
     text='Six days of higher-dose ivermectin did not improve sustained recovery from acute COVID-19. Ovarian, brain, breast and colorectal cancer experiments reported effects in cells or animals, without a patient benefit estimate from those experiments. The liver-cancer combination report is retracted and excluded from efficacy conclusions.'
-    sec['paragraph']=text;sec['sentences']=[dict(text=text,sources=sec['sources'])]
+    sec['paragraph']=text;sec['sentences']=[
+     dict(text='Six days of higher-dose ivermectin did not improve sustained recovery from acute COVID-19.',sources=['P-D08-ACTIV6-2023']),
+     dict(text='Ovarian, brain, breast and colorectal cancer experiments reported effects in cells or animals, without a patient benefit estimate from those experiments.',sources=['P-D08-OVARIAN-2009','P-D08-GBM-2016','P-D08-BREAST-2016','P-D08-CRC-2014']),
+     dict(text='The liver-cancer combination report is retracted and excluded from efficacy conclusions.',sources=['P-D08-HCC-2022'])]
     for q in sec.get('questions',[]):
      if q.get('id')=='hcc-benefit':q['answer']='This preclinical ivermectin–sorafenib report is retracted and cannot support a liver-cancer benefit conclusion.';q['sentences']=[dict(text=q['answer'],sources=q['sources'])]
   for q in g['faqs']:
