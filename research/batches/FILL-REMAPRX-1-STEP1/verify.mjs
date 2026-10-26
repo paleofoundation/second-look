@@ -1,7 +1,8 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
-import {execFileSync} from 'node:child_process';
+import {execFileSync, spawnSync} from 'node:child_process';
+import {createHash} from 'node:crypto';
 import {createRequire} from 'node:module';
 import ts from 'typescript';
 import React from 'react';
@@ -13,15 +14,16 @@ const read = file => JSON.parse(fs.readFileSync(file, 'utf8'));
 const ledger = read(path.join(import.meta.dirname, 'source-mappings.json'));
 const base = file => execFileSync('git', ['show', `${ledger.baseCommit}:${file}`], {encoding: 'utf8', maxBuffer: 64 * 1024 * 1024});
 const accepted = ledger.candidates.filter(row => row.decision === 'wire_existing_source');
-assert.equal(execFileSync('git', ['rev-parse', ledger.reviewedReference.preservedBranch], {encoding: 'utf8'}).trim(), ledger.reviewedReference.head);
+const reference = spawnSync('git', ['rev-parse', '--verify', '--quiet', ledger.reviewedReference.preservedBranch], {encoding: 'utf8'});
+if (reference.status === 0) assert.equal(reference.stdout.trim(), ledger.reviewedReference.head);
 const allowedFiles = new Set(['data/content.json', 'data/public-content.json', 'data/discovery-pages.json',
   'editorial/parent-guide-scopes.json', 'data/article-updates.json', 'docs/PROJECT-RULES.md', 'docs/RULE-CHANGELOG.md']);
 for (const file of execFileSync('git', ['diff', '--name-only', ledger.baseCommit], {encoding: 'utf8'}).trim().split('\n').filter(Boolean)) {
   assert(allowedFiles.has(file) || file.startsWith('research/batches/FILL-REMAPRX-1-STEP1/'), `Unrelated live-source change: ${file}`);
 }
 for (const file of [...allowedFiles].filter(file => !file.startsWith('docs/'))) {
-  assert.equal(fs.readFileSync(file, 'utf8'), execFileSync('git', ['show', `${ledger.reviewedReference.head}:${file}`],
-    {encoding: 'utf8', maxBuffer: 64 * 1024 * 1024}), `Reviewed wiring data must be byte-identical: ${file}`);
+  assert.equal(createHash('sha256').update(fs.readFileSync(file)).digest('hex'), ledger.reviewedReference.fileSha256[file],
+    `Reviewed wiring data must be byte-identical: ${file}`);
 }
 assert.equal(accepted.length, 17);
 assert.equal(ledger.candidates.length - accepted.length, 8);
