@@ -1,5 +1,11 @@
 # Second Look rule changelog
 
+## 2026-10-26 — FILL-REMAPRX-1 step 2: exact-scope inventory and assessment gate
+
+Source: Elon's 07:14 step-1 PASS and authorization to fill the 16 empty tables from the existing corpus only, with no new retrieval/appraisal, cross-scope borrowing, guessed values or review-state upgrades. Scope: a separate step-2 draft stacked on wiring PR #2 at `92f323f3425fd40c06787d57ff92fa672a418cd0`. Contracts: `PROJECT-RULES.md`, the unchanged `OUTCOME-TABLES.md` and grading method; full per-record accounting: `research/batches/FILL-REMAPRX-1-STEP2/`.
+
+Inventory: 16 profiles, 93 page/source associations, 86 distinct existing source IDs and zero exact reusable assessed canonical outcomes. Five source-sharing transfer candidates across four existing canonical rows have a different drug/condition scope; none is borrowed. Existing primary reports, context, protocols, mechanisms, preclinical observations, uncontrolled findings, harm signals, null findings and quarantine retain their actual meaning and state. The current compiler requires a documented five-domain High/Moderate/Low assessment for every new row and rejects an unappraised row. This step does not authorize supplying those missing appraisals or weakening that contract. The draft records the resulting GATE and options; it does not declare the 16 tables filled or the underlying literature empty. Application/source/outcome/grade/review/release files remain unchanged. Validation verifies actual inherited SSR, source/locator/fingerprint preservation, deterministic inventory and rejection of synthetic unassessed-row fixtures. Further assessment or a separately specified pending-row model needs a new decision; no scientific or release acceptance is implied.
+
 ## 2026-10-26 — FILL-REMAPRX-1 step 1: existing-source associations
 
 Source: 05:35 Elon bridge order, clarified 05:38, dispatched to a single new runner under RUNNER RULE 6. Scope: applicability-checked existing-source wiring for multiple myeloma, vitiligo, sirolimus, aging, ivermectin, fluvoxamine, pramipexole and type 2 diabetes. Supersedes treating the audit's keyword hits as eligible matches or rewriting the existing publishing plan. Contract: `PROJECT-RULES.md`; exact candidates and integration boundary: `research/batches/FILL-REMAPRX-1-STEP1/`.

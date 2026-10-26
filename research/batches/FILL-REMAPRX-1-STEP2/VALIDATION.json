@@ -1,0 +1,190 @@
+{
+  "recordedAt": "2026-10-26T07:41:24.417476+02:00",
+  "baseCommit": "92f323f3425fd40c06787d57ff92fa672a418cd0",
+  "baseBranch": "codex/fill-remaprx-1-wiring",
+  "status": "PASS_INVENTORY_AND_INHERITED_CHECKS",
+  "step2OutcomeFillState": "GATE_ASSESSMENT_OR_PENDING_MODEL_DECISION_REQUIRED",
+  "newOutcomeRows": 0,
+  "tablesRetainedEmpty": 16,
+  "sourceAssociations": 93,
+  "distinctSources": 86,
+  "checks": [
+    {
+      "command": [
+        "node",
+        "research/batches/FILL-REMAPRX-1-STEP2/verify.mjs"
+      ],
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 1.126,
+      "log": "/Users/kmfp/.codex/visualizations/2026/10/26/01a1764c-1e32-7583-aefa-2330ff02b5ca/work/step2-validation/01.log",
+      "logSha256": "df461c0a1212f3ecc8550345e104e82d0a603196267386f877957635267ff97a"
+    },
+    {
+      "command": [
+        "node",
+        "scripts/content-check.mjs"
+      ],
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 0.079,
+      "log": "/Users/kmfp/.codex/visualizations/2026/10/26/01a1764c-1e32-7583-aefa-2330ff02b5ca/work/step2-validation/02.log",
+      "logSha256": "e8e1657bb31ac4254e45ebfa1da051f0b5f8ac61bae6c057e75c4207d9be4bcf"
+    },
+    {
+      "command": [
+        "node",
+        "scripts/reader-check.mjs"
+      ],
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 0.105,
+      "log": "/Users/kmfp/.codex/visualizations/2026/10/26/01a1764c-1e32-7583-aefa-2330ff02b5ca/work/step2-validation/03.log",
+      "logSha256": "5253347ddbbb19334a288b97b9470ebeac5de7179b4ea597039ad7b93fb406e5"
+    },
+    {
+      "command": [
+        "node",
+        "scripts/check-governance.mjs"
+      ],
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 0.105,
+      "log": "/Users/kmfp/.codex/visualizations/2026/10/26/01a1764c-1e32-7583-aefa-2330ff02b5ca/work/step2-validation/04.log",
+      "logSha256": "c5399a463361054cafb76fc1e19b0ae50e2ec42c650b59b50f2ebbb06d8c56cf"
+    },
+    {
+      "command": [
+        "node",
+        "scripts/check-reader-sections.mjs",
+        "--all-profiles"
+      ],
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 1.497,
+      "log": "/Users/kmfp/.codex/visualizations/2026/10/26/01a1764c-1e32-7583-aefa-2330ff02b5ca/work/step2-validation/05.log",
+      "logSha256": "6c8a8831906905e882f01fc5ceefeefef2e2d5d9671bcedcd74a14799be151e7"
+    },
+    {
+      "command": [
+        "node",
+        "scripts/check-article-navigation.mjs"
+      ],
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 1.501,
+      "log": "/Users/kmfp/.codex/visualizations/2026/10/26/01a1764c-1e32-7583-aefa-2330ff02b5ca/work/step2-validation/06.log",
+      "logSha256": "1f3b1079ac191f9e4ccb856fac7cda607db5fde4d0dce0c61a8707d981e98c42"
+    },
+    {
+      "command": [
+        "node",
+        "scripts/check-evidence-section.mjs"
+      ],
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 1.785,
+      "log": "/Users/kmfp/.codex/visualizations/2026/10/26/01a1764c-1e32-7583-aefa-2330ff02b5ca/work/step2-validation/07.log",
+      "logSha256": "26cf76944a0f3876bbd8bd10a53ff628ff9011151c745fd41d9ac3aa847cd3d2"
+    },
+    {
+      "command": [
+        "node",
+        "scripts/check-evidence-grading.mjs"
+      ],
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 1.06,
+      "log": "/Users/kmfp/.codex/visualizations/2026/10/26/01a1764c-1e32-7583-aefa-2330ff02b5ca/work/step2-validation/08.log",
+      "logSha256": "24c394d66cefff31a2423f6608bc10493e610ab1c912df6c9a14b12bacbaea3b"
+    },
+    {
+      "command": [
+        "node",
+        "scripts/check-outcome-summaries.mjs"
+      ],
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 0.284,
+      "log": "/Users/kmfp/.codex/visualizations/2026/10/26/01a1764c-1e32-7583-aefa-2330ff02b5ca/work/step2-validation/09.log",
+      "logSha256": "c62d6fcb668dbeb6e15aed0afa1476e6012fb9aa3d501f31674b4192b847904e"
+    },
+    {
+      "command": [
+        "node",
+        "scripts/check-wiki-links.mjs"
+      ],
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 1.524,
+      "log": "/Users/kmfp/.codex/visualizations/2026/10/26/01a1764c-1e32-7583-aefa-2330ff02b5ca/work/step2-validation/10.log",
+      "logSha256": "3881ac9831ebf7cf6999f62a54f2ff9c9b1c7e66edb18406e6a3f21a7e47196e"
+    },
+    {
+      "command": [
+        "node",
+        "scripts/verify-reader-boundary.mjs",
+        "--source-only"
+      ],
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 0.094,
+      "log": "/Users/kmfp/.codex/visualizations/2026/10/26/01a1764c-1e32-7583-aefa-2330ff02b5ca/work/step2-validation/11.log",
+      "logSha256": "779c159c3ead4e8d7fc5920bc39800c402c41cc2ee4319ff96d993e6ace5b2b8"
+    },
+    {
+      "command": [
+        "./node_modules/.bin/tsc",
+        "--noEmit",
+        "--incremental",
+        "false"
+      ],
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 5.218,
+      "log": "/Users/kmfp/.codex/visualizations/2026/10/26/01a1764c-1e32-7583-aefa-2330ff02b5ca/work/step2-validation/12.log",
+      "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "build"
+      ],
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 5.798,
+      "log": "/Users/kmfp/.codex/visualizations/2026/10/26/01a1764c-1e32-7583-aefa-2330ff02b5ca/work/step2-validation/13.log",
+      "logSha256": "34e9c1a69929d4ef9f904aa0b74e91dd495a03f9b523b40e7fc7bd14f8708352"
+    },
+    {
+      "command": [
+        "node",
+        "scripts/verify-reader-boundary.mjs"
+      ],
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 0.1,
+      "log": "/Users/kmfp/.codex/visualizations/2026/10/26/01a1764c-1e32-7583-aefa-2330ff02b5ca/work/step2-validation/14.log",
+      "logSha256": "be818f757827ebb3830075307fd3c749702e76012603dce8237241141b2909bc"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 0.024,
+      "log": "/Users/kmfp/.codex/visualizations/2026/10/26/01a1764c-1e32-7583-aefa-2330ff02b5ca/work/step2-validation/15.log",
+      "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "limits": [
+    "No outcome fill or new assessment acceptance is claimed",
+    "No scientific import/repeat-import test; none occurred",
+    "SSR/source checks do not establish browser parity or live deployment",
+    "No new source retrieval/extraction/appraisal, grade or review/release-state change"
+  ]
+}
