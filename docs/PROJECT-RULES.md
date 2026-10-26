@@ -11,6 +11,14 @@ Adopted repository handoff: 11 October 2026. These are durable project instructi
 
 The [v1.1 baseline](one-match-rule-baseline.md) and [historical gap log](rule-history/rule-gap-log.json) preserve the original pilot experiment. They do not replace later adopted requirements. Historical PASS/HOLD decisions apply only to their original scope/version. Conflicts or inaccessible prerequisites must be recorded; do not silently manufacture a resolution.
 
+### FILL-REMAPRX-1 existing-source wiring, October 26, 2026
+
+The October 26 05:35 bridge order, clarified at 05:38, authorizes a bounded step-1 draft associating existing site source records with eight named profiles. The audit is a candidate list, not scientific support. Check exact drug/regimen, condition, population/model and endpoint applicability; reject mismatches. Preserve source identity, primary/context classification, existing synthesis, appraisal, correction and release state. A protocol is context, an animal outcome is not human benefit, thromboprophylaxis is not cancer control, and a diabetes-drug review about sarcopenia is not evidence for treating type 2 diabetes.
+
+The [step-1 packet](../research/batches/FILL-REMAPRX-1-STEP1/REPORT.md) records each candidate, disposition, canonical mapping, preserved inputs and integration gates. This step adds source associations only, with no retrieval, scientific extraction, outcome rows, grades, new clinical claims or approval. Keep the original active D22 checkout isolated and preserve its work. Later outcome-table, layout and label-expansion steps need their own bounded PRs; they are not included here. PR merge, deployment, publication, credentials, production changes and outbound messages remain gated. Preserve the deliberate current crawl/index blocks.
+
+The 06:52 gate answer explicitly selects exact live source `2004fbf0b6f58a652a867fd89972556bec510116` for a separate draft source-sync PR to main and a bounded wiring draft stacked on that sync branch. Reapply only the reviewed `4106ef7e` wiring delta; preserve that reference unchanged. Do not integrate the `46be52f8` sibling line or D22 uncommitted work. Record patch conflicts and rerun validation against the exact live baseline. Step 2 waits for the wiring PASS. Local STATUS relay through CONDUCTOR is permitted; do not retry the rejected direct bridge writer.
+
 ## Research continuity
 
 Every researcher starts with [RESEARCH-INGEST.md](RESEARCH-INGEST.md). A new collaborator must receive the actual versioned plan, machine-readable schema, identity/source ledgers, question/coverage maps, source access information and last accepted checkpoint. Resume from current canonical records, not a fresh regeneration of the historical pilot. Preserve stable identities, source locators, accepted editorial work, corrections, quarantine, missingness and review status. Record each new ingestion rule immediately and include it in the next handoff.
