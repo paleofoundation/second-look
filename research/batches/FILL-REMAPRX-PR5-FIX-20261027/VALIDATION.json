@@ -1,0 +1,80 @@
+{
+  "at": "2026-10-27T06:43:30.717526+00:00",
+  "node": "22.23.4",
+  "technicalChecks": [
+    {
+      "command": "python3 research/batches/FILL-REMAPRX-PR5-FIX-20261027/verify.py --require-source-files",
+      "exitCode": 0,
+      "outputSha256": "4a72746637bcdbfda22a0d13d0129ab3119695dd495c71a3fa85a2865e5ce7e3"
+    },
+    {
+      "command": "node scripts/check-governance.mjs",
+      "exitCode": 0,
+      "outputSha256": "c5399a463361054cafb76fc1e19b0ae50e2ec42c650b59b50f2ebbb06d8c56cf"
+    },
+    {
+      "command": "node scripts/content-check.mjs",
+      "exitCode": 0,
+      "outputSha256": "778626b3f6f81b0151625120e3944cba5ad2639e14825b5fe40110c4e4f60290"
+    },
+    {
+      "command": "node scripts/reader-check.mjs",
+      "exitCode": 0,
+      "outputSha256": "3c67bddb41c40265add10bd1f1d294577db825782201962216f86493909ca519"
+    },
+    {
+      "command": "node scripts/check-reader-sections.mjs --all-profiles",
+      "exitCode": 0,
+      "outputSha256": "d7b65320d7a56870daebe11325bb28f3be0ffbe9c6b6beaa78e2677e6af76431"
+    },
+    {
+      "command": "node scripts/check-article-navigation.mjs",
+      "exitCode": 0,
+      "outputSha256": "1f3b1079ac191f9e4ccb856fac7cda607db5fde4d0dce0c61a8707d981e98c42"
+    },
+    {
+      "command": "node scripts/check-evidence-section.mjs",
+      "exitCode": 0,
+      "outputSha256": "9961f3e8327440e3a4b6d4be138d1c0ed22a9b5948a4635fcf614323e126d2ca"
+    },
+    {
+      "command": "node scripts/check-evidence-grading.mjs",
+      "exitCode": 0,
+      "outputSha256": "1a55a962c53057c7792ef9bd6c5b00496c0faefd2af3f29e386a5126b3951cea"
+    },
+    {
+      "command": "node scripts/check-outcome-summaries.mjs",
+      "exitCode": 0,
+      "outputSha256": "47a0fe22dc4b3b0aeb05a421303081e3358298d93e8889018e122c32a7ec4d3c"
+    },
+    {
+      "command": "node scripts/check-wiki-links.mjs",
+      "exitCode": 0,
+      "outputSha256": "3881ac9831ebf7cf6999f62a54f2ff9c9b1c7e66edb18406e6a3f21a7e47196e"
+    },
+    {
+      "command": "node_modules/.bin/tsc --noEmit --incremental false",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "git diff --check",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 0,
+      "logSha256": "90efae8ec285a5d6d211f79e901ddc7641b74d453f24251f26352b00f689f66e"
+    },
+    {
+      "command": "node scripts/verify-reader-boundary.mjs",
+      "exitCode": 0,
+      "logSha256": "5d6963d2dd58b3f1a55f8158061e473972f25a4c63b7712ddb0d9e01c1eba57f"
+    }
+  ],
+  "browser": "BROWSER.json",
+  "scientificAcceptance": false,
+  "humanApproval": false,
+  "released": false
+}
