@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "reed2-cal02-PAXD-economic-v1",
+  "required": [
+    "schemaVersion",
+    "paper",
+    "source",
+    "inspection",
+    "study",
+    "populations",
+    "results",
+    "claims",
+    "reviewInputs",
+    "sourceQualifications",
+    "limitations",
+    "scientificAcceptance",
+    "humanApproval",
+    "released"
+  ],
+  "controls": [
+    "Same parent trial, no new independent clinical evidence",
+    "Changed main-source bytes do not transfer prior PASS",
+    "Economic perspective/currency/price year/horizon and costs/QALYs/WTP units preserved",
+    "Adjusted increments, uncertainty and probability not deterministic patient benefit",
+    "Imputed and complete-case samples distinct, missingness assumptions explicit",
+    "Null/negative/favorable scenarios and sensitivity analyses retained",
+    "Clinical efficacy, safety and current access/reimbursement not established by economic analysis",
+    "Exact all-page reading, consequential visuals, prior partial/held states and 15Q/67 field gaps",
+    "Independent source-fidelity audit not fullfield/scientific/human acceptance"
+  ],
+  "gates": {
+    "scientificAcceptance": false,
+    "humanApproval": false,
+    "released": false,
+    "grade": null
+  }
+}
