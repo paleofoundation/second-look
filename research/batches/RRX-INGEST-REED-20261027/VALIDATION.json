@@ -20,6 +20,11 @@
       "command": "node scripts/check-governance.mjs",
       "exitCode": 0,
       "outputSha256": "c5399a463361054cafb76fc1e19b0ae50e2ec42c650b59b50f2ebbb06d8c56cf"
+    },
+    {
+      "command": "git diff d118d305b59cac5e54ca7f9e5aa55cea682d2cee --check",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     }
   ],
   "regressionCount": 28,
@@ -46,5 +51,6 @@
     "humanApproval": false,
     "fullReviewsComplete": 0,
     "sourceValidation": "calibration/REED-CAL-01/VALIDATION.json"
-  }
+  },
+  "whitespaceCorrection": "Initial staged CSV used CRLF and was flagged; final CSV uses LF. Original commit and manifest preserved. This final diff check covers the complete packet, not only tracked pre-stage files."
 }

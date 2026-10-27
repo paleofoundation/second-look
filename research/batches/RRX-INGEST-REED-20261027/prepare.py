@@ -119,5 +119,8 @@ def prepare():
   ref=next((r['id'] for r in report['existingIdentityReferences'] if r['origin']=='data/content.json'),None)
   obligations.append({'reportId':report['id'],'reviewId':existingReviews.get(ref) or ('REVIEW-'+ref if ref else 'REVIEW-'+report['id']),'existingSourceId':ref,'questionInputs':[{'id':'Q'+str(i).zfill(2),'status':'not_extracted','reason':'Source-level answer not completed by acquisition/assertion intake.','answer':None} for i in range(1,16)],'complete':False,'humanApproval':'pending','publicationState':'private_draft'})
  candidate={'schemaVersion':'remaprx-reed-ingest-v1','base':inp['base'],'rows':rows,'reports':list(reports.values()),'assets':list(assets.values()),'assertions':assertions,'reviewObligations':obligations,'integrityIssues':issues,'counts':{'inputAppearances':len(rows),'byInput':{name:dict(collections.Counter(r['disposition'] for r in rows if r['sourceInput']==name)) for name in sorted({r['sourceInput'] for r in rows})},'dispositions':dict(collections.Counter(r['disposition'] for r in rows)),'uniqueReportIdentities':len(reports),'assetVersions':len(assets),'supplierAssertionsRetained':len(assertions),'newScientificResultsAccepted':0,'newGradesAssigned':0,'humanReviewed':0,'released':0}}
- write('CANDIDATE.json',candidate);write('COUNTS.json',candidate['counts']);print(json.dumps(candidate['counts'],indent=2))
+ write('CANDIDATE.json',candidate);write('COUNTS.json',candidate['counts']);
+ with (B/'ROW-DISPOSITIONS.csv').open('w',newline='') as f:
+  writer=csv.DictWriter(f,fieldnames=['inputRowId','sourceInput','folder','disposition','reason','reportId','nextAction'],lineterminator='\n');writer.writeheader();writer.writerows({k:r[k] for k in writer.fieldnames} for r in rows)
+ print(json.dumps(candidate['counts'],indent=2))
 if __name__=='__main__':prepare()
