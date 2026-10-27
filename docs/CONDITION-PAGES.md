@@ -109,3 +109,7 @@ Planning validation on October 12, 2026: `node scripts/check-governance.mjs` pas
 ## October 12 outcome-table supersession
 
 The owner's later Examine screenshots and explicit request adopt Intervention / Outcome / Grade / Effect / Evidence, a single expandable intervention group with compatible studies synthesized by endpoint, A–F benefit assessments and overlap-aware randomized trial/participant counts. Follow [OUTCOME-TABLES.md](OUTCOME-TABLES.md) and the new outcome-benefit method rather than this plan's earlier four-column certainty display. Condition-wide discovery and all source/review requirements remain. Exact clinical rationale and proposed mechanisms belong with each intervention's outcome in the right overlay.
+
+### October 27 selected-source depth continuation
+
+The 07:26 owner order authorizes deeper evidence, mechanisms, human-data and safety explanations for four existing pages: multiple myeloma, ME/CFS, ALS and basal-cell carcinoma. This bounded source expansion does not implement the planned template or claim condition-wide discovery. The 08:12 ruling retains Vitiligo deferral because of CP027-CH25; no exception to the 11 CP027/CP028 book-page hold is inferred. The four-page packet records prospective readiness, actual reading depth, scoped claim grades and remaining review/release gates.
