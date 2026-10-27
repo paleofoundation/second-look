@@ -2025,70 +2025,82 @@
     {
       "drugId": "D10",
       "originalAction": {
-        "text": "Fenbendazole is a benzimidazole dewormer that disrupts parasite microtubules; veterinary products are approved for specified animal uses.",
+        "text": "Official context: Fenbendazole is not FDA-approved for human use, including cancer treatment. In January 2026, the FDA approved a generic fenbendazole oral suspension for specified parasite infections in cattle and goats.",
         "sourceIds": [
-          "P-D10-OVARIAN-2024",
           "CTX-D10-FDA"
         ],
         "sentences": [
           {
-            "text": "Fenbendazole is a benzimidazole dewormer that disrupts parasite microtubules; veterinary products are approved for specified animal uses.",
+            "text": "Official context: Fenbendazole is not FDA-approved for human use, including cancer treatment. In January 2026, the FDA approved a generic fenbendazole oral suspension for specified parasite infections in cattle and goats.",
             "sources": [
-              "P-D10-OVARIAN-2024",
               "CTX-D10-FDA"
             ]
           }
         ]
       },
       "summary": {
-        "text": "Ovarian experiments investigate disrupted cell division, mitotic catastrophe and apoptosis, meaning programmed cell death.",
+        "text": "Models only. Confidence in clinical translation: Low. In lung-cancer models, fenbendazole partly disrupted microtubules, interfered with cell division and increased cell death. These laboratory findings explain a research hypothesis; they do not show that an effective exposure can be reached safely in people.",
         "sourceIds": [
-          "P-D10-OVARIAN-2024"
+          "MECH-D10-MICROTUBULE-2018"
         ],
         "sentences": [
           {
-            "text": "Ovarian experiments investigate disrupted cell division, mitotic catastrophe and apoptosis, meaning programmed cell death.",
+            "text": "Models only. Confidence in clinical translation: Low. In lung-cancer models, fenbendazole partly disrupted microtubules, interfered with cell division and increased cell death. These laboratory findings explain a research hypothesis; they do not show that an effective exposure can be reached safely in people.",
             "sources": [
-              "P-D10-OVARIAN-2024"
+              "MECH-D10-MICROTUBULE-2018"
             ]
           }
         ]
       },
       "questions": [
         {
-          "id": "ovarian",
-          "title": "Why investigate fenbendazole in ovarian cancer?",
-          "text": "It disturbed division and triggered cell-death pathways in A2780 and SKOV3 ovarian cancer cells, with additional testing in animal tumors.",
-          "sourceIds": [
-            "P-D10-OVARIAN-2024"
-          ],
-          "sentences": [
-            {
-              "text": "It disturbed division and triggered cell-death pathways in A2780 and SKOV3 ovarian cancer cells, with additional testing in animal tumors.",
-              "sources": [
-                "P-D10-OVARIAN-2024"
-              ]
-            }
-          ]
-        },
-        {
           "id": "microtubules-apoptosis",
-          "title": "Microtubules, cell division and apoptosis",
-          "text": "In lung-cancer models, fenbendazole partly disrupted microtubules, arrested cell division and increased apoptosis. Experiments also found altered p53 activity and glucose handling. The results support several possible contributors to cancer-cell injury. Cell cultures and mouse xenografts do not establish an effective or safe anticancer exposure in people.",
+          "title": "Microtubules and cell division",
+          "text": "Models only. Confidence in clinical translation: Low. In lung-cancer models, fenbendazole partly disrupted microtubules, interfered with cell division and increased cell death. These laboratory findings explain a research hypothesis; they do not show that an effective exposure can be reached safely in people.",
           "sourceIds": [
             "MECH-D10-MICROTUBULE-2018"
           ],
           "sentences": [
             {
-              "text": "In lung-cancer models, fenbendazole partly disrupted microtubules, arrested cell division and increased apoptosis. Experiments also found altered p53 activity and glucose handling.",
+              "text": "Models only. Confidence in clinical translation: Low. In lung-cancer models, fenbendazole partly disrupted microtubules, interfered with cell division and increased cell death. These laboratory findings explain a research hypothesis; they do not show that an effective exposure can be reached safely in people.",
               "sources": [
                 "MECH-D10-MICROTUBULE-2018"
               ]
-            },
+            }
+          ]
+        },
+        {
+          "id": "p53-glucose",
+          "title": "Are p53 and glucose effects consistent?",
+          "text": "Models only. Confidence in clinical translation: Low. Dogra reported p53 activation and reduced glucose uptake in lung-cancer cells. The pathway is not consistent across models: Park found no change in glucose consumption or lactate production in H4IIE rat liver-cancer cells, and a separate colorectal-cell abstract reported effects that did not require p53.",
+          "sourceIds": [
+            "MECH-D10-MICROTUBULE-2018",
+            "P-D10-H4IIE-2022",
+            "P-D10-CRC-CELLS-2022"
+          ],
+          "sentences": [
             {
-              "text": "The results support several possible contributors to cancer-cell injury. Cell cultures and mouse xenografts do not establish an effective or safe anticancer exposure in people.",
+              "text": "Models only. Confidence in clinical translation: Low. Dogra reported p53 activation and reduced glucose uptake in lung-cancer cells. The pathway is not consistent across models: Park found no change in glucose consumption or lactate production in H4IIE rat liver-cancer cells, and a separate colorectal-cell abstract reported effects that did not require p53.",
               "sources": [
-                "MECH-D10-MICROTUBULE-2018"
+                "MECH-D10-MICROTUBULE-2018",
+                "P-D10-H4IIE-2022",
+                "P-D10-CRC-CELLS-2022"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "proteasome",
+          "title": "What did Dogra 2012 actually test?",
+          "text": "Models only. Confidence in clinical translation: Low. Dogra 2012 described proteasome impairment and endoplasmic-reticulum stress in cancer cells. It was an in vitro study; its discussion said animal efficacy was still being studied.",
+          "sourceIds": [
+            "P-D10-PROTEASOME-2012"
+          ],
+          "sentences": [
+            {
+              "text": "Models only. Confidence in clinical translation: Low. Dogra 2012 described proteasome impairment and endoplasmic-reticulum stress in cancer cells. It was an in vitro study; its discussion said animal efficacy was still being studied.",
+              "sources": [
+                "P-D10-PROTEASOME-2012"
               ]
             }
           ]

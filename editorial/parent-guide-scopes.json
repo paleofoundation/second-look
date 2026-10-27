@@ -6549,7 +6549,7 @@
         "slug": "/drugs/fenbendazole",
         "title": "Fenbendazole",
         "type": "Drug",
-        "description": "A veterinary dewormer with ovarian-cancer laboratory findings and reported human liver injury.",
+        "description": "A veterinary dewormer with mixed cancer-model findings, unproven human anticancer benefit and documented liver-injury cases.",
         "topicIds": [
           "DR022"
         ],
@@ -6558,24 +6558,23 @@
             "id": "overview",
             "label": "Overview",
             "title": "",
-            "paragraph": "Fenbendazole is a veterinary medicine, without US approval for human use. Its ovarian-cancer evidence comes from cell and animal experiments.",
+            "paragraph": "Cancer benefit: Not established. Human anticancer claims remain anecdotal. The human reports cited here describe liver injury rather than controlled cancer treatment. The selected cell and mouse studies have mixed findings and do not establish a human cancer regimen.",
             "sources": [
-              "CTX-D10-FDA",
               "P-D10-LIVER-2024",
-              "P-D10-OVARIAN-2024"
+              "P-D10-LIVER-2026",
+              "MECH-D10-MICROTUBULE-2018",
+              "P-D10-EMT6-DIET-2012",
+              "P-D10-EMT6-2013"
             ],
             "sentences": [
               {
-                "text": "Fenbendazole is a veterinary medicine, without US approval for human use.",
+                "text": "Cancer benefit: Not established. Human anticancer claims remain anecdotal. The human reports cited here describe liver injury rather than controlled cancer treatment. The selected cell and mouse studies have mixed findings and do not establish a human cancer regimen.",
                 "sources": [
-                  "CTX-D10-FDA",
-                  "P-D10-LIVER-2024"
-                ]
-              },
-              {
-                "text": "Its ovarian-cancer evidence comes from cell and animal experiments.",
-                "sources": [
-                  "P-D10-OVARIAN-2024"
+                  "P-D10-LIVER-2024",
+                  "P-D10-LIVER-2026",
+                  "MECH-D10-MICROTUBULE-2018",
+                  "P-D10-EMT6-DIET-2012",
+                  "P-D10-EMT6-2013"
                 ]
               }
             ],
@@ -6585,31 +6584,48 @@
             "id": "benefits",
             "label": "Benefits",
             "title": "",
-            "paragraph": "The ovarian study reported antitumor effects in cells and animals; it did not establish tumor response, symptom relief or survival benefit in people.",
+            "paragraph": "Cancer benefit: Not established. Human anticancer claims remain anecdotal. The human reports cited here describe liver injury rather than controlled cancer treatment. The selected cell and mouse studies have mixed findings and do not establish a human cancer regimen. Models only. Confidence in clinical translation: Low. In Gao 2008, lymphoma tumors in mice were smaller with fenbendazole plus supplemented vitamins (P = 0.009). Fenbendazole alone did not differ significantly from control (P = 0.12). The combination result cannot be attributed to fenbendazole alone, and nonsignificance does not prove equivalence.",
             "sources": [
-              "P-D10-OVARIAN-2024"
+              "P-D10-LIVER-2024",
+              "P-D10-LIVER-2026",
+              "MECH-D10-MICROTUBULE-2018",
+              "P-D10-EMT6-DIET-2012",
+              "P-D10-EMT6-2013",
+              "P-D10-VITAMINS-2008"
             ],
             "sentences": [
               {
-                "text": "The ovarian study reported antitumor effects in cells and animals; it did not establish tumor response, symptom relief or survival benefit in people.",
+                "text": "Cancer benefit: Not established. Human anticancer claims remain anecdotal. The human reports cited here describe liver injury rather than controlled cancer treatment. The selected cell and mouse studies have mixed findings and do not establish a human cancer regimen.",
                 "sources": [
-                  "P-D10-OVARIAN-2024"
+                  "P-D10-LIVER-2024",
+                  "P-D10-LIVER-2026",
+                  "MECH-D10-MICROTUBULE-2018",
+                  "P-D10-EMT6-DIET-2012",
+                  "P-D10-EMT6-2013"
+                ]
+              },
+              {
+                "text": "Models only. Confidence in clinical translation: Low. In Gao 2008, lymphoma tumors in mice were smaller with fenbendazole plus supplemented vitamins (P = 0.009). Fenbendazole alone did not differ significantly from control (P = 0.12). The combination result cannot be attributed to fenbendazole alone, and nonsignificance does not prove equivalence.",
+                "sources": [
+                  "P-D10-VITAMINS-2008"
                 ]
               }
             ],
             "questions": [
               {
-                "id": "ovarian-benefit",
-                "question": "Has it been shown to treat ovarian cancer in people?",
-                "answer": "The cited ovarian study tested cancer cells and animal tumors, not people with ovarian cancer.",
+                "id": "mixed-preclinical",
+                "question": "What do the animal experiments show?",
+                "answer": "Models only. Confidence in clinical translation: Low. Duan 2012 found no change in EMT6 mouse mammary-tumor growth, invasion, metastasis or response to local radiation with fenbendazole-containing chow. Duan 2013 also found no improvement in tumor growth or radiation response with intensive regimens. Those authors concluded that their experiments provided no evidence of value in cancer therapy; these findings apply to the tested models, not every possible cancer or regimen.",
                 "sources": [
-                  "P-D10-OVARIAN-2024"
+                  "P-D10-EMT6-DIET-2012",
+                  "P-D10-EMT6-2013"
                 ],
                 "sentences": [
                   {
-                    "text": "The cited ovarian study tested cancer cells and animal tumors, not people with ovarian cancer.",
+                    "text": "Models only. Confidence in clinical translation: Low. Duan 2012 found no change in EMT6 mouse mammary-tumor growth, invasion, metastasis or response to local radiation with fenbendazole-containing chow. Duan 2013 also found no improvement in tumor growth or radiation response with intensive regimens. Those authors concluded that their experiments provided no evidence of value in cancer therapy; these findings apply to the tested models, not every possible cancer or regimen.",
                     "sources": [
-                      "P-D10-OVARIAN-2024"
+                      "P-D10-EMT6-DIET-2012",
+                      "P-D10-EMT6-2013"
                     ]
                   }
                 ]
@@ -6620,13 +6636,13 @@
             "id": "safety",
             "label": "Safety",
             "title": "",
-            "paragraph": "A human case report documented biopsy-confirmed severe liver injury after self-administration, with recovery after stopping.",
+            "paragraph": "Safety evidence: Low for estimating frequency or individual risk. A 2024 case report described biopsy-confirmed severe liver injury after self-administration, with liver tests returning to normal after cessation. This is a serious human safety signal, but a case report cannot estimate how often it occurs.",
             "sources": [
               "P-D10-LIVER-2024"
             ],
             "sentences": [
               {
-                "text": "A human case report documented biopsy-confirmed severe liver injury after self-administration, with recovery after stopping.",
+                "text": "Safety evidence: Low for estimating frequency or individual risk. A 2024 case report described biopsy-confirmed severe liver injury after self-administration, with liver tests returning to normal after cessation. This is a serious human safety signal, but a case report cannot estimate how often it occurs.",
                 "sources": [
                   "P-D10-LIVER-2024"
                 ]
@@ -6638,15 +6654,17 @@
             "id": "contraindications",
             "label": "Contraindications",
             "title": "",
-            "paragraph": "There is no approved human product label defining human contraindications; the published liver injury shows that absence of such labeling is not evidence of tolerability.",
+            "paragraph": "Human contraindication guidance: Not established by these studies. The human liver-injury reports identify harm after self-administration, but do not define a validated list of contraindications or a group in whom fenbendazole is safe.",
             "sources": [
-              "P-D10-LIVER-2024"
+              "P-D10-LIVER-2024",
+              "P-D10-LIVER-2026"
             ],
             "sentences": [
               {
-                "text": "There is no approved human product label defining human contraindications; the published liver injury shows that absence of such labeling is not evidence of tolerability.",
+                "text": "Human contraindication guidance: Not established by these studies. The human liver-injury reports identify harm after self-administration, but do not define a validated list of contraindications or a group in whom fenbendazole is safe.",
                 "sources": [
-                  "P-D10-LIVER-2024"
+                  "P-D10-LIVER-2024",
+                  "P-D10-LIVER-2026"
                 ]
               }
             ],
@@ -6656,13 +6674,13 @@
             "id": "interactions",
             "label": "Interactions",
             "title": "",
-            "paragraph": "Liver injury has also been reported during concurrent checkpoint-inhibitor treatment; the case required distinguishing drug injury from immunotherapy hepatitis and does not quantify a specific interaction.",
+            "paragraph": "Safety evidence: Low. A patient receiving nivolumab/relatlimab developed severe liver injury after increasing self-administered fenbendazole. The report distinguished suspected drug injury from immune-mediated hepatitis. It does not establish the size or mechanism of an interaction, or provide a safe combination schedule.",
             "sources": [
               "P-D10-LIVER-2026"
             ],
             "sentences": [
               {
-                "text": "Liver injury has also been reported during concurrent checkpoint-inhibitor treatment; the case required distinguishing drug injury from immunotherapy hepatitis and does not quantify a specific interaction.",
+                "text": "Safety evidence: Low. A patient receiving nivolumab/relatlimab developed severe liver injury after increasing self-administered fenbendazole. The report distinguished suspected drug injury from immune-mediated hepatitis. It does not establish the size or mechanism of an interaction, or provide a safe combination schedule.",
                 "sources": [
                   "P-D10-LIVER-2026"
                 ]
@@ -6674,17 +6692,23 @@
             "id": "dosing",
             "label": "Dosing",
             "title": "",
-            "paragraph": "Veterinary schedules are animal-treatment regimens, and the ovarian experiments do not establish a human cancer dose.",
+            "paragraph": "Human cancer dose: Not established. The cited cell and mouse studies do not establish a dose, duration or monitoring schedule for people. Human liver-injury reports do not define a safe threshold.",
             "sources": [
-              "CTX-D10-FDA",
-              "P-D10-OVARIAN-2024"
+              "MECH-D10-MICROTUBULE-2018",
+              "P-D10-EMT6-DIET-2012",
+              "P-D10-EMT6-2013",
+              "P-D10-LIVER-2024",
+              "P-D10-LIVER-2026"
             ],
             "sentences": [
               {
-                "text": "Veterinary schedules are animal-treatment regimens, and the ovarian experiments do not establish a human cancer dose.",
+                "text": "Human cancer dose: Not established. The cited cell and mouse studies do not establish a dose, duration or monitoring schedule for people. Human liver-injury reports do not define a safe threshold.",
                 "sources": [
-                  "CTX-D10-FDA",
-                  "P-D10-OVARIAN-2024"
+                  "MECH-D10-MICROTUBULE-2018",
+                  "P-D10-EMT6-DIET-2012",
+                  "P-D10-EMT6-2013",
+                  "P-D10-LIVER-2024",
+                  "P-D10-LIVER-2026"
                 ]
               }
             ],
@@ -6694,17 +6718,15 @@
             "id": "results",
             "label": "Results",
             "title": "",
-            "paragraph": "The ovarian endpoints were cell division, cell death and experimental tumor behavior; the human reports concern toxicity.",
+            "paragraph": "Models only. Confidence in clinical translation: Low. Dogra 2018 reported slower A549 lung-cancer xenograft growth in mice. This positive result is specific to that model and regimen, and cannot establish benefit in people or across cancers.",
             "sources": [
-              "P-D10-OVARIAN-2024",
-              "P-D10-LIVER-2024"
+              "MECH-D10-MICROTUBULE-2018"
             ],
             "sentences": [
               {
-                "text": "The ovarian endpoints were cell division, cell death and experimental tumor behavior; the human reports concern toxicity.",
+                "text": "Models only. Confidence in clinical translation: Low. Dogra 2018 reported slower A549 lung-cancer xenograft growth in mice. This positive result is specific to that model and regimen, and cannot establish benefit in people or across cancers.",
                 "sources": [
-                  "P-D10-OVARIAN-2024",
-                  "P-D10-LIVER-2024"
+                  "MECH-D10-MICROTUBULE-2018"
                 ]
               }
             ],
@@ -6714,13 +6736,13 @@
             "id": "quality",
             "label": "Quality",
             "title": "",
-            "paragraph": "Veterinary fenbendazole products are formulated and labeled for particular animal species.",
+            "paragraph": "Official context: The cited FDA approval concerns an animal oral suspension and its labeled species. It does not assess veterinary products as human cancer medicines.",
             "sources": [
               "CTX-D10-FDA"
             ],
             "sentences": [
               {
-                "text": "Veterinary fenbendazole products are formulated and labeled for particular animal species.",
+                "text": "Official context: The cited FDA approval concerns an animal oral suspension and its labeled species. It does not assess veterinary products as human cancer medicines.",
                 "sources": [
                   "CTX-D10-FDA"
                 ]
@@ -6732,15 +6754,15 @@
             "id": "status",
             "label": "Status",
             "title": "",
-            "paragraph": "Fenbendazole is not FDA-approved for human use, including cancer treatment.",
+            "paragraph": "Official context: Fenbendazole is not FDA-approved for human use, including cancer treatment. In January 2026, the FDA approved a generic fenbendazole oral suspension for specified parasite infections in cattle and goats.",
             "sources": [
-              "P-D10-LIVER-2024"
+              "CTX-D10-FDA"
             ],
             "sentences": [
               {
-                "text": "Fenbendazole is not FDA-approved for human use, including cancer treatment.",
+                "text": "Official context: Fenbendazole is not FDA-approved for human use, including cancer treatment. In January 2026, the FDA approved a generic fenbendazole oral suspension for specified parasite infections in cattle and goats.",
                 "sources": [
-                  "P-D10-LIVER-2024"
+                  "CTX-D10-FDA"
                 ]
               }
             ],
@@ -6750,21 +6772,108 @@
             "id": "evidence",
             "label": "Evidence",
             "title": "",
-            "paragraph": "The ovarian endpoints were cell division, cell death and experimental tumor behavior; the human reports concern toxicity.",
+            "paragraph": "Cancer benefit: Not established. Human anticancer claims remain anecdotal. The human reports cited here describe liver injury rather than controlled cancer treatment. The selected cell and mouse studies have mixed findings and do not establish a human cancer regimen. Models only. Confidence in clinical translation: Low. Dogra 2018 reported slower A549 lung-cancer xenograft growth in mice. This positive result is specific to that model and regimen, and cannot establish benefit in people or across cancers.",
             "sources": [
-              "P-D10-OVARIAN-2024",
-              "P-D10-LIVER-2024"
+              "P-D10-LIVER-2024",
+              "P-D10-LIVER-2026",
+              "MECH-D10-MICROTUBULE-2018",
+              "P-D10-EMT6-DIET-2012",
+              "P-D10-EMT6-2013"
             ],
             "sentences": [
               {
-                "text": "The ovarian endpoints were cell division, cell death and experimental tumor behavior; the human reports concern toxicity.",
+                "text": "Cancer benefit: Not established. Human anticancer claims remain anecdotal. The human reports cited here describe liver injury rather than controlled cancer treatment. The selected cell and mouse studies have mixed findings and do not establish a human cancer regimen.",
                 "sources": [
-                  "P-D10-OVARIAN-2024",
-                  "P-D10-LIVER-2024"
+                  "P-D10-LIVER-2024",
+                  "P-D10-LIVER-2026",
+                  "MECH-D10-MICROTUBULE-2018",
+                  "P-D10-EMT6-DIET-2012",
+                  "P-D10-EMT6-2013"
+                ]
+              },
+              {
+                "text": "Models only. Confidence in clinical translation: Low. Dogra 2018 reported slower A549 lung-cancer xenograft growth in mice. This positive result is specific to that model and regimen, and cannot establish benefit in people or across cancers.",
+                "sources": [
+                  "MECH-D10-MICROTUBULE-2018"
                 ]
               }
             ],
-            "questions": []
+            "questions": [
+              {
+                "id": "human-evidence",
+                "question": "What human anticancer evidence is available?",
+                "answer": "Cancer benefit: Not established. Human anticancer claims remain anecdotal. The human reports cited here describe liver injury rather than controlled cancer treatment. The selected cell and mouse studies have mixed findings and do not establish a human cancer regimen.",
+                "sources": [
+                  "P-D10-LIVER-2024",
+                  "P-D10-LIVER-2026",
+                  "MECH-D10-MICROTUBULE-2018",
+                  "P-D10-EMT6-DIET-2012",
+                  "P-D10-EMT6-2013"
+                ],
+                "sentences": [
+                  {
+                    "text": "Cancer benefit: Not established. Human anticancer claims remain anecdotal. The human reports cited here describe liver injury rather than controlled cancer treatment. The selected cell and mouse studies have mixed findings and do not establish a human cancer regimen.",
+                    "sources": [
+                      "P-D10-LIVER-2024",
+                      "P-D10-LIVER-2026",
+                      "MECH-D10-MICROTUBULE-2018",
+                      "P-D10-EMT6-DIET-2012",
+                      "P-D10-EMT6-2013"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "preclinical-consistency",
+                "question": "How consistent are the animal results?",
+                "answer": "Models only. Confidence in clinical translation: Low. Duan 2012 found no change in EMT6 mouse mammary-tumor growth, invasion, metastasis or response to local radiation with fenbendazole-containing chow. Duan 2013 also found no improvement in tumor growth or radiation response with intensive regimens. Those authors concluded that their experiments provided no evidence of value in cancer therapy; these findings apply to the tested models, not every possible cancer or regimen.",
+                "sources": [
+                  "P-D10-EMT6-DIET-2012",
+                  "P-D10-EMT6-2013"
+                ],
+                "sentences": [
+                  {
+                    "text": "Models only. Confidence in clinical translation: Low. Duan 2012 found no change in EMT6 mouse mammary-tumor growth, invasion, metastasis or response to local radiation with fenbendazole-containing chow. Duan 2013 also found no improvement in tumor growth or radiation response with intensive regimens. Those authors concluded that their experiments provided no evidence of value in cancer therapy; these findings apply to the tested models, not every possible cancer or regimen.",
+                    "sources": [
+                      "P-D10-EMT6-DIET-2012",
+                      "P-D10-EMT6-2013"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "vitamin-combination",
+                "question": "Did fenbendazole alone slow tumors in Gao 2008?",
+                "answer": "Models only. Confidence in clinical translation: Low. In Gao 2008, lymphoma tumors in mice were smaller with fenbendazole plus supplemented vitamins (P = 0.009). Fenbendazole alone did not differ significantly from control (P = 0.12). The combination result cannot be attributed to fenbendazole alone, and nonsignificance does not prove equivalence.",
+                "sources": [
+                  "P-D10-VITAMINS-2008"
+                ],
+                "sentences": [
+                  {
+                    "text": "Models only. Confidence in clinical translation: Low. In Gao 2008, lymphoma tumors in mice were smaller with fenbendazole plus supplemented vitamins (P = 0.009). Fenbendazole alone did not differ significantly from control (P = 0.12). The combination result cannot be attributed to fenbendazole alone, and nonsignificance does not prove equivalence.",
+                    "sources": [
+                      "P-D10-VITAMINS-2008"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "cell-only-2012",
+                "question": "Was Dogra 2012 an animal treatment study?",
+                "answer": "Models only. Confidence in clinical translation: Low. Dogra 2012 described proteasome impairment and endoplasmic-reticulum stress in cancer cells. It was an in vitro study; its discussion said animal efficacy was still being studied.",
+                "sources": [
+                  "P-D10-PROTEASOME-2012"
+                ],
+                "sentences": [
+                  {
+                    "text": "Models only. Confidence in clinical translation: Low. Dogra 2012 described proteasome impairment and endoplasmic-reticulum stress in cancer cells. It was an in vitro study; its discussion said animal efficacy was still being studied.",
+                    "sources": [
+                      "P-D10-PROTEASOME-2012"
+                    ]
+                  }
+                ]
+              }
+            ]
           },
           {
             "id": "connections",
@@ -6789,33 +6898,79 @@
           {
             "id": "approved-use",
             "question": "What is its established use?",
-            "answer": "Fenbendazole is a benzimidazole dewormer that disrupts parasite microtubules; veterinary products are approved for specified animal uses.",
+            "answer": "Official context: Fenbendazole is not FDA-approved for human use, including cancer treatment. In January 2026, the FDA approved a generic fenbendazole oral suspension for specified parasite infections in cattle and goats.",
             "sources": [
-              "P-D10-OVARIAN-2024",
               "CTX-D10-FDA"
             ],
             "sentences": [
               {
-                "text": "Fenbendazole is a benzimidazole dewormer that disrupts parasite microtubules; veterinary products are approved for specified animal uses.",
+                "text": "Official context: Fenbendazole is not FDA-approved for human use, including cancer treatment. In January 2026, the FDA approved a generic fenbendazole oral suspension for specified parasite infections in cattle and goats.",
                 "sources": [
-                  "P-D10-OVARIAN-2024",
                   "CTX-D10-FDA"
                 ]
               }
             ]
           },
           {
+            "id": "fenb-human-benefit",
+            "question": "Has cancer benefit been established in people?",
+            "answer": "Cancer benefit: Not established. Human anticancer claims remain anecdotal. The human reports cited here describe liver injury rather than controlled cancer treatment. The selected cell and mouse studies have mixed findings and do not establish a human cancer regimen.",
+            "sources": [
+              "P-D10-LIVER-2024",
+              "P-D10-LIVER-2026",
+              "MECH-D10-MICROTUBULE-2018",
+              "P-D10-EMT6-DIET-2012",
+              "P-D10-EMT6-2013"
+            ],
+            "sentences": [
+              {
+                "text": "Cancer benefit: Not established. Human anticancer claims remain anecdotal. The human reports cited here describe liver injury rather than controlled cancer treatment. The selected cell and mouse studies have mixed findings and do not establish a human cancer regimen.",
+                "sources": [
+                  "P-D10-LIVER-2024",
+                  "P-D10-LIVER-2026",
+                  "MECH-D10-MICROTUBULE-2018",
+                  "P-D10-EMT6-DIET-2012",
+                  "P-D10-EMT6-2013"
+                ]
+              }
+            ]
+          },
+          {
             "id": "safety-considerations",
-            "question": "Which adverse effects matter most?",
-            "answer": "A human case report documented biopsy-confirmed severe liver injury after self-administration, with recovery after stopping.",
+            "question": "What human harms have been reported?",
+            "answer": "Safety evidence: Low for estimating frequency or individual risk. A 2024 case report described biopsy-confirmed severe liver injury after self-administration, with liver tests returning to normal after cessation. This is a serious human safety signal, but a case report cannot estimate how often it occurs.",
             "sources": [
               "P-D10-LIVER-2024"
             ],
             "sentences": [
               {
-                "text": "A human case report documented biopsy-confirmed severe liver injury after self-administration, with recovery after stopping.",
+                "text": "Safety evidence: Low for estimating frequency or individual risk. A 2024 case report described biopsy-confirmed severe liver injury after self-administration, with liver tests returning to normal after cessation. This is a serious human safety signal, but a case report cannot estimate how often it occurs.",
                 "sources": [
                   "P-D10-LIVER-2024"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "dose",
+            "question": "Is there an established human cancer dose?",
+            "answer": "Human cancer dose: Not established. The cited cell and mouse studies do not establish a dose, duration or monitoring schedule for people. Human liver-injury reports do not define a safe threshold.",
+            "sources": [
+              "MECH-D10-MICROTUBULE-2018",
+              "P-D10-EMT6-DIET-2012",
+              "P-D10-EMT6-2013",
+              "P-D10-LIVER-2024",
+              "P-D10-LIVER-2026"
+            ],
+            "sentences": [
+              {
+                "text": "Human cancer dose: Not established. The cited cell and mouse studies do not establish a dose, duration or monitoring schedule for people. Human liver-injury reports do not define a safe threshold.",
+                "sources": [
+                  "MECH-D10-MICROTUBULE-2018",
+                  "P-D10-EMT6-DIET-2012",
+                  "P-D10-EMT6-2013",
+                  "P-D10-LIVER-2024",
+                  "P-D10-LIVER-2026"
                 ]
               }
             ]
@@ -6826,14 +6981,20 @@
           "P-D10-LIVER-2024",
           "P-D10-OVARIAN-2024",
           "P-D10-LIVER-2026",
-          "MECH-D10-MICROTUBULE-2018"
+          "MECH-D10-MICROTUBULE-2018",
+          "P-D10-PROTEASOME-2012",
+          "P-D10-VITAMINS-2008",
+          "P-D10-EMT6-DIET-2012",
+          "P-D10-EMT6-2013",
+          "P-D10-H4IIE-2022",
+          "P-D10-CRC-CELLS-2022"
         ],
         "related": [],
         "synthesisIds": [
           "SYN-FILL2-D10-NSCLC-XENOGRAFT"
         ],
         "entityId": "D10",
-        "scope": "A veterinary dewormer with ovarian-cancer laboratory findings and reported human liver injury.",
+        "scope": "Selected fenbendazole cancer-model evidence, mechanisms, human safety reports and clinical evidence gaps.",
         "coverageLabel": "",
         "candidateLinks": [
           {
