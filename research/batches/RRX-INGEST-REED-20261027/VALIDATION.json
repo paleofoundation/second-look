@@ -1,0 +1,56 @@
+{
+  "at": "2026-10-27T08:11:55.768557+00:00",
+  "technicalChecks": [
+    {
+      "command": "python3 .../test_ingest.py",
+      "exitCode": 0,
+      "outputSha256": "e84cc13beaa1d64a5e021abe719244af9a1af5344071023f920c5a209e2621d6"
+    },
+    {
+      "command": "python3 .../verify.py",
+      "exitCode": 0,
+      "outputSha256": "107da4582425881f62e84547ac7f1f816b171d8bd5c27354525753a608c2f7a3"
+    },
+    {
+      "command": "python3 .../verify.py --require-source-files",
+      "exitCode": 0,
+      "outputSha256": "1922035a2c0e2c459f549bbad40382cc6d7739c777ab43458b4caa903185d836"
+    },
+    {
+      "command": "node scripts/check-governance.mjs",
+      "exitCode": 0,
+      "outputSha256": "c5399a463361054cafb76fc1e19b0ae50e2ec42c650b59b50f2ebbb06d8c56cf"
+    },
+    {
+      "command": "git diff d118d305b59cac5e54ca7f9e5aa55cea682d2cee --check",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "regressionCount": 28,
+  "strictSourceInputs": 24,
+  "strictSourceAssets": 133,
+  "nodeForGovernance": "22.23.4",
+  "initialAppliedPayloadFiles": 5,
+  "repeatAppliedPayloadFiles": 0,
+  "scientificResultsExtracted": 0,
+  "scientificAcceptance": false,
+  "humanApproval": false,
+  "released": false,
+  "applicationBuild": "not rerun; isolatedresearchpacketonly,applicationbytesunchanged",
+  "browser": "notneededfornonrenderedpacket;nonewreaderjourneyclaimed",
+  "scientificContinuation": {
+    "sourceFilesRead": 1,
+    "sourcePagesRead": 21,
+    "directLocatedDraftResults": 8,
+    "draftClaims": 8,
+    "typedQFields": 67,
+    "sourceNumericIndependentAudit": "PASSbounded8onv3",
+    "activeQ14MappingFollowup": "v4pendingreadback",
+    "scientificAcceptance": false,
+    "humanApproval": false,
+    "fullReviewsComplete": 0,
+    "sourceValidation": "calibration/REED-CAL-01/VALIDATION.json"
+  },
+  "whitespaceCorrection": "Initial staged CSV used CRLF and was flagged; final CSV uses LF. Original commit and manifest preserved. This final diff check covers the complete packet, not only tracked pre-stage files."
+}

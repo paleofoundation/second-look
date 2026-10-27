@@ -1,0 +1,116 @@
+[
+  {
+    "id": "C11-NHS-CUTOFF",
+    "status": "unresolved",
+    "sourceA": {
+      "locator": {
+        "kind": "pdf",
+        "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+        "physicalPage": 4,
+        "printedPage": "Author manuscript Page 4",
+        "nativeSection": "Ascertainment/Statistical analysis"
+      },
+      "text": "NHS follow-up cutoff June2008"
+    },
+    "sourceB": {
+      "locator": {
+        "kind": "pdf",
+        "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+        "physicalPage": 12,
+        "printedPage": "Author manuscript Page 12",
+        "nativeSection": "Figure1 population flow and footnotes"
+      },
+      "text": "Figure1 footnote NHS July2008"
+    },
+    "action": "Preserve both, no silent cutoff-month correction."
+  },
+  {
+    "id": "C11-TREND-CODING",
+    "status": "unresolved",
+    "sourceA": {
+      "locator": {
+        "kind": "pdf",
+        "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+        "physicalPage": 4,
+        "printedPage": "Author manuscript Page 4",
+        "nativeSection": "Ascertainment/Statistical analysis"
+      },
+      "text": "Methods ordinal trend variables use category medians"
+    },
+    "sourceB": {
+      "locator": {
+        "kind": "pdf",
+        "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+        "physicalPage": 15,
+        "printedPage": "Author manuscript Page 15",
+        "nativeSection": "Table3 incidence HRs and footnotes"
+      },
+      "text": "Table3 footnote uses category mid-points"
+    },
+    "action": "Retain reported P-trend without claiming exact coding independently reproduced."
+  },
+  {
+    "id": "C11-PERSON-YEAR-SUM",
+    "status": "unresolved_literal_totals",
+    "locator": {
+      "kind": "pdf",
+      "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+      "physicalPage": 15,
+      "printedPage": "Author manuscript Page 15",
+      "nativeSection": "Table3 incidence HRs and footnotes"
+    },
+    "description": "Duration displayed HPFS row person-years sum664263 versus total664264; NHS sum1731193 versus total1731194. Overall2395458 is reported; no inferred patients or replacement totals.",
+    "action": "Keep literal row and total values, one-person-year discrepancies unresolved; no recomputation of HRs."
+  },
+  {
+    "id": "C11-OVERLAP",
+    "status": "not_independently_adjudicated",
+    "locators": [
+      {
+        "kind": "pdf",
+        "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+        "physicalPage": 2,
+        "printedPage": "Author manuscript Page 2",
+        "nativeSection": "Introduction/Study population"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+        "physicalPage": 4,
+        "printedPage": "Author manuscript Page 4",
+        "nativeSection": "Ascertainment/Statistical analysis"
+      }
+    ],
+    "description": "Same NHS/HPFS parent cohorts as CAL04 mortality report; distinct incident-disease question/analysis windows.",
+    "action": "Separate reports/endpoints; no sum of people/person-time/cases with CAL04, no claim of independent cohort replication."
+  },
+  {
+    "id": "C11-DOSE-SAFETY",
+    "status": "not_established",
+    "locators": [
+      {
+        "kind": "pdf",
+        "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+        "physicalPage": 3,
+        "printedPage": "Author manuscript Page 3",
+        "nativeSection": "Population/exposure/covariables"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+        "physicalPage": 7,
+        "printedPage": "Author manuscript Page 7",
+        "nativeSection": "Discussion"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+        "physicalPage": 8,
+        "printedPage": "Author manuscript Page 8",
+        "nativeSection": "Limitations/Acknowledgments"
+      }
+    ],
+    "description": "Source converts baby tablets to adult-strength equivalents, cannot directly separate81mg vs325mg; no dose/frequency with optimal risk-benefit established and no bleeding endpoint extracted.",
+    "action": "No daily-dose recommendation, sole81mg effect, safety benefit or randomized prevention claim."
+  }
+]

@@ -1,0 +1,3 @@
+# Reed intake contract and changes
+
+2026-10-27:08:57ownerorder and09:27wake authorize a new isolated research ingestion packet on d118d30. Preserve PR4-7 and record guide implications separately.286snapshot rows and the explicitly named122fenbendazole addendum have separate denominators; later803-row folder expansion is not blanket scope. Supplied acquisition/assertion intake is distinct from source-level extraction, independent appraisal and release. Primary sources govern any book conflict. Vitiligo/book holds, no new azole-mechanism work, cite-only/no public files, draft-only/no production gates remain. PLAN.json and INGEST-SCHEMA.json are the applicable bounded contract; no pinned/global/historical receipt rewrite.

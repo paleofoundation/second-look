@@ -1,0 +1,34 @@
+{
+  "schemaVersion": "REED-CAL-12-clinical-null-v1",
+  "required": [
+    "schemaVersion",
+    "paper",
+    "source",
+    "inspection",
+    "study",
+    "results",
+    "claims",
+    "reviewInputs",
+    "limitations",
+    "scientificAcceptance",
+    "humanApproval",
+    "released"
+  ],
+  "controls": [
+    "Actualdesign notassumedrandomized",
+    "Resistant/relapsed selection notfrontlinegeneralMM",
+    "No separate earlierphaseIpatients/results imported",
+    "Nullpilot nottherapeuticequivalence",
+    "Combinationnotisolatedsimvastatin",
+    "Actualtreated/evaluable/exposureandresponsepreserved",
+    "Safetygrade/causalitynotabsenceofharm/highdoserecommendation"
+  ],
+  "reviewInventory": "rules/one-match-rule/references/research-reviews/review-questions-and-inputs.json",
+  "fixedGates": {
+    "scientificAcceptance": false,
+    "humanApproval": false,
+    "released": false,
+    "acceptedSupport": false,
+    "grade": null
+  }
+}

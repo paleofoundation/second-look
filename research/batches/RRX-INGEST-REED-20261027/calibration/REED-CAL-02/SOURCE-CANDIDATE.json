@@ -1,0 +1,802 @@
+{
+  "schemaVersion": "REED-CAL-02source-extraction-v2",
+  "source": {
+    "pmid": "12657672",
+    "doi": "10.1523/JNEUROSCI.23-06-02131.2003",
+    "title": "Cell cycle regulators in the neuronal death pathway of amyotrophic lateral sclerosis caused by mutant superoxide dismutase 1.",
+    "ref": "$REMAPRX_REED_ROOT/minocycline-als/pdfs/12657672-nguyen-2003.pdf",
+    "sha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+    "physicalPages": 10,
+    "intakeReportId": "REED-618da4d10f079b8656c2"
+  },
+  "paper": {
+    "id": "REED-CAL-02-P1",
+    "pmid": "12657672",
+    "doi": "10.1523/JNEUROSCI.23-06-02131.2003",
+    "sourceType": "preclinical_primary_report",
+    "publicationYear": 2003,
+    "humanEvidence": false
+  },
+  "experiments": [
+    {
+      "id": "REED-CAL-02-E1",
+      "model": "C57BL6 SOD1G37R line29 mice and spinal-cord tissue",
+      "design": "Reported random division of littermates; qualitative minocycline/control marker comparison",
+      "animalNPerArm": null,
+      "animalNMissingReason": "not_identifiable_from_figure_caption",
+      "replication": "Methods report two independent experiments6monthsapart with different mouse sets; Figure6mapping unresolved.",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 2,
+          "journalPrintedPage": 2132,
+          "section": "Materials and Methods: Generation of SOD1G37R;hNF-H mice and minocycline treatment protocol"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 7,
+          "journalPrintedPage": 2137,
+          "section": "Figure 6 and caption",
+          "figure": "6"
+        }
+      ]
+    }
+  ],
+  "arms": [
+    {
+      "id": "REED-CAL-02-ARM-MINO",
+      "exposure": {
+        "value": 1,
+        "unit": "g_minocycline_per_kg_rodent_diet",
+        "startAgeMonths": 9,
+        "bodyWeightDose": null,
+        "bodyWeightDoseMissingReason": "not_reported"
+      }
+    },
+    {
+      "id": "REED-CAL-02-ARM-UNTREATED",
+      "exposure": "Regular rodent diet; untreated mutant comparator"
+    }
+  ],
+  "results": [
+    {
+      "id": "REED-CAL-02-R01",
+      "experimentId": "REED-CAL-02-E1",
+      "outcome": "Cdk5/Cdk4 and activated-microglia immunostaining",
+      "population": "SOD1G37R line29 mouse spinal-cord sections, not human participants",
+      "timepoint": "Panels/caption describe10.5-month-old mice after treatment beginningat9months; caption sample summary also saysendstage11-12months, unresolved.",
+      "arms": [
+        "REED-CAL-02-ARM-MINO",
+        "REED-CAL-02-ARM-UNTREATED"
+      ],
+      "estimate": {
+        "kind": "qualitative_histological_observation",
+        "observation": "Minocycline-treated SOD1G37R sections showed reduced Cdk5/Cdk4 immunoreactivity and MAC-2 staining compared with untreated SOD1G37R sections.",
+        "effectSize": null,
+        "effectSizeMissingReason": "not_reported_for_this_qualitative_comparison",
+        "perArmAnimalN": null,
+        "perArmAnimalNMissingReason": "not_identifiable_from_Figure6_caption",
+        "denominatorContext": "Figure6caption listsfiveSOD1G37R,twohNF-Hdoubletransgenicandfournormalmice,withoutaunambiguousmino/untreatedarmsplit. Do not treat these as5treatedversus4controls."
+      },
+      "uncertainty": {
+        "confidenceInterval": null,
+        "pValue": null,
+        "reason": "Not reported for these qualitative Figure6 minocycline comparisons."
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 2,
+          "journalPrintedPage": 2132,
+          "section": "Materials and Methods: Generation of SOD1G37R;hNF-H mice and minocycline treatment protocol"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 5,
+          "journalPrintedPage": 2135,
+          "section": "Results: Minocycline, a drug that slows down disease progression..."
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 6,
+          "journalPrintedPage": 2136,
+          "section": "Results: minocycline paragraph continued"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 7,
+          "journalPrintedPage": 2137,
+          "section": "Figure6",
+          "figure": "6",
+          "panels": "B/C,E/F,H/I"
+        }
+      ],
+      "testedVsInferred": {
+        "tested": "Histological marker patterns under the reported diet comparison.",
+        "notTested": "Direct selective Cdk4/Cdk5 target inhibition, human clinical benefit/safety, or complete causality of the Figure8 pathway."
+      },
+      "verificationState": "pending_independent_source_audit",
+      "acceptedSupport": false,
+      "grade": null,
+      "benefitGrade": null,
+      "humanApproval": "pending"
+    },
+    {
+      "id": "REED-CAL-02-R02",
+      "experimentId": "REED-CAL-02-E1",
+      "outcome": "Phospho-Rb immunostaining at Ser807/Thr811",
+      "population": "SOD1G37R line29 mouse spinal-cord sections, not human participants",
+      "timepoint": "Panels/caption describe10.5-month-old mice after treatment beginningat9months; caption sample summary also saysendstage11-12months, unresolved.",
+      "arms": [
+        "REED-CAL-02-ARM-MINO",
+        "REED-CAL-02-ARM-UNTREATED"
+      ],
+      "estimate": {
+        "kind": "qualitative_histological_observation",
+        "observation": "Minocycline-treated SOD1G37R sections showed less phospho-Rb immunostaining than untreated mutant sections; figure label specifies Ser807/Thr811.",
+        "effectSize": null,
+        "effectSizeMissingReason": "not_reported_for_this_qualitative_comparison",
+        "perArmAnimalN": null,
+        "perArmAnimalNMissingReason": "not_identifiable_from_Figure6_caption",
+        "denominatorContext": "Figure6caption listsfiveSOD1G37R,twohNF-Hdoubletransgenicandfournormalmice,withoutaunambiguousmino/untreatedarmsplit. Do not treat these as5treatedversus4controls."
+      },
+      "uncertainty": {
+        "confidenceInterval": null,
+        "pValue": null,
+        "reason": "Not reported for these qualitative Figure6 minocycline comparisons."
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 2,
+          "journalPrintedPage": 2132,
+          "section": "Materials and Methods: Generation of SOD1G37R;hNF-H mice and minocycline treatment protocol"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 5,
+          "journalPrintedPage": 2135,
+          "section": "Results: Minocycline, a drug that slows down disease progression..."
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 6,
+          "journalPrintedPage": 2136,
+          "section": "Results: minocycline paragraph continued"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 7,
+          "journalPrintedPage": 2137,
+          "section": "Figure6",
+          "figure": "6",
+          "panels": "M/N"
+        }
+      ],
+      "testedVsInferred": {
+        "tested": "Histological marker patterns under the reported diet comparison.",
+        "notTested": "Direct selective Cdk4/Cdk5 target inhibition, human clinical benefit/safety, or complete causality of the Figure8 pathway."
+      },
+      "verificationState": "pending_independent_source_audit",
+      "acceptedSupport": false,
+      "grade": null,
+      "benefitGrade": null,
+      "humanApproval": "pending"
+    }
+  ],
+  "claims": [
+    {
+      "id": "REED-CAL-02-C01",
+      "text": "In this SOD1G37R mouse/tissue comparison, minocycline treatment was associated with reduced Cdk5/Cdk4 and MAC-2 staining. The observation does not prove direct Cdk target inhibition or clinical ALS benefit.",
+      "resultIds": [
+        "REED-CAL-02-R01"
+      ],
+      "basis": "candidate_editorial_interpretation",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 2,
+          "journalPrintedPage": 2132,
+          "section": "Materials and Methods: Generation of SOD1G37R;hNF-H mice and minocycline treatment protocol"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 5,
+          "journalPrintedPage": 2135,
+          "section": "Results: Minocycline, a drug that slows down disease progression..."
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 6,
+          "journalPrintedPage": 2136,
+          "section": "Results: minocycline paragraph continued"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 7,
+          "journalPrintedPage": 2137,
+          "section": "Figure6",
+          "figure": "6",
+          "panels": "B/C,E/F,H/I"
+        }
+      ],
+      "verificationState": "pending_independent_source_audit",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED-CAL-02-C02",
+      "text": "The reported phospho-Rb staining was lower after minocycline in the model. This is a qualitative pathway observation, not a quantified human treatment effect or proof of the complete proposed causal pathway.",
+      "resultIds": [
+        "REED-CAL-02-R02"
+      ],
+      "basis": "candidate_editorial_interpretation",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 2,
+          "journalPrintedPage": 2132,
+          "section": "Materials and Methods: Generation of SOD1G37R;hNF-H mice and minocycline treatment protocol"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 5,
+          "journalPrintedPage": 2135,
+          "section": "Results: Minocycline, a drug that slows down disease progression..."
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 6,
+          "journalPrintedPage": 2136,
+          "section": "Results: minocycline paragraph continued"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 7,
+          "journalPrintedPage": 2137,
+          "section": "Figure6",
+          "figure": "6",
+          "panels": "M/N"
+        }
+      ],
+      "verificationState": "pending_independent_source_audit",
+      "acceptedSupport": false
+    }
+  ],
+  "reviewInputs": [
+    {
+      "id": "Q01",
+      "answer": "Investigates cell-cycle regulators in mutant SOD1 mouse neuronal degeneration. Minocycline is a pharmacological tool used to examine marker changes, not a human feasibility or efficacy trial.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 1,
+          "journalPrintedPage": 2131,
+          "section": "Original article text"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 2,
+          "journalPrintedPage": 2132,
+          "section": "Materials and Methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 5,
+          "journalPrintedPage": 2135,
+          "section": "Original article text"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q02",
+      "answer": "Inbred C57BL6 SOD1G37R line29 mice and spinal-cord tissues, with wild-type littermates and separate hNF-H double-transgenic comparisons. Figure6caption gives sample totals but not a clear treated/untreated animal split; microscopy fields and assay repetitions are not additional animals.",
+      "status": "partial_arm_denominators_not_identifiable",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 2,
+          "journalPrintedPage": 2132,
+          "section": "Materials and Methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 7,
+          "journalPrintedPage": 2137,
+          "section": "Figure6 and caption"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q03",
+      "answer": "Dietary minocycline from Sigma at1g/kgcustomrodentdiet, beginningat9months. This is concentration per mass of food, notmg/kgbodyweight or a human dose. Figure6describes miceat10.5months. No human formulation or dose conversion is inferred.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 2,
+          "journalPrintedPage": 2132,
+          "section": "Materials and Methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 7,
+          "journalPrintedPage": 2137,
+          "section": "Figure6 and caption"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q04",
+      "answer": "Randomly divided littermates into minocycline-treated and control groups; controls continued regular diet. Wild-type and hNF-H comparisons are separate genotype contexts. Blinding and allocation-concealment details were not identified.",
+      "status": "partial_blinding_not_reported",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 2,
+          "journalPrintedPage": 2132,
+          "section": "Materials and Methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 7,
+          "journalPrintedPage": 2137,
+          "section": "Figure6 and caption"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q05",
+      "answer": "Cdk localization/marker activity and Rb phosphorylation were investigated using histology, immunofluorescence, immunoprecipitation/kinase assays and Western blots. The two extracted drug comparisons are qualitative Figure6staining, not human function or survival endpoints.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 2,
+          "journalPrintedPage": 2132,
+          "section": "Materials and Methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 5,
+          "journalPrintedPage": 2135,
+          "section": "Original article text"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 6,
+          "journalPrintedPage": 2136,
+          "section": "Original article text"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 7,
+          "journalPrintedPage": 2137,
+          "section": "Figure6 and caption"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q06",
+      "answer": "Two qualitative Figure6drug comparisons: reduced Cdk5/Cdk4 andMAC-2staining and reduced phospho-Rb. No numerical effect size,pvalue,CI or clear per-arm animalN is supplied for these comparisons; none is invented from image pixels.",
+      "status": "partial_quantitative_effect_not_reported",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 6,
+          "journalPrintedPage": 2136,
+          "section": "Original article text"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 7,
+          "journalPrintedPage": 2137,
+          "section": "Figure6 and caption"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q07",
+      "answer": "Random group assignment and two experiments sixmonthsapart with different mouse sets are described. Full animal flow, treatment-arm N, sex, exclusions/attrition and per-comparison replicate counts are not recoverable for Figure6. Do not add countedneurons/sections/assays as independent animals.",
+      "status": "partial_animal_flow_not_reported",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 2,
+          "journalPrintedPage": 2132,
+          "section": "Materials and Methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 7,
+          "journalPrintedPage": 2137,
+          "section": "Figure6 and caption"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q08",
+      "answer": "The provided report does not present systematic minocycline toxicity/clinical safety ascertainment or adverse-event rates. Marker reduction cannot establish human or animal regimen safety.",
+      "status": "partial_safety_not_reported",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 2,
+          "journalPrintedPage": 2132,
+          "section": "Materials and Methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 5,
+          "journalPrintedPage": 2135,
+          "section": "Original article text"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 6,
+          "journalPrintedPage": 2136,
+          "section": "Original article text"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 7,
+          "journalPrintedPage": 2137,
+          "section": "Figure6 and caption"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 8,
+          "journalPrintedPage": 2138,
+          "section": "Discussion/Figure8"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 9,
+          "journalPrintedPage": 2139,
+          "section": "Original article text"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q09",
+      "answer": "Qualitative histology, unclear per-arm N/replicate mapping, absent identified blinding/statistical details and an age discrepancy between Figure6panel description and sample summary limit the drug comparison. Genotype and NF-H experiments cannot be pooled into a clinical causal claim.",
+      "status": "partial_methods_precision_gaps",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 2,
+          "journalPrintedPage": 2132,
+          "section": "Materials and Methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 7,
+          "journalPrintedPage": 2137,
+          "section": "Figure6 and caption"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 8,
+          "journalPrintedPage": 2138,
+          "section": "Discussion/Figure8"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q10",
+      "answer": "Applies to the tested mutant SOD1 mouse/tissue model and dietary exposure. Human NF-H means a transgene/protein, not human participants. No human ALS benefit, safety, optimal dose or clinical mechanism is established.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 1,
+          "journalPrintedPage": 2131,
+          "section": "Original article text"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 2,
+          "journalPrintedPage": 2132,
+          "section": "Materials and Methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 7,
+          "journalPrintedPage": 2137,
+          "section": "Figure6 and caption"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 8,
+          "journalPrintedPage": 2138,
+          "section": "Discussion/Figure8"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q11",
+      "answer": "One supplied paper contains several mechanistic assays and reports two minocycline experiments sixmonthsapart; exact per-experiment Ns are unresolved. The approximatelythreeweek lifespan gain is attributed to prior Kriz2002, not a new survival endpoint independently established here.",
+      "status": "partial_family_and_replicate_mapping",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 2,
+          "journalPrintedPage": 2132,
+          "section": "Materials and Methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 5,
+          "journalPrintedPage": 2135,
+          "section": "Original article text"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 8,
+          "journalPrintedPage": 2138,
+          "section": "Discussion/Figure8"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 10,
+          "journalPrintedPage": 2140,
+          "section": "Original article text"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q12",
+      "answer": "Authors Nguyen,Boudreau,Kriz,Couillard-Despres,Kaplan andJulien; Montreal/Toronto neuroscience laboratories. Funding includesCIHRandJohnsHopkinsALSresearch support and fellowships; suppliers and gifted transgenic mice are stated. No explicit conflict declaration was identified in this report.",
+      "status": "partial_conflict_statement_not_reported",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 1,
+          "journalPrintedPage": 2131,
+          "section": "Original article text"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 2,
+          "journalPrintedPage": 2132,
+          "section": "Materials and Methods"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q13",
+      "answer": "Exact10-page published-layoutPDFhash and article DOI/title checked. Current external integrity, related papers, protocol/raw-image/supplement completeness were not checked under the closed-packet restriction. Initial incorrect clinical plan is held; correctedv2readiness precedes further extraction.",
+      "status": "partial_external_integrity_not_checked",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 1,
+          "journalPrintedPage": 2131,
+          "section": "Original article text"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 2,
+          "journalPrintedPage": 2132,
+          "section": "Materials and Methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 10,
+          "journalPrintedPage": 2140,
+          "section": "Original article text"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q14",
+      "answer": "REED-CAL-02-C01/C02 link toR01/R02 and a private proposed ALS destinationG-CONDITION-C28 only. They support model-level marker associations, not minocycline monotherapy efficacy or human safety. No guide was edited; separate approval and scientific applicability checks remain.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 6,
+          "journalPrintedPage": 2136,
+          "section": "Original article text"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 7,
+          "journalPrintedPage": 2137,
+          "section": "Figure6 and caption"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 8,
+          "journalPrintedPage": 2138,
+          "section": "Discussion/Figure8"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending",
+      "downstreamMapping": {
+        "resultIds": [
+          "REED-CAL-02-R01",
+          "REED-CAL-02-R02"
+        ],
+        "claimIds": [
+          "REED-CAL-02-C01",
+          "REED-CAL-02-C02"
+        ],
+        "proposedGuideDestination": {
+          "id": "G-CONDITION-C28",
+          "slug": "/conditions/amyotrophic-lateral-sclerosis",
+          "proposalOnly": true,
+          "applied": false
+        },
+        "applicability": "Preclinical model rationale only; no human efficacy/safety/grade transfer."
+      }
+    },
+    {
+      "id": "Q15",
+      "answer": "This paper offers preclinical pathway observations and a proposed model; it does not resolve clinical ALS treatment. Preserve uncertain animal denominators and source integrity checks, and independently audit the exact figure/text before any later synthesis or guide proposal.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 7,
+          "journalPrintedPage": 2137,
+          "section": "Figure6 and caption"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 8,
+          "journalPrintedPage": 2138,
+          "section": "Discussion/Figure8"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+          "physicalPage": 9,
+          "journalPrintedPage": 2139,
+          "section": "Original article text"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    }
+  ],
+  "inspection": {
+    "at": "2026-10-27T08:24:35.190085+00:00",
+    "physicalPagesRead": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "reconciledFirstFourPages": true,
+    "activeReadiness": "READINESS-v2.json",
+    "visualPages": [
+      2,
+      7,
+      8
+    ],
+    "fullScientificReviewComplete": false,
+    "scopeCorrection": "SCOPE-CORRECTION.json",
+    "rawSourceIncluded": false
+  },
+  "gaps": [
+    {
+      "id": "G1",
+      "state": "not_identifiable",
+      "text": "Per-arm minocycline/untreated N and replicate mapping cannot be assigned from aggregate Figure6caption counts."
+    },
+    {
+      "id": "G2",
+      "state": "not_identifiable",
+      "text": "Figure6panel description10.5months versus caption sample summaryendstage11-12months remains unresolved."
+    },
+    {
+      "id": "G3",
+      "state": "not_reported",
+      "text": "Quantitative effect/CI/pvalue, blinding, animal sex/attrition and systematic safety ascertainment not identified for extracted minocycline comparisons."
+    },
+    {
+      "id": "G4",
+      "state": "not_checked",
+      "text": "External integrity, related reports, raw images/supplements and exact priorKriz2002 overlap not checked; prior lifespan claim not counted as new result."
+    }
+  ],
+  "scientificAcceptance": false,
+  "humanApproval": false,
+  "released": false
+}

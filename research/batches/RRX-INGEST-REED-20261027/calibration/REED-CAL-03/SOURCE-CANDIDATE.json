@@ -1,0 +1,792 @@
+{
+  "schemaVersion": "REED-CAL-03-secondary-v1",
+  "paper": {
+    "id": "REED-CAL-03-P1",
+    "intakeReportId": "REED-c27727e9f9a2c4f7c15a",
+    "pmid": "36982324",
+    "doi": "10.3390/ijms24065250",
+    "title": "Minocycline as Treatment for Psychiatric and Neurological Conditions: A Systematic Review and Meta-Analysis",
+    "sourceType": "secondary_systematic_review_meta_analysis",
+    "tier": "CONTEXT",
+    "newOriginalTrialCount": 0,
+    "newIndependentParticipants": 0
+  },
+  "source": {
+    "id": "REED-CAL-03-S1",
+    "ref": "$REMAPRX_REED_ROOT/minocycline-als/pdfs/36982324-panizzutti-2023.pdf",
+    "sha256": "9b98f46c51aec86b92a9e0377f3487594006aa3fef0b6644cc8f16ce4d52a7ee",
+    "pmid": "36982324",
+    "doi": "10.3390/ijms24065250",
+    "title": "Minocycline as Treatment for Psychiatric and Neurological Conditions: A Systematic Review and Meta-Analysis",
+    "physicalPages": 28,
+    "sourceType": "secondary_systematic_review_meta_analysis",
+    "intakeReportId": "REED-c27727e9f9a2c4f7c15a"
+  },
+  "inspection": {
+    "at": "2026-10-27T08:39:17.006597+00:00",
+    "activeReadiness": "READINESS.json",
+    "textualPagesRead": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28
+    ],
+    "visualInspectedPhysicalPages": [
+      14,
+      24
+    ],
+    "outOfScopeForestPlots": "No numerical extraction or full image audit of otherdiagnosis forestplots. Somepagesoverlaypeerreviewlabels withfinalpagination. Allsource textualpagesread; not fullimageinspection/fullscientificreview.",
+    "fullScientificReviewComplete": false
+  },
+  "includedPrimaryReportLinks": [
+    {
+      "intakeReportId": "REED-93f987e4518182d347c8",
+      "pmid": "16193258",
+      "doi": "10.1007/s10072-005-0474-x",
+      "title": "Minocycline in amyotrophic lateral sclerosis: a pilot study.",
+      "linkBasis": "MainfileReference64author/title/year/journal/pages plus suppliedindex/intakeDOI/PMID",
+      "sourceLocator": {
+        "kind": "pdf",
+        "sourceSha256": "9b98f46c51aec86b92a9e0377f3487594006aa3fef0b6644cc8f16ce4d52a7ee",
+        "physicalPage": 27,
+        "printedPage": "27 of 28",
+        "nativeSection": "References64(Pontieri)"
+      },
+      "originalAccess": "not_accessible",
+      "originalDataVerified": false,
+      "additionalIndependentTrialContribution": 0
+    }
+  ],
+  "observations": [
+    {
+      "id": "REED-CAL-03-O01",
+      "type": "report_internal_discrepancy",
+      "statement": "The abstract states two ALS studies, but Table2row28 and Section3.3.3 identify one ALS study, Pontieri2005[64]. The file does not resolve this count discrepancy. Do not count two independent ALS trials from the abstract.",
+      "values": {
+        "abstractALSStudyCount": 2,
+        "bodyALSStudyCount": 1,
+        "namedALSTableRows": 1,
+        "adjudicatedIndependentALSTrialCount": null
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "9b98f46c51aec86b92a9e0377f3487594006aa3fef0b6644cc8f16ce4d52a7ee",
+          "physicalPage": 1,
+          "printedPage": "1 of 28",
+          "nativeSection": "Abstract"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "9b98f46c51aec86b92a9e0377f3487594006aa3fef0b6644cc8f16ce4d52a7ee",
+          "physicalPage": 14,
+          "printedPage": "14 of 28",
+          "nativeSection": "Table2continued,row28 Pontieri2005[64]"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "9b98f46c51aec86b92a9e0377f3487594006aa3fef0b6644cc8f16ce4d52a7ee",
+          "physicalPage": 24,
+          "printedPage": "24 of 28",
+          "nativeSection": "3.3.3.Other;3.3.4.Limitations;4.Conclusions;funding"
+        }
+      ],
+      "basis": "direct_review_text_or_table_secondary_context",
+      "originalDataVerified": false,
+      "independentTrialCountContribution": 0,
+      "grade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED-CAL-03-O02",
+      "type": "secondhand_primary_trial_profile",
+      "statement": "The review Table2row28 lists Pontieri2005 in Italy,10minocycline and10control,TAU comparator,ALS-FRS primary outcome,100mg daily for6months and High risk. The conclusion refers to combined riluzole/minocycline. These are review-reported descriptors, not independently verified primary trial counts or a new sample.",
+      "values": {
+        "reviewReportedMinocyclineN": 10,
+        "reviewReportedControlN": 10,
+        "countBasis": "Table2group columns; recruited/randomized/analyzed distinctions not supplied here",
+        "dose": {
+          "value": 100,
+          "unit": "mg/day",
+          "route": "not_reported_in_ALS_table"
+        },
+        "duration": {
+          "value": 6,
+          "unit": "months"
+        },
+        "comparatorLiteral": "TAU",
+        "outcomeLiteral": "ALS-FRS",
+        "authorsRoBLabel": "High risk",
+        "originalTrialDenominatorVerified": false
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "9b98f46c51aec86b92a9e0377f3487594006aa3fef0b6644cc8f16ce4d52a7ee",
+          "physicalPage": 14,
+          "printedPage": "14 of 28",
+          "nativeSection": "Table2continued,row28 Pontieri2005[64]"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "9b98f46c51aec86b92a9e0377f3487594006aa3fef0b6644cc8f16ce4d52a7ee",
+          "physicalPage": 27,
+          "printedPage": "27 of 28",
+          "nativeSection": "References64(Pontieri)"
+        }
+      ],
+      "basis": "direct_review_text_or_table_secondary_context",
+      "originalDataVerified": false,
+      "independentTrialCountContribution": 0,
+      "grade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED-CAL-03-O03",
+      "type": "secondary_ALS_synthesis",
+      "statement": "The table describes the small combination trial as underpowered and its lack of effect on ALS-FRS or pulmonary score as inconclusive; Section3.3.3 also calls ALS evidence inconclusive. No numeric ALS treatment effect,uncertainty or pooled ALS effect is reported in this supplied review. Inconclusive does not establish efficacy or equivalence.",
+      "values": {
+        "interpretation": "inconclusive",
+        "ALSArmEffectEstimates": null,
+        "ALSBetweenGroupEffect": null,
+        "ALSConfidenceInterval": null,
+        "ALSPValue": null,
+        "ALSPooledEffect": null,
+        "estimateMissingState": "not_reported_in_supplied_review"
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "9b98f46c51aec86b92a9e0377f3487594006aa3fef0b6644cc8f16ce4d52a7ee",
+          "physicalPage": 14,
+          "printedPage": "14 of 28",
+          "nativeSection": "Table2continued,row28 Pontieri2005[64]"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "9b98f46c51aec86b92a9e0377f3487594006aa3fef0b6644cc8f16ce4d52a7ee",
+          "physicalPage": 24,
+          "printedPage": "24 of 28",
+          "nativeSection": "3.3.3.Other;3.3.4.Limitations;4.Conclusions;funding"
+        }
+      ],
+      "basis": "direct_review_text_or_table_secondary_context",
+      "originalDataVerified": false,
+      "independentTrialCountContribution": 0,
+      "grade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    }
+  ],
+  "claims": [
+    {
+      "id": "REED-CAL-03-C01",
+      "observationIds": [
+        "REED-CAL-03-O01"
+      ],
+      "statement": "The abstract states two ALS studies, but Table2row28 and Section3.3.3 identify one ALS study, Pontieri2005[64]. The file does not resolve this count discrepancy. Do not count two independent ALS trials from the abstract.",
+      "relation": "qualifies_abstract_count",
+      "acceptedSupport": false,
+      "independentTrialCountContribution": 0
+    },
+    {
+      "id": "REED-CAL-03-C02",
+      "observationIds": [
+        "REED-CAL-03-O02"
+      ],
+      "statement": "The review Table2row28 lists Pontieri2005 in Italy,10minocycline and10control,TAU comparator,ALS-FRS primary outcome,100mg daily for6months and High risk. The conclusion refers to combined riluzole/minocycline. These are review-reported descriptors, not independently verified primary trial counts or a new sample.",
+      "relation": "describes_secondhand_trial",
+      "acceptedSupport": false,
+      "independentTrialCountContribution": 0
+    },
+    {
+      "id": "REED-CAL-03-C03",
+      "observationIds": [
+        "REED-CAL-03-O03"
+      ],
+      "statement": "The table describes the small combination trial as underpowered and its lack of effect on ALS-FRS or pulmonary score as inconclusive; Section3.3.3 also calls ALS evidence inconclusive. No numeric ALS treatment effect,uncertainty or pooled ALS effect is reported in this supplied review. Inconclusive does not establish efficacy or equivalence.",
+      "relation": "supports_inconclusive_secondary_interpretation",
+      "acceptedSupport": false,
+      "independentTrialCountContribution": 0
+    }
+  ],
+  "reviewInputs": [
+    {
+      "id": "Q01",
+      "answer": "Review core-symptom minocycline trials across diagnoses; this packet extracts ALS context. Prospective protocol cited but unread.",
+      "status": "partial",
+      "fieldNames": [
+        "objective",
+        "prespecification",
+        "claim_outcome"
+      ],
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "9b98f46c51aec86b92a9e0377f3487594006aa3fef0b6644cc8f16ce4d52a7ee",
+          "physicalPage": 2,
+          "printedPage": "2 of 28",
+          "nativeSection": "Introduction and2.Methods/2.1.Search Strategy"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "9b98f46c51aec86b92a9e0377f3487594006aa3fef0b6644cc8f16ce4d52a7ee",
+          "physicalPage": 26,
+          "printedPage": "26 of 28",
+          "nativeSection": "References24(protocol)"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "9b98f46c51aec86b92a9e0377f3487594006aa3fef0b6644cc8f16ce4d52a7ee",
+          "physicalPage": 24,
+          "printedPage": "24 of 28",
+          "nativeSection": "3.3.3.Other;3.3.4.Limitations;4.Conclusions;funding"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q02",
+      "answer": "Review includes adult RCTs; ALS row is Pontieri2005Italy10/10 secondhand,not new participants or verified endpointN.",
+      "status": "partial",
+      "fieldNames": [
+        "population_species",
+        "eligibility_setting",
+        "recruited_treated_analyzed_counts"
+      ],
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "9b98f46c51aec86b92a9e0377f3487594006aa3fef0b6644cc8f16ce4d52a7ee",
+          "physicalPage": 3,
+          "printedPage": "3 of 28",
+          "nativeSection": "2.1-2.5Methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "9b98f46c51aec86b92a9e0377f3487594006aa3fef0b6644cc8f16ce4d52a7ee",
+          "physicalPage": 14,
+          "printedPage": "14 of 28",
+          "nativeSection": "Table2continued,row28 Pontieri2005[64]"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q03",
+      "answer": "ALS table100mg/day6months,combinedriluzole context. Route/formulation/posttreatment followup details absent.",
+      "status": "partial",
+      "fieldNames": [
+        "identity_formulation",
+        "route_exposure_schedule",
+        "cointerventions",
+        "followup"
+      ],
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "9b98f46c51aec86b92a9e0377f3487594006aa3fef0b6644cc8f16ce4d52a7ee",
+          "physicalPage": 14,
+          "printedPage": "14 of 28",
+          "nativeSection": "Table2continued,row28 Pontieri2005[64]"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q04",
+      "answer": "ComparatorTAU,not placebo. Review eligibilityRCT; child allocation/concealment/blinding details unavailable.",
+      "status": "partial",
+      "fieldNames": [
+        "comparator",
+        "allocation",
+        "randomization",
+        "blinding",
+        "timing"
+      ],
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "9b98f46c51aec86b92a9e0377f3487594006aa3fef0b6644cc8f16ce4d52a7ee",
+          "physicalPage": 14,
+          "printedPage": "14 of 28",
+          "nativeSection": "Table2continued,row28 Pontieri2005[64]"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "9b98f46c51aec86b92a9e0377f3487594006aa3fef0b6644cc8f16ce4d52a7ee",
+          "physicalPage": 3,
+          "printedPage": "3 of 28",
+          "nativeSection": "2.1-2.5Methods"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q05",
+      "answer": "ALS-FRS primary table outcome,also pulmonary score narrative; no instrumentversion/threshold.",
+      "status": "partial",
+      "fieldNames": [
+        "outcome_hierarchy",
+        "instrument",
+        "timepoint",
+        "endpoint_class",
+        "meaningful_change_threshold"
+      ],
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "9b98f46c51aec86b92a9e0377f3487594006aa3fef0b6644cc8f16ce4d52a7ee",
+          "physicalPage": 14,
+          "printedPage": "14 of 28",
+          "nativeSection": "Table2continued,row28 Pontieri2005[64]"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q06",
+      "answer": "No numerical ALS arm effect,contrast CI,pvalue orpooled estimate. Inconclusive underpower narrative is not zero/equivalence.",
+      "status": "partial",
+      "fieldNames": [
+        "arm_results",
+        "numerators_denominators",
+        "estimate_units",
+        "contrast",
+        "uncertainty"
+      ],
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "9b98f46c51aec86b92a9e0377f3487594006aa3fef0b6644cc8f16ce4d52a7ee",
+          "physicalPage": 14,
+          "printedPage": "14 of 28",
+          "nativeSection": "Table2continued,row28 Pontieri2005[64]"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "9b98f46c51aec86b92a9e0377f3487594006aa3fef0b6644cc8f16ce4d52a7ee",
+          "physicalPage": 24,
+          "printedPage": "24 of 28",
+          "nativeSection": "3.3.3.Other;3.3.4.Limitations;4.Conclusions;funding"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q07",
+      "answer": "Child flow/adherence/missingness/analysis population absent. Review excludes safety/futility designs; individual ALS exclusion mapping unknown.",
+      "status": "partial",
+      "fieldNames": [
+        "attrition",
+        "missingness",
+        "adherence",
+        "exclusions",
+        "analysis_population",
+        "experimental_unit"
+      ],
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "9b98f46c51aec86b92a9e0377f3487594006aa3fef0b6644cc8f16ce4d52a7ee",
+          "physicalPage": 14,
+          "printedPage": "14 of 28",
+          "nativeSection": "Table2continued,row28 Pontieri2005[64]"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "9b98f46c51aec86b92a9e0377f3487594006aa3fef0b6644cc8f16ce4d52a7ee",
+          "physicalPage": 6,
+          "printedPage": "6 of 28",
+          "nativeSection": "3.1.Search Yield and Study Inclusion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "9b98f46c51aec86b92a9e0377f3487594006aa3fef0b6644cc8f16ce4d52a7ee",
+          "physicalPage": 27,
+          "printedPage": "27 of 28",
+          "nativeSection": "References64(Pontieri)"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q08",
+      "answer": "No ALS-specific harm methods/events/withdrawals supplied; broad safe/tolerable conclusion not transferred as ALS safety evidence.",
+      "status": "partial",
+      "fieldNames": [
+        "harms_ascertainment",
+        "exposure_denominator",
+        "events_severity",
+        "withdrawals",
+        "observation_time"
+      ],
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "9b98f46c51aec86b92a9e0377f3487594006aa3fef0b6644cc8f16ce4d52a7ee",
+          "physicalPage": 24,
+          "printedPage": "24 of 28",
+          "nativeSection": "3.3.3.Other;3.3.4.Limitations;4.Conclusions;funding"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "9b98f46c51aec86b92a9e0377f3487594006aa3fef0b6644cc8f16ce4d52a7ee",
+          "physicalPage": 14,
+          "printedPage": "14 of 28",
+          "nativeSection": "Table2continued,row28 Pontieri2005[64]"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q09",
+      "answer": "AuthorsHighrisk child label and smallsample; selection/core-symptom/exclusion limits. Abstract/body/cutoff/sourceformat inconsistencies open.",
+      "status": "partial",
+      "fieldNames": [
+        "bias_domains",
+        "confounding",
+        "selective_reporting",
+        "multiplicity",
+        "precision",
+        "inconsistencies"
+      ],
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "9b98f46c51aec86b92a9e0377f3487594006aa3fef0b6644cc8f16ce4d52a7ee",
+          "physicalPage": 3,
+          "printedPage": "3 of 28",
+          "nativeSection": "2.1-2.5Methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "9b98f46c51aec86b92a9e0377f3487594006aa3fef0b6644cc8f16ce4d52a7ee",
+          "physicalPage": 24,
+          "printedPage": "24 of 28",
+          "nativeSection": "3.3.3.Other;3.3.4.Limitations;4.Conclusions;funding"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "9b98f46c51aec86b92a9e0377f3487594006aa3fef0b6644cc8f16ce4d52a7ee",
+          "physicalPage": 6,
+          "printedPage": "6 of 28",
+          "nativeSection": "3.1.Search Yield and Study Inclusion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "9b98f46c51aec86b92a9e0377f3487594006aa3fef0b6644cc8f16ce4d52a7ee",
+          "physicalPage": 14,
+          "printedPage": "14 of 28",
+          "nativeSection": "Table2continued,row28 Pontieri2005[64]"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "9b98f46c51aec86b92a9e0377f3487594006aa3fef0b6644cc8f16ce4d52a7ee",
+          "physicalPage": 1,
+          "printedPage": "1 of 28",
+          "nativeSection": "Abstract"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q10",
+      "answer": "Only one secondary ALS contexttrial; no otherdiagnosis effects or blanket efficacy/safety transferred. Standalone drug effects not isolated.",
+      "status": "partial",
+      "fieldNames": [
+        "population_indication_match",
+        "formulation_route_exposure_match",
+        "endpoint_match",
+        "limits"
+      ],
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "9b98f46c51aec86b92a9e0377f3487594006aa3fef0b6644cc8f16ce4d52a7ee",
+          "physicalPage": 24,
+          "printedPage": "24 of 28",
+          "nativeSection": "3.3.3.Other;3.3.4.Limitations;4.Conclusions;funding"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "9b98f46c51aec86b92a9e0377f3487594006aa3fef0b6644cc8f16ce4d52a7ee",
+          "physicalPage": 14,
+          "printedPage": "14 of 28",
+          "nativeSection": "Table2continued,row28 Pontieri2005[64]"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q11",
+      "answer": "Review contributes0new original trials/participants. Reference64links existing Pontieri metadata; original/protocol unavailable,externaloverlapunchecked.",
+      "status": "partial",
+      "fieldNames": [
+        "study_family",
+        "related_reports",
+        "overlap",
+        "replication_search_scope"
+      ],
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "9b98f46c51aec86b92a9e0377f3487594006aa3fef0b6644cc8f16ce4d52a7ee",
+          "physicalPage": 27,
+          "printedPage": "27 of 28",
+          "nativeSection": "References64(Pontieri)"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "9b98f46c51aec86b92a9e0377f3487594006aa3fef0b6644cc8f16ce4d52a7ee",
+          "physicalPage": 24,
+          "printedPage": "24 of 28",
+          "nativeSection": "3.3.3.Other;3.3.4.Limitations;4.Conclusions;funding"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q12",
+      "answer": "Authors/institution/funding/conflicts observed in supplied mainfile; trial productsupply not established.",
+      "status": "partial",
+      "fieldNames": [
+        "authors",
+        "setting",
+        "funding",
+        "supplied_products",
+        "conflicts"
+      ],
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "9b98f46c51aec86b92a9e0377f3487594006aa3fef0b6644cc8f16ce4d52a7ee",
+          "physicalPage": 1,
+          "printedPage": "1 of 28",
+          "nativeSection": "Abstract"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "9b98f46c51aec86b92a9e0377f3487594006aa3fef0b6644cc8f16ce4d52a7ee",
+          "physicalPage": 24,
+          "printedPage": "24 of 28",
+          "nativeSection": "3.3.3.Other;3.3.4.Limitations;4.Conclusions;funding"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "9b98f46c51aec86b92a9e0377f3487594006aa3fef0b6644cc8f16ce4d52a7ee",
+          "physicalPage": 25,
+          "printedPage": "25 of 28",
+          "nativeSection": "Data Availability/Conflicts of Interest"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q13",
+      "answer": "Exact publishedmainPDFread,figurelayering noted;supplement/protocol unavailable,externalintegrity unchecked. Localcheck date not externalcertification.",
+      "status": "partial",
+      "fieldNames": [
+        "source_version",
+        "access",
+        "supplements",
+        "registration",
+        "corrections_retractions",
+        "check_date"
+      ],
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "9b98f46c51aec86b92a9e0377f3487594006aa3fef0b6644cc8f16ce4d52a7ee",
+          "physicalPage": 1,
+          "printedPage": "1 of 28",
+          "nativeSection": "Abstract"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "9b98f46c51aec86b92a9e0377f3487594006aa3fef0b6644cc8f16ce4d52a7ee",
+          "physicalPage": 14,
+          "printedPage": "14 of 28",
+          "nativeSection": "Table2continued,row28 Pontieri2005[64]"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "9b98f46c51aec86b92a9e0377f3487594006aa3fef0b6644cc8f16ce4d52a7ee",
+          "physicalPage": 24,
+          "printedPage": "24 of 28",
+          "nativeSection": "3.3.3.Other;3.3.4.Limitations;4.Conclusions;funding"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "9b98f46c51aec86b92a9e0377f3487594006aa3fef0b6644cc8f16ce4d52a7ee",
+          "physicalPage": 26,
+          "printedPage": "26 of 28",
+          "nativeSection": "References24(protocol)"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q14",
+      "answer": "Exact threeobservation/claim IDs map to existingALSguide as private context-only proposal,unapplied.",
+      "status": "source_answer_candidate",
+      "fieldNames": [
+        "claim_links",
+        "support_relation",
+        "observed_vs_author_vs_editorial"
+      ],
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "9b98f46c51aec86b92a9e0377f3487594006aa3fef0b6644cc8f16ce4d52a7ee",
+          "physicalPage": 24,
+          "printedPage": "24 of 28",
+          "nativeSection": "3.3.3.Other;3.3.4.Limitations;4.Conclusions;funding"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "9b98f46c51aec86b92a9e0377f3487594006aa3fef0b6644cc8f16ce4d52a7ee",
+          "physicalPage": 14,
+          "printedPage": "14 of 28",
+          "nativeSection": "Table2continued,row28 Pontieri2005[64]"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending",
+      "downstreamMapping": {
+        "paperId": "REED-CAL-03-P1",
+        "observationIds": [
+          "REED-CAL-03-O01",
+          "REED-CAL-03-O02",
+          "REED-CAL-03-O03"
+        ],
+        "claimIds": [
+          "REED-CAL-03-C01",
+          "REED-CAL-03-C02",
+          "REED-CAL-03-C03"
+        ],
+        "existingGuideId": "G-CONDITION-C28",
+        "guideRelation": "Private unapplied ALS context/overlap and completeness caution only; no efficacy upgrade",
+        "canonicalChanges": 0,
+        "primaryReportId": "REED-93f987e4518182d347c8",
+        "primaryReportIdentityStatus": "Exact intake DOI/PMID/title link; review Reference64 title/year/pages match. Primary fulltext not_accessible.",
+        "publicationState": "private_draft"
+      }
+    },
+    {
+      "id": "Q15",
+      "answer": "One named ALS trial/inconclusive secondary synthesis with unresolved abstract2/body1,cutoff/primary/supplement gaps; no new grade/reviewcompletion.",
+      "status": "partial",
+      "fieldNames": [
+        "bounded_takeaway",
+        "unknowns",
+        "evidence_needed_to_change_conclusion"
+      ],
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "9b98f46c51aec86b92a9e0377f3487594006aa3fef0b6644cc8f16ce4d52a7ee",
+          "physicalPage": 24,
+          "printedPage": "24 of 28",
+          "nativeSection": "3.3.3.Other;3.3.4.Limitations;4.Conclusions;funding"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    }
+  ],
+  "methods": {
+    "searchDatabases": [
+      "PubMed",
+      "Embase",
+      "Cochrane",
+      "CINAHL",
+      "PsycINFO"
+    ],
+    "cutoff": {
+      "intro": "June2022",
+      "methods": "May2022",
+      "resolution": "unresolved"
+    },
+    "selection": "AdultRCT/placebooractivecontrolled/core symptoms;safety/tolerabilityandpreclinicalexcluded",
+    "duplicateScreeningExtraction": "Twoindependentauthorsplusadjudicationdescribed",
+    "protocol": "Reference24cited,unread",
+    "analysis": "MethodsSMD/random-effects etc not anALS pooledestimate",
+    "sourceLocators": [
+      {
+        "kind": "pdf",
+        "sourceSha256": "9b98f46c51aec86b92a9e0377f3487594006aa3fef0b6644cc8f16ce4d52a7ee",
+        "physicalPage": 2,
+        "printedPage": "2 of 28",
+        "nativeSection": "Introduction and2.Methods/2.1.Search Strategy"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "9b98f46c51aec86b92a9e0377f3487594006aa3fef0b6644cc8f16ce4d52a7ee",
+        "physicalPage": 3,
+        "printedPage": "3 of 28",
+        "nativeSection": "2.1-2.5Methods"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "9b98f46c51aec86b92a9e0377f3487594006aa3fef0b6644cc8f16ce4d52a7ee",
+        "physicalPage": 6,
+        "printedPage": "6 of 28",
+        "nativeSection": "3.1.Search Yield and Study Inclusion"
+      }
+    ]
+  },
+  "limitations": [
+    "Abstract2ALS/body1 discrepancyunresolved",
+    "June/May2022cutoffmismatch",
+    "NoALSpooledeffect/numericprecision",
+    "PrimaryPontieri/protocol/supplementunavailable",
+    "NoindividualexcludedALSreportmap",
+    "HighrisklabelisauthorsassessmentnotnewGRADE",
+    "Broadsafe/tolerableconclusionnotALSsafetyverification",
+    "Externalintegrity/familychecksnotperformed",
+    "Otherconditioneffectsandfigurevaluesnotextracted"
+  ],
+  "scientificAcceptance": false,
+  "humanApproval": false,
+  "released": false
+}

@@ -1,0 +1,537 @@
+{
+  "schemaVersion": "REED-CAL-05-case-v1",
+  "paper": {
+    "id": "REED-CAL-05-P1",
+    "intakeReportId": "REED-a99301bbea0ab49100a4",
+    "pmid": "34046102",
+    "doi": "10.14740/wjon1384",
+    "title": "Pulmonary Vein Thrombosis in a Patient With Multiple Myeloma on Treatment With Lenalidomide",
+    "sourceType": "primary_case_report",
+    "newRandomizedProphylaxisTrials": 0
+  },
+  "source": {
+    "id": "REED-CAL-05-S1",
+    "ref": "$REMAPRX_REED_ROOT/aspirin-myeloma/pdfs/34046102-stawiarski-2021.pdf",
+    "sha256": "2755fd22b2b188cedb097926ed1045a9fcf6f8b960916e1856c09765cce54fa3",
+    "pmid": "34046102",
+    "doi": "10.14740/wjon1384",
+    "title": "Pulmonary Vein Thrombosis in a Patient With Multiple Myeloma on Treatment With Lenalidomide",
+    "physicalPages": 4,
+    "intakeReportId": "REED-a99301bbea0ab49100a4"
+  },
+  "inspection": {
+    "at": "2026-10-27T08:53:51.794479+00:00",
+    "activeReadiness": "READINESS.json",
+    "textualPagesRead": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "visualInspectedPhysicalPages": [
+      1,
+      2
+    ],
+    "imageInterpretation": "Read authors case/figure captions and viewed corresponding figures; no independent diagnostic certification or image quantification.",
+    "fullScientificReviewComplete": false
+  },
+  "case": {
+    "id": "REED-CAL-05-CASE1",
+    "reportedN": 1,
+    "ageYears": 67,
+    "sex": "male",
+    "condition": "high-risk smoldering myeloma",
+    "clinicalTrialContext": {
+      "nctAsReported": "NCT03937635",
+      "name": "DETER-SMM",
+      "assignmentAsReported": "lenalidomide/dexamethasone control arm",
+      "aspirinRandomized": false,
+      "externalRegistryChecked": false
+    },
+    "aspirinScheduleVerified": false,
+    "diagnosticTimeline": {
+      "symptomOnset": "within3weeks of starting therapy",
+      "initialPEProtocolCTA": "negative for pulmonary embolism; not proof absent pulmonary vein clot",
+      "PVTDetection": "cycle10 gated192-slice coronaryCTA; authors say8months after initialCTA",
+      "truePVTOnset": null
+    },
+    "sourceLocators": [
+      {
+        "kind": "pdf",
+        "sourceSha256": "2755fd22b2b188cedb097926ed1045a9fcf6f8b960916e1856c09765cce54fa3",
+        "physicalPage": 1,
+        "printedPage": 73,
+        "nativeSection": "Case Report, right column"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "2755fd22b2b188cedb097926ed1045a9fcf6f8b960916e1856c09765cce54fa3",
+        "physicalPage": 2,
+        "printedPage": 74,
+        "nativeSection": "Case Report continuation, left column; Figures1/2"
+      }
+    ]
+  },
+  "results": [
+    {
+      "id": "REED-CAL-05-R01",
+      "event": "Authors report left lower pulmonary vein thrombosis during lenalidomide/dexamethasone therapy despite reported aspirin prophylaxis.",
+      "caseDenominator": 1,
+      "eventCount": 1,
+      "populationRate": null,
+      "effectSize": null,
+      "comparator": null,
+      "causalAttributionEstablished": false,
+      "exposure": {
+        "drug": "aspirin",
+        "reportedDoseMg": 325,
+        "frequency": null,
+        "frequencyState": "not_reported",
+        "adherenceVerified": false,
+        "purpose": "venous thromboembolism prophylaxis"
+      },
+      "timing": {
+        "dyspneaOnset": "within3weeks of starting therapy",
+        "PVTDetection": "cycle10 on coronary CTA",
+        "exactThrombusOnset": null
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "2755fd22b2b188cedb097926ed1045a9fcf6f8b960916e1856c09765cce54fa3",
+          "physicalPage": 1,
+          "printedPage": 73,
+          "nativeSection": "Case Report, right column"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "2755fd22b2b188cedb097926ed1045a9fcf6f8b960916e1856c09765cce54fa3",
+          "physicalPage": 2,
+          "printedPage": 74,
+          "nativeSection": "Case Report continuation, left column; Figures1/2"
+        }
+      ],
+      "acceptedSupport": false,
+      "grade": null,
+      "verificationState": "pending_independent_source_audit"
+    }
+  ],
+  "claims": [
+    {
+      "id": "REED-CAL-05-C01",
+      "resultIds": [
+        "REED-CAL-05-R01"
+      ],
+      "statement": "A thrombotic event was reported in one high-risk smoldering-myeloma patient receiving lenalidomide/dexamethasone and aspirin prophylaxis. This documents an individual event, not a prophylaxis failure rate, comparative efficacy or drug causation.",
+      "relation": "single_case_event_context",
+      "acceptedSupport": false
+    }
+  ],
+  "managementContext": {
+    "type": "separate_nonaspirin_management_context",
+    "aspirinResult": false,
+    "reportedActions": "Rivaroxaban20mg started; lenalidomide,dexamethasone and aspirin discontinued. The discussion describes once-daily administration and a plan for indefinite anticoagulation.",
+    "reportedFollowup": "Two-week TEE showed resolution; repeat CTA2months after diagnosis also confirmed resolution and dyspnea improved.",
+    "causalIsolation": false,
+    "sourceLocators": [
+      {
+        "kind": "pdf",
+        "sourceSha256": "2755fd22b2b188cedb097926ed1045a9fcf6f8b960916e1856c09765cce54fa3",
+        "physicalPage": 2,
+        "printedPage": 74,
+        "nativeSection": "Case Report continuation, left column; Figures1/2"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "2755fd22b2b188cedb097926ed1045a9fcf6f8b960916e1856c09765cce54fa3",
+        "physicalPage": 3,
+        "printedPage": 75,
+        "nativeSection": "Discussion/Learning points/disclosures"
+      }
+    ],
+    "clinicalRecommendationAdopted": false
+  },
+  "reviewInputs": [
+    {
+      "id": "Q01",
+      "answer": "One PVT case during reported aspirin prophylaxis and lenalidomide/dexamethasone; not an aspirin trial.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "2755fd22b2b188cedb097926ed1045a9fcf6f8b960916e1856c09765cce54fa3",
+          "physicalPage": 1,
+          "printedPage": 73,
+          "nativeSection": "Case Report, right column"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "2755fd22b2b188cedb097926ed1045a9fcf6f8b960916e1856c09765cce54fa3",
+          "physicalPage": 2,
+          "printedPage": 74,
+          "nativeSection": "Case Report continuation, left column; Figures1/2"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q02",
+      "answer": "One67-year-old man with high-risk smoldering myeloma in a parent trial control arm; case is not the parent trial population.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "2755fd22b2b188cedb097926ed1045a9fcf6f8b960916e1856c09765cce54fa3",
+          "physicalPage": 1,
+          "printedPage": 73,
+          "nativeSection": "Case Report, right column"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q03",
+      "answer": "Aspirin325mg reported, frequency/adherence unspecified. Chemotherapy and post-event rivaroxaban are separate exposures.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "2755fd22b2b188cedb097926ed1045a9fcf6f8b960916e1856c09765cce54fa3",
+          "physicalPage": 1,
+          "printedPage": 73,
+          "nativeSection": "Case Report, right column"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "2755fd22b2b188cedb097926ed1045a9fcf6f8b960916e1856c09765cce54fa3",
+          "physicalPage": 2,
+          "printedPage": 74,
+          "nativeSection": "Case Report continuation, left column; Figures1/2"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q04",
+      "answer": "No aspirin comparator/randomization. Parent cancer-treatment trial assignment does not establish aspirin randomization.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "2755fd22b2b188cedb097926ed1045a9fcf6f8b960916e1856c09765cce54fa3",
+          "physicalPage": 1,
+          "printedPage": 73,
+          "nativeSection": "Case Report, right column"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "2755fd22b2b188cedb097926ed1045a9fcf6f8b960916e1856c09765cce54fa3",
+          "physicalPage": 2,
+          "printedPage": 74,
+          "nativeSection": "Case Report continuation, left column; Figures1/2"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q05",
+      "answer": "Clinical/radiologic PVT detected cycle10; symptom onset3weeks does not prove clot onset. Followup imaging describes resolution.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "2755fd22b2b188cedb097926ed1045a9fcf6f8b960916e1856c09765cce54fa3",
+          "physicalPage": 1,
+          "printedPage": 73,
+          "nativeSection": "Case Report, right column"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "2755fd22b2b188cedb097926ed1045a9fcf6f8b960916e1856c09765cce54fa3",
+          "physicalPage": 2,
+          "printedPage": 74,
+          "nativeSection": "Case Report continuation, left column; Figures1/2"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q06",
+      "answer": "One case/event only; no incidence, comparative effect, CI/pvalue or100% prophylaxis failure-rate inference.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "2755fd22b2b188cedb097926ed1045a9fcf6f8b960916e1856c09765cce54fa3",
+          "physicalPage": 1,
+          "printedPage": 73,
+          "nativeSection": "Case Report, right column"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "2755fd22b2b188cedb097926ed1045a9fcf6f8b960916e1856c09765cce54fa3",
+          "physicalPage": 2,
+          "printedPage": 74,
+          "nativeSection": "Case Report continuation, left column; Figures1/2"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q07",
+      "answer": "Selected case with unspecified adherence/longterm followup; imaging repetition does not add patients.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "2755fd22b2b188cedb097926ed1045a9fcf6f8b960916e1856c09765cce54fa3",
+          "physicalPage": 1,
+          "printedPage": 73,
+          "nativeSection": "Case Report, right column"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "2755fd22b2b188cedb097926ed1045a9fcf6f8b960916e1856c09765cce54fa3",
+          "physicalPage": 2,
+          "printedPage": 74,
+          "nativeSection": "Case Report continuation, left column; Figures1/2"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q08",
+      "answer": "PVT and treatment discontinuation reported, but aspirin causality/systematic bleeding surveillance not established.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "2755fd22b2b188cedb097926ed1045a9fcf6f8b960916e1856c09765cce54fa3",
+          "physicalPage": 1,
+          "printedPage": 73,
+          "nativeSection": "Case Report, right column"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "2755fd22b2b188cedb097926ed1045a9fcf6f8b960916e1856c09765cce54fa3",
+          "physicalPage": 2,
+          "printedPage": 74,
+          "nativeSection": "Case Report continuation, left column; Figures1/2"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q09",
+      "answer": "Underlying disease, cointerventions, diagnostic delay and selection/publication bias prevent causal/comparative inference.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "2755fd22b2b188cedb097926ed1045a9fcf6f8b960916e1856c09765cce54fa3",
+          "physicalPage": 1,
+          "printedPage": 73,
+          "nativeSection": "Case Report, right column"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "2755fd22b2b188cedb097926ed1045a9fcf6f8b960916e1856c09765cce54fa3",
+          "physicalPage": 2,
+          "printedPage": 74,
+          "nativeSection": "Case Report continuation, left column; Figures1/2"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q10",
+      "answer": "High-risk smoldering subtype/prophylaxis context, not anticancer efficacy. Historical learning points are not current recommendations.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "2755fd22b2b188cedb097926ed1045a9fcf6f8b960916e1856c09765cce54fa3",
+          "physicalPage": 1,
+          "printedPage": 73,
+          "nativeSection": "Case Report, right column"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "2755fd22b2b188cedb097926ed1045a9fcf6f8b960916e1856c09765cce54fa3",
+          "physicalPage": 2,
+          "printedPage": 74,
+          "nativeSection": "Case Report continuation, left column; Figures1/2"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "2755fd22b2b188cedb097926ed1045a9fcf6f8b960916e1856c09765cce54fa3",
+          "physicalPage": 3,
+          "printedPage": 75,
+          "nativeSection": "Discussion/Learning points/disclosures"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q11",
+      "answer": "Parent NCT03937635 is source-reported, external registry/family/overlap unverified; no new prophylaxis trial count.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "2755fd22b2b188cedb097926ed1045a9fcf6f8b960916e1856c09765cce54fa3",
+          "physicalPage": 1,
+          "printedPage": 73,
+          "nativeSection": "Case Report, right column"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "2755fd22b2b188cedb097926ed1045a9fcf6f8b960916e1856c09765cce54fa3",
+          "physicalPage": 3,
+          "printedPage": 75,
+          "nativeSection": "Discussion/Learning points/disclosures"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q12",
+      "answer": "Authors/affiliations and no financial/conflict disclosures observed; informed consent obtained; product supply not reported.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "2755fd22b2b188cedb097926ed1045a9fcf6f8b960916e1856c09765cce54fa3",
+          "physicalPage": 1,
+          "printedPage": 73,
+          "nativeSection": "Case Report, right column"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "2755fd22b2b188cedb097926ed1045a9fcf6f8b960916e1856c09765cce54fa3",
+          "physicalPage": 3,
+          "printedPage": 75,
+          "nativeSection": "Discussion/Learning points/disclosures"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q13",
+      "answer": "Exact published4pagefile inspected; external integrity/registry and possible related reports unchecked.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "2755fd22b2b188cedb097926ed1045a9fcf6f8b960916e1856c09765cce54fa3",
+          "physicalPage": 1,
+          "printedPage": 73,
+          "nativeSection": "Case Report, right column"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "2755fd22b2b188cedb097926ed1045a9fcf6f8b960916e1856c09765cce54fa3",
+          "physicalPage": 2,
+          "printedPage": 74,
+          "nativeSection": "Case Report continuation, left column; Figures1/2"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "2755fd22b2b188cedb097926ed1045a9fcf6f8b960916e1856c09765cce54fa3",
+          "physicalPage": 3,
+          "printedPage": 75,
+          "nativeSection": "Discussion/Learning points/disclosures"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q14",
+      "answer": "ExactR01/C01 map to existingC21 private context proposal only, with subtype/purpose limitations.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "2755fd22b2b188cedb097926ed1045a9fcf6f8b960916e1856c09765cce54fa3",
+          "physicalPage": 2,
+          "printedPage": 74,
+          "nativeSection": "Case Report continuation, left column; Figures1/2"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "2755fd22b2b188cedb097926ed1045a9fcf6f8b960916e1856c09765cce54fa3",
+          "physicalPage": 3,
+          "printedPage": 75,
+          "nativeSection": "Discussion/Learning points/disclosures"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending",
+      "downstreamMapping": {
+        "paperId": "REED-CAL-05-P1",
+        "intakeReportId": "REED-a99301bbea0ab49100a4",
+        "resultIds": [
+          "REED-CAL-05-R01"
+        ],
+        "claimIds": [
+          "REED-CAL-05-C01"
+        ],
+        "existingGuideId": "G-CONDITION-C21",
+        "purpose": "Private prophylaxis case-context proposal, with high-risk smoldering subtype and no incidence/causality inference. Not anticancer evidence.",
+        "publicationState": "private_draft",
+        "canonicalChanges": 0
+      }
+    },
+    {
+      "id": "Q15",
+      "answer": "One event during reported use remains a case signal with major exposure/denominator/causality gaps; no population rate/recommendation.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "2755fd22b2b188cedb097926ed1045a9fcf6f8b960916e1856c09765cce54fa3",
+          "physicalPage": 2,
+          "printedPage": 74,
+          "nativeSection": "Case Report continuation, left column; Figures1/2"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "2755fd22b2b188cedb097926ed1045a9fcf6f8b960916e1856c09765cce54fa3",
+          "physicalPage": 3,
+          "printedPage": 75,
+          "nativeSection": "Discussion/Learning points/disclosures"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    }
+  ],
+  "limitations": [
+    "One selected case with no population/comparator denominator",
+    "High-risk smoldering subtype, not general symptomatic myeloma trial",
+    "Aspirin frequency/adherence unspecified",
+    "Parent cancer randomization not aspirin randomization",
+    "Exact clot onset and diagnostic delay unresolved",
+    "Coexisting disease/treatment prevents drug causation",
+    "Rivaroxaban started while other drugs stopped, so no isolated causal management effect",
+    "No bleeding rate/safety certification",
+    "External integrity/registry/overlap not checked",
+    "Historical learning points not adopted as current care recommendations"
+  ],
+  "scientificAcceptance": false,
+  "humanApproval": false,
+  "released": false
+}

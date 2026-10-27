@@ -1,0 +1,1050 @@
+{
+  "schemaVersion": "REED-CAL-07-phase1-v1",
+  "paper": {
+    "id": "B-R0045",
+    "existingSourceId": "B-R0045-F00",
+    "intakeReportId": "REED-41740457c3bb3b8b461c",
+    "pmid": "38220589",
+    "doi": "10.1016/j.clml.2024.01.002",
+    "title": "An Open-Label Phase I Study of Metformin and Nelfinavir in Combination With Bortezomib in Patients With Relapsed and Refractory Multiple Myeloma",
+    "sourceType": "primary_uncontrolled_phase1",
+    "newCanonicalIdentity": false
+  },
+  "source": {
+    "id": "REED-CAL-07-S1",
+    "ref": "$REMAPRX_REED_ROOT/metformin-myeloma/pdfs/38220589-alodhaibi-2024.pdf",
+    "sha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+    "pmid": "38220589",
+    "doi": "10.1016/j.clml.2024.01.002",
+    "title": "An Open-Label Phase I Study of Metformin and Nelfinavir in Combination With Bortezomib in Patients With Relapsed and Refractory Multiple Myeloma",
+    "physicalPages": 15,
+    "intakeReportId": "REED-41740457c3bb3b8b461c",
+    "existingReportId": "B-R0045",
+    "existingSourceId": "B-R0045-F00"
+  },
+  "inspection": {
+    "at": "2026-10-27T09:08:30.068071+00:00",
+    "activeReadiness": "READINESS.json",
+    "textualPagesRead": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "visualInspectedPhysicalPages": [
+      11,
+      14,
+      15
+    ],
+    "fullScientificReviewComplete": false,
+    "formatWarning": "pdfinfoCannotrevertnondecryptstreams; materialtext/figuresrenderedreadable,notclaimedrepaired"
+  },
+  "study": {
+    "registrationAsReported": "NCT03829020",
+    "design": "nonrandomized_open_label_3plus3_phase1",
+    "accruedN": 9,
+    "groupN": [
+      3,
+      6
+    ],
+    "responseEvaluableN": null,
+    "completeDLTEvaluableN": null,
+    "MTDEstablished": false,
+    "doseLevelsPlanned": 3,
+    "doseLevelsEvaluated": 1,
+    "enrollmentAsReported": "April2019-September2022",
+    "DLTWindowHistory": [
+      "2cycles",
+      "1cycleafteramendment"
+    ],
+    "causalMetforminEffectIsolated": false,
+    "currentRegistryVerified": false
+  },
+  "cohorts": [
+    {
+      "id": "REED-CAL-07-G1",
+      "n": 3,
+      "treatment": [
+        "metformin",
+        "nelfinavir"
+      ],
+      "metforminReportedActual": {
+        "value": 500,
+        "unit": "mg",
+        "frequency": "twice daily",
+        "days": "14of21"
+      },
+      "nelfinavirReportedActual": {
+        "value": 1250,
+        "unit": "mg",
+        "frequency": "twice daily",
+        "days": "14of21",
+        "conflict": "Methods1200mgBID held"
+      },
+      "DLTWindow": "Initially2cycles; noone completed thiswindow",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 4,
+          "printedPage": "Author manuscript Page 4",
+          "nativeSection": "Treatment/statistical analysis/results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 5,
+          "printedPage": "Author manuscript Page 5",
+          "nativeSection": "Treatment course/safety/efficacy"
+        }
+      ]
+    },
+    {
+      "id": "REED-CAL-07-G2",
+      "n": 6,
+      "treatment": [
+        "metformin",
+        "nelfinavir",
+        "bortezomib"
+      ],
+      "bortezomibReported": {
+        "value": 1.3,
+        "unit": "mg/m2",
+        "route": "subcutaneous",
+        "days": [
+          1,
+          8,
+          15
+        ]
+      },
+      "DLTSubcohorts": [
+        {
+          "n": 3,
+          "window": "2cycles",
+          "notes": "Allfailedtocomplete;oneincorrectmetformindose deemedunevaluable,oneprogression,onehospice."
+        },
+        {
+          "n": 3,
+          "window": "1cycle afterDec2020amendment",
+          "notes": "Onecompletedperprotocol;twooffforprogression,asreported."
+        }
+      ],
+      "metforminMonotherapy": false,
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 4,
+          "printedPage": "Author manuscript Page 4",
+          "nativeSection": "Treatment/statistical analysis/results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 5,
+          "printedPage": "Author manuscript Page 5",
+          "nativeSection": "Treatment course/safety/efficacy"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "REED-CAL-07-R01",
+      "outcome": "Confirmed objective hematologic response",
+      "estimate": {
+        "kind": "author_reported_no_confirmed_objective_responses",
+        "confirmedResponsesReported": 0,
+        "reportedORRProportion": null,
+        "responseAnalyzedN": null,
+        "trialAccruedN": 9,
+        "uncertainty": null
+      },
+      "qualification": "No objective responses stated; one unconfirmedMR(Group1) andone unconfirmedPR(Group2,followedbyprogression) are not confirmed ORR. Response-evaluable denominator not supplied clearly enough to assert0/9 measuredresponse. OneSDcase retained withdurationconflict.",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 1,
+          "printedPage": "Author manuscript Page 1",
+          "nativeSection": "Abstract/title/conflicts"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 2,
+          "printedPage": "Author manuscript Page 2",
+          "nativeSection": "Abstract conclusion/Microabstract"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 5,
+          "printedPage": "Author manuscript Page 5",
+          "nativeSection": "Treatment course/safety/efficacy"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 6,
+          "printedPage": "Author manuscript Page 6",
+          "nativeSection": "Efficacy/discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 10,
+          "printedPage": "Author manuscript Page 10",
+          "nativeSection": "Clinical practice points"
+        }
+      ],
+      "population": "Nine heavily pretreated relapsed/refractory myeloma patients; Group1n3dual/Group2n6triple",
+      "comparator": null,
+      "causalAttributionToMetforminAlone": false,
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED-CAL-07-R02",
+      "outcome": "Grade3orhigher adverse events regardless of attribution",
+      "estimate": {
+        "kind": "reported_event_category_counts",
+        "trialN": 9,
+        "grade3plusHematologicPatients": 4,
+        "grade3plusNonhematologicPatients": 6,
+        "reportedRoundedPercentages": [
+          44,
+          67
+        ],
+        "uniquePatientsEitherCategory": null,
+        "tableGroupN": [
+          3,
+          6
+        ],
+        "group2Grade5EventTerms": [
+          {
+            "term": "encephalopathy",
+            "n": 1
+          },
+          {
+            "term": "disease progression",
+            "n": 1
+          }
+        ],
+        "treatmentCausedEventCount": null
+      },
+      "qualification": "Categories can overlap; do not sum to10unique patients. Tabletitle says treatment-related butfootnote regardlessofattribution; source p5states no grade3+possiblyrelated andno treatmentattributabledeaths. Preserve separate attribution statement without deleting observed events. NoDLTreported isnotnoharms; completeDLTdenominator unclear.",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 5,
+          "printedPage": "Author manuscript Page 5",
+          "nativeSection": "Treatment course/safety/efficacy"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 14,
+          "printedPage": "Author manuscript Page 14",
+          "nativeSection": "Table2a/2b"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 15,
+          "printedPage": "Author manuscript Page 15",
+          "nativeSection": "Table2footnotes"
+        }
+      ],
+      "population": "Nine heavily pretreated relapsed/refractory myeloma patients; Group1n3dual/Group2n6triple",
+      "comparator": null,
+      "causalAttributionToMetforminAlone": false,
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED-CAL-07-R03",
+      "outcome": "Progression-free survival",
+      "estimate": {
+        "kind": "Kaplan_Meier_median",
+        "value": 1.4,
+        "unit": "months",
+        "events": 8,
+        "total": 9,
+        "CILevel": 0.95,
+        "lower": 0.9,
+        "upper": null,
+        "upperLiteral": "NE",
+        "upperInterpretation": "Source marker retained; not zero or numeric infinity"
+      },
+      "qualification": "Pooledsmall uncontrolled dual/triplecohorts; timeoriginregistration,PDordeath event. Not comparative benefit or metformin standalone effect.",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 4,
+          "printedPage": "Author manuscript Page 4",
+          "nativeSection": "Treatment/statistical analysis/results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 6,
+          "printedPage": "Author manuscript Page 6",
+          "nativeSection": "Efficacy/discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 11,
+          "printedPage": "Author manuscript Page 11",
+          "nativeSection": "Figure1survival panels"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 12,
+          "printedPage": "Author manuscript Page 12",
+          "nativeSection": "Figure1caption"
+        }
+      ],
+      "population": "Nine heavily pretreated relapsed/refractory myeloma patients; Group1n3dual/Group2n6triple",
+      "comparator": null,
+      "causalAttributionToMetforminAlone": false,
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED-CAL-07-R04",
+      "outcome": "Overall survival",
+      "estimate": {
+        "kind": "Kaplan_Meier_median",
+        "value": 2.1,
+        "unit": "months",
+        "events": 8,
+        "total": 9,
+        "CILevel": 0.95,
+        "lower": 1.2,
+        "upper": null,
+        "upperLiteral": "NE",
+        "upperInterpretation": "Source marker retained; not zero or numeric infinity"
+      },
+      "qualification": "Pooledsmall uncontrolled dual/triplecohorts; timeoriginregistration,death event. Subsequenttherapy confounds long-term attribution.",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 4,
+          "printedPage": "Author manuscript Page 4",
+          "nativeSection": "Treatment/statistical analysis/results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 5,
+          "printedPage": "Author manuscript Page 5",
+          "nativeSection": "Treatment course/safety/efficacy"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 6,
+          "printedPage": "Author manuscript Page 6",
+          "nativeSection": "Efficacy/discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 11,
+          "printedPage": "Author manuscript Page 11",
+          "nativeSection": "Figure1survival panels"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 12,
+          "printedPage": "Author manuscript Page 12",
+          "nativeSection": "Figure1caption"
+        }
+      ],
+      "population": "Nine heavily pretreated relapsed/refractory myeloma patients; Group1n3dual/Group2n6triple",
+      "comparator": null,
+      "causalAttributionToMetforminAlone": false,
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    }
+  ],
+  "claims": [
+    {
+      "id": "REED-CAL-07-C01",
+      "resultIds": [
+        "REED-CAL-07-R01"
+      ],
+      "statement": "Confirmed objective hematologic response: No objective responses stated; one unconfirmedMR(Group1) andone unconfirmedPR(Group2,followedbyprogression) are not confirmed ORR. Response-evaluable denominator not supplied clearly enough to assert0/9 measuredresponse. OneSDcase retained withdurationconflict.",
+      "relation": "uncontrolled_phase1_description",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED-CAL-07-C02",
+      "resultIds": [
+        "REED-CAL-07-R02"
+      ],
+      "statement": "Grade3orhigher adverse events regardless of attribution: Categories can overlap; do not sum to10unique patients. Tabletitle says treatment-related butfootnote regardlessofattribution; source p5states no grade3+possiblyrelated andno treatmentattributabledeaths. Preserve separate attribution statement without deleting observed events. NoDLTreported isnotnoharms; completeDLTdenominator unclear.",
+      "relation": "uncontrolled_phase1_description",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED-CAL-07-C03",
+      "resultIds": [
+        "REED-CAL-07-R03"
+      ],
+      "statement": "Progression-free survival: Pooledsmall uncontrolled dual/triplecohorts; timeoriginregistration,PDordeath event. Not comparative benefit or metformin standalone effect.",
+      "relation": "uncontrolled_phase1_description",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED-CAL-07-C04",
+      "resultIds": [
+        "REED-CAL-07-R04"
+      ],
+      "statement": "Overall survival: Pooledsmall uncontrolled dual/triplecohorts; timeoriginregistration,death event. Subsequenttherapy confounds long-term attribution.",
+      "relation": "uncontrolled_phase1_description",
+      "acceptedSupport": false
+    }
+  ],
+  "reviewInputs": [
+    {
+      "id": "Q01",
+      "answer": "PhaseI MTD/safety andsecondaryresponse study ofmetformin+nelfinavir±bortezomib; notmonotherapy/randomizedefficacy.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 3,
+          "printedPage": "Author manuscript Page 3",
+          "nativeSection": "Methods/design/selection"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 4,
+          "printedPage": "Author manuscript Page 4",
+          "nativeSection": "Treatment/statistical analysis/results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 6,
+          "printedPage": "Author manuscript Page 6",
+          "nativeSection": "Efficacy/discussion"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q02",
+      "answer": "Nineheavilypretreatedrelapsed/refractorymyeloma patients,dual3/triple6; response/DLTevaluablecountsnotfullyestablished.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 3,
+          "printedPage": "Author manuscript Page 3",
+          "nativeSection": "Methods/design/selection"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 4,
+          "printedPage": "Author manuscript Page 4",
+          "nativeSection": "Treatment/statistical analysis/results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 5,
+          "printedPage": "Author manuscript Page 5",
+          "nativeSection": "Treatment course/safety/efficacy"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q03",
+      "answer": "First3dualmetformin+nelfinavir;next6addbortezomib. Actualmetformin500mgBID14of21; nelfinavir1200/1250mgBIDsourceconflictheld.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 4,
+          "printedPage": "Author manuscript Page 4",
+          "nativeSection": "Treatment/statistical analysis/results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 5,
+          "printedPage": "Author manuscript Page 5",
+          "nativeSection": "Treatment course/safety/efficacy"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 6,
+          "printedPage": "Author manuscript Page 6",
+          "nativeSection": "Efficacy/discussion"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q04",
+      "answer": "Sequentialopenlabelnonrandomizedcohorts;March2020bortezomibamendment,Dec2020DLTwindowshortening.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 3,
+          "printedPage": "Author manuscript Page 3",
+          "nativeSection": "Methods/design/selection"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 4,
+          "printedPage": "Author manuscript Page 4",
+          "nativeSection": "Treatment/statistical analysis/results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 5,
+          "printedPage": "Author manuscript Page 5",
+          "nativeSection": "Treatment course/safety/efficacy"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q05",
+      "answer": "MTDprimary;IMWGresponse/CTCAE4toxicity/PFS/OSsecondary-exploratory. Confirmedandunconfirmedresponseskeptdistinct.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 3,
+          "printedPage": "Author manuscript Page 3",
+          "nativeSection": "Methods/design/selection"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 4,
+          "printedPage": "Author manuscript Page 4",
+          "nativeSection": "Treatment/statistical analysis/results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 6,
+          "printedPage": "Author manuscript Page 6",
+          "nativeSection": "Efficacy/discussion"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q06",
+      "answer": "No confirmedORR statedwithoutinventingresponseevaluableN. Grade3+hema4/9/nonhema6/9;PFS1.4months95CI.9-NE/OS2.1CI1.2-NE,8events9total.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 4,
+          "printedPage": "Author manuscript Page 4",
+          "nativeSection": "Treatment/statistical analysis/results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 5,
+          "printedPage": "Author manuscript Page 5",
+          "nativeSection": "Treatment course/safety/efficacy"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 6,
+          "printedPage": "Author manuscript Page 6",
+          "nativeSection": "Efficacy/discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 11,
+          "printedPage": "Author manuscript Page 11",
+          "nativeSection": "Figure1survival panels"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q07",
+      "answer": "Earlyprogression/hospice/healthandoneincorrectdosecausedincompletewindows; replacementsnotadditionalpatients;missingcorrelatives.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 3,
+          "printedPage": "Author manuscript Page 3",
+          "nativeSection": "Methods/design/selection"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 5,
+          "printedPage": "Author manuscript Page 5",
+          "nativeSection": "Treatment course/safety/efficacy"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 11,
+          "printedPage": "Author manuscript Page 11",
+          "nativeSection": "Figure1survival panels"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q08",
+      "answer": "NoDLTreportedbutincompletesurveillancewindows; observedgrade3+andgrade5eventsregardlessattribution retained;notzeroAEs/safetycertification.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 5,
+          "printedPage": "Author manuscript Page 5",
+          "nativeSection": "Treatment course/safety/efficacy"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 14,
+          "printedPage": "Author manuscript Page 14",
+          "nativeSection": "Table2a/2b"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 15,
+          "printedPage": "Author manuscript Page 15",
+          "nativeSection": "Table2footnotes"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q09",
+      "answer": "Smalluncontrolledcohorts/amendments/selection limitinference. Dose,AEtitle-footnote andSDdurationconflicts held.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 4,
+          "printedPage": "Author manuscript Page 4",
+          "nativeSection": "Treatment/statistical analysis/results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 6,
+          "printedPage": "Author manuscript Page 6",
+          "nativeSection": "Efficacy/discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 7,
+          "printedPage": "Author manuscript Page 7",
+          "nativeSection": "Discussion limitations"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 11,
+          "printedPage": "Author manuscript Page 11",
+          "nativeSection": "Figure1survival panels"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q10",
+      "answer": "Selectedheavilypretreatedpatients/combinationlowdoseonly; higherplannedlevelsuntested andmetforminaloneunisolated.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 4,
+          "printedPage": "Author manuscript Page 4",
+          "nativeSection": "Treatment/statistical analysis/results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 6,
+          "printedPage": "Author manuscript Page 6",
+          "nativeSection": "Efficacy/discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 7,
+          "printedPage": "Author manuscript Page 7",
+          "nativeSection": "Discussion limitations"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q11",
+      "answer": "ExistingB-R0045identity; othercitednelfinavir/ritonavirtrialdata notcurrentresultorindependentcombinedcohort.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 3,
+          "printedPage": "Author manuscript Page 3",
+          "nativeSection": "Methods/design/selection"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 6,
+          "printedPage": "Author manuscript Page 6",
+          "nativeSection": "Efficacy/discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 7,
+          "printedPage": "Author manuscript Page 7",
+          "nativeSection": "Discussion limitations"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q12",
+      "answer": "Authors/Mayoaffiliations,unnamedfoundation/NCIgrant andnocompetingfinancialinterestsobserved;productsupplyunknown.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 1,
+          "printedPage": "Author manuscript Page 1",
+          "nativeSection": "Abstract/title/conflicts"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 3,
+          "printedPage": "Author manuscript Page 3",
+          "nativeSection": "Methods/design/selection"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 8,
+          "printedPage": "Author manuscript Page 8",
+          "nativeSection": "Acknowledgements/data sharing"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q13",
+      "answer": "Exactacceptedauthor-manuscriptreadwithmaterialvisualchecks;externalregistry/protocol/integrity/data notverified.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 1,
+          "printedPage": "Author manuscript Page 1",
+          "nativeSection": "Abstract/title/conflicts"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 3,
+          "printedPage": "Author manuscript Page 3",
+          "nativeSection": "Methods/design/selection"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 8,
+          "printedPage": "Author manuscript Page 8",
+          "nativeSection": "Acknowledgements/data sharing"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 11,
+          "printedPage": "Author manuscript Page 11",
+          "nativeSection": "Figure1survival panels"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q14",
+      "answer": "ExactR01-R04/C01-C04privateproposaltoexistingG-METFORMIN/C21,notclinicalgrade/supportactivation.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 6,
+          "printedPage": "Author manuscript Page 6",
+          "nativeSection": "Efficacy/discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 7,
+          "printedPage": "Author manuscript Page 7",
+          "nativeSection": "Discussion limitations"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending",
+      "downstreamMapping": {
+        "paperId": "B-R0045",
+        "intakeReportId": "REED-41740457c3bb3b8b461c",
+        "resultIds": [
+          "REED-CAL-07-R01",
+          "REED-CAL-07-R02",
+          "REED-CAL-07-R03",
+          "REED-CAL-07-R04"
+        ],
+        "claimIds": [
+          "REED-CAL-07-C01",
+          "REED-CAL-07-C02",
+          "REED-CAL-07-C03",
+          "REED-CAL-07-C04"
+        ],
+        "existingGuideIds": [
+          "G-METFORMIN",
+          "G-CONDITION-C21"
+        ],
+        "purpose": "Private negative/limited combination phaseI response,safety/survival context; no standalone metformin efficacy/safety or grade",
+        "publicationState": "private_draft",
+        "canonicalChanges": 0
+      }
+    },
+    {
+      "id": "Q15",
+      "answer": "LimitednegativephaseIcombinationfindingswithflow/dose/attributiongaps; independentappraisal/completeoriginaldataandcontrolledconfirmationremainneeded.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 6,
+          "printedPage": "Author manuscript Page 6",
+          "nativeSection": "Efficacy/discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 7,
+          "printedPage": "Author manuscript Page 7",
+          "nativeSection": "Discussion limitations"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    }
+  ],
+  "sourceConflicts": [
+    {
+      "id": "C07-DOSE",
+      "status": "unresolved",
+      "sourceA": {
+        "locator": {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 4,
+          "printedPage": "Author manuscript Page 4",
+          "nativeSection": "Treatment/statistical analysis/results"
+        },
+        "literal": "Methods nelfinavir1200mg twice daily atDoseLevels1/2"
+      },
+      "sourceB": {
+        "locators": [
+          {
+            "kind": "pdf",
+            "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+            "physicalPage": 1,
+            "printedPage": "Author manuscript Page 1",
+            "nativeSection": "Abstract/title/conflicts"
+          },
+          {
+            "kind": "pdf",
+            "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+            "physicalPage": 4,
+            "printedPage": "Author manuscript Page 4",
+            "nativeSection": "Treatment/statistical analysis/results"
+          },
+          {
+            "kind": "pdf",
+            "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+            "physicalPage": 5,
+            "printedPage": "Author manuscript Page 5",
+            "nativeSection": "Treatment course/safety/efficacy"
+          }
+        ],
+        "literal": "Abstract/actual-treatment passages1250mg twice daily"
+      },
+      "disposition": "Preserve both source values; no silent regimen correction or dose recommendation."
+    },
+    {
+      "id": "C07-AE-ATTRIBUTION",
+      "status": "unresolved_title_footnote_conflict",
+      "sourceA": {
+        "locator": {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 14,
+          "printedPage": "Author manuscript Page 14",
+          "nativeSection": "Table2a/2b"
+        },
+        "literal": "Table2 title treatment-related adverse events"
+      },
+      "sourceB": {
+        "locator": {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 15,
+          "printedPage": "Author manuscript Page 15",
+          "nativeSection": "Table2footnotes"
+        },
+        "literal": "Footnote Regardless of Attribution"
+      },
+      "disposition": "Retain events regardless of attribution, with title conflict explicit; authors p5 nonepossiblyrelated is separate attribution opinion, not erasure."
+    },
+    {
+      "id": "C07-SD-DURATION",
+      "status": "unresolved",
+      "sourceA": {
+        "locator": {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 6,
+          "printedPage": "Author manuscript Page 6",
+          "nativeSection": "Efficacy/discussion"
+        },
+        "literal": "Six cycles received; stable disease forfour ofsix cycles"
+      },
+      "sourceB": {
+        "locator": {
+          "kind": "pdf",
+          "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+          "physicalPage": 10,
+          "printedPage": "Author manuscript Page 10",
+          "nativeSection": "Clinical practice points"
+        },
+        "literal": "Clinical practice points stable disease forsixmonths"
+      },
+      "disposition": "No harmonized stable-disease duration or confirmed response upgrade."
+    },
+    {
+      "id": "C07-SUPPLIER-MONO",
+      "status": "qualified_supplier_note",
+      "supplier": "Frozen rowmetadata baseline-286:073 says no metformin-alone arm beyondfirst3patients.",
+      "source": {
+        "locators": [
+          {
+            "kind": "pdf",
+            "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+            "physicalPage": 1,
+            "printedPage": "Author manuscript Page 1",
+            "nativeSection": "Abstract/title/conflicts"
+          },
+          {
+            "kind": "pdf",
+            "sourceSha256": "77d34ab7a038c8536894a55889480c716bcf3e7cb72e980e198eaecd4ecaf15b",
+            "physicalPage": 4,
+            "printedPage": "Author manuscript Page 4",
+            "nativeSection": "Treatment/statistical analysis/results"
+          }
+        ],
+        "literal": "First3received metformin incombinationwithnelfinavir"
+      },
+      "disposition": "No metformin monotherapy arm established, includingfirst3. Preserve supplier note attribution; source-specific candidate uses dual/triple cohorts."
+    }
+  ],
+  "limitations": [
+    "Smalluncontrolledmixedcohort9notcomparativeefficacy",
+    "Incompleteresponse/DLTwindowdenominators",
+    "Noobjectiveconfirmedresponsesreported;unconfirmedMR/PRnotconfirmed",
+    "NoDLTnotnoAEs/nofatality;attributionheld",
+    "1200/1250mgBIDnelfinavirconflict",
+    "SDdurationfour/sixcyclesversus6monthsconflict",
+    "Pooledsurvivalnotbenefit;CIsupperNEpreserved",
+    "Onlyfirstdoseleveltested;noMTDestablished",
+    "NoPK/PD/correlativescomplete;externalprotocol/integrity/familyunchecked",
+    "Prior/subsequenttherapyandmultiagentregimenpreventmetforminattribution"
+  ],
+  "scientificAcceptance": false,
+  "humanApproval": false,
+  "released": false
+}

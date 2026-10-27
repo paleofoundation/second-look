@@ -1,0 +1,1023 @@
+{
+  "schemaVersion": "REED-CAL-20-preclinical-nonMM-context-v1",
+  "paper": {
+    "id": "REED-CAL-20-P1",
+    "intakeReportId": "REED-048b90f4127731bb6cc6",
+    "pmid": "35740881",
+    "doi": "10.3390/biom12060756",
+    "title": "Metformin Induces Resistance of Cancer Cells to the Proteasome Inhibitor Bortezomib.",
+    "sourceType": "primary_preclinical_nonMM_CONTEXT"
+  },
+  "source": {
+    "id": "REED-CAL-20-S1",
+    "pmid": "35740881",
+    "doi": "10.3390/biom12060756",
+    "title": "Metformin Induces Resistance of Cancer Cells to the Proteasome Inhibitor Bortezomib.",
+    "ref": "$REMAPRX_REED_ROOT/metformin-myeloma/pdfs/35740881-schlesser-2022.pdf",
+    "sha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+    "intakeReportId": "REED-048b90f4127731bb6cc6",
+    "physicalPages": 10
+  },
+  "inspection": {
+    "at": "2026-10-27T10:49:36.080171+00:00",
+    "activeReadiness": "READINESS.json",
+    "textualPagesRead": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "visualInspectedPhysicalPages": [
+      5,
+      7
+    ],
+    "fullScientificReviewComplete": false
+  },
+  "study": {
+    "design": "primary_in_vitro_nonMM_cancer_cell_experiments",
+    "evidenceTierForMyeloma": "CONTEXT",
+    "actualCellLines": {
+      "Jeko1": "mantle_cell_lymphoma",
+      "H1299": "non_small_cell_lung_cancer"
+    },
+    "myelomaCellLinesTested": 0,
+    "humanParticipants": 0,
+    "animalExperimentsCurrentReport": 0,
+    "metforminMM": 10,
+    "metforminTotalHours": 72,
+    "captionJekoPretreatmentHours": 48,
+    "captionJekoBTZHours": 24,
+    "captionH1299PretreatmentHours": 24,
+    "captionH1299BTZHours": 48,
+    "bodyBothPretreatmentHours": 48,
+    "MTTNormalization": "own_zero_nM_bortezomib_for_each_cell_line_and_metformin_group",
+    "MTTAbsoluteViableCellCount": false,
+    "clinicalDrugInteractionEstablished": false,
+    "clinicalSafetyEstablished": false,
+    "currentRecommendationAdopted": false,
+    "directMyelomaOutcomeSupport": false,
+    "measuredPatientPK": false,
+    "allSupplementaryInputsRead": false,
+    "pooledIndependentN": null,
+    "causalAssemblyFactorRescuePerformed": false,
+    "currentTranscriptExperimentReported": false
+  },
+  "experiments": [
+    {
+      "id": "C20-E1",
+      "models": [
+        "Jeko1_MCL",
+        "H1299_NSCLC"
+      ],
+      "tests": [
+        "proliferation",
+        "MTT",
+        "AnnexinV_PI"
+      ],
+      "metformin": "10mMtotal72h",
+      "BTZ_MTTnM": {
+        "Jeko": [
+          5,
+          50
+        ],
+        "H1299": [
+          5,
+          100
+        ]
+      },
+      "flowBTZnM": {
+        "Jeko": 20,
+        "H1299": 75
+      },
+      "locators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 2,
+          "printedPage": "2of10",
+          "nativeSection": "Methods culture/timing/proliferation/MTT"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 4,
+          "printedPage": "4of10",
+          "nativeSection": "Statistics/Results3.1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 5,
+          "printedPage": "5of10",
+          "nativeSection": "Figure1/captionparta"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 6,
+          "printedPage": "6of10",
+          "nativeSection": "Figure1captionb-d/Results3.2"
+        }
+      ]
+    },
+    {
+      "id": "C20-E2",
+      "models": [
+        "Jeko1_MCL",
+        "H1299_NSCLC"
+      ],
+      "tests": [
+        "nativegel_CT_L_activity",
+        "alpha1_7_complex_quantity",
+        "S5b_p28_Rpn6_S6k_protein"
+      ],
+      "metformin": "10mM72h",
+      "locators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 3,
+          "printedPage": "3of10",
+          "nativeSection": "Methods flow/blots/antibodies/nativegel"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 6,
+          "printedPage": "6of10",
+          "nativeSection": "Figure1captionb-d/Results3.2"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 7,
+          "printedPage": "7of10",
+          "nativeSection": "Figure2/caption/Discussion"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "REED-CAL-20-R01",
+      "outcome": "NonMM cell proliferation reduced while bortezomib response was attenuated",
+      "estimate": {
+        "kind": "qualitative_context_cell_proliferation_and_drug_response",
+        "proliferation": "reduced_both_lines",
+        "proliferationIndependentExperimentsPerLine": 3,
+        "JekoProliferationP": "<0.001",
+        "H1299ProliferationP": "<0.01",
+        "MTT": "higher_with_metformin_pretreatment_during_BTZ_challenge_relative_to_own_zeroBTZbaseline",
+        "MTTReplicateN": null,
+        "MTTTest": "two_way_ANOVA_Bonferroni",
+        "flow": "BTZ_apoptosis_induction_attenuated_in_both_lines;healthy_fraction_recovered",
+        "flowIndependentExperiments": 3,
+        "flowTest": "one_way_ANOVA",
+        "flowBTZnM": [
+          20,
+          75
+        ],
+        "flowExactApoptosisPercent": null,
+        "necrosisDifferenceSignificant": false,
+        "absoluteCellSurvivalEstablished": false,
+        "myelomaCellResult": false,
+        "exactEffectCI": null
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 2,
+          "printedPage": "2of10",
+          "nativeSection": "Methods culture/timing/proliferation/MTT"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 4,
+          "printedPage": "4of10",
+          "nativeSection": "Statistics/Results3.1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 5,
+          "printedPage": "5of10",
+          "nativeSection": "Figure1/captionparta"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 6,
+          "printedPage": "6of10",
+          "nativeSection": "Figure1captionb-d/Results3.2"
+        }
+      ],
+      "evidenceTierForMyeloma": "CONTEXT",
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED-CAL-20-R02",
+      "outcome": "Proteasome complex activity and quantity changes vary by cell line and complex",
+      "estimate": {
+        "kind": "qualitative_nativegel_activity_and_complex_quantity",
+        "CT_L_activity": "body_reports26S_30S_reduced_both;Jeko20S_increased",
+        "JekoComplexQuantity": {
+          "30S": "decreased_P<0.05",
+          "26S": "decreased_P<0.01",
+          "20S": "increased_P<0.01"
+        },
+        "H1299ComplexQuantity": {
+          "30S": "decreased_direction_P0.0744",
+          "26S": "decreased_P<0.05",
+          "20S": "no_significance_annotation"
+        },
+        "H1299_30S_quantity_P": 0.0744,
+        "allComplexChangesSignificant": false,
+        "quantityPTransferredToActivity": false,
+        "replicateN": null,
+        "test": "one_sample_t_test_vs_untreated",
+        "directDrugBindingEstablished": false,
+        "exactEffectCI": null
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 3,
+          "printedPage": "3of10",
+          "nativeSection": "Methods flow/blots/antibodies/nativegel"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 6,
+          "printedPage": "6of10",
+          "nativeSection": "Figure1captionb-d/Results3.2"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 7,
+          "printedPage": "7of10",
+          "nativeSection": "Figure2/caption/Discussion"
+        }
+      ],
+      "evidenceTierForMyeloma": "CONTEXT",
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED-CAL-20-R03",
+      "outcome": "Assembly factor and S6 kinase protein responses differ between cell lines",
+      "estimate": {
+        "kind": "qualitative_protein_expression_context",
+        "JekoS5b": "increased_P<0.05",
+        "JekoP28": "not_reported_changed",
+        "JekoRpn6": "not_changed",
+        "JekoS6kActivation": "not_reported_altered",
+        "H1299P28": "decreased_P<0.01",
+        "H1299S5b": "not_reported_changed",
+        "H1299Rpn6": "not_changed",
+        "H1299TotalAndPhosphorylatedS6k": "both_decreased_P<0.01",
+        "H1299phosphoTotalS6kRatio": "decreased_figure_P<0.01",
+        "replicateN": null,
+        "currentTranscriptMeasurement": false,
+        "S5bP28IsolatedCausalRescue": false,
+        "mTOROnlyMediatorProven": false,
+        "exactEffectCI": null
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 3,
+          "printedPage": "3of10",
+          "nativeSection": "Methods flow/blots/antibodies/nativegel"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 6,
+          "printedPage": "6of10",
+          "nativeSection": "Figure1captionb-d/Results3.2"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 7,
+          "printedPage": "7of10",
+          "nativeSection": "Figure2/caption/Discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 8,
+          "printedPage": "8of10",
+          "nativeSection": "Discussion/supplement/disclosures"
+        }
+      ],
+      "evidenceTierForMyeloma": "CONTEXT",
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    }
+  ],
+  "claims": [
+    {
+      "id": "REED-CAL-20-C01",
+      "resultIds": [
+        "REED-CAL-20-R01"
+      ],
+      "statement": "InJeko1MCL/H1299NSCLC,10mMmetforminreducedproliferationbutattenuatedBTZresponseinMTT/AnnexinVPIassays;CONTEXTnotMMorclinicalresistanceproof.",
+      "relation": "primary_nonMM_preclinical_context_not_direct_condition_support",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED-CAL-20-C02",
+      "resultIds": [
+        "REED-CAL-20-R02"
+      ],
+      "statement": "Metforminchangednativegelproteasomeactivity/quantityinJeko1/H1299;H129930SquantityP.0744notallsignificant,activity/quantitycontrastsnotinterchanged.",
+      "relation": "primary_nonMM_preclinical_context_not_direct_condition_support",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED-CAL-20-C03",
+      "resultIds": [
+        "REED-CAL-20-R03"
+      ],
+      "statement": "S5bupinJeko1/p28downinH1299withRpn6unchangedandS6kresponsecell-specific;proteinobservationsnotprovedsoleassembly/mTORmediator/transcriptrescueorclinicalinteraction.",
+      "relation": "primary_nonMM_preclinical_context_not_direct_condition_support",
+      "acceptedSupport": false
+    }
+  ],
+  "reviewInputs": [
+    {
+      "id": "Q01",
+      "answer": "NonMMmetformin-BTZ/proteasomeinteraction.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 1,
+          "printedPage": "1of10",
+          "nativeSection": "Title/abstract/background"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 2,
+          "printedPage": "2of10",
+          "nativeSection": "Methods culture/timing/proliferation/MTT"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 7,
+          "printedPage": "7of10",
+          "nativeSection": "Figure2/caption/Discussion"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q02",
+      "answer": "Jeko1MCL/H1299NSCLC,nopatients/MMcells.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 1,
+          "printedPage": "1of10",
+          "nativeSection": "Title/abstract/background"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 2,
+          "printedPage": "2of10",
+          "nativeSection": "Methods culture/timing/proliferation/MTT"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 6,
+          "printedPage": "6of10",
+          "nativeSection": "Figure1captionb-d/Results3.2"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q03",
+      "answer": "10mM72h/caption-specificBTZlead-ins;timingconflictsheld.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 2,
+          "printedPage": "2of10",
+          "nativeSection": "Methods culture/timing/proliferation/MTT"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 5,
+          "printedPage": "5of10",
+          "nativeSection": "Figure1/captionparta"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 6,
+          "printedPage": "6of10",
+          "nativeSection": "Figure1captionb-d/Results3.2"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q04",
+      "answer": "Untreated/singledrugcombinationcontrols,notrandomizedclinicaltrial.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 2,
+          "printedPage": "2of10",
+          "nativeSection": "Methods culture/timing/proliferation/MTT"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 3,
+          "printedPage": "3of10",
+          "nativeSection": "Methods flow/blots/antibodies/nativegel"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 6,
+          "printedPage": "6of10",
+          "nativeSection": "Figure1captionb-d/Results3.2"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q05",
+      "answer": "Cell/proteasomeproxiesnotclinicaloutcomes.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 3,
+          "printedPage": "3of10",
+          "nativeSection": "Methods flow/blots/antibodies/nativegel"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 4,
+          "printedPage": "4of10",
+          "nativeSection": "Statistics/Results3.1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 7,
+          "printedPage": "7of10",
+          "nativeSection": "Figure2/caption/Discussion"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q06",
+      "answer": "Threecontextfindingswithmodel/assay/quantity-activitysignificancequalification.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 6,
+          "printedPage": "6of10",
+          "nativeSection": "Figure1captionb-d/Results3.2"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 7,
+          "printedPage": "7of10",
+          "nativeSection": "Figure2/caption/Discussion"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q07",
+      "answer": "Nunits/missingreplicates/floweventsnotpatientN.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 2,
+          "printedPage": "2of10",
+          "nativeSection": "Methods culture/timing/proliferation/MTT"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 4,
+          "printedPage": "4of10",
+          "nativeSection": "Statistics/Results3.1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 6,
+          "printedPage": "6of10",
+          "nativeSection": "Figure1captionb-d/Results3.2"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 7,
+          "printedPage": "7of10",
+          "nativeSection": "Figure2/caption/Discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 8,
+          "printedPage": "8of10",
+          "nativeSection": "Discussion/supplement/disclosures"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q08",
+      "answer": "No clinicalsafetyanalysis.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 1,
+          "printedPage": "1of10",
+          "nativeSection": "Title/abstract/background"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 2,
+          "printedPage": "2of10",
+          "nativeSection": "Methods culture/timing/proliferation/MTT"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 6,
+          "printedPage": "6of10",
+          "nativeSection": "Figure1captionb-d/Results3.2"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 8,
+          "printedPage": "8of10",
+          "nativeSection": "Discussion/supplement/disclosures"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q09",
+      "answer": "Assay/dose/timing/multiplicity/N/causalitylimits.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 4,
+          "printedPage": "4of10",
+          "nativeSection": "Statistics/Results3.1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 7,
+          "printedPage": "7of10",
+          "nativeSection": "Figure2/caption/Discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 8,
+          "printedPage": "8of10",
+          "nativeSection": "Discussion/supplement/disclosures"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q10",
+      "answer": "CONTEXTnotdirectmyelomaevidenceorclinicalinteraction.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 1,
+          "printedPage": "1of10",
+          "nativeSection": "Title/abstract/background"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 7,
+          "printedPage": "7of10",
+          "nativeSection": "Figure2/caption/Discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 8,
+          "printedPage": "8of10",
+          "nativeSection": "Discussion/supplement/disclosures"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q11",
+      "answer": "Onepaper,multipleassays/priorliteratureseparate.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 1,
+          "printedPage": "1of10",
+          "nativeSection": "Title/abstract/background"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 7,
+          "printedPage": "7of10",
+          "nativeSection": "Figure2/caption/Discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 8,
+          "printedPage": "8of10",
+          "nativeSection": "Discussion/supplement/disclosures"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 10,
+          "printedPage": "10of10",
+          "nativeSection": "References"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q12",
+      "answer": "Academicfunding/giftcelllines/noCOIasdeclared.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 1,
+          "printedPage": "1of10",
+          "nativeSection": "Title/abstract/background"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 8,
+          "printedPage": "8of10",
+          "nativeSection": "Discussion/supplement/disclosures"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q13",
+      "answer": "Exact10pages/materialvisualsread,supplement/integritypending.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 1,
+          "printedPage": "1of10",
+          "nativeSection": "Title/abstract/background"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 7,
+          "printedPage": "7of10",
+          "nativeSection": "Figure2/caption/Discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 8,
+          "printedPage": "8of10",
+          "nativeSection": "Discussion/supplement/disclosures"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q14",
+      "answer": "ThreeprivateCONTEXT R/C,directC21supportrejected.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 8,
+          "printedPage": "8of10",
+          "nativeSection": "Discussion/supplement/disclosures"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending",
+      "downstreamMapping": {
+        "paperId": "REED-CAL-20-P1",
+        "intakeReportId": "REED-048b90f4127731bb6cc6",
+        "resultIds": [
+          "REED-CAL-20-R01",
+          "REED-CAL-20-R02",
+          "REED-CAL-20-R03"
+        ],
+        "claimIds": [
+          "REED-CAL-20-C01",
+          "REED-CAL-20-C02",
+          "REED-CAL-20-C03"
+        ],
+        "consideredGuideId": "G-CONDITION-C21",
+        "existingGuideId": null,
+        "directConditionSupportDisposition": "rejected_model_mismatch_Jeko1_MCL_H1299_NSCLC_not_MM",
+        "contextTier": "CONTEXT",
+        "purpose": "Privatecontextualmechanisticinteraction/relevancequalificationonly;nodirectC21outcome/canonicalsourcechange.",
+        "publicationState": "private_draft",
+        "canonicalChanges": 0
+      }
+    },
+    {
+      "id": "Q15",
+      "answer": "Mixedcellresponsefindingsnotclinicalrecommendation.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 8,
+          "printedPage": "8of10",
+          "nativeSection": "Discussion/supplement/disclosures"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    }
+  ],
+  "sourceQualifications": [
+    {
+      "id": "C20-MODEL",
+      "status": "supplier_applicability_mismatch",
+      "locators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 1,
+          "printedPage": "1of10",
+          "nativeSection": "Title/abstract/background"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 4,
+          "printedPage": "4of10",
+          "nativeSection": "Statistics/Results3.1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 7,
+          "printedPage": "7of10",
+          "nativeSection": "Figure2/caption/Discussion"
+        }
+      ],
+      "description": "Intakefoldermetformin-myelomaandrowinclmyeloma;actualJeko1mantlecelllymphoma/H1299NSCLC,nocurrentMMcelltest. DiscussioncitesoppositeMMstudiesaspriorliterature.",
+      "action": "PRIMARYoriginalbutCONTEXTtierforC21;nodirectMMoutcome/interactionclaimorpooling."
+    },
+    {
+      "id": "C20-PRETREATMENT",
+      "status": "unresolved_body_caption_difference",
+      "locators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 2,
+          "printedPage": "2of10",
+          "nativeSection": "Methods culture/timing/proliferation/MTT"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 4,
+          "printedPage": "4of10",
+          "nativeSection": "Statistics/Results3.1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 6,
+          "printedPage": "6of10",
+          "nativeSection": "Figure1captionb-d/Results3.2"
+        }
+      ],
+      "description": "Resultsbodybothlines48hpretreatment;Fig1captionJeko48h+24hBTZ,H1299 24h+48hBTZ,total72h.",
+      "action": "Preservebothscopewordings;caption-specificschedules,nouniform48hpreassumption."
+    },
+    {
+      "id": "C20-H1299-SURVIVAL",
+      "status": "unresolved_source_wording_graph_conflict",
+      "locators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 4,
+          "printedPage": "4of10",
+          "nativeSection": "Statistics/Results3.1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 5,
+          "printedPage": "5of10",
+          "nativeSection": "Figure1/captionparta"
+        }
+      ],
+      "description": "BodyH1299about60%survivaleven100nMwithoutmetforminpretreatment;graphredmetforminhigherthanblackcontrol. Jeko65%at50nMbodyisnotgraphexacteffect.",
+      "action": "Keepbodyliteralwithconflict;usequalitativegraphdirection,nosilentrepairedquantitativeestimate/digitization."
+    },
+    {
+      "id": "C20-H1299-30S",
+      "status": "endpoint_specific_significance",
+      "locators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 6,
+          "printedPage": "6of10",
+          "nativeSection": "Figure1captionb-d/Results3.2"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 7,
+          "printedPage": "7of10",
+          "nativeSection": "Figure2/caption/Discussion"
+        }
+      ],
+      "description": "Bodyactivity/amountsbroadsuppression;Fig2H1299alpha1-7quantity30SP.0744,26SstarP<.05,20Snostar.",
+      "action": "Do notcallallH1299complexquantitychangessignificantortransferquantityPtoactivity."
+    },
+    {
+      "id": "C20-PROLIFERATION-TIME",
+      "status": "unresolved_method_timing_precision",
+      "locators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 2,
+          "printedPage": "2of10",
+          "nativeSection": "Methods culture/timing/proliferation/MTT"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 5,
+          "printedPage": "5of10",
+          "nativeSection": "Figure1/captionparta"
+        }
+      ],
+      "description": "Formulausesday4/day0dividedby4days;Fig1a10mM72htreatment.",
+      "action": "Preserveexplicitdurationdifference,noinventednormalizednumericdoublings."
+    },
+    {
+      "id": "C20-N-AND-ASSAY",
+      "status": "missingness_and_proxy_limits",
+      "locators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 5,
+          "printedPage": "5of10",
+          "nativeSection": "Figure1/captionparta"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 6,
+          "printedPage": "6of10",
+          "nativeSection": "Figure1captionb-d/Results3.2"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 7,
+          "printedPage": "7of10",
+          "nativeSection": "Figure2/caption/Discussion"
+        }
+      ],
+      "description": "Fig1a/c/dn3independentexperiments;Fig1bMTTandFig2replicateNnotexplicit. MTTnormalizedtoown0nMdrug/treatmentbaseline,notabsolutefunctionalcellcount;representativeflowquadrantsnotreplicateestimates.",
+      "action": "Noassumedn3forunreportedpanels/pooledN/MTTtopatientssurvival/SEMtoCI."
+    },
+    {
+      "id": "C20-MECHANISM",
+      "status": "partial_mechanistic_support_not_rescue",
+      "locators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 6,
+          "printedPage": "6of10",
+          "nativeSection": "Figure1captionb-d/Results3.2"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 7,
+          "printedPage": "7of10",
+          "nativeSection": "Figure2/caption/Discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "27ef7b4a621d5e763096de535eebb1974d2302e45ea6b9f575dba45f9e35d9a9",
+          "physicalPage": 8,
+          "printedPage": "8of10",
+          "nativeSection": "Discussion/supplement/disclosures"
+        }
+      ],
+      "description": "Nativegelactivity/complexamounts/assemblyfactorproteinchanges;noisolatedS5b/p28rescue/knockdowncausaltest. Priormousefibroblastfindings/GEO/cBioPortal/data-not-shownpyruvatearenotcurrentdirectlyverifiedexperiments.",
+      "action": "No transcriptquantification/directbinding/solecausalmTORorassemblymediator/clinicalresistanceproof. Suprapharmacological10mM,localOCTaccumulationhypothesisnotmeasuredpatientPK."
+    }
+  ],
+  "limitations": [
+    "ActualmodelsMCL/NSCLCnotMM",
+    "Suprapharmacological10mMnotmeasuredpatientPK",
+    "OwnbaselineMTTnotabsolutecellsurvival",
+    "Caption/bodytimingandwordingconflictsheld",
+    "H129930SquantityP.0744notallcomplexsignificance",
+    "Assemblyproteinnottranscript/rescue/solemediatorproof",
+    "ReplicateNmissingselectedpanels,supplementunavailable",
+    "Currentintegrity/fulltypedreviewpending"
+  ],
+  "scientificAcceptance": false,
+  "humanApproval": false,
+  "released": false
+}

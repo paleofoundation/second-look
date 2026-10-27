@@ -1,0 +1,56 @@
+{
+  "atUTC": "2026-10-27T09:21:01.230225+00:00",
+  "scope": "Bounded independent source-fidelity audit, not full scientific or typed-field review",
+  "candidateSHA256": "7bdda1a4f6e48520309e55bada3b387093564d0c4f4e1088d2ee7bd2619e3602",
+  "sourceSHA256": "f5471c1184e334aaa49369770ebbd91561b9d460d60ef2bfb7f03b10eecb280f",
+  "dependenciesVerified": {
+    "SOURCE-CANDIDATE.json": "7bdda1a4f6e48520309e55bada3b387093564d0c4f4e1088d2ee7bd2619e3602",
+    "review-inputs.jsonl": "3f8d9bf1b2dd34349661debed787eea87d1cb8ed316dd1888aeb9309fd49b55f",
+    "PLAN.json": "aa8e81edd0b646166187557b4d9880f710aa056ff1ca56964769497d6a4971c5",
+    "SCHEMA.json": "cfcd13a569c40a8d5418dcd60df26c514c615321953defa3e3ad267e6a797aaf",
+    "READINESS.json": "832350addcd444097d884f5b5134a8030617a9fa8da773383a93b3932c492b79",
+    "DOWNSTREAM-MAPPING.json": "6188cd290c2ff53ec1e03cf0cf87b994adee0a2f9ee48b8679b040a7df41dcc6",
+    "VISUAL-RECEIPT.json": "2f446dc5176bdd716a25d47b558a810abec1570e659c26e8f3e4cb88e4d4c9ef",
+    "SOURCE-QUALIFICATIONS.json": "2c87d7888596f367d77f2a82ef5be86d39379293a0ff55475d5bb7258561c719"
+  },
+  "sourceIdentity": {
+    "PMID": "28356941",
+    "DOI": "10.3892/ol.2016.5472",
+    "title": "Aspirin enhances the cytotoxic activity of bortezomib against myeloma cells via suppression of Bcl-2, survivin and phosphorylation of AKT"
+  },
+  "textPagesRead": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "visualPagesInspected": [
+    4,
+    5
+  ],
+  "observations": [
+    "Two human-derived myeloma cell lines MM1.S/RPMI8226, not recruited human participants/current animal experiment. N/KRas assignments reversed Abstract vs Methods, unresolved.",
+    "Experimental aspirin2.5mM plus bortezomib10nM; CCK8 at24/48/72h, apoptosis/markers48h. No clinical dose or independently verified serum-equivalence translation.",
+    "Methods ratio survival(combination)/(survivalASA*survivalBTZ);0.8<R<1.2 additive, results report additive. Greater combined effect does not become synergy. Exact conditionR not extracted.",
+    "Text48h apoptosis rates MM1.S2.73/44.8/45.4/64.3 and RPMI3.43/36.1/57.9/77.2 percent in untreated/ASA/BTZ/combination order confirmed. Figure2C three-reported-experiment summary visually distinct from representative quadrant panel values; no quadrant reconstruction.",
+    "10000 flow events per analysis not independent biological replicateN. Three experiments as reported; independent replicate status/raw data unverified. No SD/CI invented or pixel-extracted.",
+    "Figures3-5 visually show lower combination-versus-BTZ marker patterns. Figure3C bars do not support uniform BTZ-induced Ser473 increase versus untreated; candidate correctly bounds claim and retains qualification. Root sees this concern across displayed lines, not a quantitative bar reanalysis.",
+    "Changes in phosphorylation/survivin/Bcl2 are associated marker patterns, not selective binding or established causal mediation/clinical resistance reversal.",
+    "Funding NSFC81460037 and NanjingMilitary14ZD31 observed; vendors are not assumed sponsors. Current clinical efficacy, safety, trialbenefit, PK equivalence and external integrity/replication not established.",
+    "Reference29 listed as a pharmacology book review; no independently checked primary PK basis. Prior referenced in-vivo and perifosine trial results not current aspirin clinical data."
+  ],
+  "resultIds": [
+    "REED-CAL-08-R01",
+    "REED-CAL-08-R02",
+    "REED-CAL-08-R03"
+  ],
+  "reviewInputs": "All15 answer/status summaries inspected; partial statuses retained; not certification of all67typedfields.",
+  "disposition": "PASS bounded source fidelity with qualifications retained, private/pending",
+  "scientificAcceptance": false,
+  "humanApproval": false,
+  "release": false
+}

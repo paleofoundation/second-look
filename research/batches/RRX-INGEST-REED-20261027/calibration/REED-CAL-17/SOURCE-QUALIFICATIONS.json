@@ -1,0 +1,140 @@
+[
+  {
+    "id": "C17-MPROTEIN",
+    "status": "unresolved_literal_count",
+    "locator": {
+      "kind": "pdf",
+      "sourceSha256": "38447477d1c6e17d418c70fc046cb6a84f7b2b7f4a06f4a1765cd39d5de1ec00",
+      "physicalPage": 19,
+      "printedPage": "Author manuscript Page 19",
+      "nativeSection": "Table1"
+    },
+    "description": "Mprotein<1.5overall1008/2003(53.9%)printedversussubgroups240+840=1080;overallcategorysum1931not2003if1008used.",
+    "action": "No silent1008->1080repair;missingMprotein842(42%)keptseparateandmodeluncertaintyretained."
+  },
+  {
+    "id": "C17-INCIDENCE-P",
+    "status": "unresolved_distinct_test_labels",
+    "locators": [
+      {
+        "kind": "pdf",
+        "sourceSha256": "38447477d1c6e17d418c70fc046cb6a84f7b2b7f4a06f4a1765cd39d5de1ec00",
+        "physicalPage": 19,
+        "printedPage": "Author manuscript Page 19",
+        "nativeSection": "Table1"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "38447477d1c6e17d418c70fc046cb6a84f7b2b7f4a06f4a1765cd39d5de1ec00",
+        "physicalPage": 18,
+        "printedPage": "Author manuscript Page 18",
+        "nativeSection": "Figure2KM"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "38447477d1c6e17d418c70fc046cb6a84f7b2b7f4a06f4a1765cd39d5de1ec00",
+        "physicalPage": 20,
+        "printedPage": "Author manuscript Page 20",
+        "nativeSection": "Table2"
+      }
+    ],
+    "description": "Table1raw13/463versus74/1540printsP<.0001(chi-square);KMlogrankP.028;fullyadjustedCoxP.016.",
+    "action": "Keepseparatetestlabels/literalvalues,no re-computation/substitutionorrelabelTablePasCox."
+  },
+  {
+    "id": "C17-TEMPORAL-EXPOSURE",
+    "status": "bias_not_eliminated",
+    "locator": {
+      "kind": "pdf",
+      "sourceSha256": "38447477d1c6e17d418c70fc046cb6a84f7b2b7f4a06f4a1765cd39d5de1ec00",
+      "physicalPage": 4,
+      "printedPage": "Author manuscript Page 4",
+      "nativeSection": "Exposure/covariates/exclusions/statistics"
+    },
+    "description": "User>=4yearsafterDMbeforeMM/death/censor,gap<6months;windowmaystraddleMGUS. Excludeendpoints<4yearsafterDM,nottime-dependentmetforminmodelproof.",
+    "action": "No claimsall4yearspreMGUS/immortaltimeorreversecausalityeliminated;PHtesttime-dependentcovariatesnotexposureupdating."
+  },
+  {
+    "id": "C17-HGBA1C",
+    "status": "explicit_postbaseline_average",
+    "locator": {
+      "kind": "pdf",
+      "sourceSha256": "38447477d1c6e17d418c70fc046cb6a84f7b2b7f4a06f4a1765cd39d5de1ec00",
+      "physicalPage": 4,
+      "printedPage": "Author manuscript Page 4",
+      "nativeSection": "Exposure/covariates/exclusions/statistics"
+    },
+    "description": "GeneralcovariatetextsaysatorbeforeMGUS,butHgbA1cexplicitlyaveragedAFTERMGUS.",
+    "action": "Preservepostbaselineglycemiccovariatenotpurebaseline-adjustedcausalestimate."
+  },
+  {
+    "id": "C17-COMPARATOR",
+    "status": "definition_bound",
+    "locators": [
+      {
+        "kind": "pdf",
+        "sourceSha256": "38447477d1c6e17d418c70fc046cb6a84f7b2b7f4a06f4a1765cd39d5de1ec00",
+        "physicalPage": 4,
+        "printedPage": "Author manuscript Page 4",
+        "nativeSection": "Exposure/covariates/exclusions/statistics"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "38447477d1c6e17d418c70fc046cb6a84f7b2b7f4a06f4a1765cd39d5de1ec00",
+        "physicalPage": 8,
+        "printedPage": "Author manuscript Page 8",
+        "nativeSection": "Limitations"
+      }
+    ],
+    "description": "Nonusermeansnotmeeting>=4yearconsistencydefinition,notnecessarilyneverexposed. Firstline461differsfrom463fouryearusers.",
+    "action": "No never-useror461=463repair,doserecommendationorverifiedadherencefromprescriptions."
+  },
+  {
+    "id": "C17-SENSITIVITY",
+    "status": "inconclusive_other_windows",
+    "locators": [
+      {
+        "kind": "pdf",
+        "sourceSha256": "38447477d1c6e17d418c70fc046cb6a84f7b2b7f4a06f4a1765cd39d5de1ec00",
+        "physicalPage": 6,
+        "printedPage": "Author manuscript Page 6",
+        "nativeSection": "Models/sensitivities"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "38447477d1c6e17d418c70fc046cb6a84f7b2b7f4a06f4a1765cd39d5de1ec00",
+        "physicalPage": 8,
+        "printedPage": "Author manuscript Page 8",
+        "nativeSection": "Limitations"
+      }
+    ],
+    "description": "2/3/5/6yearCIallinclude1;cohorteligibilitychangesbywindow,5/6yearusers325/246.",
+    "action": "Notindependentreplication/monotonicdose-response/proven4yearcausalthreshold."
+  },
+  {
+    "id": "C17-VERSION",
+    "status": "exact_accepted_version_only",
+    "locator": {
+      "kind": "pdf",
+      "sourceSha256": "38447477d1c6e17d418c70fc046cb6a84f7b2b7f4a06f4a1765cd39d5de1ec00",
+      "physicalPage": 1,
+      "printedPage": "Author manuscript Page 1",
+      "nativeSection": "Title/disclosures/acceptedversiondisclaimer"
+    },
+    "description": "PDFtitleusestransformation/population-basedcohort;intaketitleprogression/retrospectivecohort. DOI/PMIDconsistent,PDFexplicituneditedacceptedauthor-manuscriptdisclaimer.",
+    "action": "Preservebothtitles/version;no silentcanonicalrenameorproofidenticalfinalcopyediting."
+  },
+  {
+    "id": "C17-PROGRESSION-TIME",
+    "status": "denominator_not_explicit",
+    "locator": {
+      "kind": "pdf",
+      "sourceSha256": "38447477d1c6e17d418c70fc046cb6a84f7b2b7f4a06f4a1765cd39d5de1ec00",
+      "physicalPage": 5,
+      "printedPage": "Author manuscript Page 5",
+      "nativeSection": "Results/flow/baseline/KM"
+    },
+    "description": "Reportedmedianprogressiontime71/47months,IQR30/46;cohortKMstayswellabove50%event-free.",
+    "action": "Do nottreatsummariesaswholecohortKMmediansor24monthcausalprogressiondelay;noNNT/absolutebenefitfromrawfractions."
+  }
+]

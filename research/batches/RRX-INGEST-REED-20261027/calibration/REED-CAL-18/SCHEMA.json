@@ -1,0 +1,34 @@
+{
+  "schemaVersion": "REED-CAL-18-MGUS-observational-v1",
+  "required": [
+    "schemaVersion",
+    "paper",
+    "source",
+    "inspection",
+    "study",
+    "results",
+    "claims",
+    "reviewInputs",
+    "limitations",
+    "scientificAcceptance",
+    "humanApproval",
+    "released"
+  ],
+  "controls": [
+    "ActualdesignnotassumedrandomizedoridenticalCAL17",
+    "MGUSprogressionnotgeneralMMrisk/currentMMtherapy",
+    "Patient/events/denominators/time/exposureandcontrolpreserved",
+    "ExactriskmeasureadjustmentCI/Pnotinterchanged",
+    "Nonsignificance notequivalence/noevidence",
+    "No pooledindependentpatientswithCAL17",
+    "Dose/duration/safetynotinventedfromprescriptions"
+  ],
+  "reviewInventory": "rules/one-match-rule/references/research-reviews/review-questions-and-inputs.json",
+  "fixedGates": {
+    "scientificAcceptance": false,
+    "humanApproval": false,
+    "released": false,
+    "acceptedSupport": false,
+    "grade": null
+  }
+}

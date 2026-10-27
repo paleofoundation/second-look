@@ -1,0 +1,858 @@
+{
+  "schemaVersion": "REED-CAL-18-MGUS-observational-v1",
+  "paper": {
+    "id": "REED-CAL-18-P1",
+    "intakeReportId": "REED-52c53c07a938fae35c2c",
+    "pmid": "27701912",
+    "doi": "10.1080/10428194.2016.1236375",
+    "title": "Impact of metformin on the progression of MGUS to multiple myeloma.",
+    "sourceType": "primary_nested_matched_case_control_with_unmatched_subgroup"
+  },
+  "source": {
+    "id": "REED-CAL-18-S1",
+    "pmid": "27701912",
+    "doi": "10.1080/10428194.2016.1236375",
+    "title": "Impact of metformin on the progression of MGUS to multiple myeloma.",
+    "ref": "$REMAPRX_REED_ROOT/metformin-myeloma/pdfs/27701912-boursi-2017.pdf",
+    "sha256": "51587eb12eb4da9bd37c8ff37192f42ead8cf2fae58ff504aa6af93bceadce7a",
+    "intakeReportId": "REED-52c53c07a938fae35c2c",
+    "physicalPages": 5
+  },
+  "inspection": {
+    "at": "2026-10-27T10:37:48.120951+00:00",
+    "activeReadiness": "READINESS.json",
+    "textualPagesRead": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "visualInspectedPhysicalPages": [
+      2,
+      5
+    ],
+    "fullScientificReviewComplete": false
+  },
+  "study": {
+    "design": "nested_matched_case_control",
+    "randomized": false,
+    "database": "THIN_UK_general_practice_1995_2013",
+    "primaryCases": 124,
+    "primaryControlObservations": 760,
+    "sampling": "incidencedensity,upto10controlsmatchedage/sex/practice/followupfromMGUS",
+    "indexDate": "MMdiagnosisofcaseforcaseandmatchedcontrols",
+    "diagnosisBasis": "READcodes",
+    "baselineMetforminDefinition": "atleast2prescriptionsattimeofMGUSdiagnosis",
+    "primaryModel": "conditional_logistic",
+    "primaryReference": "MGUS_without_diabetes",
+    "primaryAdjustment": [
+      "obesity_literal_BMI>30mg/m2",
+      "ever_smoking"
+    ],
+    "diabetesSubgroupCases": 11,
+    "diabetesSubgroupControlObservations": 127,
+    "diabetesSubgroupMatched": false,
+    "diabetesSubgroupModel": "unconditional_logistic",
+    "diabetesSubgroupReference": "diabetic_MGUS_never_metformin",
+    "diabetesSubgroupFootnoteAdjustment": [
+      "age",
+      "sex",
+      "obesity",
+      "smoking"
+    ],
+    "metforminDoseReported": false,
+    "causalPreventionEstablished": false,
+    "glycemicControlMechanismEstablished": false,
+    "safetyOutcomesReported": false,
+    "clinicalRecommendationAdopted": false,
+    "CAL17patientDataPooled": false,
+    "uniqueTotalPopulationRiskDenominatorEstablished": false
+  },
+  "results": [
+    {
+      "id": "REED-CAL-18-R01",
+      "outcome": "Matched primary diabetes-treatment categories versus nondiabetic MGUS reference",
+      "estimate": {
+        "kind": "conditional_logistic_odds_ratios",
+        "sampleCases": 124,
+        "sampleControlObservations": 760,
+        "reference": "MGUS_without_diabetes",
+        "referenceCaseControlCounts": [
+          113,
+          633
+        ],
+        "rows": [
+          {
+            "label": "diabetes_no_therapy",
+            "caseControlCounts": [
+              6,
+              38
+            ],
+            "unadjustedOR": 0.95,
+            "unadjustedCI95": [
+              0.38,
+              2.35
+            ],
+            "adjustedOR": 0.96,
+            "adjustedCI95": [
+              0.38,
+              2.38
+            ]
+          },
+          {
+            "label": "diabetes_metformin_exposed",
+            "caseControlCounts": [
+              4,
+              65
+            ],
+            "unadjustedOR": 0.39,
+            "unadjustedCI95": [
+              0.14,
+              1.1
+            ],
+            "adjustedOR": 0.39,
+            "adjustedCI95": [
+              0.14,
+              1.13
+            ]
+          },
+          {
+            "label": "diabetes_other_therapy_without_metformin",
+            "caseControlCounts": [
+              1,
+              24
+            ],
+            "unadjustedOR": 0.17,
+            "unadjustedCI95": [
+              0.02,
+              1.29
+            ],
+            "adjustedOR": 0.17,
+            "adjustedCI95": [
+              0.02,
+              1.28
+            ]
+          }
+        ],
+        "adjustment": [
+          "obesity",
+          "ever_smoking"
+        ],
+        "P": null,
+        "allAdjustedCIsInclude1": true,
+        "caseCountsArePopulationRisks": false,
+        "metforminSpecificCausalBenefitEstablished": false
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "51587eb12eb4da9bd37c8ff37192f42ead8cf2fae58ff504aa6af93bceadce7a",
+          "physicalPage": 2,
+          "printedPage": "Author manuscript Page 2",
+          "nativeSection": "Design/exposure/analysis/results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "51587eb12eb4da9bd37c8ff37192f42ead8cf2fae58ff504aa6af93bceadce7a",
+          "physicalPage": 5,
+          "printedPage": "Author manuscript Page 5",
+          "nativeSection": "Table1A/Bandfootnotes"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED-CAL-18-R02",
+      "outcome": "Separate cumulative-duration sensitivity described in text",
+      "estimate": {
+        "kind": "text_reported_sensitivity_odds_ratio",
+        "duration": "strictly_more_than_2_years",
+        "OR": 0.19,
+        "CI95": [
+          0.04,
+          0.99
+        ],
+        "glucoseAdjustmentReported": true,
+        "referenceBasis": "repeated_primary_analysis_without_diabetes_reference_perMethods;bodydoesnotrestatefullcells",
+        "exactCaseControlCells": null,
+        "analysisN": null,
+        "P": null,
+        "notDiabetesOnlyTableB": true,
+        "primaryAnalysisReplaced": false,
+        "causalTwoYearThresholdEstablished": false
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "51587eb12eb4da9bd37c8ff37192f42ead8cf2fae58ff504aa6af93bceadce7a",
+          "physicalPage": 2,
+          "printedPage": "Author manuscript Page 2",
+          "nativeSection": "Design/exposure/analysis/results"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED-CAL-18-R03",
+      "outcome": "Unmatched diabetes-only duration analysis versus never-metformin diabetic reference",
+      "estimate": {
+        "kind": "unconditional_logistic_odds_ratios",
+        "sampleCases": 11,
+        "sampleControlObservations": 127,
+        "matched": false,
+        "reference": "diabetic_MGUS_never_metformin",
+        "referenceCaseControlCounts": [
+          7,
+          62
+        ],
+        "rows": [
+          {
+            "duration": "strictly_less_than_24_months",
+            "caseControlCounts": [
+              2,
+              17
+            ],
+            "unadjustedOR": 1.04,
+            "unadjustedCI95": [
+              0.2,
+              5.48
+            ],
+            "adjustedOR": 1.01,
+            "adjustedCI95": [
+              0.18,
+              5.65
+            ]
+          },
+          {
+            "duration": "strictly_more_than_24_months",
+            "caseControlCounts": [
+              2,
+              48
+            ],
+            "unadjustedOR": 0.37,
+            "unadjustedCI95": [
+              0.07,
+              1.87
+            ],
+            "adjustedOR": 0.4,
+            "adjustedCI95": [
+              0.08,
+              2.04
+            ]
+          }
+        ],
+        "tableFootnoteAdjustment": [
+          "age",
+          "sex",
+          "obesity",
+          "smoking"
+        ],
+        "glucoseListedInTableFootnote": false,
+        "P": null,
+        "bothAdjustedCIsInclude1": true,
+        "exact24MonthAssignmentKnown": false,
+        "equivalenceEstablished": false
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "51587eb12eb4da9bd37c8ff37192f42ead8cf2fae58ff504aa6af93bceadce7a",
+          "physicalPage": 2,
+          "printedPage": "Author manuscript Page 2",
+          "nativeSection": "Design/exposure/analysis/results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "51587eb12eb4da9bd37c8ff37192f42ead8cf2fae58ff504aa6af93bceadce7a",
+          "physicalPage": 3,
+          "printedPage": "Author manuscript Page 3",
+          "nativeSection": "Results/Discussion/limitations/funding"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "51587eb12eb4da9bd37c8ff37192f42ead8cf2fae58ff504aa6af93bceadce7a",
+          "physicalPage": 5,
+          "printedPage": "Author manuscript Page 5",
+          "nativeSection": "Table1A/Bandfootnotes"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    }
+  ],
+  "claims": [
+    {
+      "id": "REED-CAL-18-C01",
+      "resultIds": [
+        "REED-CAL-18-R01"
+      ],
+      "statement": "InmatchedMGUSnondiabetic-referenceanalysis,metforminexposurehadadjustedOR.39CI.14-1.13andotherdiabetestherapy/untreateddiabetesCIsalsoincluded1;notcausalmetformin-specificprotection orcasecontrolincidencerisk.",
+      "relation": "nested_case_control_MGUS_association_preserving_reference_and_model",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED-CAL-18-C02",
+      "resultIds": [
+        "REED-CAL-18-R02"
+      ],
+      "statement": "Textreportsacumulative>2years/glucose-adjustedsensitivityOR.19CI.04-.99;incompletecells/reference-restatementanddistinctprimaryscopepreventtransferringthisestimatetodiabetes-onlyTableBorprovingatwo-yearthreshold.",
+      "relation": "nested_case_control_MGUS_association_preserving_reference_and_model",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED-CAL-18-C03",
+      "resultIds": [
+        "REED-CAL-18-R03"
+      ],
+      "statement": "Thediabetes-onlyTableBanalysiswasunmatched/unconditionallogisticversusdiabeticnever-users:OR1.01CI.18-5.65for<24monthsand.40CI.08-2.04for>24months. Bothareimpreciseandnonsignificant,nottherapeuticequivalenceorvalidatedglycemicmechanism.",
+      "relation": "nested_case_control_MGUS_association_preserving_reference_and_model",
+      "acceptedSupport": false
+    }
+  ],
+  "reviewInputs": [
+    {
+      "id": "Q01",
+      "answer": "UKnestedcasecontrolmetformin/diabetestreatmentandMGUSprogression,notrandomizedprevention.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "51587eb12eb4da9bd37c8ff37192f42ead8cf2fae58ff504aa6af93bceadce7a",
+          "physicalPage": 2,
+          "printedPage": "Author manuscript Page 2",
+          "nativeSection": "Design/exposure/analysis/results"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q02",
+      "answer": "124cases/760sampledcontrolobservations,diabetics11/127;not884cohortat-riskpopulation.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "51587eb12eb4da9bd37c8ff37192f42ead8cf2fae58ff504aa6af93bceadce7a",
+          "physicalPage": 2,
+          "printedPage": "Author manuscript Page 2",
+          "nativeSection": "Design/exposure/analysis/results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "51587eb12eb4da9bd37c8ff37192f42ead8cf2fae58ff504aa6af93bceadce7a",
+          "physicalPage": 5,
+          "printedPage": "Author manuscript Page 5",
+          "nativeSection": "Table1A/Bandfootnotes"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q03",
+      "answer": ">=2prescriptionsatMGUS,doseunknown,strict<24/>24monthdurationnotCAL174yearwindow.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "51587eb12eb4da9bd37c8ff37192f42ead8cf2fae58ff504aa6af93bceadce7a",
+          "physicalPage": 2,
+          "printedPage": "Author manuscript Page 2",
+          "nativeSection": "Design/exposure/analysis/results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "51587eb12eb4da9bd37c8ff37192f42ead8cf2fae58ff504aa6af93bceadce7a",
+          "physicalPage": 5,
+          "printedPage": "Author manuscript Page 5",
+          "nativeSection": "Table1A/Bandfootnotes"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q04",
+      "answer": "Matchedprimaryconditionalvsnondiabetic;unmatcheddiabeticsonlyunconditionalvsnevermetformin.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "51587eb12eb4da9bd37c8ff37192f42ead8cf2fae58ff504aa6af93bceadce7a",
+          "physicalPage": 2,
+          "printedPage": "Author manuscript Page 2",
+          "nativeSection": "Design/exposure/analysis/results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "51587eb12eb4da9bd37c8ff37192f42ead8cf2fae58ff504aa6af93bceadce7a",
+          "physicalPage": 5,
+          "printedPage": "Author manuscript Page 5",
+          "nativeSection": "Table1A/Bandfootnotes"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q05",
+      "answer": "READcodedMMafterMGUS,notpathologicalriskorMMtreatmentresponse.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "51587eb12eb4da9bd37c8ff37192f42ead8cf2fae58ff504aa6af93bceadce7a",
+          "physicalPage": 2,
+          "printedPage": "Author manuscript Page 2",
+          "nativeSection": "Design/exposure/analysis/results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "51587eb12eb4da9bd37c8ff37192f42ead8cf2fae58ff504aa6af93bceadce7a",
+          "physicalPage": 3,
+          "printedPage": "Author manuscript Page 3",
+          "nativeSection": "Results/Discussion/limitations/funding"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q06",
+      "answer": "OR.39CI.14-1.13primary;separateglucosesensitivity.19CI.04-.99;unmatched1.01/.40wideCIsdifferentrefs.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "51587eb12eb4da9bd37c8ff37192f42ead8cf2fae58ff504aa6af93bceadce7a",
+          "physicalPage": 2,
+          "printedPage": "Author manuscript Page 2",
+          "nativeSection": "Design/exposure/analysis/results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "51587eb12eb4da9bd37c8ff37192f42ead8cf2fae58ff504aa6af93bceadce7a",
+          "physicalPage": 5,
+          "printedPage": "Author manuscript Page 5",
+          "nativeSection": "Table1A/Bandfootnotes"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q07",
+      "answer": "No fullflow/controlreuse/missingnessmatrix;smallsubgroupsandMGUS/racevariablesunavailable.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "51587eb12eb4da9bd37c8ff37192f42ead8cf2fae58ff504aa6af93bceadce7a",
+          "physicalPage": 2,
+          "printedPage": "Author manuscript Page 2",
+          "nativeSection": "Design/exposure/analysis/results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "51587eb12eb4da9bd37c8ff37192f42ead8cf2fae58ff504aa6af93bceadce7a",
+          "physicalPage": 3,
+          "printedPage": "Author manuscript Page 3",
+          "nativeSection": "Results/Discussion/limitations/funding"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "51587eb12eb4da9bd37c8ff37192f42ead8cf2fae58ff504aa6af93bceadce7a",
+          "physicalPage": 5,
+          "printedPage": "Author manuscript Page 5",
+          "nativeSection": "Table1A/Bandfootnotes"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q08",
+      "answer": "No safetyresult,notzeroevents/equivalence.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "51587eb12eb4da9bd37c8ff37192f42ead8cf2fae58ff504aa6af93bceadce7a",
+          "physicalPage": 2,
+          "printedPage": "Author manuscript Page 2",
+          "nativeSection": "Design/exposure/analysis/results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "51587eb12eb4da9bd37c8ff37192f42ead8cf2fae58ff504aa6af93bceadce7a",
+          "physicalPage": 3,
+          "printedPage": "Author manuscript Page 3",
+          "nativeSection": "Results/Discussion/limitations/funding"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q09",
+      "answer": "Confounding/sparsecells/analysismultiplicity,glucose/BMIunit/durationboundaryqualified.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "51587eb12eb4da9bd37c8ff37192f42ead8cf2fae58ff504aa6af93bceadce7a",
+          "physicalPage": 2,
+          "printedPage": "Author manuscript Page 2",
+          "nativeSection": "Design/exposure/analysis/results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "51587eb12eb4da9bd37c8ff37192f42ead8cf2fae58ff504aa6af93bceadce7a",
+          "physicalPage": 3,
+          "printedPage": "Author manuscript Page 3",
+          "nativeSection": "Results/Discussion/limitations/funding"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "51587eb12eb4da9bd37c8ff37192f42ead8cf2fae58ff504aa6af93bceadce7a",
+          "physicalPage": 5,
+          "printedPage": "Author manuscript Page 5",
+          "nativeSection": "Table1A/Bandfootnotes"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q10",
+      "answer": "SelectedUKMGUScasecontrolscope,notcurrentdose/glycemicmechanism/preventionproof.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "51587eb12eb4da9bd37c8ff37192f42ead8cf2fae58ff504aa6af93bceadce7a",
+          "physicalPage": 2,
+          "printedPage": "Author manuscript Page 2",
+          "nativeSection": "Design/exposure/analysis/results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "51587eb12eb4da9bd37c8ff37192f42ead8cf2fae58ff504aa6af93bceadce7a",
+          "physicalPage": 3,
+          "printedPage": "Author manuscript Page 3",
+          "nativeSection": "Results/Discussion/limitations/funding"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q11",
+      "answer": "OneTHINfamily,distinctfromCAL17VA,nopooledpatient/HR/ORinference.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "51587eb12eb4da9bd37c8ff37192f42ead8cf2fae58ff504aa6af93bceadce7a",
+          "physicalPage": 2,
+          "printedPage": "Author manuscript Page 2",
+          "nativeSection": "Design/exposure/analysis/results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "51587eb12eb4da9bd37c8ff37192f42ead8cf2fae58ff504aa6af93bceadce7a",
+          "physicalPage": 3,
+          "printedPage": "Author manuscript Page 3",
+          "nativeSection": "Results/Discussion/limitations/funding"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "51587eb12eb4da9bd37c8ff37192f42ead8cf2fae58ff504aa6af93bceadce7a",
+          "physicalPage": 4,
+          "printedPage": "Author manuscript Page 4",
+          "nativeSection": "References"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q12",
+      "answer": "AcademicPenninvestigators,NIHfunding,noconflictsasreported.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "51587eb12eb4da9bd37c8ff37192f42ead8cf2fae58ff504aa6af93bceadce7a",
+          "physicalPage": 1,
+          "printedPage": "Author manuscript Page 1",
+          "nativeSection": "Title/background/disclosures"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "51587eb12eb4da9bd37c8ff37192f42ead8cf2fae58ff504aa6af93bceadce7a",
+          "physicalPage": 3,
+          "printedPage": "Author manuscript Page 3",
+          "nativeSection": "Results/Discussion/limitations/funding"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q13",
+      "answer": "Exact5pages/materialvisuals,supplement/protocol/externalintegrityincomplete.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "51587eb12eb4da9bd37c8ff37192f42ead8cf2fae58ff504aa6af93bceadce7a",
+          "physicalPage": 1,
+          "printedPage": "Author manuscript Page 1",
+          "nativeSection": "Title/background/disclosures"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "51587eb12eb4da9bd37c8ff37192f42ead8cf2fae58ff504aa6af93bceadce7a",
+          "physicalPage": 2,
+          "printedPage": "Author manuscript Page 2",
+          "nativeSection": "Design/exposure/analysis/results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "51587eb12eb4da9bd37c8ff37192f42ead8cf2fae58ff504aa6af93bceadce7a",
+          "physicalPage": 3,
+          "printedPage": "Author manuscript Page 3",
+          "nativeSection": "Results/Discussion/limitations/funding"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "51587eb12eb4da9bd37c8ff37192f42ead8cf2fae58ff504aa6af93bceadce7a",
+          "physicalPage": 5,
+          "printedPage": "Author manuscript Page 5",
+          "nativeSection": "Table1A/Bandfootnotes"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q14",
+      "answer": "ExactthreeR/CIDsprivateC21proposalunapplied.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "51587eb12eb4da9bd37c8ff37192f42ead8cf2fae58ff504aa6af93bceadce7a",
+          "physicalPage": 3,
+          "printedPage": "Author manuscript Page 3",
+          "nativeSection": "Results/Discussion/limitations/funding"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "51587eb12eb4da9bd37c8ff37192f42ead8cf2fae58ff504aa6af93bceadce7a",
+          "physicalPage": 5,
+          "printedPage": "Author manuscript Page 5",
+          "nativeSection": "Table1A/Bandfootnotes"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending",
+      "downstreamMapping": {
+        "paperId": "REED-CAL-18-P1",
+        "intakeReportId": "REED-52c53c07a938fae35c2c",
+        "resultIds": [
+          "REED-CAL-18-R01",
+          "REED-CAL-18-R02",
+          "REED-CAL-18-R03"
+        ],
+        "claimIds": [
+          "REED-CAL-18-C01",
+          "REED-CAL-18-C02",
+          "REED-CAL-18-C03"
+        ],
+        "existingGuideId": "G-CONDITION-C21",
+        "purpose": "PrivateUKMGUScasecontrolassociationwithdistinctreferents/modelsandnull/sensitivitylimits,notcausalprevention/currentmetforminrecommendation.",
+        "publicationState": "private_draft",
+        "canonicalChanges": 0
+      }
+    },
+    {
+      "id": "Q15",
+      "answer": "Primarynull/imprecisionretainedwithseparatesensitivity,notvalidatedpreventivetherapy.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "51587eb12eb4da9bd37c8ff37192f42ead8cf2fae58ff504aa6af93bceadce7a",
+          "physicalPage": 3,
+          "printedPage": "Author manuscript Page 3",
+          "nativeSection": "Results/Discussion/limitations/funding"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    }
+  ],
+  "sourceQualifications": [
+    {
+      "id": "C18-REFERENTS",
+      "status": "different_analysis_scopes",
+      "locators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "51587eb12eb4da9bd37c8ff37192f42ead8cf2fae58ff504aa6af93bceadce7a",
+          "physicalPage": 2,
+          "printedPage": "Author manuscript Page 2",
+          "nativeSection": "Design/exposure/analysis/results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "51587eb12eb4da9bd37c8ff37192f42ead8cf2fae58ff504aa6af93bceadce7a",
+          "physicalPage": 5,
+          "printedPage": "Author manuscript Page 5",
+          "nativeSection": "Table1A/Bandfootnotes"
+        }
+      ],
+      "description": "Table1Amatchedcasecontrolconditionalmodelsrefnondiabetic. Table1Bdiabetes-onlyexplicitunmatched/unconditionalrefdiabeticnevermetformin.",
+      "action": "No transferofmatching/conditionalmodel/referencebetweenanalyses;notpooledwithCAL17HR."
+    },
+    {
+      "id": "C18-DURATION-SENSITIVITY",
+      "status": "text_only_contrast_incomplete_cells",
+      "locator": {
+        "kind": "pdf",
+        "sourceSha256": "51587eb12eb4da9bd37c8ff37192f42ead8cf2fae58ff504aa6af93bceadce7a",
+        "physicalPage": 2,
+        "printedPage": "Author manuscript Page 2",
+        "nativeSection": "Design/exposure/analysis/results"
+      },
+      "description": "Text>2year/glucose-adjustedOR.19CI.04-.99inrepeatprimaryanalysis;exactcells/Nnotgiven. NotTableB>24moOR.40CI.08-2.04.",
+      "action": "Retainseparatecontrast/referencebasisfromMethods;noimputedcellsoroverridingprimarynull/widediabetessubgroupCI."
+    },
+    {
+      "id": "C18-GLUCOSE",
+      "status": "adjustment_scope_ambiguity",
+      "sourceA": {
+        "locator": {
+          "kind": "pdf",
+          "sourceSha256": "51587eb12eb4da9bd37c8ff37192f42ead8cf2fae58ff504aa6af93bceadce7a",
+          "physicalPage": 2,
+          "printedPage": "Author manuscript Page 2",
+          "nativeSection": "Design/exposure/analysis/results"
+        },
+        "text": "Methodspriorglucoseadjustmentforsensitivityanalysis"
+      },
+      "sourceB": {
+        "locator": {
+          "kind": "pdf",
+          "sourceSha256": "51587eb12eb4da9bd37c8ff37192f42ead8cf2fae58ff504aa6af93bceadce7a",
+          "physicalPage": 5,
+          "printedPage": "Author manuscript Page 5",
+          "nativeSection": "Table1A/Bandfootnotes"
+        },
+        "text": "TableBfootnoteunconditionalage/sex/obesity/smoking,glucosenotlisted"
+      },
+      "action": "No automaticallyaddingglucosetoTableBfootnoteorclaimingidenticaladjustmentsets."
+    },
+    {
+      "id": "C18-BOUNDARY",
+      "status": "not_reported_exact24month_assignment",
+      "locators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "51587eb12eb4da9bd37c8ff37192f42ead8cf2fae58ff504aa6af93bceadce7a",
+          "physicalPage": 2,
+          "printedPage": "Author manuscript Page 2",
+          "nativeSection": "Design/exposure/analysis/results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "51587eb12eb4da9bd37c8ff37192f42ead8cf2fae58ff504aa6af93bceadce7a",
+          "physicalPage": 3,
+          "printedPage": "Author manuscript Page 3",
+          "nativeSection": "Results/Discussion/limitations/funding"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "51587eb12eb4da9bd37c8ff37192f42ead8cf2fae58ff504aa6af93bceadce7a",
+          "physicalPage": 5,
+          "printedPage": "Author manuscript Page 5",
+          "nativeSection": "Table1A/Bandfootnotes"
+        }
+      ],
+      "description": "Methods/table>2/<2yearsor>24/<24months;discussionatleast2wording.",
+      "action": "Keepstrictinequalities,noinventedexact24monthassignment/causalthreshold."
+    },
+    {
+      "id": "C18-BMI-UNIT",
+      "status": "unresolved_literal_unit",
+      "locators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "51587eb12eb4da9bd37c8ff37192f42ead8cf2fae58ff504aa6af93bceadce7a",
+          "physicalPage": 2,
+          "printedPage": "Author manuscript Page 2",
+          "nativeSection": "Design/exposure/analysis/results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "51587eb12eb4da9bd37c8ff37192f42ead8cf2fae58ff504aa6af93bceadce7a",
+          "physicalPage": 5,
+          "printedPage": "Author manuscript Page 5",
+          "nativeSection": "Table1A/Bandfootnotes"
+        }
+      ],
+      "description": "ObesitydefinitionprintsBMI>30mg/m2.",
+      "action": "Retainliteralunitdefect,notautocorrectedkg/m2orusedasprescriptioncriterion."
+    },
+    {
+      "id": "C18-COUNT-UNIT",
+      "status": "sampled_case_control_observations",
+      "locators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "51587eb12eb4da9bd37c8ff37192f42ead8cf2fae58ff504aa6af93bceadce7a",
+          "physicalPage": 2,
+          "printedPage": "Author manuscript Page 2",
+          "nativeSection": "Design/exposure/analysis/results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "51587eb12eb4da9bd37c8ff37192f42ead8cf2fae58ff504aa6af93bceadce7a",
+          "physicalPage": 5,
+          "printedPage": "Author manuscript Page 5",
+          "nativeSection": "Table1A/Bandfootnotes"
+        }
+      ],
+      "description": "124cases/760sampledcontrols,diabetics11/127;incidencedensitysampling,uniquecontrolreuse/personoverlapnotindependentlyadjudicated.",
+      "action": "Not124/884populationrisk,not4/69incidence,nofixedriskdifference/NNT/unique884trialparticipants."
+    }
+  ],
+  "limitations": [
+    "Observationalmatchedprimarynotcausalpreventiveintervention",
+    "Differentnondiabeticversusdiabeticneverreferents",
+    "TableBexplicitunmatched/unconditional,noconditionalmodeltransfer",
+    "Sparsemetformincases4primaryand2perdurationcell",
+    "Text.19sensitivitycells/Nnotgiven/notTableB.40",
+    "Exact24monthboundary/glucoseadjustmentscope/BMIunitdefectheld",
+    "MGUSMprotein/isotype/FLC/raceunavailable",
+    "Shortfollowup/unknowncontrolreuse/nofullflow",
+    "No metformindose/adherence/safety/mechanismevidence",
+    "No directpoolingwithCAL17CoxHR/VAexposure",
+    "Supplement/protocol/currentintegrity/family/fulltypedreviewpending"
+  ],
+  "scientificAcceptance": false,
+  "humanApproval": false,
+  "released": false
+}

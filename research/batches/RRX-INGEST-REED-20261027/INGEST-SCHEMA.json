@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Isolated Reed acquisition/assertion intake",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "base",
+    "rows",
+    "reports",
+    "assets",
+    "assertions",
+    "reviewObligations"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "remaprx-reed-ingest-v1"
+    },
+    "base": {
+      "const": "d118d305b59cac5e54ca7f9e5aa55cea682d2cee"
+    },
+    "rows": {
+      "type": "array",
+      "minItems": 408,
+      "maxItems": 408,
+      "items": {
+        "type": "object",
+        "required": [
+          "inputRowId",
+          "disposition",
+          "reason",
+          "reportId",
+          "assetIds",
+          "nextAction"
+        ],
+        "properties": {
+          "disposition": {
+            "enum": [
+              "ingested",
+              "duplicate",
+              "rejected",
+              "held"
+            ]
+          }
+        }
+      }
+    },
+    "reports": {
+      "type": "array"
+    },
+    "assets": {
+      "type": "array"
+    },
+    "assertions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "reportId",
+          "text",
+          "basis",
+          "locator",
+          "verificationState",
+          "humanReview",
+          "acceptedSupport"
+        ],
+        "properties": {
+          "basis": {
+            "const": "supplier_reported_assertion"
+          },
+          "verificationState": {
+            "const": "pending_source_level_verification"
+          },
+          "humanReview": {
+            "const": "pending"
+          },
+          "acceptedSupport": {
+            "const": false
+          }
+        }
+      }
+    },
+    "reviewObligations": {
+      "type": "array"
+    }
+  }
+}

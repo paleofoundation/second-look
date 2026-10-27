@@ -1,0 +1,1605 @@
+{
+  "schemaVersion": "REED-CAL-01source-extraction-v1",
+  "source": {
+    "intakeReportId": "REED-e677def9c553f707cfc7",
+    "pmid": "18608093",
+    "doi": "10.1080/17482960802195632",
+    "ref": "$REMAPRX_REED_ROOT/minocycline-als/pdfs/18608093-gordon-2008.pdf",
+    "sha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+    "physicalPages": 21,
+    "title": "A novel, efficient, randomized selection trial comparing combinations of drug therapy for ALS."
+  },
+  "paper": {
+    "id": "REED-CAL-01-P1",
+    "pmid": "18608093",
+    "doi": "10.1080/17482960802195632",
+    "sourceKind": "NIHauthor-manuscript_of_published2008article",
+    "publicationYear": 2008,
+    "repositoryAvailabilityYear": 2015,
+    "canonicalReviewComplete": false
+  },
+  "experiment": {
+    "id": "REED-CAL-01-E1",
+    "design": "Randomizeddouble-blindphase2selectiontrial",
+    "condition": "ALS",
+    "purpose": "Combinationselectionforfurtherresearch",
+    "sites": 17,
+    "randomizedTotal": 86,
+    "primaryPoolTotal": 60,
+    "primaryPoolArmN": {
+      "REED-CAL-01-ARM-MC": 30,
+      "REED-CAL-01-ARM-CC": 30
+    },
+    "secondaryAllRandomizedArmN": {
+      "REED-CAL-01-ARM-MC": 39,
+      "REED-CAL-01-ARM-CC": 47
+    },
+    "concurrentPlacebo": false,
+    "sourceLocators": [
+      {
+        "kind": "pdf",
+        "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+        "physicalPage": 3,
+        "manuscriptPage": 3,
+        "journalPrintedPage": null,
+        "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+        "section": "Study design"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+        "physicalPage": 6,
+        "manuscriptPage": 6,
+        "journalPrintedPage": null,
+        "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+        "section": "Results: Patients"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+        "physicalPage": 15,
+        "manuscriptPage": 15,
+        "journalPrintedPage": null,
+        "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+        "section": "Figure1",
+        "figure": "1"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+        "physicalPage": 16,
+        "manuscriptPage": 16,
+        "journalPrintedPage": null,
+        "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+        "section": "TableI",
+        "table": "I"
+      }
+    ]
+  },
+  "arms": [
+    {
+      "id": "REED-CAL-01-ARM-MC",
+      "intervention": "minocycline100mg+creatine10g,twicedaily",
+      "route": "oral",
+      "duration": "6months",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 4,
+          "manuscriptPage": 4,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "Study design"
+        }
+      ]
+    },
+    {
+      "id": "REED-CAL-01-ARM-CC",
+      "intervention": "celecoxib400mg+creatine10g,twicedaily",
+      "route": "oral",
+      "duration": "6months",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 4,
+          "manuscriptPage": 4,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "Study design"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "REED-CAL-01-R01",
+      "experimentId": "REED-CAL-01-E1",
+      "outcome": "ALSFRS-R decline; primary selection endpoint",
+      "population": "First 60 randomized participants, 30 per arm; 58 measured six-month scores and two deaths assigned score zero.",
+      "timepoint": "6months",
+      "arms": [
+        "REED-CAL-01-ARM-MC",
+        "REED-CAL-01-ARM-CC"
+      ],
+      "estimate": {
+        "units": "ALSFRS-R points decline over6months",
+        "values": {
+          "REED-CAL-01-ARM-MC": {
+            "n": 30,
+            "mean": 6.47,
+            "sd": 9.14,
+            "ci95": [
+              3.2,
+              9.7
+            ]
+          },
+          "REED-CAL-01-ARM-CC": {
+            "n": 30,
+            "mean": 5.27,
+            "sd": 5.54,
+            "ci95": [
+              3.3,
+              7.3
+            ]
+          }
+        },
+        "reportedAbsoluteDifference": 1.2,
+        "selectionThreshold": 1.035,
+        "selectedArm": "REED-CAL-01-ARM-CC"
+      },
+      "uncertainty": {
+        "betweenArmConfidenceInterval": null,
+        "betweenArmConfidenceIntervalMissingReason": "not_reported_after_source_read",
+        "primarySelectionPValue": null,
+        "primarySelectionPValueMissingReason": "not_applicable_to_reported_selection_rule"
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 7,
+          "manuscriptPage": 7,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "Primary analysis: selection based on the ALSFRS-R"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 16,
+          "manuscriptPage": 16,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "TableI",
+          "table": "I",
+          "row": "No.ofpatientsrandomized"
+        }
+      ],
+      "notes": "Smaller decline favored celecoxib-creatine under the prespecified selection rule. This is not proof of efficacy or formal statistical superiority. Do not substitute all 86 randomized participants for the primary analysis of 60.",
+      "extractionBasis": "direct_full_text_candidate",
+      "verificationState": "pending_independent_source_audit",
+      "acceptedSupport": false,
+      "humanApproval": "pending",
+      "publicationState": "private_candidate",
+      "grade": null,
+      "benefitGrade": null
+    },
+    {
+      "id": "REED-CAL-01-R02",
+      "experimentId": "REED-CAL-01-E1",
+      "outcome": "Secondary futility decision",
+      "population": "Each first-pool arm of 30 versus a historical mean six-month decline of 5.82 (SD 6.77).",
+      "timepoint": "6months",
+      "arms": [
+        "REED-CAL-01-ARM-MC",
+        "REED-CAL-01-ARM-CC"
+      ],
+      "estimate": {
+        "decision": {
+          "REED-CAL-01-ARM-MC": "futilitycriterionnotmet",
+          "REED-CAL-01-ARM-CC": "futilitycriterionnotmet"
+        },
+        "historicalControl": {
+          "meanSixMonthDecline": 5.82,
+          "sd": 6.77
+        },
+        "comparison": "Historicaldatafromseparategabapentintrial;notconcurrentplacebo"
+      },
+      "uncertainty": {
+        "efficacyConclusion": "not_established",
+        "pValue": null,
+        "pValueMissingReason": "not_reported_after_source_read"
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 5,
+          "manuscriptPage": 5,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "Statistical analysis: secondary futility analysis"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 7,
+          "manuscriptPage": 7,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "Secondary futility analyses"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 10,
+          "manuscriptPage": 10,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "Discussion: limitations"
+        }
+      ],
+      "notes": "Failure to reject the null hypothesis of superiority in a futility design is not demonstrated efficacy. The historical cohort size was not extracted; do not add independent participants.",
+      "extractionBasis": "direct_full_text_candidate",
+      "verificationState": "pending_independent_source_audit",
+      "acceptedSupport": false,
+      "humanApproval": "pending",
+      "publicationState": "private_candidate",
+      "grade": null,
+      "benefitGrade": null
+    },
+    {
+      "id": "REED-CAL-01-R03",
+      "experimentId": "REED-CAL-01-E1",
+      "outcome": "Death by endoftrial",
+      "population": "All 86 randomized participants: 39 minocycline-creatine and 47 celecoxib-creatine.",
+      "timepoint": "6months",
+      "arms": [
+        "REED-CAL-01-ARM-MC",
+        "REED-CAL-01-ARM-CC"
+      ],
+      "estimate": {
+        "units": "patients",
+        "values": {
+          "REED-CAL-01-ARM-MC": {
+            "events": 4,
+            "denominator": 39
+          },
+          "REED-CAL-01-ARM-CC": {
+            "events": 1,
+            "denominator": 47
+          }
+        },
+        "reportedPValue": 0.16,
+        "test": "Fisherexact"
+      },
+      "uncertainty": {
+        "effectSize": null,
+        "effectSizeMissingReason": "not_reported_after_source_read",
+        "confidenceInterval": null,
+        "confidenceIntervalMissingReason": "not_reported_after_source_read"
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 7,
+          "manuscriptPage": 7,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "Analyses of secondary outcome measures"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 15,
+          "manuscriptPage": 15,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "Figure1",
+          "figure": "1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 16,
+          "manuscriptPage": 16,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "TableI",
+          "table": "I"
+        }
+      ],
+      "notes": "Do not call this an established mortality difference. Two deaths in the minocycline-creatine arm among the first 60 are separate from this analysis of all 86.",
+      "extractionBasis": "direct_full_text_candidate",
+      "verificationState": "pending_independent_source_audit",
+      "acceptedSupport": false,
+      "humanApproval": "pending",
+      "publicationState": "private_candidate",
+      "grade": null,
+      "benefitGrade": null
+    },
+    {
+      "id": "REED-CAL-01-R04",
+      "experimentId": "REED-CAL-01-E1",
+      "outcome": "Premature treatment discontinuation and adherence",
+      "population": "All 86 randomized participants.",
+      "timepoint": "6months",
+      "arms": [
+        "REED-CAL-01-ARM-MC",
+        "REED-CAL-01-ARM-CC"
+      ],
+      "estimate": {
+        "units": "patients;percentpill-countadherence",
+        "values": {
+          "REED-CAL-01-ARM-MC": {
+            "treatmentDiscontinuations": 10,
+            "randomizedN": 39,
+            "meanAdherencePercent": 92
+          },
+          "REED-CAL-01-ARM-CC": {
+            "treatmentDiscontinuations": 12,
+            "randomizedN": 47,
+            "meanAdherencePercent": 85
+          }
+        }
+      },
+      "uncertainty": {
+        "betweenArmPValue": null,
+        "betweenArmPValueMissingReason": "not_reported_after_source_read"
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 7,
+          "manuscriptPage": 7,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "Results: Patients"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 16,
+          "manuscriptPage": 16,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "TableI",
+          "table": "I"
+        }
+      ],
+      "notes": "Treatment discontinuation is distinct from loss to follow-up. Patients continued scheduled monthly evaluations and all randomized participants reached six months or death.",
+      "extractionBasis": "direct_full_text_candidate",
+      "verificationState": "pending_independent_source_audit",
+      "acceptedSupport": false,
+      "humanApproval": "pending",
+      "publicationState": "private_candidate",
+      "grade": null,
+      "benefitGrade": null
+    },
+    {
+      "id": "REED-CAL-01-R05",
+      "experimentId": "REED-CAL-01-E1",
+      "outcome": "Nonserious rash",
+      "population": "Table IV secondary analysis of all 86 randomized participants: 39 minocycline-creatine and 47 celecoxib-creatine.",
+      "timepoint": "6months",
+      "arms": [
+        "REED-CAL-01-ARM-MC",
+        "REED-CAL-01-ARM-CC"
+      ],
+      "estimate": {
+        "units": "patientswithspecificreportednonseriousevent",
+        "values": {
+          "REED-CAL-01-ARM-MC": {
+            "events": 1,
+            "denominator": 39,
+            "reportedPercent": 2.6
+          },
+          "REED-CAL-01-ARM-CC": {
+            "events": 10,
+            "denominator": 47,
+            "reportedPercent": 21.3
+          }
+        },
+        "reportedPValue": 0.01,
+        "test": "Fisherexact"
+      },
+      "uncertainty": {
+        "confidenceInterval": null,
+        "confidenceIntervalMissingReason": "not_reported_after_source_read",
+        "multiplicityAdjustedPValue": null,
+        "multiplicityAdjustedPValueMissingReason": "not_reported_after_source_read"
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 20,
+          "manuscriptPage": 20,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "TableIV",
+          "table": "IV",
+          "row": "Nonserious rash",
+          "columns": "Secondaryanalysisn86:CC,MC,pvalue"
+        }
+      ],
+      "notes": "Reported exploratory safety comparison, without an extracted multiplicity adjustment. This is not a drug-attributable risk estimate or proof of safety.",
+      "extractionBasis": "direct_full_text_candidate",
+      "verificationState": "pending_independent_source_audit",
+      "acceptedSupport": false,
+      "humanApproval": "pending",
+      "publicationState": "private_candidate",
+      "grade": null,
+      "benefitGrade": null
+    },
+    {
+      "id": "REED-CAL-01-R06",
+      "experimentId": "REED-CAL-01-E1",
+      "outcome": "Nonserious constipation",
+      "population": "Table IV secondary analysis of all 86 randomized participants: 39 minocycline-creatine and 47 celecoxib-creatine.",
+      "timepoint": "6months",
+      "arms": [
+        "REED-CAL-01-ARM-MC",
+        "REED-CAL-01-ARM-CC"
+      ],
+      "estimate": {
+        "units": "patientswithspecificreportednonseriousevent",
+        "values": {
+          "REED-CAL-01-ARM-MC": {
+            "events": 10,
+            "denominator": 39,
+            "reportedPercent": 25.6
+          },
+          "REED-CAL-01-ARM-CC": {
+            "events": 4,
+            "denominator": 47,
+            "reportedPercent": 8.5
+          }
+        },
+        "reportedPValue": 0.032,
+        "test": "Pearsonchi-square"
+      },
+      "uncertainty": {
+        "confidenceInterval": null,
+        "confidenceIntervalMissingReason": "not_reported_after_source_read",
+        "multiplicityAdjustedPValue": null,
+        "multiplicityAdjustedPValueMissingReason": "not_reported_after_source_read"
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 20,
+          "manuscriptPage": 20,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "TableIV",
+          "table": "IV",
+          "row": "Nonserious constipation",
+          "columns": "Secondaryanalysisn86:CC,MC,pvalue"
+        }
+      ],
+      "notes": "Reported exploratory safety comparison, without an extracted multiplicity adjustment. This is not a drug-attributable risk estimate or proof of safety.",
+      "extractionBasis": "direct_full_text_candidate",
+      "verificationState": "pending_independent_source_audit",
+      "acceptedSupport": false,
+      "humanApproval": "pending",
+      "publicationState": "private_candidate",
+      "grade": null,
+      "benefitGrade": null
+    },
+    {
+      "id": "REED-CAL-01-R07",
+      "experimentId": "REED-CAL-01-E1",
+      "outcome": "Nonserious depression",
+      "population": "Table IV secondary analysis of all 86 randomized participants: 39 minocycline-creatine and 47 celecoxib-creatine.",
+      "timepoint": "6months",
+      "arms": [
+        "REED-CAL-01-ARM-MC",
+        "REED-CAL-01-ARM-CC"
+      ],
+      "estimate": {
+        "units": "patientswithspecificreportednonseriousevent",
+        "values": {
+          "REED-CAL-01-ARM-MC": {
+            "events": 9,
+            "denominator": 39,
+            "reportedPercent": 23.1
+          },
+          "REED-CAL-01-ARM-CC": {
+            "events": 2,
+            "denominator": 47,
+            "reportedPercent": 4.3
+          }
+        },
+        "reportedPValue": 0.02,
+        "test": "Pearsonchi-square"
+      },
+      "uncertainty": {
+        "confidenceInterval": null,
+        "confidenceIntervalMissingReason": "not_reported_after_source_read",
+        "multiplicityAdjustedPValue": null,
+        "multiplicityAdjustedPValueMissingReason": "not_reported_after_source_read"
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 20,
+          "manuscriptPage": 20,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "TableIV",
+          "table": "IV",
+          "row": "Nonserious depression",
+          "columns": "Secondaryanalysisn86:CC,MC,pvalue"
+        }
+      ],
+      "notes": "Reported exploratory safety comparison, without an extracted multiplicity adjustment. This is not a drug-attributable risk estimate or proof of safety.",
+      "extractionBasis": "direct_full_text_candidate",
+      "verificationState": "pending_independent_source_audit",
+      "acceptedSupport": false,
+      "humanApproval": "pending",
+      "publicationState": "private_candidate",
+      "grade": null,
+      "benefitGrade": null
+    },
+    {
+      "id": "REED-CAL-01-R08",
+      "experimentId": "REED-CAL-01-E1",
+      "outcome": "Clinically abnormal serum creatinine",
+      "population": "Table IV secondary analysis of all 86 randomized participants: 39 minocycline-creatine and 47 celecoxib-creatine.",
+      "timepoint": "6months",
+      "arms": [
+        "REED-CAL-01-ARM-MC",
+        "REED-CAL-01-ARM-CC"
+      ],
+      "estimate": {
+        "units": "patientswithspecificreportednonseriousevent",
+        "values": {
+          "REED-CAL-01-ARM-MC": {
+            "events": 4,
+            "denominator": 39,
+            "reportedPercent": 10.3
+          },
+          "REED-CAL-01-ARM-CC": {
+            "events": 4,
+            "denominator": 47,
+            "reportedPercent": 8.5
+          }
+        },
+        "reportedPValue": 1.0,
+        "test": "Fisherexact"
+      },
+      "uncertainty": {
+        "confidenceInterval": null,
+        "confidenceIntervalMissingReason": "not_reported_after_source_read",
+        "multiplicityAdjustedPValue": null,
+        "multiplicityAdjustedPValueMissingReason": "not_reported_after_source_read"
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 20,
+          "manuscriptPage": 20,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "TableIV",
+          "table": "IV",
+          "row": "Clinically abnormal serum creatinine",
+          "columns": "Secondaryanalysisn86:CC,MC,pvalue"
+        }
+      ],
+      "notes": "Clinically abnormal creatinine events in Table IV are distinct from the broader laboratory-abnormality counts in Table V. Do not combine those ascertainment scopes.",
+      "extractionBasis": "direct_full_text_candidate",
+      "verificationState": "pending_independent_source_audit",
+      "acceptedSupport": false,
+      "humanApproval": "pending",
+      "publicationState": "private_candidate",
+      "grade": null,
+      "benefitGrade": null
+    }
+  ],
+  "claims": [
+    {
+      "id": "REED-CAL-01-C01",
+      "text": "The prespecified first-pool selection rule favored celecoxib plus creatine over minocycline plus creatine; this does not establish efficacy.",
+      "basis": "candidate_editorial_interpretation",
+      "resultIds": [
+        "REED-CAL-01-R01"
+      ],
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 7,
+          "manuscriptPage": 7,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "Primary analysis: selection based on the ALSFRS-R"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 16,
+          "manuscriptPage": 16,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "TableI",
+          "table": "I",
+          "row": "No.ofpatientsrandomized"
+        }
+      ],
+      "verificationState": "pending_independent_source_audit",
+      "acceptedSupport": false,
+      "humanApproval": "pending"
+    },
+    {
+      "id": "REED-CAL-01-C02",
+      "text": "Neither combination met the historical-control futility criterion; this is not proof of benefit versus placebo.",
+      "basis": "candidate_editorial_interpretation",
+      "resultIds": [
+        "REED-CAL-01-R02"
+      ],
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 5,
+          "manuscriptPage": 5,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "Statistical analysis: secondary futility analysis"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 7,
+          "manuscriptPage": 7,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "Secondary futility analyses"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 10,
+          "manuscriptPage": 10,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "Discussion: limitations"
+        }
+      ],
+      "verificationState": "pending_independent_source_audit",
+      "acceptedSupport": false,
+      "humanApproval": "pending"
+    },
+    {
+      "id": "REED-CAL-01-C03",
+      "text": "The mortality comparison among all 86 randomized participants was uncertain and did not reach statistical significance.",
+      "basis": "candidate_editorial_interpretation",
+      "resultIds": [
+        "REED-CAL-01-R03"
+      ],
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 7,
+          "manuscriptPage": 7,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "Analyses of secondary outcome measures"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 15,
+          "manuscriptPage": 15,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "Figure1",
+          "figure": "1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 16,
+          "manuscriptPage": 16,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "TableI",
+          "table": "I"
+        }
+      ],
+      "verificationState": "pending_independent_source_audit",
+      "acceptedSupport": false,
+      "humanApproval": "pending"
+    },
+    {
+      "id": "REED-CAL-01-C04",
+      "text": "Stopping study treatment did not mean loss of clinical follow-up.",
+      "basis": "candidate_editorial_interpretation",
+      "resultIds": [
+        "REED-CAL-01-R04"
+      ],
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 7,
+          "manuscriptPage": 7,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "Results: Patients"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 16,
+          "manuscriptPage": 16,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "TableI",
+          "table": "I"
+        }
+      ],
+      "verificationState": "pending_independent_source_audit",
+      "acceptedSupport": false,
+      "humanApproval": "pending"
+    },
+    {
+      "id": "REED-CAL-01-C05",
+      "text": "Rash was reported more often in the celecoxib-creatine arm in the exploratory analysis of all 86 participants.",
+      "basis": "candidate_editorial_interpretation",
+      "resultIds": [
+        "REED-CAL-01-R05"
+      ],
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 20,
+          "manuscriptPage": 20,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "TableIV",
+          "table": "IV",
+          "row": "Nonserious rash",
+          "columns": "Secondaryanalysisn86:CC,MC,pvalue"
+        }
+      ],
+      "verificationState": "pending_independent_source_audit",
+      "acceptedSupport": false,
+      "humanApproval": "pending"
+    },
+    {
+      "id": "REED-CAL-01-C06",
+      "text": "Constipation was reported more often in the minocycline-creatine arm in the exploratory analysis of all 86 participants.",
+      "basis": "candidate_editorial_interpretation",
+      "resultIds": [
+        "REED-CAL-01-R06"
+      ],
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 20,
+          "manuscriptPage": 20,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "TableIV",
+          "table": "IV",
+          "row": "Nonserious constipation",
+          "columns": "Secondaryanalysisn86:CC,MC,pvalue"
+        }
+      ],
+      "verificationState": "pending_independent_source_audit",
+      "acceptedSupport": false,
+      "humanApproval": "pending"
+    },
+    {
+      "id": "REED-CAL-01-C07",
+      "text": "Depression was reported more often in the minocycline-creatine arm in the exploratory analysis of all 86 participants.",
+      "basis": "candidate_editorial_interpretation",
+      "resultIds": [
+        "REED-CAL-01-R07"
+      ],
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 20,
+          "manuscriptPage": 20,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "TableIV",
+          "table": "IV",
+          "row": "Nonserious depression",
+          "columns": "Secondaryanalysisn86:CC,MC,pvalue"
+        }
+      ],
+      "verificationState": "pending_independent_source_audit",
+      "acceptedSupport": false,
+      "humanApproval": "pending"
+    },
+    {
+      "id": "REED-CAL-01-C08",
+      "text": "Clinical creatinine elevations occurred in both arms; the trial does not establish safety relative to no treatment.",
+      "basis": "candidate_editorial_interpretation",
+      "resultIds": [
+        "REED-CAL-01-R08"
+      ],
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 20,
+          "manuscriptPage": 20,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "TableIV",
+          "table": "IV",
+          "row": "Clinically abnormal serum creatinine",
+          "columns": "Secondaryanalysisn86:CC,MC,pvalue"
+        }
+      ],
+      "verificationState": "pending_independent_source_audit",
+      "acceptedSupport": false,
+      "humanApproval": "pending"
+    }
+  ],
+  "reviewInputs": [
+    {
+      "id": "Q01",
+      "answer": "Select between minocycline-creatine and celecoxib-creatine for further ALS research using a prespecified six-month ALSFRS-R selection rule. Secondary futility analyses used historical controls. This is phase II screening, not a placebo-controlled efficacy trial.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 3,
+          "manuscriptPage": 3,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ01"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 5,
+          "manuscriptPage": 5,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ01"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 7,
+          "manuscriptPage": 7,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ01"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 10,
+          "manuscriptPage": 10,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ01"
+        }
+      ],
+      "humanApproval": "pending",
+      "independentAudit": "pending"
+    },
+    {
+      "id": "Q02",
+      "answer": "Adults at 17 US centers, aged 21-85 years, with possible, laboratory-supported probable, probable or definite ALS; FVC at least 60% predicted and weakness onset within five years. Riluzole had to be stable for at least 30 days if used. Figure 1 shows 108 assessed, 18 excluded, four withdrawals before randomization and 86 randomized: 47 celecoxib-creatine and 39 minocycline-creatine. The primary pool was the first 60, with 30 in each arm. Eligibility exclusions are applicability restrictions, not automatically contraindications.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 3,
+          "manuscriptPage": 3,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ02"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 6,
+          "manuscriptPage": 6,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ02"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 15,
+          "manuscriptPage": 15,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ02"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 16,
+          "manuscriptPage": 16,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ02"
+        }
+      ],
+      "humanApproval": "pending",
+      "independentAudit": "pending"
+    },
+    {
+      "id": "Q03",
+      "answer": "Both arms received 10 g creatine powder twice daily. One added 100 mg minocycline twice daily; the other added 400 mg celecoxib twice daily. These were the tested six-month regimens, not clinical recommendations. Identical capsules supported blinding; adverse events could prompt dose reduction, a temporary holiday or permanent discontinuation.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 4,
+          "manuscriptPage": 4,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ03"
+        }
+      ],
+      "humanApproval": "pending",
+      "independentAudit": "pending"
+    },
+    {
+      "id": "Q04",
+      "answer": "Two concurrent active combinations, each containing creatine; no concurrent placebo or untreated group. Historical combined-arm data from a separate gabapentin trial provided the secondary futility benchmark only.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 3,
+          "manuscriptPage": 3,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ04"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 5,
+          "manuscriptPage": 5,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ04"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 10,
+          "manuscriptPage": 10,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ04"
+        }
+      ],
+      "humanApproval": "pending",
+      "independentAudit": "pending"
+    },
+    {
+      "id": "Q05",
+      "answer": "The primary outcome was six-month ALSFRS-R decline used for selection. FVC, Timed Up and Go, quality of life, death/tracheostomy/chronic ventilation, adverse events, laboratory studies and ECGs were assessed as secondary safety measures. Function matters to patients, but this design does not provide definitive efficacy estimation.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 4,
+          "manuscriptPage": 4,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ05"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 5,
+          "manuscriptPage": 5,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ05"
+        }
+      ],
+      "humanApproval": "pending",
+      "independentAudit": "pending"
+    },
+    {
+      "id": "Q06",
+      "answer": "Eight located candidates capture primary decline and selection, futility, mortality, treatment discontinuation/adherence and four specific safety events among all 86. Primary mean decline was 6.47 with minocycline-creatine versus 5.27 with celecoxib-creatine; the reported absolute difference of 1.200 exceeded the selection threshold of 1.035. This is not a conventional superiority test, pooled benefit estimate or clinical grade.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 7,
+          "manuscriptPage": 7,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ06"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 20,
+          "manuscriptPage": 20,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ06"
+        }
+      ],
+      "humanApproval": "pending",
+      "independentAudit": "pending"
+    },
+    {
+      "id": "Q07",
+      "answer": "Of the primary 60, 58 had measured six-month scores and two minocycline-creatine deaths received score zero. Patients stopping treatment continued follow-up; authors report no follow-up dropouts beyond endpoint death. Figure 1 separately reports four withdrawals before randomization. Table II states 14 missing TUG observations, but placement of n=72 beside quality of life needs adjudication before extracting those secondary denominators. Table V follow-up n=85 and mixed percentage denominators also remain unresolved.",
+      "status": "partial_unresolved_secondary_denominators",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 6,
+          "manuscriptPage": 6,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ07"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 7,
+          "manuscriptPage": 7,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ07"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 15,
+          "manuscriptPage": 15,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ07"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 17,
+          "manuscriptPage": 17,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ07"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 21,
+          "manuscriptPage": 21,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ07"
+        }
+      ],
+      "humanApproval": "pending",
+      "independentAudit": "pending"
+    },
+    {
+      "id": "Q08",
+      "answer": "Scheduled clinical, laboratory and ECG monitoring and independent safety monitoring were used. Selected Table IV event counts are located. Table III reported no significant differences in totals, and Table V laboratory abnormalities are distinct from clinically significant creatinine events. Continued table headers and some laboratory denominators require independent audit; absence of rare events cannot establish safety.",
+      "status": "partial_unresolved_secondary_denominators",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 4,
+          "manuscriptPage": 4,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ08"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 5,
+          "manuscriptPage": 5,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ08"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 8,
+          "manuscriptPage": 8,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ08"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 18,
+          "manuscriptPage": 18,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ08"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 19,
+          "manuscriptPage": 19,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ08"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 20,
+          "manuscriptPage": 20,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ08"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 21,
+          "manuscriptPage": 21,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ08"
+        }
+      ],
+      "humanApproval": "pending",
+      "independentAudit": "pending"
+    },
+    {
+      "id": "Q09",
+      "answer": "Randomization was stratified by center and progression rate; capsules were blinded and no code breaks were reported. Limits include the small selection design, active comparators and historical benchmark, overenrollment beyond the first 60, death scores imputed as zero, selected secondary missing-data imputation and multiple exploratory safety comparisons. The study did not compare doses or formally sample blood/CSF drug exposure.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 3,
+          "manuscriptPage": 3,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ09"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 4,
+          "manuscriptPage": 4,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ09"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 5,
+          "manuscriptPage": 5,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ09"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 6,
+          "manuscriptPage": 6,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ09"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 10,
+          "manuscriptPage": 10,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ09"
+        }
+      ],
+      "humanApproval": "pending",
+      "independentAudit": "pending"
+    },
+    {
+      "id": "Q10",
+      "answer": "These findings concern the tested ALS combinations, eligibility, six-month screening purpose and separate first-60/all-86 analyses. They do not establish minocycline-alone efficacy, long-term survival, optimal dose or benefit versus standard care or placebo.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 3,
+          "manuscriptPage": 3,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ10"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 4,
+          "manuscriptPage": 4,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ10"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 7,
+          "manuscriptPage": 7,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ10"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 10,
+          "manuscriptPage": 10,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ10"
+        }
+      ],
+      "humanApproval": "pending",
+      "independentAudit": "pending"
+    },
+    {
+      "id": "Q11",
+      "answer": "One report and one current experiment with overlapping analysis populations: never add 60 and 86. Historical controls belong to a separate report and are not newly acquired participants. Registry, companion-version and direct cohort-linkage checks are outside this closed-source packet and remain not checked.",
+      "status": "partial_external_family_linkage_not_checked",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 5,
+          "manuscriptPage": 5,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ11"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 6,
+          "manuscriptPage": 6,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ11"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 7,
+          "manuscriptPage": 7,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ11"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 10,
+          "manuscriptPage": 10,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ11"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 12,
+          "manuscriptPage": 12,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ11"
+        }
+      ],
+      "humanApproval": "pending",
+      "independentAudit": "pending"
+    },
+    {
+      "id": "Q12",
+      "answer": "An investigator-initiated 17-center study with Columbia clinical and biostatistical coordination and independent monitoring. Page 1 declares no conflicts, while acknowledgments report charitable and Avicena funding and $30,000 received by Gordon from Avicena. Preserve both the declaration and funding disclosure without inferring independence or misconduct. Drug/creatine suppliers and institutional support are recorded in the source.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 1,
+          "manuscriptPage": 1,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ12"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 3,
+          "manuscriptPage": 3,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ12"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 4,
+          "manuscriptPage": 4,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ12"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 5,
+          "manuscriptPage": 5,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ12"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 11,
+          "manuscriptPage": 11,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ12"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 13,
+          "manuscriptPage": 13,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ12"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 14,
+          "manuscriptPage": 14,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ12"
+        }
+      ],
+      "humanApproval": "pending",
+      "independentAudit": "pending"
+    },
+    {
+      "id": "Q13",
+      "answer": "Exact file hash verified. The 21-page NIH author manuscript identifies the final 2008 article DOI and repository availability in 2015. Current external correction/retraction status, journal-version parity, registry and companion checks were not performed under the closed-packet restriction. Source integrity is not declared complete.",
+      "status": "partial_external_integrity_not_checked",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 1,
+          "manuscriptPage": 1,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ13"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 12,
+          "manuscriptPage": 12,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ13"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 13,
+          "manuscriptPage": 13,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ13"
+        }
+      ],
+      "humanApproval": "pending",
+      "independentAudit": "pending"
+    },
+    {
+      "id": "Q14",
+      "answer": "Supports the prespecified selection of celecoxib-creatine for further research and the reported scoped safety observations. It contradicts interpreting selection or futility nonrejection as proof of efficacy. Animal studies cited in its discussion are separate leads, not human mechanism results from this trial.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 7,
+          "manuscriptPage": 7,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ14"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 8,
+          "manuscriptPage": 8,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ14"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 9,
+          "manuscriptPage": 9,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ14"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 10,
+          "manuscriptPage": 10,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ14"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 20,
+          "manuscriptPage": 20,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ14"
+        }
+      ],
+      "humanApproval": "pending",
+      "independentAudit": "pending"
+    },
+    {
+      "id": "Q15",
+      "answer": "Treat this as a scoped phase II combination-screening candidate. Retain contrary and uncertain results, exact purposes and denominators. Complete independent source/numeric audit and unresolved inputs before any new grade, synthesis or guide proposal. No treatment recommendation follows.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 9,
+          "manuscriptPage": 9,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ15"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 10,
+          "manuscriptPage": 10,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ15"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 11,
+          "manuscriptPage": 11,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ15"
+        }
+      ],
+      "humanApproval": "pending",
+      "independentAudit": "pending"
+    }
+  ],
+  "inspection": {
+    "at": "2026-10-27T08:00:59.112861+00:00",
+    "physicalPagesRead": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+    ],
+    "visualNumericPages": [
+      7,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+    ],
+    "materialFiguresTables": [
+      "Figure1",
+      "TablesI-V"
+    ],
+    "derivedTextPrivate": true,
+    "rawSourceIncluded": false,
+    "readingCompleteForProvidedFile": true,
+    "fullScientificReviewComplete": false,
+    "independentAudit": "pending",
+    "revisionNote": "Version 2 adds ordinary spacing/readability to narrative fields; extracted values, source hash and locators unchanged. Version 1 is preserved, not the active audit target."
+  },
+  "gaps": [
+    {
+      "id": "G1",
+      "state": "not_checked",
+      "description": "Currentexternalintegrity/journalparity/registry/companioncheckclosed-packetlimit;noexternallookupperformed."
+    },
+    {
+      "id": "G2",
+      "state": "not_identifiable",
+      "description": "TableII14missingTUGvsn72placementrequiresdenominatoradjudicationbeforefullsecondaryoutcomeextraction."
+    },
+    {
+      "id": "G3",
+      "state": "not_identifiable",
+      "description": "TableIIIcontinuedheadern60carryoverdespitesecondary86cellsandTableVfollowupn85/percentagedenominatorinconsistencyrequireaudit;noneconvertedtoacceptedquantitativeresult."
+    },
+    {
+      "id": "G4",
+      "state": "not_extracted",
+      "description": "Othersecondaryfunctional/laboratorytablecellsnotextractedasstructuredresults;providedsourcewasreadbut8resultscopeisnotallendpointcompletion."
+    }
+  ],
+  "scientificAcceptance": false,
+  "humanApproval": false,
+  "released": false
+}
