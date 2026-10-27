@@ -1,0 +1,1138 @@
+{
+  "gapCsvSha256": "037bc0f85eddfbc3e03b7b37c4da0690a8d4f968cc39809d315cd682b6545d90",
+  "basis": "Historical gap audit ranking, not a current live measurement. Bounded proposed batch: five thinnest eligible condition parents and two thinnest eligible drug parents. No source evidence has been appraised by this packet.",
+  "filledGuideRoutes": [
+    "/conditions/amyotrophic-lateral-sclerosis",
+    "/conditions/basal-cell-carcinoma",
+    "/conditions/multiple-myeloma",
+    "/conditions/myalgic-encephalomyelitis-chronic-fatigue-syndrome",
+    "/drugs/clomipramine",
+    "/drugs/fenbendazole",
+    "/drugs/fluconazole",
+    "/drugs/guanfacine",
+    "/drugs/maraviroc",
+    "/drugs/memantine",
+    "/drugs/pramipexole",
+    "/drugs/rituximab",
+    "/drugs/vorinostat"
+  ],
+  "proposedRoutes": [
+    "/conditions/type-2-diabetes",
+    "/conditions/chronic-myeloid-leukemia",
+    "/conditions/persistent-genital-arousal-disorder-genitopelvic-dysesthesia",
+    "/conditions/acute-myeloid-leukemia",
+    "/conditions/fibromyalgia",
+    "/drugs/fluvoxamine",
+    "/drugs/sildenafil"
+  ],
+  "allDrugConditionRows": [
+    {
+      "auditRank": 1,
+      "route": "/conditions/multiple-myeloma",
+      "type": "conditions",
+      "auditWordCount": 512,
+      "guideId": "G-CONDITION-C21",
+      "disposition": "skip_filled_PR4_to_PR7",
+      "protectedBookSourceIds": [],
+      "sourceIds": [
+        "COND-C21-NCI",
+        "COND-C21-THAL",
+        "COND-C21-IMMUNE",
+        "CP019-R01",
+        "CP020-R01",
+        "MF-MYELOMA-MODELS-2018",
+        "P-D07-MYELOMA-2016",
+        "P-D20-MYELOMA",
+        "P-D23-MYELOMA"
+      ]
+    },
+    {
+      "auditRank": 2,
+      "route": "/drugs/rituximab",
+      "type": "drugs",
+      "auditWordCount": 643,
+      "guideId": "G-DRUG-D14",
+      "disposition": "skip_filled_PR4_to_PR7",
+      "protectedBookSourceIds": [],
+      "sourceIds": [
+        "CTX-D14-LABEL",
+        "P-D14-VITILIGO-2013"
+      ]
+    },
+    {
+      "auditRank": 3,
+      "route": "/conditions/myalgic-encephalomyelitis-chronic-fatigue-syndrome",
+      "type": "conditions",
+      "auditWordCount": 655,
+      "guideId": "G-CONDITION-C06",
+      "disposition": "skip_filled_PR4_to_PR7",
+      "protectedBookSourceIds": [],
+      "sourceIds": [
+        "COND-C06-CDC",
+        "COND-C06-TRPM3-2021",
+        "COND-C06-CDC-CARE",
+        "COND-C05-NIAMS",
+        "COND-C01-CDC",
+        "COND-C06-LDN-CASES-2020",
+        "CTX-D04-LABEL"
+      ]
+    },
+    {
+      "auditRank": 4,
+      "route": "/conditions/amyotrophic-lateral-sclerosis",
+      "type": "conditions",
+      "auditWordCount": 667,
+      "guideId": "G-CONDITION-C28",
+      "disposition": "skip_filled_PR4_to_PR7",
+      "protectedBookSourceIds": [],
+      "sourceIds": [
+        "COND-C28-NINDS",
+        "COND-C28-MINO-2007"
+      ]
+    },
+    {
+      "auditRank": 5,
+      "route": "/conditions/vitiligo",
+      "type": "conditions",
+      "auditWordCount": 668,
+      "guideId": "G-CONDITION-C29",
+      "disposition": "hold_vitiligo",
+      "protectedBookSourceIds": [
+        "CP027-CH25"
+      ],
+      "sourceIds": [
+        "COND-C29-NIAMS",
+        "COND-C29-ATOR-2018",
+        "CP027-CH25",
+        "P-D14-VITILIGO-2013",
+        "P-D16-VITILIGO-2014",
+        "P-D20-VITILIGO"
+      ]
+    },
+    {
+      "auditRank": 6,
+      "route": "/drugs/memantine",
+      "type": "drugs",
+      "auditWordCount": 683,
+      "guideId": "G-DRUG-D25",
+      "disposition": "skip_filled_PR4_to_PR7",
+      "protectedBookSourceIds": [],
+      "sourceIds": [
+        "P-D25-GBM",
+        "CTX-D25-LABEL"
+      ]
+    },
+    {
+      "auditRank": 7,
+      "route": "/conditions/basal-cell-carcinoma",
+      "type": "conditions",
+      "auditWordCount": 709,
+      "guideId": "G-CONDITION-C19",
+      "disposition": "skip_filled_PR4_to_PR7",
+      "protectedBookSourceIds": [],
+      "sourceIds": [
+        "COND-C19-NCI",
+        "P-D07-BCC-2014",
+        "COND-C18-NCI"
+      ]
+    },
+    {
+      "auditRank": 8,
+      "route": "/drugs/guanfacine",
+      "type": "drugs",
+      "auditWordCount": 712,
+      "guideId": "G-DRUG-D11",
+      "disposition": "skip_filled_PR4_to_PR7",
+      "protectedBookSourceIds": [],
+      "sourceIds": [
+        "CTX-D11-LABEL",
+        "P-D11-LONGCOVID-2023"
+      ]
+    },
+    {
+      "auditRank": 9,
+      "route": "/conditions/type-2-diabetes",
+      "type": "conditions",
+      "auditWordCount": 749,
+      "guideId": "G-CONDITION-C31",
+      "disposition": "selected",
+      "protectedBookSourceIds": [],
+      "sourceIds": [
+        "COND-C31-NIDDK",
+        "COND-C31-MANAGEMENT",
+        "MF-LABEL-2025",
+        "CTX-REPURPOSING-NCATS",
+        "CTX-GUIDE-2"
+      ]
+    },
+    {
+      "auditRank": 10,
+      "route": "/conditions/chronic-myeloid-leukemia",
+      "type": "conditions",
+      "auditWordCount": 765,
+      "guideId": "G-CONDITION-C23",
+      "disposition": "selected",
+      "protectedBookSourceIds": [],
+      "sourceIds": [
+        "COND-C23-NCI",
+        "COND-C23-ACTIM-2017",
+        "COND-C23-PPARG-2015"
+      ]
+    },
+    {
+      "auditRank": 11,
+      "route": "/conditions/persistent-genital-arousal-disorder-genitopelvic-dysesthesia",
+      "type": "conditions",
+      "auditWordCount": 786,
+      "guideId": "G-CONDITION-C08",
+      "disposition": "selected",
+      "protectedBookSourceIds": [],
+      "sourceIds": [
+        "COND-C08-IPGAD-2023",
+        "COND-C08-NEURO-2020",
+        "P-D04-CSBD-2022"
+      ]
+    },
+    {
+      "auditRank": 12,
+      "route": "/conditions/acute-myeloid-leukemia",
+      "type": "conditions",
+      "auditWordCount": 794,
+      "guideId": "G-CONDITION-C22",
+      "disposition": "selected",
+      "protectedBookSourceIds": [],
+      "sourceIds": [
+        "COND-C22-NCI",
+        "COND-C22-VPA-2019",
+        "COND-C12-VPA-2021"
+      ]
+    },
+    {
+      "auditRank": 13,
+      "route": "/conditions/fibromyalgia",
+      "type": "conditions",
+      "auditWordCount": 856,
+      "guideId": "G-CONDITION-C05",
+      "disposition": "selected",
+      "protectedBookSourceIds": [],
+      "sourceIds": [
+        "COND-C05-NIAMS",
+        "COND-C05-LDN-2025",
+        "P-D04-FIBRO-2024"
+      ]
+    },
+    {
+      "auditRank": 14,
+      "route": "/drugs/pramipexole",
+      "type": "drugs",
+      "auditWordCount": 866,
+      "guideId": "G-DRUG-D05",
+      "disposition": "skip_filled_PR4_to_PR7",
+      "protectedBookSourceIds": [],
+      "sourceIds": [
+        "CTX-D05-LABEL",
+        "P-D05-PAXD-2025",
+        "COND-C09-PAXD-PROTOCOL"
+      ]
+    },
+    {
+      "auditRank": 15,
+      "route": "/conditions/crohn-disease",
+      "type": "conditions",
+      "auditWordCount": 870,
+      "guideId": "G-CONDITION-C11",
+      "disposition": "eligible_not_selected",
+      "protectedBookSourceIds": [],
+      "sourceIds": [
+        "COND-C11-NIDDK",
+        "CP002-R01"
+      ]
+    },
+    {
+      "auditRank": 16,
+      "route": "/conditions/melanoma",
+      "type": "conditions",
+      "auditWordCount": 877,
+      "guideId": "G-CONDITION-C18",
+      "disposition": "eligible_not_selected",
+      "protectedBookSourceIds": [],
+      "sourceIds": [
+        "COND-C18-NCI",
+        "COND-C18-PROP-2021",
+        "P-D07-BCC-2014",
+        "P-D19-MELANOMA"
+      ]
+    },
+    {
+      "auditRank": 17,
+      "route": "/conditions/periodontitis",
+      "type": "conditions",
+      "auditWordCount": 895,
+      "guideId": "G-CONDITION-C10",
+      "disposition": "eligible_not_selected",
+      "protectedBookSourceIds": [],
+      "sourceIds": [
+        "COND-C10-NIDCR",
+        "COND-C10-MMP-2004",
+        "COND-C10-DOXY-2004",
+        "P-D06-PERIODONTAL-2020"
+      ]
+    },
+    {
+      "auditRank": 18,
+      "route": "/conditions/compulsive-sexual-behavior-disorder",
+      "type": "conditions",
+      "auditWordCount": 911,
+      "guideId": "G-CONDITION-C07",
+      "disposition": "eligible_not_selected",
+      "protectedBookSourceIds": [],
+      "sourceIds": [
+        "P-D04-CSBD-2022",
+        "COND-C07-NTX-2020",
+        "COND-C08-IPGAD-2023"
+      ]
+    },
+    {
+      "auditRank": 19,
+      "route": "/conditions/hepatocellular-carcinoma",
+      "type": "conditions",
+      "auditWordCount": 937,
+      "guideId": "G-CONDITION-C20",
+      "disposition": "eligible_not_selected",
+      "protectedBookSourceIds": [],
+      "sourceIds": [
+        "COND-C20-NCI",
+        "COND-C20-ASP-2020",
+        "COND-C16-ALASCCA-2025",
+        "P-D15-HCC-2017"
+      ]
+    },
+    {
+      "auditRank": 20,
+      "route": "/drugs/clomipramine",
+      "type": "drugs",
+      "auditWordCount": 937,
+      "guideId": "G-DRUG-D29",
+      "disposition": "skip_filled_PR4_to_PR7",
+      "protectedBookSourceIds": [],
+      "sourceIds": [
+        "CTX-D29-LABEL",
+        "CP002-R01"
+      ]
+    },
+    {
+      "auditRank": 21,
+      "route": "/drugs/vorinostat",
+      "type": "drugs",
+      "auditWordCount": 941,
+      "guideId": "G-DRUG-D28",
+      "disposition": "skip_filled_PR4_to_PR7",
+      "protectedBookSourceIds": [],
+      "sourceIds": [
+        "CP002-R01",
+        "CTX-D28-LABEL"
+      ]
+    },
+    {
+      "auditRank": 22,
+      "route": "/conditions/parkinson-disease",
+      "type": "conditions",
+      "auditWordCount": 955,
+      "guideId": "G-CONDITION-C24",
+      "disposition": "eligible_not_selected",
+      "protectedBookSourceIds": [],
+      "sourceIds": [
+        "COND-C24-NINDS",
+        "CP016",
+        "MF-PD-MECHANISM-2016"
+      ]
+    },
+    {
+      "auditRank": 23,
+      "route": "/conditions/treatment-resistant-depression",
+      "type": "conditions",
+      "auditWordCount": 958,
+      "guideId": "G-CONDITION-C09",
+      "disposition": "eligible_not_selected",
+      "protectedBookSourceIds": [],
+      "sourceIds": [
+        "COND-C09-NIMH",
+        "P-D05-PAXD-2025",
+        "COND-C09-PAXD-PROTOCOL",
+        "P-D16-TRD-2022"
+      ]
+    },
+    {
+      "auditRank": 24,
+      "route": "/conditions/alzheimer-disease",
+      "type": "conditions",
+      "auditWordCount": 963,
+      "guideId": "G-CONDITION-C26",
+      "disposition": "eligible_not_selected",
+      "protectedBookSourceIds": [],
+      "sourceIds": [
+        "COND-C26-NIA",
+        "P-D16-AD-2020",
+        "COND-C27-MINOCIS-2017",
+        "COND-C28-MINO-2007",
+        "P-D30-ALZHEIMER"
+      ]
+    },
+    {
+      "auditRank": 25,
+      "route": "/conditions/head-and-neck-squamous-cell-carcinoma",
+      "type": "conditions",
+      "auditWordCount": 1027,
+      "guideId": "G-CONDITION-C12",
+      "disposition": "eligible_not_selected",
+      "protectedBookSourceIds": [],
+      "sourceIds": [
+        "COND-C12-NCI",
+        "COND-C12-VPA-2021",
+        "COND-C12-VPA-CELLS-2008",
+        "COND-C22-VPA-2019",
+        "P-D27-HNSCC"
+      ]
+    },
+    {
+      "auditRank": 26,
+      "route": "/drugs/maraviroc",
+      "type": "drugs",
+      "auditWordCount": 1030,
+      "guideId": "G-DRUG-D12",
+      "disposition": "skip_filled_PR4_to_PR7",
+      "protectedBookSourceIds": [],
+      "sourceIds": [
+        "CTX-D12-LABEL",
+        "P-D12-BREAST-2012",
+        "P-D12-CRC-2016",
+        "P-D12-PANCREAS-2018"
+      ]
+    },
+    {
+      "auditRank": 27,
+      "route": "/conditions/pancreatic-cancer",
+      "type": "conditions",
+      "auditWordCount": 1046,
+      "guideId": "G-CONDITION-C17",
+      "disposition": "eligible_not_selected",
+      "protectedBookSourceIds": [],
+      "sourceIds": [
+        "COND-C17-NCI",
+        "COND-C17-MET-2015",
+        "COND-C15-MA32-2022",
+        "P-D20-PANCREAS",
+        "P-D07-PANCREAS-2015"
+      ]
+    },
+    {
+      "auditRank": 28,
+      "route": "/drugs/fluvoxamine",
+      "type": "drugs",
+      "auditWordCount": 1048,
+      "guideId": "G-DRUG-D02",
+      "disposition": "selected",
+      "protectedBookSourceIds": [],
+      "sourceIds": [
+        "CTX-D02-LABEL",
+        "P-D02-ACTIV6-2023",
+        "P-REVIVE-2026",
+        "P-D02-SIGMA1-2019",
+        "COND-C02-COVIDOUT-2022"
+      ]
+    },
+    {
+      "auditRank": 29,
+      "route": "/conditions/multiple-sclerosis",
+      "type": "conditions",
+      "auditWordCount": 1159,
+      "guideId": "G-CONDITION-C27",
+      "disposition": "eligible_not_selected",
+      "protectedBookSourceIds": [],
+      "sourceIds": [
+        "COND-C27-NINDS",
+        "COND-C27-MINOCIS-2017",
+        "P-D16-AD-2020",
+        "COND-C28-MINO-2007",
+        "CP015-ARTICLE",
+        "P-D16-MS-2017"
+      ]
+    },
+    {
+      "auditRank": 30,
+      "route": "/conditions/glioblastoma",
+      "type": "conditions",
+      "auditWordCount": 1162,
+      "guideId": "G-CONDITION-C04",
+      "disposition": "eligible_not_selected",
+      "protectedBookSourceIds": [],
+      "sourceIds": [
+        "COND-C04-NCI",
+        "COND-C04-MEB-2021",
+        "P-D18-GBM",
+        "P-D09-GBM-2022",
+        "P-D13-GBM-2021"
+      ]
+    },
+    {
+      "auditRank": 31,
+      "route": "/drugs/disulfiram",
+      "type": "drugs",
+      "auditWordCount": 1164,
+      "guideId": "G-DRUG-D18",
+      "disposition": "hold_uses_protected_book_source",
+      "protectedBookSourceIds": [
+        "CP027-CH05"
+      ],
+      "sourceIds": [
+        "CTX-D18-LABEL",
+        "CTX-D18-NCI",
+        "P-D18-GBM",
+        "CP027-CH05",
+        "CP020-R01"
+      ]
+    },
+    {
+      "auditRank": 32,
+      "route": "/drugs/sildenafil",
+      "type": "drugs",
+      "auditWordCount": 1170,
+      "guideId": "G-DRUG-D26",
+      "disposition": "selected",
+      "protectedBookSourceIds": [],
+      "sourceIds": [
+        "CTX-D26-LABEL",
+        "CTX-D26-VIAGRA",
+        "P-D26-COMBINATION",
+        "P-D26-GBM",
+        "MECH-D26-HYPOXIA-2025"
+      ]
+    },
+    {
+      "auditRank": 33,
+      "route": "/drugs/fenbendazole",
+      "type": "drugs",
+      "auditWordCount": 1175,
+      "guideId": "G-DRUG-D10",
+      "disposition": "skip_filled_PR4_to_PR7",
+      "protectedBookSourceIds": [],
+      "sourceIds": [
+        "CTX-D10-FDA",
+        "P-D10-LIVER-2024",
+        "P-D10-OVARIAN-2024",
+        "P-D10-LIVER-2026",
+        "MECH-D10-MICROTUBULE-2018",
+        "P-D10-PROTEASOME-2012",
+        "P-D10-VITAMINS-2008",
+        "P-D10-EMT6-DIET-2012",
+        "P-D10-EMT6-2013",
+        "P-D10-H4IIE-2022",
+        "P-D10-CRC-CELLS-2022"
+      ]
+    },
+    {
+      "auditRank": 34,
+      "route": "/conditions/breast-cancer",
+      "type": "conditions",
+      "auditWordCount": 1191,
+      "guideId": "G-CONDITION-C15",
+      "disposition": "eligible_not_selected",
+      "protectedBookSourceIds": [],
+      "sourceIds": [
+        "COND-C15-NCI",
+        "COND-C15-MA32-METABOLIC",
+        "COND-C15-MA32-2022",
+        "MF-LABEL-2025",
+        "COND-C17-MET-2015",
+        "P-D13-BREAST-2013",
+        "P-D15-BREAST-2021"
+      ]
+    },
+    {
+      "auditRank": 35,
+      "route": "/drugs/hydroxychloroquine",
+      "type": "drugs",
+      "auditWordCount": 1215,
+      "guideId": "G-DRUG-D22",
+      "disposition": "hold_uses_protected_book_source",
+      "protectedBookSourceIds": [
+        "CP027-CH05",
+        "CP028-CH04"
+      ],
+      "sourceIds": [
+        "CTX-D22-LABEL",
+        "CP028-CH04",
+        "P-D22-OVARIAN",
+        "P-D22-RECOVERY",
+        "CP027-CH05"
+      ]
+    },
+    {
+      "auditRank": 36,
+      "route": "/drugs/mebendazole",
+      "type": "drugs",
+      "auditWordCount": 1236,
+      "guideId": "G-DRUG-D09",
+      "disposition": "eligible_not_selected",
+      "protectedBookSourceIds": [],
+      "sourceIds": [
+        "CTX-D09-LABEL",
+        "P-D09-OVARIAN-2021",
+        "P-D09-GBM-2022",
+        "P-D09-ORAL-2018",
+        "COND-C04-MEB-2021"
+      ]
+    },
+    {
+      "auditRank": 37,
+      "route": "/conditions/aging",
+      "type": "conditions",
+      "auditWordCount": 1245,
+      "guideId": "G-GOAL-AGING",
+      "disposition": "eligible_not_selected",
+      "protectedBookSourceIds": [],
+      "sourceIds": [
+        "AGING-NIH",
+        "AGING-RAPA-MICE-2009",
+        "AGING-PEARL-2025",
+        "MF-METPREVENT-2025",
+        "MF-MASTERS-2019",
+        "AGING-SIROLIMUS-LABEL",
+        "MF-LABEL-2025",
+        "P-D06-PERIODONTAL-2020"
+      ]
+    },
+    {
+      "auditRank": 38,
+      "route": "/conditions/sarcopenia",
+      "type": "conditions",
+      "auditWordCount": 1282,
+      "guideId": "G-CONDITION-C30",
+      "disposition": "eligible_not_selected",
+      "protectedBookSourceIds": [],
+      "sourceIds": [
+        "COND-C30-NIH",
+        "MF-METPREVENT-2025",
+        "MF-MASTERS-2019",
+        "MF-LABEL-2025",
+        "P-D24-MUSCLE"
+      ]
+    },
+    {
+      "auditRank": 39,
+      "route": "/conditions/prostate-cancer",
+      "type": "conditions",
+      "auditWordCount": 1313,
+      "guideId": "G-CONDITION-C13",
+      "disposition": "eligible_not_selected",
+      "protectedBookSourceIds": [],
+      "sourceIds": [
+        "COND-C13-NCI",
+        "P-D07-PROSTATE-2013",
+        "P-D07-BCC-2014",
+        "P-D21-PROSTATE",
+        "P-D30-PROSTATE",
+        "MF-STAMPEDE-2025"
+      ]
+    },
+    {
+      "auditRank": 40,
+      "route": "/conditions/schizophrenia",
+      "type": "conditions",
+      "auditWordCount": 1357,
+      "guideId": "G-CONDITION-C25",
+      "disposition": "eligible_not_selected",
+      "protectedBookSourceIds": [],
+      "sourceIds": [
+        "COND-C25-NIMH",
+        "MF-SCHIZOPHRENIA-PARENT-2023",
+        "COND-C25-BENEMIN-2018",
+        "MF-LABEL-2025",
+        "CP017"
+      ]
+    },
+    {
+      "auditRank": 41,
+      "route": "/drugs/niclosamide",
+      "type": "drugs",
+      "auditWordCount": 1371,
+      "guideId": "G-DRUG-D21",
+      "disposition": "hold_uses_protected_book_source",
+      "protectedBookSourceIds": [
+        "CP027-CH05"
+      ],
+      "sourceIds": [
+        "CTX-D21-LABEL",
+        "P-D21-PROSTATE",
+        "P-D21-WNT",
+        "P-D21-CRC",
+        "P-D21-LUNG",
+        "CP027-CH05",
+        "P-D21-CORRECTION",
+        "CTX-D21-NCI"
+      ]
+    },
+    {
+      "auditRank": 42,
+      "route": "/drugs/nirmatrelvir",
+      "type": "drugs",
+      "auditWordCount": 1371,
+      "guideId": "G-DRUG-D03",
+      "disposition": "eligible_not_selected",
+      "protectedBookSourceIds": [],
+      "sourceIds": [
+        "CTX-D03-LABEL",
+        "P-STOPPASC-2024",
+        "P-RECOVER-2026"
+      ]
+    },
+    {
+      "auditRank": 43,
+      "route": "/conditions/colorectal-cancer",
+      "type": "conditions",
+      "auditWordCount": 1377,
+      "guideId": "G-CONDITION-C16",
+      "disposition": "eligible_not_selected",
+      "protectedBookSourceIds": [],
+      "sourceIds": [
+        "COND-C16-NCI",
+        "COND-C16-ALASCCA-2025",
+        "COND-C20-ASP-2020",
+        "P-D30-CRC",
+        "P-D15-COLON-2021",
+        "MF-ADENOMA-2016",
+        "P-D08-CRC-2014"
+      ]
+    },
+    {
+      "auditRank": 44,
+      "route": "/drugs/naltrexone",
+      "type": "drugs",
+      "auditWordCount": 1433,
+      "guideId": "G-DRUG-D04",
+      "disposition": "eligible_not_selected",
+      "protectedBookSourceIds": [],
+      "sourceIds": [
+        "CTX-D04-LABEL",
+        "P-D04-LONGCOVID-2023",
+        "P-D04-FIBRO-2024",
+        "P-D04-CSBD-2022",
+        "P-D04-TRPM3-2019"
+      ]
+    },
+    {
+      "auditRank": 45,
+      "route": "/drugs/atorvastatin",
+      "type": "drugs",
+      "auditWordCount": 1460,
+      "guideId": "G-DRUG-D13",
+      "disposition": "eligible_not_selected",
+      "protectedBookSourceIds": [],
+      "sourceIds": [
+        "CTX-D13-LABEL",
+        "P-D13-PROSTATE-2018",
+        "COND-C29-ATOR-2018",
+        "P-D13-GBM-2021",
+        "P-D13-BREAST-2013",
+        "P-D13-AML-2019"
+      ]
+    },
+    {
+      "auditRank": 46,
+      "route": "/drugs/simvastatin",
+      "type": "drugs",
+      "auditWordCount": 1470,
+      "guideId": "G-DRUG-D20",
+      "disposition": "hold_uses_protected_book_source",
+      "protectedBookSourceIds": [
+        "CP027-CH01",
+        "CP027-CH05"
+      ],
+      "sourceIds": [
+        "CTX-D20-LABEL",
+        "CP027-CH05",
+        "P-D20-VITILIGO",
+        "P-D20-PANCREAS",
+        "P-D20-MYELOMA",
+        "CP027-CH01"
+      ]
+    },
+    {
+      "auditRank": 47,
+      "route": "/conditions/epithelial-ovarian-or-fallopian-tube-carcinoma",
+      "type": "conditions",
+      "auditWordCount": 1480,
+      "guideId": "G-CONDITION-C03",
+      "disposition": "eligible_not_selected",
+      "protectedBookSourceIds": [],
+      "sourceIds": [
+        "COND-C03-NCI",
+        "COND-C03-ITRA-2014",
+        "P-D07-PROSTATE-2013",
+        "COND-C14-ITRA-2013",
+        "P-D07-BCC-2014",
+        "P-D22-OVARIAN",
+        "P-D30-OVARIAN"
+      ]
+    },
+    {
+      "auditRank": 48,
+      "route": "/drugs/thalidomide",
+      "type": "drugs",
+      "auditWordCount": 1481,
+      "guideId": "G-DRUG-D30",
+      "disposition": "hold_uses_protected_book_source",
+      "protectedBookSourceIds": [
+        "CP027-CH11",
+        "CP027-CH15"
+      ],
+      "sourceIds": [
+        "CTX-D30-LABEL",
+        "P-D30-OVARIAN",
+        "P-D30-ALZHEIMER",
+        "P-D30-PROSTATE",
+        "P-D30-CRC",
+        "CP027-CH11",
+        "CP027-CH15"
+      ]
+    },
+    {
+      "auditRank": 49,
+      "route": "/drugs/valproic-acid",
+      "type": "drugs",
+      "auditWordCount": 1495,
+      "guideId": "G-DRUG-D27",
+      "disposition": "hold_uses_protected_book_source",
+      "protectedBookSourceIds": [
+        "CP027-CH05",
+        "CP027-CH11"
+      ],
+      "sourceIds": [
+        "CTX-D27-NCI",
+        "P-D27-HNSCC",
+        "COND-C22-VPA-2019",
+        "P-D27-BREAST",
+        "CTX-D27-LABEL",
+        "CP027-CH05",
+        "CP027-CH11"
+      ]
+    },
+    {
+      "auditRank": 50,
+      "route": "/drugs/tadalafil",
+      "type": "drugs",
+      "auditWordCount": 1510,
+      "guideId": null,
+      "disposition": "eligible_not_selected",
+      "protectedBookSourceIds": [],
+      "sourceIds": []
+    },
+    {
+      "auditRank": 51,
+      "route": "/drugs/propranolol",
+      "type": "drugs",
+      "auditWordCount": 1537,
+      "guideId": "G-DRUG-D19",
+      "disposition": "hold_uses_protected_book_source",
+      "protectedBookSourceIds": [
+        "CP027-CH01"
+      ],
+      "sourceIds": [
+        "CTX-D19-LABEL",
+        "P-D19-BREAST",
+        "P-D19-MELANOMA",
+        "CP027-CH01",
+        "P-D19-PANCREAS",
+        "P-D19-PROSTATE",
+        "COND-C18-PROP-2021"
+      ]
+    },
+    {
+      "auditRank": 52,
+      "route": "/drugs/doxycycline",
+      "type": "drugs",
+      "auditWordCount": 1618,
+      "guideId": "G-DRUG-D17",
+      "disposition": "eligible_not_selected",
+      "protectedBookSourceIds": [],
+      "sourceIds": [
+        "CTX-D17-LABEL",
+        "CTX-D17-MITOCHONDRIA",
+        "CTX-D17-PERIODONTAL",
+        "P-D17-PRINCIPLE",
+        "P-D17-BREAST",
+        "P-D17-ORAL",
+        "P-D17-PANCREAS",
+        "CP006-R01",
+        "COND-C10-DOXY-2004"
+      ]
+    },
+    {
+      "auditRank": 53,
+      "route": "/drugs/pioglitazone",
+      "type": "drugs",
+      "auditWordCount": 1618,
+      "guideId": "G-DRUG-D24",
+      "disposition": "hold_uses_protected_book_source",
+      "protectedBookSourceIds": [
+        "CP027-CH01"
+      ],
+      "sourceIds": [
+        "CTX-D24-LABEL",
+        "COND-C23-ACTIM-2017",
+        "P-D24-BODY",
+        "P-D24-MUSCLE",
+        "P-D24-CML",
+        "P-D24-AML",
+        "CP027-CH01",
+        "CTX-D24-NCI"
+      ]
+    },
+    {
+      "auditRank": 54,
+      "route": "/drugs/fluconazole",
+      "type": "drugs",
+      "auditWordCount": 1660,
+      "guideId": "G-DRUG-D34",
+      "disposition": "skip_filled_PR4_to_PR7",
+      "protectedBookSourceIds": [],
+      "sourceIds": [
+        "CTX-D34-MEDLINEPLUS",
+        "CTX-off-label-1",
+        "CTX-D34-LABEL",
+        "CTX-CANDIDA-GUIDELINE",
+        "CTX-GUIDE-2",
+        "CTX-CANDIDA-CDC",
+        "CTX-TERM-HYPHAE",
+        "CTX-TERM-BIOFILM",
+        "MECH-D34-HYPHAE-1999",
+        "MECH-D34-BIOFILM-2019",
+        "MECH-D07-HEDGEHOG-2010"
+      ]
+    },
+    {
+      "auditRank": 55,
+      "route": "/conditions/acute-covid-19",
+      "type": "conditions",
+      "auditWordCount": 1661,
+      "guideId": "G-CONDITION-C02",
+      "disposition": "eligible_not_selected",
+      "protectedBookSourceIds": [],
+      "sourceIds": [
+        "COND-C02-CDC",
+        "COND-C02-COVIDOUT-2022",
+        "MF-COVID-VIRAL-2024",
+        "P-COVIDOUT-2023",
+        "P-D17-PRINCIPLE",
+        "P-D22-RECOVERY",
+        "P-D02-ACTIV6-2023"
+      ]
+    },
+    {
+      "auditRank": 56,
+      "route": "/drugs/ivermectin",
+      "type": "drugs",
+      "auditWordCount": 1663,
+      "guideId": "G-DRUG-D08",
+      "disposition": "eligible_not_selected",
+      "protectedBookSourceIds": [],
+      "sourceIds": [
+        "CTX-D08-LABEL",
+        "P-D08-ACTIV6-2023",
+        "P-D08-OVARIAN-2009",
+        "P-D08-GBM-2016",
+        "P-D08-BREAST-2016",
+        "P-D08-CRC-2014",
+        "P-D08-HCC-2022",
+        "P-D08-ANTIVIRAL-2023",
+        "COND-C02-COVIDOUT-2022"
+      ]
+    },
+    {
+      "auditRank": 57,
+      "route": "/conditions/non-small-cell-lung-cancer",
+      "type": "conditions",
+      "auditWordCount": 1793,
+      "guideId": "G-CONDITION-C14",
+      "disposition": "eligible_not_selected",
+      "protectedBookSourceIds": [],
+      "sourceIds": [
+        "COND-C14-NCI",
+        "COND-C14-ITRA-2013",
+        "P-D07-PROSTATE-2013",
+        "P-D07-LUNG-2013",
+        "MF-NRG-LU001-2021",
+        "MF-ALMERA-2021",
+        "MECH-D10-MICROTUBULE-2018"
+      ]
+    },
+    {
+      "auditRank": 58,
+      "route": "/drugs/sirolimus",
+      "type": "drugs",
+      "auditWordCount": 1823,
+      "guideId": "G-DRUG-D06",
+      "disposition": "eligible_not_selected",
+      "protectedBookSourceIds": [],
+      "sourceIds": [
+        "CTX-D06-LABEL",
+        "CTX-D06-OVARIAN-TRIAL",
+        "P-D06-BREAST-2015",
+        "P-D06-AML-2018",
+        "P-D06-PERIODONTAL-2020",
+        "P-D06-PROSTATE-2010",
+        "P-D06-RECTAL-2015",
+        "P-D06-CML-2008",
+        "MECH-D06-AUTOPHAGY-2009",
+        "AGING-PEARL-2025",
+        "AGING-RAPA-MICE-2009",
+        "AGING-SIROLIMUS-LABEL"
+      ]
+    },
+    {
+      "auditRank": 59,
+      "route": "/drugs/aspirin",
+      "type": "drugs",
+      "auditWordCount": 1948,
+      "guideId": "G-DRUG-D23",
+      "disposition": "hold_uses_protected_book_source",
+      "protectedBookSourceIds": [
+        "CP027-CH05",
+        "CP027-CH11"
+      ],
+      "sourceIds": [
+        "COND-C16-ALASCCA-2025",
+        "COND-C20-ASP-2020",
+        "P-D23-MYELOMA",
+        "CP015-ARTICLE",
+        "CTX-D23-LABEL",
+        "CP027-CH05",
+        "CP027-CH11",
+        "CTX-D23-NCI",
+        "P-D23-OVARIAN",
+        "P-D23-HNSCC"
+      ]
+    },
+    {
+      "auditRank": 60,
+      "route": "/drugs/celecoxib",
+      "type": "drugs",
+      "auditWordCount": 1970,
+      "guideId": "G-DRUG-D15",
+      "disposition": "eligible_not_selected",
+      "protectedBookSourceIds": [],
+      "sourceIds": [
+        "CTX-D15-LABEL",
+        "P-D15-BREAST-2021",
+        "P-D15-COLON-2021",
+        "P-D15-HCC-2017",
+        "P-D15-COLON-2024",
+        "P-D15-LONGCOVID-2026",
+        "P-D15-OVARIAN-2012",
+        "P-D15-HEADNECK-2014",
+        "P-D15-PANCREAS-2005"
+      ]
+    },
+    {
+      "auditRank": 61,
+      "route": "/drugs/minocycline",
+      "type": "drugs",
+      "auditWordCount": 2049,
+      "guideId": "G-DRUG-D16",
+      "disposition": "eligible_not_selected",
+      "protectedBookSourceIds": [],
+      "sourceIds": [
+        "CTX-D16-LABEL",
+        "P-D16-AD-2020",
+        "COND-C25-BENEMIN-2018",
+        "COND-C28-MINO-2007",
+        "P-D16-MS-2017",
+        "P-D16-VITILIGO-2014",
+        "P-D16-OVARIAN-2013",
+        "P-D16-TRD-2022",
+        "P-D16-PD-2008",
+        "COND-C27-MINOCIS-2017"
+      ]
+    },
+    {
+      "auditRank": 62,
+      "route": "/conditions/long-covid",
+      "type": "conditions",
+      "auditWordCount": 2352,
+      "guideId": "G-LONGCOVID",
+      "disposition": "eligible_not_selected",
+      "protectedBookSourceIds": [],
+      "sourceIds": [
+        "COND-C01-CDC",
+        "P-COVIDOUT-2023",
+        "P-STOPPASC-2024",
+        "P-ACTIV6-2026",
+        "P-KOREA-2026",
+        "P-RECOVER-2026",
+        "COND-C02-CDC",
+        "MF-LABEL-2025",
+        "MF-COVID-VIRAL-2024"
+      ]
+    },
+    {
+      "auditRank": 63,
+      "route": "/drugs/itraconazole",
+      "type": "drugs",
+      "auditWordCount": 3229,
+      "guideId": "G-DRUG-D07",
+      "disposition": "hold_azole_mechanism_scope",
+      "protectedBookSourceIds": [],
+      "sourceIds": [
+        "CTX-D07-LABEL",
+        "P-D07-BCC-2014",
+        "P-D07-LUNG-2013",
+        "COND-C03-ITRA-2014",
+        "P-D07-CRC-2018",
+        "P-D07-PROSTATE-2013",
+        "P-D07-PANCREAS-2015",
+        "P-D07-MELANOMA-2017",
+        "P-D07-AML-2026",
+        "P-D07-MYELOMA-2016",
+        "COND-C14-ITRA-2013",
+        "MECH-D07-HEDGEHOG-2010",
+        "MECH-D07-CHOLESTEROL-2010",
+        "MECH-D07-NPC1-2017"
+      ]
+    },
+    {
+      "auditRank": 64,
+      "route": "/drugs/metformin",
+      "type": "drugs",
+      "auditWordCount": 6428,
+      "guideId": "G-METFORMIN",
+      "disposition": "eligible_not_selected",
+      "protectedBookSourceIds": [],
+      "sourceIds": [
+        "MF-LABEL-2025",
+        "CP016",
+        "CP017",
+        "CP018",
+        "P-COVIDOUT-2023",
+        "P-KOREA-2026",
+        "MF-PD-MECHANISM-2016",
+        "MF-COVID-VIRAL-2024",
+        "MF-SCHIZOPHRENIA-PARENT-2023",
+        "MF-METPREVENT-2025",
+        "P-ACTIV6-2026",
+        "MF-STAMPEDE-2025",
+        "MF-NRG-LU001-2021",
+        "COND-C15-MA32-2022",
+        "COND-C17-MET-2015",
+        "MF-ADENOMA-2016",
+        "MF-MASTERS-2019",
+        "P-REVIVE-2026",
+        "COND-C02-COVIDOUT-2022",
+        "MF-ALMERA-2021",
+        "MF-MYELOMA-MODELS-2018",
+        "MF-FDA-GENERICS",
+        "COND-C15-MA32-METABOLIC",
+        "MF-COLON-MECHANISM-2010"
+      ]
+    }
+  ]
+}

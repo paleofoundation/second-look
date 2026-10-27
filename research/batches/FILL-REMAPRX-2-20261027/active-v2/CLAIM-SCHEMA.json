@@ -1,0 +1,141 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "FILL-REMAPRX-2 narrative source claim",
+  "type": "object",
+  "required": [
+    "claimId",
+    "page",
+    "statement",
+    "sourceIds",
+    "sourceBindings",
+    "scope",
+    "locators",
+    "readingDepth",
+    "grade",
+    "rationale",
+    "domains",
+    "assessedAt",
+    "reviewState"
+  ],
+  "properties": {
+    "claimId": {
+      "type": "string"
+    },
+    "page": {
+      "type": "string"
+    },
+    "statement": {
+      "type": "string"
+    },
+    "sourceIds": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "sourceBindings": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "sourceId",
+          "sha256"
+        ],
+        "properties": {
+          "sourceId": {
+            "type": "string"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        }
+      }
+    },
+    "scope": {
+      "type": "object"
+    },
+    "locators": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "sourceId",
+          "locator"
+        ],
+        "properties": {
+          "sourceId": {
+            "type": "string"
+          },
+          "locator": {
+            "type": "string",
+            "minLength": 10
+          }
+        }
+      }
+    },
+    "readingDepth": {
+      "enum": [
+        "full_text",
+        "official_label",
+        "existing_canonical_metadata_only"
+      ]
+    },
+    "grade": {
+      "enum": [
+        "Low",
+        "Moderate",
+        "High",
+        "official_context",
+        "not_established"
+      ]
+    },
+    "rationale": {
+      "type": "string",
+      "minLength": 30
+    },
+    "domains": {
+      "type": "object",
+      "required": [
+        "Study methods",
+        "Directness",
+        "Precision",
+        "Consistency",
+        "Source integrity"
+      ],
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "judgment",
+          "rationale",
+          "sourceIds"
+        ],
+        "properties": {
+          "judgment": {
+            "type": "string"
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 15
+          },
+          "sourceIds": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "assessedAt": {
+      "type": "string"
+    },
+    "reviewState": {
+      "const": "AI_assisted_draft_not_independently_or_human_approved"
+    }
+  }
+}

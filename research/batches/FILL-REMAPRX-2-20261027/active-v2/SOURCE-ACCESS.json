@@ -1,0 +1,366 @@
+{
+  "lookedUpAt": "2026-10-27T09:48:35.808991+02:00",
+  "lookupScope": [
+    "Existing canonical acquisition source records: exact source URL, PMID, PMCID and prior title-based verified bindings.",
+    "Existing step2 original-file bindings and mechanism fulltext manifest paths.",
+    "Filename inventory under owned research, papers, papers-for-claude, papers-for-chatgpt and original Drug Repurposing local stores."
+  ],
+  "limits": "Missing means no usable exact file located within this bounded local lookup, not absent from the literature. Prior extraction/source prose is not a substitute for an original file.",
+  "sources": [
+    {
+      "sourceId": "COND-C02-COVIDOUT-2022",
+      "url": "https://www.nejm.org/doi/abs/10.1056/NEJMoa2201662",
+      "title": "Randomized Trial of Metformin, Ivermectin, and Fluvoxamine for Covid-19",
+      "files": [
+        {
+          "rootId": "RULE_WORK",
+          "path": "ingest/SL-F01-F02-20261011/receipt/input/return/F01/PRIMARY/A-F01-R031__original_report__randomized-trial-of-metformin-ivermectin-and-fluvo.html",
+          "sha256": "bbd529be8738b59d0e885a2f0da3f807d949c1c7527098635d304aa3d84894c7",
+          "bytes": 339905,
+          "bindingBasis": "prior_exact_source_binding",
+          "expectedSha256": "bbd529be8738b59d0e885a2f0da3f807d949c1c7527098635d304aa3d84894c7",
+          "readingDepth": "not_read_at_plan_time"
+        }
+      ],
+      "localLookupState": "found_hashed",
+      "quarantinedInOwnedMetadata": false,
+      "acquisitionSourceIds": []
+    },
+    {
+      "sourceId": "COND-C05-LDN-2025",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40214857/",
+      "title": "Effect of naltrexone on spinal and supraspinal pain mechanisms: exploratory FINAL trial outcomes",
+      "files": [
+        {
+          "rootId": "RESEARCH",
+          "path": "work/ingest/FETCH30/source-files/32/3272d5b90b2af16428d821bf6d6540640b1462983003e73106e21db9de338656.pdf",
+          "sha256": "3272d5b90b2af16428d821bf6d6540640b1462983003e73106e21db9de338656",
+          "bytes": 665098,
+          "bindingBasis": "url_or_identifier_in_existing_source_record",
+          "expectedSha256": "3272d5b90b2af16428d821bf6d6540640b1462983003e73106e21db9de338656",
+          "readingDepth": "not_read_at_plan_time"
+        },
+        {
+          "rootId": "RESEARCH",
+          "path": "work/ingest/FETCH30/source-files/a8/a8dc483187239fe950ef606cb27aff5d836c4d32130f4eea837025a715a9a160.pdf",
+          "sha256": "a8dc483187239fe950ef606cb27aff5d836c4d32130f4eea837025a715a9a160",
+          "bytes": 86565,
+          "bindingBasis": "url_or_identifier_in_existing_source_record",
+          "expectedSha256": "a8dc483187239fe950ef606cb27aff5d836c4d32130f4eea837025a715a9a160",
+          "readingDepth": "not_read_at_plan_time"
+        }
+      ],
+      "localLookupState": "found_hashed",
+      "quarantinedInOwnedMetadata": false,
+      "acquisitionSourceIds": [
+        "B-R0098-F01",
+        "B-R0098-S01",
+        "A-F02-R2204-F01",
+        "A-F02-R2204-S01"
+      ]
+    },
+    {
+      "sourceId": "COND-C05-NIAMS",
+      "url": "https://www.niams.nih.gov/health-topics/fibromyalgia",
+      "title": "Fibromyalgia — NIAMS",
+      "files": [],
+      "localLookupState": "missing_after_wider_local_lookup",
+      "quarantinedInOwnedMetadata": false,
+      "acquisitionSourceIds": []
+    },
+    {
+      "sourceId": "COND-C08-IPGAD-2023",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10739833/",
+      "title": "Clinical characterisation of women with persistent genital arousal disorder: the iPGAD study",
+      "files": [],
+      "localLookupState": "missing_after_wider_local_lookup",
+      "quarantinedInOwnedMetadata": false,
+      "acquisitionSourceIds": []
+    },
+    {
+      "sourceId": "COND-C08-NEURO-2020",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7004503/",
+      "title": "Persistent genital arousal disorder: a special sense neuropathy",
+      "files": [],
+      "localLookupState": "missing_after_wider_local_lookup",
+      "quarantinedInOwnedMetadata": false,
+      "acquisitionSourceIds": []
+    },
+    {
+      "sourceId": "COND-C12-VPA-2021",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7864693/",
+      "title": "Valproic acid with cisplatin-based chemoradiation in locally advanced head and neck squamous cell carcinoma",
+      "files": [],
+      "localLookupState": "missing_after_wider_local_lookup",
+      "quarantinedInOwnedMetadata": false,
+      "acquisitionSourceIds": []
+    },
+    {
+      "sourceId": "COND-C22-NCI",
+      "url": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/acute-myeloid-leukemia",
+      "title": "NCI Dictionary: acute myeloid leukemia",
+      "files": [],
+      "localLookupState": "missing_after_wider_local_lookup",
+      "quarantinedInOwnedMetadata": false,
+      "acquisitionSourceIds": []
+    },
+    {
+      "sourceId": "COND-C22-VPA-2019",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31794324/",
+      "title": "Decitabine with valproate and all-trans retinoic acid in older AML",
+      "files": [],
+      "localLookupState": "missing_after_wider_local_lookup",
+      "quarantinedInOwnedMetadata": false,
+      "acquisitionSourceIds": []
+    },
+    {
+      "sourceId": "COND-C23-ACTIM-2017",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5434901/",
+      "title": "Pioglitazone with imatinib: ACTIM proof-of-concept study in CML",
+      "files": [
+        {
+          "rootId": "RESEARCH",
+          "path": "work/ingest/FETCH30/source-files/4d/4df9256c8ba85d5c71e88ea4a93c76be39ba2a0d72d35ec0315f6ed0af4e26f8.pdf",
+          "sha256": "4df9256c8ba85d5c71e88ea4a93c76be39ba2a0d72d35ec0315f6ed0af4e26f8",
+          "bytes": 297386,
+          "bindingBasis": "url_or_identifier_in_existing_source_record",
+          "expectedSha256": "4df9256c8ba85d5c71e88ea4a93c76be39ba2a0d72d35ec0315f6ed0af4e26f8",
+          "readingDepth": "not_read_at_plan_time"
+        }
+      ],
+      "localLookupState": "found_hashed",
+      "quarantinedInOwnedMetadata": false,
+      "acquisitionSourceIds": [
+        "B-R0597-F01"
+      ]
+    },
+    {
+      "sourceId": "COND-C23-NCI",
+      "url": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/chronic-myeloid-leukemia",
+      "title": "NCI Dictionary: chronic myeloid leukemia",
+      "files": [],
+      "localLookupState": "missing_after_wider_local_lookup",
+      "quarantinedInOwnedMetadata": false,
+      "acquisitionSourceIds": []
+    },
+    {
+      "sourceId": "COND-C23-PPARG-2015",
+      "url": "https://www.nature.com/articles/nature15248",
+      "title": "Erosion of the chronic myeloid leukaemia stem cell pool by PPARγ agonists",
+      "files": [],
+      "localLookupState": "missing_after_wider_local_lookup",
+      "quarantinedInOwnedMetadata": false,
+      "acquisitionSourceIds": []
+    },
+    {
+      "sourceId": "COND-C31-MANAGEMENT",
+      "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/managing-diabetes",
+      "title": "NIDDK: Managing diabetes",
+      "files": [],
+      "localLookupState": "missing_after_wider_local_lookup",
+      "quarantinedInOwnedMetadata": false,
+      "acquisitionSourceIds": []
+    },
+    {
+      "sourceId": "COND-C31-NIDDK",
+      "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/",
+      "title": "NIDDK: What is diabetes?",
+      "files": [],
+      "localLookupState": "missing_after_wider_local_lookup",
+      "quarantinedInOwnedMetadata": false,
+      "acquisitionSourceIds": []
+    },
+    {
+      "sourceId": "CTX-D02-LABEL",
+      "url": "https://www.dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=7ecd83ec-88f5-4f85-9cc2-9068375d8820&type=display",
+      "title": "Fluvoxamine — US prescribing information",
+      "files": [],
+      "localLookupState": "missing_after_wider_local_lookup",
+      "quarantinedInOwnedMetadata": false,
+      "acquisitionSourceIds": [],
+      "candidateLabelFiles": [
+        {
+          "rootId": "RESEARCH",
+          "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/CONTEXT/B01-dailymed-fluvoxamine-IR-apotex.pdf",
+          "sha256": "18b59e443082dc89cc48197b9331647d83b984dd3c61ec52ca3c48baf49407c6",
+          "bytes": 627512,
+          "identityState": "requires_product_and_source_URL_match_before_use"
+        }
+      ]
+    },
+    {
+      "sourceId": "CTX-D26-LABEL",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=67459229-971e-4753-96d4-fb0e6bac94c0",
+      "title": "Sildenafil pulmonary arterial hypertension prescribing information",
+      "files": [],
+      "localLookupState": "missing_after_wider_local_lookup",
+      "quarantinedInOwnedMetadata": false,
+      "acquisitionSourceIds": []
+    },
+    {
+      "sourceId": "CTX-D26-VIAGRA",
+      "url": "https://www.dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=ae2079a2-f3a9-4739-9611-0742b71e4761&type=display",
+      "title": "Viagra sildenafil prescribing information",
+      "files": [],
+      "localLookupState": "missing_after_wider_local_lookup",
+      "quarantinedInOwnedMetadata": false,
+      "acquisitionSourceIds": []
+    },
+    {
+      "sourceId": "CTX-GUIDE-2",
+      "url": "https://www.nccih.nih.gov/health/know-science/how-to-make-sense-of-a-scientific-journal-article/methods/types-of-research",
+      "title": "NCCIH: Types of Research",
+      "files": [],
+      "localLookupState": "missing_after_wider_local_lookup",
+      "quarantinedInOwnedMetadata": false,
+      "acquisitionSourceIds": []
+    },
+    {
+      "sourceId": "CTX-REPURPOSING-NCATS",
+      "url": "https://sites.google.com/ncats.nih.gov/therapeutic-repurposing/questions-and-answers",
+      "title": "NCATS: Drug repurposing questions and answers",
+      "files": [],
+      "localLookupState": "missing_after_wider_local_lookup",
+      "quarantinedInOwnedMetadata": false,
+      "acquisitionSourceIds": []
+    },
+    {
+      "sourceId": "MECH-D26-HYPOXIA-2025",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11765346/",
+      "title": "Phosphodiesterase inhibition restores hypoxia-induced cerebrovascular dysfunction subsequent to improved systemic redox homeostasis: A randomized, double-blind, placebo-controlled crossover study",
+      "files": [
+        {
+          "rootId": "ORIGINAL_SITE",
+          "path": "editorial/mechanism-expansion/sildenafil-hypoxia-2025.html",
+          "sha256": "9200c0ec6f777b30ea28443eef256850f2371ce374c3c5fe122ff6edb9fa60a8",
+          "bytes": 268687,
+          "bindingBasis": "prior_exact_source_binding",
+          "expectedSha256": "9200c0ec6f777b30ea28443eef256850f2371ce374c3c5fe122ff6edb9fa60a8",
+          "readingDepth": "not_read_at_plan_time"
+        }
+      ],
+      "localLookupState": "found_hashed",
+      "quarantinedInOwnedMetadata": false,
+      "acquisitionSourceIds": []
+    },
+    {
+      "sourceId": "MF-LABEL-2025",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=542cec22-eeae-4704-9bb6-4176640e5ea8",
+      "title": "Metformin hydrochloride tablets: U.S. prescribing information",
+      "files": [],
+      "localLookupState": "missing_after_wider_local_lookup",
+      "quarantinedInOwnedMetadata": false,
+      "acquisitionSourceIds": [],
+      "candidateLabelFiles": [
+        {
+          "rootId": "RESEARCH",
+          "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/CONTEXT/B01-dailymed-metformin-IR-zydus.pdf",
+          "sha256": "ce0cb5b9e082fd29b24019658a88dfd37e5ff7c8687106a9917cf7391af09349",
+          "bytes": 360534,
+          "identityState": "requires_product_and_source_URL_match_before_use"
+        }
+      ]
+    },
+    {
+      "sourceId": "P-D02-ACTIV6-2023",
+      "url": "https://jamanetwork.com/journals/jama/fullarticle/2812204",
+      "title": "Higher-Dose Fluvoxamine and Time to Sustained Recovery in Outpatients With COVID-19: The ACTIV-6 Randomized Clinical Trial",
+      "files": [
+        {
+          "rootId": "RULE_WORK",
+          "path": "ingest/SL-F01-F02-20261011/receipt/input/return/F02/PRIMARY/A-F02-R4141__original_report__higher-dose-fluvoxamine-and-time-to-sustained-reco.html",
+          "sha256": "609becf81c10eec73de2afa40445642de6ed03b7401613fc71650a433b70ec41",
+          "bytes": 209554,
+          "bindingBasis": "prior_exact_source_binding",
+          "expectedSha256": "609becf81c10eec73de2afa40445642de6ed03b7401613fc71650a433b70ec41",
+          "readingDepth": "not_read_at_plan_time"
+        }
+      ],
+      "localLookupState": "found_hashed",
+      "quarantinedInOwnedMetadata": false,
+      "acquisitionSourceIds": []
+    },
+    {
+      "sourceId": "P-D02-SIGMA1-2019",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6936250/",
+      "title": "Modulation of the Sigma-1 Receptor–IRE1 pathway is beneficial in preclinical models of inflammation and sepsis",
+      "files": [],
+      "localLookupState": "missing_after_wider_local_lookup",
+      "quarantinedInOwnedMetadata": false,
+      "acquisitionSourceIds": []
+    },
+    {
+      "sourceId": "P-D04-CSBD-2022",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9453901/",
+      "title": "Tolerability and efficacy of paroxetine and naltrexone for treatment of compulsive sexual behaviour disorder",
+      "files": [],
+      "localLookupState": "missing_after_wider_local_lookup",
+      "quarantinedInOwnedMetadata": false,
+      "acquisitionSourceIds": []
+    },
+    {
+      "sourceId": "P-D04-FIBRO-2024",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38258677/",
+      "title": "Naltrexone 6 mg once daily versus placebo in women with fibromyalgia: a randomised, double-blind, placebo-controlled trial",
+      "files": [
+        {
+          "rootId": "RULE_WORK",
+          "path": "ingest/SL-F01-F02-20261011/receipt/input/return/F02/CONTEXT/OTHER/A-F02-REG-NCT04270877.json",
+          "sha256": "026d3f8fe5275fcf9bcebf7cee73c36cea120464290af6ddc50b0744ef587784",
+          "bytes": 25792,
+          "bindingBasis": "url_or_identifier_in_existing_source_record",
+          "expectedSha256": "026d3f8fe5275fcf9bcebf7cee73c36cea120464290af6ddc50b0744ef587784",
+          "readingDepth": "not_read_at_plan_time"
+        }
+      ],
+      "localLookupState": "found_hashed",
+      "quarantinedInOwnedMetadata": false,
+      "acquisitionSourceIds": [
+        "A-F02-R2184-F00",
+        "A-F02-REG-NCT04270877-F01"
+      ]
+    },
+    {
+      "sourceId": "P-D26-COMBINATION",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24353313/",
+      "title": "PDE5 inhibitors enhance chemotherapy killing in gastrointestinal and genitourinary cancer cells",
+      "files": [],
+      "localLookupState": "missing_after_wider_local_lookup",
+      "quarantinedInOwnedMetadata": false,
+      "acquisitionSourceIds": []
+    },
+    {
+      "sourceId": "P-D26-GBM",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5355091/",
+      "title": "Type 5 phosphodiesterase regulates glioblastoma aggressiveness and clinical outcome",
+      "files": [],
+      "localLookupState": "missing_after_wider_local_lookup",
+      "quarantinedInOwnedMetadata": false,
+      "acquisitionSourceIds": []
+    },
+    {
+      "sourceId": "P-REVIVE-2026",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41911553/",
+      "title": "The Effect of Fluvoxamine and Metformin for Fatigue in Patients With Long COVID : An Adaptive Randomized Trial.",
+      "files": [
+        {
+          "rootId": "RULE_WORK",
+          "path": "ingest/SL-F01-F02-20261011/receipt/input/return/F01/CONTEXT/OTHER/A-F01-REG-NCT06128967.json",
+          "sha256": "dc6f902eb3c23fb074cd79725992602d73af69717a61950608a3f559c98f2b42",
+          "bytes": 15623,
+          "bindingBasis": "url_or_identifier_in_existing_source_record",
+          "expectedSha256": "dc6f902eb3c23fb074cd79725992602d73af69717a61950608a3f559c98f2b42",
+          "readingDepth": "not_read_at_plan_time"
+        }
+      ],
+      "localLookupState": "found_hashed",
+      "quarantinedInOwnedMetadata": true,
+      "acquisitionSourceIds": [
+        "B-R0010-F00",
+        "A-F01-R009-F00",
+        "A-F01-R010-F00",
+        "A-F01-REG-NCT06128967-F01"
+      ]
+    }
+  ]
+}
