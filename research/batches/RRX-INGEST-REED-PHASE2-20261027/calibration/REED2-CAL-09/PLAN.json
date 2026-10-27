@@ -1,0 +1,24 @@
+{
+  "id": "REED2-CAL-09-v1",
+  "at": "2026-10-27T12:39:46.796537+00:00",
+  "phase2ReadinessSha256": "8cd08ca29809a63184f53ab39a6f1dfda4b1a6ecae4b1cce39f9152de6d56833",
+  "source": {
+    "pmid": "37182183",
+    "doi": "10.3389/fonc.2023.1168120",
+    "title": "Aspirin use and bleeding events during thrombocytopenia after autologous stem-cell transplantation for multiple myeloma.",
+    "reportId": "REED-092cc3728bfdf1ee6744",
+    "ref": "$REMAPRX_REED_ROOT/aspirin-myeloma/pdfs/37182183-neuendorff-2023.pdf",
+    "sha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+    "physicalPages": 12
+  },
+  "baselineRow": "baseline-286:022",
+  "indexRef": "$REMAPRX_REED_ROOT/aspirin-myeloma/index.csv",
+  "indexSha256": "5c2a39e2ff03f606086b9a4b05b40b648d58ad1515605a00f533973b3b317a2d",
+  "scope": "Read all 12 pages of exact supplied original aspirin and bleeding report during thrombocytopenia after autologous stem-cell transplantation for myeloma. Verify design, selection and exclusion, exposure/indication/dose/holding and restarting, platelet units and thresholds, transfusions, observation windows, event-versus-patient Ns, bleeding severity, cardiovascular/thrombotic endpoints, adjustment/uncertainty, null/harm signals and limitations. Do not infer aspirin antitumor efficacy, causal safety or current prescribing recommendations.",
+  "sourcePolicy": "Closed exact supplied PDF and index, own all pages plus material visuals. No acquisition or external repair. Supplements/protocols/current integrity not_checked unless actually in supplied main.",
+  "identity": "Original report/cohort distinct from observational comparisons and existing trial families. Verify family overlap, do not sum nested events, exposed subgroups or prior cohorts as new unique patients.",
+  "schema": "SCHEMA.json plus pinned 15Q67 typed fields with native physical/printed locators",
+  "downstream": "Private unapplied G-DRUG-D23/G-CONDITION-C21 purpose-specific safety context; canonical/public/app/grades unchanged",
+  "verification": "Prospective GP and source/index/dependency hashes before content; all pages/material visuals, meaningful design/denominator/exposure/harms guards, exact independent audit; fullfield/science/human/release remain pending",
+  "ownership": "Same lane1 serial runner, previous checkpoints immutable, no subagents/outbound/merge/deploy/publish, no 20/30 science scale approval"
+}

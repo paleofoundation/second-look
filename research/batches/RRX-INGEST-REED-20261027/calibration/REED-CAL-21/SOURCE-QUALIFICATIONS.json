@@ -1,0 +1,152 @@
+[
+  {
+    "id": "C21-ALP",
+    "status": "unresolved_text_table_conflict",
+    "locators": [
+      {
+        "kind": "pdf",
+        "sourceSha256": "cb1192dba4333cafe4a5dd2b334e5e47e3cabd4dfeb4a8d0c2d003532404bf78",
+        "physicalPage": 1,
+        "printedPage": "1",
+        "nativeSection": "Title/introduction/casepresentation"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "cb1192dba4333cafe4a5dd2b334e5e47e3cabd4dfeb4a8d0c2d003532404bf78",
+        "physicalPage": 2,
+        "printedPage": "2",
+        "nativeSection": "Table1/Figure1/casefollowup/discussion"
+      }
+    ],
+    "description": "PresentationtextALP255U/L;Table1day1ALP245U/L.",
+    "action": "Keepbothliterals;no silentselectedsinglebaseline."
+  },
+  {
+    "id": "C21-ALT",
+    "status": "precision_threshold_difference",
+    "locators": [
+      {
+        "kind": "pdf",
+        "sourceSha256": "cb1192dba4333cafe4a5dd2b334e5e47e3cabd4dfeb4a8d0c2d003532404bf78",
+        "physicalPage": 1,
+        "printedPage": "1",
+        "nativeSection": "Title/introduction/casepresentation"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "cb1192dba4333cafe4a5dd2b334e5e47e3cabd4dfeb4a8d0c2d003532404bf78",
+        "physicalPage": 2,
+        "printedPage": "2",
+        "nativeSection": "Table1/Figure1/casefollowup/discussion"
+      }
+    ],
+    "description": "TextALT>3300U/L;Tableday1/day2exactprinted3300,notverifieduncensoredactualconcentration.",
+    "action": "Preservetextthreshold/tableliteralwithoutinventinguppervalueorrounding."
+  },
+  {
+    "id": "C21-EXPOSURE",
+    "status": "coexposure_and_measurement_limits",
+    "locator": {
+      "kind": "pdf",
+      "sourceSha256": "cb1192dba4333cafe4a5dd2b334e5e47e3cabd4dfeb4a8d0c2d003532404bf78",
+      "physicalPage": 1,
+      "printedPage": "1",
+      "nativeSection": "Title/introduction/casepresentation"
+    },
+    "description": "SelfreportedFBZ222mgdailyplusTUDCA500mgdaily4weeks,lastdose3daysbeforepresentation;brands/purity/assayedcontent/adherencenotprovided. No cancer/confirmedparasiteinfection.",
+    "action": "NotFBZalone/cancerdoseorsolecausalityproof;no mechanisticTUDCAinteractioninference."
+  },
+  {
+    "id": "C21-CAUSALITY",
+    "status": "reported_score_not_independent_adjudication",
+    "locators": [
+      {
+        "kind": "pdf",
+        "sourceSha256": "cb1192dba4333cafe4a5dd2b334e5e47e3cabd4dfeb4a8d0c2d003532404bf78",
+        "physicalPage": 1,
+        "printedPage": "1",
+        "nativeSection": "Title/introduction/casepresentation"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "cb1192dba4333cafe4a5dd2b334e5e47e3cabd4dfeb4a8d0c2d003532404bf78",
+        "physicalPage": 2,
+        "printedPage": "2",
+        "nativeSection": "Table1/Figure1/casefollowup/discussion"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "cb1192dba4333cafe4a5dd2b334e5e47e3cabd4dfeb4a8d0c2d003532404bf78",
+        "physicalPage": 3,
+        "printedPage": "3",
+        "nativeSection": "Discussion/disclosures/references"
+      }
+    ],
+    "description": "RUCAM9highlyprobableFBZ;componentsnotshown/noindependentrecalculation. R>=5hepatocellular;normalworkup/HFEnegativeasreported,norechallenge/biopsyreported.",
+    "action": "Preserveauthorassessment,notverifiedsole-drugcausality/noalternativepossible."
+  },
+  {
+    "id": "C21-MANAGEMENT",
+    "status": "uncontrolled_recovery",
+    "locators": [
+      {
+        "kind": "pdf",
+        "sourceSha256": "cb1192dba4333cafe4a5dd2b334e5e47e3cabd4dfeb4a8d0c2d003532404bf78",
+        "physicalPage": 1,
+        "printedPage": "1",
+        "nativeSection": "Title/introduction/casepresentation"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "cb1192dba4333cafe4a5dd2b334e5e47e3cabd4dfeb4a8d0c2d003532404bf78",
+        "physicalPage": 2,
+        "printedPage": "2",
+        "nativeSection": "Table1/Figure1/casefollowup/discussion"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "cb1192dba4333cafe4a5dd2b334e5e47e3cabd4dfeb4a8d0c2d003532404bf78",
+        "physicalPage": 3,
+        "printedPage": "3",
+        "nativeSection": "Discussion/disclosures/references"
+      }
+    ],
+    "description": "NAC72hperpoisoncontrol;druglastdosealready3daysbeforeadmission;day5dischargemarked,day26labsnormal;noacuteLF.",
+    "action": "RecoveryaftermanagementnotNACcomparativeefficacy/TUDCAprotectivefailurequantification;72hNACnotexacthospitalstay."
+  },
+  {
+    "id": "C21-INR",
+    "status": "censoring_missingness_distinct",
+    "locator": {
+      "kind": "pdf",
+      "sourceSha256": "cb1192dba4333cafe4a5dd2b334e5e47e3cabd4dfeb4a8d0c2d003532404bf78",
+      "physicalPage": 2,
+      "printedPage": "2",
+      "nativeSection": "Table1/Figure1/casefollowup/discussion"
+    },
+    "description": "Day10INR<0.9,day26blank;day26absenceisnotzero/normalmeasuredINR.",
+    "action": "Retainthresholdandnullforblank,notexact.9/zero."
+  },
+  {
+    "id": "C21-PRIOR-LITERATURE",
+    "status": "secondary_context_only",
+    "locators": [
+      {
+        "kind": "pdf",
+        "sourceSha256": "cb1192dba4333cafe4a5dd2b334e5e47e3cabd4dfeb4a8d0c2d003532404bf78",
+        "physicalPage": 2,
+        "printedPage": "2",
+        "nativeSection": "Table1/Figure1/casefollowup/discussion"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "cb1192dba4333cafe4a5dd2b334e5e47e3cabd4dfeb4a8d0c2d003532404bf78",
+        "physicalPage": 3,
+        "printedPage": "3",
+        "nativeSection": "Discussion/disclosures/references"
+      }
+    ],
+    "description": "Authorallreportedcaseshepatocellular/noALFdeath/noclinicaltrialsclaimsareliteraturecontext,notfreshcomprehensivecoverage. Priorhistologyandbenzimidazolemechanismnotthispatientbiopsy/measuredpathway.",
+    "action": "No upgradedcurrentglobalabsence/FBZmechanismverifiedfrommebendazolecitation."
+  }
+]

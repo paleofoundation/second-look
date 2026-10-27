@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "REED-CAL-14-randomized-MM-v1",
+  "required": [
+    "schemaVersion",
+    "paper",
+    "source",
+    "inspection",
+    "study",
+    "arms",
+    "results",
+    "claims",
+    "reviewInputs",
+    "limitations",
+    "scientificAcceptance",
+    "humanApproval",
+    "released"
+  ],
+  "controls": [
+    "Randomized/treated/evaluableNsnotinterchangeable",
+    "Combinationversusmatchedcontrolnotthalidomide-alone",
+    "TTP/PFS/OSandresponse/CRnotinterchangeable",
+    "Timeorigin/followup/CI/Pandcensoringpreserved",
+    "Safetydenominator/grade/attribution/withdrawalretained",
+    "Unmature/unreportednotzero/equivalence",
+    "Studyfamily/onereportnotindependentperendpoint"
+  ],
+  "reviewInventory": "rules/one-match-rule/references/research-reviews/review-questions-and-inputs.json",
+  "fixedGates": {
+    "scientificAcceptance": false,
+    "humanApproval": false,
+    "released": false,
+    "acceptedSupport": false,
+    "grade": null
+  }
+}

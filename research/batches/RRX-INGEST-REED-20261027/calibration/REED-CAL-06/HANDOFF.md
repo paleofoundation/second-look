@@ -1,0 +1,15 @@
+# REED-CAL-06: an existing protocol, extended source inspection
+
+Prospective PLAN.json/SCHEMA.json/READINESS.json preceded full-text extraction. The exact Mastall2024 GLUGLIO protocol is PMID38225589, DOI10.1186/s12885-023-11797-z, SHA256c0c1212e9c0311b8e1a535592a4cb81a914bc3c05f0b576eb3f0129f21d8b534. All seven text pages were read; physical3/4 design figure, regimen, safety rules and statistical plan were rendered and visually inspected.
+
+Reuse B-R0187/B-R0187-F01 and DRAFT-REVIEW-B-R0187-F01. PRIOR-REVIEW-RECONCILIATION.json binds the unchanged old draft corpus and its partial page-one inspection: Q01partial and Q02-Q15notextracted. This source-bound candidate extends the inspection without resetting or replacing the earlier record, creating a competing canonical identity or implying prior scientific acceptance.
+
+Three protocol observations/claims describe the planned trial/design, planned combination regimen and historical no-results/attribution limits. ClinicalResults is empty. Planned120patients/60perarm and50%versus70%PFS6 assumptions are not actual enrollment or outcomes. The protocol's80%power,10%dropout allowance,one-sided10%alpha and planned90%risk-difference CI are prospective parameters, not observed precision or attrition. The interim safety trigger after20experimental participants is not a safety result.
+
+Oral memantine is planned at5/10/15/20mg daily in weeks1/2/3/4onward alongside gabapentin/sulfasalazine and standard temozolomide/radiotherapy. The combination cannot isolate memantine efficacy. Expected toxicities and planned dose modification do not establish tolerated exposure or safety. NCT05664464/registration23December2022,first patientJanuary2023 and expected end2026 results are statements in this historical protocol, not a verified current registry status or results release. Preclinical rationale and cited prior combination trials remain context, not new results from this protocol.
+
+The candidate has15narrative Q01-Q15 inputs and67typed required fields, with exactO01-O03/C01-C03 mapping to existing MemantineD25/GlioblastomaC04 as private unapplied protocol proposals. Eight no-result/identity/interpretation guards pass. AUDIT-MANIFEST.json binds the exact candidate and eight dependencies; independent audit is pending. No complete scientific review, new grade, scientific/human approval or release. External registry/protocol/correction/family checks and observed trial datasets are absent or unchecked.
+
+Only this private owned research packet changes; original PDFs/text/renders stay outside Git. No canonical app/guide/corpus changes, automatic scale-up, merge, deployment or release. Report6of24planned calibration and broader286scientific ingestion remain incomplete.
+
+Independent audit update: exact candidateebd7e76a9aa245068a647cc72c22728cb40d3cf2e28802cca55ed3d7e99dd2a7 passed three bounded protocol observations with0clinical results. Exact INDEPENDENT-SOURCE-AUDIT.json and ACCEPTANCE-UPDATE.json supersede initial pending audit labels only; current registry, fullfieldmap/scientific/human/release approval remain absent.

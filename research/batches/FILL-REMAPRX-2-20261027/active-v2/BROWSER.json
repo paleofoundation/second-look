@@ -1,0 +1,58 @@
+{
+  "checkedAt": "2026-10-27T10:14:11.157670+02:00",
+  "surface": "Chrome extension, local production preview",
+  "baseUrl": "http://127.0.0.1:8792",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "routes": [
+    {
+      "path": "/conditions/chronic-myeloid-leukemia",
+      "documentWidth": 390,
+      "bodyWidth": 390,
+      "robots": "noindex,nofollow",
+      "newEvidenceAndFaqTextInDOM": true
+    },
+    {
+      "path": "/conditions/fibromyalgia",
+      "documentWidth": 390,
+      "bodyWidth": 390,
+      "robots": "noindex,nofollow",
+      "newEvidenceAndFaqTextInDOM": true
+    },
+    {
+      "path": "/drugs/fluvoxamine",
+      "documentWidth": 390,
+      "bodyWidth": 390,
+      "robots": "noindex,nofollow",
+      "newEvidenceAndFaqTextInDOM": true
+    },
+    {
+      "path": "/drugs/sildenafil",
+      "documentWidth": 390,
+      "bodyWidth": 390,
+      "robots": "noindex,nofollow",
+      "newEvidenceAndFaqTextInDOM": true
+    }
+  ],
+  "visualInspection": "Representative fluvoxamine mobile screenshot inspected in tool output: readable wrapping and no horizontal overflow. No persisted screenshot artifact.",
+  "evidenceNavigation": "PASS: clicked Evidence link and read section fragment.",
+  "faqInteraction": "UNVERIFIED: sildenafil FAQ click timed out before CDP dispatch. No click success claimed.",
+  "viewportReset": "reset call completed successfully",
+  "notEstablished": [
+    "full drawer interactions",
+    "keyboard and focus behavior",
+    "human or scientific approval",
+    "live deployment parity"
+  ],
+  "independentRootReceipt": "ROOT-BROWSER-CHECKPOINT.json",
+  "finalBoundedResult": "Four 390x844 routes, corrected fluvoxamine Evidence navigation and sildenafil FAQ expansion passed independent IAB checks; two RSC prefetch console errors remain open.",
+  "consoleLimit": {
+    "observedErrors": 2,
+    "message": "[vinext] RSC prefetch setup error: TypeError: f is not a function",
+    "asset": "/_next/static/chunks/link-DtOwN9lI.js",
+    "cause": "UNVERIFIED; no claim that this is baseline or introduced here",
+    "scope": "No runtime file changed; no out-of-scope fix attempted."
+  }
+}

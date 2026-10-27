@@ -1,0 +1,816 @@
+{
+  "schemaVersion": "REED-CAL-08-invitro-v1",
+  "paper": {
+    "id": "REED-CAL-08-P1",
+    "intakeReportId": "REED-1354849c2860e40bb5e5",
+    "pmid": "28356941",
+    "doi": "10.3892/ol.2016.5472",
+    "title": "Aspirin enhances the cytotoxic activity of bortezomib against myeloma cells via suppression of Bcl-2, survivin and phosphorylation of AKT",
+    "sourceType": "primary_invitro",
+    "humanClinicalEvidence": false
+  },
+  "source": {
+    "id": "REED-CAL-08-S1",
+    "ref": "$REMAPRX_REED_ROOT/aspirin-myeloma/pdfs/28356941-ding-2017.pdf",
+    "sha256": "f5471c1184e334aaa49369770ebbd91561b9d460d60ef2bfb7f03b10eecb280f",
+    "pmid": "28356941",
+    "doi": "10.3892/ol.2016.5472",
+    "title": "Aspirin enhances the cytotoxic activity of bortezomib against myeloma cells via suppression of Bcl-2, survivin and phosphorylation of AKT",
+    "physicalPages": 8,
+    "intakeReportId": "REED-1354849c2860e40bb5e5"
+  },
+  "inspection": {
+    "at": "2026-10-27T09:14:46.453755+00:00",
+    "activeReadiness": "READINESS.json",
+    "textualPagesRead": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "visualInspectedPhysicalPages": [
+      3,
+      4,
+      5
+    ],
+    "fullScientificReviewComplete": false
+  },
+  "models": [
+    {
+      "id": "REED-CAL-08-M1",
+      "name": "MM1.S",
+      "kind": "human_derived_cell_line",
+      "mutationAssignment": "unresolved_abstract_vs_Methods"
+    },
+    {
+      "id": "REED-CAL-08-M2",
+      "name": "RPMI8226",
+      "kind": "human_derived_cell_line",
+      "mutationAssignment": "unresolved_abstract_vs_Methods"
+    }
+  ],
+  "assays": [
+    {
+      "id": "REED-CAL-08-A1",
+      "name": "CCK8",
+      "timeHours": [
+        24,
+        48,
+        72
+      ],
+      "authorsReportedIndependentExperiments": "atleast3"
+    },
+    {
+      "id": "REED-CAL-08-A2",
+      "name": "AnnexinVFITC/PIflow",
+      "timeHours": [
+        48
+      ],
+      "flowEventsPerAnalysis": 10000,
+      "authorsReportedIndependentExperiments": 3
+    },
+    {
+      "id": "REED-CAL-08-A3",
+      "name": "Westernblot/IOD",
+      "timeHours": [
+        48
+      ],
+      "authorsReportedIndependentExperiments": 3
+    }
+  ],
+  "exposures": [
+    {
+      "id": "REED-CAL-08-E1",
+      "ASA": {
+        "value": 2.5,
+        "unit": "mM"
+      },
+      "BTZ": {
+        "value": 10,
+        "unit": "nM"
+      },
+      "clinicalDose": null,
+      "humanPKEquivalenceVerified": false
+    }
+  ],
+  "results": [
+    {
+      "id": "REED-CAL-08-R01",
+      "outcome": "CCK8 proliferation inhibition and reported drug interaction",
+      "timeHours": [
+        24,
+        48,
+        72
+      ],
+      "estimate": {
+        "kind": "qualitative_combination_effect_and_authors_R_classification",
+        "direction": "Combination inhibits proliferation more than either single agent in both cell lines",
+        "reportedInteraction": "additive",
+        "reportedRInterval": [
+          0.8,
+          1.2
+        ],
+        "reportedRRule": "R=survival(ASA+BTZ)/(survivalASA*survivalBTZ);0.8<R<1.2additive",
+        "exactRPerCondition": null,
+        "cellInhibitionPercentagesNotExtracted": true,
+        "humanEffect": null
+      },
+      "uncertainty": {
+        "reportedThreshold": "P<0.05forcombinationcomparisons",
+        "numericCI": null,
+        "numericSD": null
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f5471c1184e334aaa49369770ebbd91561b9d460d60ef2bfb7f03b10eecb280f",
+          "physicalPage": 2,
+          "printedPage": 648,
+          "nativeSection": "Materials and methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f5471c1184e334aaa49369770ebbd91561b9d460d60ef2bfb7f03b10eecb280f",
+          "physicalPage": 3,
+          "printedPage": 649,
+          "nativeSection": "Statistics/Results/Figure1"
+        }
+      ],
+      "modelIds": [
+        "REED-CAL-08-M1",
+        "REED-CAL-08-M2"
+      ],
+      "exposureId": "REED-CAL-08-E1",
+      "comparator": "untreated/ASAalone/BTZalone asassayspecified",
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED-CAL-08-R02",
+      "outcome": "AnnexinVFITC/PI apoptosis",
+      "timeHours": [
+        48
+      ],
+      "estimate": {
+        "kind": "source_reported_apoptotic_percentages",
+        "groupOrder": [
+          "untreated",
+          "ASA",
+          "BTZ",
+          "ASA+BTZ"
+        ],
+        "MM1S": [
+          2.73,
+          44.8,
+          45.4,
+          64.3
+        ],
+        "RPMI8226": [
+          3.43,
+          36.1,
+          57.9,
+          77.2
+        ],
+        "unit": "percent",
+        "basis": "Exact Results narrative rates; Figure2C summary mean+SD from3reportedindependent experiments. Representative panelsA/Bquadrant values are separate; no quadrant-count reconstruction or pixel means.",
+        "authorsReportedIndependentExperiments": 3,
+        "flowEventsPerAnalysis": 10000,
+        "biologicalReplicateNIndependentlyVerified": false,
+        "humanEffect": null
+      },
+      "uncertainty": {
+        "reportedThreshold": "P<0.05combinationversussingleagents;BTZvsASA differsbyline",
+        "numericCI": null,
+        "numericSD": null,
+        "scope": "No numericalSD extracted from bars; flowevents notindependent replicateN."
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f5471c1184e334aaa49369770ebbd91561b9d460d60ef2bfb7f03b10eecb280f",
+          "physicalPage": 2,
+          "printedPage": 648,
+          "nativeSection": "Materials and methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f5471c1184e334aaa49369770ebbd91561b9d460d60ef2bfb7f03b10eecb280f",
+          "physicalPage": 3,
+          "printedPage": 649,
+          "nativeSection": "Statistics/Results/Figure1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f5471c1184e334aaa49369770ebbd91561b9d460d60ef2bfb7f03b10eecb280f",
+          "physicalPage": 4,
+          "printedPage": 650,
+          "nativeSection": "Figure2/marker Results"
+        }
+      ],
+      "modelIds": [
+        "REED-CAL-08-M1",
+        "REED-CAL-08-M2"
+      ],
+      "exposureId": "REED-CAL-08-E1",
+      "comparator": "untreated/ASAalone/BTZalone asassayspecified",
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED-CAL-08-R03",
+      "outcome": "Protein marker patterns after combination exposure",
+      "timeHours": [
+        48
+      ],
+      "estimate": {
+        "kind": "qualitative_western_blot_marker_association",
+        "markers": [
+          "pAKTThr308",
+          "pAKTSer473",
+          "survivin",
+          "Bcl2"
+        ],
+        "direction": "ASA+BTZ associated with lower marker levels than BTZalone in the displayed model comparisons",
+        "numericIOD": null,
+        "directSelectiveBindingDemonstrated": false,
+        "causalMediationEstablished": false,
+        "humanEffect": null
+      },
+      "uncertainty": {
+        "reportedThreshold": "Figures3-5labelP<0.05forindicatedcomparisons; no blanketexactpvalue assigned",
+        "numericCI": null,
+        "numericSD": null
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f5471c1184e334aaa49369770ebbd91561b9d460d60ef2bfb7f03b10eecb280f",
+          "physicalPage": 4,
+          "printedPage": 650,
+          "nativeSection": "Figure2/marker Results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f5471c1184e334aaa49369770ebbd91561b9d460d60ef2bfb7f03b10eecb280f",
+          "physicalPage": 5,
+          "printedPage": 651,
+          "nativeSection": "Figures3-5/Results"
+        }
+      ],
+      "modelIds": [
+        "REED-CAL-08-M1",
+        "REED-CAL-08-M2"
+      ],
+      "exposureId": "REED-CAL-08-E1",
+      "comparator": "untreated/ASAalone/BTZalone asassayspecified",
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    }
+  ],
+  "claims": [
+    {
+      "id": "REED-CAL-08-C01",
+      "resultIds": [
+        "REED-CAL-08-R01"
+      ],
+      "statement": "CCK8 proliferation inhibition and reported drug interaction in MM1.S/RPMI8226 cultures only; combination effects do not establish human efficacy or safety, formal synergy or direct causal target inhibition.",
+      "relation": "invitro_observation_only",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED-CAL-08-C02",
+      "resultIds": [
+        "REED-CAL-08-R02"
+      ],
+      "statement": "AnnexinVFITC/PI apoptosis in MM1.S/RPMI8226 cultures only; combination effects do not establish human efficacy or safety, formal synergy or direct causal target inhibition.",
+      "relation": "invitro_observation_only",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED-CAL-08-C03",
+      "resultIds": [
+        "REED-CAL-08-R03"
+      ],
+      "statement": "Protein marker patterns after combination exposure in MM1.S/RPMI8226 cultures only; combination effects do not establish human efficacy or safety, formal synergy or direct causal target inhibition.",
+      "relation": "invitro_observation_only",
+      "acceptedSupport": false
+    }
+  ],
+  "reviewInputs": [
+    {
+      "id": "Q01",
+      "answer": "In-vitro aspirin/bortezomib interaction andmarkers inMM1.S/RPMI8226; no currentanimal/patientexperiment.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f5471c1184e334aaa49369770ebbd91561b9d460d60ef2bfb7f03b10eecb280f",
+          "physicalPage": 2,
+          "printedPage": 648,
+          "nativeSection": "Materials and methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f5471c1184e334aaa49369770ebbd91561b9d460d60ef2bfb7f03b10eecb280f",
+          "physicalPage": 3,
+          "printedPage": 649,
+          "nativeSection": "Statistics/Results/Figure1"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q02",
+      "answer": "Twohuman-derivedcelllines,mutationassignmentreversedabstract/Methods. Three-replicateattributionnot10kpatients/independentunits.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f5471c1184e334aaa49369770ebbd91561b9d460d60ef2bfb7f03b10eecb280f",
+          "physicalPage": 2,
+          "printedPage": 648,
+          "nativeSection": "Materials and methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f5471c1184e334aaa49369770ebbd91561b9d460d60ef2bfb7f03b10eecb280f",
+          "physicalPage": 3,
+          "printedPage": 649,
+          "nativeSection": "Statistics/Results/Figure1"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q03",
+      "answer": "CultureASA2.5mM/BTZ10nM;24-72hCCK8 and48hapoptosis/markers. No humanregimenconversion.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f5471c1184e334aaa49369770ebbd91561b9d460d60ef2bfb7f03b10eecb280f",
+          "physicalPage": 2,
+          "printedPage": 648,
+          "nativeSection": "Materials and methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f5471c1184e334aaa49369770ebbd91561b9d460d60ef2bfb7f03b10eecb280f",
+          "physicalPage": 3,
+          "printedPage": 649,
+          "nativeSection": "Statistics/Results/Figure1"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q04",
+      "answer": "Untreated/singleagents/combination; cultureallocation/randomization/blindingunreported.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f5471c1184e334aaa49369770ebbd91561b9d460d60ef2bfb7f03b10eecb280f",
+          "physicalPage": 2,
+          "printedPage": 648,
+          "nativeSection": "Materials and methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f5471c1184e334aaa49369770ebbd91561b9d460d60ef2bfb7f03b10eecb280f",
+          "physicalPage": 3,
+          "printedPage": 649,
+          "nativeSection": "Statistics/Results/Figure1"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q05",
+      "answer": "CCK8,Annexinflow,western/IODandRinteractionrule. Authorsclassify additive,not synergistic.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f5471c1184e334aaa49369770ebbd91561b9d460d60ef2bfb7f03b10eecb280f",
+          "physicalPage": 2,
+          "printedPage": 648,
+          "nativeSection": "Materials and methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f5471c1184e334aaa49369770ebbd91561b9d460d60ef2bfb7f03b10eecb280f",
+          "physicalPage": 3,
+          "printedPage": 649,
+          "nativeSection": "Statistics/Results/Figure1"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q06",
+      "answer": "Reported48hapoptoticpercentagesretained; exactSD/rawR/IODnotpixel-derived. Representativequadrantsnotaggregatebarmeans.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f5471c1184e334aaa49369770ebbd91561b9d460d60ef2bfb7f03b10eecb280f",
+          "physicalPage": 3,
+          "printedPage": 649,
+          "nativeSection": "Statistics/Results/Figure1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f5471c1184e334aaa49369770ebbd91561b9d460d60ef2bfb7f03b10eecb280f",
+          "physicalPage": 4,
+          "printedPage": 650,
+          "nativeSection": "Figure2/marker Results"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q07",
+      "answer": "No detailedcultureflow/rawmissingness/exclusions; independentexperimentversusassayeventunitkeptseparate.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f5471c1184e334aaa49369770ebbd91561b9d460d60ef2bfb7f03b10eecb280f",
+          "physicalPage": 2,
+          "printedPage": 648,
+          "nativeSection": "Materials and methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f5471c1184e334aaa49369770ebbd91561b9d460d60ef2bfb7f03b10eecb280f",
+          "physicalPage": 3,
+          "printedPage": 649,
+          "nativeSection": "Statistics/Results/Figure1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f5471c1184e334aaa49369770ebbd91561b9d460d60ef2bfb7f03b10eecb280f",
+          "physicalPage": 4,
+          "printedPage": 650,
+          "nativeSection": "Figure2/marker Results"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q08",
+      "answer": "No clinicalharm/AEdenominatororwithdrawaldata; culturecytotoxicitynotpatientsafety.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f5471c1184e334aaa49369770ebbd91561b9d460d60ef2bfb7f03b10eecb280f",
+          "physicalPage": 2,
+          "printedPage": 648,
+          "nativeSection": "Materials and methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f5471c1184e334aaa49369770ebbd91561b9d460d60ef2bfb7f03b10eecb280f",
+          "physicalPage": 3,
+          "printedPage": 649,
+          "nativeSection": "Statistics/Results/Figure1"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q09",
+      "answer": "Model/reporting/rawreplicateandcausal-pathwaylimits; Ras/Ser473generalization qualifications retained.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f5471c1184e334aaa49369770ebbd91561b9d460d60ef2bfb7f03b10eecb280f",
+          "physicalPage": 2,
+          "printedPage": 648,
+          "nativeSection": "Materials and methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f5471c1184e334aaa49369770ebbd91561b9d460d60ef2bfb7f03b10eecb280f",
+          "physicalPage": 3,
+          "printedPage": 649,
+          "nativeSection": "Statistics/Results/Figure1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f5471c1184e334aaa49369770ebbd91561b9d460d60ef2bfb7f03b10eecb280f",
+          "physicalPage": 5,
+          "printedPage": 651,
+          "nativeSection": "Figures3-5/Results"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q10",
+      "answer": "No clinicalefficacy/BTZresistancereversal orverifiedhumanPKequivalence. Cellassaymarkersnotpatientbenefit.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f5471c1184e334aaa49369770ebbd91561b9d460d60ef2bfb7f03b10eecb280f",
+          "physicalPage": 2,
+          "printedPage": 648,
+          "nativeSection": "Materials and methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f5471c1184e334aaa49369770ebbd91561b9d460d60ef2bfb7f03b10eecb280f",
+          "physicalPage": 3,
+          "printedPage": 649,
+          "nativeSection": "Statistics/Results/Figure1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f5471c1184e334aaa49369770ebbd91561b9d460d60ef2bfb7f03b10eecb280f",
+          "physicalPage": 7,
+          "printedPage": 653,
+          "nativeSection": "Conclusion/Acknowledgements/References"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q11",
+      "answer": "Oneinvitroreport;priorDing2014citedbutnotnewsourceverifiedhere;overlap/replicationunadjudicated.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f5471c1184e334aaa49369770ebbd91561b9d460d60ef2bfb7f03b10eecb280f",
+          "physicalPage": 2,
+          "printedPage": 648,
+          "nativeSection": "Materials and methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f5471c1184e334aaa49369770ebbd91561b9d460d60ef2bfb7f03b10eecb280f",
+          "physicalPage": 7,
+          "printedPage": 653,
+          "nativeSection": "Conclusion/Acknowledgements/References"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q12",
+      "answer": "Authors/institutions/funding/vendorsobserved; vendorlistingnotfreeproductsponsorship; COIstatementnotidentified.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f5471c1184e334aaa49369770ebbd91561b9d460d60ef2bfb7f03b10eecb280f",
+          "physicalPage": 1,
+          "printedPage": 647,
+          "nativeSection": "Abstract"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f5471c1184e334aaa49369770ebbd91561b9d460d60ef2bfb7f03b10eecb280f",
+          "physicalPage": 2,
+          "printedPage": 648,
+          "nativeSection": "Materials and methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f5471c1184e334aaa49369770ebbd91561b9d460d60ef2bfb7f03b10eecb280f",
+          "physicalPage": 7,
+          "printedPage": 653,
+          "nativeSection": "Conclusion/Acknowledgements/References"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q13",
+      "answer": "Exact2017published8pagefileinspected;externalsourceintegrity/protocol/rawdata unchecked.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f5471c1184e334aaa49369770ebbd91561b9d460d60ef2bfb7f03b10eecb280f",
+          "physicalPage": 1,
+          "printedPage": 647,
+          "nativeSection": "Abstract"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f5471c1184e334aaa49369770ebbd91561b9d460d60ef2bfb7f03b10eecb280f",
+          "physicalPage": 2,
+          "printedPage": 648,
+          "nativeSection": "Materials and methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f5471c1184e334aaa49369770ebbd91561b9d460d60ef2bfb7f03b10eecb280f",
+          "physicalPage": 5,
+          "printedPage": 651,
+          "nativeSection": "Figures3-5/Results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f5471c1184e334aaa49369770ebbd91561b9d460d60ef2bfb7f03b10eecb280f",
+          "physicalPage": 7,
+          "printedPage": 653,
+          "nativeSection": "Conclusion/Acknowledgements/References"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q14",
+      "answer": "ExactR01-R03/C01-C03maptoexistingC21privatepreclinicalcontext,unapplied.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f5471c1184e334aaa49369770ebbd91561b9d460d60ef2bfb7f03b10eecb280f",
+          "physicalPage": 3,
+          "printedPage": 649,
+          "nativeSection": "Statistics/Results/Figure1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f5471c1184e334aaa49369770ebbd91561b9d460d60ef2bfb7f03b10eecb280f",
+          "physicalPage": 5,
+          "printedPage": 651,
+          "nativeSection": "Figures3-5/Results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f5471c1184e334aaa49369770ebbd91561b9d460d60ef2bfb7f03b10eecb280f",
+          "physicalPage": 7,
+          "printedPage": 653,
+          "nativeSection": "Conclusion/Acknowledgements/References"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending",
+      "downstreamMapping": {
+        "paperId": "REED-CAL-08-P1",
+        "intakeReportId": "REED-1354849c2860e40bb5e5",
+        "resultIds": [
+          "REED-CAL-08-R01",
+          "REED-CAL-08-R02",
+          "REED-CAL-08-R03"
+        ],
+        "claimIds": [
+          "REED-CAL-08-C01",
+          "REED-CAL-08-C02",
+          "REED-CAL-08-C03"
+        ],
+        "existingGuideId": "G-CONDITION-C21",
+        "purpose": "Private preclinical aspirin+bortezomib context, additive interaction and qualified mechanism proposal; not clinical anticancer/safety support",
+        "publicationState": "private_draft",
+        "canonicalChanges": 0
+      }
+    },
+    {
+      "id": "Q15",
+      "answer": "Additivecultureactivity andmarkercorrelationsremainbounded;newcausal/raw/PK/clinicalworkrequired forhumantranslation.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f5471c1184e334aaa49369770ebbd91561b9d460d60ef2bfb7f03b10eecb280f",
+          "physicalPage": 7,
+          "printedPage": 653,
+          "nativeSection": "Conclusion/Acknowledgements/References"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    }
+  ],
+  "sourceQualifications": [
+    {
+      "id": "C08-RAS-ASSIGNMENT",
+      "status": "unresolved",
+      "sourceA": {
+        "locator": {
+          "kind": "pdf",
+          "sourceSha256": "f5471c1184e334aaa49369770ebbd91561b9d460d60ef2bfb7f03b10eecb280f",
+          "physicalPage": 1,
+          "printedPage": 647,
+          "nativeSection": "Abstract"
+        },
+        "description": "Abstract assigns N-Ras toMM1.S andK-Ras toRPMI8226."
+      },
+      "sourceB": {
+        "locator": {
+          "kind": "pdf",
+          "sourceSha256": "f5471c1184e334aaa49369770ebbd91561b9d460d60ef2bfb7f03b10eecb280f",
+          "physicalPage": 2,
+          "printedPage": 648,
+          "nativeSection": "Materials and methods"
+        },
+        "description": "Methods assigns K-Ras toMM1.S andN-Ras toRPMI8226."
+      },
+      "action": "Retain verified cell-line names; do not adjudicate mutation identity from memory or assume mutation-specific applicability."
+    },
+    {
+      "id": "C08-SER473-GENERALIZATION",
+      "status": "qualified_not_numerically_reanalyzed",
+      "sourceA": {
+        "locator": {
+          "kind": "pdf",
+          "sourceSha256": "f5471c1184e334aaa49369770ebbd91561b9d460d60ef2bfb7f03b10eecb280f",
+          "physicalPage": 4,
+          "printedPage": 650,
+          "nativeSection": "Figure2/marker Results"
+        },
+        "description": "Results generally says BTZ enhances Thr308/Ser473 phosphorylation in both cell lines."
+      },
+      "sourceB": {
+        "locator": {
+          "kind": "pdf",
+          "sourceSha256": "f5471c1184e334aaa49369770ebbd91561b9d460d60ef2bfb7f03b10eecb280f",
+          "physicalPage": 5,
+          "printedPage": 651,
+          "nativeSection": "Figures3-5/Results"
+        },
+        "description": "Figure3C MM1.S BTZ Ser473 bar appears below untreated, while combination is below BTZ. No pixel densitometry performed."
+      },
+      "action": "Bound claim to observed lower combination-versus-BTZ marker patterns; do not assert universal BTZ induction or clinical resistance reversal."
+    },
+    {
+      "id": "C08-PK-RATIONALE",
+      "status": "not_independently_verified",
+      "sourceA": {
+        "locators": [
+          {
+            "kind": "pdf",
+            "sourceSha256": "f5471c1184e334aaa49369770ebbd91561b9d460d60ef2bfb7f03b10eecb280f",
+            "physicalPage": 3,
+            "printedPage": 649,
+            "nativeSection": "Statistics/Results/Figure1"
+          },
+          {
+            "kind": "pdf",
+            "sourceSha256": "f5471c1184e334aaa49369770ebbd91561b9d460d60ef2bfb7f03b10eecb280f",
+            "physicalPage": 6,
+            "printedPage": 652,
+            "nativeSection": "Discussion"
+          }
+        ],
+        "description": "Authors describe culture concentrations as resembling serum exposure."
+      },
+      "sourceB": {
+        "locator": {
+          "kind": "pdf",
+          "sourceSha256": "f5471c1184e334aaa49369770ebbd91561b9d460d60ef2bfb7f03b10eecb280f",
+          "physicalPage": 7,
+          "printedPage": 653,
+          "nativeSection": "Conclusion/Acknowledgements/References"
+        },
+        "description": "Reference29 is listed as a Goodman/Gilman book review; underlying primary PK data not supplied/inspected."
+      },
+      "action": "Report experimental concentrations only; no verified human serum equivalence, dose conversion or regimen recommendation."
+    }
+  ],
+  "limitations": [
+    "Celllineonly,nopatientclinicaleffect/safety",
+    "AuthorsRruleclassifiesadditive,notsynergy",
+    "10kfloweventsnotindependentreplicates",
+    "Narrativeratesseparatefromrepresentativequadrants;nopixelSD/means",
+    "Mutationassignmentreversedabstract/Methods",
+    "BTZSer473upregulationnotuniformlydisplayedinMM1S;claimboundedcombinationvsBTZ",
+    "Markercorrelationnotdirectbinding/causalmediation",
+    "AuthorsPKrationalenotindependentlyverified;nohumanregimen",
+    "Rawdata/authentication/family/integrity/fullappraisalnotperformed"
+  ],
+  "scientificAcceptance": false,
+  "humanApproval": false,
+  "released": false
+}

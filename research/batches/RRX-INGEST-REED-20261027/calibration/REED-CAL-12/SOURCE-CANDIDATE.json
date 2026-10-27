@@ -1,0 +1,614 @@
+{
+  "schemaVersion": "REED-CAL-12-clinical-null-v1",
+  "paper": {
+    "id": "REED-CAL-12-P1",
+    "intakeReportId": "REED-369a24cd359f19e60aaf",
+    "pmid": "18055977",
+    "doi": "10.3324/haematol.12071",
+    "title": "High dose simvastatin does not reverse resistance to vincristine, adriamycin, and dexamethasone (VAD) in myeloma.",
+    "sourceType": "primary_single_arm_phase_II_letter"
+  },
+  "source": {
+    "id": "REED-CAL-12-S1",
+    "pmid": "18055977",
+    "doi": "10.3324/haematol.12071",
+    "title": "High dose simvastatin does not reverse resistance to vincristine, adriamycin, and dexamethasone (VAD) in myeloma.",
+    "ref": "$REMAPRX_REED_ROOT/simvastatin-myeloma/pdfs/18055977-van-2007.pdf",
+    "sha256": "72f2ec71cca076b26d20a07c86f5f81842b4e434c76ad5fa1a5943e03c33e0a2",
+    "intakeReportId": "REED-369a24cd359f19e60aaf",
+    "physicalPages": 2
+  },
+  "inspection": {
+    "at": "2026-10-27T09:57:31.793132+00:00",
+    "activeReadiness": "READINESS.json",
+    "textualPagesRead": [
+      1,
+      2
+    ],
+    "visualInspectedPhysicalPages": [
+      1
+    ],
+    "fullScientificReviewComplete": false
+  },
+  "study": {
+    "design": "prospective_single_arm_phase_II_Fleming_two_stage",
+    "randomized": false,
+    "concurrentControlN": 0,
+    "actualPatientN": 12,
+    "plannedMaximumN": 40,
+    "plannedInterimN": 12,
+    "priorVADResistantN": 7,
+    "medianAgeYears": 64,
+    "ageRangeYears": [
+      38,
+      71
+    ],
+    "medianPriorTreatments": 4,
+    "priorTreatmentRange": [
+      2,
+      6
+    ],
+    "medianCycles": 3,
+    "cycleRange": [
+      1,
+      4
+    ],
+    "simvastatin": {
+      "dose": 15,
+      "unit": "mg/kg/day",
+      "route": "oral",
+      "cycleDays": [
+        1,
+        7
+      ],
+      "cycleLengthDays": 28,
+      "dailyDividedDoses": 2
+    },
+    "VAD": "vincristine0.4mg anddoxorubicin9mg/m2rapidIV, dexamethasone40mgoral; day7-10literal source, IVfrequency notrestated",
+    "commonProphylaxis": "cotrimoxazole",
+    "responseDefinition": "EBMTcriteria after2cycles planned;additional2coursesforSD/response;stopduringPD",
+    "stoppingRule": {
+      "CRplusPRRateBelow": 0.1,
+      "nonhematologicWHOGrade3to4RateAbove": 0.3,
+      "stopIfResponsesAtInterimLessThan": 2,
+      "interimN": 12,
+      "actualAccrualStopped": true
+    },
+    "simvastatinAloneEffectIsolated": false,
+    "therapeuticEquivalenceEstablished": false,
+    "currentPatientPKMeasured": false
+  },
+  "results": [
+    {
+      "id": "REED-CAL-12-R01",
+      "outcome": "Response categories and planned early stopping",
+      "estimate": {
+        "kind": "single_arm_response_counts",
+        "treatedN": 12,
+        "PR": 1,
+        "SD": 6,
+        "PD": 5,
+        "CR": "no CR category reported; not independently separately specified",
+        "categoryCountsSum": 12,
+        "prespecifiedContinueThresholdResponses": 2,
+        "accrualStopped": true,
+        "numericalResponsePercentCalculated": null,
+        "CI": null,
+        "P": null,
+        "SDPriorProgressionN": 5,
+        "SDTotalN": 6,
+        "SDDurationDaysMedian": 103,
+        "SDDurationDaysRange": [
+          94,
+          258
+        ],
+        "PRPatientRelapseDaysFromTreatmentStart": 230,
+        "PRDurationOfResponseDays": null,
+        "cohortPFS": null,
+        "cohortOS": null
+      },
+      "time": "Planned EBMTresponse after2cycles;actualcycles1-4,median3;separateSDduration/PRtime-origin retained.",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "72f2ec71cca076b26d20a07c86f5f81842b4e434c76ad5fa1a5943e03c33e0a2",
+          "physicalPage": 1,
+          "printedPage": "e130",
+          "nativeSection": "Left column: eligibility/regimen/response/design"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "72f2ec71cca076b26d20a07c86f5f81842b4e434c76ad5fa1a5943e03c33e0a2",
+          "physicalPage": 1,
+          "printedPage": "e130",
+          "nativeSection": "Right column: patient results/stopping/toxicities"
+        }
+      ],
+      "comparator": null,
+      "simvastatinAloneEffect": false,
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED-CAL-12-R02",
+      "outcome": "Reported hematologic and gastrointestinal toxicities",
+      "estimate": {
+        "kind": "single_arm_adverse_event_counts",
+        "treatedN": 12,
+        "WHOGrade3to4NeutropeniaPatients": 8,
+        "WHOGrade3to4ThrombocytopeniaPatients": 2,
+        "grade3GIToxicityWithDehydrationPatients": 1,
+        "neutropenicFeverReported": 0,
+        "rhabdomyolysisReported": 0,
+        "overlapBetweenToxicityCategoriesKnown": false,
+        "totalUniqueSevereAEPatients": null,
+        "soleSimvastatinCausationEstablished": false,
+        "zeroFutureRiskEstablished": false
+      },
+      "time": "Hematologictoxicitymoreprominentsecondcourse;GIafterfirstcycle;median3cycles(range1-4),no long-termriskhorizon.",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "72f2ec71cca076b26d20a07c86f5f81842b4e434c76ad5fa1a5943e03c33e0a2",
+          "physicalPage": 1,
+          "printedPage": "e130",
+          "nativeSection": "Right column: patient results/stopping/toxicities"
+        }
+      ],
+      "comparator": null,
+      "simvastatinAloneEffect": false,
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    }
+  ],
+  "claims": [
+    {
+      "id": "REED-CAL-12-C01",
+      "resultIds": [
+        "REED-CAL-12-R01"
+      ],
+      "statement": "Only1partialresponse among12treatedpatients withrelapsed/refractorymyeloma failedthe prespecifiedtwo-response threshold,soaccrualstopped. Sixstable/fiveprogressive disease categories retained; theuncontrolledregimen doesnotestablishsimvastatin-alone benefit or universalstatinequivalence/failure.",
+      "relation": "single_arm_regimen_response_and_stopping",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED-CAL-12-C02",
+      "resultIds": [
+        "REED-CAL-12-R02"
+      ],
+      "statement": "The12-personcombinationregimenhadWHOgrade3-4neutropenia8,thrombocytopenia2 andgrade3GI/dehydration1;categoriesmayoverlap. No reportedneutropenicfever/rhabdomyolysisdoesnotprovefuturesafety or simvastatin-onlyattribution.",
+      "relation": "single_arm_regimen_toxicity",
+      "acceptedSupport": false
+    }
+  ],
+  "reviewInputs": [
+    {
+      "id": "Q01",
+      "answer": "ProspectivephaseIIsimvastatin+VADpilot,predefinedresponse/toxicitygo/no-go,notrandomizedefficacy.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "72f2ec71cca076b26d20a07c86f5f81842b4e434c76ad5fa1a5943e03c33e0a2",
+          "physicalPage": 1,
+          "printedPage": "e130",
+          "nativeSection": "Left column: eligibility/regimen/response/design"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q02",
+      "answer": "12treated,median64years/4priorregimens;7VADresistant;plannedmaximum40neverreached.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "72f2ec71cca076b26d20a07c86f5f81842b4e434c76ad5fa1a5943e03c33e0a2",
+          "physicalPage": 1,
+          "printedPage": "e130",
+          "nativeSection": "Right column: patient results/stopping/toxicities"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "72f2ec71cca076b26d20a07c86f5f81842b4e434c76ad5fa1a5943e03c33e0a2",
+          "physicalPage": 1,
+          "printedPage": "e130",
+          "nativeSection": "Left column: eligibility/regimen/response/design"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q03",
+      "answer": "Simvastatin15mg/kg/dayoral1-7splitBID,28daycycle;VADday7-10literal,no inferredcumulativedose/adherence.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "72f2ec71cca076b26d20a07c86f5f81842b4e434c76ad5fa1a5943e03c33e0a2",
+          "physicalPage": 1,
+          "printedPage": "e130",
+          "nativeSection": "Left column: eligibility/regimen/response/design"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "72f2ec71cca076b26d20a07c86f5f81842b4e434c76ad5fa1a5943e03c33e0a2",
+          "physicalPage": 1,
+          "printedPage": "e130",
+          "nativeSection": "Right column: patient results/stopping/toxicities"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q04",
+      "answer": "Singlearm/Flemingtwo-stage,nocontrol/blindingreported,recruitmentdatesunreported.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "72f2ec71cca076b26d20a07c86f5f81842b4e434c76ad5fa1a5943e03c33e0a2",
+          "physicalPage": 1,
+          "printedPage": "e130",
+          "nativeSection": "Left column: eligibility/regimen/response/design"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q05",
+      "answer": "EBMTresponseafter2cyclesplanned,WHOtoxicity;stop<2responsesafter12,notnewclinicalthreshold.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "72f2ec71cca076b26d20a07c86f5f81842b4e434c76ad5fa1a5943e03c33e0a2",
+          "physicalPage": 1,
+          "printedPage": "e130",
+          "nativeSection": "Left column: eligibility/regimen/response/design"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "72f2ec71cca076b26d20a07c86f5f81842b4e434c76ad5fa1a5943e03c33e0a2",
+          "physicalPage": 1,
+          "printedPage": "e130",
+          "nativeSection": "Right column: patient results/stopping/toxicities"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q06",
+      "answer": "PR1/SD6/PD5;stopped;SD103daysmedian,PRrelapse230daysfromstartnotresponseduration;noCI/P.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "72f2ec71cca076b26d20a07c86f5f81842b4e434c76ad5fa1a5943e03c33e0a2",
+          "physicalPage": 1,
+          "printedPage": "e130",
+          "nativeSection": "Right column: patient results/stopping/toxicities"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q07",
+      "answer": "No fullscreening/followup/adherence/evaluable-flow;responsecategoriesaccount12butactualcyclesvary1-4.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "72f2ec71cca076b26d20a07c86f5f81842b4e434c76ad5fa1a5943e03c33e0a2",
+          "physicalPage": 1,
+          "printedPage": "e130",
+          "nativeSection": "Left column: eligibility/regimen/response/design"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "72f2ec71cca076b26d20a07c86f5f81842b4e434c76ad5fa1a5943e03c33e0a2",
+          "physicalPage": 1,
+          "printedPage": "e130",
+          "nativeSection": "Right column: patient results/stopping/toxicities"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q08",
+      "answer": "WHOgrade3-4neutropenia8/thrombocytopenia2,grade3GI/dehydration1;overlapunknown,noneutropenicfever/rhabdomyolysisreportednotfuturesafety.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "72f2ec71cca076b26d20a07c86f5f81842b4e434c76ad5fa1a5943e03c33e0a2",
+          "physicalPage": 1,
+          "printedPage": "e130",
+          "nativeSection": "Right column: patient results/stopping/toxicities"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q09",
+      "answer": "Uncontrolledsmallselection/cointerventions;abstractmildversusseverebodytoxicityqualified,day7overlapretained.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "72f2ec71cca076b26d20a07c86f5f81842b4e434c76ad5fa1a5943e03c33e0a2",
+          "physicalPage": 1,
+          "printedPage": "e130",
+          "nativeSection": "Right column: discussion/conclusion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "72f2ec71cca076b26d20a07c86f5f81842b4e434c76ad5fa1a5943e03c33e0a2",
+          "physicalPage": 1,
+          "printedPage": "e130",
+          "nativeSection": "Right column: patient results/stopping/toxicities"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "72f2ec71cca076b26d20a07c86f5f81842b4e434c76ad5fa1a5943e03c33e0a2",
+          "physicalPage": 1,
+          "printedPage": "e130",
+          "nativeSection": "Left column: eligibility/regimen/response/design"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q10",
+      "answer": "Relapsed/refractoryselection/highdosecombinationnotfrontline,standalonestatinorclass-wideequivalence.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "72f2ec71cca076b26d20a07c86f5f81842b4e434c76ad5fa1a5943e03c33e0a2",
+          "physicalPage": 1,
+          "printedPage": "e130",
+          "nativeSection": "Left column: eligibility/regimen/response/design"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "72f2ec71cca076b26d20a07c86f5f81842b4e434c76ad5fa1a5943e03c33e0a2",
+          "physicalPage": 1,
+          "printedPage": "e130",
+          "nativeSection": "Right column: patient results/stopping/toxicities"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "72f2ec71cca076b26d20a07c86f5f81842b4e434c76ad5fa1a5943e03c33e0a2",
+          "physicalPage": 1,
+          "printedPage": "e130",
+          "nativeSection": "Right column: discussion/conclusion"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q11",
+      "answer": "SeparatepriorphaseI/invitro/lovastatinPKcontextnotcurrentpatients;overlapunadjudicated.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "72f2ec71cca076b26d20a07c86f5f81842b4e434c76ad5fa1a5943e03c33e0a2",
+          "physicalPage": 2,
+          "printedPage": "e131",
+          "nativeSection": "Funding and references"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q12",
+      "answer": "AcademicDutchinvestigators;IMF/KWFgrants;productsupply/COIdeclarationnotreported.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "72f2ec71cca076b26d20a07c86f5f81842b4e434c76ad5fa1a5943e03c33e0a2",
+          "physicalPage": 1,
+          "printedPage": "e130",
+          "nativeSection": "Right column: discussion/conclusion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "72f2ec71cca076b26d20a07c86f5f81842b4e434c76ad5fa1a5943e03c33e0a2",
+          "physicalPage": 2,
+          "printedPage": "e131",
+          "nativeSection": "Funding and references"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q13",
+      "answer": "Exact2pageletterread/p1visual;protocolunavailable,externalintegrityunchecked.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "72f2ec71cca076b26d20a07c86f5f81842b4e434c76ad5fa1a5943e03c33e0a2",
+          "physicalPage": 1,
+          "printedPage": "e130",
+          "nativeSection": "Left column: eligibility/regimen/response/design"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "72f2ec71cca076b26d20a07c86f5f81842b4e434c76ad5fa1a5943e03c33e0a2",
+          "physicalPage": 2,
+          "printedPage": "e131",
+          "nativeSection": "Funding and references"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q14",
+      "answer": "Exact2results/claimsprivateC21proposalunapplied.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "72f2ec71cca076b26d20a07c86f5f81842b4e434c76ad5fa1a5943e03c33e0a2",
+          "physicalPage": 1,
+          "printedPage": "e130",
+          "nativeSection": "Right column: discussion/conclusion"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending",
+      "downstreamMapping": {
+        "paperId": "REED-CAL-12-P1",
+        "intakeReportId": "REED-369a24cd359f19e60aaf",
+        "resultIds": [
+          "REED-CAL-12-R01",
+          "REED-CAL-12-R02"
+        ],
+        "claimIds": [
+          "REED-CAL-12-C01",
+          "REED-CAL-12-C02"
+        ],
+        "existingGuideId": "G-CONDITION-C21",
+        "purpose": "Private relapsed/refractoryMM combination-regimen response/null andtoxicitycontext,not a simvastatin prescription or class-wide no-effect claim.",
+        "publicationState": "private_draft",
+        "canonicalChanges": 0
+      }
+    },
+    {
+      "id": "Q15",
+      "answer": "Failedprespecifiedresponsecontinuationcriterionwithoutcausalcomparatorefficacy;grade3-4toxicityretained,fullreviewincomplete.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "72f2ec71cca076b26d20a07c86f5f81842b4e434c76ad5fa1a5943e03c33e0a2",
+          "physicalPage": 1,
+          "printedPage": "e130",
+          "nativeSection": "Right column: patient results/stopping/toxicities"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "72f2ec71cca076b26d20a07c86f5f81842b4e434c76ad5fa1a5943e03c33e0a2",
+          "physicalPage": 1,
+          "printedPage": "e130",
+          "nativeSection": "Right column: discussion/conclusion"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    }
+  ],
+  "sourceQualifications": [
+    {
+      "id": "C12-SAFETY-WORDING",
+      "status": "qualified",
+      "sourceA": {
+        "locator": {
+          "kind": "pdf",
+          "sourceSha256": "72f2ec71cca076b26d20a07c86f5f81842b4e434c76ad5fa1a5943e03c33e0a2",
+          "physicalPage": 1,
+          "printedPage": "e130",
+          "nativeSection": "Abstract"
+        },
+        "description": "Abstract describes mild side effects"
+      },
+      "sourceB": {
+        "locator": {
+          "kind": "pdf",
+          "sourceSha256": "72f2ec71cca076b26d20a07c86f5f81842b4e434c76ad5fa1a5943e03c33e0a2",
+          "physicalPage": 1,
+          "printedPage": "e130",
+          "nativeSection": "Right column: patient results/stopping/toxicities"
+        },
+        "description": "Body reports WHOgrade3-4neutropenia8,thrombocytopenia2 andgrade3GI/dehydration1 among12"
+      },
+      "action": "Retain actual grades/counts; do not label alltoxicity mild/safe orattribute solely tosimvastatin."
+    },
+    {
+      "id": "C12-SCHEDULE",
+      "status": "literal_schedule_not_independently_reconstructed",
+      "locator": {
+        "kind": "pdf",
+        "sourceSha256": "72f2ec71cca076b26d20a07c86f5f81842b4e434c76ad5fa1a5943e03c33e0a2",
+        "physicalPage": 1,
+        "printedPage": "e130",
+        "nativeSection": "Left column: eligibility/regimen/response/design"
+      },
+      "description": "Simvastatin15mg/kg/dayoral days1-7 divided two doses; followed byVADday7-10, withvincristine0.4mg,doxorubicin9mg/m2 anddexamethasone40mg. Text doesnot restate each IVdrug frequency.",
+      "action": "Preserve literal instructions/day7overlap; no inferred cumulativeVADdose or zerooverlap."
+    },
+    {
+      "id": "C12-TIME",
+      "status": "qualified",
+      "locator": {
+        "kind": "pdf",
+        "sourceSha256": "72f2ec71cca076b26d20a07c86f5f81842b4e434c76ad5fa1a5943e03c33e0a2",
+        "physicalPage": 1,
+        "printedPage": "e130",
+        "nativeSection": "Right column: patient results/stopping/toxicities"
+      },
+      "description": "Response assessment planned after2cycles; actualmedian3cycles(range1-4); SDdurationmedian103days(range94-258); PRpatientrelapsed230daysfromtreatmentstart.",
+      "action": "No 230-daydurationofresponse or cohortPFS/OS inferred; response onset notprovided."
+    },
+    {
+      "id": "C12-PRIOR-STUDY",
+      "status": "context_not_current_results",
+      "locators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "72f2ec71cca076b26d20a07c86f5f81842b4e434c76ad5fa1a5943e03c33e0a2",
+          "physicalPage": 1,
+          "printedPage": "e130",
+          "nativeSection": "Left column: eligibility/regimen/response/design"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "72f2ec71cca076b26d20a07c86f5f81842b4e434c76ad5fa1a5943e03c33e0a2",
+          "physicalPage": 2,
+          "printedPage": "e131",
+          "nativeSection": "Funding and references"
+        }
+      ],
+      "description": "PriorphaseIdosefinding/reference2mixedmyeloma/lymphoma and lovastatinPK/reference4 are cited background, not currentpatients or verifiedcurrentPK.",
+      "action": "Do not add priorpatients/MTDproof/doses/lovastatinexposure tocurrent12-personreport."
+    }
+  ],
+  "limitations": [
+    "Only12single-armheavilypretreatedpatients",
+    "VADcointerventionnotisolatedsimvastatin",
+    "7/12priorVADresistantnotall12",
+    "Responseplannedafter2butcycles1-4/evaluableflowunknown",
+    "CI/P/completeattrition/adherence/longtermsafetyunreported",
+    "Abstractmildsafetywordingmustnoterasegrade3-4toxicity",
+    "Toxicitycategoryoverlap/attributionunknown",
+    "Literalday7overlap/IVfrequencyqualified",
+    "230daysfromstartnotPRduration/PFS/OS",
+    "PriorphaseI/lovastatinPKnotnewcurrentpatients/results",
+    "Protocol/externalintegrity/overlapincomplete"
+  ],
+  "scientificAcceptance": false,
+  "humanApproval": false,
+  "released": false
+}

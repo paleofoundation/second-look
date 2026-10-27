@@ -1,0 +1,25 @@
+{
+  "id": "REED-CAL-10-v1",
+  "at": "2026-10-27T09:34:51.716385+00:00",
+  "baseCheckpoint": "f82c99f7811a08cf766ab0a2de6b8aecf0d0e6de",
+  "authority": "08:57Reed ingest/CONDUCTORexisting24reportserialcalibration continuation; report10,not20/30scale",
+  "source": {
+    "ref": "$REMAPRX_REED_ROOT/aspirin-myeloma/pdfs/34396516-piedra-2022.pdf",
+    "sha256": "ff20c37121780ade2a2e1f75df2ca82ac6b3d7c285c942c7d180e301827b8160",
+    "pmid": "34396516",
+    "doi": "10.1111/bjh.17772",
+    "title": "Comparison of venous thromboembolism incidence in newly diagnosed multiple myeloma patients receiving bortezomib, lenalidomide, dexamethasone (RVD) or carfilzomib, lenalidomide, dexamethasone (KRD) with aspirin or rivaroxaban thromboprophylaxis",
+    "physicalPages": 8,
+    "intakeReportId": "REED-c98aa762b6e5ab25791a"
+  },
+  "indexSha256": "5c2a39e2ff03f606086b9a4b05b40b648d58ad1515605a00f533973b3b317a2d",
+  "scope": "Read exact8page retrospectivecohort; extract bounded cohort-specificVTE/bleeding events/denominators/exposure/time/analysis andcomparison. SeparateRVDvsKRD antimyelomaregimen fromaspirinvsrivaroxaban prophylaxis andcalendar/riskselection; no randomizeddrugcausalbenefit oranticancerefficacy claim. Preserveexactadjustment/riskmeasure/CIand missingness.",
+  "sourcePolicy": "Closed exactPDF/index,noexternalregistry/protocol/supplement/integrityretrieval. Rawprivate;visualinspectconsequentialtables/clinicalnumbers; no calculatedriskdifference/NNT/overlappingpatientpoolunlessclearlysourced/bounded.",
+  "formatWarning": "pdfinfoCannotrevertnondecryptstreams;8pagesunencrypted. Supplieralsonotessyntaxwarning. Proceedonlyifmaterialtext/tablesreadable,recordactualwarnings/norepairclaim.",
+  "identity": "Reusebatchintakereport;noexistingcanonicalrefsatintake; cohortgroupsnotindependenttrials/newguideobjects.",
+  "schema": "SCHEMA.json and15Q/67typedfields withpluralcohorts/exposures/resultclaims,actualeventnumerator/denominator/unit/time andcausal/bleedinglimits.",
+  "readiness": "Prospectiveplan/schema/source/indexGPbeforefullsourceaccess; materialscopechangeholds/version.",
+  "gates": "Exactindependentauditrequired; no fullfieldmap/scientific/human/newgrade/releaseapproval, noautomaticlarge-batchacceptance.",
+  "ownership": "Same lane1/PR8 ownRRXpacketonly;noapp/guide/oldcorpus/protectedbooks/Vitiligo/azolechanges,newrunner/subagents/outbound.",
+  "delivery": "Normalserialfollowup/newimmutablemanifest preservingfrozenearlierbytes; nativepush403stop,draftonly,no merge/deploy/release."
+}

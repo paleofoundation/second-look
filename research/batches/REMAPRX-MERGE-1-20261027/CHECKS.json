@@ -1,0 +1,139 @@
+[
+  {
+    "command": [
+      "node",
+      "scripts/check-governance.mjs"
+    ],
+    "exitCode": 0,
+    "log": "01-check-governance.log",
+    "sha256": "c5399a463361054cafb76fc1e19b0ae50e2ec42c650b59b50f2ebbb06d8c56cf",
+    "tail": "PASS: 236 preserved rule/history/ingest files, frozen baseline and collaborator entry points. This is repository integrity, not scientific acceptance.\n"
+  },
+  {
+    "command": [
+      "node",
+      "scripts/content-check.mjs"
+    ],
+    "exitCode": 0,
+    "log": "02-content-check.log",
+    "sha256": "5acc271b82d850098ee7989962d31305b5eb4cde9150e483c7a64ba99b7dee3a",
+    "tail": "{\"status\":\"PASS\",\"checks\":\"canonical IDs, route uniqueness, sidebar labels, citations, exact sentences, source classes, draft publication boundary, no QA override\",\"counts\":{\"guides\":69,\"primaryReports\":168,\"contextSources\":108,\"fullReviewDrafts\":3,\"glossary\":21,\"questions\":36}}\n"
+  },
+  {
+    "command": [
+      "node",
+      "scripts/reader-check.mjs"
+    ],
+    "exitCode": 0,
+    "log": "03-reader-check.log",
+    "sha256": "3c67bddb41c40265add10bd1f1d294577db825782201962216f86493909ca519",
+    "tail": "{\"status\":\"PASS\",\"drugParents\":31,\"conditionParents\":32,\"sharedRows\":70,\"backgroundRows\":0,\"reciprocalLinks\":252,\"checks\":\"Baseline D01-D30 and C01-C30 coverage/types, unique entity IDs and routes, reader FK closure, sentence/source closure, same row reused on both parents, exact tier and approval boundaries, all target routes\",\"negativeCasesRejected\":[\"invented grade\",\"false completion\",\"quarantined source\",\"unknown source\",\"unapproved release\",\"background inflated to primary\"]}\n"
+  },
+  {
+    "command": [
+      "node",
+      "scripts/check-reader-sections.mjs",
+      "--all-profiles"
+    ],
+    "exitCode": 1,
+    "log": "04-check-reader-sections.log",
+    "sha256": "a38eda9525f58cc93fee0e0467f52a958ae19f937ef6d9a43270420d50b0d08e",
+    "tail": "\":\"PASS\",\"profiles\":64,\"questions\":343,\"checks\":\"Every canonical content section populated; actual SSR; no production placeholders; unique IDs; all fragments; canonical questions; source closure; citation order\"}\nnode:internal/modules/run_main:123\n    triggerUncaughtException(\n    ^\n\nAssertionError [ERR_ASSERTION]: Two shared pathway explanations\n\n5 !== 2\n\n    at file:///Users/kmfp/Documents/Codex/2026-10-25/you-are-conductor-the-single-codex/work/fill-remaprx-2/checkout/scripts/check-reader-sections.mjs:304:8\n    at ModuleJob.run (node:internal/modules/esm/module_job:343:25)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:681:26)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5) {\n  generatedMessage: false,\n  code: 'ERR_ASSERTION',\n  actual: 5,\n  expected: 2,\n  operator: 'strictEqual',\n  diff: 'simple'\n}\n\nNode.js v22.23.4\n"
+  },
+  {
+    "command": [
+      "node",
+      "scripts/check-article-navigation.mjs"
+    ],
+    "exitCode": 1,
+    "log": "05-check-article-navigation.log",
+    "sha256": "3565c25fed49a772825e654e5499a4015d3f06b473f5976ae542ff13ed1bbb3b",
+    "tail": " public Metformin SSR; condition-specific mechanisms; visible benefits summary and accordions; safety and correction facts; unique IDs; action fragments; 24 sequential, source-resolved first-appearance citations.\nnode:internal/modules/run_main:123\n    triggerUncaughtException(\n    ^\n\nAssertionError [ERR_ASSERTION]: Two shared pathway explanations\n\n5 !== 2\n\n    at file:///Users/kmfp/Documents/Codex/2026-10-25/you-are-conductor-the-single-codex/work/fill-remaprx-2/checkout/scripts/check-reader-sections.mjs:304:8\n    at ModuleJob.run (node:internal/modules/esm/module_job:343:25)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:681:26)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5) {\n  generatedMessage: false,\n  code: 'ERR_ASSERTION',\n  actual: 5,\n  expected: 2,\n  operator: 'strictEqual',\n  diff: 'simple'\n}\n\nNode.js v22.23.4\n"
+  },
+  {
+    "command": [
+      "node",
+      "scripts/check-evidence-section.mjs"
+    ],
+    "exitCode": 1,
+    "log": "06-check-evidence-section.log",
+    "sha256": "3565c25fed49a772825e654e5499a4015d3f06b473f5976ae542ff13ed1bbb3b",
+    "tail": " public Metformin SSR; condition-specific mechanisms; visible benefits summary and accordions; safety and correction facts; unique IDs; action fragments; 24 sequential, source-resolved first-appearance citations.\nnode:internal/modules/run_main:123\n    triggerUncaughtException(\n    ^\n\nAssertionError [ERR_ASSERTION]: Two shared pathway explanations\n\n5 !== 2\n\n    at file:///Users/kmfp/Documents/Codex/2026-10-25/you-are-conductor-the-single-codex/work/fill-remaprx-2/checkout/scripts/check-reader-sections.mjs:304:8\n    at ModuleJob.run (node:internal/modules/esm/module_job:343:25)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:681:26)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5) {\n  generatedMessage: false,\n  code: 'ERR_ASSERTION',\n  actual: 5,\n  expected: 2,\n  operator: 'strictEqual',\n  diff: 'simple'\n}\n\nNode.js v22.23.4\n"
+  },
+  {
+    "command": [
+      "node",
+      "scripts/check-evidence-grading.mjs"
+    ],
+    "exitCode": 1,
+    "log": "07-check-evidence-grading.log",
+    "sha256": "3565c25fed49a772825e654e5499a4015d3f06b473f5976ae542ff13ed1bbb3b",
+    "tail": " public Metformin SSR; condition-specific mechanisms; visible benefits summary and accordions; safety and correction facts; unique IDs; action fragments; 24 sequential, source-resolved first-appearance citations.\nnode:internal/modules/run_main:123\n    triggerUncaughtException(\n    ^\n\nAssertionError [ERR_ASSERTION]: Two shared pathway explanations\n\n5 !== 2\n\n    at file:///Users/kmfp/Documents/Codex/2026-10-25/you-are-conductor-the-single-codex/work/fill-remaprx-2/checkout/scripts/check-reader-sections.mjs:304:8\n    at ModuleJob.run (node:internal/modules/esm/module_job:343:25)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:681:26)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5) {\n  generatedMessage: false,\n  code: 'ERR_ASSERTION',\n  actual: 5,\n  expected: 2,\n  operator: 'strictEqual',\n  diff: 'simple'\n}\n\nNode.js v22.23.4\n"
+  },
+  {
+    "command": [
+      "node",
+      "scripts/check-outcome-summaries.mjs"
+    ],
+    "exitCode": 0,
+    "log": "08-check-outcome-summaries.log",
+    "sha256": "47a0fe22dc4b3b0aeb05a421303081e3358298d93e8889018e122c32a7ec4d3c",
+    "tail": "IDOUT-2023\"\n        ]\n      },\n      {\n        \"id\": \"S-ACTIV6-2026\",\n        \"sourceIds\": [\n          \"P-ACTIV6-2026\"\n        ],\n        \"participants\": 3214,\n        \"participantBasis\": \"3214 randomized in ACTIV-6; 2983 in the recorded analysis population.\"\n      },\n      {\n        \"id\": \"S-KOREA-2026\",\n        \"participants\": 264,\n        \"participantBasis\": \"264 participants in the metformin and placebo comparison (132 per arm); excludes the separate ursodeoxycholic-acid arm.\",\n        \"sourceIds\": [\n          \"P-KOREA-2026\"\n        ]\n      }\n    ]\n  },\n  \"checks\": [\n    \"source and row closure\",\n    \"explicit source-located assessments\",\n    \"stale input and projection rejection\",\n    \"held/computational grade rejection\",\n    \"overlap-aware trial and participant totals\",\n    \"conflicting denominator rejection\",\n    \"unknown is null\",\n    \"single-summary explanation preserved\"\n  ]\n}\n"
+  },
+  {
+    "command": [
+      "node",
+      "scripts/check-evidence-mechanisms.mjs"
+    ],
+    "exitCode": 0,
+    "log": "09-check-evidence-mechanisms.log",
+    "sha256": "7fd8ee99f80430abada5f9b5c754b2ce14d3bdc9608c6e2a78d322cab8039ef3",
+    "tail": "PASS: exact mechanism scope, opposite-guide source closure, legacy anchors, retained preclinical rationale and deferred drawer citations.\n"
+  },
+  {
+    "command": [
+      "node",
+      "scripts/check-wiki-links.mjs"
+    ],
+    "exitCode": 0,
+    "log": "10-check-wiki-links.log",
+    "sha256": "3881ac9831ebf7cf6999f62a54f2ff9c9b1c7e66edb18406e6a3f21a7e47196e",
+    "tail": "PASS: canonical wiki routes, aliases, longest whole-word matches, paragraph deduplication, self/URL protection, article SSR, reciprocal condition/drug links, Overview headings, source/citation integrity, evidence and mechanism prose; ordered related reading, canonical fallback, legacy Connections exclusion, and three-link sidebar/backlink cap.\n"
+  },
+  {
+    "command": [
+      "node",
+      "node_modules/typescript/bin/tsc",
+      "--noEmit",
+      "--incremental",
+      "false"
+    ],
+    "exitCode": 0,
+    "log": "11-tsc.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tail": ""
+  },
+  {
+    "command": [
+      "npm",
+      "run",
+      "build"
+    ],
+    "exitCode": 0,
+    "log": "12-run.log",
+    "sha256": "2bfc65360334d797537d1a7a8fb69306bdd874cfd4effe535447b0a5e3813dda",
+    "tail": "l                       \n  \u251c \u03bb /api/checkout                             \n  \u251c \u03bb /api/corrections                          \n  \u251c \u03bb /api/guides/:editionId/download           \n  \u251c \u03bb /api/guides/:editionId/reader             \n  \u251c \u03bb /api/library                              \n  \u251c \u03bb /api/library/guides                       \n  \u251c \u03bb /api/physician-packets                    \n  \u251c \u03bb /api/physician-packets/:condition         \n  \u251c \u03bb /api/physician-packets/:condition/download\n  \u251c \u03bb /api/profile                              \n  \u251c \u03bb /api/purchases                            \n  \u251c \u03bb /api/reviews/:id                          \n  \u251c \u03bb /api/stripe/webhook                       \n  \u251c \u0192 /guides/read/:editionId                   \n  \u251c \u03bb /robots.txt                               \n  \u2514 \u03bb /sitemap.xml                              \n\n  \u03bb API  \u0192 Dynamic\n\n  Build complete. Run `vinext start` to start the production server.\n\n",
+    "rawOutputSha256": "1a452568279f754aa423a26689f2128eb6486ac300ba68eb4e016f4762bab321",
+    "logNormalization": "Trailing whitespace and final blank lines removed; raw bytes retained outside Git"
+  },
+  {
+    "command": [
+      "node",
+      "scripts/verify-reader-boundary.mjs"
+    ],
+    "exitCode": 0,
+    "log": "13-verify-reader-boundary.log",
+    "sha256": "949821a93a71c4313b2f082303d8fdce7cbfa7e3ecf9255e5978031cea60ee14",
+    "tail": "{\"status\":\"PASS\",\"projections\":10,\"fields\":19794,\"payloads\":36,\"mechanismContexts\":2}\n"
+  }
+]

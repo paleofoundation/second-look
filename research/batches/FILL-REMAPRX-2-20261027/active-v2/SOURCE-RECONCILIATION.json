@@ -1,0 +1,127 @@
+{
+  "checkedAt": "2026-10-27T10:00:10.890064+02:00",
+  "originalPrimaryFilesUsed": [
+    {
+      "sourceId": "COND-C23-ACTIM-2017",
+      "files": [
+        {
+          "rootId": "RESEARCH",
+          "path": "work/ingest/FETCH30/source-files/4d/4df9256c8ba85d5c71e88ea4a93c76be39ba2a0d72d35ec0315f6ed0af4e26f8.pdf",
+          "sha256": "4df9256c8ba85d5c71e88ea4a93c76be39ba2a0d72d35ec0315f6ed0af4e26f8",
+          "bytes": 297386,
+          "bindingBasis": "url_or_identifier_in_existing_source_record",
+          "expectedSha256": "4df9256c8ba85d5c71e88ea4a93c76be39ba2a0d72d35ec0315f6ed0af4e26f8",
+          "readingDepth": "not_read_at_plan_time"
+        }
+      ]
+    },
+    {
+      "sourceId": "COND-C05-LDN-2025",
+      "files": [
+        {
+          "rootId": "RESEARCH",
+          "path": "work/ingest/FETCH30/source-files/32/3272d5b90b2af16428d821bf6d6540640b1462983003e73106e21db9de338656.pdf",
+          "sha256": "3272d5b90b2af16428d821bf6d6540640b1462983003e73106e21db9de338656",
+          "bytes": 665098,
+          "bindingBasis": "url_or_identifier_in_existing_source_record",
+          "expectedSha256": "3272d5b90b2af16428d821bf6d6540640b1462983003e73106e21db9de338656",
+          "readingDepth": "not_read_at_plan_time"
+        },
+        {
+          "rootId": "RESEARCH",
+          "path": "work/ingest/FETCH30/source-files/a8/a8dc483187239fe950ef606cb27aff5d836c4d32130f4eea837025a715a9a160.pdf",
+          "sha256": "a8dc483187239fe950ef606cb27aff5d836c4d32130f4eea837025a715a9a160",
+          "bytes": 86565,
+          "bindingBasis": "url_or_identifier_in_existing_source_record",
+          "expectedSha256": "a8dc483187239fe950ef606cb27aff5d836c4d32130f4eea837025a715a9a160",
+          "readingDepth": "not_read_at_plan_time"
+        }
+      ]
+    },
+    {
+      "sourceId": "P-D02-ACTIV6-2023",
+      "files": [
+        {
+          "rootId": "RULE_WORK",
+          "path": "ingest/SL-F01-F02-20261011/receipt/input/return/F02/PRIMARY/A-F02-R4141__original_report__higher-dose-fluvoxamine-and-time-to-sustained-reco.html",
+          "sha256": "609becf81c10eec73de2afa40445642de6ed03b7401613fc71650a433b70ec41",
+          "bytes": 209554,
+          "bindingBasis": "prior_exact_source_binding",
+          "expectedSha256": "609becf81c10eec73de2afa40445642de6ed03b7401613fc71650a433b70ec41",
+          "readingDepth": "not_read_at_plan_time"
+        }
+      ]
+    },
+    {
+      "sourceId": "MECH-D26-HYPOXIA-2025",
+      "files": [
+        {
+          "rootId": "ORIGINAL_SITE",
+          "path": "editorial/mechanism-expansion/sildenafil-hypoxia-2025.html",
+          "sha256": "9200c0ec6f777b30ea28443eef256850f2371ce374c3c5fe122ff6edb9fa60a8",
+          "bytes": 268687,
+          "bindingBasis": "prior_exact_source_binding",
+          "expectedSha256": "9200c0ec6f777b30ea28443eef256850f2371ce374c3c5fe122ff6edb9fa60a8",
+          "readingDepth": "not_read_at_plan_time"
+        }
+      ]
+    }
+  ],
+  "registryCompanionsNotPrimary": [
+    "P-D04-FIBRO-2024",
+    "P-REVIVE-2026"
+  ],
+  "labelCandidatesRejected": [
+    {
+      "sourceId": "MF-LABEL-2025",
+      "canonicalSetId": "542cec22-eeae-4704-9bb6-4176640e5ea8",
+      "foundSetId": "c82a10fa-1e8e-46b6-890a-737de3f34ee1"
+    },
+    {
+      "sourceId": "CTX-D02-LABEL",
+      "canonicalSetId": "7ecd83ec-88f5-4f85-9cc2-9068375d8820",
+      "foundSetId": "6eeb14df-6fcf-a737-5359-5744eb4accea"
+    }
+  ],
+  "reason": "Different product/source identities cannot silently replace the immutable canonical source objects. No new label claim is projected.",
+  "heldPages": [
+    {
+      "guideId": "G-CONDITION-C31",
+      "reason": "No exact current official context file; candidate metformin label has a different set ID. New approved-use/outcome additions remain held."
+    },
+    {
+      "guideId": "G-CONDITION-C08",
+      "reason": "No local originals for the two PGAD reports or exact CSBD report; existing guide byte-preserved."
+    },
+    {
+      "guideId": "G-CONDITION-C22",
+      "reason": "No local originals for the AML valproate report or the cited HNSCC report; existing guide byte-preserved."
+    }
+  ],
+  "missingOriginalSourceIds": [
+    "COND-C05-NIAMS",
+    "COND-C08-IPGAD-2023",
+    "COND-C08-NEURO-2020",
+    "COND-C12-VPA-2021",
+    "COND-C22-NCI",
+    "COND-C22-VPA-2019",
+    "COND-C23-NCI",
+    "COND-C23-PPARG-2015",
+    "COND-C31-MANAGEMENT",
+    "COND-C31-NIDDK",
+    "CTX-D02-LABEL",
+    "CTX-D26-LABEL",
+    "CTX-D26-VIAGRA",
+    "CTX-GUIDE-2",
+    "CTX-REPURPOSING-NCATS",
+    "MF-LABEL-2025",
+    "P-D02-SIGMA1-2019",
+    "P-D04-CSBD-2022",
+    "P-D04-FIBRO-2024",
+    "P-D26-COMBINATION",
+    "P-D26-GBM",
+    "P-REVIVE-2026"
+  ],
+  "newSourceObjects": 0,
+  "newOutcomeRows": 0
+}

@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "reed2-cal06-NDMM-thrombosis-bleeding-v1",
+  "required": [
+    "schemaVersion",
+    "paper",
+    "source",
+    "inspection",
+    "study",
+    "populations",
+    "results",
+    "claims",
+    "reviewInputs",
+    "sourceQualifications",
+    "limitations",
+    "scientificAcceptance",
+    "humanApproval",
+    "released"
+  ],
+  "controls": [
+    "Verify actual design/setting/dates and independentstudyidentity",
+    "Nonrandomizedprophylaxis/riskassociations not causal efficacy",
+    "VTE/arterial/bleeding/prevention/therapy/anticancer distinct",
+    "Eventrates/time-to-event/cumulativeincidence/adjustedassociations separate",
+    "Actual Ns/risksets/time/uncertainty/nulls/competingrisks/missingness retained",
+    "Priorreportoverlap no newindependenttrial or summed patient claim",
+    "All10pages/materialvisuals/15Q67fields source-bound",
+    "Rootboundedfidelity not fullscience/human/release"
+  ],
+  "gates": {
+    "scientificAcceptance": false,
+    "humanApproval": false,
+    "released": false,
+    "newGrades": 0
+  }
+}

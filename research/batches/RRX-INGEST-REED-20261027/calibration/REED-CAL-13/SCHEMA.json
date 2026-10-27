@@ -1,0 +1,34 @@
+{
+  "schemaVersion": "REED-CAL-13-bone-marker-clinical-v1",
+  "required": [
+    "schemaVersion",
+    "paper",
+    "source",
+    "inspection",
+    "study",
+    "results",
+    "claims",
+    "reviewInputs",
+    "limitations",
+    "scientificAcceptance",
+    "humanApproval",
+    "released"
+  ],
+  "controls": [
+    "Actualclinicaldesignnotassumedrandomized",
+    "Bonemarkersnotfractures/tumorresponse/survival",
+    "Doseunit/schedule/actualN/timepreserved",
+    "Withinpersonvscurrentcontrolseparate",
+    "Nonsignificance nottherapeuticequivalence",
+    "Preclinical/priortrialscitednotcurrentpatients",
+    "No generic safety/highdoserecommendation"
+  ],
+  "reviewInventory": "rules/one-match-rule/references/research-reviews/review-questions-and-inputs.json",
+  "fixedGates": {
+    "scientificAcceptance": false,
+    "humanApproval": false,
+    "released": false,
+    "acceptedSupport": false,
+    "grade": null
+  }
+}

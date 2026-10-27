@@ -1,0 +1,23 @@
+{
+  "id": "REED2-CAL-03-v1",
+  "at": "2026-10-27T11:48:45.682220+00:00",
+  "phase2ReadinessSha256": "8cd08ca29809a63184f53ab39a6f1dfda4b1a6ecae4b1cce39f9152de6d56833",
+  "source": {
+    "pmid": "33337539",
+    "doi": "10.1002/14651858.cd008500.pub5",
+    "title": "Primary prophylaxis for venous thromboembolism in ambulatory cancer patients receiving chemotherapy.",
+    "ref": "$REMAPRX_REED_ROOT/aspirin-myeloma/pdfs/33337539-rutjes-2020.pdf",
+    "sha256": "a07156347ae495d436452f08630d59bbe7c831bf175d2a4f54200df3e7192d52",
+    "physicalPages": 168,
+    "intakeReportId": "REED-77403c5861d156df9b12"
+  },
+  "baselineRow": "baseline-286:005",
+  "indexRef": "$REMAPRX_REED_ROOT/aspirin-myeloma/index.csv",
+  "indexSha256": "5c2a39e2ff03f606086b9a4b05b40b648d58ad1515605a00f533973b3b317a2d",
+  "scope": "Read exact 168-page Cochrane secondary review, including methods, summaries, included/excluded study characteristics, analyses/forest plots, appendices and disclosures. Extract bounded aspirin-related myeloma prophylaxis evidence and its actual compared interventions/population/outcomes/time windows plus source-reported certainty/limitations; broad anticoagulant or all-cancer pooled findings are CONTEXT, never aspirin efficacy. Preserve VTE prevention versus established disease/tumor treatment, aspirin versus LMWH/VKA comparators, RCT versus reports, total review study N versus specific comparison N, event numerators/denominators and direction/CI/heterogeneity. Review is secondary: zero newly verified primary trials/participants from citations alone.",
+  "sourcePolicy": "Closed exact Reed PDF/index only; no source acquisition. Source-stated original trial findings remain secondhand unless a separate prospective primary-source packet is actually read. No silent substitution from abstract/book/current guidance or incomplete historical extraction. All 168 pages must be inspected before full-source read claim; reading can be chunked with honest progress.",
+  "schema": "SCHEMA.json plus pinned15Q67typedfields; source-native physical and printed locators; review outcomes/certainty and editorial grading kept separate",
+  "downstream": "Private unapplied G-DRUG-D13 aspirin/G-CONDITION-C21 if actual IDs verified before mapping; prophylaxis context distinct from tumor efficacy and clinical recommendation. No grade or public change.",
+  "verification": "Own full168pages, consequential aspirin/myeloma forest plots/tables visually, exact source/index/GP/dependencies, meaningful secondhand/comparator/denominator/missingness guards and independent root bounded audit. Fullfield/science/human/release remain0.",
+  "ownership": "Same lane1, new phase2 packet, PR8 immutable. No subagents/outbound/merge/deploy/publish/raw-files-inGit."
+}

@@ -1,0 +1,5 @@
+# CAL21 bounded harm-case checkpoint
+
+Satinsky2026PMID42383214/DOI10.14309/crj.0000000000002222. ProspectiveGPbeforeall3textpages/Table1-Fig1p2visual. Exactrootreceiptbindsall8dependencies/3R-C;15guardsPASS. ACCEPTANCE-UPDATE supersedes only historicalpendingbounded-auditstate.
+
+One55yearoldwomanusingFBZ222mg/TUDCA500mgdaily4wkforparasitecleanse,nocancer/confirmedinfection. ALT>3300text/3300table,ALP255text/245tableheld. Serialdays1/2/3/4/5/10/26valuesandunits/rangespreserved;INRday10<.9/day26blanknotzero. RUCAM9authorhighlyprobablewithcomponentsunshown,notindependentsole-FBZproof. NAC72h/day5discharge/day26normalchemistry:uncontrolledrecovery,notcomparativeNAC/TUDCAeffect,nocanceroutcome/incidence. NoacuteLF/biopsy/rechallenge. Priorhistology/otherbenzimidazolemechanism/globaltrialabsenceclaimsnotnewverifiedpatientfacts. D10privatemappingunapplied. Fullfield/scientific/human/grade/releaseapprovalzero;continueexisting24serial/broaderingestwithout20/30scale.

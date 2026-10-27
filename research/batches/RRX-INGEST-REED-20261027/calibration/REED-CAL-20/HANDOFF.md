@@ -1,0 +1,5 @@
+# CAL20 bounded CONTEXT source checkpoint
+
+Schlesser2022PMID35740881/DOI10.3390/biom12060756. ProspectiveGPbeforeall10textpages,materialFigs1/2physical5/7visual. Exactindependentreceipt binds all8dependencies and3primaryCONTEXTfindings/claims. ACCEPTANCE-UPDATE supersedes only historical pending bounded-audit state.17guardsPASS.
+
+ActualJeko1MCL/H1299NSCLC,notMMdespiteintakefolder/row. DirectC21MMsupportrejected;privatecontextmappingunapplied. Metformin10mM72h,suprapharmacological;cell-specificlead-ins,ownbaselineMTTnormalization,flowandnativegel/proteinresponsesremainqualified. BodyH1299withoutprewording/timing/formula72hvs4daydifferencesheld. H129930SquantityP.0744notallsignificant;activity/quantitycontrastsnottransferred. No assumedMTT/Fig2n3,noabsoluteMTTsurvival,no currenttranscript/rescue/solemTORmediator/clinicalinteraction/PK/safetyproof. LinkedFigS1/TableS1notread. Fullfield/scientific/human/grade/releaseapprovalzero;continuewithin24serialnot20/30scale.

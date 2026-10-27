@@ -1,0 +1,127 @@
+{
+  "batchReportId": "REED-6568ac9d4e9f7dc6278b",
+  "existingReferences": [
+    {
+      "origin": "acquisition/reports.jsonl",
+      "id": "A-F02-R1249",
+      "pmid": "42299164",
+      "doi": "10.7759/cureus.108896"
+    },
+    {
+      "origin": "draft-science/corpus.json:papers",
+      "id": "A-F02-R1249-F01",
+      "pmid": "42299164",
+      "doi": "10.7759/cureus.108896",
+      "title": "Drug-Induced Liver Injury Following Co-ingestion of Veterinary Fenbendazole and Ivermectin for Prostate Cancer: A Case Report."
+    },
+    {
+      "origin": "acquisition/sources.jsonl",
+      "id": "A-F02-R1249-F01",
+      "reportId": "A-F02-R1249",
+      "pmid": "42299164",
+      "doi": "",
+      "title": "Drug-Induced Liver Injury Following Co-ingestion of Veterinary Fenbendazole and Ivermectin for Prostate Cancer: A Case Report.",
+      "assetSha256": "91b05e5e2bc5e7339daa552dcf75939b0361673e5af3c78de80b4f91b4e9c6b8",
+      "quarantined": false
+    }
+  ],
+  "oldSourceRecordFile": "research/batches/RRX-INGEST-001/inventory/source-records.jsonl",
+  "oldSourceRecordFileSha256": "dc399e094efb0628a477c5d828adfb956557eda2f49eb6650b0aaed54e373be7",
+  "oldRecords": [
+    {
+      "acquisitionTags": {
+        "condition_ids": [],
+        "demand_ids": [
+          "DR022"
+        ],
+        "drug_ids": [],
+        "request_ids": [
+          "DR022"
+        ]
+      },
+      "assetIds": [
+        "SHA256:91b05e5e2bc5e7339daa552dcf75939b0361673e5af3c78de80b4f91b4e9c6b8"
+      ],
+      "canonicalId": "A-F02-R1249",
+      "disposition": "preserve_existing_metadata",
+      "doi": "10.7759/cureus.108896",
+      "id": "acquisition:A-F02-R1249-F01",
+      "identityMetadata": {
+        "doi_verification_source": "PubMed ArticleIdList (efetch) at 2026-10-09T09:58:24+00:00",
+        "duplicate_of": null,
+        "family_identity_status": "unresolved",
+        "identity_status": "verified",
+        "related_source_ids": [],
+        "report_role": "original_report",
+        "study_family_id": null,
+        "version_of": null
+      },
+      "origin": "acquisition",
+      "pmid": "42299164",
+      "priorScientificDisposition": {
+        "full_review_complete": false,
+        "processing_state": "partial_candidate",
+        "reason": "Located original findings extracted; independent scientific appraisal, unextracted secondary details and human review remain pending.",
+        "result_ids": [
+          "SCI-A-F02-R1249-F01-LOCATED"
+        ],
+        "source_id": "A-F02-R1249-F01",
+        "state": "renderable_draft"
+      },
+      "recordSha256": "512955d451be00e73ef2e2ed92a85871eb11d5b49647c811b48687b60a07774d",
+      "scientificApproval": false,
+      "sha256": "91b05e5e2bc5e7339daa552dcf75939b0361673e5af3c78de80b4f91b4e9c6b8",
+      "sourceId": "A-F02-R1249-F01",
+      "sourceLocation": {
+        "fileId": "RESEARCH:outputs/research/evidence/acquisition/sources.jsonl",
+        "pointer": "line:1460"
+      },
+      "states": {
+        "access_state": "full_pdf",
+        "human_review_status": "pending",
+        "publication_state": "draft",
+        "quarantined": false,
+        "verification_state": "pending"
+      },
+      "title": "Drug-Induced Liver Injury Following Co-ingestion of Veterinary Fenbendazole and Ivermectin for Prostate Cancer: A Case Report."
+    },
+    {
+      "acquisitionTags": {
+        "drugs": "fenbendazole",
+        "mechanism_themes": "immune_modulation"
+      },
+      "additionalNames": [],
+      "assetIds": [],
+      "canonicalId": null,
+      "classificationAuthority": "unverified_acquisition_regex_tags",
+      "disposition": "eligible_for_existing_target_screening",
+      "doi": "10.7759/cureus.108896",
+      "existingDuplicateOf": "A-F02-R1249-F01",
+      "existingTargetIds": [
+        "D10"
+      ],
+      "id": "moa:EXIST-42299164@row-28",
+      "identityMetadata": {},
+      "origin": "moa",
+      "pmid": "42299164",
+      "recordSha256": "125c9ecc1b3c0f0305727621088394e720c0dc192e7a8e54edc4feb09043677b",
+      "scientificApproval": false,
+      "sha256": null,
+      "sourceId": "EXIST-42299164",
+      "sourceLocation": {
+        "fileId": "MOA-METADATA:moa-manifest.csv",
+        "pointer": "csv-row:28"
+      },
+      "states": {
+        "access_state": "existing_held"
+      },
+      "title": "Drug-Induced Liver Injury Following Co-ingestion of Veterinary Fenbendazole and Ivermectin for Prostate Cancer: A Case Report."
+    }
+  ],
+  "currentAssetSha256": "135b5e48e6266704c8b7f96afa4d80b654e63a9ea6eaaf3714c627122d634e9b",
+  "priorAssetSha256": "91b05e5e2bc5e7339daa552dcf75939b0361673e5af3c78de80b4f91b4e9c6b8",
+  "sameBytesAsPriorAsset": false,
+  "priorAcceptanceTransferred": false,
+  "canonicalChanges": 0,
+  "action": "ReuseexistingA-F02-R1249/F01identity;newexactPDFversionaudit,no oldPASS/hashtransfer,oldrecordsunchanged."
+}

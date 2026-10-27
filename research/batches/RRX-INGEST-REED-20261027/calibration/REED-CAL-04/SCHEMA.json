@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "REED-CAL-04-observational-v1",
+  "required": [
+    "schemaVersion",
+    "paper",
+    "source",
+    "inspection",
+    "design",
+    "exposures",
+    "results",
+    "claims",
+    "reviewInputs",
+    "limitations",
+    "scientificAcceptance",
+    "humanApproval",
+    "released"
+  ],
+  "resultRequired": [
+    "id",
+    "outcome",
+    "population",
+    "timepoint",
+    "exposureContrast",
+    "estimate",
+    "uncertainty",
+    "adjustment",
+    "denominatorBasis",
+    "sourceLocators",
+    "acceptedSupport",
+    "grade"
+  ],
+  "controls": [
+    "Hazardratioisnotriskratio,riskdifference,absoluteeffect orcausalbenefit",
+    "Cohortpooledparticipantsnotindependenttrials",
+    "Postdiagnosisaspirinnotmyelomapreventionorthromboprophylaxis",
+    "Timevarying/laggedexposureandcomparatorpreserved",
+    "Cancer-specific/overallmortalitykeptseparate",
+    "No cell-based mechanism orrandomizedefficacy inferred"
+  ],
+  "missingStates": [
+    "not_reported",
+    "not_extracted",
+    "not_accessible",
+    "not_applicable",
+    "not_checked",
+    "not_identifiable",
+    "partial",
+    "answered"
+  ],
+  "fixedGates": {
+    "scientificAcceptance": false,
+    "humanApproval": false,
+    "released": false,
+    "acceptedSupport": false,
+    "grade": null
+  },
+  "reviewInventory": "rules/one-match-rule/references/research-reviews/review-questions-and-inputs.json",
+  "outputs": [
+    "SOURCE-CANDIDATE.json",
+    "review-inputs.jsonl",
+    "DOWNSTREAM-MAPPING.json",
+    "VISUAL-RECEIPT.json",
+    "AUDIT-MANIFEST.json",
+    "VALIDATION.json",
+    "HANDOFF.md"
+  ]
+}

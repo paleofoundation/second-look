@@ -1,0 +1,475 @@
+{
+  "basis": "Supplied Reed primary-check reports, imported as pending source-verification dispositions. No book prose reproduced, no new primary-paper evidence accepted.",
+  "records": [
+    {
+      "id": "A1-TRIAL-IDENTITY",
+      "sourceReport": "$REMAPRX_REED_ROOT/FINDINGS-batchA.md",
+      "sourceReportSha256": "9513b6ac043d70374b4c67ad9ecf995eea35ea0fc6162471a65f4610aee7f555",
+      "sourceSection": 1,
+      "bookPrintedPages": "Ch5 pp76-77;Ch14 p304",
+      "bookClaimParaphrase": "NCT02357836 described as positive phase2 in15patients",
+      "primaryCheckReportedByReed": "Reed distinguishes13patient early-phase1 window study from23patient randomized phase2NCT00769600.",
+      "primaryIds": [
+        "NCT02357836",
+        "NCT00769600",
+        "PMID32847935",
+        "PMID23546045"
+      ],
+      "supplierVerdict": "contradicted",
+      "priorityRule": "Use the primary paper for its exact scope; a book summary is not scientific support.",
+      "sourceLevelVerification": "pending_integrator_primary_source_verification; no new scientific extraction in this intake",
+      "laterCheckReport": {
+        "ref": "$REMAPRX_REED_ROOT/FINDINGS-p1-browser-pass-update.md",
+        "sha256": "24fa9ea1abf5a157438e5d5294318f65fbdc2ec1aad2d05dcf2541a0873b443f"
+      },
+      "azoleMechanismHold": false,
+      "guideChanged": false,
+      "acceptedSupport": false
+    },
+    {
+      "id": "A1-DURATION",
+      "sourceReport": "$REMAPRX_REED_ROOT/FINDINGS-batchA.md",
+      "sourceReportSha256": "9513b6ac043d70374b4c67ad9ecf995eea35ea0fc6162471a65f4610aee7f555",
+      "sourceSection": 1,
+      "bookPrintedPages": "Ch5 pp76-77",
+      "bookClaimParaphrase": "Neoadjuvant window described as7to10days",
+      "primaryCheckReportedByReed": "Gerber abstract reports10to14days; do not merge duration across trial identities.",
+      "primaryIds": [
+        "PMID32847935"
+      ],
+      "supplierVerdict": "contradicted",
+      "priorityRule": "Use the primary paper for its exact scope; a book summary is not scientific support.",
+      "sourceLevelVerification": "pending_integrator_primary_source_verification; no new scientific extraction in this intake",
+      "laterCheckReport": {
+        "ref": "$REMAPRX_REED_ROOT/FINDINGS-p1-browser-pass-update.md",
+        "sha256": "24fa9ea1abf5a157438e5d5294318f65fbdc2ec1aad2d05dcf2541a0873b443f"
+      },
+      "azoleMechanismHold": false,
+      "guideChanged": false,
+      "acceptedSupport": false
+    },
+    {
+      "id": "A1-PFS-VERSUS-OS",
+      "sourceReport": "$REMAPRX_REED_ROOT/FINDINGS-batchA.md",
+      "sourceReportSha256": "9513b6ac043d70374b4c67ad9ecf995eea35ea0fc6162471a65f4610aee7f555",
+      "sourceSection": 1,
+      "bookPrintedPages": "Ch14 p304",
+      "bookClaimParaphrase": "General positive phase2 interpretation",
+      "primaryCheckReportedByReed": "Reed reports nonsignificant progression-free endpoints and exploratory overall-survival finding in an early-stopped small study.",
+      "primaryIds": [
+        "PMID23546045",
+        "NCT00769600"
+      ],
+      "supplierVerdict": "contradicted",
+      "priorityRule": "Use the primary paper for its exact scope; a book summary is not scientific support.",
+      "sourceLevelVerification": "pending_integrator_primary_source_verification; no new scientific extraction in this intake",
+      "laterCheckReport": {
+        "ref": "$REMAPRX_REED_ROOT/FINDINGS-p1-browser-pass-update.md",
+        "sha256": "24fa9ea1abf5a157438e5d5294318f65fbdc2ec1aad2d05dcf2541a0873b443f"
+      },
+      "azoleMechanismHold": false,
+      "guideChanged": false,
+      "acceptedSupport": false
+    },
+    {
+      "id": "A1-PATHWAY-HOLD",
+      "sourceReport": "$REMAPRX_REED_ROOT/FINDINGS-batchA.md",
+      "sourceReportSha256": "9513b6ac043d70374b4c67ad9ecf995eea35ea0fc6162471a65f4610aee7f555",
+      "sourceSection": 1,
+      "bookPrintedPages": "Ch5 pp76-77",
+      "bookClaimParaphrase": "Window study interpreted as showing Hedgehog inhibition",
+      "primaryCheckReportedByReed": "Later supplied full-text check reports no GLI1/PTCH1 transcription change. Record the conflict but defer pathway work under the explicit azole-mechanism hold.",
+      "primaryIds": [
+        "PMID32847935",
+        "NCT02357836"
+      ],
+      "supplierVerdict": "contradicted",
+      "priorityRule": "Use the primary paper for its exact scope; a book summary is not scientific support.",
+      "sourceLevelVerification": "pending_integrator_primary_source_verification; no new scientific extraction in this intake",
+      "laterCheckReport": {
+        "ref": "$REMAPRX_REED_ROOT/FINDINGS-p1-browser-pass-update.md",
+        "sha256": "24fa9ea1abf5a157438e5d5294318f65fbdc2ec1aad2d05dcf2541a0873b443f"
+      },
+      "azoleMechanismHold": true,
+      "guideChanged": false,
+      "acceptedSupport": false
+    },
+    {
+      "id": "A2-TRIAL-NUMBER",
+      "sourceReport": "$REMAPRX_REED_ROOT/FINDINGS-batchA.md",
+      "sourceReportSha256": "9513b6ac043d70374b4c67ad9ecf995eea35ea0fc6162471a65f4610aee7f555",
+      "sourceSection": 2,
+      "bookPrintedPages": "Ch1 p14;Ch14 p304",
+      "bookClaimParaphrase": "Printed NCT02357837 assigned to prostate study",
+      "primaryCheckReportedByReed": "Supplier API check finds404; NCT02357836 is NSCLC. Retain unresolved identifier, never guess a correction.",
+      "primaryIds": [
+        "NCT02357837",
+        "NCT02357836"
+      ],
+      "supplierVerdict": "contradicted",
+      "priorityRule": "Use the primary paper for its exact scope; a book summary is not scientific support.",
+      "sourceLevelVerification": "pending_integrator_primary_source_verification; no new scientific extraction in this intake",
+      "laterCheckReport": {
+        "ref": "$REMAPRX_REED_ROOT/FINDINGS-p1-browser-pass-update.md",
+        "sha256": "24fa9ea1abf5a157438e5d5294318f65fbdc2ec1aad2d05dcf2541a0873b443f"
+      },
+      "azoleMechanismHold": false,
+      "guideChanged": false,
+      "acceptedSupport": false
+    },
+    {
+      "id": "A2-POSITIVE-TRIAL-SCOPE",
+      "sourceReport": "$REMAPRX_REED_ROOT/FINDINGS-batchA.md",
+      "sourceReportSha256": "9513b6ac043d70374b4c67ad9ecf995eea35ea0fc6162471a65f4610aee7f555",
+      "sourceSection": 2,
+      "bookPrintedPages": "Ch1 p14;Ch14 p304",
+      "bookClaimParaphrase": "Prostate trial described as generally positive",
+      "primaryCheckReportedByReed": "Reed distinguishes high-dose threshold success from low-dose futility, noncomparative design and no control; another19evaluable-patient study missed its response endpoint.",
+      "primaryIds": [
+        "PMID23340005",
+        "PMID30327180",
+        "NCT00887458",
+        "NCT01787331"
+      ],
+      "supplierVerdict": "contradicted",
+      "priorityRule": "Use the primary paper for its exact scope; a book summary is not scientific support.",
+      "sourceLevelVerification": "pending_integrator_primary_source_verification; no new scientific extraction in this intake",
+      "laterCheckReport": {
+        "ref": "$REMAPRX_REED_ROOT/FINDINGS-p1-browser-pass-update.md",
+        "sha256": "24fa9ea1abf5a157438e5d5294318f65fbdc2ec1aad2d05dcf2541a0873b443f"
+      },
+      "azoleMechanismHold": false,
+      "guideChanged": false,
+      "acceptedSupport": false
+    },
+    {
+      "id": "A2-COMBINATION-LINK",
+      "sourceReport": "$REMAPRX_REED_ROOT/FINDINGS-batchA.md",
+      "sourceReportSha256": "9513b6ac043d70374b4c67ad9ecf995eea35ea0fc6162471a65f4610aee7f555",
+      "sourceSection": 2,
+      "bookPrintedPages": "Ch14 p304",
+      "bookClaimParaphrase": "HCQ plus itraconazole study identity",
+      "primaryCheckReportedByReed": "NCT03513211 confirmed as combination; later supplied paper link is printed. Do not transfer combination results to monotherapy.",
+      "primaryIds": [
+        "PMID41788020",
+        "NCT03513211"
+      ],
+      "supplierVerdict": "confirmed_scoped_context",
+      "priorityRule": "Use the primary paper for its exact scope; a book summary is not scientific support.",
+      "sourceLevelVerification": "pending_integrator_primary_source_verification; no new scientific extraction in this intake",
+      "laterCheckReport": {
+        "ref": "$REMAPRX_REED_ROOT/FINDINGS-p1-browser-pass-update.md",
+        "sha256": "24fa9ea1abf5a157438e5d5294318f65fbdc2ec1aad2d05dcf2541a0873b443f"
+      },
+      "azoleMechanismHold": false,
+      "guideChanged": false,
+      "acceptedSupport": false
+    },
+    {
+      "id": "A3-CAUSAL-OS",
+      "sourceReport": "$REMAPRX_REED_ROOT/FINDINGS-batchA.md",
+      "sourceReportSha256": "9513b6ac043d70374b4c67ad9ecf995eea35ea0fc6162471a65f4610aee7f555",
+      "sourceSection": 3,
+      "bookPrintedPages": "Ch14 p316",
+      "bookClaimParaphrase": "Itraconazole considerably increases pancreatic/ovarian survival",
+      "primaryCheckReportedByReed": "Reed identifies retrospective/uncontrolled reports; associations cannot supply randomized causal overall-survival benefit.",
+      "primaryIds": [
+        "PMID24778064",
+        "PMID24692739",
+        "PMID26124377",
+        "PMID36456160"
+      ],
+      "supplierVerdict": "contradicted",
+      "priorityRule": "Use the primary paper for its exact scope; a book summary is not scientific support.",
+      "sourceLevelVerification": "pending_integrator_primary_source_verification; no new scientific extraction in this intake",
+      "laterCheckReport": {
+        "ref": "$REMAPRX_REED_ROOT/FINDINGS-p1-browser-pass-update.md",
+        "sha256": "24fa9ea1abf5a157438e5d5294318f65fbdc2ec1aad2d05dcf2541a0873b443f"
+      },
+      "azoleMechanismHold": false,
+      "guideChanged": false,
+      "acceptedSupport": false
+    },
+    {
+      "id": "A3-ENDPOINT",
+      "sourceReport": "$REMAPRX_REED_ROOT/FINDINGS-batchA.md",
+      "sourceReportSha256": "9513b6ac043d70374b4c67ad9ecf995eea35ea0fc6162471a65f4610aee7f555",
+      "sourceSection": 3,
+      "bookPrintedPages": "Ch14 p316",
+      "bookClaimParaphrase": "Randomized support interpreted as overall survival",
+      "primaryCheckReportedByReed": "Later supplied full-text check reports response/fixed-time progression-free outcomes, no overall-survival result; negative single-arm monotherapy report also retained.",
+      "primaryIds": [
+        "PMID41590341",
+        "PMID42122264"
+      ],
+      "supplierVerdict": "contradicted",
+      "priorityRule": "Use the primary paper for its exact scope; a book summary is not scientific support.",
+      "sourceLevelVerification": "pending_integrator_primary_source_verification; no new scientific extraction in this intake",
+      "laterCheckReport": {
+        "ref": "$REMAPRX_REED_ROOT/FINDINGS-p1-browser-pass-update.md",
+        "sha256": "24fa9ea1abf5a157438e5d5294318f65fbdc2ec1aad2d05dcf2541a0873b443f"
+      },
+      "azoleMechanismHold": false,
+      "guideChanged": false,
+      "acceptedSupport": false
+    },
+    {
+      "id": "A4-PHASE-VERSUS-EFFICACY",
+      "sourceReport": "$REMAPRX_REED_ROOT/FINDINGS-batchA.md",
+      "sourceReportSha256": "9513b6ac043d70374b4c67ad9ecf995eea35ea0fc6162471a65f4610aee7f555",
+      "sourceSection": 4,
+      "bookPrintedPages": "Ch1 p18;Ch5 p77",
+      "bookClaimParaphrase": "Phase1labels read as clinical efficacy",
+      "primaryCheckReportedByReed": "Phase labels agree but source conclusions retain limited/unestablished efficacy; phase2benchmark miss must not be omitted.",
+      "primaryIds": [
+        "PMID33506200",
+        "PMID41458919",
+        "PMID38234020",
+        "PMID32400117",
+        "PMID35747192"
+      ],
+      "supplierVerdict": "phase_confirmed_efficacy_overinterpretation_rejected",
+      "priorityRule": "Use the primary paper for its exact scope; a book summary is not scientific support.",
+      "sourceLevelVerification": "pending_integrator_primary_source_verification; no new scientific extraction in this intake",
+      "laterCheckReport": {
+        "ref": "$REMAPRX_REED_ROOT/FINDINGS-p1-browser-pass-update.md",
+        "sha256": "24fa9ea1abf5a157438e5d5294318f65fbdc2ec1aad2d05dcf2541a0873b443f"
+      },
+      "azoleMechanismHold": false,
+      "guideChanged": false,
+      "acceptedSupport": false
+    },
+    {
+      "id": "A4-STATUS",
+      "sourceReport": "$REMAPRX_REED_ROOT/FINDINGS-batchA.md",
+      "sourceReportSha256": "9513b6ac043d70374b4c67ad9ecf995eea35ea0fc6162471a65f4610aee7f555",
+      "sourceSection": 4,
+      "bookPrintedPages": "Ch5 p77",
+      "bookClaimParaphrase": "Trial still recruiting",
+      "primaryCheckReportedByReed": "Supplier registry check reports completed; status is dated and cannot be inferred from the book.",
+      "primaryIds": [
+        "NCT02644291"
+      ],
+      "supplierVerdict": "contradicted",
+      "priorityRule": "Use the primary paper for its exact scope; a book summary is not scientific support.",
+      "sourceLevelVerification": "pending_integrator_primary_source_verification; no new scientific extraction in this intake",
+      "laterCheckReport": {
+        "ref": "$REMAPRX_REED_ROOT/FINDINGS-p1-browser-pass-update.md",
+        "sha256": "24fa9ea1abf5a157438e5d5294318f65fbdc2ec1aad2d05dcf2541a0873b443f"
+      },
+      "azoleMechanismHold": false,
+      "guideChanged": false,
+      "acceptedSupport": false
+    },
+    {
+      "id": "A5-REGULATORY-SCOPE",
+      "sourceReport": "$REMAPRX_REED_ROOT/FINDINGS-batchA.md",
+      "sourceReportSha256": "9513b6ac043d70374b4c67ad9ecf995eea35ea0fc6162471a65f4610aee7f555",
+      "sourceSection": 5,
+      "bookPrintedPages": "Ch20 pp491-492",
+      "bookClaimParaphrase": "Emergency use approval",
+      "primaryCheckReportedByReed": "Supplier regulator/press-release check supports an India adjunctive moderate/severe COVID indication; no universal approval or efficacy inference.",
+      "primaryIds": [
+        "CDSCO2021-row4",
+        "PIB1717007"
+      ],
+      "supplierVerdict": "confirmed_jurisdiction_limited_context",
+      "priorityRule": "Use the primary paper for its exact scope; a book summary is not scientific support.",
+      "sourceLevelVerification": "pending_integrator_primary_source_verification; no new scientific extraction in this intake",
+      "laterCheckReport": {
+        "ref": "$REMAPRX_REED_ROOT/FINDINGS-p1-browser-pass-update.md",
+        "sha256": "24fa9ea1abf5a157438e5d5294318f65fbdc2ec1aad2d05dcf2541a0873b443f"
+      },
+      "azoleMechanismHold": false,
+      "guideChanged": false,
+      "acceptedSupport": false
+    },
+    {
+      "id": "A5-PHASE3",
+      "sourceReport": "$REMAPRX_REED_ROOT/FINDINGS-batchA.md",
+      "sourceReportSha256": "9513b6ac043d70374b4c67ad9ecf995eea35ea0fc6162471a65f4610aee7f555",
+      "sourceSection": 5,
+      "bookPrintedPages": "Ch20 pp491-492",
+      "bookClaimParaphrase": "Phase2and3 numbers treated as established clinical evidence",
+      "primaryCheckReportedByReed": "Reed distinguishes a limited phase2paper without designated primary endpoint from phase3press-release numbers with no peer-reviewed report found in its stated search.",
+      "primaryIds": [
+        "PMID35927676",
+        "CTRI2020/06/025664",
+        "PIB1717007"
+      ],
+      "supplierVerdict": "partly_supported_phase3_unverified",
+      "priorityRule": "Use the primary paper for its exact scope; a book summary is not scientific support.",
+      "sourceLevelVerification": "pending_integrator_primary_source_verification; no new scientific extraction in this intake",
+      "laterCheckReport": {
+        "ref": "$REMAPRX_REED_ROOT/FINDINGS-p1-browser-pass-update.md",
+        "sha256": "24fa9ea1abf5a157438e5d5294318f65fbdc2ec1aad2d05dcf2541a0873b443f"
+      },
+      "azoleMechanismHold": false,
+      "guideChanged": false,
+      "acceptedSupport": false
+    },
+    {
+      "id": "A5-DOCKING",
+      "sourceReport": "$REMAPRX_REED_ROOT/FINDINGS-batchA.md",
+      "sourceReportSha256": "9513b6ac043d70374b4c67ad9ecf995eea35ea0fc6162471a65f4610aee7f555",
+      "sourceSection": 5,
+      "bookPrintedPages": "Ch20 pp491-492",
+      "bookClaimParaphrase": "Docking described as observed viral-receptor inactivation",
+      "primaryCheckReportedByReed": "Supplier check finds computational predictions; later update confirms reported energy comparisons exist but provides no observed biological or patient effect.",
+      "primaryIds": [
+        "PMID35057031",
+        "PPR367342"
+      ],
+      "supplierVerdict": "contradicted",
+      "priorityRule": "Use the primary paper for its exact scope; a book summary is not scientific support.",
+      "sourceLevelVerification": "pending_integrator_primary_source_verification; no new scientific extraction in this intake",
+      "laterCheckReport": {
+        "ref": "$REMAPRX_REED_ROOT/FINDINGS-p1-browser-pass-update.md",
+        "sha256": "24fa9ea1abf5a157438e5d5294318f65fbdc2ec1aad2d05dcf2541a0873b443f"
+      },
+      "azoleMechanismHold": false,
+      "guideChanged": false,
+      "acceptedSupport": false
+    },
+    {
+      "id": "A6-ROUTE",
+      "sourceReport": "$REMAPRX_REED_ROOT/FINDINGS-batchA.md",
+      "sourceReportSha256": "9513b6ac043d70374b4c67ad9ecf995eea35ea0fc6162471a65f4610aee7f555",
+      "sourceSection": 6,
+      "bookPrintedPages": "Ch21 pp502-512",
+      "bookClaimParaphrase": "Home-nebulized evidence generalized from oral hospitalized trials",
+      "primaryCheckReportedByReed": "Reed reports anecdotal home basis and separately identifies oral hospital studies. Do not transfer dose/route/population.",
+      "primaryIds": [
+        "PMID34019535",
+        "PMID39207597"
+      ],
+      "supplierVerdict": "anecdotal_home_basis_no_controlled_home_efficacy_established",
+      "priorityRule": "Use the primary paper for its exact scope; a book summary is not scientific support.",
+      "sourceLevelVerification": "pending_integrator_primary_source_verification; no new scientific extraction in this intake",
+      "laterCheckReport": {
+        "ref": "$REMAPRX_REED_ROOT/FINDINGS-p1-browser-pass-update.md",
+        "sha256": "24fa9ea1abf5a157438e5d5294318f65fbdc2ec1aad2d05dcf2541a0873b443f"
+      },
+      "azoleMechanismHold": false,
+      "guideChanged": false,
+      "acceptedSupport": false
+    },
+    {
+      "id": "A6-SAFETY",
+      "sourceReport": "$REMAPRX_REED_ROOT/FINDINGS-batchA.md",
+      "sourceReportSha256": "9513b6ac043d70374b4c67ad9ecf995eea35ea0fc6162471a65f4610aee7f555",
+      "sourceSection": 6,
+      "bookPrintedPages": "Ch21 pp503,509,512",
+      "bookClaimParaphrase": "Excellent safety profile",
+      "primaryCheckReportedByReed": "Supplier notes book safety warnings and absence of systematic trial safety evidence supporting that blanket statement; no safety assurance follows.",
+      "primaryIds": [
+        "PMID34019535",
+        "PMID39207597",
+        "PMID34253743"
+      ],
+      "supplierVerdict": "contradicted",
+      "priorityRule": "Use the primary paper for its exact scope; a book summary is not scientific support.",
+      "sourceLevelVerification": "pending_integrator_primary_source_verification; no new scientific extraction in this intake",
+      "laterCheckReport": {
+        "ref": "$REMAPRX_REED_ROOT/FINDINGS-p1-browser-pass-update.md",
+        "sha256": "24fa9ea1abf5a157438e5d5294318f65fbdc2ec1aad2d05dcf2541a0873b443f"
+      },
+      "azoleMechanismHold": false,
+      "guideChanged": false,
+      "acceptedSupport": false
+    },
+    {
+      "id": "A7-FUNCTION",
+      "sourceReport": "$REMAPRX_REED_ROOT/FINDINGS-batchA.md",
+      "sourceReportSha256": "9513b6ac043d70374b4c67ad9ecf995eea35ea0fc6162471a65f4610aee7f555",
+      "sourceSection": 7,
+      "bookPrintedPages": "Ch27 pp641-642,649",
+      "bookClaimParaphrase": "Upbeat minocycline ALS conclusion",
+      "primaryCheckReportedByReed": "Supplier primary abstract reports faster ALSFRS-R decline in the randomized phase3trial; this is contrary/harmful evidence, not clinical benefit.",
+      "primaryIds": [
+        "PMID17980667",
+        "NCT00047723"
+      ],
+      "supplierVerdict": "contradicted",
+      "priorityRule": "Use the primary paper for its exact scope; a book summary is not scientific support.",
+      "sourceLevelVerification": "pending_integrator_primary_source_verification; no new scientific extraction in this intake",
+      "laterCheckReport": {
+        "ref": "$REMAPRX_REED_ROOT/FINDINGS-p1-browser-pass-update.md",
+        "sha256": "24fa9ea1abf5a157438e5d5294318f65fbdc2ec1aad2d05dcf2541a0873b443f"
+      },
+      "azoleMechanismHold": false,
+      "guideChanged": false,
+      "acceptedSupport": false
+    },
+    {
+      "id": "A7-MORTALITY",
+      "sourceReport": "$REMAPRX_REED_ROOT/FINDINGS-batchA.md",
+      "sourceReportSha256": "9513b6ac043d70374b4c67ad9ecf995eea35ea0fc6162471a65f4610aee7f555",
+      "sourceSection": 7,
+      "bookPrintedPages": "Ch27 pp641-642,649",
+      "bookClaimParaphrase": "Mortality effect treated as proven",
+      "primaryCheckReportedByReed": "Supplier primary abstract reports uncertain/nonsignificant mortality hazard estimate; keep separate from harmful functional result.",
+      "primaryIds": [
+        "PMID17980667"
+      ],
+      "supplierVerdict": "contradicted",
+      "priorityRule": "Use the primary paper for its exact scope; a book summary is not scientific support.",
+      "sourceLevelVerification": "pending_integrator_primary_source_verification; no new scientific extraction in this intake",
+      "laterCheckReport": {
+        "ref": "$REMAPRX_REED_ROOT/FINDINGS-p1-browser-pass-update.md",
+        "sha256": "24fa9ea1abf5a157438e5d5294318f65fbdc2ec1aad2d05dcf2541a0873b443f"
+      },
+      "azoleMechanismHold": false,
+      "guideChanged": false,
+      "acceptedSupport": false
+    },
+    {
+      "id": "A7-ALLEN-DOI",
+      "sourceReport": "$REMAPRX_REED_ROOT/FINDINGS-batchA.md",
+      "sourceReportSha256": "9513b6ac043d70374b4c67ad9ecf995eea35ea0fc6162471a65f4610aee7f555",
+      "sourceSection": 7,
+      "bookPrintedPages": "Ch27 reference list",
+      "bookClaimParaphrase": "Printed Allen1976DOI identifies minocycline report",
+      "primaryCheckReportedByReed": "Supplier resolution points to a different article; PMID788583 was used to locate the intended source. Preserve the bad identifier as a conflict.",
+      "primaryIds": [
+        "PMID788583"
+      ],
+      "supplierVerdict": "contradicted",
+      "priorityRule": "Use the primary paper for its exact scope; a book summary is not scientific support.",
+      "sourceLevelVerification": "pending_integrator_primary_source_verification; no new scientific extraction in this intake",
+      "laterCheckReport": {
+        "ref": "$REMAPRX_REED_ROOT/FINDINGS-p1-browser-pass-update.md",
+        "sha256": "24fa9ea1abf5a157438e5d5294318f65fbdc2ec1aad2d05dcf2541a0873b443f"
+      },
+      "azoleMechanismHold": false,
+      "guideChanged": false,
+      "acceptedSupport": false
+    },
+    {
+      "id": "A7-CHISHOLM-DOI",
+      "sourceReport": "$REMAPRX_REED_ROOT/FINDINGS-batchA.md",
+      "sourceReportSha256": "9513b6ac043d70374b4c67ad9ecf995eea35ea0fc6162471a65f4610aee7f555",
+      "sourceSection": 7,
+      "bookPrintedPages": "Ch27 reference list",
+      "bookClaimParaphrase": "Printed Chisholm/USN DOI matches intended report",
+      "primaryCheckReportedByReed": "Supplier resolution points to CIDP and Vaccinations; intended source remained fetch-failed. No invented replacement.",
+      "primaryIds": [
+        "unresolved-Chisholm-USN"
+      ],
+      "supplierVerdict": "unresolved_wrong_identifier",
+      "priorityRule": "Use the primary paper for its exact scope; a book summary is not scientific support.",
+      "sourceLevelVerification": "pending_integrator_primary_source_verification; no new scientific extraction in this intake",
+      "laterCheckReport": {
+        "ref": "$REMAPRX_REED_ROOT/FINDINGS-p1-browser-pass-update.md",
+        "sha256": "24fa9ea1abf5a157438e5d5294318f65fbdc2ec1aad2d05dcf2541a0873b443f"
+      },
+      "azoleMechanismHold": false,
+      "guideChanged": false,
+      "acceptedSupport": false
+    }
+  ],
+  "recordsCount": 20,
+  "bookSections": 7,
+  "guideChanges": 0,
+  "azoleMechanismExtractionPerformed": false
+}

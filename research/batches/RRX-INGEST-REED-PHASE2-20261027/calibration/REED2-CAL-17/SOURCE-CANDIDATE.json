@@ -1,0 +1,1583 @@
+{
+  "schemaVersion": "reed2-cal17-NMDAR-GBM-radiation-signaling-v1",
+  "paper": {
+    "id": "REED-7d903e6916d5dec055e9",
+    "pmid": "30970642",
+    "doi": "10.3390/cancers11040503",
+    "title": "NMDA Receptor-Mediated Signaling Pathways Enhance Radiation Resistance, Survival and Migration in Glioblastoma Cells-A Potential Target for Adjuvant Radiotherapy.",
+    "sourceType": "primary_preclinical_cell_pharmacology_radiation"
+  },
+  "source": {
+    "id": "REED2-CAL-17-MAIN",
+    "pmid": "30970642",
+    "doi": "10.3390/cancers11040503",
+    "title": "NMDA Receptor-Mediated Signaling Pathways Enhance Radiation Resistance, Survival and Migration in Glioblastoma Cells-A Potential Target for Adjuvant Radiotherapy.",
+    "reportId": "REED-7d903e6916d5dec055e9",
+    "ref": "$REMAPRX_REED_ROOT/memantine-glioblastoma/pdfs/30970642-mullerlangle-2019.pdf",
+    "sha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+    "physicalPages": 16
+  },
+  "inspection": {
+    "at": "2026-10-27T13:34:15.933765+00:00",
+    "physicalPagesRead": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "visualInspectedPhysicalPages": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "fullScientificReviewComplete": false,
+    "separateCompanionContentRead": false,
+    "rawAssayDataInspected": false
+  },
+  "study": {
+    "design": "Primary preclinical cell-line pharmacology, electrophysiology, migration, clonogenic radiation survival and signaling study",
+    "models": [
+      "LN229",
+      "U-87MG",
+      "T98G",
+      "LN428 tested without equivalent positive functional-response claim"
+    ],
+    "mainOutcomeModels": [
+      "LN229",
+      "U-87MG"
+    ],
+    "clinicalStudy": false,
+    "exposure": "All chemicals before irradiation and maintained throughout assay unless specified; Glu/NMDA plus glycine generally present",
+    "radiation": {
+      "singleGy": [
+        2,
+        4,
+        6
+      ],
+      "kV": 90,
+      "mA": 19,
+      "GyPerMinute": 1.96,
+      "sham": "Matched deactivated tube exposure"
+    },
+    "memantineMicromolar": {
+      "migration48h": 50,
+      "Figure3CFA": 50,
+      "Figure4Foci": 100,
+      "Figure4CFA": 25
+    },
+    "KG501Micromolar": {
+      "foci": 25,
+      "CFA": 1
+    },
+    "clonogenicMethod": "More than50 cells per colony; drug-only7days; RT8daysLN229/11daysU87, PE-normalized SF and linear-quadratic fitting",
+    "statistics": "Unpaired t-tests or one-way ANOVA with Bonferroni, source-specific SD/SEM and replicate counts retained",
+    "locators": [
+      {
+        "kind": "pdf",
+        "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+        "physicalPage": 5,
+        "printedPage": 5,
+        "nativeSection": "Original results/methods"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+        "physicalPage": 7,
+        "printedPage": 7,
+        "nativeSection": "Original results/methods"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+        "physicalPage": 8,
+        "printedPage": 8,
+        "nativeSection": "Original results/methods"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+        "physicalPage": 9,
+        "printedPage": 9,
+        "nativeSection": "Original results/methods"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+        "physicalPage": 11,
+        "printedPage": 11,
+        "nativeSection": "Original results/methods"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+        "physicalPage": 12,
+        "printedPage": 12,
+        "nativeSection": "Original results/methods"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+        "physicalPage": 14,
+        "printedPage": 14,
+        "nativeSection": "Original results/methods"
+      }
+    ]
+  },
+  "populations": {
+    "patients": 0,
+    "animals": 0,
+    "patchClampN": 22,
+    "MTT": "At least5 experiments, each octuplet",
+    "glutamateReleaseAndMigration": "3 independent experiments each triplicate",
+    "cellCycleN": 4,
+    "Figure3CFAN": 3,
+    "Figure4Foci": "3 experiments,150-200 nuclei per data point as methods",
+    "Figure4CFALN229": "3 experiments each triplet",
+    "Figure4CFAU87": "2 experiments each triplet",
+    "notUniqueBiologicalParticipants": "Nuclei,wells,colonies and technical triplicates cannot be added as people or independent cohorts",
+    "locators": [
+      {
+        "kind": "pdf",
+        "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+        "physicalPage": 4,
+        "printedPage": 4,
+        "nativeSection": "Original results/methods"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+        "physicalPage": 5,
+        "printedPage": 5,
+        "nativeSection": "Original results/methods"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+        "physicalPage": 7,
+        "printedPage": 7,
+        "nativeSection": "Original results/methods"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+        "physicalPage": 9,
+        "printedPage": 9,
+        "nativeSection": "Original results/methods"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+        "physicalPage": 13,
+        "printedPage": 13,
+        "nativeSection": "Original results/methods"
+      }
+    ]
+  },
+  "results": [
+    {
+      "id": "REED2-CAL-17-O01",
+      "outcome": "Functional glutamatergic signaling and autocrine model context",
+      "estimate": {
+        "kind": "functional_receptor_and_autocrine_model",
+        "calciumResponsePercentApprox": 50,
+        "currentResponsePercentApprox": 40,
+        "patchN": 22,
+        "glutamateReleaseUgMlHourApprox": 7.8,
+        "MTTActualAntagonists": [
+          "MK80110uM",
+          "ifenprodil25uM"
+        ],
+        "memantineMTTEstimateImported": false,
+        "cellCycleGluMK801SAS": "no difference",
+        "ifenprodilG1": "small increase"
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 4,
+          "printedPage": 4,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Original results/methods"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED2-CAL-17-O02",
+      "outcome": "LN229 memantine migration and drug-only colony survival",
+      "estimate": {
+        "kind": "LN229_memantine_migration_and_drug_only_clonogenic",
+        "migrationMemantineU M": 50,
+        "migrationHours": 48,
+        "migrationN": "3 independent triplicate",
+        "clonogenicMemantineLD50uM": 26,
+        "LD50SEM": 11,
+        "LD50N": 3,
+        "clinicalDoseOrInVivoInvasion": false
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 6,
+          "printedPage": 6,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 12,
+          "printedPage": 12,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 13,
+          "printedPage": 13,
+          "nativeSection": "Original results/methods"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED2-CAL-17-O03",
+      "outcome": "LN229 radiation-associated damage markers and memantine colony survival",
+      "estimate": {
+        "kind": "LN229_2Gy_damage_marker_and_CFA",
+        "fociAt4h": [
+          29,
+          7
+        ],
+        "fociReportedUncertainty": [
+          5,
+          2
+        ],
+        "fociP": "<.01",
+        "fociN": 3,
+        "sourceMockIrradiatedComparatorAmbiguous": true,
+        "CFAmemantineUM": 50,
+        "enhancementFactorAt2Gy": 1.4,
+        "CFAN": 3,
+        "CFAError": "SD",
+        "ifenprodilTextEnhancement": 1.81
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 6,
+          "printedPage": 6,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 11,
+          "printedPage": 11,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 12,
+          "printedPage": 12,
+          "nativeSection": "Original results/methods"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED2-CAL-17-O04",
+      "outcome": "CREB/BDNF pharmacology with retained null and timing conflicts",
+      "estimate": {
+        "kind": "CREB_BDNF_and_gammaH2AX",
+        "pCREB30min": {
+          "mean": 3.7,
+          "uncertainty": 1.1,
+          "P": "<.05",
+          "N": 3,
+          "antibodyAlsoRecognizes": "pATF1"
+        },
+        "BDNFFold": {
+          "mean": 1.9,
+          "uncertainty": 0.15,
+          "P": "<.05",
+          "N": 3,
+          "MK801ResultuM": 10,
+          "MK801MethoduM": 20
+        },
+        "gammaH2AXFigure4B": {
+          "hours": 4,
+          "Gy": 2,
+          "MK801": {
+            "mean": 1.4,
+            "uncertainty": 0.3,
+            "significance": "NS"
+          },
+          "KG501": {
+            "mean": 1.8,
+            "uncertainty": 0.4,
+            "P": "<.05"
+          },
+          "N": 3
+        },
+        "bodyClaimsBothSignificantAt30min": true,
+        "sourceConflictResolved": false
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 8,
+          "printedPage": 8,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 11,
+          "printedPage": 11,
+          "nativeSection": "Original results/methods"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED2-CAL-17-O05",
+      "outcome": "Phase-specific damage markers and memantine/KG501 radiation survival",
+      "estimate": {
+        "kind": "LN229_U87_phase_specific_foci_and_CFA",
+        "foci": {
+          "phase": "EdU-negative/non-S",
+          "memantineUM": 100,
+          "KG501UM": 25,
+          "hours": [
+            0.5,
+            4
+          ],
+          "Gy": 2,
+          "N": 3,
+          "error": "SEM",
+          "combinedEffect": "subadditive"
+        },
+        "CFA": {
+          "memantineUM": 25,
+          "KG501UM": 1,
+          "LN229N": 3,
+          "U87N": 2,
+          "technical": "triplet",
+          "error": "SD",
+          "memantineReductionStartsGy": 2,
+          "U87CombinationFurtherEffect": "not significant"
+        },
+        "formalSynergyEstablished": false
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 8,
+          "printedPage": 8,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 12,
+          "printedPage": 12,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 13,
+          "printedPage": 13,
+          "nativeSection": "Original results/methods"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    }
+  ],
+  "claims": [
+    {
+      "id": "REED2-CAL-17-C01",
+      "resultIds": [
+        "REED2-CAL-17-O01"
+      ],
+      "statement": "Functional glutamatergic signaling and autocrine model context. Original cell-model context only, with exact source qualifications; no clinical benefit or complete mechanistic necessity accepted.",
+      "relation": "primary_preclinical_candidate",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED2-CAL-17-C02",
+      "resultIds": [
+        "REED2-CAL-17-O02"
+      ],
+      "statement": "LN229 memantine migration and drug-only colony survival. Original cell-model context only, with exact source qualifications; no clinical benefit or complete mechanistic necessity accepted.",
+      "relation": "primary_preclinical_candidate",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED2-CAL-17-C03",
+      "resultIds": [
+        "REED2-CAL-17-O03"
+      ],
+      "statement": "LN229 radiation-associated damage markers and memantine colony survival. Original cell-model context only, with exact source qualifications; no clinical benefit or complete mechanistic necessity accepted.",
+      "relation": "primary_preclinical_candidate",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED2-CAL-17-C04",
+      "resultIds": [
+        "REED2-CAL-17-O04"
+      ],
+      "statement": "CREB/BDNF pharmacology with retained null and timing conflicts. Original cell-model context only, with exact source qualifications; no clinical benefit or complete mechanistic necessity accepted.",
+      "relation": "primary_preclinical_candidate",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED2-CAL-17-C05",
+      "resultIds": [
+        "REED2-CAL-17-O05"
+      ],
+      "statement": "Phase-specific damage markers and memantine/KG501 radiation survival. Original cell-model context only, with exact source qualifications; no clinical benefit or complete mechanistic necessity accepted.",
+      "relation": "primary_preclinical_candidate",
+      "acceptedSupport": false
+    }
+  ],
+  "reviewInputs": [
+    {
+      "id": "Q01",
+      "answer": "Test glutamatergic/NMDAR-CREB signaling and antagonist effects on GBM-cell migration, survival and radiation response.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 14,
+          "printedPage": 14,
+          "nativeSection": "Original results/methods"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q02",
+      "answer": "Human GBM cell lines; no treated patients or animals.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 10,
+          "printedPage": 10,
+          "nativeSection": "Original results/methods"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q03",
+      "answer": "Actual memantine versus MK801, ifenprodil, KG501, SAS, BAPTA-AM and Glu/glycine controls.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 11,
+          "printedPage": 11,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 12,
+          "printedPage": 12,
+          "nativeSection": "Original results/methods"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q04",
+      "answer": "Untreated/Glu/sham irradiation and each inhibitor alone/pair, endpoint-specific.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 11,
+          "printedPage": 11,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 12,
+          "printedPage": 12,
+          "nativeSection": "Original results/methods"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q05",
+      "answer": "Exploratory cell-model endpoints without clinical primary/secondary hierarchy.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 11,
+          "printedPage": 11,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 12,
+          "printedPage": 12,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 14,
+          "printedPage": 14,
+          "nativeSection": "Original results/methods"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q06",
+      "answer": "[{'kind': 'functional_receptor_and_autocrine_model', 'calciumResponsePercentApprox': 50, 'currentResponsePercentApprox': 40, 'patchN': 22, 'glutamateReleaseUgMlHourApprox': 7.8, 'MTTActualAntagonists': ['MK80110uM', 'ifenprodil25uM'], 'memantineMTTEstimateImported': False, 'cellCycleGluMK801SAS': 'no difference', 'ifenprodilG1': 'small increase'}, {'kind': 'LN229_memantine_migration_and_drug_only_clonogenic', 'migrationMemantineU M': 50, 'migrationHours': 48, 'migrationN': '3 independent triplicate', 'clonogenicMemantineLD50uM': 26, 'LD50SEM': 11, 'LD50N': 3, 'clinicalDoseOrInVivoInvasion': False}, {'kind': 'LN229_2Gy_damage_marker_and_CFA', 'fociAt4h': [29, 7], 'fociReportedUncertainty': [5, 2], 'fociP': '<.01', 'fociN': 3, 'sourceMockIrradiatedComparatorAmbiguous': True, 'CFAmemantineUM': 50, 'enhancementFactorAt2Gy': 1.4, 'CFAN': 3, 'CFAError': 'SD', 'ifenprodilTextEnhancement': 1.81}, {'kind': 'CREB_BDNF_and_gammaH2AX', 'pCREB30min': {'mean': 3.7, 'uncertainty': 1.1, 'P': '<.05', 'N': 3, 'antibodyAlsoRecognizes': 'pATF1'}, 'BDNFFold': {'mean': 1.9, 'uncertainty': 0.15, 'P': '<.05', 'N': 3, 'MK801ResultuM': 10, 'MK801MethoduM': 20}, 'gammaH2AXFigure4B': {'hours': 4, 'Gy': 2, 'MK801': {'mean': 1.4, 'uncertainty': 0.3, 'significance': 'NS'}, 'KG501': {'mean': 1.8, 'uncertainty': 0.4, 'P': '<.05'}, 'N': 3}, 'bodyClaimsBothSignificantAt30min': True, 'sourceConflictResolved': False}, {'kind': 'LN229_U87_phase_specific_foci_and_CFA', 'foci': {'phase': 'EdU-negative/non-S', 'memantineUM': 100, 'KG501UM': 25, 'hours': [0.5, 4], 'Gy': 2, 'N': 3, 'error': 'SEM', 'combinedEffect': 'subadditive'}, 'CFA': {'memantineUM': 25, 'KG501UM': 1, 'LN229N': 3, 'U87N': 2, 'technical': 'triplet', 'error': 'SD', 'memantineReductionStartsGy': 2, 'U87CombinationFurtherEffect': 'not significant'}, 'formalSynergyEstablished': False}]",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 8,
+          "printedPage": 8,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Original results/methods"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q07",
+      "answer": "No full failed-assay/excluded-replicate inventory identified.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 11,
+          "printedPage": 11,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 12,
+          "printedPage": 12,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 13,
+          "printedPage": 13,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 14,
+          "printedPage": 14,
+          "nativeSection": "Original results/methods"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q08",
+      "answer": "No clinical harm ascertainment.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 6,
+          "printedPage": 6,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 10,
+          "printedPage": 10,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 12,
+          "printedPage": 12,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 14,
+          "printedPage": 14,
+          "nativeSection": "Original results/methods"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q09",
+      "answer": "Cell models, surrogate foci, unblinded/manual measurement and small experiment counts.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 8,
+          "printedPage": 8,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 10,
+          "printedPage": 10,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 12,
+          "printedPage": 12,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 14,
+          "printedPage": 14,
+          "nativeSection": "Original results/methods"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q10",
+      "answer": "Private D25/C04 actual memantine cell-model context only.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 10,
+          "printedPage": 10,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 11,
+          "printedPage": 11,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 14,
+          "printedPage": 14,
+          "nativeSection": "Original results/methods"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q11",
+      "answer": "{'reportId': 'REED-7d903e6916d5dec055e9', 'models': ['LN229', 'U87', 'T98G', 'LN428 tested'], 'earlierPacketsCitedOnly': ['REED2-CAL-14', 'REED2-CAL-15', 'REED2-CAL-16'], 'relatedSameGroupCitation': 'Lutz2019Cancers11:306 bibliography only', 'newIndependentTrialCount': 0, 'newIndependentPatientCount': 0, 'uniqueCrossCorpusPatientCountAdjudicated': False, 'sharedExperimentsAcrossReadouts': 'Cells, nuclei, colonies and doses not independent clinical cohorts', 'locators': [{'kind': 'pdf', 'sourceSha256': 'f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10', 'physicalPage': 10, 'printedPage': 10, 'nativeSection': 'Original results/methods'}, {'kind': 'pdf', 'sourceSha256': 'f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10', 'physicalPage': 16, 'printedPage': 16, 'nativeSection': 'Original results/methods'}]}",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 13,
+          "printedPage": 13,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 16,
+          "printedPage": 16,
+          "nativeSection": "Original results/methods"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q12",
+      "answer": "Adriana Muller-Langle, Henrik Lutz, Stephanie Hehlgans, Franz Rodel, Kerstin Rau, Bodo Laube; exact byline retained in source.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 1,
+          "printedPage": 1,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 11,
+          "printedPage": 11,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 14,
+          "printedPage": 14,
+          "nativeSection": "Original results/methods"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q13",
+      "answer": "Rendered Cancers2019;11:503, DOI10.3390/cancers11040503; extraction duplicate draft fragments not separate source.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 1,
+          "printedPage": 1,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 14,
+          "printedPage": 14,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 16,
+          "printedPage": 16,
+          "nativeSection": "Original results/methods"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q14",
+      "answer": "{'paperId': 'REED-7d903e6916d5dec055e9', 'sourceId': 'REED2-CAL-17-MAIN', 'resultIds': ['REED2-CAL-17-O01', 'REED2-CAL-17-O02', 'REED2-CAL-17-O03', 'REED2-CAL-17-O04', 'REED2-CAL-17-O05'], 'claimIds': ['REED2-CAL-17-C01', 'REED2-CAL-17-C02', 'REED2-CAL-17-C03', 'REED2-CAL-17-C04', 'REED2-CAL-17-C05'], 'existingGuideIds': ['G-DRUG-D25', 'G-CONDITION-C04'], 'purpose': 'Private actual memantine GBM culture findings with other antagonist context kept distinct', 'publicationState': 'private_unapplied_candidate', 'canonicalChanges': 0, 'newIndependentTrials': 0, 'newIndependentPatients': 0}",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 10,
+          "printedPage": 10,
+          "nativeSection": "Original results/methods"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending",
+      "downstreamMapping": {
+        "paperId": "REED-7d903e6916d5dec055e9",
+        "sourceId": "REED2-CAL-17-MAIN",
+        "resultIds": [
+          "REED2-CAL-17-O01",
+          "REED2-CAL-17-O02",
+          "REED2-CAL-17-O03",
+          "REED2-CAL-17-O04",
+          "REED2-CAL-17-O05"
+        ],
+        "claimIds": [
+          "REED2-CAL-17-C01",
+          "REED2-CAL-17-C02",
+          "REED2-CAL-17-C03",
+          "REED2-CAL-17-C04",
+          "REED2-CAL-17-C05"
+        ],
+        "existingGuideIds": [
+          "G-DRUG-D25",
+          "G-CONDITION-C04"
+        ],
+        "purpose": "Private actual memantine GBM culture findings with other antagonist context kept distinct",
+        "publicationState": "private_unapplied_candidate",
+        "canonicalChanges": 0,
+        "newIndependentTrials": 0,
+        "newIndependentPatients": 0
+      }
+    },
+    {
+      "id": "Q15",
+      "answer": "Memantine has dose/endpoint-specific GBM-cell migration/CFA/radiation-marker effects; combined KG501 not significantly superior in U87 CFA.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 10,
+          "printedPage": 10,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 14,
+          "printedPage": 14,
+          "nativeSection": "Original results/methods"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    }
+  ],
+  "sourceQualifications": [
+    {
+      "id": "REED2-CAL-17-MODEL",
+      "description": "LN229 carries most functional/migration work, with U87 additional foci/RT survival. T98G has functional NMDA-response context, LN428 was tested without equivalent positive response. Not all four lines underwent all endpoints; no animal or patient efficacy experiment.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 10,
+          "printedPage": 10,
+          "nativeSection": "Original results/methods"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-17-CALCIUM_DOSE",
+      "description": "Figure1 caption uses100uM Glu/10uM glycine whereas methods uses1mM/100uM. This tenfold source discrepancy remains unresolved. Both use20s application and10uM ionomycin90s. Roughly50% calcium-responsive and40% current-responsive are cell observations, not population prevalence.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 4,
+          "printedPage": 4,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 13,
+          "printedPage": 13,
+          "nativeSection": "Original results/methods"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-17-FUNCTION",
+      "description": "Patch-clamp agonists100uM NMDA/AMPA/kainate, n22 meanSEM; GluN1/2A/2B immunostaining and lamellipodial localization do not prove memantine-specific necessary downstream pathways or quantitative receptor-subtype superiority.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 4,
+          "printedPage": 4,
+          "nativeSection": "Original results/methods"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-17-MTT_IDENTITY",
+      "description": "Figure2 MTT48h compares Glu1mM/MK80110uM/ifenprodil25uM, at least5 experiments each octuplet. Do not transfer those MK801/ifenprodil MTT effects to memantine. Methods MTT description mentions memantine/MK801; no invented memantine MTT group estimate.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 4,
+          "printedPage": 4,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 11,
+          "printedPage": 11,
+          "nativeSection": "Original results/methods"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-17-GLUTAMATE_CYCLE",
+      "description": "LN229 glutamate release about7.8ug/mL/h from3.5e5 cells, blocked SAS250uM. Cell-cycle24h Glu/MK801/SAS differences null; ifenprodil small G1 increase. Autocrine explanation is plausible without proof all viability effects are receptor-specific.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 6,
+          "printedPage": 6,
+          "nativeSection": "Original results/methods"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-17-MIGRATION",
+      "description": "LN229 gap closure48h with memantine50uM or ifenprodil25uM versus Glu1mM,3 experiments each triplicate. This is a cell-covered-area assay, not independent in-vivo invasion/metastasis, and reduced cell growth/survival can affect gap closure.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 13,
+          "printedPage": 13,
+          "nativeSection": "Original results/methods"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-17-DRUG_ONLY_CFA",
+      "description": "Memantine drug-only clonogenic LD50 is26+/-11uM meanSEM n3; MK801 .9+/-1.1uM text. Seven-day colony endpoint is distinct from MTT48h and clinical drug dosing; no human PK/selectivity evidence.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 6,
+          "printedPage": 6,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 12,
+          "printedPage": 12,
+          "nativeSection": "Original results/methods"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-17-FOCI_COMPARATOR",
+      "description": "Figure3A gives29+/-5 to7+/-2 foci at4h after2Gy n3 P<.01 with Glu1mM, but source calls comparator mock-irradiated despite2Gy context and both plot groups labeled2Gy. Preserve ambiguity, do not invent a proven0Gy comparison. Foci are DNA-damage markers, not direct measurement of all repair pathways.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 6,
+          "printedPage": 6,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Original results/methods"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-17-RADIOSENSITIZATION",
+      "description": "Figure3D memantine50uM radiation enhancement factor at2Gy1.4, n3 SD; ifenprodil1.81 is text context, not an extra displayed memantine curve. Figure4 CFA instead uses25uM memantine and1uM KG501; no dose pooling or clinical therapeutic index.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 11,
+          "printedPage": 11,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 12,
+          "printedPage": 12,
+          "nativeSection": "Original results/methods"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-17-CREB_BDNF",
+      "description": "pCREB30min relative3.7+/-1.1 P<.05 n3, antibody also recognizes pATF1. BDNF1.9+/-.15-fold P<.05 n3, comparator SAS250uM; MK80110uM results versus20uM BDNF methods remains unresolved. Single representative blot labels3.9/1.3/1.9 differ from replicate means, not replacements for summary estimates.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 8,
+          "printedPage": 8,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 11,
+          "printedPage": 11,
+          "nativeSection": "Original results/methods"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-17-MK801_NULL_TIMING",
+      "description": "Body says both MK801/KG501 significantly increase gammaH2AX after30min irradiation; Figure4B says4h post2Gy, MK8011.4+/-.3 NS, KG5011.8+/-.4 P<.05 n3. Retain MK801 null and timing inconsistency; do not promote both to significant.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 8,
+          "printedPage": 8,
+          "nativeSection": "Original results/methods"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-17-PHASE_DOSE",
+      "description": "Figure3 foci use EdU-positive S/G2; Figure4 EdU-negative non-S phase LN229/U87, memantine100uM/KG50125uM,0.5h/4h after2Gy, n3 SEM. More residual4h foci and slight/no0.5h effects are phase/time-specific, not all conditions equally affected.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 8,
+          "printedPage": 8,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 12,
+          "printedPage": 12,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 13,
+          "printedPage": 13,
+          "nativeSection": "Original results/methods"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-17-COMBINATION_NULL",
+      "description": "Figure4 CFA uses memantine25uM/KG5011uM: LN229 n3 triplets, U87 n2 triplets, SD. Memantine reduces survival starting2Gy; U87 KG501 also does, but combined treatment has no significant further survival effect. Foci effects subadditive. No synergy or independently replicated causal pathway proof.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 8,
+          "printedPage": 8,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 10,
+          "printedPage": 10,
+          "nativeSection": "Original results/methods"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-17-METHOD_STATS",
+      "description": "Technical octuplets/triplicates and150-200 nuclei per point are nested observations. General meanSEM n>=3 has explicit U87 CFA n2/SD exception. Some figure3 significance-key labels are internally unusual; preserve reported thresholds without inventing exact P/CI. Protocol/raw data/randomization/blinding/power not independently checked.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 12,
+          "printedPage": 12,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 13,
+          "printedPage": 13,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 14,
+          "printedPage": 14,
+          "nativeSection": "Original results/methods"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-17-MECHANISM",
+      "description": "Drug perturbation, receptor currents and pCREB support a model; gammaH2AX persistence is a surrogate and no genetic rescue/direct downstream target program establishes complete necessity. Authors state how NMDAR-CREB affects survival/IR remains elusive. Animal/phaseI/melanoma/AML examples are cited background, not own data.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 10,
+          "printedPage": 10,
+          "nativeSection": "Original results/methods"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-17-TRANSLATION",
+      "description": "Proposed radiosensitizing adjuvant rationale is preclinical. No normal-brain comparator, therapeutic index, clinical GBM benefit, human brain exposure or dosing recommendation. Source FDA-approved class/drug wording and cited phaseI status are not current regulatory/trial verification.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 10,
+          "printedPage": 10,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 14,
+          "printedPage": 14,
+          "nativeSection": "Original results/methods"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-17-OVERLAP_VERSION",
+      "description": "CAL14-16 cited this report without fresh original acceptance. Current packet is fresh exact16-page supplied source; visible pages3-9 show2019 Cancers header, while extraction contains hidden/duplicate draft text fragments. Do not relabel supplied rendered report as a preprint or count artifacts as extra experiments. Citation55 same-group Cancers2019;11:306 not independently read or accepted.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 1,
+          "printedPage": 1,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 4,
+          "printedPage": 4,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 14,
+          "printedPage": 14,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 16,
+          "printedPage": 16,
+          "nativeSection": "Original results/methods"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-17-DISCLOSURES_ACCESS",
+      "description": "BMBF NeuroRad02NUK034B/GREWISalpha02NUK050D and DFG GRK1657 funding, DFG/TU Darmstadt OA support. Authors declare no conflict/funder role. ATCC cell lines/Tocris and Sigma reagents as reported; explicit source ethics/consent statement not identified for cell-line work. Main16 text/pages3-9 visuals read; rawdata/protocol/companions/current corrections unchecked, no acquisition.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 1,
+          "printedPage": 1,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 14,
+          "printedPage": 14,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 16,
+          "printedPage": 16,
+          "nativeSection": "Original results/methods"
+        }
+      ]
+    }
+  ],
+  "overlapRecords": [
+    {
+      "reportId": "REED-7d903e6916d5dec055e9",
+      "models": [
+        "LN229",
+        "U87",
+        "T98G",
+        "LN428 tested"
+      ],
+      "earlierPacketsCitedOnly": [
+        "REED2-CAL-14",
+        "REED2-CAL-15",
+        "REED2-CAL-16"
+      ],
+      "relatedSameGroupCitation": "Lutz2019Cancers11:306 bibliography only",
+      "newIndependentTrialCount": 0,
+      "newIndependentPatientCount": 0,
+      "uniqueCrossCorpusPatientCountAdjudicated": false,
+      "sharedExperimentsAcrossReadouts": "Cells, nuclei, colonies and doses not independent clinical cohorts",
+      "locators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 10,
+          "printedPage": 10,
+          "nativeSection": "Original results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f20fe02ef3221ee1cc7d711d337f3607d58197e0554a13f2fc96cbbff8b8de10",
+          "physicalPage": 16,
+          "printedPage": 16,
+          "nativeSection": "Original results/methods"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "LN229 carries most functional/migration work, with U87 additional foci/RT survival. T98G has functional NMDA-response context, LN428 was tested without equivalent positive response. Not all four lines underwent all endpoints; no animal or patient efficacy experiment.",
+    "Figure1 caption uses100uM Glu/10uM glycine whereas methods uses1mM/100uM. This tenfold source discrepancy remains unresolved. Both use20s application and10uM ionomycin90s. Roughly50% calcium-responsive and40% current-responsive are cell observations, not population prevalence.",
+    "Patch-clamp agonists100uM NMDA/AMPA/kainate, n22 meanSEM; GluN1/2A/2B immunostaining and lamellipodial localization do not prove memantine-specific necessary downstream pathways or quantitative receptor-subtype superiority.",
+    "Figure2 MTT48h compares Glu1mM/MK80110uM/ifenprodil25uM, at least5 experiments each octuplet. Do not transfer those MK801/ifenprodil MTT effects to memantine. Methods MTT description mentions memantine/MK801; no invented memantine MTT group estimate.",
+    "LN229 glutamate release about7.8ug/mL/h from3.5e5 cells, blocked SAS250uM. Cell-cycle24h Glu/MK801/SAS differences null; ifenprodil small G1 increase. Autocrine explanation is plausible without proof all viability effects are receptor-specific.",
+    "LN229 gap closure48h with memantine50uM or ifenprodil25uM versus Glu1mM,3 experiments each triplicate. This is a cell-covered-area assay, not independent in-vivo invasion/metastasis, and reduced cell growth/survival can affect gap closure.",
+    "Memantine drug-only clonogenic LD50 is26+/-11uM meanSEM n3; MK801 .9+/-1.1uM text. Seven-day colony endpoint is distinct from MTT48h and clinical drug dosing; no human PK/selectivity evidence.",
+    "Figure3A gives29+/-5 to7+/-2 foci at4h after2Gy n3 P<.01 with Glu1mM, but source calls comparator mock-irradiated despite2Gy context and both plot groups labeled2Gy. Preserve ambiguity, do not invent a proven0Gy comparison. Foci are DNA-damage markers, not direct measurement of all repair pathways.",
+    "Figure3D memantine50uM radiation enhancement factor at2Gy1.4, n3 SD; ifenprodil1.81 is text context, not an extra displayed memantine curve. Figure4 CFA instead uses25uM memantine and1uM KG501; no dose pooling or clinical therapeutic index.",
+    "pCREB30min relative3.7+/-1.1 P<.05 n3, antibody also recognizes pATF1. BDNF1.9+/-.15-fold P<.05 n3, comparator SAS250uM; MK80110uM results versus20uM BDNF methods remains unresolved. Single representative blot labels3.9/1.3/1.9 differ from replicate means, not replacements for summary estimates.",
+    "Body says both MK801/KG501 significantly increase gammaH2AX after30min irradiation; Figure4B says4h post2Gy, MK8011.4+/-.3 NS, KG5011.8+/-.4 P<.05 n3. Retain MK801 null and timing inconsistency; do not promote both to significant.",
+    "Figure3 foci use EdU-positive S/G2; Figure4 EdU-negative non-S phase LN229/U87, memantine100uM/KG50125uM,0.5h/4h after2Gy, n3 SEM. More residual4h foci and slight/no0.5h effects are phase/time-specific, not all conditions equally affected.",
+    "Figure4 CFA uses memantine25uM/KG5011uM: LN229 n3 triplets, U87 n2 triplets, SD. Memantine reduces survival starting2Gy; U87 KG501 also does, but combined treatment has no significant further survival effect. Foci effects subadditive. No synergy or independently replicated causal pathway proof.",
+    "Technical octuplets/triplicates and150-200 nuclei per point are nested observations. General meanSEM n>=3 has explicit U87 CFA n2/SD exception. Some figure3 significance-key labels are internally unusual; preserve reported thresholds without inventing exact P/CI. Protocol/raw data/randomization/blinding/power not independently checked.",
+    "Drug perturbation, receptor currents and pCREB support a model; gammaH2AX persistence is a surrogate and no genetic rescue/direct downstream target program establishes complete necessity. Authors state how NMDAR-CREB affects survival/IR remains elusive. Animal/phaseI/melanoma/AML examples are cited background, not own data.",
+    "Proposed radiosensitizing adjuvant rationale is preclinical. No normal-brain comparator, therapeutic index, clinical GBM benefit, human brain exposure or dosing recommendation. Source FDA-approved class/drug wording and cited phaseI status are not current regulatory/trial verification.",
+    "CAL14-16 cited this report without fresh original acceptance. Current packet is fresh exact16-page supplied source; visible pages3-9 show2019 Cancers header, while extraction contains hidden/duplicate draft text fragments. Do not relabel supplied rendered report as a preprint or count artifacts as extra experiments. Citation55 same-group Cancers2019;11:306 not independently read or accepted.",
+    "BMBF NeuroRad02NUK034B/GREWISalpha02NUK050D and DFG GRK1657 funding, DFG/TU Darmstadt OA support. Authors declare no conflict/funder role. ATCC cell lines/Tocris and Sigma reagents as reported; explicit source ethics/consent statement not identified for cell-line work. Main16 text/pages3-9 visuals read; rawdata/protocol/companions/current corrections unchecked, no acquisition."
+  ],
+  "newIndependentTrials": 0,
+  "newIndependentPatients": 0,
+  "scientificAcceptance": false,
+  "humanApproval": false,
+  "released": false
+}

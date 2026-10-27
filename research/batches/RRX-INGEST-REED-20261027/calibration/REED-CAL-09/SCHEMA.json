@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "REED-CAL-09-safety-v1",
+  "required": [
+    "schemaVersion",
+    "paper",
+    "source",
+    "inspection",
+    "study",
+    "cases",
+    "results",
+    "claims",
+    "reviewInputs",
+    "limitations",
+    "scientificAcceptance",
+    "humanApproval",
+    "released"
+  ],
+  "controls": [
+    "Ritonavirnotnelfinavir;separatetrial/familyandpatientcounts",
+    "No smallselectedseriesconvertedpopulationincidence",
+    "Observedlaboratoryfindingnotsole-drugcausality",
+    "Preservelactate/glucose/creatinine/drugunitsandtimepoints",
+    "Lead-in/combinationandcointerventionsnotcollapsed",
+    "No priorclinical/mechanisticreferencesimportedascurrentpatients",
+    "No pixel-derivedPKmeans/effects"
+  ],
+  "reviewInventory": "rules/one-match-rule/references/research-reviews/review-questions-and-inputs.json",
+  "fixedGates": {
+    "scientificAcceptance": false,
+    "humanApproval": false,
+    "released": false,
+    "acceptedSupport": false,
+    "grade": null
+  }
+}

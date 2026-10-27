@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "REED-CAL-02source-extraction-v1",
+  "requiredTopLevel": [
+    "source",
+    "paper",
+    "experiments",
+    "arms",
+    "results",
+    "claims",
+    "reviewInputs",
+    "inspection",
+    "gaps"
+  ],
+  "resultRequired": [
+    "id",
+    "experimentId",
+    "outcome",
+    "population",
+    "timepoint",
+    "arms",
+    "estimate",
+    "uncertainty",
+    "sourceLocators",
+    "verificationState",
+    "acceptedSupport"
+  ],
+  "locatorRequired": [
+    "physicalPage",
+    "section",
+    "sourceSha256",
+    "kind"
+  ],
+  "allowedVerification": [
+    "pending_independent_source_audit"
+  ],
+  "missingness": [
+    "not_extracted",
+    "not_reported_after_source_read",
+    "not_checked",
+    "not_applicable",
+    "not_identifiable"
+  ],
+  "reviewQuestionInventorySha256": "02edeacc65227e5feeaf25b6c9568be406b48024216f83d2dda2ccfcc5042f3b",
+  "scientificAccepted": false,
+  "humanApproval": false
+}
