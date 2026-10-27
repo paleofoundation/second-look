@@ -1,0 +1,44 @@
+{
+  "id": "FILL-REMAPRX-FENB-20261027",
+  "version": "1.0",
+  "createdAt": "2026-10-27T07:36:43.033515+02:00",
+  "authority": "Elon 2026-10-27 07:26 draft-only order; fenbendazole first; entire FINDINGS including27Octbrowserupdate read",
+  "baseCommit": "1dc68285d499d6f4f8ddcef2c1ff873883f0ed7d",
+  "baseBranch": "codex/fill-remaprx-1-outcomes",
+  "targets": {
+    "drugId": "D10",
+    "route": "/drugs/fenbendazole"
+  },
+  "scope": "Rewrite source-bound fenbendazole overview/coverage/mechanism/human evidence/mixed preclinical evidence/safety/dosing/status/FAQ plus exact claim-level grades; preserve current app identity/shared renderer and existing exact outcome rows. Add only independently supported scoped findings if a registered condition scope exists.",
+  "paperSession": {
+    "drug": "D10 only",
+    "maxPapers": 25,
+    "selectedLocalPapers": 11,
+    "execution": "sequential,no subagents"
+  },
+  "sourcePolicy": "Local supplied original PDFs and index plus already verified existing corpus files. Primary/official source pages may be checked for necessary verification under current explicitGO. Raw/derived full texts private outsideGit; cite-only, no public or repository-hosted papers. No textbooks cited/reproduced; no Makis case series cited/extracted. Adjacent itraconazole/mebendazole/flubendazole data cannot become fenbendazole evidence.",
+  "claims": "Exact molecule/model/regimen/comparator/endpoint/timepoint and per-claim selected-source confidence with rationale/domains/source-native locator/hash. Label biological evidence separately from clinical inference; no human benefit/dose from cells/animals, no grade inferred from design alone; absence of suitable evidence is stated, never fabricated.",
+  "review": "AI-assisted editorial confidence only. Preserve formal Q01-Q15 pending gaps and one review obligation per cited paper, independent/human review and publication pending. New scientific changes require actual source inspection and actualdate/fingerprint. No automatic refresh of existing assessments.",
+  "records": "Stable existing source IDs reused by exactDOI/PMID/title. New IDs only for actual matched reports. Exact source/claim ledger and perpaperQ01-Q15map. Current canonical/public/parent/mechanism/status/history projections stay coherent; no historical generator replay.",
+  "numerics": "Preserve units/denominators/uncertainty/model/route/timepoint. Visually inspect consequential numeric table/figure claims. No surrogate, within-group, case anecdote or combination attribution becomes comparative clinical benefit.",
+  "protected": "PR1-3 and originalD22 untouched; CP027/CP028 source records and11publicbookpages untouched. Preserve robots/noindex, audience, credentials, hosting/assets/clinicalrelease states. No merge/deploy/publication/outbound.",
+  "outputs": [
+    "SOURCE-RECEIPT.json",
+    "CLAIMS.json",
+    "REVIEW-INPUT-MAP.json",
+    "REPORT.md",
+    "VALIDATION.json",
+    "candidate/projector with repeat0diff proof"
+  ],
+  "checks": [
+    "inputidentity/hash/type/readdepth",
+    "exactclaim/source/grade/missingness",
+    "no transferredmechanisms/Makis/textbookcitation/publicpapers/em-dashes",
+    "CP027/CP028immutability and unrelatedoldrowassessment preservation",
+    "currentgradingcompiler/fingerprints/outcomereferences",
+    "allaffectedSSR/citations/statussource/mechanisms/history",
+    "typecheck/build/privacy/governance/repeat0diff",
+    "localdesktop/mobilearticle anddrawer verification"
+  ],
+  "stop": "Wrong/unresolvedsource or material numerical contradiction holds that claim, continue unaffected scope. Plainpush403 stops before alternateauth/transport. No source/publication/independentapproval invented."
+}

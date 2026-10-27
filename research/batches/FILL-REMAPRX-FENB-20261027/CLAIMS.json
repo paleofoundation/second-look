@@ -1,0 +1,1005 @@
+{
+  "schemaVersion": "fenbendazole-claim/1.0",
+  "claims": [
+    {
+      "claimId": "FENB-MICROTUBULES",
+      "statement": "Clinical evidence: Low. In lung-cancer models, fenbendazole partly disrupted microtubules, interfered with cell division and increased cell death. These laboratory findings explain a research hypothesis; they do not show that an effective exposure can be reached safely in people.",
+      "scope": "Lung-cancer cells and A549 mouse xenografts; clinical translation",
+      "sourceIds": [
+        "MECH-D10-MICROTUBULE-2018"
+      ],
+      "grade": "Low",
+      "rationale": "The experiments test cellular and animal mechanisms, not a patient benefit or clinically achievable exposure.",
+      "locators": [
+        "Dogra 2018, Results: tubulin network, G2/M block and apoptosis; Figures 1-3; Methods: nude mice"
+      ],
+      "readingDepth": {
+        "MECH-D10-MICROTUBULE-2018": "targeted_full_text_inspection"
+      },
+      "sourceBindings": [
+        {
+          "sourceId": "MECH-D10-MICROTUBULE-2018",
+          "sourceObjectSha256": "e566b8fb9bc88d1e5a53b3eb6a22770224dc5aebfa7fcd0514d6b22e03de824f",
+          "fileSha256": "17d6d20541f48de1be0abc33c19fc0e592eb4530b99951b983898b3bcb3cf0ca",
+          "path": "/Users/kmfp/papers-for-claude/remaprx-fill/fenbendazole-cancer/pdfs/30093705-dogran-2018.pdf"
+        }
+      ],
+      "domains": [
+        {
+          "domain": "Study methods",
+          "judgment": "Controlled laboratory experiments, with no human treatment comparison.",
+          "sourceIds": [
+            "MECH-D10-MICROTUBULE-2018"
+          ]
+        },
+        {
+          "domain": "Directness",
+          "judgment": "Cell or mouse models are indirect for human cancer treatment.",
+          "sourceIds": [
+            "MECH-D10-MICROTUBULE-2018"
+          ]
+        },
+        {
+          "domain": "Precision",
+          "judgment": "No human effect estimate or confidence interval is available.",
+          "sourceIds": [
+            "MECH-D10-MICROTUBULE-2018"
+          ]
+        },
+        {
+          "domain": "Consistency",
+          "judgment": "Results differ across the selected models and regimens.",
+          "sourceIds": [
+            "MECH-D10-MICROTUBULE-2018"
+          ]
+        },
+        {
+          "domain": "Source integrity",
+          "judgment": "Original paper identity and supplied PDF hash verified; full Q01-Q15 review and independent appraisal remain pending.",
+          "sourceIds": [
+            "MECH-D10-MICROTUBULE-2018"
+          ]
+        }
+      ],
+      "assessedAt": "2026-10-27",
+      "reviewState": "pending_independent_and_human_review"
+    },
+    {
+      "claimId": "FENB-METABOLISM",
+      "statement": "Clinical evidence: Low. Dogra reported p53 activation and reduced glucose uptake in lung-cancer cells. The pathway is not consistent across models: Park found no change in glucose consumption or lactate production in H4IIE rat liver-cancer cells, and a separate colorectal-cell abstract reported effects that did not require p53.",
+      "scope": "Selected lung, rat liver and resistant colorectal cell models; pathway consistency",
+      "sourceIds": [
+        "MECH-D10-MICROTUBULE-2018",
+        "P-D10-H4IIE-2022",
+        "P-D10-CRC-CELLS-2022"
+      ],
+      "grade": "Low",
+      "rationale": "Different models give different pathway results; the colorectal source was inspected as an abstract only.",
+      "locators": [
+        "Dogra 2018, Results: p53 and glucose; Park 2022 H4IIE, abstract and Figure 4; Park 2022 colorectal, PubMed abstract"
+      ],
+      "readingDepth": {
+        "MECH-D10-MICROTUBULE-2018": "targeted_full_text_inspection",
+        "P-D10-H4IIE-2022": "targeted_full_text_inspection",
+        "P-D10-CRC-CELLS-2022": "abstract_only"
+      },
+      "sourceBindings": [
+        {
+          "sourceId": "MECH-D10-MICROTUBULE-2018",
+          "sourceObjectSha256": "e566b8fb9bc88d1e5a53b3eb6a22770224dc5aebfa7fcd0514d6b22e03de824f",
+          "fileSha256": "17d6d20541f48de1be0abc33c19fc0e592eb4530b99951b983898b3bcb3cf0ca",
+          "path": "/Users/kmfp/papers-for-claude/remaprx-fill/fenbendazole-cancer/pdfs/30093705-dogran-2018.pdf"
+        },
+        {
+          "sourceId": "P-D10-H4IIE-2022",
+          "sourceObjectSha256": "ed663babff1ab269e848bbcee44705700c551f1be468c83c3fc954b4d4578cc5",
+          "fileSha256": "c1bef4b0ee5b5c39cee57257d2bb0b3e87541b920d967695294bbc2919f8a153",
+          "path": "/Users/kmfp/papers-for-claude/remaprx-fill/fenbendazole-cancer/pdfs/35110505-parkd-2022.pdf"
+        },
+        {
+          "sourceId": "P-D10-CRC-CELLS-2022",
+          "sourceObjectSha256": "76f7f10c0e5746a06f49ff04bc7e46db64ca5bdeb78d3d11f1fab230ba22202f",
+          "webUrl": "https://pubmed.ncbi.nlm.nih.gov/36039738/"
+        }
+      ],
+      "domains": [
+        {
+          "domain": "Study methods",
+          "judgment": "Controlled laboratory experiments, with no human treatment comparison.",
+          "sourceIds": [
+            "MECH-D10-MICROTUBULE-2018",
+            "P-D10-H4IIE-2022",
+            "P-D10-CRC-CELLS-2022"
+          ]
+        },
+        {
+          "domain": "Directness",
+          "judgment": "Cell or mouse models are indirect for human cancer treatment.",
+          "sourceIds": [
+            "MECH-D10-MICROTUBULE-2018",
+            "P-D10-H4IIE-2022",
+            "P-D10-CRC-CELLS-2022"
+          ]
+        },
+        {
+          "domain": "Precision",
+          "judgment": "No human effect estimate or confidence interval is available.",
+          "sourceIds": [
+            "MECH-D10-MICROTUBULE-2018",
+            "P-D10-H4IIE-2022",
+            "P-D10-CRC-CELLS-2022"
+          ]
+        },
+        {
+          "domain": "Consistency",
+          "judgment": "Results differ across the selected models and regimens.",
+          "sourceIds": [
+            "MECH-D10-MICROTUBULE-2018",
+            "P-D10-H4IIE-2022",
+            "P-D10-CRC-CELLS-2022"
+          ]
+        },
+        {
+          "domain": "Source integrity",
+          "judgment": "Original paper identity and supplied PDF hash verified; full Q01-Q15 review and independent appraisal remain pending.",
+          "sourceIds": [
+            "MECH-D10-MICROTUBULE-2018",
+            "P-D10-H4IIE-2022",
+            "P-D10-CRC-CELLS-2022"
+          ]
+        }
+      ],
+      "assessedAt": "2026-10-27",
+      "reviewState": "pending_independent_and_human_review"
+    },
+    {
+      "claimId": "FENB-PROTEASOME",
+      "statement": "Clinical evidence: Low. Dogra 2012 described proteasome impairment and endoplasmic-reticulum stress in cancer cells. It was an in vitro study; its discussion said animal efficacy was still being studied.",
+      "scope": "Cancer-cell cultures; no animal efficacy experiment in this report",
+      "sourceIds": [
+        "P-D10-PROTEASOME-2012"
+      ],
+      "grade": "Low",
+      "rationale": "Cell toxicity and protein-stress assays do not demonstrate animal or human tumor benefit.",
+      "locators": [
+        "Dogra 2012, Abstract; Results; Discussion final paragraph"
+      ],
+      "readingDepth": {
+        "P-D10-PROTEASOME-2012": "targeted_full_text_inspection"
+      },
+      "sourceBindings": [
+        {
+          "sourceId": "P-D10-PROTEASOME-2012",
+          "sourceObjectSha256": "0e016f3b60ba336147c8e4c2efa69a8ff5c40603ff8b436009e1227053feb027",
+          "fileSha256": "b73aa40afe91eaa789031fb400af30b954810efea5b6ea0f9137a655fad1c67f",
+          "path": "/Users/kmfp/papers-for-claude/remaprx-fill/fenbendazole-cancer/pdfs/22745125-dogran-2012.pdf"
+        }
+      ],
+      "domains": [
+        {
+          "domain": "Study methods",
+          "judgment": "Controlled laboratory experiments, with no human treatment comparison.",
+          "sourceIds": [
+            "P-D10-PROTEASOME-2012"
+          ]
+        },
+        {
+          "domain": "Directness",
+          "judgment": "Cell or mouse models are indirect for human cancer treatment.",
+          "sourceIds": [
+            "P-D10-PROTEASOME-2012"
+          ]
+        },
+        {
+          "domain": "Precision",
+          "judgment": "No human effect estimate or confidence interval is available.",
+          "sourceIds": [
+            "P-D10-PROTEASOME-2012"
+          ]
+        },
+        {
+          "domain": "Consistency",
+          "judgment": "Results differ across the selected models and regimens.",
+          "sourceIds": [
+            "P-D10-PROTEASOME-2012"
+          ]
+        },
+        {
+          "domain": "Source integrity",
+          "judgment": "Original paper identity and supplied PDF hash verified; full Q01-Q15 review and independent appraisal remain pending.",
+          "sourceIds": [
+            "P-D10-PROTEASOME-2012"
+          ]
+        }
+      ],
+      "assessedAt": "2026-10-27",
+      "reviewState": "pending_independent_and_human_review"
+    },
+    {
+      "claimId": "FENB-POSITIVE-MOUSE",
+      "statement": "Clinical evidence: Low. Dogra 2018 reported slower A549 lung-cancer xenograft growth in mice. This positive result is specific to that model and regimen, and cannot establish benefit in people or across cancers.",
+      "scope": "A549 mouse xenografts",
+      "sourceIds": [
+        "MECH-D10-MICROTUBULE-2018"
+      ],
+      "grade": "Low",
+      "rationale": "A positive xenograft experiment has substantial species, exposure and clinical-outcome limitations.",
+      "locators": [
+        "Dogra 2018, Figure 8; Methods: nude mice"
+      ],
+      "readingDepth": {
+        "MECH-D10-MICROTUBULE-2018": "targeted_full_text_inspection"
+      },
+      "sourceBindings": [
+        {
+          "sourceId": "MECH-D10-MICROTUBULE-2018",
+          "sourceObjectSha256": "e566b8fb9bc88d1e5a53b3eb6a22770224dc5aebfa7fcd0514d6b22e03de824f",
+          "fileSha256": "17d6d20541f48de1be0abc33c19fc0e592eb4530b99951b983898b3bcb3cf0ca",
+          "path": "/Users/kmfp/papers-for-claude/remaprx-fill/fenbendazole-cancer/pdfs/30093705-dogran-2018.pdf"
+        }
+      ],
+      "domains": [
+        {
+          "domain": "Study methods",
+          "judgment": "Controlled laboratory experiments, with no human treatment comparison.",
+          "sourceIds": [
+            "MECH-D10-MICROTUBULE-2018"
+          ]
+        },
+        {
+          "domain": "Directness",
+          "judgment": "Cell or mouse models are indirect for human cancer treatment.",
+          "sourceIds": [
+            "MECH-D10-MICROTUBULE-2018"
+          ]
+        },
+        {
+          "domain": "Precision",
+          "judgment": "No human effect estimate or confidence interval is available.",
+          "sourceIds": [
+            "MECH-D10-MICROTUBULE-2018"
+          ]
+        },
+        {
+          "domain": "Consistency",
+          "judgment": "Results differ across the selected models and regimens.",
+          "sourceIds": [
+            "MECH-D10-MICROTUBULE-2018"
+          ]
+        },
+        {
+          "domain": "Source integrity",
+          "judgment": "Original paper identity and supplied PDF hash verified; full Q01-Q15 review and independent appraisal remain pending.",
+          "sourceIds": [
+            "MECH-D10-MICROTUBULE-2018"
+          ]
+        }
+      ],
+      "assessedAt": "2026-10-27",
+      "reviewState": "pending_independent_and_human_review"
+    },
+    {
+      "claimId": "FENB-GAO",
+      "statement": "Clinical evidence: Low. In Gao 2008, lymphoma tumors in mice were smaller with fenbendazole plus supplemented vitamins (P = 0.009). Fenbendazole alone did not differ significantly from control (P = 0.12). The combination result cannot be attributed to fenbendazole alone, and nonsignificance does not prove equivalence.",
+      "scope": "SCID mice bearing lymphoma xenografts; combination versus single-agent comparisons",
+      "sourceIds": [
+        "P-D10-VITAMINS-2008"
+      ],
+      "grade": "Low",
+      "rationale": "Small experiment with separate diet arms; combination attribution is unresolved, and P values do not measure human benefit.",
+      "locators": [
+        "Gao 2008, PDF page 2, printed page 38, Results: Tumor size; visually checked"
+      ],
+      "readingDepth": {
+        "P-D10-VITAMINS-2008": "targeted_full_text_inspection"
+      },
+      "sourceBindings": [
+        {
+          "sourceId": "P-D10-VITAMINS-2008",
+          "sourceObjectSha256": "ebb0fbcad84f3713f6e97fc73adef38efecaeb7e8043a1cb86d0ab10f15282a6",
+          "fileSha256": "5bb942d0547daaa6c625c3dbdec8fc8d882c1d757b2c91152ec7ca2809023071",
+          "path": "/Users/kmfp/papers-for-claude/remaprx-fill/fenbendazole-cancer/pdfs/19049251-gaop-2008.pdf"
+        }
+      ],
+      "domains": [
+        {
+          "domain": "Study methods",
+          "judgment": "Controlled laboratory experiments, with no human treatment comparison.",
+          "sourceIds": [
+            "P-D10-VITAMINS-2008"
+          ]
+        },
+        {
+          "domain": "Directness",
+          "judgment": "Cell or mouse models are indirect for human cancer treatment.",
+          "sourceIds": [
+            "P-D10-VITAMINS-2008"
+          ]
+        },
+        {
+          "domain": "Precision",
+          "judgment": "No human effect estimate or confidence interval is available.",
+          "sourceIds": [
+            "P-D10-VITAMINS-2008"
+          ]
+        },
+        {
+          "domain": "Consistency",
+          "judgment": "Results differ across the selected models and regimens.",
+          "sourceIds": [
+            "P-D10-VITAMINS-2008"
+          ]
+        },
+        {
+          "domain": "Source integrity",
+          "judgment": "Original paper identity and supplied PDF hash verified; full Q01-Q15 review and independent appraisal remain pending.",
+          "sourceIds": [
+            "P-D10-VITAMINS-2008"
+          ]
+        }
+      ],
+      "assessedAt": "2026-10-27",
+      "reviewState": "pending_independent_and_human_review"
+    },
+    {
+      "claimId": "FENB-DUAN",
+      "statement": "Clinical evidence: Low. Duan 2012 found no change in EMT6 mouse mammary-tumor growth, invasion, metastasis or response to local radiation with fenbendazole-containing chow. Duan 2013 also found no improvement in tumor growth or radiation response with intensive regimens. Those authors concluded that their experiments provided no evidence of value in cancer therapy; these findings apply to the tested models, not every possible cancer or regimen.",
+      "scope": "EMT6 mammary tumors in mice; diet and intensive injection regimens kept separate",
+      "sourceIds": [
+        "P-D10-EMT6-DIET-2012",
+        "P-D10-EMT6-2013"
+      ],
+      "grade": "Low",
+      "rationale": "Two negative mouse-model reports temper the positive xenograft finding but do not establish clinical ineffectiveness.",
+      "locators": [
+        "Duan 2012, first-page summary; Results and Discussion; Duan 2013, Abstract; Results: tumor growth and radiation response"
+      ],
+      "readingDepth": {
+        "P-D10-EMT6-DIET-2012": "targeted_full_text_inspection",
+        "P-D10-EMT6-2013": "targeted_full_text_inspection"
+      },
+      "sourceBindings": [
+        {
+          "sourceId": "P-D10-EMT6-DIET-2012",
+          "sourceObjectSha256": "8d54f1728dec6a78278474088abd6a4c2b8be60579618f7befee9643ad720551",
+          "fileSha256": "de838e4ec5e8695fcba92d27ffe084995903572a0ec569cfffe0791b2b6bb990",
+          "path": "/Users/kmfp/papers-for-claude/remaprx-fill/fenbendazole-cancer/pdfs/22776123-duanq-2012.pdf"
+        },
+        {
+          "sourceId": "P-D10-EMT6-2013",
+          "sourceObjectSha256": "28ce5c48ad7a5c42394943f941a7212d60b2a94d3769f7d4902bf0e3eaf611a8",
+          "fileSha256": "b06d0afa9a27559edd4a742e71d0eb9b1afc7c22967461017f84a7f82c9a2d9e",
+          "path": "/Users/kmfp/papers-for-claude/remaprx-fill/fenbendazole-cancer/pdfs/23393324-duanq-2013.pdf"
+        }
+      ],
+      "domains": [
+        {
+          "domain": "Study methods",
+          "judgment": "Controlled laboratory experiments, with no human treatment comparison.",
+          "sourceIds": [
+            "P-D10-EMT6-DIET-2012",
+            "P-D10-EMT6-2013"
+          ]
+        },
+        {
+          "domain": "Directness",
+          "judgment": "Cell or mouse models are indirect for human cancer treatment.",
+          "sourceIds": [
+            "P-D10-EMT6-DIET-2012",
+            "P-D10-EMT6-2013"
+          ]
+        },
+        {
+          "domain": "Precision",
+          "judgment": "No human effect estimate or confidence interval is available.",
+          "sourceIds": [
+            "P-D10-EMT6-DIET-2012",
+            "P-D10-EMT6-2013"
+          ]
+        },
+        {
+          "domain": "Consistency",
+          "judgment": "Results differ across the selected models and regimens.",
+          "sourceIds": [
+            "P-D10-EMT6-DIET-2012",
+            "P-D10-EMT6-2013"
+          ]
+        },
+        {
+          "domain": "Source integrity",
+          "judgment": "Original paper identity and supplied PDF hash verified; full Q01-Q15 review and independent appraisal remain pending.",
+          "sourceIds": [
+            "P-D10-EMT6-DIET-2012",
+            "P-D10-EMT6-2013"
+          ]
+        }
+      ],
+      "assessedAt": "2026-10-27",
+      "reviewState": "pending_independent_and_human_review"
+    },
+    {
+      "claimId": "FENB-HUMAN",
+      "statement": "Clinical evidence: Low. A six-patient case series included one prostate-cancer patient who received fenbendazole with ivermectin and chlorine dioxide. The other five cases cannot be counted as fenbendazole cases. With multiple interventions, no control group and retrospective reporting, the reported improvement cannot establish that fenbendazole caused a cancer response.",
+      "scope": "Case 6 only, prostate cancer, concurrent interventions",
+      "sourceIds": [
+        "P-D10-COMBINATION-CASE-2026"
+      ],
+      "grade": "Low",
+      "rationale": "One uncontrolled combination case provides no isolated treatment effect or reliable benefit estimate.",
+      "locators": [
+        "Guilford 2026, Treatment Outcomes: Case 6; Discussion; Limitations"
+      ],
+      "readingDepth": {
+        "P-D10-COMBINATION-CASE-2026": "targeted_full_text_inspection"
+      },
+      "sourceBindings": [
+        {
+          "sourceId": "P-D10-COMBINATION-CASE-2026",
+          "sourceObjectSha256": "ab5d51a45eff1cb146a1aee3b315f8ee9fa93d3a86ece837d9d6d5e02a22db73",
+          "fileSha256": "bebabe0001ea1423eef5c9dfd2a5aba782bd0bdf9a92f1bbad779af6dc83051f",
+          "path": "/Users/kmfp/papers-for-claude/remaprx-fill/fenbendazole-cancer/pdfs/42491797-guilfordft-2026.pdf"
+        }
+      ],
+      "domains": [
+        {
+          "domain": "Study methods",
+          "judgment": "Retrospective uncontrolled case series; no randomized comparison.",
+          "sourceIds": [
+            "P-D10-COMBINATION-CASE-2026"
+          ]
+        },
+        {
+          "domain": "Directness",
+          "judgment": "Only one patient received the named fenbendazole combination; no single-agent evidence.",
+          "sourceIds": [
+            "P-D10-COMBINATION-CASE-2026"
+          ]
+        },
+        {
+          "domain": "Precision",
+          "judgment": "One relevant case, no comparative effect estimate or interval.",
+          "sourceIds": [
+            "P-D10-COMBINATION-CASE-2026"
+          ]
+        },
+        {
+          "domain": "Consistency",
+          "judgment": "No controlled replication in this selected human report.",
+          "sourceIds": [
+            "P-D10-COMBINATION-CASE-2026"
+          ]
+        },
+        {
+          "domain": "Source integrity",
+          "judgment": "PDF and exact title verified; pending independent review. The excluded Makis series supplies no claim.",
+          "sourceIds": [
+            "P-D10-COMBINATION-CASE-2026"
+          ]
+        }
+      ],
+      "assessedAt": "2026-10-27",
+      "reviewState": "pending_independent_and_human_review"
+    },
+    {
+      "claimId": "FENB-LIVER",
+      "statement": "Safety evidence: Low for estimating frequency or individual risk. A 2024 case report described biopsy-confirmed severe liver injury after self-administration, with liver tests returning to normal after cessation. This is a serious human safety signal, but a case report cannot estimate how often it occurs.",
+      "scope": "Reported human liver injury after self-administration",
+      "sourceIds": [
+        "P-D10-LIVER-2024"
+      ],
+      "grade": "Low",
+      "rationale": "Clinical injury is documented, but an uncontrolled case cannot estimate incidence or a safe exposure.",
+      "locators": [
+        "Thakurdesai 2024, Abstract; Case report; Discussion"
+      ],
+      "readingDepth": {
+        "P-D10-LIVER-2024": "targeted_full_text_inspection"
+      },
+      "sourceBindings": [
+        {
+          "sourceId": "P-D10-LIVER-2024",
+          "sourceObjectSha256": "5e4ef2592443e2cff64cb0e5d6124b3cedb2e08fb1e777d1f62db8ba7774bc9e",
+          "fileSha256": "e52e167a802afe26bfd924b87a816e9f6b70e779084d4cabe917a7d5590f6539",
+          "path": "/Users/kmfp/Documents/ChatGPT/One Match Rule/work/ingest/SL-F01-F02-20261011/receipt/input/return/F02/PRIMARY/A-F02-R1262__original_report__severe-drug-induced-liver-injury-due-to-self-admin.pdf"
+        }
+      ],
+      "domains": [
+        {
+          "domain": "Study methods",
+          "judgment": "Uncontrolled clinical case with biopsy and dechallenge.",
+          "sourceIds": [
+            "P-D10-LIVER-2024"
+          ]
+        },
+        {
+          "domain": "Directness",
+          "judgment": "Direct human injury observation; not a population risk estimate.",
+          "sourceIds": [
+            "P-D10-LIVER-2024"
+          ]
+        },
+        {
+          "domain": "Precision",
+          "judgment": "One case, no incidence denominator or uncertainty interval.",
+          "sourceIds": [
+            "P-D10-LIVER-2024"
+          ]
+        },
+        {
+          "domain": "Consistency",
+          "judgment": "Additional liver-injury reports exist, but controlled safety comparisons are absent here.",
+          "sourceIds": [
+            "P-D10-LIVER-2024"
+          ]
+        },
+        {
+          "domain": "Source integrity",
+          "judgment": "Existing canonical source retained; original PDF hash verified; full review pending.",
+          "sourceIds": [
+            "P-D10-LIVER-2024"
+          ]
+        }
+      ],
+      "assessedAt": "2026-10-27",
+      "reviewState": "pending_independent_and_human_review"
+    },
+    {
+      "claimId": "FENB-INTERACTION",
+      "statement": "Safety evidence: Low. A patient receiving nivolumab/relatlimab developed severe liver injury after increasing self-administered fenbendazole. The report distinguished suspected drug injury from immune-mediated hepatitis. It does not establish the size or mechanism of an interaction, or provide a safe combination schedule.",
+      "scope": "Colon-cancer patient on nivolumab/relatlimab; suspected liver injury",
+      "sourceIds": [
+        "P-D10-LIVER-2026"
+      ],
+      "grade": "Low",
+      "rationale": "Confounding treatment and a single case prevent a causal interaction estimate.",
+      "locators": [
+        "2026 report, Abstract; History of present illness; FINAL DIAGNOSIS; DISCUSSION"
+      ],
+      "readingDepth": {
+        "P-D10-LIVER-2026": "targeted_full_text_inspection"
+      },
+      "sourceBindings": [
+        {
+          "sourceId": "P-D10-LIVER-2026",
+          "sourceObjectSha256": "c4f805c83d087b77993d845ffcb029b6198bc19928ddecb496062a811b4b7edf",
+          "fileSha256": "b02c242420a0ca8a8a4c25b2f74d426bf97c73222fe56b3db4425d49d15a8064",
+          "path": "/Users/kmfp/Documents/ChatGPT/One Match Rule/work/ingest/SL-F01-F02-20261011/receipt/input/return/F02/PRIMARY/A-F02-R1232__original_report__differentiating-fenbendazole-induced-liver-injury.pdf"
+        }
+      ],
+      "domains": [
+        {
+          "domain": "Study methods",
+          "judgment": "Single clinical case with a temporal history and causality assessment.",
+          "sourceIds": [
+            "P-D10-LIVER-2026"
+          ]
+        },
+        {
+          "domain": "Directness",
+          "judgment": "Direct coexposure, but no comparator can isolate an interaction.",
+          "sourceIds": [
+            "P-D10-LIVER-2026"
+          ]
+        },
+        {
+          "domain": "Precision",
+          "judgment": "No interaction effect estimate or incidence denominator.",
+          "sourceIds": [
+            "P-D10-LIVER-2026"
+          ]
+        },
+        {
+          "domain": "Consistency",
+          "judgment": "No controlled interaction replication in the cited report.",
+          "sourceIds": [
+            "P-D10-LIVER-2026"
+          ]
+        },
+        {
+          "domain": "Source integrity",
+          "judgment": "Existing canonical source and verified local PDF; independent review pending.",
+          "sourceIds": [
+            "P-D10-LIVER-2026"
+          ]
+        }
+      ],
+      "assessedAt": "2026-10-27",
+      "reviewState": "pending_independent_and_human_review"
+    },
+    {
+      "claimId": "FENB-CLINICAL-GAP",
+      "statement": "Cancer benefit: Not established. The selected human efficacy evidence is anecdotal, while the animal studies give mixed results. This page has no controlled human trial establishing tumor response, longer survival or a safe cancer regimen. This describes the evidence reviewed here, not an exhaustive claim about every study that might exist.",
+      "scope": "Selected-source coverage as of October 27, 2026",
+      "sourceIds": [
+        "P-D10-COMBINATION-CASE-2026",
+        "MECH-D10-MICROTUBULE-2018",
+        "P-D10-EMT6-DIET-2012",
+        "P-D10-EMT6-2013"
+      ],
+      "grade": "not_established",
+      "rationale": "No controlled human efficacy comparison is present among these cited studies.",
+      "locators": [
+        "Guilford 2026, Case 6 and Limitations; Dogra 2018, Methods; Duan 2012/2013, study methods"
+      ],
+      "readingDepth": {
+        "P-D10-COMBINATION-CASE-2026": "targeted_full_text_inspection",
+        "MECH-D10-MICROTUBULE-2018": "targeted_full_text_inspection",
+        "P-D10-EMT6-DIET-2012": "targeted_full_text_inspection",
+        "P-D10-EMT6-2013": "targeted_full_text_inspection"
+      },
+      "sourceBindings": [
+        {
+          "sourceId": "P-D10-COMBINATION-CASE-2026",
+          "sourceObjectSha256": "ab5d51a45eff1cb146a1aee3b315f8ee9fa93d3a86ece837d9d6d5e02a22db73",
+          "fileSha256": "bebabe0001ea1423eef5c9dfd2a5aba782bd0bdf9a92f1bbad779af6dc83051f",
+          "path": "/Users/kmfp/papers-for-claude/remaprx-fill/fenbendazole-cancer/pdfs/42491797-guilfordft-2026.pdf"
+        },
+        {
+          "sourceId": "MECH-D10-MICROTUBULE-2018",
+          "sourceObjectSha256": "e566b8fb9bc88d1e5a53b3eb6a22770224dc5aebfa7fcd0514d6b22e03de824f",
+          "fileSha256": "17d6d20541f48de1be0abc33c19fc0e592eb4530b99951b983898b3bcb3cf0ca",
+          "path": "/Users/kmfp/papers-for-claude/remaprx-fill/fenbendazole-cancer/pdfs/30093705-dogran-2018.pdf"
+        },
+        {
+          "sourceId": "P-D10-EMT6-DIET-2012",
+          "sourceObjectSha256": "8d54f1728dec6a78278474088abd6a4c2b8be60579618f7befee9643ad720551",
+          "fileSha256": "de838e4ec5e8695fcba92d27ffe084995903572a0ec569cfffe0791b2b6bb990",
+          "path": "/Users/kmfp/papers-for-claude/remaprx-fill/fenbendazole-cancer/pdfs/22776123-duanq-2012.pdf"
+        },
+        {
+          "sourceId": "P-D10-EMT6-2013",
+          "sourceObjectSha256": "28ce5c48ad7a5c42394943f941a7212d60b2a94d3769f7d4902bf0e3eaf611a8",
+          "fileSha256": "b06d0afa9a27559edd4a742e71d0eb9b1afc7c22967461017f84a7f82c9a2d9e",
+          "path": "/Users/kmfp/papers-for-claude/remaprx-fill/fenbendazole-cancer/pdfs/23393324-duanq-2013.pdf"
+        }
+      ],
+      "domains": [
+        {
+          "domain": "Study methods",
+          "judgment": "Human case reporting and nonclinical experiments, not a human comparative trial.",
+          "sourceIds": [
+            "P-D10-COMBINATION-CASE-2026",
+            "MECH-D10-MICROTUBULE-2018",
+            "P-D10-EMT6-DIET-2012",
+            "P-D10-EMT6-2013"
+          ]
+        },
+        {
+          "domain": "Directness",
+          "judgment": "No direct comparative human cancer evidence in these sources.",
+          "sourceIds": [
+            "P-D10-COMBINATION-CASE-2026",
+            "MECH-D10-MICROTUBULE-2018",
+            "P-D10-EMT6-DIET-2012",
+            "P-D10-EMT6-2013"
+          ]
+        },
+        {
+          "domain": "Precision",
+          "judgment": "No human benefit estimate can be calculated.",
+          "sourceIds": [
+            "P-D10-COMBINATION-CASE-2026",
+            "MECH-D10-MICROTUBULE-2018",
+            "P-D10-EMT6-DIET-2012",
+            "P-D10-EMT6-2013"
+          ]
+        },
+        {
+          "domain": "Consistency",
+          "judgment": "Mixed preclinical findings do not resolve the human evidence gap.",
+          "sourceIds": [
+            "P-D10-COMBINATION-CASE-2026",
+            "MECH-D10-MICROTUBULE-2018",
+            "P-D10-EMT6-DIET-2012",
+            "P-D10-EMT6-2013"
+          ]
+        },
+        {
+          "domain": "Source integrity",
+          "judgment": "Identities and selected source text checked; search completeness and human approval are not claimed.",
+          "sourceIds": [
+            "P-D10-COMBINATION-CASE-2026",
+            "MECH-D10-MICROTUBULE-2018",
+            "P-D10-EMT6-DIET-2012",
+            "P-D10-EMT6-2013"
+          ]
+        }
+      ],
+      "assessedAt": "2026-10-27",
+      "reviewState": "pending_independent_and_human_review"
+    },
+    {
+      "claimId": "FENB-DOSE",
+      "statement": "Human cancer dose: Not established. The cited cell and mouse studies do not establish a dose, treatment duration or monitoring schedule for people. The human combination case is not a dose-finding study, and the liver-injury reports do not define a safe threshold.",
+      "scope": "Human oncology dosing gap; no conversion from animal regimens",
+      "sourceIds": [
+        "MECH-D10-MICROTUBULE-2018",
+        "P-D10-EMT6-DIET-2012",
+        "P-D10-EMT6-2013",
+        "P-D10-COMBINATION-CASE-2026",
+        "P-D10-LIVER-2024",
+        "P-D10-LIVER-2026"
+      ],
+      "grade": "not_established",
+      "rationale": "No human dose-escalation or controlled oncology regimen is established by these sources.",
+      "locators": [
+        "Dogra 2018, Methods; Duan 2012/2013, Methods; Guilford 2026, Case 6; liver reports, Case report/Discussion"
+      ],
+      "readingDepth": {
+        "MECH-D10-MICROTUBULE-2018": "targeted_full_text_inspection",
+        "P-D10-EMT6-DIET-2012": "targeted_full_text_inspection",
+        "P-D10-EMT6-2013": "targeted_full_text_inspection",
+        "P-D10-COMBINATION-CASE-2026": "targeted_full_text_inspection",
+        "P-D10-LIVER-2024": "targeted_full_text_inspection",
+        "P-D10-LIVER-2026": "targeted_full_text_inspection"
+      },
+      "sourceBindings": [
+        {
+          "sourceId": "MECH-D10-MICROTUBULE-2018",
+          "sourceObjectSha256": "e566b8fb9bc88d1e5a53b3eb6a22770224dc5aebfa7fcd0514d6b22e03de824f",
+          "fileSha256": "17d6d20541f48de1be0abc33c19fc0e592eb4530b99951b983898b3bcb3cf0ca",
+          "path": "/Users/kmfp/papers-for-claude/remaprx-fill/fenbendazole-cancer/pdfs/30093705-dogran-2018.pdf"
+        },
+        {
+          "sourceId": "P-D10-EMT6-DIET-2012",
+          "sourceObjectSha256": "8d54f1728dec6a78278474088abd6a4c2b8be60579618f7befee9643ad720551",
+          "fileSha256": "de838e4ec5e8695fcba92d27ffe084995903572a0ec569cfffe0791b2b6bb990",
+          "path": "/Users/kmfp/papers-for-claude/remaprx-fill/fenbendazole-cancer/pdfs/22776123-duanq-2012.pdf"
+        },
+        {
+          "sourceId": "P-D10-EMT6-2013",
+          "sourceObjectSha256": "28ce5c48ad7a5c42394943f941a7212d60b2a94d3769f7d4902bf0e3eaf611a8",
+          "fileSha256": "b06d0afa9a27559edd4a742e71d0eb9b1afc7c22967461017f84a7f82c9a2d9e",
+          "path": "/Users/kmfp/papers-for-claude/remaprx-fill/fenbendazole-cancer/pdfs/23393324-duanq-2013.pdf"
+        },
+        {
+          "sourceId": "P-D10-COMBINATION-CASE-2026",
+          "sourceObjectSha256": "ab5d51a45eff1cb146a1aee3b315f8ee9fa93d3a86ece837d9d6d5e02a22db73",
+          "fileSha256": "bebabe0001ea1423eef5c9dfd2a5aba782bd0bdf9a92f1bbad779af6dc83051f",
+          "path": "/Users/kmfp/papers-for-claude/remaprx-fill/fenbendazole-cancer/pdfs/42491797-guilfordft-2026.pdf"
+        },
+        {
+          "sourceId": "P-D10-LIVER-2024",
+          "sourceObjectSha256": "5e4ef2592443e2cff64cb0e5d6124b3cedb2e08fb1e777d1f62db8ba7774bc9e",
+          "fileSha256": "e52e167a802afe26bfd924b87a816e9f6b70e779084d4cabe917a7d5590f6539",
+          "path": "/Users/kmfp/Documents/ChatGPT/One Match Rule/work/ingest/SL-F01-F02-20261011/receipt/input/return/F02/PRIMARY/A-F02-R1262__original_report__severe-drug-induced-liver-injury-due-to-self-admin.pdf"
+        },
+        {
+          "sourceId": "P-D10-LIVER-2026",
+          "sourceObjectSha256": "c4f805c83d087b77993d845ffcb029b6198bc19928ddecb496062a811b4b7edf",
+          "fileSha256": "b02c242420a0ca8a8a4c25b2f74d426bf97c73222fe56b3db4425d49d15a8064",
+          "path": "/Users/kmfp/Documents/ChatGPT/One Match Rule/work/ingest/SL-F01-F02-20261011/receipt/input/return/F02/PRIMARY/A-F02-R1232__original_report__differentiating-fenbendazole-induced-liver-injury.pdf"
+        }
+      ],
+      "domains": [
+        {
+          "domain": "Study methods",
+          "judgment": "No human dose-finding study among the cited sources.",
+          "sourceIds": [
+            "MECH-D10-MICROTUBULE-2018",
+            "P-D10-EMT6-DIET-2012",
+            "P-D10-EMT6-2013",
+            "P-D10-COMBINATION-CASE-2026",
+            "P-D10-LIVER-2024",
+            "P-D10-LIVER-2026"
+          ]
+        },
+        {
+          "domain": "Directness",
+          "judgment": "Animal exposures and uncontrolled self-administration are not a human regimen.",
+          "sourceIds": [
+            "MECH-D10-MICROTUBULE-2018",
+            "P-D10-EMT6-DIET-2012",
+            "P-D10-EMT6-2013",
+            "P-D10-COMBINATION-CASE-2026",
+            "P-D10-LIVER-2024",
+            "P-D10-LIVER-2026"
+          ]
+        },
+        {
+          "domain": "Precision",
+          "judgment": "No therapeutic window or safe-dose precision available.",
+          "sourceIds": [
+            "MECH-D10-MICROTUBULE-2018",
+            "P-D10-EMT6-DIET-2012",
+            "P-D10-EMT6-2013",
+            "P-D10-COMBINATION-CASE-2026",
+            "P-D10-LIVER-2024",
+            "P-D10-LIVER-2026"
+          ]
+        },
+        {
+          "domain": "Consistency",
+          "judgment": "Regimens differ and cannot be pooled or converted into advice.",
+          "sourceIds": [
+            "MECH-D10-MICROTUBULE-2018",
+            "P-D10-EMT6-DIET-2012",
+            "P-D10-EMT6-2013",
+            "P-D10-COMBINATION-CASE-2026",
+            "P-D10-LIVER-2024",
+            "P-D10-LIVER-2026"
+          ]
+        },
+        {
+          "domain": "Source integrity",
+          "judgment": "Original sources checked within the recorded reading depth; full reviews pending.",
+          "sourceIds": [
+            "MECH-D10-MICROTUBULE-2018",
+            "P-D10-EMT6-DIET-2012",
+            "P-D10-EMT6-2013",
+            "P-D10-COMBINATION-CASE-2026",
+            "P-D10-LIVER-2024",
+            "P-D10-LIVER-2026"
+          ]
+        }
+      ],
+      "assessedAt": "2026-10-27",
+      "reviewState": "pending_independent_and_human_review"
+    },
+    {
+      "claimId": "FENB-CONTRA",
+      "statement": "Human contraindication guidance: Not established by these studies. The human liver-injury reports identify harm after self-administration, but do not define a validated list of contraindications or a group in whom fenbendazole is safe.",
+      "scope": "Contraindication and tolerability gap in cited human case reports",
+      "sourceIds": [
+        "P-D10-LIVER-2024",
+        "P-D10-LIVER-2026"
+      ],
+      "grade": "not_established",
+      "rationale": "Case reports cannot define a complete human contraindication profile.",
+      "locators": [
+        "2024 liver report, Case report and Discussion; 2026 liver report, Discussion"
+      ],
+      "readingDepth": {
+        "P-D10-LIVER-2024": "targeted_full_text_inspection",
+        "P-D10-LIVER-2026": "targeted_full_text_inspection"
+      },
+      "sourceBindings": [
+        {
+          "sourceId": "P-D10-LIVER-2024",
+          "sourceObjectSha256": "5e4ef2592443e2cff64cb0e5d6124b3cedb2e08fb1e777d1f62db8ba7774bc9e",
+          "fileSha256": "e52e167a802afe26bfd924b87a816e9f6b70e779084d4cabe917a7d5590f6539",
+          "path": "/Users/kmfp/Documents/ChatGPT/One Match Rule/work/ingest/SL-F01-F02-20261011/receipt/input/return/F02/PRIMARY/A-F02-R1262__original_report__severe-drug-induced-liver-injury-due-to-self-admin.pdf"
+        },
+        {
+          "sourceId": "P-D10-LIVER-2026",
+          "sourceObjectSha256": "c4f805c83d087b77993d845ffcb029b6198bc19928ddecb496062a811b4b7edf",
+          "fileSha256": "b02c242420a0ca8a8a4c25b2f74d426bf97c73222fe56b3db4425d49d15a8064",
+          "path": "/Users/kmfp/Documents/ChatGPT/One Match Rule/work/ingest/SL-F01-F02-20261011/receipt/input/return/F02/PRIMARY/A-F02-R1232__original_report__differentiating-fenbendazole-induced-liver-injury.pdf"
+        }
+      ],
+      "domains": [
+        {
+          "domain": "Study methods",
+          "judgment": "Case reports rather than systematic safety testing.",
+          "sourceIds": [
+            "P-D10-LIVER-2024",
+            "P-D10-LIVER-2026"
+          ]
+        },
+        {
+          "domain": "Directness",
+          "judgment": "Direct human injury evidence, indirect for general prescribing rules.",
+          "sourceIds": [
+            "P-D10-LIVER-2024",
+            "P-D10-LIVER-2026"
+          ]
+        },
+        {
+          "domain": "Precision",
+          "judgment": "No population safety denominator.",
+          "sourceIds": [
+            "P-D10-LIVER-2024",
+            "P-D10-LIVER-2026"
+          ]
+        },
+        {
+          "domain": "Consistency",
+          "judgment": "Two reports support caution but do not define all susceptible groups.",
+          "sourceIds": [
+            "P-D10-LIVER-2024",
+            "P-D10-LIVER-2026"
+          ]
+        },
+        {
+          "domain": "Source integrity",
+          "judgment": "Canonical sources and verified PDFs retained; review pending.",
+          "sourceIds": [
+            "P-D10-LIVER-2024",
+            "P-D10-LIVER-2026"
+          ]
+        }
+      ],
+      "assessedAt": "2026-10-27",
+      "reviewState": "pending_independent_and_human_review"
+    },
+    {
+      "claimId": "FENB-HEDGEHOG",
+      "statement": "Hedgehog or NPC1 cholesterol-transport mechanism: Not established for fenbendazole in the evidence reviewed here. The cited fenbendazole experiments test microtubules, cell stress, p53 and metabolic effects; they do not demonstrate a Hedgehog or NPC1-mediated anticancer effect. Findings for a different drug cannot supply that missing evidence.",
+      "scope": "Limits of mechanism coverage in the selected fenbendazole experiments",
+      "sourceIds": [
+        "MECH-D10-MICROTUBULE-2018",
+        "P-D10-PROTEASOME-2012",
+        "P-D10-H4IIE-2022"
+      ],
+      "grade": "not_established",
+      "rationale": "The selected studies do not test the claimed Hedgehog/NPC1 cancer mechanism; this is a coverage gap, not proof that such a mechanism is impossible.",
+      "locators": [
+        "Dogra 2012/2018, Results and Discussion; Park H4IIE 2022, Abstract and Results"
+      ],
+      "readingDepth": {
+        "MECH-D10-MICROTUBULE-2018": "targeted_full_text_inspection",
+        "P-D10-PROTEASOME-2012": "targeted_full_text_inspection",
+        "P-D10-H4IIE-2022": "targeted_full_text_inspection"
+      },
+      "sourceBindings": [
+        {
+          "sourceId": "MECH-D10-MICROTUBULE-2018",
+          "sourceObjectSha256": "e566b8fb9bc88d1e5a53b3eb6a22770224dc5aebfa7fcd0514d6b22e03de824f",
+          "fileSha256": "17d6d20541f48de1be0abc33c19fc0e592eb4530b99951b983898b3bcb3cf0ca",
+          "path": "/Users/kmfp/papers-for-claude/remaprx-fill/fenbendazole-cancer/pdfs/30093705-dogran-2018.pdf"
+        },
+        {
+          "sourceId": "P-D10-PROTEASOME-2012",
+          "sourceObjectSha256": "0e016f3b60ba336147c8e4c2efa69a8ff5c40603ff8b436009e1227053feb027",
+          "fileSha256": "b73aa40afe91eaa789031fb400af30b954810efea5b6ea0f9137a655fad1c67f",
+          "path": "/Users/kmfp/papers-for-claude/remaprx-fill/fenbendazole-cancer/pdfs/22745125-dogran-2012.pdf"
+        },
+        {
+          "sourceId": "P-D10-H4IIE-2022",
+          "sourceObjectSha256": "ed663babff1ab269e848bbcee44705700c551f1be468c83c3fc954b4d4578cc5",
+          "fileSha256": "c1bef4b0ee5b5c39cee57257d2bb0b3e87541b920d967695294bbc2919f8a153",
+          "path": "/Users/kmfp/papers-for-claude/remaprx-fill/fenbendazole-cancer/pdfs/35110505-parkd-2022.pdf"
+        }
+      ],
+      "domains": [
+        {
+          "domain": "Study methods",
+          "judgment": "Mechanistic assays address other pathways.",
+          "sourceIds": [
+            "MECH-D10-MICROTUBULE-2018",
+            "P-D10-PROTEASOME-2012",
+            "P-D10-H4IIE-2022"
+          ]
+        },
+        {
+          "domain": "Directness",
+          "judgment": "No direct fenbendazole Hedgehog/NPC1 cancer experiment among these sources.",
+          "sourceIds": [
+            "MECH-D10-MICROTUBULE-2018",
+            "P-D10-PROTEASOME-2012",
+            "P-D10-H4IIE-2022"
+          ]
+        },
+        {
+          "domain": "Precision",
+          "judgment": "No effect estimate for the absent pathway question.",
+          "sourceIds": [
+            "MECH-D10-MICROTUBULE-2018",
+            "P-D10-PROTEASOME-2012",
+            "P-D10-H4IIE-2022"
+          ]
+        },
+        {
+          "domain": "Consistency",
+          "judgment": "No supporting experiment identified in the reviewed packet; no class transfer.",
+          "sourceIds": [
+            "MECH-D10-MICROTUBULE-2018",
+            "P-D10-PROTEASOME-2012",
+            "P-D10-H4IIE-2022"
+          ]
+        },
+        {
+          "domain": "Source integrity",
+          "judgment": "Original identities and selected text verified; absence statement bounded to reviewed evidence.",
+          "sourceIds": [
+            "MECH-D10-MICROTUBULE-2018",
+            "P-D10-PROTEASOME-2012",
+            "P-D10-H4IIE-2022"
+          ]
+        }
+      ],
+      "assessedAt": "2026-10-27",
+      "reviewState": "pending_independent_and_human_review"
+    }
+  ]
+}
