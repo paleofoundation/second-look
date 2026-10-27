@@ -1,0 +1,7 @@
+# CAL19 bounded source checkpoint
+
+Gamez2022 PMID34890968/DOI10.1016/j.tranon.2021.101301. Prospective planning/GP before all10textpages; materialFigs1-4physical3/5/7/8visual. ActiveV2 adds exact physicalp4 locator to second microCT specification; V1 all8dependencies/manifest preserved history/v1 and no V1 PASS transferred. Results/claims/literalconflicts unchanged. Exactrootreceipt binds V2/all8dependencies, four result/claim source-fidelity checks. ACCEPTANCE-UPDATE supersedes only historical pending bounded-audit state.
+
+Metformin pretreatment has mixed cell/model findings: increased2T3-mediated adhesion, reduceddivision proxies, OPNsiRNA partialinvitro support, increased mouseburden/lesions and compartment/tumor-specific OPN. Nondiabetic mice,2.5mg/mlwater4weeks stopped before inoculation, not concurrentMMtherapy or human clinical harm. No actualmg/kg/day/PK/durable dormancy/soleinvivoOPNmediation. Preserve inoculum1.5million/1million,25day/approx4week,IHCtumorcontext,228uA/mA and9.94/9um differences. Paraprotein stars versus nontumor only; no new between-tumor P. No pooling animals across panels or CAL17/18 patients. Supplement S1-S12 unavailable, not read.
+
+Nineteen regression guards pass, including microCT exactp4. This is not complete67field independent appraisal; scientific/human/newgrade/releaseapproval remains zero. C21 privateunapplied mapping; old corpus/guides unchanged. Continue serial within24 and broader ingest with prospective plans/exact audits; no20/30scale approval.
