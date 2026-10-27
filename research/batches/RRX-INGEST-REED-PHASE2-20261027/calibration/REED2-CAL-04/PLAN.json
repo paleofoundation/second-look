@@ -1,0 +1,24 @@
+{
+  "id": "REED2-CAL-04-v1",
+  "at": "2026-10-27T12:05:16.160570+00:00",
+  "phase2ReadinessSha256": "8cd08ca29809a63184f53ab39a6f1dfda4b1a6ecae4b1cce39f9152de6d56833",
+  "source": {
+    "pmid": "34582035",
+    "doi": "10.1002/14651858.cd014739",
+    "title": "Antithrombotic therapy for ambulatory patients with multiple myeloma receiving immunomodulatory agents.",
+    "reportId": "REED-e003b20e25d62e639947",
+    "ref": "$REMAPRX_REED_ROOT/aspirin-myeloma/pdfs/34582035-kahale-2021.pdf",
+    "sha256": "d47b12f458ed53cdf104d8c5119013558b0ffdc60a82f007ed5a81febdaade23",
+    "physicalPages": 54
+  },
+  "baselineRow": "baseline-286:006",
+  "indexRef": "$REMAPRX_REED_ROOT/aspirin-myeloma/index.csv",
+  "indexSha256": "5c2a39e2ff03f606086b9a4b05b40b648d58ad1515605a00f533973b3b317a2d",
+  "scope": "Read all54 physical pages of exact secondary antithrombotic review for ambulatory multiple myeloma receiving immunomodulatory agents. Verify search cutoff, trials/reports/unique participants, included treatment regimens/prophylaxis route/dose/time and exclusions. Extract bounded aspirin comparator-specific outcomes and mortality, symptomatic/asymptomatic VTE, DVT/PE, major/minor/clinically-relevant bleeding/adverse events if reported, with event Ns, comparison direction, uncertainty and source-reported certainty. Other anticoagulant comparisons remain explicit context, not independent aspirin efficacy. No anticancer or established-VTE treatment inference.",
+  "sourcePolicy": "Closed exact delivered Reed PDF/index; no source acquisition or external repair. Underlying trial reports and linked supplements/protocols/registries/corrections remain not_checked unless separately planned/read. All54 pages and consequential tables/forests visually checked before candidate.",
+  "identity": "Distinct secondary report, reconcile constituent study families against CAL03, existing Larocca report, shared control groups and reports. No new independently verified original trial or participant counts from review citations. Preserve source version/missingness and prior states.",
+  "schema": "SCHEMA.json and pinned Q01-Q15/67typedfields. Explicit physical/printed/native locators for each finding and qualification.",
+  "downstream": "Private unapplied G-DRUG-D23 aspirin/G-CONDITION-C21 myeloma VTE prevention under specific regimens. Source certainty attributed, no editorial/new benefit grade, clinical recommendation or public/canonical change.",
+  "verification": "Prospective hashes, own all-page read, consequential visuals, meaningful source-specific rejection guards, exact independent root source-fidelity audit with fresh dependencies. Fullfield/science/human/release0.",
+  "ownership": "Same lane1 runner, own phase2 packet only, PR8 and priorphase2 checkpoints immutable; no subagent/outbound/merge/deploy/publish."
+}
