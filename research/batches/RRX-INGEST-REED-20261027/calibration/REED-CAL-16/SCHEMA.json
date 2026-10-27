@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "REED-CAL-16-maintenance-MM-v1",
+  "required": [
+    "schemaVersion",
+    "paper",
+    "source",
+    "inspection",
+    "study",
+    "arms",
+    "results",
+    "claims",
+    "reviewInputs",
+    "limitations",
+    "scientificAcceptance",
+    "humanApproval",
+    "released"
+  ],
+  "controls": [
+    "Maintenanceeligiblepopulationnotallinductionpatients",
+    "Exactmaintenancebackbone/controlnotassumedmonotherapy",
+    "PFSnotOSoroverallcure",
+    "Inductionandmaintenancerandomization/timeoriginsseparate",
+    "Randomized/treated/evaluableNsandcensoringretained",
+    "NullOSnotsurvivalequivalence",
+    "Safety/withdrawalandqualityoflife/endpointsqualified"
+  ],
+  "reviewInventory": "rules/one-match-rule/references/research-reviews/review-questions-and-inputs.json",
+  "fixedGates": {
+    "scientificAcceptance": false,
+    "humanApproval": false,
+    "released": false,
+    "acceptedSupport": false,
+    "grade": null
+  }
+}
