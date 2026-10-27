@@ -1,0 +1,870 @@
+{
+  "schemaVersion": "REED-CAL-13-bone-marker-clinical-v1",
+  "paper": {
+    "id": "REED-CAL-13-P1",
+    "intakeReportId": "REED-2eb51f2afa68722b26d7",
+    "pmid": "18668701",
+    "doi": "10.1002/hon.869",
+    "title": "A phase II clinical trial does not show that high dose simvastatin has beneficial effect on markers of bone turnover in multiple myeloma.",
+    "sourceType": "primary_single_arm_phaseII_marker_study"
+  },
+  "source": {
+    "id": "REED-CAL-13-S1",
+    "pmid": "18668701",
+    "doi": "10.1002/hon.869",
+    "title": "A phase II clinical trial does not show that high dose simvastatin has beneficial effect on markers of bone turnover in multiple myeloma.",
+    "ref": "$REMAPRX_REED_ROOT/simvastatin-myeloma/pdfs/18668701-sondergaard-2009.pdf",
+    "sha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+    "intakeReportId": "REED-2eb51f2afa68722b26d7",
+    "physicalPages": 6
+  },
+  "inspection": {
+    "at": "2026-10-27T10:04:20.594265+00:00",
+    "activeReadiness": "READINESS.json",
+    "textualPagesRead": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "visualInspectedPhysicalPages": [
+      3,
+      4
+    ],
+    "fullScientificReviewComplete": false
+  },
+  "study": {
+    "design": "phase_II_single_arm_serial_within_patient",
+    "randomized": false,
+    "enrolledN": 6,
+    "fullDoseTwoCycleCompleters": [
+      2,
+      4
+    ],
+    "halfDoseSecondCycleCompleters": [
+      5,
+      6
+    ],
+    "earlyPneumoniaDeaths": [
+      1,
+      3
+    ],
+    "dose": {
+      "value": 15,
+      "unit": "mg/kg/day",
+      "route": "oral",
+      "dailyDividedDoses": 2,
+      "daysOnPerCycle": 7,
+      "restDays": 21,
+      "plannedCycles": 2,
+      "plannedTotalWeeksIncludingFollowup": 12
+    },
+    "actualSecondCycleDoseHalvedFor": [
+      5,
+      6
+    ],
+    "recruitment": "March2006-March2007, VejleHospital",
+    "priorTreatmentCounts": [
+      6,
+      2,
+      3,
+      5,
+      7,
+      4
+    ],
+    "control": "Eachpatientownbaseline;no concurrentcontrol",
+    "currentZoledronicAcidPatients": [
+      2,
+      5
+    ],
+    "bortezomibDuringProtocolPatient": 1,
+    "protocolIdentifiersAsReported": [
+      "VF2005-0170",
+      "2005-004933-16",
+      "2005/144"
+    ],
+    "registryCurrentlyVerified": false,
+    "boneMarkerChangeIsFractureOutcome": false,
+    "pureSimvastatinMonotherapy": false,
+    "currentClinicalSafetyRecommendation": false,
+    "patientPKMeasured": false
+  },
+  "results": [
+    {
+      "id": "REED-CAL-13-R01",
+      "outcome": "Transient bone-resorption marker patterns and no reported durable day57 marker change",
+      "estimate": {
+        "kind": "qualitative_serial_biomarker_observation",
+        "unit": "percent_of_own_day1",
+        "TRACP": "increase during first and second dosing weeks, then return toward pretreatment; authorsreported significant",
+        "NTX": "transient pattern, authorsreported significance onlyfirstcycle",
+        "osteocalcin": "no significantvariationreported",
+        "day1VsDay57": "No significantdifferencesreportedfor8markers;5markersdatanotshown",
+        "TRACPFirstCycleDisplayedPatients": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "TRACPSecondCycleDisplayedPatients": [
+          2,
+          4,
+          5,
+          6
+        ],
+        "NTXOsteocalcinDisplayedPatients": [
+          2,
+          4,
+          5,
+          6
+        ],
+        "numericEffect": null,
+        "CI": null,
+        "exactP": null,
+        "figurePThreshold": 0.05,
+        "clinicalFracturesMeasured": false,
+        "causalHarmEstablished": false,
+        "therapeuticEquivalenceEstablished": false
+      },
+      "analysis": "Kruskal-Wallis andsubsequentDunnmultiplecomparisontestsasreported; no independentlyrecomputedpairedanalysis",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+          "physicalPage": 3,
+          "printedPage": "19",
+          "nativeSection": "Statisticalanalysis"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+          "physicalPage": 4,
+          "printedPage": "20",
+          "nativeSection": "Results/Figure2"
+        }
+      ],
+      "time": "Day1to57,7daypulsesstartingday1/29;2earlydeathsand2reducedsecond-cycle exposures retained.",
+      "comparator": "Withinpatientbaselineonly;noconcurrentcontrol",
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED-CAL-13-R02",
+      "outcome": "Monoclonal-protein/free-light-chain disease activity without demonstrated simvastatin response",
+      "estimate": {
+        "kind": "qualitative_disease_activity_observation",
+        "fourSurvivingCompleters": {
+          "noChangeReported": 2,
+          "progressionSignsReported": 2
+        },
+        "sixPatientResponseRate": null,
+        "patient1TransientFall": "BortezomibcointerventionandIgtypeconflict,notisolatedsimvastatinresponse",
+        "histology": "No difference reported before/after, data notshown andbiopsyN notstated",
+        "subsequentBortezomibPRPatientsContextOnly": [
+          2,
+          5
+        ],
+        "currentSimvastatinPRFromLaterTherapy": false,
+        "cohortPFS": null,
+        "cohortOS": null,
+        "CI": null
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+          "physicalPage": 3,
+          "printedPage": "19",
+          "nativeSection": "Results/Figure1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+          "physicalPage": 4,
+          "printedPage": "20",
+          "nativeSection": "Results/Figure2/Discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+          "physicalPage": 5,
+          "printedPage": "21",
+          "nativeSection": "Discussion/Acknowledgments"
+        }
+      ],
+      "time": "Duringprotocolvsseparatelatertherapy;notzeroof6confirmedORR.",
+      "comparator": "Withinpatientbaselineonly;noconcurrentcontrol",
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED-CAL-13-R03",
+      "outcome": "Toxicities, dose reductions and early pneumonia deaths",
+      "estimate": {
+        "kind": "reported_clinical_counts",
+        "enrolledN": 6,
+        "GIPatients": 6,
+        "GIGrade": [
+          1,
+          2
+        ],
+        "nauseaOrVomitingPatients": 3,
+        "constipationPatients": 2,
+        "abdominalPainPatients": 1,
+        "diarrheaIncidents": 1,
+        "muscularSymptomsPatients": 5,
+        "muscularGrade": [
+          1,
+          2
+        ],
+        "CKIncreaseAssociatedWithMuscularSymptomsReported": false,
+        "DVTIncidents": 1,
+        "AchillesTendonitisIncidents": 1,
+        "fatigueDepressionPatients": 1,
+        "grade2NeutropeniaPatients": 1,
+        "secondCycleHalfDosePatients": 2,
+        "earlyPneumoniaDeaths": 2,
+        "precedingNeutropeniaForDeathsReported": false,
+        "soleSimvastatinCauseOfDeathsEstablished": false,
+        "uniqueTotalAEPatientsFromSummingCategories": null,
+        "populationFatalityRisk": null
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+          "physicalPage": 3,
+          "printedPage": "19",
+          "nativeSection": "Table1/Statisticalanalyses/Results/Figure1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+          "physicalPage": 4,
+          "printedPage": "20",
+          "nativeSection": "Discussion"
+        }
+      ],
+      "time": "During2plannedcycles/4weekslateAEfollowup; deathlabelsday15/after3weeksheld.",
+      "comparator": "Withinpatientbaselineonly;noconcurrentcontrol",
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    }
+  ],
+  "claims": [
+    {
+      "id": "REED-CAL-13-C01",
+      "resultIds": [
+        "REED-CAL-13-R01"
+      ],
+      "statement": "The small uncontrolledstudyreportedtransientTRACPincreasesinbothdosingweeksandNTXsignificanceonlyfirstcycle,withoutreportedday1-day57markerimprovement. Markersare notfracturesandpossibleosteoclaststimulationdoesnotestablishcausalclinicalharm or equivalence.",
+      "relation": "biomarker_only_null_and_possible_adverse_pattern",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED-CAL-13-C02",
+      "resultIds": [
+        "REED-CAL-13-R02"
+      ],
+      "statement": "FourprotocolcompletersshowedtwoNC/twoprogressionpatterns;patient1fallhasbortezomibcointervention/Igtypeconflict. LaterbortezomibPRsarenotcurrentsimvastatinresponses; no invented0/6ORR/PFS/OS.",
+      "relation": "disease_activity_qualified_observation",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED-CAL-13-C03",
+      "resultIds": [
+        "REED-CAL-13-R03"
+      ],
+      "statement": "Allsixhadgrade1-2GIsymptoms,tworequiredsecond-cyclehalf-dose,fivehadmuscularsymptomsandtwodiedearlyofpneumonia. Categoriesoverlap,earlydeathcausalityisnotisolatedandcountsinthisselectedcohortarenotpopulationrisk.",
+      "relation": "clinical_toxicity_and_flow_observation",
+      "acceptedSupport": false
+    }
+  ],
+  "reviewInputs": [
+    {
+      "id": "Q01",
+      "answer": "PhaseIIhigh-dosesimvastatinbonemarker/diseaseactivitystudy,notfracturetrial.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+          "physicalPage": 1,
+          "printedPage": "17",
+          "nativeSection": "Title/Abstract/Introduction"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+          "physicalPage": 2,
+          "printedPage": "18",
+          "nativeSection": "Patients/Treatment/Response/Assays"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q02",
+      "answer": "Sixenrolled;2full-dose/2reducedsecondcycle/2earlypneumoniadeaths,not6completepairedpatients.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+          "physicalPage": 2,
+          "printedPage": "18",
+          "nativeSection": "Patients/Treatment/Response/Assays"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+          "physicalPage": 3,
+          "printedPage": "19",
+          "nativeSection": "Table1/Statisticalanalyses/Results/Figure1"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q03",
+      "answer": "15mg/kg/daypulse7on21offtwocycles,cointerventions/dosehalvingretained.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+          "physicalPage": 1,
+          "printedPage": "17",
+          "nativeSection": "Title/Abstract/Introduction"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+          "physicalPage": 2,
+          "printedPage": "18",
+          "nativeSection": "Patients/Treatment/Response/Assays"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+          "physicalPage": 3,
+          "printedPage": "19",
+          "nativeSection": "Table1/Statisticalanalyses/Results/Figure1"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q04",
+      "answer": "Eachpatientowncontrol,norandomizedconcurrentcontrol;2006-07Danishcohort.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+          "physicalPage": 2,
+          "printedPage": "18",
+          "nativeSection": "Patients/Treatment/Response/Assays"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+          "physicalPage": 3,
+          "printedPage": "19",
+          "nativeSection": "Table1/Statisticalanalyses/Results/Figure1"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q05",
+      "answer": "Eightbiochemicalmarkers/MMprotein,notfractures/survival;serialday1-57.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+          "physicalPage": 1,
+          "printedPage": "17",
+          "nativeSection": "Title/Abstract/Introduction"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+          "physicalPage": 2,
+          "printedPage": "18",
+          "nativeSection": "Patients/Treatment/Response/Assays"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+          "physicalPage": 4,
+          "printedPage": "20",
+          "nativeSection": "Results/Figure2/Discussion"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q06",
+      "answer": "TRACPtransientbothpulses/NTXfirstonlysignificance;noendpointmarkerimprovementreported,curvesnotdigitized/missingNqualified.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+          "physicalPage": 3,
+          "printedPage": "19",
+          "nativeSection": "Table1/Statisticalanalyses/Results/Figure1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+          "physicalPage": 4,
+          "printedPage": "20",
+          "nativeSection": "Results/Figure2/Discussion"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q07",
+      "answer": "Dose/flowreported,missingsamplematrixunknown;cholesterolproxydoesnotproveperfectadherence.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+          "physicalPage": 3,
+          "printedPage": "19",
+          "nativeSection": "Table1/Statisticalanalyses/Results/Figure1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+          "physicalPage": 4,
+          "printedPage": "20",
+          "nativeSection": "Results/Figure2/Discussion"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q08",
+      "answer": "GI6,muscular5,2dosehalved/2earlypneumoniadeaths;attribution/risknotisolated.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+          "physicalPage": 2,
+          "printedPage": "18",
+          "nativeSection": "Patients/Treatment/Response/Assays"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+          "physicalPage": 3,
+          "printedPage": "19",
+          "nativeSection": "Table1/Statisticalanalyses/Results/Figure1"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q09",
+      "answer": "SmallN/cointerventions/missingness/manytests;sourceinconsistenciesheld.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+          "physicalPage": 3,
+          "printedPage": "19",
+          "nativeSection": "Table1/Statisticalanalyses/Results/Figure1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+          "physicalPage": 4,
+          "printedPage": "20",
+          "nativeSection": "Results/Figure2/Discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+          "physicalPage": 5,
+          "printedPage": "21",
+          "nativeSection": "Discussion/Acknowledgments"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q10",
+      "answer": "Heavilypretreatedpulse-dosecontexts,notclinicalbonebenefit/harmormaintenancestatinrecommendation.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+          "physicalPage": 2,
+          "printedPage": "18",
+          "nativeSection": "Patients/Treatment/Response/Assays"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+          "physicalPage": 4,
+          "printedPage": "20",
+          "nativeSection": "Results/Figure2/Discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+          "physicalPage": 5,
+          "printedPage": "21",
+          "nativeSection": "Discussion/Acknowledgments"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q11",
+      "answer": "SeparatefromCAL12andcitedearlierphaseI/lovastatinPK,nopooledpatients.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+          "physicalPage": 3,
+          "printedPage": "19",
+          "nativeSection": "Table1/Statisticalanalyses/Results/Figure1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+          "physicalPage": 5,
+          "printedPage": "21",
+          "nativeSection": "Discussion/Acknowledgments"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+          "physicalPage": 6,
+          "printedPage": "22",
+          "nativeSection": "References"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q12",
+      "answer": "Academic/assaycollaborators,fundingasreported,manufacturerlistingnotfreesupply/sponsorship.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+          "physicalPage": 1,
+          "printedPage": "17",
+          "nativeSection": "Title/Abstract/Introduction"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+          "physicalPage": 2,
+          "printedPage": "18",
+          "nativeSection": "Patients/Treatment/Response/Assays"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+          "physicalPage": 5,
+          "printedPage": "21",
+          "nativeSection": "Discussion/Acknowledgments"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q13",
+      "answer": "Exact6pages/readmaterialfigures,unshowndata/protocol/externalregistry/integrityincomplete.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+          "physicalPage": 1,
+          "printedPage": "17",
+          "nativeSection": "Title/Abstract/Introduction"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+          "physicalPage": 2,
+          "printedPage": "18",
+          "nativeSection": "Patients/Treatment/Response/Assays"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+          "physicalPage": 3,
+          "printedPage": "19",
+          "nativeSection": "Table1/Statisticalanalyses/Results/Figure1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+          "physicalPage": 4,
+          "printedPage": "20",
+          "nativeSection": "Results/Figure2/Discussion"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q14",
+      "answer": "Exact3result/claimIDsprivateC21proposal,unapplied.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+          "physicalPage": 5,
+          "printedPage": "21",
+          "nativeSection": "Discussion/Acknowledgments"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending",
+      "downstreamMapping": {
+        "paperId": "REED-CAL-13-P1",
+        "intakeReportId": "REED-2eb51f2afa68722b26d7",
+        "resultIds": [
+          "REED-CAL-13-R01",
+          "REED-CAL-13-R02",
+          "REED-CAL-13-R03"
+        ],
+        "claimIds": [
+          "REED-CAL-13-C01",
+          "REED-CAL-13-C02",
+          "REED-CAL-13-C03"
+        ],
+        "existingGuideId": "G-CONDITION-C21",
+        "purpose": "Private biomarker-null/diseaseactivity/safetyscopeinheavilypretreatedMM;notclinicalfracturebenefit/harm orsimvastatinprescription.",
+        "publicationState": "private_draft",
+        "canonicalChanges": 0
+      }
+    },
+    {
+      "id": "Q15",
+      "answer": "Null/possibleadversebiomarkerpatternandtoxicitymeritfurthercontrolledreview,notcausalclinicalharm.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+          "physicalPage": 4,
+          "printedPage": "20",
+          "nativeSection": "Results/Figure2/Discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+          "physicalPage": 5,
+          "printedPage": "21",
+          "nativeSection": "Discussion/Acknowledgments"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    }
+  ],
+  "sourceQualifications": [
+    {
+      "id": "C13-DEATH-TIME",
+      "status": "unresolved_literal",
+      "sourceA": {
+        "locator": {
+          "kind": "pdf",
+          "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+          "physicalPage": 3,
+          "printedPage": "19",
+          "nativeSection": "Table1footnote"
+        },
+        "text": "Patients1/3diedafter3weeks"
+      },
+      "sourceB": {
+        "locator": {
+          "kind": "pdf",
+          "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+          "physicalPage": 3,
+          "printedPage": "19",
+          "nativeSection": "Figure1caption"
+        },
+        "text": "Both diedday15;bodythirdweek"
+      },
+      "action": "Retain earlypneumoniadeaths;no correctedexactdayfromunresolvedlabels."
+    },
+    {
+      "id": "C13-IG-TYPE",
+      "status": "unresolved",
+      "sourceA": {
+        "locator": {
+          "kind": "pdf",
+          "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+          "physicalPage": 4,
+          "printedPage": "20",
+          "nativeSection": "Results/Figure2/Discussion"
+        },
+        "text": "Patient1reductioncalledIgA"
+      },
+      "sourceB": {
+        "locator": {
+          "kind": "pdf",
+          "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+          "physicalPage": 3,
+          "printedPage": "19",
+          "nativeSection": "Table1/Figure1caption"
+        },
+        "text": "Patient1IgG;IgAPt4/5"
+      },
+      "action": "No silentIgtypecorrection;patient1fallconfoundedbyconcurrentbortezomib,notasimvastatinresponse."
+    },
+    {
+      "id": "C13-CHOLESTEROL",
+      "status": "unresolved_literal_percent",
+      "locator": {
+        "kind": "pdf",
+        "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+        "physicalPage": 4,
+        "printedPage": "20",
+        "nativeSection": "Results/Figure2/Discussion"
+      },
+      "description": "Textreducedto48.5%withmeans3.57to1.84mM;thosemeansimplyabout51.5%remaining,not48.5%.",
+      "action": "Do notrepairpercentorrelabel48.5asanacceptedclinicalresult;cholesterolqualitativecompliancecontextonly."
+    },
+    {
+      "id": "C13-PRIOR-TREATMENT",
+      "status": "unresolved_count_wording",
+      "sourceA": {
+        "locator": {
+          "kind": "pdf",
+          "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+          "physicalPage": 3,
+          "printedPage": "19",
+          "nativeSection": "Results"
+        },
+        "text": "Fourpatientsmorethanfourtreatments"
+      },
+      "sourceB": {
+        "locator": {
+          "kind": "pdf",
+          "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+          "physicalPage": 3,
+          "printedPage": "19",
+          "nativeSection": "Table1"
+        },
+        "text": "Listedpriorcounts6,2,3,5,7,4;onlythree>4"
+      },
+      "action": "Retainactualtablecountsandheavilypretreatedscope,nofalsefour>4count."
+    },
+    {
+      "id": "C13-FLOW-AND-MARKERS",
+      "status": "qualified_missingness",
+      "locators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+          "physicalPage": 3,
+          "printedPage": "19",
+          "nativeSection": "Table1/Statisticalanalyses/Results/Figure1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+          "physicalPage": 4,
+          "printedPage": "20",
+          "nativeSection": "Results/Figure2/Discussion"
+        }
+      ],
+      "description": "Sixenrolled;2full-dosecompleters,2secondcyclehalf-dose,2earlydeaths. Figure2TRACPfirst6/second4curves;NTX/osteocalcin4;other5markersnotshown.",
+      "action": "No sixcompletepaired-day57samples,figure-digitizedestimates/CI,orclinicalfractureeffect."
+    },
+    {
+      "id": "C13-COINTERVENTIONS",
+      "status": "not_isolated_effect",
+      "locators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+          "physicalPage": 2,
+          "printedPage": "18",
+          "nativeSection": "Patients/Treatment/Response/Assays"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+          "physicalPage": 3,
+          "printedPage": "19",
+          "nativeSection": "Table1/Statisticalanalyses/Results/Figure1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+          "physicalPage": 4,
+          "printedPage": "20",
+          "nativeSection": "Results/Figure2/Discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+          "physicalPage": 5,
+          "printedPage": "21",
+          "nativeSection": "Discussion/Acknowledgments"
+        }
+      ],
+      "description": "Allpriorbisphosphonates;Pt2/5ongoingzoledronicacid4mgdays1/29;Pt1bortezomibdays6-13. Subsequentbortezomibresponsesnotcurrentregimenbenefit.",
+      "action": "No puremonotherapyorstatincausedfracture/death,orassignedlaterresponse."
+    }
+  ],
+  "limitations": [
+    "SmalluncontrolledselectedN6",
+    "Twoearlydeaths,2secondcyclehalfdoses,variablepairedmarkerN",
+    "Biomarkersnotclinicalfracturesorprovenharm",
+    "Priorbisphosphonates/ongoingzoledronicacid/bortezomibcointervention",
+    "Manymarker/timecomparisons,exacteffects/CIunreported",
+    "Fiveothermarkers/biopsydatanotshown",
+    "Pt1Igtype/deathlabel/cholesterolpercent/priorlinecountinconsistenciesheld",
+    "No0/6ORRfromincompleteflow,noassignedlaterPRs",
+    "PriorlovastatinPKnotcurrentsimvastatinPK",
+    "Protocol/currentregistry/integrity/overlapnotcomplete"
+  ],
+  "scientificAcceptance": false,
+  "humanApproval": false,
+  "released": false
+}

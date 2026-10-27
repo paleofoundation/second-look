@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "REED-CAL-15-OPTIMUM-v1",
+  "required": [
+    "schemaVersion",
+    "paper",
+    "source",
+    "inspection",
+    "study",
+    "arms",
+    "results",
+    "claims",
+    "reviewInputs",
+    "limitations",
+    "scientificAcceptance",
+    "humanApproval",
+    "released"
+  ],
+  "controls": [
+    "ExactsingleagentdosecomparisonsnotCAL14combination",
+    "Randomized/treated/evaluableNsnotinterchanged",
+    "Primaryvssecondary/subgroupandmultiplicitypreserved",
+    "TTP/PFS/OS/response/time/censoringseparate",
+    "Nonsignificance notequivalence",
+    "Dosepoolingdoesnotcreatenewtrial/people",
+    "Safetygrade/attribution/withdrawalretained"
+  ],
+  "reviewInventory": "rules/one-match-rule/references/research-reviews/review-questions-and-inputs.json",
+  "fixedGates": {
+    "scientificAcceptance": false,
+    "humanApproval": false,
+    "released": false,
+    "acceptedSupport": false,
+    "grade": null
+  }
+}

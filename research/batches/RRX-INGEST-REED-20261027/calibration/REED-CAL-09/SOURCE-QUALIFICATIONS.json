@@ -1,0 +1,98 @@
+[
+  {
+    "id": "C09-CREATININE-UNIT",
+    "status": "held_unresolved",
+    "locator": {
+      "kind": "pdf",
+      "sourceSha256": "908d37312446bad25b810f5905011c9c185a258dfc8ac88282bb55c6a31f5015",
+      "physicalPage": 3,
+      "printedPage": "Author manuscript Page 3",
+      "nativeSection": "Case narratives and PK"
+    },
+    "literal": "Patient3creatinine1.4mmol/L",
+    "action": "Retain value and literalunit, no conversion to mg/dL or normalizing typo from memory; no adjudicated normalized creatinine."
+  },
+  {
+    "id": "C09-LEADIN",
+    "status": "qualified",
+    "locators": [
+      {
+        "kind": "pdf",
+        "sourceSha256": "908d37312446bad25b810f5905011c9c185a258dfc8ac88282bb55c6a31f5015",
+        "physicalPage": 3,
+        "printedPage": "Author manuscript Page 3",
+        "nativeSection": "Case narratives and PK"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "908d37312446bad25b810f5905011c9c185a258dfc8ac88282bb55c6a31f5015",
+        "physicalPage": 4,
+        "printedPage": "Author manuscript Page 4",
+        "nativeSection": "Safety summary/Discussion"
+      }
+    ],
+    "literal": "Individual metforminlead-ins2/3/2weeks; discussion generalizes allthree2weeks forGItoxicityresolution.",
+    "action": "Use actualcaselead-in values; do not silently standardize to2weeks. Different symptomresolution andexposure durations may differ."
+  },
+  {
+    "id": "C09-PK",
+    "status": "limited_unpaired_context",
+    "locator": {
+      "kind": "pdf",
+      "sourceSha256": "908d37312446bad25b810f5905011c9c185a258dfc8ac88282bb55c6a31f5015",
+      "physicalPage": 3,
+      "printedPage": "Author manuscript Page 3",
+      "nativeSection": "Case narratives and PK"
+    },
+    "literal": "Day1N3,Day15N2;Day15Cmax1027ng/mL printedrange1043,1011.",
+    "action": "Preserve raw reversedrange and differentN; no proof of no drug interaction or pairedcompletePKcomparison."
+  },
+  {
+    "id": "C09-SAE-ATTRIBUTION",
+    "status": "not_fully_reconciled",
+    "locator": {
+      "kind": "pdf",
+      "sourceSha256": "908d37312446bad25b810f5905011c9c185a258dfc8ac88282bb55c6a31f5015",
+      "physicalPage": 4,
+      "printedPage": "Author manuscript Page 4",
+      "nativeSection": "Safety summary/Discussion"
+    },
+    "literal": "FiveSAEs at leastpossiblyrelated enumerated; separate grade3hyponatremia considered unrelated/pseudo.",
+    "action": "Events are notfivepatients; do not force unique-total/attribution mapping beyond reported cases; noSAEslead-in doesnotmean noAEs."
+  },
+  {
+    "id": "C09-COMPOUND",
+    "status": "body_identity_controls",
+    "locator": {
+      "kind": "pdf",
+      "sourceSha256": "908d37312446bad25b810f5905011c9c185a258dfc8ac88282bb55c6a31f5015",
+      "physicalPage": 1,
+      "printedPage": "Author manuscript Page 1",
+      "nativeSection": "Title/disclosures/keywords"
+    },
+    "literal": "Keywordsinclude nelfinavir but title/casenarratives/treatmentaremetformin+ritonavir.",
+    "action": "Trialagentritonavir,notnelfinavir/CAL07; no classsubstitution orpooled12patients."
+  },
+  {
+    "id": "C09-SUBSEQUENT-RESPONSE",
+    "status": "qualified",
+    "locators": [
+      {
+        "kind": "pdf",
+        "sourceSha256": "908d37312446bad25b810f5905011c9c185a258dfc8ac88282bb55c6a31f5015",
+        "physicalPage": 3,
+        "printedPage": "Author manuscript Page 3",
+        "nativeSection": "Case narratives and PK"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "908d37312446bad25b810f5905011c9c185a258dfc8ac88282bb55c6a31f5015",
+        "physicalPage": 12,
+        "printedPage": "Author manuscript Page 12",
+        "nativeSection": "Table1"
+      }
+    ],
+    "literal": "Narrative carfilzomibresponseslikely/unassessed versus tablepartialresponse labels;CARTCRlatertherapy.",
+    "action": "Keep laterresponses separate with narrativeconfirmationlimits; no PR/CR attributedtocurrentregimen."
+  }
+]

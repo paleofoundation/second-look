@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "reed2-cal14-GBM-sonosensitizer-NAM-v1",
+  "required": [
+    "schemaVersion",
+    "paper",
+    "source",
+    "inspection",
+    "study",
+    "populations",
+    "results",
+    "claims",
+    "reviewInputs",
+    "sourceQualifications",
+    "limitations",
+    "scientificAcceptance",
+    "humanApproval",
+    "released"
+  ],
+  "controls": [
+    "MLtraining/test/positiveunlabeledmetricsnotclinicalprobability",
+    "Screened/nominated/tested actualcompoundidentity",
+    "Exactcellmodel/3Dconstruct/control andreplicatehierarchy",
+    "Drug+USversusdrug-alone/US-alone,exactexposures",
+    "Viability/ROS/apoptosisnotclinicaltumorresponse",
+    "No provenmechanisticnecessity/selectivity/BBB/PK/safetyinference",
+    "All19pages/materialvisuals/67typedfields/hashes",
+    "Privatecandidateonly,nouniqueclinicalN/trial/grade"
+  ],
+  "gates": {
+    "scientificAcceptance": false,
+    "humanApproval": false,
+    "released": false,
+    "newGrades": 0
+  }
+}

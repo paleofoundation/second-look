@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "REED-CAL-19-preclinical-bone-v1",
+  "required": [
+    "schemaVersion",
+    "paper",
+    "source",
+    "inspection",
+    "study",
+    "experiments",
+    "results",
+    "claims",
+    "reviewInputs",
+    "limitations",
+    "scientificAcceptance",
+    "humanApproval",
+    "released"
+  ],
+  "controls": [
+    "Exactcell/animalmodel,sex/strain,Nunitandprotocolsnotclinicalcohort",
+    "Directdrugontumorcellsversuspretreatedmicroenvironmentdistinguished",
+    "Timing/exposure/washout/carryover/dose/routeandcomparatorpreserved",
+    "Null/oppositeandharmfulfindingsretainedwithoutclinicalharmtranslation",
+    "Graphnotdigitized;significanceonlynotinventedmagnitudes/CIs",
+    "Mechanisticassociationversusperturbationversusprovedmediatorseparate",
+    "No poolingwithCAL17/18MGUSobservationalpatients",
+    "EveryresultandclaimexactPDFpage/figure/nativeSection",
+    "Pinned15Q67typedentries;incompleteinputsremainunfinished"
+  ],
+  "reviewInventory": "rules/one-match-rule/references/research-reviews/review-questions-and-inputs.json",
+  "fixedGates": {
+    "scientificAcceptance": false,
+    "humanApproval": false,
+    "released": false,
+    "acceptedSupport": false,
+    "grade": null
+  }
+}

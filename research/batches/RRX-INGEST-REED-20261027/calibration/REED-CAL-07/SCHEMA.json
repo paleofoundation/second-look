@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "REED-CAL-07-phase1-v1",
+  "required": [
+    "schemaVersion",
+    "paper",
+    "source",
+    "inspection",
+    "study",
+    "cohorts",
+    "results",
+    "claims",
+    "reviewInputs",
+    "limitations",
+    "scientificAcceptance",
+    "humanApproval",
+    "released"
+  ],
+  "controls": [
+    "SmalluncontrolledphaseI notrandomizedefficacy",
+    "Separatedual/triplecohorttreatments and denominators",
+    "Firstcohortnotassumedmetforminmonotherapy",
+    "Doseprintconflict retainedliteral/unresolved",
+    "NoDLTisnotnoharms",
+    "Noresponsecounts convertedpopulationzeroefficacy",
+    "No causalattributiontometforminalone"
+  ],
+  "reviewInventory": "rules/one-match-rule/references/research-reviews/review-questions-and-inputs.json",
+  "fixedGates": {
+    "scientificAcceptance": false,
+    "humanApproval": false,
+    "released": false,
+    "acceptedSupport": false,
+    "grade": null
+  }
+}

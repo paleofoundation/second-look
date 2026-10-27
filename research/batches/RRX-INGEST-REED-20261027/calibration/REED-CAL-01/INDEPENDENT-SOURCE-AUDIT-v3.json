@@ -1,0 +1,46 @@
+{
+  "auditId": "CONDUCTOR-REED-CAL-01-20261027-v1",
+  "at_UTC": "2026-10-27T08:07:41.143613+00:00",
+  "candidateSha256": "a0326150acc5b9cac917115faa9fb54664825aa0822a1768d7b26d5107070001",
+  "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+  "status": "PASS_BOUNDED_EIGHT_RESULT_SOURCE_FIDELITY_AND_QUALIFIED_QUESTION_MAP",
+  "method": "Independent root reading of relevant original manuscript methods/results/discussion/funding text and visual inspection of PDF physical pages7,15,16,17,18,19,20,21. No external lookup.",
+  "resultsVerified": [
+    "REED-CAL-01-R01",
+    "REED-CAL-01-R02",
+    "REED-CAL-01-R03",
+    "REED-CAL-01-R04",
+    "REED-CAL-01-R05",
+    "REED-CAL-01-R06",
+    "REED-CAL-01-R07",
+    "REED-CAL-01-R08"
+  ],
+  "checks": [
+    "86randomized=39MC+47CC;first60primary=30each;58measured+2deathsassignedzero",
+    "SixmonthALSFRSRdeclineMC6.47SD9.14CI3.2to9.7;CC5.27SD5.54CI3.3to7.3;difference1.200threshold1.035",
+    "SelectionfavorsCCbutdoesnotdemonstrateefficacy;futilitynonrejectionneitherarmisnotbenefitproof",
+    "All86deaths4/39MCvs1/47CC,p0.16;primarytwoMCdeathsnotdoublecounted",
+    "DiscontinuationMC10/CC12withadherence92%/85%;notlostfollowup",
+    "TableIVall86rashMC1/39vsCC10/47,p0.010Fisher;constipationMC10/39vsCC4/47,p0.032Pearson;depressionMC9/39vsCC2/47,p0.020Pearson;clinicalcreatinineMC4/39vsCC4/47,p1.000Fisher",
+    "TableVlababnormalitydenominatorsnotmergedwithTableIVclinicalevents",
+    "Funding/declaredno-conflictbothretained;2008articlevs2015repositoryavailabilitydistinct",
+    "Q01toQ15exactonce;Q07,Q08,Q11,Q13partialgapsremain;nohumanapprovalnewgradeorcompletedreview"
+  ],
+  "remainingFindings": [
+    {
+      "severity": "traceability_minor",
+      "item": "Q14 should explicitly bind the eight local result/claim IDs and the existing ALS guide destination (proposal only), or mark downstream mapping pending. Current prose states applicable scope but not exact destination IDs."
+    }
+  ],
+  "unresolvedSourceGaps": [
+    "TableII TUG/QoL denominator placement retainedunresolved",
+    "TableIII continued n60header vssecondarycells retained",
+    "TableV n85/percentages inconsistency retained",
+    "Externalcorrection/journalparity/registry/companions notchecked",
+    "Othersecondaryfunctional/labcells unextracted;8resultsnotallendpoints"
+  ],
+  "scientificAcceptance": false,
+  "humanApproval": false,
+  "released": false,
+  "calibrationScope": "One report only, not24packetcalibrationcompletion and not286fullyingestedscientificrecords."
+}

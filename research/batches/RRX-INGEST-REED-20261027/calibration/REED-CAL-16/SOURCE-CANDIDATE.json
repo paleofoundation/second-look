@@ -1,0 +1,1144 @@
+{
+  "schemaVersion": "REED-CAL-16-maintenance-MM-v1",
+  "paper": {
+    "id": "REED-CAL-16-P1",
+    "intakeReportId": "REED-481a00ec6c6229ff1e6f",
+    "pmid": "20418244",
+    "doi": "10.3324/haematol.2009.020586",
+    "title": "Thalidomide maintenance treatment increases progression-free but not overall survival in elderly patients with myeloma.",
+    "sourceType": "primary_randomized_selected_maintenance"
+  },
+  "source": {
+    "id": "REED-CAL-16-S1",
+    "pmid": "20418244",
+    "doi": "10.3324/haematol.2009.020586",
+    "title": "Thalidomide maintenance treatment increases progression-free but not overall survival in elderly patients with myeloma.",
+    "ref": "$REMAPRX_REED_ROOT/thalidomide-myeloma/pdfs/20418244-ludwig-2010.pdf",
+    "sha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+    "intakeReportId": "REED-481a00ec6c6229ff1e6f",
+    "physicalPages": 7
+  },
+  "inspection": {
+    "at": "2026-10-27T10:22:38.863867+00:00",
+    "activeReadiness": "READINESS.json",
+    "textualPagesRead": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "visualInspectedPhysicalPages": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "fullScientificReviewComplete": false
+  },
+  "study": {
+    "design": "randomized_selected_post_induction_maintenance",
+    "inductionRandomizedN": 289,
+    "inductionResponseEvaluableN": 249,
+    "nineCycleEligibleN": 137,
+    "maintenanceRandomizedN": 128,
+    "maintenancePerArm": 64,
+    "eligibleNotRandomized": {
+      "total": 9,
+      "toxicityOrPoorCondition": 5,
+      "noConsent": 4
+    },
+    "priorInduction": "thalidomide+dexamethasone ormelphalan+prednisolone;separatepriorrandomization",
+    "randomizationStrata": [
+      "qualityofresponse",
+      "priorinduction",
+      "center"
+    ],
+    "blindingReported": false,
+    "ITTAsReported": true,
+    "primaryEndpoints": [
+      "PFS",
+      "response_rates"
+    ],
+    "maintenancePowerPlannedN": 194,
+    "maintenanceActualPowerPercent": 69,
+    "originalPlannedPowerPercent": 85,
+    "medianFollowupAfterMaintenanceRandomizationMonths": 35,
+    "timeOrigin": "maintenance_randomization",
+    "thromboprophylaxisMandatory": false,
+    "bisphosphonate": "zoledronate4mgq4weeks,changedafterguidelinesasreported",
+    "allInductionPatientsInMaintenanceEstimate": false,
+    "clinicalDoseRecommendationAdopted": false,
+    "registryIdAsReported": "NCT00205751",
+    "registryCurrentlyVerified": false,
+    "newIndependentTrialFamiliesFromInductionReport": 0
+  },
+  "arms": [
+    {
+      "id": "REED-CAL-16-A",
+      "label": "thalidomide+interferon_alpha2b",
+      "randomizedN": 64,
+      "safetyAvailableN": 61,
+      "medianAge": 71,
+      "ageRange": [
+        54,
+        86
+      ],
+      "thalidomideTargetMgDaily": 200,
+      "thalidomideActualMedianMgDaily": 75,
+      "thalidomideActualRangeMgDaily": [
+        25,
+        200
+      ],
+      "interferon": "3MegaUthree-times-weekly,target;actualmedian9MegaU/weekrange3-9reported",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 2,
+          "printedPage": "1549",
+          "nativeSection": "Design/treatment/assessment/statistics"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 3,
+          "printedPage": "1550",
+          "nativeSection": "Results/flow/Table1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 5,
+          "printedPage": "1552",
+          "nativeSection": "Discussion/Table2"
+        }
+      ]
+    },
+    {
+      "id": "REED-CAL-16-B",
+      "label": "interferon_alpha2b_alone",
+      "randomizedN": 64,
+      "safetyAvailableN": 63,
+      "medianAge": 72,
+      "ageRange": [
+        55,
+        85
+      ],
+      "thalidomideTargetMgDaily": null,
+      "thalidomideActualMedianMgDaily": null,
+      "thalidomideActualRangeMgDaily": null,
+      "interferon": "3MegaUthree-times-weekly,sameprotocolbackbone",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 2,
+          "printedPage": "1549",
+          "nativeSection": "Design/treatment/assessment/statistics"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 3,
+          "printedPage": "1550",
+          "nativeSection": "Results/flow/Table1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 5,
+          "printedPage": "1552",
+          "nativeSection": "Discussion/Table2"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "REED-CAL-16-R01",
+      "outcome": "Progression-free survival from maintenance randomization",
+      "estimate": {
+        "kind": "hazard_ratio",
+        "randomizedNs": [
+          64,
+          64
+        ],
+        "medianMonths": [
+          27.7,
+          13.2
+        ],
+        "events": [
+          38,
+          49
+        ],
+        "HR": 0.55,
+        "CI95": [
+          0.36,
+          0.86
+        ],
+        "P": 0.0068,
+        "definition": "maintenancerandomizationtoprogressionordeathanycause",
+        "PFSBenefitIsOSBenefit": false,
+        "all289InductionPatientsBenefitEstablished": false
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 2,
+          "printedPage": "1549",
+          "nativeSection": "Design/treatment/assessment/statistics"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 3,
+          "printedPage": "1550",
+          "nativeSection": "Results/flow/Table1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 4,
+          "printedPage": "1551",
+          "nativeSection": "Results/Figure2"
+        }
+      ],
+      "armOrder": [
+        "REED-CAL-16-A",
+        "REED-CAL-16-B"
+      ],
+      "comparator": "Thalidomide+interferonversusinterferonmaintenanceafter9cycleinduction",
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED-CAL-16-R02",
+      "outcome": "Overall survival from maintenance randomization",
+      "estimate": {
+        "kind": "hazard_ratio",
+        "randomizedNs": [
+          64,
+          64
+        ],
+        "medianMonths": [
+          52.6,
+          51.4
+        ],
+        "deaths": [
+          23,
+          25
+        ],
+        "HR": 0.93,
+        "CI95": [
+          0.53,
+          1.66
+        ],
+        "P": 0.81,
+        "survivalBenefitEstablished": false,
+        "survivalEquivalenceEstablished": false,
+        "observedTotalDeaths": 48
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 2,
+          "printedPage": "1549",
+          "nativeSection": "Design/treatment/assessment/statistics"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 3,
+          "printedPage": "1550",
+          "nativeSection": "Results/flow/Table1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 4,
+          "printedPage": "1551",
+          "nativeSection": "Results/Figure2"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 5,
+          "printedPage": "1552",
+          "nativeSection": "Discussion/Table2"
+        }
+      ],
+      "armOrder": [
+        "REED-CAL-16-A",
+        "REED-CAL-16-B"
+      ],
+      "comparator": "Thalidomide+interferonversusinterferonmaintenanceafter9cycleinduction",
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED-CAL-16-R03",
+      "outcome": "Conditional survival after progression",
+      "estimate": {
+        "kind": "postrandomization_subset_hazard_ratio",
+        "displayedSubsetN": [
+          38,
+          49
+        ],
+        "displayedDeaths": [
+          23,
+          25
+        ],
+        "medianMonths": [
+          8.1,
+          25.6
+        ],
+        "HR": 1.75,
+        "CI95": [
+          0.97,
+          3.14
+        ],
+        "P": 0.056,
+        "timeOrigin": "progression_in_event_selected_subgroup",
+        "fullRandomizedCausalHarmEstablished": false,
+        "statisticallySignificantAt05": false
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 2,
+          "printedPage": "1549",
+          "nativeSection": "Design/treatment/assessment/statistics"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 3,
+          "printedPage": "1550",
+          "nativeSection": "Results/flow/Table1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 6,
+          "printedPage": "1553",
+          "nativeSection": "Figure3/Discussion/authorship"
+        }
+      ],
+      "armOrder": [
+        "REED-CAL-16-A",
+        "REED-CAL-16-B"
+      ],
+      "comparator": "Thalidomide+interferonversusinterferonmaintenanceafter9cycleinduction",
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED-CAL-16-R04",
+      "outcome": "Upgrade from partial response to VGPR or CR during maintenance",
+      "estimate": {
+        "kind": "reported_response_upgrade_counts",
+        "randomizedNs": [
+          64,
+          64
+        ],
+        "upgradePatients": [
+          5,
+          2
+        ],
+        "reportedPercent": [
+          8,
+          3
+        ],
+        "baselinePRcounts": [
+          11,
+          12
+        ],
+        "conditionalPRSubsetRateCalculated": null,
+        "CI": null,
+        "P": null,
+        "notDeNovoORR": true
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 3,
+          "printedPage": "1550",
+          "nativeSection": "Results/flow/Table1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 5,
+          "printedPage": "1552",
+          "nativeSection": "Discussion/Table2"
+        }
+      ],
+      "armOrder": [
+        "REED-CAL-16-A",
+        "REED-CAL-16-B"
+      ],
+      "comparator": "Thalidomide+interferonversusinterferonmaintenanceafter9cycleinduction",
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED-CAL-16-R05",
+      "outcome": "Grade-specific toxicity and treatment-withdrawal limits",
+      "estimate": {
+        "kind": "available_safety_counts_and_ordinal_tests",
+        "availableSafetyNs": [
+          61,
+          63
+        ],
+        "missingSafetyTotal": 4,
+        "categoryNameAsTable": "Neurological",
+        "neurological_G1to2_counts": [
+          38,
+          24
+        ],
+        "neurological_G3to4_cells": [
+          4,
+          "-"
+        ],
+        "neurological_ordinalGradeP": 0.0015,
+        "constipation_G1to2_counts": [
+          27,
+          11
+        ],
+        "constipation_G3to4_cells": [
+          "-",
+          1
+        ],
+        "constipation_ordinalGradeP": 0.0004,
+        "skin_G1to2_counts": [
+          17,
+          7
+        ],
+        "skin_G3to4_cells": [
+          3,
+          "-"
+        ],
+        "skin_ordinalGradeP": 0.0041,
+        "renal_G1to2_counts": [
+          3,
+          3
+        ],
+        "renal_G3to4_cells": [
+          5,
+          "-"
+        ],
+        "renal_ordinalGradeP": 0.026,
+        "PvaluesAreGrade3Only": false,
+        "nonPDnonDeathWithdrawals": [
+          18,
+          10
+        ],
+        "intoleranceWithdrawals": [
+          9,
+          5
+        ],
+        "patientDecisionWithdrawals": [
+          9,
+          4
+        ],
+        "completeWithdrawalCausesReconciled": false,
+        "thromboembolicEvents": [
+          2,
+          1
+        ],
+        "grade3JawOsteonecrosisPatients": [
+          1,
+          1
+        ],
+        "uniqueAEPatientsFromSummedCategories": null,
+        "soleThalidomideCausationEstablished": false
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 3,
+          "printedPage": "1550",
+          "nativeSection": "Results/flow/Table1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 4,
+          "printedPage": "1551",
+          "nativeSection": "Results/Figure2"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 5,
+          "printedPage": "1552",
+          "nativeSection": "Discussion/Table2"
+        }
+      ],
+      "armOrder": [
+        "REED-CAL-16-A",
+        "REED-CAL-16-B"
+      ],
+      "comparator": "Thalidomide+interferonversusinterferonmaintenanceafter9cycleinduction",
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    }
+  ],
+  "claims": [
+    {
+      "id": "REED-CAL-16-C01",
+      "resultIds": [
+        "REED-CAL-16-R01"
+      ],
+      "statement": "Inselectedmaintenance-eligiblepatients,ThalIFNimprovedPFSversusIFN(HR.55CI.36-.86,P.0068;27.7vs13.2months);notall289inductionpatientsoroverall-survivalbenefit.",
+      "relation": "selected_maintenance_exact_regimen_result_with_population_endpoint_limits",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED-CAL-16-C02",
+      "resultIds": [
+        "REED-CAL-16-R02"
+      ],
+      "statement": "OSdidnotshowsignificantimprovement(HR.93CI.53-1.66,P.81;52.6vs51.4months),with48deaths;nullcomparisonnotprovensurvivalequivalence.",
+      "relation": "selected_maintenance_exact_regimen_result_with_population_endpoint_limits",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED-CAL-16-C03",
+      "resultIds": [
+        "REED-CAL-16-R03"
+      ],
+      "statement": "Theconditionalpostprogressiontrend(HR1.75CI.97-3.14,P.056;8.1vs25.6months)ispostrandomization-subsetdata,notstatisticallysignificantorprovenfullcohortcausalharm/resistance.",
+      "relation": "selected_maintenance_exact_regimen_result_with_population_endpoint_limits",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED-CAL-16-C04",
+      "resultIds": [
+        "REED-CAL-16-R04"
+      ],
+      "statement": "FiveversustwopatientsupgradedfromPRtoVGPR/CR,reported8%vs3%;node-novoresponserateorconditionalPR-subseteffect/CI/Pinvented.",
+      "relation": "selected_maintenance_exact_regimen_result_with_population_endpoint_limits",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED-CAL-16-C05",
+      "resultIds": [
+        "REED-CAL-16-R05"
+      ],
+      "statement": "Available-safetyNs61/63differfromrandomized64/64;retaingrade-specificNeurological/constipation/skin/renalcountsandordinalPvalues,rawdashcellsandunreconciledwithdrawalcause. NouniqueAEsum/solethalidomidecausality/currentdoserecommendation.",
+      "relation": "selected_maintenance_exact_regimen_result_with_population_endpoint_limits",
+      "acceptedSupport": false
+    }
+  ],
+  "reviewInputs": [
+    {
+      "id": "Q01",
+      "answer": "SelectedThalIFNvsIFNmaintenance,PFS/responseprimarynotallinductionpatients.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 2,
+          "printedPage": "1549",
+          "nativeSection": "Design/treatment/assessment/statistics"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 3,
+          "printedPage": "1550",
+          "nativeSection": "Results/flow/Table1"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q02",
+      "answer": "289induction/249evaluable/137eligible/128randomized64each;availablesafety61/63.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 3,
+          "printedPage": "1550",
+          "nativeSection": "Results/flow/Table1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 5,
+          "printedPage": "1552",
+          "nativeSection": "Discussion/Table2"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q03",
+      "answer": "IFNbackbonebotharms,targetthal200butactualmedian75mgdaily,notmonotherapy.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 2,
+          "printedPage": "1549",
+          "nativeSection": "Design/treatment/assessment/statistics"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 3,
+          "printedPage": "1550",
+          "nativeSection": "Results/flow/Table1"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q04",
+      "answer": "Secondrandomizationstratifiedresponse/induction/center,concealment/blindingunreported.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 2,
+          "printedPage": "1549",
+          "nativeSection": "Design/treatment/assessment/statistics"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 3,
+          "printedPage": "1550",
+          "nativeSection": "Results/flow/Table1"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q05",
+      "answer": "PFSandOSfrommaintenancerandomization;posteventorigins/responseupgrade/safetydistinct.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 2,
+          "printedPage": "1549",
+          "nativeSection": "Design/treatment/assessment/statistics"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 3,
+          "printedPage": "1550",
+          "nativeSection": "Results/flow/Table1"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q06",
+      "answer": "PFSHR.55CI.36-.86P.0068vsOS.93CI.53-1.66P.81;postprog1.75CI.97-3.14P.056conditional.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 3,
+          "printedPage": "1550",
+          "nativeSection": "Results/flow/Table1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 4,
+          "printedPage": "1551",
+          "nativeSection": "Results/Figure2"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 6,
+          "printedPage": "1553",
+          "nativeSection": "Figure3/Discussion/authorship"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q07",
+      "answer": "Eligibilityflowretained,missing4safety/IFNwithdrawalcause/QoLmissingnessincomplete.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 2,
+          "printedPage": "1549",
+          "nativeSection": "Design/treatment/assessment/statistics"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 3,
+          "printedPage": "1550",
+          "nativeSection": "Results/flow/Table1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 5,
+          "printedPage": "1552",
+          "nativeSection": "Discussion/Table2"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q08",
+      "answer": "Table2exactgrades/Ns/rawdashes/ordinalP,stops18/10causegap,notuniqueAEsum.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 2,
+          "printedPage": "1549",
+          "nativeSection": "Design/treatment/assessment/statistics"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 3,
+          "printedPage": "1550",
+          "nativeSection": "Results/flow/Table1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 5,
+          "printedPage": "1552",
+          "nativeSection": "Discussion/Table2"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q09",
+      "answer": "Selection/power/multiplicity/posteventlimits;fatigue/subgroup/withdrawalqualificationsheld.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 2,
+          "printedPage": "1549",
+          "nativeSection": "Design/treatment/assessment/statistics"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 3,
+          "printedPage": "1550",
+          "nativeSection": "Results/flow/Table1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 5,
+          "printedPage": "1552",
+          "nativeSection": "Discussion/Table2"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 6,
+          "printedPage": "1553",
+          "nativeSection": "Figure3/Discussion/authorship"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q10",
+      "answer": "Nontransplantselectedninecyclepopulation,notallMM/currentdoseorOSbenefit.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 3,
+          "printedPage": "1550",
+          "nativeSection": "Results/flow/Table1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 5,
+          "printedPage": "1552",
+          "nativeSection": "Discussion/Table2"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 6,
+          "printedPage": "1553",
+          "nativeSection": "Figure3/Discussion/authorship"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q11",
+      "answer": "Nestedinduction/maintenancefamily,separatereportnotextraindependentpeople/trial.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 2,
+          "printedPage": "1549",
+          "nativeSection": "Design/treatment/assessment/statistics"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 7,
+          "printedPage": "1554",
+          "nativeSection": "Authorship/disclosures/appendix/references"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q12",
+      "answer": "Academic/Scheringcoauthor/funding/employmentretained,linkedfullformsunavailable.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 1,
+          "printedPage": "1548",
+          "nativeSection": "Title/Abstract/funding"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 2,
+          "printedPage": "1549",
+          "nativeSection": "Design/treatment/assessment/statistics"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 7,
+          "printedPage": "1554",
+          "nativeSection": "Authorship/disclosures/appendix/references"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q13",
+      "answer": "Exact7pages/materialvisuals,protocol/QoL/ICMJE/currentregistry/integrityincomplete.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 1,
+          "printedPage": "1548",
+          "nativeSection": "Title/Abstract/funding"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 2,
+          "printedPage": "1549",
+          "nativeSection": "Design/treatment/assessment/statistics"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 4,
+          "printedPage": "1551",
+          "nativeSection": "Results/Figure2"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q14",
+      "answer": "ExactfiveR/CIDsprivateC21unapplied.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 3,
+          "printedPage": "1550",
+          "nativeSection": "Results/flow/Table1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 5,
+          "printedPage": "1552",
+          "nativeSection": "Discussion/Table2"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 6,
+          "printedPage": "1553",
+          "nativeSection": "Figure3/Discussion/authorship"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending",
+      "downstreamMapping": {
+        "paperId": "REED-CAL-16-P1",
+        "intakeReportId": "REED-481a00ec6c6229ff1e6f",
+        "resultIds": [
+          "REED-CAL-16-R01",
+          "REED-CAL-16-R02",
+          "REED-CAL-16-R03",
+          "REED-CAL-16-R04",
+          "REED-CAL-16-R05"
+        ],
+        "claimIds": [
+          "REED-CAL-16-C01",
+          "REED-CAL-16-C02",
+          "REED-CAL-16-C03",
+          "REED-CAL-16-C04",
+          "REED-CAL-16-C05"
+        ],
+        "existingGuideId": "G-CONDITION-C21",
+        "purpose": "Private selectedpostinductionmaintenancecombinationcomparison/PFSbenefitandOS/harm/toxicitylimits;notmonotherapy/firstlineall-patienteffectorcurrentprescription.",
+        "publicationState": "private_draft",
+        "canonicalChanges": 0
+      }
+    },
+    {
+      "id": "Q15",
+      "answer": "PFSbenefitwithOSuncertainty/toxicityandconditionalharmtrend;fullreviewpending.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 3,
+          "printedPage": "1550",
+          "nativeSection": "Results/flow/Table1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 5,
+          "printedPage": "1552",
+          "nativeSection": "Discussion/Table2"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 6,
+          "printedPage": "1553",
+          "nativeSection": "Figure3/Discussion/authorship"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    }
+  ],
+  "sourceQualifications": [
+    {
+      "id": "C16-FATIGUE-P",
+      "status": "unresolved",
+      "sourceA": {
+        "locator": {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 4,
+          "printedPage": "1551",
+          "nativeSection": "Results/Figure2"
+        },
+        "text": "BodyfatigueP.64"
+      },
+      "sourceB": {
+        "locator": {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 5,
+          "printedPage": "1552",
+          "nativeSection": "Discussion/Table2"
+        },
+        "text": "Table2fatigueP.064"
+      },
+      "action": "No silentdecimalrepair;notactivefatigue-effectfinding."
+    },
+    {
+      "id": "C16-WITHDRAWAL",
+      "status": "incomplete_cause_accounting",
+      "locator": {
+        "kind": "pdf",
+        "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+        "physicalPage": 3,
+        "printedPage": "1550",
+        "nativeSection": "Results/flow/Table1"
+      },
+      "description": "NonPD/nondeathwithdrawals18combo/10IFN;intolerance9/5andpatientchoice9/4sum18/9.",
+      "action": "PreserveoneunaccountedIFNwithdrawal,noinventedcauseorattritiontotal."
+    },
+    {
+      "id": "C16-SUBGROUP-MEDIAN",
+      "status": "unresolved_context_only",
+      "sourceA": {
+        "locator": {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 3,
+          "printedPage": "1550",
+          "nativeSection": "Results/flow/Table1"
+        },
+        "text": "PriorTDthenThalIFNPFS27.7months"
+      },
+      "sourceB": {
+        "locator": {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 4,
+          "printedPage": "1551",
+          "nativeSection": "Results/Figure2"
+        },
+        "text": "Figure2C27.8months"
+      },
+      "action": "Subgroupnotselectedindependentfinding,no silentrepair;mainPFS27.7unchanged."
+    },
+    {
+      "id": "C16-SAFETY-MISSING",
+      "status": "partial",
+      "locators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 3,
+          "printedPage": "1550",
+          "nativeSection": "Results/flow/Table1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 5,
+          "printedPage": "1552",
+          "nativeSection": "Discussion/Table2"
+        }
+      ],
+      "description": "Randomized64/64;Table2available63IFN/61combo,total124,missing4. Dashcellsremainliteral,ordinalPfortrendgrades0-4notgrade3-onlycontrast.",
+      "action": "Do notuse64denominatorforsafetyorconvertallrawdashestozero;Neurologicalcategorynotautomaticallyallperipheralneuropathy."
+    },
+    {
+      "id": "C16-CONDITIONAL-SURVIVAL",
+      "status": "postrandomization_subset",
+      "locators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 2,
+          "printedPage": "1549",
+          "nativeSection": "Design/treatment/assessment/statistics"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 3,
+          "printedPage": "1550",
+          "nativeSection": "Results/flow/Table1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 6,
+          "printedPage": "1553",
+          "nativeSection": "Figure3/Discussion/authorship"
+        }
+      ],
+      "description": "Postprogressionsurvivalonlyamongpatientswithevent,Figure3An49IFN/38combo;notfullrandomizedcomparison.",
+      "action": "No causalthalidomide-resistance/deathhazardforall128fromconditionaltrendP.056."
+    },
+    {
+      "id": "C16-OTHER-DATA",
+      "status": "not_independently_complete",
+      "locators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 4,
+          "printedPage": "1551",
+          "nativeSection": "Results/Figure2"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "f8af098b35610c74cf813ffcd0cff9382c0d1fbf0e135a57e2c2cf3bba769275",
+          "physicalPage": 5,
+          "printedPage": "1552",
+          "nativeSection": "Discussion/Table2"
+        }
+      ],
+      "description": "Qualityoflifedetaileddataomitted;FISH66only/numericalCIbody.13-3.07 andsubgroupdirectionnotusedasactiveprimaryfinding;nonprimary/ageanalysesexploratory.",
+      "action": "No QoLequivalence/highriskorage-specificclinicalprescription;externalprotocol/registry/integrityremainunchecked."
+    }
+  ],
+  "limitations": [
+    "Selected9cyclecompletersnotall289induction",
+    "IFNbackbone/priorinduction/familyoverlap",
+    "Actualthalmedian75nottarget200forall",
+    "OS48deaths/limitedpower,nosurvequivalence",
+    "Conditionalpostprogressionsubsetnotfullcohortcausalharm",
+    "Nonprimaryexploratory/nouniversalage/FISHrule",
+    "Safety61/63missing4,ordinalPnotgrade3-only",
+    "Rawdashes/Neurologicalcategorynotuniversalperipheralneuropathy",
+    "Fatigue.64/.064/withdrawalIFN10vs9/subgroup27.7vs27.8qualified",
+    "QoLdetails/protocol/linkedforms/currentregistry/integrity/typedfieldreviewincomplete"
+  ],
+  "scientificAcceptance": false,
+  "humanApproval": false,
+  "released": false
+}

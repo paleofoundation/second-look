@@ -1,0 +1,1287 @@
+{
+  "schemaVersion": "reed2-cal10-ASA-MM-incidence-review-v1",
+  "paper": {
+    "id": "REED-ac63eef7b0a8c1f3dfa6",
+    "pmid": "28331798",
+    "doi": "10.1016/j.lrr.2017.02.002",
+    "title": "Aspirin and risk of multiple myeloma in adults: A systematic review and meta-analysis.",
+    "sourceType": "secondary_observational_incidence_systematic_review"
+  },
+  "source": {
+    "id": "REED2-CAL-10-MAIN",
+    "pmid": "28331798",
+    "doi": "10.1016/j.lrr.2017.02.002",
+    "title": "Aspirin and risk of multiple myeloma in adults: A systematic review and meta-analysis.",
+    "reportId": "REED-ac63eef7b0a8c1f3dfa6",
+    "ref": "$REMAPRX_REED_ROOT/aspirin-myeloma/pdfs/28331798-lee-2017.pdf",
+    "sha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+    "physicalPages": 6
+  },
+  "inspection": {
+    "at": "2026-10-27T12:49:29.669000+00:00",
+    "physicalPagesRead": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "visualInspectedPhysicalPages": [
+      3,
+      4,
+      5
+    ],
+    "fullScientificReviewComplete": false,
+    "separateCompanionContentRead": false,
+    "primaryStudiesRead": false
+  },
+  "study": {
+    "design": "Systematic review and random-effects meta-analysis of observational incidence studies",
+    "searchCutoff": "2016-04-11",
+    "databases": [
+      "MEDLINE",
+      "EMBASE",
+      "CENTRAL",
+      "ClinicalTrials.gov",
+      "WHOICTRP"
+    ],
+    "searchLanguageRestricted": false,
+    "includedArticlesEnglishOnly": true,
+    "eligibility": "Adults>=18,clearlydefinedASAexposure,MMincidenceriskwithHR/RR/ORorcalculabledata;originalpeerreviewedcohort/casecontrol",
+    "exclusions": "Case reports/comments/letters/meeting abstracts/reviews,insufficientquantification;flowexcludesone cancer-treatment study",
+    "extraction": "Two independent unblinded readers,consensus,NOS source-reported moderate-high not independent quality grade",
+    "exposure": "81/325mg mentioned in3studies,onlyregular-doseoutcomesincluded;differentduration/frequencydefinitions,longestdurationpreferredwhereavailable",
+    "comparator": "ASA nonuse;methodsreferencegroupwordedaspatientswithMMalthoughoverallaimincidencerisk",
+    "primaryOutcome": "Risk of developing MM,not treatment response/survival/thromboprophylaxis",
+    "models": "AdjustedCoxHRs pooled3prospectivecohortreports,DerSimonianLairdrandomeffects;rareHRasRRapproximation;2casecontrolORs narrativeonly",
+    "causalPreventionEstablished": false,
+    "postDiagnosisTreatmentBenefitEstablished": false,
+    "allFiveStudiesPooled": false,
+    "originalStudiesFreshlyVerified": false,
+    "locators": [
+      {
+        "kind": "pdf",
+        "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+        "physicalPage": 1,
+        "printedPage": 23,
+        "nativeSection": "Abstract/introduction"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+        "physicalPage": 2,
+        "printedPage": 24,
+        "nativeSection": "Methods/results"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+        "physicalPage": 3,
+        "printedPage": 25,
+        "nativeSection": "PRISMA/outcomes"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+        "physicalPage": 5,
+        "printedPage": 27,
+        "nativeSection": "Forest Figure2/discussion/funding"
+      }
+    ]
+  },
+  "populations": {
+    "reviewStudies": 5,
+    "prospectiveCohortReports": 3,
+    "caseControlReports": 2,
+    "sourceTotalAdults": 332660,
+    "sourceTotalCases": 901,
+    "caseControlN": 1470,
+    "caseControlCases": 296,
+    "series": [
+      {
+        "name": "Moysich2007",
+        "design": "hospital_case_control",
+        "N": 600,
+        "cases": 117,
+        "period": "1982-1998"
+      },
+      {
+        "name": "Teras2013",
+        "design": "prospective_cohort",
+        "N": 149570,
+        "cases": 211,
+        "period": "1992-2007"
+      },
+      {
+        "name": "Birmann2013_table_2014_reference",
+        "design": "prospective_cohort",
+        "N": 116781,
+        "cases": 328,
+        "period": "1984-2008",
+        "families": "HealthProfessionalsFollowup/NursesHealthStudy,combined report"
+      },
+      {
+        "name": "Landgren2006",
+        "design": "population_case_control",
+        "N": 870,
+        "cases": 179,
+        "period": "1996-2002"
+      },
+      {
+        "name": "Walter2011",
+        "design": "prospective_cohort",
+        "N": 64839,
+        "cases": 66,
+        "period": "2000-2008",
+        "endpointFootnote": "66 plasma-cell disorders, most myelomas, not all verified MM"
+      }
+    ],
+    "setting": "All USA observational reports, English,years2006-2013table;Birmann2014reference",
+    "all901PureMMVerified": false,
+    "newUniqueCrossCorpusPatientsAdjudicated": false,
+    "locators": [
+      {
+        "kind": "pdf",
+        "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+        "physicalPage": 2,
+        "printedPage": 24,
+        "nativeSection": "Methods/results"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+        "physicalPage": 3,
+        "printedPage": 25,
+        "nativeSection": "PRISMA/outcomes"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+        "physicalPage": 4,
+        "printedPage": 26,
+        "nativeSection": "Table1"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+        "physicalPage": 6,
+        "printedPage": 28,
+        "nativeSection": "References"
+      }
+    ]
+  },
+  "results": [
+    {
+      "id": "REED2-CAL-10-O01",
+      "outcome": "Pooled cohort association of regular aspirin use with incident myeloma",
+      "estimate": {
+        "kind": "secondary_observational_pooled_adjusted_HR",
+        "reports": 3,
+        "estimate": 0.9,
+        "CI95": [
+          0.58,
+          1.39
+        ],
+        "P": 0.638,
+        "randomEffects": true,
+        "allFivePooled": false,
+        "causalPrevention": false,
+        "equivalenceOrNoEffect": false,
+        "forest": [
+          {
+            "name": "Teras2013",
+            "HR": 1.04,
+            "CI95": [
+              0.63,
+              1.73
+            ],
+            "weightPercent": 34.36
+          },
+          {
+            "name": "Birmann2013",
+            "HR": 0.63,
+            "CI95": [
+              0.41,
+              0.96
+            ],
+            "weightPercent": 40.33
+          },
+          {
+            "name": "Walter2011",
+            "HR": 1.31,
+            "CI95": [
+              0.67,
+              2.57
+            ],
+            "weightPercent": 25.32
+          }
+        ]
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 1,
+          "printedPage": 23,
+          "nativeSection": "Abstract/introduction"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 2,
+          "printedPage": 24,
+          "nativeSection": "Methods/results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 3,
+          "printedPage": 25,
+          "nativeSection": "PRISMA/outcomes"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 5,
+          "printedPage": 27,
+          "nativeSection": "Forest Figure2/discussion/funding"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED2-CAL-10-O02",
+      "outcome": "Two case-control incidence associations narrated separately",
+      "estimate": {
+        "kind": "secondary_narrative_observational_ORs",
+        "reports": 2,
+        "subjects": 1470,
+        "cases": 296,
+        "ORs": [
+          {
+            "estimate": 0.9,
+            "CI95": [
+              0.65,
+              1.49
+            ]
+          },
+          {
+            "estimate": 0.9,
+            "CI95": [
+              0.4,
+              2.0
+            ]
+          }
+        ],
+        "authorEstimatePairingVerifiedFromParagraph": false,
+        "pooledWithCohorts": false,
+        "clinicalEquivalenceEstablished": false
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 3,
+          "printedPage": 25,
+          "nativeSection": "PRISMA/outcomes"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 4,
+          "printedPage": 26,
+          "nativeSection": "Table1"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED2-CAL-10-O03",
+      "outcome": "Heterogeneity, sensitivity and bias-test context",
+      "estimate": {
+        "kind": "secondary_meta_analysis_diagnostics",
+        "I2Percent": 51.7,
+        "QP": 0.126,
+        "EggerP": 0.25,
+        "cohortReports": 3,
+        "heterogeneityAbsentEstablished": false,
+        "publicationBiasAbsentEstablished": false,
+        "leaveOneOutMainNarrative": "No significant change reported",
+        "originalSupplementPlotsRead": false,
+        "primaryQualityGradeIndependentlyAssigned": false,
+        "currentEvidenceComplete": false
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 2,
+          "printedPage": 24,
+          "nativeSection": "Methods/results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 3,
+          "printedPage": 25,
+          "nativeSection": "PRISMA/outcomes"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 5,
+          "printedPage": 27,
+          "nativeSection": "Forest Figure2/discussion/funding"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    }
+  ],
+  "claims": [
+    {
+      "id": "REED2-CAL-10-C01",
+      "resultIds": [
+        "REED2-CAL-10-O01"
+      ],
+      "statement": "Three observational cohort reports pooledHR.90CI.58-1.39P.638 did not establish a protective/harmful association, causality, equivalence or MM treatment benefit. Single Birmann cohort favorableCI does not override pooled uncertainty.",
+      "relation": "secondary_observational_incidence_context_candidate",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED2-CAL-10-C02",
+      "resultIds": [
+        "REED2-CAL-10-O02"
+      ],
+      "statement": "Two case-control estimatesOR.90CI.65-1.49and.90CI.40-2.00 were separately narrated,not pooled withcohortHR.1470subjects296casesnotnewindependentpeople,author-estimatepairnotverifiedhere.",
+      "relation": "secondary_observational_incidence_context_candidate",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED2-CAL-10-C03",
+      "resultIds": [
+        "REED2-CAL-10-O03"
+      ],
+      "statement": "Moderate I2 51.7% persists despiteQP.126;EggerP.25 andnarrativelystableleave-one-out do notproveabsenceofheterogeneity/publicationbias with3cohorts. Supplementplots/originalrawdata notread.",
+      "relation": "secondary_observational_incidence_context_candidate",
+      "acceptedSupport": false
+    }
+  ],
+  "reviewInputs": [
+    {
+      "id": "Q01",
+      "answer": "RegularASAuseassociationwithincidentMMrisk.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 1,
+          "printedPage": 23,
+          "nativeSection": "Abstract/introduction"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 2,
+          "printedPage": 24,
+          "nativeSection": "Methods/results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 3,
+          "printedPage": 25,
+          "nativeSection": "PRISMA/outcomes"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q02",
+      "answer": "Humanadults>=18inUSA observationalreports.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 2,
+          "printedPage": 24,
+          "nativeSection": "Methods/results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 4,
+          "printedPage": 26,
+          "nativeSection": "Table1"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q03",
+      "answer": "ASA81/325mgmentionedthreecohorts,regular-doseoutcomesonlyasstated.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 2,
+          "printedPage": 24,
+          "nativeSection": "Methods/results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 4,
+          "printedPage": 26,
+          "nativeSection": "Table1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 5,
+          "printedPage": 27,
+          "nativeSection": "Forest Figure2/discussion/funding"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q04",
+      "answer": "ASA nonuse,observationalgroups,methodsoddreferencegroupMMwordingretained.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 2,
+          "printedPage": 24,
+          "nativeSection": "Methods/results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 3,
+          "printedPage": 25,
+          "nativeSection": "PRISMA/outcomes"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q05",
+      "answer": "PrimaryMMincidenceriskwithregularASAversusnonuse.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 2,
+          "printedPage": 24,
+          "nativeSection": "Methods/results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 3,
+          "printedPage": 25,
+          "nativeSection": "PRISMA/outcomes"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 4,
+          "printedPage": 26,
+          "nativeSection": "Table1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 5,
+          "printedPage": 27,
+          "nativeSection": "Forest Figure2/discussion/funding"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q06",
+      "answer": "[{'kind': 'secondary_observational_pooled_adjusted_HR', 'reports': 3, 'estimate': 0.9, 'CI95': [0.58, 1.39], 'P': 0.638, 'randomEffects': True, 'allFivePooled': False, 'causalPrevention': False, 'equivalenceOrNoEffect': False, 'forest': [{'name': 'Teras2013', 'HR': 1.04, 'CI95': [0.63, 1.73], 'weightPercent': 34.36}, {'name': 'Birmann2013', 'HR': 0.63, 'CI95': [0.41, 0.96], 'weightPercent': 40.33}, {'name': 'Walter2011', 'HR': 1.31, 'CI95': [0.67, 2.57], 'weightPercent': 25.32}]}, {'kind': 'secondary_narrative_observational_ORs', 'reports': 2, 'subjects': 1470, 'cases': 296, 'ORs': [{'estimate': 0.9, 'CI95': [0.65, 1.49]}, {'estimate': 0.9, 'CI95': [0.4, 2.0]}], 'authorEstimatePairingVerifiedFromParagraph': False, 'pooledWithCohorts': False, 'clinicalEquivalenceEstablished': False}, {'kind': 'secondary_meta_analysis_diagnostics', 'I2Percent': 51.7, 'QP': 0.126, 'EggerP': 0.25, 'cohortReports': 3, 'heterogeneityAbsentEstablished': False, 'publicationBiasAbsentEstablished': False, 'leaveOneOutMainNarrative': 'No significant change reported', 'originalSupplementPlotsRead': False, 'primaryQualityGradeIndependentlyAssigned': False, 'currentEvidenceComplete': False}]",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 2,
+          "printedPage": 24,
+          "nativeSection": "Methods/results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 3,
+          "printedPage": 25,
+          "nativeSection": "PRISMA/outcomes"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 4,
+          "printedPage": 26,
+          "nativeSection": "Table1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 5,
+          "printedPage": 27,
+          "nativeSection": "Forest Figure2/discussion/funding"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q07",
+      "answer": "None",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 2,
+          "printedPage": 24,
+          "nativeSection": "Methods/results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 3,
+          "printedPage": 25,
+          "nativeSection": "PRISMA/outcomes"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 4,
+          "printedPage": 26,
+          "nativeSection": "Table1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 6,
+          "printedPage": 28,
+          "nativeSection": "References"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q08",
+      "answer": "None",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 4,
+          "printedPage": 26,
+          "nativeSection": "Table1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 5,
+          "printedPage": 27,
+          "nativeSection": "Forest Figure2/discussion/funding"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q09",
+      "answer": "Observationalconfounding/reversecausality/exposureerror/Englishselection/fewstudies.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 3,
+          "printedPage": 25,
+          "nativeSection": "PRISMA/outcomes"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 4,
+          "printedPage": 26,
+          "nativeSection": "Table1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 5,
+          "printedPage": 27,
+          "nativeSection": "Forest Figure2/discussion/funding"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q10",
+      "answer": "D23/C21incidentMMriskcontextinUSAadults,notdiagnosedMMtreatment.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 2,
+          "printedPage": 24,
+          "nativeSection": "Methods/results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 3,
+          "printedPage": 25,
+          "nativeSection": "PRISMA/outcomes"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 5,
+          "printedPage": 27,
+          "nativeSection": "Forest Figure2/discussion/funding"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q11",
+      "answer": "{'reportId': 'REED-ac63eef7b0a8c1f3dfa6', 'secondaryReview': True, 'underlyingReportFamilies': ['Moysich2007', 'Teras2013', 'Birmann2013_table_2014_reference', 'Landgren2006', 'Walter2011'], 'BirmannNestedCohorts': ['HPFS', 'NHS'], 'primaryReportsVerifiedHere': 0, 'newIndependentTrialCount': 0, 'newIndependentPatientCount': 0, 'uniqueCrossCorpusPatientCountAdjudicated': False, 'samePopulationAcrossResults': 'Threegroupsreusefiveincludedreports,threepooledcohortreports;notadditionalreplication', 'locators': [{'kind': 'pdf', 'sourceSha256': '45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d', 'physicalPage': 3, 'printedPage': 25, 'nativeSection': 'PRISMA/outcomes'}, {'kind': 'pdf', 'sourceSha256': '45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d', 'physicalPage': 4, 'printedPage': 26, 'nativeSection': 'Table1'}, {'kind': 'pdf', 'sourceSha256': '45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d', 'physicalPage': 6, 'printedPage': 28, 'nativeSection': 'References'}]}",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 4,
+          "printedPage": 26,
+          "nativeSection": "Table1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 6,
+          "printedPage": 28,
+          "nativeSection": "References"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q12",
+      "answer": "ShingFungLee,TingYingNg,FrankChiSingWong,StewartYukTung.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 1,
+          "printedPage": 23,
+          "nativeSection": "Abstract/introduction"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 5,
+          "printedPage": 27,
+          "nativeSection": "Forest Figure2/discussion/funding"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q13",
+      "answer": "LeukResRep7(2017)23-28,DOIexact,publishedonline28Feb2017.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 1,
+          "printedPage": 23,
+          "nativeSection": "Abstract/introduction"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 2,
+          "printedPage": 24,
+          "nativeSection": "Methods/results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 5,
+          "printedPage": 27,
+          "nativeSection": "Forest Figure2/discussion/funding"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 6,
+          "printedPage": 28,
+          "nativeSection": "References"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q14",
+      "answer": "{'paperId': 'REED-ac63eef7b0a8c1f3dfa6', 'sourceId': 'REED2-CAL-10-MAIN', 'resultIds': ['REED2-CAL-10-O01', 'REED2-CAL-10-O02', 'REED2-CAL-10-O03'], 'claimIds': ['REED2-CAL-10-C01', 'REED2-CAL-10-C02', 'REED2-CAL-10-C03'], 'existingGuideIds': ['G-DRUG-D23', 'G-CONDITION-C21'], 'purpose': 'Private aspirin/incident-MM-risk secondary context, no postdiagnosis antitumor efficacy or clinical adoption', 'publicationState': 'private_unapplied_candidate', 'canonicalChanges': 0, 'newIndependentTrials': 0, 'newIndependentPatients': 0}",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 5,
+          "printedPage": 27,
+          "nativeSection": "Forest Figure2/discussion/funding"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending",
+      "downstreamMapping": {
+        "paperId": "REED-ac63eef7b0a8c1f3dfa6",
+        "sourceId": "REED2-CAL-10-MAIN",
+        "resultIds": [
+          "REED2-CAL-10-O01",
+          "REED2-CAL-10-O02",
+          "REED2-CAL-10-O03"
+        ],
+        "claimIds": [
+          "REED2-CAL-10-C01",
+          "REED2-CAL-10-C02",
+          "REED2-CAL-10-C03"
+        ],
+        "existingGuideIds": [
+          "G-DRUG-D23",
+          "G-CONDITION-C21"
+        ],
+        "purpose": "Private aspirin/incident-MM-risk secondary context, no postdiagnosis antitumor efficacy or clinical adoption",
+        "publicationState": "private_unapplied_candidate",
+        "canonicalChanges": 0,
+        "newIndependentTrials": 0,
+        "newIndependentPatients": 0
+      }
+    },
+    {
+      "id": "Q15",
+      "answer": "No establishedincidentMMassociationin3cohortpooledHR,uncertainobservationalrisknotpostdiagnosistreatment.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 5,
+          "printedPage": 27,
+          "nativeSection": "Forest Figure2/discussion/funding"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    }
+  ],
+  "sourceQualifications": [
+    {
+      "id": "REED2-CAL-10-PURPOSE",
+      "description": "Incidence/development of myeloma is distinct from treating diagnosed MM, survival, IMiD thromboprophylaxis or ASCT bleeding. Flow excludes one cancer-treatment paper. No aspirin antitumor efficacy or prescribing adoption.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 1,
+          "printedPage": 23,
+          "nativeSection": "Abstract/introduction"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 2,
+          "printedPage": 24,
+          "nativeSection": "Methods/results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 3,
+          "printedPage": 25,
+          "nativeSection": "PRISMA/outcomes"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-10-DESIGN",
+      "description": "Five observational reports, three prospective cohorts and two case-controls. Only three cohort HRs pooled, two ORs narrative; five studies not five RCTs or all-pooled332660 denominator.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 2,
+          "printedPage": 24,
+          "nativeSection": "Methods/results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 3,
+          "printedPage": 25,
+          "nativeSection": "PRISMA/outcomes"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 4,
+          "printedPage": 26,
+          "nativeSection": "Table1"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-10-FAMILY_COUNTS",
+      "description": "Review total332660adults/901cases includescasecontrol1470/296 andWalter66plasma-cell disorders,mostMM. Birmann combinedHPFS/NHSreportnotasingletrial;newindependenttrials/patients0, underlying reports not freshly inspected. Do not count reviewN as new deduplicated people.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 2,
+          "printedPage": 24,
+          "nativeSection": "Methods/results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 3,
+          "printedPage": 25,
+          "nativeSection": "PRISMA/outcomes"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 4,
+          "printedPage": 26,
+          "nativeSection": "Table1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 6,
+          "printedPage": 28,
+          "nativeSection": "References"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-10-POOLED_NULL",
+      "description": "Cohort pooledHR.90CI.58-1.39P.638 is nonsignificant; not10% proven benefit, absence of harm, equivalence or no effect. HR distinct OR/RR despite source rare-event approximation, no absolute risk reduction calculated.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 1,
+          "printedPage": 23,
+          "nativeSection": "Abstract/introduction"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 3,
+          "printedPage": 25,
+          "nativeSection": "PRISMA/outcomes"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 5,
+          "printedPage": 27,
+          "nativeSection": "Forest Figure2/discussion/funding"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-10-SINGLE_STUDIES",
+      "description": "ForestTerasHR1.04CI.63-1.73weight34.36%,Birmann.63CI.41-.96weight40.33%,Walter1.31CI.67-2.57weight25.32%. One nominal protective cohort contrasts two null/opposite-point estimates; no selecting Birmann as replicated pooled benefit. Weights roundedsum100.01notrepaired.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 5,
+          "printedPage": 27,
+          "nativeSection": "Forest Figure2/discussion/funding"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-10-CASE_CONTROL",
+      "description": "Two narrativeOR.90CI.65-1.49 and.90CI.40-2.00,with1470subjects296cases; do not pool withHR or assign estimates to authors where paragraphdoesnotexplicitlypair. BothCIsinclude1,notproofnoassociation.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 3,
+          "printedPage": 25,
+          "nativeSection": "PRISMA/outcomes"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-10-HETEROGENEITY",
+      "description": "I2 51.7% andQ P.126. NonsignificantQ withonly3reports doesnotmeanhomogeneity;discussioncallsmoderateheterogeneity andexposure/definition/collectiondifferences. Random-effects/leave-one-out do not remove all heterogeneity.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 2,
+          "printedPage": 24,
+          "nativeSection": "Methods/results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 3,
+          "printedPage": 25,
+          "nativeSection": "PRISMA/outcomes"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 5,
+          "printedPage": 27,
+          "nativeSection": "Forest Figure2/discussion/funding"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-10-BIAS_TEST",
+      "description": "EggerP.25/funnelreportednobias,notproofabsencewith3reports. Funnel/leave-one-outplotsandNOS detailedtables separate supplements not read; mainnarrative report not fresh independent computation.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 2,
+          "printedPage": 24,
+          "nativeSection": "Methods/results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 3,
+          "printedPage": 25,
+          "nativeSection": "PRISMA/outcomes"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 5,
+          "printedPage": 27,
+          "nativeSection": "Forest Figure2/discussion/funding"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-10-EXPOSURE",
+      "description": "81mg/325mgmentioned,regular-doseanalysisonly asstated butnotuniversalverifieddose. Frequency/duration definitions differ, longestdurationpreferencenotuniformlatency/dose-response. Questionnaire/interviewmeasurement,adherence/unmeasuredexposuresandreversecausalityremain.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 2,
+          "printedPage": 24,
+          "nativeSection": "Methods/results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 4,
+          "printedPage": 26,
+          "nativeSection": "Table1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 5,
+          "printedPage": 27,
+          "nativeSection": "Forest Figure2/discussion/funding"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-10-CONFOUNDING",
+      "description": "Adjusted covariates differ byreport,notallsex/BMI/race/analgesicsetsuniversal. Indication confounding,residualconfounding,subclinicalsymptomASAuseand10-20yearlatency remain,notcausalprevention despite prospectivecohorts.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 2,
+          "printedPage": 24,
+          "nativeSection": "Methods/results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 4,
+          "printedPage": 26,
+          "nativeSection": "Table1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 5,
+          "printedPage": 27,
+          "nativeSection": "Forest Figure2/discussion/funding"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-10-SEARCH",
+      "description": "Search11Apr2016despitesource2017,English-onlyincludedalthoughsearchnolanguagelimits.368records47duplicates321screened296excluded25full20excludedfiveincluded/threepooled,notcurrentcompleteevidence. Appendixsearchtermsnotreadfromseparatefile.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 1,
+          "printedPage": 23,
+          "nativeSection": "Abstract/introduction"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 2,
+          "printedPage": 24,
+          "nativeSection": "Methods/results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 3,
+          "printedPage": 25,
+          "nativeSection": "PRISMA/outcomes"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-10-SOURCE_LABELS",
+      "description": "Birmannyear2013table/forestversus2014reference preserved. Walter66labelmyelomacasesqualifiedasplasma-cell disordersfootnote. Methods referencegroupwordingMMpatients doesnotchangeprimaryincidencequestion. No silent source repair.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 2,
+          "printedPage": 24,
+          "nativeSection": "Methods/results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 4,
+          "printedPage": 26,
+          "nativeSection": "Table1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 6,
+          "printedPage": 28,
+          "nativeSection": "References"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-10-MECHANISM",
+      "description": "COX/NFkB/IL6 andmicroenvironmentmechanisms arecitedbiologicalrationale,notexperimentstestedbythisreviewormediatorsprovenincausallypreventinghumanMM. Underlyingmechanismoriginalsnotread.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 1,
+          "printedPage": 23,
+          "nativeSection": "Abstract/introduction"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 3,
+          "printedPage": 25,
+          "nativeSection": "PRISMA/outcomes"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 5,
+          "printedPage": 27,
+          "nativeSection": "Forest Figure2/discussion/funding"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-10-HARMS",
+      "description": "No primary aspirin clinicalbleeding/safety dataset extractedbyincidence review; no inferenceofnogastrointestinal/hemorrhagicharmfromnullMMrisk. Noresponse/survivalabsolutebenefit orpostdiagnosisadvice.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 1,
+          "printedPage": 23,
+          "nativeSection": "Abstract/introduction"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 2,
+          "printedPage": 24,
+          "nativeSection": "Methods/results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 5,
+          "printedPage": 27,
+          "nativeSection": "Forest Figure2/discussion/funding"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-10-DISCLOSURES",
+      "description": "Fundingnone/acknowledgmentnoneasdeclared; noexplicitconflictofintereststatementidentifiedinmain,notassertednone. Exact6pages/3visualsread;primaryarticles/supplements/currentintegrity/protocolunchecked. CC-BY-NC-NDlicense metadata doesnotauthorizehostingPDFinGit.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 1,
+          "printedPage": 23,
+          "nativeSection": "Abstract/introduction"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 5,
+          "printedPage": 27,
+          "nativeSection": "Forest Figure2/discussion/funding"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 6,
+          "printedPage": 28,
+          "nativeSection": "References"
+        }
+      ]
+    }
+  ],
+  "overlapRecords": [
+    {
+      "reportId": "REED-ac63eef7b0a8c1f3dfa6",
+      "secondaryReview": true,
+      "underlyingReportFamilies": [
+        "Moysich2007",
+        "Teras2013",
+        "Birmann2013_table_2014_reference",
+        "Landgren2006",
+        "Walter2011"
+      ],
+      "BirmannNestedCohorts": [
+        "HPFS",
+        "NHS"
+      ],
+      "primaryReportsVerifiedHere": 0,
+      "newIndependentTrialCount": 0,
+      "newIndependentPatientCount": 0,
+      "uniqueCrossCorpusPatientCountAdjudicated": false,
+      "samePopulationAcrossResults": "Threegroupsreusefiveincludedreports,threepooledcohortreports;notadditionalreplication",
+      "locators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 3,
+          "printedPage": 25,
+          "nativeSection": "PRISMA/outcomes"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 4,
+          "printedPage": 26,
+          "nativeSection": "Table1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "45e3c9dc3c425b672d74fbc63718f369c024adbc0b8486c3261ddf2f476b9e8d",
+          "physicalPage": 6,
+          "printedPage": 28,
+          "nativeSection": "References"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Incidence/development of myeloma is distinct from treating diagnosed MM, survival, IMiD thromboprophylaxis or ASCT bleeding. Flow excludes one cancer-treatment paper. No aspirin antitumor efficacy or prescribing adoption.",
+    "Five observational reports, three prospective cohorts and two case-controls. Only three cohort HRs pooled, two ORs narrative; five studies not five RCTs or all-pooled332660 denominator.",
+    "Review total332660adults/901cases includescasecontrol1470/296 andWalter66plasma-cell disorders,mostMM. Birmann combinedHPFS/NHSreportnotasingletrial;newindependenttrials/patients0, underlying reports not freshly inspected. Do not count reviewN as new deduplicated people.",
+    "Cohort pooledHR.90CI.58-1.39P.638 is nonsignificant; not10% proven benefit, absence of harm, equivalence or no effect. HR distinct OR/RR despite source rare-event approximation, no absolute risk reduction calculated.",
+    "ForestTerasHR1.04CI.63-1.73weight34.36%,Birmann.63CI.41-.96weight40.33%,Walter1.31CI.67-2.57weight25.32%. One nominal protective cohort contrasts two null/opposite-point estimates; no selecting Birmann as replicated pooled benefit. Weights roundedsum100.01notrepaired.",
+    "Two narrativeOR.90CI.65-1.49 and.90CI.40-2.00,with1470subjects296cases; do not pool withHR or assign estimates to authors where paragraphdoesnotexplicitlypair. BothCIsinclude1,notproofnoassociation.",
+    "I2 51.7% andQ P.126. NonsignificantQ withonly3reports doesnotmeanhomogeneity;discussioncallsmoderateheterogeneity andexposure/definition/collectiondifferences. Random-effects/leave-one-out do not remove all heterogeneity.",
+    "EggerP.25/funnelreportednobias,notproofabsencewith3reports. Funnel/leave-one-outplotsandNOS detailedtables separate supplements not read; mainnarrative report not fresh independent computation.",
+    "81mg/325mgmentioned,regular-doseanalysisonly asstated butnotuniversalverifieddose. Frequency/duration definitions differ, longestdurationpreferencenotuniformlatency/dose-response. Questionnaire/interviewmeasurement,adherence/unmeasuredexposuresandreversecausalityremain.",
+    "Adjusted covariates differ byreport,notallsex/BMI/race/analgesicsetsuniversal. Indication confounding,residualconfounding,subclinicalsymptomASAuseand10-20yearlatency remain,notcausalprevention despite prospectivecohorts.",
+    "Search11Apr2016despitesource2017,English-onlyincludedalthoughsearchnolanguagelimits.368records47duplicates321screened296excluded25full20excludedfiveincluded/threepooled,notcurrentcompleteevidence. Appendixsearchtermsnotreadfromseparatefile.",
+    "Birmannyear2013table/forestversus2014reference preserved. Walter66labelmyelomacasesqualifiedasplasma-cell disordersfootnote. Methods referencegroupwordingMMpatients doesnotchangeprimaryincidencequestion. No silent source repair.",
+    "COX/NFkB/IL6 andmicroenvironmentmechanisms arecitedbiologicalrationale,notexperimentstestedbythisreviewormediatorsprovenincausallypreventinghumanMM. Underlyingmechanismoriginalsnotread.",
+    "No primary aspirin clinicalbleeding/safety dataset extractedbyincidence review; no inferenceofnogastrointestinal/hemorrhagicharmfromnullMMrisk. Noresponse/survivalabsolutebenefit orpostdiagnosisadvice.",
+    "Fundingnone/acknowledgmentnoneasdeclared; noexplicitconflictofintereststatementidentifiedinmain,notassertednone. Exact6pages/3visualsread;primaryarticles/supplements/currentintegrity/protocolunchecked. CC-BY-NC-NDlicense metadata doesnotauthorizehostingPDFinGit."
+  ],
+  "newIndependentTrials": 0,
+  "newIndependentPatients": 0,
+  "scientificAcceptance": false,
+  "humanApproval": false,
+  "released": false
+}

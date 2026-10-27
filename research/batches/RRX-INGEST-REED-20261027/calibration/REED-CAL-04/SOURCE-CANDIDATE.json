@@ -1,0 +1,856 @@
+{
+  "schemaVersion": "REED-CAL-04-observational-v1",
+  "paper": {
+    "id": "B-R0586",
+    "existingSourceId": "B-R0586-F00",
+    "intakeReportId": "REED-bbdc56c54e41e21e39db",
+    "pmid": "34862208",
+    "doi": "10.1158/1055-9965.EPI-21-0946",
+    "title": "Regular Aspirin Use and Mortality in Patients with Multiple Myeloma",
+    "sourceTitle": "Regular Aspirin Use and Mortality in Multiple Myeloma Patients",
+    "sourceType": "primary_observational_cohort",
+    "newReportIdentity": false,
+    "newRandomizedTrials": 0
+  },
+  "source": {
+    "id": "REED-CAL-04-S1",
+    "ref": "$REMAPRX_REED_ROOT/aspirin-myeloma/pdfs/34862208-marinac-2022.pdf",
+    "sha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+    "pmid": "34862208",
+    "doi": "10.1158/1055-9965.EPI-21-0946",
+    "title": "Regular Aspirin Use and Mortality in Patients with Multiple Myeloma",
+    "physicalPages": 16,
+    "intakeReportId": "REED-bbdc56c54e41e21e39db",
+    "existingReportId": "B-R0586",
+    "existingSourceId": "B-R0586-F00"
+  },
+  "inspection": {
+    "at": "2026-10-27T08:45:59.006642+00:00",
+    "activeReadiness": "READINESS.json",
+    "textualPagesRead": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "visualInspectedPhysicalPages": [
+      12,
+      15
+    ],
+    "fullScientificReviewComplete": false,
+    "parserWarning": "pdfinfoCannotrevertnondecryptstreams;pdftotextandmaterialtablerenderreadable,noclaimfixed"
+  },
+  "design": {
+    "type": "pooled_prospective_observational_cohorts",
+    "cohorts": [
+      "NHS",
+      "HPFS"
+    ],
+    "randomized": false,
+    "causalIdentificationEstablished": false,
+    "mainTextN": 436,
+    "medianFollowupMonths": 43,
+    "adjustment": {
+      "covariates": [
+        "age at diagnosis",
+        "calendar year of diagnosis (<2000 versus >=2000)",
+        "postdiagnosis BMI",
+        "postdiagnosis number of comorbidities",
+        "prediagnosis aspirin use (user versus nonuser)"
+      ],
+      "stratification": "cohort(sex)",
+      "model": "Cox proportional hazards; time since diagnosis underlying time scale",
+      "unavailableAdjustment": [
+        "myeloma presenting characteristics/severity",
+        "first-line therapy",
+        "individual indication for aspirin use"
+      ]
+    },
+    "timeOrigin": "diagnosis",
+    "postExposureRepeatedlyUpdated": false,
+    "preDiagnosisLagYears": 2,
+    "lagScope": "Prediagnosis sensitivity only,notpostexposurelag",
+    "sampleFlowReconciled": false,
+    "sourceLocators": [
+      {
+        "kind": "pdf",
+        "sourceSha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+        "physicalPage": 3,
+        "printedPage": "Author manuscript Page 3",
+        "nativeSection": "Methods:participants/endpoints/aspirin"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+        "physicalPage": 4,
+        "printedPage": "Author manuscript Page 4",
+        "nativeSection": "Methods:Aspirin Use and Covariates"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+        "physicalPage": 5,
+        "printedPage": "Author manuscript Page 5",
+        "nativeSection": "Statistical Analysis and Results"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+        "physicalPage": 8,
+        "printedPage": "Author manuscript Page 8",
+        "nativeSection": "Discussion limitations/Supplementary Material/Acknowledgements"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+        "physicalPage": 15,
+        "printedPage": "Author manuscript Page 15",
+        "nativeSection": "Table3 and footnotes"
+      }
+    ]
+  },
+  "exposures": [
+    {
+      "id": "REED-CAL-04-E1",
+      "definition": "Useversusnonuseonthefirstreturnedpostdiagnosisquestionnaire",
+      "assigned": false,
+      "repeatedlyUpdated": false,
+      "quantityUnit": "325mg-equivalenttabletsperweek",
+      "prescribedDailyDose": null,
+      "81mgSpecificEffectEstablished": false,
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+          "physicalPage": 3,
+          "printedPage": "Author manuscript Page 3",
+          "nativeSection": "Methods:participants/endpoints/aspirin"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+          "physicalPage": 4,
+          "printedPage": "Author manuscript Page 4",
+          "nativeSection": "Methods:Aspirin Use and Covariates"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "REED-CAL-04-R01",
+      "outcome": "myeloma-specific mortality",
+      "population": "Myeloma patients from NHS andHPFS; pooled observational report",
+      "timepoint": {
+        "timeOrigin": "diagnosis",
+        "followupEnd": "death orJanuary2016",
+        "overallMedianFollowupMonths": 43,
+        "fixedOutcomeVisit": null
+      },
+      "exposureContrast": "Aspirin use on first returned postdiagnosis questionnaire versus nonuse; no randomized assignment",
+      "estimate": {
+        "type": "adjusted_hazard_ratio",
+        "value": 0.61,
+        "unit": "relative hazard",
+        "causalEffect": false,
+        "absoluteRiskReduction": null,
+        "NNT": null
+      },
+      "uncertainty": {
+        "confidenceLevel": 0.95,
+        "lower": 0.46,
+        "upper": 0.79,
+        "pValue": null,
+        "pValueMissingState": "not_reported_for_this_binary_user_contrast"
+      },
+      "adjustment": {
+        "covariates": [
+          "age at diagnosis",
+          "calendar year of diagnosis (<2000 versus >=2000)",
+          "postdiagnosis BMI",
+          "postdiagnosis number of comorbidities",
+          "prediagnosis aspirin use (user versus nonuser)"
+        ],
+        "stratification": "cohort(sex)",
+        "model": "Cox proportional hazards; time since diagnosis underlying time scale",
+        "unavailableAdjustment": [
+          "myeloma presenting characteristics/severity",
+          "first-line therapy",
+          "individual indication for aspirin use"
+        ]
+      },
+      "denominatorBasis": {
+        "rawCohortRows": [
+          {
+            "cohort": "NHS",
+            "user": {
+              "events": 88,
+              "atRisk": 125
+            },
+            "nonuser": {
+              "events": 116,
+              "atRisk": 140
+            }
+          },
+          {
+            "cohort": "HPFS",
+            "user": {
+              "events": 34,
+              "atRisk": 60
+            },
+            "nonuser": {
+              "events": 83,
+              "atRisk": 111
+            }
+          }
+        ],
+        "derivedTableTotals": {
+          "userAtRisk": 185,
+          "nonuserAtRisk": 251,
+          "allAtRisk": 436
+        },
+        "totalsBasis": "Arithmetic sum of printedTable3cohort rows; not a separately source-reported pooled analysisN",
+        "flowReconciled": false,
+        "unresolved": "Discussion p8 says79didnot returnpostdiagnosis questionnaire, butTable3poststatusrows sumto436, sameas statedfullcohort. Do not infer that all436have verifiedpostexposureor silentlyreplace tableNwith357."
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+          "physicalPage": 15,
+          "printedPage": "Author manuscript Page 15",
+          "nativeSection": "Table3 and footnotes"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+          "physicalPage": 5,
+          "printedPage": "Author manuscript Page 5",
+          "nativeSection": "Statistical Analysis and Results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+          "physicalPage": 6,
+          "printedPage": "Author manuscript Page 6",
+          "nativeSection": "Results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+          "physicalPage": 8,
+          "printedPage": "Author manuscript Page 8",
+          "nativeSection": "Discussion limitations/Supplementary Material/Acknowledgements"
+        }
+      ],
+      "acceptedSupport": false,
+      "grade": null,
+      "benefitGrade": null,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED-CAL-04-R02",
+      "outcome": "all-cause mortality",
+      "population": "Myeloma patients from NHS andHPFS; pooled observational report",
+      "timepoint": {
+        "timeOrigin": "diagnosis",
+        "followupEnd": "death orJanuary2016",
+        "overallMedianFollowupMonths": 43,
+        "fixedOutcomeVisit": null
+      },
+      "exposureContrast": "Aspirin use on first returned postdiagnosis questionnaire versus nonuse; no randomized assignment",
+      "estimate": {
+        "type": "adjusted_hazard_ratio",
+        "value": 0.63,
+        "unit": "relative hazard",
+        "causalEffect": false,
+        "absoluteRiskReduction": null,
+        "NNT": null
+      },
+      "uncertainty": {
+        "confidenceLevel": 0.95,
+        "lower": 0.49,
+        "upper": 0.8,
+        "pValue": null,
+        "pValueMissingState": "not_reported_for_this_binary_user_contrast"
+      },
+      "adjustment": {
+        "covariates": [
+          "age at diagnosis",
+          "calendar year of diagnosis (<2000 versus >=2000)",
+          "postdiagnosis BMI",
+          "postdiagnosis number of comorbidities",
+          "prediagnosis aspirin use (user versus nonuser)"
+        ],
+        "stratification": "cohort(sex)",
+        "model": "Cox proportional hazards; time since diagnosis underlying time scale",
+        "unavailableAdjustment": [
+          "myeloma presenting characteristics/severity",
+          "first-line therapy",
+          "individual indication for aspirin use"
+        ]
+      },
+      "denominatorBasis": {
+        "rawCohortRows": [
+          {
+            "cohort": "NHS",
+            "user": {
+              "events": 100,
+              "atRisk": 125
+            },
+            "nonuser": {
+              "events": 125,
+              "atRisk": 140
+            }
+          },
+          {
+            "cohort": "HPFS",
+            "user": {
+              "events": 53,
+              "atRisk": 60
+            },
+            "nonuser": {
+              "events": 105,
+              "atRisk": 111
+            }
+          }
+        ],
+        "derivedTableTotals": {
+          "userAtRisk": 185,
+          "nonuserAtRisk": 251,
+          "allAtRisk": 436
+        },
+        "totalsBasis": "Arithmetic sum of printedTable3cohort rows; not a separately source-reported pooled analysisN",
+        "flowReconciled": false,
+        "unresolved": "Discussion p8 says79didnot returnpostdiagnosis questionnaire, butTable3poststatusrows sumto436, sameas statedfullcohort. Do not infer that all436have verifiedpostexposureor silentlyreplace tableNwith357."
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+          "physicalPage": 15,
+          "printedPage": "Author manuscript Page 15",
+          "nativeSection": "Table3 and footnotes"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+          "physicalPage": 5,
+          "printedPage": "Author manuscript Page 5",
+          "nativeSection": "Statistical Analysis and Results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+          "physicalPage": 6,
+          "printedPage": "Author manuscript Page 6",
+          "nativeSection": "Results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+          "physicalPage": 8,
+          "printedPage": "Author manuscript Page 8",
+          "nativeSection": "Discussion limitations/Supplementary Material/Acknowledgements"
+        }
+      ],
+      "acceptedSupport": false,
+      "grade": null,
+      "benefitGrade": null,
+      "verificationState": "pending_independent_source_audit"
+    }
+  ],
+  "claims": [
+    {
+      "id": "REED-CAL-04-C01",
+      "resultIds": [
+        "REED-CAL-04-R01"
+      ],
+      "statement": "Postdiagnosis aspirin use was associated with a lower adjusted hazard of myeloma-specific mortality in this observational report. Confounding, exposure/survivor selection and source flow gaps prevent causal efficacy or safety conclusions.",
+      "relation": "observational_association_only",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED-CAL-04-C02",
+      "resultIds": [
+        "REED-CAL-04-R02"
+      ],
+      "statement": "Postdiagnosis aspirin use was associated with a lower adjusted hazard of all-cause mortality in this observational report. Confounding, exposure/survivor selection and source flow gaps prevent causal efficacy or safety conclusions.",
+      "relation": "observational_association_only",
+      "acceptedSupport": false
+    }
+  ],
+  "reviewInputs": [
+    {
+      "id": "Q01",
+      "answer": "Observational aspirin-use patterns versus myeloma-specific/all-cause mortality; not randomized treatment efficacy. Two postdiagnosis HRs bounded here.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+          "physicalPage": 2,
+          "printedPage": "Author manuscript Page 2",
+          "nativeSection": "Introduction"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+          "physicalPage": 5,
+          "printedPage": "Author manuscript Page 5",
+          "nativeSection": "Statistical Analysis and Results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+          "physicalPage": 6,
+          "printedPage": "Author manuscript Page 6",
+          "nativeSection": "Results"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q02",
+      "answer": "436myeloma cases from NHS/HPFS are stated. Table3poststatusrows sum436, whileDiscussion says79lackedpostquestionnaire; sample flow remains unresolved.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+          "physicalPage": 3,
+          "printedPage": "Author manuscript Page 3",
+          "nativeSection": "Methods:participants/endpoints/aspirin"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+          "physicalPage": 8,
+          "printedPage": "Author manuscript Page 8",
+          "nativeSection": "Discussion limitations/Supplementary Material/Acknowledgements"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q03",
+      "answer": "Aspirinselfreport,325mg-equivalent weeklyquantities; use/nonusefromfirstpostquestionnaire,frozen thereafter. Not assigned325mgdaily or specific81mg regimen.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+          "physicalPage": 4,
+          "printedPage": "Author manuscript Page 4",
+          "nativeSection": "Methods:Aspirin Use and Covariates"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+          "physicalPage": 5,
+          "printedPage": "Author manuscript Page 5",
+          "nativeSection": "Statistical Analysis and Results"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q04",
+      "answer": "Selfreportednonuse comparator. No randomization/placebo; case/causeofdeathascertainmentblindedtoexposure.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+          "physicalPage": 4,
+          "printedPage": "Author manuscript Page 4",
+          "nativeSection": "Methods:Aspirin Use and Covariates"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+          "physicalPage": 3,
+          "printedPage": "Author manuscript Page 3",
+          "nativeSection": "Methods:participants/endpoints/aspirin"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+          "physicalPage": 5,
+          "printedPage": "Author manuscript Page 5",
+          "nativeSection": "Statistical Analysis and Results"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q05",
+      "answer": "Myeloma-specific andall-cause time-to-event mortality; clinicalendpoints butnotdirecttumor/VTEoutcomes. Followupmedian43months isnotfixedriskhorizon.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+          "physicalPage": 5,
+          "printedPage": "Author manuscript Page 5",
+          "nativeSection": "Statistical Analysis and Results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+          "physicalPage": 3,
+          "printedPage": "Author manuscript Page 3",
+          "nativeSection": "Methods:participants/endpoints/aspirin"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q06",
+      "answer": "AdjustedHR0.61(95%CI0.46-0.79)MMmortality and0.63(0.49-0.80)allcause; notriskratios/absoluteeffects. Table3cohorteventNsretainedwithflowgap.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+          "physicalPage": 15,
+          "printedPage": "Author manuscript Page 15",
+          "nativeSection": "Table3 and footnotes"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q07",
+      "answer": "Case/clinical/postquestionnairemissingnessandselectionlimits; noassignedtreatmentadherence. Carryforwardoneintervalforprioruse; quantitymissingnessnotzero.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+          "physicalPage": 8,
+          "printedPage": "Author manuscript Page 8",
+          "nativeSection": "Discussion limitations/Supplementary Material/Acknowledgements"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+          "physicalPage": 4,
+          "printedPage": "Author manuscript Page 4",
+          "nativeSection": "Methods:Aspirin Use and Covariates"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+          "physicalPage": 3,
+          "printedPage": "Author manuscript Page 3",
+          "nativeSection": "Methods:participants/endpoints/aspirin"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+          "physicalPage": 15,
+          "printedPage": "Author manuscript Page 15",
+          "nativeSection": "Table3 and footnotes"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+          "physicalPage": 5,
+          "printedPage": "Author manuscript Page 5",
+          "nativeSection": "Statistical Analysis and Results"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q08",
+      "answer": "No bleeding/harmascertainment,adverseeventseverity orharmwithdrawalmeasure. Mortalityassociationandauthorsdonoharmphrasingdonotcertifysafety.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+          "physicalPage": 8,
+          "printedPage": "Author manuscript Page 8",
+          "nativeSection": "Discussion limitations/Supplementary Material/Acknowledgements"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+          "physicalPage": 15,
+          "printedPage": "Author manuscript Page 15",
+          "nativeSection": "Table3 and footnotes"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+          "physicalPage": 5,
+          "printedPage": "Author manuscript Page 5",
+          "nativeSection": "Statistical Analysis and Results"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q09",
+      "answer": "Missingseverity/therapy/individualindication,firstpostselfreport,survivorselection andsourceflowgaplimitcausality; protocol/supplement/fullmodelauditunchecked.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+          "physicalPage": 8,
+          "printedPage": "Author manuscript Page 8",
+          "nativeSection": "Discussion limitations/Supplementary Material/Acknowledgements"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+          "physicalPage": 5,
+          "printedPage": "Author manuscript Page 5",
+          "nativeSection": "Statistical Analysis and Results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+          "physicalPage": 15,
+          "printedPage": "Author manuscript Page 15",
+          "nativeSection": "Table3 and footnotes"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q10",
+      "answer": "Establishedmyelomasurvivalcontextonly; notprevention/thromboprophylaxis or validatedaspirinregimen. Predominantlywhitehealthprofessionalslimitgeneralizability.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+          "physicalPage": 8,
+          "printedPage": "Author manuscript Page 8",
+          "nativeSection": "Discussion limitations/Supplementary Material/Acknowledgements"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+          "physicalPage": 4,
+          "printedPage": "Author manuscript Page 4",
+          "nativeSection": "Methods:Aspirin Use and Covariates"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+          "physicalPage": 5,
+          "printedPage": "Author manuscript Page 5",
+          "nativeSection": "Statistical Analysis and Results"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q11",
+      "answer": "OneexistingB-R0586report withtwohistoricalcohorts; potentialoverlapwithpriorNHS/HPFSreports unadjudicated; noindependenttrialcount.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+          "physicalPage": 5,
+          "printedPage": "Author manuscript Page 5",
+          "nativeSection": "Statistical Analysis and Results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+          "physicalPage": 10,
+          "printedPage": "Author manuscript Page 10",
+          "nativeSection": "References15/18(previouscohortreports)"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+          "physicalPage": 8,
+          "printedPage": "Author manuscript Page 8",
+          "nativeSection": "Discussion limitations/Supplementary Material/Acknowledgements"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q12",
+      "answer": "Authors,cohortsetting,funding/nofunderroleandGhobrialconflictsobserved; noassignedproductsupplyreported.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+          "physicalPage": 1,
+          "printedPage": "Author manuscript Page 1",
+          "nativeSection": "Title/abstract/conflicts"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+          "physicalPage": 3,
+          "printedPage": "Author manuscript Page 3",
+          "nativeSection": "Methods:participants/endpoints/aspirin"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+          "physicalPage": 9,
+          "printedPage": "Author manuscript Page 9",
+          "nativeSection": "Acknowledgements/Role of funding source"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q13",
+      "answer": "Exactauthor-manuscriptreadandtablesvisuallychecked; parserwarningnotconcealed; supplement/externalintegrity/overlapunchecked.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+          "physicalPage": 1,
+          "printedPage": "Author manuscript Page 1",
+          "nativeSection": "Title/abstract/conflicts"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+          "physicalPage": 15,
+          "printedPage": "Author manuscript Page 15",
+          "nativeSection": "Table3 and footnotes"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+          "physicalPage": 8,
+          "printedPage": "Author manuscript Page 8",
+          "nativeSection": "Discussion limitations/Supplementary Material/Acknowledgements"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+          "physicalPage": 5,
+          "printedPage": "Author manuscript Page 5",
+          "nativeSection": "Statistical Analysis and Results"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q14",
+      "answer": "ExactR01/R02andC01/C02maptoexistingmyelomaguideC21asprivateunappliedassociationproposal,separatefromprevention/VTE.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+          "physicalPage": 15,
+          "printedPage": "Author manuscript Page 15",
+          "nativeSection": "Table3 and footnotes"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+          "physicalPage": 6,
+          "printedPage": "Author manuscript Page 6",
+          "nativeSection": "Results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+          "physicalPage": 8,
+          "printedPage": "Author manuscript Page 8",
+          "nativeSection": "Discussion limitations/Supplementary Material/Acknowledgements"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending",
+      "downstreamMapping": {
+        "paperId": "B-R0586",
+        "intakeReportId": "REED-bbdc56c54e41e21e39db",
+        "resultIds": [
+          "REED-CAL-04-R01",
+          "REED-CAL-04-R02"
+        ],
+        "claimIds": [
+          "REED-CAL-04-C01",
+          "REED-CAL-04-C02"
+        ],
+        "existingGuideId": "G-CONDITION-C21",
+        "purpose": "Private myeloma survival association context; separate from thromboprophylaxis and prevention",
+        "publicationState": "private_draft",
+        "canonicalChanges": 0
+      }
+    },
+    {
+      "id": "Q15",
+      "answer": "Associationsremaincandidateswithflow/confounding/safetygaps. Resolveoriginaldata/protocol/supplementsandcontrolledconfirmationbeforeresultingclinicalconclusion.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+          "physicalPage": 6,
+          "printedPage": "Author manuscript Page 6",
+          "nativeSection": "Results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+          "physicalPage": 8,
+          "printedPage": "Author manuscript Page 8",
+          "nativeSection": "Discussion limitations/Supplementary Material/Acknowledgements"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    }
+  ],
+  "limitations": [
+    "Unresolved79noquestionnaireversusTable3N436sampleflow",
+    "Firstpostquestionnairesurvivorselection/timeorigindiagnosis;riskentrynotfullyspecified",
+    "Missingfirstlinetherapy/diseaseseverity/individualindicationadjustment",
+    "No specific81mg/longtermuseconfirmation",
+    "No systematicbleeding/harmoutcomes",
+    "Oneobservationalreport/twocohorts,notrandomizedreplication",
+    "p7wordingreductionsinsurvivaldoesnotchangemortalitytableendpoints",
+    "Supplement/integrity/familychecksnotperformed",
+    "Quantity/joint/preusecellsreadbutnotfullyextractedoraudited"
+  ],
+  "scientificAcceptance": false,
+  "humanApproval": false,
+  "released": false
+}

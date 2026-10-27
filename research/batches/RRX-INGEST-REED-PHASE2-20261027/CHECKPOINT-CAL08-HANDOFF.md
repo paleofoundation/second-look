@@ -1,0 +1,5 @@
+# Phase two checkpoint through CAL08
+
+Eight main reports, 304 physical pages, 31 result/claim groups and 113 qualifications have bounded independent source-fidelity receipts. There are 120 narrative questions and 536 typed inputs, with 166 unfinished required inputs. Each receipt specifies independent reading scope. Full-field independent acceptance, full scientific reviews, human approval, new grades, release and newly independently verified trial/patient counts remain zero.
+
+Append only CAL05-CAL08 and this checkpoint. All 477 PR8 files and 102 earlier phase two files remain identical. Observational treatment associations, secondary review estimates and original randomized regimen trials retain their distinct purposes and overlapping families. Literal source conflicts stay unresolved rather than repaired. CAL09 is a separate uncommitted candidate awaiting its own exact audit, outside this checkpoint. Continue the remaining 16 selected targets serially on existing draft PR11. No acquisition, application, canonical, public, guide or release changes. The first eight are a technical checkpoint only, not approval to scale 20/30 scientific reviews.

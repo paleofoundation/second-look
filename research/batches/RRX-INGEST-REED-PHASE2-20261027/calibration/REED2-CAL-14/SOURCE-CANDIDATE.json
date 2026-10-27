@@ -1,0 +1,1636 @@
+{
+  "schemaVersion": "reed2-cal14-GBM-sonosensitizer-NAM-v1",
+  "paper": {
+    "id": "REED-8a2ed81b01816b252b0c",
+    "pmid": "42585241",
+    "doi": "10.1371/journal.pone.0354981",
+    "title": "Repurposing Alzheimer's and ovarian cancer drugs as sonosensitizers for glioblastoma via a positive-unlabeled learning and 3D bioprinting-based new approach methodology (NAM).",
+    "sourceType": "primary_computational_PU_and_preclinical_U87MG_spheroid"
+  },
+  "source": {
+    "id": "REED2-CAL-14-MAIN",
+    "pmid": "42585241",
+    "doi": "10.1371/journal.pone.0354981",
+    "title": "Repurposing Alzheimer's and ovarian cancer drugs as sonosensitizers for glioblastoma via a positive-unlabeled learning and 3D bioprinting-based new approach methodology (NAM).",
+    "reportId": "REED-8a2ed81b01816b252b0c",
+    "ref": "$REMAPRX_REED_ROOT/memantine-glioblastoma/pdfs/42585241-majumder-2026.pdf",
+    "sha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+    "physicalPages": 19
+  },
+  "inspection": {
+    "at": "2026-10-27T13:10:53.373621+00:00",
+    "physicalPagesRead": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "visualInspectedPhysicalPages": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "fullScientificReviewComplete": false,
+    "separateCompanionContentRead": false,
+    "rawCodeDataInspected": false,
+    "sourceTextPlotConflictResolved": false
+  },
+  "study": {
+    "design": "Primary computational positive-unlabeled screening plus in-vitro U-87 MG spheroid validation",
+    "cellLine": "ATCC U-87 MG immortalized human glioblastoma cells",
+    "spheroidCellsPerWell": 10000,
+    "printing": "Magneticfield-guided96wellbioprintingwithGadovistparamagneticmedium",
+    "drugCompounds": [
+      "carboplatin",
+      "memantine hydrochloride",
+      "temozolomide"
+    ],
+    "drugDosing": "Singleaddition24hafterprinting;4hdrugincubationbeforeUS",
+    "US": {
+      "frequencyMHz": 1,
+      "intensityWcm2": 1,
+      "dutyPercent": 20,
+      "pulseDurationMilliseconds": 200,
+      "stimulationMinutes": 5
+    },
+    "readout": "CellTiter-Glo3DATP-based metabolic viability at24/72h;IC50determined72hdrugonly",
+    "sixGroupsAsWritten": "Control,US,drugIC50,US+drugIC50,drugIC25,US+drugIC50repeated",
+    "figure5SixthArm": "US+drugIC25",
+    "exactIC25ConcentrationsInMain": null,
+    "replicates": "Atleasttriplicatemethods;Figure5n4,biologicalculture/technicalwellhierarchynotdefined",
+    "statistics": "MeanSD/one-wayANOVA,P<.05,Figure5stars;multiplecomparisonprocedureandcross-timepairingnotclear",
+    "humanParticipants": 0,
+    "animalSubjects": 0,
+    "normalBrainSafetyComparatorTested": false,
+    "ethics": "Authorsstatethatcommercialimmortalizedcellline/nohumanoranimalstudydoesnotrequireIACUC",
+    "clinicalEfficacyEstablished": false,
+    "synergyFormallyEstablished": false,
+    "locators": [
+      {
+        "kind": "pdf",
+        "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+        "physicalPage": 4,
+        "printedPage": 4,
+        "nativeSection": "Figure1/reagents/culture"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+        "physicalPage": 5,
+        "printedPage": 5,
+        "nativeSection": "US/exposure/viabilitymethods"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+        "physicalPage": 6,
+        "printedPage": 6,
+        "nativeSection": "Assays/statistics/ethics/database"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+        "physicalPage": 13,
+        "printedPage": 13,
+        "nativeSection": "Figure4/viabilityresults"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+        "physicalPage": 14,
+        "printedPage": 14,
+        "nativeSection": "Figure5/discussion"
+      }
+    ]
+  },
+  "populations": {
+    "clinicalPatients": 0,
+    "animalSubjects": 0,
+    "cellLines": 1,
+    "spheroidCellsPerWell": 10000,
+    "Figure5N": 4,
+    "MLMolecules": 364,
+    "MLPositiveLabels": 175,
+    "MLDescriptors": 204,
+    "MLSCARAssumptionValidated": false,
+    "trainValidationTestPercent": [
+      70,
+      15,
+      15
+    ],
+    "sourceSpheroidDiameterMeanSD": [
+      306.7,
+      6.2
+    ],
+    "diameterUnitAsPrinted": "microMolar(uM)",
+    "imageScaleBarUnit": "micrometer",
+    "uniqueBiologicalCultureNVerified": false,
+    "newUniqueCrossCorpusPatientsAdjudicated": false,
+    "locators": [
+      {
+        "kind": "pdf",
+        "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+        "physicalPage": 5,
+        "printedPage": 5,
+        "nativeSection": "US/exposure/viabilitymethods"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+        "physicalPage": 6,
+        "printedPage": 6,
+        "nativeSection": "Assays/statistics/ethics/database"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+        "physicalPage": 7,
+        "printedPage": 7,
+        "nativeSection": "MLdescriptors/model"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+        "physicalPage": 9,
+        "printedPage": 9,
+        "nativeSection": "Classprior/modeltraining"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+        "physicalPage": 10,
+        "printedPage": 10,
+        "nativeSection": "Figure2/splits"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+        "physicalPage": 11,
+        "printedPage": 11,
+        "nativeSection": "Table1/predictions"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+        "physicalPage": 12,
+        "printedPage": 12,
+        "nativeSection": "Figure3/IC50/ADMET"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+        "physicalPage": 14,
+        "printedPage": 14,
+        "nativeSection": "Figure5/discussion"
+      }
+    ]
+  },
+  "results": [
+    {
+      "id": "REED2-CAL-14-O01",
+      "outcome": "Positive-unlabeled drug classifier and candidate predictions",
+      "estimate": {
+        "kind": "ML_screening_not_clinical_probability",
+        "molecules": 364,
+        "positiveLabels": 175,
+        "descriptors": 204,
+        "classPrior": 0.5454,
+        "trainValidationTestPercent": [
+          70,
+          15,
+          15
+        ],
+        "epochs": 500,
+        "DNN": {
+          "trainingLoss": 0.13844,
+          "validationLoss": 0.27432,
+          "recall": 0.95382
+        },
+        "GNN": {
+          "trainingLoss": 0.27766,
+          "validationLoss": 0.72342,
+          "recall": 0.8231
+        },
+        "candidateConfidencePercent": {
+          "carboplatin": 99.45,
+          "memantineHydrochloride": 98.35
+        },
+        "priorSensitivityPercentAsReported": 7.7,
+        "priorSensitivityRunsPerValue": 5,
+        "trueNegativesVerified": false,
+        "SCARAssumptionIndependentlyValidated": false,
+        "externalCalibrationLeakageAuditPerformed": false,
+        "probabilityOfClinicalBenefit": false
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 6,
+          "printedPage": 6,
+          "nativeSection": "Assays/statistics/ethics/database"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "MLdescriptors/model"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 8,
+          "printedPage": 8,
+          "nativeSection": "PUloss"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Classprior/modeltraining"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 10,
+          "printedPage": 10,
+          "nativeSection": "Figure2/splits"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 11,
+          "printedPage": 11,
+          "nativeSection": "Table1/predictions"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED2-CAL-14-O02",
+      "outcome": "Drug-only 72h ATP spheroid viability IC50 comparison",
+      "estimate": {
+        "kind": "in_vitro_ATP_IC50",
+        "timeHours": 72,
+        "unit": "micromolar",
+        "IC50": {
+          "memantineHydrochloride": 131,
+          "carboplatin": 252.3,
+          "TMZ": 804.5
+        },
+        "exactIC25Concentrations": null,
+        "IC25AssumedHalfIC50": false,
+        "measuredClinicalPotencyOrBrainPK": false,
+        "IC50CIReported": false
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "US/exposure/viabilitymethods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 12,
+          "printedPage": 12,
+          "nativeSection": "Figure3/IC50/ADMET"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 13,
+          "printedPage": 13,
+          "nativeSection": "Figure4"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED2-CAL-14-O03",
+      "outcome": "24h spheroid viability after drug and ultrasound combinations",
+      "estimate": {
+        "kind": "in_vitro_viability_percent_mean_SD",
+        "timeHours": 24,
+        "memantineDrugOnly": {
+          "mean": 69.5,
+          "SD": 9.9
+        },
+        "memantinePlusUS": {
+          "mean": 36.7,
+          "SD": 13.7
+        },
+        "carboplatinPlusUS": {
+          "mean": 66.6,
+          "SD": 14.6
+        },
+        "TMZPlusUS": {
+          "mean": 51.0,
+          "SD": 7.1
+        },
+        "Figure5N": 4,
+        "readoutIsViabilityNotPercentKilled": true,
+        "USAloneCytotoxicityPresent": true,
+        "allUSAloneContrastsFormallyQuantified": false,
+        "formalSynergyEstablished": false,
+        "patientBenefitEstablished": false
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "US/exposure/viabilitymethods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 13,
+          "printedPage": 13,
+          "nativeSection": "Figure4/viabilityresults"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 14,
+          "printedPage": 14,
+          "nativeSection": "Figure5a/c/e"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED2-CAL-14-O04",
+      "outcome": "72h carboplatin results and unresolved memantine timing/ranking conflict",
+      "estimate": {
+        "kind": "in_vitro_viability_with_source_text_plot_disagreement",
+        "timeHours": 72,
+        "carboplatinDrugOnly": {
+          "mean": 44.9,
+          "SD": 1.6
+        },
+        "carboplatinPlusUS": {
+          "mean": 23.2,
+          "SD": 6.2
+        },
+        "textClaimsMemantinePlateau": true,
+        "textClaimsCarboplatinMostCytotoxic72h": true,
+        "plotMem72LowerThan24Visible": true,
+        "plotMem72BelowCarb72Visible": true,
+        "exactMem72MeansNotDigitized": true,
+        "textPlotDiscrepancyResolved": false,
+        "crossTimeEquivalenceEstablished": false
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 13,
+          "printedPage": 13,
+          "nativeSection": "Figure4/viabilityresults"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 14,
+          "printedPage": 14,
+          "nativeSection": "Figure5b/d/f"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 16,
+          "printedPage": 16,
+          "nativeSection": "Discussion/conclusions/limits"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED2-CAL-14-O05",
+      "outcome": "Attributed mechanism and ADMET interpretation, unverified companion readouts",
+      "estimate": {
+        "kind": "authors_mechanistic_interpretation_with_unchecked_companion_results",
+        "mainAssayMethods": [
+          "cellROXoxidativestress",
+          "JC1MMP2D",
+          "caspase3/7activation"
+        ],
+        "companionFiguresRead": false,
+        "JC1Is3DSpheroidAssay": false,
+        "NMDAPiezoCalciumNecessityTestVerified": false,
+        "directOxygenHypoxiaAssayInMain": false,
+        "predictedMemBBBProbability": 0.988,
+        "predictedMemLogP": 3.116,
+        "predictedMemTPSAAngstrom2": 26.02,
+        "humanBBBExposureSafetyEstablished": false,
+        "clinicalSonosensitizerEfficacyEstablished": false
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 6,
+          "printedPage": 6,
+          "nativeSection": "Assays/statistics/ethics/database"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 12,
+          "printedPage": 12,
+          "nativeSection": "Figure3/IC50/ADMET"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 14,
+          "printedPage": 14,
+          "nativeSection": "Figure5/discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 15,
+          "printedPage": 15,
+          "nativeSection": "Figure6/mechanisms"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 16,
+          "printedPage": 16,
+          "nativeSection": "Discussion/conclusions/limits"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 17,
+          "printedPage": 17,
+          "nativeSection": "Companions/contributions"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    }
+  ],
+  "claims": [
+    {
+      "id": "REED2-CAL-14-C01",
+      "resultIds": [
+        "REED2-CAL-14-O01"
+      ],
+      "statement": "PU-DNNreportedrecall.95382andmemantine98.35%/carb99.45%predictionconfidencesaremodeloutputsunderunverifiedPUlabel/priorassumptions,notclinicalbenefitprobabilitiesorindependentlyvalidatedcalibration.",
+      "relation": "original_computational_preclinical_combination_candidate",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED2-CAL-14-C02",
+      "resultIds": [
+        "REED2-CAL-14-O02"
+      ],
+      "statement": "Drug-only72hU87MGspheroidIC50mem131uM/carb252.3/TMZ804.5areATPviabilitycomparisons,notpatientdoses/brainexposureorclinicallysuperiortherapy;exactIC25notreported.",
+      "relation": "original_computational_preclinical_combination_candidate",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED2-CAL-14-C03",
+      "resultIds": [
+        "REED2-CAL-14-O03"
+      ],
+      "statement": "At24hsourceviabilitymem69.5SD9.9%drugonly/36.7SD13.7%withUS,carbUS66.6SD14.6andTMZUS51SD7.1,Figure5n4. USalonecytotoxicityanddifferentdrugconcentrationsprecludecausalsynergyorclinicalsuperiorityclaims.",
+      "relation": "original_computational_preclinical_combination_candidate",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED2-CAL-14-C04",
+      "resultIds": [
+        "REED2-CAL-14-O04"
+      ],
+      "statement": "At72hsourcecarbviability44.9SD1.6%drugonly/23.2SD6.2%withUSretained. Textmemplateau/carbstrongestclaimsconflictwithFigure5relativebarpatterns;72hmemexactmeansnotdigitizedandnoequivalenceresolution.",
+      "relation": "original_computational_preclinical_combination_candidate",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED2-CAL-14-C05",
+      "resultIds": [
+        "REED2-CAL-14-O05"
+      ],
+      "statement": "AuthorsproposeROS/NMDA/Piezo-calcium/sonoporationmechanismsandADMETadvantages,butcompanionimages/rawdataandnecessarycausalstepsnotverified. JC1method2D/live-deadhypoxiccoreinterpretation/predictedBBB.988donotestablishhumanPK,safetyorGBMbenefit.",
+      "relation": "original_computational_preclinical_combination_candidate",
+      "acceptedSupport": false
+    }
+  ],
+  "reviewInputs": [
+    {
+      "id": "Q01",
+      "answer": "PUlearningandU87MGbioprintNAMsonosensitizerdiscovery.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 1,
+          "printedPage": 1,
+          "nativeSection": "Abstract/dataaccess"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 16,
+          "printedPage": 16,
+          "nativeSection": "Discussion/conclusions/limits"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 17,
+          "printedPage": 17,
+          "nativeSection": "Companions/contributions"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q02",
+      "answer": "ATCCU87MGimmortalizedcellline,3Dspheroids;nohuman/animals.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 4,
+          "printedPage": 4,
+          "nativeSection": "Figure1/reagents/culture"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 6,
+          "printedPage": 6,
+          "nativeSection": "Assays/statistics/ethics/database"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 14,
+          "printedPage": 14,
+          "nativeSection": "Figure5/discussion"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q03",
+      "answer": "Memantinehydrochloride/carboplatin/TMZpurchased.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 4,
+          "printedPage": 4,
+          "nativeSection": "Figure1/reagents/culture"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "US/exposure/viabilitymethods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 6,
+          "printedPage": 6,
+          "nativeSection": "Assays/statistics/ethics/database"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q04",
+      "answer": "Untreated/USonly/drugIC50/IC25withwithoutUS,differentdrug-specificdoses.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "US/exposure/viabilitymethods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 6,
+          "printedPage": 6,
+          "nativeSection": "Assays/statistics/ethics/database"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 13,
+          "printedPage": 13,
+          "nativeSection": "Figure4/viabilityresults"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q05",
+      "answer": "ExploratoryPUmetrics/IC50/ATPviability/mechanismcontext,noclinicalhierarchy.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 1,
+          "printedPage": 1,
+          "nativeSection": "Abstract/dataaccess"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 6,
+          "printedPage": 6,
+          "nativeSection": "Assays/statistics/ethics/database"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 13,
+          "printedPage": 13,
+          "nativeSection": "Figure4/viabilityresults"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 16,
+          "printedPage": 16,
+          "nativeSection": "Discussion/conclusions/limits"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 17,
+          "printedPage": 17,
+          "nativeSection": "Companions/contributions"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q06",
+      "answer": "[{'kind': 'ML_screening_not_clinical_probability', 'molecules': 364, 'positiveLabels': 175, 'descriptors': 204, 'classPrior': 0.5454, 'trainValidationTestPercent': [70, 15, 15], 'epochs': 500, 'DNN': {'trainingLoss': 0.13844, 'validationLoss': 0.27432, 'recall': 0.95382}, 'GNN': {'trainingLoss': 0.27766, 'validationLoss': 0.72342, 'recall': 0.8231}, 'candidateConfidencePercent': {'carboplatin': 99.45, 'memantineHydrochloride': 98.35}, 'priorSensitivityPercentAsReported': 7.7, 'priorSensitivityRunsPerValue': 5, 'trueNegativesVerified': False, 'SCARAssumptionIndependentlyValidated': False, 'externalCalibrationLeakageAuditPerformed': False, 'probabilityOfClinicalBenefit': False}, {'kind': 'in_vitro_ATP_IC50', 'timeHours': 72, 'unit': 'micromolar', 'IC50': {'memantineHydrochloride': 131, 'carboplatin': 252.3, 'TMZ': 804.5}, 'exactIC25Concentrations': None, 'IC25AssumedHalfIC50': False, 'measuredClinicalPotencyOrBrainPK': False, 'IC50CIReported': False}, {'kind': 'in_vitro_viability_percent_mean_SD', 'timeHours': 24, 'memantineDrugOnly': {'mean': 69.5, 'SD': 9.9}, 'memantinePlusUS': {'mean': 36.7, 'SD': 13.7}, 'carboplatinPlusUS': {'mean': 66.6, 'SD': 14.6}, 'TMZPlusUS': {'mean': 51.0, 'SD': 7.1}, 'Figure5N': 4, 'readoutIsViabilityNotPercentKilled': True, 'USAloneCytotoxicityPresent': True, 'allUSAloneContrastsFormallyQuantified': False, 'formalSynergyEstablished': False, 'patientBenefitEstablished': False}, {'kind': 'in_vitro_viability_with_source_text_plot_disagreement', 'timeHours': 72, 'carboplatinDrugOnly': {'mean': 44.9, 'SD': 1.6}, 'carboplatinPlusUS': {'mean': 23.2, 'SD': 6.2}, 'textClaimsMemantinePlateau': True, 'textClaimsCarboplatinMostCytotoxic72h': True, 'plotMem72LowerThan24Visible': True, 'plotMem72BelowCarb72Visible': True, 'exactMem72MeansNotDigitized': True, 'textPlotDiscrepancyResolved': False, 'crossTimeEquivalenceEstablished': False}, {'kind': 'authors_mechanistic_interpretation_with_unchecked_companion_results', 'mainAssayMethods': ['cellROXoxidativestress', 'JC1MMP2D', 'caspase3/7activation'], 'companionFiguresRead': False, 'JC1Is3DSpheroidAssay': False, 'NMDAPiezoCalciumNecessityTestVerified': False, 'directOxygenHypoxiaAssayInMain': False, 'predictedMemBBBProbability': 0.988, 'predictedMemLogP': 3.116, 'predictedMemTPSAAngstrom2': 26.02, 'humanBBBExposureSafetyEstablished': False, 'clinicalSonosensitizerEfficacyEstablished': False}]",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 13,
+          "printedPage": 13,
+          "nativeSection": "Figure4/viabilityresults"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 14,
+          "printedPage": 14,
+          "nativeSection": "Figure5/discussion"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q07",
+      "answer": "No failedconstruct/assayfloworMLinvalidSMILESattritiondetailsmain.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "US/exposure/viabilitymethods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "MLdescriptors/model"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 10,
+          "printedPage": 10,
+          "nativeSection": "Figure2/splits"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 14,
+          "printedPage": 14,
+          "nativeSection": "Figure5/discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 17,
+          "printedPage": 17,
+          "nativeSection": "Companions/contributions"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q08",
+      "answer": "No clinicaladverseeventstudy.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 6,
+          "printedPage": 6,
+          "nativeSection": "Assays/statistics/ethics/database"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 12,
+          "printedPage": 12,
+          "nativeSection": "Figure3/IC50/ADMET"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 13,
+          "printedPage": 13,
+          "nativeSection": "Figure4/viabilityresults"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q09",
+      "answer": "Singlecellline/replicateuncertainty/PUlabelassumptions/sourcecontradictions/translation.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "US/exposure/viabilitymethods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 14,
+          "printedPage": 14,
+          "nativeSection": "Figure5/discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 16,
+          "printedPage": 16,
+          "nativeSection": "Discussion/conclusions/limits"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 17,
+          "printedPage": 17,
+          "nativeSection": "Companions/contributions"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q10",
+      "answer": "D25/C04memantinehydrochloride/GBMU87MGsonodynamicmodelcontext.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Rationale"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 12,
+          "printedPage": 12,
+          "nativeSection": "Figure3/IC50/ADMET"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 13,
+          "printedPage": 13,
+          "nativeSection": "Figure4/viabilityresults"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 16,
+          "printedPage": 16,
+          "nativeSection": "Discussion/conclusions/limits"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q11",
+      "answer": "{'reportId': 'REED-8a2ed81b01816b252b0c', 'studyFamilies': ['U87MGmagnetic3DspheroidNAM', '364compoundPUdataset'], 'citedPriorDatta2024PMID': '39434433', 'citedFutureSelectedNMDARadiationPMID': '30970642', 'citedOriginalReportsRead': 0, 'newIndependentTrialCount': 0, 'newIndependentPatientCount': 0, 'uniqueCrossCorpusPatientCountAdjudicated': False, 'samePopulationAcrossResults': 'SingleU87MGmodel/constructsreusedacrosstimes/assays,MLmoleculesnotpatients', 'locators': [{'kind': 'pdf', 'sourceSha256': '5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9', 'physicalPage': 3, 'printedPage': 3, 'nativeSection': 'Rationale'}, {'kind': 'pdf', 'sourceSha256': '5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9', 'physicalPage': 6, 'printedPage': 6, 'nativeSection': 'Assays/statistics/ethics/database'}, {'kind': 'pdf', 'sourceSha256': '5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9', 'physicalPage': 18, 'printedPage': 18, 'nativeSection': 'References'}, {'kind': 'pdf', 'sourceSha256': '5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9', 'physicalPage': 19, 'printedPage': 19, 'nativeSection': 'References'}]}",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 14,
+          "printedPage": 14,
+          "nativeSection": "Figure5/discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 18,
+          "printedPage": 18,
+          "nativeSection": "References"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 19,
+          "printedPage": 19,
+          "nativeSection": "References"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q12",
+      "answer": "RudrajitMajumder,PriyankanDatta,SreejeshMoolayadukkam,IshwarK.Puri.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 1,
+          "printedPage": 1,
+          "nativeSection": "Abstract/dataaccess"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 2,
+          "printedPage": 2,
+          "nativeSection": "Funding/conflicts/introduction"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 4,
+          "printedPage": 4,
+          "nativeSection": "Figure1/reagents/culture"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q13",
+      "answer": "PLOSOne21(8)e0354981published12Aug2026,exactDOI.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 1,
+          "printedPage": 1,
+          "nativeSection": "Abstract/dataaccess"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 6,
+          "printedPage": 6,
+          "nativeSection": "Assays/statistics/ethics/database"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 17,
+          "printedPage": 17,
+          "nativeSection": "Companions/contributions"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 19,
+          "printedPage": 19,
+          "nativeSection": "References"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q14",
+      "answer": "{'paperId': 'REED-8a2ed81b01816b252b0c', 'sourceId': 'REED2-CAL-14-MAIN', 'resultIds': ['REED2-CAL-14-O01', 'REED2-CAL-14-O02', 'REED2-CAL-14-O03', 'REED2-CAL-14-O04', 'REED2-CAL-14-O05'], 'claimIds': ['REED2-CAL-14-C01', 'REED2-CAL-14-C02', 'REED2-CAL-14-C03', 'REED2-CAL-14-C04', 'REED2-CAL-14-C05'], 'existingGuideIds': ['G-DRUG-D25', 'G-CONDITION-C04'], 'purpose': 'Private memantinehydrochloride/GBM preclinical ultrasound-combination and model context, with unresolved text/plot differences; no clinical efficacy/safety/PK adoption', 'publicationState': 'private_unapplied_candidate', 'canonicalChanges': 0, 'newIndependentTrials': 0, 'newIndependentPatients': 0}",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 14,
+          "printedPage": 14,
+          "nativeSection": "Figure5/discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 15,
+          "printedPage": 15,
+          "nativeSection": "Figure6/mechanisms"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 16,
+          "printedPage": 16,
+          "nativeSection": "Discussion/conclusions/limits"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending",
+      "downstreamMapping": {
+        "paperId": "REED-8a2ed81b01816b252b0c",
+        "sourceId": "REED2-CAL-14-MAIN",
+        "resultIds": [
+          "REED2-CAL-14-O01",
+          "REED2-CAL-14-O02",
+          "REED2-CAL-14-O03",
+          "REED2-CAL-14-O04",
+          "REED2-CAL-14-O05"
+        ],
+        "claimIds": [
+          "REED2-CAL-14-C01",
+          "REED2-CAL-14-C02",
+          "REED2-CAL-14-C03",
+          "REED2-CAL-14-C04",
+          "REED2-CAL-14-C05"
+        ],
+        "existingGuideIds": [
+          "G-DRUG-D25",
+          "G-CONDITION-C04"
+        ],
+        "purpose": "Private memantinehydrochloride/GBM preclinical ultrasound-combination and model context, with unresolved text/plot differences; no clinical efficacy/safety/PK adoption",
+        "publicationState": "private_unapplied_candidate",
+        "canonicalChanges": 0,
+        "newIndependentTrials": 0,
+        "newIndependentPatients": 0
+      }
+    },
+    {
+      "id": "Q15",
+      "answer": "U87MGdrug-USviabilityeffectsreported,butMLprobabilitynotbenefit/source72hmemplottextunresolved;clinicalefficacyunknown.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 16,
+          "printedPage": 16,
+          "nativeSection": "Discussion/conclusions/limits"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 17,
+          "printedPage": 17,
+          "nativeSection": "Companions/contributions"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    }
+  ],
+  "sourceQualifications": [
+    {
+      "id": "REED2-CAL-14-MODELS",
+      "description": "SinglecommercialU87MGline,10kcellsspheroid/wellnot10kpatients. No human/animal efficacy;no patient-derivedmulticellularTME/immune/vascularBBBvalidation. Authorsfuturemodelsneeded,notcompletedclinicaltranslation.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 4,
+          "printedPage": 4,
+          "nativeSection": "Figure1/reagents/culture"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "US/exposure/viabilitymethods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 6,
+          "printedPage": 6,
+          "nativeSection": "Assays/statistics/ethics/database"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 16,
+          "printedPage": 16,
+          "nativeSection": "Discussion/conclusions/limits"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-14-COMPOUNDS",
+      "description": "Memantinehydrochloride/carboplatin/TMZactualtesteddrugs,notinterchangeablewithclomipramineorotherAlzheimerdrugs. Differentdrug-specificIC50/IC25exposuresare notmatchedclinicaldoses orhead-to-headpatientregimens.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 1,
+          "printedPage": 1,
+          "nativeSection": "Abstract/dataaccess"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Rationale"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 4,
+          "printedPage": 4,
+          "nativeSection": "Figure1/reagents/culture"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 13,
+          "printedPage": 13,
+          "nativeSection": "Figure4/viabilityresults"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-14-ML_LABELS",
+      "description": "364molecules175positives204RDKitdescriptors;photosensitiveconfirmedlabelsplusothercuratedsensitizersusedtopredictsonoresponsiveness,unlabelednotconfirmednegative. SCAR/randompositive-labelselection/classpriorassumptionnotindependentlyvalidatedfromliteraturecuration. No rawdataset/code rerun.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 6,
+          "printedPage": 6,
+          "nativeSection": "Assays/statistics/ethics/database"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "MLdescriptors/model"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 8,
+          "printedPage": 8,
+          "nativeSection": "PUloss"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Classprior/modeltraining"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-14-ML_METRICS",
+      "description": "Classprior.5454,70/15/15splits,500epochs/Adam.001,nnPU/fPUsurrogate. RecallDNN.95382/GNN.8231notprecision/AUC/clinicalresponseprobability. Thresholdtuning/calibration/scaffoldleakage/externaltestnotaudited;99.45/98.35%drugconfidence notprobabilityofpatientbenefit. Five-runsprior.2-.8/7.7%sensitivityreportednotnewbiologicalreplication.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Classprior/modeltraining"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 10,
+          "printedPage": 10,
+          "nativeSection": "Figure2/splits"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 11,
+          "printedPage": 11,
+          "nativeSection": "Table1/predictions"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-14-IC50",
+      "description": "72hdrugonlyIC50mem131uM/carb252.3/TMZ804.5,ATPmetabolicreadoutnotclinicalresponseorhumanpotency. NoIC50CIorPK/brainconcentrationtherapeuticwindowestablished;IC25actualvaluesnotmain,notautomaticallyhalfIC50.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "US/exposure/viabilitymethods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 12,
+          "printedPage": 12,
+          "nativeSection": "Figure3/IC50/ADMET"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 13,
+          "printedPage": 13,
+          "nativeSection": "Figure4/viabilityresults"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-14-US_EXPOSURE",
+      "description": "US1MHz1W/cm2duty20%pulse200ms5min,drug4hpreUS. Drugonly/USonly/combinationdistinct. Methods groupvi repeatsUS+IC50whileFig5sixtharmUS+IC25;not silentlyrepaired. Methodsviability24hversusresults24/72hreadsetsretained.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "US/exposure/viabilitymethods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 13,
+          "printedPage": 13,
+          "nativeSection": "Figure4/viabilityresults"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 14,
+          "printedPage": 14,
+          "nativeSection": "Figure5/discussion"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-14-US_ALONE",
+      "description": "USalonehasintrinsiccytotoxicityinplots. Drug-attributableUSbenefitrequiresexplicitcomparisonwithUSaloneaswellasdrugonly;notallformalcontrastsquantified. Drug+USreductionversusdrugonlyisnotsynergy/additivitytestorproofROSchemicalactivationratherthanmechanicaleffect.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "US/exposure/viabilitymethods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 13,
+          "printedPage": 13,
+          "nativeSection": "Figure4/viabilityresults"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 14,
+          "printedPage": 14,
+          "nativeSection": "Figure5/discussion"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-14-MEM24",
+      "description": "Main24hmemdrug69.5SD9.9%viability/US+mem36.7SD13.7%,carb+US66.6SD14.6/TMZ+US51SD7.1reported,notabsolutetumorresponseorpairwiseclinicalsuperiority. Valuesareviabilitynotpercentkilled/relativebenefitreduction;exactcomparisondenominatorandSDnotCI.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 13,
+          "printedPage": 13,
+          "nativeSection": "Figure4/viabilityresults"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 14,
+          "printedPage": 14,
+          "nativeSection": "Figure5/discussion"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-14-TIME_CONFLICT",
+      "description": "Text/captionclaimmemantineplateaus24to72handcarbmostcytotoxic72h. Figure5dmem72hIC50/combo barsvisiblylowerthanFigure5c24h andappearbelowcarb72hFig5b. Unresolvedtext-plotissue,exact72hmemmeansnotdigitized/chosenorrepaired;no verifiedcross-timesignificanceorconstantpotencyclaim.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 13,
+          "printedPage": 13,
+          "nativeSection": "Figure4/viabilityresults"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 14,
+          "printedPage": 14,
+          "nativeSection": "Figure5/discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 16,
+          "printedPage": 16,
+          "nativeSection": "Discussion/conclusions/limits"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-14-CARB72",
+      "description": "Main72hcarbdrug44.9SD1.6/US+carb23.2SD6.2%viabilitysourcevaluesretained. Noequatingwithmemantine72hunknownexactmeansorignoringtext-plotrankingconflict. TMZandmemtime-nullclaimsattributednotprovenequivalence.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 13,
+          "printedPage": 13,
+          "nativeSection": "Figure4/viabilityresults"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 14,
+          "printedPage": 14,
+          "nativeSection": "Figure5/discussion"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-14-MECHANISM",
+      "description": "ROS/JC1/caspase3-7methodsandcompanionS1-S3claimsinmain,companionpixelsnotread. JC1methodspecifically2Dmonolayer,notassumed3D. Fig6NMDA/Piezo1Caoverload/sonoporation/transportchainisschematic/inferred,notdirectlyvalidatednecessity/rescue/quantifiedintracellulardrugorcalciumassayhere.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 6,
+          "printedPage": 6,
+          "nativeSection": "Assays/statistics/ethics/database"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 14,
+          "printedPage": 14,
+          "nativeSection": "Figure5/discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 15,
+          "printedPage": 15,
+          "nativeSection": "Figure6/mechanisms"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 16,
+          "printedPage": 16,
+          "nativeSection": "Discussion/conclusions/limits"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 17,
+          "printedPage": 17,
+          "nativeSection": "Companions/contributions"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-14-SPHEROID",
+      "description": "Diameter306.7SD6.2printeduMversusimage100umlengthscalebar,unitoddityretainednotchemicaldose. Live/deadNucBlue/NucGreenimageisinterpretedasa hypoxiccorebyauthors,no directoxygen/hypoxiaspecificassaypresentedinmain. Noestablishedphysiologicalequivalencebyimagealone.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 11,
+          "printedPage": 11,
+          "nativeSection": "Table1/predictions"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 12,
+          "printedPage": 12,
+          "nativeSection": "Figure3/IC50/ADMET"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-14-ADMET",
+      "description": "BBB.988/lipophilicity3.116/TPSA26.02predictedandS1Tableunchecked,notmeasuredhumanbrainPK/lowestclinicalhepatotoxicityorhematotoxicity. CitedmemmouseBBBantiporterandUSdeliveryclinicalreportsnotthisstudypatients. Ref43albuminpaclitaxeltrialnotcarboplatinasbroadmainwordingimplies.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 12,
+          "printedPage": 12,
+          "nativeSection": "Figure3/IC50/ADMET"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 16,
+          "printedPage": 16,
+          "nativeSection": "Discussion/conclusions/limits"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 17,
+          "printedPage": 17,
+          "nativeSection": "Companions/contributions"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 19,
+          "printedPage": 19,
+          "nativeSection": "References"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-14-REPLICATION_STATS",
+      "description": "Figure5n4versusmethods-atleasttriplicate;biological/technicalindependence/randomization/blinding/failedconstructsnotclear. One-wayANOVAandstarbracketsnotper-cellindependentsamples/allcrossdrugortimespecificcontrasts;multiplecomparisonmethod/CIandrawdataunchecked.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 6,
+          "printedPage": 6,
+          "nativeSection": "Assays/statistics/ethics/database"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 10,
+          "printedPage": 10,
+          "nativeSection": "Figure2/splits"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 11,
+          "printedPage": 11,
+          "nativeSection": "Table1/predictions"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 14,
+          "printedPage": 14,
+          "nativeSection": "Figure5/discussion"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-14-OVERLAP",
+      "description": "PriorDatta2024TMZ/5ALA3Dmodelcitedref21notfreshlyreadprimaryproof;presentdrug/modelresultsshareU87MGpipeline,notadditionalclinicaltrials. Ref46NMDA/GBMradiationPMID30970642isfutureselectedreportcitationonly,nopriorPASStransfer.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Rationale"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 17,
+          "printedPage": 17,
+          "nativeSection": "Companions/contributions"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 18,
+          "printedPage": 18,
+          "nativeSection": "References"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 19,
+          "printedPage": 19,
+          "nativeSection": "References"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-14-DISCLOSURES_ACCESS",
+      "description": "Nospecificfunding/nocompetingasdeclared;Puri fundingacquisitionrole/patentbackgroundnotindependentCOIadjudication. Purchasedreagentsasreported. Ownall19textpages/6materialvisuals10-15read;S1Table/S2XLSX/S1Text/S1-S3Figs/rawcode/currentintegrityunchecked,noacquisition.No clinicalguidance/adoption.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 1,
+          "printedPage": 1,
+          "nativeSection": "Abstract/dataaccess"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 2,
+          "printedPage": 2,
+          "nativeSection": "Funding/conflicts/introduction"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 6,
+          "printedPage": 6,
+          "nativeSection": "Assays/statistics/ethics/database"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 17,
+          "printedPage": 17,
+          "nativeSection": "Companions/contributions"
+        }
+      ]
+    }
+  ],
+  "overlapRecords": [
+    {
+      "reportId": "REED-8a2ed81b01816b252b0c",
+      "studyFamilies": [
+        "U87MGmagnetic3DspheroidNAM",
+        "364compoundPUdataset"
+      ],
+      "citedPriorDatta2024PMID": "39434433",
+      "citedFutureSelectedNMDARadiationPMID": "30970642",
+      "citedOriginalReportsRead": 0,
+      "newIndependentTrialCount": 0,
+      "newIndependentPatientCount": 0,
+      "uniqueCrossCorpusPatientCountAdjudicated": false,
+      "samePopulationAcrossResults": "SingleU87MGmodel/constructsreusedacrosstimes/assays,MLmoleculesnotpatients",
+      "locators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Rationale"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 6,
+          "printedPage": 6,
+          "nativeSection": "Assays/statistics/ethics/database"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 18,
+          "printedPage": 18,
+          "nativeSection": "References"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "5cb8846239661263e82bffc5a5cc922c615e10a631f55e593301b0869a99dff9",
+          "physicalPage": 19,
+          "printedPage": 19,
+          "nativeSection": "References"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "SinglecommercialU87MGline,10kcellsspheroid/wellnot10kpatients. No human/animal efficacy;no patient-derivedmulticellularTME/immune/vascularBBBvalidation. Authorsfuturemodelsneeded,notcompletedclinicaltranslation.",
+    "Memantinehydrochloride/carboplatin/TMZactualtesteddrugs,notinterchangeablewithclomipramineorotherAlzheimerdrugs. Differentdrug-specificIC50/IC25exposuresare notmatchedclinicaldoses orhead-to-headpatientregimens.",
+    "364molecules175positives204RDKitdescriptors;photosensitiveconfirmedlabelsplusothercuratedsensitizersusedtopredictsonoresponsiveness,unlabelednotconfirmednegative. SCAR/randompositive-labelselection/classpriorassumptionnotindependentlyvalidatedfromliteraturecuration. No rawdataset/code rerun.",
+    "Classprior.5454,70/15/15splits,500epochs/Adam.001,nnPU/fPUsurrogate. RecallDNN.95382/GNN.8231notprecision/AUC/clinicalresponseprobability. Thresholdtuning/calibration/scaffoldleakage/externaltestnotaudited;99.45/98.35%drugconfidence notprobabilityofpatientbenefit. Five-runsprior.2-.8/7.7%sensitivityreportednotnewbiologicalreplication.",
+    "72hdrugonlyIC50mem131uM/carb252.3/TMZ804.5,ATPmetabolicreadoutnotclinicalresponseorhumanpotency. NoIC50CIorPK/brainconcentrationtherapeuticwindowestablished;IC25actualvaluesnotmain,notautomaticallyhalfIC50.",
+    "US1MHz1W/cm2duty20%pulse200ms5min,drug4hpreUS. Drugonly/USonly/combinationdistinct. Methods groupvi repeatsUS+IC50whileFig5sixtharmUS+IC25;not silentlyrepaired. Methodsviability24hversusresults24/72hreadsetsretained.",
+    "USalonehasintrinsiccytotoxicityinplots. Drug-attributableUSbenefitrequiresexplicitcomparisonwithUSaloneaswellasdrugonly;notallformalcontrastsquantified. Drug+USreductionversusdrugonlyisnotsynergy/additivitytestorproofROSchemicalactivationratherthanmechanicaleffect.",
+    "Main24hmemdrug69.5SD9.9%viability/US+mem36.7SD13.7%,carb+US66.6SD14.6/TMZ+US51SD7.1reported,notabsolutetumorresponseorpairwiseclinicalsuperiority. Valuesareviabilitynotpercentkilled/relativebenefitreduction;exactcomparisondenominatorandSDnotCI.",
+    "Text/captionclaimmemantineplateaus24to72handcarbmostcytotoxic72h. Figure5dmem72hIC50/combo barsvisiblylowerthanFigure5c24h andappearbelowcarb72hFig5b. Unresolvedtext-plotissue,exact72hmemmeansnotdigitized/chosenorrepaired;no verifiedcross-timesignificanceorconstantpotencyclaim.",
+    "Main72hcarbdrug44.9SD1.6/US+carb23.2SD6.2%viabilitysourcevaluesretained. Noequatingwithmemantine72hunknownexactmeansorignoringtext-plotrankingconflict. TMZandmemtime-nullclaimsattributednotprovenequivalence.",
+    "ROS/JC1/caspase3-7methodsandcompanionS1-S3claimsinmain,companionpixelsnotread. JC1methodspecifically2Dmonolayer,notassumed3D. Fig6NMDA/Piezo1Caoverload/sonoporation/transportchainisschematic/inferred,notdirectlyvalidatednecessity/rescue/quantifiedintracellulardrugorcalciumassayhere.",
+    "Diameter306.7SD6.2printeduMversusimage100umlengthscalebar,unitoddityretainednotchemicaldose. Live/deadNucBlue/NucGreenimageisinterpretedasa hypoxiccorebyauthors,no directoxygen/hypoxiaspecificassaypresentedinmain. Noestablishedphysiologicalequivalencebyimagealone.",
+    "BBB.988/lipophilicity3.116/TPSA26.02predictedandS1Tableunchecked,notmeasuredhumanbrainPK/lowestclinicalhepatotoxicityorhematotoxicity. CitedmemmouseBBBantiporterandUSdeliveryclinicalreportsnotthisstudypatients. Ref43albuminpaclitaxeltrialnotcarboplatinasbroadmainwordingimplies.",
+    "Figure5n4versusmethods-atleasttriplicate;biological/technicalindependence/randomization/blinding/failedconstructsnotclear. One-wayANOVAandstarbracketsnotper-cellindependentsamples/allcrossdrugortimespecificcontrasts;multiplecomparisonmethod/CIandrawdataunchecked.",
+    "PriorDatta2024TMZ/5ALA3Dmodelcitedref21notfreshlyreadprimaryproof;presentdrug/modelresultsshareU87MGpipeline,notadditionalclinicaltrials. Ref46NMDA/GBMradiationPMID30970642isfutureselectedreportcitationonly,nopriorPASStransfer.",
+    "Nospecificfunding/nocompetingasdeclared;Puri fundingacquisitionrole/patentbackgroundnotindependentCOIadjudication. Purchasedreagentsasreported. Ownall19textpages/6materialvisuals10-15read;S1Table/S2XLSX/S1Text/S1-S3Figs/rawcode/currentintegrityunchecked,noacquisition.No clinicalguidance/adoption."
+  ],
+  "newIndependentTrials": 0,
+  "newIndependentPatients": 0,
+  "scientificAcceptance": false,
+  "humanApproval": false,
+  "released": false
+}

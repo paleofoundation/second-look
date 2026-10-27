@@ -1,0 +1,1604 @@
+{
+  "schemaVersion": "REED-CAL-01source-extraction-v1",
+  "source": {
+    "intakeReportId": "REED-e677def9c553f707cfc7",
+    "pmid": "18608093",
+    "doi": "10.1080/17482960802195632",
+    "ref": "$REMAPRX_REED_ROOT/minocycline-als/pdfs/18608093-gordon-2008.pdf",
+    "sha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+    "physicalPages": 21,
+    "title": "A novel, efficient, randomized selection trial comparing combinations of drug therapy for ALS."
+  },
+  "paper": {
+    "id": "REED-CAL-01-P1",
+    "pmid": "18608093",
+    "doi": "10.1080/17482960802195632",
+    "sourceKind": "NIHauthor-manuscript_of_published2008article",
+    "publicationYear": 2008,
+    "repositoryAvailabilityYear": 2015,
+    "canonicalReviewComplete": false
+  },
+  "experiment": {
+    "id": "REED-CAL-01-E1",
+    "design": "Randomizeddouble-blindphase2selectiontrial",
+    "condition": "ALS",
+    "purpose": "Combinationselectionforfurtherresearch",
+    "sites": 17,
+    "randomizedTotal": 86,
+    "primaryPoolTotal": 60,
+    "primaryPoolArmN": {
+      "REED-CAL-01-ARM-MC": 30,
+      "REED-CAL-01-ARM-CC": 30
+    },
+    "secondaryAllRandomizedArmN": {
+      "REED-CAL-01-ARM-MC": 39,
+      "REED-CAL-01-ARM-CC": 47
+    },
+    "concurrentPlacebo": false,
+    "sourceLocators": [
+      {
+        "kind": "pdf",
+        "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+        "physicalPage": 3,
+        "manuscriptPage": 3,
+        "journalPrintedPage": null,
+        "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+        "section": "Study design"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+        "physicalPage": 6,
+        "manuscriptPage": 6,
+        "journalPrintedPage": null,
+        "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+        "section": "Results: Patients"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+        "physicalPage": 15,
+        "manuscriptPage": 15,
+        "journalPrintedPage": null,
+        "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+        "section": "Figure1",
+        "figure": "1"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+        "physicalPage": 16,
+        "manuscriptPage": 16,
+        "journalPrintedPage": null,
+        "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+        "section": "TableI",
+        "table": "I"
+      }
+    ]
+  },
+  "arms": [
+    {
+      "id": "REED-CAL-01-ARM-MC",
+      "intervention": "minocycline100mg+creatine10g,twicedaily",
+      "route": "oral",
+      "duration": "6months",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 4,
+          "manuscriptPage": 4,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "Study design"
+        }
+      ]
+    },
+    {
+      "id": "REED-CAL-01-ARM-CC",
+      "intervention": "celecoxib400mg+creatine10g,twicedaily",
+      "route": "oral",
+      "duration": "6months",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 4,
+          "manuscriptPage": 4,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "Study design"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "REED-CAL-01-R01",
+      "experimentId": "REED-CAL-01-E1",
+      "outcome": "ALSFRS-R decline; primary selection endpoint",
+      "population": "First60randomized participants,30perarm;58measured6months,2deaths assignedscore0",
+      "timepoint": "6months",
+      "arms": [
+        "REED-CAL-01-ARM-MC",
+        "REED-CAL-01-ARM-CC"
+      ],
+      "estimate": {
+        "units": "ALSFRS-R points decline over6months",
+        "values": {
+          "REED-CAL-01-ARM-MC": {
+            "n": 30,
+            "mean": 6.47,
+            "sd": 9.14,
+            "ci95": [
+              3.2,
+              9.7
+            ]
+          },
+          "REED-CAL-01-ARM-CC": {
+            "n": 30,
+            "mean": 5.27,
+            "sd": 5.54,
+            "ci95": [
+              3.3,
+              7.3
+            ]
+          }
+        },
+        "reportedAbsoluteDifference": 1.2,
+        "selectionThreshold": 1.035,
+        "selectedArm": "REED-CAL-01-ARM-CC"
+      },
+      "uncertainty": {
+        "betweenArmConfidenceInterval": null,
+        "betweenArmConfidenceIntervalMissingReason": "not_reported_after_source_read",
+        "primarySelectionPValue": null,
+        "primarySelectionPValueMissingReason": "not_applicable_to_reported_selection_rule"
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 7,
+          "manuscriptPage": 7,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "Primary analysis: selection based on the ALSFRS-R"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 16,
+          "manuscriptPage": 16,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "TableI",
+          "table": "I",
+          "row": "No.ofpatientsrandomized"
+        }
+      ],
+      "notes": "SmallerdeclinefavoredCCunderprespecifiedselectioncriterion;notproofCCefficacyorformalstatisticalsuperiority. Do not substitute86forprimaryanalysis60.",
+      "extractionBasis": "direct_full_text_candidate",
+      "verificationState": "pending_independent_source_audit",
+      "acceptedSupport": false,
+      "humanApproval": "pending",
+      "publicationState": "private_candidate",
+      "grade": null,
+      "benefitGrade": null
+    },
+    {
+      "id": "REED-CAL-01-R02",
+      "experimentId": "REED-CAL-01-E1",
+      "outcome": "Secondary futility decision",
+      "population": "Eachfirst-poolarmn30versushistoricalcontrolmean5.82(SD6.77)",
+      "timepoint": "6months",
+      "arms": [
+        "REED-CAL-01-ARM-MC",
+        "REED-CAL-01-ARM-CC"
+      ],
+      "estimate": {
+        "decision": {
+          "REED-CAL-01-ARM-MC": "futilitycriterionnotmet",
+          "REED-CAL-01-ARM-CC": "futilitycriterionnotmet"
+        },
+        "historicalControl": {
+          "meanSixMonthDecline": 5.82,
+          "sd": 6.77
+        },
+        "comparison": "Historicaldatafromseparategabapentintrial;notconcurrentplacebo"
+      },
+      "uncertainty": {
+        "efficacyConclusion": "not_established",
+        "pValue": null,
+        "pValueMissingReason": "not_reported_after_source_read"
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 5,
+          "manuscriptPage": 5,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "Statistical analysis: secondary futility analysis"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 7,
+          "manuscriptPage": 7,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "Secondary futility analyses"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 10,
+          "manuscriptPage": 10,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "Discussion: limitations"
+        }
+      ],
+      "notes": "Failuretorejectthenullhypothesisofsuperiorityinafutilitydesignisnotdemonstratedefficacy. No historicalcohortNwasextracted;donotaddindependentparticipants.",
+      "extractionBasis": "direct_full_text_candidate",
+      "verificationState": "pending_independent_source_audit",
+      "acceptedSupport": false,
+      "humanApproval": "pending",
+      "publicationState": "private_candidate",
+      "grade": null,
+      "benefitGrade": null
+    },
+    {
+      "id": "REED-CAL-01-R03",
+      "experimentId": "REED-CAL-01-E1",
+      "outcome": "Death by endoftrial",
+      "population": "All86randomizedparticipants,39MCand47CC",
+      "timepoint": "6months",
+      "arms": [
+        "REED-CAL-01-ARM-MC",
+        "REED-CAL-01-ARM-CC"
+      ],
+      "estimate": {
+        "units": "patients",
+        "values": {
+          "REED-CAL-01-ARM-MC": {
+            "events": 4,
+            "denominator": 39
+          },
+          "REED-CAL-01-ARM-CC": {
+            "events": 1,
+            "denominator": 47
+          }
+        },
+        "reportedPValue": 0.16,
+        "test": "Fisherexact"
+      },
+      "uncertainty": {
+        "effectSize": null,
+        "effectSizeMissingReason": "not_reported_after_source_read",
+        "confidenceInterval": null,
+        "confidenceIntervalMissingReason": "not_reported_after_source_read"
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 7,
+          "manuscriptPage": 7,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "Analyses of secondary outcome measures"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 15,
+          "manuscriptPage": 15,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "Figure1",
+          "figure": "1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 16,
+          "manuscriptPage": 16,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "TableI",
+          "table": "I"
+        }
+      ],
+      "notes": "Do not calla statisticallyestablishedmortalitydifference; first60had2MCdeaths, whichareseparatefromtheall86analysis.",
+      "extractionBasis": "direct_full_text_candidate",
+      "verificationState": "pending_independent_source_audit",
+      "acceptedSupport": false,
+      "humanApproval": "pending",
+      "publicationState": "private_candidate",
+      "grade": null,
+      "benefitGrade": null
+    },
+    {
+      "id": "REED-CAL-01-R04",
+      "experimentId": "REED-CAL-01-E1",
+      "outcome": "Premature treatment discontinuation and adherence",
+      "population": "Wholetrial86randomizedparticipants",
+      "timepoint": "6months",
+      "arms": [
+        "REED-CAL-01-ARM-MC",
+        "REED-CAL-01-ARM-CC"
+      ],
+      "estimate": {
+        "units": "patients;percentpill-countadherence",
+        "values": {
+          "REED-CAL-01-ARM-MC": {
+            "treatmentDiscontinuations": 10,
+            "randomizedN": 39,
+            "meanAdherencePercent": 92
+          },
+          "REED-CAL-01-ARM-CC": {
+            "treatmentDiscontinuations": 12,
+            "randomizedN": 47,
+            "meanAdherencePercent": 85
+          }
+        }
+      },
+      "uncertainty": {
+        "betweenArmPValue": null,
+        "betweenArmPValueMissingReason": "not_reported_after_source_read"
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 7,
+          "manuscriptPage": 7,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "Results: Patients"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 16,
+          "manuscriptPage": 16,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "TableI",
+          "table": "I"
+        }
+      ],
+      "notes": "Treatmentdiscontinuationisnotfollow-uploss;authorsreportcontinuedmonthlyevaluationsandallrandomizedreached6monthsordeath.",
+      "extractionBasis": "direct_full_text_candidate",
+      "verificationState": "pending_independent_source_audit",
+      "acceptedSupport": false,
+      "humanApproval": "pending",
+      "publicationState": "private_candidate",
+      "grade": null,
+      "benefitGrade": null
+    },
+    {
+      "id": "REED-CAL-01-R05",
+      "experimentId": "REED-CAL-01-E1",
+      "outcome": "Nonserious rash",
+      "population": "TableIVsecondaryanalysisall86;39MCand47CC",
+      "timepoint": "6months",
+      "arms": [
+        "REED-CAL-01-ARM-MC",
+        "REED-CAL-01-ARM-CC"
+      ],
+      "estimate": {
+        "units": "patientswithspecificreportednonseriousevent",
+        "values": {
+          "REED-CAL-01-ARM-MC": {
+            "events": 1,
+            "denominator": 39,
+            "reportedPercent": 2.6
+          },
+          "REED-CAL-01-ARM-CC": {
+            "events": 10,
+            "denominator": 47,
+            "reportedPercent": 21.3
+          }
+        },
+        "reportedPValue": 0.01,
+        "test": "Fisherexact"
+      },
+      "uncertainty": {
+        "confidenceInterval": null,
+        "confidenceIntervalMissingReason": "not_reported_after_source_read",
+        "multiplicityAdjustedPValue": null,
+        "multiplicityAdjustedPValueMissingReason": "not_reported_after_source_read"
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 20,
+          "manuscriptPage": 20,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "TableIV",
+          "table": "IV",
+          "row": "Nonserious rash",
+          "columns": "Secondaryanalysisn86:CC,MC,pvalue"
+        }
+      ],
+      "notes": "Reportedexploratorysafetycomparison;notdrug-attributableriskestimateorproofofsafety. ClinicalcreatinineeventsarenotthebroaderTableVlaboratory-abnormalitycounts.",
+      "extractionBasis": "direct_full_text_candidate",
+      "verificationState": "pending_independent_source_audit",
+      "acceptedSupport": false,
+      "humanApproval": "pending",
+      "publicationState": "private_candidate",
+      "grade": null,
+      "benefitGrade": null
+    },
+    {
+      "id": "REED-CAL-01-R06",
+      "experimentId": "REED-CAL-01-E1",
+      "outcome": "Nonserious constipation",
+      "population": "TableIVsecondaryanalysisall86;39MCand47CC",
+      "timepoint": "6months",
+      "arms": [
+        "REED-CAL-01-ARM-MC",
+        "REED-CAL-01-ARM-CC"
+      ],
+      "estimate": {
+        "units": "patientswithspecificreportednonseriousevent",
+        "values": {
+          "REED-CAL-01-ARM-MC": {
+            "events": 10,
+            "denominator": 39,
+            "reportedPercent": 25.6
+          },
+          "REED-CAL-01-ARM-CC": {
+            "events": 4,
+            "denominator": 47,
+            "reportedPercent": 8.5
+          }
+        },
+        "reportedPValue": 0.032,
+        "test": "Pearsonchi-square"
+      },
+      "uncertainty": {
+        "confidenceInterval": null,
+        "confidenceIntervalMissingReason": "not_reported_after_source_read",
+        "multiplicityAdjustedPValue": null,
+        "multiplicityAdjustedPValueMissingReason": "not_reported_after_source_read"
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 20,
+          "manuscriptPage": 20,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "TableIV",
+          "table": "IV",
+          "row": "Nonserious constipation",
+          "columns": "Secondaryanalysisn86:CC,MC,pvalue"
+        }
+      ],
+      "notes": "Reportedexploratorysafetycomparison;notdrug-attributableriskestimateorproofofsafety. ClinicalcreatinineeventsarenotthebroaderTableVlaboratory-abnormalitycounts.",
+      "extractionBasis": "direct_full_text_candidate",
+      "verificationState": "pending_independent_source_audit",
+      "acceptedSupport": false,
+      "humanApproval": "pending",
+      "publicationState": "private_candidate",
+      "grade": null,
+      "benefitGrade": null
+    },
+    {
+      "id": "REED-CAL-01-R07",
+      "experimentId": "REED-CAL-01-E1",
+      "outcome": "Nonserious depression",
+      "population": "TableIVsecondaryanalysisall86;39MCand47CC",
+      "timepoint": "6months",
+      "arms": [
+        "REED-CAL-01-ARM-MC",
+        "REED-CAL-01-ARM-CC"
+      ],
+      "estimate": {
+        "units": "patientswithspecificreportednonseriousevent",
+        "values": {
+          "REED-CAL-01-ARM-MC": {
+            "events": 9,
+            "denominator": 39,
+            "reportedPercent": 23.1
+          },
+          "REED-CAL-01-ARM-CC": {
+            "events": 2,
+            "denominator": 47,
+            "reportedPercent": 4.3
+          }
+        },
+        "reportedPValue": 0.02,
+        "test": "Pearsonchi-square"
+      },
+      "uncertainty": {
+        "confidenceInterval": null,
+        "confidenceIntervalMissingReason": "not_reported_after_source_read",
+        "multiplicityAdjustedPValue": null,
+        "multiplicityAdjustedPValueMissingReason": "not_reported_after_source_read"
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 20,
+          "manuscriptPage": 20,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "TableIV",
+          "table": "IV",
+          "row": "Nonserious depression",
+          "columns": "Secondaryanalysisn86:CC,MC,pvalue"
+        }
+      ],
+      "notes": "Reportedexploratorysafetycomparison;notdrug-attributableriskestimateorproofofsafety. ClinicalcreatinineeventsarenotthebroaderTableVlaboratory-abnormalitycounts.",
+      "extractionBasis": "direct_full_text_candidate",
+      "verificationState": "pending_independent_source_audit",
+      "acceptedSupport": false,
+      "humanApproval": "pending",
+      "publicationState": "private_candidate",
+      "grade": null,
+      "benefitGrade": null
+    },
+    {
+      "id": "REED-CAL-01-R08",
+      "experimentId": "REED-CAL-01-E1",
+      "outcome": "Clinically abnormal serum creatinine",
+      "population": "TableIVsecondaryanalysisall86;39MCand47CC",
+      "timepoint": "6months",
+      "arms": [
+        "REED-CAL-01-ARM-MC",
+        "REED-CAL-01-ARM-CC"
+      ],
+      "estimate": {
+        "units": "patientswithspecificreportednonseriousevent",
+        "values": {
+          "REED-CAL-01-ARM-MC": {
+            "events": 4,
+            "denominator": 39,
+            "reportedPercent": 10.3
+          },
+          "REED-CAL-01-ARM-CC": {
+            "events": 4,
+            "denominator": 47,
+            "reportedPercent": 8.5
+          }
+        },
+        "reportedPValue": 1.0,
+        "test": "Fisherexact"
+      },
+      "uncertainty": {
+        "confidenceInterval": null,
+        "confidenceIntervalMissingReason": "not_reported_after_source_read",
+        "multiplicityAdjustedPValue": null,
+        "multiplicityAdjustedPValueMissingReason": "not_reported_after_source_read"
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 20,
+          "manuscriptPage": 20,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "TableIV",
+          "table": "IV",
+          "row": "Clinically abnormal serum creatinine",
+          "columns": "Secondaryanalysisn86:CC,MC,pvalue"
+        }
+      ],
+      "notes": "Reportedexploratorysafetycomparison;notdrug-attributableriskestimateorproofofsafety. ClinicalcreatinineeventsarenotthebroaderTableVlaboratory-abnormalitycounts.",
+      "extractionBasis": "direct_full_text_candidate",
+      "verificationState": "pending_independent_source_audit",
+      "acceptedSupport": false,
+      "humanApproval": "pending",
+      "publicationState": "private_candidate",
+      "grade": null,
+      "benefitGrade": null
+    }
+  ],
+  "claims": [
+    {
+      "id": "REED-CAL-01-C01",
+      "text": "Theprespecifiedfirst-poolselectionrulefavoredcelecoxib+creatineoverminocycline+creatine;thisdoesnotestablishefficacy.",
+      "basis": "candidate_editorial_interpretation",
+      "resultIds": [
+        "REED-CAL-01-R01"
+      ],
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 7,
+          "manuscriptPage": 7,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "Primary analysis: selection based on the ALSFRS-R"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 16,
+          "manuscriptPage": 16,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "TableI",
+          "table": "I",
+          "row": "No.ofpatientsrandomized"
+        }
+      ],
+      "verificationState": "pending_independent_source_audit",
+      "acceptedSupport": false,
+      "humanApproval": "pending"
+    },
+    {
+      "id": "REED-CAL-01-C02",
+      "text": "Neithercombinationmetthehistorical-controlfutilitycriterion;thisisnotproofofbenefitversusplacebo.",
+      "basis": "candidate_editorial_interpretation",
+      "resultIds": [
+        "REED-CAL-01-R02"
+      ],
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 5,
+          "manuscriptPage": 5,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "Statistical analysis: secondary futility analysis"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 7,
+          "manuscriptPage": 7,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "Secondary futility analyses"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 10,
+          "manuscriptPage": 10,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "Discussion: limitations"
+        }
+      ],
+      "verificationState": "pending_independent_source_audit",
+      "acceptedSupport": false,
+      "humanApproval": "pending"
+    },
+    {
+      "id": "REED-CAL-01-C03",
+      "text": "Theall86mortalitycomparisonwasuncertainanddidnotreachstatisticalsignificance.",
+      "basis": "candidate_editorial_interpretation",
+      "resultIds": [
+        "REED-CAL-01-R03"
+      ],
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 7,
+          "manuscriptPage": 7,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "Analyses of secondary outcome measures"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 15,
+          "manuscriptPage": 15,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "Figure1",
+          "figure": "1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 16,
+          "manuscriptPage": 16,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "TableI",
+          "table": "I"
+        }
+      ],
+      "verificationState": "pending_independent_source_audit",
+      "acceptedSupport": false,
+      "humanApproval": "pending"
+    },
+    {
+      "id": "REED-CAL-01-C04",
+      "text": "Stoppingstudytreatmentdidnotmeanlossofclinicalfollow-up.",
+      "basis": "candidate_editorial_interpretation",
+      "resultIds": [
+        "REED-CAL-01-R04"
+      ],
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 7,
+          "manuscriptPage": 7,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "Results: Patients"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 16,
+          "manuscriptPage": 16,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "TableI",
+          "table": "I"
+        }
+      ],
+      "verificationState": "pending_independent_source_audit",
+      "acceptedSupport": false,
+      "humanApproval": "pending"
+    },
+    {
+      "id": "REED-CAL-01-C05",
+      "text": "RashwasreportedmoreoftenintheCCarmintheall86exploratoryanalysis.",
+      "basis": "candidate_editorial_interpretation",
+      "resultIds": [
+        "REED-CAL-01-R05"
+      ],
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 20,
+          "manuscriptPage": 20,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "TableIV",
+          "table": "IV",
+          "row": "Nonserious rash",
+          "columns": "Secondaryanalysisn86:CC,MC,pvalue"
+        }
+      ],
+      "verificationState": "pending_independent_source_audit",
+      "acceptedSupport": false,
+      "humanApproval": "pending"
+    },
+    {
+      "id": "REED-CAL-01-C06",
+      "text": "ConstipationwasreportedmoreoftenintheMCarmintheall86exploratoryanalysis.",
+      "basis": "candidate_editorial_interpretation",
+      "resultIds": [
+        "REED-CAL-01-R06"
+      ],
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 20,
+          "manuscriptPage": 20,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "TableIV",
+          "table": "IV",
+          "row": "Nonserious constipation",
+          "columns": "Secondaryanalysisn86:CC,MC,pvalue"
+        }
+      ],
+      "verificationState": "pending_independent_source_audit",
+      "acceptedSupport": false,
+      "humanApproval": "pending"
+    },
+    {
+      "id": "REED-CAL-01-C07",
+      "text": "DepressionwasreportedmoreoftenintheMCarmintheall86exploratoryanalysis.",
+      "basis": "candidate_editorial_interpretation",
+      "resultIds": [
+        "REED-CAL-01-R07"
+      ],
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 20,
+          "manuscriptPage": 20,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "TableIV",
+          "table": "IV",
+          "row": "Nonserious depression",
+          "columns": "Secondaryanalysisn86:CC,MC,pvalue"
+        }
+      ],
+      "verificationState": "pending_independent_source_audit",
+      "acceptedSupport": false,
+      "humanApproval": "pending"
+    },
+    {
+      "id": "REED-CAL-01-C08",
+      "text": "Clinicalcreatinineelevationsoccurredinbotharms;thetrialdoesnotestablishsafetyrelativetonotreatment.",
+      "basis": "candidate_editorial_interpretation",
+      "resultIds": [
+        "REED-CAL-01-R08"
+      ],
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 20,
+          "manuscriptPage": 20,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "TableIV",
+          "table": "IV",
+          "row": "Clinically abnormal serum creatinine",
+          "columns": "Secondaryanalysisn86:CC,MC,pvalue"
+        }
+      ],
+      "verificationState": "pending_independent_source_audit",
+      "acceptedSupport": false,
+      "humanApproval": "pending"
+    }
+  ],
+  "reviewInputs": [
+    {
+      "id": "Q01",
+      "answer": "SelectbetweenMCandCCforfurtherALSresearchusingprespecified6monthALSFRS-Rselectionrule;secondaryfutilityversushistoricalcontrols. Thisisphase2screening,notaplacebocontrolledefficacytrial.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 3,
+          "manuscriptPage": 3,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ01"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 5,
+          "manuscriptPage": 5,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ01"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 7,
+          "manuscriptPage": 7,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ01"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 10,
+          "manuscriptPage": 10,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ01"
+        }
+      ],
+      "humanApproval": "pending",
+      "independentAudit": "pending"
+    },
+    {
+      "id": "Q02",
+      "answer": "US17centeradults21to85withpossible/laboratory-supportedprobable/probable/definiteALS,FVCatleast60percent,weaknessonsetwithin5years;riluzolestableatleast30daysifused.108assessed,18excluded,4prerandomizedwithdrawals;86randomized47CC/39MC;primaryanalysisfirst60(30/30). Exclusionsaretrialapplicability,nothereditarycontraindicationclaims.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 3,
+          "manuscriptPage": 3,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ02"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 6,
+          "manuscriptPage": 6,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ02"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 15,
+          "manuscriptPage": 15,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ02"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 16,
+          "manuscriptPage": 16,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ02"
+        }
+      ],
+      "humanApproval": "pending",
+      "independentAudit": "pending"
+    },
+    {
+      "id": "Q03",
+      "answer": "Botharmsreceived10gcreatinepowdertwicedaily. MCadded100mgminocyclinetwicedaily;CCadded400mgcelecoxibtwicedaily.6monthtestedregimens,notclinicalrecommendations. Blindedidenticalcapsules;event-triggereddosereduction/temporaryholidayorpermanentdiscontinuationwerepermitted.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 4,
+          "manuscriptPage": 4,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ03"
+        }
+      ],
+      "humanApproval": "pending",
+      "independentAudit": "pending"
+    },
+    {
+      "id": "Q04",
+      "answer": "ConcurrentactivecomparatorCCversusMC,bothwithcreatine;no concurrentplacebooruntreatedgroup. Historicalcombined-armgabapentintrialmeanwasusedforsecondaryfutilitybenchmarkonly.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 3,
+          "manuscriptPage": 3,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ04"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 5,
+          "manuscriptPage": 5,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ04"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 10,
+          "manuscriptPage": 10,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ04"
+        }
+      ],
+      "humanApproval": "pending",
+      "independentAudit": "pending"
+    },
+    {
+      "id": "Q05",
+      "answer": "Primary6monthALSFRS-Rdeclineandselectionrule;FVC,TUG,QoL,death/tracheostomy/chronicventilation,adverseevents,labsandEKGsassessedassafetyelements. Functionispatient-importantbutdesignisnotdefinitiveefficacyestimation.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 4,
+          "manuscriptPage": 4,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ05"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 5,
+          "manuscriptPage": 5,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ05"
+        }
+      ],
+      "humanApproval": "pending",
+      "independentAudit": "pending"
+    },
+    {
+      "id": "Q06",
+      "answer": "Eightlocatedcandidate resultscaptureprimarydecline/selection,futility,mortality,treatmentdiscontinuation/adherenceandfourspecificall86safetyevents. Primary6.47MCversus5.27CC,reportedabsolute difference1.200againstselectionthreshold1.035. No efficacygradeorpooledbenefitestimate.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 7,
+          "manuscriptPage": 7,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ06"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 20,
+          "manuscriptPage": 20,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ06"
+        }
+      ],
+      "humanApproval": "pending",
+      "independentAudit": "pending"
+    },
+    {
+      "id": "Q07",
+      "answer": "Ofprimary60,58hadmeasured6monthscoresand2MCdeathsreceivedscore0. Treatmentstopperscontinuedfollow-up;authorsreportnodropoutsapartfromendpointdeath. Figure1separates4prerandomizedwithdrawals. TableIITUG14missingandplacementofn72besideQoLneedadjudicationbeforeextractingthoseanalysisdenominators;TableVfollowupn85andmixeddenominatorsalsoremainunresolved.",
+      "status": "partial_unresolved_secondary_denominators",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 6,
+          "manuscriptPage": 6,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ07"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 7,
+          "manuscriptPage": 7,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ07"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 15,
+          "manuscriptPage": 15,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ07"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 17,
+          "manuscriptPage": 17,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ07"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 21,
+          "manuscriptPage": 21,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ07"
+        }
+      ],
+      "humanApproval": "pending",
+      "independentAudit": "pending"
+    },
+    {
+      "id": "Q08",
+      "answer": "Scheduledclinical/lab/ECGandsafetyboardmonitoringwasused. SelectedTableIVeventcountsanduncertaintyarelocated;TableIIIreportednosignificanttotalsandTableVlaboratoryabnormalitiesare distinctfromclinicallysignificantcreatinineevents. HeadercarryoverandTableVdenominatorinconsistenciesrequireaudit;rare-eventabsencecannotestablishsafety.",
+      "status": "partial_unresolved_secondary_denominators",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 4,
+          "manuscriptPage": 4,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ08"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 5,
+          "manuscriptPage": 5,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ08"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 8,
+          "manuscriptPage": 8,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ08"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 18,
+          "manuscriptPage": 18,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ08"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 19,
+          "manuscriptPage": 19,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ08"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 20,
+          "manuscriptPage": 20,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ08"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 21,
+          "manuscriptPage": 21,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ08"
+        }
+      ],
+      "humanApproval": "pending",
+      "independentAudit": "pending"
+    },
+    {
+      "id": "Q09",
+      "answer": "Randomizationstratifiedcenter/progression;capsulesblinded,nocodebreaksreported. Smallphase2selectiondesign,activearms/historicalbenchmark,20percentdesignadvantageassumption,overenrollmentbeyondfirst60,deathscoresimputed0,selectedsecondarymissingdataimputation,andmultipleexploratorysafetypvalueslimitinterpretation. Nodoserangingorformalblood/CSFexposurestudy.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 3,
+          "manuscriptPage": 3,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ09"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 4,
+          "manuscriptPage": 4,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ09"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 5,
+          "manuscriptPage": 5,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ09"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 6,
+          "manuscriptPage": 6,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ09"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 10,
+          "manuscriptPage": 10,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ09"
+        }
+      ],
+      "humanApproval": "pending",
+      "independentAudit": "pending"
+    },
+    {
+      "id": "Q10",
+      "answer": "ThefindingsapplytothetestedALScombinationsandeligibility,sixmonthscreeningpurposeandfirst60/all86analyses. Theydonotestablishminocycline-aloneefficacy,longtermsurvival,optimaldoseorcomparativebenefitversusstandardcare/placebo.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 3,
+          "manuscriptPage": 3,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ10"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 4,
+          "manuscriptPage": 4,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ10"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 7,
+          "manuscriptPage": 7,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ10"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 10,
+          "manuscriptPage": 10,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ10"
+        }
+      ],
+      "humanApproval": "pending",
+      "independentAudit": "pending"
+    },
+    {
+      "id": "Q11",
+      "answer": "Onereport,onecurrentexperimentwithtwooverlappinganalysissamples;neveradd60and86. Historicalcontrolsarefromadifferentreportandarenotnewlyacquiredparticipants. Directcohortlinkage/registryandcompanionversionchecksareoutsidethisclosedsourcepacketandremainnot_checked.",
+      "status": "partial_external_family_linkage_not_checked",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 5,
+          "manuscriptPage": 5,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ11"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 6,
+          "manuscriptPage": 6,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ11"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 7,
+          "manuscriptPage": 7,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ11"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 10,
+          "manuscriptPage": 10,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ11"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 12,
+          "manuscriptPage": 12,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ11"
+        }
+      ],
+      "humanApproval": "pending",
+      "independentAudit": "pending"
+    },
+    {
+      "id": "Q12",
+      "answer": "Investigatorinitiated17centerstudy,Columbianeurologyandbiostatisticscoordination,independentmonitoring. Page1declaresnoconflictswhileacknowledgmentreportscharitableandAvicenafundingandGordon30,000dollarsfromAvicena. Supplieddrugs/creatineandfundersretainedasdisclosed;noindependenceassuranceinferred.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 1,
+          "manuscriptPage": 1,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ12"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 3,
+          "manuscriptPage": 3,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ12"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 4,
+          "manuscriptPage": 4,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ12"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 5,
+          "manuscriptPage": 5,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ12"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 11,
+          "manuscriptPage": 11,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ12"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 13,
+          "manuscriptPage": 13,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ12"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 14,
+          "manuscriptPage": 14,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ12"
+        }
+      ],
+      "humanApproval": "pending",
+      "independentAudit": "pending"
+    },
+    {
+      "id": "Q13",
+      "answer": "Exactsourcehashverified,21pageNIHauthor-manuscriptidentifiesfinal2008articleDOIand2015PMCrepositoryavailability. Currentexternalcorrection/retractionstatus,journal-versionparity,registryandcompanionsnotcheckedunderclosed-packetnoexternalsources. Do notclaimsourceintegritycomplete.",
+      "status": "partial_external_integrity_not_checked",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 1,
+          "manuscriptPage": 1,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ13"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 12,
+          "manuscriptPage": 12,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ13"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 13,
+          "manuscriptPage": 13,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ13"
+        }
+      ],
+      "humanApproval": "pending",
+      "independentAudit": "pending"
+    },
+    {
+      "id": "Q14",
+      "answer": "SupportsselectionofCCoverMCforfurtherstudyunderthisdesignandreportedscopedadverseevents;contradictsinterpretationthatselectionorfutilitynonrejectionprovesefficacy. Historicalmice/sourcecitationsarenewleads,nothumanmechanisticfindingsfromthistrial.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 7,
+          "manuscriptPage": 7,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ14"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 8,
+          "manuscriptPage": 8,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ14"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 9,
+          "manuscriptPage": 9,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ14"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 10,
+          "manuscriptPage": 10,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ14"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 20,
+          "manuscriptPage": 20,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ14"
+        }
+      ],
+      "humanApproval": "pending",
+      "independentAudit": "pending"
+    },
+    {
+      "id": "Q15",
+      "answer": "Treatthisasascopedphase2combination-screeningcandidate,retaincontrary/uncertainresultsandpurpose/denominators,completeindependentnumeric/sourceauditandunresolvedinputsbeforeanynewgrade/synthesis/guideproposal. No treatmentrecommendation.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 9,
+          "manuscriptPage": 9,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ15"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 10,
+          "manuscriptPage": 10,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ15"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "221dde28006b5fbd9006e52f7415622b205dbedffc952f0964f4cb9266293a7a",
+          "physicalPage": 11,
+          "manuscriptPage": 11,
+          "journalPrintedPage": null,
+          "journalPrintedPageMissingReason": "not_identifiable_from_manuscript_pagination",
+          "section": "SourceanswerbasisforQ15"
+        }
+      ],
+      "humanApproval": "pending",
+      "independentAudit": "pending"
+    }
+  ],
+  "inspection": {
+    "at": "2026-10-27T08:00:59.112861+00:00",
+    "physicalPagesRead": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+    ],
+    "visualNumericPages": [
+      7,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+    ],
+    "materialFiguresTables": [
+      "Figure1",
+      "TablesI-V"
+    ],
+    "derivedTextPrivate": true,
+    "rawSourceIncluded": false,
+    "readingCompleteForProvidedFile": true,
+    "fullScientificReviewComplete": false,
+    "independentAudit": "pending"
+  },
+  "gaps": [
+    {
+      "id": "G1",
+      "state": "not_checked",
+      "description": "Currentexternalintegrity/journalparity/registry/companioncheckclosed-packetlimit;noexternallookupperformed."
+    },
+    {
+      "id": "G2",
+      "state": "not_identifiable",
+      "description": "TableII14missingTUGvsn72placementrequiresdenominatoradjudicationbeforefullsecondaryoutcomeextraction."
+    },
+    {
+      "id": "G3",
+      "state": "not_identifiable",
+      "description": "TableIIIcontinuedheadern60carryoverdespitesecondary86cellsandTableVfollowupn85/percentagedenominatorinconsistencyrequireaudit;noneconvertedtoacceptedquantitativeresult."
+    },
+    {
+      "id": "G4",
+      "state": "not_extracted",
+      "description": "Othersecondaryfunctional/laboratorytablecellsnotextractedasstructuredresults;providedsourcewasreadbut8resultscopeisnotallendpointcompletion."
+    }
+  ],
+  "scientificAcceptance": false,
+  "humanApproval": false,
+  "released": false
+}

@@ -1,0 +1,69 @@
+{
+  "schemaVersion": "REED-CAL-03-secondary-v1",
+  "required": [
+    "schemaVersion",
+    "paper",
+    "source",
+    "inspection",
+    "includedPrimaryReportLinks",
+    "observations",
+    "claims",
+    "reviewInputs",
+    "limitations",
+    "scientificAcceptance",
+    "humanApproval",
+    "released"
+  ],
+  "observationRequired": [
+    "id",
+    "type",
+    "statement",
+    "sourceLocators",
+    "basis",
+    "originalDataVerified",
+    "independentTrialCountContribution",
+    "grade",
+    "acceptedSupport"
+  ],
+  "locatorRequired": [
+    "sourceSha256",
+    "physicalPage",
+    "printedPage",
+    "nativeSection"
+  ],
+  "missingStates": [
+    "not_reported",
+    "not_extracted",
+    "not_accessible",
+    "not_applicable",
+    "not_checked",
+    "not_identifiable",
+    "partial",
+    "reported"
+  ],
+  "fixedGates": {
+    "scientificAcceptance": false,
+    "humanApproval": false,
+    "released": false,
+    "acceptedSupport": false,
+    "grade": null
+  },
+  "secondaryControls": [
+    "No childprimarydata asserted as locally originalverified",
+    "No additional independenttrials/participants from secondaryreport",
+    "No pooled ALS effect unless directly reported",
+    "Do not resolve abstract/body discrepancy by silently choosing abstractcount",
+    "Studytable/ALS riskofbias not a newformal GRADE",
+    "No treatmentbenefit from underpower/no significance"
+  ],
+  "reviewQuestionInventory": "rules/one-match-rule/references/research-reviews/review-questions-and-inputs.json",
+  "outputs": [
+    "SOURCE-CANDIDATE.json",
+    "review-inputs.jsonl",
+    "DOWNSTREAM-MAPPING.json",
+    "VISUAL-RECEIPT.json",
+    "AUDIT-MANIFEST.json",
+    "VALIDATION.json",
+    "HANDOFF.md"
+  ]
+}

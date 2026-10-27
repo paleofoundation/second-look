@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "reed2-cal18-diabetes-drugs-MM-cohort-v1",
+  "required": [
+    "schemaVersion",
+    "paper",
+    "source",
+    "inspection",
+    "study",
+    "populations",
+    "results",
+    "claims",
+    "reviewInputs",
+    "sourceQualifications",
+    "limitations",
+    "scientificAcceptance",
+    "humanApproval",
+    "released"
+  ],
+  "controls": [
+    "Diabetes before versus after steroid/MM therapy",
+    "Exact agent/exposure/time-dependent and indication confounding",
+    "Clinical survival/response versus incident-MM/causal efficacy",
+    "Model-specific denominators adjusted versus unadjusted nulls",
+    "Closed9pages/materialvisuals/pinned67fields",
+    "No new independent trialpatient/grade"
+  ],
+  "gates": {
+    "scientificAcceptance": false,
+    "humanApproval": false,
+    "released": false,
+    "newGrades": 0
+  }
+}

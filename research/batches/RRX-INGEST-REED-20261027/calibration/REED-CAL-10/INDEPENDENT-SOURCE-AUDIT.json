@@ -1,0 +1,68 @@
+{
+  "atUTC": "2026-10-27T09:41:38.134093+00:00",
+  "scope": "Bounded independent source-fidelity audit; not full scientific or typed-field review",
+  "candidateSHA256": "714b557a21830a2abe0744d0394b16edc8bbdab9bfc9919474d8912a2ae502a4",
+  "sourceSHA256": "ff20c37121780ade2a2e1f75df2ca82ac6b3d7c285c942c7d180e301827b8160",
+  "dependenciesVerified": {
+    "SOURCE-CANDIDATE.json": "714b557a21830a2abe0744d0394b16edc8bbdab9bfc9919474d8912a2ae502a4",
+    "review-inputs.jsonl": "739ac649045b59e1ab3c29c9436621a825c70796639ecae2e342d78e1c04c05b",
+    "PLAN.json": "61ec1147fdc7f9c8e06274115dcf0be194dff78314a1656c4258a72910045751",
+    "SCHEMA.json": "82dcf25ef3374c76627197cc9e03afcbb2878cd88b07fa1bc82168210f6b126e",
+    "READINESS.json": "d94e1ece429d374f78144b0628082084253a336bc18fa4c1ceeef3acc09805e8",
+    "DOWNSTREAM-MAPPING.json": "cdd5b15c3cefff68082a49f2ec1c35d20e3a8c394868ed62e860cd5d4d99b0b4",
+    "VISUAL-RECEIPT.json": "b3b2e1cc3513aba26494c2d31e24689b0b1eef2c6fbae6cd42b61465e81b8a52",
+    "SOURCE-QUALIFICATIONS.json": "4feca68a9bf8c66a7398ce753020df39cde0930c4aef961d3675b95e8c4525e3"
+  },
+  "sourceIdentity": {
+    "PMID": "34396516",
+    "DOI": "10.1111/bjh.17772"
+  },
+  "textPagesRead": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "visualPagesInspected": [
+    7,
+    8
+  ],
+  "observations": [
+    "Retrospective singlecenter305NDMM Jan2015-Jun2020,excludeotheranticoagulation,atleast1inductioncycle;notrandomized drugcomparison.",
+    "ThreegroupsRVD+ASA124/KRD+ASA99/KRD+XA82;VTE6/124(4.8%)/16/99(16.1%)/4/82(4.8%)reportedliteral,omnibusP.0067. Groupantimyelomaregimen andprophylaxisinseparable acrossall3;onlywithinKRDcomparesprophylaxis butcalendar/providerselectionconfoundingremains.",
+    "Observationfirstdaytherapyuntil90daysafterinductioncompletion,not90daytotalriskhorizon. ICD10/chart/imagingVTE;nofulladherenceverification.",
+    "TableIfootnoteRVDASA122/12481mg,2/124325mg;KRDASA99/9981mg;allASA-VTEpatients81mg,butnotdose-efficacycomparisongiven2higherdose. XA10mg dose,noexplicitfrequency inselectedMethods,avoidimportedfrequency.",
+    "TableIIunivariateKRDASA vsKRD-XArefOR3.76CI1.2\u201311.73;bodyP.02. No adjustedexactORgiven:age/SAVEDadjustedreportedremainsimilar/notshown,donotrelabel3.76asadjusted.",
+    "Directionconflictbodyp3KRD-XAversusRVDASAOR.99CI.27\u20133.63p.99 vsTableIIp8RVDASArow.99withKRD-XAreference1. Preservetablecodingandbodyqualification;nosilentinversion/correction. Nonsignificancenotequivalence.",
+    "P2introstartXA2017versusp4discussion2018sourcecalendarconflict.",
+    "Bleeding7minor1/124,5/99,1/82;p.1,0majorreported. Notzeroallharms/provenequalbleedingsafety/causalsuperiority.",
+    "Baselinegroupsdifferentsex,cycles,drugdosages;mostlylowSAVEDrisk/excludedotheranticoagulationlimitsgeneralization. Sensitivityexcluding2015reportedP.027, supplementsuninspected/noindependentadjustmentproof.",
+    "Nofundingforspecificwork,butmultiplerelationshipsdisclosedp5andp1subsetnone;donotgeneralizenoCOIfromsubset.",
+    "No antimyeloma efficacy endpoint,RR/NNT/absolutebenefit or dosingrecommendation inferred. No externally currentguidelines/registry/supplementsintegritychecked.",
+    "Candidate has three bounded findings: groupVTEcounts,univariate KRDASA-versus-KRDXAOR,observed bleedingcounts; all match consequentialtext/tables.",
+    "V2 adds OR.99body/table-direction qualification and Q09 typedinput traceability; all3result/claimdata identical to preserved v1. Bothsourcecoded directions retained without reciprocal/neweffect estimate.",
+    "Cohortfrequency fields explicitlynotreported and adherenceunverified; baseline dose/cycles/calendar/provider differences retained, no causal drug benefit/NNT/safety equivalence asserted.",
+    "All15 answer/status summaries inspected; all67typedfields not independentlycertified. Partialstatuses retained."
+  ],
+  "revisionCheck": {
+    "priorCandidateSHA256": "f351f16a79df76d3b36c597536f542aa0a1b4f4a6a4085c3b2910bcc9831e720",
+    "newCandidateSHA256": "714b557a21830a2abe0744d0394b16edc8bbdab9bfc9919474d8912a2ae502a4",
+    "resultsAndClaimsUnchanged": true,
+    "Q09AndSourceDirectionQualificationOnly": true,
+    "priorExactReceiptIssued": false
+  },
+  "resultIds": [
+    "REED-CAL-10-R01",
+    "REED-CAL-10-R02",
+    "REED-CAL-10-R03"
+  ],
+  "toolWarning": "Supplier/native pdfinfoCannotrevertnondecryptstreams warning retained; root pdftotext/pdftoppm succeeded/readable without reproduced warning. No repair claimed.",
+  "disposition": "PASS bounded fidelity for selected three findings with retrospective/adjustment/bleeding/calendar/exposure qualifications; private/pending",
+  "scientificAcceptance": false,
+  "humanApproval": false,
+  "release": false
+}

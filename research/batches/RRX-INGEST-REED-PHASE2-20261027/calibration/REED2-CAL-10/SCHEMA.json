@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "reed2-cal10-ASA-MM-incidence-review-v1",
+  "required": [
+    "schemaVersion",
+    "paper",
+    "source",
+    "inspection",
+    "study",
+    "populations",
+    "results",
+    "claims",
+    "reviewInputs",
+    "sourceQualifications",
+    "limitations",
+    "scientificAcceptance",
+    "humanApproval",
+    "released"
+  ],
+  "controls": [
+    "Incident risk not MM treatment efficacy",
+    "Observational secondary estimate not randomized causal effect",
+    "Review/study/report/participants distinct, repeated cohort overlap",
+    "Exposure any/dose/duration and effect directions preserved",
+    "PooledCI/heterogeneity/subgroups/nulls/uncertainty retained",
+    "Underlying originals not verified by secondary reading",
+    "6pages/materialvisuals/pinned67inputs/exacthashes",
+    "Private candidate only, no independentfullscience or newgrade"
+  ],
+  "gates": {
+    "scientificAcceptance": false,
+    "humanApproval": false,
+    "released": false,
+    "newGrades": 0
+  }
+}

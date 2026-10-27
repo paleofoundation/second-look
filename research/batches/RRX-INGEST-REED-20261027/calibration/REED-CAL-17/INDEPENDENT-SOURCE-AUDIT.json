@@ -1,0 +1,79 @@
+{
+  "at": "2026-10-27T12:33:40.611107+02:00",
+  "status": "PASS_BOUNDED_RESULT_AND_CLAIM_SOURCE_FIDELITY_ONLY",
+  "candidate_sha256": "b12067d8dbab75d7211e9e39ae2e897f8c062a9d585cc7abe4377b5b89a79890",
+  "source_sha256": "38447477d1c6e17d418c70fc046cb6a84f7b2b7f4a06f4a1765cd39d5de1ec00",
+  "audit_manifest_sha256": "101ccd25b1c1191da1d02c7624040eeaf99ee452a678a45c8b480b3a3ff83cd0",
+  "bound_files": {
+    "SOURCE-CANDIDATE.json": "b12067d8dbab75d7211e9e39ae2e897f8c062a9d585cc7abe4377b5b89a79890",
+    "review-inputs.jsonl": "4498085cf949e6c11cc7858935dcd07c4337b9cfffc6a68626d0b3e52d10c299",
+    "PLAN.json": "c8ccd4fb1a8789ba5020d558ae0be23a987182a65d8d2e2c62a0641741500930",
+    "SCHEMA.json": "aeb2bd120a556d66235c40d9dcf96543c855dddf4757ac7d023aebdb222190eb",
+    "READINESS.json": "b3a73193b22e14f42cb7074c74a5e26077cfcc7899b70163eaab643a43479286",
+    "DOWNSTREAM-MAPPING.json": "898fef37aa80da368c3f5f8b0a0a787220e0ab5f2d262b72fa14ec295ef744f3",
+    "VISUAL-RECEIPT.json": "c24e9135821b7b0bac5eec71dd963d910fe314eace470a9a3c7971bba12e0924",
+    "SOURCE-QUALIFICATIONS.json": "dcc6d19cb26cd4f840a97696d5e3b4274ed7cdf9a6fea171b3e5e42c0ef951b1",
+    "PRIOR-RECONCILIATION.json": "a9fbae38539fadd8fa77576de887f70a0064d9b06f571d7bfce6dac55c0077e0"
+  },
+  "prospective_plan_GP_hashes_verified_before_own_reading": true,
+  "root_text_pages_read": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+  ],
+  "root_visual_pages_read": [
+    19,
+    20
+  ],
+  "result_ids": [
+    "REED-CAL-17-R01",
+    "REED-CAL-17-R02",
+    "REED-CAL-17-R03"
+  ],
+  "claim_ids": [
+    "REED-CAL-17-C01",
+    "REED-CAL-17-C02",
+    "REED-CAL-17-C03"
+  ],
+  "checks": [
+    "Exact accepted author manuscript reports transformation in title; index-style progression title is metadata, not a different trial. Twenty-one-page supplied version contains AppendixA1-3. No publisher-final/current-integrity assumption.",
+    "VHA diabetic MGUS observational cohort1999-2009followedthrough2013-08-06;3287identified/1284excluded/2003analytic (463users1540nonusers),1961male. Code-only identities actively chartreviewed;13/463versus74/1540progression=87total,938deaths not same as competing-risk cumulative incidence.",
+    "Exposure sustained>=4years afterDMdiagnosis beforeMM/death/censor,no prescriptiongap>=6months;can precede/straddle MGUS date,not necessarily4years afterMGUS or4yearfollowuplag. EarlyDM<4yearMM/death/censor excluded131;notproof immortaltime/selection/reversecausality eliminated;actual ingestion/doses notreported.",
+    "PrimaryMGUSdiagnosis\u2192MM,time-to-event CoxHRadjusted. Deathcompetingevent/46.8%death,KM(notFineGray/competingincidence)andlastdeathdateassumptionremain. No causal prevention/OSgain/currentMMtherapy/non-diabetic dose/use advice.",
+    "Table2univ.52CI.29-.94P.030,partialA/B.49CI.27-.89P.019,fully.47CI.25-.87P.016. General covariatelisting baseline but HgbA1caveragedafterMGUS explicitly. PHtime-dependentcovariatetest is not time-updatedmetforminmodel proof.",
+    "All2/3/5/6year sensitivityCIs cross1: .76(.48-1.12),.63(.38-1.05),.50(.23-1.06),.58(.24-1.40). TheircohorteligibilityNschangewithwindow,5yearusers325/6year246,no guaranteed4yearthreshold orsignificantdose-response.",
+    "KMlogrankP.028 versus Table1MMincidenceprintedP<.0001 and adjustedCoxP.016are distinct reported values;Table1counts/printedtestneedreconciliation,not repair frommemory or swapPs. Crude2.8/4.8%notfixed-time riskdifference/NNT.",
+    "Table1Mprotein<1.5overall1008/2003(53.9%)literal vs subgroup240+840=1080,overallcategories1008+81+842=1931rather2003;preserveunresolved. Mprotein42%unknown/creatinine22.4%unknown categoricalmissing notcompletecase/no missingness.",
+    "Metforminusersyounger67.4vs69.8/lowerCharlson4.1vs5.5/creatininecontrasts,notrandomizedbalance;missingfree-lightchain/otherdrugsequences/detection/healthcareuse andfollowup differencesconfound. Studyhadnobiologicalspecimens/mechanismuntested. Bodyfirstline461 distinctfrom463sustainedusers.",
+    "Averagefollowup69mo overall/73vs67groups, observedprogressorreported71vs47notmedianwholecohorttimetoMM(KMnever50%). AppendixA1KMfractionsnot crude proportions orcompetingriskabsoluteprobability.",
+    "Mprotein>=1.5 HR5.99CI3.21-11.16P<.0001 andIgA2.40CI1.45-3.96P<.0001 ifincludedareadjustedprognosticassociations,notmetformintreatmenteffectsubgroups.",
+    "FundingNIH/foundation/AHRQ/ACSreported,sourceCOInoneasdisclosednotindependentlyprovennoCOI/currentintegrity. Multiple sequentialDMdrugsnotseparated;unreportedtoxicitiesnotnoadverseeffects.",
+    "Exact R01-R03/C01-C03 reproduce inspected main-model association, variable-follow-up count fractions and inconclusive window sensitivities with source-specific qualifiers.",
+    "B-R0044/F00 prior abstract-only hold remains historical and unmodified; this receipt does not approve a new canonical source, full scientific review or prior processing-state change."
+  ],
+  "limits": [
+    "Three exact result/claim fidelity checks plus consequential source context, not independent full67-field scientific appraisal.",
+    "No rawdata reanalysis, causal/immortal-time/competing-risk adjudication, originaldataset access, currentintegrity/protocol or finaltypesetversion verification.",
+    "No scientific/human/grade/release acceptance;24-report calibration incomplete."
+  ],
+  "scientificAcceptance": false,
+  "humanApproval": false,
+  "released": false
+}
