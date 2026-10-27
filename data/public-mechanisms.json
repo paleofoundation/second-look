@@ -1356,6 +1356,62 @@
               ]
             }
           ]
+        },
+        {
+          "id": "azole-human-hedgehog",
+          "title": "Human Hedgehog findings are mixed",
+          "text": "Itraconazole has human treatment-response biomarker data, but those data do not establish consistent pathway inhibition. Gerber's lung-cancer window study enrolled 13 patients; 12 had paired skin biopsies, with no significant GLI1 or PTCH1 change. Antonarakis measured skin GLI1 changes and described the support for a tumor mechanism as indirect. A five-person study combined sequential arsenic trioxide and itraconazole, so its biomarker effect cannot be assigned to itraconazole alone; no tumor shrinkage was observed. Clinical inference is Low because these small exploratory studies use surrogate tissues or combination treatment and give conflicting pathway results.",
+          "sourceIds": [
+            "MECH-D07-GLI1-LUNG-2020",
+            "P-D07-PROSTATE-2013",
+            "MECH-D07-GLI1-COMBINATION-2016"
+          ],
+          "sentences": [
+            {
+              "text": "Itraconazole has human treatment-response biomarker data, but those data do not establish consistent pathway inhibition. Gerber's lung-cancer window study enrolled 13 patients; 12 had paired skin biopsies, with no significant GLI1 or PTCH1 change. Antonarakis measured skin GLI1 changes and described the support for a tumor mechanism as indirect. A five-person study combined sequential arsenic trioxide and itraconazole, so its biomarker effect cannot be assigned to itraconazole alone; no tumor shrinkage was observed. Clinical inference is Low because these small exploratory studies use surrogate tissues or combination treatment and give conflicting pathway results.",
+              "sources": [
+                "MECH-D07-GLI1-LUNG-2020",
+                "P-D07-PROSTATE-2013",
+                "MECH-D07-GLI1-COMBINATION-2016"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "azole-bcc-unresolved",
+          "title": "An exploratory basal-cell carcinoma estimate remains unresolved",
+          "text": "The exploratory basal-cell-carcinoma biomarker estimate remains unreconciled with its registry summaries. It should not be treated as a settled numerical estimate of pathway inhibition. This uncertainty is separate from the negative lung-cancer biomarker finding.",
+          "sourceIds": [
+            "P-D07-BCC-2014",
+            "MECH-D07-GLI1-LUNG-2020"
+          ],
+          "sentences": [
+            {
+              "text": "The exploratory basal-cell-carcinoma biomarker estimate remains unreconciled with its registry summaries. It should not be treated as a settled numerical estimate of pathway inhibition. This uncertainty is separate from the negative lung-cancer biomarker finding.",
+              "sources": [
+                "P-D07-BCC-2014",
+                "MECH-D07-GLI1-LUNG-2020"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "azole-candida-limits",
+          "title": "Fungal morphology is a separate mechanism question",
+          "text": "In laboratory yeast isolates, itraconazole and fluconazole altered hyphal formation in ways that depended on susceptibility and concentration. Resistant isolates could retain hyphae. The tested between-drug difference was not statistically significant, and a change in fungal morphology does not establish reduced tissue invasion or improved symptoms in patients. Clinical inference is Low.",
+          "sourceIds": [
+            "MECH-D34-HYPHAE-1999",
+            "MECH-AZOLE-HYPHAE-2011"
+          ],
+          "sentences": [
+            {
+              "text": "In laboratory yeast isolates, itraconazole and fluconazole altered hyphal formation in ways that depended on susceptibility and concentration. Resistant isolates could retain hyphae. The tested between-drug difference was not statistically significant, and a change in fungal morphology does not establish reduced tissue invasion or improved symptoms in patients. Clinical inference is Low.",
+              "sources": [
+                "MECH-D34-HYPHAE-1999",
+                "MECH-AZOLE-HYPHAE-2011"
+              ]
+            }
+          ]
         }
       ],
       "rationales": [
@@ -5332,6 +5388,76 @@
           ]
         }
       ]
+    },
+    {
+      "guideIds": [
+        "term-hedgehog-pathway"
+      ],
+      "summary": {
+        "text": "An antifungal action and a Hedgehog pathway effect are separate observations. Itraconazole has cell and mouse evidence plus mixed human biomarker findings. Posaconazole treatment-response evidence in these reports is preclinical; baseline human surgical-tissue measurements are not a response to drug treatment. Fluconazole and voriconazole had negative reporter findings in the cited experiments.",
+        "sourceIds": [
+          "MECH-D07-HEDGEHOG-2010",
+          "MECH-D07-GLI1-LUNG-2020",
+          "P-D07-PROSTATE-2013",
+          "MECH-D07-GLI1-COMBINATION-2016",
+          "MECH-POSACONAZOLE-HEDGEHOG-2016",
+          "MECH-POSACONAZOLE-RMS-2021"
+        ],
+        "sentences": [
+          {
+            "text": "An antifungal action and a Hedgehog pathway effect are separate observations. Itraconazole has cell and mouse evidence plus mixed human biomarker findings. Posaconazole treatment-response evidence in these reports is preclinical; baseline human surgical-tissue measurements are not a response to drug treatment. Fluconazole and voriconazole had negative reporter findings in the cited experiments.",
+            "sources": [
+              "MECH-D07-HEDGEHOG-2010",
+              "MECH-D07-GLI1-LUNG-2020",
+              "P-D07-PROSTATE-2013",
+              "MECH-D07-GLI1-COMBINATION-2016",
+              "MECH-POSACONAZOLE-HEDGEHOG-2016",
+              "MECH-POSACONAZOLE-RMS-2021"
+            ]
+          }
+        ]
+      },
+      "pathways": [
+        {
+          "id": "glossary-bcc-unresolved",
+          "title": "Basal-cell carcinoma biomarker estimates remain unresolved",
+          "text": "The exploratory Kim 2014 basal-cell-carcinoma biomarker estimate remains unreconciled with its registry summaries. It should not be used as a settled numerical estimate of Hedgehog inhibition.",
+          "sourceIds": [
+            "P-D07-BCC-2014"
+          ],
+          "sentences": [
+            {
+              "text": "The exploratory Kim 2014 basal-cell-carcinoma biomarker estimate remains unreconciled with its registry summaries. It should not be used as a settled numerical estimate of Hedgehog inhibition.",
+              "sources": [
+                "P-D07-BCC-2014"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "guideIds": [
+        "term-hyphae"
+      ],
+      "summary": {
+        "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
+        "sourceIds": [
+          "MECH-D34-HYPHAE-1999",
+          "MECH-AZOLE-HYPHAE-2011",
+          "MECH-KETOCONAZOLE-FILAMENTS-2008"
+        ],
+        "sentences": [
+          {
+            "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
+            "sources": [
+              "MECH-D34-HYPHAE-1999",
+              "MECH-AZOLE-HYPHAE-2011",
+              "MECH-KETOCONAZOLE-FILAMENTS-2008"
+            ]
+          }
+        ]
+      }
     }
   ]
 }

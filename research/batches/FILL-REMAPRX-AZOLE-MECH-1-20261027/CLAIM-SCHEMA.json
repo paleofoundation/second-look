@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": [
+    "claimId",
+    "drug",
+    "mechanism",
+    "statement",
+    "sourceBindings",
+    "locators",
+    "model",
+    "reportedFinding",
+    "interpretation",
+    "grade",
+    "domains",
+    "reviewState"
+  ],
+  "properties": {
+    "claimId": {
+      "type": "string"
+    },
+    "drug": {
+      "type": "string"
+    },
+    "mechanism": {
+      "enum": [
+        "Hedgehog",
+        "Candida_morphogenesis"
+      ]
+    },
+    "statement": {
+      "type": "string"
+    },
+    "sourceBindings": {
+      "type": "array",
+      "minItems": 1
+    },
+    "locators": {
+      "type": "array",
+      "minItems": 1
+    },
+    "model": {
+      "type": "string"
+    },
+    "reportedFinding": {
+      "type": "string"
+    },
+    "interpretation": {
+      "type": "string"
+    },
+    "grade": {
+      "enum": [
+        "High",
+        "Moderate",
+        "Low",
+        "not_established"
+      ]
+    },
+    "domains": {
+      "type": "object",
+      "required": [
+        "Study methods",
+        "Directness",
+        "Precision",
+        "Consistency",
+        "Source integrity"
+      ]
+    },
+    "reviewState": {
+      "const": "AI_assisted_draft_not_independently_or_human_approved"
+    }
+  }
+}
