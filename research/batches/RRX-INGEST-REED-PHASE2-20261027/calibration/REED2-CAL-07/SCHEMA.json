@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "reed2-cal07-retrospective-MM-routine-prophylaxis-v1",
+  "required": [
+    "schemaVersion",
+    "paper",
+    "source",
+    "inspection",
+    "study",
+    "populations",
+    "results",
+    "claims",
+    "reviewInputs",
+    "sourceQualifications",
+    "limitations",
+    "scientificAcceptance",
+    "humanApproval",
+    "released"
+  ],
+  "controls": [
+    "Actual retrospective setting/dates/patientflow/sourceidentity",
+    "Routineaspirin/riskassociations not randomized causal efficacy",
+    "Riskmodelthreshold/discrimination/calibration/outcomedefinition/analysisNs distinct",
+    "ClinicalVTEversusbleeding/arterial/tumor/prescription endpoints separate",
+    "Eventandpatientcounts/route/exposure/time/CI/censoring/nulls/missingness explicit",
+    "Priorbibliographiccitation not priorPASS/newindependenttrial",
+    "All10pages/materialvisuals/15Q67typedfields",
+    "Exactrootfidelity distinctfromfullscientific/human/grade/release"
+  ],
+  "gates": {
+    "scientificAcceptance": false,
+    "humanApproval": false,
+    "released": false,
+    "newGrades": 0
+  }
+}

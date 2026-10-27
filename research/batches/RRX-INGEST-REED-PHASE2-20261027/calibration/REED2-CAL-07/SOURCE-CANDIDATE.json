@@ -1,0 +1,1513 @@
+{
+  "schemaVersion": "reed2-cal07-retrospective-MM-routine-prophylaxis-v1",
+  "paper": {
+    "id": "REED-aa3812a21a1cbc5774fb",
+    "pmid": "39552772",
+    "doi": "10.1016/j.rpth.2024.102571",
+    "title": "Multiple myeloma: retrospective assessment of routine thromboprophylaxis and utility of thrombotic risk scores.",
+    "sourceType": "primary_observational_retrospective_cohort"
+  },
+  "source": {
+    "id": "REED2-CAL-07-MAIN",
+    "pmid": "39552772",
+    "doi": "10.1016/j.rpth.2024.102571",
+    "title": "Multiple myeloma: retrospective assessment of routine thromboprophylaxis and utility of thrombotic risk scores.",
+    "reportId": "REED-aa3812a21a1cbc5774fb",
+    "ref": "$REMAPRX_REED_ROOT/aspirin-myeloma/pdfs/39552772-fernandezvargas-2024.pdf",
+    "sha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+    "physicalPages": 10
+  },
+  "inspection": {
+    "at": "2026-10-27T12:26:49.922536+00:00",
+    "physicalPagesRead": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "visualInspectedPhysicalPages": [
+      4,
+      5,
+      6,
+      7,
+      9
+    ],
+    "fullScientificReviewComplete": false,
+    "separateCompanionContentRead": false
+  },
+  "study": {
+    "design": "Descriptive retrospective single-center medical-record cohort",
+    "setting": "Instituto Nacional de Cancerologia, Mexico City, Mexico, tertiary referral cancer center",
+    "entryDates": [
+      "2016-01",
+      "2022-06"
+    ],
+    "eligibility": "Consecutive newlydiagnosed MM age>=18 byIMWG,startedtherapy,atleast3monthfollowup;excludeotherantithromboticindicationsand>2monthspriorMMtreatmentbeforecare",
+    "primaryObjective": "Rate/typeofprimarythromboprophylaxis",
+    "otherObjectives": [
+      "thrombotic/hemorrhagicincidence",
+      "TRSperformance",
+      "mortalityandsurvivalassociation"
+    ],
+    "exposure": "248reportedASA81mg,2apixabanfromstart,4ASAtoapixabanswitches",
+    "ASAReportedDoseMg": 81,
+    "ASAActualFrequencyExplicitInMain": false,
+    "assignmentRandomized": false,
+    "suitableAntithromboticComparator": false,
+    "followupMedianRangeMonths": [
+      19,
+      [
+        3,
+        74
+      ]
+    ],
+    "VTEAscertainment": "Clinicallysuspectedimagingconfirmedatphysiciandiscretion;incidentalthrombosisalsocounted,noroutinescreening;37labeledVTEincludes2superficialand1temporalveinthrombosis",
+    "bleedingDefinitions": "ISTHseverityattributed;maincitation23isCRNMdefinitionratherthanseparatemajorbleeddefinition",
+    "analysis": "Descriptivestats,bivariatecomparisons,KM/logrankOSandthrombosis-freesurvival;ordinalROCdiscrimination,6monthIMPEDE/SAVEDand6/12monthPRISM;no deathcompetingCIFstated",
+    "deathCompetingRiskAnalysis": false,
+    "timeDependentVTEForSurvivalDescribed": false,
+    "multivariateScoreItemAnalysis": "Reported only in unchecked supplementary table, not verified here",
+    "multiplicityCorrectionReported": false,
+    "ethics": "LocalethicscommitteeatInstitutoNacionaldeCancerologiareviewed/approvedprotocol,noidentifierinmain",
+    "clinicalRecommendationAdopted": false,
+    "anticancerBenefitEstablished": false,
+    "locators": [
+      {
+        "kind": "pdf",
+        "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+        "physicalPage": 3,
+        "printedPage": 3,
+        "nativeSection": "Methods/ethics/patient flow"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+        "physicalPage": 5,
+        "printedPage": 5,
+        "nativeSection": "Table1 continued/VTE/bleeding/risk-score results"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+        "physicalPage": 6,
+        "printedPage": 6,
+        "nativeSection": "Table2/Figure1/PRISM/regimens"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+        "physicalPage": 7,
+        "printedPage": 7,
+        "nativeSection": "Figures2/3/survival/discussion"
+      }
+    ]
+  },
+  "populations": {
+    "screened": 356,
+    "included": 250,
+    "excluded": 106,
+    "exclusionGroups": {
+      "followupUnder3Months": 35,
+      "priorTherapyOver2Months": 53,
+      "incompleteData": 7,
+      "otherPlasmaCellDisorders": 9,
+      "therapeuticAnticoagulationAF": 2
+    },
+    "under3MonthGroup": {
+      "earlyDeaths": 13,
+      "lostFollowup": 22
+    },
+    "female": 110,
+    "male": 140,
+    "ageMeanSD": [
+      57.3,
+      11.6
+    ],
+    "VTEPatients": 37,
+    "withoutVTE": 213,
+    "ASAAsReported": {
+      "N": 248,
+      "percent": 98.6
+    },
+    "ASAInitialPercentArithmeticDerived": 99.2,
+    "discussionASAAndApixabanPercents": [
+      98.9,
+      1.1
+    ],
+    "reportedPercentConflictResolved": false,
+    "initialApixabanN": 2,
+    "ASAtoApixabanSwitches": 4,
+    "IMiDN": 248,
+    "thalidomideN": 245,
+    "lenalidomideN": 3,
+    "ASCTN": 33,
+    "IMPEDE_SAVEDN": 250,
+    "PRISMBodyN": 167,
+    "PRISMTable2SumDerived": 156,
+    "PRISMDenominatorAdjudicated": false,
+    "ISSN": 248,
+    "R_ISSFISHN": 158,
+    "uniqueCrossCorpusPatientCountAdjudicated": false,
+    "locators": [
+      {
+        "kind": "pdf",
+        "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+        "physicalPage": 3,
+        "printedPage": 3,
+        "nativeSection": "Methods/ethics/patient flow"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+        "physicalPage": 4,
+        "printedPage": 4,
+        "nativeSection": "Table1 baseline"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+        "physicalPage": 5,
+        "printedPage": 5,
+        "nativeSection": "Table1 continued/VTE/bleeding/risk-score results"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+        "physicalPage": 6,
+        "printedPage": 6,
+        "nativeSection": "Table2/Figure1/PRISM/regimens"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+        "physicalPage": 7,
+        "printedPage": 7,
+        "nativeSection": "Figures2/3/survival/discussion"
+      }
+    ]
+  },
+  "results": [
+    {
+      "id": "REED2-CAL-07-O01",
+      "outcome": "Observed VTE burden under routine mostly aspirin primary prophylaxis",
+      "estimate": {
+        "kind": "descriptive_retrospective_cohort",
+        "N": 250,
+        "ASAReportedN": 248,
+        "ASAReportedPercent": 98.6,
+        "ASA81mg": true,
+        "initialApixabanN": 2,
+        "switchASAtoApixaban": 4,
+        "VTEPatients": 37,
+        "VTEOverallPercent": 14.8,
+        "VTEFirst6Months": [
+          20,
+          8.0
+        ],
+        "VTEMonths7to12": [
+          8,
+          3.2
+        ],
+        "VTEAfter12Months": [
+          9,
+          3.6
+        ],
+        "first6MonthATE": [
+          3,
+          1.2
+        ],
+        "siteLabelsAsSource": {
+          "lowerExtremities": 31,
+          "PE": 3,
+          "superficialVenous": 2,
+          "temporalVein": 1
+        },
+        "all37ConventionalDVTPE": false,
+        "incidentalThromboticEvents": 4,
+        "allAtVTEOnProphylaxisExceptN": 2,
+        "apixabanAtVTE": 1,
+        "remainingAtVTEASAAsSource": true,
+        "fixed19MonthRiskWindow": false,
+        "causalASAEffect": null
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Methods/ethics/patient flow"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Table1 continued/VTE/bleeding/risk-score results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Figures2/3/survival/discussion"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED2-CAL-07-O02",
+      "outcome": "Major and clinically relevant nonmajor bleeding with overlap and concomitant treatment limits",
+      "estimate": {
+        "kind": "descriptive_retrospective_harms",
+        "N": 250,
+        "majorBleedingEvents": 14,
+        "majorBleedingPatients": 12,
+        "majorBleedingPatientPercent": 4.8,
+        "majorBleedingSitesEvents": {
+          "GI": 7,
+          "CNS": 5,
+          "plasmacytoma": 2
+        },
+        "majorBleedingPatientExposure": {
+          "ASA": 9,
+          "therapeuticAnticoagulationForVTE": 3
+        },
+        "therapeuticAgentsOneEach": [
+          "acenocoumarol",
+          "apixaban",
+          "rivaroxaban"
+        ],
+        "majorBleedPatientsTransfused": 11,
+        "transfusionMedianRangeUnits": [
+          3,
+          [
+            2,
+            12
+          ]
+        ],
+        "CRNMBPatients": 11,
+        "CRNMBPatientPercent": 4.4,
+        "CRNMBSites": {
+          "GI": 6,
+          "oralMucosal": 1,
+          "epistaxis": 4
+        },
+        "CRNMBPatientsWithMajorBleedHistory": 2,
+        "CRNMBTherapeuticFXaPatients": 4,
+        "sourceCallsAllCRNMBAssociatedASA": true,
+        "fatalHemorrhagePatients": 3,
+        "sourceCallsAllFatalHemorrhagesAssociatedASA": true,
+        "allEventsAttributableSolelyASA": false,
+        "independentUniqueBleedingCountSummed": false,
+        "comparativeSafetyEstablished": false
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Methods/ethics/patient flow"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Table1 continued/VTE/bleeding/risk-score results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Figures2/3/survival/discussion"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED2-CAL-07-O03",
+      "outcome": "Risk score discrimination and group rates with unresolved PRISM denominator/test labels",
+      "estimate": {
+        "kind": "retrospective_risk_score_discrimination_not_clinical_utility",
+        "IMPEDETableGroups": {
+          "low": [
+            2,
+            0.8,
+            0
+          ],
+          "intermediate": [
+            210,
+            84,
+            7.14
+          ],
+          "high": [
+            38,
+            15.2,
+            13.2
+          ]
+        },
+        "SAVEDTableGroups": {
+          "low": [
+            3,
+            1.2,
+            0
+          ],
+          "high": [
+            247,
+            98.8,
+            8.09
+          ]
+        },
+        "PRISMTableGroups": {
+          "low": [
+            2,
+            1.3,
+            0
+          ],
+          "intermediate": [
+            122,
+            78.2,
+            6.7
+          ],
+          "high": [
+            32,
+            20.5,
+            6.3
+          ]
+        },
+        "PRISMBodyGroups": {
+          "N": 167,
+          "low": 2,
+          "intermediate": 133,
+          "high": 32,
+          "intermediate12MonthVTEPercent": 11.3,
+          "high12MonthVTEPercent": 9.4
+        },
+        "PRISMDenominatorReconciled": false,
+        "Figure2AUCPercent": {
+          "IMPEDE": {
+            "AUC": 61.5,
+            "CI95": [
+              48.8,
+              74.3
+            ]
+          },
+          "SAVED": {
+            "AUC": 50.4,
+            "CI95": [
+              37.4,
+              63.5
+            ]
+          },
+          "PRISM": {
+            "AUC": 52.9,
+            "CI95": [
+              35.5,
+              70.2
+            ]
+          }
+        },
+        "IMPEDEBodyCILiteral": "48.8%-0.74%",
+        "IMPEDE_ROC_P": 0.09,
+        "SAVED_ROC_P": 0.94,
+        "PRISMBodyROC6Month": {
+          "AUC": 0.5286,
+          "CI95": [
+            0.36,
+            0.7
+          ],
+          "P": 0.75
+        },
+        "PRISMBodyROC12Month": {
+          "AUC": 0.5246,
+          "CI95": [
+            0.38,
+            0.67
+          ],
+          "P": 0.73
+        },
+        "Table2P": {
+          "IMPEDE": 0.41,
+          "SAVED": 0.999,
+          "PRISM": 0.93
+        },
+        "Figure1LogrankP": {
+          "IMPEDE6Month": 0.4154,
+          "SAVED6Month": 0.6108,
+          "PRISM12Month": 0.8459
+        },
+        "interScoreKappa": 0.185,
+        "kappaCI95": [
+          0.007,
+          0.36
+        ],
+        "universalScoreInvalidityEstablished": false,
+        "prospectiveClinicalUtilityEstablished": false,
+        "multivariateSupplementRead": false
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Methods/ethics/patient flow"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Table1 continued/VTE/bleeding/risk-score results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 6,
+          "printedPage": 6,
+          "nativeSection": "Table2/Figure1/PRISM/regimens"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Figures2/3/survival/discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Limitations/conclusions/funding/disclosures"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED2-CAL-07-O04",
+      "outcome": "Survival by ever-VTE status is inconclusive rather than proof of no mortality impact",
+      "estimate": {
+        "kind": "observational_KM_logrank",
+        "followupMedianRangeMonths": [
+          19,
+          [
+            3,
+            74
+          ]
+        ],
+        "medianOSMonths": 62,
+        "deaths": 64,
+        "deathPercent": 25.6,
+        "Figure3Groups": {
+          "VTE": {
+            "N": 37,
+            "deaths": 10
+          },
+          "noVTE": {
+            "N": 213,
+            "deaths": 54
+          }
+        },
+        "Figure3LogrankP": 0.088,
+        "deathCauses": {
+          "infection": 33,
+          "progression": 5,
+          "cardiovascular": 5,
+          "hemorrhage": 3,
+          "secondMalignancy": 4,
+          "unknown": 14
+        },
+        "deathCompetingRiskCIF": false,
+        "timeDependentVTEModelDescribed": false,
+        "noMortalityEffectEstablished": false,
+        "undetectedFatalPERuledOut": false,
+        "adjustedCausalHazardRatio": null
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Methods/ethics/patient flow"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Figures2/3/survival/discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 8,
+          "printedPage": 8,
+          "nativeSection": "Interpretation and external comparisons"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    }
+  ],
+  "claims": [
+    {
+      "id": "REED2-CAL-07-C01",
+      "resultIds": [
+        "REED2-CAL-07-O01"
+      ],
+      "statement": "Among250selectedretrospectivepatients,37labeledVTEoccurredduringvariablefollowup,including20within6months,underpredominantlyASA81mgprophylaxis. The source endpoint includes superficial/temporal-vein events. No suitable comparative control establishes causal aspirin inefficacy/harm or DOAC superiority.",
+      "relation": "primary_observational_source_candidate",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED2-CAL-07-C02",
+      "resultIds": [
+        "REED2-CAL-07-O02"
+      ],
+      "statement": "Fourteenmajorbleedingeventsoccurredin12patients(4.8%),and11hadCRNMbleeding,with2patientsoverlappingcategories. ConcurrenttherapeuticanticoagulationandunclearexposuretimingpreventsoleASAattribution;threefatalhemorrhageswereassociatedwithASAasreported,nocausalityproved.",
+      "relation": "primary_observational_source_candidate",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED2-CAL-07-C03",
+      "resultIds": [
+        "REED2-CAL-07-O03"
+      ],
+      "statement": "Risk-score discrimination was imprecise,allFigure2AUC CIsincluding50%. IMPEDEROC P.09 differsfromgroup-rate/logranktests;PRISMNs167versusTable156remainunresolved. These results do not establish universal tool invalidity or a clinically effective prescribing rule.",
+      "relation": "primary_observational_source_candidate",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED2-CAL-07-C04",
+      "resultIds": [
+        "REED2-CAL-07-O04"
+      ],
+      "statement": "The37everVTEand213noVTEgroupshad10and54deaths,respectively,withlogrankP.088. This does not establish no mortalityeffect;earlydeathexclusion,selectionandunmodeledtime-dependentVTElimitinterpretation.",
+      "relation": "primary_observational_source_candidate",
+      "acceptedSupport": false
+    }
+  ],
+  "reviewInputs": [
+    {
+      "id": "Q01",
+      "answer": "Routineprophylaxis/risk/survivalobjectives,protocolnotexternallychecked.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Methods/ethics/patient flow"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Limitations/conclusions/funding/disclosures"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q02",
+      "answer": "Selected250MexicoCitypatientsafter106exclusions,notViennacohort.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Methods/ethics/patient flow"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 6,
+          "printedPage": 6,
+          "nativeSection": "Table2/Figure1/PRISM/regimens"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q03",
+      "answer": "ASA81mgpredominant,actualfrequency/adherencenotverified.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Methods/ethics/patient flow"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Table1 continued/VTE/bleeding/risk-score results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Figures2/3/survival/discussion"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q04",
+      "answer": "Nocausalprophylaxiscontrol,clinicalselectionandchanges.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Methods/ethics/patient flow"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Table1 continued/VTE/bleeding/risk-score results"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q05",
+      "answer": "BroadsourceVTEdefinitionandvariablefollowup;ROCnotclinicalutility.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Methods/ethics/patient flow"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Table1 continued/VTE/bleeding/risk-score results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 6,
+          "printedPage": 6,
+          "nativeSection": "Table2/Figure1/PRISM/regimens"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Limitations/conclusions/funding/disclosures"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q06",
+      "answer": "Fourgroupsretaincounts/events/pcts/AUC/logrankandconflicts.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Table1 continued/VTE/bleeding/risk-score results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 6,
+          "printedPage": 6,
+          "nativeSection": "Table2/Figure1/PRISM/regimens"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Figures2/3/survival/discussion"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q07",
+      "answer": "Earlydeaths/LTFUselectionandPRISMmissingnessremain.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Methods/ethics/patient flow"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Table1 continued/VTE/bleeding/risk-score results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 6,
+          "printedPage": 6,
+          "nativeSection": "Table2/Figure1/PRISM/regimens"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q08",
+      "answer": "Major14eventsin12patients,CRNMoverlap2/concomitance.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Methods/ethics/patient flow"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Table1 continued/VTE/bleeding/risk-score results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Figures2/3/survival/discussion"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q09",
+      "answer": "Retrospective/smalllowrisk/missingness/sourceinconsistencies.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 6,
+          "printedPage": 6,
+          "nativeSection": "Table2/Figure1/PRISM/regimens"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Figures2/3/survival/discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 8,
+          "printedPage": 8,
+          "nativeSection": "Interpretation and external comparisons"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Limitations/conclusions/funding/disclosures"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q10",
+      "answer": "PrivateD23/C21supportivecare,nocausalpracticechange.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Table1 continued/VTE/bleeding/risk-score results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Limitations/conclusions/funding/disclosures"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q11",
+      "answer": "Samecohortnestedgroups,priorcitationnotPASS.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Methods/ethics/patient flow"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Table1 continued/VTE/bleeding/risk-score results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Limitations/conclusions/funding/disclosures"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 10,
+          "printedPage": 10,
+          "nativeSection": "References/supplement link"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q12",
+      "answer": "Declarednofunding/nocompetinginterests,productdetailgap.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 1,
+          "printedPage": 1,
+          "nativeSection": "Abstract/byline"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Methods/ethics/patient flow"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Limitations/conclusions/funding/disclosures"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q13",
+      "answer": "All10pages/5visualsread,externalsupplement/integrityunchecked.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 1,
+          "printedPage": 1,
+          "nativeSection": "Abstract/byline"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Methods/ethics/patient flow"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 10,
+          "printedPage": 10,
+          "nativeSection": "References/supplement link"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q14",
+      "answer": "Fourprivateobservationalclaimmappings,noacceptedgrade.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Table1 continued/VTE/bleeding/risk-score results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Limitations/conclusions/funding/disclosures"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending",
+      "downstreamMapping": {
+        "paperId": "REED-aa3812a21a1cbc5774fb",
+        "sourceId": "REED2-CAL-07-MAIN",
+        "resultIds": [
+          "REED2-CAL-07-O01",
+          "REED2-CAL-07-O02",
+          "REED2-CAL-07-O03",
+          "REED2-CAL-07-O04"
+        ],
+        "claimIds": [
+          "REED2-CAL-07-C01",
+          "REED2-CAL-07-C02",
+          "REED2-CAL-07-C03",
+          "REED2-CAL-07-C04"
+        ],
+        "existingGuideIds": [
+          "G-DRUG-D23",
+          "G-CONDITION-C21"
+        ],
+        "purpose": "Private retrospective myeloma ASA/risk/bleeding context, no causal efficacy or newprescribing/grade",
+        "publicationState": "private_unapplied_candidate",
+        "canonicalChanges": 0,
+        "newIndependentTrials": 0,
+        "newIndependentPatients": 0
+      }
+    },
+    {
+      "id": "Q15",
+      "answer": "Burdenandpredictionuncertain,sourceadjudication/comparativeevidenceneeded.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 6,
+          "printedPage": 6,
+          "nativeSection": "Table2/Figure1/PRISM/regimens"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Limitations/conclusions/funding/disclosures"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    }
+  ],
+  "sourceQualifications": [
+    {
+      "id": "REED2-CAL-07-NONCAUSAL",
+      "description": "Retrospective single-center cohort, almost all prescribed aspirin, no suitable randomized or balanced alternative-agent/no-prophylaxis comparison. Residual VTE/bleeding burden does not isolate causal aspirin inefficacy/harm, DOAC superiority or a new prescription. Authors unacceptable-risk/change-strategy wording is attributed interpretation, not adopted judgment.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Methods/ethics/patient flow"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Table1 continued/VTE/bleeding/risk-score results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 8,
+          "printedPage": 8,
+          "nativeSection": "Interpretation and external comparisons"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Limitations/conclusions/funding/disclosures"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-07-SELECTION",
+      "description": "356screened/250included/106excluded, including13earlydeaths and22lostfollowup with<3months. Minimum3monthfollowup excludes early outcomes and can bias incidence/survival. Tertiary referral population, mostly intermediate/highrisk with high-dose steroids/thalidomide, not general low-risk or modern lenalidomide cohorts.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Methods/ethics/patient flow"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Limitations/conclusions/funding/disclosures"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-07-ASA_PERCENT",
+      "description": "Source says248patients98.6%ASA, but248/250=99.2%;discussion98.9%ASA/1.1%apixaban also differs from2/250initialapixaban. Preserve all literals and arithmetic qualification without rewriting the source or inferring another denominator. FourASA-to-apixaban switches are not four additional baseline patients.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 1,
+          "printedPage": 1,
+          "nativeSection": "Abstract/byline"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Table1 continued/VTE/bleeding/risk-score results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Figures2/3/survival/discussion"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-07-VTE_DEFINITION",
+      "description": "37labeledVTE include31lower-extremity events,3PE,2superficialvein and1temporalveinthrombosis; do not silently describe all37 as conventional objectively confirmed DVT/PE. Four thrombotic events were incidentally detected, no routine screening; VTE/arterial/bleeding overlap not separately summed as unique patients.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Methods/ethics/patient flow"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Table1 continued/VTE/bleeding/risk-score results"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-07-TIME_COUNTS",
+      "description": "20VTEinfirst6months,8inmonths7-12,9after12months total37/25014.8%. Medianfollowup19months withrange3-74 is not a fixed19monthrisk window or patient-time incidence rate; no eventCI or exact per-patienttime supplied. KM-derived cumulative incidence differs from death-competing CIF; death not stated as competing event.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Methods/ethics/patient flow"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Table1 continued/VTE/bleeding/risk-score results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Figures2/3/survival/discussion"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-07-BLEEDING",
+      "description": "Fourteen majorbleeding events occurred in12patients;4.8%=12/250, not14/250. ElevenCRNMpatients include2also withmajorbleed history, so14+11or12+11 cannot be independent unique bleeding patients. Source9MBpatients onASA and3therapeuticanticoagulants describes patients/exposures, not necessarily14event allocations. No causal ASA-attributable bleeding risk established.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Table1 continued/VTE/bleeding/risk-score results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Figures2/3/survival/discussion"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-07-CONCURRENT_HARMS",
+      "description": "CRNM paragraph says allassociatedwithlow-doseASA while4patients also ontherapeuticFXainhibitorsforVTE; concomitant exposure/timing unclear. Three fatalhemorrhages associatedwithASA areobservedassociations,notattributionsolelytoASA. Post-VTEtherapeuticanticoagulation differsfromprimaryprophylaxis and affectsbleeding interpretation.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Table1 continued/VTE/bleeding/risk-score results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Figures2/3/survival/discussion"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-07-PRISM_N",
+      "description": "PRISM narrative says167assessed,2low/133intermediate/32high;Table2says2/122/32 totaling156, with1.3/78.2/20.5percent. Abstract/bodylowrisk2(.5%) is inconsistent with either. Do not silently change122to133 or assign one denominator to all ROC/curve results. This unresolved source inconsistency needs original data/supplement.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Table1 continued/VTE/bleeding/risk-score results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 6,
+          "printedPage": 6,
+          "nativeSection": "Table2/Figure1/PRISM/regimens"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-07-SAVED_PERCENT",
+      "description": "SAVEDTable2low3/2501.2%,high247/25098.8%,bodyhigh99.5%; preserve difference. Very small low-risk groups in all scores limit validation, lack of statistical separation is not universal model invalidity or equal patient risk.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Table1 continued/VTE/bleeding/risk-score results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 6,
+          "printedPage": 6,
+          "nativeSection": "Table2/Figure1/PRISM/regimens"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-07-AUC_LITERAL",
+      "description": "IMPEDEbodyAUC61.5%CI48.8%-0.74% has malformed units;Figure2prints61.5%CI48.8-74.3 and is retained separately, no silent repair. ROCIMPEDEP.09 is distinct fromTable2P.41/Figure1logrank.4154. SAVEDROC.94,Table.999,logrank.6108 andPRISMROC.75/.73,Table.93,12monthlogrank.8459 remain test/time-specific, not interchangeable positive findings.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Table1 continued/VTE/bleeding/risk-score results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 6,
+          "printedPage": 6,
+          "nativeSection": "Table2/Figure1/PRISM/regimens"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Figures2/3/survival/discussion"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-07-PREDICTION",
+      "description": "ROC AUC discrimination is not calibration, prospective clinical utility or prevention benefit. AllFigure2AUC CIs include chance50%. Cohen kappa.185CI.007-.36 is interscore agreement, not model discrimination or clinical efficacy. Multivariate score-item results reside in unchecked supplement and cannot supply verified adjusted aspirin effects.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Methods/ethics/patient flow"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 6,
+          "printedPage": 6,
+          "nativeSection": "Table2/Figure1/PRISM/regimens"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Figures2/3/survival/discussion"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-07-SURVIVAL",
+      "description": "MedianOS62months/64deaths,Figure3VTE37with10deaths versusnoVTE213with54deaths,logrankP.088. Nonsignificance does not confirm VTE has no impact or rule out clinically meaningful harm. No time-dependent VTE model or confounder adjustment of this survival contrast described; early-death exclusion and ever-VTE grouping may bias interpretation. Fourteendeathcausesunknown, fatalPEcannotberuledout accordingtoauthors.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Methods/ethics/patient flow"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Figures2/3/survival/discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 8,
+          "printedPage": 8,
+          "nativeSection": "Interpretation and external comparisons"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-07-SOURCE_TABLE",
+      "description": "Table1height/hemoglobin values have malformed punctuation as printed, andcalciumthresholdmg/L label requiresqualification; do not reconstruct precise values. FISH/R-ISSN158 is not PRISMmetaphaseN167/156. Backgroundcohort/RCT efficacy claims remain secondhand, not new independent primary source checks.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 4,
+          "printedPage": 4,
+          "nativeSection": "Table1 baseline"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Table1 continued/VTE/bleeding/risk-score results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 6,
+          "printedPage": 6,
+          "nativeSection": "Table2/Figure1/PRISM/regimens"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-07-ACCESS_VERSION",
+      "description": "Exact2024RPTH8:e102571accepted6September2024. Localethicsapproval stated; no externalprotocol/SAP/currentregistry/integrityquery or rawdata verification. SupplementaryFigureS1/multivariateTablecontentsnotchecked,availabilitynotestablished,noacquisition. PriorCAL06ref38citationisnotearlierPASS.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 1,
+          "printedPage": 1,
+          "nativeSection": "Abstract/byline"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Methods/ethics/patient flow"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 6,
+          "printedPage": 6,
+          "nativeSection": "Table2/Figure1/PRISM/regimens"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 10,
+          "printedPage": 10,
+          "nativeSection": "References/supplement link"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-07-DISCLOSURES",
+      "description": "Neitherhospitalnorauthorsreceivedresearchfunding,authorsdeclarenocompetinginterests. No suppliedproductstatement found, noindependentfinancialaudit. Strongpracticeconclusionsandhistoricalguidelinesarenotnewsiteclinicalrecommendations/grade/scientificrelease.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Limitations/conclusions/funding/disclosures"
+        }
+      ]
+    }
+  ],
+  "overlapRecords": [
+    {
+      "reportId": "REED-aa3812a21a1cbc5774fb",
+      "cohortFamilyCandidate": "MEXICO-INCan-NDMM-2016-2022",
+      "recordedCohortN": 250,
+      "newIndependentTrialCount": 0,
+      "newIndependentPatientCount": 0,
+      "uniqueCrossCorpusPatientCountAdjudicated": false,
+      "identityBasis": "ExactDOI/PMID/MexicoCitydatesinoriginal,no matchedpriorintakereport;CAL06Viennaref38citescurrentreportbutdoesnotshareparticipantsbycitation.",
+      "priorCanonicalLarocca": "P-D23-MYELOMAcitedasref5contextonly,notthiscohort/newRCT",
+      "sameCohortAcrossResults": "Fourgroupsreuse250/37/213andnestedscoreNs;major/CRNMoverlap2andpostVTEtherapeuticanticoagulationnotindependentpatients",
+      "locators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 1,
+          "printedPage": 1,
+          "nativeSection": "Abstract/byline"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Methods/ethics/patient flow"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Table1 continued/VTE/bleeding/risk-score results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "de44d0b7c6971eab09265592dc78a12d57da141e459bc5f6ed62e6cbfd1f730e",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Limitations/conclusions/funding/disclosures"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Retrospective single-center cohort, almost all prescribed aspirin, no suitable randomized or balanced alternative-agent/no-prophylaxis comparison. Residual VTE/bleeding burden does not isolate causal aspirin inefficacy/harm, DOAC superiority or a new prescription. Authors unacceptable-risk/change-strategy wording is attributed interpretation, not adopted judgment.",
+    "356screened/250included/106excluded, including13earlydeaths and22lostfollowup with<3months. Minimum3monthfollowup excludes early outcomes and can bias incidence/survival. Tertiary referral population, mostly intermediate/highrisk with high-dose steroids/thalidomide, not general low-risk or modern lenalidomide cohorts.",
+    "Source says248patients98.6%ASA, but248/250=99.2%;discussion98.9%ASA/1.1%apixaban also differs from2/250initialapixaban. Preserve all literals and arithmetic qualification without rewriting the source or inferring another denominator. FourASA-to-apixaban switches are not four additional baseline patients.",
+    "37labeledVTE include31lower-extremity events,3PE,2superficialvein and1temporalveinthrombosis; do not silently describe all37 as conventional objectively confirmed DVT/PE. Four thrombotic events were incidentally detected, no routine screening; VTE/arterial/bleeding overlap not separately summed as unique patients.",
+    "20VTEinfirst6months,8inmonths7-12,9after12months total37/25014.8%. Medianfollowup19months withrange3-74 is not a fixed19monthrisk window or patient-time incidence rate; no eventCI or exact per-patienttime supplied. KM-derived cumulative incidence differs from death-competing CIF; death not stated as competing event.",
+    "Fourteen majorbleeding events occurred in12patients;4.8%=12/250, not14/250. ElevenCRNMpatients include2also withmajorbleed history, so14+11or12+11 cannot be independent unique bleeding patients. Source9MBpatients onASA and3therapeuticanticoagulants describes patients/exposures, not necessarily14event allocations. No causal ASA-attributable bleeding risk established.",
+    "CRNM paragraph says allassociatedwithlow-doseASA while4patients also ontherapeuticFXainhibitorsforVTE; concomitant exposure/timing unclear. Three fatalhemorrhages associatedwithASA areobservedassociations,notattributionsolelytoASA. Post-VTEtherapeuticanticoagulation differsfromprimaryprophylaxis and affectsbleeding interpretation.",
+    "PRISM narrative says167assessed,2low/133intermediate/32high;Table2says2/122/32 totaling156, with1.3/78.2/20.5percent. Abstract/bodylowrisk2(.5%) is inconsistent with either. Do not silently change122to133 or assign one denominator to all ROC/curve results. This unresolved source inconsistency needs original data/supplement.",
+    "SAVEDTable2low3/2501.2%,high247/25098.8%,bodyhigh99.5%; preserve difference. Very small low-risk groups in all scores limit validation, lack of statistical separation is not universal model invalidity or equal patient risk.",
+    "IMPEDEbodyAUC61.5%CI48.8%-0.74% has malformed units;Figure2prints61.5%CI48.8-74.3 and is retained separately, no silent repair. ROCIMPEDEP.09 is distinct fromTable2P.41/Figure1logrank.4154. SAVEDROC.94,Table.999,logrank.6108 andPRISMROC.75/.73,Table.93,12monthlogrank.8459 remain test/time-specific, not interchangeable positive findings.",
+    "ROC AUC discrimination is not calibration, prospective clinical utility or prevention benefit. AllFigure2AUC CIs include chance50%. Cohen kappa.185CI.007-.36 is interscore agreement, not model discrimination or clinical efficacy. Multivariate score-item results reside in unchecked supplement and cannot supply verified adjusted aspirin effects.",
+    "MedianOS62months/64deaths,Figure3VTE37with10deaths versusnoVTE213with54deaths,logrankP.088. Nonsignificance does not confirm VTE has no impact or rule out clinically meaningful harm. No time-dependent VTE model or confounder adjustment of this survival contrast described; early-death exclusion and ever-VTE grouping may bias interpretation. Fourteendeathcausesunknown, fatalPEcannotberuledout accordingtoauthors.",
+    "Table1height/hemoglobin values have malformed punctuation as printed, andcalciumthresholdmg/L label requiresqualification; do not reconstruct precise values. FISH/R-ISSN158 is not PRISMmetaphaseN167/156. Backgroundcohort/RCT efficacy claims remain secondhand, not new independent primary source checks.",
+    "Exact2024RPTH8:e102571accepted6September2024. Localethicsapproval stated; no externalprotocol/SAP/currentregistry/integrityquery or rawdata verification. SupplementaryFigureS1/multivariateTablecontentsnotchecked,availabilitynotestablished,noacquisition. PriorCAL06ref38citationisnotearlierPASS.",
+    "Neitherhospitalnorauthorsreceivedresearchfunding,authorsdeclarenocompetinginterests. No suppliedproductstatement found, noindependentfinancialaudit. Strongpracticeconclusionsandhistoricalguidelinesarenotnewsiteclinicalrecommendations/grade/scientificrelease."
+  ],
+  "newIndependentTrials": 0,
+  "newIndependentPatients": 0,
+  "scientificAcceptance": false,
+  "humanApproval": false,
+  "released": false
+}
