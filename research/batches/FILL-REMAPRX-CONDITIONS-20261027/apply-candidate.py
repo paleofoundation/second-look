@@ -1,6 +1,6 @@
-import json,copy,subprocess
+import json,copy,subprocess,os
 from pathlib import Path
-B=Path(__file__).parent;c=json.loads((B/'CANDIDATE.json').read_text());base=c['base'];targets={g['entityId']:g for g in c['guides']};mt={m['conditionId']:m for m in c['mechanisms']}
+B=Path(__file__).resolve().parent;os.chdir(B.parents[2]);c=json.loads((B/'CANDIDATE.json').read_text());base=c.get('projectionBase',c['base']);targets={g['entityId']:g for g in c['guides']};mt={m['conditionId']:m for m in c['mechanisms']}
 def read(f):return json.loads(Path(f).read_text())
 def original(f):return json.loads(subprocess.check_output(['git','show',base+':'+f]))
 def write(f,d):Path(f).write_text(json.dumps(d,indent=2,ensure_ascii=False)+'\n')

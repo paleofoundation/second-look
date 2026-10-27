@@ -1,0 +1,101 @@
+{
+  "at": "2026-10-27T06:47:35.743874+00:00",
+  "node": "22.23.4",
+  "technicalChecks": [
+    {
+      "command": "python3 research/batches/FILL-REMAPRX-CONDITIONS-20261027/verify.py",
+      "exitCode": 0,
+      "outputSha256": "c5f8bdef877cfd07896c1c29350428f902a1da7e401fffd413efd5110fe14cc2"
+    },
+    {
+      "command": "node scripts/check-governance.mjs",
+      "exitCode": 0,
+      "outputSha256": "c5399a463361054cafb76fc1e19b0ae50e2ec42c650b59b50f2ebbb06d8c56cf"
+    },
+    {
+      "command": "node scripts/content-check.mjs",
+      "exitCode": 0,
+      "outputSha256": "dd32e5c8f1996f48eca2e6113cbac0d527e33e9c54c2ec4b5900dd13791b20c3"
+    },
+    {
+      "command": "node scripts/reader-check.mjs",
+      "exitCode": 0,
+      "outputSha256": "3c67bddb41c40265add10bd1f1d294577db825782201962216f86493909ca519"
+    },
+    {
+      "command": "node scripts/check-reader-sections.mjs --all-profiles",
+      "exitCode": 0,
+      "outputSha256": "b6739360d17db0467620076e5444403455f0cbb79fed2a08497e04cf39e238bc"
+    },
+    {
+      "command": "node scripts/check-article-navigation.mjs",
+      "exitCode": 0,
+      "outputSha256": "1f3b1079ac191f9e4ccb856fac7cda607db5fde4d0dce0c61a8707d981e98c42"
+    },
+    {
+      "command": "node scripts/check-evidence-section.mjs",
+      "exitCode": 0,
+      "outputSha256": "9961f3e8327440e3a4b6d4be138d1c0ed22a9b5948a4635fcf614323e126d2ca"
+    },
+    {
+      "command": "node scripts/check-evidence-grading.mjs",
+      "exitCode": 0,
+      "outputSha256": "1a55a962c53057c7792ef9bd6c5b00496c0faefd2af3f29e386a5126b3951cea"
+    },
+    {
+      "command": "node scripts/check-outcome-summaries.mjs",
+      "exitCode": 0,
+      "outputSha256": "47a0fe22dc4b3b0aeb05a421303081e3358298d93e8889018e122c32a7ec4d3c"
+    },
+    {
+      "command": "node scripts/check-wiki-links.mjs",
+      "exitCode": 0,
+      "outputSha256": "3881ac9831ebf7cf6999f62a54f2ff9c9b1c7e66edb18406e6a3f21a7e47196e"
+    },
+    {
+      "command": "node_modules/.bin/tsc --noEmit --incremental false",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "git diff --check",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 0,
+      "logSha256": "8c68537e0cd4cec7e6a76eb7f46a9d5c8f75f4003a0d39c54337cda84956bda1"
+    },
+    {
+      "command": "node scripts/verify-reader-boundary.mjs",
+      "exitCode": 0,
+      "logSha256": "d4a3a98841c09ab53a7cc3e191d963e8f63eca982a15e5378e92b4949d4e98ce"
+    }
+  ],
+  "strictOriginalCheck": {
+    "integrity": "PASS",
+    "claims": {
+      "Low": 13,
+      "not_established": 2,
+      "official_context": 1,
+      "Moderate": 1
+    },
+    "privateOriginalsVerified": 1,
+    "privateOriginalsNotChecked": 0,
+    "oldOutcomes": 70,
+    "oldSummaries": 68,
+    "protectedGuideObjects": 20,
+    "vitiligo": "unchanged",
+    "repeatApply": "zero diff",
+    "scientificAcceptance": false
+  },
+  "browser": "BROWSER.json",
+  "scientificAcceptance": false,
+  "humanApproval": false,
+  "released": false,
+  "limits": [
+    "Existing vinext prefetch/guide-library issues not resolved by this content-only change.",
+    "Not a systematic condition search or full Q01-Q15 review completion."
+  ]
+}

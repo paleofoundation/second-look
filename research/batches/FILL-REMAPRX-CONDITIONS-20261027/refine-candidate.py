@@ -1,3 +1,4 @@
+raise SystemExit('Checkpoint recipe retired; use current guarded candidate/projector. Original recipe at 9d3e696.')
 """Keep the final prose concise, preserve inherited question meanings, and scope mechanism judgments."""
 import json,copy
 from pathlib import Path

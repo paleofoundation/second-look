@@ -1,3 +1,4 @@
+raise SystemExit('Checkpoint recipe retired; use current guarded candidate/projector. Original recipe at 9d3e696.')
 import json,copy,hashlib,subprocess
 from pathlib import Path
 B=Path(__file__).parent;inputs=json.loads((B/'INPUTS.json').read_text());base=inputs['base'];data=json.load(open('data/content.json'));src={s['id']:s for s in data['sources']};mdata=json.load(open('data/public-mechanisms.json'));assess=json.load(open('editorial/evidence-assessments.json'))['records'];claims=[];newid='COND-C06-LDN-CASES-2020'
