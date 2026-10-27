@@ -1,0 +1,24 @@
+{
+  "at": "2026-10-27T06:51:43.802289+00:00",
+  "checks": [
+    {
+      "command": "python3 research/batches/FILL-REMAPRX-STRUCTURE-20261027/verify.py",
+      "exitCode": 0,
+      "outputSha256": "327a0caa5f510d3a206fba43e1c19e7aec220ba50f7e513ac0fec8f9216c4a2a"
+    },
+    {
+      "command": "git diff --check",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "node scripts/check-governance.mjs",
+      "node": "22.23.4",
+      "exitCode": 0,
+      "logSha256": "c5399a463361054cafb76fc1e19b0ae50e2ec42c650b59b50f2ebbb06d8c56cf"
+    }
+  ],
+  "applicationBuild": "not rerun; documentation/provenance-only changes. Prior content builds belong to their PR receipts.",
+  "templateImplemented": false,
+  "deployed": false
+}
