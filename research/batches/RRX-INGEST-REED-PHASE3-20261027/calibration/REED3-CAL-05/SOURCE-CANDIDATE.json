@@ -1,0 +1,2394 @@
+{
+  "schemaVersion": "reed3-cal05-metformin-MM-source-v1",
+  "paper": {
+    "id": "REED-bf6e2b4f425054b45096",
+    "pmid": "30885978",
+    "doi": "10.1158/0008-5472.can-18-2799",
+    "title": "An HK2 Antisense Oligonucleotide Induces Synthetic Lethality in HK1-HK2+ Multiple Myeloma.",
+    "sourceType": "primary_preclinical_MM_HK2_ASO_Met_PER_culture_mouse_and_explicit_other_agent_reused_expression_context"
+  },
+  "source": {
+    "id": "REED3-CAL-05-MAIN",
+    "pmid": "30885978",
+    "doi": "10.1158/0008-5472.can-18-2799",
+    "title": "An HK2 Antisense Oligonucleotide Induces Synthetic Lethality in HK1-HK2+ Multiple Myeloma.",
+    "reportId": "REED-bf6e2b4f425054b45096",
+    "ref": "$REMAPRX_REED_ROOT/metformin-myeloma/pdfs/30885978-xu-2019.pdf",
+    "sha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+    "physicalPages": 15
+  },
+  "inspection": {
+    "at": "2026-10-27T17:13:54.289745+00:00",
+    "physicalPagesRead": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "visualInspectedPhysicalPages": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      12
+    ],
+    "fullScientificReviewComplete": false,
+    "separateCompanionContentRead": false,
+    "rawDataInspected": false
+  },
+  "study": {
+    "design": "Primary preclinical culture and mouse study with reused expression datasets; no treated human cohort",
+    "ownClinicalTreatmentTrial": false,
+    "humanASO": {
+      "identity": "Gen 2.5 constrained ethyl (cEt) HK2-ASO1/ASO2",
+      "cultureDelivery": "free uptake, no transfection reagent",
+      "control": "scrambled ASO",
+      "cultureUM": [
+        0,
+        0.5,
+        2.5,
+        10
+      ],
+      "blotDays": [
+        3,
+        7
+      ],
+      "MTSdays": 7,
+      "glucoseLactate": "seven days ASO then fresh medium for 24 hours"
+    },
+    "actualMetCulture": {
+      "Figure5AB": {
+        "ASO1UM": 10,
+        "ASOpretreatDays": 3,
+        "MetMM": 5,
+        "additionalDays": 3
+      },
+      "Figure5C": {
+        "ASO1UM": 5,
+        "ASOpretreatDays": 3,
+        "MetMM": 2.5,
+        "PERUM": 5,
+        "additionalDays": 3
+      }
+    },
+    "DPIcontext": {
+      "Figure3A": {
+        "ASO1UM": 10,
+        "pretreatDays": 3,
+        "DPINM": 50,
+        "additionalDays": 3
+      },
+      "Figure3B_DPInM": {
+        "OPM2": 50,
+        "S6B45": 25,
+        "U266": 25
+      },
+      "Figure3C": {
+        "ASO1UM": 5,
+        "DPINM": 15,
+        "PERUM": 5,
+        "pretreatDays": 3,
+        "additionalDays": 3
+      },
+      "isogenicHK1Rescue": {
+        "ASO1UM": 10,
+        "DPINM": 25,
+        "PERUM": 5,
+        "pretreatDays": 3,
+        "additionalDays": 3
+      },
+      "PBMC": {
+        "ASO1UM": 10,
+        "DPINM": 25,
+        "PERUM": 5,
+        "pretreatHours": 72,
+        "additionalHours": 72
+      }
+    },
+    "BMSC": {
+      "RPMI8226LUC_to_BMSC": [
+        1,
+        2
+      ],
+      "ASO1UM": 10,
+      "pretreatDays": 3,
+      "DPINM": 15,
+      "MetMM": 2.5,
+      "PERUM": 5,
+      "additionalDays": 3
+    },
+    "mouse": {
+      "strain": "NSG",
+      "ageSex": "not stated in main report",
+      "subcutaneousInoculumCells": 3000000,
+      "subcutaneousVolumeUL": 100,
+      "vehicle": "RPMI/Matrigel 1:1",
+      "humanSystemicRPMI8226LUC_IVCells": 3000000,
+      "murineSystemicP3HK1KO_IVCells": 1000000,
+      "IVVolumeUL": 100,
+      "IVVehicle": "PBS",
+      "ASOmgkg": 50,
+      "ASOroute": "subcutaneous",
+      "Metmgkg": 250,
+      "PERmgkg": 30,
+      "DPImgkg": 2,
+      "otherDrugRoute": "intraperitoneal",
+      "weeklySchedule": "five treatment days followed by two days off",
+      "ASOstart": "day 1 at approximately 200 mm3 subcutaneous tumor volume",
+      "DPIstartDiscrepancy": "Figure 4 legend day 3 versus results body day 4",
+      "MetAndMurineOtherAgentStart": "day 3 in Figure 5F and Figure 7D legends",
+      "humanSC_NperGroup": 10,
+      "murineSC_NperGroup": 11,
+      "humanPETafterDays": 10,
+      "murinePETafterDays": 8,
+      "randomization": "reported; sequence/concealment/blinding/power not reported",
+      "animalProtocol": "UCLA ARC 2015-067-11"
+    },
+    "metabolomics": {
+      "hours": 24,
+      "metabolitesMeasured": 129,
+      "tracer": "[U-13C]glucose",
+      "mainReportDosesRestated": false,
+      "fullFluxRatesOrRawReanalysis": false
+    },
+    "murineCulture": {
+      "mHK2ASO_UM": 0.5,
+      "ASOpretreatDays": 3,
+      "MetMM": 2,
+      "DPINM": 25,
+      "PERUM": 3,
+      "additionalDays": 3
+    },
+    "formalInteractionModel": null,
+    "statistics": "General Student t test P<.05; Figure 1E adjusted gene-comparison P values. Global pharmacology multiplicity, full unit hierarchy and raw uncertainty not established.",
+    "locators": [
+      {
+        "kind": "pdf",
+        "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+        "physicalPage": 3,
+        "printedPage": "2749",
+        "nativeSection": "Introduction and Materials and Methods"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+        "physicalPage": 4,
+        "printedPage": "2750",
+        "nativeSection": "Materials and Methods and Results"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+        "physicalPage": 6,
+        "printedPage": "2752",
+        "nativeSection": "Figure 2 and ASO results"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+        "physicalPage": 7,
+        "printedPage": "2753",
+        "nativeSection": "Figure 3 and DPI/PER results"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+        "physicalPage": 8,
+        "printedPage": "2754",
+        "nativeSection": "Figure 4 and human xenograft/PET results"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+        "physicalPage": 9,
+        "printedPage": "2755",
+        "nativeSection": "Figure 5 and actual metformin results"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+        "physicalPage": 10,
+        "printedPage": "2756",
+        "nativeSection": "Figure 6 and metabolic results"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+        "physicalPage": 12,
+        "printedPage": "2758",
+        "nativeSection": "Figure 7 and murine ASO results"
+      }
+    ]
+  },
+  "populations": {
+    "humanHK1negativeMM": [
+      "OPM1",
+      "OPM2",
+      "RPMI8226",
+      "S6B45"
+    ],
+    "humanHK1positiveMM": [
+      "XG1",
+      "MM144",
+      "U266"
+    ],
+    "otherCellLineContext": [
+      "H929",
+      "H460 lysate positive control"
+    ],
+    "murineModel": "P3 \u00d7 63Ag, HK1 knockout engineered from HK1-positive parental cells; two knockout clones shown",
+    "reusedExpression": {
+      "CCLEcancerCellLines": 935,
+      "CCLE_MM": 26,
+      "bodyHK1negativeHK2positive": 14,
+      "bodyPercent": 54,
+      "operationalBox": {
+        "HK1_TPM_lessThan": 10,
+        "HK2_TPM_greaterThan": 1
+      },
+      "Figure1D_CCLElowHigh": [
+        13,
+        13
+      ],
+      "CoMMpassLowHigh": [
+        383,
+        384
+      ],
+      "CoMMpassTotal": 767,
+      "genesCompared": 18920,
+      "adjustedPbelow05Genes": 63
+    },
+    "primaryMMCellsOrPDXTested": false,
+    "PBMCdonorN": "not identified in main report",
+    "BMSCdonorN": "not identified in main report",
+    "humanSystemicImageMicePerGroup": 5,
+    "displayedDorsalVentralViewsAreSameMice": true,
+    "systemicAllocatedAndKM_N": "not assumed from displayed images or subcutaneous N",
+    "newIndependentClinicalPatients": 0,
+    "locators": [
+      {
+        "kind": "pdf",
+        "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+        "physicalPage": 3,
+        "printedPage": "2749",
+        "nativeSection": "Introduction and Materials and Methods"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+        "physicalPage": 4,
+        "printedPage": "2750",
+        "nativeSection": "Materials and Methods and Results"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+        "physicalPage": 5,
+        "printedPage": "2751",
+        "nativeSection": "Figure 1 and expression results"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+        "physicalPage": 7,
+        "printedPage": "2753",
+        "nativeSection": "Figure 3 and DPI/PER results"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+        "physicalPage": 9,
+        "printedPage": "2755",
+        "nativeSection": "Figure 5 and actual metformin results"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+        "physicalPage": 12,
+        "printedPage": "2758",
+        "nativeSection": "Figure 7 and murine ASO results"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+        "physicalPage": 13,
+        "printedPage": "2759",
+        "nativeSection": "Discussion, disclosures, contributions and acknowledgments"
+      }
+    ]
+  },
+  "results": [
+    {
+      "id": "REED3-CAL-05-O01",
+      "outcome": "Reused CCLE/CoMMpass expression and HK1/HK2 subgroup context",
+      "estimate": {
+        "kind": "reused_expression_context",
+        "counts": {
+          "CCLEcancerCellLines": 935,
+          "CCLE_MM": 26,
+          "bodyHK1negativeHK2positive": 14,
+          "bodyPercent": 54,
+          "operationalBox": {
+            "HK1_TPM_lessThan": 10,
+            "HK2_TPM_greaterThan": 1
+          },
+          "Figure1D_CCLElowHigh": [
+            13,
+            13
+          ],
+          "CoMMpassLowHigh": [
+            383,
+            384
+          ],
+          "CoMMpassTotal": 767,
+          "genesCompared": 18920,
+          "adjustedPbelow05Genes": 63
+        },
+        "sameCutoffAndClinicalPrevalenceEstablished": false,
+        "TPMvsFPKMabsoluteComparisonValid": false,
+        "validatedPredictiveBiomarker": false,
+        "newTreatedPatients": 0
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 4,
+          "printedPage": "2750",
+          "nativeSection": "Materials and Methods and Results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 5,
+          "printedPage": "2751",
+          "nativeSection": "Figure 1 and expression results"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED3-CAL-05-O02",
+      "outcome": "Human ASO target reduction and growth effects without Met",
+      "estimate": {
+        "kind": "human_ASO_alone",
+        "schedule": {
+          "identity": "Gen 2.5 constrained ethyl (cEt) HK2-ASO1/ASO2",
+          "cultureDelivery": "free uptake, no transfection reagent",
+          "control": "scrambled ASO",
+          "cultureUM": [
+            0,
+            0.5,
+            2.5,
+            10
+          ],
+          "blotDays": [
+            3,
+            7
+          ],
+          "MTSdays": 7,
+          "glucoseLactate": "seven days ASO then fresh medium for 24 hours"
+        },
+        "HK2reduction": "both HK1 expression groups",
+        "growthSuppression": "mainly HK1-negative models",
+        "monotherapy": "predominantly cytostatic, not uniformly cytotoxic",
+        "subG1below10percent": "author description referencing separate unread supplement",
+        "technicalTriplicateWellsNotClinicalPatients": true,
+        "barHeightsDigitized": false
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 3,
+          "printedPage": "2749",
+          "nativeSection": "Introduction and Materials and Methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 5,
+          "printedPage": "2751",
+          "nativeSection": "Figure 1 and expression results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 6,
+          "printedPage": "2752",
+          "nativeSection": "Figure 2 and ASO results"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED3-CAL-05-O03",
+      "outcome": "DPI, isogenic HK1 rescue and PBMC context",
+      "estimate": {
+        "kind": "DPI_context_isogenic_and_PBMC",
+        "schedule": {
+          "Figure3A": {
+            "ASO1UM": 10,
+            "pretreatDays": 3,
+            "DPINM": 50,
+            "additionalDays": 3
+          },
+          "Figure3B_DPInM": {
+            "OPM2": 50,
+            "S6B45": 25,
+            "U266": 25
+          },
+          "Figure3C": {
+            "ASO1UM": 5,
+            "DPINM": 15,
+            "PERUM": 5,
+            "pretreatDays": 3,
+            "additionalDays": 3
+          },
+          "isogenicHK1Rescue": {
+            "ASO1UM": 10,
+            "DPINM": 25,
+            "PERUM": 5,
+            "pretreatDays": 3,
+            "additionalDays": 3
+          },
+          "PBMC": {
+            "ASO1UM": 10,
+            "DPINM": 25,
+            "PERUM": 5,
+            "pretreatHours": 72,
+            "additionalHours": 72
+          }
+        },
+        "Figure3B_representativeAnnexinVpositivePercent": {
+          "order": [
+            "control",
+            "ASO",
+            "DPI",
+            "ASO_DPI"
+          ],
+          "OPM2": [
+            6.0,
+            6.8,
+            7.7,
+            64.5
+          ],
+          "S6B45": [
+            5.0,
+            18.4,
+            6.4,
+            97.1
+          ],
+          "U266": [
+            17.4,
+            16.4,
+            14.9,
+            15.0
+          ]
+        },
+        "Figure3C_lowerDoseRepresentativePercent": {
+          "order": [
+            "control",
+            "ASO",
+            "DPI",
+            "ASO_DPI"
+          ],
+          "withoutPER": [
+            4.7,
+            6.7,
+            4.6,
+            8.5
+          ],
+          "withPER": [
+            5.0,
+            16.9,
+            10.6,
+            49.5
+          ]
+        },
+        "HK1reexpressionRescue": "DPI triple context, not direct rescue of every Met regimen",
+        "PBMC": "no significant viability difference in this DPI triple assay, not 100% spared or a direct Met triple test",
+        "OPM2labelConflict": "body HK1-positive versus figure/other context HK1-negative",
+        "representativePrintedLabelsNotAggregateMeans": true,
+        "formalSynergyStatistic": null
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 6,
+          "printedPage": "2752",
+          "nativeSection": "Figure 2 and ASO results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 7,
+          "printedPage": "2753",
+          "nativeSection": "Figure 3 and DPI/PER results"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED3-CAL-05-O04",
+      "outcome": "Human ASO/DPI xenografts and PET context",
+      "estimate": {
+        "kind": "human_xenograft_ASO_DPI_PET_context",
+        "schedule": {
+          "strain": "NSG",
+          "ageSex": "not stated in main report",
+          "subcutaneousInoculumCells": 3000000,
+          "subcutaneousVolumeUL": 100,
+          "vehicle": "RPMI/Matrigel 1:1",
+          "humanSystemicRPMI8226LUC_IVCells": 3000000,
+          "murineSystemicP3HK1KO_IVCells": 1000000,
+          "IVVolumeUL": 100,
+          "IVVehicle": "PBS",
+          "ASOmgkg": 50,
+          "ASOroute": "subcutaneous",
+          "Metmgkg": 250,
+          "PERmgkg": 30,
+          "DPImgkg": 2,
+          "otherDrugRoute": "intraperitoneal",
+          "weeklySchedule": "five treatment days followed by two days off",
+          "ASOstart": "day 1 at approximately 200 mm3 subcutaneous tumor volume",
+          "DPIstartDiscrepancy": "Figure 4 legend day 3 versus results body day 4",
+          "MetAndMurineOtherAgentStart": "day 3 in Figure 5F and Figure 7D legends",
+          "humanSC_NperGroup": 10,
+          "murineSC_NperGroup": 11,
+          "humanPETafterDays": 10,
+          "murinePETafterDays": 8,
+          "randomization": "reported; sequence/concealment/blinding/power not reported",
+          "animalProtocol": "UCLA ARC 2015-067-11"
+        },
+        "OPM2_ASOalone": "not significant for tumor progression",
+        "OPM2_ASO_DPI_andTriple": "greater tumor suppression in reported comparisons",
+        "U266_HK1positive": "all regimens not significant despite HK2 reduction",
+        "SC_NperGroup": 10,
+        "FDGPET": "ASO reduces glucose uptake; target function surrogate not clinical tumor regression",
+        "PETdisplayNnotAllocatedN": true,
+        "humanASOtargetsMouseHK2": false,
+        "hostHK2KnockdownSafetyEstablished": false,
+        "H460IsLysateControlNotTreatedLungTumor": true
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 3,
+          "printedPage": "2749",
+          "nativeSection": "Introduction and Materials and Methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 4,
+          "printedPage": "2750",
+          "nativeSection": "Materials and Methods and Results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 8,
+          "printedPage": "2754",
+          "nativeSection": "Figure 4 and human xenograft/PET results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 13,
+          "printedPage": "2759",
+          "nativeSection": "Discussion, disclosures, contributions and acknowledgments"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED3-CAL-05-O05",
+      "outcome": "Actual Met/ASO with or without PER in culture",
+      "estimate": {
+        "kind": "actual_Met_culture",
+        "schedule": {
+          "Figure5AB": {
+            "ASO1UM": 10,
+            "ASOpretreatDays": 3,
+            "MetMM": 5,
+            "additionalDays": 3
+          },
+          "Figure5C": {
+            "ASO1UM": 5,
+            "ASOpretreatDays": 3,
+            "MetMM": 2.5,
+            "PERUM": 5,
+            "additionalDays": 3
+          }
+        },
+        "Figure5B_representativeAnnexinVpositivePercent": {
+          "order": [
+            "control",
+            "ASO",
+            "Met",
+            "ASO_Met"
+          ],
+          "OPM2": [
+            4.8,
+            8.1,
+            9.3,
+            85.9
+          ]
+        },
+        "Figure5C_lowerDoseRepresentativePercent": {
+          "order": [
+            "control",
+            "ASO",
+            "Met",
+            "ASO_Met"
+          ],
+          "withoutPER": [
+            4.7,
+            6.7,
+            6.0,
+            26.5
+          ],
+          "withPER": [
+            5.0,
+            16.9,
+            10.5,
+            71.2
+          ]
+        },
+        "distinctDosesNotPooled": true,
+        "printedRepresentativeLabelsNotAggregateOrRawReproduced": true,
+        "authorsSyntheticLethalityNotFormalCI_Bliss_ZIP_Loewe": true,
+        "clinicalEfficacy": false
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 3,
+          "printedPage": "2749",
+          "nativeSection": "Introduction and Materials and Methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 9,
+          "printedPage": "2755",
+          "nativeSection": "Figure 5 and actual metformin results"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED3-CAL-05-O06",
+      "outcome": "BMSC coculture and actual Met/DPI triple context",
+      "estimate": {
+        "kind": "BMSC_coculture_actual_Met_and_DPI",
+        "schedule": {
+          "RPMI8226LUC_to_BMSC": [
+            1,
+            2
+          ],
+          "ASO1UM": 10,
+          "pretreatDays": 3,
+          "DPINM": 15,
+          "MetMM": 2.5,
+          "PERUM": 5,
+          "additionalDays": 3
+        },
+        "ASOalone": "stromal coculture decreases sensitivity",
+        "triple": "coculture difference not significant; no equivalence proof",
+        "assay": "RPMI8226-LUC luminescence and representative BMSC images",
+        "BMSCdonorOrNormalTissueSafetyQuantified": false,
+        "allMicroenvironmentResistanceOvercome": false,
+        "captionIdentityTypo": "RPMI8662 versus RPMI8226"
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 9,
+          "printedPage": "2755",
+          "nativeSection": "Figure 5 and actual metformin results"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED3-CAL-05-O07",
+      "outcome": "Actual Met triple in human xenografts and systemic burden",
+      "estimate": {
+        "kind": "actual_Met_human_xenograft",
+        "mouseSchedule": {
+          "strain": "NSG",
+          "ageSex": "not stated in main report",
+          "subcutaneousInoculumCells": 3000000,
+          "subcutaneousVolumeUL": 100,
+          "vehicle": "RPMI/Matrigel 1:1",
+          "humanSystemicRPMI8226LUC_IVCells": 3000000,
+          "murineSystemicP3HK1KO_IVCells": 1000000,
+          "IVVolumeUL": 100,
+          "IVVehicle": "PBS",
+          "ASOmgkg": 50,
+          "ASOroute": "subcutaneous",
+          "Metmgkg": 250,
+          "PERmgkg": 30,
+          "DPImgkg": 2,
+          "otherDrugRoute": "intraperitoneal",
+          "weeklySchedule": "five treatment days followed by two days off",
+          "ASOstart": "day 1 at approximately 200 mm3 subcutaneous tumor volume",
+          "DPIstartDiscrepancy": "Figure 4 legend day 3 versus results body day 4",
+          "MetAndMurineOtherAgentStart": "day 3 in Figure 5F and Figure 7D legends",
+          "humanSC_NperGroup": 10,
+          "murineSC_NperGroup": 11,
+          "humanPETafterDays": 10,
+          "murinePETafterDays": 8,
+          "randomization": "reported; sequence/concealment/blinding/power not reported",
+          "animalProtocol": "UCLA ARC 2015-067-11"
+        },
+        "MetAloneOPM2": "not significant",
+        "hASO_Met_PER_vs_hASO_DPI_PER": "not significant, not equivalence",
+        "SC_NperGroup": 10,
+        "systemicRPMI8226LUC_IVCells": 3000000,
+        "BLIimageDays": [
+          1,
+          7,
+          13,
+          20
+        ],
+        "displayMicePerGroup": 5,
+        "sameDorsalVentralMice": true,
+        "systemicAllocationNVerified": false,
+        "burdenNotClinicalOSorHR": true,
+        "medianOrHRreconstructed": false
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 3,
+          "printedPage": "2749",
+          "nativeSection": "Introduction and Materials and Methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 4,
+          "printedPage": "2750",
+          "nativeSection": "Materials and Methods and Results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 9,
+          "printedPage": "2755",
+          "nativeSection": "Figure 5 and actual metformin results"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED3-CAL-05-O08",
+      "outcome": "24-hour metabolic pools and glucose-label incorporation",
+      "estimate": {
+        "kind": "24hour_metabolic_mechanism",
+        "schedule": {
+          "hours": 24,
+          "metabolitesMeasured": 129,
+          "tracer": "[U-13C]glucose",
+          "mainReportDosesRestated": false,
+          "fullFluxRatesOrRawReanalysis": false
+        },
+        "assays": [
+          "glucose consumption",
+          "lactate secretion",
+          "ATP/(AMP+ADP)",
+          "129 metabolite pools",
+          "[U-13C]glucose incorporation"
+        ],
+        "viabilityDifferenceAt24h": "not significant, not 100% viable or equivalence",
+        "PERaloneATPratio": "not significant",
+        "all129MetabolitesDepleted": false,
+        "someAminoAcidAndFattyAcidIntermediates": "increase",
+        "tracerIsBetaOHB": false,
+        "rawMSorFullFluxReproduced": false,
+        "separateS5S6TableS1Read": false
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 4,
+          "printedPage": "2750",
+          "nativeSection": "Materials and Methods and Results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 10,
+          "printedPage": "2756",
+          "nativeSection": "Figure 6 and metabolic results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 11,
+          "printedPage": "2757",
+          "nativeSection": "Metabolic results, Discussion and Figure 7 lead-in"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED3-CAL-05-O09",
+      "outcome": "Species-matched murine ASO in engineered P3 cultures and mice",
+      "estimate": {
+        "kind": "species_matched_murine_ASO_P3",
+        "cultureSchedule": {
+          "mHK2ASO_UM": 0.5,
+          "ASOpretreatDays": 3,
+          "MetMM": 2,
+          "DPINM": 25,
+          "PERUM": 3,
+          "additionalDays": 3
+        },
+        "representativeAnnexinVpositivePercent": {
+          "mASO_DPI_PER": 73.2,
+          "mASO_Met_PER": 44.5
+        },
+        "engineeredHK1KO_NotNaturalPatientSubgroup": true,
+        "SC_NperGroup": 11,
+        "mASOaloneSC": "significantly reduces progression, unlike human OPM2 ASO monotherapy",
+        "tripleSC": "further suppression",
+        "PETafterDays": 8,
+        "systemicIVCells": 1000000,
+        "KM": "experiment stopped after last control euthanasia around day 21; treated mice alive at that stop",
+        "KM_NinferredFromSC": false,
+        "cureLongTermOSorHRproved": false,
+        "heartLessAndSkeletalMuscleNoHK2KD": "author description of unread S7F, incomplete host target exposure",
+        "bodyWeightNotComprehensiveSafety": true
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 3,
+          "printedPage": "2749",
+          "nativeSection": "Introduction and Materials and Methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 4,
+          "printedPage": "2750",
+          "nativeSection": "Materials and Methods and Results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 11,
+          "printedPage": "2757",
+          "nativeSection": "Metabolic results, Discussion and Figure 7 lead-in"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 12,
+          "printedPage": "2758",
+          "nativeSection": "Figure 7 and murine ASO results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 13,
+          "printedPage": "2759",
+          "nativeSection": "Discussion, disclosures, contributions and acknowledgments"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    }
+  ],
+  "claims": [
+    {
+      "id": "REED3-CAL-05-C01",
+      "resultIds": [
+        "REED3-CAL-05-O01"
+      ],
+      "statement": "Reused CCLE/CoMMpass expression and HK1/HK2 subgroup context. Retain exact model, agent, dose, schedule, endpoint, null comparisons and source qualifications; no accepted clinical or formal interaction inference.",
+      "relation": "primary_preclinical_candidate_or_explicit_other_agent_and_reused_expression_context",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED3-CAL-05-C02",
+      "resultIds": [
+        "REED3-CAL-05-O02"
+      ],
+      "statement": "Human ASO target reduction and growth effects without Met. Retain exact model, agent, dose, schedule, endpoint, null comparisons and source qualifications; no accepted clinical or formal interaction inference.",
+      "relation": "primary_preclinical_candidate_or_explicit_other_agent_and_reused_expression_context",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED3-CAL-05-C03",
+      "resultIds": [
+        "REED3-CAL-05-O03"
+      ],
+      "statement": "DPI, isogenic HK1 rescue and PBMC context. Retain exact model, agent, dose, schedule, endpoint, null comparisons and source qualifications; no accepted clinical or formal interaction inference.",
+      "relation": "primary_preclinical_candidate_or_explicit_other_agent_and_reused_expression_context",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED3-CAL-05-C04",
+      "resultIds": [
+        "REED3-CAL-05-O04"
+      ],
+      "statement": "Human ASO/DPI xenografts and PET context. Retain exact model, agent, dose, schedule, endpoint, null comparisons and source qualifications; no accepted clinical or formal interaction inference.",
+      "relation": "primary_preclinical_candidate_or_explicit_other_agent_and_reused_expression_context",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED3-CAL-05-C05",
+      "resultIds": [
+        "REED3-CAL-05-O05"
+      ],
+      "statement": "Actual Met/ASO with or without PER in culture. Retain exact model, agent, dose, schedule, endpoint, null comparisons and source qualifications; no accepted clinical or formal interaction inference.",
+      "relation": "primary_preclinical_candidate_or_explicit_other_agent_and_reused_expression_context",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED3-CAL-05-C06",
+      "resultIds": [
+        "REED3-CAL-05-O06"
+      ],
+      "statement": "BMSC coculture and actual Met/DPI triple context. Retain exact model, agent, dose, schedule, endpoint, null comparisons and source qualifications; no accepted clinical or formal interaction inference.",
+      "relation": "primary_preclinical_candidate_or_explicit_other_agent_and_reused_expression_context",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED3-CAL-05-C07",
+      "resultIds": [
+        "REED3-CAL-05-O07"
+      ],
+      "statement": "Actual Met triple in human xenografts and systemic burden. Retain exact model, agent, dose, schedule, endpoint, null comparisons and source qualifications; no accepted clinical or formal interaction inference.",
+      "relation": "primary_preclinical_candidate_or_explicit_other_agent_and_reused_expression_context",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED3-CAL-05-C08",
+      "resultIds": [
+        "REED3-CAL-05-O08"
+      ],
+      "statement": "24-hour metabolic pools and glucose-label incorporation. Retain exact model, agent, dose, schedule, endpoint, null comparisons and source qualifications; no accepted clinical or formal interaction inference.",
+      "relation": "primary_preclinical_candidate_or_explicit_other_agent_and_reused_expression_context",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED3-CAL-05-C09",
+      "resultIds": [
+        "REED3-CAL-05-O09"
+      ],
+      "statement": "Species-matched murine ASO in engineered P3 cultures and mice. Retain exact model, agent, dose, schedule, endpoint, null comparisons and source qualifications; no accepted clinical or formal interaction inference.",
+      "relation": "primary_preclinical_candidate_or_explicit_other_agent_and_reused_expression_context",
+      "acceptedSupport": false
+    }
+  ],
+  "reviewInputs": [
+    {
+      "id": "Q01",
+      "answer": "Test selective HK2 ASO with OXPHOS/FAO inhibition in HK1-negative MM and compare HK1-positive and species-matched models.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 3,
+          "printedPage": "2749",
+          "nativeSection": "Introduction and Materials and Methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 4,
+          "printedPage": "2750",
+          "nativeSection": "Materials and Methods and Results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 9,
+          "printedPage": "2755",
+          "nativeSection": "Figure 5 and actual metformin results"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q02",
+      "answer": "Human MM lines, engineered murine P3 HK1 knockout cells, PBMC/BMSC contexts and NSG mice; reused expression datasets, no treated humans.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 3,
+          "printedPage": "2749",
+          "nativeSection": "Introduction and Materials and Methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 12,
+          "printedPage": "2758",
+          "nativeSection": "Figure 7 and murine ASO results"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q03",
+      "answer": "{'identity': 'Gen 2.5 constrained ethyl (cEt) HK2-ASO1/ASO2', 'cultureDelivery': 'free uptake, no transfection reagent', 'control': 'scrambled ASO', 'cultureUM': [0, 0.5, 2.5, 10], 'blotDays': [3, 7], 'MTSdays': 7, 'glucoseLactate': 'seven days ASO then fresh medium for 24 hours'}",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 3,
+          "printedPage": "2749",
+          "nativeSection": "Introduction and Materials and Methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 4,
+          "printedPage": "2750",
+          "nativeSection": "Materials and Methods and Results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 12,
+          "printedPage": "2758",
+          "nativeSection": "Figure 7 and murine ASO results"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q04",
+      "answer": "Scrambled ASO, single agents, pairs/triples, HK1-positive models and isogenic HK1 reexpression or knockout controls; some assays are DPI-only context.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 4,
+          "printedPage": "2750",
+          "nativeSection": "Materials and Methods and Results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 7,
+          "printedPage": "2753",
+          "nativeSection": "Figure 3 and DPI/PER results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 8,
+          "printedPage": "2754",
+          "nativeSection": "Figure 4 and human xenograft/PET results"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q05",
+      "answer": "['Reused CCLE/CoMMpass expression and HK1/HK2 subgroup context', 'Human ASO target reduction and growth effects without Met', 'DPI, isogenic HK1 rescue and PBMC context', 'Human ASO/DPI xenografts and PET context', 'Actual Met/ASO with or without PER in culture', 'BMSC coculture and actual Met/DPI triple context', 'Actual Met triple in human xenografts and systemic burden', '24-hour metabolic pools and glucose-label incorporation', 'Species-matched murine ASO in engineered P3 cultures and mice']",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 3,
+          "printedPage": "2749",
+          "nativeSection": "Introduction and Materials and Methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 4,
+          "printedPage": "2750",
+          "nativeSection": "Materials and Methods and Results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 9,
+          "printedPage": "2755",
+          "nativeSection": "Figure 5 and actual metformin results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 12,
+          "printedPage": "2758",
+          "nativeSection": "Figure 7 and murine ASO results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 13,
+          "printedPage": "2759",
+          "nativeSection": "Discussion, disclosures, contributions and acknowledgments"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q06",
+      "answer": "[{\"resultId\": \"REED3-CAL-05-O01\", \"estimate\": {\"kind\": \"reused_expression_context\", \"counts\": {\"CCLEcancerCellLines\": 935, \"CCLE_MM\": 26, \"bodyHK1negativeHK2positive\": 14, \"bodyPercent\": 54, \"operationalBox\": {\"HK1_TPM_lessThan\": 10, \"HK2_TPM_greaterThan\": 1}, \"Figure1D_CCLElowHigh\": [13, 13], \"CoMMpassLowHigh\": [383, 384], \"CoMMpassTotal\": 767, \"genesCompared\": 18920, \"adjustedPbelow05Genes\": 63}, \"sameCutoffAndClinicalPrevalenceEstablished\": false, \"TPMvsFPKMabsoluteComparisonValid\": false, \"validatedPredictiveBiomarker\": false, \"newTreatedPatients\": 0}, \"sourceLocators\": [{\"kind\": \"pdf\", \"sourceSha256\": \"a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182\", \"physicalPage\": 4, \"printedPage\": \"2750\", \"nativeSection\": \"Materials and Methods and Results\"}, {\"kind\": \"pdf\", \"sourceSha256\": \"a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182\", \"physicalPage\": 5, \"printedPage\": \"2751\", \"nativeSection\": \"Figure 1 and expression results\"}]}, {\"resultId\": \"REED3-CAL-05-O02\", \"estimate\": {\"kind\": \"human_ASO_alone\", \"schedule\": {\"identity\": \"Gen 2.5 constrained ethyl (cEt) HK2-ASO1/ASO2\", \"cultureDelivery\": \"free uptake, no transfection reagent\", \"control\": \"scrambled ASO\", \"cultureUM\": [0, 0.5, 2.5, 10], \"blotDays\": [3, 7], \"MTSdays\": 7, \"glucoseLactate\": \"seven days ASO then fresh medium for 24 hours\"}, \"HK2reduction\": \"both HK1 expression groups\", \"growthSuppression\": \"mainly HK1-negative models\", \"monotherapy\": \"predominantly cytostatic, not uniformly cytotoxic\", \"subG1below10percent\": \"author description referencing separate unread supplement\", \"technicalTriplicateWellsNotClinicalPatients\": true, \"barHeightsDigitized\": false}, \"sourceLocators\": [{\"kind\": \"pdf\", \"sourceSha256\": \"a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182\", \"physicalPage\": 3, \"printedPage\": \"2749\", \"nativeSection\": \"Introduction and Materials and Methods\"}, {\"kind\": \"pdf\", \"sourceSha256\": \"a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182\", \"physicalPage\": 5, \"printedPage\": \"2751\", \"nativeSection\": \"Figure 1 and expression results\"}, {\"kind\": \"pdf\", \"sourceSha256\": \"a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182\", \"physicalPage\": 6, \"printedPage\": \"2752\", \"nativeSection\": \"Figure 2 and ASO results\"}]}, {\"resultId\": \"REED3-CAL-05-O03\", \"estimate\": {\"kind\": \"DPI_context_isogenic_and_PBMC\", \"schedule\": {\"Figure3A\": {\"ASO1UM\": 10, \"pretreatDays\": 3, \"DPINM\": 50, \"additionalDays\": 3}, \"Figure3B_DPInM\": {\"OPM2\": 50, \"S6B45\": 25, \"U266\": 25}, \"Figure3C\": {\"ASO1UM\": 5, \"DPINM\": 15, \"PERUM\": 5, \"pretreatDays\": 3, \"additionalDays\": 3}, \"isogenicHK1Rescue\": {\"ASO1UM\": 10, \"DPINM\": 25, \"PERUM\": 5, \"pretreatDays\": 3, \"additionalDays\": 3}, \"PBMC\": {\"ASO1UM\": 10, \"DPINM\": 25, \"PERUM\": 5, \"pretreatHours\": 72, \"additionalHours\": 72}}, \"Figure3B_representativeAnnexinVpositivePercent\": {\"order\": [\"control\", \"ASO\", \"DPI\", \"ASO_DPI\"], \"OPM2\": [6.0, 6.8, 7.7, 64.5], \"S6B45\": [5.0, 18.4, 6.4, 97.1], \"U266\": [17.4, 16.4, 14.9, 15.0]}, \"Figure3C_lowerDoseRepresentativePercent\": {\"order\": [\"control\", \"ASO\", \"DPI\", \"ASO_DPI\"], \"withoutPER\": [4.7, 6.7, 4.6, 8.5], \"withPER\": [5.0, 16.9, 10.6, 49.5]}, \"HK1reexpressionRescue\": \"DPI triple context, not direct rescue of every Met regimen\", \"PBMC\": \"no significant viability difference in this DPI triple assay, not 100% spared or a direct Met triple test\", \"OPM2labelConflict\": \"body HK1-positive versus figure/other context HK1-negative\", \"representativePrintedLabelsNotAggregateMeans\": true, \"formalSynergyStatistic\": null}, \"sourceLocators\": [{\"kind\": \"pdf\", \"sourceSha256\": \"a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182\", \"physicalPage\": 6, \"printedPage\": \"2752\", \"nativeSection\": \"Figure 2 and ASO results\"}, {\"kind\": \"pdf\", \"sourceSha256\": \"a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182\", \"physicalPage\": 7, \"printedPage\": \"2753\", \"nativeSection\": \"Figure 3 and DPI/PER results\"}]}, {\"resultId\": \"REED3-CAL-05-O04\", \"estimate\": {\"kind\": \"human_xenograft_ASO_DPI_PET_context\", \"schedule\": {\"strain\": \"NSG\", \"ageSex\": \"not stated in main report\", \"subcutaneousInoculumCells\": 3000000, \"subcutaneousVolumeUL\": 100, \"vehicle\": \"RPMI/Matrigel 1:1\", \"humanSystemicRPMI8226LUC_IVCells\": 3000000, \"murineSystemicP3HK1KO_IVCells\": 1000000, \"IVVolumeUL\": 100, \"IVVehicle\": \"PBS\", \"ASOmgkg\": 50, \"ASOroute\": \"subcutaneous\", \"Metmgkg\": 250, \"PERmgkg\": 30, \"DPImgkg\": 2, \"otherDrugRoute\": \"intraperitoneal\", \"weeklySchedule\": \"five treatment days followed by two days off\", \"ASOstart\": \"day 1 at approximately 200 mm3 subcutaneous tumor volume\", \"DPIstartDiscrepancy\": \"Figure 4 legend day 3 versus results body day 4\", \"MetAndMurineOtherAgentStart\": \"day 3 in Figure 5F and Figure 7D legends\", \"humanSC_NperGroup\": 10, \"murineSC_NperGroup\": 11, \"humanPETafterDays\": 10, \"murinePETafterDays\": 8, \"randomization\": \"reported; sequence/concealment/blinding/power not reported\", \"animalProtocol\": \"UCLA ARC 2015-067-11\"}, \"OPM2_ASOalone\": \"not significant for tumor progression\", \"OPM2_ASO_DPI_andTriple\": \"greater tumor suppression in reported comparisons\", \"U266_HK1positive\": \"all regimens not significant despite HK2 reduction\", \"SC_NperGroup\": 10, \"FDGPET\": \"ASO reduces glucose uptake; target function surrogate not clinical tumor regression\", \"PETdisplayNnotAllocatedN\": true, \"humanASOtargetsMouseHK2\": false, \"hostHK2KnockdownSafetyEstablished\": false, \"H460IsLysateControlNotTreatedLungTumor\": true}, \"sourceLocators\": [{\"kind\": \"pdf\", \"sourceSha256\": \"a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182\", \"physicalPage\": 3, \"printedPage\": \"2749\", \"nativeSection\": \"Introduction and Materials and Methods\"}, {\"kind\": \"pdf\", \"sourceSha256\": \"a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182\", \"physicalPage\": 4, \"printedPage\": \"2750\", \"nativeSection\": \"Materials and Methods and Results\"}, {\"kind\": \"pdf\", \"sourceSha256\": \"a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182\", \"physicalPage\": 8, \"printedPage\": \"2754\", \"nativeSection\": \"Figure 4 and human xenograft/PET results\"}, {\"kind\": \"pdf\", \"sourceSha256\": \"a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182\", \"physicalPage\": 13, \"printedPage\": \"2759\", \"nativeSection\": \"Discussion, disclosures, contributions and acknowledgments\"}]}, {\"resultId\": \"REED3-CAL-05-O05\", \"estimate\": {\"kind\": \"actual_Met_culture\", \"schedule\": {\"Figure5AB\": {\"ASO1UM\": 10, \"ASOpretreatDays\": 3, \"MetMM\": 5, \"additionalDays\": 3}, \"Figure5C\": {\"ASO1UM\": 5, \"ASOpretreatDays\": 3, \"MetMM\": 2.5, \"PERUM\": 5, \"additionalDays\": 3}}, \"Figure5B_representativeAnnexinVpositivePercent\": {\"order\": [\"control\", \"ASO\", \"Met\", \"ASO_Met\"], \"OPM2\": [4.8, 8.1, 9.3, 85.9]}, \"Figure5C_lowerDoseRepresentativePercent\": {\"order\": [\"control\", \"ASO\", \"Met\", \"ASO_Met\"], \"withoutPER\": [4.7, 6.7, 6.0, 26.5], \"withPER\": [5.0, 16.9, 10.5, 71.2]}, \"distinctDosesNotPooled\": true, \"printedRepresentativeLabelsNotAggregateOrRawReproduced\": true, \"authorsSyntheticLethalityNotFormalCI_Bliss_ZIP_Loewe\": true, \"clinicalEfficacy\": false}, \"sourceLocators\": [{\"kind\": \"pdf\", \"sourceSha256\": \"a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182\", \"physicalPage\": 3, \"printedPage\": \"2749\", \"nativeSection\": \"Introduction and Materials and Methods\"}, {\"kind\": \"pdf\", \"sourceSha256\": \"a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182\", \"physicalPage\": 9, \"printedPage\": \"2755\", \"nativeSection\": \"Figure 5 and actual metformin results\"}]}, {\"resultId\": \"REED3-CAL-05-O06\", \"estimate\": {\"kind\": \"BMSC_coculture_actual_Met_and_DPI\", \"schedule\": {\"RPMI8226LUC_to_BMSC\": [1, 2], \"ASO1UM\": 10, \"pretreatDays\": 3, \"DPINM\": 15, \"MetMM\": 2.5, \"PERUM\": 5, \"additionalDays\": 3}, \"ASOalone\": \"stromal coculture decreases sensitivity\", \"triple\": \"coculture difference not significant; no equivalence proof\", \"assay\": \"RPMI8226-LUC luminescence and representative BMSC images\", \"BMSCdonorOrNormalTissueSafetyQuantified\": false, \"allMicroenvironmentResistanceOvercome\": false, \"captionIdentityTypo\": \"RPMI8662 versus RPMI8226\"}, \"sourceLocators\": [{\"kind\": \"pdf\", \"sourceSha256\": \"a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182\", \"physicalPage\": 9, \"printedPage\": \"2755\", \"nativeSection\": \"Figure 5 and actual metformin results\"}]}, {\"resultId\": \"REED3-CAL-05-O07\", \"estimate\": {\"kind\": \"actual_Met_human_xenograft\", \"mouseSchedule\": {\"strain\": \"NSG\", \"ageSex\": \"not stated in main report\", \"subcutaneousInoculumCells\": 3000000, \"subcutaneousVolumeUL\": 100, \"vehicle\": \"RPMI/Matrigel 1:1\", \"humanSystemicRPMI8226LUC_IVCells\": 3000000, \"murineSystemicP3HK1KO_IVCells\": 1000000, \"IVVolumeUL\": 100, \"IVVehicle\": \"PBS\", \"ASOmgkg\": 50, \"ASOroute\": \"subcutaneous\", \"Metmgkg\": 250, \"PERmgkg\": 30, \"DPImgkg\": 2, \"otherDrugRoute\": \"intraperitoneal\", \"weeklySchedule\": \"five treatment days followed by two days off\", \"ASOstart\": \"day 1 at approximately 200 mm3 subcutaneous tumor volume\", \"DPIstartDiscrepancy\": \"Figure 4 legend day 3 versus results body day 4\", \"MetAndMurineOtherAgentStart\": \"day 3 in Figure 5F and Figure 7D legends\", \"humanSC_NperGroup\": 10, \"murineSC_NperGroup\": 11, \"humanPETafterDays\": 10, \"murinePETafterDays\": 8, \"randomization\": \"reported; sequence/concealment/blinding/power not reported\", \"animalProtocol\": \"UCLA ARC 2015-067-11\"}, \"MetAloneOPM2\": \"not significant\", \"hASO_Met_PER_vs_hASO_DPI_PER\": \"not significant, not equivalence\", \"SC_NperGroup\": 10, \"systemicRPMI8226LUC_IVCells\": 3000000, \"BLIimageDays\": [1, 7, 13, 20], \"displayMicePerGroup\": 5, \"sameDorsalVentralMice\": true, \"systemicAllocationNVerified\": false, \"burdenNotClinicalOSorHR\": true, \"medianOrHRreconstructed\": false}, \"sourceLocators\": [{\"kind\": \"pdf\", \"sourceSha256\": \"a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182\", \"physicalPage\": 3, \"printedPage\": \"2749\", \"nativeSection\": \"Introduction and Materials and Methods\"}, {\"kind\": \"pdf\", \"sourceSha256\": \"a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182\", \"physicalPage\": 4, \"printedPage\": \"2750\", \"nativeSection\": \"Materials and Methods and Results\"}, {\"kind\": \"pdf\", \"sourceSha256\": \"a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182\", \"physicalPage\": 9, \"printedPage\": \"2755\", \"nativeSection\": \"Figure 5 and actual metformin results\"}]}, {\"resultId\": \"REED3-CAL-05-O08\", \"estimate\": {\"kind\": \"24hour_metabolic_mechanism\", \"schedule\": {\"hours\": 24, \"metabolitesMeasured\": 129, \"tracer\": \"[U-13C]glucose\", \"mainReportDosesRestated\": false, \"fullFluxRatesOrRawReanalysis\": false}, \"assays\": [\"glucose consumption\", \"lactate secretion\", \"ATP/(AMP+ADP)\", \"129 metabolite pools\", \"[U-13C]glucose incorporation\"], \"viabilityDifferenceAt24h\": \"not significant, not 100% viable or equivalence\", \"PERaloneATPratio\": \"not significant\", \"all129MetabolitesDepleted\": false, \"someAminoAcidAndFattyAcidIntermediates\": \"increase\", \"tracerIsBetaOHB\": false, \"rawMSorFullFluxReproduced\": false, \"separateS5S6TableS1Read\": false}, \"sourceLocators\": [{\"kind\": \"pdf\", \"sourceSha256\": \"a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182\", \"physicalPage\": 4, \"printedPage\": \"2750\", \"nativeSection\": \"Materials and Methods and Results\"}, {\"kind\": \"pdf\", \"sourceSha256\": \"a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182\", \"physicalPage\": 10, \"printedPage\": \"2756\", \"nativeSection\": \"Figure 6 and metabolic results\"}, {\"kind\": \"pdf\", \"sourceSha256\": \"a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182\", \"physicalPage\": 11, \"printedPage\": \"2757\", \"nativeSection\": \"Metabolic results, Discussion and Figure 7 lead-in\"}]}, {\"resultId\": \"REED3-CAL-05-O09\", \"estimate\": {\"kind\": \"species_matched_murine_ASO_P3\", \"cultureSchedule\": {\"mHK2ASO_UM\": 0.5, \"ASOpretreatDays\": 3, \"MetMM\": 2, \"DPINM\": 25, \"PERUM\": 3, \"additionalDays\": 3}, \"representativeAnnexinVpositivePercent\": {\"mASO_DPI_PER\": 73.2, \"mASO_Met_PER\": 44.5}, \"engineeredHK1KO_NotNaturalPatientSubgroup\": true, \"SC_NperGroup\": 11, \"mASOaloneSC\": \"significantly reduces progression, unlike human OPM2 ASO monotherapy\", \"tripleSC\": \"further suppression\", \"PETafterDays\": 8, \"systemicIVCells\": 1000000, \"KM\": \"experiment stopped after last control euthanasia around day 21; treated mice alive at that stop\", \"KM_NinferredFromSC\": false, \"cureLongTermOSorHRproved\": false, \"heartLessAndSkeletalMuscleNoHK2KD\": \"author description of unread S7F, incomplete host target exposure\", \"bodyWeightNotComprehensiveSafety\": true}, \"sourceLocators\": [{\"kind\": \"pdf\", \"sourceSha256\": \"a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182\", \"physicalPage\": 3, \"printedPage\": \"2749\", \"nativeSection\": \"Introduction and Materials and Methods\"}, {\"kind\": \"pdf\", \"sourceSha256\": \"a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182\", \"physicalPage\": 4, \"printedPage\": \"2750\", \"nativeSection\": \"Materials and Methods and Results\"}, {\"kind\": \"pdf\", \"sourceSha256\": \"a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182\", \"physicalPage\": 11, \"printedPage\": \"2757\", \"nativeSection\": \"Metabolic results, Discussion and Figure 7 lead-in\"}, {\"kind\": \"pdf\", \"sourceSha256\": \"a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182\", \"physicalPage\": 12, \"printedPage\": \"2758\", \"nativeSection\": \"Figure 7 and murine ASO results\"}, {\"kind\": \"pdf\", \"sourceSha256\": \"a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182\", \"physicalPage\": 13, \"printedPage\": \"2759\", \"nativeSection\": \"Discussion, disclosures, contributions and acknowledgments\"}]}]",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 3,
+          "printedPage": "2749",
+          "nativeSection": "Introduction and Materials and Methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 4,
+          "printedPage": "2750",
+          "nativeSection": "Materials and Methods and Results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 5,
+          "printedPage": "2751",
+          "nativeSection": "Figure 1 and expression results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 6,
+          "printedPage": "2752",
+          "nativeSection": "Figure 2 and ASO results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 7,
+          "printedPage": "2753",
+          "nativeSection": "Figure 3 and DPI/PER results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 8,
+          "printedPage": "2754",
+          "nativeSection": "Figure 4 and human xenograft/PET results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 9,
+          "printedPage": "2755",
+          "nativeSection": "Figure 5 and actual metformin results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 10,
+          "printedPage": "2756",
+          "nativeSection": "Figure 6 and metabolic results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 11,
+          "printedPage": "2757",
+          "nativeSection": "Metabolic results, Discussion and Figure 7 lead-in"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 12,
+          "printedPage": "2758",
+          "nativeSection": "Figure 7 and murine ASO results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 13,
+          "printedPage": "2759",
+          "nativeSection": "Discussion, disclosures, contributions and acknowledgments"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q07",
+      "answer": "No full animal/sample/failed-assay flow.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 4,
+          "printedPage": "2750",
+          "nativeSection": "Materials and Methods and Results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 9,
+          "printedPage": "2755",
+          "nativeSection": "Figure 5 and actual metformin results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 12,
+          "printedPage": "2758",
+          "nativeSection": "Figure 7 and murine ASO results"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q08",
+      "answer": "PBMC assay uses DPI triple, body weight and incomplete mouse target knockdown do not establish comprehensive Met/ASO/PER safety.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 4,
+          "printedPage": "2750",
+          "nativeSection": "Materials and Methods and Results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 7,
+          "printedPage": "2753",
+          "nativeSection": "Figure 3 and DPI/PER results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 12,
+          "printedPage": "2758",
+          "nativeSection": "Figure 7 and murine ASO results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 13,
+          "printedPage": "2759",
+          "nativeSection": "Discussion, disclosures, contributions and acknowledgments"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q09",
+      "answer": "Metabolic viability proxies, replicate/unit uncertainty, selection, unknown masking/power, high exposures, incomplete target exposure and limited host toxicity measures.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 4,
+          "printedPage": "2750",
+          "nativeSection": "Materials and Methods and Results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 10,
+          "printedPage": "2756",
+          "nativeSection": "Figure 6 and metabolic results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 12,
+          "printedPage": "2758",
+          "nativeSection": "Figure 7 and murine ASO results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 13,
+          "printedPage": "2759",
+          "nativeSection": "Discussion, disclosures, contributions and acknowledgments"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 15,
+          "printedPage": null,
+          "nativeSection": "Publisher article links and supplementary-data link, not supplementary content"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q10",
+      "answer": "Actual Met plus ASO/PER MM preclinical findings match private D02/C21 scope; separate DPI and expression contexts do not establish clinical Met benefit.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 9,
+          "printedPage": "2755",
+          "nativeSection": "Figure 5 and actual metformin results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 12,
+          "printedPage": "2758",
+          "nativeSection": "Figure 7 and murine ASO results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 13,
+          "printedPage": "2759",
+          "nativeSection": "Discussion, disclosures, contributions and acknowledgments"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q11",
+      "answer": "{'reportId': 'REED-bf6e2b4f425054b45096', 'family': 'Xu2019HK2ASOMM', 'reusedExpression': {'CCLEcancerCellLines': 935, 'CCLE_MM': 26, 'bodyHK1negativeHK2positive': 14, 'bodyPercent': 54, 'operationalBox': {'HK1_TPM_lessThan': 10, 'HK2_TPM_greaterThan': 1}, 'Figure1D_CCLElowHigh': [13, 13], 'CoMMpassLowHigh': [383, 384], 'CoMMpassTotal': 767, 'genesCompared': 18920, 'adjustedPbelow05Genes': 63}, 'sameDorsalVentralMiceNotDoubled': True, 'technicalWellsNotIndependentPatients': True, 'humanAndMurineASOsDistinct': True, 'SC_N_NotTransferredToSystemicKM': True, 'priorHK2shRNAAndLiverReports': 'cited context only; separate originals not newly inspected', 'newIndependentTrialCount': 0, 'newIndependentPatientCount': 0, 'locators': [{'kind': 'pdf', 'sourceSha256': 'a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182', 'physicalPage': 3, 'printedPage': '2749', 'nativeSection': 'Introduction and Materials and Methods'}, {'kind': 'pdf', 'sourceSha256': 'a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182', 'physicalPage': 5, 'printedPage': '2751', 'nativeSection': 'Figure 1 and expression results'}, {'kind': 'pdf', 'sourceSha256': 'a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182', 'physicalPage': 7, 'printedPage': '2753', 'nativeSection': 'Figure 3 and DPI/PER results'}, {'kind': 'pdf', 'sourceSha256': 'a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182', 'physicalPage': 9, 'printedPage': '2755', 'nativeSection': 'Figure 5 and actual metformin results'}, {'kind': 'pdf', 'sourceSha256': 'a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182', 'physicalPage': 12, 'printedPage': '2758', 'nativeSection': 'Figure 7 and murine ASO results'}, {'kind': 'pdf', 'sourceSha256': 'a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182', 'physicalPage': 13, 'printedPage': '2759', 'nativeSection': 'Discussion, disclosures, contributions and acknowledgments'}, {'kind': 'pdf', 'sourceSha256': 'a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182', 'physicalPage': 14, 'printedPage': '2760', 'nativeSection': 'References'}]}",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 9,
+          "printedPage": "2755",
+          "nativeSection": "Figure 5 and actual metformin results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 14,
+          "printedPage": "2760",
+          "nativeSection": "References"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 15,
+          "printedPage": null,
+          "nativeSection": "Publisher article links and supplementary-data link, not supplementary content"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q12",
+      "answer": "Shili Xu, Tianyuan Zhou, Hanna M. Doh, K Ryan Trinh, Art Catapang, Jason T. Lee, Daniel Braas, Nicholas A. Bayley, Reiko E. Yamada, Alex Vasuthasawat, Joshua P. Sasine, John M. Timmerman, Sarah M. Larson, Youngsoo Kim, A. Robert MacLeod, Sherie L. Morrison and Harvey R. Herschman.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 2,
+          "printedPage": "2748",
+          "nativeSection": "Title, abstract, graphical abstract and affiliations"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 3,
+          "printedPage": "2749",
+          "nativeSection": "Introduction and Materials and Methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 13,
+          "printedPage": "2759",
+          "nativeSection": "Discussion, disclosures, contributions and acknowledgments"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q13",
+      "answer": "Cancer Research 79(10), 2748\u20132760, OnlineFirst March 18 2019, issue May 15 2019; eScholarship cover plus publisher article and links.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 1,
+          "printedPage": null,
+          "nativeSection": "eScholarship bibliographic cover"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 4,
+          "printedPage": "2750",
+          "nativeSection": "Materials and Methods and Results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 15,
+          "printedPage": null,
+          "nativeSection": "Publisher article links and supplementary-data link, not supplementary content"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q14",
+      "answer": "{'paperId': 'REED-bf6e2b4f425054b45096', 'sourceId': 'REED3-CAL-05-MAIN', 'resultIds': ['REED3-CAL-05-O01', 'REED3-CAL-05-O02', 'REED3-CAL-05-O03', 'REED3-CAL-05-O04', 'REED3-CAL-05-O05', 'REED3-CAL-05-O06', 'REED3-CAL-05-O07', 'REED3-CAL-05-O08', 'REED3-CAL-05-O09'], 'claimIds': ['REED3-CAL-05-C01', 'REED3-CAL-05-C02', 'REED3-CAL-05-C03', 'REED3-CAL-05-C04', 'REED3-CAL-05-C05', 'REED3-CAL-05-C06', 'REED3-CAL-05-C07', 'REED3-CAL-05-C08', 'REED3-CAL-05-C09'], 'existingGuideIds': ['G-DRUG-D02', 'G-CONDITION-C21'], 'purpose': 'Private actual Met/ASO/PER MM preclinical candidate. DPI, ASO-alone, expression and PET-only contexts remain distinct; no clinical regimen or new profile.', 'publicationState': 'private_unapplied_candidate', 'canonicalChanges': 0, 'newIndependentTrials': 0, 'newIndependentPatients': 0}",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 9,
+          "printedPage": "2755",
+          "nativeSection": "Figure 5 and actual metformin results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 12,
+          "printedPage": "2758",
+          "nativeSection": "Figure 7 and murine ASO results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 13,
+          "printedPage": "2759",
+          "nativeSection": "Discussion, disclosures, contributions and acknowledgments"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending",
+      "downstreamMapping": {
+        "paperId": "REED-bf6e2b4f425054b45096",
+        "sourceId": "REED3-CAL-05-MAIN",
+        "resultIds": [
+          "REED3-CAL-05-O01",
+          "REED3-CAL-05-O02",
+          "REED3-CAL-05-O03",
+          "REED3-CAL-05-O04",
+          "REED3-CAL-05-O05",
+          "REED3-CAL-05-O06",
+          "REED3-CAL-05-O07",
+          "REED3-CAL-05-O08",
+          "REED3-CAL-05-O09"
+        ],
+        "claimIds": [
+          "REED3-CAL-05-C01",
+          "REED3-CAL-05-C02",
+          "REED3-CAL-05-C03",
+          "REED3-CAL-05-C04",
+          "REED3-CAL-05-C05",
+          "REED3-CAL-05-C06",
+          "REED3-CAL-05-C07",
+          "REED3-CAL-05-C08",
+          "REED3-CAL-05-C09"
+        ],
+        "existingGuideIds": [
+          "G-DRUG-D02",
+          "G-CONDITION-C21"
+        ],
+        "purpose": "Private actual Met/ASO/PER MM preclinical candidate. DPI, ASO-alone, expression and PET-only contexts remain distinct; no clinical regimen or new profile.",
+        "publicationState": "private_unapplied_candidate",
+        "canonicalChanges": 0,
+        "newIndependentTrials": 0,
+        "newIndependentPatients": 0
+      }
+    },
+    {
+      "id": "Q15",
+      "answer": "HK2 ASO with Met/PER impairs selected HK1-negative MM cultures and xenografts; HK1-positive/null comparisons, distinct schedules/species and limited mouse follow-up constrain interpretation.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 9,
+          "printedPage": "2755",
+          "nativeSection": "Figure 5 and actual metformin results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 13,
+          "printedPage": "2759",
+          "nativeSection": "Discussion, disclosures, contributions and acknowledgments"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 15,
+          "printedPage": null,
+          "nativeSection": "Publisher article links and supplementary-data link, not supplementary content"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    }
+  ],
+  "sourceQualifications": [
+    {
+      "id": "REED3-CAL-05-Q01",
+      "description": "Heldpublisherarticle2019CancerRes79(10)2748-2760,OnlineFirst18March2019/issue15May2019; cover/downloadlinksnotpreprint/supplementarydata. All15physicaltextandallmaterialvisualsread; no companion/rawdata/currentintegrity acquisition.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 1,
+          "printedPage": null,
+          "nativeSection": "eScholarship bibliographic cover"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 2,
+          "printedPage": "2748",
+          "nativeSection": "Title, abstract, graphical abstract and affiliations"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 14,
+          "printedPage": "2760",
+          "nativeSection": "References"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 15,
+          "printedPage": null,
+          "nativeSection": "Publisher article links and supplementary-data link, not supplementary content"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-05-Q02",
+      "description": "CCLE935cancercelllines/26MM; operationalHK1negativeHK2positiveboxHK1<10TPM/HK2>1TPM, body14/26=54percent. Fig1DCCLElow/high13/13 andCoMMpass383/384=767reusedpatientexpression samples, notsamecutoff/clinicalprevalence54percent. BodyequivalentproportionversushalfDlabelretained; no directabsoluteRNAvaluecomparisonTPM/FPKM, no newtreatedpatientcohort.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 4,
+          "printedPage": "2750",
+          "nativeSection": "Materials and Methods and Results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 5,
+          "printedPage": "2751",
+          "nativeSection": "Figure 1 and expression results"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-05-Q03",
+      "description": "Figure1E18,920genes/63adjustedP<.05genecomparisons, enrichmenthypothesesnotclinicalsubtype/treatmentbiomarkervalidation. Proteinisoformmodelsnotuniversalcancerrule. ActualassaylinesHK1negativeOPM1/OPM2/RPMI8226/S6B45 versuspositiveXG1/MM144/U266; Westernpanelbroadercontext separate.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 3,
+          "printedPage": "2749",
+          "nativeSection": "Introduction and Materials and Methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 5,
+          "printedPage": "2751",
+          "nativeSection": "Figure 1 and expression results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 6,
+          "printedPage": "2752",
+          "nativeSection": "Figure 2 and ASO results"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-05-Q04",
+      "description": "Gen2.5cEtASO1/2 freeuptakewithouttransfection, scrambledASOcontrols;ASOconcentrations0/.5/2.5/10uM NOTmM. PDFtextextractionrendersmuasmmol/L; originalfig/legendvisuallyconfirmedASOuM/PERuM versusMetmM andDPInM. No externalrepair.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 3,
+          "printedPage": "2749",
+          "nativeSection": "Introduction and Materials and Methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 6,
+          "printedPage": "2752",
+          "nativeSection": "Figure 2 and ASO results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 7,
+          "printedPage": "2753",
+          "nativeSection": "Figure 3 and DPI/PER results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 9,
+          "printedPage": "2755",
+          "nativeSection": "Figure 5 and actual metformin results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 12,
+          "printedPage": "2758",
+          "nativeSection": "Figure 7 and murine ASO results"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-05-Q05",
+      "description": "ASOaloneblots3/7days andMTS7days, glucose/lactateafter7dthenfreshmedia24h/triplicatewells. ASOreducesHK2inbothHK1groupsbutgrowthmainlynegativegroup, lowdeath<10subG1fromuncheckedSI, cytostaticnotuniformcytotoxicmonotherapy. No exactbarheightdigitization.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 3,
+          "printedPage": "2749",
+          "nativeSection": "Introduction and Materials and Methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 5,
+          "printedPage": "2751",
+          "nativeSection": "Figure 1 and expression results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 6,
+          "printedPage": "2752",
+          "nativeSection": "Figure 2 and ASO results"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-05-Q06",
+      "description": "DPIcontextFigure3AASO10uM3dthenDPI50nM3d/trypan;Figure3BDPI50OPM2vs25S6B45/U266nM. Figure3ClowASO5uM/DPI15nM/PER5uM3+3d, separatehighdosepair. AnnexinVallpositiveeventsnotlateonly; printedflowlabelsrepresentativesnotverifiedaggregatemeans.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 3,
+          "printedPage": "2749",
+          "nativeSection": "Introduction and Materials and Methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 7,
+          "printedPage": "2753",
+          "nativeSection": "Figure 3 and DPI/PER results"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-05-Q07",
+      "description": "PBMCFigure3EDPItriplecontextASO10uM72h+72h/DPI25nM/PER5uM, noSIGdifferenceintrypanviabilityNS not100percentallnormalspared; donorN/source/consentnotmainidentified. Not directMETtriplehealthycellassay. IsoHK1reexpressionRPMIrescuesDPItriple10uMASO/25nMDPI/5uMPER3+3days, notdirectdemonstrationeveryMetcombogeneticrescue.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 7,
+          "printedPage": "2753",
+          "nativeSection": "Figure 3 and DPI/PER results"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-05-Q08",
+      "description": "Physical6bodycallsOPM2HK1positive inlow-doseDPIparagraphbutFig3C/otherOPM2labelsHK1negative; preservetypographic/modeldiscrepancy ratherthansilentlyrepair. Title/paperHK1minusglyph textencoding notplus.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 6,
+          "printedPage": "2752",
+          "nativeSection": "Figure 2 and ASO results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 7,
+          "printedPage": "2753",
+          "nativeSection": "Figure 3 and DPI/PER results"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-05-Q09",
+      "description": "Authorssyntheticlethalitymechanisticclaim backedculturedeath/Annexin/PARP/isogenicHK1context; no reportedCI/Bliss/ZIP/Loewe formalinteractionmatrix orinvivostatinteraction accepted. Synergywordingnotnewclinicaltherapeuticbenefit.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 2,
+          "printedPage": "2748",
+          "nativeSection": "Title, abstract, graphical abstract and affiliations"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 7,
+          "printedPage": "2753",
+          "nativeSection": "Figure 3 and DPI/PER results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 9,
+          "printedPage": "2755",
+          "nativeSection": "Figure 5 and actual metformin results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 13,
+          "printedPage": "2759",
+          "nativeSection": "Discussion, disclosures, contributions and acknowledgments"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-05-Q10",
+      "description": "ASOmouse50mgkgSC, DPI2mgkgIP/Met250mgkgIP/PER30mgkgIP,5daysperwk2daybreak, notoral/q2d orclinicalregimen. ASOstartday1whenSCtumor200mm3; Fig4legendday3DPI/PER versusphysical7bodyday4 conflictretained. MetFig5FandmurineFig7Dlegendday3 otherdrugs. Blottarget2wk/PET10days(8daysmurine) distinctexposurecontexts/general5on2off wording.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 3,
+          "printedPage": "2749",
+          "nativeSection": "Introduction and Materials and Methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 4,
+          "printedPage": "2750",
+          "nativeSection": "Materials and Methods and Results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 8,
+          "printedPage": "2754",
+          "nativeSection": "Figure 4 and human xenograft/PET results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 9,
+          "printedPage": "2755",
+          "nativeSection": "Figure 5 and actual metformin results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 12,
+          "printedPage": "2758",
+          "nativeSection": "Figure 7 and murine ASO results"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-05-Q11",
+      "description": "NSGSCmodels3e6cellsinRPMI/Matrigel1:1 (volumevisually100uL notOCRmL); systemicRPMI3e6IV vsP3HK1KO1e6IV. Age/sexnotstatedmain; no borrowingotherpaper6-8weekmales. Animalrandomizedasreported butallocationconcealment/blinding/powernotreported. UCLAARC2015-067-11.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 3,
+          "printedPage": "2749",
+          "nativeSection": "Introduction and Materials and Methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 4,
+          "printedPage": "2750",
+          "nativeSection": "Materials and Methods and Results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 12,
+          "printedPage": "2758",
+          "nativeSection": "Figure 7 and murine ASO results"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-05-Q12",
+      "description": "HumanOPM2Fig4DASOaloneNS versusASODPI/pair/PERgreaterresponse, U266HK1positiveallregimensNSdespitetargetreduction.N10pergroupcaption. HumanASOdoesnotmatchmouseHK2sohumanASOxenograftweightnotproofhostHK2knockdowntolerability. H460lysatepositivecontrolnotlungtumorresponse.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 8,
+          "printedPage": "2754",
+          "nativeSection": "Figure 4 and human xenograft/PET results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 13,
+          "printedPage": "2759",
+          "nativeSection": "Discussion, disclosures, contributions and acknowledgments"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-05-Q13",
+      "description": "FDGPETreducedafterASO notclinicaltumorregression/overallbenefit; OXPHOSinhibitorsaloneincreaseFDGassourceduncheckedS4D notacceleratedtumorclinicalharm. PET3images/dotsrepresentative/ROI notassumedallocatedN; patientFDGinterpretationnotvalidated.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 8,
+          "printedPage": "2754",
+          "nativeSection": "Figure 4 and human xenograft/PET results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 9,
+          "printedPage": "2755",
+          "nativeSection": "Figure 5 and actual metformin results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 10,
+          "printedPage": "2756",
+          "nativeSection": "Figure 6 and metabolic results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 12,
+          "printedPage": "2758",
+          "nativeSection": "Figure 7 and murine ASO results"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-05-Q14",
+      "description": "Actual Met Figure5A/B ASO10uM pretreat3d+Met5mM3d; lowerdose Fig5C ASO5uM+Met2.5mM/PER5uM3+3days. Figure5B OPM2 Annexin representative control/ASO/Met/pair 4.8/8.1/9.3/85.9percent; Figure5C lowerdose withoutPER4.7/6.7/6.0/26.5 versus withPER5.0/16.9/10.5/71.2. Different doses and representative printed labels, not pooled or aggregate means. Met monotherapy not new clinical benefit.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 9,
+          "printedPage": "2755",
+          "nativeSection": "Figure 5 and actual metformin results"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-05-Q15",
+      "description": "BMSCRPMI8226LUC1:2,ASO10uM3dthenDPI15nM/Met2.5mM/PER5uM3d, notCAR-T/organoids. StromareducesASOalonesensitivity,tripleeffectsnotSIGchangedbycoculture; NSnotequivalence/allmicroenvironmentresistanceovercome. Luminescenceproxy vsprimarycelldeath, BMSCphotosnotquantifiednormaltissuesafety; BMSCdonorN/sourcefromcitedcontextnotverified. CaptionRPMI8662typoverus8226retainedifidentitydiscussed.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 9,
+          "printedPage": "2755",
+          "nativeSection": "Figure 5 and actual metformin results"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-05-Q16",
+      "description": "Fig5FMetaloneSCOPM2NS; hASO/Met/PERvshASO/DPI/PERNSequivalenceNOTproven, n10/group. Fig5GsystemicRPMI8226LUCdorsal/ventralsame5displayedmiceeachgroup, do notdoubleindependentN/assumeallocationNfromimages. BurdensuppressionnotHR/clinicalOS.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 9,
+          "printedPage": "2755",
+          "nativeSection": "Figure 5 and actual metformin results"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-05-Q17",
+      "description": "Fig6metabolic24h: glucoseconsumption/lactate/ATP/(AMP+ADP),129metabolitesandU13Cglucoseincorporation,pool/fractionchangesnotfullfluxrate. AllgroupsviabilitydifferenceNSat24hnotall100percentlive/equivalence; changesprecedegrossdeathatlater72h. ExactMet/ASO/PERdosesnotrestatedFig6mainlegend/Methods, no borrowing3+3daydoses.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 4,
+          "printedPage": "2750",
+          "nativeSection": "Materials and Methods and Results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 10,
+          "printedPage": "2756",
+          "nativeSection": "Figure 6 and metabolic results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 11,
+          "printedPage": "2757",
+          "nativeSection": "Metabolic results, Discussion and Figure 7 lead-in"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-05-Q18",
+      "description": "FAOinhibitorPERaloneATP/AMPADPratioNS, manydifferentmetabolitesnotuniformlydown; selectedAAandFAintermediatesrise, retainmany/nearlyallnucleotidedescriptionnotall129depleted. SI5/6/TableS1unread, rawMS/stats/globalmultiplicitynotreproduced. CarbontracingisGLUCOSEnotbetaOHB, no transferfromSong2026.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 10,
+          "printedPage": "2756",
+          "nativeSection": "Figure 6 and metabolic results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 11,
+          "printedPage": "2757",
+          "nativeSection": "Metabolic results, Discussion and Figure 7 lead-in"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-05-Q19",
+      "description": "MurinemHK2ASO1/2distinctfromhumanASO, P3HK1KOCRISPRengineerednegativefromHK1positiveparent, notnaturalpatientpopulation. TwoKOclonesblots. MurineASOknockdownnormalheartless/skeletalmusclenone fromuncheckedS7F, exposureincomplete; lackweightlossdoesnotprovecomprehensiveselectiveHK2safety.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 11,
+          "printedPage": "2757",
+          "nativeSection": "Metabolic results, Discussion and Figure 7 lead-in"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 12,
+          "printedPage": "2758",
+          "nativeSection": "Figure 7 and murine ASO results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 13,
+          "printedPage": "2759",
+          "nativeSection": "Discussion, disclosures, contributions and acknowledgments"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-05-Q20",
+      "description": "Fig7BmASO.5uM3dthenMet2mM/DPI25nM/PER3uM3d. RepresentativeannexintripleDPI73.2percentvsMet44.5percent, notclaimidenticalapoptosisacrossagents/doses; no digitizedmean. Mainbodycallsimilarboundedonly.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 12,
+          "printedPage": "2758",
+          "nativeSection": "Figure 7 and murine ASO results"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-05-Q21",
+      "description": "MurineSCFig7Dn11/group,mASOaloneactuallysignificantlyreducesP3tumorprogression unlikehumanOPM2monotherapyNS; triplefurtherreduces. PETafter8days, SCweight15dayplotbodyweightonlynotliver/histo/clinicalAE. Fig7Hsystemiccontrolalllostby~21d/treatedallalivewhenstoppedafterlastcontroleuthanasia, administrativetermination/censoringnotcure/longtermsurvival, noreconstructedmedian/HR. N11SCnottransferredtosystemicKM.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 11,
+          "printedPage": "2757",
+          "nativeSection": "Metabolic results, Discussion and Figure 7 lead-in"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 12,
+          "printedPage": "2758",
+          "nativeSection": "Figure 7 and murine ASO results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 13,
+          "printedPage": "2759",
+          "nativeSection": "Discussion, disclosures, contributions and acknowledgments"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-05-Q22",
+      "description": "PrimaryMMpatientcellsandpatientderivedxenograftsnotactuallytested; discussioncallsfuturevalidation. ReusedCoMMpass767 isnotnewtreatmentcohort; no efficacyinhumans. MostnormalHK1onlyexceptionheart/muscle/fatHK2explicit, no allnormalHK2absentclaim.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 3,
+          "printedPage": "2749",
+          "nativeSection": "Introduction and Materials and Methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 11,
+          "printedPage": "2757",
+          "nativeSection": "Metabolic results, Discussion and Figure 7 lead-in"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 13,
+          "printedPage": "2759",
+          "nativeSection": "Discussion, disclosures, contributions and acknowledgments"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-05-Q23",
+      "description": "Humanoral/tumorASO/Met/PERPKandcombinationAE notshown. Author2019regulatory/clinicalPER/DPIclaimsnotverifiedcurrent2026; noregimenapproval/availability/dosingrecommendation adopted. ASOsequence/chemistrydetailmostlyS1unread, no broadtranscriptofftargetaudit.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 3,
+          "printedPage": "2749",
+          "nativeSection": "Introduction and Materials and Methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 9,
+          "printedPage": "2755",
+          "nativeSection": "Figure 5 and actual metformin results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 13,
+          "printedPage": "2759",
+          "nativeSection": "Discussion, disclosures, contributions and acknowledgments"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-05-Q24",
+      "description": "GeneralstatStudentttestP.05, Fig1EadjustedgenePdifferentdomain; globalcomparisonsmultiplicity/biorepsnotestablished. Triplicateculturewellsanderrorbarsnotindependentpatients; NSnotproofequivalence. SupplementaryS1-S7/siRNA/shRNAprecursorliverpaperscitednotread/nonewreplication/independentpatientcount.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 4,
+          "printedPage": "2750",
+          "nativeSection": "Materials and Methods and Results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 5,
+          "printedPage": "2751",
+          "nativeSection": "Figure 1 and expression results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 7,
+          "printedPage": "2753",
+          "nativeSection": "Figure 3 and DPI/PER results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 9,
+          "printedPage": "2755",
+          "nativeSection": "Figure 5 and actual metformin results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 10,
+          "printedPage": "2756",
+          "nativeSection": "Figure 6 and metabolic results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 12,
+          "printedPage": "2758",
+          "nativeSection": "Figure 7 and murine ASO results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 15,
+          "printedPage": null,
+          "nativeSection": "Publisher article links and supplementary-data link, not supplementary content"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-05-Q25",
+      "description": "UCLA/Ionis17authors, IonisASOdevelopmentcEttechnology. FundingUL1TR001881JCCCCTSIDGSOMCancerThemeImpactGrant/PhelpsCrumpFoundations/Herschman/NIHR01CA200910Morrison. DisclosuresTimmermanBMSKiteMerckgrants/BMSKitePartnerImmuneDesignconsult; LarsonTakedahonoraria/BMSconsult; KimownershipStocks;MacLeodIonisownership;MorrisonQwixelScientificDirector/ownership. Do notdeclareglobalnoCOI/infermisconduct.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 2,
+          "printedPage": "2748",
+          "nativeSection": "Title, abstract, graphical abstract and affiliations"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 13,
+          "printedPage": "2759",
+          "nativeSection": "Discussion, disclosures, contributions and acknowledgments"
+        }
+      ]
+    }
+  ],
+  "overlapRecords": [
+    {
+      "reportId": "REED-bf6e2b4f425054b45096",
+      "family": "Xu2019HK2ASOMM",
+      "reusedExpression": {
+        "CCLEcancerCellLines": 935,
+        "CCLE_MM": 26,
+        "bodyHK1negativeHK2positive": 14,
+        "bodyPercent": 54,
+        "operationalBox": {
+          "HK1_TPM_lessThan": 10,
+          "HK2_TPM_greaterThan": 1
+        },
+        "Figure1D_CCLElowHigh": [
+          13,
+          13
+        ],
+        "CoMMpassLowHigh": [
+          383,
+          384
+        ],
+        "CoMMpassTotal": 767,
+        "genesCompared": 18920,
+        "adjustedPbelow05Genes": 63
+      },
+      "sameDorsalVentralMiceNotDoubled": true,
+      "technicalWellsNotIndependentPatients": true,
+      "humanAndMurineASOsDistinct": true,
+      "SC_N_NotTransferredToSystemicKM": true,
+      "priorHK2shRNAAndLiverReports": "cited context only; separate originals not newly inspected",
+      "newIndependentTrialCount": 0,
+      "newIndependentPatientCount": 0,
+      "locators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 3,
+          "printedPage": "2749",
+          "nativeSection": "Introduction and Materials and Methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 5,
+          "printedPage": "2751",
+          "nativeSection": "Figure 1 and expression results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 7,
+          "printedPage": "2753",
+          "nativeSection": "Figure 3 and DPI/PER results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 9,
+          "printedPage": "2755",
+          "nativeSection": "Figure 5 and actual metformin results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 12,
+          "printedPage": "2758",
+          "nativeSection": "Figure 7 and murine ASO results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 13,
+          "printedPage": "2759",
+          "nativeSection": "Discussion, disclosures, contributions and acknowledgments"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a2fd40b475a0b469e236bef203f3a11159663d45771a9a6f53f9f8e748e56182",
+          "physicalPage": 14,
+          "printedPage": "2760",
+          "nativeSection": "References"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Heldpublisherarticle2019CancerRes79(10)2748-2760,OnlineFirst18March2019/issue15May2019; cover/downloadlinksnotpreprint/supplementarydata. All15physicaltextandallmaterialvisualsread; no companion/rawdata/currentintegrity acquisition.",
+    "CCLE935cancercelllines/26MM; operationalHK1negativeHK2positiveboxHK1<10TPM/HK2>1TPM, body14/26=54percent. Fig1DCCLElow/high13/13 andCoMMpass383/384=767reusedpatientexpression samples, notsamecutoff/clinicalprevalence54percent. BodyequivalentproportionversushalfDlabelretained; no directabsoluteRNAvaluecomparisonTPM/FPKM, no newtreatedpatientcohort.",
+    "Figure1E18,920genes/63adjustedP<.05genecomparisons, enrichmenthypothesesnotclinicalsubtype/treatmentbiomarkervalidation. Proteinisoformmodelsnotuniversalcancerrule. ActualassaylinesHK1negativeOPM1/OPM2/RPMI8226/S6B45 versuspositiveXG1/MM144/U266; Westernpanelbroadercontext separate.",
+    "Gen2.5cEtASO1/2 freeuptakewithouttransfection, scrambledASOcontrols;ASOconcentrations0/.5/2.5/10uM NOTmM. PDFtextextractionrendersmuasmmol/L; originalfig/legendvisuallyconfirmedASOuM/PERuM versusMetmM andDPInM. No externalrepair.",
+    "ASOaloneblots3/7days andMTS7days, glucose/lactateafter7dthenfreshmedia24h/triplicatewells. ASOreducesHK2inbothHK1groupsbutgrowthmainlynegativegroup, lowdeath<10subG1fromuncheckedSI, cytostaticnotuniformcytotoxicmonotherapy. No exactbarheightdigitization.",
+    "DPIcontextFigure3AASO10uM3dthenDPI50nM3d/trypan;Figure3BDPI50OPM2vs25S6B45/U266nM. Figure3ClowASO5uM/DPI15nM/PER5uM3+3d, separatehighdosepair. AnnexinVallpositiveeventsnotlateonly; printedflowlabelsrepresentativesnotverifiedaggregatemeans.",
+    "PBMCFigure3EDPItriplecontextASO10uM72h+72h/DPI25nM/PER5uM, noSIGdifferenceintrypanviabilityNS not100percentallnormalspared; donorN/source/consentnotmainidentified. Not directMETtriplehealthycellassay. IsoHK1reexpressionRPMIrescuesDPItriple10uMASO/25nMDPI/5uMPER3+3days, notdirectdemonstrationeveryMetcombogeneticrescue.",
+    "Physical6bodycallsOPM2HK1positive inlow-doseDPIparagraphbutFig3C/otherOPM2labelsHK1negative; preservetypographic/modeldiscrepancy ratherthansilentlyrepair. Title/paperHK1minusglyph textencoding notplus.",
+    "Authorssyntheticlethalitymechanisticclaim backedculturedeath/Annexin/PARP/isogenicHK1context; no reportedCI/Bliss/ZIP/Loewe formalinteractionmatrix orinvivostatinteraction accepted. Synergywordingnotnewclinicaltherapeuticbenefit.",
+    "ASOmouse50mgkgSC, DPI2mgkgIP/Met250mgkgIP/PER30mgkgIP,5daysperwk2daybreak, notoral/q2d orclinicalregimen. ASOstartday1whenSCtumor200mm3; Fig4legendday3DPI/PER versusphysical7bodyday4 conflictretained. MetFig5FandmurineFig7Dlegendday3 otherdrugs. Blottarget2wk/PET10days(8daysmurine) distinctexposurecontexts/general5on2off wording.",
+    "NSGSCmodels3e6cellsinRPMI/Matrigel1:1 (volumevisually100uL notOCRmL); systemicRPMI3e6IV vsP3HK1KO1e6IV. Age/sexnotstatedmain; no borrowingotherpaper6-8weekmales. Animalrandomizedasreported butallocationconcealment/blinding/powernotreported. UCLAARC2015-067-11.",
+    "HumanOPM2Fig4DASOaloneNS versusASODPI/pair/PERgreaterresponse, U266HK1positiveallregimensNSdespitetargetreduction.N10pergroupcaption. HumanASOdoesnotmatchmouseHK2sohumanASOxenograftweightnotproofhostHK2knockdowntolerability. H460lysatepositivecontrolnotlungtumorresponse.",
+    "FDGPETreducedafterASO notclinicaltumorregression/overallbenefit; OXPHOSinhibitorsaloneincreaseFDGassourceduncheckedS4D notacceleratedtumorclinicalharm. PET3images/dotsrepresentative/ROI notassumedallocatedN; patientFDGinterpretationnotvalidated.",
+    "Actual Met Figure5A/B ASO10uM pretreat3d+Met5mM3d; lowerdose Fig5C ASO5uM+Met2.5mM/PER5uM3+3days. Figure5B OPM2 Annexin representative control/ASO/Met/pair 4.8/8.1/9.3/85.9percent; Figure5C lowerdose withoutPER4.7/6.7/6.0/26.5 versus withPER5.0/16.9/10.5/71.2. Different doses and representative printed labels, not pooled or aggregate means. Met monotherapy not new clinical benefit.",
+    "BMSCRPMI8226LUC1:2,ASO10uM3dthenDPI15nM/Met2.5mM/PER5uM3d, notCAR-T/organoids. StromareducesASOalonesensitivity,tripleeffectsnotSIGchangedbycoculture; NSnotequivalence/allmicroenvironmentresistanceovercome. Luminescenceproxy vsprimarycelldeath, BMSCphotosnotquantifiednormaltissuesafety; BMSCdonorN/sourcefromcitedcontextnotverified. CaptionRPMI8662typoverus8226retainedifidentitydiscussed.",
+    "Fig5FMetaloneSCOPM2NS; hASO/Met/PERvshASO/DPI/PERNSequivalenceNOTproven, n10/group. Fig5GsystemicRPMI8226LUCdorsal/ventralsame5displayedmiceeachgroup, do notdoubleindependentN/assumeallocationNfromimages. BurdensuppressionnotHR/clinicalOS.",
+    "Fig6metabolic24h: glucoseconsumption/lactate/ATP/(AMP+ADP),129metabolitesandU13Cglucoseincorporation,pool/fractionchangesnotfullfluxrate. AllgroupsviabilitydifferenceNSat24hnotall100percentlive/equivalence; changesprecedegrossdeathatlater72h. ExactMet/ASO/PERdosesnotrestatedFig6mainlegend/Methods, no borrowing3+3daydoses.",
+    "FAOinhibitorPERaloneATP/AMPADPratioNS, manydifferentmetabolitesnotuniformlydown; selectedAAandFAintermediatesrise, retainmany/nearlyallnucleotidedescriptionnotall129depleted. SI5/6/TableS1unread, rawMS/stats/globalmultiplicitynotreproduced. CarbontracingisGLUCOSEnotbetaOHB, no transferfromSong2026.",
+    "MurinemHK2ASO1/2distinctfromhumanASO, P3HK1KOCRISPRengineerednegativefromHK1positiveparent, notnaturalpatientpopulation. TwoKOclonesblots. MurineASOknockdownnormalheartless/skeletalmusclenone fromuncheckedS7F, exposureincomplete; lackweightlossdoesnotprovecomprehensiveselectiveHK2safety.",
+    "Fig7BmASO.5uM3dthenMet2mM/DPI25nM/PER3uM3d. RepresentativeannexintripleDPI73.2percentvsMet44.5percent, notclaimidenticalapoptosisacrossagents/doses; no digitizedmean. Mainbodycallsimilarboundedonly.",
+    "MurineSCFig7Dn11/group,mASOaloneactuallysignificantlyreducesP3tumorprogression unlikehumanOPM2monotherapyNS; triplefurtherreduces. PETafter8days, SCweight15dayplotbodyweightonlynotliver/histo/clinicalAE. Fig7Hsystemiccontrolalllostby~21d/treatedallalivewhenstoppedafterlastcontroleuthanasia, administrativetermination/censoringnotcure/longtermsurvival, noreconstructedmedian/HR. N11SCnottransferredtosystemicKM.",
+    "PrimaryMMpatientcellsandpatientderivedxenograftsnotactuallytested; discussioncallsfuturevalidation. ReusedCoMMpass767 isnotnewtreatmentcohort; no efficacyinhumans. MostnormalHK1onlyexceptionheart/muscle/fatHK2explicit, no allnormalHK2absentclaim.",
+    "Humanoral/tumorASO/Met/PERPKandcombinationAE notshown. Author2019regulatory/clinicalPER/DPIclaimsnotverifiedcurrent2026; noregimenapproval/availability/dosingrecommendation adopted. ASOsequence/chemistrydetailmostlyS1unread, no broadtranscriptofftargetaudit.",
+    "GeneralstatStudentttestP.05, Fig1EadjustedgenePdifferentdomain; globalcomparisonsmultiplicity/biorepsnotestablished. Triplicateculturewellsanderrorbarsnotindependentpatients; NSnotproofequivalence. SupplementaryS1-S7/siRNA/shRNAprecursorliverpaperscitednotread/nonewreplication/independentpatientcount.",
+    "UCLA/Ionis17authors, IonisASOdevelopmentcEttechnology. FundingUL1TR001881JCCCCTSIDGSOMCancerThemeImpactGrant/PhelpsCrumpFoundations/Herschman/NIHR01CA200910Morrison. DisclosuresTimmermanBMSKiteMerckgrants/BMSKitePartnerImmuneDesignconsult; LarsonTakedahonoraria/BMSconsult; KimownershipStocks;MacLeodIonisownership;MorrisonQwixelScientificDirector/ownership. Do notdeclareglobalnoCOI/infermisconduct."
+  ],
+  "newIndependentTrials": 0,
+  "newIndependentPatients": 0,
+  "scientificAcceptance": false,
+  "humanApproval": false,
+  "released": false
+}
