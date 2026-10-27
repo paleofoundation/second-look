@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "reed2-cal21-metformin-MM-source-v1",
+  "required": [
+    "schemaVersion",
+    "paper",
+    "source",
+    "inspection",
+    "study",
+    "populations",
+    "results",
+    "claims",
+    "reviewInputs",
+    "sourceQualifications",
+    "limitations",
+    "scientificAcceptance",
+    "humanApproval",
+    "released"
+  ],
+  "controls": [
+    "Verify actual metformin doses/time and HIF1/hypoxia models, MM lines/donors/animals if present, survival/metabolism/apoptosis/angiogenesis/resistance endpoints, normoxic controls and genetic/pharmacologic rescue/necessity versus marker association. Preserve normal-comparator specificity and actual biological versus technical N.",
+    "Exact source/index/model/dose/time/assay identity",
+    "Biological versus technical N/nulls/uncertainty",
+    "Direct necessity/rescue versus inference/clinical translation",
+    "All supplied pages/materialvisuals/pinned67fields",
+    "No new independent clinical trialpatient or grade"
+  ],
+  "gates": {
+    "scientificAcceptance": false,
+    "humanApproval": false,
+    "released": false,
+    "newGrades": 0
+  }
+}
