@@ -1,0 +1,678 @@
+{
+  "schemaVersion": "REED-CAL-06-protocol-v1",
+  "paper": {
+    "id": "B-R0187",
+    "sourceId": "B-R0187-F01",
+    "existingReviewId": "DRAFT-REVIEW-B-R0187-F01",
+    "intakeReportId": "REED-f18e44079f706d6da8dd",
+    "pmid": "38225589",
+    "doi": "10.1186/s12885-023-11797-z",
+    "title": "A phase Ib/II randomized, open-label drug repurposing trial of glutamate signaling inhibitors in combination with chemoradiotherapy in patients with newly diagnosed glioblastoma: the GLUGLIO trial protocol",
+    "sourceType": "trial_protocol",
+    "newCanonicalIdentity": false
+  },
+  "source": {
+    "id": "B-R0187-F01",
+    "ref": "$REMAPRX_REED_ROOT/memantine-glioblastoma/pdfs/38225589-mastall-2024.pdf",
+    "sha256": "c0c1212e9c0311b8e1a535592a4cb81a914bc3c05f0b576eb3f0129f21d8b534",
+    "pmid": "38225589",
+    "doi": "10.1186/s12885-023-11797-z",
+    "title": "A phase Ib/II randomized, open-label drug repurposing trial of glutamate signaling inhibitors in combination with chemoradiotherapy in patients with newly diagnosed glioblastoma: the GLUGLIO trial protocol",
+    "physicalPages": 7,
+    "intakeReportId": "REED-f18e44079f706d6da8dd",
+    "existingReportId": "B-R0187",
+    "existingSourceId": "B-R0187-F01"
+  },
+  "inspection": {
+    "at": "2026-10-27T08:58:55.603075+00:00",
+    "activeReadiness": "READINESS.json",
+    "textualPagesRead": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "visualInspectedPhysicalPages": [
+      3,
+      4
+    ],
+    "fullScientificReviewComplete": false,
+    "priorPartialReviewPreserved": true
+  },
+  "trialPlan": {
+    "idAsReported": "NCT05664464",
+    "registrationDateAsReported": "2022-12-23",
+    "design": "open-label randomized phaseIb/II parallelgroup multicenter",
+    "plannedN": 120,
+    "plannedNPerArm": 60,
+    "actualEnrolledTotal": null,
+    "actualAnalyzedN": null,
+    "experimental": "gabapentin+sulfasalazine+memantine+temozolomide/radiotherapy",
+    "comparator": "temozolomide/radiotherapy",
+    "memantineComponentEffectIsolated": false,
+    "primaryEndpoint": "PFS6",
+    "actualOutcomeDataPresent": false,
+    "currentRegistryStatusVerified": false,
+    "firstPatientAsReported": "January2023",
+    "resultsExpectedAsReported": "end2026"
+  },
+  "observations": [
+    {
+      "id": "REED-CAL-06-O01",
+      "type": "planned_trial_design",
+      "statement": "Protocol plans a1:1 open-label phaseIb/II randomized trial of triple anti-glutamatergic therapy plus standard chemoradiotherapy versus chemoradiotherapy alone,120patients/60perarm. Primary endpointPFSat6months; target sample and power assumptions are not observed data.",
+      "values": {
+        "plannedTotalN": 120,
+        "plannedNPerArm": 60,
+        "actualTotalEnrollmentReported": null,
+        "actualAnalyzedN": null,
+        "primaryEndpoint": "PFSat6months",
+        "allocation": "1:1,stratified variable-block randomization by extent of resection",
+        "powerAssumptions": {
+          "controlPFS6": 0.5,
+          "experimentalPFS6": 0.7,
+          "power": 0.8,
+          "oneSidedAlpha": 0.1,
+          "plannedDropoutAllowance": 0.1,
+          "plannedRiskDifferenceCILevel": 0.9
+        }
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "c0c1212e9c0311b8e1a535592a4cb81a914bc3c05f0b576eb3f0129f21d8b534",
+          "physicalPage": 1,
+          "printedPage": "1 of 7",
+          "nativeSection": "Abstract"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "c0c1212e9c0311b8e1a535592a4cb81a914bc3c05f0b576eb3f0129f21d8b534",
+          "physicalPage": 2,
+          "printedPage": "2 of 7",
+          "nativeSection": "Registration/Methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "c0c1212e9c0311b8e1a535592a4cb81a914bc3c05f0b576eb3f0129f21d8b534",
+          "physicalPage": 3,
+          "printedPage": "3 of 7",
+          "nativeSection": "Figure1/design/cohort/treatment"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "c0c1212e9c0311b8e1a535592a4cb81a914bc3c05f0b576eb3f0129f21d8b534",
+          "physicalPage": 4,
+          "printedPage": "4 of 7",
+          "nativeSection": "Study drugs/statistical considerations"
+        }
+      ],
+      "basis": "direct_protocol_planned_or_historical_description",
+      "acceptedSupport": false,
+      "grade": null,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED-CAL-06-O02",
+      "type": "planned_combination_regimen",
+      "statement": "Memantine is one component with gabapentin/sulfasalazine and temozolomide/radiotherapy. Planned oral memantine increases5,10,15,20mg once daily over weeks1,2,3,4onward. The experimental intervention does not isolate memantine; no actual tolerated dose or safety/efficacy result is reported.",
+      "values": {
+        "memantinePlannedDailyMg": [
+          5,
+          10,
+          15,
+          20
+        ],
+        "weeks": [
+          1,
+          2,
+          3,
+          "4onward"
+        ],
+        "otherExperimentalDrugs": [
+          "gabapentin",
+          "sulfasalazine"
+        ],
+        "bothArmsStandardTherapy": [
+          "temozolomide",
+          "radiotherapy"
+        ],
+        "plannedInterimSafetyExperimentalN": 20,
+        "actualInterimSafetyDataReported": false,
+        "standaloneMemantineEffectIdentifiable": false
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "c0c1212e9c0311b8e1a535592a4cb81a914bc3c05f0b576eb3f0129f21d8b534",
+          "physicalPage": 3,
+          "printedPage": "3 of 7",
+          "nativeSection": "Figure1/design/cohort/treatment"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "c0c1212e9c0311b8e1a535592a4cb81a914bc3c05f0b576eb3f0129f21d8b534",
+          "physicalPage": 4,
+          "printedPage": "4 of 7",
+          "nativeSection": "Study drugs/statistical considerations"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "c0c1212e9c0311b8e1a535592a4cb81a914bc3c05f0b576eb3f0129f21d8b534",
+          "physicalPage": 6,
+          "printedPage": "6 of 7",
+          "nativeSection": "Discussion/declarations"
+        }
+      ],
+      "basis": "direct_protocol_planned_or_historical_description",
+      "acceptedSupport": false,
+      "grade": null,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED-CAL-06-O03",
+      "type": "historical_protocol_no_results_and_limits",
+      "statement": "The paper states no datasets were generated or analyzed for this publication and reports an ongoing trial with first results expected end2026. These are historical publication statements, not a verified current registry status or results release. Authors acknowledge smallsample/exploratory subgroups and inability to assign any combination efficacy to individual drugs.",
+      "values": {
+        "clinicalResultsInThisReport": 0,
+        "firstPatientMonthAsReported": "January2023",
+        "registryIdAsReported": "NCT05664464",
+        "registryDateAsReported": "2022-12-23",
+        "currentStatusExternallyVerified": false,
+        "resultsExpectedAsReported": "end2026",
+        "efficacyAssignedToIndividualDrug": false
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "c0c1212e9c0311b8e1a535592a4cb81a914bc3c05f0b576eb3f0129f21d8b534",
+          "physicalPage": 2,
+          "printedPage": "2 of 7",
+          "nativeSection": "Registration/Methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "c0c1212e9c0311b8e1a535592a4cb81a914bc3c05f0b576eb3f0129f21d8b534",
+          "physicalPage": 3,
+          "printedPage": "3 of 7",
+          "nativeSection": "Figure1/design/cohort/treatment"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "c0c1212e9c0311b8e1a535592a4cb81a914bc3c05f0b576eb3f0129f21d8b534",
+          "physicalPage": 4,
+          "printedPage": "4 of 7",
+          "nativeSection": "Study drugs/statistical considerations"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "c0c1212e9c0311b8e1a535592a4cb81a914bc3c05f0b576eb3f0129f21d8b534",
+          "physicalPage": 5,
+          "printedPage": "5 of 7",
+          "nativeSection": "Discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "c0c1212e9c0311b8e1a535592a4cb81a914bc3c05f0b576eb3f0129f21d8b534",
+          "physicalPage": 6,
+          "printedPage": "6 of 7",
+          "nativeSection": "Discussion/declarations"
+        }
+      ],
+      "basis": "direct_protocol_planned_or_historical_description",
+      "acceptedSupport": false,
+      "grade": null,
+      "verificationState": "pending_independent_source_audit"
+    }
+  ],
+  "claims": [
+    {
+      "id": "REED-CAL-06-C01",
+      "observationIds": [
+        "REED-CAL-06-O01"
+      ],
+      "statement": "Protocol plans a1:1 open-label phaseIb/II randomized trial of triple anti-glutamatergic therapy plus standard chemoradiotherapy versus chemoradiotherapy alone,120patients/60perarm. Primary endpointPFSat6months; target sample and power assumptions are not observed data.",
+      "relation": "protocol_context_only_not_observed_efficacy",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED-CAL-06-C02",
+      "observationIds": [
+        "REED-CAL-06-O02"
+      ],
+      "statement": "Memantine is one component with gabapentin/sulfasalazine and temozolomide/radiotherapy. Planned oral memantine increases5,10,15,20mg once daily over weeks1,2,3,4onward. The experimental intervention does not isolate memantine; no actual tolerated dose or safety/efficacy result is reported.",
+      "relation": "protocol_context_only_not_observed_efficacy",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED-CAL-06-C03",
+      "observationIds": [
+        "REED-CAL-06-O03"
+      ],
+      "statement": "The paper states no datasets were generated or analyzed for this publication and reports an ongoing trial with first results expected end2026. These are historical publication statements, not a verified current registry status or results release. Authors acknowledge smallsample/exploratory subgroups and inability to assign any combination efficacy to individual drugs.",
+      "relation": "protocol_context_only_not_observed_efficacy",
+      "acceptedSupport": false
+    }
+  ],
+  "clinicalResults": [],
+  "reviewInputs": [
+    {
+      "id": "Q01",
+      "answer": "Published protocol tests triple anti-glutamatergic adjunctive treatment versus chemoradiotherapy; no observed efficacy data.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "c0c1212e9c0311b8e1a535592a4cb81a914bc3c05f0b576eb3f0129f21d8b534",
+          "physicalPage": 2,
+          "printedPage": "2 of 7",
+          "nativeSection": "Registration/Methods"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q02",
+      "answer": "Planned adults,newlydiagnosed supratentorialGBM,KPS>=70;120total/60perarm planned,not actual enrolled/analyzed counts.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "c0c1212e9c0311b8e1a535592a4cb81a914bc3c05f0b576eb3f0129f21d8b534",
+          "physicalPage": 3,
+          "printedPage": "3 of 7",
+          "nativeSection": "Figure1/design/cohort/treatment"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q03",
+      "answer": "Planned oral memantine5/10/15/20mg daily weeks1/2/3/4onward alongside gabapentin/sulfasalazine and standardtherapy.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "c0c1212e9c0311b8e1a535592a4cb81a914bc3c05f0b576eb3f0129f21d8b534",
+          "physicalPage": 3,
+          "printedPage": "3 of 7",
+          "nativeSection": "Figure1/design/cohort/treatment"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "c0c1212e9c0311b8e1a535592a4cb81a914bc3c05f0b576eb3f0129f21d8b534",
+          "physicalPage": 4,
+          "printedPage": "4 of 7",
+          "nativeSection": "Study drugs/statistical considerations"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q04",
+      "answer": "Planned1:1variableblockrandomization stratified byresectionextent;openlabel,not memantine-only orplacebo trial.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "c0c1212e9c0311b8e1a535592a4cb81a914bc3c05f0b576eb3f0129f21d8b534",
+          "physicalPage": 2,
+          "printedPage": "2 of 7",
+          "nativeSection": "Registration/Methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "c0c1212e9c0311b8e1a535592a4cb81a914bc3c05f0b576eb3f0129f21d8b534",
+          "physicalPage": 3,
+          "printedPage": "3 of 7",
+          "nativeSection": "Figure1/design/cohort/treatment"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "c0c1212e9c0311b8e1a535592a4cb81a914bc3c05f0b576eb3f0129f21d8b534",
+          "physicalPage": 4,
+          "printedPage": "4 of 7",
+          "nativeSection": "Study drugs/statistical considerations"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q05",
+      "answer": "PFS6primary plus clinical/surrogate secondaryinstruments;50%versus70%PFS6 is a designassumption,not a finding.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "c0c1212e9c0311b8e1a535592a4cb81a914bc3c05f0b576eb3f0129f21d8b534",
+          "physicalPage": 2,
+          "printedPage": "2 of 7",
+          "nativeSection": "Registration/Methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "c0c1212e9c0311b8e1a535592a4cb81a914bc3c05f0b576eb3f0129f21d8b534",
+          "physicalPage": 3,
+          "printedPage": "3 of 7",
+          "nativeSection": "Figure1/design/cohort/treatment"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "c0c1212e9c0311b8e1a535592a4cb81a914bc3c05f0b576eb3f0129f21d8b534",
+          "physicalPage": 4,
+          "printedPage": "4 of 7",
+          "nativeSection": "Study drugs/statistical considerations"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q06",
+      "answer": "No arm result,actual endpoint denominator,effectestimate orobservedCI/pvalue. Planned90%CI/power are not achievedprecision.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "c0c1212e9c0311b8e1a535592a4cb81a914bc3c05f0b576eb3f0129f21d8b534",
+          "physicalPage": 3,
+          "printedPage": "3 of 7",
+          "nativeSection": "Figure1/design/cohort/treatment"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "c0c1212e9c0311b8e1a535592a4cb81a914bc3c05f0b576eb3f0129f21d8b534",
+          "physicalPage": 4,
+          "printedPage": "4 of 7",
+          "nativeSection": "Study drugs/statistical considerations"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "c0c1212e9c0311b8e1a535592a4cb81a914bc3c05f0b576eb3f0129f21d8b534",
+          "physicalPage": 6,
+          "printedPage": "6 of 7",
+          "nativeSection": "Discussion/declarations"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q07",
+      "answer": "No actual dropout/missingness/adherence;10%dropout allowance andtreatmentfailure rules are prospective.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "c0c1212e9c0311b8e1a535592a4cb81a914bc3c05f0b576eb3f0129f21d8b534",
+          "physicalPage": 3,
+          "printedPage": "3 of 7",
+          "nativeSection": "Figure1/design/cohort/treatment"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "c0c1212e9c0311b8e1a535592a4cb81a914bc3c05f0b576eb3f0129f21d8b534",
+          "physicalPage": 4,
+          "printedPage": "4 of 7",
+          "nativeSection": "Study drugs/statistical considerations"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q08",
+      "answer": "CTCAEtoxicity/dosemodification and20experimentalparticipantsafetytrigger planned; no observed event rates orsafe/tolerable certification.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "c0c1212e9c0311b8e1a535592a4cb81a914bc3c05f0b576eb3f0129f21d8b534",
+          "physicalPage": 3,
+          "printedPage": "3 of 7",
+          "nativeSection": "Figure1/design/cohort/treatment"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "c0c1212e9c0311b8e1a535592a4cb81a914bc3c05f0b576eb3f0129f21d8b534",
+          "physicalPage": 4,
+          "printedPage": "4 of 7",
+          "nativeSection": "Study drugs/statistical considerations"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q09",
+      "answer": "Openlabel,small/exploratory unadjustedsubgroups andcombinationattribution limits; externalconcordance/fullappraisal unchecked.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "c0c1212e9c0311b8e1a535592a4cb81a914bc3c05f0b576eb3f0129f21d8b534",
+          "physicalPage": 2,
+          "printedPage": "2 of 7",
+          "nativeSection": "Registration/Methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "c0c1212e9c0311b8e1a535592a4cb81a914bc3c05f0b576eb3f0129f21d8b534",
+          "physicalPage": 4,
+          "printedPage": "4 of 7",
+          "nativeSection": "Study drugs/statistical considerations"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "c0c1212e9c0311b8e1a535592a4cb81a914bc3c05f0b576eb3f0129f21d8b534",
+          "physicalPage": 6,
+          "printedPage": "6 of 7",
+          "nativeSection": "Discussion/declarations"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q10",
+      "answer": "Applicability to plannedselectedGBMpopulation/combination only,not standalone memantine efficacy.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "c0c1212e9c0311b8e1a535592a4cb81a914bc3c05f0b576eb3f0129f21d8b534",
+          "physicalPage": 2,
+          "printedPage": "2 of 7",
+          "nativeSection": "Registration/Methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "c0c1212e9c0311b8e1a535592a4cb81a914bc3c05f0b576eb3f0129f21d8b534",
+          "physicalPage": 3,
+          "printedPage": "3 of 7",
+          "nativeSection": "Figure1/design/cohort/treatment"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "c0c1212e9c0311b8e1a535592a4cb81a914bc3c05f0b576eb3f0129f21d8b534",
+          "physicalPage": 4,
+          "printedPage": "4 of 7",
+          "nativeSection": "Study drugs/statistical considerations"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "c0c1212e9c0311b8e1a535592a4cb81a914bc3c05f0b576eb3f0129f21d8b534",
+          "physicalPage": 6,
+          "printedPage": "6 of 7",
+          "nativeSection": "Discussion/declarations"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q11",
+      "answer": "Existing report/source/review reused; prior onlypage1partialinspection. Protocolnot additional efficacy dataset; relatedreports unchecked.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "c0c1212e9c0311b8e1a535592a4cb81a914bc3c05f0b576eb3f0129f21d8b534",
+          "physicalPage": 2,
+          "printedPage": "2 of 7",
+          "nativeSection": "Registration/Methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "c0c1212e9c0311b8e1a535592a4cb81a914bc3c05f0b576eb3f0129f21d8b534",
+          "physicalPage": 6,
+          "printedPage": "6 of 7",
+          "nativeSection": "Discussion/declarations"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "c0c1212e9c0311b8e1a535592a4cb81a914bc3c05f0b576eb3f0129f21d8b534",
+          "physicalPage": 7,
+          "printedPage": "7 of 7",
+          "nativeSection": "References"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q12",
+      "answer": "Swisscenters/authors,SNSFIICTfunding andno competinginterests reported; supplier notspecified.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "c0c1212e9c0311b8e1a535592a4cb81a914bc3c05f0b576eb3f0129f21d8b534",
+          "physicalPage": 1,
+          "printedPage": "1 of 7",
+          "nativeSection": "Abstract"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "c0c1212e9c0311b8e1a535592a4cb81a914bc3c05f0b576eb3f0129f21d8b534",
+          "physicalPage": 3,
+          "printedPage": "3 of 7",
+          "nativeSection": "Figure1/design/cohort/treatment"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "c0c1212e9c0311b8e1a535592a4cb81a914bc3c05f0b576eb3f0129f21d8b534",
+          "physicalPage": 6,
+          "printedPage": "6 of 7",
+          "nativeSection": "Discussion/declarations"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q13",
+      "answer": "Exactpublishedsevenpageprotocolread;registration/status/dates historical source reports,not currentregistryverification.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "c0c1212e9c0311b8e1a535592a4cb81a914bc3c05f0b576eb3f0129f21d8b534",
+          "physicalPage": 1,
+          "printedPage": "1 of 7",
+          "nativeSection": "Abstract"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "c0c1212e9c0311b8e1a535592a4cb81a914bc3c05f0b576eb3f0129f21d8b534",
+          "physicalPage": 3,
+          "printedPage": "3 of 7",
+          "nativeSection": "Figure1/design/cohort/treatment"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "c0c1212e9c0311b8e1a535592a4cb81a914bc3c05f0b576eb3f0129f21d8b534",
+          "physicalPage": 6,
+          "printedPage": "6 of 7",
+          "nativeSection": "Discussion/declarations"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q14",
+      "answer": "ExactO01/O02/O03 andC01/C02/C03 mapto existingD25/C04 asprivateprotocolcontext only.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "c0c1212e9c0311b8e1a535592a4cb81a914bc3c05f0b576eb3f0129f21d8b534",
+          "physicalPage": 6,
+          "printedPage": "6 of 7",
+          "nativeSection": "Discussion/declarations"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending",
+      "downstreamMapping": {
+        "paperId": "B-R0187",
+        "sourceId": "B-R0187-F01",
+        "existingReviewId": "DRAFT-REVIEW-B-R0187-F01",
+        "observationIds": [
+          "REED-CAL-06-O01",
+          "REED-CAL-06-O02",
+          "REED-CAL-06-O03"
+        ],
+        "claimIds": [
+          "REED-CAL-06-C01",
+          "REED-CAL-06-C02",
+          "REED-CAL-06-C03"
+        ],
+        "existingGuideIds": [
+          "G-DRUG-D25",
+          "G-CONDITION-C04"
+        ],
+        "purpose": "Private protocol context and no-results/combination qualification; not clinical efficacy/safety support",
+        "publicationState": "private_draft",
+        "canonicalChanges": 0
+      }
+    },
+    {
+      "id": "Q15",
+      "answer": "Protocol provides plan and rationale; clinicalresults absent,componentattribution unresolved. Newoutcome sources needseparateauthorizedacquisition.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "c0c1212e9c0311b8e1a535592a4cb81a914bc3c05f0b576eb3f0129f21d8b534",
+          "physicalPage": 6,
+          "printedPage": "6 of 7",
+          "nativeSection": "Discussion/declarations"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    }
+  ],
+  "limitations": [
+    "No observedtrialefficacy/safety/actualN inprotocol",
+    "PlannedN/dropout/power/safetytrigger notobserveddata",
+    "Tripleinterventionprecludescomponentattribution",
+    "Openlabel/smalltrial/eightunadjustedexploratorysubgroups",
+    "Historicregistration/recruitment/resultsdatesnotcurrentverifiedstatus",
+    "Underlyingmechanismliteraturecitednotnewtestedhumanmechanism",
+    "Externalregistry/protocol/correction/familychecksnotperformed",
+    "Previousreviewpartialpage1only preserved,notcompletefullscientificreview"
+  ],
+  "scientificAcceptance": false,
+  "humanApproval": false,
+  "released": false
+}

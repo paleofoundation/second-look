@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "REED-CAL-05-case-v1",
+  "required": [
+    "schemaVersion",
+    "paper",
+    "source",
+    "inspection",
+    "case",
+    "results",
+    "claims",
+    "managementContext",
+    "reviewInputs",
+    "limitations",
+    "scientificAcceptance",
+    "humanApproval",
+    "released"
+  ],
+  "resultRequired": [
+    "id",
+    "event",
+    "sourceLocators",
+    "caseDenominator",
+    "populationRate",
+    "comparator",
+    "causalAttributionEstablished",
+    "acceptedSupport",
+    "grade"
+  ],
+  "controls": [
+    "Onecaseisnotpopulationincidenceor100percentfailurerate",
+    "Noactivecomparisonortreatmentallocationinvented",
+    "Reportedaspirinuseisnotverifiedadherence",
+    "Anticoagulationoutcomenotaspirinefficacy",
+    "Imagingisreporteddiagnosticbasisnotindependentclinicalcertification",
+    "No clinicalrecommendation/gradefromcase"
+  ],
+  "reviewInventory": "rules/one-match-rule/references/research-reviews/review-questions-and-inputs.json",
+  "fixedGates": {
+    "scientificAcceptance": false,
+    "humanApproval": false,
+    "released": false,
+    "acceptedSupport": false,
+    "grade": null
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "REED-CAL-06-protocol-v1",
+  "required": [
+    "schemaVersion",
+    "paper",
+    "source",
+    "inspection",
+    "trialPlan",
+    "observations",
+    "claims",
+    "clinicalResults",
+    "reviewInputs",
+    "limitations",
+    "scientificAcceptance",
+    "humanApproval",
+    "released"
+  ],
+  "protocolControls": [
+    "PlannedNisnotactualenrollment/analyzedN",
+    "Plannedendpoints/powereffectnotobservedresults",
+    "Combinationdoesnotisolatememantine",
+    "Historicalstatus/registrationnotcurrentregistryverification",
+    "Safetyplanisnotsafetyresult",
+    "Protocolnotnewindependentreportidentity"
+  ],
+  "reviewInventory": "rules/one-match-rule/references/research-reviews/review-questions-and-inputs.json",
+  "fixedGates": {
+    "clinicalResults": [],
+    "scientificAcceptance": false,
+    "humanApproval": false,
+    "released": false,
+    "acceptedSupport": false,
+    "grade": null
+  }
+}
