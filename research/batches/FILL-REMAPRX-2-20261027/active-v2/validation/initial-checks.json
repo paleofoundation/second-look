@@ -1,0 +1,94 @@
+[
+  {
+    "command": [
+      "node",
+      "scripts/check-governance.mjs"
+    ],
+    "exitCode": 0,
+    "outputSha256": "c5399a463361054cafb76fc1e19b0ae50e2ec42c650b59b50f2ebbb06d8c56cf",
+    "outputTail": "PASS: 236 preserved rule/history/ingest files, frozen baseline and collaborator entry points. This is repository integrity, not scientific acceptance.\n"
+  },
+  {
+    "command": [
+      "node",
+      "scripts/content-check.mjs"
+    ],
+    "exitCode": 0,
+    "outputSha256": "dd32e5c8f1996f48eca2e6113cbac0d527e33e9c54c2ec4b5900dd13791b20c3",
+    "outputTail": "{\"status\":\"PASS\",\"checks\":\"canonical IDs, route uniqueness, sidebar labels, citations, exact sentences, source classes, draft publication boundary, no QA override\",\"counts\":{\"guides\":69,\"primaryReports\":162,\"contextSources\":108,\"fullReviewDrafts\":3,\"glossary\":21,\"questions\":36}}\n"
+  },
+  {
+    "command": [
+      "node",
+      "scripts/reader-check.mjs"
+    ],
+    "exitCode": 0,
+    "outputSha256": "3c67bddb41c40265add10bd1f1d294577db825782201962216f86493909ca519",
+    "outputTail": "{\"status\":\"PASS\",\"drugParents\":31,\"conditionParents\":32,\"sharedRows\":70,\"backgroundRows\":0,\"reciprocalLinks\":252,\"checks\":\"Baseline D01-D30 and C01-C30 coverage/types, unique entity IDs and routes, reader FK closure, sentence/source closure, same row reused on both parents, exact tier and approval boundaries, all target routes\",\"negativeCasesRejected\":[\"invented grade\",\"false completion\",\"quarantined source\",\"unknown source\",\"unapproved release\",\"background inflated to primary\"]}\n"
+  },
+  {
+    "command": [
+      "node",
+      "scripts/check-reader-sections.mjs",
+      "--all-profiles"
+    ],
+    "exitCode": 1,
+    "outputSha256": "120040e5c49ec87e098f2d56a2d094f6892aca453b0466e28ecaf1d3979a4739",
+    "outputTail": "x/2026-10-25/you-are-conductor-the-single-codex/work/fill-remaprx-2/checkout/scripts/check-reader-sections.mjs:266:56\n    at ModuleJob.run (node:internal/modules/esm/module_job:343:25)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:681:26)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5) {\n  generatedMessage: false,\n  code: 'ERR_ASSERTION',\n  actual: false,\n  expected: true,\n  operator: '==',\n  diff: 'simple'\n}\n\nNode.js v22.23.4\n"
+  },
+  {
+    "command": [
+      "node",
+      "scripts/check-evidence-section.mjs"
+    ],
+    "exitCode": 0,
+    "outputSha256": "9961f3e8327440e3a4b6d4be138d1c0ed22a9b5948a4635fcf614323e126d2ca",
+    "outputTail": " shared outcome identity and A\u2013F assessment in both directions; effect source closure; independent trial/participant counts; labeled openers and initially expanded groups; legacy synthesis aliases; preserved narrative; stable citations; one inline catalogue; repeat generation\",\"limits\":\"SSR checks do not establish drawer findings/magnitude content, interaction, focus, scroll, visual parity or deployment. Verify those in the browser. This is not whole G4R or scientific-completeness acceptance.\"}\n"
+  },
+  {
+    "command": [
+      "node",
+      "scripts/check-evidence-grading.mjs"
+    ],
+    "exitCode": 0,
+    "outputSha256": "1a55a962c53057c7792ef9bd6c5b00496c0faefd2af3f29e386a5126b3951cea",
+    "outputTail": "ed first-appearance citations.\nPASS: itraconazole pathways, mapped drawer rationale, retained preclinical rows, eleven legacy fragments and source closure.\n{\"status\":\"PASS\",\"outcomes\":70,\"rejected\":[\"missing outcome\",\"duplicate assessment\",\"changed source\",\"changed reader finding\",\"changed outcome scope\",\"missing outcome scope\",\"missing rationale\",\"missing domain\",\"unrelated citation\",\"unknown grade\",\"correction upgraded\",\"computational upgraded\",\"quarantined source\"],\"repeatGeneration\":\"PASS\"}\n"
+  },
+  {
+    "command": [
+      "node",
+      "scripts/check-outcome-summaries.mjs"
+    ],
+    "exitCode": 0,
+    "outputSha256": "47a0fe22dc4b3b0aeb05a421303081e3358298d93e8889018e122c32a7ec4d3c",
+    "outputTail": "nd placebo comparison (132 per arm); excludes the separate ursodeoxycholic-acid arm.\",\n        \"sourceIds\": [\n          \"P-KOREA-2026\"\n        ]\n      }\n    ]\n  },\n  \"checks\": [\n    \"source and row closure\",\n    \"explicit source-located assessments\",\n    \"stale input and projection rejection\",\n    \"held/computational grade rejection\",\n    \"overlap-aware trial and participant totals\",\n    \"conflicting denominator rejection\",\n    \"unknown is null\",\n    \"single-summary explanation preserved\"\n  ]\n}\n"
+  },
+  {
+    "command": [
+      "node",
+      "scripts/check-wiki-links.mjs"
+    ],
+    "exitCode": 0,
+    "outputSha256": "3881ac9831ebf7cf6999f62a54f2ff9c9b1c7e66edb18406e6a3f21a7e47196e",
+    "outputTail": "PASS: canonical wiki routes, aliases, longest whole-word matches, paragraph deduplication, self/URL protection, article SSR, reciprocal condition/drug links, Overview headings, source/citation integrity, evidence and mechanism prose; ordered related reading, canonical fallback, legacy Connections exclusion, and three-link sidebar/backlink cap.\n"
+  },
+  {
+    "command": [
+      "node",
+      "scripts/verify-reader-boundary.mjs"
+    ],
+    "exitCode": 1,
+    "outputSha256": "1467435b33a83f3ad1de57ca9ecfc238d2f8807df12101c50e25a75c3442e3ba",
+    "outputTail": "                             ^\n\nError: Build client output before verifying payloads.\n    at file:///Users/kmfp/Documents/Codex/2026-10-25/you-are-conductor-the-single-codex/work/fill-remaprx-2/checkout/scripts/verify-reader-boundary.mjs:28:44\n    at ModuleJob.run (node:internal/modules/esm/module_job:343:25)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:681:26)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)\n\nNode.js v22.23.4\n"
+  },
+  {
+    "command": [
+      "node",
+      "node_modules/typescript/bin/tsc",
+      "--noEmit"
+    ],
+    "exitCode": 0,
+    "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputTail": ""
+  }
+]

@@ -1,0 +1,9 @@
+# Handoff: implementation blocked by whole-file ownership
+
+Completed: isolated checkout and exact base; 91-path collision inventory; all 64 audited drug/condition routes dispositioned; seven-page proposed selection; 27 current canonical source IDs mapped to questions; strict identity metadata lookup and local hash verification. One source ID has two matching assets with correct bytes; their scientific content has not been inspected. The other 26 source IDs have no exact asset match in this historical index under the strict matching rule. They are not declared unavailable and have not been searched elsewhere.
+
+Not completed: source extraction, scientific appraisal, new claim grades, page edits, current live word counts, build, SSR, browser checks or release. No content pipeline was run. No raw source file was copied or published. No new source was retrieved. This is a blocker packet, not a fill PASS.
+
+Next action: Elon rules on the exact scoped canonical-file exception proposed in PLAN.md, or retains the hold. CONDUCTOR receives this packet and relays the ruling in the bridge. Do not independently waive the exclusion, edit lane 1 RRX-INGEST paths, overwrite prior packets or infer authorization from an elapsed poll interval. Preserve Vitiligo, all protected book sources/routes and their dependent guide holds. Azole mechanism work waits for its explicit later order.
+
+If an exception is granted, finish the complete ingestion-rule reading and persist a prospective schema/readiness with source access before extraction. Then inspect exact originals, produce source-located claim records and grades, implement only selected guide IDs through the existing canonical pipeline, run relevant content/build/SSR/mobile checks, and deliver one draft PR with its exact head and hashes. Independent scientific/human and release gates remain separate.
