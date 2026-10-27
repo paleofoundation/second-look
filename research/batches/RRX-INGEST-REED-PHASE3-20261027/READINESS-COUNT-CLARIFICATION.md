@@ -1,0 +1,5 @@
+# Typed readiness count clarification
+
+The pinned inventory defines unfinished statuses as partial,not_checked,not_extracted,not_accessible; not_reported is a separately documented source missingness state. Earlier runnerSTATUS wording counted not_reported in a broad notfullyanswered tally and called it unfinished. That wording was imprecise; no typedstatus was upgraded or changed by this clarification.
+
+CAL03V2:38answered,16partial,6not_checked,6not_reported,1not_applicable. Correct pinned unfinishedRequiredInputs=22, with6additionaldocumentednot_reported;28is thecombinedbroadmissingnesstally, not thecanonicalunfinishedcount. CAL04V2:38answered,14partial,5not_checked,8not_reported,2not_applicable; correctunfinished=19, additionaldocumentednot_reported=8. ExistingcommittedCAL01/CAL02checkpointunfinished36isalreadycorrect and remainsfrozen. Futurecheckpoints/finalREPORT usepinnedunfinishedStatuses and keepall5typedstatesseparate. Thisclarificationdoesnotconferfullfieldindependent/scientific/human/releaseacceptance.
