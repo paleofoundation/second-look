@@ -1,0 +1,1308 @@
+{
+  "schemaVersion": "reed2-cal13-Crohns-CMap-in-silico-v1",
+  "paper": {
+    "id": "CP002-R01",
+    "intakeReportId": "REED-6ec25885822507d99d36",
+    "pmid": "32612148",
+    "doi": "10.1038/s41598-020-67801-0",
+    "title": "Novel candidate drugs in anti-tumor necrosis factor refractory Crohn's diseases: in silico study for drug repositioning.",
+    "sourceType": "original_in_silico_transcriptomic_drug_nomination"
+  },
+  "source": {
+    "id": "REED2-CAL-13-MAIN",
+    "pmid": "32612148",
+    "doi": "10.1038/s41598-020-67801-0",
+    "title": "Novel candidate drugs in anti-tumor necrosis factor refractory Crohn's diseases: in silico study for drug repositioning.",
+    "reportId": "REED-6ec25885822507d99d36",
+    "ref": "$REMAPRX_REED_ROOT/clomipramine-crohn-disease/pdfs/32612148-kwak-2020.pdf",
+    "sha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+    "physicalPages": 9
+  },
+  "inspection": {
+    "at": "2026-10-27T13:02:41.744711+00:00",
+    "physicalPagesRead": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "visualInspectedPhysicalPages": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "fullScientificReviewComplete": false,
+    "separateCompanionContentRead": false,
+    "rawDatasetCodeInspected": false
+  },
+  "study": {
+    "design": "Original in-silico transcriptomic drug-repositioning reanalysis, no administered candidate therapy",
+    "dataset": "GSE100833 as reported",
+    "platform": "Affymetrix HumanGenomeU133Plus2.0",
+    "sourcePatientClaimN": 327,
+    "uniquePatientCountVerified": false,
+    "tissueContrast": "Noninflamed/adjacentnormal versus inflamed colonic tissues in antiTNFrefractoryCD as described; patient/sample/pairedstructure not independently checked",
+    "pipeline": [
+      "RMA normalization",
+      "MetaDE filtering",
+      "limma DEGFDR<.05andabslogFC>1",
+      "coExp/cogena gene coexpression",
+      "ConsensusClusterPlus/PAM",
+      "STRING/Walktrap and KEGGclEnrich/Enrichr",
+      "CMapbuild02 query and rank"
+    ],
+    "clustersAre": "Gene coexpression clusters, not established patient subtypes",
+    "clusteringDescription": "PAM Euclidean plus consensus Pearson distance, source wald.D/average linkages;1000iterations80%resamplingk2-20;not rerun",
+    "queryThresholdAsWritten": "Z<0.001",
+    "sourceSmallMoleculeCount": 164,
+    "STRINGConfidenceCutoffAsPrinted": 900,
+    "originalClinicalTreatmentN": 0,
+    "candidateDoseAdministered": null,
+    "clinicalRemissionOrSafetyMeasured": false,
+    "rawGEOOrCMapReanalysisPerformed": false,
+    "signatureReversalEstablishedHere": false,
+    "clinicalRecommendationAdopted": false,
+    "locators": [
+      {
+        "kind": "pdf",
+        "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+        "physicalPage": 1,
+        "printedPage": 1,
+        "nativeSection": "Abstract/introduction"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+        "physicalPage": 2,
+        "printedPage": 2,
+        "nativeSection": "Figure1/results"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+        "physicalPage": 7,
+        "printedPage": 7,
+        "nativeSection": "Methods/limitations"
+      }
+    ]
+  },
+  "populations": {
+    "reportedPatientN": 327,
+    "verifiedUniqueClinicalTreatmentN": null,
+    "rawPatientSamplePairingVerified": false,
+    "datasetDiseaseEligibilityIndependentlyVerified": false,
+    "reference37": "Nair2009psoriasisGWAS,not an obvious GSE100833primarytissuedescription",
+    "Table1DEGs": 260,
+    "Table1Up": 193,
+    "Table1Down": 67,
+    "queryUp": 193,
+    "queryDown": 65,
+    "figureTotalGenes": 247,
+    "figureUp": 183,
+    "figureDown": 64,
+    "tableClusterGenes": [
+      158,
+      25,
+      35,
+      42
+    ],
+    "figureClusterGenes": [
+      150,
+      26,
+      33,
+      38
+    ],
+    "sourceCountDiscrepanciesResolved": false,
+    "newUniqueCrossCorpusPatientsAdjudicated": false,
+    "locators": [
+      {
+        "kind": "pdf",
+        "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+        "physicalPage": 2,
+        "printedPage": 2,
+        "nativeSection": "Figure1/results"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+        "physicalPage": 3,
+        "printedPage": 3,
+        "nativeSection": "Table1/Figure2"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+        "physicalPage": 4,
+        "printedPage": 4,
+        "nativeSection": "Figure3/drug results"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+        "physicalPage": 5,
+        "printedPage": 5,
+        "nativeSection": "Figure4/discussion"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+        "physicalPage": 6,
+        "printedPage": 6,
+        "nativeSection": "Figure5/discussion/limits"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+        "physicalPage": 7,
+        "printedPage": 7,
+        "nativeSection": "Methods/limitations"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+        "physicalPage": 8,
+        "printedPage": 8,
+        "nativeSection": "References"
+      }
+    ]
+  },
+  "results": [
+    {
+      "id": "REED2-CAL-13-O01",
+      "outcome": "Gene clustering/network/pathway analysis with unresolved source counts",
+      "estimate": {
+        "kind": "in_silico_gene_network",
+        "tableGenesByCluster": [
+          158,
+          25,
+          35,
+          42
+        ],
+        "tableDEGsUpDown": [
+          260,
+          193,
+          67
+        ],
+        "queryUpDown": [
+          193,
+          65
+        ],
+        "figureGenesByCluster": [
+          150,
+          26,
+          33,
+          38
+        ],
+        "figureTotalUpDown": [
+          247,
+          183,
+          64
+        ],
+        "countDiscrepanciesResolved": false,
+        "clustersArePatientSubtypes": false,
+        "cluster1PPI": {
+          "actual": 443,
+          "expected": 102,
+          "ratio": 4.343,
+          "P": "<.001"
+        },
+        "cluster2PPI": {
+          "actual": 0,
+          "expected": 0,
+          "ratio": null,
+          "P": 1.0
+        },
+        "cluster3PPI": {
+          "actual": 19,
+          "expected": 2,
+          "ratio": 9.5,
+          "P": "<.001"
+        },
+        "cluster4PPI": {
+          "actual": 3,
+          "expected": 0,
+          "ratio": null,
+          "P": "<.001"
+        },
+        "cluster1KEGGScores": {
+          "chemokine": 36.5,
+          "cytokineReceptor": 30.5,
+          "TLR": 23.2
+        },
+        "cluster3PPARScore": 10.5,
+        "cluster4NitrogenScore": 13.9
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 2,
+          "printedPage": 2,
+          "nativeSection": "Figure1/results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Table1/Figure2"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Methods/limitations"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED2-CAL-13-O02",
+      "outcome": "Clomipramine nomination among tied cluster2 drug instances",
+      "estimate": {
+        "kind": "computational_enrichment_not_clinical_effect",
+        "canonicalReportId": "CP002-R01",
+        "geneCluster": 2,
+        "instance": "clomipramine-6825",
+        "clusterScore": 8.4,
+        "downGeneScore": 5.7,
+        "allGeneScore": 2.9,
+        "tiedCandidateCount": 11,
+        "tiedDrugNames": [
+          "metronidazole",
+          "ethosuximide",
+          "famprofazone",
+          "2,6-dimethylpiperidine",
+          "prestwick",
+          "betonicine",
+          "clomipramine",
+          "finasteride",
+          "mexiletine",
+          "zidovudine",
+          "ciclacilline"
+        ],
+        "uniqueBestDrug": false,
+        "rowPositionIsEfficacyRank": false,
+        "negativeSignatureReversalVerified": false,
+        "candidateClinicalDose": null,
+        "clinicalResponseRemissionSafetyMeasured": false
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 4,
+          "printedPage": 4,
+          "nativeSection": "Drugrepositioningresults"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Figure4clomipramine-6825"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED2-CAL-13-O03",
+      "outcome": "Cluster1 candidate enrichment and attributed biological rationale",
+      "estimate": {
+        "kind": "computational_candidate_enrichment",
+        "CP69033401": {
+          "instance": "3823",
+          "score": 18.8,
+          "sourceInformationAvailable": false
+        },
+        "tiedSecondProfiles": [
+          {
+            "drug": "ciclosporin",
+            "instance": "1331",
+            "score": 12.3
+          },
+          {
+            "drug": "vorinostat",
+            "instance": "1161",
+            "score": 12.3
+          },
+          {
+            "drug": "withaferinA",
+            "instance": "3819",
+            "score": 12.3
+          }
+        ],
+        "clomipramineCluster1": false,
+        "FDAForCDClaimIndependentlyVerified": false,
+        "vorinostatHistoricalNCT": "NCT03167437",
+        "currentTrialStatusVerified": false,
+        "ownExperimentalDrugValidation": false,
+        "mechanismNecessityEstablished": false
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 4,
+          "printedPage": 4,
+          "nativeSection": "Figure3"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Figure4/discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 6,
+          "printedPage": 6,
+          "nativeSection": "Figure5/discussion/limits"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED2-CAL-13-O04",
+      "outcome": "Cluster3 null drug enrichment and lower-scoring cluster4 nominations",
+      "estimate": {
+        "kind": "computational_null_and_other_candidates",
+        "cluster3SignificantDrugProfileEnrichments": false,
+        "cluster3PathwayPPIEnrichmentPresent": true,
+        "cluster4Highest": {
+          "drug": "pf-00539758-00",
+          "instance": "6421",
+          "score": 6.0
+        },
+        "cluster4OtherScore": 5.9,
+        "cluster4DrugList": [
+          "clotrimazole",
+          "etanidazole",
+          "exisulind",
+          "lovastatin",
+          "myosmine",
+          "pentamidine",
+          "prochlorperazine",
+          "sodiumphenylbutyrate"
+        ],
+        "nullMeansClinicalNoEffect": false,
+        "headToHeadDrugEfficacyTested": false
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 4,
+          "printedPage": 4,
+          "nativeSection": "Drugrepositioningresults"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 6,
+          "printedPage": 6,
+          "nativeSection": "Figure5"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    }
+  ],
+  "claims": [
+    {
+      "id": "REED2-CAL-13-C01",
+      "resultIds": [
+        "REED2-CAL-13-O01"
+      ],
+      "statement": "Coexpressedgeneclusters/network/pathwayanalysisidentifiedsignals,notpatienttherapeuticsubtypes. Table260,query258andfigure247geneversionsremainunresolved;no newuniqueclinicalNorpredictivepatientscoresadopted.",
+      "relation": "original_in_silico_nomination_candidate_not_clinical_effect",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED2-CAL-13-C02",
+      "resultIds": [
+        "REED2-CAL-13-O02"
+      ],
+      "statement": "Clomipramine-6825 wasoneof11tiedcluster2nomineesscore8.4,notuniquebestorseventhmosteffective;down5.7/all2.9arescoresnotresponsepercent. No verifiednegative-signaturereversal,treatedCrohncohort,dose,remissionorsafetyresult.",
+      "relation": "original_in_silico_nomination_candidate_not_clinical_effect",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED2-CAL-13-C03",
+      "resultIds": [
+        "REED2-CAL-13-O03"
+      ],
+      "statement": "Cluster1high-rankedunknownCP69033401score18.8andciclosporin/vorinostat/withaferinAprofiles12.3arecomputationalnominations. Citedmechanisms/historicalvorinostattrialandregulatoryclaimsnotownexperimentalvalidation,currenttrialstatusorcomparativeclinicalbenefit.",
+      "relation": "original_in_silico_nomination_candidate_not_clinical_effect",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED2-CAL-13-C04",
+      "resultIds": [
+        "REED2-CAL-13-O04"
+      ],
+      "statement": "Cluster3haspathway/PPIenrichmentbutnosignificantdrugprofileenrichments;cluster4candidatescores6/5.9arelower. Neithercomputationalnullnorrankisclinicalnoeffectorhead-toheadefficacy.",
+      "relation": "original_in_silico_nomination_candidate_not_clinical_effect",
+      "acceptedSupport": false
+    }
+  ],
+  "reviewInputs": [
+    {
+      "id": "Q01",
+      "answer": "NominatecandidatecompoundsforantiTNFrefractoryCDfromtranscriptomes.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 1,
+          "printedPage": 1,
+          "nativeSection": "Abstract/introduction"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Methods/limitations"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q02",
+      "answer": "Humanderivedcolontissueexpressiondatasetasinmain,notcandidate-treatedpeople.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Methods/limitations"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q03",
+      "answer": "Clomipramine/CMapcandidateinstancesandotherdrugprofiles,notadministeredtherapy.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Figure4/discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Methods/limitations"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q04",
+      "answer": "Noninflamed/adjacentnormalversusinflamedcolontissueexpressioncontrast,notdrugplacebo.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Methods/limitations"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q05",
+      "answer": "ExploratoryDEG/PPI/KEGG/drugprofileenrichment,notclinicalhierarchy.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Figure4/discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Methods/limitations"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q06",
+      "answer": "[{'kind': 'in_silico_gene_network', 'tableGenesByCluster': [158, 25, 35, 42], 'tableDEGsUpDown': [260, 193, 67], 'queryUpDown': [193, 65], 'figureGenesByCluster': [150, 26, 33, 38], 'figureTotalUpDown': [247, 183, 64], 'countDiscrepanciesResolved': False, 'clustersArePatientSubtypes': False, 'cluster1PPI': {'actual': 443, 'expected': 102, 'ratio': 4.343, 'P': '<.001'}, 'cluster2PPI': {'actual': 0, 'expected': 0, 'ratio': None, 'P': 1.0}, 'cluster3PPI': {'actual': 19, 'expected': 2, 'ratio': 9.5, 'P': '<.001'}, 'cluster4PPI': {'actual': 3, 'expected': 0, 'ratio': None, 'P': '<.001'}, 'cluster1KEGGScores': {'chemokine': 36.5, 'cytokineReceptor': 30.5, 'TLR': 23.2}, 'cluster3PPARScore': 10.5, 'cluster4NitrogenScore': 13.9}, {'kind': 'computational_enrichment_not_clinical_effect', 'canonicalReportId': 'CP002-R01', 'geneCluster': 2, 'instance': 'clomipramine-6825', 'clusterScore': 8.4, 'downGeneScore': 5.7, 'allGeneScore': 2.9, 'tiedCandidateCount': 11, 'tiedDrugNames': ['metronidazole', 'ethosuximide', 'famprofazone', '2,6-dimethylpiperidine', 'prestwick', 'betonicine', 'clomipramine', 'finasteride', 'mexiletine', 'zidovudine', 'ciclacilline'], 'uniqueBestDrug': False, 'rowPositionIsEfficacyRank': False, 'negativeSignatureReversalVerified': False, 'candidateClinicalDose': None, 'clinicalResponseRemissionSafetyMeasured': False}, {'kind': 'computational_candidate_enrichment', 'CP69033401': {'instance': '3823', 'score': 18.8, 'sourceInformationAvailable': False}, 'tiedSecondProfiles': [{'drug': 'ciclosporin', 'instance': '1331', 'score': 12.3}, {'drug': 'vorinostat', 'instance': '1161', 'score': 12.3}, {'drug': 'withaferinA', 'instance': '3819', 'score': 12.3}], 'clomipramineCluster1': False, 'FDAForCDClaimIndependentlyVerified': False, 'vorinostatHistoricalNCT': 'NCT03167437', 'currentTrialStatusVerified': False, 'ownExperimentalDrugValidation': False, 'mechanismNecessityEstablished': False}, {'kind': 'computational_null_and_other_candidates', 'cluster3SignificantDrugProfileEnrichments': False, 'cluster3PathwayPPIEnrichmentPresent': True, 'cluster4Highest': {'drug': 'pf-00539758-00', 'instance': '6421', 'score': 6.0}, 'cluster4OtherScore': 5.9, 'cluster4DrugList': ['clotrimazole', 'etanidazole', 'exisulind', 'lovastatin', 'myosmine', 'pentamidine', 'prochlorperazine', 'sodiumphenylbutyrate'], 'nullMeansClinicalNoEffect': False, 'headToHeadDrugEfficacyTested': False}]",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Table1/Figure2"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Figure4/discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Methods/limitations"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q07",
+      "answer": "Rawdatasetpatient/sampleflowandqualityexclusionsnotchecked.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Table1/Figure2"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Methods/limitations"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q08",
+      "answer": "No administeredcandidateharmsascertainment.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Methods/limitations"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q09",
+      "answer": "Singledatasetselection/nonlinearbiology/countdiscrepancies/translation.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Figure4/discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Methods/limitations"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Funding/conflicts"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q10",
+      "answer": "D29/C11antiTNFrefractoryCDcomputationalcandidatecontext.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 1,
+          "printedPage": 1,
+          "nativeSection": "Abstract/introduction"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Figure4/discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Methods/limitations"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q11",
+      "answer": "{'reportId': 'CP002-R01', 'intakeReportId': 'REED-6ec25885822507d99d36', 'existingSynthesisId': 'SYN-D29-C11-CMAP', 'duplicateBaselineRows': ['051', '285'], 'sameExactReportCollapsed': True, 'dataset': 'GSE100833asreported_notfreshlyverified', 'newIndependentTrialCount': 0, 'newIndependentPatientCount': 0, 'uniqueCrossCorpusPatientCountAdjudicated': False, 'originalAdministeredCandidateTherapyN': 0, 'sameDatasetAcrossResults': 'All4groupsreusetheoneanalysis/geneversions,notindependentcohorts', 'locators': [{'kind': 'pdf', 'sourceSha256': '397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee', 'physicalPage': 7, 'printedPage': 7, 'nativeSection': 'Methods/limitations'}]}",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Methods/limitations"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Funding/conflicts"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q12",
+      "answer": "MinSeobKwak,HunHeeLee,JaeMyungCha,HyunPhilShin,JungWonJeon,JinYoungYoon.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 1,
+          "printedPage": 1,
+          "nativeSection": "Abstract/introduction"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Methods/limitations"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Funding/conflicts"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q13",
+      "answer": "ScientificReports10:10708(2020),accepted12Jun2020,exactDOI.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 6,
+          "printedPage": 6,
+          "nativeSection": "Figure5/discussion/limits"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Methods/limitations"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Funding/conflicts"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q14",
+      "answer": "{'paperId': 'CP002-R01', 'intakeReportId': 'REED-6ec25885822507d99d36', 'sourceId': 'REED2-CAL-13-MAIN', 'resultIds': ['REED2-CAL-13-O01', 'REED2-CAL-13-O02', 'REED2-CAL-13-O03', 'REED2-CAL-13-O04'], 'claimIds': ['REED2-CAL-13-C01', 'REED2-CAL-13-C02', 'REED2-CAL-13-C03', 'REED2-CAL-13-C04'], 'existingGuideIds': ['G-DRUG-D29', 'G-CONDITION-C11'], 'existingSynthesisId': 'SYN-D29-C11-CMAP', 'purpose': 'Private computational drug nomination/method source-discrepancy context, no clinical response/reversal or safety adoption', 'publicationState': 'private_unapplied_candidate', 'canonicalChanges': 0, 'newIndependentTrials': 0, 'newIndependentPatients': 0}",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Figure4/discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Methods/limitations"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending",
+      "downstreamMapping": {
+        "paperId": "CP002-R01",
+        "intakeReportId": "REED-6ec25885822507d99d36",
+        "sourceId": "REED2-CAL-13-MAIN",
+        "resultIds": [
+          "REED2-CAL-13-O01",
+          "REED2-CAL-13-O02",
+          "REED2-CAL-13-O03",
+          "REED2-CAL-13-O04"
+        ],
+        "claimIds": [
+          "REED2-CAL-13-C01",
+          "REED2-CAL-13-C02",
+          "REED2-CAL-13-C03",
+          "REED2-CAL-13-C04"
+        ],
+        "existingGuideIds": [
+          "G-DRUG-D29",
+          "G-CONDITION-C11"
+        ],
+        "existingSynthesisId": "SYN-D29-C11-CMAP",
+        "purpose": "Private computational drug nomination/method source-discrepancy context, no clinical response/reversal or safety adoption",
+        "publicationState": "private_unapplied_candidate",
+        "canonicalChanges": 0,
+        "newIndependentTrials": 0,
+        "newIndependentPatients": 0
+      }
+    },
+    {
+      "id": "Q15",
+      "answer": "Clomipramineoneof11tiedgenecluster2nominees,noadministeredclinicalbenefit;counts/signaturedirectionunresolved.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Figure4/discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Methods/limitations"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    }
+  ],
+  "sourceQualifications": [
+    {
+      "id": "REED2-CAL-13-DESIGN",
+      "description": "Originalcomputationalreanalysisofhuman-derivedexpression,notrandomizedtherapy,animal/drugculturevalidationorclomipraminetreatmentcohort. No measuredclinicalremission/symptoms/endoscopy/intestinaldrug-safety benefit.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 1,
+          "printedPage": 1,
+          "nativeSection": "Abstract/introduction"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Methods/limitations"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-13-IDENTITY",
+      "description": "ReuseCP002-R01andSYN-D29-C11-CMAPmetadata,baseline051/285sameexactreportalreadycollapsed. Newsourcebytes auditedhere do notchangepriorformalappraisal/gradeortransferPASS; no new trial/uniquepatientcounter.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 1,
+          "printedPage": 1,
+          "nativeSection": "Abstract/introduction"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Methods/limitations"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 8,
+          "printedPage": 8,
+          "nativeSection": "References"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-13-DATASET_N",
+      "description": "Methods say327patients/GSE100833/noninflamedandinflamedcolonic tissues,not independentlyverifieduniquepeople,samples,pairedtimepoints orrefractorydefinition. Ref37attachedtoplatformclaimlistsNair2009psoriasisGWAS,notobviousprimarytissuedatareference. RawGEOunchecked, noexternalrepair orassertiondatasetidentitywrong.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Methods/limitations"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 8,
+          "printedPage": 8,
+          "nativeSection": "References"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-13-GENE_NOT_PATIENT",
+      "description": "Clusters1-4 are coexpressedgeneclusters, notdemonstratedpatientsubtypes ordrugrespondergroups. Sampleheatmapct/infdoesnotvalidateclinicalclusters. Preserveexistingpriorrecordswithout silentlyrecategorizingpatientsintoeffectgroups.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 2,
+          "printedPage": 2,
+          "nativeSection": "Figure1/results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Table1/Figure2"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Methods/limitations"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-13-GENE_COUNTS",
+      "description": "Results/Table1260=193up67down andclustergenes158/25/35/42;methodsquery193up65down=258;figures247geneswith183up64downandcluster150/26/33/38. Reasonsnotexplainedinmain,notreconciledoronecountchosenascleantruth;exactraw/filteringinputsneedadjudication.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 2,
+          "printedPage": 2,
+          "nativeSection": "Figure1/results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Table1/Figure2"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 4,
+          "printedPage": 4,
+          "nativeSection": "Figure3/drug results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Figure4/discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 6,
+          "printedPage": 6,
+          "nativeSection": "Figure5/discussion/limits"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Methods/limitations"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-13-CLUSTER2",
+      "description": "Clomipramineinstance6825isoneof11candidates tiedcluster2score8.4,notuniquebestorseventhmosteffectivebecauseofrowposition. Clomipraminedownscore5.7/all2.9 distinctfrom8.4. Table1cluster225genes25proteins0actual0expectedP1/undefinedratio isnotproofnogeneexpressionrelevanceorzeroclinicaleffect.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Table1/Figure2"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 4,
+          "printedPage": 4,
+          "nativeSection": "Figure3/drug results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Figure4/discussion"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-13-SCORE_DIRECTION",
+      "description": "Heatmapvaluesarecomputationalenrichmentscores,notclinicalresponsepercent/HR/CI,normalizedCMap[-1,1]connectivityorprobability. Methods sayfindsimilarpatterns,notverifiednegative-signaturereversal. Scale/sign/exactthresholdandinstancecellcontextunverifiedwithoutcode/S3;noinferredcausalreversal.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 4,
+          "printedPage": 4,
+          "nativeSection": "Figure3/drug results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Figure4/discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Methods/limitations"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-13-CLUSTER1",
+      "description": "Cluster1chemokine/cytokine/TLRenrichment,CP-690334-01instance3823score18.8unknowninformation;cyclosporin1331/vorinostat1161/withaferinA3819tie12.3,notclomipramineincluster1. Drugnomination/knownbackgrounddoesnotestablishcomparativeefficacyorclinicalapproval.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 2,
+          "printedPage": 2,
+          "nativeSection": "Figure1/results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Table1/Figure2"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 4,
+          "printedPage": 4,
+          "nativeSection": "Figure3/drug results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Figure4/discussion"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-13-NULLS",
+      "description": "Cluster3strongPPIratio9.5andPPARenrichmentdoesnotyield significantdrugprofileenrichments. Cluster4PF00539758score6/others5.9lowerthan1/2;notabsenceofanypotentialdrugs/noclinicaleffect. Scoresacrossclustersnotheadtoheadresponsecomparisons.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Table1/Figure2"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 4,
+          "printedPage": 4,
+          "nativeSection": "Figure3/drug results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 6,
+          "printedPage": 6,
+          "nativeSection": "Figure5/discussion/limits"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-13-PPI",
+      "description": "Table1actual/expectednetworkinteractionsandrandombackgroundPnotclinicaleffects. Cluster1443/102ratio4.343 versuscluster319/2ratio9.5;cluster4actual3expected0P<.001hasundefinedratio,notinfiniteeffect. Abstractallclustershighconnectivityqualifiedbycluster2P1.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 2,
+          "printedPage": 2,
+          "nativeSection": "Figure1/results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Table1/Figure2"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-13-METHODS_LIMITS",
+      "description": "RMA/MetaDE/limmaFDR.05abslogFC>1,queryZ<.001literal,1000reps80%resamplingk2-20andSTRING900reported,notreproduced. EuclideanPAMandPearsonconsensus/linkagewording retained,not silentlyrewritten. Nooutofdatasetprospectivevalidationorindependentdrugchallenge.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Methods/limitations"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-13-BIOLOGY",
+      "description": "CitedHDACi/alkaloid/colitisstudiesnotownvalidationofclomipramineorvorinostatclinicalbenefit. Clomipraminenotmechanisticallytestedhere. Discussionwithaferin/corticosteroidclassificationandcyclosporinFDA-forCDstatementareunverifiedsourceassertions,notadoptedcurrentdrugfacts. Chelidonineclaimref31listschelidonicacid,notautomaticallysamecompound.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Figure4/discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 6,
+          "printedPage": 6,
+          "nativeSection": "Figure5/discussion/limits"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Methods/limitations"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 8,
+          "printedPage": 8,
+          "nativeSection": "References"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-13-HISTORICAL_TRIAL",
+      "description": "VorinostatNCT03167437recruitingclaimat2020publication,historicalcitedcontextnotcurrentstatus/actualresults,andnotclomipramine trial. Noactuallabel/dose/clinicalrecommendationornewacquisition.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 6,
+          "printedPage": 6,
+          "nativeSection": "Figure5/discussion/limits"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-13-LIMITS",
+      "description": "Authorsrecognizenonlinearbiology/singledatasetselectionbias/notgeneralizabletoallantiTNFrefractorypatients. Geneticdiversesamples/furtherin-depthvalidationneeded,notcompletedrefractoryCDinterventionlandscapeorabsenceofevidence.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 6,
+          "printedPage": 6,
+          "nativeSection": "Figure5/discussion/limits"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Methods/limitations"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-13-DISCLOSURES_ACCESS",
+      "description": "NRF2019R1C1C1003524/KoreanMinistryScienceICTFuturePlanningfunding;authorsnocompetingasdeclared. Noethicswaiverstatementfoundmain,notassertedrequiredorabsentinpractice. All9pages/5materialvisualsread;S1-S3/primaryrawdata/code/currentintegrityunchecked,noexternalrepair.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Methods/limitations"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 8,
+          "printedPage": 8,
+          "nativeSection": "References"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Funding/conflicts"
+        }
+      ]
+    }
+  ],
+  "overlapRecords": [
+    {
+      "reportId": "CP002-R01",
+      "intakeReportId": "REED-6ec25885822507d99d36",
+      "existingSynthesisId": "SYN-D29-C11-CMAP",
+      "duplicateBaselineRows": [
+        "051",
+        "285"
+      ],
+      "sameExactReportCollapsed": true,
+      "dataset": "GSE100833asreported_notfreshlyverified",
+      "newIndependentTrialCount": 0,
+      "newIndependentPatientCount": 0,
+      "uniqueCrossCorpusPatientCountAdjudicated": false,
+      "originalAdministeredCandidateTherapyN": 0,
+      "sameDatasetAcrossResults": "All4groupsreusetheoneanalysis/geneversions,notindependentcohorts",
+      "locators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Methods/limitations"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Originalcomputationalreanalysisofhuman-derivedexpression,notrandomizedtherapy,animal/drugculturevalidationorclomipraminetreatmentcohort. No measuredclinicalremission/symptoms/endoscopy/intestinaldrug-safety benefit.",
+    "ReuseCP002-R01andSYN-D29-C11-CMAPmetadata,baseline051/285sameexactreportalreadycollapsed. Newsourcebytes auditedhere do notchangepriorformalappraisal/gradeortransferPASS; no new trial/uniquepatientcounter.",
+    "Methods say327patients/GSE100833/noninflamedandinflamedcolonic tissues,not independentlyverifieduniquepeople,samples,pairedtimepoints orrefractorydefinition. Ref37attachedtoplatformclaimlistsNair2009psoriasisGWAS,notobviousprimarytissuedatareference. RawGEOunchecked, noexternalrepair orassertiondatasetidentitywrong.",
+    "Clusters1-4 are coexpressedgeneclusters, notdemonstratedpatientsubtypes ordrugrespondergroups. Sampleheatmapct/infdoesnotvalidateclinicalclusters. Preserveexistingpriorrecordswithout silentlyrecategorizingpatientsintoeffectgroups.",
+    "Results/Table1260=193up67down andclustergenes158/25/35/42;methodsquery193up65down=258;figures247geneswith183up64downandcluster150/26/33/38. Reasonsnotexplainedinmain,notreconciledoronecountchosenascleantruth;exactraw/filteringinputsneedadjudication.",
+    "Clomipramineinstance6825isoneof11candidates tiedcluster2score8.4,notuniquebestorseventhmosteffectivebecauseofrowposition. Clomipraminedownscore5.7/all2.9 distinctfrom8.4. Table1cluster225genes25proteins0actual0expectedP1/undefinedratio isnotproofnogeneexpressionrelevanceorzeroclinicaleffect.",
+    "Heatmapvaluesarecomputationalenrichmentscores,notclinicalresponsepercent/HR/CI,normalizedCMap[-1,1]connectivityorprobability. Methods sayfindsimilarpatterns,notverifiednegative-signaturereversal. Scale/sign/exactthresholdandinstancecellcontextunverifiedwithoutcode/S3;noinferredcausalreversal.",
+    "Cluster1chemokine/cytokine/TLRenrichment,CP-690334-01instance3823score18.8unknowninformation;cyclosporin1331/vorinostat1161/withaferinA3819tie12.3,notclomipramineincluster1. Drugnomination/knownbackgrounddoesnotestablishcomparativeefficacyorclinicalapproval.",
+    "Cluster3strongPPIratio9.5andPPARenrichmentdoesnotyield significantdrugprofileenrichments. Cluster4PF00539758score6/others5.9lowerthan1/2;notabsenceofanypotentialdrugs/noclinicaleffect. Scoresacrossclustersnotheadtoheadresponsecomparisons.",
+    "Table1actual/expectednetworkinteractionsandrandombackgroundPnotclinicaleffects. Cluster1443/102ratio4.343 versuscluster319/2ratio9.5;cluster4actual3expected0P<.001hasundefinedratio,notinfiniteeffect. Abstractallclustershighconnectivityqualifiedbycluster2P1.",
+    "RMA/MetaDE/limmaFDR.05abslogFC>1,queryZ<.001literal,1000reps80%resamplingk2-20andSTRING900reported,notreproduced. EuclideanPAMandPearsonconsensus/linkagewording retained,not silentlyrewritten. Nooutofdatasetprospectivevalidationorindependentdrugchallenge.",
+    "CitedHDACi/alkaloid/colitisstudiesnotownvalidationofclomipramineorvorinostatclinicalbenefit. Clomipraminenotmechanisticallytestedhere. Discussionwithaferin/corticosteroidclassificationandcyclosporinFDA-forCDstatementareunverifiedsourceassertions,notadoptedcurrentdrugfacts. Chelidonineclaimref31listschelidonicacid,notautomaticallysamecompound.",
+    "VorinostatNCT03167437recruitingclaimat2020publication,historicalcitedcontextnotcurrentstatus/actualresults,andnotclomipramine trial. Noactuallabel/dose/clinicalrecommendationornewacquisition.",
+    "Authorsrecognizenonlinearbiology/singledatasetselectionbias/notgeneralizabletoallantiTNFrefractorypatients. Geneticdiversesamples/furtherin-depthvalidationneeded,notcompletedrefractoryCDinterventionlandscapeorabsenceofevidence.",
+    "NRF2019R1C1C1003524/KoreanMinistryScienceICTFuturePlanningfunding;authorsnocompetingasdeclared. Noethicswaiverstatementfoundmain,notassertedrequiredorabsentinpractice. All9pages/5materialvisualsread;S1-S3/primaryrawdata/code/currentintegrityunchecked,noexternalrepair."
+  ],
+  "newIndependentTrials": 0,
+  "newIndependentPatients": 0,
+  "scientificAcceptance": false,
+  "humanApproval": false,
+  "released": false
+}
