@@ -1,0 +1,7 @@
+# CAL18 bounded source checkpoint
+
+Boursi2017 PMID27701912, DOI10.1080/10428194.2016.1236375, five-page held author manuscript. Prospective PLAN/SCHEMA/READINESS preceded all five text pages; consequential methods/Table1 pages2/5 visually checked. Exact eight-dependency root source-fidelity receipt copied unchanged; ACCEPTANCE-UPDATE supersedes only historical pending bounded-audit labels in the candidate/manifest/validation.
+
+Three findings preserve separate primary conditional logistic/nondiabetic-reference estimates; text-only duration/glucose sensitivity OR.19; unmatched diabetes-only unconditional TableB estimates versus diabetic never-users. Main124/760 and subgroup11/127 are case/control observations, not incidence denominators. Two prescriptions at MGUS is not CAL17 four-year exposure. No pooling of settings, patients, HR/OR or reference groups. Sparse cells, strict24-month boundary, unclear glucose adjustment in TableB and literal BMI unit defect remain qualified. No invented dose, adherence, ARR/NNT, causal preventive benefit, safety or current recommendation. Linked supplementary material unavailable in closed packet; not retrieved.
+
+Three result/claim source-fidelity checks do not complete the 67-field independent scientific review. Scientific/human/grade/release acceptance remains zero. C21 mapping stays private and unapplied; no canonical record or guide changed. Continue serially within adopted24 calibration with fresh prospective planning and exact audits; broader286 scientific ingest remains incomplete.

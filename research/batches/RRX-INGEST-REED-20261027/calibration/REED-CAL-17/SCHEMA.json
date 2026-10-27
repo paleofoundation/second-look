@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "REED-CAL-17-MGUS-observational-v1",
+  "required": [
+    "schemaVersion",
+    "paper",
+    "source",
+    "inspection",
+    "study",
+    "cohorts",
+    "results",
+    "claims",
+    "reviewInputs",
+    "limitations",
+    "scientificAcceptance",
+    "humanApproval",
+    "released"
+  ],
+  "controls": [
+    "MGUSprogressionnotgeneralMMincidence/currentMMtreatment",
+    "Actualexposure/timeorigin/lag/durationnotinvented",
+    "ObservationaladjustedHRnotcausalprevention/absoluterisk",
+    "Competingdeath/selection/immortaltimeconsidered",
+    "Patient/event/personyeardenominatorsnotinterchanged",
+    "Actualdoseanddurationnotroutineprescription",
+    "Separatetrialfamilies/overlapnotpooled"
+  ],
+  "reviewInventory": "rules/one-match-rule/references/research-reviews/review-questions-and-inputs.json",
+  "fixedGates": {
+    "scientificAcceptance": false,
+    "humanApproval": false,
+    "released": false,
+    "acceptedSupport": false,
+    "grade": null
+  }
+}
