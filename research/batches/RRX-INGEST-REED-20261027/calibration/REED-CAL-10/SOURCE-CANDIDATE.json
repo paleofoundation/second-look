@@ -1,0 +1,880 @@
+{
+  "schemaVersion": "REED-CAL-10-cohort-v1",
+  "paper": {
+    "id": "REED-CAL-10-P1",
+    "intakeReportId": "REED-c98aa762b6e5ab25791a",
+    "pmid": "34396516",
+    "doi": "10.1111/bjh.17772",
+    "title": "Comparison of venous thromboembolism incidence in newly diagnosed multiple myeloma patients receiving bortezomib, lenalidomide, dexamethasone (RVD) or carfilzomib, lenalidomide, dexamethasone (KRD) with aspirin or rivaroxaban thromboprophylaxis",
+    "sourceType": "primary_retrospective_cohort"
+  },
+  "source": {
+    "id": "REED-CAL-10-S1",
+    "ref": "$REMAPRX_REED_ROOT/aspirin-myeloma/pdfs/34396516-piedra-2022.pdf",
+    "sha256": "ff20c37121780ade2a2e1f75df2ca82ac6b3d7c285c942c7d180e301827b8160",
+    "pmid": "34396516",
+    "doi": "10.1111/bjh.17772",
+    "title": "Comparison of venous thromboembolism incidence in newly diagnosed multiple myeloma patients receiving bortezomib, lenalidomide, dexamethasone (RVD) or carfilzomib, lenalidomide, dexamethasone (KRD) with aspirin or rivaroxaban thromboprophylaxis",
+    "physicalPages": 8,
+    "intakeReportId": "REED-c98aa762b6e5ab25791a"
+  },
+  "inspection": {
+    "at": "2026-10-27T09:39:31.190572+00:00",
+    "activeReadiness": "READINESS.json",
+    "textualPagesRead": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "visualInspectedPhysicalPages": [
+      4,
+      7,
+      8
+    ],
+    "fullScientificReviewComplete": false,
+    "formatWarning": "pdfinfoCannotrevertnondecryptstreams; materialtextandtablesreadable,norepairclaimed",
+    "candidateVersion": 2,
+    "revisionBasis": "Added bounded source-direction qualification after independent preparatoryread; result/claim numericaldata unchanged, no prior acceptance."
+  },
+  "study": {
+    "design": "singlecenter_retrospective_cohort",
+    "patientN": 305,
+    "dates": "January2015-June2020",
+    "randomized": false,
+    "clinicalPurpose": "thromboprophylaxis_supportive_care",
+    "observationWindow": "Firstdayofinductiontherapy through90daysaftercompletionofinduction",
+    "policyYearConflict": [
+      2017,
+      2018
+    ],
+    "causalProphylaxisEffectEstablished": false,
+    "adjustedORShown": null,
+    "supplementRead": false,
+    "clinicalGuidanceAdopted": false
+  },
+  "cohorts": [
+    {
+      "id": "REED-CAL-10-G1",
+      "label": "RVD+ASA",
+      "n": 124,
+      "myelomaDrugs": [
+        "bortezomib",
+        "lenalidomide",
+        "dexamethasone"
+      ],
+      "prophylaxis": "aspirin",
+      "reportedDoseMgCounts": {
+        "81": 122,
+        "325": 2
+      },
+      "frequency": null,
+      "doseFrequencyStatus": "not_reported",
+      "prescribedUseNotVerifiedAdherence": true,
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "ff20c37121780ade2a2e1f75df2ca82ac6b3d7c285c942c7d180e301827b8160",
+          "physicalPage": 3,
+          "printedPage": "Author manuscript Page 3",
+          "nativeSection": "Methods/Results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "ff20c37121780ade2a2e1f75df2ca82ac6b3d7c285c942c7d180e301827b8160",
+          "physicalPage": 7,
+          "printedPage": "Author manuscript Page 7",
+          "nativeSection": "TableI and footnote"
+        }
+      ]
+    },
+    {
+      "id": "REED-CAL-10-G2",
+      "label": "KRD+ASA",
+      "n": 99,
+      "myelomaDrugs": [
+        "carfilzomib",
+        "lenalidomide",
+        "dexamethasone"
+      ],
+      "prophylaxis": "aspirin",
+      "reportedDoseMgCounts": {
+        "81": 99
+      },
+      "frequency": null,
+      "doseFrequencyStatus": "not_reported",
+      "prescribedUseNotVerifiedAdherence": true,
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "ff20c37121780ade2a2e1f75df2ca82ac6b3d7c285c942c7d180e301827b8160",
+          "physicalPage": 3,
+          "printedPage": "Author manuscript Page 3",
+          "nativeSection": "Methods/Results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "ff20c37121780ade2a2e1f75df2ca82ac6b3d7c285c942c7d180e301827b8160",
+          "physicalPage": 7,
+          "printedPage": "Author manuscript Page 7",
+          "nativeSection": "TableI and footnote"
+        }
+      ]
+    },
+    {
+      "id": "REED-CAL-10-G3",
+      "label": "KRD+XA",
+      "n": 82,
+      "myelomaDrugs": [
+        "carfilzomib",
+        "lenalidomide",
+        "dexamethasone"
+      ],
+      "prophylaxis": "rivaroxaban",
+      "reportedDoseMg": 10,
+      "frequency": null,
+      "doseFrequencyStatus": "not_reported",
+      "prescribedUseNotVerifiedAdherence": true,
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "ff20c37121780ade2a2e1f75df2ca82ac6b3d7c285c942c7d180e301827b8160",
+          "physicalPage": 3,
+          "printedPage": "Author manuscript Page 3",
+          "nativeSection": "Methods/Results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "ff20c37121780ade2a2e1f75df2ca82ac6b3d7c285c942c7d180e301827b8160",
+          "physicalPage": 7,
+          "printedPage": "Author manuscript Page 7",
+          "nativeSection": "TableI and footnote"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "REED-CAL-10-R01",
+      "outcome": "Diagnosed VTE during induction-related observation window",
+      "cohortCounts": [
+        {
+          "cohortId": "REED-CAL-10-G1",
+          "events": 6,
+          "total": 124,
+          "reportedPercent": 4.8,
+          "DVT": 5,
+          "PE": 1
+        },
+        {
+          "cohortId": "REED-CAL-10-G2",
+          "events": 16,
+          "total": 99,
+          "reportedPercent": 16.1,
+          "DVT": 13,
+          "PE": 3
+        },
+        {
+          "cohortId": "REED-CAL-10-G3",
+          "events": 4,
+          "total": 82,
+          "reportedPercent": 4.8,
+          "DVT": 3,
+          "PE": 1
+        }
+      ],
+      "estimate": {
+        "kind": "observational_cohort_event_fractions",
+        "unit": "reportedpercent_and_events/participants",
+        "reportedRatesNotRecalculated": true,
+        "globalThreeGroupP": 0.0067,
+        "individualCohortP": null,
+        "timeWindow": "Firstdayofinductiontherapy through90daysaftercompletionofinduction"
+      },
+      "uncertainty": {
+        "CI": null,
+        "basis": "ThreegroupFisherassociation,notseparatepairwisePforallcontrasts"
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "ff20c37121780ade2a2e1f75df2ca82ac6b3d7c285c942c7d180e301827b8160",
+          "physicalPage": 3,
+          "printedPage": "Author manuscript Page 3",
+          "nativeSection": "Methods/Results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "ff20c37121780ade2a2e1f75df2ca82ac6b3d7c285c942c7d180e301827b8160",
+          "physicalPage": 8,
+          "printedPage": "Author manuscript Page 8",
+          "nativeSection": "TableII UnivariateAnalysis"
+        }
+      ],
+      "comparator": "Observedregimen/prophylaxisgroups,notrandomized",
+      "causalAttributionToProphylaxisAlone": false,
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED-CAL-10-R02",
+      "outcome": "Univariate odds of VTE:KRD+ASA versusKRD+XA",
+      "cohortIds": [
+        "REED-CAL-10-G2",
+        "REED-CAL-10-G3"
+      ],
+      "estimate": {
+        "kind": "odds_ratio",
+        "value": 3.76,
+        "reference": "KRD+XA",
+        "exposed": "KRD+ASA",
+        "analysis": "univariate",
+        "adjustedEstimateShown": null,
+        "causalDrugEffect": false,
+        "timeWindow": "Firstdayofinductiontherapy through90daysaftercompletionofinduction"
+      },
+      "uncertainty": {
+        "CILevel": 0.95,
+        "lower": 1.2,
+        "upper": 11.73,
+        "pairwisePReportedInText": 0.02,
+        "globalTableRegimenP": 0.0067
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "ff20c37121780ade2a2e1f75df2ca82ac6b3d7c285c942c7d180e301827b8160",
+          "physicalPage": 3,
+          "printedPage": "Author manuscript Page 3",
+          "nativeSection": "Methods/Results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "ff20c37121780ade2a2e1f75df2ca82ac6b3d7c285c942c7d180e301827b8160",
+          "physicalPage": 8,
+          "printedPage": "Author manuscript Page 8",
+          "nativeSection": "TableII UnivariateAnalysis"
+        }
+      ],
+      "comparator": "Observedregimen/prophylaxisgroups,notrandomized",
+      "causalAttributionToProphylaxisAlone": false,
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED-CAL-10-R03",
+      "outcome": "Observed major/minor bleeding",
+      "cohortCounts": [
+        {
+          "cohortId": "REED-CAL-10-G1",
+          "minorReportedPatients": 1,
+          "total": 124,
+          "reportedPercent": 0.8
+        },
+        {
+          "cohortId": "REED-CAL-10-G2",
+          "minorReportedPatients": 5,
+          "total": 99,
+          "reportedPercent": 5
+        },
+        {
+          "cohortId": "REED-CAL-10-G3",
+          "minorReportedPatients": 1,
+          "total": 82,
+          "reportedPercent": 1
+        }
+      ],
+      "estimate": {
+        "kind": "retrospective_bleeding_counts",
+        "totalMinorEpisodesReported": 7,
+        "minorTypes": {
+          "epistaxisEpisodes": 4,
+          "lowerGIEpisodes": 3
+        },
+        "majorEpisodesObserved": 0,
+        "globalMinorBleedingP": 0.1,
+        "equivalentSafetyEstablished": false,
+        "uniqueEpisodePatientMappingVerified": false,
+        "timeWindow": "Firstdayofinductiontherapy through90daysaftercompletionofinduction"
+      },
+      "uncertainty": {
+        "CI": null,
+        "basis": "Fewretrospectiveevents;nonsignificance notnoninferiority/equivalence"
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "ff20c37121780ade2a2e1f75df2ca82ac6b3d7c285c942c7d180e301827b8160",
+          "physicalPage": 3,
+          "printedPage": "Author manuscript Page 3",
+          "nativeSection": "Methods/Results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "ff20c37121780ade2a2e1f75df2ca82ac6b3d7c285c942c7d180e301827b8160",
+          "physicalPage": 4,
+          "printedPage": "Author manuscript Page 4",
+          "nativeSection": "Results/Discussion/companions"
+        }
+      ],
+      "comparator": "Observedregimen/prophylaxisgroups,notrandomized",
+      "causalAttributionToProphylaxisAlone": false,
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    }
+  ],
+  "claims": [
+    {
+      "id": "REED-CAL-10-C01",
+      "resultIds": [
+        "REED-CAL-10-R01"
+      ],
+      "statement": "Diagnosed VTE during induction-related observation window in retrospectiveNDMMcohorts; calendar/provider/regimen selection and unshownadjustment limit causal prophylaxis conclusions. No anticancer or noninferior-safety inference.",
+      "relation": "observational_thromboprophylaxis_description",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED-CAL-10-C02",
+      "resultIds": [
+        "REED-CAL-10-R02"
+      ],
+      "statement": "Univariate odds of VTE:KRD+ASA versusKRD+XA in retrospectiveNDMMcohorts; calendar/provider/regimen selection and unshownadjustment limit causal prophylaxis conclusions. No anticancer or noninferior-safety inference.",
+      "relation": "observational_thromboprophylaxis_description",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED-CAL-10-C03",
+      "resultIds": [
+        "REED-CAL-10-R03"
+      ],
+      "statement": "Observed major/minor bleeding in retrospectiveNDMMcohorts; calendar/provider/regimen selection and unshownadjustment limit causal prophylaxis conclusions. No anticancer or noninferior-safety inference.",
+      "relation": "observational_thromboprophylaxis_description",
+      "acceptedSupport": false
+    }
+  ],
+  "reviewInputs": [
+    {
+      "id": "Q01",
+      "answer": "RetrospectiveNDMMVTE/bleedingcomparisonofRVDASA/KRDASA/KRDXA;supportivecare,notanticancertherapy.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "ff20c37121780ade2a2e1f75df2ca82ac6b3d7c285c942c7d180e301827b8160",
+          "physicalPage": 2,
+          "printedPage": "Author manuscript Page 2",
+          "nativeSection": "Introduction/Methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "ff20c37121780ade2a2e1f75df2ca82ac6b3d7c285c942c7d180e301827b8160",
+          "physicalPage": 3,
+          "printedPage": "Author manuscript Page 3",
+          "nativeSection": "Methods/Results"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q02",
+      "answer": "305selectedsinglecenterNDMMpatients,124/99/82groups;otheranticoagulationexcluded.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "ff20c37121780ade2a2e1f75df2ca82ac6b3d7c285c942c7d180e301827b8160",
+          "physicalPage": 2,
+          "printedPage": "Author manuscript Page 2",
+          "nativeSection": "Introduction/Methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "ff20c37121780ade2a2e1f75df2ca82ac6b3d7c285c942c7d180e301827b8160",
+          "physicalPage": 3,
+          "printedPage": "Author manuscript Page 3",
+          "nativeSection": "Methods/Results"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q03",
+      "answer": "ASA81/325mg orXA10mg,frequency/adherenceunreported;RVD/KRDbackbones/doses/cyclesdiffer.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "ff20c37121780ade2a2e1f75df2ca82ac6b3d7c285c942c7d180e301827b8160",
+          "physicalPage": 3,
+          "printedPage": "Author manuscript Page 3",
+          "nativeSection": "Methods/Results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "ff20c37121780ade2a2e1f75df2ca82ac6b3d7c285c942c7d180e301827b8160",
+          "physicalPage": 7,
+          "printedPage": "Author manuscript Page 7",
+          "nativeSection": "TableI and footnote"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q04",
+      "answer": "No randomization/blindingreported;pharmacy/chart-definedgroupsandpolicyyear2017/2018unresolved.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "ff20c37121780ade2a2e1f75df2ca82ac6b3d7c285c942c7d180e301827b8160",
+          "physicalPage": 3,
+          "printedPage": "Author manuscript Page 3",
+          "nativeSection": "Methods/Results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "ff20c37121780ade2a2e1f75df2ca82ac6b3d7c285c942c7d180e301827b8160",
+          "physicalPage": 4,
+          "printedPage": "Author manuscript Page 4",
+          "nativeSection": "Results/Discussion/companions"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q05",
+      "answer": "Imaging/chartVTEandISTHbleedingduringinductionthrough90dayspostcompletion;notfixed90daysfromstart.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "ff20c37121780ade2a2e1f75df2ca82ac6b3d7c285c942c7d180e301827b8160",
+          "physicalPage": 2,
+          "printedPage": "Author manuscript Page 2",
+          "nativeSection": "Introduction/Methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "ff20c37121780ade2a2e1f75df2ca82ac6b3d7c285c942c7d180e301827b8160",
+          "physicalPage": 3,
+          "printedPage": "Author manuscript Page 3",
+          "nativeSection": "Methods/Results"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q06",
+      "answer": "VTE6/124,16/99,4/82/globalP.0067;KRDASAversusKRDXAunivariateOR3.76CI1.2-11.73/textP.02. Adjustedvaluesnotshown.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "ff20c37121780ade2a2e1f75df2ca82ac6b3d7c285c942c7d180e301827b8160",
+          "physicalPage": 3,
+          "printedPage": "Author manuscript Page 3",
+          "nativeSection": "Methods/Results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "ff20c37121780ade2a2e1f75df2ca82ac6b3d7c285c942c7d180e301827b8160",
+          "physicalPage": 8,
+          "printedPage": "Author manuscript Page 8",
+          "nativeSection": "TableII UnivariateAnalysis"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q07",
+      "answer": "No fulloutsidecapture/lossflow/adherence proof; eligibility/singlecenterselectionlimits.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "ff20c37121780ade2a2e1f75df2ca82ac6b3d7c285c942c7d180e301827b8160",
+          "physicalPage": 2,
+          "printedPage": "Author manuscript Page 2",
+          "nativeSection": "Introduction/Methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "ff20c37121780ade2a2e1f75df2ca82ac6b3d7c285c942c7d180e301827b8160",
+          "physicalPage": 3,
+          "printedPage": "Author manuscript Page 3",
+          "nativeSection": "Methods/Results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "ff20c37121780ade2a2e1f75df2ca82ac6b3d7c285c942c7d180e301827b8160",
+          "physicalPage": 4,
+          "printedPage": "Author manuscript Page 4",
+          "nativeSection": "Results/Discussion/companions"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q08",
+      "answer": "Minorbleed1/124,5/99,1/82,total7episodes;0majorobserved,globalP.1notnoninferiority/safetyequivalence.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "ff20c37121780ade2a2e1f75df2ca82ac6b3d7c285c942c7d180e301827b8160",
+          "physicalPage": 3,
+          "printedPage": "Author manuscript Page 3",
+          "nativeSection": "Methods/Results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "ff20c37121780ade2a2e1f75df2ca82ac6b3d7c285c942c7d180e301827b8160",
+          "physicalPage": 4,
+          "printedPage": "Author manuscript Page 4",
+          "nativeSection": "Results/Discussion/companions"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q09",
+      "answer": "Provider/calendar/regimen/dose/cyclesselectionconfounding persists;smallbleedevents andwideORCI. Body near-null0.99comparison direction differsfromTableIIreferencecoding; preserved,notreciprocated.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "ff20c37121780ade2a2e1f75df2ca82ac6b3d7c285c942c7d180e301827b8160",
+          "physicalPage": 3,
+          "printedPage": "Author manuscript Page 3",
+          "nativeSection": "Methods/Results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "ff20c37121780ade2a2e1f75df2ca82ac6b3d7c285c942c7d180e301827b8160",
+          "physicalPage": 4,
+          "printedPage": "Author manuscript Page 4",
+          "nativeSection": "Results/Discussion/companions"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "ff20c37121780ade2a2e1f75df2ca82ac6b3d7c285c942c7d180e301827b8160",
+          "physicalPage": 8,
+          "printedPage": "Author manuscript Page 8",
+          "nativeSection": "TableIIregimenreference"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q10",
+      "answer": "NDMMsupportivecarecontextwithmostlyASA81mg;not325mgproof,clinicalregimenrecommendationoranticancerbenefit.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "ff20c37121780ade2a2e1f75df2ca82ac6b3d7c285c942c7d180e301827b8160",
+          "physicalPage": 2,
+          "printedPage": "Author manuscript Page 2",
+          "nativeSection": "Introduction/Methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "ff20c37121780ade2a2e1f75df2ca82ac6b3d7c285c942c7d180e301827b8160",
+          "physicalPage": 3,
+          "printedPage": "Author manuscript Page 3",
+          "nativeSection": "Methods/Results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "ff20c37121780ade2a2e1f75df2ca82ac6b3d7c285c942c7d180e301827b8160",
+          "physicalPage": 4,
+          "printedPage": "Author manuscript Page 4",
+          "nativeSection": "Results/Discussion/companions"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "ff20c37121780ade2a2e1f75df2ca82ac6b3d7c285c942c7d180e301827b8160",
+          "physicalPage": 7,
+          "printedPage": "Author manuscript Page 7",
+          "nativeSection": "TableI and footnote"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q11",
+      "answer": "Onecohortreport/threegroups;othertrialsnotcurrentpatients;overlap/replicationunchecked.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "ff20c37121780ade2a2e1f75df2ca82ac6b3d7c285c942c7d180e301827b8160",
+          "physicalPage": 3,
+          "printedPage": "Author manuscript Page 3",
+          "nativeSection": "Methods/Results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "ff20c37121780ade2a2e1f75df2ca82ac6b3d7c285c942c7d180e301827b8160",
+          "physicalPage": 4,
+          "printedPage": "Author manuscript Page 4",
+          "nativeSection": "Results/Discussion/companions"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "ff20c37121780ade2a2e1f75df2ca82ac6b3d7c285c942c7d180e301827b8160",
+          "physicalPage": 5,
+          "printedPage": "Author manuscript Page 5",
+          "nativeSection": "Funding/competinginterests"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q12",
+      "answer": "Authors/institutionroles,nospecificfundingandmixedauthordisclosuresobserved;productsupplynotreported.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "ff20c37121780ade2a2e1f75df2ca82ac6b3d7c285c942c7d180e301827b8160",
+          "physicalPage": 1,
+          "printedPage": "Author manuscript Page 1",
+          "nativeSection": "Title/Summary/disclosures"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "ff20c37121780ade2a2e1f75df2ca82ac6b3d7c285c942c7d180e301827b8160",
+          "physicalPage": 5,
+          "printedPage": "Author manuscript Page 5",
+          "nativeSection": "Funding/competinginterests"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q13",
+      "answer": "Exactauthor-manuscriptread/materialvisualchecks; supplement/adjustedcells/externalintegrityunchecked.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "ff20c37121780ade2a2e1f75df2ca82ac6b3d7c285c942c7d180e301827b8160",
+          "physicalPage": 1,
+          "printedPage": "Author manuscript Page 1",
+          "nativeSection": "Title/Summary/disclosures"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "ff20c37121780ade2a2e1f75df2ca82ac6b3d7c285c942c7d180e301827b8160",
+          "physicalPage": 2,
+          "printedPage": "Author manuscript Page 2",
+          "nativeSection": "Introduction/Methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "ff20c37121780ade2a2e1f75df2ca82ac6b3d7c285c942c7d180e301827b8160",
+          "physicalPage": 4,
+          "printedPage": "Author manuscript Page 4",
+          "nativeSection": "Results/Discussion/companions"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "ff20c37121780ade2a2e1f75df2ca82ac6b3d7c285c942c7d180e301827b8160",
+          "physicalPage": 7,
+          "printedPage": "Author manuscript Page 7",
+          "nativeSection": "TableI and footnote"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q14",
+      "answer": "ExactR01-R03/C01-C03privateC21supportivecareproposal,unapplied.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "ff20c37121780ade2a2e1f75df2ca82ac6b3d7c285c942c7d180e301827b8160",
+          "physicalPage": 4,
+          "printedPage": "Author manuscript Page 4",
+          "nativeSection": "Results/Discussion/companions"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending",
+      "downstreamMapping": {
+        "paperId": "REED-CAL-10-P1",
+        "intakeReportId": "REED-c98aa762b6e5ab25791a",
+        "resultIds": [
+          "REED-CAL-10-R01",
+          "REED-CAL-10-R02",
+          "REED-CAL-10-R03"
+        ],
+        "claimIds": [
+          "REED-CAL-10-C01",
+          "REED-CAL-10-C02",
+          "REED-CAL-10-C03"
+        ],
+        "existingGuideId": "G-CONDITION-C21",
+        "purpose": "Private supportive-care/VTE prophylaxis association,notanticancerefficacy orcurrentprescriptionrecommendation",
+        "publicationState": "private_draft",
+        "canonicalChanges": 0
+      }
+    },
+    {
+      "id": "Q15",
+      "answer": "Associationsare source-backed butcausaldrugbenefit/bleedingequivalenceunestablished;needfullmethods/controlledvalidation.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "ff20c37121780ade2a2e1f75df2ca82ac6b3d7c285c942c7d180e301827b8160",
+          "physicalPage": 4,
+          "printedPage": "Author manuscript Page 4",
+          "nativeSection": "Results/Discussion/companions"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    }
+  ],
+  "sourceQualifications": [
+    {
+      "id": "C10-POLICY-YEAR",
+      "status": "unresolved",
+      "sourceA": {
+        "locator": {
+          "kind": "pdf",
+          "sourceSha256": "ff20c37121780ade2a2e1f75df2ca82ac6b3d7c285c942c7d180e301827b8160",
+          "physicalPage": 2,
+          "printedPage": "Author manuscript Page 2",
+          "nativeSection": "Introduction/Methods"
+        },
+        "description": "Introduction says routineXAwithKRDbegan2017"
+      },
+      "sourceB": {
+        "locator": {
+          "kind": "pdf",
+          "sourceSha256": "ff20c37121780ade2a2e1f75df2ca82ac6b3d7c285c942c7d180e301827b8160",
+          "physicalPage": 4,
+          "printedPage": "Author manuscript Page 4",
+          "nativeSection": "Results/Discussion/companions"
+        },
+        "description": "Discussion says2018"
+      },
+      "action": "No silentpolicyyearrepair; potentialtemporalselectionnotdeclaredeliminated."
+    },
+    {
+      "id": "C10-ADJUSTMENT",
+      "status": "estimate_not_shown",
+      "locator": {
+        "kind": "pdf",
+        "sourceSha256": "ff20c37121780ade2a2e1f75df2ca82ac6b3d7c285c942c7d180e301827b8160",
+        "physicalPage": 3,
+        "printedPage": "Author manuscript Page 3",
+        "nativeSection": "Methods/Results"
+      },
+      "description": "Age/SAVED-adjustedORsaid similar butnotshown; supplementalstratification/timeanalysisunread.",
+      "action": "Report3.76asUNIVARIATE; do notsupplyanadjustedORorclaimcompleteconfoundingcontrol."
+    },
+    {
+      "id": "C10-BLEEDING",
+      "status": "limited_observation_not_noninferiority",
+      "locator": {
+        "kind": "pdf",
+        "sourceSha256": "ff20c37121780ade2a2e1f75df2ca82ac6b3d7c285c942c7d180e301827b8160",
+        "physicalPage": 4,
+        "printedPage": "Author manuscript Page 4",
+        "nativeSection": "Results/Discussion/companions"
+      },
+      "description": "No majorbleedingobserved;minorcounts1/5/1,p.1",
+      "action": "No randomizednoninferiority/equivalence orzerolifetimeharmclaim; retrospectivecapture/limitedevents."
+    },
+    {
+      "id": "C10-DOSE-FREQUENCY",
+      "status": "not_reported",
+      "locators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "ff20c37121780ade2a2e1f75df2ca82ac6b3d7c285c942c7d180e301827b8160",
+          "physicalPage": 3,
+          "printedPage": "Author manuscript Page 3",
+          "nativeSection": "Methods/Results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "ff20c37121780ade2a2e1f75df2ca82ac6b3d7c285c942c7d180e301827b8160",
+          "physicalPage": 7,
+          "printedPage": "Author manuscript Page 7",
+          "nativeSection": "TableI and footnote"
+        }
+      ],
+      "description": "ASAmgandXA10mglistedwithout explicitadministrationfrequency;onlytwo325mgpatients.",
+      "action": "No assumeddailyregimen or325mgefficacyclaim; allASA VTEcasesreported81mgisnot randomizeddoserelation."
+    },
+    {
+      "id": "C10-NULL-OR-DIRECTION",
+      "status": "unresolved_body_table_reference_direction",
+      "sourceA": {
+        "locator": {
+          "kind": "pdf",
+          "sourceSha256": "ff20c37121780ade2a2e1f75df2ca82ac6b3d7c285c942c7d180e301827b8160",
+          "physicalPage": 3,
+          "printedPage": "Author manuscript Page 3",
+          "nativeSection": "Results near-nullcomparison"
+        },
+        "description": "Body describes KRD-XA comparedtoRVDASA asOR0.99 CI0.27-3.63,p0.99."
+      },
+      "sourceB": {
+        "locator": {
+          "kind": "pdf",
+          "sourceSha256": "ff20c37121780ade2a2e1f75df2ca82ac6b3d7c285c942c7d180e301827b8160",
+          "physicalPage": 8,
+          "printedPage": "Author manuscript Page 8",
+          "nativeSection": "TableIIregimenreference"
+        },
+        "description": "TableIIassigns0.99(0.27-3.63)toRVDASArow,withKRD-XAref1."
+      },
+      "action": "Preserve both directions, no silent reciprocal/relabel. ActiveR02extracts onlyKRDASAversusKRDXA3.76,wherebody/tableagree; near-nullORnotnewactivefinding."
+    }
+  ],
+  "limitations": [
+    "Nonrandomizedprovider/calendar/regimen/dose/cyclesselection",
+    "Policyyear2017/2018unresolved",
+    "3.76univariate,age/SAVEDadjustedsimilarbutnotshown",
+    "Supplement/outsideeventcapture/adherenceunchecked",
+    "P.1notenoughforsafety-equivalence;0majorobservednotzerorisk",
+    "OnlytwoASA325mgpatients,nodoseefficacyproof",
+    "Frequencyunreported,nodailyregimeninferred",
+    "Onecohort/threegroupsnotindependenttrials",
+    "No anticancerefficacyorcurrentclinicalrecommendation",
+    "Externalprotocol/integrity/familyunverified"
+  ],
+  "scientificAcceptance": false,
+  "humanApproval": false,
+  "released": false
+}
