@@ -12,10 +12,36 @@
       "participantBasis": "1431 randomized in COVID-OUT; study-level population, not the 1126-person Long COVID follow-up subset.",
       "synthesisIds": [
         "SYN-D01-C01-DIAGNOSIS",
-        "SYN-D01-C02-COND-C02-COVIDOUT-2022-B1E71756C16B18BBC77C"
+        "SYN-D01-C02-COND-C02-COVIDOUT-2022-B1E71756C16B18BBC77C",
+        "SYN-FILL2-D02-COVIDOUT-COMPOSITE",
+        "SYN-FILL2-D08-COVIDOUT-COMPOSITE"
       ],
       "sourceBasis": "Existing synthesis effects/population and the source-bound Study methods or rationale in editorial/evidence-assessments.json; no new source acquisition.",
-      "identityRationale": "Existing canonical study-family identity, preserved."
+      "identityRationale": "Existing canonical study-family identity, preserved.",
+      "comparisons": {
+        "D02": {
+          "drugId": "D02",
+          "participants": 661,
+          "participantBasis": "661 in the fluvoxamine modified intention-to-treat comparison (334 active, 327 concurrent controls); whole factorial trial randomized 1431. Primary-event complete-case denominators were 329 and 321.",
+          "sourceIds": [
+            "COND-C02-COVIDOUT-2022"
+          ],
+          "synthesisIds": [
+            "SYN-FILL2-D02-COVIDOUT-COMPOSITE"
+          ]
+        },
+        "D08": {
+          "drugId": "D08",
+          "participants": 808,
+          "participantBasis": "808 in the ivermectin modified intention-to-treat comparison (410 active, 398 concurrent controls); whole factorial trial randomized 1431. Primary-event complete-case denominators were 407 and 391.",
+          "sourceIds": [
+            "COND-C02-COVIDOUT-2022"
+          ],
+          "synthesisIds": [
+            "SYN-FILL2-D08-COVIDOUT-COMPOSITE"
+          ]
+        }
+      }
     },
     {
       "id": "S-ACTIV6-2026",
@@ -566,6 +592,33 @@
       ],
       "sourceBasis": "Existing synthesis effects/population and the source-bound Study methods or rationale in editorial/evidence-assessments.json; no new source acquisition.",
       "identityRationale": "Existing canonical study-family identity, preserved."
+    },
+    {
+      "id": "STUDY-ACTIV6-HIGHDOSE-FLUVOX-2023",
+      "sourceIds": [
+        "P-D02-ACTIV6-2023"
+      ],
+      "participants": 1208,
+      "participantBasis": "1208 randomized in the higher-dose fluvoxamine ACTIV-6 comparison; 1175 analyzed after drug-delivery exclusions (589 active, 586 placebo).",
+      "synthesisIds": [
+        "SYN-FILL2-D02-ACTIV6-RECOVERY"
+      ],
+      "sourceBasis": "Abstract Results; Methods: Participants, Randomization, Outcome Measures and Statistical Analysis Plan; Results: Study Population and Primary Outcome; Discussion: Limitations",
+      "identityRationale": "Exact report-specific randomized comparison; not another agent/dose comparison in the same platform. Actual local source inspection on 2026-10-26."
+    },
+    {
+      "id": "STUDY-PEARL-2025",
+      "sourceIds": [
+        "AGING-PEARL-2025"
+      ],
+      "participants": 125,
+      "participantBasis": "125 randomized in PEARL (Supplementary Figure 1); 114 completed and were analyzed: 40 at 5 mg/week, 35 at 10 mg/week and 39 placebo. Specific endpoints have further missing data.",
+      "synthesisIds": [
+        "SYN-FILL2-D06-AGING-VAT",
+        "SYN-FILL2-D06-AGING-LEAN"
+      ],
+      "sourceBasis": "PDF pp. 2–3 (printed 909–910), Results; p. 4 (printed 911), Table 1 VAT rows; pp. 12–15 (printed 919–922), Discussion, Methods and Conflicts; p. 23, Supplementary Figure 1",
+      "identityRationale": "Exact report-specific randomized comparison; not another agent/dose comparison in the same platform. Actual local source inspection on 2026-10-26."
     }
   ]
 }

@@ -1,0 +1,265 @@
+{
+  "recordedAt": "2026-10-26T11:30:38.998230+02:00",
+  "status": "PASS_TECHNICAL_DRAFT",
+  "baseCommit": "92f323f3425fd40c06787d57ff92fa672a418cd0",
+  "appraisalAuthorization": "Elon 2026-10-26 07:58 OPTION1, unchanged grading compiler",
+  "newCanonicalRows": 8,
+  "newSelectedSourceAssessments": 8,
+  "newDomainJudgments": 40,
+  "profilesFilled": 5,
+  "profilesEmpty": 11,
+  "sourceAssociationsAccounted": 93,
+  "distinctSourceIds": 86,
+  "offlineQueueLines": 76,
+  "queueSent": false,
+  "independentAcceptances": 0,
+  "humanApprovals": 0,
+  "releasedRows": 0,
+  "checks": [
+    {
+      "command": [
+        "node",
+        "research/batches/FILL-REMAPRX-1-STEP2/verify.mjs"
+      ],
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 2.451,
+      "log": "/Users/kmfp/.codex/visualizations/2026/10/26/01a1764c-1e32-7583-aefa-2330ff02b5ca/work/appraisal-validation/01.log",
+      "logSha256": "1af995e7de8a41e97b2dc9a7e2570351c9e251209e0cae19c6f2c8da96165537"
+    },
+    {
+      "command": [
+        "node",
+        "scripts/content-check.mjs"
+      ],
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 0.093,
+      "log": "/Users/kmfp/.codex/visualizations/2026/10/26/01a1764c-1e32-7583-aefa-2330ff02b5ca/work/appraisal-validation/02.log",
+      "logSha256": "007b94486722d34b88e791734d8ffa711933d7ad042bf83c41f54c452ffc7837"
+    },
+    {
+      "command": [
+        "node",
+        "scripts/reader-check.mjs"
+      ],
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 0.121,
+      "log": "/Users/kmfp/.codex/visualizations/2026/10/26/01a1764c-1e32-7583-aefa-2330ff02b5ca/work/appraisal-validation/03.log",
+      "logSha256": "3c67bddb41c40265add10bd1f1d294577db825782201962216f86493909ca519"
+    },
+    {
+      "command": [
+        "node",
+        "scripts/check-governance.mjs"
+      ],
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 0.134,
+      "log": "/Users/kmfp/.codex/visualizations/2026/10/26/01a1764c-1e32-7583-aefa-2330ff02b5ca/work/appraisal-validation/04.log",
+      "logSha256": "c5399a463361054cafb76fc1e19b0ae50e2ec42c650b59b50f2ebbb06d8c56cf"
+    },
+    {
+      "command": [
+        "node",
+        "scripts/check-reader-sections.mjs",
+        "--all-profiles"
+      ],
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 1.961,
+      "log": "/Users/kmfp/.codex/visualizations/2026/10/26/01a1764c-1e32-7583-aefa-2330ff02b5ca/work/appraisal-validation/05.log",
+      "logSha256": "80ed4d16de040ad6ecf4d2918ba2a5fcf7c6b72db0e4028836ab160127f38e3a"
+    },
+    {
+      "command": [
+        "node",
+        "scripts/check-article-navigation.mjs"
+      ],
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 1.943,
+      "log": "/Users/kmfp/.codex/visualizations/2026/10/26/01a1764c-1e32-7583-aefa-2330ff02b5ca/work/appraisal-validation/06.log",
+      "logSha256": "1f3b1079ac191f9e4ccb856fac7cda607db5fde4d0dce0c61a8707d981e98c42"
+    },
+    {
+      "command": [
+        "node",
+        "scripts/check-evidence-section.mjs"
+      ],
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 2.156,
+      "log": "/Users/kmfp/.codex/visualizations/2026/10/26/01a1764c-1e32-7583-aefa-2330ff02b5ca/work/appraisal-validation/07.log",
+      "logSha256": "9961f3e8327440e3a4b6d4be138d1c0ed22a9b5948a4635fcf614323e126d2ca"
+    },
+    {
+      "command": [
+        "node",
+        "scripts/check-evidence-grading.mjs"
+      ],
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 1.367,
+      "log": "/Users/kmfp/.codex/visualizations/2026/10/26/01a1764c-1e32-7583-aefa-2330ff02b5ca/work/appraisal-validation/08.log",
+      "logSha256": "1a55a962c53057c7792ef9bd6c5b00496c0faefd2af3f29e386a5126b3951cea"
+    },
+    {
+      "command": [
+        "node",
+        "scripts/check-outcome-summaries.mjs"
+      ],
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 0.334,
+      "log": "/Users/kmfp/.codex/visualizations/2026/10/26/01a1764c-1e32-7583-aefa-2330ff02b5ca/work/appraisal-validation/09.log",
+      "logSha256": "47a0fe22dc4b3b0aeb05a421303081e3358298d93e8889018e122c32a7ec4d3c"
+    },
+    {
+      "command": [
+        "node",
+        "scripts/check-wiki-links.mjs"
+      ],
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 1.72,
+      "log": "/Users/kmfp/.codex/visualizations/2026/10/26/01a1764c-1e32-7583-aefa-2330ff02b5ca/work/appraisal-validation/10.log",
+      "logSha256": "3881ac9831ebf7cf6999f62a54f2ff9c9b1c7e66edb18406e6a3f21a7e47196e"
+    },
+    {
+      "command": [
+        "node",
+        "scripts/verify-reader-boundary.mjs",
+        "--source-only"
+      ],
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 0.103,
+      "log": "/Users/kmfp/.codex/visualizations/2026/10/26/01a1764c-1e32-7583-aefa-2330ff02b5ca/work/appraisal-validation/11.log",
+      "logSha256": "addc534fdde35abbb4b893dbb454ab88042eadd31d93c5681ddd760716a7a541"
+    },
+    {
+      "command": [
+        "./node_modules/.bin/tsc",
+        "--noEmit",
+        "--incremental",
+        "false"
+      ],
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 6.339,
+      "log": "/Users/kmfp/.codex/visualizations/2026/10/26/01a1764c-1e32-7583-aefa-2330ff02b5ca/work/appraisal-validation/12.log",
+      "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "build"
+      ],
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 7.175,
+      "log": "/Users/kmfp/.codex/visualizations/2026/10/26/01a1764c-1e32-7583-aefa-2330ff02b5ca/work/appraisal-validation/13.log",
+      "logSha256": "bbe781ea7f5efc7c5b329cfdde1c0f6c843bec4579560410f2717685ddd384d0"
+    },
+    {
+      "command": [
+        "node",
+        "scripts/verify-reader-boundary.mjs"
+      ],
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 0.118,
+      "log": "/Users/kmfp/.codex/visualizations/2026/10/26/01a1764c-1e32-7583-aefa-2330ff02b5ca/work/appraisal-validation/14.log",
+      "logSha256": "9cc1d35ffaa871bc6fb8c1de50c5ee279ad376cf51fb74405e6a9b05fd1905dc"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "status": "PASS",
+      "exitCode": 0,
+      "elapsedSeconds": 0.068,
+      "log": "/Users/kmfp/.codex/visualizations/2026/10/26/01a1764c-1e32-7583-aefa-2330ff02b5ca/work/appraisal-validation/15.log",
+      "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "limits": [
+    "Selected-source AI-assisted editorial appraisals; not exhaustive corpus or condition coverage",
+    "Formal Q01-Q15 source reviews and independent/human scientific review remain pending",
+    "Browser verification is a separate receipt; no live deployment/publication",
+    "Local source paths/raw files are external dependencies, not committed full texts"
+  ],
+  "postCopyVerification": {
+    "recordedAt": "2026-10-26T12:40:41.809379+02:00",
+    "reason": "InheritedD02dosingcopy aligned with the already-inspected AbstractInterventions; science rows/source/assessment inputs unchanged.",
+    "checks": [
+      {
+        "command": "node research/batches/FILL-REMAPRX-1-STEP2/verify.mjs",
+        "status": "PASS",
+        "log": "../postcopy-verify.log",
+        "logSha256": "1af995e7de8a41e97b2dc9a7e2570351c9e251209e0cae19c6f2c8da96165537"
+      },
+      {
+        "command": "node scripts/check-reader-sections.mjs --all-profiles",
+        "status": "PASS",
+        "log": "../postcopy-ssr.log",
+        "logSha256": "80ed4d16de040ad6ecf4d2918ba2a5fcf7c6b72db0e4028836ab160127f38e3a"
+      },
+      {
+        "command": "npm run build",
+        "status": "PASS",
+        "log": "../postcopy-build.log",
+        "logSha256": "64ab9481e021a7bce6fa6ae78f40912ca657233d202a3e93f96b8dd482e4bf13"
+      }
+    ],
+    "otherPassed": [
+      "content-check",
+      "reader-check",
+      "governance236",
+      "built-reader-boundary36",
+      "git diff --check"
+    ]
+  },
+  "browserStatus": "PASS_SCOPED_OUTCOME_FLOW_WITH_RUNTIME_LIMITATIONS; see browser-validation.json",
+  "postAttributionVerification": {
+    "recordedAt": "2026-10-26T12:45:42.953705+02:00",
+    "reason": "Preserve exact per-sentence D08 attribution: acute recovery cites ACTIV6 only, other model findings exclude retracted HCC, retraction disclosure cites HCC only. Outcomes/assessment fingerprints unchanged.",
+    "checks": [
+      {
+        "command": "node research/batches/FILL-REMAPRX-1-STEP2/verify.mjs",
+        "status": "PASS",
+        "log": "../attribution-verify.log",
+        "logSha256": "1af995e7de8a41e97b2dc9a7e2570351c9e251209e0cae19c6f2c8da96165537"
+      },
+      {
+        "command": "node scripts/content-check.mjs",
+        "status": "PASS",
+        "log": "../attribution-content.log",
+        "logSha256": "007b94486722d34b88e791734d8ffa711933d7ad042bf83c41f54c452ffc7837"
+      },
+      {
+        "command": "node scripts/check-reader-sections.mjs --all-profiles",
+        "status": "PASS",
+        "log": "../attribution-ssr.log",
+        "logSha256": "80ed4d16de040ad6ecf4d2918ba2a5fcf7c6b72db0e4028836ab160127f38e3a"
+      },
+      {
+        "command": "npm run build",
+        "status": "PASS",
+        "log": "../attribution-build.log",
+        "logSha256": "38fbabc0d65eb5ce0fdc596e1e0818bd9c5947bf0702e81b7faeada6f622de25"
+      },
+      {
+        "command": "node scripts/verify-reader-boundary.mjs",
+        "status": "PASS",
+        "log": "../attribution-privacy.log",
+        "logSha256": "a98e7c410bbe9020018e6663708dccb49a1b1e797b0df514b1c7df6206fc538f"
+      }
+    ]
+  }
+}

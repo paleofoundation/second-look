@@ -3515,6 +3515,438 @@
           "note": "Received correction notice read, including all corrected Table 2 values. Relative strength P=.30; other displayed strength P-values remain .055, .082 and .064. No DXA numerical change specified in the notice. Updated Appendix S2 not read."
         }
       ]
+    },
+    {
+      "rowId": "SYN-FILL2-D02-ACTIV6-RECOVERY",
+      "grade": "Moderate",
+      "rationale": "The masked randomized comparison directly informs this symptom-recovery endpoint, and the credible interval is close to no effect. Postrandomization drug-delivery exclusions, participant-reported recovery, a skeptical Bayesian prior and the selected Omicron-era population leave uncertainty about smaller effects and applicability; the result is informative without proving equivalence.",
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "Random allocation and matching placebo reduce confounding; the prespecified modified intention-to-treat analysis excluded 33 randomized participants without timely drug delivery, and recovery was reported remotely by participants.",
+          "sourceIds": [
+            "P-D02-ACTIV6-2023"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "This is direct evidence for 13 days of higher-dose fluvoxamine during early acute COVID-19 in adults at least 30 years old; it is not treatment evidence for established Long COVID.",
+          "sourceIds": [
+            "P-D02-ACTIV6-2023"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "The adjusted recovery HR of 0.99 has a 95% Bayesian credible interval of 0.89–1.09; the prespecified efficacy probability threshold was not met. Smaller differences remain possible.",
+          "sourceIds": [
+            "P-D02-ACTIV6-2023"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "This exact dose, population and recovery definition are represented by one selected report. Other doses and COVID-OUT’s severe-event composite are separate questions rather than interchangeable replication.",
+          "sourceIds": [
+            "P-D02-ACTIV6-2023"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "The existing hashed full-text HTML includes the methods, primary result and limitations. Linked protocol, statistical plan and supplemental tables were not separately inspected; no current exhaustive integrity search or independent review is claimed.",
+          "sourceIds": [
+            "P-D02-ACTIV6-2023"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "P-D02-ACTIV6-2023"
+      ],
+      "basis": [
+        {
+          "sourceId": "P-D02-ACTIV6-2023",
+          "locator": "Abstract Results; Methods: Participants, Randomization, Outcome Measures and Statistical Analysis Plan; Results: Study Population and Primary Outcome; Discussion: Limitations"
+        }
+      ],
+      "integrity": "limited_access",
+      "assessedAt": "2026-10-26",
+      "inputSha256": "3edab9610b7910aa25a2d4917cf6e3cde0ab6cba1e80e1d6d345d6553ced72d2"
+    },
+    {
+      "rowId": "SYN-FILL2-D02-COVIDOUT-COMPOSITE",
+      "grade": "Moderate",
+      "rationale": "The randomized masked factorial comparison directly evaluates fluvoxamine for this 14-day composite and controls for concurrent co-treatment assignments. However, an imprecise odds-ratio interval, home-oximetry ascertainment, modified intention-to-treat exclusions and limited population scope prevent high confidence in a precise effect size. Benefit was not demonstrated, and equivalence was not established.",
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "Site-stratified random allocation, matching pills and concurrent controls support a causal comparison. The prespecified modified intention-to-treat set excluded participants not receiving study drug; primary missingness was 1.4% and imputed.",
+          "sourceIds": [
+            "COND-C02-COVIDOUT-2022"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "The report directly studies fluvoxamine at 50 mg twice daily for 14 days in early acute COVID-19 with overweight or obesity. Its mixed hypoxemia/health-care endpoint is distinct from sustained recovery or later Long COVID.",
+          "sourceIds": [
+            "COND-C02-COVIDOUT-2022"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "The adjusted odds ratio 0.94 (95% CI 0.66–1.36) spans lower and higher odds. Rare hospitalizations and deaths are not precisely estimated by this composite result.",
+          "sourceIds": [
+            "COND-C02-COVIDOUT-2022"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "Only one exact report and drug-specific comparison are assessed here. Other arms in the same factorial trial are not independent replications; no cross-drug pooling or between-arm marginal-rate comparison is valid.",
+          "sourceIds": [
+            "COND-C02-COVIDOUT-2022"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "The existing hashed original full-text report and Table 2 were inspected locally, including visual verification of comparison columns. Supplements were not separately available for this appraisal; this acute report is distinct from the later corrected Long COVID report.",
+          "sourceIds": [
+            "COND-C02-COVIDOUT-2022"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "COND-C02-COVIDOUT-2022"
+      ],
+      "basis": [
+        {
+          "sourceId": "COND-C02-COVIDOUT-2022",
+          "locator": "Methods: Randomization, Treatment, End Points and Statistical Analysis; Results: Patients and Primary Outcome; Table 2 primary composite row and comparison headers; Discussion: limitations"
+        }
+      ],
+      "integrity": "limited_access",
+      "assessedAt": "2026-10-26",
+      "inputSha256": "70ca216cb9e228598952b6abf4b0ddc07e7a9ddc2c702a901f90bef09fff8313"
+    },
+    {
+      "rowId": "SYN-FILL2-D08-COVIDOUT-COMPOSITE",
+      "grade": "Moderate",
+      "rationale": "The randomized masked factorial comparison directly evaluates ivermectin for this 14-day composite and controls for concurrent co-treatment assignments. However, an imprecise odds-ratio interval, home-oximetry ascertainment, modified intention-to-treat exclusions and limited population scope prevent high confidence in a precise effect size. Benefit was not demonstrated, and equivalence was not established.",
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "Site-stratified random allocation, matching pills and concurrent controls support a causal comparison. The prespecified modified intention-to-treat set excluded participants not receiving study drug; primary missingness was 1.4% and imputed.",
+          "sourceIds": [
+            "COND-C02-COVIDOUT-2022"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "The report directly studies ivermectin at 390–470 micrograms/kg daily for 3 days in early acute COVID-19 with overweight or obesity. Its mixed hypoxemia/health-care endpoint is distinct from sustained recovery or later Long COVID.",
+          "sourceIds": [
+            "COND-C02-COVIDOUT-2022"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "The adjusted odds ratio 1.05 (95% CI 0.76–1.45) spans lower and higher odds. Rare hospitalizations and deaths are not precisely estimated by this composite result.",
+          "sourceIds": [
+            "COND-C02-COVIDOUT-2022"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "Only one exact report and drug-specific comparison are assessed here. Other arms in the same factorial trial are not independent replications; no cross-drug pooling or between-arm marginal-rate comparison is valid.",
+          "sourceIds": [
+            "COND-C02-COVIDOUT-2022"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "The existing hashed original full-text report and Table 2 were inspected locally, including visual verification of comparison columns. Supplements were not separately available for this appraisal; this acute report is distinct from the later corrected Long COVID report.",
+          "sourceIds": [
+            "COND-C02-COVIDOUT-2022"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "COND-C02-COVIDOUT-2022"
+      ],
+      "basis": [
+        {
+          "sourceId": "COND-C02-COVIDOUT-2022",
+          "locator": "Methods: Randomization, Treatment, End Points and Statistical Analysis; Results: Patients and Primary Outcome; Table 2 primary composite row and comparison headers; Discussion: limitations"
+        }
+      ],
+      "integrity": "limited_access",
+      "assessedAt": "2026-10-26",
+      "inputSha256": "73df2f994b6c0da65eb9ac096a2f1f91e71370d3f3c91be9a5e6ab747bb14639"
+    },
+    {
+      "rowId": "SYN-FILL2-D06-AGING-VAT",
+      "grade": "Low",
+      "rationale": "The masked randomized design directly addresses visceral adiposity at 48 weeks, but the small completer-only sample, missing DXA observations, broad intervals and reduced bioavailability of the compounded preparation leave substantial uncertainty. No primary VAT benefit was demonstrated; this surrogate finding cannot establish lifespan extension or rule out an adiposity effect.",
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "Pharmacy-managed randomization and matching capsules kept participants and study staff masked. Eleven randomized participants were excluded as noncompleters; endpoint-specific missingness used pairwise removal, and adherence was largely self-reported.",
+          "sourceIds": [
+            "AGING-PEARL-2025"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "Visceral adiposity was the prespecified primary body-composition endpoint in normative aging, not a validated measure of lifespan extension. The compounded product and selected healthy cohort limit wider applicability.",
+          "sourceIds": [
+            "AGING-PEARL-2025"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "The improvement odds-ratio intervals are broad: 0.73–4.50 at 5 mg and 0.66–4.32 at 10 mg. They do not exclude important differences; a nonsignificant test is not evidence of equivalence.",
+          "sourceIds": [
+            "AGING-PEARL-2025"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "This is one small three-arm trial, with both doses sharing one placebo group. Dose arms and secondary outcomes are not independent replications, and no pooled longevity estimate is justified.",
+          "sourceIds": [
+            "AGING-PEARL-2025"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "The hashed original PDF and its embedded tables and enrollment schematic were inspected locally; companion files were hash-verified. Authors disclosed AgelessRx employment/ownership and company support. This is local editorial inspection, not independent or human approval.",
+          "sourceIds": [
+            "AGING-PEARL-2025"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "AGING-PEARL-2025"
+      ],
+      "basis": [
+        {
+          "sourceId": "AGING-PEARL-2025",
+          "locator": "PDF pp. 2–3 (printed 909–910), Results; p. 4 (printed 911), Table 1 VAT rows; pp. 12–15 (printed 919–922), Discussion, Methods and Conflicts; p. 23, Supplementary Figure 1"
+        }
+      ],
+      "integrity": "clear",
+      "assessedAt": "2026-10-26",
+      "inputSha256": "617164c19fda95c07cf11796c6335de606c3558e7db9318779e6a6eab2b7a4ca"
+    },
+    {
+      "rowId": "SYN-FILL2-D06-AGING-LEAN",
+      "grade": "Low",
+      "rationale": "The reported between-group lean-tissue contrast favors 10 mg compounded rapamycin in women, but few women contributed, endpoint-specific observations were missing, and this was a secondary subgroup among many analyses. Confidence in a general clinical benefit is low despite the positive adjusted comparison; muscle function, sarcopenia treatment and longevity were not demonstrated.",
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "Pharmacy-managed randomization and matching capsules kept participants and study staff masked. Eleven randomized participants were excluded as noncompleters; endpoint-specific missingness used pairwise removal, and adherence was largely self-reported. The reported pairwise contrast used a multiple-comparison correction, but sex-specific secondary analyses still require cautious interpretation.",
+          "sourceIds": [
+            "AGING-PEARL-2025"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "The direct measurement is baseline-normalized lean tissue on DXA in women, not strength, walking performance, diagnosed sarcopenia or survival. It cannot be generalized to all older adults or other formulations.",
+          "sourceIds": [
+            "AGING-PEARL-2025"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "The 48-week contrast is +6.194 percentage points with 95% CI 0.8773–11.5105. The wide range and small subgroup leave the size and practical significance uncertain; subgroup follow-up N is not fully reconciled here.",
+          "sourceIds": [
+            "AGING-PEARL-2025"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "A 24-week signal in the same participants is not independent replication. No significant male benefit or benefit across all doses is inferred, and the null primary VAT result remains separately visible.",
+          "sourceIds": [
+            "AGING-PEARL-2025"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "The hashed original PDF and its embedded tables and enrollment schematic were inspected locally; companion files were hash-verified. Authors disclosed AgelessRx employment/ownership and company support. This is local editorial inspection, not independent or human approval.",
+          "sourceIds": [
+            "AGING-PEARL-2025"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "AGING-PEARL-2025"
+      ],
+      "basis": [
+        {
+          "sourceId": "AGING-PEARL-2025",
+          "locator": "PDF p. 3 (printed 910), Results; p. 5 (printed 912), Table 2 Females after 48 weeks, LTM 10 mg versus Placebo; Methods pp. 13–15; Supplementary Figure 1"
+        }
+      ],
+      "integrity": "clear",
+      "assessedAt": "2026-10-26",
+      "inputSha256": "a0f1177fa764c4a57800b79ede60d05853a3e18a33d7d3efd8236f5938fe845a"
+    },
+    {
+      "rowId": "SYN-FILL2-D06-PERIODONTAL-MICE",
+      "grade": "Low",
+      "rationale": "Two controlled mouse cohorts and repeated imaging support an experimental bone finding, but small female-only groups, model-specific exposures and incomplete reporting of allocation concealment prevent a confident human clinical inference. The evidence is explicitly preclinical, with no human trial count, treatment effect or benefit letter.",
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "Vehicle controls and two colonies strengthen the experiment; JAX imaging was longitudinal and image landmarking used randomized images and independent observers. Allocation concealment and complete investigator blinding were not established in this appraisal.",
+          "sourceIds": [
+            "P-D06-PERIODONTAL-2020"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "These are aged female mouse periodontal-bone measurements, not clinical attachment, tooth retention or symptoms in patients. Dietary concentration cannot be translated into a human therapeutic dose.",
+          "sourceIds": [
+            "P-D06-PERIODONTAL-2020"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "NIA-UW had 10 old mice per treatment and JAX 13 per treatment. Directional findings were reported with tests and plots; a numeric effect and interval were not extracted, so no magnitude is asserted.",
+          "sourceIds": [
+            "P-D06-PERIODONTAL-2020"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "Concordant findings at two sites within one report improve experimental coherence but are not independent human replication. Different colonies and imaging designs remain separate.",
+          "sourceIds": [
+            "P-D06-PERIODONTAL-2020"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "The exact hashed full-text XML contains methods, figures/captions and the published peer-review exchange. No retraction flag was seen in these local bytes; no new current integrity search or independent review was performed.",
+          "sourceIds": [
+            "P-D06-PERIODONTAL-2020"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "P-D06-PERIODONTAL-2020"
+      ],
+      "basis": [
+        {
+          "sourceId": "P-D06-PERIODONTAL-2020",
+          "locator": "Results and Figures 1–2, especially Figure 2C and 2F; Materials and methods: Animal studies, Encapsulated rapamycin feeding and Micro-computed tomography analysis"
+        }
+      ],
+      "integrity": "preclinical_only",
+      "assessedAt": "2026-10-26",
+      "inputSha256": "1a1cde455c2a0eff777d7414d7730de39d1654551c8b93b142cbc64a2a57a287"
+    },
+    {
+      "rowId": "SYN-FILL2-D08-CRC-XENOGRAFT",
+      "grade": "Low",
+      "rationale": "The report links xenograft growth inhibition to TCF dependence using negative and rescue controls, but the findings arise from cell and immunodeficient-mouse models at nonclinical exposures. Small experiments, no human comparator and unresolved translation leave weak support for any clinical colorectal-cancer inference; no A–F clinical benefit grade is assigned.",
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "Carrier controls, TCF-independent models and constitutively active TCF rescue test pathway specificity. The local report did not establish allocation concealment or blinded tumor measurements for this appraisal.",
+          "sourceIds": [
+            "P-D08-CRC-2014"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "Human-derived cells implanted in nude mice remain nonclinical evidence. Daily intraperitoneal exposure is not an oral cancer regimen in patients, and pathway-sensitive lines are a selected subset.",
+          "sourceIds": [
+            "P-D08-CRC-2014"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "Tumor growth was assessed serially with small experiment-level groups. A common numeric effect and confidence interval were not extracted, and no patient denominator or clinical magnitude is available.",
+          "sourceIds": [
+            "P-D08-CRC-2014"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "TCF-dependent inhibition and rescue are internally coherent, while TCF-independent growth is a material negative result. Multiple assays within one report do not establish replicated clinical benefit.",
+          "sourceIds": [
+            "P-D08-CRC-2014"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "The existing full-text XML hash matched its local acquisition manifest and contained experimental methods and figure captions. Supplements/raw experimental datasets were not independently reanalyzed; no fresh integrity search or human approval is claimed.",
+          "sourceIds": [
+            "P-D08-CRC-2014"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "P-D08-CRC-2014"
+      ],
+      "basis": [
+        {
+          "sourceId": "P-D08-CRC-2014",
+          "locator": "Results: Ivermectin selectively represses TCF-dependent human colon cancer xenograft growth in vivo; Figures 4–5 (including TCFVP16 rescue); Discussion; Materials and Methods: Mouse xenografts"
+        }
+      ],
+      "integrity": "preclinical_only",
+      "assessedAt": "2026-10-26",
+      "inputSha256": "a1e39725101d2d4217f6bb7073dfb53b85c7644f86c484a4953c9be2d20ced9b"
+    },
+    {
+      "rowId": "SYN-FILL2-D10-NSCLC-XENOGRAFT",
+      "grade": "Low",
+      "rationale": "The source reports smaller A549 xenografts after a short fenbendazole course, but the animal experiment and cell mechanisms cannot establish patient benefit. Unclear randomization/blinding, limited quantitative precision and absent human efficacy data leave low clinical confidence, and no clinical benefit letter or human trial count is assigned.",
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "The paper used control xenografts with measured tumor size/weight and supporting tissue assays. Random allocation and blinded assessment were not established; reported tests were Student’s t tests.",
+          "sourceIds": [
+            "MECH-D10-MICROTUBULE-2018"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "The outcome is growth of implanted A549 tumors in immunodeficient mice, not response or survival in people with NSCLC. The mouse regimen cannot supply a human dose or therapeutic recommendation.",
+          "sourceIds": [
+            "MECH-D10-MICROTUBULE-2018"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "The short 12-day experiment reports directional size and weight reductions. A reliable numeric contrast with interval was not extracted; there is no patient sample or clinical effect size.",
+          "sourceIds": [
+            "MECH-D10-MICROTUBULE-2018"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "Cell-cycle, metabolic and xenograft assays within this report support an experimental hypothesis, not independent clinical replication. They cannot outweigh or resolve human liver-injury concerns.",
+          "sourceIds": [
+            "MECH-D10-MICROTUBULE-2018"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "The exact existing full-text XML was hash-verified and includes experimental methods and Figure 9 captions. No human efficacy or safety study is contained in this report, and no new integrity retrieval or independent review is claimed.",
+          "sourceIds": [
+            "MECH-D10-MICROTUBULE-2018"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "MECH-D10-MICROTUBULE-2018"
+      ],
+      "basis": [
+        {
+          "sourceId": "MECH-D10-MICROTUBULE-2018",
+          "locator": "Results: In vivo tumour suppression by FZ treatment, Figure 9d–h; Materials and methods: Nude mice experiments and Statistical Analysis"
+        }
+      ],
+      "integrity": "preclinical_only",
+      "assessedAt": "2026-10-26",
+      "inputSha256": "33d6f355d244a89e9c90d8eea2c786de139954df289a0c85fbabcc867d82bd6e"
     }
   ]
 }

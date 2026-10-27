@@ -1,0 +1,92 @@
+{
+  "recordedAt": "2026-10-26T12:40:41.808884+02:00",
+  "status": "PASS_SCOPED_OUTCOME_FLOW_WITH_RUNTIME_LIMITATIONS",
+  "origin": "http://127.0.0.1:8877",
+  "runtime": "Existing production build; Wrangler --local DB/R2 bindings; no deployment",
+  "desktopViewport": {
+    "width": 1920,
+    "height": 1080
+  },
+  "mobileViewport": {
+    "width": 390,
+    "height": 844
+  },
+  "passed": [
+    {
+      "route": "/drugs/fluvoxamine",
+      "checks": [
+        "Two exact new clinical rows visible; COVID-OUT661 and ACTIV6 1208 participant bases shown",
+        "Outcome, grade and evidence-count triggers open exact ACTIV6 recovery/source drawer",
+        "Findings include HR0.99/CrI0.89\u20131.09 and1175 analyzed/1208 randomized exclusions",
+        "Expanded certainty shows all five domains, exact scope and actual2026-10-26 assessment date",
+        "Escape closes drawer and restores exact initiating outcome/grade/evidence trigger focus",
+        "Desktop screenshot visually confirms right-side drawer, visible row/scope/limits and bracketed source citations"
+      ]
+    },
+    {
+      "route": "/conditions/aging",
+      "checks": [
+        "Mobile390px table has separate lean-tissueGradeC and primaryVATGradeE rows",
+        "Both rows retain one PEARLfamily/125 randomized; drawer distinguishes114 completers and endpoint missingness",
+        "Mobile drawer width390 matches viewport; title/source/counts wrap readably",
+        "PEARL source and exact primary-null/secondary-female scopes and lifespan limits are present",
+        "Native Findings disclosure expands; Citation3 opens matchingPEARL summary/OriginalSource/Reference3 popover",
+        "Mobile screenshot visually confirms readable drawer and visible close control"
+      ]
+    },
+    {
+      "route": "/drugs/fenbendazole",
+      "checks": [
+        "ExactNSCLCmouse row has Nonclinical evidence only, mechanistic purpose and participantsNot totaled",
+        "Drawer says no randomized clinical trial represented, exact2018source, no human efficacy/safe-dose inference",
+        "Native Findings disclosure shows Evidence certainty: Low"
+      ]
+    },
+    {
+      "route": "/conditions/non-small-cell-lung-cancer",
+      "checks": [
+        "SamecanonicalSYN-FILL2-D10-NSCLC-XENOGRAFT and source reused",
+        "Navigating exactrowfragment automatically opens matchingresearchdrawer; backgroundtriggercorrectlyinert",
+        "Native Findings disclosure and matchingCitation5popover work",
+        "Reference5 navigates exact#source-ref-MECH-D10-MICROTUBULE-2018; afterclosingdrawer targetisvisible at200px withzeroopenmodals"
+      ]
+    },
+    {
+      "route": "/drugs/fluvoxamine#section-dosing",
+      "checks": [
+        "Correctedfirstdaytitrationvisiblyrenders50mgtwiceon day1then100mgtwicefor12additionaldays; sourceCitation2 retained"
+      ]
+    },
+    {
+      "route": "/drugs/ivermectin#research-feed",
+      "checks": [
+        "RetractedHCCsourcevisiblyQuarantined\u2014not evidence for efficacy",
+        "Retractiondisclosurepresent; exactnewCOVIDOUTandCRCrows present"
+      ]
+    }
+  ],
+  "pending": [],
+  "observations": [
+    "A Playwright button-role locator did not match native summary disclosure; inspected nativeAX and expanded actualcontrol successfully. No app failure inferred.",
+    "No source URLs were opened; no scientific retrieval/outbound/account action.",
+    "Viewport override reset to1920 and all dialogs closed; owned local preview stopped for slot handoff.",
+    "Referencepopover changes hash while researchdrawer remains open; close control reveals matchingreference. Automaticdrawerclose oncitation is not claimed.",
+    "Final local preview stopped; temporaryviewportalreadyreset; ephemeralQA tabclosed. PepsAnonreferenceuser tabretained.",
+    "Console/librarypreload issues are disclosed; no broader runtime/navigation component changes were made."
+  ],
+  "formalIndependentReview": "pending",
+  "humanApproval": "pending",
+  "release": "not authorized",
+  "runtimeLimitations": [
+    {
+      "issue": "Vinext RSC prefetch setup error: TypeError: f is not a function",
+      "location": "/_next/static/chunks/link-CCkO44MU.js",
+      "impact": "Observed in console on local article navigation. Required outcome/table/drawer/citation flow remained functional. No clean-console or whole-application browser PASS claimed; runtime repair is outside this bounded data/appraisal draft."
+    },
+    {
+      "issue": "Missing local guide-library JavaScript preload chunk",
+      "location": "/_next/static/chunks/guide-library-CCVnavNE.js",
+      "impact": "Local server returned404; dist/client includes the guide-library CSS but not this JS preload. Account/library preload behavior was not fixed or accepted by this task. Anonymous /api/library401 is separate expected access rejection."
+    }
+  ]
+}

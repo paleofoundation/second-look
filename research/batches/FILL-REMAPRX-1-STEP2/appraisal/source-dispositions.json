@@ -1,0 +1,2360 @@
+{
+  "initialAssociations": 93,
+  "distinctSources": 86,
+  "accessibleOriginalSourceIds": [
+    "P-D02-ACTIV6-2023",
+    "COND-C02-COVIDOUT-2022",
+    "P-D06-PERIODONTAL-2020",
+    "MECH-D06-AUTOPHAGY-2009",
+    "AGING-PEARL-2025",
+    "P-D08-CRC-2014",
+    "P-D08-HCC-2022",
+    "P-D10-LIVER-2024",
+    "P-D10-LIVER-2026",
+    "MECH-D10-MICROTUBULE-2018",
+    "MECH-D26-HYPOXIA-2025",
+    "MECH-D34-HYPHAE-1999",
+    "MECH-D34-BIOFILM-2019",
+    "MECH-D07-HEDGEHOG-2010",
+    "MECH-D31-OXYGENATION-2020",
+    "MECH-D31-PASTIS-2022"
+  ],
+  "records": [
+    {
+      "route": "/drugs/fluvoxamine",
+      "entityId": "D02",
+      "sourceId": "CTX-D02-LABEL",
+      "originalRole": "context_only",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Indications; Dosage; Contraindications; Warnings; Interactions; Clinical pharmacology",
+          "source_url": "https://www.dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=7ecd83ec-88f5-4f85-9cc2-9068375d8820&type=display",
+          "basis": "full_text"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/fluvoxamine",
+      "entityId": "D02",
+      "sourceId": "P-D02-ACTIV6-2023",
+      "originalRole": "clinical_report",
+      "localAccess": "hash_verified_original",
+      "disposition": "source_appraised_exact_outcome_projected",
+      "reason": "Exact locally inspected report supports only these specific rows; independent/human review and release remain pending.",
+      "synthesisIds": [
+        "SYN-FILL2-D02-ACTIV6-RECOVERY"
+      ],
+      "originalLocator": [
+        {
+          "section": "Abstract; Results",
+          "source_url": "https://jamanetwork.com/journals/jama/fullarticle/2812204",
+          "basis": "full_text"
+        }
+      ],
+      "sourceBindings": [
+        {
+          "path": "/Users/kmfp/Documents/ChatGPT/One Match Rule/work/ingest/SL-F01-F02-20261011/receipt/input/return/F02/PRIMARY/A-F02-R4141__original_report__higher-dose-fluvoxamine-and-time-to-sustained-reco.html",
+          "expectedSha256": "609becf81c10eec73de2afa40445642de6ed03b7401613fc71650a433b70ec41",
+          "actualSha256": "609becf81c10eec73de2afa40445642de6ed03b7401613fc71650a433b70ec41",
+          "hashMatch": true,
+          "bytes": 209554,
+          "acquisitionSourceId": "A-F02-R4141-F01",
+          "role": "original_report",
+          "matchBasis": [
+            "normalized full title exact"
+          ],
+          "kind": "main"
+        }
+      ],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/fluvoxamine",
+      "entityId": "D02",
+      "sourceId": "P-REVIVE-2026",
+      "originalRole": "quarantined",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "excluded_quarantined_missing_source",
+      "reason": "Existing quarantine preserved; original is not graded. Any replacement/republication requires separate exact identity/integrity reconciliation.",
+      "synthesisIds": [],
+      "originalLocator": [],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/fluvoxamine",
+      "entityId": "D02",
+      "sourceId": "P-D02-SIGMA1-2019",
+      "originalRole": "nonclinical_report",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Cell/mouse mechanism does not become an acute COVID or Long COVID patient outcome.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Abstract; Results",
+          "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6936250/",
+          "basis": "full_text"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/fluvoxamine",
+      "entityId": "D02",
+      "sourceId": "COND-C02-COVIDOUT-2022",
+      "originalRole": "clinical_report",
+      "localAccess": "hash_verified_original",
+      "disposition": "source_appraised_exact_outcome_projected",
+      "reason": "Exact locally inspected report supports only these specific rows; independent/human review and release remain pending.",
+      "synthesisIds": [
+        "SYN-FILL2-D02-COVIDOUT-COMPOSITE"
+      ],
+      "originalLocator": [
+        {
+          "section": "Abstract; Results"
+        }
+      ],
+      "sourceBindings": [
+        {
+          "path": "/Users/kmfp/Documents/ChatGPT/One Match Rule/work/ingest/SL-F01-F02-20261011/receipt/input/return/F01/PRIMARY/A-F01-R031__original_report__randomized-trial-of-metformin-ivermectin-and-fluvo.html",
+          "expectedSha256": "bbd529be8738b59d0e885a2f0da3f807d949c1c7527098635d304aa3d84894c7",
+          "actualSha256": "bbd529be8738b59d0e885a2f0da3f807d949c1c7527098635d304aa3d84894c7",
+          "hashMatch": true,
+          "bytes": 339905,
+          "acquisitionSourceId": "A-F01-R031-F01",
+          "role": "original_report",
+          "matchBasis": [
+            "normalized full title exact"
+          ],
+          "kind": "main"
+        }
+      ],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/sirolimus",
+      "entityId": "D06",
+      "sourceId": "CTX-D06-LABEL",
+      "originalRole": "context_only",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Indications; Dosage; Contraindications; Warnings; Interactions; Clinical pharmacology",
+          "source_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a71c205f-7acc-40e5-9eee-69daeb49a352",
+          "basis": "full_text"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/sirolimus",
+      "entityId": "D06",
+      "sourceId": "CTX-D06-OVARIAN-TRIAL",
+      "originalRole": "context_only",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Trial objectives",
+          "source_url": "https://www.cancer.gov/research/participate/clinical-trials-search/v?id=NCI-2018-00321",
+          "basis": "full_text"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/sirolimus",
+      "entityId": "D06",
+      "sourceId": "P-D06-BREAST-2015",
+      "originalRole": "clinical_report",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Combination and disease setting must remain exact; sirolimus monotherapy benefit cannot be isolated from this record.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Abstract",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/25687356/",
+          "basis": "abstract"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/sirolimus",
+      "entityId": "D06",
+      "sourceId": "P-D06-AML-2018",
+      "originalRole": "clinical_report",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Clinical combination/pharmacodynamic endpoints remain separate; not standalone sirolimus efficacy.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Abstract",
+          "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6060002/",
+          "basis": "abstract"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/sirolimus",
+      "entityId": "D06",
+      "sourceId": "P-D06-PERIODONTAL-2020",
+      "originalRole": "nonclinical_report",
+      "localAccess": "hash_verified_original",
+      "disposition": "source_appraised_exact_outcome_projected",
+      "reason": "Exact locally inspected report supports only these specific rows; independent/human review and release remain pending.",
+      "synthesisIds": [
+        "SYN-FILL2-D06-PERIODONTAL-MICE"
+      ],
+      "originalLocator": [
+        {
+          "section": "Abstract; Results",
+          "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7220376/",
+          "basis": "full_text"
+        },
+        {
+          "section": "Results and Figures 2–4; Materials and Methods: Animal studies; Encapsulated rapamycin feeding",
+          "basis": "Original full-text methods/results inspected on 2026-10-11"
+        }
+      ],
+      "sourceBindings": [
+        {
+          "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/second-look-navigation/editorial/mechanism-expansion/sirolimus-periodontal-2020.xml",
+          "expectedSha256": "13c063ad5e66859690e6cda33496fbaa7308b773af7ef59a27e6702f748f23fe",
+          "actualSha256": "13c063ad5e66859690e6cda33496fbaa7308b773af7ef59a27e6702f748f23fe",
+          "hashMatch": true,
+          "bytes": 147905,
+          "matchBasis": "existing mechanism fulltext manifest",
+          "kind": "main"
+        },
+        {
+          "path": "/Users/kmfp/Documents/Codex/2026-10-08/one-match-drug-repurposing/work/ingest/FETCH30/source-files/36/36de00999b686a94d42ab8e6478c7cee8ee3834234a9a6d345f190839253300c.pdf",
+          "expectedSha256": "36de00999b686a94d42ab8e6478c7cee8ee3834234a9a6d345f190839253300c",
+          "actualSha256": "36de00999b686a94d42ab8e6478c7cee8ee3834234a9a6d345f190839253300c",
+          "hashMatch": true,
+          "bytes": 2171687,
+          "acquisitionSourceId": "B-R0220-F01",
+          "role": "original_report",
+          "matchBasis": [
+            "PMCID exact existing metadata",
+            "normalized full title exact"
+          ],
+          "kind": "main"
+        },
+        {
+          "path": "/Users/kmfp/Documents/ChatGPT/One Match Rule/work/ingest/SL-F01-F02-20261011/receipt/input/return/F02/PRIMARY/A-F02-R2055__supplement-S01__rapamycin-rejuvenates-oral-health-in-aging-mice.pdf",
+          "expectedSha256": "9e6b3fabb215cd360a3b8f52fc0a6d2092279589aa310b4b7c184892c8e712c1",
+          "actualSha256": "9e6b3fabb215cd360a3b8f52fc0a6d2092279589aa310b4b7c184892c8e712c1",
+          "hashMatch": true,
+          "bytes": 328958,
+          "acquisitionSourceId": "A-F02-R2055-S01",
+          "role": "supplement",
+          "matchBasis": [
+            "PMCID exact existing metadata",
+            "normalized full title exact"
+          ],
+          "kind": "companion"
+        }
+      ],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/sirolimus",
+      "entityId": "D06",
+      "sourceId": "P-D06-PROSTATE-2010",
+      "originalRole": "mechanistic_report",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Preoperative pharmacodynamics cannot establish recurrence prevention or survival.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Abstract",
+          "source_url": "https://aacrjournals.org/clincancerres/article/16/11/3057/75161/A-Pharmacodynamic-Study-of-Rapamycin-in-Men-with",
+          "basis": "abstract"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/sirolimus",
+      "entityId": "D06",
+      "sourceId": "P-D06-RECTAL-2015",
+      "originalRole": "clinical_report",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Combination feasibility/perfusion is not isolated clinical efficacy or survival.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Abstract",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/26253949/",
+          "basis": "abstract"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/sirolimus",
+      "entityId": "D06",
+      "sourceId": "P-D06-CML-2008",
+      "originalRole": "clinical_report",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Small uncontrolled exact-disease report; no other leukemia or aging endpoint transfer.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Abstract",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/18173550/",
+          "basis": "abstract"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/sirolimus",
+      "entityId": "D06",
+      "sourceId": "MECH-D06-AUTOPHAGY-2009",
+      "originalRole": "nonclinical_report",
+      "localAccess": "hash_verified_original",
+      "disposition": "cellular_mechanism_only",
+      "reason": "ULK–Atg13–FIP200 cellular regulation is not an exact clinical aging, cancer or periodontal outcome; no outcome row or human trial count inferred.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Methods: Cell Culture; Autophagy Assays; Results/Figures 3, 5–7",
+          "basis": "Original full-text methods and results inspected; dedicated appraisal pending."
+        }
+      ],
+      "sourceBindings": [
+        {
+          "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/second-look-navigation/editorial/mechanism-expansion/sirolimus-autophagy-2009.html",
+          "expectedSha256": "8820dcd1b60fea6259b5a5e05d8a96d4cfd53e10d625590af0330ebfc87dd0bd",
+          "actualSha256": "8820dcd1b60fea6259b5a5e05d8a96d4cfd53e10d625590af0330ebfc87dd0bd",
+          "hashMatch": true,
+          "bytes": 213130,
+          "matchBasis": "existing mechanism fulltext manifest",
+          "kind": "main"
+        }
+      ],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/sirolimus",
+      "entityId": "D06",
+      "sourceId": "AGING-PEARL-2025",
+      "originalRole": "clinical_report",
+      "localAccess": "hash_verified_original",
+      "disposition": "source_appraised_exact_outcome_projected",
+      "reason": "Exact locally inspected report supports only these specific rows; independent/human review and release remain pending.",
+      "synthesisIds": [
+        "SYN-FILL2-D06-AGING-VAT",
+        "SYN-FILL2-D06-AGING-LEAN"
+      ],
+      "originalLocator": [
+        {
+          "section": "Abstract; Results; Discussion; Supplementary Figure 1"
+        }
+      ],
+      "sourceBindings": [
+        {
+          "path": "/Users/kmfp/Documents/ChatGPT/One Match Rule/work/ingest/SL-F01-F02-20261011/receipt/input/return/F02/PRIMARY/A-F02-R2087__original_report__influence-of-rapamycin-on-safety-and-healthspan-me.pdf",
+          "expectedSha256": "780e474be7bcc4fb96e39214fb8d6fcf0b1163999f5e43ad19eb69af48ca1571",
+          "actualSha256": "780e474be7bcc4fb96e39214fb8d6fcf0b1163999f5e43ad19eb69af48ca1571",
+          "hashMatch": true,
+          "bytes": 2197434,
+          "acquisitionSourceId": "A-F02-R2087-F01",
+          "role": "original_report",
+          "matchBasis": [
+            "DOI exact existing metadata",
+            "PMID exact existing metadata",
+            "normalized full title exact"
+          ],
+          "kind": "main"
+        },
+        {
+          "path": "/Users/kmfp/Documents/ChatGPT/One Match Rule/work/ingest/SL-F01-F02-20261011/receipt/input/return/F02/PRIMARY/A-F02-R2087__supplement-S01__influence-of-rapamycin-on-safety-and-healthspan-me.pdf",
+          "expectedSha256": "b3c83a2af8ccfab44c9471a46dae3aed121a602f161e5c087274d2572b5b7cf3",
+          "actualSha256": "b3c83a2af8ccfab44c9471a46dae3aed121a602f161e5c087274d2572b5b7cf3",
+          "hashMatch": true,
+          "bytes": 232563,
+          "acquisitionSourceId": "A-F02-R2087-S01",
+          "role": "supplement",
+          "matchBasis": [
+            "DOI exact existing metadata",
+            "PMID exact existing metadata",
+            "normalized full title exact"
+          ],
+          "kind": "companion"
+        },
+        {
+          "path": "/Users/kmfp/Documents/ChatGPT/One Match Rule/work/ingest/SL-F01-F02-20261011/receipt/input/return/F02/PRIMARY/A-F02-R2087__supplement-S02__influence-of-rapamycin-on-safety-and-healthspan-me.pdf",
+          "expectedSha256": "6bc670a41fd765b51b2818cbdae12db192e85f127843e6a804cafe6bfb5df230",
+          "actualSha256": "6bc670a41fd765b51b2818cbdae12db192e85f127843e6a804cafe6bfb5df230",
+          "hashMatch": true,
+          "bytes": 973542,
+          "acquisitionSourceId": "A-F02-R2087-S02",
+          "role": "supplement",
+          "matchBasis": [
+            "DOI exact existing metadata",
+            "PMID exact existing metadata",
+            "normalized full title exact"
+          ],
+          "kind": "companion"
+        },
+        {
+          "path": "/Users/kmfp/Documents/ChatGPT/One Match Rule/work/ingest/SL-F01-F02-20261011/receipt/input/return/F02/PRIMARY/A-F02-R2087__supplement-S03__influence-of-rapamycin-on-safety-and-healthspan-me.pdf",
+          "expectedSha256": "050c49567a7f4f08a70d68f60dd422df88c9cb2fda9f04a57d636218c7cdd1b5",
+          "actualSha256": "050c49567a7f4f08a70d68f60dd422df88c9cb2fda9f04a57d636218c7cdd1b5",
+          "hashMatch": true,
+          "bytes": 223677,
+          "acquisitionSourceId": "A-F02-R2087-S03",
+          "role": "supplement",
+          "matchBasis": [
+            "DOI exact existing metadata",
+            "PMID exact existing metadata",
+            "normalized full title exact"
+          ],
+          "kind": "companion"
+        },
+        {
+          "path": "/Users/kmfp/Documents/ChatGPT/One Match Rule/work/ingest/SL-F01-F02-20261011/receipt/input/return/F02/PRIMARY/A-F02-R2087__supplement-S04__influence-of-rapamycin-on-safety-and-healthspan-me.docx",
+          "expectedSha256": "5bdb15b691d4a6ad281c89f74921a6653c5f27427f00e28cdb22bee815fd771d",
+          "actualSha256": "5bdb15b691d4a6ad281c89f74921a6653c5f27427f00e28cdb22bee815fd771d",
+          "hashMatch": true,
+          "bytes": 782299,
+          "acquisitionSourceId": "A-F02-R2087-S04",
+          "role": "supplement",
+          "matchBasis": [
+            "DOI exact existing metadata",
+            "PMID exact existing metadata",
+            "normalized full title exact"
+          ],
+          "kind": "companion"
+        }
+      ],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/sirolimus",
+      "entityId": "D06",
+      "sourceId": "AGING-RAPA-MICE-2009",
+      "originalRole": "nonclinical_report",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Direct survival experiment in mice; no human lifespan inference.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Abstract and results"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/sirolimus",
+      "entityId": "D06",
+      "sourceId": "AGING-SIROLIMUS-LABEL",
+      "originalRole": "context_only",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Sections 1, 5, 7 and 12.1"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/ivermectin",
+      "entityId": "D08",
+      "sourceId": "CTX-D08-LABEL",
+      "originalRole": "context_only",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Indications; Dosage; Contraindications; Warnings; Interactions; Clinical pharmacology",
+          "source_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=681888c9-af79-4b7d-ae80-c3f4f6f1effd",
+          "basis": "full_text"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/ivermectin",
+      "entityId": "D08",
+      "sourceId": "P-D08-ACTIV6-2023",
+      "originalRole": "clinical_report",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Recorded null acute-recovery finding is not a Long COVID or oncology result.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Abstract",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/36807465/",
+          "basis": "abstract"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/ivermectin",
+      "entityId": "D08",
+      "sourceId": "P-D08-OVARIAN-2009",
+      "originalRole": "nonclinical_report",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Cell-culture growth inhibition is not patient response or survival.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Abstract",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/22495656/",
+          "basis": "abstract"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/ivermectin",
+      "entityId": "D08",
+      "sourceId": "P-D08-GBM-2016",
+      "originalRole": "nonclinical_report",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Experimental systems remain distinct from human glioblastoma efficacy.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Abstract",
+          "source_url": "https://www.sciencedirect.com/science/article/pii/S0006291X16317429",
+          "basis": "abstract"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/ivermectin",
+      "entityId": "D08",
+      "sourceId": "P-D08-BREAST-2016",
+      "originalRole": "nonclinical_report",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Cell/animal mechanisms are not human breast-cancer outcomes.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Abstract",
+          "source_url": "https://aacrjournals.org/cancerres/article/76/15/4457/613862/Ivermectin-Induces-Cytostatic-Autophagy-by",
+          "basis": "abstract"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/ivermectin",
+      "entityId": "D08",
+      "sourceId": "P-D08-CRC-2014",
+      "originalRole": "nonclinical_report",
+      "localAccess": "hash_verified_original",
+      "disposition": "source_appraised_exact_outcome_projected",
+      "reason": "Exact locally inspected report supports only these specific rows; independent/human review and release remain pending.",
+      "synthesisIds": [
+        "SYN-FILL2-D08-CRC-XENOGRAFT"
+      ],
+      "originalLocator": [
+        {
+          "section": "Abstract; Results",
+          "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4287931/",
+          "basis": "full_text"
+        },
+        {
+          "section": "Results: Direct activation of TCF rescues; Ivermectin selectively represses TCF-dependent xenograft growth; Figures 4–5; Mouse xenografts",
+          "basis": "Original full-text methods/results inspected on 2026-10-11"
+        }
+      ],
+      "sourceBindings": [
+        {
+          "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/second-look-navigation/editorial/mechanism-expansion/ivermectin-wnt-2014.xml",
+          "expectedSha256": "70963e00da711d46b9684e20817dcf4d7d314367d759b183bcea36fc13c76410",
+          "actualSha256": "70963e00da711d46b9684e20817dcf4d7d314367d759b183bcea36fc13c76410",
+          "hashMatch": true,
+          "bytes": 151480,
+          "matchBasis": "existing mechanism fulltext manifest",
+          "kind": "main"
+        }
+      ],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/ivermectin",
+      "entityId": "D08",
+      "sourceId": "P-D08-HCC-2022",
+      "originalRole": "nonclinical_report",
+      "localAccess": "hash_verified_original",
+      "disposition": "excluded_retracted",
+      "reason": "The exact local XML links its 2026 retraction notice. Quarantined, excluded from efficacy grading and patient benefit; canonical source/profile disclosure corrected.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Abstract; Results",
+          "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9107598/",
+          "basis": "full_text"
+        }
+      ],
+      "sourceBindings": [
+        {
+          "path": "/Users/kmfp/Documents/Codex/2026-10-08/one-match-drug-repurposing/work/ingest/FETCH30/source-files/32/327ebb090062eb3a7eea091c21081bd41c5a4fa12580d731f9255319772a9775.xml",
+          "expectedSha256": "327ebb090062eb3a7eea091c21081bd41c5a4fa12580d731f9255319772a9775",
+          "actualSha256": "327ebb090062eb3a7eea091c21081bd41c5a4fa12580d731f9255319772a9775",
+          "hashMatch": true,
+          "bytes": 78406,
+          "acquisitionSourceId": "B-R0251-F01",
+          "role": "original_report",
+          "matchBasis": [
+            "PMCID exact existing metadata",
+            "normalized full title exact"
+          ],
+          "kind": "main"
+        },
+        {
+          "path": "/Users/kmfp/Documents/ChatGPT/One Match Rule/work/ingest/SL-F01-F02-20261011/receipt/input/return/F02/PRIMARY/A-F02-R1188__original_report__ivermectin-synergizes-sorafenib-in-hepatocellular.html",
+          "expectedSha256": "ed584c4dcafc6033b78ea0e5dca5c2d20efbdf4e2f9217df37187ecbb4d62db2",
+          "actualSha256": "ed584c4dcafc6033b78ea0e5dca5c2d20efbdf4e2f9217df37187ecbb4d62db2",
+          "hashMatch": true,
+          "bytes": 166455,
+          "acquisitionSourceId": "A-F02-R1188-F01",
+          "role": "original_report",
+          "matchBasis": [
+            "PMCID exact existing metadata",
+            "URL exact existing metadata",
+            "normalized full title exact"
+          ],
+          "kind": "main"
+        }
+      ],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/ivermectin",
+      "entityId": "D08",
+      "sourceId": "P-D08-ANTIVIRAL-2023",
+      "originalRole": "nonclinical_report",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Recorded concentration/translation limits remain; no patient efficacy inference.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Abstract; Results",
+          "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10634736/",
+          "basis": "full_text"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/ivermectin",
+      "entityId": "D08",
+      "sourceId": "COND-C02-COVIDOUT-2022",
+      "originalRole": "clinical_report",
+      "localAccess": "hash_verified_original",
+      "disposition": "source_appraised_exact_outcome_projected",
+      "reason": "Exact locally inspected report supports only these specific rows; independent/human review and release remain pending.",
+      "synthesisIds": [
+        "SYN-FILL2-D08-COVIDOUT-COMPOSITE"
+      ],
+      "originalLocator": [
+        {
+          "section": "Abstract; Results"
+        }
+      ],
+      "sourceBindings": [
+        {
+          "path": "/Users/kmfp/Documents/ChatGPT/One Match Rule/work/ingest/SL-F01-F02-20261011/receipt/input/return/F01/PRIMARY/A-F01-R031__original_report__randomized-trial-of-metformin-ivermectin-and-fluvo.html",
+          "expectedSha256": "bbd529be8738b59d0e885a2f0da3f807d949c1c7527098635d304aa3d84894c7",
+          "actualSha256": "bbd529be8738b59d0e885a2f0da3f807d949c1c7527098635d304aa3d84894c7",
+          "hashMatch": true,
+          "bytes": 339905,
+          "acquisitionSourceId": "A-F01-R031-F01",
+          "role": "original_report",
+          "matchBasis": [
+            "normalized full title exact"
+          ],
+          "kind": "main"
+        }
+      ],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/fenbendazole",
+      "entityId": "D10",
+      "sourceId": "CTX-D10-FDA",
+      "originalRole": "context_only",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Approval notice",
+          "source_url": "https://www.fda.gov/animal-veterinary/cvm-updates/fda-approves-first-generic-fenbendazole-oral-suspension-dewormer-beef-and-dairy-cattle-goats",
+          "basis": "full_text"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/fenbendazole",
+      "entityId": "D10",
+      "sourceId": "P-D10-LIVER-2024",
+      "originalRole": "harm_case_report",
+      "localAccess": "hash_verified_original",
+      "disposition": "harm_preserved_no_registered_outcome_scope",
+      "reason": "Human liver-injury case report retained as safety evidence; no registered liver-injury condition identity or comparator for a cancer-efficacy row. No harmful-event incidence or causal estimate invented.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Case report; Discussion",
+          "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11068125/",
+          "basis": "full_text"
+        }
+      ],
+      "sourceBindings": [
+        {
+          "path": "/Users/kmfp/Documents/ChatGPT/One Match Rule/work/ingest/SL-F01-F02-20261011/receipt/input/return/F02/PRIMARY/A-F02-R1262__original_report__severe-drug-induced-liver-injury-due-to-self-admin.pdf",
+          "expectedSha256": "e52e167a802afe26bfd924b87a816e9f6b70e779084d4cabe917a7d5590f6539",
+          "actualSha256": "e52e167a802afe26bfd924b87a816e9f6b70e779084d4cabe917a7d5590f6539",
+          "hashMatch": true,
+          "bytes": 364954,
+          "acquisitionSourceId": "A-F02-R1262-F01",
+          "role": "original_report",
+          "matchBasis": [
+            "PMCID exact existing metadata",
+            "normalized full title exact"
+          ],
+          "kind": "main"
+        }
+      ],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/fenbendazole",
+      "entityId": "D10",
+      "sourceId": "P-D10-OVARIAN-2024",
+      "originalRole": "nonclinical_report",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Preclinical findings do not establish human ovarian-cancer treatment benefit.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Abstract; Results",
+          "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11686899/",
+          "basis": "full_text"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/fenbendazole",
+      "entityId": "D10",
+      "sourceId": "P-D10-LIVER-2026",
+      "originalRole": "harm_case_report",
+      "localAccess": "hash_verified_original",
+      "disposition": "harm_preserved_no_registered_outcome_scope",
+      "reason": "Human liver-injury/immunotherapy differential case retained as safety evidence. Not a controlled cancer benefit result, and no registered liver-injury outcome parent exists in this bounded scope.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Abstract",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/41608149/",
+          "basis": "abstract"
+        }
+      ],
+      "sourceBindings": [
+        {
+          "path": "/Users/kmfp/Documents/ChatGPT/One Match Rule/work/ingest/SL-F01-F02-20261011/receipt/input/return/F02/PRIMARY/A-F02-R1232__original_report__differentiating-fenbendazole-induced-liver-injury.pdf",
+          "expectedSha256": "b02c242420a0ca8a8a4c25b2f74d426bf97c73222fe56b3db4425d49d15a8064",
+          "actualSha256": "b02c242420a0ca8a8a4c25b2f74d426bf97c73222fe56b3db4425d49d15a8064",
+          "hashMatch": true,
+          "bytes": 1340765,
+          "acquisitionSourceId": "A-F02-R1232-F01",
+          "role": "original_report",
+          "matchBasis": [
+            "PMID exact existing metadata"
+          ],
+          "kind": "main"
+        }
+      ],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/fenbendazole",
+      "entityId": "D10",
+      "sourceId": "MECH-D10-MICROTUBULE-2018",
+      "originalRole": "nonclinical_report",
+      "localAccess": "hash_verified_original",
+      "disposition": "source_appraised_exact_outcome_projected",
+      "reason": "Exact locally inspected report supports only these specific rows; independent/human review and release remain pending.",
+      "synthesisIds": [
+        "SYN-FILL2-D10-NSCLC-XENOGRAFT"
+      ],
+      "originalLocator": [
+        {
+          "section": "Results: FZ destabilizes tubulin network; FZ treatment results in early G2/M block; Figures 1, 3–8; Methods: tubulin assay and nude mice",
+          "basis": "Original full-text methods and results inspected; dedicated appraisal pending."
+        }
+      ],
+      "sourceBindings": [
+        {
+          "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/second-look-navigation/editorial/mechanism-expansion/fenbendazole-2018.xml",
+          "expectedSha256": "2d75ddcd1e96cf809dc17ef2c01d7701aace800d7299d58efbbd79f6511aa26f",
+          "actualSha256": "2d75ddcd1e96cf809dc17ef2c01d7701aace800d7299d58efbbd79f6511aa26f",
+          "hashMatch": true,
+          "bytes": 117192,
+          "matchBasis": "existing mechanism fulltext manifest",
+          "kind": "main"
+        }
+      ],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/guanfacine",
+      "entityId": "D11",
+      "sourceId": "CTX-D11-LABEL",
+      "originalRole": "context_only",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Indications; Dosage; Contraindications; Warnings; Interactions; Clinical pharmacology",
+          "source_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b972af81-3a37-40be-9fe1-3ddf59852528",
+          "basis": "full_text"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/guanfacine",
+      "entityId": "D11",
+      "sourceId": "P-D11-LONGCOVID-2023",
+      "originalRole": "clinical_report",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Twelve-person uncontrolled combination series; cannot isolate guanfacine or infer a comparative effect. Hypotension/dizziness discontinuations remain recorded.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Abstract; Clinical experience",
+          "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9691274/",
+          "basis": "full_text"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/maraviroc",
+      "entityId": "D12",
+      "sourceId": "CTX-D12-LABEL",
+      "originalRole": "context_only",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Indications; Dosage; Contraindications; Warnings; Interactions; Clinical pharmacology",
+          "source_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=46f30ac5-c96b-429e-976d-8c5ee1c0761b",
+          "basis": "full_text"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/maraviroc",
+      "entityId": "D12",
+      "sourceId": "P-D12-BREAST-2012",
+      "originalRole": "nonclinical_report",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Retain both experimental findings; not a clinical breast-cancer response.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Abstract",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/22637726/",
+          "basis": "abstract"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/maraviroc",
+      "entityId": "D12",
+      "sourceId": "P-D12-CRC-2016",
+      "originalRole": "mechanistic_report",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Human tumor/phase-I pilot evidence requires exact mechanism versus clinical outcome separation; no isolated comparative benefit.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Abstract",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/27070705/",
+          "basis": "abstract"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/maraviroc",
+      "entityId": "D12",
+      "sourceId": "P-D12-PANCREAS-2018",
+      "originalRole": "nonclinical_report",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Cell invasion is not patient survival or treatment response.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Abstract; Results",
+          "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5778036/",
+          "basis": "full_text"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/rituximab",
+      "entityId": "D14",
+      "sourceId": "CTX-D14-LABEL",
+      "originalRole": "context_only",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Indications; Dosage; Contraindications; Warnings; Interactions; Clinical pharmacology",
+          "source_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b172773b-3905-4a1c-ad95-bab4b6126563",
+          "basis": "full_text"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/rituximab",
+      "entityId": "D14",
+      "sourceId": "P-D14-VITILIGO-2013",
+      "originalRole": "clinical_report",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Uncontrolled five-patient pilot; improvement cannot be converted into a randomized comparative estimate.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Abstract; Results",
+          "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3828826/",
+          "basis": "full_text"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/memantine",
+      "entityId": "D25",
+      "sourceId": "P-D25-GBM",
+      "originalRole": "incomplete_scope",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Drug and experimental regimen need source-located reconciliation; receptor biology alone cannot supply a memantine patient outcome.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Abstract: methods and results"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/memantine",
+      "entityId": "D25",
+      "sourceId": "CTX-D25-LABEL",
+      "originalRole": "context_only",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Clinical pharmacology; contraindications; warnings; interactions"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/sildenafil",
+      "entityId": "D26",
+      "sourceId": "CTX-D26-LABEL",
+      "originalRole": "context_only",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Clinical pharmacology; contraindications; warnings; interactions"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/sildenafil",
+      "entityId": "D26",
+      "sourceId": "CTX-D26-VIAGRA",
+      "originalRole": "context_only",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Indications; mechanism; contraindications"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/sildenafil",
+      "entityId": "D26",
+      "sourceId": "P-D26-COMBINATION",
+      "originalRole": "incomplete_scope",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Class/combination title is insufficient for exact sildenafil regimen and human endpoint attribution.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Abstract: methods and results"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/sildenafil",
+      "entityId": "D26",
+      "sourceId": "P-D26-GBM",
+      "originalRole": "mechanistic_report",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. A 69-patient tumor cohort is not a randomized sildenafil treatment comparison.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Abstract: methods and results"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/sildenafil",
+      "entityId": "D26",
+      "sourceId": "MECH-D26-HYPOXIA-2025",
+      "originalRole": "mechanistic_report",
+      "localAccess": "hash_verified_original",
+      "disposition": "no_exact_registered_condition_scope",
+      "reason": "Healthy-volunteer experimental hypoxia/cerebrovascular physiology is not the existing glioblastoma or other disease-treatment scope; no new condition page or clinical benefit inferred.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Methods: Participants and Experimental design; Results: Cerebrovascular function; Table 2, Figures 3–4",
+          "basis": "Original full-text methods and results inspected; dedicated appraisal pending."
+        }
+      ],
+      "sourceBindings": [
+        {
+          "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/second-look-navigation/editorial/mechanism-expansion/sildenafil-hypoxia-2025.html",
+          "expectedSha256": "9200c0ec6f777b30ea28443eef256850f2371ce374c3c5fe122ff6edb9fa60a8",
+          "actualSha256": "9200c0ec6f777b30ea28443eef256850f2371ce374c3c5fe122ff6edb9fa60a8",
+          "hashMatch": true,
+          "bytes": 268687,
+          "matchBasis": "existing mechanism fulltext manifest",
+          "kind": "main"
+        }
+      ],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/conditions/myalgic-encephalomyelitis-chronic-fatigue-syndrome",
+      "entityId": "C06",
+      "sourceId": "COND-C06-CDC",
+      "originalRole": "context_only",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Overview and treatment sections"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/conditions/myalgic-encephalomyelitis-chronic-fatigue-syndrome",
+      "entityId": "C06",
+      "sourceId": "COND-C06-TRPM3-2021",
+      "originalRole": "mechanistic_report",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Laboratory patient-cell function is not randomized symptomatic recovery.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Abstract"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/conditions/myalgic-encephalomyelitis-chronic-fatigue-syndrome",
+      "entityId": "C06",
+      "sourceId": "COND-C06-CDC-CARE",
+      "originalRole": "context_only",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Overview and treatment sections"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/conditions/myalgic-encephalomyelitis-chronic-fatigue-syndrome",
+      "entityId": "C06",
+      "sourceId": "COND-C05-NIAMS",
+      "originalRole": "context_only",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Overview and treatment sections"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/conditions/myalgic-encephalomyelitis-chronic-fatigue-syndrome",
+      "entityId": "C06",
+      "sourceId": "COND-C01-CDC",
+      "originalRole": "context_only",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Overview and treatment sections"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/conditions/persistent-genital-arousal-disorder-genitopelvic-dysesthesia",
+      "entityId": "C08",
+      "sourceId": "COND-C08-IPGAD-2023",
+      "originalRole": "no_intervention_result",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Condition characterization cannot become a drug treatment-effect row.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Abstract; Discussion"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/conditions/persistent-genital-arousal-disorder-genitopelvic-dysesthesia",
+      "entityId": "C08",
+      "sourceId": "COND-C08-NEURO-2020",
+      "originalRole": "no_intervention_result",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Neurological case characterization does not establish a repurposed intervention effect.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Abstract; Discussion"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/conditions/persistent-genital-arousal-disorder-genitopelvic-dysesthesia",
+      "entityId": "C08",
+      "sourceId": "P-D04-CSBD-2022",
+      "originalRole": "wrong_condition",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Canonical C07 CSBD findings in 73 men cannot serve C08 PGAD/genitopelvic dysesthesia.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Trial methods and results",
+          "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9453901/",
+          "basis": "full_text"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/conditions/multiple-myeloma",
+      "entityId": "C21",
+      "sourceId": "COND-C21-NCI",
+      "originalRole": "context_only",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Overview and treatment sections"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/conditions/multiple-myeloma",
+      "entityId": "C21",
+      "sourceId": "COND-C21-THAL",
+      "originalRole": "context_only",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Overview and treatment sections"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/conditions/multiple-myeloma",
+      "entityId": "C21",
+      "sourceId": "COND-C21-IMMUNE",
+      "originalRole": "context_only",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Overview and treatment sections"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/conditions/multiple-myeloma",
+      "entityId": "C21",
+      "sourceId": "CP019-R01",
+      "originalRole": "context_only",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "p. 7 Table 1; p. 9",
+          "basis": "Accepted CP28 extraction"
+        },
+        {
+          "section": "pp. 7–8 Table 1",
+          "basis": "Accepted CP28 extraction"
+        },
+        {
+          "section": "pp. 6, 9",
+          "basis": "Accepted CP28 extraction"
+        },
+        {
+          "section": "p. 7 Table 1",
+          "basis": "Accepted CP28 extraction"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/conditions/multiple-myeloma",
+      "entityId": "C21",
+      "sourceId": "CP020-R01",
+      "originalRole": "context_only",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "printed/PDF p. 18",
+          "basis": "Accepted CP28 extraction"
+        },
+        {
+          "section": "printed/PDF p. 10",
+          "basis": "Accepted CP28 extraction"
+        },
+        {
+          "section": "printed/PDF p. 5 Table 2; printed/PDF p. 8",
+          "basis": "Accepted CP28 extraction"
+        },
+        {
+          "section": "printed/PDF p. 8",
+          "basis": "Accepted CP28 extraction"
+        },
+        {
+          "section": "printed/PDF p. 9",
+          "basis": "Accepted CP28 extraction"
+        },
+        {
+          "section": "printed/PDF p. 24",
+          "basis": "Accepted CP28 extraction"
+        },
+        {
+          "section": "printed/PDF p. 2; original p. 9",
+          "basis": "Accepted CP28 extraction"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/conditions/multiple-myeloma",
+      "entityId": "C21",
+      "sourceId": "MF-MYELOMA-MODELS-2018",
+      "originalRole": "nonclinical_report",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Exact preclinical myeloma record; no patient disease-control result.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Abstract: Methods, Results and Interpretation"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/conditions/multiple-myeloma",
+      "entityId": "C21",
+      "sourceId": "P-D07-MYELOMA-2016",
+      "originalRole": "nonclinical_report",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Not itraconazole monotherapy or a human myeloma treatment effect.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Abstract",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/27784375/",
+          "basis": "abstract"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/conditions/multiple-myeloma",
+      "entityId": "C21",
+      "sourceId": "P-D20-MYELOMA",
+      "originalRole": "nonclinical_report",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Cell-line death cannot supply a human myeloma benefit row.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Abstract: methods and results"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/conditions/multiple-myeloma",
+      "entityId": "C21",
+      "sourceId": "P-D23-MYELOMA",
+      "originalRole": "clinical_report",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Supportive-care endpoint is not cancer control. Exact comparative values and assessment cannot be invented from the title.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Abstract: methods and results"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/conditions/type-2-diabetes",
+      "entityId": "C31",
+      "sourceId": "COND-C31-NIDDK",
+      "originalRole": "context_only",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "What are the different types of diabetes? — Type 2 diabetes",
+          "table_figure": null,
+          "basis": "Full official source page verified on 2026-10-11"
+        },
+        {
+          "section": "What other health problems can people with diabetes develop?",
+          "table_figure": null,
+          "basis": "Full official source page verified on 2026-10-11"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/conditions/type-2-diabetes",
+      "entityId": "C31",
+      "sourceId": "COND-C31-MANAGEMENT",
+      "originalRole": "context_only",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "How can I manage my diabetes?",
+          "table_figure": null,
+          "basis": "Full official source page verified on 2026-10-11"
+        },
+        {
+          "section": "What types of medicines should I take?",
+          "table_figure": null,
+          "basis": "Full official source page verified on 2026-10-11"
+        },
+        {
+          "section": "How can I check my blood glucose level at home?",
+          "table_figure": null,
+          "basis": "Full official source page verified on 2026-10-11"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/conditions/type-2-diabetes",
+      "entityId": "C31",
+      "sourceId": "MF-LABEL-2025",
+      "originalRole": "context_only",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "1 Indications and Usage; 12.1 Mechanism of Action"
+        },
+        {
+          "section": "2.3; 4; 5.1"
+        },
+        {
+          "section": "5.2; 5.3; 6.1; 7"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/conditions/type-2-diabetes",
+      "entityId": "C31",
+      "sourceId": "CTX-REPURPOSING-NCATS",
+      "originalRole": "context_only",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Question: What is drug repurposing?",
+          "table_figure": null,
+          "basis": "Full official source page verified on 2026-10-11"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/conditions/type-2-diabetes",
+      "entityId": "C31",
+      "sourceId": "CTX-GUIDE-2",
+      "originalRole": "context_only",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "synthesisIds": [],
+      "originalLocator": [],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/fluconazole",
+      "entityId": "D34",
+      "sourceId": "CTX-D34-MEDLINEPLUS",
+      "originalRole": "context_only",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Why is this medication prescribed?",
+          "table_figure": null,
+          "basis": "Full official source page verified on 2026-10-11"
+        },
+        {
+          "section": "How should this medicine be used?",
+          "table_figure": null,
+          "basis": "Full official source page verified on 2026-10-11"
+        },
+        {
+          "section": "What special precautions should I follow?",
+          "table_figure": null,
+          "basis": "Full official source page verified on 2026-10-11"
+        },
+        {
+          "section": "What side effects can this medication cause?",
+          "table_figure": null,
+          "basis": "Full official source page verified on 2026-10-11"
+        },
+        {
+          "section": "What should I know about storage and disposal of this medication?",
+          "table_figure": null,
+          "basis": "Full official source page verified on 2026-10-11"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/fluconazole",
+      "entityId": "D34",
+      "sourceId": "CTX-off-label-1",
+      "originalRole": "context_only",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "synthesisIds": [],
+      "originalLocator": [],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/fluconazole",
+      "entityId": "D34",
+      "sourceId": "CTX-D34-LABEL",
+      "originalRole": "context_only",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Microbiology — Mechanism of Action; Resistance",
+          "table_figure": null,
+          "basis": "Full official source page verified on 2026-10-11"
+        },
+        {
+          "section": "Indications and Usage",
+          "table_figure": null,
+          "basis": "Full official source page verified on 2026-10-11"
+        },
+        {
+          "section": "Contraindications",
+          "table_figure": null,
+          "basis": "Full official source page verified on 2026-10-11"
+        },
+        {
+          "section": "Warnings — Hepatic injury; Potential for fetal harm",
+          "table_figure": null,
+          "basis": "Full official source page verified on 2026-10-11"
+        },
+        {
+          "section": "Precautions — General; Drug Interactions",
+          "table_figure": null,
+          "basis": "Full official source page verified on 2026-10-11"
+        },
+        {
+          "section": "Dosage and Administration",
+          "table_figure": null,
+          "basis": "Full official source page verified on 2026-10-11"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/fluconazole",
+      "entityId": "D34",
+      "sourceId": "CTX-CANDIDA-GUIDELINE",
+      "originalRole": "context_only",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Diagnostic Considerations",
+          "table_figure": null,
+          "basis": "Full official source page verified on 2026-10-11"
+        },
+        {
+          "section": "Treatment",
+          "table_figure": null,
+          "basis": "Full official source page verified on 2026-10-11"
+        },
+        {
+          "section": "Recurrent Vulvovaginal Candidiasis",
+          "table_figure": null,
+          "basis": "Full official source page verified on 2026-10-11"
+        },
+        {
+          "section": "Non–albicans Vulvovaginal Candidiasis",
+          "table_figure": null,
+          "basis": "Full official source page verified on 2026-10-11"
+        },
+        {
+          "section": "Pregnancy",
+          "table_figure": null,
+          "basis": "Full official source page verified on 2026-10-11"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/fluconazole",
+      "entityId": "D34",
+      "sourceId": "CTX-GUIDE-2",
+      "originalRole": "context_only",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "synthesisIds": [],
+      "originalLocator": [],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/fluconazole",
+      "entityId": "D34",
+      "sourceId": "CTX-CANDIDA-CDC",
+      "originalRole": "context_only",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Overview",
+          "table_figure": null,
+          "basis": "Full official source page verified on 2026-10-11"
+        },
+        {
+          "section": "Types and strains — Species",
+          "table_figure": null,
+          "basis": "Full official source page verified on 2026-10-11"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/fluconazole",
+      "entityId": "D34",
+      "sourceId": "CTX-TERM-HYPHAE",
+      "originalRole": "context_only",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Scope Note; MeSH Unique ID D025301",
+          "table_figure": null,
+          "basis": "Full official source page verified on 2026-10-11"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/fluconazole",
+      "entityId": "D34",
+      "sourceId": "CTX-TERM-BIOFILM",
+      "originalRole": "context_only",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Biofilms — scope note; MeSH Unique ID D018441",
+          "table_figure": null,
+          "basis": "Full official source page verified on 2026-10-11"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/fluconazole",
+      "entityId": "D34",
+      "sourceId": "MECH-D34-HYPHAE-1999",
+      "originalRole": "nonclinical_report",
+      "localAccess": "hash_verified_original",
+      "disposition": "no_exact_registered_condition_scope",
+      "reason": "Candida-isolate morphology experiment; no corresponding existing registered Candida condition in this scope. Not human clinical efficacy, tissue invasion or systemic benefit.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Materials and Methods: hyphal induction; Results: Fluconazole inhibits hyphal formation; Figures 1–5; Discussion",
+          "basis": "Original full-text methods and results inspected; dedicated appraisal pending."
+        }
+      ],
+      "sourceBindings": [
+        {
+          "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/second-look-navigation/editorial/mechanism-expansion/fluconazole-hyphae-1999.html",
+          "expectedSha256": "2a2a3ae3ef00be6288793228ae87a27a6a1fc79378e77d406586ceee57e796b6",
+          "actualSha256": "2a2a3ae3ef00be6288793228ae87a27a6a1fc79378e77d406586ceee57e796b6",
+          "hashMatch": true,
+          "bytes": 175258,
+          "matchBasis": "existing mechanism fulltext manifest",
+          "kind": "main"
+        }
+      ],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/fluconazole",
+      "entityId": "D34",
+      "sourceId": "MECH-D34-BIOFILM-2019",
+      "originalRole": "nonclinical_report",
+      "localAccess": "hash_verified_original",
+      "disposition": "no_exact_registered_condition_scope",
+      "reason": "Candida-isolate resistance-gene/biofilm experiment; no corresponding registered condition/outcome parent and no comparative patient result.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Methods: Antifungal susceptibility testing and gene expression; Results: Table 2 and Figures 2–4; Discussion",
+          "basis": "Original full-text methods and results inspected; dedicated appraisal pending."
+        }
+      ],
+      "sourceBindings": [
+        {
+          "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/second-look-navigation/editorial/mechanism-expansion/fluconazole-biofilm-2019.html",
+          "expectedSha256": "b0e9cb4bacf289ab9b465cafa4a1d9acd9ef5e7584315a7c14c43a206744572e",
+          "actualSha256": "b0e9cb4bacf289ab9b465cafa4a1d9acd9ef5e7584315a7c14c43a206744572e",
+          "hashMatch": true,
+          "bytes": 164850,
+          "matchBasis": "existing mechanism fulltext manifest",
+          "kind": "main"
+        }
+      ],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/fluconazole",
+      "entityId": "D34",
+      "sourceId": "MECH-D07-HEDGEHOG-2010",
+      "originalRole": "negative_comparator_context",
+      "localAccess": "hash_verified_original",
+      "disposition": "negative_comparator_wrong_intervention_for_profile",
+      "reason": "Itraconazole Hedgehog experiments cannot supply a fluconazole benefit. The fluconazole comparison is mechanistic/negative, not a patient treatment effect or new indication.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Results and Discussion; Figures 1B,D, 2D,E and 4A–E; Experimental Procedures: Hh pathway activity assays",
+          "basis": "Original full-text methods and results inspected; dedicated appraisal pending."
+        }
+      ],
+      "sourceBindings": [
+        {
+          "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/second-look-navigation/editorial/mechanism-expansion/itraconazole-hedgehog-2010.html",
+          "expectedSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "actualSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "hashMatch": true,
+          "bytes": 235104,
+          "matchBasis": "existing mechanism fulltext manifest",
+          "kind": "main"
+        }
+      ],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/tadalafil",
+      "entityId": "D31",
+      "sourceId": "D31-CIALIS-LABEL",
+      "originalRole": "context_only",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Sections 1, 2, 4, 5, 6, 7, 12.1"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/tadalafil",
+      "entityId": "D31",
+      "sourceId": "D31-ADCIRCA-LABEL",
+      "originalRole": "context_only",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Sections 1, 2, 4, 5, 7, 12.1"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/tadalafil",
+      "entityId": "D31",
+      "sourceId": "D31-RAYNAUD-2010",
+      "originalRole": "clinical_report",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Positive small crossover report remains separate from the other population/trial; no pooling or generalized benefit.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Abstract: Methods and Results"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/tadalafil",
+      "entityId": "D31",
+      "sourceId": "D31-RAYNAUD-2009",
+      "originalRole": "clinical_report",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Recorded null finding retained; not replaced by the positive 2010 report.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Abstract: Methods and Results"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/tadalafil",
+      "entityId": "D31",
+      "sourceId": "MECH-D31-OXYGENATION-2020",
+      "originalRole": "mechanistic_report",
+      "localAccess": "hash_verified_original",
+      "disposition": "no_exact_registered_condition_scope",
+      "reason": "Tadalafil small-vessel occlusion stroke physiology pilot is not Alzheimer’s disease or a human longevity outcome. No matching registered stroke parent in this bounded scope.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Materials and Methods: Trial design and NIRS; Results: NIRS, Figure 4B; Discussion: Limitations",
+          "basis": "Original full-text methods and results inspected; dedicated appraisal pending."
+        }
+      ],
+      "sourceBindings": [
+        {
+          "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/second-look-navigation/editorial/mechanism-expansion/tadalafil-oxygenation-2020.html",
+          "expectedSha256": "5c3fb855c9c35c9972f61f75a556b32a73f099e3596ffd9c517e52ee44389d52",
+          "actualSha256": "5c3fb855c9c35c9972f61f75a556b32a73f099e3596ffd9c517e52ee44389d52",
+          "hashMatch": true,
+          "bytes": 246578,
+          "matchBasis": "existing mechanism fulltext manifest",
+          "kind": "main"
+        }
+      ],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/drugs/tadalafil",
+      "entityId": "D31",
+      "sourceId": "MECH-D31-PASTIS-2022",
+      "originalRole": "mechanistic_report",
+      "localAccess": "hash_verified_original",
+      "disposition": "no_exact_registered_condition_scope",
+      "reason": "Single-dose tadalafil perfusion investigation in vascular cognitive impairment is distinct from Alzheimer’s disease and long-term clinical dementia benefit. No exact registered parent in this bounded scope.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Methods: trial design, imaging and statistical analysis; Results: Figure 1C, Figure 3 and Table 2; Discussion",
+          "basis": "Original full-text methods and results inspected; dedicated appraisal pending."
+        }
+      ],
+      "sourceBindings": [
+        {
+          "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/second-look-navigation/editorial/mechanism-expansion/tadalafil-pastis-2022.html",
+          "expectedSha256": "18f365dde3e0c598c5825e6fb5878d5e5c0e6a207d22d1f8300c968c388465c7",
+          "actualSha256": "18f365dde3e0c598c5825e6fb5878d5e5c0e6a207d22d1f8300c968c388465c7",
+          "hashMatch": true,
+          "bytes": 229518,
+          "matchBasis": "existing mechanism fulltext manifest",
+          "kind": "main"
+        }
+      ],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/conditions/aging",
+      "entityId": "GOAL-AGING",
+      "sourceId": "AGING-NIH",
+      "originalRole": "context_only",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Healthy Aging"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/conditions/aging",
+      "entityId": "GOAL-AGING",
+      "sourceId": "AGING-RAPA-MICE-2009",
+      "originalRole": "nonclinical_report",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Direct survival experiment in mice; no human lifespan inference.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Abstract and results"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/conditions/aging",
+      "entityId": "GOAL-AGING",
+      "sourceId": "AGING-PEARL-2025",
+      "originalRole": "clinical_report",
+      "localAccess": "hash_verified_original",
+      "disposition": "source_appraised_exact_outcome_projected",
+      "reason": "Exact locally inspected report supports only these specific rows; independent/human review and release remain pending.",
+      "synthesisIds": [
+        "SYN-FILL2-D06-AGING-VAT",
+        "SYN-FILL2-D06-AGING-LEAN"
+      ],
+      "originalLocator": [
+        {
+          "section": "Abstract; Results; Discussion; Supplementary Figure 1"
+        }
+      ],
+      "sourceBindings": [
+        {
+          "path": "/Users/kmfp/Documents/ChatGPT/One Match Rule/work/ingest/SL-F01-F02-20261011/receipt/input/return/F02/PRIMARY/A-F02-R2087__original_report__influence-of-rapamycin-on-safety-and-healthspan-me.pdf",
+          "expectedSha256": "780e474be7bcc4fb96e39214fb8d6fcf0b1163999f5e43ad19eb69af48ca1571",
+          "actualSha256": "780e474be7bcc4fb96e39214fb8d6fcf0b1163999f5e43ad19eb69af48ca1571",
+          "hashMatch": true,
+          "bytes": 2197434,
+          "acquisitionSourceId": "A-F02-R2087-F01",
+          "role": "original_report",
+          "matchBasis": [
+            "DOI exact existing metadata",
+            "PMID exact existing metadata",
+            "normalized full title exact"
+          ],
+          "kind": "main"
+        },
+        {
+          "path": "/Users/kmfp/Documents/ChatGPT/One Match Rule/work/ingest/SL-F01-F02-20261011/receipt/input/return/F02/PRIMARY/A-F02-R2087__supplement-S01__influence-of-rapamycin-on-safety-and-healthspan-me.pdf",
+          "expectedSha256": "b3c83a2af8ccfab44c9471a46dae3aed121a602f161e5c087274d2572b5b7cf3",
+          "actualSha256": "b3c83a2af8ccfab44c9471a46dae3aed121a602f161e5c087274d2572b5b7cf3",
+          "hashMatch": true,
+          "bytes": 232563,
+          "acquisitionSourceId": "A-F02-R2087-S01",
+          "role": "supplement",
+          "matchBasis": [
+            "DOI exact existing metadata",
+            "PMID exact existing metadata",
+            "normalized full title exact"
+          ],
+          "kind": "companion"
+        },
+        {
+          "path": "/Users/kmfp/Documents/ChatGPT/One Match Rule/work/ingest/SL-F01-F02-20261011/receipt/input/return/F02/PRIMARY/A-F02-R2087__supplement-S02__influence-of-rapamycin-on-safety-and-healthspan-me.pdf",
+          "expectedSha256": "6bc670a41fd765b51b2818cbdae12db192e85f127843e6a804cafe6bfb5df230",
+          "actualSha256": "6bc670a41fd765b51b2818cbdae12db192e85f127843e6a804cafe6bfb5df230",
+          "hashMatch": true,
+          "bytes": 973542,
+          "acquisitionSourceId": "A-F02-R2087-S02",
+          "role": "supplement",
+          "matchBasis": [
+            "DOI exact existing metadata",
+            "PMID exact existing metadata",
+            "normalized full title exact"
+          ],
+          "kind": "companion"
+        },
+        {
+          "path": "/Users/kmfp/Documents/ChatGPT/One Match Rule/work/ingest/SL-F01-F02-20261011/receipt/input/return/F02/PRIMARY/A-F02-R2087__supplement-S03__influence-of-rapamycin-on-safety-and-healthspan-me.pdf",
+          "expectedSha256": "050c49567a7f4f08a70d68f60dd422df88c9cb2fda9f04a57d636218c7cdd1b5",
+          "actualSha256": "050c49567a7f4f08a70d68f60dd422df88c9cb2fda9f04a57d636218c7cdd1b5",
+          "hashMatch": true,
+          "bytes": 223677,
+          "acquisitionSourceId": "A-F02-R2087-S03",
+          "role": "supplement",
+          "matchBasis": [
+            "DOI exact existing metadata",
+            "PMID exact existing metadata",
+            "normalized full title exact"
+          ],
+          "kind": "companion"
+        },
+        {
+          "path": "/Users/kmfp/Documents/ChatGPT/One Match Rule/work/ingest/SL-F01-F02-20261011/receipt/input/return/F02/PRIMARY/A-F02-R2087__supplement-S04__influence-of-rapamycin-on-safety-and-healthspan-me.docx",
+          "expectedSha256": "5bdb15b691d4a6ad281c89f74921a6653c5f27427f00e28cdb22bee815fd771d",
+          "actualSha256": "5bdb15b691d4a6ad281c89f74921a6653c5f27427f00e28cdb22bee815fd771d",
+          "hashMatch": true,
+          "bytes": 782299,
+          "acquisitionSourceId": "A-F02-R2087-S04",
+          "role": "supplement",
+          "matchBasis": [
+            "DOI exact existing metadata",
+            "PMID exact existing metadata",
+            "normalized full title exact"
+          ],
+          "kind": "companion"
+        }
+      ],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/conditions/aging",
+      "entityId": "GOAL-AGING",
+      "sourceId": "MF-METPREVENT-2025",
+      "originalRole": "other_exact_scope",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Existing assessed row is D01/C30 sarcopenia; not a general aging/lifespan row. Retain null walking-speed finding and tolerability limits.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Primary report abstract: Methods, Findings and Interpretation, mirrored in Newcastle University repository"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/conditions/aging",
+      "entityId": "GOAL-AGING",
+      "sourceId": "MF-MASTERS-2019",
+      "originalRole": "other_exact_scope",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Existing D01/C30 lean-mass row cannot become a lifespan outcome. Attenuated hypertrophy and nonsignificant strength differences remain distinct.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Abstract; Introduction; muscle signaling results"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/conditions/aging",
+      "entityId": "GOAL-AGING",
+      "sourceId": "AGING-SIROLIMUS-LABEL",
+      "originalRole": "context_only",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Sections 1, 5, 7 and 12.1"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/conditions/aging",
+      "entityId": "GOAL-AGING",
+      "sourceId": "MF-LABEL-2025",
+      "originalRole": "context_only",
+      "localAccess": "exact_artifact_not_accessible",
+      "disposition": "missing_exact_source_artifact",
+      "reason": "No identity- and hash-bound original/abstract file located in the existing corpus. Metadata/title/preview alone is insufficient for a new outcome appraisal. Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "1 Indications and Usage; 12.1 Mechanism of Action"
+        },
+        {
+          "section": "2.3; 4; 5.1"
+        },
+        {
+          "section": "5.2; 5.3; 6.1; 7"
+        }
+      ],
+      "sourceBindings": [],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    },
+    {
+      "route": "/conditions/aging",
+      "entityId": "GOAL-AGING",
+      "sourceId": "P-D06-PERIODONTAL-2020",
+      "originalRole": "nonclinical_report",
+      "localAccess": "hash_verified_original",
+      "disposition": "available_but_exact_outcome_not_this_profile",
+      "reason": "The locally appraised source row has a different exact drug/condition/endpoint scope; it is not borrowed into this profile. See candidate row identities for the permitted mappings.",
+      "synthesisIds": [],
+      "originalLocator": [
+        {
+          "section": "Abstract; Results",
+          "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7220376/",
+          "basis": "full_text"
+        },
+        {
+          "section": "Results and Figures 2–4; Materials and Methods: Animal studies; Encapsulated rapamycin feeding",
+          "basis": "Original full-text methods/results inspected on 2026-10-11"
+        }
+      ],
+      "sourceBindings": [
+        {
+          "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/second-look-navigation/editorial/mechanism-expansion/sirolimus-periodontal-2020.xml",
+          "expectedSha256": "13c063ad5e66859690e6cda33496fbaa7308b773af7ef59a27e6702f748f23fe",
+          "actualSha256": "13c063ad5e66859690e6cda33496fbaa7308b773af7ef59a27e6702f748f23fe",
+          "hashMatch": true,
+          "bytes": 147905,
+          "matchBasis": "existing mechanism fulltext manifest",
+          "kind": "main"
+        },
+        {
+          "path": "/Users/kmfp/Documents/Codex/2026-10-08/one-match-drug-repurposing/work/ingest/FETCH30/source-files/36/36de00999b686a94d42ab8e6478c7cee8ee3834234a9a6d345f190839253300c.pdf",
+          "expectedSha256": "36de00999b686a94d42ab8e6478c7cee8ee3834234a9a6d345f190839253300c",
+          "actualSha256": "36de00999b686a94d42ab8e6478c7cee8ee3834234a9a6d345f190839253300c",
+          "hashMatch": true,
+          "bytes": 2171687,
+          "acquisitionSourceId": "B-R0220-F01",
+          "role": "original_report",
+          "matchBasis": [
+            "PMCID exact existing metadata",
+            "normalized full title exact"
+          ],
+          "kind": "main"
+        },
+        {
+          "path": "/Users/kmfp/Documents/ChatGPT/One Match Rule/work/ingest/SL-F01-F02-20261011/receipt/input/return/F02/PRIMARY/A-F02-R2055__supplement-S01__rapamycin-rejuvenates-oral-health-in-aging-mice.pdf",
+          "expectedSha256": "9e6b3fabb215cd360a3b8f52fc0a6d2092279589aa310b4b7c184892c8e712c1",
+          "actualSha256": "9e6b3fabb215cd360a3b8f52fc0a6d2092279589aa310b4b7c184892c8e712c1",
+          "hashMatch": true,
+          "bytes": 328958,
+          "acquisitionSourceId": "A-F02-R2055-S01",
+          "role": "supplement",
+          "matchBasis": [
+            "PMCID exact existing metadata",
+            "normalized full title exact"
+          ],
+          "kind": "companion"
+        }
+      ],
+      "humanReview": "pending/not recorded; unchanged",
+      "release": "not authorized"
+    }
+  ]
+}
