@@ -1,0 +1,19 @@
+{
+  "author": "corpus_audit",
+  "finding": "editorial/mechanism-expansion/mechanism-extraction-schema.json is a descriptive field contract, not an enforcing JSON Schema. check_schema accepts its unknown keys but this does not establish mechanism-payload validation. Prior GP wording about executable mechanism schema validity was too broad.",
+  "planId": "RRX-INGEST-001-1.2",
+  "planSha256": "590613abf20c2dc5930a6a47c01f60b5a4c7fcc5ee8bc48693c013ff045971f0",
+  "priorGpReviewPreserved": true,
+  "publication": false,
+  "recordedAt": "2026-10-12T11:44:23.922341+00:00",
+  "requirements": [
+    "Keep mechanism_payload null for current source candidates.",
+    "Keep mechanism_fields not_extracted with an explicit pending executable-contract reason.",
+    "A new executable mechanism candidate contract must be adopted and pinned with prospective readiness before structured mechanism payload work.",
+    "Independent source/semantic verification is still required; no claims of mechanism completion."
+  ],
+  "schemaVersion": "remaprx-gp-planning-addendum-v1",
+  "scientificApproval": false,
+  "scopeEffect": "Source identity, read logs, Q01-Q15, results and claims remain covered by the executable scientific candidate schema and source validator. This addendum removes any implication that the legacy descriptive contract machine-validates mechanism payloads.",
+  "status": "BOUNDED_SCOPE_CLARIFICATION"
+}

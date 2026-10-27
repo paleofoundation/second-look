@@ -1,0 +1,1438 @@
+{
+  "schemaVersion": "remaprx-synthesis-identity/1.0",
+  "entries": [
+    {
+      "scopeSha256": "0da31a3eb57e386c309d9d9f971242cd3beb63329885869fcf218f5903bfc9d8",
+      "scope": {
+        "drugId": "D01",
+        "conditionId": "C01",
+        "population": "Acute COVID outpatients; trial populations differ",
+        "comparison": "Metformin versus matched placebo",
+        "endpoint": "Participant-reported clinician diagnosis of Long COVID",
+        "formulation": null,
+        "route": "Oral",
+        "timepoint": "COVID-OUT day 300; ACTIV-6 day 180",
+        "sourceIds": [
+          "P-ACTIV6-2026",
+          "P-COVIDOUT-2023"
+        ]
+      },
+      "synthesisId": "SYN-D01-C01-DIAGNOSIS",
+      "outcomeId": "OUT-LONGCOVID-CLINICIAN-DIAGNOSIS",
+      "resultIds": [
+        "R-CO-HR",
+        "R-A6-CD"
+      ],
+      "answerRoutes": [
+        "/answers/metformin-prevention"
+      ],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "90071c1a5fa2dd46511f1cd0ca3fa1e2d39457a9ac39bfd30cf1e58161d95daa",
+      "scope": {
+        "drugId": "D01",
+        "conditionId": "C01",
+        "population": "Adults with PASC index at least 12",
+        "comparison": "Metformin versus double placebo",
+        "endpoint": "Recovery: PASC index below 12",
+        "formulation": null,
+        "route": "Oral",
+        "timepoint": "Week 8",
+        "sourceIds": [
+          "P-KOREA-2026"
+        ]
+      },
+      "synthesisId": "SYN-D01-C01-RECOVERY",
+      "outcomeId": "OUT-PASC-INDEX-RECOVERY",
+      "resultIds": [
+        "R-KR-RECOVERY"
+      ],
+      "answerRoutes": [
+        "/answers/metformin-treatment"
+      ],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "afa2c7f437bfe85e4ae19eec8cce0476bf8b2df78d5115ec91ee298b22a66267",
+      "scope": {
+        "drugId": "D01",
+        "conditionId": "C01",
+        "population": "Outpatients aged at least 30; prior infection or vaccination allowed",
+        "comparison": "Metformin versus matched placebo",
+        "endpoint": "Symptoms attributed to COVID-19 or death",
+        "formulation": null,
+        "route": "Oral",
+        "timepoint": "Day 180",
+        "sourceIds": [
+          "P-ACTIV6-2026"
+        ]
+      },
+      "synthesisId": "SYN-D01-C01-SYMPTOMS",
+      "outcomeId": "OUT-COVID-ATTRIBUTED-SYMPTOMS-OR-DEATH",
+      "resultIds": [
+        "R-A6-RD"
+      ],
+      "answerRoutes": [
+        "/answers/metformin-prevention"
+      ],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "b1e71756c16b18bbc77c2ee37bb57bf44f7923bfe81df4232534229c9f54deb5",
+      "scope": {
+        "drugId": "D01",
+        "conditionId": "C02",
+        "population": "Nonhospitalized adults aged 30–85 with overweight or obesity, infection confirmed within 3 days and symptoms beginning within 7 days; 1, 323 in the modified intention-to-treat population",
+        "comparison": "Immediate-release oral metformin titrated over 6 days to 1, 500 mg/day for 14 days versus concurrently randomized control, adjusting for vaccination and the other randomized trial drugs",
+        "endpoint": "Primary composite of hypoxemia (home oxygen saturation ≤93%), emergency-department visit, hospitalization or death",
+        "formulation": "immediate-release",
+        "route": "oral",
+        "timepoint": "Through 14 days after randomization",
+        "sourceIds": [
+          "COND-C02-COVIDOUT-2022"
+        ]
+      },
+      "synthesisId": "SYN-D01-C02-COND-C02-COVIDOUT-2022-B1E71756C16B18BBC77C",
+      "outcomeId": "OUT-D01-C02-COND-C02-COVIDOUT-2022-B1E71756C16B18BBC77C",
+      "resultIds": [
+        "SYN-D01-C02-COND-C02-COVIDOUT-2022-B1E71756C16B18BBC77C-R1"
+      ],
+      "answerRoutes": [],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "73355a05e6ee9764ae1a103647b1205a44a22f01cb5d392e23ebc43efbfb55c0",
+      "scope": {
+        "drugId": "D01",
+        "conditionId": "C13",
+        "population": "1, 874 participants without diabetes with metastatic hormone-sensitive prostate cancer",
+        "comparison": "Oral metformin 850 mg twice daily plus standard care versus standard care",
+        "endpoint": "Overall survival (death from any cause)",
+        "formulation": "Release formulation not established in the bounded material inspected",
+        "route": "oral",
+        "timepoint": "Time-to-event analysis; median follow-up 60 months (IQR 49–72)",
+        "sourceIds": [
+          "MF-STAMPEDE-2025"
+        ]
+      },
+      "synthesisId": "SYN-D01-C13-MF-STAMPEDE-2025-73355A05E6EE9764AE1A",
+      "outcomeId": "OUT-D01-C13-MF-STAMPEDE-2025-73355A05E6EE9764AE1A",
+      "resultIds": [
+        "SYN-D01-C13-MF-STAMPEDE-2025-73355A05E6EE9764AE1A-R1"
+      ],
+      "answerRoutes": [],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "b05c4c42e69ae6236e3e88e65038e539e4031a3265ffefc03f6c2fc0a06cebbb",
+      "scope": {
+        "drugId": "D01",
+        "conditionId": "C14",
+        "population": "54 participants without diabetes with unresected locally advanced stage III NSCLC",
+        "comparison": "Chemoradiotherapy plus oral metformin 2, 000 mg/day, continued up to 12 months, versus chemoradiotherapy alone",
+        "endpoint": "Overall survival (secondary endpoint)",
+        "formulation": "Release formulation not established in the bounded material inspected",
+        "route": "oral",
+        "timepoint": "One-year survival estimate; time-to-event HR over trial follow-up",
+        "sourceIds": [
+          "MF-ALMERA-2021"
+        ]
+      },
+      "synthesisId": "SYN-D01-C14-MF-ALMERA-2021-B05C4C42E69AE6236E3E",
+      "outcomeId": "OUT-D01-C14-MF-ALMERA-2021-B05C4C42E69AE6236E3E",
+      "resultIds": [
+        "SYN-D01-C14-MF-ALMERA-2021-B05C4C42E69AE6236E3E-R1"
+      ],
+      "answerRoutes": [],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "868676d72a2e752656a0406f3a87929d24ff5f51d8983adc02e4b5c622567d21",
+      "scope": {
+        "drugId": "D01",
+        "conditionId": "C14",
+        "population": "167 eligible participants without diabetes with unresectable stage III NSCLC, Zubrod performance status 0–1",
+        "comparison": "Oral metformin escalated to 2, 000 mg/day during concurrent chemoradiotherapy and consolidation chemotherapy versus the same cancer treatment alone",
+        "endpoint": "Progression-free survival: time from randomization to RECIST 1.1 progression or death",
+        "formulation": "Release formulation not established in the bounded material inspected",
+        "route": "oral",
+        "timepoint": "One-year survival estimate; HR across follow-up, median 27.7 months among survivors",
+        "sourceIds": [
+          "MF-NRG-LU001-2021"
+        ]
+      },
+      "synthesisId": "SYN-D01-C14-MF-NRG-LU001-2021-868676D72A2E752656A0",
+      "outcomeId": "OUT-D01-C14-MF-NRG-LU001-2021-868676D72A2E752656A0",
+      "resultIds": [
+        "SYN-D01-C14-MF-NRG-LU001-2021-868676D72A2E752656A0-R1"
+      ],
+      "answerRoutes": [],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "884d2999d645271f7824600f571044050b474001eb9861f929cb9f8e2e64aecd",
+      "scope": {
+        "drugId": "D01",
+        "conditionId": "C15",
+        "population": "High-risk operable nonmetastatic breast cancer without diabetes",
+        "comparison": "Metformin versus placebo added to standard treatment",
+        "endpoint": "Invasive disease-free survival",
+        "formulation": null,
+        "route": null,
+        "timepoint": "Planned 5-year treatment",
+        "sourceIds": [
+          "COND-C15-MA32-2022"
+        ]
+      },
+      "synthesisId": "SYN-D01-C15-COND-C15-MA32-2022",
+      "outcomeId": "OUT-D01-C15-COND-C15-MA32-2022",
+      "resultIds": [
+        "SYN-D01-C15-COND-C15-MA32-2022-R1"
+      ],
+      "answerRoutes": [],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "83730b0d0b926f1511a13ec7cc4aee05288b057327beb3c6fbc0092c576d10a3",
+      "scope": {
+        "drugId": "D01",
+        "conditionId": "C16",
+        "population": "151 randomized patients without diabetes after colorectal polyp removal; 133 underwent follow-up colonoscopy",
+        "comparison": "Oral metformin 250 mg daily versus identical placebo",
+        "endpoint": "Prevalence of recurrent colorectal adenoma at follow-up colonoscopy",
+        "formulation": "Release formulation not established in the bounded material inspected",
+        "route": "oral",
+        "timepoint": "One year after polypectomy",
+        "sourceIds": [
+          "MF-ADENOMA-2016"
+        ]
+      },
+      "synthesisId": "SYN-D01-C16-MF-ADENOMA-2016-83730B0D0B926F1511A1",
+      "outcomeId": "OUT-D01-C16-MF-ADENOMA-2016-83730B0D0B926F1511A1",
+      "resultIds": [
+        "SYN-D01-C16-MF-ADENOMA-2016-83730B0D0B926F1511A1-R1"
+      ],
+      "answerRoutes": [],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "41d23a42babe8eaf8db18a29d23743aa5e83d8e599c1bfaf68a31b25bc3ee31d",
+      "scope": {
+        "drugId": "D01",
+        "conditionId": "C17",
+        "population": "Advanced pancreatic cancer",
+        "comparison": "Gemcitabine/erlotinib plus metformin versus same regimen plus placebo",
+        "endpoint": "Overall survival",
+        "formulation": null,
+        "route": null,
+        "timepoint": "Phase II follow-up",
+        "sourceIds": [
+          "COND-C17-MET-2015"
+        ]
+      },
+      "synthesisId": "SYN-D01-C17-COND-C17-MET-2015",
+      "outcomeId": "OUT-D01-C17-COND-C17-MET-2015",
+      "resultIds": [
+        "SYN-D01-C17-COND-C17-MET-2015-R1"
+      ],
+      "answerRoutes": [],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "197bf3a375da1516de489325ffe44f037866f41064834aa1f4f2b694ae8cd116",
+      "scope": {
+        "drugId": "D01",
+        "conditionId": "C24",
+        "population": "Adults aged at least 50 receiving levodopa/carbidopa; diabetes excluded",
+        "comparison": "Metformin plus levodopa/carbidopa versus placebo plus levodopa/carbidopa",
+        "endpoint": "UPDRS total (primary clinical endpoint)",
+        "formulation": null,
+        "route": "Oral",
+        "timepoint": "Three months",
+        "sourceIds": [
+          "CP016"
+        ]
+      },
+      "synthesisId": "SYN-D01-C24-UPDRS",
+      "outcomeId": "OUT-UPDRS-TOTAL",
+      "resultIds": [],
+      "answerRoutes": [],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "0d55e0541797b89b961442996355bfe796970cbb69155facd33b5ec7cccb4f46",
+      "scope": {
+        "drugId": "D01",
+        "conditionId": "C25",
+        "population": "Clinically stable schizophrenia of at most five years duration; young adults at the Second Xiangya Hospital, China; mean age 22.8 years.",
+        "comparison": "Antipsychotics alone; no placebo",
+        "endpoint": "MATRICS Consensus Cognitive Battery composite score",
+        "formulation": null,
+        "route": "Oral",
+        "timepoint": "24 weeks",
+        "sourceIds": [
+          "MF-SCHIZOPHRENIA-PARENT-2023"
+        ]
+      },
+      "synthesisId": "SYN-D01-C25-COGNITION",
+      "outcomeId": "OUT-MCCB-COMPOSITE",
+      "resultIds": [
+        "SYN-D01-C25-COGNITION-R1"
+      ],
+      "answerRoutes": [],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "9bfbf22316f82622e901960402c80877f1e952e5f794323592427e312df64ecc",
+      "scope": {
+        "drugId": "D01",
+        "conditionId": "C25",
+        "population": "Clinically stable schizophrenia; disease duration at most five years",
+        "comparison": "Metformin plus antipsychotics versus antipsychotics alone",
+        "endpoint": "Metabolites and brain connectivity associated with cognitive change",
+        "formulation": null,
+        "route": "Oral",
+        "timepoint": "Up to 24 weeks",
+        "sourceIds": [
+          "CP017"
+        ]
+      },
+      "synthesisId": "SYN-D01-C25-EXPLORATORY",
+      "outcomeId": "OUT-METABOLITES-BRAIN-CONNECTIVITY",
+      "resultIds": [],
+      "answerRoutes": [],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "98baa444fef05d2305edc6fd234469ba72988354ba1da21c1cb57f998aff1da9",
+      "scope": {
+        "drugId": "D01",
+        "conditionId": "C30",
+        "population": "Adults 65 years or older with probable sarcopenia, slow 4-m walking speed and physical prefrailty or frailty; Gateshead and Newcastle, England; mean age 80.4 years.",
+        "comparison": "Matching placebo",
+        "endpoint": "Adjusted between-group difference in 4-m walking speed",
+        "formulation": null,
+        "route": "Oral",
+        "timepoint": "4 months",
+        "sourceIds": [
+          "MF-METPREVENT-2025"
+        ]
+      },
+      "synthesisId": "SYN-D01-C30-METPREVENT",
+      "outcomeId": "OUT-FOUR-METRE-WALKING-SPEED",
+      "resultIds": [
+        "SYN-D01-C30-METPREVENT-R1"
+      ],
+      "answerRoutes": [],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "ca65ecb67c3bdb523f7d381bbcbb2a1da1e56dd26096738f789719d8d4f602c3",
+      "scope": {
+        "drugId": "D01",
+        "conditionId": "C30",
+        "population": "Healthy, predominantly high-functioning older adults, eligibility age 65 years or older; 109 randomized and 94 completers analyzed",
+        "comparison": "Oral metformin titrated to 1, 700 mg/day versus placebo, both with supervised progressive resistance training",
+        "endpoint": "Percentage change in total lean body mass measured by DXA",
+        "formulation": "Release formulation not established in the bounded material inspected",
+        "route": "oral",
+        "timepoint": "Baseline to study week 16: 14 weeks of supervised progressive resistance training after a 2-week drug wash-in",
+        "sourceIds": [
+          "MF-MASTERS-2019"
+        ]
+      },
+      "synthesisId": "SYN-D01-C30-MF-MASTERS-2019-CA65ECB67C3BDB523F7D",
+      "outcomeId": "OUT-D01-C30-MF-MASTERS-2019-CA65ECB67C3BDB523F7D",
+      "resultIds": [
+        "SYN-D01-C30-MF-MASTERS-2019-CA65ECB67C3BDB523F7D-R1"
+      ],
+      "answerRoutes": [],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "0dc63b39b4cd155c5fc73b9d02140cb273390f19cf95833aee3fa1b4d8bd5e22",
+      "scope": {
+        "drugId": "D03",
+        "conditionId": "C01",
+        "population": "Adults with at least two moderate or severe core symptoms for at least three months",
+        "comparison": "Nirmatrelvir plus ritonavir versus placebo plus ritonavir",
+        "endpoint": "PROMIS fatigue score change (secondary outcome)",
+        "formulation": null,
+        "route": "Oral",
+        "timepoint": "Baseline to week 10",
+        "sourceIds": [
+          "P-STOPPASC-2024"
+        ]
+      },
+      "synthesisId": "SYN-D03-C01-FATIGUE",
+      "outcomeId": "OUT-PROMIS-FATIGUE-CHANGE",
+      "resultIds": [
+        "R-SP-FATIGUE"
+      ],
+      "answerRoutes": [
+        "/answers/nirmatrelvir-treatment"
+      ],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "6ed8475cfe3bff1fcd0d73d8ddf6a34a21c6419df3fa48ef7d9772a85d597746",
+      "scope": {
+        "drugId": "D03",
+        "conditionId": "C01",
+        "population": "Adults with Long COVID for at least 12 weeks; cognitive, autonomic or exercise phenotypes",
+        "comparison": "15- or 25-day nirmatrelvir–ritonavir regimens versus placebo–ritonavir",
+        "endpoint": "Phenotype-specific primary improvement outcomes",
+        "formulation": null,
+        "route": "Oral",
+        "timepoint": "Day 90",
+        "sourceIds": [
+          "P-RECOVER-2026"
+        ]
+      },
+      "synthesisId": "SYN-D03-C01-PHENOTYPES",
+      "outcomeId": "OUT-LONGCOVID-PHENOTYPE-IMPROVEMENT",
+      "resultIds": [
+        "R-RV-NULL"
+      ],
+      "answerRoutes": [
+        "/answers/nirmatrelvir-treatment"
+      ],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "5ab4c281c11286aeaadc24cd6d6084c34efa6cfdfe552fba5b84be1b7287e7ab",
+      "scope": {
+        "drugId": "D03",
+        "conditionId": "C01",
+        "population": "Adults with at least two moderate or severe core symptoms for at least three months",
+        "comparison": "Nirmatrelvir plus ritonavir versus placebo plus ritonavir",
+        "endpoint": "Pooled severity of six core PASC symptoms",
+        "formulation": null,
+        "route": "Oral",
+        "timepoint": "Week 10",
+        "sourceIds": [
+          "P-STOPPASC-2024"
+        ]
+      },
+      "synthesisId": "SYN-D03-C01-SEVERITY",
+      "outcomeId": "OUT-PASC-CORE-SYMPTOM-SEVERITY",
+      "resultIds": [
+        "R-SP-PRIMARY"
+      ],
+      "answerRoutes": [
+        "/answers/nirmatrelvir-treatment"
+      ],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "fc0261ecc7cf44d59733087226ab979ed50850b27aecdc96d8c0cff78d75fba7",
+      "scope": {
+        "drugId": "D04",
+        "conditionId": "C05",
+        "population": "Women with fibromyalgia",
+        "comparison": "Naltrexone 6 mg daily versus placebo",
+        "endpoint": "Average pain on 11-point scale",
+        "formulation": null,
+        "route": null,
+        "timepoint": "12 weeks",
+        "sourceIds": [
+          "P-D04-FIBRO-2024"
+        ]
+      },
+      "synthesisId": "SYN-D04-C05-P-D04-FIBRO-2024",
+      "outcomeId": "OUT-D04-C05-P-D04-FIBRO-2024",
+      "resultIds": [
+        "SYN-D04-C05-P-D04-FIBRO-2024-R1"
+      ],
+      "answerRoutes": [],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "e9f44c7ee829f91e1d2874c91333d9cfda6ef3ada6786fab64924a7b6e7d327a",
+      "scope": {
+        "drugId": "D04",
+        "conditionId": "C07",
+        "population": "Heterosexual cisgender men with compulsive sexual behavior disorder",
+        "comparison": "Naltrexone versus paroxetine versus placebo",
+        "endpoint": "Self-report and clinician-interview symptom outcomes",
+        "formulation": null,
+        "route": null,
+        "timepoint": "20 weeks",
+        "sourceIds": [
+          "P-D04-CSBD-2022"
+        ]
+      },
+      "synthesisId": "SYN-D04-C07-P-D04-CSBD-2022",
+      "outcomeId": "OUT-D04-C07-P-D04-CSBD-2022",
+      "resultIds": [
+        "SYN-D04-C07-P-D04-CSBD-2022-R1"
+      ],
+      "answerRoutes": [],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "484b9cb0a7712ef48846e6c645a20440e4251213c76fe0286a91a9bb8a240067",
+      "scope": {
+        "drugId": "D05",
+        "conditionId": "C09",
+        "population": "Adults with treatment-resistant unipolar major depression",
+        "comparison": "Pramipexole augmentation versus placebo augmentation",
+        "endpoint": "QIDS-SR depressive-symptom change",
+        "formulation": null,
+        "route": null,
+        "timepoint": "12 weeks",
+        "sourceIds": [
+          "P-D05-PAXD-2025"
+        ]
+      },
+      "synthesisId": "SYN-D05-C09-P-D05-PAXD-2025",
+      "outcomeId": "OUT-D05-C09-P-D05-PAXD-2025",
+      "resultIds": [
+        "SYN-D05-C09-P-D05-PAXD-2025-R1"
+      ],
+      "answerRoutes": [],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "a6d8e596d6a11bd1f24ed3143cb610f83d9be205f0b3577efd598cf55edddb3e",
+      "scope": {
+        "drugId": "D07",
+        "conditionId": "C03",
+        "population": "Recurrent or persistent ovarian clear cell carcinoma",
+        "comparison": "Itraconazole with chemotherapy; no concurrent control",
+        "endpoint": "Tumor response",
+        "formulation": null,
+        "route": null,
+        "timepoint": "During treatment",
+        "sourceIds": [
+          "COND-C03-ITRA-2014"
+        ]
+      },
+      "synthesisId": "SYN-D07-C03-COND-C03-ITRA-2014",
+      "outcomeId": "OUT-D07-C03-COND-C03-ITRA-2014",
+      "resultIds": [
+        "SYN-D07-C03-COND-C03-ITRA-2014-R1"
+      ],
+      "answerRoutes": [],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "108e3a61ccfd2e56366792e69b7f5f0bce05d113f384fe20fdf77f5c1498a9f7",
+      "scope": {
+        "drugId": "D07",
+        "conditionId": "C13",
+        "population": "Chemotherapy-naive metastatic castration-resistant prostate cancer",
+        "comparison": "Itraconazole 200 mg/day versus 600 mg/day; noncomparative design",
+        "endpoint": "PSA progression-free status",
+        "formulation": null,
+        "route": null,
+        "timepoint": "24 weeks",
+        "sourceIds": [
+          "P-D07-PROSTATE-2013"
+        ]
+      },
+      "synthesisId": "SYN-D07-C13-P-D07-PROSTATE-2013",
+      "outcomeId": "OUT-D07-C13-P-D07-PROSTATE-2013",
+      "resultIds": [
+        "SYN-D07-C13-P-D07-PROSTATE-2013-R1"
+      ],
+      "answerRoutes": [],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "aa6321ffabc7655fcff5cd28c1e44042581d8f15a0daa49d252cfbf13f43f1ac",
+      "scope": {
+        "drugId": "D07",
+        "conditionId": "C14",
+        "population": "Previously treated metastatic nonsquamous NSCLC",
+        "comparison": "Pemetrexed plus itraconazole versus pemetrexed alone",
+        "endpoint": "Progression-free survival",
+        "formulation": null,
+        "route": null,
+        "timepoint": "Median follow-up outcome",
+        "sourceIds": [
+          "COND-C14-ITRA-2013"
+        ]
+      },
+      "synthesisId": "SYN-D07-C14-COND-C14-ITRA-2013",
+      "outcomeId": "OUT-D07-C14-COND-C14-ITRA-2013",
+      "resultIds": [
+        "SYN-D07-C14-COND-C14-ITRA-2013-R1"
+      ],
+      "answerRoutes": [],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "6ebf7bdcf5ca03587a94d27a8f2ed4a3a371c9969a1792f2b9a5108a75476361",
+      "scope": {
+        "drugId": "D07",
+        "conditionId": "C14",
+        "population": "23 patients with previously treated metastatic nonsquamous NSCLC",
+        "comparison": "Pemetrexed plus itraconazole versus pemetrexed",
+        "endpoint": "Progression-free survival proportion",
+        "formulation": null,
+        "route": null,
+        "timepoint": "3 months",
+        "sourceIds": [
+          "P-D07-LUNG-2013"
+        ]
+      },
+      "synthesisId": "SYN-D07-C14-P-D07-LUNG-2013",
+      "outcomeId": "OUT-D07-C14-P-D07-LUNG-2013",
+      "resultIds": [
+        "SYN-D07-C14-P-D07-LUNG-2013-R1"
+      ],
+      "answerRoutes": [],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "6291f7fcea42d2bf16eee90313f61fdee31c733554bd466b706d885f499ff53e",
+      "scope": {
+        "drugId": "D07",
+        "conditionId": "C17",
+        "population": "38 patients with progressive pancreatic cancer",
+        "comparison": "Itraconazole plus multidrug chemotherapy; no concurrent control",
+        "endpoint": "Objective response",
+        "formulation": null,
+        "route": null,
+        "timepoint": "Study follow-up",
+        "sourceIds": [
+          "P-D07-PANCREAS-2015"
+        ]
+      },
+      "synthesisId": "SYN-D07-C17-P-D07-PANCREAS-2015",
+      "outcomeId": "OUT-D07-C17-P-D07-PANCREAS-2015",
+      "resultIds": [
+        "SYN-D07-C17-P-D07-PANCREAS-2015-R1"
+      ],
+      "answerRoutes": [],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "3c6dafbe37b27a62794833ac1314fa3575e63eafeacc1679f98f3cf3a6a66814",
+      "scope": {
+        "drugId": "D07",
+        "conditionId": "C19",
+        "population": "Basal cell carcinoma",
+        "comparison": "Itraconazole open-label; exploratory comparison",
+        "endpoint": "Tumor area change",
+        "formulation": null,
+        "route": null,
+        "timepoint": "Short-term treatment",
+        "sourceIds": [
+          "P-D07-BCC-2014"
+        ]
+      },
+      "synthesisId": "SYN-D07-C19-P-D07-BCC-2014",
+      "outcomeId": "OUT-D07-C19-P-D07-BCC-2014",
+      "resultIds": [
+        "SYN-D07-C19-P-D07-BCC-2014-R1"
+      ],
+      "answerRoutes": [],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "d11f9241d22feb091d90a7dd90fc2667961ac2ada11edc103172ae99368a79be",
+      "scope": {
+        "drugId": "D09",
+        "conditionId": "C04",
+        "population": "Newly diagnosed high-grade gliomas, 18 glioblastoma",
+        "comparison": "Mebendazole added to temozolomide; dose-escalation without control",
+        "endpoint": "Combination tolerability and drug exposure",
+        "formulation": null,
+        "route": null,
+        "timepoint": "Phase 1 treatment",
+        "sourceIds": [
+          "COND-C04-MEB-2021"
+        ]
+      },
+      "synthesisId": "SYN-D09-C04-COND-C04-MEB-2021",
+      "outcomeId": "OUT-D09-C04-COND-C04-MEB-2021",
+      "resultIds": [
+        "SYN-D09-C04-COND-C04-MEB-2021-R1"
+      ],
+      "answerRoutes": [],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "bdefe78972854279fb8d5833b8da0025849e6e3b5e6c0f425d4fe8a942a6be37",
+      "scope": {
+        "drugId": "D09",
+        "conditionId": "C04",
+        "population": "88 adults with recurrent glioblastoma",
+        "comparison": "Temozolomide plus mebendazole versus lomustine plus mebendazole",
+        "endpoint": "Overall survival proportion",
+        "formulation": null,
+        "route": null,
+        "timepoint": "9 months",
+        "sourceIds": [
+          "P-D09-GBM-2022"
+        ]
+      },
+      "synthesisId": "SYN-D09-C04-P-D09-GBM-2022",
+      "outcomeId": "OUT-D09-C04-P-D09-GBM-2022",
+      "resultIds": [
+        "SYN-D09-C04-P-D09-GBM-2022-R1"
+      ],
+      "answerRoutes": [],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "dc266bbc4141f72b6e5da9de443a24d9d85b535ab0116c7ac7d9045c7cd13bca",
+      "scope": {
+        "drugId": "D13",
+        "conditionId": "C04",
+        "population": "36 patients with glioblastoma",
+        "comparison": "Atorvastatin with chemoradiation; single arm",
+        "endpoint": "Progression-free survival proportion",
+        "formulation": null,
+        "route": null,
+        "timepoint": "6 months",
+        "sourceIds": [
+          "P-D13-GBM-2021"
+        ]
+      },
+      "synthesisId": "SYN-D13-C04-P-D13-GBM-2021",
+      "outcomeId": "OUT-D13-C04-P-D13-GBM-2021",
+      "resultIds": [
+        "SYN-D13-C04-P-D13-GBM-2021-R1"
+      ],
+      "answerRoutes": [],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "1f45eed5f04df1eca50c02ae4855d95d58fe77d4ebbc1d87f580e5c30694dc8d",
+      "scope": {
+        "drugId": "D13",
+        "conditionId": "C15",
+        "population": "50 patients enrolled with invasive breast cancer",
+        "comparison": "Atorvastatin before surgery; baseline comparison",
+        "endpoint": "Ki 67 relative change",
+        "formulation": null,
+        "route": null,
+        "timepoint": "2 weeks",
+        "sourceIds": [
+          "P-D13-BREAST-2013"
+        ]
+      },
+      "synthesisId": "SYN-D13-C15-P-D13-BREAST-2013",
+      "outcomeId": "OUT-D13-C15-P-D13-BREAST-2013",
+      "resultIds": [
+        "SYN-D13-C15-P-D13-BREAST-2013-R1"
+      ],
+      "answerRoutes": [],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "9e9f9b93ab3895eddaf5ac9fc1eb763201e3677ecc908588f34d406302a39b70",
+      "scope": {
+        "drugId": "D13",
+        "conditionId": "C29",
+        "population": "Active nonsegmental vitiligo in adults",
+        "comparison": "Atorvastatin plus NB-UVB versus NB-UVB alone",
+        "endpoint": "VASI score change",
+        "formulation": null,
+        "route": null,
+        "timepoint": "6 months",
+        "sourceIds": [
+          "COND-C29-ATOR-2018"
+        ]
+      },
+      "synthesisId": "SYN-D13-C29-COND-C29-ATOR-2018",
+      "outcomeId": "OUT-D13-C29-COND-C29-ATOR-2018",
+      "resultIds": [
+        "SYN-D13-C29-COND-C29-ATOR-2018-R1"
+      ],
+      "answerRoutes": [],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "1902bb467cad74080ad992e42f6599cee060b37bc03d73ddc57ed8bd4512b3c3",
+      "scope": {
+        "drugId": "D15",
+        "conditionId": "C15",
+        "population": "2639 patients with primary breast cancer",
+        "comparison": "Celecoxib versus placebo after primary breast-cancer treatment",
+        "endpoint": "Disease-free survival",
+        "formulation": null,
+        "route": null,
+        "timepoint": "Study follow-up",
+        "sourceIds": [
+          "P-D15-BREAST-2021"
+        ]
+      },
+      "synthesisId": "SYN-D15-C15-P-D15-BREAST-2021",
+      "outcomeId": "OUT-D15-C15-P-D15-BREAST-2021",
+      "resultIds": [
+        "SYN-D15-C15-P-D15-BREAST-2021-R1"
+      ],
+      "answerRoutes": [],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "fe3ab1977e37ef7f1083c8f760a1646fd72cd4b1ca60a5eb30ccfda03536b441",
+      "scope": {
+        "drugId": "D15",
+        "conditionId": "C16",
+        "population": "Resected stage III colon cancer receiving adjuvant chemotherapy",
+        "comparison": "Celecoxib versus placebo alongside adjuvant chemotherapy",
+        "endpoint": "Disease-free survival",
+        "formulation": null,
+        "route": null,
+        "timepoint": "Study follow-up",
+        "sourceIds": [
+          "P-D15-COLON-2021"
+        ]
+      },
+      "synthesisId": "SYN-D15-C16-P-D15-COLON-2021",
+      "outcomeId": "OUT-D15-C16-P-D15-COLON-2021",
+      "resultIds": [
+        "SYN-D15-C16-P-D15-COLON-2021-R1"
+      ],
+      "answerRoutes": [],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "9514cbf63cd4de0d9799ce74878a6819529d8334680d80bdfda15f21df3bde30",
+      "scope": {
+        "drugId": "D15",
+        "conditionId": "C20",
+        "population": "71 people with unresectable hepatocellular carcinoma",
+        "comparison": "TACE plus celecoxib and lanreotide versus TACE",
+        "endpoint": "Median overall survival",
+        "formulation": null,
+        "route": null,
+        "timepoint": "Study follow-up",
+        "sourceIds": [
+          "P-D15-HCC-2017"
+        ]
+      },
+      "synthesisId": "SYN-D15-C20-P-D15-HCC-2017",
+      "outcomeId": "OUT-D15-C20-P-D15-HCC-2017",
+      "resultIds": [
+        "SYN-D15-C20-P-D15-HCC-2017-R1"
+      ],
+      "answerRoutes": [],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "fe79f784d28566986a4e891b430e05a11012df6418f989d7c4ef827e4a679d86",
+      "scope": {
+        "drugId": "D16",
+        "conditionId": "C09",
+        "population": "173 randomized; 168 intention-to-treat participants with TRD",
+        "comparison": "Adjunctive minocycline versus placebo",
+        "endpoint": "MADRS score change",
+        "formulation": null,
+        "route": null,
+        "timepoint": "6 weeks",
+        "sourceIds": [
+          "P-D16-TRD-2022"
+        ]
+      },
+      "synthesisId": "SYN-D16-C09-P-D16-TRD-2022",
+      "outcomeId": "OUT-D16-C09-P-D16-TRD-2022",
+      "resultIds": [
+        "SYN-D16-C09-P-D16-TRD-2022-R1"
+      ],
+      "answerRoutes": [],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "82db156579032d38e92dc8fd749fe0b87653e28dd5840a92a9c363f036f9e16c",
+      "scope": {
+        "drugId": "D16",
+        "conditionId": "C25",
+        "population": "Schizophrenia-spectrum illness within 5 years of onset",
+        "comparison": "Minocycline versus placebo added to ongoing care",
+        "endpoint": "PANSS negative-symptom score",
+        "formulation": null,
+        "route": null,
+        "timepoint": "Across 2, 6, 9, 12 months",
+        "sourceIds": [
+          "COND-C25-BENEMIN-2018"
+        ]
+      },
+      "synthesisId": "SYN-D16-C25-COND-C25-BENEMIN-2018",
+      "outcomeId": "OUT-D16-C25-COND-C25-BENEMIN-2018",
+      "resultIds": [
+        "SYN-D16-C25-COND-C25-BENEMIN-2018-R1"
+      ],
+      "answerRoutes": [],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "0af6036bca751a7f531df018e35016b79e9dbdf246bbb69b5503a77879fb8b30",
+      "scope": {
+        "drugId": "D16",
+        "conditionId": "C26",
+        "population": "Mild Alzheimer disease; 544 eligible",
+        "comparison": "Minocycline 200 mg/day or 400 mg/day versus placebo",
+        "endpoint": "Cognitive decline on sMMSE",
+        "formulation": null,
+        "route": null,
+        "timepoint": "24 months",
+        "sourceIds": [
+          "P-D16-AD-2020"
+        ]
+      },
+      "synthesisId": "SYN-D16-C26-P-D16-AD-2020",
+      "outcomeId": "OUT-D16-C26-P-D16-AD-2020",
+      "resultIds": [
+        "SYN-D16-C26-P-D16-AD-2020-R1"
+      ],
+      "answerRoutes": [],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "afade6c185d14deb1dc834375e6f1e545710d5012329750eb83ebd9945dbd957",
+      "scope": {
+        "drugId": "D16",
+        "conditionId": "C27",
+        "population": "First clinically isolated demyelinating syndrome",
+        "comparison": "Minocycline versus placebo",
+        "endpoint": "Conversion to MS",
+        "formulation": null,
+        "route": null,
+        "timepoint": "6 months (primary); 24 months (secondary)",
+        "sourceIds": [
+          "COND-C27-MINOCIS-2017"
+        ]
+      },
+      "synthesisId": "SYN-D16-C27-COND-C27-MINOCIS-2017",
+      "outcomeId": "OUT-D16-C27-COND-C27-MINOCIS-2017",
+      "resultIds": [
+        "SYN-D16-C27-COND-C27-MINOCIS-2017-R1"
+      ],
+      "answerRoutes": [],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "3318f1d26e6b03132a3e8fad4643dfa56e5b8998a56d3576945ca6c44725cebd",
+      "scope": {
+        "drugId": "D16",
+        "conditionId": "C27",
+        "population": "142 people after a first demyelinating event",
+        "comparison": "Minocycline versus placebo after a first demyelinating event",
+        "endpoint": "Conversion to multiple sclerosis",
+        "formulation": null,
+        "route": null,
+        "timepoint": "6 months",
+        "sourceIds": [
+          "P-D16-MS-2017"
+        ]
+      },
+      "synthesisId": "SYN-D16-C27-P-D16-MS-2017",
+      "outcomeId": "OUT-D16-C27-P-D16-MS-2017",
+      "resultIds": [
+        "SYN-D16-C27-P-D16-MS-2017-R1"
+      ],
+      "answerRoutes": [],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "118b896930c054be253d520b7a11eaebef133ed4a759d5605181862775ad9b30",
+      "scope": {
+        "drugId": "D16",
+        "conditionId": "C28",
+        "population": "Adults with ALS",
+        "comparison": "Minocycline versus placebo",
+        "endpoint": "ALSFRS-R monthly decline",
+        "formulation": null,
+        "route": null,
+        "timepoint": "9-month treatment",
+        "sourceIds": [
+          "COND-C28-MINO-2007"
+        ]
+      },
+      "synthesisId": "SYN-D16-C28-COND-C28-MINO-2007",
+      "outcomeId": "OUT-D16-C28-COND-C28-MINO-2007",
+      "resultIds": [
+        "SYN-D16-C28-COND-C28-MINO-2007-R1"
+      ],
+      "answerRoutes": [],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "5176d1c10cc95c285072bdc79eac14fcd323ce632855b703094c577268f67239",
+      "scope": {
+        "drugId": "D17",
+        "conditionId": "C02",
+        "population": "Older or vulnerable community patients with acute suspected COVID-19",
+        "comparison": "Doxycycline versus usual care",
+        "endpoint": "Recovery; COVID-19 hospitalization or death",
+        "formulation": null,
+        "route": null,
+        "timepoint": "28 days",
+        "sourceIds": [
+          "P-D17-PRINCIPLE"
+        ]
+      },
+      "synthesisId": "SYN-D17-C02-P-D17-PRINCIPLE",
+      "outcomeId": "OUT-D17-C02-P-D17-PRINCIPLE",
+      "resultIds": [
+        "SYN-D17-C02-P-D17-PRINCIPLE-R1"
+      ],
+      "answerRoutes": [],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "3a489fdb357200e0d6a4d7cbbb4db5f746c2e7fb5e1bbf0797996f2f26712182",
+      "scope": {
+        "drugId": "D17",
+        "conditionId": "C10",
+        "population": "Adults with chronic periodontitis",
+        "comparison": "Scaling/root planing plus subantimicrobial doxycycline versus placebo",
+        "endpoint": "Clinical attachment level and probing depth",
+        "formulation": null,
+        "route": null,
+        "timepoint": "9 months",
+        "sourceIds": [
+          "COND-C10-DOXY-2004"
+        ]
+      },
+      "synthesisId": "SYN-D17-C10-COND-C10-DOXY-2004",
+      "outcomeId": "OUT-D17-C10-COND-C10-DOXY-2004",
+      "resultIds": [
+        "SYN-D17-C10-COND-C10-DOXY-2004-R1"
+      ],
+      "answerRoutes": [],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "e95f38fb572d0b7935db87ccbafdf38e15c550548d445f92341d632558938275",
+      "scope": {
+        "drugId": "D18",
+        "conditionId": "C04",
+        "population": "Recurrent glioblastoma",
+        "comparison": "Disulfiram and copper plus chemotherapy versus chemotherapy",
+        "endpoint": "Survival and serious toxicity",
+        "formulation": null,
+        "route": null,
+        "timepoint": "Six months",
+        "sourceIds": [
+          "P-D18-GBM"
+        ]
+      },
+      "synthesisId": "SYN-D18-C04-P-D18-GBM",
+      "outcomeId": "OUT-D18-C04-P-D18-GBM",
+      "resultIds": [
+        "SYN-D18-C04-P-D18-GBM-R1"
+      ],
+      "answerRoutes": [],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "41a4eb1d28445499ba529293e39397b6a15ce06787c56f00503f41b5337ddaa6",
+      "scope": {
+        "drugId": "D19",
+        "conditionId": "C18",
+        "population": "Advanced or metastatic melanoma; checkpoint-treatment-naive",
+        "comparison": "Propranolol with pembrolizumab; no control",
+        "endpoint": "Safety and dose-limiting toxicity",
+        "formulation": null,
+        "route": null,
+        "timepoint": "Phase I treatment",
+        "sourceIds": [
+          "COND-C18-PROP-2021"
+        ]
+      },
+      "synthesisId": "SYN-D19-C18-COND-C18-PROP-2021",
+      "outcomeId": "OUT-D19-C18-COND-C18-PROP-2021",
+      "resultIds": [
+        "SYN-D19-C18-COND-C18-PROP-2021-R1"
+      ],
+      "answerRoutes": [],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "43fbc692727ed70fcd0b8e1413104703c8cc7e8ff07ddcd020f07ae96f64fe70",
+      "scope": {
+        "drugId": "D19",
+        "conditionId": "C18",
+        "population": "Advanced melanoma",
+        "comparison": "Propranolol plus pembrolizumab; no control",
+        "endpoint": "Objective response",
+        "formulation": null,
+        "route": null,
+        "timepoint": "Six months",
+        "sourceIds": [
+          "P-D19-MELANOMA"
+        ]
+      },
+      "synthesisId": "SYN-D19-C18-P-D19-MELANOMA",
+      "outcomeId": "OUT-D19-C18-P-D19-MELANOMA",
+      "resultIds": [
+        "SYN-D19-C18-P-D19-MELANOMA-R1"
+      ],
+      "answerRoutes": [],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "a27b39ead7e1a0375314e577ea9e4f7c389baa70c235af6eaf004679f6111ff7",
+      "scope": {
+        "drugId": "D20",
+        "conditionId": "C17",
+        "population": "Advanced pancreatic cancer",
+        "comparison": "Gemcitabine plus simvastatin versus gemcitabine plus placebo",
+        "endpoint": "Time to progression",
+        "formulation": null,
+        "route": null,
+        "timepoint": "During trial follow-up",
+        "sourceIds": [
+          "P-D20-PANCREAS"
+        ]
+      },
+      "synthesisId": "SYN-D20-C17-P-D20-PANCREAS",
+      "outcomeId": "OUT-D20-C17-P-D20-PANCREAS",
+      "resultIds": [
+        "SYN-D20-C17-P-D20-PANCREAS-R1"
+      ],
+      "answerRoutes": [],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "fb9499624b3079bc3ddfe7cd4d5a4d87b3daa852322e5d693f377f9f4176969f",
+      "scope": {
+        "drugId": "D21",
+        "conditionId": "C13",
+        "population": "Castration-resistant prostate cancer",
+        "comparison": "Niclosamide plus enzalutamide; no control",
+        "endpoint": "PSA response and tolerability",
+        "formulation": null,
+        "route": null,
+        "timepoint": "Dose escalation",
+        "sourceIds": [
+          "P-D21-PROSTATE"
+        ]
+      },
+      "synthesisId": "SYN-D21-C13-P-D21-PROSTATE",
+      "outcomeId": "OUT-D21-C13-P-D21-PROSTATE",
+      "resultIds": [
+        "SYN-D21-C13-P-D21-PROSTATE-R1"
+      ],
+      "answerRoutes": [],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "9723ca63bcec0a104ae7570353b32af51ca03ab3461078775d67ba165bb70d3c",
+      "scope": {
+        "drugId": "D22",
+        "conditionId": "C02",
+        "population": "Hospitalized COVID-19",
+        "comparison": "Hydroxychloroquine versus usual care",
+        "endpoint": "All-cause mortality",
+        "formulation": null,
+        "route": null,
+        "timepoint": "28 days",
+        "sourceIds": [
+          "P-D22-RECOVERY"
+        ]
+      },
+      "synthesisId": "SYN-D22-C02-P-D22-RECOVERY",
+      "outcomeId": "OUT-D22-C02-P-D22-RECOVERY",
+      "resultIds": [
+        "SYN-D22-C02-P-D22-RECOVERY-R1"
+      ],
+      "answerRoutes": [],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "7e8915990c640e01cee7bd7bd9c3dd37ed25426b9b0ade65e2d1ecea60194032",
+      "scope": {
+        "drugId": "D22",
+        "conditionId": "C03",
+        "population": "Platinum-sensitive recurrent ovarian cancer",
+        "comparison": "Hydroxychloroquine plus chemotherapy versus chemotherapy",
+        "endpoint": "Response and progression-free survival",
+        "formulation": null,
+        "route": null,
+        "timepoint": "Response after three cycles",
+        "sourceIds": [
+          "P-D22-OVARIAN"
+        ]
+      },
+      "synthesisId": "SYN-D22-C03-P-D22-OVARIAN",
+      "outcomeId": "OUT-D22-C03-P-D22-OVARIAN",
+      "resultIds": [
+        "SYN-D22-C03-P-D22-OVARIAN-R1"
+      ],
+      "answerRoutes": [],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "c3eb0045224fc0ba6508c5afe11be68a455cb47274f143ca1b9114b3be86c914",
+      "scope": {
+        "drugId": "D23",
+        "conditionId": "C16",
+        "population": "Resected localized CRC with selected PI 3 K-pathway alterations; subgroup A PIK 3 CA hotspots",
+        "comparison": "Aspirin versus placebo",
+        "endpoint": "Cancer recurrence",
+        "formulation": null,
+        "route": null,
+        "timepoint": "3 years",
+        "sourceIds": [
+          "COND-C16-ALASCCA-2025"
+        ]
+      },
+      "synthesisId": "SYN-D23-C16-COND-C16-ALASCCA-2025",
+      "outcomeId": "OUT-D23-C16-COND-C16-ALASCCA-2025",
+      "resultIds": [
+        "SYN-D23-C16-COND-C16-ALASCCA-2025-R1"
+      ],
+      "answerRoutes": [],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "9414de6815f25df72779426af294db7e3782f75555a3210118b1bbcb048a079a",
+      "scope": {
+        "drugId": "D23",
+        "conditionId": "C20",
+        "population": "Chronic hepatitis B or C; future HCC prevention",
+        "comparison": "Aspirin use versus nonuse in observational cohort",
+        "endpoint": "HCC incidence",
+        "formulation": null,
+        "route": null,
+        "timepoint": "10 years",
+        "sourceIds": [
+          "COND-C20-ASP-2020"
+        ]
+      },
+      "synthesisId": "SYN-D23-C20-COND-C20-ASP-2020",
+      "outcomeId": "OUT-D23-C20-COND-C20-ASP-2020",
+      "resultIds": [
+        "SYN-D23-C20-COND-C20-ASP-2020-R1"
+      ],
+      "answerRoutes": [],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "8126ec18764e69e1d64bdb19874bd342133cd77d3ecf5b97912462587fc2c85b",
+      "scope": {
+        "drugId": "D24",
+        "conditionId": "C23",
+        "population": "CML with molecular residual disease on imatinib",
+        "comparison": "Pioglitazone added to imatinib; nonrandomized comparison",
+        "endpoint": "MR 4.5",
+        "formulation": null,
+        "route": null,
+        "timepoint": "12 months",
+        "sourceIds": [
+          "COND-C23-ACTIM-2017"
+        ]
+      },
+      "synthesisId": "SYN-D24-C23-COND-C23-ACTIM-2017",
+      "outcomeId": "OUT-D24-C23-COND-C23-ACTIM-2017",
+      "resultIds": [
+        "SYN-D24-C23-COND-C23-ACTIM-2017-R1"
+      ],
+      "answerRoutes": [],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "ac21e7f87dcddd045689123e1b7c0a1d7ce3b963fb84951f0bcd071dec8a0017",
+      "scope": {
+        "drugId": "D24",
+        "conditionId": "C30",
+        "population": "Older overweight or obese adults during intentional weight loss",
+        "comparison": "Pioglitazone or placebo with or without resistance training",
+        "endpoint": "Leg-press power",
+        "formulation": null,
+        "route": null,
+        "timepoint": "End of weight-loss program",
+        "sourceIds": [
+          "P-D24-MUSCLE"
+        ]
+      },
+      "synthesisId": "SYN-D24-C30-P-D24-MUSCLE",
+      "outcomeId": "OUT-D24-C30-P-D24-MUSCLE",
+      "resultIds": [
+        "SYN-D24-C30-P-D24-MUSCLE-R1"
+      ],
+      "answerRoutes": [],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "ae21204509d557d76a67670b638ca6f81cb8754193305ab84da7f64ecd260958",
+      "scope": {
+        "drugId": "D27",
+        "conditionId": "C12",
+        "population": "Locally advanced p 16-negative oropharyngeal squamous carcinoma",
+        "comparison": "Valproate with cisplatin chemoradiation; no control",
+        "endpoint": "Response and toxicity",
+        "formulation": null,
+        "route": null,
+        "timepoint": "Eight weeks after combined treatment",
+        "sourceIds": [
+          "P-D27-HNSCC"
+        ]
+      },
+      "synthesisId": "SYN-D27-C12-P-D27-HNSCC",
+      "outcomeId": "OUT-D27-C12-P-D27-HNSCC",
+      "resultIds": [
+        "SYN-D27-C12-P-D27-HNSCC-R1"
+      ],
+      "answerRoutes": [],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "3dafdcbad7a1c9677f7b90f29579b2e5991e804e40b5c81c2bc4ba75e984a28a",
+      "scope": {
+        "drugId": "D27",
+        "conditionId": "C22",
+        "population": "Older AML patients ineligible for intensive induction",
+        "comparison": "Decitabine with versus without valproate in factorial trial",
+        "endpoint": "Remission and survival",
+        "formulation": null,
+        "route": null,
+        "timepoint": "Trial follow-up",
+        "sourceIds": [
+          "COND-C22-VPA-2019"
+        ]
+      },
+      "synthesisId": "SYN-D27-C22-COND-C22-VPA-2019",
+      "outcomeId": "OUT-D27-C22-COND-C22-VPA-2019",
+      "resultIds": [
+        "SYN-D27-C22-COND-C22-VPA-2019-R1"
+      ],
+      "answerRoutes": [],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "1daf765d15db37709caf21a698558c4532456621b7c37b008ba7ff7912c481ec",
+      "scope": {
+        "drugId": "D28",
+        "conditionId": "C11",
+        "population": "GSE100833 anti-TNF refractory Crohn's disease inflamed and non-inflamed colonic transcriptomes; CMap and STRING analyses.",
+        "comparison": "Transcriptomic cluster queried against Connectivity Map drug profiles; no treated-patient comparison",
+        "endpoint": "Connectivity Map (CMap) enrichment score for a selected gene cluster",
+        "formulation": null,
+        "route": "Not applicable: no drug administered to patients",
+        "timepoint": "Computational analysis; no patient treatment follow-up",
+        "sourceIds": [
+          "CP002-R01"
+        ]
+      },
+      "synthesisId": "SYN-D28-C11-CMAP",
+      "outcomeId": "OUT-CMAP-ENRICHMENT",
+      "resultIds": [],
+      "answerRoutes": [],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "a7afadcf14eae1f5f3ce14e348b1b983dc3acd37af24623b8b737ffd10f10832",
+      "scope": {
+        "drugId": "D29",
+        "conditionId": "C11",
+        "population": "GSE100833 anti-TNF refractory Crohn's disease inflamed and non-inflamed colonic transcriptomes; CMap and STRING analyses.",
+        "comparison": "Transcriptomic cluster queried against Connectivity Map drug profiles; no treated-patient comparison",
+        "endpoint": "Connectivity Map (CMap) enrichment score for a selected gene cluster",
+        "formulation": null,
+        "route": "Not applicable: no drug administered to patients",
+        "timepoint": "Computational analysis; no patient treatment follow-up",
+        "sourceIds": [
+          "CP002-R01"
+        ]
+      },
+      "synthesisId": "SYN-D29-C11-CMAP",
+      "outcomeId": "OUT-CMAP-ENRICHMENT",
+      "resultIds": [],
+      "answerRoutes": [],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "1dcaf5a984b12d2f1dd4ff8ef7faf35661ff1e29b315a69be6a3a23d417a4550",
+      "scope": {
+        "drugId": "D30",
+        "conditionId": "C03",
+        "population": "Biochemical recurrent ovarian, fallopian-tube or peritoneal carcinoma",
+        "comparison": "Thalidomide versus tamoxifen",
+        "endpoint": "Progression, mortality and toxicity",
+        "formulation": null,
+        "route": null,
+        "timepoint": "Trial follow-up",
+        "sourceIds": [
+          "P-D30-OVARIAN"
+        ]
+      },
+      "synthesisId": "SYN-D30-C03-P-D30-OVARIAN",
+      "outcomeId": "OUT-D30-C03-P-D30-OVARIAN",
+      "resultIds": [
+        "SYN-D30-C03-P-D30-OVARIAN-R1"
+      ],
+      "answerRoutes": [],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "c3c7b224fdd28281bbd1d097aa57edc6d6e6480401b04cea50f8b7495c142b27",
+      "scope": {
+        "drugId": "D30",
+        "conditionId": "C13",
+        "population": "Metastatic androgen-independent prostate cancer",
+        "comparison": "Docetaxel plus thalidomide versus docetaxel",
+        "endpoint": "PSA response and progression-free survival",
+        "formulation": null,
+        "route": null,
+        "timepoint": "Trial follow-up",
+        "sourceIds": [
+          "P-D30-PROSTATE"
+        ]
+      },
+      "synthesisId": "SYN-D30-C13-P-D30-PROSTATE",
+      "outcomeId": "OUT-D30-C13-P-D30-PROSTATE",
+      "resultIds": [
+        "SYN-D30-C13-P-D30-PROSTATE-R1"
+      ],
+      "answerRoutes": [],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "ad4c7ac7e8bb30b5b7737bb7702fae423726ad97a7e8aae2ccc382d4d542000a",
+      "scope": {
+        "drugId": "D30",
+        "conditionId": "C16",
+        "population": "Advanced colorectal cancer",
+        "comparison": "Irinotecan/fluorouracil/leucovorin with or without thalidomide",
+        "endpoint": "Response and time to progression",
+        "formulation": null,
+        "route": null,
+        "timepoint": "Trial follow-up",
+        "sourceIds": [
+          "P-D30-CRC"
+        ]
+      },
+      "synthesisId": "SYN-D30-C16-P-D30-CRC",
+      "outcomeId": "OUT-D30-C16-P-D30-CRC",
+      "resultIds": [
+        "SYN-D30-C16-P-D30-CRC-R1"
+      ],
+      "answerRoutes": [],
+      "identityDisposition": "preserved_exact_scope"
+    },
+    {
+      "scopeSha256": "451ab413326e95651b05d3785726dcaceac1bb3800c6705482a94005c433b6b6",
+      "scope": {
+        "drugId": "D30",
+        "conditionId": "C26",
+        "population": "Mild-to-moderate Alzheimer disease",
+        "comparison": "Thalidomide versus placebo",
+        "endpoint": "Cognitive performance and tolerability",
+        "formulation": null,
+        "route": null,
+        "timepoint": "24 weeks",
+        "sourceIds": [
+          "P-D30-ALZHEIMER"
+        ]
+      },
+      "synthesisId": "SYN-D30-C26-P-D30-ALZHEIMER",
+      "outcomeId": "OUT-D30-C26-P-D30-ALZHEIMER",
+      "resultIds": [
+        "SYN-D30-C26-P-D30-ALZHEIMER-R1"
+      ],
+      "answerRoutes": [],
+      "identityDisposition": "preserved_exact_scope"
+    }
+  ],
+  "rowAliases": {}
+}

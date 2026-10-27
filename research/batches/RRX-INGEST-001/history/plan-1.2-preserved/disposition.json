@@ -1,0 +1,462 @@
+{
+  "schemaVersion": "remaprx-plan-history-disposition-v1",
+  "recordedAt": "2026-10-12T12:03:04.590697+00:00",
+  "planId": "RRX-INGEST-001-1.2",
+  "planSha256": "590613abf20c2dc5930a6a47c01f60b5a4c7fcc5ee8bc48693c013ff045971f0",
+  "disposition": "RECOVERY_COMPLETED; source-candidate continuation superseded prospectively by1.3 after mutable app-input and validator drift.",
+  "completedRecovery": {
+    "status": "IMPORTED_PRIVATE_CANDIDATE",
+    "changedFiles": 47,
+    "repeatStatus": "UNCHANGED",
+    "repeatChangedFiles": 0,
+    "candidateDigest": "e710a6a17e29ed121f391096270b0953f57c4d503c4fc6a746d192f8ace23ab6",
+    "currentRecoveredFilesMatch": true,
+    "files": [
+      {
+        "target": "research/corpus/RRX-INGEST-001/acquisition/assets.jsonl",
+        "expectedSha256": "cf4b75ab0954bc8680ed9337052148f2ed9e442f166a71c1c02d04ed16bdff8f",
+        "actualSha256": "cf4b75ab0954bc8680ed9337052148f2ed9e442f166a71c1c02d04ed16bdff8f"
+      },
+      {
+        "target": "research/corpus/RRX-INGEST-001/acquisition/coverage.json",
+        "expectedSha256": "8b47c967ca20cf584ef29baa0b33f49341ddf8a20a3bec3dc92ece19984cdf45",
+        "actualSha256": "8b47c967ca20cf584ef29baa0b33f49341ddf8a20a3bec3dc92ece19984cdf45"
+      },
+      {
+        "target": "research/corpus/RRX-INGEST-001/acquisition/f00-crossref-gaps.jsonl",
+        "expectedSha256": "dd09a00bc97588634aa5b4bc5b7e0366bf23134ca22ae94dcaf327048a59197a",
+        "actualSha256": "dd09a00bc97588634aa5b4bc5b7e0366bf23134ca22ae94dcaf327048a59197a"
+      },
+      {
+        "target": "research/corpus/RRX-INGEST-001/acquisition/f01-f02-import-report.json",
+        "expectedSha256": "12915fd5678ea88dff7fb6f215289e242ce63e363c566fe5305b89e490aaf07c",
+        "actualSha256": "12915fd5678ea88dff7fb6f215289e242ce63e363c566fe5305b89e490aaf07c"
+      },
+      {
+        "target": "research/corpus/RRX-INGEST-001/acquisition/f01-f02-receipt-appearances.jsonl",
+        "expectedSha256": "6e1c05557b55131231241d7ab021c271a58e8c10491626e964acb254fb87d5bc",
+        "actualSha256": "6e1c05557b55131231241d7ab021c271a58e8c10491626e964acb254fb87d5bc"
+      },
+      {
+        "target": "research/corpus/RRX-INGEST-001/acquisition/f01-f02-source-references.jsonl",
+        "expectedSha256": "46d3cf4a6b4e9a2f33900a43e50900e50650975340cdc9db8cd4ad103728a52d",
+        "actualSha256": "46d3cf4a6b4e9a2f33900a43e50900e50650975340cdc9db8cd4ad103728a52d"
+      },
+      {
+        "target": "research/corpus/RRX-INGEST-001/acquisition/gaps.jsonl",
+        "expectedSha256": "2cd2261ab19e9a81baf0a707f1869b007a7436f1858413e8a113825febcde56a",
+        "actualSha256": "2cd2261ab19e9a81baf0a707f1869b007a7436f1858413e8a113825febcde56a"
+      },
+      {
+        "target": "research/corpus/RRX-INGEST-001/acquisition/import-report.json",
+        "expectedSha256": "038a8b90549f3932ca78d1c363118a9dd92d0fd7cd6f93c72540a210342db5ea",
+        "actualSha256": "038a8b90549f3932ca78d1c363118a9dd92d0fd7cd6f93c72540a210342db5ea"
+      },
+      {
+        "target": "research/corpus/RRX-INGEST-001/acquisition/itraconazole-links.json",
+        "expectedSha256": "6328cfbe961ee15bd2b670b8c78a52ccde306b3f8a99fb58a1177369669f1b4e",
+        "actualSha256": "6328cfbe961ee15bd2b670b8c78a52ccde306b3f8a99fb58a1177369669f1b4e"
+      },
+      {
+        "target": "research/corpus/RRX-INGEST-001/acquisition/open-flags.json",
+        "expectedSha256": "0fbb7c55cf938fe5680fb4af6e33d1fd0b47a5e883aec312276cd5bc4aa39d62",
+        "actualSha256": "0fbb7c55cf938fe5680fb4af6e33d1fd0b47a5e883aec312276cd5bc4aa39d62"
+      },
+      {
+        "target": "research/corpus/RRX-INGEST-001/acquisition/quarantine.json",
+        "expectedSha256": "0a2f096cf9c53293225888731d020be01ac0e0dba35a731b7eff914436c6b325",
+        "actualSha256": "0a2f096cf9c53293225888731d020be01ac0e0dba35a731b7eff914436c6b325"
+      },
+      {
+        "target": "research/corpus/RRX-INGEST-001/acquisition/report-aliases.json",
+        "expectedSha256": "b2e8872232822ef6a4040eddd88167df83a35e0ecb511f204757d2baad9b8297",
+        "actualSha256": "b2e8872232822ef6a4040eddd88167df83a35e0ecb511f204757d2baad9b8297"
+      },
+      {
+        "target": "research/corpus/RRX-INGEST-001/acquisition/reports.jsonl",
+        "expectedSha256": "493bd2cb5c6b4d5db7796251ff9a780c680a5b4dace3ed3706f2e89fc0693d91",
+        "actualSha256": "493bd2cb5c6b4d5db7796251ff9a780c680a5b4dace3ed3706f2e89fc0693d91"
+      },
+      {
+        "target": "research/corpus/RRX-INGEST-001/acquisition/request-source-mapping.jsonl",
+        "expectedSha256": "6d7232600b5b0c5dcdf63ed74f3d3072033177ebce4dc9ea686d593885d55996",
+        "actualSha256": "6d7232600b5b0c5dcdf63ed74f3d3072033177ebce4dc9ea686d593885d55996"
+      },
+      {
+        "target": "research/corpus/RRX-INGEST-001/acquisition/screening.jsonl",
+        "expectedSha256": "13747bc1455673f106eccd5f27d9fb3cf7ce2b7393d3d144de55b24757ada5b6",
+        "actualSha256": "13747bc1455673f106eccd5f27d9fb3cf7ce2b7393d3d144de55b24757ada5b6"
+      },
+      {
+        "target": "research/corpus/RRX-INGEST-001/acquisition/searches.jsonl",
+        "expectedSha256": "2b4bb1b7308fb1d6ca3fdcdda587ccc1dbe53a0c12168f1d2b8b22f10f75a1be",
+        "actualSha256": "2b4bb1b7308fb1d6ca3fdcdda587ccc1dbe53a0c12168f1d2b8b22f10f75a1be"
+      },
+      {
+        "target": "research/corpus/RRX-INGEST-001/acquisition/source-receipt.json",
+        "expectedSha256": "aa2212c6bd149400853b7e973309d05f9b9e9fb9084660551b3d7ca5b7c6950a",
+        "actualSha256": "aa2212c6bd149400853b7e973309d05f9b9e9fb9084660551b3d7ca5b7c6950a"
+      },
+      {
+        "target": "research/corpus/RRX-INGEST-001/acquisition/sources.jsonl",
+        "expectedSha256": "0b195b7ce902d03ca9b40400baf032cd1ce281b399736d77af6b33187a58c781",
+        "actualSha256": "0b195b7ce902d03ca9b40400baf032cd1ce281b399736d77af6b33187a58c781"
+      },
+      {
+        "target": "research/corpus/RRX-INGEST-001/draft-science/claims.jsonl",
+        "expectedSha256": "2d65686d37eb2c1f9d3c77ee2eecc167e287569dd5b6b0bac3aeb6660c4f71f7",
+        "actualSha256": "2d65686d37eb2c1f9d3c77ee2eecc167e287569dd5b6b0bac3aeb6660c4f71f7"
+      },
+      {
+        "target": "research/corpus/RRX-INGEST-001/draft-science/corpus.json",
+        "expectedSha256": "9cf84068d3cdbcc9485122147101fef368cc00e9c4a073c13c84de948a3c0289",
+        "actualSha256": "9cf84068d3cdbcc9485122147101fef368cc00e9c4a073c13c84de948a3c0289"
+      },
+      {
+        "target": "research/corpus/RRX-INGEST-001/draft-science/integration-holds.json",
+        "expectedSha256": "1355b95f67c3153b0ff225f3a0e321ffe8e9e281cf1d7e1358c84ac122e9f957",
+        "actualSha256": "1355b95f67c3153b0ff225f3a0e321ffe8e9e281cf1d7e1358c84ac122e9f957"
+      },
+      {
+        "target": "research/corpus/RRX-INGEST-001/draft-science/manifest.json",
+        "expectedSha256": "0278d057c41b7256393a2f5f3a3887615e39f0899c2d83e1433e39c26d9bf253",
+        "actualSha256": "0278d057c41b7256393a2f5f3a3887615e39f0899c2d83e1433e39c26d9bf253"
+      },
+      {
+        "target": "research/corpus/RRX-INGEST-001/draft-science/mechanism-duplicate-dispositions.json",
+        "expectedSha256": "2fa34a9343d9e37540c8d30c892bd6b1a6923b18096450ada4fe7a82a133794a",
+        "actualSha256": "2fa34a9343d9e37540c8d30c892bd6b1a6923b18096450ada4fe7a82a133794a"
+      },
+      {
+        "target": "research/corpus/RRX-INGEST-001/draft-science/mechanisms.json",
+        "expectedSha256": "d6f15c398521c43f856058542f9698afc59f873519d5552e23cad53d1c9707f0",
+        "actualSha256": "d6f15c398521c43f856058542f9698afc59f873519d5552e23cad53d1c9707f0"
+      },
+      {
+        "target": "research/corpus/RRX-INGEST-001/draft-science/new-source-flags.json",
+        "expectedSha256": "246e20028e9039b07f672e973ce27eafe63110df5ab9f701e2a9e3ffc20040bb",
+        "actualSha256": "246e20028e9039b07f672e973ce27eafe63110df5ab9f701e2a9e3ffc20040bb"
+      },
+      {
+        "target": "research/corpus/RRX-INGEST-001/draft-science/result-bindings.json",
+        "expectedSha256": "3a8fec614a50abf549eab9f011373079a9e9eca3cdb794867a7de639d318168a",
+        "actualSha256": "3a8fec614a50abf549eab9f011373079a9e9eca3cdb794867a7de639d318168a"
+      },
+      {
+        "target": "research/corpus/RRX-INGEST-001/draft-science/result-dispositions.json",
+        "expectedSha256": "7f3fd6db3de1d3f1280f1a0cf40bc0c6f3cb303d4a9e8af585c5ee80547c60c3",
+        "actualSha256": "7f3fd6db3de1d3f1280f1a0cf40bc0c6f3cb303d4a9e8af585c5ee80547c60c3"
+      },
+      {
+        "target": "research/corpus/RRX-INGEST-001/draft-science/results.jsonl",
+        "expectedSha256": "11daf4897d09e8dfd47737719c4abb1d56e67e88e2d89e408274073fc2aa16bd",
+        "actualSha256": "11daf4897d09e8dfd47737719c4abb1d56e67e88e2d89e408274073fc2aa16bd"
+      },
+      {
+        "target": "research/corpus/RRX-INGEST-001/draft-science/reviews.jsonl",
+        "expectedSha256": "729ded0fd78712e3fd026ab22e259becd51a7678bbfd25cc44dca9d38d81ceb8",
+        "actualSha256": "729ded0fd78712e3fd026ab22e259becd51a7678bbfd25cc44dca9d38d81ceb8"
+      },
+      {
+        "target": "research/corpus/RRX-INGEST-001/draft-science/source-dispositions.json",
+        "expectedSha256": "092b6bf73f230479eaae2d5163e559c42a2b5e4864bed7582898edea74bdfc0c",
+        "actualSha256": "092b6bf73f230479eaae2d5163e559c42a2b5e4864bed7582898edea74bdfc0c"
+      },
+      {
+        "target": "research/corpus/RRX-INGEST-001/draft-science/source-integrity-notices.json",
+        "expectedSha256": "d047af47cc9e68a2a3b2b8ab601087dd4ae78db0333fa6c4de1d9ec044c6669f",
+        "actualSha256": "d047af47cc9e68a2a3b2b8ab601087dd4ae78db0333fa6c4de1d9ec044c6669f"
+      },
+      {
+        "target": "research/corpus/RRX-INGEST-001/prior-evidence/corpus.json",
+        "expectedSha256": "b8b26e152ea0c12c1246cd1304f7f799919a9b9b9d9c414920b4eed9f3e4ee2c",
+        "actualSha256": "b8b26e152ea0c12c1246cd1304f7f799919a9b9b9d9c414920b4eed9f3e4ee2c"
+      },
+      {
+        "target": "research/corpus/RRX-INGEST-001/prior-evidence/results.jsonl",
+        "expectedSha256": "95bf25bf61ae6ac7125301ff37d7a67ceecfb687fd092cddff2f9a21a6ce6c79",
+        "actualSha256": "95bf25bf61ae6ac7125301ff37d7a67ceecfb687fd092cddff2f9a21a6ce6c79"
+      },
+      {
+        "target": "research/corpus/RRX-INGEST-001/prior-evidence/claims.jsonl",
+        "expectedSha256": "6aceaeef3c04bcf892fa13e56887ed72f30cef5cfb3ebd2283156ade6029d12a",
+        "actualSha256": "6aceaeef3c04bcf892fa13e56887ed72f30cef5cfb3ebd2283156ade6029d12a"
+      },
+      {
+        "target": "research/corpus/RRX-INGEST-001/prior-evidence/reviews.jsonl",
+        "expectedSha256": "90f95532f11beb3eb8e45000303b098f3c2fccd70817110c69deed710288d679",
+        "actualSha256": "90f95532f11beb3eb8e45000303b098f3c2fccd70817110c69deed710288d679"
+      },
+      {
+        "target": "research/corpus/RRX-INGEST-001/prior-evidence/papers.jsonl",
+        "expectedSha256": "adacb8ad20bd8356d462e7340ceaca226d743f7fdf27eb26aa5af66d68e3bbcd",
+        "actualSha256": "adacb8ad20bd8356d462e7340ceaca226d743f7fdf27eb26aa5af66d68e3bbcd"
+      },
+      {
+        "target": "research/corpus/RRX-INGEST-001/prior-evidence/studies.jsonl",
+        "expectedSha256": "f2a1661e99df50d92a3f9fe447240540bd82c7f752e5124db327e1831327f36d",
+        "actualSha256": "f2a1661e99df50d92a3f9fe447240540bd82c7f752e5124db327e1831327f36d"
+      },
+      {
+        "target": "research/corpus/RRX-INGEST-001/prior-evidence/context.jsonl",
+        "expectedSha256": "89f2d087faf198484b39cc2908adf0ca67613b0e0c56065ea71436ceb65d10dd",
+        "actualSha256": "89f2d087faf198484b39cc2908adf0ca67613b0e0c56065ea71436ceb65d10dd"
+      },
+      {
+        "target": "research/corpus/RRX-INGEST-001/prior-evidence/pages.jsonl",
+        "expectedSha256": "d70950c395c7e2bfc284e23fedad0952d73fc0d83a14893f1febca66f4e2d157",
+        "actualSha256": "d70950c395c7e2bfc284e23fedad0952d73fc0d83a14893f1febca66f4e2d157"
+      },
+      {
+        "target": "research/corpus/RRX-INGEST-001/prior-evidence/coverage.json",
+        "expectedSha256": "a10fda3550f8c5ec40b4c66a6a01a9868e0544ae738a5019e26b0afd4e9cb7c7",
+        "actualSha256": "a10fda3550f8c5ec40b4c66a6a01a9868e0544ae738a5019e26b0afd4e9cb7c7"
+      },
+      {
+        "target": "research/corpus/RRX-INGEST-001/prior-evidence/identity-map.json",
+        "expectedSha256": "bb30ceb8c3f8b23bc402c62c74ab8e97dbedbaa67ab58b397c6a17aad7460ed9",
+        "actualSha256": "bb30ceb8c3f8b23bc402c62c74ab8e97dbedbaa67ab58b397c6a17aad7460ed9"
+      },
+      {
+        "target": "research/corpus/RRX-INGEST-001/prior-evidence/open-flags.json",
+        "expectedSha256": "4cd2af9d13730904eccbd93b5894d24f96ca32a3f3ea4c8ca15895b8b44bb745",
+        "actualSha256": "4cd2af9d13730904eccbd93b5894d24f96ca32a3f3ea4c8ca15895b8b44bb745"
+      },
+      {
+        "target": "research/corpus/RRX-INGEST-001/prior-evidence/quarantine.json",
+        "expectedSha256": "df59268952a9649d57add9d4366efea63da508f4e2bbfd4cdf3c50e76c5bfb3e",
+        "actualSha256": "df59268952a9649d57add9d4366efea63da508f4e2bbfd4cdf3c50e76c5bfb3e"
+      },
+      {
+        "target": "research/corpus/RRX-INGEST-001/prior-evidence/numerical-audit.json",
+        "expectedSha256": "0cef0693e575479fac332f0a2085fa1c0eafab10aafaa54109ecf728aa481f64",
+        "actualSha256": "0cef0693e575479fac332f0a2085fa1c0eafab10aafaa54109ecf728aa481f64"
+      },
+      {
+        "target": "research/corpus/RRX-INGEST-001/prior-evidence/source-manifest.json",
+        "expectedSha256": "653e758df04bbc3e5253798c823a5dcaededa019b8acd67470fe3ac8560ada52",
+        "actualSha256": "653e758df04bbc3e5253798c823a5dcaededa019b8acd67470fe3ac8560ada52"
+      },
+      {
+        "target": "research/corpus/RRX-INGEST-001/prior-evidence/validation.json",
+        "expectedSha256": "34caf3dbc5574fa1db5b846322a208281dd13e8b2624c15c521e41bc9f309a37",
+        "actualSha256": "34caf3dbc5574fa1db5b846322a208281dd13e8b2624c15c521e41bc9f309a37"
+      },
+      {
+        "target": "research/corpus/RRX-INGEST-001/prior-evidence/evidence.schema.json",
+        "expectedSha256": "32953789f4b96f19d7f7f44394f930aa33dceb33245478cde2fcab2c28cc5a70",
+        "actualSha256": "32953789f4b96f19d7f7f44394f930aa33dceb33245478cde2fcab2c28cc5a70"
+      }
+    ]
+  },
+  "currentDriftAtPreservation": [
+    {
+      "path": "data/public-content.json",
+      "sha256": "f36ceaf62d7faf82027289373e8132c55567a3a50e336cca0c2b9b227f5acb30",
+      "currentSha256": "528ecedb600be4b252a6d2269eafad381caf803c49b7f044ed9df865fbf443e4"
+    },
+    {
+      "path": "data/public-mechanisms.json",
+      "sha256": "bac453f5234c3c1b3f126e564c36ba0f2f5a8ea570d46799e3cf5f88bd596127",
+      "currentSha256": "a93db68a5b119da91bafc8de03d44968baafa39e0733b8440f9ebf52e3bf4b5b"
+    },
+    {
+      "path": "docs/PROJECT-RULES.md",
+      "sha256": "be0309cea512978442bf168a2f0dc70d05eb3a92ef46b9913541548ee61033c1",
+      "currentSha256": "f9d6674a1097d2293d22c576cd57ba8b50128e3e14717a6c7c867022d0fd2559"
+    },
+    {
+      "path": "scripts/research_ingest/source_validation.py",
+      "sha256": "5623e853d241ea86b7fddc80dd06a753b28391278d4e1c05da80a92dba2b7bd6",
+      "currentSha256": "b5af770bba265faa3135679c86c2a9a2b57d2cb139db5c61fc5b72ea9e283868"
+    }
+  ],
+  "preservedFiles": [
+    {
+      "originalPath": "research/batches/RRX-INGEST-001/plan.json",
+      "preservedPath": "research/batches/RRX-INGEST-001/history/plan-1.2-preserved/plan.json",
+      "sha256": "590613abf20c2dc5930a6a47c01f60b5a4c7fcc5ee8bc48693c013ff045971f0",
+      "bytes": 17393
+    },
+    {
+      "originalPath": "research/batches/RRX-INGEST-001/readiness.json",
+      "preservedPath": "research/batches/RRX-INGEST-001/history/plan-1.2-preserved/readiness.json",
+      "sha256": "d699a2731706ed11e5989ce2ffe337c773402212903cb2da68bd80e1b4f8b84a",
+      "bytes": 1180
+    },
+    {
+      "originalPath": "research/batches/RRX-INGEST-001/gp-review.json",
+      "preservedPath": "research/batches/RRX-INGEST-001/history/plan-1.2-preserved/gp-review.json",
+      "sha256": "564eff0c33660ef008b1f4bfea6cb68317d375a74b5980d50a9bf4c144e91469",
+      "bytes": 18623
+    },
+    {
+      "originalPath": "research/batches/RRX-INGEST-001/gp-review-addendum-mechanism.json",
+      "preservedPath": "research/batches/RRX-INGEST-001/history/plan-1.2-preserved/gp-review-addendum-mechanism.json",
+      "sha256": "89b4eb84d0544f959a228f88d9cac86bc9833f2a68dec2704abcaf46c6e90b48",
+      "bytes": 1409
+    },
+    {
+      "originalPath": "research/batches/RRX-INGEST-001/calibration/assignments.json",
+      "preservedPath": "research/batches/RRX-INGEST-001/history/plan-1.2-preserved/calibration/assignments.json",
+      "sha256": "cbf38f304e2f541d6b4bd186a8c5d7bdd357be45692295f64edbf7f28055d9c0",
+      "bytes": 206734
+    },
+    {
+      "originalPath": "research/batches/RRX-INGEST-001/cited-paper-ledger.json",
+      "preservedPath": "research/batches/RRX-INGEST-001/history/plan-1.2-preserved/cited-paper-ledger.json",
+      "sha256": "41b5d3e8f3ae3569f972214fbefcb9b23b576caade6316da2285a0ff08a9e703",
+      "bytes": 3336018
+    },
+    {
+      "originalPath": "research/batches/RRX-INGEST-001/recovery-inputs.json",
+      "preservedPath": "research/batches/RRX-INGEST-001/history/plan-1.2-preserved/recovery-inputs.json",
+      "sha256": "bb8f412bc4d5dbf55d3e5c4c1ff3762cf9723f6cbbdfa82c7ccc8daf2fc2e576",
+      "bytes": 14138
+    },
+    {
+      "originalPath": "research/batches/RRX-INGEST-001/schemas/candidate.schema.json",
+      "preservedPath": "research/batches/RRX-INGEST-001/history/plan-1.2-preserved/schemas/candidate.schema.json",
+      "sha256": "1a1c86d0c19b6a946a1222b13fd231776694b4788127b2881ae87727e570909a",
+      "bytes": 19933
+    },
+    {
+      "originalPath": "research/batches/RRX-INGEST-001/schemas/results.schema.json",
+      "preservedPath": "research/batches/RRX-INGEST-001/history/plan-1.2-preserved/schemas/results.schema.json",
+      "sha256": "2eef6845104eb74a7a80c3ca967acd9cb9b41313ab390e439ba516b2ce5b602b",
+      "bytes": 12437
+    },
+    {
+      "originalPath": "research/batches/RRX-INGEST-001/schemas/provenance.json",
+      "preservedPath": "research/batches/RRX-INGEST-001/history/plan-1.2-preserved/schemas/provenance.json",
+      "sha256": "38975e949cee246397b93713b8e5fd9e54a052489e0e9b3d3a4fef2de1190f0d",
+      "bytes": 1161
+    },
+    {
+      "originalPath": "research/batches/RRX-INGEST-001/recovery/apply-first.json",
+      "preservedPath": "research/batches/RRX-INGEST-001/history/plan-1.2-preserved/recovery/apply-first.json",
+      "sha256": "38a7993d6193c508d4797e5b179c8c4c251ca3fb17568a9547d3709c6c80df87",
+      "bytes": 11099
+    },
+    {
+      "originalPath": "research/batches/RRX-INGEST-001/recovery/acceptance.json",
+      "preservedPath": "research/batches/RRX-INGEST-001/history/plan-1.2-preserved/recovery/acceptance.json",
+      "sha256": "09b9fe960465294fcdd3c340d1a5bef0a4fb96b191ced31a71ed144720945147",
+      "bytes": 1411
+    },
+    {
+      "originalPath": "research/batches/RRX-INGEST-001/recovery/diff-before.json",
+      "preservedPath": "research/batches/RRX-INGEST-001/history/plan-1.2-preserved/recovery/diff-before.json",
+      "sha256": "64f12437ca32c7b813a0f8f0e618ca7db9da1d3b2af5bc1ddbdc4039326ec801",
+      "bytes": 8862
+    },
+    {
+      "originalPath": "research/batches/RRX-INGEST-001/recovery/manifest.json",
+      "preservedPath": "research/batches/RRX-INGEST-001/history/plan-1.2-preserved/recovery/manifest.json",
+      "sha256": "78c161017c63af3cbf58b7fb15459966cc6560706ac1ad0e0758355510696572",
+      "bytes": 14081
+    },
+    {
+      "originalPath": "research/batches/RRX-INGEST-001/recovery/apply-repeat.json",
+      "preservedPath": "research/batches/RRX-INGEST-001/history/plan-1.2-preserved/recovery/apply-repeat.json",
+      "sha256": "24109d128bfd9bac94a24f7bb93958f19106a8deb889df22497ca030e6b1dc22",
+      "bytes": 13958
+    },
+    {
+      "originalPath": "research/batches/RRX-INGEST-001/recovery/audit/integrator-evidence.json",
+      "preservedPath": "research/batches/RRX-INGEST-001/history/plan-1.2-preserved/recovery/audit/integrator-evidence.json",
+      "sha256": "d211500664c91ca2ca2b9ea8b4f8013e0c74deb307b7eefe544b0ca4cf6771fb",
+      "bytes": 31368
+    },
+    {
+      "originalPath": "research/batches/RRX-INGEST-001/recovery/audit/preservation.json",
+      "preservedPath": "research/batches/RRX-INGEST-001/history/plan-1.2-preserved/recovery/audit/preservation.json",
+      "sha256": "0b8e49c1d003dbb5427206c7e05ca61e257a7431fa243ca311b05d29ec029b02",
+      "bytes": 10173
+    },
+    {
+      "originalPath": "research/batches/RRX-INGEST-001/recovery/audit/idempotence.json",
+      "preservedPath": "research/batches/RRX-INGEST-001/history/plan-1.2-preserved/recovery/audit/idempotence.json",
+      "sha256": "654511d9b9711cea41a67fb5414943fb3b4e8d3b7ab0f7db2eb8727f2664ea5e",
+      "bytes": 10195
+    },
+    {
+      "originalPath": "research/batches/RRX-INGEST-001/recovery/audit/identity.json",
+      "preservedPath": "research/batches/RRX-INGEST-001/history/plan-1.2-preserved/recovery/audit/identity.json",
+      "sha256": "4f753607bdd0f5d43c7b69658b8182c3dca03e2d39191c0517b8dc86ec55fe42",
+      "bytes": 10150
+    },
+    {
+      "originalPath": "research/batches/RRX-INGEST-001/recovery/audit/source_integrity.json",
+      "preservedPath": "research/batches/RRX-INGEST-001/history/plan-1.2-preserved/recovery/audit/source_integrity.json",
+      "sha256": "1f57ad8af1ac5cdc9ca7a62ade1ad49bc186370b6be5968790f615885e1444b8",
+      "bytes": 10145
+    },
+    {
+      "originalPath": "research/batches/RRX-INGEST-001/recovery/audit/independent-evidence.json",
+      "preservedPath": "research/batches/RRX-INGEST-001/history/plan-1.2-preserved/recovery/audit/independent-evidence.json",
+      "sha256": "e3c66d72673235da9b7386f891911c410943b1b87b13fd5814d254493cc1a147",
+      "bytes": 61891
+    },
+    {
+      "originalPath": "research/batches/RRX-INGEST-001/recovery/audit/schema.json",
+      "preservedPath": "research/batches/RRX-INGEST-001/history/plan-1.2-preserved/recovery/audit/schema.json",
+      "sha256": "8364c5bf97be2f58a96424de0f3f6ae1c9db19f55fa6f55c0bbe56e48f9e6821",
+      "bytes": 10178
+    },
+    {
+      "originalPath": "research/batches/RRX-INGEST-001/recovery/audit/independent_audit.json",
+      "preservedPath": "research/batches/RRX-INGEST-001/history/plan-1.2-preserved/recovery/audit/independent_audit.json",
+      "sha256": "ce0fdadcbf3cd84bda6a33253322af9d64ef792eb61ea7e27f94836ad2fa2b20",
+      "bytes": 10633
+    },
+    {
+      "originalPath": "research/batches/RRX-INGEST-001/calibration/candidates/CAL-07/validation-attempt-hold.json",
+      "preservedPath": "research/batches/RRX-INGEST-001/history/plan-1.2-preserved/calibration/candidates/CAL-07/validation-attempt-hold.json",
+      "sha256": "32c7d06270cab571a1c466550d533a07e7c061d6e92075bd9feca3e62f8d50b9",
+      "bytes": 949
+    },
+    {
+      "originalPath": "research/batches/RRX-INGEST-001/calibration/candidates/CAL-07/source-inspection-notes.json",
+      "preservedPath": "research/batches/RRX-INGEST-001/history/plan-1.2-preserved/calibration/candidates/CAL-07/source-inspection-notes.json",
+      "sha256": "054548f655e1a511d5dd501ab5621e48e26eb0739a46a24f88df5a6f223f94c3",
+      "bytes": 5244
+    },
+    {
+      "originalPath": "research/batches/RRX-INGEST-001/calibration/candidates/CAL-07/CAL-07-S01.candidate.json",
+      "preservedPath": "research/batches/RRX-INGEST-001/history/plan-1.2-preserved/calibration/candidates/CAL-07/CAL-07-S01.candidate.json",
+      "sha256": "d4de221136ff49e978162058ea02dbdc0a60740fdc444a728728f287adf3ddc8",
+      "bytes": 74079
+    },
+    {
+      "originalPath": "research/batches/RRX-INGEST-001/calibration/candidates/CAL-07/authoring-receipt.json",
+      "preservedPath": "research/batches/RRX-INGEST-001/history/plan-1.2-preserved/calibration/candidates/CAL-07/authoring-receipt.json",
+      "sha256": "1bd2a343f7643f22c752925357ed4be7a5fbd55e8996ab20f5986f7bc26aebce",
+      "bytes": 930
+    },
+    {
+      "originalPath": "research/batches/RRX-INGEST-001/calibration/candidates/CAL-07/history/c8d3cdf9135a-source-inspection-notes.json",
+      "preservedPath": "research/batches/RRX-INGEST-001/history/plan-1.2-preserved/calibration/candidates/CAL-07/history/c8d3cdf9135a-source-inspection-notes.json",
+      "sha256": "30a4abbf5592110c4bd0cbebccfaf061c2bbab3bb45e35a3b0301f4e41f34882",
+      "bytes": 4485
+    },
+    {
+      "originalPath": "research/batches/RRX-INGEST-001/calibration/candidates/CAL-07/history/c8d3cdf9135a-CAL-07-S01.candidate.json",
+      "preservedPath": "research/batches/RRX-INGEST-001/history/plan-1.2-preserved/calibration/candidates/CAL-07/history/c8d3cdf9135a-CAL-07-S01.candidate.json",
+      "sha256": "c8d3cdf9135a3f8111f364d0fd58cd14c06271e85faf13a02954743d80e4bb58",
+      "bytes": 70561
+    },
+    {
+      "originalPath": "scripts/prepare-research-batch.py",
+      "preservedPath": "research/batches/RRX-INGEST-001/history/plan-1.2-preserved/scripts/prepare-research-batch.py",
+      "sha256": "9198f2d6fe53f5258a3e47e7ce8f41457e03a91ca7a329d207a72143c743a91f",
+      "bytes": 12152
+    }
+  ],
+  "oldAppInputSnapshots": "research/batches/RRX-INGEST-001/app-inputs (unversioned1.2 snapshots retained byte-for-byte)",
+  "limitations": [
+    "Historical readiness and approvals remain exact original bytes, including original relative pointers; this preservation map resolves relocated evidence.",
+    "Old readiness does not authorize future operations against changed inputs.",
+    "No source extraction, acquisition, current public-data edit or scientific promotion performed by this preservation."
+  ]
+}

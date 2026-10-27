@@ -1,0 +1,896 @@
+{
+  "operationId": "RRX-GUIDE-METFORMIN-001-ACQUIRE",
+  "version": "1.1",
+  "preparedAt": "2026-10-12",
+  "requestedDrugIds": [
+    "D01"
+  ],
+  "guideId": "G-METFORMIN",
+  "scope": "Exact current-source gaps only; no broad literature search",
+  "assignments": [
+    {
+      "assignmentId": "MF-GAP-01",
+      "targetSourceId": "P-KOREA-2026",
+      "title": "Neither Metformin nor Ursodeoxycholic Acid Effectively Treats Postacute Sequelae of COVID-19 : A Randomized Clinical Trial.",
+      "chapter": "infection-long-covid",
+      "tier": "PRIMARY",
+      "mode": "acquire_missing_original_and_required_companions",
+      "knownIdentifiers": {
+        "doi": "10.7326/annals-25-04883",
+        "pmid": "41771135",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41771135/",
+        "identityBasis": "preserved_canonical_or_exact_matching_acquisition_metadata_not_new_external_verification"
+      },
+      "requestedRoles": [
+        "full_report",
+        "supplement",
+        "protocol",
+        "sap",
+        "registry",
+        "correction_notice"
+      ],
+      "queries": [
+        {
+          "surface": "PubMed",
+          "query": "10.7326/annals-25-04883[AID]"
+        },
+        {
+          "surface": "Europe PMC",
+          "query": "DOI:\"10.7326/annals-25-04883\""
+        },
+        {
+          "surface": "publisher",
+          "query": "\"10.7326/annals-25-04883\" supplementary material protocol statistical analysis plan correction"
+        }
+      ],
+      "existingSourceReuse": [
+        {
+          "recordId": "acquisition:A-F01-R007-F00",
+          "sourceId": "A-F01-R007-F00",
+          "canonicalId": "P-KOREA-2026",
+          "matchBasis": "existing_source_identity",
+          "title": "Neither Metformin nor Ursodeoxycholic Acid Effectively Treats Postacute Sequelae of COVID-19 : A Randomized Clinical Trial.",
+          "doi": "10.7326/annals-25-04883",
+          "pmid": "41771135",
+          "states": {
+            "access_state": "abstract_only",
+            "human_review_status": "pending",
+            "publication_state": "draft",
+            "quarantined": false,
+            "verification_state": "pending"
+          },
+          "previousScientificDisposition": {
+            "full_review_complete": false,
+            "processing_state": "not_assigned_primary_extraction",
+            "reason": "No acquired complete PRIMARY PDF/HTML source; abstract, metadata, registry and partial native assets remain receipt-only.",
+            "result_ids": [],
+            "source_id": "A-F01-R007-F00",
+            "state": "held"
+          },
+          "assets": []
+        },
+        {
+          "recordId": "app:P-KOREA-2026",
+          "sourceId": "P-KOREA-2026",
+          "canonicalId": "P-KOREA-2026",
+          "matchBasis": "existing_source_identity",
+          "title": "Neither Metformin nor Ursodeoxycholic Acid Effectively Treats Postacute Sequelae of COVID-19 : A Randomized Clinical Trial.",
+          "doi": "10.7326/annals-25-04883",
+          "pmid": "41771135",
+          "states": {
+            "publicationState": "draft",
+            "reviewState": "pending",
+            "status": "Private AI draft · Not appraised"
+          },
+          "previousScientificDisposition": null,
+          "assets": []
+        }
+      ],
+      "questionSet": "one-match-1.14-Q01-Q15",
+      "publicDestination": "/drugs/metformin",
+      "scientificUse": "Pending source-pinned extraction and assessment; preserve exact population, comparator, endpoint and timepoint."
+    },
+    {
+      "assignmentId": "MF-GAP-02",
+      "targetSourceId": "MF-METPREVENT-2025",
+      "title": "Metformin and physical performance in older people with probable sarcopenia and physical prefrailty or frailty in England (MET-PREVENT): a double-blind, randomised, placebo-controlled trial",
+      "chapter": "physical-function",
+      "tier": "PRIMARY",
+      "mode": "acquire_missing_original_and_required_companions",
+      "knownIdentifiers": {
+        "doi": "10.1016/j.lanhl.2025.100695",
+        "pmid": null,
+        "url": "https://www.sciencedirect.com/science/article/pii/S2666756825000145",
+        "identityBasis": "preserved_canonical_or_exact_matching_acquisition_metadata_not_new_external_verification"
+      },
+      "requestedRoles": [
+        "full_report",
+        "supplement",
+        "protocol",
+        "sap",
+        "registry",
+        "correction_notice"
+      ],
+      "queries": [
+        {
+          "surface": "PubMed",
+          "query": "10.1016/j.lanhl.2025.100695[AID]"
+        },
+        {
+          "surface": "Europe PMC",
+          "query": "DOI:\"10.1016/j.lanhl.2025.100695\""
+        },
+        {
+          "surface": "publisher",
+          "query": "\"10.1016/j.lanhl.2025.100695\" supplementary material protocol statistical analysis plan correction"
+        }
+      ],
+      "existingSourceReuse": [
+        {
+          "recordId": "acquisition:B-R0008-F00",
+          "sourceId": "B-R0008-F00",
+          "canonicalId": "B-R0008",
+          "matchBasis": "exact_doi_metadata_match",
+          "title": "Metformin and physical performance in older people with probable sarcopenia and physical prefrailty or frailty in England (MET-PREVENT): a double-blind, randomised, placebo-controlled trial.",
+          "doi": "10.1016/j.lanhl.2025.100695",
+          "pmid": "40147475",
+          "states": {
+            "access_state": "abstract_only",
+            "human_review_status": "pending",
+            "publication_state": "draft",
+            "quarantined": false,
+            "verification_state": "pending"
+          },
+          "previousScientificDisposition": {
+            "full_review_complete": false,
+            "processing_state": "not_assigned_primary_extraction",
+            "reason": "No acquired eligible primary full text: abstract_only. Abstract, metadata and registry records are not completed reports.",
+            "result_ids": [],
+            "source_id": "B-R0008-F00",
+            "state": "held"
+          },
+          "assets": []
+        },
+        {
+          "recordId": "app:MF-METPREVENT-2025",
+          "sourceId": "MF-METPREVENT-2025",
+          "canonicalId": "MF-METPREVENT-2025",
+          "matchBasis": "existing_source_identity",
+          "title": "Metformin and physical performance in older people with probable sarcopenia and physical prefrailty or frailty in England (MET-PREVENT): a double-blind, randomised, placebo-controlled trial",
+          "doi": "10.1016/j.lanhl.2025.100695",
+          "pmid": null,
+          "states": {
+            "reviewState": "pending"
+          },
+          "previousScientificDisposition": null,
+          "assets": []
+        }
+      ],
+      "questionSet": "one-match-1.14-Q01-Q15",
+      "publicDestination": "/drugs/metformin",
+      "scientificUse": "Pending source-pinned extraction and assessment; preserve exact population, comparator, endpoint and timepoint."
+    },
+    {
+      "assignmentId": "MF-GAP-03",
+      "targetSourceId": "MF-MASTERS-2019",
+      "title": "Metformin blunts muscle hypertrophy in response to progressive resistance exercise training in older adults: The MASTERS trial",
+      "chapter": "physical-function",
+      "tier": "PRIMARY",
+      "mode": "acquire_missing_original_and_required_companions",
+      "knownIdentifiers": {
+        "doi": "10.1111/acel.13039",
+        "pmid": null,
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6826125/",
+        "identityBasis": "preserved_canonical_or_exact_matching_acquisition_metadata_not_new_external_verification"
+      },
+      "requestedRoles": [
+        "full_report",
+        "supplement",
+        "protocol",
+        "sap",
+        "registry",
+        "correction_notice"
+      ],
+      "queries": [
+        {
+          "surface": "PubMed",
+          "query": "10.1111/acel.13039[AID]"
+        },
+        {
+          "surface": "Europe PMC",
+          "query": "DOI:\"10.1111/acel.13039\""
+        },
+        {
+          "surface": "publisher",
+          "query": "\"10.1111/acel.13039\" supplementary material protocol statistical analysis plan correction"
+        }
+      ],
+      "existingSourceReuse": [
+        {
+          "recordId": "app:MF-MASTERS-2019",
+          "sourceId": "MF-MASTERS-2019",
+          "canonicalId": "MF-MASTERS-2019",
+          "matchBasis": "existing_source_identity",
+          "title": "Metformin blunts muscle hypertrophy in response to progressive resistance exercise training in older adults: The MASTERS trial",
+          "doi": "10.1111/acel.13039",
+          "pmid": null,
+          "states": {
+            "reviewState": "pending"
+          },
+          "previousScientificDisposition": null,
+          "assets": []
+        }
+      ],
+      "questionSet": "one-match-1.14-Q01-Q15",
+      "publicDestination": "/drugs/metformin",
+      "scientificUse": "Pending source-pinned extraction and assessment; preserve exact population, comparator, endpoint and timepoint."
+    },
+    {
+      "assignmentId": "MF-GAP-04",
+      "targetSourceId": "MF-SCHIZOPHRENIA-PARENT-2023",
+      "title": "Metformin improves cognitive impairment in patients with schizophrenia: associated with enhanced functional connectivity of dorsolateral prefrontal cortex",
+      "chapter": "schizophrenia",
+      "tier": "PRIMARY",
+      "mode": "acquire_missing_original_and_required_companions",
+      "knownIdentifiers": {
+        "doi": "10.1038/s41398-023-02616-x",
+        "pmid": "37821461",
+        "url": "https://www.nature.com/articles/s41398-023-02616-x",
+        "identityBasis": "preserved_canonical_or_exact_matching_acquisition_metadata_not_new_external_verification"
+      },
+      "requestedRoles": [
+        "full_report",
+        "supplement",
+        "protocol",
+        "sap",
+        "registry",
+        "correction_notice"
+      ],
+      "queries": [
+        {
+          "surface": "PubMed",
+          "query": "10.1038/s41398-023-02616-x[AID]"
+        },
+        {
+          "surface": "Europe PMC",
+          "query": "DOI:\"10.1038/s41398-023-02616-x\""
+        },
+        {
+          "surface": "publisher",
+          "query": "\"10.1038/s41398-023-02616-x\" supplementary material protocol statistical analysis plan correction"
+        }
+      ],
+      "existingSourceReuse": [
+        {
+          "recordId": "app:MF-SCHIZOPHRENIA-PARENT-2023",
+          "sourceId": "MF-SCHIZOPHRENIA-PARENT-2023",
+          "canonicalId": "MF-SCHIZOPHRENIA-PARENT-2023",
+          "matchBasis": "existing_source_identity",
+          "title": "Metformin improves cognitive impairment in patients with schizophrenia: associated with enhanced functional connectivity of dorsolateral prefrontal cortex",
+          "doi": "10.1038/s41398-023-02616-x",
+          "pmid": "37821461",
+          "states": {
+            "reviewState": "pending"
+          },
+          "previousScientificDisposition": null,
+          "assets": []
+        }
+      ],
+      "questionSet": "one-match-1.14-Q01-Q15",
+      "publicDestination": "/drugs/metformin",
+      "scientificUse": "Pending source-pinned extraction and assessment; preserve exact population, comparator, endpoint and timepoint."
+    },
+    {
+      "assignmentId": "MF-GAP-05",
+      "targetSourceId": "MF-NRG-LU001-2021",
+      "title": "Addition of metformin to concurrent chemoradiation in locally advanced non-small-cell lung cancer",
+      "chapter": "lung-cancer",
+      "tier": "PRIMARY",
+      "mode": "acquire_missing_original_and_required_companions",
+      "knownIdentifiers": {
+        "doi": "10.1001/jamaoncol.2021.2318",
+        "pmid": "34323922",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/34323922/",
+        "identityBasis": "preserved_canonical_or_exact_matching_acquisition_metadata_not_new_external_verification"
+      },
+      "requestedRoles": [
+        "full_report",
+        "supplement",
+        "protocol",
+        "sap",
+        "registry",
+        "correction_notice"
+      ],
+      "queries": [
+        {
+          "surface": "PubMed",
+          "query": "10.1001/jamaoncol.2021.2318[AID]"
+        },
+        {
+          "surface": "Europe PMC",
+          "query": "DOI:\"10.1001/jamaoncol.2021.2318\""
+        },
+        {
+          "surface": "publisher",
+          "query": "\"10.1001/jamaoncol.2021.2318\" supplementary material protocol statistical analysis plan correction"
+        }
+      ],
+      "existingSourceReuse": [
+        {
+          "recordId": "acquisition:B-R0025-F00",
+          "sourceId": "B-R0025-F00",
+          "canonicalId": "B-R0025",
+          "matchBasis": "exact_pmid_metadata_match",
+          "title": "Addition of Metformin to Concurrent Chemoradiation in Patients With Locally Advanced Non-Small Cell Lung Cancer: The NRG-LU001 Phase 2 Randomized Clinical Trial.",
+          "doi": "10.1001/jamaoncol.2021.2318",
+          "pmid": "34323922",
+          "states": {
+            "access_state": "abstract_only",
+            "human_review_status": "pending",
+            "publication_state": "draft",
+            "quarantined": false,
+            "verification_state": "pending"
+          },
+          "previousScientificDisposition": {
+            "full_review_complete": false,
+            "processing_state": "not_assigned_primary_extraction",
+            "reason": "No acquired eligible primary full text: abstract_only. Abstract, metadata and registry records are not completed reports.",
+            "result_ids": [],
+            "source_id": "B-R0025-F00",
+            "state": "held"
+          },
+          "assets": []
+        },
+        {
+          "recordId": "app:MF-NRG-LU001-2021",
+          "sourceId": "MF-NRG-LU001-2021",
+          "canonicalId": "MF-NRG-LU001-2021",
+          "matchBasis": "existing_source_identity",
+          "title": "Addition of metformin to concurrent chemoradiation in locally advanced non-small-cell lung cancer",
+          "doi": null,
+          "pmid": "34323922",
+          "states": {},
+          "previousScientificDisposition": null,
+          "assets": []
+        }
+      ],
+      "questionSet": "one-match-1.14-Q01-Q15",
+      "publicDestination": "/drugs/metformin",
+      "scientificUse": "Pending source-pinned extraction and assessment; preserve exact population, comparator, endpoint and timepoint."
+    },
+    {
+      "assignmentId": "MF-GAP-06",
+      "targetSourceId": "MF-ALMERA-2021",
+      "title": "Metformin with chemoradiotherapy in locally advanced NSCLC: OCOG-ALMERA",
+      "chapter": "lung-cancer",
+      "tier": "PRIMARY",
+      "mode": "acquire_missing_original_and_required_companions",
+      "knownIdentifiers": {
+        "doi": "10.1001/jamaoncol.2021.2328",
+        "pmid": null,
+        "url": "https://jamanetwork.com/journals/jamaoncology/fullarticle/2782110",
+        "identityBasis": "preserved_canonical_or_exact_matching_acquisition_metadata_not_new_external_verification"
+      },
+      "requestedRoles": [
+        "full_report",
+        "supplement",
+        "protocol",
+        "sap",
+        "registry",
+        "correction_notice"
+      ],
+      "queries": [
+        {
+          "surface": "PubMed",
+          "query": "10.1001/jamaoncol.2021.2328[AID]"
+        },
+        {
+          "surface": "Europe PMC",
+          "query": "DOI:\"10.1001/jamaoncol.2021.2328\""
+        },
+        {
+          "surface": "publisher",
+          "query": "\"10.1001/jamaoncol.2021.2328\" supplementary material protocol statistical analysis plan correction"
+        }
+      ],
+      "existingSourceReuse": [
+        {
+          "recordId": "app:MF-ALMERA-2021",
+          "sourceId": "MF-ALMERA-2021",
+          "canonicalId": "MF-ALMERA-2021",
+          "matchBasis": "existing_source_identity",
+          "title": "Metformin with chemoradiotherapy in locally advanced NSCLC: OCOG-ALMERA",
+          "doi": "10.1001/jamaoncol.2021.2328",
+          "pmid": null,
+          "states": {},
+          "previousScientificDisposition": null,
+          "assets": []
+        }
+      ],
+      "questionSet": "one-match-1.14-Q01-Q15",
+      "publicDestination": "/drugs/metformin",
+      "scientificUse": "Pending source-pinned extraction and assessment; preserve exact population, comparator, endpoint and timepoint."
+    },
+    {
+      "assignmentId": "MF-GAP-07",
+      "targetSourceId": "COND-C15-MA32-2022",
+      "title": "MA.32: Metformin versus placebo and invasive disease-free survival in breast cancer",
+      "chapter": "breast-cancer",
+      "tier": "PRIMARY",
+      "mode": "acquire_missing_original_and_required_companions",
+      "knownIdentifiers": {
+        "doi": "10.1001/jama.2022.6147",
+        "pmid": null,
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9131745/",
+        "identityBasis": "preserved_canonical_or_exact_matching_acquisition_metadata_not_new_external_verification"
+      },
+      "requestedRoles": [
+        "full_report",
+        "supplement",
+        "protocol",
+        "sap",
+        "registry",
+        "correction_notice"
+      ],
+      "queries": [
+        {
+          "surface": "PubMed",
+          "query": "10.1001/jama.2022.6147[AID]"
+        },
+        {
+          "surface": "Europe PMC",
+          "query": "DOI:\"10.1001/jama.2022.6147\""
+        },
+        {
+          "surface": "publisher",
+          "query": "\"10.1001/jama.2022.6147\" supplementary material protocol statistical analysis plan correction"
+        }
+      ],
+      "existingSourceReuse": [
+        {
+          "recordId": "acquisition:B-R0007-F00",
+          "sourceId": "B-R0007-F00",
+          "canonicalId": "B-R0007",
+          "matchBasis": "explicit_title_url_lead_requires_source_identity_check",
+          "title": "Effect of Metformin vs Placebo on Invasive Disease-Free Survival in Patients With Breast Cancer: The MA.32 Randomized Clinical Trial.",
+          "doi": "10.1001/jama.2022.6147",
+          "pmid": "35608580",
+          "states": {
+            "access_state": "abstract_only",
+            "human_review_status": "pending",
+            "publication_state": "draft",
+            "quarantined": false,
+            "verification_state": "pending"
+          },
+          "previousScientificDisposition": {
+            "full_review_complete": false,
+            "processing_state": "not_assigned_primary_extraction",
+            "reason": "No acquired eligible primary full text: abstract_only. Abstract, metadata and registry records are not completed reports.",
+            "result_ids": [],
+            "source_id": "B-R0007-F00",
+            "state": "held"
+          },
+          "assets": []
+        },
+        {
+          "recordId": "app:COND-C15-MA32-2022",
+          "sourceId": "COND-C15-MA32-2022",
+          "canonicalId": "COND-C15-MA32-2022",
+          "matchBasis": "existing_source_identity",
+          "title": "MA.32: Metformin versus placebo and invasive disease-free survival in breast cancer",
+          "doi": null,
+          "pmid": null,
+          "states": {},
+          "previousScientificDisposition": null,
+          "assets": []
+        }
+      ],
+      "questionSet": "one-match-1.14-Q01-Q15",
+      "publicDestination": "/drugs/metformin",
+      "scientificUse": "Pending source-pinned extraction and assessment; preserve exact population, comparator, endpoint and timepoint."
+    },
+    {
+      "assignmentId": "MF-GAP-08",
+      "targetSourceId": "COND-C15-MA32-METABOLIC",
+      "title": "Metformin versus placebo: metabolic factors in MA.32",
+      "chapter": "breast-cancer",
+      "tier": "PRIMARY",
+      "mode": "acquire_missing_original_and_required_companions",
+      "knownIdentifiers": {
+        "doi": null,
+        "pmid": null,
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8187713/",
+        "identityBasis": "preserved_canonical_or_exact_matching_acquisition_metadata_not_new_external_verification"
+      },
+      "requestedRoles": [
+        "full_report",
+        "supplement",
+        "protocol",
+        "sap",
+        "registry",
+        "correction_notice"
+      ],
+      "queries": [
+        {
+          "surface": "PubMed",
+          "query": "\"Metformin versus placebo: metabolic factors in MA.32\"[Title]"
+        },
+        {
+          "surface": "Europe PMC",
+          "query": "TITLE:\"Metformin versus placebo: metabolic factors in MA.32\""
+        },
+        {
+          "surface": "publisher",
+          "query": "\"Metformin versus placebo: metabolic factors in MA.32\" supplementary material protocol statistical analysis plan correction"
+        }
+      ],
+      "existingSourceReuse": [
+        {
+          "recordId": "app:COND-C15-MA32-METABOLIC",
+          "sourceId": "COND-C15-MA32-METABOLIC",
+          "canonicalId": "COND-C15-MA32-METABOLIC",
+          "matchBasis": "existing_source_identity",
+          "title": "Metformin versus placebo: metabolic factors in MA.32",
+          "doi": null,
+          "pmid": null,
+          "states": {},
+          "previousScientificDisposition": null,
+          "assets": []
+        }
+      ],
+      "questionSet": "one-match-1.14-Q01-Q15",
+      "publicDestination": "/drugs/metformin",
+      "scientificUse": "Pending source-pinned extraction and assessment; preserve exact population, comparator, endpoint and timepoint."
+    },
+    {
+      "assignmentId": "MF-GAP-09",
+      "targetSourceId": "COND-C17-MET-2015",
+      "title": "Metformin in advanced pancreatic cancer: double-blind randomized phase II trial",
+      "chapter": "pancreatic-cancer",
+      "tier": "PRIMARY",
+      "mode": "acquire_missing_original_and_required_companions",
+      "knownIdentifiers": {
+        "doi": "10.1016/s1470-2045(15)00027-3",
+        "pmid": "26067687",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/26067687/",
+        "identityBasis": "preserved_canonical_or_exact_matching_acquisition_metadata_not_new_external_verification"
+      },
+      "requestedRoles": [
+        "full_report",
+        "supplement",
+        "protocol",
+        "sap",
+        "registry",
+        "correction_notice"
+      ],
+      "queries": [
+        {
+          "surface": "PubMed",
+          "query": "10.1016/s1470-2045(15)00027-3[AID]"
+        },
+        {
+          "surface": "Europe PMC",
+          "query": "DOI:\"10.1016/s1470-2045(15)00027-3\""
+        },
+        {
+          "surface": "publisher",
+          "query": "\"10.1016/s1470-2045(15)00027-3\" supplementary material protocol statistical analysis plan correction"
+        }
+      ],
+      "existingSourceReuse": [
+        {
+          "recordId": "acquisition:B-R0040-F00",
+          "sourceId": "B-R0040-F00",
+          "canonicalId": "B-R0040",
+          "matchBasis": "exact_pmid_metadata_match",
+          "title": "Metformin in patients with advanced pancreatic cancer: a double-blind, randomised, placebo-controlled phase 2 trial.",
+          "doi": "10.1016/s1470-2045(15)00027-3",
+          "pmid": "26067687",
+          "states": {
+            "access_state": "abstract_only",
+            "human_review_status": "pending",
+            "publication_state": "draft",
+            "quarantined": false,
+            "verification_state": "pending"
+          },
+          "previousScientificDisposition": {
+            "full_review_complete": false,
+            "processing_state": "not_assigned_primary_extraction",
+            "reason": "No acquired eligible primary full text: abstract_only. Abstract, metadata and registry records are not completed reports.",
+            "result_ids": [],
+            "source_id": "B-R0040-F00",
+            "state": "held"
+          },
+          "assets": []
+        },
+        {
+          "recordId": "app:COND-C17-MET-2015",
+          "sourceId": "COND-C17-MET-2015",
+          "canonicalId": "COND-C17-MET-2015",
+          "matchBasis": "existing_source_identity",
+          "title": "Metformin in advanced pancreatic cancer: double-blind randomized phase II trial",
+          "doi": null,
+          "pmid": null,
+          "states": {},
+          "previousScientificDisposition": null,
+          "assets": []
+        }
+      ],
+      "questionSet": "one-match-1.14-Q01-Q15",
+      "publicDestination": "/drugs/metformin",
+      "scientificUse": "Pending source-pinned extraction and assessment; preserve exact population, comparator, endpoint and timepoint."
+    },
+    {
+      "assignmentId": "MF-GAP-10",
+      "targetSourceId": "MF-ADENOMA-2016",
+      "title": "Metformin for chemoprevention of recurrent colorectal adenoma or polyps",
+      "chapter": "colorectal-prevention",
+      "tier": "PRIMARY",
+      "mode": "acquire_missing_original_and_required_companions",
+      "knownIdentifiers": {
+        "doi": "10.1016/S1470-2045(15)00565-3",
+        "pmid": "26947328",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/26947328/",
+        "identityBasis": "preserved_canonical_or_exact_matching_acquisition_metadata_not_new_external_verification"
+      },
+      "requestedRoles": [
+        "full_report",
+        "supplement",
+        "protocol",
+        "sap",
+        "registry",
+        "correction_notice"
+      ],
+      "queries": [
+        {
+          "surface": "PubMed",
+          "query": "10.1016/S1470-2045(15)00565-3[AID]"
+        },
+        {
+          "surface": "Europe PMC",
+          "query": "DOI:\"10.1016/S1470-2045(15)00565-3\""
+        },
+        {
+          "surface": "publisher",
+          "query": "\"10.1016/S1470-2045(15)00565-3\" supplementary material protocol statistical analysis plan correction"
+        }
+      ],
+      "existingSourceReuse": [
+        {
+          "recordId": "app:MF-ADENOMA-2016",
+          "sourceId": "MF-ADENOMA-2016",
+          "canonicalId": "MF-ADENOMA-2016",
+          "matchBasis": "existing_source_identity",
+          "title": "Metformin for chemoprevention of recurrent colorectal adenoma or polyps",
+          "doi": "10.1016/s1470-2045(15)00565-3",
+          "pmid": "26947328",
+          "states": {},
+          "previousScientificDisposition": null,
+          "assets": []
+        }
+      ],
+      "questionSet": "one-match-1.14-Q01-Q15",
+      "publicDestination": "/drugs/metformin",
+      "scientificUse": "Pending source-pinned extraction and assessment; preserve exact population, comparator, endpoint and timepoint."
+    },
+    {
+      "assignmentId": "MF-GAP-11",
+      "targetSourceId": "MF-COLON-MECHANISM-2010",
+      "title": "Metformin suppresses colorectal aberrant crypt foci in a short-term clinical trial",
+      "chapter": "colorectal-prevention",
+      "tier": "PRIMARY",
+      "mode": "acquire_missing_original_and_required_companions",
+      "knownIdentifiers": {
+        "doi": null,
+        "pmid": "20810669",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/20810669/",
+        "identityBasis": "preserved_canonical_or_exact_matching_acquisition_metadata_not_new_external_verification"
+      },
+      "requestedRoles": [
+        "full_report",
+        "supplement",
+        "protocol",
+        "sap",
+        "registry",
+        "correction_notice"
+      ],
+      "queries": [
+        {
+          "surface": "PubMed",
+          "query": "20810669[PMID]"
+        },
+        {
+          "surface": "Europe PMC",
+          "query": "EXT_ID:20810669 AND SRC:MED"
+        },
+        {
+          "surface": "publisher",
+          "query": "\"20810669\" supplementary material protocol statistical analysis plan correction"
+        }
+      ],
+      "existingSourceReuse": [
+        {
+          "recordId": "app:MF-COLON-MECHANISM-2010",
+          "sourceId": "MF-COLON-MECHANISM-2010",
+          "canonicalId": "MF-COLON-MECHANISM-2010",
+          "matchBasis": "existing_source_identity",
+          "title": "Metformin suppresses colorectal aberrant crypt foci in a short-term clinical trial",
+          "doi": null,
+          "pmid": "20810669",
+          "states": {},
+          "previousScientificDisposition": null,
+          "assets": []
+        }
+      ],
+      "questionSet": "one-match-1.14-Q01-Q15",
+      "publicDestination": "/drugs/metformin",
+      "scientificUse": "Pending source-pinned extraction and assessment; preserve exact population, comparator, endpoint and timepoint."
+    },
+    {
+      "assignmentId": "MF-GAP-12",
+      "targetSourceId": "P-COVIDOUT-2023",
+      "title": "COVID-OUT 2023 correction and version trail",
+      "chapter": "infection-long-covid",
+      "tier": "CONTEXT",
+      "mode": "correction_only_reuse_held_original",
+      "knownIdentifiers": {
+        "doi": null,
+        "doiMissingReason": "Notice DOI not independently resolved in this packet; do not reuse original report DOI as notice DOI.",
+        "pmid": "37666258",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37666258/",
+        "identityBasis": "existing_correction_ledger",
+        "role": "requested_correction_notice"
+      },
+      "requestedRoles": [
+        "correction_notice",
+        "corrected_report",
+        "supplement"
+      ],
+      "queries": [
+        {
+          "surface": "PubMed",
+          "query": "37666258[PMID]"
+        },
+        {
+          "surface": "publisher",
+          "query": "\"10.1016/S1473-3099(23)00299-2\" correction"
+        }
+      ],
+      "existingSourceReuse": [
+        {
+          "recordId": "acquisition:A-F01-R001-F01",
+          "sourceId": "A-F01-R001-F01",
+          "canonicalId": "P-COVIDOUT-2023",
+          "matchBasis": "existing_source_identity",
+          "title": "Outpatient treatment of COVID-19 and incidence of post-COVID-19 condition over 10 months (COVID-OUT): a multicentre, randomised, quadruple-blind, parallel-group, phase 3 trial.",
+          "doi": "10.1016/s1473-3099(23)00299-2",
+          "pmid": "37302406",
+          "states": {
+            "access_state": "full_pdf",
+            "human_review_status": "pending",
+            "publication_state": "draft",
+            "quarantined": false,
+            "verification_state": "pending"
+          },
+          "previousScientificDisposition": {
+            "full_review_complete": false,
+            "processing_state": "partial_candidate",
+            "reason": "Located original findings extracted; independent scientific appraisal, unextracted secondary details and human review remain pending.; Author manuscript physical page10 prints10.4% for placebo; physical page11 prints10.6%. Both retained as unresolved, not harmonized.",
+            "result_ids": [
+              "SCI-A-F01-R001-F01-METFORMIN-PREVENTION",
+              "SCI-A-F01-R001-F01-FLUVOXAMINE-PREVENTION"
+            ],
+            "source_id": "A-F01-R001-F01",
+            "state": "renderable_draft"
+          },
+          "assets": [
+            {
+              "logicalRoot": "WORK",
+              "relativePath": "ingest/SL-F01-F02-20261011/receipt/input/return/F01/PRIMARY/A-F01-R001__original_report__outpatient-treatment-of-covid-19-and-incidence-of.pdf",
+              "archiveMember": null,
+              "expectedSha256": "40c9c3a4b652cc0fa7300491f10af914819390104077808272a3fe4e1a9719f2",
+              "observedSha256": "40c9c3a4b652cc0fa7300491f10af914819390104077808272a3fe4e1a9719f2",
+              "bytes": 1479893,
+              "status": "hash_verified",
+              "declaredKind": "research_asset",
+              "formatSignature": "pdf"
+            }
+          ]
+        },
+        {
+          "recordId": "app:P-COVIDOUT-2023",
+          "sourceId": "P-COVIDOUT-2023",
+          "canonicalId": "P-COVIDOUT-2023",
+          "matchBasis": "existing_source_identity",
+          "title": "Outpatient treatment of COVID-19 and incidence of post-COVID-19 condition over 10 months (COVID-OUT): a multicentre, randomised, quadruple-blind, parallel-group, phase 3 trial",
+          "doi": "10.1016/s1473-3099(23)00299-2",
+          "pmid": "37302406",
+          "states": {
+            "publicationState": "private_ai_draft",
+            "reviewState": "draft",
+            "status": "Private AI draft · Not appraised"
+          },
+          "previousScientificDisposition": null,
+          "assets": []
+        }
+      ],
+      "questionSet": null,
+      "publicDestination": "/drugs/metformin",
+      "scientificUse": "Preserve correction hold. Acquire actual notice and changed-version trail; no numerical efficacy repair or approval.",
+      "targetOriginalIdentifiers": {
+        "doi": "10.1016/s1473-3099(23)00299-2",
+        "pmid": "37302406",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11259948/",
+        "role": "held_original_report"
+      }
+    },
+    {
+      "assignmentId": "MF-GAP-13",
+      "targetSourceId": "MF-LABEL-2025",
+      "title": "Metformin hydrochloride tablets: U.S. prescribing information",
+      "chapter": "safety-formulations",
+      "tier": "CONTEXT",
+      "mode": "verify_exact_official_version_reuse_if_matching",
+      "knownIdentifiers": {
+        "doi": null,
+        "pmid": null,
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=542cec22-eeae-4704-9bb6-4176640e5ea8",
+        "identityBasis": "existing_article_source_url"
+      },
+      "requestedRoles": [
+        "official_label"
+      ],
+      "queries": [
+        {
+          "surface": "official_source",
+          "query": "\"542cec22-eeae-4704-9bb6-4176640e5ea8\" metformin hydrochloride tablets"
+        }
+      ],
+      "existingSourceReuse": {
+        "see": "inputs/companion-and-safety-holdings.json",
+        "rule": "IR/ER PDFs are already held; verify exact product/version relation and acquire only if a different/missing required version is established."
+      },
+      "questionSet": null,
+      "publicDestination": "/drugs/metformin",
+      "scientificUse": "Jurisdiction/product/version context; not evidence of investigated efficacy or dosing advice."
+    },
+    {
+      "assignmentId": "MF-GAP-14",
+      "targetSourceId": "MF-FDA-GENERICS",
+      "title": "Generic Drug Facts",
+      "chapter": "safety-formulations",
+      "tier": "CONTEXT",
+      "mode": "acquire_missing_dated_official_context",
+      "knownIdentifiers": {
+        "doi": null,
+        "pmid": null,
+        "url": "https://www.fda.gov/drugs/generic-drugs/generic-drug-facts",
+        "identityBasis": "existing_article_source_url"
+      },
+      "requestedRoles": [
+        "regulatory_context"
+      ],
+      "queries": [
+        {
+          "surface": "official_source",
+          "query": "site:fda.gov/drugs/generic-drugs/generic-drug-facts"
+        }
+      ],
+      "existingSourceReuse": [],
+      "questionSet": null,
+      "publicDestination": "/drugs/metformin",
+      "scientificUse": "Jurisdiction/product/version context; not evidence of investigated efficacy or dosing advice."
+    }
+  ],
+  "coordinatedExistingRequest": {
+    "id": "RRX-GAP-001-1.1",
+    "targets": [
+      "P-ACTIV6-2026",
+      "P-REVIVE-2026"
+    ],
+    "archive": "coordination/RRX-GAP-001-1.1-request.zip",
+    "rule": "Check prior dispatch/return status first; use unchanged existing request if needed; do not duplicate request or merge incompatible manifests."
+  },
+  "noRawSourcesAttached": true,
+  "cutoffRule": "Record actual query/execution date; this exact-report retrieval is not a comprehensive literature-search cutoff."
+}

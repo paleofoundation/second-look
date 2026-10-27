@@ -1,0 +1,149 @@
+{
+  "schemaVersion": "remaprx-calibration-throughput-v1",
+  "asOf": "2026-10-12T12:20:33.675914+00:00",
+  "preparedBy": "corpus_audit",
+  "statusSnapshot": {
+    "path": "research/batches/RRX-INGEST-001/calibration/status.json",
+    "sha256": "3c5e1ba60bb1bf79bc1ec6cb3920e8862c454646cf7a6ca0e2cab400a131328e"
+  },
+  "scope": "Observed artifact timestamps and output units, not measured active research labor or completed scientific-review throughput.",
+  "counts": {
+    "reportPacketsAssigned": 24,
+    "reportPacketsWithAnyCurrentCalibrationOutput": 4,
+    "diagnosticPacketsProcessed": 3,
+    "independentlyAuditedDiagnosticHolds": 3,
+    "reportPacketsWithPartialSourceCandidate": 1,
+    "reportPacketsPendingCalibrationWork": 20,
+    "assignedSourceFileVersions": 37,
+    "uniqueAssignedSourceIds": 37,
+    "distinctAssignedAssetHashes": 35,
+    "fileAssignmentsWithIntegrityOrFormatHold": 11,
+    "reportPacketsWithAssignedPrimaryHold": 5,
+    "diagnosticFileVersionAppearancesInspected": 2,
+    "diagnosticDistinctPhysicalAssetsInspected": 1,
+    "diagnosticPacketsWithoutAssignedFulltext": 1,
+    "boundedSourceContentObservationsPassed": 1,
+    "currentExactCandidateAuditsPassed": 1,
+    "currentExactCandidateAuditsPending": 0,
+    "sourceCandidateResults": 3,
+    "sourceCandidateClaims": 4,
+    "qInputsPresent": 15,
+    "qInputsLocatedCandidate": 5,
+    "qInputsPartial": 10,
+    "typedQuantitativeResults": 0,
+    "completedFullScientificReviews": 0,
+    "reportPacketsWithoutCompletedFullScientificReview": 24,
+    "humanReviewedFullReports": 0,
+    "releasedReports": 0
+  },
+  "observedEvents": [
+    {
+      "event": "diagnostic_packets_authored",
+      "at": "2026-10-12T11:46:01.509449+00:00",
+      "packetIds": [
+        "CAL-04",
+        "CAL-05",
+        "CAL-06"
+      ],
+      "evidence": {
+        "path": "research/batches/RRX-INGEST-001/calibration/candidates/CAL-04/diagnostic.json",
+        "sha256": "17ea825f84e73d20232ff7af2c8323abeb2d924cc88962c2e227e87fd4957166"
+      }
+    },
+    {
+      "event": "diagnostic_holds_independently_audited",
+      "at": "2026-10-12T11:46:48.939491+00:00",
+      "packetIds": [
+        "CAL-04",
+        "CAL-05",
+        "CAL-06"
+      ],
+      "evidence": {
+        "path": "research/batches/RRX-INGEST-001/calibration/audits/held-packets.json",
+        "sha256": "48d420e9ef21f1ce4e9d4ee58550e40174ec68c3ffd65348d0b4f42642f09039"
+      }
+    },
+    {
+      "event": "first_CAL07_candidate_authored",
+      "at": "2026-10-12T11:49:13.934331+00:00",
+      "packetIds": [
+        "CAL-07"
+      ],
+      "evidence": {
+        "path": "research/batches/RRX-INGEST-001/calibration/candidates/CAL-07/history/c8d3cdf9135a-source-inspection-notes.json",
+        "sha256": "30a4abbf5592110c4bd0cbebccfaf061c2bbab3bb45e35a3b0301f4e41f34882"
+      }
+    },
+    {
+      "event": "CAL07_substantive_revision_authored",
+      "at": "2026-10-12T11:53:00.407205+00:00",
+      "packetIds": [
+        "CAL-07"
+      ],
+      "evidence": {
+        "path": "research/batches/RRX-INGEST-001/calibration/candidates/CAL-07/history/rebind-from-plan1.2-d4de221136ff/authoring-receipt.json",
+        "sha256": "1bd2a343f7643f22c752925357ed4be7a5fbd55e8996ab20f5986f7bc26aebce"
+      }
+    },
+    {
+      "event": "CAL07_bounded_content_observations",
+      "at": "2026-10-12T11:59:55.840172+00:00",
+      "packetIds": [
+        "CAL-07"
+      ],
+      "evidence": {
+        "path": "research/batches/RRX-INGEST-001/calibration/audits/CAL-07-source-observations.json",
+        "sha256": "f5386509396e4db46ed2964618de114322d6f274890fea314a97a8c9414848e0"
+      }
+    },
+    {
+      "event": "source_plan13_independent_readiness",
+      "at": "2026-10-12T12:11:38.629455+00:00",
+      "packetIds": [
+        "CAL-07"
+      ],
+      "evidence": {
+        "path": "research/batches/RRX-INGEST-001/readiness.json",
+        "sha256": "d2f6eb651d9e70c0b67a302ba6d36b036c88c63278251da21f97709234edace6"
+      }
+    },
+    {
+      "event": "CAL07_plan_binding_only_rebound",
+      "at": "2026-10-12T12:12:55.737982+00:00",
+      "packetIds": [
+        "CAL-07"
+      ],
+      "evidence": {
+        "path": "research/batches/RRX-INGEST-001/calibration/candidates/CAL-07/authoring-receipt.json",
+        "sha256": "3566376ef2c6e9674bf36f28d442628289c00fd37baf1e5489f51ad6b0ea640b"
+      }
+    },
+    {
+      "event": "CAL07_exact_candidate_independent_audit",
+      "at": "2026-10-12T12:19:05.245011+00:00",
+      "packetIds": [
+        "CAL-07"
+      ],
+      "evidence": {
+        "path": "research/batches/RRX-INGEST-001/fanout/CAL-07/independent-audit.json",
+        "sha256": "5f5f1ab05ee86b8a150f08c34258ad20f4ad303e519e1098f71c6d4f690f1ba9"
+      }
+    }
+  ],
+  "observedIntervalsSeconds": {
+    "firstCandidateToSubstantiveRevision": 226.472874,
+    "firstCandidateToPlanRebound": 1421.803651,
+    "interpretation": "Elapsed intervals include independent review, governance repairs, concurrent work and waiting. They are not full-review completion times or productivity estimates."
+  },
+  "forecast": {
+    "completedFullScientificReviews": 0,
+    "packetsWithFullScientificReviewIncomplete": 24,
+    "measuredActiveWorkHours": null,
+    "fullReviewCompletionsPerHour": null,
+    "estimatedRemainingWorkHours": null,
+    "estimatedFinishDate": null,
+    "reason": "No completed full scientific review exists in this calibration and active effort was not measured. One partial candidate and three diagnostic holds cannot establish a full-review rate or justify a finish date. All 24 packets lack completed full scientific reviews, including CAL-07; diagnostic closure may instead remain the correct outcome for held sources.",
+    "nextMeasurement": "Record source/companion access, active work start/end, independent corrections and exact completion disposition for subsequent eligible report packets before estimating a design-aware throughput."
+  },
+  "statusCompilationReadNewSourceTextOrImportedContent": false
+}

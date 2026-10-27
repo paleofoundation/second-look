@@ -1,0 +1,714 @@
+{
+  "schema_version": "1.0.0",
+  "baseline_version": "1.1",
+  "baseline_sha256": "01896e3c254f37483c226da52da0ef239b03eb7c762e5171675ae6dc302150d2",
+  "cutoff": "2026-10-08",
+  "execution_date": "2026-10-09 (this dispatch; pilot 2026-10-08)",
+  "files": [
+    {
+      "path": "work/evidence/raw/covidout.html",
+      "sha256": "452f584b76e446310416521227c0c12935eeafc12f582b19bc8cf98854196c4d",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11259948/",
+      "retrieved_at": "2026-10-08",
+      "media_type": "text/html",
+      "collection": "PRIMARY",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    },
+    {
+      "path": "work/evidence/raw/stoppasc.html",
+      "sha256": "101012946b847f38eb21170ab0a7270275cf7a1fc250c1e08843437364ad2a8d",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11161857/",
+      "retrieved_at": "2026-10-08",
+      "media_type": "text/html",
+      "collection": "PRIMARY",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    },
+    {
+      "path": "work/evidence/raw/activ6-web-extract.json",
+      "sha256": "2d52a49a41b93f6c027d0035d476a9d54419c32e5535444b3992fd128b64da44",
+      "source_url": "https://academic.oup.com/cid/advance-article/doi/10.1093/cid/ciag335/8702406",
+      "retrieved_at": "2026-10-08",
+      "media_type": "application/json (partial tool-rendered HTML extract)",
+      "collection": "PRIMARY",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    },
+    {
+      "path": "work/evidence/raw/pubmed-metadata.xml",
+      "sha256": "8ead1a1db2322f2472a14f6485db7539e8b94861ecff61a4b0bbed656e3ea3bb",
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42832813,41771135,41911553,42673984,42240559,37666258&retmode=xml",
+      "retrieved_at": "2026-10-08",
+      "media_type": "application/xml",
+      "collection": "PRIMARY",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    },
+    {
+      "path": "work/evidence/raw/current-candidates-web-extract.json",
+      "sha256": "27354efd9b0dba8865206e3f9ab4559b760f8f035ad8b1c241beafab24c451f9",
+      "source_url": "Primary-source search results",
+      "retrieved_at": "2026-10-08",
+      "media_type": "application/json",
+      "collection": "PRIMARY",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    },
+    {
+      "path": "work/evidence/raw/retraction-check-web-extract.json",
+      "sha256": "e410bd2c99e3aef061c36c66d22d2ea97e216ae71a47aa406e24a94738f340d5",
+      "source_url": "Retraction discovery search results; lead only, NCBI is verification",
+      "retrieved_at": "2026-10-08",
+      "media_type": "application/json",
+      "collection": "CONTEXT",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    },
+    {
+      "path": "work/evidence/raw/stoppasc-correction.html",
+      "sha256": "742c00f8d15dc30fc0007aa0d893935847f1faee88931434d878316e5ea2661b",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11264073/",
+      "retrieved_at": "2026-10-08",
+      "media_type": "text/html",
+      "collection": "CONTEXT",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/PRIMARY/B01-pubmed-efetch-13pmids.xml",
+      "sha256": "e688bf596ef46f20491dda27bf7a3c786ea68f1f1b350d4eed0e578c69d3f40e",
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=41911553,42832813,42832803,42832812,42832809,41911555,37302406,37666258,42240559,40832427,38848477,41771135,42673984&retmode=xml",
+      "retrieved_at": "2026-10-09T04:46:09+00:00",
+      "media_type": "application/xml",
+      "collection": "PRIMARY",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/CONTEXT/B01-crossref-revive-notice.json",
+      "sha256": "38ae8033a26346f42df5afb3db76b35019a9efc2038e44ad99be5c8e71b5bf37",
+      "source_url": "https://api.crossref.org/works/10.7326/ANNALS-26-03050",
+      "retrieved_at": "2026-10-09T04:46:09+00:00",
+      "media_type": "application/json",
+      "collection": "CONTEXT",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/CONTEXT/B01-crossref-revive-original.json",
+      "sha256": "a8bf4118f55bb43e49d782bf807eb69a060a8170a1b0a659f9906af77bf949fd",
+      "source_url": "https://api.crossref.org/works/10.7326/ANNALS-25-03959",
+      "retrieved_at": "2026-10-09T04:46:10+00:00",
+      "media_type": "application/json",
+      "collection": "CONTEXT",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/CONTEXT/B01-crossref-revive-republished.json",
+      "sha256": "159e49a9ade82615bc77fe184817f0aaa55a6cead06779b8ab63f2b5b7d57003",
+      "source_url": "https://api.crossref.org/works/10.7326/ANNALS-26-02144",
+      "retrieved_at": "2026-10-09T04:46:10+00:00",
+      "media_type": "application/json",
+      "collection": "CONTEXT",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/CONTEXT/B01-crossref-covidout-erratum.json",
+      "sha256": "da940e6efed60189566e4974c821775359a2f3ae3f9c9bc32bcdd6952b4d6c60",
+      "source_url": "https://api.crossref.org/works/10.1016/S1473-3099(23)00562-5",
+      "retrieved_at": "2026-10-09T04:46:10+00:00",
+      "media_type": "application/json",
+      "collection": "CONTEXT",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/CONTEXT/B01-crossref-activ6-cid.json",
+      "sha256": "f4882ed5b0acd42139146ddd7c208825eb14e6d46e1ae6c95cb5ed9dc582d794",
+      "source_url": "https://api.crossref.org/works/10.1093/cid/ciag335",
+      "retrieved_at": "2026-10-09T04:46:11+00:00",
+      "media_type": "application/json",
+      "collection": "CONTEXT",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/CONTEXT/B01-crossref-stoppasc.json",
+      "sha256": "7ef1ae28561b04328c21d7035dd79c0e803892847189c559d72c1649a6fba1c6",
+      "source_url": "https://api.crossref.org/works/10.1001/jamainternmed.2024.2007",
+      "retrieved_at": "2026-10-09T04:46:11+00:00",
+      "media_type": "application/json",
+      "collection": "CONTEXT",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/PRIMARY/B01-covidout-PMC11259948.html",
+      "sha256": "c308f25b5c1530fce9323b356f993bba92852edc6d259b6c8fc4a57ceb990225",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11259948/",
+      "retrieved_at": "2026-10-09T04:46:14+00:00",
+      "media_type": "text/html",
+      "collection": "PRIMARY",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/PRIMARY/B01-activ6-preprint-PMC12363699.html",
+      "sha256": "c684d2dbedecc3a7dc9de580fba96d6c5503476309f66bbbb7cc4d1d75fa4072",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12363699/",
+      "retrieved_at": "2026-10-09T04:46:15+00:00",
+      "media_type": "text/html",
+      "collection": "PRIMARY",
+      "redistribution": "PMC preprint record: abstract only; author license does not permit PMC archiving of full text"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/PRIMARY/B01-stoppasc-PMC11161857.html",
+      "sha256": "2a1f471dcf528b8f4b4030d91a0867848e884f9f7aec61d6e82447d8727372c1",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11161857/",
+      "retrieved_at": "2026-10-09T04:46:15+00:00",
+      "media_type": "text/html",
+      "collection": "PRIMARY",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/CONTEXT/B01-stoppasc-correction-PMC11264073.html",
+      "sha256": "8036733a5d1f3304e5739f1a18611cd2b672ea3e824ead097b1ea305c6385c7e",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11264073/",
+      "retrieved_at": "2026-10-09T04:46:16+00:00",
+      "media_type": "text/html",
+      "collection": "CONTEXT",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/CONTEXT/B01-ctgov-NCT06128967.json",
+      "sha256": "dffb32f896994aacde35c0a199ea9a7662ae8602ae37c875be18e9fccdfb4079",
+      "source_url": "https://clinicaltrials.gov/api/v2/studies/NCT06128967",
+      "retrieved_at": "2026-10-09T04:46:16+00:00",
+      "media_type": "application/json",
+      "collection": "CONTEXT",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/CONTEXT/B01-ctgov-NCT04510194.json",
+      "sha256": "77dc000883f81bba0506c6bff4cf79ae95d9058a68b57be9411c5b69d918c126",
+      "source_url": "https://clinicaltrials.gov/api/v2/studies/NCT04510194",
+      "retrieved_at": "2026-10-09T04:46:16+00:00",
+      "media_type": "application/json",
+      "collection": "CONTEXT",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/CONTEXT/B01-ctgov-NCT04885530.json",
+      "sha256": "6dcbf0b7436d219b93788d530b51137d3d75db4fed3f3b6d017400bb5d1d876f",
+      "source_url": "https://clinicaltrials.gov/api/v2/studies/NCT04885530",
+      "retrieved_at": "2026-10-09T04:46:16+00:00",
+      "media_type": "application/json",
+      "collection": "CONTEXT",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/CONTEXT/B01-ctgov-NCT05576662.json",
+      "sha256": "4a6d5a5fcbfd3837dcd11b57bb426973366cc158e4eba2413d2a9c3fa49e3409",
+      "source_url": "https://clinicaltrials.gov/api/v2/studies/NCT05576662",
+      "retrieved_at": "2026-10-09T04:46:17+00:00",
+      "media_type": "application/json",
+      "collection": "CONTEXT",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/CONTEXT/B01-dailymed-metformin-IR-zydus.pdf",
+      "sha256": "ce0cb5b9e082fd29b24019658a88dfd37e5ff7c8687106a9917cf7391af09349",
+      "source_url": "https://dailymed.nlm.nih.gov/dailymed/downloadpdffile.cfm?setId=c82a10fa-1e8e-46b6-890a-737de3f34ee1",
+      "retrieved_at": "2026-10-09T04:47:01+00:00",
+      "media_type": "application/pdf",
+      "collection": "CONTEXT",
+      "redistribution": "US federal labeling (public SPL); retained for provenance"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/CONTEXT/B01-dailymed-metformin-ER-glumetza.pdf",
+      "sha256": "8d66d163be4e63a4c2a60bb0e95e05f1c08971d94a5e8cfdd66adb61c47ad74c",
+      "source_url": "https://dailymed.nlm.nih.gov/dailymed/downloadpdffile.cfm?setId=fb832474-88d9-4e29-95cd-fbc446944cc4",
+      "retrieved_at": "2026-10-09T04:47:02+00:00",
+      "media_type": "application/pdf",
+      "collection": "CONTEXT",
+      "redistribution": "US federal labeling (public SPL); retained for provenance"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/CONTEXT/B01-dailymed-fluvoxamine-IR-apotex.pdf",
+      "sha256": "18b59e443082dc89cc48197b9331647d83b984dd3c61ec52ca3c48baf49407c6",
+      "source_url": "https://dailymed.nlm.nih.gov/dailymed/downloadpdffile.cfm?setId=6eeb14df-6fcf-a737-5359-5744eb4accea",
+      "retrieved_at": "2026-10-09T04:47:03+00:00",
+      "media_type": "application/pdf",
+      "collection": "CONTEXT",
+      "redistribution": "US federal labeling (public SPL); retained for provenance"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/CONTEXT/B01-dailymed-fluvoxamine-ER-upsher.pdf",
+      "sha256": "5843e8563314b201d8429f700666c20cc9c47a7fcc942a261287f77335391613",
+      "source_url": "https://dailymed.nlm.nih.gov/dailymed/downloadpdffile.cfm?setId=49601858-df61-4522-ac99-0d2892f92e11",
+      "retrieved_at": "2026-10-09T04:47:04+00:00",
+      "media_type": "application/pdf",
+      "collection": "CONTEXT",
+      "redistribution": "US federal labeling (public SPL); retained for provenance"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/CONTEXT/B01-dailymed-nirmatrelvir-ritonavir-US.pdf",
+      "sha256": "9f0fb033ddff9fbde5da438b820f11b7ed1483706a2596cccc9f36c8ca5d3e94",
+      "source_url": "https://dailymed.nlm.nih.gov/dailymed/downloadpdffile.cfm?setId=8a99d6d6-fd9e-45bb-b1bf-48c7f761232a",
+      "retrieved_at": "2026-10-09T04:47:05+00:00",
+      "media_type": "application/pdf",
+      "collection": "CONTEXT",
+      "redistribution": "US federal labeling (public SPL); retained for provenance"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/CONTEXT/B01-ema-nirmatrelvir-ritonavir-EU-SmPC.pdf",
+      "sha256": "4b23ba150bb95800cdeb540cb63b825f728eec67d797b93e35c159d72997da80",
+      "source_url": "https://www.ema.europa.eu/en/documents/product-information/paxlovid-epar-product-information_en.pdf",
+      "retrieved_at": "2026-10-09T04:47:06+00:00",
+      "media_type": "application/pdf",
+      "collection": "CONTEXT",
+      "redistribution": "EMA product information; EMA reuse policy, provenance only"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/PRIMARY/B02-pubmed-efetch-12pmids.xml",
+      "sha256": "6507845f26f1a0e2acf7c84156e8af94def1d2f5c86ff0356dcbc95806f2f07f",
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=41771135,42673984,40188838,38735354,41789716,41164784,40810942,41562079,36844201,37003990,39348701,39214645&retmode=xml",
+      "retrieved_at": "2026-10-09T04:50:20+00:00",
+      "media_type": "application/xml",
+      "collection": "PRIMARY",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/PRIMARY/B02-stoppasc-pro-PMC12560753.html",
+      "sha256": "208cc62ae9a8eaa4a4ad6b5649b538ffc5873690db59e8abd144b406af421182",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12560753/",
+      "retrieved_at": "2026-10-09T04:50:26+00:00",
+      "media_type": "text/html",
+      "collection": "PRIMARY",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/PRIMARY/B02-stoppasc-biometric-PMC12355292.html",
+      "sha256": "268f66bc2007ff8700c90390b9a7fb67d4e9e68de1dab244783d1b24459f6354",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12355292/",
+      "retrieved_at": "2026-10-09T04:50:26+00:00",
+      "media_type": "text/html",
+      "collection": "PRIMARY",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/PRIMARY/B02-imc2-nmvr-caseseries-PMC12812670.html",
+      "sha256": "b58362e6c8969b1eaf2671b7fddd2d42b17d9a051be897915c2fe05b868b36a2",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12812670/",
+      "retrieved_at": "2026-10-09T04:50:27+00:00",
+      "media_type": "text/html",
+      "collection": "PRIMARY",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/PRIMARY/B02-maraviroc-pravastatin-caseseries-PMC9944830.html",
+      "sha256": "53eb5ccd4b793a1574c138e39bc13fc466e09f38cd8e5069a7d45f6f0f65126b",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9944830/",
+      "retrieved_at": "2026-10-09T04:50:27+00:00",
+      "media_type": "text/html",
+      "collection": "PRIMARY",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/PRIMARY/B02-fluvoxamine-postcovid-neuropsych-PMC10064948.html",
+      "sha256": "382c22dcc18ce3fba5894a9dff1c684dac1fad20ce4eeeafb89155a0f37ba159",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10064948/",
+      "retrieved_at": "2026-10-09T04:50:27+00:00",
+      "media_type": "text/html",
+      "collection": "PRIMARY",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/CONTEXT/B02-ctgov-NCT05668091.json",
+      "sha256": "d315962e2c8de670f3ca3a1dcb83c3dabebc7243f1f003834bebe6f772a51182",
+      "source_url": "https://clinicaltrials.gov/api/v2/studies/NCT05668091",
+      "retrieved_at": "2026-10-09T04:50:28+00:00",
+      "media_type": "application/json",
+      "collection": "CONTEXT",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/CONTEXT/B02-ctgov-NCT05595369.json",
+      "sha256": "ddfc3f01a57c295351842a09a7b5b3cbebdfe9265d10e895db533d06d0044cab",
+      "source_url": "https://clinicaltrials.gov/api/v2/studies/NCT05595369",
+      "retrieved_at": "2026-10-09T04:50:28+00:00",
+      "media_type": "application/json",
+      "collection": "CONTEXT",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/PRIMARY/B03-pubmed-efetch-21pmids.xml",
+      "sha256": "167dd94d4339e4c8aeaf51dd388d5b217f4fa18f67c32c4d57d863c26569807a",
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=41771135,40658388,37622035,37976072,37068273,41357034,28857388,40433308,42236640,42465953,40887815,42463201,41199272,42250263,33887354,41836927,42819690,42828068,42833027,42639460,40410927&retmode=xml",
+      "retrieved_at": "2026-10-09T04:54:28+00:00",
+      "media_type": "application/xml",
+      "collection": "PRIMARY",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/PRIMARY/B03-activ6-metformin-acute-PMC12261116.html",
+      "sha256": "4051bd3ad153d60cf7f6f20084a4fa264081746c03c689f3ca59bb72be6b39c8",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12261116/",
+      "retrieved_at": "2026-10-09T04:54:29+00:00",
+      "media_type": "text/html",
+      "collection": "PRIMARY",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/PRIMARY/B03-stopcovid2-fluvoxamine-PMC10445518.html",
+      "sha256": "3f45c13b424255875b390007308c8f5065db2ec854ad2de55708c050b1cc715b",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10445518/",
+      "retrieved_at": "2026-10-09T04:54:30+00:00",
+      "media_type": "text/html",
+      "collection": "PRIMARY",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/PRIMARY/B03-activ6-fluvoxamine-highdose-PMC10656670.html",
+      "sha256": "cd52b1ce511e94f691afe2452f36307ce8a9de252b681f275967ae9ee2fdd510",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10656670/",
+      "retrieved_at": "2026-10-09T04:54:30+00:00",
+      "media_type": "text/html",
+      "collection": "PRIMARY",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/PRIMARY/B03-together-fluvoxamine-budesonide-PMC10111398.html",
+      "sha256": "f76cafc50d3396e23885700d59d743561d973cad18be93787f67bac113796959",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10111398/",
+      "retrieved_at": "2026-10-09T04:54:30+00:00",
+      "media_type": "text/html",
+      "collection": "PRIMARY",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/PRIMARY/B03-pemivibart-longcovid-caseseries-PMC12681373.html",
+      "sha256": "ffc89f793b5431b14bec40884712cec757f33de412a52c190470a281c3f5ee7a",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12681373/",
+      "retrieved_at": "2026-10-09T04:54:31+00:00",
+      "media_type": "text/html",
+      "collection": "PRIMARY",
+      "redistribution": "Private provenance only; no redistribution rights established; HTML lacks full-text sections ({'chars': 30347, 'core_sections': 2, 'preprint_not_archived': False, 'is_full_text': False}); reclassified before receipt: manual review: complete case-report format (Introduction, Case Presentation, Discussion, Conclusions); automated core-section heuristic not applicable"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/PRIMARY/B03-metformin-er-vs-ir-rct-PMC5813139.html",
+      "sha256": "83383e077bd7aee8a1fdc1b286e240578e2c1556fde5c9b6746f3de7a7bf45f0",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5813139/",
+      "retrieved_at": "2026-10-09T04:54:31+00:00",
+      "media_type": "text/html",
+      "collection": "PRIMARY",
+      "redistribution": "Private provenance only; no redistribution rights established; HTML lacks full-text sections ({'chars': 28493, 'core_sections': 0, 'preprint_not_archived': False, 'is_full_text': False}); reclassified before receipt: manual review: complete brief-report full text with numbered headings (1. INTRODUCTION ...); automated heuristic missed numbered headings"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/CONTEXT/B03-metformin-covid-sr-bmj-PMC12107632.html",
+      "sha256": "0f4769a72a1cd4476980ed4f0c322b69002b3fd2fc7a8d33232fa121bc8efc45",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12107632/",
+      "retrieved_at": "2026-10-09T04:54:31+00:00",
+      "media_type": "text/html",
+      "collection": "CONTEXT",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/PRIMARY/B03-sglt2-metformin-longcovid-cohort-PMC13280275.html",
+      "sha256": "695b78f7652faf12c9dc30de12af576554fe1a7aa4575bb62fa437fa4387508c",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13280275/",
+      "retrieved_at": "2026-10-09T04:54:32+00:00",
+      "media_type": "text/html",
+      "collection": "PRIMARY",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/CONTEXT/B03-ldn-longcovid-sr-PMC13384149.html",
+      "sha256": "1208aaa6aedf578a1a1629d4606c52a889838119f1412b285681dc2b94532d36",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13384149/",
+      "retrieved_at": "2026-10-09T04:54:32+00:00",
+      "media_type": "text/html",
+      "collection": "CONTEXT",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/CONTEXT/B03-candidate-treatments-review-PMC12982061.html",
+      "sha256": "1d37978e0c72f6521ce7830bfd2dda7d3d3eb10c52f6455849437e542324050f",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12982061/",
+      "retrieved_at": "2026-10-09T04:54:32+00:00",
+      "media_type": "text/html",
+      "collection": "CONTEXT",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/CONTEXT/B03-pemivibart-immunobridging-PMC13501921.html",
+      "sha256": "e28699b944ade5cf0c7fa331f0eb409ea0e90064bc8738703696655d58124b0b",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13501921/",
+      "retrieved_at": "2026-10-09T04:54:33+00:00",
+      "media_type": "text/html",
+      "collection": "CONTEXT",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/CONTEXT/B03-offtarget-repurposing-framework-PMC13626745.html",
+      "sha256": "168e9b2153791035eb71d42f5b91b44565a3bd011bdd3f7b7f19215b6ff6c2e4",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13626745/",
+      "retrieved_at": "2026-10-09T04:54:33+00:00",
+      "media_type": "text/html",
+      "collection": "CONTEXT",
+      "redistribution": "Private provenance only; no redistribution rights established; HTML lacks full-text sections ({'chars': 50752, 'core_sections': 1, 'preprint_not_archived': False, 'is_full_text': False})"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/CONTEXT/B03-ai-repurposing-review-PMC13631471.html",
+      "sha256": "fa28f7d42a8796e6deb08422c75d8ffc6ca509837bbe1d6163b3193843f0b287",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13631471/",
+      "retrieved_at": "2026-10-09T04:54:34+00:00",
+      "media_type": "text/html",
+      "collection": "CONTEXT",
+      "redistribution": "Private provenance only; no redistribution rights established; HTML lacks full-text sections ({'chars': 181912, 'core_sections': 0, 'preprint_not_archived': False, 'is_full_text': False})"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/CONTEXT/B03-ctgov-NCT05877508.json",
+      "sha256": "9b31bef1795feb2be17295023279337a7373020ac7f34ed46785b32e41c062ff",
+      "source_url": "https://clinicaltrials.gov/api/v2/studies/NCT05877508",
+      "retrieved_at": "2026-10-09T04:54:34+00:00",
+      "media_type": "application/json",
+      "collection": "CONTEXT",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/CONTEXT/B03-ctgov-NCT07021794.json",
+      "sha256": "ebc5e5c1f9dcf33ff326a18a43a83262a89eac7a69bfe9e663aafad7a6c280fe",
+      "source_url": "https://clinicaltrials.gov/api/v2/studies/NCT07021794",
+      "retrieved_at": "2026-10-09T04:54:34+00:00",
+      "media_type": "application/json",
+      "collection": "CONTEXT",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/CONTEXT/B03-ctgov-NCT05911906.json",
+      "sha256": "79a3c8e7f676e4383bb3ec5b7b1b06ee56b9ff272f790abc9fc33d3d08db6cc1",
+      "source_url": "https://clinicaltrials.gov/api/v2/studies/NCT05911906",
+      "retrieved_at": "2026-10-09T04:54:34+00:00",
+      "media_type": "application/json",
+      "collection": "CONTEXT",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/CONTEXT/B03-ctgov-NCT06316843.json",
+      "sha256": "94c91910c0e99a82828dc7b132e8bc5bc525b06c482b6ae691afc9fb21c29516",
+      "source_url": "https://clinicaltrials.gov/api/v2/studies/NCT06316843",
+      "retrieved_at": "2026-10-09T04:54:35+00:00",
+      "media_type": "application/json",
+      "collection": "CONTEXT",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/CONTEXT/B03-fda-pemivibart-eua-hcp-factsheet.pdf",
+      "sha256": "2f2df3e6b3e42d77fb8067c603f9365e80969f1baa4117184bfdb8acc739733c",
+      "source_url": "https://www.fda.gov/media/177067/download",
+      "retrieved_at": "2026-10-09T04:54:35+00:00",
+      "media_type": "application/pdf",
+      "collection": "CONTEXT",
+      "redistribution": "US federal government work"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/CONTEXT/B03-fda-offlabel-page.html",
+      "sha256": "37a8de664c313cefd62cb818842faa732c564dd9cd5aaafc3ca1dd527ce458f8",
+      "source_url": "https://www.fda.gov/patients/learn-about-expanded-access-and-other-treatment-options/understanding-unapproved-use-approved-drugs-label",
+      "retrieved_at": "2026-10-09T04:54:35+00:00",
+      "media_type": "text/html",
+      "collection": "CONTEXT",
+      "redistribution": "US federal government work; HTML lacks full-text sections ({'chars': 6289, 'core_sections': 0, 'preprint_not_archived': False, 'is_full_text': False}); reclassified before receipt: complete official web page (policy page; journal-section heuristic not applicable)"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/CONTEXT/B03-ema-offlabel-glossary.html",
+      "sha256": "08e6c87371b6f60ca1c363427512eb5e3bff55f6e2dca1c0fe2cc5c9e4d3c918",
+      "source_url": "https://www.ema.europa.eu/en/glossary-terms/label-use",
+      "retrieved_at": "2026-10-09T04:54:36+00:00",
+      "media_type": "text/html",
+      "collection": "CONTEXT",
+      "redistribution": "Private provenance only; no redistribution rights established; HTML lacks full-text sections ({'chars': 2659, 'core_sections': 0, 'preprint_not_archived': False, 'is_full_text': False}); reclassified before receipt: complete official glossary page (short by nature)"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/CONTEXT/B03-mhra-offlabel-dsu.html",
+      "sha256": "c7e84fee8810a7421fbf0670a8afa651c2332f778f74b9fedced9f48d5ee0b87",
+      "source_url": "https://www.gov.uk/drug-safety-update/off-label-or-unlicensed-use-of-medicines-prescribers-responsibilities",
+      "retrieved_at": "2026-10-09T04:54:36+00:00",
+      "media_type": "text/html",
+      "collection": "CONTEXT",
+      "redistribution": "Open Government Licence v3.0; HTML lacks full-text sections ({'chars': 12113, 'core_sections': 0, 'preprint_not_archived': False, 'is_full_text': False}); reclassified before receipt: complete official web page (policy page; journal-section heuristic not applicable)"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/PRIMARY/B04-pubmed-efetch.xml",
+      "sha256": "e69bc8c8b1ae7b367c52e12192e5b6cde4ba06da174f800aa3d54ddd40d4d607",
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=37323625,41608149,42299164,42170801,42491797,34845868,42217373&retmode=xml",
+      "retrieved_at": "2026-10-09T05:01:29+00:00",
+      "media_type": "application/xml",
+      "collection": "PRIMARY",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/PRIMARY/B05-pubmed-efetch.xml",
+      "sha256": "3ff35d34c00b5391138b30e55078d6ad2dfd25c32113f409621656453235a941",
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42385209,42838712,36691245,39829389,40602411,42286321,42463201&retmode=xml",
+      "retrieved_at": "2026-10-09T05:01:29+00:00",
+      "media_type": "application/xml",
+      "collection": "PRIMARY",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/PRIMARY/B06-pubmed-efetch.xml",
+      "sha256": "56d205bc6a27bf226df408f34a6cdea3df7c34d6db9ee00d2d1e03aa654c77df",
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=40188830,41985884,40719030,39137064&retmode=xml",
+      "retrieved_at": "2026-10-09T05:01:30+00:00",
+      "media_type": "application/xml",
+      "collection": "PRIMARY",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/PRIMARY/B04-ovarian-repurposing-case-PMC10266906.html",
+      "sha256": "9e931d18ac9977bbd02870b4afc59373c66a57b76a4b6fcd5daafda3e1ee635f",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10266906/",
+      "retrieved_at": "2026-10-09T05:01:30+00:00",
+      "media_type": "text/html",
+      "collection": "PRIMARY",
+      "redistribution": "Private provenance only; no redistribution rights established; HTML lacks full-text sections ({'chars': 29077, 'core_sections': 0, 'preprint_not_archived': False, 'is_full_text': False}); reclassified before receipt by manual review: complete article with numbered/uppercase headings (heuristic false negative)"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/PRIMARY/B04-fenbendazole-dili-case-PMC12836008.html",
+      "sha256": "61221e5cf007893b045a421a16bb259c73a281e165b5913331fa21027d5fc3a0",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12836008/",
+      "retrieved_at": "2026-10-09T05:01:31+00:00",
+      "media_type": "text/html",
+      "collection": "PRIMARY",
+      "redistribution": "Private provenance only; no redistribution rights established; HTML lacks full-text sections ({'chars': 30327, 'core_sections': 2, 'preprint_not_archived': False, 'is_full_text': False}); reclassified before receipt by manual review: complete article with numbered/uppercase headings (heuristic false negative)"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/PRIMARY/B04-gbm-levetiracetam-phase2-PMC8729048.html",
+      "sha256": "ab52fa7ee724fd993d13bbdd121ee1565eb8d61cc8e9c5f5b2f61ef027567671",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8729048/",
+      "retrieved_at": "2026-10-09T05:01:31+00:00",
+      "media_type": "text/html",
+      "collection": "PRIMARY",
+      "redistribution": "Private provenance only; no redistribution rights established; HTML lacks full-text sections ({'chars': 41999, 'core_sections': 2, 'preprint_not_archived': False, 'is_full_text': False}); reclassified before receipt by manual review: complete article with numbered/uppercase headings (heuristic false negative)"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/PRIMARY/B05-ldn-fibromyalgia-12mo-rct-PMC13322712.html",
+      "sha256": "076de4b81132223f7ac82cec9429298b1801a0a8a94d759988641b16b6f24128",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13322712/",
+      "retrieved_at": "2026-10-09T05:01:32+00:00",
+      "media_type": "text/html",
+      "collection": "PRIMARY",
+      "redistribution": "Private provenance only; no redistribution rights established; HTML lacks full-text sections ({'chars': 77667, 'core_sections': 2, 'preprint_not_archived': False, 'is_full_text': False}); reclassified before receipt by manual review: complete article with numbered/uppercase headings (heuristic false negative)"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/CONTEXT/B05-csbd-fluoxetine-naltrexone-protocol-PMC9171192.html",
+      "sha256": "513359c4b822a6dbb1879654e2919ce8e33a6b6024c4ec842c3183b17cedefb2",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9171192/",
+      "retrieved_at": "2026-10-09T05:01:32+00:00",
+      "media_type": "text/html",
+      "collection": "CONTEXT",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/PRIMARY/B05-paxbd-pramipexole-bipolar-rct-PMC11831867.html",
+      "sha256": "1344969b730752df859112c0787f831294c9bb0210650d618d042788996943a5",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11831867/",
+      "retrieved_at": "2026-10-09T05:01:33+00:00",
+      "media_type": "text/html",
+      "collection": "PRIMARY",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/PRIMARY/B05-pramipexole-anhedonic-rct-PMC13375643.html",
+      "sha256": "58df45622ad0ca7ef24056fc63fc1d327aa9572f997a4a512976d122cd5a9fb5",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13375643/",
+      "retrieved_at": "2026-10-09T05:01:33+00:00",
+      "media_type": "text/html",
+      "collection": "PRIMARY",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/PRIMARY/B06-pearl-rapamycin-rct-PMC12074816.html",
+      "sha256": "c1c7cc938a5da05c404323cdcc30c921454776d8e1c65c2263eab55f0ea2b1ef",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12074816/",
+      "retrieved_at": "2026-10-09T05:01:33+00:00",
+      "media_type": "text/html",
+      "collection": "PRIMARY",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/PRIMARY/B06-rapa-ex-01-rct-PMC13082878.html",
+      "sha256": "b14d064d8f440224b0095ef7b445ecbff87e77d34b3f3aec4aa39a55d966f1cb",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13082878/",
+      "retrieved_at": "2026-10-09T05:01:34+00:00",
+      "media_type": "text/html",
+      "collection": "PRIMARY",
+      "redistribution": "Private provenance only; no redistribution rights established; HTML lacks full-text sections ({'chars': 59478, 'core_sections': 2, 'preprint_not_archived': False, 'is_full_text': False}); reclassified before receipt by manual review: complete article with numbered/uppercase headings (heuristic false negative)"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/CONTEXT/B06-dailymed-sirolimus-spl-index.json",
+      "sha256": "72fa639481093d1c7e1caf93787375f3a7ec057e7c6ec9047dfa019e58cbd08a",
+      "source_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls.json?drug_name=sirolimus&pagesize=5",
+      "retrieved_at": "2026-10-09T05:01:34+00:00",
+      "media_type": "application/json",
+      "collection": "CONTEXT",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    },
+    {
+      "path": "work/ingest/SL-INGEST-1.0/20261009T052519Z/input/out/CONTEXT/B06-dailymed-acarbose-spl-index.json",
+      "sha256": "aa86b14c4a7171d529681f58e3f902b9fe220153aca91cd3188aae06206e2e0d",
+      "source_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls.json?drug_name=acarbose&pagesize=5",
+      "retrieved_at": "2026-10-09T05:01:34+00:00",
+      "media_type": "application/json",
+      "collection": "CONTEXT",
+      "redistribution": "Private provenance only; no redistribution rights established"
+    }
+  ],
+  "reconciliation": {
+    "pilot_paper_records": 6,
+    "pilot_accepted_primary": 5,
+    "pilot_quarantined_primary": 1,
+    "pilot_full_html_acquired": 2,
+    "pilot_partial_fulltext_web_extract": 1,
+    "pilot_abstract_only": 3,
+    "pilot_pdf_files": 0,
+    "pilot_substantive_draft_reviews": 3,
+    "pilot_formal_appraisals": 0,
+    "pilot_human_approved": 0,
+    "pilot_released": 0,
+    "pilot_accepted_independent_study_families": 5,
+    "pilot_unacquired_named_trial_leads": 1,
+    "dispatch_staged_files": 85,
+    "dispatch_disposition_eligible_supported": 29,
+    "dispatch_disposition_context": 34,
+    "dispatch_disposition_pending_access": 15,
+    "dispatch_disposition_unreadable": 5,
+    "dispatch_disposition_schema_extension_required": 2,
+    "dispatch_new_papers": 24,
+    "dispatch_new_results": 38,
+    "dispatch_new_claims": 7,
+    "dispatch_new_context": 33,
+    "dispatch_searches": 341,
+    "dispatch_screening_records": 70,
+    "dispatch_patches": 9
+  },
+  "completeness": "INCOMPLETE. Draft import only; pilot source hash check HOLD; human review pending.",
+  "exceptions": [
+    "3-report substantive calibration rather than normal 20–30; initial pilot with current-source checks prioritized, scaling remains pending",
+    "ACTIV-6 direct download 403; relevant HTML sections accessed through web tool and saved as partial snapshot, not complete raw HTML",
+    "Two downloaded PubMed challenge pages are quarantined access failures, not paper files",
+    "Full-text Korean report and RECOVER-VITAL, supplements, registries, backward/forward citation coverage pending",
+    "No formal RoB 2, certainty grade, human scientific approval, or public release",
+    "COVID-OUT correction exact text and 10.4/10.6 discrepancy unresolved",
+    "REVIVE original quarantined after primary metadata retraction/republication check",
+    "Guide contract: question/answer and comparison variants used; glossary short-form exception; no manufactured entity safety/dosing advice",
+    "EXC-0001 B01 SRC-B01-REVIVE-NOTICE: HTTP 403; HTML challenge/blocked page (5726 bytes)",
+    "EXC-0002 B01 SRC-B01-REVIVE-REPUB: HTTP 403; HTML challenge/blocked page (5738 bytes)",
+    "EXC-0003 B01 SRC-B01-REVIVE-REPUB: HTTP 403; HTML challenge/blocked page (5753 bytes)",
+    "EXC-0004 B01 SRC-B01-REVIVE-REPUB: HTTP 403; HTML challenge/blocked page (5726 bytes)",
+    "EXC-0005 B01 SRC-B01-COVIDOUT-ERRATUM: HTTP 403; HTML challenge/blocked page (5834 bytes)",
+    "EXC-0006 B01 SRC-B01-ACTIV6-CID: HTTP 403; HTML challenge/blocked page (5773 bytes)",
+    "EXC-0007 B01 SRC-B01-ACTIV6-PREPRINT-PDF: HTTP 403; HTML challenge/blocked page (4563 bytes)",
+    "EXC-0008 B01 SRC-B01-COVIDOUT-ERRATUM: HTTP 403; HTML 1207892 bytes",
+    "EXC-0009 B01 SRC-B01-COVIDOUT-ERRATUM: doi.org link returned 2.6 KB JS redirect stub, not erratum content",
+    "EXC-0010 B01 SRC-B01-ACTIV6-PREPRINT-PDF: HTTP 403; HTML challenge/blocked page (5038 bytes)",
+    "EXC-0011 B02 SRC-B02-KOREA: HTTP 403; HTML challenge/blocked page (5738 bytes)",
+    "EXC-0012 B02 SRC-B02-KOREA: HTTP 403; HTML challenge/blocked page (5753 bytes)",
+    "EXC-0013 B02 SRC-B02-RECOVERVITAL: HTTP 403; HTML challenge/blocked page (5777 bytes)",
+    "EXC-0014 B02 SRC-B02-RECOVERVITAL: HTTP 403; HTML challenge/blocked page (5834 bytes)",
+    "EXC-0015 B02 SRC-B02-RECOVERVITAL: HTTP 400; XML 159 bytes",
+    "EXC-0016 B02 SRC-B02-PAXLC: HTTP 403; HTML challenge/blocked page (5856 bytes)",
+    "EXC-0017 B02 SRC-B02-PAXLC-PROTOCOL: HTTP 403; HTML challenge/blocked page (5732 bytes)"
+  ],
+  "source_version": "SL-INGEST-1.0-return-20261009T052519Z-draft"
+}

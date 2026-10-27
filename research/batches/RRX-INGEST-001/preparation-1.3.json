@@ -1,0 +1,97 @@
+{
+  "schemaVersion": "remaprx-plan-preparation-v1",
+  "preparedBy": "corpus_audit",
+  "coordinator": "codex/root",
+  "preparedAt": "2026-10-12T12:09:19.925960+00:00",
+  "status": "PROPOSED_AWAITING_INDEPENDENT_GP",
+  "planId": "RRX-INGEST-001-1.3",
+  "planSha256": "4f7100d3aa5df7ad98768c5c4be1d6f863bdcf4d0e115417c84e9f0577a02d71",
+  "previousPlanId": "RRX-INGEST-001-1.2",
+  "previousPlanSha256": "590613abf20c2dc5930a6a47c01f60b5a4c7fcc5ee8bc48693c013ff045971f0",
+  "inputCount": 134,
+  "inputDrift": [],
+  "changedPins": [
+    {
+      "path": "data/public-content.json",
+      "oldSha256": "f36ceaf62d7faf82027289373e8132c55567a3a50e336cca0c2b9b227f5acb30",
+      "newSha256": "528ecedb600be4b252a6d2269eafad381caf803c49b7f044ed9df865fbf443e4"
+    },
+    {
+      "path": "data/public-mechanisms.json",
+      "oldSha256": "bac453f5234c3c1b3f126e564c36ba0f2f5a8ea570d46799e3cf5f88bd596127",
+      "newSha256": "a93db68a5b119da91bafc8de03d44968baafa39e0733b8440f9ebf52e3bf4b5b"
+    },
+    {
+      "path": "docs/PROJECT-RULES.md",
+      "oldSha256": "be0309cea512978442bf168a2f0dc70d05eb3a92ef46b9913541548ee61033c1",
+      "newSha256": "17836fb0c484ea0f8c4f5e30945a51ec11540f903a13116364bedd1168a17472"
+    },
+    {
+      "path": "docs/RESEARCH-INGEST.md",
+      "oldSha256": "f7464fcdefa80e08f6152cab7da892a4bb709d79e8babf41c76e5a42011469e1",
+      "newSha256": "a9f56c76c20a1a4e74fc1e94ef8cb5020962208c95efcc1fbc57301e0e026642"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/calibration/assignments.json",
+      "oldSha256": "cbf38f304e2f541d6b4bd186a8c5d7bdd357be45692295f64edbf7f28055d9c0",
+      "newSha256": "fe60bfc9908daab15d9eb7708a9405b2a4dcc482c948f31e594837f07276d49b"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/cited-paper-ledger.json",
+      "oldSha256": "41b5d3e8f3ae3569f972214fbefcb9b23b576caade6316da2285a0ff08a9e703",
+      "newSha256": "ec004d13609954263a2953ee280bf9bff65f7600dd166850a66078b59d82d4a7"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/schemas/candidate.schema.json",
+      "oldSha256": "1a1c86d0c19b6a946a1222b13fd231776694b4788127b2881ae87727e570909a",
+      "newSha256": "b8b2d5f1a371992364551b09fd86daeed05a4efb6e34a2dd436a961d48ab6091"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/schemas/provenance.json",
+      "oldSha256": "38975e949cee246397b93713b8e5fd9e54a052489e0e9b3d3a4fef2de1190f0d",
+      "newSha256": "4a3b343b63f24b230425c8f8936f0f1635e85736b1283c7f1ce54c41cc66d868"
+    },
+    {
+      "path": "scripts/prepare-research-batch.py",
+      "oldSha256": "9198f2d6fe53f5258a3e47e7ce8f41457e03a91ca7a329d207a72143c743a91f",
+      "newSha256": "daecf0fa328be91b235078f4e2a70309d433aa638210b0f8328a4ef4e0e595cd"
+    },
+    {
+      "path": "scripts/research_ingest/source_validation.py",
+      "oldSha256": "5623e853d241ea86b7fddc80dd06a753b28391278d4e1c05da80a92dba2b7bd6",
+      "newSha256": "b5af770bba265faa3135679c86c2a9a2b57d2cb139db5c61fc5b72ea9e283868"
+    }
+  ],
+  "addedPinCount": 79,
+  "removedPinCount": 12,
+  "snapshotMap": "research/batches/RRX-INGEST-001/app-inputs/1.3/revision-2/source-map.json",
+  "snapshotCount": 20,
+  "operationBoundary": {
+    "operations": [
+      "validate"
+    ],
+    "currentActivation": "CAL-07 binding-only continuation after independent GP; no further CAL-01/CAL-03 extraction in this operation.",
+    "separateConditionBatch": "RRX-CONDITION-001 is a separate condition-led operation owned elsewhere. This historical repair/current-target MOA continuation neither imports that batch nor establishes condition-research completeness.",
+    "recoveredFilesUnchanged": 47,
+    "sourceAssignmentsUnchanged": 37,
+    "publicFilesEdited": 0,
+    "acquisitionPerformed": false,
+    "sourceExtractionPerformed": false
+  },
+  "checks": {
+    "planSchema": "PASS",
+    "candidateResultMechanismSchemaDefinitionChecks": "PASS",
+    "all20SnapshotMappingsAndHashes": "PASS",
+    "candidatePreservedBeforeGP": "PASS",
+    "selectedPinnedTests": {
+      "count": 50,
+      "status": "PASS",
+      "command": "PYTHONPATH=<RESEARCH>/work/evidence/python:tests/research_ingest python3 -m unittest tests.research_ingest.test_engine tests.research_ingest.test_inventory tests.research_ingest.test_recovery_audit tests.research_ingest.test_source_validation tests.research_ingest.test_mechanism_schema",
+      "earlierInvocation": "Without tests/research_ingest on PYTHONPATH, named-module invocation produced three fixture import errors; rerun with fixture module path passed. No core mutation performed.",
+      "scope": "Pinned core/test bytes unchanged between proposal1 and proposal2."
+    },
+    "checkpointStagingRefused": "PASS: Checkpoint staging is outside this prospective plan."
+  },
+  "replay": "Shared mutable original inputs and snapshots are pinned; fresh clone validation may require an isolated verified snapshot overlay using source-map.json. Do not overwrite active app. External raw source dependencies remain separately required.",
+  "pending": "Independent identity_review GP and readiness before CAL07 plan binding update; no self-approval."
+}

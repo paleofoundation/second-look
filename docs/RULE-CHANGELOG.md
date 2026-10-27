@@ -2,6 +2,55 @@
 
 Record requirements when adopted, even if implementation is pending. Keep history append-only; describe supersession explicitly. Each entry needs source/date, scope, requirement, affected contracts, implementation/verification/release status and unresolved work.
 
+## 2026-10-12 — SL-RULE-PHYSICIAN-PORTAL: table-led member packets
+
+Source: owner request to build condition-specific physician packets into the paid-subscriber portal, organize the material with tables and support printing/emailing; follow-up permits leaving specialist name/contact blank. Scope: member feature, document redesign and owner-inspectable NSCLC sample. Supersedes sample-only implementation scope. Contract: `docs/PHYSICIAN-PACKETS.md`.
+
+Implementation: private membership/edition checks, condition selection, structured preview, print styling, verified PDF download and member-controlled email draft. The owner does not require a physician signature; no specialist credentials are invented. Credit remains separate from the existing qualified clinical and commercial release gates. Local verification and deployment are recorded in `docs/PHYSICIAN-PACKET-IMPLEMENTATION.md`; live billing, real approvals and sending messages remain outside this development operation.
+
+
+## 2026-10-12 — SL-RULE-TOPIC-GUIDES: sharing, permanent topic guides and private member library
+
+Source: owner's explicit “PLEASE IMPLEMENT THIS PLAN” request, Metformin-first guides, sharing sidebar, and member library. Scope and acceptance: `docs/TOPIC-GUIDES.md`. Adopted prices are $49 once per topic (future approved editions included) and $59/month; membership follows three substantive releases in order Metformin, Long COVID, itraconazole. No first-release annual plan or physician edition. Supersedes prior catalogue prices, edition-only rights, and the persistent Entity/Scope/population rail. Preserve evidence panels, author/Page Snapshot, public safety and free authenticated reviews.
+
+Implementation includes canonical sharing and truthful mapped product offers; optional self-reported role/interests intake; private automatic library saves with removal/update semantics; protected versioned manuscripts; server-authorized Stripe Checkout/portal/webhooks; and a metformin source-gap reconciliation before substantive guide authoring. Research and human clinical/legal approval cannot be replaced by interface completion or payment fixtures. Status at adoption: implementation in progress in an isolated checkout of published source `b0a05596eb665f479bddb9f7517d1a8253f0877f`; no paid guide or live commerce released. Exact verification, deployment and unresolved external inputs will be recorded in `GUIDE-IMPLEMENTATION.md`. The pinned upstream/reference projects remain unchanged; reusable rule synchronization is pending.
+
+## 2026-10-12 — SL-RULE-PHYSICIAN-PACKET sample request
+
+Source: owner follow-up, “Create a sample for non-small-cell lung cancer so I can see exactly what a subscriber would print or email to their physician.” Scope: a local reviewable sample, including a printable PDF, editable document and email text. The five-page structure and four-report selection are implementation choices, not a condition-wide research completeness claim.
+
+Contracts: `docs/PHYSICIAN-PACKETS.md`, the subscriber packet section in `docs/PROJECT-RULES.md`, and the separate prospective `research/batches/RRX-PHYSICIAN-NSCLC-001/` plan/schema/readiness. This supersedes the earlier statement that no sample had been generated; it does not supersede source restrictions on historical research packets or enable subscriber release.
+
+Implementation/verification: static manuscript and artifacts prepared; source, schema, rendering and link checks are recorded in the batch handoff. Full Q01-Q15 appraisals, independent clinical approval, authenticated portal implementation and release remain pending. No email was sent, no patient records were collected, and no website, billing or canonical evidence changes were made. Upstream rule synchronization is not claimed.
+
+## 2026-10-12 — SL-RULE-PHYSICIAN-PACKET: paid subscriber discussion tools
+
+Source: owner's Drug Repurposing chat request for physician packets using “firm, but effective approaches” to discussing drug repurposing, specifying a logged-in paid-subscriber portal and print/email delivery, followed by a request for ten additional value ideas at $59/month membership and $39 per guide.
+
+Adopted scope: preserve the subscriber physician-packet requirement in `docs/PROJECT-RULES.md`; use the stated prices as planning assumptions. The lung-cancer surgery example supplies product context, not a treatment recommendation. Additional features and package details remain recommendations awaiting selection. No existing research-review access rule is superseded, and no live price or billing change is made.
+
+Status: requirement documentation only. Governance verification applies to the documentation; feature implementation, scientific review, print/email and entitlement verification, and release remain pending. This discussion does not send messages, ingest clinical studies or authorize individual treatment protocols. Upstream rule synchronization is not claimed.
+
+## 2026-10-12 — SL-RULE-011: condition-first intervention roundups
+
+Source: owner's Drug Repurposing correction: “This is for the condition, meaning we are investigating ALL of the potential drug repurposing interventions” and “the evidence table shows. A roundup of all of the drug repurposing interventions.” The owner requested an intelligent plan and necessary ingest-plan changes.
+
+Adopted scope: condition parents investigate repurposed drugs across the condition, beyond the initial drug portfolio, and clearly show which scoped outcomes benefit and how certain the evidence is. Keep contrary/null/mixed/harmful findings and preclinical/no-result candidates distinguishable. Reuse exact-scope synthesis across drug and condition views. Candidate and Related links do not substitute for discovery, investigation or evidence. This repairs failure to enforce the condition-wide discovery already required by the pinned rule and historical briefs.
+
+Planned implementation: condition-specific Overview / Interventions / Safety composition followed by the existing reader tail; drug rationales and comparisons remain attached to their relevant interventions; a compact Intervention / Outcome and finding / Evidence certainty / Evidence table. Preserve legacy anchors, cited scientific content, panel behavior and shared shell. This supersedes forced condition Options/Mechanism of Action/Comparisons modules and the universal three-column prescription for condition tables only. Exact design decisions are documented as the implementation plan, not as additional verbatim owner instructions.
+
+Contracts changed: `docs/CONDITION-PAGES.md`, `docs/PROJECT-RULES.md`, `docs/RESEARCH-INGEST.md`, `docs/ARTICLE-NAVIGATION.md`, research entry/handoff instructions and prospective `research/batches/RRX-CONDITION-001/` plan/schema. This change does not edit existing RRX-INGEST-001 or RRX-GAP-001 plans, schemas or readiness/history receipts. A concurrent operation changed live RRX-INGEST-001 dependencies during planning, recorded for fresh reconciliation. New operational readiness must be checked before dependent condition acquisition/extraction/import; the planning addendum does not expand a closed packet retroactively.
+
+Status: local diagnosis, reference inspection and planning changes completed; plan/schema validation is recorded with the new packet. New research, condition renderer/data migration, browser acceptance of that implementation and deployment remain pending. No scientific reassessment or release is claimed. Upstream, installed and exported One Match Rule synchronization remains pending through the existing integrator; the pinned snapshot and frozen baseline remain unchanged.
+
+## 2026-10-12 — SL-RULE-007: implement reconciled research ingestion and fan-out
+
+Source: owner's explicit “PLEASE IMPLEMENT THIS PLAN” request in the RemapRx research chat, adopting hybrid Codex/Grok, repair-before-expansion and MOA-01 within current targets. The complete adopted scope is in `research/batches/RRX-INGEST-001/PLAN.md`.
+
+Adopted: reconcile current app and external private acquisition/scientific stores without summing overlapping history; retain the 30+30 portfolio, all 36 questions, current additions, eight-drug mechanism scope and mandatory D07 oncology. Preserve historical closed-packet restrictions. Use prospective hashed plans/schemas, logical source roots, immutable receipts, centralized identity ownership, exact outcome scope, isolated worker outputs, independent checks and a store-wide guarded importer. Reuse later verified tooling rather than overwriting current data with pilot generators. Require 24-report calibration, separate completion dimensions and honest release gates.
+
+Scope: repository research infrastructure, private checkpoint reconciliation and bounded source-backed content candidates. Implementation/verification checkpoints and remaining scientific work are recorded in the batch handoff; this adoption entry does not claim those operations ran. No deployment or scientific release is implied. Reusable upstream synchronization remains pending; the pinned rule and historical receipts are preserved.
+
 ## 2026-10-11 — SL-RULE-001: durable collaborator repository
 
 Source: owner request in the Drug Repurposing chat: the Second Look website needs a GitHub repository for research collaborators, including all canonical instructions and One Match rules so rules created on this build are not lost. Owner selected private `paleofoundation/second-look`.
@@ -19,3 +68,264 @@ Adopted: ingestion instructions are a required onboarding entry point, linked fr
 Source: owner requirements recorded in `docs/rule-history/reader-rule-correction.md`; that preserved source contains the exact request and its bounded implementation report.
 
 Adopted for Second Look: Benefits prose followed by canonical question accordions; substantive original-use and condition mechanisms; supported safety answers; no internal unfinished-work prose substituted for answers. These locally applicable requirements are in `PROJECT-RULES.md`. Implementation/verification: preserve the source report's bounded claims; this repository handoff does not independently verify all affected reader journeys. Reusable upstream wording remains pending reconciliation; importing the current master must not discard the local correction.
+
+## 2026-10-11 — SL-RULE-004: sidebar icons, article order, study summaries and update history
+
+Source: owner request in Drug Repurposing, accompanied by `Screenshot 2026-10-11 at 12.43.50 PM.png` and `Screenshot 2026-10-11 at 12.43.56 PM.png`, and the live Examine endometriosis sidebar inspected during this change. The explicit request adds small sidebar icons to the site and One Match Rule, puts FAQs after Evidence in sidebar and body, assigns study summaries to Research Feed, and requires Update History using the Microbiome Medicine repository.
+
+Adopted: shared decorative outline icons; retain scientific modules; align the terminal section order as Evidence, Research Feed, FAQs, Update History, References; separate References from the Research child menu; provide canonical inline study summaries without bypassing full-review access; add durable dated change entries using the Microbiome timeline structure. This supersedes the FAQ-before-Evidence drug template, Research → Studies/References menu, missing icon configuration and Updates link to a source-count snapshot. Legacy fragment targets remain compatible.
+
+Affected contracts: `PROJECT-RULES.md`, `ARTICLE-NAVIGATION.md`, shared article composition/citation plan, semantic icon map, page update records, and the refreshed upstream One Match Rule snapshot. Implementation and exact verification results are recorded in `ARTICLE-NAVIGATION.md`. Source synchronization/publication was blocked by automatic approval review because the Sites workflow could export the private repository and publish it; no hosted release is claimed. Scientific review completion is unchanged.
+
+## 2026-10-11 — SL-RULE-004 release resolution
+
+Source: owner reply “Approve source sync and publication” to the request to synchronize the updated private source to the existing Sites project and publish at `second-look-evidence.kmfp.chatgpt.site`.
+
+The earlier publication block is resolved. Exact source commit `29166f85abbb12a2ff53f0cd3b77dcfdc9615b95` was synchronized and published as Sites version 23. Native deployment `appgdep_6acb8b392c648191b4809d48feccb0af` returned `succeeded` on 2026-10-11 at 13:12:49 UTC with the existing site URL. `ARTICLE-NAVIGATION.md` records the version, archive hash, prior verification and limits. Public audience and scientific access/release gates are unchanged. This follow-up records the release outcome; it does not grant scientific approval or claim that uploaded ChatGPT rule copies were refreshed.
+
+## 2026-10-11 — SL-RULE-005: activate the RemapRx apex domain
+
+Source: owner request to finish connecting `remaprx.com` after confirming its GoDaddy A and validation TXT records in public DNS. Scope: verify the existing custom hostname on Sites, confirm Active hostname and issued SSL, report exact additional DNS requirements if any, preserve nameservers, and leave `www` unchanged unless necessary and disclosed.
+
+Adopted in `PROJECT-RULES.md`; the hosting identity, records and verification receipt are retained in `CUSTOM-DOMAIN.md`. This completes the pending apex connection and supersedes its earlier pending/error state. The Sites refresh returned domain, provider and SSL statuses `active` at 13:40:27 UTC. The homepage loaded in the browser, and a separate certificate-validating HTTPS request returned HTTP 200. No additional DNS records, nameserver changes or `www` setup were needed. Existing public audience, application source version and scientific release gates were preserved. Implementation, live activation and domain verification are complete; no remaining domain work is claimed.
+
+## 2026-10-11 — SL-RULE-006: mechanism scope and canonical presentation assessment
+
+Source: owner reports two introductory sentences and eleven Mechanism of Action disclosures, asks whether all belong there, and requests a canonical style that a generator can complete, with a table suggested as a possibility. Page identity was not supplied; local itraconazole record D07 matches both counts (metformin D01 also has eleven disclosures but three introductory sentences).
+
+Requirement recorded in `PROJECT-RULES.md`: establish section-specific scope and a canonical generator presentation; eleven is not a fixed generation quota. This clarification does not yet supersede the accordion renderer with a table. Local content inspection finds nine condition-specific rationale entries and two underlying pathway explanations in D07. Recommendation under discussion: connected visible explanation, shared pathway explanations without duplication, and a condition-rationale table identifying mechanism, experimental basis and limits with citations. Detailed clinical results remain primarily in Benefits/Evidence. No scientific source reappraisal, content rewrite, generator/schema change, upstream synchronization or deployment was performed. Verification: governance integrity check for the documentation changes; final layout selection and implementation remain pending.
+
+## 2026-10-12 — SL-RULE-008: one-page mechanism presentation pilot
+
+Source: owner follow-up, “implement that structure on one page. If it works, we make it the canonical structure.” Scope: itraconazole (`/drugs/itraconazole`, D07), matching the page assessed in SL-RULE-006. Authorizes the proposed visible prose, shared pathway explanations and condition-rationale table on one page; does not adopt a global generator default. It supersedes the pending implementation status for this one page only.
+
+Implemented in the existing shared mechanism renderer and `data/public-mechanisms.json`, with sentence-bound citations, nine condition rows, two visible pathway explanations, all eleven legacy fragment IDs, responsive labeled cards and a page-scoped presentation history entry. Existing records and source IDs are reused; no research acquisition or scientific reappraisal is claimed. Contract, source mapping, checks and release status are recorded in `MECHANISM-PILOT.md`. Owner evaluation, global canonical adoption, and upstream/installed/exported rule synchronization remain pending.
+
+
+## 2026-10-12 — SL-RULE-008 publication receipt
+
+The one-page itraconazole mechanism pilot was published as Sites version 24 from isolated source commit `8d7424bd9dca50a68c224144749aaa04392e4eb1`. Native deployment `appgdep_6accc2e541c081918f673ae6b95426f4` succeeded at 11:22:34 UTC. The live page verified the two visible pathways and nine condition rows, with no mechanism accordions. Exact source/archive identity and verification are in `MECHANISM-PILOT.md`. This release completes the requested pilot; it does not adopt the structure globally or grant scientific approval.
+
+## 2026-10-12 — SL-RULE-009: blue/yellow design system and first topic illustrations
+
+Source: owner’s Drug Repurposing chat request with palette05.png, ten health-topic SVGs and an Examine brain-hero screenshot. Adopt a RemapRx design schema, migrate the site palette first, then illustrate Metformin and Parkinson’s disease in coordinated blues for the left hero region. Prepare browser-friendly images with descriptive metadata and reusable conventions for future RemapRx/PepsAnon artwork.
+
+Scope: shared visual tokens, existing brand assets, responsive topic hero rendering, two original illustrations, canonical image registry and image discovery metadata. Supersedes the previous navy/gold palette-preservation requirement within this scope. Contract: DESIGN-SYSTEM.md; verification and publication: DESIGN-VALIDATION.md. No scientific content, grade interpretation, access, robots/indexing or commercial release change. PepsAnon migration and remaining topic artwork are pending separate scope; upstream rule/installed skill synchronization is not claimed.
+
+### SL-RULE-009 publication receipt
+
+Theme and two hero illustrations published as Sites version 25 from source `cee0a45a7ceb49e44fd23afbcbbfd0590cdff4f7`, deployment `appgdep_6accc97796248191834ac96f48266aac`, succeeded 12 October 2026 at 11:50:39 UTC. Local checks and exact archive identity are recorded in DESIGN-VALIDATION.md. Existing indexing and scientific/commercial release gates remain unchanged.
+
+## 2026-10-12 — SL-RULE-010: American English page language
+
+Source: owner's explicit Drug Repurposing instruction: “Drug Repurposing pages must be written in American English with American English Spelling.”
+
+Adopted: American English wording and spelling throughout authored reader-facing pages and future content generation/import, with `en-US` document language and prose date formatting. Preserve exact source titles, quotations, proper names, raw source wording and stable identifiers; use American English for surrounding prose and displayed status labels. This supersedes inherited British English wording and the Update History `en-GB` date locale. Contract: `PROJECT-RULES.md`, Language and spelling.
+
+Implementation: correct identified spelling variants in current authored page copy, summaries, table labels, mechanism prose, guide/account messages and matching editorial copy; retain original published titles and compatibility aliases. Set the shared HTML language and Update History locale to `en-US`, update prose date labels and the existing date expectation. The CSBD population label is normalized in the shared reader adapter, preserving fingerprinted source records and their existing evidence assessments. Verification and publication results are recorded below after checks. No scientific reassessment or raw-source rewrite is implied. This is a local project requirement; upstream/installed/exported One Match Rule synchronization is not claimed.
+
+Verification before packaging: governance integrity, canonical content, reader identity/source closure, unchanged evidence-assessment fingerprints, all 64 profile section renders, 68-article navigation/history rendering, TypeScript and whitespace checks passed in the isolated publication checkout. Guide marketing hashes were regenerated for the spelling-only presentation change; approval and release fields were preserved. Shared React copy/status display changes were reviewed for hooks, accessibility, typing and behavior. Production build, public payload checks and deployment are pending below; no browser comparison was needed for the copy-only change.
+
+### SL-RULE-010 publication receipt
+
+Published as Sites version 26 from source `f0d929b67c8c74b23601c59565080729fa6d1f06`; deployment `appgdep_6acccb256f5081919d372b6884a09bff` succeeded on October 12, 2026 at 11:57:50 UTC. Archive SHA-256: `5972ea8ce0f945e5a30722c02119976380e35f2a12c20f01d941ec1d96dfa9d9`. Production build and built public-payload boundary checks passed (30 payloads). Independent diff review confirmed exact source records, titles, stable identifiers, evidence values, grades and assessment fingerprints were preserved. Existing public audience and scientific/access/commercial release gates are unchanged. The American English requirement and identified current-copy corrections are implemented and published; ongoing content must follow the language contract.
+
+## 2026-10-12 — SL-RULE-012: internal links without underlines
+
+Source: owner's request with the Metformin introduction screenshot: “Remove the underline style from this website. internally-linked pages should show up without underline.” Adopted in `docs/DESIGN-SYSTEM.md`: no underlines for internal page and fragment/citation links in normal or interaction states, preserving blue links and keyboard focus. Supersedes inherited wiki-link and hover underline styles. Consulted Microbiome Medicine theme styles and PepsAnon prose/theme styles; current owner instruction takes precedence.
+
+Implementation: shared global internal-destination CSS override; no content or target changes. Verification and publication pending. Upstream/reference projects unchanged.
+
+
+## 2026-10-12 — SL-RULE-HERO-ROLLOUT: complete the blue topic illustration set
+
+Source: owner request, “Let's create matching hero images for the remaining drug and condition pages on remaprx.com, using the same blue style and metadata setup.”
+
+Adopted scope: extend the existing Metformin/Parkinson illustration system to all current drug and condition routes, including canonical discovery pages. Preserve original blue art direction, left hero placement, transparent responsive WebP assets, individual social previews and accurate descriptive metadata. This supersedes the first pass's pending remaining-topic artwork scope; PepsAnon migration remains separate. Contract: `DESIGN-SYSTEM.md`; exact prompts/master provenance: `assets/hero-art/*-generation.json`; verification and publication: `HERO-ROLLOUT-VALIDATION.md`.
+
+Implementation underway in a checkout synchronized with live Sites version 26, source `f0d929b67c8c74b23601c59565080729fa6d1f06`. The merged route inventory has 64 topic pages (32 drugs and 32 conditions), requiring 62 new originals. Scientific prose, evidence grades, access, indexing and commercial release are unchanged. Final asset coverage, validation and deployment must be recorded before marking this rollout complete. No upstream/installed/exported rule synchronization is claimed.
+
+### SL-RULE-012 verification and publication receipt
+
+Governance, canonical wiki-link/SSR checks, whitespace checks, production build and built public-payload boundary validation passed in the isolated live-source checkout. Published as Sites version 27 from `01577a3c655c4fbc637b27d6cfce860743cd187b`; deployment `appgdep_6accd1e91df48191bf3dac97a2cfb029` succeeded October 12, 2026 at 12:26:42 UTC. Archive SHA-256: `5e5eaba3fe5682c44a1d00c06a8405c11e862dd9523ded381e0872d543570dd9`. No browser visual comparison was performed. Existing audience and release gates preserved; unrelated workspace changes excluded.
+
+## 2026-10-12 — SL-RULE-GRADE-COLORS: brand evidence-grade palette
+
+Source: owner's evidence-table screenshot and explicit request that evidence grades use the website's colors. Adopted in `docs/DESIGN-SYSTEM.md`: replace inherited teal badges with the RemapRx blue scale and neutral ungraded treatment, preserving labels and evidence semantics. Supersedes the prior grade-color preservation exception for badge styling only. Shared `reading-modules.css` is the implementation; no evidence records or grading logic are changed. Verification/publication receipt follows locally after deployment; reference sites and upstream rules remain unchanged.
+
+
+## 2026-10-12 — SL-RULE-ATLAS-IDENTITY: owner-sketched enclosing Rx arrow
+
+Source: owner's selection of initial concept 02's chunkiness/weight, request to pause for a drawing, and subsequent IMG_6541.heic / IMG_6542.heic sketch attachments in the RemapRx atlas implementation chat. Scope: logo shape refinement only. Adopt the whole-Rx enclosing arrow as the visual reference; preserve both the x-connected wrap and separate open-ring interpretations for comparison. This supersedes treating the arrow as only an underswoop beneath Rx.
+
+Affected contract: DESIGN-SYSTEM.md. Related work: two original editable SVG concept families and rendered comparison/small-size previews in assets/brand-concepts/sketch-round-2. Status: drafts created and visually inspected; SVG parsing passed. Owner selection, production identity/favicons, integration and publication remain pending. No clinical, research, access or scientific-release changes are made in this refinement. The main application repository and isolated atlas checkout both retain this requirement; upstream rule synchronization is not claimed.
+
+### SL-RULE-GRADE-COLORS publication receipt
+
+Published as Sites version 28 from `6660a08e1ede47e4cf38c6eb9593c5a5f374d79f`; deployment `appgdep_6accd3b0d6f481919f92a95ea038a615` succeeded October 12, 2026 at 12:34:16 UTC. Governance, evidence-section SSR, evidence-grading integrity, whitespace, production build and built public-boundary checks passed. All five foreground/background combinations exceed 4.5:1 text contrast (minimum 5.65:1). No browser visual comparison performed. Scientific values, audience and release gates are unchanged.
+
+## 2026-10-12 — SL-RULE-GRADE-BARS: evidence strength icons
+
+Source: owner's request to add the screenshot's small strength bars beside grades using the blue colors. Adopted in `docs/DESIGN-SYSTEM.md`; implemented in the shared evidence table using the existing `.grade-bars` styling and PepsAnon `components/peptide/evidence.tsx` reference. Three ascending bars encode High/Moderate/Low/Very low as 3/2/1/0 filled; ungraded evidence has no strength icon. Visible labels, accessible button names, blue palette and grade-panel actions are preserved. No scientific record or grading logic changes. Verification/release receipt follows locally.
+
+### SL-RULE-GRADE-BARS publication receipt
+
+Sites version 29, source `f4804463e383f0bcf44b9b51fa691056278208dc`, deployment `appgdep_6accd465f1a4819188f78037ad62aeb4` succeeded October 12, 2026 at 12:37:17 UTC. Governance, evidence-section SSR (64 profiles), TypeScript, whitespace, production build and built public-boundary checks passed. No browser visual comparison performed. Scientific grades and existing audience remain unchanged.
+
+## 2026-10-12 — SL-RULE-HERO-ROLLOUT publication receipt
+
+Completed 62 new original blue hero illustrations across all 64 current topic pages (32 drugs, 32 conditions), preserving the two approved originals. Published Sites version 30, source `4606f88a6b5fc1843b616a4db5602f877c576b38`, version `appgprj_6ac734459a508191a425263c7645a0be~appgver_90e4a05781b48191bb514f59b3138b10`, deployment `appgdep_6accd6249c08819187ae009fa7b34e03`, at https://remaprx.com. The rollout was reconciled with newer internal-link and evidence-grade presentation updates before release. Production build, reader-boundary, TypeScript, governance and article-navigation checks passed. Full asset validation passed 256 hashes; live verification passed 64 topic pages and 128 image downloads, including canonical/Open Graph/Twitter/ImageObject metadata. Existing scientific and indexing gates remain in force. Bounded source/assets were synchronized to the canonical repository without overwriting concurrent identity, condition or research edits. Details: `docs/HERO-ROLLOUT-VALIDATION.md`.
+
+## 2026-10-12 — SL-RULE-PAGE-SNAPSHOT: author ORCID and page-scoped research counts
+
+Source: owner's Microbiome Medicine screenshot and explicit request for an ORCID-logo-only link beside the name, plus study and investigated-drug counts on conditions and study and investigated-condition counts on drugs. Adopted in `docs/DESIGN-SYSTEM.md`; supersedes the visible full ORCID string and generic Research sources hero block. The implementation reuses verified author identity and public canonical citation/study/relationship records, groups recorded study identities, and excludes unsupported candidate-only counts. Study-count identity coverage follows available canonical metadata; no independent-trial audit or scientific reassessment is implied.
+
+Implemented in the shared author/article components, `components/page-snapshot.tsx` and `lib/page-snapshot.ts`. `scripts/check-page-snapshot.mjs` covers duplicate reports, multi-family syntheses, background/uncited exclusions, disputed references, unsupported candidates, zero coverage and both directions on all 64 profiles. TypeScript and all-profile SSR checks pass. Browser and publication receipts will be recorded after verification. Upstream/reference repositories and scientific release gates are unchanged.
+
+Verification before publication: Page Snapshot tests pass for all 64 profiles, including study identity deduplication, multi-study separation, cited-only counts, zero coverage and source-supported investigation counts. All-profile section SSR, 68-article navigation/citation/history checks, TypeScript, governance and whitespace checks pass. Browser preview returns HTTP 200; Metformin and Long COVID render the correct metric labels, the official ORCID icon is beside the name and points to the existing verified URL, biography opening/closing works, study-count links target Research Feed, and the labeled information popover opens with the included entities. Visual inspection passed at the browser's 985px width; requested 390px viewport was ignored by the browser provider, so narrow-mobile visual acceptance is unverified. React review confirms stable hook order, separate sibling button/link controls, decorative icons, accessible link/button labels and no new data requests.
+
+### SL-RULE-PAGE-SNAPSHOT publication receipt
+
+Published as Sites version 31 from `066b45cf47f11b08e05bc1f1ef6688748b722eac`, after merging illustration release 30 (`4606f88a6b5fc1843b616a4db5602f877c576b38`). Deployment `appgdep_6accd895acc8819180a03959170119a9` succeeded October 12, 2026 at 12:55:11 UTC. Archive SHA-256: `5b83584dd8ba381a47a9daa3f93606825f4ada33a3a3aeac8d3421b1cdddf4a0`. Merged snapshot/governance/TypeScript checks, production build and built public-boundary validation passed. Live Metformin shows Page Snapshot with 19 studies referenced and 10 conditions investigated, and the author icon points to `https://orcid.org/0000-0002-2348-7259`. Local Long COVID shows 5 studies and 2 drugs; itraconazole source checks show 13 studies and 9 conditions. Counts follow recorded identity links, with no claim that all unmapped companion reports have been reconciled. Mobile viewport verification remains limited as recorded above. Existing audience, newer artwork and scientific/access/commercial release gates are preserved.
+
+
+## 2026-10-12 — SL-RULE-ATLAS-IDENTITY: simplified Rx target preview
+
+Source: owner's Rx/target screenshot and explicit request to make the simplified version, showing the blue logo on white and the blue-on-yellow favicon before applying them to the site. Scope: one refined identity preview. This supersedes the earlier two-wrap comparison as the active design direction without declaring final production approval. Contract: `DESIGN-SYSTEM.md`, Simplified Rx target preview.
+
+Implemented editable outlined SVG drafts, separately weighted favicon geometry, PNG inspection sizes and a comparison sheet in `assets/brand-concepts/target-round-3/`. Preserved the heavy Rx, outer arc and flat directional arrow; removed internal target detail. The adopted blue/yellow palette is retained. Rendered sheet and actual 16/32-pixel samples were inspected on light and dark surroundings. SVG parsing, asset dimensions and governance verification are recorded with this local preview. No application component, public asset, scientific record or deployment is changed. Owner assessment, final identity production, site integration and publication remain pending.
+
+## 2026-10-12 — SL-RULE-GLOSSARY-HERO: Hedgehog pathway first illustration
+
+Source: owner's explicit request, “Glossary pages need images. Hedgehog Pathway should be your first attempt.” Adopt the blue illustration/metadata system for individually assigned glossary pages, with Hedgehog pathway as the first pilot. This supersedes the drug/condition-only image catalog scope, while retaining all 64 existing assignments and leaving unassigned glossary entries on their existing layout. Contract: `DESIGN-SYSTEM.md`; provenance: `assets/hero-art/glossary-generation.json`; verification/release: `GLOSSARY-HERO-PILOT.md`.
+
+Implementation starts from published Sites version 31 (`066b45cf47f11b08e05bc1f1ef6688748b722eac`), preserving the recent author/Page Snapshot update. Add one conceptual signaling illustration, glossary catalog support and shared image structured data in the glossary branch. Existing definition, citations, research and access/indexing gates are unchanged. This is the first visual attempt; other glossary illustrations remain unassigned. No upstream rule synchronization is claimed.
+
+
+## 2026-10-12 — SL-RULE-ATLAS-IDENTITY: restore mapping detail and tighten Rx
+
+Source: owner's rejection of the over-simplified mark as losing the mapping visual, explicit acceptance of small-size detail loss, and request to bring Rx closer together and restore “x marks the spot.” Scope: logo/favicon refinement only. This supersedes removing internal target detail for favicon simplicity. Contract: `DESIGN-SYSTEM.md`, Mapping meaning restored.
+
+Implemented a closer Rx arrangement centered on restored concentric target rings, crosshairs, registration marks and radial connectors in `assets/brand-concepts/mapping-round-4/`. The blue-on-white symbol and blue-on-yellow favicon retain the heavy letters and flat arrow. Favicon strokes are strengthened while all mapping features remain. Comparison render, native 16/32-pixel samples, SVG parsing and PNG dimensions checked; governance verification applies to this documentation update. Prior drafts are preserved. Owner assessment, production identity integration and publication remain pending. No site code, scientific records or public assets are changed.
+
+### SL-RULE-GLOSSARY-HERO publication receipt
+
+Published the Hedgehog pathway first glossary illustration as Sites version 32, source `7f6138d5297a0fdc99197860676208a91dee6991`, deployment `appgdep_6accdd34add081918658c2ffcc6215aa`, at https://remaprx.com/glossary/hedgehog-pathway. Retained original transparent PNG and exact built-in ImageGen prompt; generated 512/1024 WebP and social PNG; added accurate glossary metadata and shared ImageObject structured data. Desktop and mobile previews, TypeScript, governance, article navigation, production build and reader-boundary checks passed. Full validation passed 65 image mappings and 260 hashes; live verification passed 65 pages and 130 image downloads. Bounded changes are synchronized to this canonical repository; no scientific or indexing release changed. Full receipt: `GLOSSARY-HERO-PILOT.md`.
+
+## 2026-10-12 — SL-RULE-GLOSSARY-COMPLETE: remaining glossary illustrations
+
+Source: owner's explicit request to create matching images for the remaining glossary pages using the same blue style and metadata setup. Scope: all 20 remaining entries, completing 21 glossary illustrations and 85 illustrated drug/condition/glossary routes. Preserve the accepted Hedgehog pilot and all existing topic art. Supersedes optional glossary image coverage; catalog and asset checks now require all canonical glossary entries. Contract: `DESIGN-SYSTEM.md`; exact prompts: `assets/hero-art/glossary-generation.json`; verification/publication: `GLOSSARY-HERO-ROLLOUT.md`.
+
+Implementation begins from live Sites version 32, source `7f6138d5297a0fdc99197860676208a91dee6991`. Biological and statistical subjects follow the existing definitions and are conceptual illustrations, without measured results or treatment claims. Existing prose, references, audience and scientific/access/indexing gates are preserved. Publication and verification results follow in the rollout record. No upstream rule synchronization is claimed.
+
+## 2026-10-12 — RRX-CAL-T1: resume complete scientific calibration
+
+Source: owner request in the research chat, “Continue with calibration. Finish the itraconazole packet’s full scientific review, then work through the remaining first-tranche reports.” Scope: CAL-07 first, then CAL-01–CAL-08 in the preserved assignment matrix; historical holds, canonical identities and previous receipts remain intact. Completion requires substantive Q01–Q15 review and input coverage, full report/required companion inspection, source-version/integrity checks and independent audit. AI-authored scientific review completion remains separate from human approval, scientific release and deployment. Narrow lawful retrieval of missing CAL-07 figures/supplement and dated integrity metadata uses a separate prospective acquisition packet; historical closed packets do not gain retrospective web enrichment. Operational plans, schemas, readiness and progress: `research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/`. New work is pending those readiness passes. No public application change is authorized by this continuation.
+
+
+## 2026-10-12 — SL-RULE-WWW-REPAIR: restore www availability
+
+Source: owner's “Can you fix it?” following the reported outage and diagnosis of HTTP 200 at the apex versus a TLS handshake failure at `www.remaprx.com`. Scope: register/verify `www` on the existing Sites project and make necessary GoDaddy DNS changes while preserving nameservers, apex configuration, audience and application release. This supersedes SL-RULE-005's leave-www-unchanged scope for this repair. Contracts: `PROJECT-RULES.md` and `CUSTOM-DOMAIN.md`.
+
+Implementation: www registered; provider and SSL active, overall status pending at 13:47:56 UTC. Sites ownership TXT remains required; GoDaddy is signed out and user sign-in was requested. No DNS mutation or application publication yet. Final domain activation and HTTPS verification remain pending. Exact IDs, record values and continuation steps are retained in `CUSTOM-DOMAIN.md`. Governance validation applies to these documentation changes; no upstream rule synchronization is claimed.
+
+
+## 2026-10-12 — SL-RULE-ATLAS-IDENTITY: approved mapping identity and homepage publication
+
+Source: owner's explicit approval of mapping round 4, instruction to apply its logo/favicon and mapping visual to the hero, and reminder to replace Second Look and the old “A familiar drug. A different question.” copy and go live. Scope: shared identity, current reader-facing branding/metadata, homepage atlas claim and generic mapping illustration. Supersedes preview-only status and the simplified mark. Production code/assets and contract are in `REMAPRX-IDENTITY.md`; earlier concepts are preserved.
+
+Implemented against live version 33 in an isolated checkout to preserve concurrent published work. The approved icon and wordmarks, SVG/ICO favicon, touch icon and default social image use the adopted blue/yellow palette. Readable HTML mapping labels, target geometry and solid/dashed routes retain the category visual. No evidence records, review approvals, clinical grades, audience or indexing gates change. Relevant checks, browser review, source integration and exact publication receipt are recorded in `REMAPRX-IDENTITY.md`. Earlier mechanism work is not included or declared complete. No upstream/installed/exported One Match Rule synchronization is claimed.
+
+
+### SL-RULE-ATLAS-IDENTITY publication receipt
+
+Sites version 34 published from `a4dc664fd2644d9c4d46d6846d9a546bdf4b8c4c`; deployment `appgdep_6acce58359408191a60c223d56d142db` succeeded October 12, 2026 at 13:50:33 UTC. https://remaprx.com now serves the approved mapping logo/favicon, atlas homepage and reader-facing RemapRx identity. Production build, 30 built public-payload checks, governance, TypeScript, content/evidence/navigation checks and responsive browser checks passed. Live verification covered seven pages and seven byte-identical identity assets. The original audience, noindex/robots, scientific and access/commercial gates are preserved. Exact archive and verification records: `REMAPRX-IDENTITY.md`. Earlier mechanism work remains pending separately.
+
+
+### SL-RULE-WWW-REPAIR completion receipt
+
+October 12, 2026: after the owner signed into GoDaddy and requested completion, added the single www ownership-verification TXT record. GoDaddy and public DNS confirmed its exact value; existing CNAME, apex A records and nameservers remain unchanged. Sites reports domain/provider/SSL active at 13:54:39 UTC. Certificate-validating HTTPS returns HTTP 200 with the current RemapRx homepage; regular Chrome renders it. HTTP redirects to HTTPS and reaches HTTP 200. Apex HTTPS also returns HTTP 200. Full receipt: `CUSTOM-DOMAIN.md`. Hosting repair and verification complete; no application source publication, audience change or scientific release was performed. No remaining domain work.
+
+
+## 2026-10-12 — SL-RULE-ATLAS-MAP-COPY: mapping vocabulary
+
+Source: owner explicitly corrected the hero clause to “and map each connection to its sources” and emphasized map, mapping and remap. Scope: current hero, About and matching metadata/social brand copy. Supersedes the trace wording in the identity contract; preserve precise scientific provenance terminology and historical receipts. Implemented as bounded copy updates with the same approved artwork and existing release gates. Contract and verification/publication status: `REMAPRX-IDENTITY.md`. No ingestion or upstream One Match Rule changes are required.
+
+
+Mapping-copy publication: Sites version 35, source `70c19536f84d40153053cb4607a752dbad901c15`, saved version `appgprj_6ac734459a508191a425263c7645a0be~appgver_af7ab1f07d648191b22b56a9374221fe`. Deployment `appgdep_6acceb2643ec81918ad299fff1d2073a` succeeded October 12, 2026 at 14:14:23 UTC. Production build, governance and 30 built public-payload checks passed. The live browser at https://remaprx.com confirms the exact new hero clause and matching Open Graph/Twitter descriptions, with noindex/nofollow preserved. Copy changes and the regenerated social image were applied to the canonical working tree with bounded replacements; concurrent work remains intact. Receipt and live screenshot: parent workspace `artifacts/remaprx-map-copy/`.
+
+
+### SL-RULE-TOPIC-GUIDES publication receipt
+
+Infrastructure published as Sites version 36 from `c12df71db701d5f8ba180a35f326b1adde64c33b`; deployment `appgdep_6acceff26e3c81918332236af1fbbc1d` succeeded October 12 at 14:34:53 UTC. Live desktop/mobile guide offers and 13 public/private HTTP checks pass; full verification and outstanding release requirements are in `GUIDE-IMPLEMENTATION.md`. Canonical changes were synchronized without replacing concurrent research. The actual Metformin source-return checkpoint holds 12 source assets with independent receipt acceptance; scientific extraction/assessment and the paid manuscript remain outstanding. No sales or membership activated. The isolated Stripe sandbox is still unavailable in the connector.
+
+## 2026-10-12 — SL-RULE-VALUE-PRICING: price according to delivered value
+
+Source: owner's follow-up that Examine is not charging enough and RemapRx should charge according to its value, time saved and the seriousness of the lives it helps. Scope: guide and membership pricing rationale in `docs/TOPIC-GUIDES.md`. Competitor prices are context, not a ceiling; greater demonstrated value can justify a higher price. Assess source quality, substantive synthesis, reader time saved, useful medical-discussion tools and continuing updates. Health stakes reinforce the existing evidence and review standards; no clinical benefit is newly established by a pricing decision.
+
+Supersedes using the earlier Examine comparison as a pricing anchor or ceiling. The owner did not select new dollar amounts: catalog prices remain $49 once and $59/month. Implementation is a documentation-only policy update, preserved in the canonical repository and the isolated guide implementation checkout; governance and whitespace checks apply. No public copy, billing, access or scientific release changes. Selecting a revised amount and substantiating specific value claims remain future work. Upstream rule synchronization is not claimed.
+
+## 2026-10-12 — SL-RULE-TREATMENT-SUITABILITY: who should not be considered
+
+Source: owner explicitly requested contraindications and who should not be considered on both the website and physician packet. Scope and acceptance: [TREATMENT-SUITABILITY.md](TREATMENT-SUITABILITY.md). Supersedes the sample's brief safety-only treatment: require cited suitability rows for each repurposed drug, separating formal contraindications, indication-specific label restrictions, precautions/interactions and study-population limits. Adds a visible heading across 32 existing drug contraindication sections and condition-to-drug restriction links. Fresh label checks cover metformin and itraconazole, shared with NSCLC and the seven-page sample; the other drug statements are preserved, not freshly reassessed. Implemented in shared table/citation paths and packet schema version 2. Scientific review, commercial launch and real packet release remain separate; no identity, approval or entitlement is invented. Source plan, records, checks and release receipt: `research/batches/RRX-SAFETY-001/`. No upstream One Match Rule synchronization is claimed.
+
+
+## 2026-10-12 — Metformin content pilot
+
+The user designated metformin as the immediate page-completion pilot using existing evidence. Its overview introduces the drug, approved use and breadth of repurposing investigations. Mechanisms use one cohesive introductory paragraph, visible pathway explanations and a condition-specific table separating rationale, measurements and limits. Clinical outcome questions remain in Benefits. Preserve existing citation identities and mechanism anchors; this presentation change does not confer scientific-review or release approval.
+
+Published as Sites version 38, source `7508bab34daeac1b87b9602d166c0fc1ab868aae`. Deployment `appgdep_6accf7f246048191ab359d6967983b8e` succeeded at 2026-10-12 15:09:02 UTC. Build and 36 built public-payload scans pass. Live NSCLC Safety shows eight cited rows and both intervention links. Public audience preserved. Receipt: `docs/TREATMENT-SUITABILITY-DEPLOYMENT.json`. This publication adds no approved member packet or clinical endorsement.
+
+
+## 2026-10-12 — Metformin pathway accordion pilot
+
+Source: owner request on the localhost metformin page to turn its three mechanism subsection headings into FAQ-style accordions, retaining headings rather than questions, before canonical adoption. Scope: metformin D01 only; supersedes its visible pathway blocks while preserving opening prose, condition table, all scientific text, citations and legacy fragments. Contract: `PROJECT-RULES.md`; implementation/verification: `MECHANISM-PILOT.md`. Uses shared FAQ CSS and native details/summary with independent, initially collapsed panels and existing article fragment reveal. Local implementation; owner assessment, canonical adoption and publication are pending. No upstream rule synchronization or scientific reassessment is claimed.
+
+## 2026-10-12 — SL-RULE-OUTCOME-TABLES: grouped outcome synthesis and A–F benefit grades
+
+Source: owner's five attached Examine screenshots and explicit request to fix data and present drug/condition benefits quickly. Scope: shared condition and drug evidence tables, clinical outcome grouping, trial/participant counts, benefit grades, effect size and right research sidebar. Adopt Intervention / Outcome / Grade / Effect / Evidence for conditions and Health condition / Outcome / Grade / Effect / Evidence for drugs. One condition/intervention group contains outcome-level syntheses; compatible studies combine, repeated reports do not become independent trials, and Long COVID prevention remains distinct from established-disease treatment inside one condition group. Move source-bound condition mechanisms, measurements and limits into that group's/row's sidebar with expandable study details.
+
+Supersedes the three-column table, the earlier four-column condition plan, and using certainty as the visible Grade. A–F now describes likelihood of benefit under a transparent RemapRx editorial method; retain original certainty assessments separately and never translate their labels mechanically. Contracts: `OUTCOME-TABLES.md`, `PROJECT-RULES.md`, `CONDITION-PAGES.md`, `RESEARCH-INGEST.md` and `editorial/OUTCOME-BENEFIT-GRADING.md`. Existing scientific, protected-review and commercial release boundaries remain. No claim of Examine's proprietary formula or comprehensive literature coverage. Implemented and published as Sites version 40; data, UI, source-boundary and live checks are recorded in `OUTCOME-TABLES.md` and `OUTCOME-TABLES-DEPLOYMENT.json`. Upstream pinned and installed rule synchronization is pending, not claimed.
+
+
+## 2026-10-12 — SL-RULE-MAPPING-HEADLINE: active atlas headline
+
+Source: owner follow-up, “why not mapping new targets for approved medications.” Adopt “Mapping new targets for approved medications.” in the homepage and matching brand copy. Supersedes the shorter “New targets for approved medications.” headline. Contracts: `PROJECT-RULES.md` and `REMAPRX-IDENTITY.md`. Implementation covers hero/footer copy, metadata and the reproducible default social artwork. Verification and publication are complete as recorded below and in the identity contract; no research or upstream rule changes are required.
+
+
+## 2026-10-12 — Metformin rationale block removal
+
+Source: owner request “remove this” with Screenshot 2026-10-12 at 8.50.27 PM.png. Remove the complete Metformin “Rationale by condition” block: heading, explanatory paragraph, condition link list, residual multiple-myeloma table and treatment-outcomes footer. This supersedes the Metformin pilot requirement to retain that visible table. Preserve the introductory paragraph, pathway accordions, canonical source-bound records, Evidence drawer content and nonvisual legacy fragment targets. Other pages retain their existing layout. Implemented in the shared renderer with a Metformin-only option; local verification pending. This continues the existing local mechanism pilot; no publication or global adoption is claimed.
+
+Verification: governance, all 64 profile SSR checks, evidence mechanism checks and TypeScript passed. React review found no new hooks, requests or keyboard interaction changes. A loopback HTTP check could not connect to the existing preview server from this execution environment; no browser verification or deployment claimed.
+
+
+Mapping-headline publication: Sites version 39, source `9750e7a59486527f8ec18bf17c79a074421bbaf8`, saved version `appgprj_6ac734459a508191a425263c7645a0be~appgver_41e0fa8336548191841c56e648ec6c4f`. Deployment `appgdep_6acd1ebe6f148191bd5cde37a1d30b52` succeeded October 12, 2026 at 17:54:30 UTC. Governance, production build and 36 built public-payload checks passed. Local browser verification confirmed readable wrapping at 1280 and 390 pixels; the social image was visually checked. The live browser at https://remaprx.com confirms the new H1 and footer after refresh. Existing public audience is preserved. Exact receipt: parent workspace `artifacts/remaprx-mapping-headline/publication.json`. Bounded copy, artwork and contract changes are synchronized to the canonical working tree; concurrent work is preserved.
+
+## 2026-10-14 — preserve current design while repairing checks
+
+Source: owner request to fix four layout checks and the typecheck error without changing the current design, then rerun checks. Scope: validation against published version 41 and an optional-image guard in the retained backup `components/shared-theme/theme 2.tsx`. Contract: `docs/ARTICLE-NAVIGATION.md`, October 14 verification baseline.
+
+Supersedes stale test expectations for standalone Benefits/Results, generic Quality prose, prose-only Status, sharing-before-article DOM order and the narrower Page Snapshot source list. The current renderer, CSS, data and citation behavior remain unchanged. Implementation updates the four checks while retaining explicit assertions for the replacement layout and source boundaries. Verification pending the complete rerun below; no deployment or scientific approval is implied.
+
+Verification completed against base commit `7c314c29ad167a81cdd10c060ecc3add02ea5975` plus this bounded patch: all 20 check scripts (`check-*.mjs`, content and reader checks) pass, including all 64 profile renders and 68 evidence/navigation articles. TypeScript passes without incremental output. Production build, 36 built-client payload boundary scans, 66 guide marketing hashes, guide asset integrity and whitespace checks pass. HTTP checks pass against the local production build: 13 page/access responses, 85 topic pages and 170 image downloads. The guide PDF check used the bundled Python runtime. No browser visual comparison or live deployment was performed; active application components, CSS and canonical content are byte-unchanged from the base commit. The only TSX change guards the optional image in the unreferenced backup component.
+
+
+## 2026-10-14 — unbracketed superscript citations
+
+Source: owner request linked to Metformin citations 3, 4, 11 and 15: remove all bracketing around superscripted citations. Scope: shared article/research-review inline citations site-wide. Supersedes bracketed superscript markers; preserves numbering, source IDs, popovers, reference fragments and accessible labels. Consulted PepsAnon `components/peptide/citations.tsx`; the explicit owner correction overrides its bracketed style. Contract: `PROJECT-RULES.md`. Implemented bare-number citation links with space between adjacent markers and updated existing citation-order checks. Verification: governance, 68-article navigation, reader-section and 64-profile/four-answer evidence SSR checks, wiki links, TypeScript, production build and 36 built-client boundary scans passed. Browser verification on the production preview confirmed all 155 Metformin inline markers are bare numbers and adjacent clusters remain visibly separated. Publication pending. No scientific content or release approval changes.
+
+
+## 2026-10-14 — center Rx in favicon
+
+Source: owner request to balance the favicon around the heavier Rx, with the lighter circle offset right. Scope: generated SVG/ICO favicon and touch icon; supersedes complete-target centering for these icons. Contract: `REMAPRX-IDENTITY.md`. Implemented favicon-only framing and refreshed metadata cache versions. Verification: governance, TypeScript, SVG/ICO dimensions and visual inspection at native icon sizes passed. Production build passed; publication pending; other brand assets retain their approved geometry.
+
+
+## 2026-10-14 — reduce favicon target by 15%
+
+Source: owner confirmation to reduce the circle and surrounding marks by exactly 15%, centered on the x, leaving Rx where it is. Favicon-only generator transform scales the rings, crosshairs, connectors and arrow by 0.85 around original coordinates (313, 292); Rx path data and outer framing are unchanged. SVG, 16/32/48-pixel ICO and touch icon are regenerated, with refreshed icon URL versions. This supersedes the previous favicon target size; other brand assets retain their existing geometry. Verification: Rx path/framing identity, exact 0.85 target transforms, ICO dimensions, native-size visual inspection, governance and TypeScript passed. Publication pending.
+
+
+## 2026-10-15 — restore citation brackets
+
+Source: owner request, “please put citation brackets back. Mistake.” Scope: shared article and research-review superscript links site-wide. Supersedes the October 14 unbracketed-citation requirement; restore square-bracketed numbers and original tight cluster spacing. Consulted PepsAnon citation component. Contract: `PROJECT-RULES.md`. Shared renderer, CSS and existing citation-number checks updated; source identity/order and popover behavior preserved. Verification: governance, 68-article navigation, reader sections, 64-profile/four-answer evidence SSR, TypeScript, production build and 36 built-client boundary scans passed. Publication pending.

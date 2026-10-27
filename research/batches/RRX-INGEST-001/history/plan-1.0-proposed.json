@@ -1,0 +1,258 @@
+{
+  "allowedTargets": [
+    "research/corpus/RRX-INGEST-001/acquisition/assets.jsonl",
+    "research/corpus/RRX-INGEST-001/acquisition/coverage.json",
+    "research/corpus/RRX-INGEST-001/acquisition/f00-crossref-gaps.jsonl",
+    "research/corpus/RRX-INGEST-001/acquisition/f01-f02-import-report.json",
+    "research/corpus/RRX-INGEST-001/acquisition/f01-f02-receipt-appearances.jsonl",
+    "research/corpus/RRX-INGEST-001/acquisition/f01-f02-source-references.jsonl",
+    "research/corpus/RRX-INGEST-001/acquisition/gaps.jsonl",
+    "research/corpus/RRX-INGEST-001/acquisition/import-report.json",
+    "research/corpus/RRX-INGEST-001/acquisition/itraconazole-links.json",
+    "research/corpus/RRX-INGEST-001/acquisition/open-flags.json",
+    "research/corpus/RRX-INGEST-001/acquisition/quarantine.json",
+    "research/corpus/RRX-INGEST-001/acquisition/report-aliases.json",
+    "research/corpus/RRX-INGEST-001/acquisition/reports.jsonl",
+    "research/corpus/RRX-INGEST-001/acquisition/request-source-mapping.jsonl",
+    "research/corpus/RRX-INGEST-001/acquisition/screening.jsonl",
+    "research/corpus/RRX-INGEST-001/acquisition/searches.jsonl",
+    "research/corpus/RRX-INGEST-001/acquisition/source-receipt.json",
+    "research/corpus/RRX-INGEST-001/acquisition/sources.jsonl",
+    "research/corpus/RRX-INGEST-001/draft-science/claims.jsonl",
+    "research/corpus/RRX-INGEST-001/draft-science/corpus.json",
+    "research/corpus/RRX-INGEST-001/draft-science/integration-holds.json",
+    "research/corpus/RRX-INGEST-001/draft-science/manifest.json",
+    "research/corpus/RRX-INGEST-001/draft-science/mechanism-duplicate-dispositions.json",
+    "research/corpus/RRX-INGEST-001/draft-science/mechanisms.json",
+    "research/corpus/RRX-INGEST-001/draft-science/new-source-flags.json",
+    "research/corpus/RRX-INGEST-001/draft-science/result-bindings.json",
+    "research/corpus/RRX-INGEST-001/draft-science/result-dispositions.json",
+    "research/corpus/RRX-INGEST-001/draft-science/results.jsonl",
+    "research/corpus/RRX-INGEST-001/draft-science/reviews.jsonl",
+    "research/corpus/RRX-INGEST-001/draft-science/source-dispositions.json",
+    "research/corpus/RRX-INGEST-001/draft-science/source-integrity-notices.json",
+    "research/corpus/RRX-INGEST-001/prior-evidence/corpus.json",
+    "research/corpus/RRX-INGEST-001/prior-evidence/results.jsonl",
+    "research/corpus/RRX-INGEST-001/prior-evidence/claims.jsonl",
+    "research/corpus/RRX-INGEST-001/prior-evidence/reviews.jsonl",
+    "research/corpus/RRX-INGEST-001/prior-evidence/papers.jsonl",
+    "research/corpus/RRX-INGEST-001/prior-evidence/studies.jsonl",
+    "research/corpus/RRX-INGEST-001/prior-evidence/context.jsonl",
+    "research/corpus/RRX-INGEST-001/prior-evidence/pages.jsonl",
+    "research/corpus/RRX-INGEST-001/prior-evidence/coverage.json",
+    "research/corpus/RRX-INGEST-001/prior-evidence/identity-map.json",
+    "research/corpus/RRX-INGEST-001/prior-evidence/open-flags.json",
+    "research/corpus/RRX-INGEST-001/prior-evidence/quarantine.json",
+    "research/corpus/RRX-INGEST-001/prior-evidence/numerical-audit.json",
+    "research/corpus/RRX-INGEST-001/prior-evidence/source-manifest.json",
+    "research/corpus/RRX-INGEST-001/prior-evidence/validation.json",
+    "research/corpus/RRX-INGEST-001/prior-evidence/evidence.schema.json"
+  ],
+  "contract": {
+    "batchId": "RRX-INGEST-001",
+    "delivery": {
+      "dispatchRequires": "separate filled request, packet and GP readiness",
+      "externalWorker": "Grok gap-only acquisition via downloadable attachments",
+      "receiver": "this project; manual attachment transfer then independent receipt verification",
+      "returnRequires": [
+        "actual files",
+        "hash manifest",
+        "searches",
+        "screening",
+        "gaps",
+        "review-inputs.jsonl",
+        "CHATGPT-INGEST-PROMPT.txt"
+      ]
+    },
+    "fanout": {
+      "acceptOwnWork": false,
+      "calibrationReportPackets": 24,
+      "calibrationTranches": 3,
+      "initialBatchSize": 20,
+      "integrators": 1,
+      "largerBatchAfterAcceptedBatches": 2,
+      "largerBatchSize": 30,
+      "ownership": "canonical report plus companions and coordinated family",
+      "packetsPerTranche": 8,
+      "workerSlots": 3
+    },
+    "fullPlan": "research/batches/RRX-INGEST-001/PLAN.md",
+    "identityLedger": "research/batches/RRX-INGEST-001/inventory/identity-groups.jsonl",
+    "mechanismTargets": [
+      "D01",
+      "D06",
+      "D07",
+      "D08",
+      "D10",
+      "D26",
+      "D31",
+      "D34"
+    ],
+    "moaScope": "existing targets only; extra drug names remain leads",
+    "mode": "historical_closed_packet_reuse; separately planned future gap acquisition",
+    "ownerInstructionDate": "2026-10-12",
+    "release": {
+      "humanReview": "pending unless separately documented for exact version",
+      "publication": false,
+      "reviewAccess": "free_authenticated",
+      "technicalAcceptanceIsScientificApproval": false
+    },
+    "resultSchema": "research/batches/RRX-INGEST-001/schemas/results.schema.json",
+    "reviewInputMap": "research/batches/RRX-INGEST-001/schemas/review-questions-and-inputs.json",
+    "scope": "Reconcile and recover private checkpoint; calibrated source extraction and content proposals under pinned schemas. Reader data application requires an explicit new allowlist and acceptance.",
+    "sourceInventory": "research/batches/RRX-INGEST-001/inventory/source-records.jsonl",
+    "sourceResolver": "research/batches/RRX-INGEST-001/inventory/source-locations.json",
+    "sourceSchema": "research/batches/RRX-INGEST-001/schemas/candidate.schema.json",
+    "targetRegistry": "research/batches/RRX-INGEST-001/inventory/target-registry.json",
+    "verification": {
+      "calibrationIndependentAudit": 1.0,
+      "launchSources": 1.0,
+      "materialError": "expand affected worker/design/format audit",
+      "otherFulltextAuditMinimum": 0.1,
+      "publicNumericalClaims": 1.0
+    }
+  },
+  "createdAt": "2026-10-12T11:23:39.496474+00:00",
+  "inputs": [
+    {
+      "path": "data/content.json",
+      "sha256": "f8252d1140ba1b522bdb60a7e5f2e2b507c6fe0fea8454b69caf82808a94aafc"
+    },
+    {
+      "path": "data/private-reviews.json",
+      "sha256": "b3b5f75443899b359d78575d693d82444143897154c22862023598c2c873401c"
+    },
+    {
+      "path": "data/reader-evidence.json",
+      "sha256": "8ec76d5e8fb500df1dac7e6167332c7b283806018f1c900ea46fa9120b74c32b"
+    },
+    {
+      "path": "data/review-envelopes.json",
+      "sha256": "9dbc05bec5d78002e4f1cd78fb7494ef4d00c7b04c6cd5ab9abb020312f2d8e0"
+    },
+    {
+      "path": "docs/PROJECT-RULES.md",
+      "sha256": "be0309cea512978442bf168a2f0dc70d05eb3a92ef46b9913541548ee61033c1"
+    },
+    {
+      "path": "docs/RESEARCH-INGEST.md",
+      "sha256": "f7464fcdefa80e08f6152cab7da892a4bb709d79e8babf41c76e5a42011469e1"
+    },
+    {
+      "path": "editorial/reader-source-aliases.json",
+      "sha256": "70186e5e5ced9232a4a21b321c5c988058191c514131dbea8ce442e352cb2fef"
+    },
+    {
+      "path": "editorial/reader-source-corrections.json",
+      "sha256": "06561277b96ef2f869312715e2a55ebcc9a9c84662b8e0d59714dd8395e7b0e2"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/PLAN.md",
+      "sha256": "f3b1eafd069d9eb14f6d04c43175e127d044b6c0235c6749ae458a2314736e54"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/inventory/bindings.jsonl",
+      "sha256": "e209b478978f58af171444cae5de356be7ccf33769a0f879bf26aec1d04aa806"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/inventory/calibration-candidates.json",
+      "sha256": "5759f823b6da344708f749f10cf01e5af2b43f38a1a7c6c2e90cad171d4b9f3a"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/inventory/gaps.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/inventory/identity-groups.jsonl",
+      "sha256": "73c5e0e6956fe9a30df02c84cb0ae4d22c46537eca99c677123e77de51c650d6"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/inventory/input-manifest.json",
+      "sha256": "4efc30f453319c2f81e5b43d1e3e534cbd6d2189cb5f1eaf3d6793150841af7b"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/inventory/lineage.jsonl",
+      "sha256": "1f78ca1debd24948f4e442bf5de4810bb4e17312c30845783651deb8ab53a949"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/inventory/ownership.json",
+      "sha256": "770edc65d995109d882338d53f61a85f277b2962660e176459954b88421436a2"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/inventory/preserved-aliases.json",
+      "sha256": "43734d399a07a48cff7fbf24e68a1fca38377e24d8f6074d18405654d3879dd9"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/inventory/return-appearances.jsonl",
+      "sha256": "3ca970d1a95bd43a16debbfc5d40099e96709ce5e5e1ec4b09d6e1455aa53ddf"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/inventory/source-locations.json",
+      "sha256": "f9acf5c2a678052a78e002f4e678c2a9db8eeb95cc30265ddb4a30dd6e47573c"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/inventory/source-records.jsonl",
+      "sha256": "dc399e094efb0628a477c5d828adfb956557eda2f49eb6650b0aaed54e373be7"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/inventory/summary.json",
+      "sha256": "9fd7572074fbbbd27e8ea1c241ab8432591a9f2d50fc8f826903e06ff330059c"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/inventory/target-registry.json",
+      "sha256": "23c9e49c113edd378b577eb880e4e90ef0f2acbc1199aa4be124fb6f3dcfbc44"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/recovery-inputs.json",
+      "sha256": "bb8f412bc4d5dbf55d3e5c4c1ff3762cf9723f6cbbdfa82c7ccc8daf2fc2e576"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/schemas/acceptance.schema.json",
+      "sha256": "3794f9f163d88b4bd20d570222df249ac8b40614a0a370d5af26e198b6ab3db3"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/schemas/candidate.schema.json",
+      "sha256": "183fe25dca75175ab62dfef4358e0e279658d338091d89b69b66fbfc864b9f45"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/schemas/manifest.schema.json",
+      "sha256": "6f82fed0daef296ecb835863d0072a427f89c42d3a4d14aab4d5091503e1f111"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/schemas/plan.schema.json",
+      "sha256": "cebd3da57eb15c94473a4e6c55c9ccab4c1abdbb7e35d577d17a3cac4e172ee8"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/schemas/provenance.json",
+      "sha256": "268d6a516a4689a506322be99669ee4fe7c9cd6e4798dd2f11686f2d4ff945c1"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/schemas/readiness.schema.json",
+      "sha256": "f8a899d1a4ea94125261b6ea0a1380e7903bdb457c3cf78661f7ea043e9717f5"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/schemas/report.schema.json",
+      "sha256": "57b146a682d2028eaea39c86ed7266fb1410fce97a36576bff0999dc73cc9ba0"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/schemas/results.schema.json",
+      "sha256": "2eef6845104eb74a7a80c3ca967acd9cb9b41313ab390e439ba516b2ce5b602b"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/schemas/review-questions-and-inputs.json",
+      "sha256": "02edeacc65227e5feeaf25b6c9568be406b48024216f83d2dda2ccfcc5042f3b"
+    },
+    {
+      "path": "rules/one-match-rule/ONE-MATCH-RULE.md",
+      "sha256": "7fae46e83e1da5e139b0ab2d11ca02292603c63a50f764c89819b0792bc2f330"
+    }
+  ],
+  "operations": [
+    "validate",
+    "stage",
+    "diff",
+    "apply"
+  ],
+  "planId": "RRX-INGEST-001-1.0",
+  "schemaVersion": "remaprx-ingest-plan-v1"
+}

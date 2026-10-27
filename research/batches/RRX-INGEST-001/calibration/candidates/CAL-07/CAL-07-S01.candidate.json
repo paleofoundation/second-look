@@ -1,0 +1,1384 @@
+{
+  "schema_version": "RRX-SCIENTIFIC-CANDIDATE-1.0",
+  "plan_id": "RRX-INGEST-001-1.3",
+  "plan_sha256": "4f7100d3aa5df7ad98768c5c4be1d6f863bdcf4d0e115417c84e9f0577a02d71",
+  "assignment_id": "CAL-07-S01",
+  "batch_id": "RRX-INGEST-001",
+  "source_id": "MECH-D07-HEDGEHOG-2010",
+  "canonical_report_id": "MECH-D07-HEDGEHOG-2010",
+  "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+  "inspection": {
+    "scope": "partial_source",
+    "pages_read": [],
+    "total_pages": null,
+    "visual_numeric_pages": [],
+    "native_sections_read": [
+      "article-front-matter",
+      "abstract1",
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S7",
+      "S8",
+      "S9",
+      "S10",
+      "S11",
+      "S12",
+      "S13",
+      "S14",
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6",
+      "F7",
+      "SM",
+      "BX1",
+      "S15",
+      "fn-group1"
+    ],
+    "method": "Read exact assigned HTML via lxml native text and stable element IDs; all substantive main-text paragraphs, methods and figure legends inspected. Partial_source because remote figure pixels and separate supplement contents were not inspected."
+  },
+  "source_identity": {
+    "printed_doi": "10.1016/j.ccr.2010.02.027",
+    "observed_type": "original_report",
+    "evidence_class": "preclinical_cell_and_mouse_experiments",
+    "identity_notes": "Local source title, DOI, PMCID PMC4039177 and PMID 20385363 match assignment. PMC HTML presents accepted author manuscript with final-publication citation; no external version lookup.",
+    "applicability": "candidate_relevant",
+    "applicability_reason": "Directly investigates itraconazole in Hh-pathway cell and tumor models; relevant to D07 mechanistic rationale and C19 mouse BCC scope, not human efficacy.",
+    "source_integrity": "no_notice_in_supplied_packet"
+  },
+  "processing_state": "partial_candidate",
+  "read_log": [
+    {
+      "location": "Article citation/front matter",
+      "action": "Read title, DOI, PMCID/PMID, author affiliations and manuscript/version label in the assigned HTML.",
+      "limitations": "External publisher/version/correction pages were not opened."
+    },
+    {
+      "location": "abstract1; S1; paragraphs P1-P4",
+      "action": "Read summary and introduction for objective and mechanistic context.",
+      "limitations": "Background citations are not independently acquired primary sources."
+    },
+    {
+      "location": "S2; paragraphs P5-P22",
+      "action": "Read all Results and Discussion paragraphs and compare tested observations with proposed mechanism and clinical translation.",
+      "limitations": "No new acquisition; numerical graph values and reported exposure comparisons are not independently verified."
+    },
+    {
+      "location": "F1-F7; figure legends P43-P52",
+      "action": "Read all seven figure legends and cross-check the localization figure reference discrepancy in P12.",
+      "limitations": "Remote figure image bytes were not present in the assigned local file and were not fetched. No pixel-level figure inspection claimed."
+    },
+    {
+      "location": "S3-S14; paragraphs P23-P40",
+      "action": "Read all experimental methods, including cell assays, binding competition, immunofluorescence/microscopy, mouse models, growth/necrosis measurements and exposure bioassays.",
+      "limitations": "Detailed arm/experimental-unit numeric extraction and formal risk-of-bias appraisal remain pending."
+    },
+    {
+      "location": "SM; BX1; S15; fn-group1; associated-data supplement link",
+      "action": "Read supplement notice, significance, acknowledgements and publisher disclaimer; identified the separate supplement PDF link.",
+      "limitations": "Supplement contents were not accessible in this assignment. References are retained as source leads, not separately read or merged."
+    }
+  ],
+  "results": [
+    {
+      "id": "RRX-CAL07-R01",
+      "source_id": "MECH-D07-HEDGEHOG-2010",
+      "canonical_report_id": "MECH-D07-HEDGEHOG-2010",
+      "endpoint": "Shh-induced Smoothened accumulation in primary cilia",
+      "endpoint_class": "not_identifiable",
+      "population": "NIH-3T3 cell immunofluorescence model",
+      "comparison": "ShhN-stimulated cells with itraconazole versus ShhN stimulation without itraconazole",
+      "arms": [],
+      "timepoint": "After 6 hours of immunofluorescence treatment",
+      "outcome_type": "mechanistic",
+      "estimate_type": "qualitative author-reported contrast",
+      "reported_text": "We found that itraconazole treatment dramatically reduced Shh-induced accumulation of Smo in the primary cilium (Figure 3E), similar to other Smo antagonists, SANT-1 and SANT-2, but in contrast to cyclopamine which induced accumulation of Smo in the primary cilium (Rohatgi et al., 2009; Wang et al., 2009).",
+      "numbers": [],
+      "source_locators": [
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P12\"]",
+          "section": "Results and Discussion",
+          "anchor": "P12",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "We found that itraconazole treatment dramatically reduced Shh-induced accumulation of Smo in the primary cilium (Figure 3E), similar to other Smo antagonists, SANT-1 and SANT-2, but in contrast to cyclopamine which induced accumulation of Smo in the primary cilium (Rohatgi et al., 2009; Wang et al., 2009)."
+        },
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P48\"]",
+          "section": "Figure 4 legend",
+          "anchor": "P48",
+          "table": null,
+          "figure": "Figure 4E",
+          "row_column": null,
+          "quoted_text": "Smo accumulated in primary cilia upon stimulation with ShhN (arrowheads). This accumulation was blocked by treatment with itraconazole."
+        },
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P29\"]",
+          "section": "Experimental Procedures: Immunofluorescence",
+          "anchor": "P29",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "NIH-3T3 cells were grown to confluence on tissue culture treated glass cover slips (Fisher) and treated with various conditions for 6 hours as described previously for Hh pathway signaling assays."
+        }
+      ],
+      "missingness": {
+        "quantitative_effect": "not_extracted",
+        "uncertainty": "not_extracted",
+        "biological_replicate_denominator": "not_checked"
+      },
+      "analysis_notes": "Tested localization readout, not direct binding or human tumor response. Source paragraph P12 points to Figure 3E; actual corresponding legend is Figure 4E. Figure pixels and quantitative percentage/denominator verification are pending.",
+      "verification_state": "pending",
+      "human_review_status": "pending",
+      "publication_state": "draft",
+      "excluded_from_accepted_support": true
+    },
+    {
+      "id": "RRX-CAL07-R02",
+      "source_id": "MECH-D07-HEDGEHOG-2010",
+      "canonical_report_id": "MECH-D07-HEDGEHOG-2010",
+      "endpoint": "BODIPY-cyclopamine competitive binding to Smoothened",
+      "endpoint_class": "not_identifiable",
+      "population": "Tetracycline-induced Smoothened-expressing HEK 293S cells",
+      "comparison": "BODIPY-cyclopamine binding with itraconazole versus binding without itraconazole; KAAD-cyclopamine was the comparison antagonist",
+      "arms": [],
+      "timepoint": "After 4–6 hours of ligand/inhibitor incubation following 2 days of Smoothened induction",
+      "outcome_type": "mechanistic",
+      "estimate_type": "qualitative author-reported contrast",
+      "reported_text": "We found that BODIPY-cyclopamine binding to Smo was not affected significantly by itraconazole, even at 10 µM, a concentration 12.5-fold higher than its IC50 (Figure 5A).",
+      "numbers": [],
+      "source_locators": [
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P13\"]",
+          "section": "Results and Discussion",
+          "anchor": "P13",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "We found that BODIPY-cyclopamine binding to Smo was not affected significantly by itraconazole, even at 10 µM, a concentration 12.5-fold higher than its IC50 (Figure 5A)."
+        },
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P14\"]",
+          "section": "Results and Discussion",
+          "anchor": "P14",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "These characteristics of itraconazole are consistent with the binding of itraconazole to Smo at a distinct site from that of cyclopamine. As we have not demonstrated direct binding of itraconazole to Smo, however, the possibility remains that itraconazole may exert its inhibitory action on Smo through other indirect mechanisms."
+        },
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P28\"]",
+          "section": "Experimental Procedures: BODIPY-cyclopamine competition binding assay",
+          "anchor": "P28",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "After two days of Smo induction, cells were incubated with BODIPY-cyclopamine 10 nM ± inhibitors at 37°C for 4–6 hours."
+        }
+      ],
+      "missingness": {
+        "quantitative_effect": "not_extracted",
+        "uncertainty": "not_extracted",
+        "biological_replicate_denominator": "not_checked"
+      },
+      "analysis_notes": "Negative competition result at the cyclopamine site does not demonstrate direct itraconazole binding elsewhere. Concentrations occur in the retained exact quote but are not imported as quantitative results; Figure 5A verification remains pending.",
+      "verification_state": "pending",
+      "human_review_status": "pending",
+      "publication_state": "draft",
+      "excluded_from_accepted_support": true
+    },
+    {
+      "id": "RRX-CAL07-R03",
+      "source_id": "MECH-D07-HEDGEHOG-2010",
+      "canonical_report_id": "MECH-D07-HEDGEHOG-2010",
+      "endpoint": "Growth of endogenous basal-cell carcinoma tumors",
+      "endpoint_class": "not_identifiable",
+      "population": "K14-CreER; Ptch+/−; p53 fl/fl mouse model",
+      "comparison": "Itraconazole versus cyclodextrin vehicle",
+      "arms": [],
+      "timepoint": "18 days of itraconazole treatment; discontinued on day 19, with remaining treated mice followed through day 22 and vehicle controls treated for an average of 22 days",
+      "outcome_type": "qualitative",
+      "estimate_type": "qualitative author-reported contrast",
+      "reported_text": "Itraconazole treatment suppressed the growth of the endogenous BCC tumors when compared to the cyclodextrin vehicle control (Figure 7A).",
+      "numbers": [],
+      "source_locators": [
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P18\"]",
+          "section": "Results and Discussion",
+          "anchor": "P18",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "Itraconazole treatment suppressed the growth of the endogenous BCC tumors when compared to the cyclodextrin vehicle control (Figure 7A)."
+        },
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P36\"]",
+          "section": "Experimental Procedures: BCC tumor growth",
+          "anchor": "P36",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "Four mice with a total of 20 visible BCC tumors were gavaged twice daily with oral itraconazole solution (Ortho-Biotec) 100mg/kg, for 18 days. Itraconazole was discontinued on day 19, two mice were euthanized on day 19 and the tumors dissected for further examination and BCC tumors of the two remaining were followed until 22 days."
+        },
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P36\"]",
+          "section": "Experimental Procedures: BCC tumor growth",
+          "anchor": "P36",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "Two mice with 10 BCC tumors were treated with 40% w/v HPCD (Sigma) for an average of 22 days at which point the mice were euthanized because of their large tumor size that exceeded our animal care guidelines."
+        }
+      ],
+      "missingness": {
+        "quantitative_effect": "not_extracted",
+        "uncertainty": "not_extracted",
+        "biological_replicate_denominator": "not_checked"
+      },
+      "analysis_notes": "Qualitative author-reported tumor-growth suppression. Tumors are clustered within mice; no independent-study count, effect size or human efficacy conclusion is assigned. Numerical growth/necrosis results and figure review remain pending.",
+      "verification_state": "pending",
+      "human_review_status": "pending",
+      "publication_state": "draft",
+      "excluded_from_accepted_support": true
+    }
+  ],
+  "claims": [
+    {
+      "id": "RRX-CAL07-CL01",
+      "text": "In the tested NIH-3T3 cells, itraconazole reduced the Shh-induced accumulation of Smoothened in primary cilia.",
+      "basis": "reported_data",
+      "result_ids": [
+        "RRX-CAL07-R01"
+      ],
+      "source_locators": [
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P12\"]",
+          "section": "Results and Discussion",
+          "anchor": "P12",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "We found that itraconazole treatment dramatically reduced Shh-induced accumulation of Smo in the primary cilium (Figure 3E), similar to other Smo antagonists, SANT-1 and SANT-2, but in contrast to cyclopamine which induced accumulation of Smo in the primary cilium (Rohatgi et al., 2009; Wang et al., 2009)."
+        },
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P48\"]",
+          "section": "Figure 4 legend",
+          "anchor": "P48",
+          "table": null,
+          "figure": "Figure 4E",
+          "row_column": null,
+          "quoted_text": "Smo accumulated in primary cilia upon stimulation with ShhN (arrowheads). This accumulation was blocked by treatment with itraconazole."
+        }
+      ],
+      "verification_state": "pending",
+      "human_review_status": "pending",
+      "publication_state": "draft",
+      "excluded_from_accepted_support": true
+    },
+    {
+      "id": "RRX-CAL07-CL02",
+      "text": "The authors proposed action at a Smoothened site distinct from cyclopamine, but explicitly stated that direct itraconazole binding to Smoothened had not been demonstrated and an indirect mechanism remained possible.",
+      "basis": "author_interpretation",
+      "result_ids": [
+        "RRX-CAL07-R01",
+        "RRX-CAL07-R02"
+      ],
+      "source_locators": [
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P14\"]",
+          "section": "Results and Discussion",
+          "anchor": "P14",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "These characteristics of itraconazole are consistent with the binding of itraconazole to Smo at a distinct site from that of cyclopamine. As we have not demonstrated direct binding of itraconazole to Smo, however, the possibility remains that itraconazole may exert its inhibitory action on Smo through other indirect mechanisms."
+        }
+      ],
+      "verification_state": "pending",
+      "human_review_status": "pending",
+      "publication_state": "draft",
+      "excluded_from_accepted_support": true
+    },
+    {
+      "id": "RRX-CAL07-CL03",
+      "text": "These cell and mouse findings provide a rationale to investigate itraconazole in Hedgehog-dependent cancer; they do not establish benefit for people with basal-cell carcinoma or other cancers.",
+      "basis": "candidate_editorial_interpretation",
+      "result_ids": [
+        "RRX-CAL07-R01",
+        "RRX-CAL07-R03"
+      ],
+      "source_locators": [
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P15\"]",
+          "section": "Results and Discussion",
+          "anchor": "P15",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "Having characterized the Hh pathway inhibitory activity of itraconazole in vitro, we examined its effect in vivo by systemic treatment of animals subcutaneously engrafted with a primary medulloblastoma from a Ptch+/−; p53−/− mouse."
+        },
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P18\"]",
+          "section": "Results and Discussion",
+          "anchor": "P18",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "Itraconazole treatment suppressed the growth of the endogenous BCC tumors when compared to the cyclodextrin vehicle control (Figure 7A)."
+        },
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P22\"]",
+          "section": "Results and Discussion",
+          "anchor": "P22",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "For these reasons, particularly its well-known safety profile, it should be possible to quickly evaluate itraconazole either alone or in combination with other targeted therapies or cytotoxic agents in patients with tumors of known Hedgehog pathway dependence."
+        }
+      ],
+      "verification_state": "pending",
+      "human_review_status": "pending",
+      "publication_state": "draft",
+      "excluded_from_accepted_support": true
+    },
+    {
+      "id": "RRX-CAL07-CL04",
+      "text": "In the tested genetically engineered mouse model, the authors reported suppressed basal-cell carcinoma tumor growth versus cyclodextrin vehicle; this does not establish benefit in patients.",
+      "basis": "candidate_editorial_interpretation",
+      "result_ids": [
+        "RRX-CAL07-R03"
+      ],
+      "source_locators": [
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P18\"]",
+          "section": "Results and Discussion",
+          "anchor": "P18",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "Itraconazole treatment suppressed the growth of the endogenous BCC tumors when compared to the cyclodextrin vehicle control (Figure 7A)."
+        },
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P36\"]",
+          "section": "Experimental Procedures: BCC tumor growth",
+          "anchor": "P36",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "Four mice with a total of 20 visible BCC tumors were gavaged twice daily with oral itraconazole solution (Ortho-Biotec) 100mg/kg, for 18 days. Itraconazole was discontinued on day 19, two mice were euthanized on day 19 and the tumors dissected for further examination and BCC tumors of the two remaining were followed until 22 days."
+        },
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P36\"]",
+          "section": "Experimental Procedures: BCC tumor growth",
+          "anchor": "P36",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "Two mice with 10 BCC tumors were treated with 40% w/v HPCD (Sigma) for an average of 22 days at which point the mice were euthanized because of their large tumor size that exceeded our animal care guidelines."
+        }
+      ],
+      "verification_state": "pending",
+      "human_review_status": "pending",
+      "publication_state": "draft",
+      "excluded_from_accepted_support": true
+    }
+  ],
+  "questions": [
+    {
+      "id": "Q01",
+      "status": "located_candidate",
+      "answer": "The investigators screened previously human-tested compounds for Hedgehog-pathway inhibition, then tested itraconazole using cell signaling/localization assays and Hedgehog-dependent mouse tumor models. This paper did not test cancer treatment in patients.",
+      "reason": null,
+      "next_action": null,
+      "source_locators": [
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P5\"]",
+          "section": "Results and Discussion",
+          "anchor": "P5",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "This screen made use of a reporter cell line, Shh-Light2 (Taipale et al., 2000) (see Experimental Procedures), which contains a stably integrated Gli-luciferase reporter that responds to stimulation by ShhN, the active form of the Sonic hedgehog (Shh) signaling protein."
+        },
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P15\"]",
+          "section": "Results and Discussion",
+          "anchor": "P15",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "Having characterized the Hh pathway inhibitory activity of itraconazole in vitro, we examined its effect in vivo by systemic treatment of animals subcutaneously engrafted with a primary medulloblastoma from a Ptch+/−; p53−/− mouse."
+        },
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P18\"]",
+          "section": "Results and Discussion",
+          "anchor": "P18",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "Itraconazole treatment suppressed the growth of the endogenous BCC tumors when compared to the cyclodextrin vehicle control (Figure 7A)."
+        }
+      ],
+      "result_ids": [
+        "RRX-CAL07-R01",
+        "RRX-CAL07-R03"
+      ]
+    },
+    {
+      "id": "Q02",
+      "status": "partial",
+      "answer": "Models include NIH-3T3/Shh-Light reporter cells, Ptch-deficient and activated-Smoothened variants, induced HEK 293S cells, mouse medulloblastoma allografts and endogenous mouse basal-cell carcinomas. Tumor observations are clustered within mice; cells, images, tumors and animals must not be pooled as one participant denominator.",
+      "reason": "Model identities were read; a complete assay-by-assay biological/technical replicate and animal/tumor denominator ledger is not yet extracted.",
+      "next_action": "Reconcile each experiment and comparator denominator from methods, figures and eligible supplements before quantitative appraisal.",
+      "source_locators": [
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P23\"]",
+          "section": "Experimental Procedures: Cell culture assays",
+          "anchor": "P23",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "Shh-Light2 cell line (Taipale et al., 2000) is a clonal NIH 3T3 cell line stably transfected with 8×-Gli1-binding site dependent firefly luciferase and Renilla luciferase reporters."
+        },
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P11\"]",
+          "section": "Results and Discussion",
+          "anchor": "P11",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "In contrast to Ptch−/− cells, the inhibitory action of itraconazole was bypassed by expression of SmoA1 (Taipale et al., 2000; Xie et al., 1998), a constitutively active oncogenic variant of murine Smo (Figure 4B), suggesting that itraconazole does not act downstream of Smo."
+        },
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P33\"]",
+          "section": "Experimental Procedures: Medulloblastoma tumor growth",
+          "anchor": "P33",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "Tumor was mixed in a 1:1 solution of PBS:growth factor reduced Matrigel (BD Bioscience) and equal volumes were allografted subcutaneously into right and left flanks of 6 to 7 wk old female outbred athymic nude mice (Charles River Laboratories, Wilmington, MA)."
+        },
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P36\"]",
+          "section": "Experimental Procedures: BCC tumor growth",
+          "anchor": "P36",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "Four mice with a total of 20 visible BCC tumors were gavaged twice daily with oral itraconazole solution (Ortho-Biotec) 100mg/kg, for 18 days. Itraconazole was discontinued on day 19, two mice were euthanized on day 19 and the tumors dissected for further examination and BCC tumors of the two remaining were followed until 22 days."
+        }
+      ],
+      "result_ids": []
+    },
+    {
+      "id": "Q03",
+      "status": "partial",
+      "answer": "Itraconazole was used in cell-culture signaling assays and as an oral solution in mice. The paper specifies serum conditions and incubation timing; these exposures are model-specific and are not human dosing instructions.",
+      "reason": "Form and route were located, but the complete typed exposure matrix and figure-dependent dose-response values remain unextracted.",
+      "next_action": "Extract assay-specific concentration, duration, formulation and comparator exposures with numerical verification after eligible figure access is resolved.",
+      "source_locators": [
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P26\"]",
+          "section": "Experimental Procedures: Cell culture assays",
+          "anchor": "P26",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "Drugs, 293 CM and ShhN CM were diluted in DMEM media containing 0.5% (v/v) serum unless otherwise noted in main text and figure legends. Cells were incubated for 40–46 hrs with drug treatments, except for the comparison of various azole (30 hours) and SmoA1 (30 hours) to minimize toxicity from the high concentrations of azole antifungals and forskolin, respectively."
+        },
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P29\"]",
+          "section": "Experimental Procedures: Immunofluorescence",
+          "anchor": "P29",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "NIH-3T3 cells were grown to confluence on tissue culture treated glass cover slips (Fisher) and treated with various conditions for 6 hours as described previously for Hh pathway signaling assays."
+        },
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P36\"]",
+          "section": "Experimental Procedures: BCC tumor growth",
+          "anchor": "P36",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "Four mice with a total of 20 visible BCC tumors were gavaged twice daily with oral itraconazole solution (Ortho-Biotec) 100mg/kg, for 18 days. Itraconazole was discontinued on day 19, two mice were euthanized on day 19 and the tumors dissected for further examination and BCC tumors of the two remaining were followed until 22 days."
+        }
+      ],
+      "result_ids": []
+    },
+    {
+      "id": "Q04",
+      "status": "partial",
+      "answer": "The cell assays used control-conditioned media and pathway/genetic comparator conditions. Mouse tumor comparisons used cyclodextrin vehicle; cyclopamine was also examined. Randomization and blinding have not been resolved for every experiment.",
+      "reason": "Comparator identities are located; full allocation, blinding and experimental-unit appraisal remain unchecked.",
+      "next_action": "Audit the complete model-specific methods and supplied supplementary material for allocation/blinding and document actual missingness.",
+      "source_locators": [
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P24\"]",
+          "section": "Experimental Procedures: Cell culture assays",
+          "anchor": "P24",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "HEK 293 CM was used for control. HEK 293 CM was prepared in the same manner as ShhN CM."
+        },
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P11\"]",
+          "section": "Results and Discussion",
+          "anchor": "P11",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "In contrast to Ptch−/− cells, the inhibitory action of itraconazole was bypassed by expression of SmoA1 (Taipale et al., 2000; Xie et al., 1998), a constitutively active oncogenic variant of murine Smo (Figure 4B), suggesting that itraconazole does not act downstream of Smo."
+        },
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P36\"]",
+          "section": "Experimental Procedures: BCC tumor growth",
+          "anchor": "P36",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "Two mice with 10 BCC tumors were treated with 40% w/v HPCD (Sigma) for an average of 22 days at which point the mice were euthanized because of their large tumor size that exceeded our animal care guidelines."
+        }
+      ],
+      "result_ids": []
+    },
+    {
+      "id": "Q05",
+      "status": "located_candidate",
+      "answer": "The endpoints were experimental pathway/readout and tumor-model measures: Gli-linked reporter activity, Smoothened localization, fluorescent ligand competition, tumor growth and tumor pathway activity. They are mechanistic or nonhuman endpoints rather than measured patient benefit.",
+      "reason": null,
+      "next_action": null,
+      "source_locators": [
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P5\"]",
+          "section": "Results and Discussion",
+          "anchor": "P5",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "This screen made use of a reporter cell line, Shh-Light2 (Taipale et al., 2000) (see Experimental Procedures), which contains a stably integrated Gli-luciferase reporter that responds to stimulation by ShhN, the active form of the Sonic hedgehog (Shh) signaling protein."
+        },
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P12\"]",
+          "section": "Results and Discussion",
+          "anchor": "P12",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "We found that itraconazole treatment dramatically reduced Shh-induced accumulation of Smo in the primary cilium (Figure 3E), similar to other Smo antagonists, SANT-1 and SANT-2, but in contrast to cyclopamine which induced accumulation of Smo in the primary cilium (Rohatgi et al., 2009; Wang et al., 2009)."
+        },
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P13\"]",
+          "section": "Results and Discussion",
+          "anchor": "P13",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "We found that BODIPY-cyclopamine binding to Smo was not affected significantly by itraconazole, even at 10 µM, a concentration 12.5-fold higher than its IC50 (Figure 5A)."
+        },
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P18\"]",
+          "section": "Results and Discussion",
+          "anchor": "P18",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "Itraconazole treatment suppressed the growth of the endogenous BCC tumors when compared to the cyclodextrin vehicle control (Figure 7A)."
+        },
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P17\"]",
+          "section": "Results and Discussion",
+          "anchor": "P17",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "We also tested the ability of itraconazole to inhibit pathway activity in tumor tissue in a separate experiment that made use of mice bearing secondary subcutaneous medulloblastoma allografts from the same original tumor as that used for studies of tumor growth (see above)."
+        }
+      ],
+      "result_ids": [
+        "RRX-CAL07-R01",
+        "RRX-CAL07-R02",
+        "RRX-CAL07-R03"
+      ]
+    },
+    {
+      "id": "Q06",
+      "status": "partial",
+      "answer": "Directional source-text findings are extracted: reduced ciliary Smoothened accumulation, no significant displacement of fluorescent cyclopamine binding, and suppressed growth of mouse basal-cell tumors. Numerical effect sizes, uncertainty and figure-derived counts remain pending.",
+      "reason": "Figure legends and text were read, but the seven remote figure images were not acquired or visually inspected; no quantitative efficacy estimates are accepted.",
+      "next_action": "Resolve existing lawful figure/supplement holdings under a pinned assignment, visually verify each consequential numeric panel, and populate typed numbers and denominators.",
+      "source_locators": [
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P12\"]",
+          "section": "Results and Discussion",
+          "anchor": "P12",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "We found that itraconazole treatment dramatically reduced Shh-induced accumulation of Smo in the primary cilium (Figure 3E), similar to other Smo antagonists, SANT-1 and SANT-2, but in contrast to cyclopamine which induced accumulation of Smo in the primary cilium (Rohatgi et al., 2009; Wang et al., 2009)."
+        },
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P13\"]",
+          "section": "Results and Discussion",
+          "anchor": "P13",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "We found that BODIPY-cyclopamine binding to Smo was not affected significantly by itraconazole, even at 10 µM, a concentration 12.5-fold higher than its IC50 (Figure 5A)."
+        },
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P18\"]",
+          "section": "Results and Discussion",
+          "anchor": "P18",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "Itraconazole treatment suppressed the growth of the endogenous BCC tumors when compared to the cyclodextrin vehicle control (Figure 7A)."
+        }
+      ],
+      "result_ids": [
+        "RRX-CAL07-R01",
+        "RRX-CAL07-R02",
+        "RRX-CAL07-R03"
+      ]
+    },
+    {
+      "id": "Q07",
+      "status": "partial",
+      "answer": "The BCC experiment describes planned euthanasia/dissection and subsequent observation of remaining animals. The medulloblastoma tumors were implanted in both flanks, and the microscopy methods describe manual cilia counting. These nested and changing observation units need explicit reconciliation.",
+      "reason": "The complete flow of animals, tumors, images and biological/technical replicates is not yet extracted; missingness must not be inferred from a plotted count.",
+      "next_action": "Create experiment/arm/timepoint-specific flow and clustering records and audit attrition and exclusions.",
+      "source_locators": [
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P36\"]",
+          "section": "Experimental Procedures: BCC tumor growth",
+          "anchor": "P36",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "Four mice with a total of 20 visible BCC tumors were gavaged twice daily with oral itraconazole solution (Ortho-Biotec) 100mg/kg, for 18 days. Itraconazole was discontinued on day 19, two mice were euthanized on day 19 and the tumors dissected for further examination and BCC tumors of the two remaining were followed until 22 days."
+        },
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P36\"]",
+          "section": "Experimental Procedures: BCC tumor growth",
+          "anchor": "P36",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "Two mice with 10 BCC tumors were treated with 40% w/v HPCD (Sigma) for an average of 22 days at which point the mice were euthanized because of their large tumor size that exceeded our animal care guidelines."
+        },
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P33\"]",
+          "section": "Experimental Procedures: Medulloblastoma tumor growth",
+          "anchor": "P33",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "Tumor was mixed in a 1:1 solution of PBS:growth factor reduced Matrigel (BD Bioscience) and equal volumes were allografted subcutaneously into right and left flanks of 6 to 7 wk old female outbred athymic nude mice (Charles River Laboratories, Wilmington, MA)."
+        },
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P30\"]",
+          "section": "Experimental Procedures: Microscopy",
+          "anchor": "P30",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "Maximum intensity overlay images of Z-stacks were obtained with Zeiss Zen software. Cilia from these images were quantified manually."
+        }
+      ],
+      "result_ids": []
+    },
+    {
+      "id": "Q08",
+      "status": "partial",
+      "answer": "The cell-assay methods shortened some incubations to minimize toxicity at high concentrations. The paper discusses antifungal-use safety from cited literature; this is not a clinical cancer-safety trial and the present extraction does not establish a human safety profile.",
+      "reason": "Complete experiment-level harms ascertainment, denominators and safety results remain unextracted; no absence-of-harm claim is made.",
+      "next_action": "Inspect eligible supplementary material and each animal/cell experiment for toxicity, withdrawals and detection limits; retain clinical harms as a separate evidence gap.",
+      "source_locators": [
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P26\"]",
+          "section": "Experimental Procedures: Cell culture assays",
+          "anchor": "P26",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "Drugs, 293 CM and ShhN CM were diluted in DMEM media containing 0.5% (v/v) serum unless otherwise noted in main text and figure legends. Cells were incubated for 40–46 hrs with drug treatments, except for the comparison of various azole (30 hours) and SmoA1 (30 hours) to minimize toxicity from the high concentrations of azole antifungals and forskolin, respectively."
+        },
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P19\"]",
+          "section": "Results and Discussion",
+          "anchor": "P19",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "The serum concentrations of itraconazole associated with an antitumor effect in our in vivo studies are higher than those reached in humans at regular therapeutic doses (Barone et al., 1993) (i.e.,400 mg/day orally for 15 days)."
+        }
+      ],
+      "result_ids": []
+    },
+    {
+      "id": "Q09",
+      "status": "partial",
+      "answer": "Interpretation is limited by model translation, serum-dependent pathway activity, clustered tumor observations and manual image counting. The antifungal bioassay combines itraconazole and hydroxy-itraconazole effects. Paragraph P12 references Figure 3E although the matching localization legend is Figure 4E; this discrepancy is preserved rather than silently repaired.",
+      "reason": "These are source-located appraisal inputs, not a completed formal animal/cell risk-of-bias assessment; multiplicity, blinding and full replicate accounting remain unresolved.",
+      "next_action": "Independently verify the inputs, inspect all eligible figures/supplements and complete design-appropriate appraisal before grading or public quantitative use.",
+      "source_locators": [
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P8\"]",
+          "section": "Results and Discussion",
+          "anchor": "P8",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "Curiously, however, we noted that increasing serum levels in our assays blocked pathway inhibition by itraconazole (Figure 2A). This blocking effect was absent in lipid-depleted serum (Figure 2B), suggesting that a factor removed by lipid depletion of serum can interfere with or reverse the action of itraconazole."
+        },
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P33\"]",
+          "section": "Experimental Procedures: Medulloblastoma tumor growth",
+          "anchor": "P33",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "Tumor was mixed in a 1:1 solution of PBS:growth factor reduced Matrigel (BD Bioscience) and equal volumes were allografted subcutaneously into right and left flanks of 6 to 7 wk old female outbred athymic nude mice (Charles River Laboratories, Wilmington, MA)."
+        },
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P30\"]",
+          "section": "Experimental Procedures: Microscopy",
+          "anchor": "P30",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "Maximum intensity overlay images of Z-stacks were obtained with Zeiss Zen software. Cilia from these images were quantified manually."
+        },
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P16\"]",
+          "section": "Results and Discussion",
+          "anchor": "P16",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "Itraconazole concentrations reported here therefore represent a combined measurement of itraconazole and hydroxy-itraconazole effects."
+        },
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P12\"]",
+          "section": "Results and Discussion",
+          "anchor": "P12",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "We found that itraconazole treatment dramatically reduced Shh-induced accumulation of Smo in the primary cilium (Figure 3E), similar to other Smo antagonists, SANT-1 and SANT-2, but in contrast to cyclopamine which induced accumulation of Smo in the primary cilium (Rohatgi et al., 2009; Wang et al., 2009)."
+        },
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P48\"]",
+          "section": "Figure 4 legend",
+          "anchor": "P48",
+          "table": null,
+          "figure": "Figure 4E",
+          "row_column": null,
+          "quoted_text": "Smo accumulated in primary cilia upon stimulation with ShhN (arrowheads). This accumulation was blocked by treatment with itraconazole."
+        }
+      ],
+      "result_ids": []
+    },
+    {
+      "id": "Q10",
+      "status": "located_candidate",
+      "answer": "The source is relevant to D07 itraconazole and a mechanistic rationale for Hedgehog-dependent tumors, including the C19 basal-cell-carcinoma mouse model. It is indirect evidence for human cancer treatment. The authors distinguish the experimental exposure from regular therapeutic human exposure and propose future clinical evaluation.",
+      "reason": null,
+      "next_action": null,
+      "source_locators": [
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P18\"]",
+          "section": "Results and Discussion",
+          "anchor": "P18",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "Itraconazole treatment suppressed the growth of the endogenous BCC tumors when compared to the cyclodextrin vehicle control (Figure 7A)."
+        },
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P19\"]",
+          "section": "Results and Discussion",
+          "anchor": "P19",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "The serum concentrations of itraconazole associated with an antitumor effect in our in vivo studies are higher than those reached in humans at regular therapeutic doses (Barone et al., 1993) (i.e.,400 mg/day orally for 15 days)."
+        },
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P22\"]",
+          "section": "Results and Discussion",
+          "anchor": "P22",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "For these reasons, particularly its well-known safety profile, it should be possible to quickly evaluate itraconazole either alone or in combination with other targeted therapies or cytotoxic agents in patients with tumors of known Hedgehog pathway dependence."
+        }
+      ],
+      "result_ids": [
+        "RRX-CAL07-R03"
+      ]
+    },
+    {
+      "id": "Q11",
+      "status": "partial",
+      "answer": "The paper contains several cell and mouse experiments. The authors explicitly say the pathway-inhibition mouse experiment used secondary allografts from the same original tumor as the tumor-growth experiment; these are not automatically independent tumor origins or human studies.",
+      "reason": "Cross-report family/replication reconciliation was not performed in this closed source assignment; independent_studies remains null.",
+      "next_action": "Preserve experiment-level identities and reconcile related reports within permitted holdings before reporting independent-study totals.",
+      "source_locators": [
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P17\"]",
+          "section": "Results and Discussion",
+          "anchor": "P17",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "We also tested the ability of itraconazole to inhibit pathway activity in tumor tissue in a separate experiment that made use of mice bearing secondary subcutaneous medulloblastoma allografts from the same original tumor as that used for studies of tumor growth (see above)."
+        },
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P33\"]",
+          "section": "Experimental Procedures: Medulloblastoma tumor growth",
+          "anchor": "P33",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "Tumor was mixed in a 1:1 solution of PBS:growth factor reduced Matrigel (BD Bioscience) and equal volumes were allografted subcutaneously into right and left flanks of 6 to 7 wk old female outbred athymic nude mice (Charles River Laboratories, Wilmington, MA)."
+        }
+      ],
+      "result_ids": []
+    },
+    {
+      "id": "Q12",
+      "status": "partial",
+      "answer": "The source byline identifies James Kim and colleagues, with Stanford, Johns Hopkins, Duke and Children’s Hospital Oakland affiliations. Acknowledgements name support from the Prostate Cancer Foundation, Stanford’s Center for Children’s Brain Tumors and NIH, and identify Philip A. Beachy as an HHMI investigator. A provided inducible cell line and technical assistance are also acknowledged.",
+      "reason": "Funding and supplied material are located; a complete author/product-conflict disclosure audit is not completed.",
+      "next_action": "Reconcile byline, acknowledgements and any eligible supplementary disclosures without treating funding alone as proof of validity or invalidity.",
+      "source_locators": [
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P42\"]",
+          "section": "Acknowledgements",
+          "anchor": "P42",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "This research was supported in part by grants from the Prostate Cancer Foundation, from the Stanford University Center for Children’s Brain Tumors, and from the National Institutes of Health. P.A.B is an investigator of the Howard Hughes Medical Institute."
+        },
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P42\"]",
+          "section": "Acknowledgements",
+          "anchor": "P42",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "We thank N. Sever for providing HEK 293S inducible Smo cell line, M. Martinez, and A.J. Tong for technical assistance, P. Lovelace for assistance with FACS, A. Olson for assistance with confocal microscopy, and M. Scott for helpful comments and discussion of the manuscript."
+        }
+      ],
+      "result_ids": []
+    },
+    {
+      "id": "Q13",
+      "status": "partial",
+      "answer": "The local HTML identifies the DOI 10.1016/j.ccr.2010.02.027 and PMCID PMC4039177/PMID 20385363. Its publisher disclaimer labels an accepted unedited manuscript; the original bytes/hash were verified. A supplementary PDF is linked but is not present in the assigned file, and current external correction/retraction checks were not performed.",
+      "reason": "Source identity and local access are checked, but figure assets, supplement contents and external integrity/current-version checks remain unverified under the no-web restriction.",
+      "next_action": "Use a separately scoped and pinned existing-asset or permitted gap acquisition step for missing companions/version notices; never call this a completed current-integrity audit.",
+      "source_locators": [
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P41\"]",
+          "section": "Footnotes: Publisher disclaimer",
+          "anchor": "P41",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "Publisher's Disclaimer: This is a PDF file of an unedited manuscript that has been accepted for publication."
+        },
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"SM\"]",
+          "section": "Supplementary Material",
+          "anchor": "SM",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "NIHMS199097-supplement-01.pdf"
+        }
+      ],
+      "result_ids": []
+    },
+    {
+      "id": "Q14",
+      "status": "located_candidate",
+      "answer": "Candidate claims distinguish a tested cellular localization change (RRX-CAL07-CL01), the authors’ proposed Smoothened interpretation with explicit lack of demonstrated direct binding (CL02), and a bounded editorial clinical-translation limit (CL03). Potential destinations are the D07 parent and the C19 mechanistic rationale; no reader record has been changed. CL04 separately preserves the model-specific basal-cell tumor growth finding and its nonclinical limit for any shared D07/C19 mapping.",
+      "reason": null,
+      "next_action": null,
+      "source_locators": [
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P12\"]",
+          "section": "Results and Discussion",
+          "anchor": "P12",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "We found that itraconazole treatment dramatically reduced Shh-induced accumulation of Smo in the primary cilium (Figure 3E), similar to other Smo antagonists, SANT-1 and SANT-2, but in contrast to cyclopamine which induced accumulation of Smo in the primary cilium (Rohatgi et al., 2009; Wang et al., 2009)."
+        },
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P14\"]",
+          "section": "Results and Discussion",
+          "anchor": "P14",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "These characteristics of itraconazole are consistent with the binding of itraconazole to Smo at a distinct site from that of cyclopamine. As we have not demonstrated direct binding of itraconazole to Smo, however, the possibility remains that itraconazole may exert its inhibitory action on Smo through other indirect mechanisms."
+        },
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P18\"]",
+          "section": "Results and Discussion",
+          "anchor": "P18",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "Itraconazole treatment suppressed the growth of the endogenous BCC tumors when compared to the cyclodextrin vehicle control (Figure 7A)."
+        }
+      ],
+      "result_ids": [
+        "RRX-CAL07-R01",
+        "RRX-CAL07-R02",
+        "RRX-CAL07-R03"
+      ]
+    },
+    {
+      "id": "Q15",
+      "status": "located_candidate",
+      "answer": "This paper adds experimental support for investigating itraconazole in Hedgehog-dependent cancer models. It does not establish direct itraconazole–Smoothened binding or human anticancer benefit. Source-image/supplement checks, complete experiment accounting and clinical evidence would be needed to strengthen the inference.",
+      "reason": null,
+      "next_action": null,
+      "source_locators": [
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P14\"]",
+          "section": "Results and Discussion",
+          "anchor": "P14",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "These characteristics of itraconazole are consistent with the binding of itraconazole to Smo at a distinct site from that of cyclopamine. As we have not demonstrated direct binding of itraconazole to Smo, however, the possibility remains that itraconazole may exert its inhibitory action on Smo through other indirect mechanisms."
+        },
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P15\"]",
+          "section": "Results and Discussion",
+          "anchor": "P15",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "Having characterized the Hh pathway inhibitory activity of itraconazole in vitro, we examined its effect in vivo by systemic treatment of animals subcutaneously engrafted with a primary medulloblastoma from a Ptch+/−; p53−/− mouse."
+        },
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P18\"]",
+          "section": "Results and Discussion",
+          "anchor": "P18",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "Itraconazole treatment suppressed the growth of the endogenous BCC tumors when compared to the cyclodextrin vehicle control (Figure 7A)."
+        },
+        {
+          "source_id": "MECH-D07-HEDGEHOG-2010",
+          "source_sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+          "kind": "html",
+          "pdf_page": null,
+          "native_path": "//*[@id=\"P22\"]",
+          "section": "Results and Discussion",
+          "anchor": "P22",
+          "table": null,
+          "figure": null,
+          "row_column": null,
+          "quoted_text": "For these reasons, particularly its well-known safety profile, it should be possible to quickly evaluate itraconazole either alone or in combination with other targeted therapies or cytotoxic agents in patients with tumors of known Hedgehog pathway dependence."
+        }
+      ],
+      "result_ids": [
+        "RRX-CAL07-R01",
+        "RRX-CAL07-R03"
+      ]
+    }
+  ],
+  "mechanism_fields": {
+    "target_pathway": {
+      "status": "not_extracted",
+      "value": null,
+      "reason": "Structured mechanism-field/payload extraction is deferred until an enforcing executable mechanism contract is adopted and pinned; source-located qualitative results and Q inputs are supplied separately. See gp-review-addendum-mechanism.json.",
+      "source_locators": []
+    },
+    "direction_action": {
+      "status": "not_extracted",
+      "value": null,
+      "reason": "Structured mechanism-field/payload extraction is deferred until an enforcing executable mechanism contract is adopted and pinned; source-located qualitative results and Q inputs are supplied separately. See gp-review-addendum-mechanism.json.",
+      "source_locators": []
+    },
+    "original_use_mechanism": {
+      "status": "not_extracted",
+      "value": null,
+      "reason": "Structured mechanism-field/payload extraction is deferred until an enforcing executable mechanism contract is adopted and pinned; source-located qualitative results and Q inputs are supplied separately. See gp-review-addendum-mechanism.json.",
+      "source_locators": []
+    },
+    "condition_rationale": {
+      "status": "not_extracted",
+      "value": null,
+      "reason": "Structured mechanism-field/payload extraction is deferred until an enforcing executable mechanism contract is adopted and pinned; source-located qualitative results and Q inputs are supplied separately. See gp-review-addendum-mechanism.json.",
+      "source_locators": []
+    },
+    "model_population": {
+      "status": "not_extracted",
+      "value": null,
+      "reason": "Structured mechanism-field/payload extraction is deferred until an enforcing executable mechanism contract is adopted and pinned; source-located qualitative results and Q inputs are supplied separately. See gp-review-addendum-mechanism.json.",
+      "source_locators": []
+    },
+    "exposure": {
+      "status": "not_extracted",
+      "value": null,
+      "reason": "Structured mechanism-field/payload extraction is deferred until an enforcing executable mechanism contract is adopted and pinned; source-located qualitative results and Q inputs are supplied separately. See gp-review-addendum-mechanism.json.",
+      "source_locators": []
+    },
+    "target_engagement": {
+      "status": "not_extracted",
+      "value": null,
+      "reason": "Structured mechanism-field/payload extraction is deferred until an enforcing executable mechanism contract is adopted and pinned; source-located qualitative results and Q inputs are supplied separately. See gp-review-addendum-mechanism.json.",
+      "source_locators": []
+    },
+    "causal_evidence": {
+      "status": "not_extracted",
+      "value": null,
+      "reason": "Structured mechanism-field/payload extraction is deferred until an enforcing executable mechanism contract is adopted and pinned; source-located qualitative results and Q inputs are supplied separately. See gp-review-addendum-mechanism.json.",
+      "source_locators": []
+    },
+    "limitations": {
+      "status": "not_extracted",
+      "value": null,
+      "reason": "Structured mechanism-field/payload extraction is deferred until an enforcing executable mechanism contract is adopted and pinned; source-located qualitative results and Q inputs are supplied separately. See gp-review-addendum-mechanism.json.",
+      "source_locators": []
+    },
+    "counterevidence": {
+      "status": "not_extracted",
+      "value": null,
+      "reason": "Structured mechanism-field/payload extraction is deferred until an enforcing executable mechanism contract is adopted and pinned; source-located qualitative results and Q inputs are supplied separately. See gp-review-addendum-mechanism.json.",
+      "source_locators": []
+    }
+  },
+  "mechanism_payload": null,
+  "gaps": [
+    {
+      "code": "FIGURE_ASSETS_UNASSIGNED",
+      "reason": "Seven figures are referenced by remote image URLs; their pixels are absent from the assigned HTML bytes. Legends were read but quantitative figure verification was not performed.",
+      "next_action": "Locate existing authorized figure-bearing assets or plan a permitted companion retrieval; pin them before visual numerical extraction."
+    },
+    {
+      "code": "SUPPLEMENT_NOT_ASSIGNED",
+      "reason": "NIHMS199097-supplement-01.pdf is linked by the source but no verified supplement file is part of CAL-07-S01.",
+      "next_action": "Reconcile existing holdings for this exact supplement; otherwise request through a separately planned gap packet."
+    },
+    {
+      "code": "NATIVE_CROSS_REFERENCE_DISCREPANCY",
+      "reason": "P12 points to Figure 3E for Smo ciliary localization while the matching local legend is Figure 4E; both exact references are retained.",
+      "next_action": "Independent verifier checks the figure/version and confirms any correction before use."
+    },
+    {
+      "code": "DIRECT_BINDING_UNPROVED",
+      "reason": "Authors explicitly state direct itraconazole binding to Smo was not demonstrated; an indirect mechanism remains possible.",
+      "next_action": "Preserve proposed rather than tested direct binding in all downstream interpretations."
+    },
+    {
+      "code": "QUANTITATIVE_EXPERIMENT_LEDGER_PENDING",
+      "reason": "Effect sizes, uncertainty, exposure matrix, clustering and complete biological/technical replicate denominators are not yet extracted or independently verified.",
+      "next_action": "Finish the source-bound quantitative and experimental-unit ledger after figure/supplement scope is resolved."
+    },
+    {
+      "code": "EXTERNAL_INTEGRITY_NOT_CHECKED",
+      "reason": "Closed-packet assignment prohibits external correction/retraction/version lookup; no current external integrity clearance is claimed.",
+      "next_action": "Carry the gap to a permitted separately planned integrity check."
+    },
+    {
+      "code": "EXECUTABLE_MECHANISM_CONTRACT_PENDING",
+      "reason": "Legacy mechanism-extraction-schema.json is a descriptive contract rather than an enforcing JSON Schema.",
+      "next_action": "Adopt and prospectively pin an executable mechanism schema before mechanism_payload extraction."
+    },
+    {
+      "code": "INDEPENDENT_SCIENTIFIC_AUDIT_PENDING",
+      "reason": "This source candidate is authored by extractor-a and has not been independently accepted.",
+      "next_action": "Independent verifier checks exact source text, scope, locators, Q inputs and retained holds."
+    }
+  ],
+  "independent_studies": null,
+  "verification_state": "pending",
+  "human_review_status": "pending",
+  "publication_state": "draft",
+  "excluded_from_accepted_support": true
+}

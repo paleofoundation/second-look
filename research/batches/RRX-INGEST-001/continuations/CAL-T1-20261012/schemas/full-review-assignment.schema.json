@@ -1,0 +1,164 @@
+{
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": "remaprx-full-review-assignment-v1"
+    },
+    "assignmentId": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "planId": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "canonicalReportId": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "reviewId": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "assets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "sourceId": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "role": {
+            "enum": [
+              "primary",
+              "companion",
+              "protocol",
+              "correction",
+              "integrity_check",
+              "other"
+            ]
+          },
+          "required": {
+            "type": "boolean"
+          },
+          "mediaType": {
+            "enum": [
+              "application/pdf",
+              "text/html",
+              "image/png",
+              "image/jpeg",
+              "image/webp",
+              "text/plain",
+              "application/json"
+            ]
+          },
+          "availability": {
+            "enum": [
+              "available",
+              "not_accessible",
+              "pending"
+            ]
+          },
+          "sha256": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "bytes": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 1
+          },
+          "path": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "expectedUnits": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "kind": {
+                  "enum": [
+                    "pdf_page",
+                    "html_section",
+                    "image",
+                    "text_section"
+                  ]
+                },
+                "locator": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                }
+              },
+              "required": [
+                "id",
+                "kind",
+                "locator"
+              ],
+              "additionalProperties": false
+            },
+            "minItems": 0
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 30,
+            "pattern": "\\S"
+          }
+        },
+        "required": [
+          "sourceId",
+          "role",
+          "required",
+          "mediaType",
+          "availability",
+          "sha256",
+          "bytes",
+          "path",
+          "expectedUnits",
+          "reason"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "assignmentId",
+    "planId",
+    "canonicalReportId",
+    "reviewId",
+    "assets"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

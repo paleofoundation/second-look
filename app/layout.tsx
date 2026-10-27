@@ -6,21 +6,26 @@ import "@/styles/second-look.css";
 import "@/components/shared-theme/guide-library.css";
 import "@/styles/reader-profile.css";
 import "@/components/shared-theme/article-reading.css";
+import "@/components/shared-theme/article-sharing.css";
+import "@/components/shared-theme/guide-reader.css";
+import "@/styles/hero-art.css";
+import "@/styles/treatment-suitability.css";
 import {ThemeShell} from "@/components/shared-theme/theme";
 import {getChatGPTUser,chatGPTSignInPath} from "@/app/chatgpt-auth";
 import {secondLookTheme} from "@/lib/theme/config";
 import {LayoutMetrics} from "@/components/layout-metrics";
 
 export const metadata: Metadata = {
-  title: {default: "Second Look — Drug repurposing, in context", template: "%s | Second Look"},
-  description: "Explore the questions, original studies and limitations behind drug repurposing. A private evidence pilot.",
+  metadataBase: new URL("https://remaprx.com"),
+  title: {default: "RemapRx — The drug repurposing atlas", template: "%s | RemapRx"},
+  description: "Mapping new targets for approved medications. Explore investigated uses, proposed mechanisms and source-linked findings in the drug repurposing atlas.",
   robots: {index: false, follow: false},
-  other: {
-    "codex-preview": "development",
-  },
+  openGraph: {type:"website", siteName:"RemapRx", title:"RemapRx — The drug repurposing atlas", description:"Mapping new targets for approved medications. Map each connection to its sources.", images:[{url:"/brand/remaprx-social.png",width:1200,height:630,alt:"RemapRx: Mapping new targets for approved medications."}]},
+  twitter: {card:"summary_large_image", title:"RemapRx — The drug repurposing atlas", description:"Mapping new targets for approved medications. Map each connection to its sources.", images:["/brand/remaprx-social.png"]},
   icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
+    icon: [{url: "/favicon.svg?v=remaprx-rx-centered-3", type: "image/svg+xml"}, {url: "/favicon.ico?v=remaprx-rx-centered-3", sizes: "16x16 32x32 48x48", type: "image/x-icon"}],
+    shortcut: "/favicon.ico?v=remaprx-rx-centered-3",
+    apple: "/apple-touch-icon.png?v=remaprx-rx-centered-3",
   },
 };
 
@@ -32,7 +37,7 @@ export default async function RootLayout({
   const user=await getChatGPTUser();
   const theme={...secondLookTheme,accountLink:{label:"Account",href:"/account"},primaryAction:user?{label:"My guides",href:"/guides/library"}:{label:"Log in",href:chatGPTSignInPath("/guides/library")}};
   return (
-    <html lang="en">
+    <html lang="en-US">
       <body className="antialiased"><LayoutMetrics/><ThemeShell config={theme}>{children}</ThemeShell></body>
     </html>
   );

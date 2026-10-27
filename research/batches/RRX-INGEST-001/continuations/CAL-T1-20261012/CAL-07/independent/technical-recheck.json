@@ -1,0 +1,50 @@
+{
+  "schemaVersion": "remaprx-independent-technical-review-v1",
+  "reviewer": "codex/identity_review",
+  "reviewedAt": "2026-10-12T13:49:51.277357+00:00",
+  "status": "PASS",
+  "scope": "Frozen full scientific review contracts, completion semantics, validator and regression suite; not acceptance of an unwritten scientific candidate.",
+  "codeAndSchemaHashes": [
+    {
+      "path": "scripts/research_full_review.py",
+      "sha256": "ac7481040d1d5251cd2e0f9222433b12aa17cb8bd4c707ef4eb5190007b7b9b4"
+    },
+    {
+      "path": "tests/research_ingest/test_full_review.py",
+      "sha256": "81fce09949303d94210b7572976d2a25f32905edf6bf7f666e64716fb02edf71"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/schemas/full-review.schema.json",
+      "sha256": "4963674102d6d7624bad3aa60ff5a474e6754c9e4e46749ece7be490937f1e18"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/schemas/full-review-assignment.schema.json",
+      "sha256": "ced789bf07ccbf23209bbf8eb5b85e9d8bf23f48a49f1b428a2204bc65a9a673"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/schemas/full-review-audit.schema.json",
+      "sha256": "48093f89a0407929826331ce2c5faafa2569f7e222187d837e72ea7c3ad17c62"
+    }
+  ],
+  "testRun": {
+    "command": "PYTHONPATH='/Users/kmfp/Documents/Codex/2026-10-08/one-match-drug-repurposing/work/evidence/python:tests/research_ingest' python3 -m unittest discover -s tests/research_ingest -q",
+    "exitCode": 0,
+    "stdout": "----------------------------------------------------------------------\nRan 115 tests in 19.159s\n\nOK\n",
+    "total": 115,
+    "focusedFullReviewCases": 15
+  },
+  "checkedSemantics": [
+    "All67 required inputs and exactlyQ01\u2013Q15 bound to pinned map.",
+    "Missingness and source completion separate; unchecked/unavailable required work cannot complete.",
+    "Not-reported follows complete required source inspection; bounded terminal negative findings can be assessed with explicit reasons.",
+    "Required available assets hash-verified; every assigned source unit accounted for and every experiment/result/claim graph linked.",
+    "Exact numeric scalar matching, qualified values retained, unauthorized graph/calculated estimates excluded.",
+    "Exact candidate/plan/assignment/source hashes and distinct case-normalized author/auditor required for accepted_private.",
+    "Human approval and public release remain false."
+  ],
+  "trustBoundaries": [
+    "A declared unit inventory does not prove that it covers every actual source section; independent scientific inspection must check it.",
+    "Passing schema/numeric-token checks does not establish semantic accuracy or causality; every answer, result and numerical claim must be read against source."
+  ],
+  "unresolvedTechnicalBlockers": []
+}

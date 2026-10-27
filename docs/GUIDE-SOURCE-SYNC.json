@@ -1,0 +1,455 @@
+{
+  "basePublishedSource": "70c19536f84d40153053cb4607a752dbad901c15",
+  "implementationSource": "c12df71db701d5f8ba180a35f326b1adde64c33b",
+  "syncedAt": "2026-10-12T14:33:42.014269+00:00",
+  "method": "Bounded implementation-only diff; same-base replacement, clean three-way merge and additive changelog. Canonical Git index/history and other work preserved.",
+  "files": [
+    {
+      "path": "app/api/billing/portal/route.ts",
+      "action": "new",
+      "beforeSha256": null,
+      "afterSha256": "dc02d06c1408f49f5c4d436bafe0e976da82f467c24ae72da8c7e2d7537adc93"
+    },
+    {
+      "path": "app/api/checkout/route.ts",
+      "action": "new",
+      "beforeSha256": null,
+      "afterSha256": "c647370fb617e746cff91de922bddbeb36eeaa365c64dcbc701c034ca729e7d1"
+    },
+    {
+      "path": "app/api/guides/[editionId]/reader/route.ts",
+      "action": "new",
+      "beforeSha256": null,
+      "afterSha256": "7fd379355779ee6146b9a16a00856e06ee9efc573bfc043b87edbf6e73c4841d"
+    },
+    {
+      "path": "app/api/library/guides/route.ts",
+      "action": "new",
+      "beforeSha256": null,
+      "afterSha256": "0e2674811ea02d4f96dc168491d203112af57fb2602067747c53423600be4ce6"
+    },
+    {
+      "path": "app/api/stripe/webhook/route.ts",
+      "action": "new",
+      "beforeSha256": null,
+      "afterSha256": "0283e13855e905b2abb1db204fd0acc7bde22f1165bcd48989a48e387742bdf8"
+    },
+    {
+      "path": "app/guides/read/[editionId]/page.tsx",
+      "action": "new",
+      "beforeSha256": null,
+      "afterSha256": "bc503063934d1d9432e1c86a20fa8c4332d7545cfa74704d234cda81308d43c1"
+    },
+    {
+      "path": "app/layout.tsx",
+      "action": "updated-existing-base",
+      "beforeSha256": "3a7df4567ec4dac2a49225d6cad45ddbb0ae43a97a084e71edad2152f6a4fbc7",
+      "afterSha256": "4079a17b38686d9d303b032c0065c67b689b923676350e18c2aab23b3c102bcd"
+    },
+    {
+      "path": "components/article-sharing.tsx",
+      "action": "new",
+      "beforeSha256": null,
+      "afterSha256": "9f8bb93688af2208ba742c2dd1750470808e92f610b361fba97cc3589cceaa16"
+    },
+    {
+      "path": "components/article.tsx",
+      "action": "updated-existing-base",
+      "beforeSha256": "3dce590b47ff78a7fb05dd5004b2f55378069ae91a035629754f2d06eea9c594",
+      "afterSha256": "6ee475c3bbb47873f25b872cd0e542dc871985dab990fabb3af44537e5115adc"
+    },
+    {
+      "path": "components/guide-purchase-controls.tsx",
+      "action": "new",
+      "beforeSha256": null,
+      "afterSha256": "60454994ee7aec1513b8c55915289aac11c5c00f4da2422064013486689ac73c"
+    },
+    {
+      "path": "components/guide-reader.tsx",
+      "action": "new",
+      "beforeSha256": null,
+      "afterSha256": "65d4eccba4bbfe4fcf1466133ea4db6928ebb900c9fbfd2a1dcc5f9cebfa716c"
+    },
+    {
+      "path": "components/library-controls.tsx",
+      "action": "updated-existing-base",
+      "beforeSha256": "830ce08ea2c421e670d71855942dda9571288bdb206277e0c6af8920764837a5",
+      "afterSha256": "aa722d00a3ec8026678c4de02d743e447289ccb6794e6bcde6d36f18b70d1f5d"
+    },
+    {
+      "path": "components/reader-profile-form.tsx",
+      "action": "updated-existing-base",
+      "beforeSha256": "95eec96b02c99fd7e8b44ec02db83d50e97b9da71609cb814b0d055bad7ee2da",
+      "afterSha256": "c5af1e78c5953b1bf821e457e7e07c0322beb0d51499085f241008ce07c427d7"
+    },
+    {
+      "path": "components/shared-theme/article-sharing.css",
+      "action": "new",
+      "beforeSha256": null,
+      "afterSha256": "f332a73bdd9391864d068c1bfbae4e9676cd63bbe8bae3dc0f516f5c553e5c4a"
+    },
+    {
+      "path": "components/shared-theme/guide-catalogue.tsx",
+      "action": "updated-existing-base",
+      "beforeSha256": "5a48236cf7c964035c2f52e9fc9bc7555448a58a8f6ad525745c4c1bda6d098b",
+      "afterSha256": "1d5fc1b7df17ea78969b57964e9e402070347073aa433ea31cd67bc0059dc486"
+    },
+    {
+      "path": "components/shared-theme/guide-library.css",
+      "action": "updated-existing-base",
+      "beforeSha256": "6b619b739c3171a4834a45e2c3a11fff7e926d460a1eb6095add9ff545b2a861",
+      "afterSha256": "db5b3af97769272fc7f538cd1744fa3459c626582041a815590313b0c3547521"
+    },
+    {
+      "path": "components/shared-theme/guide-reader.css",
+      "action": "new",
+      "beforeSha256": null,
+      "afterSha256": "bebb143f1488c4a909bef7f5282ecc33a40d129194f3bf46d43eaac069f64d96"
+    },
+    {
+      "path": "components/shared-theme/theme.tsx",
+      "action": "updated-existing-base",
+      "beforeSha256": "2d2de4f91fb9e129e8a415dc93bc3a36c489a8bb5d12ecc8428606195a4c7c1a",
+      "afterSha256": "b048e67e21cdf62f2536e8859d73368159ac6b28735f4aeb54cd28ada473948d"
+    },
+    {
+      "path": "components/shared-theme/types.ts",
+      "action": "updated-existing-base",
+      "beforeSha256": "aca94e649edd6bfb982572f82eccd8f5dafea4e4b6dd65f90e7fee4ac9c456fe",
+      "afterSha256": "7c78e2b4e13310151b7f8de31cd6d6d08bc291cfa053b6eb06eb10030315d46c"
+    },
+    {
+      "path": "data/guide-catalogue.json",
+      "action": "updated-existing-base",
+      "beforeSha256": "8de959de0774fed459f52d8a4e7b480234ef99924d873c857a03862b562c8a85",
+      "afterSha256": "6f534fa0d87a16420935323188f0b8f3918170018c15db0ff40aaa3fc296efe9"
+    },
+    {
+      "path": "data/topic-guide-map.json",
+      "action": "new",
+      "beforeSha256": null,
+      "afterSha256": "5cdb0f7176cbc67f3806f8a5df3c218eaeffe86e2af164486d93dfb395519b0d"
+    },
+    {
+      "path": "db/schema.ts",
+      "action": "updated-existing-base",
+      "beforeSha256": "4479de95ebfe214c224adfc5fcdcdc87aa1ea35b0daad1301a5f3d877efd6f5a",
+      "afterSha256": "6a51e36fd3c28679255dc9e22c709bdb112083ad78d2b067f28542a4db06a73c"
+    },
+    {
+      "path": "docs/GUIDE-COMMERCE.md",
+      "action": "new",
+      "beforeSha256": null,
+      "afterSha256": "b1b9e78ff35cd8be99f28460ad916c3a501490379ea55c50c95fe97d795b00ce"
+    },
+    {
+      "path": "docs/GUIDE-IMPLEMENTATION.md",
+      "action": "new",
+      "beforeSha256": null,
+      "afterSha256": "ac017849e42350e3c7d3b3b5b28fbd2fc6e423149d552b10e864a4e2237717ad"
+    },
+    {
+      "path": "docs/GUIDE-INTAKE-LIBRARY.md",
+      "action": "new",
+      "beforeSha256": null,
+      "afterSha256": "ced617f5063a2e1799ac41c07a6c3323888da576c43f12838a114d41e09a01ab"
+    },
+    {
+      "path": "docs/GUIDE-RENDERER.md",
+      "action": "new",
+      "beforeSha256": null,
+      "afterSha256": "66f671fc1125dcb12c9e7199e226a63fa9f1e7e745e611d09bd9826d6f189190"
+    },
+    {
+      "path": "docs/PROJECT-RULES.md",
+      "action": "three-way-merged",
+      "beforeSha256": "b92ec05cc55eed1292c5c6403359a6ed86288130273846e401cb7f382747c514",
+      "afterSha256": "7c61ae71ac3e9517f6358a6dbb979ec7241d27faec5bad582c51532091c8c5b9"
+    },
+    {
+      "path": "docs/RULE-CHANGELOG.md",
+      "action": "additive-changelog-entry",
+      "beforeSha256": "4a52570d87c8538751507a1fe153a9ef19530a3c7af3bda87cdf2b4266587b70",
+      "afterSha256": "1ea6947644431d3bfbb326efa5d3a38685b751456ee26f30fe81370f6b85fcb8"
+    },
+    {
+      "path": "docs/TOPIC-GUIDES.md",
+      "action": "new",
+      "beforeSha256": null,
+      "afterSha256": "c76bc8516be7ae2c1691eb2d8ac88914f1792a0e9004a55ffa31fcb17dd6a5f9"
+    },
+    {
+      "path": "drizzle/0011_guide_commerce.sql",
+      "action": "new",
+      "beforeSha256": null,
+      "afterSha256": "8d398658b44dc07afe2f3aba1c3f0c89234a925274c7d523ec93037b86c1f6ae"
+    },
+    {
+      "path": "drizzle/0012_guide_interests_library.sql",
+      "action": "new",
+      "beforeSha256": null,
+      "afterSha256": "3789b6afb611cfb81004bc83178dded5a98d1f4f0cfeccb3e84b4f5c152c3cfb"
+    },
+    {
+      "path": "drizzle/meta/0005_snapshot.json",
+      "action": "new",
+      "beforeSha256": null,
+      "afterSha256": "e732b7fe0d38dd58755147fc3170e96e05ca47979ded22af82d2b992c5c293d2"
+    },
+    {
+      "path": "drizzle/meta/_journal.json",
+      "action": "updated-existing-base",
+      "beforeSha256": "c1d446573b08d672f49f8abd5c47243faa8000d74c0662d2cd2ab6437a41d6df",
+      "afterSha256": "6fd9519cf4e2a777696407596c9796faf1c6a171ed70776a6d50fce761d49bde"
+    },
+    {
+      "path": "lib/account-contract.ts",
+      "action": "updated-existing-base",
+      "beforeSha256": "2c6faf4564c962dc2e7c25552d6136024a073a3c0404d3c3b167265c7caf6949",
+      "afterSha256": "d09d874e708db0cf6ec695db6a4b091e75d2515bdc313a805ca8c44475eccf26"
+    },
+    {
+      "path": "lib/article-sharing.ts",
+      "action": "new",
+      "beforeSha256": null,
+      "afterSha256": "17cee8563009487e778be1522ed85144e92a6da34f19f9f44b8d20c6de45ab9c"
+    },
+    {
+      "path": "lib/guide-access.ts",
+      "action": "updated-existing-base",
+      "beforeSha256": "a2f198c53931ec7e9b7acdc7a6f9356a13009324fc0175deb9bc5d1abd76d2bc",
+      "afterSha256": "eba96412e2304743c0ce1997f3657cc5d0914078a2c5a360643a82dbd7b43b92"
+    },
+    {
+      "path": "lib/guide-catalogue.ts",
+      "action": "updated-existing-base",
+      "beforeSha256": "b9b5326a16c26a960dcd7efd8fd5869ceb8b0f868b77ab78b294f4da356b3a3a",
+      "afterSha256": "51edde510806af023be6be93ff600d1d97c8cce33a52db2c05b242468e6cc2ac"
+    },
+    {
+      "path": "lib/guide-commerce-repository.server.ts",
+      "action": "new",
+      "beforeSha256": null,
+      "afterSha256": "66fa0c81bbb3cda512b3a0223d0063b45c7d0a47a7a902fa9e537c1d2d524282"
+    },
+    {
+      "path": "lib/guide-commerce.server.ts",
+      "action": "new",
+      "beforeSha256": null,
+      "afterSha256": "90a9a87ff5a8ed6363689207f8e9feaee404ceeaa22e058cfc45faa4dcb14bcf"
+    },
+    {
+      "path": "lib/guide-commerce.ts",
+      "action": "new",
+      "beforeSha256": null,
+      "afterSha256": "ffdd2bfb8bc6b04c8faefaaa184431d03822f1cf5c73ee4bded82406e87b8b72"
+    },
+    {
+      "path": "lib/guide-manuscript.ts",
+      "action": "new",
+      "beforeSha256": null,
+      "afterSha256": "c9a07bf285f600a0baef5e9d17bbbad05015a954014dc455db10b9a7e7019798"
+    },
+    {
+      "path": "lib/guide-repository.server.ts",
+      "action": "updated-existing-base",
+      "beforeSha256": "44c1e415acf129e9cf231b0fbf355e2b77df7f7ad52c8c3bac8a014e444aeceb",
+      "afterSha256": "57234360f84f4566e4242aa1e483c55737fc5e4d524d1e6b4f3d4b6e0aac9335"
+    },
+    {
+      "path": "lib/guide-saves-api.ts",
+      "action": "new",
+      "beforeSha256": null,
+      "afterSha256": "906e9b99ded146db7b3db4134b94e2e80a404e213e59ea0447afe140b4dca61e"
+    },
+    {
+      "path": "lib/guide-saves.ts",
+      "action": "new",
+      "beforeSha256": null,
+      "afterSha256": "992d6bc75d27b0ab9e7257263a1c4880aa65ce9d700a872dbaeb4568e87b792d"
+    },
+    {
+      "path": "lib/profile-api.ts",
+      "action": "updated-existing-base",
+      "beforeSha256": "79414524a8ef01c5b2d2e3e5496b1477f9662184954d479433ebd9c326b7d5d1",
+      "afterSha256": "cae70f2782fec9c1484cb8590c726a5f311a1d9b0af2486131bda5fd8846bcd1"
+    },
+    {
+      "path": "lib/profile-repository.ts",
+      "action": "updated-existing-base",
+      "beforeSha256": "848a9e09c99895c6f15c40f1f202ff0d883dcf619411e93538bc903f190caa3e",
+      "afterSha256": "6969f6da87cdd3d5d9032a7c0a0a1aabc7b06a26f3f96ecc99c436a05afbb5e0"
+    },
+    {
+      "path": "lib/stripe-client.ts",
+      "action": "new",
+      "beforeSha256": null,
+      "afterSha256": "3131ef7d48c40b0a7eadd8454212906dee190fe2d70a45d4c183da7d66505059"
+    },
+    {
+      "path": "lib/topic-guides.ts",
+      "action": "new",
+      "beforeSha256": null,
+      "afterSha256": "5a28661b765140a89f139c32e2467ec488dcb0e7e2a33a4c4bd868a4420ea74d"
+    },
+    {
+      "path": "scripts/check-guide-commerce.mjs",
+      "action": "new",
+      "beforeSha256": null,
+      "afterSha256": "f62664986f2aae8dfb88d3cc9cfed704fcd2bacf2cb28180c9e331b9e9facd6c"
+    },
+    {
+      "path": "scripts/check-guide-http-boundary.mjs",
+      "action": "new",
+      "beforeSha256": null,
+      "afterSha256": "0339bd0de25854539c47613d61c27c27cf288c3ec2c505a830489e0eb40bde9b"
+    },
+    {
+      "path": "scripts/check-guide-intake-library.mjs",
+      "action": "new",
+      "beforeSha256": null,
+      "afterSha256": "e4bffccc6e9bfdb39d973adc7ec11b113c06d1bbc7254365530e4a733132826b"
+    },
+    {
+      "path": "scripts/check-guide-renderer.mjs",
+      "action": "new",
+      "beforeSha256": null,
+      "afterSha256": "ef1dc74d20e9cb06722a79f10f34fb9e8f6c57085ba7eed535d198cefdd997e5"
+    },
+    {
+      "path": "scripts/check-topic-guides.mjs",
+      "action": "new",
+      "beforeSha256": null,
+      "afterSha256": "349614a4ec3c628b8a25c705f285553fee493b71c5e076e4c8d97e58b602fa66"
+    },
+    {
+      "path": "scripts/guide-renderer/build.mjs",
+      "action": "new",
+      "beforeSha256": null,
+      "afterSha256": "0c6c14639579aae53a1c44649fee56a28f01af8002c4d9d6b61eb73794e4434d"
+    },
+    {
+      "path": "scripts/guide-renderer/config/remaprx.json",
+      "action": "new",
+      "beforeSha256": null,
+      "afterSha256": "650bd7893ff30638bb8080e8478918b26a521a75d883cb6b8f5b5c3fc45d3d05"
+    },
+    {
+      "path": "scripts/guide-renderer/fixtures/synthetic-guide.json",
+      "action": "new",
+      "beforeSha256": null,
+      "afterSha256": "038412407f00b21ec2dcfa5274c7595069efaa72ed11d1d489289161b70ddb56"
+    },
+    {
+      "path": "scripts/guide-renderer/proof/synthetic-acceptance.json",
+      "action": "new",
+      "beforeSha256": null,
+      "afterSha256": "d9cecb00c083e6a9ffa8d53792c5465d3f8b9c899c0a5edcf9e9097aa2f09055"
+    },
+    {
+      "path": "scripts/guide-renderer/render-variants.py",
+      "action": "new",
+      "beforeSha256": null,
+      "afterSha256": "45013fd129d63ab3197be35b43d82aca273636322d8be5059ec032943cfe8408"
+    },
+    {
+      "path": "scripts/guide-renderer/vendor/PROVENANCE.json",
+      "action": "new",
+      "beforeSha256": null,
+      "afterSha256": "bb46429bdf06e3e87d60d43f6fdd81d2b0cc482e9733b441c641db93f703aab0"
+    },
+    {
+      "path": "scripts/guide-renderer/vendor/README.md",
+      "action": "new",
+      "beforeSha256": null,
+      "afterSha256": "8d5a4c1d63b25276301a3341c7bb520cc9be1c3f9ec7728dcaf5c8ea288a26c4"
+    },
+    {
+      "path": "scripts/guide-renderer/vendor/assets/fonts/Inter-OFL.txt",
+      "action": "new",
+      "beforeSha256": null,
+      "afterSha256": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57"
+    },
+    {
+      "path": "scripts/guide-renderer/vendor/assets/fonts/Inter-Regular.ttf",
+      "action": "new",
+      "beforeSha256": null,
+      "afterSha256": "efead05fed5b0a9c9d4a01650b88a4b3af035ef6a79c6ac8e132744bfa169139"
+    },
+    {
+      "path": "scripts/guide-renderer/vendor/assets/fonts/Lora-OFL.txt",
+      "action": "new",
+      "beforeSha256": null,
+      "afterSha256": "1d9a970809ac804b582a6ce7f0ebc4e7fefcbfd7ff6299cad35ee656a21be716"
+    },
+    {
+      "path": "scripts/guide-renderer/vendor/assets/fonts/Lora-Regular.ttf",
+      "action": "new",
+      "beforeSha256": null,
+      "afterSha256": "fc9a25de039800fdfc6f3e3c16f0639e3b092642c9fb64cb2ba7c5ed3e0c2737"
+    },
+    {
+      "path": "scripts/guide-renderer/vendor/assets/provenance.json",
+      "action": "new",
+      "beforeSha256": null,
+      "afterSha256": "86c21a08443b8788c4e974aee42b0a6c3eb0894508780a45730c301c5db291d0"
+    },
+    {
+      "path": "scripts/guide-renderer/vendor/manuscript.schema.json",
+      "action": "new",
+      "beforeSha256": null,
+      "afterSha256": "4237ac00431ed04c10ba77c445b261c6ebe883b4bc0d1d46765db0fb44aa58d5"
+    },
+    {
+      "path": "scripts/guide-renderer/vendor/package-manifest.json",
+      "action": "new",
+      "beforeSha256": null,
+      "afterSha256": "3c65a884dc082de311f6d3c6a824abe9758f27d63bcae9b08e890dd49a553a3b"
+    },
+    {
+      "path": "scripts/guide-renderer/vendor/requirements.txt",
+      "action": "new",
+      "beforeSha256": null,
+      "afterSha256": "d70c6051ed42e5e3d2d6a0c50ea9262b101047bb7295cd6c6a4f658e9d03ee56"
+    },
+    {
+      "path": "scripts/guide-renderer/vendor/src/render.py",
+      "action": "new",
+      "beforeSha256": null,
+      "afterSha256": "bb951a9b474a29322c0c6f4720fb33adcb6c84681766fd448cb29c08f4dafdc1"
+    },
+    {
+      "path": "scripts/guide-renderer/verify-pdfs.py",
+      "action": "new",
+      "beforeSha256": null,
+      "afterSha256": "fc25b555e659ac87a0569b72cc7f2c1c6286ef7f6733933764253687c4112576"
+    },
+    {
+      "path": "styles/guide-library.css",
+      "action": "new",
+      "beforeSha256": null,
+      "afterSha256": "1f811afc2b8046bd5d863d80e6d230a372e00dcc3272f14ff96581347c5ebc7d"
+    }
+  ],
+  "postPublication": {
+    "recordedAt": "2026-10-12T14:41:32.196727+00:00",
+    "publishedSource": "c12df71db701d5f8ba180a35f326b1adde64c33b",
+    "scope": "Deployment receipt in GUIDE-IMPLEMENTATION and RULE-CHANGELOG, plus exclusion of immutable research app-input snapshots from TypeScript; no application runtime change.",
+    "files": [
+      {
+        "path": "docs/GUIDE-IMPLEMENTATION.md",
+        "sha256": "020ef08de23d8c50a386583b8447aa0dea0b904e6fa7a9cf54599ed0f3829cc1"
+      },
+      {
+        "path": "docs/RULE-CHANGELOG.md",
+        "sha256": "2efffb281f856c51c734b7e74cbc9138633b2b591c36eabf86a0599cdd74a411"
+      },
+      {
+        "path": "tsconfig.json",
+        "sha256": "02d95f6d399dd0f41b9ab37262b311aeea84a755680504d457683fd03911332c"
+      }
+    ],
+    "hostedAuditSource": "c9f5d8c1c862f5eb97d134ba44e28d6d63d35b13",
+    "preservedConcurrentDeployment": "appgdep_6accf19ca79c819181dfda79d8b9bc65"
+  }
+}

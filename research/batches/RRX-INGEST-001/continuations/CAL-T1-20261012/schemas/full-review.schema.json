@@ -1,0 +1,1442 @@
+{
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": "remaprx-full-review-v1"
+    },
+    "reviewId": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "canonicalReportId": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "assignmentId": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "assignmentSha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "planId": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "planSha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "questionMapSha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "questionSetVersion": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "author": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "processingState": {
+      "enum": [
+        "draft",
+        "candidate_complete"
+      ]
+    },
+    "inspection": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "sourceId": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "sourceSha256": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "status": {
+            "enum": [
+              "full",
+              "partial",
+              "not_checked",
+              "not_accessible"
+            ]
+          },
+          "unitIdsRead": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "uniqueItems": true
+          },
+          "visualUnitIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "uniqueItems": true
+          },
+          "readLog": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "unitId": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "inspectedAt": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "method": {
+                  "enum": [
+                    "native_read",
+                    "text_read",
+                    "visual_read"
+                  ]
+                },
+                "notes": {
+                  "type": "string",
+                  "minLength": 30,
+                  "pattern": "\\S"
+                }
+              },
+              "required": [
+                "unitId",
+                "inspectedAt",
+                "method",
+                "notes"
+              ],
+              "additionalProperties": false
+            },
+            "minItems": 0
+          },
+          "limitations": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "uniqueItems": true
+          },
+          "nextAction": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "sourceId",
+          "sourceSha256",
+          "status",
+          "unitIdsRead",
+          "visualUnitIds",
+          "readLog",
+          "limitations",
+          "nextAction"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    },
+    "studyIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "\\S"
+      },
+      "uniqueItems": true
+    },
+    "familyIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "\\S"
+      },
+      "uniqueItems": true
+    },
+    "experiments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "label": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "design": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "experimentalUnit": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "studyIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "uniqueItems": true
+          },
+          "sourceLocators": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "sourceId": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "sourceSha256": {
+                  "type": "string",
+                  "pattern": "^[0-9a-f]{64}$"
+                },
+                "unitId": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "kind": {
+                  "enum": [
+                    "pdf_page",
+                    "html_section",
+                    "image",
+                    "text_section"
+                  ]
+                },
+                "locator": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "quote": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "figureTable": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "sourceId",
+                "sourceSha256",
+                "unitId",
+                "kind",
+                "locator",
+                "quote",
+                "figureTable"
+              ],
+              "additionalProperties": false
+            },
+            "minItems": 1
+          }
+        },
+        "required": [
+          "id",
+          "label",
+          "design",
+          "experimentalUnit",
+          "studyIds",
+          "sourceLocators"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0
+    },
+    "results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "experimentId": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "endpoint": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "population": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "comparison": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "arms": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "label": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "role": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "sampleSizeNumericClaimId": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "id",
+                "label",
+                "role",
+                "sampleSizeNumericClaimId"
+              ],
+              "additionalProperties": false
+            },
+            "minItems": 0
+          },
+          "timepoint": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "outcomeType": {
+            "enum": [
+              "continuous",
+              "binary",
+              "time_to_event",
+              "mechanistic",
+              "qualitative",
+              "other"
+            ]
+          },
+          "numericClaimIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "uniqueItems": true
+          },
+          "sourceLocators": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "sourceId": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "sourceSha256": {
+                  "type": "string",
+                  "pattern": "^[0-9a-f]{64}$"
+                },
+                "unitId": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "kind": {
+                  "enum": [
+                    "pdf_page",
+                    "html_section",
+                    "image",
+                    "text_section"
+                  ]
+                },
+                "locator": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "quote": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "figureTable": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "sourceId",
+                "sourceSha256",
+                "unitId",
+                "kind",
+                "locator",
+                "quote",
+                "figureTable"
+              ],
+              "additionalProperties": false
+            },
+            "minItems": 1
+          },
+          "interpretation": {
+            "type": "string",
+            "minLength": 30,
+            "pattern": "\\S"
+          },
+          "limitations": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "uniqueItems": true
+          }
+        },
+        "required": [
+          "id",
+          "experimentId",
+          "endpoint",
+          "population",
+          "comparison",
+          "arms",
+          "timepoint",
+          "outcomeType",
+          "numericClaimIds",
+          "sourceLocators",
+          "interpretation",
+          "limitations"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "text": {
+            "type": "string",
+            "minLength": 30,
+            "pattern": "\\S"
+          },
+          "basis": {
+            "enum": [
+              "observed_result",
+              "author_conclusion",
+              "reviewer_interpretation"
+            ]
+          },
+          "resultIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "uniqueItems": true,
+            "minItems": 1
+          },
+          "sourceLocators": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "sourceId": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "sourceSha256": {
+                  "type": "string",
+                  "pattern": "^[0-9a-f]{64}$"
+                },
+                "unitId": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "kind": {
+                  "enum": [
+                    "pdf_page",
+                    "html_section",
+                    "image",
+                    "text_section"
+                  ]
+                },
+                "locator": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "quote": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "figureTable": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "sourceId",
+                "sourceSha256",
+                "unitId",
+                "kind",
+                "locator",
+                "quote",
+                "figureTable"
+              ],
+              "additionalProperties": false
+            },
+            "minItems": 1
+          }
+        },
+        "required": [
+          "id",
+          "text",
+          "basis",
+          "resultIds",
+          "sourceLocators"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0
+    },
+    "resultCoverage": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "sourceId": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "unitId": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "disposition": {
+            "enum": [
+              "results_recorded",
+              "no_applicable_result",
+              "unfinished"
+            ]
+          },
+          "resultIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "uniqueItems": true
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 30,
+            "pattern": "\\S"
+          },
+          "sourceLocators": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "sourceId": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "sourceSha256": {
+                  "type": "string",
+                  "pattern": "^[0-9a-f]{64}$"
+                },
+                "unitId": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "kind": {
+                  "enum": [
+                    "pdf_page",
+                    "html_section",
+                    "image",
+                    "text_section"
+                  ]
+                },
+                "locator": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "quote": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "figureTable": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "sourceId",
+                "sourceSha256",
+                "unitId",
+                "kind",
+                "locator",
+                "quote",
+                "figureTable"
+              ],
+              "additionalProperties": false
+            },
+            "minItems": 0
+          }
+        },
+        "required": [
+          "sourceId",
+          "unitId",
+          "disposition",
+          "resultIds",
+          "rationale",
+          "sourceLocators"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0
+    },
+    "identityRationale": {
+      "type": "string",
+      "minLength": 30,
+      "pattern": "\\S"
+    },
+    "relatedReports": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "canonicalReportId": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "relationship": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 30,
+            "pattern": "\\S"
+          }
+        },
+        "required": [
+          "canonicalReportId",
+          "relationship",
+          "rationale"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0
+    },
+    "inputs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "questionId": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "field": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "status": {
+            "enum": [
+              "assessed",
+              "conflicting",
+              "not_accessible",
+              "not_applicable",
+              "not_checked",
+              "not_extracted",
+              "not_identifiable",
+              "not_reported",
+              "partial",
+              "reported"
+            ]
+          },
+          "value": {},
+          "reason": {
+            "type": "string",
+            "minLength": 30,
+            "pattern": "\\S"
+          },
+          "basis": {
+            "enum": [
+              "reported",
+              "appraisal",
+              "absence_check",
+              "design_applicability",
+              "unfinished"
+            ]
+          },
+          "sourceLocators": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "sourceId": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "sourceSha256": {
+                  "type": "string",
+                  "pattern": "^[0-9a-f]{64}$"
+                },
+                "unitId": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "kind": {
+                  "enum": [
+                    "pdf_page",
+                    "html_section",
+                    "image",
+                    "text_section"
+                  ]
+                },
+                "locator": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "quote": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "figureTable": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "sourceId",
+                "sourceSha256",
+                "unitId",
+                "kind",
+                "locator",
+                "quote",
+                "figureTable"
+              ],
+              "additionalProperties": false
+            },
+            "minItems": 0
+          },
+          "assessedAssetIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "uniqueItems": true
+          },
+          "experimentIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "uniqueItems": true
+          },
+          "numericClaimIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "uniqueItems": true
+          },
+          "nextAction": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "questionId",
+          "field",
+          "status",
+          "value",
+          "reason",
+          "basis",
+          "sourceLocators",
+          "assessedAssetIds",
+          "experimentIds",
+          "numericClaimIds",
+          "nextAction"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 67,
+      "maxItems": 67
+    },
+    "answers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "questionId": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "status": {
+            "enum": [
+              "answered",
+              "draft"
+            ]
+          },
+          "answer": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 30,
+                "pattern": "\\S"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "appraisalRationale": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 30,
+                "pattern": "\\S"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "inputFields": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "uniqueItems": true
+          },
+          "experimentIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "uniqueItems": true
+          },
+          "sourceLocators": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "sourceId": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "sourceSha256": {
+                  "type": "string",
+                  "pattern": "^[0-9a-f]{64}$"
+                },
+                "unitId": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "kind": {
+                  "enum": [
+                    "pdf_page",
+                    "html_section",
+                    "image",
+                    "text_section"
+                  ]
+                },
+                "locator": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "quote": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "figureTable": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "sourceId",
+                "sourceSha256",
+                "unitId",
+                "kind",
+                "locator",
+                "quote",
+                "figureTable"
+              ],
+              "additionalProperties": false
+            },
+            "minItems": 0
+          },
+          "limitations": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "uniqueItems": true
+          }
+        },
+        "required": [
+          "questionId",
+          "status",
+          "answer",
+          "appraisalRationale",
+          "inputFields",
+          "experimentIds",
+          "sourceLocators",
+          "limitations"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 15,
+      "maxItems": 15
+    },
+    "sourceIntegrity": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "kind": {
+            "enum": [
+              "version",
+              "access",
+              "supplements",
+              "registration",
+              "corrections_retractions"
+            ]
+          },
+          "status": {
+            "enum": [
+              "checked",
+              "not_applicable",
+              "partial",
+              "not_checked",
+              "not_accessible",
+              "conflicting"
+            ]
+          },
+          "checkedAt": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "scope": {
+            "type": "string",
+            "minLength": 30,
+            "pattern": "\\S"
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 30,
+            "pattern": "\\S"
+          },
+          "sourceLocators": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "sourceId": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "sourceSha256": {
+                  "type": "string",
+                  "pattern": "^[0-9a-f]{64}$"
+                },
+                "unitId": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "kind": {
+                  "enum": [
+                    "pdf_page",
+                    "html_section",
+                    "image",
+                    "text_section"
+                  ]
+                },
+                "locator": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "quote": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "figureTable": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "sourceId",
+                "sourceSha256",
+                "unitId",
+                "kind",
+                "locator",
+                "quote",
+                "figureTable"
+              ],
+              "additionalProperties": false
+            },
+            "minItems": 0
+          },
+          "limitations": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "uniqueItems": true
+          },
+          "nextAction": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "kind",
+          "status",
+          "checkedAt",
+          "scope",
+          "rationale",
+          "sourceLocators",
+          "limitations",
+          "nextAction"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 5,
+      "maxItems": 5
+    },
+    "numericClaims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "questionId": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "field": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "value": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "units": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "basis": {
+            "enum": [
+              "exact_reported",
+              "calculated",
+              "graph_estimate"
+            ]
+          },
+          "reportedText": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "precision": {
+            "type": "string",
+            "minLength": 30,
+            "pattern": "\\S"
+          },
+          "sourceLocators": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "sourceId": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "sourceSha256": {
+                  "type": "string",
+                  "pattern": "^[0-9a-f]{64}$"
+                },
+                "unitId": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "kind": {
+                  "enum": [
+                    "pdf_page",
+                    "html_section",
+                    "image",
+                    "text_section"
+                  ]
+                },
+                "locator": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "quote": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "figureTable": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "sourceId",
+                "sourceSha256",
+                "unitId",
+                "kind",
+                "locator",
+                "quote",
+                "figureTable"
+              ],
+              "additionalProperties": false
+            },
+            "minItems": 1
+          },
+          "calculationProvenance": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 30,
+                "pattern": "\\S"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "limitation": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 30,
+                "pattern": "\\S"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "questionId",
+          "field",
+          "value",
+          "units",
+          "basis",
+          "reportedText",
+          "precision",
+          "sourceLocators",
+          "calculationProvenance",
+          "limitation"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0
+    },
+    "sourceLimitations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "\\S"
+      },
+      "uniqueItems": true
+    },
+    "humanApproval": {
+      "const": false
+    },
+    "released": {
+      "const": false
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "reviewId",
+    "canonicalReportId",
+    "assignmentId",
+    "assignmentSha256",
+    "planId",
+    "planSha256",
+    "questionMapSha256",
+    "questionSetVersion",
+    "author",
+    "processingState",
+    "inspection",
+    "studyIds",
+    "familyIds",
+    "experiments",
+    "results",
+    "claims",
+    "resultCoverage",
+    "identityRationale",
+    "relatedReports",
+    "inputs",
+    "answers",
+    "sourceIntegrity",
+    "numericClaims",
+    "sourceLimitations",
+    "humanApproval",
+    "released"
+  ],
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "processingState": {
+            "const": "candidate_complete"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "experiments": {
+            "minItems": 1
+          },
+          "results": {
+            "minItems": 1
+          },
+          "claims": {
+            "minItems": 1
+          },
+          "resultCoverage": {
+            "minItems": 1
+          }
+        }
+      }
+    }
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

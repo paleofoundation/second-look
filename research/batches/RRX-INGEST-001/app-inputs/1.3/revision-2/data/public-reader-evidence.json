@@ -1,0 +1,4228 @@
+{
+  "version": "reader-view-1.0.0",
+  "synthesisRows": [
+    {
+      "id": "SYN-D01-C01-DIAGNOSIS",
+      "drugId": "D01",
+      "conditionId": "C01",
+      "title": "Later clinician diagnosis after acute infection",
+      "use": "Prevention during acute COVID",
+      "population": "Acute COVID outpatients; trial populations differ",
+      "comparison": "Metformin versus matched placebo",
+      "endpoint": "Participant-reported clinician diagnosis of Long COVID",
+      "timepoint": "COVID-OUT day 300; ACTIV-6 day 180",
+      "status": "provisional_correction_hold",
+      "finding": {
+        "text": "COVID-OUT reported a lower hazard of clinician-diagnosed Long COVID, with interpretation limited by an indexed correction. ACTIV-6’s secondary diagnosis estimate favored metformin but its interval included no difference.",
+        "sources": [
+          "P-COVIDOUT-2023",
+          "P-ACTIV6-2026"
+        ],
+        "evidenceRefs": [
+          "R-CO-HR",
+          "R-A6-CD"
+        ],
+        "kind": "bounded_interpretation"
+      },
+      "magnitudeText": "COVID-OUT: reported hazard ratio 0.59 (95% CI 0.39–0.89), subject to the correction notice. ACTIV-6: risk difference −0.7 percentage points (95% credible interval −1.5 to 0.1).",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "2 randomized trial families; endpoint definitions, populations and timepoints remain separate.",
+      "limitations": [
+        {
+          "text": "COVID-OUT enrolled adults with overweight or obesity and no known prior infection; ACTIV-6 allowed prior infection and vaccination.",
+          "sources": [
+            "P-COVIDOUT-2023",
+            "P-ACTIV6-2026"
+          ]
+        },
+        {
+          "text": "The COVID-OUT report has an indexed correction and conflicting cumulative-incidence values, making its absolute risk reduction uncertain.",
+          "sources": [
+            "P-COVIDOUT-2023",
+            "P-ACTIV6-2026"
+          ]
+        },
+        {
+          "text": "The ACTIV-6 diagnosis endpoint was secondary, and its interval was not adjusted for multiple comparisons.",
+          "sources": [
+            "P-COVIDOUT-2023",
+            "P-ACTIV6-2026"
+          ]
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "P-COVIDOUT-2023",
+          "evidenceRef": "R-CO-HR",
+          "label": "Figure 2 and Results paragraph beginning cumulative incidence"
+        },
+        {
+          "sourceId": "P-ACTIV6-2026",
+          "evidenceRef": "R-A6-CD",
+          "label": "Table 3 secondary clinician diagnosis; Table 2 raw counts"
+        }
+      ],
+      "sourceIds": [
+        "P-COVIDOUT-2023",
+        "P-ACTIV6-2026"
+      ],
+      "studyFamilyIds": [
+        "S-COVIDOUT-2023",
+        "S-ACTIV6-2026"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [
+        "/answers/metformin-prevention"
+      ],
+      "coverage": {
+        "complete": false,
+        "pending": []
+      },
+      "effects": [
+        {
+          "sourceId": "P-COVIDOUT-2023",
+          "design": "Quadruple-blind randomized placebo-controlled 2×3 factorial trial",
+          "population": "Adults 30–85, overweight or obesity, acute COVID symptoms under 7 days; no known prior infection",
+          "timepoint": "Day 300",
+          "sampleRandomized": 1431,
+          "sampleAnalyzed": 1126,
+          "sampleDenominatorNote": "Study-level totals; do not substitute them for endpoint-specific denominators.",
+          "locators": [
+            {
+              "paper_id": "P-COVIDOUT-2023",
+              "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11259948/",
+              "file": "work/evidence/raw/covidout.html",
+              "pdf_page": null,
+              "printed_page": null,
+              "section": "Results",
+              "table_figure": "Figure 2 and Results paragraph beginning cumulative incidence",
+              "paragraph": null,
+              "basis": "full_text",
+              "missingness": "not_applicable"
+            }
+          ]
+        },
+        {
+          "sourceId": "P-ACTIV6-2026",
+          "design": "Quadruple-blind randomized decentralized placebo-controlled platform trial",
+          "population": "Outpatients at least 30 years old with acute COVID; prior infection/vaccination allowed",
+          "timepoint": "Day 180",
+          "sampleRandomized": 3214,
+          "sampleAnalyzed": 2983,
+          "sampleDenominatorNote": "Study-level totals; do not substitute them for endpoint-specific denominators.",
+          "locators": [
+            {
+              "paper_id": "P-ACTIV6-2026",
+              "source_url": "https://academic.oup.com/cid/advance-article/doi/10.1093/cid/ciag335/8702406",
+              "file": "work/evidence/raw/activ6-web-extract.json",
+              "pdf_page": null,
+              "printed_page": null,
+              "section": "Results",
+              "table_figure": "Table 3 secondary clinician diagnosis; Table 2 raw counts",
+              "paragraph": null,
+              "basis": "full_text",
+              "missingness": "not_applicable"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SYN-D01-C01-SYMPTOMS",
+      "drugId": "D01",
+      "conditionId": "C01",
+      "title": "Later symptoms or death after acute infection",
+      "use": "Prevention during acute COVID",
+      "population": "Outpatients aged at least 30; prior infection or vaccination allowed",
+      "comparison": "Metformin versus matched placebo",
+      "endpoint": "Symptoms attributed to COVID-19 or death",
+      "timepoint": "Day 180",
+      "status": "reported_result",
+      "finding": {
+        "text": "ACTIV-6 did not meet its reported efficacy threshold for the primary long-term endpoint; its estimate remained compatible with a reduction or a small increase.",
+        "sources": [
+          "P-ACTIV6-2026"
+        ],
+        "evidenceRefs": [
+          "R-A6-RD"
+        ],
+        "kind": "bounded_interpretation"
+      },
+      "magnitudeText": "Adjusted risk difference −0.8 percentage points (95% credible interval −2.2 to 0.6); raw events 33/1439 versus 46/1544.",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "1 randomized trial family; endpoint definitions, populations and timepoints remain separate.",
+      "limitations": [
+        {
+          "text": "The model-based difference is not the subtraction of the raw event fractions; 593 symptom outcomes were missing.",
+          "sources": [
+            "P-ACTIV6-2026"
+          ],
+          "evidenceRefs": [
+            "R-A6-RD"
+          ],
+          "kind": "source_fact"
+        },
+        {
+          "text": "The available publisher snapshot contains only part of the full text.",
+          "sources": [],
+          "evidenceRefs": [],
+          "kind": "access_status"
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "P-ACTIV6-2026",
+          "evidenceRef": "R-A6-RD",
+          "label": "Table 3 primary endpoint; Table 2 raw counts"
+        }
+      ],
+      "sourceIds": [
+        "P-ACTIV6-2026"
+      ],
+      "studyFamilyIds": [
+        "S-ACTIV6-2026"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [
+        "/answers/metformin-prevention"
+      ],
+      "coverage": {
+        "complete": false,
+        "pending": []
+      },
+      "effects": [
+        {
+          "sourceId": "P-ACTIV6-2026",
+          "design": "Quadruple-blind randomized decentralized placebo-controlled platform trial",
+          "population": "Outpatients at least 30 years old with acute COVID; prior infection/vaccination allowed",
+          "timepoint": "Day 180",
+          "sampleRandomized": 3214,
+          "sampleAnalyzed": 2983,
+          "sampleDenominatorNote": "Study-level totals; do not substitute them for endpoint-specific denominators.",
+          "locators": [
+            {
+              "paper_id": "P-ACTIV6-2026",
+              "source_url": "https://academic.oup.com/cid/advance-article/doi/10.1093/cid/ciag335/8702406",
+              "file": "work/evidence/raw/activ6-web-extract.json",
+              "pdf_page": null,
+              "printed_page": null,
+              "section": "Results",
+              "table_figure": "Table 3 primary endpoint; Table 2 raw counts",
+              "paragraph": null,
+              "basis": "full_text",
+              "missingness": "not_applicable"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SYN-D01-C01-RECOVERY",
+      "drugId": "D01",
+      "conditionId": "C01",
+      "title": "Recovery after Long COVID is established",
+      "use": "Treatment of established Long COVID",
+      "population": "Adults with PASC index at least 12",
+      "comparison": "Metformin versus double placebo",
+      "endpoint": "Recovery: PASC index below 12",
+      "timepoint": "Week 8",
+      "status": "reported_result",
+      "finding": {
+        "text": "The South Korean trial did not show improved recovery with the studied metformin course; the abstract reports fewer recovered participants in the metformin arm than the placebo arm.",
+        "sources": [
+          "P-KOREA-2026"
+        ],
+        "evidenceRefs": [
+          "R-KR-RECOVERY"
+        ],
+        "kind": "bounded_interpretation"
+      },
+      "magnitudeText": "Recovered at eight weeks: 84/132 (63.6%) with metformin versus 90/132 (68.2%) with placebo.",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "1 randomized trial family; endpoint definitions, populations and timepoints remain separate.",
+      "limitations": [
+        {
+          "text": "The trial abstract notes limited applicability to more severe or persistent Long COVID.",
+          "sources": [
+            "P-KOREA-2026"
+          ]
+        },
+        {
+          "text": "The trial did not establish equivalence between treatment and placebo.",
+          "sources": [
+            "P-KOREA-2026"
+          ]
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "P-KOREA-2026",
+          "evidenceRef": "R-KR-RECOVERY",
+          "label": "Abstract Results"
+        }
+      ],
+      "sourceIds": [
+        "P-KOREA-2026"
+      ],
+      "studyFamilyIds": [
+        "S-KOREA-2026"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [
+        "/answers/metformin-treatment"
+      ],
+      "coverage": {
+        "complete": false,
+        "pending": []
+      },
+      "effects": [
+        {
+          "sourceId": "P-KOREA-2026",
+          "design": "Double-blind randomized placebo-controlled trial",
+          "population": "Adults with PASC index at least 12",
+          "timepoint": "Week 8",
+          "sampleRandomized": 396,
+          "sampleAnalyzed": 396,
+          "sampleDenominatorNote": "Study-level totals; do not substitute them for endpoint-specific denominators.",
+          "locators": [
+            {
+              "paper_id": "P-KOREA-2026",
+              "source_url": "https://pubmed.ncbi.nlm.nih.gov/41771135/",
+              "file": "work/evidence/raw/pubmed-metadata.xml",
+              "pdf_page": null,
+              "printed_page": null,
+              "section": "Results",
+              "table_figure": "Abstract Results",
+              "paragraph": null,
+              "basis": "abstract",
+              "missingness": "not_applicable"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SYN-D03-C01-SEVERITY",
+      "drugId": "D03",
+      "conditionId": "C01",
+      "title": "Core symptom severity in established Long COVID",
+      "use": "Treatment of established Long COVID",
+      "population": "Adults with at least two moderate or severe core symptoms for at least three months",
+      "comparison": "Nirmatrelvir plus ritonavir versus placebo plus ritonavir",
+      "endpoint": "Pooled severity of six core PASC symptoms",
+      "timepoint": "Week 10",
+      "status": "reported_result",
+      "finding": {
+        "text": "STOP-PASC did not show a statistically significant between-group difference in its primary symptom-severity outcome.",
+        "sources": [
+          "P-STOPPASC-2024"
+        ],
+        "evidenceRefs": [
+          "R-SP-PRIMARY"
+        ],
+        "kind": "bounded_interpretation"
+      },
+      "magnitudeText": "The primary symptom-severity comparison was not statistically significant.",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "1 randomized trial family; endpoint definitions, populations and timepoints remain separate.",
+      "limitations": [
+        {
+          "text": "The small, single-center trial closed early after its futility criterion was reached.",
+          "sources": [
+            "P-STOPPASC-2024"
+          ]
+        },
+        {
+          "text": "The primary symptom-severity outcome combines six symptoms; the separate fatigue result answers a narrower question.",
+          "sources": [
+            "P-STOPPASC-2024"
+          ]
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "P-STOPPASC-2024",
+          "evidenceRef": "R-SP-PRIMARY",
+          "label": "Results / Primary Outcome"
+        }
+      ],
+      "sourceIds": [
+        "P-STOPPASC-2024"
+      ],
+      "studyFamilyIds": [
+        "S-STOPPASC-2024"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [
+        "/answers/nirmatrelvir-treatment"
+      ],
+      "coverage": {
+        "complete": false,
+        "pending": []
+      },
+      "effects": [
+        {
+          "sourceId": "P-STOPPASC-2024",
+          "design": "Double-blind randomized placebo-controlled trial, 2:1 allocation",
+          "population": "Adults with established PASC and at least two moderate or severe core symptoms",
+          "timepoint": "Week 10",
+          "sampleRandomized": 155,
+          "sampleAnalyzed": 155,
+          "sampleDenominatorNote": "Study-level totals; do not substitute them for endpoint-specific denominators.",
+          "locators": [
+            {
+              "paper_id": "P-STOPPASC-2024",
+              "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11161857/",
+              "file": "work/evidence/raw/stoppasc.html",
+              "pdf_page": null,
+              "printed_page": null,
+              "section": "Results / Primary Outcome",
+              "table_figure": null,
+              "paragraph": null,
+              "basis": "full_text",
+              "missingness": "not_applicable"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SYN-D03-C01-FATIGUE",
+      "drugId": "D03",
+      "conditionId": "C01",
+      "title": "Fatigue score change in established Long COVID",
+      "use": "Treatment of established Long COVID",
+      "population": "Adults with at least two moderate or severe core symptoms for at least three months",
+      "comparison": "Nirmatrelvir plus ritonavir versus placebo plus ritonavir",
+      "endpoint": "PROMIS fatigue score change (secondary outcome)",
+      "timepoint": "Baseline to week 10",
+      "status": "reported_result",
+      "finding": {
+        "text": "The secondary fatigue comparison did not show a clear advantage for nirmatrelvir–ritonavir; the confidence interval included differences in either direction.",
+        "sources": [
+          "P-STOPPASC-2024"
+        ],
+        "evidenceRefs": [
+          "R-SP-FATIGUE"
+        ],
+        "kind": "bounded_interpretation"
+      },
+      "magnitudeText": "Adjusted between-group change difference 0.38 score points (95% CI −2.40 to 3.15).",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "1 randomized trial family; endpoint definitions, populations and timepoints remain separate.",
+      "limitations": [
+        {
+          "text": "Lower fatigue scores are better; the positive point estimate does not favor active treatment.",
+          "sources": [
+            "P-STOPPASC-2024"
+          ]
+        },
+        {
+          "text": "Fatigue was a secondary outcome in a trial with several symptom measures.",
+          "sources": [
+            "P-STOPPASC-2024"
+          ]
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "P-STOPPASC-2024",
+          "evidenceRef": "R-SP-FATIGUE",
+          "label": "Table 2 PROMIS fatigue"
+        }
+      ],
+      "sourceIds": [
+        "P-STOPPASC-2024"
+      ],
+      "studyFamilyIds": [
+        "S-STOPPASC-2024"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [
+        "/answers/nirmatrelvir-treatment"
+      ],
+      "coverage": {
+        "complete": false,
+        "pending": []
+      },
+      "effects": [
+        {
+          "sourceId": "P-STOPPASC-2024",
+          "design": "Double-blind randomized placebo-controlled trial, 2:1 allocation",
+          "population": "Adults with at least two moderate/severe core PASC symptoms, at least 3 months duration",
+          "timepoint": "Baseline to week 10",
+          "sampleRandomized": 155,
+          "sampleAnalyzed": 155,
+          "sampleDenominatorNote": "Study-level totals; do not substitute them for endpoint-specific denominators.",
+          "locators": [
+            {
+              "paper_id": "P-STOPPASC-2024",
+              "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11161857/",
+              "file": "work/evidence/raw/stoppasc.html",
+              "pdf_page": null,
+              "printed_page": null,
+              "section": "Results",
+              "table_figure": "Table 2 PROMIS fatigue",
+              "paragraph": null,
+              "basis": "full_text",
+              "missingness": "not_applicable"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SYN-D03-C01-PHENOTYPES",
+      "drugId": "D03",
+      "conditionId": "C01",
+      "title": "Clinically significant improvement across selected symptom phenotypes",
+      "use": "Treatment of established Long COVID",
+      "population": "Adults with Long COVID for at least 12 weeks; cognitive, autonomic or exercise phenotypes",
+      "comparison": "15- or 25-day nirmatrelvir–ritonavir regimens versus placebo–ritonavir",
+      "endpoint": "Phenotype-specific primary improvement outcomes",
+      "timepoint": "Day 90",
+      "status": "reported_result",
+      "finding": {
+        "text": "The RECOVER-VITAL abstract reports no statistically significant primary benefit in the selected symptom phenotypes.",
+        "sources": [
+          "P-RECOVER-2026"
+        ],
+        "evidenceRefs": [
+          "R-RV-NULL"
+        ],
+        "kind": "bounded_interpretation"
+      },
+      "magnitudeText": "No significant primary benefit was reported for the studied symptom phenotypes.",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "1 randomized trial family; endpoint definitions, populations and timepoints remain separate.",
+      "limitations": [
+        {
+          "text": "Different phenotypes used different primary outcomes.",
+          "sources": [
+            "P-RECOVER-2026"
+          ]
+        },
+        {
+          "text": "The findings apply to the selected symptom groups and tested treatment duration.",
+          "sources": [
+            "P-RECOVER-2026"
+          ]
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "P-RECOVER-2026",
+          "evidenceRef": "R-RV-NULL",
+          "label": "Abstract Findings"
+        }
+      ],
+      "sourceIds": [
+        "P-RECOVER-2026"
+      ],
+      "studyFamilyIds": [
+        "S-RECOVER-2026"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [
+        "/answers/nirmatrelvir-treatment"
+      ],
+      "coverage": {
+        "complete": false,
+        "pending": []
+      },
+      "effects": [
+        {
+          "sourceId": "P-RECOVER-2026",
+          "design": "Double-blind randomized placebo-controlled trial, 1:1:1 allocation",
+          "population": "Adults with long COVID of at least 12 weeks; cognitive, autonomic, exercise phenotypes",
+          "timepoint": "Day 90",
+          "sampleRandomized": 964,
+          "sampleAnalyzed": 959,
+          "sampleDenominatorNote": "Study-level totals; do not substitute them for endpoint-specific denominators.",
+          "locators": [
+            {
+              "paper_id": "P-RECOVER-2026",
+              "source_url": "https://pubmed.ncbi.nlm.nih.gov/42673984/",
+              "file": "work/evidence/raw/pubmed-metadata.xml",
+              "pdf_page": null,
+              "printed_page": null,
+              "section": "Results",
+              "table_figure": "Abstract Findings",
+              "paragraph": null,
+              "basis": "abstract",
+              "missingness": "not_applicable"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SYN-D01-C24-UPDRS",
+      "drugId": "D01",
+      "conditionId": "C24",
+      "title": "Parkinson symptom score with adjunctive metformin",
+      "use": "Adjunctive treatment of Parkinson disease",
+      "population": "Adults aged at least 50 receiving levodopa/carbidopa; diabetes excluded",
+      "comparison": "Metformin plus levodopa/carbidopa versus placebo plus levodopa/carbidopa",
+      "endpoint": "UPDRS total (primary clinical endpoint)",
+      "timepoint": "Three months",
+      "status": "reported_result",
+      "finding": {
+        "text": "The pilot did not demonstrate a between-group clinical benefit on UPDRS total, despite improvement within the metformin arm.",
+        "sources": [
+          "CP016"
+        ],
+        "evidenceRefs": [
+          "CP016-ARTICLE-O1"
+        ],
+        "kind": "bounded_interpretation"
+      },
+      "magnitudeText": "Post-treatment UPDRS medians 128 (IQR 98–151) versus 139 (101–151.5); rank-biserial r=0.106, P=0.515. Between-group confidence interval not recorded.",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "One small double-blind randomized pilot; 60 randomized, 27 and 25 analyzed per protocol.",
+      "limitations": [
+        {
+          "text": "The short, single-center study used a per-protocol analysis and a single metformin dose.",
+          "sources": [
+            "CP016"
+          ],
+          "evidenceRefs": [
+            "CP016-ARTICLE-study_type",
+            "CP016-ARTICLE-stated_limitations"
+          ],
+          "kind": "source_fact"
+        },
+        {
+          "text": "Biomarker differences are separate outcomes and do not establish clinical superiority.",
+          "sources": [
+            "CP016"
+          ],
+          "evidenceRefs": [
+            "CP016-ARTICLE-O1",
+            "CP016-ARTICLE-O3"
+          ],
+          "kind": "bounded_interpretation"
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "CP016",
+          "evidenceRef": "CP016-ARTICLE-O1",
+          "label": "PDF p6 Table2; p7 Results"
+        },
+        {
+          "sourceId": "CP016",
+          "evidenceRef": "CP016-ARTICLE-sample_size",
+          "label": "PDF pp1–12; Table2 p6, Table3 p7, Table4 p8"
+        }
+      ],
+      "sourceIds": [
+        "CP016"
+      ],
+      "studyFamilyIds": [
+        "CP28-FAMILY-CP016"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "complete": false,
+        "pending": []
+      },
+      "effects": [
+        {
+          "sourceId": "CP016",
+          "sampleRandomized": 60,
+          "sampleAnalyzed": null,
+          "groupAnalyzedN": [
+            27,
+            25
+          ],
+          "locators": [
+            {
+              "pdfPage": 6,
+              "table": "Table 2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SYN-D01-C25-EXPLORATORY",
+      "drugId": "D01",
+      "conditionId": "C25",
+      "title": "Cognition-related exploratory findings in schizophrenia",
+      "use": "Metformin added to antipsychotic treatment",
+      "population": "Clinically stable schizophrenia; disease duration at most five years",
+      "comparison": "Metformin plus antipsychotics versus antipsychotics alone",
+      "endpoint": "Metabolites and brain connectivity associated with cognitive change",
+      "timepoint": "Up to 24 weeks",
+      "status": "exploratory",
+      "finding": {
+        "text": "An exploratory companion analysis linked metabolic and brain-connectivity changes with cognitive scores in the metformin schizophrenia trial.",
+        "sources": [
+          "CP017"
+        ],
+        "evidenceRefs": [
+          "CP017-ARTICLE-O1",
+          "CP017-ARTICLE-O2",
+          "CP017-ARTICLE-O4"
+        ],
+        "kind": "bounded_interpretation"
+      },
+      "magnitudeText": "Blood analyses involved 58 participants and MRI analyses 33, from the 72-person parent trial. These subgroup counts describe the mechanistic sample.",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "Post hoc analysis of an open-label randomized parent trial; plasma analysis 58 and MRI analysis 33, drawn from 72 randomized.",
+      "limitations": [
+        {
+          "text": "Unadjusted exploratory tests, missing samples and potential confounding limit interpretation.",
+          "sources": [
+            "CP017"
+          ]
+        },
+        {
+          "text": "This is a companion analysis of the cognitive trial, not an independent replication.",
+          "sources": [
+            "CP017"
+          ]
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "CP017",
+          "evidenceRef": "CP017-ARTICLE-O1",
+          "label": "PDF p8 Table3 week24"
+        },
+        {
+          "sourceId": "CP017",
+          "evidenceRef": "CP017-ARTICLE-O2",
+          "label": "PDF p7 Results; Fig1 p5"
+        },
+        {
+          "sourceId": "CP017",
+          "evidenceRef": "CP017-ARTICLE-O3",
+          "label": "PDF p7 Results; Fig2 p8"
+        },
+        {
+          "sourceId": "CP017",
+          "evidenceRef": "CP017-ARTICLE-O4",
+          "label": "PDF pp8,10; p7 opening cognition paragraph"
+        },
+        {
+          "sourceId": "CP017",
+          "evidenceRef": "CP017-ARTICLE-sample_size",
+          "label": "PDF pp1–14; Methods pp3–4; Tables1–3 pp6–8"
+        }
+      ],
+      "sourceIds": [
+        "CP017"
+      ],
+      "studyFamilyIds": [
+        "CP28-FAMILY-CP017-PARENT"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "complete": false,
+        "pending": []
+      },
+      "effects": []
+    },
+    {
+      "id": "SYN-D28-C11-CMAP",
+      "drugId": "D28",
+      "conditionId": "C11",
+      "title": "Vorinostat computational nomination for anti-TNF-refractory Crohn disease",
+      "use": "Computational drug-repurposing hypothesis for anti-TNF-refractory Crohn disease",
+      "population": "GSE100833 anti-TNF refractory Crohn's disease inflamed and non-inflamed colonic transcriptomes; CMap and STRING analyses.",
+      "comparison": "Transcriptomic cluster queried against Connectivity Map drug profiles; no treated-patient comparison",
+      "endpoint": "Connectivity Map (CMap) enrichment score for a selected gene cluster",
+      "timepoint": "Computational analysis; no patient treatment follow-up",
+      "status": "computational_result",
+      "finding": {
+        "text": "Vorinostat was nominated by an original computational analysis of Crohn disease transcriptomes. The result identifies a hypothesis for experimental testing and does not demonstrate symptom improvement, remission or clinical safety.",
+        "sources": [
+          "CP002-R01"
+        ],
+        "evidenceRefs": [
+          "REF-CP002-R01-P003"
+        ],
+        "kind": "source_fact"
+      },
+      "magnitudeText": "CMap enrichment score 12.3, cluster 1. This is a computational score, not a clinical effect size; a clinical effect interval is not identifiable from this design.",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "One original computational analysis; the source describes transcriptomes from 327 patients, with no new intervention cohort. Both Crohn candidate rows belong to this same analysis.",
+      "limitations": [
+        {
+          "text": "The analysis used one transcriptome dataset; the authors note potential selection bias and the need for experimental confirmation.",
+          "sources": [
+            "CP002-R01"
+          ],
+          "evidenceRefs": [
+            "REF-CP002-DESIGN"
+          ],
+          "kind": "source_fact"
+        },
+        {
+          "text": "Candidate nomination cannot quantify patient benefit, and neither drug was tested as a Crohn treatment in this report.",
+          "sources": [
+            "CP002-R01"
+          ],
+          "evidenceRefs": [
+            "REF-CP002-R01-P003"
+          ],
+          "kind": "source_fact"
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "CP002-R01",
+          "evidenceRef": "REF-CP002-R01-P003",
+          "label": "Figure 3, PDF p.4"
+        },
+        {
+          "sourceId": "CP002-R01",
+          "evidenceRef": "REF-CP002-DESIGN",
+          "label": "Methods PDF p.7; limitations PDF pp.6–7"
+        }
+      ],
+      "sourceIds": [
+        "CP002-R01"
+      ],
+      "studyFamilyIds": [
+        "CP28-FAMILY-CP002"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "complete": false,
+        "pending": []
+      },
+      "effects": [
+        {
+          "sourceId": "CP002-R01",
+          "design": "Original computational transcriptome/CMap drug repositioning",
+          "population": "GSE100833 anti-TNF refractory Crohn's disease inflamed and non-inflamed colonic transcriptomes; CMap and STRING analyses.",
+          "sampleRandomized": null,
+          "sampleAnalyzed": null,
+          "sampleDescription": "327 patients described in Methods p.7; 164 small-molecule compounds described p.1. No intervention cohort.",
+          "denominatorBasis": "Dataset participants are not randomized or drug-treated participants.",
+          "locators": [
+            {
+              "pdf_page": 4,
+              "table_figure": "Figure 3",
+              "file": "697e429c81b92d268921c9c0d2564ec1.pdf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SYN-D29-C11-CMAP",
+      "drugId": "D29",
+      "conditionId": "C11",
+      "title": "Clomipramine computational nomination for anti-TNF-refractory Crohn disease",
+      "use": "Computational drug-repurposing hypothesis for anti-TNF-refractory Crohn disease",
+      "population": "GSE100833 anti-TNF refractory Crohn's disease inflamed and non-inflamed colonic transcriptomes; CMap and STRING analyses.",
+      "comparison": "Transcriptomic cluster queried against Connectivity Map drug profiles; no treated-patient comparison",
+      "endpoint": "Connectivity Map (CMap) enrichment score for a selected gene cluster",
+      "timepoint": "Computational analysis; no patient treatment follow-up",
+      "status": "computational_result",
+      "finding": {
+        "text": "Clomipramine was nominated by an original computational analysis of Crohn disease transcriptomes. The result identifies a hypothesis for experimental testing and does not demonstrate symptom improvement, remission or clinical safety.",
+        "sources": [
+          "CP002-R01"
+        ],
+        "evidenceRefs": [
+          "REF-CP002-R01-P025"
+        ],
+        "kind": "source_fact"
+      },
+      "magnitudeText": "CMap enrichment score 8.4, cluster 2. This is a computational score, not a clinical effect size; a clinical effect interval is not identifiable from this design.",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "One original computational analysis; the source describes transcriptomes from 327 patients, with no new intervention cohort. Both Crohn candidate rows belong to this same analysis.",
+      "limitations": [
+        {
+          "text": "The analysis used one transcriptome dataset; the authors note potential selection bias and the need for experimental confirmation.",
+          "sources": [
+            "CP002-R01"
+          ],
+          "evidenceRefs": [
+            "REF-CP002-DESIGN"
+          ],
+          "kind": "source_fact"
+        },
+        {
+          "text": "Candidate nomination cannot quantify patient benefit, and neither drug was tested as a Crohn treatment in this report.",
+          "sources": [
+            "CP002-R01"
+          ],
+          "evidenceRefs": [
+            "REF-CP002-R01-P025"
+          ],
+          "kind": "source_fact"
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "CP002-R01",
+          "evidenceRef": "REF-CP002-R01-P025",
+          "label": "Figure 4, PDF p.5"
+        },
+        {
+          "sourceId": "CP002-R01",
+          "evidenceRef": "REF-CP002-DESIGN",
+          "label": "Methods PDF p.7; limitations PDF pp.6–7"
+        }
+      ],
+      "sourceIds": [
+        "CP002-R01"
+      ],
+      "studyFamilyIds": [
+        "CP28-FAMILY-CP002"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "complete": false,
+        "pending": []
+      },
+      "effects": [
+        {
+          "sourceId": "CP002-R01",
+          "design": "Original computational transcriptome/CMap drug repositioning",
+          "population": "GSE100833 anti-TNF refractory Crohn's disease inflamed and non-inflamed colonic transcriptomes; CMap and STRING analyses.",
+          "sampleRandomized": null,
+          "sampleAnalyzed": null,
+          "sampleDescription": "327 patients described in Methods p.7; 164 small-molecule compounds described p.1. No intervention cohort.",
+          "denominatorBasis": "Dataset participants are not randomized or drug-treated participants.",
+          "locators": [
+            {
+              "pdf_page": 5,
+              "table_figure": "Figure 4",
+              "file": "697e429c81b92d268921c9c0d2564ec1.pdf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SYN-D01-C25-COGNITION",
+      "version": "reader-correction-2026-10-11",
+      "drugId": "D01",
+      "conditionId": "C25",
+      "title": "Cognitive performance with adjunctive metformin",
+      "use": "Metformin 500 mg three times daily added to antipsychotics for 24 weeks",
+      "population": "Clinically stable schizophrenia of at most five years duration; young adults at the Second Xiangya Hospital, China; mean age 22.8 years.",
+      "comparison": "Antipsychotics alone; no placebo",
+      "endpoint": "MATRICS Consensus Cognitive Battery composite score",
+      "timepoint": "24 weeks",
+      "route": "Oral",
+      "status": "reported_result",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "magnitudeClass": {
+        "label": "Not classified",
+        "reason": "No prespecified clinical-importance threshold applied."
+      },
+      "effects": [
+        {
+          "resultId": "SYN-D01-C25-COGNITION-R1",
+          "sourceId": "MF-SCHIZOPHRENIA-PARENT-2023",
+          "studyFamilyId": "CP28-FAMILY-CP017-PARENT",
+          "endpointClass": "primary",
+          "population": "Clinically stable schizophrenia of at most five years duration; young adults at the Second Xiangya Hospital, China; mean age 22.8 years.",
+          "timepoint": "24 weeks",
+          "type": "mean_difference",
+          "value": 3.43,
+          "units": "MCCB_points",
+          "armData": [],
+          "uncertainty": {
+            "level": 95,
+            "lower": 1.83,
+            "upper": 5.02,
+            "type": "confidence_interval",
+            "missing_reason": null
+          },
+          "recordedNotes": "72 randomized; 59 completed. Exact number contributing to the mixed-model estimate not separately verified; do not label 59 as the analysis population.",
+          "sourceAccess": "indexed_primary_full_text",
+          "extractionBasis": "indexed_primary_full_text",
+          "locators": [
+            {
+              "paper_id": "MF-SCHIZOPHRENIA-PARENT-2023",
+              "source_url": "https://www.nature.com/articles/s41398-023-02616-x",
+              "file": null,
+              "pdf_page": null,
+              "printed_page": null,
+              "section": "Results: Metformin ameliorated cognitive dysfunction as evaluated by the MCCB; Figure 2",
+              "table_figure": "Figure 2",
+              "paragraph": null,
+              "basis": "indexed_primary_full_text",
+              "missingness": "not_applicable"
+            }
+          ],
+          "design": "Open-label randomized evaluator-blinded 24-week trial",
+          "sampleRandomized": 72,
+          "sampleAnalyzed": null,
+          "sampleDenominatorNote": "72 randomized; 59 completed. Exact number contributing to the mixed-model estimate not separately verified; do not label 59 as the analysis population.",
+          "intervention": [
+            "Metformin 500 mg three times daily added to antipsychotics for 24 weeks",
+            "Antipsychotics alone; no placebo"
+          ],
+          "designEvidenceRefs": [
+            "SYN-D01-C25-COGNITION-DESIGN"
+          ],
+          "reviewId": null,
+          "reviewStatus": "Not appraised"
+        }
+      ],
+      "sourceIds": [
+        "MF-SCHIZOPHRENIA-PARENT-2023"
+      ],
+      "resultIds": [
+        "SYN-D01-C25-COGNITION-R1"
+      ],
+      "claimIds": [],
+      "studyFamilyIds": [
+        "CP28-FAMILY-CP017-PARENT"
+      ],
+      "pairIds": [],
+      "finding": {
+        "text": "Adjunctive metformin improved the reported composite cognitive-test score compared with antipsychotic treatment alone after 24 weeks.",
+        "sources": [
+          "MF-SCHIZOPHRENIA-PARENT-2023"
+        ],
+        "evidenceRefs": [
+          "SYN-D01-C25-COGNITION-R1"
+        ],
+        "kind": "bounded_interpretation"
+      },
+      "limitations": [
+        {
+          "text": "The trial was small and open-label, without placebo; 59 of 72 participants completed follow-up. The practical importance of the score difference remains uncertain.",
+          "sources": [
+            "MF-SCHIZOPHRENIA-PARENT-2023"
+          ],
+          "evidenceRefs": [
+            "SYN-D01-C25-COGNITION-DESIGN"
+          ],
+          "kind": "source_fact"
+        }
+      ],
+      "coverage": {
+        "complete": false,
+        "pending": []
+      },
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "studyFamilyIdentityState": "Shared parent trial with CP017; count once",
+      "direction": "favors_metformin_on_cognitive_test",
+      "magnitudeText": "Estimated mean difference +3.43 MCCB points (95% CI 1.83 to 5.02).",
+      "evidenceBase": "One open-label randomized parent trial; 72 randomized, 59 completed; shared family with CP017.",
+      "sourceLocators": [
+        {
+          "sourceId": "MF-SCHIZOPHRENIA-PARENT-2023",
+          "evidenceRef": "SYN-D01-C25-COGNITION-R1",
+          "label": "Results: Metformin ameliorated cognitive dysfunction as evaluated by the MCCB; Figure 2"
+        }
+      ]
+    },
+    {
+      "id": "SYN-D01-C30-METPREVENT",
+      "version": "reader-correction-2026-10-11",
+      "drugId": "D01",
+      "conditionId": "C30",
+      "title": "Walking speed in probable sarcopenia and frailty",
+      "use": "Metformin 500 mg three times daily for four months",
+      "population": "Adults 65 years or older with probable sarcopenia, slow 4-m walking speed and physical prefrailty or frailty; Gateshead and Newcastle, England; mean age 80.4 years.",
+      "comparison": "Matching placebo",
+      "endpoint": "Adjusted between-group difference in 4-m walking speed",
+      "timepoint": "4 months",
+      "route": "Oral",
+      "status": "reported_result",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "magnitudeClass": {
+        "label": "Not classified",
+        "reason": "No prespecified clinical-importance threshold applied."
+      },
+      "effects": [
+        {
+          "resultId": "SYN-D01-C30-METPREVENT-R1",
+          "sourceId": "MF-METPREVENT-2025",
+          "studyFamilyId": "S-METPREVENT-2025",
+          "endpointClass": "primary",
+          "population": "Adults 65 years or older with probable sarcopenia, slow 4-m walking speed and physical prefrailty or frailty; Gateshead and Newcastle, England; mean age 80.4 years.",
+          "timepoint": "4 months",
+          "type": "mean_difference",
+          "value": 0.001,
+          "units": "m/s",
+          "armData": [
+            {
+              "arm_id": "S-METPREVENT-2025-metformin",
+              "n": 34,
+              "events": null,
+              "mean": 0.57,
+              "sd": 0.19,
+              "missing_reason": "not_applicable",
+              "denominator_basis": "complete_follow_up"
+            },
+            {
+              "arm_id": "S-METPREVENT-2025-placebo",
+              "n": 36,
+              "events": null,
+              "mean": 0.58,
+              "sd": 0.24,
+              "missing_reason": "not_applicable",
+              "denominator_basis": "complete_follow_up"
+            }
+          ],
+          "uncertainty": {
+            "level": 95,
+            "lower": -0.06,
+            "upper": 0.06,
+            "type": "confidence_interval",
+            "missing_reason": null
+          },
+          "recordedNotes": "72 randomized; primary complete-follow-up analysis 70 (34 metformin, 36 placebo). Adjusted treatment effect is not the subtraction of rounded unadjusted arm means.",
+          "sourceAccess": "primary_abstract_html",
+          "extractionBasis": "abstract",
+          "locators": [
+            {
+              "paper_id": "MF-METPREVENT-2025",
+              "source_url": "https://www.sciencedirect.com/science/article/pii/S2666756825000145",
+              "file": null,
+              "pdf_page": null,
+              "printed_page": null,
+              "section": "Primary report abstract: Methods, Findings and Interpretation, mirrored in Newcastle University repository",
+              "table_figure": "Abstract Findings",
+              "paragraph": null,
+              "basis": "abstract",
+              "missingness": "not_applicable"
+            }
+          ],
+          "design": "Double-blind randomized placebo-controlled parallel-group trial",
+          "sampleRandomized": 72,
+          "sampleAnalyzed": 70,
+          "sampleDenominatorNote": "72 randomized; primary complete-follow-up analysis 70 (34 metformin, 36 placebo). Adjusted treatment effect is not the subtraction of rounded unadjusted arm means.",
+          "intervention": [
+            "Metformin 500 mg three times daily for four months",
+            "Matching placebo"
+          ],
+          "designEvidenceRefs": [
+            "SYN-D01-C30-METPREVENT-DESIGN"
+          ],
+          "reviewId": null,
+          "reviewStatus": "Not appraised"
+        }
+      ],
+      "sourceIds": [
+        "MF-METPREVENT-2025"
+      ],
+      "resultIds": [
+        "SYN-D01-C30-METPREVENT-R1"
+      ],
+      "claimIds": [],
+      "studyFamilyIds": [
+        "S-METPREVENT-2025"
+      ],
+      "pairIds": [],
+      "finding": {
+        "text": "Metformin did not improve walking speed and was poorly tolerated in older adults with probable sarcopenia and prefrailty or frailty.",
+        "sources": [
+          "MF-METPREVENT-2025"
+        ],
+        "evidenceRefs": [
+          "SYN-D01-C30-METPREVENT-R1"
+        ],
+        "kind": "bounded_interpretation"
+      },
+      "limitations": [
+        {
+          "text": "The trial included 72 participants, predominantly White British, with a mean age of 80.4 years; applicability to younger or less frail populations is limited.",
+          "sources": [
+            "MF-METPREVENT-2025"
+          ],
+          "evidenceRefs": [
+            "SYN-D01-C30-METPREVENT-DESIGN"
+          ],
+          "kind": "source_fact"
+        }
+      ],
+      "coverage": {
+        "complete": false,
+        "pending": []
+      },
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "studyFamilyIdentityState": "Primary randomized trial registered as ISRCTN29932357",
+      "direction": "no_clear_difference",
+      "magnitudeText": "Adjusted walking-speed difference +0.001 m/s (95% CI −0.06 to 0.06; P=0.96).",
+      "evidenceBase": "One randomized trial; 72 randomized.",
+      "sourceLocators": [
+        {
+          "sourceId": "MF-METPREVENT-2025",
+          "evidenceRef": "SYN-D01-C30-METPREVENT-R1",
+          "label": "Primary report abstract: Methods, Findings and Interpretation, mirrored in Newcastle University repository"
+        }
+      ]
+    },
+    {
+      "id": "SYN-D17-C02-P-D17-PRINCIPLE",
+      "version": "reader-correction-2026-10-11",
+      "drugId": "D17",
+      "conditionId": "C02",
+      "title": "Recovery; COVID-19 hospitalization or death",
+      "use": "Doxycycline versus usual care",
+      "population": "Older or vulnerable community patients with acute suspected COVID-19",
+      "comparison": "Doxycycline versus usual care",
+      "endpoint": "Recovery; COVID-19 hospitalization or death",
+      "timepoint": "28 days",
+      "status": "reported_result",
+      "finding": {
+        "text": "No clinically meaningful recovery or hospitalization benefit.",
+        "sources": [
+          "P-D17-PRINCIPLE"
+        ]
+      },
+      "magnitudeText": "No meaningful benefit",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "Randomized controlled trial",
+      "limitations": [
+        {
+          "text": "Open-label community platform trial; suspected and confirmed infections",
+          "sources": [
+            "P-D17-PRINCIPLE"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "P-D17-PRINCIPLE"
+      ],
+      "resultIds": [
+        "SYN-D17-C02-P-D17-PRINCIPLE-R1"
+      ],
+      "studyFamilyIds": [
+        "STUDY-P-D17-PRINCIPLE"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "complete": false,
+        "pending": []
+      },
+      "effects": [
+        {
+          "sourceId": "P-D17-PRINCIPLE",
+          "design": "Randomized controlled trial",
+          "population": "Older or vulnerable community patients with acute suspected COVID-19",
+          "timepoint": "28 days",
+          "sampleDescription": "Older or vulnerable community patients with acute suspected COVID-19",
+          "locators": [
+            {
+              "section": "Abstract: methods and results"
+            }
+          ]
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "P-D17-PRINCIPLE",
+          "label": "Abstract: methods and results"
+        }
+      ]
+    },
+    {
+      "id": "SYN-D18-C04-P-D18-GBM",
+      "version": "reader-correction-2026-10-11",
+      "drugId": "D18",
+      "conditionId": "C04",
+      "title": "Survival and serious toxicity",
+      "use": "Disulfiram and copper plus chemotherapy versus chemotherapy",
+      "population": "Recurrent glioblastoma",
+      "comparison": "Disulfiram and copper plus chemotherapy versus chemotherapy",
+      "endpoint": "Survival and serious toxicity",
+      "timepoint": "Six months",
+      "status": "reported_result",
+      "finding": {
+        "text": "No significant survival improvement; increased severe adverse events.",
+        "sources": [
+          "P-D18-GBM"
+        ]
+      },
+      "magnitudeText": "Grade 3+ adverse events 34% versus 11%",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "Randomized controlled trial",
+      "limitations": [
+        {
+          "text": "Small recurrent-disease trial; findings specific to combination",
+          "sources": [
+            "P-D18-GBM"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "P-D18-GBM"
+      ],
+      "resultIds": [
+        "SYN-D18-C04-P-D18-GBM-R1"
+      ],
+      "studyFamilyIds": [
+        "STUDY-P-D18-GBM"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "complete": false,
+        "pending": []
+      },
+      "effects": [
+        {
+          "sourceId": "P-D18-GBM",
+          "design": "Randomized controlled trial",
+          "population": "Recurrent glioblastoma",
+          "timepoint": "Six months",
+          "sampleDescription": "Reported sample: 88",
+          "locators": [
+            {
+              "section": "Abstract: methods and results"
+            }
+          ]
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "P-D18-GBM",
+          "label": "Abstract: methods and results"
+        }
+      ]
+    },
+    {
+      "id": "SYN-D19-C18-P-D19-MELANOMA",
+      "version": "reader-correction-2026-10-11",
+      "drugId": "D19",
+      "conditionId": "C18",
+      "title": "Objective response",
+      "use": "Propranolol plus pembrolizumab; no control",
+      "population": "Advanced melanoma",
+      "comparison": "Propranolol plus pembrolizumab; no control",
+      "endpoint": "Objective response",
+      "timepoint": "Six months",
+      "status": "reported_result",
+      "finding": {
+        "text": "Responses occurred; propranolol contribution is not isolated.",
+        "sources": [
+          "P-D19-MELANOMA"
+        ]
+      },
+      "magnitudeText": "78% objective response",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "Phase I dose-escalation combination trial",
+      "limitations": [
+        {
+          "text": "Phase I, nine patients, active immunotherapy partner",
+          "sources": [
+            "P-D19-MELANOMA"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "P-D19-MELANOMA"
+      ],
+      "resultIds": [
+        "SYN-D19-C18-P-D19-MELANOMA-R1"
+      ],
+      "studyFamilyIds": [
+        "STUDY-P-D19-MELANOMA"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "complete": false,
+        "pending": []
+      },
+      "effects": [
+        {
+          "sourceId": "P-D19-MELANOMA",
+          "design": "Phase I dose-escalation combination trial",
+          "population": "Advanced melanoma",
+          "timepoint": "Six months",
+          "sampleDescription": "Reported sample: 9",
+          "locators": [
+            {
+              "section": "Abstract: methods and results"
+            }
+          ]
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "P-D19-MELANOMA",
+          "label": "Abstract: methods and results"
+        }
+      ]
+    },
+    {
+      "id": "SYN-D20-C17-P-D20-PANCREAS",
+      "version": "reader-correction-2026-10-11",
+      "drugId": "D20",
+      "conditionId": "C17",
+      "title": "Time to progression",
+      "use": "Gemcitabine plus simvastatin versus gemcitabine plus placebo",
+      "population": "Advanced pancreatic cancer",
+      "comparison": "Gemcitabine plus simvastatin versus gemcitabine plus placebo",
+      "endpoint": "Time to progression",
+      "timepoint": "During trial follow-up",
+      "status": "reported_result",
+      "finding": {
+        "text": "No significant improvement.",
+        "sources": [
+          "P-D20-PANCREAS"
+        ]
+      },
+      "magnitudeText": "Median 2.4 versus 3.6 months",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "Randomized controlled trial",
+      "limitations": [
+        {
+          "text": "Specific gemcitabine combination and disease stage",
+          "sources": [
+            "P-D20-PANCREAS"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "P-D20-PANCREAS"
+      ],
+      "resultIds": [
+        "SYN-D20-C17-P-D20-PANCREAS-R1"
+      ],
+      "studyFamilyIds": [
+        "STUDY-P-D20-PANCREAS"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "complete": false,
+        "pending": []
+      },
+      "effects": [
+        {
+          "sourceId": "P-D20-PANCREAS",
+          "design": "Randomized controlled trial",
+          "population": "Advanced pancreatic cancer",
+          "timepoint": "During trial follow-up",
+          "sampleDescription": "Reported sample: 114",
+          "locators": [
+            {
+              "section": "Abstract: methods and results"
+            }
+          ]
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "P-D20-PANCREAS",
+          "label": "Abstract: methods and results"
+        }
+      ]
+    },
+    {
+      "id": "SYN-D21-C13-P-D21-PROSTATE",
+      "version": "reader-correction-2026-10-11",
+      "drugId": "D21",
+      "conditionId": "C13",
+      "title": "PSA response and tolerability",
+      "use": "Niclosamide plus enzalutamide; no control",
+      "population": "Castration-resistant prostate cancer",
+      "comparison": "Niclosamide plus enzalutamide; no control",
+      "endpoint": "PSA response and tolerability",
+      "timepoint": "Dose escalation",
+      "status": "reported_result",
+      "finding": {
+        "text": "No PSA reductions; gastrointestinal toxicity limited escalation.",
+        "sources": [
+          "P-D21-PROSTATE"
+        ]
+      },
+      "magnitudeText": "No PSA decline",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "Phase I dose-escalation trial",
+      "limitations": [
+        {
+          "text": "Five-patient phase I; plasma range corrected in published erratum",
+          "sources": [
+            "P-D21-PROSTATE"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "P-D21-PROSTATE"
+      ],
+      "resultIds": [
+        "SYN-D21-C13-P-D21-PROSTATE-R1"
+      ],
+      "studyFamilyIds": [
+        "STUDY-P-D21-PROSTATE"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "complete": false,
+        "pending": []
+      },
+      "effects": [
+        {
+          "sourceId": "P-D21-PROSTATE",
+          "design": "Phase I dose-escalation trial",
+          "population": "Castration-resistant prostate cancer",
+          "timepoint": "Dose escalation",
+          "sampleDescription": "Reported sample: 5",
+          "locators": [
+            {
+              "section": "Abstract: methods and results"
+            }
+          ]
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "P-D21-PROSTATE",
+          "label": "Abstract: methods and results"
+        }
+      ]
+    },
+    {
+      "id": "SYN-D22-C02-P-D22-RECOVERY",
+      "version": "reader-correction-2026-10-11",
+      "drugId": "D22",
+      "conditionId": "C02",
+      "title": "All-cause mortality",
+      "use": "Hydroxychloroquine versus usual care",
+      "population": "Hospitalized COVID-19",
+      "comparison": "Hydroxychloroquine versus usual care",
+      "endpoint": "All-cause mortality",
+      "timepoint": "28 days",
+      "status": "reported_result",
+      "finding": {
+        "text": "No mortality reduction.",
+        "sources": [
+          "P-D22-RECOVERY"
+        ]
+      },
+      "magnitudeText": "27.0% versus 25.0%; rate ratio 1.09, 95% CI 0.97–1.23",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "Randomized controlled trial",
+      "limitations": [
+        {
+          "text": "Hospital treatment; different from prophylaxis",
+          "sources": [
+            "P-D22-RECOVERY"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "P-D22-RECOVERY"
+      ],
+      "resultIds": [
+        "SYN-D22-C02-P-D22-RECOVERY-R1"
+      ],
+      "studyFamilyIds": [
+        "STUDY-P-D22-RECOVERY"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "complete": false,
+        "pending": []
+      },
+      "effects": [
+        {
+          "sourceId": "P-D22-RECOVERY",
+          "design": "Randomized controlled trial",
+          "population": "Hospitalized COVID-19",
+          "timepoint": "28 days",
+          "sampleDescription": "Reported sample: 4716",
+          "locators": [
+            {
+              "section": "Abstract: methods and results"
+            }
+          ]
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "P-D22-RECOVERY",
+          "label": "Abstract: methods and results"
+        }
+      ]
+    },
+    {
+      "id": "SYN-D22-C03-P-D22-OVARIAN",
+      "version": "reader-correction-2026-10-11",
+      "drugId": "D22",
+      "conditionId": "C03",
+      "title": "Response and progression-free survival",
+      "use": "Hydroxychloroquine plus chemotherapy versus chemotherapy",
+      "population": "Platinum-sensitive recurrent ovarian cancer",
+      "comparison": "Hydroxychloroquine plus chemotherapy versus chemotherapy",
+      "endpoint": "Response and progression-free survival",
+      "timepoint": "Response after three cycles",
+      "status": "reported_result",
+      "finding": {
+        "text": "No significant efficacy advantage.",
+        "sources": [
+          "P-D22-OVARIAN"
+        ]
+      },
+      "magnitudeText": "Response 85% versus 80%; PFS HR 0.84, 95% CI 0.45–1.57",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "Randomized phase II trial",
+      "limitations": [
+        {
+          "text": "59 randomized; 56 response-evaluable; wide survival interval",
+          "sources": [
+            "P-D22-OVARIAN"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "P-D22-OVARIAN"
+      ],
+      "resultIds": [
+        "SYN-D22-C03-P-D22-OVARIAN-R1"
+      ],
+      "studyFamilyIds": [
+        "STUDY-P-D22-OVARIAN"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "complete": false,
+        "pending": []
+      },
+      "effects": [
+        {
+          "sourceId": "P-D22-OVARIAN",
+          "design": "Randomized phase II trial",
+          "population": "Platinum-sensitive recurrent ovarian cancer",
+          "timepoint": "Response after three cycles",
+          "sampleDescription": "Reported sample: 59",
+          "locators": [
+            {
+              "section": "Methods; response and survival results"
+            }
+          ]
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "P-D22-OVARIAN",
+          "label": "Methods; response and survival results"
+        }
+      ]
+    },
+    {
+      "id": "SYN-D24-C23-COND-C23-ACTIM-2017",
+      "version": "reader-correction-2026-10-11",
+      "drugId": "D24",
+      "conditionId": "C23",
+      "title": "MR 4.5",
+      "use": "Pioglitazone added to imatinib; nonrandomized comparison",
+      "population": "CML with molecular residual disease on imatinib",
+      "comparison": "Pioglitazone added to imatinib; nonrandomized comparison",
+      "endpoint": "MR 4.5",
+      "timepoint": "12 months",
+      "status": "reported_result",
+      "finding": {
+        "text": "Deeper molecular responses observed.",
+        "sources": [
+          "COND-C23-ACTIM-2017"
+        ]
+      },
+      "magnitudeText": "Cumulative MR 4.5 56%",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "Single-arm phase II study",
+      "limitations": [
+        {
+          "text": "Single-arm phase II; molecular outcome; comparison not randomized",
+          "sources": [
+            "COND-C23-ACTIM-2017"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "COND-C23-ACTIM-2017"
+      ],
+      "resultIds": [
+        "SYN-D24-C23-COND-C23-ACTIM-2017-R1"
+      ],
+      "studyFamilyIds": [
+        "STUDY-COND-C23-ACTIM-2017"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "complete": false,
+        "pending": []
+      },
+      "effects": [
+        {
+          "sourceId": "COND-C23-ACTIM-2017",
+          "design": "Single-arm phase II study",
+          "population": "CML with molecular residual disease on imatinib",
+          "timepoint": "12 months",
+          "sampleDescription": "Reported sample: 24",
+          "locators": [
+            {
+              "section": "Abstract; methods and results"
+            }
+          ]
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "COND-C23-ACTIM-2017",
+          "label": "Abstract; methods and results"
+        }
+      ]
+    },
+    {
+      "id": "SYN-D24-C30-P-D24-MUSCLE",
+      "version": "reader-correction-2026-10-11",
+      "drugId": "D24",
+      "conditionId": "C30",
+      "title": "Leg-press power",
+      "use": "Pioglitazone or placebo with or without resistance training",
+      "population": "Older overweight or obese adults during intentional weight loss",
+      "comparison": "Pioglitazone or placebo with or without resistance training",
+      "endpoint": "Leg-press power",
+      "timepoint": "End of weight-loss program",
+      "status": "reported_result",
+      "finding": {
+        "text": "Training interaction in women but not men.",
+        "sources": [
+          "P-D24-MUSCLE"
+        ]
+      },
+      "magnitudeText": "Interaction p=0.006 in women; p=0.88 in men",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "Randomized factorial trial",
+      "limitations": [
+        {
+          "text": "Sex-dependent finding; not a general diagnosed-sarcopenia treatment trial",
+          "sources": [
+            "P-D24-MUSCLE"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "P-D24-MUSCLE"
+      ],
+      "resultIds": [
+        "SYN-D24-C30-P-D24-MUSCLE-R1"
+      ],
+      "studyFamilyIds": [
+        "STUDY-P-D24-MUSCLE"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "complete": false,
+        "pending": []
+      },
+      "effects": [
+        {
+          "sourceId": "P-D24-MUSCLE",
+          "design": "Randomized factorial trial",
+          "population": "Older overweight or obese adults during intentional weight loss",
+          "timepoint": "End of weight-loss program",
+          "sampleDescription": "Reported sample: 88",
+          "locators": [
+            {
+              "section": "Abstract: methods and results"
+            }
+          ]
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "P-D24-MUSCLE",
+          "label": "Abstract: methods and results"
+        }
+      ]
+    },
+    {
+      "id": "SYN-D27-C12-P-D27-HNSCC",
+      "version": "reader-correction-2026-10-11",
+      "drugId": "D27",
+      "conditionId": "C12",
+      "title": "Response and toxicity",
+      "use": "Valproate with cisplatin chemoradiation; no control",
+      "population": "Locally advanced p 16-negative oropharyngeal squamous carcinoma",
+      "comparison": "Valproate with cisplatin chemoradiation; no control",
+      "endpoint": "Response and toxicity",
+      "timepoint": "Eight weeks after combined treatment",
+      "status": "reported_result",
+      "finding": {
+        "text": "High response with prohibitive toxicity and early termination.",
+        "sources": [
+          "P-D27-HNSCC"
+        ]
+      },
+      "magnitudeText": "88% response among nine evaluable patients",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "Single-arm phase II trial",
+      "limitations": [
+        {
+          "text": "Ten enrolled; active chemoradiation; cannot isolate valproate",
+          "sources": [
+            "P-D27-HNSCC"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "P-D27-HNSCC"
+      ],
+      "resultIds": [
+        "SYN-D27-C12-P-D27-HNSCC-R1"
+      ],
+      "studyFamilyIds": [
+        "STUDY-P-D27-HNSCC"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "complete": false,
+        "pending": []
+      },
+      "effects": [
+        {
+          "sourceId": "P-D27-HNSCC",
+          "design": "Single-arm phase II trial",
+          "population": "Locally advanced p 16-negative oropharyngeal squamous carcinoma",
+          "timepoint": "Eight weeks after combined treatment",
+          "sampleDescription": "Reported sample: 10",
+          "locators": [
+            {
+              "section": "Abstract: methods and results"
+            }
+          ]
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "P-D27-HNSCC",
+          "label": "Abstract: methods and results"
+        }
+      ]
+    },
+    {
+      "id": "SYN-D27-C22-COND-C22-VPA-2019",
+      "version": "reader-correction-2026-10-11",
+      "drugId": "D27",
+      "conditionId": "C22",
+      "title": "Remission and survival",
+      "use": "Decitabine with versus without valproate in factorial trial",
+      "population": "Older AML patients ineligible for intensive induction",
+      "comparison": "Decitabine with versus without valproate in factorial trial",
+      "endpoint": "Remission and survival",
+      "timepoint": "Trial follow-up",
+      "status": "reported_result",
+      "finding": {
+        "text": "No valproate remission or survival advantage.",
+        "sources": [
+          "COND-C22-VPA-2019"
+        ]
+      },
+      "magnitudeText": "17.8% versus 17.2%; OR 1.06, 95% CI 0.51–2.21",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "Randomized factorial phase II trial",
+      "limitations": [
+        {
+          "text": "ATRA was separately randomized; do not attribute its benefit to valproate",
+          "sources": [
+            "COND-C22-VPA-2019"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "COND-C22-VPA-2019"
+      ],
+      "resultIds": [
+        "SYN-D27-C22-COND-C22-VPA-2019-R1"
+      ],
+      "studyFamilyIds": [
+        "STUDY-COND-C22-VPA-2019"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "complete": false,
+        "pending": []
+      },
+      "effects": [
+        {
+          "sourceId": "COND-C22-VPA-2019",
+          "design": "Randomized factorial phase II trial",
+          "population": "Older AML patients ineligible for intensive induction",
+          "timepoint": "Trial follow-up",
+          "sampleDescription": "Reported sample: 200",
+          "locators": [
+            {
+              "section": "Abstract; methods and results"
+            }
+          ]
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "COND-C22-VPA-2019",
+          "label": "Abstract; methods and results"
+        }
+      ]
+    },
+    {
+      "id": "SYN-D30-C26-P-D30-ALZHEIMER",
+      "version": "reader-correction-2026-10-11",
+      "drugId": "D30",
+      "conditionId": "C26",
+      "title": "Cognitive performance and tolerability",
+      "use": "Thalidomide versus placebo",
+      "population": "Mild-to-moderate Alzheimer disease",
+      "comparison": "Thalidomide versus placebo",
+      "endpoint": "Cognitive performance and tolerability",
+      "timepoint": "24 weeks",
+      "status": "reported_result",
+      "finding": {
+        "text": "No cognitive benefit; poor tolerability.",
+        "sources": [
+          "P-D30-ALZHEIMER"
+        ]
+      },
+      "magnitudeText": "14 of 25 terminated early",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "Randomized double-blind placebo-controlled phase IIa trial",
+      "limitations": [
+        {
+          "text": "Small trial; high attrition; target dose not sustained",
+          "sources": [
+            "P-D30-ALZHEIMER"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "P-D30-ALZHEIMER"
+      ],
+      "resultIds": [
+        "SYN-D30-C26-P-D30-ALZHEIMER-R1"
+      ],
+      "studyFamilyIds": [
+        "STUDY-P-D30-ALZHEIMER"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "complete": false,
+        "pending": []
+      },
+      "effects": [
+        {
+          "sourceId": "P-D30-ALZHEIMER",
+          "design": "Randomized double-blind placebo-controlled phase IIa trial",
+          "population": "Mild-to-moderate Alzheimer disease",
+          "timepoint": "24 weeks",
+          "sampleDescription": "Reported sample: 25",
+          "locators": [
+            {
+              "section": "Abstract; safety and cognitive results"
+            }
+          ]
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "P-D30-ALZHEIMER",
+          "label": "Abstract; safety and cognitive results"
+        }
+      ]
+    },
+    {
+      "id": "SYN-D30-C03-P-D30-OVARIAN",
+      "version": "reader-correction-2026-10-11",
+      "drugId": "D30",
+      "conditionId": "C03",
+      "title": "Progression, mortality and toxicity",
+      "use": "Thalidomide versus tamoxifen",
+      "population": "Biochemical recurrent ovarian, fallopian-tube or peritoneal carcinoma",
+      "comparison": "Thalidomide versus tamoxifen",
+      "endpoint": "Progression, mortality and toxicity",
+      "timepoint": "Trial follow-up",
+      "status": "reported_result",
+      "finding": {
+        "text": "No progression benefit; greater mortality and toxicity.",
+        "sources": [
+          "P-D30-OVARIAN"
+        ]
+      },
+      "magnitudeText": "Death HR 1.76, 95% CI 1.16–2.68; grade 3–4 toxicity 55% versus 3%",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "Randomized phase III trial",
+      "limitations": [
+        {
+          "text": "Biochemical-only recurrence after initial chemotherapy response",
+          "sources": [
+            "P-D30-OVARIAN"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "P-D30-OVARIAN"
+      ],
+      "resultIds": [
+        "SYN-D30-C03-P-D30-OVARIAN-R1"
+      ],
+      "studyFamilyIds": [
+        "STUDY-P-D30-OVARIAN"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "complete": false,
+        "pending": []
+      },
+      "effects": [
+        {
+          "sourceId": "P-D30-OVARIAN",
+          "design": "Randomized phase III trial",
+          "population": "Biochemical recurrent ovarian, fallopian-tube or peritoneal carcinoma",
+          "timepoint": "Trial follow-up",
+          "sampleDescription": "Reported sample: 139",
+          "locators": [
+            {
+              "section": "Abstract: methods and results"
+            }
+          ]
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "P-D30-OVARIAN",
+          "label": "Abstract: methods and results"
+        }
+      ]
+    },
+    {
+      "id": "SYN-D30-C13-P-D30-PROSTATE",
+      "version": "reader-correction-2026-10-11",
+      "drugId": "D30",
+      "conditionId": "C13",
+      "title": "PSA response and progression-free survival",
+      "use": "Docetaxel plus thalidomide versus docetaxel",
+      "population": "Metastatic androgen-independent prostate cancer",
+      "comparison": "Docetaxel plus thalidomide versus docetaxel",
+      "endpoint": "PSA response and progression-free survival",
+      "timepoint": "Trial follow-up",
+      "status": "reported_result",
+      "finding": {
+        "text": "Higher PSA decline frequency; nonsignificant PFS difference.",
+        "sources": [
+          "P-D30-PROSTATE"
+        ]
+      },
+      "magnitudeText": "PSA decline >50%: 53% versus 37%; PFS p=0.32",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "Randomized phase II trial",
+      "limitations": [
+        {
+          "text": "Small phase II; thromboprophylaxis introduced during study",
+          "sources": [
+            "P-D30-PROSTATE"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "P-D30-PROSTATE"
+      ],
+      "resultIds": [
+        "SYN-D30-C13-P-D30-PROSTATE-R1"
+      ],
+      "studyFamilyIds": [
+        "STUDY-P-D30-PROSTATE"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "complete": false,
+        "pending": []
+      },
+      "effects": [
+        {
+          "sourceId": "P-D30-PROSTATE",
+          "design": "Randomized phase II trial",
+          "population": "Metastatic androgen-independent prostate cancer",
+          "timepoint": "Trial follow-up",
+          "sampleDescription": "Reported sample: 75",
+          "locators": [
+            {
+              "section": "Abstract: methods and results"
+            }
+          ]
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "P-D30-PROSTATE",
+          "label": "Abstract: methods and results"
+        }
+      ]
+    },
+    {
+      "id": "SYN-D30-C16-P-D30-CRC",
+      "version": "reader-correction-2026-10-11",
+      "drugId": "D30",
+      "conditionId": "C16",
+      "title": "Response and time to progression",
+      "use": "Irinotecan/fluorouracil/leucovorin with or without thalidomide",
+      "population": "Advanced colorectal cancer",
+      "comparison": "Irinotecan/fluorouracil/leucovorin with or without thalidomide",
+      "endpoint": "Response and time to progression",
+      "timepoint": "Trial follow-up",
+      "status": "reported_result",
+      "finding": {
+        "text": "No significant improvement in response or progression.",
+        "sources": [
+          "P-D30-CRC"
+        ]
+      },
+      "magnitudeText": "Response 28.1% versus 15.2%, p=0.2034; TTP 3.8 versus 2.5 months, p=0.1312",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "Randomized trial",
+      "limitations": [
+        {
+          "text": "Small randomized study; thalidomide used within combination chemotherapy",
+          "sources": [
+            "P-D30-CRC"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "P-D30-CRC"
+      ],
+      "resultIds": [
+        "SYN-D30-C16-P-D30-CRC-R1"
+      ],
+      "studyFamilyIds": [
+        "STUDY-P-D30-CRC"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "complete": false,
+        "pending": []
+      },
+      "effects": [
+        {
+          "sourceId": "P-D30-CRC",
+          "design": "Randomized trial",
+          "population": "Advanced colorectal cancer",
+          "timepoint": "Trial follow-up",
+          "sampleDescription": "Advanced colorectal cancer",
+          "locators": [
+            {
+              "section": "Abstract: methods and results"
+            }
+          ]
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "P-D30-CRC",
+          "label": "Abstract: methods and results"
+        }
+      ]
+    },
+    {
+      "id": "SYN-D07-C03-COND-C03-ITRA-2014",
+      "version": "reader-correction-2026-10-11",
+      "drugId": "D07",
+      "conditionId": "C03",
+      "title": "Tumor response",
+      "use": "Itraconazole with chemotherapy; no concurrent control",
+      "population": "Recurrent or persistent ovarian clear cell carcinoma",
+      "comparison": "Itraconazole with chemotherapy; no concurrent control",
+      "endpoint": "Tumor response",
+      "timepoint": "During treatment",
+      "status": "reported_result",
+      "finding": {
+        "text": "Tumor responses observed; itraconazole contribution cannot be isolated.",
+        "sources": [
+          "COND-C03-ITRA-2014"
+        ]
+      },
+      "magnitudeText": "Response 44%; 95% CI 12–77%",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "Retrospective series of nine patients",
+      "limitations": [
+        {
+          "text": "Retrospective nine-patient combination series; broad uncertainty; no randomized comparator",
+          "sources": [
+            "COND-C03-ITRA-2014"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "COND-C03-ITRA-2014"
+      ],
+      "resultIds": [
+        "SYN-D07-C03-COND-C03-ITRA-2014-R1"
+      ],
+      "studyFamilyIds": [
+        "STUDY-COND-C03-ITRA-2014"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "complete": false,
+        "pending": []
+      },
+      "effects": [
+        {
+          "sourceId": "COND-C03-ITRA-2014",
+          "design": "Retrospective series of nine patients",
+          "population": "Recurrent or persistent ovarian clear cell carcinoma",
+          "timepoint": "During treatment",
+          "sampleDescription": "Reported sample: 9",
+          "locators": [
+            {
+              "section": "Abstract: Background, Patients and methods, Results"
+            }
+          ]
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "COND-C03-ITRA-2014",
+          "label": "Abstract: Background, Patients and methods, Results"
+        }
+      ]
+    },
+    {
+      "id": "SYN-D09-C04-COND-C04-MEB-2021",
+      "version": "reader-correction-2026-10-11",
+      "drugId": "D09",
+      "conditionId": "C04",
+      "title": "Combination tolerability and drug exposure",
+      "use": "Mebendazole added to temozolomide; dose-escalation without control",
+      "population": "Newly diagnosed high-grade gliomas, 18 glioblastoma",
+      "comparison": "Mebendazole added to temozolomide; dose-escalation without control",
+      "endpoint": "Combination tolerability and drug exposure",
+      "timepoint": "Phase 1 treatment",
+      "status": "reported_result",
+      "finding": {
+        "text": "Feasibility studied; no controlled survival effect.",
+        "sources": [
+          "COND-C04-MEB-2021"
+        ]
+      },
+      "magnitudeText": "24 enrolled; liver-enzyme elevations reported",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "Phase 1 dose-escalation trial",
+      "limitations": [
+        {
+          "text": "Phase 1; mixed histologies; no randomized efficacy comparator",
+          "sources": [
+            "COND-C04-MEB-2021"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "COND-C04-MEB-2021"
+      ],
+      "resultIds": [
+        "SYN-D09-C04-COND-C04-MEB-2021-R1"
+      ],
+      "studyFamilyIds": [
+        "STUDY-COND-C04-MEB-2021"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "complete": false,
+        "pending": []
+      },
+      "effects": [
+        {
+          "sourceId": "COND-C04-MEB-2021",
+          "design": "Phase 1 dose-escalation trial",
+          "population": "Newly diagnosed high-grade gliomas, 18 glioblastoma",
+          "timepoint": "Phase 1 treatment",
+          "sampleDescription": "Reported sample: 24",
+          "locators": [
+            {
+              "section": "Abstract; Safety results; Introduction"
+            }
+          ]
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "COND-C04-MEB-2021",
+          "label": "Abstract; Safety results; Introduction"
+        }
+      ]
+    },
+    {
+      "id": "SYN-D04-C05-P-D04-FIBRO-2024",
+      "version": "reader-correction-2026-10-11",
+      "drugId": "D04",
+      "conditionId": "C05",
+      "title": "Average pain on 11-point scale",
+      "use": "Naltrexone 6 mg daily versus placebo",
+      "population": "Women with fibromyalgia",
+      "comparison": "Naltrexone 6 mg daily versus placebo",
+      "endpoint": "Average pain on 11-point scale",
+      "timepoint": "12 weeks",
+      "status": "reported_result",
+      "finding": {
+        "text": "No significant superiority.",
+        "sources": [
+          "P-D04-FIBRO-2024"
+        ]
+      },
+      "magnitudeText": "Between-group −0.34 points; 95% CI −0.95 to 0.27",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "Randomized placebo-controlled trial",
+      "limitations": [
+        {
+          "text": "One 12-week trial in women; CI includes modest benefit and no benefit",
+          "sources": [
+            "P-D04-FIBRO-2024"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "P-D04-FIBRO-2024"
+      ],
+      "resultIds": [
+        "SYN-D04-C05-P-D04-FIBRO-2024-R1"
+      ],
+      "studyFamilyIds": [
+        "STUDY-P-D04-FIBRO-2024"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "complete": false,
+        "pending": []
+      },
+      "effects": [
+        {
+          "sourceId": "P-D04-FIBRO-2024",
+          "design": "Randomized placebo-controlled trial",
+          "population": "Women with fibromyalgia",
+          "timepoint": "12 weeks",
+          "sampleDescription": "Reported sample: 99",
+          "locators": [
+            {
+              "section": "Abstract",
+              "source_url": "https://pubmed.ncbi.nlm.nih.gov/38258677/",
+              "basis": "abstract"
+            }
+          ]
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "P-D04-FIBRO-2024",
+          "label": "Abstract"
+        }
+      ]
+    },
+    {
+      "id": "SYN-D04-C07-P-D04-CSBD-2022",
+      "version": "reader-correction-2026-10-11",
+      "drugId": "D04",
+      "conditionId": "C07",
+      "title": "Self-report and clinician-interview symptom outcomes",
+      "use": "Naltrexone versus paroxetine versus placebo",
+      "population": "Heterosexual cisgender men with compulsive sexual behavior disorder",
+      "comparison": "Naltrexone versus paroxetine versus placebo",
+      "endpoint": "Self-report and clinician-interview symptom outcomes",
+      "timepoint": "20 weeks",
+      "status": "reported_result",
+      "finding": {
+        "text": "Self-report no clear separation; some interviews favored active treatment.",
+        "sources": [
+          "P-D04-CSBD-2022"
+        ]
+      },
+      "magnitudeText": "73 randomized across 3 arms",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "20-week randomized placebo-controlled trial",
+      "limitations": [
+        {
+          "text": "Small male-only sample; results differ by measurement; no single unqualified efficacy conclusion",
+          "sources": [
+            "P-D04-CSBD-2022"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "P-D04-CSBD-2022"
+      ],
+      "resultIds": [
+        "SYN-D04-C07-P-D04-CSBD-2022-R1"
+      ],
+      "studyFamilyIds": [
+        "STUDY-P-D04-CSBD-2022"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "complete": false,
+        "pending": []
+      },
+      "effects": [
+        {
+          "sourceId": "P-D04-CSBD-2022",
+          "design": "20-week randomized placebo-controlled trial",
+          "population": "Heterosexual cisgender men with compulsive sexual behavior disorder",
+          "timepoint": "20 weeks",
+          "sampleDescription": "Reported sample: 73",
+          "locators": [
+            {
+              "section": "Trial methods and results",
+              "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9453901/",
+              "basis": "full_text"
+            }
+          ]
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "P-D04-CSBD-2022",
+          "label": "Trial methods and results"
+        }
+      ]
+    },
+    {
+      "id": "SYN-D05-C09-P-D05-PAXD-2025",
+      "version": "reader-correction-2026-10-11",
+      "drugId": "D05",
+      "conditionId": "C09",
+      "title": "QIDS-SR depressive-symptom change",
+      "use": "Pramipexole augmentation versus placebo augmentation",
+      "population": "Adults with treatment-resistant unipolar major depression",
+      "comparison": "Pramipexole augmentation versus placebo augmentation",
+      "endpoint": "QIDS-SR depressive-symptom change",
+      "timepoint": "12 weeks",
+      "status": "reported_result",
+      "finding": {
+        "text": "Greater reduction with pramipexole.",
+        "sources": [
+          "P-D05-PAXD-2025"
+        ]
+      },
+      "magnitudeText": "Adjusted difference −3.91 points; 95% CI −5.37 to −2.45; P < 0.0001",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "Randomized double-blind adjunctive-treatment trial",
+      "limitations": [
+        {
+          "text": "150 eligible after 151 randomized; 20% versus 5% stopped for adverse events; no active-treatment comparison",
+          "sources": [
+            "P-D05-PAXD-2025"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "P-D05-PAXD-2025"
+      ],
+      "resultIds": [
+        "SYN-D05-C09-P-D05-PAXD-2025-R1"
+      ],
+      "studyFamilyIds": [
+        "STUDY-P-D05-PAXD-2025"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "complete": false,
+        "pending": []
+      },
+      "effects": [
+        {
+          "sourceId": "P-D05-PAXD-2025",
+          "design": "Randomized double-blind adjunctive-treatment trial",
+          "population": "Adults with treatment-resistant unipolar major depression",
+          "timepoint": "12 weeks",
+          "sampleDescription": "Reported sample: 150",
+          "locators": [
+            {
+              "section": "Table 2; Results; Discussion",
+              "source_url": "https://nottingham-repository.worktribe.com/OutputFile/50991721",
+              "basis": "full_text"
+            }
+          ]
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "P-D05-PAXD-2025",
+          "label": "Table 2; Results; Discussion"
+        }
+      ]
+    },
+    {
+      "id": "SYN-D17-C10-COND-C10-DOXY-2004",
+      "version": "reader-correction-2026-10-11",
+      "drugId": "D17",
+      "conditionId": "C10",
+      "title": "Clinical attachment level and probing depth",
+      "use": "Scaling/root planing plus subantimicrobial doxycycline versus placebo",
+      "population": "Adults with chronic periodontitis",
+      "comparison": "Scaling/root planing plus subantimicrobial doxycycline versus placebo",
+      "endpoint": "Clinical attachment level and probing depth",
+      "timepoint": "9 months",
+      "status": "reported_result",
+      "finding": {
+        "text": "Greater improvement with doxycycline adjunct.",
+        "sources": [
+          "COND-C10-DOXY-2004"
+        ]
+      },
+      "magnitudeText": "Greater clinical attachment gain and pocket-depth reduction with the adjunct",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "Multicenter randomized trial",
+      "limitations": [
+        {
+          "text": "Adjunctive regimen; not replacement for mechanical treatment",
+          "sources": [
+            "COND-C10-DOXY-2004"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "COND-C10-DOXY-2004"
+      ],
+      "resultIds": [
+        "SYN-D17-C10-COND-C10-DOXY-2004-R1"
+      ],
+      "studyFamilyIds": [
+        "STUDY-COND-C10-DOXY-2004"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "complete": false,
+        "pending": []
+      },
+      "effects": [
+        {
+          "sourceId": "COND-C10-DOXY-2004",
+          "design": "Multicenter randomized trial",
+          "population": "Adults with chronic periodontitis",
+          "timepoint": "9 months",
+          "sampleDescription": "Reported sample: 209",
+          "locators": [
+            {
+              "section": "Abstract; Results"
+            }
+          ]
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "COND-C10-DOXY-2004",
+          "label": "Abstract; Results"
+        }
+      ]
+    },
+    {
+      "id": "SYN-D07-C13-P-D07-PROSTATE-2013",
+      "version": "reader-correction-2026-10-11",
+      "drugId": "D07",
+      "conditionId": "C13",
+      "title": "PSA progression-free status",
+      "use": "Itraconazole 200 mg/day versus 600 mg/day; noncomparative design",
+      "population": "Chemotherapy-naive metastatic castration-resistant prostate cancer",
+      "comparison": "Itraconazole 200 mg/day versus 600 mg/day; noncomparative design",
+      "endpoint": "PSA progression-free status",
+      "timepoint": "24 weeks",
+      "status": "reported_result",
+      "finding": {
+        "text": "Higher-dose group met prespecified activity threshold.",
+        "sources": [
+          "P-D07-PROSTATE-2013"
+        ]
+      },
+      "magnitudeText": "11.8% low-dose versus 48.0% high-dose PSA progression-free; median PFS 11.9 versus 35.9 weeks",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "Randomized dose comparison without standard-care control",
+      "limitations": [
+        {
+          "text": "No standard-care control; 17 low-dose and 29 high-dose; low-dose closed for futility",
+          "sources": [
+            "P-D07-PROSTATE-2013"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "P-D07-PROSTATE-2013"
+      ],
+      "resultIds": [
+        "SYN-D07-C13-P-D07-PROSTATE-2013-R1"
+      ],
+      "studyFamilyIds": [
+        "STUDY-P-D07-PROSTATE-2013"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "complete": false,
+        "pending": []
+      },
+      "effects": [
+        {
+          "sourceId": "P-D07-PROSTATE-2013",
+          "design": "Randomized dose comparison without standard-care control",
+          "population": "Chemotherapy-naive metastatic castration-resistant prostate cancer",
+          "timepoint": "24 weeks",
+          "sampleDescription": "Reported sample: 46",
+          "locators": [
+            {
+              "section": "Abstract",
+              "source_url": "https://pubmed.ncbi.nlm.nih.gov/23340005/",
+              "basis": "abstract"
+            }
+          ]
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "P-D07-PROSTATE-2013",
+          "label": "Abstract"
+        }
+      ]
+    },
+    {
+      "id": "SYN-D07-C14-COND-C14-ITRA-2013",
+      "version": "reader-correction-2026-10-11",
+      "drugId": "D07",
+      "conditionId": "C14",
+      "title": "Progression-free survival",
+      "use": "Pemetrexed plus itraconazole versus pemetrexed alone",
+      "population": "Previously treated metastatic nonsquamous NSCLC",
+      "comparison": "Pemetrexed plus itraconazole versus pemetrexed alone",
+      "endpoint": "Progression-free survival",
+      "timepoint": "Median follow-up outcome",
+      "status": "reported_result",
+      "finding": {
+        "text": "Numerically longer PFS; not statistically significant.",
+        "sources": [
+          "COND-C14-ITRA-2013"
+        ]
+      },
+      "magnitudeText": "Median 5.5 versus 2.8 months; HR 0.399; P = 0.089",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "Randomized phase II trial stopped early",
+      "limitations": [
+        {
+          "text": "Only 23 participants; premature closure; small exploratory phase II",
+          "sources": [
+            "COND-C14-ITRA-2013"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "COND-C14-ITRA-2013"
+      ],
+      "resultIds": [
+        "SYN-D07-C14-COND-C14-ITRA-2013-R1"
+      ],
+      "studyFamilyIds": [
+        "STUDY-COND-C14-ITRA-2013"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "complete": false,
+        "pending": []
+      },
+      "effects": [
+        {
+          "sourceId": "COND-C14-ITRA-2013",
+          "design": "Randomized phase II trial stopped early",
+          "population": "Previously treated metastatic nonsquamous NSCLC",
+          "timepoint": "Median follow-up outcome",
+          "sampleDescription": "Reported sample: 23",
+          "locators": [
+            {
+              "section": "Abstract; methods and results"
+            }
+          ]
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "COND-C14-ITRA-2013",
+          "label": "Abstract; methods and results"
+        }
+      ]
+    },
+    {
+      "id": "SYN-D01-C15-COND-C15-MA32-2022",
+      "version": "reader-correction-2026-10-11",
+      "drugId": "D01",
+      "conditionId": "C15",
+      "title": "Invasive disease-free survival",
+      "use": "Metformin versus placebo added to standard treatment",
+      "population": "High-risk operable nonmetastatic breast cancer without diabetes",
+      "comparison": "Metformin versus placebo added to standard treatment",
+      "endpoint": "Invasive disease-free survival",
+      "timepoint": "Planned 5-year treatment",
+      "status": "reported_result",
+      "finding": {
+        "text": "No benefit established.",
+        "sources": [
+          "COND-C15-MA32-2022"
+        ]
+      },
+      "magnitudeText": "Null primary invasive disease-free-survival result",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "Phase III randomized placebo-controlled trial",
+      "limitations": [
+        {
+          "text": "Population excludes diabetes; tumor subgroups should not override overall endpoint",
+          "sources": [
+            "COND-C15-MA32-2022"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "COND-C15-MA32-2022"
+      ],
+      "resultIds": [
+        "SYN-D01-C15-COND-C15-MA32-2022-R1"
+      ],
+      "studyFamilyIds": [
+        "STUDY-COND-C15-MA32-2022"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "complete": false,
+        "pending": []
+      },
+      "effects": [
+        {
+          "sourceId": "COND-C15-MA32-2022",
+          "design": "Phase III randomized placebo-controlled trial",
+          "population": "High-risk operable nonmetastatic breast cancer without diabetes",
+          "timepoint": "Planned 5-year treatment",
+          "sampleDescription": "Reported sample: 3649",
+          "locators": [
+            {
+              "section": "Abstract; methods and results"
+            }
+          ]
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "COND-C15-MA32-2022",
+          "label": "Abstract; methods and results"
+        }
+      ]
+    },
+    {
+      "id": "SYN-D23-C16-COND-C16-ALASCCA-2025",
+      "version": "reader-correction-2026-10-11",
+      "drugId": "D23",
+      "conditionId": "C16",
+      "title": "Cancer recurrence",
+      "use": "Aspirin versus placebo",
+      "population": "Resected localized CRC with selected PI 3 K-pathway alterations; subgroup A PIK 3 CA hotspots",
+      "comparison": "Aspirin versus placebo",
+      "endpoint": "Cancer recurrence",
+      "timepoint": "3 years",
+      "status": "reported_result",
+      "finding": {
+        "text": "Lower recurrence in prespecified hotspot group.",
+        "sources": [
+          "COND-C16-ALASCCA-2025"
+        ]
+      },
+      "magnitudeText": "7.7% versus 14.1%; HR 0.49; 95% CI 0.24–0.98",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "Randomized placebo-controlled adjuvant trial",
+      "limitations": [
+        {
+          "text": "Molecularly selected population; severe adverse events 16.8% versus 11.6%; not all CRC",
+          "sources": [
+            "COND-C16-ALASCCA-2025"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "COND-C16-ALASCCA-2025"
+      ],
+      "resultIds": [
+        "SYN-D23-C16-COND-C16-ALASCCA-2025-R1"
+      ],
+      "studyFamilyIds": [
+        "STUDY-COND-C16-ALASCCA-2025"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "complete": false,
+        "pending": []
+      },
+      "effects": [
+        {
+          "sourceId": "COND-C16-ALASCCA-2025",
+          "design": "Randomized placebo-controlled adjuvant trial",
+          "population": "Resected localized CRC with selected PI 3 K-pathway alterations; subgroup A PIK 3 CA hotspots",
+          "timepoint": "3 years",
+          "sampleDescription": "Resected localized CRC with selected PI 3 K-pathway alterations; subgroup A PIK 3 CA hotspots",
+          "locators": [
+            {
+              "section": "Abstract; methods and results"
+            }
+          ]
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "COND-C16-ALASCCA-2025",
+          "label": "Abstract; methods and results"
+        }
+      ]
+    },
+    {
+      "id": "SYN-D01-C17-COND-C17-MET-2015",
+      "version": "reader-correction-2026-10-11",
+      "drugId": "D01",
+      "conditionId": "C17",
+      "title": "Overall survival",
+      "use": "Gemcitabine/erlotinib plus metformin versus same regimen plus placebo",
+      "population": "Advanced pancreatic cancer",
+      "comparison": "Gemcitabine/erlotinib plus metformin versus same regimen plus placebo",
+      "endpoint": "Overall survival",
+      "timepoint": "Phase II follow-up",
+      "status": "reported_result",
+      "finding": {
+        "text": "No survival improvement.",
+        "sources": [
+          "COND-C17-MET-2015"
+        ]
+      },
+      "magnitudeText": "Null overall-survival result",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "Randomized placebo-controlled phase II trial",
+      "limitations": [
+        {
+          "text": "Specific advanced-disease combination; phase II sample",
+          "sources": [
+            "COND-C17-MET-2015"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "COND-C17-MET-2015"
+      ],
+      "resultIds": [
+        "SYN-D01-C17-COND-C17-MET-2015-R1"
+      ],
+      "studyFamilyIds": [
+        "STUDY-COND-C17-MET-2015"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "complete": false,
+        "pending": []
+      },
+      "effects": [
+        {
+          "sourceId": "COND-C17-MET-2015",
+          "design": "Randomized placebo-controlled phase II trial",
+          "population": "Advanced pancreatic cancer",
+          "timepoint": "Phase II follow-up",
+          "sampleDescription": "Reported sample: 121",
+          "locators": [
+            {
+              "section": "Abstract; methods and results"
+            }
+          ]
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "COND-C17-MET-2015",
+          "label": "Abstract; methods and results"
+        }
+      ]
+    },
+    {
+      "id": "SYN-D19-C18-COND-C18-PROP-2021",
+      "version": "reader-correction-2026-10-11",
+      "drugId": "D19",
+      "conditionId": "C18",
+      "title": "Safety and dose-limiting toxicity",
+      "use": "Propranolol with pembrolizumab; no control",
+      "population": "Advanced or metastatic melanoma; checkpoint-treatment-naive",
+      "comparison": "Propranolol with pembrolizumab; no control",
+      "endpoint": "Safety and dose-limiting toxicity",
+      "timepoint": "Phase I treatment",
+      "status": "reported_result",
+      "finding": {
+        "text": "No dose-limiting toxicity observed.",
+        "sources": [
+          "COND-C18-PROP-2021"
+        ]
+      },
+      "magnitudeText": "Rash, fatigue, vitiligo 4/9 each",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "Phase I combination study",
+      "limitations": [
+        {
+          "text": "Nine patients; no pembrolizumab-alone comparator",
+          "sources": [
+            "COND-C18-PROP-2021"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "COND-C18-PROP-2021"
+      ],
+      "resultIds": [
+        "SYN-D19-C18-COND-C18-PROP-2021-R1"
+      ],
+      "studyFamilyIds": [
+        "STUDY-COND-C18-PROP-2021"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "complete": false,
+        "pending": []
+      },
+      "effects": [
+        {
+          "sourceId": "COND-C18-PROP-2021",
+          "design": "Phase I combination study",
+          "population": "Advanced or metastatic melanoma; checkpoint-treatment-naive",
+          "timepoint": "Phase I treatment",
+          "sampleDescription": "Reported sample: 9",
+          "locators": [
+            {
+              "section": "Abstract; methods and results"
+            }
+          ]
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "COND-C18-PROP-2021",
+          "label": "Abstract; methods and results"
+        }
+      ]
+    },
+    {
+      "id": "SYN-D07-C19-P-D07-BCC-2014",
+      "version": "reader-correction-2026-10-11",
+      "drugId": "D07",
+      "conditionId": "C19",
+      "title": "Tumor area change",
+      "use": "Itraconazole open-label; exploratory comparison",
+      "population": "Basal cell carcinoma",
+      "comparison": "Itraconazole open-label; exploratory comparison",
+      "endpoint": "Tumor area change",
+      "timepoint": "Short-term treatment",
+      "status": "reported_result",
+      "finding": {
+        "text": "Tumor-area reduction observed.",
+        "sources": [
+          "P-D07-BCC-2014"
+        ]
+      },
+      "magnitudeText": "24% reduction; 95% CI 18.2–30.0%",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "Open-label phase II study",
+      "limitations": [
+        {
+          "text": "19 treated of 29 enrolled; no long-term cure endpoint; grade 4 CHF occurred",
+          "sources": [
+            "P-D07-BCC-2014"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "P-D07-BCC-2014"
+      ],
+      "resultIds": [
+        "SYN-D07-C19-P-D07-BCC-2014-R1"
+      ],
+      "studyFamilyIds": [
+        "STUDY-P-D07-BCC-2014"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "complete": false,
+        "pending": []
+      },
+      "effects": [
+        {
+          "sourceId": "P-D07-BCC-2014",
+          "design": "Open-label phase II study",
+          "population": "Basal cell carcinoma",
+          "timepoint": "Short-term treatment",
+          "sampleDescription": "Reported sample: 19",
+          "locators": [
+            {
+              "section": "Abstract",
+              "source_url": "https://pubmed.ncbi.nlm.nih.gov/24493717/",
+              "basis": "abstract"
+            }
+          ]
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "P-D07-BCC-2014",
+          "label": "Abstract"
+        }
+      ]
+    },
+    {
+      "id": "SYN-D23-C20-COND-C20-ASP-2020",
+      "version": "reader-correction-2026-10-11",
+      "drugId": "D23",
+      "conditionId": "C20",
+      "title": "HCC incidence",
+      "use": "Aspirin use versus nonuse in observational cohort",
+      "population": "Chronic hepatitis B or C; future HCC prevention",
+      "comparison": "Aspirin use versus nonuse in observational cohort",
+      "endpoint": "HCC incidence",
+      "timepoint": "10 years",
+      "status": "reported_result",
+      "finding": {
+        "text": "Lower incidence associated with aspirin use.",
+        "sources": [
+          "COND-C20-ASP-2020"
+        ]
+      },
+      "magnitudeText": "4.0% versus 8.3%; adjusted HR 0.69; 95% CI 0.62–0.76",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "Observational cohort in chronic viral hepatitis",
+      "limitations": [
+        {
+          "text": "Observational association; prevention rather than established tumor treatment",
+          "sources": [
+            "COND-C20-ASP-2020"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "COND-C20-ASP-2020"
+      ],
+      "resultIds": [
+        "SYN-D23-C20-COND-C20-ASP-2020-R1"
+      ],
+      "studyFamilyIds": [
+        "STUDY-COND-C20-ASP-2020"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "complete": false,
+        "pending": []
+      },
+      "effects": [
+        {
+          "sourceId": "COND-C20-ASP-2020",
+          "design": "Observational cohort in chronic viral hepatitis",
+          "population": "Chronic hepatitis B or C; future HCC prevention",
+          "timepoint": "10 years",
+          "sampleDescription": "Chronic hepatitis B or C; future HCC prevention",
+          "locators": [
+            {
+              "section": "Abstract; methods and results"
+            }
+          ]
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "COND-C20-ASP-2020",
+          "label": "Abstract; methods and results"
+        }
+      ]
+    },
+    {
+      "id": "SYN-D16-C25-COND-C25-BENEMIN-2018",
+      "version": "reader-correction-2026-10-11",
+      "drugId": "D16",
+      "conditionId": "C25",
+      "title": "PANSS negative-symptom score",
+      "use": "Minocycline versus placebo added to ongoing care",
+      "population": "Schizophrenia-spectrum illness within 5 years of onset",
+      "comparison": "Minocycline versus placebo added to ongoing care",
+      "endpoint": "PANSS negative-symptom score",
+      "timepoint": "Across 2, 6, 9, 12 months",
+      "status": "reported_result",
+      "finding": {
+        "text": "No negative-symptom benefit.",
+        "sources": [
+          "COND-C25-BENEMIN-2018"
+        ]
+      },
+      "magnitudeText": "Difference −0.19; 95% CI −1.23 to 0.85; P = 0.73",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "Randomized double-blind placebo-controlled trial",
+      "limitations": [
+        {
+          "text": "High later attrition; recent-onset moderate-symptom population",
+          "sources": [
+            "COND-C25-BENEMIN-2018"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "COND-C25-BENEMIN-2018"
+      ],
+      "resultIds": [
+        "SYN-D16-C25-COND-C25-BENEMIN-2018-R1"
+      ],
+      "studyFamilyIds": [
+        "STUDY-COND-C25-BENEMIN-2018"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "complete": false,
+        "pending": []
+      },
+      "effects": [
+        {
+          "sourceId": "COND-C25-BENEMIN-2018",
+          "design": "Randomized double-blind placebo-controlled trial",
+          "population": "Schizophrenia-spectrum illness within 5 years of onset",
+          "timepoint": "Across 2, 6, 9, 12 months",
+          "sampleDescription": "Reported sample: 207",
+          "locators": [
+            {
+              "section": "Abstract; methods and results"
+            }
+          ]
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "COND-C25-BENEMIN-2018",
+          "label": "Abstract; methods and results"
+        }
+      ]
+    },
+    {
+      "id": "SYN-D16-C26-P-D16-AD-2020",
+      "version": "reader-correction-2026-10-11",
+      "drugId": "D16",
+      "conditionId": "C26",
+      "title": "Cognitive decline on sMMSE",
+      "use": "Minocycline 200 mg/day or 400 mg/day versus placebo",
+      "population": "Mild Alzheimer disease; 544 eligible",
+      "comparison": "Minocycline 200 mg/day or 400 mg/day versus placebo",
+      "endpoint": "Cognitive decline on sMMSE",
+      "timepoint": "24 months",
+      "status": "reported_result",
+      "finding": {
+        "text": "No cognitive or functional benefit.",
+        "sources": [
+          "P-D16-AD-2020"
+        ]
+      },
+      "magnitudeText": "sMMSE difference ~0.1; 95% CI −1.1 to 1.2; P = 0.90",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "Two-year randomized placebo-controlled trial",
+      "limitations": [
+        {
+          "text": "High-dose poor tolerability; 554 randomized, 544 eligible; lower follow-up in high-dose arm",
+          "sources": [
+            "P-D16-AD-2020"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "P-D16-AD-2020"
+      ],
+      "resultIds": [
+        "SYN-D16-C26-P-D16-AD-2020-R1"
+      ],
+      "studyFamilyIds": [
+        "STUDY-P-D16-AD-2020"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "complete": false,
+        "pending": []
+      },
+      "effects": [
+        {
+          "sourceId": "P-D16-AD-2020",
+          "design": "Two-year randomized placebo-controlled trial",
+          "population": "Mild Alzheimer disease; 544 eligible",
+          "timepoint": "24 months",
+          "sampleDescription": "Reported sample: 544",
+          "locators": [
+            {
+              "section": "Abstract; Results",
+              "source_url": "https://jamanetwork.com/journals/jamaneurology/fullarticle/2755279",
+              "basis": "full_text"
+            }
+          ]
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "P-D16-AD-2020",
+          "label": "Abstract; Results"
+        }
+      ]
+    },
+    {
+      "id": "SYN-D16-C27-COND-C27-MINOCIS-2017",
+      "version": "reader-correction-2026-10-11",
+      "drugId": "D16",
+      "conditionId": "C27",
+      "title": "Conversion to MS",
+      "use": "Minocycline versus placebo",
+      "population": "First clinically isolated demyelinating syndrome",
+      "comparison": "Minocycline versus placebo",
+      "endpoint": "Conversion to MS",
+      "timepoint": "6 months (primary); 24 months (secondary)",
+      "status": "reported_result",
+      "finding": {
+        "text": "Lower 6-month conversion, not significant at 24 months.",
+        "sources": [
+          "COND-C27-MINOCIS-2017"
+        ]
+      },
+      "magnitudeText": "Adjusted 6-month risk reduction 18.5 percentage points; 95% CI 3.7–33.3",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "Randomized placebo-controlled trial",
+      "limitations": [
+        {
+          "text": "No active DMT comparator; early disease; does not establish long-term disability effect",
+          "sources": [
+            "COND-C27-MINOCIS-2017"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "COND-C27-MINOCIS-2017"
+      ],
+      "resultIds": [
+        "SYN-D16-C27-COND-C27-MINOCIS-2017-R1"
+      ],
+      "studyFamilyIds": [
+        "STUDY-COND-C27-MINOCIS-2017"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "complete": false,
+        "pending": []
+      },
+      "effects": [
+        {
+          "sourceId": "COND-C27-MINOCIS-2017",
+          "design": "Randomized placebo-controlled trial",
+          "population": "First clinically isolated demyelinating syndrome",
+          "timepoint": "6 months (primary); 24 months (secondary)",
+          "sampleDescription": "Reported sample: 142",
+          "locators": [
+            {
+              "section": "Abstract; methods and results"
+            }
+          ]
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "COND-C27-MINOCIS-2017",
+          "label": "Abstract; methods and results"
+        }
+      ]
+    },
+    {
+      "id": "SYN-D16-C28-COND-C28-MINO-2007",
+      "version": "reader-correction-2026-10-11",
+      "drugId": "D16",
+      "conditionId": "C28",
+      "title": "ALSFRS-R monthly decline",
+      "use": "Minocycline versus placebo",
+      "population": "Adults with ALS",
+      "comparison": "Minocycline versus placebo",
+      "endpoint": "ALSFRS-R monthly decline",
+      "timepoint": "9-month treatment",
+      "status": "reported_result",
+      "finding": {
+        "text": "Faster functional decline with minocycline.",
+        "sources": [
+          "COND-C28-MINO-2007"
+        ]
+      },
+      "magnitudeText": "−1.30 versus −1.04 points/month; difference CI −0.44 to −0.08; P = 0.005",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "Multicenter randomized placebo-controlled phase III trial",
+      "limitations": [
+        {
+          "text": "Mortality difference not significant; harmful primary functional outcome",
+          "sources": [
+            "COND-C28-MINO-2007"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "COND-C28-MINO-2007"
+      ],
+      "resultIds": [
+        "SYN-D16-C28-COND-C28-MINO-2007-R1"
+      ],
+      "studyFamilyIds": [
+        "STUDY-COND-C28-MINO-2007"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "complete": false,
+        "pending": []
+      },
+      "effects": [
+        {
+          "sourceId": "COND-C28-MINO-2007",
+          "design": "Multicenter randomized placebo-controlled phase III trial",
+          "population": "Adults with ALS",
+          "timepoint": "9-month treatment",
+          "sampleDescription": "Reported sample: 412",
+          "locators": [
+            {
+              "section": "Abstract; methods and results"
+            }
+          ]
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "COND-C28-MINO-2007",
+          "label": "Abstract; methods and results"
+        }
+      ]
+    },
+    {
+      "id": "SYN-D13-C29-COND-C29-ATOR-2018",
+      "version": "reader-correction-2026-10-11",
+      "drugId": "D13",
+      "conditionId": "C29",
+      "title": "VASI score change",
+      "use": "Atorvastatin plus NB-UVB versus NB-UVB alone",
+      "population": "Active nonsegmental vitiligo in adults",
+      "comparison": "Atorvastatin plus NB-UVB versus NB-UVB alone",
+      "endpoint": "VASI score change",
+      "timepoint": "6 months",
+      "status": "reported_result",
+      "finding": {
+        "text": "No significant added benefit.",
+        "sources": [
+          "COND-C29-ATOR-2018"
+        ]
+      },
+      "magnitudeText": "Between-group 1.43; P = 0.49",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "Randomized single-blind clinical trial",
+      "limitations": [
+        {
+          "text": "30 randomized, 29 analyzed; small single-blind trial; adverse events in 10 combination participants",
+          "sources": [
+            "COND-C29-ATOR-2018"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "COND-C29-ATOR-2018"
+      ],
+      "resultIds": [
+        "SYN-D13-C29-COND-C29-ATOR-2018-R1"
+      ],
+      "studyFamilyIds": [
+        "STUDY-COND-C29-ATOR-2018"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "complete": false,
+        "pending": []
+      },
+      "effects": [
+        {
+          "sourceId": "COND-C29-ATOR-2018",
+          "design": "Randomized single-blind clinical trial",
+          "population": "Active nonsegmental vitiligo in adults",
+          "timepoint": "6 months",
+          "sampleDescription": "Reported sample: 30",
+          "locators": [
+            {
+              "section": "Abstract; methods and results"
+            }
+          ]
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "COND-C29-ATOR-2018",
+          "label": "Abstract; methods and results"
+        }
+      ]
+    },
+    {
+      "id": "SYN-D07-C14-P-D07-LUNG-2013",
+      "version": "reader-correction-2026-10-11",
+      "drugId": "D07",
+      "conditionId": "C14",
+      "title": "Progression-free survival proportion",
+      "use": "Pemetrexed plus itraconazole versus pemetrexed",
+      "population": "23 patients with previously treated metastatic nonsquamous NSCLC",
+      "comparison": "Pemetrexed plus itraconazole versus pemetrexed",
+      "endpoint": "Progression-free survival proportion",
+      "timepoint": "3 months",
+      "status": "reported_result",
+      "finding": {
+        "text": "The 23-person trial found 67% versus 29% progression-free at three months (p=0.11); the small, prematurely closed study leaves substantial uncertainty.",
+        "sources": [
+          "P-D07-LUNG-2013"
+        ]
+      },
+      "magnitudeText": "67 versus 29 percent; p=0.11",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "Randomized phase II trial stopped early",
+      "limitations": [
+        {
+          "text": "Small trial stopped early; the three-month progression-free difference was not statistically significant.",
+          "sources": [
+            "P-D07-LUNG-2013"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "P-D07-LUNG-2013"
+      ],
+      "resultIds": [
+        "SYN-D07-C14-P-D07-LUNG-2013-R1"
+      ],
+      "studyFamilyIds": [
+        "STUDY-P-D07-LUNG-2013"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "complete": false,
+        "pending": []
+      },
+      "effects": [
+        {
+          "sourceId": "P-D07-LUNG-2013",
+          "design": "Randomized phase II trial stopped early",
+          "population": "23 patients with previously treated metastatic nonsquamous NSCLC",
+          "timepoint": "3 months",
+          "sampleDescription": "23 patients with previously treated metastatic nonsquamous NSCLC",
+          "locators": [
+            {
+              "section": "Abstract; Results",
+              "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3636564/",
+              "basis": "full_text"
+            }
+          ]
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "P-D07-LUNG-2013",
+          "label": "Abstract; Results"
+        }
+      ]
+    },
+    {
+      "id": "SYN-D07-C17-P-D07-PANCREAS-2015",
+      "version": "reader-correction-2026-10-11",
+      "drugId": "D07",
+      "conditionId": "C17",
+      "title": "Objective response",
+      "use": "Itraconazole plus multidrug chemotherapy; no concurrent control",
+      "population": "38 patients with progressive pancreatic cancer",
+      "comparison": "Itraconazole plus multidrug chemotherapy; no concurrent control",
+      "endpoint": "Objective response",
+      "timepoint": "Study follow-up",
+      "status": "reported_result",
+      "finding": {
+        "text": "The 38-patient retrospective series used itraconazole with docetaxel, gemcitabine and carboplatin; observed responses cannot be attributed to itraconazole alone.",
+        "sources": [
+          "P-D07-PANCREAS-2015"
+        ]
+      },
+      "magnitudeText": "37 percent",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "Retrospective combination-treatment series",
+      "limitations": [
+        {
+          "text": "No concurrent comparison; the contribution of itraconazole cannot be isolated.",
+          "sources": [
+            "P-D07-PANCREAS-2015"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "P-D07-PANCREAS-2015"
+      ],
+      "resultIds": [
+        "SYN-D07-C17-P-D07-PANCREAS-2015-R1"
+      ],
+      "studyFamilyIds": [
+        "STUDY-P-D07-PANCREAS-2015"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "complete": false,
+        "pending": []
+      },
+      "effects": [
+        {
+          "sourceId": "P-D07-PANCREAS-2015",
+          "design": "Retrospective combination-treatment series",
+          "population": "38 patients with progressive pancreatic cancer",
+          "timepoint": "Study follow-up",
+          "sampleDescription": "38 patients with progressive pancreatic cancer",
+          "locators": [
+            {
+              "section": "Abstract",
+              "source_url": "https://pubmed.ncbi.nlm.nih.gov/26124377/",
+              "basis": "abstract"
+            }
+          ]
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "P-D07-PANCREAS-2015",
+          "label": "Abstract"
+        }
+      ]
+    },
+    {
+      "id": "SYN-D09-C04-P-D09-GBM-2022",
+      "version": "reader-correction-2026-10-11",
+      "drugId": "D09",
+      "conditionId": "C04",
+      "title": "Overall survival proportion",
+      "use": "Temozolomide plus mebendazole versus lomustine plus mebendazole",
+      "population": "88 adults with recurrent glioblastoma",
+      "comparison": "Temozolomide plus mebendazole versus lomustine plus mebendazole",
+      "endpoint": "Overall survival proportion",
+      "timepoint": "9 months",
+      "status": "reported_result",
+      "finding": {
+        "text": "Nine-month survival was 36.6% with temozolomide–mebendazole and 45% with lomustine–mebendazole, below the 55% benchmark; both arms included mebendazole.",
+        "sources": [
+          "P-D09-GBM-2022"
+        ]
+      },
+      "magnitudeText": "36.6 versus 45 percent",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "Randomized comparison of two mebendazole-containing regimens",
+      "limitations": [
+        {
+          "text": "Both groups received mebendazole; neither reached the prespecified 55% nine-month survival benchmark.",
+          "sources": [
+            "P-D09-GBM-2022"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "P-D09-GBM-2022"
+      ],
+      "resultIds": [
+        "SYN-D09-C04-P-D09-GBM-2022-R1"
+      ],
+      "studyFamilyIds": [
+        "STUDY-P-D09-GBM-2022"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "complete": false,
+        "pending": []
+      },
+      "effects": [
+        {
+          "sourceId": "P-D09-GBM-2022",
+          "design": "Randomized comparison of two mebendazole-containing regimens",
+          "population": "88 adults with recurrent glioblastoma",
+          "timepoint": "9 months",
+          "sampleDescription": "88 adults with recurrent glioblastoma",
+          "locators": [
+            {
+              "section": "Abstract; Results",
+              "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9156991/",
+              "basis": "full_text"
+            }
+          ]
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "P-D09-GBM-2022",
+          "label": "Abstract; Results"
+        }
+      ]
+    },
+    {
+      "id": "SYN-D13-C04-P-D13-GBM-2021",
+      "version": "reader-correction-2026-10-11",
+      "drugId": "D13",
+      "conditionId": "C04",
+      "title": "Progression-free survival proportion",
+      "use": "Atorvastatin with chemoradiation; single arm",
+      "population": "36 patients with glioblastoma",
+      "comparison": "Atorvastatin with chemoradiation; single arm",
+      "endpoint": "Progression-free survival proportion",
+      "timepoint": "6 months",
+      "status": "reported_result",
+      "finding": {
+        "text": "The single-arm 36-patient study reported 66% progression-free at six months but concluded that improvement was not demonstrated.",
+        "sources": [
+          "P-D13-GBM-2021"
+        ]
+      },
+      "magnitudeText": "66 percent",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "Prospective single-arm phase II trial",
+      "limitations": [
+        {
+          "text": "Single-arm study; the reported progression-free proportion does not establish improvement over chemoradiation alone.",
+          "sources": [
+            "P-D13-GBM-2021"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "P-D13-GBM-2021"
+      ],
+      "resultIds": [
+        "SYN-D13-C04-P-D13-GBM-2021-R1"
+      ],
+      "studyFamilyIds": [
+        "STUDY-P-D13-GBM-2021"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "complete": false,
+        "pending": []
+      },
+      "effects": [
+        {
+          "sourceId": "P-D13-GBM-2021",
+          "design": "Prospective single-arm phase II trial",
+          "population": "36 patients with glioblastoma",
+          "timepoint": "6 months",
+          "sampleDescription": "36 patients with glioblastoma",
+          "locators": [
+            {
+              "section": "Abstract",
+              "source_url": "https://pubmed.ncbi.nlm.nih.gov/32851510/",
+              "basis": "abstract"
+            }
+          ]
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "P-D13-GBM-2021",
+          "label": "Abstract"
+        }
+      ]
+    },
+    {
+      "id": "SYN-D13-C15-P-D13-BREAST-2013",
+      "version": "reader-correction-2026-10-11",
+      "drugId": "D13",
+      "conditionId": "C15",
+      "title": "Ki 67 relative change",
+      "use": "Atorvastatin before surgery; baseline comparison",
+      "population": "50 patients enrolled with invasive breast cancer",
+      "comparison": "Atorvastatin before surgery; baseline comparison",
+      "endpoint": "Ki 67 relative change",
+      "timepoint": "2 weeks",
+      "status": "reported_result",
+      "finding": {
+        "text": "Overall Ki-67 decreased by 7.6% (p=0.39); a larger decrease in the HMGCR-positive subgroup was exploratory and not a survival result.",
+        "sources": [
+          "P-D13-BREAST-2013"
+        ]
+      },
+      "magnitudeText": "-7.6 percent; p=0.39",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "Uncontrolled preoperative biomarker study",
+      "limitations": [
+        {
+          "text": "Two-week uncontrolled presurgical study; Ki-67 is a proliferation biomarker, not recurrence or survival.",
+          "sources": [
+            "P-D13-BREAST-2013"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "P-D13-BREAST-2013"
+      ],
+      "resultIds": [
+        "SYN-D13-C15-P-D13-BREAST-2013-R1"
+      ],
+      "studyFamilyIds": [
+        "STUDY-P-D13-BREAST-2013"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "complete": false,
+        "pending": []
+      },
+      "effects": [
+        {
+          "sourceId": "P-D13-BREAST-2013",
+          "design": "Uncontrolled preoperative biomarker study",
+          "population": "50 patients enrolled with invasive breast cancer",
+          "timepoint": "2 weeks",
+          "sampleDescription": "50 patients enrolled with invasive breast cancer",
+          "locators": [
+            {
+              "section": "Abstract",
+              "source_url": "https://pubmed.ncbi.nlm.nih.gov/23471651/",
+              "basis": "abstract"
+            }
+          ]
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "P-D13-BREAST-2013",
+          "label": "Abstract"
+        }
+      ]
+    },
+    {
+      "id": "SYN-D15-C15-P-D15-BREAST-2021",
+      "version": "reader-correction-2026-10-11",
+      "drugId": "D15",
+      "conditionId": "C15",
+      "title": "Disease-free survival",
+      "use": "Celecoxib versus placebo after primary breast-cancer treatment",
+      "population": "2639 patients with primary breast cancer",
+      "comparison": "Celecoxib versus placebo after primary breast-cancer treatment",
+      "endpoint": "Disease-free survival",
+      "timepoint": "Study follow-up",
+      "status": "reported_result",
+      "finding": {
+        "text": "REACT found no disease-free survival advantage: hazard ratio 0.97 (95% CI 0.80 to 1.17).",
+        "sources": [
+          "P-D15-BREAST-2021"
+        ]
+      },
+      "magnitudeText": "Hazard ratio: 0.97 ratio (95% CI 0.8 to 1.17)",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "Phase III randomized placebo-controlled trial",
+      "limitations": [
+        {
+          "text": "Disease-free survival was not improved; the estimate applies to the REACT trial population.",
+          "sources": [
+            "P-D15-BREAST-2021"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "P-D15-BREAST-2021"
+      ],
+      "resultIds": [
+        "SYN-D15-C15-P-D15-BREAST-2021-R1"
+      ],
+      "studyFamilyIds": [
+        "STUDY-P-D15-BREAST-2021"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "complete": false,
+        "pending": []
+      },
+      "effects": [
+        {
+          "sourceId": "P-D15-BREAST-2021",
+          "design": "Phase III randomized placebo-controlled trial",
+          "population": "2639 patients with primary breast cancer",
+          "timepoint": "Study follow-up",
+          "sampleDescription": "2639 patients with primary breast cancer",
+          "locators": [
+            {
+              "section": "Abstract; Results",
+              "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8283666/",
+              "basis": "full_text"
+            }
+          ]
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "P-D15-BREAST-2021",
+          "label": "Abstract; Results"
+        }
+      ]
+    },
+    {
+      "id": "SYN-D15-C16-P-D15-COLON-2021",
+      "version": "reader-correction-2026-10-11",
+      "drugId": "D15",
+      "conditionId": "C16",
+      "title": "Disease-free survival",
+      "use": "Celecoxib versus placebo alongside adjuvant chemotherapy",
+      "population": "Resected stage III colon cancer receiving adjuvant chemotherapy",
+      "comparison": "Celecoxib versus placebo alongside adjuvant chemotherapy",
+      "endpoint": "Disease-free survival",
+      "timepoint": "Study follow-up",
+      "status": "reported_result",
+      "finding": {
+        "text": "Overall disease-free survival was not significantly improved (HR 0.89, 95% CI 0.76 to 1.03).",
+        "sources": [
+          "P-D15-COLON-2021"
+        ]
+      },
+      "magnitudeText": "Hazard ratio: 0.89 ratio (95% CI 0.76 to 1.03); p=0.12",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "Randomized placebo-controlled trial",
+      "limitations": [
+        {
+          "text": "The confidence interval includes no difference and a potentially meaningful reduction in recurrence or death; nonsignificance does not establish equivalence.",
+          "sources": [
+            "P-D15-COLON-2021"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "P-D15-COLON-2021"
+      ],
+      "resultIds": [
+        "SYN-D15-C16-P-D15-COLON-2021-R1"
+      ],
+      "studyFamilyIds": [
+        "STUDY-P-D15-COLON-2021"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "complete": false,
+        "pending": []
+      },
+      "effects": [
+        {
+          "sourceId": "P-D15-COLON-2021",
+          "design": "Randomized placebo-controlled trial",
+          "population": "Resected stage III colon cancer receiving adjuvant chemotherapy",
+          "timepoint": "Study follow-up",
+          "sampleDescription": "Resected stage III colon cancer receiving adjuvant chemotherapy",
+          "locators": [
+            {
+              "section": "Abstract; Results",
+              "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8025124/",
+              "basis": "full_text"
+            }
+          ]
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "P-D15-COLON-2021",
+          "label": "Abstract; Results"
+        }
+      ]
+    },
+    {
+      "id": "SYN-D15-C20-P-D15-HCC-2017",
+      "version": "reader-correction-2026-10-11",
+      "drugId": "D15",
+      "conditionId": "C20",
+      "title": "Median overall survival",
+      "use": "TACE plus celecoxib and lanreotide versus TACE",
+      "population": "71 people with unresectable hepatocellular carcinoma",
+      "comparison": "TACE plus celecoxib and lanreotide versus TACE",
+      "endpoint": "Median overall survival",
+      "timepoint": "Study follow-up",
+      "status": "reported_result",
+      "finding": {
+        "text": "Median survival was 15 months with TACE plus celecoxib and lanreotide versus 7.5 months with TACE alone; adding two drugs prevents assigning the benefit to celecoxib alone.",
+        "sources": [
+          "P-D15-HCC-2017"
+        ]
+      },
+      "magnitudeText": "15 versus 7.5 months; p=0.012",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "Randomized pilot combination trial",
+      "limitations": [
+        {
+          "text": "Pilot trial adding two drugs; the survival difference cannot be assigned to celecoxib alone.",
+          "sources": [
+            "P-D15-HCC-2017"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "P-D15-HCC-2017"
+      ],
+      "resultIds": [
+        "SYN-D15-C20-P-D15-HCC-2017-R1"
+      ],
+      "studyFamilyIds": [
+        "STUDY-P-D15-HCC-2017"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "complete": false,
+        "pending": []
+      },
+      "effects": [
+        {
+          "sourceId": "P-D15-HCC-2017",
+          "design": "Randomized pilot combination trial",
+          "population": "71 people with unresectable hepatocellular carcinoma",
+          "timepoint": "Study follow-up",
+          "sampleDescription": "71 people with unresectable hepatocellular carcinoma",
+          "locators": [
+            {
+              "section": "Table 2; Results",
+              "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5564648/",
+              "basis": "full_text"
+            }
+          ]
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "P-D15-HCC-2017",
+          "label": "Table 2; Results"
+        }
+      ]
+    },
+    {
+      "id": "SYN-D16-C09-P-D16-TRD-2022",
+      "version": "reader-correction-2026-10-11",
+      "drugId": "D16",
+      "conditionId": "C09",
+      "title": "MADRS score change",
+      "use": "Adjunctive minocycline versus placebo",
+      "population": "173 randomized; 168 intention-to-treat participants with TRD",
+      "comparison": "Adjunctive minocycline versus placebo",
+      "endpoint": "MADRS score change",
+      "timepoint": "6 weeks",
+      "status": "reported_result",
+      "finding": {
+        "text": "Six weeks of adjunctive minocycline did not significantly improve depression severity versus placebo in the 168-person analysis.",
+        "sources": [
+          "P-D16-TRD-2022"
+        ]
+      },
+      "magnitudeText": "Between-group difference: 1.46 MADRS points (95% CI -1.04 to 3.96); p=0.25",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "Randomized placebo-controlled adjunctive trial",
+      "limitations": [
+        {
+          "text": "Six-week adjunctive-treatment trial; the confidence interval includes no difference.",
+          "sources": [
+            "P-D16-TRD-2022"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "P-D16-TRD-2022"
+      ],
+      "resultIds": [
+        "SYN-D16-C09-P-D16-TRD-2022-R1"
+      ],
+      "studyFamilyIds": [
+        "STUDY-P-D16-TRD-2022"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "complete": false,
+        "pending": []
+      },
+      "effects": [
+        {
+          "sourceId": "P-D16-TRD-2022",
+          "design": "Randomized placebo-controlled adjunctive trial",
+          "population": "173 randomized; 168 intention-to-treat participants with TRD",
+          "timepoint": "6 weeks",
+          "sampleDescription": "173 randomized; 168 intention-to-treat participants with TRD",
+          "locators": [
+            {
+              "section": "Abstract; Results",
+              "source_url": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2796182",
+              "basis": "full_text"
+            }
+          ]
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "P-D16-TRD-2022",
+          "label": "Abstract; Results"
+        }
+      ]
+    },
+    {
+      "id": "SYN-D16-C27-P-D16-MS-2017",
+      "version": "reader-correction-2026-10-11",
+      "drugId": "D16",
+      "conditionId": "C27",
+      "title": "Conversion to multiple sclerosis",
+      "use": "Minocycline versus placebo after a first demyelinating event",
+      "population": "142 people after a first demyelinating event",
+      "comparison": "Minocycline versus placebo after a first demyelinating event",
+      "endpoint": "Conversion to multiple sclerosis",
+      "timepoint": "6 months",
+      "status": "reported_result",
+      "finding": {
+        "text": "After a first demyelinating event, adjusted six-month conversion risk was 18.5 percentage points lower (95% CI 3.7 to 33.3); the 24-month difference was not significant.",
+        "sources": [
+          "P-D16-MS-2017"
+        ]
+      },
+      "magnitudeText": "Adjusted absolute risk reduction: 18.5 percentage points (95% CI 3.7 to 33.3); p=0.01",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": ""
+      },
+      "evidenceBase": "Randomized placebo-controlled trial",
+      "limitations": [
+        {
+          "text": "The adjusted six-month difference favored minocycline; the 24-month difference was not statistically significant.",
+          "sources": [
+            "P-D16-MS-2017"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "P-D16-MS-2017"
+      ],
+      "resultIds": [
+        "SYN-D16-C27-P-D16-MS-2017-R1"
+      ],
+      "studyFamilyIds": [
+        "STUDY-P-D16-MS-2017"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "answerRoutes": [],
+      "coverage": {
+        "complete": false,
+        "pending": []
+      },
+      "effects": [
+        {
+          "sourceId": "P-D16-MS-2017",
+          "design": "Randomized placebo-controlled trial",
+          "population": "142 people after a first demyelinating event",
+          "timepoint": "6 months",
+          "sampleDescription": "142 people after a first demyelinating event",
+          "locators": [
+            {
+              "section": "Abstract; Results",
+              "source_url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1608889",
+              "basis": "full_text"
+            }
+          ]
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "P-D16-MS-2017",
+          "label": "Abstract; Results"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "recordPurpose": "synthetic_example",
+  "schemaVersion": "RRX-CONDITION-COVERAGE-1.0",
+  "planId": "RRX-CONDITION-001-1.0",
+  "planSha256": "6b77c3b16cc591a6aeb37cf62709f9b40333c7a3abc401971527acdcd6962917",
+  "conditionId": "SYNTHETIC-CONDITION",
+  "conditionBriefPath": "synthetic/not-a-source.json",
+  "conditionBriefSha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "protocolVersion": "synthetic-only",
+  "searches": [
+    {
+      "searchId": "SYNTHETIC-SEARCH",
+      "conditionId": "SYNTHETIC-CONDITION",
+      "queryFamily": "condition_wide",
+      "backend": "SYNTHETIC BACKEND",
+      "entryUrl": "https://example.invalid/synthetic-search",
+      "query": "SYNTHETIC CONDITION AND treatment",
+      "filters": {
+        "dateRange": "Synthetic only",
+        "languages": "Synthetic only",
+        "designs": "Synthetic only",
+        "other": "Synthetic only"
+      },
+      "status": "executed",
+      "executedAt": "2000-01-01T00:00:00Z",
+      "cutoff": "2000-01-01",
+      "resultCount": 1,
+      "candidateIds": [
+        "SYNTHETIC-CANDIDATE"
+      ],
+      "reportIds": [],
+      "logLocator": "SYNTHETIC LOG; no search was run",
+      "limitations": [
+        "Synthetic schema example only; no actual search, source or result."
+      ],
+      "nextAction": null
+    }
+  ],
+  "candidates": [
+    {
+      "candidateId": "SYNTHETIC-CANDIDATE",
+      "conditionId": "SYNTHETIC-CONDITION",
+      "genericName": "SYNTHETIC DRUG \u2014 NOT A RESEARCH RECORD",
+      "canonicalDrugId": null,
+      "portfolioMembership": "additional_candidate",
+      "searchIds": [
+        "SYNTHETIC-SEARCH"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": null,
+          "canonicalReportId": null,
+          "url": "https://example.invalid/synthetic-source",
+          "sourceRole": "unclassified",
+          "sourceVersion": null,
+          "sourceSha256": null,
+          "locator": null,
+          "identityState": "unverified_lead",
+          "missingnessReason": "Synthetic example; no real source exists."
+        }
+      ],
+      "conditionRelevance": "not_checked",
+      "scopeNotes": "Synthetic example; no real condition relationship.",
+      "repurposing": {
+        "classification": "unresolved",
+        "originalUse": null,
+        "proposedUse": "SYNTHETIC USE",
+        "regulatoryStatus": "not_checked",
+        "jurisdiction": null,
+        "checkedAt": null,
+        "sourceRefs": [],
+        "reason": "Synthetic unresolved lead only."
+      },
+      "disposition": "pending_screening",
+      "dispositionReason": "Synthetic example; scientific eligibility is unresolved.",
+      "duplicateOf": null,
+      "evidenceBases": [
+        "not_assessed"
+      ],
+      "synthesisRefs": [],
+      "reviewIds": [],
+      "safetyInputState": "not_extracted",
+      "nextAction": "Do not acquire or ingest this synthetic example."
+    }
+  ],
+  "coverage": {
+    "status": "searching",
+    "searchScope": "SYNTHETIC SCHEMA EXAMPLE ONLY. Not an executed search, brief, candidate or research record.",
+    "searchIds": [
+      "SYNTHETIC-SEARCH"
+    ],
+    "candidateIds": [
+      "SYNTHETIC-CANDIDATE"
+    ],
+    "stageCounts": {
+      "discoveredCandidates": {
+        "value": null,
+        "basis": "SYNTHETIC EXAMPLE: no actual count measured.",
+        "missingReason": "not_checked"
+      },
+      "screenedCandidates": {
+        "value": null,
+        "basis": "SYNTHETIC EXAMPLE: no actual count measured.",
+        "missingReason": "not_checked"
+      },
+      "eligibleCandidates": {
+        "value": null,
+        "basis": "SYNTHETIC EXAMPLE: no actual count measured.",
+        "missingReason": "not_checked"
+      },
+      "acquiredReports": {
+        "value": null,
+        "basis": "SYNTHETIC EXAMPLE: no actual count measured.",
+        "missingReason": "not_checked"
+      },
+      "extractedReports": {
+        "value": null,
+        "basis": "SYNTHETIC EXAMPLE: no actual count measured.",
+        "missingReason": "not_checked"
+      },
+      "verifiedReports": {
+        "value": null,
+        "basis": "SYNTHETIC EXAMPLE: no actual count measured.",
+        "missingReason": "not_checked"
+      },
+      "appraisedSyntheses": {
+        "value": null,
+        "basis": "SYNTHETIC EXAMPLE: no actual count measured.",
+        "missingReason": "not_checked"
+      },
+      "humanReviewedSyntheses": {
+        "value": null,
+        "basis": "SYNTHETIC EXAMPLE: no actual count measured.",
+        "missingReason": "not_checked"
+      },
+      "synthesizedOptions": {
+        "value": null,
+        "basis": "SYNTHETIC EXAMPLE: no actual count measured.",
+        "missingReason": "not_checked"
+      },
+      "releasedSyntheses": {
+        "value": null,
+        "basis": "SYNTHETIC EXAMPLE: no actual count measured.",
+        "missingReason": "not_checked"
+      },
+      "independentStudyFamilies": {
+        "value": null,
+        "basis": "SYNTHETIC EXAMPLE: no actual count measured.",
+        "missingReason": "not_checked"
+      }
+    },
+    "gaps": [
+      {
+        "gapId": "SYNTHETIC-GAP",
+        "kind": "screening",
+        "candidateIds": [
+          "SYNTHETIC-CANDIDATE"
+        ],
+        "sourceIds": [],
+        "reason": "Synthetic example with no real source.",
+        "blocksScopedCompletion": true,
+        "nextAction": "Do not ingest synthetic data."
+      }
+    ],
+    "completionRationale": null,
+    "assessmentStatus": "not_assessed",
+    "humanReviewStatus": "not_requested",
+    "publicationState": "draft"
+  }
+}

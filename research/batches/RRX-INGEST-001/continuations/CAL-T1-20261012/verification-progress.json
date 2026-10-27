@@ -1,0 +1,42 @@
+{
+  "asOf": "2026-10-12T13:46:20.632683+00:00",
+  "schemaVersion": "remaprx-calibration-continuation-checks-v1",
+  "checks": [
+    {
+      "command": "python3 -m unittest tests.research_ingest.test_full_review -v",
+      "status": "PASS",
+      "tests": 15,
+      "performedBy": "codex/pipeline_audit; independently repeated by codex/identity_review",
+      "validatorSha256": "ac7481040d1d5251cd2e0f9222433b12aa17cb8bd4c707ef4eb5190007b7b9b4",
+      "testSha256": "81fce09949303d94210b7572976d2a25f32905edf6bf7f666e64716fb02edf71"
+    },
+    {
+      "command": "python3 -m unittest discover -s tests/research_ingest -v",
+      "status": "PASS",
+      "tests": 115,
+      "performedBy": "codex/pipeline_audit",
+      "note": "Private research-tool regression suite; not scientific acceptance."
+    },
+    {
+      "command": "node scripts/check-governance.mjs",
+      "status": "PASS",
+      "performedBy": "codex/root",
+      "summary": "236 preserved rule/history/ingest files, frozen baseline and collaborator entry points."
+    },
+    {
+      "command": "node scripts/verify-reader-boundary.mjs --source-only",
+      "status": "PASS",
+      "performedBy": "codex/root",
+      "summary": {
+        "projections": 8,
+        "fields": 16018,
+        "payloads": 0,
+        "mechanismContexts": 2
+      }
+    }
+  ],
+  "scientificReviewAcceptance": "pending exact candidate audit",
+  "canonicalImportPerformed": false,
+  "humanApproval": false,
+  "released": false
+}

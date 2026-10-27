@@ -1,0 +1,1059 @@
+{
+  "preparedBy": "codex/identity_review",
+  "preparedAt": "2026-10-12T15:20:47.749441+00:00",
+  "method": "editorial/EVIDENCE-GRADING.md; bounded selected-source editorial judgment, not formal GRADE",
+  "sourceScope": "Existing primary links and already-received report files only",
+  "integrationNote": "Exact endpoint-specific recommendations. Integrator must bind stable IDs and calculate fingerprints from adopted rows; do not inherit these grades for another outcome. No full review, human approval or release authorization.",
+  "records": [
+    {
+      "rowId": "SYN-D01-C13-STAMPEDE-OS",
+      "sourceIds": [
+        "MF-STAMPEDE-2025"
+      ],
+      "grade": "Moderate",
+      "scope": {
+        "endpoint": "Overall survival (death from any cause)",
+        "timepoint": "Time-to-event analysis; median follow-up 60 months (IQR 49–72)",
+        "population": "1,874 participants without diabetes with metastatic hormone-sensitive prostate cancer",
+        "comparison": "Oral metformin 850 mg twice daily plus standard care versus standard care",
+        "route": "oral",
+        "formulation": "Release formulation not established in the bounded material inspected"
+      },
+      "finding": "Metformin did not demonstrate an overall-survival improvement.",
+      "magnitudeText": "HR 0.91 (95% CI 0.80–1.03).",
+      "rationale": "The direct randomized survival comparison is informative, but its interval still permits meaningful benefit; nonsignificance does not establish equivalence.",
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "Random allocation and intention-to-treat primary analysis support comparison; abstract-only methods assessment.",
+          "sourceIds": [
+            "MF-STAMPEDE-2025"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "Direct metastatic hormone-sensitive population; only 3% received an androgen-receptor pathway inhibitor, limiting transfer to that combination.",
+          "sourceIds": [
+            "MF-STAMPEDE-2025"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "The interval includes no difference and a potentially meaningful reduction in mortality hazard.",
+          "sourceIds": [
+            "MF-STAMPEDE-2025"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "One trial; subgroup and metabolic findings are different outcomes, not replication.",
+          "sourceIds": [
+            "MF-STAMPEDE-2025"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "Primary PubMed abstract checked; full methods, supplements and complete version audit uninspected.",
+          "sourceIds": [
+            "MF-STAMPEDE-2025"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "MF-STAMPEDE-2025",
+          "locator": "PubMed PMID 40639383: Abstract—Methods and Findings"
+        }
+      ],
+      "integrity": "limited_access",
+      "missingness": [
+        "Allocation implementation, adherence, censoring and full protocol not independently appraised."
+      ],
+      "assessedAt": "2026-10-12",
+      "assessmentStatus": "bounded_editorial_assessment",
+      "fullScientificReviewComplete": false,
+      "humanApproved": false,
+      "sourceId": "MF-STAMPEDE-2025",
+      "magnitude": "HR 0.91 (95% CI 0.80–1.03).",
+      "limitations": [
+        "Allocation implementation, adherence, censoring and full protocol not independently appraised."
+      ],
+      "verification": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40639383/",
+          "access": "Existing primary abstract/full report; no expansion search",
+          "checkedAt": "2026-10-12"
+        }
+      ],
+      "scopeIdentityNote": "The display row ID is a proposal; the integrator must bind exact outcome, population, comparator, route, formulation and timepoint using the current identity contract."
+    },
+    {
+      "rowId": "SYN-D01-C14-NRG-LU001-PFS",
+      "sourceIds": [
+        "MF-NRG-LU001-2021"
+      ],
+      "grade": "Moderate",
+      "scope": {
+        "endpoint": "Progression-free survival: time from randomization to RECIST 1.1 progression or death",
+        "timepoint": "One-year survival estimate; HR across follow-up, median 27.7 months among survivors",
+        "population": "167 eligible participants without diabetes with unresectable stage III NSCLC, Zubrod performance status 0–1",
+        "comparison": "Oral metformin escalated to 2,000 mg/day during concurrent chemoradiotherapy and consolidation chemotherapy versus the same cancer treatment alone",
+        "route": "oral",
+        "formulation": "Release formulation not established in the bounded material inspected"
+      },
+      "finding": "Metformin did not demonstrate a progression-free-survival improvement.",
+      "magnitudeText": "One-year PFS 51.3% versus 60.4%; HR 1.15 (95% CI 0.77–1.73).",
+      "rationale": "Central randomized allocation and blinded imaging re-review support an informative comparison. The wide interval, open treatment allocation and limited metformin adherence leave substantial uncertainty about the treatment effect.",
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "Central stratified randomization; 167/170 eligible participants analyzed by assignment. Open-label treatment, with blinded central progression review supporting the institutional analysis. Only 39% maintained the indicated dose without modification.",
+          "sourceIds": [
+            "MF-NRG-LU001-2021"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "Directly addresses this chemoradiation/consolidation regimen in nondiabetic stage III disease; it does not establish effects with contemporary consolidation immunotherapy or in diabetes.",
+          "sourceIds": [
+            "MF-NRG-LU001-2021"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "The PFS interval permits benefit and substantial harm; a nonsignificant result is not equivalence. One-year rates and the follow-up-wide HR have different time interpretations.",
+          "sourceIds": [
+            "MF-NRG-LU001-2021"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "This is one trial. The separate ALMERA trial does not show benefit either but reported worse outcomes; those divergent magnitudes should not be represented as replication of a null effect.",
+          "sourceIds": [
+            "MF-NRG-LU001-2021"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "Received primary full-text HTML methods, Table 2 and limitations inspected. No endpoint-specific correction identified in this bounded material; supplements and a complete version audit remain uninspected.",
+          "sourceIds": [
+            "MF-NRG-LU001-2021"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "MF-NRG-LU001-2021",
+          "locator": "Full report: Methods—Randomization and Statistical Analysis; Results—Protocol Adherence and Survival Outcomes; Table 2; Limitations"
+        }
+      ],
+      "integrity": "limited_access",
+      "missingness": [
+        "Supplement 1 protocol and Supplement 2 detailed adherence/covariate analyses unavailable to this assessment.",
+        "Do not label the HR as a one-year risk ratio or use this grade for overall survival."
+      ],
+      "assessedAt": "2026-10-12",
+      "assessmentStatus": "bounded_editorial_assessment",
+      "fullScientificReviewComplete": false,
+      "humanApproved": false,
+      "sourceId": "MF-NRG-LU001-2021",
+      "magnitude": "One-year PFS 51.3% versus 60.4%; HR 1.15 (95% CI 0.77–1.73).",
+      "limitations": [
+        "Supplement 1 protocol and Supplement 2 detailed adherence/covariate analyses unavailable to this assessment.",
+        "Do not label the HR as a one-year risk ratio or use this grade for overall survival."
+      ],
+      "verification": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34323922/",
+          "access": "Existing primary abstract/full report; no expansion search",
+          "checkedAt": "2026-10-12"
+        },
+        {
+          "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/private-research/RRX-GUIDE-METFORMIN-001/ACQUIRE-1.1/sources/PRIMARY/MF-NRG-LU001-2021.html",
+          "sha256": "bccb1701920437c1fb4a87ff546be39c00b50adca6bdbef10475e4683616d273",
+          "receiptHashMatched": true
+        }
+      ],
+      "scopeIdentityNote": "The display row ID is a proposal; the integrator must bind exact outcome, population, comparator, route, formulation and timepoint using the current identity contract."
+    },
+    {
+      "rowId": "SYN-D01-C14-ALMERA-OS",
+      "sourceIds": [
+        "MF-ALMERA-2021"
+      ],
+      "grade": "Low",
+      "scope": {
+        "endpoint": "Overall survival (secondary endpoint)",
+        "timepoint": "One-year survival estimate; time-to-event HR over trial follow-up",
+        "population": "54 participants without diabetes with unresected locally advanced stage III NSCLC",
+        "comparison": "Chemoradiotherapy plus oral metformin 2,000 mg/day, continued up to 12 months, versus chemoradiotherapy alone",
+        "route": "oral",
+        "formulation": "Release formulation not established in the bounded material inspected"
+      },
+      "finding": "This small trial reported worse overall survival with metformin.",
+      "magnitudeText": "One-year OS 47.4% versus 85.2%; HR 3.80 (95% CI 1.49–9.73).",
+      "rationale": "The randomized harm signal matters, but early closure, small groups, baseline imbalance and the wide interval limit confidence in its magnitude and generalizability.",
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "Open-label randomized trial; only 54/96 planned participants enrolled before closure for slow accrual. Overall survival was secondary.",
+          "sourceIds": [
+            "MF-ALMERA-2021"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "Directly addresses this nondiabetic chemoradiotherapy population, not all lung-cancer treatment.",
+          "sourceIds": [
+            "MF-ALMERA-2021"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "Wide interval; substantial uncertainty about the size of harm.",
+          "sourceIds": [
+            "MF-ALMERA-2021"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "One small trial; NRG-LU001 did not reproduce this survival-harm estimate.",
+          "sourceIds": [
+            "MF-ALMERA-2021"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "Publisher methods/results/limitations checked. Larger baseline treatment volume in the metformin group and possible chance imbalance warrant caution.",
+          "sourceIds": [
+            "MF-ALMERA-2021"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "MF-ALMERA-2021",
+          "locator": "Publisher full report DOI 10.1001/jamaoncol.2021.2328: Results—Survival Outcomes; Figure 2; Limitations"
+        }
+      ],
+      "integrity": "limited_access",
+      "missingness": [
+        "Protocol and supplements not independently inspected; full review unfinished."
+      ],
+      "assessedAt": "2026-10-12",
+      "assessmentStatus": "bounded_editorial_assessment",
+      "fullScientificReviewComplete": false,
+      "humanApproved": false,
+      "sourceId": "MF-ALMERA-2021",
+      "magnitude": "One-year OS 47.4% versus 85.2%; HR 3.80 (95% CI 1.49–9.73).",
+      "limitations": [
+        "Protocol and supplements not independently inspected; full review unfinished."
+      ],
+      "verification": [
+        {
+          "url": "https://jamanetwork.com/journals/jamaoncology/fullarticle/2782110",
+          "access": "Existing primary abstract/full report; no expansion search",
+          "checkedAt": "2026-10-12"
+        }
+      ],
+      "scopeIdentityNote": "The display row ID is a proposal; the integrator must bind exact outcome, population, comparator, route, formulation and timepoint using the current identity contract."
+    },
+    {
+      "rowId": "SYN-D01-C16-ADENOMA-RECURRENCE",
+      "sourceIds": [
+        "MF-ADENOMA-2016"
+      ],
+      "grade": "Moderate",
+      "scope": {
+        "endpoint": "Prevalence of recurrent colorectal adenoma at follow-up colonoscopy",
+        "timepoint": "One year after polypectomy",
+        "population": "151 randomized patients without diabetes after colorectal polyp removal; 133 underwent follow-up colonoscopy",
+        "comparison": "Oral metformin 250 mg daily versus identical placebo",
+        "route": "oral",
+        "formulation": "Release formulation not established in the bounded material inspected"
+      },
+      "finding": "Metformin reduced reported one-year adenoma recurrence.",
+      "magnitudeText": "Reported RR 0.60 (95% CI 0.39–0.92).",
+      "rationale": "A masked randomized comparison supports this prevention finding, but limited follow-up, attrition and one small trial leave material uncertainty.",
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "Computer-generated stratified allocation and masking reported; 18 randomized participants lacked one-year colonoscopy.",
+          "sourceIds": [
+            "MF-ADENOMA-2016"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "Direct adenoma recurrence endpoint; not cancer incidence, treatment or survival.",
+          "sourceIds": [
+            "MF-ADENOMA-2016"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "The interval excludes no difference but remains broad.",
+          "sourceIds": [
+            "MF-ADENOMA-2016"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "One trial; polyp and adenoma outcomes are not independent replication.",
+          "sourceIds": [
+            "MF-ADENOMA-2016"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "Primary abstract checked. Printed 22/71 and 30.6% disagree arithmetically; avoid reproducing that percentage or silently correcting it.",
+          "sourceIds": [
+            "MF-ADENOMA-2016"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "MF-ADENOMA-2016",
+          "locator": "PubMed PMID 26947328: Abstract—Methods and Findings"
+        }
+      ],
+      "integrity": "limited_access",
+      "missingness": [
+        "Missing-colonoscopy handling, full protocol and numerical discrepancy require full-text reconciliation."
+      ],
+      "assessedAt": "2026-10-12",
+      "assessmentStatus": "bounded_editorial_assessment",
+      "fullScientificReviewComplete": false,
+      "humanApproved": false,
+      "sourceId": "MF-ADENOMA-2016",
+      "magnitude": "Reported RR 0.60 (95% CI 0.39–0.92).",
+      "limitations": [
+        "Missing-colonoscopy handling, full protocol and numerical discrepancy require full-text reconciliation."
+      ],
+      "verification": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26947328/",
+          "access": "Existing primary abstract/full report; no expansion search",
+          "checkedAt": "2026-10-12"
+        }
+      ],
+      "scopeIdentityNote": "The display row ID is a proposal; the integrator must bind exact outcome, population, comparator, route, formulation and timepoint using the current identity contract."
+    },
+    {
+      "rowId": "SYN-D01-C02-COVIDOUT-ACUTE-COMPOSITE",
+      "sourceIds": [
+        "COND-C02-COVIDOUT-2022"
+      ],
+      "grade": "Moderate",
+      "scope": {
+        "endpoint": "Primary composite of hypoxemia (home oxygen saturation ≤93%), emergency-department visit, hospitalization or death",
+        "timepoint": "Through 14 days after randomization",
+        "population": "Nonhospitalized adults aged 30–85 with overweight or obesity, infection confirmed within 3 days and symptoms beginning within 7 days; 1,323 in the modified intention-to-treat population",
+        "comparison": "Immediate-release oral metformin titrated over 6 days to 1,500 mg/day for 14 days versus concurrently randomized control, adjusting for vaccination and the other randomized trial drugs",
+        "route": "oral",
+        "formulation": "immediate-release"
+      },
+      "finding": "Metformin did not demonstrate a reduction in the primary acute COVID-19 composite outcome.",
+      "magnitudeText": "Adjusted OR 0.84 (95% CI 0.66–1.09); P=.19.",
+      "rationale": "The masked randomized comparison directly measures the specified acute composite, but unreliable home-oximetry ascertainment and an interval allowing benefit leave material uncertainty. It does not establish equivalence or determine the effect on later Long COVID.",
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "Double-blind factorial randomization with concurrent controls. Prespecified modified intention-to-treat excluded confirmed nonrecipients; primary missing data were imputed. Home oximetry was susceptible to measurement error and undocumented recall.",
+          "sourceIds": [
+            "COND-C02-COVIDOUT-2022"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "Direct early outpatient treatment in adults with overweight/obesity; limited transfer to hospitalized people, normal-weight adults or later variant/vaccination settings. This is not treatment of established Long COVID.",
+          "sourceIds": [
+            "COND-C02-COVIDOUT-2022"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "The adjusted odds interval includes no difference and meaningful benefit. Component outcomes have fewer events and were secondary; their intervals were not adjusted for multiplicity.",
+          "sourceIds": [
+            "COND-C02-COVIDOUT-2022"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "One COVID-OUT trial family. Its Long COVID and viral-RNA reports are other outcomes in overlapping participants, not independent replication of this composite.",
+          "sourceIds": [
+            "COND-C02-COVIDOUT-2022"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "The already-received primary report was checked at methods, primary results and Table 2. The known correction concern attached to the separate Long COVID publication was not assumed to affect this acute report. No complete integrity clearance is claimed.",
+          "sourceIds": [
+            "COND-C02-COVIDOUT-2022"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "COND-C02-COVIDOUT-2022",
+          "locator": "DOI 10.1056/NEJMoa2201662: Methods—End Points and Statistical Analysis; Results—End Points; Table 2 and footnotes; Discussion limitations"
+        }
+      ],
+      "integrity": "limited_access",
+      "missingness": [
+        "Supplementary full intention-to-treat sensitivity analyses and protocol not inspected in this bounded assessment.",
+        "Use the adjusted estimate; the article warns against naive comparison of absolute event rates across treatment groups enrolled at different times."
+      ],
+      "assessedAt": "2026-10-12",
+      "assessmentStatus": "bounded_editorial_assessment",
+      "fullScientificReviewComplete": false,
+      "humanApproved": false,
+      "sourceId": "COND-C02-COVIDOUT-2022",
+      "magnitude": "Adjusted OR 0.84 (95% CI 0.66–1.09); P=.19.",
+      "limitations": [
+        "Supplementary full intention-to-treat sensitivity analyses and protocol not inspected in this bounded assessment.",
+        "Use the adjusted estimate; the article warns against naive comparison of absolute event rates across treatment groups enrolled at different times."
+      ],
+      "verification": [
+        {
+          "url": "https://www.nejm.org/doi/abs/10.1056/NEJMoa2201662",
+          "access": "Existing primary abstract/full report; no expansion search",
+          "checkedAt": "2026-10-12"
+        },
+        {
+          "path": "/Users/kmfp/Documents/ChatGPT/One Match Rule/work/ingest/SL-F01-F02-20261011/receipt/input/return/F01/PRIMARY/A-F01-R031__original_report__randomized-trial-of-metformin-ivermectin-and-fluvo.html",
+          "sha256": "bbd529be8738b59d0e885a2f0da3f807d949c1c7527098635d304aa3d84894c7",
+          "receiptHashMatched": true
+        }
+      ],
+      "scopeIdentityNote": "The display row ID is a proposal; the integrator must bind exact outcome, population, comparator, route, formulation and timepoint using the current identity contract."
+    },
+    {
+      "rowId": "SYN-D01-C30-MASTERS-DXA-LEAN-MASS",
+      "sourceIds": [
+        "MF-MASTERS-2019"
+      ],
+      "grade": "Moderate",
+      "scope": {
+        "endpoint": "Percentage change in total lean body mass measured by DXA",
+        "timepoint": "Baseline to study week 16: 14 weeks of supervised progressive resistance training after a 2-week drug wash-in",
+        "population": "Healthy, predominantly high-functioning older adults, eligibility age 65 years or older; 109 randomized and 94 completers analyzed",
+        "comparison": "Oral metformin titrated to 1,700 mg/day versus placebo, both with supervised progressive resistance training",
+        "route": "oral",
+        "formulation": "Release formulation not established in the bounded material inspected"
+      },
+      "finding": "Total lean-body-mass gains during resistance training were smaller with metformin.",
+      "magnitudeText": "Mean change 0.41% (SD 2.25) with metformin versus 1.95% (SD 2.69) with placebo; between-group P=.003.",
+      "rationale": "The masked randomized comparison directly supports reduced DXA lean-mass gain in this training setting. Completer-only analysis, modest sample size, baseline sex/mass imbalance and absence of a reported effect interval limit confidence and generalization.",
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "Randomized double-blind placebo comparison, but analyses used 94 completers from 109 randomized. Sex distribution generated baseline mass/strength differences; investigators compared percentage changes. No assumption of negligible attrition bias.",
+          "sourceIds": [
+            "MF-MASTERS-2019"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "Directly tests adaptation to supervised training in healthy older people. DXA lean mass is distinct from strength, physical function, walking speed, sarcopenia treatment and longevity.",
+          "sourceIds": [
+            "MF-MASTERS-2019"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "Between-group P=.003 supports a difference; reported arm means and SDs do not supply an effect confidence interval. No interval or graph-derived effect was calculated.",
+          "sourceIds": [
+            "MF-MASTERS-2019"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "One trial. DXA thigh mass and CT measures are related outcomes in overlapping participants, not independent replication; the strength outcomes are separate.",
+          "sourceIds": [
+            "MF-MASTERS-2019"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "Original full XML and actual correction notice DOI 10.1111/acel.13098 inspected. The correction identifies relative strength in Table 2 and related Appendix S2 measures; it does not identify the DXA total-lean-mass result as corrected. Original relative-strength numbers must not be reused. Updated Appendix S2 remains unavailable, so this is endpoint-bounded reconciliation, not completion of the paper review.",
+          "sourceIds": [
+            "MF-MASTERS-2019"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "MF-MASTERS-2019",
+          "locator": "DOI 10.1111/acel.13039: Results §§2.1–2.2, Figure 2b caption; Methods §§4.4 and 4.8. Correction DOI 10.1111/acel.13098: opening paragraph and corrected Table 2."
+        }
+      ],
+      "integrity": "limited_access",
+      "missingness": [
+        "Updated Appendix S2 and remaining supplement/protocol detail uninspected.",
+        "The corrected relative-strength result remains nonsignificant (P=.30), but it is excluded from this lean-mass grade.",
+        "Full-paper correction reconciliation remains unfinished; no currently identified correction changes this narrowly assessed DXA endpoint."
+      ],
+      "assessedAt": "2026-10-12",
+      "assessmentStatus": "bounded_editorial_assessment",
+      "fullScientificReviewComplete": false,
+      "humanApproved": false,
+      "sourceId": "MF-MASTERS-2019",
+      "magnitude": "Mean change 0.41% (SD 2.25) with metformin versus 1.95% (SD 2.69) with placebo; between-group P=.003.",
+      "limitations": [
+        "Updated Appendix S2 and remaining supplement/protocol detail uninspected.",
+        "The corrected relative-strength result remains nonsignificant (P=.30), but it is excluded from this lean-mass grade.",
+        "Full-paper correction reconciliation remains unfinished; no currently identified correction changes this narrowly assessed DXA endpoint."
+      ],
+      "verification": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6826125/",
+          "access": "Existing primary abstract/full report; no expansion search",
+          "checkedAt": "2026-10-12"
+        },
+        {
+          "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/private-research/RRX-GUIDE-METFORMIN-001/ACQUIRE-1.1/sources/PRIMARY/MF-MASTERS-2019.xml",
+          "sha256": "8927b509b828f2d554eb56e61afc168e6a7362a4e5c1facf4e2a6f9d23067937",
+          "receiptHashMatched": true
+        },
+        {
+          "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/private-research/RRX-GUIDE-METFORMIN-001/ACQUIRE-1.1/sources/PRIMARY/MF-MASTERS-CORRECTION-32141718.xml",
+          "sha256": "9fe3d62cb4af96b98438cf25a11b892d0a07fab564ea78db28b5d5b871222efb",
+          "receiptHashMatched": true
+        },
+        {
+          "url": "https://doi.org/10.1111/acel.13098",
+          "note": "Received correction notice read, including all corrected Table 2 values. Relative strength P=.30; other displayed strength P-values remain .055, .082 and .064. No DXA numerical change specified in the notice. Updated Appendix S2 not read."
+        }
+      ],
+      "scopeIdentityNote": "The display row ID is a proposal; the integrator must bind exact outcome, population, comparator, route, formulation and timepoint using the current identity contract."
+    }
+  ],
+  "assessments": [
+    {
+      "rowId": "SYN-D01-C13-STAMPEDE-OS",
+      "sourceIds": [
+        "MF-STAMPEDE-2025"
+      ],
+      "grade": "Moderate",
+      "scope": {
+        "endpoint": "Overall survival (death from any cause)",
+        "timepoint": "Time-to-event analysis; median follow-up 60 months (IQR 49–72)",
+        "population": "1,874 participants without diabetes with metastatic hormone-sensitive prostate cancer",
+        "comparison": "Oral metformin 850 mg twice daily plus standard care versus standard care",
+        "route": "oral",
+        "formulation": "Release formulation not established in the bounded material inspected"
+      },
+      "finding": "Metformin did not demonstrate an overall-survival improvement.",
+      "magnitudeText": "HR 0.91 (95% CI 0.80–1.03).",
+      "rationale": "The direct randomized survival comparison is informative, but its interval still permits meaningful benefit; nonsignificance does not establish equivalence.",
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "Random allocation and intention-to-treat primary analysis support comparison; abstract-only methods assessment.",
+          "sourceIds": [
+            "MF-STAMPEDE-2025"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "Direct metastatic hormone-sensitive population; only 3% received an androgen-receptor pathway inhibitor, limiting transfer to that combination.",
+          "sourceIds": [
+            "MF-STAMPEDE-2025"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "The interval includes no difference and a potentially meaningful reduction in mortality hazard.",
+          "sourceIds": [
+            "MF-STAMPEDE-2025"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "One trial; subgroup and metabolic findings are different outcomes, not replication.",
+          "sourceIds": [
+            "MF-STAMPEDE-2025"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "Primary PubMed abstract checked; full methods, supplements and complete version audit uninspected.",
+          "sourceIds": [
+            "MF-STAMPEDE-2025"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "MF-STAMPEDE-2025",
+          "locator": "PubMed PMID 40639383: Abstract—Methods and Findings"
+        }
+      ],
+      "integrity": "limited_access",
+      "missingness": [
+        "Allocation implementation, adherence, censoring and full protocol not independently appraised."
+      ],
+      "assessedAt": "2026-10-12",
+      "assessmentStatus": "bounded_editorial_assessment",
+      "fullScientificReviewComplete": false,
+      "humanApproved": false,
+      "sourceId": "MF-STAMPEDE-2025",
+      "magnitude": "HR 0.91 (95% CI 0.80–1.03).",
+      "limitations": [
+        "Allocation implementation, adherence, censoring and full protocol not independently appraised."
+      ],
+      "verification": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40639383/",
+          "access": "Existing primary abstract/full report; no expansion search",
+          "checkedAt": "2026-10-12"
+        }
+      ],
+      "scopeIdentityNote": "The display row ID is a proposal; the integrator must bind exact outcome, population, comparator, route, formulation and timepoint using the current identity contract."
+    },
+    {
+      "rowId": "SYN-D01-C14-NRG-LU001-PFS",
+      "sourceIds": [
+        "MF-NRG-LU001-2021"
+      ],
+      "grade": "Moderate",
+      "scope": {
+        "endpoint": "Progression-free survival: time from randomization to RECIST 1.1 progression or death",
+        "timepoint": "One-year survival estimate; HR across follow-up, median 27.7 months among survivors",
+        "population": "167 eligible participants without diabetes with unresectable stage III NSCLC, Zubrod performance status 0–1",
+        "comparison": "Oral metformin escalated to 2,000 mg/day during concurrent chemoradiotherapy and consolidation chemotherapy versus the same cancer treatment alone",
+        "route": "oral",
+        "formulation": "Release formulation not established in the bounded material inspected"
+      },
+      "finding": "Metformin did not demonstrate a progression-free-survival improvement.",
+      "magnitudeText": "One-year PFS 51.3% versus 60.4%; HR 1.15 (95% CI 0.77–1.73).",
+      "rationale": "Central randomized allocation and blinded imaging re-review support an informative comparison. The wide interval, open treatment allocation and limited metformin adherence leave substantial uncertainty about the treatment effect.",
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "Central stratified randomization; 167/170 eligible participants analyzed by assignment. Open-label treatment, with blinded central progression review supporting the institutional analysis. Only 39% maintained the indicated dose without modification.",
+          "sourceIds": [
+            "MF-NRG-LU001-2021"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "Directly addresses this chemoradiation/consolidation regimen in nondiabetic stage III disease; it does not establish effects with contemporary consolidation immunotherapy or in diabetes.",
+          "sourceIds": [
+            "MF-NRG-LU001-2021"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "The PFS interval permits benefit and substantial harm; a nonsignificant result is not equivalence. One-year rates and the follow-up-wide HR have different time interpretations.",
+          "sourceIds": [
+            "MF-NRG-LU001-2021"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "This is one trial. The separate ALMERA trial does not show benefit either but reported worse outcomes; those divergent magnitudes should not be represented as replication of a null effect.",
+          "sourceIds": [
+            "MF-NRG-LU001-2021"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "Received primary full-text HTML methods, Table 2 and limitations inspected. No endpoint-specific correction identified in this bounded material; supplements and a complete version audit remain uninspected.",
+          "sourceIds": [
+            "MF-NRG-LU001-2021"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "MF-NRG-LU001-2021",
+          "locator": "Full report: Methods—Randomization and Statistical Analysis; Results—Protocol Adherence and Survival Outcomes; Table 2; Limitations"
+        }
+      ],
+      "integrity": "limited_access",
+      "missingness": [
+        "Supplement 1 protocol and Supplement 2 detailed adherence/covariate analyses unavailable to this assessment.",
+        "Do not label the HR as a one-year risk ratio or use this grade for overall survival."
+      ],
+      "assessedAt": "2026-10-12",
+      "assessmentStatus": "bounded_editorial_assessment",
+      "fullScientificReviewComplete": false,
+      "humanApproved": false,
+      "sourceId": "MF-NRG-LU001-2021",
+      "magnitude": "One-year PFS 51.3% versus 60.4%; HR 1.15 (95% CI 0.77–1.73).",
+      "limitations": [
+        "Supplement 1 protocol and Supplement 2 detailed adherence/covariate analyses unavailable to this assessment.",
+        "Do not label the HR as a one-year risk ratio or use this grade for overall survival."
+      ],
+      "verification": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34323922/",
+          "access": "Existing primary abstract/full report; no expansion search",
+          "checkedAt": "2026-10-12"
+        },
+        {
+          "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/private-research/RRX-GUIDE-METFORMIN-001/ACQUIRE-1.1/sources/PRIMARY/MF-NRG-LU001-2021.html",
+          "sha256": "bccb1701920437c1fb4a87ff546be39c00b50adca6bdbef10475e4683616d273",
+          "receiptHashMatched": true
+        }
+      ],
+      "scopeIdentityNote": "The display row ID is a proposal; the integrator must bind exact outcome, population, comparator, route, formulation and timepoint using the current identity contract."
+    },
+    {
+      "rowId": "SYN-D01-C14-ALMERA-OS",
+      "sourceIds": [
+        "MF-ALMERA-2021"
+      ],
+      "grade": "Low",
+      "scope": {
+        "endpoint": "Overall survival (secondary endpoint)",
+        "timepoint": "One-year survival estimate; time-to-event HR over trial follow-up",
+        "population": "54 participants without diabetes with unresected locally advanced stage III NSCLC",
+        "comparison": "Chemoradiotherapy plus oral metformin 2,000 mg/day, continued up to 12 months, versus chemoradiotherapy alone",
+        "route": "oral",
+        "formulation": "Release formulation not established in the bounded material inspected"
+      },
+      "finding": "This small trial reported worse overall survival with metformin.",
+      "magnitudeText": "One-year OS 47.4% versus 85.2%; HR 3.80 (95% CI 1.49–9.73).",
+      "rationale": "The randomized harm signal matters, but early closure, small groups, baseline imbalance and the wide interval limit confidence in its magnitude and generalizability.",
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "Open-label randomized trial; only 54/96 planned participants enrolled before closure for slow accrual. Overall survival was secondary.",
+          "sourceIds": [
+            "MF-ALMERA-2021"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "Directly addresses this nondiabetic chemoradiotherapy population, not all lung-cancer treatment.",
+          "sourceIds": [
+            "MF-ALMERA-2021"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "Wide interval; substantial uncertainty about the size of harm.",
+          "sourceIds": [
+            "MF-ALMERA-2021"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "One small trial; NRG-LU001 did not reproduce this survival-harm estimate.",
+          "sourceIds": [
+            "MF-ALMERA-2021"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "Publisher methods/results/limitations checked. Larger baseline treatment volume in the metformin group and possible chance imbalance warrant caution.",
+          "sourceIds": [
+            "MF-ALMERA-2021"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "MF-ALMERA-2021",
+          "locator": "Publisher full report DOI 10.1001/jamaoncol.2021.2328: Results—Survival Outcomes; Figure 2; Limitations"
+        }
+      ],
+      "integrity": "limited_access",
+      "missingness": [
+        "Protocol and supplements not independently inspected; full review unfinished."
+      ],
+      "assessedAt": "2026-10-12",
+      "assessmentStatus": "bounded_editorial_assessment",
+      "fullScientificReviewComplete": false,
+      "humanApproved": false,
+      "sourceId": "MF-ALMERA-2021",
+      "magnitude": "One-year OS 47.4% versus 85.2%; HR 3.80 (95% CI 1.49–9.73).",
+      "limitations": [
+        "Protocol and supplements not independently inspected; full review unfinished."
+      ],
+      "verification": [
+        {
+          "url": "https://jamanetwork.com/journals/jamaoncology/fullarticle/2782110",
+          "access": "Existing primary abstract/full report; no expansion search",
+          "checkedAt": "2026-10-12"
+        }
+      ],
+      "scopeIdentityNote": "The display row ID is a proposal; the integrator must bind exact outcome, population, comparator, route, formulation and timepoint using the current identity contract."
+    },
+    {
+      "rowId": "SYN-D01-C16-ADENOMA-RECURRENCE",
+      "sourceIds": [
+        "MF-ADENOMA-2016"
+      ],
+      "grade": "Moderate",
+      "scope": {
+        "endpoint": "Prevalence of recurrent colorectal adenoma at follow-up colonoscopy",
+        "timepoint": "One year after polypectomy",
+        "population": "151 randomized patients without diabetes after colorectal polyp removal; 133 underwent follow-up colonoscopy",
+        "comparison": "Oral metformin 250 mg daily versus identical placebo",
+        "route": "oral",
+        "formulation": "Release formulation not established in the bounded material inspected"
+      },
+      "finding": "Metformin reduced reported one-year adenoma recurrence.",
+      "magnitudeText": "Reported RR 0.60 (95% CI 0.39–0.92).",
+      "rationale": "A masked randomized comparison supports this prevention finding, but limited follow-up, attrition and one small trial leave material uncertainty.",
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "Computer-generated stratified allocation and masking reported; 18 randomized participants lacked one-year colonoscopy.",
+          "sourceIds": [
+            "MF-ADENOMA-2016"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "Direct adenoma recurrence endpoint; not cancer incidence, treatment or survival.",
+          "sourceIds": [
+            "MF-ADENOMA-2016"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "The interval excludes no difference but remains broad.",
+          "sourceIds": [
+            "MF-ADENOMA-2016"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "One trial; polyp and adenoma outcomes are not independent replication.",
+          "sourceIds": [
+            "MF-ADENOMA-2016"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "Primary abstract checked. Printed 22/71 and 30.6% disagree arithmetically; avoid reproducing that percentage or silently correcting it.",
+          "sourceIds": [
+            "MF-ADENOMA-2016"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "MF-ADENOMA-2016",
+          "locator": "PubMed PMID 26947328: Abstract—Methods and Findings"
+        }
+      ],
+      "integrity": "limited_access",
+      "missingness": [
+        "Missing-colonoscopy handling, full protocol and numerical discrepancy require full-text reconciliation."
+      ],
+      "assessedAt": "2026-10-12",
+      "assessmentStatus": "bounded_editorial_assessment",
+      "fullScientificReviewComplete": false,
+      "humanApproved": false,
+      "sourceId": "MF-ADENOMA-2016",
+      "magnitude": "Reported RR 0.60 (95% CI 0.39–0.92).",
+      "limitations": [
+        "Missing-colonoscopy handling, full protocol and numerical discrepancy require full-text reconciliation."
+      ],
+      "verification": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26947328/",
+          "access": "Existing primary abstract/full report; no expansion search",
+          "checkedAt": "2026-10-12"
+        }
+      ],
+      "scopeIdentityNote": "The display row ID is a proposal; the integrator must bind exact outcome, population, comparator, route, formulation and timepoint using the current identity contract."
+    },
+    {
+      "rowId": "SYN-D01-C02-COVIDOUT-ACUTE-COMPOSITE",
+      "sourceIds": [
+        "COND-C02-COVIDOUT-2022"
+      ],
+      "grade": "Moderate",
+      "scope": {
+        "endpoint": "Primary composite of hypoxemia (home oxygen saturation ≤93%), emergency-department visit, hospitalization or death",
+        "timepoint": "Through 14 days after randomization",
+        "population": "Nonhospitalized adults aged 30–85 with overweight or obesity, infection confirmed within 3 days and symptoms beginning within 7 days; 1,323 in the modified intention-to-treat population",
+        "comparison": "Immediate-release oral metformin titrated over 6 days to 1,500 mg/day for 14 days versus concurrently randomized control, adjusting for vaccination and the other randomized trial drugs",
+        "route": "oral",
+        "formulation": "immediate-release"
+      },
+      "finding": "Metformin did not demonstrate a reduction in the primary acute COVID-19 composite outcome.",
+      "magnitudeText": "Adjusted OR 0.84 (95% CI 0.66–1.09); P=.19.",
+      "rationale": "The masked randomized comparison directly measures the specified acute composite, but unreliable home-oximetry ascertainment and an interval allowing benefit leave material uncertainty. It does not establish equivalence or determine the effect on later Long COVID.",
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "Double-blind factorial randomization with concurrent controls. Prespecified modified intention-to-treat excluded confirmed nonrecipients; primary missing data were imputed. Home oximetry was susceptible to measurement error and undocumented recall.",
+          "sourceIds": [
+            "COND-C02-COVIDOUT-2022"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "Direct early outpatient treatment in adults with overweight/obesity; limited transfer to hospitalized people, normal-weight adults or later variant/vaccination settings. This is not treatment of established Long COVID.",
+          "sourceIds": [
+            "COND-C02-COVIDOUT-2022"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "The adjusted odds interval includes no difference and meaningful benefit. Component outcomes have fewer events and were secondary; their intervals were not adjusted for multiplicity.",
+          "sourceIds": [
+            "COND-C02-COVIDOUT-2022"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "One COVID-OUT trial family. Its Long COVID and viral-RNA reports are other outcomes in overlapping participants, not independent replication of this composite.",
+          "sourceIds": [
+            "COND-C02-COVIDOUT-2022"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "The already-received primary report was checked at methods, primary results and Table 2. The known correction concern attached to the separate Long COVID publication was not assumed to affect this acute report. No complete integrity clearance is claimed.",
+          "sourceIds": [
+            "COND-C02-COVIDOUT-2022"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "COND-C02-COVIDOUT-2022",
+          "locator": "DOI 10.1056/NEJMoa2201662: Methods—End Points and Statistical Analysis; Results—End Points; Table 2 and footnotes; Discussion limitations"
+        }
+      ],
+      "integrity": "limited_access",
+      "missingness": [
+        "Supplementary full intention-to-treat sensitivity analyses and protocol not inspected in this bounded assessment.",
+        "Use the adjusted estimate; the article warns against naive comparison of absolute event rates across treatment groups enrolled at different times."
+      ],
+      "assessedAt": "2026-10-12",
+      "assessmentStatus": "bounded_editorial_assessment",
+      "fullScientificReviewComplete": false,
+      "humanApproved": false,
+      "sourceId": "COND-C02-COVIDOUT-2022",
+      "magnitude": "Adjusted OR 0.84 (95% CI 0.66–1.09); P=.19.",
+      "limitations": [
+        "Supplementary full intention-to-treat sensitivity analyses and protocol not inspected in this bounded assessment.",
+        "Use the adjusted estimate; the article warns against naive comparison of absolute event rates across treatment groups enrolled at different times."
+      ],
+      "verification": [
+        {
+          "url": "https://www.nejm.org/doi/abs/10.1056/NEJMoa2201662",
+          "access": "Existing primary abstract/full report; no expansion search",
+          "checkedAt": "2026-10-12"
+        },
+        {
+          "path": "/Users/kmfp/Documents/ChatGPT/One Match Rule/work/ingest/SL-F01-F02-20261011/receipt/input/return/F01/PRIMARY/A-F01-R031__original_report__randomized-trial-of-metformin-ivermectin-and-fluvo.html",
+          "sha256": "bbd529be8738b59d0e885a2f0da3f807d949c1c7527098635d304aa3d84894c7",
+          "receiptHashMatched": true
+        }
+      ],
+      "scopeIdentityNote": "The display row ID is a proposal; the integrator must bind exact outcome, population, comparator, route, formulation and timepoint using the current identity contract."
+    },
+    {
+      "rowId": "SYN-D01-C30-MASTERS-DXA-LEAN-MASS",
+      "sourceIds": [
+        "MF-MASTERS-2019"
+      ],
+      "grade": "Moderate",
+      "scope": {
+        "endpoint": "Percentage change in total lean body mass measured by DXA",
+        "timepoint": "Baseline to study week 16: 14 weeks of supervised progressive resistance training after a 2-week drug wash-in",
+        "population": "Healthy, predominantly high-functioning older adults, eligibility age 65 years or older; 109 randomized and 94 completers analyzed",
+        "comparison": "Oral metformin titrated to 1,700 mg/day versus placebo, both with supervised progressive resistance training",
+        "route": "oral",
+        "formulation": "Release formulation not established in the bounded material inspected"
+      },
+      "finding": "Total lean-body-mass gains during resistance training were smaller with metformin.",
+      "magnitudeText": "Mean change 0.41% (SD 2.25) with metformin versus 1.95% (SD 2.69) with placebo; between-group P=.003.",
+      "rationale": "The masked randomized comparison directly supports reduced DXA lean-mass gain in this training setting. Completer-only analysis, modest sample size, baseline sex/mass imbalance and absence of a reported effect interval limit confidence and generalization.",
+      "domains": [
+        {
+          "name": "Study methods",
+          "text": "Randomized double-blind placebo comparison, but analyses used 94 completers from 109 randomized. Sex distribution generated baseline mass/strength differences; investigators compared percentage changes. No assumption of negligible attrition bias.",
+          "sourceIds": [
+            "MF-MASTERS-2019"
+          ]
+        },
+        {
+          "name": "Directness",
+          "text": "Directly tests adaptation to supervised training in healthy older people. DXA lean mass is distinct from strength, physical function, walking speed, sarcopenia treatment and longevity.",
+          "sourceIds": [
+            "MF-MASTERS-2019"
+          ]
+        },
+        {
+          "name": "Precision",
+          "text": "Between-group P=.003 supports a difference; reported arm means and SDs do not supply an effect confidence interval. No interval or graph-derived effect was calculated.",
+          "sourceIds": [
+            "MF-MASTERS-2019"
+          ]
+        },
+        {
+          "name": "Consistency",
+          "text": "One trial. DXA thigh mass and CT measures are related outcomes in overlapping participants, not independent replication; the strength outcomes are separate.",
+          "sourceIds": [
+            "MF-MASTERS-2019"
+          ]
+        },
+        {
+          "name": "Source integrity",
+          "text": "Original full XML and actual correction notice DOI 10.1111/acel.13098 inspected. The correction identifies relative strength in Table 2 and related Appendix S2 measures; it does not identify the DXA total-lean-mass result as corrected. Original relative-strength numbers must not be reused. Updated Appendix S2 remains unavailable, so this is endpoint-bounded reconciliation, not completion of the paper review.",
+          "sourceIds": [
+            "MF-MASTERS-2019"
+          ]
+        }
+      ],
+      "basis": [
+        {
+          "sourceId": "MF-MASTERS-2019",
+          "locator": "DOI 10.1111/acel.13039: Results §§2.1–2.2, Figure 2b caption; Methods §§4.4 and 4.8. Correction DOI 10.1111/acel.13098: opening paragraph and corrected Table 2."
+        }
+      ],
+      "integrity": "limited_access",
+      "missingness": [
+        "Updated Appendix S2 and remaining supplement/protocol detail uninspected.",
+        "The corrected relative-strength result remains nonsignificant (P=.30), but it is excluded from this lean-mass grade.",
+        "Full-paper correction reconciliation remains unfinished; no currently identified correction changes this narrowly assessed DXA endpoint."
+      ],
+      "assessedAt": "2026-10-12",
+      "assessmentStatus": "bounded_editorial_assessment",
+      "fullScientificReviewComplete": false,
+      "humanApproved": false,
+      "sourceId": "MF-MASTERS-2019",
+      "magnitude": "Mean change 0.41% (SD 2.25) with metformin versus 1.95% (SD 2.69) with placebo; between-group P=.003.",
+      "limitations": [
+        "Updated Appendix S2 and remaining supplement/protocol detail uninspected.",
+        "The corrected relative-strength result remains nonsignificant (P=.30), but it is excluded from this lean-mass grade.",
+        "Full-paper correction reconciliation remains unfinished; no currently identified correction changes this narrowly assessed DXA endpoint."
+      ],
+      "verification": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6826125/",
+          "access": "Existing primary abstract/full report; no expansion search",
+          "checkedAt": "2026-10-12"
+        },
+        {
+          "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/private-research/RRX-GUIDE-METFORMIN-001/ACQUIRE-1.1/sources/PRIMARY/MF-MASTERS-2019.xml",
+          "sha256": "8927b509b828f2d554eb56e61afc168e6a7362a4e5c1facf4e2a6f9d23067937",
+          "receiptHashMatched": true
+        },
+        {
+          "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/private-research/RRX-GUIDE-METFORMIN-001/ACQUIRE-1.1/sources/PRIMARY/MF-MASTERS-CORRECTION-32141718.xml",
+          "sha256": "9fe3d62cb4af96b98438cf25a11b892d0a07fab564ea78db28b5d5b871222efb",
+          "receiptHashMatched": true
+        },
+        {
+          "url": "https://doi.org/10.1111/acel.13098",
+          "note": "Received correction notice read, including all corrected Table 2 values. Relative strength P=.30; other displayed strength P-values remain .055, .082 and .064. No DXA numerical change specified in the notice. Updated Appendix S2 not read."
+        }
+      ],
+      "scopeIdentityNote": "The display row ID is a proposal; the integrator must bind exact outcome, population, comparator, route, formulation and timepoint using the current identity contract."
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "date": "2026-10-12T14:19:14.912303+00:00",
+  "scope": "prospective request schema/input consistency only",
+  "commands": [
+    "python3 prepare-package.py --manifest",
+    "python3 validate.py (jsonschema 4.26.0 in temporary environment)"
+  ],
+  "assignments": 14,
+  "missingScholarlyOriginals": 11,
+  "plannedQuestionMaps": 165,
+  "negativeProbesRejected": 13,
+  "inputFiles": 23,
+  "originalCoordinationArchiveHashVerified": true,
+  "sourcesAcquired": 0,
+  "dispatched": false,
+  "scientificAssessmentComplete": false,
+  "reviewFixes": [
+    "Accepted plan/schema hashes checked for equality, not shape only",
+    "Acquired and partially acquired require delivered source files",
+    "Acquired original requires full source role and nonmetadata access",
+    "Correction notice PMID separate from original report identifiers",
+    "Direct same-environment acquisition staging explicitly scoped"
+  ]
+}

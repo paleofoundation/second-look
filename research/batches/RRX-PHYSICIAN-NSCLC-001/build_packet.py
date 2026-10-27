@@ -1,0 +1,214 @@
+from pathlib import Path
+import json, re, hashlib, datetime
+from docx import Document
+from docx.shared import Inches, Pt, RGBColor
+from docx.enum.text import WD_ALIGN_PARAGRAPH
+from docx.oxml import OxmlElement
+from docx.oxml.ns import qn
+from docx.opc.constants import RELATIONSHIP_TYPE as RT
+
+ROOT=Path('/Users/kmfp/Documents/ChatGPT/Drug Repurposing')
+BATCH=ROOT/'second-look-navigation/research/batches/RRX-PHYSICIAN-NSCLC-001'
+OUT=ROOT/'artifacts/physician-packet-nsclc/output'
+OUT.mkdir(parents=True,exist_ok=True)
+SOURCES=json.loads((BATCH/'source-records.json').read_text())
+PAGES=[
+{'title':'Non-small-cell lung cancer','subtitle':'Physician discussion packet','blocks':[
+('meta','Sample edition 1.0  |  October 12, 2026'),
+('small','Selected evidence for a surgical consultation. Educational sample; independent clinical review pending.'),
+('h','My request for this appointment'),
+('p','Dear Dr. ____________________,\nI would like your assessment of whether the repurposing studies in this packet are relevant to my diagnosis and proposed treatment. Please help me understand the strongest evidence, the important limitations, and whether a clinical trial or specialist second opinion would be appropriate within the treatment timeline you recommend.'),
+('p','If an approach is unsuitable, I would appreciate a specific explanation of whether the issue is evidence quality, a mismatch with my cancer or treatment setting, safety, or another concern. Please help me record the reasoning and agreed next steps on the final page.'),
+('h','Clinical takeaway'),
+('claim','Surgery can be curative for selected patients with resectable NSCLC, and treatment depends on disease stage, histology and the patient\'s health.{{1}}'),
+('claim','The four selected reports do not establish that itraconazole or metformin can replace potentially curative surgery. The presurgical itraconazole study retained planned surgery; the other trials evaluated additional drugs in different treatment settings.{{2,3,4,5}}'),
+('h','Patient details to confirm with the care team'),
+('field','Patient name or initials ____________________   Appointment date ______________'),
+('field','Histology ____________________   Clinical stage and staging date ______________'),
+('field','Biomarker results or pending tests _________________________________________'),
+('field','Proposed treatment and timing ____________________________________________'),
+('field','Current medicines and supplements   Attach a current list'),
+('h','Three questions to resolve'),
+('number','What benefit and risks do you expect from the proposed plan in my situation?'),
+('number','Does any cited study match my disease and treatment setting closely enough to affect the plan or justify a trial referral?'),
+('number','Which next steps can we complete without delaying time-sensitive treatment?'),
+('small','Keep planned care on schedule unless the treating team changes it. Do not start, stop or substitute a medicine based on this packet. Evidence details: pages 2-3. Sources: page 4. Discussion record: page 5.')
+]},
+{'title':'Itraconazole studies','subtitle':'Exploratory clinical findings and their limits','blocks':[
+('h','Before planned surgery'),
+('claim','Gerber and colleagues enrolled 13 patients with NSCLC scheduled for resection. They received itraconazole for 10-14 days before surgery, with imaging, blood and tissue measurements to investigate biological effects.{{2}}'),
+('claim','Higher drug concentrations were associated with greater reductions in tumor volume and perfusion, among other measurements. These short-term associations do not establish improved survival or show that surgery can safely be omitted.{{2}}'),
+('p','Question for the physician: Does this type of presurgical research have any relevance to my case, and is an appropriate trial available without disrupting the planned treatment schedule?'),
+('small','Source basis: published abstract reproduced in the authors\' institutional publication record. This is a biological-effects study, not a comparison of itraconazole against surgery.'),
+('h','With chemotherapy after prior metastatic treatment'),
+('claim','Rudin and colleagues conducted an open-label randomized phase 2 trial in previously treated metastatic nonsquamous NSCLC. It enrolled 23 patients: 15 received pemetrexed plus itraconazole and 8 received pemetrexed alone. The trial closed early because of slow recruitment as pemetrexed use changed.{{3}}'),
+('claim','At 3 months, 67% versus 29% were progression-free (P = .11), the primary endpoint. Median overall survival, an additional endpoint, was 32 versus 8 months (P = .012), favoring the combination. The authors emphasized that the small sample made effect estimates highly unstable.{{3}}'),
+('claim','Reported events in the combination group included transient grade 4 neutropenia without fever and a possibly treatment-related intratumoral bleed within 30 days after leaving the study. This small study cannot establish broad safety or a reliable survival benefit, and it did not study initial treatment of resectable disease.{{3}}'),
+('p','Question for the physician: Does this trial match my treatment history and histology, and what corroborating evidence would be needed before its findings could influence my care?'),
+('h','Safety review before considering itraconazole'),
+('claim','The U.S. capsule label warns about heart failure, serious liver toxicity and consequential drug interactions, including contraindicated combinations involving CYP3A4 substrates.{{6}}'),
+('p','Ask the oncology team and pharmacist to review the complete medication list, relevant heart and liver history, and any proposed monitoring. A drug\'s established use for another illness does not by itself establish its suitability for this cancer treatment.'),
+('small','These two studies address different questions. Their findings are not combined into a treatment recommendation or a single benefit estimate.')
+]},
+{'title':'Metformin studies','subtitle':'Randomized trials with no benefit or concerning outcomes','blocks':[
+('h','NRG LU001'),
+('claim','This open-label phase 2 trial studied patients without diabetes who had unresectable stage III NSCLC. Of 170 enrolled patients, 167 eligible patients were analyzed: 86 in the metformin group and 81 in the control group. Both groups received chemoradiation and consolidation chemotherapy.{{4}}'),
+('claim','The primary endpoint, 1-year progression-free survival, was 51.3% with metformin and 60.4% without it (hazard ratio 1.15; 95% CI 0.77-1.73; P = .24). One-year overall survival was similar, and no significant difference in adverse events was reported. The trial did not demonstrate improved survival with metformin.{{4}}'),
+('p','Discussion implication: This trial provides no demonstrated benefit for adding metformin to the tested regimen in this population. It does not compare metformin with surgery.'),
+('small','Source basis: PubMed abstract. Full methods, protocol and supplement appraisal remain incomplete for this sample.'),
+('h','OCOG ALMERA'),
+('claim','This open-label phase 2 trial randomized 54 patients without diabetes and with unresected stage III NSCLC: 26 to chemoradiotherapy plus metformin and 28 to chemoradiotherapy alone. Recruitment stopped early.{{5}}'),
+('claim','The primary composite treatment-failure endpoint occurred within 1 year in 18/26 patients (69.2%) with metformin versus 12/28 (42.9%) in the control group (P = .05). It included progression, death, or stopping trial treatment or planned evaluations for any reason.{{5}}'),
+('claim','One-year overall survival was 47.4% versus 85.2% (hazard ratio 3.80; 95% CI 1.49-9.73). At least one grade 3 or higher adverse event was reported in 14/26 (53.8%) versus 7/28 (25.0%), respectively. These are all-cause adverse events, not all established as caused by metformin.{{5}}'),
+('claim','The small sample, open-label design and treatment imbalances limit interpretation; the unfavorable findings argue against an anticancer add-on in this setting.{{5}}'),
+('h','How to use these findings'),
+('p','Ask: If I already use metformin for diabetes, how should that indication and my treatment plan be managed? These trials studied an anticancer add-on in people without diabetes. Do not change an existing diabetes prescription because of this packet.'),
+('p','The studies on these two evidence pages used different populations, treatment combinations and outcomes. Side-by-side results cannot establish which drug is superior or predict an individual patient\'s outcome.'),
+('small','PFS means progression-free survival. OS means overall survival. A hazard ratio describes relative event rates over follow-up; it is not a percentage-point change in survival. CI means confidence interval.')
+]},
+{'title':'Sources and scope','subtitle':'Original reports and clinical context','blocks':[
+('p','The numbered links below open original source records. Research summaries distinguish the tested setting and reported result from the discussion implications. No formal evidence-certainty grade or individualized treatment recommendation has been assigned.'),
+('ref',1),('ref',2),('ref',3),('ref',4),('ref',5),('ref',6),
+('h','What this sample covers'),
+('p','This is a selected-source discussion sample featuring four reports published in 2013, 2020 and 2021. Sources were checked on October 12, 2026. It is not a systematic review, a complete list of repurposing candidates, or a comprehensive search of research through that date.'),
+('p','Summaries of Gerber 2020 and NRG-LU001 use accessible abstracts. Rudin 2013 and OCOG-ALMERA use accessible full-text sections. Complete study appraisals and independent clinical review are pending. Patient details are intentionally blank; applicability must be established with the care team.'),
+('small','Prepared as an AI-assisted RemapRx product sample. This edition has not been approved for clinical or commercial distribution. Article PDFs are not reproduced; use the source links for access.')
+]},
+{'title':'Discussion and next steps','subtitle':'Patient and physician worksheet','blocks':[
+('field','Patient ____________________   Physician ____________________   Date __________'),
+('p','Use this page to capture the explanation and agreed actions. A decision to continue the current plan can be a useful outcome when its reasons are clear.'),
+('h','Confirm the treatment decision'),
+('prompt','What is the treatment goal, why is this plan recommended, and what timing matters?'),
+('lines',2),
+('h','Assess the relevance of the research'),
+('prompt','Which study, if any, fits my stage, histology, biomarker results and treatment history?'),
+('lines',2),
+('prompt','If a repurposed approach is unsuitable, what is the reason and what evidence could change that assessment?'),
+('lines',2),
+('h','Resolve any remaining questions'),
+('prompt','Are any tests, a thoracic oncology opinion, tumor board review or a trial inquiry appropriate? Can these happen within the recommended treatment timeline?'),
+('lines',2),
+('h','Record the agreed actions'),
+('field','Action _____________________________________   Responsible person __________'),
+('field','Due date ____________________   Follow-up appointment _____________________'),
+('field','Action _____________________________________   Responsible person __________'),
+('field','Due date ____________________   Contact for questions _______________________'),
+('h','A useful closing sentence'),
+('p','"To make sure I have understood: we are recommending ____________________ because ____________________. The next step is ____________________, and we will revisit this if ____________________. Is that accurate?"'),
+('small','Before sharing a completed copy, confirm the recipient and use the practice\'s preferred patient portal or secure communication method.')
+]}
+]
+REFS={
+1:('National Cancer Institute. Non-Small Cell Lung Cancer Treatment (PDQ), Health Professional Version. Sections on general treatment factors and stages IA and IB. Accessed October 12, 2026.','NCI treatment guidance'),
+2:('Gerber DE, et al. Concentration-dependent Early Antivascular and Antitumor Effects of Itraconazole in Non-Small Cell Lung Cancer. Clin Cancer Res. 2020;26:6017-6027. doi:10.1158/1078-0432.CCR-20-1916.','PubMed PMID 32847935'),
+3:('Rudin CM, et al. Phase 2 Study of Pemetrexed and Itraconazole as Second-Line Therapy for Metastatic Non-Squamous Non-Small Cell Lung Cancer. J Thorac Oncol. 2013;8:619-623. PMID 23546045.','Open full text PMC3636564'),
+4:('Skinner H, et al. Addition of Metformin to Concurrent Chemoradiation in Patients With Locally Advanced Non-Small Cell Lung Cancer: The NRG-LU001 Phase 2 Randomized Clinical Trial. JAMA Oncol. 2021;7:1324-1332. doi:10.1001/jamaoncol.2021.2318.','PubMed PMID 34323922'),
+5:('Tsakiridis T, et al. Metformin in Combination With Chemoradiotherapy in Locally Advanced Non-Small Cell Lung Cancer: The OCOG-ALMERA Randomized Clinical Trial. JAMA Oncol. 2021;7:1333-1341. doi:10.1001/jamaoncol.2021.2328.','Publisher full text'),
+6:('DailyMed. SPORANOX (itraconazole) capsules. U.S. prescribing information updated July 13, 2026. Boxed warning, hepatic effects, cardiac disease and drug interactions. Accessed October 12, 2026.','Official prescribing information')}
+EMAIL='''Subject: NSCLC evidence discussion for our appointment on [date]
+
+Dear Dr. [name],
+
+I have attached a short NSCLC physician discussion packet for our appointment. Could we discuss whether any of these repurposing studies apply to my diagnosis and proposed treatment?
+
+I would especially appreciate your assessment of:
+- whether the study populations and treatment settings match my case;
+- what the findings do and do not support;
+- whether a specialist opinion or clinical trial inquiry would be useful within the treatment timeline you recommend.
+
+If an approach is unsuitable, please help me understand the specific reason and record our agreed next steps. I intend to keep planned care on schedule unless we agree otherwise.
+
+Thank you,
+[Patient name]
+
+Attachment: remaprx-nsclc-physician-packet-sample.pdf
+
+Sample note: This preview edition is AI-assisted and has not received independent clinical approval.
+'''
+
+manuscript={'edition':'1.0','date':'2026-10-12','pages':PAGES,'references':REFS,'email':EMAIL}
+(BATCH/'manuscript.json').write_text(json.dumps(manuscript,ensure_ascii=False,indent=2)+'\n')
+(OUT/'physician-email-template.txt').write_text(EMAIL)
+
+doc=Document(); sec=doc.sections[0]
+sec.page_width=Inches(8.5);sec.page_height=Inches(11)
+sec.top_margin=Inches(.67);sec.bottom_margin=Inches(.62);sec.left_margin=Inches(.72);sec.right_margin=Inches(.72)
+sec.header_distance=Inches(.27);sec.footer_distance=Inches(.28)
+for name in ['Normal','Title','Subtitle','Heading 1','Heading 2','Header','Footer']:
+ s=doc.styles[name];s.font.name='Calibri';s.font.color.rgb=RGBColor(0,0,0)
+ s._element.get_or_add_rPr().append(OxmlElement('w:lang'));s._element.rPr[-1].set(qn('w:val'),'en-US')
+normal=doc.styles['Normal'];normal.font.size=Pt(10.5)
+normal.paragraph_format.space_after=Pt(7);normal.paragraph_format.line_spacing=1.08
+for name,size in [('Title',24),('Subtitle',12),('Heading 1',13),('Heading 2',11)]:
+ s=doc.styles[name];s.font.size=Pt(size);s.font.bold=name in ['Title','Heading 1','Heading 2'];s.paragraph_format.space_before=Pt(11 if name.startswith('Heading') else 0);s.paragraph_format.space_after=Pt(6);s.paragraph_format.keep_with_next=True
+s=doc.styles['Title'];s.paragraph_format.space_after=Pt(5)
+header=sec.header.paragraphs[0];header.text='RemapRx';header.runs[0].bold=True;header.runs[0].font.size=Pt(10)
+f=sec.footer.paragraphs[0];f.paragraph_format.space_before=Pt(0)
+f.alignment=WD_ALIGN_PARAGRAPH.RIGHT
+run=f.add_run('Sample 1.0  |  Clinical review pending  |  ');run.font.size=Pt(8);run.font.color.rgb=RGBColor.from_string('555555')
+field=OxmlElement('w:fldSimple');field.set(qn('w:instr'),'PAGE');f._p.append(field)
+
+def hyperlink(p,text,url=None,anchor=None,sup=False):
+ h=OxmlElement('w:hyperlink')
+ if url:h.set(qn('r:id'),p.part.relate_to(url,RT.HYPERLINK,is_external=True))
+ if anchor:h.set(qn('w:anchor'),anchor)
+ r=OxmlElement('w:r');pr=OxmlElement('w:rPr');c=OxmlElement('w:color');c.set(qn('w:val'),'1736F5');pr.append(c)
+ if sup:v=OxmlElement('w:vertAlign');v.set(qn('w:val'),'superscript');pr.append(v)
+ r.append(pr);t=OxmlElement('w:t');t.text=text;r.append(t);h.append(r);p._p.append(h)
+
+def addtext(p,text):
+ for part in re.split(r'(\{\{[0-9,]+\}\})',text):
+  if part.startswith('{{'):
+   ns=part[2:-2].split(',')
+   for j,n in enumerate(ns):
+    if j:p.add_run(',').font.superscript=True
+    hyperlink(p,'['+n+']',anchor='ref'+n,sup=True)
+  else:p.add_run(part)
+
+for pi,page in enumerate(PAGES):
+ if pi:doc.add_page_break()
+ p=doc.add_paragraph(page['title'],'Title')
+ doc.add_paragraph(page['subtitle'],'Subtitle')
+ num=0
+ for kind,text in page['blocks']:
+  if kind=='h':doc.add_paragraph(text,'Heading 1')
+  elif kind=='ref':
+   n=text;p=doc.add_paragraph();p.paragraph_format.space_after=Pt(3);p.paragraph_format.keep_with_next=True
+   bm=OxmlElement('w:bookmarkStart');bm.set(qn('w:id'),str(n));bm.set(qn('w:name'),'ref'+str(n));p._p.append(bm)
+   addtext(p,f'[{n}] '+REFS[n][0]);p.runs[0].font.size=Pt(9.5)
+   end=OxmlElement('w:bookmarkEnd');end.set(qn('w:id'),str(n));p._p.append(end)
+   p2=doc.add_paragraph();p2.paragraph_format.space_after=Pt(9);hyperlink(p2,REFS[n][1],url=SOURCES[n-1]['url'])
+  elif kind=='lines':
+   for _ in range(text):
+    p=doc.add_paragraph('____________________________________________________________________________');p.paragraph_format.space_after=Pt(5);p.paragraph_format.space_before=Pt(2);p.runs[0].font.color.rgb=RGBColor.from_string('808080');p.runs[0].font.size=Pt(9)
+  else:
+   p=doc.add_paragraph();addtext(p,text)
+   if kind in ['small','meta']:
+    p.paragraph_format.space_after=Pt(7)
+    for r in p.runs:r.font.size=Pt(9);r.font.color.rgb=RGBColor.from_string('444444')
+    if kind=='meta':p.runs[0].bold=True
+   if kind=='field':p.paragraph_format.space_after=Pt(10)
+   if kind=='number':
+    num+=1;p.paragraph_format.left_indent=Inches(.18);p.paragraph_format.first_line_indent=Inches(-.18);p.runs[0].text=f'{num}. '+p.runs[0].text
+   if kind=='prompt':p.paragraph_format.space_after=Pt(1)
+# Remove implicit title borders and theme colors.
+for s in [doc.styles[n] for n in ['Title','Subtitle','Heading 1','Heading 2']]:
+ for node in list(s._element.iter(qn('w:color'))):
+  for att in ['themeColor','themeTint','themeShade']:node.attrib.pop(qn('w:'+att),None)
+  node.set(qn('w:val'),'000000')
+ for node in list(s._element.iter(qn('w:pBdr'))):node.getparent().remove(node)
+doc.core_properties.title='Non-small-cell lung cancer physician discussion packet'
+doc.core_properties.author='RemapRx sample preparation'
+doc.core_properties.subject='Selected-source educational sample for physician discussion'
+doc.core_properties.keywords='NSCLC, physician discussion, sample, clinical review pending'
+path=OUT/'remaprx-nsclc-physician-packet-sample.docx';doc.save(path)
+# Keep source-dependent claims and exact-source mapping separately from the manuscript.
+claims=[]
+for page in PAGES:
+ for kind,tx in page['blocks']:
+  if kind=='claim':
+   nums=sorted(set(int(n) for group in re.findall(r'\{\{([0-9,]+)\}\}',tx) for n in group.split(',')))
+   claims.append({'id':f'PP-CLAIM-{len(claims)+1:02}','text':re.sub(r'\{\{.*?\}\}','',tx),'sourceIds':[SOURCES[n-1]['id'] for n in nums],'locator':' | '.join('; '.join(SOURCES[n-1]['locators']) for n in nums),'kind':'editorial_interpretation' if any(k in tx for k in ['do not establish','cannot establish','weigh against','argue against']) else 'reported_result' if any(SOURCES[n-1]['tier']=='PRIMARY' for n in nums) else 'context','verification':'source_checked','humanReview':'pending'})
+candidate={'schemaVersion':'1.0','scope':'selected-source NSCLC product sample','sources':SOURCES,'claims':claims}
+(BATCH/'candidate.json').write_text(json.dumps(candidate,indent=2)+'\n')
+print(path);print('Authored',len(PAGES),'planned pages;',len(claims),'source-bound claim blocks')

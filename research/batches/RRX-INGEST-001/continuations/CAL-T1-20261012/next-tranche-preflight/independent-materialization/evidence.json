@@ -1,0 +1,170 @@
+{
+  "actualArchiveBytesReverifiedByThisReview": false,
+  "auditor": "codex/identity_review",
+  "author": "codex/pipeline_audit",
+  "boundedLimitations": [
+    "Only synthetic archive execution was authorized in this code review. The materializer must reverify actual parent/member bytes and pages under its eventual exact GP.",
+    "The implementation is per-file atomic, not a multi-file transaction. Hard interruption may leave exact members, temporary files or a stale lock; manual integrator disposition is documented.",
+    "This report does not finalize a clinical source assignment, approve source reading or constitute scientific acceptance."
+  ],
+  "canonicalReportId": "P-STOPCOVID2-2023",
+  "codeSha256": "ab1c52b729891760d5a8c37f305c2453a9a74b8e76457d19847361b696cbf424",
+  "gpRecorded": false,
+  "inputs": [
+    {
+      "actual": "ab1c52b729891760d5a8c37f305c2453a9a74b8e76457d19847361b696cbf424",
+      "expected": "ab1c52b729891760d5a8c37f305c2453a9a74b8e76457d19847361b696cbf424",
+      "matches": true,
+      "path": "research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/next-tranche-preflight/materialize_zip.py"
+    },
+    {
+      "actual": "98d9785b20072ec4281c8066341eaf99d12893543165444359aaf1bf5168ce31",
+      "expected": "98d9785b20072ec4281c8066341eaf99d12893543165444359aaf1bf5168ce31",
+      "matches": true,
+      "path": "research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/next-tranche-preflight/materialization-plan.schema.json"
+    },
+    {
+      "actual": "c5174f0b3316501cef05a59ce05564c73e8b9e2e2de2d0f6aa2e21e18f92dd29",
+      "expected": "c5174f0b3316501cef05a59ce05564c73e8b9e2e2de2d0f6aa2e21e18f92dd29",
+      "matches": true,
+      "path": "research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/next-tranche-preflight/test_materialize_zip.py"
+    },
+    {
+      "actual": "57a2e98be12c25ff6858cbb7e275a02cbc216cd656c308a22c2add8b655c3b78",
+      "expected": "57a2e98be12c25ff6858cbb7e275a02cbc216cd656c308a22c2add8b655c3b78",
+      "matches": true,
+      "path": "research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/next-tranche-preflight/inventory.py"
+    },
+    {
+      "actual": "8b1e37fb7b578fc1660f7541aa288f8e916e6a05b14341c63a74943137b760bf",
+      "expected": "8b1e37fb7b578fc1660f7541aa288f8e916e6a05b14341c63a74943137b760bf",
+      "matches": true,
+      "path": "research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/next-tranche-preflight/test_inventory.py"
+    },
+    {
+      "actual": "bf4844bd6e4178b8f07a6b8235d1ffb572e7b49048e469ec35f7bf0a32ca7326",
+      "expected": "bf4844bd6e4178b8f07a6b8235d1ffb572e7b49048e469ec35f7bf0a32ca7326",
+      "matches": true,
+      "path": "research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/next-tranche-preflight/ZIP-MEMBER-CONTRACT-DRAFT.md"
+    },
+    {
+      "actual": "59f76dd846d2dab9af9de6c0d5a1d3c03415cdb320c4c29d226b1bef03d072e5",
+      "expected": "59f76dd846d2dab9af9de6c0d5a1d3c03415cdb320c4c29d226b1bef03d072e5",
+      "matches": true,
+      "path": "research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/next-tranche-preflight/MATERIALIZATION.md"
+    },
+    {
+      "actual": "87853397d07cded85672412a757d8d7ee698f1ac602ac48de30f3407c9c32558",
+      "expected": "87853397d07cded85672412a757d8d7ee698f1ac602ac48de30f3407c9c32558",
+      "matches": true,
+      "path": "research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/next-tranche-preflight/archive-members.prospective.json"
+    },
+    {
+      "actual": "2879abb65805070bafa1914ca904be1708fde460770cfcfb990f0c6f1f03c870",
+      "expected": "2879abb65805070bafa1914ca904be1708fde460770cfcfb990f0c6f1f03c870",
+      "matches": true,
+      "path": "research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/next-tranche-preflight/metadata-inventory.json"
+    },
+    {
+      "actual": "70394939b3711f7049fb73af61fc32cf0d7c56eab442dff82d79362f1667d7b0",
+      "expected": "70394939b3711f7049fb73af61fc32cf0d7c56eab442dff82d79362f1667d7b0",
+      "matches": true,
+      "path": "scripts/research_ingest/cli.py"
+    },
+    {
+      "actual": "de9b8d26d7356663ee385cb7a0c80661620ff70810984b78632564d4f38d2994",
+      "expected": "de9b8d26d7356663ee385cb7a0c80661620ff70810984b78632564d4f38d2994",
+      "matches": true,
+      "path": "scripts/research_ingest/contracts.py"
+    },
+    {
+      "actual": "67fcc67e78013678c851fea9b933facd03361ab399cba302b4ee3ce18125d1c2",
+      "expected": "67fcc67e78013678c851fea9b933facd03361ab399cba302b4ee3ce18125d1c2",
+      "matches": true,
+      "path": "scripts/research_ingest/requirements.txt"
+    },
+    {
+      "actual": "36c103a973f80b67a36c6311ab0282fcca4b4f4b34358f6149e8e2dc5416a2e3",
+      "expected": "36c103a973f80b67a36c6311ab0282fcca4b4f4b34358f6149e8e2dc5416a2e3",
+      "matches": true,
+      "path": "AGENTS.md"
+    },
+    {
+      "actual": "b92ec05cc55eed1292c5c6403359a6ed86288130273846e401cb7f382747c514",
+      "expected": "b92ec05cc55eed1292c5c6403359a6ed86288130273846e401cb7f382747c514",
+      "matches": true,
+      "path": "docs/PROJECT-RULES.md"
+    },
+    {
+      "actual": "4a52570d87c8538751507a1fe153a9ef19530a3c7af3bda87cdf2b4266587b70",
+      "expected": "017b5f48d4ab9c41a43384be9dc6a23cefbc89b91e0c8018b8424b106656dbd6",
+      "matches": false,
+      "path": "docs/RULE-CHANGELOG.md"
+    },
+    {
+      "actual": "a7cf38d81c3ea49e1c20ce928bae21fbf211b2bff3ebe47c898d325ecb2799fe",
+      "expected": "a7cf38d81c3ea49e1c20ce928bae21fbf211b2bff3ebe47c898d325ecb2799fe",
+      "matches": true,
+      "path": "docs/RESEARCH-INGEST.md"
+    }
+  ],
+  "manifestSha256": "87853397d07cded85672412a757d8d7ee698f1ac602ac48de30f3407c9c32558",
+  "memberCount": 3,
+  "metadataInventorySha256": "2879abb65805070bafa1914ca904be1708fde460770cfcfb990f0c6f1f03c870",
+  "metadataLineageExact": true,
+  "pageCountFromPinnedMetadata": 92,
+  "performedImport": false,
+  "planSchemaValid": true,
+  "planSha256": "1956a8ac99ea3fbf406bbfbf97bcb26114a18c9069dccfa2055cee43d6072d18",
+  "privateBoundaryObserved": {
+    "allThreeMembersAndReceiptAbsent": true,
+    "enclosingGitRoot": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing",
+    "ignored": true,
+    "outsideApplication": true,
+    "trackedFiles": 0
+  },
+  "realArchiveMaterialized": false,
+  "realSourceBodyRead": false,
+  "reviewChecks": {
+    "archiveReportAssetLineage": "PASS",
+    "completeArchiveSetBeforeWrites": "PASS",
+    "exactReadinessAndControlPins": "PASS",
+    "exclusiveLockAndNoClobber": "PASS",
+    "externalIgnoredUntrackedPrivateBoundary": "PASS",
+    "noScientificReadinessOrReleasePromotion": "PASS",
+    "partialFailureAndApprovedRetry": "PASS",
+    "receiptBindingAndMemberReadback": "PASS",
+    "sizeCrcHashPageCountAndMediaAgreement": "PASS",
+    "sourceAndDestinationPathValidation": "PASS",
+    "unchangedRepeat": "PASS"
+  },
+  "reviewedAt": "2026-10-12T14:22:01.007211+00:00",
+  "schemaSha256": "98d9785b20072ec4281c8066341eaf99d12893543165444359aaf1bf5168ce31",
+  "schemaVersion": "remaprx-independent-materialization-code-evidence-v1",
+  "scope": "independent_code_and_proposed_plan_review_only",
+  "testSha256": "c5174f0b3316501cef05a59ce05564c73e8b9e2e2de2d0f6aa2e21e18f92dd29",
+  "tests": [
+    {
+      "command": "PYTHONPATH='<bundled evidence/python>' python3 -m unittest discover -s research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/next-tranche-preflight -p test_materialize_zip.py -v",
+      "exitCode": 0,
+      "scope": "synthetic PDFs and archive only; actual pdfinfo used; no real materialization",
+      "secondsReported": 1.458,
+      "status": "PASS",
+      "tests": 9
+    },
+    {
+      "checks": [
+        "existing hard-linked PDF held without writes",
+        "existing FIFO held without blocking",
+        "success receipt with missing member held without silent repair"
+      ],
+      "command": "PYTHONPATH='<bundled evidence/python>' python3 research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/next-tranche-preflight/independent-materialization/test_boundaries.py",
+      "exitCode": 0,
+      "scriptSha256": "d6f6077696430547b07728f7056ff92f3b64624c24eb69f8a22f68a10ee88a57",
+      "secondsReported": 0.496,
+      "status": "PASS",
+      "tests": 3
+    }
+  ],
+  "uncompressedBytesFromPinnedMetadata": 4833965
+}

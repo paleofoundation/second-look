@@ -1,0 +1,152 @@
+/* Shared article reading layer. Import after destination article styles.
+   The hero tags retain the source treatment; the outer ArticleHero owns spacing. */
+.omr-theme .omr-hero-actions {
+  display:flex;
+  flex-wrap:wrap;
+  align-items:flex-start;
+  gap:.6rem;
+  min-width:0;
+  max-width:100%;
+  margin:0;
+  padding:0;
+}
+.omr-theme .omr-hero-actions__save {
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:.35rem;
+  min-width:0;
+  max-width:100%;
+}
+.omr-theme .omr-hero-actions .research-hero__center-tag,
+.omr-theme .omr-hero-actions__save > :is(a,button) {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:.4rem;
+  min-width:44px;
+  min-height:44px;
+  max-width:100%;
+  padding:.625rem;
+  border:0;
+  border-radius:.25rem;
+  background:rgba(0,0,0,.4);
+  color:#fff;
+  font:inherit;
+  font-size:1rem;
+  line-height:1.4;
+  text-align:left;
+  text-decoration:none;
+  white-space:normal;
+  overflow-wrap:anywhere;
+}
+.omr-theme .omr-hero-actions .research-hero__center-tag:hover,
+.omr-theme .omr-hero-actions__save > :is(a,button):hover {
+  background:rgba(0,0,0,.3);
+  color:#fff;
+  text-decoration:none;
+}
+.omr-theme .omr-hero-actions :is(a,button):focus-visible {
+  outline:2px solid var(--omr-accent,#f6bc45);
+  outline-offset:3px;
+}
+.omr-theme .omr-hero-action__icon {
+  display:inline-flex;
+  flex:0 0 auto;
+  align-items:center;
+}
+.omr-theme .omr-hero-action__icon > :is(svg,img) {
+  display:block;
+  width:18px;
+  height:18px;
+}
+.omr-theme .omr-hero-actions__save [role="status"] {
+  max-width:100%;
+  color:inherit;
+  font-size:.8rem;
+  line-height:1.5;
+  overflow-wrap:anywhere;
+}
+
+/* Narrative section shells remain ordinary prose. These direct-child selectors
+   do not reset nested notices, evidence tables, panels or native FAQ details. */
+.omr-theme .research-content__center > .article-section:not(.notice):not([role="alert"]),
+.omr-theme .research-content__center > .reader-snapshot:not(.notice):not([role="alert"]) {
+  padding:0;
+  border:0;
+  border-radius:0;
+  background:transparent;
+  box-shadow:none;
+}
+.omr-theme .research-content__center > .reader-snapshot > .reader-change {
+  margin-top:1.5rem;
+  padding:0;
+  border:0;
+  background:transparent;
+  box-shadow:none;
+}
+.omr-theme .research-content__center > .article-section > p:not(.small):not(.notice):not(.eyebrow) {
+  font-size:18px;
+  line-height:1.85;
+  margin-bottom:1.5rem;
+}
+@media (max-width:575px) {
+  .omr-theme .research-content__center > .article-section > p:not(.small):not(.notice):not(.eyebrow) {
+    font-size:17px;
+    line-height:1.8;
+  }
+}
+
+/* Opt-in citation class also reaches portalled panels. Generic footnotes keep
+   their own formatting; table specificity overrides the inherited sup reset. */
+sup.citation-sup,
+.omr-theme sup.citation-sup,
+.omr-theme .evidence-table .table-sub sup.citation-sup {
+  display:inline;
+  font-size:.72em;
+  line-height:0;
+  vertical-align:super;
+  position:static;
+  inset:auto;
+  top:auto;
+}
+
+.omr-theme .bibliography { list-style:decimal outside; padding-left:1.5rem; }
+.omr-theme .bibliography > li { display:list-item; padding-left:.25rem; }
+.omr-theme .bibliography > li::marker { font-weight:600; color:var(--omr-main); }
+.omr-theme .outcome-filter-disclosure { margin:1rem 0; border-block:1px solid var(--border); padding:.8rem 0; }
+.omr-theme .outcome-filter-disclosure > summary { cursor:pointer; min-height:44px; align-content:center; }
+.omr-theme .outcome-filter-disclosure .outcome-filters { margin-top:.8rem; }
+.omr-theme .save-control { display:inline-flex; flex-direction:column; align-items:flex-start; gap:.35rem; }
+
+/* Universal wrappers retain ordinary prose; authored subsection anchors survive. */
+.omr-theme .universal-section > .article-subsection {
+ margin-block:1.5rem;
+ padding:0;
+ border:0;
+ background:transparent;
+}
+.omr-theme .article-subsection > p { font-size:18px; line-height:1.85; }
+.omr-theme .universal-section > .article-section { padding:0; border:0; background:transparent; }
+@media (max-width:575px) {
+ .omr-theme .article-subsection > p { font-size:17px; line-height:1.8; }
+}
+.omr-theme .entry-content a.wiki-link,
+.omr-theme .context-rail a.wiki-link,
+.omr-theme .research-panel a.wiki-link {
+  color: var(--omr-link);
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, currentColor 45%, transparent);
+  text-underline-offset: .16em;
+}
+.omr-theme a.wiki-link:hover,
+.omr-theme a.wiki-link:focus-visible {
+  text-decoration-color: currentColor;
+}
+.omr-theme .related-reading { margin: 0 0 28px; }
+.omr-theme .related-reading h2 { font-family: Inter, Arial, sans-serif; font-size: 16px; line-height: 1.5; margin: 0 0 12px; padding-bottom: 10px; border-bottom: 1px solid var(--omr-border, #dce3e6); }
+.omr-theme .related-reading ul { list-style: none; padding: 0; margin: 0; }
+.omr-theme .related-reading li + li { margin-top: 6px; }
+.omr-theme .related-reading a { display: block; padding: 8px 0; color: var(--omr-link); font-size: 14px; line-height: 1.6; text-decoration: none; overflow-wrap: anywhere; }
+.omr-theme .related-reading a:hover, .omr-theme .related-reading a:focus-visible { text-decoration: underline; text-underline-offset: 3px; }
+@media (max-width: 991px) { .omr-theme .related-reading a { padding: 11px 0; font-size: 16px; } }

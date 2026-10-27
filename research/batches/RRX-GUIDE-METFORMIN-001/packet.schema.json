@@ -1,0 +1,246 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:remaprx:rrx-guide-metformin-001:coverage:1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "batchId",
+    "date",
+    "scope",
+    "sources"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0"
+    },
+    "batchId": {
+      "const": "RRX-GUIDE-METFORMIN-001"
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "scope": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 24,
+      "maxItems": 24,
+      "items": {
+        "type": "object",
+        "required": [
+          "sourceId",
+          "title",
+          "url",
+          "doi",
+          "pmid",
+          "chapter",
+          "tier",
+          "existingAppAccess",
+          "familyGroup",
+          "familyStatus",
+          "matches",
+          "localAssetHashes",
+          "integrityState",
+          "preservedCorrection",
+          "existingReviewEnvelope",
+          "synthesisIds",
+          "newFullAssessment",
+          "humanReview",
+          "release",
+          "questionCoverage",
+          "nextAction",
+          "assetMatchConfidence"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "sourceId": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "doi": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "pmid": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "chapter": {
+            "type": "string"
+          },
+          "tier": {
+            "type": "string"
+          },
+          "existingAppAccess": {
+            "type": "string"
+          },
+          "familyGroup": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "familyStatus": {
+            "type": "string"
+          },
+          "matches": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "recordId",
+                "sourceId",
+                "canonicalId",
+                "matchBasis",
+                "title",
+                "doi",
+                "pmid",
+                "states",
+                "previousScientificDisposition",
+                "assets"
+              ],
+              "properties": {
+                "matchBasis": {
+                  "enum": [
+                    "existing_source_identity",
+                    "exact_doi_metadata_match",
+                    "exact_pmid_metadata_match",
+                    "explicit_title_url_lead_requires_source_identity_check"
+                  ]
+                },
+                "assets": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "expectedSha256",
+                      "observedSha256",
+                      "status"
+                    ],
+                    "properties": {
+                      "expectedSha256": {
+                        "type": "string",
+                        "pattern": "^[a-f0-9]{64}$"
+                      },
+                      "observedSha256": {
+                        "type": [
+                          "string",
+                          "null"
+                        ],
+                        "pattern": "^[a-f0-9]{64}$"
+                      },
+                      "status": {
+                        "enum": [
+                          "hash_verified",
+                          "missing_or_mismatch"
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "localAssetHashes": {
+            "type": "array"
+          },
+          "integrityState": {
+            "type": "string"
+          },
+          "preservedCorrection": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "existingReviewEnvelope": {
+            "type": "object"
+          },
+          "synthesisIds": {
+            "type": "array"
+          },
+          "newFullAssessment": {
+            "const": "not_completed"
+          },
+          "humanReview": {
+            "const": "pending"
+          },
+          "release": {
+            "const": "not_released"
+          },
+          "questionCoverage": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "status",
+                "requiredInputs",
+                "nextAction"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "id": {
+                  "enum": [
+                    "Q01",
+                    "Q02",
+                    "Q03",
+                    "Q04",
+                    "Q05",
+                    "Q06",
+                    "Q07",
+                    "Q08",
+                    "Q09",
+                    "Q10",
+                    "Q11",
+                    "Q12",
+                    "Q13",
+                    "Q14",
+                    "Q15"
+                  ]
+                },
+                "status": {
+                  "const": "not_checked"
+                },
+                "requiredInputs": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "minItems": 1
+                },
+                "nextAction": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            }
+          },
+          "nextAction": {
+            "type": "string"
+          },
+          "assetMatchConfidence": {
+            "enum": [
+              "exact_metadata_identity_not_source_verified",
+              "title_or_url_lead_requires_adjudication",
+              "no_matched_local_asset"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

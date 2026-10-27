@@ -1,0 +1,494 @@
+{
+  "schemaVersion": "remaprx-calibration-source-observations-v1",
+  "status": "HOLD_CURRENT_PLAN",
+  "contentStatus": "PASS_BOUNDED_TEXT_AND_BINDINGS",
+  "auditor": "codex/identity_review",
+  "reviewedAt": "2026-10-12T11:59:55.840172+00:00",
+  "candidateSha256": "d4de221136ff49e978162058ea02dbdc0a60740fdc444a728728f287adf3ddc8",
+  "bindingsSha256": "e2165de7e611f4f784da284a8845950c80be2296cf106ef78a77ee4e100520e8",
+  "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+  "scope": "Independent verification of qualitative source text, locators and private parent-page mechanism proposals; not full-source completion or release.",
+  "unresolvedControl": "Source plan 1.2 pins changed project contracts/core; a current GP plan and exact candidate binding are required before final acceptance.",
+  "identity": {
+    "doi": "10.1016/j.ccr.2010.02.027",
+    "pmid": "20385363",
+    "pmcid": "PMC4039177",
+    "version": "PMC accepted author manuscript; no final-publisher/current-integrity equivalence asserted"
+  },
+  "sourceRead": [
+    "front matter",
+    "summary",
+    "introduction",
+    "all main Results and Discussion paragraphs",
+    "all seven figure legends",
+    "all experimental methods",
+    "supplement notice",
+    "significance",
+    "acknowledgements",
+    "publisher disclaimer"
+  ],
+  "sourceNotInspected": [
+    "remote figure pixels",
+    "separate supplemental PDF",
+    "external correction/retraction/version pages",
+    "cited background papers"
+  ],
+  "nativeLocatorCheck": {
+    "method": "Independent standard-library HTMLParser ID stack; require exact XPath anchor plus whitespace-normalized quote substring",
+    "occurrences": 67,
+    "checks": [
+      {
+        "pointer": "/results/0/source_locators/0",
+        "anchor": "P12",
+        "quoteSha256": "c61ab3e6bae5c161ff88de6a020a8ee7d021754b5ac40d83c669b956855ac9cb"
+      },
+      {
+        "pointer": "/results/0/source_locators/1",
+        "anchor": "P48",
+        "quoteSha256": "78f6e265d21a49aacd70cacdf53c81ccc84b60b370d3178c6795356e4f42061b"
+      },
+      {
+        "pointer": "/results/0/source_locators/2",
+        "anchor": "P29",
+        "quoteSha256": "0673209b898aac6abd08cf539277c61103512c3781ddd5252684d2f9b51a34a8"
+      },
+      {
+        "pointer": "/results/1/source_locators/0",
+        "anchor": "P13",
+        "quoteSha256": "f99fae5275011a252f028f7eed8231492b108a35846b6b466940280231112dac"
+      },
+      {
+        "pointer": "/results/1/source_locators/1",
+        "anchor": "P14",
+        "quoteSha256": "bcc18cfe2fb62a66ed7115094ce8cd3dd72b8585a2b275fd9ea8a6e067d708aa"
+      },
+      {
+        "pointer": "/results/1/source_locators/2",
+        "anchor": "P28",
+        "quoteSha256": "9b8875494046abc5375f80a4328d6be973c277b833b6e9508198b743a2b9ec9f"
+      },
+      {
+        "pointer": "/results/2/source_locators/0",
+        "anchor": "P18",
+        "quoteSha256": "f71c3d76d8af2a390b6b2621dd79ed440171ac8e261a3ce53f9974d12e0e775d"
+      },
+      {
+        "pointer": "/results/2/source_locators/1",
+        "anchor": "P36",
+        "quoteSha256": "e23d0b68aeaa33731c04717cc0af781c2ed04c7d1baa2f917bfc422429cc187b"
+      },
+      {
+        "pointer": "/results/2/source_locators/2",
+        "anchor": "P36",
+        "quoteSha256": "6de5e5b002e308da1efd50dd28afb405d46883726eb09bf5b6ee188559fe65bf"
+      },
+      {
+        "pointer": "/claims/0/source_locators/0",
+        "anchor": "P12",
+        "quoteSha256": "c61ab3e6bae5c161ff88de6a020a8ee7d021754b5ac40d83c669b956855ac9cb"
+      },
+      {
+        "pointer": "/claims/0/source_locators/1",
+        "anchor": "P48",
+        "quoteSha256": "78f6e265d21a49aacd70cacdf53c81ccc84b60b370d3178c6795356e4f42061b"
+      },
+      {
+        "pointer": "/claims/1/source_locators/0",
+        "anchor": "P14",
+        "quoteSha256": "bcc18cfe2fb62a66ed7115094ce8cd3dd72b8585a2b275fd9ea8a6e067d708aa"
+      },
+      {
+        "pointer": "/claims/2/source_locators/0",
+        "anchor": "P15",
+        "quoteSha256": "aa73010e6f6188c1cc7a08be85a5baa515d6653c2060a57565b85d54500dd9fd"
+      },
+      {
+        "pointer": "/claims/2/source_locators/1",
+        "anchor": "P18",
+        "quoteSha256": "f71c3d76d8af2a390b6b2621dd79ed440171ac8e261a3ce53f9974d12e0e775d"
+      },
+      {
+        "pointer": "/claims/2/source_locators/2",
+        "anchor": "P22",
+        "quoteSha256": "72190244497c8f8551d4329a4e6fb63a013fcbe3e04fae07e20357198224ec3f"
+      },
+      {
+        "pointer": "/claims/3/source_locators/0",
+        "anchor": "P18",
+        "quoteSha256": "f71c3d76d8af2a390b6b2621dd79ed440171ac8e261a3ce53f9974d12e0e775d"
+      },
+      {
+        "pointer": "/claims/3/source_locators/1",
+        "anchor": "P36",
+        "quoteSha256": "e23d0b68aeaa33731c04717cc0af781c2ed04c7d1baa2f917bfc422429cc187b"
+      },
+      {
+        "pointer": "/claims/3/source_locators/2",
+        "anchor": "P36",
+        "quoteSha256": "6de5e5b002e308da1efd50dd28afb405d46883726eb09bf5b6ee188559fe65bf"
+      },
+      {
+        "pointer": "/questions/0/source_locators/0",
+        "anchor": "P5",
+        "quoteSha256": "8820792596684f944eb9f5d04aabc38cc1a2b55bf1acf2598215e256506f880a"
+      },
+      {
+        "pointer": "/questions/0/source_locators/1",
+        "anchor": "P15",
+        "quoteSha256": "aa73010e6f6188c1cc7a08be85a5baa515d6653c2060a57565b85d54500dd9fd"
+      },
+      {
+        "pointer": "/questions/0/source_locators/2",
+        "anchor": "P18",
+        "quoteSha256": "f71c3d76d8af2a390b6b2621dd79ed440171ac8e261a3ce53f9974d12e0e775d"
+      },
+      {
+        "pointer": "/questions/1/source_locators/0",
+        "anchor": "P23",
+        "quoteSha256": "d17bedf931f2dfb6f3dc0f5885ac041c5d4cff525f09784c2658ea3073517e6f"
+      },
+      {
+        "pointer": "/questions/1/source_locators/1",
+        "anchor": "P11",
+        "quoteSha256": "f3cc502ddd049764459572945cd726fff179ac04329de7b4d47eaddc7cc5b75a"
+      },
+      {
+        "pointer": "/questions/1/source_locators/2",
+        "anchor": "P33",
+        "quoteSha256": "3a50a7e9403ef3ece1211f4706b2cefdc1b71e73b8bdef53a608c78b3e767d4c"
+      },
+      {
+        "pointer": "/questions/1/source_locators/3",
+        "anchor": "P36",
+        "quoteSha256": "e23d0b68aeaa33731c04717cc0af781c2ed04c7d1baa2f917bfc422429cc187b"
+      },
+      {
+        "pointer": "/questions/2/source_locators/0",
+        "anchor": "P26",
+        "quoteSha256": "39c3317520726c7b0ca9778ea6c92a25852f4b023a0d0671b99ebeae301af1b9"
+      },
+      {
+        "pointer": "/questions/2/source_locators/1",
+        "anchor": "P29",
+        "quoteSha256": "0673209b898aac6abd08cf539277c61103512c3781ddd5252684d2f9b51a34a8"
+      },
+      {
+        "pointer": "/questions/2/source_locators/2",
+        "anchor": "P36",
+        "quoteSha256": "e23d0b68aeaa33731c04717cc0af781c2ed04c7d1baa2f917bfc422429cc187b"
+      },
+      {
+        "pointer": "/questions/3/source_locators/0",
+        "anchor": "P24",
+        "quoteSha256": "7d9d3f2fcb9f351a0b6e845b233575e3fd85ca0b8ba8c1b4682859ab259faeb9"
+      },
+      {
+        "pointer": "/questions/3/source_locators/1",
+        "anchor": "P11",
+        "quoteSha256": "f3cc502ddd049764459572945cd726fff179ac04329de7b4d47eaddc7cc5b75a"
+      },
+      {
+        "pointer": "/questions/3/source_locators/2",
+        "anchor": "P36",
+        "quoteSha256": "6de5e5b002e308da1efd50dd28afb405d46883726eb09bf5b6ee188559fe65bf"
+      },
+      {
+        "pointer": "/questions/4/source_locators/0",
+        "anchor": "P5",
+        "quoteSha256": "8820792596684f944eb9f5d04aabc38cc1a2b55bf1acf2598215e256506f880a"
+      },
+      {
+        "pointer": "/questions/4/source_locators/1",
+        "anchor": "P12",
+        "quoteSha256": "c61ab3e6bae5c161ff88de6a020a8ee7d021754b5ac40d83c669b956855ac9cb"
+      },
+      {
+        "pointer": "/questions/4/source_locators/2",
+        "anchor": "P13",
+        "quoteSha256": "f99fae5275011a252f028f7eed8231492b108a35846b6b466940280231112dac"
+      },
+      {
+        "pointer": "/questions/4/source_locators/3",
+        "anchor": "P18",
+        "quoteSha256": "f71c3d76d8af2a390b6b2621dd79ed440171ac8e261a3ce53f9974d12e0e775d"
+      },
+      {
+        "pointer": "/questions/4/source_locators/4",
+        "anchor": "P17",
+        "quoteSha256": "51642c439784701e25b0a9838912f6bcbe05172742c12408e3f8e86fb0c39846"
+      },
+      {
+        "pointer": "/questions/5/source_locators/0",
+        "anchor": "P12",
+        "quoteSha256": "c61ab3e6bae5c161ff88de6a020a8ee7d021754b5ac40d83c669b956855ac9cb"
+      },
+      {
+        "pointer": "/questions/5/source_locators/1",
+        "anchor": "P13",
+        "quoteSha256": "f99fae5275011a252f028f7eed8231492b108a35846b6b466940280231112dac"
+      },
+      {
+        "pointer": "/questions/5/source_locators/2",
+        "anchor": "P18",
+        "quoteSha256": "f71c3d76d8af2a390b6b2621dd79ed440171ac8e261a3ce53f9974d12e0e775d"
+      },
+      {
+        "pointer": "/questions/6/source_locators/0",
+        "anchor": "P36",
+        "quoteSha256": "e23d0b68aeaa33731c04717cc0af781c2ed04c7d1baa2f917bfc422429cc187b"
+      },
+      {
+        "pointer": "/questions/6/source_locators/1",
+        "anchor": "P36",
+        "quoteSha256": "6de5e5b002e308da1efd50dd28afb405d46883726eb09bf5b6ee188559fe65bf"
+      },
+      {
+        "pointer": "/questions/6/source_locators/2",
+        "anchor": "P33",
+        "quoteSha256": "3a50a7e9403ef3ece1211f4706b2cefdc1b71e73b8bdef53a608c78b3e767d4c"
+      },
+      {
+        "pointer": "/questions/6/source_locators/3",
+        "anchor": "P30",
+        "quoteSha256": "d4cefca120c9ff25b47bbf1a549a2f515fd416be88196049aa419a2bd6712b4d"
+      },
+      {
+        "pointer": "/questions/7/source_locators/0",
+        "anchor": "P26",
+        "quoteSha256": "39c3317520726c7b0ca9778ea6c92a25852f4b023a0d0671b99ebeae301af1b9"
+      },
+      {
+        "pointer": "/questions/7/source_locators/1",
+        "anchor": "P19",
+        "quoteSha256": "cabd59b18769526774bb6602ed5501edd956f49211369bcf3c00491be35dccd9"
+      },
+      {
+        "pointer": "/questions/8/source_locators/0",
+        "anchor": "P8",
+        "quoteSha256": "0af7abd182e3d01873d18dd7bde5662a77bf0fb58450e95ccffae648fce374b6"
+      },
+      {
+        "pointer": "/questions/8/source_locators/1",
+        "anchor": "P33",
+        "quoteSha256": "3a50a7e9403ef3ece1211f4706b2cefdc1b71e73b8bdef53a608c78b3e767d4c"
+      },
+      {
+        "pointer": "/questions/8/source_locators/2",
+        "anchor": "P30",
+        "quoteSha256": "d4cefca120c9ff25b47bbf1a549a2f515fd416be88196049aa419a2bd6712b4d"
+      },
+      {
+        "pointer": "/questions/8/source_locators/3",
+        "anchor": "P16",
+        "quoteSha256": "b4f0a791239933e82882fa85c9372365091cae4e9876737e4d161fa950591c68"
+      },
+      {
+        "pointer": "/questions/8/source_locators/4",
+        "anchor": "P12",
+        "quoteSha256": "c61ab3e6bae5c161ff88de6a020a8ee7d021754b5ac40d83c669b956855ac9cb"
+      },
+      {
+        "pointer": "/questions/8/source_locators/5",
+        "anchor": "P48",
+        "quoteSha256": "78f6e265d21a49aacd70cacdf53c81ccc84b60b370d3178c6795356e4f42061b"
+      },
+      {
+        "pointer": "/questions/9/source_locators/0",
+        "anchor": "P18",
+        "quoteSha256": "f71c3d76d8af2a390b6b2621dd79ed440171ac8e261a3ce53f9974d12e0e775d"
+      },
+      {
+        "pointer": "/questions/9/source_locators/1",
+        "anchor": "P19",
+        "quoteSha256": "cabd59b18769526774bb6602ed5501edd956f49211369bcf3c00491be35dccd9"
+      },
+      {
+        "pointer": "/questions/9/source_locators/2",
+        "anchor": "P22",
+        "quoteSha256": "72190244497c8f8551d4329a4e6fb63a013fcbe3e04fae07e20357198224ec3f"
+      },
+      {
+        "pointer": "/questions/10/source_locators/0",
+        "anchor": "P17",
+        "quoteSha256": "51642c439784701e25b0a9838912f6bcbe05172742c12408e3f8e86fb0c39846"
+      },
+      {
+        "pointer": "/questions/10/source_locators/1",
+        "anchor": "P33",
+        "quoteSha256": "3a50a7e9403ef3ece1211f4706b2cefdc1b71e73b8bdef53a608c78b3e767d4c"
+      },
+      {
+        "pointer": "/questions/11/source_locators/0",
+        "anchor": "P42",
+        "quoteSha256": "7d47fd1de6b83d49935dcce22ab531b8a2ef678992b2548b6f49bd1ab1d9e095"
+      },
+      {
+        "pointer": "/questions/11/source_locators/1",
+        "anchor": "P42",
+        "quoteSha256": "ebe808d96ae19641b571cdb284c1b81a0264907e156f85eecc0e906263623897"
+      },
+      {
+        "pointer": "/questions/12/source_locators/0",
+        "anchor": "P41",
+        "quoteSha256": "35fe473d434d5c68d92bf260cef2711c0593b690fa9dc1a6ff2e70c9e85e8e86"
+      },
+      {
+        "pointer": "/questions/12/source_locators/1",
+        "anchor": "SM",
+        "quoteSha256": "338e8cf7cff7d64ec4af5ced4cf55efa34dd1ba1003cf73739a6b12659648e1f"
+      },
+      {
+        "pointer": "/questions/13/source_locators/0",
+        "anchor": "P12",
+        "quoteSha256": "c61ab3e6bae5c161ff88de6a020a8ee7d021754b5ac40d83c669b956855ac9cb"
+      },
+      {
+        "pointer": "/questions/13/source_locators/1",
+        "anchor": "P14",
+        "quoteSha256": "bcc18cfe2fb62a66ed7115094ce8cd3dd72b8585a2b275fd9ea8a6e067d708aa"
+      },
+      {
+        "pointer": "/questions/13/source_locators/2",
+        "anchor": "P18",
+        "quoteSha256": "f71c3d76d8af2a390b6b2621dd79ed440171ac8e261a3ce53f9974d12e0e775d"
+      },
+      {
+        "pointer": "/questions/14/source_locators/0",
+        "anchor": "P14",
+        "quoteSha256": "bcc18cfe2fb62a66ed7115094ce8cd3dd72b8585a2b275fd9ea8a6e067d708aa"
+      },
+      {
+        "pointer": "/questions/14/source_locators/1",
+        "anchor": "P15",
+        "quoteSha256": "aa73010e6f6188c1cc7a08be85a5baa515d6653c2060a57565b85d54500dd9fd"
+      },
+      {
+        "pointer": "/questions/14/source_locators/2",
+        "anchor": "P18",
+        "quoteSha256": "f71c3d76d8af2a390b6b2621dd79ed440171ac8e261a3ce53f9974d12e0e775d"
+      },
+      {
+        "pointer": "/questions/14/source_locators/3",
+        "anchor": "P22",
+        "quoteSha256": "72190244497c8f8551d4329a4e6fb63a013fcbe3e04fae07e20357198224ec3f"
+      }
+    ]
+  },
+  "resultReview": [
+    {
+      "id": "RRX-CAL07-R01",
+      "finding": "Supported as a reported cell-localization contrast after 6 hours; direct molecular binding is not established.",
+      "sourceAnchors": [
+        "P12",
+        "P48",
+        "P29"
+      ]
+    },
+    {
+      "id": "RRX-CAL07-R02",
+      "finding": "Supported as a reported negative fluorescent-ligand competition result after 4–6 hours following 2 days induction; negative competition cannot prove another direct binding site.",
+      "sourceAnchors": [
+        "P13",
+        "P14",
+        "P28"
+      ]
+    },
+    {
+      "id": "RRX-CAL07-R03",
+      "finding": "Supported as author-reported mouse BCC growth suppression versus vehicle within stated treatment/follow-up times; clustered tumors cannot be counted as independent animals or human studies.",
+      "sourceAnchors": [
+        "P18",
+        "P36"
+      ]
+    }
+  ],
+  "auditedResultIds": [
+    "RRX-CAL07-R01",
+    "RRX-CAL07-R02",
+    "RRX-CAL07-R03"
+  ],
+  "auditedClaimIds": [
+    "RRX-CAL07-CL01",
+    "RRX-CAL07-CL02",
+    "RRX-CAL07-CL03",
+    "RRX-CAL07-CL04"
+  ],
+  "auditedScopedClaimIds": [],
+  "questionInputs": {
+    "exactQ01toQ15": true,
+    "locatedCandidate": 5,
+    "partial": 10,
+    "notReportedInferredFromUncheckedSource": false,
+    "fullReviewComplete": false
+  },
+  "bindingReview": [
+    {
+      "bindingId": "BIND-CAL07-SMO",
+      "resultIds": [
+        "RRX-CAL07-R01"
+      ],
+      "claimIds": [
+        "RRX-CAL07-CL01"
+      ],
+      "scopeMatchesSourceResult": true,
+      "formulationAndRouteSupported": true,
+      "preclinicalLimitsRetained": true,
+      "targets": [
+        {
+          "guideId": "G-DRUG-D07",
+          "entityId": "D07",
+          "route": "/drugs/itraconazole"
+        }
+      ],
+      "questionRoutes": []
+    },
+    {
+      "bindingId": "BIND-CAL07-BCC",
+      "resultIds": [
+        "RRX-CAL07-R03"
+      ],
+      "claimIds": [
+        "RRX-CAL07-CL04"
+      ],
+      "scopeMatchesSourceResult": true,
+      "formulationAndRouteSupported": true,
+      "preclinicalLimitsRetained": true,
+      "targets": [
+        {
+          "guideId": "G-DRUG-D07",
+          "entityId": "D07",
+          "route": "/drugs/itraconazole"
+        },
+        {
+          "guideId": "G-CONDITION-C19",
+          "entityId": "C19",
+          "route": "/conditions/basal-cell-carcinoma"
+        }
+      ],
+      "questionRoutes": []
+    }
+  ],
+  "numericScope": {
+    "typedNumericalResults": 0,
+    "methodTimingAndQuotedSourceNumbersMatchText": true,
+    "plotEffectSizesAndUncertaintyVerified": false,
+    "publicNumericalClaimsApproved": 0
+  },
+  "preservedLimits": [
+    "Direct itraconazole–Smoothened binding was explicitly not demonstrated.",
+    "Source P12 Figure 3E reference conflicts with matching Figure 4E caption; discrepancy retained.",
+    "Serum bioassay combines itraconazole and hydroxy-itraconazole effects.",
+    "Mouse tumor and animal observation units differ and have changing follow-up.",
+    "Source preclinical exposure comparisons do not establish human anticancer benefit or safety."
+  ],
+  "counts": {
+    "reportsPartiallyVerified": 1,
+    "sourceResultsChecked": 3,
+    "sourceClaimsChecked": 4,
+    "fullScientificReviewsCompleted": 0,
+    "humanReviewed": 0,
+    "released": 0
+  },
+  "performedImport": false,
+  "scientificReleaseApproved": false
+}

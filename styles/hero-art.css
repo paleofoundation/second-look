@@ -1,0 +1,54 @@
+/* RemapRx topic illustration layout. Subject artwork remains fully visible. */
+.omr-theme .research-hero--topic-art .research-hero__wrapper {
+  display: grid;
+  grid-template-columns: minmax(230px, 25%) minmax(0, 1fr) 280px;
+  min-height: 500px;
+}
+.omr-theme .research-hero--topic-art .research-hero__left {
+  display: flex;
+  max-width: none;
+  padding: 32px 24px;
+  justify-content: center;
+}
+.omr-theme .research-hero--topic-art .research-hero__left-image {
+  width: 100%;
+  height: auto;
+  max-width: 360px;
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+}
+.omr-theme .research-hero--topic-art .research-hero__center {
+  padding: 48px 40px;
+}
+.omr-theme .research-hero--topic-art .research-hero__right {
+  max-width: none;
+  padding: 36px 24px;
+}
+@media screen and (max-width: 1199px) {
+  .omr-theme .research-hero--topic-art .research-hero__wrapper {
+    grid-template-columns: minmax(220px, 30%) minmax(0, 1fr);
+    min-height: auto;
+  }
+  .omr-theme .research-hero--topic-art .research-hero__right {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px 32px;
+  }
+  .omr-theme .research-hero--topic-art .research-hero__author {
+    grid-row: span 2;
+    align-self: start;
+  }
+}
+@media screen and (max-width: 767px) {
+  .omr-theme .research-hero--topic-art .research-hero__wrapper { grid-template-columns: minmax(0, 1fr); }
+  .omr-theme .research-hero--topic-art .research-hero__left { padding: 16px 24px; }
+  .omr-theme .research-hero--topic-art .research-hero__left-image { width: 200px; }
+  .omr-theme .research-hero--topic-art .research-hero__center { padding: 28px 24px 32px; }
+  .omr-theme .research-hero--topic-art .research-hero__right { display: flex; }
+}
+@media print {
+  .omr-theme .research-hero--topic-art .research-hero__wrapper { display: block; }
+  .omr-theme .research-hero--topic-art .research-hero__left { display: none; }
+}

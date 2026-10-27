@@ -1,0 +1,179 @@
+{
+  "schemaVersion": "remaprx-gap-gp-review-v1",
+  "reviewer": "corpus_audit / independent planning reviewer",
+  "reviewedAt": "2026-10-12T12:11:25.644817+00:00",
+  "status": "PASS",
+  "scope": "Prospective manual Grok acquisition handoff and receipt structure for two exact verified version/integrity gaps; no execution, transfer, source scientific acceptance or public mutation.",
+  "planId": "RRX-GAP-001-1.1",
+  "planSha256": "090f891fbf0d1031f4c4331490d348bdfa9d642334495650caf1093820623df4",
+  "inputChecks": [
+    {
+      "path": "research/batches/RRX-INGEST-001/calibration/audits/held-packets.json",
+      "sha256": "48d420e9ef21f1ce4e9d4ee58550e40174ec68c3ffd65348d0b4f42642f09039",
+      "observedSha256": "48d420e9ef21f1ce4e9d4ee58550e40174ec68c3ffd65348d0b4f42642f09039",
+      "matched": true
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/calibration/candidates/CAL-04/diagnostic.json",
+      "sha256": "17ea825f84e73d20232ff7af2c8323abeb2d924cc88962c2e227e87fd4957166",
+      "observedSha256": "17ea825f84e73d20232ff7af2c8323abeb2d924cc88962c2e227e87fd4957166",
+      "matched": true
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/calibration/candidates/CAL-05/diagnostic.json",
+      "sha256": "d8a01644c1b7ac7993a6585c1ef38a98ba26fad7721db9fc30759e25c143abd5",
+      "observedSha256": "d8a01644c1b7ac7993a6585c1ef38a98ba26fad7721db9fc30759e25c143abd5",
+      "matched": true
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/calibration/candidates/CAL-06/diagnostic.json",
+      "sha256": "16cc387a4e750203e012b2c072443b7ed17681fec50fbb9c1611dae85f1438f6",
+      "observedSha256": "16cc387a4e750203e012b2c072443b7ed17681fec50fbb9c1611dae85f1438f6",
+      "matched": true
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/grok/RRX-GAP-001/CHATGPT-INGEST-PROMPT.template.txt",
+      "sha256": "0daa0940bbf0403f70d654d9ae539007cd3b8e71cad26c41431e053793a4c39f",
+      "observedSha256": "0daa0940bbf0403f70d654d9ae539007cd3b8e71cad26c41431e053793a4c39f",
+      "matched": true
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/grok/RRX-GAP-001/REQUEST.txt",
+      "sha256": "b9ac2b4bbe9c9733105257a82d1c856685b6ec601d2d833090fe97d1febd5bf1",
+      "observedSha256": "b9ac2b4bbe9c9733105257a82d1c856685b6ec601d2d833090fe97d1febd5bf1",
+      "matched": true
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/grok/RRX-GAP-001/candidate.schema.json",
+      "sha256": "bd979414a0325bf52695435e96ffb4a290bd64be815db5dc09b5c62e6aa7f674",
+      "observedSha256": "bd979414a0325bf52695435e96ffb4a290bd64be815db5dc09b5c62e6aa7f674",
+      "matched": true
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/grok/RRX-GAP-001/existing-inventory.json",
+      "sha256": "c8a8d9b640115d1ea133ae58ea85622aacddc4dd1115f3286c24abf25709a5f1",
+      "observedSha256": "c8a8d9b640115d1ea133ae58ea85622aacddc4dd1115f3286c24abf25709a5f1",
+      "matched": true
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/grok/RRX-GAP-001/results.schema.json",
+      "sha256": "2eef6845104eb74a7a80c3ca967acd9cb9b41313ab390e439ba516b2ce5b602b",
+      "observedSha256": "2eef6845104eb74a7a80c3ca967acd9cb9b41313ab390e439ba516b2ce5b602b",
+      "matched": true
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/grok/RRX-GAP-001/return.schema.json",
+      "sha256": "e400e616ba0f6e6fc0d47794f943dbcddc0c360938560f01eb70a475cef9d049",
+      "observedSha256": "e400e616ba0f6e6fc0d47794f943dbcddc0c360938560f01eb70a475cef9d049",
+      "matched": true
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/grok/RRX-GAP-001/review-inputs.schema.json",
+      "sha256": "1f9aa9bc02b708d5caed88261b7d1ddfb75c5923525939c29a081130a3ffdd67",
+      "observedSha256": "1f9aa9bc02b708d5caed88261b7d1ddfb75c5923525939c29a081130a3ffdd67",
+      "matched": true
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/grok/RRX-GAP-001/review-questions-and-inputs.json",
+      "sha256": "02edeacc65227e5feeaf25b6c9568be406b48024216f83d2dda2ccfcc5042f3b",
+      "observedSha256": "02edeacc65227e5feeaf25b6c9568be406b48024216f83d2dda2ccfcc5042f3b",
+      "matched": true
+    },
+    {
+      "path": "scripts/research_ingest/cli.py",
+      "sha256": "70394939b3711f7049fb73af61fc32cf0d7c56eab442dff82d79362f1667d7b0",
+      "observedSha256": "70394939b3711f7049fb73af61fc32cf0d7c56eab442dff82d79362f1667d7b0",
+      "matched": true
+    },
+    {
+      "path": "scripts/research_ingest/contracts.py",
+      "sha256": "de9b8d26d7356663ee385cb7a0c80661620ff70810984b78632564d4f38d2994",
+      "observedSha256": "de9b8d26d7356663ee385cb7a0c80661620ff70810984b78632564d4f38d2994",
+      "matched": true
+    },
+    {
+      "path": "scripts/research_ingest/requirements.txt",
+      "sha256": "67fcc67e78013678c851fea9b933facd03361ab399cba302b4ee3ce18125d1c2",
+      "observedSha256": "67fcc67e78013678c851fea9b933facd03361ab399cba302b4ee3ce18125d1c2",
+      "matched": true
+    },
+    {
+      "path": "scripts/research_ingest/source_validation.py",
+      "sha256": "b5af770bba265faa3135679c86c2a9a2b57d2cb139db5c61fc5b72ea9e283868",
+      "observedSha256": "b5af770bba265faa3135679c86c2a9a2b57d2cb139db5c61fc5b72ea9e283868",
+      "matched": true
+    },
+    {
+      "path": "scripts/verify-research-gap-return.py",
+      "sha256": "6de895074618f56d906556dcbf78ab48780c6929d097ca12dba125082f1593aa",
+      "observedSha256": "6de895074618f56d906556dcbf78ab48780c6929d097ca12dba125082f1593aa",
+      "matched": true
+    },
+    {
+      "path": "tests/research_ingest/test_gap_receipt.py",
+      "sha256": "be660fcfed363e138743f0eb55728c930c3b9267897723d4ceb2a92b2d64c810",
+      "observedSha256": "be660fcfed363e138743f0eb55728c930c3b9267897723d4ceb2a92b2d64c810",
+      "matched": true
+    }
+  ],
+  "checks": [
+    {
+      "id": "exact_input_pins",
+      "status": "PASS",
+      "detail": "All18 input bytes match the exact current plan before and after review."
+    },
+    {
+      "id": "scope_original_restrictions_and_ownership",
+      "status": "PASS",
+      "detail": "Only ACTIV6 journal-version recovery and REVIVE notice/linked replacement/companions; seven exact backend/query pairs with actual timestamps. Historical F01/F02 remain closed, quarantines remain, overlapping reports do not become independent studies. Grok supplies manual downloadable attachment; RemapRx integrator verifies and separately plans source-pinned extraction."
+    },
+    {
+      "id": "gap_and_continuity_evidence",
+      "status": "PASS",
+      "detail": "Pinned CAL04/05/06 diagnostics and independently authored held-packets audit support these exact gaps. Existing4331 record appearances remain deduplication metadata, not scientific counts. No fresh external notice claim is made."
+    },
+    {
+      "id": "executable_review_input_contract",
+      "status": "PASS",
+      "detail": "One flat row per canonical report/question/required field:67 fields covering Q01-Q15. Schema required keys and statuses exactly match the provided map; field enums, pending verification, source/report/hash provenance, unique asset sourceIds, missingness and companion duplicate checks align with REQUEST and receiver."
+    },
+    {
+      "id": "transfer_checksum_contract",
+      "status": "PASS",
+      "detail": "Internal filled prompt binds manifest/return-schema/review-input-schema hashes and exact plan/count. Completed outer ZIP hash is explicitly supplied only in an external reply or sidecar; no self-referential checksum requirement remains."
+    },
+    {
+      "id": "schema_validity",
+      "status": "PASS",
+      "detail": "All four schemas pass Draft202012 definition checks. Candidate/results are explicitly downstream shape references; newly received source bytes require a separately pinned extraction contract and readiness."
+    },
+    {
+      "id": "receiver_regressions",
+      "status": "PASS",
+      "command": "PYTHONPATH=<RESEARCH>/work/evidence/python:tests/research_ingest python3 -m unittest tests.research_ingest.test_gap_receipt -v",
+      "testsRun": 13,
+      "detail": "Independently executed all13 tests: nonempty report, complete field coverage, companions, duplicates, missingness/partial locators, source hash, manifest/prompt hashes/count, empty explicit gaps, query coverage, traversal, stale plan and corrupted source hash."
+    },
+    {
+      "id": "previous_hold_preserved",
+      "status": "PASS",
+      "detail": "Original1.0 plan SHA6a98c63f80f0b272e0ddd0adac857c16c6ade3a2a9dc90dbe847e898944740da and HOLD SHA4e58725050ed83d6d6ae447feab1b76c72ad1217cac858dcb94baf30fcf7b19b remain exact in history."
+    }
+  ],
+  "resolvedFindings": [
+    "GPGAP-01: supplied map, REQUEST, executable flat row schema and receiver now agree.",
+    "GPGAP-02: outer archive hash moved to external reply/sidecar, internal prompt uses manifest and schema hashes."
+  ],
+  "limitations": [
+    "Actual outgoing ZIP packaging and manual transfer have not occurred in this review; root must verify packaged filenames/member counts/hashes and record matching GP readiness before handoff.",
+    "PASS_RECEIPT_ONLY checks structural transfer/provenance assertions, not exact printed identity, lawful-access assertions, quoted numeric truth or scientific review; independent source checking remains mandatory.",
+    "No search, retrieval, Grok dispatch, source extraction, canonical import, condition-completeness assessment, human approval or publication occurred."
+  ],
+  "nextAction": "Integrator records exact-plan GP readiness, packages actual outgoing input ZIP plus request and checksums, then supplies manual attachment instructions. On return, verify downloaded archive before preparing source-pinned extraction.",
+  "acquisitionPerformed": false,
+  "dispatchPerformed": false,
+  "canonicalMutation": false,
+  "humanApproval": false,
+  "scientificApproval": false,
+  "publicationPerformed": false
+}

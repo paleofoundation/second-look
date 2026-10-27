@@ -9,7 +9,7 @@ function readingParagraphs(guide: Guide) {
       .filter(section => section.label.trim().toLowerCase() !== 'connections')
       .flatMap(section => [section.paragraph, ...(section.questions || []).map(question => question.answer)]),
     ...guide.faqs.map(faq => faq.answer), mechanism?.originalAction?.text,
-    mechanism?.summary?.text, ...(mechanism?.questions || []).map(question => question.text),
+    mechanism?.summary?.text, ...(mechanism?.pathways || []).map(pathway => pathway.text), ...(mechanism?.rationales || []).flatMap(row => [row.condition, row.rationale.text, row.tested.text, row.limits.text]), ...(mechanism?.questions || []).map(question => question.text),
   ].filter((text): text is string => !!text);
 }
 

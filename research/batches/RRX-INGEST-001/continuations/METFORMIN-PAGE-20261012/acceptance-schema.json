@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "candidateDigest": "7eedd85fa2f2640b89a4e97ff1af18bbb15a765ef9542950df5b037a75d3c1f3",
+  "targets": [
+    "data/content.json",
+    "data/public-content.json",
+    "data/reader-evidence.json",
+    "data/public-reader-evidence.json",
+    "data/outcome-registry.json",
+    "editorial/parent-guide-scopes.json",
+    "editorial/evidence-assessments.json",
+    "data/public-evidence-assessments.json",
+    "editorial/synthesis-identity-map.json",
+    "data/article-updates.json"
+  ],
+  "inputHashes": {
+    "candidate/data/content.json": "42ba518fab66452da685fcf46236027f03d4ab45c0a860d679b1e7b5687655a4",
+    "candidate/data/public-content.json": "f513f35f1a829a28297db4d549303290e947cf535e1782203cbb71e0d2098cac",
+    "candidate/data/reader-evidence.json": "3b97754bb68fc802146a6f1cd59faad3e63f0d36307c045c4f82b543411b8e53",
+    "candidate/data/public-reader-evidence.json": "d6f8c4bf30679070f00caee89d7c44ff0193f19c4891be86b7cf7d3073c62d1d",
+    "candidate/data/outcome-registry.json": "af9726dd1c691ff6d23ab26ffe1332fedf15af63a127f79709ba35cff06d8566",
+    "candidate/editorial/parent-guide-scopes.json": "1598abd3a6833cb51b54970a32b42ab5b04bbfda33953e5eecbfb8690878eb93",
+    "candidate/editorial/evidence-assessments.json": "f7ead7a93823347b40b3af8a4e3b128e83be28626fb231dc7ceed9135bd09acc",
+    "candidate/data/public-evidence-assessments.json": "b6029f133cc17da6f91d8ecb16d3e991c8ab29ce1924f1780d811de4c09961eb",
+    "candidate/editorial/synthesis-identity-map.json": "fa27e2003ae2f5b18f9338cb9288b0bd4a91afa5a6c5d8311e35a51c946e022e",
+    "candidate/data/article-updates.json": "204080148644309554876c5e9bd800d1f8edb28716d9d064a3a949babfdbb037"
+  },
+  "checks": {
+    "schemaVerified": true
+  },
+  "evidence": [
+    {
+      "path": "validate-result.json",
+      "sha256": "3c87682972906cb207ffdfce676c10678fcb0a1dc0d9eb44bdf2fe20c9090f86"
+    },
+    {
+      "path": "independent-integration-audit.json",
+      "sha256": "ef35fb99b515083dce5882469f207673c2ee51e084a3fe480d17b9b7c232373d"
+    }
+  ],
+  "author": "codex/root",
+  "auditor": "codex/pipeline_audit"
+}

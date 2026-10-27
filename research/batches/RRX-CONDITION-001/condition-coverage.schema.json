@@ -1,0 +1,1168 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:remaprx:condition-coverage:1.0",
+  "title": "Condition-first discovery, candidate disposition and coverage",
+  "description": "Prospective private planning/coverage records only. Structural validation does not confer GP readiness, scientific acceptance or release. Canonical results, syntheses, Q01-Q15 reviews and source assets remain in their existing contracts.",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": "RRX-CONDITION-COVERAGE-1.0"
+    },
+    "planId": {
+      "const": "RRX-CONDITION-001-1.0"
+    },
+    "planSha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "conditionId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "conditionBriefPath": {
+      "type": "string",
+      "minLength": 1
+    },
+    "conditionBriefSha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "protocolVersion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "searches": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/search"
+      },
+      "minItems": 0
+    },
+    "candidates": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/candidate"
+      },
+      "minItems": 0
+    },
+    "coverage": {
+      "$ref": "#/$defs/coverage"
+    },
+    "recordPurpose": {
+      "enum": [
+        "private_candidate",
+        "synthetic_example"
+      ],
+      "description": "Synthetic examples must never enter production evidence, inventories or source counts."
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "planId",
+    "planSha256",
+    "conditionId",
+    "conditionBriefPath",
+    "conditionBriefSha256",
+    "protocolVersion",
+    "searches",
+    "candidates",
+    "coverage",
+    "recordPurpose"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "source": {
+      "type": "object",
+      "properties": {
+        "sourceId": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "canonicalReportId": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https?://"
+        },
+        "sourceRole": {
+          "enum": [
+            "primary_report",
+            "registry",
+            "protocol",
+            "supplement",
+            "review",
+            "official_context",
+            "notice",
+            "unclassified"
+          ]
+        },
+        "sourceVersion": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "sourceSha256": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "locator": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "identityState": {
+          "enum": [
+            "unverified_lead",
+            "verified_identity",
+            "acquired_version",
+            "inspected_version"
+          ]
+        },
+        "missingnessReason": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        }
+      },
+      "required": [
+        "sourceId",
+        "canonicalReportId",
+        "url",
+        "sourceRole",
+        "sourceVersion",
+        "sourceSha256",
+        "locator",
+        "identityState",
+        "missingnessReason"
+      ],
+      "additionalProperties": false,
+      "description": "Exact original source links and known identities; null IDs/locators are allowed for unresolved discovery leads. Scientific claims still require the referenced canonical extraction contract.",
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "identityState": {
+                "const": "inspected_version"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "sourceId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "sourceSha256": {
+                "type": "string",
+                "pattern": "^[a-f0-9]{64}$"
+              },
+              "locator": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "search": {
+      "type": "object",
+      "properties": {
+        "searchId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "conditionId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "queryFamily": {
+          "enum": [
+            "condition_wide",
+            "repurposing_terms",
+            "registry",
+            "candidate_followup",
+            "safety_and_contrary",
+            "backward_citations",
+            "forward_citations"
+          ]
+        },
+        "backend": {
+          "type": "string",
+          "minLength": 1
+        },
+        "entryUrl": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https?://"
+        },
+        "query": {
+          "type": "string",
+          "minLength": 1
+        },
+        "filters": {
+          "type": "object",
+          "properties": {
+            "dateRange": {
+              "type": "string",
+              "minLength": 1
+            },
+            "languages": {
+              "type": "string",
+              "minLength": 1
+            },
+            "designs": {
+              "type": "string",
+              "minLength": 1
+            },
+            "other": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "dateRange",
+            "languages",
+            "designs",
+            "other"
+          ],
+          "additionalProperties": false
+        },
+        "status": {
+          "enum": [
+            "planned",
+            "executed",
+            "failed",
+            "inaccessible"
+          ]
+        },
+        "executedAt": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "cutoff": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "resultCount": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "candidateIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "reportIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "logLocator": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        },
+        "nextAction": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        }
+      },
+      "required": [
+        "searchId",
+        "conditionId",
+        "queryFamily",
+        "backend",
+        "entryUrl",
+        "query",
+        "filters",
+        "status",
+        "executedAt",
+        "cutoff",
+        "resultCount",
+        "candidateIds",
+        "reportIds",
+        "logLocator",
+        "limitations",
+        "nextAction"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "executed"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "executedAt": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "cutoff": {
+                "type": "string",
+                "format": "date"
+              },
+              "logLocator": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "planned"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "executedAt": {
+                "type": "null"
+              },
+              "cutoff": {
+                "type": "null"
+              },
+              "resultCount": {
+                "type": "null"
+              },
+              "candidateIds": {
+                "maxItems": 0
+              },
+              "reportIds": {
+                "maxItems": 0
+              }
+            }
+          }
+        }
+      ],
+      "description": "For citation chasing, query records the actual seed report/citation and direction. Executed resultCount may remain null only when the backend did not expose a count; explain in limitations."
+    },
+    "synthesisReference": {
+      "type": "object",
+      "properties": {
+        "synthesisId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "outcomeId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "scopeSha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "canonicalRecordPath": {
+          "type": "string",
+          "minLength": 1
+        },
+        "humanDirectness": {
+          "enum": [
+            "direct_human",
+            "indirect_human",
+            "preclinical_only",
+            "not_assessed"
+          ]
+        },
+        "clinicalInterpretation": {
+          "enum": [
+            "beneficial",
+            "null",
+            "harmful",
+            "mixed",
+            "inconclusive",
+            "not_assessed"
+          ],
+          "description": "Clinical interpretation for this exact scoped synthesis; distinct from measured increase/decrease/no detected change, which remains in canonical results."
+        }
+      },
+      "required": [
+        "synthesisId",
+        "outcomeId",
+        "scopeSha256",
+        "canonicalRecordPath",
+        "clinicalInterpretation",
+        "humanDirectness"
+      ],
+      "additionalProperties": false,
+      "description": "A pointer to one exact canonical scoped synthesis, not a new drug-wide verdict or copied estimate. Values must match that record. Certainty, results, safety and sources remain canonical."
+    },
+    "candidate": {
+      "type": "object",
+      "properties": {
+        "candidateId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "conditionId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "genericName": {
+          "type": "string",
+          "minLength": 1
+        },
+        "canonicalDrugId": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "portfolioMembership": {
+          "enum": [
+            "initial_portfolio",
+            "existing_addition",
+            "additional_candidate",
+            "identity_pending"
+          ]
+        },
+        "searchIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "sourceRefs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/source"
+          },
+          "minItems": 1
+        },
+        "conditionRelevance": {
+          "enum": [
+            "exact",
+            "indirect",
+            "context_only",
+            "not_relevant",
+            "not_checked"
+          ]
+        },
+        "scopeNotes": {
+          "type": "string",
+          "minLength": 1
+        },
+        "repurposing": {
+          "type": "object",
+          "properties": {
+            "classification": {
+              "enum": [
+                "repurposed_candidate",
+                "established_treatment_context",
+                "not_a_repurposed_drug",
+                "unresolved"
+              ]
+            },
+            "originalUse": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "proposedUse": {
+              "type": "string",
+              "minLength": 1
+            },
+            "regulatoryStatus": {
+              "enum": [
+                "verified",
+                "not_checked",
+                "unresolved"
+              ]
+            },
+            "jurisdiction": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "checkedAt": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "format": "date-time"
+            },
+            "sourceRefs": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/source"
+              },
+              "minItems": 0
+            },
+            "reason": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "classification",
+            "originalUse",
+            "proposedUse",
+            "regulatoryStatus",
+            "jurisdiction",
+            "checkedAt",
+            "sourceRefs",
+            "reason"
+          ],
+          "additionalProperties": false,
+          "allOf": [
+            {
+              "if": {
+                "properties": {
+                  "classification": {
+                    "const": "repurposed_candidate"
+                  }
+                }
+              },
+              "then": {
+                "properties": {
+                  "originalUse": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "sourceRefs": {
+                    "minItems": 1
+                  }
+                }
+              }
+            },
+            {
+              "if": {
+                "properties": {
+                  "regulatoryStatus": {
+                    "const": "verified"
+                  }
+                }
+              },
+              "then": {
+                "properties": {
+                  "jurisdiction": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "checkedAt": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "sourceRefs": {
+                    "minItems": 1
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "disposition": {
+          "enum": [
+            "pending_screening",
+            "included_for_assessment",
+            "context_only",
+            "excluded",
+            "duplicate",
+            "identity_hold",
+            "source_access_gap"
+          ]
+        },
+        "dispositionReason": {
+          "type": "string",
+          "minLength": 1
+        },
+        "duplicateOf": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "synthesisRefs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/synthesisReference"
+          },
+          "minItems": 0
+        },
+        "reviewIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "safetyInputState": {
+          "enum": [
+            "source_mapped",
+            "partial",
+            "not_extracted",
+            "not_accessible",
+            "not_applicable"
+          ]
+        },
+        "nextAction": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "evidenceBases": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "human_clinical",
+              "preclinical_only",
+              "registry_only",
+              "context_only",
+              "not_assessed"
+            ]
+          },
+          "uniqueItems": true,
+          "minItems": 1,
+          "description": "All available evidence bases; clinical evidence does not remove preclinical, registry or context records."
+        }
+      },
+      "required": [
+        "candidateId",
+        "conditionId",
+        "genericName",
+        "canonicalDrugId",
+        "portfolioMembership",
+        "searchIds",
+        "sourceRefs",
+        "conditionRelevance",
+        "scopeNotes",
+        "repurposing",
+        "disposition",
+        "dispositionReason",
+        "duplicateOf",
+        "evidenceBases",
+        "synthesisRefs",
+        "reviewIds",
+        "safetyInputState",
+        "nextAction"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "disposition": {
+                "const": "duplicate"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "duplicateOf": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "disposition": {
+                "const": "included_for_assessment"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "conditionRelevance": {
+                "enum": [
+                  "exact",
+                  "indirect"
+                ]
+              },
+              "repurposing": {
+                "properties": {
+                  "classification": {
+                    "const": "repurposed_candidate"
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "disposition": {
+                "enum": [
+                  "pending_screening",
+                  "identity_hold",
+                  "source_access_gap"
+                ]
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "nextAction": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "portfolioMembership": {
+                "enum": [
+                  "initial_portfolio",
+                  "existing_addition"
+                ]
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "canonicalDrugId": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "count": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "basis": {
+          "type": "string",
+          "minLength": 1
+        },
+        "missingReason": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        }
+      },
+      "required": [
+        "value",
+        "basis",
+        "missingReason"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "value": {
+                "type": "null"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "missingReason": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "missingReason": {
+                "type": "null"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "gap": {
+      "type": "object",
+      "properties": {
+        "gapId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "enum": [
+            "brief",
+            "query",
+            "search",
+            "screening",
+            "identity",
+            "repurposing_eligibility",
+            "source_access",
+            "extraction",
+            "review",
+            "synthesis",
+            "safety",
+            "source_integrity",
+            "other"
+          ]
+        },
+        "candidateIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "sourceIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        },
+        "blocksScopedCompletion": {
+          "type": "boolean"
+        },
+        "nextAction": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "gapId",
+        "kind",
+        "candidateIds",
+        "sourceIds",
+        "reason",
+        "blocksScopedCompletion",
+        "nextAction"
+      ],
+      "additionalProperties": false
+    },
+    "coverage": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "enum": [
+            "not_searched",
+            "planned",
+            "searching",
+            "searches_complete",
+            "assessment_partial",
+            "complete_for_declared_protocol"
+          ]
+        },
+        "searchScope": {
+          "type": "string",
+          "minLength": 1
+        },
+        "searchIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "candidateIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "stageCounts": {
+          "type": "object",
+          "properties": {
+            "discoveredCandidates": {
+              "allOf": [
+                {
+                  "$ref": "#/$defs/count"
+                }
+              ],
+              "description": "Counting unit: unique candidate identities. Never infer this count from another stage."
+            },
+            "screenedCandidates": {
+              "allOf": [
+                {
+                  "$ref": "#/$defs/count"
+                }
+              ],
+              "description": "Counting unit: unique candidate identities. Never infer this count from another stage."
+            },
+            "eligibleCandidates": {
+              "allOf": [
+                {
+                  "$ref": "#/$defs/count"
+                }
+              ],
+              "description": "Counting unit: unique candidate identities. Never infer this count from another stage."
+            },
+            "acquiredReports": {
+              "allOf": [
+                {
+                  "$ref": "#/$defs/count"
+                }
+              ],
+              "description": "Counting unit: canonical reports with verified source receipt. Never infer this count from another stage."
+            },
+            "extractedReports": {
+              "allOf": [
+                {
+                  "$ref": "#/$defs/count"
+                }
+              ],
+              "description": "Counting unit: canonical reports meeting declared extraction scope. Never infer this count from another stage."
+            },
+            "verifiedReports": {
+              "allOf": [
+                {
+                  "$ref": "#/$defs/count"
+                }
+              ],
+              "description": "Counting unit: canonical reports with accepted source audit. Never infer this count from another stage."
+            },
+            "appraisedSyntheses": {
+              "allOf": [
+                {
+                  "$ref": "#/$defs/count"
+                }
+              ],
+              "description": "Counting unit: exact scoped syntheses. Never infer this count from another stage."
+            },
+            "humanReviewedSyntheses": {
+              "allOf": [
+                {
+                  "$ref": "#/$defs/count"
+                }
+              ],
+              "description": "Counting unit: exact scoped synthesis versions. Never infer this count from another stage."
+            },
+            "synthesizedOptions": {
+              "allOf": [
+                {
+                  "$ref": "#/$defs/count"
+                }
+              ],
+              "description": "Counting unit: unique assessed condition-drug options. Never infer this count from another stage."
+            },
+            "releasedSyntheses": {
+              "allOf": [
+                {
+                  "$ref": "#/$defs/count"
+                }
+              ],
+              "description": "Counting unit: exact scoped synthesis versions. Never infer this count from another stage."
+            },
+            "independentStudyFamilies": {
+              "allOf": [
+                {
+                  "$ref": "#/$defs/count"
+                }
+              ],
+              "description": "Counting unit: reconciled independent study families. Never infer this count from another stage."
+            }
+          },
+          "required": [
+            "discoveredCandidates",
+            "screenedCandidates",
+            "eligibleCandidates",
+            "acquiredReports",
+            "extractedReports",
+            "verifiedReports",
+            "appraisedSyntheses",
+            "humanReviewedSyntheses",
+            "synthesizedOptions",
+            "releasedSyntheses",
+            "independentStudyFamilies"
+          ],
+          "additionalProperties": false
+        },
+        "gaps": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/gap"
+          },
+          "minItems": 0
+        },
+        "completionRationale": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "assessmentStatus": {
+          "enum": [
+            "not_assessed",
+            "partial",
+            "assessed_for_declared_scope"
+          ]
+        },
+        "humanReviewStatus": {
+          "enum": [
+            "not_requested",
+            "pending",
+            "partial",
+            "complete_for_exact_versions"
+          ]
+        },
+        "publicationState": {
+          "const": "draft"
+        }
+      },
+      "required": [
+        "status",
+        "searchScope",
+        "searchIds",
+        "candidateIds",
+        "stageCounts",
+        "gaps",
+        "completionRationale",
+        "assessmentStatus",
+        "humanReviewStatus",
+        "publicationState"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "complete_for_declared_protocol"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "completionRationale": {
+                "type": "string",
+                "minLength": 1
+              },
+              "gaps": {
+                "items": {
+                  "properties": {
+                    "blocksScopedCompletion": {
+                      "const": false
+                    }
+                  }
+                }
+              },
+              "assessmentStatus": {
+                "const": "assessed_for_declared_scope"
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "coverage": {
+            "properties": {
+              "status": {
+                "enum": [
+                  "searches_complete",
+                  "complete_for_declared_protocol"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "searches": {
+            "minItems": 1,
+            "items": {
+              "properties": {
+                "status": {
+                  "const": "executed"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

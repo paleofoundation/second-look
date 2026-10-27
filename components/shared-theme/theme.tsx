@@ -6,6 +6,8 @@ import React, { createContext, useContext, useEffect, useId, useRef, useState } 
 import type { CSSProperties, ReactNode } from "react";
 import type { ArticleHeroProps, ArticleLayoutProps, DirectoryItem, DirectoryPageProps, SectionNavGroup, ThemeAuthor, ThemeConfig, ThemeHomeProps, ThemeImage, ThemeNavItem } from "./types";
 import homeStyles from "./theme-home.module.css";
+import { ArrowLeft, ArrowRight, ChevronDown, ChevronUp } from "lucide-react";
+import { SectionIcon } from "./section-icon";
 
 const ThemeContext = createContext<ThemeConfig | null>(null);
 export function useThemeConfig(): ThemeConfig {
@@ -133,7 +135,7 @@ export function ThemeFooter() {
   const { identity, footer } = useThemeConfig();
   const subscription = footer.subscribe && <div className="footer__form-wrapper"><h3 className="footer__title">{footer.subscribe.title}</h3>{footer.subscribe.content}</div>;
   return <footer className="footer"><div className="footer__wrapper wrapper">
-    <div className="footer__left"><div className="footer__logo"><ThemeAnchor className="custom-logo-link img-middle" href={identity.homeHref}>{identity.name}</ThemeAnchor></div>
+    <div className="footer__left"><div className="footer__logo"><ThemeAnchor className="custom-logo-link img-middle" href={identity.homeHref} aria-label={`${identity.name} home`}>{identity.footerLogo ? <Image image={identity.footerLogo} className="custom-logo"/> : identity.name}</ThemeAnchor></div>
       <div className="footer__tagline"><div className="footer__copyrights"><p>{footer.copyright}</p>{footer.note && <p>{footer.note}</p>}</div><div className="footer__links">{footer.legal.map((link, index) => <React.Fragment key={link.href}>{index > 0 && <span className="footer__links-separator" aria-hidden="true">|</span>}<ThemeAnchor className="footer__links-item" href={link.href}>{link.label}</ThemeAnchor></React.Fragment>)}</div></div>
       {subscription && <div className="footer__form-wrapper_mobile">{subscription}</div>}
     </div>
@@ -153,9 +155,9 @@ export function ThemeHome({ content }: ThemeHomeProps) {
   const config = useThemeConfig();
   const { hero, collections, method, research } = content;
   return <main className={homeStyles.home} id={config.mainId || "main-content"}>
-    <section className={h("hero")} id="top"><div className={h("hero__copy")}><h1>{hero.title}</h1><p className={h("hero__intro")}>{hero.intro}</p><ThemeSearch home />
+    <section className={h("hero")} id="top"><div className={h("hero__copy")}>{hero.eyebrow && <p className={h("hero__eyebrow")}>{hero.eyebrow}</p>}<h1>{hero.title}</h1><p className={h("hero__intro")}>{hero.intro}</p><ThemeSearch home />
       {!!hero.quickLinks?.length && <div className={h("quick-searches")}><span>{hero.quickLinksLabel || "Start exploring"}</span>{hero.quickLinks.map(link => <ThemeAnchor key={link.href} href={link.href}>{link.label}</ThemeAnchor>)}</div>}
-    </div><div className={h("hero__media")}><div className={h("image-frame")}><Image image={hero.image} sizes="(max-width: 1023px) 100vw, 42vw" fetchPriority="high" />{hero.caption && <div className={h("image-caption")}><span>{hero.caption.eyebrow}</span><strong>{hero.caption.title}</strong></div>}</div>
+    </div><div className={h("hero__media")}>{hero.illustration ?? (hero.image && <div className={h("image-frame")}><Image image={hero.image} sizes="(max-width: 1023px) 100vw, 42vw" fetchPriority="high" />{hero.caption && <div className={h("image-caption")}><span>{hero.caption.eyebrow}</span><strong>{hero.caption.title}</strong></div>}</div>)}
       {hero.note && <div className={h("evidence-note")}><span className={h("evidence-note__mark")}>{hero.note.mark}</span><p><strong>{hero.note.title}</strong><br />{hero.note.text}</p><ThemeAnchor href={hero.note.link.href} aria-label={hero.note.link.label}>→</ThemeAnchor></div>}
     </div></section>
     <section className={h("credibility")} aria-label="Platform principles">{content.principles.map(principle => <span key={principle}>{principle}</span>)}</section>
@@ -170,9 +172,8 @@ export function ThemeHome({ content }: ThemeHomeProps) {
 export function OrcidLink({ orcid, name }: { orcid?: string; name: string }) {
   const id = orcid?.trim().replace(/^https?:\/\/orcid\.org\//i, "").replace(/\/$/, "");
   if (!id || !/^\d{4}-\d{4}-\d{4}-\d{3}[\dX]$/i.test(id)) return <span className="omr-author__missing">ORCID iD not supplied</span>;
-  return <a className="omr-orcid" href={`https://orcid.org/${id}`} rel="noopener noreferrer" target="_blank" aria-label={`${name} ORCID iD ${id}`}>
-    <svg width="20" height="20" viewBox="0 0 256 256" aria-hidden="true" focusable="false"><circle cx="128" cy="128" r="128" fill="#A6CE39" /><path fill="#fff" d="M86 186H70V80h16v106Zm-8-121a10 10 0 1 1 0-20 10 10 0 0 1 0 20Zm33 15h41c39 0 59 25 59 53s-20 53-59 53h-41V80Zm16 15v76h24c29 0 44-16 44-38s-15-38-44-38h-24Z" /></svg>
-    <span>ORCID iD · {id}</span>
+  return <a className="omr-orcid" href={`https://orcid.org/${id}`} rel="noopener noreferrer" target="_blank" aria-label={`${name} ORCID iD ${id}`} title={`${name} on ORCID`}>
+    <svg width="20" height="20" viewBox="0 0 256 256" aria-hidden="true" focusable="false"><path fill="#A6CE39" d="M256 128c0 70.7-57.3 128-128 128S0 198.7 0 128 57.3 0 128 0s128 57.3 128 128z"/><path fill="#fff" d="M86.3 186.2H70.9V79.1h15.4v107.1zM108.9 79.1h41.6c39.6 0 57 28.3 57 53.6 0 27.5-21.5 53.6-56.8 53.6h-41.8V79.1zm15.4 93.3h24.5c34.9 0 42.9-26.5 42.9-39.7 0-21.5-13.7-39.7-43.7-39.7h-23.7v79.4zM88.7 56.8c0 5.5-4.5 10.1-10.1 10.1s-10.1-4.6-10.1-10.1c0-5.6 4.5-10.1 10.1-10.1s10.1 4.6 10.1 10.1z"/></svg>
   </a>;
 }
 export function AuthorCard({ author }: { author: ThemeAuthor }) {
@@ -194,35 +195,37 @@ export function AuthorCard({ author }: { author: ThemeAuthor }) {
 function Breadcrumbs({ items, label }: { items: { label: string; href: string }[]; label?: string }) {
   return <nav className="breadcrumb" aria-label="Breadcrumb"><ol className="breadcrumb__wrapper">{items.map(item => <li className="breadcrumb__item" key={item.href}><ThemeAnchor className="breadcrumb__link" href={item.href}>{item.label}</ThemeAnchor></li>)}{label && <li className="breadcrumb__item"><span className="breadcrumb_last"><span className="badge">{label}</span></span></li>}</ol></nav>;
 }
-export function ArticleHero({ title, description, breadcrumbs, art, leftContext, author, authorSlot, creditSlot, updatedLabel, snapshot, actions, kindLabel }: ArticleHeroProps) {
+export function ArticleHero({ title, description, breadcrumbs, art, artVariant, leftContext, author, authorSlot, creditSlot, updatedLabel, snapshot, actions, kindLabel }: ArticleHeroProps) {
   const authorContent = authorSlot !== undefined ? authorSlot : creditSlot !== undefined ? creditSlot : author ? <AuthorCard author={author} /> : null;
   const hasAuthor = authorContent !== null && authorContent !== undefined && authorContent !== false;
-  return <div className={`research-hero${hasAuthor ? " research-hero--with-author" : ""}`}><div className="research-hero__wrapper">
-    <div className="research-hero__left" data-hero-region="image">{art && <Image image={art} className="research-hero__left-image" />}{leftContext && <div className="research-hero__left-content">{leftContext}</div>}</div>
+  return <div className={`research-hero${hasAuthor ? " research-hero--with-author" : ""}${artVariant === "topic" ? " research-hero--topic-art" : ""}`}><div className="research-hero__wrapper">
+    <div className="research-hero__left" data-hero-region="image">{art && <Image image={art} className="research-hero__left-image" fetchPriority={artVariant === "topic" ? "high" : undefined} decoding="async" />}{leftContext && <div className="research-hero__left-content">{leftContext}</div>}</div>
     <div className="research-hero__center"><Breadcrumbs items={breadcrumbs} label={kindLabel} /><div className="research-hero__center-content"><h1 className="research-hero__center-title">{title}</h1>{description && <div className="research-hero__center-text">{description}</div>}</div>{actions && <div className="research-hero__center-tags">{actions}</div>}</div>
     <aside className="research-hero__right" data-hero-region="author-snapshot" aria-label="Author and article snapshot">{hasAuthor && <div className="research-hero__author">{authorContent}</div>}{updatedLabel && <p className="omr-updated">{updatedLabel}</p>}{snapshot}</aside>
   </div></div>;
 }
-export function ArticleLayout({ hero, leftRail, rightRail, children }: ArticleLayoutProps) {
+export function ArticleLayout({ hero, leftRail, rightRail, shareRail, children }: ArticleLayoutProps) {
   const config = useThemeConfig();
-  return <main className="main omr-article" id={config.mainId || "main-content"}><ArticleHero {...hero} /><div className="research-content"><div className="research-content__wrapper">
+  return <main className="main omr-article" id={config.mainId || "main-content"}><ArticleHero {...hero} /><div className="research-content"><div className={`research-content__wrapper${shareRail ? " article-reader-grid" : ""}`}>
     {leftRail || <div className="research-content__left omr-empty-rail" aria-hidden="true" />}
     <article className="research-content__center entry-content">{children}</article>
     <aside className="research-content__right" aria-label="Related reading">{rightRail}</aside>
+    {shareRail && <aside className="article-share-rail" aria-label="Sharing and guide">{shareRail}</aside>}
   </div></div></main>;
 }
 export function ThemeSectionNav({ groups }: { groups: SectionNavGroup[] }) {
   const [active, setActive] = useState("");
-  const [expanded, setExpanded] = useState<Set<string>>(new Set());
+  const [expanded, setExpanded] = useState<Set<string>>(() => new Set()); // collapsible groups start closed (same on server and client)
+  const toggle = (id: string) => setExpanded(previous => { const next = new Set(previous); if (next.has(id)) next.delete(id); else next.add(id); return next; });
   const [collapsed, setCollapsed] = useState(false);
   useEffect(() => {
     const ids = groups.flatMap(group => [group.id, ...(group.children || []).map(child => child.id)]);
-    const onScroll = () => { let current = ""; for (const id of ids) { const el = document.getElementById(id); if (el && el.getClientRects().length) { const offset = (parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop) || 0) + (parseFloat(getComputedStyle(el).scrollMarginTop) || 0); if (el.getBoundingClientRect().top <= Math.max(140, offset + 2)) current = id; } } setActive(current || ids[0] || ""); };
+    const onScroll = () => { let current = ""; for (const id of ids) { const el = document.getElementById(id); if (el && el.getClientRects().length) { const offset = (parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop) || 0) + (parseFloat(getComputedStyle(el).scrollMarginTop) || 0); if (el.getBoundingClientRect().top <= Math.max(140, offset + 2)) current = id; } } const next = current || ids[0] || ""; setActive(next); const owner = groups.find(group => group.collapsible && group.children?.some(child => child.id === next)); if (owner && current) setExpanded(previous => previous.has(owner.id) ? previous : new Set(previous).add(owner.id)); };
     onScroll(); window.addEventListener("scroll", onScroll, { passive: true }); return () => window.removeEventListener("scroll", onScroll);
   }, [groups]);
   return <nav className={`research-content__left${collapsed ? " collapsed" : ""}`} aria-label="On this page"><div className="research-content__left-menu">
-    <button type="button" className="research-content__left-btn" aria-label={collapsed ? "Expand contents" : "Collapse contents"} aria-expanded={!collapsed} onClick={() => setCollapsed(value => !value)}><span aria-hidden="true">{collapsed ? "→" : "←"}</span></button>
-    <div className="post-content__list post-sidebar" hidden={collapsed}>{groups.map(group => <div key={group.id}><div className="post-content__item post-content__item--h2"><span className="post-content__title omr-toc-label"><a className={`post-content__link${active === group.id ? " post-content__link--active" : ""}`} href={`#${group.id}`} aria-current={active === group.id ? "location" : undefined}>{group.icon}{group.label}</a>{!!group.children?.length && <button type="button" aria-label={`${expanded.has(group.id) ? "Collapse" : "Expand"} ${group.label}`} aria-expanded={expanded.has(group.id)} onClick={() => setExpanded(previous => { const next = new Set(previous); if (next.has(group.id)) next.delete(group.id); else next.add(group.id); return next; })}>{expanded.has(group.id) ? "−" : "+"}</button>}</span></div>{group.children?.map(child => <div key={child.id} className={`post-content__item post-content__item--h3${expanded.has(group.id) ? " active" : ""}`}><span className="post-content__title"><a className={`post-content__link${active === child.id ? " post-content__link--active" : ""}`} href={`#${child.id}`} aria-current={active === child.id ? "location" : undefined}>{child.label}</a></span></div>)}</div>)}</div>
+    <button type="button" className="research-content__left-btn" aria-label={collapsed ? "Expand contents" : "Collapse contents"} aria-expanded={!collapsed} onClick={() => setCollapsed(value => !value)}>{collapsed ? <ArrowRight aria-hidden="true"/> : <ArrowLeft aria-hidden="true"/>}</button>
+    <div className="post-content__list post-sidebar" hidden={collapsed}>{groups.map(group => <div key={group.id}>{group.collapsible ? <div className={`post-content__item post-content__item--h2 omr-toc-group${expanded.has(group.id) ? " omr-toc-group--open" : ""}`}><span className="post-content__title omr-toc-label"><button type="button" className={`post-content__link omr-toc-group__toggle${active === group.id ? " post-content__link--active" : ""}`} aria-expanded={expanded.has(group.id)} aria-controls={`toc-group-${group.id}`} aria-current={active === group.id ? "location" : undefined} onClick={() => { const opening = !expanded.has(group.id); toggle(group.id); if (opening) document.getElementById(group.id)?.scrollIntoView({ behavior: "smooth", block: "start" }); }}><span className="omr-toc-icon" aria-hidden="true">{group.icon || <SectionIcon label={group.label}/>}</span><span>{group.label}</span>{expanded.has(group.id) ? <ChevronUp className="omr-toc-group__chevron" aria-hidden="true"/> : <ChevronDown className="omr-toc-group__chevron" aria-hidden="true"/>}</button></span></div> : <div className="post-content__item post-content__item--h2"><span className="post-content__title omr-toc-label"><a className={`post-content__link${active === group.id ? " post-content__link--active" : ""}`} href={`#${group.id}`} aria-current={active === group.id ? "location" : undefined}><span className="omr-toc-icon" aria-hidden="true">{group.icon || <SectionIcon label={group.label}/>}</span><span>{group.label}</span></a>{!!group.children?.length && <button type="button" aria-label={`${expanded.has(group.id) ? "Collapse" : "Expand"} ${group.label}`} aria-expanded={expanded.has(group.id)} onClick={() => toggle(group.id)}>{expanded.has(group.id) ? <ChevronUp aria-hidden="true"/> : <ChevronDown aria-hidden="true"/>}</button>}</span></div>}{group.collapsible ? <div id={`toc-group-${group.id}`} className="omr-toc-group__children" hidden={!expanded.has(group.id)}>{group.children?.map(child => <div key={child.id} className="post-content__item post-content__item--h2 omr-toc-group__child"><span className="post-content__title omr-toc-label"><a className={`post-content__link${active === child.id ? " post-content__link--active" : ""}`} href={`#${child.id}`} aria-current={active === child.id ? "location" : undefined}><span className="omr-toc-icon" aria-hidden="true"><SectionIcon label={child.label}/></span><span>{child.label}</span></a></span></div>)}</div> : group.children?.map(child => <div key={child.id} className={`post-content__item post-content__item--h3${expanded.has(group.id) ? " active" : ""}`}><span className="post-content__title"><a className={`post-content__link${active === child.id ? " post-content__link--active" : ""}`} href={`#${child.id}`} aria-current={active === child.id ? "location" : undefined}>{child.label}</a></span></div>)}</div>)}</div>
   </div></nav>;
 }
 export function DirectoryPage({ title, description, items, breadcrumbs = [], side }: DirectoryPageProps) {

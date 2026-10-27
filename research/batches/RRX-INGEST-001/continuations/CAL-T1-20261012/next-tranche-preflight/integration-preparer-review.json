@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "remaprx-integration-preparer-code-review-v1",
+  "reviewedAt": "2026-10-12T13:58:19.466550+00:00",
+  "reviewer": "codex/pipeline_audit",
+  "codeAuthor": "codex/root",
+  "status": "PASS_FOR_INSERT_OR_EXACT_REPEAT_PREPARATION",
+  "scope": "Independent technical review; no scientific validation or actual canonical import performed by reviewer.",
+  "files": [
+    {
+      "path": "research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/prepare-integration.py",
+      "sha256": "d51492a97ff5a44eb5942f9edfe27380ecd3e5eb5fdc1894c5d7af05133fc9e6"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/next-tranche-preflight/test_prepare_integration.py",
+      "sha256": "d6df16e3854022ca7d88aea35bdd8358e7be3e2c30abdf9e8bb5b0a3af052fb5"
+    }
+  ],
+  "fixedFindings": [
+    {
+      "issue": "Controls could be refreshed after source acceptance",
+      "verification": "Captures source controls before validate; changed audit/map/readiness/plan/evidence/schema during the mocked accepted validation all HOLD without preparation."
+    },
+    {
+      "issue": "Index payload and base hash could represent different versions",
+      "verification": "Index bytes are paired with their hash; concurrent index writes during payload derivation or after staging writes are preserved and trigger HOLD."
+    },
+    {
+      "issue": "Case-insensitive reserved identity and file collisions",
+      "verification": "Casefolded INDEX and colliding report filenames HOLD."
+    },
+    {
+      "issue": "Orphan, stale or revised prior review could be overwritten; unchanged repeats nested history",
+      "verification": "Orphan/mismatched bodies and revisions HOLD. An exact repeated candidate produces identical index bytes with no new predecessor nesting."
+    }
+  ],
+  "checks": [
+    "All48 historical fixture files remain unchanged during insert preparation.",
+    "Only private review and index targets are proposed; no canonical write is performed.",
+    "Public packet/plan output and symlink escape are rejected.",
+    "Existing indexed bodies are verified and pinned; revisions require a separate preservation/invalidation contract."
+  ],
+  "testRun": {
+    "command": "python3 -m unittest discover -s research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/next-tranche-preflight -p 'test_*.py' -q",
+    "passed": 13,
+    "failed": 0,
+    "durationSeconds": 0.714,
+    "preparerBoundaryTests": 8,
+    "archiveMetadataTests": 5,
+    "exitCode": 0
+  },
+  "testIsolation": "Preparer tests copy the actual helper into TemporaryDirectory and mock only the separately tested scientific-acceptance gate. No source findings or real canonical data are written. These tests do not certify a real source candidate or independent source audit.",
+  "remainingLimits": [
+    "The actual CAL07 candidate must still pass its exact independent full-review validator and source controls; the mocked fixture supplies no scientific acceptance.",
+    "Preparation creates a plan/packet only. A new prospective GP and independent technical acceptance remain mandatory before the sole integrator applies it.",
+    "Completed-review revisions are deliberately unsupported; preserve source/version history through a separate future plan.",
+    "A failure detected after staging writes may leave a private failed packet; no success or import is reported and changed base/input hashes prevent guarded integration."
+  ],
+  "scientificApproval": false,
+  "humanApproval": false,
+  "performedImport": false
+}

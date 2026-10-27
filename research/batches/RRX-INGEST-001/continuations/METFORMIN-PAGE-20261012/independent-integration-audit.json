@@ -1,0 +1,226 @@
+{
+  "schemaVersion": "remaprx-independent-integration-audit-v1",
+  "status": "PASS",
+  "auditor": "codex/pipeline_audit",
+  "author": "codex/root",
+  "auditedAt": "2026-10-12T15:26:12.086886+00:00",
+  "scope": "Read-only staged integration audit against the explicit saved baseline; not scientific full-review completion, human approval, release or apply authorization.",
+  "candidateRoot": "research/batches/RRX-INGEST-001/continuations/METFORMIN-PAGE-20261012/candidate",
+  "baselineRoot": "research/batches/RRX-INGEST-001/continuations/METFORMIN-PAGE-20261012/baseline",
+  "checks": [
+    {
+      "check": "All saved baseline pins match",
+      "pass": true
+    },
+    {
+      "check": "Current apply targets still equal saved baseline or absent new target",
+      "pass": true
+    },
+    {
+      "check": "Exactly 56 baseline rows plus six distinct additions",
+      "pass": true
+    },
+    {
+      "check": "All 56 prior raw synthesis rows unchanged",
+      "pass": true
+    },
+    {
+      "check": "data/public-reader-evidence.json: 56 prior records unchanged, six additions only",
+      "pass": true
+    },
+    {
+      "check": "editorial/evidence-assessments.json: 56 prior records unchanged, six additions only",
+      "pass": true
+    },
+    {
+      "check": "data/public-evidence-assessments.json: 56 prior records unchanged, six additions only",
+      "pass": true
+    },
+    {
+      "check": "Six additions use exactly six existing source IDs",
+      "pass": true
+    },
+    {
+      "check": "All source protected review/release fields unchanged",
+      "pass": true
+    },
+    {
+      "check": "data/content.json: six shared row IDs on D01 and five condition parents",
+      "pass": true
+    },
+    {
+      "check": "data/content.json: guide edits only source/synthesis references",
+      "pass": true
+    },
+    {
+      "check": "data/public-content.json: six shared row IDs on D01 and five condition parents",
+      "pass": true
+    },
+    {
+      "check": "data/public-content.json: guide edits only source/synthesis references",
+      "pass": true
+    },
+    {
+      "check": "Prior registry mappings and outcomes unchanged",
+      "pass": true
+    },
+    {
+      "check": "All six new registry mappings resolve",
+      "pass": true
+    },
+    {
+      "check": "Identity map covers all 62 exact row scopes without duplicates",
+      "pass": true
+    },
+    {
+      "check": "New IDs deterministic from new exact scope against old rows",
+      "pass": true
+    },
+    {
+      "check": "New rows keep incomplete/private/pending-human state",
+      "pass": true
+    },
+    {
+      "check": "No private review/envelope or route/access implementation in write set",
+      "pass": true
+    },
+    {
+      "check": "Source aliases unchanged",
+      "pass": true
+    },
+    {
+      "check": "All 62 assessment fingerprints compile to the exact staged public assessment projection",
+      "pass": true
+    },
+    {
+      "check": "Each new assessment retains independent auditor grade, rationale, domains, integrity, source IDs, date and basis; endpoint/population/comparison/timepoint scope matches apart from comma spacing normalization",
+      "pass": true
+    },
+    {
+      "check": "Prior update history entries preserved with one additive metformin/five-condition entry",
+      "pass": true
+    },
+    {
+      "check": "Additional parent scope source-reference mirrors match existing current guide sources; no non-target guide change",
+      "pass": true
+    },
+    {
+      "check": "Candidate hashes unchanged throughout this audit",
+      "pass": true
+    }
+  ],
+  "issues": [],
+  "notes": [
+    {
+      "kind": "plan_baseline_snapshot_difference",
+      "detail": "Initial plan base hashes for data/content.json and data/public-content.json precede the latest page text/FAQ changes. This audit uses baseline-hashes.json, whose saved files and current apply targets were both independently verified. Integrator must retain this distinction in the final apply receipt rather than describe the original plan hashes as current."
+    },
+    {
+      "kind": "additional_scope_reference_sync",
+      "details": [
+        {
+          "guideId": "G-DRUG-D06",
+          "addedSourceIds": [
+            "MECH-D06-AUTOPHAGY-2009"
+          ],
+          "reason": "Parent scope mirror synchronized to already-existing current guide references; actual guide unchanged by candidate."
+        },
+        {
+          "guideId": "G-DRUG-D07",
+          "addedSourceIds": [
+            "MECH-D07-CHOLESTEROL-2010",
+            "MECH-D07-HEDGEHOG-2010",
+            "MECH-D07-NPC1-2017"
+          ],
+          "reason": "Parent scope mirror synchronized to already-existing current guide references; actual guide unchanged by candidate."
+        },
+        {
+          "guideId": "G-DRUG-D10",
+          "addedSourceIds": [
+            "MECH-D10-MICROTUBULE-2018"
+          ],
+          "reason": "Parent scope mirror synchronized to already-existing current guide references; actual guide unchanged by candidate."
+        },
+        {
+          "guideId": "G-DRUG-D26",
+          "addedSourceIds": [
+            "MECH-D26-HYPOXIA-2025"
+          ],
+          "reason": "Parent scope mirror synchronized to already-existing current guide references; actual guide unchanged by candidate."
+        }
+      ]
+    },
+    {
+      "kind": "display_normalization",
+      "detail": "Current row scope formatting inserts spaces after thousands commas, e.g. 1, 874 and 2, 000. Numeric meaning matches the independent source assessment; no new numerical verification performed in this integration audit."
+    }
+  ],
+  "filesChecked": {
+    "candidate": {
+      "editorial/synthesis-identity-map.json": "fa27e2003ae2f5b18f9338cb9288b0bd4a91afa5a6c5d8311e35a51c946e022e",
+      "editorial/parent-guide-scopes.json": "1598abd3a6833cb51b54970a32b42ab5b04bbfda33953e5eecbfb8690878eb93",
+      "editorial/evidence-assessments.json": "f7ead7a93823347b40b3af8a4e3b128e83be28626fb231dc7ceed9135bd09acc",
+      "editorial/reader-source-aliases.json": "70186e5e5ced9232a4a21b321c5c988058191c514131dbea8ce442e352cb2fef",
+      "data/content.json": "42ba518fab66452da685fcf46236027f03d4ab45c0a860d679b1e7b5687655a4",
+      "data/public-content.json": "f513f35f1a829a28297db4d549303290e947cf535e1782203cbb71e0d2098cac",
+      "data/article-updates.json": "204080148644309554876c5e9bd800d1f8edb28716d9d064a3a949babfdbb037",
+      "data/public-evidence-assessments.json": "b6029f133cc17da6f91d8ecb16d3e991c8ab29ce1924f1780d811de4c09961eb",
+      "data/reader-evidence.json": "3b97754bb68fc802146a6f1cd59faad3e63f0d36307c045c4f82b543411b8e53",
+      "data/public-reader-evidence.json": "d6f8c4bf30679070f00caee89d7c44ff0193f19c4891be86b7cf7d3073c62d1d",
+      "data/outcome-registry.json": "af9726dd1c691ff6d23ab26ffe1332fedf15af63a127f79709ba35cff06d8566"
+    },
+    "baseline": {
+      "data/content.json": "819a8debb214cf827925e01acca51377626a19ebfc82b5d672a4947c07e5b375",
+      "data/public-content.json": "77c394a1f8fe41577d5af00e62227933e341f7ca7733a86012aa7a8b0c6e2e6f",
+      "data/reader-evidence.json": "8ec76d5e8fb500df1dac7e6167332c7b283806018f1c900ea46fa9120b74c32b",
+      "data/public-reader-evidence.json": "c1ec8e426af268dfb89f69f29dfed0ec887d5e7bfc4e9e08e11102791c3143bd",
+      "data/outcome-registry.json": "076ded1a7216e647e7af22fddb8b4c70688704ef83d0a8a7bc1d69095039a810",
+      "editorial/parent-guide-scopes.json": "03996281f07b476277b97eedbb1f0fb385ba1ff27bc65983fd9a73d5f2afd1c6",
+      "editorial/evidence-assessments.json": "2e1c5593145fe36b527c94a2306c5eb7aa562f9f0766887f9e2f8502f7b9aabc",
+      "data/public-evidence-assessments.json": "bbaf2b47e7f1236655730d71be1f3ccef5231afd3cfaa53146ef0ea25d940b08",
+      "editorial/synthesis-identity-map.json": null,
+      "data/article-updates.json": "38036b1717a701cc77d61256399204b47f2cd06407e4c4034f144003c6a99050"
+    },
+    "controls": {
+      "plan.json": "f5a448115f3a5df9c1f369dc20b00cd6c2cb43d8e1acfe69b0cad5c26d172a93",
+      "readiness.json": "c5ff66153464efd01aeecb54e80020edc2d6b187841506a26958e44659c289fb",
+      "baseline-hashes.json": "6bc247bc9329f966512abadea5d58d956ca46336f1b5dc35d547b12d0411d906",
+      "evidence-records.json": "9d305e303455252f4365d67e8a72506ce40725253783c6f762aba638cba65031",
+      "independent-assessments.json": "4b17b4e3e4a3b1bd1528e63b069b9efd37ea6ca4cb1abaff1fd81fe0dd52279c",
+      "new-row-ids.json": "fec85e198ad17e625d40748ac96cdb5b8abd5922139142f80d0350da46d91091"
+    },
+    "protectedFilesCurrentHashes": {
+      "data/private-reviews.json": "b3b5f75443899b359d78575d693d82444143897154c22862023598c2c873401c",
+      "data/review-envelopes.json": "9dbc05bec5d78002e4f1cd78fb7494ef4d00c7b04c6cd5ab9abb020312f2d8e0",
+      "data/public-review-metadata.json": "6e8710372c6f98746b1f03a539cedbf5a403dbc38665dfaf69ffe7da1c9db529",
+      "lib/review-access.ts": "6063c013f62e383dce95d2ca62e241c173f3ab5ad8d19bfe8b7808bcf4aebc67"
+    }
+  },
+  "newRowIds": [
+    "SYN-D01-C13-MF-STAMPEDE-2025-73355A05E6EE9764AE1A",
+    "SYN-D01-C14-MF-NRG-LU001-2021-868676D72A2E752656A0",
+    "SYN-D01-C14-MF-ALMERA-2021-B05C4C42E69AE6236E3E",
+    "SYN-D01-C16-MF-ADENOMA-2016-83730B0D0B926F1511A1",
+    "SYN-D01-C02-COND-C02-COVIDOUT-2022-B1E71756C16B18BBC77C",
+    "SYN-D01-C30-MF-MASTERS-2019-CA65ECB67C3BDB523F7D"
+  ],
+  "preservation": {
+    "priorSynthesisRows": 56,
+    "priorPublicSynthesisRows": 56,
+    "priorEditorialAssessments": 56,
+    "priorPublicAssessments": 56,
+    "newRows": 6,
+    "newSources": 0,
+    "newProtectedReviews": 0,
+    "drugParents": 1,
+    "conditionParents": 5
+  },
+  "remainingLimits": [
+    "Scientific judgments are the separately authored codex/identity_review bounded assessments, not this integration audit.",
+    "All six rows retain coverage.complete=false, publicationState=private_ai_draft and humanApproval=pending. Existing protected review files are absent from the candidate write set.",
+    "Full protocol/supplement and source-correction gaps remain visible; no whole-corpus or full Q01–Q15 review completion is claimed.",
+    "No candidate application, build, browser verification or production publication was performed by this auditor."
+  ],
+  "humanApproval": false,
+  "released": false
+}

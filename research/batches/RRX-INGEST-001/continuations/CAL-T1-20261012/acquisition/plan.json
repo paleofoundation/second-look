@@ -1,0 +1,83 @@
+{
+  "schemaVersion": "remaprx-calibration-acquisition-plan-v1",
+  "planId": "RRX-CAL-T1-ACQUIRE-1.0",
+  "createdAt": "2026-10-12T13:22:29.113710+00:00",
+  "author": "codex/root",
+  "gitBase": "f47f6543076cb3ba0f04a6c868116d3b6144519c",
+  "scope": "Only missing assets and dated source-integrity metadata for CAL07 existing report DOI10.1016/j.ccr.2010.02.027 PMID20385363 PMC4039177; no new drug discovery.",
+  "canonicalReportId": "MECH-D07-HEDGEHOG-2010",
+  "rawDestination": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/private-research/RRX-INGEST-001/CAL-T1-20261012/CAL-07",
+  "permittedSources": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4039177/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4039177/pdf/nihms199097.pdf",
+    "https://pmc.ncbi.nlm.nih.gov/articles/instance/4039177/bin/NIHMS199097-supplement-01.pdf",
+    "https://pubmed.ncbi.nlm.nih.gov/20385363/",
+    "https://www.sciencedirect.com/science/article/pii/S1535610810000742",
+    "https://www.cell.com/cancer-cell/",
+    "https://www.ebi.ac.uk/europepmc/webservices/rest/",
+    "https://api.crossref.org/works/10.1016%2Fj.ccr.2010.02.027"
+  ],
+  "allowedFollowups": "Only report-linked original figure image/PDF/supplement URLs, lawful official PMC/NCBI CDN/fulltext packages, publisher version/correction notices and exact-report identity/integrity API responses. No login bypass or unauthorized access.",
+  "queries": [
+    "20385363 correction erratum retraction",
+    "10.1016/j.ccr.2010.02.027 correction retraction"
+  ],
+  "requiredReceipts": [
+    "request URL",
+    "retrieval date",
+    "actual final URL",
+    "HTTP/access status",
+    "media sniff",
+    "byte length",
+    "SHA256",
+    "role",
+    "canonical report ID",
+    "missing/failed access log"
+  ],
+  "reviewScope": "Each new received asset is centrally identity/hash checked then separately source-plan pinned before scientific extraction; prior CAL07 main HTML unchanged.",
+  "restrictions": {
+    "newScientificExtraction": false,
+    "canonicalApply": false,
+    "publicContent": false,
+    "humanApproval": false,
+    "release": false
+  },
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "36c103a973f80b67a36c6311ab0282fcca4b4f4b34358f6149e8e2dc5416a2e3"
+    },
+    {
+      "path": "docs/PROJECT-RULES.md",
+      "sha256": "3010f2efcd2b4d543eec0ef50b774319cb7ba680bf693ae22283a5fd3c51d539"
+    },
+    {
+      "path": "docs/RESEARCH-INGEST.md",
+      "sha256": "a7cf38d81c3ea49e1c20ce928bae21fbf211b2bff3ebe47c898d325ecb2799fe"
+    },
+    {
+      "path": "docs/RULE-CHANGELOG.md",
+      "sha256": "ef6ec43f5193096aa193ab7410afd8e13ff184c4cfb83f4ef650355477a1648e"
+    },
+    {
+      "path": "rules/one-match-rule/ONE-MATCH-RULE.md",
+      "sha256": "7fae46e83e1da5e139b0ab2d11ca02292603c63a50f764c89819b0792bc2f330"
+    },
+    {
+      "path": "rules/one-match-rule/references/research-reviews/review-questions-and-inputs.json",
+      "sha256": "02edeacc65227e5feeaf25b6c9568be406b48024216f83d2dda2ccfcc5042f3b"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/calibration/assignments.json",
+      "sha256": "fe60bfc9908daab15d9eb7708a9405b2a4dcc482c948f31e594837f07276d49b"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/calibration/candidates/CAL-07/CAL-07-S01.candidate.json",
+      "sha256": "aed9959303463b67519c1de979479e002d86b72ccfa1e803c41ee504bec6c4e3"
+    },
+    {
+      "path": "editorial/mechanism-expansion/itraconazole-hedgehog-2010.html",
+      "sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578"
+    }
+  ]
+}

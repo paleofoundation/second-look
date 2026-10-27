@@ -1,0 +1,30 @@
+{
+  "auditor": "codex/identity_review",
+  "author": "codex/pipeline_audit",
+  "blockingCodeFindings": [],
+  "codeSha256": "ab1c52b729891760d5a8c37f305c2453a9a74b8e76457d19847361b696cbf424",
+  "codeStatus": "PASS_BOUNDED_PROPOSED_OPERATION",
+  "evidence": {
+    "path": "evidence.json",
+    "sha256": "18dfea3cbc8a32805f9360ef1ae3054562ce07b30e0c2fea83a6826122a94002"
+  },
+  "findings": [
+    {
+      "actualSha256": "4a52570d87c8538751507a1fe153a9ef19530a3c7af3bda87cdf2b4266587b70",
+      "description": "The proposed plan has one stale changelog pin. Preserve this proposal and adopt an exact current plan before prospective GP. The materializer will reject the stale pin.",
+      "expectedSha256": "017b5f48d4ab9c41a43384be9dc6a23cefbc89b91e0c8018b8424b106656dbd6",
+      "path": "docs/RULE-CHANGELOG.md",
+      "severity": "required_before_gp"
+    }
+  ],
+  "gpRecorded": false,
+  "humanApproval": false,
+  "planSha256": "1956a8ac99ea3fbf406bbfbf97bcb26114a18c9069dccfa2055cee43d6072d18",
+  "proposedPlanStatus": "HOLD_CURRENT_INPUT_PIN",
+  "realMaterializationAuthorized": false,
+  "released": false,
+  "reviewedAt": "2026-10-12T14:22:01.007211+00:00",
+  "schemaVersion": "remaprx-independent-code-plan-review-v1",
+  "scientificAcceptance": false,
+  "testSha256": "c5174f0b3316501cef05a59ce05564c73e8b9e2e2de2d0f6aa2e21e18f92dd29"
+}

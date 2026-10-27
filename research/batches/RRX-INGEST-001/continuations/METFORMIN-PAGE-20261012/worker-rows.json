@@ -1,0 +1,541 @@
+{
+  "status": "isolated integration candidate; no canonical writes or new scientific appraisal",
+  "preparedBy": "codex/pipeline_audit",
+  "inputHash": "551c64512b7b06e3ca706e6f3829628998db30d26e062f2b36a964f44c28e464",
+  "synthesisRows": [
+    {
+      "id": "SYN-D01-C13-STAMPEDE-OS",
+      "version": "metformin-recorded-facts-candidate-2026-10-12",
+      "drugId": "D01",
+      "conditionId": "C13",
+      "title": "Overall survival with metformin added to prostate-cancer treatment",
+      "use": "Metformin added to standard care versus standard care",
+      "population": "1,874 participants without diabetes and with metastatic hormone-sensitive prostate cancer",
+      "comparison": "Metformin added to standard care versus standard care",
+      "endpoint": "Overall survival",
+      "timepoint": "Not recorded in existing source summary",
+      "status": "reported_result",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": "No outcome-specific appraisal was completed for this proposed row. Existing source summaries are reused without assigning a grade.",
+        "assessmentStatus": "pending"
+      },
+      "finding": {
+        "text": "Adding metformin did not significantly improve overall survival in the full metastatic hormone-sensitive prostate-cancer population.",
+        "sources": [
+          "MF-STAMPEDE-2025"
+        ]
+      },
+      "magnitudeText": "Hazard ratio 0.91 (95% CI 0.80–1.03).",
+      "evidenceBase": "Randomized phase 3 trial",
+      "limitations": [
+        {
+          "text": "The result concerns the overall trial population. It does not establish equivalence; the reported metabolic effects and subgroups are separate outcomes, and complete source appraisal remains unfinished.",
+          "sources": [
+            "MF-STAMPEDE-2025"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "MF-STAMPEDE-2025"
+      ],
+      "resultIds": [],
+      "claimIds": [],
+      "studyFamilyIds": [],
+      "countsAsPrimaryEvidence": true,
+      "qualifiedSafetyReview": false,
+      "answerRoutes": [],
+      "coverage": {
+        "scope": "Selected finding already present in the current metformin article; not a new full scientific review.",
+        "complete": false,
+        "pending": [
+          "Complete an outcome-specific scientific assessment before assigning an evidence grade."
+        ]
+      },
+      "publicationState": "private_ai_draft",
+      "humanApproval": "pending",
+      "effects": [
+        {
+          "sourceId": "MF-STAMPEDE-2025",
+          "design": "Randomized phase 3 trial",
+          "population": "1,874 participants without diabetes and with metastatic hormone-sensitive prostate cancer",
+          "timepoint": "Not recorded in existing source summary",
+          "sampleDescription": "1,874 participants without diabetes and with metastatic hormone-sensitive prostate cancer",
+          "locators": [
+            {
+              "section": "Abstract: Methods, Results and Interpretation"
+            }
+          ]
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "MF-STAMPEDE-2025",
+          "label": "Abstract: Methods, Results and Interpretation"
+        }
+      ]
+    },
+    {
+      "id": "SYN-D01-C14-NRG-LU001-SURVIVAL",
+      "version": "metformin-recorded-facts-candidate-2026-10-12",
+      "drugId": "D01",
+      "conditionId": "C14",
+      "title": "Survival with metformin added to chemoradiation: NRG-LU001",
+      "use": "Metformin plus chemoradiation versus chemoradiation",
+      "population": "People without diabetes and with unresectable stage III NSCLC",
+      "comparison": "Metformin plus chemoradiation versus chemoradiation",
+      "endpoint": "Survival",
+      "timepoint": "Not recorded in existing source summary",
+      "status": "reported_result",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": "No outcome-specific appraisal was completed for this proposed row. Existing source summaries are reused without assigning a grade.",
+        "assessmentStatus": "pending"
+      },
+      "finding": {
+        "text": "Adding metformin to chemoradiation did not improve survival in unresectable stage III non-small-cell lung cancer.",
+        "sources": [
+          "MF-NRG-LU001-2021"
+        ]
+      },
+      "magnitudeText": "The existing source summary does not record a numeric effect estimate.",
+      "evidenceBase": "Randomized phase 2 trial",
+      "limitations": [
+        {
+          "text": "The reused record supplies an abstract-level conclusion, without a recorded effect interval or timepoint. No comparative certainty grade or complete review is implied.",
+          "sources": [
+            "MF-NRG-LU001-2021"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "MF-NRG-LU001-2021"
+      ],
+      "resultIds": [],
+      "claimIds": [],
+      "studyFamilyIds": [],
+      "countsAsPrimaryEvidence": true,
+      "qualifiedSafetyReview": false,
+      "answerRoutes": [],
+      "coverage": {
+        "scope": "Selected finding already present in the current metformin article; not a new full scientific review.",
+        "complete": false,
+        "pending": [
+          "Complete an outcome-specific scientific assessment before assigning an evidence grade."
+        ]
+      },
+      "publicationState": "private_ai_draft",
+      "humanApproval": "pending",
+      "effects": [
+        {
+          "sourceId": "MF-NRG-LU001-2021",
+          "design": "Randomized phase 2 trial",
+          "population": "People without diabetes and with unresectable stage III NSCLC",
+          "timepoint": "Not recorded in existing source summary",
+          "sampleDescription": "People without diabetes and with unresectable stage III NSCLC",
+          "locators": [
+            {
+              "section": "Abstract: Methods, Results and Interpretation"
+            }
+          ]
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "MF-NRG-LU001-2021",
+          "label": "Abstract: Methods, Results and Interpretation"
+        }
+      ]
+    },
+    {
+      "id": "SYN-D01-C14-ALMERA-SURVIVAL",
+      "version": "metformin-recorded-facts-candidate-2026-10-12",
+      "drugId": "D01",
+      "conditionId": "C14",
+      "title": "Survival with metformin and chemoradiotherapy: OCOG-ALMERA",
+      "use": "Metformin with chemoradiotherapy versus chemoradiotherapy",
+      "population": "Patients with locally advanced non-small-cell lung cancer",
+      "comparison": "Metformin with chemoradiotherapy versus chemoradiotherapy",
+      "endpoint": "Survival",
+      "timepoint": "Not recorded in existing source summary",
+      "status": "reported_result",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": "No outcome-specific appraisal was completed for this proposed row. Existing source summaries are reused without assigning a grade.",
+        "assessmentStatus": "pending"
+      },
+      "finding": {
+        "text": "Metformin did not improve outcomes and was associated with worse survival estimates in this small trial.",
+        "sources": [
+          "MF-ALMERA-2021"
+        ]
+      },
+      "magnitudeText": "Worse survival estimates were reported; the existing source summary does not record a numeric effect estimate.",
+      "evidenceBase": "Randomized clinical trial",
+      "limitations": [
+        {
+          "text": "The finding comes from a small randomized trial and an abstract-level record. The exact magnitude, uncertainty and timepoint are not supplied here; no general harm estimate or complete review is implied.",
+          "sources": [
+            "MF-ALMERA-2021"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "MF-ALMERA-2021"
+      ],
+      "resultIds": [],
+      "claimIds": [],
+      "studyFamilyIds": [],
+      "countsAsPrimaryEvidence": true,
+      "qualifiedSafetyReview": false,
+      "answerRoutes": [],
+      "coverage": {
+        "scope": "Selected finding already present in the current metformin article; not a new full scientific review.",
+        "complete": false,
+        "pending": [
+          "Complete an outcome-specific scientific assessment before assigning an evidence grade."
+        ]
+      },
+      "publicationState": "private_ai_draft",
+      "humanApproval": "pending",
+      "effects": [
+        {
+          "sourceId": "MF-ALMERA-2021",
+          "design": "Randomized clinical trial",
+          "population": "Patients with locally advanced non-small-cell lung cancer",
+          "timepoint": "Not recorded in existing source summary",
+          "sampleDescription": "Patients with locally advanced non-small-cell lung cancer",
+          "locators": [
+            {
+              "section": "Abstract: Methods, Results and Interpretation"
+            }
+          ]
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "MF-ALMERA-2021",
+          "label": "Abstract: Methods, Results and Interpretation"
+        }
+      ]
+    },
+    {
+      "id": "SYN-D01-C16-ADENOMA-RECURRENCE",
+      "version": "metformin-recorded-facts-candidate-2026-10-12",
+      "drugId": "D01",
+      "conditionId": "C16",
+      "title": "Recurrent adenomas after polyp removal",
+      "use": "Metformin 250 mg daily versus the trial control after polyp removal",
+      "population": "151 randomized patients after colorectal polyp removal; 133 had one-year colonoscopy",
+      "comparison": "Metformin 250 mg daily versus the trial control after polyp removal",
+      "endpoint": "Adenoma recurrence",
+      "timepoint": "One year",
+      "status": "reported_result",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": "No outcome-specific appraisal was completed for this proposed row. Existing source summaries are reused without assigning a grade.",
+        "assessmentStatus": "pending"
+      },
+      "finding": {
+        "text": "Metformin reduced recurrent adenomas after polyp removal in the reported trial; this is a prevention endpoint, not treatment of established colorectal cancer.",
+        "sources": [
+          "MF-ADENOMA-2016"
+        ]
+      },
+      "magnitudeText": "Reported risk ratio 0.60 (95% CI 0.39–0.92).",
+      "evidenceBase": "Double-blind randomized phase 3 trial",
+      "limitations": [
+        {
+          "text": "The trial concerns patients without diabetes after polyp removal, not cancer survival. The current record reports 151 randomized and 133 assessed by one-year colonoscopy; complete source appraisal remains unfinished. The precise control formulation is not restated in the reused source summary.",
+          "sources": [
+            "MF-ADENOMA-2016"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "MF-ADENOMA-2016"
+      ],
+      "resultIds": [],
+      "claimIds": [],
+      "studyFamilyIds": [],
+      "countsAsPrimaryEvidence": true,
+      "qualifiedSafetyReview": false,
+      "answerRoutes": [],
+      "coverage": {
+        "scope": "Selected finding already present in the current metformin article; not a new full scientific review.",
+        "complete": false,
+        "pending": [
+          "Complete an outcome-specific scientific assessment before assigning an evidence grade."
+        ]
+      },
+      "publicationState": "private_ai_draft",
+      "humanApproval": "pending",
+      "effects": [
+        {
+          "sourceId": "MF-ADENOMA-2016",
+          "design": "Double-blind randomized phase 3 trial",
+          "population": "151 randomized patients after colorectal polyp removal; 133 had one-year colonoscopy",
+          "timepoint": "One year",
+          "sampleDescription": "151 randomized patients after colorectal polyp removal; 133 had one-year colonoscopy",
+          "locators": [
+            {
+              "section": "Abstract: Methods, Results and Interpretation"
+            }
+          ]
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "MF-ADENOMA-2016",
+          "label": "Abstract: Methods, Results and Interpretation"
+        }
+      ]
+    },
+    {
+      "id": "SYN-D01-C02-COVIDOUT-ACUTE-COMPOSITE",
+      "version": "metformin-recorded-facts-candidate-2026-10-12",
+      "drugId": "D01",
+      "conditionId": "C02",
+      "title": "Acute COVID-19 composite outcome",
+      "use": "Metformin versus placebo",
+      "population": "Adults with acute COVID-19 in COVID-OUT",
+      "comparison": "Metformin versus placebo",
+      "endpoint": "Composite of hypoxemia, emergency-department attendance, hospitalization or death",
+      "timepoint": "Not recorded in existing source summary",
+      "status": "reported_result",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": "No outcome-specific appraisal was completed for this proposed row. Existing source summaries are reused without assigning a grade.",
+        "assessmentStatus": "pending"
+      },
+      "finding": {
+        "text": "COVID-OUT did not meet its primary composite endpoint combining hypoxemia, emergency-department attendance, hospitalization or death.",
+        "sources": [
+          "COND-C02-COVIDOUT-2022"
+        ]
+      },
+      "magnitudeText": "No numeric effect estimate is added from the unaccepted recovered draft.",
+      "evidenceBase": "Randomized placebo-controlled trial",
+      "limitations": [
+        {
+          "text": "This acute endpoint is distinct from later Long COVID diagnosis. The reports share the COVID-OUT trial family and must not be counted as independent replication.",
+          "sources": [
+            "COND-C02-COVIDOUT-2022"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "COND-C02-COVIDOUT-2022"
+      ],
+      "resultIds": [],
+      "claimIds": [],
+      "studyFamilyIds": [
+        "S-COVIDOUT-2023"
+      ],
+      "countsAsPrimaryEvidence": true,
+      "qualifiedSafetyReview": false,
+      "answerRoutes": [],
+      "coverage": {
+        "scope": "Selected finding already present in the current metformin article; not a new full scientific review.",
+        "complete": false,
+        "pending": [
+          "Complete an outcome-specific scientific assessment before assigning an evidence grade."
+        ]
+      },
+      "publicationState": "private_ai_draft",
+      "humanApproval": "pending",
+      "effects": [
+        {
+          "sourceId": "COND-C02-COVIDOUT-2022",
+          "design": "Randomized placebo-controlled trial",
+          "population": "Adults with acute COVID-19 in COVID-OUT",
+          "timepoint": "Not recorded in existing source summary",
+          "sampleDescription": "Adults with acute COVID-19 in COVID-OUT",
+          "locators": [
+            {
+              "section": "Abstract; Results"
+            }
+          ]
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "COND-C02-COVIDOUT-2022",
+          "label": "Abstract; Results"
+        }
+      ]
+    },
+    {
+      "id": "SYN-D01-C30-MASTERS-MUSCLE-GROWTH",
+      "version": "metformin-recorded-facts-candidate-2026-10-12",
+      "drugId": "D01",
+      "conditionId": "C30",
+      "title": "Muscle growth during resistance training: MASTERS",
+      "use": "Metformin versus placebo during progressive resistance training",
+      "population": "Healthy adults aged 65 years and older undergoing resistance training",
+      "comparison": "Metformin versus placebo during progressive resistance training",
+      "endpoint": "Lean and thigh muscle-mass gains during resistance training",
+      "timepoint": "Not recorded in existing source summary",
+      "status": "reported_result",
+      "certainty": {
+        "label": "Not appraised",
+        "rationale": "No outcome-specific appraisal was completed for this proposed row. Existing source summaries are reused without assigning a grade.",
+        "assessmentStatus": "pending"
+      },
+      "finding": {
+        "text": "Metformin attenuated gains in lean and thigh muscle mass during resistance training; differences in strength gains were not statistically significant.",
+        "sources": [
+          "MF-MASTERS-2019"
+        ]
+      },
+      "magnitudeText": "The existing source summary does not record a numeric effect estimate.",
+      "evidenceBase": "Randomized double-blind placebo-controlled trial",
+      "limitations": [
+        {
+          "text": "Muscle growth, strength and walking speed are different outcomes. This study of healthy older adults undergoing training is distinct from MET-PREVENT in frail or prefrail adults, and the existing record has no full review.",
+          "sources": [
+            "MF-MASTERS-2019"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "MF-MASTERS-2019"
+      ],
+      "resultIds": [],
+      "claimIds": [],
+      "studyFamilyIds": [],
+      "countsAsPrimaryEvidence": true,
+      "qualifiedSafetyReview": false,
+      "answerRoutes": [],
+      "coverage": {
+        "scope": "Selected finding already present in the current metformin article; not a new full scientific review.",
+        "complete": false,
+        "pending": [
+          "Complete an outcome-specific scientific assessment before assigning an evidence grade."
+        ]
+      },
+      "publicationState": "private_ai_draft",
+      "humanApproval": "pending",
+      "effects": [
+        {
+          "sourceId": "MF-MASTERS-2019",
+          "design": "Randomized double-blind placebo-controlled trial",
+          "population": "Healthy adults aged 65 years and older undergoing resistance training",
+          "timepoint": "Not recorded in existing source summary",
+          "sampleDescription": "Healthy adults aged 65 years and older undergoing resistance training",
+          "locators": [
+            {
+              "section": "Abstract; Introduction; muscle signaling results"
+            }
+          ]
+        }
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "MF-MASTERS-2019",
+          "label": "Abstract; Introduction; muscle signaling results"
+        }
+      ]
+    }
+  ],
+  "provenance": [
+    {
+      "rowId": "SYN-D01-C13-STAMPEDE-OS",
+      "existingPublicSourceId": "MF-STAMPEDE-2025",
+      "sourceFactPath": "data/content.json#/sources/155",
+      "guideQuestionId": "STAMPEDE-OS",
+      "relatedRecoveredDraftResultIds": [
+        "SCI-B-R0022-F01-BODY-FINDING",
+        "SCI-B-R0022-F01-OVERALL-SURVIVAL-HR"
+      ],
+      "familyStatus": "No verified existing family ID located; kept empty rather than inventing independent-family identity.",
+      "timepointStatus": "Not recorded in reused public material; retained explicit gap.",
+      "existingFullReview": {
+        "present": false,
+        "state": "pending"
+      },
+      "newScientificExtraction": false
+    },
+    {
+      "rowId": "SYN-D01-C14-NRG-LU001-SURVIVAL",
+      "existingPublicSourceId": "MF-NRG-LU001-2021",
+      "sourceFactPath": "data/content.json#/sources/156",
+      "guideQuestionId": "NRG-LU001-SURVIVAL",
+      "relatedRecoveredDraftResultIds": [],
+      "familyStatus": "No verified existing family ID located; kept empty rather than inventing independent-family identity.",
+      "timepointStatus": "Not recorded in reused public material; retained explicit gap.",
+      "existingFullReview": {
+        "present": false,
+        "state": "pending"
+      },
+      "newScientificExtraction": false
+    },
+    {
+      "rowId": "SYN-D01-C14-ALMERA-SURVIVAL",
+      "existingPublicSourceId": "MF-ALMERA-2021",
+      "sourceFactPath": "data/content.json#/sources/157",
+      "guideQuestionId": "ALMERA-SURVIVAL",
+      "relatedRecoveredDraftResultIds": [],
+      "familyStatus": "No verified existing family ID located; kept empty rather than inventing independent-family identity.",
+      "timepointStatus": "Not recorded in reused public material; retained explicit gap.",
+      "existingFullReview": {
+        "present": false,
+        "state": "pending"
+      },
+      "newScientificExtraction": false
+    },
+    {
+      "rowId": "SYN-D01-C16-ADENOMA-RECURRENCE",
+      "existingPublicSourceId": "MF-ADENOMA-2016",
+      "sourceFactPath": "data/content.json#/sources/158",
+      "guideQuestionId": "ADENOMA-RECURRENCE",
+      "relatedRecoveredDraftResultIds": [],
+      "familyStatus": "No verified existing family ID located; kept empty rather than inventing independent-family identity.",
+      "timepointStatus": "Already recorded in reused public material.",
+      "existingFullReview": {
+        "present": false,
+        "state": "pending"
+      },
+      "newScientificExtraction": false
+    },
+    {
+      "rowId": "SYN-D01-C02-COVIDOUT-ACUTE-COMPOSITE",
+      "existingPublicSourceId": "COND-C02-COVIDOUT-2022",
+      "sourceFactPath": "data/content.json#/sources/59",
+      "guideQuestionId": "COVIDOUT-ACUTE-COMPOSITE",
+      "relatedRecoveredDraftResultIds": [
+        "SCI-A-F01-R031-F01-METFORMIN-COMPOSITE"
+      ],
+      "familyStatus": "Existing study-family ID reused.",
+      "timepointStatus": "Not recorded in reused public material; retained explicit gap.",
+      "existingFullReview": {
+        "present": false,
+        "state": "pending"
+      },
+      "newScientificExtraction": false,
+      "familyBasis": "Current MF-COVID-VIRAL-2024 source uses S-COVIDOUT-2023 and identifies its virologic analysis as the COVID-OUT trial; existing Long COVID rows use this same family."
+    },
+    {
+      "rowId": "SYN-D01-C30-MASTERS-MUSCLE-GROWTH",
+      "existingPublicSourceId": "MF-MASTERS-2019",
+      "sourceFactPath": "data/content.json#/sources/34",
+      "guideQuestionId": "MASTERS-MUSCLE-GROWTH",
+      "relatedRecoveredDraftResultIds": [],
+      "familyStatus": "No verified existing family ID located; kept empty rather than inventing independent-family identity.",
+      "timepointStatus": "Not recorded in reused public material; retained explicit gap.",
+      "existingFullReview": {
+        "present": false,
+        "state": "pending"
+      },
+      "newScientificExtraction": false
+    }
+  ],
+  "integrationNotes": [
+    "No existing source-specific scientific approval located for these new rows; preserve Not appraised/pending.",
+    "Current evidence-assessment compiler assumes every row is graded. Renderer already supports Not graded. Do not fabricate assessment records to satisfy that assumption.",
+    "Five rows retain explicit unrecorded timepoint gaps; no new numbers were extracted.",
+    "C16 row is adenoma recurrence prevention, not established colorectal cancer treatment. C30 row is training adaptation, not MET-PREVENT walking speed.",
+    "Research Feed already renders all these original-source summaries from guide sourceIds; the missing surface is the evidence table.",
+    "Source family IDs remain empty unless existing coordination supports them. Raw report counts must not be presented as verified independent family counts."
+  ]
+}

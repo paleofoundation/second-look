@@ -1,0 +1,71 @@
+{
+  "plan_id": "SL-INGEST-3.0-FETCH30",
+  "plan_sha256": "90150fe725c7d7c964e4aeb3c3c5574c8dfd64865d2c288857040725e98cad28",
+  "schema_sha256": "b7be5e448c9b54e12e1145f9102e0664a101e67480f354117c476221da9155cb",
+  "received_at": "2026-10-09T11:07:49.849165+00:00",
+  "archive_sha256": "54f7c76acac994c4d218c1c948d2715384e6dea5807b990371956e7341bc48bd",
+  "input_files_checked": 874,
+  "schema_and_packet_errors": 0,
+  "sources": 834,
+  "reports": 674,
+  "file_records": 594,
+  "unique_file_blobs": 593,
+  "screening_decisions": 14007,
+  "source_gaps": 241,
+  "request_coverage_gaps": 59,
+  "all_gap_records": 300,
+  "coverage_requests": 59,
+  "independent_studies": null,
+  "independent_studies_missing_reason": "unverified_registry_family_links",
+  "extraction_calibration": {
+    "assigned_worker": "/root/source_calibration",
+    "eligible_sources": [
+      {
+        "source_id": "B-R0092-F01",
+        "path": "/Users/kmfp/Documents/ChatGPT/One Match Rule/work/ingest/FETCH30-B-20261009T101312Z/input/return/F03/PRIMARY/B-R0092__original_report__randomised-controlled-trial-of-fluoxetine-versus-naltrexone.pdf",
+        "source_sha256": "72da2c08caf73802795eb0cbe7c4615dccdf8f7ed4ebb6937ac21e7adbacec94",
+        "doi_verified": "10.1136/bmjment-2026-302953",
+        "pmid": "42838712",
+        "design": "human_randomized",
+        "request_ids": [
+          "COND-C07",
+          "DRUG-D04"
+        ],
+        "source_locator": "input/return/F03/acquisition-return.json#sources/B-R0092-F01"
+      },
+      {
+        "source_id": "B-R0016-F01",
+        "path": "/Users/kmfp/Documents/ChatGPT/One Match Rule/work/ingest/FETCH30-B-20261009T101312Z/input/return/F03/PRIMARY/B-R0016__original_report__prior-sglt2-inhibitor-and-metformin-use-and-risk-of-long-cov.pdf",
+        "source_sha256": "2f3f0e9b7c71c9d5f0c8756e2c0a5e2f2d560953dc656858952e277760f9be3b",
+        "doi_verified": "10.1007/s40121-026-01362-z",
+        "pmid": "42236640",
+        "design": "human_observational",
+        "request_ids": [
+          "COND-C01",
+          "DRUG-D01"
+        ],
+        "source_locator": "input/return/F03/acquisition-return.json#sources/B-R0016-F01"
+      },
+      {
+        "source_id": "B-R0071-F01",
+        "path": "/Users/kmfp/Documents/ChatGPT/One Match Rule/work/ingest/FETCH30-B-20261009T101312Z/input/return/F03/PRIMARY/B-R0071__original_report__the-stop-covid-2-study-fluvoxamine-vs-placebo-for-outpatient.pdf",
+        "source_sha256": "af2ee25c84097eb946d81a4eff86f26dfa0b6f8fcf5230cdde6b8cbffe30a043",
+        "doi_verified": "10.1093/ofid/ofad419",
+        "pmid": "37622035",
+        "design": "human_randomized",
+        "request_ids": [
+          "COND-C02",
+          "DRUG-D02"
+        ],
+        "source_locator": "input/return/F03/acquisition-return.json#sources/B-R0071-F01"
+      }
+    ],
+    "mapping_errors": 0,
+    "mapping_scope": "Acquired PRIMARY original report bytes to verified source/report DOI/PMID and governed request IDs. Candidate request relevance and study-family independence remain unreviewed; no source relevance conclusions implied.",
+    "extraction_schema": "outputs/handoff/history/acquisition-packet-v2.0/future-source-record.schema.json",
+    "scientific_results_destination": "private candidate extraction only; no canonical claims/results or page numbers",
+    "calibration_scope": "Three exact existing-report identities with new acquired PDFs, two randomized and one observational. Bounded format/source-recovery calibration; no scale-up before audit."
+  },
+  "publication_state": "draft",
+  "human_review_status": "pending"
+}

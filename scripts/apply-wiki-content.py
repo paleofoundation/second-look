@@ -85,6 +85,8 @@ if expansion_path.exists():
     for addition in expansion["drugs"]:
         record = next(record for record in mechanisms["drugs"] if record.get("drugId") == addition["drugId"])
         upsert(record.setdefault("questions", []), addition["questions"], lambda question: question["id"])
+        if addition.get("pathways"):
+            upsert(record.setdefault("pathways", []), addition["pathways"], lambda pathway: pathway["id"])
     write("data/public-mechanisms.json", mechanisms)
 
     envelopes = read("data/review-envelopes.json")

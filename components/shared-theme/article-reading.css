@@ -47,7 +47,7 @@
   text-decoration:none;
 }
 .omr-theme .omr-hero-actions :is(a,button):focus-visible {
-  outline:2px solid var(--omr-accent,#f6bc45);
+  outline:2px solid var(--omr-accent,var(--brand-yellow));
   outline-offset:3px;
 }
 .omr-theme .omr-hero-action__icon {
@@ -144,9 +144,48 @@ sup.citation-sup,
   text-decoration-color: currentColor;
 }
 .omr-theme .related-reading { margin: 0 0 28px; }
-.omr-theme .related-reading h2 { font-family: Inter, Arial, sans-serif; font-size: 16px; line-height: 1.5; margin: 0 0 12px; padding-bottom: 10px; border-bottom: 1px solid var(--omr-border, #dce3e6); }
+.omr-theme .related-reading h2 { font-family: Inter, Arial, sans-serif; font-size: 16px; line-height: 1.5; margin: 0 0 12px; padding-bottom: 10px; border-bottom: 1px solid var(--omr-border, var(--brand-line)); }
 .omr-theme .related-reading ul { list-style: none; padding: 0; margin: 0; }
 .omr-theme .related-reading li + li { margin-top: 6px; }
 .omr-theme .related-reading a { display: block; padding: 8px 0; color: var(--omr-link); font-size: 14px; line-height: 1.6; text-decoration: none; overflow-wrap: anywhere; }
 .omr-theme .related-reading a:hover, .omr-theme .related-reading a:focus-visible { text-decoration: underline; text-underline-offset: 3px; }
 @media (max-width: 991px) { .omr-theme .related-reading a { padding: 11px 0; font-size: 16px; } }
+
+/* Inline citation links: never underlined (elon) */
+sup.citation-sup a,
+sup.citation-sup a:hover,
+sup.citation-sup a:focus,
+sup.citation-sup a:active,
+sup.citation-sup a:visited,
+.omr-theme sup.citation-sup a,
+.omr-theme sup.citation-sup a:hover,
+.omr-theme sup.citation-sup a:focus,
+.omr-theme sup.citation-sup a:active,
+.omr-theme sup.citation-sup a:visited { text-decoration:none !important; }
+
+/* Smaller, tighter inline citations; adjacent clusters sit together (elon) */
+sup.citation-sup,
+.omr-theme sup.citation-sup,
+.omr-theme .evidence-table .table-sub sup.citation-sup { font-size:.65em; letter-spacing:-.02em; margin:0; padding:0; }
+sup.citation-sup + sup.citation-sup,
+.omr-theme sup.citation-sup + sup.citation-sup { margin-left:0; }
+sup.citation-sup a,
+.omr-theme sup.citation-sup a { padding:0 .05em; margin:0; letter-spacing:inherit; }
+
+/* Drug Status table (elon) */
+.omr-theme .status-table-wrap { margin:1rem 0 1.5rem; overflow-x:auto; }
+.omr-theme .status-table { width:100%; border-collapse:collapse; font-size:15px; line-height:1.5; color:var(--brand-ink); }
+.omr-theme .status-table th,.omr-theme .status-table td { padding:10px 12px; text-align:left; vertical-align:top; border-bottom:1px solid var(--brand-line); }
+.omr-theme .status-table thead th { font-size:12px; font-weight:650; letter-spacing:.05em; text-transform:uppercase; color:var(--brand-muted); background:var(--color-bg); }
+.omr-theme .status-table tbody th { font-weight:500; }
+.omr-theme .status-pill { display:inline-block; padding:2px 8px; border-radius:3px; font-size:13px; font-weight:600; white-space:nowrap; }
+.omr-theme .status-pill--approved { background:var(--brand-blue-light); color:var(--color-primary); }
+.omr-theme .status-pill--research { background:var(--color-bg); color:var(--brand-muted); }
+.omr-theme .status-table .sr-only,.omr-theme .status-table caption.sr-only { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
+@media (max-width:640px){
+ .omr-theme .status-table thead { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); }
+ .omr-theme .status-table,.omr-theme .status-table tbody,.omr-theme .status-table tr,.omr-theme .status-table th,.omr-theme .status-table td { display:block; width:100%; }
+ .omr-theme .status-table tr { padding:8px 0; border-bottom:1px solid var(--brand-line); }
+ .omr-theme .status-table th,.omr-theme .status-table td { border:0; padding:3px 0; }
+ .omr-theme .status-table td::before { content:attr(data-label) ": "; font-weight:600; color:var(--brand-muted); font-size:13px; }
+}

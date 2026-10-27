@@ -1,0 +1,32 @@
+/* Match theme reset specificity so map labels and spacing survive the shared shell. */
+:global(.omr-theme) .map { margin:0; padding:26px 26px 22px; background:#EFF2FF; color:#17204D; border-radius:4px; border:1px solid #FFFFFF55; box-shadow:0 18px 48px #1027B82E; }
+:global(.omr-theme) .map .heading { display:flex; justify-content:space-between; align-items:center; gap:16px; font-size:12px; letter-spacing:.08em; text-transform:uppercase; color:#1736F5; }
+:global(.omr-theme) .map .heading svg { width:24px; height:24px; }
+:global(.omr-theme) .map .diagram { position:relative; height:310px; margin:8px 0 14px; color:#1736F5; }
+:global(.omr-theme) .map .routes { position:absolute; inset:0; width:100%; height:100%; overflow:visible; }
+:global(.omr-theme) .map .established,:global(.omr-theme) .map .investigated { fill:none; stroke:currentColor; stroke-width:2; vector-effect:non-scaling-stroke; }
+:global(.omr-theme) .map .investigated { stroke-dasharray:5 7; stroke-linecap:round; }
+:global(.omr-theme) .map .medication { position:absolute; left:0; top:50%; transform:translateY(-50%); width:35%; display:flex; flex-direction:column; align-items:center; gap:12px; padding:8px 0; background:#EFF2FF; text-align:center; font-size:16px; line-height:1.35; }
+:global(.omr-theme) .map .medication img { display:block; width:134px; max-width:100%; height:auto; }
+:global(.omr-theme) .map .destination { position:absolute; left:58%; right:0; display:flex; align-items:center; gap:10px; transform:translateY(-50%); font-size:15px; line-height:1.4; }
+:global(.omr-theme) .map .destination small { display:block; font-size:11px; color:#5B6175; margin-top:4px; }
+:global(.omr-theme) .map .destination svg { flex-shrink:0; width:44px; height:44px; }
+:global(.omr-theme) .map .known { top:16.25%; }
+:global(.omr-theme) .map .question { top:50%; }
+:global(.omr-theme) .map .another { top:83.75%; }
+:global(.omr-theme) .map .legend { display:flex; flex-wrap:wrap; gap:9px 18px; font-size:11px; line-height:1.4; margin-bottom:16px; color:#5B6175; }
+:global(.omr-theme) .map .legend span { display:flex; align-items:center; gap:7px; }
+:global(.omr-theme) .map .legend i { display:block; width:22px; height:0; border-top:2px solid #1736F5; }
+:global(.omr-theme) .map .legend span:last-child i { border-top-style:dashed; }
+:global(.omr-theme) .map .key { display:flex; flex-wrap:wrap; gap:7px; border-top:1px solid #1736F530; padding-top:16px; }
+:global(.omr-theme) .map .key span { padding:4px 7px; border:1px solid #1736F530; border-radius:3px; font-size:11px; line-height:1.4; color:#17204D; background:#FFFFFF99; }
+:global(.omr-theme) .map figcaption { margin-top:14px; font-size:12px; line-height:1.5; color:#5B6175; }
+@media(max-width:639px) {
+  :global(.omr-theme) .map { padding:20px 15px; }
+  :global(.omr-theme) .map .diagram { height:290px; }
+  :global(.omr-theme) .map .medication { font-size:14px; }
+  :global(.omr-theme) .map .destination { left:55%; font-size:13px; gap:6px; }
+  :global(.omr-theme) .map .destination svg { width:34px; height:34px; }
+  :global(.omr-theme) .map .destination small { font-size:10px; }
+  :global(.omr-theme) .map .key { gap:6px; }
+}

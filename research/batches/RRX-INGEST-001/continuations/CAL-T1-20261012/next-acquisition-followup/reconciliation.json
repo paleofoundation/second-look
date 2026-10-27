@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "remaprx-bibliographic-followup-v1",
+  "checkedAt": "2026-10-12T14:20:15.136314+00:00",
+  "inspector": "codex/root",
+  "planSha256": "ab5ecaf3c5ee9d4e1c4e313c25fd256e4464a8643f81ada061038083f2fbecf9",
+  "receiptSha256": "572d5e6d93b3011585e36ce6a21bdbd68a45f17af472debf733763743ca6d12e",
+  "rows": [
+    {
+      "packetId": "CAL-01",
+      "filename": "CAL-01/crossref-retry.json",
+      "status": "RECEIVED",
+      "sha256": "4c3b24b80f929cf509f4d9807dc3bbb5b5308c5248cb6c9f9e4a471fdb342531",
+      "httpStatus": 200,
+      "error": null,
+      "identity": {
+        "doi": "10.1093/ofid/ofad419",
+        "title": [
+          "The STOP COVID 2 Study: Fluvoxamine vs Placebo for Outpatients With Symptomatic COVID-19, a Fully Remote Randomized Controlled Trial"
+        ]
+      },
+      "disposition": "Crossref DOI/title matches previously checked main report; failed429preserved"
+    },
+    {
+      "packetId": "CAL-03",
+      "filename": "CAL-03/europepmc-doi.json",
+      "status": "RECEIVED",
+      "sha256": "f87d13531233e56da7ed1246361645aa57133b308c5cee2abd703bdde1635734",
+      "httpStatus": 200,
+      "error": null,
+      "identity": {
+        "id": "PMC13646924",
+        "source": "PMC",
+        "doi": null,
+        "pmid": null,
+        "pmcid": "PMC13646924",
+        "title": "Randomised controlled trial of fluoxetine versus naltrexone in compulsive sexual behaviour disorder",
+        "authorString": "Savard J, Piwowar M, Adebahr R, Bystr\u00f6m M, Hallberg J, Dhejne C, G\u00f6rts \u00d6berg K, Jokinen J."
+      },
+      "disposition": "ExactDOIquery returns one PMC record matching title/authors; record lacks DOI/PMID fields. PMCID is a corroborating discovery lead; historical PMID42838712 remains unverified, not replaced or silently merged."
+    },
+    {
+      "packetId": "CAL-04",
+      "filename": "CAL-04/journal-publisher.pdf",
+      "status": "ACCESS_OR_MEDIA_HOLD",
+      "sha256": "a5761e6c4e3106d624d994390258d568c98acad9f953531237a1b9ad5c869e4c",
+      "httpStatus": 403,
+      "error": null,
+      "disposition": "Keep source/access or quarantine hold; failed download is not full text."
+    },
+    {
+      "packetId": "CAL-06",
+      "filename": "CAL-06/original-publisher.pdf",
+      "status": "ACCESS_OR_MEDIA_HOLD",
+      "sha256": "cb8eaf6bb4a6ed8047ecdba924f85a766565ad6368ae09daa1e99145389758a2",
+      "httpStatus": 403,
+      "error": null,
+      "disposition": "Keep source/access or quarantine hold; failed download is not full text."
+    },
+    {
+      "packetId": "CAL-06",
+      "filename": "CAL-06/original-publisher.xml",
+      "status": "ACCESS_OR_MEDIA_HOLD",
+      "sha256": "bbd4e2c63d09218de65f5440941519bed962e3ad626548139d39ce70cc128172",
+      "httpStatus": 403,
+      "error": null,
+      "disposition": "Keep source/access or quarantine hold; failed download is not full text."
+    },
+    {
+      "packetId": "CAL-08",
+      "filename": "CAL-08/europepmc-supplements.zip",
+      "status": "FAILED",
+      "sha256": null,
+      "httpStatus": null,
+      "error": "curl: (28) Operation timed out after 45010 milliseconds with 65083 bytes received",
+      "disposition": "Keep source/access or quarantine hold; failed download is not full text."
+    }
+  ],
+  "scientificBodyExtracted": false,
+  "canonicalChanges": 0,
+  "quarantineLifted": false
+}

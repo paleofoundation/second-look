@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "remaprx-source-fanout-audit-v1",
+  "status": "PASS",
+  "scope": "independent_source_and_fanout_verification",
+  "author": "codex/root",
+  "auditor": "codex/identity_review",
+  "reviewedAt": "2026-10-12T12:19:05.245011+00:00",
+  "candidateSha256": "aed9959303463b67519c1de979479e002d86b72ccfa1e803c41ee504bec6c4e3",
+  "bindingsSha256": "d928b624224c154c702e8273b55e973d0e9a4aa351e295e58cceac31ef79ab3b",
+  "sourceSha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+  "auditedResultIds": [
+    "RRX-CAL07-R01",
+    "RRX-CAL07-R02",
+    "RRX-CAL07-R03"
+  ],
+  "auditedClaimIds": [
+    "RRX-CAL07-CL01",
+    "RRX-CAL07-CL02",
+    "RRX-CAL07-CL03",
+    "RRX-CAL07-CL04"
+  ],
+  "auditedScopedClaimIds": [],
+  "checks": {
+    "sourceIdentity": true,
+    "sourceLocators": true,
+    "numericValues": true,
+    "claimChain": true,
+    "scientificRelevance": true,
+    "scopeAndModelLimits": true,
+    "questionRoutes": true,
+    "pageHistory": true
+  },
+  "evidence": [
+    {
+      "path": "research/batches/RRX-INGEST-001/calibration/audits/CAL-07-rebound-source-evidence.json",
+      "sha256": "d37d668ffc8b3493bba2f9c0c541f33ea70a771a0b45653a73408bb736499e5f"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/calibration/audits/CAL-07-source-observations.json",
+      "sha256": "f5386509396e4db46ed2964618de114322d6f274890fea314a97a8c9414848e0"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "schemaVersion": "remaprx-source-authoring-notes-v1",
+  "assignmentId": "CAL-07-S01",
+  "author": "corpus_audit / extractor-a",
+  "createdAt": "2026-10-12T11:49:13.934331+00:00",
+  "candidatePath": "research/batches/RRX-INGEST-001/calibration/candidates/CAL-07/CAL-07-S01.candidate.json",
+  "candidateSha256": "aed9959303463b67519c1de979479e002d86b72ccfa1e803c41ee504bec6c4e3",
+  "source": {
+    "assignment_id": "CAL-07-S01",
+    "batch_id": "RRX-INGEST-001",
+    "bytes": 235104,
+    "canonical_report_id": "MECH-D07-HEDGEHOG-2010",
+    "equivalentFileIds": [
+      "MECHANISM:MECH-D07-HEDGEHOG-2010"
+    ],
+    "holdReasons": [],
+    "integrity_hold": false,
+    "logicalSource": {
+      "fileId": "MECHANISM:MECH-D07-HEDGEHOG-2010",
+      "path": "editorial/mechanism-expansion/itraconazole-hedgehog-2010.html",
+      "rootId": "APP"
+    },
+    "media_type": "text/html",
+    "ownerSlot": "extractor-a",
+    "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/second-look-navigation/editorial/mechanism-expansion/itraconazole-hedgehog-2010.html",
+    "permittedActionAfterGP": "bounded_source_candidate_and_q01_q15_inputs",
+    "role": "existing_mechanism_source",
+    "sha256": "dd59263b2f15918071854c3e0f123aca9fd004ccf825829ef64807e53150c578",
+    "sourceIdsAtSameBytes": [
+      "MECH-D07-HEDGEHOG-2010"
+    ],
+    "source_id": "MECH-D07-HEDGEHOG-2010"
+  },
+  "readLog": [
+    {
+      "location": "Article citation/front matter",
+      "action": "Read title, DOI, PMCID/PMID, author affiliations and manuscript/version label in the assigned HTML.",
+      "limitations": "External publisher/version/correction pages were not opened."
+    },
+    {
+      "location": "abstract1; S1; paragraphs P1-P4",
+      "action": "Read summary and introduction for objective and mechanistic context.",
+      "limitations": "Background citations are not independently acquired primary sources."
+    },
+    {
+      "location": "S2; paragraphs P5-P22",
+      "action": "Read all Results and Discussion paragraphs and compare tested observations with proposed mechanism and clinical translation.",
+      "limitations": "No new acquisition; numerical graph values and reported exposure comparisons are not independently verified."
+    },
+    {
+      "location": "F1-F7; figure legends P43-P52",
+      "action": "Read all seven figure legends and cross-check the localization figure reference discrepancy in P12.",
+      "limitations": "Remote figure image bytes were not present in the assigned local file and were not fetched. No pixel-level figure inspection claimed."
+    },
+    {
+      "location": "S3-S14; paragraphs P23-P40",
+      "action": "Read all experimental methods, including cell assays, binding competition, immunofluorescence/microscopy, mouse models, growth/necrosis measurements and exposure bioassays.",
+      "limitations": "Detailed arm/experimental-unit numeric extraction and formal risk-of-bias appraisal remain pending."
+    },
+    {
+      "location": "SM; BX1; S15; fn-group1; associated-data supplement link",
+      "action": "Read supplement notice, significance, acknowledgements and publisher disclaimer; identified the separate supplement PDF link.",
+      "limitations": "Supplement contents were not accessible in this assignment. References are retained as source leads, not separately read or merged."
+    }
+  ],
+  "scope": "Source-located draft; no source/semantic acceptance or human/public approval.",
+  "counts": {
+    "results": 3,
+    "claims": 4,
+    "qInputs": 15,
+    "locatedCandidateQuestions": 5,
+    "partialQuestions": 10,
+    "typedNumericResults": 0
+  },
+  "testedProposedInferred": {
+    "tested": [
+      "Reporter/localization responses",
+      "Fluorescent cyclopamine competition",
+      "Mouse tumor-model growth"
+    ],
+    "proposed": [
+      "Direct action at a Smoothened site distinct from cyclopamine; direct binding explicitly not demonstrated."
+    ],
+    "editorialInference": [
+      "Nonhuman pathway/tumor observations motivate investigation but do not establish human benefit."
+    ]
+  },
+  "quoteCheck": "Every source_locators quotation was asserted to occur in whitespace-normalized text of its exact native element.",
+  "visualInspection": "No figure-image pixel inspection; no quantitative figure results imported.",
+  "mechanismPayload": "null under recorded addendum; no claim of complete structured mechanism extraction.",
+  "next": "Independent verification by identity_review before integrator acceptance.",
+  "revisedAt": "2026-10-12T11:53:00.407205+00:00",
+  "revision": {
+    "previousCandidateSha256": "c8d3cdf9135a3f8111f364d0fd58cd14c06271e85faf13a02954743d80e4bb58",
+    "author": "corpus_audit / extractor-a",
+    "changes": [
+      "Replaced three vague timepoints with source-explicit experimental timing; added P28 binding-method locator.",
+      "Added source-scoped R03-only CL04 for mouse basal-cell carcinoma growth and nonclinical applicability limit; preserved broader CL03.",
+      "All exact quotations checked again against assigned native element text."
+    ],
+    "requestors": [
+      "independent-verifier / identity_review",
+      "integrator / root"
+    ],
+    "acceptance": "No acceptance by author; independent verification pending."
+  },
+  "planBindingHistory": [
+    {
+      "boundAt": "2026-10-12T12:12:55.737982+00:00",
+      "oldPlanId": "RRX-INGEST-001-1.2",
+      "oldPlanSha256": "590613abf20c2dc5930a6a47c01f60b5a4c7fcc5ee8bc48693c013ff045971f0",
+      "newPlanId": "RRX-INGEST-001-1.3",
+      "newPlanSha256": "4f7100d3aa5df7ad98768c5c4be1d6f863bdcf4d0e115417c84e9f0577a02d71",
+      "previousCandidateSha256": "d4de221136ff49e978162058ea02dbdc0a60740fdc444a728728f287adf3ddc8",
+      "candidateSha256": "aed9959303463b67519c1de979479e002d86b72ccfa1e803c41ee504bec6c4e3",
+      "action": "Only candidate plan_id and plan_sha256 changed after independent GP; all original inspection/read-log/content/missingness bytes represented by the same decoded values. No new source extraction.",
+      "preservedHistoryDirectory": "research/batches/RRX-INGEST-001/calibration/candidates/CAL-07/history/rebind-from-plan1.2-d4de221136ff"
+    }
+  ]
+}

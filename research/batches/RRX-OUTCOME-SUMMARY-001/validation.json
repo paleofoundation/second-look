@@ -1,0 +1,119 @@
+{
+  "validatedAt": "2026-10-12T17:42:30.395561+00:00",
+  "dataChecks": {
+    "status": "PASS",
+    "syntheses": 62,
+    "summaries": 60,
+    "uniqueRCTs": 43,
+    "missingRCTParticipantCounts": 3,
+    "letters": {
+      "A": 0,
+      "B": 0,
+      "C": 5,
+      "D": 16,
+      "E": 25,
+      "F": 6,
+      "ungraded": 8
+    },
+    "longCovidMetformin": {
+      "rctCount": 3,
+      "participants": 4909,
+      "participantBasis": "Participants in the included randomized comparisons, counted once per trial; see study details for enrollment and analysis populations.",
+      "trialFamilyIds": [
+        "S-COVIDOUT-2023",
+        "S-ACTIV6-2026",
+        "S-KOREA-2026"
+      ],
+      "sourceIds": [
+        "P-COVIDOUT-2023",
+        "P-ACTIV6-2026",
+        "P-KOREA-2026"
+      ],
+      "trials": [
+        {
+          "id": "S-COVIDOUT-2023",
+          "participants": 1431,
+          "participantBasis": "1431 randomized in COVID-OUT; study-level population, not the 1126-person Long COVID follow-up subset.",
+          "sourceIds": [
+            "P-COVIDOUT-2023"
+          ]
+        },
+        {
+          "id": "S-ACTIV6-2026",
+          "sourceIds": [
+            "P-ACTIV6-2026"
+          ],
+          "participants": 3214,
+          "participantBasis": "3214 randomized in ACTIV-6; 2983 in the recorded analysis population."
+        },
+        {
+          "id": "S-KOREA-2026",
+          "participants": 264,
+          "participantBasis": "264 participants in the metformin and placebo comparison (132 per arm); excludes the separate ursodeoxycholic-acid arm.",
+          "sourceIds": [
+            "P-KOREA-2026"
+          ]
+        }
+      ]
+    },
+    "checks": [
+      "source and row closure",
+      "explicit source-located assessments",
+      "stale input and projection rejection",
+      "held/computational grade rejection",
+      "overlap-aware trial and participant totals",
+      "conflicting denominator rejection",
+      "unknown is null",
+      "single-summary explanation preserved"
+    ]
+  },
+  "preservation": [
+    {
+      "path": "data/public-reader-evidence.json",
+      "sha256": "d6f8c4bf30679070f00caee89d7c44ff0193f19c4891be86b7cf7d3073c62d1d",
+      "unchanged": true
+    },
+    {
+      "path": "data/reader-evidence.json",
+      "sha256": "3b97754bb68fc802146a6f1cd59faad3e63f0d36307c045c4f82b543411b8e53",
+      "unchanged": true
+    },
+    {
+      "path": "data/public-content.json",
+      "sha256": "f513f35f1a829a28297db4d549303290e947cf535e1782203cbb71e0d2098cac",
+      "unchanged": true
+    },
+    {
+      "path": "editorial/evidence-assessments.json",
+      "sha256": "f7ead7a93823347b40b3af8a4e3b128e83be28626fb231dc7ceed9135bd09acc",
+      "unchanged": true
+    },
+    {
+      "path": "data/public-evidence-assessments.json",
+      "sha256": "b6029f133cc17da6f91d8ecb16d3e991c8ab29ce1924f1780d811de4c09961eb",
+      "unchanged": true
+    },
+    {
+      "path": "editorial/reader-source-aliases.json",
+      "sha256": "70186e5e5ced9232a4a21b321c5c988058191c514131dbea8ce442e352cb2fef",
+      "unchanged": true
+    },
+    {
+      "path": "editorial/reader-source-corrections.json",
+      "sha256": "06561277b96ef2f869312715e2a55ebcc9a9c84662b8e0d59714dd8395e7b0e2",
+      "unchanged": true
+    },
+    {
+      "path": "data/outcome-registry.json",
+      "sha256": "af9726dd1c691ff6d23ab26ffe1332fedf15af63a127f79709ba35cff06d8566",
+      "unchanged": true
+    }
+  ],
+  "repeatBuildIdentical": true,
+  "outputHashes": {
+    "data/outcome-summaries.json": "6ae716e13d559d8293b53d5bedcb0c5d48f5fccc4b433eb59866a95fb530380e",
+    "editorial/outcome-summary/assessments.json": "1bcffe697ea5e76f1832de4c1b5aade74cbd7a556058ba591156e128a458641c"
+  },
+  "scientificStatus": "Selected-source AI-assisted benefit assessments; independent integration audit and human approval remain separate.",
+  "externalAcquisitionCount": 0
+}

@@ -1,0 +1,89 @@
+{
+  "schemaVersion": "remaprx-independent-checkpoint-code-review-v1",
+  "status": "PASS",
+  "auditor": "codex/identity_review",
+  "reviewedAt": "2026-10-12T12:33:41.403106+00:00",
+  "scope": "Independent read-only review of root-authored preparation/check reports and pipeline-authored fanout; self-authored audit implementation is explicitly excluded from independent-code-review claims.",
+  "independentlyReviewed": [
+    {
+      "artifact": {
+        "path": "scripts/prepare-research-checkpoint.py",
+        "sha256": "fe96ae982fbdf08a0f2fbe7343db1fdc6858494305e64b10c488607d1e9f4f87"
+      },
+      "author": "codex/root",
+      "observations": [
+        "Requires exact verified private fanout controls/candidate and exact 47 completed historical checkpoint hashes.",
+        "Limits new target to private verified-batches/CAL-07.json and preserves all human/appraisal/release/full-review flags false.",
+        "Records both current document and archived snapshot hashes for explicitly declared PROJECT-RULES/RULE-CHANGELOG replay isolation.",
+        "Rejects existing attempts and pins implementation, source-map, inputs and snapshots; does not apply or approve content."
+      ],
+      "limitations": [
+        "Preparation is not acceptance. Independent replay/audit and current GP are still required before apply."
+      ]
+    },
+    {
+      "artifact": {
+        "path": "scripts/check-research-checkpoint.py",
+        "sha256": "3799b19251e182daf56301c9f4f2048354e65e3990354e453203b97f19ac5fea"
+      },
+      "author": "codex/root",
+      "observations": [
+        "Requires current preflight, GP readiness and independent exact candidate/target/input/evidence agreement.",
+        "Exercises the exact candidate in a separate temporary store with locking for both first and repeat applications.",
+        "Requires repeat zero changes and matching final target hashes; reruns live preflight after scratch execution.",
+        "Writes technical reports bound to the independent audit; performs no canonical import and cannot establish scientific approval."
+      ],
+      "limitations": [
+        "Canonical integration and unchanged second apply remain the integrator responsibility."
+      ]
+    },
+    {
+      "artifact": {
+        "path": "scripts/research_fanout.py",
+        "sha256": "c2ca993473107efb97ce18647298cc8ac35f44fada47979bbf0c6bcc49e9de96"
+      },
+      "author": "codex/pipeline_audit",
+      "testArtifact": {
+        "path": "tests/research_ingest/test_fanout.py",
+        "sha256": "40d45a5362174ce65279ba27e9312d7bd87d7962a46696491c20c5d207a1e5f7"
+      },
+      "independentTestsPassed": 15,
+      "observations": [
+        "Source extractor and binding author are distinct from independent auditor; exact candidate/source/binding/evidence hashes are required.",
+        "All original claim dependencies are independently audited; narrower restatements retain explicit scope and source lineage.",
+        "Non-null condition identity selects Interventions and preserves pending layout/render verification; question routes with no entity are not misclassified.",
+        "Mixed drug/condition public-mechanism records use guarded drug matching; duplicate matching drug records HOLD.",
+        "Canonical plan proposal date gives reproducible output; no date.today drift or canonical writes."
+      ],
+      "limitations": [
+        "When current shared visual docs diverge, historical fanout replays only through the explicit isolated checkpoint contract. Reader integration requires a new current plan."
+      ]
+    }
+  ],
+  "authoredAuditToolNotClaimedIndependentReview": {
+    "artifact": {
+      "path": "scripts/audit-research-checkpoint.py",
+      "sha256": "c192333a4cc1e9ee6f6748505653f6598e175adb240d89ba72ff580264a2f68f"
+    },
+    "author": "codex/identity_review",
+    "tests": {
+      "path": "tests/research_ingest/test_checkpoint_audit.py",
+      "sha256": "f22dbb70ee4d32e9d73e8bc137872ab89e6b8a431ee8394c4ae128db41e1dac0"
+    },
+    "authorTestsPassed": 14,
+    "actualCandidateAudit": "PASS for 48-file candidate0eba0fe8a763b1fc5c2a2487739e5d4c99235e97ebb79bf30ddb9647923076ff; separate exact evidence in candidate audit directory"
+  },
+  "currentDocumentDivergenceReview": {
+    "paths": [
+      "docs/PROJECT-RULES.md",
+      "docs/RULE-CHANGELOG.md"
+    ],
+    "finding": "Inspected append-only additions for blue topic illustrations and internal-link underline styling/publication receipt. Prior scientific/access/release contracts are unchanged and preserved as an exact historical prefix. No active document was replaced."
+  },
+  "testEvidence": {
+    "path": "research/batches/RRX-INGEST-001/verification/final-checkpoint-tests.json",
+    "sha256": "7473ada8cdd0932b89589baa30d9710926c51c6b8a2f0d64843f7a72573ea9b1"
+  },
+  "scientificApproval": false,
+  "performedCanonicalImport": false
+}

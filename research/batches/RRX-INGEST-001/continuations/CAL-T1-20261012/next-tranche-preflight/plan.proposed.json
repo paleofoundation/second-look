@@ -1,0 +1,123 @@
+{
+  "eligiblePacketIds": [
+    "CAL-01",
+    "CAL-02",
+    "CAL-03"
+  ],
+  "futureOperationsRequiringNewGP": [
+    "safe_zip_materialization",
+    "front_matter_identity_verification",
+    "exact_identifier_integrity_acquisition",
+    "clinical_source_authoring",
+    "independent_full_report_review",
+    "guarded_private_integration"
+  ],
+  "heldPacketIds": [
+    "CAL-04",
+    "CAL-05",
+    "CAL-06",
+    "CAL-08"
+  ],
+  "immediatePermittedOperations": [
+    "metadata_inventory",
+    "prospective_assignment_planning"
+  ],
+  "inputs": [
+    {
+      "path": "research/batches/RRX-INGEST-001/calibration/assignments.json",
+      "sha256": "fe60bfc9908daab15d9eb7708a9405b2a4dcc482c948f31e594837f07276d49b"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/calibration/audits/held-packets.json",
+      "sha256": "48d420e9ef21f1ce4e9d4ee58550e40174ec68c3ffd65348d0b4f42642f09039"
+    },
+    {
+      "path": "rules/one-match-rule/references/research-reviews/review-questions-and-inputs.json",
+      "sha256": "02edeacc65227e5feeaf25b6c9568be406b48024216f83d2dda2ccfcc5042f3b"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/next-tranche-preflight/metadata-inventory.json",
+      "sha256": "2879abb65805070bafa1914ca904be1708fde460770cfcfb990f0c6f1f03c870"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/next-tranche-preflight/source-locations.prospective.json",
+      "sha256": "b3f0ab546d18634aa374b95941f69f5fc4bee09d7212c60c48ab27e41ce396d3"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/next-tranche-preflight/archive-members.prospective.json",
+      "sha256": "87853397d07cded85672412a757d8d7ee698f1ac602ac48de30f3407c9c32558"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/next-tranche-preflight/eligibility-summary.json",
+      "sha256": "ee221c63ef6730706b0516b64bd11d6a5f4cea924b1a6f74f8b9b74fd2991b0e"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/next-tranche-preflight/bibliographic-identity.proposed.json",
+      "sha256": "4603152baf334e5b8e91288ede165475b4ce88582d2472966dea5e58c3c4f312"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/next-tranche-preflight/CAL-01/assignment.candidate.json",
+      "sha256": "eec8487437c55f27d4e9c9b456999497900658996e018c9edac542ebe73dd0a1"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/next-tranche-preflight/CAL-02/assignment.candidate.json",
+      "sha256": "58f6969b66ac550ea6b04e7caa6fdec105b1a387a0c2f22eda25d129c62b8cb7"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/next-tranche-preflight/CAL-03/assignment.candidate.json",
+      "sha256": "9023b8d714e8277737dbe3498aaed2c9076ed9b7bf234cbcb5fab90b5dfbb20f"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/next-tranche-preflight/CLINICAL-APPRAISAL-DRAFT.md",
+      "sha256": "8eac47162969d6f176d3c454235b857ebed57ad25399b5011926a30efe1bad65"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/next-tranche-preflight/ZIP-MEMBER-CONTRACT-DRAFT.md",
+      "sha256": "bf4844bd6e4178b8f07a6b8235d1ffb572e7b49048e469ec35f7bf0a32ca7326"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/next-tranche-preflight/inventory.py",
+      "sha256": "57a2e98be12c25ff6858cbb7e275a02cbc216cd656c308a22c2add8b655c3b78"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/next-tranche-preflight/test_inventory.py",
+      "sha256": "8b1e37fb7b578fc1660f7541aa288f8e916e6a05b14341c63a74943137b760bf"
+    },
+    {
+      "path": "research/batches/RRX-INGEST-001/continuations/CAL-T1-20261012/next-tranche-preflight/prepare-drafts.py",
+      "sha256": "cb68f469f1dfcba73b56cd021fd96e54e8423ec917be19b60957b8ca90d96d9c"
+    }
+  ],
+  "ownership": {
+    "authorsCannotAcceptOwnWork": true,
+    "integrator": "codex/root",
+    "maxWorkerSlots": 3,
+    "sourceOwnership": "One report and all companions together; same owner for overlapping family/version packets."
+  },
+  "planId": "RRX-CAL-T1-REMAINING-PROSPECTIVE-1.0",
+  "prospectiveAssignmentFiles": [
+    "CAL-01/assignment.candidate.json",
+    "CAL-02/assignment.candidate.json",
+    "CAL-03/assignment.candidate.json"
+  ],
+  "requiredBeforeActivation": [
+    "CAL07 exact independent acceptance and continuation decision",
+    "Adopt prospective trial/observational appraisal method",
+    "Resolve archive materialization and format prerequisites",
+    "Centrally confirm title/DOI/PMID/version against primary front matter and preserved identities before source fan-out",
+    "Perform separately approved exact-identifier Europe PMC/Crossref current metadata checks with dated actual receipt scope",
+    "Finalize assignments with private readable sources and received integrity metadata assets",
+    "Pin current rules/code/schemas and record independent GP before source authoring"
+  ],
+  "schemaVersion": "remaprx-tranche-preflight-plan-proposal-v1",
+  "scope": "Design-appropriate full private reviews for eligible remaining first-tranche reports after CAL07; preserved identity/integrity and missing-source holds.",
+  "scopeLimits": {
+    "canonicalWrites": false,
+    "humanApproval": false,
+    "independentScienceAccepted": false,
+    "newAcquisitionPerformed": false,
+    "released": false,
+    "sourceBodyExtractionPerformed": false
+  },
+  "status": "DRAFT_REQUIRES_FRESH_GP"
+}
