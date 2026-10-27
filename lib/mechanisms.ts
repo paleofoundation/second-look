@@ -14,12 +14,6 @@ export type EvidenceMechanism = {
   locator?: string;
 };
 export type RationalePlacement = 'article' | 'evidence';
-export type MechanismComparisonTable = {
-  id: string;
-  title: string;
-  introduction?: MechanismProse;
-  rows: {id: string; drug: string; model: MechanismProse; finding: MechanismProse; grade: MechanismProse}[];
-};
 export type DrugMechanism = {
   drugId?: string;
   conditionId?: string;
@@ -30,7 +24,6 @@ export type DrugMechanism = {
   presentation?: 'pathway-table-pilot';
   pathways?: (MechanismProse & {id: string; title: string})[];
   rationales?: MechanismRationale[];
-  comparisonTables?: MechanismComparisonTable[];
 };
 type MechanismContextRecord = {
   id: string; drugId: string; conditionIds: string[]; title: string;
@@ -38,21 +31,6 @@ type MechanismContextRecord = {
   clinicalMeaning: string;
 };
 const mechanisms = rawMechanisms as {contexts: MechanismContextRecord[]; drugs?: DrugMechanism[]};
-
-// Exact pilot scope authorized only by a separately recorded owner ruling.
-const comparisonGuideIds = new Set(['G-DRUG-D07', 'term-hedgehog-pathway', 'term-hyphae']);
-for (const record of mechanisms.drugs || []) {
-  if (!record.comparisonTables?.length) continue;
-  const itraconazoleOnly = record.drugId === 'D07' && !record.conditionId && !record.guideIds?.length;
-  const glossaryOnly = !record.drugId && !record.conditionId && !!record.guideIds?.length && record.guideIds.every(id => id === 'term-hedgehog-pathway' || id === 'term-hyphae');
-  if (!itraconazoleOnly && !glossaryOnly) throw new Error('Mechanism comparison table outside the authorized three-guide scope');
-}
-
-export function mechanismComparisonTablesFor(guide: Guide): MechanismComparisonTable[] {
-  const tables = drugMechanismFor(guide)?.comparisonTables || [];
-  if (tables.length && !comparisonGuideIds.has(guide.id)) throw new Error('Mechanism comparison table on an unauthorized guide');
-  return tables;
-}
 
 function proseCitationIds(prose?: MechanismProse) {
   return prose?.sentences ? prose.sentences.flatMap(sentence => sentence.sources) : prose?.sourceIds || [];
@@ -133,10 +111,6 @@ export function mechanismCitationIds(guide: Guide, rationalePlacement: Rationale
     ...proseCitationIds(record?.originalAction),
     ...proseCitationIds(record?.summary),
     ...(record?.pathways || []).flatMap(proseCitationIds),
-    ...mechanismComparisonTablesFor(guide).flatMap(table => [
-      ...proseCitationIds(table.introduction),
-      ...table.rows.flatMap(row => [row.model, row.finding, row.grade].flatMap(proseCitationIds)),
-    ]),
     ...(record?.rationales || []).filter(row => rationalePlacement !== 'evidence' || !mechanismEvidenceHref(guide, row.id)).flatMap(row => [row.rationale, row.tested, row.limits].flatMap(proseCitationIds)),
     ...(record?.questions || []).flatMap(proseCitationIds),
     ...mechanismContextsFor(guide).flatMap(context => context.sourceIds),

@@ -37,14 +37,13 @@ function ContextProse({context, content, renderText}: {context: MechanismContext
 }
 
 /** One visible explanation; multiple bounded contexts reuse the canonical disclosure. */
-export function MechanismSection({content, originalAction, summary, pathways = [], collapsiblePathways = false, comparisonTables = [], rationales = [], rationalePlacement = 'article', showRationales = true, questions = [], contexts = [], renderText = plainText}: {
+export function MechanismSection({content, originalAction, summary, pathways = [], collapsiblePathways = false, rationales = [], rationalePlacement = 'article', showRationales = true, questions = [], contexts = [], renderText = plainText}: {
   content: MechanismPresentation;
   renderText?: MechanismTextRenderer;
   originalAction?: ReactNode;
   summary?: ReactNode;
   pathways?: {id: string; title: string; explanation: ReactNode}[];
   collapsiblePathways?: boolean;
-  comparisonTables?: {id: string; title: string; introduction?: ReactNode; rows: {id: string; drug: string; model: ReactNode; finding: ReactNode; grade: ReactNode}[]}[];
   rationales?: {id: string; condition: string; conditionHref: string; evidenceHref?: string; rationale: ReactNode; tested: ReactNode; limits: ReactNode}[];
   rationalePlacement?: 'article' | 'evidence';
   showRationales?: boolean;
@@ -64,24 +63,6 @@ export function MechanismSection({content, originalAction, summary, pathways = [
       </details>)}
     </div> : pathways.map(pathway => <div className="mechanism-pathway" id={pathway.id} key={pathway.id}>
       <h3>{pathway.title}</h3>{pathway.explanation}
-    </div>)}
-    {comparisonTables.map(comparison => <div className="mechanism-comparison" key={comparison.id}>
-      <h3 id={comparison.id}>{comparison.title}</h3>
-      {comparison.introduction}
-      <figure className="wp-block-table mechanism-rationale-table">
-        <table role="table" aria-labelledby={comparison.id}>
-          <thead role="rowgroup"><tr role="row">
-            {['Drug', 'Model or population', 'Measured finding', 'Clinical inference and limits'].map(label => <th role="columnheader" scope="col" key={label}>{label}</th>)}
-          </tr></thead>
-          <tbody role="rowgroup">{comparison.rows.map(row => <tr role="row" id={row.id} key={row.id}>
-            <th role="rowheader" scope="row">{row.drug}</th>
-            {(['model', 'finding', 'grade'] as const).map((field, index) => <td role="cell" key={field}>
-              <span className="mechanism-cell-label" aria-hidden="true">{['Model or population', 'Measured finding', 'Clinical inference and limits'][index]}</span>
-              {row[field]}
-            </td>)}
-          </tr>)}</tbody>
-        </table>
-      </figure>
     </div>)}
     {!showRationales && <><span id="condition-rationales" aria-hidden="true"/>{rationales.map(row => <span id={row.id} key={row.id} aria-hidden="true"/>)}</>}
     {showRationales && rationales.length > 0 && <>
