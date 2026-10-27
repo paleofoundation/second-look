@@ -1,0 +1,717 @@
+{
+  "schemaVersion": 1,
+  "order": "FILL-REMAPRX-1",
+  "step": 1,
+  "baseCommit": "2004fbf0b6f58a652a867fd89972556bec510116",
+  "scope": "Existing site-source associations only. No acquisition, extraction, appraisal, scientific import, new claims, grades, outcomes, source identities or release-state change.",
+  "verificationBasis": "Applicability checked against exact existing canonical source metadata/locators and existing source-linked records, not newly inspected full texts. Existing missingness, source fidelity limits and pending review remain.",
+  "candidates": [
+    {
+      "route": "/conditions/multiple-myeloma",
+      "entityId": "C21",
+      "sourceId": "CP019-R01",
+      "decision": "wire_existing_source",
+      "role": "secondary_context",
+      "drugOrRegimen": "Lovastatin; review context",
+      "condition": "Multiple myeloma",
+      "population": "Cell lines; secondary reports",
+      "endpoint": "Cell-line sensitivity; review context only",
+      "reason": "Existing sampleDescription explicitly identifies multiple-myeloma cell lines. Review is bibliography context, not an independent myeloma trial or evidence for simvastatin.",
+      "existingSourceSha256": "17924e6da043535eddc0512b0b80945ee76a33630cde05586479056e32ec8ee8",
+      "existingRecordLocators": [
+        {
+          "section": "p. 7 Table 1; p. 9",
+          "basis": "Accepted CP28 extraction"
+        },
+        {
+          "section": "pp. 7–8 Table 1",
+          "basis": "Accepted CP28 extraction"
+        },
+        {
+          "section": "pp. 6, 9",
+          "basis": "Accepted CP28 extraction"
+        },
+        {
+          "section": "p. 7 Table 1",
+          "basis": "Accepted CP28 extraction"
+        }
+      ]
+    },
+    {
+      "route": "/conditions/multiple-myeloma",
+      "entityId": "C21",
+      "sourceId": "CP020-R01",
+      "decision": "wire_existing_source",
+      "role": "secondary_context",
+      "drugOrRegimen": "Leflunomide; review context",
+      "condition": "Multiple myeloma",
+      "population": "Patients described secondarily in a review",
+      "endpoint": "Secondary trial context only",
+      "reason": "Existing sampleDescription explicitly identifies a leflunomide multiple-myeloma study. Does not transfer its findings to other drugs or create a primary result.",
+      "existingSourceSha256": "741ec9053f018775210cebb37c0d5f0784f0c272ff343aa97cd822ff85d651e8",
+      "existingRecordLocators": [
+        {
+          "section": "printed/PDF p. 18",
+          "basis": "Accepted CP28 extraction"
+        },
+        {
+          "section": "printed/PDF p. 10",
+          "basis": "Accepted CP28 extraction"
+        },
+        {
+          "section": "printed/PDF p. 5 Table 2; printed/PDF p. 8",
+          "basis": "Accepted CP28 extraction"
+        },
+        {
+          "section": "printed/PDF p. 8",
+          "basis": "Accepted CP28 extraction"
+        },
+        {
+          "section": "printed/PDF p. 9",
+          "basis": "Accepted CP28 extraction"
+        },
+        {
+          "section": "printed/PDF p. 24",
+          "basis": "Accepted CP28 extraction"
+        },
+        {
+          "section": "printed/PDF p. 2; original p. 9",
+          "basis": "Accepted CP28 extraction"
+        }
+      ]
+    },
+    {
+      "route": "/conditions/multiple-myeloma",
+      "entityId": "C21",
+      "sourceId": "MF-MYELOMA-MODELS-2018",
+      "decision": "wire_existing_source",
+      "role": "preclinical_report",
+      "drugOrRegimen": "Metformin",
+      "condition": "Multiple myeloma",
+      "population": "Human myeloma cell lines and NOD-SCID mouse xenografts",
+      "endpoint": "Myeloma-cell growth, autophagy and cell-cycle arrest",
+      "reason": "Exact disease/model match; retains nonhuman experimental scope and existing abstract locators. No human benefit inference.",
+      "existingSourceSha256": "d88c62f06e92dd04e5e8b7c656c8022b7b8c377b71e0a859873b8062fa29b086",
+      "existingRecordLocators": [
+        {
+          "section": "Abstract: Methods, Results and Interpretation"
+        }
+      ]
+    },
+    {
+      "route": "/conditions/multiple-myeloma",
+      "entityId": "C21",
+      "sourceId": "P-D07-MYELOMA-2016",
+      "decision": "wire_existing_source",
+      "role": "preclinical_combination_report",
+      "drugOrRegimen": "Itraconazole plus arsenic trioxide",
+      "condition": "Multiple myeloma",
+      "population": "NCI-H929 cells and mouse tumors",
+      "endpoint": "Hedgehog signaling and experimental growth inhibition",
+      "reason": "Exact myeloma combination, not itraconazole monotherapy or clinical response.",
+      "existingSourceSha256": "185bf873a4c75046437cf7fd941e59069071d90278ac99481578b2c972c1e67a",
+      "existingRecordLocators": [
+        {
+          "section": "Abstract",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/27784375/",
+          "basis": "abstract"
+        }
+      ]
+    },
+    {
+      "route": "/conditions/multiple-myeloma",
+      "entityId": "C21",
+      "sourceId": "P-D20-MYELOMA",
+      "decision": "wire_existing_source",
+      "role": "preclinical_report",
+      "drugOrRegimen": "Simvastatin",
+      "condition": "Multiple myeloma",
+      "population": "U266, RPMI 8226 and ARH77 cell lines",
+      "endpoint": "Cell death",
+      "reason": "Exact cell-line and condition match; no patient survival or treatment-effect claim.",
+      "existingSourceSha256": "ba8d5d161891728210cedca5c4cdc5041cc8eb0bee9d0c696d4b8c309794d140",
+      "existingRecordLocators": [
+        {
+          "section": "Abstract: methods and results"
+        }
+      ]
+    },
+    {
+      "route": "/conditions/multiple-myeloma",
+      "entityId": "C21",
+      "sourceId": "P-D23-MYELOMA",
+      "decision": "wire_existing_source",
+      "role": "supportive_care_report",
+      "drugOrRegimen": "Aspirin versus enoxaparin during lenalidomide-based treatment",
+      "condition": "Multiple myeloma supportive care",
+      "population": "Selected newly diagnosed patients with low thromboembolic risk",
+      "endpoint": "Thromboprophylaxis",
+      "reason": "Relevant to myeloma treatment context only. Clot prevention is not an antimyeloma response or survival endpoint.",
+      "existingSourceSha256": "005c12e9f73e7ff545c4f440fd7d7083fa0458788df4fadfb07539a8eed5bbf0",
+      "existingRecordLocators": [
+        {
+          "section": "Abstract: methods and results"
+        }
+      ]
+    },
+    {
+      "route": "/conditions/vitiligo",
+      "entityId": "C29",
+      "sourceId": "CP027-CH25",
+      "decision": "wire_existing_source",
+      "role": "textbook_context",
+      "drugOrRegimen": "Atorvastatin with narrowband UVB; other chapter context",
+      "condition": "Active vitiligo",
+      "population": "Textbook description of active-vitiligo research",
+      "endpoint": "Secondary description of repigmentation/progression",
+      "reason": "Chapter title and existing REF-CP027-CH25-P031 explicitly establish vitiligo context. Secondary account overlaps primary evidence and adds no trial or participant count.",
+      "existingSourceSha256": "c172be3b3248e5197d943c219cdadd1044a9e09c2c75b80f86fda00e615d019e",
+      "existingRecordLocators": [
+        {
+          "section": "Chapter Chapter 25: Repurposing of Therapeutic Approaches for the Treatment of Vitiligo; Chapter 25, printed p. 580; 584 (Table 25.1)",
+          "basis": "Accepted CP28 extraction"
+        },
+        {
+          "section": "Chapter Chapter 25: Repurposing of Therapeutic Approaches for the Treatment of Vitiligo; Chapter 25, printed p. 582",
+          "basis": "Accepted CP28 extraction"
+        }
+      ]
+    },
+    {
+      "route": "/conditions/vitiligo",
+      "entityId": "C29",
+      "sourceId": "P-D14-VITILIGO-2013",
+      "decision": "wire_existing_source",
+      "role": "uncontrolled_report",
+      "drugOrRegimen": "Rituximab",
+      "condition": "Active disseminated vitiligo",
+      "population": "Five patients; uncontrolled pilot",
+      "endpoint": "Clinical and skin-biopsy changes",
+      "reason": "Exact drug and condition; no randomized comparator and no transfer of findings to other autoimmune diseases.",
+      "existingSourceSha256": "871c299c88f006d541d4306d4fa4d4973fd7351ef745342e33fbaec3aa4d4506",
+      "existingRecordLocators": [
+        {
+          "section": "Abstract; Results",
+          "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3828826/",
+          "basis": "full_text"
+        }
+      ]
+    },
+    {
+      "route": "/conditions/vitiligo",
+      "entityId": "C29",
+      "sourceId": "P-D16-VITILIGO-2014",
+      "decision": "wire_existing_source",
+      "role": "active_comparator_report",
+      "drugOrRegimen": "Minocycline versus dexamethasone oral minipulse",
+      "condition": "Actively spreading vitiligo",
+      "population": "50 people; randomized active-comparator study",
+      "endpoint": "Disease activity",
+      "reason": "Exact condition/regimens; both-arm changes do not establish superiority and there is no placebo comparison.",
+      "existingSourceSha256": "f4d89d422efae262483c85d9672c13db442fadcc84f2cb4a8ed8a257b17c3622",
+      "existingRecordLocators": [
+        {
+          "section": "Primary and secondary outcomes",
+          "source_url": "https://ijdvl.com/randomized-controlled-study-to-evaluate-the-effectiveness-of-dexamethasone-oral-minipulse-therapy-versus-oral-minocycline-in-patients-with-active-vitiligo-vulgaris/",
+          "basis": "full_text"
+        }
+      ]
+    },
+    {
+      "route": "/conditions/vitiligo",
+      "entityId": "C29",
+      "sourceId": "P-D20-VITILIGO",
+      "decision": "wire_existing_source",
+      "role": "randomized_report",
+      "drugOrRegimen": "Simvastatin",
+      "condition": "Vitiligo",
+      "population": "Patients with vitiligo",
+      "endpoint": "Vitiligo trial; no new endpoint estimate extracted",
+      "reason": "Existing title/design/population match. Feed reuses the recorded title-only summary; no new outcome claim or grade is supplied.",
+      "existingSourceSha256": "1af1949f2198710fb68020aaf4aa7f9baa12f4dd08dab367ca9aeaa3f52188bc",
+      "existingRecordLocators": [
+        {
+          "section": "Abstract: methods and results"
+        }
+      ]
+    },
+    {
+      "route": "/drugs/sirolimus",
+      "entityId": "D06",
+      "sourceId": "AGING-PEARL-2025",
+      "decision": "wire_existing_source",
+      "role": "randomized_report",
+      "drugOrRegimen": "Compounded rapamycin",
+      "condition": "Healthspan research",
+      "population": "Adults aged 50–85; 114 completers analyzed",
+      "endpoint": "48-week visceral adiposity and secondary health measures",
+      "reason": "Rapamycin is the existing sirolimus alias in this corpus. Compounded formulation, completer analysis and healthspan endpoint remain distinct from commercial tablets and human lifespan.",
+      "existingSourceSha256": "cb5d5bfc528ffcbfe673ad2bc65374cc133ba936c337eeba0010ebee1747153e",
+      "existingRecordLocators": [
+        {
+          "section": "Abstract; Results; Discussion; Supplementary Figure 1"
+        }
+      ]
+    },
+    {
+      "route": "/drugs/sirolimus",
+      "entityId": "D06",
+      "sourceId": "AGING-RAPA-MICE-2009",
+      "decision": "wire_existing_source",
+      "role": "animal_report",
+      "drugOrRegimen": "Rapamycin",
+      "condition": "Mouse lifespan research",
+      "population": "Genetically heterogeneous mice",
+      "endpoint": "Lifespan in mice",
+      "reason": "Exact molecule alias; mouse survival does not establish human longevity.",
+      "existingSourceSha256": "69bcc69fbb29bf397f681f93ed1473558c8cdf255bc27248e914a71c8791f5f1",
+      "existingRecordLocators": [
+        {
+          "section": "Abstract and results"
+        }
+      ]
+    },
+    {
+      "route": "/drugs/sirolimus",
+      "entityId": "D06",
+      "sourceId": "AGING-SIROLIMUS-LABEL",
+      "decision": "wire_existing_source",
+      "role": "label_context",
+      "drugOrRegimen": "Sirolimus tablets",
+      "condition": "Product-specific label context",
+      "population": "Labeled product populations",
+      "endpoint": "Sections 1, 5, 7 and 12.1; no efficacy outcome",
+      "reason": "Existing official sirolimus label has a distinct product setid from CTX-D06-LABEL. Preserve identity; do not assume label dose or formulation equivalence to PEARL.",
+      "existingSourceSha256": "d52bbed88b9254b9d3bd618da9f2f4451c94077f9d6d9431dd3408c85263befd",
+      "existingRecordLocators": [
+        {
+          "section": "Sections 1, 5, 7 and 12.1"
+        }
+      ]
+    },
+    {
+      "route": "/conditions/aging",
+      "entityId": "GOAL-AGING",
+      "sourceId": "P-D06-PERIODONTAL-2020",
+      "decision": "wire_existing_source",
+      "role": "animal_report",
+      "drugOrRegimen": "Rapamycin",
+      "condition": "Oral health in aging mice",
+      "population": "Aged mice",
+      "endpoint": "Periodontal inflammation and bone loss over eight weeks",
+      "reason": "Aging research goal includes later-life health/function; this record directly studies aged mice. It is not a human periodontitis trial or a lifespan experiment.",
+      "existingSourceSha256": "8b0e7517072641c3c44abb59ac7500e5d8fb4370384408c78a55e0d903d75a89",
+      "existingRecordLocators": [
+        {
+          "section": "Abstract; Results",
+          "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7220376/",
+          "basis": "full_text"
+        },
+        {
+          "section": "Results and Figures 2–4; Materials and Methods: Animal studies; Encapsulated rapamycin feeding",
+          "basis": "Original full-text methods/results inspected on 2026-10-11"
+        }
+      ]
+    },
+    {
+      "route": "/conditions/aging",
+      "entityId": "GOAL-AGING",
+      "sourceId": "COND-C31-MANAGEMENT",
+      "decision": "reject_scope_mismatch",
+      "role": "not_applicable",
+      "drugOrRegimen": "Diabetes-management medicines",
+      "condition": "Diabetes",
+      "population": "People with diabetes",
+      "endpoint": "Diabetes management",
+      "reason": "Different condition and endpoint; management of diabetes does not establish an aging intervention.",
+      "existingSourceSha256": "1bf5ec601604511c166c5fc7ebce10acb6efdc009b5a3134fd98732cb28a5a5e",
+      "existingRecordLocators": [
+        {
+          "section": "How can I manage my diabetes?",
+          "table_figure": null,
+          "basis": "Full official source page verified on 2026-10-11"
+        },
+        {
+          "section": "What types of medicines should I take?",
+          "table_figure": null,
+          "basis": "Full official source page verified on 2026-10-11"
+        },
+        {
+          "section": "How can I check my blood glucose level at home?",
+          "table_figure": null,
+          "basis": "Full official source page verified on 2026-10-11"
+        }
+      ]
+    },
+    {
+      "route": "/conditions/aging",
+      "entityId": "GOAL-AGING",
+      "sourceId": "CP017",
+      "decision": "reject_scope_mismatch",
+      "role": "not_applicable",
+      "drugOrRegimen": "Metformin",
+      "condition": "Schizophrenia",
+      "population": "Clinically stable schizophrenia; median age 22",
+      "endpoint": "Cognitive/metabolomic/imaging associations",
+      "reason": "Wrong condition and population; cognition in young schizophrenia patients does not establish aging outcomes.",
+      "existingSourceSha256": "73ed70cd9fa8b9368eddfaf704a576b8a3008caba3c719d1f7dfd623767faf1b",
+      "existingRecordLocators": [
+        {
+          "section": "PDF p8 Table3 week24"
+        },
+        {
+          "section": "PDF p7 Results; Fig1 p5"
+        },
+        {
+          "section": "PDF p7 Results; Fig2 p8"
+        },
+        {
+          "section": "PDF pp8,10; p7 opening cognition paragraph"
+        },
+        {
+          "section": "PDF pp1–14; Methods pp3–4; Tables1–3 pp6–8"
+        },
+        {
+          "section": "PDF pp1–4,9",
+          "basis": "Accepted CP28 extraction"
+        }
+      ]
+    },
+    {
+      "route": "/conditions/aging",
+      "entityId": "GOAL-AGING",
+      "sourceId": "MECH-D06-AUTOPHAGY-2009",
+      "decision": "reject_scope_mismatch",
+      "role": "not_applicable",
+      "drugOrRegimen": "Rapamycin-sensitive mTOR mechanism",
+      "condition": "Cellular autophagy",
+      "population": "HEK293T, HeLa and mouse embryonic fibroblast cells",
+      "endpoint": "Autophagic flux",
+      "reason": "Generic cell mechanism has no aging or lifespan endpoint; retain on existing mechanism/drug destinations.",
+      "existingSourceSha256": "585469092470151ff217cd72d97a361c6d17b90bc94425eda76e79cc40ca7243",
+      "existingRecordLocators": [
+        {
+          "section": "Methods: Cell Culture; Autophagy Assays; Results/Figures 3, 5–7",
+          "basis": "Original full-text methods and results inspected; dedicated appraisal pending."
+        }
+      ]
+    },
+    {
+      "route": "/conditions/aging",
+      "entityId": "GOAL-AGING",
+      "sourceId": "MECH-D31-PASTIS-2022",
+      "decision": "reject_scope_mismatch",
+      "role": "not_applicable",
+      "drugOrRegimen": "Tadalafil",
+      "condition": "Vascular cognitive impairment",
+      "population": "Crossover trial participants",
+      "endpoint": "Single-dose cerebral perfusion",
+      "reason": "Different drug/condition and mechanistic endpoint; cannot become longevity evidence.",
+      "existingSourceSha256": "a81a0b6dc069199a0ebfb009063145df830a91afaa113d96969e49feee857d25",
+      "existingRecordLocators": [
+        {
+          "section": "Methods: trial design, imaging and statistical analysis; Results: Figure 1C, Figure 3 and Table 2; Discussion",
+          "basis": "Original full-text methods and results inspected; dedicated appraisal pending."
+        }
+      ]
+    },
+    {
+      "route": "/conditions/aging",
+      "entityId": "GOAL-AGING",
+      "sourceId": "P-D06-CML-2008",
+      "decision": "reject_scope_mismatch",
+      "role": "not_applicable",
+      "drugOrRegimen": "Rapamycin",
+      "condition": "Imatinib-resistant CML",
+      "population": "Patients with resistant CML",
+      "endpoint": "Antileukemic activity",
+      "reason": "Same molecule but wrong disease/population/endpoint for aging.",
+      "existingSourceSha256": "366396117b61c57770bebe21418cd517af13cecfff5313a265b40c6da0deeb38",
+      "existingRecordLocators": [
+        {
+          "section": "Abstract",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/18173550/",
+          "basis": "abstract"
+        }
+      ]
+    },
+    {
+      "route": "/conditions/aging",
+      "entityId": "GOAL-AGING",
+      "sourceId": "P-D06-PROSTATE-2010",
+      "decision": "reject_scope_mismatch",
+      "role": "not_applicable",
+      "drugOrRegimen": "Rapamycin",
+      "condition": "Localized prostate cancer",
+      "population": "Men undergoing prostatectomy",
+      "endpoint": "Short preoperative tumor pharmacodynamics",
+      "reason": "Cancer target inhibition does not measure aging, human lifespan or healthspan.",
+      "existingSourceSha256": "62767c0f799387a6e6e1f5101b017d665e50e95a1dc0df89fa869b27f213a226",
+      "existingRecordLocators": [
+        {
+          "section": "Abstract",
+          "source_url": "https://aacrjournals.org/clincancerres/article/16/11/3057/75161/A-Pharmacodynamic-Study-of-Rapamycin-in-Men-with",
+          "basis": "abstract"
+        }
+      ]
+    },
+    {
+      "route": "/conditions/aging",
+      "entityId": "GOAL-AGING",
+      "sourceId": "P-D06-RECTAL-2015",
+      "decision": "reject_scope_mismatch",
+      "role": "not_applicable",
+      "drugOrRegimen": "Rapamycin plus radiotherapy",
+      "condition": "Rectal cancer",
+      "population": "Patients with primary resectable rectal cancer",
+      "endpoint": "Tolerability and tumor perfusion",
+      "reason": "Different condition, combination and endpoint; no aging inference.",
+      "existingSourceSha256": "7f3a0d9e86c07b65fc6202702edb9c6d9263def3d35d744bb6f2fac62ec0ee11",
+      "existingRecordLocators": [
+        {
+          "section": "Abstract",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/26253949/",
+          "basis": "abstract"
+        }
+      ]
+    },
+    {
+      "route": "/drugs/ivermectin",
+      "entityId": "D08",
+      "sourceId": "COND-C02-COVIDOUT-2022",
+      "decision": "wire_existing_source",
+      "role": "randomized_report",
+      "drugOrRegimen": "Ivermectin",
+      "condition": "Acute COVID-19",
+      "population": "Nonhospitalized adults in COVID-OUT",
+      "endpoint": "Primary acute composite outcome",
+      "reason": "Existing source explicitly names the exact drug. Source association only; D01 metformin synthesis and effects are NOT reused. No Long COVID treatment/prevention or cancer effect is imported.",
+      "existingSourceSha256": "4298bfd2b42539ffb0bec56c7dbdb48efbc1f69eb3f96598d89a38705c67256c",
+      "existingRecordLocators": [
+        {
+          "section": "Abstract; Results"
+        }
+      ]
+    },
+    {
+      "route": "/drugs/fluvoxamine",
+      "entityId": "D02",
+      "sourceId": "COND-C02-COVIDOUT-2022",
+      "decision": "wire_existing_source",
+      "role": "randomized_report",
+      "drugOrRegimen": "Fluvoxamine",
+      "condition": "Acute COVID-19",
+      "population": "Nonhospitalized adults in COVID-OUT",
+      "endpoint": "Primary acute composite outcome",
+      "reason": "Existing source explicitly names the exact drug. Source association only; D01 metformin synthesis and effects are NOT reused. No Long COVID treatment/prevention or cancer effect is imported.",
+      "existingSourceSha256": "4298bfd2b42539ffb0bec56c7dbdb48efbc1f69eb3f96598d89a38705c67256c",
+      "existingRecordLocators": [
+        {
+          "section": "Abstract; Results"
+        }
+      ]
+    },
+    {
+      "route": "/drugs/pramipexole",
+      "entityId": "D05",
+      "sourceId": "COND-C09-PAXD-PROTOCOL",
+      "decision": "wire_existing_source",
+      "role": "protocol_context",
+      "drugOrRegimen": "Pramipexole augmentation",
+      "condition": "Treatment-resistant depression",
+      "population": "Planned PAX-D population",
+      "endpoint": "Protocol and rationale; no observed efficacy results",
+      "reason": "Exact intervention and trial match; protocol remains context and adds no independent trial result beyond the existing PAX-D outcome report.",
+      "existingSourceSha256": "c86f87cf5d94e5459600e1f1aa1767b31ceeb6ff046b6ce24fb6f650f046e424",
+      "existingRecordLocators": [
+        {
+          "section": "Background; Objectives"
+        }
+      ]
+    },
+    {
+      "route": "/conditions/type-2-diabetes",
+      "entityId": "C31",
+      "sourceId": "CP018",
+      "decision": "reject_scope_mismatch",
+      "role": "not_applicable",
+      "drugOrRegimen": "Diabetes medicines considered for repurposing",
+      "condition": "Sarcopenia",
+      "population": "Heterogeneous populations in a narrative review",
+      "endpoint": "Physical function, walking speed, strength and exercise response",
+      "reason": "Title refers to diabetes drugs as the original-use category; proposed indication and outcomes are sarcopenia. Cannot establish a repurposed treatment for established type 2 diabetes. Existing disease context retained unchanged.",
+      "existingSourceSha256": "1bffe1dd1cdbcd642667b90a66270aa793a9cf0e198eb858a0469c698d3933c0",
+      "existingRecordLocators": [
+        {
+          "section": "PDF p. 6 / printed p. 708"
+        },
+        {
+          "section": "PDF p. 6"
+        },
+        {
+          "section": "PDF p. 5 / printed p. 707",
+          "basis": "Accepted CP28 extraction"
+        },
+        {
+          "section": "PDF p. 7 / printed p. 709",
+          "basis": "Accepted CP28 extraction"
+        }
+      ]
+    }
+  ],
+  "historyEvents": [
+    {
+      "id": "2026-10-26-fill-step1-multiple-myeloma",
+      "date": "2026-10-26",
+      "title": "Multiple myeloma sources added",
+      "changeType": "presentation",
+      "summary": "Added existing laboratory reports on metformin, itraconazole with arsenic trioxide, and simvastatin, plus an aspirin thromboprophylaxis report and secondary context. The clot-prevention endpoint remains separate from cancer control; laboratory results remain separate from patient outcomes. Existing outcome assessments and review status are unchanged.",
+      "pagePaths": [
+        "/conditions/multiple-myeloma"
+      ],
+      "affectedSections": [
+        {
+          "id": "research-feed",
+          "label": "Research Feed"
+        },
+        {
+          "id": "references",
+          "label": "References"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-26-fill-step1-vitiligo",
+      "date": "2026-10-26",
+      "title": "Vitiligo source coverage expanded",
+      "changeType": "presentation",
+      "summary": "Added existing rituximab, minocycline and simvastatin reports and textbook context. The uncontrolled pilot, active-comparator study and placebo-controlled study remain distinct; the chapter is background rather than another primary trial. Existing outcome assessments and review status are unchanged.",
+      "pagePaths": [
+        "/conditions/vitiligo"
+      ],
+      "affectedSections": [
+        {
+          "id": "research-feed",
+          "label": "Research Feed"
+        },
+        {
+          "id": "references",
+          "label": "References"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-26-fill-step1-sirolimus",
+      "date": "2026-10-26",
+      "title": "Healthspan and mouse lifespan sources added",
+      "changeType": "presentation",
+      "summary": "Added the existing PEARL healthspan report, mouse lifespan experiment and a separate sirolimus product label. Human healthspan measures, mouse survival and product-label information remain distinct; no human lifespan finding or formulation equivalence is added. Existing outcome assessments and review status are unchanged.",
+      "pagePaths": [
+        "/drugs/sirolimus"
+      ],
+      "affectedSections": [
+        {
+          "id": "research-feed",
+          "label": "Research Feed"
+        },
+        {
+          "id": "references",
+          "label": "References"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-26-fill-step1-aging",
+      "date": "2026-10-26",
+      "title": "Aging-mouse oral-health report added",
+      "changeType": "presentation",
+      "summary": "Added an existing report of periodontal inflammation and bone loss in aged mice. This adds a specific animal health outcome rather than evidence of human lifespan extension. Existing outcome assessments and review status are unchanged.",
+      "pagePaths": [
+        "/conditions/aging"
+      ],
+      "affectedSections": [
+        {
+          "id": "research-feed",
+          "label": "Research Feed"
+        },
+        {
+          "id": "references",
+          "label": "References"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-26-fill-step1-ivermectin",
+      "date": "2026-10-26",
+      "title": "Acute COVID-19 report added",
+      "changeType": "presentation",
+      "summary": "Added the existing COVID-OUT acute-infection report to the source list. This does not add a metformin outcome to ivermectin or a finding about treating established Long COVID. Existing outcome assessments and review status are unchanged.",
+      "pagePaths": [
+        "/drugs/ivermectin"
+      ],
+      "affectedSections": [
+        {
+          "id": "research-feed",
+          "label": "Research Feed"
+        },
+        {
+          "id": "references",
+          "label": "References"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-26-fill-step1-fluvoxamine",
+      "date": "2026-10-26",
+      "title": "Acute COVID-19 report added",
+      "changeType": "presentation",
+      "summary": "Added the existing COVID-OUT acute-infection report to the source list. This does not add a metformin outcome to fluvoxamine or clear the separate REVIVE source-integrity limitation. Existing outcome assessments and review status are unchanged.",
+      "pagePaths": [
+        "/drugs/fluvoxamine"
+      ],
+      "affectedSections": [
+        {
+          "id": "research-feed",
+          "label": "Research Feed"
+        },
+        {
+          "id": "references",
+          "label": "References"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-26-fill-step1-pramipexole",
+      "date": "2026-10-26",
+      "title": "PAX-D protocol reference added",
+      "changeType": "presentation",
+      "summary": "Added the existing PAX-D protocol as background alongside the outcome report. The protocol does not add observed efficacy results or another independent trial. Existing outcome assessments and review status are unchanged.",
+      "pagePaths": [
+        "/drugs/pramipexole"
+      ],
+      "affectedSections": [
+        {
+          "id": "research-feed",
+          "label": "Research Feed"
+        },
+        {
+          "id": "references",
+          "label": "References"
+        }
+      ]
+    }
+  ],
+  "reviewedReference": {
+    "head": "4106ef7e0c6db21c639d1bf9397cb5bd2b5b33e5",
+    "baseCommit": "46be52f8a7d36dd52169e99632e86a0c5eaaee68",
+    "preservedBranch": "codex/fill-remaprx-1-wiring-reviewed-4106ef7",
+    "patchSha256": "c5dd36956664c46159d562ccfdf8cb0244d420876698fa3d4d50d7f0d2eb5b45",
+    "fileSha256": {
+      "data/content.json": "22d0ccd138b76530b0701f55ca87c1d041888f57ce4f743cfa9739ca11815d11",
+      "data/public-content.json": "94502596943cacf711cc56e2bd1dd11daa04242b2f5ec948f5db1dde25586d5a",
+      "data/discovery-pages.json": "faf62aad9821bb7e9d63ba914566c0c7c92b857ab8964ad101c8a8ee0e139297",
+      "editorial/parent-guide-scopes.json": "fb47e8bda3d89cc234612521859d638e70fbe25df6dec841b14d885a4772f874",
+      "data/article-updates.json": "f53f75ae4ea190e7789da40fddec1a6e57a022f0ea30b92bb0ef5880d5ebf9df"
+    }
+  }
+}

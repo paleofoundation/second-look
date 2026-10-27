@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-26T05:51:06.711178+02:00",
+  "status": "LOCAL_TECHNICAL_PASS_CANDIDATE_DELIVERY_HOLD",
+  "baseCommit": "46be52f8a7d36dd52169e99632e86a0c5eaaee68",
+  "githubMain": "3da9279bbed757ab9a063ab8626db3985bf33da2",
+  "checks": [
+    {
+      "command": "node research/batches/FILL-REMAPRX-1-STEP1/verify.mjs",
+      "status": "PASS"
+    },
+    {
+      "command": "node scripts/content-check.mjs",
+      "status": "PASS"
+    },
+    {
+      "command": "node scripts/reader-check.mjs",
+      "status": "PASS"
+    },
+    {
+      "command": "node scripts/check-governance.mjs",
+      "status": "PASS"
+    },
+    {
+      "command": "node scripts/check-reader-sections.mjs --all-profiles",
+      "status": "PASS"
+    },
+    {
+      "command": "node scripts/check-article-navigation.mjs",
+      "status": "PASS"
+    },
+    {
+      "command": "node scripts/check-evidence-section.mjs",
+      "status": "PASS"
+    },
+    {
+      "command": "node scripts/check-evidence-grading.mjs",
+      "status": "PASS"
+    },
+    {
+      "command": "node scripts/check-wiki-links.mjs",
+      "status": "PASS"
+    },
+    {
+      "command": "node scripts/verify-reader-boundary.mjs --source-only",
+      "status": "PASS"
+    },
+    {
+      "command": "./node_modules/.bin/tsc --noEmit --incremental false",
+      "status": "PASS"
+    },
+    {
+      "command": "npm run build",
+      "status": "PASS"
+    },
+    {
+      "command": "node scripts/verify-reader-boundary.mjs",
+      "status": "PASS"
+    },
+    {
+      "command": "git diff --check",
+      "status": "PASS"
+    }
+  ],
+  "focusedResults": {
+    "status": "PASS",
+    "candidates": 25,
+    "wired": 17,
+    "rejected": 8,
+    "renderResults": [
+      {
+        "route": "/conditions/multiple-myeloma",
+        "addedSourceAssociations": 6,
+        "retainedSynthesisRows": 0
+      },
+      {
+        "route": "/conditions/vitiligo",
+        "addedSourceAssociations": 4,
+        "retainedSynthesisRows": 1
+      },
+      {
+        "route": "/drugs/sirolimus",
+        "addedSourceAssociations": 3,
+        "retainedSynthesisRows": 0
+      },
+      {
+        "route": "/conditions/aging",
+        "addedSourceAssociations": 1,
+        "retainedSynthesisRows": 0
+      },
+      {
+        "route": "/drugs/ivermectin",
+        "addedSourceAssociations": 1,
+        "retainedSynthesisRows": 0
+      },
+      {
+        "route": "/drugs/fluvoxamine",
+        "addedSourceAssociations": 1,
+        "retainedSynthesisRows": 0
+      },
+      {
+        "route": "/drugs/pramipexole",
+        "addedSourceAssociations": 1,
+        "retainedSynthesisRows": 1
+      },
+      {
+        "route": "/conditions/type-2-diabetes",
+        "addedSourceAssociations": 0,
+        "retainedSynthesisRows": 0
+      }
+    ],
+    "sourceRecordsChanged": 0,
+    "outcomeRowsChanged": 0,
+    "scientificOrReleaseStatesChanged": 0,
+    "repeatChanges": 0
+  },
+  "build": {
+    "status": "PASS",
+    "builtPublicPayloads": 36,
+    "logSha256": "f0dc8d55729e2808df0805a724c1b2839ab2e61cc2a2738eea6af232e22faee1"
+  },
+  "consultedOriginalInputs": [
+    {
+      "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/second-look-navigation/AGENTS.md",
+      "sha256": "36c103a973f80b67a36c6311ab0282fcca4b4f4b34358f6149e8e2dc5416a2e3",
+      "usage": "Read-only governing instructions; uncommitted files not imported"
+    },
+    {
+      "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/second-look-navigation/docs/PROJECT-RULES.md",
+      "sha256": "bb943b2f564f252015a59ad62ed3b7da7f0a93395cff8eef7ebac361144f9d16",
+      "usage": "Read-only governing instructions; uncommitted files not imported"
+    },
+    {
+      "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/second-look-navigation/docs/RULE-CHANGELOG.md",
+      "sha256": "abcd32eebf4468fff54a496eb5c21b74217ecc115d07951cfc8c8a38f68f9414",
+      "usage": "Read-only governing instructions; uncommitted files not imported"
+    },
+    {
+      "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/second-look-navigation/docs/RESEARCH-INGEST.md",
+      "sha256": "682bd8c85a680114f0b7fd5b43daf5c0b638b09cd849f7f41811db2e48add1e2",
+      "usage": "Read-only governing instructions; uncommitted files not imported"
+    },
+    {
+      "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/second-look-navigation/docs/RESEARCH-PUBLISHING-PLAN.md",
+      "sha256": "3cc270be3904eb7a75cb6e1a8b9e97e131938922e763bcd67dfffa883b1054ae",
+      "usage": "Read-only governing instructions; uncommitted files not imported"
+    },
+    {
+      "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/second-look-navigation/docs/CONDITION-PAGES.md",
+      "sha256": "8999c695521ea3a01024e88e2f00ff1d0b9e52656ccd0ba40891cfb19b5c3133",
+      "usage": "Read-only governing instructions; uncommitted files not imported"
+    },
+    {
+      "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/second-look-navigation/docs/OUTCOME-TABLES.md",
+      "sha256": "9a54b07b26e52c74e1a2da26107483cb0a2b9bd2d4f1e66c0d731bf42acfa915",
+      "usage": "Read-only governing instructions; uncommitted files not imported"
+    },
+    {
+      "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/second-look-navigation/docs/COLLABORATOR-HANDOFF.md",
+      "sha256": "9f1fe27a30ea93ceb72855c06b17a4487340e470026a84cbe5b9a99af1f6228c",
+      "usage": "Read-only governing instructions; uncommitted files not imported"
+    },
+    {
+      "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/second-look-navigation/rules/one-match-rule/ONE-MATCH-RULE.md",
+      "sha256": "7fae46e83e1da5e139b0ab2d11ca02292603c63a50f764c89819b0792bc2f330",
+      "usage": "Read-only governing instructions; uncommitted files not imported"
+    },
+    {
+      "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/second-look-navigation/research/batches/RRX-INGEST-001/PLAN.md",
+      "sha256": "f3b1eafd069d9eb14f6d04c43175e127d044b6c0235c6749ae458a2314736e54",
+      "usage": "Read-only governing instructions; uncommitted files not imported"
+    }
+  ],
+  "auditInputs": [
+    {
+      "path": "/Users/kmfp/ops/bridge/remaprx-thin-audit-20261026.md",
+      "sha256": "98a76ff2c700be5e6eac50e114e4fee1d17ca54666243bdcd09d3748964214fd"
+    },
+    {
+      "path": "/Users/kmfp/ops/bridge/remaprx-thin-pages-20261026.csv",
+      "sha256": "d4971289b38bfbcef018cfe1474f2e23fd624f1f74039242f01ab5e6a58aac90"
+    }
+  ],
+  "limits": [
+    "No newly retrieved or reopened scientific sources; applicability checked against existing records only",
+    "No browser interaction, visual parity or live HTTP test claimed; no component/CSS/interaction changes",
+    "No independent scientific audit, human review or scientific acceptance",
+    "No PR created or push attempted: approved remote base unresolved",
+    "Two bridge write approvals rejected; no alternative write transport attempted",
+    "Step 2 and later steps not started"
+  ],
+  "originalCheckoutBoundary": {
+    "branch": "claude/remaprx-ingest",
+    "head": "46be52f8a7d36dd52169e99632e86a0c5eaaee68",
+    "workingTree": "Active D22 owner changes continue in overlapping content/public/history/parent-scope and governance files. None copied; integrate source-ID additions with exact approved current base, preserve D22 deltas, rerun checks."
+  }
+}
