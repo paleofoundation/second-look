@@ -1,0 +1,148 @@
+[
+  {
+    "id": "C13-DEATH-TIME",
+    "status": "unresolved_literal",
+    "sourceA": {
+      "locator": {
+        "kind": "pdf",
+        "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+        "physicalPage": 3,
+        "printedPage": "19",
+        "nativeSection": "Table1footnote"
+      },
+      "text": "Patients1/3diedafter3weeks"
+    },
+    "sourceB": {
+      "locator": {
+        "kind": "pdf",
+        "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+        "physicalPage": 3,
+        "printedPage": "19",
+        "nativeSection": "Figure1caption"
+      },
+      "text": "Both diedday15;bodythirdweek"
+    },
+    "action": "Retain earlypneumoniadeaths;no correctedexactdayfromunresolvedlabels."
+  },
+  {
+    "id": "C13-IG-TYPE",
+    "status": "unresolved",
+    "sourceA": {
+      "locator": {
+        "kind": "pdf",
+        "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+        "physicalPage": 4,
+        "printedPage": "20",
+        "nativeSection": "Results/Figure2/Discussion"
+      },
+      "text": "Patient1reductioncalledIgA"
+    },
+    "sourceB": {
+      "locator": {
+        "kind": "pdf",
+        "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+        "physicalPage": 3,
+        "printedPage": "19",
+        "nativeSection": "Table1/Figure1caption"
+      },
+      "text": "Patient1IgG;IgAPt4/5"
+    },
+    "action": "No silentIgtypecorrection;patient1fallconfoundedbyconcurrentbortezomib,notasimvastatinresponse."
+  },
+  {
+    "id": "C13-CHOLESTEROL",
+    "status": "unresolved_literal_percent",
+    "locator": {
+      "kind": "pdf",
+      "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+      "physicalPage": 4,
+      "printedPage": "20",
+      "nativeSection": "Results/Figure2/Discussion"
+    },
+    "description": "Textreducedto48.5%withmeans3.57to1.84mM;thosemeansimplyabout51.5%remaining,not48.5%.",
+    "action": "Do notrepairpercentorrelabel48.5asanacceptedclinicalresult;cholesterolqualitativecompliancecontextonly."
+  },
+  {
+    "id": "C13-PRIOR-TREATMENT",
+    "status": "unresolved_count_wording",
+    "sourceA": {
+      "locator": {
+        "kind": "pdf",
+        "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+        "physicalPage": 3,
+        "printedPage": "19",
+        "nativeSection": "Results"
+      },
+      "text": "Fourpatientsmorethanfourtreatments"
+    },
+    "sourceB": {
+      "locator": {
+        "kind": "pdf",
+        "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+        "physicalPage": 3,
+        "printedPage": "19",
+        "nativeSection": "Table1"
+      },
+      "text": "Listedpriorcounts6,2,3,5,7,4;onlythree>4"
+    },
+    "action": "Retainactualtablecountsandheavilypretreatedscope,nofalsefour>4count."
+  },
+  {
+    "id": "C13-FLOW-AND-MARKERS",
+    "status": "qualified_missingness",
+    "locators": [
+      {
+        "kind": "pdf",
+        "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+        "physicalPage": 3,
+        "printedPage": "19",
+        "nativeSection": "Table1/Statisticalanalyses/Results/Figure1"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+        "physicalPage": 4,
+        "printedPage": "20",
+        "nativeSection": "Results/Figure2/Discussion"
+      }
+    ],
+    "description": "Sixenrolled;2full-dosecompleters,2secondcyclehalf-dose,2earlydeaths. Figure2TRACPfirst6/second4curves;NTX/osteocalcin4;other5markersnotshown.",
+    "action": "No sixcompletepaired-day57samples,figure-digitizedestimates/CI,orclinicalfractureeffect."
+  },
+  {
+    "id": "C13-COINTERVENTIONS",
+    "status": "not_isolated_effect",
+    "locators": [
+      {
+        "kind": "pdf",
+        "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+        "physicalPage": 2,
+        "printedPage": "18",
+        "nativeSection": "Patients/Treatment/Response/Assays"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+        "physicalPage": 3,
+        "printedPage": "19",
+        "nativeSection": "Table1/Statisticalanalyses/Results/Figure1"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+        "physicalPage": 4,
+        "printedPage": "20",
+        "nativeSection": "Results/Figure2/Discussion"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "fb166380074a5189ea2e4e21b810306108a317978ccac5761299803997481123",
+        "physicalPage": 5,
+        "printedPage": "21",
+        "nativeSection": "Discussion/Acknowledgments"
+      }
+    ],
+    "description": "Allpriorbisphosphonates;Pt2/5ongoingzoledronicacid4mgdays1/29;Pt1bortezomibdays6-13. Subsequentbortezomibresponsesnotcurrentregimenbenefit.",
+    "action": "No puremonotherapyorstatincausedfracture/death,orassignedlaterresponse."
+  }
+]
