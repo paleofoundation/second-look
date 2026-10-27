@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "reed2-cal12-ASA-Blimp1-ATF4-CHOP-preclinical-v1",
+  "required": [
+    "schemaVersion",
+    "paper",
+    "source",
+    "inspection",
+    "study",
+    "populations",
+    "results",
+    "claims",
+    "reviewInputs",
+    "sourceQualifications",
+    "limitations",
+    "scientificAcceptance",
+    "humanApproval",
+    "released"
+  ],
+  "controls": [
+    "Primary preclinical model/cell/donor/replicate identity",
+    "Exact dose/concentration/exposure/time/control",
+    "Viability/apoptosis/cycle and mechanism-manipulation distinct",
+    "Observed association versus tested knockdown/rescue and inferred chain",
+    "Graphs not invented numerical effect or independent N",
+    "No human efficacy/pharmacologic feasibility/safety from cells",
+    "All8pages/materialvisuals/pinned67fields/source hashes",
+    "Private candidate only,no newclinical trials/patients/grade"
+  ],
+  "gates": {
+    "scientificAcceptance": false,
+    "humanApproval": false,
+    "released": false,
+    "newGrades": 0
+  }
+}

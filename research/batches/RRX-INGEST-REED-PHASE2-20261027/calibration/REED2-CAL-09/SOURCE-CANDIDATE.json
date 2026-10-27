@@ -1,0 +1,1516 @@
+{
+  "schemaVersion": "reed2-cal09-ASCT-ASA-thrombocytopenia-v1",
+  "paper": {
+    "id": "REED-092cc3728bfdf1ee6744",
+    "pmid": "37182183",
+    "doi": "10.3389/fonc.2023.1168120",
+    "title": "Aspirin use and bleeding events during thrombocytopenia after autologous stem-cell transplantation for multiple myeloma.",
+    "sourceType": "original_retrospective_ASCT_safety_cohort"
+  },
+  "source": {
+    "id": "REED2-CAL-09-MAIN",
+    "pmid": "37182183",
+    "doi": "10.3389/fonc.2023.1168120",
+    "title": "Aspirin use and bleeding events during thrombocytopenia after autologous stem-cell transplantation for multiple myeloma.",
+    "reportId": "REED-092cc3728bfdf1ee6744",
+    "ref": "$REMAPRX_REED_ROOT/aspirin-myeloma/pdfs/37182183-neuendorff-2023.pdf",
+    "sha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+    "physicalPages": 12
+  },
+  "inspection": {
+    "at": "2026-10-27T12:43:31.759533+00:00",
+    "physicalPagesRead": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "visualInspectedPhysicalPages": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      10,
+      11
+    ],
+    "fullScientificReviewComplete": false,
+    "separateCompanionContentRead": false,
+    "rawEMRInspected": false
+  },
+  "study": {
+    "design": "Single-center retrospective EMR cohort",
+    "setting": "Heidelberg inpatient ASCT for multiple myeloma, 2011 to February 2020",
+    "randomizedASA": false,
+    "exclusions": [
+      "Outpatient ASCT",
+      "Dual antiplatelet therapy",
+      "Therapeutic anticoagulation",
+      "13 patients who stopped ASA earlier than day+1 excluded from main analyses"
+    ],
+    "ASAExposure": "75-100 mg at physician discretion; at least one dose after reinfusion day0, continued until at least day+1",
+    "ASAPlateletInhibitionMeasured": false,
+    "plateletInhibitionAssumed": "No turnover until hematopoietic recovery and inhibited host platelets after last ASA; transfusion may reverse effect",
+    "recommenceAsReported": "Usually platelet count >20-50 x10^9/L; recommendations figure uses >50, not a tested uniform restart threshold",
+    "primaryOutcome": "Documented bleeding during hospital stay, staged CTCAE5/BSMS/WHO",
+    "secondaryOutcomes": [
+      "PLTX units",
+      "Platelet engraftment",
+      "MACE nonfatal stroke/MI/CV death"
+    ],
+    "transfusionStrategies": "Physician discretion prophylactic <10 x10^9/L or therapeutic bleeding signs; not assignable for every transfusion and omitted from model",
+    "statisticalMethods": "Welch t/chi-square; univariate logistic then stepwise multivariable; Firth confirmation in separate supplement; PLTX model excludes bleeders, thrombocytopenia-duration model excludes bleeders and two outliers",
+    "externalProtocolOrFirthContentRead": false,
+    "causalSafetyEstablished": false,
+    "authorsRecommendationsAdopted": false,
+    "ethics": "Heidelberg IRB S-721/2018",
+    "locators": [
+      {
+        "kind": "pdf",
+        "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+        "physicalPage": 2,
+        "printedPage": 2,
+        "nativeSection": "Ethics/population/outcomes"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+        "physicalPage": 3,
+        "printedPage": 3,
+        "nativeSection": "ASA management/exclusions/statistics"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+        "physicalPage": 5,
+        "printedPage": 5,
+        "nativeSection": "Table1 continued/bleeding/models"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+        "physicalPage": 6,
+        "printedPage": 6,
+        "nativeSection": "Figure1/cases/transfusion/models"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+        "physicalPage": 11,
+        "printedPage": 11,
+        "nativeSection": "Conclusions/disclosures/data/ethics"
+      }
+    ]
+  },
+  "populations": {
+    "mainN": 1113,
+    "ASA": 57,
+    "control": 1056,
+    "excludedEarlyASAPause": 13,
+    "ASAIndications": {
+      "primary": 5,
+      "secondary": 52
+    },
+    "controlIndicationsWithoutASA": {
+      "primary": 3,
+      "secondary": 30
+    },
+    "ASAControlsBalanced": false,
+    "ageMeanASAControl": [
+      61.12,
+      58.79
+    ],
+    "femaleASAControl": [
+      11,
+      419
+    ],
+    "HCTCIGe3ASAControl": [
+      31,
+      253
+    ],
+    "firstSecondThirdASCTCounts": [
+      733,
+      376,
+      4
+    ],
+    "newUniqueCrossCorpusPatientsAdjudicated": false,
+    "locators": [
+      {
+        "kind": "pdf",
+        "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+        "physicalPage": 3,
+        "printedPage": 3,
+        "nativeSection": "ASA management/exclusions/statistics"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+        "physicalPage": 4,
+        "printedPage": 4,
+        "nativeSection": "Table1"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+        "physicalPage": 5,
+        "printedPage": 5,
+        "nativeSection": "Table1 continued/bleeding/models"
+      }
+    ]
+  },
+  "results": [
+    {
+      "id": "REED2-CAL-09-O01",
+      "outcome": "In-hospital bleeding among physician-selected ASA users and controls",
+      "estimate": {
+        "kind": "observational_counts_and_univariate_OR",
+        "ASA": [
+          3,
+          57
+        ],
+        "control": [
+          20,
+          1056
+        ],
+        "percentages": [
+          5.3,
+          1.9
+        ],
+        "comparisonP": 0.082,
+        "univariateASAOR": {
+          "estimate": 2.78,
+          "CI95": [
+            0.83,
+            9.98
+          ],
+          "P": 0.096
+        },
+        "multivariableASAExactEstimateInMain": null,
+        "totalBleedingPatients": 23,
+        "BSMSClinicallySignificant": 16,
+        "severeMajorAll23": false,
+        "onsetMedianRangeDays": [
+          6,
+          [
+            -2,
+            40
+          ]
+        ],
+        "atPLCLe10N": 12,
+        "atPLCLe50Percent": 82.6,
+        "infectionAtBleedN": 16,
+        "mainASARetinalN": 2,
+        "excludedEarlyPauseRetinalN": 1,
+        "causalSafetyOrEquivalence": false
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 1,
+          "printedPage": 1,
+          "nativeSection": "Abstract/byline"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Table1 continued/bleeding/models"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 6,
+          "printedPage": 6,
+          "nativeSection": "Figure1/cases/transfusion/models"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Figure2/bleeding/MACE"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Discussion/limitations"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED2-CAL-09-O02",
+      "outcome": "Adjusted prognostic bleeding associations, retaining GI confidence-limit discrepancy",
+      "estimate": {
+        "kind": "stepwise_logistic_adjusted_OR_not_ASA_effect",
+        "durationPLCLe50": {
+          "estimate": 1.166,
+          "CI95": [
+            1.066,
+            1.277
+          ],
+          "P": "<.001"
+        },
+        "diarrhea": {
+          "estimate": 4.038,
+          "CI95": [
+            1.693,
+            9.632
+          ],
+          "P": 0.002
+        },
+        "GIHistoryText": {
+          "estimate": 24.23,
+          "CI95": [
+            5.653,
+            103.861
+          ],
+          "P": "<.001"
+        },
+        "GIHistoryFigure2E": {
+          "estimate": 24.23,
+          "CI95": [
+            5.563,
+            103.861
+          ],
+          "P": "<.001"
+        },
+        "GICIDiscrepancyResolved": false,
+        "selectionTextFigure": [
+          "backward",
+          "forward"
+        ],
+        "GIHistoryPopulationN": 12,
+        "FirthOriginalSupplementRead": false
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "ASA management/exclusions/statistics"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Table1 continued/bleeding/models"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Figure2/bleeding/MACE"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Discussion/limitations"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED2-CAL-09-O03",
+      "outcome": "Platelet/red-cell transfusions and thrombocytopenia duration",
+      "estimate": {
+        "kind": "observational_means_and_models",
+        "plateletUnitsASA": {
+          "mean": 1.32,
+          "SD": 1.42
+        },
+        "plateletUnitsControl": {
+          "mean": 0.78,
+          "SD": 0.96
+        },
+        "plateletPText": "<.001",
+        "plateletPTable2": 0.007,
+        "PDiscrepancyResolved": false,
+        "PRBCASA": {
+          "mean": 0.86,
+          "SD": 1.31
+        },
+        "PRBCControl": {
+          "mean": 0.68,
+          "SD": 1.4
+        },
+        "PRBCP": 0.354,
+        "durationBelow50DaysASAControlP": [
+          7.44,
+          6.89,
+          0.174
+        ],
+        "durationBelow20DaysASAControlP": [
+          3.3,
+          2.89,
+          0.146
+        ],
+        "durationBelow10DaysASAControlP": [
+          1.05,
+          0.88,
+          0.223
+        ],
+        "durationPredictionR2": 0.113,
+        "durationPredictionAdjustedR2": 0.109,
+        "PTTDurationBetaPText": [
+          0.103,
+          ">.001"
+        ],
+        "bleedingSumScoreORText": {
+          "estimate": 1.194,
+          "CI95": [
+            0.731,
+            19.52
+          ],
+          "P": 0.479
+        },
+        "selectedModelPopulation": "Bleeders excluded, duration model additionally excludes2outliers",
+        "ASAIndependentlyIncreasesPLTXEstablished": false
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "ASA management/exclusions/statistics"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 6,
+          "printedPage": 6,
+          "nativeSection": "Figure1/cases/transfusion/models"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 8,
+          "printedPage": 8,
+          "nativeSection": "Table2/Figure3"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Discussion/limitations"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED2-CAL-09-O04",
+      "outcome": "ASA stopping/continuation strategies and observed MACE context",
+      "estimate": {
+        "kind": "descriptive_exposure_and_rare_events",
+        "mostStoppedPlateletRange20To50N": 41,
+        "ASAUsers": 57,
+        "continuedThroughoutThrombocytopenia": 1,
+        "doseMg": [
+          75,
+          100
+        ],
+        "meanLastDoseDay": 4.89,
+        "lastDoseSD": 1.37,
+        "meanPauseDays": 9.39,
+        "pauseSD": 6.02,
+        "pauseRangeDays": [
+          0,
+          42
+        ],
+        "MACEInHospitalN": 3,
+        "MACEAmongASAUsers": 0,
+        "MACEAmongASAIndicationPatients": 0,
+        "postDischargeMACEAdequatelyCaptured": false,
+        "plateletInhibitionDirectlyMeasured": false,
+        "safeBelow20Established": false,
+        "currentRecommendationAdopted": false,
+        "cancerControlBenefitEstablished": false
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 1,
+          "printedPage": 1,
+          "nativeSection": "Abstract/byline"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "ASA management/exclusions/statistics"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Figure2/bleeding/MACE"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Discussion/limitations"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 10,
+          "printedPage": 10,
+          "nativeSection": "Figures4-5/recommendations/limits"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 11,
+          "printedPage": 11,
+          "nativeSection": "Conclusions/disclosures/data/ethics"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    }
+  ],
+  "claims": [
+    {
+      "id": "REED2-CAL-09-C01",
+      "resultIds": [
+        "REED2-CAL-09-O01"
+      ],
+      "statement": "ASA users had3/57bleeding versus20/1056controls,5.3%/1.9%,P.082,univariateOR2.78CI.83-9.98P.096. Selected unequal groups and wide uncertainty preclude causal safety/equivalence; adjusted ASA estimate is not supplied in main.",
+      "relation": "original_retrospective_safety_source_candidate",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED2-CAL-09-C02",
+      "resultIds": [
+        "REED2-CAL-09-O02"
+      ],
+      "statement": "Longer durationPLC<=50,diarrhea and GI-history were associated with bleeding in a selected model. GI-history CI lower5.653text versus5.563figure remains unresolved, with fewevents/uncheckedFirthsupplement; these are not adjusted causal aspirin effects.",
+      "relation": "original_retrospective_safety_source_candidate",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED2-CAL-09-C03",
+      "resultIds": [
+        "REED2-CAL-09-O03"
+      ],
+      "statement": "ASA group received more platelet units,1.32versus.78,withP<.001text versus.007Table2,not reconciled. PRBC/transplant platelet-duration differences were nonsignificant, without equivalence. Models excluded bleeders/outliers and do not prove ASA caused transfusion needs.",
+      "relation": "original_retrospective_safety_source_candidate",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED2-CAL-09-C04",
+      "resultIds": [
+        "REED2-CAL-09-O04"
+      ],
+      "statement": "Most41/57ASA users stopped atplatelets20-50x10^9/L,not continuous aplasia; onlyone continued throughout. ThreehospitalMACE were outsideASA/indication groups, not proof withdrawal safety. Authors management algorithm remains hypothesis-based attributed context, not antitumor evidence or adopted prescribing advice.",
+      "relation": "original_retrospective_safety_source_candidate",
+      "acceptedSupport": false
+    }
+  ],
+  "reviewInputs": [
+    {
+      "id": "Q01",
+      "answer": "HospitalASACTbleedingandASAmanagement.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 1,
+          "printedPage": 1,
+          "nativeSection": "Abstract/byline"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "ASA management/exclusions/statistics"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 11,
+          "printedPage": 11,
+          "nativeSection": "Conclusions/disclosures/data/ethics"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q02",
+      "answer": "Selected1113with57ASA/1056controls.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 2,
+          "printedPage": 2,
+          "nativeSection": "Ethics/population/outcomes"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "ASA management/exclusions/statistics"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q03",
+      "answer": "75-100mgassumedplateletinhibition,variableholds.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "ASA management/exclusions/statistics"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Discussion/limitations"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q04",
+      "answer": "Physicianallocationnotrandomized.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "ASA management/exclusions/statistics"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Table1 continued/bleeding/models"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Discussion/limitations"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q05",
+      "answer": "Hospitalbleedingprimary,transfusions/MACEsecondary.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 2,
+          "printedPage": 2,
+          "nativeSection": "Ethics/population/outcomes"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Discussion/limitations"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 10,
+          "printedPage": 10,
+          "nativeSection": "Figures4-5/recommendations/limits"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q06",
+      "answer": "FourgroupswithuncertainASAassociationandliteralconflicts.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "ASA management/exclusions/statistics"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Table1 continued/bleeding/models"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Figure2/bleeding/MACE"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 8,
+          "printedPage": 8,
+          "nativeSection": "Table2/Figure3"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q07",
+      "answer": "Earlypause/modelselectionandEMRmissingness.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "ASA management/exclusions/statistics"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 4,
+          "printedPage": 4,
+          "nativeSection": "Table1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Discussion/limitations"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q08",
+      "answer": "Bleedseverity/windowsandrareMACEincompletepostdischarge.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "ASA management/exclusions/statistics"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Figure2/bleeding/MACE"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Discussion/limitations"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q09",
+      "answer": "Confounding/selection/fewbleeds/modelmultiplicity.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "ASA management/exclusions/statistics"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 4,
+          "printedPage": 4,
+          "nativeSection": "Table1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Table1 continued/bleeding/models"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Figure2/bleeding/MACE"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Discussion/limitations"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 11,
+          "printedPage": 11,
+          "nativeSection": "Conclusions/disclosures/data/ethics"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q10",
+      "answer": "SupportiveCV/bleedingcontextnotanticancer.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 2,
+          "printedPage": 2,
+          "nativeSection": "Ethics/population/outcomes"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "ASA management/exclusions/statistics"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Table1 continued/bleeding/models"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 11,
+          "printedPage": 11,
+          "nativeSection": "Conclusions/disclosures/data/ethics"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q11",
+      "answer": "Samecohort/nestedNsnotnewindependentsum.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "ASA management/exclusions/statistics"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 12,
+          "printedPage": 12,
+          "nativeSection": "References"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q12",
+      "answer": "Heidelberg/DFGfunding/declaredindustryfees.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 1,
+          "printedPage": 1,
+          "nativeSection": "Abstract/byline"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 2,
+          "printedPage": 2,
+          "nativeSection": "Ethics/population/outcomes"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 11,
+          "printedPage": 11,
+          "nativeSection": "Conclusions/disclosures/data/ethics"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q13",
+      "answer": "Exactmainread,separatecompanionsunchecked.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 1,
+          "printedPage": 1,
+          "nativeSection": "Abstract/byline"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 2,
+          "printedPage": 2,
+          "nativeSection": "Ethics/population/outcomes"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 11,
+          "printedPage": 11,
+          "nativeSection": "Conclusions/disclosures/data/ethics"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 12,
+          "printedPage": 12,
+          "nativeSection": "References"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q14",
+      "answer": "Privatefourclaimmappings.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Figure2/bleeding/MACE"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 10,
+          "printedPage": 10,
+          "nativeSection": "Figures4-5/recommendations/limits"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 11,
+          "printedPage": 11,
+          "nativeSection": "Conclusions/disclosures/data/ethics"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending",
+      "downstreamMapping": {
+        "paperId": "REED-092cc3728bfdf1ee6744",
+        "sourceId": "REED2-CAL-09-MAIN",
+        "resultIds": [
+          "REED2-CAL-09-O01",
+          "REED2-CAL-09-O02",
+          "REED2-CAL-09-O03",
+          "REED2-CAL-09-O04"
+        ],
+        "claimIds": [
+          "REED2-CAL-09-C01",
+          "REED2-CAL-09-C02",
+          "REED2-CAL-09-C03",
+          "REED2-CAL-09-C04"
+        ],
+        "existingGuideIds": [
+          "G-DRUG-D23",
+          "G-CONDITION-C21"
+        ],
+        "purpose": "Private ASA/CV prevention/ASCT thrombocytopenia observational safety context, no aspirin antitumor or causal prophylaxis benefit",
+        "publicationState": "private_unapplied_candidate",
+        "canonicalChanges": 0,
+        "newIndependentTrials": 0,
+        "newIndependentPatients": 0
+      }
+    },
+    {
+      "id": "Q15",
+      "answer": "Hypothesis-generatingsafetycontextwithunresolvedgaps.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Discussion/limitations"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 10,
+          "printedPage": 10,
+          "nativeSection": "Figures4-5/recommendations/limits"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 11,
+          "printedPage": 11,
+          "nativeSection": "Conclusions/disclosures/data/ethics"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    }
+  ],
+  "sourceQualifications": [
+    {
+      "id": "REED2-CAL-09-DESIGN",
+      "description": "Retrospective EMR cohort with 57 ASA users and 1056 controls, physician-selected ASA and transfusion management. Groups differ in age, sex, HCT-CI and CV diseases. No randomized continuation/cessation strategy or causal safety/equivalence.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 2,
+          "printedPage": 2,
+          "nativeSection": "Ethics/population/outcomes"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "ASA management/exclusions/statistics"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 4,
+          "printedPage": 4,
+          "nativeSection": "Table1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Table1 continued/bleeding/models"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-09-PURPOSE",
+      "description": "52/57 ASA users had secondary CV prevention indication, 5 primary. Controls include 30 secondary and 3 primary indications without ASA. This is not an aspirin myeloma antitumor or uniform IMiD primary VTE prophylaxis trial.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 2,
+          "printedPage": 2,
+          "nativeSection": "Ethics/population/outcomes"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Table1 continued/bleeding/models"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 11,
+          "printedPage": 11,
+          "nativeSection": "Conclusions/disclosures/data/ethics"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-09-SELECTION",
+      "description": "Outpatient ASCT, dual APT and therapeutic anticoagulation excluded; 13 early ASA pauses excluded from main analyses, separately discussed. Available single-center patients do not establish universal transplant safety or independent unique cross-corpus N.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 2,
+          "printedPage": 2,
+          "nativeSection": "Ethics/population/outcomes"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "ASA management/exclusions/statistics"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Discussion/limitations"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-09-EXPOSURE",
+      "description": "75-100 mg at physician discretion, dose after day0/at least day+1 used to assume platelet inhibition, not measured function. Most41/57 stopped within20-50 x10^9/L with non-daily measurements. Usually restart >20-50 in methods versus >50 in Figure4; not a uniform tested threshold or continuous intake throughout aplasia.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "ASA management/exclusions/statistics"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Discussion/limitations"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 11,
+          "printedPage": 11,
+          "nativeSection": "Conclusions/disclosures/data/ethics"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-09-BLEED_NULL",
+      "description": "Bleeding3/57 versus20/1056,5.3% versus1.9%,P.082; ASA OR2.78 CI.83-9.98 P.096 is univariate, not multivariable ASA estimate. Multivariable nonsignificance described but exact ASA/Firth estimate in unchecked supplement. Wide CI allows clinically important harm, not equal safety or no effect.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 1,
+          "printedPage": 1,
+          "nativeSection": "Abstract/byline"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Table1 continued/bleeding/models"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-09-UNITS_WINDOWS",
+      "description": "23 patients with bleeding in hospital, every bleed documented once rather than bleeding patient-days. Median onsetday+6 range-2 to+40 includes pre-transplant event.16BSMS clinicallysignificant events not all23 severe/major. Mild bleeding underreporting likely; postdischarge MACE not reliably assessed.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 2,
+          "printedPage": 2,
+          "nativeSection": "Ethics/population/outcomes"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Table1 continued/bleeding/models"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Discussion/limitations"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-09-RETINA",
+      "description": "Two retinal bleeds among main57ASA, third retinal bleed in excluded early-pause group, not3/57. Main ASA casesday-2 atnormal170,day+6 PLC5 after2daypause,day+9 epistaxisPLC5 after3daypause; residual inhibition assumed not measured. Possible retinal causal concern attributed, not proven.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Table1 continued/bleeding/models"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 6,
+          "printedPage": 6,
+          "nativeSection": "Figure1/cases/transfusion/models"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Discussion/limitations"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-09-MODEL_DISCREPANCY",
+      "description": "GI-history adjusted bleeding OR24.230 CI5.653-103.861 in text versus24.23 CI5.563-103.861 Figure2E. Text backward-selection versus figure forward-selection and text references Figure1E versus actualFigure2E. Retain literal discrepancy, no repaired CI or new adjusted ASA estimate.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Table1 continued/bleeding/models"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Figure2/bleeding/MACE"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-09-MODELS",
+      "description": "Bleeding model durationPLC<=50 OR1.166 CI1.066-1.277 P<.001; diarrhea4.038 CI1.693-9.632 P.002; GI-history24.23 wide CI from only12history patients, possible overestimate. Few23events, stepwise models and many tested factors, multiplicity correction not stated; Firth supplement not checked.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "ASA management/exclusions/statistics"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Table1 continued/bleeding/models"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Figure2/bleeding/MACE"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Discussion/limitations"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-09-TRANSFUSIONS",
+      "description": "Platelet unitsASA1.32SD1.42/control.78SD.96; textP<.001 versusTable2P.007 unresolved. Physician-selected extra transfusions may affect bleeding/inhibition; strategies unassignable, cannot conclude ASA independently caused extra transfusions or that they prevented no bleeds. PRBC means.86/.68 P.354 nonsignificance not equivalence.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "ASA management/exclusions/statistics"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 6,
+          "printedPage": 6,
+          "nativeSection": "Figure1/cases/transfusion/models"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 8,
+          "printedPage": 8,
+          "nativeSection": "Table2/Figure3"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Discussion/limitations"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-09-DURATION_MODELS",
+      "description": "DurationPLC<50 mean7.44/6.89daysP.174, <20 3.3/2.89P.146, <10 1.05/.88P.223. Duration prediction R2.113 adjusted.109 weak, excludes bleeders/two outliers, different from bleeding-risk model. PTTbeta.103 P>.001 and sumscoreOR1.194CI.731-19.52 literal odd values retained, not repaired or statistically upgraded.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "ASA management/exclusions/statistics"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 6,
+          "printedPage": 6,
+          "nativeSection": "Figure1/cases/transfusion/models"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 8,
+          "printedPage": 8,
+          "nativeSection": "Table2/Figure3"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Discussion/limitations"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-09-CASE_FIGURE",
+      "description": "Figure1 patient1 HCT-CI3 diagram versus6 caption retained as discrepancy; not silently harmonized. Figure/caption day-2 platelet170 versus overall bleeding maximum179 could represent source-specific values, not assumed typo or extra patient.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 6,
+          "printedPage": 6,
+          "nativeSection": "Figure1/cases/transfusion/models"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-09-MACE",
+      "description": "Three MACE during hospitalization, none with ASA or indication. No MACE during observed ASA pause does not establish withdrawal safety/protection, underpowered rare events, no reliable postdischarge capture. External 46%/one-in36 withdrawal estimate is cited background, not an effect measured here.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 1,
+          "printedPage": 1,
+          "nativeSection": "Abstract/byline"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Figure2/bleeding/MACE"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Discussion/limitations"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-09-AUTHOR_RECOMMENDATIONS",
+      "description": "Authors say appears safe at20-50 x10^9/L yet harm cannot be excluded and results hypothesis-generating; Figure5 stronger safe language is attributed not adopted. Onlyone continuous-aplasia patient, no safety inference below20. Figure4 management algorithm rationale, not randomized evidence or current clinical recommendation here.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 2,
+          "printedPage": 2,
+          "nativeSection": "Ethics/population/outcomes"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 10,
+          "printedPage": 10,
+          "nativeSection": "Figures4-5/recommendations/limits"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 11,
+          "printedPage": 11,
+          "nativeSection": "Conclusions/disclosures/data/ethics"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-09-ACCESS_DISCLOSURES",
+      "description": "All12mainpages and7materialvisuals read, supplements/S1-S3/S2Firth/RCTsample design not checked, no acquisition/current external integrity search. EthicsS-721/2018, DFGUMEA FU356/12-2 toNN. NF/KJ/NRN fees disclosed and remaining authors none as declared; data inquiries not independently inspected raw EMR.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 11,
+          "printedPage": 11,
+          "nativeSection": "Conclusions/disclosures/data/ethics"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 12,
+          "printedPage": 12,
+          "nativeSection": "References"
+        }
+      ]
+    }
+  ],
+  "overlapRecords": [
+    {
+      "reportId": "REED-092cc3728bfdf1ee6744",
+      "candidateCohort": "Heidelberg2011-Feb2020inpatientASCT-ASA",
+      "primaryRandomizedTrials": 0,
+      "newIndependentTrialCount": 0,
+      "newIndependentPatientCount": 0,
+      "uniqueCrossCorpusPatientCountAdjudicated": false,
+      "mainN": 1113,
+      "samePopulationAcrossResults": "Fourgroups reuse1113andASA57,nested23bleeders andselectedmodels;excluded13notaddedasnewindependentcohort",
+      "relatedReports": "References discuss prior ASCT/CV/transfusion studies, not freshly checked cohort identities or new independent support",
+      "locators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 2,
+          "printedPage": 2,
+          "nativeSection": "Ethics/population/outcomes"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "ASA management/exclusions/statistics"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "6bdb1471c017decb4a150a132ce2a6b9f5b4cf773d70161ab9a224a6893c96d3",
+          "physicalPage": 12,
+          "printedPage": 12,
+          "nativeSection": "References"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Retrospective EMR cohort with 57 ASA users and 1056 controls, physician-selected ASA and transfusion management. Groups differ in age, sex, HCT-CI and CV diseases. No randomized continuation/cessation strategy or causal safety/equivalence.",
+    "52/57 ASA users had secondary CV prevention indication, 5 primary. Controls include 30 secondary and 3 primary indications without ASA. This is not an aspirin myeloma antitumor or uniform IMiD primary VTE prophylaxis trial.",
+    "Outpatient ASCT, dual APT and therapeutic anticoagulation excluded; 13 early ASA pauses excluded from main analyses, separately discussed. Available single-center patients do not establish universal transplant safety or independent unique cross-corpus N.",
+    "75-100 mg at physician discretion, dose after day0/at least day+1 used to assume platelet inhibition, not measured function. Most41/57 stopped within20-50 x10^9/L with non-daily measurements. Usually restart >20-50 in methods versus >50 in Figure4; not a uniform tested threshold or continuous intake throughout aplasia.",
+    "Bleeding3/57 versus20/1056,5.3% versus1.9%,P.082; ASA OR2.78 CI.83-9.98 P.096 is univariate, not multivariable ASA estimate. Multivariable nonsignificance described but exact ASA/Firth estimate in unchecked supplement. Wide CI allows clinically important harm, not equal safety or no effect.",
+    "23 patients with bleeding in hospital, every bleed documented once rather than bleeding patient-days. Median onsetday+6 range-2 to+40 includes pre-transplant event.16BSMS clinicallysignificant events not all23 severe/major. Mild bleeding underreporting likely; postdischarge MACE not reliably assessed.",
+    "Two retinal bleeds among main57ASA, third retinal bleed in excluded early-pause group, not3/57. Main ASA casesday-2 atnormal170,day+6 PLC5 after2daypause,day+9 epistaxisPLC5 after3daypause; residual inhibition assumed not measured. Possible retinal causal concern attributed, not proven.",
+    "GI-history adjusted bleeding OR24.230 CI5.653-103.861 in text versus24.23 CI5.563-103.861 Figure2E. Text backward-selection versus figure forward-selection and text references Figure1E versus actualFigure2E. Retain literal discrepancy, no repaired CI or new adjusted ASA estimate.",
+    "Bleeding model durationPLC<=50 OR1.166 CI1.066-1.277 P<.001; diarrhea4.038 CI1.693-9.632 P.002; GI-history24.23 wide CI from only12history patients, possible overestimate. Few23events, stepwise models and many tested factors, multiplicity correction not stated; Firth supplement not checked.",
+    "Platelet unitsASA1.32SD1.42/control.78SD.96; textP<.001 versusTable2P.007 unresolved. Physician-selected extra transfusions may affect bleeding/inhibition; strategies unassignable, cannot conclude ASA independently caused extra transfusions or that they prevented no bleeds. PRBC means.86/.68 P.354 nonsignificance not equivalence.",
+    "DurationPLC<50 mean7.44/6.89daysP.174, <20 3.3/2.89P.146, <10 1.05/.88P.223. Duration prediction R2.113 adjusted.109 weak, excludes bleeders/two outliers, different from bleeding-risk model. PTTbeta.103 P>.001 and sumscoreOR1.194CI.731-19.52 literal odd values retained, not repaired or statistically upgraded.",
+    "Figure1 patient1 HCT-CI3 diagram versus6 caption retained as discrepancy; not silently harmonized. Figure/caption day-2 platelet170 versus overall bleeding maximum179 could represent source-specific values, not assumed typo or extra patient.",
+    "Three MACE during hospitalization, none with ASA or indication. No MACE during observed ASA pause does not establish withdrawal safety/protection, underpowered rare events, no reliable postdischarge capture. External 46%/one-in36 withdrawal estimate is cited background, not an effect measured here.",
+    "Authors say appears safe at20-50 x10^9/L yet harm cannot be excluded and results hypothesis-generating; Figure5 stronger safe language is attributed not adopted. Onlyone continuous-aplasia patient, no safety inference below20. Figure4 management algorithm rationale, not randomized evidence or current clinical recommendation here.",
+    "All12mainpages and7materialvisuals read, supplements/S1-S3/S2Firth/RCTsample design not checked, no acquisition/current external integrity search. EthicsS-721/2018, DFGUMEA FU356/12-2 toNN. NF/KJ/NRN fees disclosed and remaining authors none as declared; data inquiries not independently inspected raw EMR."
+  ],
+  "newIndependentTrials": 0,
+  "newIndependentPatients": 0,
+  "scientificAcceptance": false,
+  "humanApproval": false,
+  "released": false
+}

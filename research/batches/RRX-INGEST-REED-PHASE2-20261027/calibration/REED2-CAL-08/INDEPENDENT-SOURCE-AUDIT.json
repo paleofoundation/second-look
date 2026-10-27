@@ -1,0 +1,95 @@
+{
+  "at": "2026-10-27T12:43:09.401799+00:00",
+  "result": "PASS_BOUNDED_EXACT_VERSION_FOUR_RESULT_CLAIM_GROUPS_WITH_15_QUALIFICATIONS",
+  "candidateSha256": "902c6713ebc6487384f18c57fa5f0a2c8b3a448636a50505bbe4fb2fef8cccc7",
+  "sourceSha256FreshMatched": "45465195f7c4b9a14cc876f3800f5d1bb92fda493f4d3197425bb75e6721cdc1",
+  "indexSha256FreshMatched": "5c2a39e2ff03f606086b9a4b05b40b648d58ad1515605a00f533973b3b317a2d",
+  "auditManifestSha256": "2f2c0d17149149613c4b2c4bed4fc50beb4d94232945ac4b0a931fa28a21a41f",
+  "exactAuditedDependencies": {
+    "SOURCE-CANDIDATE.json": "902c6713ebc6487384f18c57fa5f0a2c8b3a448636a50505bbe4fb2fef8cccc7",
+    "review-inputs.jsonl": "e3734a1ba463ee7d0d55a0b6f1a510181212468809c51fe1c99b4450a87b7a64",
+    "PLAN.json": "67a7c98a6948e67bb4632e3a0393c85fc1a3849da60f128a42160fa120900c72",
+    "SCHEMA.json": "4246158642a2c7a5dc9c161fb206d2013a883e6c36d656452a0cc53553cf7fc3",
+    "READINESS.json": "d3464eeb4bbdc6143df5b28f523c36cbc6697a13da296b572f34d74bfe5f7b2f",
+    "DOWNSTREAM-MAPPING.json": "30dcfa1c08ae84e692397216878cbb990f65556ea1fbaf8312cd942d16b93037",
+    "VISUAL-RECEIPT.json": "e13568736ea50c83848f61f850e1b53160c7cdaa28c3fef688776a6268f5a76c",
+    "SOURCE-QUALIFICATIONS.json": "0090c682a7b80c18604471e9ff702c68dec0414f64264d8cb0ec94c913f26084",
+    "PRIOR-RECONCILIATION.json": "4970a7252a097216c0cf488abec8c8055123403aabd5a3e897a85ad948390409",
+    "OVERLAP-RECONCILIATION.json": "f486d227d1b08c90b8df4844cb4379618164ed92af5f9a0f4326c65e36d5df17"
+  },
+  "prospectivePlanReadBeforeOriginal": true,
+  "independentRootRead": {
+    "physicalPagesText": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "materialVisuals": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "scope": "All14 original text pages and freshly rendered material Tables1-6 on physical5-9. Four exact result/claim groups plus15qualifications bounded source fidelity only. No full67field scientific review, external primary source verification, rawdata or current integrity review."
+  },
+  "checkedResultIds": [
+    "REED2-CAL-08-O01",
+    "REED2-CAL-08-O02",
+    "REED2-CAL-08-O03",
+    "REED2-CAL-08-O04"
+  ],
+  "checkedClaimIds": [
+    "REED2-CAL-08-C01",
+    "REED2-CAL-08-C02",
+    "REED2-CAL-08-C03",
+    "REED2-CAL-08-C04"
+  ],
+  "checkedQualificationIds": [
+    "REED2-CAL-08-DESIGN",
+    "REED2-CAL-08-PARENT_FAMILIES",
+    "REED2-CAL-08-LANDMARK",
+    "REED2-CAL-08-OR_CONFLICT",
+    "REED2-CAL-08-ANTIPLATELET_EXCEPTION",
+    "REED2-CAL-08-RAW_VS_ADJUSTED",
+    "REED2-CAL-08-EXPOSURE_CLASSES",
+    "REED2-CAL-08-INDICATIONS_OVERLAP",
+    "REED2-CAL-08-PERCENT_LABELS",
+    "REED2-CAL-08-BURDEN",
+    "REED2-CAL-08-SURVIVAL_NULLS",
+    "REED2-CAL-08-MISSINGNESS",
+    "REED2-CAL-08-MULTIPLICITY",
+    "REED2-CAL-08-ACCESS_INTEGRITY",
+    "REED2-CAL-08-DISCLOSURES"
+  ],
+  "criticalBounds": [
+    "Posthoc IPD pooled MAIA737/POLLUX569/CASTOR498=1804. Antithrombotic exposure observational, parent randomization to myeloma regimens not antithrombotics. CASTOR bortezomib/dexamethasone not IMiD; newlydiagnosed transplantineligible MAIA differs relapsed/refractory POLLUX/CASTOR. Not3new independent antithrombotic RCTs.",
+    "BaselineAC248/AP457 vs within6monthsAC558/AP623, mixing prophylaxis, preexistinghistory and eventtreatment. Salicylicacidderivatives428/604 mainlyaspirin not aspirin-only exposure. Combined705/1181 are classsums, overlap and uniqueusers unadjudicated. No inferred agent,dose,schedule or DOACspecific efficacy.",
+    "OS/PFS6monthlandmark1568/1348 of1804 excludes earlyevents/censoring; AE-specific analyticN not reported. CTCAEv4 allreported bleeding not uniformly majorbleeding/adjudicated subtype. LogisticAE OR differs riskratio and Coxsurvival HR, no causal ARR/NNT.",
+    "Table5 within6monthsACVTE OR.39CI.22-.69P.001 conflicts abstract/body.45CI.26-.77P.004. Both sourceversions retained unresolved, not repaired or selected as definitive. BaselineAC five AE adjustedCIs allcross1.",
+    "BaselineAP adjusted ischemicheartdisease OR1.86CI1.09-3.14P.022 is positive and contradicts blanket abstractnull. Other baselineAP and all5 landmarkAP AE CIs cross1. Not ASA-specific causalharm or proof of safety/inefficacy.",
+    "Raw baselineACVTE34/248 vs144/1556 Table3P.038 contradicts nonsignificantprose; rawAP58/457vs120/1347VTE P.024 and88vs162bleeding P<.001 differ adjustedresults. Confoundingbyindication/selection/timevarying exposure not solved by covariateadjustment.",
+    "Table1 MAIA125/156/43/23/681, POLLUX38/53/14/3/441, CASTOR15/41/8/5/347 VTE/bleeding/IHD/stroke/grade>=3 totals178/250/65/31/1469. Endpoints overlap, not summed as unique patients. CASTORAP88/49818%table vs8%prose; warfarin61/24826%literal and daratumumab780grade>=3 53% apparentdenominatorproblem held unrepaired.",
+    "All8 adjusted survivalassociations nonsignificant; baselineAC OS HR1.27CI1.00-1.61P.051 roundedCI not P<.05. LandmarkACOS1.18CI.93-1.48/ACPFS1.09CI.90-1.33; APbaselineOS1.12CI.91-1.39/PFS1.01CI.85-1.19; APlandmarkOS.85CI.66-1.10/PFS.94CI.77-1.16. No equivalence or antimyeloma benefit.",
+    "Adjustment age,gender,weight,ISS,ECOGPS,comorbidity with trial/armstratification; HmiscTranscan imputation main5.1-0/reference5.1-3, no fieldmissingness data, no statedmultiplicitycontrol. Nominal association only, source currentguideline claims secondary not independentverification.",
+    "Conditional Vivli/JJ versus YODA#2022-5048/Janssen accessdeclarations not publicrawdata; potentialparentfamilyoverlap with pooledPPIref32. Ethics REC-23-11-07-01-F; Sharjah2301110392/NHMRCAPP2008119/TourDeCure/THRF support and HOAadvisoryfees asdeclared, otherauthorsnone. Externalregistries/rawdata/protocol/currentintegrity not checked."
+  ],
+  "full15Q67FieldMapScientificAcceptance": false,
+  "scientificAcceptance": false,
+  "humanApproval": false,
+  "newGrades": 0,
+  "newIndependentTrials": 0,
+  "uniqueNewIndependentPatientCountAdjudicated": false,
+  "released": false
+}

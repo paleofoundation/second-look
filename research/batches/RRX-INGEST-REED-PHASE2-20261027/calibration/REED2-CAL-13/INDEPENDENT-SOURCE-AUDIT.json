@@ -1,0 +1,87 @@
+{
+  "at": "2026-10-27T13:19:00.377195+00:00",
+  "result": "PASS_BOUNDED_EXACT4_CLAIM_GROUPS_WITH15_QUALIFICATIONS",
+  "candidateSha256": "a03ddf716276249be312ab0d5203e0600a6666411974464c7078499ae464e91a",
+  "sourceSha256FreshMatched": "397d3cf502bbebffac5dc1bb0832ff51d1510b2fd637fbeaeef933b68a3fd0ee",
+  "indexSha256FreshMatched": "ce652097092de3f4db150ad8d895bf87b2f04506f8a9142b74643ea98074b975",
+  "auditManifestSha256": "4c578846531ecf005e0bcbb04e3669d46da00644ad43d8893682e83939f501c8",
+  "exactAuditedDependencies": {
+    "SOURCE-CANDIDATE.json": "a03ddf716276249be312ab0d5203e0600a6666411974464c7078499ae464e91a",
+    "review-inputs.jsonl": "4c1ba57cb7a490ea3e97a38fde5e5fa7b2231da9e01b22de7ea54abd70136478",
+    "PLAN.json": "5bff77c2d7d764a1ca948f95f3bc0b63a630874816f4889f418622e655c03956",
+    "SCHEMA.json": "77a21d20d440afc7e0e5f68c25c7282847a34d8026bf103687ef7728c4f1af22",
+    "READINESS.json": "db2acfe9115b4276da784c07719186ec30ffa8557600f768b82d59b609036ca6",
+    "DOWNSTREAM-MAPPING.json": "3e849267c52e297386430e146e01388894cff9754cb2fa060ba3ce53b4d38efd",
+    "VISUAL-RECEIPT.json": "3d7b91e15a2f59a2a5fbfab25dfcc8b4d90c0fe79f032d0c11fbcb86ff0babb1",
+    "SOURCE-QUALIFICATIONS.json": "83649f102c81a313cea4c86920b4eb62cb31d2efed5d92ecead5b163bfb2221e",
+    "PRIOR-RECONCILIATION.json": "e789ccd85f630cf5fb083d0bfa53a4326b3463d29728de7a8e28c783a9e3bcae",
+    "OVERLAP-RECONCILIATION.json": "b0bcd41770ce278b0ab2c8e9a143d32e85296c2baaa70373486c06fee8b111c0"
+  },
+  "prospectivePlanReadBeforeOriginal": true,
+  "independentRootRead": {
+    "physicalPagesText": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "materialVisuals": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "rootFreshTextSha256": "f4d512501fdde4f920dc42241e01e0acbebddf9ed8a3a1fbeb14b1ec35e57c52",
+    "scope": "Entire9page text/Table1/Figures1-5 freshrootvisuals; exact4results/4claims15qualificationsboundedfidelity only, not full15Q67fieldscientificacceptance/rawcomputationreplication."
+  },
+  "checkedResultIds": [
+    "REED2-CAL-13-O01",
+    "REED2-CAL-13-O02",
+    "REED2-CAL-13-O03",
+    "REED2-CAL-13-O04"
+  ],
+  "checkedClaimIds": [
+    "REED2-CAL-13-C01",
+    "REED2-CAL-13-C02",
+    "REED2-CAL-13-C03",
+    "REED2-CAL-13-C04"
+  ],
+  "checkedQualificationIds": [
+    "REED2-CAL-13-DESIGN",
+    "REED2-CAL-13-IDENTITY",
+    "REED2-CAL-13-DATASET_N",
+    "REED2-CAL-13-GENE_NOT_PATIENT",
+    "REED2-CAL-13-GENE_COUNTS",
+    "REED2-CAL-13-CLUSTER2",
+    "REED2-CAL-13-SCORE_DIRECTION",
+    "REED2-CAL-13-CLUSTER1",
+    "REED2-CAL-13-NULLS",
+    "REED2-CAL-13-PPI",
+    "REED2-CAL-13-METHODS_LIMITS",
+    "REED2-CAL-13-BIOLOGY",
+    "REED2-CAL-13-HISTORICAL_TRIAL",
+    "REED2-CAL-13-LIMITS",
+    "REED2-CAL-13-DISCLOSURES_ACCESS"
+  ],
+  "criticalBounds": [
+    "Originalinsilicoreanalysisnotnewdrug-treatedcohort/trial/animal/culturevalidation. MethodsGSE100833327patientsasreported,uniquepeople-vsbiopsies/timepoints/refractorydefinitionnotverified. Ref37Nair2009psoriasisGWASnotobviousdatareference; noexternalrepair/claimdatasetwrong. SameCP002-R01/SYN-D29-C11-CMAP reportpreviouslycollapsedbaseline051/285, notnewindependentpatients/trialorpriorPASStranfer.",
+    "Geneclustersnotvalidatedpatientsubtypes/clinicalrespondergroups. Table1260DEG193up67down/clusters158/25/35/42 versusmethodsquery193up65down andfigures247DEG183up64down/clusters150/26/33/38. Discrepanciesheldnotcleaned. Table1cluster1443/102P<.001ratio4.343/cluster319/2ratio9.5P<.001/cluster20/0P1andcluster43/0P<.001undefinedratios. No clinicaleffectsize/infiniteeffect orallclustersconnectivityclaim.",
+    "Clomipramine6825cluster2score8.4oneof11tiednotuniquebest/seventhmosteffective;down5.7/all2.9separate. Computationalenrichmentscoresnotclinicalremission/responsepercent/HR/CI/probabilityorverifiednormalizedCMapconnectivity. Methodssimilarpatternsnotverifiednegativesignaturereversal; noclinicaldose/efficacy/safety orclomipraminemechanismtested.",
+    "Cluster1CP69033401instance3823score18.8informationunavailable;cyclosporin1331/vorinostat1161/withaferinA3819tie12.3. Cluster3no significantdrugprofilesdespitePPI/PPARenrichment. Cluster4PF005397586421score6/others5.9notheadtoheadclinicalresponseornoclinicaleffect.",
+    "MethodsRMA/MetaDE/limmaFDR.05abslogFC>1/queryZ<.001literal/1000iterations80%resamplingk2-20/STRING900, EuclideanPAMvsPearsonconsensus/linkagewordingretainednoreplication. SourcecyclosporinFDAforCD/withaferinsteroidclassification/chelidoninevschelidonicacidreference31notadoptedcurrentfacts. Historical2020vorinostatNCT03167437recruitingnotcurrentstatus/resultorclomipraminetrial.",
+    "Singledataset/selection/nonlinearbiologyandfurthergeneticallydiversesamplevalidationlimits;sourcecitedmechanismsnotnewprimaryvalidation. NRF2019R1C1C1003524fundingandnocompetingasdeclared,noethicsstatementfoundnotproofabsence/requirement. S1-S3/rawGEO/CMap/code/currentintegrityunchecked;noacquisition/publicclaim/clinicalguidance."
+  ],
+  "full15Q67FieldMapScientificAcceptance": false,
+  "scientificAcceptance": false,
+  "humanApproval": false,
+  "newGrades": 0,
+  "newIndependentTrials": 0,
+  "uniqueNewIndependentPatientCountAdjudicated": false,
+  "released": false
+}

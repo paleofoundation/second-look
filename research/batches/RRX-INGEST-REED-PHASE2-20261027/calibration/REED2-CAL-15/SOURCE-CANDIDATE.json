@@ -1,0 +1,1397 @@
+{
+  "schemaVersion": "reed2-cal15-xenon-GBM-radiosensitization-v1",
+  "paper": {
+    "id": "REED-81ae839a8e3be7f94c91",
+    "pmid": "38291439",
+    "doi": "10.1186/s13014-023-02395-1",
+    "title": "Combining a noble gas with radiotherapy: glutamate receptor antagonist xenon may act as a radiosensitizer in glioblastoma.",
+    "sourceType": "primary_preclinical_xenon_memantine_CFA_radiobiology"
+  },
+  "source": {
+    "id": "REED2-CAL-15-MAIN",
+    "pmid": "38291439",
+    "doi": "10.1186/s13014-023-02395-1",
+    "title": "Combining a noble gas with radiotherapy: glutamate receptor antagonist xenon may act as a radiosensitizer in glioblastoma.",
+    "reportId": "REED-81ae839a8e3be7f94c91",
+    "ref": "$REMAPRX_REED_ROOT/memantine-glioblastoma/pdfs/38291439-buttner-2024.pdf",
+    "sha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+    "physicalPages": 10
+  },
+  "inspection": {
+    "at": "2026-10-27T13:16:25.215631+00:00",
+    "physicalPagesRead": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "visualInspectedPhysicalPages": [
+      4,
+      5,
+      6,
+      7
+    ],
+    "fullScientificReviewComplete": false,
+    "separateCompanionContentRead": false,
+    "rawDataInspected": false
+  },
+  "study": {
+    "design": "Primary 2D cell-line colony-formation proof of concept and gas-system validation",
+    "GBMLines": [
+      "U87",
+      "U251"
+    ],
+    "nonglialControl": "HeLa cancer cell line, not normal brain",
+    "authentication": "CLS short tandem repeat typing declared, passages<10",
+    "radiationDoseGy": [
+      0,
+      2,
+      4,
+      6,
+      8
+    ],
+    "photonEnergyMV": 6,
+    "memantineExposureUM": 25,
+    "memantineTiming": "One hour before irradiation; source also appends0.25mg/mlreagentwording,notconverted/equatedhere",
+    "xenonTiming": "Immediately after irradiation",
+    "flaskGasTargetPercent": {
+      "Xe": 50,
+      "N2": 25,
+      "O2": 20,
+      "CO2": 5
+    },
+    "suppliedMixturePercent": {
+      "Xe": 75,
+      "O2": 20,
+      "CO2": 5
+    },
+    "gasProcedure": "60minchamberdiffusion,thensealedflasks24hat37C,beforeunsealingto5%CO2incubator",
+    "replication": "ThreeindependentexperimentswithtriplicateT25flaskspercondition/dose,notninebiologicalexperiments",
+    "colonyEndpoint": "Morethan50clonalcells,colonyformationcount11daysU251/HeLaor14daysU87afterirradiation/gas",
+    "normalization": "Survivingfractionnormalizedtotreatmentplatingefficiency;linear-quadraticfitlnSF=-(alphaD+betaD2)",
+    "statistics": "Unpairedtwo-tailedt-testsP<.05;bar95%CIversusregressionSEM;multiplecomparisonadjustmentnotreported",
+    "humanOrAnimalTreatment": false,
+    "normalBrainSafetyEstablished": false,
+    "formalSynergyTestReported": false,
+    "receptorMechanismNecessaryProven": false,
+    "clinicalRadiosensitizationBenefitEstablished": false,
+    "locators": [
+      {
+        "kind": "pdf",
+        "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+        "physicalPage": 3,
+        "printedPage": 3,
+        "nativeSection": "Culture/CFA/radiation/exposure"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+        "physicalPage": 4,
+        "printedPage": 4,
+        "nativeSection": "Validation/PE/Figure1/statistics"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+        "physicalPage": 5,
+        "printedPage": 5,
+        "nativeSection": "Figures2-3/SFresults"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+        "physicalPage": 6,
+        "printedPage": 6,
+        "nativeSection": "Figure4/discussion"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+        "physicalPage": 8,
+        "printedPage": 8,
+        "nativeSection": "Limitations/funding/dataaccess"
+      }
+    ]
+  },
+  "populations": {
+    "clinicalPatients": 0,
+    "animalSubjects": 0,
+    "GBMCellLines": 2,
+    "nonglialCancerLines": 1,
+    "independentExperiments": 3,
+    "flaskReplicatesPerCondition": 3,
+    "biologicalNisNine": false,
+    "originalSeededCells0Gy": {
+      "U251": 100,
+      "HeLa": 200,
+      "U87": 1000
+    },
+    "seededCellRangesOverDoses": {
+      "U251": [
+        100,
+        2000
+      ],
+      "HeLa": [
+        200,
+        4000
+      ],
+      "U87": [
+        1000,
+        10000
+      ]
+    },
+    "uniqueCrossCorpusClinicalPatientsAdjudicated": false,
+    "locators": [
+      {
+        "kind": "pdf",
+        "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+        "physicalPage": 3,
+        "printedPage": 3,
+        "nativeSection": "Culture/CFA/radiation/exposure"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+        "physicalPage": 5,
+        "printedPage": 5,
+        "nativeSection": "Figures2-3/SFresults"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+        "physicalPage": 6,
+        "printedPage": 6,
+        "nativeSection": "Figure4/discussion"
+      }
+    ]
+  },
+  "results": [
+    {
+      "id": "REED2-CAL-15-O01",
+      "outcome": "Gas-method and dosimetry validation context",
+      "estimate": {
+        "kind": "in_vitro_method_validation",
+        "oxygenBag60minPercent": 96.8,
+        "oxygenBagRange": [
+          96.7,
+          97.0
+        ],
+        "calculatedFlaskOxygenPercent": 81.0,
+        "observedFlaskOxygenPercent": 80.6,
+        "observedRange": [
+          79.8,
+          81.2
+        ],
+        "flaskCO2After60minPercent": 3.246,
+        "doseWithXenonPresentMGy": {
+          "mean": 2022,
+          "CI95": [
+            2020.6,
+            2023.4
+          ]
+        },
+        "doseAirMGy": {
+          "mean": 1993,
+          "CI95": [
+            1990.5,
+            1995.4
+          ]
+        },
+        "biologicalXenonAppliedDuringRT": false,
+        "directXeConcentrationMeasurement": false,
+        "clinicalScheduleAdopted": false
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Culture/CFA/radiation/exposure"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 4,
+          "printedPage": 4,
+          "nativeSection": "Validation/PE/Figure1/statistics"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 8,
+          "printedPage": 8,
+          "nativeSection": "Limitations/funding/dataaccess"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED2-CAL-15-O02",
+      "outcome": "U87 clonogenic surviving fraction after RT and xenon/memantine",
+      "estimate": {
+        "kind": "in_vitro_PE_normalized_clonogenic_source_Pvalues",
+        "XeSignificantDoseGyP": {
+          "4": 0.029,
+          "6": 0.01,
+          "8": 0.037
+        },
+        "memantineAloneSignificantlyReducesSF": false,
+        "XeMemSignificantDoseGyP": {
+          "2": 0.023,
+          "4": 0.001,
+          "6": 0.008,
+          "8": 0.022
+        },
+        "exactSFMeansCIsNotDigitized": true,
+        "clinicalBenefitEstablished": false
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 1,
+          "printedPage": 1,
+          "nativeSection": "Abstract"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Culture/CFA/radiation/exposure"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Figure2/results"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED2-CAL-15-O03",
+      "outcome": "U251 clonogenic findings and source caption/dose inconsistency",
+      "estimate": {
+        "kind": "in_vitro_PE_normalized_clonogenic_source_Pvalues",
+        "XeTextSignificantDoseGyP": {
+          "2": 0.009,
+          "6": 0.027,
+          "8": 0.016
+        },
+        "XeFigure3CaptionSaysStartsGy": 4,
+        "XeTextPlotCaptionConflictResolved": false,
+        "memantineAloneSignificantDoseGyP": {
+          "4": 0.021,
+          "6": 0.023,
+          "8": 0.019
+        },
+        "XeMemPBoundsByGy": {
+          "2": "<.017",
+          "4": "<.003",
+          "6": "<.006",
+          "8": "<.026"
+        },
+        "combo2GyAsteriskShownInPlot": false,
+        "exactSFMeansCIsNotDigitized": true,
+        "formalSynergyEstablished": false
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 1,
+          "printedPage": 1,
+          "nativeSection": "Abstract"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Figure3/results"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED2-CAL-15-O04",
+      "outcome": "HeLa nonglial cancer comparator and sham plating-efficiency nulls",
+      "estimate": {
+        "kind": "in_vitro_comparator_and_baseline_context",
+        "HeLaXeSignificantDoseGyP": {
+          "8": 0.029
+        },
+        "HeLaMemOrComboRTDataClaimed": false,
+        "HeLaIsNormalBrain": false,
+        "shamPEGroupDifferencesSignificantAsReported": false,
+        "noIntrinsicToxicityOrEquivalenceEstablished": false,
+        "normalBrainSelectivitySafetyEstablished": false
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Culture/CFA/radiation/exposure"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 4,
+          "printedPage": 4,
+          "nativeSection": "Figure1"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Figures2-3/SFresults"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 6,
+          "printedPage": 6,
+          "nativeSection": "Figure4"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED2-CAL-15-O05",
+      "outcome": "Qualitative receptor signals and proposed radiosensitizing mechanism",
+      "estimate": {
+        "kind": "qualitative_staining_and_mechanistic_hypothesis",
+        "cellLinesWithGluA1GluN1Signals": [
+          "U87",
+          "U251",
+          "HeLa"
+        ],
+        "quantitativeReceptorExpressionCompared": false,
+        "receptorFunctionNecessityProven": false,
+        "DNADamageRepairMechanismMeasuredHere": false,
+        "authorsHypothesis": "Differentglutamatereceptorbinding/possiblyadditivecalciumsignalDNArepairinhibition",
+        "wholeMechanismResolved": false,
+        "clinicalRadiosensitizationEstablished": false
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 4,
+          "printedPage": 4,
+          "nativeSection": "Validation/PE/Figure1/statistics"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Figures2-3/SFresults"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Figure5/discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 8,
+          "printedPage": 8,
+          "nativeSection": "Limitations/funding/dataaccess"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    }
+  ],
+  "claims": [
+    {
+      "id": "REED2-CAL-15-C01",
+      "resultIds": [
+        "REED2-CAL-15-O01"
+      ],
+      "statement": "Diffusion-basedgasmethodhasO2/CO2surrogateandseparatephysicaldosimetrysupport,notdirectXetracingorvalidatedclinicaldelivery. BiologicalXewasafterirradiation,sounrelatedduring-Xedoseincreaseisnotitsappliedradiationregimen.",
+      "relation": "original_preclinical_clonogenic_radiation_candidate",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED2-CAL-15-C02",
+      "resultIds": [
+        "REED2-CAL-15-O02"
+      ],
+      "statement": "U87XeshowedlowerclonogenicSFat4/6/8GyandXe+Memat2-8Gy;memalonewasnonsignificant. Thisiscompound/model-specificinvitroevidence,notuniversalGBMmemantineefficacyorclinicalbenefit.",
+      "relation": "original_preclinical_clonogenic_radiation_candidate",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED2-CAL-15-C03",
+      "resultIds": [
+        "REED2-CAL-15-O03"
+      ],
+      "statement": "U251memalonewasassociatedwithlowerSFat4/6/8Gy;Xe2/6/8text/plotconflictswithcaptionstarting4Gy. Xe+MemnominalPboundsat2-8donotestablishsynergy,and2Gyplotasteriskomissionremainsunrepaired.",
+      "relation": "original_preclinical_clonogenic_radiation_candidate",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED2-CAL-15-C04",
+      "resultIds": [
+        "REED2-CAL-15-O04"
+      ],
+      "statement": "HeLaXeonly8GysignificantandshamPEnullsarereported,notnormalbrainsafety/selectivity/equivalence. HeLaMem/comboRTgroupsarenotclaimedfromabsentdata.",
+      "relation": "original_preclinical_clonogenic_radiation_candidate",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED2-CAL-15-C05",
+      "resultIds": [
+        "REED2-CAL-15-O05"
+      ],
+      "statement": "GluA1/GluN1qualitativestaininginU87/U251/HeLasupportsreceptorpresenceindications,notfunctionalnecessaryreceptorblockadeorprovenDNAdamage-repairmechanism. Authorpossiblyadditivebindingexplanationremainsinferred.",
+      "relation": "original_preclinical_clonogenic_radiation_candidate",
+      "acceptedSupport": false
+    }
+  ],
+  "reviewInputs": [
+    {
+      "id": "Q01",
+      "answer": "DevelopgasCFAandtestXeRTwithactualmemantinecomparison.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 1,
+          "printedPage": 1,
+          "nativeSection": "Abstract"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 8,
+          "printedPage": 8,
+          "nativeSection": "Limitations/funding/dataaccess"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q02",
+      "answer": "U87/U251GBMlinesandHeLanonglialcancerline.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Culture/CFA/radiation/exposure"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q03",
+      "answer": "Xegasand25uMmemantinehydrochlorideactualtested.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Culture/CFA/radiation/exposure"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q04",
+      "answer": "Untreatedgas/shamRT,RTalone,Xe/Mem/comboinGBM;HeLaXecontrolonly.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Culture/CFA/radiation/exposure"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 4,
+          "printedPage": 4,
+          "nativeSection": "Validation/PE/Figure1/statistics"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Figures2-3/SFresults"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q05",
+      "answer": "Exploratorygasvalidation/clonogenicsurvival/qualitativereceptors.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 1,
+          "printedPage": 1,
+          "nativeSection": "Abstract"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Culture/CFA/radiation/exposure"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Figures2-3/SFresults"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 8,
+          "printedPage": 8,
+          "nativeSection": "Limitations/funding/dataaccess"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q06",
+      "answer": "[{'kind': 'in_vitro_method_validation', 'oxygenBag60minPercent': 96.8, 'oxygenBagRange': [96.7, 97.0], 'calculatedFlaskOxygenPercent': 81.0, 'observedFlaskOxygenPercent': 80.6, 'observedRange': [79.8, 81.2], 'flaskCO2After60minPercent': 3.246, 'doseWithXenonPresentMGy': {'mean': 2022, 'CI95': [2020.6, 2023.4]}, 'doseAirMGy': {'mean': 1993, 'CI95': [1990.5, 1995.4]}, 'biologicalXenonAppliedDuringRT': False, 'directXeConcentrationMeasurement': False, 'clinicalScheduleAdopted': False}, {'kind': 'in_vitro_PE_normalized_clonogenic_source_Pvalues', 'XeSignificantDoseGyP': {'4': 0.029, '6': 0.01, '8': 0.037}, 'memantineAloneSignificantlyReducesSF': False, 'XeMemSignificantDoseGyP': {'2': 0.023, '4': 0.001, '6': 0.008, '8': 0.022}, 'exactSFMeansCIsNotDigitized': True, 'clinicalBenefitEstablished': False}, {'kind': 'in_vitro_PE_normalized_clonogenic_source_Pvalues', 'XeTextSignificantDoseGyP': {'2': 0.009, '6': 0.027, '8': 0.016}, 'XeFigure3CaptionSaysStartsGy': 4, 'XeTextPlotCaptionConflictResolved': False, 'memantineAloneSignificantDoseGyP': {'4': 0.021, '6': 0.023, '8': 0.019}, 'XeMemPBoundsByGy': {'2': '<.017', '4': '<.003', '6': '<.006', '8': '<.026'}, 'combo2GyAsteriskShownInPlot': False, 'exactSFMeansCIsNotDigitized': True, 'formalSynergyEstablished': False}, {'kind': 'in_vitro_comparator_and_baseline_context', 'HeLaXeSignificantDoseGyP': {'8': 0.029}, 'HeLaMemOrComboRTDataClaimed': False, 'HeLaIsNormalBrain': False, 'shamPEGroupDifferencesSignificantAsReported': False, 'noIntrinsicToxicityOrEquivalenceEstablished': False, 'normalBrainSelectivitySafetyEstablished': False}, {'kind': 'qualitative_staining_and_mechanistic_hypothesis', 'cellLinesWithGluA1GluN1Signals': ['U87', 'U251', 'HeLa'], 'quantitativeReceptorExpressionCompared': False, 'receptorFunctionNecessityProven': False, 'DNADamageRepairMechanismMeasuredHere': False, 'authorsHypothesis': 'Differentglutamatereceptorbinding/possiblyadditivecalciumsignalDNArepairinhibition', 'wholeMechanismResolved': False, 'clinicalRadiosensitizationEstablished': False}]",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Culture/CFA/radiation/exposure"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Figures2-3/SFresults"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q07",
+      "answer": "No fullfailedflask/assayattritionflow supplied.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Culture/CFA/radiation/exposure"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 4,
+          "printedPage": 4,
+          "nativeSection": "Validation/PE/Figure1/statistics"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 8,
+          "printedPage": 8,
+          "nativeSection": "Limitations/funding/dataaccess"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q08",
+      "answer": "No clinicaladverseeventascertainment.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Culture/CFA/radiation/exposure"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 4,
+          "printedPage": 4,
+          "nativeSection": "Validation/PE/Figure1/statistics"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 8,
+          "printedPage": 8,
+          "nativeSection": "Limitations/funding/dataaccess"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q09",
+      "answer": "2D/twoGBMlines/potentialU87misclassification/normalization/gasN2confounding.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 4,
+          "printedPage": 4,
+          "nativeSection": "Validation/PE/Figure1/statistics"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Figures2-3/SFresults"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 8,
+          "printedPage": 8,
+          "nativeSection": "Limitations/funding/dataaccess"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q10",
+      "answer": "D25/C04actualmemantine/XeRTpreclinicalscope,compound/lineseparate.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 1,
+          "printedPage": 1,
+          "nativeSection": "Abstract"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Culture/CFA/radiation/exposure"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Figures2-3/SFresults"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 8,
+          "printedPage": 8,
+          "nativeSection": "Limitations/funding/dataaccess"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q11",
+      "answer": "{'reportId': 'REED-81ae839a8e3be7f94c91', 'modelFamilies': ['U87', 'U251', 'HeLa', 'diffusiongasCFAplatform'], 'citedFutureSelectedReport': 'PMID30970642_MuellerLaengle2019_reference16_only', 'citedOriginalReportsRead': 0, 'newIndependentTrialCount': 0, 'newIndependentPatientCount': 0, 'uniqueCrossCorpusPatientCountAdjudicated': False, 'samePopulationAcrossResults': 'Dose/arm/assayculturegroupsnotnewclinicalcohorts,triplicateflasksnotnineindependentexperiments', 'locators': [{'kind': 'pdf', 'sourceSha256': '55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c', 'physicalPage': 3, 'printedPage': 3, 'nativeSection': 'Culture/CFA/radiation/exposure'}, {'kind': 'pdf', 'sourceSha256': '55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c', 'physicalPage': 9, 'printedPage': 9, 'nativeSection': 'Declarations/references'}]}",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Culture/CFA/radiation/exposure"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Declarations/references"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 10,
+          "printedPage": 10,
+          "nativeSection": "References"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q12",
+      "answer": "ThomasBuettner,MarielenaK.E.Maerevoet,FrankA.Giordano,MarlonR.Veldwijk,CarstenHerskind,ArneMathiasRuder.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 1,
+          "printedPage": 1,
+          "nativeSection": "Abstract"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Culture/CFA/radiation/exposure"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 8,
+          "printedPage": 8,
+          "nativeSection": "Limitations/funding/dataaccess"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Declarations/references"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q13",
+      "answer": "RadiationOncology2024;19:16,DOI2023suffix,accepted21Dec2023.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 1,
+          "printedPage": 1,
+          "nativeSection": "Abstract"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 8,
+          "printedPage": 8,
+          "nativeSection": "Limitations/funding/dataaccess"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Declarations/references"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 10,
+          "printedPage": 10,
+          "nativeSection": "References"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q14",
+      "answer": "{'paperId': 'REED-81ae839a8e3be7f94c91', 'sourceId': 'REED2-CAL-15-MAIN', 'resultIds': ['REED2-CAL-15-O01', 'REED2-CAL-15-O02', 'REED2-CAL-15-O03', 'REED2-CAL-15-O04', 'REED2-CAL-15-O05'], 'claimIds': ['REED2-CAL-15-C01', 'REED2-CAL-15-C02', 'REED2-CAL-15-C03', 'REED2-CAL-15-C04', 'REED2-CAL-15-C05'], 'existingGuideIds': ['G-DRUG-D25', 'G-CONDITION-C04'], 'purpose': 'Private xenon/actual25uMmemantine GBMcell-line RT comparison with U87memnull/U251signal; no clinical radiosensitization/safety or xenonclass-to-memantine substitution', 'publicationState': 'private_unapplied_candidate', 'canonicalChanges': 0, 'newIndependentTrials': 0, 'newIndependentPatients': 0}",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Figures2-3/SFresults"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 8,
+          "printedPage": 8,
+          "nativeSection": "Limitations/funding/dataaccess"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending",
+      "downstreamMapping": {
+        "paperId": "REED-81ae839a8e3be7f94c91",
+        "sourceId": "REED2-CAL-15-MAIN",
+        "resultIds": [
+          "REED2-CAL-15-O01",
+          "REED2-CAL-15-O02",
+          "REED2-CAL-15-O03",
+          "REED2-CAL-15-O04",
+          "REED2-CAL-15-O05"
+        ],
+        "claimIds": [
+          "REED2-CAL-15-C01",
+          "REED2-CAL-15-C02",
+          "REED2-CAL-15-C03",
+          "REED2-CAL-15-C04",
+          "REED2-CAL-15-C05"
+        ],
+        "existingGuideIds": [
+          "G-DRUG-D25",
+          "G-CONDITION-C04"
+        ],
+        "purpose": "Private xenon/actual25uMmemantine GBMcell-line RT comparison with U87memnull/U251signal; no clinical radiosensitization/safety or xenonclass-to-memantine substitution",
+        "publicationState": "private_unapplied_candidate",
+        "canonicalChanges": 0,
+        "newIndependentTrials": 0,
+        "newIndependentPatients": 0
+      }
+    },
+    {
+      "id": "Q15",
+      "answer": "Xe/comboclonogeniceffectsandU251memsignal,U87memnull;2Dproof-of-conceptnotclinicalbenefit.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 8,
+          "printedPage": 8,
+          "nativeSection": "Limitations/funding/dataaccess"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    }
+  ],
+  "sourceQualifications": [
+    {
+      "id": "REED2-CAL-15-MODEL",
+      "description": "Two2DGBMlinesU87/U251andnonglialHeLacancercellcontrol,notnormalneurons/healthybrain/patients/animals. SourceacknowledgespotentialU87misclassificationdespiteSTRauthenticationandneed3D/in-vivo confirmation.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Culture/CFA/radiation/exposure"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 8,
+          "printedPage": 8,
+          "nativeSection": "Limitations/funding/dataaccess"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-15-DRUG_IDENTITY",
+      "description": "Actual25uMmemantinehydrochloridetestedonehourbeforeRT,notxenonclassanalogyalone. XeafterRTdistinctfrommemaloneorXe+Mem;sourcealso0.25mg/mlreagentphrase,notconvertedorequatedto25uMclinicaldose.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 1,
+          "printedPage": 1,
+          "nativeSection": "Abstract"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Culture/CFA/radiation/exposure"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Figures2-3/SFresults"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-15-GAS",
+      "description": "Deliveredchambermixture75%Xe20%O2/5%CO2yieldsestimated50%Xe25%N2/20%O2/5%CO2insideflasks.60mindiffusionthen24hsealed,notonly60minexposureor75%flaskXe. O2/CO2surrogate/physicaldosevalidationnotdirectXeconcentrationmeasurement,idealdistributionassumptionremains.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Culture/CFA/radiation/exposure"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 4,
+          "printedPage": 4,
+          "nativeSection": "Validation/PE/Figure1/statistics"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 6,
+          "printedPage": 6,
+          "nativeSection": "Figure4/discussion"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-15-RADIATION",
+      "description": "0/2/4/6/8Gyabsorbedradiationdoseswith6MVphotons,not6Gyallconditions. XeappliedafterRTinbiologicalexperiments;separateXepresent-during-RTdosimetry2022vs1993mGynotextraeffectcausingpostRTresultsorrecommendedclinicalschedule.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Culture/CFA/radiation/exposure"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 4,
+          "printedPage": 4,
+          "nativeSection": "Validation/PE/Figure1/statistics"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 8,
+          "printedPage": 8,
+          "nativeSection": "Limitations/funding/dataaccess"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-15-UNITS_N",
+      "description": "Threeindependentexperimentswithtriplicateflasksperdose,nineflasksnotninebiologicalreplicates. Colonies>50cellsafter11daysU251/HeLaor14daysU87;SFnormalizedtoPE. Bar95%CIandregressionSEMdistinct,exactmeans/CI/numericalfitparametersinunreadappendixnotdigitized.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Culture/CFA/radiation/exposure"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 4,
+          "printedPage": 4,
+          "nativeSection": "Validation/PE/Figure1/statistics"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Figures2-3/SFresults"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 6,
+          "printedPage": 6,
+          "nativeSection": "Figure4/discussion"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-15-PE_NULL",
+      "description": "No significantshamPEdifferencesinreportedtestedgroups,notprovennosubstancecytotoxicity/equivalence. PE-basednormalizationcanintroducecell-cooperationerrorperauthors. HeLafigure1/4onlyXe/control,nothypothesizedMem/combinationradiationeffect.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 4,
+          "printedPage": 4,
+          "nativeSection": "Validation/PE/Figure1/statistics"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Figures2-3/SFresults"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 6,
+          "printedPage": 6,
+          "nativeSection": "Figure4/discussion"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-15-U87_MEM_NULL",
+      "description": "U87XeP.029/.010/.037at4/6/8Gy;memaloneSFnotstatisticallysignificantlyreducedversuscontrol. Xe+MemP.023/.001/.008/.022at2/4/6/8. Do not turncombinationeffectintomem-alonebenefitforallGBMmodels.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 1,
+          "printedPage": 1,
+          "nativeSection": "Abstract"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Figures2-3/SFresults"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-15-U251_SOURCE",
+      "description": "U251Xeresulttext/abstractdose2/6/8GyP.009/.027/.016versusFig3captionXestarting4Gy;plotstars2/6/8. Retaininconsistency,notforcedmonotonicdose-responseorrewrittencaption. Memalone4/6/8P.021/.023/.019. Comboall2-8textP<.017/<.003/<.006/<.026;plot2Gycomboasterisknotshown,do notrepairorupgradeprecision.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 1,
+          "printedPage": 1,
+          "nativeSection": "Abstract"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Figures2-3/SFresults"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-15-COMBINATION",
+      "description": "Combo-versuscontrolPvaluesandlowerSFarenotformalgreater-than-additivity/synergyorstatisticallyverifiedinteractionagainstbothsingleagents. AuthorsdifferentNMDAbindingsites/possiblyadditiveexplanationisattributednotdirectlytestedmechanisticnecessity.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Figures2-3/SFresults"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Figure5/receptorstaining"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 8,
+          "printedPage": 8,
+          "nativeSection": "Limitations/funding/dataaccess"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-15-HELA",
+      "description": "XeSFsignificantinHeLaonly8GyP.029notnormalbrainselectivityorsafety. HeLanonglialcancerdiffersfromGBM,lowerdose-nonsignificance isnotnoeffect. NoMem/combinationHeLaradiationclaimfrommissinggroups.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 1,
+          "printedPage": 1,
+          "nativeSection": "Abstract"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Figures2-3/SFresults"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 6,
+          "printedPage": 6,
+          "nativeSection": "Figure4/discussion"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-15-RECEPTOR",
+      "description": "QualitativeGluA1/GluN1immunofluorescencesignals inall3lines,singleimmunostainingnotrepeatedlikerest. SourceacknowledgesnoquantitativeWestern/qPCRcomparison;notproofreceptorfunction,blockade,DNAdamage-repairmediationornecessarypathway.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 4,
+          "printedPage": 4,
+          "nativeSection": "Validation/PE/Figure1/statistics"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 5,
+          "printedPage": 5,
+          "nativeSection": "Figures2-3/SFresults"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Figure5/receptorstaining"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 8,
+          "printedPage": 8,
+          "nativeSection": "Limitations/funding/dataaccess"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-15-CONFOUNDING_STATS",
+      "description": "GasN2fractiondiffers50Xe/25N2versus75N2control;reactivenitrogenspeciesbiasnotexcluded. Manydose/arm/linet-tests,noformalcorrectiondescribed;randomization/blinding/failurecountsnotreported. Noimputation/power/clinicaleffectCIinferredfromstars.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Culture/CFA/radiation/exposure"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 4,
+          "printedPage": 4,
+          "nativeSection": "Validation/PE/Figure1/statistics"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 8,
+          "printedPage": 8,
+          "nativeSection": "Limitations/funding/dataaccess"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-15-TRANSLATION",
+      "description": "No clinicalbrainPK/tolerability/radiosensitizationstudyhere. SourceperinatalasphyxiaapprovedwordingcitesEMAorphan-designationopinionref25,notcheckedasmarketingapproval. ExistinganesthesiabackgroundandavailabilitynotGBMapproval/currentguidance. NCT01430351andmemtrialbibliographicnotcurrentread/results.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 2,
+          "printedPage": 2,
+          "nativeSection": "Gasmethod/background"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 8,
+          "printedPage": 8,
+          "nativeSection": "Limitations/funding/dataaccess"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Declarations/references"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-15-OVERLAP",
+      "description": "Source16NMDA2019radiationreportPMID30970642futureselectedreportcitedcontextonly,notfreshprimaryPASS. Celllineuseandpriorradiosensitizationcitationsdonotaddindependentpatients/trials. Currentoriginalreporthasitsownmodel-gasidentity.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 2,
+          "printedPage": 2,
+          "nativeSection": "Gasmethod/background"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 7,
+          "printedPage": 7,
+          "nativeSection": "Figure5/receptorstaining"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Declarations/references"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 10,
+          "printedPage": 10,
+          "nativeSection": "References"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-15-DISCLOSURES_ACCESS",
+      "description": "TraPSMannheimgranttoAMR/ProjektDEALOA. AMR/FAGpendingXenongliomapatentsEP4119191A1/WO2023285170A1andotherfees/grants/stocksdisclosed,othersnoneasdeclared. Ethics/consentnotapplicableasdeclared. Rawdatareasonablerequestnotpublicverified. Ownall10pages/4materialvisuals4-7read,appendixtabulatedPE/SFandrawdata/currentintegritynot_checked,noacquisition.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 8,
+          "printedPage": 8,
+          "nativeSection": "Limitations/funding/dataaccess"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Declarations/references"
+        }
+      ]
+    }
+  ],
+  "overlapRecords": [
+    {
+      "reportId": "REED-81ae839a8e3be7f94c91",
+      "modelFamilies": [
+        "U87",
+        "U251",
+        "HeLa",
+        "diffusiongasCFAplatform"
+      ],
+      "citedFutureSelectedReport": "PMID30970642_MuellerLaengle2019_reference16_only",
+      "citedOriginalReportsRead": 0,
+      "newIndependentTrialCount": 0,
+      "newIndependentPatientCount": 0,
+      "uniqueCrossCorpusPatientCountAdjudicated": false,
+      "samePopulationAcrossResults": "Dose/arm/assayculturegroupsnotnewclinicalcohorts,triplicateflasksnotnineindependentexperiments",
+      "locators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 3,
+          "printedPage": 3,
+          "nativeSection": "Culture/CFA/radiation/exposure"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "55d0d7370056091d16792f84f1f4b44d1e15701ed9de2c27eeedcd292c03d76c",
+          "physicalPage": 9,
+          "printedPage": 9,
+          "nativeSection": "Declarations/references"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Two2DGBMlinesU87/U251andnonglialHeLacancercellcontrol,notnormalneurons/healthybrain/patients/animals. SourceacknowledgespotentialU87misclassificationdespiteSTRauthenticationandneed3D/in-vivo confirmation.",
+    "Actual25uMmemantinehydrochloridetestedonehourbeforeRT,notxenonclassanalogyalone. XeafterRTdistinctfrommemaloneorXe+Mem;sourcealso0.25mg/mlreagentphrase,notconvertedorequatedto25uMclinicaldose.",
+    "Deliveredchambermixture75%Xe20%O2/5%CO2yieldsestimated50%Xe25%N2/20%O2/5%CO2insideflasks.60mindiffusionthen24hsealed,notonly60minexposureor75%flaskXe. O2/CO2surrogate/physicaldosevalidationnotdirectXeconcentrationmeasurement,idealdistributionassumptionremains.",
+    "0/2/4/6/8Gyabsorbedradiationdoseswith6MVphotons,not6Gyallconditions. XeappliedafterRTinbiologicalexperiments;separateXepresent-during-RTdosimetry2022vs1993mGynotextraeffectcausingpostRTresultsorrecommendedclinicalschedule.",
+    "Threeindependentexperimentswithtriplicateflasksperdose,nineflasksnotninebiologicalreplicates. Colonies>50cellsafter11daysU251/HeLaor14daysU87;SFnormalizedtoPE. Bar95%CIandregressionSEMdistinct,exactmeans/CI/numericalfitparametersinunreadappendixnotdigitized.",
+    "No significantshamPEdifferencesinreportedtestedgroups,notprovennosubstancecytotoxicity/equivalence. PE-basednormalizationcanintroducecell-cooperationerrorperauthors. HeLafigure1/4onlyXe/control,nothypothesizedMem/combinationradiationeffect.",
+    "U87XeP.029/.010/.037at4/6/8Gy;memaloneSFnotstatisticallysignificantlyreducedversuscontrol. Xe+MemP.023/.001/.008/.022at2/4/6/8. Do not turncombinationeffectintomem-alonebenefitforallGBMmodels.",
+    "U251Xeresulttext/abstractdose2/6/8GyP.009/.027/.016versusFig3captionXestarting4Gy;plotstars2/6/8. Retaininconsistency,notforcedmonotonicdose-responseorrewrittencaption. Memalone4/6/8P.021/.023/.019. Comboall2-8textP<.017/<.003/<.006/<.026;plot2Gycomboasterisknotshown,do notrepairorupgradeprecision.",
+    "Combo-versuscontrolPvaluesandlowerSFarenotformalgreater-than-additivity/synergyorstatisticallyverifiedinteractionagainstbothsingleagents. AuthorsdifferentNMDAbindingsites/possiblyadditiveexplanationisattributednotdirectlytestedmechanisticnecessity.",
+    "XeSFsignificantinHeLaonly8GyP.029notnormalbrainselectivityorsafety. HeLanonglialcancerdiffersfromGBM,lowerdose-nonsignificance isnotnoeffect. NoMem/combinationHeLaradiationclaimfrommissinggroups.",
+    "QualitativeGluA1/GluN1immunofluorescencesignals inall3lines,singleimmunostainingnotrepeatedlikerest. SourceacknowledgesnoquantitativeWestern/qPCRcomparison;notproofreceptorfunction,blockade,DNAdamage-repairmediationornecessarypathway.",
+    "GasN2fractiondiffers50Xe/25N2versus75N2control;reactivenitrogenspeciesbiasnotexcluded. Manydose/arm/linet-tests,noformalcorrectiondescribed;randomization/blinding/failurecountsnotreported. Noimputation/power/clinicaleffectCIinferredfromstars.",
+    "No clinicalbrainPK/tolerability/radiosensitizationstudyhere. SourceperinatalasphyxiaapprovedwordingcitesEMAorphan-designationopinionref25,notcheckedasmarketingapproval. ExistinganesthesiabackgroundandavailabilitynotGBMapproval/currentguidance. NCT01430351andmemtrialbibliographicnotcurrentread/results.",
+    "Source16NMDA2019radiationreportPMID30970642futureselectedreportcitedcontextonly,notfreshprimaryPASS. Celllineuseandpriorradiosensitizationcitationsdonotaddindependentpatients/trials. Currentoriginalreporthasitsownmodel-gasidentity.",
+    "TraPSMannheimgranttoAMR/ProjektDEALOA. AMR/FAGpendingXenongliomapatentsEP4119191A1/WO2023285170A1andotherfees/grants/stocksdisclosed,othersnoneasdeclared. Ethics/consentnotapplicableasdeclared. Rawdatareasonablerequestnotpublicverified. Ownall10pages/4materialvisuals4-7read,appendixtabulatedPE/SFandrawdata/currentintegritynot_checked,noacquisition."
+  ],
+  "newIndependentTrials": 0,
+  "newIndependentPatients": 0,
+  "scientificAcceptance": false,
+  "humanApproval": false,
+  "released": false
+}
