@@ -329,3 +329,10 @@ Source: owner confirmation to reduce the circle and surrounding marks by exactly
 ## 2026-10-15 — restore citation brackets
 
 Source: owner request, “please put citation brackets back. Mistake.” Scope: shared article and research-review superscript links site-wide. Supersedes the October 14 unbracketed-citation requirement; restore square-bracketed numbers and original tight cluster spacing. Consulted PepsAnon citation component. Contract: `PROJECT-RULES.md`. Shared renderer, CSS and existing citation-number checks updated; source identity/order and popover behavior preserved. Verification: governance, 68-article navigation, reader sections, 64-profile/four-answer evidence SSR, TypeScript, production build and 36 built-client boundary scans passed. Publication pending.
+
+
+## 2026-10-27 — Enclosing Rx identity and blue website icon
+
+Source: owner's request with Photo 1.jpg to make the circle surround both R and smaller x and produce a new RemapRx website icon in blue/light blue. Scope: shared symbol/wordmarks, homepage mark, favicon, touch/website icons and default social artwork. Supersedes the x-centered circle and earlier favicon right-offset/15%-reduction geometry; replaces the website icon's yellow background with pale blue. Contract: `docs/REMAPRX-IDENTITY.md`, Enclose the complete Rx.
+
+Implementation: editable enclosing-Rx SVG and reproducible brand generator; preserved glyph paths and target details, centered combined lettering, generated matching 192/512-pixel icons and refreshed icon URL versions. Prior concepts/history and concurrent canonical work remain preserved. Local asset/render, governance, TypeScript, production-build and reader-boundary validation plus publication status are recorded in the identity contract and the exact release receipt. At adoption, verification/publication are pending. No scientific content, release approval, access or audience changes; no upstream synchronization is claimed.
