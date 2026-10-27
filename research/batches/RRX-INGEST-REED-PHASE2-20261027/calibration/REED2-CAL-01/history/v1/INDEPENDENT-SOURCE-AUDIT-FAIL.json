@@ -1,0 +1,21 @@
+{
+  "at": "2026-10-27T11:45:54.768671+00:00",
+  "candidateSha256": "d9debe9fe10f3e1c45df4f4f8c961c4ab1bf4d58dcc051de483a6de9080399f6",
+  "status": "FAIL_CORRECTION_REQUIRED_BEFORE_BOUNDED_ACCEPTANCE",
+  "sourceSha256": "5f3eaea2e83399ea76f259cf118c18a282b12b923ae09f0c5a8bf0a6ccaff3f6",
+  "issues": [
+    {
+      "path": "results.SLEEP_ADVERSE_EVENTS.estimate.extension.increasedAppetitePatients",
+      "observed": 9,
+      "source": "Physical4\u20135 Safety extension continuation explicitly says loss of appetite n9",
+      "required": "lossOfAppetitePatients:9, preserve exact failedversion/newversion and dependency binding"
+    },
+    {
+      "path": "SOURCE-QUALIFICATIONS disclosures CRP sentence locators",
+      "observed": "physical13/14/21",
+      "required": "Addphysical12statisticalanalysis for within-groupWilcoxon statement"
+    }
+  ],
+  "scientificApproval": false,
+  "humanApproval": false
+}
