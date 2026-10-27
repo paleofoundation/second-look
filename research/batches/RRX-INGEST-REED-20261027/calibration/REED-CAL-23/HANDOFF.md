@@ -1,0 +1,7 @@
+# CAL23 bounded diet/radiation checkpoint
+
+Duan2012PMID22776123,noDOIinvented. ProspectiveGPbeforeall7textpages,Figs1-3/Table1physical4/5visual. Exact9dependencyrootreceiptcopied/fourR-Csourcefidelityonly. ReuseP-D10-EMT6-DIET-2012/A-F02-R1176F01;newde838eversusold660319bytesnotoldPASS,priorstatesunchanged.17guardsPASS. ACCEPTANCE-UPDATE supersedes only historicalpendingboundedauditstate.
+
+AdultfemaleBALBcRw2.5-3mo/EMT6,8initialper4armsnotcompletefinalN;dietmicerandomized/RTcages,no clusteradjustmentreported.150ppmadlib7daysbeforeinoculationthroughgrowthnotbodydose/measuredtissuePK.10GyRTday14/~100mm3. Table1time4xtreatmentvolume12.7/12.1/17.5/20.4meanSEM.8/.6/1.3/.9;dietP.32/withinRTP.12,radiationP<.05notFBZbenefit/interaction/equivalence. Terminal1000mm3notTableendpoint/PFS/OS. Lungmeans29.7/29.7/28.6/24.3SEM7.2/4.3/3.9/9.1allpairwiseP>.05,local/lymphnoneobservednotallmetastasesabsent. HostweightANOVAP>.05/observationsnotuniversal/clinicalsafety. Culture.11/.33uMno consistentgrowthchange,1/3inhibition,2experiments/2or4measurementsnotindependentanimalN/apoptosis. Dietprocessing/vitaminassumptionandauthorPK~.1uMfrompriorsourcesqualified.
+
+CAL24explicitlyreusesdietexperiment/ref10;do notcountnewanimals/replicationorconvertitsSDtoCAL23SEM. KeepcurrentCAL23bytesunchangedandrecordcrossreportprecisiondifferenceinnewCAL24overlaprecord. D10privatemappingunapplied/full67field/scientific/human/grade/releaseapprovalzero. Continuebroaderingest/requiredreviewswithout20/30scaleapproval.
