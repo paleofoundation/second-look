@@ -1,3 +1,4 @@
+raise SystemExit('Historical 9021676 recipe retired; use PR5-FIX active guarded projector.')
 """Bounded label expansion and clinical coverage clarification; no source/row mutation."""
 import json,copy,hashlib,subprocess
 from pathlib import Path

@@ -1,6 +1,6 @@
 # Second Look rule changelog
 
-## 2026-10-27 — FILL-REMAPRX-1 step 4: exact label and human-data scope
+## 2026-10-27: FILL-REMAPRX-1 step 4: exact label and human-data scope
 
 Source: the existing 07:26 GO and original step-4 requirement to expand six named pages from labels already cited. Contract/implementation notes: `LABEL-CONTEXT-EXPANSION.md`; prospective packet: `research/batches/FILL-REMAPRX-LABELS-20261027/`. The candidate preserves product/formulation scope, distinguishes official-label context from efficacy grades, and does not confuse DailyMed update dates with approval years. Eight guides and six mechanism contexts receive 18 label-context records and 14 scoped Low clinical-inference records. Existing outcomes, benefit letters, source objects and source-review states remain unchanged. PAX-D retains its exact existing Low/correction-unresolved state. The five-page human-data audit distinguishes cells, computational human datasets and fungal isolates from treatment trials, and acknowledges the human maraviroc phase I report already cited. No universal absence claim is inferred from an empty classification.
 
@@ -365,3 +365,7 @@ Source: owner request, “please put citation brackets back. Mistake.” Scope: 
 ## 2026-10-27: FILL-REMAPRX-1 PR4 review correction
 
 Source: Elons 08:01 exact PR4 FIX and 08:12 priority/Vitiligo ruling. The initial c0c3024 packet remains an immutable historical Git snapshot; its original readiness/hash receipts are not refreshed or backdated. Current portable source references, candidate, visibility/wording changes and Node 22 verification are recorded in `research/batches/FILL-REMAPRX-PR4-FIX-20261027/`. Correct the internal ledger count to nine Low and four not_established; eleven reader claims remain mapped while the Guilford case and borrowed-mechanism note stay internal. Restore explicit no FDA-approved human use, cite FDA regulatory context in both human/veterinary rows, rename the general benefit question, and identify model-only clinical translation clearly. Preserve all scientific grades, original source hashes and protected book/vitiligo records. Existing source-summary routes already have noindex metadata and no released review bodies; verify actual final routes without changing global indexing policy. Draft only; no merge, deployment, scientific/human approval or production action.
+
+## 2026-10-27: FILL-REMAPRX-1 PR5 review correction
+
+Source: 08:12 owner review relayed by Elon, after the PR4 fix. Replace compound-to-gene, dose-response and cytokine-receptor punctuation in active new rendered label/mechanism prose and all canonical/public/parent projections; remove the new heading em dash. The active guarded projector uses a corrected candidate, while the initial 9021676 preparation recipe is retired and its sealed readiness/hash receipts stay historical. Contract: PROJECT-RULES.md review-correction section; new exact checks and hashes in FILL-REMAPRX-PR5-FIX-20261027. All original sources, grades, outcomes and protected book/Vitiligo records remain unchanged from the propagated PR4 correction. Draft only, no merge or release.
