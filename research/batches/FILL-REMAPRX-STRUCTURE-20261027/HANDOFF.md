@@ -1,0 +1,7 @@
+# Condition structure report
+
+Scope: authorized step3, read-only deployed versus planned comparison. Base is condition draft PR6 at1d605ccba945b058493c32350cb359e8178ca028. CONDITION-STRUCTURE-COMPARISON.md leads with verified live Sites46/source2004fbf, its sync GitHub mirror, and the precise changes a future template migration needs. The current5column table already matches the later supersession; do not restore the obsolete4column certainty proposal. Existing content drafts retain old composition.
+
+Selected fresh Sites provenance, two live browser observations, remote branch heads and8unchanged application hashes are recorded in JSON. The untracked original D22 publishing framework was read without import/modification; its portable external reference, branch/head and SHA256 distinguish it from a committed/deployed plan. A collaborator can verify committed application/provenance relationships with verify.py; external current publication must be freshly rechecked when making a release decision.
+
+Only3documentation files and this packet change. Governance under Node22.23.4, provenance/hash/document-link checks and whitespace checks pass. No new application build or template/browser acceptance claim for an unimplemented variant. Scientific discovery, full reviews, human approval and an exact-version release remain separate. All Vitiligo/book holds remain. No application data, renderer, source assessment, audience/indexing/access/configuration/credential change, merge/deploy/publication or outbound message.

@@ -113,3 +113,7 @@ The owner's later Examine screenshots and explicit request adopt Intervention / 
 ### October 27 selected-source depth continuation
 
 The 07:26 owner order authorizes deeper evidence, mechanisms, human-data and safety explanations for four existing pages: multiple myeloma, ME/CFS, ALS and basal-cell carcinoma. This bounded source expansion does not implement the planned template or claim condition-wide discovery. The 08:12 ruling retains Vitiligo deferral because of CP027-CH25; no exception to the 11 CP027/CP028 book-page hold is inferred. The four-page packet records prospective readiness, actual reading depth, scoped claim grades and remaining review/release gates.
+
+### October 27 deployed/planned comparison
+
+The authorized read-only [structure comparison](CONDITION-STRUCTURE-COMPARISON.md) verifies Sites version46/source2004fbf and the existing condition composition, distinguishes the later five-column table supersession, and records what a future template migration requires. The depth drafts do not implement or ship that template. The untracked D22 publishing framework was consulted without importing or modifying it. Exact metadata, source hashes and remaining gates are in the comparison packet.
