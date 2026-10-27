@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "REED-CAL-11-incidence-cohort-v1",
+  "required": [
+    "schemaVersion",
+    "paper",
+    "source",
+    "inspection",
+    "study",
+    "cohorts",
+    "results",
+    "claims",
+    "reviewInputs",
+    "limitations",
+    "scientificAcceptance",
+    "humanApproval",
+    "released"
+  ],
+  "controls": [
+    "Observational not causal prevention",
+    "Incident MM not mortality/treatment",
+    "NHS HPFS overlap withCAL04 not new independent populations",
+    "Exposure amounts frequency duration update and lag distinguished",
+    "Cohort and sex interaction not inferred from within-subgroup significance",
+    "Adjusted relative measure not absolute risk/NNT",
+    "Null and uncertainty retained"
+  ],
+  "reviewInventory": "rules/one-match-rule/references/research-reviews/review-questions-and-inputs.json",
+  "fixedGates": {
+    "scientificAcceptance": false,
+    "humanApproval": false,
+    "released": false,
+    "acceptedSupport": false,
+    "grade": null
+  }
+}
