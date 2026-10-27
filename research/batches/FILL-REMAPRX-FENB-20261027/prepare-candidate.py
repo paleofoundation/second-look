@@ -1,3 +1,4 @@
+raise SystemExit('Historical c0 preparation snapshot. Do not regenerate superseded public content; use the PR4-FIX candidate and projector.')
 import json,hashlib,csv,copy,datetime,subprocess
 from pathlib import Path
 assert subprocess.run(['git','diff','--quiet','1dc68285d499d6f4f8ddcef2c1ff873883f0ed7d','--','data/content.json','data/public-content.json','data/public-mechanisms.json','data/drug-status-table.json','editorial/parent-guide-scopes.json','data/article-updates.json']).returncode==0, 'Preparation requires the original, unchanged D10 baseline; do not replay over edited content.'
