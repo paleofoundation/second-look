@@ -1,5 +1,11 @@
 # Second Look rule changelog
 
+## 2026-10-27 — FILL-REMAPRX-1 step 4: exact label and human-data scope
+
+Source: the existing 07:26 GO and original step-4 requirement to expand six named pages from labels already cited. Contract/implementation notes: `LABEL-CONTEXT-EXPANSION.md`; prospective packet: `research/batches/FILL-REMAPRX-LABELS-20261027/`. The candidate preserves product/formulation scope, distinguishes official-label context from efficacy grades, and does not confuse DailyMed update dates with approval years. Eight guides and six mechanism contexts receive 18 label-context records and 14 scoped Low clinical-inference records. Existing outcomes, benefit letters, source objects and source-review states remain unchanged. PAX-D retains its exact existing Low/correction-unresolved state. The five-page human-data audit distinguishes cells, computational human datasets and fungal isolates from treatment trials, and acknowledges the human maraviroc phase I report already cited. No universal absence claim is inferred from an empty classification.
+
+Status: bounded draft implementation and source inspection; validation/delivery are recorded with exact candidate hashes in the packet. Raw labels remain private; source Q01-Q15, independent/human approval and release remain pending. Protected CP027/CP028 pages and source objects remain unchanged. No condition-template migration, merge, deploy, credential/indexing/configuration or production action is performed. The original publishing plan and prior receipts are preserved.
+
 ## 2026-10-27 — FILL-REMAPRX-1 steps 3-4: claim depth and source boundaries
 
 Source: Elon's 07:26 Asia/Nicosia GO relaying the owner's October 27 requirements. Scope: fenbendazole first, then named thin drug/condition pages and the existing condition-structure comparison. Contract: `PROJECT-RULES.md`, with a prospective fenbendazole plan/schema/readiness and source/claim records in `research/batches/FILL-REMAPRX-FENB-20261027/`. RemapRx retains its own template; HMI is a depth benchmark. Cite-only research, no public paper hosting; institutional originals may be inspected. Textbooks are internal leads only and cannot support new claims. Preserve CP027/CP028 public book pages and source objects pending the separate owner decision. Use American English without new em dashes.
