@@ -1,0 +1,783 @@
+{
+  "state": "private_candidate_not_publicly_applied_or_accepted",
+  "records": [
+    {
+      "claimId": "AZ-HH-ITRA",
+      "drug": "Itraconazole",
+      "mechanism": "Hedgehog",
+      "statement": "Itraconazole inhibited Hedgehog activity in cells and mouse tumors. Human pathway findings are mixed: a prostate study measured skin GLI1 changes, a lung study found no significant GLI1 or PTCH1 change in paired skin samples and no significant decrease in its tumor comparison against unrelated sample sets, and a five-person basal-cell-carcinoma study used sequential arsenic trioxide and itraconazole. Low clinical inference. A cell signal and an indirect or combination biomarker change do not establish cancer benefit or consistent inhibition in treated human tumors.",
+      "sourceBindings": [
+        {
+          "sourceId": "MECH-D07-HEDGEHOG-2010",
+          "sha256": "bc73e04fcf8aab8d161c48e56364251a98025a621cb709a09b6401cad6326ffe",
+          "path": "azole-hedgehog-pathway-inhibition/pdfs/20385363-kimj-2010.pdf"
+        },
+        {
+          "sourceId": "MECH-D07-GLI1-LUNG-2020",
+          "sha256": "dd19f925bbc43e4ff29f6e576c031f573eb1eafabc0cf45be4ce724decd7b02b",
+          "path": "itraconazole-non-small-cell-lung-cancer/pdfs/32847935-gerberde-2020.pdf"
+        },
+        {
+          "sourceId": "P-D07-PROSTATE-2013",
+          "sha256": "804099ede0faf460eca8e61ba622a19eebd5cd2f77488d32a857fc70c96d5e83",
+          "path": "itraconazole-prostate-cancer/pdfs/23340005-antonarakises-2013.pdf"
+        },
+        {
+          "sourceId": "MECH-D07-GLI1-COMBINATION-2016",
+          "sha256": "7dc7b0e609fd5d209a6d633708ae270f4b143dd73393d8bb4a156208b0bad199",
+          "path": "azole-hedgehog-pathway-inhibition/pdfs/26765315-allyms-2016.pdf"
+        },
+        {
+          "sourceId": "MECH-D07-HEDGEHOG-2010",
+          "sha256": "90b42356bc5a52e53542d5ae69a8cc5e80e9a8215141471c4e87bf17700059d4",
+          "path": "azole-hedgehog-pathway-inhibition/pdfs/20385363-kim-2010-supp1.pdf"
+        }
+      ],
+      "locators": [
+        {
+          "sourceId": "MECH-D07-HEDGEHOG-2010",
+          "locator": "Main PDF p3 Results; p6-8 Results/Methods; companion PDF p5 TableS1",
+          "basis": "full_text"
+        },
+        {
+          "sourceId": "MECH-D07-GLI1-LUNG-2020",
+          "locator": "PDF p6-10 Methods/Results/Discussion; p21 Figure3",
+          "basis": "full_text"
+        },
+        {
+          "sourceId": "P-D07-PROSTATE-2013",
+          "locator": "PDF p4 Methods Hh analysis; p6 Results; p7 Figure4; p10 Discussion",
+          "basis": "full_text"
+        },
+        {
+          "sourceId": "MECH-D07-GLI1-COMBINATION-2016",
+          "locator": "PDF p2 Abstract; p3 Methods; p4 Biomarker Analysis and Tumor Response; p5 Discussion",
+          "basis": "full_text"
+        },
+        {
+          "sourceId": "MECH-D07-HEDGEHOG-2010",
+          "locator": "Companion supplement PDF p5 Table S1, distinct from the main article PDF pagination.",
+          "basis": "supplement",
+          "sha256": "90b42356bc5a52e53542d5ae69a8cc5e80e9a8215141471c4e87bf17700059d4"
+        }
+      ],
+      "model": "Cell reporter and mouse tumor experiments, plus small exploratory human studies.",
+      "reportedFinding": "Itraconazole inhibited Hedgehog activity in cells and mouse tumors. Human pathway findings are mixed: a prostate study measured skin GLI1 changes, a lung study found no significant GLI1 or PTCH1 change in paired skin samples and no significant decrease in its tumor comparison against unrelated sample sets, and a five-person basal-cell-carcinoma study used sequential arsenic trioxide and itraconazole.",
+      "interpretation": "Low clinical inference. A cell signal and an indirect or combination biomarker change do not establish cancer benefit or consistent inhibition in treated human tumors.",
+      "grade": "Low",
+      "domains": {
+        "Study methods": {
+          "rationale": "Assay and tumor controls support a model-specific observation, but the human studies are small, exploratory and do not establish clinical pathway causality.",
+          "sourceIds": [
+            "MECH-D07-HEDGEHOG-2010",
+            "MECH-D07-GLI1-LUNG-2020",
+            "P-D07-PROSTATE-2013",
+            "MECH-D07-GLI1-COMBINATION-2016"
+          ],
+          "locator": "Main PDF p3 Results; p6-8 Results/Methods; companion PDF p5 TableS1; PDF p6-10 Methods/Results/Discussion; p21 Figure3; PDF p4 Methods Hh analysis; p6 Results; p7 Figure4; p10 Discussion; PDF p2 Abstract; p3 Methods; p4 Biomarker Analysis and Tumor Response; p5 Discussion"
+        },
+        "Directness": {
+          "rationale": "Human skin biomarkers and selected mouse tumors are indirect for a patient's tumor response and clinical benefit.",
+          "sourceIds": [
+            "MECH-D07-HEDGEHOG-2010",
+            "MECH-D07-GLI1-LUNG-2020",
+            "P-D07-PROSTATE-2013",
+            "MECH-D07-GLI1-COMBINATION-2016"
+          ],
+          "locator": "Main PDF p3 Results; p6-8 Results/Methods; companion PDF p5 TableS1; PDF p6-10 Methods/Results/Discussion; p21 Figure3; PDF p4 Methods Hh analysis; p6 Results; p7 Figure4; p10 Discussion; PDF p2 Abstract; p3 Methods; p4 Biomarker Analysis and Tumor Response; p5 Discussion"
+        },
+        "Precision": {
+          "rationale": "The small human cohorts and model-specific estimates do not define a reliable clinical effect magnitude.",
+          "sourceIds": [
+            "MECH-D07-HEDGEHOG-2010",
+            "MECH-D07-GLI1-LUNG-2020",
+            "P-D07-PROSTATE-2013",
+            "MECH-D07-GLI1-COMBINATION-2016"
+          ],
+          "locator": "Main PDF p3 Results; p6-8 Results/Methods; companion PDF p5 TableS1; PDF p6-10 Methods/Results/Discussion; p21 Figure3; PDF p4 Methods Hh analysis; p6 Results; p7 Figure4; p10 Discussion; PDF p2 Abstract; p3 Methods; p4 Biomarker Analysis and Tumor Response; p5 Discussion"
+        },
+        "Consistency": {
+          "rationale": "Positive model findings coexist with Gerber's negative skin/tumor readouts and indirect or combination human evidence.",
+          "sourceIds": [
+            "MECH-D07-HEDGEHOG-2010",
+            "MECH-D07-GLI1-LUNG-2020",
+            "P-D07-PROSTATE-2013",
+            "MECH-D07-GLI1-COMBINATION-2016"
+          ],
+          "locator": "Main PDF p3 Results; p6-8 Results/Methods; companion PDF p5 TableS1; PDF p6-10 Methods/Results/Discussion; p21 Figure3; PDF p4 Methods Hh analysis; p6 Results; p7 Figure4; p10 Discussion; PDF p2 Abstract; p3 Methods; p4 Biomarker Analysis and Tumor Response; p5 Discussion"
+        },
+        "Source integrity": {
+          "rationale": "Exact owned original hashes were checked; targeted source inspection and the supplied Reed integrity notes do not complete independent correction/retraction verification or human approval.",
+          "sourceIds": [
+            "MECH-D07-HEDGEHOG-2010",
+            "MECH-D07-GLI1-LUNG-2020",
+            "P-D07-PROSTATE-2013",
+            "MECH-D07-GLI1-COMBINATION-2016"
+          ],
+          "locator": "Main PDF p3 Results; p6-8 Results/Methods; companion PDF p5 TableS1; PDF p6-10 Methods/Results/Discussion; p21 Figure3; PDF p4 Methods Hh analysis; p6 Results; p7 Figure4; p10 Discussion; PDF p2 Abstract; p3 Methods; p4 Biomarker Analysis and Tumor Response; p5 Discussion"
+        }
+      },
+      "reviewState": "AI_assisted_draft_not_independently_or_human_approved",
+      "assessedAt": "2026-10-27T10:52:12.099589+02:00",
+      "canonicalImportState": "HOLD_pending_source_and_table_gates"
+    },
+    {
+      "claimId": "AZ-HH-KETO",
+      "drug": "Ketoconazole",
+      "mechanism": "Hedgehog",
+      "statement": "Kim 2010 Table S1 reports a Hedgehog reporter IC50 of 9.2 micromolar for ketoconazole, compared with 0.69 micromolar for itraconazole in that table. Low clinical inference. This weaker cell-reporter signal does not demonstrate a tumor effect in patients.",
+      "sourceBindings": [
+        {
+          "sourceId": "MECH-D07-HEDGEHOG-2010",
+          "sha256": "bc73e04fcf8aab8d161c48e56364251a98025a621cb709a09b6401cad6326ffe",
+          "path": "azole-hedgehog-pathway-inhibition/pdfs/20385363-kimj-2010.pdf"
+        },
+        {
+          "sourceId": "MECH-D07-HEDGEHOG-2010",
+          "sha256": "90b42356bc5a52e53542d5ae69a8cc5e80e9a8215141471c4e87bf17700059d4",
+          "path": "azole-hedgehog-pathway-inhibition/pdfs/20385363-kim-2010-supp1.pdf"
+        }
+      ],
+      "locators": [
+        {
+          "sourceId": "MECH-D07-HEDGEHOG-2010",
+          "locator": "Main PDF p3 Results; p6-8 Results/Methods; companion PDF p5 TableS1",
+          "basis": "full_text"
+        },
+        {
+          "sourceId": "MECH-D07-HEDGEHOG-2010",
+          "locator": "Companion supplement PDF p5 Table S1, distinct from the main article PDF pagination.",
+          "basis": "supplement",
+          "sha256": "90b42356bc5a52e53542d5ae69a8cc5e80e9a8215141471c4e87bf17700059d4"
+        }
+      ],
+      "model": "Shh-Light2 cell reporter assay.",
+      "reportedFinding": "Kim 2010 Table S1 reports a Hedgehog reporter IC50 of 9.2 micromolar for ketoconazole, compared with 0.69 micromolar for itraconazole in that table.",
+      "interpretation": "Low clinical inference. This weaker cell-reporter signal does not demonstrate a tumor effect in patients.",
+      "grade": "Low",
+      "domains": {
+        "Study methods": {
+          "rationale": "A common reporter assay compares the compounds, but does not isolate a clinically achieved effect.",
+          "sourceIds": [
+            "MECH-D07-HEDGEHOG-2010"
+          ],
+          "locator": "Main PDF p3 Results; p6-8 Results/Methods; companion PDF p5 TableS1"
+        },
+        "Directness": {
+          "rationale": "Cultured reporter cells are not human tumors or clinical treatment outcomes.",
+          "sourceIds": [
+            "MECH-D07-HEDGEHOG-2010"
+          ],
+          "locator": "Main PDF p3 Results; p6-8 Results/Methods; companion PDF p5 TableS1"
+        },
+        "Precision": {
+          "rationale": "Reported assay potency is specific to the tested conditions; it is not a patient dose or efficacy estimate.",
+          "sourceIds": [
+            "MECH-D07-HEDGEHOG-2010"
+          ],
+          "locator": "Main PDF p3 Results; p6-8 Results/Methods; companion PDF p5 TableS1"
+        },
+        "Consistency": {
+          "rationale": "This comparison is within one report, not independent clinical replication.",
+          "sourceIds": [
+            "MECH-D07-HEDGEHOG-2010"
+          ],
+          "locator": "Main PDF p3 Results; p6-8 Results/Methods; companion PDF p5 TableS1"
+        },
+        "Source integrity": {
+          "rationale": "Exact owned original hashes were checked; targeted source inspection and the supplied Reed integrity notes do not complete independent correction/retraction verification or human approval.",
+          "sourceIds": [
+            "MECH-D07-HEDGEHOG-2010"
+          ],
+          "locator": "Main PDF p3 Results; p6-8 Results/Methods; companion PDF p5 TableS1"
+        }
+      },
+      "reviewState": "AI_assisted_draft_not_independently_or_human_approved",
+      "assessedAt": "2026-10-27T10:52:12.100649+02:00",
+      "canonicalImportState": "HOLD_pending_source_and_table_gates"
+    },
+    {
+      "claimId": "AZ-HH-MICO",
+      "drug": "Miconazole",
+      "mechanism": "Hedgehog",
+      "statement": "Kim 2010 Table S1 reports a Hedgehog reporter IC50 of 12 micromolar for miconazole. Low clinical inference. The measured cell response is not human biomarker or cancer-benefit evidence.",
+      "sourceBindings": [
+        {
+          "sourceId": "MECH-D07-HEDGEHOG-2010",
+          "sha256": "bc73e04fcf8aab8d161c48e56364251a98025a621cb709a09b6401cad6326ffe",
+          "path": "azole-hedgehog-pathway-inhibition/pdfs/20385363-kimj-2010.pdf"
+        },
+        {
+          "sourceId": "MECH-D07-HEDGEHOG-2010",
+          "sha256": "90b42356bc5a52e53542d5ae69a8cc5e80e9a8215141471c4e87bf17700059d4",
+          "path": "azole-hedgehog-pathway-inhibition/pdfs/20385363-kim-2010-supp1.pdf"
+        }
+      ],
+      "locators": [
+        {
+          "sourceId": "MECH-D07-HEDGEHOG-2010",
+          "locator": "Main PDF p3 Results; p6-8 Results/Methods; companion PDF p5 TableS1",
+          "basis": "full_text"
+        },
+        {
+          "sourceId": "MECH-D07-HEDGEHOG-2010",
+          "locator": "Companion supplement PDF p5 Table S1, distinct from the main article PDF pagination.",
+          "basis": "supplement",
+          "sha256": "90b42356bc5a52e53542d5ae69a8cc5e80e9a8215141471c4e87bf17700059d4"
+        }
+      ],
+      "model": "Shh-Light2 cell reporter assay.",
+      "reportedFinding": "Kim 2010 Table S1 reports a Hedgehog reporter IC50 of 12 micromolar for miconazole.",
+      "interpretation": "Low clinical inference. The measured cell response is not human biomarker or cancer-benefit evidence.",
+      "grade": "Low",
+      "domains": {
+        "Study methods": {
+          "rationale": "The supplement supplies a direct reporter observation, with clinical efficacy outside the experimental design.",
+          "sourceIds": [
+            "MECH-D07-HEDGEHOG-2010"
+          ],
+          "locator": "Main PDF p3 Results; p6-8 Results/Methods; companion PDF p5 TableS1"
+        },
+        "Directness": {
+          "rationale": "A cultured-cell reporter is indirect for clinical Hedgehog inhibition.",
+          "sourceIds": [
+            "MECH-D07-HEDGEHOG-2010"
+          ],
+          "locator": "Main PDF p3 Results; p6-8 Results/Methods; companion PDF p5 TableS1"
+        },
+        "Precision": {
+          "rationale": "The reported IC50 does not establish human exposure, therapeutic effect or safety.",
+          "sourceIds": [
+            "MECH-D07-HEDGEHOG-2010"
+          ],
+          "locator": "Main PDF p3 Results; p6-8 Results/Methods; companion PDF p5 TableS1"
+        },
+        "Consistency": {
+          "rationale": "One assay comparison does not establish clinical consistency across studies.",
+          "sourceIds": [
+            "MECH-D07-HEDGEHOG-2010"
+          ],
+          "locator": "Main PDF p3 Results; p6-8 Results/Methods; companion PDF p5 TableS1"
+        },
+        "Source integrity": {
+          "rationale": "Exact owned original hashes were checked; targeted source inspection and the supplied Reed integrity notes do not complete independent correction/retraction verification or human approval.",
+          "sourceIds": [
+            "MECH-D07-HEDGEHOG-2010"
+          ],
+          "locator": "Main PDF p3 Results; p6-8 Results/Methods; companion PDF p5 TableS1"
+        }
+      },
+      "reviewState": "AI_assisted_draft_not_independently_or_human_approved",
+      "assessedAt": "2026-10-27T10:52:12.101581+02:00",
+      "canonicalImportState": "HOLD_pending_source_and_table_gates"
+    },
+    {
+      "claimId": "AZ-HH-CLOT",
+      "drug": "Clotrimazole",
+      "mechanism": "Hedgehog",
+      "statement": "Kim 2010 Table S1 reports a Hedgehog reporter IC50 of 14 micromolar for clotrimazole. Low clinical inference. This cell observation cannot be transferred to patient tumor response.",
+      "sourceBindings": [
+        {
+          "sourceId": "MECH-D07-HEDGEHOG-2010",
+          "sha256": "bc73e04fcf8aab8d161c48e56364251a98025a621cb709a09b6401cad6326ffe",
+          "path": "azole-hedgehog-pathway-inhibition/pdfs/20385363-kimj-2010.pdf"
+        },
+        {
+          "sourceId": "MECH-D07-HEDGEHOG-2010",
+          "sha256": "90b42356bc5a52e53542d5ae69a8cc5e80e9a8215141471c4e87bf17700059d4",
+          "path": "azole-hedgehog-pathway-inhibition/pdfs/20385363-kim-2010-supp1.pdf"
+        }
+      ],
+      "locators": [
+        {
+          "sourceId": "MECH-D07-HEDGEHOG-2010",
+          "locator": "Main PDF p3 Results; p6-8 Results/Methods; companion PDF p5 TableS1",
+          "basis": "full_text"
+        },
+        {
+          "sourceId": "MECH-D07-HEDGEHOG-2010",
+          "locator": "Companion supplement PDF p5 Table S1, distinct from the main article PDF pagination.",
+          "basis": "supplement",
+          "sha256": "90b42356bc5a52e53542d5ae69a8cc5e80e9a8215141471c4e87bf17700059d4"
+        }
+      ],
+      "model": "Shh-Light2 cell reporter assay.",
+      "reportedFinding": "Kim 2010 Table S1 reports a Hedgehog reporter IC50 of 14 micromolar for clotrimazole.",
+      "interpretation": "Low clinical inference. This cell observation cannot be transferred to patient tumor response.",
+      "grade": "Low",
+      "domains": {
+        "Study methods": {
+          "rationale": "The supplementary table measures pathway reporter activity rather than clinical outcomes.",
+          "sourceIds": [
+            "MECH-D07-HEDGEHOG-2010"
+          ],
+          "locator": "Main PDF p3 Results; p6-8 Results/Methods; companion PDF p5 TableS1"
+        },
+        "Directness": {
+          "rationale": "Model and exposure differ from a treated human tumor.",
+          "sourceIds": [
+            "MECH-D07-HEDGEHOG-2010"
+          ],
+          "locator": "Main PDF p3 Results; p6-8 Results/Methods; companion PDF p5 TableS1"
+        },
+        "Precision": {
+          "rationale": "The table gives assay potency without a human effect estimate.",
+          "sourceIds": [
+            "MECH-D07-HEDGEHOG-2010"
+          ],
+          "locator": "Main PDF p3 Results; p6-8 Results/Methods; companion PDF p5 TableS1"
+        },
+        "Consistency": {
+          "rationale": "The source is one experiment/report, not replicated clinical evidence.",
+          "sourceIds": [
+            "MECH-D07-HEDGEHOG-2010"
+          ],
+          "locator": "Main PDF p3 Results; p6-8 Results/Methods; companion PDF p5 TableS1"
+        },
+        "Source integrity": {
+          "rationale": "Exact owned original hashes were checked; targeted source inspection and the supplied Reed integrity notes do not complete independent correction/retraction verification or human approval.",
+          "sourceIds": [
+            "MECH-D07-HEDGEHOG-2010"
+          ],
+          "locator": "Main PDF p3 Results; p6-8 Results/Methods; companion PDF p5 TableS1"
+        }
+      },
+      "reviewState": "AI_assisted_draft_not_independently_or_human_approved",
+      "assessedAt": "2026-10-27T10:52:12.102494+02:00",
+      "canonicalImportState": "HOLD_pending_source_and_table_gates"
+    },
+    {
+      "claimId": "AZ-HH-FLU",
+      "drug": "Fluconazole",
+      "mechanism": "Hedgehog",
+      "statement": "Fluconazole showed no detectable Hedgehog inhibition in Kim 2010 under the tested conditions. Its Table S1 row has no numerical IC50. Low clinical inference. The negative assay result does not show that every azole inhibits this pathway, and it is not a test of fluconazole's established antifungal uses.",
+      "sourceBindings": [
+        {
+          "sourceId": "MECH-D07-HEDGEHOG-2010",
+          "sha256": "bc73e04fcf8aab8d161c48e56364251a98025a621cb709a09b6401cad6326ffe",
+          "path": "azole-hedgehog-pathway-inhibition/pdfs/20385363-kimj-2010.pdf"
+        },
+        {
+          "sourceId": "MECH-D07-HEDGEHOG-2010",
+          "sha256": "90b42356bc5a52e53542d5ae69a8cc5e80e9a8215141471c4e87bf17700059d4",
+          "path": "azole-hedgehog-pathway-inhibition/pdfs/20385363-kim-2010-supp1.pdf"
+        }
+      ],
+      "locators": [
+        {
+          "sourceId": "MECH-D07-HEDGEHOG-2010",
+          "locator": "Main PDF p3 Results; p6-8 Results/Methods; companion PDF p5 TableS1",
+          "basis": "full_text"
+        },
+        {
+          "sourceId": "MECH-D07-HEDGEHOG-2010",
+          "locator": "Companion supplement PDF p5 Table S1, distinct from the main article PDF pagination.",
+          "basis": "supplement",
+          "sha256": "90b42356bc5a52e53542d5ae69a8cc5e80e9a8215141471c4e87bf17700059d4"
+        }
+      ],
+      "model": "Shh-Light2 cell reporter assay.",
+      "reportedFinding": "Fluconazole showed no detectable Hedgehog inhibition in Kim 2010 under the tested conditions. Its Table S1 row has no numerical IC50.",
+      "interpretation": "Low clinical inference. The negative assay result does not show that every azole inhibits this pathway, and it is not a test of fluconazole's established antifungal uses.",
+      "grade": "Low",
+      "domains": {
+        "Study methods": {
+          "rationale": "The within-assay comparison supports a negative observation within its tested range.",
+          "sourceIds": [
+            "MECH-D07-HEDGEHOG-2010"
+          ],
+          "locator": "Main PDF p3 Results; p6-8 Results/Methods; companion PDF p5 TableS1"
+        },
+        "Directness": {
+          "rationale": "The experiment tests a cellular reporter, not human antifungal efficacy or a clinical cancer endpoint.",
+          "sourceIds": [
+            "MECH-D07-HEDGEHOG-2010"
+          ],
+          "locator": "Main PDF p3 Results; p6-8 Results/Methods; companion PDF p5 TableS1"
+        },
+        "Precision": {
+          "rationale": "No numerical IC50 is supplied; the table's missing number is not a zero.",
+          "sourceIds": [
+            "MECH-D07-HEDGEHOG-2010"
+          ],
+          "locator": "Main PDF p3 Results; p6-8 Results/Methods; companion PDF p5 TableS1"
+        },
+        "Consistency": {
+          "rationale": "The negative fluconazole result conflicts with an undifferentiated azole-class mechanism claim.",
+          "sourceIds": [
+            "MECH-D07-HEDGEHOG-2010"
+          ],
+          "locator": "Main PDF p3 Results; p6-8 Results/Methods; companion PDF p5 TableS1"
+        },
+        "Source integrity": {
+          "rationale": "Exact owned original hashes were checked; targeted source inspection and the supplied Reed integrity notes do not complete independent correction/retraction verification or human approval.",
+          "sourceIds": [
+            "MECH-D07-HEDGEHOG-2010"
+          ],
+          "locator": "Main PDF p3 Results; p6-8 Results/Methods; companion PDF p5 TableS1"
+        }
+      },
+      "reviewState": "AI_assisted_draft_not_independently_or_human_approved",
+      "assessedAt": "2026-10-27T10:52:12.103412+02:00",
+      "canonicalImportState": "HOLD_pending_source_and_table_gates"
+    },
+    {
+      "claimId": "AZ-HH-VORI",
+      "drug": "Voriconazole",
+      "mechanism": "Hedgehog",
+      "statement": "Chen 2016 detected no Hedgehog reporter inhibition from voriconazole up to 40 micromolar. Low clinical inference. This is direct negative cell-assay evidence, without human pathway-response data in this report.",
+      "sourceBindings": [
+        {
+          "sourceId": "MECH-POSACONAZOLE-HEDGEHOG-2016",
+          "sha256": "5960aa49053cb938b05bfa44f401f04adf529ba222dd8c5bbb486cc4fce05967",
+          "path": "azole-hedgehog-pathway-inhibition/pdfs/26823493-chenb-2016.pdf"
+        }
+      ],
+      "locators": [
+        {
+          "sourceId": "MECH-POSACONAZOLE-HEDGEHOG-2016",
+          "locator": "PDF p4-5 Methods; p5-8 Results; p8-10 Discussion",
+          "basis": "full_text"
+        }
+      ],
+      "model": "Shh-Light2 cell reporter assay.",
+      "reportedFinding": "Chen 2016 detected no Hedgehog reporter inhibition from voriconazole up to 40 micromolar.",
+      "interpretation": "Low clinical inference. This is direct negative cell-assay evidence, without human pathway-response data in this report.",
+      "grade": "Low",
+      "domains": {
+        "Study methods": {
+          "rationale": "Chen tested a contrasting azole in the same reporter design; it supports only the measured assay scope.",
+          "sourceIds": [
+            "MECH-POSACONAZOLE-HEDGEHOG-2016"
+          ],
+          "locator": "PDF p4-5 Methods; p5-8 Results; p8-10 Discussion"
+        },
+        "Directness": {
+          "rationale": "No voriconazole-treated human tumor or clinical outcome is assessed here.",
+          "sourceIds": [
+            "MECH-POSACONAZOLE-HEDGEHOG-2016"
+          ],
+          "locator": "PDF p4-5 Methods; p5-8 Results; p8-10 Discussion"
+        },
+        "Precision": {
+          "rationale": "The negative observation is bounded by the 40-micromolar tested range, not universal equivalence.",
+          "sourceIds": [
+            "MECH-POSACONAZOLE-HEDGEHOG-2016"
+          ],
+          "locator": "PDF p4-5 Methods; p5-8 Results; p8-10 Discussion"
+        },
+        "Consistency": {
+          "rationale": "This finding corrects the prior packet summary that no direct voriconazole measurement was found.",
+          "sourceIds": [
+            "MECH-POSACONAZOLE-HEDGEHOG-2016"
+          ],
+          "locator": "PDF p4-5 Methods; p5-8 Results; p8-10 Discussion"
+        },
+        "Source integrity": {
+          "rationale": "Exact owned original hashes were checked; targeted source inspection and the supplied Reed integrity notes do not complete independent correction/retraction verification or human approval.",
+          "sourceIds": [
+            "MECH-POSACONAZOLE-HEDGEHOG-2016"
+          ],
+          "locator": "PDF p4-5 Methods; p5-8 Results; p8-10 Discussion"
+        }
+      },
+      "reviewState": "AI_assisted_draft_not_independently_or_human_approved",
+      "assessedAt": "2026-10-27T10:52:12.104442+02:00",
+      "canonicalImportState": "HOLD_pending_source_and_table_gates"
+    },
+    {
+      "claimId": "AZ-HH-POSA",
+      "drug": "Posaconazole",
+      "mechanism": "Hedgehog",
+      "statement": "Posaconazole suppressed Hedgehog-related signals and tumor growth in cell and mouse experiments. Chen placed its action at or near Smoothened, while leaving direct binding unresolved. Sun's human surgical samples measured baseline SMO expression, not a response to posaconazole treatment. Low clinical inference. These experiments do not establish human tumor target engagement or cancer benefit. Sun's mouse study also observed liver histology changes; nonsignificant enzyme comparisons do not establish safety.",
+      "sourceBindings": [
+        {
+          "sourceId": "MECH-POSACONAZOLE-HEDGEHOG-2016",
+          "sha256": "5960aa49053cb938b05bfa44f401f04adf529ba222dd8c5bbb486cc4fce05967",
+          "path": "azole-hedgehog-pathway-inhibition/pdfs/26823493-chenb-2016.pdf"
+        },
+        {
+          "sourceId": "MECH-POSACONAZOLE-RMS-2021",
+          "sha256": "b58adafec2054c45c9165e562964253295ea5d79ade852d68b4275937bbd05b2",
+          "path": "azole-hedgehog-pathway-inhibition/pdfs/34659903-sunj-2021.pdf"
+        }
+      ],
+      "locators": [
+        {
+          "sourceId": "MECH-POSACONAZOLE-HEDGEHOG-2016",
+          "locator": "PDF p4-5 Methods; p5-8 Results; p8-10 Discussion",
+          "basis": "full_text"
+        },
+        {
+          "sourceId": "MECH-POSACONAZOLE-RMS-2021",
+          "locator": "PDF p2-5 Methods/results; p7 Results/discussion; p9 Figure5; p10 Discussion",
+          "basis": "full_text"
+        }
+      ],
+      "model": "Reporter and cancer-cell experiments, mouse tumors and baseline human tissue characterization.",
+      "reportedFinding": "Posaconazole suppressed Hedgehog-related signals and tumor growth in cell and mouse experiments. Chen placed its action at or near Smoothened, while leaving direct binding unresolved. Sun's human surgical samples measured baseline SMO expression, not a response to posaconazole treatment.",
+      "interpretation": "Low clinical inference. These experiments do not establish human tumor target engagement or cancer benefit. Sun's mouse study also observed liver histology changes; nonsignificant enzyme comparisons do not establish safety.",
+      "grade": "Low",
+      "domains": {
+        "Study methods": {
+          "rationale": "Reporter, localization and tumor experiments support a preclinical mechanism; upstream alternatives and cell identity limitations remain.",
+          "sourceIds": [
+            "MECH-POSACONAZOLE-HEDGEHOG-2016",
+            "MECH-POSACONAZOLE-RMS-2021"
+          ],
+          "locator": "PDF p4-5 Methods; p5-8 Results; p8-10 Discussion; PDF p2-5 Methods/results; p7 Results/discussion; p9 Figure5; p10 Discussion"
+        },
+        "Directness": {
+          "rationale": "Treated cells and mice are distinct from human surgical baseline expression and human treatment response.",
+          "sourceIds": [
+            "MECH-POSACONAZOLE-HEDGEHOG-2016",
+            "MECH-POSACONAZOLE-RMS-2021"
+          ],
+          "locator": "PDF p4-5 Methods; p5-8 Results; p8-10 Discussion; PDF p2-5 Methods/results; p7 Results/discussion; p9 Figure5; p10 Discussion"
+        },
+        "Precision": {
+          "rationale": "Small preclinical experimental groups and assay-specific signals do not estimate a clinical benefit or harm frequency.",
+          "sourceIds": [
+            "MECH-POSACONAZOLE-HEDGEHOG-2016",
+            "MECH-POSACONAZOLE-RMS-2021"
+          ],
+          "locator": "PDF p4-5 Methods; p5-8 Results; p8-10 Discussion; PDF p2-5 Methods/results; p7 Results/discussion; p9 Figure5; p10 Discussion"
+        },
+        "Consistency": {
+          "rationale": "Two model reports support pathway-related findings, but differ in model and do not constitute human clinical replication.",
+          "sourceIds": [
+            "MECH-POSACONAZOLE-HEDGEHOG-2016",
+            "MECH-POSACONAZOLE-RMS-2021"
+          ],
+          "locator": "PDF p4-5 Methods; p5-8 Results; p8-10 Discussion; PDF p2-5 Methods/results; p7 Results/discussion; p9 Figure5; p10 Discussion"
+        },
+        "Source integrity": {
+          "rationale": "Exact owned original hashes were checked; targeted source inspection and the supplied Reed integrity notes do not complete independent correction/retraction verification or human approval.",
+          "sourceIds": [
+            "MECH-POSACONAZOLE-HEDGEHOG-2016",
+            "MECH-POSACONAZOLE-RMS-2021"
+          ],
+          "locator": "PDF p4-5 Methods; p5-8 Results; p8-10 Discussion; PDF p2-5 Methods/results; p7 Results/discussion; p9 Figure5; p10 Discussion"
+        }
+      },
+      "reviewState": "AI_assisted_draft_not_independently_or_human_approved",
+      "assessedAt": "2026-10-27T10:52:12.105467+02:00",
+      "canonicalImportState": "HOLD_pending_source_and_table_gates"
+    },
+    {
+      "claimId": "AZ-CAND-ITRA",
+      "drug": "Itraconazole",
+      "mechanism": "Candida_morphogenesis",
+      "statement": "Costa 2011 observed concentration- and strain-dependent reduction in hyphal formation with itraconazole. Resistant isolates retained more hyphae. Although some values differed by drug, the comparison with fluconazole was not statistically significant. Low clinical inference. In vitro changes in shape do not establish prevention of tissue invasion, symptom improvement or a patient treatment schedule.",
+      "sourceBindings": [
+        {
+          "sourceId": "MECH-AZOLE-HYPHAE-2011",
+          "sha256": "0dca27f8c3d195ae398f19e0beadc952e81d6d82dc1b18b5f1d794774f0232a3",
+          "path": "azole-candida-hyphal-morphogenesis/pdfs/22094708-costacr-2011.pdf"
+        }
+      ],
+      "locators": [
+        {
+          "sourceId": "MECH-AZOLE-HYPHAE-2011",
+          "locator": "PDF p2 Methods; p3 Results/Figures1-2; p4 Discussion",
+          "basis": "full_text"
+        }
+      ],
+      "model": "Candida albicans isolates in hyphal-induction medium.",
+      "reportedFinding": "Costa 2011 observed concentration- and strain-dependent reduction in hyphal formation with itraconazole. Resistant isolates retained more hyphae. Although some values differed by drug, the comparison with fluconazole was not statistically significant.",
+      "interpretation": "Low clinical inference. In vitro changes in shape do not establish prevention of tissue invasion, symptom improvement or a patient treatment schedule.",
+      "grade": "Low",
+      "domains": {
+        "Study methods": {
+          "rationale": "The source compared susceptible/resistant isolates and concentration levels; morphology was measured in vitro on two occasions.",
+          "sourceIds": [
+            "MECH-AZOLE-HYPHAE-2011"
+          ],
+          "locator": "PDF p2 Methods; p3 Results/Figures1-2; p4 Discussion"
+        },
+        "Directness": {
+          "rationale": "Five laboratory-tested isolates are not five treated patients, and hyphae are not a patient clinical outcome.",
+          "sourceIds": [
+            "MECH-AZOLE-HYPHAE-2011"
+          ],
+          "locator": "PDF p2 Methods; p3 Results/Figures1-2; p4 Discussion"
+        },
+        "Precision": {
+          "rationale": "Limited isolates/repeats and the nonsignificant drug comparison preclude a reliable superiority estimate.",
+          "sourceIds": [
+            "MECH-AZOLE-HYPHAE-2011"
+          ],
+          "locator": "PDF p2 Methods; p3 Results/Figures1-2; p4 Discussion"
+        },
+        "Consistency": {
+          "rationale": "Responses vary with strain and concentration; they do not support a uniform azole effect.",
+          "sourceIds": [
+            "MECH-AZOLE-HYPHAE-2011"
+          ],
+          "locator": "PDF p2 Methods; p3 Results/Figures1-2; p4 Discussion"
+        },
+        "Source integrity": {
+          "rationale": "Exact owned original hashes were checked; targeted source inspection and the supplied Reed integrity notes do not complete independent correction/retraction verification or human approval.",
+          "sourceIds": [
+            "MECH-AZOLE-HYPHAE-2011"
+          ],
+          "locator": "PDF p2 Methods; p3 Results/Figures1-2; p4 Discussion"
+        }
+      },
+      "reviewState": "AI_assisted_draft_not_independently_or_human_approved",
+      "assessedAt": "2026-10-27T10:52:12.106475+02:00",
+      "canonicalImportState": "HOLD_pending_source_and_table_gates"
+    },
+    {
+      "claimId": "AZ-CAND-FLU",
+      "drug": "Fluconazole",
+      "mechanism": "Candida_morphogenesis",
+      "statement": "Fluconazole reduced hyphal formation under specified laboratory conditions, but responses depended on resistance, concentration and exposure timing. Ha and White found that drug exposure during both growth and induction mattered in their tested isolates. Low clinical inference. Isolates taken from patients and then tested in a laboratory are not evidence that inhibiting hyphae improves patient outcomes.",
+      "sourceBindings": [
+        {
+          "sourceId": "MECH-D34-HYPHAE-1999",
+          "sha256": "2a2a3ae3ef00be6288793228ae87a27a6a1fc79378e77d406586ceee57e796b6",
+          "path": "ORIGINAL_SITE/editorial/mechanism-expansion/fluconazole-hyphae-1999.html"
+        },
+        {
+          "sourceId": "MECH-AZOLE-HYPHAE-2011",
+          "sha256": "0dca27f8c3d195ae398f19e0beadc952e81d6d82dc1b18b5f1d794774f0232a3",
+          "path": "azole-candida-hyphal-morphogenesis/pdfs/22094708-costacr-2011.pdf"
+        }
+      ],
+      "locators": [
+        {
+          "sourceId": "MECH-D34-HYPHAE-1999",
+          "locator": "HTML Results, Fluconazole inhibits hyphal formation, paragraphs beginning To investigate / Hyphal formation; Discussion beginning In this series",
+          "basis": "full_text"
+        },
+        {
+          "sourceId": "MECH-AZOLE-HYPHAE-2011",
+          "locator": "PDF p2 Methods; p3 Results/Figures1-2; p4 Discussion",
+          "basis": "full_text"
+        }
+      ],
+      "model": "Susceptible and resistant Candida albicans isolates.",
+      "reportedFinding": "Fluconazole reduced hyphal formation under specified laboratory conditions, but responses depended on resistance, concentration and exposure timing. Ha and White found that drug exposure during both growth and induction mattered in their tested isolates.",
+      "interpretation": "Low clinical inference. Isolates taken from patients and then tested in a laboratory are not evidence that inhibiting hyphae improves patient outcomes.",
+      "grade": "Low",
+      "domains": {
+        "Study methods": {
+          "rationale": "Original growth/induction and resistance comparisons separate morphology from simple drug exposure, while model assumptions remain.",
+          "sourceIds": [
+            "MECH-D34-HYPHAE-1999",
+            "MECH-AZOLE-HYPHAE-2011"
+          ],
+          "locator": "HTML Results, Fluconazole inhibits hyphal formation, paragraphs beginning To investigate / Hyphal formation; Discussion beginning In this series; PDF p2 Methods; p3 Results/Figures1-2; p4 Discussion"
+        },
+        "Directness": {
+          "rationale": "The outcome is fungal morphology in laboratory media, not treated infection, invasion or symptoms in humans.",
+          "sourceIds": [
+            "MECH-D34-HYPHAE-1999",
+            "MECH-AZOLE-HYPHAE-2011"
+          ],
+          "locator": "HTML Results, Fluconazole inhibits hyphal formation, paragraphs beginning To investigate / Hyphal formation; Discussion beginning In this series; PDF p2 Methods; p3 Results/Figures1-2; p4 Discussion"
+        },
+        "Precision": {
+          "rationale": "Different isolates and exposure conditions limit any single effect estimate or universal claim.",
+          "sourceIds": [
+            "MECH-D34-HYPHAE-1999",
+            "MECH-AZOLE-HYPHAE-2011"
+          ],
+          "locator": "HTML Results, Fluconazole inhibits hyphal formation, paragraphs beginning To investigate / Hyphal formation; Discussion beginning In this series; PDF p2 Methods; p3 Results/Figures1-2; p4 Discussion"
+        },
+        "Consistency": {
+          "rationale": "Both sources show context dependence, including retained filament formation in resistant isolates.",
+          "sourceIds": [
+            "MECH-D34-HYPHAE-1999",
+            "MECH-AZOLE-HYPHAE-2011"
+          ],
+          "locator": "HTML Results, Fluconazole inhibits hyphal formation, paragraphs beginning To investigate / Hyphal formation; Discussion beginning In this series; PDF p2 Methods; p3 Results/Figures1-2; p4 Discussion"
+        },
+        "Source integrity": {
+          "rationale": "Exact owned original hashes were checked; targeted source inspection and the supplied Reed integrity notes do not complete independent correction/retraction verification or human approval.",
+          "sourceIds": [
+            "MECH-D34-HYPHAE-1999",
+            "MECH-AZOLE-HYPHAE-2011"
+          ],
+          "locator": "HTML Results, Fluconazole inhibits hyphal formation, paragraphs beginning To investigate / Hyphal formation; Discussion beginning In this series; PDF p2 Methods; p3 Results/Figures1-2; p4 Discussion"
+        }
+      },
+      "reviewState": "AI_assisted_draft_not_independently_or_human_approved",
+      "assessedAt": "2026-10-27T10:52:12.107450+02:00",
+      "canonicalImportState": "HOLD_pending_source_and_table_gates"
+    },
+    {
+      "claimId": "AZ-CAND-KETO",
+      "drug": "Ketoconazole",
+      "mechanism": "Candida_morphogenesis",
+      "statement": "Cagnacci 2008 found that ketoconazole reduced survival of filamentous Candida forms in a three-dimensional culture model. Killing existing filamentous cells is a different observation from preventing the initial yeast-to-hypha transition. Low clinical inference. This culture finding does not establish an animal hypha-directed dosing effect or patient clinical benefit.",
+      "sourceBindings": [
+        {
+          "sourceId": "MECH-KETOCONAZOLE-FILAMENTS-2008",
+          "sha256": "8cabffdf377f5f239e672d00d0b3ce449fe1661bea61221b4a25d36702aab9fc",
+          "path": "azole-candida-hyphal-morphogenesis/pdfs/19088913-cagnaccis-2008.pdf"
+        }
+      ],
+      "locators": [
+        {
+          "sourceId": "MECH-KETOCONAZOLE-FILAMENTS-2008",
+          "locator": "PDF p1 Abstract; p2 Methods; p6-7 Results/Discussion",
+          "basis": "full_text"
+        }
+      ],
+      "model": "Three-dimensional Candida culture and filament susceptibility.",
+      "reportedFinding": "Cagnacci 2008 found that ketoconazole reduced survival of filamentous Candida forms in a three-dimensional culture model. Killing existing filamentous cells is a different observation from preventing the initial yeast-to-hypha transition.",
+      "interpretation": "Low clinical inference. This culture finding does not establish an animal hypha-directed dosing effect or patient clinical benefit.",
+      "grade": "Low",
+      "domains": {
+        "Study methods": {
+          "rationale": "The study tested survival, culture phenotypes and radiation combinations; endpoint identity must not be relabeled as pure transition inhibition.",
+          "sourceIds": [
+            "MECH-KETOCONAZOLE-FILAMENTS-2008"
+          ],
+          "locator": "PDF p1 Abstract; p2 Methods; p6-7 Results/Discussion"
+        },
+        "Directness": {
+          "rationale": "A three-dimensional cell model is not an animal treatment study or patient trial.",
+          "sourceIds": [
+            "MECH-KETOCONAZOLE-FILAMENTS-2008"
+          ],
+          "locator": "PDF p1 Abstract; p2 Methods; p6-7 Results/Discussion"
+        },
+        "Precision": {
+          "rationale": "Model-specific survival measurements do not quantify patient benefit or harms.",
+          "sourceIds": [
+            "MECH-KETOCONAZOLE-FILAMENTS-2008"
+          ],
+          "locator": "PDF p1 Abstract; p2 Methods; p6-7 Results/Discussion"
+        },
+        "Consistency": {
+          "rationale": "The source endpoint differs from the formation assay in Costa and should not be pooled as the same result.",
+          "sourceIds": [
+            "MECH-KETOCONAZOLE-FILAMENTS-2008"
+          ],
+          "locator": "PDF p1 Abstract; p2 Methods; p6-7 Results/Discussion"
+        },
+        "Source integrity": {
+          "rationale": "Exact owned original hashes were checked; targeted source inspection and the supplied Reed integrity notes do not complete independent correction/retraction verification or human approval.",
+          "sourceIds": [
+            "MECH-KETOCONAZOLE-FILAMENTS-2008"
+          ],
+          "locator": "PDF p1 Abstract; p2 Methods; p6-7 Results/Discussion"
+        }
+      },
+      "reviewState": "AI_assisted_draft_not_independently_or_human_approved",
+      "assessedAt": "2026-10-27T10:52:12.108436+02:00",
+      "canonicalImportState": "HOLD_pending_source_and_table_gates"
+    }
+  ],
+  "gradingMeaning": "Selected-source editorial Low clinical inference; explicit model/result and five-domain rationale, not a human efficacy or formal GRADE assessment.",
+  "heldRows": [
+    "Kim2014 abstract/registry reconciliation",
+    "Johnson1983 unavailable original",
+    "Odds1985 unavailable original",
+    "Plempel1984 unavailable original",
+    "other azole Candida per-drug claims without inspected originals"
+  ]
+}

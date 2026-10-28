@@ -1,0 +1,7 @@
+# October 28, 2026 — direct owner resume and ready-work release
+
+Source: owner's direct merge/deploy/publish-if-ready and next-work instruction. Scope: this project's technically ready PRs, checked publication preserving current main and the latest approved identity, and serial continuation from CAL07. Supersedes the October 27 usage pause and draft-only merge/publication restriction within this authorized scope; it does not supersede scientific review, protected sources, access controls or exact source audit gates.
+
+Contract: `RESUME-20261028.md`. Implementation: preserve all 247 original PR12 checkpoint files, integrate current main through an ordinary merge and merge the private checkpoint without implying scientific completion. Publication uses a separate checked current-main-plus-version49-identity source. Continue research from the exact unreviewed CAL07 candidate and saved plan, with fresh hash checks and independent review before delivery.
+
+Verification at adoption: all 1,455 frozen input files exist unchanged on current main; the ordinary merge has no conflicts and its entire application/non-phase3 tree equals current main. All 247 old phase3 files remain byte-exact. Source audits for later candidates and publication/runtime validation are recorded separately when performed. No raw research files, source hosting, new grade or clinical approval is introduced by this authorization. No reusable One Match Rule method change or upstream synchronization is claimed.

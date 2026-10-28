@@ -1,0 +1,3 @@
+# PR10 fixture correction contract addendum
+
+Source: Elon18:31 exactgrant of proposalb1f402fd andpatch26246568, aftermain4ca37b7 passed andpremergePR1082189fb failed identicaloldcount. Supersedes only the stale literalexpectedtwo-pathway count. Approved originalKarenitem9 data hasfiveblocks; preserveallfive. Changeexpected2to5andlabelonly; no otherassertion/data/renderer/sourceedit. Keepprior13checks/4failurelogsandallsealedpacketsimmutable. Runfreshfourchecks/build/governance/TypeScript/boundary; recordexactnewresults. Oneordinaryfollowupcommit andplainpush, rootretentionverificationandElonmergegate remain. No scientific/human/releaseapproval. AllSitesactionsheld. Thisaddendum andtheprospectivePLAN applyonlytothisgrantedone-linefix.

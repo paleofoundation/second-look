@@ -1,0 +1,373 @@
+{
+  "inventoryOnly": true,
+  "roots": {
+    "OWNED_RESEARCH_ROOT": "Set REMAPRX_RESEARCH_ROOT to the existing private one-match-drug-repurposing research checkout. No raw files copied."
+  },
+  "limitations": [
+    "Historical inventory identity metadata is not fresh scientific acceptance.",
+    "An unmatched source may exist elsewhere; no absence-of-evidence claim.",
+    "Official context is not a primary result paper.",
+    "No file content extraction, grading or new clinical claim in this packet."
+  ],
+  "sources": [
+    {
+      "sourceId": "COND-C02-COVIDOUT-2022",
+      "url": "https://www.nejm.org/doi/abs/10.1056/NEJMoa2201662",
+      "title": "Randomized Trial of Metformin, Ivermectin, and Fluvoxamine for Covid-19",
+      "canonicalSourcePointer": "data/content.json#/sources/59",
+      "existingSourceType": "primary",
+      "identityMatchRule": "Exact PMID or DOI only; no fuzzy title matching or URL retrieval.",
+      "metadataRecordMatches": [],
+      "matchedAssets": [],
+      "accessState": "canonical_metadata_only_no_exact_asset_match_in_inventory",
+      "scientificInspection": "not_performed"
+    },
+    {
+      "sourceId": "COND-C05-LDN-2025",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40214857/",
+      "title": "Effect of naltrexone on spinal and supraspinal pain mechanisms: exploratory FINAL trial outcomes",
+      "canonicalSourcePointer": "data/content.json#/sources/65",
+      "existingSourceType": "primary",
+      "identityMatchRule": "Exact PMID or DOI only; no fuzzy title matching or URL retrieval.",
+      "metadataRecordMatches": [
+        "acquisition:A-F02-R2204-F01",
+        "acquisition:A-F02-R2204-S01",
+        "acquisition:B-R0098-F01",
+        "acquisition:B-R0098-S01"
+      ],
+      "matchedAssets": [
+        {
+          "assetId": "SHA256:3272d5b90b2af16428d821bf6d6540640b1462983003e73106e21db9de338656",
+          "rootId": "OWNED_RESEARCH_ROOT",
+          "path": "work/ingest/FETCH30/source-files/32/3272d5b90b2af16428d821bf6d6540640b1462983003e73106e21db9de338656.pdf",
+          "exists": true,
+          "expectedSha256": "3272d5b90b2af16428d821bf6d6540640b1462983003e73106e21db9de338656",
+          "observedSha256": "3272d5b90b2af16428d821bf6d6540640b1462983003e73106e21db9de338656",
+          "hashMatches": true,
+          "readingDepth": "not_opened_not_extracted"
+        },
+        {
+          "assetId": "SHA256:a8dc483187239fe950ef606cb27aff5d836c4d32130f4eea837025a715a9a160",
+          "rootId": "OWNED_RESEARCH_ROOT",
+          "path": "work/ingest/FETCH30/source-files/a8/a8dc483187239fe950ef606cb27aff5d836c4d32130f4eea837025a715a9a160.pdf",
+          "exists": true,
+          "expectedSha256": "a8dc483187239fe950ef606cb27aff5d836c4d32130f4eea837025a715a9a160",
+          "observedSha256": "a8dc483187239fe950ef606cb27aff5d836c4d32130f4eea837025a715a9a160",
+          "hashMatches": true,
+          "readingDepth": "not_opened_not_extracted"
+        }
+      ],
+      "accessState": "held_exact_identity_asset",
+      "scientificInspection": "not_performed"
+    },
+    {
+      "sourceId": "COND-C05-NIAMS",
+      "url": "https://www.niams.nih.gov/health-topics/fibromyalgia",
+      "title": "Fibromyalgia — NIAMS",
+      "canonicalSourcePointer": "data/content.json#/sources/64",
+      "existingSourceType": "context",
+      "identityMatchRule": "Exact PMID or DOI only; no fuzzy title matching or URL retrieval.",
+      "metadataRecordMatches": [],
+      "matchedAssets": [],
+      "accessState": "canonical_metadata_only_no_exact_asset_match_in_inventory",
+      "scientificInspection": "not_performed"
+    },
+    {
+      "sourceId": "COND-C08-IPGAD-2023",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10739833/",
+      "title": "Clinical characterisation of women with persistent genital arousal disorder: the iPGAD study",
+      "canonicalSourcePointer": "data/content.json#/sources/71",
+      "existingSourceType": "primary",
+      "identityMatchRule": "Exact PMID or DOI only; no fuzzy title matching or URL retrieval.",
+      "metadataRecordMatches": [],
+      "matchedAssets": [],
+      "accessState": "canonical_metadata_only_no_exact_asset_match_in_inventory",
+      "scientificInspection": "not_performed"
+    },
+    {
+      "sourceId": "COND-C08-NEURO-2020",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7004503/",
+      "title": "Persistent genital arousal disorder: a special sense neuropathy",
+      "canonicalSourcePointer": "data/content.json#/sources/70",
+      "existingSourceType": "primary",
+      "identityMatchRule": "Exact PMID or DOI only; no fuzzy title matching or URL retrieval.",
+      "metadataRecordMatches": [],
+      "matchedAssets": [],
+      "accessState": "canonical_metadata_only_no_exact_asset_match_in_inventory",
+      "scientificInspection": "not_performed"
+    },
+    {
+      "sourceId": "COND-C12-VPA-2021",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7864693/",
+      "title": "Valproic acid with cisplatin-based chemoradiation in locally advanced head and neck squamous cell carcinoma",
+      "canonicalSourcePointer": "data/content.json#/sources/130",
+      "existingSourceType": "primary",
+      "identityMatchRule": "Exact PMID or DOI only; no fuzzy title matching or URL retrieval.",
+      "metadataRecordMatches": [],
+      "matchedAssets": [],
+      "accessState": "canonical_metadata_only_no_exact_asset_match_in_inventory",
+      "scientificInspection": "not_performed"
+    },
+    {
+      "sourceId": "COND-C22-NCI",
+      "url": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/acute-myeloid-leukemia",
+      "title": "NCI Dictionary: acute myeloid leukemia",
+      "canonicalSourcePointer": "data/content.json#/sources/150",
+      "existingSourceType": "context",
+      "identityMatchRule": "Exact PMID or DOI only; no fuzzy title matching or URL retrieval.",
+      "metadataRecordMatches": [],
+      "matchedAssets": [],
+      "accessState": "canonical_metadata_only_no_exact_asset_match_in_inventory",
+      "scientificInspection": "not_performed"
+    },
+    {
+      "sourceId": "COND-C22-VPA-2019",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31794324/",
+      "title": "Decitabine with valproate and all-trans retinoic acid in older AML",
+      "canonicalSourcePointer": "data/content.json#/sources/151",
+      "existingSourceType": "primary",
+      "identityMatchRule": "Exact PMID or DOI only; no fuzzy title matching or URL retrieval.",
+      "metadataRecordMatches": [],
+      "matchedAssets": [],
+      "accessState": "canonical_metadata_only_no_exact_asset_match_in_inventory",
+      "scientificInspection": "not_performed"
+    },
+    {
+      "sourceId": "COND-C23-ACTIM-2017",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5434901/",
+      "title": "Pioglitazone with imatinib: ACTIM proof-of-concept study in CML",
+      "canonicalSourcePointer": "data/content.json#/sources/153",
+      "existingSourceType": "primary",
+      "identityMatchRule": "Exact PMID or DOI only; no fuzzy title matching or URL retrieval.",
+      "metadataRecordMatches": [],
+      "matchedAssets": [],
+      "accessState": "canonical_metadata_only_no_exact_asset_match_in_inventory",
+      "scientificInspection": "not_performed"
+    },
+    {
+      "sourceId": "COND-C23-NCI",
+      "url": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/chronic-myeloid-leukemia",
+      "title": "NCI Dictionary: chronic myeloid leukemia",
+      "canonicalSourcePointer": "data/content.json#/sources/152",
+      "existingSourceType": "context",
+      "identityMatchRule": "Exact PMID or DOI only; no fuzzy title matching or URL retrieval.",
+      "metadataRecordMatches": [],
+      "matchedAssets": [],
+      "accessState": "canonical_metadata_only_no_exact_asset_match_in_inventory",
+      "scientificInspection": "not_performed"
+    },
+    {
+      "sourceId": "COND-C23-PPARG-2015",
+      "url": "https://www.nature.com/articles/nature15248",
+      "title": "Erosion of the chronic myeloid leukaemia stem cell pool by PPARγ agonists",
+      "canonicalSourcePointer": "data/content.json#/sources/154",
+      "existingSourceType": "primary",
+      "identityMatchRule": "Exact PMID or DOI only; no fuzzy title matching or URL retrieval.",
+      "metadataRecordMatches": [],
+      "matchedAssets": [],
+      "accessState": "canonical_metadata_only_no_exact_asset_match_in_inventory",
+      "scientificInspection": "not_performed"
+    },
+    {
+      "sourceId": "COND-C31-MANAGEMENT",
+      "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/managing-diabetes",
+      "title": "NIDDK: Managing diabetes",
+      "canonicalSourcePointer": "data/content.json#/sources/255",
+      "existingSourceType": "context",
+      "identityMatchRule": "Exact PMID or DOI only; no fuzzy title matching or URL retrieval.",
+      "metadataRecordMatches": [],
+      "matchedAssets": [],
+      "accessState": "canonical_metadata_only_no_exact_asset_match_in_inventory",
+      "scientificInspection": "not_performed"
+    },
+    {
+      "sourceId": "COND-C31-NIDDK",
+      "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/",
+      "title": "NIDDK: What is diabetes?",
+      "canonicalSourcePointer": "data/content.json#/sources/254",
+      "existingSourceType": "context",
+      "identityMatchRule": "Exact PMID or DOI only; no fuzzy title matching or URL retrieval.",
+      "metadataRecordMatches": [],
+      "matchedAssets": [],
+      "accessState": "canonical_metadata_only_no_exact_asset_match_in_inventory",
+      "scientificInspection": "not_performed"
+    },
+    {
+      "sourceId": "CTX-D02-LABEL",
+      "url": "https://www.dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=7ecd83ec-88f5-4f85-9cc2-9068375d8820&type=display",
+      "title": "Fluvoxamine — US prescribing information",
+      "canonicalSourcePointer": "data/content.json#/sources/46",
+      "existingSourceType": "context",
+      "identityMatchRule": "Exact PMID or DOI only; no fuzzy title matching or URL retrieval.",
+      "metadataRecordMatches": [],
+      "matchedAssets": [],
+      "accessState": "canonical_metadata_only_no_exact_asset_match_in_inventory",
+      "scientificInspection": "not_performed"
+    },
+    {
+      "sourceId": "CTX-D26-LABEL",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=67459229-971e-4753-96d4-fb0e6bac94c0",
+      "title": "Sildenafil pulmonary arterial hypertension prescribing information",
+      "canonicalSourcePointer": "data/content.json#/sources/215",
+      "existingSourceType": "context",
+      "identityMatchRule": "Exact PMID or DOI only; no fuzzy title matching or URL retrieval.",
+      "metadataRecordMatches": [],
+      "matchedAssets": [],
+      "accessState": "canonical_metadata_only_no_exact_asset_match_in_inventory",
+      "scientificInspection": "not_performed"
+    },
+    {
+      "sourceId": "CTX-D26-VIAGRA",
+      "url": "https://www.dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=ae2079a2-f3a9-4739-9611-0742b71e4761&type=display",
+      "title": "Viagra sildenafil prescribing information",
+      "canonicalSourcePointer": "data/content.json#/sources/216",
+      "existingSourceType": "context",
+      "identityMatchRule": "Exact PMID or DOI only; no fuzzy title matching or URL retrieval.",
+      "metadataRecordMatches": [],
+      "matchedAssets": [],
+      "accessState": "canonical_metadata_only_no_exact_asset_match_in_inventory",
+      "scientificInspection": "not_performed"
+    },
+    {
+      "sourceId": "CTX-GUIDE-2",
+      "url": "https://www.nccih.nih.gov/health/know-science/how-to-make-sense-of-a-scientific-journal-article/methods/types-of-research",
+      "title": "NCCIH: Types of Research",
+      "canonicalSourcePointer": "data/content.json#/sources/13",
+      "existingSourceType": "context",
+      "identityMatchRule": "Exact PMID or DOI only; no fuzzy title matching or URL retrieval.",
+      "metadataRecordMatches": [],
+      "matchedAssets": [],
+      "accessState": "canonical_metadata_only_no_exact_asset_match_in_inventory",
+      "scientificInspection": "not_performed"
+    },
+    {
+      "sourceId": "CTX-REPURPOSING-NCATS",
+      "url": "https://sites.google.com/ncats.nih.gov/therapeutic-repurposing/questions-and-answers",
+      "title": "NCATS: Drug repurposing questions and answers",
+      "canonicalSourcePointer": "data/content.json#/sources/251",
+      "existingSourceType": "context",
+      "identityMatchRule": "Exact PMID or DOI only; no fuzzy title matching or URL retrieval.",
+      "metadataRecordMatches": [],
+      "matchedAssets": [],
+      "accessState": "canonical_metadata_only_no_exact_asset_match_in_inventory",
+      "scientificInspection": "not_performed"
+    },
+    {
+      "sourceId": "MECH-D26-HYPOXIA-2025",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11765346/",
+      "title": "Phosphodiesterase inhibition restores hypoxia-induced cerebrovascular dysfunction subsequent to improved systemic redox homeostasis: A randomized, double-blind, placebo-controlled crossover study",
+      "canonicalSourcePointer": "data/content.json#/sources/278",
+      "existingSourceType": "Primary research",
+      "identityMatchRule": "Exact PMID or DOI only; no fuzzy title matching or URL retrieval.",
+      "metadataRecordMatches": [
+        "app:MECH-D26-HYPOXIA-2025",
+        "mechanism:MECH-D26-HYPOXIA-2025"
+      ],
+      "matchedAssets": [],
+      "accessState": "canonical_metadata_only_no_exact_asset_match_in_inventory",
+      "scientificInspection": "not_performed"
+    },
+    {
+      "sourceId": "MF-LABEL-2025",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=542cec22-eeae-4704-9bb6-4176640e5ea8",
+      "title": "Metformin hydrochloride tablets: U.S. prescribing information",
+      "canonicalSourcePointer": "data/content.json#/sources/31",
+      "existingSourceType": "context",
+      "identityMatchRule": "Exact PMID or DOI only; no fuzzy title matching or URL retrieval.",
+      "metadataRecordMatches": [],
+      "matchedAssets": [],
+      "accessState": "canonical_metadata_only_no_exact_asset_match_in_inventory",
+      "scientificInspection": "not_performed"
+    },
+    {
+      "sourceId": "P-D02-ACTIV6-2023",
+      "url": "https://jamanetwork.com/journals/jama/fullarticle/2812204",
+      "title": "Higher-Dose Fluvoxamine and Time to Sustained Recovery in Outpatients With COVID-19: The ACTIV-6 Randomized Clinical Trial",
+      "canonicalSourcePointer": "data/content.json#/sources/48",
+      "existingSourceType": "primary",
+      "identityMatchRule": "Exact PMID or DOI only; no fuzzy title matching or URL retrieval.",
+      "metadataRecordMatches": [],
+      "matchedAssets": [],
+      "accessState": "canonical_metadata_only_no_exact_asset_match_in_inventory",
+      "scientificInspection": "not_performed"
+    },
+    {
+      "sourceId": "P-D02-SIGMA1-2019",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6936250/",
+      "title": "Modulation of the Sigma-1 Receptor–IRE1 pathway is beneficial in preclinical models of inflammation and sepsis",
+      "canonicalSourcePointer": "data/content.json#/sources/47",
+      "existingSourceType": "primary",
+      "identityMatchRule": "Exact PMID or DOI only; no fuzzy title matching or URL retrieval.",
+      "metadataRecordMatches": [],
+      "matchedAssets": [],
+      "accessState": "canonical_metadata_only_no_exact_asset_match_in_inventory",
+      "scientificInspection": "not_performed"
+    },
+    {
+      "sourceId": "P-D04-CSBD-2022",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9453901/",
+      "title": "Tolerability and efficacy of paroxetine and naltrexone for treatment of compulsive sexual behaviour disorder",
+      "canonicalSourcePointer": "data/content.json#/sources/53",
+      "existingSourceType": "primary",
+      "identityMatchRule": "Exact PMID or DOI only; no fuzzy title matching or URL retrieval.",
+      "metadataRecordMatches": [],
+      "matchedAssets": [],
+      "accessState": "canonical_metadata_only_no_exact_asset_match_in_inventory",
+      "scientificInspection": "not_performed"
+    },
+    {
+      "sourceId": "P-D04-FIBRO-2024",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38258677/",
+      "title": "Naltrexone 6 mg once daily versus placebo in women with fibromyalgia: a randomised, double-blind, placebo-controlled trial",
+      "canonicalSourcePointer": "data/content.json#/sources/52",
+      "existingSourceType": "primary",
+      "identityMatchRule": "Exact PMID or DOI only; no fuzzy title matching or URL retrieval.",
+      "metadataRecordMatches": [
+        "acquisition:A-F02-R2184-F00"
+      ],
+      "matchedAssets": [],
+      "accessState": "canonical_metadata_only_no_exact_asset_match_in_inventory",
+      "scientificInspection": "not_performed"
+    },
+    {
+      "sourceId": "P-D26-COMBINATION",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24353313/",
+      "title": "PDE5 inhibitors enhance chemotherapy killing in gastrointestinal and genitourinary cancer cells",
+      "canonicalSourcePointer": "data/content.json#/sources/217",
+      "existingSourceType": "primary",
+      "identityMatchRule": "Exact PMID or DOI only; no fuzzy title matching or URL retrieval.",
+      "metadataRecordMatches": [],
+      "matchedAssets": [],
+      "accessState": "canonical_metadata_only_no_exact_asset_match_in_inventory",
+      "scientificInspection": "not_performed"
+    },
+    {
+      "sourceId": "P-D26-GBM",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5355091/",
+      "title": "Type 5 phosphodiesterase regulates glioblastoma aggressiveness and clinical outcome",
+      "canonicalSourcePointer": "data/content.json#/sources/218",
+      "existingSourceType": "primary",
+      "identityMatchRule": "Exact PMID or DOI only; no fuzzy title matching or URL retrieval.",
+      "metadataRecordMatches": [],
+      "matchedAssets": [],
+      "accessState": "canonical_metadata_only_no_exact_asset_match_in_inventory",
+      "scientificInspection": "not_performed"
+    },
+    {
+      "sourceId": "P-REVIVE-2026",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41911553/",
+      "title": "The Effect of Fluvoxamine and Metformin for Fatigue in Patients With Long COVID : An Adaptive Randomized Trial.",
+      "canonicalSourcePointer": "data/content.json#/sources/5",
+      "existingSourceType": "not_recorded",
+      "identityMatchRule": "Exact PMID or DOI only; no fuzzy title matching or URL retrieval.",
+      "metadataRecordMatches": [
+        "acquisition:A-F01-R009-F00",
+        "acquisition:B-R0010-F00",
+        "app:P-REVIVE-2026"
+      ],
+      "matchedAssets": [],
+      "accessState": "canonical_metadata_only_no_exact_asset_match_in_inventory",
+      "scientificInspection": "not_performed"
+    }
+  ]
+}
