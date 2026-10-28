@@ -1,0 +1,119 @@
+--- a/lib/mechanisms.ts
++++ b/lib/mechanisms.ts
+@@ -14,6 +14,12 @@
+   locator?: string;
+ };
+ export type RationalePlacement = 'article' | 'evidence';
++export type MechanismComparisonTable = {
++  id: string;
++  title: string;
++  introduction?: MechanismProse;
++  rows: {id: string; drug: string; model: MechanismProse; finding: MechanismProse; grade: MechanismProse}[];
++};
+ export type DrugMechanism = {
+   drugId?: string;
+   conditionId?: string;
+@@ -24,6 +30,7 @@
+   presentation?: 'pathway-table-pilot';
+   pathways?: (MechanismProse & {id: string; title: string})[];
+   rationales?: MechanismRationale[];
++  comparisonTables?: MechanismComparisonTable[];
+ };
+ type MechanismContextRecord = {
+   id: string; drugId: string; conditionIds: string[]; title: string;
+@@ -31,6 +38,21 @@
+   clinicalMeaning: string;
+ };
+ const mechanisms = rawMechanisms as {contexts: MechanismContextRecord[]; drugs?: DrugMechanism[]};
++
++// Exact pilot scope authorized only by a separately recorded owner ruling.
++const comparisonGuideIds = new Set(['G-DRUG-D07', 'term-hedgehog-pathway', 'term-hyphae']);
++for (const record of mechanisms.drugs || []) {
++  if (!record.comparisonTables?.length) continue;
++  const itraconazoleOnly = record.drugId === 'D07' && !record.conditionId && !record.guideIds?.length;
++  const glossaryOnly = !record.drugId && !record.conditionId && !!record.guideIds?.length && record.guideIds.every(id => id === 'term-hedgehog-pathway' || id === 'term-hyphae');
++  if (!itraconazoleOnly && !glossaryOnly) throw new Error('Mechanism comparison table outside the authorized three-guide scope');
++}
++
++export function mechanismComparisonTablesFor(guide: Guide): MechanismComparisonTable[] {
++  const tables = drugMechanismFor(guide)?.comparisonTables || [];
++  if (tables.length && !comparisonGuideIds.has(guide.id)) throw new Error('Mechanism comparison table on an unauthorized guide');
++  return tables;
++}
+ 
+ function proseCitationIds(prose?: MechanismProse) {
+   return prose?.sentences ? prose.sentences.flatMap(sentence => sentence.sources) : prose?.sourceIds || [];
+@@ -111,6 +133,10 @@
+     ...proseCitationIds(record?.originalAction),
+     ...proseCitationIds(record?.summary),
+     ...(record?.pathways || []).flatMap(proseCitationIds),
++    ...mechanismComparisonTablesFor(guide).flatMap(table => [
++      ...proseCitationIds(table.introduction),
++      ...table.rows.flatMap(row => [row.model, row.finding, row.grade].flatMap(proseCitationIds)),
++    ]),
+     ...(record?.rationales || []).filter(row => rationalePlacement !== 'evidence' || !mechanismEvidenceHref(guide, row.id)).flatMap(row => [row.rationale, row.tested, row.limits].flatMap(proseCitationIds)),
+     ...(record?.questions || []).flatMap(proseCitationIds),
+     ...mechanismContextsFor(guide).flatMap(context => context.sourceIds),
+--- a/components/article.tsx
++++ b/components/article.tsx
+@@ -20,7 +20,7 @@
+ import {EvidenceTable,type EvidenceFinding,type EvidenceSource,type EvidenceSummary} from '@/components/shared-theme/evidence-table';
+ import {MedicalScopeNotice} from '@/components/shared-theme/guide-catalogue';
+ import {MechanismSection} from '@/components/shared-theme/mechanisms';
+-import {hasMechanismSection,drugMechanismFor,mechanismContextsFor,mechanismPresentation,evidenceMechanismsFor,mechanismEvidenceHref} from '@/lib/mechanisms';
++import {hasMechanismSection,drugMechanismFor,mechanismContextsFor,mechanismPresentation,evidenceMechanismsFor,mechanismEvidenceHref,mechanismComparisonTablesFor} from '@/lib/mechanisms';
+ import {InlineFaqs} from '@/components/shared-theme/faqs';
+ import {UpdateHistory} from '@/components/shared-theme/update-history';
+ import type {ProtectedReview,ReviewAccess} from '@/lib/review-access';
+@@ -176,7 +176,7 @@
+  const parent=guide.type==='Drug'?{label:'Drugs',href:'/drugs'}:guide.type==='Condition'?{label:'Conditions',href:'/conditions'}:isRecord?{label:guide.type==='Glossary'?'Glossary':'Research',href:guide.type==='Glossary'?'/glossary':'/research'}:{label:'Questions',href:'/questions'};
+ 
+  const mechanismProse=(prose:NonNullable<typeof drugMechanism>['summary'])=>prose?<CitedProse text={prose.text} mapped={prose.sentences} currentPath={guideUrl(guide)} sourceIds={prose.sourceIds} sources={sources} order={ordered}/>:null;
+- const mechanismsContent=<MechanismSection showRationales={guide.id!=='G-METFORMIN'} rationalePlacement={guide.type==='Drug'||guide.type==='Condition'?'evidence':'article'} collapsiblePathways={guide.id==='G-METFORMIN'} content={mechanismPresentation} renderText={wikiTextRenderer(guideUrl(guide))} originalAction={mechanismProse(drugMechanism?.originalAction)} summary={mechanismProse(drugMechanism?.summary)} pathways={(drugMechanism?.pathways||[]).map(pathway=>({id:pathway.id,title:pathway.title,explanation:mechanismProse(pathway)}))} rationales={(drugMechanism?.rationales||[]).map(row=>({id:row.id,condition:row.condition,conditionHref:row.conditionHref,evidenceHref:mechanismEvidenceHref(guide,row.id),rationale:mechanismProse(row.rationale),tested:mechanismProse(row.tested),limits:mechanismProse(row.limits)}))} questions={(drugMechanism?.questions||[]).map(question=>({id:question.id,title:question.title,answer:mechanismProse(question)}))} contexts={mechanismContexts.map(context=>({id:context.id,title:context.title,evidence:{basis:'secondary_description' as const,label:context.evidenceType,source:<p className="small muted">{context.locator}</p>},clinicalMeaning:context.clinicalMeaning,explanation:<><CitedProse text={context.text} currentPath={guideUrl(guide)} sourceIds={context.sourceIds} sources={sources} order={ordered}/></>}))}/>;
++ const mechanismsContent=<MechanismSection showRationales={guide.id!=='G-METFORMIN'} rationalePlacement={guide.type==='Drug'||guide.type==='Condition'?'evidence':'article'} collapsiblePathways={guide.id==='G-METFORMIN'} content={mechanismPresentation} renderText={wikiTextRenderer(guideUrl(guide))} originalAction={mechanismProse(drugMechanism?.originalAction)} summary={mechanismProse(drugMechanism?.summary)} pathways={(drugMechanism?.pathways||[]).map(pathway=>({id:pathway.id,title:pathway.title,explanation:mechanismProse(pathway)}))} comparisonTables={mechanismComparisonTablesFor(guide).map(table=>({id:table.id,title:table.title,introduction:mechanismProse(table.introduction),rows:table.rows.map(row=>({id:row.id,drug:row.drug,model:mechanismProse(row.model),finding:mechanismProse(row.finding),grade:mechanismProse(row.grade)}))}))} rationales={(drugMechanism?.rationales||[]).map(row=>({id:row.id,condition:row.condition,conditionHref:row.conditionHref,evidenceHref:mechanismEvidenceHref(guide,row.id),rationale:mechanismProse(row.rationale),tested:mechanismProse(row.tested),limits:mechanismProse(row.limits)}))} questions={(drugMechanism?.questions||[]).map(question=>({id:question.id,title:question.title,answer:mechanismProse(question)}))} contexts={mechanismContexts.map(context=>({id:context.id,title:context.title,evidence:{basis:'secondary_description' as const,label:context.evidenceType,source:<p className="small muted">{context.locator}</p>},clinicalMeaning:context.clinicalMeaning,explanation:<><CitedProse text={context.text} currentPath={guideUrl(guide)} sourceIds={context.sourceIds} sources={sources} order={ordered}/></>}))}/>;
+  const movedBenefitQuestions=hiddenModules.has('section-benefits')?benefitQuestionPlan(guide,rows).moved:[];
+  const faqContent=guide.faqs.length||movedBenefitQuestions.length?<InlineFaqs items={[...guide.faqs.map((f,i)=>({id:f.id||'question-'+i,aliases:f.id?['question-'+i]:[],question:f.question,answer:<CitedProse text={f.answer} mapped={f.sentences} currentPath={guideUrl(guide)} sourceIds={f.sources} sources={sources} order={ordered}/>})),...movedBenefitQuestions.map(q=>({id:q.id,aliases:[] as string[],question:q.question,answer:<CitedProse text={q.answer} mapped={q.sentences} currentPath={guideUrl(guide)} sourceIds={q.sources} sources={sources} order={ordered}/>}))]}/>:<section id="faqs" className="article-section"><h2>FAQs</h2></section>;
+  const sectionIds=[...groups.map(group=>group.id),...guide.sections.map(section=>section.id),'research','studies','edition','references'];
+--- a/components/shared-theme/mechanisms.tsx
++++ b/components/shared-theme/mechanisms.tsx
+@@ -37,13 +37,14 @@
+ }
+ 
+ /** One visible explanation; multiple bounded contexts reuse the canonical disclosure. */
+-export function MechanismSection({content, originalAction, summary, pathways = [], collapsiblePathways = false, rationales = [], rationalePlacement = 'article', showRationales = true, questions = [], contexts = [], renderText = plainText}: {
++export function MechanismSection({content, originalAction, summary, pathways = [], collapsiblePathways = false, comparisonTables = [], rationales = [], rationalePlacement = 'article', showRationales = true, questions = [], contexts = [], renderText = plainText}: {
+   content: MechanismPresentation;
+   renderText?: MechanismTextRenderer;
+   originalAction?: ReactNode;
+   summary?: ReactNode;
+   pathways?: {id: string; title: string; explanation: ReactNode}[];
+   collapsiblePathways?: boolean;
++  comparisonTables?: {id: string; title: string; introduction?: ReactNode; rows: {id: string; drug: string; model: ReactNode; finding: ReactNode; grade: ReactNode}[]}[];
+   rationales?: {id: string; condition: string; conditionHref: string; evidenceHref?: string; rationale: ReactNode; tested: ReactNode; limits: ReactNode}[];
+   rationalePlacement?: 'article' | 'evidence';
+   showRationales?: boolean;
+@@ -63,6 +64,24 @@
+       </details>)}
+     </div> : pathways.map(pathway => <div className="mechanism-pathway" id={pathway.id} key={pathway.id}>
+       <h3>{pathway.title}</h3>{pathway.explanation}
++    </div>)}
++    {comparisonTables.map(comparison => <div className="mechanism-comparison" key={comparison.id}>
++      <h3 id={comparison.id}>{comparison.title}</h3>
++      {comparison.introduction}
++      <figure className="wp-block-table mechanism-rationale-table">
++        <table role="table" aria-labelledby={comparison.id}>
++          <thead role="rowgroup"><tr role="row">
++            {['Drug', 'Model or population', 'Measured finding', 'Clinical inference and limits'].map(label => <th role="columnheader" scope="col" key={label}>{label}</th>)}
++          </tr></thead>
++          <tbody role="rowgroup">{comparison.rows.map(row => <tr role="row" id={row.id} key={row.id}>
++            <th role="rowheader" scope="row">{row.drug}</th>
++            {(['model', 'finding', 'grade'] as const).map((field, index) => <td role="cell" key={field}>
++              <span className="mechanism-cell-label" aria-hidden="true">{['Model or population', 'Measured finding', 'Clinical inference and limits'][index]}</span>
++              {row[field]}
++            </td>)}
++          </tr>)}</tbody>
++        </table>
++      </figure>
+     </div>)}
+     {!showRationales && <><span id="condition-rationales" aria-hidden="true"/>{rationales.map(row => <span id={row.id} key={row.id} aria-hidden="true"/>)}</>}
+     {showRationales && rationales.length > 0 && <>
