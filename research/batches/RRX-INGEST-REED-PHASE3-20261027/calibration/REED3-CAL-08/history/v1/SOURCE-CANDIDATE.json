@@ -1,0 +1,2499 @@
+{
+  "schemaVersion": "reed3-cal08-ukpds13-source-v1",
+  "paper": {
+    "id": "REED-b66200fc5d5a9beb5a46",
+    "pmid": "7833731",
+    "doi": null,
+    "title": "United Kingdom Prospective Diabetes Study (UKPDS). 13: Relative efficacy of randomly allocated diet, sulphonylurea, insulin, or metformin in patients with newly diagnosed non-insulin dependent diabetes followed for three years.",
+    "sourceType": "randomized_human_original_use_diabetes_report"
+  },
+  "source": {
+    "id": "REED3-CAL-08-MAIN",
+    "pmid": "7833731",
+    "doi": null,
+    "title": "United Kingdom Prospective Diabetes Study (UKPDS). 13: Relative efficacy of randomly allocated diet, sulphonylurea, insulin, or metformin in patients with newly diagnosed non-insulin dependent diabetes followed for three years.",
+    "reportId": "REED-b66200fc5d5a9beb5a46",
+    "ref": "$REMAPRX_REED_ROOT/metformin-type-2-diabetes/pdfs/7833731-unknown-1995.pdf",
+    "sha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+    "physicalPages": 6
+  },
+  "inspection": {
+    "at": "2026-10-28T07:29:05.359836+00:00",
+    "physicalPagesRead": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "visualInspectedPhysicalPages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "fullScientificReviewComplete": false,
+    "separateCompanionContentRead": false,
+    "rawDataInspected": false
+  },
+  "study": {
+    "design": "multicenter randomized treatment-allocation clinical report, three-year biochemical efficacy/adherence/hypoglycemia; no blinding method stated",
+    "flow": {
+      "referred": 6147,
+      "initialExcluded": 1675,
+      "runinWithdrawn": 397,
+      "afterRunin": 4075,
+      "persistentHighGlucoseOrSymptoms": 560,
+      "dietResponders": 746,
+      "randomized": 2769,
+      "lostOrDied3y": 249,
+      "reported": 2520,
+      "reportedNonObese": 1264,
+      "reportedObese": 1256,
+      "ageRangeYears": [
+        25,
+        65
+      ],
+      "recruitmentYears": [
+        1977,
+        1987
+      ]
+    },
+    "TableIAllocationsReportedCohort": {
+      "diet": {
+        "all": 664,
+        "nonObese": 373,
+        "obese": 291
+      },
+      "chlorpropamide": {
+        "all": 446,
+        "nonObese": 259,
+        "obese": 187
+      },
+      "glibenclamide": {
+        "all": 472,
+        "nonObese": 260,
+        "obese": 212
+      },
+      "insulin": {
+        "all": 676,
+        "nonObese": 372,
+        "obese": 304
+      },
+      "metformin": {
+        "all": 262,
+        "nonObese": 0,
+        "obese": 262
+      }
+    },
+    "stratification": {
+      "textObese": "at least120% ideal body weight",
+      "TableIFootnote": "greater than120% ideal body weight",
+      "nonObeseAllocationPercent": {
+        "diet": 30,
+        "chlorpropamide": 20,
+        "glibenclamide": 20,
+        "insulin": 30
+      },
+      "obeseAllocationPercent": {
+        "diet": 24,
+        "chlorpropamide": 16,
+        "glibenclamide": 16,
+        "insulin": 24,
+        "metformin": 20
+      }
+    },
+    "metformin": {
+      "startMgPerDay": 850,
+      "maxMgPerDose": 850,
+      "maxDosesPerDay": 3,
+      "titration": "weekly, to maximum tolerated, fasting glucose target<=6.0mmol/l",
+      "route": "oral tablet implied by doses/tablet discussion, formulation/release not characterized",
+      "rescue": "glibenclamide then insulin if glucose>=15mmol/l or symptoms persist"
+    },
+    "sulphonylureas": {
+      "chlorpropamideMaxMgOnceDaily": 500,
+      "glibenclamideMaxMgTwiceDaily": 10,
+      "rescue": "metformin up to850mg three times daily, then insulin"
+    },
+    "insulin": {
+      "initial": "ultralente beef Ultratard MC then human Ultratard HM, NovoNordisk",
+      "initialDoseRule": "(fasting glucose-3)*2IU/day, increased if obese",
+      "homeMonitoring": "over16IU/day, proportionately more if obese",
+      "additions": "soluble insulin2-3times daily if premeal/bed glucose>7.0mmol/l; other formulations allowed"
+    },
+    "diet": "all dietary advice; diet-only rescue secondary drug allocation at glucose>=15mmol/l or symptoms",
+    "assays": {
+      "glucose": "clinic assay, monthly QA coefficient variation<4%",
+      "HbA1c": "HPLC, normal4.5-6.2%",
+      "insulin": "radioimmunoassay100% cross-reactivity to proinsulin"
+    },
+    "ownClinicalEventRiskReduction": false,
+    "directMolecularMechanismTest": false
+  },
+  "populations": {
+    "species": "human",
+    "setting": "15 British hospital outpatient diabetes clinics",
+    "eligibility": "newly diagnosed non-insulin-dependent diabetes,age25-65,referred1977-1987,FPG>6mmol/l twice; after3month diet FPG6.1-14.9 without symptoms",
+    "exclusions": "recent myocardial infarction,current angina/heart failure,accelerated hypertension,proliferative/preproliferative retinopathy,creatinine>175umol/l,life-threatening illness including cancer,systemic-steroid illness,insulin-precluding occupation,language difficulties,ketonuria>3mmol/l",
+    "reportedBaseline": {
+      "N": 2520,
+      "ageMeanSD": [
+        52,
+        8
+      ],
+      "men": [
+        1455,
+        58
+      ],
+      "nonObese": 1264,
+      "obese": 1256,
+      "white": [
+        2052,
+        81
+      ],
+      "Asian": [
+        242,
+        10
+      ],
+      "AfroCaribbean": [
+        225,
+        9
+      ],
+      "BMImeanSD": [
+        27.5,
+        5.1
+      ],
+      "obeseBMImeanSD": [
+        31.3,
+        4.5
+      ]
+    },
+    "consent": "all recruited gave informed consent",
+    "ethicsApprovalID": "not reported in supplied article",
+    "metforminOnlyObese": true,
+    "notCancerOrLongevityPopulation": true
+  },
+  "results": [
+    {
+      "id": "REED3-CAL-08-O01",
+      "outcome": "Eligibility/randomization/report-cohort flow",
+      "estimate": {
+        "flow": {
+          "referred": 6147,
+          "initialExcluded": 1675,
+          "runinWithdrawn": 397,
+          "afterRunin": 4075,
+          "persistentHighGlucoseOrSymptoms": 560,
+          "dietResponders": 746,
+          "randomized": 2769,
+          "lostOrDied3y": 249,
+          "reported": 2520,
+          "reportedNonObese": 1264,
+          "reportedObese": 1256,
+          "ageRangeYears": [
+            25,
+            65
+          ],
+          "recruitmentYears": [
+            1977,
+            1987
+          ]
+        },
+        "TableIAllocations": {
+          "diet": {
+            "all": 664,
+            "nonObese": 373,
+            "obese": 291
+          },
+          "chlorpropamide": {
+            "all": 446,
+            "nonObese": 259,
+            "obese": 187
+          },
+          "glibenclamide": {
+            "all": 472,
+            "nonObese": 260,
+            "obese": 212
+          },
+          "insulin": {
+            "all": 676,
+            "nonObese": 372,
+            "obese": 304
+          },
+          "metformin": {
+            "all": 262,
+            "nonObese": 0,
+            "obese": 262
+          }
+        },
+        "completeRandomizedArmCountsKnown": false
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 1,
+          "printedPage": "83",
+          "nativeSection": "Title/abstract/introduction and Subjects and methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 2,
+          "printedPage": "84",
+          "nativeSection": "Run-in/randomization/treatment/assessment/statistical methods and Table I"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED3-CAL-08-O02",
+      "outcome": "Three-year overall comparator glycemia",
+      "estimate": {
+        "fastingGlucoseMedian_mmolL": {
+          "diet": [
+            9.0,
+            8.8,
+            9.3
+          ],
+          "chlorpropamide": [
+            7.0,
+            6.8,
+            7.2
+          ],
+          "glibenclamide": [
+            7.6,
+            7.3,
+            7.9
+          ],
+          "insulin": [
+            7.4,
+            7.2,
+            7.6
+          ]
+        },
+        "HbA1cMean_percent": {
+          "diet": [
+            7.6,
+            7.4,
+            7.7
+          ],
+          "chlorpropamide": [
+            6.8,
+            6.6,
+            6.9
+          ],
+          "glibenclamide": [
+            6.9,
+            6.7,
+            7.0
+          ],
+          "insulin": [
+            7.0,
+            6.9,
+            7.1
+          ]
+        },
+        "drugVsDietP": "less than0.001",
+        "timeYears": 3,
+        "metforminIncludedInTheseOverallRows": false
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 1,
+          "printedPage": "83",
+          "nativeSection": "Title/abstract/introduction and Subjects and methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 3,
+          "printedPage": "85",
+          "nativeSection": "Statistical methods/results/compliance and Figures1-2"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED3-CAL-08-O03",
+      "outcome": "Three-year obese-stratum metformin glycemia",
+      "estimate": {
+        "fastingGlucoseMedian_mmolL": {
+          "diet": [
+            9.6,
+            9.0,
+            10.2
+          ],
+          "chlorpropamide": [
+            7.4,
+            7.1,
+            7.8
+          ],
+          "glibenclamide": [
+            8.5,
+            7.9,
+            9.1
+          ],
+          "insulin": [
+            7.9,
+            7.6,
+            8.2
+          ],
+          "metformin": [
+            7.7,
+            7.5,
+            8.0
+          ]
+        },
+        "HbA1cMean_percent": {
+          "diet": [
+            7.8,
+            7.6,
+            8.0
+          ],
+          "metformin": [
+            7.1,
+            6.9,
+            7.3
+          ]
+        },
+        "chlorpropamideVsGlibenclamideGlucoseP": "less than0.001",
+        "formalEquivalenceOrNoninferiority": false,
+        "timeYears": 3
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 3,
+          "printedPage": "85",
+          "nativeSection": "Statistical methods/results/compliance and Figures1-2"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED3-CAL-08-O04",
+      "outcome": "Weight and fasting insulin summaries",
+      "estimate": {
+        "overallBodyWeightMean_kg": {
+          "diet": [
+            77.1,
+            76.0,
+            78.3
+          ],
+          "chlorpropamide": [
+            77.9,
+            76.5,
+            79.3
+          ],
+          "glibenclamide": [
+            81.1,
+            79.7,
+            82.5
+          ],
+          "insulin": [
+            80.2,
+            79.1,
+            81.4
+          ]
+        },
+        "overallInsulinGeometricMean_mUL": {
+          "diet": [
+            11.6,
+            11.1,
+            12.2
+          ],
+          "chlorpropamide": [
+            13.0,
+            12.4,
+            13.7
+          ],
+          "glibenclamide": [
+            13.3,
+            12.6,
+            13.9
+          ],
+          "insulin": [
+            14.1,
+            13.5,
+            14.7
+          ]
+        },
+        "obeseBodyWeightMean_kg": {
+          "metformin": [
+            87.4,
+            85.3,
+            89.5
+          ],
+          "diet": [
+            86.2,
+            84.4,
+            88.0
+          ]
+        },
+        "obeseMetforminVsDietWeight": "not significantly different, exactP not reported",
+        "obeseInsulinGeometricMean_mUL": {
+          "metformin": [
+            13.2,
+            12.4,
+            14.1
+          ],
+          "diet": [
+            14.8,
+            13.9,
+            15.7
+          ]
+        },
+        "obeseMetforminVsDietInsulinP": "less than0.001",
+        "abstractMetforminInsulinChange_mUL": -2.5,
+        "discussionInsulinRelativeChanges_percent": {
+          "chlorpropamide": 10.2,
+          "glibenclamide": 6.7,
+          "insulin": 13.4,
+          "metformin": -16.5
+        },
+        "summariesMustRemainDistinct": true,
+        "GLUT1Measured": false
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 1,
+          "printedPage": "83",
+          "nativeSection": "Title/abstract/introduction and Subjects and methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 2,
+          "printedPage": "84",
+          "nativeSection": "Run-in/randomization/treatment/assessment/statistical methods and Table I"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 3,
+          "printedPage": "85",
+          "nativeSection": "Statistical methods/results/compliance and Figures1-2"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 5,
+          "printedPage": "87",
+          "nativeSection": "Table IV, hypoglycemia results and Discussion"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED3-CAL-08-O05",
+      "outcome": "Treatment adherence/rescue and literal TableII",
+      "estimate": {
+        "columns": [
+          "allocatedMonotherapy",
+          "additionalTherapy",
+          "notAllocatedMonotherapy"
+        ],
+        "cellsAre": [
+          "printedCount",
+          "printedPercent"
+        ],
+        "diet_all": [
+          [
+            489,
+            74
+          ],
+          [
+            188,
+            26
+          ],
+          null
+        ],
+        "diet_nonObese": [
+          [
+            275,
+            74
+          ],
+          [
+            98,
+            26
+          ],
+          null
+        ],
+        "diet_obese": [
+          [
+            214,
+            69
+          ],
+          [
+            90,
+            31
+          ],
+          null
+        ],
+        "chlorpropamide_all": [
+          [
+            350,
+            78
+          ],
+          [
+            39,
+            9
+          ],
+          [
+            57,
+            13
+          ]
+        ],
+        "chlorpropamide_nonObese": [
+          [
+            209,
+            81
+          ],
+          [
+            22,
+            8
+          ],
+          [
+            28,
+            11
+          ]
+        ],
+        "chlorpropamide_obese": [
+          [
+            141,
+            75
+          ],
+          [
+            17,
+            9
+          ],
+          [
+            29,
+            16
+          ]
+        ],
+        "glibenclamide_all": [
+          [
+            374,
+            79
+          ],
+          [
+            63,
+            13
+          ],
+          [
+            35,
+            7
+          ]
+        ],
+        "glibenclamide_nonObese": [
+          [
+            210,
+            81
+          ],
+          [
+            31,
+            12
+          ],
+          [
+            19,
+            7
+          ]
+        ],
+        "glibenclamide_obese": [
+          [
+            164,
+            77
+          ],
+          [
+            32,
+            15
+          ],
+          [
+            16,
+            8
+          ]
+        ],
+        "insulin_all": [
+          [
+            404,
+            60
+          ],
+          [
+            92,
+            14
+          ],
+          [
+            180,
+            27
+          ]
+        ],
+        "insulin_nonObese": [
+          [
+            228,
+            61
+          ],
+          [
+            54,
+            15
+          ],
+          [
+            90,
+            24
+          ]
+        ],
+        "insulin_obese": [
+          [
+            176,
+            58
+          ],
+          [
+            38,
+            13
+          ],
+          [
+            90,
+            30
+          ]
+        ],
+        "metformin_obese": [
+          [
+            207,
+            79
+          ],
+          [
+            25,
+            10
+          ],
+          [
+            30,
+            11
+          ]
+        ],
+        "metforminAnyContinuedBody": [
+          232,
+          88
+        ],
+        "refusalAndSideEffectsCombined": true,
+        "dietAllPrintedSum677Not664": true,
+        "obeseDietPrintedSum304Not291": true
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 3,
+          "printedPage": "85",
+          "nativeSection": "Statistical methods/results/compliance and Figures1-2"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 4,
+          "printedPage": "86",
+          "nativeSection": "Compliance/response to treatment, Tables II-III and Figure3"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED3-CAL-08-O06",
+      "outcome": "Glycemic target categories and literal TableIII",
+      "estimate": {
+        "columns": [
+          "lessThan6.0",
+          "6.0to7.7",
+          "7.8to14.9",
+          "notOnRandomizedTreatment"
+        ],
+        "units": "fasting plasma glucose mmol/l; cells [printed count,printed percent]",
+        "nonObese_diet": [
+          [
+            10,
+            3
+          ],
+          [
+            80,
+            21
+          ],
+          [
+            184,
+            49
+          ],
+          [
+            98,
+            27
+          ]
+        ],
+        "nonObese_chlorpropamide": [
+          [
+            73,
+            28
+          ],
+          [
+            85,
+            33
+          ],
+          [
+            52,
+            20
+          ],
+          [
+            50,
+            19
+          ]
+        ],
+        "nonObese_glibenclamide": [
+          [
+            53,
+            21
+          ],
+          [
+            78,
+            30
+          ],
+          [
+            77,
+            30
+          ],
+          [
+            48,
+            19
+          ]
+        ],
+        "nonObese_insulin": [
+          [
+            100,
+            27
+          ],
+          [
+            108,
+            29
+          ],
+          [
+            74,
+            20
+          ],
+          [
+            90,
+            24
+          ]
+        ],
+        "obese_diet": [
+          [
+            12,
+            4
+          ],
+          [
+            49,
+            16
+          ],
+          [
+            147,
+            48
+          ],
+          [
+            90,
+            32
+          ]
+        ],
+        "obese_chlorpropamide": [
+          [
+            40,
+            21
+          ],
+          [
+            52,
+            28
+          ],
+          [
+            48,
+            26
+          ],
+          [
+            46,
+            25
+          ]
+        ],
+        "obese_glibenclamide": [
+          [
+            29,
+            14
+          ],
+          [
+            38,
+            18
+          ],
+          [
+            96,
+            45
+          ],
+          [
+            48,
+            23
+          ]
+        ],
+        "obese_insulin": [
+          [
+            49,
+            16
+          ],
+          [
+            73,
+            24
+          ],
+          [
+            92,
+            30
+          ],
+          [
+            90,
+            30
+          ]
+        ],
+        "obese_metformin": [
+          [
+            29,
+            11
+          ],
+          [
+            85,
+            32
+          ],
+          [
+            93,
+            36
+          ],
+          [
+            55,
+            21
+          ]
+        ],
+        "printedRowsNotSilentlyReconciled": true
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 4,
+          "printedPage": "86",
+          "nativeSection": "Compliance/response to treatment, Tables II-III and Figure3"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED3-CAL-08-O07",
+      "outcome": "Annual hypoglycemia among monotherapy and literal TableIV",
+      "estimate": {
+        "columns": [
+          "anyYear1",
+          "anyYear2",
+          "anyYear3",
+          "meanAnnualAnyPercent",
+          "majorYear1",
+          "majorYear2",
+          "majorYear3",
+          "meanAnnualMajorPercent"
+        ],
+        "nonzeroCellsAre": "[peopleWithOneOrMore,printedPercent]; zero cells printed0; percentages not reconstructed denominators",
+        "diet_all": [
+          [
+            1,
+            0.6
+          ],
+          [
+            4,
+            1.6
+          ],
+          [
+            5,
+            1.6
+          ],
+          1.2,
+          0,
+          [
+            2,
+            0.8
+          ],
+          0,
+          0.2
+        ],
+        "diet_nonObese": [
+          0,
+          [
+            4,
+            2.8
+          ],
+          [
+            4,
+            2.3
+          ],
+          1.7,
+          0,
+          [
+            2,
+            1.4
+          ],
+          0,
+          0.5
+        ],
+        "diet_obese": [
+          [
+            1,
+            1.4
+          ],
+          0,
+          [
+            1,
+            0.8
+          ],
+          0.7,
+          0,
+          0,
+          0,
+          0
+        ],
+        "chlorpropamide_all": [
+          [
+            51,
+            15.3
+          ],
+          [
+            48,
+            14.4
+          ],
+          [
+            36,
+            10.7
+          ],
+          13.5,
+          [
+            2,
+            0.6
+          ],
+          [
+            2,
+            0.6
+          ],
+          0,
+          0.4
+        ],
+        "chlorpropamide_nonObese": [
+          [
+            27,
+            13.5
+          ],
+          [
+            24,
+            12.1
+          ],
+          [
+            20,
+            9.9
+          ],
+          11.8,
+          0,
+          [
+            1,
+            0.5
+          ],
+          0,
+          0.2
+        ],
+        "chlorpropamide_obese": [
+          [
+            24,
+            18.0
+          ],
+          [
+            24,
+            17.9
+          ],
+          [
+            16,
+            11.9
+          ],
+          15.9,
+          [
+            2,
+            1.5
+          ],
+          [
+            1,
+            0.8
+          ],
+          0,
+          0.7
+        ],
+        "glibenclamide_all": [
+          [
+            129,
+            36.3
+          ],
+          [
+            95,
+            26.7
+          ],
+          [
+            73,
+            20.3
+          ],
+          27.8,
+          [
+            7,
+            2.0
+          ],
+          [
+            5,
+            1.4
+          ],
+          [
+            2,
+            0.6
+          ],
+          1.3
+        ],
+        "glibenclamide_nonObese": [
+          [
+            77,
+            37.9
+          ],
+          [
+            54,
+            26.6
+          ],
+          [
+            43,
+            20.8
+          ],
+          28.4,
+          [
+            4,
+            2.0
+          ],
+          [
+            3,
+            1.5
+          ],
+          [
+            1,
+            0.5
+          ],
+          1.3
+        ],
+        "glibenclamide_obese": [
+          [
+            52,
+            34.2
+          ],
+          [
+            41,
+            26.8
+          ],
+          [
+            30,
+            19.5
+          ],
+          26.8,
+          [
+            3,
+            2.0
+          ],
+          [
+            2,
+            1.3
+          ],
+          [
+            1,
+            0.7
+          ],
+          1.3
+        ],
+        "insulin_all": [
+          [
+            131,
+            33.8
+          ],
+          [
+            136,
+            34.7
+          ],
+          [
+            126,
+            31.6
+          ],
+          33.4,
+          [
+            5,
+            1.3
+          ],
+          [
+            6,
+            1.5
+          ],
+          [
+            6,
+            1.5
+          ],
+          1.4
+        ],
+        "insulin_nonObese": [
+          [
+            75,
+            33.9
+          ],
+          [
+            82,
+            36.9
+          ],
+          [
+            77,
+            34.3
+          ],
+          35.0,
+          [
+            4,
+            1.8
+          ],
+          [
+            2,
+            0.9
+          ],
+          [
+            3,
+            1.3
+          ],
+          1.3
+        ],
+        "insulin_obese": [
+          [
+            56,
+            33.5
+          ],
+          [
+            54,
+            31.7
+          ],
+          [
+            49,
+            28.0
+          ],
+          32.2,
+          [
+            1,
+            0.6
+          ],
+          [
+            4,
+            2.4
+          ],
+          [
+            3,
+            1.7
+          ],
+          1.5
+        ],
+        "metformin_obese": [
+          [
+            16,
+            8.2
+          ],
+          [
+            11,
+            5.7
+          ],
+          [
+            8,
+            4.1
+          ],
+          6.3,
+          [
+            1,
+            0.5
+          ],
+          [
+            1,
+            0.5
+          ],
+          [
+            1,
+            0.5
+          ],
+          0.5
+        ],
+        "annualExactDenominators": null,
+        "cumulativeThreeYearUniqueRisk": null,
+        "zeroMetforminHypoglycemia": false
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 2,
+          "printedPage": "84",
+          "nativeSection": "Run-in/randomization/treatment/assessment/statistical methods and Table I"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 4,
+          "printedPage": "86",
+          "nativeSection": "Compliance/response to treatment, Tables II-III and Figure3"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 5,
+          "printedPage": "87",
+          "nativeSection": "Table IV, hypoglycemia results and Discussion"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED3-CAL-08-O08",
+      "outcome": "Pre-randomization diet run-in changes",
+      "estimate": {
+        "beforeRandomization": true,
+        "durationMonths": 3,
+        "meanSDReduction": {
+          "fastingGlucose_mmolL": [
+            2.9,
+            3.1
+          ],
+          "HbA1c_percentPoints": [
+            1.9,
+            2.0
+          ],
+          "weight_kg": [
+            3.7,
+            3.5
+          ],
+          "insulin_mUL": [
+            1.3,
+            7.6
+          ]
+        },
+        "reportedP": "less than0.0001",
+        "hypertensionRecruitment": [
+          1361,
+          54
+        ],
+        "hypertensionAfterTwoMonths": [
+          1058,
+          42
+        ],
+        "randomizedMetforminEffect": false
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 2,
+          "printedPage": "84",
+          "nativeSection": "Run-in/randomization/treatment/assessment/statistical methods and Table I"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 3,
+          "printedPage": "85",
+          "nativeSection": "Statistical methods/results/compliance and Figures1-2"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED3-CAL-08-O09",
+      "outcome": "Analysis, mechanism and long-term outcome boundaries",
+      "estimate": {
+        "Figure3": "Shaded continued allocated monotherapy versus open allocated-treatment change bars with95%CI; no numerical digitization",
+        "annualSummary": "median of annual, preceding and following three-month visits per patient",
+        "tests": [
+          "Mann-Whitney U",
+          "t test",
+          "chi-square with small-cell adjustments",
+          "Bonferroni for multiple comparisons"
+        ],
+        "fullRandomized2769ITTNotEstablished": true,
+        "longTermClinicalBenefitReported": false,
+        "GLUT1": "cited possible explanation from reference14; not directly measured in UKPDS13",
+        "UGDP": "discussion cites different drugs tolbutamide/phenformin; not own metformin cardiovascular effect",
+        "unrelatedArticleBottomPhysical6Excluded": true
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 1,
+          "printedPage": "83",
+          "nativeSection": "Title/abstract/introduction and Subjects and methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 2,
+          "printedPage": "84",
+          "nativeSection": "Run-in/randomization/treatment/assessment/statistical methods and Table I"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 3,
+          "printedPage": "85",
+          "nativeSection": "Statistical methods/results/compliance and Figures1-2"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 4,
+          "printedPage": "86",
+          "nativeSection": "Compliance/response to treatment, Tables II-III and Figure3"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 5,
+          "printedPage": "87",
+          "nativeSection": "Table IV, hypoglycemia results and Discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 6,
+          "printedPage": "88",
+          "nativeSection": "Key messages/Discussion/authorship/funding/references; separate next article excluded"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    }
+  ],
+  "claims": [
+    {
+      "id": "REED3-CAL-08-C01",
+      "resultIds": [
+        "REED3-CAL-08-O01"
+      ],
+      "statement": "Eligibility/randomization/report-cohort flow. Preserve reported-cohort/obese-stratum/exposure/endpoint and literal-source limitations; no new clinical-event or repurposing inference.",
+      "relation": "private_original_use_diabetes_candidate",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED3-CAL-08-C02",
+      "resultIds": [
+        "REED3-CAL-08-O02"
+      ],
+      "statement": "Three-year overall comparator glycemia. Preserve reported-cohort/obese-stratum/exposure/endpoint and literal-source limitations; no new clinical-event or repurposing inference.",
+      "relation": "private_original_use_diabetes_candidate",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED3-CAL-08-C03",
+      "resultIds": [
+        "REED3-CAL-08-O03"
+      ],
+      "statement": "Three-year obese-stratum metformin glycemia. Preserve reported-cohort/obese-stratum/exposure/endpoint and literal-source limitations; no new clinical-event or repurposing inference.",
+      "relation": "private_original_use_diabetes_candidate",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED3-CAL-08-C04",
+      "resultIds": [
+        "REED3-CAL-08-O04"
+      ],
+      "statement": "Weight and fasting insulin summaries. Preserve reported-cohort/obese-stratum/exposure/endpoint and literal-source limitations; no new clinical-event or repurposing inference.",
+      "relation": "private_original_use_diabetes_candidate",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED3-CAL-08-C05",
+      "resultIds": [
+        "REED3-CAL-08-O05"
+      ],
+      "statement": "Treatment adherence/rescue and literal TableII. Preserve reported-cohort/obese-stratum/exposure/endpoint and literal-source limitations; no new clinical-event or repurposing inference.",
+      "relation": "private_original_use_diabetes_candidate",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED3-CAL-08-C06",
+      "resultIds": [
+        "REED3-CAL-08-O06"
+      ],
+      "statement": "Glycemic target categories and literal TableIII. Preserve reported-cohort/obese-stratum/exposure/endpoint and literal-source limitations; no new clinical-event or repurposing inference.",
+      "relation": "private_original_use_diabetes_candidate",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED3-CAL-08-C07",
+      "resultIds": [
+        "REED3-CAL-08-O07"
+      ],
+      "statement": "Annual hypoglycemia among monotherapy and literal TableIV. Preserve reported-cohort/obese-stratum/exposure/endpoint and literal-source limitations; no new clinical-event or repurposing inference.",
+      "relation": "private_original_use_diabetes_candidate",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED3-CAL-08-C08",
+      "resultIds": [
+        "REED3-CAL-08-O08"
+      ],
+      "statement": "Pre-randomization diet run-in changes. Preserve reported-cohort/obese-stratum/exposure/endpoint and literal-source limitations; no new clinical-event or repurposing inference.",
+      "relation": "private_original_use_diabetes_candidate",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED3-CAL-08-C09",
+      "resultIds": [
+        "REED3-CAL-08-O09"
+      ],
+      "statement": "Analysis, mechanism and long-term outcome boundaries. Preserve reported-cohort/obese-stratum/exposure/endpoint and literal-source limitations; no new clinical-event or repurposing inference.",
+      "relation": "private_original_use_diabetes_candidate",
+      "acceptedSupport": false
+    }
+  ],
+  "reviewInputs": [
+    {
+      "id": "Q01",
+      "answer": "Compare three-year treatments after diagnosis of non-insulin-dependent diabetes, chiefly glycemic control/weight/insulin/compliance/hypoglycemia.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 1,
+          "printedPage": "83",
+          "nativeSection": "Title/abstract/introduction and Subjects and methods"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q02",
+      "answer": "{'species': 'human', 'setting': '15 British hospital outpatient diabetes clinics', 'eligibility': 'newly diagnosed non-insulin-dependent diabetes,age25-65,referred1977-1987,FPG>6mmol/l twice; after3month diet FPG6.1-14.9 without symptoms', 'exclusions': 'recent myocardial infarction,current angina/heart failure,accelerated hypertension,proliferative/preproliferative retinopathy,creatinine>175umol/l,life-threatening illness including cancer,systemic-steroid illness,insulin-precluding occupation,language difficulties,ketonuria>3mmol/l', 'reportedBaseline': {'N': 2520, 'ageMeanSD': [52, 8], 'men': [1455, 58], 'nonObese': 1264, 'obese': 1256, 'white': [2052, 81], 'Asian': [242, 10], 'AfroCaribbean': [225, 9], 'BMImeanSD': [27.5, 5.1], 'obeseBMImeanSD': [31.3, 4.5]}, 'consent': 'all recruited gave informed consent', 'ethicsApprovalID': 'not reported in supplied article', 'metforminOnlyObese': True, 'notCancerOrLongevityPopulation': True}",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 1,
+          "printedPage": "83",
+          "nativeSection": "Title/abstract/introduction and Subjects and methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 2,
+          "printedPage": "84",
+          "nativeSection": "Run-in/randomization/treatment/assessment/statistical methods and Table I"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q03",
+      "answer": "Metformin tablets; ultralente beef then human insulin; chlorpropamide/glibenclamide. Manufacturer named for insulin, full product/release characterization absent.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 2,
+          "printedPage": "84",
+          "nativeSection": "Run-in/randomization/treatment/assessment/statistical methods and Table I"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q04",
+      "answer": "Diet-only allocation versus diet plus chlorpropamide/glibenclamide/insulin; metformin only in obese stratum, rescue permitted.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 2,
+          "printedPage": "84",
+          "nativeSection": "Run-in/randomization/treatment/assessment/statistical methods and Table I"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q05",
+      "answer": "Main outcome measures listed in abstract: fasting glucose/HbA1c/insulin,weight,compliance,hypoglycemia; no confirmed prespecified outcome hierarchy.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 1,
+          "printedPage": "83",
+          "nativeSection": "Title/abstract/introduction and Subjects and methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 2,
+          "printedPage": "84",
+          "nativeSection": "Run-in/randomization/treatment/assessment/statistical methods and Table I"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q06",
+      "answer": "[{\"resultId\": \"REED3-CAL-08-O01\", \"estimate\": {\"flow\": {\"referred\": 6147, \"initialExcluded\": 1675, \"runinWithdrawn\": 397, \"afterRunin\": 4075, \"persistentHighGlucoseOrSymptoms\": 560, \"dietResponders\": 746, \"randomized\": 2769, \"lostOrDied3y\": 249, \"reported\": 2520, \"reportedNonObese\": 1264, \"reportedObese\": 1256, \"ageRangeYears\": [25, 65], \"recruitmentYears\": [1977, 1987]}, \"TableIAllocations\": {\"diet\": {\"all\": 664, \"nonObese\": 373, \"obese\": 291}, \"chlorpropamide\": {\"all\": 446, \"nonObese\": 259, \"obese\": 187}, \"glibenclamide\": {\"all\": 472, \"nonObese\": 260, \"obese\": 212}, \"insulin\": {\"all\": 676, \"nonObese\": 372, \"obese\": 304}, \"metformin\": {\"all\": 262, \"nonObese\": 0, \"obese\": 262}}, \"completeRandomizedArmCountsKnown\": false}, \"sourceLocators\": [{\"kind\": \"pdf\", \"sourceSha256\": \"0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f\", \"physicalPage\": 1, \"printedPage\": \"83\", \"nativeSection\": \"Title/abstract/introduction and Subjects and methods\"}, {\"kind\": \"pdf\", \"sourceSha256\": \"0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f\", \"physicalPage\": 2, \"printedPage\": \"84\", \"nativeSection\": \"Run-in/randomization/treatment/assessment/statistical methods and Table I\"}]}, {\"resultId\": \"REED3-CAL-08-O02\", \"estimate\": {\"fastingGlucoseMedian_mmolL\": {\"diet\": [9.0, 8.8, 9.3], \"chlorpropamide\": [7.0, 6.8, 7.2], \"glibenclamide\": [7.6, 7.3, 7.9], \"insulin\": [7.4, 7.2, 7.6]}, \"HbA1cMean_percent\": {\"diet\": [7.6, 7.4, 7.7], \"chlorpropamide\": [6.8, 6.6, 6.9], \"glibenclamide\": [6.9, 6.7, 7.0], \"insulin\": [7.0, 6.9, 7.1]}, \"drugVsDietP\": \"less than0.001\", \"timeYears\": 3, \"metforminIncludedInTheseOverallRows\": false}, \"sourceLocators\": [{\"kind\": \"pdf\", \"sourceSha256\": \"0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f\", \"physicalPage\": 1, \"printedPage\": \"83\", \"nativeSection\": \"Title/abstract/introduction and Subjects and methods\"}, {\"kind\": \"pdf\", \"sourceSha256\": \"0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f\", \"physicalPage\": 3, \"printedPage\": \"85\", \"nativeSection\": \"Statistical methods/results/compliance and Figures1-2\"}]}, {\"resultId\": \"REED3-CAL-08-O03\", \"estimate\": {\"fastingGlucoseMedian_mmolL\": {\"diet\": [9.6, 9.0, 10.2], \"chlorpropamide\": [7.4, 7.1, 7.8], \"glibenclamide\": [8.5, 7.9, 9.1], \"insulin\": [7.9, 7.6, 8.2], \"metformin\": [7.7, 7.5, 8.0]}, \"HbA1cMean_percent\": {\"diet\": [7.8, 7.6, 8.0], \"metformin\": [7.1, 6.9, 7.3]}, \"chlorpropamideVsGlibenclamideGlucoseP\": \"less than0.001\", \"formalEquivalenceOrNoninferiority\": false, \"timeYears\": 3}, \"sourceLocators\": [{\"kind\": \"pdf\", \"sourceSha256\": \"0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f\", \"physicalPage\": 3, \"printedPage\": \"85\", \"nativeSection\": \"Statistical methods/results/compliance and Figures1-2\"}]}, {\"resultId\": \"REED3-CAL-08-O04\", \"estimate\": {\"overallBodyWeightMean_kg\": {\"diet\": [77.1, 76.0, 78.3], \"chlorpropamide\": [77.9, 76.5, 79.3], \"glibenclamide\": [81.1, 79.7, 82.5], \"insulin\": [80.2, 79.1, 81.4]}, \"overallInsulinGeometricMean_mUL\": {\"diet\": [11.6, 11.1, 12.2], \"chlorpropamide\": [13.0, 12.4, 13.7], \"glibenclamide\": [13.3, 12.6, 13.9], \"insulin\": [14.1, 13.5, 14.7]}, \"obeseBodyWeightMean_kg\": {\"metformin\": [87.4, 85.3, 89.5], \"diet\": [86.2, 84.4, 88.0]}, \"obeseMetforminVsDietWeight\": \"not significantly different, exactP not reported\", \"obeseInsulinGeometricMean_mUL\": {\"metformin\": [13.2, 12.4, 14.1], \"diet\": [14.8, 13.9, 15.7]}, \"obeseMetforminVsDietInsulinP\": \"less than0.001\", \"abstractMetforminInsulinChange_mUL\": -2.5, \"discussionInsulinRelativeChanges_percent\": {\"chlorpropamide\": 10.2, \"glibenclamide\": 6.7, \"insulin\": 13.4, \"metformin\": -16.5}, \"summariesMustRemainDistinct\": true, \"GLUT1Measured\": false}, \"sourceLocators\": [{\"kind\": \"pdf\", \"sourceSha256\": \"0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f\", \"physicalPage\": 1, \"printedPage\": \"83\", \"nativeSection\": \"Title/abstract/introduction and Subjects and methods\"}, {\"kind\": \"pdf\", \"sourceSha256\": \"0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f\", \"physicalPage\": 2, \"printedPage\": \"84\", \"nativeSection\": \"Run-in/randomization/treatment/assessment/statistical methods and Table I\"}, {\"kind\": \"pdf\", \"sourceSha256\": \"0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f\", \"physicalPage\": 3, \"printedPage\": \"85\", \"nativeSection\": \"Statistical methods/results/compliance and Figures1-2\"}, {\"kind\": \"pdf\", \"sourceSha256\": \"0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f\", \"physicalPage\": 5, \"printedPage\": \"87\", \"nativeSection\": \"Table IV, hypoglycemia results and Discussion\"}]}, {\"resultId\": \"REED3-CAL-08-O05\", \"estimate\": {\"columns\": [\"allocatedMonotherapy\", \"additionalTherapy\", \"notAllocatedMonotherapy\"], \"cellsAre\": [\"printedCount\", \"printedPercent\"], \"diet_all\": [[489, 74], [188, 26], null], \"diet_nonObese\": [[275, 74], [98, 26], null], \"diet_obese\": [[214, 69], [90, 31], null], \"chlorpropamide_all\": [[350, 78], [39, 9], [57, 13]], \"chlorpropamide_nonObese\": [[209, 81], [22, 8], [28, 11]], \"chlorpropamide_obese\": [[141, 75], [17, 9], [29, 16]], \"glibenclamide_all\": [[374, 79], [63, 13], [35, 7]], \"glibenclamide_nonObese\": [[210, 81], [31, 12], [19, 7]], \"glibenclamide_obese\": [[164, 77], [32, 15], [16, 8]], \"insulin_all\": [[404, 60], [92, 14], [180, 27]], \"insulin_nonObese\": [[228, 61], [54, 15], [90, 24]], \"insulin_obese\": [[176, 58], [38, 13], [90, 30]], \"metformin_obese\": [[207, 79], [25, 10], [30, 11]], \"metforminAnyContinuedBody\": [232, 88], \"refusalAndSideEffectsCombined\": true, \"dietAllPrintedSum677Not664\": true, \"obeseDietPrintedSum304Not291\": true}, \"sourceLocators\": [{\"kind\": \"pdf\", \"sourceSha256\": \"0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f\", \"physicalPage\": 3, \"printedPage\": \"85\", \"nativeSection\": \"Statistical methods/results/compliance and Figures1-2\"}, {\"kind\": \"pdf\", \"sourceSha256\": \"0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f\", \"physicalPage\": 4, \"printedPage\": \"86\", \"nativeSection\": \"Compliance/response to treatment, Tables II-III and Figure3\"}]}, {\"resultId\": \"REED3-CAL-08-O06\", \"estimate\": {\"columns\": [\"lessThan6.0\", \"6.0to7.7\", \"7.8to14.9\", \"notOnRandomizedTreatment\"], \"units\": \"fasting plasma glucose mmol/l; cells [printed count,printed percent]\", \"nonObese_diet\": [[10, 3], [80, 21], [184, 49], [98, 27]], \"nonObese_chlorpropamide\": [[73, 28], [85, 33], [52, 20], [50, 19]], \"nonObese_glibenclamide\": [[53, 21], [78, 30], [77, 30], [48, 19]], \"nonObese_insulin\": [[100, 27], [108, 29], [74, 20], [90, 24]], \"obese_diet\": [[12, 4], [49, 16], [147, 48], [90, 32]], \"obese_chlorpropamide\": [[40, 21], [52, 28], [48, 26], [46, 25]], \"obese_glibenclamide\": [[29, 14], [38, 18], [96, 45], [48, 23]], \"obese_insulin\": [[49, 16], [73, 24], [92, 30], [90, 30]], \"obese_metformin\": [[29, 11], [85, 32], [93, 36], [55, 21]], \"printedRowsNotSilentlyReconciled\": true}, \"sourceLocators\": [{\"kind\": \"pdf\", \"sourceSha256\": \"0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f\", \"physicalPage\": 4, \"printedPage\": \"86\", \"nativeSection\": \"Compliance/response to treatment, Tables II-III and Figure3\"}]}, {\"resultId\": \"REED3-CAL-08-O07\", \"estimate\": {\"columns\": [\"anyYear1\", \"anyYear2\", \"anyYear3\", \"meanAnnualAnyPercent\", \"majorYear1\", \"majorYear2\", \"majorYear3\", \"meanAnnualMajorPercent\"], \"nonzeroCellsAre\": \"[peopleWithOneOrMore,printedPercent]; zero cells printed0; percentages not reconstructed denominators\", \"diet_all\": [[1, 0.6], [4, 1.6], [5, 1.6], 1.2, 0, [2, 0.8], 0, 0.2], \"diet_nonObese\": [0, [4, 2.8], [4, 2.3], 1.7, 0, [2, 1.4], 0, 0.5], \"diet_obese\": [[1, 1.4], 0, [1, 0.8], 0.7, 0, 0, 0, 0], \"chlorpropamide_all\": [[51, 15.3], [48, 14.4], [36, 10.7], 13.5, [2, 0.6], [2, 0.6], 0, 0.4], \"chlorpropamide_nonObese\": [[27, 13.5], [24, 12.1], [20, 9.9], 11.8, 0, [1, 0.5], 0, 0.2], \"chlorpropamide_obese\": [[24, 18.0], [24, 17.9], [16, 11.9], 15.9, [2, 1.5], [1, 0.8], 0, 0.7], \"glibenclamide_all\": [[129, 36.3], [95, 26.7], [73, 20.3], 27.8, [7, 2.0], [5, 1.4], [2, 0.6], 1.3], \"glibenclamide_nonObese\": [[77, 37.9], [54, 26.6], [43, 20.8], 28.4, [4, 2.0], [3, 1.5], [1, 0.5], 1.3], \"glibenclamide_obese\": [[52, 34.2], [41, 26.8], [30, 19.5], 26.8, [3, 2.0], [2, 1.3], [1, 0.7], 1.3], \"insulin_all\": [[131, 33.8], [136, 34.7], [126, 31.6], 33.4, [5, 1.3], [6, 1.5], [6, 1.5], 1.4], \"insulin_nonObese\": [[75, 33.9], [82, 36.9], [77, 34.3], 35.0, [4, 1.8], [2, 0.9], [3, 1.3], 1.3], \"insulin_obese\": [[56, 33.5], [54, 31.7], [49, 28.0], 32.2, [1, 0.6], [4, 2.4], [3, 1.7], 1.5], \"metformin_obese\": [[16, 8.2], [11, 5.7], [8, 4.1], 6.3, [1, 0.5], [1, 0.5], [1, 0.5], 0.5], \"annualExactDenominators\": null, \"cumulativeThreeYearUniqueRisk\": null, \"zeroMetforminHypoglycemia\": false}, \"sourceLocators\": [{\"kind\": \"pdf\", \"sourceSha256\": \"0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f\", \"physicalPage\": 2, \"printedPage\": \"84\", \"nativeSection\": \"Run-in/randomization/treatment/assessment/statistical methods and Table I\"}, {\"kind\": \"pdf\", \"sourceSha256\": \"0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f\", \"physicalPage\": 4, \"printedPage\": \"86\", \"nativeSection\": \"Compliance/response to treatment, Tables II-III and Figure3\"}, {\"kind\": \"pdf\", \"sourceSha256\": \"0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f\", \"physicalPage\": 5, \"printedPage\": \"87\", \"nativeSection\": \"Table IV, hypoglycemia results and Discussion\"}]}, {\"resultId\": \"REED3-CAL-08-O08\", \"estimate\": {\"beforeRandomization\": true, \"durationMonths\": 3, \"meanSDReduction\": {\"fastingGlucose_mmolL\": [2.9, 3.1], \"HbA1c_percentPoints\": [1.9, 2.0], \"weight_kg\": [3.7, 3.5], \"insulin_mUL\": [1.3, 7.6]}, \"reportedP\": \"less than0.0001\", \"hypertensionRecruitment\": [1361, 54], \"hypertensionAfterTwoMonths\": [1058, 42], \"randomizedMetforminEffect\": false}, \"sourceLocators\": [{\"kind\": \"pdf\", \"sourceSha256\": \"0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f\", \"physicalPage\": 2, \"printedPage\": \"84\", \"nativeSection\": \"Run-in/randomization/treatment/assessment/statistical methods and Table I\"}, {\"kind\": \"pdf\", \"sourceSha256\": \"0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f\", \"physicalPage\": 3, \"printedPage\": \"85\", \"nativeSection\": \"Statistical methods/results/compliance and Figures1-2\"}]}, {\"resultId\": \"REED3-CAL-08-O09\", \"estimate\": {\"Figure3\": \"Shaded continued allocated monotherapy versus open allocated-treatment change bars with95%CI; no numerical digitization\", \"annualSummary\": \"median of annual, preceding and following three-month visits per patient\", \"tests\": [\"Mann-Whitney U\", \"t test\", \"chi-square with small-cell adjustments\", \"Bonferroni for multiple comparisons\"], \"fullRandomized2769ITTNotEstablished\": true, \"longTermClinicalBenefitReported\": false, \"GLUT1\": \"cited possible explanation from reference14; not directly measured in UKPDS13\", \"UGDP\": \"discussion cites different drugs tolbutamide/phenformin; not own metformin cardiovascular effect\", \"unrelatedArticleBottomPhysical6Excluded\": true}, \"sourceLocators\": [{\"kind\": \"pdf\", \"sourceSha256\": \"0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f\", \"physicalPage\": 1, \"printedPage\": \"83\", \"nativeSection\": \"Title/abstract/introduction and Subjects and methods\"}, {\"kind\": \"pdf\", \"sourceSha256\": \"0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f\", \"physicalPage\": 2, \"printedPage\": \"84\", \"nativeSection\": \"Run-in/randomization/treatment/assessment/statistical methods and Table I\"}, {\"kind\": \"pdf\", \"sourceSha256\": \"0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f\", \"physicalPage\": 3, \"printedPage\": \"85\", \"nativeSection\": \"Statistical methods/results/compliance and Figures1-2\"}, {\"kind\": \"pdf\", \"sourceSha256\": \"0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f\", \"physicalPage\": 4, \"printedPage\": \"86\", \"nativeSection\": \"Compliance/response to treatment, Tables II-III and Figure3\"}, {\"kind\": \"pdf\", \"sourceSha256\": \"0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f\", \"physicalPage\": 5, \"printedPage\": \"87\", \"nativeSection\": \"Table IV, hypoglycemia results and Discussion\"}, {\"kind\": \"pdf\", \"sourceSha256\": \"0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f\", \"physicalPage\": 6, \"printedPage\": \"88\", \"nativeSection\": \"Key messages/Discussion/authorship/funding/references; separate next article excluded\"}]}]",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 1,
+          "printedPage": "83",
+          "nativeSection": "Title/abstract/introduction and Subjects and methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 2,
+          "printedPage": "84",
+          "nativeSection": "Run-in/randomization/treatment/assessment/statistical methods and Table I"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 3,
+          "printedPage": "85",
+          "nativeSection": "Statistical methods/results/compliance and Figures1-2"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 4,
+          "printedPage": "86",
+          "nativeSection": "Compliance/response to treatment, Tables II-III and Figure3"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 5,
+          "printedPage": "87",
+          "nativeSection": "Table IV, hypoglycemia results and Discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 6,
+          "printedPage": "88",
+          "nativeSection": "Key messages/Discussion/authorship/funding/references; separate next article excluded"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q07",
+      "answer": "{'referred': 6147, 'initialExcluded': 1675, 'runinWithdrawn': 397, 'afterRunin': 4075, 'persistentHighGlucoseOrSymptoms': 560, 'dietResponders': 746, 'randomized': 2769, 'lostOrDied3y': 249, 'reported': 2520, 'reportedNonObese': 1264, 'reportedObese': 1256, 'ageRangeYears': [25, 65], 'recruitmentYears': [1977, 1987]}",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 2,
+          "printedPage": "84",
+          "nativeSection": "Run-in/randomization/treatment/assessment/statistical methods and Table I"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 4,
+          "printedPage": "86",
+          "nativeSection": "Compliance/response to treatment, Tables II-III and Figure3"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q08",
+      "answer": "Three-month symptom inquiry;most severe period episode;minor self-treated,majorthirdparty/medical intervention;major centrally audited.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 2,
+          "printedPage": "84",
+          "nativeSection": "Run-in/randomization/treatment/assessment/statistical methods and Table I"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 4,
+          "printedPage": "86",
+          "nativeSection": "Compliance/response to treatment, Tables II-III and Figure3"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 5,
+          "printedPage": "87",
+          "nativeSection": "Table IV, hypoglycemia results and Discussion"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q09",
+      "answer": "Restricted post-runin sample,unknown concealment/blinding,249missing,therapycrossover,postallocation monotherapy selection,subjective symptom capture andprintedcount inconsistencies.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 1,
+          "printedPage": "83",
+          "nativeSection": "Title/abstract/introduction and Subjects and methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 2,
+          "printedPage": "84",
+          "nativeSection": "Run-in/randomization/treatment/assessment/statistical methods and Table I"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 3,
+          "printedPage": "85",
+          "nativeSection": "Statistical methods/results/compliance and Figures1-2"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 4,
+          "printedPage": "86",
+          "nativeSection": "Compliance/response to treatment, Tables II-III and Figure3"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q10",
+      "answer": "Newly diagnosed asymptomatic postdiet mild/moderate diabetes;metformin obese subset only. Original-use context,notcancer/MM/aging.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 1,
+          "printedPage": "83",
+          "nativeSection": "Title/abstract/introduction and Subjects and methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 2,
+          "printedPage": "84",
+          "nativeSection": "Run-in/randomization/treatment/assessment/statistical methods and Table I"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q11",
+      "answer": "UKPDS program,report13,notindependenttrialperpaper.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 1,
+          "printedPage": "83",
+          "nativeSection": "Title/abstract/introduction and Subjects and methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 6,
+          "printedPage": "88",
+          "nativeSection": "Key messages/Discussion/authorship/funding/references; separate next article excluded"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q12",
+      "answer": "UKPDS StudyGroup;manuscript RuryRHolman,CaroleACull,CharlesFox,RobertCTurner.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 1,
+          "printedPage": "83",
+          "nativeSection": "Title/abstract/introduction and Subjects and methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 6,
+          "printedPage": "88",
+          "nativeSection": "Key messages/Discussion/authorship/funding/references; separate next article excluded"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q13",
+      "answer": "BMJ1995volume310pp83-88,14January1995,accepted4November1994;DOInullassupplied.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 1,
+          "printedPage": "83",
+          "nativeSection": "Title/abstract/introduction and Subjects and methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 6,
+          "printedPage": "88",
+          "nativeSection": "Key messages/Discussion/authorship/funding/references; separate next article excluded"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q14",
+      "answer": "{'paperId': 'REED-b66200fc5d5a9beb5a46', 'sourceId': 'REED3-CAL-08-MAIN', 'resultIds': ['REED3-CAL-08-O01', 'REED3-CAL-08-O02', 'REED3-CAL-08-O03', 'REED3-CAL-08-O04', 'REED3-CAL-08-O05', 'REED3-CAL-08-O06', 'REED3-CAL-08-O07', 'REED3-CAL-08-O08', 'REED3-CAL-08-O09'], 'claimIds': ['REED3-CAL-08-C01', 'REED3-CAL-08-C02', 'REED3-CAL-08-C03', 'REED3-CAL-08-C04', 'REED3-CAL-08-C05', 'REED3-CAL-08-C06', 'REED3-CAL-08-C07', 'REED3-CAL-08-C08', 'REED3-CAL-08-C09'], 'existingGuideIds': ['G-METFORMIN', 'G-CONDITION-C31'], 'purpose': 'Private original-use type2diabetes glycemic/weight/insulin/hypoglycemia context only. No MM/cancer/aging or new clinical-event efficacy inference.', 'publicationState': 'private_unapplied_candidate', 'canonicalChanges': 0, 'newIndependentTrials': 0, 'newIndependentPatients': 0}",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 3,
+          "printedPage": "85",
+          "nativeSection": "Statistical methods/results/compliance and Figures1-2"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 5,
+          "printedPage": "87",
+          "nativeSection": "Table IV, hypoglycemia results and Discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 6,
+          "printedPage": "88",
+          "nativeSection": "Key messages/Discussion/authorship/funding/references; separate next article excluded"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending",
+      "downstreamMapping": {
+        "paperId": "REED-b66200fc5d5a9beb5a46",
+        "sourceId": "REED3-CAL-08-MAIN",
+        "resultIds": [
+          "REED3-CAL-08-O01",
+          "REED3-CAL-08-O02",
+          "REED3-CAL-08-O03",
+          "REED3-CAL-08-O04",
+          "REED3-CAL-08-O05",
+          "REED3-CAL-08-O06",
+          "REED3-CAL-08-O07",
+          "REED3-CAL-08-O08",
+          "REED3-CAL-08-O09"
+        ],
+        "claimIds": [
+          "REED3-CAL-08-C01",
+          "REED3-CAL-08-C02",
+          "REED3-CAL-08-C03",
+          "REED3-CAL-08-C04",
+          "REED3-CAL-08-C05",
+          "REED3-CAL-08-C06",
+          "REED3-CAL-08-C07",
+          "REED3-CAL-08-C08",
+          "REED3-CAL-08-C09"
+        ],
+        "existingGuideIds": [
+          "G-METFORMIN",
+          "G-CONDITION-C31"
+        ],
+        "purpose": "Private original-use type2diabetes glycemic/weight/insulin/hypoglycemia context only. No MM/cancer/aging or new clinical-event efficacy inference.",
+        "publicationState": "private_unapplied_candidate",
+        "canonicalChanges": 0,
+        "newIndependentTrials": 0,
+        "newIndependentPatients": 0
+      }
+    },
+    {
+      "id": "Q15",
+      "answer": "Three-year randomized-treatmentreportdocumentsglycemiccontrolwithdifferentweight/insulin/hypoglycemiapatterns,restrictedmetforminscopeandunfinishedlongtermriskbenefit.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 5,
+          "printedPage": "87",
+          "nativeSection": "Table IV, hypoglycemia results and Discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 6,
+          "printedPage": "88",
+          "nativeSection": "Key messages/Discussion/authorship/funding/references; separate next article excluded"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    }
+  ],
+  "sourceQualifications": [
+    {
+      "id": "REED3-CAL-08-Q01",
+      "description": "All6 physical pages read and visually inspected. UKPDS13 occupies printed83-88; physical6 below the horizontal article boundary begins an unrelated infant-feeding article, excluded from UKPDS evidence and disclosures.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 1,
+          "printedPage": "83",
+          "nativeSection": "Title/abstract/introduction and Subjects and methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 2,
+          "printedPage": "84",
+          "nativeSection": "Run-in/randomization/treatment/assessment/statistical methods and Table I"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 3,
+          "printedPage": "85",
+          "nativeSection": "Statistical methods/results/compliance and Figures1-2"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 4,
+          "printedPage": "86",
+          "nativeSection": "Compliance/response to treatment, Tables II-III and Figure3"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 5,
+          "printedPage": "87",
+          "nativeSection": "Table IV, hypoglycemia results and Discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 6,
+          "printedPage": "88",
+          "nativeSection": "Key messages/Discussion/authorship/funding/references; separate next article excluded"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-08-Q02",
+      "description": "6147 referred,1675 excluded,397 additional run-in withdrawals,4075 remaining,560 symptomatic/high-glucose and746 diet responders not in this randomization,2769 randomized,249 lost or died,2520 reported. Do not call2520 the complete randomized denominator; per-arm249 loss/death breakdown not supplied.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 1,
+          "printedPage": "83",
+          "nativeSection": "Title/abstract/introduction and Subjects and methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 2,
+          "printedPage": "84",
+          "nativeSection": "Run-in/randomization/treatment/assessment/statistical methods and Table I"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-08-Q03",
+      "description": "Reported2520 comprise1264 non-obese and1256 obese; metformin262 occurs only in obese stratum. TableI allocation counts describe reported cohort; not all2769 randomized arm counts.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 2,
+          "printedPage": "84",
+          "nativeSection": "Run-in/randomization/treatment/assessment/statistical methods and Table I"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-08-Q04",
+      "description": "Obesity stratification text uses >=120% ideal body weight while TableI footnote uses >120%; preserve this boundary discrepancy, not a BMI30 criterion or repair from memory.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 2,
+          "printedPage": "84",
+          "nativeSection": "Run-in/randomization/treatment/assessment/statistical methods and Table I"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-08-Q05",
+      "description": "All groups receive dietary advice. Diet arm can receive secondary drug randomization for symptoms or fasting glucose>=15mmol/l; drug arms can add drugs or change to insulin. Assigned-treatment analyses are not pure monotherapy exposure.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 2,
+          "printedPage": "84",
+          "nativeSection": "Run-in/randomization/treatment/assessment/statistical methods and Table I"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 4,
+          "printedPage": "86",
+          "nativeSection": "Compliance/response to treatment, Tables II-III and Figure3"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-08-Q06",
+      "description": "Metformin starts850mg once daily with weekly increases up to850mg three times daily or maximum tolerated, with glibenclamide rescue then insulin if needed. Historical study regimen is not current dosing advice or verified current labeling.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 2,
+          "printedPage": "84",
+          "nativeSection": "Run-in/randomization/treatment/assessment/statistical methods and Table I"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-08-Q07",
+      "description": "Authors state intention-to-treat unless otherwise stated, but249 randomized subjects are not included in2520 report. Figure3 separately compares continued-monotherapy and allocated-treatment analyses; neither is all2769 full ITT by assertion.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 2,
+          "printedPage": "84",
+          "nativeSection": "Run-in/randomization/treatment/assessment/statistical methods and Table I"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 4,
+          "printedPage": "86",
+          "nativeSection": "Compliance/response to treatment, Tables II-III and Figure3"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-08-Q08",
+      "description": "Randomization stratum/proportions reported, but sequence generation/concealment and blinding methods are not stated. No protocol/registration/analysis plan was acquired or read.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 1,
+          "printedPage": "83",
+          "nativeSection": "Title/abstract/introduction and Subjects and methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 2,
+          "printedPage": "84",
+          "nativeSection": "Run-in/randomization/treatment/assessment/statistical methods and Table I"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 6,
+          "printedPage": "88",
+          "nativeSection": "Key messages/Discussion/authorship/funding/references; separate next article excluded"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-08-Q09",
+      "description": "Fasting glucose, HbA1c, insulin and weight are biochemical/anthropometric endpoints; hypoglycemic symptoms are patient harms. This three-year report does not report treatment-specific cardiovascular/mortality/retinopathy risk reductions.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 1,
+          "printedPage": "83",
+          "nativeSection": "Title/abstract/introduction and Subjects and methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 5,
+          "printedPage": "87",
+          "nativeSection": "Table IV, hypoglycemia results and Discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 6,
+          "printedPage": "88",
+          "nativeSection": "Key messages/Discussion/authorship/funding/references; separate next article excluded"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-08-Q10",
+      "description": "Three-year numerical values in Results are levels with95%CIs, not paired within-person changes or between-arm CIs. Abstract changes and Figure3 change estimates use different summaries; no unprinted CI or formal equivalence margin inferred.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 1,
+          "printedPage": "83",
+          "nativeSection": "Title/abstract/introduction and Subjects and methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 3,
+          "printedPage": "85",
+          "nativeSection": "Statistical methods/results/compliance and Figures1-2"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 4,
+          "printedPage": "86",
+          "nativeSection": "Compliance/response to treatment, Tables II-III and Figure3"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-08-Q11",
+      "description": "Metformin obese fasting glucose7.7[7.5,8.0] versus obese diet9.6[9.0,10.2]mmol/l; HbA1c7.1[6.9,7.3] versus7.8[7.6,8.0]percent. These are matched obese-stratum levels, not comparison with overall diet9.0 or7.6.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 3,
+          "printedPage": "85",
+          "nativeSection": "Statistical methods/results/compliance and Figures1-2"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-08-Q12",
+      "description": "Obese metformin weight87.4[85.3,89.5] versus diet86.2[84.4,88.0]kg was not significantly different. No weight-gain statement must be scoped to comparative/change analysis, not claim identical absolute weights or weight loss.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 3,
+          "printedPage": "85",
+          "nativeSection": "Statistical methods/results/compliance and Figures1-2"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 4,
+          "printedPage": "86",
+          "nativeSection": "Compliance/response to treatment, Tables II-III and Figure3"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-08-Q13",
+      "description": "Fasting insulin is measured by radioimmunoassay with100% proinsulin cross-reactivity; geometric means in Results/figure versus mean wording in abstract should not be silently equated. GLUT1 explanation is cited speculation, not measured transporter mechanism.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 2,
+          "printedPage": "84",
+          "nativeSection": "Run-in/randomization/treatment/assessment/statistical methods and Table I"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 3,
+          "printedPage": "85",
+          "nativeSection": "Statistical methods/results/compliance and Figures1-2"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 5,
+          "printedPage": "87",
+          "nativeSection": "Table IV, hypoglycemia results and Discussion"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-08-Q14",
+      "description": "TableII diet all489(74)+188(26)=677 differs from labeled dietN664. Obese diet214+90=304 differs from TableI291. Literal printed rows retained without silent correction or coherent total claimed.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 2,
+          "printedPage": "84",
+          "nativeSection": "Run-in/randomization/treatment/assessment/statistical methods and Table I"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 4,
+          "printedPage": "86",
+          "nativeSection": "Compliance/response to treatment, Tables II-III and Figure3"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-08-Q15",
+      "description": "TableIII obese diet12+49+147+90=298 differs from TableI291; non-obese diet10+80+184+98=372 differs from373. Other per-row denominators vary; preserve literal printed counts/percents and measurement/rounding uncertainty, not impute missingness.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 2,
+          "printedPage": "84",
+          "nativeSection": "Run-in/randomization/treatment/assessment/statistical methods and Table I"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 4,
+          "printedPage": "86",
+          "nativeSection": "Compliance/response to treatment, Tables II-III and Figure3"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-08-Q16",
+      "description": "TableII metformin207(79)allocated monotherapy,25(10)additional therapy,30(11)not allocated monotherapy sum262; body232(88) includes additional glibenclamide. Thirty combines refusal/intolerance, not30 adjudicated adverse-event withdrawals.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 4,
+          "printedPage": "86",
+          "nativeSection": "Compliance/response to treatment, Tables II-III and Figure3"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-08-Q17",
+      "description": "TableIII metformin29(11),85(32),93(36),55(21) sums262 across<6.0,6.0-7.7,7.8-14.9mmol/l and not on randomized treatment. This is not29/207 as a newly reported percentage; table percentages printed against allocated row convention.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 4,
+          "printedPage": "86",
+          "nativeSection": "Compliance/response to treatment, Tables II-III and Figure3"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-08-Q18",
+      "description": "TableIV reports people with >=1 episode each year among continued monotherapy, not total episode counts or three-year unique persons. Annual exact denominators are not tabulated; do not substitute262 metformin or all randomizedN or sum annual persons.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 5,
+          "printedPage": "87",
+          "nativeSection": "Table IV, hypoglycemia results and Discussion"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-08-Q19",
+      "description": "Metformin TableIV any hypoglycemia16(8.2),11(5.7),8(4.1)percent byyear; major1(0.5)eachyear. Mean6.3%any/0.5%major is average annual reported percentage, not cumulative three-year risk or zero hypoglycemia.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 5,
+          "printedPage": "87",
+          "nativeSection": "Table IV, hypoglycemia results and Discussion"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-08-Q20",
+      "description": "Hypoglycemia assessed by three-month symptom inquiry, highest severity per period; minor self-treated, major required third-party/medical help and centrally audited. No continuous glucose monitoring/asymptomatic capture or event-specific adjudicated causal attribution.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 2,
+          "printedPage": "84",
+          "nativeSection": "Run-in/randomization/treatment/assessment/statistical methods and Table I"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 5,
+          "printedPage": "87",
+          "nativeSection": "Table IV, hypoglycemia results and Discussion"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-08-Q21",
+      "description": "Bonferroni adjustment is explicitly stated, but comparison family/count and full analysis plan remain unresolved. Mann-Whitney/t/chi-square methods do not establish every hierarchy/prespecified analysis or no selective reporting.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 2,
+          "printedPage": "84",
+          "nativeSection": "Run-in/randomization/treatment/assessment/statistical methods and Table I"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 3,
+          "printedPage": "85",
+          "nativeSection": "Statistical methods/results/compliance and Figures1-2"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-08-Q22",
+      "description": "Funding includes public,charitable and commercial grants; no explicit competing-interest declaration or sponsor-role/donated-product detail identified in UKPDS article. Do not borrow authors/disclosures from the unrelated article below onphysical6 or equate no declaration with no conflicts.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 6,
+          "printedPage": "88",
+          "nativeSection": "Key messages/Discussion/authorship/funding/references; separate next article excluded"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-08-Q23",
+      "description": "UKPDS13 is one report of the UKPDS program; later Holman2008 and Adler2024 targets are separate report identities in shared family, exact participant overlap not adjudicated. Source-cited earlier UKPDS design/biochemistry reports not independently read here.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 1,
+          "printedPage": "83",
+          "nativeSection": "Title/abstract/introduction and Subjects and methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 6,
+          "printedPage": "88",
+          "nativeSection": "Key messages/Discussion/authorship/funding/references; separate next article excluded"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-08-Q24",
+      "description": "Diet run-in mean changes and blood-pressure prevalence changes occurred before randomization without concurrent comparison; not randomized metformin effects. GLUT1 mechanism and historical UGDP tolbutamide/phenformin cardiovascular caution are cited context, not own metformin mechanisms/events.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 3,
+          "printedPage": "85",
+          "nativeSection": "Statistical methods/results/compliance and Figures1-2"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 5,
+          "printedPage": "87",
+          "nativeSection": "Table IV, hypoglycemia results and Discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 6,
+          "printedPage": "88",
+          "nativeSection": "Key messages/Discussion/authorship/funding/references; separate next article excluded"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-08-Q25",
+      "description": "DOI absent from supplied index/title page remainsnull. Current corrections/retractions, protocol, separate supplements/raw data and external replication/integrity searches not performed under closed source plan. No scientific/human/grade/release upgrade.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 1,
+          "printedPage": "83",
+          "nativeSection": "Title/abstract/introduction and Subjects and methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 6,
+          "printedPage": "88",
+          "nativeSection": "Key messages/Discussion/authorship/funding/references; separate next article excluded"
+        }
+      ]
+    }
+  ],
+  "overlapRecords": [
+    {
+      "reportId": "REED-b66200fc5d5a9beb5a46",
+      "family": "UKPDS",
+      "sourceCitedEarlierReports": [
+        "UKPDS VIII1991 study design reference6",
+        "UKPDS II1985 reference8",
+        "UKPDS XI1994 biochemical risk reference13"
+      ],
+      "laterPhase3Targets": "Holman2008 PMID18784090 and Adler2024 PMID38772405 are distinct reports in shared program; content not read here",
+      "participantOverlap": "not adjudicated against later/other reports; no summed report Ns or transferred acceptance",
+      "newIndependentTrialCount": 0,
+      "newIndependentPatientCount": 0,
+      "locators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 1,
+          "printedPage": "83",
+          "nativeSection": "Title/abstract/introduction and Subjects and methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+          "physicalPage": 6,
+          "printedPage": "88",
+          "nativeSection": "Key messages/Discussion/authorship/funding/references; separate next article excluded"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "All6 physical pages read and visually inspected. UKPDS13 occupies printed83-88; physical6 below the horizontal article boundary begins an unrelated infant-feeding article, excluded from UKPDS evidence and disclosures.",
+    "6147 referred,1675 excluded,397 additional run-in withdrawals,4075 remaining,560 symptomatic/high-glucose and746 diet responders not in this randomization,2769 randomized,249 lost or died,2520 reported. Do not call2520 the complete randomized denominator; per-arm249 loss/death breakdown not supplied.",
+    "Reported2520 comprise1264 non-obese and1256 obese; metformin262 occurs only in obese stratum. TableI allocation counts describe reported cohort; not all2769 randomized arm counts.",
+    "Obesity stratification text uses >=120% ideal body weight while TableI footnote uses >120%; preserve this boundary discrepancy, not a BMI30 criterion or repair from memory.",
+    "All groups receive dietary advice. Diet arm can receive secondary drug randomization for symptoms or fasting glucose>=15mmol/l; drug arms can add drugs or change to insulin. Assigned-treatment analyses are not pure monotherapy exposure.",
+    "Metformin starts850mg once daily with weekly increases up to850mg three times daily or maximum tolerated, with glibenclamide rescue then insulin if needed. Historical study regimen is not current dosing advice or verified current labeling.",
+    "Authors state intention-to-treat unless otherwise stated, but249 randomized subjects are not included in2520 report. Figure3 separately compares continued-monotherapy and allocated-treatment analyses; neither is all2769 full ITT by assertion.",
+    "Randomization stratum/proportions reported, but sequence generation/concealment and blinding methods are not stated. No protocol/registration/analysis plan was acquired or read.",
+    "Fasting glucose, HbA1c, insulin and weight are biochemical/anthropometric endpoints; hypoglycemic symptoms are patient harms. This three-year report does not report treatment-specific cardiovascular/mortality/retinopathy risk reductions.",
+    "Three-year numerical values in Results are levels with95%CIs, not paired within-person changes or between-arm CIs. Abstract changes and Figure3 change estimates use different summaries; no unprinted CI or formal equivalence margin inferred.",
+    "Metformin obese fasting glucose7.7[7.5,8.0] versus obese diet9.6[9.0,10.2]mmol/l; HbA1c7.1[6.9,7.3] versus7.8[7.6,8.0]percent. These are matched obese-stratum levels, not comparison with overall diet9.0 or7.6.",
+    "Obese metformin weight87.4[85.3,89.5] versus diet86.2[84.4,88.0]kg was not significantly different. No weight-gain statement must be scoped to comparative/change analysis, not claim identical absolute weights or weight loss.",
+    "Fasting insulin is measured by radioimmunoassay with100% proinsulin cross-reactivity; geometric means in Results/figure versus mean wording in abstract should not be silently equated. GLUT1 explanation is cited speculation, not measured transporter mechanism.",
+    "TableII diet all489(74)+188(26)=677 differs from labeled dietN664. Obese diet214+90=304 differs from TableI291. Literal printed rows retained without silent correction or coherent total claimed.",
+    "TableIII obese diet12+49+147+90=298 differs from TableI291; non-obese diet10+80+184+98=372 differs from373. Other per-row denominators vary; preserve literal printed counts/percents and measurement/rounding uncertainty, not impute missingness.",
+    "TableII metformin207(79)allocated monotherapy,25(10)additional therapy,30(11)not allocated monotherapy sum262; body232(88) includes additional glibenclamide. Thirty combines refusal/intolerance, not30 adjudicated adverse-event withdrawals.",
+    "TableIII metformin29(11),85(32),93(36),55(21) sums262 across<6.0,6.0-7.7,7.8-14.9mmol/l and not on randomized treatment. This is not29/207 as a newly reported percentage; table percentages printed against allocated row convention.",
+    "TableIV reports people with >=1 episode each year among continued monotherapy, not total episode counts or three-year unique persons. Annual exact denominators are not tabulated; do not substitute262 metformin or all randomizedN or sum annual persons.",
+    "Metformin TableIV any hypoglycemia16(8.2),11(5.7),8(4.1)percent byyear; major1(0.5)eachyear. Mean6.3%any/0.5%major is average annual reported percentage, not cumulative three-year risk or zero hypoglycemia.",
+    "Hypoglycemia assessed by three-month symptom inquiry, highest severity per period; minor self-treated, major required third-party/medical help and centrally audited. No continuous glucose monitoring/asymptomatic capture or event-specific adjudicated causal attribution.",
+    "Bonferroni adjustment is explicitly stated, but comparison family/count and full analysis plan remain unresolved. Mann-Whitney/t/chi-square methods do not establish every hierarchy/prespecified analysis or no selective reporting.",
+    "Funding includes public,charitable and commercial grants; no explicit competing-interest declaration or sponsor-role/donated-product detail identified in UKPDS article. Do not borrow authors/disclosures from the unrelated article below onphysical6 or equate no declaration with no conflicts.",
+    "UKPDS13 is one report of the UKPDS program; later Holman2008 and Adler2024 targets are separate report identities in shared family, exact participant overlap not adjudicated. Source-cited earlier UKPDS design/biochemistry reports not independently read here.",
+    "Diet run-in mean changes and blood-pressure prevalence changes occurred before randomization without concurrent comparison; not randomized metformin effects. GLUT1 mechanism and historical UGDP tolbutamide/phenformin cardiovascular caution are cited context, not own metformin mechanisms/events.",
+    "DOI absent from supplied index/title page remainsnull. Current corrections/retractions, protocol, separate supplements/raw data and external replication/integrity searches not performed under closed source plan. No scientific/human/grade/release upgrade."
+  ],
+  "newIndependentTrials": 0,
+  "newIndependentPatients": 0,
+  "scientificAcceptance": false,
+  "humanApproval": false,
+  "released": false
+}
