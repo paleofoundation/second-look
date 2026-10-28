@@ -1,0 +1,7 @@
+# Guide-library preload repair
+
+The existing build emitted an RSC preload for a CSS-only JavaScript chunk removed from client output. The original asset-closure check rejected that exact missing guide-library chunk. Moving the unchanged guide-library CSS to the root global stylesheet imports removes the dangling preload; no component logic, markup, auth, account, billing or evidence changes.
+
+PASS: governance, TypeScript, production build, all37 unique RSC JavaScript/CSS dependency files, public boundary, and41 actual HTTP200 requests (four public pages plus all37 dependencies). Mobile itraconazole at390x844 has no document overflow or broken images; citation14 opens its source disclosure. The stale preload is absent. Bounded browser warning/error records are empty and the owned server log records no404/500/503. Anonymous library401 remains the expected protected API response. React review confirms imports only; no hook/prop/type/JSX changes. Reference root stylesheets consulted read-only in Microbiome Medicine and PepsAnon.
+
+The prior version50 build/11HTTP samples and bounded browser-console result remain historical facts; its later server-log404 observation is the limitation motivating this repair. Version50 native publication receipt is preserved here. All source scientific gates, current icon assets and data records are preserved. Check built assets with `node scripts/check-built-asset-closure.mjs` after production builds.

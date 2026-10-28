@@ -4,6 +4,7 @@ import "@/components/shared-theme/theme.css";
 import "@/components/shared-theme/reading-modules.css";
 import "@/styles/second-look.css";
 import "@/components/shared-theme/guide-library.css";
+import "@/styles/guide-library.css";
 import "@/styles/reader-profile.css";
 import "@/components/shared-theme/article-reading.css";
 import "@/components/shared-theme/article-sharing.css";
