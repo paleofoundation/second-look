@@ -89,3 +89,15 @@ Implementation is complete locally. Asset structure/dimensions, small-size and p
 
 
 Verification before publication — October 27, 2026: all generated SVGs parse; ICO contains exact 16/32/48-pixel entries; the favicon uses blue `#1736F5` on pale blue `#EFF2FF`; native 16/32/48-pixel exports, the 512-pixel icon and social artwork were visually inspected. The social symbol was reframed to preserve the complete outer marks. Governance passes in both canonical and isolated source; full TypeScript passes in the isolated published-source checkout. Production build and 36 built public-client boundary scans pass. Local homepage HTTP returns 200. Browser at 1280 pixels confirms the enclosing symbol in the shared header, homepage map and footer assets, all brand images loaded, current icon URLs, no horizontal overflow and no captured console errors/warnings. Mobile viewport was not separately tested for this asset-only change. Publication receipt follows in `REMAPRX-ENCLOSING-IDENTITY-DEPLOYMENT.json` after native deployment success.
+
+
+### Touching capital R and lowercase x — October 27, 2026
+
+Source: owner's follow-up: “The R and x should be touching. Capital R, lowercase x” and the lettering takes up too much space within the circle. This supersedes version 47's separated lettering and its `.84` glyph scale. Preserve the enclosing rings, mapping details and blue/light-blue icon palette.
+
+Keep the capital R path; reduce the x to 56% of the R's cap height, align their baseline and join the x to the R's leg with genuine overlapping ink. The x path uses `translate(23.438 79.608) scale(.786)` inside the lettering group. The complete group uses `translate(154.93928 97.6) scale(.74)`: combined bounds x=187.49928–412.50072 and y=207.12–372.88, centered at (300, 290). Combined width is 225 units, about 27% narrower than version 47; cap height is about 12% smaller. Inner ring radius remains 200. Regenerate symbols, wordmarks, favicon, touch/website icons and social artwork; refresh icon metadata to `remaprx-enclosing-rx-2`.
+
+Status: implemented locally; rendering, native icon sizes, connected-letter geometry, governance, production build and public-payload boundary checks precede publication. The earlier enclosing identity was published as Sites version 47, source `7402ad87a0f9f63291fe15bb4074871724eb404d`, deployment `appgdep_6ae0c299ea908191a9730d340847020b`. This correction changes identity geometry only; no reader content, navigation, evidence, access or audience changes.
+
+
+Touching-Rx verification before publication: generated SVGs parse, and an alpha-mask connected-component check of the isolated lettering confirms one connected ink shape. The 512-pixel icon and actual 16/32/48-pixel icon exports were visually inspected. Governance, full TypeScript, production build and 36 built-client boundary checks pass in the isolated source checkout. The enclosing ring/arrow/crosshair paths and blue/light-blue colors are unchanged. No additional local homepage server was needed for this SVG geometry correction; hosted publication/live asset verification remain pending at this checkpoint.

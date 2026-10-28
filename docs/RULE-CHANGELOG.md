@@ -336,3 +336,10 @@ Source: owner request, “please put citation brackets back. Mistake.” Scope: 
 Source: owner's request with Photo 1.jpg to make the circle surround both R and smaller x and produce a new RemapRx website icon in blue/light blue. Scope: shared symbol/wordmarks, homepage mark, favicon, touch/website icons and default social artwork. Supersedes the x-centered circle and earlier favicon right-offset/15%-reduction geometry; replaces the website icon's yellow background with pale blue. Contract: `docs/REMAPRX-IDENTITY.md`, Enclose the complete Rx.
 
 Implementation: editable enclosing-Rx SVG and reproducible brand generator; preserved glyph paths and target details, centered combined lettering, generated matching 192/512-pixel icons and refreshed icon URL versions. Prior concepts/history and concurrent canonical work remain preserved. Local asset/render, governance, TypeScript, production-build and reader-boundary validation plus publication status are recorded in the identity contract and the exact release receipt. At adoption, verification/publication are pending. No scientific content, release approval, access or audience changes; no upstream synchronization is claimed.
+
+
+## 2026-10-27 — Touching capital R and lowercase x
+
+Source: owner's explicit correction that R and x must touch, with a capital R/lowercase x and less lettering inside the circle. Scope: shared RemapRx identity and all generated icon/wordmark variants. Supersedes version 47's separated letters and oversized group. Contract: `REMAPRX-IDENTITY.md`, Touching capital R and lowercase x.
+
+Implementation: smaller lowercase x sharing the capital R's baseline, overlapping ink at their junction, and a centered group about 27% narrower/12% shorter. Circle geometry, mapping detail and icon palette remain unchanged; browser icon metadata is refreshed. Verification and publication are pending at adoption and will be recorded in the identity contract/receipt. No unrelated research, access or audience changes.
