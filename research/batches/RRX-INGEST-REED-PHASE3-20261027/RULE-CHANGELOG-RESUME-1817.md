@@ -1,0 +1,3 @@
+# Batch resume rule changelog addendum
+
+Source: ELON18:17 bridge ruling. Scope: unchanged original INGEST3 branch/base/originalancestry and24target closed-source batch. Supersedes17:50 pause only after posting read-only PR10 assertion result. Comparison result and held one-line fixture proposal were posted first. Requirements, boundaries and pending exact audits: PLAN-RESUME-1817.md. Implemented: serial source continuation resumed; no PR10/fixture/Sites actions. Verification and scientific/human/release states remain exact-version gated. Existing batch RULE-CHANGELOG.md and all committed checkpoint bytes remain frozen.

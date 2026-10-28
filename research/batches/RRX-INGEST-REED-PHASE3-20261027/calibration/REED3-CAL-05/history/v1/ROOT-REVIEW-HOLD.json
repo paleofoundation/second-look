@@ -1,0 +1,29 @@
+{
+  "at": "2026-10-27T19:20:10.263611+02:00",
+  "decision": "HOLD_EXACT_CAL05_V1_CORRECTION_BEFORE_RECEIPT",
+  "candidateSha256": "bd4c7a395cd71ca5a5b447d77091ce913ba9a215d8bd8e66ee401c64ebae5ac1",
+  "manifestSha256": "94965deb63ffb9469644f81a6b604d8937a9996d25b75992589aeee0566dcf12",
+  "allTenDependenciesFreshMatch": true,
+  "notesSha256": "d1ad41d2bbd6ab2fe64ce69aa94f9b1adf809df5b4aa53b0fbc9b1ebcb9e5bb5",
+  "numericAndModelReview": "All nine estimates compared against independently read original; doses/printedflowpercentages/N/nulls/species boundaries match. Q06 narrative result estimate+locator mirrors exact. No substantive numeric correction found.",
+  "corrections": [
+    {
+      "field": "Q05.instrument",
+      "problem": "LC/MS analytical platform is asserted answered, but no LC/MS, mass spectrometry or exact omics instrument is identified in supplied main PDF. Separate methods/supplements unread.",
+      "required": "Remove unsupported LC/MS from answered value; retain metabolic pool/glucose labeling endpoints and mark exact platform not checked/not reported in stated scope; preserve V1 and update only dependent mirrors."
+    },
+    {
+      "field": "direct locator coverage",
+      "requiredAdditions": {
+        "resultO02_and_qualificationQ05": "physical5 printed2751 for minor sub-G1/cytostatic main-body description",
+        "qualificationQ13": "physical10 printed2756 for OXPHOS-inhibitor FDG increase reporting",
+        "qualificationQ21": "physical11 printed2757 for termination after last control euthanasia",
+        "qualificationQ22": "physical3 printed2749 for normal heart/muscle/adipose HK2 exception"
+      },
+      "problem": "Existing references omit the exact source page of parts of these bundled statements."
+    }
+  ],
+  "scientificAcceptance": false,
+  "humanApproval": false,
+  "released": false
+}

@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "remaprx-reed-phase3-v1",
+  "targetIdPattern": "REED3-CAL-NN",
+  "sourcePacketRequired": [
+    "PLAN.json",
+    "SCHEMA.json",
+    "READINESS.json",
+    "PRIOR-RECONCILIATION.json",
+    "SOURCE-CANDIDATE.json",
+    "review-inputs.jsonl",
+    "SOURCE-QUALIFICATIONS.json",
+    "DOWNSTREAM-MAPPING.json",
+    "VISUAL-RECEIPT.json",
+    "AUDIT-MANIFEST.json",
+    "verify_source.py",
+    "VALIDATION.json",
+    "INDEPENDENT-SOURCE-AUDIT.json",
+    "ACCEPTANCE-UPDATE.json",
+    "HANDOFF.md",
+    "OVERLAP-RECONCILIATION.json"
+  ],
+  "sourceCandidateRequired": [
+    "schemaVersion",
+    "paper",
+    "source",
+    "inspection",
+    "study",
+    "results",
+    "claims",
+    "reviewInputs",
+    "limitations",
+    "scientificAcceptance",
+    "humanApproval",
+    "released"
+  ],
+  "pinnedReviewInventory": "rules/one-match-rule/references/research-reviews/review-questions-and-inputs.json",
+  "narrativeQuestionsPerReport": 15,
+  "typedFieldsPerReport": 67,
+  "sourceIntegrity": "ExactPDFsha256/index/physical-native locators;schema/planGP and root audit hash current dependencies;allpages/materialvisuals before candidate.",
+  "relationships": "Source result IDs -> exact claims -> private unapplied drug/condition/purpose mapping. Reuse old outcome IDs where same exact finding; newer report not same trial by title alone. No canonical mutation.",
+  "gates": {
+    "acceptedSupport": false,
+    "newGrades": 0,
+    "fullScientificReviewsAccepted": 0,
+    "fullFieldMapIndependentAcceptance": false,
+    "scientificAcceptance": false,
+    "humanApproval": false,
+    "released": false,
+    "batchScale20or30Approved": false
+  }
+}
