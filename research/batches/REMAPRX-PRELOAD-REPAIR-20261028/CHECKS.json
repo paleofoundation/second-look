@@ -1,0 +1,45 @@
+[
+  {
+    "name": "governance",
+    "command": [
+      "node",
+      "scripts/check-governance.mjs"
+    ],
+    "exitCode": 0
+  },
+  {
+    "name": "typescript",
+    "command": [
+      "node",
+      "node_modules/typescript/bin/tsc",
+      "--noEmit",
+      "--incremental",
+      "false"
+    ],
+    "exitCode": 0
+  },
+  {
+    "name": "build",
+    "command": [
+      "node",
+      "/Users/kmfp/.codex/plugins/cache/openai-curated-remote/sites/1.1.2/scripts/build-site.mjs"
+    ],
+    "exitCode": 0
+  },
+  {
+    "name": "asset-closure",
+    "command": [
+      "node",
+      "scripts/check-built-asset-closure.mjs"
+    ],
+    "exitCode": 0
+  },
+  {
+    "name": "public-boundary",
+    "command": [
+      "node",
+      "scripts/verify-reader-boundary.mjs"
+    ],
+    "exitCode": 0
+  }
+]

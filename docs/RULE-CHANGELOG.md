@@ -1,5 +1,9 @@
 # Second Look rule changelog
 
+## October 28, 2026 - guide-library asset preload repair
+
+During the owner-authorized publication follow-up, the preview request log exposed the preexisting missing CSS-only JavaScript preload `guide-library-CCVnavNE.js` despite an empty bounded browser-console result. Move the unchanged shared guide-library stylesheet from its two client import sites to the existing global root-layout stylesheet list. No account, billing, scientific, protected-content or navigation behavior changes. Verify the production RSC asset manifest against emitted assets and rendered article/citation behavior before publication; receipts follow in `research/batches/REMAPRX-PRELOAD-REPAIR-20261028/`.
+
 ## 2026-10-28 — checked ready-work publication and research resume
 
 Source: direct owner instruction to merge, deploy and publish if ready and begin the next work. Scope: merged PR10 prose, PR12 private checkpoint and a current-main-plus-version49-identity release. Supersedes the temporary usage pause and draft-only publication restriction for this release; preserves every source-review/scientific, access, protected-content and indexing gate. Contracts: `PROJECT-RULES.md`, `RELEASE-20261028.md` and the phase-three resume addenda. Implementation preserves current main outside the exact approved identity delta and retains all sealed research records. Actual build/runtime/publication validation is recorded in `research/batches/REMAPRX-RELEASE-20261028/`; not implied complete at adoption. No reusable One Match Rule change or upstream synchronization is claimed.

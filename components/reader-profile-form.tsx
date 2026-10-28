@@ -4,7 +4,6 @@ import { READER_ROLES, type ReaderRole, type ProfileView } from '@/lib/account-c
 import { readerSignInPath, safeRelativeReturnPath } from '@/lib/account-paths';
 import { topicGuideMappings } from '@/lib/topic-guides';
 import '@/styles/reader-profile.css';
-import '@/styles/guide-library.css';
 
 export function ReaderProfileForm({ initialProfile, returnTo, mode }: {
   initialProfile: ProfileView | null; returnTo: string; mode: 'intake' | 'settings';

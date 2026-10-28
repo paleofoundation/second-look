@@ -2,7 +2,6 @@
 import {useEffect,useState} from 'react';
 import {Bookmark,Check} from 'lucide-react';
 import {readerSignInPath} from '@/lib/account-paths';
-import '@/styles/guide-library.css';
 export function SaveButton({id,returnTo,label='Save to library',className='button'}:{id:string;returnTo:string;label?:string;className?:string}){
  const[message,setMessage]=useState('');const[busy,setBusy]=useState(false);const[needsSignIn,setNeedsSignIn]=useState(false);const[saved,setSaved]=useState(false);
  useEffect(()=>{let active=true;setSaved(false);setMessage('');setNeedsSignIn(false);fetch('/api/library',{cache:'no-store'}).then(async response=>{if(response.ok){const data=await response.json() as {items?:Saved[]};if(active)setSaved(!!data.items?.some(item=>item.item_id===id));}else if(response.status!==401&&active)setMessage('Your saved status is temporarily unavailable. You can retry saving or open your library.');}).catch(()=>{if(active)setMessage('Your saved status could not load. You can retry saving or open your library.');});return()=>{active=false}},[id]);
