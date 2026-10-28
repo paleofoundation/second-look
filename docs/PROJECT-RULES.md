@@ -2,6 +2,8 @@
 
 ## October 28 ready-work merge, publication and resume
 
+The owner subsequently approved ongoing CAL07/CAL08 audit updates, including private source paths, hashes and research corrections, to the same existing coordinator bridge as this work continues. This supersedes the one-message disclosure limit for these audit updates. Preserve their payloads and dispatch/readback receipts; no repeated owner confirmation is required within that approved scope. Other recipients, unrelated outbound communications and scientific acceptance remain separately governed.
+
 Owner follow-up on October 28 explicitly authorizes sending the prepared private CAL07 source-audit handoff, including source paths, hashes and research details, to the existing coordinator bridge and continuing the next work. The handoff was posted and read back; see `COORDINATOR-HANDOFF-20261028.json` in the phase-three packet. This is project audit coordination, not broader outbound messaging or scientific acceptance.
 
 The owner's direct October 28 instruction authorizes merging technically ready work, deploying/publishing its checked build and beginning the next research work. For this release, preserve authoritative current main plus the latest approved version49 identity; see `RELEASE-20261028.md`. This supersedes the earlier operational draft-only/usage-pause/publication hold within this bounded scope. It does not authorize new scientific grades, clinical claims, public raw files, protected-content changes, access/indexing changes or acceptance of unfinished research. CAL07 and later packets still require their prospective plans and independent exact source/dependency audits before delivery. Historical sealed pause/checkpoint records remain unchanged.
