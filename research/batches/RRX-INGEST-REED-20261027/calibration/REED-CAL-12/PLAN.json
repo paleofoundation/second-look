@@ -1,0 +1,23 @@
+{
+  "id": "REED-CAL-12-v1",
+  "at": "2026-10-27T09:55:29.024281+00:00",
+  "baseCheckpoint": "0f6128aad4bc6a342a3b9f78cbe16606e8cf0d4f",
+  "authority": "Existing08:57Reed closed ingest/adopted24reportserialcalibration, report12 only",
+  "source": {
+    "pmid": "18055977",
+    "doi": "10.3324/haematol.12071",
+    "title": "High dose simvastatin does not reverse resistance to vincristine, adriamycin, and dexamethasone (VAD) in myeloma.",
+    "ref": "$REMAPRX_REED_ROOT/simvastatin-myeloma/pdfs/18055977-van-2007.pdf",
+    "sha256": "72f2ec71cca076b26d20a07c86f5f81842b4e434c76ad5fa1a5943e03c33e0a2",
+    "intakeReportId": "REED-369a24cd359f19e60aaf"
+  },
+  "indexSha256": "43d48650072ae6b1c68112c3af03bacd102fb23cbba5993e14e8d9cf12a38363",
+  "scope": "Inspect exact original clinical simvastatin-plus-VAD resistance report. Determine actual study design, exact patient selection/prior resistance, whether comparison is concurrent or historical/within-person, actualsimvastatin regimen/cointerventions/exposure, evaluable/treated N, response definition/time, null/harm findings and safety. No assumption of randomized design, statisticalequivalence, metformin/otherstatin substitution, simvastatin-alone effect or safe high-dose recommendation. Separate cited phaseI/patients from this report.",
+  "sourcePolicy": "Closed suppliedPDF/index only, no external retrieval or repair from abstract/memory. Fulltext read and consequential clinical numeric table/paragraph visually checked before candidate. Missing data/version mismatch holds dependents.",
+  "identity": "Reuse batch exactintake report, preserve any existingcanonical identities; no new appsource/guide objects.",
+  "schema": "SCHEMA.json, primary exactclinical source, pluralarms/patients/analysis and source-located results/claims, pinned15questions/67typedfields and unappliedexistingguide mapping.",
+  "readiness": "ProspectiveGP saved beforefulltext; design/identity mismatchversion before continuation.",
+  "gates": "Independent exactsourceaudit, no fullfield/scientific/human/newgrade/release approval;24calibrationincomplete,no20/30scale.",
+  "ownership": "Same lane1 PR8 ownpacket, noapp/guide/priorcorpus/protectedVitiligo/books/azolechanges/subagents/outbound.",
+  "delivery": "Newimmutablefollowupmanifest normalgitcommit/pushonly;403stop,draftno merge/deploy/publish."
+}

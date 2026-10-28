@@ -1,0 +1,61 @@
+{
+  "finalBuild": "PASS",
+  "typeScript": "PASS",
+  "initialHttpBoundary": "FAILED connection to default unserved5184 in sandbox",
+  "finalLocalHttpBoundary": "PASS http://127.0.0.1:8793",
+  "checks": [
+    {
+      "check": "check-governance",
+      "exitCode": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "content-check",
+      "exitCode": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "check-reader-sections",
+      "exitCode": 1,
+      "status": "FAIL"
+    },
+    {
+      "check": "check-evidence-section",
+      "exitCode": 1,
+      "status": "FAIL"
+    },
+    {
+      "check": "check-evidence-grading",
+      "exitCode": 1,
+      "status": "FAIL"
+    },
+    {
+      "check": "check-evidence-mechanisms",
+      "exitCode": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "check-outcome-summaries",
+      "exitCode": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "check-wiki-links",
+      "exitCode": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "check-page-snapshot",
+      "exitCode": 1,
+      "status": "FAIL"
+    },
+    {
+      "check": "check-guide-http-boundary",
+      "exitCode": 1,
+      "status": "FAIL"
+    }
+  ],
+  "knownFixtureFailure": "check-reader-sections.mjs:304 hardcodes2 pathways; candidate has5 after authorized3 additions. check-evidence-section/evidence-grading/page-snapshot import it and stop there. Repository scripts unchanged. Independent scoped SSR source/reference/ID and91-route invariance pass.",
+  "tableGateB": "FAILED AND REVERTED; not relabeled by later fallback checks",
+  "browser": "Limited fallback390by844 PASS; see exactROOT-BROWSER-CHECKPOINT.json and open chunk404 observation"
+}

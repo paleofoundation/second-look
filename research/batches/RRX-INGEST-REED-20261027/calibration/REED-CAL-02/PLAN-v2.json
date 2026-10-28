@@ -1,0 +1,25 @@
+{
+  "id": "REED-CAL-02-v2",
+  "at": "2026-10-27T08:17:25.958814+00:00",
+  "authority": "08:57Reed ingestion;09:54CONDUCTORscientificcontinuation;one-drugsmallcalibrationwithinadoptedRRX-INGEST-001",
+  "baseCheckpoint": "69367696433b6c4d10d0f231c3b7ea124c4c3df4",
+  "source": {
+    "pmid": "12657672",
+    "doi": "10.1523/JNEUROSCI.23-06-02131.2003",
+    "title": "Cell cycle regulators in the neuronal death pathway of amyotrophic lateral sclerosis caused by mutant superoxide dismutase 1.",
+    "ref": "$REMAPRX_REED_ROOT/minocycline-als/pdfs/12657672-nguyen-2003.pdf",
+    "sha256": "cea4b46f07ee3e5071c4dfbe8be6ae736ad15323a23e0c97d2177e59498458f3",
+    "physicalPages": 10,
+    "intakeReportId": "REED-618da4d10f079b8656c2"
+  },
+  "priorWork": "No existing canonical/recovered report/result references matched in intake. Supplier full-text label and receipt are not prior accepted scientific extraction.",
+  "scope": "Preclinical SOD1 G37R mouse/tissue study of cell-cycle signaling; minocycline is a pharmacological tool, with NF-H transgenic comparisons as separate mechanistic context. Read all10physicalpages; extract only directly source-located minocycline comparisons, design/animal and assay denominators, tested versus inferred steps and translation limits. No human feasibility, clinical benefit/safety or human dose inference.",
+  "sourcePolicy": "Closed exact suppliedPDF; no externallookup. Preserve animal/tissue/assay/image counts separately, treat repeated experiments independently only as reported, and never convert dietary1g/kg concentration to body-weight or human dosing. RawPDF/text/rendersprivate. Visualinspectmaterialfigures before extraction.",
+  "schema": "SCHEMA.json,withpluralexperimentsandstablelocalpaper/source/result/claim/reviewIDs.",
+  "grade": "No newHigh/Moderate/LoworA-Fassessments;sourcecandidateonlypendingindependentauditandscientific/humanreleasegates.",
+  "audit": "Nominateexactsource/candidate/hash/locatorsforCONDUCTORindependentsourceaudit. No self-approval. SourceCAL01auditdoesnottransfer.",
+  "preservation": "OnlyownRRX-INGESTpacket;noapp/guide/oldcorpus/PR4-7changes. Vitiligo/books/azolemechanismsheld. SameexistingdraftPR8,serialsourceboundordinarycommits,notnewrunner.",
+  "scale": "Secondreportofsmallcalibration,not24calibrationcompletionor286sciencecomplete. Noautomatic20/30reportbatchscale.",
+  "priorScopeDefect": "Initial scope incorrectly assumed human feasibility despite the supplied title/design. First4pages were parsed during identity/scope reconciliation; no scientific candidate or acceptance produced. Initial PLAN/READINESS preserved, held and superseded prospectively before further reading/extraction. Reread under corrected scope; no backdated readiness.",
+  "recordSchema": "SCHEMA-v2.json: onepaper, preclinicalexperiment/assays/arms with per-figuredenominators and missingness. Separate minocycline evidence from NF-H intervention and cited human/animal background."
+}

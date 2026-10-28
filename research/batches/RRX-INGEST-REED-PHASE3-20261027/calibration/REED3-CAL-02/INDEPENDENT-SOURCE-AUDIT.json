@@ -1,0 +1,128 @@
+{
+  "at": "2026-10-27T17:18:50.065754+02:00",
+  "result": "PASS_BOUNDED_EXACT6_CLAIM_GROUPS_WITH19_QUALIFICATIONS_V3",
+  "candidateSha256": "f45a4f878d57d29af6d515585981794ac7bf6911d38385aa1f677cfed8408649",
+  "sourceSha256FreshMatched": "100aab667b4cd503f31127cf9ef885b75fae0795f004560d17765a7e29bdc64e",
+  "indexSha256FreshMatched": "d83ebf60721047ff29d2e9a111899798a5dc88eda835f10b71d8ca96bc196102",
+  "auditManifestSha256": "ffdba2d5f52b1a5e5a6d37bf5a36a7476a1a2924aefd2bfaf3cd55952b550177",
+  "exactAuditedDependencies": {
+    "SOURCE-CANDIDATE.json": "f45a4f878d57d29af6d515585981794ac7bf6911d38385aa1f677cfed8408649",
+    "review-inputs.jsonl": "b9d1f2e2ecca3759fcb87292315b719181f2362203008e027877097c242edc75",
+    "PLAN.json": "ede62680f2876ac1cb44f1969201c836f481eee2d8848d4ecbbff26a3f0a0ed7",
+    "SCHEMA.json": "620a2829034d84e2ecfbe51703e3b2f82a7559f63b79d1a768043aa22e386e7e",
+    "READINESS.json": "e59bc88881786d7f350f2d5a6a6d20992a6b3fa486836d4ec7fba90804bdf8b7",
+    "DOWNSTREAM-MAPPING.json": "c0d08604e694620c26ec04be5ae70346aacf9ac4987ac2500e047012877ce1b0",
+    "VISUAL-RECEIPT.json": "94691bba203a1871c8c47c6dff05fef809b0baf6740bd8062ade57c19ef02984",
+    "SOURCE-QUALIFICATIONS.json": "5e86b3f64e06ad9fed6e03fbf440f00fab9a419342c1d2efda949956c1d4816d",
+    "PRIOR-RECONCILIATION.json": "41ffa5078485c19d379118e1250e65a8abe0dfb70c316768619d0560cf1eb588",
+    "OVERLAP-RECONCILIATION.json": "3f73e80344da665299ef846dfaaa00c3918991cd035e876ffb30faea25b9570c"
+  },
+  "prospectivePlanReadBeforeOriginal": true,
+  "independentRootRead": {
+    "physicalPagesText": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "materialVisuals": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "rootFreshTextSha256": "61db2a500131745bc8ac0b319161b46095103db8ef6ff0955fe679dfbf759733",
+    "scope": "All14 text pages/Figures1\u20136, exact six result/claim groups and19qualifications; typed-map structural/locator/source-boundary checks, not full67-field scientific acceptance."
+  },
+  "checkedResultIds": [
+    "REED3-CAL-02-O01",
+    "REED3-CAL-02-O02",
+    "REED3-CAL-02-O03",
+    "REED3-CAL-02-O04",
+    "REED3-CAL-02-O05",
+    "REED3-CAL-02-O06"
+  ],
+  "checkedClaimIds": [
+    "REED3-CAL-02-C01",
+    "REED3-CAL-02-C02",
+    "REED3-CAL-02-C03",
+    "REED3-CAL-02-C04",
+    "REED3-CAL-02-C05",
+    "REED3-CAL-02-C06"
+  ],
+  "checkedQualificationIds": [
+    "REED3-CAL-02-MODELS_N",
+    "REED3-CAL-02-HPA_IL6",
+    "REED3-CAL-02-POLARIZATION",
+    "REED3-CAL-02-CONTACT",
+    "REED3-CAL-02-LATE_APOPTOSIS",
+    "REED3-CAL-02-CYTOKINE_NULLS",
+    "REED3-CAL-02-MET_DOSE_CD126",
+    "REED3-CAL-02-NO_IL6_RESCUE",
+    "REED3-CAL-02-CAR_MACROPHAGE",
+    "REED3-CAL-02-PBMC_NULL",
+    "REED3-CAL-02-MET_CAR_SCHEDULE",
+    "REED3-CAL-02-RAW_LUC_NOT_SYNERGY",
+    "REED3-CAL-02-T_MARKER_NULLS",
+    "REED3-CAL-02-K562_BYSTANDER",
+    "REED3-CAL-02-MEMBRANE_PHAGOCYTOSIS",
+    "REED3-CAL-02-EXPOSURE_SAFETY",
+    "REED3-CAL-02-COMPANIONS_OVERLAP",
+    "REED3-CAL-02-ETHICS_DISCLOSURES",
+    "REED3-CAL-02-STATS_ACCESS"
+  ],
+  "criticalBounds": [
+    "HPA original screenshot reused access29Nov2025; no independent dataset read/newpatients. IL6RPMI1.40fold48h5ng/ml,THP1numbernon-significant;CD163/iNOS8.61fold5ng/ml24h no dose-gradient(10ng/ml7.90fold).",
+    "M1 directco-culture1:1 suppressesRPMIluciferase48h but no comparable M1suppression in indirecttranswell. Representative AnnexinPIlateapoptosis7.33 vs3.26/4.42/4.52 percentages, mean/representative provenance stays distinct; no exclusive causalcontactpathway.",
+    "CXCL10body7196 vs205.3pg/ml co-cultureM1 vsRPMI48h; IL6/IL10 non-significant statedonlyabsentS1G/H. Marker/CXCL10 correlations not cytokine causality.",
+    "Met1mM72h Figure3A/B vs0/1/5mM72h Figure3C/D. CD126MFI reductionassociated withluciferasereduction, no CD126 rescue/necessity. AntiIL6reagent purchase notneutralizationresult.",
+    "CD126CAR-T1:1/1:2 incubated24h aftermacrophage/tumor24h; M0/M2 reduce rawtumorkilling comparedCARalone; M1alreadyreduces baseline. Macrophages themselvesexpressCD126andbecomeCARtargets, M0lateapoptosis8.42fold. PrimaryPBMCtrend expresslynotstatisticallysignificant/supplementunread.",
+    "Figure5tumorpretreatmentMet1/5mM24h thenT24h distinctsimultaneous24h; not CAR-T-alonepreconditioning orrapamycin. Source1.84/38.37fold rawluciferasecomparisons do not isolateincrementalCARbenefit fromMetaloneeffect orformalCI/Blissynergy.",
+    "GranzymeB markerpercentage(not enzymaticactivity) \u2191withMet+tumor, CD25/PD1 contactresponse not durablerepeatedkilling/exhaustionproof;Metalone no significantfunctionalmarkerchange.",
+    "K562CD126negative leukemia control, notMM/healthy safety model. CARalone no killing; macrophageco-cultureassociatedreduction1.50/1.80/1.61fold. BioTrackertransferintoCD11C+macrophagesnotuniquecausalphagocytosis; K562CD126unchanged. CFSE/cytochalasinDphysicalbodyS6B not suppliedfigure; no reconstruction.",
+    "All ownexperimentsinvitro/cellmodel, no animals/newclinicalMMtrial/clinicaleffect/PK. THP1leukemialine/PMApolarizationnotphysiologicprimaryTME; plasticM1/M2continuumandcontextdependentMetpolarization explicit.",
+    "Experimentaltriplicates/repeated3 andcaptionN9/6\u20139/4\u20139/6 notuniquedonorN. Primaryhealthy leukocytecones/MCSF7d macrophages; CAR-Tdonor/lotNnotreported.",
+    "MethodsmeanSEM/unpaired2sidet/tukeyANOVAP<.05 asprinted, no globalmultiplicity/power/independenceextrapolation; no exactgraphmeansdigitization.",
+    "Published16Apr2026originalresearch; CenturionFund/Mayo; conflictabsenceasdeclared. Ethicsstatesestablishedlinesnotrequiringapproval thenprimarydonorIRBMayo approved; no identifier/integritycauseinferred. Supplement/protocol/rawdata/currentintegritynotretrieved.",
+    "V1 grouped growth and late apoptosis under ambiguous48h; V2 separates growth48/contact-transwell48/apoptosisMethods24. V3 adds direct original physical3 to O02 and Q06 support. Figure2C/D caption has no separate time; no fabricated assignment. Both prior versions/dependencies preserved byte-exact."
+  ],
+  "correctionHistory": {
+    "v1": {
+      "candidateSha256": "d3d59868f479e6887006060c8eb0dab46d4f298fafa0bc19c4329cb0b8227f2f",
+      "auditManifestSha256": "292803618bb193a0b5128a875c2a4222dec56f05f71e69e1a2ccb5148bae4fb3"
+    },
+    "v2": {
+      "candidateSha256": "952139f074b00c77a2c5440af76bb6851b3dd2eba3973c8853839c38107066ff",
+      "auditManifestSha256": "a23b755cced1507534eb3c201d394d5d59abeb9002f7d6a2ff63237502d3f655"
+    }
+  },
+  "correctionV2Sha256": "2c8065026ace6b838b773f46c089f8a2401451fdd01c6f97f63a54e53129849e",
+  "correctionV3Sha256": "3be6c17eeee86986f8e7e298a8bf0d0940e9a3234dc8604a1e4c2a15f3730005",
+  "typedStatusCounts": {
+    "answered": 41,
+    "not_checked": 5,
+    "partial": 12,
+    "not_reported": 7,
+    "not_applicable": 2
+  },
+  "full15Q67FieldMapScientificAcceptance": false,
+  "scientificAcceptance": false,
+  "humanApproval": false,
+  "newGrades": 0,
+  "newIndependentTrials": 0,
+  "uniqueNewIndependentPatientCountAdjudicated": false,
+  "released": false,
+  "independentRootConclusion": "ExactV3 supports a private bounded source-fidelity checkpoint only, retaining assay/time/model/source limits and unknown inputs. No CAR-specific synergy, exclusive mechanism, clinical efficacy/safety or full scientific acceptance."
+}

@@ -1,0 +1,65 @@
+{
+  "at": "2026-10-27T11:56:25.882424+02:00",
+  "status": "PASS_BOUNDED_RESULT_AND_CLAIM_SOURCE_FIDELITY_ONLY",
+  "candidate_sha256": "1870cf21fd81638a2952315a029fc6ea51abfd5bae64bf59a4aa6b85037df7c1",
+  "source_sha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+  "audit_manifest_sha256": "3d6c1d8c569869b19958374a8473a07fb340ba37d0e53e065123a5d3b4c02bf3",
+  "bound_files": {
+    "SOURCE-CANDIDATE.json": "1870cf21fd81638a2952315a029fc6ea51abfd5bae64bf59a4aa6b85037df7c1",
+    "review-inputs.jsonl": "4b22519bbb1028235ad5b012505117183dcb66f301bc8ab0e95df923c6c89ec8",
+    "PLAN.json": "0a673e4f712ab65e57b2ba856fb1cc54b3ed8bb6818ac34f283fc147ee2e61c1",
+    "SCHEMA.json": "55159afe5bc144d826ca6ad52eac41f16b04320030331f01ceb548068bb11fd9",
+    "READINESS.json": "00130982630b9aa2f336b8cb0f2a8c6cf91431b705731e93dd98a0dd2414b3f1",
+    "DOWNSTREAM-MAPPING.json": "6d55119faeb54d192ea13e99f9affa956058842cc529c3cf1b734f59f419f178",
+    "VISUAL-RECEIPT.json": "3b83b2edd13dee1af812326471418953a4c4cf5f1f09f615b344dcaae1b25551",
+    "SOURCE-QUALIFICATIONS.json": "ad80e8bb15d52478efce6bf0ef4598f42ef2ededab94d546ed7851310c049129"
+  },
+  "prospective_plan_GP_verified": true,
+  "root_text_pages_read": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    12,
+    13,
+    14,
+    15
+  ],
+  "root_visual_pages_read": [
+    12,
+    15
+  ],
+  "result_ids": [
+    "REED-CAL-11-R01",
+    "REED-CAL-11-R02"
+  ],
+  "claim_ids": [
+    "REED-CAL-11-C01",
+    "REED-CAL-11-C02"
+  ],
+  "checks": [
+    "Exact PMID24282256/DOI10.1158/1940-6207.CAPR-13-0224/source;15physicalpages, no clinical trial reinterpretation",
+    "Table3 all eight category rows acrossHPFS/NHS/combined HRs,95%CIs,cases/personyears visually checked;referenceCI null not0",
+    "Quantity265cases1997506personyears,HPFS72/319474,NHS193/1678032;duration328cases2395458personyears,HPFS132/664264,NHS196/1731194,not pooled analyses or people",
+    "Mainmodel age-month stratified/BMI,combined additionallycohortgender;otheranalgesic-adjustedsecondaryestimates not interchanged with Table3",
+    "Quantity>=5tablet equivalents/week combinedHR.61(.39-.94),Ptrend.06;duration>=11yearHR.63(.41-.95),Ptrend.17;trendnotcategoryP",
+    "HPFS3quantity/6durationexposedcases and widefemaleCIs retained;significance difference not sexinteraction",
+    "Exposurebienniallyupdated cumulativeaverage/continuousduration,4yearlag/carryoneinterval,baseline1996/1990men1984women;not fixedCAL04postdiagnosis exposure",
+    "Figure1NHSJuly2008 versus textJune2008 unresolved;Methodsmedians versus Table3midpoints unresolved",
+    "DurationliteralrowPYsumHPFS664263vsreported664264,NHS1731193vs1731194 preserved, no silent recomputation/HRrepair",
+    "ParentNHS/HPFSfamily overlap with CAL04mortality not adjudicated independent cohorts;incidentdisease differs from mortality/supportivecare",
+    "No indicationcontrol/causalprevention/treatment efficacy/measured mechanism/bleedingsafety/81mg-specificbenefit/dose-frequencyrecommendation/NNT"
+  ],
+  "limitations": [
+    "Bounded checking ofR01/R02/C01/C02 and consequential source context, not full67typed-field independent audit.",
+    "References/supplements/protocol/SAP/integrity/currentexternalrecords not independently retrieved.",
+    "No full scientific/human acceptance/newgrade/release or24reportcompletion."
+  ],
+  "scientificAcceptance": false,
+  "humanApproval": false,
+  "released": false
+}

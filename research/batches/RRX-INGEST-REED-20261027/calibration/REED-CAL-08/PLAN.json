@@ -1,0 +1,24 @@
+{
+  "id": "REED-CAL-08-v1",
+  "at": "2026-10-27T09:10:23.236179+00:00",
+  "baseCheckpoint": "445231a3983dc38278535a94a14027d4a3ec5ccd",
+  "authority": "08:57Reed ingest/CONDUCTORboundedsourcequeue under24reportcalibration; eighthsource only",
+  "source": {
+    "ref": "$REMAPRX_REED_ROOT/aspirin-myeloma/pdfs/28356941-ding-2017.pdf",
+    "sha256": "f5471c1184e334aaa49369770ebbd91561b9d460d60ef2bfb7f03b10eecb280f",
+    "pmid": "28356941",
+    "doi": "10.3892/ol.2016.5472",
+    "title": "Aspirin enhances the cytotoxic activity of bortezomib against myeloma cells via suppression of Bcl-2, survivin and phosphorylation of AKT",
+    "physicalPages": 8,
+    "intakeReportId": "REED-1354849c2860e40bb5e5"
+  },
+  "indexSha256": "5c2a39e2ff03f606086b9a4b05b40b648d58ad1515605a00f533973b3b317a2d",
+  "scope": "Read exact8page in-vitroaspirin/bortezomibmyeloma-cellreport; extract boundeddirectassay/model/exposure/comparator/findings withtestedversusinferredmechanisticsteps andreplicate/precisionlimits. No humanantimyelomaefficacy,doseconversion/safety or clinicalgrade. Noformaldrugsynergyinferenceunlesssourcequantifiesadoptedinteractionmodel;greatercombinationeffectalonenotproofsynergy.",
+  "sourcePolicy": "Closed exactPDF/index,noexternalretrieval/integrity/PKlookup; rawprivate. Visualinspectmaterialassayfigures. Preserveconcentrations/timepoints/cellvsbiologicalreplicates separately; no pixel-extractedbarmeans or assumedN.",
+  "identity": "Reusebatchintake report identity; noexistingcanonicalreferences atintake. NewlocalcandidateIDsnotnewcanonicalapprecords.",
+  "schema": "SCHEMA.json plusallQ01-Q15/67typedfields,pluralassays/model/exposure/result/claimlinks andmissingness,qualitativefindingswhereexacteffectnumbersunreported/unextracted.",
+  "readiness": "Savedprospectiveplan/schema/source/indexGPbeforefulltextreading; materialscopechangeholds/versionreadiness.",
+  "gates": "Independentexactsourceauditneeded; no fullfieldmap/scientific/human/grade/releaseapproval. Report8doesnotcomplete24calibrationorjustify20/30batchscale.",
+  "ownership": "Same lane1/PR8 ownedRRXpacketonly; noapp/guide/oldcorpus/protectedbooks/Vitiligo/azolework,no subagents/newrunner/outbound.",
+  "delivery": "Newordinaryfollowupwithimmutablemanifest preservingpriorbytes; nativepush403stop,draftonly,no merge/deploy/release."
+}

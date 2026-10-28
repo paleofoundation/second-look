@@ -1,0 +1,7 @@
+# PR10 exact granted fixture correction
+
+Elon18:31 grants exact GATEb1f402fd/patch26246568 on base52f09b8. The only tracked codechange is scripts/check-reader-sections.mjs line304: expected2 to5 and label Five itraconazole pathway blocks. All other assertions,data,renderer,sourceobjects and historicalpackets are byte-unchanged. Theapproved PR10candidate adds three explanationblocks to theoriginaltwo; main4ca37b7 passed allfourunchangedchecks whilepremergePR1082189fb already failed5versus2. This is not a pre-existingmain failure and nofailurewaswaived. Originalfailedlogs remain in theprior immutable mergepacket.
+
+Fresh Node22 verification passes all13commands, including allfourpreviouslyfailingchecks, productionbuild, governance236, TypeScript and36built publicpayload scans. CHECKS.json binds exactcommandresults/loghashes. Onlybuildlogtrailingwhitespace/finalblanklines were normalizedforGit; rawhashandexternalrawbytes retained. SCOPE-PROOF.json verifiesexactpatch/fullothertrackedpreservation. PLAN.json andRULE-CHANGELOG.md are thegranted operation-specific contract/verificationaddendum; no sharedcontractedit.
+
+Pending rootprecommit scopeverification, thenoneordinaryfollowupcommit andseparateplainpush withfreshAPIreadback. Noamend,rebase,reset,force,PRmerge orhistoryrewrite. INGEST3sourcebytes remain separatelypreserved/inactiveuntilthispriorityfixdelivered. AllSitesactionsheld; no publication,rollback,credentials,DNS oraudiencechanges. Thisfixturecheckdoesnotsupplyscientific,humanorresearchreleaseapproval.

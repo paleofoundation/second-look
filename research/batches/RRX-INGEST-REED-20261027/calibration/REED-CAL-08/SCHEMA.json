@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "REED-CAL-08-invitro-v1",
+  "required": [
+    "schemaVersion",
+    "paper",
+    "source",
+    "inspection",
+    "models",
+    "assays",
+    "exposures",
+    "results",
+    "claims",
+    "reviewInputs",
+    "limitations",
+    "scientificAcceptance",
+    "humanApproval",
+    "released"
+  ],
+  "controls": [
+    "Celllinefindingnotpatientbenefit",
+    "Cultureconcentrationnothumanregimen",
+    "Assayreplicatesnotpatientsorindependentstudies",
+    "Nobarmeansfrompixels",
+    "Qualitativecombinationeffectnotformaldrugsynergy",
+    "Proteinmarkerassociationnotdirectselectivetargetbindingorcompletecausalproof"
+  ],
+  "reviewInventory": "rules/one-match-rule/references/research-reviews/review-questions-and-inputs.json",
+  "fixedGates": {
+    "scientificAcceptance": false,
+    "humanApproval": false,
+    "released": false,
+    "acceptedSupport": false,
+    "grade": null
+  }
+}

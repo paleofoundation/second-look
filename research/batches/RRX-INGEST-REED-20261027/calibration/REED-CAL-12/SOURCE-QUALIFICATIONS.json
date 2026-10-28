@@ -1,0 +1,75 @@
+[
+  {
+    "id": "C12-SAFETY-WORDING",
+    "status": "qualified",
+    "sourceA": {
+      "locator": {
+        "kind": "pdf",
+        "sourceSha256": "72f2ec71cca076b26d20a07c86f5f81842b4e434c76ad5fa1a5943e03c33e0a2",
+        "physicalPage": 1,
+        "printedPage": "e130",
+        "nativeSection": "Abstract"
+      },
+      "description": "Abstract describes mild side effects"
+    },
+    "sourceB": {
+      "locator": {
+        "kind": "pdf",
+        "sourceSha256": "72f2ec71cca076b26d20a07c86f5f81842b4e434c76ad5fa1a5943e03c33e0a2",
+        "physicalPage": 1,
+        "printedPage": "e130",
+        "nativeSection": "Right column: patient results/stopping/toxicities"
+      },
+      "description": "Body reports WHOgrade3-4neutropenia8,thrombocytopenia2 andgrade3GI/dehydration1 among12"
+    },
+    "action": "Retain actual grades/counts; do not label alltoxicity mild/safe orattribute solely tosimvastatin."
+  },
+  {
+    "id": "C12-SCHEDULE",
+    "status": "literal_schedule_not_independently_reconstructed",
+    "locator": {
+      "kind": "pdf",
+      "sourceSha256": "72f2ec71cca076b26d20a07c86f5f81842b4e434c76ad5fa1a5943e03c33e0a2",
+      "physicalPage": 1,
+      "printedPage": "e130",
+      "nativeSection": "Left column: eligibility/regimen/response/design"
+    },
+    "description": "Simvastatin15mg/kg/dayoral days1-7 divided two doses; followed byVADday7-10, withvincristine0.4mg,doxorubicin9mg/m2 anddexamethasone40mg. Text doesnot restate each IVdrug frequency.",
+    "action": "Preserve literal instructions/day7overlap; no inferred cumulativeVADdose or zerooverlap."
+  },
+  {
+    "id": "C12-TIME",
+    "status": "qualified",
+    "locator": {
+      "kind": "pdf",
+      "sourceSha256": "72f2ec71cca076b26d20a07c86f5f81842b4e434c76ad5fa1a5943e03c33e0a2",
+      "physicalPage": 1,
+      "printedPage": "e130",
+      "nativeSection": "Right column: patient results/stopping/toxicities"
+    },
+    "description": "Response assessment planned after2cycles; actualmedian3cycles(range1-4); SDdurationmedian103days(range94-258); PRpatientrelapsed230daysfromtreatmentstart.",
+    "action": "No 230-daydurationofresponse or cohortPFS/OS inferred; response onset notprovided."
+  },
+  {
+    "id": "C12-PRIOR-STUDY",
+    "status": "context_not_current_results",
+    "locators": [
+      {
+        "kind": "pdf",
+        "sourceSha256": "72f2ec71cca076b26d20a07c86f5f81842b4e434c76ad5fa1a5943e03c33e0a2",
+        "physicalPage": 1,
+        "printedPage": "e130",
+        "nativeSection": "Left column: eligibility/regimen/response/design"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "72f2ec71cca076b26d20a07c86f5f81842b4e434c76ad5fa1a5943e03c33e0a2",
+        "physicalPage": 2,
+        "printedPage": "e131",
+        "nativeSection": "Funding and references"
+      }
+    ],
+    "description": "PriorphaseIdosefinding/reference2mixedmyeloma/lymphoma and lovastatinPK/reference4 are cited background, not currentpatients or verifiedcurrentPK.",
+    "action": "Do not add priorpatients/MTDproof/doses/lovastatinexposure tocurrent12-personreport."
+  }
+]

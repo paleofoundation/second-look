@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "reed2-cal03-Cochrane-VTE-secondary-v1",
+  "required": [
+    "schemaVersion",
+    "paper",
+    "source",
+    "inspection",
+    "reviewMethods",
+    "includedStudies",
+    "results",
+    "claims",
+    "reviewInputs",
+    "sourceQualifications",
+    "limitations",
+    "scientificAcceptance",
+    "humanApproval",
+    "released"
+  ],
+  "controls": [
+    "Secondary review not new original RCT or independently verified patient data",
+    "Specific aspirin myeloma contrasts separate from other anticoagulant/cancer pooled findings",
+    "Prevention not established VTE/tumor treatment or antimyeloma efficacy",
+    "Direction/timepoint/RR absolute events/denominators/CI and source-reported certainty preserved",
+    "Included study/report overlap and primary-source not_checked distinct from inaccessible",
+    "Own all168page reading with material visual checks, true missingness",
+    "Prior candidate and old canonical states unchanged;15Q67requiredinputs",
+    "Independent source-fidelity audit not scientific/human approval"
+  ],
+  "gates": {
+    "scientificAcceptance": false,
+    "humanApproval": false,
+    "released": false,
+    "acceptedSupport": false,
+    "grade": null
+  }
+}

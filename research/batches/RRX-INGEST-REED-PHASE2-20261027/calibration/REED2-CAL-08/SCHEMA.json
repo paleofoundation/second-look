@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "reed2-cal08-pooled-three-trial-antithrombotic-v1",
+  "required": [
+    "schemaVersion",
+    "paper",
+    "source",
+    "inspection",
+    "study",
+    "populations",
+    "results",
+    "claims",
+    "reviewInputs",
+    "sourceQualifications",
+    "limitations",
+    "scientificAcceptance",
+    "humanApproval",
+    "released"
+  ],
+  "controls": [
+    "Verifyactualparenttrial/reportidentityandpooledselection",
+    "ParentregimenRCT not randomized antithrombotic therapy",
+    "Antithromboticindications/classes/timing/doses/overlap preserved",
+    "Adjusted/unadjusted associations not causal aspirin benefit",
+    "VTE/arterial/bleeding/response/survivalandwindows notconflated",
+    "ExactNs/CI/P/missingness/censoring/nulls/harms preserved",
+    "14allpages/materialvisuals/15Q67fields/sourcehashbindings",
+    "Privatecandidatesonly/rootfidelitynotfullscienceornewgrade"
+  ],
+  "gates": {
+    "scientificAcceptance": false,
+    "humanApproval": false,
+    "released": false,
+    "newGrades": 0,
+    "scientificBatchScale20or30Approved": false
+  }
+}

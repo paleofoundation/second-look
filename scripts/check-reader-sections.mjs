@@ -301,7 +301,7 @@ const pilotHtml = render(pilot, pilotSources);
 const pilotSection = pilotHtml.match(/<section id="mechanisms"[\s\S]*?<\/section>/)[0];
 assert(!pilotSection.includes('<details'), 'Pilot mechanisms are visible without opening disclosures');
 assert.equal((pilotSection.match(/role="rowheader"/g)||[]).length,pilotRecord.rationales.filter(row=>!mechanismEvidenceHref(pilot,row.id)).length,'Only rationales without evidence rows remain in the article table');
-assert.equal((pilotSection.match(/class="mechanism-pathway"/g)||[]).length,2,'Two shared pathway explanations');
+assert.equal((pilotSection.match(/class="mechanism-pathway"/g)||[]).length,5,'Five itraconazole pathway blocks');
 assert(pilotSection.indexOf('hedgehog-cellular')<pilotSection.indexOf('condition-rationales'),'Shared pathways precede condition table');
 for(const id of ['ovarian','prostate','lung','colorectal','pancreatic','melanoma','bcc','aml','myeloma','hedgehog-cellular','cholesterol-transport']) assert(pilotSection.includes('id="'+id+'"'),'Legacy mechanism fragment survives: '+id);
 assertMechanismLocations(pilot,pilotRecord,pilotSection,pilotHtml,pilotSources);

@@ -2,10 +2,11 @@ import raw from '@/data/outcome-summaries.json';
 import type {SynthesisRow} from './content';
 
 export type BenefitGrade='A'|'B'|'C'|'D'|'E'|'F';
-export type OutcomeTrial={id:string;sourceIds:string[];participants:number|null;participantBasis:string};
+export type OutcomeTrial={id:string;comparisonId?:string;sourceIds:string[];participants:number|null;participantBasis:string};
 export type OutcomeEvidence={rctCount:number;participants:number|null;participantBasis:string;trialFamilyIds:string[];sourceIds:string[];trials:OutcomeTrial[]};
 export type OutcomeSummary={
  id:string;synthesisIds:string[];drugId:string;conditionId:string;label:string;
+ assessedOn?:string;
  purpose:'prevention'|'treatment'|'mechanistic'|'safety';
  grade:{value:BenefitGrade|null;label:string;rationale:string;sourceIds:string[]};
  effect:{label:string;detail:string;direction:'benefit'|'harm'|'mixed'|'uncertain'|'not_applicable';rationale:string};

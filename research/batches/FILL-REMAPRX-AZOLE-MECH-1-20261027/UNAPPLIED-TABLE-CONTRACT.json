@@ -1,0 +1,29 @@
+{
+  "status": "UNAPPLIED_PROPOSAL_ONLY",
+  "patchSha256": "20c8e19c915afba542ca76586a32eb777791a8eaad9a8fcfd36978c33da5e20e",
+  "base": "d118d305b59cac5e54ca7f9e5aa55cea682d2cee",
+  "paths": [
+    "lib/mechanisms.ts",
+    "components/article.tsx",
+    "components/shared-theme/mechanisms.tsx"
+  ],
+  "allowedGuideIds": [
+    "G-DRUG-D07",
+    "term-hedgehog-pathway",
+    "term-hyphae"
+  ],
+  "sourceBundleContract": "Existing app glossary conversion retains Meaning/Context/Examples and t.sources. New table citations must be explicitly added to only those selected glossary sources and D07 sourceIds; no automatic public source expansion or app route change. All preexisting sources byte-preserved.",
+  "readOrder": "Original action, summary, pathways, comparison introduction, each row model/finding/grade, existing rationale and questions. Same traversal supplies citation registry.",
+  "ui": "Existing semantic table/mobile class, fixed literal labels; no HTML-in-prose, no fake condition rows. Existing condition table branch unchanged.",
+  "checksActuallyRun": [
+    "git apply --check PASS",
+    "all three proposed shared files byte-identical after proposal generation"
+  ],
+  "checksPendingGate": [
+    "actual TypeScript and build after application",
+    "SSR citation/table/source closure at three allowed routes",
+    "negative unsupported-guide fixture",
+    "390x844 table overflow/readability",
+    "existing all-profile SSR and payload boundary"
+  ]
+}

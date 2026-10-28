@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "reed2-cal04-myeloma-antithrombotic-secondary-v1",
+  "required": [
+    "schemaVersion",
+    "paper",
+    "source",
+    "inspection",
+    "reviewMethods",
+    "includedStudies",
+    "results",
+    "claims",
+    "reviewInputs",
+    "sourceQualifications",
+    "limitations",
+    "scientificAcceptance",
+    "humanApproval",
+    "released"
+  ],
+  "controls": [
+    "Secondary only, underlying originals not independently verified",
+    "Exact comparator direction and regimen/population/time preserved",
+    "Unique trials versus reports and overlapping arms not summed",
+    "Mortality/VTE/bleeding and source certainty not anticancer benefit or new grades",
+    "Null, harmful, missing and no-event findings distinct; sparse CI not equivalence",
+    "All54pages plus consequential visuals and precise native locators",
+    "Prior states and CAL03 source differences/overlap retained",
+    "15 narrative questions/67typedfields with honest missingness",
+    "Independent bounded audit distinct from full scientific/human/release acceptance"
+  ],
+  "gates": {
+    "scientificAcceptance": false,
+    "humanApproval": false,
+    "released": false,
+    "newGrades": 0,
+    "newIndependentlyVerifiedTrials": 0,
+    "newIndependentlyVerifiedPatients": 0
+  }
+}

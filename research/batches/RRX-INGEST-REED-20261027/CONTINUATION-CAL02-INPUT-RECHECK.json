@@ -1,0 +1,21 @@
+{
+  "at": "2026-10-27T08:33:13.000404+00:00",
+  "strictHistoricalInputReplay": "BLOCKED_SOURCE_CHANGED",
+  "command": "REMAPRX_REED_ROOT=... REMAPRX_BRIDGE_INPUTS=... python3 research/batches/RRX-INGEST-REED-20261027/verify.py --require-source-files",
+  "commandExitCode": 1,
+  "historicalInputCount": 24,
+  "currentMatchedInputs": 23,
+  "currentMatchedAssets": 133,
+  "changes": [
+    {
+      "kind": "input",
+      "ref": "$REMAPRX_REED_ROOT/FILL-INDEX.md",
+      "expectedSha256": "ac911463e6a325880567c38816de53272a1f0735b70ebdf3933eac8506d25f4d",
+      "observedSha256": "c712dfe7b612257a38dbbd097332950334e2afec1940ea865f66fe2a604c9fbf",
+      "bytes": 89310
+    }
+  ],
+  "frozen57OutputFiles": "PASS_UNCHANGED",
+  "boundedCAL01CAL02SourceHashes": "PASS_UNCHANGED",
+  "disposition": "Original intake/source receipt at6936769 remains historical. No silent rehash or current strict PASS. Do not rerun old apply against changed source metadata. New arrivals require a separately planned versioned delta. Exact bound CAL01/CAL02 PDFs unchanged; their independent audits remain exact-source evidence."
+}

@@ -1,0 +1,1344 @@
+{
+  "schemaVersion": "reed2-cal20-metformin-MM-source-v1",
+  "paper": {
+    "id": "REED-f90c4b4c3aee83ec737b",
+    "pmid": "34336033",
+    "doi": "10.5114/aoms.2020.101305",
+    "title": "The mechanism of treatment of multiple myeloma with metformin by way of metabolism.",
+    "sourceType": "primary_preclinical_cell_study"
+  },
+  "source": {
+    "id": "REED2-CAL-20-MAIN",
+    "pmid": "34336033",
+    "doi": "10.5114/aoms.2020.101305",
+    "title": "The mechanism of treatment of multiple myeloma with metformin by way of metabolism.",
+    "reportId": "REED-f90c4b4c3aee83ec737b",
+    "ref": "$REMAPRX_REED_ROOT/metformin-myeloma/pdfs/34336033-song-2021.pdf",
+    "sha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+    "physicalPages": 8
+  },
+  "inspection": {
+    "at": "2026-10-27T13:51:51.078003+00:00",
+    "physicalPagesRead": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "visualInspectedPhysicalPages": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "fullScientificReviewComplete": false,
+    "separateCompanionContentRead": false,
+    "rawDataInspected": false
+  },
+  "study": {
+    "design": "Primary single-line RPMI8226 in-vitro metformin/melphalan study with rotenone comparator",
+    "models": [
+      "RPMI8226"
+    ],
+    "clinicalOrAnimalStudy": false,
+    "cellsSource": "Professor Jianfeng Zhou,originalATCC as reported",
+    "metforminRangeMM": [
+      0,
+      1.25,
+      2.5,
+      5,
+      10,
+      20,
+      40
+    ],
+    "melphalanRangeUM": [
+      0,
+      0.08,
+      0.4,
+      2,
+      10,
+      50,
+      250
+    ],
+    "singleCCK8Exposure": "Met48h/Mel24h",
+    "combinationCCK8": "Met10mM plusMel2/10/50/250uM,concomitant duration not fully clear",
+    "apoptosisCometATP": "24h;Met10mM/Mel10uM for principal assays,rotenone1mM apoptosis/ATP comparator",
+    "assays": [
+      "CCK8OD450",
+      "AnnexinV-FITC/PI",
+      "alkaline comet",
+      "ATP bioluminescence"
+    ],
+    "combinationAnalysis": "CompuSyn1.0 CI<1 reported,no exact CI/Fa values or curve supplied",
+    "statistics": "Triplicate as stated,meanSD,Student t-tests,P<.05 or caption thresholds; no exact biological hierarchy/global multiplicity",
+    "locators": [
+      {
+        "kind": "pdf",
+        "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+        "physicalPage": 2,
+        "printedPage": 1057,
+        "nativeSection": "Original cell results/methods"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+        "physicalPage": 3,
+        "printedPage": 1058,
+        "nativeSection": "Original cell results/methods"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+        "physicalPage": 4,
+        "printedPage": 1059,
+        "nativeSection": "Original cell results/methods"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+        "physicalPage": 5,
+        "printedPage": 1060,
+        "nativeSection": "Original cell results/methods"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+        "physicalPage": 6,
+        "printedPage": 1061,
+        "nativeSection": "Original cell results/methods"
+      }
+    ]
+  },
+  "populations": {
+    "cellLines": 1,
+    "CCK8SeedCellsPerWell": 500000,
+    "apoptosisSeedCellsPerWell": 1000000,
+    "cometSuspensionCellsPerML": 100000,
+    "replication": "Experiments repeated triplicate,independent biological hierarchy not stated",
+    "clinicalPatients": 0,
+    "animals": 0,
+    "locators": [
+      {
+        "kind": "pdf",
+        "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+        "physicalPage": 2,
+        "printedPage": 1057,
+        "nativeSection": "Original cell results/methods"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+        "physicalPage": 3,
+        "printedPage": 1058,
+        "nativeSection": "Original cell results/methods"
+      }
+    ]
+  },
+  "results": [
+    {
+      "id": "REED2-CAL-20-O01",
+      "outcome": "Metformin/melphalan CCK8 inhibition and reported CI synergy",
+      "estimate": {
+        "kind": "CCK8_combination_growth_inhibition",
+        "metforminMM": 10,
+        "melphalanUM": [
+          2,
+          10,
+          50,
+          250
+        ],
+        "pairVsMel": "higher inhibition",
+        "sourceCompuSynCI": "<1",
+        "exactCIsReported": false,
+        "synergyIndependentlyReproduced": false,
+        "logUnitSourceConflictResolved": false
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 2,
+          "printedPage": 1057,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 3,
+          "printedPage": 1058,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 5,
+          "printedPage": 1060,
+          "nativeSection": "Original cell results/methods"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED2-CAL-20-O02",
+      "outcome": "Apoptosis with unresolved abstract-versus-figure summaries",
+      "estimate": {
+        "kind": "AnnexinV_PI_apoptosis",
+        "hours": 24,
+        "melphalanUM": 10,
+        "metforminMM": 10,
+        "rotenoneMM": 1,
+        "abstractMeansPercent": [
+          12.7,
+          18.8
+        ],
+        "abstractSD": [
+          2.8,
+          1.5
+        ],
+        "abstractP": "<.05",
+        "figure2RepresentativeMelQuadrantsPercent": {
+          "D2": 11.5,
+          "D4": 14.2
+        },
+        "figure2RepresentativePairQuadrantsPercent": {
+          "D2": 15.5,
+          "D4": 30.6
+        },
+        "abstractFigureBasisResolved": false,
+        "representativeQuadrantsAreAggregateMeans": false,
+        "rotenonePair": "increases apoptosis"
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 1,
+          "printedPage": 1056,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 3,
+          "printedPage": 1058,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 4,
+          "printedPage": 1059,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 5,
+          "printedPage": 1060,
+          "nativeSection": "Original cell results/methods"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED2-CAL-20-O03",
+      "outcome": "Alkaline comet damage markers",
+      "estimate": {
+        "kind": "alkaline_comet_damage_marker",
+        "hours": 24,
+        "pairVsMel": "longer comet/tail and higher tail/Olive moments",
+        "directRepairRateMeasured": false,
+        "specificDSBRepairNecessityEstablished": false,
+        "exactMeansDigitized": false
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 3,
+          "printedPage": 1058,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 5,
+          "printedPage": 1060,
+          "nativeSection": "Original cell results/methods"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED2-CAL-20-O04",
+      "outcome": "ATP findings and unresolved cell-loss/repair interpretation",
+      "estimate": {
+        "kind": "ATP_bioluminescence",
+        "abstractContrastUM": [
+          0.42,
+          0.08
+        ],
+        "abstractSD": [
+          0.01,
+          0.02
+        ],
+        "abstractP": "<.05",
+        "pairVsMel": "lower ATP",
+        "rotenonePair": "lower ATP",
+        "equalApoptosisControl": "discussion narrative only,no dose/N/separate raw result",
+        "perCellNormalizationVerified": false,
+        "ATPRescueNecessityProven": false,
+        "exactFullDoseMeansDigitized": false
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 1,
+          "printedPage": 1056,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 4,
+          "printedPage": 1059,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 6,
+          "printedPage": 1061,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 7,
+          "printedPage": 1062,
+          "nativeSection": "Original cell results/methods"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    }
+  ],
+  "claims": [
+    {
+      "id": "REED2-CAL-20-C01",
+      "resultIds": [
+        "REED2-CAL-20-O01"
+      ],
+      "statement": "Metformin/melphalan CCK8 inhibition and reported CI synergy. Original cell finding candidate with exact source qualifications; no accepted clinical efficacy or necessary ATP-repair mechanism.",
+      "relation": "original_preclinical_candidate",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED2-CAL-20-C02",
+      "resultIds": [
+        "REED2-CAL-20-O02"
+      ],
+      "statement": "Apoptosis with unresolved abstract-versus-figure summaries. Original cell finding candidate with exact source qualifications; no accepted clinical efficacy or necessary ATP-repair mechanism.",
+      "relation": "original_preclinical_candidate",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED2-CAL-20-C03",
+      "resultIds": [
+        "REED2-CAL-20-O03"
+      ],
+      "statement": "Alkaline comet damage markers. Original cell finding candidate with exact source qualifications; no accepted clinical efficacy or necessary ATP-repair mechanism.",
+      "relation": "original_preclinical_candidate",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED2-CAL-20-C04",
+      "resultIds": [
+        "REED2-CAL-20-O04"
+      ],
+      "statement": "ATP findings and unresolved cell-loss/repair interpretation. Original cell finding candidate with exact source qualifications; no accepted clinical efficacy or necessary ATP-repair mechanism.",
+      "relation": "original_preclinical_candidate",
+      "acceptedSupport": false
+    }
+  ],
+  "reviewInputs": [
+    {
+      "id": "Q01",
+      "answer": "Test metformin enhancement of melphalan effects on RPMI8226 and ATP/DNA-damage rationale.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 1,
+          "printedPage": 1056,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 8,
+          "printedPage": 1063,
+          "nativeSection": "Original cell results/methods"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q02",
+      "answer": "Single humanMM cell line RPMI8226,not patient/animal treatment.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 2,
+          "printedPage": 1057,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 3,
+          "printedPage": 1058,
+          "nativeSection": "Original cell results/methods"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q03",
+      "answer": "Sigma metformin/melphalan/rotenone,not bortezomib/FTY720.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 2,
+          "printedPage": 1057,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 3,
+          "printedPage": 1058,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 4,
+          "printedPage": 1059,
+          "nativeSection": "Original cell results/methods"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q04",
+      "answer": "Untreated/eachdrug/MelMet/Melrotenone,CCK8/comet/ATP-specific comparisons.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 2,
+          "printedPage": 1057,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 3,
+          "printedPage": 1058,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 4,
+          "printedPage": 1059,
+          "nativeSection": "Original cell results/methods"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q05",
+      "answer": "Exploratory cellphenotype/ATP/comet endpoints,no clinical hierarchy.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 1,
+          "printedPage": 1056,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 3,
+          "printedPage": 1058,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 4,
+          "printedPage": 1059,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 5,
+          "printedPage": 1060,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 7,
+          "printedPage": 1062,
+          "nativeSection": "Original cell results/methods"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q06",
+      "answer": "[{'kind': 'CCK8_combination_growth_inhibition', 'metforminMM': 10, 'melphalanUM': [2, 10, 50, 250], 'pairVsMel': 'higher inhibition', 'sourceCompuSynCI': '<1', 'exactCIsReported': False, 'synergyIndependentlyReproduced': False, 'logUnitSourceConflictResolved': False}, {'kind': 'AnnexinV_PI_apoptosis', 'hours': 24, 'melphalanUM': 10, 'metforminMM': 10, 'rotenoneMM': 1, 'abstractMeansPercent': [12.7, 18.8], 'abstractSD': [2.8, 1.5], 'abstractP': '<.05', 'figure2RepresentativeMelQuadrantsPercent': {'D2': 11.5, 'D4': 14.2}, 'figure2RepresentativePairQuadrantsPercent': {'D2': 15.5, 'D4': 30.6}, 'abstractFigureBasisResolved': False, 'representativeQuadrantsAreAggregateMeans': False, 'rotenonePair': 'increases apoptosis'}, {'kind': 'alkaline_comet_damage_marker', 'hours': 24, 'pairVsMel': 'longer comet/tail and higher tail/Olive moments', 'directRepairRateMeasured': False, 'specificDSBRepairNecessityEstablished': False, 'exactMeansDigitized': False}, {'kind': 'ATP_bioluminescence', 'abstractContrastUM': [0.42, 0.08], 'abstractSD': [0.01, 0.02], 'abstractP': '<.05', 'pairVsMel': 'lower ATP', 'rotenonePair': 'lower ATP', 'equalApoptosisControl': 'discussion narrative only,no dose/N/separate raw result', 'perCellNormalizationVerified': False, 'ATPRescueNecessityProven': False, 'exactFullDoseMeansDigitized': False}]",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 1,
+          "printedPage": 1056,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 3,
+          "printedPage": 1058,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 4,
+          "printedPage": 1059,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 5,
+          "printedPage": 1060,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 6,
+          "printedPage": 1061,
+          "nativeSection": "Original cell results/methods"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q07",
+      "answer": "No failed assay/excluded replicate accounting.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 2,
+          "printedPage": 1057,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 3,
+          "printedPage": 1058,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 4,
+          "printedPage": 1059,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 7,
+          "printedPage": 1062,
+          "nativeSection": "Original cell results/methods"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q08",
+      "answer": "No clinical safety study.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 2,
+          "printedPage": 1057,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 3,
+          "printedPage": 1058,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 7,
+          "printedPage": 1062,
+          "nativeSection": "Original cell results/methods"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q09",
+      "answer": "One line/metabolicassay/smallunclearN/sourceflowconflict.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 4,
+          "printedPage": 1059,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 6,
+          "printedPage": 1061,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 7,
+          "printedPage": 1062,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 8,
+          "printedPage": 1063,
+          "nativeSection": "Original cell results/methods"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q10",
+      "answer": "Private D02/C21 actualmetforminMelculture response rationale.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 1,
+          "printedPage": 1056,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 3,
+          "printedPage": 1058,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 7,
+          "printedPage": 1062,
+          "nativeSection": "Original cell results/methods"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q11",
+      "answer": "{'reportId': 'REED-f90c4b4c3aee83ec737b', 'family': 'Song2021RPMI8226MetMelATP', 'sameModelAcrossReadouts': True, 'earlierCAL19CitationOnly': True, 'futureCAL24ReferencedOnly': True, 'newIndependentTrialCount': 0, 'newIndependentPatientCount': 0, 'uniqueCrossCorpusPatientCountAdjudicated': False, 'locators': [{'kind': 'pdf', 'sourceSha256': 'db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290', 'physicalPage': 2, 'printedPage': 1057, 'nativeSection': 'Original cell results/methods'}, {'kind': 'pdf', 'sourceSha256': 'db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290', 'physicalPage': 7, 'printedPage': 1062, 'nativeSection': 'Original cell results/methods'}]}",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 2,
+          "printedPage": 1057,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 7,
+          "printedPage": 1062,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 8,
+          "printedPage": 1063,
+          "nativeSection": "Original cell results/methods"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q12",
+      "answer": "YanyanSong,SongChen,WeiXiang,MuranXiao,HuiXiao.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 1,
+          "printedPage": 1056,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 2,
+          "printedPage": 1057,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 7,
+          "printedPage": 1062,
+          "nativeSection": "Original cell results/methods"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q13",
+      "answer": "2019submitted/accepted,online29Nov2020,paginated2021;17:1056-1063suppliedsource.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 1,
+          "printedPage": 1056,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 6,
+          "printedPage": 1061,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 7,
+          "printedPage": 1062,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 8,
+          "printedPage": 1063,
+          "nativeSection": "Original cell results/methods"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q14",
+      "answer": "{'paperId': 'REED-f90c4b4c3aee83ec737b', 'sourceId': 'REED2-CAL-20-MAIN', 'resultIds': ['REED2-CAL-20-O01', 'REED2-CAL-20-O02', 'REED2-CAL-20-O03', 'REED2-CAL-20-O04'], 'claimIds': ['REED2-CAL-20-C01', 'REED2-CAL-20-C02', 'REED2-CAL-20-C03', 'REED2-CAL-20-C04'], 'existingGuideIds': ['G-DRUG-D02', 'G-CONDITION-C21'], 'purpose': 'Private metformin/melphalan RPMI8226 metabolism/response rationale only', 'publicationState': 'private_unapplied_candidate', 'canonicalChanges': 0, 'newIndependentTrials': 0, 'newIndependentPatients': 0}",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 5,
+          "printedPage": 1060,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 7,
+          "printedPage": 1062,
+          "nativeSection": "Original cell results/methods"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending",
+      "downstreamMapping": {
+        "paperId": "REED-f90c4b4c3aee83ec737b",
+        "sourceId": "REED2-CAL-20-MAIN",
+        "resultIds": [
+          "REED2-CAL-20-O01",
+          "REED2-CAL-20-O02",
+          "REED2-CAL-20-O03",
+          "REED2-CAL-20-O04"
+        ],
+        "claimIds": [
+          "REED2-CAL-20-C01",
+          "REED2-CAL-20-C02",
+          "REED2-CAL-20-C03",
+          "REED2-CAL-20-C04"
+        ],
+        "existingGuideIds": [
+          "G-DRUG-D02",
+          "G-CONDITION-C21"
+        ],
+        "purpose": "Private metformin/melphalan RPMI8226 metabolism/response rationale only",
+        "publicationState": "private_unapplied_candidate",
+        "canonicalChanges": 0,
+        "newIndependentTrials": 0,
+        "newIndependentPatients": 0
+      }
+    },
+    {
+      "id": "Q15",
+      "answer": "Metformin/Melpairhascellinhibition/reportedCI<1andlowerATP/moredamagesignals;apoptosissummaryandmechanisticcausalityremainuncertain.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 7,
+          "printedPage": 1062,
+          "nativeSection": "Original cell results/methods"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    }
+  ],
+  "sourceQualifications": [
+    {
+      "id": "REED2-CAL-20-MODEL",
+      "description": "One RPMI8226 line, source also typoRPMI8225/RPMIN8226 retained as source wording not separate models. No patient/donor/animal treatment experiment,normal-cell selectivity or established resistant-cell model.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 2,
+          "printedPage": 1057,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 5,
+          "printedPage": 1060,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 6,
+          "printedPage": 1061,
+          "nativeSection": "Original cell results/methods"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-20-DOSE_TIME",
+      "description": "Metformin1.25-40mM48h screen,melphalan.08-250uM24h,combinationMet10mM plusMel2-250uM. Principal apoptosis/comet24hMet10mM/Mel10uM and rotenone1mM. Concomitant CCK8 schedule not fully reconciled to unequal single-agent durations; not clinical doses.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 2,
+          "printedPage": 1057,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 3,
+          "printedPage": 1058,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 4,
+          "printedPage": 1059,
+          "nativeSection": "Original cell results/methods"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-20-UNITS_LOG",
+      "description": "Figure1C melphalan axis labelsmm whereas methods/captionuM; retain mismatch. Figure4 axesLN(c),captionLg/base10,body ATPfitXnatural log; exact concentration/log-unit mapping unresolved. No silent unit conversion or dose-dependent quantitative repair.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 3,
+          "printedPage": 1058,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 6,
+          "printedPage": 1061,
+          "nativeSection": "Original cell results/methods"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-20-CCK8_SYNERGY",
+      "description": "CCK8metabolic readout/pair-vsMel differences not independent direct counts. Authors report CompusynCI<1, a formal model-based synergy claim, but no exactCI/Fa/grid/rawdata/reproducible interaction estimate. Not independently verified clinical synergy; sourceCI=1 increased-effect wording not adopted as validated definition.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 2,
+          "printedPage": 1057,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 3,
+          "printedPage": 1058,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 5,
+          "printedPage": 1060,
+          "nativeSection": "Original cell results/methods"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-20-APOPTOSIS_ABSTRACT",
+      "description": "Abstract apoptosis12.7+/-2.8% to18.8+/-1.5% P<.05 differs from Figure2 aggregate bars substantially higher and representative early-plus-late quadrant sums25.7%Mel/46.1%pair. Different gate/summary basis not explained, unresolved; no inferred cause or forced replacement.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 1,
+          "printedPage": 1056,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 4,
+          "printedPage": 1059,
+          "nativeSection": "Original cell results/methods"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-20-FLOW_VERSUS_MEANS",
+      "description": "Figure2 representative MelD2=11.5/D4=14.2 and pair15.5/30.6 are individual plotted quadrant percentages, not independent aggregate biological means. Figure2B bars/SD and significance brackets P<.01 differ from abstractP<.05; do not substitute sums for reported means, digitize bars or assert exact gate definition resolved.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 3,
+          "printedPage": 1058,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 4,
+          "printedPage": 1059,
+          "nativeSection": "Original cell results/methods"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-20-ROTENONE",
+      "description": "Rotenone1mM alone has marked apoptosis and pairing withMel increases effects/lowers ATP. Pharmacologic phenocopy supports energy-related rationale but is not a specific rescue/necessity test or proof normal-cell safety. No rotenone clinical regimen implied.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 3,
+          "printedPage": 1058,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 4,
+          "printedPage": 1059,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 6,
+          "printedPage": 1061,
+          "nativeSection": "Original cell results/methods"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-20-COMET",
+      "description": "24h alkaline comet shows larger tail/comet length and tail/Olive moments withpair versusMel. Source alternatesDNA-base/double-strand language, assay not direct repair-rate/pathway-specific readout. No ATP restoration/genetic rescue or orthogonal repair kinetics establishes impaired repair rather than increased damage/other effects.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 3,
+          "printedPage": 1058,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 5,
+          "printedPage": 1060,
+          "nativeSection": "Original cell results/methods"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-20-ATP",
+      "description": "Abstract ATP.42+/-.01 to.08+/-.02uM P<.05 retained as source-reported contrast; Figure4C/D and brokenDaxis distinguish drug conditions, captionP<.01. No exact fullATP dose means/CI digitized or per-cell/protein normalization independently established.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 1,
+          "printedPage": 1056,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 4,
+          "printedPage": 1059,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 6,
+          "printedPage": 1061,
+          "nativeSection": "Original cell results/methods"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-20-ATP_DEATH_CONFOUNDING",
+      "description": "Lower ATP can accompany fewer viable cells. Discussion claims an equal-apoptosis Mel-only comparator gives different ATP, but exact matched Mel dose/N/results are not supplied separately. This sensitivity rationale is narrative only, not an independently verified exclusion of cell-loss confounding or necessary ATP-mediated repair mechanism.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 6,
+          "printedPage": 1061,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 7,
+          "printedPage": 1062,
+          "nativeSection": "Original cell results/methods"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-20-MECHANISM",
+      "description": "ComplexI/ATP/repair explanation largely from ATP/comet/rotenone association and background references; no own measured complexI respiration/AMPK/AKT/mTOR/GRP78 perturbation or ATP rescue. Do not import these cited mechanisms as actual assays of this report.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 2,
+          "printedPage": 1057,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 6,
+          "printedPage": 1061,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 7,
+          "printedPage": 1062,
+          "nativeSection": "Original cell results/methods"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-20-STATS_N",
+      "description": "Triplicates/meanSD/t-tests given, no biological-versus-technical hierarchy,flowevent/gating counts,comet nucleiN,power/blinding/randomization or global multiplicity. Seeded500k/well and1million/well are cell counts,not biological replicates/patients; no invented complete means/CI.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 2,
+          "printedPage": 1057,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 3,
+          "printedPage": 1058,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 4,
+          "printedPage": 1059,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 5,
+          "printedPage": 1060,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 6,
+          "printedPage": 1061,
+          "nativeSection": "Original cell results/methods"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-20-SAFETY_TRANSLATION",
+      "description": "Few-side-effects and potential clinical treatment claims are author extrapolations. No parallel healthy cells,clinicalPK/BBB/renal or adverse-event evaluation,animal survival or patient benefit/dosing established by10mM culture/1mMrotenone.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 1,
+          "printedPage": 1056,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 7,
+          "printedPage": 1062,
+          "nativeSection": "Original cell results/methods"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-20-IDENTITY_REFERENCES",
+      "description": "CAL19 reference28 citation-only not prior fresh acceptance. Reference13MalekGRP782015 is futureCAL24 original, no data transfer now. ATP assay reference21 concerns microbiological water quality,not direct independent validation of this cell-normalized ATP assay; no external repair or primary PASS from references.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 2,
+          "printedPage": 1057,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 7,
+          "printedPage": 1062,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 8,
+          "printedPage": 1063,
+          "nativeSection": "Original cell results/methods"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-20-DISCLOSURES",
+      "description": "Song/Chen/Xiang/MuranXiao/HuiXiao,ZhongnanHospitalWuhanUniversity. ProfessorJianfengZhouprovidedline/FulingZhoutechnicalthanks. Funders no-role statement appears but named funder/grant not specified main; not assertion no funding. Authors declare no conflict,ethics/consent not identified for cell-only report.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 1,
+          "printedPage": 1056,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 2,
+          "printedPage": 1057,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 7,
+          "printedPage": 1062,
+          "nativeSection": "Original cell results/methods"
+        }
+      ]
+    },
+    {
+      "id": "REED2-CAL-20-ACCESS",
+      "description": "Submitted/accepted2019,online29Nov2020/paginated2021 as source. All8 text/pages3-6materialfigures read; no supplements/rawflow/comet/ATP/CompuSyn input/protocol/current corrections independently checked. Source version/time not current clinical guidance, no acquisition.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 1,
+          "printedPage": 1056,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 7,
+          "printedPage": 1062,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 8,
+          "printedPage": 1063,
+          "nativeSection": "Original cell results/methods"
+        }
+      ]
+    }
+  ],
+  "overlapRecords": [
+    {
+      "reportId": "REED-f90c4b4c3aee83ec737b",
+      "family": "Song2021RPMI8226MetMelATP",
+      "sameModelAcrossReadouts": true,
+      "earlierCAL19CitationOnly": true,
+      "futureCAL24ReferencedOnly": true,
+      "newIndependentTrialCount": 0,
+      "newIndependentPatientCount": 0,
+      "uniqueCrossCorpusPatientCountAdjudicated": false,
+      "locators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 2,
+          "printedPage": 1057,
+          "nativeSection": "Original cell results/methods"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "db49e1bb52f5643a32491f351a0693acca0b8e7444cb5e6beefd97d0b1b31290",
+          "physicalPage": 7,
+          "printedPage": 1062,
+          "nativeSection": "Original cell results/methods"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "One RPMI8226 line, source also typoRPMI8225/RPMIN8226 retained as source wording not separate models. No patient/donor/animal treatment experiment,normal-cell selectivity or established resistant-cell model.",
+    "Metformin1.25-40mM48h screen,melphalan.08-250uM24h,combinationMet10mM plusMel2-250uM. Principal apoptosis/comet24hMet10mM/Mel10uM and rotenone1mM. Concomitant CCK8 schedule not fully reconciled to unequal single-agent durations; not clinical doses.",
+    "Figure1C melphalan axis labelsmm whereas methods/captionuM; retain mismatch. Figure4 axesLN(c),captionLg/base10,body ATPfitXnatural log; exact concentration/log-unit mapping unresolved. No silent unit conversion or dose-dependent quantitative repair.",
+    "CCK8metabolic readout/pair-vsMel differences not independent direct counts. Authors report CompusynCI<1, a formal model-based synergy claim, but no exactCI/Fa/grid/rawdata/reproducible interaction estimate. Not independently verified clinical synergy; sourceCI=1 increased-effect wording not adopted as validated definition.",
+    "Abstract apoptosis12.7+/-2.8% to18.8+/-1.5% P<.05 differs from Figure2 aggregate bars substantially higher and representative early-plus-late quadrant sums25.7%Mel/46.1%pair. Different gate/summary basis not explained, unresolved; no inferred cause or forced replacement.",
+    "Figure2 representative MelD2=11.5/D4=14.2 and pair15.5/30.6 are individual plotted quadrant percentages, not independent aggregate biological means. Figure2B bars/SD and significance brackets P<.01 differ from abstractP<.05; do not substitute sums for reported means, digitize bars or assert exact gate definition resolved.",
+    "Rotenone1mM alone has marked apoptosis and pairing withMel increases effects/lowers ATP. Pharmacologic phenocopy supports energy-related rationale but is not a specific rescue/necessity test or proof normal-cell safety. No rotenone clinical regimen implied.",
+    "24h alkaline comet shows larger tail/comet length and tail/Olive moments withpair versusMel. Source alternatesDNA-base/double-strand language, assay not direct repair-rate/pathway-specific readout. No ATP restoration/genetic rescue or orthogonal repair kinetics establishes impaired repair rather than increased damage/other effects.",
+    "Abstract ATP.42+/-.01 to.08+/-.02uM P<.05 retained as source-reported contrast; Figure4C/D and brokenDaxis distinguish drug conditions, captionP<.01. No exact fullATP dose means/CI digitized or per-cell/protein normalization independently established.",
+    "Lower ATP can accompany fewer viable cells. Discussion claims an equal-apoptosis Mel-only comparator gives different ATP, but exact matched Mel dose/N/results are not supplied separately. This sensitivity rationale is narrative only, not an independently verified exclusion of cell-loss confounding or necessary ATP-mediated repair mechanism.",
+    "ComplexI/ATP/repair explanation largely from ATP/comet/rotenone association and background references; no own measured complexI respiration/AMPK/AKT/mTOR/GRP78 perturbation or ATP rescue. Do not import these cited mechanisms as actual assays of this report.",
+    "Triplicates/meanSD/t-tests given, no biological-versus-technical hierarchy,flowevent/gating counts,comet nucleiN,power/blinding/randomization or global multiplicity. Seeded500k/well and1million/well are cell counts,not biological replicates/patients; no invented complete means/CI.",
+    "Few-side-effects and potential clinical treatment claims are author extrapolations. No parallel healthy cells,clinicalPK/BBB/renal or adverse-event evaluation,animal survival or patient benefit/dosing established by10mM culture/1mMrotenone.",
+    "CAL19 reference28 citation-only not prior fresh acceptance. Reference13MalekGRP782015 is futureCAL24 original, no data transfer now. ATP assay reference21 concerns microbiological water quality,not direct independent validation of this cell-normalized ATP assay; no external repair or primary PASS from references.",
+    "Song/Chen/Xiang/MuranXiao/HuiXiao,ZhongnanHospitalWuhanUniversity. ProfessorJianfengZhouprovidedline/FulingZhoutechnicalthanks. Funders no-role statement appears but named funder/grant not specified main; not assertion no funding. Authors declare no conflict,ethics/consent not identified for cell-only report.",
+    "Submitted/accepted2019,online29Nov2020/paginated2021 as source. All8 text/pages3-6materialfigures read; no supplements/rawflow/comet/ATP/CompuSyn input/protocol/current corrections independently checked. Source version/time not current clinical guidance, no acquisition."
+  ],
+  "newIndependentTrials": 0,
+  "newIndependentPatients": 0,
+  "scientificAcceptance": false,
+  "humanApproval": false,
+  "released": false
+}

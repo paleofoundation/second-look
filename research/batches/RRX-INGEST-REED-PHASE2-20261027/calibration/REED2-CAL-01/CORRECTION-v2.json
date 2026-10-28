@@ -1,0 +1,35 @@
+{
+  "at": "2026-10-27T11:47:09.348414+00:00",
+  "state": "V1_HELD_SOURCE_FIDELITY_FAIL_V2_CORRECTED_PENDING_FRESH_AUDIT",
+  "priorCandidateSha256": "d9debe9fe10f3e1c45df4f4f8c961c4ab1bf4d58dcc051de483a6de9080399f6",
+  "activeCandidateSha256": "ac8f73bd941a386dbd861f4af742fd697f12cf56c0ce0a014ed5ff1488839ae4",
+  "priorManifestSha256": "ce656e53c638621529f5c4dec6a634d488197f63c64201fa6de77a5f3bbd0010",
+  "priorSnapshot": "history/v1",
+  "issues": [
+    {
+      "issue": "Appetite direction transcribed incorrectly",
+      "source": "Physical pages4-5 extension harms continuation",
+      "before": {
+        "increasedAppetitePatients": 9
+      },
+      "after": {
+        "lossOfAppetitePatients": 9
+      }
+    },
+    {
+      "issue": "CRP within-group Wilcoxon qualification lacked method locator",
+      "before": "physical13/14/21",
+      "after": "physical12 added alongside13/14/21"
+    }
+  ],
+  "changedDependencyFiles": [
+    "SOURCE-CANDIDATE.json",
+    "SOURCE-QUALIFICATIONS.json",
+    "review-inputs.jsonl"
+  ],
+  "initialIndependentAcceptance": false,
+  "activeIndependentAcceptance": false,
+  "scientificAcceptance": false,
+  "humanApproval": false,
+  "released": false
+}

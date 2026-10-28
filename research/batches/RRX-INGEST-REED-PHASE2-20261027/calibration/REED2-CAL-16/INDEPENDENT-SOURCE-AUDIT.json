@@ -1,0 +1,78 @@
+{
+  "at": "2026-10-27T13:34:11.406146+00:00",
+  "result": "PASS_BOUNDED_EXACT3_CLAIM_GROUPS_WITH15_QUALIFICATIONS",
+  "candidateSha256": "562634efd00a86f0e0d68321f0b71537bcc11a681168060d60a388f935b51ba5",
+  "sourceSha256FreshMatched": "7ccf881af5534a2b216a7b878fb5a3209fd6e3e82f681f42946d1113917d2d23",
+  "indexSha256FreshMatched": "69b8920b0576f1e4eeb5195bf038f2ef07838ec9a40305633bd6c98a0171a230",
+  "auditManifestSha256": "e0f0f1549b5eabccd1ec2b1d5fbe4d91fd6977f836dfea693a3aade91da72ebf",
+  "exactAuditedDependencies": {
+    "SOURCE-CANDIDATE.json": "562634efd00a86f0e0d68321f0b71537bcc11a681168060d60a388f935b51ba5",
+    "review-inputs.jsonl": "3993090bc5e3acd7d1b1c3e97433f662bfc74e02817bc1920289007657fb78af",
+    "PLAN.json": "140136018c1ae4e00a06e5869451e1f87c1536c446f85832c55a44bf7918daa2",
+    "SCHEMA.json": "31a0554ca9833b138b834315b3ae7b6c691131066fda6b2fa4f8db590154350f",
+    "READINESS.json": "9cac63251366423f92dd5dd3a017d59a61064e12d9120c90eb89665785daa646",
+    "DOWNSTREAM-MAPPING.json": "cc1b47bc353b486e8ac2a0adfc4c16a774c031f0e3cdb6e7640b7c553af9dbdd",
+    "VISUAL-RECEIPT.json": "0c18c6d54c274e77177a57fb289d660ea728542b46aac6fec202a3b820f30f58",
+    "SOURCE-QUALIFICATIONS.json": "5442ea45d59219d8063d2acd90c070e8aa3701d31abeec9141b2177955f41457",
+    "PRIOR-RECONCILIATION.json": "58a1ac1f30fba23247a2d0b128c2f9fa8a56f06f463e5bb7187970d0a740b2f7",
+    "OVERLAP-RECONCILIATION.json": "11bbe651ff3cd2b7beaa4476668d515853d909d72c21162e718a99649351b764"
+  },
+  "prospectivePlanReadBeforeOriginal": true,
+  "independentRootRead": {
+    "physicalPagesText": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "materialVisuals": [
+      3,
+      4
+    ],
+    "rootFreshTextSha256": "da0033fd186baa6325f108d568989b23c95dd608b973cb7f3826647aa9d0d2de",
+    "scope": "Entire5page text/Figures1-4 freshrootvisuals; exact3results/3claims15qualificationsboundedfidelity only, not full15Q67fieldscientificacceptance/rawblotreplication."
+  },
+  "checkedResultIds": [
+    "REED2-CAL-16-O01",
+    "REED2-CAL-16-O02",
+    "REED2-CAL-16-O03"
+  ],
+  "checkedClaimIds": [
+    "REED2-CAL-16-C01",
+    "REED2-CAL-16-C02",
+    "REED2-CAL-16-C03"
+  ],
+  "checkedQualificationIds": [
+    "REED2-CAL-16-DESIGN",
+    "REED2-CAL-16-ARMS",
+    "REED2-CAL-16-IC50",
+    "REED2-CAL-16-MEM_DOSE",
+    "REED2-CAL-16-ASSAY",
+    "REED2-CAL-16-PROTEIN_MIXED",
+    "REED2-CAL-16-CASP3",
+    "REED2-CAL-16-DONOR_SERIES",
+    "REED2-CAL-16-REPLICATION_STATS",
+    "REED2-CAL-16-SELECTIVITY",
+    "REED2-CAL-16-MECHANISM",
+    "REED2-CAL-16-CLINICAL_CONTEXT",
+    "REED2-CAL-16-CROSS_REPORT",
+    "REED2-CAL-16-AUTHOR_CONCLUSION",
+    "REED2-CAL-16-DISCLOSURES_ACCESS"
+  ],
+  "criticalBounds": [
+    "T98G/U87MGATCClines48hMTT3000cells/wellnotclinicalN;metforminalone/DCAalone/metformin+DCApair/memalone,no tripleoraddingmemtopair. Pair20mMeachnot20total/formalsynergy. MetIC5045mMT98G25mMU87,DCA45both,mem.5both. Abstractnearly10timeslowerthanmetformindoesnotmatchlistedvalues/retainednotcalculatednewratio. Textmem.125-5mMvsgraphfirst.25mMheld.",
+    "MTTmetabolicreductionnotdirectdeathapoptosis/orthogonalsurvival;noquantitativecleavedCasp3activation/densitometryorflux/NMDAtargetrescue. T98GCasp3decreasedmet/pair,Bcl2increasedDCA/pair/mem,Baxdecreasedall,cMycdecreasedall,GSK3Bmemdecreased. U87Casp3increasedallnotuniformproapoptoticresponse.",
+    "17tumortissuesApril2015-April2016/Gazi,2GBMnegativeexcluded15positiveexpressionseriesCasp3Bcl2BadBaxheterogeneity. Not15drug-treatedresponders/notherapeuticcomparison/healthycontrol/clinicalsurvival/prognosticpredictionvalidationhere.2excludednotdrugdropouts.",
+    "TriplicatesmeanSDPrism7/P.05withoutactualtest/multiplicity/randomization/blinding/power/replicatehierarchy;captionP.01notIC50CI/allinterdrugcontrasts. No graphdigitization/rawblotreplication. No normalbrainselectivity/PK/BBBtherapeuticwindow/.5mMclinicalfeasibilityorclinicalregimen.",
+    "MetDCAmetabolism/memNMDAcitedbackgroundnotownmechanisticnecessity,earlierMarakacombinationclinicalstudy/Nevinletter/prognosticreferencesnotfreshprimaryPASScounts.48h.5mMMTTnotinterchangeable131uM72h3DATP/CAL14or25uMRTCFACAL15. Futureelderlyneoadjuvant/overcomesmetphysiologicaldoseconcernsattributedhypothesisnotguidance.",
+    "GaziethicsapprovalnoID/explicitconsentnotidentified;TUBITAKSBAG214S578funding/explicitCOInotidentifiednotproofnone. All5pagesread/rawblots/protocol/companions/currentintegrityunchecked/noacquisition/clinicalN/newtrial/grade/humanrelease."
+  ],
+  "full15Q67FieldMapScientificAcceptance": false,
+  "scientificAcceptance": false,
+  "humanApproval": false,
+  "newGrades": 0,
+  "newIndependentTrials": 0,
+  "uniqueNewIndependentPatientCountAdjudicated": false,
+  "released": false
+}

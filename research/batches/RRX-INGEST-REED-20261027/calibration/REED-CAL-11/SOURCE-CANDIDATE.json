@@ -1,0 +1,1040 @@
+{
+  "schemaVersion": "REED-CAL-11-incidence-cohort-v1",
+  "paper": {
+    "id": "REED-CAL-11-P1",
+    "intakeReportId": "REED-d131e617c1651c38f178",
+    "pmid": "24282256",
+    "doi": "10.1158/1940-6207.capr-13-0224",
+    "title": "Regular aspirin use and risk of multiple myeloma: a prospective analysis in the health professionals follow-up study and nurses' health study.",
+    "sourceType": "primary_prospective_incidence_cohort"
+  },
+  "source": {
+    "id": "REED-CAL-11-S1",
+    "pmid": "24282256",
+    "doi": "10.1158/1940-6207.capr-13-0224",
+    "title": "Regular aspirin use and risk of multiple myeloma: a prospective analysis in the health professionals follow-up study and nurses' health study.",
+    "ref": "$REMAPRX_REED_ROOT/aspirin-myeloma/pdfs/24282256-birmann-2014.pdf",
+    "sha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+    "intakeReportId": "REED-d131e617c1651c38f178",
+    "physicalPages": 15
+  },
+  "inspection": {
+    "at": "2026-10-27T09:53:58.011029+00:00",
+    "activeReadiness": "READINESS.json",
+    "textualPagesRead": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "visualInspectedPhysicalPages": [
+      12,
+      15
+    ],
+    "fullScientificReviewComplete": false
+  },
+  "study": {
+    "design": "prospective_observational_cohorts",
+    "randomized": false,
+    "endpointPurpose": "incident_multiple_myeloma_risk",
+    "exposureLagYears": 4,
+    "exposureUpdateYears": 2,
+    "causalPreventionEstablished": false,
+    "sexInteractionProven": false,
+    "doseRecommendationEstablished": false,
+    "mainAnalysisAdjustment": "age stratified, BMI; pooled cohort/gender additionally",
+    "exposureMissingHandling": "carry previous exposure one followup interval only, then set missing",
+    "participantCountsNotSummedAcrossAnalysesOrCAL04": true,
+    "mechanismDirectlyMeasured": false,
+    "safetyResultAvailable": false,
+    "optimalRiskBenefitDoseFrequency": null
+  },
+  "cohorts": [
+    {
+      "id": "REED-CAL-11-G1",
+      "name": "HPFS",
+      "sexAsReported": "men",
+      "quantityBaselineN": 30839,
+      "quantityBaselineYear": 1996,
+      "durationBaselineN": 47029,
+      "durationBaselineYear": 1990,
+      "quantityCases": 72,
+      "quantityPersonYears": 319474,
+      "durationCases": 132,
+      "durationPersonYears": 664264,
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 3,
+          "printedPage": "Author manuscript Page 3",
+          "nativeSection": "Population/exposure/covariables"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 12,
+          "printedPage": "Author manuscript Page 12",
+          "nativeSection": "Figure1 population flow and footnotes"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 15,
+          "printedPage": "Author manuscript Page 15",
+          "nativeSection": "Table3 incidence HRs and footnotes"
+        }
+      ]
+    },
+    {
+      "id": "REED-CAL-11-G2",
+      "name": "NHS",
+      "sexAsReported": "women",
+      "quantityBaselineN": 85942,
+      "quantityBaselineYear": 1984,
+      "durationBaselineN": 85942,
+      "durationBaselineYear": 1984,
+      "quantityCases": 193,
+      "quantityPersonYears": 1678032,
+      "durationCases": 196,
+      "durationPersonYears": 1731194,
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 3,
+          "printedPage": "Author manuscript Page 3",
+          "nativeSection": "Population/exposure/covariables"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 12,
+          "printedPage": "Author manuscript Page 12",
+          "nativeSection": "Figure1 population flow and footnotes"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 15,
+          "printedPage": "Author manuscript Page 15",
+          "nativeSection": "Table3 incidence HRs and footnotes"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "REED-CAL-11-R01",
+      "outcome": "Incident multiple myeloma by cumulative_average_quantity",
+      "exposureAxis": "cumulative_average_quantity",
+      "unit": "325mg adult-strength tablet equivalents per week",
+      "analysisCases": 265,
+      "reportedTotalPersonYears": 1997506,
+      "participantDenominatorIsPersonYears": false,
+      "cohortRows": [
+        {
+          "category": "Non-users",
+          "HPFS": {
+            "cases": 19,
+            "personYears": 73701,
+            "HR": 1,
+            "CI95": null
+          },
+          "NHS": {
+            "cases": 30,
+            "personYears": 369337,
+            "HR": 1,
+            "CI95": null
+          },
+          "combined": {
+            "HR": 1,
+            "CI95": null
+          }
+        },
+        {
+          "category": "<2",
+          "HPFS": {
+            "cases": 29,
+            "personYears": 133637,
+            "HR": 0.79,
+            "CI95": [
+              0.44,
+              1.42
+            ]
+          },
+          "NHS": {
+            "cases": 75,
+            "personYears": 609143,
+            "HR": 0.99,
+            "CI95": [
+              0.63,
+              1.54
+            ]
+          },
+          "combined": {
+            "HR": 0.92,
+            "CI95": [
+              0.66,
+              1.3
+            ]
+          }
+        },
+        {
+          "category": "2-<5",
+          "HPFS": {
+            "cases": 21,
+            "personYears": 77289,
+            "HR": 0.88,
+            "CI95": [
+              0.47,
+              1.65
+            ]
+          },
+          "NHS": {
+            "cases": 56,
+            "personYears": 351847,
+            "HR": 1.13,
+            "CI95": [
+              0.71,
+              1.79
+            ]
+          },
+          "combined": {
+            "HR": 1.04,
+            "CI95": [
+              0.72,
+              1.5
+            ]
+          }
+        },
+        {
+          "category": ">=5",
+          "HPFS": {
+            "cases": 3,
+            "personYears": 34847,
+            "HR": 0.28,
+            "CI95": [
+              0.08,
+              0.95
+            ]
+          },
+          "NHS": {
+            "cases": 32,
+            "personYears": 347705,
+            "HR": 0.71,
+            "CI95": [
+              0.43,
+              1.18
+            ]
+          },
+          "combined": {
+            "HR": 0.61,
+            "CI95": [
+              0.39,
+              0.94
+            ]
+          }
+        }
+      ],
+      "estimate": {
+        "kind": "hazard_ratio",
+        "reference": "non-users of regular aspirin",
+        "cohortAdjustment": "Cox stratified on age in months and adjusted for current BMI",
+        "combinedAdjustment": "Cox stratified on age in months and adjusted for BMI and cohort (gender)",
+        "trendP": {
+          "HPFS": 0.11,
+          "NHS": 0.22,
+          "combined": 0.06
+        },
+        "trendTestNotPairwiseCategoryP": true,
+        "CILevel": 0.95,
+        "absoluteRiskReduction": null,
+        "NNT": null
+      },
+      "time": {
+        "exposureLagYears": 4,
+        "followupEnd": "2008; NHS June in text versus July in Figure1 unresolved",
+        "quantityDurationDifferentBaselines": true
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 4,
+          "printedPage": "Author manuscript Page 4",
+          "nativeSection": "Ascertainment/Statistical analysis"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 5,
+          "printedPage": "Author manuscript Page 5",
+          "nativeSection": "Results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 15,
+          "printedPage": "Author manuscript Page 15",
+          "nativeSection": "Table3 incidence HRs and footnotes"
+        }
+      ],
+      "causalPreventionEstablished": false,
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED-CAL-11-R02",
+      "outcome": "Incident multiple myeloma by continuous_duration",
+      "exposureAxis": "continuous_duration",
+      "unit": "years of continuous regular aspirin use",
+      "analysisCases": 328,
+      "reportedTotalPersonYears": 2395458,
+      "participantDenominatorIsPersonYears": false,
+      "cohortRows": [
+        {
+          "category": "Non-users",
+          "HPFS": {
+            "cases": 52,
+            "personYears": 256203,
+            "HR": 1,
+            "CI95": null
+          },
+          "NHS": {
+            "cases": 30,
+            "personYears": 369337,
+            "HR": 1,
+            "CI95": null
+          },
+          "combined": {
+            "HR": 1,
+            "CI95": null
+          }
+        },
+        {
+          "category": "<=5",
+          "HPFS": {
+            "cases": 55,
+            "personYears": 269879,
+            "HR": 0.77,
+            "CI95": [
+              0.53,
+              1.14
+            ]
+          },
+          "NHS": {
+            "cases": 94,
+            "personYears": 867731,
+            "HR": 0.92,
+            "CI95": [
+              0.6,
+              1.39
+            ]
+          },
+          "combined": {
+            "HR": 0.8,
+            "CI95": [
+              0.61,
+              1.06
+            ]
+          }
+        },
+        {
+          "category": "6-10",
+          "HPFS": {
+            "cases": 19,
+            "personYears": 99134,
+            "HR": 0.65,
+            "CI95": [
+              0.38,
+              1.1
+            ]
+          },
+          "NHS": {
+            "cases": 44,
+            "personYears": 293653,
+            "HR": 1.32,
+            "CI95": [
+              0.83,
+              2.11
+            ]
+          },
+          "combined": {
+            "HR": 0.97,
+            "CI95": [
+              0.69,
+              1.35
+            ]
+          }
+        },
+        {
+          "category": ">=11",
+          "HPFS": {
+            "cases": 6,
+            "personYears": 39047,
+            "HR": 0.42,
+            "CI95": [
+              0.18,
+              0.98
+            ]
+          },
+          "NHS": {
+            "cases": 28,
+            "personYears": 200472,
+            "HR": 0.81,
+            "CI95": [
+              0.48,
+              1.37
+            ]
+          },
+          "combined": {
+            "HR": 0.63,
+            "CI95": [
+              0.41,
+              0.95
+            ]
+          }
+        }
+      ],
+      "estimate": {
+        "kind": "hazard_ratio",
+        "reference": "non-users of regular aspirin",
+        "cohortAdjustment": "Cox stratified on age in months and adjusted for current BMI",
+        "combinedAdjustment": "Cox stratified on age in months and adjusted for BMI and cohort (gender)",
+        "trendP": {
+          "HPFS": 0.02,
+          "NHS": 0.96,
+          "combined": 0.17
+        },
+        "trendTestNotPairwiseCategoryP": true,
+        "CILevel": 0.95,
+        "absoluteRiskReduction": null,
+        "NNT": null
+      },
+      "time": {
+        "exposureLagYears": 4,
+        "followupEnd": "2008; NHS June in text versus July in Figure1 unresolved",
+        "quantityDurationDifferentBaselines": true
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 4,
+          "printedPage": "Author manuscript Page 4",
+          "nativeSection": "Ascertainment/Statistical analysis"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 5,
+          "printedPage": "Author manuscript Page 5",
+          "nativeSection": "Results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 15,
+          "printedPage": "Author manuscript Page 15",
+          "nativeSection": "Table3 incidence HRs and footnotes"
+        }
+      ],
+      "causalPreventionEstablished": false,
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    }
+  ],
+  "claims": [
+    {
+      "id": "REED-CAL-11-C01",
+      "resultIds": [
+        "REED-CAL-11-R01"
+      ],
+      "statement": "In these observational cohorts, cumulative average >=5 adult-strength tablet equivalents/week was associated with lower incident-MM hazard versus non-use (combined HR0.61,95%CI0.39-0.94), with lower categories not showing that pattern. The overall quantity trend P=.06 and sparse exposed male cases limit inference; no causal prevention or dosing recommendation.",
+      "relation": "observational_incidence_association",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED-CAL-11-C02",
+      "resultIds": [
+        "REED-CAL-11-R02"
+      ],
+      "statement": "Continuous regular aspirin use >=11years was associated with lower incident-MM hazard versus non-use (combined HR0.63,95%CI0.41-0.95). Shorter categories remain near-null/imprecise and the combined trend P=.17; male/female statistical patterns do not establish a sex interaction or causal prevention.",
+      "relation": "observational_incidence_association",
+      "acceptedSupport": false
+    }
+  ],
+  "reviewInputs": [
+    {
+      "id": "Q01",
+      "answer": "Observational incident-MM association, not treatment or postdiagnosis mortality.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 1,
+          "printedPage": "Author manuscript Page 1",
+          "nativeSection": "Title/Abstract/disclosures"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 4,
+          "printedPage": "Author manuscript Page 4",
+          "nativeSection": "Ascertainment/Statistical analysis"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q02",
+      "answer": "QuantityHPFS30839/NHS85942;durationHPFS47029/NHS85942; quantity265cases vsduration328.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 2,
+          "printedPage": "Author manuscript Page 2",
+          "nativeSection": "Introduction/Study population"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 3,
+          "printedPage": "Author manuscript Page 3",
+          "nativeSection": "Population/exposure/covariables"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q03",
+      "answer": "Cumulative weekly325mg equivalents and continuous years, updated biennially with4-yearlag; no assigned dose.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 3,
+          "printedPage": "Author manuscript Page 3",
+          "nativeSection": "Population/exposure/covariables"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 4,
+          "printedPage": "Author manuscript Page 4",
+          "nativeSection": "Ascertainment/Statistical analysis"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q04",
+      "answer": "Non-users reference, no randomization/blinding established; different baselines/cutoffmonth discrepancy held.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 2,
+          "printedPage": "Author manuscript Page 2",
+          "nativeSection": "Introduction/Study population"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 4,
+          "printedPage": "Author manuscript Page 4",
+          "nativeSection": "Ascertainment/Statistical analysis"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 12,
+          "printedPage": "Author manuscript Page 12",
+          "nativeSection": "Figure1 population flow and footnotes"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q05",
+      "answer": "Medical-record-confirmed incidentMM through2008; no MGUS progression or mortality result.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 4,
+          "printedPage": "Author manuscript Page 4",
+          "nativeSection": "Ascertainment/Statistical analysis"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 12,
+          "printedPage": "Author manuscript Page 12",
+          "nativeSection": "Figure1 population flow and footnotes"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q06",
+      "answer": "Complete Table3 categories/HRs/CIs and reported cases/PY retained, distinct denominators/trendP; duration row/total PY discrepancies held.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 15,
+          "printedPage": "Author manuscript Page 15",
+          "nativeSection": "Table3 incidence HRs and footnotes"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q07",
+      "answer": "Baseline exclusions/source missingness handling retained; followup-loss flow and self-report accuracy not independently complete.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 3,
+          "printedPage": "Author manuscript Page 3",
+          "nativeSection": "Population/exposure/covariables"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 4,
+          "printedPage": "Author manuscript Page 4",
+          "nativeSection": "Ascertainment/Statistical analysis"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 5,
+          "printedPage": "Author manuscript Page 5",
+          "nativeSection": "Results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 12,
+          "printedPage": "Author manuscript Page 12",
+          "nativeSection": "Figure1 population flow and footnotes"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q08",
+      "answer": "No bleeding or other adverse-event result: not zero events/safety proof.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 4,
+          "printedPage": "Author manuscript Page 4",
+          "nativeSection": "Ascertainment/Statistical analysis"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 8,
+          "printedPage": "Author manuscript Page 8",
+          "nativeSection": "Limitations/Acknowledgments"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q09",
+      "answer": "Indication confounding, sparse male cases, multiple analyses; no sex interaction from subgroup significance, source inconsistencies unresolved.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 4,
+          "printedPage": "Author manuscript Page 4",
+          "nativeSection": "Ascertainment/Statistical analysis"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 6,
+          "printedPage": "Author manuscript Page 6",
+          "nativeSection": "Sensitivity/Discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 7,
+          "printedPage": "Author manuscript Page 7",
+          "nativeSection": "Discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 15,
+          "printedPage": "Author manuscript Page 15",
+          "nativeSection": "Table3 incidence HRs and footnotes"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q10",
+      "answer": "Selected US cohorts/weekly equivalents; no direct81vs325mg or daily recommendation/causal prevention.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 4,
+          "printedPage": "Author manuscript Page 4",
+          "nativeSection": "Ascertainment/Statistical analysis"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 7,
+          "printedPage": "Author manuscript Page 7",
+          "nativeSection": "Discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 8,
+          "printedPage": "Author manuscript Page 8",
+          "nativeSection": "Limitations/Acknowledgments"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q11",
+      "answer": "NHS/HPFS related toCAL04, distinct report/endpoint; overlap unresolved and not pooled.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 2,
+          "printedPage": "Author manuscript Page 2",
+          "nativeSection": "Introduction/Study population"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 4,
+          "printedPage": "Author manuscript Page 4",
+          "nativeSection": "Ascertainment/Statistical analysis"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 6,
+          "printedPage": "Author manuscript Page 6",
+          "nativeSection": "Sensitivity/Discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 8,
+          "printedPage": "Author manuscript Page 8",
+          "nativeSection": "Limitations/Acknowledgments"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q12",
+      "answer": "Academic investigators, statedNIH/NCIgrant support; no competing interests reported, supply unreported.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 1,
+          "printedPage": "Author manuscript Page 1",
+          "nativeSection": "Title/Abstract/disclosures"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 8,
+          "printedPage": "Author manuscript Page 8",
+          "nativeSection": "Limitations/Acknowledgments"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q13",
+      "answer": "Exact15-page manuscript read; materialtable/flow visual; protocol/companions/externalintegrity incomplete.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 1,
+          "printedPage": "Author manuscript Page 1",
+          "nativeSection": "Title/Abstract/disclosures"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 3,
+          "printedPage": "Author manuscript Page 3",
+          "nativeSection": "Population/exposure/covariables"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 4,
+          "printedPage": "Author manuscript Page 4",
+          "nativeSection": "Ascertainment/Statistical analysis"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 15,
+          "printedPage": "Author manuscript Page 15",
+          "nativeSection": "Table3 incidence HRs and footnotes"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q14",
+      "answer": "ExactR01-R02/C01-C02 privateC21incidence proposal, unapplied.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 7,
+          "printedPage": "Author manuscript Page 7",
+          "nativeSection": "Discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 8,
+          "printedPage": "Author manuscript Page 8",
+          "nativeSection": "Limitations/Acknowledgments"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending",
+      "downstreamMapping": {
+        "paperId": "REED-CAL-11-P1",
+        "intakeReportId": "REED-d131e617c1651c38f178",
+        "resultIds": [
+          "REED-CAL-11-R01",
+          "REED-CAL-11-R02"
+        ],
+        "claimIds": [
+          "REED-CAL-11-C01",
+          "REED-CAL-11-C02"
+        ],
+        "existingGuideId": "G-CONDITION-C21",
+        "purpose": "Private incident-MM risk association context; distinct from postdiagnosis mortality and supportive-care prophylaxis, not an aspirin prevention recommendation.",
+        "publicationState": "private_draft",
+        "canonicalChanges": 0
+      }
+    },
+    {
+      "id": "Q15",
+      "answer": "Inverse highest-category associations do not establish causal prevention; null lowercategories/non-significant combinedtrends/limits retained.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 8,
+          "printedPage": "Author manuscript Page 8",
+          "nativeSection": "Limitations/Acknowledgments"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 15,
+          "printedPage": "Author manuscript Page 15",
+          "nativeSection": "Table3 incidence HRs and footnotes"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    }
+  ],
+  "sourceQualifications": [
+    {
+      "id": "C11-NHS-CUTOFF",
+      "status": "unresolved",
+      "sourceA": {
+        "locator": {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 4,
+          "printedPage": "Author manuscript Page 4",
+          "nativeSection": "Ascertainment/Statistical analysis"
+        },
+        "text": "NHS follow-up cutoff June2008"
+      },
+      "sourceB": {
+        "locator": {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 12,
+          "printedPage": "Author manuscript Page 12",
+          "nativeSection": "Figure1 population flow and footnotes"
+        },
+        "text": "Figure1 footnote NHS July2008"
+      },
+      "action": "Preserve both, no silent cutoff-month correction."
+    },
+    {
+      "id": "C11-TREND-CODING",
+      "status": "unresolved",
+      "sourceA": {
+        "locator": {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 4,
+          "printedPage": "Author manuscript Page 4",
+          "nativeSection": "Ascertainment/Statistical analysis"
+        },
+        "text": "Methods ordinal trend variables use category medians"
+      },
+      "sourceB": {
+        "locator": {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 15,
+          "printedPage": "Author manuscript Page 15",
+          "nativeSection": "Table3 incidence HRs and footnotes"
+        },
+        "text": "Table3 footnote uses category mid-points"
+      },
+      "action": "Retain reported P-trend without claiming exact coding independently reproduced."
+    },
+    {
+      "id": "C11-PERSON-YEAR-SUM",
+      "status": "unresolved_literal_totals",
+      "locator": {
+        "kind": "pdf",
+        "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+        "physicalPage": 15,
+        "printedPage": "Author manuscript Page 15",
+        "nativeSection": "Table3 incidence HRs and footnotes"
+      },
+      "description": "Duration displayed HPFS row person-years sum664263 versus total664264; NHS sum1731193 versus total1731194. Overall2395458 is reported; no inferred patients or replacement totals.",
+      "action": "Keep literal row and total values, one-person-year discrepancies unresolved; no recomputation of HRs."
+    },
+    {
+      "id": "C11-OVERLAP",
+      "status": "not_independently_adjudicated",
+      "locators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 2,
+          "printedPage": "Author manuscript Page 2",
+          "nativeSection": "Introduction/Study population"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 4,
+          "printedPage": "Author manuscript Page 4",
+          "nativeSection": "Ascertainment/Statistical analysis"
+        }
+      ],
+      "description": "Same NHS/HPFS parent cohorts as CAL04 mortality report; distinct incident-disease question/analysis windows.",
+      "action": "Separate reports/endpoints; no sum of people/person-time/cases with CAL04, no claim of independent cohort replication."
+    },
+    {
+      "id": "C11-DOSE-SAFETY",
+      "status": "not_established",
+      "locators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 3,
+          "printedPage": "Author manuscript Page 3",
+          "nativeSection": "Population/exposure/covariables"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 7,
+          "printedPage": "Author manuscript Page 7",
+          "nativeSection": "Discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "a60cf1bc0e4728767d30f0a1d9a25896ef825531e31ebf3dec247dee626a69d3",
+          "physicalPage": 8,
+          "printedPage": "Author manuscript Page 8",
+          "nativeSection": "Limitations/Acknowledgments"
+        }
+      ],
+      "description": "Source converts baby tablets to adult-strength equivalents, cannot directly separate81mg vs325mg; no dose/frequency with optimal risk-benefit established and no bleeding endpoint extracted.",
+      "action": "No daily-dose recommendation, sole81mg effect, safety benefit or randomized prevention claim."
+    }
+  ],
+  "limitations": [
+    "Nonrandomized/indication uncontrolled, residual confounding",
+    "Four-yearlag cannot eliminate unknown preclinical latency",
+    "Quantity and duration overlap/differ in baseline and N, not added",
+    "Sparse >=5-tablet male cases and wide subgroupCIs",
+    "Sex/cohort patterns not formal sex interaction proof",
+    "Lower categories near-null; pooled trendP.06/.17 not pairwise tests",
+    "NHSJune/Julycutoff, categorymedian/midpoint coding, duration row/total person-years unresolved",
+    "Cannot directly separate81mg and325mg or recommend dose/frequency",
+    "CAL04sharedparentcohorts not independently replicated/pooled",
+    "No new measured mechanism/safety/causal prevention or human approval"
+  ],
+  "scientificAcceptance": false,
+  "humanApproval": false,
+  "released": false
+}

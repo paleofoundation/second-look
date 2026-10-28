@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "reed2-cal09-ASCT-ASA-thrombocytopenia-v1",
+  "required": [
+    "schemaVersion",
+    "paper",
+    "source",
+    "inspection",
+    "study",
+    "populations",
+    "results",
+    "claims",
+    "reviewInputs",
+    "sourceQualifications",
+    "limitations",
+    "scientificAcceptance",
+    "humanApproval",
+    "released"
+  ],
+  "controls": [
+    "Exact cohort/selection/period and primary/secondary aspirin indication",
+    "Clinical aspirin continuation not presumed randomized",
+    "Platelet units/exposure holds/windows and transfusion thresholds literal",
+    "Bleeding events versus patients/severity/uncertainty",
+    "Adjusted associations not causal safety/equivalence",
+    "Cardiovascular/bleeding/antitumor purposes distinct",
+    "12 pages/material visuals/67 typed fields/exact source hashes",
+    "Private candidate and independent bounded fidelity only"
+  ],
+  "gates": {
+    "scientificAcceptance": false,
+    "humanApproval": false,
+    "released": false,
+    "newGrades": 0,
+    "scientificBatchScale20or30Approved": false
+  }
+}

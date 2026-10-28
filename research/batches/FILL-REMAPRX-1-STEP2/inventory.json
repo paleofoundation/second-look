@@ -1,0 +1,4361 @@
+{
+  "schemaVersion": 1,
+  "order": "FILL-REMAPRX-1",
+  "step": 2,
+  "baseCommit": "92f323f3425fd40c06787d57ff92fa672a418cd0",
+  "scope": "Existing-source/canonical-outcome inventory only; no extraction, new appraisal or scientific import.",
+  "profileCount": 16,
+  "sourceAssociationCount": 93,
+  "distinctSourceCount": 86,
+  "reusableExactOutcomeRows": 0,
+  "newOutcomeRows": 0,
+  "decision": "GATE_ASSESSMENT_OR_PENDING_MODEL_AUTHORIZATION",
+  "profiles": [
+    {
+      "route": "/drugs/fluvoxamine",
+      "entityId": "D02",
+      "guideId": "G-DRUG-D02",
+      "sourceIds": [
+        "CTX-D02-LABEL",
+        "P-D02-ACTIV6-2023",
+        "P-REVIVE-2026",
+        "P-D02-SIGMA1-2019",
+        "COND-C02-COVIDOUT-2022"
+      ],
+      "existingSynthesisIds": [],
+      "exactCanonicalRows": [],
+      "gap": "Acute controlled reports exist, but no D02 outcome assessment is recorded; REVIVE is quarantined. The metformin COVID-OUT row is the wrong drug."
+    },
+    {
+      "route": "/drugs/sirolimus",
+      "entityId": "D06",
+      "guideId": "G-DRUG-D06",
+      "sourceIds": [
+        "CTX-D06-LABEL",
+        "CTX-D06-OVARIAN-TRIAL",
+        "P-D06-BREAST-2015",
+        "P-D06-AML-2018",
+        "P-D06-PERIODONTAL-2020",
+        "P-D06-PROSTATE-2010",
+        "P-D06-RECTAL-2015",
+        "P-D06-CML-2008",
+        "MECH-D06-AUTOPHAGY-2009",
+        "AGING-PEARL-2025",
+        "AGING-RAPA-MICE-2009",
+        "AGING-SIROLIMUS-LABEL"
+      ],
+      "existingSynthesisIds": [],
+      "exactCanonicalRows": [],
+      "gap": "Combination, pharmacodynamic, mouse and human healthspan records exist. None has a D06 canonical assessed outcome; the endpoints cannot be combined or called longevity benefit."
+    },
+    {
+      "route": "/drugs/ivermectin",
+      "entityId": "D08",
+      "guideId": "G-DRUG-D08",
+      "sourceIds": [
+        "CTX-D08-LABEL",
+        "P-D08-ACTIV6-2023",
+        "P-D08-OVARIAN-2009",
+        "P-D08-GBM-2016",
+        "P-D08-BREAST-2016",
+        "P-D08-CRC-2014",
+        "P-D08-HCC-2022",
+        "P-D08-ANTIVIRAL-2023",
+        "COND-C02-COVIDOUT-2022"
+      ],
+      "existingSynthesisIds": [],
+      "exactCanonicalRows": [],
+      "gap": "Acute recovery reports and nonclinical oncology/mechanistic records exist. No D08 assessed outcome; metformin COVID-OUT effects cannot be borrowed."
+    },
+    {
+      "route": "/drugs/fenbendazole",
+      "entityId": "D10",
+      "guideId": "G-DRUG-D10",
+      "sourceIds": [
+        "CTX-D10-FDA",
+        "P-D10-LIVER-2024",
+        "P-D10-OVARIAN-2024",
+        "P-D10-LIVER-2026",
+        "MECH-D10-MICROTUBULE-2018"
+      ],
+      "existingSynthesisIds": [],
+      "exactCanonicalRows": [],
+      "gap": "Human liver-injury cases and preclinical tumor records exist. Neither harms cases nor cell/mouse findings establish anticancer benefit; no assessed D10 outcome."
+    },
+    {
+      "route": "/drugs/guanfacine",
+      "entityId": "D11",
+      "guideId": "G-DRUG-D11",
+      "sourceIds": [
+        "CTX-D11-LABEL",
+        "P-D11-LONGCOVID-2023"
+      ],
+      "existingSynthesisIds": [],
+      "exactCanonicalRows": [],
+      "gap": "Uncontrolled guanfacine plus NAC series exists. No exact combination-specific assessed outcome; do not isolate guanfacine benefit or invent a comparator."
+    },
+    {
+      "route": "/drugs/maraviroc",
+      "entityId": "D12",
+      "guideId": "G-DRUG-D12",
+      "sourceIds": [
+        "CTX-D12-LABEL",
+        "P-D12-BREAST-2012",
+        "P-D12-CRC-2016",
+        "P-D12-PANCREAS-2018"
+      ],
+      "existingSynthesisIds": [],
+      "exactCanonicalRows": [],
+      "gap": "Preclinical and exploratory human tumor/phase-I records exist. No exact D12 assessed outcome, and mechanism is not clinical benefit."
+    },
+    {
+      "route": "/drugs/rituximab",
+      "entityId": "D14",
+      "guideId": "G-DRUG-D14",
+      "sourceIds": [
+        "CTX-D14-LABEL",
+        "P-D14-VITILIGO-2013"
+      ],
+      "existingSynthesisIds": [],
+      "exactCanonicalRows": [],
+      "gap": "Five-person uncontrolled vitiligo pilot exists. No exact D14 assessed outcome; no randomized effect can be inferred."
+    },
+    {
+      "route": "/drugs/memantine",
+      "entityId": "D25",
+      "guideId": "G-DRUG-D25",
+      "sourceIds": [
+        "P-D25-GBM",
+        "CTX-D25-LABEL"
+      ],
+      "existingSynthesisIds": [],
+      "exactCanonicalRows": [],
+      "gap": "Label and laboratory NMDA/temozolomide record only in the linked set; exact memantine experimental scope is incomplete and no patient efficacy row is recorded."
+    },
+    {
+      "route": "/drugs/sildenafil",
+      "entityId": "D26",
+      "guideId": "G-DRUG-D26",
+      "sourceIds": [
+        "CTX-D26-LABEL",
+        "CTX-D26-VIAGRA",
+        "P-D26-COMBINATION",
+        "P-D26-GBM",
+        "MECH-D26-HYPOXIA-2025"
+      ],
+      "existingSynthesisIds": [],
+      "exactCanonicalRows": [],
+      "gap": "Class/combination models, observational tumor analysis and healthy-volunteer physiology exist. They are not interchangeable clinical sildenafil effects; no D26 assessed row."
+    },
+    {
+      "route": "/conditions/myalgic-encephalomyelitis-chronic-fatigue-syndrome",
+      "entityId": "C06",
+      "guideId": "G-CONDITION-C06",
+      "sourceIds": [
+        "COND-C06-CDC",
+        "COND-C06-TRPM3-2021",
+        "COND-C06-CDC-CARE",
+        "COND-C05-NIAMS",
+        "COND-C01-CDC"
+      ],
+      "existingSynthesisIds": [],
+      "exactCanonicalRows": [],
+      "gap": "Patient-cell TRPM3 investigation is mechanistic; contextual symptom-care sources are not treatment effects. No C06 assessed outcome."
+    },
+    {
+      "route": "/conditions/persistent-genital-arousal-disorder-genitopelvic-dysesthesia",
+      "entityId": "C08",
+      "guideId": "G-CONDITION-C08",
+      "sourceIds": [
+        "COND-C08-IPGAD-2023",
+        "COND-C08-NEURO-2020",
+        "P-D04-CSBD-2022"
+      ],
+      "existingSynthesisIds": [],
+      "exactCanonicalRows": [],
+      "gap": "Phenotype/neurological studies are not comparative drug results. Existing naltrexone CSBD outcome belongs to C07, not PGAD C08."
+    },
+    {
+      "route": "/conditions/multiple-myeloma",
+      "entityId": "C21",
+      "guideId": "G-CONDITION-C21",
+      "sourceIds": [
+        "COND-C21-NCI",
+        "COND-C21-THAL",
+        "COND-C21-IMMUNE",
+        "CP019-R01",
+        "CP020-R01",
+        "MF-MYELOMA-MODELS-2018",
+        "P-D07-MYELOMA-2016",
+        "P-D20-MYELOMA",
+        "P-D23-MYELOMA"
+      ],
+      "existingSynthesisIds": [],
+      "exactCanonicalRows": [],
+      "gap": "Preclinical models, secondary context and supportive thromboprophylaxis report exist. No exact assessed C21 outcome; clot prevention is not tumor control."
+    },
+    {
+      "route": "/conditions/type-2-diabetes",
+      "entityId": "C31",
+      "guideId": "G-CONDITION-C31",
+      "sourceIds": [
+        "COND-C31-NIDDK",
+        "COND-C31-MANAGEMENT",
+        "MF-LABEL-2025",
+        "CTX-REPURPOSING-NCATS",
+        "CTX-GUIDE-2"
+      ],
+      "existingSynthesisIds": [],
+      "exactCanonicalRows": [],
+      "gap": "All five linked sources are context, labels or methods. No comparative repurposed-treatment result is recorded here; no outcome data yet for this table."
+    },
+    {
+      "route": "/drugs/fluconazole",
+      "entityId": "D34",
+      "guideId": "G-DRUG-D34",
+      "sourceIds": [
+        "CTX-D34-MEDLINEPLUS",
+        "CTX-off-label-1",
+        "CTX-D34-LABEL",
+        "CTX-CANDIDA-GUIDELINE",
+        "CTX-GUIDE-2",
+        "CTX-CANDIDA-CDC",
+        "CTX-TERM-HYPHAE",
+        "CTX-TERM-BIOFILM",
+        "MECH-D34-HYPHAE-1999",
+        "MECH-D34-BIOFILM-2019",
+        "MECH-D07-HEDGEHOG-2010"
+      ],
+      "existingSynthesisIds": [],
+      "exactCanonicalRows": [],
+      "gap": "Labels/guidelines and isolate/biofilm experiments exist; fluconazole negative comparator must not inherit itraconazole findings. No assessed D34 outcome."
+    },
+    {
+      "route": "/drugs/tadalafil",
+      "entityId": "D31",
+      "guideId": "G-DRUG-TADALAFIL",
+      "sourceIds": [
+        "D31-CIALIS-LABEL",
+        "D31-ADCIRCA-LABEL",
+        "D31-RAYNAUD-2010",
+        "D31-RAYNAUD-2009",
+        "MECH-D31-OXYGENATION-2020",
+        "MECH-D31-PASTIS-2022"
+      ],
+      "existingSynthesisIds": [],
+      "exactCanonicalRows": [],
+      "gap": "Positive and null Raynaud crossover reports and distinct brain-physiology studies exist. No exact assessed D31 outcome; preserve conflicting findings and scope."
+    },
+    {
+      "route": "/conditions/aging",
+      "entityId": "GOAL-AGING",
+      "guideId": "G-GOAL-AGING",
+      "sourceIds": [
+        "AGING-NIH",
+        "AGING-RAPA-MICE-2009",
+        "AGING-PEARL-2025",
+        "MF-METPREVENT-2025",
+        "MF-MASTERS-2019",
+        "AGING-SIROLIMUS-LABEL",
+        "MF-LABEL-2025",
+        "P-D06-PERIODONTAL-2020"
+      ],
+      "existingSynthesisIds": [],
+      "exactCanonicalRows": [],
+      "gap": "Mouse survival/oral-health and human healthspan/physical-function reports exist. Sarcopenia rows are not general aging/lifespan rows, and no GOAL-AGING assessed row exists."
+    }
+  ],
+  "records": [
+    {
+      "route": "/drugs/fluvoxamine",
+      "entityId": "D02",
+      "sourceId": "CTX-D02-LABEL",
+      "drugRegimenAsRecorded": "No intervention effect established by context",
+      "conditionScopeAsRecorded": "Patients receiving the labeled product",
+      "populationAsRecorded": "Patients receiving the labeled product",
+      "populationMissingReason": null,
+      "endpointScope": "Not an original intervention-result record",
+      "role": "context_only",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "sourceRecord": {
+        "title": "Fluvoxamine — US prescribing information",
+        "sourceType": "context",
+        "design": "Official US product label",
+        "preview": "Approved uses, pharmacology, contraindications, adverse effects and interactions.",
+        "access": "full_text_html",
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Indications; Dosage; Contraindications; Warnings; Interactions; Clinical pharmacology",
+          "source_url": "https://www.dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=7ecd83ec-88f5-4f85-9cc2-9068375d8820&type=display",
+          "basis": "full_text"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "fd44d6a449e7d0cef3f57029a9e02fc40714fac088d6b9aaabe90d33750cfe82",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/fluvoxamine",
+      "entityId": "D02",
+      "sourceId": "P-D02-ACTIV6-2023",
+      "drugRegimenAsRecorded": "Fluvoxamine, higher-dose regimen",
+      "conditionScopeAsRecorded": "Acute COVID-19",
+      "populationAsRecorded": "Outpatients with mild to moderate acute COVID-19",
+      "populationMissingReason": null,
+      "endpointScope": "Time to sustained recovery",
+      "role": "clinical_report",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Direct acute-infection report; not an established Long COVID treatment result.",
+      "sourceRecord": {
+        "title": "Higher-Dose Fluvoxamine and Time to Sustained Recovery in Outpatients With COVID-19: The ACTIV-6 Randomized Clinical Trial",
+        "sourceType": "primary",
+        "design": "Randomized placebo-controlled trial",
+        "preview": "The higher-dose regimen did not shorten sustained recovery.",
+        "access": "full_text_html",
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Abstract; Results",
+          "source_url": "https://jamanetwork.com/journals/jama/fullarticle/2812204",
+          "basis": "full_text"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "9bcab2b3ace949d2399bb56f455a88fbf7414bd7ee3478349973dd06b43c0074",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/fluvoxamine",
+      "entityId": "D02",
+      "sourceId": "P-REVIVE-2026",
+      "drugRegimenAsRecorded": "Fluvoxamine and metformin trial arms; not assumed to be a combination",
+      "conditionScopeAsRecorded": "Long COVID fatigue",
+      "populationAsRecorded": "Adults with persistent fatigue after confirmed SARS-CoV-2 infection",
+      "populationMissingReason": null,
+      "endpointScope": "Fatigue",
+      "role": "quarantined",
+      "decision": "exclude_quarantined",
+      "reason": "Canonical status is Quarantined; original retracted/republication report is excluded from efficacy support.",
+      "sourceRecord": {
+        "title": "The Effect of Fluvoxamine and Metformin for Fatigue in Patients With Long COVID : An Adaptive Randomized Trial.",
+        "sourceType": null,
+        "design": "Randomized placebo-controlled adaptive trial",
+        "preview": "The original REVIVE report has a notice of retraction and republication and is excluded from efficacy conclusions.",
+        "access": "abstract_only",
+        "status": "Quarantined",
+        "reviewState": "pending",
+        "n": null,
+        "randomizedN": 399,
+        "intervention": null,
+        "comparator": "Matching placebo",
+        "decisiveLimit": "The original report was retracted for republication."
+      },
+      "locators": [],
+      "locatorState": "not_recorded",
+      "existingReviewState": {
+        "source": "pending",
+        "metadata": "quarantined",
+        "humanApproval": "pending",
+        "publicationState": "private_ai_draft"
+      },
+      "sourceRecordSha256": "024e983701bcb7234a01b22d6caac08e6b1e1fb914336c3bec2be421a9bf5774",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/fluvoxamine",
+      "entityId": "D02",
+      "sourceId": "P-D02-SIGMA1-2019",
+      "drugRegimenAsRecorded": "Fluvoxamine and Sigma-1 pathway experiments",
+      "conditionScopeAsRecorded": "Experimental inflammation and sepsis",
+      "populationAsRecorded": "Human blood leukocytes and mouse inflammation/sepsis models",
+      "populationMissingReason": null,
+      "endpointScope": "Inflammatory responses and IRE1-linked cytokine production",
+      "role": "nonclinical_report",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Cell/mouse mechanism does not become an acute COVID or Long COVID patient outcome.",
+      "sourceRecord": {
+        "title": "Modulation of the Sigma-1 Receptor–IRE1 pathway is beneficial in preclinical models of inflammation and sepsis",
+        "sourceType": "primary",
+        "design": "Cell and mouse experiments",
+        "preview": "Sigma-1 signaling restrained IRE1-linked cytokine production; fluvoxamine reduced inflammatory responses.",
+        "access": "full_text_html",
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Abstract; Results",
+          "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6936250/",
+          "basis": "full_text"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "5c53af778e76bd29bcf355cd0b84c6bedb2a35bc3b338ebed2a25539b0e28069",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/fluvoxamine",
+      "entityId": "D02",
+      "sourceId": "COND-C02-COVIDOUT-2022",
+      "drugRegimenAsRecorded": "Separate metformin, ivermectin and fluvoxamine arms",
+      "conditionScopeAsRecorded": "Acute COVID-19",
+      "populationAsRecorded": null,
+      "populationMissingReason": "not_recorded_in_canonical_source_metadata",
+      "endpointScope": "Primary acute composite outcome",
+      "role": "clinical_report",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "The sole canonical row for this report belongs to metformin D01; no other drug may inherit its effect or grade.",
+      "sourceRecord": {
+        "title": "Randomized Trial of Metformin, Ivermectin, and Fluvoxamine for Covid-19",
+        "sourceType": "primary",
+        "design": "Randomized placebo-controlled trial",
+        "preview": "The three medicines did not significantly reduce the primary acute COVID-19 composite outcome.",
+        "access": "Public source",
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Abstract; Results"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "4298bfd2b42539ffb0bec56c7dbdb48efbc1f69eb3f96598d89a38705c67256c",
+      "otherScopedCanonicalRows": [
+        {
+          "rowId": "SYN-D01-C02-COND-C02-COVIDOUT-2022-B1E71756C16B18BBC77C",
+          "drugId": "D01",
+          "conditionId": "C02",
+          "population": "Nonhospitalized adults aged 30–85 with overweight or obesity, infection confirmed within 3 days and symptoms beginning within 7 days; 1, 323 in the modified intention-to-treat population",
+          "endpoint": "Primary composite of hypoxemia (home oxygen saturation ≤93%), emergency-department visit, hospitalization or death",
+          "timepoint": "Through 14 days after randomization"
+        }
+      ]
+    },
+    {
+      "route": "/drugs/sirolimus",
+      "entityId": "D06",
+      "sourceId": "CTX-D06-LABEL",
+      "drugRegimenAsRecorded": "No intervention effect established by context",
+      "conditionScopeAsRecorded": "Patients receiving the labeled product",
+      "populationAsRecorded": "Patients receiving the labeled product",
+      "populationMissingReason": null,
+      "endpointScope": "Not an original intervention-result record",
+      "role": "context_only",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "sourceRecord": {
+        "title": "Sirolimus — US prescribing information",
+        "sourceType": "context",
+        "design": "Official US product label",
+        "preview": "Approved uses, pharmacology, contraindications, adverse effects and interactions.",
+        "access": "full_text_html",
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Indications; Dosage; Contraindications; Warnings; Interactions; Clinical pharmacology",
+          "source_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a71c205f-7acc-40e5-9eee-69daeb49a352",
+          "basis": "full_text"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "7d08d492e8ccdc17d6f643b0607c6918c4cb83e001068345824cf8b64b478ac8",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/sirolimus",
+      "entityId": "D06",
+      "sourceId": "CTX-D06-OVARIAN-TRIAL",
+      "drugRegimenAsRecorded": "No intervention effect established by context",
+      "conditionScopeAsRecorded": "High-grade ovarian, fallopian tube or primary peritoneal cancer",
+      "populationAsRecorded": "High-grade ovarian, fallopian tube or primary peritoneal cancer",
+      "populationMissingReason": null,
+      "endpointScope": "Not an original intervention-result record",
+      "role": "context_only",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "sourceRecord": {
+        "title": "Auranofin and sirolimus in ovarian, fallopian tube or primary peritoneal cancer",
+        "sourceType": "context",
+        "design": "Official phase II trial description",
+        "preview": "Combination trial evaluating tumor response; the listing describes the research aim, not an efficacy estimate.",
+        "access": "full_text_html",
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Trial objectives",
+          "source_url": "https://www.cancer.gov/research/participate/clinical-trials-search/v?id=NCI-2018-00321",
+          "basis": "full_text"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "b05f999cb78ed48df00d389c35266b96dd11311520e1755724554a9db771127c",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/sirolimus",
+      "entityId": "D06",
+      "sourceId": "P-D06-BREAST-2015",
+      "drugRegimenAsRecorded": "Sirolimus plus trastuzumab",
+      "conditionScopeAsRecorded": "HER2-positive metastatic breast cancer after progression on trastuzumab",
+      "populationAsRecorded": "HER2-positive metastatic breast cancer progressing on trastuzumab",
+      "populationMissingReason": null,
+      "endpointScope": "Combination activity; exact outcome-specific estimate not recorded in source summary",
+      "role": "clinical_report",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Combination and disease setting must remain exact; sirolimus monotherapy benefit cannot be isolated from this record.",
+      "sourceRecord": {
+        "title": "Sirolimus and trastuzumab combination therapy for HER2-positive metastatic breast cancer after progression on prior trastuzumab therapy",
+        "sourceType": "primary",
+        "design": "Phase II combination trial",
+        "preview": "Tested mTOR blockade as a way to address resistance to trastuzumab.",
+        "access": "abstract_only",
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Abstract",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/25687356/",
+          "basis": "abstract"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "41146e95efbb2619ff799234668c8231f613920bf098f86393580968667702d6",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/sirolimus",
+      "entityId": "D06",
+      "sourceId": "P-D06-AML-2018",
+      "drugRegimenAsRecorded": "Sirolimus with intensive chemotherapy",
+      "conditionScopeAsRecorded": "High-risk acute myeloid leukemia",
+      "populationAsRecorded": "High-risk AML",
+      "populationMissingReason": null,
+      "endpointScope": "Remission induction and mTORC1 target inhibition",
+      "role": "clinical_report",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Clinical combination/pharmacodynamic endpoints remain separate; not standalone sirolimus efficacy.",
+      "sourceRecord": {
+        "title": "Sirolimus Enhances Remission Induction in Patients with High Risk Acute Myeloid Leukemia and mTORC1 Target Inhibition",
+        "sourceType": "primary",
+        "design": "Clinical combination and pharmacodynamic study",
+        "preview": "Assessed sirolimus with intensive chemotherapy and mTORC1 signaling in leukemia cells.",
+        "access": "abstract_only",
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Abstract",
+          "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6060002/",
+          "basis": "abstract"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "16d70053be89f17b1cf813ab815c49ba8b2bfb9b3e6f0cf9d468476fcf379b96",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/sirolimus",
+      "entityId": "D06",
+      "sourceId": "P-D06-PERIODONTAL-2020",
+      "drugRegimenAsRecorded": "Rapamycin",
+      "conditionScopeAsRecorded": "Periodontal/oral health in aged mice",
+      "populationAsRecorded": "Aged mice",
+      "populationMissingReason": null,
+      "endpointScope": "Periodontal inflammation and bone loss over eight weeks",
+      "role": "nonclinical_report",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Aged-mouse oral health is neither human periodontitis benefit nor a lifespan endpoint.",
+      "sourceRecord": {
+        "title": "Rapamycin rejuvenates oral health in aging mice",
+        "sourceType": "primary",
+        "design": "Controlled animal experiment",
+        "preview": "Eight weeks of rapamycin reduced periodontal inflammation and bone loss.",
+        "access": "Full text inspected",
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Abstract; Results",
+          "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7220376/",
+          "basis": "full_text"
+        },
+        {
+          "section": "Results and Figures 2–4; Materials and Methods: Animal studies; Encapsulated rapamycin feeding",
+          "basis": "Original full-text methods/results inspected on 2026-10-11"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "8b0e7517072641c3c44abb59ac7500e5d8fb4370384408c78a55e0d903d75a89",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/sirolimus",
+      "entityId": "D06",
+      "sourceId": "P-D06-PROSTATE-2010",
+      "drugRegimenAsRecorded": "Rapamycin before prostatectomy",
+      "conditionScopeAsRecorded": "Localized prostate cancer",
+      "populationAsRecorded": "Men with localized prostate cancer undergoing prostatectomy",
+      "populationMissingReason": null,
+      "endpointScope": "Short-exposure tumor target inhibition",
+      "role": "mechanistic_report",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Preoperative pharmacodynamics cannot establish recurrence prevention or survival.",
+      "sourceRecord": {
+        "title": "A pharmacodynamic study of rapamycin in men with intermediate- to high-risk localized prostate cancer",
+        "sourceType": "primary",
+        "design": "Prospective preoperative pharmacodynamic trial",
+        "preview": "Examined target inhibition in prostate tumors during short preoperative treatment.",
+        "access": "abstract_only",
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Abstract",
+          "source_url": "https://aacrjournals.org/clincancerres/article/16/11/3057/75161/A-Pharmacodynamic-Study-of-Rapamycin-in-Men-with",
+          "basis": "abstract"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "62767c0f799387a6e6e1f5101b017d665e50e95a1dc0df89fa869b27f213a226",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/sirolimus",
+      "entityId": "D06",
+      "sourceId": "P-D06-RECTAL-2015",
+      "drugRegimenAsRecorded": "Rapamycin plus short-course radiotherapy",
+      "conditionScopeAsRecorded": "Primary resectable rectal cancer",
+      "populationAsRecorded": "Primary resectable rectal cancer",
+      "populationMissingReason": null,
+      "endpointScope": "Tolerability and tumor perfusion",
+      "role": "clinical_report",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Combination feasibility/perfusion is not isolated clinical efficacy or survival.",
+      "sourceRecord": {
+        "title": "A phase I-II study on the combination of rapamycin and short course radiotherapy in rectal cancer",
+        "sourceType": "primary",
+        "design": "Phase I/II combination study",
+        "preview": "Assessed tolerability and tumor perfusion, with surgery timing important to feasibility.",
+        "access": "abstract_only",
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Abstract",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/26253949/",
+          "basis": "abstract"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "7f3a0d9e86c07b65fc6202702edb9c6d9263def3d35d744bb6f2fac62ec0ee11",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/sirolimus",
+      "entityId": "D06",
+      "sourceId": "P-D06-CML-2008",
+      "drugRegimenAsRecorded": "Rapamycin",
+      "conditionScopeAsRecorded": "Imatinib-resistant chronic myeloid leukemia",
+      "populationAsRecorded": "Imatinib-resistant CML",
+      "populationMissingReason": null,
+      "endpointScope": "Exploratory antileukemic activity",
+      "role": "clinical_report",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Small uncontrolled exact-disease report; no other leukemia or aging endpoint transfer.",
+      "sourceRecord": {
+        "title": "Evaluation of antileukaemic effects of rapamycin in patients with imatinib-resistant chronic myeloid leukaemia",
+        "sourceType": "primary",
+        "design": "Small exploratory clinical study",
+        "preview": "Investigated mTOR inhibition in resistant CML; small uncontrolled evidence.",
+        "access": "abstract_only",
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Abstract",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/18173550/",
+          "basis": "abstract"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "366396117b61c57770bebe21418cd517af13cecfff5313a265b40c6da0deeb38",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/sirolimus",
+      "entityId": "D06",
+      "sourceId": "MECH-D06-AUTOPHAGY-2009",
+      "drugRegimenAsRecorded": "Rapamycin-sensitive mTOR signaling experiments",
+      "conditionScopeAsRecorded": "Cellular autophagy",
+      "populationAsRecorded": "HEK293T, HeLa and mouse embryonic fibroblast cells",
+      "populationMissingReason": null,
+      "endpointScope": "ULK–Atg13–FIP200 regulation and autophagic flux",
+      "role": "nonclinical_report",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Generic cell mechanism is not a clinical cancer, aging or periodontal finding.",
+      "sourceRecord": {
+        "title": "ULK-Atg13-FIP200 Complexes Mediate mTOR Signaling to the Autophagy Machinery",
+        "sourceType": "Primary research",
+        "design": "Mechanistic laboratory study",
+        "preview": "Genetic and biochemical experiments linked rapamycin-sensitive mTOR signaling to ULK–Atg13–FIP200 regulation and autophagic flux.",
+        "access": "Full text inspected",
+        "status": "Full text inspected · Review pending",
+        "reviewState": "pending",
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": "A cellular mechanism cannot establish lifespan, anticancer or periodontal benefit in people."
+      },
+      "locators": [
+        {
+          "section": "Methods: Cell Culture; Autophagy Assays; Results/Figures 3, 5–7",
+          "basis": "Original full-text methods and results inspected; dedicated appraisal pending."
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "pending",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "585469092470151ff217cd72d97a361c6d17b90bc94425eda76e79cc40ca7243",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/sirolimus",
+      "entityId": "D06",
+      "sourceId": "AGING-PEARL-2025",
+      "drugRegimenAsRecorded": "Compounded rapamycin, 5 or 10 mg weekly as recorded",
+      "conditionScopeAsRecorded": "Human healthspan research",
+      "populationAsRecorded": "Adults aged 50–85; 114 completed and were analyzed",
+      "populationMissingReason": null,
+      "endpointScope": "Primary visceral adiposity at 48 weeks; selected secondary measures",
+      "role": "clinical_report",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Primary null finding retained; healthspan is not lifespan. The recorded N is 114 analyzed completers, not assumed randomized enrollment.",
+      "sourceRecord": {
+        "title": "Influence of rapamycin on safety and healthspan metrics after one year: PEARL trial results",
+        "sourceType": "primary",
+        "design": "Randomized double-blind placebo-controlled trial",
+        "preview": "The 48-week PEARL trial found no significant change in its primary visceral-fat outcome; selected secondary outcomes differed.",
+        "access": null,
+        "status": null,
+        "reviewState": null,
+        "n": 114,
+        "randomizedN": null,
+        "intervention": "Compounded rapamycin 5 or 10 mg weekly",
+        "comparator": "Placebo",
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Abstract; Results; Discussion; Supplementary Figure 1"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "cb5d5bfc528ffcbfe673ad2bc65374cc133ba936c337eeba0010ebee1747153e",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/sirolimus",
+      "entityId": "D06",
+      "sourceId": "AGING-RAPA-MICE-2009",
+      "drugRegimenAsRecorded": "Rapamycin",
+      "conditionScopeAsRecorded": "Mouse lifespan research",
+      "populationAsRecorded": "Genetically heterogeneous mice",
+      "populationMissingReason": null,
+      "endpointScope": "Lifespan in genetically heterogeneous mice",
+      "role": "nonclinical_report",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Direct survival experiment in mice; no human lifespan inference.",
+      "sourceRecord": {
+        "title": "Rapamycin fed late in life extends lifespan in genetically heterogeneous mice",
+        "sourceType": "primary",
+        "design": "Multisite mouse lifespan experiment",
+        "preview": "Rapamycin extended lifespan in genetically heterogeneous mice, including when begun late in life.",
+        "access": null,
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Abstract and results"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "69bcc69fbb29bf397f681f93ed1473558c8cdf255bc27248e914a71c8791f5f1",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/sirolimus",
+      "entityId": "D06",
+      "sourceId": "AGING-SIROLIMUS-LABEL",
+      "drugRegimenAsRecorded": "No intervention effect established by context",
+      "conditionScopeAsRecorded": "Context scope; see recorded title",
+      "populationAsRecorded": null,
+      "populationMissingReason": "not_recorded_in_canonical_source_metadata",
+      "endpointScope": "Not an original intervention-result record",
+      "role": "context_only",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "sourceRecord": {
+        "title": "Sirolimus tablets: US prescribing information",
+        "sourceType": "context",
+        "design": "US product label",
+        "preview": "Sirolimus pharmacology, immunosuppression, wound healing, lipids and drug interactions.",
+        "access": null,
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Sections 1, 5, 7 and 12.1"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "d52bbed88b9254b9d3bd618da9f2f4451c94077f9d6d9431dd3408c85263befd",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/ivermectin",
+      "entityId": "D08",
+      "sourceId": "CTX-D08-LABEL",
+      "drugRegimenAsRecorded": "No intervention effect established by context",
+      "conditionScopeAsRecorded": "Patients receiving the labeled product",
+      "populationAsRecorded": "Patients receiving the labeled product",
+      "populationMissingReason": null,
+      "endpointScope": "Not an original intervention-result record",
+      "role": "context_only",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "sourceRecord": {
+        "title": "Stromectol ivermectin — US prescribing information",
+        "sourceType": "context",
+        "design": "Official US product label",
+        "preview": "Approved uses, pharmacology, contraindications, adverse effects and interactions.",
+        "access": "full_text_html",
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Indications; Dosage; Contraindications; Warnings; Interactions; Clinical pharmacology",
+          "source_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=681888c9-af79-4b7d-ae80-c3f4f6f1effd",
+          "basis": "full_text"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "3fd23fd5e52cab675fb2bc02a142df65fbe522cf60afc2ca781c82390f77934e",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/ivermectin",
+      "entityId": "D08",
+      "sourceId": "P-D08-ACTIV6-2023",
+      "drugRegimenAsRecorded": "Higher-dose ivermectin for six days",
+      "conditionScopeAsRecorded": "Acute COVID-19",
+      "populationAsRecorded": "Outpatients with mild to moderate COVID-19",
+      "populationMissingReason": null,
+      "endpointScope": "Time to sustained recovery",
+      "role": "clinical_report",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Recorded null acute-recovery finding is not a Long COVID or oncology result.",
+      "sourceRecord": {
+        "title": "Effect of higher-dose ivermectin for 6 days vs placebo on time to sustained recovery in outpatients with COVID-19",
+        "sourceType": "primary",
+        "design": "Randomized placebo-controlled trial",
+        "preview": "Six-day higher-dose ivermectin did not shorten sustained recovery.",
+        "access": "abstract_only",
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Abstract",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/36807465/",
+          "basis": "abstract"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "f005bea536ff8a5e522cd63d8d71c4aa5f071000a14035914502b1bc6c316b12",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/ivermectin",
+      "entityId": "D08",
+      "sourceId": "P-D08-OVARIAN-2009",
+      "drugRegimenAsRecorded": "Ivermectin",
+      "conditionScopeAsRecorded": "Ovarian cancer and NF2 tumor cell models",
+      "populationAsRecorded": "Human ovarian cancer and NF2-deficient Schwannoma cells",
+      "populationMissingReason": null,
+      "endpointScope": "PAK1 activity and cell growth",
+      "role": "nonclinical_report",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Cell-culture growth inhibition is not patient response or survival.",
+      "sourceRecord": {
+        "title": "Ivermectin inactivates the kinase PAK1 and blocks the PAK1-dependent growth of human ovarian cancer and NF2 tumor cell lines",
+        "sourceType": "primary",
+        "design": "Cell-culture experiment",
+        "preview": "PAK1 inhibition and growth suppression in cell culture.",
+        "access": "abstract_only",
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Abstract",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/22495656/",
+          "basis": "abstract"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "1db7e52eb81c36a15e4ded9dea2d3bf5f58080213474064ec6a212515238e1b3",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/ivermectin",
+      "entityId": "D08",
+      "sourceId": "P-D08-GBM-2016",
+      "drugRegimenAsRecorded": "Ivermectin",
+      "conditionScopeAsRecorded": "Glioblastoma experimental models",
+      "populationAsRecorded": "Glioblastoma cell and experimental tumor models",
+      "populationMissingReason": null,
+      "endpointScope": "Mitochondrial dysfunction, oxidative stress and growth/survival of models",
+      "role": "nonclinical_report",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Experimental systems remain distinct from human glioblastoma efficacy.",
+      "sourceRecord": {
+        "title": "Anthelmintic drug ivermectin inhibits angiogenesis, growth and survival of glioblastoma through inducing mitochondrial dysfunction and oxidative stress",
+        "sourceType": "primary",
+        "design": "Preclinical experiments",
+        "preview": "Mitochondrial respiration inhibition and oxidative stress accompanied growth suppression.",
+        "access": "abstract_only",
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Abstract",
+          "source_url": "https://www.sciencedirect.com/science/article/pii/S0006291X16317429",
+          "basis": "abstract"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "6e1b600fb706e5a7648dff32638348020c2ed4b408b83dc2b14d6c3b848a31de",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/ivermectin",
+      "entityId": "D08",
+      "sourceId": "P-D08-BREAST-2016",
+      "drugRegimenAsRecorded": "Ivermectin",
+      "conditionScopeAsRecorded": "Breast cancer models",
+      "populationAsRecorded": "Breast cancer models",
+      "populationMissingReason": null,
+      "endpointScope": "PAK1/Akt signaling, autophagy and growth arrest",
+      "role": "nonclinical_report",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Cell/animal mechanisms are not human breast-cancer outcomes.",
+      "sourceRecord": {
+        "title": "Ivermectin induces cytostatic autophagy by blocking the PAK1/Akt axis in breast cancer",
+        "sourceType": "primary",
+        "design": "Cell and animal experiments",
+        "preview": "PAK1 degradation and Akt/mTOR inhibition induced growth-arresting autophagy.",
+        "access": "abstract_only",
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Abstract",
+          "source_url": "https://aacrjournals.org/cancerres/article/76/15/4457/613862/Ivermectin-Induces-Cytostatic-Autophagy-by",
+          "basis": "abstract"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "d3c7e0cd77f1b53948a6299bb0e1af55dfb55b4a6d04b7af57bd5c7f218a33f9",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/ivermectin",
+      "entityId": "D08",
+      "sourceId": "P-D08-CRC-2014",
+      "drugRegimenAsRecorded": "Ivermectin and related macrocyclic lactones",
+      "conditionScopeAsRecorded": "WNT-dependent cancer models including colorectal cancer",
+      "populationAsRecorded": "WNT-dependent human cancer models including colorectal cancer",
+      "populationMissingReason": null,
+      "endpointScope": "WNT-TCF signaling and model tumor growth",
+      "role": "nonclinical_report",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Exact molecule/model attribution is required; related compounds cannot supply an ivermectin clinical estimate.",
+      "sourceRecord": {
+        "title": "The river blindness drug ivermectin and related macrocyclic lactones inhibit WNT-TCF pathway responses in human cancer",
+        "sourceType": "primary",
+        "design": "Cell and animal experiments",
+        "preview": "Suppression of WNT-TCF signaling and tumor growth.",
+        "access": "Full text inspected",
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Abstract; Results",
+          "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4287931/",
+          "basis": "full_text"
+        },
+        {
+          "section": "Results: Direct activation of TCF rescues; Ivermectin selectively represses TCF-dependent xenograft growth; Figures 4–5; Mouse xenografts",
+          "basis": "Original full-text methods/results inspected on 2026-10-11"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "8a391d82d805010df4acf84ccb4dda728aee5343c1cf2ad903748c447a791ded",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/ivermectin",
+      "entityId": "D08",
+      "sourceId": "P-D08-HCC-2022",
+      "drugRegimenAsRecorded": "Ivermectin plus sorafenib",
+      "conditionScopeAsRecorded": "Hepatocellular carcinoma models",
+      "populationAsRecorded": "Hepatocellular carcinoma models",
+      "populationMissingReason": null,
+      "endpointScope": "Experimental growth inhibition and apoptosis",
+      "role": "nonclinical_report",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Combination/model record is not human liver-cancer benefit; integrity has not been newly checked or upgraded.",
+      "sourceRecord": {
+        "title": "Ivermectin synergizes sorafenib in hepatocellular carcinoma via targeting multiple oncogenic pathways",
+        "sourceType": "primary",
+        "design": "Preclinical combination experiments",
+        "preview": "Growth inhibition and apoptosis with investigation of combination effects.",
+        "access": "full_text_html",
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Abstract; Results",
+          "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9107598/",
+          "basis": "full_text"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "a3edf5dd7a2bd4ea3a1a2593394ff072897da52ed11f9e031553c1be3d2abd62",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/ivermectin",
+      "entityId": "D08",
+      "sourceId": "P-D08-ANTIVIRAL-2023",
+      "drugRegimenAsRecorded": "Ivermectin",
+      "conditionScopeAsRecorded": "Laboratory SARS-CoV-2 and membrane models",
+      "populationAsRecorded": "Cell culture and membrane models",
+      "populationMissingReason": null,
+      "endpointScope": "Antiviral and membrane-bilayer effects",
+      "role": "nonclinical_report",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Recorded concentration/translation limits remain; no patient efficacy inference.",
+      "sourceRecord": {
+        "title": "Nonspecific membrane bilayer perturbations by ivermectin underlie SARS-CoV-2 in vitro activity",
+        "sourceType": "primary",
+        "design": "Laboratory antiviral and membrane experiments",
+        "preview": "Antiviral effects occurred at concentrations above reported toxic clinical concentrations, with nonspecific membrane effects.",
+        "access": "full_text_html",
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Abstract; Results",
+          "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10634736/",
+          "basis": "full_text"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "dab421e20ad362739d89485f6daee24d472b5536b6b065301bbfd018a9d079e5",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/ivermectin",
+      "entityId": "D08",
+      "sourceId": "COND-C02-COVIDOUT-2022",
+      "drugRegimenAsRecorded": "Separate metformin, ivermectin and fluvoxamine arms",
+      "conditionScopeAsRecorded": "Acute COVID-19",
+      "populationAsRecorded": null,
+      "populationMissingReason": "not_recorded_in_canonical_source_metadata",
+      "endpointScope": "Primary acute composite outcome",
+      "role": "clinical_report",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "The sole canonical row for this report belongs to metformin D01; no other drug may inherit its effect or grade.",
+      "sourceRecord": {
+        "title": "Randomized Trial of Metformin, Ivermectin, and Fluvoxamine for Covid-19",
+        "sourceType": "primary",
+        "design": "Randomized placebo-controlled trial",
+        "preview": "The three medicines did not significantly reduce the primary acute COVID-19 composite outcome.",
+        "access": "Public source",
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Abstract; Results"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "4298bfd2b42539ffb0bec56c7dbdb48efbc1f69eb3f96598d89a38705c67256c",
+      "otherScopedCanonicalRows": [
+        {
+          "rowId": "SYN-D01-C02-COND-C02-COVIDOUT-2022-B1E71756C16B18BBC77C",
+          "drugId": "D01",
+          "conditionId": "C02",
+          "population": "Nonhospitalized adults aged 30–85 with overweight or obesity, infection confirmed within 3 days and symptoms beginning within 7 days; 1, 323 in the modified intention-to-treat population",
+          "endpoint": "Primary composite of hypoxemia (home oxygen saturation ≤93%), emergency-department visit, hospitalization or death",
+          "timepoint": "Through 14 days after randomization"
+        }
+      ]
+    },
+    {
+      "route": "/drugs/fenbendazole",
+      "entityId": "D10",
+      "sourceId": "CTX-D10-FDA",
+      "drugRegimenAsRecorded": "No intervention effect established by context",
+      "conditionScopeAsRecorded": "Cattle and goats",
+      "populationAsRecorded": "Cattle and goats",
+      "populationMissingReason": null,
+      "endpointScope": "Not an original intervention-result record",
+      "role": "context_only",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "sourceRecord": {
+        "title": "FDA approval of generic fenbendazole oral suspension for cattle and goats",
+        "sourceType": "context",
+        "design": "Official veterinary approval notice",
+        "preview": "Veterinary antiparasitic approval; not a human cancer approval.",
+        "access": "full_text_html",
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Approval notice",
+          "source_url": "https://www.fda.gov/animal-veterinary/cvm-updates/fda-approves-first-generic-fenbendazole-oral-suspension-dewormer-beef-and-dairy-cattle-goats",
+          "basis": "full_text"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "feb620dfb9dabc5b16d4f3e587f43d7c04a5cc112d91071cc79456695c96b5a9",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/fenbendazole",
+      "entityId": "D10",
+      "sourceId": "P-D10-LIVER-2024",
+      "drugRegimenAsRecorded": "Self-administered fenbendazole",
+      "conditionScopeAsRecorded": "Drug-associated liver injury case",
+      "populationAsRecorded": "67-year-old woman self-administering fenbendazole",
+      "populationMissingReason": null,
+      "endpointScope": "Severe liver injury and course after cessation",
+      "role": "harm_case_report",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Retain the harm signal; no cancer efficacy conclusion and no causal estimate from a single case.",
+      "sourceRecord": {
+        "title": "Severe drug-induced liver injury due to self-administration of the veterinary anthelmintic medication, fenbendazole",
+        "sourceType": "primary",
+        "design": "Human case report",
+        "preview": "Biopsy-confirmed severe liver injury; liver tests normalized after cessation.",
+        "access": "full_text_html",
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Case report; Discussion",
+          "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11068125/",
+          "basis": "full_text"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "91f0d400d348f88e770c9e67d1187c21f59d519d27f7023bfb5035818f8cccf8",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/fenbendazole",
+      "entityId": "D10",
+      "sourceId": "P-D10-OVARIAN-2024",
+      "drugRegimenAsRecorded": "Fenbendazole",
+      "conditionScopeAsRecorded": "Ovarian cancer cell/mouse models",
+      "populationAsRecorded": "A2780 and SKOV3 ovarian cancer cells and experimental tumors",
+      "populationMissingReason": null,
+      "endpointScope": "Apoptosis and mitotic catastrophe",
+      "role": "nonclinical_report",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Preclinical findings do not establish human ovarian-cancer treatment benefit.",
+      "sourceRecord": {
+        "title": "Transcriptome analysis reveals the anticancer effects of fenbendazole on ovarian cancer: an in vitro and in vivo study",
+        "sourceType": "primary",
+        "design": "Cell and mouse experiments",
+        "preview": "Investigated apoptosis and mitotic catastrophe; preclinical ovarian-cancer evidence.",
+        "access": "full_text_html",
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Abstract; Results",
+          "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11686899/",
+          "basis": "full_text"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "9a4424cb6a3e00d8e62e54d61ed53bb3a80598c46a1d2135691980684d6648b5",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/fenbendazole",
+      "entityId": "D10",
+      "sourceId": "P-D10-LIVER-2026",
+      "drugRegimenAsRecorded": "Self-administered fenbendazole during nivolumab/relatlimab treatment",
+      "conditionScopeAsRecorded": "Liver injury in a patient with metastatic colon cancer",
+      "populationAsRecorded": "47-year-old woman with metastatic colon cancer receiving nivolumab/relatlimab",
+      "populationMissingReason": null,
+      "endpointScope": "Liver injury and differential attribution",
+      "role": "harm_case_report",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Immunotherapy confounding and human case-report scope retained; not a colon-cancer efficacy result.",
+      "sourceRecord": {
+        "title": "Differentiating fenbendazole-induced liver injury from immunotherapy hepatitis: a case report",
+        "sourceType": "primary",
+        "design": "Human case report",
+        "preview": "Severe liver injury occurred after increased self-administered fenbendazole; highlights confounding with immunotherapy-associated hepatitis.",
+        "access": "abstract_only",
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Abstract",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/41608149/",
+          "basis": "abstract"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "1f2dc9c2162d85f87ad3d6d2a3f815217f62c68f267f2245feca8334beb2feb7",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/fenbendazole",
+      "entityId": "D10",
+      "sourceId": "MECH-D10-MICROTUBULE-2018",
+      "drugRegimenAsRecorded": "Fenbendazole",
+      "conditionScopeAsRecorded": "Lung-cancer cell and mouse models; purified bovine tubulin",
+      "populationAsRecorded": "Human lung-cancer cell lines, purified bovine tubulin and A549 mouse xenografts",
+      "populationMissingReason": null,
+      "endpointScope": "Microtubules, cell division and metabolic readouts",
+      "role": "nonclinical_report",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "No human cancer trial or safe human anticancer exposure is established by these experiments.",
+      "sourceRecord": {
+        "title": "Fenbendazole acts as a moderate microtubule destabilizing agent and causes cancer cell death by modulating multiple cellular pathways",
+        "sourceType": "Primary research",
+        "design": "Mechanistic laboratory study",
+        "preview": "Fenbendazole altered microtubules, cell division and metabolic readouts in lung-cancer models. These experiments explain a research rationale without establishing treatment benefit in people.",
+        "access": "Full text inspected",
+        "status": "Full text inspected · Review pending",
+        "reviewState": "pending",
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": "No human cancer trial or safe human anticancer exposure was established. Laboratory selectivity is not clinical safety."
+      },
+      "locators": [
+        {
+          "section": "Results: FZ destabilizes tubulin network; FZ treatment results in early G2/M block; Figures 1, 3–8; Methods: tubulin assay and nude mice",
+          "basis": "Original full-text methods and results inspected; dedicated appraisal pending."
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "pending",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "19bc8560761539596bd6da10139b2ebaa95af3a6e69b01fa5bd37429e738c412",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/guanfacine",
+      "entityId": "D11",
+      "sourceId": "CTX-D11-LABEL",
+      "drugRegimenAsRecorded": "No intervention effect established by context",
+      "conditionScopeAsRecorded": "Patients receiving the labeled product",
+      "populationAsRecorded": "Patients receiving the labeled product",
+      "populationMissingReason": null,
+      "endpointScope": "Not an original intervention-result record",
+      "role": "context_only",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "sourceRecord": {
+        "title": "Intuniv guanfacine extended release — US prescribing information",
+        "sourceType": "context",
+        "design": "Official US product label",
+        "preview": "Approved uses, pharmacology, contraindications, adverse effects and interactions.",
+        "access": "full_text_html",
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Indications; Dosage; Contraindications; Warnings; Interactions; Clinical pharmacology",
+          "source_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b972af81-3a37-40be-9fe1-3ddf59852528",
+          "basis": "full_text"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "01620dc02f9ff87fdc946ea764a7a194aa6e5721e4fc6c3e9e0da8e4620c161c",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/guanfacine",
+      "entityId": "D11",
+      "sourceId": "P-D11-LONGCOVID-2023",
+      "drugRegimenAsRecorded": "Guanfacine plus N-acetylcysteine",
+      "conditionScopeAsRecorded": "Long COVID cognitive symptoms",
+      "populationAsRecorded": "12 people with Long COVID cognitive symptoms",
+      "populationMissingReason": null,
+      "endpointScope": "Reported cognitive improvement and discontinuations",
+      "role": "clinical_report",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Twelve-person uncontrolled combination series; cannot isolate guanfacine or infer a comparative effect. Hypotension/dizziness discontinuations remain recorded.",
+      "sourceRecord": {
+        "title": "Clinical experience with the α2A-adrenoceptor agonist guanfacine and N-acetylcysteine for the treatment of cognitive deficits in Long-COVID19",
+        "sourceType": "primary",
+        "design": "Uncontrolled clinical case series",
+        "preview": "Eight reported cognitive improvement on combination treatment; four stopped, two because of hypotension or dizziness.",
+        "access": "full_text_html",
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Abstract; Clinical experience",
+          "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9691274/",
+          "basis": "full_text"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "c991c40ce2cd86f2156bcde46f537412ecee8325acf92898a865597e708224f9",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/maraviroc",
+      "entityId": "D12",
+      "sourceId": "CTX-D12-LABEL",
+      "drugRegimenAsRecorded": "No intervention effect established by context",
+      "conditionScopeAsRecorded": "Patients receiving the labeled product",
+      "populationAsRecorded": "Patients receiving the labeled product",
+      "populationMissingReason": null,
+      "endpointScope": "Not an original intervention-result record",
+      "role": "context_only",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "sourceRecord": {
+        "title": "Selzentry maraviroc — US prescribing information",
+        "sourceType": "context",
+        "design": "Official US product label",
+        "preview": "Approved uses, pharmacology, contraindications, adverse effects and interactions.",
+        "access": "full_text_html",
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Indications; Dosage; Contraindications; Warnings; Interactions; Clinical pharmacology",
+          "source_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=46f30ac5-c96b-429e-976d-8c5ee1c0761b",
+          "basis": "full_text"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "7c8b5ac7ee7d3b0ded7cea643592a3d4539f3e153735f794ec39afc85a0f4a25",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/maraviroc",
+      "entityId": "D12",
+      "sourceId": "P-D12-BREAST-2012",
+      "drugRegimenAsRecorded": "Maraviroc",
+      "conditionScopeAsRecorded": "Basal breast cancer models",
+      "populationAsRecorded": "Basal breast cancer models",
+      "populationMissingReason": null,
+      "endpointScope": "Invasion and pulmonary metastasis; no in-vitro proliferation reduction",
+      "role": "nonclinical_report",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Retain both experimental findings; not a clinical breast-cancer response.",
+      "sourceRecord": {
+        "title": "CCR5 antagonist blocks metastasis of basal breast cancer cells",
+        "sourceType": "primary",
+        "design": "Cell and mouse experiments",
+        "preview": "Maraviroc reduced invasion and pulmonary metastasis without reducing cell proliferation in vitro.",
+        "access": "abstract_only",
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Abstract",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/22637726/",
+          "basis": "abstract"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "1d664094f3ae25e8151f58e84027c5e8864980423735159139126c02ed34f6a7",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/maraviroc",
+      "entityId": "D12",
+      "sourceId": "P-D12-CRC-2016",
+      "drugRegimenAsRecorded": "Maraviroc/CCR5 blockade",
+      "conditionScopeAsRecorded": "Colorectal cancer liver metastases",
+      "populationAsRecorded": "Colorectal cancer liver metastases",
+      "populationMissingReason": null,
+      "endpointScope": "Tumor-associated macrophages, tumor-cell death and exploratory activity",
+      "role": "mechanistic_report",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Human tumor/phase-I pilot evidence requires exact mechanism versus clinical outcome separation; no isolated comparative benefit.",
+      "sourceRecord": {
+        "title": "Tumoral immune cell exploitation in colorectal cancer metastases can be targeted effectively by anti-CCR5 therapy in cancer patients",
+        "sourceType": "primary",
+        "design": "Human tumor experiments and phase I pilot study",
+        "preview": "CCR5 blockade altered tumor-associated macrophages and induced tumor-cell death; exploratory clinical activity.",
+        "access": "abstract_only",
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Abstract",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/27070705/",
+          "basis": "abstract"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "be14fad7edeb7299bbb50e51f201d4a6a74d4a2b19793ef0a705b282633decea",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/maraviroc",
+      "entityId": "D12",
+      "sourceId": "P-D12-PANCREAS-2018",
+      "drugRegimenAsRecorded": "Maraviroc",
+      "conditionScopeAsRecorded": "Pancreatic cancer cells",
+      "populationAsRecorded": "Pancreatic cancer cells",
+      "populationMissingReason": null,
+      "endpointScope": "CCL5-associated activation and invasion",
+      "role": "nonclinical_report",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Cell invasion is not patient survival or treatment response.",
+      "sourceRecord": {
+        "title": "CCR5/CCL5 axis interaction promotes migratory and invasiveness of pancreatic cancer cells",
+        "sourceType": "primary",
+        "design": "Tumor tissue and cell-culture investigation",
+        "preview": "Maraviroc inhibited CCL5-associated activation and invasion.",
+        "access": "full_text_html",
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Abstract; Results",
+          "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5778036/",
+          "basis": "full_text"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "939ea4781ada49943eb0a7dac43364256a7ec1c8e7f000e4759043e1388cf8fc",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/rituximab",
+      "entityId": "D14",
+      "sourceId": "CTX-D14-LABEL",
+      "drugRegimenAsRecorded": "No intervention effect established by context",
+      "conditionScopeAsRecorded": "Patients receiving the labeled product",
+      "populationAsRecorded": "Patients receiving the labeled product",
+      "populationMissingReason": null,
+      "endpointScope": "Not an original intervention-result record",
+      "role": "context_only",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "sourceRecord": {
+        "title": "Rituxan rituximab — US prescribing information",
+        "sourceType": "context",
+        "design": "Official US product label",
+        "preview": "Approved uses, pharmacology, contraindications, adverse effects and interactions.",
+        "access": "full_text_html",
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Indications; Dosage; Contraindications; Warnings; Interactions; Clinical pharmacology",
+          "source_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b172773b-3905-4a1c-ad95-bab4b6126563",
+          "basis": "full_text"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "8b4926af4adecb2b50ff6e0ff869fed61670243a5c1b7e5cf2686142b605893b",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/rituximab",
+      "entityId": "D14",
+      "sourceId": "P-D14-VITILIGO-2013",
+      "drugRegimenAsRecorded": "Rituximab",
+      "conditionScopeAsRecorded": "Active disseminated vitiligo",
+      "populationAsRecorded": "Five patients with active disseminated vitiligo",
+      "populationMissingReason": null,
+      "endpointScope": "Clinical and skin-biopsy improvement",
+      "role": "clinical_report",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Uncontrolled five-patient pilot; improvement cannot be converted into a randomized comparative estimate.",
+      "sourceRecord": {
+        "title": "Treatment of vitiligo with a chimeric monoclonal antibody to CD20: a pilot study",
+        "sourceType": "primary",
+        "design": "Uncontrolled pilot study",
+        "preview": "Three showed substantial clinical and skin-biopsy improvement; no randomized comparator.",
+        "access": "full_text_html",
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Abstract; Results",
+          "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3828826/",
+          "basis": "full_text"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "871c299c88f006d541d4306d4fa4d4973fd7351ef745342e33fbaec3aa4d4506",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/memantine",
+      "entityId": "D25",
+      "sourceId": "P-D25-GBM",
+      "drugRegimenAsRecorded": "Memantine attribution is page-level; exact regimen not stated in this source record",
+      "conditionScopeAsRecorded": "Glioblastoma cells",
+      "populationAsRecorded": "Glioblastoma cell models",
+      "populationMissingReason": null,
+      "endpointScope": "NMDA signaling and temozolomide resistance",
+      "role": "incomplete_scope",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Drug and experimental regimen need source-located reconciliation; receptor biology alone cannot supply a memantine patient outcome.",
+      "sourceRecord": {
+        "title": "NMDA receptor signaling and temozolomide resistance in glioblastoma cells",
+        "sourceType": "primary",
+        "design": "Laboratory mechanistic study",
+        "preview": "NMDA receptor signaling and temozolomide resistance in glioblastoma cells",
+        "access": "Published report or abstract",
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Abstract: methods and results"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "84ed2afb7069e3961a0e7ba09b2213079dfd65236f37b3c42add171574148fdb",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/memantine",
+      "entityId": "D25",
+      "sourceId": "CTX-D25-LABEL",
+      "drugRegimenAsRecorded": "No intervention effect established by context",
+      "conditionScopeAsRecorded": "Product-specific approved use",
+      "populationAsRecorded": "Product-specific approved use",
+      "populationMissingReason": null,
+      "endpointScope": "Not an original intervention-result record",
+      "role": "context_only",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "sourceRecord": {
+        "title": "Memantine hydrochloride prescribing information",
+        "sourceType": "context",
+        "design": "Official prescribing information",
+        "preview": "Memantine hydrochloride prescribing information",
+        "access": "Open official information",
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Clinical pharmacology; contraindications; warnings; interactions"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "ca808c9d242d47b8c5fa4f05e24fae593fe2bd4b5d34c8bb45a9be7f2b6cc8a0",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/sildenafil",
+      "entityId": "D26",
+      "sourceId": "CTX-D26-LABEL",
+      "drugRegimenAsRecorded": "No intervention effect established by context",
+      "conditionScopeAsRecorded": "Product-specific approved use",
+      "populationAsRecorded": "Product-specific approved use",
+      "populationMissingReason": null,
+      "endpointScope": "Not an original intervention-result record",
+      "role": "context_only",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "sourceRecord": {
+        "title": "Sildenafil pulmonary arterial hypertension prescribing information",
+        "sourceType": "context",
+        "design": "Official prescribing information",
+        "preview": "Sildenafil pulmonary arterial hypertension prescribing information",
+        "access": "Open official information",
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Clinical pharmacology; contraindications; warnings; interactions"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "451338cb4c0e57922ebccb100f41c4bd87b9f1234b15685b140e9aed7c3fc1ae",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/sildenafil",
+      "entityId": "D26",
+      "sourceId": "CTX-D26-VIAGRA",
+      "drugRegimenAsRecorded": "No intervention effect established by context",
+      "conditionScopeAsRecorded": "Product-specific approved use",
+      "populationAsRecorded": "Product-specific approved use",
+      "populationMissingReason": null,
+      "endpointScope": "Not an original intervention-result record",
+      "role": "context_only",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "sourceRecord": {
+        "title": "Viagra sildenafil prescribing information",
+        "sourceType": "context",
+        "design": "Official prescribing information",
+        "preview": "Viagra sildenafil prescribing information",
+        "access": "Open official information",
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Indications; mechanism; contraindications"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "6fe0b0564a6d6879fcb8e8337255ae19d56b85417b1bc528c09a9d2a7be4dcdd",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/sildenafil",
+      "entityId": "D26",
+      "sourceId": "P-D26-COMBINATION",
+      "drugRegimenAsRecorded": "PDE5 inhibitors with chemotherapy; exact sildenafil regimen not stated in this source record",
+      "conditionScopeAsRecorded": "Gastrointestinal/genitourinary cancer cell models",
+      "populationAsRecorded": "Cancer cell models including mutant-KRAS pancreatic cancer",
+      "populationMissingReason": null,
+      "endpointScope": "Chemotherapy killing in cell models",
+      "role": "incomplete_scope",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Class/combination title is insufficient for exact sildenafil regimen and human endpoint attribution.",
+      "sourceRecord": {
+        "title": "PDE5 inhibitors enhance chemotherapy killing in gastrointestinal and genitourinary cancer cells",
+        "sourceType": "primary",
+        "design": "Laboratory combination study",
+        "preview": "PDE5 inhibitors enhance chemotherapy killing in gastrointestinal and genitourinary cancer cells",
+        "access": "Published report or abstract",
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Abstract: methods and results"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "5fc29c3499b5acd5a3d4020cdffe8fcfa8addc0bac63d75f68b8100f4f7ffdf9",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/sildenafil",
+      "entityId": "D26",
+      "sourceId": "P-D26-GBM",
+      "drugRegimenAsRecorded": "PDE5/sildenafil experimental attribution; observational cohort is distinct",
+      "conditionScopeAsRecorded": "Glioblastoma models and tumor cohort",
+      "populationAsRecorded": "Glioblastoma cell experiments and a 69-patient tumor cohort",
+      "populationMissingReason": null,
+      "endpointScope": "Aggressiveness, PDE5 expression and observational clinical outcome",
+      "role": "mechanistic_report",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "A 69-patient tumor cohort is not a randomized sildenafil treatment comparison.",
+      "sourceRecord": {
+        "title": "Type 5 phosphodiesterase regulates glioblastoma aggressiveness and clinical outcome",
+        "sourceType": "primary",
+        "design": "Laboratory study with observational tumor analysis",
+        "preview": "Type 5 phosphodiesterase regulates glioblastoma aggressiveness and clinical outcome",
+        "access": "Published report or abstract",
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Abstract: methods and results"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "4f599562916a91146864ce4d74ee684a4f856e99a00e1a9874c09ee3531b2863",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/sildenafil",
+      "entityId": "D26",
+      "sourceId": "MECH-D26-HYPOXIA-2025",
+      "drugRegimenAsRecorded": "PDE inhibition; exact regimen is not recorded in canonical source metadata",
+      "conditionScopeAsRecorded": "Experimental hypoxia in healthy male volunteers",
+      "populationAsRecorded": "12 healthy male volunteers",
+      "populationMissingReason": null,
+      "endpointScope": "Cerebral blood velocity, regulation and oxygenation",
+      "role": "mechanistic_report",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Twelve healthy men are not a disease-treatment population; age discrepancy and outcome distinctions remain unresolved.",
+      "sourceRecord": {
+        "title": "Phosphodiesterase inhibition restores hypoxia-induced cerebrovascular dysfunction subsequent to improved systemic redox homeostasis: A randomized, double-blind, placebo-controlled crossover study",
+        "sourceType": "Primary research",
+        "design": "Randomized double-blind placebo-controlled crossover physiology experiment",
+        "preview": "A crossover experiment separated cerebral blood-velocity, regulation and oxygenation measurements. Changes in vascular regulation did not establish a general oxygenation benefit.",
+        "access": "Full text inspected",
+        "status": "Full text inspected · Review pending",
+        "reviewState": "pending",
+        "n": 12,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": "Small healthy-male laboratory experiment; no disease-treatment outcome. Age values differ between abstract and Methods and need reconciliation."
+      },
+      "locators": [
+        {
+          "section": "Methods: Participants and Experimental design; Results: Cerebrovascular function; Table 2, Figures 3–4",
+          "basis": "Original full-text methods and results inspected; dedicated appraisal pending."
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "pending",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "bdb07fed4d5595b77a85f561ace9ea0dedd4719030d14982129dfa24958eb235",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/conditions/myalgic-encephalomyelitis-chronic-fatigue-syndrome",
+      "entityId": "C06",
+      "sourceId": "COND-C06-CDC",
+      "drugRegimenAsRecorded": "No intervention effect established by context",
+      "conditionScopeAsRecorded": "Context scope; see recorded title",
+      "populationAsRecorded": null,
+      "populationMissingReason": "not_recorded_in_canonical_source_metadata",
+      "endpointScope": "Not an original intervention-result record",
+      "role": "context_only",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "sourceRecord": {
+        "title": "Symptoms of ME/CFS — CDC",
+        "sourceType": "context",
+        "design": "Official condition information",
+        "preview": "Symptoms of ME/CFS — CDC",
+        "access": "Public source",
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Overview and treatment sections"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "529532ccb8401c4abfc077961074506eb4e5bbab567d6f9c13db74a83138401b",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/conditions/myalgic-encephalomyelitis-chronic-fatigue-syndrome",
+      "entityId": "C06",
+      "sourceId": "COND-C06-TRPM3-2021",
+      "drugRegimenAsRecorded": "Low-dose naltrexone-associated patient-cell investigation",
+      "conditionScopeAsRecorded": "ME/CFS natural-killer-cell study",
+      "populationAsRecorded": null,
+      "populationMissingReason": "not_recorded_in_canonical_source_metadata",
+      "endpointScope": "TRPM3 ion-channel function",
+      "role": "mechanistic_report",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Laboratory patient-cell function is not randomized symptomatic recovery.",
+      "sourceRecord": {
+        "title": "Potential therapeutic benefit of low-dose naltrexone in ME/CFS: TRPM3 ion channels",
+        "sourceType": "primary",
+        "design": "Laboratory investigation of patient natural-killer cells",
+        "preview": "The study examined ion-channel function rather than randomized clinical recovery.",
+        "access": "Public source",
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Abstract"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "2fb94d86a7c6f3c3a2cf0b395b35a72a7b06b5ef4cccaa3f159727d81b7f6aeb",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/conditions/myalgic-encephalomyelitis-chronic-fatigue-syndrome",
+      "entityId": "C06",
+      "sourceId": "COND-C06-CDC-CARE",
+      "drugRegimenAsRecorded": "No intervention effect established by context",
+      "conditionScopeAsRecorded": "Context scope; see recorded title",
+      "populationAsRecorded": null,
+      "populationMissingReason": "not_recorded_in_canonical_source_metadata",
+      "endpointScope": "Not an original intervention-result record",
+      "role": "context_only",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "sourceRecord": {
+        "title": "Strategies to prevent worsening of ME/CFS symptoms — CDC",
+        "sourceType": "context",
+        "design": "Official condition information",
+        "preview": "Strategies to prevent worsening of ME/CFS symptoms — CDC",
+        "access": "Public source",
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Overview and treatment sections"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "1d4b41efdfefa6b0827e7435d3f2b758249815fd06e216c76fb4214795adaa44",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/conditions/myalgic-encephalomyelitis-chronic-fatigue-syndrome",
+      "entityId": "C06",
+      "sourceId": "COND-C05-NIAMS",
+      "drugRegimenAsRecorded": "No intervention effect established by context",
+      "conditionScopeAsRecorded": "Context scope; see recorded title",
+      "populationAsRecorded": null,
+      "populationMissingReason": "not_recorded_in_canonical_source_metadata",
+      "endpointScope": "Not an original intervention-result record",
+      "role": "context_only",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "sourceRecord": {
+        "title": "Fibromyalgia — NIAMS",
+        "sourceType": "context",
+        "design": "Official condition information",
+        "preview": "Fibromyalgia — NIAMS",
+        "access": "Public source",
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Overview and treatment sections"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "2ddb8aea11a3729dca0c7f5565164162a5eb6418f47ea2fac1a1cb7f283d2e26",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/conditions/myalgic-encephalomyelitis-chronic-fatigue-syndrome",
+      "entityId": "C06",
+      "sourceId": "COND-C01-CDC",
+      "drugRegimenAsRecorded": "No intervention effect established by context",
+      "conditionScopeAsRecorded": "Context scope; see recorded title",
+      "populationAsRecorded": null,
+      "populationMissingReason": "not_recorded_in_canonical_source_metadata",
+      "endpointScope": "Not an original intervention-result record",
+      "role": "context_only",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "sourceRecord": {
+        "title": "Long COVID signs and symptoms — CDC",
+        "sourceType": "context",
+        "design": "Official condition information",
+        "preview": "Long COVID signs and symptoms — CDC",
+        "access": "Public source",
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Overview and treatment sections"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "fcafdbb45f60d5bb5dca674cd935fd9fe251e12f161fc72116b8080fe2aa589f",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/conditions/persistent-genital-arousal-disorder-genitopelvic-dysesthesia",
+      "entityId": "C08",
+      "sourceId": "COND-C08-IPGAD-2023",
+      "drugRegimenAsRecorded": "No tested drug intervention recorded",
+      "conditionScopeAsRecorded": "Persistent genital arousal disorder",
+      "populationAsRecorded": null,
+      "populationMissingReason": "not_recorded_in_canonical_source_metadata",
+      "endpointScope": "Clinical phenotype and neurophysiological testing",
+      "role": "no_intervention_result",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Condition characterization cannot become a drug treatment-effect row.",
+      "sourceRecord": {
+        "title": "Clinical characterisation of women with persistent genital arousal disorder: the iPGAD study",
+        "sourceType": "primary",
+        "design": "Clinical case-control study",
+        "preview": "Unwanted genital arousal occurred without sexual desire; neurophysiological testing did not establish one uniform peripheral lesion.",
+        "access": "Public source",
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Abstract; Discussion"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "05340c9987166cfc3634e400ca3e87530937c83cf7c196a40526fea11f6bcabe",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/conditions/persistent-genital-arousal-disorder-genitopelvic-dysesthesia",
+      "entityId": "C08",
+      "sourceId": "COND-C08-NEURO-2020",
+      "drugRegimenAsRecorded": "No comparative drug regimen recorded",
+      "conditionScopeAsRecorded": "Persistent genital arousal disorder",
+      "populationAsRecorded": null,
+      "populationMissingReason": "not_recorded_in_canonical_source_metadata",
+      "endpointScope": "Neurological lesions and sensory-network observations",
+      "role": "no_intervention_result",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Neurological case characterization does not establish a repurposed intervention effect.",
+      "sourceRecord": {
+        "title": "Persistent genital arousal disorder: a special sense neuropathy",
+        "sourceType": "primary",
+        "design": "Neurological case series",
+        "preview": "Some cases were associated with lesions affecting sacral sensory networks.",
+        "access": "Public source",
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Abstract; Discussion"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "4156191cd41f1d161be5639af8f2afdb383ec2ac176a2b28c15551d50aad1060",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/conditions/persistent-genital-arousal-disorder-genitopelvic-dysesthesia",
+      "entityId": "C08",
+      "sourceId": "P-D04-CSBD-2022",
+      "drugRegimenAsRecorded": "Separate naltrexone and paroxetine arms",
+      "conditionScopeAsRecorded": "Compulsive sexual behavior disorder",
+      "populationAsRecorded": "73 men with compulsive sexual behaviour disorder",
+      "populationMissingReason": null,
+      "endpointScope": "Self-report and clinician-interview symptom outcomes",
+      "role": "wrong_condition",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Canonical C07 CSBD findings in 73 men cannot serve C08 PGAD/genitopelvic dysesthesia.",
+      "sourceRecord": {
+        "title": "Tolerability and efficacy of paroxetine and naltrexone for treatment of compulsive sexual behaviour disorder",
+        "sourceType": "primary",
+        "design": "20-week randomized placebo-controlled trial",
+        "preview": "Clinician interviews and self-report outcomes gave different results.",
+        "access": "full_text_html",
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Trial methods and results",
+          "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9453901/",
+          "basis": "full_text"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "3fd394e6c3980d2305a2eff1ea88e3f51f87b07cd870ff99ced986a11ff088ac",
+      "otherScopedCanonicalRows": [
+        {
+          "rowId": "SYN-D04-C07-P-D04-CSBD-2022",
+          "drugId": "D04",
+          "conditionId": "C07",
+          "population": "Heterosexual cisgender men with compulsive sexual behavior disorder",
+          "endpoint": "Self-report and clinician-interview symptom outcomes",
+          "timepoint": "20 weeks"
+        }
+      ]
+    },
+    {
+      "route": "/conditions/multiple-myeloma",
+      "entityId": "C21",
+      "sourceId": "COND-C21-NCI",
+      "drugRegimenAsRecorded": "No intervention effect established by context",
+      "conditionScopeAsRecorded": "Context scope; see recorded title",
+      "populationAsRecorded": null,
+      "populationMissingReason": "not_recorded_in_canonical_source_metadata",
+      "endpointScope": "Not an original intervention-result record",
+      "role": "context_only",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "sourceRecord": {
+        "title": "NCI: Plasma cell neoplasms including multiple myeloma",
+        "sourceType": "context",
+        "design": "Official condition information",
+        "preview": "NCI: Plasma cell neoplasms including multiple myeloma",
+        "access": "Public source",
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Overview and treatment sections"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "a52e589616160022f6cc6b6a69538ca20cc1192b3d7e6d8790f5e1893b6abfa0",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/conditions/multiple-myeloma",
+      "entityId": "C21",
+      "sourceId": "COND-C21-THAL",
+      "drugRegimenAsRecorded": "No intervention effect established by context",
+      "conditionScopeAsRecorded": "Context scope; see recorded title",
+      "populationAsRecorded": null,
+      "populationMissingReason": "not_recorded_in_canonical_source_metadata",
+      "endpointScope": "Not an original intervention-result record",
+      "role": "context_only",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "sourceRecord": {
+        "title": "NCI: Thalidomide",
+        "sourceType": "context",
+        "design": "Official condition information",
+        "preview": "NCI: Thalidomide",
+        "access": "Public source",
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Overview and treatment sections"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "22f091ef23d82b3ca91bc0a4f001d89268db8c1e83952c478f561916c96c25dd",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/conditions/multiple-myeloma",
+      "entityId": "C21",
+      "sourceId": "COND-C21-IMMUNE",
+      "drugRegimenAsRecorded": "No intervention effect established by context",
+      "conditionScopeAsRecorded": "Context scope; see recorded title",
+      "populationAsRecorded": null,
+      "populationMissingReason": "not_recorded_in_canonical_source_metadata",
+      "endpointScope": "Not an original intervention-result record",
+      "role": "context_only",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "sourceRecord": {
+        "title": "NCI: Immune system modulators",
+        "sourceType": "context",
+        "design": "Official condition information",
+        "preview": "NCI: Immune system modulators",
+        "access": "Public source",
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Overview and treatment sections"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "f663461724b3c56d5b96307f914218759679d32eb4cfd42bc6410ff2960224cf",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/conditions/multiple-myeloma",
+      "entityId": "C21",
+      "sourceId": "CP019-R01",
+      "drugRegimenAsRecorded": "No intervention effect established by context",
+      "conditionScopeAsRecorded": "Cancer cell lines and xenografts; cancer patients in cited trials and retrospective cohorts; tumor-microenvironment mechanisms",
+      "populationAsRecorded": "Cancer cell lines and xenografts; cancer patients in cited trials and retrospective cohorts; tumor-microenvironment mechanisms",
+      "populationMissingReason": null,
+      "endpointScope": "Not an original intervention-result record",
+      "role": "context_only",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "sourceRecord": {
+        "title": "Corpus record: s41392-020-00280-x.pdf",
+        "sourceType": "review",
+        "design": "Narrative review; Table 1 clinical-trial listings are secondary registry summaries",
+        "preview": "Background source; excluded from primary-result counts. Narrative review; Table 1 clinical-trial listings are secondary registry summaries",
+        "access": "Local full text acquired; reused accepted extraction",
+        "status": "Source record; formal appraisal and human review pending",
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "p. 7 Table 1; p. 9",
+          "basis": "Accepted CP28 extraction"
+        },
+        {
+          "section": "pp. 7–8 Table 1",
+          "basis": "Accepted CP28 extraction"
+        },
+        {
+          "section": "pp. 6, 9",
+          "basis": "Accepted CP28 extraction"
+        },
+        {
+          "section": "p. 7 Table 1",
+          "basis": "Accepted CP28 extraction"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "pending",
+        "humanApproval": "pending",
+        "publicationState": "private_ai_draft"
+      },
+      "sourceRecordSha256": "17924e6da043535eddc0512b0b80945ee76a33630cde05586479056e32ec8ee8",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/conditions/multiple-myeloma",
+      "entityId": "C21",
+      "sourceId": "CP020-R01",
+      "drugRegimenAsRecorded": "No intervention effect established by context",
+      "conditionScopeAsRecorded": "Cancer cell lines, patient-derived organoids, animal tumors, observational patients and cited clinical trials",
+      "populationAsRecorded": "Cancer cell lines, patient-derived organoids, animal tumors, observational patients and cited clinical trials",
+      "populationMissingReason": null,
+      "endpointScope": "Not an original intervention-result record",
+      "role": "context_only",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "sourceRecord": {
+        "title": "Corpus record: s41392-024-01808-1.pdf",
+        "sourceType": "review",
+        "design": "Comprehensive narrative review of experimental/computational repurposing, tumor mechanisms and delivery; registry-table overview",
+        "preview": "Background source; excluded from primary-result counts. Comprehensive narrative review of experimental/computational repurposing, tumor mechanisms and delivery; registry-table overview",
+        "access": "Local full text acquired; reused accepted extraction",
+        "status": "Source record; formal appraisal and human review pending",
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "printed/PDF p. 18",
+          "basis": "Accepted CP28 extraction"
+        },
+        {
+          "section": "printed/PDF p. 10",
+          "basis": "Accepted CP28 extraction"
+        },
+        {
+          "section": "printed/PDF p. 5 Table 2; printed/PDF p. 8",
+          "basis": "Accepted CP28 extraction"
+        },
+        {
+          "section": "printed/PDF p. 8",
+          "basis": "Accepted CP28 extraction"
+        },
+        {
+          "section": "printed/PDF p. 9",
+          "basis": "Accepted CP28 extraction"
+        },
+        {
+          "section": "printed/PDF p. 24",
+          "basis": "Accepted CP28 extraction"
+        },
+        {
+          "section": "printed/PDF p. 2; original p. 9",
+          "basis": "Accepted CP28 extraction"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "pending",
+        "humanApproval": "pending",
+        "publicationState": "private_ai_draft"
+      },
+      "sourceRecordSha256": "741ec9053f018775210cebb37c0d5f0784f0c272ff343aa97cd822ff85d651e8",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/conditions/multiple-myeloma",
+      "entityId": "C21",
+      "sourceId": "MF-MYELOMA-MODELS-2018",
+      "drugRegimenAsRecorded": "Metformin",
+      "conditionScopeAsRecorded": "Myeloma cell lines and mouse xenografts",
+      "populationAsRecorded": "Human myeloma cell lines and NOD-SCID mouse xenografts",
+      "populationMissingReason": null,
+      "endpointScope": "Cell growth, autophagy and cell-cycle arrest",
+      "role": "nonclinical_report",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Exact preclinical myeloma record; no patient disease-control result.",
+      "sourceRecord": {
+        "title": "Metformin induces autophagy and cell-cycle arrest in myeloma by targeting AMPK and mTOR",
+        "sourceType": "primary",
+        "design": "Cell-line and mouse xenograft experiments",
+        "preview": "Metformin inhibited myeloma-cell growth with AMPK activation and mTORC1/mTORC2 inhibition.",
+        "access": null,
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Abstract: Methods, Results and Interpretation"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "d88c62f06e92dd04e5e8b7c656c8022b7b8c377b71e0a859873b8062fa29b086",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/conditions/multiple-myeloma",
+      "entityId": "C21",
+      "sourceId": "P-D07-MYELOMA-2016",
+      "drugRegimenAsRecorded": "Itraconazole plus arsenic trioxide",
+      "conditionScopeAsRecorded": "Myeloma NCI-H929 cells and mouse tumors",
+      "populationAsRecorded": "Myeloma NCI-H929 cells and mouse tumors",
+      "populationMissingReason": null,
+      "endpointScope": "Hedgehog signaling and experimental inhibition",
+      "role": "nonclinical_report",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Not itraconazole monotherapy or a human myeloma treatment effect.",
+      "sourceRecord": {
+        "title": "Synergistic inhibitory effect of arsenic trioxide combined with itraconazole on Hedgehog pathway of multiple myeloma NCI-H929 cells",
+        "sourceType": "primary",
+        "design": "Cell and mouse experiments",
+        "preview": "Combination inhibited Hedgehog signaling in preclinical models.",
+        "access": "abstract_only",
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Abstract",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/27784375/",
+          "basis": "abstract"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "185bf873a4c75046437cf7fd941e59069071d90278ac99481578b2c972c1e67a",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/conditions/multiple-myeloma",
+      "entityId": "C21",
+      "sourceId": "P-D20-MYELOMA",
+      "drugRegimenAsRecorded": "Simvastatin",
+      "conditionScopeAsRecorded": "Multiple myeloma cell lines",
+      "populationAsRecorded": "U266, RPMI 8226 and ARH77 cell lines",
+      "populationMissingReason": null,
+      "endpointScope": "Cell death",
+      "role": "nonclinical_report",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Cell-line death cannot supply a human myeloma benefit row.",
+      "sourceRecord": {
+        "title": "Simvastatin induces death of multiple myeloma cell lines",
+        "sourceType": "primary",
+        "design": "Laboratory study",
+        "preview": "Simvastatin induces death of multiple myeloma cell lines",
+        "access": "Published report or abstract",
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Abstract: methods and results"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "ba8d5d161891728210cedca5c4cdc5041cc8eb0bee9d0c696d4b8c309794d140",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/conditions/multiple-myeloma",
+      "entityId": "C21",
+      "sourceId": "P-D23-MYELOMA",
+      "drugRegimenAsRecorded": "Aspirin versus enoxaparin during lenalidomide-based treatment",
+      "conditionScopeAsRecorded": "Selected newly diagnosed myeloma patients at low thromboembolic risk",
+      "populationAsRecorded": "342 selected patients with newly diagnosed myeloma and low thromboembolic risk",
+      "populationMissingReason": null,
+      "endpointScope": "Thromboprophylaxis",
+      "role": "clinical_report",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Supportive-care endpoint is not cancer control. Exact comparative values and assessment cannot be invented from the title.",
+      "sourceRecord": {
+        "title": "Aspirin versus enoxaparin for thromboprophylaxis during lenalidomide-based myeloma treatment",
+        "sourceType": "primary",
+        "design": "Randomized open-label thromboprophylaxis substudy",
+        "preview": "Aspirin versus enoxaparin for thromboprophylaxis during lenalidomide-based myeloma treatment",
+        "access": "Published report or abstract",
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Abstract: methods and results"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "005c12e9f73e7ff545c4f440fd7d7083fa0458788df4fadfb07539a8eed5bbf0",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/conditions/type-2-diabetes",
+      "entityId": "C31",
+      "sourceId": "COND-C31-NIDDK",
+      "drugRegimenAsRecorded": "No intervention effect established by context",
+      "conditionScopeAsRecorded": "Context scope; see recorded title",
+      "populationAsRecorded": null,
+      "populationMissingReason": "not_recorded_in_canonical_source_metadata",
+      "endpointScope": "Not an original intervention-result record",
+      "role": "context_only",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "sourceRecord": {
+        "title": "NIDDK: What is diabetes?",
+        "sourceType": "context",
+        "design": null,
+        "preview": "Type 2 diabetes involves ineffective insulin action and insufficient insulin to maintain normal blood glucose.",
+        "access": "Public full page",
+        "status": null,
+        "reviewState": "context_source",
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "What are the different types of diabetes? — Type 2 diabetes",
+          "table_figure": null,
+          "basis": "Full official source page verified on 2026-10-11"
+        },
+        {
+          "section": "What other health problems can people with diabetes develop?",
+          "table_figure": null,
+          "basis": "Full official source page verified on 2026-10-11"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "context_source",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "aa3a6f5b5cd2ef71a14bfb6dd15d0374c5128d2bd937af8b15917b448da75a4f",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/conditions/type-2-diabetes",
+      "entityId": "C31",
+      "sourceId": "COND-C31-MANAGEMENT",
+      "drugRegimenAsRecorded": "No intervention effect established by context",
+      "conditionScopeAsRecorded": "Context scope; see recorded title",
+      "populationAsRecorded": null,
+      "populationMissingReason": "not_recorded_in_canonical_source_metadata",
+      "endpointScope": "Not an original intervention-result record",
+      "role": "context_only",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "sourceRecord": {
+        "title": "NIDDK: Managing diabetes",
+        "sourceType": "context",
+        "design": null,
+        "preview": "Diabetes management considers blood glucose, other health conditions, medicines and monitoring.",
+        "access": "Public full page",
+        "status": null,
+        "reviewState": "context_source",
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "How can I manage my diabetes?",
+          "table_figure": null,
+          "basis": "Full official source page verified on 2026-10-11"
+        },
+        {
+          "section": "What types of medicines should I take?",
+          "table_figure": null,
+          "basis": "Full official source page verified on 2026-10-11"
+        },
+        {
+          "section": "How can I check my blood glucose level at home?",
+          "table_figure": null,
+          "basis": "Full official source page verified on 2026-10-11"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "context_source",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "1bf5ec601604511c166c5fc7ebce10acb6efdc009b5a3134fd98732cb28a5a5e",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/conditions/type-2-diabetes",
+      "entityId": "C31",
+      "sourceId": "MF-LABEL-2025",
+      "drugRegimenAsRecorded": "No intervention effect established by context",
+      "conditionScopeAsRecorded": "People receiving immediate-release metformin for type 2 diabetes",
+      "populationAsRecorded": "People receiving immediate-release metformin for type 2 diabetes",
+      "populationMissingReason": null,
+      "endpointScope": "Not an original intervention-result record",
+      "role": "context_only",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "sourceRecord": {
+        "title": "Metformin hydrochloride tablets: U.S. prescribing information",
+        "sourceType": "context",
+        "design": "Official prescribing information",
+        "preview": "U.S. product labeling describes metformin’s glucose-lowering action, adverse effects, contraindications and interactions.",
+        "access": "full_text_html",
+        "status": null,
+        "reviewState": "pending",
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "1 Indications and Usage; 12.1 Mechanism of Action"
+        },
+        {
+          "section": "2.3; 4; 5.1"
+        },
+        {
+          "section": "5.2; 5.3; 6.1; 7"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "pending",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "b11ae999047310eb37c785a5e68e971c87af614af89b067f960025ce26eefb0a",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/conditions/type-2-diabetes",
+      "entityId": "C31",
+      "sourceId": "CTX-REPURPOSING-NCATS",
+      "drugRegimenAsRecorded": "No intervention effect established by context",
+      "conditionScopeAsRecorded": "Context scope; see recorded title",
+      "populationAsRecorded": null,
+      "populationMissingReason": "not_recorded_in_canonical_source_metadata",
+      "endpointScope": "Not an original intervention-result record",
+      "role": "context_only",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "sourceRecord": {
+        "title": "NCATS: Drug repurposing questions and answers",
+        "sourceType": "context",
+        "design": null,
+        "preview": "Drug repurposing investigates existing drugs for possible uses in other conditions.",
+        "access": "Public full page",
+        "status": null,
+        "reviewState": "context_source",
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Question: What is drug repurposing?",
+          "table_figure": null,
+          "basis": "Full official source page verified on 2026-10-11"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "context_source",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "457b35f3c95104d2f20cccb646ce719b395bb06d84318dbcfb10dafbadff83d9",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/conditions/type-2-diabetes",
+      "entityId": "C31",
+      "sourceId": "CTX-GUIDE-2",
+      "drugRegimenAsRecorded": "No intervention effect established by context",
+      "conditionScopeAsRecorded": "Context scope; see recorded title",
+      "populationAsRecorded": null,
+      "populationMissingReason": "not_recorded_in_canonical_source_metadata",
+      "endpointScope": "Not an original intervention-result record",
+      "role": "context_only",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "sourceRecord": {
+        "title": "NCCIH: Types of Research",
+        "sourceType": "context",
+        "design": "Context / research methods",
+        "preview": "CONTEXT: distinguish basic research, trials and reviews",
+        "access": "Official context source",
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [],
+      "locatorState": "not_recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "c8513649af3ae1a6d4f6188133d418b0998e244a4a17eb0350354eed1233551b",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/fluconazole",
+      "entityId": "D34",
+      "sourceId": "CTX-D34-MEDLINEPLUS",
+      "drugRegimenAsRecorded": "No intervention effect established by context",
+      "conditionScopeAsRecorded": "Context scope; see recorded title",
+      "populationAsRecorded": null,
+      "populationMissingReason": "not_recorded_in_canonical_source_metadata",
+      "endpointScope": "Not an original intervention-result record",
+      "role": "context_only",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "sourceRecord": {
+        "title": "MedlinePlus: Fluconazole",
+        "sourceType": "context",
+        "design": null,
+        "preview": "Patient information covers fluconazole uses, formulations, precautions and adverse effects.",
+        "access": "Public full page",
+        "status": null,
+        "reviewState": "context_source",
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Why is this medication prescribed?",
+          "table_figure": null,
+          "basis": "Full official source page verified on 2026-10-11"
+        },
+        {
+          "section": "How should this medicine be used?",
+          "table_figure": null,
+          "basis": "Full official source page verified on 2026-10-11"
+        },
+        {
+          "section": "What special precautions should I follow?",
+          "table_figure": null,
+          "basis": "Full official source page verified on 2026-10-11"
+        },
+        {
+          "section": "What side effects can this medication cause?",
+          "table_figure": null,
+          "basis": "Full official source page verified on 2026-10-11"
+        },
+        {
+          "section": "What should I know about storage and disposal of this medication?",
+          "table_figure": null,
+          "basis": "Full official source page verified on 2026-10-11"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "context_source",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "478092beefe3daaf9f523e2a22fe8d50ef81b1ecb301af24b5b63a16107c33f2",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/fluconazole",
+      "entityId": "D34",
+      "sourceId": "CTX-off-label-1",
+      "drugRegimenAsRecorded": "No intervention effect established by context",
+      "conditionScopeAsRecorded": "Not applicable",
+      "populationAsRecorded": "Not applicable",
+      "populationMissingReason": null,
+      "endpointScope": "Not an original intervention-result record",
+      "role": "context_only",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "sourceRecord": {
+        "title": "Off-label use — official definition",
+        "sourceType": "context",
+        "design": "Context / terminology",
+        "preview": "Authoritative terminology context. This source is not an original study.",
+        "access": "Source link",
+        "status": "Context source",
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [],
+      "locatorState": "not_recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "e76c9dc0fc99b3ef4f4db1db5b973716ae63d1632258918af64a26cab8f22ce1",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/fluconazole",
+      "entityId": "D34",
+      "sourceId": "CTX-D34-LABEL",
+      "drugRegimenAsRecorded": "No intervention effect established by context",
+      "conditionScopeAsRecorded": "Context scope; see recorded title",
+      "populationAsRecorded": null,
+      "populationMissingReason": "not_recorded_in_canonical_source_metadata",
+      "endpointScope": "Not an original intervention-result record",
+      "role": "context_only",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "sourceRecord": {
+        "title": "Fluconazole tablets: US prescribing information",
+        "sourceType": "context",
+        "design": null,
+        "preview": "Prescribing information describes antifungal action, resistance, indications and interaction risks.",
+        "access": "Public full page",
+        "status": null,
+        "reviewState": "context_source",
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Microbiology — Mechanism of Action; Resistance",
+          "table_figure": null,
+          "basis": "Full official source page verified on 2026-10-11"
+        },
+        {
+          "section": "Indications and Usage",
+          "table_figure": null,
+          "basis": "Full official source page verified on 2026-10-11"
+        },
+        {
+          "section": "Contraindications",
+          "table_figure": null,
+          "basis": "Full official source page verified on 2026-10-11"
+        },
+        {
+          "section": "Warnings — Hepatic injury; Potential for fetal harm",
+          "table_figure": null,
+          "basis": "Full official source page verified on 2026-10-11"
+        },
+        {
+          "section": "Precautions — General; Drug Interactions",
+          "table_figure": null,
+          "basis": "Full official source page verified on 2026-10-11"
+        },
+        {
+          "section": "Dosage and Administration",
+          "table_figure": null,
+          "basis": "Full official source page verified on 2026-10-11"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "context_source",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "3c9192a065d251bc9e9f8bfe67801d47489b1a7ac1aa4cdb4f56341132345d68",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/fluconazole",
+      "entityId": "D34",
+      "sourceId": "CTX-CANDIDA-GUIDELINE",
+      "drugRegimenAsRecorded": "No intervention effect established by context",
+      "conditionScopeAsRecorded": "Context scope; see recorded title",
+      "populationAsRecorded": null,
+      "populationMissingReason": "not_recorded_in_canonical_source_metadata",
+      "endpointScope": "Not an original intervention-result record",
+      "role": "context_only",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "sourceRecord": {
+        "title": "CDC: Vulvovaginal candidiasis",
+        "sourceType": "context",
+        "design": null,
+        "preview": "Guideline distinctions between colonization, symptomatic candidiasis, recurrence and non-albicans infection.",
+        "access": "Public full page",
+        "status": null,
+        "reviewState": "context_source",
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Diagnostic Considerations",
+          "table_figure": null,
+          "basis": "Full official source page verified on 2026-10-11"
+        },
+        {
+          "section": "Treatment",
+          "table_figure": null,
+          "basis": "Full official source page verified on 2026-10-11"
+        },
+        {
+          "section": "Recurrent Vulvovaginal Candidiasis",
+          "table_figure": null,
+          "basis": "Full official source page verified on 2026-10-11"
+        },
+        {
+          "section": "Non–albicans Vulvovaginal Candidiasis",
+          "table_figure": null,
+          "basis": "Full official source page verified on 2026-10-11"
+        },
+        {
+          "section": "Pregnancy",
+          "table_figure": null,
+          "basis": "Full official source page verified on 2026-10-11"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "context_source",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "4ed8a969ee487ab3bb74106db8d49be15898ecf8654a9d56c04cfd95fadb2373",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/fluconazole",
+      "entityId": "D34",
+      "sourceId": "CTX-GUIDE-2",
+      "drugRegimenAsRecorded": "No intervention effect established by context",
+      "conditionScopeAsRecorded": "Context scope; see recorded title",
+      "populationAsRecorded": null,
+      "populationMissingReason": "not_recorded_in_canonical_source_metadata",
+      "endpointScope": "Not an original intervention-result record",
+      "role": "context_only",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "sourceRecord": {
+        "title": "NCCIH: Types of Research",
+        "sourceType": "context",
+        "design": "Context / research methods",
+        "preview": "CONTEXT: distinguish basic research, trials and reviews",
+        "access": "Official context source",
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [],
+      "locatorState": "not_recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "c8513649af3ae1a6d4f6188133d418b0998e244a4a17eb0350354eed1233551b",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/fluconazole",
+      "entityId": "D34",
+      "sourceId": "CTX-CANDIDA-CDC",
+      "drugRegimenAsRecorded": "No intervention effect established by context",
+      "conditionScopeAsRecorded": "Context scope; see recorded title",
+      "populationAsRecorded": null,
+      "populationMissingReason": "not_recorded_in_canonical_source_metadata",
+      "endpointScope": "Not an original intervention-result record",
+      "role": "context_only",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "sourceRecord": {
+        "title": "CDC: Candidiasis basics",
+        "sourceType": "context",
+        "design": null,
+        "preview": "Candida can normally live on the body; overgrowth can cause infection, and invasive candidiasis has particular risk settings.",
+        "access": "Public full page",
+        "status": null,
+        "reviewState": "context_source",
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Overview",
+          "table_figure": null,
+          "basis": "Full official source page verified on 2026-10-11"
+        },
+        {
+          "section": "Types and strains — Species",
+          "table_figure": null,
+          "basis": "Full official source page verified on 2026-10-11"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "context_source",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "2b57ef94631b5ccfe209053d81d94f52701812a167edbceace607b89ac4f3308",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/fluconazole",
+      "entityId": "D34",
+      "sourceId": "CTX-TERM-HYPHAE",
+      "drugRegimenAsRecorded": "No intervention effect established by context",
+      "conditionScopeAsRecorded": "Context scope; see recorded title",
+      "populationAsRecorded": null,
+      "populationMissingReason": "not_recorded_in_canonical_source_metadata",
+      "endpointScope": "Not an original intervention-result record",
+      "role": "context_only",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "sourceRecord": {
+        "title": "NLM MeSH: Hyphae",
+        "sourceType": "context",
+        "design": null,
+        "preview": "Hyphae are the microscopic filaments that collectively form a fungal mycelium.",
+        "access": "Public full page",
+        "status": null,
+        "reviewState": "context_source",
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Scope Note; MeSH Unique ID D025301",
+          "table_figure": null,
+          "basis": "Full official source page verified on 2026-10-11"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "context_source",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "55cd2065d2d9a10fb4a9af66a4fef9bdb055d0c39567ae8af9f4a592499b7270",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/fluconazole",
+      "entityId": "D34",
+      "sourceId": "CTX-TERM-BIOFILM",
+      "drugRegimenAsRecorded": "No intervention effect established by context",
+      "conditionScopeAsRecorded": "Context scope; see recorded title",
+      "populationAsRecorded": null,
+      "populationMissingReason": "not_recorded_in_canonical_source_metadata",
+      "endpointScope": "Not an original intervention-result record",
+      "role": "context_only",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "sourceRecord": {
+        "title": "NLM MeSH: Biofilms",
+        "sourceType": "context",
+        "design": null,
+        "preview": "Biofilms contain microbes embedded in an extracellular matrix produced by those microbes.",
+        "access": "Public full page",
+        "status": null,
+        "reviewState": "context_source",
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Biofilms — scope note; MeSH Unique ID D018441",
+          "table_figure": null,
+          "basis": "Full official source page verified on 2026-10-11"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "context_source",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "de4161f61efe898e0ead93cc651bf51636b76d7a1d8d98d403672dc1f654033c",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/fluconazole",
+      "entityId": "D34",
+      "sourceId": "MECH-D34-HYPHAE-1999",
+      "drugRegimenAsRecorded": "Fluconazole in specified susceptible/resistant Candida isolates",
+      "conditionScopeAsRecorded": "Laboratory Candida albicans isolates",
+      "populationAsRecorded": "Susceptible and resistant clinical Candida albicans isolates",
+      "populationMissingReason": null,
+      "endpointScope": "Yeast-to-hypha transition",
+      "role": "nonclinical_report",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Morphology under specified conditions is not human tissue invasion or clinical benefit.",
+      "sourceRecord": {
+        "title": "Effects of Azole Antifungal Drugs on the Transition from Yeast Cells to Hyphae in Susceptible and Resistant Isolates of the Pathogenic Yeast Candida albicans",
+        "sourceType": "Primary research",
+        "design": "Mechanistic laboratory study",
+        "preview": "Fluconazole inhibited hyphal development in susceptible Candida isolates under specified laboratory conditions. Resistant isolates could retain this invasive-growth trait.",
+        "access": "Full text inspected",
+        "status": "Full text inspected · Review pending",
+        "reviewState": "pending",
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": "Hyphal morphology is not direct measurement of human tissue invasion; results depended on strain, medium and exposure timing."
+      },
+      "locators": [
+        {
+          "section": "Materials and Methods: hyphal induction; Results: Fluconazole inhibits hyphal formation; Figures 1–5; Discussion",
+          "basis": "Original full-text methods and results inspected; dedicated appraisal pending."
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "pending",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "c30fe7bbc6a76b8ba48b0be4f637aa7e2fb4db44047be286bbd0d50372bd73bc",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/fluconazole",
+      "entityId": "D34",
+      "sourceId": "MECH-D34-BIOFILM-2019",
+      "drugRegimenAsRecorded": "Fluconazole susceptibility during laboratory biofilm maturation",
+      "conditionScopeAsRecorded": "Clinical Candida isolates grown as laboratory biofilms",
+      "populationAsRecorded": "23 clinical Candida albicans isolates; eight selected for gene-expression measurements",
+      "populationMissingReason": null,
+      "endpointScope": "Susceptibility and resistance-associated gene expression",
+      "role": "nonclinical_report",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Prevention/eradication and laboratory versus patient outcomes remain distinct; no general biofilm-destroying claim.",
+      "sourceRecord": {
+        "title": "Expression of fluconazole resistance-associated genes in biofilm from 23 clinical isolates of Candida albicans",
+        "sourceType": "Primary research",
+        "design": "Mechanistic laboratory study",
+        "preview": "Clinical Candida isolates became less susceptible to fluconazole as laboratory biofilms matured. The experiment does not support describing fluconazole as a general biofilm-destroying drug.",
+        "access": "Full text inspected",
+        "status": "Full text inspected · Review pending",
+        "reviewState": "pending",
+        "n": 23,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": "Plate biofilms and a nonstandardized biofilm inoculum limit clinical interpretation; prevention is distinct from eradication."
+      },
+      "locators": [
+        {
+          "section": "Methods: Antifungal susceptibility testing and gene expression; Results: Table 2 and Figures 2–4; Discussion",
+          "basis": "Original full-text methods and results inspected; dedicated appraisal pending."
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "pending",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "41235f4ec661247cf048d90587df61cf6fd0334f0ec3e20c4b7e02f804c40cb1",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/fluconazole",
+      "entityId": "D34",
+      "sourceId": "MECH-D07-HEDGEHOG-2010",
+      "drugRegimenAsRecorded": "Itraconazole experiments with fluconazole as negative comparator",
+      "conditionScopeAsRecorded": "Reporter-cell and mouse tumor models",
+      "populationAsRecorded": "Shh-Light2/NIH-3T3 reporter cells, pathway-mutant cells and mouse tumor allografts",
+      "populationMissingReason": null,
+      "endpointScope": "Hedgehog pathway activity",
+      "role": "negative_comparator_context",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Retain fluconazole negative-comparator finding; never borrow itraconazole positive cancer findings.",
+      "sourceRecord": {
+        "title": "Itraconazole, a commonly used anti-fungal that inhibits Hedgehog pathway activity and cancer growth",
+        "sourceType": "Primary research",
+        "design": "Mechanistic laboratory study",
+        "preview": "Itraconazole suppressed Hedgehog signaling in reporter and tumor models, with experiments locating its action near Smoothened. Fluconazole did not share this activity in the tested assay.",
+        "access": "Full text inspected",
+        "status": "Full text inspected · Review pending",
+        "reviewState": "pending",
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": "Model-specific pathway inhibition is not a cancer-treatment outcome. Serum conditions materially changed potency."
+      },
+      "locators": [
+        {
+          "section": "Results and Discussion; Figures 1B,D, 2D,E and 4A–E; Experimental Procedures: Hh pathway activity assays",
+          "basis": "Original full-text methods and results inspected; dedicated appraisal pending."
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "pending",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "3893971b9862f3ab9692437ae2c6c8fc62a73cb7c5f4839999ad93aab526e5a3",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/tadalafil",
+      "entityId": "D31",
+      "sourceId": "D31-CIALIS-LABEL",
+      "drugRegimenAsRecorded": "No intervention effect established by context",
+      "conditionScopeAsRecorded": "Context scope; see recorded title",
+      "populationAsRecorded": null,
+      "populationMissingReason": "not_recorded_in_canonical_source_metadata",
+      "endpointScope": "Not an original intervention-result record",
+      "role": "context_only",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "sourceRecord": {
+        "title": "Cialis (tadalafil): US prescribing information",
+        "sourceType": "context",
+        "design": "US product label",
+        "preview": "Indications, contraindications, adverse reactions, interactions and pharmacology of tadalafil.",
+        "access": null,
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Sections 1, 2, 4, 5, 6, 7, 12.1"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "e1f5aeaee4879715005888e6662105503c7c47349c8546a2c276cc79a289f220",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/tadalafil",
+      "entityId": "D31",
+      "sourceId": "D31-ADCIRCA-LABEL",
+      "drugRegimenAsRecorded": "No intervention effect established by context",
+      "conditionScopeAsRecorded": "Context scope; see recorded title",
+      "populationAsRecorded": null,
+      "populationMissingReason": "not_recorded_in_canonical_source_metadata",
+      "endpointScope": "Not an original intervention-result record",
+      "role": "context_only",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "sourceRecord": {
+        "title": "Adcirca (tadalafil): US prescribing information",
+        "sourceType": "context",
+        "design": "US product label",
+        "preview": "Tadalafil for WHO group 1 pulmonary arterial hypertension, including vascular pharmacology and safety.",
+        "access": null,
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Sections 1, 2, 4, 5, 7, 12.1"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "2eadbde6e388516f9b0312ead0e843c63cfe184a42614af8bd0006ef226cdbe8",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/tadalafil",
+      "entityId": "D31",
+      "sourceId": "D31-RAYNAUD-2010",
+      "drugRegimenAsRecorded": "Tadalafil added to existing vasodilator therapy",
+      "conditionScopeAsRecorded": "Secondary Raynaud phenomenon in scleroderma/mixed connective-tissue disease",
+      "populationAsRecorded": "25 people with scleroderma or mixed connective-tissue disease; 24 completed",
+      "populationMissingReason": null,
+      "endpointScope": "Raynaud symptoms and digital-ulcer healing",
+      "role": "clinical_report",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Positive small crossover report remains separate from the other population/trial; no pooling or generalized benefit.",
+      "sourceRecord": {
+        "title": "Efficacy of tadalafil in secondary Raynaud’s phenomenon resistant to vasodilator therapy",
+        "sourceType": "primary",
+        "design": "Randomized double-blind crossover trial",
+        "preview": "Tadalafil improved Raynaud symptoms and digital-ulcer healing as add-on treatment in a small crossover trial.",
+        "access": null,
+        "status": null,
+        "reviewState": null,
+        "n": 25,
+        "randomizedN": null,
+        "intervention": "20 mg on alternate days for six weeks",
+        "comparator": "Placebo added to existing vasodilators",
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Abstract: Methods and Results"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "4f7e56b949dd59583199f9813e23dc5fa4dc4597e6188d3d98450a7e78ce5a4d",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/tadalafil",
+      "entityId": "D31",
+      "sourceId": "D31-RAYNAUD-2009",
+      "drugRegimenAsRecorded": "Tadalafil versus placebo",
+      "conditionScopeAsRecorded": "Raynaud phenomenon secondary to systemic sclerosis",
+      "populationAsRecorded": "Women with systemic sclerosis and Raynaud phenomenon; 39 evaluable",
+      "populationMissingReason": null,
+      "endpointScope": "Raynaud condition score and attack frequency/duration",
+      "role": "clinical_report",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Recorded null finding retained; not replaced by the positive 2010 report.",
+      "sourceRecord": {
+        "title": "Randomized placebo-controlled crossover trial of tadalafil in Raynaud’s phenomenon secondary to systemic sclerosis",
+        "sourceType": "primary",
+        "design": "Randomized double-blind crossover trial",
+        "preview": "Tadalafil did not improve Raynaud condition score or attack frequency or duration versus placebo.",
+        "access": null,
+        "status": null,
+        "reviewState": null,
+        "n": 39,
+        "randomizedN": null,
+        "intervention": "20 mg daily for four weeks",
+        "comparator": "Placebo",
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Abstract: Methods and Results"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "34349eaa8d9f83fec3d91f00b817b88d1a4297ba6fe23e28e1d6820c199f0407",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/tadalafil",
+      "entityId": "D31",
+      "sourceId": "MECH-D31-OXYGENATION-2020",
+      "drugRegimenAsRecorded": "Tadalafil",
+      "conditionScopeAsRecorded": "Previous small-vessel occlusion stroke",
+      "populationAsRecorded": "20 participants with previous small-vessel occlusion stroke (17 men, 3 women)",
+      "populationMissingReason": null,
+      "endpointScope": "Cortical oxygenation signal",
+      "role": "mechanistic_report",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "NIRS oxygenation signal is not global brain perfusion, cognition or recurrent-stroke benefit.",
+      "sourceRecord": {
+        "title": "Tadalafil may improve cerebral perfusion in small-vessel occlusion stroke—a pilot study",
+        "sourceType": "Primary research",
+        "design": "Randomized double-blind placebo-controlled crossover pilot trial",
+        "preview": "A small crossover trial detected a modest cortical oxygenation signal after tadalafil. It did not establish a general increase in brain blood flow or a clinical benefit.",
+        "access": "Full text inspected",
+        "status": "Full text inspected · Review pending",
+        "reviewState": "pending",
+        "n": 20,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": "Small pilot; NIRS superficial/possibly extracranial; no cognition or recurrent-stroke benefit demonstrated."
+      },
+      "locators": [
+        {
+          "section": "Materials and Methods: Trial design and NIRS; Results: NIRS, Figure 4B; Discussion: Limitations",
+          "basis": "Original full-text methods and results inspected; dedicated appraisal pending."
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "pending",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "b6545eb88867326ac53832c773500899e966a4d570c257203f7955d0be948d58",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/drugs/tadalafil",
+      "entityId": "D31",
+      "sourceId": "MECH-D31-PASTIS-2022",
+      "drugRegimenAsRecorded": "Single-dose tadalafil versus placebo",
+      "conditionScopeAsRecorded": "Vascular cognitive impairment",
+      "populationAsRecorded": "65 randomized; 59 commenced; 55 completed; 53 had complete usable cerebral-blood-flow data",
+      "populationMissingReason": null,
+      "endpointScope": "Prespecified MRI cerebral-perfusion measures",
+      "role": "mechanistic_report",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Recorded null perfusion finding does not establish long-term dementia prevention or clinical benefit.",
+      "sourceRecord": {
+        "title": "The PASTIS trial: Testing tadalafil for possible use in vascular cognitive impairment",
+        "sourceType": "Primary research",
+        "design": "Randomized double-blind placebo-controlled crossover trial",
+        "preview": "PASTIS directly measured brain perfusion by MRI. A single tadalafil dose did not significantly increase the prespecified subcortical blood-flow measures.",
+        "access": "Full text inspected",
+        "status": "Full text inspected · Review pending",
+        "reviewState": "pending",
+        "n": 55,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": "A short mechanistic trial cannot establish dementia prevention or long-term treatment benefit."
+      },
+      "locators": [
+        {
+          "section": "Methods: trial design, imaging and statistical analysis; Results: Figure 1C, Figure 3 and Table 2; Discussion",
+          "basis": "Original full-text methods and results inspected; dedicated appraisal pending."
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "pending",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "a81a0b6dc069199a0ebfb009063145df830a91afaa113d96969e49feee857d25",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/conditions/aging",
+      "entityId": "GOAL-AGING",
+      "sourceId": "AGING-NIH",
+      "drugRegimenAsRecorded": "No intervention effect established by context",
+      "conditionScopeAsRecorded": "Context scope; see recorded title",
+      "populationAsRecorded": null,
+      "populationMissingReason": "not_recorded_in_canonical_source_metadata",
+      "endpointScope": "Not an original intervention-result record",
+      "role": "context_only",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "sourceRecord": {
+        "title": "Healthy Aging — National Institutes of Health",
+        "sourceType": "context",
+        "design": "Official health information",
+        "preview": "Healthy aging includes physical, mental and cognitive health, independence and quality of life.",
+        "access": null,
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Healthy Aging"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "f0f35abc372e6409284f06a327575d9d2be2583aeac28613b5b52bf1f09756e0",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/conditions/aging",
+      "entityId": "GOAL-AGING",
+      "sourceId": "AGING-RAPA-MICE-2009",
+      "drugRegimenAsRecorded": "Rapamycin",
+      "conditionScopeAsRecorded": "Mouse lifespan research",
+      "populationAsRecorded": "Genetically heterogeneous mice",
+      "populationMissingReason": null,
+      "endpointScope": "Lifespan in genetically heterogeneous mice",
+      "role": "nonclinical_report",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Direct survival experiment in mice; no human lifespan inference.",
+      "sourceRecord": {
+        "title": "Rapamycin fed late in life extends lifespan in genetically heterogeneous mice",
+        "sourceType": "primary",
+        "design": "Multisite mouse lifespan experiment",
+        "preview": "Rapamycin extended lifespan in genetically heterogeneous mice, including when begun late in life.",
+        "access": null,
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Abstract and results"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "69bcc69fbb29bf397f681f93ed1473558c8cdf255bc27248e914a71c8791f5f1",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/conditions/aging",
+      "entityId": "GOAL-AGING",
+      "sourceId": "AGING-PEARL-2025",
+      "drugRegimenAsRecorded": "Compounded rapamycin, 5 or 10 mg weekly as recorded",
+      "conditionScopeAsRecorded": "Human healthspan research",
+      "populationAsRecorded": "Adults aged 50–85; 114 completed and were analyzed",
+      "populationMissingReason": null,
+      "endpointScope": "Primary visceral adiposity at 48 weeks; selected secondary measures",
+      "role": "clinical_report",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Primary null finding retained; healthspan is not lifespan. The recorded N is 114 analyzed completers, not assumed randomized enrollment.",
+      "sourceRecord": {
+        "title": "Influence of rapamycin on safety and healthspan metrics after one year: PEARL trial results",
+        "sourceType": "primary",
+        "design": "Randomized double-blind placebo-controlled trial",
+        "preview": "The 48-week PEARL trial found no significant change in its primary visceral-fat outcome; selected secondary outcomes differed.",
+        "access": null,
+        "status": null,
+        "reviewState": null,
+        "n": 114,
+        "randomizedN": null,
+        "intervention": "Compounded rapamycin 5 or 10 mg weekly",
+        "comparator": "Placebo",
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Abstract; Results; Discussion; Supplementary Figure 1"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "cb5d5bfc528ffcbfe673ad2bc65374cc133ba936c337eeba0010ebee1747153e",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/conditions/aging",
+      "entityId": "GOAL-AGING",
+      "sourceId": "MF-METPREVENT-2025",
+      "drugRegimenAsRecorded": "Metformin versus placebo",
+      "conditionScopeAsRecorded": "Older adults with probable sarcopenia and prefrailty/frailty",
+      "populationAsRecorded": "Adults 65 years or older with probable sarcopenia, slow 4-m walking speed and physical prefrailty or frailty; Gateshead and Newcastle, England; mean age 80.4 years.",
+      "populationMissingReason": null,
+      "endpointScope": "Four-meter walking speed after four months",
+      "role": "other_exact_scope",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Existing assessed row is D01/C30 sarcopenia; not a general aging/lifespan row. Retain null walking-speed finding and tolerability limits.",
+      "sourceRecord": {
+        "title": "Metformin and physical performance in older people with probable sarcopenia and physical prefrailty or frailty in England (MET-PREVENT): a double-blind, randomised, placebo-controlled trial",
+        "sourceType": "primary",
+        "design": "Double-blind randomized placebo-controlled parallel-group trial",
+        "preview": "Metformin did not improve four-metre walking speed after four months and was poorly tolerated in this older frail population.",
+        "access": "primary_abstract_html",
+        "status": null,
+        "reviewState": "pending",
+        "n": 72,
+        "randomizedN": 72,
+        "intervention": "Metformin 500 mg three times daily for four months",
+        "comparator": "Matching placebo",
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Primary report abstract: Methods, Findings and Interpretation, mirrored in Newcastle University repository"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "pending",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "2dc983a5ab68e2ee230ee972366340bbe232d92b80be62639fa4e4f1debef3aa",
+      "otherScopedCanonicalRows": [
+        {
+          "rowId": "SYN-D01-C30-METPREVENT",
+          "drugId": "D01",
+          "conditionId": "C30",
+          "population": "Adults 65 years or older with probable sarcopenia, slow 4-m walking speed and physical prefrailty or frailty; Gateshead and Newcastle, England; mean age 80.4 years.",
+          "endpoint": "Adjusted between-group difference in 4-m walking speed",
+          "timepoint": "4 months"
+        }
+      ]
+    },
+    {
+      "route": "/conditions/aging",
+      "entityId": "GOAL-AGING",
+      "sourceId": "MF-MASTERS-2019",
+      "drugRegimenAsRecorded": "Metformin during progressive resistance training",
+      "conditionScopeAsRecorded": "Healthy adults aged at least 65",
+      "populationAsRecorded": "Healthy adults aged 65 years and older undergoing resistance training",
+      "populationMissingReason": null,
+      "endpointScope": "Lean/thigh mass gains and separately measured strength",
+      "role": "other_exact_scope",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Existing D01/C30 lean-mass row cannot become a lifespan outcome. Attenuated hypertrophy and nonsignificant strength differences remain distinct.",
+      "sourceRecord": {
+        "title": "Metformin blunts muscle hypertrophy in response to progressive resistance exercise training in older adults: The MASTERS trial",
+        "sourceType": "primary",
+        "design": "Randomized double-blind placebo-controlled trial",
+        "preview": "Metformin attenuated gains in lean and thigh muscle mass during resistance training; differences in strength gains were not statistically significant.",
+        "access": "indexed_full_text",
+        "status": null,
+        "reviewState": "pending",
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Abstract; Introduction; muscle signaling results"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "pending",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "e229eae00f6bcc600a89373427d8d4872e62cd345918461d2471ceed11edcf25",
+      "otherScopedCanonicalRows": [
+        {
+          "rowId": "SYN-D01-C30-MF-MASTERS-2019-CA65ECB67C3BDB523F7D",
+          "drugId": "D01",
+          "conditionId": "C30",
+          "population": "Healthy, predominantly high-functioning older adults, eligibility age 65 years or older; 109 randomized and 94 completers analyzed",
+          "endpoint": "Percentage change in total lean body mass measured by DXA",
+          "timepoint": "Baseline to study week 16: 14 weeks of supervised progressive resistance training after a 2-week drug wash-in"
+        }
+      ]
+    },
+    {
+      "route": "/conditions/aging",
+      "entityId": "GOAL-AGING",
+      "sourceId": "AGING-SIROLIMUS-LABEL",
+      "drugRegimenAsRecorded": "No intervention effect established by context",
+      "conditionScopeAsRecorded": "Context scope; see recorded title",
+      "populationAsRecorded": null,
+      "populationMissingReason": "not_recorded_in_canonical_source_metadata",
+      "endpointScope": "Not an original intervention-result record",
+      "role": "context_only",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "sourceRecord": {
+        "title": "Sirolimus tablets: US prescribing information",
+        "sourceType": "context",
+        "design": "US product label",
+        "preview": "Sirolimus pharmacology, immunosuppression, wound healing, lipids and drug interactions.",
+        "access": null,
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Sections 1, 5, 7 and 12.1"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "d52bbed88b9254b9d3bd618da9f2f4451c94077f9d6d9431dd3408c85263befd",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/conditions/aging",
+      "entityId": "GOAL-AGING",
+      "sourceId": "MF-LABEL-2025",
+      "drugRegimenAsRecorded": "No intervention effect established by context",
+      "conditionScopeAsRecorded": "People receiving immediate-release metformin for type 2 diabetes",
+      "populationAsRecorded": "People receiving immediate-release metformin for type 2 diabetes",
+      "populationMissingReason": null,
+      "endpointScope": "Not an original intervention-result record",
+      "role": "context_only",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Identity/label/guideline/review/method context does not supply an independent outcome or trial count.",
+      "sourceRecord": {
+        "title": "Metformin hydrochloride tablets: U.S. prescribing information",
+        "sourceType": "context",
+        "design": "Official prescribing information",
+        "preview": "U.S. product labeling describes metformin’s glucose-lowering action, adverse effects, contraindications and interactions.",
+        "access": "full_text_html",
+        "status": null,
+        "reviewState": "pending",
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "1 Indications and Usage; 12.1 Mechanism of Action"
+        },
+        {
+          "section": "2.3; 4; 5.1"
+        },
+        {
+          "section": "5.2; 5.3; 6.1; 7"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "pending",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "b11ae999047310eb37c785a5e68e971c87af614af89b067f960025ce26eefb0a",
+      "otherScopedCanonicalRows": []
+    },
+    {
+      "route": "/conditions/aging",
+      "entityId": "GOAL-AGING",
+      "sourceId": "P-D06-PERIODONTAL-2020",
+      "drugRegimenAsRecorded": "Rapamycin",
+      "conditionScopeAsRecorded": "Periodontal/oral health in aged mice",
+      "populationAsRecorded": "Aged mice",
+      "populationMissingReason": null,
+      "endpointScope": "Periodontal inflammation and bone loss over eight weeks",
+      "role": "nonclinical_report",
+      "decision": "no_exact_assessed_outcome_available",
+      "reason": "Aged-mouse oral health is neither human periodontitis benefit nor a lifespan endpoint.",
+      "sourceRecord": {
+        "title": "Rapamycin rejuvenates oral health in aging mice",
+        "sourceType": "primary",
+        "design": "Controlled animal experiment",
+        "preview": "Eight weeks of rapamycin reduced periodontal inflammation and bone loss.",
+        "access": "Full text inspected",
+        "status": null,
+        "reviewState": null,
+        "n": null,
+        "randomizedN": null,
+        "intervention": null,
+        "comparator": null,
+        "decisiveLimit": null
+      },
+      "locators": [
+        {
+          "section": "Abstract; Results",
+          "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7220376/",
+          "basis": "full_text"
+        },
+        {
+          "section": "Results and Figures 2–4; Materials and Methods: Animal studies; Encapsulated rapamycin feeding",
+          "basis": "Original full-text methods/results inspected on 2026-10-11"
+        }
+      ],
+      "locatorState": "recorded",
+      "existingReviewState": {
+        "source": "not_recorded",
+        "metadata": "not_recorded",
+        "humanApproval": "not_recorded",
+        "publicationState": "not_recorded"
+      },
+      "sourceRecordSha256": "8b0e7517072641c3c44abb59ac7500e5d8fb4370384408c78a55e0d903d75a89",
+      "otherScopedCanonicalRows": []
+    }
+  ],
+  "assessmentInventory": {
+    "existingRows": 62,
+    "existingAssessments": 62,
+    "existingSummaries": 60,
+    "newAssessments": 0,
+    "newGrades": 0,
+    "approvalOrReleaseChanges": 0
+  }
+}

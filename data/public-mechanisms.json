@@ -1021,13 +1021,13 @@
     {
       "drugId": "D05",
       "originalAction": {
-        "text": "Pramipexole stimulates dopamine D2-family receptors, with preference for D3; it is used for Parkinson’s disease and restless legs syndrome.",
+        "text": "Label context: Pramipexole stimulates the D2 family of dopamine receptors, with greater affinity for D3. The precise mechanisms of its Parkinson and restless-legs benefits remain incompletely understood; receptor binding alone does not establish an antidepressant effect.",
         "sourceIds": [
           "CTX-D05-LABEL"
         ],
         "sentences": [
           {
-            "text": "Pramipexole stimulates dopamine D2-family receptors, with preference for D3; it is used for Parkinson’s disease and restless legs syndrome.",
+            "text": "Label context: Pramipexole stimulates the D2 family of dopamine receptors, with greater affinity for D3. The precise mechanisms of its Parkinson and restless-legs benefits remain incompletely understood; receptor binding alone does not establish an antidepressant effect.",
             "sources": [
               "CTX-D05-LABEL"
             ]
@@ -1035,15 +1035,17 @@
         ]
       },
       "summary": {
-        "text": "Its depression rationale is to strengthen dopamine-related reward and motivation signaling, including symptoms of diminished pleasure.",
+        "text": "Clinical translation: Low confidence. PAX-D tested pramipexole added to existing depression treatment. A symptom change does not establish that dopamine-related reward signaling caused the improvement.",
         "sourceIds": [
-          "P-D05-PAXD-2025"
+          "P-D05-PAXD-2025",
+          "COND-C09-PAXD-PROTOCOL"
         ],
         "sentences": [
           {
-            "text": "Its depression rationale is to strengthen dopamine-related reward and motivation signaling, including symptoms of diminished pleasure.",
+            "text": "Clinical translation: Low confidence. PAX-D tested pramipexole added to existing depression treatment. A symptom change does not establish that dopamine-related reward signaling caused the improvement.",
             "sources": [
-              "P-D05-PAXD-2025"
+              "P-D05-PAXD-2025",
+              "COND-C09-PAXD-PROTOCOL"
             ]
           }
         ]
@@ -1354,6 +1356,489 @@
               ]
             }
           ]
+        },
+        {
+          "id": "azole-human-hedgehog",
+          "title": "Human Hedgehog findings are mixed",
+          "text": "Itraconazole has human treatment-response biomarker data, but those data do not establish consistent pathway inhibition. Gerber's lung-cancer window study enrolled 13 patients; 12 had paired skin biopsies, with no significant GLI1 or PTCH1 change. Antonarakis measured skin GLI1 changes and described the support for a tumor mechanism as indirect. A five-person study combined sequential arsenic trioxide and itraconazole, so its biomarker effect cannot be assigned to itraconazole alone; no tumor shrinkage was observed. Clinical inference is Low because these small exploratory studies use surrogate tissues or combination treatment and give conflicting pathway results.",
+          "sourceIds": [
+            "MECH-D07-GLI1-LUNG-2020",
+            "P-D07-PROSTATE-2013",
+            "MECH-D07-GLI1-COMBINATION-2016"
+          ],
+          "sentences": [
+            {
+              "text": "Itraconazole has human treatment-response biomarker data, but those data do not establish consistent pathway inhibition. Gerber's lung-cancer window study enrolled 13 patients; 12 had paired skin biopsies, with no significant GLI1 or PTCH1 change. Antonarakis measured skin GLI1 changes and described the support for a tumor mechanism as indirect. A five-person study combined sequential arsenic trioxide and itraconazole, so its biomarker effect cannot be assigned to itraconazole alone; no tumor shrinkage was observed. Clinical inference is Low because these small exploratory studies use surrogate tissues or combination treatment and give conflicting pathway results.",
+              "sources": [
+                "MECH-D07-GLI1-LUNG-2020",
+                "P-D07-PROSTATE-2013",
+                "MECH-D07-GLI1-COMBINATION-2016"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "azole-bcc-unresolved",
+          "title": "An exploratory basal-cell carcinoma estimate remains unresolved",
+          "text": "The exploratory basal-cell-carcinoma biomarker estimate remains unreconciled with its registry summaries. It should not be treated as a settled numerical estimate of pathway inhibition. This uncertainty is separate from the negative lung-cancer biomarker finding.",
+          "sourceIds": [
+            "P-D07-BCC-2014",
+            "MECH-D07-GLI1-LUNG-2020"
+          ],
+          "sentences": [
+            {
+              "text": "The exploratory basal-cell-carcinoma biomarker estimate remains unreconciled with its registry summaries. It should not be treated as a settled numerical estimate of pathway inhibition. This uncertainty is separate from the negative lung-cancer biomarker finding.",
+              "sources": [
+                "P-D07-BCC-2014",
+                "MECH-D07-GLI1-LUNG-2020"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "azole-candida-limits",
+          "title": "Fungal morphology is a separate mechanism question",
+          "text": "In laboratory yeast isolates, itraconazole and fluconazole altered hyphal formation in ways that depended on susceptibility and concentration. Resistant isolates could retain hyphae. The tested between-drug difference was not statistically significant, and a change in fungal morphology does not establish reduced tissue invasion or improved symptoms in patients. Clinical inference is Low.",
+          "sourceIds": [
+            "MECH-D34-HYPHAE-1999",
+            "MECH-AZOLE-HYPHAE-2011"
+          ],
+          "sentences": [
+            {
+              "text": "In laboratory yeast isolates, itraconazole and fluconazole altered hyphal formation in ways that depended on susceptibility and concentration. Resistant isolates could retain hyphae. The tested between-drug difference was not statistically significant, and a change in fungal morphology does not establish reduced tissue invasion or improved symptoms in patients. Clinical inference is Low.",
+              "sources": [
+                "MECH-D34-HYPHAE-1999",
+                "MECH-AZOLE-HYPHAE-2011"
+              ]
+            }
+          ]
+        }
+      ],
+      "rationales": [
+        {
+          "id": "ovarian",
+          "condition": "Ovarian clear cell carcinoma",
+          "rationale": {
+            "text": "Hedgehog signaling, blood-vessel growth and drug transport involved in resistance.",
+            "sourceIds": [
+              "COND-C03-ITRA-2014",
+              "P-D07-PANCREAS-2015"
+            ],
+            "sentences": [
+              {
+                "text": "Hedgehog signaling, blood-vessel growth and drug transport involved in resistance.",
+                "sources": [
+                  "COND-C03-ITRA-2014",
+                  "P-D07-PANCREAS-2015"
+                ]
+              }
+            ]
+          },
+          "tested": {
+            "text": "Chemotherapy plus itraconazole in recurrent or persistent ovarian clear cell carcinoma.",
+            "sourceIds": [
+              "COND-C03-ITRA-2014"
+            ],
+            "sentences": [
+              {
+                "text": "Chemotherapy plus itraconazole in recurrent or persistent ovarian clear cell carcinoma.",
+                "sources": [
+                  "COND-C03-ITRA-2014"
+                ]
+              }
+            ]
+          },
+          "limits": {
+            "text": "The combination study had no randomized comparator; it cannot isolate itraconazole’s contribution or establish which proposed pathway explains an outcome.",
+            "sourceIds": [
+              "COND-C03-ITRA-2014"
+            ],
+            "sentences": [
+              {
+                "text": "The combination study had no randomized comparator; it cannot isolate itraconazole’s contribution or establish which proposed pathway explains an outcome.",
+                "sources": [
+                  "COND-C03-ITRA-2014"
+                ]
+              }
+            ]
+          },
+          "conditionHref": "/conditions/epithelial-ovarian-or-fallopian-tube-carcinoma"
+        },
+        {
+          "id": "prostate",
+          "condition": "Prostate cancer",
+          "rationale": {
+            "text": "Hedgehog suppression and effects on blood-vessel growth.",
+            "sourceIds": [
+              "P-D07-PROSTATE-2013"
+            ],
+            "sentences": [
+              {
+                "text": "Hedgehog suppression and effects on blood-vessel growth.",
+                "sources": [
+                  "P-D07-PROSTATE-2013"
+                ]
+              }
+            ]
+          },
+          "tested": {
+            "text": "An exploratory phase II trial examined pathway-related effects; circulating testosterone did not decrease.",
+            "sourceIds": [
+              "P-D07-PROSTATE-2013"
+            ],
+            "sentences": [
+              {
+                "text": "An exploratory phase II trial examined pathway-related effects; circulating testosterone did not decrease.",
+                "sources": [
+                  "P-D07-PROSTATE-2013"
+                ]
+              }
+            ]
+          },
+          "limits": {
+            "text": "The investigation does not support explaining the activity as testosterone reduction. There was no comparison against standard therapy.",
+            "sourceIds": [
+              "P-D07-PROSTATE-2013"
+            ],
+            "sentences": [
+              {
+                "text": "The investigation does not support explaining the activity as testosterone reduction. There was no comparison against standard therapy.",
+                "sources": [
+                  "P-D07-PROSTATE-2013"
+                ]
+              }
+            ]
+          },
+          "conditionHref": "/conditions/prostate-cancer"
+        },
+        {
+          "id": "lung",
+          "condition": "Non-small-cell lung cancer",
+          "rationale": {
+            "text": "Inhibition of blood-vessel-forming endothelial cells motivated adding itraconazole to chemotherapy.",
+            "sourceIds": [
+              "P-D07-LUNG-2013"
+            ],
+            "sentences": [
+              {
+                "text": "Inhibition of blood-vessel-forming endothelial cells motivated adding itraconazole to chemotherapy.",
+                "sources": [
+                  "P-D07-LUNG-2013"
+                ]
+              }
+            ]
+          },
+          "tested": {
+            "text": "A small phase II trial tested itraconazole with pemetrexed.",
+            "sourceIds": [
+              "P-D07-LUNG-2013"
+            ],
+            "sentences": [
+              {
+                "text": "A small phase II trial tested itraconazole with pemetrexed.",
+                "sources": [
+                  "P-D07-LUNG-2013"
+                ]
+              }
+            ]
+          },
+          "limits": {
+            "text": "Testing a treatment combination does not establish that an anti-angiogenic mechanism caused its clinical results.",
+            "sourceIds": [
+              "P-D07-LUNG-2013"
+            ],
+            "sentences": [
+              {
+                "text": "Testing a treatment combination does not establish that an anti-angiogenic mechanism caused its clinical results.",
+                "sources": [
+                  "P-D07-LUNG-2013"
+                ]
+              }
+            ]
+          },
+          "conditionHref": "/conditions/non-small-cell-lung-cancer"
+        },
+        {
+          "id": "colorectal",
+          "condition": "Colorectal cancer",
+          "rationale": {
+            "text": "WNT inhibition drove cycling and dormant cancer cells toward senescence, a nondividing state.",
+            "sourceIds": [
+              "P-D07-CRC-2018"
+            ],
+            "sentences": [
+              {
+                "text": "WNT inhibition drove cycling and dormant cancer cells toward senescence, a nondividing state.",
+                "sources": [
+                  "P-D07-CRC-2018"
+                ]
+              }
+            ]
+          },
+          "tested": {
+            "text": "Laboratory models examined the response of different cancer-cell populations.",
+            "sourceIds": [
+              "P-D07-CRC-2018"
+            ],
+            "sentences": [
+              {
+                "text": "Laboratory models examined the response of different cancer-cell populations.",
+                "sources": [
+                  "P-D07-CRC-2018"
+                ]
+              }
+            ]
+          },
+          "limits": {
+            "text": "The observed cell-state changes do not establish clinical benefit in patients.",
+            "sourceIds": [
+              "P-D07-CRC-2018"
+            ],
+            "sentences": [
+              {
+                "text": "The observed cell-state changes do not establish clinical benefit in patients.",
+                "sources": [
+                  "P-D07-CRC-2018"
+                ]
+              }
+            ]
+          },
+          "conditionHref": "/conditions/colorectal-cancer"
+        },
+        {
+          "id": "pancreatic",
+          "condition": "Pancreatic cancer",
+          "rationale": {
+            "text": "Hedgehog signaling, blood-vessel growth and P-glycoprotein-associated drug resistance.",
+            "sourceIds": [
+              "P-D07-PANCREAS-2015"
+            ],
+            "sentences": [
+              {
+                "text": "Hedgehog signaling, blood-vessel growth and P-glycoprotein-associated drug resistance.",
+                "sources": [
+                  "P-D07-PANCREAS-2015"
+                ]
+              }
+            ]
+          },
+          "tested": {
+            "text": "Itraconazole was combined with multi-drug chemotherapy in metastatic pancreatic cancer.",
+            "sourceIds": [
+              "P-D07-PANCREAS-2015"
+            ],
+            "sentences": [
+              {
+                "text": "Itraconazole was combined with multi-drug chemotherapy in metastatic pancreatic cancer.",
+                "sources": [
+                  "P-D07-PANCREAS-2015"
+                ]
+              }
+            ]
+          },
+          "limits": {
+            "text": "There was no randomized comparator, and the combination cannot establish the separate contribution of each proposed mechanism.",
+            "sourceIds": [
+              "P-D07-PANCREAS-2015"
+            ],
+            "sentences": [
+              {
+                "text": "There was no randomized comparator, and the combination cannot establish the separate contribution of each proposed mechanism.",
+                "sources": [
+                  "P-D07-PANCREAS-2015"
+                ]
+              }
+            ]
+          },
+          "conditionHref": "/conditions/pancreatic-cancer"
+        },
+        {
+          "id": "melanoma",
+          "condition": "Melanoma",
+          "rationale": {
+            "text": "Suppression of Hedgehog, WNT and PI3K/mTOR growth signaling.",
+            "sourceIds": [
+              "P-D07-MELANOMA-2017"
+            ],
+            "sentences": [
+              {
+                "text": "Suppression of Hedgehog, WNT and PI3K/mTOR growth signaling.",
+                "sources": [
+                  "P-D07-MELANOMA-2017"
+                ]
+              }
+            ]
+          },
+          "tested": {
+            "text": "Experiments examined signaling and cell proliferation in melanoma models.",
+            "sourceIds": [
+              "P-D07-MELANOMA-2017"
+            ],
+            "sentences": [
+              {
+                "text": "Experiments examined signaling and cell proliferation in melanoma models.",
+                "sources": [
+                  "P-D07-MELANOMA-2017"
+                ]
+              }
+            ]
+          },
+          "limits": {
+            "text": "Changes in model systems do not establish patient benefit or identify a single causal pathway.",
+            "sourceIds": [
+              "P-D07-MELANOMA-2017"
+            ],
+            "sentences": [
+              {
+                "text": "Changes in model systems do not establish patient benefit or identify a single causal pathway.",
+                "sources": [
+                  "P-D07-MELANOMA-2017"
+                ]
+              }
+            ]
+          },
+          "conditionHref": "/conditions/melanoma"
+        },
+        {
+          "id": "bcc",
+          "condition": "Basal cell carcinoma",
+          "rationale": {
+            "text": "Hedgehog pathway suppression, targeting a driver of this cancer.",
+            "sourceIds": [
+              "P-D07-BCC-2014"
+            ],
+            "sentences": [
+              {
+                "text": "Hedgehog pathway suppression, targeting a driver of this cancer.",
+                "sources": [
+                  "P-D07-BCC-2014"
+                ]
+              }
+            ]
+          },
+          "tested": {
+            "text": "An exploratory human trial measured reduced pathway activity in biopsied tumors.",
+            "sourceIds": [
+              "P-D07-BCC-2014"
+            ],
+            "sentences": [
+              {
+                "text": "An exploratory human trial measured reduced pathway activity in biopsied tumors.",
+                "sources": [
+                  "P-D07-BCC-2014"
+                ]
+              }
+            ]
+          },
+          "limits": {
+            "text": "Human tumor measurements support pathway activity during treatment; they do not establish comparative clinical effectiveness.",
+            "sourceIds": [
+              "P-D07-BCC-2014"
+            ],
+            "sentences": [
+              {
+                "text": "Human tumor measurements support pathway activity during treatment; they do not establish comparative clinical effectiveness.",
+                "sources": [
+                  "P-D07-BCC-2014"
+                ]
+              }
+            ]
+          },
+          "conditionHref": "/conditions/basal-cell-carcinoma"
+        },
+        {
+          "id": "aml",
+          "condition": "Acute myeloid leukemia",
+          "rationale": {
+            "text": "Inhibition of oxidative phosphorylation, the mitochondrial energy system used by therapy-resistant leukemia stem cells.",
+            "sourceIds": [
+              "P-D07-AML-2026"
+            ],
+            "sentences": [
+              {
+                "text": "Inhibition of oxidative phosphorylation, the mitochondrial energy system used by therapy-resistant leukemia stem cells.",
+                "sources": [
+                  "P-D07-AML-2026"
+                ]
+              }
+            ]
+          },
+          "tested": {
+            "text": "Preclinical experiments tested the metabolic rationale, including itraconazole with cytarabine.",
+            "sourceIds": [
+              "P-D07-AML-2026"
+            ],
+            "sentences": [
+              {
+                "text": "Preclinical experiments tested the metabolic rationale, including itraconazole with cytarabine.",
+                "sources": [
+                  "P-D07-AML-2026"
+                ]
+              }
+            ]
+          },
+          "limits": {
+            "text": "The preclinical findings do not establish effectiveness in people with leukemia.",
+            "sourceIds": [
+              "P-D07-AML-2026"
+            ],
+            "sentences": [
+              {
+                "text": "The preclinical findings do not establish effectiveness in people with leukemia.",
+                "sources": [
+                  "P-D07-AML-2026"
+                ]
+              }
+            ]
+          },
+          "conditionHref": "/conditions/acute-myeloid-leukemia"
+        },
+        {
+          "id": "myeloma",
+          "condition": "Multiple myeloma",
+          "rationale": {
+            "text": "Suppression of Hedgehog-dependent cell survival.",
+            "sourceIds": [
+              "P-D07-MYELOMA-2016"
+            ],
+            "sentences": [
+              {
+                "text": "Suppression of Hedgehog-dependent cell survival.",
+                "sources": [
+                  "P-D07-MYELOMA-2016"
+                ]
+              }
+            ]
+          },
+          "tested": {
+            "text": "Itraconazole and arsenic trioxide were tested together in myeloma cells and mouse tumors.",
+            "sourceIds": [
+              "P-D07-MYELOMA-2016"
+            ],
+            "sentences": [
+              {
+                "text": "Itraconazole and arsenic trioxide were tested together in myeloma cells and mouse tumors.",
+                "sources": [
+                  "P-D07-MYELOMA-2016"
+                ]
+              }
+            ]
+          },
+          "limits": {
+            "text": "Combination findings in cells and mice do not establish itraconazole-alone activity or clinical benefit.",
+            "sourceIds": [
+              "P-D07-MYELOMA-2016"
+            ],
+            "sentences": [
+              {
+                "text": "Combination findings in cells and mice do not establish itraconazole-alone activity or clinical benefit.",
+                "sources": [
+                  "P-D07-MYELOMA-2016"
+                ]
+              }
+            ]
+          },
+          "conditionHref": "/conditions/multiple-myeloma"
         }
       ],
       "rationales": [
@@ -2025,70 +2510,82 @@
     {
       "drugId": "D10",
       "originalAction": {
-        "text": "Fenbendazole is a benzimidazole dewormer that disrupts parasite microtubules; veterinary products are approved for specified animal uses.",
+        "text": "Official context: Fenbendazole is not FDA-approved for human use, including cancer treatment. In January 2026, the FDA approved a generic fenbendazole oral suspension for specified parasite infections in cattle and goats.",
         "sourceIds": [
-          "P-D10-OVARIAN-2024",
           "CTX-D10-FDA"
         ],
         "sentences": [
           {
-            "text": "Fenbendazole is a benzimidazole dewormer that disrupts parasite microtubules; veterinary products are approved for specified animal uses.",
+            "text": "Official context: Fenbendazole is not FDA-approved for human use, including cancer treatment. In January 2026, the FDA approved a generic fenbendazole oral suspension for specified parasite infections in cattle and goats.",
             "sources": [
-              "P-D10-OVARIAN-2024",
               "CTX-D10-FDA"
             ]
           }
         ]
       },
       "summary": {
-        "text": "Ovarian experiments investigate disrupted cell division, mitotic catastrophe and apoptosis, meaning programmed cell death.",
+        "text": "Models only. Confidence in clinical translation: Low. In lung-cancer models, fenbendazole partly disrupted microtubules, interfered with cell division and increased cell death. These laboratory findings explain a research hypothesis; they do not show that an effective exposure can be reached safely in people.",
         "sourceIds": [
-          "P-D10-OVARIAN-2024"
+          "MECH-D10-MICROTUBULE-2018"
         ],
         "sentences": [
           {
-            "text": "Ovarian experiments investigate disrupted cell division, mitotic catastrophe and apoptosis, meaning programmed cell death.",
+            "text": "Models only. Confidence in clinical translation: Low. In lung-cancer models, fenbendazole partly disrupted microtubules, interfered with cell division and increased cell death. These laboratory findings explain a research hypothesis; they do not show that an effective exposure can be reached safely in people.",
             "sources": [
-              "P-D10-OVARIAN-2024"
+              "MECH-D10-MICROTUBULE-2018"
             ]
           }
         ]
       },
       "questions": [
         {
-          "id": "ovarian",
-          "title": "Why investigate fenbendazole in ovarian cancer?",
-          "text": "It disturbed division and triggered cell-death pathways in A2780 and SKOV3 ovarian cancer cells, with additional testing in animal tumors.",
-          "sourceIds": [
-            "P-D10-OVARIAN-2024"
-          ],
-          "sentences": [
-            {
-              "text": "It disturbed division and triggered cell-death pathways in A2780 and SKOV3 ovarian cancer cells, with additional testing in animal tumors.",
-              "sources": [
-                "P-D10-OVARIAN-2024"
-              ]
-            }
-          ]
-        },
-        {
           "id": "microtubules-apoptosis",
-          "title": "Microtubules, cell division and apoptosis",
-          "text": "In lung-cancer models, fenbendazole partly disrupted microtubules, arrested cell division and increased apoptosis. Experiments also found altered p53 activity and glucose handling. The results support several possible contributors to cancer-cell injury. Cell cultures and mouse xenografts do not establish an effective or safe anticancer exposure in people.",
+          "title": "Microtubules and cell division",
+          "text": "Models only. Confidence in clinical translation: Low. In lung-cancer models, fenbendazole partly disrupted microtubules, interfered with cell division and increased cell death. These laboratory findings explain a research hypothesis; they do not show that an effective exposure can be reached safely in people.",
           "sourceIds": [
             "MECH-D10-MICROTUBULE-2018"
           ],
           "sentences": [
             {
-              "text": "In lung-cancer models, fenbendazole partly disrupted microtubules, arrested cell division and increased apoptosis. Experiments also found altered p53 activity and glucose handling.",
+              "text": "Models only. Confidence in clinical translation: Low. In lung-cancer models, fenbendazole partly disrupted microtubules, interfered with cell division and increased cell death. These laboratory findings explain a research hypothesis; they do not show that an effective exposure can be reached safely in people.",
               "sources": [
                 "MECH-D10-MICROTUBULE-2018"
               ]
-            },
+            }
+          ]
+        },
+        {
+          "id": "p53-glucose",
+          "title": "Are p53 and glucose effects consistent?",
+          "text": "Models only. Confidence in clinical translation: Low. Dogra reported p53 activation and reduced glucose uptake in lung-cancer cells. The pathway is not consistent across models: Park found no change in glucose consumption or lactate production in H4IIE rat liver-cancer cells, and a separate colorectal-cell abstract reported effects that did not require p53.",
+          "sourceIds": [
+            "MECH-D10-MICROTUBULE-2018",
+            "P-D10-H4IIE-2022",
+            "P-D10-CRC-CELLS-2022"
+          ],
+          "sentences": [
             {
-              "text": "The results support several possible contributors to cancer-cell injury. Cell cultures and mouse xenografts do not establish an effective or safe anticancer exposure in people.",
+              "text": "Models only. Confidence in clinical translation: Low. Dogra reported p53 activation and reduced glucose uptake in lung-cancer cells. The pathway is not consistent across models: Park found no change in glucose consumption or lactate production in H4IIE rat liver-cancer cells, and a separate colorectal-cell abstract reported effects that did not require p53.",
               "sources": [
-                "MECH-D10-MICROTUBULE-2018"
+                "MECH-D10-MICROTUBULE-2018",
+                "P-D10-H4IIE-2022",
+                "P-D10-CRC-CELLS-2022"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "proteasome",
+          "title": "What did Dogra 2012 actually test?",
+          "text": "Models only. Confidence in clinical translation: Low. Dogra 2012 described proteasome impairment and endoplasmic-reticulum stress in cancer cells. It was an in vitro study; its discussion said animal efficacy was still being studied.",
+          "sourceIds": [
+            "P-D10-PROTEASOME-2012"
+          ],
+          "sentences": [
+            {
+              "text": "Models only. Confidence in clinical translation: Low. Dogra 2012 described proteasome impairment and endoplasmic-reticulum stress in cancer cells. It was an in vitro study; its discussion said animal efficacy was still being studied.",
+              "sources": [
+                "P-D10-PROTEASOME-2012"
               ]
             }
           ]
@@ -2098,13 +2595,13 @@
     {
       "drugId": "D11",
       "originalAction": {
-        "text": "Guanfacine stimulates central alpha-2A adrenergic receptors; the extended-release product is used for ADHD and can lower heart rate and blood pressure.",
+        "text": "Label context: Guanfacine stimulates central alpha-2A adrenergic receptors and reduces sympathetic outflow, which can lower blood pressure and heart rate. The Intuniv label says the mechanism responsible for ADHD benefit is unknown.",
         "sourceIds": [
           "CTX-D11-LABEL"
         ],
         "sentences": [
           {
-            "text": "Guanfacine stimulates central alpha-2A adrenergic receptors; the extended-release product is used for ADHD and can lower heart rate and blood pressure.",
+            "text": "Label context: Guanfacine stimulates central alpha-2A adrenergic receptors and reduces sympathetic outflow, which can lower blood pressure and heart rate. The Intuniv label says the mechanism responsible for ADHD benefit is unknown.",
             "sources": [
               "CTX-D11-LABEL"
             ]
@@ -2112,13 +2609,13 @@
         ]
       },
       "summary": {
-        "text": "The Long COVID rationale is to strengthen prefrontal-network connections supporting working memory and attention, paired with N-acetylcysteine for oxidative stress.",
+        "text": "Clinical translation: Low confidence. The Long COVID rationale is to strengthen prefrontal-network connections supporting working memory and attention, paired with N-acetylcysteine for oxidative stress.",
         "sourceIds": [
           "P-D11-LONGCOVID-2023"
         ],
         "sentences": [
           {
-            "text": "The Long COVID rationale is to strengthen prefrontal-network connections supporting working memory and attention, paired with N-acetylcysteine for oxidative stress.",
+            "text": "Clinical translation: Low confidence. The Long COVID rationale is to strengthen prefrontal-network connections supporting working memory and attention, paired with N-acetylcysteine for oxidative stress.",
             "sources": [
               "P-D11-LONGCOVID-2023"
             ]
@@ -2349,13 +2846,13 @@
     {
       "drugId": "D14",
       "originalAction": {
-        "text": "Rituximab binds CD20 on B cells and promotes their destruction through immune-mediated mechanisms.",
+        "text": "Label context: Rituximab binds CD20 on pre-B and mature B cells and promotes their destruction. Complement and antibody-dependent cellular mechanisms can contribute to this B-cell depletion.",
         "sourceIds": [
           "CTX-D14-LABEL"
         ],
         "sentences": [
           {
-            "text": "Rituximab binds CD20 on B cells and promotes their destruction through immune-mediated mechanisms.",
+            "text": "Label context: Rituximab binds CD20 on pre-B and mature B cells and promotes their destruction. Complement and antibody-dependent cellular mechanisms can contribute to this B-cell depletion.",
             "sources": [
               "CTX-D14-LABEL"
             ]
@@ -2363,13 +2860,13 @@
         ]
       },
       "summary": {
-        "text": "The vitiligo hypothesis targets B-cell contributions and autoantibodies involved in damage to pigment-producing melanocytes.",
+        "text": "Clinical translation: Low confidence. The vitiligo hypothesis targets B-cell contributions and autoantibodies involved in damage to pigment-producing melanocytes.",
         "sourceIds": [
           "P-D14-VITILIGO-2013"
         ],
         "sentences": [
           {
-            "text": "The vitiligo hypothesis targets B-cell contributions and autoantibodies involved in damage to pigment-producing melanocytes.",
+            "text": "Clinical translation: Low confidence. The vitiligo hypothesis targets B-cell contributions and autoantibodies involved in damage to pigment-producing melanocytes.",
             "sources": [
               "P-D14-VITILIGO-2013"
             ]
@@ -3504,13 +4001,13 @@
     {
       "drugId": "D25",
       "originalAction": {
-        "text": "Memantine blocks open NMDA-receptor channels with low-to-moderate affinity, limiting excessive glutamate signaling. Its labeled role is symptomatic treatment of moderate-to-severe Alzheimer dementia.",
+        "text": "Label context: Memantine blocks open NMDA-receptor channels with low-to-moderate affinity. The label describes symptomatic treatment of moderate-to-severe Alzheimer dementia, without evidence that it prevents or slows neurodegeneration.",
         "sourceIds": [
           "CTX-D25-LABEL"
         ],
         "sentences": [
           {
-            "text": "Memantine blocks open NMDA-receptor channels with low-to-moderate affinity, limiting excessive glutamate signaling. Its labeled role is symptomatic treatment of moderate-to-severe Alzheimer dementia.",
+            "text": "Label context: Memantine blocks open NMDA-receptor channels with low-to-moderate affinity. The label describes symptomatic treatment of moderate-to-severe Alzheimer dementia, without evidence that it prevents or slows neurodegeneration.",
             "sources": [
               "CTX-D25-LABEL"
             ]
@@ -3518,13 +4015,13 @@
         ]
       },
       "summary": {
-        "text": "Glioblastoma experiments connect NMDA signaling with increased MGMT, a DNA-repair protein that can counter temozolomide. Memantine was tested to interrupt this resistance pathway.",
+        "text": "Clinical translation: Low confidence. Glioblastoma experiments connect NMDA signaling with increased MGMT, a DNA-repair protein that can counter temozolomide. Memantine was tested to interrupt this resistance pathway.",
         "sourceIds": [
           "P-D25-GBM"
         ],
         "sentences": [
           {
-            "text": "Glioblastoma experiments connect NMDA signaling with increased MGMT, a DNA-repair protein that can counter temozolomide. Memantine was tested to interrupt this resistance pathway.",
+            "text": "Clinical translation: Low confidence. Glioblastoma experiments connect NMDA signaling with increased MGMT, a DNA-repair protein that can counter temozolomide. Memantine was tested to interrupt this resistance pathway.",
             "sources": [
               "P-D25-GBM"
             ]
@@ -3735,13 +4232,13 @@
     {
       "drugId": "D28",
       "originalAction": {
-        "text": "Vorinostat inhibits histone deacetylases including HDAC1, HDAC2, HDAC3, and HDAC6, changing protein acetylation and gene regulation in its anticancer use.",
+        "text": "Label context: Vorinostat inhibits HDAC1, HDAC2, HDAC3 and HDAC6, changing protein acetylation and gene regulation. Its antineoplastic mechanism is not fully characterized; the labeled indication is specified cutaneous T-cell lymphoma.",
         "sourceIds": [
           "CTX-D28-LABEL"
         ],
         "sentences": [
           {
-            "text": "Vorinostat inhibits histone deacetylases including HDAC1, HDAC2, HDAC3, and HDAC6, changing protein acetylation and gene regulation in its anticancer use.",
+            "text": "Label context: Vorinostat inhibits HDAC1, HDAC2, HDAC3 and HDAC6, changing protein acetylation and gene regulation. Its antineoplastic mechanism is not fully characterized; the labeled indication is specified cutaneous T-cell lymphoma.",
             "sources": [
               "CTX-D28-LABEL"
             ]
@@ -3749,13 +4246,13 @@
         ]
       },
       "summary": {
-        "text": "In Crohn’s research, the rationale is modulation of inflammatory gene programs. A transcriptome-based analysis nominated vorinostat among compounds associated with a chemokine- and cytokine-related gene cluster.",
+        "text": "Clinical translation: Low confidence. In Crohn’s research, the rationale is modulation of inflammatory gene programs. A transcriptome-based analysis nominated vorinostat among compounds associated with a chemokine- and cytokine-related gene cluster.",
         "sourceIds": [
           "CP002-R01"
         ],
         "sentences": [
           {
-            "text": "In Crohn’s research, the rationale is modulation of inflammatory gene programs. A transcriptome-based analysis nominated vorinostat among compounds associated with a chemokine- and cytokine-related gene cluster.",
+            "text": "Clinical translation: Low confidence. In Crohn’s research, the rationale is modulation of inflammatory gene programs. A transcriptome-based analysis nominated vorinostat among compounds associated with a chemokine- and cytokine-related gene cluster.",
             "sources": [
               "CP002-R01"
             ]
@@ -3766,14 +4263,14 @@
         {
           "id": "mechanism-q1",
           "title": "Why might HDAC inhibition matter in Crohn’s disease?",
-          "text": "Histone acetylation regulates transcription, including immune-cell programs. The computational study identified vorinostat within an inflammatory cluster enriched for chemokine signaling and cytokine–receptor interactions.",
+          "text": "Histone acetylation regulates transcription, including immune-cell programs. The computational study identified vorinostat within an inflammatory cluster enriched for chemokine signaling and cytokine-receptor interactions.",
           "sourceIds": [
             "CP002-R01",
             "CTX-D28-LABEL"
           ],
           "sentences": [
             {
-              "text": "Histone acetylation regulates transcription, including immune-cell programs. The computational study identified vorinostat within an inflammatory cluster enriched for chemokine signaling and cytokine–receptor interactions.",
+              "text": "Histone acetylation regulates transcription, including immune-cell programs. The computational study identified vorinostat within an inflammatory cluster enriched for chemokine signaling and cytokine-receptor interactions.",
               "sources": [
                 "CP002-R01",
                 "CTX-D28-LABEL"
@@ -3802,13 +4299,13 @@
     {
       "drugId": "D29",
       "originalAction": {
-        "text": "Clomipramine is a tricyclic medicine that inhibits serotonin reuptake. This is considered important to its anti-obsessional effect, although its precise therapeutic mechanism is not fully established.",
+        "text": "Label context: Clomipramine is a tricyclic medicine for obsessive-compulsive disorder. Serotonin-reuptake inhibition is thought to contribute to its effect, but the label says the actual neurochemical mechanism is unknown.",
         "sourceIds": [
           "CTX-D29-LABEL"
         ],
         "sentences": [
           {
-            "text": "Clomipramine is a tricyclic medicine that inhibits serotonin reuptake. This is considered important to its anti-obsessional effect, although its precise therapeutic mechanism is not fully established.",
+            "text": "Label context: Clomipramine is a tricyclic medicine for obsessive-compulsive disorder. Serotonin-reuptake inhibition is thought to contribute to its effect, but the label says the actual neurochemical mechanism is unknown.",
             "sources": [
               "CTX-D29-LABEL"
             ]
@@ -3816,13 +4313,13 @@
         ]
       },
       "summary": {
-        "text": "The Crohn’s hypothesis comes from compound–gene signature matching in anti-TNF-refractory disease. It does not identify serotonin reuptake as a demonstrated causal treatment target for intestinal inflammation.",
+        "text": "Clinical translation: Low confidence. The Crohn’s hypothesis comes from compound-to-gene signature matching in anti-TNF-refractory disease. It does not identify serotonin reuptake as a demonstrated causal treatment target for intestinal inflammation.",
         "sourceIds": [
           "CP002-R01"
         ],
         "sentences": [
           {
-            "text": "The Crohn’s hypothesis comes from compound–gene signature matching in anti-TNF-refractory disease. It does not identify serotonin reuptake as a demonstrated causal treatment target for intestinal inflammation.",
+            "text": "Clinical translation: Low confidence. The Crohn’s hypothesis comes from compound-to-gene signature matching in anti-TNF-refractory disease. It does not identify serotonin reuptake as a demonstrated causal treatment target for intestinal inflammation.",
             "sources": [
               "CP002-R01"
             ]
@@ -4157,13 +4654,13 @@
         "G-CONDITION-C06"
       ],
       "summary": {
-        "text": "TRPM3 channels help control calcium entry into cells. The proposed mechanism is that opioid-receptor blockade removes an inhibitory influence on these channels in natural-killer cells.",
+        "text": "Clinical translation: Low confidence. Opioid-receptor blockade is proposed to release inhibition of TRPM3-mediated calcium entry in natural-killer cells. A cellular finding does not identify the cause of the whole illness or establish symptom benefit.",
         "sourceIds": [
           "COND-C06-TRPM3-2021"
         ],
         "sentences": [
           {
-            "text": "TRPM3 channels help control calcium entry into cells. The proposed mechanism is that opioid-receptor blockade removes an inhibitory influence on these channels in natural-killer cells.",
+            "text": "Clinical translation: Low confidence. Opioid-receptor blockade is proposed to release inhibition of TRPM3-mediated calcium entry in natural-killer cells. A cellular finding does not identify the cause of the whole illness or establish symptom benefit.",
             "sources": [
               "COND-C06-TRPM3-2021"
             ]
@@ -4661,13 +5158,13 @@
         "G-CONDITION-C19"
       ],
       "summary": {
-        "text": "Itraconazole inhibits Hedgehog signaling. The study measured a 65% reduction in pathway activity alongside reduced tumor-cell proliferation.",
+        "text": "Clinical translation: Low confidence. The primary assessments examined Ki67 proliferation and GLI1-related Hedgehog signaling in tumor tissue. Target and proliferation changes help test the rationale, but do not independently establish lasting cancer control.",
         "sourceIds": [
           "P-D07-BCC-2014"
         ],
         "sentences": [
           {
-            "text": "Itraconazole inhibits Hedgehog signaling. The study measured a 65% reduction in pathway activity alongside reduced tumor-cell proliferation.",
+            "text": "Clinical translation: Low confidence. The primary assessments examined Ki67 proliferation and GLI1-related Hedgehog signaling in tumor tissue. Target and proliferation changes help test the rationale, but do not independently establish lasting cancer control.",
             "sources": [
               "P-D07-BCC-2014"
             ]
@@ -4737,15 +5234,15 @@
         "G-CONDITION-C21"
       ],
       "summary": {
-        "text": "Thalidomide is an immunomodulatory drug: it alters immune-system activity and inhibits the growth of new blood vessels that can support cancer.",
+        "text": "Models only. Confidence in clinical translation: Low. Metformin inhibited myeloma-cell growth and mouse xenograft growth, with AMPK activation, mTOR-pathway changes, autophagy and cell-cycle arrest. The cell experiments did not show apoptosis. These model findings do not establish tumor control or survival benefit in patients.",
         "sourceIds": [
-          "COND-C21-IMMUNE"
+          "MF-MYELOMA-MODELS-2018"
         ],
         "sentences": [
           {
-            "text": "Thalidomide is an immunomodulatory drug: it alters immune-system activity and inhibits the growth of new blood vessels that can support cancer.",
+            "text": "Models only. Confidence in clinical translation: Low. Metformin inhibited myeloma-cell growth and mouse xenograft growth, with AMPK activation, mTOR-pathway changes, autophagy and cell-cycle arrest. The cell experiments did not show apoptosis. These model findings do not establish tumor control or survival benefit in patients.",
             "sources": [
-              "COND-C21-IMMUNE"
+              "MF-MYELOMA-MODELS-2018"
             ]
           }
         ]
@@ -4765,6 +5262,38 @@
               "sources": [
                 "COND-C21-NCI",
                 "COND-C21-IMMUNE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c21-hh-combination",
+          "title": "Does Hedgehog evidence establish a single-drug treatment?",
+          "text": "Models only. Confidence in clinical translation: Low. Itraconazole with arsenic trioxide reduced myeloma-cell growth and tumor burden in mouse experiments, with lower GLI1-related Hedgehog signaling. This combination evidence cannot establish itraconazole-alone benefit or a human myeloma regimen.",
+          "sourceIds": [
+            "P-D07-MYELOMA-2016"
+          ],
+          "sentences": [
+            {
+              "text": "Models only. Confidence in clinical translation: Low. Itraconazole with arsenic trioxide reduced myeloma-cell growth and tumor burden in mouse experiments, with lower GLI1-related Hedgehog signaling. This combination evidence cannot establish itraconazole-alone benefit or a human myeloma regimen.",
+              "sources": [
+                "P-D07-MYELOMA-2016"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c21-cell-death",
+          "title": "Are all cell-death findings the same?",
+          "text": "Models only. Confidence in clinical translation: Low. Simvastatin reduced viability in myeloma cell lines. Cell-cycle effects and the type of cell death differed between lines. An in vitro effect does not establish an effective anticancer dose or benefit in people.",
+          "sourceIds": [
+            "P-D20-MYELOMA"
+          ],
+          "sentences": [
+            {
+              "text": "Models only. Confidence in clinical translation: Low. Simvastatin reduced viability in myeloma cell lines. Cell-cycle effects and the type of cell death differed between lines. An in vitro effect does not establish an effective anticancer dose or benefit in people.",
+              "sources": [
+                "P-D20-MYELOMA"
               ]
             }
           ]
@@ -5009,13 +5538,13 @@
         "G-CONDITION-C28"
       ],
       "summary": {
-        "text": "Minocycline’s anti-inflammatory and anti-apoptotic effects, including improved survival in some animal models, supplied the rationale for testing it in ALS.",
+        "text": "Mechanistic clinical inference: Low confidence. Laboratory anti-inflammatory and anti-apoptotic findings supplied the rationale for minocycline. They did not predict the harmful functional result in the ALS trial.",
         "sourceIds": [
           "COND-C28-MINO-2007"
         ],
         "sentences": [
           {
-            "text": "Minocycline’s anti-inflammatory and anti-apoptotic effects, including improved survival in some animal models, supplied the rationale for testing it in ALS.",
+            "text": "Mechanistic clinical inference: Low confidence. Laboratory anti-inflammatory and anti-apoptotic findings supplied the rationale for minocycline. They did not predict the harmful functional result in the ALS trial.",
             "sources": [
               "COND-C28-MINO-2007"
             ]
@@ -5286,6 +5815,76 @@
           ]
         }
       ]
+    },
+    {
+      "guideIds": [
+        "term-hedgehog-pathway"
+      ],
+      "summary": {
+        "text": "An antifungal action and a Hedgehog pathway effect are separate observations. Itraconazole has cell and mouse evidence plus mixed human biomarker findings. Posaconazole treatment-response evidence in these reports is preclinical; baseline human surgical-tissue measurements are not a response to drug treatment. Fluconazole and voriconazole had negative reporter findings in the cited experiments.",
+        "sourceIds": [
+          "MECH-D07-HEDGEHOG-2010",
+          "MECH-D07-GLI1-LUNG-2020",
+          "P-D07-PROSTATE-2013",
+          "MECH-D07-GLI1-COMBINATION-2016",
+          "MECH-POSACONAZOLE-HEDGEHOG-2016",
+          "MECH-POSACONAZOLE-RMS-2021"
+        ],
+        "sentences": [
+          {
+            "text": "An antifungal action and a Hedgehog pathway effect are separate observations. Itraconazole has cell and mouse evidence plus mixed human biomarker findings. Posaconazole treatment-response evidence in these reports is preclinical; baseline human surgical-tissue measurements are not a response to drug treatment. Fluconazole and voriconazole had negative reporter findings in the cited experiments.",
+            "sources": [
+              "MECH-D07-HEDGEHOG-2010",
+              "MECH-D07-GLI1-LUNG-2020",
+              "P-D07-PROSTATE-2013",
+              "MECH-D07-GLI1-COMBINATION-2016",
+              "MECH-POSACONAZOLE-HEDGEHOG-2016",
+              "MECH-POSACONAZOLE-RMS-2021"
+            ]
+          }
+        ]
+      },
+      "pathways": [
+        {
+          "id": "glossary-bcc-unresolved",
+          "title": "Basal-cell carcinoma biomarker estimates remain unresolved",
+          "text": "The exploratory Kim 2014 basal-cell-carcinoma biomarker estimate remains unreconciled with its registry summaries. It should not be used as a settled numerical estimate of Hedgehog inhibition.",
+          "sourceIds": [
+            "P-D07-BCC-2014"
+          ],
+          "sentences": [
+            {
+              "text": "The exploratory Kim 2014 basal-cell-carcinoma biomarker estimate remains unreconciled with its registry summaries. It should not be used as a settled numerical estimate of Hedgehog inhibition.",
+              "sources": [
+                "P-D07-BCC-2014"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "guideIds": [
+        "term-hyphae"
+      ],
+      "summary": {
+        "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
+        "sourceIds": [
+          "MECH-D34-HYPHAE-1999",
+          "MECH-AZOLE-HYPHAE-2011",
+          "MECH-KETOCONAZOLE-FILAMENTS-2008"
+        ],
+        "sentences": [
+          {
+            "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
+            "sources": [
+              "MECH-D34-HYPHAE-1999",
+              "MECH-AZOLE-HYPHAE-2011",
+              "MECH-KETOCONAZOLE-FILAMENTS-2008"
+            ]
+          }
+        ]
+      }
     }
   ]
 }

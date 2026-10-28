@@ -1171,5 +1171,181 @@
     ],
     "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate.",
     "assessedInputSha256": "0f32134c91aebfa16ca5f821ba9ab12e7327d4397a83cc9f0efd2986dfd0d69a"
+  },
+  {
+    "id": "OUTCOME-FILL2-D02-ACTIV6-RECOVERY",
+    "synthesisIds": [
+      "SYN-FILL2-D02-ACTIV6-RECOVERY"
+    ],
+    "label": "Sustained recovery with higher-dose fluvoxamine",
+    "purpose": "treatment",
+    "grade": "E",
+    "ungradedLabel": "",
+    "rationale": "The masked randomized comparison directly informs this symptom-recovery endpoint, and the credible interval is close to no effect. Postrandomization drug-delivery exclusions, participant-reported recovery, a skeptical Bayesian prior and the selected Omicron-era population leave uncertainty about smaller effects and applicability; the result is informative without proving equivalence. The benefit letter addresses this endpoint only, separately from confidence in the selected-source finding.",
+    "effectLabel": "HR 0.99",
+    "effectDetail": "95% credible interval 0.89–1.09; median recovery 10 days in each group",
+    "direction": "uncertain",
+    "effectRationale": "Higher-dose fluvoxamine did not shorten sustained recovery: adjusted hazard ratio 0.99 (95% Bayesian credible interval 0.89–1.09). Median recovery was 10 days in both groups. The modified intention-to-treat analysis included 1175 of 1208 randomized participants; 33 without timely drug delivery were excluded after randomization. No clinical-importance magnitude category has been assigned.",
+    "trialIds": [
+      "STUDY-ACTIV6-HIGHDOSE-FLUVOX-2023"
+    ],
+    "aggregationNote": "One exact outcome and source report; no pooled estimate. Shared reports and outcomes retain one trial-family identity; this does not establish condition-wide coverage.",
+    "assessedOn": "2026-10-26",
+    "authoring": "AI-assisted exact local source inspection under FILL-REMAPRX-1-STEP2-APPRAISAL; independent and human scientific review pending",
+    "assessedInputSha256": "63b160cc917c477c9130e3ff049cbb01925dc1891d14149ce86da9fb3244e1c9"
+  },
+  {
+    "id": "OUTCOME-FILL2-D02-COVIDOUT-COMPOSITE",
+    "synthesisIds": [
+      "SYN-FILL2-D02-COVIDOUT-COMPOSITE"
+    ],
+    "label": "Hypoxemia, emergency care, hospitalization or death",
+    "purpose": "treatment",
+    "grade": "E",
+    "ungradedLabel": "",
+    "rationale": "The randomized masked factorial comparison directly evaluates fluvoxamine for this 14-day composite and controls for concurrent co-treatment assignments. However, an imprecise odds-ratio interval, home-oximetry ascertainment, modified intention-to-treat exclusions and limited population scope prevent high confidence in a precise effect size. Benefit was not demonstrated, and equivalence was not established. The benefit letter addresses this endpoint only, separately from confidence in the selected-source finding.",
+    "effectLabel": "OR 0.94",
+    "effectDetail": "95% CI 0.66–1.36; no demonstrated composite reduction",
+    "direction": "uncertain",
+    "effectRationale": "Fluvoxamine did not demonstrate a reduction in the primary composite: adjusted odds ratio 0.94 (95% CI 0.66–1.36). Complete-case primary events were 79/329 versus 80/321; the adjusted model used multiple imputation. Home oximetry drove much of the composite and had measurement and reporting limitations; this is not a precise estimate of mortality or hospitalization alone. No clinical-importance magnitude category has been assigned.",
+    "trialIds": [
+      "S-COVIDOUT-2023"
+    ],
+    "aggregationNote": "One exact outcome and source report; no pooled estimate. Shared reports and outcomes retain one trial-family identity; this does not establish condition-wide coverage.",
+    "assessedOn": "2026-10-26",
+    "authoring": "AI-assisted exact local source inspection under FILL-REMAPRX-1-STEP2-APPRAISAL; independent and human scientific review pending",
+    "trialComparisons": {
+      "S-COVIDOUT-2023": "D02"
+    },
+    "assessedInputSha256": "77fc601da09e6a4114bc6a8b2396d166e09ae5eb618c85d692553719f07961ca"
+  },
+  {
+    "id": "OUTCOME-FILL2-D08-COVIDOUT-COMPOSITE",
+    "synthesisIds": [
+      "SYN-FILL2-D08-COVIDOUT-COMPOSITE"
+    ],
+    "label": "Hypoxemia, emergency care, hospitalization or death",
+    "purpose": "treatment",
+    "grade": "E",
+    "ungradedLabel": "",
+    "rationale": "The randomized masked factorial comparison directly evaluates ivermectin for this 14-day composite and controls for concurrent co-treatment assignments. However, an imprecise odds-ratio interval, home-oximetry ascertainment, modified intention-to-treat exclusions and limited population scope prevent high confidence in a precise effect size. Benefit was not demonstrated, and equivalence was not established. The benefit letter addresses this endpoint only, separately from confidence in the selected-source finding.",
+    "effectLabel": "OR 1.05",
+    "effectDetail": "95% CI 0.76–1.45; no demonstrated composite reduction",
+    "direction": "uncertain",
+    "effectRationale": "Ivermectin did not demonstrate a reduction in the primary composite: adjusted odds ratio 1.05 (95% CI 0.76–1.45). Complete-case primary events were 105/407 versus 96/391; the adjusted model used multiple imputation. Home oximetry drove much of the composite and had measurement and reporting limitations; this is not a precise estimate of mortality or hospitalization alone. No clinical-importance magnitude category has been assigned.",
+    "trialIds": [
+      "S-COVIDOUT-2023"
+    ],
+    "aggregationNote": "One exact outcome and source report; no pooled estimate. Shared reports and outcomes retain one trial-family identity; this does not establish condition-wide coverage.",
+    "assessedOn": "2026-10-26",
+    "authoring": "AI-assisted exact local source inspection under FILL-REMAPRX-1-STEP2-APPRAISAL; independent and human scientific review pending",
+    "trialComparisons": {
+      "S-COVIDOUT-2023": "D08"
+    },
+    "assessedInputSha256": "4242a00a7a42744b61e79f799c17f6ae05da5463c4bea87668b3ffd092fcded0"
+  },
+  {
+    "id": "OUTCOME-FILL2-D06-AGING-VAT",
+    "synthesisIds": [
+      "SYN-FILL2-D06-AGING-VAT"
+    ],
+    "label": "Visceral adiposity during healthy aging",
+    "purpose": "treatment",
+    "grade": "E",
+    "ungradedLabel": "",
+    "rationale": "The masked randomized design directly addresses visceral adiposity at 48 weeks, but the small completer-only sample, missing DXA observations, broad intervals and reduced bioavailability of the compounded preparation leave substantial uncertainty. No primary VAT benefit was demonstrated; this surrogate finding cannot establish lifespan extension or rule out an adiposity effect. The benefit letter addresses this endpoint only, separately from confidence in the selected-source finding.",
+    "effectLabel": "No clear VAT difference",
+    "effectDetail": "Improvement OR 1.81 at 5 mg; 1.68 at 10 mg, both with wide intervals",
+    "direction": "uncertain",
+    "effectRationale": "PEARL did not demonstrate a difference in its primary visceral-adiposity outcome. Dose-specific odds ratios for improvement were 1.81 (95% CI 0.73–4.50) at 5 mg and 1.68 (0.66–4.32) at 10 mg; both intervals included no difference. This was a small completer analysis: 125 randomized, 114 completed (40 at 5 mg, 35 at 10 mg, 39 placebo); missing outcome values were removed pairwise. No clinical-importance magnitude category has been assigned.",
+    "trialIds": [
+      "STUDY-PEARL-2025"
+    ],
+    "aggregationNote": "One exact outcome and source report; no pooled estimate. Shared reports and outcomes retain one trial-family identity; this does not establish condition-wide coverage.",
+    "assessedOn": "2026-10-26",
+    "authoring": "AI-assisted exact local source inspection under FILL-REMAPRX-1-STEP2-APPRAISAL; independent and human scientific review pending",
+    "assessedInputSha256": "c4c75bfd0b3e18e147d01e9cd06c5b58f1a1154a5d1765cb748e85c509f7ea3b"
+  },
+  {
+    "id": "OUTCOME-FILL2-D06-AGING-LEAN",
+    "synthesisIds": [
+      "SYN-FILL2-D06-AGING-LEAN"
+    ],
+    "label": "Lean tissue in women during healthy aging",
+    "purpose": "treatment",
+    "grade": "C",
+    "ungradedLabel": "",
+    "rationale": "The reported between-group lean-tissue contrast favors 10 mg compounded rapamycin in women, but few women contributed, endpoint-specific observations were missing, and this was a secondary subgroup among many analyses. Confidence in a general clinical benefit is low despite the positive adjusted comparison; muscle function, sarcopenia treatment and longevity were not demonstrated. The benefit letter addresses this endpoint only, separately from confidence in the selected-source finding.",
+    "effectLabel": "+6.194 percentage points",
+    "effectDetail": "Women, 10 mg versus placebo; 95% CI 0.8773–11.5105",
+    "direction": "benefit",
+    "effectRationale": "Women in the 10 mg group had a larger percentage change in lean tissue mass than placebo: between-group difference 6.194 percentage points (95% CI 0.8773–11.5105; Bonferroni-adjusted P = 0.018). This small secondary subgroup finding does not demonstrate longer life or better physical function. The positive finding is a small secondary sex-specific comparison amid many body-composition and survey analyses; replication and clinical importance remain uncertain. No clinical-importance magnitude category has been assigned.",
+    "trialIds": [
+      "STUDY-PEARL-2025"
+    ],
+    "aggregationNote": "One exact outcome and source report; no pooled estimate. Shared reports and outcomes retain one trial-family identity; this does not establish condition-wide coverage.",
+    "assessedOn": "2026-10-26",
+    "authoring": "AI-assisted exact local source inspection under FILL-REMAPRX-1-STEP2-APPRAISAL; independent and human scientific review pending",
+    "assessedInputSha256": "b007fdbfb1a356768febb0889a06b5a3cd04fadd8c4ce84f0917369b2ece1210"
+  },
+  {
+    "id": "OUTCOME-FILL2-D06-PERIODONTAL-MICE",
+    "synthesisIds": [
+      "SYN-FILL2-D06-PERIODONTAL-MICE"
+    ],
+    "label": "Periodontal bone in aged mice",
+    "purpose": "mechanistic",
+    "grade": null,
+    "ungradedLabel": "Nonclinical evidence only",
+    "rationale": "Two controlled mouse cohorts and repeated imaging support an experimental bone finding, but small female-only groups, model-specific exposures and incomplete reporting of allocation concealment prevent a confident human clinical inference. The evidence is explicitly preclinical, with no human trial count, treatment effect or benefit letter. These experiments cannot establish clinical benefit, so no A–F benefit letter is assigned.",
+    "effectLabel": "Animal finding",
+    "effectDetail": "More periodontal bone after 8 weeks; clinical magnitude unknown",
+    "direction": "not_applicable",
+    "effectRationale": "Rapamycin-treated aged mice had more periodontal bone than vehicle controls; longitudinal scans in one colony also showed bone gain relative to baseline. This is an animal finding and does not establish periodontal benefit in people. Only female mice were studied, with small colony-specific groups; human dose, durability and clinical benefit were not established. No clinical-importance magnitude category has been assigned.",
+    "trialIds": [],
+    "aggregationNote": "One exact outcome and source report; no pooled estimate. This is an animal/cell experiment, not a randomized human trial.",
+    "assessedOn": "2026-10-26",
+    "authoring": "AI-assisted exact local source inspection under FILL-REMAPRX-1-STEP2-APPRAISAL; independent and human scientific review pending",
+    "assessedInputSha256": "608c8bba3d46bfb3ea2bca8f0c15f551ce153da5f71930adfd61dc26c966cd4f"
+  },
+  {
+    "id": "OUTCOME-FILL2-D08-CRC-XENOGRAFT",
+    "synthesisIds": [
+      "SYN-FILL2-D08-CRC-XENOGRAFT"
+    ],
+    "label": "Growth of WNT-TCF-dependent colorectal xenografts",
+    "purpose": "mechanistic",
+    "grade": null,
+    "ungradedLabel": "Nonclinical evidence only",
+    "rationale": "The report links xenograft growth inhibition to TCF dependence using negative and rescue controls, but the findings arise from cell and immunodeficient-mouse models at nonclinical exposures. Small experiments, no human comparator and unresolved translation leave weak support for any clinical colorectal-cancer inference; no A–F clinical benefit grade is assigned. These experiments cannot establish clinical benefit, so no A–F benefit letter is assigned.",
+    "effectLabel": "Cell/mouse finding",
+    "effectDetail": "TCF-dependent growth inhibition; negative and rescue controls retained",
+    "direction": "not_applicable",
+    "effectRationale": "Ivermectin inhibited growth of WNT-TCF-dependent colorectal xenografts; TCF-independent growth was not similarly inhibited, and constitutively active TCF rescued growth. These experiments support a pathway hypothesis rather than clinical colorectal-cancer efficacy. Preclinical model, nonclinical route and exposure, small experimental groups and incomplete allocation/blinding information prevent a clinical efficacy inference. No clinical-importance magnitude category has been assigned.",
+    "trialIds": [],
+    "aggregationNote": "One exact outcome and source report; no pooled estimate. This is an animal/cell experiment, not a randomized human trial.",
+    "assessedOn": "2026-10-26",
+    "authoring": "AI-assisted exact local source inspection under FILL-REMAPRX-1-STEP2-APPRAISAL; independent and human scientific review pending",
+    "assessedInputSha256": "fa64a489b5cca44010746e926ad6065c8e9e624f43726896e1e10e01b488d3cd"
+  },
+  {
+    "id": "OUTCOME-FILL2-D10-NSCLC-XENOGRAFT",
+    "synthesisIds": [
+      "SYN-FILL2-D10-NSCLC-XENOGRAFT"
+    ],
+    "label": "NSCLC xenograft growth in mice",
+    "purpose": "mechanistic",
+    "grade": null,
+    "ungradedLabel": "Nonclinical evidence only",
+    "rationale": "The source reports smaller A549 xenografts after a short fenbendazole course, but the animal experiment and cell mechanisms cannot establish patient benefit. Unclear randomization/blinding, limited quantitative precision and absent human efficacy data leave low clinical confidence, and no clinical benefit letter or human trial count is assigned. These experiments cannot establish clinical benefit, so no A–F benefit letter is assigned.",
+    "effectLabel": "Mouse finding",
+    "effectDetail": "Reduced A549 xenograft growth over 12 days; clinical benefit untested",
+    "direction": "not_applicable",
+    "effectRationale": "Fenbendazole reduced A549 xenograft size and weight in the reported mouse experiment, with supporting apoptosis and vascularity assays. This does not establish cancer control or safe dosing in people. Randomization, allocation concealment and blinded tumor assessment were not established; a numeric effect and confidence interval were not extracted. No clinical-importance magnitude category has been assigned.",
+    "trialIds": [],
+    "aggregationNote": "One exact outcome and source report; no pooled estimate. This is an animal/cell experiment, not a randomized human trial.",
+    "assessedOn": "2026-10-26",
+    "authoring": "AI-assisted exact local source inspection under FILL-REMAPRX-1-STEP2-APPRAISAL; independent and human scientific review pending",
+    "assessedInputSha256": "b566410eed83e4ea9701de55c6f8bf373a3e70838529b4b0da690126cb34ae45"
   }
 ]

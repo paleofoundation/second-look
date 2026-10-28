@@ -1,0 +1,58 @@
+{
+  "at": "2026-10-27T12:38:59.589532+02:00",
+  "status": "PASS_BOUNDED_RESULT_AND_CLAIM_SOURCE_FIDELITY_ONLY",
+  "candidate_sha256": "fb72d1432e098c91f02a3cd30c6f0271331ae7a41cc3462dfe37546f37e79ae5",
+  "source_sha256": "51587eb12eb4da9bd37c8ff37192f42ead8cf2fae58ff504aa6af93bceadce7a",
+  "audit_manifest_sha256": "9c83f757cdc04c948820bd1f6df1abd6ac2b2cdd2695b496d2675b1b9a94df01",
+  "bound_files": {
+    "SOURCE-CANDIDATE.json": "fb72d1432e098c91f02a3cd30c6f0271331ae7a41cc3462dfe37546f37e79ae5",
+    "review-inputs.jsonl": "855a613074c3ab563e10ad932f02b49e207f6da8b3340e3f91650f9c4fe27ca0",
+    "PLAN.json": "5d3517ad01bed7277ab8311afb5fa49b14d6156d0b45887b1c104d2939339034",
+    "SCHEMA.json": "32925d9ab6f26b1ced7dbd89c16c202f1ad7cc2b2c0ae6a03c3ed861688acb08",
+    "READINESS.json": "f747532003c5be098462be181d492fe045e1160ba6a989176766ea894bed90b9",
+    "DOWNSTREAM-MAPPING.json": "e2f261a3119c77e8790a23c2c459b0ff5400dd277350ae2fa262c6bcd1bcefb7",
+    "VISUAL-RECEIPT.json": "f5b0e3f395913bc48ae3b8d8384cfeed4b79c5c1d07d0c1d1e9a894769dcc854",
+    "SOURCE-QUALIFICATIONS.json": "30ea2a6ab936693fb19e719244c2f25362dd1a92ecfceb6305e5c867659737e2"
+  },
+  "prospective_plan_GP_hashes_verified_before_own_reading": true,
+  "root_text_pages_read": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "root_visual_pages_read": [
+    5
+  ],
+  "result_ids": [
+    "REED-CAL-18-R01",
+    "REED-CAL-18-R02",
+    "REED-CAL-18-R03"
+  ],
+  "claim_ids": [
+    "REED-CAL-18-C01",
+    "REED-CAL-18-C02",
+    "REED-CAL-18-C03"
+  ],
+  "checks": [
+    "Exact PMID27701912/DOI10.1080/10428194.2016.1236375, five-page held author manuscript, primary nestedcasecontrol in UKTHIN1995-2013, not randomized metformin intervention or CAL17VHA cohort.",
+    "Main124cases/760sampledcontrolobservations, incidencedensity/upto10matchedage/sex/practice/followup, MMcaseindexdatealsoassignedmatchedcontrols, READdiagnoses. Uniquecontrolreuseunadjudicated;sampledNnotpopulationincidencerisk.",
+    "Exposure>=2prescriptionsattimeMGUS,notCAL17>=4yearsconsistency/exposure-afterDM. No actualdose/adherenceassumed. Primary conditional logistic withobesity/ever-smoking, literalBMI>30mg/m2unitdefectretained.",
+    "R01 Table1A reference nondiabeticMGUS113cases633controls. UntreatedDM6/38 unadjustedOR.95CI.38-2.35/adjusted.96CI.38-2.38;metformin4/65 unadjusted.39CI.14-1.10/adjusted.39CI.14-1.13;otherDMtherapies1/24 unadjusted.17CI.02-1.29/adjusted.17CI.02-1.28. All adjustedCIsinclude1,noPvaluesinvented orcausalmetformin-specificprotection.",
+    "R02 text-only repeatedprimarysensitivitycumulative>2year/glucose-adjustedOR.19CI.04-.99 separatefromTable1B. BodydoesnotrestateexactN/cells/fullreferent. Methodsprovideprimary-referencebasis,notimputeddiabeticsubgroupresult orproventwo-yearthreshold.",
+    "R03 Table1B explicitlyUNMATCHED11diabeticcases127controlobservations, UNCONDITIONALlogistic adjustedage/sex/obesity/smoking,diabeticnever-usersreference7/62. <24mo2/17 unadjusted1.04CI.20-5.48/adjusted1.01CI.18-5.65;>24mo2/48 unadjusted.37CI.07-1.87/adjusted.40CI.08-2.04. Both adjustedCIsinclude1,nottherapeuticequivalence.",
+    "No conditionalmodel/matching/nondiabeticreferencetransfer toTableB. MethodsmentionpriorglucoseadjustmentbutTableBfootnotedoesnotlistit;retainambiguity. Strict>24/<24boundarynotdefinedatexact24despitediscussionatleasttwo.",
+    "Sparsecells4mainmetformincases/twoperdurationcell,shortfollowup/noMproteinisotype-level-FLC/race,diagnosiscodevalidationnotindependentpathologicalreview. No sourcecurrentintegrityclearance, biomarkermechanismproof or measuredsafety.",
+    "CAL17and18differentsettings/definitions/models/referents,ORnotCoxHRandnotpoolednewtrialparticipants;noARR/NNT/populationriskfromcase-controlsampling orcurrentmetformin/screeningrecommendation.",
+    "NIHfundingandnoconflictsasdeclaredretained;linkedSupplementaryMaterialnotincludedinthefive-pagePDF/notretrieved,fullreviewremainsincomplete."
+  ],
+  "limits": [
+    "Three exact result/claim source-fidelity checks and consequentialcontext,not independent full67-field scientificappraisal.",
+    "No rawdataset/supplement/protocol/causalmodel reanalysis or contemporaryintegrity/finaltypesetversion verification.",
+    "Scientific/human/grade/release approval remain zero;24-report calibration incomplete."
+  ],
+  "scientificAcceptance": false,
+  "humanApproval": false,
+  "released": false
+}

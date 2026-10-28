@@ -1,0 +1,155 @@
+{
+  "at": "2026-10-28T06:26:42.935640+00:00",
+  "checks": [
+    {
+      "command": [
+        "/private/tmp/remaprx-node22-01a1764c/node-v22.23.4-darwin-arm64/bin/node",
+        "scripts/check-governance.mjs"
+      ],
+      "exitCode": 0,
+      "startedAt": "2026-10-28T06:26:16.669552+00:00",
+      "finishedAt": "2026-10-28T06:26:16.773165+00:00",
+      "log": "01-check-governance.log",
+      "logSha256": "c5399a463361054cafb76fc1e19b0ae50e2ec42c650b59b50f2ebbb06d8c56cf"
+    },
+    {
+      "command": [
+        "/private/tmp/remaprx-node22-01a1764c/node-v22.23.4-darwin-arm64/bin/node",
+        "scripts/content-check.mjs"
+      ],
+      "exitCode": 0,
+      "startedAt": "2026-10-28T06:26:16.773387+00:00",
+      "finishedAt": "2026-10-28T06:26:16.824998+00:00",
+      "log": "02-content-check.log",
+      "logSha256": "5acc271b82d850098ee7989962d31305b5eb4cde9150e483c7a64ba99b7dee3a"
+    },
+    {
+      "command": [
+        "/private/tmp/remaprx-node22-01a1764c/node-v22.23.4-darwin-arm64/bin/node",
+        "scripts/reader-check.mjs"
+      ],
+      "exitCode": 0,
+      "startedAt": "2026-10-28T06:26:16.825133+00:00",
+      "finishedAt": "2026-10-28T06:26:16.907039+00:00",
+      "log": "03-reader-check.log",
+      "logSha256": "3c67bddb41c40265add10bd1f1d294577db825782201962216f86493909ca519"
+    },
+    {
+      "command": [
+        "/private/tmp/remaprx-node22-01a1764c/node-v22.23.4-darwin-arm64/bin/node",
+        "scripts/check-reader-sections.mjs",
+        "--all-profiles"
+      ],
+      "exitCode": 0,
+      "startedAt": "2026-10-28T06:26:16.907169+00:00",
+      "finishedAt": "2026-10-28T06:26:18.900286+00:00",
+      "log": "04-check-reader-sections.log",
+      "logSha256": "2ae5ea0fc1972b578abee7c59f2096eb455992c2dd3bae4978a1c2e94612ad66"
+    },
+    {
+      "command": [
+        "/private/tmp/remaprx-node22-01a1764c/node-v22.23.4-darwin-arm64/bin/node",
+        "scripts/check-article-navigation.mjs"
+      ],
+      "exitCode": 0,
+      "startedAt": "2026-10-28T06:26:18.900407+00:00",
+      "finishedAt": "2026-10-28T06:26:20.550521+00:00",
+      "log": "05-check-article-navigation.log",
+      "logSha256": "1f3b1079ac191f9e4ccb856fac7cda607db5fde4d0dce0c61a8707d981e98c42"
+    },
+    {
+      "command": [
+        "/private/tmp/remaprx-node22-01a1764c/node-v22.23.4-darwin-arm64/bin/node",
+        "scripts/check-evidence-section.mjs"
+      ],
+      "exitCode": 0,
+      "startedAt": "2026-10-28T06:26:20.550674+00:00",
+      "finishedAt": "2026-10-28T06:26:22.546175+00:00",
+      "log": "06-check-evidence-section.log",
+      "logSha256": "9961f3e8327440e3a4b6d4be138d1c0ed22a9b5948a4635fcf614323e126d2ca"
+    },
+    {
+      "command": [
+        "/private/tmp/remaprx-node22-01a1764c/node-v22.23.4-darwin-arm64/bin/node",
+        "scripts/check-evidence-grading.mjs"
+      ],
+      "exitCode": 0,
+      "startedAt": "2026-10-28T06:26:22.546287+00:00",
+      "finishedAt": "2026-10-28T06:26:23.721661+00:00",
+      "log": "07-check-evidence-grading.log",
+      "logSha256": "1a55a962c53057c7792ef9bd6c5b00496c0faefd2af3f29e386a5126b3951cea"
+    },
+    {
+      "command": [
+        "/private/tmp/remaprx-node22-01a1764c/node-v22.23.4-darwin-arm64/bin/node",
+        "scripts/check-outcome-summaries.mjs"
+      ],
+      "exitCode": 0,
+      "startedAt": "2026-10-28T06:26:23.721786+00:00",
+      "finishedAt": "2026-10-28T06:26:24.041758+00:00",
+      "log": "08-check-outcome-summaries.log",
+      "logSha256": "47a0fe22dc4b3b0aeb05a421303081e3358298d93e8889018e122c32a7ec4d3c"
+    },
+    {
+      "command": [
+        "/private/tmp/remaprx-node22-01a1764c/node-v22.23.4-darwin-arm64/bin/node",
+        "scripts/check-evidence-mechanisms.mjs"
+      ],
+      "exitCode": 0,
+      "startedAt": "2026-10-28T06:26:24.041883+00:00",
+      "finishedAt": "2026-10-28T06:26:24.477465+00:00",
+      "log": "09-check-evidence-mechanisms.log",
+      "logSha256": "7fd8ee99f80430abada5f9b5c754b2ce14d3bdc9608c6e2a78d322cab8039ef3"
+    },
+    {
+      "command": [
+        "/private/tmp/remaprx-node22-01a1764c/node-v22.23.4-darwin-arm64/bin/node",
+        "scripts/check-wiki-links.mjs"
+      ],
+      "exitCode": 0,
+      "startedAt": "2026-10-28T06:26:24.477590+00:00",
+      "finishedAt": "2026-10-28T06:26:26.114318+00:00",
+      "log": "10-check-wiki-links.log",
+      "logSha256": "3881ac9831ebf7cf6999f62a54f2ff9c9b1c7e66edb18406e6a3f21a7e47196e"
+    },
+    {
+      "command": [
+        "/private/tmp/remaprx-node22-01a1764c/node-v22.23.4-darwin-arm64/bin/node",
+        "node_modules/typescript/bin/tsc",
+        "--noEmit",
+        "--incremental",
+        "false"
+      ],
+      "exitCode": 0,
+      "startedAt": "2026-10-28T06:26:26.114465+00:00",
+      "finishedAt": "2026-10-28T06:26:33.211190+00:00",
+      "log": "11-tsc.log",
+      "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "/private/tmp/remaprx-node22-01a1764c/node-v22.23.4-darwin-arm64/bin/node",
+        "/Users/kmfp/.codex/plugins/cache/openai-curated-remote/sites/1.1.2/scripts/build-site.mjs"
+      ],
+      "exitCode": 0,
+      "startedAt": "2026-10-28T06:26:33.211323+00:00",
+      "finishedAt": "2026-10-28T06:26:42.864722+00:00",
+      "log": "12-build-site.log",
+      "logSha256": "f08e4a23398e253e9e0d3715a08356e59ad1f78d326fd0d4a7e747680926eaa6"
+    },
+    {
+      "command": [
+        "/private/tmp/remaprx-node22-01a1764c/node-v22.23.4-darwin-arm64/bin/node",
+        "scripts/verify-reader-boundary.mjs"
+      ],
+      "exitCode": 0,
+      "startedAt": "2026-10-28T06:26:42.864839+00:00",
+      "finishedAt": "2026-10-28T06:26:42.935465+00:00",
+      "log": "13-verify-reader-boundary.log",
+      "logSha256": "949821a93a71c4313b2f082303d8fdce7cbfa7e3ecf9255e5978031cea60ee14"
+    }
+  ],
+  "allPass": true,
+  "logFormatting": "Trailing whitespace only normalized; commands/statuses retained.",
+  "scientificApproval": false
+}

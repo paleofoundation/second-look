@@ -1,0 +1,108 @@
+{
+  "audited_at": "2026-10-27T08:47:17.167207+00:00",
+  "auditor": "CONDUCTOR root independent source-fidelity check",
+  "candidate_sha256": "5d08bbc7d4b9070f2506092fdb24465b627e82c0190d4f1393282e110b6f98a3",
+  "source_sha256": "47d82a2a9c5b3a45775c744ec43133f6cac9cdf3f11109809e2a141a0a9198ae",
+  "manifest_dependencies_verified": 7,
+  "status": "PASS_BOUNDED_OBSERVATIONAL_SOURCE_FIDELITY_ONLY",
+  "source_identity": "Existing B-R0586/B-R0586-F00 reused; exact PMID34862208 DOI10.1158/1055-9965.EPI-21-0946 author manuscript. Catalog and manuscript title variants retained.",
+  "textual_pages_independently_inspected": [
+    1,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    15
+  ],
+  "visually_inspected_physical_pages": [
+    15
+  ],
+  "root_parser_render_receipt": "pdftotext and consequential Table3 pdftoppm succeeded with no stderr on root run; prior runner pdfinfo warning preserved as historical, not claimed on every parser.",
+  "results": [
+    {
+      "id": "REED-CAL-04-R01",
+      "status": "PASS",
+      "outcome": "myeloma-specific mortality",
+      "adjusted_HR": 0.61,
+      "CI95": [
+        0.46,
+        0.79
+      ],
+      "cohort_event_denominators": {
+        "NHS_user": [
+          88,
+          125
+        ],
+        "NHS_nonuser": [
+          116,
+          140
+        ],
+        "HPFS_user": [
+          34,
+          60
+        ],
+        "HPFS_nonuser": [
+          83,
+          111
+        ]
+      },
+      "locator": "Physical15 Table3 binary user row and footnotes;5/6methods/results"
+    },
+    {
+      "id": "REED-CAL-04-R02",
+      "status": "PASS",
+      "outcome": "all-cause mortality",
+      "adjusted_HR": 0.63,
+      "CI95": [
+        0.49,
+        0.8
+      ],
+      "cohort_event_denominators": {
+        "NHS_user": [
+          100,
+          125
+        ],
+        "NHS_nonuser": [
+          125,
+          140
+        ],
+        "HPFS_user": [
+          53,
+          60
+        ],
+        "HPFS_nonuser": [
+          105,
+          111
+        ]
+      },
+      "locator": "Physical15 Table3 binary user row and footnotes;5/6methods/results"
+    }
+  ],
+  "adjustment_verified": [
+    "age at diagnosis",
+    "calendar year <2000 vs >=2000",
+    "postdiagnosis BMI and comorbidity count",
+    "prediagnosis aspirin user/nonuser",
+    "pooled cohort(sex) stratification"
+  ],
+  "preserved_limits": [
+    "Observational selfreported exposure on first returned postdiagnosis questionnaire; not randomized/assigned regimen",
+    "Followup time since diagnosis to death orJanuary2016; overall median43months notfixedriskhorizon",
+    "Table3 denominators sum436 vs79withoutpostquestionnaire inDiscussion unresolved; arithmetic185/251 not separately verified pooled analysis N",
+    "No clinically presenting severity/firstline therapy/individual indication adjustment; survivorselection/residualconfounding remain",
+    "325mg standard-equivalent weekly quantities not325mgdaily prescription or81mg efficacy estimate",
+    "No newNNT/absolute reduction/causal treatment effect",
+    "No direct bleeding/adverseevent safety certification or thromboprophylaxis result transfer",
+    "Supplement/protocol/externalintegrity/studyfamily overlap not verified",
+    "Other prediagnosis/quantity/joint-exposure/sensitivity estimates not independently extracted or approved here"
+  ],
+  "question_mapping": "Fifteen narrative Q inputs inspected; Q14 exact R01/R02 C01/C02 and existingC21 mapping private/unapplied. Not complete67-field scientific appraisal.",
+  "full_scientific_review_complete": false,
+  "scientific_acceptance": false,
+  "new_grade": false,
+  "human_approval": false,
+  "release": false
+}
