@@ -1,5 +1,9 @@
 # Second Look rule changelog
 
+## October 28, 2026 - private audit handoff approved and continuation
+
+Source: direct owner approval to send the prepared private audit handoff to the existing coordinator bridge and keep going. Supersedes the pending disclosure permission for that handoff only. Posted and read-back verified with exact payload hash in phase-three `COORDINATOR-HANDOFF-20261028.json`. Continued CAL08 under its prospective source plan/readiness: all6 pages and material visuals inspected,9 groups/25 qualifications/15Q/67 fields,57 guards and8 negative-mutation checks passed. CAL07 and CAL08 candidates remain uncommitted awaiting exact independent original/dependency receipts;6/24 delivered remains unchanged, with no scientific/human/grade/public release upgrade. No new app changes or deployment.
+
 ## October 28, 2026 - guide-library asset preload repair
 
 During the owner-authorized publication follow-up, the preview request log exposed the preexisting missing CSS-only JavaScript preload `guide-library-CCVnavNE.js` despite an empty bounded browser-console result. Move the unchanged shared guide-library stylesheet from its two client import sites to the existing global root-layout stylesheet list. No account, billing, scientific, protected-content or navigation behavior changes. Verify the production RSC asset manifest against emitted assets and rendered article/citation behavior before publication; receipts follow in `research/batches/REMAPRX-PRELOAD-REPAIR-20261028/`.
