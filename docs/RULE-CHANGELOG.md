@@ -1,5 +1,9 @@
 # Second Look rule changelog
 
+## October 28, 2026 - CAL07 resumed identity and locator corrections
+
+Source: CONDUCTOR independent original/dependency audit HOLD F01-F03, preserved byte-exact in CAL07 history/v1. Current G-DRUG-D02 resolves to Fluvoxamine, while Metformin is G-METFORMIN; C21 remains Multiple myeloma. Require current registry hash/title/route binding before new downstream mappings, direct support for repeated result estimates and complete typed-field locator coverage. Contract: RESEARCH-INGEST.md. Prospective append-only CAL07 resumed plan/readiness precede V2 mapping and locator edits; original PLAN/GP,13 prior files and HOLD remain preserved. All8 estimates,22 qualifications and67 statuses are unchanged; current12dependency manifest and71 guards require exact root re-audit before candidate commit/delivery. The new guard initially used the wrong parent level for the local registry path; corrected verifier path, with no candidate or dependency changes. No canonical/app/scientific/human/release changes. Reusable upstream synchronization remains proposed, not applied to the pinned snapshot.
+
 ## October 28, 2026 - private audit handoff approved and continuation
 
 Source: direct owner approval to send the prepared private audit handoff to the existing coordinator bridge and keep going. Supersedes the pending disclosure permission for that handoff only. Posted and read-back verified with exact payload hash in phase-three `COORDINATOR-HANDOFF-20261028.json`. Continued CAL08 under its prospective source plan/readiness: all6 pages and material visuals inspected,9 groups/25 qualifications/15Q/67 fields,57 guards and8 negative-mutation checks passed. CAL07 and CAL08 candidates remain uncommitted awaiting exact independent original/dependency receipts;6/24 delivered remains unchanged, with no scientific/human/grade/public release upgrade. No new app changes or deployment.
