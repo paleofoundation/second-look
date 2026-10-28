@@ -1,0 +1,7 @@
+# October 28 release validation
+
+PASS: checked current main plus the approved version49 identity. All13 source/content/reader/navigation/citation/evidence/outcome/mechanism/wiki/TypeScript/build/public-boundary checks passed. All15 identity implementation files remain byte-exact to version49; every other tracked main path outside the declared release-document allowlist remains byte-exact. The six sealed research checkpoints and older evidence were preserved.
+
+Desktop homepage at1280 and mobile homepage/itraconazole/Hedgehog/hyphae at390×844 rendered correctly. Article/glossary document widths were390 with no horizontal overflow. The new mixed-human-evidence and unresolved-estimate statements and source-specific citation14 disclosure were visible. The bounded final20 warning/error records were empty. Eleven HTTP route/assets requests returned200; all seven requested static icon/manifest assets were byte-exact to source. ICO16/32/48 and app180/192/512 dimensions/palettes, manifest paths, metadata cache keys and built assets passed separate checks.
+
+The held comparison-table renderer is not released; existing condition-rationale tables are unchanged. No pending independent/human scientific approvals are supplied. Research candidates remain private and public boundary checks pass. No production database migration, access/indexing change, account mutation or billing activation was performed. GitHub integration and native Sites save/deployment remain the next release steps; their exact identifiers belong in the final publication receipt.

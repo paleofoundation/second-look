@@ -1,5 +1,9 @@
 # Second Look project rules
 
+## October 28 ready-work merge, publication and resume
+
+The owner's direct October 28 instruction authorizes merging technically ready work, deploying/publishing its checked build and beginning the next research work. For this release, preserve authoritative current main plus the latest approved version49 identity; see `RELEASE-20261028.md`. This supersedes the earlier operational draft-only/usage-pause/publication hold within this bounded scope. It does not authorize new scientific grades, clinical claims, public raw files, protected-content changes, access/indexing changes or acceptance of unfinished research. CAL07 and later packets still require their prospective plans and independent exact source/dependency audits before delivery. Historical sealed pause/checkpoint records remain unchanged.
+
 Adopted repository handoff: 11 October 2026. These are durable project instructions, not a declaration that every requirement is already implemented or scientifically approved.
 
 ## Authority and reading order

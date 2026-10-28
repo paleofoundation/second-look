@@ -75,3 +75,41 @@ Owner request: center the heavier Rx lettering in the favicon and offset the lig
 ### Favicon circle refinement — October 14, 2026
 
 Source: owner confirmation to reduce the circle and surrounding marks by exactly 15%, centered on the x, leaving Rx where it is. Favicon-only generator transform scales the rings, crosshairs, connectors and arrow by 0.85 around original coordinates (313, 292); Rx path data and outer framing are unchanged. SVG, 16/32/48-pixel ICO and touch icon are regenerated, with refreshed icon URL versions. This supersedes the previous favicon target size; other brand assets retain their existing geometry. Verification: Rx path/framing identity, exact 0.85 target transforms, ICO dimensions, native-size visual inspection, governance and TypeScript passed. Publication pending.
+
+
+### Enclose the complete Rx and blue website icon — October 27, 2026
+
+Source: owner's current request and Photo 1.jpg: the circle must go around both the R and smaller x because the existing mark is off balance; create a new RemapRx website icon in the shown blue and light blue. This supersedes the x-centered target arrangement and the October 14 favicon-only right offset/15% circle reduction within the current identity. Use brand blue `#1736F5` and pale blue `#EFF2FF` for the website icon; other interface color roles remain intact.
+
+The new editable source is `assets/brand/remaprx-enclosing-symbol.svg`. Preserve the approved heavy R, smaller x and close letter spacing; center their combined bounds at (300, 290) inside concentric open rings of radius 232 and 200. The preserved glyph paths use `translate(108.06 71.6) scale(.84)`, giving combined ink bounds x=145.02–454.98 and y=195.92–384.08. Both letters fit entirely inside the inner ring. Retain the flat direction arrow, crosshairs, registration marks and radial connectors. The light-blue square icon adds 10 units of vertical padding to the shared mark and slightly stronger ring/crosshair strokes.
+
+`scripts/build-brand.mjs` builds the shared symbol and reversed symbol, both outlined wordmarks, SVG/16–48-pixel ICO favicon, 180-pixel touch icon, 192/512-pixel website icons and default social image. Shared header, footer and homepage references consume these updated assets; favicon metadata uses `remaprx-enclosing-rx-1` to refresh old browser caches. Earlier source concepts and publication receipts remain historical. No navigation, research content, evidence, access, audience or release gate changes are included.
+
+Implementation is complete locally. Asset structure/dimensions, small-size and page rendering, governance, TypeScript, production build and built public-payload checks will be recorded in the publication receipt after verification. Hosted publication is pending at this checkpoint.
+
+
+Verification before publication — October 27, 2026: all generated SVGs parse; ICO contains exact 16/32/48-pixel entries; the favicon uses blue `#1736F5` on pale blue `#EFF2FF`; native 16/32/48-pixel exports, the 512-pixel icon and social artwork were visually inspected. The social symbol was reframed to preserve the complete outer marks. Governance passes in both canonical and isolated source; full TypeScript passes in the isolated published-source checkout. Production build and 36 built public-client boundary scans pass. Local homepage HTTP returns 200. Browser at 1280 pixels confirms the enclosing symbol in the shared header, homepage map and footer assets, all brand images loaded, current icon URLs, no horizontal overflow and no captured console errors/warnings. Mobile viewport was not separately tested for this asset-only change. Publication receipt follows in `REMAPRX-ENCLOSING-IDENTITY-DEPLOYMENT.json` after native deployment success.
+
+
+### Touching capital R and lowercase x — October 27, 2026
+
+Source: owner's follow-up: “The R and x should be touching. Capital R, lowercase x” and the lettering takes up too much space within the circle. This supersedes version 47's separated lettering and its `.84` glyph scale. Preserve the enclosing rings, mapping details and blue/light-blue icon palette.
+
+Keep the capital R path; reduce the x to 56% of the R's cap height, align their baseline and join the x to the R's leg with genuine overlapping ink. The x path uses `translate(23.438 79.608) scale(.786)` inside the lettering group. The complete group uses `translate(154.93928 97.6) scale(.74)`: combined bounds x=187.49928–412.50072 and y=207.12–372.88, centered at (300, 290). Combined width is 225 units, about 27% narrower than version 47; cap height is about 12% smaller. Inner ring radius remains 200. Regenerate symbols, wordmarks, favicon, touch/website icons and social artwork; refresh icon metadata to `remaprx-enclosing-rx-2`.
+
+Status: implemented locally; rendering, native icon sizes, connected-letter geometry, governance, production build and public-payload boundary checks precede publication. The earlier enclosing identity was published as Sites version 47, source `7402ad87a0f9f63291fe15bb4074871724eb404d`, deployment `appgdep_6ae0c299ea908191a9730d340847020b`. This correction changes identity geometry only; no reader content, navigation, evidence, access or audience changes.
+
+
+Touching-Rx verification before publication: generated SVGs parse, and an alpha-mask connected-component check of the isolated lettering confirms one connected ink shape. The 512-pixel icon and actual 16/32/48-pixel icon exports were visually inspected. Governance, full TypeScript, production build and 36 built-client boundary checks pass in the isolated source checkout. The enclosing ring/arrow/crosshair paths and blue/light-blue colors are unchanged. No additional local homepage server was needed for this SVG geometry correction; hosted publication/live asset verification remain pending at this checkpoint.
+
+
+### Separate website and app icon colors — October 28, 2026
+
+Source: owner's explicit correction: “The site favicon should be blue and yellow as it was before, the app favicon blue and white.” This supersedes the pale-blue background for browser and app icons only. Keep the current touching capital R/lowercase x, reduced lettering, enclosing rings, arrow and crosshairs unchanged.
+
+The website SVG favicon and 16/32/48-pixel ICO use brand blue `#1736F5` on yellow `#FFC709`. The app SVG, 180-pixel Apple touch icon and 192/512-pixel app icons use the same blue on pure white `#FFFFFF`. The generator shares exact symbol geometry and selects only the background per icon role. Root metadata uses separate `remaprx-site-yellow-1` and `remaprx-app-white-1` cache keys. `public/manifest.webmanifest` explicitly identifies the two white app PNGs; its link is included in root metadata. This manifest declares app name/icons only, without changing launch/display behavior. Header/footer/map artwork and the social image remain unchanged.
+
+Status at adoption: implemented locally; palette/geometry/dimension checks, native-size visual inspection, governance, TypeScript, production build and public-payload verification precede publication. Live release status will be recorded in the color-split deployment receipt. No research, navigation, access or audience changes.
+
+
+Icon-color verification before publication — October 28, 2026: browser/app SVG geometry is byte-identical after substituting only the background color; all three ICO entries have the exact yellow corner pixel, and 180/192/512-pixel app/touch PNGs have the exact pure-white corner pixel and expected dimensions. Manifest icon paths resolve locally. Color previews were visually inspected. Source comparison confirms no changes to the shared symbol, source glyphs, wordmarks or social artwork. Governance, TypeScript, production build, seven exact built-static asset comparisons and 36 built-client public-boundary checks pass. Hosted publication/live HTTP and metadata checks remain pending at this checkpoint.

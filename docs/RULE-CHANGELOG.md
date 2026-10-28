@@ -1,5 +1,9 @@
 # Second Look rule changelog
 
+## 2026-10-28 — checked ready-work publication and research resume
+
+Source: direct owner instruction to merge, deploy and publish if ready and begin the next work. Scope: merged PR10 prose, PR12 private checkpoint and a current-main-plus-version49-identity release. Supersedes the temporary usage pause and draft-only publication restriction for this release; preserves every source-review/scientific, access, protected-content and indexing gate. Contracts: `PROJECT-RULES.md`, `RELEASE-20261028.md` and the phase-three resume addenda. Implementation preserves current main outside the exact approved identity delta and retains all sealed research records. Actual build/runtime/publication validation is recorded in `research/batches/REMAPRX-RELEASE-20261028/`; not implied complete at adoption. No reusable One Match Rule change or upstream synchronization is claimed.
+
 ## 2026-10-27: FILL-REMAPRX-1 step 4: exact label and human-data scope
 
 Source: the existing 07:26 GO and original step-4 requirement to expand six named pages from labels already cited. Contract/implementation notes: `LABEL-CONTEXT-EXPANSION.md`; prospective packet: `research/batches/FILL-REMAPRX-LABELS-20261027/`. The candidate preserves product/formulation scope, distinguishes official-label context from efficacy grades, and does not confuse DailyMed update dates with approval years. Eight guides and six mechanism contexts receive 18 label-context records and 14 scoped Low clinical-inference records. Existing outcomes, benefit letters, source objects and source-review states remain unchanged. PAX-D retains its exact existing Low/correction-unresolved state. The five-page human-data audit distinguishes cells, computational human datasets and fungal isolates from treatment trials, and acknowledges the human maraviroc phase I report already cited. No universal absence claim is inferred from an empty classification.
@@ -389,3 +393,24 @@ Elon's 10:24 order and 10:43 A/B/C rulings authorize only D07 itraconazole and t
 ## October 27 main integration and authorized publication gate
 
 Source: Elon's October 27, 17:15 Asia/Nicosia REMAPRX-MERGE-1 order, relaying Karen's 16:47 merge and deploy GO. Resolve PR10 with a normal origin/main merge, preserving all PR9 guide IDs and every PR10 candidate object. Rebuild canonical and public content from main records plus the exact saved azole candidate, rather than editing generated conflict hunks or rerunning the historical fixed-base generator. Preserve all historical research packets and scientific-review states. Run production build, governance and relevant content checks; plain push the merge head for Elon's green-check squash merge. This supersedes the earlier no-merge/no-publication boundary only for this integration and one normal Sites publish of main 4ca37b7 or main after PR10, project appgprj_6ac734459a508191a425263c7645a0be, rollback version 46. Root verification of head, main and staging precedes publication. No other publish, DNS, secrets, audience or indexing changes. Technical integration is not scientific or human review approval. Implementation and validation: research/batches/REMAPRX-MERGE-1-20261027/.
+
+
+## 2026-10-27 — Enclosing Rx identity and blue website icon
+
+Source: owner's request with Photo 1.jpg to make the circle surround both R and smaller x and produce a new RemapRx website icon in blue/light blue. Scope: shared symbol/wordmarks, homepage mark, favicon, touch/website icons and default social artwork. Supersedes the x-centered circle and earlier favicon right-offset/15%-reduction geometry; replaces the website icon's yellow background with pale blue. Contract: `docs/REMAPRX-IDENTITY.md`, Enclose the complete Rx.
+
+Implementation: editable enclosing-Rx SVG and reproducible brand generator; preserved glyph paths and target details, centered combined lettering, generated matching 192/512-pixel icons and refreshed icon URL versions. Prior concepts/history and concurrent canonical work remain preserved. Local asset/render, governance, TypeScript, production-build and reader-boundary validation plus publication status are recorded in the identity contract and the exact release receipt. At adoption, verification/publication are pending. No scientific content, release approval, access or audience changes; no upstream synchronization is claimed.
+
+
+## 2026-10-27 — Touching capital R and lowercase x
+
+Source: owner's explicit correction that R and x must touch, with a capital R/lowercase x and less lettering inside the circle. Scope: shared RemapRx identity and all generated icon/wordmark variants. Supersedes version 47's separated letters and oversized group. Contract: `REMAPRX-IDENTITY.md`, Touching capital R and lowercase x.
+
+Implementation: smaller lowercase x sharing the capital R's baseline, overlapping ink at their junction, and a centered group about 27% narrower/12% shorter. Circle geometry, mapping detail and icon palette remain unchanged; browser icon metadata is refreshed. Verification and publication are pending at adoption and will be recorded in the identity contract/receipt. No unrelated research, access or audience changes.
+
+
+## 2026-10-28 — Separate website and app icon colors
+
+Source: owner's explicit request for the website favicon in blue/yellow and app favicon in blue/white. Scope: browser SVG/ICO versus app SVG/Apple touch/192–512-pixel icons and their metadata. Supersedes the pale-blue icon backgrounds while preserving all version 48 geometry. Contract: `REMAPRX-IDENTITY.md`, Separate website and app icon colors.
+
+Implementation: shared generator geometry with role-specific yellow/white backgrounds, separate metadata cache versions and an app-name/icon manifest pointing to white app PNGs. Existing header/map/footer/social artwork is unchanged. Verification/publication are pending at adoption and are recorded in the identity contract/receipt after completion. No scientific, access or audience change.

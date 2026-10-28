@@ -22,10 +22,11 @@ export const metadata: Metadata = {
   robots: {index: false, follow: false},
   openGraph: {type:"website", siteName:"RemapRx", title:"RemapRx — The drug repurposing atlas", description:"Mapping new targets for approved medications. Map each connection to its sources.", images:[{url:"/brand/remaprx-social.png",width:1200,height:630,alt:"RemapRx: Mapping new targets for approved medications."}]},
   twitter: {card:"summary_large_image", title:"RemapRx — The drug repurposing atlas", description:"Mapping new targets for approved medications. Map each connection to its sources.", images:["/brand/remaprx-social.png"]},
+  manifest: "/manifest.webmanifest?v=remaprx-app-white-1",
   icons: {
-    icon: [{url: "/favicon.svg?v=remaprx-rx-centered-3", type: "image/svg+xml"}, {url: "/favicon.ico?v=remaprx-rx-centered-3", sizes: "16x16 32x32 48x48", type: "image/x-icon"}],
-    shortcut: "/favicon.ico?v=remaprx-rx-centered-3",
-    apple: "/apple-touch-icon.png?v=remaprx-rx-centered-3",
+    icon: [{url: "/favicon.svg?v=remaprx-site-yellow-1", type: "image/svg+xml"}, {url: "/favicon.ico?v=remaprx-site-yellow-1", sizes: "16x16 32x32 48x48", type: "image/x-icon"}],
+    shortcut: "/favicon.ico?v=remaprx-site-yellow-1",
+    apple: "/apple-touch-icon.png?v=remaprx-app-white-1",
   },
 };
 
