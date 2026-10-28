@@ -343,3 +343,10 @@ Implementation: editable enclosing-Rx SVG and reproducible brand generator; pres
 Source: owner's explicit correction that R and x must touch, with a capital R/lowercase x and less lettering inside the circle. Scope: shared RemapRx identity and all generated icon/wordmark variants. Supersedes version 47's separated letters and oversized group. Contract: `REMAPRX-IDENTITY.md`, Touching capital R and lowercase x.
 
 Implementation: smaller lowercase x sharing the capital R's baseline, overlapping ink at their junction, and a centered group about 27% narrower/12% shorter. Circle geometry, mapping detail and icon palette remain unchanged; browser icon metadata is refreshed. Verification and publication are pending at adoption and will be recorded in the identity contract/receipt. No unrelated research, access or audience changes.
+
+
+## 2026-10-28 — Separate website and app icon colors
+
+Source: owner's explicit request for the website favicon in blue/yellow and app favicon in blue/white. Scope: browser SVG/ICO versus app SVG/Apple touch/192–512-pixel icons and their metadata. Supersedes the pale-blue icon backgrounds while preserving all version 48 geometry. Contract: `REMAPRX-IDENTITY.md`, Separate website and app icon colors.
+
+Implementation: shared generator geometry with role-specific yellow/white backgrounds, separate metadata cache versions and an app-name/icon manifest pointing to white app PNGs. Existing header/map/footer/social artwork is unchanged. Verification/publication are pending at adoption and are recorded in the identity contract/receipt after completion. No scientific, access or audience change.

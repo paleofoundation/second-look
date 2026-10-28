@@ -101,3 +101,15 @@ Status: implemented locally; rendering, native icon sizes, connected-letter geom
 
 
 Touching-Rx verification before publication: generated SVGs parse, and an alpha-mask connected-component check of the isolated lettering confirms one connected ink shape. The 512-pixel icon and actual 16/32/48-pixel icon exports were visually inspected. Governance, full TypeScript, production build and 36 built-client boundary checks pass in the isolated source checkout. The enclosing ring/arrow/crosshair paths and blue/light-blue colors are unchanged. No additional local homepage server was needed for this SVG geometry correction; hosted publication/live asset verification remain pending at this checkpoint.
+
+
+### Separate website and app icon colors — October 28, 2026
+
+Source: owner's explicit correction: “The site favicon should be blue and yellow as it was before, the app favicon blue and white.” This supersedes the pale-blue background for browser and app icons only. Keep the current touching capital R/lowercase x, reduced lettering, enclosing rings, arrow and crosshairs unchanged.
+
+The website SVG favicon and 16/32/48-pixel ICO use brand blue `#1736F5` on yellow `#FFC709`. The app SVG, 180-pixel Apple touch icon and 192/512-pixel app icons use the same blue on pure white `#FFFFFF`. The generator shares exact symbol geometry and selects only the background per icon role. Root metadata uses separate `remaprx-site-yellow-1` and `remaprx-app-white-1` cache keys. `public/manifest.webmanifest` explicitly identifies the two white app PNGs; its link is included in root metadata. This manifest declares app name/icons only, without changing launch/display behavior. Header/footer/map artwork and the social image remain unchanged.
+
+Status at adoption: implemented locally; palette/geometry/dimension checks, native-size visual inspection, governance, TypeScript, production build and public-payload verification precede publication. Live release status will be recorded in the color-split deployment receipt. No research, navigation, access or audience changes.
+
+
+Icon-color verification before publication — October 28, 2026: browser/app SVG geometry is byte-identical after substituting only the background color; all three ICO entries have the exact yellow corner pixel, and 180/192/512-pixel app/touch PNGs have the exact pure-white corner pixel and expected dimensions. Manifest icon paths resolve locally. Color previews were visually inspected. Source comparison confirms no changes to the shared symbol, source glyphs, wordmarks or social artwork. Governance, TypeScript, production build, seven exact built-static asset comparisons and 36 built-client public-boundary checks pass. Hosted publication/live HTTP and metadata checks remain pending at this checkpoint.
