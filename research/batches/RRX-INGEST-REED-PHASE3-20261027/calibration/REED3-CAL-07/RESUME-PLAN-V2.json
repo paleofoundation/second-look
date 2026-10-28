@@ -1,0 +1,80 @@
+{
+  "id": "REED3-CAL-07-RESUME-CORRECTION-v2",
+  "at": "2026-10-28T07:35:22.389357+00:00",
+  "scope": "Narrow correction of root HOLD F01-F03 before candidate modification; no source-value/status/scientific changes.",
+  "rootHold": {
+    "sha256": "53d97bf23564197c0a96822e03f87c6b748b9a89a2e64b2f74041873a66724ff",
+    "path": "history/v1/ROOT-REVIEW-HOLD.json"
+  },
+  "preservedV1": {
+    "AUDIT-MANIFEST.json": "fd6ae12dfc32b64cd9bf38b279f2d9f8556404f0ed3ce868d8342cfbac9817c9",
+    "DOWNSTREAM-MAPPING.json": "8ee2779552191c9c41769e1bbc3d8b61940cdcdf3840a766fd4ded73b22d7f7e",
+    "OVERLAP-RECONCILIATION.json": "600939e32dcd3a1c8101fd7cbb24925158fe29b1f37a5679b9f72ec0bde5ae59",
+    "PLAN.json": "faca0f560eeea09f0db0e9b8f75a0b9e79627135ba11c804845ac4dffd82d036",
+    "PRIOR-RECONCILIATION.json": "09655b1140f2edd8277a3f9dee03311e457db097280b0c884c5740bdf5957ac9",
+    "READINESS.json": "3bd2a626da9d8dfc2392d35ecbd41a464baaca736bf5ff4637ece2bcd1519e44",
+    "ROOT-REVIEW-HOLD.json": "53d97bf23564197c0a96822e03f87c6b748b9a89a2e64b2f74041873a66724ff",
+    "SCHEMA.json": "e6f0179eced6b7e42a30d24826311b730f4f77ea4eee564f49502e1e34573cdc",
+    "SOURCE-CANDIDATE.json": "2ec409ea9501bf446b6dcb5670f219221e57d91b44d6adba45a48720c5e4300b",
+    "SOURCE-QUALIFICATIONS.json": "80a36c2ff14731d94f96cf9e25f123c4a9f37b461caf6a7c47667388e7b3b8b2",
+    "VALIDATION.json": "a1011b9761810ea38f0333cd16226daab651f629ed305535a82864b29961f423",
+    "VISUAL-RECEIPT.json": "3783a9e65f1c6f73cce13a7181768ac11c73ea1bcf1d1a63770c8072524952b3",
+    "review-inputs.jsonl": "c6f9e4affa2e6fb633f1d974c922109aabfb2c67adf024aab49ed7db73eb5617",
+    "verify_source.py": "09abf34e05261a539a7f269aa13fa7ee351e7fab289971584be6924b6affab33"
+  },
+  "originalSourcePlanAndGPRemainExact": {
+    "PLAN.json": "faca0f560eeea09f0db0e9b8f75a0b9e79627135ba11c804845ac4dffd82d036",
+    "READINESS.json": "3bd2a626da9d8dfc2392d35ecbd41a464baaca736bf5ff4637ece2bcd1519e44"
+  },
+  "supersession": "Original PLAN downstream G-DRUG-D02 is historically stale in current registry. This append-only resumed amendment governs current mapping; original PLAN/GP/V1 remain immutable.",
+  "canonicalRegistry": {
+    "path": "data/content.json",
+    "sha256": "79ac24139b43ceeffef46c282aead6476ba61722488a69792a574a71e32eb36a",
+    "records": {
+      "G-METFORMIN": {
+        "id": "G-METFORMIN",
+        "title": "Metformin",
+        "slug": "/drugs/metformin"
+      },
+      "G-DRUG-D02": {
+        "id": "G-DRUG-D02",
+        "title": "Fluvoxamine",
+        "slug": "/drugs/fluvoxamine"
+      },
+      "G-CONDITION-C21": {
+        "id": "G-CONDITION-C21",
+        "title": "Multiple myeloma",
+        "slug": "/conditions/multiple-myeloma"
+      }
+    }
+  },
+  "requiredMapping": [
+    "G-METFORMIN",
+    "G-CONDITION-C21"
+  ],
+  "directLocators": {
+    "O01": [
+      9,
+      10
+    ],
+    "Q02.eligibility_setting": [
+      1,
+      2
+    ],
+    "Q05.instrument": [
+      2,
+      3,
+      7
+    ],
+    "Q06.contrast": [
+      7,
+      8,
+      9,
+      10
+    ]
+  },
+  "typedLocatorExtension": "Keep nativeLocator and add optional additionalSourceLocators array of identical PDF locator shape. Combined locations must cover exact source support.",
+  "preserve": "All8 numerical estimates,22 qualifications,all67 statuses and all typed values other than Q14 IDmapping and Q06 result-locator mirrors; no canonical/app/public edits or scientific/human/release upgrade.",
+  "manifest": "Retain10 original dependency roles and add this resumed plan/readiness:12 current hashes; prior10 and V1 manifest remain in history.",
+  "approval": "Independent exact V2 original/dependency reaudit before acceptance/commit."
+}

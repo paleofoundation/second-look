@@ -1,0 +1,2193 @@
+{
+  "schemaVersion": "reed3-cal07-metformin-MM-source-v1",
+  "paper": {
+    "id": "REED-39edbc2be58169ee5366",
+    "pmid": "25847249",
+    "doi": "10.1074/jbc.m114.628826",
+    "title": "In Silico Modeling-based Identification of Glucose Transporter 4 (GLUT4)-selective Inhibitors for Cancer Therapy.",
+    "sourceType": "primary_computational_transporter_cellular_and_isolated_patient_cell_study_with_actual_Met_combination"
+  },
+  "source": {
+    "id": "REED3-CAL-07-MAIN",
+    "pmid": "25847249",
+    "doi": "10.1074/jbc.m114.628826",
+    "title": "In Silico Modeling-based Identification of Glucose Transporter 4 (GLUT4)-selective Inhibitors for Cancer Therapy.",
+    "reportId": "REED-39edbc2be58169ee5366",
+    "ref": "$REMAPRX_REED_ROOT/metformin-myeloma/pdfs/25847249-mishra-2015.pdf",
+    "sha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+    "physicalPages": 13
+  },
+  "inspection": {
+    "at": "2026-10-27T17:30:55.597440+00:00",
+    "physicalPagesRead": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "visualInspectedPhysicalPages": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "fullScientificReviewComplete": false,
+    "separateCompanionContentRead": false,
+    "rawDataInspected": false
+  },
+  "study": {
+    "design": "Primary computational modeling, cultured transporter/MM and isolated patient-cell study; no own in-vivo tumor treatment or clinical trial",
+    "ownClinicalTreatmentTrial": false,
+    "ownAnimalTumorTreatment": false,
+    "models": {
+      "GLUT4Initial": "multitemplate GlpT/lactose permease/EmrD, no single template above30% similarity",
+      "model2": "later GLUT1 crystal template; GLUT1/4 sequence identity68.7%",
+      "simulationNS": 20,
+      "simulationTimeStepPS": 5,
+      "membrane": "POPC",
+      "overallModelRMSDA": 5.2,
+      "bindingSiteTMRMSDA_Fig9": 2.2,
+      "centralChannelBodyRMSDA": "less than2.5",
+      "model1vsGLUT1RMSDA": 5.8,
+      "model2vsGLUT1RMSDA": 2.5,
+      "docking": "Glide/Surflex consensus predictions, not experimental GLUT4 crystal or residue mutagenesis"
+    },
+    "virtualScreen": {
+      "ZINCstartApprox": 18000000,
+      "filteredApprox": 10000000,
+      "GlideHits": 59,
+      "scoreThreshold": "less than -7.0",
+      "consensusHits": 32,
+      "purchasedHits": 17,
+      "positiveControlID18": "ritonavir",
+      "selection": "availability/pricing/synthetic tractability"
+    },
+    "screenMTS": {
+      "hours": 72,
+      "cellsPerWell": 5000,
+      "plateWells": 384,
+      "glucoseMM": 5,
+      "glutamineMM": 2,
+      "technicalWells": "triplicate",
+      "serialDilutionFold": 2,
+      "startUM": 25,
+      "lowerStartUM": 12.5,
+      "lowerStartCompounds": [
+        6,
+        10,
+        17
+      ],
+      "displayed": "one of two experiments",
+      "readout": "490nm absorbance in Methods, Figure3 caption printed490nM"
+    },
+    "growthIC50": {
+      "assay": "CellTiter-Glo",
+      "hours": 72,
+      "cellsPerWell": 20000,
+      "plateWells": 96,
+      "compound3_17RangeUM": [
+        0.39,
+        50
+      ],
+      "ritonavirRangeUM": [
+        1.25,
+        100
+      ],
+      "bodyReportedIC50uM": {
+        "compound3": [
+          5,
+          12
+        ],
+        "compound17": [
+          6,
+          10
+        ],
+        "ritonavirApprox": 40
+      }
+    },
+    "AnnexinFigure4D": {
+      "hours": 72,
+      "glucoseMM": 11,
+      "glutamineMM": 2,
+      "ritonavirUM": 40,
+      "compound3_17UM": [
+        5,
+        10,
+        15,
+        20
+      ],
+      "plottedLines": [
+        "JJN3",
+        "L363"
+      ],
+      "captionAlsoMentionsKMS11": true
+    },
+    "actualMetPrimary": {
+      "compound3UM": 10,
+      "MetMM": 1,
+      "hours": 48,
+      "displayedLabels": [
+        "Patient1",
+        "Patient2",
+        "Patient3"
+      ],
+      "samples": "MM/plasma cell leukemia bone marrow or peripheral blood; individual label disease not assigned",
+      "assay": "Annexin V/DAPI",
+      "analysisGate": "CD38+ CD45\u2212",
+      "processingMarkers": [
+        "CD38",
+        "CD45",
+        "CD138"
+      ],
+      "formalInteractionModel": null
+    },
+    "geneticContext": {
+      "GLUT4KD": "shRNA; qPCR mRNA normalized to GAPDH",
+      "controls": "nontargeting/pLKO/CshRNA as labeled",
+      "lines": [
+        "JJN3",
+        "L363"
+      ],
+      "ritonavirUM": 20,
+      "compound3UM": 8,
+      "compound17UM": 8,
+      "hours": 72,
+      "readout": "trypan blue and automated cell count"
+    },
+    "photolabel": {
+      "model": "inverted LDM from 3T3-L1 adipocytes",
+      "LDMug_Fig5": 200,
+      "compound3_17UM": 20,
+      "pretreatMinutes": 10,
+      "temperature": "room temperature",
+      "ATBBMPA_UM": 50,
+      "readout": "photolabel competition followed by GLUT1/4 immunoblot/Odyssey quantification",
+      "myelomaDirectBindingMeasured": false
+    },
+    "transport": {
+      "models": [
+        "HEK293 rat mycGLUT1",
+        "HEK293 rat mycGLUT4",
+        "HEK293 GLUT4 P401L transport-dead",
+        "JJN3",
+        "KMS11-GFP"
+      ],
+      "compound3_17UM": 20,
+      "pretreatMinutes": 6,
+      "uptakeMinutes": 6,
+      "temperatureC": 37,
+      "tracer": "2-[3H]deoxyglucose",
+      "tracerUM": 50,
+      "background": "corresponding control/drug P401L uptake subtracted from GLUT1/4",
+      "GLUT4transportIC50uM": {
+        "compound3": 18.9,
+        "compound17": 10.8
+      }
+    },
+    "analogueFigure8": {
+      "IDs": [
+        26,
+        39
+      ],
+      "viabilityUM": 2,
+      "viabilityHours": 72,
+      "transportUM": 20,
+      "pretreatMinutes": 6,
+      "uptakeMinutes": 6,
+      "compound26_transportIC50uM": {
+        "GLUT4": 3.5,
+        "GLUT1": "greater than100"
+      },
+      "compound39_transportIC50uM": "approximately30 for both GLUT1 and GLUT4"
+    },
+    "statistics": "At least three independent determinations unless noted; paired/unpaired two-tailed t tests as indicated, P<.05, selected mean SE; full hierarchy/global multiplicity not established",
+    "locators": [
+      {
+        "kind": "pdf",
+        "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+        "physicalPage": 2,
+        "printedPage": "14442",
+        "nativeSection": "Introduction and Experimental Procedures"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+        "physicalPage": 3,
+        "printedPage": "14443",
+        "nativeSection": "Experimental Procedures and model building"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+        "physicalPage": 4,
+        "printedPage": "14444",
+        "nativeSection": "Screening workflow, Figures1\u20132"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+        "physicalPage": 6,
+        "printedPage": "14446",
+        "nativeSection": "Figure3 full17-hit screen and legend"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+        "physicalPage": 7,
+        "printedPage": "14447",
+        "nativeSection": "Figure4A\u2013G and actual Met/primary-cell results"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+        "physicalPage": 8,
+        "printedPage": "14448",
+        "nativeSection": "Figures5\u20136 and photolabel/transport results"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+        "physicalPage": 9,
+        "printedPage": "14449",
+        "nativeSection": "Figure7, Table2 and model comparison/docking results"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+        "physicalPage": 10,
+        "printedPage": "14450",
+        "nativeSection": "Figures8\u20139 and Discussion"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+        "physicalPage": 11,
+        "printedPage": "14451",
+        "nativeSection": "Figures10\u201311 docking predictions"
+      }
+    ]
+  },
+  "populations": {
+    "cellLines": [
+      "JJN3",
+      "L363",
+      "KMS11",
+      "KMS11-GFP",
+      "KMS11-GLUT1"
+    ],
+    "transporterContext": [
+      "HEK293 rat mycGLUT1/4/P401L",
+      "3T3-L1 differentiated adipocyte LDM"
+    ],
+    "primaryPatientLabels": [
+      "Patient1",
+      "Patient2",
+      "Patient3"
+    ],
+    "globalUniqueDonorNAndEligibility": "not fully reported",
+    "normalTAndStromalCells": "associated with patient harvest, minimal cytotoxicity claim data not shown",
+    "normalDonorN": "not reported",
+    "newIndependentClinicalPatients": 0,
+    "cellLinesSource": "M Kuehl, NCI; engineered GFP/GLUT1 as previously described",
+    "IRB": "Emory approved protocol, consenting patients; identifier not given",
+    "locators": [
+      {
+        "kind": "pdf",
+        "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+        "physicalPage": 2,
+        "printedPage": "14442",
+        "nativeSection": "Introduction and Experimental Procedures"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+        "physicalPage": 7,
+        "printedPage": "14447",
+        "nativeSection": "Figure4A\u2013G and actual Met/primary-cell results"
+      },
+      {
+        "kind": "pdf",
+        "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+        "physicalPage": 12,
+        "printedPage": "14452",
+        "nativeSection": "Discussion and references"
+      }
+    ]
+  },
+  "results": [
+    {
+      "id": "REED3-CAL-07-O01",
+      "outcome": "GLUT4 homology models and virtual-screen compound selection",
+      "estimate": {
+        "kind": "model_and_virtual_selection",
+        "models": {
+          "GLUT4Initial": "multitemplate GlpT/lactose permease/EmrD, no single template above30% similarity",
+          "model2": "later GLUT1 crystal template; GLUT1/4 sequence identity68.7%",
+          "simulationNS": 20,
+          "simulationTimeStepPS": 5,
+          "membrane": "POPC",
+          "overallModelRMSDA": 5.2,
+          "bindingSiteTMRMSDA_Fig9": 2.2,
+          "centralChannelBodyRMSDA": "less than2.5",
+          "model1vsGLUT1RMSDA": 5.8,
+          "model2vsGLUT1RMSDA": 2.5,
+          "docking": "Glide/Surflex consensus predictions, not experimental GLUT4 crystal or residue mutagenesis"
+        },
+        "selection": {
+          "ZINCstartApprox": 18000000,
+          "filteredApprox": 10000000,
+          "GlideHits": 59,
+          "scoreThreshold": "less than -7.0",
+          "consensusHits": 32,
+          "purchasedHits": 17,
+          "positiveControlID18": "ritonavir",
+          "selection": "availability/pricing/synthetic tractability"
+        },
+        "crystalOrMutagenesisVerification": false,
+        "screenCountsArePatients": false,
+        "newLeadsAreApprovedMetOrRitonavir": false
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 1,
+          "printedPage": "14441",
+          "nativeSection": "Title, abstract, affiliations, funding and introduction"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 3,
+          "printedPage": "14443",
+          "nativeSection": "Experimental Procedures and model building"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 4,
+          "printedPage": "14444",
+          "nativeSection": "Screening workflow, Figures1\u20132"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 5,
+          "printedPage": "14445",
+          "nativeSection": "Table1 chemical structures and screening results"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED3-CAL-07-O02",
+      "outcome": "MM compound screening, growth IC50 and separate Annexin assays",
+      "estimate": {
+        "kind": "MM_screen_growth_and_death",
+        "MTS": {
+          "hours": 72,
+          "cellsPerWell": 5000,
+          "plateWells": 384,
+          "glucoseMM": 5,
+          "glutamineMM": 2,
+          "technicalWells": "triplicate",
+          "serialDilutionFold": 2,
+          "startUM": 25,
+          "lowerStartUM": 12.5,
+          "lowerStartCompounds": [
+            6,
+            10,
+            17
+          ],
+          "displayed": "one of two experiments",
+          "readout": "490nm absorbance in Methods, Figure3 caption printed490nM"
+        },
+        "growthIC50": {
+          "assay": "CellTiter-Glo",
+          "hours": 72,
+          "cellsPerWell": 20000,
+          "plateWells": 96,
+          "compound3_17RangeUM": [
+            0.39,
+            50
+          ],
+          "ritonavirRangeUM": [
+            1.25,
+            100
+          ],
+          "bodyReportedIC50uM": {
+            "compound3": [
+              5,
+              12
+            ],
+            "compound17": [
+              6,
+              10
+            ],
+            "ritonavirApprox": 40
+          }
+        },
+        "AnnexinD": {
+          "hours": 72,
+          "glucoseMM": 11,
+          "glutamineMM": 2,
+          "ritonavirUM": 40,
+          "compound3_17UM": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "plottedLines": [
+            "JJN3",
+            "L363"
+          ],
+          "captionAlsoMentionsKMS11": true
+        },
+        "JJN3": "relatively resistant despite uptake inhibition",
+        "L363": "greater sensitivity",
+        "KMS11GLUT1vsGFP": "GLUT1 expression mitigates growth effects in selection context",
+        "all17UniformDeath": false,
+        "exactLineIC50OrBarHeightsDigitized": false
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 2,
+          "printedPage": "14442",
+          "nativeSection": "Introduction and Experimental Procedures"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 4,
+          "printedPage": "14444",
+          "nativeSection": "Screening workflow, Figures1\u20132"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 5,
+          "printedPage": "14445",
+          "nativeSection": "Table1 chemical structures and screening results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 6,
+          "printedPage": "14446",
+          "nativeSection": "Figure3 full17-hit screen and legend"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 7,
+          "printedPage": "14447",
+          "nativeSection": "Figure4A\u2013G and actual Met/primary-cell results"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED3-CAL-07-O03",
+      "outcome": "Actual Met/compound3 in primary MM/plasma-cell-leukemia preparations",
+      "estimate": {
+        "kind": "actual_Met_compound3_primary_cells",
+        "schedule": {
+          "compound3UM": 10,
+          "MetMM": 1,
+          "hours": 48,
+          "displayedLabels": [
+            "Patient1",
+            "Patient2",
+            "Patient3"
+          ],
+          "samples": "MM/plasma cell leukemia bone marrow or peripheral blood; individual label disease not assigned",
+          "assay": "Annexin V/DAPI",
+          "analysisGate": "CD38+ CD45\u2212",
+          "processingMarkers": [
+            "CD38",
+            "CD45",
+            "CD138"
+          ],
+          "formalInteractionModel": null
+        },
+        "observed": "greater cytotoxicity with combination in displayed primary samples; Met alone not uniformly cytotoxic",
+        "formalSynergyOrClinicalBenefit": false,
+        "absolutePatientDeathPercentDigitized": false,
+        "normalCells": "minimal T/stromal toxicity described but data not shown, not established normal-tissue safety",
+        "globalUniquePatientNOrClinicalEfficacyEstablished": false
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 2,
+          "printedPage": "14442",
+          "nativeSection": "Introduction and Experimental Procedures"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 7,
+          "printedPage": "14447",
+          "nativeSection": "Figure4A\u2013G and actual Met/primary-cell results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 12,
+          "printedPage": "14452",
+          "nativeSection": "Discussion and references"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED3-CAL-07-O04",
+      "outcome": "GLUT4 shRNA growth-context and target contribution",
+      "estimate": {
+        "kind": "GLUT4_KD_growth_context",
+        "schedule": {
+          "GLUT4KD": "shRNA; qPCR mRNA normalized to GAPDH",
+          "controls": "nontargeting/pLKO/CshRNA as labeled",
+          "lines": [
+            "JJN3",
+            "L363"
+          ],
+          "ritonavirUM": 20,
+          "compound3UM": 8,
+          "compound17UM": 8,
+          "hours": 72,
+          "readout": "trypan blue and automated cell count"
+        },
+        "noFurtherSuppressionAfterKD": "supports on-target contribution with target depletion/floor caveat",
+        "KDmeasured": "GLUT4 mRNA qPCR, not direct protein percentage",
+        "exclusiveMechanismMutantRescueOrMetRescue": false
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 7,
+          "printedPage": "14447",
+          "nativeSection": "Figure4A\u2013G and actual Met/primary-cell results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 12,
+          "printedPage": "14452",
+          "nativeSection": "Discussion and references"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED3-CAL-07-O05",
+      "outcome": "Photolabel competition in adipocyte LDM",
+      "estimate": {
+        "kind": "photolabel_binding_preference",
+        "schedule": {
+          "model": "inverted LDM from 3T3-L1 adipocytes",
+          "LDMug_Fig5": 200,
+          "compound3_17UM": 20,
+          "pretreatMinutes": 10,
+          "temperature": "room temperature",
+          "ATBBMPA_UM": 50,
+          "readout": "photolabel competition followed by GLUT1/4 immunoblot/Odyssey quantification",
+          "myelomaDirectBindingMeasured": false
+        },
+        "GLUT4vsGLUT1": "greater competition at GLUT4, not zero GLUT1 inhibition or all-isoform selectivity",
+        "isolatedMyelomaBindingOrKdCocrystal": false
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 2,
+          "printedPage": "14442",
+          "nativeSection": "Introduction and Experimental Procedures"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 3,
+          "printedPage": "14443",
+          "nativeSection": "Experimental Procedures and model building"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 7,
+          "printedPage": "14447",
+          "nativeSection": "Figure4A\u2013G and actual Met/primary-cell results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 8,
+          "printedPage": "14448",
+          "nativeSection": "Figures5\u20136 and photolabel/transport results"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED3-CAL-07-O06",
+      "outcome": "Functional glucose transport in HEK transfectants and MM lines",
+      "estimate": {
+        "kind": "functional_transport_HEK_and_MM",
+        "schedule": {
+          "models": [
+            "HEK293 rat mycGLUT1",
+            "HEK293 rat mycGLUT4",
+            "HEK293 GLUT4 P401L transport-dead",
+            "JJN3",
+            "KMS11-GFP"
+          ],
+          "compound3_17UM": 20,
+          "pretreatMinutes": 6,
+          "uptakeMinutes": 6,
+          "temperatureC": 37,
+          "tracer": "2-[3H]deoxyglucose",
+          "tracerUM": 50,
+          "background": "corresponding control/drug P401L uptake subtracted from GLUT1/4",
+          "GLUT4transportIC50uM": {
+            "compound3": 18.9,
+            "compound17": 10.8
+          }
+        },
+        "afterBackgroundSubtraction": "approximately50% GLUT4 inhibition with essentially little GLUT1 effect, source description",
+        "P401L": "transport-dead background control, not drug-resistant binding mutant",
+        "endogenousUptakeAlsoInhibited": true,
+        "MM": "JJN3 and KMS11-GFP both uptake-inhibited, compound17 stronger",
+        "uptakeEqualsUniformDeathOrClinicalSelectivity": false
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 3,
+          "printedPage": "14443",
+          "nativeSection": "Experimental Procedures and model building"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 8,
+          "printedPage": "14448",
+          "nativeSection": "Figures5\u20136 and photolabel/transport results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 9,
+          "printedPage": "14449",
+          "nativeSection": "Figure7, Table2 and model comparison/docking results"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED3-CAL-07-O07",
+      "outcome": "Analogue growth potency versus transporter selectivity",
+      "estimate": {
+        "kind": "analogue_growth_vs_transport_selectivity",
+        "Table2_KMS11_72h_growthIC50uM": {
+          "19": 20.48,
+          "21": 13.16,
+          "23": 20.58,
+          "24": 8.82,
+          "25": 35.31,
+          "26": 6.67,
+          "27": 9.7,
+          "29": 13.98,
+          "31": 21.19,
+          "33": 15.44,
+          "35": 7.11,
+          "36": 17.0,
+          "38": "9145 (literal printed value; unresolved magnitude/source error, no decimal repair)",
+          "39": 3.31,
+          "40": 30.97,
+          "41": 8.68
+        },
+        "table38LiteralNotCorrected": true,
+        "schedule": {
+          "IDs": [
+            26,
+            39
+          ],
+          "viabilityUM": 2,
+          "viabilityHours": 72,
+          "transportUM": 20,
+          "pretreatMinutes": 6,
+          "uptakeMinutes": 6,
+          "compound26_transportIC50uM": {
+            "GLUT4": 3.5,
+            "GLUT1": "greater than100"
+          },
+          "compound39_transportIC50uM": "approximately30 for both GLUT1 and GLUT4"
+        },
+        "growthIsNotTransportIC50": true,
+        "compound39": "greater growth potency with loss of GLUT4-over-GLUT1 selectivity",
+        "compound26": "transport-selective compared with GLUT1 in measured models; no all-isoform/clinical safety proof"
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 8,
+          "printedPage": "14448",
+          "nativeSection": "Figures5\u20136 and photolabel/transport results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 9,
+          "printedPage": "14449",
+          "nativeSection": "Figure7, Table2 and model comparison/docking results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 10,
+          "printedPage": "14450",
+          "nativeSection": "Figures8\u20139 and Discussion"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    },
+    {
+      "id": "REED3-CAL-07-O08",
+      "outcome": "Model comparison and predicted docking contacts",
+      "estimate": {
+        "kind": "model2_and_docking_residue_predictions",
+        "modelComparison": {
+          "GLUT4Initial": "multitemplate GlpT/lactose permease/EmrD, no single template above30% similarity",
+          "model2": "later GLUT1 crystal template; GLUT1/4 sequence identity68.7%",
+          "simulationNS": 20,
+          "simulationTimeStepPS": 5,
+          "membrane": "POPC",
+          "overallModelRMSDA": 5.2,
+          "bindingSiteTMRMSDA_Fig9": 2.2,
+          "centralChannelBodyRMSDA": "less than2.5",
+          "model1vsGLUT1RMSDA": 5.8,
+          "model2vsGLUT1RMSDA": 2.5,
+          "docking": "Glide/Surflex consensus predictions, not experimental GLUT4 crystal or residue mutagenesis"
+        },
+        "compound3_bodyPredictedHB": [
+          "Asn176",
+          "Gln177"
+        ],
+        "compound3_bodyHydrophobic": [
+          "Phe307",
+          "Trp428",
+          "Phe38",
+          "Ile42"
+        ],
+        "figure10LabelsInclude": [
+          "Asn176",
+          "Asn427",
+          "Trp404"
+        ],
+        "bodyFigureResidueMismatchRetained": true,
+        "compound17_bodyPredictions": [
+          "Asn176",
+          "Phe307",
+          "Trp404"
+        ],
+        "experimentalResidueNecessityDirectMetBindingOrCocrystalProven": false
+      },
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 3,
+          "printedPage": "14443",
+          "nativeSection": "Experimental Procedures and model building"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 9,
+          "printedPage": "14449",
+          "nativeSection": "Figure7, Table2 and model comparison/docking results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 10,
+          "printedPage": "14450",
+          "nativeSection": "Figures8\u20139 and Discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 11,
+          "printedPage": "14451",
+          "nativeSection": "Figures10\u201311 docking predictions"
+        }
+      ],
+      "grade": null,
+      "benefitGrade": null,
+      "acceptedSupport": false,
+      "verificationState": "pending_independent_source_audit"
+    }
+  ],
+  "claims": [
+    {
+      "id": "REED3-CAL-07-C01",
+      "resultIds": [
+        "REED3-CAL-07-O01"
+      ],
+      "statement": "GLUT4 homology models and virtual-screen compound selection. Retain exact compound/model/exposure/assay, null and uncertainty limits; no accepted clinical, exclusive-target or formal interaction claim.",
+      "relation": "primary_computational_cellular_or_isolated_patient_cell_candidate",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED3-CAL-07-C02",
+      "resultIds": [
+        "REED3-CAL-07-O02"
+      ],
+      "statement": "MM compound screening, growth IC50 and separate Annexin assays. Retain exact compound/model/exposure/assay, null and uncertainty limits; no accepted clinical, exclusive-target or formal interaction claim.",
+      "relation": "primary_computational_cellular_or_isolated_patient_cell_candidate",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED3-CAL-07-C03",
+      "resultIds": [
+        "REED3-CAL-07-O03"
+      ],
+      "statement": "Actual Met/compound3 in primary MM/plasma-cell-leukemia preparations. Retain exact compound/model/exposure/assay, null and uncertainty limits; no accepted clinical, exclusive-target or formal interaction claim.",
+      "relation": "primary_computational_cellular_or_isolated_patient_cell_candidate",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED3-CAL-07-C04",
+      "resultIds": [
+        "REED3-CAL-07-O04"
+      ],
+      "statement": "GLUT4 shRNA growth-context and target contribution. Retain exact compound/model/exposure/assay, null and uncertainty limits; no accepted clinical, exclusive-target or formal interaction claim.",
+      "relation": "primary_computational_cellular_or_isolated_patient_cell_candidate",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED3-CAL-07-C05",
+      "resultIds": [
+        "REED3-CAL-07-O05"
+      ],
+      "statement": "Photolabel competition in adipocyte LDM. Retain exact compound/model/exposure/assay, null and uncertainty limits; no accepted clinical, exclusive-target or formal interaction claim.",
+      "relation": "primary_computational_cellular_or_isolated_patient_cell_candidate",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED3-CAL-07-C06",
+      "resultIds": [
+        "REED3-CAL-07-O06"
+      ],
+      "statement": "Functional glucose transport in HEK transfectants and MM lines. Retain exact compound/model/exposure/assay, null and uncertainty limits; no accepted clinical, exclusive-target or formal interaction claim.",
+      "relation": "primary_computational_cellular_or_isolated_patient_cell_candidate",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED3-CAL-07-C07",
+      "resultIds": [
+        "REED3-CAL-07-O07"
+      ],
+      "statement": "Analogue growth potency versus transporter selectivity. Retain exact compound/model/exposure/assay, null and uncertainty limits; no accepted clinical, exclusive-target or formal interaction claim.",
+      "relation": "primary_computational_cellular_or_isolated_patient_cell_candidate",
+      "acceptedSupport": false
+    },
+    {
+      "id": "REED3-CAL-07-C08",
+      "resultIds": [
+        "REED3-CAL-07-O08"
+      ],
+      "statement": "Model comparison and predicted docking contacts. Retain exact compound/model/exposure/assay, null and uncertainty limits; no accepted clinical, exclusive-target or formal interaction claim.",
+      "relation": "primary_computational_cellular_or_isolated_patient_cell_candidate",
+      "acceptedSupport": false
+    }
+  ],
+  "reviewInputs": [
+    {
+      "id": "Q01",
+      "answer": "Identify more potent GLUT4-over-GLUT1 inhibitors by modeling, screening and functional/MM validation, including actual Met combination in isolated primary cells.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 1,
+          "printedPage": "14441",
+          "nativeSection": "Title, abstract, affiliations, funding and introduction"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 3,
+          "printedPage": "14443",
+          "nativeSection": "Experimental Procedures and model building"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 7,
+          "printedPage": "14447",
+          "nativeSection": "Figure4A\u2013G and actual Met/primary-cell results"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q02",
+      "answer": "Human MM lines, isolated MM/plasma-cell-leukemia patient preparations, HEK293 rat transporter expression and mouse3T3-L1 LDM; no own in-vivo treatment or clinical trial.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 2,
+          "printedPage": "14442",
+          "nativeSection": "Introduction and Experimental Procedures"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 7,
+          "printedPage": "14447",
+          "nativeSection": "Figure4A\u2013G and actual Met/primary-cell results"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q03",
+      "answer": "ChemBridge research compounds3/17 and numbered analogues, Euroasia ritonavir; actual Met in Figure4E; shRNA, ratGLUT1/4/P401L and ATB-BMPA contexts distinct.",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 2,
+          "printedPage": "14442",
+          "nativeSection": "Introduction and Experimental Procedures"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 7,
+          "printedPage": "14447",
+          "nativeSection": "Figure4A\u2013G and actual Met/primary-cell results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 8,
+          "printedPage": "14448",
+          "nativeSection": "Figures5\u20136 and photolabel/transport results"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q04",
+      "answer": "DMSO/vehicle, compound18ritonavir, KMS11GLUT1/GFP, nontarget/GLUT4shRNA and P401L-specific transport background.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 3,
+          "printedPage": "14443",
+          "nativeSection": "Experimental Procedures and model building"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 7,
+          "printedPage": "14447",
+          "nativeSection": "Figure4A\u2013G and actual Met/primary-cell results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 8,
+          "printedPage": "14448",
+          "nativeSection": "Figures5\u20136 and photolabel/transport results"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q05",
+      "answer": "['GLUT4 homology models and virtual-screen compound selection', 'MM compound screening, growth IC50 and separate Annexin assays', 'Actual Met/compound3 in primary MM/plasma-cell-leukemia preparations', 'GLUT4 shRNA growth-context and target contribution', 'Photolabel competition in adipocyte LDM', 'Functional glucose transport in HEK transfectants and MM lines', 'Analogue growth potency versus transporter selectivity', 'Model comparison and predicted docking contacts']",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 1,
+          "printedPage": "14441",
+          "nativeSection": "Title, abstract, affiliations, funding and introduction"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 3,
+          "printedPage": "14443",
+          "nativeSection": "Experimental Procedures and model building"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 7,
+          "printedPage": "14447",
+          "nativeSection": "Figure4A\u2013G and actual Met/primary-cell results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 12,
+          "printedPage": "14452",
+          "nativeSection": "Discussion and references"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q06",
+      "answer": "[{\"resultId\": \"REED3-CAL-07-O01\", \"estimate\": {\"kind\": \"model_and_virtual_selection\", \"models\": {\"GLUT4Initial\": \"multitemplate GlpT/lactose permease/EmrD, no single template above30% similarity\", \"model2\": \"later GLUT1 crystal template; GLUT1/4 sequence identity68.7%\", \"simulationNS\": 20, \"simulationTimeStepPS\": 5, \"membrane\": \"POPC\", \"overallModelRMSDA\": 5.2, \"bindingSiteTMRMSDA_Fig9\": 2.2, \"centralChannelBodyRMSDA\": \"less than2.5\", \"model1vsGLUT1RMSDA\": 5.8, \"model2vsGLUT1RMSDA\": 2.5, \"docking\": \"Glide/Surflex consensus predictions, not experimental GLUT4 crystal or residue mutagenesis\"}, \"selection\": {\"ZINCstartApprox\": 18000000, \"filteredApprox\": 10000000, \"GlideHits\": 59, \"scoreThreshold\": \"less than -7.0\", \"consensusHits\": 32, \"purchasedHits\": 17, \"positiveControlID18\": \"ritonavir\", \"selection\": \"availability/pricing/synthetic tractability\"}, \"crystalOrMutagenesisVerification\": false, \"screenCountsArePatients\": false, \"newLeadsAreApprovedMetOrRitonavir\": false}, \"sourceLocators\": [{\"kind\": \"pdf\", \"sourceSha256\": \"41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111\", \"physicalPage\": 1, \"printedPage\": \"14441\", \"nativeSection\": \"Title, abstract, affiliations, funding and introduction\"}, {\"kind\": \"pdf\", \"sourceSha256\": \"41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111\", \"physicalPage\": 3, \"printedPage\": \"14443\", \"nativeSection\": \"Experimental Procedures and model building\"}, {\"kind\": \"pdf\", \"sourceSha256\": \"41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111\", \"physicalPage\": 4, \"printedPage\": \"14444\", \"nativeSection\": \"Screening workflow, Figures1\u20132\"}, {\"kind\": \"pdf\", \"sourceSha256\": \"41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111\", \"physicalPage\": 5, \"printedPage\": \"14445\", \"nativeSection\": \"Table1 chemical structures and screening results\"}]}, {\"resultId\": \"REED3-CAL-07-O02\", \"estimate\": {\"kind\": \"MM_screen_growth_and_death\", \"MTS\": {\"hours\": 72, \"cellsPerWell\": 5000, \"plateWells\": 384, \"glucoseMM\": 5, \"glutamineMM\": 2, \"technicalWells\": \"triplicate\", \"serialDilutionFold\": 2, \"startUM\": 25, \"lowerStartUM\": 12.5, \"lowerStartCompounds\": [6, 10, 17], \"displayed\": \"one of two experiments\", \"readout\": \"490nm absorbance in Methods, Figure3 caption printed490nM\"}, \"growthIC50\": {\"assay\": \"CellTiter-Glo\", \"hours\": 72, \"cellsPerWell\": 20000, \"plateWells\": 96, \"compound3_17RangeUM\": [0.39, 50], \"ritonavirRangeUM\": [1.25, 100], \"bodyReportedIC50uM\": {\"compound3\": [5, 12], \"compound17\": [6, 10], \"ritonavirApprox\": 40}}, \"AnnexinD\": {\"hours\": 72, \"glucoseMM\": 11, \"glutamineMM\": 2, \"ritonavirUM\": 40, \"compound3_17UM\": [5, 10, 15, 20], \"plottedLines\": [\"JJN3\", \"L363\"], \"captionAlsoMentionsKMS11\": true}, \"JJN3\": \"relatively resistant despite uptake inhibition\", \"L363\": \"greater sensitivity\", \"KMS11GLUT1vsGFP\": \"GLUT1 expression mitigates growth effects in selection context\", \"all17UniformDeath\": false, \"exactLineIC50OrBarHeightsDigitized\": false}, \"sourceLocators\": [{\"kind\": \"pdf\", \"sourceSha256\": \"41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111\", \"physicalPage\": 2, \"printedPage\": \"14442\", \"nativeSection\": \"Introduction and Experimental Procedures\"}, {\"kind\": \"pdf\", \"sourceSha256\": \"41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111\", \"physicalPage\": 4, \"printedPage\": \"14444\", \"nativeSection\": \"Screening workflow, Figures1\u20132\"}, {\"kind\": \"pdf\", \"sourceSha256\": \"41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111\", \"physicalPage\": 5, \"printedPage\": \"14445\", \"nativeSection\": \"Table1 chemical structures and screening results\"}, {\"kind\": \"pdf\", \"sourceSha256\": \"41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111\", \"physicalPage\": 6, \"printedPage\": \"14446\", \"nativeSection\": \"Figure3 full17-hit screen and legend\"}, {\"kind\": \"pdf\", \"sourceSha256\": \"41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111\", \"physicalPage\": 7, \"printedPage\": \"14447\", \"nativeSection\": \"Figure4A\u2013G and actual Met/primary-cell results\"}]}, {\"resultId\": \"REED3-CAL-07-O03\", \"estimate\": {\"kind\": \"actual_Met_compound3_primary_cells\", \"schedule\": {\"compound3UM\": 10, \"MetMM\": 1, \"hours\": 48, \"displayedLabels\": [\"Patient1\", \"Patient2\", \"Patient3\"], \"samples\": \"MM/plasma cell leukemia bone marrow or peripheral blood; individual label disease not assigned\", \"assay\": \"Annexin V/DAPI\", \"analysisGate\": \"CD38+ CD45\u2212\", \"processingMarkers\": [\"CD38\", \"CD45\", \"CD138\"], \"formalInteractionModel\": null}, \"observed\": \"greater cytotoxicity with combination in displayed primary samples; Met alone not uniformly cytotoxic\", \"formalSynergyOrClinicalBenefit\": false, \"absolutePatientDeathPercentDigitized\": false, \"normalCells\": \"minimal T/stromal toxicity described but data not shown, not established normal-tissue safety\", \"globalUniquePatientNOrClinicalEfficacyEstablished\": false}, \"sourceLocators\": [{\"kind\": \"pdf\", \"sourceSha256\": \"41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111\", \"physicalPage\": 2, \"printedPage\": \"14442\", \"nativeSection\": \"Introduction and Experimental Procedures\"}, {\"kind\": \"pdf\", \"sourceSha256\": \"41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111\", \"physicalPage\": 7, \"printedPage\": \"14447\", \"nativeSection\": \"Figure4A\u2013G and actual Met/primary-cell results\"}, {\"kind\": \"pdf\", \"sourceSha256\": \"41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111\", \"physicalPage\": 12, \"printedPage\": \"14452\", \"nativeSection\": \"Discussion and references\"}]}, {\"resultId\": \"REED3-CAL-07-O04\", \"estimate\": {\"kind\": \"GLUT4_KD_growth_context\", \"schedule\": {\"GLUT4KD\": \"shRNA; qPCR mRNA normalized to GAPDH\", \"controls\": \"nontargeting/pLKO/CshRNA as labeled\", \"lines\": [\"JJN3\", \"L363\"], \"ritonavirUM\": 20, \"compound3UM\": 8, \"compound17UM\": 8, \"hours\": 72, \"readout\": \"trypan blue and automated cell count\"}, \"noFurtherSuppressionAfterKD\": \"supports on-target contribution with target depletion/floor caveat\", \"KDmeasured\": \"GLUT4 mRNA qPCR, not direct protein percentage\", \"exclusiveMechanismMutantRescueOrMetRescue\": false}, \"sourceLocators\": [{\"kind\": \"pdf\", \"sourceSha256\": \"41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111\", \"physicalPage\": 7, \"printedPage\": \"14447\", \"nativeSection\": \"Figure4A\u2013G and actual Met/primary-cell results\"}, {\"kind\": \"pdf\", \"sourceSha256\": \"41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111\", \"physicalPage\": 12, \"printedPage\": \"14452\", \"nativeSection\": \"Discussion and references\"}]}, {\"resultId\": \"REED3-CAL-07-O05\", \"estimate\": {\"kind\": \"photolabel_binding_preference\", \"schedule\": {\"model\": \"inverted LDM from 3T3-L1 adipocytes\", \"LDMug_Fig5\": 200, \"compound3_17UM\": 20, \"pretreatMinutes\": 10, \"temperature\": \"room temperature\", \"ATBBMPA_UM\": 50, \"readout\": \"photolabel competition followed by GLUT1/4 immunoblot/Odyssey quantification\", \"myelomaDirectBindingMeasured\": false}, \"GLUT4vsGLUT1\": \"greater competition at GLUT4, not zero GLUT1 inhibition or all-isoform selectivity\", \"isolatedMyelomaBindingOrKdCocrystal\": false}, \"sourceLocators\": [{\"kind\": \"pdf\", \"sourceSha256\": \"41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111\", \"physicalPage\": 2, \"printedPage\": \"14442\", \"nativeSection\": \"Introduction and Experimental Procedures\"}, {\"kind\": \"pdf\", \"sourceSha256\": \"41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111\", \"physicalPage\": 3, \"printedPage\": \"14443\", \"nativeSection\": \"Experimental Procedures and model building\"}, {\"kind\": \"pdf\", \"sourceSha256\": \"41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111\", \"physicalPage\": 7, \"printedPage\": \"14447\", \"nativeSection\": \"Figure4A\u2013G and actual Met/primary-cell results\"}, {\"kind\": \"pdf\", \"sourceSha256\": \"41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111\", \"physicalPage\": 8, \"printedPage\": \"14448\", \"nativeSection\": \"Figures5\u20136 and photolabel/transport results\"}]}, {\"resultId\": \"REED3-CAL-07-O06\", \"estimate\": {\"kind\": \"functional_transport_HEK_and_MM\", \"schedule\": {\"models\": [\"HEK293 rat mycGLUT1\", \"HEK293 rat mycGLUT4\", \"HEK293 GLUT4 P401L transport-dead\", \"JJN3\", \"KMS11-GFP\"], \"compound3_17UM\": 20, \"pretreatMinutes\": 6, \"uptakeMinutes\": 6, \"temperatureC\": 37, \"tracer\": \"2-[3H]deoxyglucose\", \"tracerUM\": 50, \"background\": \"corresponding control/drug P401L uptake subtracted from GLUT1/4\", \"GLUT4transportIC50uM\": {\"compound3\": 18.9, \"compound17\": 10.8}}, \"afterBackgroundSubtraction\": \"approximately50% GLUT4 inhibition with essentially little GLUT1 effect, source description\", \"P401L\": \"transport-dead background control, not drug-resistant binding mutant\", \"endogenousUptakeAlsoInhibited\": true, \"MM\": \"JJN3 and KMS11-GFP both uptake-inhibited, compound17 stronger\", \"uptakeEqualsUniformDeathOrClinicalSelectivity\": false}, \"sourceLocators\": [{\"kind\": \"pdf\", \"sourceSha256\": \"41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111\", \"physicalPage\": 3, \"printedPage\": \"14443\", \"nativeSection\": \"Experimental Procedures and model building\"}, {\"kind\": \"pdf\", \"sourceSha256\": \"41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111\", \"physicalPage\": 8, \"printedPage\": \"14448\", \"nativeSection\": \"Figures5\u20136 and photolabel/transport results\"}, {\"kind\": \"pdf\", \"sourceSha256\": \"41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111\", \"physicalPage\": 9, \"printedPage\": \"14449\", \"nativeSection\": \"Figure7, Table2 and model comparison/docking results\"}]}, {\"resultId\": \"REED3-CAL-07-O07\", \"estimate\": {\"kind\": \"analogue_growth_vs_transport_selectivity\", \"Table2_KMS11_72h_growthIC50uM\": {\"19\": 20.48, \"21\": 13.16, \"23\": 20.58, \"24\": 8.82, \"25\": 35.31, \"26\": 6.67, \"27\": 9.7, \"29\": 13.98, \"31\": 21.19, \"33\": 15.44, \"35\": 7.11, \"36\": 17.0, \"38\": \"9145 (literal printed value; unresolved magnitude/source error, no decimal repair)\", \"39\": 3.31, \"40\": 30.97, \"41\": 8.68}, \"table38LiteralNotCorrected\": true, \"schedule\": {\"IDs\": [26, 39], \"viabilityUM\": 2, \"viabilityHours\": 72, \"transportUM\": 20, \"pretreatMinutes\": 6, \"uptakeMinutes\": 6, \"compound26_transportIC50uM\": {\"GLUT4\": 3.5, \"GLUT1\": \"greater than100\"}, \"compound39_transportIC50uM\": \"approximately30 for both GLUT1 and GLUT4\"}, \"growthIsNotTransportIC50\": true, \"compound39\": \"greater growth potency with loss of GLUT4-over-GLUT1 selectivity\", \"compound26\": \"transport-selective compared with GLUT1 in measured models; no all-isoform/clinical safety proof\"}, \"sourceLocators\": [{\"kind\": \"pdf\", \"sourceSha256\": \"41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111\", \"physicalPage\": 8, \"printedPage\": \"14448\", \"nativeSection\": \"Figures5\u20136 and photolabel/transport results\"}, {\"kind\": \"pdf\", \"sourceSha256\": \"41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111\", \"physicalPage\": 9, \"printedPage\": \"14449\", \"nativeSection\": \"Figure7, Table2 and model comparison/docking results\"}, {\"kind\": \"pdf\", \"sourceSha256\": \"41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111\", \"physicalPage\": 10, \"printedPage\": \"14450\", \"nativeSection\": \"Figures8\u20139 and Discussion\"}]}, {\"resultId\": \"REED3-CAL-07-O08\", \"estimate\": {\"kind\": \"model2_and_docking_residue_predictions\", \"modelComparison\": {\"GLUT4Initial\": \"multitemplate GlpT/lactose permease/EmrD, no single template above30% similarity\", \"model2\": \"later GLUT1 crystal template; GLUT1/4 sequence identity68.7%\", \"simulationNS\": 20, \"simulationTimeStepPS\": 5, \"membrane\": \"POPC\", \"overallModelRMSDA\": 5.2, \"bindingSiteTMRMSDA_Fig9\": 2.2, \"centralChannelBodyRMSDA\": \"less than2.5\", \"model1vsGLUT1RMSDA\": 5.8, \"model2vsGLUT1RMSDA\": 2.5, \"docking\": \"Glide/Surflex consensus predictions, not experimental GLUT4 crystal or residue mutagenesis\"}, \"compound3_bodyPredictedHB\": [\"Asn176\", \"Gln177\"], \"compound3_bodyHydrophobic\": [\"Phe307\", \"Trp428\", \"Phe38\", \"Ile42\"], \"figure10LabelsInclude\": [\"Asn176\", \"Asn427\", \"Trp404\"], \"bodyFigureResidueMismatchRetained\": true, \"compound17_bodyPredictions\": [\"Asn176\", \"Phe307\", \"Trp404\"], \"experimentalResidueNecessityDirectMetBindingOrCocrystalProven\": false}, \"sourceLocators\": [{\"kind\": \"pdf\", \"sourceSha256\": \"41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111\", \"physicalPage\": 3, \"printedPage\": \"14443\", \"nativeSection\": \"Experimental Procedures and model building\"}, {\"kind\": \"pdf\", \"sourceSha256\": \"41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111\", \"physicalPage\": 9, \"printedPage\": \"14449\", \"nativeSection\": \"Figure7, Table2 and model comparison/docking results\"}, {\"kind\": \"pdf\", \"sourceSha256\": \"41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111\", \"physicalPage\": 10, \"printedPage\": \"14450\", \"nativeSection\": \"Figures8\u20139 and Discussion\"}, {\"kind\": \"pdf\", \"sourceSha256\": \"41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111\", \"physicalPage\": 11, \"printedPage\": \"14451\", \"nativeSection\": \"Figures10\u201311 docking predictions\"}]}]",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 1,
+          "printedPage": "14441",
+          "nativeSection": "Title, abstract, affiliations, funding and introduction"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 2,
+          "printedPage": "14442",
+          "nativeSection": "Introduction and Experimental Procedures"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 3,
+          "printedPage": "14443",
+          "nativeSection": "Experimental Procedures and model building"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 4,
+          "printedPage": "14444",
+          "nativeSection": "Screening workflow, Figures1\u20132"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 5,
+          "printedPage": "14445",
+          "nativeSection": "Table1 chemical structures and screening results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 6,
+          "printedPage": "14446",
+          "nativeSection": "Figure3 full17-hit screen and legend"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 7,
+          "printedPage": "14447",
+          "nativeSection": "Figure4A\u2013G and actual Met/primary-cell results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 8,
+          "printedPage": "14448",
+          "nativeSection": "Figures5\u20136 and photolabel/transport results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 9,
+          "printedPage": "14449",
+          "nativeSection": "Figure7, Table2 and model comparison/docking results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 10,
+          "printedPage": "14450",
+          "nativeSection": "Figures8\u20139 and Discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 11,
+          "printedPage": "14451",
+          "nativeSection": "Figures10\u201311 docking predictions"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 12,
+          "printedPage": "14452",
+          "nativeSection": "Discussion and references"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q07",
+      "answer": "No complete primary donor/sample/failed-assay flow.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 2,
+          "printedPage": "14442",
+          "nativeSection": "Introduction and Experimental Procedures"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 3,
+          "printedPage": "14443",
+          "nativeSection": "Experimental Procedures and model building"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 6,
+          "printedPage": "14446",
+          "nativeSection": "Figure3 full17-hit screen and legend"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 7,
+          "printedPage": "14447",
+          "nativeSection": "Figure4A\u2013G and actual Met/primary-cell results"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q08",
+      "answer": "Normal T/stromal minimaltox claim data not shown; physiological GLUT4 and other-isoform/offtarget safety not established.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 2,
+          "printedPage": "14442",
+          "nativeSection": "Introduction and Experimental Procedures"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 7,
+          "printedPage": "14447",
+          "nativeSection": "Figure4A\u2013G and actual Met/primary-cell results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 8,
+          "printedPage": "14448",
+          "nativeSection": "Figures5\u20136 and photolabel/transport results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 12,
+          "printedPage": "14452",
+          "nativeSection": "Discussion and references"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q09",
+      "answer": "Discovery selection/solubility limits, uptake/metabolic viability proxies, donor/replicate uncertainty, no blinding/power and missing normal-cell data; model/contact predictions not direct binding proof.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 3,
+          "printedPage": "14443",
+          "nativeSection": "Experimental Procedures and model building"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 8,
+          "printedPage": "14448",
+          "nativeSection": "Figures5\u20136 and photolabel/transport results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 9,
+          "printedPage": "14449",
+          "nativeSection": "Figure7, Table2 and model comparison/docking results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 11,
+          "printedPage": "14451",
+          "nativeSection": "Figures10\u201311 docking predictions"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 12,
+          "printedPage": "14452",
+          "nativeSection": "Discussion and references"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 13,
+          "printedPage": "14453",
+          "nativeSection": "References including prior CAL01 original"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q10",
+      "answer": "ActualMet1mM+compound3 10uM48h isolated primary-cell observations match private D02/C21; other compounds/modeling not new Met clinical efficacy.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 7,
+          "printedPage": "14447",
+          "nativeSection": "Figure4A\u2013G and actual Met/primary-cell results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 12,
+          "printedPage": "14452",
+          "nativeSection": "Discussion and references"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q11",
+      "answer": "{'reportId': 'REED-39edbc2be58169ee5366', 'family': 'Mishra2015GLUT4modeling', 'priorRitMetMM': {'reference': 13, 'PMID': '25542900', 'existingCAL01ReportId': 'REED reference retained through source identity, no transferred source acceptance'}, 'priorRitMetCLL': 'reference12, cited only under this packet', 'primaryLabels': [1, 2, 3], 'primaryDonorOverlapWithPriorRitMetStudy': 'not adjudicated', 'technicalTriplicatesNotPatients': True, 'newIndependentTrialCount': 0, 'newIndependentPatientCount': 0, 'locators': [{'kind': 'pdf', 'sourceSha256': '41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111', 'physicalPage': 2, 'printedPage': '14442', 'nativeSection': 'Introduction and Experimental Procedures'}, {'kind': 'pdf', 'sourceSha256': '41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111', 'physicalPage': 7, 'printedPage': '14447', 'nativeSection': 'Figure4A\u2013G and actual Met/primary-cell results'}, {'kind': 'pdf', 'sourceSha256': '41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111', 'physicalPage': 12, 'printedPage': '14452', 'nativeSection': 'Discussion and references'}, {'kind': 'pdf', 'sourceSha256': '41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111', 'physicalPage': 13, 'printedPage': '14453', 'nativeSection': 'References including prior CAL01 original'}]}",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 7,
+          "printedPage": "14447",
+          "nativeSection": "Figure4A\u2013G and actual Met/primary-cell results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 13,
+          "printedPage": "14453",
+          "nativeSection": "References including prior CAL01 original"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q12",
+      "answer": "RamaK Mishra, ChangyongWei, RichardC Hresko, RichaBajpai, MoniqueHeitmeier, ShannonM Matulis, AjayK Nooka, StevenT Rosen, PaulW Hruz, GaryE Schiltz and MalaShanmugam.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 1,
+          "printedPage": "14441",
+          "nativeSection": "Title, abstract, affiliations, funding and introduction"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 2,
+          "printedPage": "14442",
+          "nativeSection": "Introduction and Experimental Procedures"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 13,
+          "printedPage": "14453",
+          "nativeSection": "References including prior CAL01 original"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q13",
+      "answer": "PublishedJBC2015June5Vol290No23pp14441\u201314453; PapersinPressApr6, receivedDec25/revisedMar27.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 1,
+          "printedPage": "14441",
+          "nativeSection": "Title, abstract, affiliations, funding and introduction"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 2,
+          "printedPage": "14442",
+          "nativeSection": "Introduction and Experimental Procedures"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 13,
+          "printedPage": "14453",
+          "nativeSection": "References including prior CAL01 original"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    },
+    {
+      "id": "Q14",
+      "answer": "{'paperId': 'REED-39edbc2be58169ee5366', 'sourceId': 'REED3-CAL-07-MAIN', 'resultIds': ['REED3-CAL-07-O01', 'REED3-CAL-07-O02', 'REED3-CAL-07-O03', 'REED3-CAL-07-O04', 'REED3-CAL-07-O05', 'REED3-CAL-07-O06', 'REED3-CAL-07-O07', 'REED3-CAL-07-O08'], 'claimIds': ['REED3-CAL-07-C01', 'REED3-CAL-07-C02', 'REED3-CAL-07-C03', 'REED3-CAL-07-C04', 'REED3-CAL-07-C05', 'REED3-CAL-07-C06', 'REED3-CAL-07-C07', 'REED3-CAL-07-C08'], 'existingGuideIds': ['G-DRUG-D02', 'G-CONDITION-C21'], 'purpose': 'Private actual compound3 10uM/Met1mM48h isolated MM-cell candidate, other GLUT4 inhibitor/docking/transport assays explicit context. No clinical regimen, invented approved lead or new profile.', 'publicationState': 'private_unapplied_candidate', 'canonicalChanges': 0, 'newIndependentTrials': 0, 'newIndependentPatients': 0}",
+      "status": "source_answer_candidate",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 7,
+          "printedPage": "14447",
+          "nativeSection": "Figure4A\u2013G and actual Met/primary-cell results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 12,
+          "printedPage": "14452",
+          "nativeSection": "Discussion and references"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending",
+      "downstreamMapping": {
+        "paperId": "REED-39edbc2be58169ee5366",
+        "sourceId": "REED3-CAL-07-MAIN",
+        "resultIds": [
+          "REED3-CAL-07-O01",
+          "REED3-CAL-07-O02",
+          "REED3-CAL-07-O03",
+          "REED3-CAL-07-O04",
+          "REED3-CAL-07-O05",
+          "REED3-CAL-07-O06",
+          "REED3-CAL-07-O07",
+          "REED3-CAL-07-O08"
+        ],
+        "claimIds": [
+          "REED3-CAL-07-C01",
+          "REED3-CAL-07-C02",
+          "REED3-CAL-07-C03",
+          "REED3-CAL-07-C04",
+          "REED3-CAL-07-C05",
+          "REED3-CAL-07-C06",
+          "REED3-CAL-07-C07",
+          "REED3-CAL-07-C08"
+        ],
+        "existingGuideIds": [
+          "G-DRUG-D02",
+          "G-CONDITION-C21"
+        ],
+        "purpose": "Private actual compound3 10uM/Met1mM48h isolated MM-cell candidate, other GLUT4 inhibitor/docking/transport assays explicit context. No clinical regimen, invented approved lead or new profile.",
+        "publicationState": "private_unapplied_candidate",
+        "canonicalChanges": 0,
+        "newIndependentTrials": 0,
+        "newIndependentPatients": 0
+      }
+    },
+    {
+      "id": "Q15",
+      "answer": "Research GLUT4 inhibitors preferentially inhibit GLUT4 overGLUT1 in tested models; actualcompound3/Met enhances isolated primary-cell cytotoxicity. Growth potency, transporter selectivity and clinical benefit remain separate.",
+      "status": "partial",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 7,
+          "printedPage": "14447",
+          "nativeSection": "Figure4A\u2013G and actual Met/primary-cell results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 12,
+          "printedPage": "14452",
+          "nativeSection": "Discussion and references"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 13,
+          "printedPage": "14453",
+          "nativeSection": "References including prior CAL01 original"
+        }
+      ],
+      "independentAudit": "pending",
+      "humanApproval": "pending"
+    }
+  ],
+  "sourceQualifications": [
+    {
+      "id": "REED3-CAL-07-Q01",
+      "description": "All13physicaltextpages andALLFig1\u201311/Table1\u20132 onphysical4\u201311read. JBC2015June5Vol290No23pp14441\u201314453,received2014Dec25/revised2015Mar27/onlineApr6. Historicalstructural/regulatoryclaimsnotverifiedcurrent2026; no externalacquisition/integritysearch.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 1,
+          "printedPage": "14441",
+          "nativeSection": "Title, abstract, affiliations, funding and introduction"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 13,
+          "printedPage": "14453",
+          "nativeSection": "References including prior CAL01 original"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-07-Q02",
+      "description": "Primarycomputationalmodelingwithculture/transporter/primarypatientexvivo validation, notowninvivoantitumororclinicaltreatmentstudy. Mouse3T3L1adipocyteLDM and ratmycGLUTsexpressedhumanHEK293 aremechanisticmodels, nottreatedmice/newhumanpatients. PriorritonavirMetMM/CLL/solidtumorfindingscitedRef12/13, notallnew experiments. Ref13matchesCAL01DalvaAydemir2015; primarydonoroverlapunadjudicated.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 2,
+          "printedPage": "14442",
+          "nativeSection": "Introduction and Experimental Procedures"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 3,
+          "printedPage": "14443",
+          "nativeSection": "Experimental Procedures and model building"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 7,
+          "printedPage": "14447",
+          "nativeSection": "Figure4A\u2013G and actual Met/primary-cell results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 8,
+          "printedPage": "14448",
+          "nativeSection": "Figures5\u20136 and photolabel/transport results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 12,
+          "printedPage": "14452",
+          "nativeSection": "Discussion and references"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 13,
+          "printedPage": "14453",
+          "nativeSection": "References including prior CAL01 original"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-07-Q03",
+      "description": "GLUT4homologymodelinitialmultitemplateGlpT/lactosepermease/EmrD becauseBLASTsingletemplatenomore30percentsimilarity; 68.7percentGLUT1/4identitylaterenablessingleGLUT1crystaltemplatecomparison. No GLUT4experimentalcrystal/co-crystal/bindingresidue-mutagenesisverification. Homologymodel/MolProbity/20nsMDSwith5pstimestepPOPCstabilitynotexperimentalbinding proof.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 1,
+          "printedPage": "14441",
+          "nativeSection": "Title, abstract, affiliations, funding and introduction"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 3,
+          "printedPage": "14443",
+          "nativeSection": "Experimental Procedures and model building"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 4,
+          "printedPage": "14444",
+          "nativeSection": "Screening workflow, Figures1\u20132"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 9,
+          "printedPage": "14449",
+          "nativeSection": "Figure7, Table2 and model comparison/docking results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 10,
+          "printedPage": "14450",
+          "nativeSection": "Figures8\u20139 and Discussion"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 11,
+          "printedPage": "14451",
+          "nativeSection": "Figures10\u201311 docking predictions"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-07-Q04",
+      "description": "VirtualZINC18millionfiltered~10millionbyPAINS/SMARTS;Glide/Surflexconsensus59scoresbelowminus7\u219232hits\u219217purchasedselectedavailability/pricing/synthetictractability. 17 compoundsnot17clinicaltrials/patients;Compound18ritonavirpositivecontrolnot18thnewhit. Table1structuresfor17+ritonavirread; compounds3/17researchleadsnotapproveddrugsubstitutes/Metidentity.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 3,
+          "printedPage": "14443",
+          "nativeSection": "Experimental Procedures and model building"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 4,
+          "printedPage": "14444",
+          "nativeSection": "Screening workflow, Figures1\u20132"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 5,
+          "printedPage": "14445",
+          "nativeSection": "Table1 chemical structures and screening results"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-07-Q05",
+      "description": "Fig3screenMTS72h5000cells/384well/triplicate/5mMglucose2mMglutamine;twofolddilutionsfrom25uMexcept6/10/17from12.5uMsolubilitylimits,oneoftwoexperimentspresented. Notall17negative/noartifactproof; differentialL363/JJN3 andKMS11GFP/GLUT1phenotypesselectcandidatesnotexclusiveGLUT4targetproof. Fig3caption490nMversusMethods490nmabsorbance typo preserved if referenced.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 2,
+          "printedPage": "14442",
+          "nativeSection": "Introduction and Experimental Procedures"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 5,
+          "printedPage": "14445",
+          "nativeSection": "Table1 chemical structures and screening results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 6,
+          "printedPage": "14446",
+          "nativeSection": "Figure3 full17-hit screen and legend"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-07-Q06",
+      "description": "Fig4ABC72hCellTiterGlo20k/96well,3/17range.39\u201350uMversusrit1.25\u2013100uM. BodygrowthIC50rangescompound3 5\u201312uM/17 6\u201310uMvsrit~40uM, notexacteachlinevaluesfromcurvedigitization. ATP/MTSproxiesnotallapoptosis, concentrationrange/assaydifferentfrom17hitscreen.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 2,
+          "printedPage": "14442",
+          "nativeSection": "Introduction and Experimental Procedures"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 5,
+          "printedPage": "14445",
+          "nativeSection": "Table1 chemical structures and screening results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 6,
+          "printedPage": "14446",
+          "nativeSection": "Figure3 full17-hit screen and legend"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 7,
+          "printedPage": "14447",
+          "nativeSection": "Figure4A\u2013G and actual Met/primary-cell results"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-07-Q07",
+      "description": "Fig4D72hAnnexinV/DAPI,11mMglucose2mMglutamine;Rit40uMversus3/17at5/10/15/20uM;JJN3more resistantthanL363, notallMMuniformdeath. No barheightdigitization or aggregatepatientdeathestimate. Figure4DcaptionmentionsKMS11butplottedbarsJJN3/L363 only, preserveplottedidentity.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 7,
+          "printedPage": "14447",
+          "nativeSection": "Figure4A\u2013G and actual Met/primary-cell results"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-07-Q08",
+      "description": "ActualMetdirectFig4EprimaryMM/plasmacellleukemiafrommarrow/peripheralblood;displayPatient1/2/3,10uMcompound3+/-1mMMet48h,AnnexinV/DAPI CD38+CD45negativegate. SamplesprocessedCD38/CD45/CD138Methods;noeachlabeldiseaseclassification/globaluniqueeligibleN/therapyhistorymapped. Cellsisolatedfrompatientnotclinicaladministration ornewclinicalbenefit. Metalone notuniformcytotoxic;combinationgreatercytotoxicitynarrativewithoutformalCI/Bliss/ZIP/Loewe/statinteraction.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 2,
+          "printedPage": "14442",
+          "nativeSection": "Introduction and Experimental Procedures"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 7,
+          "printedPage": "14447",
+          "nativeSection": "Figure4A\u2013G and actual Met/primary-cell results"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-07-Q09",
+      "description": "NormalTcellandstromalpopulationsassociatedpatientharvestminimalcytotoxicityauthorclaimdataNOTSHOWN;notallhealthyPBMCspared/quantifiedN or independentnormaltissue/exposure safetytest. No donor-specifictoxicitydenominator/humanPK/safecombinationdose. NormalGLUT4muscle/adiposephysiologicalrolescouldnotbeignored.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 7,
+          "printedPage": "14447",
+          "nativeSection": "Figure4A\u2013G and actual Met/primary-cell results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 12,
+          "printedPage": "14452",
+          "nativeSection": "Discussion and references"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-07-Q10",
+      "description": "Fig4FqPCRGLUT4mRNAnormalizedGAPDHnotproteinKDpercentage. Fig4GJJN3/L363non-targetpLKO/CshRNAversusGLUT4shRNA then72h; plottedRit20uM/compound3 8uM/17 8uM. No furthergrowthsuppressionaftertargetKDsupportson-targetcontributionbutfloor/epistasisnotmutantrescue/exclusivecellularbindingcausality oractualMetrescue.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 7,
+          "printedPage": "14447",
+          "nativeSection": "Figure4A\u2013G and actual Met/primary-cell results"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-07-Q11",
+      "description": "Fig5bindingphotolabelcompetitionuses3T3L1LDM200ug,3/17 20uM10minroomtemperature/ATBBMPA50uM;invertedmembraneorientationaccesscytoplasmicsite. LowMMGLUT4precludedbindingassessmentinmyelomacells. Photo labelblockingnotKd/co-crystal/irreversibility, preferenceoverGLUT1nottestedall14GLUTisoforms orzeroGLUT1inhibition.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 2,
+          "printedPage": "14442",
+          "nativeSection": "Introduction and Experimental Procedures"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 3,
+          "printedPage": "14443",
+          "nativeSection": "Experimental Procedures and model building"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 7,
+          "printedPage": "14447",
+          "nativeSection": "Figure4A\u2013G and actual Met/primary-cell results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 8,
+          "printedPage": "14448",
+          "nativeSection": "Figures5\u20136 and photolabel/transport results"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-07-Q12",
+      "description": "Fig6HEK293exogenousratGLUT1/4andP401Ltransport-deadGLUT4;3/17 20uM6minpretreatmentbefore50uM2H3deoxyglucose6min37C. Endogenousuptakealsoinhibited. P401Lcorrespondingcontrol/drugbackgroundsubtraction\u2192relativeGLUT4~50percentinhibition/essentiallynoGLUT1effect;GLUT4transportIC50318.9uM/1710.8uM body,distinctgrowthIC50. DeadtransporterP401Lisbackgroundcontrolnotdrug-resistantbindingmutantrescue.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 3,
+          "printedPage": "14443",
+          "nativeSection": "Experimental Procedures and model building"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 8,
+          "printedPage": "14448",
+          "nativeSection": "Figures5\u20136 and photolabel/transport results"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-07-Q13",
+      "description": "Fig7JJN3/KMS11GFPuptake20uM3/17same6+6min;transportinhibitedbothdespiteJJN3relativeviabilityresistance,17morepotent. Uptakeinhibitionnotuniformcelldeath/clinicalselectivity. DataN3meanSEnotdonorN/threeclinicaltrials.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 3,
+          "printedPage": "14443",
+          "nativeSection": "Experimental Procedures and model building"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 8,
+          "printedPage": "14448",
+          "nativeSection": "Figures5\u20136 and photolabel/transport results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 9,
+          "printedPage": "14449",
+          "nativeSection": "Figure7, Table2 and model comparison/docking results"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-07-Q14",
+      "description": "Table2all16KMS1172hgrowthIC50uM valuesread:19=20.48,21=13.16,23=20.58,24=8.82,25=35.31,26=6.67,27=9.7,29=13.98,31=21.19,33=15.44,35=7.11,36=17.00,38=literal9145,39=3.31,40=30.97,41=8.68. Compound38printed9145visuallyconfirmed\u2014not silentlyrepairedto9.145/91.45/9.45; magnitude/sourceerrorunresolved, nothighlightedasreliableclinicalestimate.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 9,
+          "printedPage": "14449",
+          "nativeSection": "Figure7, Table2 and model comparison/docking results"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-07-Q15",
+      "description": "Analogues26/39 Fig8A2uM72hAnnexinV/DAPIversus8B20uM6+6mintransportwithP401Lbackgroundsubtraction. Compound26GLUT4transportIC503.5uM/GLUT1>100uMversusgrowth6.67uM;compound39bothGLUT1/4transportaround30uMlosesselectivitydespitegrowth3.31uM. Growthpotencynotsameastransportselectivity/differentassays/dosesnotpooled.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 8,
+          "printedPage": "14448",
+          "nativeSection": "Figures5\u20136 and photolabel/transport results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 9,
+          "printedPage": "14449",
+          "nativeSection": "Figure7, Table2 and model comparison/docking results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 10,
+          "printedPage": "14450",
+          "nativeSection": "Figures8\u20139 and Discussion"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-07-Q16",
+      "description": "Model1/2overallrmsd5.2A,ligandsite2.2AinFig9(vsbodycentralchannel<2.5A);GLUT1crystalcomparisonsmodel1 5.8A/model2 2.5A;loopsmostdifferent. Notexperimentalposeagreement/clinicalbenefit, no externalcomputationalreproduction.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 9,
+          "printedPage": "14449",
+          "nativeSection": "Figure7, Table2 and model comparison/docking results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 10,
+          "printedPage": "14450",
+          "nativeSection": "Figures8\u20139 and Discussion"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-07-Q17",
+      "description": "Bodydockedcompound3proposedHBAsn176/Gln177andhydrophobicPhe307/Trp428/Phe38/Ile42;Figure10labelsAsn176/Asn427/Trp404etcnotidenticalbodyresidues. Compound17Asn176/Phe307/Trp404body/figure11context;preservedasmodelpredictionsnotmutagenesis-provencontacts orMetdocking. P401Lfunctionalcontrolnotvalidationthesebindingcontacts.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 9,
+          "printedPage": "14449",
+          "nativeSection": "Figure7, Table2 and model comparison/docking results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 11,
+          "printedPage": "14451",
+          "nativeSection": "Figures10\u201311 docking predictions"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-07-Q18",
+      "description": "Allatleast3independentdeterminationsunlessnoted/generalpairedorunpairedtwo-tailedttestP.05GraphPad/meanSE;Fig3oneoftwoandtechnicaltriplicateoverridessimpleN3claim. Globalmultiplicity/power/blinding/randomization/protocol/rawdataandfullbioreplicatehierarchyunverified\u2192Q09multiplicitypartial. No exactCI/P/pooledpatientestimatefrombars.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 3,
+          "printedPage": "14443",
+          "nativeSection": "Experimental Procedures and model building"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 6,
+          "printedPage": "14446",
+          "nativeSection": "Figure3 full17-hit screen and legend"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 7,
+          "printedPage": "14447",
+          "nativeSection": "Figure4A\u2013G and actual Met/primary-cell results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 8,
+          "printedPage": "14448",
+          "nativeSection": "Figures5\u20136 and photolabel/transport results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 9,
+          "printedPage": "14449",
+          "nativeSection": "Figure7, Table2 and model comparison/docking results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 10,
+          "printedPage": "14450",
+          "nativeSection": "Figures8\u20139 and Discussion"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-07-Q19",
+      "description": "GLUT4overGLUT1focusdoesnottestGLUT3/8/11all14isoformsofftargetproteome;2DOGuptake/MTS/ATPconfoundingandnoncompetitive/reversibleleadgoalsnotestablishednewcompoundkinetics/clinicaltherapeuticwindow. Modelhomology/crystalhistorynotcompleteexperimentalGLUT4structure.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 2,
+          "printedPage": "14442",
+          "nativeSection": "Introduction and Experimental Procedures"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 3,
+          "printedPage": "14443",
+          "nativeSection": "Experimental Procedures and model building"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 8,
+          "printedPage": "14448",
+          "nativeSection": "Figures5\u20136 and photolabel/transport results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 12,
+          "printedPage": "14452",
+          "nativeSection": "Discussion and references"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-07-Q20",
+      "description": "IRBEmoryapprovedprotocolandconsentingpatientsspecifiedmainnoID,age/sex/eligibilityfloworclinicalregimen. Noownanimalantitumor/PK/clinicaltoxicitystudy;ritonavirGLUT4KOmiceRef51citedonly. Futuremorepotent/selectivefavorablePKleadoptimizationnotcurrenttherapeuticrecommendation.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 2,
+          "printedPage": "14442",
+          "nativeSection": "Introduction and Experimental Procedures"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 12,
+          "printedPage": "14452",
+          "nativeSection": "Discussion and references"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 13,
+          "printedPage": "14453",
+          "nativeSection": "References including prior CAL01 original"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-07-Q21",
+      "description": "11authorsRamaKMishra,ChangyongWei,RichardCHresko,RichaBajpai,MoniqueHeitmeier,ShannonMMatulis,AjayKNooka,StevenTRosen,PaulWHruz,GaryESchiltz,MalaShanmugam;Northwestern/WashingtonU/CityHope/Emory. FundingACSResearchScholarRSG11-254-01-CSMtoMS,RichardSilvermanCenterresearchawardMS,NorthwesternChemCoreChicagoBiomedicalConsortium/SearleFundsChicagoCommunityTrust,NIHP30CA060553NCIRobertHLurieCenter. No explicitCOIstatementidentifiedmain(notglobalnone); reagentsRitEuroasia/compoundsChemBridge/GLUT4antibodyHruz/celllinesKuehlasreported, no independentfunder-roleaudit.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 1,
+          "printedPage": "14441",
+          "nativeSection": "Title, abstract, affiliations, funding and introduction"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 2,
+          "printedPage": "14442",
+          "nativeSection": "Introduction and Experimental Procedures"
+        }
+      ]
+    },
+    {
+      "id": "REED3-CAL-07-Q22",
+      "description": "No separateunreadcompanions/rawbinding/dockingfiles/flowgates/patientoriginalsorcurrentintegrityquery. Research18millionlibraryandassaycountsnotconditionwidecoverage. CAL01Ref13/sourcepatientoverlapnotadjudicated; candidateprivateactual10uMcompound3+1mMMetexvivoMMcontextonly, no newgrade/clinicalpatientcount/approval.",
+      "status": "retained_source_limit",
+      "sourceLocators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 12,
+          "printedPage": "14452",
+          "nativeSection": "Discussion and references"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 13,
+          "printedPage": "14453",
+          "nativeSection": "References including prior CAL01 original"
+        }
+      ]
+    }
+  ],
+  "overlapRecords": [
+    {
+      "reportId": "REED-39edbc2be58169ee5366",
+      "family": "Mishra2015GLUT4modeling",
+      "priorRitMetMM": {
+        "reference": 13,
+        "PMID": "25542900",
+        "existingCAL01ReportId": "REED reference retained through source identity, no transferred source acceptance"
+      },
+      "priorRitMetCLL": "reference12, cited only under this packet",
+      "primaryLabels": [
+        1,
+        2,
+        3
+      ],
+      "primaryDonorOverlapWithPriorRitMetStudy": "not adjudicated",
+      "technicalTriplicatesNotPatients": true,
+      "newIndependentTrialCount": 0,
+      "newIndependentPatientCount": 0,
+      "locators": [
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 2,
+          "printedPage": "14442",
+          "nativeSection": "Introduction and Experimental Procedures"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 7,
+          "printedPage": "14447",
+          "nativeSection": "Figure4A\u2013G and actual Met/primary-cell results"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 12,
+          "printedPage": "14452",
+          "nativeSection": "Discussion and references"
+        },
+        {
+          "kind": "pdf",
+          "sourceSha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+          "physicalPage": 13,
+          "printedPage": "14453",
+          "nativeSection": "References including prior CAL01 original"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "All13physicaltextpages andALLFig1\u201311/Table1\u20132 onphysical4\u201311read. JBC2015June5Vol290No23pp14441\u201314453,received2014Dec25/revised2015Mar27/onlineApr6. Historicalstructural/regulatoryclaimsnotverifiedcurrent2026; no externalacquisition/integritysearch.",
+    "Primarycomputationalmodelingwithculture/transporter/primarypatientexvivo validation, notowninvivoantitumororclinicaltreatmentstudy. Mouse3T3L1adipocyteLDM and ratmycGLUTsexpressedhumanHEK293 aremechanisticmodels, nottreatedmice/newhumanpatients. PriorritonavirMetMM/CLL/solidtumorfindingscitedRef12/13, notallnew experiments. Ref13matchesCAL01DalvaAydemir2015; primarydonoroverlapunadjudicated.",
+    "GLUT4homologymodelinitialmultitemplateGlpT/lactosepermease/EmrD becauseBLASTsingletemplatenomore30percentsimilarity; 68.7percentGLUT1/4identitylaterenablessingleGLUT1crystaltemplatecomparison. No GLUT4experimentalcrystal/co-crystal/bindingresidue-mutagenesisverification. Homologymodel/MolProbity/20nsMDSwith5pstimestepPOPCstabilitynotexperimentalbinding proof.",
+    "VirtualZINC18millionfiltered~10millionbyPAINS/SMARTS;Glide/Surflexconsensus59scoresbelowminus7\u219232hits\u219217purchasedselectedavailability/pricing/synthetictractability. 17 compoundsnot17clinicaltrials/patients;Compound18ritonavirpositivecontrolnot18thnewhit. Table1structuresfor17+ritonavirread; compounds3/17researchleadsnotapproveddrugsubstitutes/Metidentity.",
+    "Fig3screenMTS72h5000cells/384well/triplicate/5mMglucose2mMglutamine;twofolddilutionsfrom25uMexcept6/10/17from12.5uMsolubilitylimits,oneoftwoexperimentspresented. Notall17negative/noartifactproof; differentialL363/JJN3 andKMS11GFP/GLUT1phenotypesselectcandidatesnotexclusiveGLUT4targetproof. Fig3caption490nMversusMethods490nmabsorbance typo preserved if referenced.",
+    "Fig4ABC72hCellTiterGlo20k/96well,3/17range.39\u201350uMversusrit1.25\u2013100uM. BodygrowthIC50rangescompound3 5\u201312uM/17 6\u201310uMvsrit~40uM, notexacteachlinevaluesfromcurvedigitization. ATP/MTSproxiesnotallapoptosis, concentrationrange/assaydifferentfrom17hitscreen.",
+    "Fig4D72hAnnexinV/DAPI,11mMglucose2mMglutamine;Rit40uMversus3/17at5/10/15/20uM;JJN3more resistantthanL363, notallMMuniformdeath. No barheightdigitization or aggregatepatientdeathestimate. Figure4DcaptionmentionsKMS11butplottedbarsJJN3/L363 only, preserveplottedidentity.",
+    "ActualMetdirectFig4EprimaryMM/plasmacellleukemiafrommarrow/peripheralblood;displayPatient1/2/3,10uMcompound3+/-1mMMet48h,AnnexinV/DAPI CD38+CD45negativegate. SamplesprocessedCD38/CD45/CD138Methods;noeachlabeldiseaseclassification/globaluniqueeligibleN/therapyhistorymapped. Cellsisolatedfrompatientnotclinicaladministration ornewclinicalbenefit. Metalone notuniformcytotoxic;combinationgreatercytotoxicitynarrativewithoutformalCI/Bliss/ZIP/Loewe/statinteraction.",
+    "NormalTcellandstromalpopulationsassociatedpatientharvestminimalcytotoxicityauthorclaimdataNOTSHOWN;notallhealthyPBMCspared/quantifiedN or independentnormaltissue/exposure safetytest. No donor-specifictoxicitydenominator/humanPK/safecombinationdose. NormalGLUT4muscle/adiposephysiologicalrolescouldnotbeignored.",
+    "Fig4FqPCRGLUT4mRNAnormalizedGAPDHnotproteinKDpercentage. Fig4GJJN3/L363non-targetpLKO/CshRNAversusGLUT4shRNA then72h; plottedRit20uM/compound3 8uM/17 8uM. No furthergrowthsuppressionaftertargetKDsupportson-targetcontributionbutfloor/epistasisnotmutantrescue/exclusivecellularbindingcausality oractualMetrescue.",
+    "Fig5bindingphotolabelcompetitionuses3T3L1LDM200ug,3/17 20uM10minroomtemperature/ATBBMPA50uM;invertedmembraneorientationaccesscytoplasmicsite. LowMMGLUT4precludedbindingassessmentinmyelomacells. Photo labelblockingnotKd/co-crystal/irreversibility, preferenceoverGLUT1nottestedall14GLUTisoforms orzeroGLUT1inhibition.",
+    "Fig6HEK293exogenousratGLUT1/4andP401Ltransport-deadGLUT4;3/17 20uM6minpretreatmentbefore50uM2H3deoxyglucose6min37C. Endogenousuptakealsoinhibited. P401Lcorrespondingcontrol/drugbackgroundsubtraction\u2192relativeGLUT4~50percentinhibition/essentiallynoGLUT1effect;GLUT4transportIC50318.9uM/1710.8uM body,distinctgrowthIC50. DeadtransporterP401Lisbackgroundcontrolnotdrug-resistantbindingmutantrescue.",
+    "Fig7JJN3/KMS11GFPuptake20uM3/17same6+6min;transportinhibitedbothdespiteJJN3relativeviabilityresistance,17morepotent. Uptakeinhibitionnotuniformcelldeath/clinicalselectivity. DataN3meanSEnotdonorN/threeclinicaltrials.",
+    "Table2all16KMS1172hgrowthIC50uM valuesread:19=20.48,21=13.16,23=20.58,24=8.82,25=35.31,26=6.67,27=9.7,29=13.98,31=21.19,33=15.44,35=7.11,36=17.00,38=literal9145,39=3.31,40=30.97,41=8.68. Compound38printed9145visuallyconfirmed\u2014not silentlyrepairedto9.145/91.45/9.45; magnitude/sourceerrorunresolved, nothighlightedasreliableclinicalestimate.",
+    "Analogues26/39 Fig8A2uM72hAnnexinV/DAPIversus8B20uM6+6mintransportwithP401Lbackgroundsubtraction. Compound26GLUT4transportIC503.5uM/GLUT1>100uMversusgrowth6.67uM;compound39bothGLUT1/4transportaround30uMlosesselectivitydespitegrowth3.31uM. Growthpotencynotsameastransportselectivity/differentassays/dosesnotpooled.",
+    "Model1/2overallrmsd5.2A,ligandsite2.2AinFig9(vsbodycentralchannel<2.5A);GLUT1crystalcomparisonsmodel1 5.8A/model2 2.5A;loopsmostdifferent. Notexperimentalposeagreement/clinicalbenefit, no externalcomputationalreproduction.",
+    "Bodydockedcompound3proposedHBAsn176/Gln177andhydrophobicPhe307/Trp428/Phe38/Ile42;Figure10labelsAsn176/Asn427/Trp404etcnotidenticalbodyresidues. Compound17Asn176/Phe307/Trp404body/figure11context;preservedasmodelpredictionsnotmutagenesis-provencontacts orMetdocking. P401Lfunctionalcontrolnotvalidationthesebindingcontacts.",
+    "Allatleast3independentdeterminationsunlessnoted/generalpairedorunpairedtwo-tailedttestP.05GraphPad/meanSE;Fig3oneoftwoandtechnicaltriplicateoverridessimpleN3claim. Globalmultiplicity/power/blinding/randomization/protocol/rawdataandfullbioreplicatehierarchyunverified\u2192Q09multiplicitypartial. No exactCI/P/pooledpatientestimatefrombars.",
+    "GLUT4overGLUT1focusdoesnottestGLUT3/8/11all14isoformsofftargetproteome;2DOGuptake/MTS/ATPconfoundingandnoncompetitive/reversibleleadgoalsnotestablishednewcompoundkinetics/clinicaltherapeuticwindow. Modelhomology/crystalhistorynotcompleteexperimentalGLUT4structure.",
+    "IRBEmoryapprovedprotocolandconsentingpatientsspecifiedmainnoID,age/sex/eligibilityfloworclinicalregimen. Noownanimalantitumor/PK/clinicaltoxicitystudy;ritonavirGLUT4KOmiceRef51citedonly. Futuremorepotent/selectivefavorablePKleadoptimizationnotcurrenttherapeuticrecommendation.",
+    "11authorsRamaKMishra,ChangyongWei,RichardCHresko,RichaBajpai,MoniqueHeitmeier,ShannonMMatulis,AjayKNooka,StevenTRosen,PaulWHruz,GaryESchiltz,MalaShanmugam;Northwestern/WashingtonU/CityHope/Emory. FundingACSResearchScholarRSG11-254-01-CSMtoMS,RichardSilvermanCenterresearchawardMS,NorthwesternChemCoreChicagoBiomedicalConsortium/SearleFundsChicagoCommunityTrust,NIHP30CA060553NCIRobertHLurieCenter. No explicitCOIstatementidentifiedmain(notglobalnone); reagentsRitEuroasia/compoundsChemBridge/GLUT4antibodyHruz/celllinesKuehlasreported, no independentfunder-roleaudit.",
+    "No separateunreadcompanions/rawbinding/dockingfiles/flowgates/patientoriginalsorcurrentintegrityquery. Research18millionlibraryandassaycountsnotconditionwidecoverage. CAL01Ref13/sourcepatientoverlapnotadjudicated; candidateprivateactual10uMcompound3+1mMMetexvivoMMcontextonly, no newgrade/clinicalpatientcount/approval."
+  ],
+  "newIndependentTrials": 0,
+  "newIndependentPatients": 0,
+  "scientificAcceptance": false,
+  "humanApproval": false,
+  "released": false
+}
