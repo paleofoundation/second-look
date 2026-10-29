@@ -181,9 +181,9 @@ const faqHtml = metforminArticle.slice(metforminArticle.indexOf('id="faqs"'), me
 const mechanism = drugMechanismFor(metformin);
 assert(mechanism?.originalAction?.text, 'Metformin has a sourced original action');
 assert(textOf(mechanismHtml).includes(mechanism.originalAction.sentences[0].text));
-assert.equal((mechanismHtml.match(/<details\b/g) || []).length, 4, 'Metformin has four pathway disclosures');
+assert.equal((mechanismHtml.match(/<details\b/g) || []).length, 9, 'Metformin has nine pathway disclosures');
 assert(!/<details\b[^>]*\bopen(?:\s|=|>)/.test(mechanismHtml), 'Pathway disclosures start collapsed');
-assert.equal(mechanism.pathways.length, 4, 'Metformin explains its four principal mechanism themes, including complex I');
+assert.equal(mechanism.pathways.length, 9, 'Metformin explains its nine principal mechanism themes, including complex I, mGPDH, gut, GDF15, lactate and NF-kB');
 assert.equal(mechanism.rationales.length, 10, 'Metformin distinguishes mechanisms, measurements and limits across conditions');
 assert.equal((mechanismHtml.split('class="rgbc-faq-block mechanism-pathway-disclosures"')[0].match(/<p(?:\s|>)/g) || []).length, 1, 'Mechanism introduction is one cohesive paragraph');
 for (const pathway of mechanism.pathways) {
