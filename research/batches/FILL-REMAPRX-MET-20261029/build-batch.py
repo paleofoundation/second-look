@@ -57,7 +57,11 @@ new_sources = [
         "url": "https://pubmed.ncbi.nlm.nih.gov/10839993/",
         "year": 2000,
         "pmid": "10839993",
-        "authors": "Owen MR, Doran E, Halestrap AP",
+        "authors": [
+            "Owen MR",
+            "Doran E",
+            "Halestrap AP"
+        ],
         "design": "Preclinical: hepatoma cell-line and isolated rat hepatocyte experiments",
         "population": "Hepatoma cell lines and rat hepatocytes (preclinical, non-clinical)",
         "sourceType": "primary",
@@ -76,7 +80,14 @@ new_sources = [
         "year": 2000,
         "pmid": "10617608",
         "doi": "10.1074/jbc.275.1.223",
-        "authors": "El-Mir MY, Nogueira V, Fontaine E, Averet N, Rigoulet M, Leverve X",
+        "authors": [
+            "El-Mir MY",
+            "Nogueira V",
+            "Fontaine E",
+            "Averet N",
+            "Rigoulet M",
+            "Leverve X"
+        ],
         "design": "Preclinical: hepatocyte respiration and cell-permeabilization experiments",
         "population": "Isolated rat hepatocytes and sub-cellular fractions (preclinical, non-clinical)",
         "sourceType": "primary",
@@ -95,7 +106,11 @@ new_sources = [
         "year": 2021,
         "pmid": "33887354",
         "doi": "10.1016/j.diabres.2021.108824",
-        "authors": "Abrilla AA, Pajes ANNI, Jimeno CA",
+        "authors": [
+            "Abrilla AA",
+            "Pajes ANNI",
+            "Jimeno CA"
+        ],
         "design": "Systematic review and meta-analysis of 9 randomized controlled trials",
         "population": "2,609 adults with type 2 diabetes",
         "n": 2609,
@@ -116,7 +131,13 @@ new_sources = [
         "year": 2014,
         "pmid": "25536258",
         "doi": "10.1001/jama.2014.15298",
-        "authors": "Inzucchi SE, Lipska KJ, Mayo H, Bailey CJ, McGuire DK",
+        "authors": [
+            "Inzucchi SE",
+            "Lipska KJ",
+            "Mayo H",
+            "Bailey CJ",
+            "McGuire DK"
+        ],
         "design": "Systematic review",
         "population": "Adults with type 2 diabetes and chronic kidney disease",
         "sourceType": "primary",
