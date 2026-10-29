@@ -157,621 +157,6 @@
       ]
     },
     {
-      "drugId": "D01",
-      "presentation": "pathway-table-pilot",
-      "originalAction": {
-        "text": "Metformin’s established glucose-lowering action combines reduced glucose production by the liver, reduced intestinal glucose absorption and improved uptake and use of glucose by tissues. It improves insulin sensitivity without stimulating insulin secretion. Repurposing research asks whether changes in cellular energy sensing, growth signals and the handling of damaged cellular material can be useful beyond diabetes. AMPK is an energy-sensing enzyme, while mTOR signaling helps regulate protein production and cell growth; altering these systems can have different consequences in infected cells, tumors and healthy muscle. The evidence below distinguishes effects measured in experimental models from proposed explanations and from clinical outcomes, because demonstrating a pathway change does not establish that a treatment helps patients.",
-        "sourceIds": [
-          "MF-LABEL-2025",
-          "MF-PD-MECHANISM-2016",
-          "MF-COVID-VIRAL-2024",
-          "MF-MASTERS-2019",
-          "MF-MYELOMA-MODELS-2018",
-          "CP017",
-          "COND-C15-MA32-2022"
-        ],
-        "sentences": [
-          {
-            "text": "Metformin’s established glucose-lowering action combines reduced glucose production by the liver, reduced intestinal glucose absorption and improved uptake and use of glucose by tissues. It improves insulin sensitivity without stimulating insulin secretion.",
-            "sources": [
-              "MF-LABEL-2025"
-            ]
-          },
-          {
-            "text": "Repurposing research asks whether changes in cellular energy sensing, growth signals and the handling of damaged cellular material can be useful beyond diabetes. AMPK is an energy-sensing enzyme, while mTOR signaling helps regulate protein production and cell growth; altering these systems can have different consequences in infected cells, tumors and healthy muscle.",
-            "sources": [
-              "MF-PD-MECHANISM-2016",
-              "MF-COVID-VIRAL-2024",
-              "MF-MASTERS-2019",
-              "MF-MYELOMA-MODELS-2018"
-            ]
-          },
-          {
-            "text": "The evidence below distinguishes effects measured in experimental models from proposed explanations and from clinical outcomes, because demonstrating a pathway change does not establish that a treatment helps patients.",
-            "sources": [
-              "MF-PD-MECHANISM-2016",
-              "CP017",
-              "COND-C15-MA32-2022"
-            ]
-          }
-        ]
-      },
-      "pathways": [
-        {
-          "id": "metformin-insulin-growth",
-          "title": "Insulin sensitivity and growth signaling",
-          "text": "Improving insulin sensitivity is part of metformin’s established action in diabetes. In cancer repurposing, reducing insulin-related growth stimulation is one proposed route to benefit. The MA.32 breast-cancer trial measured changes in insulin, weight and other metabolic factors, but its clinical report did not show improved invasive disease-free survival. These findings distinguish a measured metabolic effect from an unconfirmed anticancer benefit.",
-          "sourceIds": [
-            "MF-LABEL-2025",
-            "COND-C15-MA32-METABOLIC",
-            "COND-C15-MA32-2022"
-          ],
-          "sentences": [
-            {
-              "text": "Improving insulin sensitivity is part of metformin’s established action in diabetes. In cancer repurposing, reducing insulin-related growth stimulation is one proposed route to benefit.",
-              "sources": [
-                "MF-LABEL-2025",
-                "COND-C15-MA32-METABOLIC"
-              ]
-            },
-            {
-              "text": "The MA.32 breast-cancer trial measured changes in insulin, weight and other metabolic factors, but its clinical report did not show improved invasive disease-free survival. These findings distinguish a measured metabolic effect from an unconfirmed anticancer benefit.",
-              "sources": [
-                "COND-C15-MA32-METABOLIC",
-                "COND-C15-MA32-2022"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "metformin-ampk-mtor",
-          "title": "AMPK, mTOR and the balance between energy use and growth",
-          "text": "AMPK activation and reduced mTOR signaling provide a rationale for changing cell growth and protein production. In myeloma cell lines and mouse xenografts, metformin activated AMPK, suppressed mTORC1 and mTORC2 signaling, and was associated with autophagy, cell-cycle arrest and reduced tumor growth. In viral infection, suppression of host-cell protein production is a proposed explanation for reduced SARS-CoV-2 replication; the COVID-OUT nasal-swab study measured viral RNA rather than directly proving that mTOR mediated the reduction in viral RNA. The same growth-related pathways also matter in healthy tissue: mTORC1 supports muscle growth, and metformin reduced muscle gains during resistance training in the MASTERS trial. A mechanism that appears useful in one setting can therefore work against the intended outcome in another.",
-          "sourceIds": [
-            "MF-MYELOMA-MODELS-2018",
-            "MF-COVID-VIRAL-2024",
-            "MF-MASTERS-2019"
-          ],
-          "sentences": [
-            {
-              "text": "AMPK activation and reduced mTOR signaling provide a rationale for changing cell growth and protein production. In myeloma cell lines and mouse xenografts, metformin activated AMPK, suppressed mTORC1 and mTORC2 signaling, and was associated with autophagy, cell-cycle arrest and reduced tumor growth.",
-              "sources": [
-                "MF-MYELOMA-MODELS-2018"
-              ]
-            },
-            {
-              "text": "In viral infection, suppression of host-cell protein production is a proposed explanation for reduced SARS-CoV-2 replication; the COVID-OUT nasal-swab study measured viral RNA rather than directly proving that mTOR mediated the reduction in viral RNA.",
-              "sources": [
-                "MF-COVID-VIRAL-2024"
-              ]
-            },
-            {
-              "text": "The same growth-related pathways also matter in healthy tissue: mTORC1 supports muscle growth, and metformin reduced muscle gains during resistance training in the MASTERS trial. A mechanism that appears useful in one setting can therefore work against the intended outcome in another.",
-              "sources": [
-                "MF-MASTERS-2019"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "autophagy-causality",
-          "title": "Autophagy and mitochondrial stress",
-          "text": "Autophagy is the cell’s process for recycling cellular material. In Parkinson’s disease cell and mouse models, metformin was associated with AMPK activation and autophagy, less mitochondrial oxidative stress and reduced accumulation of alpha-synuclein. Blocking AMPK or autophagy weakened protection in toxin-injured cells, supporting a contribution from these pathways within that model. Inhibitor specificity, the experimental exposure and the difference between toxin injury and human disease limit translation; these experiments do not establish that metformin slows Parkinson’s disease in people.",
-          "sourceIds": [
-            "MF-PD-MECHANISM-2016"
-          ],
-          "sentences": [
-            {
-              "text": "Autophagy is the cell’s process for recycling cellular material. In Parkinson’s disease cell and mouse models, metformin was associated with AMPK activation and autophagy, less mitochondrial oxidative stress and reduced accumulation of alpha-synuclein.",
-              "sources": [
-                "MF-PD-MECHANISM-2016"
-              ]
-            },
-            {
-              "text": "Blocking AMPK or autophagy weakened protection in toxin-injured cells, supporting a contribution from these pathways within that model. Inhibitor specificity, the experimental exposure and the difference between toxin injury and human disease limit translation; these experiments do not establish that metformin slows Parkinson’s disease in people.",
-              "sources": [
-                "MF-PD-MECHANISM-2016"
-              ]
-            }
-          ]
-        }
-      ],
-      "rationales": [
-        {
-          "id": "metformin-mechanism-1",
-          "condition": "Acute COVID-19 and Long COVID",
-          "conditionHref": "/conditions/long-covid",
-          "rationale": {
-            "text": "Proposed: suppression of mTOR-dependent host-cell protein production could reduce viral replication during early infection.",
-            "sourceIds": [
-              "MF-COVID-VIRAL-2024"
-            ],
-            "sentences": [
-              {
-                "text": "Proposed: suppression of mTOR-dependent host-cell protein production could reduce viral replication during early infection.",
-                "sources": [
-                  "MF-COVID-VIRAL-2024"
-                ]
-              }
-            ]
-          },
-          "tested": {
-            "text": "Measured: the COVID-OUT nasal-swab study found lower average viral RNA during acute infection with metformin than with placebo.",
-            "sourceIds": [
-              "MF-COVID-VIRAL-2024"
-            ],
-            "sentences": [
-              {
-                "text": "Measured: the COVID-OUT nasal-swab study found lower average viral RNA during acute infection with metformin than with placebo.",
-                "sources": [
-                  "MF-COVID-VIRAL-2024"
-                ]
-              }
-            ]
-          },
-          "limits": {
-            "text": "Viral RNA does not prove the pathway responsible or establish treatment benefit after Long COVID has developed. Prevention and treatment trials address different questions.",
-            "sourceIds": [
-              "MF-COVID-VIRAL-2024",
-              "P-COVIDOUT-2023",
-              "P-KOREA-2026"
-            ],
-            "sentences": [
-              {
-                "text": "Viral RNA does not prove the pathway responsible or establish treatment benefit after Long COVID has developed. Prevention and treatment trials address different questions.",
-                "sources": [
-                  "MF-COVID-VIRAL-2024",
-                  "P-COVIDOUT-2023",
-                  "P-KOREA-2026"
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "id": "metformin-mechanism-2",
-          "condition": "Parkinson’s disease",
-          "conditionHref": "/conditions/parkinson-disease",
-          "rationale": {
-            "text": "Proposed: protecting dopamine-producing nerve cells through AMPK, autophagy and reduced inflammatory and mitochondrial stress.",
-            "sourceIds": [
-              "MF-PD-MECHANISM-2016"
-            ],
-            "sentences": [
-              {
-                "text": "Proposed: protecting dopamine-producing nerve cells through AMPK, autophagy and reduced inflammatory and mitochondrial stress.",
-                "sources": [
-                  "MF-PD-MECHANISM-2016"
-                ]
-              }
-            ]
-          },
-          "tested": {
-            "text": "Cell and mouse experiments measured pathway and injury-related effects; a human pilot tested metformin alongside levodopa/carbidopa and measured symptoms and blood markers.",
-            "sourceIds": [
-              "MF-PD-MECHANISM-2016",
-              "CP016"
-            ],
-            "sentences": [
-              {
-                "text": "Cell and mouse experiments measured pathway and injury-related effects; a human pilot tested metformin alongside levodopa/carbidopa and measured symptoms and blood markers.",
-                "sources": [
-                  "MF-PD-MECHANISM-2016",
-                  "CP016"
-                ]
-              }
-            ]
-          },
-          "limits": {
-            "text": "Blood-marker changes do not demonstrate the same mechanism in brain tissue. The pilot did not establish a between-group benefit on total UPDRS or slower disease progression.",
-            "sourceIds": [
-              "CP016"
-            ],
-            "sentences": [
-              {
-                "text": "Blood-marker changes do not demonstrate the same mechanism in brain tissue. The pilot did not establish a between-group benefit on total UPDRS or slower disease progression.",
-                "sources": [
-                  "CP016"
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "id": "metformin-mechanism-3",
-          "condition": "Cognition in schizophrenia",
-          "conditionHref": "/conditions/schizophrenia",
-          "rationale": {
-            "text": "Proposed: altered energy metabolism could affect brain networks involved in memory. The tricarboxylic acid cycle helps cells convert nutrients into usable energy.",
-            "sourceIds": [
-              "CP017"
-            ],
-            "sentences": [
-              {
-                "text": "Proposed: altered energy metabolism could affect brain networks involved in memory. The tricarboxylic acid cycle helps cells convert nutrients into usable energy.",
-                "sources": [
-                  "CP017"
-                ]
-              }
-            ]
-          },
-          "tested": {
-            "text": "An exploratory analysis linked blood-metabolite changes with working memory, verbal learning and hippocampal connectivity during treatment.",
-            "sourceIds": [
-              "CP017"
-            ],
-            "sentences": [
-              {
-                "text": "An exploratory analysis linked blood-metabolite changes with working memory, verbal learning and hippocampal connectivity during treatment.",
-                "sources": [
-                  "CP017"
-                ]
-              }
-            ]
-          },
-          "limits": {
-            "text": "These are associations from an analysis of the existing trial, not an independent efficacy trial or a direct measurement of energy production in the brain.",
-            "sourceIds": [
-              "CP017",
-              "MF-SCHIZOPHRENIA-PARENT-2023"
-            ],
-            "sentences": [
-              {
-                "text": "These are associations from an analysis of the existing trial, not an independent efficacy trial or a direct measurement of energy production in the brain.",
-                "sources": [
-                  "CP017",
-                  "MF-SCHIZOPHRENIA-PARENT-2023"
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "id": "metformin-mechanism-4",
-          "condition": "Muscle aging and sarcopenia",
-          "conditionHref": "/conditions/sarcopenia",
-          "rationale": {
-            "text": "Proposed: modifying inflammation and energy sensing could preserve muscle function, but AMPK-related restraint of mTORC1 could also reduce muscle growth.",
-            "sourceIds": [
-              "MF-MASTERS-2019"
-            ],
-            "sentences": [
-              {
-                "text": "Proposed: modifying inflammation and energy sensing could preserve muscle function, but AMPK-related restraint of mTORC1 could also reduce muscle growth.",
-                "sources": [
-                  "MF-MASTERS-2019"
-                ]
-              }
-            ]
-          },
-          "tested": {
-            "text": "MASTERS examined metformin during resistance training in older adults and found smaller gains in lean and thigh muscle mass.",
-            "sourceIds": [
-              "MF-MASTERS-2019"
-            ],
-            "sentences": [
-              {
-                "text": "MASTERS examined metformin during resistance training in older adults and found smaller gains in lean and thigh muscle mass.",
-                "sources": [
-                  "MF-MASTERS-2019"
-                ]
-              }
-            ]
-          },
-          "limits": {
-            "text": "Muscle growth and physical function are distinct outcomes. These results do not establish a sarcopenia benefit; MET-PREVENT found no walking-speed improvement.",
-            "sourceIds": [
-              "MF-MASTERS-2019",
-              "MF-METPREVENT-2025"
-            ],
-            "sentences": [
-              {
-                "text": "Muscle growth and physical function are distinct outcomes. These results do not establish a sarcopenia benefit; MET-PREVENT found no walking-speed improvement.",
-                "sources": [
-                  "MF-MASTERS-2019",
-                  "MF-METPREVENT-2025"
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "id": "metformin-prostate-mechanism",
-          "condition": "Prostate cancer",
-          "conditionHref": "/conditions/prostate-cancer",
-          "rationale": {
-            "text": "Proposed: improve metabolic health during androgen deprivation, which can worsen metabolic risk.",
-            "sourceIds": [
-              "MF-STAMPEDE-2025"
-            ],
-            "sentences": [
-              {
-                "text": "Proposed: improve metabolic health during androgen deprivation, which can worsen metabolic risk.",
-                "sources": [
-                  "MF-STAMPEDE-2025"
-                ]
-              }
-            ]
-          },
-          "tested": {
-            "text": "STAMPEDE tested metformin with standard treatment and measured metabolic and cancer outcomes.",
-            "sourceIds": [
-              "MF-STAMPEDE-2025"
-            ],
-            "sentences": [
-              {
-                "text": "STAMPEDE tested metformin with standard treatment and measured metabolic and cancer outcomes.",
-                "sources": [
-                  "MF-STAMPEDE-2025"
-                ]
-              }
-            ]
-          },
-          "limits": {
-            "text": "Improved metabolic outcomes did not establish a significant overall survival benefit or a direct tumor-killing mechanism.",
-            "sourceIds": [
-              "MF-STAMPEDE-2025"
-            ],
-            "sentences": [
-              {
-                "text": "Improved metabolic outcomes did not establish a significant overall survival benefit or a direct tumor-killing mechanism.",
-                "sources": [
-                  "MF-STAMPEDE-2025"
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "id": "metformin-cancer-energy",
-          "condition": "Non-small-cell lung cancer",
-          "conditionHref": "/conditions/non-small-cell-lung-cancer",
-          "rationale": {
-            "text": "Proposed: alter tumor metabolism to increase sensitivity to chemoradiation.",
-            "sourceIds": [
-              "MF-NRG-LU001-2021",
-              "MF-ALMERA-2021"
-            ],
-            "sentences": [
-              {
-                "text": "Proposed: alter tumor metabolism to increase sensitivity to chemoradiation.",
-                "sources": [
-                  "MF-NRG-LU001-2021",
-                  "MF-ALMERA-2021"
-                ]
-              }
-            ]
-          },
-          "tested": {
-            "text": "NRG-LU001 and OCOG-ALMERA tested metformin added to chemoradiation in randomized trials.",
-            "sourceIds": [
-              "MF-NRG-LU001-2021",
-              "MF-ALMERA-2021"
-            ],
-            "sentences": [
-              {
-                "text": "NRG-LU001 and OCOG-ALMERA tested metformin added to chemoradiation in randomized trials.",
-                "sources": [
-                  "MF-NRG-LU001-2021",
-                  "MF-ALMERA-2021"
-                ]
-              }
-            ]
-          },
-          "limits": {
-            "text": "NRG-LU001 found no benefit; the small ALMERA trial reported worse survival estimates with metformin. Testing a combination does not establish that the proposed metabolic pathway mediated its results.",
-            "sourceIds": [
-              "MF-NRG-LU001-2021",
-              "MF-ALMERA-2021"
-            ],
-            "sentences": [
-              {
-                "text": "NRG-LU001 found no benefit; the small ALMERA trial reported worse survival estimates with metformin. Testing a combination does not establish that the proposed metabolic pathway mediated its results.",
-                "sources": [
-                  "MF-NRG-LU001-2021",
-                  "MF-ALMERA-2021"
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "id": "metformin-breast-mechanism",
-          "condition": "Breast cancer",
-          "conditionHref": "/conditions/breast-cancer",
-          "rationale": {
-            "text": "Proposed: lower insulin-related signaling could reduce growth stimulation in some tumors.",
-            "sourceIds": [
-              "COND-C15-MA32-METABOLIC"
-            ],
-            "sentences": [
-              {
-                "text": "Proposed: lower insulin-related signaling could reduce growth stimulation in some tumors.",
-                "sources": [
-                  "COND-C15-MA32-METABOLIC"
-                ]
-              }
-            ]
-          },
-          "tested": {
-            "text": "MA.32 measured insulin, weight and other metabolic changes as well as invasive disease-free survival.",
-            "sourceIds": [
-              "COND-C15-MA32-METABOLIC",
-              "COND-C15-MA32-2022"
-            ],
-            "sentences": [
-              {
-                "text": "MA.32 measured insulin, weight and other metabolic changes as well as invasive disease-free survival.",
-                "sources": [
-                  "COND-C15-MA32-METABOLIC",
-                  "COND-C15-MA32-2022"
-                ]
-              }
-            ]
-          },
-          "limits": {
-            "text": "Metabolic improvements did not translate into improved invasive disease-free survival in the clinical report.",
-            "sourceIds": [
-              "COND-C15-MA32-2022"
-            ],
-            "sentences": [
-              {
-                "text": "Metabolic improvements did not translate into improved invasive disease-free survival in the clinical report.",
-                "sources": [
-                  "COND-C15-MA32-2022"
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "id": "metformin-colorectal-mechanism",
-          "condition": "Colorectal adenoma prevention",
-          "conditionHref": "/conditions/colorectal-cancer",
-          "rationale": {
-            "text": "Rationale: suppress epithelial proliferation as a possible route to reducing new colorectal lesions.",
-            "sourceIds": [
-              "MF-COLON-MECHANISM-2010"
-            ],
-            "sentences": [
-              {
-                "text": "Rationale: suppress epithelial proliferation as a possible route to reducing new colorectal lesions.",
-                "sources": [
-                  "MF-COLON-MECHANISM-2010"
-                ]
-              }
-            ]
-          },
-          "tested": {
-            "text": "Short-term human research measured reduced proliferation and fewer aberrant crypt foci; a later trial measured adenoma recurrence after polyp removal.",
-            "sourceIds": [
-              "MF-COLON-MECHANISM-2010",
-              "MF-ADENOMA-2016"
-            ],
-            "sentences": [
-              {
-                "text": "Short-term human research measured reduced proliferation and fewer aberrant crypt foci; a later trial measured adenoma recurrence after polyp removal.",
-                "sources": [
-                  "MF-COLON-MECHANISM-2010",
-                  "MF-ADENOMA-2016"
-                ]
-              }
-            ]
-          },
-          "limits": {
-            "text": "These endpoints concern early lesions and recurrence prevention. They do not establish treatment efficacy or a survival benefit in established colorectal cancer.",
-            "sourceIds": [
-              "MF-COLON-MECHANISM-2010",
-              "MF-ADENOMA-2016"
-            ],
-            "sentences": [
-              {
-                "text": "These endpoints concern early lesions and recurrence prevention. They do not establish treatment efficacy or a survival benefit in established colorectal cancer.",
-                "sources": [
-                  "MF-COLON-MECHANISM-2010",
-                  "MF-ADENOMA-2016"
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "id": "metformin-pancreatic-mechanism",
-          "condition": "Pancreatic cancer",
-          "conditionHref": "/conditions/pancreatic-cancer",
-          "rationale": {
-            "text": "Proposed: induce metabolic stress in tumor cells and modify insulin-related growth signals.",
-            "sourceIds": [
-              "COND-C17-MET-2015"
-            ],
-            "sentences": [
-              {
-                "text": "Proposed: induce metabolic stress in tumor cells and modify insulin-related growth signals.",
-                "sources": [
-                  "COND-C17-MET-2015"
-                ]
-              }
-            ]
-          },
-          "tested": {
-            "text": "A randomized trial tested metformin alongside gemcitabine and erlotinib.",
-            "sourceIds": [
-              "COND-C17-MET-2015"
-            ],
-            "sentences": [
-              {
-                "text": "A randomized trial tested metformin alongside gemcitabine and erlotinib.",
-                "sources": [
-                  "COND-C17-MET-2015"
-                ]
-              }
-            ]
-          },
-          "limits": {
-            "text": "The combination did not improve survival. The proposed mechanism remains distinct from a demonstrated treatment benefit.",
-            "sourceIds": [
-              "COND-C17-MET-2015"
-            ],
-            "sentences": [
-              {
-                "text": "The combination did not improve survival. The proposed mechanism remains distinct from a demonstrated treatment benefit.",
-                "sources": [
-                  "COND-C17-MET-2015"
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "id": "metformin-myeloma-mechanism",
-          "condition": "Multiple myeloma",
-          "conditionHref": "/conditions/multiple-myeloma",
-          "rationale": {
-            "text": "Measured in models: AMPK activation and suppression of mTORC1/mTORC2, with autophagy and cell-cycle arrest.",
-            "sourceIds": [
-              "MF-MYELOMA-MODELS-2018"
-            ],
-            "sentences": [
-              {
-                "text": "Measured in models: AMPK activation and suppression of mTORC1/mTORC2, with autophagy and cell-cycle arrest.",
-                "sources": [
-                  "MF-MYELOMA-MODELS-2018"
-                ]
-              }
-            ]
-          },
-          "tested": {
-            "text": "Cell lines and mouse xenografts showed reduced tumor-cell growth.",
-            "sourceIds": [
-              "MF-MYELOMA-MODELS-2018"
-            ],
-            "sentences": [
-              {
-                "text": "Cell lines and mouse xenografts showed reduced tumor-cell growth.",
-                "sources": [
-                  "MF-MYELOMA-MODELS-2018"
-                ]
-              }
-            ]
-          },
-          "limits": {
-            "text": "These experimental models do not establish effective human exposure, clinical dosing or patient benefit.",
-            "sourceIds": [
-              "MF-MYELOMA-MODELS-2018"
-            ],
-            "sentences": [
-              {
-                "text": "These experimental models do not establish effective human exposure, clinical dosing or patient benefit.",
-                "sources": [
-                  "MF-MYELOMA-MODELS-2018"
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
       "drugId": "D02",
       "originalAction": {
         "text": "Fluvoxamine blocks serotonin reuptake, increasing serotonin signaling; its labeled use is obsessive-compulsive disorder.",
@@ -1412,433 +797,6 @@
               ]
             }
           ]
-        }
-      ],
-      "rationales": [
-        {
-          "id": "ovarian",
-          "condition": "Ovarian clear cell carcinoma",
-          "rationale": {
-            "text": "Hedgehog signaling, blood-vessel growth and drug transport involved in resistance.",
-            "sourceIds": [
-              "COND-C03-ITRA-2014",
-              "P-D07-PANCREAS-2015"
-            ],
-            "sentences": [
-              {
-                "text": "Hedgehog signaling, blood-vessel growth and drug transport involved in resistance.",
-                "sources": [
-                  "COND-C03-ITRA-2014",
-                  "P-D07-PANCREAS-2015"
-                ]
-              }
-            ]
-          },
-          "tested": {
-            "text": "Chemotherapy plus itraconazole in recurrent or persistent ovarian clear cell carcinoma.",
-            "sourceIds": [
-              "COND-C03-ITRA-2014"
-            ],
-            "sentences": [
-              {
-                "text": "Chemotherapy plus itraconazole in recurrent or persistent ovarian clear cell carcinoma.",
-                "sources": [
-                  "COND-C03-ITRA-2014"
-                ]
-              }
-            ]
-          },
-          "limits": {
-            "text": "The combination study had no randomized comparator; it cannot isolate itraconazole’s contribution or establish which proposed pathway explains an outcome.",
-            "sourceIds": [
-              "COND-C03-ITRA-2014"
-            ],
-            "sentences": [
-              {
-                "text": "The combination study had no randomized comparator; it cannot isolate itraconazole’s contribution or establish which proposed pathway explains an outcome.",
-                "sources": [
-                  "COND-C03-ITRA-2014"
-                ]
-              }
-            ]
-          },
-          "conditionHref": "/conditions/epithelial-ovarian-or-fallopian-tube-carcinoma"
-        },
-        {
-          "id": "prostate",
-          "condition": "Prostate cancer",
-          "rationale": {
-            "text": "Hedgehog suppression and effects on blood-vessel growth.",
-            "sourceIds": [
-              "P-D07-PROSTATE-2013"
-            ],
-            "sentences": [
-              {
-                "text": "Hedgehog suppression and effects on blood-vessel growth.",
-                "sources": [
-                  "P-D07-PROSTATE-2013"
-                ]
-              }
-            ]
-          },
-          "tested": {
-            "text": "An exploratory phase II trial examined pathway-related effects; circulating testosterone did not decrease.",
-            "sourceIds": [
-              "P-D07-PROSTATE-2013"
-            ],
-            "sentences": [
-              {
-                "text": "An exploratory phase II trial examined pathway-related effects; circulating testosterone did not decrease.",
-                "sources": [
-                  "P-D07-PROSTATE-2013"
-                ]
-              }
-            ]
-          },
-          "limits": {
-            "text": "The investigation does not support explaining the activity as testosterone reduction. There was no comparison against standard therapy.",
-            "sourceIds": [
-              "P-D07-PROSTATE-2013"
-            ],
-            "sentences": [
-              {
-                "text": "The investigation does not support explaining the activity as testosterone reduction. There was no comparison against standard therapy.",
-                "sources": [
-                  "P-D07-PROSTATE-2013"
-                ]
-              }
-            ]
-          },
-          "conditionHref": "/conditions/prostate-cancer"
-        },
-        {
-          "id": "lung",
-          "condition": "Non-small-cell lung cancer",
-          "rationale": {
-            "text": "Inhibition of blood-vessel-forming endothelial cells motivated adding itraconazole to chemotherapy.",
-            "sourceIds": [
-              "P-D07-LUNG-2013"
-            ],
-            "sentences": [
-              {
-                "text": "Inhibition of blood-vessel-forming endothelial cells motivated adding itraconazole to chemotherapy.",
-                "sources": [
-                  "P-D07-LUNG-2013"
-                ]
-              }
-            ]
-          },
-          "tested": {
-            "text": "A small phase II trial tested itraconazole with pemetrexed.",
-            "sourceIds": [
-              "P-D07-LUNG-2013"
-            ],
-            "sentences": [
-              {
-                "text": "A small phase II trial tested itraconazole with pemetrexed.",
-                "sources": [
-                  "P-D07-LUNG-2013"
-                ]
-              }
-            ]
-          },
-          "limits": {
-            "text": "Testing a treatment combination does not establish that an anti-angiogenic mechanism caused its clinical results.",
-            "sourceIds": [
-              "P-D07-LUNG-2013"
-            ],
-            "sentences": [
-              {
-                "text": "Testing a treatment combination does not establish that an anti-angiogenic mechanism caused its clinical results.",
-                "sources": [
-                  "P-D07-LUNG-2013"
-                ]
-              }
-            ]
-          },
-          "conditionHref": "/conditions/non-small-cell-lung-cancer"
-        },
-        {
-          "id": "colorectal",
-          "condition": "Colorectal cancer",
-          "rationale": {
-            "text": "WNT inhibition drove cycling and dormant cancer cells toward senescence, a nondividing state.",
-            "sourceIds": [
-              "P-D07-CRC-2018"
-            ],
-            "sentences": [
-              {
-                "text": "WNT inhibition drove cycling and dormant cancer cells toward senescence, a nondividing state.",
-                "sources": [
-                  "P-D07-CRC-2018"
-                ]
-              }
-            ]
-          },
-          "tested": {
-            "text": "Laboratory models examined the response of different cancer-cell populations.",
-            "sourceIds": [
-              "P-D07-CRC-2018"
-            ],
-            "sentences": [
-              {
-                "text": "Laboratory models examined the response of different cancer-cell populations.",
-                "sources": [
-                  "P-D07-CRC-2018"
-                ]
-              }
-            ]
-          },
-          "limits": {
-            "text": "The observed cell-state changes do not establish clinical benefit in patients.",
-            "sourceIds": [
-              "P-D07-CRC-2018"
-            ],
-            "sentences": [
-              {
-                "text": "The observed cell-state changes do not establish clinical benefit in patients.",
-                "sources": [
-                  "P-D07-CRC-2018"
-                ]
-              }
-            ]
-          },
-          "conditionHref": "/conditions/colorectal-cancer"
-        },
-        {
-          "id": "pancreatic",
-          "condition": "Pancreatic cancer",
-          "rationale": {
-            "text": "Hedgehog signaling, blood-vessel growth and P-glycoprotein-associated drug resistance.",
-            "sourceIds": [
-              "P-D07-PANCREAS-2015"
-            ],
-            "sentences": [
-              {
-                "text": "Hedgehog signaling, blood-vessel growth and P-glycoprotein-associated drug resistance.",
-                "sources": [
-                  "P-D07-PANCREAS-2015"
-                ]
-              }
-            ]
-          },
-          "tested": {
-            "text": "Itraconazole was combined with multi-drug chemotherapy in metastatic pancreatic cancer.",
-            "sourceIds": [
-              "P-D07-PANCREAS-2015"
-            ],
-            "sentences": [
-              {
-                "text": "Itraconazole was combined with multi-drug chemotherapy in metastatic pancreatic cancer.",
-                "sources": [
-                  "P-D07-PANCREAS-2015"
-                ]
-              }
-            ]
-          },
-          "limits": {
-            "text": "There was no randomized comparator, and the combination cannot establish the separate contribution of each proposed mechanism.",
-            "sourceIds": [
-              "P-D07-PANCREAS-2015"
-            ],
-            "sentences": [
-              {
-                "text": "There was no randomized comparator, and the combination cannot establish the separate contribution of each proposed mechanism.",
-                "sources": [
-                  "P-D07-PANCREAS-2015"
-                ]
-              }
-            ]
-          },
-          "conditionHref": "/conditions/pancreatic-cancer"
-        },
-        {
-          "id": "melanoma",
-          "condition": "Melanoma",
-          "rationale": {
-            "text": "Suppression of Hedgehog, WNT and PI3K/mTOR growth signaling.",
-            "sourceIds": [
-              "P-D07-MELANOMA-2017"
-            ],
-            "sentences": [
-              {
-                "text": "Suppression of Hedgehog, WNT and PI3K/mTOR growth signaling.",
-                "sources": [
-                  "P-D07-MELANOMA-2017"
-                ]
-              }
-            ]
-          },
-          "tested": {
-            "text": "Experiments examined signaling and cell proliferation in melanoma models.",
-            "sourceIds": [
-              "P-D07-MELANOMA-2017"
-            ],
-            "sentences": [
-              {
-                "text": "Experiments examined signaling and cell proliferation in melanoma models.",
-                "sources": [
-                  "P-D07-MELANOMA-2017"
-                ]
-              }
-            ]
-          },
-          "limits": {
-            "text": "Changes in model systems do not establish patient benefit or identify a single causal pathway.",
-            "sourceIds": [
-              "P-D07-MELANOMA-2017"
-            ],
-            "sentences": [
-              {
-                "text": "Changes in model systems do not establish patient benefit or identify a single causal pathway.",
-                "sources": [
-                  "P-D07-MELANOMA-2017"
-                ]
-              }
-            ]
-          },
-          "conditionHref": "/conditions/melanoma"
-        },
-        {
-          "id": "bcc",
-          "condition": "Basal cell carcinoma",
-          "rationale": {
-            "text": "Hedgehog pathway suppression, targeting a driver of this cancer.",
-            "sourceIds": [
-              "P-D07-BCC-2014"
-            ],
-            "sentences": [
-              {
-                "text": "Hedgehog pathway suppression, targeting a driver of this cancer.",
-                "sources": [
-                  "P-D07-BCC-2014"
-                ]
-              }
-            ]
-          },
-          "tested": {
-            "text": "An exploratory human trial measured reduced pathway activity in biopsied tumors.",
-            "sourceIds": [
-              "P-D07-BCC-2014"
-            ],
-            "sentences": [
-              {
-                "text": "An exploratory human trial measured reduced pathway activity in biopsied tumors.",
-                "sources": [
-                  "P-D07-BCC-2014"
-                ]
-              }
-            ]
-          },
-          "limits": {
-            "text": "Human tumor measurements support pathway activity during treatment; they do not establish comparative clinical effectiveness.",
-            "sourceIds": [
-              "P-D07-BCC-2014"
-            ],
-            "sentences": [
-              {
-                "text": "Human tumor measurements support pathway activity during treatment; they do not establish comparative clinical effectiveness.",
-                "sources": [
-                  "P-D07-BCC-2014"
-                ]
-              }
-            ]
-          },
-          "conditionHref": "/conditions/basal-cell-carcinoma"
-        },
-        {
-          "id": "aml",
-          "condition": "Acute myeloid leukemia",
-          "rationale": {
-            "text": "Inhibition of oxidative phosphorylation, the mitochondrial energy system used by therapy-resistant leukemia stem cells.",
-            "sourceIds": [
-              "P-D07-AML-2026"
-            ],
-            "sentences": [
-              {
-                "text": "Inhibition of oxidative phosphorylation, the mitochondrial energy system used by therapy-resistant leukemia stem cells.",
-                "sources": [
-                  "P-D07-AML-2026"
-                ]
-              }
-            ]
-          },
-          "tested": {
-            "text": "Preclinical experiments tested the metabolic rationale, including itraconazole with cytarabine.",
-            "sourceIds": [
-              "P-D07-AML-2026"
-            ],
-            "sentences": [
-              {
-                "text": "Preclinical experiments tested the metabolic rationale, including itraconazole with cytarabine.",
-                "sources": [
-                  "P-D07-AML-2026"
-                ]
-              }
-            ]
-          },
-          "limits": {
-            "text": "The preclinical findings do not establish effectiveness in people with leukemia.",
-            "sourceIds": [
-              "P-D07-AML-2026"
-            ],
-            "sentences": [
-              {
-                "text": "The preclinical findings do not establish effectiveness in people with leukemia.",
-                "sources": [
-                  "P-D07-AML-2026"
-                ]
-              }
-            ]
-          },
-          "conditionHref": "/conditions/acute-myeloid-leukemia"
-        },
-        {
-          "id": "myeloma",
-          "condition": "Multiple myeloma",
-          "rationale": {
-            "text": "Suppression of Hedgehog-dependent cell survival.",
-            "sourceIds": [
-              "P-D07-MYELOMA-2016"
-            ],
-            "sentences": [
-              {
-                "text": "Suppression of Hedgehog-dependent cell survival.",
-                "sources": [
-                  "P-D07-MYELOMA-2016"
-                ]
-              }
-            ]
-          },
-          "tested": {
-            "text": "Itraconazole and arsenic trioxide were tested together in myeloma cells and mouse tumors.",
-            "sourceIds": [
-              "P-D07-MYELOMA-2016"
-            ],
-            "sentences": [
-              {
-                "text": "Itraconazole and arsenic trioxide were tested together in myeloma cells and mouse tumors.",
-                "sources": [
-                  "P-D07-MYELOMA-2016"
-                ]
-              }
-            ]
-          },
-          "limits": {
-            "text": "Combination findings in cells and mice do not establish itraconazole-alone activity or clinical benefit.",
-            "sourceIds": [
-              "P-D07-MYELOMA-2016"
-            ],
-            "sentences": [
-              {
-                "text": "Combination findings in cells and mice do not establish itraconazole-alone activity or clinical benefit.",
-                "sources": [
-                  "P-D07-MYELOMA-2016"
-                ]
-              }
-            ]
-          },
-          "conditionHref": "/conditions/multiple-myeloma"
         }
       ],
       "rationales": [
@@ -5885,6 +4843,671 @@
           }
         ]
       }
+    },
+    {
+      "drugId": "D01",
+      "presentation": "pathway-table-pilot",
+      "originalAction": {
+        "text": "Metformin’s established glucose-lowering action combines reduced glucose production by the liver, reduced intestinal glucose absorption and improved uptake and use of glucose by tissues. It improves insulin sensitivity without stimulating insulin secretion. Repurposing research asks whether changes in cellular energy sensing, growth signals and the handling of damaged cellular material can be useful beyond diabetes. AMPK is an energy-sensing enzyme, while mTOR signaling helps regulate protein production and cell growth; altering these systems can have different consequences in infected cells, tumors and healthy muscle. The evidence below distinguishes effects measured in experimental models from proposed explanations and from clinical outcomes, because demonstrating a pathway change does not establish that a treatment helps patients.",
+        "sourceIds": [
+          "MF-LABEL-2025",
+          "MF-PD-MECHANISM-2016",
+          "MF-COVID-VIRAL-2024",
+          "MF-MASTERS-2019",
+          "MF-MYELOMA-MODELS-2018",
+          "CP017",
+          "COND-C15-MA32-2022"
+        ],
+        "sentences": [
+          {
+            "text": "Metformin’s established glucose-lowering action combines reduced glucose production by the liver, reduced intestinal glucose absorption and improved uptake and use of glucose by tissues. It improves insulin sensitivity without stimulating insulin secretion.",
+            "sources": [
+              "MF-LABEL-2025"
+            ]
+          },
+          {
+            "text": "Repurposing research asks whether changes in cellular energy sensing, growth signals and the handling of damaged cellular material can be useful beyond diabetes. AMPK is an energy-sensing enzyme, while mTOR signaling helps regulate protein production and cell growth; altering these systems can have different consequences in infected cells, tumors and healthy muscle.",
+            "sources": [
+              "MF-PD-MECHANISM-2016",
+              "MF-COVID-VIRAL-2024",
+              "MF-MASTERS-2019",
+              "MF-MYELOMA-MODELS-2018"
+            ]
+          },
+          {
+            "text": "The evidence below distinguishes effects measured in experimental models from proposed explanations and from clinical outcomes, because demonstrating a pathway change does not establish that a treatment helps patients.",
+            "sources": [
+              "MF-PD-MECHANISM-2016",
+              "CP017",
+              "COND-C15-MA32-2022"
+            ]
+          }
+        ]
+      },
+      "pathways": [
+        {
+          "id": "metformin-insulin-growth",
+          "title": "Insulin sensitivity and growth signaling",
+          "text": "Improving insulin sensitivity is part of metformin’s established action in diabetes. In cancer repurposing, reducing insulin-related growth stimulation is one proposed route to benefit. The MA.32 breast-cancer trial measured changes in insulin, weight and other metabolic factors, but its clinical report did not show improved invasive disease-free survival. These findings distinguish a measured metabolic effect from an unconfirmed anticancer benefit.",
+          "sourceIds": [
+            "MF-LABEL-2025",
+            "COND-C15-MA32-METABOLIC",
+            "COND-C15-MA32-2022"
+          ],
+          "sentences": [
+            {
+              "text": "Improving insulin sensitivity is part of metformin’s established action in diabetes. In cancer repurposing, reducing insulin-related growth stimulation is one proposed route to benefit.",
+              "sources": [
+                "MF-LABEL-2025",
+                "COND-C15-MA32-METABOLIC"
+              ]
+            },
+            {
+              "text": "The MA.32 breast-cancer trial measured changes in insulin, weight and other metabolic factors, but its clinical report did not show improved invasive disease-free survival. These findings distinguish a measured metabolic effect from an unconfirmed anticancer benefit.",
+              "sources": [
+                "COND-C15-MA32-METABOLIC",
+                "COND-C15-MA32-2022"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "metformin-ampk-mtor",
+          "title": "AMPK, mTOR and the balance between energy use and growth",
+          "text": "AMPK activation and reduced mTOR signaling provide a rationale for changing cell growth and protein production. In myeloma cell lines and mouse xenografts, metformin activated AMPK, suppressed mTORC1 and mTORC2 signaling, and was associated with autophagy, cell-cycle arrest and reduced tumor growth. In viral infection, suppression of host-cell protein production is a proposed explanation for reduced SARS-CoV-2 replication; the COVID-OUT nasal-swab study measured viral RNA rather than directly proving that mTOR mediated the reduction in viral RNA. The same growth-related pathways also matter in healthy tissue: mTORC1 supports muscle growth, and metformin reduced muscle gains during resistance training in the MASTERS trial. A mechanism that appears useful in one setting can therefore work against the intended outcome in another.",
+          "sourceIds": [
+            "MF-MYELOMA-MODELS-2018",
+            "MF-COVID-VIRAL-2024",
+            "MF-MASTERS-2019"
+          ],
+          "sentences": [
+            {
+              "text": "AMPK activation and reduced mTOR signaling provide a rationale for changing cell growth and protein production. In myeloma cell lines and mouse xenografts, metformin activated AMPK, suppressed mTORC1 and mTORC2 signaling, and was associated with autophagy, cell-cycle arrest and reduced tumor growth.",
+              "sources": [
+                "MF-MYELOMA-MODELS-2018"
+              ]
+            },
+            {
+              "text": "In viral infection, suppression of host-cell protein production is a proposed explanation for reduced SARS-CoV-2 replication; the COVID-OUT nasal-swab study measured viral RNA rather than directly proving that mTOR mediated the reduction in viral RNA.",
+              "sources": [
+                "MF-COVID-VIRAL-2024"
+              ]
+            },
+            {
+              "text": "The same growth-related pathways also matter in healthy tissue: mTORC1 supports muscle growth, and metformin reduced muscle gains during resistance training in the MASTERS trial. A mechanism that appears useful in one setting can therefore work against the intended outcome in another.",
+              "sources": [
+                "MF-MASTERS-2019"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "autophagy-causality",
+          "title": "Autophagy and mitochondrial stress",
+          "text": "Autophagy is the cell’s process for recycling cellular material. In Parkinson’s disease cell and mouse models, metformin was associated with AMPK activation and autophagy, less mitochondrial oxidative stress and reduced accumulation of alpha-synuclein. Blocking AMPK or autophagy weakened protection in toxin-injured cells, supporting a contribution from these pathways within that model. Inhibitor specificity, the experimental exposure and the difference between toxin injury and human disease limit translation; these experiments do not establish that metformin slows Parkinson’s disease in people.",
+          "sourceIds": [
+            "MF-PD-MECHANISM-2016"
+          ],
+          "sentences": [
+            {
+              "text": "Autophagy is the cell’s process for recycling cellular material. In Parkinson’s disease cell and mouse models, metformin was associated with AMPK activation and autophagy, less mitochondrial oxidative stress and reduced accumulation of alpha-synuclein.",
+              "sources": [
+                "MF-PD-MECHANISM-2016"
+              ]
+            },
+            {
+              "text": "Blocking AMPK or autophagy weakened protection in toxin-injured cells, supporting a contribution from these pathways within that model. Inhibitor specificity, the experimental exposure and the difference between toxin injury and human disease limit translation; these experiments do not establish that metformin slows Parkinson’s disease in people.",
+              "sources": [
+                "MF-PD-MECHANISM-2016"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "metformin-complex-i",
+          "title": "Complex I inhibition and energy sensing",
+          "text": "Two preclinical studies in cells and isolated mitochondria show that metformin inhibits complex I of the mitochondrial respiratory chain, the enzyme that initiates electron transfer during cellular respiration. In intact hepatoma cells, 50 micromolar metformin produced time-dependent inhibition of complex I activity, reducing glutamate oxidation by 13 percent after 24 hours and 30 percent after 60 hours; succinate oxidation, which enters at complex II, was unaffected, confirming selectivity for complex I. In a complementary study using isolated rat hepatocytes, inhibition of cell respiration by metformin occurred only in intact cells and not in permeabilized cells or isolated mitochondria, demonstrating that the mechanism requires an indirect, cell-mediated signaling step rather than direct drug contact with the enzyme. In isolated sub-mitochondrial particles, half-maximal inhibition required approximately 79 mM, far above therapeutic plasma concentrations, while the effect appeared at 50 micromolar in intact cells, consistent with intracellular drug accumulation. Reduced flux through complex I lowers cellular ATP production and is proposed to be one upstream trigger for the AMPK activation described in other pathway studies. These are preclinical findings from cell lines, isolated hepatocytes, and sub-cellular fractions; they do not establish the concentrations, tissue distribution, or extent of complex I inhibition during therapeutic metformin treatment in people.",
+          "sourceIds": [
+            "OWEN-2000",
+            "EL-MIR-2000"
+          ],
+          "sentences": [
+            {
+              "text": "Two preclinical studies in cells and isolated mitochondria show that metformin inhibits complex I of the mitochondrial respiratory chain, the enzyme that initiates electron transfer during cellular respiration.",
+              "sources": [
+                "OWEN-2000",
+                "EL-MIR-2000"
+              ]
+            },
+            {
+              "text": "In intact hepatoma cells, 50 micromolar metformin produced time-dependent inhibition of complex I activity, reducing glutamate oxidation by 13 percent after 24 hours and 30 percent after 60 hours; succinate oxidation, which enters at complex II, was unaffected, confirming selectivity for complex I.",
+              "sources": [
+                "OWEN-2000"
+              ]
+            },
+            {
+              "text": "In a complementary study using isolated rat hepatocytes, inhibition of cell respiration by metformin occurred only in intact cells and not in permeabilized cells or isolated mitochondria, demonstrating that the mechanism requires an indirect, cell-mediated signaling step rather than direct drug contact with the enzyme.",
+              "sources": [
+                "EL-MIR-2000"
+              ]
+            },
+            {
+              "text": "In isolated sub-mitochondrial particles, half-maximal inhibition required approximately 79 mM, far above therapeutic plasma concentrations, while the effect appeared at 50 micromolar in intact cells, consistent with intracellular drug accumulation.",
+              "sources": [
+                "OWEN-2000"
+              ]
+            },
+            {
+              "text": "Reduced flux through complex I lowers cellular ATP production and is proposed to be one upstream trigger for the AMPK activation described in other pathway studies.",
+              "sources": [
+                "OWEN-2000",
+                "EL-MIR-2000"
+              ]
+            },
+            {
+              "text": "These are preclinical findings from cell lines, isolated hepatocytes, and sub-cellular fractions; they do not establish the concentrations, tissue distribution, or extent of complex I inhibition during therapeutic metformin treatment in people.",
+              "sources": [
+                "OWEN-2000",
+                "EL-MIR-2000"
+              ]
+            }
+          ]
+        }
+      ],
+      "rationales": [
+        {
+          "id": "metformin-mechanism-1",
+          "condition": "Acute COVID-19 and Long COVID",
+          "conditionHref": "/conditions/long-covid",
+          "rationale": {
+            "text": "Proposed: suppression of mTOR-dependent host-cell protein production could reduce viral replication during early infection.",
+            "sourceIds": [
+              "MF-COVID-VIRAL-2024"
+            ],
+            "sentences": [
+              {
+                "text": "Proposed: suppression of mTOR-dependent host-cell protein production could reduce viral replication during early infection.",
+                "sources": [
+                  "MF-COVID-VIRAL-2024"
+                ]
+              }
+            ]
+          },
+          "tested": {
+            "text": "Measured: the COVID-OUT nasal-swab study found lower average viral RNA during acute infection with metformin than with placebo.",
+            "sourceIds": [
+              "MF-COVID-VIRAL-2024"
+            ],
+            "sentences": [
+              {
+                "text": "Measured: the COVID-OUT nasal-swab study found lower average viral RNA during acute infection with metformin than with placebo.",
+                "sources": [
+                  "MF-COVID-VIRAL-2024"
+                ]
+              }
+            ]
+          },
+          "limits": {
+            "text": "Viral RNA does not prove the pathway responsible or establish treatment benefit after Long COVID has developed. Prevention and treatment trials address different questions.",
+            "sourceIds": [
+              "MF-COVID-VIRAL-2024",
+              "P-COVIDOUT-2023",
+              "P-KOREA-2026"
+            ],
+            "sentences": [
+              {
+                "text": "Viral RNA does not prove the pathway responsible or establish treatment benefit after Long COVID has developed. Prevention and treatment trials address different questions.",
+                "sources": [
+                  "MF-COVID-VIRAL-2024",
+                  "P-COVIDOUT-2023",
+                  "P-KOREA-2026"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "metformin-mechanism-2",
+          "condition": "Parkinson’s disease",
+          "conditionHref": "/conditions/parkinson-disease",
+          "rationale": {
+            "text": "Proposed: protecting dopamine-producing nerve cells through AMPK, autophagy and reduced inflammatory and mitochondrial stress.",
+            "sourceIds": [
+              "MF-PD-MECHANISM-2016"
+            ],
+            "sentences": [
+              {
+                "text": "Proposed: protecting dopamine-producing nerve cells through AMPK, autophagy and reduced inflammatory and mitochondrial stress.",
+                "sources": [
+                  "MF-PD-MECHANISM-2016"
+                ]
+              }
+            ]
+          },
+          "tested": {
+            "text": "Cell and mouse experiments measured pathway and injury-related effects; a human pilot tested metformin alongside levodopa/carbidopa and measured symptoms and blood markers.",
+            "sourceIds": [
+              "MF-PD-MECHANISM-2016",
+              "CP016"
+            ],
+            "sentences": [
+              {
+                "text": "Cell and mouse experiments measured pathway and injury-related effects; a human pilot tested metformin alongside levodopa/carbidopa and measured symptoms and blood markers.",
+                "sources": [
+                  "MF-PD-MECHANISM-2016",
+                  "CP016"
+                ]
+              }
+            ]
+          },
+          "limits": {
+            "text": "Blood-marker changes do not demonstrate the same mechanism in brain tissue. The pilot did not establish a between-group benefit on total UPDRS or slower disease progression.",
+            "sourceIds": [
+              "CP016"
+            ],
+            "sentences": [
+              {
+                "text": "Blood-marker changes do not demonstrate the same mechanism in brain tissue. The pilot did not establish a between-group benefit on total UPDRS or slower disease progression.",
+                "sources": [
+                  "CP016"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "metformin-mechanism-3",
+          "condition": "Cognition in schizophrenia",
+          "conditionHref": "/conditions/schizophrenia",
+          "rationale": {
+            "text": "Proposed: altered energy metabolism could affect brain networks involved in memory. The tricarboxylic acid cycle helps cells convert nutrients into usable energy.",
+            "sourceIds": [
+              "CP017"
+            ],
+            "sentences": [
+              {
+                "text": "Proposed: altered energy metabolism could affect brain networks involved in memory. The tricarboxylic acid cycle helps cells convert nutrients into usable energy.",
+                "sources": [
+                  "CP017"
+                ]
+              }
+            ]
+          },
+          "tested": {
+            "text": "An exploratory analysis linked blood-metabolite changes with working memory, verbal learning and hippocampal connectivity during treatment.",
+            "sourceIds": [
+              "CP017"
+            ],
+            "sentences": [
+              {
+                "text": "An exploratory analysis linked blood-metabolite changes with working memory, verbal learning and hippocampal connectivity during treatment.",
+                "sources": [
+                  "CP017"
+                ]
+              }
+            ]
+          },
+          "limits": {
+            "text": "These are associations from an analysis of the existing trial, not an independent efficacy trial or a direct measurement of energy production in the brain.",
+            "sourceIds": [
+              "CP017",
+              "MF-SCHIZOPHRENIA-PARENT-2023"
+            ],
+            "sentences": [
+              {
+                "text": "These are associations from an analysis of the existing trial, not an independent efficacy trial or a direct measurement of energy production in the brain.",
+                "sources": [
+                  "CP017",
+                  "MF-SCHIZOPHRENIA-PARENT-2023"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "metformin-mechanism-4",
+          "condition": "Muscle aging and sarcopenia",
+          "conditionHref": "/conditions/sarcopenia",
+          "rationale": {
+            "text": "Proposed: modifying inflammation and energy sensing could preserve muscle function, but AMPK-related restraint of mTORC1 could also reduce muscle growth.",
+            "sourceIds": [
+              "MF-MASTERS-2019"
+            ],
+            "sentences": [
+              {
+                "text": "Proposed: modifying inflammation and energy sensing could preserve muscle function, but AMPK-related restraint of mTORC1 could also reduce muscle growth.",
+                "sources": [
+                  "MF-MASTERS-2019"
+                ]
+              }
+            ]
+          },
+          "tested": {
+            "text": "MASTERS examined metformin during resistance training in older adults and found smaller gains in lean and thigh muscle mass.",
+            "sourceIds": [
+              "MF-MASTERS-2019"
+            ],
+            "sentences": [
+              {
+                "text": "MASTERS examined metformin during resistance training in older adults and found smaller gains in lean and thigh muscle mass.",
+                "sources": [
+                  "MF-MASTERS-2019"
+                ]
+              }
+            ]
+          },
+          "limits": {
+            "text": "Muscle growth and physical function are distinct outcomes. These results do not establish a sarcopenia benefit; MET-PREVENT found no walking-speed improvement.",
+            "sourceIds": [
+              "MF-MASTERS-2019",
+              "MF-METPREVENT-2025"
+            ],
+            "sentences": [
+              {
+                "text": "Muscle growth and physical function are distinct outcomes. These results do not establish a sarcopenia benefit; MET-PREVENT found no walking-speed improvement.",
+                "sources": [
+                  "MF-MASTERS-2019",
+                  "MF-METPREVENT-2025"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "metformin-prostate-mechanism",
+          "condition": "Prostate cancer",
+          "conditionHref": "/conditions/prostate-cancer",
+          "rationale": {
+            "text": "Proposed: improve metabolic health during androgen deprivation, which can worsen metabolic risk.",
+            "sourceIds": [
+              "MF-STAMPEDE-2025"
+            ],
+            "sentences": [
+              {
+                "text": "Proposed: improve metabolic health during androgen deprivation, which can worsen metabolic risk.",
+                "sources": [
+                  "MF-STAMPEDE-2025"
+                ]
+              }
+            ]
+          },
+          "tested": {
+            "text": "STAMPEDE tested metformin with standard treatment and measured metabolic and cancer outcomes.",
+            "sourceIds": [
+              "MF-STAMPEDE-2025"
+            ],
+            "sentences": [
+              {
+                "text": "STAMPEDE tested metformin with standard treatment and measured metabolic and cancer outcomes.",
+                "sources": [
+                  "MF-STAMPEDE-2025"
+                ]
+              }
+            ]
+          },
+          "limits": {
+            "text": "Improved metabolic outcomes did not establish a significant overall survival benefit or a direct tumor-killing mechanism.",
+            "sourceIds": [
+              "MF-STAMPEDE-2025"
+            ],
+            "sentences": [
+              {
+                "text": "Improved metabolic outcomes did not establish a significant overall survival benefit or a direct tumor-killing mechanism.",
+                "sources": [
+                  "MF-STAMPEDE-2025"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "metformin-cancer-energy",
+          "condition": "Non-small-cell lung cancer",
+          "conditionHref": "/conditions/non-small-cell-lung-cancer",
+          "rationale": {
+            "text": "Proposed: alter tumor metabolism to increase sensitivity to chemoradiation.",
+            "sourceIds": [
+              "MF-NRG-LU001-2021",
+              "MF-ALMERA-2021"
+            ],
+            "sentences": [
+              {
+                "text": "Proposed: alter tumor metabolism to increase sensitivity to chemoradiation.",
+                "sources": [
+                  "MF-NRG-LU001-2021",
+                  "MF-ALMERA-2021"
+                ]
+              }
+            ]
+          },
+          "tested": {
+            "text": "NRG-LU001 and OCOG-ALMERA tested metformin added to chemoradiation in randomized trials.",
+            "sourceIds": [
+              "MF-NRG-LU001-2021",
+              "MF-ALMERA-2021"
+            ],
+            "sentences": [
+              {
+                "text": "NRG-LU001 and OCOG-ALMERA tested metformin added to chemoradiation in randomized trials.",
+                "sources": [
+                  "MF-NRG-LU001-2021",
+                  "MF-ALMERA-2021"
+                ]
+              }
+            ]
+          },
+          "limits": {
+            "text": "NRG-LU001 found no benefit; the small ALMERA trial reported worse survival estimates with metformin. Testing a combination does not establish that the proposed metabolic pathway mediated its results.",
+            "sourceIds": [
+              "MF-NRG-LU001-2021",
+              "MF-ALMERA-2021"
+            ],
+            "sentences": [
+              {
+                "text": "NRG-LU001 found no benefit; the small ALMERA trial reported worse survival estimates with metformin. Testing a combination does not establish that the proposed metabolic pathway mediated its results.",
+                "sources": [
+                  "MF-NRG-LU001-2021",
+                  "MF-ALMERA-2021"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "metformin-breast-mechanism",
+          "condition": "Breast cancer",
+          "conditionHref": "/conditions/breast-cancer",
+          "rationale": {
+            "text": "Proposed: lower insulin-related signaling could reduce growth stimulation in some tumors.",
+            "sourceIds": [
+              "COND-C15-MA32-METABOLIC"
+            ],
+            "sentences": [
+              {
+                "text": "Proposed: lower insulin-related signaling could reduce growth stimulation in some tumors.",
+                "sources": [
+                  "COND-C15-MA32-METABOLIC"
+                ]
+              }
+            ]
+          },
+          "tested": {
+            "text": "MA.32 measured insulin, weight and other metabolic changes as well as invasive disease-free survival.",
+            "sourceIds": [
+              "COND-C15-MA32-METABOLIC",
+              "COND-C15-MA32-2022"
+            ],
+            "sentences": [
+              {
+                "text": "MA.32 measured insulin, weight and other metabolic changes as well as invasive disease-free survival.",
+                "sources": [
+                  "COND-C15-MA32-METABOLIC",
+                  "COND-C15-MA32-2022"
+                ]
+              }
+            ]
+          },
+          "limits": {
+            "text": "Metabolic improvements did not translate into improved invasive disease-free survival in the clinical report.",
+            "sourceIds": [
+              "COND-C15-MA32-2022"
+            ],
+            "sentences": [
+              {
+                "text": "Metabolic improvements did not translate into improved invasive disease-free survival in the clinical report.",
+                "sources": [
+                  "COND-C15-MA32-2022"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "metformin-colorectal-mechanism",
+          "condition": "Colorectal adenoma prevention",
+          "conditionHref": "/conditions/colorectal-cancer",
+          "rationale": {
+            "text": "Rationale: suppress epithelial proliferation as a possible route to reducing new colorectal lesions.",
+            "sourceIds": [
+              "MF-COLON-MECHANISM-2010"
+            ],
+            "sentences": [
+              {
+                "text": "Rationale: suppress epithelial proliferation as a possible route to reducing new colorectal lesions.",
+                "sources": [
+                  "MF-COLON-MECHANISM-2010"
+                ]
+              }
+            ]
+          },
+          "tested": {
+            "text": "Short-term human research measured reduced proliferation and fewer aberrant crypt foci; a later trial measured adenoma recurrence after polyp removal.",
+            "sourceIds": [
+              "MF-COLON-MECHANISM-2010",
+              "MF-ADENOMA-2016"
+            ],
+            "sentences": [
+              {
+                "text": "Short-term human research measured reduced proliferation and fewer aberrant crypt foci; a later trial measured adenoma recurrence after polyp removal.",
+                "sources": [
+                  "MF-COLON-MECHANISM-2010",
+                  "MF-ADENOMA-2016"
+                ]
+              }
+            ]
+          },
+          "limits": {
+            "text": "These endpoints concern early lesions and recurrence prevention. They do not establish treatment efficacy or a survival benefit in established colorectal cancer.",
+            "sourceIds": [
+              "MF-COLON-MECHANISM-2010",
+              "MF-ADENOMA-2016"
+            ],
+            "sentences": [
+              {
+                "text": "These endpoints concern early lesions and recurrence prevention. They do not establish treatment efficacy or a survival benefit in established colorectal cancer.",
+                "sources": [
+                  "MF-COLON-MECHANISM-2010",
+                  "MF-ADENOMA-2016"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "metformin-pancreatic-mechanism",
+          "condition": "Pancreatic cancer",
+          "conditionHref": "/conditions/pancreatic-cancer",
+          "rationale": {
+            "text": "Proposed: induce metabolic stress in tumor cells and modify insulin-related growth signals.",
+            "sourceIds": [
+              "COND-C17-MET-2015"
+            ],
+            "sentences": [
+              {
+                "text": "Proposed: induce metabolic stress in tumor cells and modify insulin-related growth signals.",
+                "sources": [
+                  "COND-C17-MET-2015"
+                ]
+              }
+            ]
+          },
+          "tested": {
+            "text": "A randomized trial tested metformin alongside gemcitabine and erlotinib.",
+            "sourceIds": [
+              "COND-C17-MET-2015"
+            ],
+            "sentences": [
+              {
+                "text": "A randomized trial tested metformin alongside gemcitabine and erlotinib.",
+                "sources": [
+                  "COND-C17-MET-2015"
+                ]
+              }
+            ]
+          },
+          "limits": {
+            "text": "The combination did not improve survival. The proposed mechanism remains distinct from a demonstrated treatment benefit.",
+            "sourceIds": [
+              "COND-C17-MET-2015"
+            ],
+            "sentences": [
+              {
+                "text": "The combination did not improve survival. The proposed mechanism remains distinct from a demonstrated treatment benefit.",
+                "sources": [
+                  "COND-C17-MET-2015"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "metformin-myeloma-mechanism",
+          "condition": "Multiple myeloma",
+          "conditionHref": "/conditions/multiple-myeloma",
+          "rationale": {
+            "text": "Measured in models: AMPK activation and suppression of mTORC1/mTORC2, with autophagy and cell-cycle arrest.",
+            "sourceIds": [
+              "MF-MYELOMA-MODELS-2018"
+            ],
+            "sentences": [
+              {
+                "text": "Measured in models: AMPK activation and suppression of mTORC1/mTORC2, with autophagy and cell-cycle arrest.",
+                "sources": [
+                  "MF-MYELOMA-MODELS-2018"
+                ]
+              }
+            ]
+          },
+          "tested": {
+            "text": "Cell lines and mouse xenografts showed reduced tumor-cell growth.",
+            "sourceIds": [
+              "MF-MYELOMA-MODELS-2018"
+            ],
+            "sentences": [
+              {
+                "text": "Cell lines and mouse xenografts showed reduced tumor-cell growth.",
+                "sources": [
+                  "MF-MYELOMA-MODELS-2018"
+                ]
+              }
+            ]
+          },
+          "limits": {
+            "text": "These experimental models do not establish effective human exposure, clinical dosing or patient benefit.",
+            "sourceIds": [
+              "MF-MYELOMA-MODELS-2018"
+            ],
+            "sentences": [
+              {
+                "text": "These experimental models do not establish effective human exposure, clinical dosing or patient benefit.",
+                "sources": [
+                  "MF-MYELOMA-MODELS-2018"
+                ]
+              }
+            ]
+          }
+        }
+      ]
     }
   ]
 }
