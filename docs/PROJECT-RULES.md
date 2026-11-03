@@ -50,6 +50,8 @@ Use the Microbiome Medicine whole-site reference and scoped PepsAnon refinements
 
 ### Outcome table and study-sidebar correction
 
+Owner correction, October 29, 2026: remove the article Evidence section’s “Explore and compare recorded outcomes” link and the “Begin typing to filter evidence” quick-search box shown in the supplied screenshot. Apply through the shared article renderer. Preserve the Evidence introduction, grouped outcome table, Filter outcomes disclosure, URL-based filters, research sidebar and standalone `/outcomes` catalog. This supersedes the article-local link and quick-search presentation only.
+
 Owner correction, October 12, 2026: adopt the Examine-like five-column grouped outcome table and right-side study details specified in [OUTCOME-TABLES.md](OUTCOME-TABLES.md). Conditions: Intervention / Outcome / Grade / Effect / Evidence. Drugs: Health condition / Outcome / Grade / Effect / Evidence. Group each condition or intervention once, synthesize compatible studies into one outcome row, use separately documented A–F likelihood-of-benefit assessments, show effect size and independent randomized trial/participant counts, and place condition-specific proposed mechanisms and study detail in the matching research overlay. Retain distinct prevention/treatment endpoints within the Long COVID group and exclude duplicate trial reports from counts. This supersedes the older three-column default, four-column condition plan and certainty-only Grade display below within this scope. Existing raw evidence, certainty assessments, source identities and review gates remain preserved.
 
 ### Condition-first investigation and intervention roundups

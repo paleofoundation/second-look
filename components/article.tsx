@@ -146,7 +146,7 @@ export function OutcomeEvidence({rows:inputRows,guide,sources,order,compact=true
  return rows.length?<OutcomeFinder records={summaryRecords} renderRows={renderRows} compact={compact}/>:renderRows([]);
 }
 function EvidenceIntroduction(){return <p>Compare the outcomes studied for each drug and condition. The A–F grade assesses the likelihood of benefit, Effect summarizes the size of the change, and Evidence counts independent randomized trials and their participants. Select an outcome or study count for the findings, proposed mechanisms and study details. <Link href="/methods">How we grade outcomes.</Link></p>}
-function EvidenceContent({rows,guide,sources,order}:{rows:SynthesisRow[];guide:Guide;sources:Source[];order:string[]}){return <><span id="findings" className="reference-alias"/><p className="small"><Link href="/outcomes">Explore and compare recorded outcomes</Link></p><OutcomeEvidence rows={rows} guide={guide} sources={sources} order={order}/></>}
+function EvidenceContent({rows,guide,sources,order}:{rows:SynthesisRow[];guide:Guide;sources:Source[];order:string[]}){return <><span id="findings" className="reference-alias"/><OutcomeEvidence rows={rows} guide={guide} sources={sources} order={order}/></>}
 
 export function Article({guide,sources:inputSources,children,additionalCitationGroups=[]}:{guide:Guide;additionalCitationGroups?:string[][];sources:Source[];children?:React.ReactNode;acquisitionStatus?:{coverage_state:string;readerSummary:string;readerNextStep:string}}){
  const isRecord=['Study','Background source','Glossary'].includes(guide.type);const terminal=isRecord?'sources':'research-feed';const terminalLabel=isRecord?'Sources':'Research Feed';
