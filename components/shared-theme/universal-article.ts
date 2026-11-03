@@ -14,7 +14,7 @@ export type UniversalPostType = 'Drug' | 'Condition';
 
 export type UniversalArticleSection = { id: string; label: string };
 
-export const ARTICLE_READER_TAIL = ['Evidence', 'Research Feed', 'FAQs', 'Update History', 'References'] as const;
+export const ARTICLE_READER_TAIL = ['Evidence', 'FAQs', 'Research Feed', 'Update History', 'References'] as const;
 
 export const UNIVERSAL_ARTICLE_LABELS = {
   Drug: ['Overview', 'Mechanisms', 'Benefits', 'Safety', 'Contraindications',

@@ -1,7 +1,17 @@
 import type {ProtectedReview} from '@/lib/review-access';
 import {CitedProse} from '@/components/article';
 import {content} from '@/lib/content';
-/** Server caller supplies this body only after getReviewForRequest grants full. */
-export function ReviewAnswers({review,citationOrder}:{review:ProtectedReview;citationOrder:string[]}){const sources=content.sources.filter(s=>review.sourceIds.includes(s.id));return <>
- {review.openingBlocks?.map(block=><section className="article-section" key={block.id} id={block.id}><h2>{block.title}</h2>{block.questionIds.map(id=>{const q=review.questionAnswers?.find(q=>q.id===id);return q?<CitedProse key={id} text={q.answer} sourceIds={q.sources} sources={sources} order={citationOrder}/>:null})}</section>)}
- <section className="article-section" id="appraisal"><h2>Full appraisal questions</h2>{review.questionAnswers?.map(q=><section id={q.render.fragment} key={q.id}><h3>{q.id} · {q.question}</h3><CitedProse text={q.answer} sourceIds={q.sources} sources={sources} order={citationOrder}/><p className="small">{q.status.replaceAll('_',' ')}</p><ul className="small">{q.locators.map((l,i)=><li key={i}>{[l.file||l.filename,l.chapter,l.section,l.table_figure,l.pdf_page!=null?'PDF page '+l.pdf_page:null,l.printed_page!=null?'Printed page '+l.printed_page:null,l.nativeLocator].filter(Boolean).join(' · ')}</li>)}</ul></section>)}</section></>}
+import {buildStudyReviewPlan} from '@/lib/study-review-plan';
+import {sourceLocationText} from '@/lib/study-presentation';
+import {StudySourceLocations} from '@/components/study-source-content';
+/** The server supplies this component only after the full-review grant. */
+export function ReviewAnswers({review,citationOrder}:{review:ProtectedReview;citationOrder:string[]}) {
+ const sources=content.sources.filter(source=>review.sourceIds.includes(source.id));
+ const plan=buildStudyReviewPlan(review);
+ return <div id="appraisal">{plan.sections.filter(section=>section.answers.length).map(section=><section className="article-section" id={section.id} key={section.id}>
+  <h2>{section.title}</h2>{section.answers.map(answer=><section className="study-question" id={answer.render.fragment} key={answer.id} data-review-question={answer.id}>
+   <h3>{answer.question}</h3><CitedProse text={answer.answer} sourceIds={answer.sources} sources={sources} order={citationOrder} currentPath={'/research/'+review.id}/>
+   <StudySourceLocations locations={sourceLocationText(answer.locators)}/>
+  </section>)}
+ </section>)}</div>;
+}
