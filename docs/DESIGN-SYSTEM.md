@@ -113,3 +113,8 @@ Use the existing definitions to choose restrained conceptual subjects: cellular 
 ## Approved RemapRx atlas identity — October 12, 2026
 
 The owner approved the mapping-round-4 Rx mark and authorized its logo/favicon application and the category-claiming homepage to go live. Preserve the close heavy Rx, open concentric target rings, crosshairs, radial connectors and flat arrow; retain mapping features even at favicon size. Blue on white is the header identity, reversed white on blue the footer, and blue on yellow the favicon. The hero repeats this map geometry with distinct established/investigated routes and readable research-type labels. Category is “The drug repurposing atlas”; headline is “New targets for approved medications.” Replace current reader-facing Second Look branding and the old familiar-drug headline while preserving historical records, routes and existing topic illustrations. Contract, exact copy, production assets, scope and verification/release: `REMAPRX-IDENTITY.md`. This supersedes the preview-only status and the over-simplified round-3 design.
+
+
+## Footer legal-link separation — November 4, 2026
+
+Source: owner's follow-up and Screenshot 2026-11-04 at 7.09.38 PM.png: Privacy, Terms and Educational disclaimer are cramped against the paragraph above. Give the shared legal-link group its own 1.25rem top margin at every viewport. This supersedes the flush paragraph/link adjacency while preserving the accepted responsive columns and intact labels. Implement and publish under the standing routine-fix authorization. Verification/publication: `FOOTER-LEGAL-SPACING-20261104.json`.

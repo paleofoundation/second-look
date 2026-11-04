@@ -447,3 +447,8 @@ Implementation: shared generator geometry with role-specific yellow/white backgr
 
 
 Footer production build prerequisites: current main failed on 66 stale guide-marketing hashes and imported Node file-loading code into the browser indexing path. Reused only the already-reviewed PR30 readiness module split/import repairs, excluding its sidebar changes. Complete before/after readiness JSON is identical; all product data is identical after removing marketing fingerprints. Existing release/approval states are untouched. New hashes bind the actual current presentation; they grant no new approval. Current-source type/build/governance/privacy verification and apex deployment follow in the footer receipt.
+
+
+## November 4, 2026 — Separate footer legal links from the preceding paragraph
+
+Source: owner's explicit cramped-paragraph/link correction and 7.09.38 PM screenshot. Scope: shared footer spacing. Contract: `DESIGN-SYSTEM.md`, Footer legal-link separation. Add a 1.25rem top margin to the legal-link group across desktop and mobile, superseding flush adjacency without changing the existing columns, copy, labels or destinations. TypeSafe guidance keeps this deterministic CSS change in code; the footer references were consulted during the preceding correction. Verification and publication are pending in `FOOTER-LEGAL-SPACING-20261104.json`. The standing authorization includes deployment through GitHub main to the existing Cloudflare Worker.
