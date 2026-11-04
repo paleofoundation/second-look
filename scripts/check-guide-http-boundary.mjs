@@ -1,4 +1,6 @@
 import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+const {products}=JSON.parse(readFileSync(new URL('../data/guide-catalogue.json',import.meta.url),'utf8'));
 
 const origin = new URL(process.argv[2] ?? 'http://127.0.0.1:5184').origin;
 const results = [];
@@ -8,8 +10,13 @@ for (const path of ['/drugs/metformin', '/conditions/long-covid', '/guides/produ
   assert.equal(response.status, 200, path);
   assert.match(response.headers.get('content-type') ?? '', /text\/html/, path);
   if (path.includes('/products/')) {
-    assert.match(body, /In development/, path);
-    assert.doesNotMatch(body, /href="https:\/\/checkout\.stripe\.com/, path);
+    const product=products.find(product=>product.slug===path.split('/').at(-1));
+    assert(product,path);
+    assert(body.includes(product.statusLabel),path+' reflects its actual availability');
+    if(product.releaseState!=='released'){
+      assert.doesNotMatch(body, /Get this guide/, path);
+      assert.doesNotMatch(body, /href="https:\/\/checkout\.stripe\.com/, path);
+    }
   }
   if (path.includes('/read/')) {
     assert.match(body, /noindex/, path);

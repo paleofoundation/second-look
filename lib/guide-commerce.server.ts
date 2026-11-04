@@ -10,19 +10,15 @@ import { activeGuideMembership, guideLibraryView } from './guide-access';
 import { readerProfiles } from './profile-server';
 import { createGuideSavesRepository } from './guide-saves';
 import { topicGuideMappings } from './topic-guides';
+import { readCommerceConfiguration, type CommerceEnvironment } from './guide-commerce-config';
 
-type CommerceEnvironment = { STRIPE_SANDBOX_KEY?: string; STRIPE_WEBHOOK_SECRET?: string; GUIDE_CHECKOUT_SANDBOX_ENABLED?: string; GUIDE_COMMERCE_ORIGIN?: string; STRIPE_SANDBOX_ID?: string };
-const configuration = () => {
-  const config = env as typeof env & CommerceEnvironment;
-  if (config.GUIDE_CHECKOUT_SANDBOX_ENABLED !== 'true' || !config.STRIPE_SANDBOX_ID || !config.STRIPE_SANDBOX_KEY || !config.STRIPE_WEBHOOK_SECRET) throw new Error('An isolated sandbox is not configured.');
-  return config;
-};
+const configuration = () => readCommerceConfiguration(env as typeof env & CommerceEnvironment);
 export const commerceHandlers = createCommerceHandlers({
   getUser: getChatGPTUser,
   repository: () => { if (!env.DB) throw new Error('Commerce storage unavailable.'); return createCommerceRepository(env.DB); },
   guides: guideRepository,
-  stripe: () => new StripeClient(configuration().STRIPE_SANDBOX_KEY!),
-  config: () => ({ enabled: true, mode: 'sandbox', webhookSecret: configuration().STRIPE_WEBHOOK_SECRET!, origin: configuration().GUIDE_COMMERCE_ORIGIN ?? 'https://remaprx.com' }),
+  stripe: () => { const config = configuration(); return new StripeClient(config.key, fetch, config); },
+  config: () => { const {enabled, mode, accountId, webhookSecret, origin} = configuration(); return {enabled, mode, accountId, webhookSecret, origin}; },
   getProduct: getGuideProduct,
   offer: guideOffer as typeof guideOffer & { launchProductIds: string[] },
   reconcileLibrary: async userId => {

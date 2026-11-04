@@ -1,6 +1,6 @@
 # Guide commerce and protected delivery
 
-Implementation record: October 12, 2026. This implements the owner's metformin-first product policy in a disabled, sandbox-only payment integration. No merchant account, sandbox key, webhook endpoint, transaction or clinical/legal approval was created by this work. Fixture checks are not payment-provider acceptance.
+Implementation record: October 12, 2026, updated November 4. The original disabled sandbox integration now supports explicitly configured live payments for the owner's universal topic-guide requirement. The owner selected Microbiome Signatures LLC (`acct_1T5vhlRiEhjlKM3G`) as seller. No production activation, secret provisioning, provider transaction or clinical/legal approval is implied by this code. Fixture checks are not payment-provider acceptance.
 
 ## Offers, identity and access
 
@@ -26,9 +26,9 @@ Edition approval now includes `web_asset_key`, `web_sha256`, and exact human/cli
 
 ## Provider event handling
 
-`StripeClient` is an instance-scoped fetch client for Workers, pinned to **2026-09-30.endive**, the current version checked on October 12. It sends dynamic payment methods by omitting a method allowlist, uses hosted session URLs on Stripe's exact domains, and includes the supported `integration_identifier` parameter. The first release rejects live keys. There is no custom card form or card storage.
+`StripeClient` is an instance-scoped fetch client for Workers, retaining the tested **2026-09-30.endive** pin. It sends dynamic payment methods by omitting a method allowlist, uses hosted session URLs on Stripe's exact domains, and includes the supported `integration_identifier` parameter. Keys must match the explicit sandbox/live mode. Before requests, the deployed client verifies `GET /v1/account` against the configured account identity. Responses, including expanded/list objects, reject conflicting `livemode` values. There is no custom card form or card storage.
 
-The webhook checks HMAC SHA-256 over the untouched body, all `v1` signatures, a five-minute timestamp tolerance and `livemode:false`. The configured endpoint must deliver **snapshot events** using the pinned API version. Subscribe to:
+The webhook checks HMAC SHA-256 over the untouched body, all `v1` signatures, a five-minute timestamp tolerance and `livemode` matching the explicit deployment mode. Sandbox and live endpoints have separate signing secrets. The configured endpoint must deliver **snapshot events** using the pinned API version. Subscribe to:
 
 - `checkout.session.completed`, `checkout.session.async_payment_succeeded`, `checkout.session.async_payment_failed`, `checkout.session.expired`;
 - `customer.subscription.created`, `customer.subscription.updated`, `customer.subscription.deleted`;
@@ -44,10 +44,16 @@ The invoice ledger retains separate payment windows. A charge event arriving bef
 
 ## Configuration and launch handoff
 
-Apply the additive `drizzle/0011_guide_commerce.sql` migration, preserving existing profiles, orders and edition history. Configure an **isolated Stripe sandbox** through the host's secret mechanism, not Git or the browser:
+Apply the additive `drizzle/0011_guide_commerce.sql` and `drizzle/0013_guide_commerce_environment.sql` migrations (and `0012_guide_interests_library.sql` for saved guides), preserving existing profiles, orders and edition history. The new environment record binds a database to one account and mode. An unused database binds atomically on first commerce use. A mismatched binding or unclassified existing payment data blocks checkout, portal and webhook writes. Inspect and explicitly classify legacy data before migration; never delete orders or relabel sandbox entitlements as live. Use separate test/live databases and buckets.
+
+Protected library/asset reads also verify the account/mode binding, independently of whether new checkout is enabled. Missing commerce setup still permits a genuinely empty library; it never exposes existing unclassified paid entitlements. Keep the account/mode configured when disabling new sales so existing owners retain access. The account-library response no longer hardcodes a false “not launched” message after a purchase.
+
+Configure an **isolated Stripe sandbox** through the host's secret mechanism, not Git or the browser:
 
 | Name | Purpose |
 |---|---|
+| `GUIDE_COMMERCE_MODE` | `sandbox` (default) or explicitly `live` |
+| `STRIPE_ACCOUNT_ID` | Exact account identity for this environment; verified against Stripe before API requests |
 | `STRIPE_SANDBOX_ID` | Explicit environment inventory identifier |
 | `STRIPE_SANDBOX_KEY` | Prefer a restricted `rk_test_…` key scoped to the required customer/session/portal/read operations |
 | `STRIPE_WEBHOOK_SECRET` | Sandbox endpoint signing secret |
@@ -56,10 +62,16 @@ Apply the additive `drizzle/0011_guide_commerce.sql` migration, preserving exist
 
 Use isolated synthetic products/editions and approval fixtures only in that test environment. Never mark production metformin or other guides approved to test billing. Test hosted successful, delayed, declined, refunded and disputed transactions, signed redelivery and cancellation/renewal with a Stripe test clock. Record actual provider IDs without secrets and verify account-library delivery before accepting this adapter against Stripe.
 
-Live activation is deliberately unavailable in this code revision. It requires the actual merchant identity, tax jurisdiction/registrations and configuration, refund/consumer terms, support contacts, released clinical content, exact editorial/clinical/legal approvals, isolated provider acceptance results, reviewed live configuration and deployment verification. Do not reinterpret a successful build or synthetic test as fulfilling these dependencies.
+The November 4 code can run in live mode when explicitly configured. Set `GUIDE_COMMERCE_MODE=live`, `STRIPE_ACCOUNT_ID=acct_1T5vhlRiEhjlKM3G`, `GUIDE_CHECKOUT_LIVE_ENABLED=true`, the secret `STRIPE_LIVE_KEY` (prefer a restricted key with required account-identity, customer, Checkout, portal and reconciliation permissions), and the separate secret `STRIPE_LIVE_WEBHOOK_SECRET`. Live mode requires HTTPS and rejects a simultaneously enabled sandbox flag. The key must resolve to the configured merchant. None of these flags or secrets has been provisioned in production by this change.
+
+The owner selected Microbiome Signatures LLC on November 4. The connected account list reports live mode; a read-only product search for names containing “RemapRx” or “guide” returned no matches. This does not prove absence of differently named products. The integration prices each Checkout session from the server catalogue and does not require precreating 66 Stripe products. The connector did not return the account-read or tax-registration-list operations; charges-enabled status and registrations remain unverified. The Stripe integration planner selected hosted Checkout for the existing self-service digital-product and flat-rate membership flow.
+
+Actual activation still requires the merchant's tax jurisdiction/registrations and configuration, refund/consumer terms, support contacts, released clinical content, exact editorial/clinical/legal approvals, isolated provider acceptance results and deployment verification. No tax collection or currency conversion is newly enabled; adding either requires adapting and verifying the existing exact-total reconciliation. Do not reinterpret a successful build or synthetic test as fulfilling these dependencies. Current operational requirement is all 64 drug/condition guides, plus the two separate general reading products in the catalogue; only the topic guides establish universal page coverage.
 
 ## Verification
 
 `node scripts/check-guide-commerce.mjs` passes with an in-memory SQLite database using the actual additive migrations and real HMAC signatures. It covers price/release/authentication gates; idempotent Checkout retries; failed, pending and successful payment states; duplicate/out-of-order events; refund/dispute reversal; renewal, cancellation and expiry; newer invoice protection after an older refund; future-edition ownership; account isolation; manuscript schema/citation closure; file hash verification; private response headers; lost-session recovery; preservation of newer subscription identity; immediate/retried library reconciliation; and same-origin loopback testing. `npx tsc --noEmit` also passed after implementation. No actual Stripe sandbox transaction has been executed; hosted UI, provider shapes and portal configuration remain acceptance work once an isolated environment is available.
 
 Primary implementation references checked October 12: [fulfillment](https://docs.stripe.com/checkout/fulfillment), [webhook verification and ordering](https://docs.stripe.com/webhooks), [API version](https://docs.stripe.com/api/versioning), [Endive changes](https://docs.stripe.com/changelog/endive), [Checkout create](https://docs.stripe.com/api/checkout/sessions/create), [integration identifier](https://docs.stripe.com/changelog/dahlia/2026-03-25/adds-integration-identifier-parameter-to-checkout-sessions), [invoice payments](https://docs.stripe.com/api/invoice-payment/list), [subscription object](https://docs.stripe.com/api/subscriptions/object), and [dispute filtering](https://docs.stripe.com/api/disputes/list).
+
+November 4 references rechecked: [test/live keys and account scope](https://docs.stripe.com/keys), [webhook environments and signatures](https://docs.stripe.com/webhooks), and [product-search limitations](https://docs.stripe.com/search). `node scripts/check-guide-commerce.mjs --live-fixtures` runs the same payment/entitlement lifecycle using synthetic live-mode events. Both modes additionally test mismatched account/key/event rejection, merchant verification, nested response mode checking, database isolation and refusal to auto-classify legacy payment data. No real payment is created by either suite.

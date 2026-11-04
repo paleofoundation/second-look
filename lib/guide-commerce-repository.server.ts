@@ -12,6 +12,20 @@ export function createCommerceRepository(db: CommerceDatabase): CommerceReposito
   async function query<T>(sql: string, ...values: unknown[]): Promise<T[]> { const result = await statement(sql, ...values).all<T>(); if (!result.success) throw new Error('Commerce storage unavailable.'); return result.results ?? []; }
   async function first<T>(sql: string, ...values: unknown[]): Promise<T | null> { return (await query<T>(sql, ...values))[0] ?? null; }
   return {
+    async assertEnvironment(accountId, mode) {
+      // Bind only an unused database. Existing unclassified payment records need
+      // an explicit migration; guessing their mode could grant unpaid access.
+      await query(`INSERT INTO guide_commerce_environment(id,stripe_account_id,mode)
+        SELECT 1,?,? WHERE NOT EXISTS(SELECT 1 FROM guide_customers)
+        AND NOT EXISTS(SELECT 1 FROM guide_checkout_attempts)
+        AND NOT EXISTS(SELECT 1 FROM guide_orders)
+        AND NOT EXISTS(SELECT 1 FROM guide_memberships)
+        AND NOT EXISTS(SELECT 1 FROM guide_invoice_payments)
+        AND NOT EXISTS(SELECT 1 FROM guide_stripe_events)
+        ON CONFLICT(id) DO NOTHING`, accountId, mode);
+      const row = await first<{ stripe_account_id: string; mode: string }>('SELECT stripe_account_id,mode FROM guide_commerce_environment WHERE id=1');
+      if (!row || row.stripe_account_id !== accountId || row.mode !== mode) throw new Error('Commerce database belongs to another or unclassified Stripe environment.');
+    },
     async readEditions(productId) { return (await query<EditionRecord>('SELECT * FROM guide_editions WHERE product_id = ?', productId)).map(guideEditionFromRecord); },
     async customer(userId) { return (await first<{ stripe_customer_id: string }>('SELECT stripe_customer_id FROM guide_customers WHERE user_id = ?', userId))?.stripe_customer_id ?? null; },
     async saveCustomer(userId, customerId) {

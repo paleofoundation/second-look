@@ -111,7 +111,7 @@ export function guideLibraryView(userId: string, library: GuideLibrary, getProdu
   });
   const member = library.membership?.userId === userId ? library.membership : null;
   const membership = member ? { state: member.state === 'active' && !activeGuideMembership(member, userId, now) ? 'expired' : ['active', 'inactive', 'cancelled', 'terminated', 'refunded', 'disputed', 'expired', 'past_due', 'pending'].includes(member.state) ? member.state : 'unknown', expiresAt: Number.isFinite(instant(member.currentPeriodEnd)) ? member.currentPeriodEnd : null, cancelAtPeriodEnd: member.cancelAtPeriodEnd === true } : null;
-  return { commerce: 'not_launched' as const, purchases, membership, availableGuides, message: 'Sales and memberships have not launched. Purchased topics include future approved editions independently of membership; only released, approved files can be downloaded.' };
+  return { commerce: 'account_library' as const, purchases, membership, availableGuides, message: 'Purchased topics include future approved editions independently of membership; only released, approved files can be downloaded.' };
 }
 
 export function createGuideHandlers(deps: GuideDependencies) {

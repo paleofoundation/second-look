@@ -1,5 +1,11 @@
 # Second Look rule changelog
 
+## November 4, 2026 - Purchasable guide for every drug and condition
+
+Source: direct owner instruction, “All drug and conditions pages each need a guide that is available for purchase,” and selection of Microbiome Signatures LLC for Stripe. Scope: every current and future drug/condition parent, including discovery entries, with its own substantive guide. Supersedes treating the first three guides as the complete scope or a pending product mapping as completion. Prices and permanent topic ownership remain unchanged. Contracts: `TOPIC-GUIDES.md`, `PROJECT-RULES.md`, `GUIDE-COMMERCE.md`; current inventory: `GUIDE-PORTFOLIO.md`.
+
+Implementation: remove acceptance assertions that require all guides to remain pending; require complete per-topic mapping while permitting actual releases, track all topics and their manuscript/release states, and prepare explicit live-versus-sandbox commerce support. Existing evidence, exact-edition approval and private fulfillment checks remain. Verification results and remaining work are recorded in the portfolio and commerce contracts. No finished guide, clinical approval, live sale or production deployment is implied by this requirement or by a passing code check. This is a site-specific requirement; no upstream rule snapshot is changed.
+
 ## October 28, 2026 - guide-library asset preload repair
 
 During the owner-authorized publication follow-up, the preview request log exposed the preexisting missing CSS-only JavaScript preload `guide-library-CCVnavNE.js` despite an empty bounded browser-console result. Move the unchanged shared guide-library stylesheet from its two client import sites to the existing global root-layout stylesheet list. No account, billing, scientific, protected-content or navigation behavior changes. Verify the production RSC asset manifest against emitted assets and rendered article/citation behavior before publication; receipts follow in `research/batches/REMAPRX-PRELOAD-REPAIR-20261028/`.

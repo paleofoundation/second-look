@@ -48,6 +48,6 @@ export function CheckoutButton({productId,kind='guide',label}:{productId?:string
 export function GuidePurchaseControls({product}:{product:GuideProductView}) {
   const edition=useOwnedGuide(product);
   if(edition)return <a className="topic-guide-cta" href={'/guides/read/'+encodeURIComponent(edition.editionId)}>Open your guide</a>;
-  if(product.releaseState!=='released')return <span className="omr-guide-state">In development · not available to buy</span>;
+  if(product.releaseState!=='released')return <span className="omr-guide-state">{product.releaseState==='withdrawn'?'Withdrawn':product.statusLabel} · not available to buy</span>;
   return <CheckoutButton productId={product.id} label="Get this guide · $49"/>;
 }

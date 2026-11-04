@@ -1,6 +1,6 @@
 import { approvedGuideEdition, activeGuideMembership, type GuideEdition, type GuideProduct, type GuideRepository } from './guide-access';
 import { ACCOUNT_PRIVATE_HEADERS, sameOriginMutation, type ReaderIdentity } from './profile-api';
-import { verifyStripeEvent, type StripeEvent, type StripeGateway, type StripeObject } from './stripe-client';
+import { verifyStripeEvent, type StripeEvent, type StripeGateway, type StripeObject, type StripeMode } from './stripe-client';
 
 export type CommerceProduct = GuideProduct & { priceMinor: number; currency: string };
 export type CheckoutAttempt = { id: string; userId: string; requestKey: string; kind: 'guide' | 'membership'; productId: string | null; editionId: string | null; amount: number; currency: string; customerId: string; sessionId: string | null; sessionUrl: string | null; createdAt: string };
@@ -9,6 +9,7 @@ export type InvoiceProjection = { invoiceId: string; userId: string; subscriptio
 export type SubscriptionProjection = { userId: string; subscriptionId: string; customerId: string; state: string; cancelAtPeriodEnd: boolean };
 export type CommerceProjection = { order?: OrderProjection; invoice?: InvoiceProjection; subscription?: SubscriptionProjection };
 export interface CommerceRepository {
+  assertEnvironment(accountId: string, mode: StripeMode): Promise<void>;
   readEditions(productId: string): Promise<GuideEdition[]>;
   customer(userId: string): Promise<string | null>;
   saveCustomer(userId: string, customerId: string): Promise<string>;
@@ -27,7 +28,7 @@ export interface CommerceRepository {
   eventUser(id: string): Promise<string | null>;
   applyEvent(event: StripeEvent, projection: CommerceProjection, owner: string, now: Date): Promise<void>;
 }
-export type CommerceConfig = { enabled: boolean; mode: 'sandbox'; webhookSecret: string; origin: string };
+export type CommerceConfig = { enabled: boolean; mode: StripeMode; accountId: string; webhookSecret: string; origin: string };
 export type CommerceDependencies = {
   getUser(): Promise<ReaderIdentity | null>; repository(): CommerceRepository; guides(): GuideRepository; stripe(): StripeGateway;
   config(): CommerceConfig; getProduct(id: string): CommerceProduct | undefined;
@@ -139,8 +140,8 @@ export function createCommerceHandlers(deps: CommerceDependencies) {
   const user = async () => { try { return await deps.getUser(); } catch { return null; } };
   const settings = () => {
     const config = deps.config(); const origin = new URL(config.origin);
-    const secureOrLoopback = origin.protocol === 'https:' || origin.protocol === 'http:' && ['localhost', '127.0.0.1', '[::1]'].includes(origin.hostname);
-    if (!config.enabled || config.mode !== 'sandbox' || !secureOrLoopback || origin.origin !== config.origin) throw new Error('Checkout not configured.');
+    const secureOrLoopback = origin.protocol === 'https:' || config.mode === 'sandbox' && origin.protocol === 'http:' && ['localhost', '127.0.0.1', '[::1]'].includes(origin.hostname);
+    if (!config.enabled || !['sandbox', 'live'].includes(config.mode) || !/^acct_[A-Za-z0-9]+$/.test(config.accountId) || !secureOrLoopback || origin.origin !== config.origin) throw new Error('Checkout not configured.');
     return config;
   };
   return {
@@ -156,6 +157,7 @@ export function createCommerceHandlers(deps: CommerceDependencies) {
       let checkoutRepo: CommerceRepository | undefined; let lockOwner: string | undefined;
       try {
         const config = settings(); const at = now(); const repo = deps.repository(); const stripe = deps.stripe();
+        await repo.assertEnvironment(config.accountId, config.mode);
         checkoutRepo = repo; const owner = uuid();
         if (!await repo.acquireEventLock(owner, at.getTime())) return json({ error: 'Checkout is busy. Please retry.' }, 503);
         lockOwner = owner;
@@ -231,18 +233,21 @@ export function createCommerceHandlers(deps: CommerceDependencies) {
       if (!sameOriginMutation(request)) return json({ error: 'Request origin rejected.' }, 403);
       if (new URL(request.url).search || (await request.text()).trim()) return json({ error: 'Billing always uses your signed-in account.' }, 400);
       try {
-        const config = settings(); const customer = await deps.repository().customer(identity.userId);
+        const config = settings(); const repo = deps.repository();
+        await repo.assertEnvironment(config.accountId, config.mode);
+        const customer = await repo.customer(identity.userId);
         if (!customer) return json({ error: 'This account does not have a billing profile yet.' }, 404);
         const session = await deps.stripe().request('/v1/billing_portal/sessions', { customer, return_url: config.origin + '/guides/library' }, 'POST');
         return json({ url: hostedUrl(session.url, 'billing.stripe.com') });
       } catch { return json({ error: 'Billing is temporarily unavailable. Please retry.' }, 503); }
     },
     async webhook(request: Request) {
-      let event: StripeEvent; const at = now();
-      try { const config = settings(); event = await verifyStripeEvent(await request.text(), request.headers.get('stripe-signature'), config.webhookSecret, at); } catch { return json({ error: 'Webhook verification failed.' }, 400); }
+      let event: StripeEvent; let config: CommerceConfig; const at = now();
+      try { config = settings(); event = await verifyStripeEvent(await request.text(), request.headers.get('stripe-signature'), config.webhookSecret, at, config.mode); } catch { return json({ error: 'Webhook verification failed.' }, 400); }
       let repo: CommerceRepository | undefined; const owner = uuid(); let locked = false;
       try {
         repo = deps.repository();
+        await repo.assertEnvironment(config.accountId, config.mode);
         locked = await repo.acquireEventLock(owner, at.getTime());
         if (!locked) return json({ error: 'Reconciliation is busy; retry this event.' }, 503);
         if (await repo.hasEvent(event.id)) {

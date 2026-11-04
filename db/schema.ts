@@ -118,3 +118,7 @@ export const guideStripeEvents = sqliteTable('guide_stripe_events', {
 export const guideCommerceLocks = sqliteTable('guide_commerce_locks', {
   name:text('name').primaryKey(),owner:text('owner').notNull(),expiresAt:integer('expires_at').notNull(),
 });
+export const guideCommerceEnvironment = sqliteTable('guide_commerce_environment', {
+  id:integer('id').primaryKey(),stripeAccountId:text('stripe_account_id').notNull(),
+  mode:text('mode',{enum:['sandbox','live']}).notNull(),
+});

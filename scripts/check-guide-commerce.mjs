@@ -26,11 +26,19 @@ const { createGuideRepository } = load(path.join(root, 'lib/guide-repository.ser
 const { createCommerceHandlers } = load(path.join(root, 'lib/guide-commerce.ts'));
 const { createGuideHandlers, approvedGuideEdition, guideEntitlement, activeGuideMembership } = load(path.join(root, 'lib/guide-access.ts'));
 const { StripeClient, verifyStripeEvent } = load(path.join(root, 'lib/stripe-client.ts'));
+const { readCommerceConfiguration } = load(path.join(root, 'lib/guide-commerce-config.ts'));
+const testMode = process.argv.includes('--live-fixtures') ? 'live' : 'sandbox';
+const fixtureLive = testMode === 'live';
 const { guideManuscriptSchema } = load(path.join(root, 'lib/guide-manuscript.ts'));
 const sql = new DatabaseSync(':memory:');
-for (const file of ['0000_fancy_skullbuster.sql', '0001_reader_profiles.sql', '0002_lonely_molly_hayes.sql', '0003_complete_blue_shield.sql', '0011_guide_commerce.sql']) sql.exec(fs.readFileSync(path.join(root, 'drizzle', file), 'utf8'));
+for (const file of ['0000_fancy_skullbuster.sql', '0001_reader_profiles.sql', '0002_lonely_molly_hayes.sql', '0003_complete_blue_shield.sql', '0011_guide_commerce.sql', '0013_guide_commerce_environment.sql']) sql.exec(fs.readFileSync(path.join(root, 'drizzle', file), 'utf8'));
 const db = { prepare(query) { return { values: [], bind(...values) { this.values = values; return this; }, async all() { return { success: true, results: sql.prepare(query).all(...this.values) }; } }; }, async batch(statements) { sql.exec('BEGIN'); try { const result = []; for (const statement of statements) result.push(await statement.all()); sql.exec('COMMIT'); return result; } catch (error) { sql.exec('ROLLBACK'); throw error; } } };
 const repo = createCommerceRepository(db);
+assert.deepEqual(await createGuideRepository(db,undefined,null).readLibrary('fixture-reader-a',new Date().toISOString()),{orders:[],membership:null,editions:[]},'Empty libraries work before commerce setup');
+await repo.assertEnvironment('acct_fixture', testMode);
+await repo.assertEnvironment('acct_fixture', testMode);
+await assert.rejects(repo.assertEnvironment('acct_other', testMode), /another or unclassified/);
+await assert.rejects(repo.assertEnvironment('acct_fixture', fixtureLive ? 'sandbox' : 'live'), /another or unclassified/);
 const now = new Date('2026-10-12T12:00:00.000Z');
 const sha = value => createHash('sha256').update(value).digest('hex');
 const pdf = Buffer.from('%PDF-1.7\nSynthetic test guide.');
@@ -45,8 +53,38 @@ assert(approvedGuideEdition(product, edition, now));
 for (const field of ['approvedWebSha256', 'qualifiedApprovedWebSha256', 'legalApprovedWebSha256']) assert(!approvedGuideEdition(product, { ...edition, [field]: null }, now), field + ' is required');
 assert(!guideManuscriptSchema.safeParse({ ...manuscript, chapters: [{ id: 'x', title: 'x', blocks: [{ type: 'paragraph', text: 'x', sourceIds: ['MISSING'] }] }] }).success);
 assert.throws(() => new StripeClient('sk_live_never-allowed'));
+// Synthetic keys only. Every fetch below is a local stub, never the Stripe API.
+const sandboxEnv = { STRIPE_ACCOUNT_ID: 'acct_fixture', GUIDE_CHECKOUT_SANDBOX_ENABLED: 'true', STRIPE_SANDBOX_ID: 'sandbox_fixture', STRIPE_SANDBOX_KEY: 'rk_test_synthetic', STRIPE_WEBHOOK_SECRET: 'whsec_synthetic' };
+const liveEnv = { GUIDE_COMMERCE_MODE: 'live', STRIPE_ACCOUNT_ID: 'acct_fixture', GUIDE_CHECKOUT_LIVE_ENABLED: 'true', STRIPE_LIVE_KEY: 'rk_live_synthetic', STRIPE_LIVE_WEBHOOK_SECRET: 'whsec_live_synthetic' };
+assert.equal(readCommerceConfiguration(sandboxEnv).mode, 'sandbox');
+assert.equal(readCommerceConfiguration(liveEnv).mode, 'live');
+for (const invalid of [{}, {...liveEnv, GUIDE_CHECKOUT_LIVE_ENABLED: 'false'}, {...liveEnv, STRIPE_LIVE_KEY: 'rk_test_synthetic'}, {...liveEnv, STRIPE_LIVE_WEBHOOK_SECRET: undefined}, {...liveEnv, STRIPE_ACCOUNT_ID: undefined}, {...liveEnv, GUIDE_CHECKOUT_SANDBOX_ENABLED: 'true'}, {...liveEnv, GUIDE_COMMERCE_ORIGIN: 'http://localhost:3000'}, {...sandboxEnv, STRIPE_SANDBOX_ID: undefined}, {...sandboxEnv, STRIPE_SANDBOX_KEY: 'rk_live_synthetic'}]) assert.throws(() => readCommerceConfiguration(invalid));
+for (const mode of ['sandbox', 'live']) {
+  const key = mode === 'live' ? liveEnv.STRIPE_LIVE_KEY : sandboxEnv.STRIPE_SANDBOX_KEY;
+  const requests = [];
+  const fakeFetch = async (url, options) => { requests.push({url, options}); return Response.json(url.endsWith('/account') ? {id:'acct_fixture'} : {id:'cs_fixture',livemode:mode === 'live'}); };
+  const client = new StripeClient(key, fakeFetch, {mode, accountId:'acct_fixture'});
+  await client.request('/v1/checkout/sessions', {mode:'payment'}, 'POST', 'synthetic-idempotency');
+  await client.request('/v1/checkout/sessions/cs_fixture');
+  assert.equal(requests.filter(item => item.url.endsWith('/account')).length, 1, 'Verify merchant once per client');
+  assert.equal(requests[1].options.headers['Idempotency-Key'], 'synthetic-idempotency');
+  const wrongAccount = new StripeClient(key, async () => Response.json({id:'acct_other'}), {mode, accountId:'acct_fixture'});
+  await assert.rejects(wrongAccount.request('/v1/checkout/sessions', {}, 'POST'), /configured merchant/);
+  const wrongMode = new StripeClient(key, async url => Response.json(url.endsWith('/account') ? {id:'acct_fixture'} : {object:'list',data:[{id:'cs_fixture',livemode:mode !== 'live'}]}), {mode, accountId:'acct_fixture'});
+  await assert.rejects(wrongMode.request('/v1/checkout/sessions'), /environment/);
+  const raw = JSON.stringify({id:'evt_modes',type:'checkout.session.completed',created:Math.floor(now.getTime()/1000),livemode:mode === 'live',data:{object:{id:'cs_fixture'}}});
+  const time = Math.floor(now.getTime()/1000);
+  const signature = `t=${time},v1=${createHmac('sha256','whsec_modes').update(`${time}.${raw}`).digest('hex')}`;
+  await verifyStripeEvent(raw, signature, 'whsec_modes', now, mode);
+  await assert.rejects(verifyStripeEvent(raw, signature, 'whsec_modes', now, mode === 'live' ? 'sandbox' : 'live'), /environment/);
+}
 const assets = new Map([['private/fixture.json', web], ['private/fixture.pdf', pdf], ['private/fixture-summary.pdf', pdf]]);
-const guides = createGuideRepository(db, { async get(key) { const data = assets.get(key); return data ? { async arrayBuffer() { return Uint8Array.from(data).buffer; } } : null; } });
+const guides = createGuideRepository(db, { async get(key) { const data = assets.get(key); return data ? { async arrayBuffer() { return Uint8Array.from(data).buffer; } } : null; } }, {accountId:'acct_fixture',mode:testMode});
+for (const identity of [{accountId:'acct_other',mode:testMode},{accountId:'acct_fixture',mode:fixtureLive?'sandbox':'live'}]) {
+  const wrongEnvironment = createGuideRepository(db, {async get(){throw new Error('Must not access assets');}}, identity);
+  await assert.rejects(wrongEnvironment.readLibrary('fixture-reader-a',now.toISOString()),/configured Stripe environment/);
+  await assert.rejects(wrongEnvironment.readAsset('private/fixture.pdf'),/configured Stripe environment/);
+}
 let currentUser = { userId: 'fixture-reader-a' }; let generated = 0;
 const paths = new Map(); const calls = [];
 const gateway = { async request(endpoint, params = {}, method = 'GET', key) {
@@ -61,8 +99,13 @@ const secret = 'whsec_synthetic_only';
 const products = new Map([[product.id, product]]);
 const offer = { enabled: false, monthlyMinor: 5900, currency: 'USD', launchMinimum: 3, launchProductIds: ['FIRST', 'SECOND', 'THIRD'] };
 const reconciledUsers = [];
-const deps = { reconcileLibrary: async userId => { reconciledUsers.push(userId); }, getUser: async () => currentUser, repository: () => repo, guides: () => guides, stripe: () => gateway, config: () => ({ enabled: true, mode: 'sandbox', webhookSecret: secret, origin: 'https://remaprx.com' }), getProduct: value => products.get(value), offer, now: () => now, uuid: () => `fixture-attempt-${++generated}` };
+const deps = { reconcileLibrary: async userId => { reconciledUsers.push(userId); }, getUser: async () => currentUser, repository: () => repo, guides: () => guides, stripe: () => gateway, config: () => ({ enabled: true, mode: testMode, accountId: 'acct_fixture', webhookSecret: secret, origin: 'https://remaprx.com' }), getProduct: value => products.get(value), offer, now: () => now, uuid: () => `fixture-attempt-${++generated}` };
 const handlers = createCommerceHandlers(deps);
+const wrongModeRaw = JSON.stringify({id:'evt_wrongmode',type:'checkout.session.completed',created:Math.floor(now.getTime()/1000),livemode:!fixtureLive,data:{object:{id:'cs_fixture'}}});
+const wrongModeTime = Math.floor(now.getTime()/1000);
+const wrongModeSignature = `t=${wrongModeTime},v1=${createHmac('sha256',secret).update(`${wrongModeTime}.${wrongModeRaw}`).digest('hex')}`;
+assert.equal((await handlers.webhook(new Request('https://remaprx.com/api/stripe/webhook',{method:'POST',headers:{'stripe-signature':wrongModeSignature},body:wrongModeRaw}))).status,400);
+assert.equal(await repo.hasEvent('evt_wrongmode'),false,'Mismatched mode is rejected before storage');
 const request = (body, key = '11111111-1111-4111-8111-111111111111') => new Request('https://remaprx.com/api/checkout', { method: 'POST', headers: { origin: 'https://remaprx.com', 'content-type': 'application/json', 'idempotency-key': key }, body: JSON.stringify(body) });
 assert.equal((await handlers.checkout(request({ kind: 'guide', productId: product.id, amount: 1 }))).status, 400);
 assert.equal((await handlers.checkout(request({ kind: 'membership' }))).status, 409);
@@ -81,7 +124,7 @@ paths.set('/v1/checkout/sessions/cs_test_fixture', { id: 'cs_test_fixture', meta
 paths.set('/v1/payment_intents/pi_fixture', { id: 'pi_fixture', status: 'processing', latest_charge: { id: 'ch_fixture', amount_refunded: 0, disputed: false } });
 const sign = raw => { const time = Math.floor(now.getTime() / 1000); return `t=${time},v1=${createHmac('sha256', secret).update(`${time}.${raw}`).digest('hex')}`; };
 let eventNumber = 0;
-async function event(type, object, eventId = `evt_fixture${++eventNumber}`) { const raw = JSON.stringify({ id: eventId, type, created: Math.floor(now.getTime() / 1000), livemode: false, data: { object } }); return handlers.webhook(new Request('https://remaprx.com/api/stripe/webhook', { method: 'POST', headers: { 'stripe-signature': sign(raw) }, body: raw })); }
+async function event(type, object, eventId = `evt_fixture${++eventNumber}`) { const raw = JSON.stringify({ id: eventId, type, created: Math.floor(now.getTime() / 1000), livemode: fixtureLive, data: { object } }); return handlers.webhook(new Request('https://remaprx.com/api/stripe/webhook', { method: 'POST', headers: { 'stripe-signature': sign(raw) }, body: raw })); }
 assert.equal((await event('checkout.session.completed', { id: 'cs_test_fixture' }, 'evt_pending')).status, 200);
 assert.equal((await guides.readLibrary(attempt.userId, now.toISOString())).orders[0].status, 'pending');
 paths.get('/v1/payment_intents/pi_fixture').status = 'requires_payment_method';
@@ -90,6 +133,7 @@ assert.equal((await guides.readLibrary(attempt.userId, now.toISOString())).order
 paths.get('/v1/payment_intents/pi_fixture').status = 'succeeded'; paths.get('/v1/checkout/sessions/cs_test_fixture').payment_status = 'paid';
 assert.equal((await event('checkout.session.async_payment_succeeded', { id: 'cs_test_fixture' }, 'evt_paid')).status, 200);
 assert.equal((await guides.readLibrary(attempt.userId, now.toISOString())).orders[0].status, 'paid');
+await assert.rejects(createGuideRepository(db,undefined,null).readLibrary(attempt.userId,now.toISOString()),/configured Stripe environment/,'Existing paid rights cannot be read by removing the deployment identity');
 assert.equal((await (await event('checkout.session.async_payment_succeeded', { id: 'cs_test_fixture' }, 'evt_paid')).json()).duplicate, true);
 assert.equal(sql.prepare('SELECT COUNT(*) AS n FROM guide_orders').get().n, 1);
 assert(reconciledUsers.includes(attempt.userId), 'Verified payment triggers library reconciliation without a page visit');
@@ -156,15 +200,17 @@ assert.equal((await handlers.portal(new Request('https://remaprx.com/api/billing
 await assert.rejects(() => verifyStripeEvent('{}', 't=1,v1=' + '0'.repeat(64), secret, now));
 const raw = JSON.stringify({ id: 'evt_badmode', type: 'invoice.paid', created: 1, livemode: true, data: { object: { id: 'in_fixture1' } } }); await assert.rejects(() => verifyStripeEvent(raw, sign(raw), secret, now));
 assert(await repo.acquireEventLock('held-fixture', now.getTime())); assert.equal((await event('invoice.paid', { id: 'in_fixture2' })).status, 503); await repo.releaseEventLock('held-fixture');
-const retryRaw = JSON.stringify({ id: 'evt_libraryretry', type: 'invoice.paid', created: Math.floor(now.getTime() / 1000), livemode: false, data: { object: { id: 'in_fixture2' } } });
+const retryRaw = JSON.stringify({ id: 'evt_libraryretry', type: 'invoice.paid', created: Math.floor(now.getTime() / 1000), livemode: fixtureLive, data: { object: { id: 'in_fixture2' } } });
 const retryRequest = () => new Request('https://remaprx.com/api/stripe/webhook', { method: 'POST', headers: { 'stripe-signature': sign(retryRaw) }, body: retryRaw });
 const failedLibrary = createCommerceHandlers({ ...deps, reconcileLibrary: async () => { throw new Error('Temporary library failure'); } });
 assert.equal((await failedLibrary.webhook(retryRequest())).status, 503);
 assert(await repo.hasEvent('evt_libraryretry'), 'Payment commit remains durable when library reconciliation fails');
 const beforeRetry = reconciledUsers.length; assert.equal((await handlers.webhook(retryRequest())).status, 200); assert.equal(reconciledUsers.length, beforeRetry + 1, 'Duplicate receipt retries the failed library addition');
 const loopbackHandlers = createCommerceHandlers({ ...deps, config: () => ({ ...deps.config(), origin: 'http://127.0.0.1:3000' }) });
-assert.equal((await loopbackHandlers.portal(new Request('http://127.0.0.1:3000/api/billing/portal', { method: 'POST', headers: { origin: 'http://127.0.0.1:3000' } }))).status, 200);
+assert.equal((await loopbackHandlers.portal(new Request('http://127.0.0.1:3000/api/billing/portal', { method: 'POST', headers: { origin: 'http://127.0.0.1:3000' } }))).status, fixtureLive ? 503 : 200);
 assert.equal((await loopbackHandlers.portal(new Request('http://127.0.0.1:3000/api/billing/portal', { method: 'POST', headers: { origin: 'http://localhost:3000' } }))).status, 403);
 const unsafeOrigin = createCommerceHandlers({ ...deps, config: () => ({ ...deps.config(), origin: 'http://example.com' }) }); assert.equal((await unsafeOrigin.portal(new Request('https://remaprx.com/api/billing/portal', { method: 'POST', headers: { origin: 'https://remaprx.com' } }))).status, 503);
 assert.equal((await createCommerceHandlers({ ...deps, config() { throw new Error('Not configured'); } }).checkout(request({ kind: 'guide', productId: product.id }))).status, 503);
-console.log('PASS: isolated SQLite + signed webhook fixtures cover release/price/account gates, idempotency, delayed/failing payments, current-state reconciliation, refunds/disputes, renewals/cancellation/expiry, permanent topic rights and protected reader/file integrity. No Stripe sandbox transaction was executed.');
+sql.exec('DELETE FROM guide_commerce_environment');
+await assert.rejects(repo.assertEnvironment('acct_fixture',testMode),/another or unclassified/,'An unclassified database containing legacy payments must never auto-bind');
+console.log(`PASS (${testMode} fixtures): isolated SQLite + signed webhook fixtures cover release/price/account gates, idempotency, delayed/failing payments, current-state reconciliation, refunds/disputes, renewals/cancellation/expiry, permanent topic rights and protected reader/file integrity. No Stripe transaction was executed.`);

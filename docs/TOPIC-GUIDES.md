@@ -4,6 +4,10 @@ Adopted October 12, 2026 from the owner's explicit implementation plan. This con
 
 ## Offers and sequence
 
+**November 4, 2026 owner clarification:** every drug page and every condition page must have its own substantive guide available for purchase. This covers every current and future canonical or discovery parent page. A mapped product, outline, preview, coming-soon card or membership promise does not complete this requirement. The first three releases are a sequence, not a limit on the guide catalogue. A condition guide covers its intervention landscape and cannot be replaced by one drug's guide. Preserve the existing $49 one-time ownership and $59/month membership terms.
+
+Completion means the topic's finished web guide and PDF have passed the existing exact-edition checks, its own page links to the correct product, and a reader can complete live checkout and receive the correct protected guide. Track writing, review, release and verified purchase/fulfillment separately. Do not mark unfinished guides available merely to satisfy the universal requirement. There is no fixed source-count ceiling: reconcile the actual sources of each guide. `GUIDE-PORTFOLIO.md` records the current inventory and remaining work.
+
 - Individual topic guide: **$49 USD once**, protected web guide, reader-requested PDF, permanent topic ownership including future approved editions, and retained edition history.
 - Membership: **$59 USD per month**, access to all released guides and their updates while subscribed. No annual plan or physician edition in the first release.
 - First release sequence: **Metformin → Long COVID → itraconazole**. Membership cannot activate until these three substantive guides pass release checks. Public articles and authenticated full research reviews remain free under the existing reader-intake policy.

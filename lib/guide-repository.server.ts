@@ -1,6 +1,8 @@
 import 'server-only';
 import { env } from 'cloudflare:workers';
 import type { GuideEdition, GuideLibrary, GuideMembership, GuideOrder, GuideRepository } from './guide-access';
+import { readCommerceIdentity, type CommerceEnvironment } from './guide-commerce-config';
+import type { StripeMode } from './stripe-client';
 
 type Statement = { bind(...values: unknown[]): Statement; all<T>(): Promise<{ success: boolean; results: T[] }> };
 type Database = { prepare(sql: string): Statement };
@@ -28,11 +30,27 @@ export function guideEditionFromRecord(row: EditionRecord): GuideEdition { retur
         legalReviewedAt: row.legal_reviewed_at, legalReviewDecision: row.legal_review_decision, legalApprovedVersion: row.legal_approved_version,
         legalApprovedPdfSha256: row.legal_approved_pdf_sha256, legalApprovedSummarySha256: row.legal_approved_summary_sha256, legalApprovedMarketingSha256: row.legal_approved_marketing_sha256 }; }
 
-export function createGuideRepository(db: Database, bucket?: Bucket): GuideRepository {
+export function createGuideRepository(db: Database, bucket?: Bucket, identity?: {accountId: string; mode: StripeMode} | null): GuideRepository {
   async function query<T>(sql: string, ...values: unknown[]): Promise<T[]> { const result = await db.prepare(sql).bind(...values).all<T>(); if (!result.success || !Array.isArray(result.results)) throw new Error('Guide storage read failed'); return result.results; }
+  async function verifyEnvironment() {
+    if (identity === undefined) return true; // Standalone test repositories can omit deployment identity.
+    if (identity) {
+      const [binding] = await query<{stripe_account_id:string;mode:string}>('SELECT stripe_account_id,mode FROM guide_commerce_environment WHERE id=1');
+      if (binding) {
+        if (binding.stripe_account_id !== identity.accountId || binding.mode !== identity.mode) throw new Error('Guide storage does not match the configured Stripe environment.');
+        return true;
+      }
+    }
+    // Before commerce setup, an empty library remains usable. Never read or
+    // reinterpret existing entitlements without a verified environment binding.
+    const [existing] = await query<{present:number}>('SELECT EXISTS(SELECT 1 FROM guide_orders) OR EXISTS(SELECT 1 FROM guide_memberships) AS present');
+    if (existing?.present) throw new Error('Existing guide entitlements require a configured Stripe environment.');
+    return false;
+  }
   return {
     async readLibrary(userId: string, now: string): Promise<GuideLibrary> {
       if (!userId) throw new Error('A signed-in account is required');
+      if (!await verifyEnvironment()) return {orders:[],membership:null,editions:[]};
       const [orderRows, memberRows, editionRows] = await Promise.all([
         query<OrderRecord>('SELECT user_id, product_id, edition_id, status, currency, total_minor, created_at, updated_at FROM guide_orders WHERE user_id = ? ORDER BY updated_at DESC', userId),
         query<MemberRecord>('SELECT user_id, state, current_period_end, cancel_at_period_end FROM guide_memberships WHERE user_id = ?', userId),
@@ -46,11 +64,12 @@ export function createGuideRepository(db: Database, bucket?: Bucket): GuideRepos
       const editions = editionRows.map(guideEditionFromRecord);
       return { orders, membership, editions };
     },
-    async readAsset(key: string) { if (!bucket) throw new Error('Private guide storage unavailable'); const object = await bucket.get(key); return object ? object.arrayBuffer() : null; },
+    async readAsset(key: string) { if (!await verifyEnvironment() || !bucket) throw new Error('Private guide storage unavailable'); const object = await bucket.get(key); return object ? object.arrayBuffer() : null; },
   };
 }
 
 export function guideRepository(): GuideRepository {
   if (!env.DB) throw new Error('Guide database unavailable');
-  return createGuideRepository(env.DB, env.BUCKET);
+  const configuration = env as typeof env & CommerceEnvironment;
+  return createGuideRepository(env.DB, env.BUCKET, configuration.STRIPE_ACCOUNT_ID ? readCommerceIdentity(configuration) : null);
 }
