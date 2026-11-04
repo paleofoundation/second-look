@@ -501,3 +501,10 @@ Use the existing Status information-card interaction and appearance: hover with 
 
 
 Contraindications card publication completed November 4, 2026. PR #38 merged as db35086dd041c9f603e94c7d6f1385218511e21f. Cloudflare workflow 41884295042 succeeded; Worker remaprx version 92d13e31-ae0f-4ab5-8831-19c414dc601d deployed at 18:10:24 UTC. Live apex Metformin and ivermectin show the heading information icon. Metformin's card contains all three notes and closes on Escape; its 390px layout has no overflow. Initial old apex markup cleared after propagation without configuration changes. All treatment-specific data/citations and physician-packet notes remain unchanged. Exact receipt: CONTRAINDICATIONS-TOOLTIP-20261104.json; screenshot: docs/verification/contraindications-tooltip/live-desktop.jpg. This supersedes publication-pending status.
+
+
+## November 4, 2026 — Research Feed section breathing room
+
+Source: owner's screenshots at 8:20:31 PM and 8:20:37 PM, and request to increase the gap after the final FAQ accordion, remove “Study summaries” below Research Feed, and give the section proper breathing room. Apply to the shared article renderer across article types. Supersedes the 40px FAQ-to-feed gap and duplicate article-feed subheading. Use an 80px section break on desktop/tablet, 64px on phones up to 575px, and 32px below the Research Feed heading before its content. Preserve the existing space above FAQs, study cards and their Open/Link/Email behavior, section order, citation identities and studies/research fragments. Standalone catalog headings remain unchanged.
+
+Consulted the Microbiome Medicine canonical Research Feed card and PepsAnon FAQ/prose references read-only, with its reference tab retained. Sites and TypeSafe guidance keep this bounded presentation change in deterministic code. Verification and live publication are recorded in RESEARCH-FEED-SPACING-20261104.json; pending at adoption.
