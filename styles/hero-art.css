@@ -1,7 +1,7 @@
 /* RemapRx topic illustration layout. Subject artwork remains fully visible. */
 .omr-theme .research-hero--topic-art .research-hero__wrapper {
   display: grid;
-  grid-template-columns: minmax(230px, 25%) minmax(0, 1fr) 280px;
+  grid-template-columns: var(--article-columns);
   min-height: 500px;
 }
 .omr-theme .research-hero--topic-art .research-hero__left {
@@ -25,7 +25,7 @@
   max-width: none;
   padding: 36px 24px;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 991px) {
   .omr-theme .research-hero--topic-art .research-hero__wrapper {
     grid-template-columns: minmax(220px, 30%) minmax(0, 1fr);
     min-height: auto;
