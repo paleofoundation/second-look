@@ -48,7 +48,7 @@
     "browserConsole": "Existing Vinext RSC prefetch setup TypeError reproduced on both unchanged public production and restored local preview. Tested card expansion and ordinary source navigation function; no framework change included."
   },
   "publication": {
-    "status": "merged; production deployment queued awaiting a GitHub-hosted runner",
+    "status": "succeeded and live browser verified",
     "destination": "GitHub paleofoundation/second-look main to existing Cloudflare Worker remaprx",
     "url": "https://remaprx.com/drugs/metformin#research-feed",
     "pullRequest": 33,
@@ -56,10 +56,26 @@
     "workflowRun": 41878707750,
     "workflowJob": 126745227544,
     "workflowURL": "https://github.com/paleofoundation/second-look/actions/runs/41878707750",
-    "checkedAtUTC": "2026-11-04T17:39:31Z",
-    "runner": null,
-    "stepsStarted": 0,
-    "liveVerification": "Pending deployment. Do not report the restored design as live yet.",
-    "legacyPR20": "Closed as superseded by merged PR33; historical receipt preserved."
+    "runner": "GitHub Actions 1000003634",
+    "stepsStarted": "All build/install/deploy steps succeeded; optional CUSTOM_DOMAIN live-check step skipped by existing workflow configuration. Public site verified independently in browser.",
+    "liveVerification": {
+      "metforminCards": 25,
+      "longCovidCards": 6,
+      "researchLibraryCards": 179,
+      "actions": "Visible Open / Link / Email with canonical study URL, recorded original-paper URL and mailto draft URL.",
+      "expansion": "Four research questions appear; Enter collapses the card.",
+      "studyNavigation": "Live Open navigates to /research/P-ACTIV6-2026 and shows compact study page plus honest pending-review status.",
+      "stylesheet": "/_next/static/css/index.COeR6aBh.css",
+      "screenshot": "docs/verification/research-feed-restoration/live-desktop.png"
+    },
+    "legacyPR20": "Closed as superseded by merged PR33; historical receipt preserved.",
+    "worker": "remaprx",
+    "workerVersion": "a4e41191-7f1c-4a83-9bb8-43a00e54db63",
+    "workerLogDeployedAtUTC": "2026-11-04T17:35:52Z",
+    "workflowStatus": "completed",
+    "workflowConclusion": "success",
+    "workflowUpdatedAtUTC": "2026-11-04T17:45:36Z",
+    "statusDelay": "The API reported jobs queued before a runner appeared; subsequent job log, successful terminal workflow state and live browser checks supersede the earlier pending receipt.",
+    "httpClientLimit": "A separate Python HTTPS smoke request received HTTP 403 from the apex. Browser HTTPS checks succeeded; local HTTP/API checks passed. No network or security settings were changed."
   }
 }
