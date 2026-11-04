@@ -24,4 +24,4 @@ Tools: you have Bash for git, gh, node, npm, curl, python3 and WebFetch. Never e
 Run one simple command per Bash call (no `cd x &&` chains, no `VAR=value cmd` prefixes; use `export` in a separate call). Prefer Read/Write/Edit/Grep over shell for files.
 
 ## D. Hard rules
-Never merge, never deploy, never touch secrets. The evidence-gate workflow merges green page PRs and dispatches the deploy.
+Never merge, never deploy, never touch secrets. The evidence-gate workflow merges green page PRs and dispatches the deploy. Do not edit robots, the sitemap, or indexing metadata. A drug or condition page enters the public index on its own when it meets the search quality bar in `lib/search-indexing.mjs`.

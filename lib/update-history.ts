@@ -1,5 +1,8 @@
 import history from '@/data/article-updates.json';
 import createdDates from '@/data/page-created-dates.json';
+import {isMaterialUpdate} from './search-indexing.mjs';
+
+export {isMaterialUpdate};
 
 export type ArticleUpdate = {
   id: string;
@@ -21,13 +24,8 @@ export const articleUpdates = history.entries as ArticleUpdate[];
 // lists only material changes to the page's content, never processes. Evidence,
 // correction and new-page events are material; presentation events are kept only
 // when they add or expand substantive content, and never when they concern
-// design, imagery, navigation or pipeline/process work.
-const PROCESS_PATTERN = /illustration|palette|image|icon|navigation|sidebar|reading order|layout|theme|design|reorganiz|easier to|ingest|pipeline|checkpoint|validat|render|handoff|internal review|rule version|build|deploy/i;
-const MATERIAL_PRESENTATION = /^(expanded|added|new section|safety|correction)/i;
-export function isMaterialUpdate(entry: ArticleUpdate): boolean {
-  if (entry.changeType !== 'presentation') return !PROCESS_PATTERN.test(entry.title);
-  return MATERIAL_PRESENTATION.test(entry.title) && !PROCESS_PATTERN.test(entry.title);
-}
+// design, imagery, navigation or pipeline/process work. The shared predicate
+// lives in lib/search-indexing.mjs so sitemap lastmod uses the same dates.
 
 export function articleUpdatesForPath(pagePath: string): ArticleUpdate[] {
   const normalized = pagePath.split(/[?#]/, 1)[0].replace(/\/+$/, '') || '/';

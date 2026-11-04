@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://remaprx.com"),
   title: {default: "RemapRx — The drug repurposing atlas", template: "%s | RemapRx"},
   description: "Mapping new targets for approved medications. Explore investigated uses, proposed mechanisms and source-linked findings in the drug repurposing atlas.",
-  robots: {index: false, follow: false},
+  robots: "noindex,follow",
   openGraph: {type:"website", siteName:"RemapRx", title:"RemapRx — The drug repurposing atlas", description:"Mapping new targets for approved medications. Map each connection to its sources.", images:[{url:"/brand/remaprx-social.png",width:1200,height:630,alt:"RemapRx: Mapping new targets for approved medications."}]},
   twitter: {card:"summary_large_image", title:"RemapRx — The drug repurposing atlas", description:"Mapping new targets for approved medications. Map each connection to its sources.", images:["/brand/remaprx-social.png"]},
   manifest: "/manifest.webmanifest?v=remaprx-app-white-1",
