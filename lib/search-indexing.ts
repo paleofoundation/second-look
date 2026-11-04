@@ -1,6 +1,12 @@
 import publicContent from '@/data/public-content.json';
 import createdDates from '@/data/page-created-dates.json';
 import updatesFile from '@/data/article-updates.json';
+import mechanisms from '@/data/public-mechanisms.json';
+import suitability from '@/data/treatment-suitability.json';
+import readerEvidence from '@/data/public-reader-evidence.json';
+import outcomeSummariesFile from '@/data/outcome-summaries.json';
+import drugStatus from '@/data/drug-status-table.json';
+import {readinessContext} from '../scripts/readiness.mjs';
 import {
   INDEX_ROBOTS,
   NOINDEX_ROBOTS,
@@ -36,6 +42,14 @@ const content = publicContent as unknown as {guides: PublicGuide[]; sources: Pub
 const created = (createdDates as {dates: Record<string, string>}).dates;
 const updates = (updatesFile as {entries: UpdateEntry[]}).entries;
 const sourcesById = new Map(content.sources.map(source => [source.id, source]));
+const library = readinessContext({
+  sources: content.sources,
+  mechanisms,
+  suitability,
+  synthesisRows: readerEvidence,
+  outcomeSummaries: outcomeSummariesFile,
+  status: drugStatus,
+});
 
 export {
   INDEX_ROBOTS,
@@ -51,11 +65,11 @@ export {
 export function isPublicGuideIndexable(id: string) {
   const guide = content.guides.find(item => item.id === id);
   if (!guide) return false;
-  return isIndexableGuide(guide, sourcesById, {live: true}).indexable;
+  return isIndexableGuide(guide, sourcesById, {live: true, context: library}).indexable;
 }
 
 export function publicSitemapEntries() {
-  return indexableSitemapEntries(content.guides, content.sources, created, updates);
+  return indexableSitemapEntries(content.guides, content.sources, created, updates, library);
 }
 
 export function publicSitemapXml() {

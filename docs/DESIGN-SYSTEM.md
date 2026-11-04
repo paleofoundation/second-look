@@ -32,7 +32,7 @@ Retain PNG masters in `assets/hero-art/` and deliver alpha-preserving WebP image
 
 Use a real HTML image with alt, intrinsic dimensions, responsive srcSet/sizes and eager hero priority. The first two topic heroes show artwork in the left panel on desktop/laptop; at narrow mobile widths the image stacks above the title. Use contain, never crop meaningful subject details. Other pages retain their existing illustration until a topic asset is explicitly assigned.
 
-Provide canonical RemapRx URLs, page-specific Open Graph and Twitter images, and ImageObject linked from WebPage.primaryImageOfPage for registered topic images. These fields prepare accurate descriptions for discovery; they do not guarantee search visibility. As of 2026-11-04, public hosts allow crawling, and only pages that clear the search quality bar are indexable. Pages below that bar use `noindex,follow`. Remove temporary development-preview metadata from publication.
+Provide canonical RemapRx URLs, page-specific Open Graph and Twitter images, and ImageObject linked from WebPage.primaryImageOfPage for registered topic images. These fields prepare accurate descriptions for discovery; they do not guarantee search visibility. As of 2026-11-04, public hosts allow crawling, and only pages that pass the metformin-grade bar in `scripts/readiness.mjs` are indexable. Pages below that bar use `noindex,follow`. Remove temporary development-preview metadata from publication.
 
 ## References and implementation scope
 
