@@ -20,5 +20,8 @@ Tools: you have Bash for git, gh, node, npm, curl, python3 and WebFetch. Never e
 - `node scripts/check-governance.mjs` (includes the citation gate) and `npm run build` must pass.
 - Branch `fill/remaprx-<slug>-<YYYY-MM-DD>`, label `evidence-fill`, PR body lists the unit id, the DOIs used and the sections written.
 
+## Shell style
+Run one simple command per Bash call (no `cd x &&` chains, no `VAR=value cmd` prefixes; use `export` in a separate call). Prefer Read/Write/Edit/Grep over shell for files.
+
 ## D. Hard rules
 Never merge, never deploy, never touch secrets. The evidence-gate workflow merges green page PRs and dispatches the deploy.
