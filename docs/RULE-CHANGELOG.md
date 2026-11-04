@@ -490,6 +490,8 @@ Implementation uses one scoped clinical-table class for the two requested table 
 
 Status/table verification: TypeScript, production build, 41 built-client privacy scans, governance, 70-article navigation and Evidence/Status SSR checks (66 profiles plus four additional guides) pass. Compared all 72 guide renders against production base 1244c29: all 70 Filter Outcomes table figures are byte-identical. Their components, filtering code and stylesheet are byte-identical; the shared reading stylesheet is unchanged before the Status-only block. Browser checks confirm identical table font/padding/borders/header colors, absent below-table note, click/keyboard focus opening and Escape dismissal, 44px trigger and overflow-free 390px/320px layouts with the card contained by 16px viewport insets. Exact proof and publication status: STATUS-TABLES-20261104.json.
 
+Status/table publication completed November 4, 2026. PR #36 merged as 033dfa40e95388ad19ae679e8e711ca07d3c39e8. Cloudflare workflow 41882950259 succeeded; Worker remaprx version ae0f73de-0830-4d9c-ad22-768cd4ff977a deployed at 18:02:59 UTC. Live Metformin browser verification confirms the exact note in the information card beside Status, absent below-table note, identical Status/Contraindications font, padding, borders and header colors, Escape dismissal and overflow-free 390px mobile behavior. Screenshot: docs/verification/status-tables/live-desktop.png. The 70 Filter Outcomes table figures and their components/filtering/styles remain byte-identical to the production base. Exact receipt: STATUS-TABLES-20261104.json.
+
 
 ## November 4, 2026 — Contraindications information card
 
