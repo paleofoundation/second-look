@@ -259,7 +259,9 @@ if (process.argv.includes('--all-profiles')) {
   const overview=center.match(/data-universal-section="Overview">([\s\S]*?)<\/section><\/section>/)?.[1];
   assert(overview&&overview.includes('<h2>Overview</h2>'),label+': canonical Overview heading');
   assert(!overview.includes('<h3>'),label+': Overview has no duplicate authored question heading');
-  const visible=textOf(center);
+  // Missing source fields are an explicit study-summary state, not a replacement
+  // for the article's authored clinical answers. The dedicated presentation test covers them.
+  const visible=textOf(center.replace(/<p class="study-missing">[\s\S]*?<\/p>/g,''));
   assert(!/not yet available|not yet reviewed|source-backed explanation.*not|assessment remains incomplete|accepted record|in this corpus|full review pending|How to read the evidence across conditions|Laboratory activity, a proposed pathway|Scientific review pending/i.test(visible),label+': production placeholders cannot replace answers');
   const pageIds=[...page.matchAll(/\sid="([^"]+)"/g)].map(m=>m[1]);
   assert.equal(pageIds.length,new Set(pageIds).size,label+': unique DOM IDs');

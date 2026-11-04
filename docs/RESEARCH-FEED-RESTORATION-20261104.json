@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-04",
+  "request": "Restore the piloted Research Feed cards with Link and Email actions sitewide",
+  "diagnosis": {
+    "cause": "Sites version 54 was published but draft PR20 was never merged. Current GitHub-to-Cloudflare production retained the older presentation.",
+    "legacySitesVersion": 54,
+    "legacySource": "66a0e00955febffb6879fec9a21b1ab0a5cbebd1",
+    "legacyPR": 20,
+    "legacyBranchHead": "851c09fffd137a89a8878f6484fe334080e47b7e",
+    "productionBase": "d4b6dd5b03647f2cbaffb80fc377689fd9b238e0"
+  },
+  "implementation": {
+    "restoredIdenticalFiles": [
+      "components/article.tsx",
+      "components/review-answers.tsx",
+      "components/review-status.tsx",
+      "components/shared-theme/research-feed.css",
+      "components/shared-theme/universal-article.ts",
+      "components/study-page.tsx",
+      "components/study-source-content.tsx",
+      "lib/citation-plan.ts",
+      "lib/study-presentation.ts",
+      "lib/study-review-plan.ts"
+    ],
+    "routeIntegration": "Retain current indexing metadata and JSON-LD while restoring StudyPage research-route composition.",
+    "harnessCompatibility": "Transpile newer .mjs dependencies to CommonJS in the restored research-presentation SSR check.",
+    "preservation": "All canonical/public scientific data, private reviews, source/review states, current footer/sidebar CSS, readiness, indexing, workflow, billing and access remain unchanged. Catalogue changes only derived marketing hashes; all 66 products remain pending."
+  },
+  "verification": {
+    "typescript": "PASS",
+    "productionBuild": "PASS",
+    "governance": "PASS: 236 preserved files",
+    "researchPresentation": "PASS: 321 source pages (197 research, 124 background), card actions, four openings, sparse and authorized synthetic review fixtures",
+    "reviewQuestionMapping": "PASS: Q01-Q15 exactly once, immutable records and stable citations/fragments",
+    "articleNavigation": "PASS: 70 articles",
+    "evidenceSection": "PASS: 66 profiles plus four additional guides",
+    "readinessAndIndexing": "PASS: seven tests",
+    "reviewCoverage": "PASS: seven tests",
+    "builtPrivacyBoundary": "PASS: 41 payloads",
+    "allProfileReaderSections": "PREEXISTING FAILURE: methylene-blue substantive Contraindications prose; same failure reproduced on unchanged production base d4b6dd5 in separate baseline worktree. No scientific content changed.",
+    "http": "PASS: Metformin, Long COVID, research library, dedicated study and review API return HTTP 200. Review API preview; private,no-store,max-age=0.",
+    "browser": "PASS: 25 Metformin cards; expand/collapse by mouse and Enter; four research questions; canonical Open navigation; exact original-source and mailto draft URLs; pending-appraisal state; 390px/320px layouts with no horizontal overflow; 44px action targets.",
+    "screenshots": [
+      "parent workspace artifacts/research-feed-restoration-20261104/preview-desktop.png",
+      "parent workspace artifacts/research-feed-restoration-20261104/preview-mobile.png"
+    ]
+  },
+  "publication": {
+    "status": "pending",
+    "destination": "GitHub paleofoundation/second-look main to existing Cloudflare Worker remaprx",
+    "url": "https://remaprx.com/drugs/metformin#research-feed"
+  }
+}

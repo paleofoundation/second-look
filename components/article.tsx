@@ -4,7 +4,7 @@ import outcomeRegistry from '@/data/outcome-registry.json';
 import sentenceMapData from '@/data/outcome-sentence-maps.json';
 const sentenceMaps=sentenceMapData.rows as Record<string,{finding:{text:string;sources:string[]}[];magnitude:{text:string;sources:string[]}[]}>;
 import {Fragment,useEffect,useState,useRef} from 'react';
-import {ShieldCheck,MessagesSquare,ChartNoAxesColumnIncreasing,BookOpen} from 'lucide-react';
+import {ShieldCheck,MessagesSquare,ChartNoAxesColumnIncreasing,BookOpen,FileText,Link as LinkIcon,Mail,Plus,Minus} from 'lucide-react';
 import {Popover,PopoverTrigger,PopoverContent} from '@/components/ui/popover';
 import {SaveButton} from '@/components/library-controls';
 import {content,guideUrl,synthesisRows,isPrimarySource,type Guide,type Source,type SourceDetail,type SynthesisRow} from '@/lib/content';
@@ -24,6 +24,9 @@ import {hasMechanismSection,drugMechanismFor,mechanismContextsFor,mechanismPrese
 import {InlineFaqs} from '@/components/shared-theme/faqs';
 import {UpdateHistory} from '@/components/shared-theme/update-history';
 import type {ProtectedReview,ReviewAccess} from '@/lib/review-access';
+import {StudyFacts,StudyIntegrity,StudyPublicSummary,StudySourceLocations} from '@/components/study-source-content';
+import {sourceLocationText,studyTopics,studyDesignLabel} from '@/lib/study-presentation';
+import {buildStudyReviewPlan} from '@/lib/study-review-plan';
 import {OutcomeFinder,type OutcomeOption} from '@/components/shared-theme/outcome-finder';
 import {wikiText,wikiTextRenderer} from '@/lib/wiki-links';
 import {relatedReadingFor} from '@/lib/related-reading';
@@ -52,29 +55,20 @@ export function canRenderStudyReviewInline(review:ProtectedReview,sourceId:strin
  ]),...openingAnswers.flatMap(answer=>answer?.sources||[])];
  return review.id===sourceId&&citedIds.every(id=>id===sourceId&&sources.some(source=>source.id===id)&&order.includes(id));
 }
-/** Source-specific context remains with the study, rather than in the persistent rail. */
-function StudyFacts({source}:{source:Source}) {
- const rows=[['Design',source.design],['Population',source.population],['Randomized participants',source.randomizedN],['Reported sample',(source as SourceDetail).sampleDescription||source.n],['Intervention',source.intervention],['Comparator',source.comparator],['Corrections',source.correction]].filter(([,value])=>value!==null&&value!==undefined&&String(value).trim()!==''&&!/^(unknown|not recorded|not extracted)$/i.test(String(value)));
- return rows.length?<details className="study-source-facts"><summary>Study population and treatment details</summary><dl>{rows.map(([label,value])=><Fragment key={String(label)}><dt>{label}</dt><dd>{String(value)}</dd></Fragment>)}</dl>{source.pmid?<a href={'https://pubmed.ncbi.nlm.nih.gov/'+source.pmid+'/'} target="_blank" rel="noreferrer">PubMed record</a>:null}</details>:null;
-}
-/** Caller supplies this body only after the protected endpoint grants access. */
+/** Only authorized opening answers are projected into the inline card. */
 export function InlineStudyReview({review,sources,order,currentPath}:{review:ProtectedReview;sources:Source[];order:string[];currentPath:string}){
- return <div className="study-summary__review">
-  {review.openingBlocks?.map(block=><section key={block.id} id={'study-'+review.id+'-opening-'+block.id}>
-   <h4>{block.title}</h4>{block.questionIds.map(id=>{
-    const answer=review.questionAnswers?.find(question=>question.id===id);
-    return answer?<div key={id} id={'study-'+review.id+'-opening-'+block.id+'-'+id}>
-     <CitedProse text={answer.answer} sourceIds={answer.sources} sources={sources} order={order} currentPath={currentPath}/>
-     {answer.locators.length?<ul className="small">{answer.locators.map((locator,index)=><li key={index}>{[locator.file||locator.filename,locator.chapter,locator.section,locator.table_figure,locator.pdf_page!=null?'PDF page '+locator.pdf_page:null,locator.printed_page!=null?'Printed page '+locator.printed_page:null,locator.nativeLocator].filter(Boolean).join(' · ')}</li>)}</ul>:null}
-    </div>:null;
-   })}
-  </section>)}
-  {review.sections.map(section=><div key={section.id} id={'study-'+review.id+'-review-'+section.id}><h4>{section.title}</h4><CitedProse text={section.paragraph} mapped={section.sentences} sourceIds={section.sources} sources={sources} order={order} currentPath={currentPath}/></div>)}
- </div>;
+ const plan=buildStudyReviewPlan(review);
+ return <div className="study-summary__review">{plan.openings.map(block=><section className="study-question" key={block.id} id={'study-'+review.id+'-opening-'+block.id}>
+  <h4>{block.title}</h4>{block.answers.map(answer=><div key={answer.id} id={'study-'+review.id+'-opening-'+block.id+'-'+answer.id}>
+   <CitedProse text={answer.answer} sourceIds={answer.sources} sources={sources} order={order} currentPath={currentPath}/>
+   <StudySourceLocations locations={sourceLocationText(answer.locators)}/>
+  </div>)}
+ </section>)}</div>;
 }
 /** Only the authorized review endpoint may supply a complete authored review. */
 function StudySummary({source,sources,order,currentPath}:{source:Source;sources:Source[];order:string[];currentPath:string}){
  const [review,setReview]=useState<ProtectedReview|null>(null);
+ const [availability,setAvailability]=useState<string|null>(null);
  const [requested,setRequested]=useState(false);
  const [busy,setBusy]=useState(false);
  const [error,setError]=useState(false);
@@ -83,32 +77,40 @@ function StudySummary({source,sources,order,currentPath}:{source:Source;sources:
   setBusy(true);setError(false);
   try{
    const response=await fetch('/api/reviews/'+encodeURIComponent(source.id),{credentials:'same-origin',cache:'no-store'});
-   if(response.status===404){setRequested(true);return;}
+   if(response.status===404){setAvailability('pending');setRequested(true);return;}
    if(!response.ok)throw new Error('Review unavailable');
    const result=await response.json() as ReviewAccess;
    if(result.kind==='full'&&result.review.id===source.id){
-    const candidate=result.review;
-    // The public summary reserves this study's citation before FAQs. A review
-    // with other sources uses its dedicated page so expansion cannot introduce
-    // an earlier citation, renumber this page, or silently drop an unknown source.
-    if(canRenderStudyReviewInline(candidate,source.id,sources,order))setReview(candidate);
-   }
+    if(canRenderStudyReviewInline(result.review,source.id,sources,order))setReview(result.review);
+    else setAvailability('dedicated');
+   }else if(result.kind==='preview')setAvailability(result.preview.reviewState==='released'?'released':result.preview.reviewState);
    setRequested(true);
   }catch{setError(true);}finally{setBusy(false);}
  }
- return <details className="research-item study-summary" id={'study-'+source.id} data-study-id={source.id} onToggle={event=>{if(event.currentTarget.open)void loadReview()}}>
-  <summary>{source.title}<span className="meta" style={{display:'block'}}>{[source.population,source.year,source.design].filter(Boolean).join(' · ')}</span>{source.status==='Quarantined'?<span className="evidence-tag">Quarantined · not evidence for efficacy</span>:null}</summary>
-  <div className="research-item__body">
-   <h4>Study summary</h4><CitedProse text={source.preview} sourceIds={[source.id]} sources={sources} order={order} currentPath={currentPath}/>
-   {source.decisiveLimit?<p className="notice">{wikiText(source.decisiveLimit,currentPath)}</p>:null}
-   {source.correction?<p className="notice">{wikiText(source.correction,currentPath)}</p>:null}
-   <StudyFacts source={source}/>
-   {busy?<p className="small" role="status">Loading study review…</p>:null}
-   {error?<p className="small" role="status">The study review could not be loaded. <button type="button" onClick={()=>void loadReview()}>Retry</button></p>:null}
-   {review?<InlineStudyReview review={review} sources={sources} order={order} currentPath={currentPath}/>:null}
-   <div className="inline-actions"><a href={'/research/'+source.id}>Open study summary</a><OriginalSource source={source}/></div>
-  </div>
- </details>;
+ const topics=studyTopics(source).slice(0,3);
+ const renderProse=(text:string,sourceIds:string[])=><CitedProse text={text} sourceIds={sourceIds} sources={sources} order={order} currentPath={currentPath}/>;
+ const excerpt=Array.from(new Intl.Segmenter('en',{granularity:'sentence'}).segment(source.preview))[0]?.segment||source.preview;
+ return <div className="research-feed__item study-summary-card" data-study-id={source.id}>
+  <details className="research-item study-summary" id={'study-'+source.id} onToggle={event=>{if(event.currentTarget.open)void loadReview()}}>
+   <summary className="research-feed__header-wrap"><span className="research-feed__toggle-icon" aria-hidden="true"><Plus className="research-feed__plus"/><Minus className="research-feed__minus"/></span><span><span className="research-feed__title">{source.title}</span><span className="research-feed__sub-header">{source.year?<span>{source.year}</span>:null}{source.design?<span>{studyDesignLabel(source)}</span>:null}</span></span></summary>
+   <div className="research-feed__content research-item__body">
+    <StudyIntegrity source={source} renderProse={renderProse}/>
+    <StudyFacts source={source}/>
+    {review?<InlineStudyReview review={review} sources={sources} order={order} currentPath={currentPath}/>:<StudyPublicSummary source={source} renderProse={renderProse}/>}
+    {busy?<p className="small" role="status">Loading study review…</p>:null}
+    {error?<p className="small" role="status">The study review could not be loaded. <button type="button" onClick={()=>void loadReview()}>Retry</button></p>:null}
+    {!review&&availability?<p className="study-review-state">{availability==='released'?'The complete review is available with free sign-in.':availability==='dedicated'?'Open the study page to read the complete review and its supporting sources.':availability==='withdrawn'?'The complete review has been withdrawn. See the source notice and study page for context.':'The complete appraisal is not yet available. This summary shows the source information currently available.'}</p>:null}
+   </div>
+  </details>
+  <p className="research-feed__excerpt">{excerpt}</p>
+  {source.status==='Quarantined'?<p className="study-integrity-label">Quarantined · not evidence for efficacy</p>:source.correction?<p className="study-integrity-label">Correction notice</p>:null}
+  {topics.length?<div className="research-feed__sub-header research-feed__categories">{topics.map(topic=><a key={topic.id} href={topic.href}>{topic.label}</a>)}</div>:null}
+  <div className="research-feed__footer"><div>
+   <a className="study-action" href={'/research/'+source.id} aria-label={'Open study summary: '+source.title}><FileText aria-hidden="true"/>Open</a>
+   {/^https:\/\//.test(source.url)?<a className="study-action" href={source.url} target="_blank" rel="noreferrer" aria-label={'Original paper: '+source.title}><LinkIcon aria-hidden="true"/>Link</a>:null}
+   <a className="study-action" href={'mailto:?subject='+encodeURIComponent(source.title)+'&body='+encodeURIComponent('https://remaprx.com/research/'+source.id+'\n\nOriginal source: '+source.url)} aria-label={'Email study summary: '+source.title}><Mail aria-hidden="true"/>Email</a>
+  </div></div>
+ </div>;
 }
 function ResearchStudies({sources,order,currentPath=''}:{sources:Source[];order:string[];currentPath?:string}){
  const primary=sources.filter(isPrimarySource);
@@ -146,7 +148,7 @@ export function OutcomeEvidence({rows:inputRows,guide,sources,order,compact=true
  return rows.length?<OutcomeFinder records={summaryRecords} renderRows={renderRows} compact={compact}/>:renderRows([]);
 }
 function EvidenceIntroduction(){return <p>Compare the outcomes studied for each drug and condition. The A–F grade assesses the likelihood of benefit, Effect summarizes the size of the change, and Evidence counts independent randomized trials and their participants. Select an outcome or study count for the findings, proposed mechanisms and study details. <Link href="/methods">How we grade outcomes.</Link></p>}
-function EvidenceContent({rows,guide,sources,order}:{rows:SynthesisRow[];guide:Guide;sources:Source[];order:string[]}){return <><span id="findings" className="reference-alias"/><p className="small"><Link href="/outcomes">Explore and compare recorded outcomes</Link></p><OutcomeEvidence rows={rows} guide={guide} sources={sources} order={order}/></>}
+function EvidenceContent({rows,guide,sources,order}:{rows:SynthesisRow[];guide:Guide;sources:Source[];order:string[]}){return <><span id="findings" className="reference-alias"/><OutcomeEvidence rows={rows} guide={guide} sources={sources} order={order}/></>}
 
 export function Article({guide,sources:inputSources,children,additionalCitationGroups=[]}:{guide:Guide;additionalCitationGroups?:string[][];sources:Source[];children?:React.ReactNode;acquisitionStatus?:{coverage_state:string;readerSummary:string;readerNextStep:string}}){
  const isRecord=['Study','Background source','Glossary'].includes(guide.type);const terminal=isRecord?'sources':'research-feed';const terminalLabel=isRecord?'Sources':'Research Feed';

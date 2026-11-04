@@ -203,3 +203,8 @@ Source: Elon's October 27, 17:15 Asia/Nicosia REMAPRX-MERGE-1 order, relaying Ka
 ## Hero sidebar alignment — November 4, 2026
 
 Owner request, with Screenshot 2026-11-04 at 4.31.04 PM.png: the dark illustration and author sidebars in topic heroes must have the same widths and vertical boundaries as the article sidebars below. Use one shared responsive column definition for both grids: the existing reading-grid columns above 1199px, and 220px / flexible center / 260px from 992px through 1199px. Stack the hero only below the reading grid’s 992px desktop breakpoint. Preserve the existing tablet/phone illustration, author, snapshot and reading order. This supersedes the independent 25%-left/280px-right hero columns and its earlier 1199px stacking threshold.
+
+
+## November 4, 2026 - Restore the published Research Feed pilot
+
+Source: owner's request to chase the missing pilot and restore the cards with Link and Email buttons. Restore the original shared Microbiome-style implementation from Sites version 54 / GitHub draft PR #20 to the current GitHub production source. Each card retains a circular plus/minus toggle, visible finding, study year/type, topic links and separate Open / Link / Email actions. Open visits the canonical study summary, Link opens the recorded original source, and Email opens a draft without sending. Expanded cards retain the four research questions; dedicated study pages retain the compact structured design. FAQs precede Research Feed. This supersedes the older disclosure-only presentation still present in GitHub main. Preserve current footer/sidebar layout, canonical data, scientific/review states, access and indexing policy. Verification and publication are recorded in RESEARCH-FEED-RESTORATION-20261104.json.

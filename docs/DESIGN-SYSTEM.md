@@ -123,3 +123,8 @@ Owner request, with Screenshot 2026-11-04 at 4.31.04 PM.png: the dark illustrati
 ## Footer legal-link separation — November 4, 2026
 
 Source: owner's follow-up and Screenshot 2026-11-04 at 7.09.38 PM.png: Privacy, Terms and Educational disclaimer are cramped against the paragraph above. Give the shared legal-link group its own 1.25rem top margin at every viewport. This supersedes the flush paragraph/link adjacency while preserving the accepted responsive columns and intact labels. Implement and publish under the standing routine-fix authorization. Verification/publication: `FOOTER-LEGAL-SPACING-20261104.json`.
+
+
+## November 4, 2026 - Restore the published Research Feed pilot
+
+Source: owner's request to chase the missing pilot and restore the cards with Link and Email buttons. Restore the original shared Microbiome-style implementation from Sites version 54 / GitHub draft PR #20 to the current GitHub production source. Each card retains a circular plus/minus toggle, visible finding, study year/type, topic links and separate Open / Link / Email actions. Open visits the canonical study summary, Link opens the recorded original source, and Email opens a draft without sending. Expanded cards retain the four research questions; dedicated study pages retain the compact structured design. FAQs precede Research Feed. This supersedes the older disclosure-only presentation still present in GitHub main. Preserve current footer/sidebar layout, canonical data, scientific/review states, access and indexing policy. Verification and publication are recorded in RESEARCH-FEED-RESTORATION-20261104.json.
