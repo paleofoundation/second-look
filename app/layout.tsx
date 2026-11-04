@@ -11,6 +11,7 @@ import "@/components/shared-theme/article-sharing.css";
 import "@/components/shared-theme/guide-reader.css";
 import "@/styles/hero-art.css";
 import "@/styles/treatment-suitability.css";
+import "@/components/shared-theme/research-feed.css";
 import {ThemeShell} from "@/components/shared-theme/theme";
 import {getChatGPTUser,chatGPTSignInPath} from "@/app/chatgpt-auth";
 import {secondLookTheme} from "@/lib/theme/config";
