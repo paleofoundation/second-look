@@ -11,7 +11,7 @@ import {intakePath} from '@/lib/account-paths';
 import {getReviewForRequest} from '@/lib/review-server';
 import {reviewRepository} from '@/lib/review-repository.server';
 import {ReviewStatus} from '@/components/review-status';
-import {ReviewAnswers} from '@/components/review-answers';
+import {StudyPage} from '@/components/study-page';
 import {DirectoryPage} from '@/components/shared-theme/theme';
 import {notFound,redirect} from 'next/navigation';
 import {SiteHeader} from '@/components/site-header';
@@ -21,6 +21,7 @@ import {SearchResults} from '@/components/search-results';
 import {Library,PurchaseStatus,CorrectionForm,SaveButton} from '@/components/library-controls';
 import {getChatGPTUser,chatGPTSignInPath,chatGPTSignOutPath} from '@/app/chatgpt-auth';
 import {content,topics,allItems,guideUrl,isPrimarySource,synthesisRows,type Guide} from '@/lib/content';
+import {INDEX_ROBOTS,NOINDEX_ROBOTS,STATIC_PAGE_COPY,indexingJsonLdForGuide,isPublicGuideIndexable,uniqueDescription} from '@/lib/search-indexing';
 export const dynamic='force-dynamic';
 type Props={params:Promise<{path:string[]}>;searchParams:Promise<Record<string,string|string[]|undefined>>};
 const titles:Record<string,string>={outcomes:'Explore research outcomes',search:'Search the evidence library',research:'Research library',questions:'Questions worth asking',drugs:'Drugs',conditions:'Conditions',comparisons:'Compare the questions',glossary:'A language for reading evidence',guides:'Guides and research companions','guides/membership':'Guide membership',methods:'How we read the evidence',editorial:'Editorial standards',about:'About RemapRx',privacy:'Privacy',terms:'Terms of use',disclaimer:'Educational disclaimer',corrections:'Corrections & contact',account:'Saved research','guides/library':'My guides'};
@@ -48,12 +49,15 @@ export async function generateMetadata({params}:Props):Promise<Metadata>{
  const ingested=!g?ingestedTopicForPath(path):undefined;
  const s=content.sources.find(s=>'research/'+s.id===path);
  const t=content.glossary.find(t=>'glossary/'+t.slug===path);
- const title=product?.title||g?.title||ingested?.title||s?.title||t?.title||titles[path]||'Page not found';
- const description=product?.description||g?.description||ingested?.notice||s?.preview||t?.meaning||'Explore the evidence and limitations behind drug repurposing.';
+ const staticCopy=STATIC_PAGE_COPY[path as keyof typeof STATIC_PAGE_COPY];
+ const title=product?.title||g?.title||ingested?.title||s?.title||t?.title||staticCopy?.title||titles[path]||'Page not found';
+ const rawDescription=product?.description||g?.description||(ingested?`${ingested.title}. Evidence for this question is incomplete, and independent review is not complete.`:'')||s?.preview||t?.meaning||staticCopy?.description||'';
+ const description=uniqueDescription(title,rawDescription);
  const art=getTopicHeroArt(canonicalPath);
  const canonical=REMAPRX_ORIGIN+canonicalPath;
+ const indexable=Boolean(g&&isPublicGuideIndexable(g.id));
  return {
-  title,description,alternates:{canonical},robots:{index:false,follow:false},
+  title,description,alternates:{canonical},robots:indexable?INDEX_ROBOTS:NOINDEX_ROBOTS,
   ...(art?{
    openGraph:{
     type:'article',siteName:'RemapRx',url:canonical,title,description,
@@ -62,6 +66,11 @@ export async function generateMetadata({params}:Props):Promise<Metadata>{
    twitter:{card:'summary_large_image',title,description,images:[{url:REMAPRX_ORIGIN+art.socialImage.src,alt:art.socialImage.alt}]},
   }:{}),
  };
+}
+function IndexingJsonLd({guide}:{guide:Guide}){
+ const data=indexingJsonLdForGuide(guide.id);
+ if(!data)return null;
+ return <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(data).replace(/</g,'\\u003c')}}/>;
 }
 function TopicImageMetadata({guide}:{guide:Guide}){
  const art=getTopicHeroArt(guideUrl(guide));
@@ -79,9 +88,9 @@ function TopicImageMetadata({guide}:{guide:Guide}){
  return <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(data).replace(/</g,'\\u003c')}}/>;
 }
 export default async function Page({params,searchParams}:Props){const path=(await params).path.join('/');if(path==='answers/paxlovid-treatment')redirect('/answers/nirmatrelvir-treatment');const query=await searchParams;const guide=content.guides.find(g=>guideUrl(g)==='/'+path);let body:React.ReactNode;
- if(guide){return <><TopicImageMetadata guide={guide}/><Article guide={guide} sources={content.sources.filter(s=>guide.sourceIds.includes(s.id))}/></>}
+ if(guide){return <><IndexingJsonLd guide={guide}/><TopicImageMetadata guide={guide}/><Article guide={guide} sources={content.sources.filter(s=>guide.sourceIds.includes(s.id))}/></>}
  else if(ingestedTopicForPath(path)){const page=ingestedTopicForPath(path)!;const g=ingestionStatusGuide(page,path);return <><TopicImageMetadata guide={g}/><Article guide={g} sources={content.sources.filter(s=>g.sourceIds.includes(s.id))}></Article></>}
- else if(path.startsWith('research/')){const alias=(sourceAliases as Record<string,string>)[path.slice(9)];if(alias)redirect('/research/'+alias);const s=content.sources.find(x=>x.id===path.slice(9));if(!s)notFound();const access=await getReviewForRequest(reviewRepository,s.id);const g:Guide={id:s.id,slug:'/'+path,title:s.title,type:isPrimarySource(s)?'Study':'Background source',description:s.preview,topicIds:[],sections:access.kind==='full'?access.review.sections.map(section=>({...section,id:section.id==='sources'?'source-note':section.id,label:section.title})):[{id:'source-summary',label:'Summary',title:'Study summary',paragraph:s.preview,sources:[s.id]},...(s.decisiveLimit?[{id:'limits',label:'Limits',title:'Study limitations',paragraph:s.decisiveLimit,sources:[s.id]}]:[])],faqs:[],sourceIds:access.kind==='full'?access.review.sourceIds:[s.id],related:[]};const reviewSources=content.sources.filter(source=>g.sourceIds.includes(source.id));const extraCitations=access.kind==='full'?[...(access.review.openingBlocks||[]).flatMap(block=>block.questionIds.map(id=>access.review.questionAnswers?.find(question=>question.id===id)?.sources||[])),...(access.review.questionAnswers||[]).map(question=>question.sources)]:[];return <Article guide={g} sources={reviewSources} additionalCitationGroups={extraCitations}>{access.kind==='full'?<ReviewAnswers review={access.review} citationOrder={guideCitationOrder(g,reviewSources,extraCitations)}/>:null}{access.kind!=='not_found'&&<ReviewStatus sourceId={s.id} access={access.kind} reason={'reason' in access?access.reason:undefined}/>}<section className="article-section"><h2>Questions using this source</h2>{content.guides.filter(g=>g.sourceIds.includes(s.id)).map(g=><a className="result-row" key={g.id} href={guideUrl(g)}>{g.title}</a>)}</section></Article>}
+ else if(path.startsWith('research/')){const alias=(sourceAliases as Record<string,string>)[path.slice(9)];if(alias)redirect('/research/'+alias);const source=content.sources.find(item=>item.id===path.slice(9));if(!source)notFound();const access=await getReviewForRequest(reviewRepository,source.id);return <StudyPage source={source} access={access}/>;}
  else if(path.startsWith('glossary/')){const t=content.glossary.find(t=>t.slug===path.slice(9));if(!t)notFound();const sources=content.sources.filter(s=>t.sources.includes(s.id));const g:Guide={id:'term-'+t.slug,slug:'/'+path,title:t.title,type:'Glossary',description:'A scientific term, with its context intact.',topicIds:[],sections:[{id:'meaning',label:'Meaning',title:'Meaning',paragraph:t.meaning,sources:t.sources,sentences:t.sentenceMaps?.meaning},{id:'context',label:'Context',title:'Why the distinction matters',paragraph:t.context,sources:t.sources,sentences:t.sentenceMaps?.context},{id:'examples',label:'Examples',title:'Read it in context',paragraph:t.examples,sources:t.sources,sentences:t.sentenceMaps?.examples}],faqs:[],sourceIds:t.sources,related:[]};return <><TopicImageMetadata guide={g}/><Article guide={g} sources={sources}/></>;}
  else if(path==='search'){body=<><Intro title={titles.search}/><SearchResults items={allItems()} initialQuery={typeof query.q==='string'?query.q:''}/></>}
  else if(path==='research'){body=<><Intro title={titles.research} description="Explore original studies and supporting sources by drug, condition and research question."/><ResearchLibrary sources={content.sources}/></>}

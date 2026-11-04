@@ -5,7 +5,7 @@ import { ReaderProfileForm } from '@/components/reader-profile-form';
 import { getReaderAccount } from '@/lib/profile-server';
 import { readerSignInPath, intakePath, safeRelativeReturnPath } from '@/lib/account-paths';
 export const dynamic = 'force-dynamic';
-export const metadata = { title: 'About you', robots: { index: false, follow: false } };
+export const metadata = { title: 'About you', description: 'Private reader intake before complete research reviews. This is not medical advice.', alternates: { canonical: 'https://remaprx.com/account/intake' }, robots: 'noindex,follow' };
 export default async function IntakePage({ searchParams }: { searchParams: Promise<Record<string, string | string[] | undefined>> }) {
   const query = await searchParams;
   const destination = safeRelativeReturnPath(query.returnTo);

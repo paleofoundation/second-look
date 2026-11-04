@@ -225,13 +225,21 @@ function inspect(guide, pageSources, {expectScoped = false} = {}) {
     if (section.label === 'Status' && statusRows?.length) {
       assert(sectionNode, label + ': Status prose retains its legacy anchor');
       const table = all(article, node => node.tag === 'table' && hasClass(node, 'status-table'))[0];
-      assert(table, label + ': Status uses the regulatory table');
-      assert.deepEqual(columnHeaders(table).map(textOf), ['Use / indication', 'Regulator', 'Status', 'Year approved', 'Source']);
+      assert(table && hasClass(table, 'clinical-table'), label + ': Status uses the canonical Contraindications table');
+      assert(all(article, node => node.tag === 'button' && node.attrs?.['aria-label'] === 'About regulatory status').length, label + ': Status has an accessible information control');
+      assert(!textOf(article).includes('The FDA does not approve off-label uses; uses studied in research are listed as research only.'), label + ': closed information card does not leave a visible note below the table');
+      assert.deepEqual(columnHeaders(table).map(textOf), ['Use / indication', 'Regulatory status']);
       const rows = all(table, node => node.tag === 'tr' && ancestor(node, parent => parent.tag === 'tbody'));
       assert.equal(rows.length, statusRows.length, label + ': every regulatory record rendered');
       rows.forEach((row, index) => {
         const record = statusRows[index];
-        assert.deepEqual(cellsOf(row).slice(0, 4).map(textOf), [record.use, record.regulator, record.status, String(record.year ?? '—')]);
+        const cells = cellsOf(row);
+        assert.equal(cells.length, 2, label + ': canonical two-column Status layout');
+        assert.equal(textOf(cells[0]), record.use);
+        const value = all(row, node => hasClass(node, 'status-pill'))[0];
+        assert.equal(textOf(value), record.status);
+        const metadata = all(row, node => hasClass(node, 'status-table__meta'))[0];
+        assert.equal(textOf(metadata), 'Regulator: ' + record.regulator + 'Year approved: ' + String(record.year ?? '—'));
         assert.deepEqual(all(row, node => node.tag === 'sup').map(node => node.attrs['data-source-id']).sort(), [...record.sourceIds].sort(), label + ': Status source citations');
       });
       continue;

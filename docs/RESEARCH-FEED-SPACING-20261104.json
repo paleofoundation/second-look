@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-04",
+  "baseCommit": "332960a149a0896ab85dd81b37a0cee8e7133a50",
+  "requirement": "Increase the gap from the final FAQ accordion to Research Feed, remove the redundant Study summaries heading below Research Feed, and give the feed breathing room.",
+  "changes": [
+    "Article ResearchStudies hides its redundant heading; standalone catalog heading retained.",
+    "Research Feed section adds 40px top margin on desktop/tablet and 24px on phones to the existing 40px preceding section margin, yielding 80px/64px gaps.",
+    "Research Feed heading has 32px bottom margin. FAQs spacing remains unchanged."
+  ],
+  "validation": {
+    "governance": "PASS, 236 preserved files",
+    "typescript": "PASS",
+    "productionBuild": "PASS",
+    "articleNavigation": "PASS, 70 articles and authorized-summary fixtures",
+    "readerBoundary": "PASS, 41 client payloads",
+    "browser": {
+      "desktopMetformin": "80px last FAQ to Research Feed; 32px heading to first card; 25 study cards; redundant heading absent; existing 40px gap above FAQs unchanged.",
+      "mobile390px": "64px last FAQ to Research Feed; 32px heading to first card; page width 390px, no overflow.",
+      "conditionLongCovid": "80px desktop gap; six cards retained; duplicate heading absent."
+    }
+  },
+  "release": {
+    "status": "published and live-verified",
+    "pullRequest": "https://github.com/paleofoundation/second-look/pull/40",
+    "mergedCommit": "a6dcfb663778467117c12d7f7a7d6b6807bc97db",
+    "workflowRun": 41887147482,
+    "workflowJob": 126774541879,
+    "workflowConclusion": "success",
+    "workerVersion": "db2b588a-9386-4bdc-86a5-bdbe7ef6ace8",
+    "deployedAtUTC": "2026-11-04T18:27:13Z",
+    "url": "https://remaprx.com/drugs/metformin#research-feed",
+    "liveVerification": "Metformin: 80px desktop / 64px at 390px, 32px heading-to-card, 25 cards, no redundant Study summaries heading or mobile overflow.",
+    "screenshot": "docs/verification/research-feed-spacing/live-desktop.jpg"
+  }
+}
