@@ -186,3 +186,6 @@ sup.citation-sup a,
 .omr-theme .status-info-trigger:hover { background:var(--brand-blue-light); }
 .status-info-card { width:min(340px,calc(100vw - 32px)); padding:18px; border:1px solid #dce1ea; background:#fff; color:#20254c; font:14px/1.6 Inter,Arial,sans-serif; z-index:190; }
 .status-info-card p { margin:0; }
+
+/* Separate paragraphs inside shared section information cards. */
+.status-info-card p + p { margin-top:12px; }

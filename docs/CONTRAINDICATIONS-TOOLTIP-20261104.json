@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-04",
+  "baseCommit": "033dfa4",
+  "requirement": "Move all shared Contraindications explanations, selected-label scope, and prescriber-review notes into the information card beside the heading. Keep cited treatment-specific restrictions visible.",
+  "implementation": [
+    "Shared SectionInfo extracted from unchanged StatusInfo behavior.",
+    "One ContraindicationsInfo on every drug Contraindications heading; same card for condition suitability tables.",
+    "Removed repeated drug subheading, visible scope caption and generic introductory/closing notes; table rows and data unchanged.",
+    "Physician print/packet notes preserved."
+  ],
+  "validation": {
+    "typescript": "PASS",
+    "productionBuild": "PASS",
+    "governance": "PASS, 236 preserved files",
+    "articleNavigation": "PASS, 70 articles and protected-summary fixtures",
+    "readerBoundary": "PASS, 41 built payloads",
+    "readerSectionsAllProfiles": "Existing failure on /drugs/methylene-blue: missing substantive Contraindications section. Base production data has no such section; all data is unchanged.",
+    "browser": "Metformin click opens all three exact notes; Escape closes; 390px page width 390px, card x=34/right=374 with no overflow. Additional representative checks pending.",
+    "reactReview": "Hooks unconditional; timer cleaned up; labeled native button, decorative icon, retained Popover keyboard/dismissal handling; static content and no network calls."
+  },
+  "release": {
+    "status": "pending"
+  }
+}
