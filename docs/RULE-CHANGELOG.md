@@ -1,5 +1,11 @@
 # Second Look rule changelog
 
+## 2026-11-04 — Footer repair and standing authorization to publish routine fixes
+
+Source: owner's “Fix the footer” screenshot request, then “ALWAYS update when I request fixes like these.” A routine requested website fix includes implementing, verifying, synchronizing the bounded source and publishing to the existing live site without asking again. Supersedes stopping after a local fix; existing scientific, research, protected-content, billing and access rules remain within their current scope. Contracts: `AGENTS.md`, `PROJECT-RULES.md` and `DESIGN-SYSTEM.md`.
+
+The shared footer now allocates desktop width to one brand block and three menus, stacks them responsively, and wraps legal links as whole labels without orphan separators. Brand colors, artwork, copy and all 17 link destinations remain. Consulted Microbiome Medicine and PepsAnon footers; TypeSafe guidance keeps this deterministic fix in CSS. Six actual browser viewport widths (320–1920px), TypeScript, production build, governance and privacy checks passed on the initial Sites source. Sites version 55 deployed successfully, but final verification found the apex uses the newer GitHub-to-Cloudflare pipeline. This correction is therefore reapplied to current production main `6fa05d576940c343c204ccf868a817351b6b216a`, preserving its newer source, citation and indexing behavior and the separate unmerged sidebar PR. Current-source verification and actual apex deployment are recorded separately in `FOOTER-FIX-20261104.json`. No DNS, provider credentials, workflow or scientific records are changed by the footer patch.
+
 ## 2026-11-04: replace the thin search bar with a metformin-grade bar
 
 Source: Karen Pendergrass, 4 November 2026. Methylene blue is too thin for the sitemap ready line from the indexing change earlier the same day. Scope: the indexing bar, the scheduled fill, and the readiness contract. Supersedes the 160-character section rule and the minimum of 8 non-quarantined DOIs. Host crawling rules stay as adopted earlier today.
@@ -438,3 +444,6 @@ Implementation: smaller lowercase x sharing the capital R's baseline, overlappin
 Source: owner's explicit request for the website favicon in blue/yellow and app favicon in blue/white. Scope: browser SVG/ICO versus app SVG/Apple touch/192–512-pixel icons and their metadata. Supersedes the pale-blue icon backgrounds while preserving all version 48 geometry. Contract: `REMAPRX-IDENTITY.md`, Separate website and app icon colors.
 
 Implementation: shared generator geometry with role-specific yellow/white backgrounds, separate metadata cache versions and an app-name/icon manifest pointing to white app PNGs. Existing header/map/footer/social artwork is unchanged. Verification/publication are pending at adoption and are recorded in the identity contract/receipt after completion. No scientific, access or audience change.
+
+
+Footer production build prerequisites: current main failed on 66 stale guide-marketing hashes and imported Node file-loading code into the browser indexing path. Reused only the already-reviewed PR30 readiness module split/import repairs, excluding its sidebar changes. Complete before/after readiness JSON is identical; all product data is identical after removing marketing fingerprints. Existing release/approval states are untouched. New hashes bind the actual current presentation; they grant no new approval. Current-source type/build/governance/privacy verification and apex deployment follow in the footer receipt.

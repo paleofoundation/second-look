@@ -1,5 +1,11 @@
 # Second Look contributor instructions
 
+## Routine fixes include live publication — November 4, 2026
+
+Owner instruction: “ALWAYS update when I request fixes like these.” A request to fix the existing website, including layout, styling, navigation presentation or an ordinary bug, authorizes implementing and validating the bounded correction, synchronizing its source to the existing production repository and publishing it to the current live site. Do not stop after local changes or ask for publishing approval again for that requested fix. Preserve the current audience, unrelated work and existing scientific, research, protected-content, billing and access gates; this standing instruction does not approve unrelated changes or waive required verification. Record exact publication results with the work. Current production is GitHub `paleofoundation/second-look` main, deployed by `.github/workflows/deploy-cloudflare.yml` to Cloudflare Worker `remaprx`; updating the old Sites origin alone does not update `remaprx.com`.
+
+This is the source repository for Second Look, the Drug Repurposing project. Read `docs/PROJECT-RULES.md` and `docs/RULE-CHANGELOG.md` before changing it. For evidence work, read `docs/RESEARCH-INGEST.md` **before acquisition requests, extraction or import**, then the complete `rules/one-match-rule/ONE-MATCH-RULE.md` and the applicable plan/schema. Do not assume chat memory or a locally installed skill supplies these instructions to another researcher.
+
 This is the source repository for Second Look, the Drug Repurposing project. Read `docs/PROJECT-RULES.md` and `docs/RULE-CHANGELOG.md` before changing it. For evidence work, read `docs/RESEARCH-INGEST.md` **before acquisition requests, extraction or import**, then the complete `rules/one-match-rule/ONE-MATCH-RULE.md` and the applicable plan/schema. Do not assume chat memory or a locally installed skill supplies these instructions to another researcher.
 
 ## Preserve instructions with the work
