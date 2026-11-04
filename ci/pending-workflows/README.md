@@ -1,8 +1,6 @@
 # Pending workflows
 
-These two files belong in `.github/workflows/`. They were committed here because the pushing token lacks GitHub's `workflow` scope. Move them with a token that has it (or the GitHub web UI):
+`evidence-gate.yml` and `deploy-cloudflare.yml` were moved into `.github/workflows/` on 2026-11-04. This note stays so the earlier staging location remains findable.
 
-    git mv ci/pending-workflows/evidence-gate.yml ci/pending-workflows/deploy-cloudflare.yml .github/workflows/
-
-- evidence-gate.yml: governance (which now includes the citation gate) on every PR; squash-merges page PRs (label `evidence-fill`, branch `fill/*` or `claude/remaprx-fill-*`) when green, then dispatches the deploy.
-- deploy-cloudflare.yml: build and `wrangler deploy` on push to main. Skips until secrets `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID` and variable `REMAPRX_D1_DATABASE_ID` exist. `REMAPRX_CUSTOM_DOMAIN=remaprx.com` attaches the domain (cutover).
+- `.github/workflows/evidence-gate.yml`: governance (which includes the citation gate) on every pull request; squash-merges page PRs (label `evidence-fill`, branch `fill/*` or `claude/remaprx-fill-*`) when green, then dispatches the deploy. It uses `GITHUB_TOKEN` only.
+- `.github/workflows/deploy-cloudflare.yml`: build and `wrangler deploy` on push to main. The deploy steps are skipped until secrets `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` and variable `REMAPRX_D1_DATABASE_ID` exist, so missing credentials do not fail the workflow. `REMAPRX_CUSTOM_DOMAIN=remaprx.com` attaches the domain (cutover).

@@ -1,5 +1,11 @@
 # Second Look rule changelog
 
+## 2026-11-04 — activate scheduled-fill tool limits and hosted workflows
+
+Source: owner instruction to open one pull request that passes `DEPOSITS_READ_TOKEN` into the scheduled Claude fill action, enables full action output, sets the allowed and disallowed tool lists, and moves the staged auto-merge and Cloudflare deploy workflows into `.github/workflows/`. Scope: GitHub Actions and the citation-gate handoff. Supersedes leaving `evidence-gate.yml` and `deploy-cloudflare.yml` in `ci/pending-workflows/`. Contracts: `AGENTS.md` and `ci/pending-workflows/README.md`.
+
+Implementation: both workflow files are active and their job logic is unchanged. Deploy still skips its steps when `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`, or `REMAPRX_D1_DATABASE_ID` is empty. The evidence gate uses `GITHUB_TOKEN` only, so it has no optional repository secret to skip. Scheduled fill passes the deposits read token through the action environment and denies `gh secret` and `gh pr merge`. Verification: actionlint 1.7.7 reported no findings on `.github/workflows`, and `node scripts/check-governance.mjs` passed. This pull request is not merged. Remaining: the Cloudflare secrets and D1 variable must exist before a push to `main` deploys; this change does not create those credentials.
+
 ## October 28, 2026 - guide-library asset preload repair
 
 During the owner-authorized publication follow-up, the preview request log exposed the preexisting missing CSS-only JavaScript preload `guide-library-CCVnavNE.js` despite an empty bounded browser-console result. Move the unchanged shared guide-library stylesheet from its two client import sites to the existing global root-layout stylesheet list. No account, billing, scientific, protected-content or navigation behavior changes. Verify the production RSC asset manifest against emitted assets and rendered article/citation behavior before publication; receipts follow in `research/batches/REMAPRX-PRELOAD-REPAIR-20261028/`.
