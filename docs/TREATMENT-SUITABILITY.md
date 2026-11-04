@@ -23,3 +23,10 @@ The seven-page NSCLC sample, edition 3.0, adds one treatment-suitability page ea
 ## Verification and release
 
 Verify packet/website row parity, per-drug coverage, citation closure and rejection of missing/invalid safety rows. Preserve membership, exact-edition approval, withdrawal, integrity and privacy checks. Check all public article profiles, condition links, mobile table width, the seven rendered PDF pages, selectable text and source links. Record build and publication separately from scientific approval. See `research/batches/RRX-SAFETY-001/HANDOFF.md` for the executed checks and release receipt.
+
+
+## November 4, 2026 — Contraindications information card
+
+Source: owner's request to move the repeated contraindication explanation, selected-label scope and prescriber-review note into a small information-icon hover card to the right of Contraindications. Apply universally through the shared article renderer, including drug pages without structured rows; condition suitability tables use the same card beside their local heading. Supersedes the repeated visible “Who should not be considered?” subheading on drug pages, introductory boilerplate, visible scope caption and closing generic disclaimer. Keep all treatment-specific cited prose, table rows, classification and source identities visible and unchanged. Keep exact selected-product/formulation scope in the card wherever structured rows are present. Physician packet/print content retains its existing self-contained notes.
+
+Use the existing Status information-card interaction and appearance: hover with a grace period, keyboard focus and tap/click to open, Escape/outside dismissal, a 44px target with a small outline icon, and viewport-contained positioning. The shared Status behavior and wording are preserved by extracting its reusable interaction. Consulted Microbiome Medicine article/tooltip source and PepsAnon prose/citation hover cards; reference projects remain unchanged. TypeSafe guidance keeps this deterministic UI in code; React best-practices guidance applies to the shared components. Verification and live publication pending in CONTRAINDICATIONS-TOOLTIP-20261104.json.

@@ -77,5 +77,5 @@ export function guideCitationOrder(guide:Guide,sources:Source[],additionalGroups
   // citation sequence. Opening, filtering or closing it never renumbers the page.
   return createCitationOrder([...groups,outcomeDrawerCitationIds(rows,sources),guide.sourceIds],sources.map(source=>source.id));
  }
- return createCitationOrder([sectionSources(first),mechanismCitationIds(guide),sectionSources(rest),sectionSources(scoped),sectionSources(later),sectionSources(evidence),hasArticleEvidence(guide)?visibleOutcomeCitationIds(rows,guide):[],...additionalGroups,!isRecord?feedSourceIds:[],!isRecord?guide.faqs.flatMap(faq=>faq.sentences?faq.sentences.flatMap(sentence=>sentence.sources):faq.sources):[],hasArticleEvidence(guide)?outcomeDrawerCitationIds(rows,sources):[],guide.sourceIds],sources.map(source=>source.id));
+ return createCitationOrder([sectionSources(first),mechanismCitationIds(guide),sectionSources(rest),sectionSources(scoped),sectionSources(later),sectionSources(evidence),hasArticleEvidence(guide)?visibleOutcomeCitationIds(rows,guide):[],!isRecord?guide.faqs.flatMap(faq=>faq.sentences?faq.sentences.flatMap(sentence=>sentence.sources):faq.sources):[],...additionalGroups,!isRecord?feedSourceIds:[],hasArticleEvidence(guide)?outcomeDrawerCitationIds(rows,sources):[],guide.sourceIds],sources.map(source=>source.id));
 }

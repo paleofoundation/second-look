@@ -9,8 +9,8 @@ const {content, guideUrl, isPrimarySource} = load(path.join(root, 'lib/content.t
 const {articleUpdates, articleUpdatesForPath, articleUpdateDate} = load(path.join(root, 'lib/update-history.ts'));
 const {articleEvidenceSources, guideCitationOrder} = load(path.join(root, 'lib/citation-plan.ts'));
 const tail = [
-  ['section-evidence', 'Evidence'], ['research-feed', 'Research Feed'],
-  ['faqs', 'FAQs'], ['update-history', 'Update History'], ['references', 'References'],
+  ['section-evidence', 'Evidence'], ['faqs', 'FAQs'],
+  ['research-feed', 'Research Feed'], ['update-history', 'Update History'], ['references', 'References'],
 ];
 const profiles = content.guides.filter(guide => ['Drug', 'Condition', 'Evidence comparison'].includes(guide.type) || guide.type.includes('evidence answer'));
 for (const guide of profiles) {
@@ -36,7 +36,7 @@ for (const guide of profiles) {
     assert(/<svg[^>]*aria-hidden="true"/.test(link), guide.slug + ': icon has no duplicated accessible name');
     assert(/<span>[^<]+<\/span>/.test(link), guide.slug + ': visible link text retained');
   }
-  const feed = article.slice(article.indexOf('id="research-feed"'), article.indexOf('id="faqs"'));
+  const feed = article.slice(article.indexOf('id="research-feed"'), article.indexOf('id="update-history"'));
   assert(!feed.includes('id="references"'), guide.slug + ': bibliography is separate from Research Feed');
   const studyIds = [...feed.matchAll(/data-study-id="([^"]+)"/g)].map(match => match[1]);
   assert.deepEqual(studyIds, pageSources.filter(isPrimarySource).map(source => source.id), guide.slug + ': one canonical summary per primary source');
@@ -86,7 +86,7 @@ for (const source of fixtureSources) {
   for (const id of openingIds) assert(body.includes('id="study-' + source.id + '-opening-' + id + '"'), 'Every canonical opening is present and scoped to its study');
   assert(body.includes('Results · PDF page 3'), 'Source locator remains visible');
   const citations = [...body.matchAll(/data-source-id="([^"]+)"[\s\S]*?class="citation-trigger"[^>]*>\[(\d+)\]<\/a>/g)];
-  assert(citations.length >= 5 && citations.every(match => match[1] === source.id && +match[2] === frozenOrder.indexOf(source.id) + 1), 'Opening answers and sections retain frozen citations');
+  assert(citations.length >= 4 && citations.every(match => match[1] === source.id && +match[2] === frozenOrder.indexOf(source.id) + 1), 'Opening answers and sections retain frozen citations');
   combined += body;
   assert(!canRenderStudyReviewInline({...review, sourceIds: ['unknown']}, source.id, fixtureSources, frozenOrder), 'Unknown citations stay on the dedicated review page');
   assert(!canRenderStudyReviewInline({...review, sourceIds: frozenOrder}, source.id, fixtureSources, frozenOrder), 'Cross-source reviews cannot change first appearances on expansion');

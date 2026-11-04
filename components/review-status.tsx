@@ -8,5 +8,6 @@ export function ReviewStatus({sourceId,access,reason}:{sourceId:string;access:st
  if(reason==='signed_out')return <section className="article-section" id="review-status"><h2>Full study review</h2><p>Sign in for free access to the complete review.</p><a className="button" target="_top" href={chatGPTSignInPath(destination)}>Read full review</a></section>;
  if(reason==='intake_required')return <section className="article-section" id="review-status"><h2>Full study review</h2><p>Complete your reader profile to access the complete review.</p><a className="button" href={intakePath(destination)}>Complete reader profile</a></section>;
  if(reason==='review_withdrawn')return <section className="article-section" id="review-status"><h2>Review withdrawn</h2><p>The review has been withdrawn. The original source and its correction notices are listed above.</p></section>;
- return null;
+ const message=reason==='temporarily_unavailable'?'Review availability could not be checked. Please reload this page to try again.':reason==='content_unavailable'?'The complete review is temporarily unavailable. The source details and summary remain available.':reason==='review_incomplete'?'The complete appraisal is still being completed. The source details and available summary are shown above.':'The complete appraisal has not yet been released. The source details and available summary are shown above.';
+ return <section className="article-section study-review-state" id="review-status"><h2>Full review status</h2><p>{message}</p></section>;
 }

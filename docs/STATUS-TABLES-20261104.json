@@ -1,0 +1,46 @@
+{
+  "date": "2026-11-04",
+  "request": "Move the FDA status note to an information hover card beside Status; use Contraindications as the canonical Status/Contraindications table style; do not change Filter Outcomes tables",
+  "base": "1244c2931cbd38102bd9f7f93dbba392cab72ae1",
+  "scope": {
+    "presentation": "Shared two-column clinical-table style; all regulatory values and source citations retained in the Status cell. Exact note appears only in the information card.",
+    "interactions": "Hover-intent handlers, keyboard focus and click/tap opening; Escape/outside dismissal; 44px trigger; 16px viewport collision inset.",
+    "preservation": {
+      "baseline": "1244c2931cbd38102bd9f7f93dbba392cab72ae1",
+      "profilesCompared": 72,
+      "outcomeTablesCompared": 70,
+      "renderedOutcomeTables": "byte-identical",
+      "outcomeComponentsAndStyles": "byte-identical",
+      "articleReadingCssBeforeStatusBlock": "byte-identical"
+    },
+    "scientificData": "All data/editorial/research files unchanged; no acquisition, extraction, appraisal or grading."
+  },
+  "verification": {
+    "typescript": "PASS",
+    "productionBuild": "PASS",
+    "governance": "PASS: 236 preserved files",
+    "articleNavigation": "PASS: 70 articles",
+    "evidenceAndStatusSSR": "PASS: 66 profiles plus four additional guides; all regulatory records, metadata and citations retained; closed note absent; information control present",
+    "builtPrivacy": "PASS: 41 payloads",
+    "browser": "PASS: matching 14px desktop type, 14px cell padding, full 1px #dce1ea borders and #eff2ff header on both table types; note absent below table; click opening, keyboard focus opening and Escape dismissal; 390px and 320px no overflow; 320px card bounds 16..304 in a 320px viewport; 44px information trigger. Hover entry and 180ms grace are implemented in the shared primitive wrapper.",
+    "reactReview": "Stable hooks, cleaned-up hover timer, on-demand Popover, semantic table headers and accessible trigger; no data requests added.",
+    "screenshots": [
+      "docs/verification/status-tables/preview-desktop.png",
+      "docs/verification/status-tables/preview-mobile.png"
+    ]
+  },
+  "publication": {
+    "status": "succeeded and live verified",
+    "destination": "GitHub main to existing remaprx Cloudflare Worker",
+    "url": "https://remaprx.com/drugs/metformin#section-status",
+    "pullRequest": 36,
+    "mergedCommit": "033dfa40e95388ad19ae679e8e711ca07d3c39e8",
+    "workflowRun": 41882950259,
+    "workflowJob": 126759846528,
+    "workflowConclusion": "success",
+    "workerVersion": "ae0f73de-0830-4d9c-ad22-768cd4ff977a",
+    "deployedAtUTC": "2026-11-04T18:02:59Z",
+    "liveChecks": "Information icon beside Status opens the exact note; no note below the table; matching desktop table font/padding/border/header colors; Escape closes; 390px mobile opens with no overflow.",
+    "liveScreenshot": "docs/verification/status-tables/live-desktop.png"
+  }
+}

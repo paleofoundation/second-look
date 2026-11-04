@@ -27,7 +27,9 @@ await Promise.all(Array.from({length: 4}, async () => {
       assert.equal(meta('og:image:alt'), art.socialAlt);
       assert.equal(meta('twitter:image'), 'https://remaprx.com' + socialPath);
       assert.equal(meta('twitter:card'), 'summary_large_image');
-      assert(meta('robots')?.includes('noindex') && meta('robots')?.includes('nofollow'), 'existing indexing hold');
+      const robots = (meta('robots') || '').replace(/\s/g, '');
+      if (robots.includes('noindex')) assert.equal(robots, 'noindex,follow', 'pages below the index bar are noindex,follow');
+      else assert.equal(robots, 'index,follow', 'pages that clear the index bar are indexable');
       assert(tags.some(tag => tag.src === imagePath && tag.alt === art.alt && tag.srcSet?.includes('512w')), 'visible responsive hero');
       const jsonld = [...html.matchAll(/<script\b[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)].flatMap(match => JSON.parse(match[1])['@graph'] || []);
       const image = jsonld.find(item => item['@type'] === 'ImageObject');
