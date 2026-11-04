@@ -42,7 +42,7 @@
       "design": "Quadruple-blind randomized placebo-controlled 2×3 factorial trial",
       "population": "Adults 30–85, overweight or obesity, acute COVID symptoms under 7 days; no known prior infection",
       "n": 1126,
-      "preview": "COVID-OUT reported a lower hazard of later clinician-diagnosed Long COVID after metformin began during acute infection, but this result remains provisional while an indexed correction is reconciled. The result does not establish treatment benefit for people who already have Long COVID. The long-term analysis used a selected follow-up group. Cumulative-incidence percentages are withheld because the acquired source reports conflicting control values.",
+      "preview": "COVID-OUT reported fewer later clinician diagnoses after metformin began during acute infection. The correction and current appendix have been checked; numerical claims use the corrected table, with remaining source discrepancies disclosed.",
       "locators": [
         {
           "paper_id": "P-COVIDOUT-2023",
@@ -57,13 +57,13 @@
           "missingness": "not_applicable"
         }
       ],
-      "correction": "The journal issued a correction (PMID 37666258). Conflicting cumulative-incidence values make the absolute risk reduction uncertain.",
+      "correction": "The actual correction (DOI 10.1016/S1473-3099(23)00562-5) and current appendix were checked. Corrected Table S4 and Results agree on 35/564 versus 58/562 diagnoses and estimated cumulative incidence of 6.3% versus 10.4%. A Discussion sentence says 10.6% and the current registry lists 59 control diagnoses; those discrepancies remain explicit. Numeric claims are tied to the corrected report and table.",
       "familyId": "S-COVIDOUT-2023",
       "pmid": "37302406",
       "randomizedN": 1431,
       "comparator": "Matched placebo; factorial design",
       "intervention": "Oral immediate-release metformin; titrated over 6 days to 1500 mg/day, continued through day 14",
-      "decisiveLimit": "The long-term follow-up population was selected from an acute-infection trial. An indexed correction and conflicting cumulative-incidence values limit interpretation of the absolute effect."
+      "decisiveLimit": "Selected long-term follow-up and a secondary endpoint limit interpretation; Discussion and registry values differ from the corrected numeric source."
     },
     {
       "id": "P-ACTIV6-2026",
@@ -415,15 +415,15 @@
       "population": "Adults with persistent fatigue after confirmed SARS-CoV-2 infection",
       "n": null,
       "status": "Quarantined",
-      "preview": "The original REVIVE report has a notice of retraction and republication and is excluded from efficacy conclusions.",
+      "preview": "Retracted original excluded. The notice and replacement report have been acquired and assessed.",
       "locators": [],
-      "correction": "Retraction and republication notice: 6 October 2026, PMID 42832813, DOI 10.7326/ANNALS-26-03050. The original findings are not reliable evidence for a benefit conclusion.",
+      "correction": "The original report was retracted and replaced. The actual notice and replacement were acquired. The original omitted a dose modification and a futility stop. Use REVIVE-REPLACEMENT (DOI 10.7326/ANNALS-26-02144) for the separately assessed report; the original is excluded from efficacy claims.",
       "familyId": "S-REVIVE-2026",
       "pmid": "41911553",
       "randomizedN": 399,
       "comparator": "Matching placebo",
       "intervention": null,
-      "decisiveLimit": "The original report was retracted for republication."
+      "decisiveLimit": "Retracted original: no efficacy claim may cite it. Replacement DOI 10.7326/ANNALS-26-02144."
     },
     {
       "id": "CTX-relative-risk-1",
@@ -5585,6 +5585,48 @@
         }
       ],
       "url": "https://pubmed.ncbi.nlm.nih.gov/25536258/"
+    },
+    {
+      "id": "REVIVE-REPLACEMENT",
+      "title": "The Effect of Fluvoxamine and Metformin for Fatigue in Patients With Long COVID: An Adaptive Randomized Trial (replacement report)",
+      "url": "https://doi.org/10.7326/ANNALS-26-02144",
+      "doi": "10.7326/ANNALS-26-02144",
+      "year": 2026,
+      "authors": [],
+      "design": "Adaptive randomized placebo-controlled trial; replacement report",
+      "population": "Adults with fatigue after COVID-19",
+      "n": 399,
+      "sourceType": "primary",
+      "preview": "Replacement report acquired and assessed separately. The retracted original is excluded.",
+      "familyId": "S-REVIVE-2026"
+    },
+    {
+      "id": "REVIVE-NOTICE",
+      "title": "Notice of Retraction and Republication: The Effect of Fluvoxamine and Metformin for Fatigue in Patients With Long COVID",
+      "url": "https://doi.org/10.7326/ANNALS-26-03050",
+      "doi": "10.7326/ANNALS-26-03050",
+      "year": 2026,
+      "authors": [],
+      "design": "Retraction and republication notice",
+      "population": "Publication integrity record",
+      "n": null,
+      "sourceType": "other",
+      "preview": "Notice acquired and linked to the source-version assessment.",
+      "familyId": "S-REVIVE-2026"
+    },
+    {
+      "id": "COVIDOUT-CORRECTION",
+      "title": "Correction to Lancet Infectious Diseases 2023;23:1119–29 (COVID-OUT)",
+      "url": "https://doi.org/10.1016/S1473-3099(23)00562-5",
+      "doi": "10.1016/S1473-3099(23)00562-5",
+      "year": 2023,
+      "authors": [],
+      "design": "Published correction",
+      "population": "Publication integrity record",
+      "n": null,
+      "sourceType": "other",
+      "preview": "Notice acquired and linked to the source-version assessment.",
+      "familyId": "S-COVIDOUT-2023"
     }
   ],
   "guides": [
@@ -6068,14 +6110,14 @@
           "id": "faq-dr001",
           "questionId": "DR001",
           "question": "Does metformin taken during acute COVID reduce the chance of later Long COVID?",
-          "answer": "The selected trials do not yet establish a settled prevention conclusion. COVID-OUT’s favorable source-reported diagnosis result remains provisional while a correction is unresolved, whereas ACTIV-6 did not meet its reported efficacy threshold for the primary symptom outcome. Both began treatment during acute infection, and their different populations and outcomes prevent a simple pooled conclusion.",
+          "answer": "The selected trials do not yet establish a settled prevention conclusion. COVID-OUT’s favorable diagnosis result is tied to its checked, corrected table, with remaining Discussion and registry discrepancies disclosed; ACTIV-6 did not meet its efficacy threshold for the primary symptom outcome. Both began treatment during acute infection, and their different populations and outcomes prevent a simple pooled conclusion.",
           "sentences": [
             {
               "text": "The selected trials do not yet establish a settled prevention conclusion.",
               "sources": []
             },
             {
-              "text": "COVID-OUT’s favorable source-reported diagnosis result remains provisional while a correction is unresolved, whereas ACTIV-6 did not meet its reported efficacy threshold for the primary symptom outcome.",
+              "text": "COVID-OUT’s favorable diagnosis result is tied to its checked, corrected table, with remaining Discussion and registry discrepancies disclosed; ACTIV-6 did not meet its efficacy threshold for the primary symptom outcome.",
               "sources": [
                 "P-COVIDOUT-2023",
                 "P-ACTIV6-2026"

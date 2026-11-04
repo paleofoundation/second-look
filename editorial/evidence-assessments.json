@@ -7,11 +7,11 @@
     {
       "rowId": "SYN-D01-C01-DIAGNOSIS",
       "grade": "Low",
-      "rationale": "Two masked randomized trials directly inform diagnosis after acute COVID, but COVID-OUT has an unresolved correction and conflicting cumulative-incidence values. ACTIV-6’s secondary estimate is compatible with no difference and is affected by missing outcomes and unadjusted multiple comparisons. Low confidence reflects these unresolved limitations; the available results do not establish a settled prevention benefit.",
+      "rationale": "Two randomized trial families inform later diagnosis after acute infection, but selective follow-up, substantial missing data, secondary endpoint status and lack of multiplicity adjustment limit confidence. The actual COVID-OUT correction and corrected table are now checked. Remaining Discussion/registry discrepancies are disclosed rather than silently reconciled, and ACTIV-6’s absolute diagnosis interval includes no difference. The source-access blocker is resolved; a settled preventive benefit is still not established.",
       "domains": [
         {
           "name": "Study methods",
-          "text": "Both trials used masked random allocation; selective extended follow-up in COVID-OUT and missing diagnosis outcomes in ACTIV-6 limit the comparisons.",
+          "text": "Both trials used masked random allocation. COVID-OUT selected participants for long-term follow-up; ACTIV-6 excluded participants after allocation and had substantial missing day-180 outcomes.",
           "sourceIds": [
             "P-COVIDOUT-2023",
             "P-ACTIV6-2026"
@@ -19,7 +19,7 @@
         },
         {
           "name": "Directness",
-          "text": "Both concern prevention during acute infection, not treatment of established Long COVID; their populations and diagnosis follow-up times differ.",
+          "text": "Both address prevention after acute infection, not recovery from established Long COVID. Prior immunity, population selection, case definitions and follow-up timepoints differ.",
           "sourceIds": [
             "P-COVIDOUT-2023",
             "P-ACTIV6-2026"
@@ -27,7 +27,7 @@
         },
         {
           "name": "Precision",
-          "text": "COVID-OUT’s provisional hazard ratio is 0.59 (95% CI 0.39–0.89); ACTIV-6’s difference is −0.7 percentage points (95% credible interval −1.5 to 0.1).",
+          "text": "COVID-OUT reported HR 0.59 (95% CI 0.39 to 0.89) and corrected cumulative incidence 6.3% versus 10.4%. ACTIV-6’s secondary absolute difference was -0.7 points (95% credible interval -1.5 to 0.1).",
           "sourceIds": [
             "P-COVIDOUT-2023",
             "P-ACTIV6-2026"
@@ -35,7 +35,7 @@
         },
         {
           "name": "Consistency",
-          "text": "The point estimates both favor metformin, but two differently defined follow-ups with different uncertainty do not establish a replicated common effect.",
+          "text": "Diagnosis point estimates favor metformin, but differing populations, follow-up and uncertain absolute effects prevent treating these as a replicated common magnitude. ACTIV-6’s primary symptom result was not positive.",
           "sourceIds": [
             "P-COVIDOUT-2023",
             "P-ACTIV6-2026"
@@ -43,7 +43,7 @@
         },
         {
           "name": "Source integrity",
-          "text": "COVID-OUT’s indexed correction and conflicting control percentages remain unresolved; ACTIV-6 has only a partial full-text record. The diagnosis synthesis remains on hold.",
+          "text": "Actual COVID-OUT correction and current appendix obtained and checked. Corrected Table S4 controls the estimates; Discussion and registry discrepancies remain. ACTIV-6’s published full report was assessed, while its separately referenced SAP and exhaustive version history remain unavailable.",
           "sourceIds": [
             "P-COVIDOUT-2023",
             "P-ACTIV6-2026"
@@ -57,16 +57,16 @@
       "basis": [
         {
           "sourceId": "P-COVIDOUT-2023",
-          "locator": "Figure 2 and Results paragraph beginning cumulative incidence"
+          "locator": "Corrected appendix Table S4, printed p9/PDF p10; correction DOI 10.1016/S1473-3099(23)00562-5; assessment Q05-Q09 and Q13."
         },
         {
           "sourceId": "P-ACTIV6-2026",
-          "locator": "Table 3 secondary clinician diagnosis; Table 2 raw counts"
+          "locator": "Published full report Results/Table 2; master protocol v12.0 Appendix G printed pp108-109; assessment Q05-Q09 and Q13."
         }
       ],
       "integrity": "correction_unresolved",
-      "assessedAt": "2026-10-11",
-      "inputSha256": "586c64728d034e92b0ed9915a68bc0c5f6697b89f80ab374057873ccf08d4f10"
+      "assessedAt": "2026-11-04",
+      "inputSha256": "a5fa7cbe2e6323d3ff44313ce64e340addfabc614021dc1dc27860c6b80f6ab2"
     },
     {
       "rowId": "SYN-D01-C01-SYMPTOMS",

@@ -615,20 +615,17 @@
             "type": "confidence_interval",
             "missing_reason": null
           },
-          "recordedNotes": "Unadjusted source-reported hazard ratio; correction unresolved. Cumulative-incidence percentages withheld because the source has conflicting control values.",
-          "sourceAccess": "full_text_html",
+          "recordedNotes": "Corrected Table S4 checked: 35/564 versus 58/562 diagnoses; estimated cumulative incidence 6.3% versus 10.4%; absolute difference 4.1 percentage points (95% CI 0.9 to 7.4). Discussion and current registry discrepancies retained; values are not combined.",
+          "sourceAccess": "full_text_with_corrected_appendix",
           "extractionBasis": "full_text",
           "locators": [
             {
               "paper_id": "P-COVIDOUT-2023",
               "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11259948/",
-              "file": "work/evidence/raw/covidout.html",
-              "pdf_page": null,
-              "printed_page": null,
-              "section": "Results",
-              "table_figure": "Figure 2 and Results paragraph beginning cumulative incidence",
-              "paragraph": null,
-              "basis": "full_text",
+              "file": "research/batches/RRX-METFORMIN-COMPLETE-20261103/assessments/P-COVIDOUT-2023.json",
+              "sha256": "9cccde280a0b6f2f7fbdf1009542431dbafbf289ee77fb385e12e053c37a625a",
+              "nativeLocator": "#/questions/Q06; Current Results; corrected appendix Table S4, printed p9 / PDF p10",
+              "basis": "assessed_full_text_source_packet",
               "missingness": "not_applicable"
             }
           ],
@@ -685,7 +682,7 @@
             "type": "credible_interval",
             "missing_reason": null
           },
-          "recordedNotes": "Not covariate adjusted per Table 3 footnote e; multiplicity not controlled; missing 594 outcomes. Do not replace primary with this endpoint.",
+          "recordedNotes": "Published secondary clinician-diagnosis estimate; not adjusted for multiple comparisons. Primary symptom analysis failed its efficacy decision threshold. Raw diagnosis observations and model estimates are distinct.",
           "sourceAccess": "partial_full_text_html",
           "extractionBasis": "full_text",
           "locators": [
@@ -741,7 +738,7 @@
         "R-A6-CD"
       ],
       "finding": {
-        "text": "COVID-OUT reported a lower hazard of clinician-diagnosed Long COVID, with interpretation limited by an indexed correction. ACTIV-6’s secondary diagnosis estimate favored metformin but its interval included no difference.",
+        "text": "COVID-OUT reported a lower hazard of later clinician-diagnosed Long COVID in its corrected report. ACTIV-6’s secondary diagnosis estimate favored metformin, but its absolute interval included no difference and its primary symptom result did not meet the efficacy threshold.",
         "sources": [
           "P-COVIDOUT-2023",
           "P-ACTIV6-2026"
@@ -754,21 +751,20 @@
       },
       "limitations": [
         {
-          "text": "COVID-OUT enrolled adults with overweight or obesity and no known prior infection; ACTIV-6 allowed prior infection and vaccination.",
+          "text": "COVID-OUT selected a long-term follow-up cohort from adults with overweight or obesity and no known prior infection; ACTIV-6 included substantial prior immunity and missing follow-up.",
           "sources": [
             "P-COVIDOUT-2023",
             "P-ACTIV6-2026"
           ]
         },
         {
-          "text": "The COVID-OUT report has an indexed correction and conflicting cumulative-incidence values, making its absolute risk reduction uncertain.",
+          "text": "The COVID-OUT correction notice and current appendix were checked. Corrected Table S4 is the numeric source; the Discussion percentage and current registry count still differ.",
           "sources": [
-            "P-COVIDOUT-2023",
-            "P-ACTIV6-2026"
+            "P-COVIDOUT-2023"
           ]
         },
         {
-          "text": "The ACTIV-6 diagnosis endpoint was secondary, and its interval was not adjusted for multiple comparisons.",
+          "text": "These are secondary diagnosis outcomes with different timepoints and populations. ACTIV-6’s diagnosis comparisons were not adjusted for multiplicity, and its primary symptom endpoint was not positive.",
           "sources": [
             "P-COVIDOUT-2023",
             "P-ACTIV6-2026"
@@ -776,13 +772,12 @@
         }
       ],
       "coverage": {
-        "scope": "Bounded recorded corpus, not a systematic review",
+        "scope": "Selected-source assessment, not an exhaustive systematic review",
         "complete": false,
         "pending": [
-          "Reconcile COVID-OUT correction",
-          "Obtain complete ACTIV-6 source and supplement",
-          "Appraise each result and the body of evidence",
-          "No settled efficacy synthesis until the COVID-OUT correction and conflicting control percentage are reconciled"
+          "Independent verification and human scientific review",
+          "COVID-OUT Discussion/registry discrepancies retained; corrected Table S4 controls numeric claims",
+          "ACTIV-6 separately referenced SAP and full historical registry audit not recovered"
         ]
       },
       "publicationState": "private_ai_draft",
@@ -793,18 +788,16 @@
         "/answers/metformin-prevention"
       ],
       "direction": "favorable_point_estimates_with_different_uncertainty",
-      "magnitudeText": "COVID-OUT: reported hazard ratio 0.59 (95% CI 0.39–0.89), subject to the correction notice. ACTIV-6: risk difference −0.7 percentage points (95% credible interval −1.5 to 0.1).",
+      "magnitudeText": "COVID-OUT: hazard ratio 0.59 (95% CI 0.39 to 0.89), using the corrected report. ACTIV-6 secondary diagnosis: risk difference -0.7 percentage points (95% credible interval -1.5 to 0.1).",
       "evidenceBase": "2 randomized trial families; endpoint definitions, populations and timepoints remain separate.",
       "sourceLocators": [
         {
           "sourceId": "P-COVIDOUT-2023",
-          "evidenceRef": "R-CO-HR",
-          "label": "Figure 2 and Results paragraph beginning cumulative incidence"
+          "label": "Corrected appendix Table S4, printed p9/PDF p10; Results and Figure 2"
         },
         {
           "sourceId": "P-ACTIV6-2026",
-          "evidenceRef": "R-A6-CD",
-          "label": "Table 3 secondary clinician diagnosis; Table 2 raw counts"
+          "label": "Published report Results and Table 2; secondary clinician diagnosis analysis"
         }
       ],
       "sourceAccess": [
@@ -820,7 +813,7 @@
       "conflictsOrCorrections": [
         {
           "sourceId": "P-COVIDOUT-2023",
-          "status": "Correction indexed as PMID 37666258; exact amended content not yet reconciled. PMC abstract/results report placebo 10.4%; Discussion says 10.6%. Use results/figure value provisionally; publication remains HOLD.",
+          "status": "The actual correction (DOI 10.1016/S1473-3099(23)00562-5) and current appendix were checked. Corrected Table S4 and Results agree on 35/564 versus 58/562 diagnoses and estimated cumulative incidence of 6.3% versus 10.4%. A Discussion sentence says 10.6% and the current registry lists 59 control diagnoses; those discrepancies remain explicit. Numeric claims are tied to the corrected report and table.",
           "complete": false
         },
         {
@@ -829,7 +822,7 @@
           "complete": false
         }
       ],
-      "contentSha256": "75e0c1774d61cc88fa7792ea3591c77d140f4a5c2eadc42c9ff32a2013e04174"
+      "contentSha256": "85b84a703a9d8ca28ebc9e5601dfc0c45dfd8af12256174a84fa0f6dc901d5c5"
     },
     {
       "id": "SYN-D01-C01-SYMPTOMS",
@@ -6987,7 +6980,7 @@
           "https://pmc.ncbi.nlm.nih.gov/articles/PMC11259948/",
           "https://pubmed.ncbi.nlm.nih.gov/37666258/"
         ],
-        "result": "Correction indexed as PMID 37666258; exact amended content not yet reconciled. PMC abstract/results report placebo 10.4%; Discussion says 10.6%. Use results/figure value provisionally; publication remains HOLD.",
+        "result": "The actual correction (DOI 10.1016/S1473-3099(23)00562-5) and current appendix were checked. Corrected Table S4 and Results agree on 35/564 versus 58/562 diagnoses and estimated cumulative incidence of 6.3% versus 10.4%. A Discussion sentence says 10.6% and the current registry lists 59 control diagnoses; those discrepancies remain explicit. Numeric claims are tied to the corrected report and table.",
         "complete": false
       },
       "publicationState": "draft",
@@ -7100,7 +7093,7 @@
           "https://pubmed.ncbi.nlm.nih.gov/42832813/",
           "https://doi.org/10.7326/ANNALS-26-03050"
         ],
-        "result": "QUARANTINE: NCBI RetractionIn points to PMID 42832813 (6 October 2026), Notice of Retraction and Republication, DOI 10.7326/ANNALS-26-03050. Replacement version and reason not yet acquired; no efficacy claim may use original.",
+        "result": "The original REVIVE report is retracted and excluded. The actual notice and replacement DOI 10.7326/ANNALS-26-02144 were acquired and assessed; dose modification and futility stopping are retained.",
         "complete": false
       },
       "publicationState": "draft",
@@ -9883,7 +9876,7 @@
       "conditionIds": [
         "C01"
       ],
-      "reason": "QUARANTINE: NCBI RetractionIn points to PMID 42832813 (6 October 2026), Notice of Retraction and Republication, DOI 10.7326/ANNALS-26-03050. Replacement version and reason not yet acquired; no efficacy claim may use original.",
+      "reason": "The original REVIVE report is retracted and excluded. The actual notice and replacement DOI 10.7326/ANNALS-26-02144 were acquired and assessed; dose modification and futility stopping are retained.",
       "resultRowsAllowed": false,
       "evidenceRef": "P-REVIVE-2026-correction"
     }

@@ -13,7 +13,7 @@
       "timepoint": "COVID-OUT day 300; ACTIV-6 day 180",
       "status": "provisional_correction_hold",
       "finding": {
-        "text": "COVID-OUT reported a lower hazard of clinician-diagnosed Long COVID, with interpretation limited by an indexed correction. ACTIV-6’s secondary diagnosis estimate favored metformin but its interval included no difference.",
+        "text": "COVID-OUT reported a lower hazard of later clinician-diagnosed Long COVID in its corrected report. ACTIV-6’s secondary diagnosis estimate favored metformin, but its absolute interval included no difference and its primary symptom result did not meet the efficacy threshold.",
         "sources": [
           "P-COVIDOUT-2023",
           "P-ACTIV6-2026"
@@ -24,7 +24,7 @@
         ],
         "kind": "bounded_interpretation"
       },
-      "magnitudeText": "COVID-OUT: reported hazard ratio 0.59 (95% CI 0.39–0.89), subject to the correction notice. ACTIV-6: risk difference −0.7 percentage points (95% credible interval −1.5 to 0.1).",
+      "magnitudeText": "COVID-OUT: hazard ratio 0.59 (95% CI 0.39 to 0.89), using the corrected report. ACTIV-6 secondary diagnosis: risk difference -0.7 percentage points (95% credible interval -1.5 to 0.1).",
       "certainty": {
         "label": "Not appraised",
         "rationale": ""
@@ -32,21 +32,20 @@
       "evidenceBase": "2 randomized trial families; endpoint definitions, populations and timepoints remain separate.",
       "limitations": [
         {
-          "text": "COVID-OUT enrolled adults with overweight or obesity and no known prior infection; ACTIV-6 allowed prior infection and vaccination.",
+          "text": "COVID-OUT selected a long-term follow-up cohort from adults with overweight or obesity and no known prior infection; ACTIV-6 included substantial prior immunity and missing follow-up.",
           "sources": [
             "P-COVIDOUT-2023",
             "P-ACTIV6-2026"
           ]
         },
         {
-          "text": "The COVID-OUT report has an indexed correction and conflicting cumulative-incidence values, making its absolute risk reduction uncertain.",
+          "text": "The COVID-OUT correction notice and current appendix were checked. Corrected Table S4 is the numeric source; the Discussion percentage and current registry count still differ.",
           "sources": [
-            "P-COVIDOUT-2023",
-            "P-ACTIV6-2026"
+            "P-COVIDOUT-2023"
           ]
         },
         {
-          "text": "The ACTIV-6 diagnosis endpoint was secondary, and its interval was not adjusted for multiple comparisons.",
+          "text": "These are secondary diagnosis outcomes with different timepoints and populations. ACTIV-6’s diagnosis comparisons were not adjusted for multiplicity, and its primary symptom endpoint was not positive.",
           "sources": [
             "P-COVIDOUT-2023",
             "P-ACTIV6-2026"
@@ -56,13 +55,11 @@
       "sourceLocators": [
         {
           "sourceId": "P-COVIDOUT-2023",
-          "evidenceRef": "R-CO-HR",
-          "label": "Figure 2 and Results paragraph beginning cumulative incidence"
+          "label": "Corrected appendix Table S4, printed p9/PDF p10; Results and Figure 2"
         },
         {
           "sourceId": "P-ACTIV6-2026",
-          "evidenceRef": "R-A6-CD",
-          "label": "Table 3 secondary clinician diagnosis; Table 2 raw counts"
+          "label": "Published report Results and Table 2; secondary clinician diagnosis analysis"
         }
       ],
       "sourceIds": [
@@ -78,8 +75,13 @@
         "/answers/metformin-prevention"
       ],
       "coverage": {
+        "scope": "Selected-source assessment, not an exhaustive systematic review",
         "complete": false,
-        "pending": []
+        "pending": [
+          "Independent verification and human scientific review",
+          "COVID-OUT Discussion/registry discrepancies retained; corrected Table S4 controls numeric claims",
+          "ACTIV-6 separately referenced SAP and full historical registry audit not recovered"
+        ]
       },
       "effects": [
         {

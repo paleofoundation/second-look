@@ -40,3 +40,9 @@ The direct Metformin acquisition return contains 12 verified source assets, incl
 4. Complete merchant/tax/refund/support details, final accessible PDF/release support, and genuine editorial, clinical and legal release records before live individual sales. Long COVID and itraconazole follow; membership stays disabled until all three substantive guides pass.
 
 Concurrent Sites version 37 (`11b907ced9b7f8d720756cccef3d49a9fb693446`, deployment `appgdep_6accf19ca79c819181dfda79d8b9bc65`) subsequently published the separate physician-packet workspace and retained this guide infrastructure. Its application changes were preserved. The follow-up source merge restores all prior append-only changelog entries alongside that new contract and the version-36 receipt; it makes no additional application behavior change.
+
+## November 4, 2026 continuation
+
+The earlier October acquisition counts above are historical. The current Metformin candidate is `2026.11.04-candidate.1`, with a 15-chapter manuscript, 30 cited references and web/full-PDF/sample/summary outputs stored outside the application checkout. `research/batches/RRX-METFORMIN-COMPLETE-20261103/README.md` is the current handoff. It records the 33-source disposition ledger, actual correction/replacement work, 24 source assessments, remaining access gaps and independent approvals still required.
+
+The host PDF adapter now keeps individual bibliography entries and worksheet prompts together at page breaks. The vendored renderer is unchanged, and the manifest also records the host Python adapter hash. Full manuscript and raw source files remain outside Git and deployment artifacts. No guide has been deployed, put on sale or marked human-approved by this continuation.

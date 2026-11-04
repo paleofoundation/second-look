@@ -1,0 +1,744 @@
+{
+  "sourceId": "P-ACTIV6-2026",
+  "title": "ACTIV-6: a negative primary symptom endpoint and a secondary diagnosis signal",
+  "version": "metformin-assessment-20261104.1",
+  "sourceAssets": [
+    {
+      "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/private-research/RRX-METFORMIN-COMPLETE-20261103/P-ACTIV6-2026-pmc-20261103T131457368602Z",
+      "sha256": "a6ce5ef77711dbc62598296a39bc2a0956b7391cf559c4e6af9e4ed7b6b4b656"
+    },
+    {
+      "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/private-research/RRX-METFORMIN-COMPLETE-20261103/NCT04885530-registry-20261104T082926821950Z",
+      "sha256": "0d9cc315201ebebaf09b1a4dd610c1c155e070534a8b0f151bd27dff1faf455a"
+    },
+    {
+      "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/private-research/RRX-METFORMIN-COMPLETE-20261103/NCT04885530-protocol-20261104T083039041535Z",
+      "sha256": "f0dd50d911baadf6c824f52c6a2ead3f7f9f6674d5593dca758bf449ff17cefb"
+    },
+    {
+      "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/private-research/RRX-METFORMIN-COMPLETE-20261103/NCT06042855-registry-20261104T083040180876Z",
+      "sha256": "34b1f9846e48791371de070a6d5ac52a0731bfb1fb667a692a19a0b076383eda"
+    }
+  ],
+  "questions": {
+    "Q01": {
+      "answer": "Test early metformin against placebo for symptoms or death at day 180. The long-term primary endpoint is specified in Appendix G, distinct from the platform acute primary endpoint. Prevention after acute infection, not treatment of established long COVID. The report must be interpreted by its own endpoint hierarchy.",
+      "status": "assessed",
+      "locators": [
+        "Methods; protocol v12.0 Appendix G §21.7, printed pp108–109"
+      ]
+    },
+    "Q02": {
+      "answer": "Adults at least 30 years old; median age 47, 63% women. Ninety US sites; symptomatic infection within 7 days, positive test within 10 days; 83% reported prior vaccination or infection. 3214 randomized; 231 excluded for administrative issues or medication not delivered within 7 days; 2983 analyzed, 1439 metformin and 1544 placebo. The analysis is modified intention to treat, not all randomized participants.",
+      "status": "assessed",
+      "locators": [
+        "Methods; Table 1; participant flow"
+      ]
+    },
+    "Q03": {
+      "answer": "Aurobindo immediate-release metformin 500-mg tablets. Oral 500 mg day 1, 500 mg twice daily days 2–5, then 500 mg morning and 1000 mg evening through day 14. Usual clinical care; no simultaneous enrollment in other active platform drug comparisons. Long-term surveys at days 90, 120 and 180. This short acute regimen cannot establish the effects of chronic treatment.",
+      "status": "assessed",
+      "locators": [
+        "Methods: trial design and interventions"
+      ]
+    },
+    "Q04": {
+      "answer": "Placebo; 134 placebo recipients received generic placebo before the matching product became available. Parallel 1:1 allocation. Simple random-number sequence. Double-blind design, with a reported early placebo-matching limitation. Concurrent enrollment September 2023 to May 2024. Differences in medication delivery and placebo appearance are relevant implementation limitations.",
+      "status": "assessed",
+      "locators": [
+        "Methods: randomization and intervention"
+      ]
+    },
+    "Q05": {
+      "answer": "Primary long-term endpoint was any COVID-attributed symptom or death at day 180; clinician diagnosis was secondary. Self-report point-in-time symptom questionnaire and self-report of a clinician diagnosis since the preceding survey. Primary day 180; additional day 90 and 120 assessments. Patient-reported symptoms and diagnosis, not a laboratory surrogate. No established minimal important absolute risk reduction; the efficacy rule was posterior probability above 0.975. A statistical decision threshold is not a patient-important change threshold.",
+      "status": "assessed",
+      "locators": [
+        "Methods: outcomes; statistical analysis"
+      ]
+    },
+    "Q06": {
+      "answer": "Adjusted primary risks 2.9% metformin versus 3.6% placebo; raw symptoms 33 versus 46 at day 180. Raw denominators 1439 and 1544 include missing observations; 1139 and 1251 supplied primary day-180 data. Adjusted risk difference −0.8 percentage points, 95% credible interval −2.2 to 0.6; relative risk 0.79, 0.474 to 1.230. Between-arm posterior probability of efficacy 0.83, below 0.975. Secondary clinician diagnosis adjusted risks 0.7% versus 1.4%; raw 8 versus 18. Secondary absolute difference −0.7 points, credible interval −1.5 to 0.1; relative-risk interval reported 0.155–0.995, posterior probability 0.96. Do not replace the negative primary decision with a positive claim based on a secondary relative-risk interval. Intervals computed on different scales need not have identical boundary behavior.",
+      "status": "assessed",
+      "locators": [
+        "Abstract; Results; Table 2"
+      ]
+    },
+    "Q07": {
+      "answer": "300 metformin and 293 placebo participants lacked day-180 primary data. Bayesian Markov model used observed longitudinal data with adjustment; missing-at-random assumptions remain consequential. Full adherence distribution is not provided in this long-term report. Administrative and late-delivery exclusions occurred after randomization; recent reinfection within 28 days was excluded for the long-term endpoint. Modified intention-to-treat, 2983 medication recipients. Individual participant, not each repeated survey. About one fifth lacked the primary day-180 observation; modeling cannot prove their unobserved outcomes.",
+      "status": "assessed",
+      "locators": [
+        "Methods; Table 2; limitations"
+      ]
+    },
+    "Q08": {
+      "answer": "Safety of special interest, including lactic acidosis and self-reported hypoglycemia; general tolerability was not assessed here. 1439 metformin and 1544 placebo in the modified intention-to-treat set. No lactic acidosis reported; hypoglycemia reported by 2 metformin and 4 placebo recipients. This report does not give a comprehensive treatment-discontinuation analysis for intolerance. Fourteen days of assigned treatment, long-term follow-up to 180 days. These findings do not establish that gastrointestinal adverse effects were absent.",
+      "status": "assessed",
+      "locators": [
+        "Safety; Discussion"
+      ]
+    },
+    "Q09": {
+      "answer": "Post-randomization exclusions, incomplete follow-up, self-report and low event frequency. Randomization limits baseline confounding; selection after allocation and missing outcomes may reintroduce bias. Protocol supports the long-term endpoint, but model regularization and efficacy threshold were updated after the day-28 analysis; registry appendix emphasizes acute outcomes. Secondary analyses were not multiplicity-adjusted. Primary and absolute secondary intervals include no effect; few diagnoses produce substantial uncertainty. Day-90 placebo symptoms are 52 in Table 2 versus 51 in prose; hypertension is 20.9% in Table 1 versus 2% in prose. Protocol printed p109 describes futility at day180 then §21.7.3 says day90; both wordings retained. Use table-specific numbers and retain discrepancies; neither one changes the primary null decision.",
+      "status": "assessed",
+      "locators": [
+        "Methods; Table 1; Table 2; Discussion; protocol Appendix G"
+      ]
+    },
+    "Q10": {
+      "answer": "Largely previously immune US outpatients with acute infection. Applies to this immediate-release 14-day schedule, not all products or chronic use. The symptom primary endpoint differs from the clinician-diagnosis endpoint in COVID-OUT. Preexisting long COVID was not excluded; fluctuating illness can be missed by point-in-time questions. Do not describe this as a trial of treating established long COVID.",
+      "status": "assessed",
+      "locators": [
+        "Eligibility; Discussion"
+      ]
+    },
+    "Q11": {
+      "answer": "ACTIV-6 metformin appendix, NCT06042855 under master NCT04885530. Published acute-recovery report and earlier long-term preprint share participants with this report. They are one randomized comparison, not independent replications. Bounded comparison with COVID-OUT, Korean treatment trial and REVIVE; no exhaustive new search. Count the published long-term paper once and supersede its preprint for these estimates.",
+      "status": "assessed",
+      "locators": [
+        "Trial identifiers; references"
+      ]
+    },
+    "Q12": {
+      "answer": "Carolyn Bramante, Thomas Stewart and ACTIV-6 investigators. Multicenter US decentralized platform coordinated through Duke and collaborators. NCATS support and BARDA contract; sponsor participated in design, conduct, analysis and publication. Metformin product identified as Aurobindo; a product name does not itself establish donation. Multiple investigators disclosed outside institutional grants, consulting and other industry relationships. The report does not support a blanket claim of no conflicts or no sponsor role.",
+      "status": "assessed",
+      "locators": [
+        "Byline; funding; conflicts"
+      ]
+    },
+    "Q13": {
+      "answer": "Published Clinical Infectious Diseases 2026 report, DOI 10.1093/cid/ciag335, superseding the preprint for current estimates. Full published article and current registry records retrieved. Master protocol v12.0 retrieved and Appendix G inspected; its separately referenced SAP was not recovered. Current appendix and master records inspected; this is not an audit of every historic registry revision. No correction or retraction identified in the retrieved current records; internal discrepancies retained above. Retrieved November 3–4, 2026. Independent numerical verification is pending, separate from this source assessment.",
+      "status": "partial",
+      "locators": [
+        "Published PMC report; NCT04885530 and NCT06042855; protocol"
+      ]
+    },
+    "Q14": {
+      "answer": "Early-infection prevention; comparison of symptoms versus clinician diagnosis. Does not establish benefit for the primary symptom endpoint; provides a secondary diagnosis signal. Observed results are distinguished from stronger preventive language used by authors; editorial conclusion remains uncertain. Present both the primary failure and secondary signal together.",
+      "status": "assessed",
+      "locators": [
+        "G-METFORMIN infection chapter"
+      ]
+    },
+    "Q15": {
+      "answer": "Evidence for preventing a later clinician diagnosis is suggestive but the primary long-term symptom result was inconclusive. Magnitude, durability and applicability to current infection patterns remain uncertain. Replication with prespecified patient-important endpoints, complete follow-up and multiplicity control could strengthen or refute the signal. This is evidence for discussion, not a personal prescribing instruction.",
+      "status": "assessed",
+      "locators": [
+        "Synthesis"
+      ]
+    }
+  },
+  "inputs": [
+    {
+      "questionId": "Q01",
+      "field": "objective",
+      "value": "Test early metformin against placebo for symptoms or death at day 180.",
+      "status": "assessed",
+      "locators": [
+        "Methods; protocol v12.0 Appendix G §21.7, printed pp108–109"
+      ]
+    },
+    {
+      "questionId": "Q01",
+      "field": "prespecification",
+      "value": "The long-term primary endpoint is specified in Appendix G, distinct from the platform acute primary endpoint.",
+      "status": "assessed",
+      "locators": [
+        "Methods; protocol v12.0 Appendix G §21.7, printed pp108–109"
+      ]
+    },
+    {
+      "questionId": "Q01",
+      "field": "claim_outcome",
+      "value": "Prevention after acute infection, not treatment of established long COVID.",
+      "status": "assessed",
+      "locators": [
+        "Methods; protocol v12.0 Appendix G §21.7, printed pp108–109"
+      ]
+    },
+    {
+      "questionId": "Q02",
+      "field": "population_species",
+      "value": "Adults at least 30 years old; median age 47, 63% women.",
+      "status": "assessed",
+      "locators": [
+        "Methods; Table 1; participant flow"
+      ]
+    },
+    {
+      "questionId": "Q02",
+      "field": "eligibility_setting",
+      "value": "Ninety US sites; symptomatic infection within 7 days, positive test within 10 days; 83% reported prior vaccination or infection.",
+      "status": "assessed",
+      "locators": [
+        "Methods; Table 1; participant flow"
+      ]
+    },
+    {
+      "questionId": "Q02",
+      "field": "recruited_treated_analyzed_counts",
+      "value": "3214 randomized; 231 excluded for administrative issues or medication not delivered within 7 days; 2983 analyzed, 1439 metformin and 1544 placebo.",
+      "status": "assessed",
+      "locators": [
+        "Methods; Table 1; participant flow"
+      ]
+    },
+    {
+      "questionId": "Q03",
+      "field": "identity_formulation",
+      "value": "Aurobindo immediate-release metformin 500-mg tablets.",
+      "status": "assessed",
+      "locators": [
+        "Methods: trial design and interventions"
+      ]
+    },
+    {
+      "questionId": "Q03",
+      "field": "route_exposure_schedule",
+      "value": "Oral 500 mg day 1, 500 mg twice daily days 2–5, then 500 mg morning and 1000 mg evening through day 14.",
+      "status": "assessed",
+      "locators": [
+        "Methods: trial design and interventions"
+      ]
+    },
+    {
+      "questionId": "Q03",
+      "field": "cointerventions",
+      "value": "Usual clinical care; no simultaneous enrollment in other active platform drug comparisons.",
+      "status": "assessed",
+      "locators": [
+        "Methods: trial design and interventions"
+      ]
+    },
+    {
+      "questionId": "Q03",
+      "field": "followup",
+      "value": "Long-term surveys at days 90, 120 and 180.",
+      "status": "assessed",
+      "locators": [
+        "Methods: trial design and interventions"
+      ]
+    },
+    {
+      "questionId": "Q04",
+      "field": "comparator",
+      "value": "Placebo; 134 placebo recipients received generic placebo before the matching product became available.",
+      "status": "assessed",
+      "locators": [
+        "Methods: randomization and intervention"
+      ]
+    },
+    {
+      "questionId": "Q04",
+      "field": "allocation",
+      "value": "Parallel 1:1 allocation.",
+      "status": "assessed",
+      "locators": [
+        "Methods: randomization and intervention"
+      ]
+    },
+    {
+      "questionId": "Q04",
+      "field": "randomization",
+      "value": "Simple random-number sequence.",
+      "status": "assessed",
+      "locators": [
+        "Methods: randomization and intervention"
+      ]
+    },
+    {
+      "questionId": "Q04",
+      "field": "blinding",
+      "value": "Double-blind design, with a reported early placebo-matching limitation.",
+      "status": "assessed",
+      "locators": [
+        "Methods: randomization and intervention"
+      ]
+    },
+    {
+      "questionId": "Q04",
+      "field": "timing",
+      "value": "Concurrent enrollment September 2023 to May 2024.",
+      "status": "assessed",
+      "locators": [
+        "Methods: randomization and intervention"
+      ]
+    },
+    {
+      "questionId": "Q05",
+      "field": "outcome_hierarchy",
+      "value": "Primary long-term endpoint was any COVID-attributed symptom or death at day 180; clinician diagnosis was secondary.",
+      "status": "assessed",
+      "locators": [
+        "Methods: outcomes; statistical analysis"
+      ]
+    },
+    {
+      "questionId": "Q05",
+      "field": "instrument",
+      "value": "Self-report point-in-time symptom questionnaire and self-report of a clinician diagnosis since the preceding survey.",
+      "status": "assessed",
+      "locators": [
+        "Methods: outcomes; statistical analysis"
+      ]
+    },
+    {
+      "questionId": "Q05",
+      "field": "timepoint",
+      "value": "Primary day 180; additional day 90 and 120 assessments.",
+      "status": "assessed",
+      "locators": [
+        "Methods: outcomes; statistical analysis"
+      ]
+    },
+    {
+      "questionId": "Q05",
+      "field": "endpoint_class",
+      "value": "Patient-reported symptoms and diagnosis, not a laboratory surrogate.",
+      "status": "assessed",
+      "locators": [
+        "Methods: outcomes; statistical analysis"
+      ]
+    },
+    {
+      "questionId": "Q05",
+      "field": "meaningful_change_threshold",
+      "value": "No established minimal important absolute risk reduction; the efficacy rule was posterior probability above 0.975.",
+      "status": "not_reported",
+      "locators": [
+        "Methods: outcomes; statistical analysis"
+      ]
+    },
+    {
+      "questionId": "Q06",
+      "field": "arm_results",
+      "value": "Adjusted primary risks 2.9% metformin versus 3.6% placebo; raw symptoms 33 versus 46 at day 180.",
+      "status": "assessed",
+      "locators": [
+        "Abstract; Results; Table 2"
+      ]
+    },
+    {
+      "questionId": "Q06",
+      "field": "numerators_denominators",
+      "value": "Raw denominators 1439 and 1544 include missing observations; 1139 and 1251 supplied primary day-180 data.",
+      "status": "assessed",
+      "locators": [
+        "Abstract; Results; Table 2"
+      ]
+    },
+    {
+      "questionId": "Q06",
+      "field": "estimate_units",
+      "value": "Adjusted risk difference −0.8 percentage points, 95% credible interval −2.2 to 0.6; relative risk 0.79, 0.474 to 1.230.",
+      "status": "assessed",
+      "locators": [
+        "Abstract; Results; Table 2"
+      ]
+    },
+    {
+      "questionId": "Q06",
+      "field": "contrast",
+      "value": "Between-arm posterior probability of efficacy 0.83, below 0.975. Secondary clinician diagnosis adjusted risks 0.7% versus 1.4%; raw 8 versus 18.",
+      "status": "assessed",
+      "locators": [
+        "Abstract; Results; Table 2"
+      ]
+    },
+    {
+      "questionId": "Q06",
+      "field": "uncertainty",
+      "value": "Secondary absolute difference −0.7 points, credible interval −1.5 to 0.1; relative-risk interval reported 0.155–0.995, posterior probability 0.96.",
+      "status": "assessed",
+      "locators": [
+        "Abstract; Results; Table 2"
+      ]
+    },
+    {
+      "questionId": "Q07",
+      "field": "attrition",
+      "value": "300 metformin and 293 placebo participants lacked day-180 primary data.",
+      "status": "assessed",
+      "locators": [
+        "Methods; Table 2; limitations"
+      ]
+    },
+    {
+      "questionId": "Q07",
+      "field": "missingness",
+      "value": "Bayesian Markov model used observed longitudinal data with adjustment; missing-at-random assumptions remain consequential.",
+      "status": "assessed",
+      "locators": [
+        "Methods; Table 2; limitations"
+      ]
+    },
+    {
+      "questionId": "Q07",
+      "field": "adherence",
+      "value": "Full adherence distribution is not provided in this long-term report.",
+      "status": "not_reported",
+      "locators": [
+        "Methods; Table 2; limitations"
+      ]
+    },
+    {
+      "questionId": "Q07",
+      "field": "exclusions",
+      "value": "Administrative and late-delivery exclusions occurred after randomization; recent reinfection within 28 days was excluded for the long-term endpoint.",
+      "status": "assessed",
+      "locators": [
+        "Methods; Table 2; limitations"
+      ]
+    },
+    {
+      "questionId": "Q07",
+      "field": "analysis_population",
+      "value": "Modified intention-to-treat, 2983 medication recipients.",
+      "status": "assessed",
+      "locators": [
+        "Methods; Table 2; limitations"
+      ]
+    },
+    {
+      "questionId": "Q07",
+      "field": "experimental_unit",
+      "value": "Individual participant, not each repeated survey.",
+      "status": "assessed",
+      "locators": [
+        "Methods; Table 2; limitations"
+      ]
+    },
+    {
+      "questionId": "Q08",
+      "field": "harms_ascertainment",
+      "value": "Safety of special interest, including lactic acidosis and self-reported hypoglycemia; general tolerability was not assessed here.",
+      "status": "assessed",
+      "locators": [
+        "Safety; Discussion"
+      ]
+    },
+    {
+      "questionId": "Q08",
+      "field": "exposure_denominator",
+      "value": "1439 metformin and 1544 placebo in the modified intention-to-treat set.",
+      "status": "assessed",
+      "locators": [
+        "Safety; Discussion"
+      ]
+    },
+    {
+      "questionId": "Q08",
+      "field": "events_severity",
+      "value": "No lactic acidosis reported; hypoglycemia reported by 2 metformin and 4 placebo recipients.",
+      "status": "assessed",
+      "locators": [
+        "Safety; Discussion"
+      ]
+    },
+    {
+      "questionId": "Q08",
+      "field": "withdrawals",
+      "value": "This report does not give a comprehensive treatment-discontinuation analysis for intolerance.",
+      "status": "not_reported",
+      "locators": [
+        "Safety; Discussion"
+      ]
+    },
+    {
+      "questionId": "Q08",
+      "field": "observation_time",
+      "value": "Fourteen days of assigned treatment, long-term follow-up to 180 days.",
+      "status": "assessed",
+      "locators": [
+        "Safety; Discussion"
+      ]
+    },
+    {
+      "questionId": "Q09",
+      "field": "bias_domains",
+      "value": "Post-randomization exclusions, incomplete follow-up, self-report and low event frequency.",
+      "status": "assessed",
+      "locators": [
+        "Methods; Table 1; Table 2; Discussion; protocol Appendix G"
+      ]
+    },
+    {
+      "questionId": "Q09",
+      "field": "confounding",
+      "value": "Randomization limits baseline confounding; selection after allocation and missing outcomes may reintroduce bias.",
+      "status": "assessed",
+      "locators": [
+        "Methods; Table 1; Table 2; Discussion; protocol Appendix G"
+      ]
+    },
+    {
+      "questionId": "Q09",
+      "field": "selective_reporting",
+      "value": "Protocol supports the long-term endpoint, but model regularization and efficacy threshold were updated after the day-28 analysis; registry appendix emphasizes acute outcomes.",
+      "status": "assessed",
+      "locators": [
+        "Methods; Table 1; Table 2; Discussion; protocol Appendix G"
+      ]
+    },
+    {
+      "questionId": "Q09",
+      "field": "multiplicity",
+      "value": "Secondary analyses were not multiplicity-adjusted.",
+      "status": "assessed",
+      "locators": [
+        "Methods; Table 1; Table 2; Discussion; protocol Appendix G"
+      ]
+    },
+    {
+      "questionId": "Q09",
+      "field": "precision",
+      "value": "Primary and absolute secondary intervals include no effect; few diagnoses produce substantial uncertainty.",
+      "status": "assessed",
+      "locators": [
+        "Methods; Table 1; Table 2; Discussion; protocol Appendix G"
+      ]
+    },
+    {
+      "questionId": "Q09",
+      "field": "inconsistencies",
+      "value": "Day-90 placebo symptoms are 52 in Table 2 versus 51 in prose; hypertension is 20.9% in Table 1 versus 2% in prose. Protocol printed p109 describes futility at day180 then §21.7.3 says day90; both wordings retained.",
+      "status": "assessed",
+      "locators": [
+        "Methods; Table 1; Table 2; Discussion; protocol Appendix G"
+      ]
+    },
+    {
+      "questionId": "Q10",
+      "field": "population_indication_match",
+      "value": "Largely previously immune US outpatients with acute infection.",
+      "status": "assessed",
+      "locators": [
+        "Eligibility; Discussion"
+      ]
+    },
+    {
+      "questionId": "Q10",
+      "field": "formulation_route_exposure_match",
+      "value": "Applies to this immediate-release 14-day schedule, not all products or chronic use.",
+      "status": "assessed",
+      "locators": [
+        "Eligibility; Discussion"
+      ]
+    },
+    {
+      "questionId": "Q10",
+      "field": "endpoint_match",
+      "value": "The symptom primary endpoint differs from the clinician-diagnosis endpoint in COVID-OUT.",
+      "status": "assessed",
+      "locators": [
+        "Eligibility; Discussion"
+      ]
+    },
+    {
+      "questionId": "Q10",
+      "field": "limits",
+      "value": "Preexisting long COVID was not excluded; fluctuating illness can be missed by point-in-time questions.",
+      "status": "assessed",
+      "locators": [
+        "Eligibility; Discussion"
+      ]
+    },
+    {
+      "questionId": "Q11",
+      "field": "study_family",
+      "value": "ACTIV-6 metformin appendix, NCT06042855 under master NCT04885530.",
+      "status": "assessed",
+      "locators": [
+        "Trial identifiers; references"
+      ]
+    },
+    {
+      "questionId": "Q11",
+      "field": "related_reports",
+      "value": "Published acute-recovery report and earlier long-term preprint share participants with this report.",
+      "status": "assessed",
+      "locators": [
+        "Trial identifiers; references"
+      ]
+    },
+    {
+      "questionId": "Q11",
+      "field": "overlap",
+      "value": "They are one randomized comparison, not independent replications.",
+      "status": "assessed",
+      "locators": [
+        "Trial identifiers; references"
+      ]
+    },
+    {
+      "questionId": "Q11",
+      "field": "replication_search_scope",
+      "value": "Bounded comparison with COVID-OUT, Korean treatment trial and REVIVE; no exhaustive new search.",
+      "status": "assessed",
+      "locators": [
+        "Trial identifiers; references"
+      ]
+    },
+    {
+      "questionId": "Q12",
+      "field": "authors",
+      "value": "Carolyn Bramante, Thomas Stewart and ACTIV-6 investigators.",
+      "status": "assessed",
+      "locators": [
+        "Byline; funding; conflicts"
+      ]
+    },
+    {
+      "questionId": "Q12",
+      "field": "setting",
+      "value": "Multicenter US decentralized platform coordinated through Duke and collaborators.",
+      "status": "assessed",
+      "locators": [
+        "Byline; funding; conflicts"
+      ]
+    },
+    {
+      "questionId": "Q12",
+      "field": "funding",
+      "value": "NCATS support and BARDA contract; sponsor participated in design, conduct, analysis and publication.",
+      "status": "assessed",
+      "locators": [
+        "Byline; funding; conflicts"
+      ]
+    },
+    {
+      "questionId": "Q12",
+      "field": "supplied_products",
+      "value": "Metformin product identified as Aurobindo; a product name does not itself establish donation.",
+      "status": "assessed",
+      "locators": [
+        "Byline; funding; conflicts"
+      ]
+    },
+    {
+      "questionId": "Q12",
+      "field": "conflicts",
+      "value": "Multiple investigators disclosed outside institutional grants, consulting and other industry relationships.",
+      "status": "assessed",
+      "locators": [
+        "Byline; funding; conflicts"
+      ]
+    },
+    {
+      "questionId": "Q13",
+      "field": "source_version",
+      "value": "Published Clinical Infectious Diseases 2026 report, DOI 10.1093/cid/ciag335, superseding the preprint for current estimates.",
+      "status": "assessed",
+      "locators": [
+        "Published PMC report; NCT04885530 and NCT06042855; protocol"
+      ]
+    },
+    {
+      "questionId": "Q13",
+      "field": "access",
+      "value": "Full published article and current registry records retrieved.",
+      "status": "assessed",
+      "locators": [
+        "Published PMC report; NCT04885530 and NCT06042855; protocol"
+      ]
+    },
+    {
+      "questionId": "Q13",
+      "field": "supplements",
+      "value": "Master protocol v12.0 retrieved and Appendix G inspected; its separately referenced SAP was not recovered.",
+      "status": "not_accessible",
+      "locators": [
+        "Published PMC report; NCT04885530 and NCT06042855; protocol"
+      ]
+    },
+    {
+      "questionId": "Q13",
+      "field": "registration",
+      "value": "Current appendix and master records inspected; this is not an audit of every historic registry revision.",
+      "status": "assessed",
+      "locators": [
+        "Published PMC report; NCT04885530 and NCT06042855; protocol"
+      ]
+    },
+    {
+      "questionId": "Q13",
+      "field": "corrections_retractions",
+      "value": "No correction or retraction identified in the retrieved current records; internal discrepancies retained above.",
+      "status": "assessed",
+      "locators": [
+        "Published PMC report; NCT04885530 and NCT06042855; protocol"
+      ]
+    },
+    {
+      "questionId": "Q13",
+      "field": "check_date",
+      "value": "Retrieved November 3–4, 2026.",
+      "status": "assessed",
+      "locators": [
+        "Published PMC report; NCT04885530 and NCT06042855; protocol"
+      ]
+    },
+    {
+      "questionId": "Q14",
+      "field": "claim_links",
+      "value": "Early-infection prevention; comparison of symptoms versus clinician diagnosis.",
+      "status": "assessed",
+      "locators": [
+        "G-METFORMIN infection chapter"
+      ]
+    },
+    {
+      "questionId": "Q14",
+      "field": "support_relation",
+      "value": "Does not establish benefit for the primary symptom endpoint; provides a secondary diagnosis signal.",
+      "status": "assessed",
+      "locators": [
+        "G-METFORMIN infection chapter"
+      ]
+    },
+    {
+      "questionId": "Q14",
+      "field": "observed_vs_author_vs_editorial",
+      "value": "Observed results are distinguished from stronger preventive language used by authors; editorial conclusion remains uncertain.",
+      "status": "assessed",
+      "locators": [
+        "G-METFORMIN infection chapter"
+      ]
+    },
+    {
+      "questionId": "Q15",
+      "field": "bounded_takeaway",
+      "value": "Evidence for preventing a later clinician diagnosis is suggestive but the primary long-term symptom result was inconclusive.",
+      "status": "assessed",
+      "locators": [
+        "Synthesis"
+      ]
+    },
+    {
+      "questionId": "Q15",
+      "field": "unknowns",
+      "value": "Magnitude, durability and applicability to current infection patterns remain uncertain.",
+      "status": "assessed",
+      "locators": [
+        "Synthesis"
+      ]
+    },
+    {
+      "questionId": "Q15",
+      "field": "evidence_needed_to_change_conclusion",
+      "value": "Replication with prespecified patient-important endpoints, complete follow-up and multiplicity control could strengthen or refute the signal.",
+      "status": "assessed",
+      "locators": [
+        "Synthesis"
+      ]
+    }
+  ],
+  "appraisal": "Well-sized blinded trial with low long-term event frequency and substantial missingness. Its primary symptom endpoint did not meet the prespecified decision rule. The secondary clinician-diagnosis signal must retain its absolute uncertainty, endpoint status and lack of multiplicity adjustment.",
+  "completion": "partial",
+  "unresolvedInputs": [
+    "supplements"
+  ],
+  "independentVerification": "pending",
+  "humanApproval": "pending",
+  "release": "private_candidate",
+  "plan": "plan.v3.json"
+}

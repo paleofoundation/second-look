@@ -418,3 +418,14 @@ Implementation: smaller lowercase x sharing the capital R's baseline, overlappin
 Source: owner's explicit request for the website favicon in blue/yellow and app favicon in blue/white. Scope: browser SVG/ICO versus app SVG/Apple touch/192–512-pixel icons and their metadata. Supersedes the pale-blue icon backgrounds while preserving all version 48 geometry. Contract: `REMAPRX-IDENTITY.md`, Separate website and app icon colors.
 
 Implementation: shared generator geometry with role-specific yellow/white backgrounds, separate metadata cache versions and an app-name/icon manifest pointing to white app PNGs. Existing header/map/footer/social artwork is unchanged. Verification/publication are pending at adoption and are recorded in the identity contract/receipt after completion. No scientific, access or audience change.
+
+
+## 2026-11-03 — Execute Metformin assessments and integrity repair
+
+Source: the owner's direct follow-up “DO IT THEN” for outstanding assessments and “fix it then” for COVID-OUT/REVIVE, while rejecting the obsolete reference-count mismatch as a blocker. Scope: Metformin evidence completion followed by the consumer guide. Supersedes treating the October 12 24-reference inventory as a current reference ceiling or stopping at readiness reporting. Contracts: TOPIC-GUIDES.md and RESEARCH-INGEST.md; active packet RRX-METFORMIN-COMPLETE-20261103. Reconcile current source IDs, recover/read originals, complete source-bound assessments, resolve version/integrity impacts, and prepare the actual guide. Preserve other work, historical receipts, no delegation and honest independent/human/release states. Implementation in progress; source and output verification will be recorded in the packet. No scientific or commercial release is claimed by this entry.
+
+## November 4, 2026 - Metformin guide and source assessments delivered
+
+Source: the owner's explicit instruction to do the missing study assessments, fix COVID-OUT/REVIVE integrity work and finish the guide, including rejection of a fixed 24-source cap. The active batch reconciles 33 source identities and 24 substantive 67-input assessments; official contexts/notices and exclusions have separate dispositions. The private guide cites 30 sources. Missing source inputs, independent human review and actual release approvals remain explicit. COVID-OUT uses its checked corrected table with residual discrepancies disclosed; the original REVIVE remains excluded and the replacement is separately assessed. The affected diagnosis summary was reassessed, not merely rehashed. See `TOPIC-GUIDES.md`, `GUIDE-IMPLEMENTATION.md` and the batch handoff for exact artifacts and verification.
+
+A layout defect found during the full-document check is repaired in the host PDF adapter: individual source entries and worksheet prompts no longer split between pages. The vendored renderer and pinned upstream rules remain unchanged. All edition outputs remain private review candidates.

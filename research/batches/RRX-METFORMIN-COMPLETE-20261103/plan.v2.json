@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "id": "RRX-METFORMIN-COMPLETE-20261103-v2",
+  "createdAt": "2026-11-04T08:28:10.754432+00:00",
+  "drugId": "D01",
+  "articleId": "G-METFORMIN",
+  "productId": "SL-GUIDE-METFORMIN",
+  "sourceIds": [
+    "MF-LABEL-2025",
+    "MF-COVID-VIRAL-2024",
+    "MF-PD-MECHANISM-2016",
+    "CP017",
+    "MF-MASTERS-2019",
+    "MF-STAMPEDE-2025",
+    "MF-NRG-LU001-2021",
+    "COND-C15-MA32-2022",
+    "COND-C17-MET-2015",
+    "MF-ADENOMA-2016",
+    "MF-MYELOMA-MODELS-2018",
+    "MF-METPREVENT-2025",
+    "P-COVIDOUT-2023",
+    "P-KOREA-2026",
+    "MF-SCHIZOPHRENIA-PARENT-2023",
+    "CP016",
+    "P-ACTIV6-2026",
+    "CP018",
+    "P-REVIVE-2026",
+    "COND-C02-COVIDOUT-2022",
+    "MF-ALMERA-2021",
+    "MF-LABEL-IR-2025",
+    "MF-LABEL-ER-2025",
+    "ABRILLA-2021",
+    "INZUCCHI-2014",
+    "MF-FDA-GENERICS",
+    "COND-C15-MA32-METABOLIC",
+    "OWEN-2000",
+    "EL-MIR-2000",
+    "MF-COLON-MECHANISM-2010"
+  ],
+  "mode": "reconcile_then_targeted_recovery_and_full_text_assessment",
+  "ownerInstruction": "Complete the required assessments and fix COVID-OUT correction / REVIVE quarantine; then finish the Metformin guide. An old 24-source inventory is not a source cap.",
+  "sourceCountPolicy": "Exact current source-ID set, unique IDs and explicit dispositions; no fixed reference quota.",
+  "scientificBatches": [
+    {
+      "id": "A",
+      "sourceIds": [
+        "MF-COVID-VIRAL-2024",
+        "MF-PD-MECHANISM-2016",
+        "CP017",
+        "MF-MASTERS-2019",
+        "MF-STAMPEDE-2025",
+        "MF-NRG-LU001-2021",
+        "COND-C15-MA32-2022",
+        "COND-C17-MET-2015",
+        "MF-ADENOMA-2016",
+        "MF-MYELOMA-MODELS-2018",
+        "MF-METPREVENT-2025",
+        "P-COVIDOUT-2023",
+        "P-KOREA-2026",
+        "MF-SCHIZOPHRENIA-PARENT-2023",
+        "CP016",
+        "P-ACTIV6-2026",
+        "CP018",
+        "P-REVIVE-2026",
+        "COND-C02-COVIDOUT-2022",
+        "MF-ALMERA-2021",
+        "ABRILLA-2021",
+        "INZUCCHI-2014",
+        "COND-C15-MA32-METABOLIC",
+        "OWEN-2000",
+        "EL-MIR-2000"
+      ]
+    },
+    {
+      "id": "B",
+      "sourceIds": [
+        "MF-COLON-MECHANISM-2010",
+        "REVIVE-REPLACEMENT"
+      ]
+    }
+  ],
+  "acquisition": {
+    "allowed": "Re-use verified local assets first; retrieve missing full texts, supplements and actual correction/retraction/replacement bodies through lawful public publisher, PubMed/PMC/Europe PMC, registry and institutional repository access. No payment, bypass or author messaging.",
+    "priorityQueries": [
+      "COVID-OUT 37666258 10.1016/S1473-3099(23)00562-5 correction",
+      "REVIVE metformin fluvoxamine ANNALS-26-03050 ANNALS-25-03959 republication",
+      "exact source DOI title plus supplement protocol SAP"
+    ],
+    "rawDestination": "../private-research/RRX-METFORMIN-COMPLETE-20261103",
+    "retryPolicy": "At most two failed attempts at the same retrieval step; record failure and continue independent sources."
+  },
+  "assessment": {
+    "questionIds": [
+      "Q01",
+      "Q02",
+      "Q03",
+      "Q04",
+      "Q05",
+      "Q06",
+      "Q07",
+      "Q08",
+      "Q09",
+      "Q10",
+      "Q11",
+      "Q12",
+      "Q13",
+      "Q14",
+      "Q15"
+    ],
+    "requirements": [
+      "full text with file hash and locators",
+      "design-specific methods/bias appraisal, numerical checks and consequential table/figure inspection",
+      "preserve reported versus interpreted findings, unit/denominator/timepoint/uncertainty",
+      "trial-family overlap and correction impact",
+      "honest unavailable/unreported/inapplicable distinctions",
+      "67 explicit input fields, each individually populated or scoped unavailable; no unchecked field inferred complete from prose"
+    ],
+    "separateStates": [
+      "source receipt",
+      "extraction",
+      "single-operator assessment",
+      "independent verification",
+      "human approval",
+      "release"
+    ],
+    "method": "Qualitative design-specific appraisal; no numeric quality score or formal RoB2/GRADE claim. Source-limited assessments are distinguished from complete packet reviews."
+  },
+  "integration": {
+    "policy": "Produce reviewable candidates and bounded local corrections for Metformin with source traceability; retain existing identifiers and canonical shared views. No unrelated changes; no invented independent/human approvals or paid release.",
+    "preserve": "Historical receipts and original quarantined report identity; new version-specific integrity dispositions can supersede, never erase history."
+  },
+  "guide": "After source assessment supports the declared scope, author one private consumer manuscript with condition-specific synthesis, safety, comparisons and worksheets; build web/PDF/sample/summary using existing renderer. Missing evidence remains explicit and unsupported statements excluded.",
+  "delegation": false,
+  "schedules": false,
+  "integrityCompanions": [
+    "COVIDOUT-CORRECTION",
+    "REVIVE-NOTICE",
+    "REVIVE-REPLACEMENT"
+  ]
+}

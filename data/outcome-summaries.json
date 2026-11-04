@@ -14,8 +14,8 @@
       "purpose": "prevention",
       "grade": {
         "value": null,
-        "label": "Correction unresolved",
-        "rationale": "Two randomized trials address later diagnosis, but COVID-OUT has an unresolved correction and ACTIV-6 has an imprecise secondary estimate. A settled benefit grade cannot be assigned while that correction remains unresolved.",
+        "label": "Source discrepancies retained",
+        "rationale": "The correction-access task is complete: COVID-OUT’s actual notice and corrected table were checked. Its Discussion and current registry still disagree with that table, and selective follow-up limits inference. ACTIV-6 contributes an uncertain secondary diagnosis effect and a negative primary symptom decision. No settled benefit letter is assigned to this conservatively held synthesis.",
         "sourceIds": [
           "P-COVIDOUT-2023",
           "P-ACTIV6-2026"
@@ -23,9 +23,9 @@
       },
       "effect": {
         "label": "Uncertain reduction",
-        "detail": "HR 0.59 in COVID-OUT; −0.7 percentage points in ACTIV-6",
+        "detail": "HR 0.59 in corrected COVID-OUT report; -0.7 percentage points in ACTIV-6",
         "direction": "uncertain",
-        "rationale": "COVID-OUT reported a lower hazard of clinician-diagnosed Long COVID, with interpretation limited by an indexed correction. ACTIV-6’s secondary diagnosis estimate favored metformin but its interval included no difference. The numerical contrast is reported without assigning a small or large category because a justified clinical-importance threshold is not established in these records."
+        "rationale": "COVID-OUT reported a lower hazard of later clinician-diagnosed Long COVID in its corrected report. ACTIV-6’s secondary diagnosis estimate favored metformin, but its absolute interval included no difference and its primary symptom result did not meet the efficacy threshold. Estimates remain separate; no clinical-importance threshold or pooled effect is imposed."
       },
       "evidence": {
         "rctCount": 2,
@@ -62,7 +62,8 @@
         "P-COVIDOUT-2023",
         "P-ACTIV6-2026"
       ],
-      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate. Long COVID prevention after acute infection and treatment of established Long COVID are separate outcomes under one condition group."
+      "aggregationNote": "This is a selected-source outcome summary, not a pooled effect estimate. Long COVID prevention after acute infection and treatment of established Long COVID are separate outcomes under one condition group.",
+      "assessedOn": "2026-11-04"
     },
     {
       "id": "OUTCOME-D01-C01-SYMPTOMS",

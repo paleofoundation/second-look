@@ -1,0 +1,740 @@
+{
+  "sourceId": "COND-C02-COVIDOUT-2022",
+  "title": "COVID-OUT acute report: negative primary endpoint and promising secondary findings",
+  "version": "metformin-assessment-20261104.1",
+  "sourceAssets": [
+    {
+      "path": "/Users/kmfp/Documents/ChatGPT/One Match Rule/work/ingest/SL-F01-F02-20261011/receipt/input/return/F01/PRIMARY/A-F01-R031__original_report__randomized-trial-of-metformin-ivermectin-and-fluvo.html",
+      "sha256": "bbd529be8738b59d0e885a2f0da3f807d949c1c7527098635d304aa3d84894c7"
+    },
+    {
+      "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/private-research/RRX-METFORMIN-COMPLETE-20261103/NCT04510194-registry-20261104T082926821290Z",
+      "sha256": "011cd282ada0a816e1ab73512cc3ecf9c493928d1c60af19d2ffdb374c31c269"
+    },
+    {
+      "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/private-research/RRX-METFORMIN-COMPLETE-20261103/NCT04510194-protocol-20261104T083039041184Z",
+      "sha256": "fea5d546558052e81ca068cac423c9ca060a6aea22397f780ab7194bcb2fc574"
+    }
+  ],
+  "questions": {
+    "Q01": {
+      "answer": "Prevent severe acute COVID-19 with early outpatient medication. Prespecified composite through day 14. Hypoxemia, emergency visit, hospitalization or death. Secondary endpoints do not replace the primary.",
+      "status": "assessed",
+      "locators": [
+        "Methods, End Points"
+      ]
+    },
+    "Q02": {
+      "answer": "Adults 30–85 with overweight or obesity and recent COVID-19. Six US institutions, remote enrollment; positive test within three days and symptoms within seven. 1431 randomized; 1323 mITT: 663 metformin, 660 control; 52.2% vaccinated. Median age 46; limited applicability to current immune backgrounds.",
+      "status": "assessed",
+      "locators": [
+        "Methods; Figure 1; Table 1"
+      ]
+    },
+    "Q03": {
+      "answer": "Immediate-release metformin. Oral escalation to 1500 mg/day over six days, 14 days total. Factorial fluvoxamine, ivermectin or matched placebo assignments. Primary day 14; hospitalization/death also day 28. No comparison of IR versus ER.",
+      "status": "assessed",
+      "locators": [
+        "Treatment"
+      ]
+    },
+    "Q04": {
+      "answer": "Concurrent matched placebo for metformin. Equal probability among open groups, site-stratified. Pregenerated mass-weighted urn sequence. Blinded participants, clinicians and outcome assessors; similar pill burden. December 2020–January 2022, with factorial expansion May 2021. Comparisons between different drugs’ crude rates are invalid because enrollment periods differ.",
+      "status": "assessed",
+      "locators": [
+        "Randomization"
+      ]
+    },
+    "Q05": {
+      "answer": "Primary four-part composite; health-care component and symptoms secondary. Home oxygen saturation, medical-record verification and symptom diaries. Day 14 primary. Composite mixes a noisy physiologic measure with major clinical events. Planned 35% relative reduction, not a validated universal MCID. Oximeter limitations weaken the endpoint but do not justify retrospectively calling the trial primary-positive.",
+      "status": "assessed",
+      "locators": [
+        "End Points; statistics"
+      ]
+    },
+    "Q06": {
+      "answer": "Primary 154/652 metformin versus 179/653 control; emergency visit/hospitalization/death 27/652 versus 48/655. Full mITT denominators 663/660; displayed event fractions are observed complete cases. Adjusted primary OR .84, 95% CI .66–1.09, P=.19. Secondary health-care composite OR .58, CI .35–.94; day-14 hospitalization/death OR .47, CI .20–1.11. Day-28 hospitalization/death 8/596 versus 19/601; secondary CIs not adjusted for multiplicity. No primary benefit demonstrated; secondary signals warrant further testing.",
+      "status": "assessed",
+      "locators": [
+        "Table 2; Results"
+      ]
+    },
+    "Q07": {
+      "answer": "108 excluded from mITT because no trial drug received. Primary follow-up missing about 1.4%; symptom diary missing about 25%. Drug discontinuation recorded; current registry contains six factorial-arm counts. ITT sensitivity analyses described separately from mITT. mITT with multiple imputation; symptoms not imputed. Individual participant. Factorial arms are not independent trials.",
+      "status": "assessed",
+      "locators": [
+        "Methods; Discussion"
+      ]
+    },
+    "Q08": {
+      "answer": "Non-COVID events solicited through day 14; serious events through day 28 in registry. Registry six-arm safety populations total 1323. No medication-related serious event reported; one all-cause death occurred in a metformin/ivermectin recipient. Metformin-only discontinuations 56/284 versus double-placebo 49/295; combination-arm counts differ. Short treatment and acute follow-up. These arm-specific discontinuations are not the entire factorial metformin effect.",
+      "status": "assessed",
+      "locators": [
+        "Safety; current NCT04510194 results"
+      ]
+    },
+    "Q09": {
+      "answer": "Remote oximetry, mITT exclusions and missing symptom diaries. Concurrent randomization and adjusted co-medication/vaccination analyses reduce confounding. Registered protocol/SAP recovered; report explicitly identifies secondary analyses. No multiplicity correction for secondary outcomes. Hospitalization/death events rare with wide intervals. Wording about symptom reduction is awkward in Results; figures and conclusion indicate no symptom benefit. Use the explicit conclusion and endpoint hierarchy.",
+      "status": "assessed",
+      "locators": [
+        "Statistics; Discussion"
+      ]
+    },
+    "Q10": {
+      "answer": "Early acute outpatient infection in overweight/obese adults. Fourteen-day IR course. Not established long-COVID treatment or a comparison with authorized antivirals. Variants, vaccination and enrollment criteria limit extrapolation. Long-term follow-up is a separate outcome in the same trial.",
+      "status": "assessed",
+      "locators": [
+        "Eligibility; Discussion"
+      ]
+    },
+    "Q11": {
+      "answer": "COVID-OUT randomized family. P-COVIDOUT-2023 long-term and MF-COVID-VIRAL-2024 virologic reports. Overlapping participants; count once. Current inventory and linked registry. Multiple reports increase outcome detail, not independent replication.",
+      "status": "assessed",
+      "locators": [
+        "NCT04510194"
+      ]
+    },
+    "Q12": {
+      "answer": "Carolyn Bramante and COVID-OUT collaborators. US investigator-led multicenter remote trial. Parsemus, Rainwater, Fast Grants and UnitedHealth Group Foundation; stated no funder role. Apotex fluvoxamine placebo; Edenbridge ivermectin active/placebo; metformin donor not established here. Separate original NEJM disclosure forms not recovered; later related report provides named investigator disclosures. Do not substitute later disclosures for exact original forms.",
+      "status": "partial",
+      "locators": [
+        "Byline; acknowledgments"
+      ]
+    },
+    "Q13": {
+      "answer": "NEJM 2022, DOI 10.1056/NEJMoa2201662. Full text, tables and current trial record inspected. Protocol/SAP recovered; original acute supplement not fully audited. NCT04510194. Long-term 2023 correction belongs to the companion report, not an acute primary-result correction. November 3–4, 2026. Preserve report-specific version history.",
+      "status": "assessed",
+      "locators": [
+        "Full report; registry/protocol assets"
+      ]
+    },
+    "Q14": {
+      "answer": "Acute severity and symptom claims. Primary null; secondary clinical benefit signal. Authors’ cautious primary conclusion is retained despite stronger later commentary. No claim of proven general antiviral replacement.",
+      "status": "assessed",
+      "locators": [
+        "G-METFORMIN acute infection"
+      ]
+    },
+    "Q15": {
+      "answer": "Early metformin did not significantly reduce the original primary composite. Whether secondary benefits generalize remains uncertain. Independent current-population trials with prespecified clinical endpoints matter. Guide separates this from long-COVID prevention.",
+      "status": "assessed",
+      "locators": [
+        "Synthesis"
+      ]
+    }
+  },
+  "inputs": [
+    {
+      "questionId": "Q01",
+      "field": "objective",
+      "value": "Prevent severe acute COVID-19 with early outpatient medication.",
+      "status": "assessed",
+      "locators": [
+        "Methods, End Points"
+      ]
+    },
+    {
+      "questionId": "Q01",
+      "field": "prespecification",
+      "value": "Prespecified composite through day 14.",
+      "status": "assessed",
+      "locators": [
+        "Methods, End Points"
+      ]
+    },
+    {
+      "questionId": "Q01",
+      "field": "claim_outcome",
+      "value": "Hypoxemia, emergency visit, hospitalization or death.",
+      "status": "assessed",
+      "locators": [
+        "Methods, End Points"
+      ]
+    },
+    {
+      "questionId": "Q02",
+      "field": "population_species",
+      "value": "Adults 30–85 with overweight or obesity and recent COVID-19.",
+      "status": "assessed",
+      "locators": [
+        "Methods; Figure 1; Table 1"
+      ]
+    },
+    {
+      "questionId": "Q02",
+      "field": "eligibility_setting",
+      "value": "Six US institutions, remote enrollment; positive test within three days and symptoms within seven.",
+      "status": "assessed",
+      "locators": [
+        "Methods; Figure 1; Table 1"
+      ]
+    },
+    {
+      "questionId": "Q02",
+      "field": "recruited_treated_analyzed_counts",
+      "value": "1431 randomized; 1323 mITT: 663 metformin, 660 control; 52.2% vaccinated.",
+      "status": "assessed",
+      "locators": [
+        "Methods; Figure 1; Table 1"
+      ]
+    },
+    {
+      "questionId": "Q03",
+      "field": "identity_formulation",
+      "value": "Immediate-release metformin.",
+      "status": "assessed",
+      "locators": [
+        "Treatment"
+      ]
+    },
+    {
+      "questionId": "Q03",
+      "field": "route_exposure_schedule",
+      "value": "Oral escalation to 1500 mg/day over six days, 14 days total.",
+      "status": "assessed",
+      "locators": [
+        "Treatment"
+      ]
+    },
+    {
+      "questionId": "Q03",
+      "field": "cointerventions",
+      "value": "Factorial fluvoxamine, ivermectin or matched placebo assignments.",
+      "status": "assessed",
+      "locators": [
+        "Treatment"
+      ]
+    },
+    {
+      "questionId": "Q03",
+      "field": "followup",
+      "value": "Primary day 14; hospitalization/death also day 28.",
+      "status": "assessed",
+      "locators": [
+        "Treatment"
+      ]
+    },
+    {
+      "questionId": "Q04",
+      "field": "comparator",
+      "value": "Concurrent matched placebo for metformin.",
+      "status": "assessed",
+      "locators": [
+        "Randomization"
+      ]
+    },
+    {
+      "questionId": "Q04",
+      "field": "allocation",
+      "value": "Equal probability among open groups, site-stratified.",
+      "status": "assessed",
+      "locators": [
+        "Randomization"
+      ]
+    },
+    {
+      "questionId": "Q04",
+      "field": "randomization",
+      "value": "Pregenerated mass-weighted urn sequence.",
+      "status": "assessed",
+      "locators": [
+        "Randomization"
+      ]
+    },
+    {
+      "questionId": "Q04",
+      "field": "blinding",
+      "value": "Blinded participants, clinicians and outcome assessors; similar pill burden.",
+      "status": "assessed",
+      "locators": [
+        "Randomization"
+      ]
+    },
+    {
+      "questionId": "Q04",
+      "field": "timing",
+      "value": "December 2020–January 2022, with factorial expansion May 2021.",
+      "status": "assessed",
+      "locators": [
+        "Randomization"
+      ]
+    },
+    {
+      "questionId": "Q05",
+      "field": "outcome_hierarchy",
+      "value": "Primary four-part composite; health-care component and symptoms secondary.",
+      "status": "assessed",
+      "locators": [
+        "End Points; statistics"
+      ]
+    },
+    {
+      "questionId": "Q05",
+      "field": "instrument",
+      "value": "Home oxygen saturation, medical-record verification and symptom diaries.",
+      "status": "assessed",
+      "locators": [
+        "End Points; statistics"
+      ]
+    },
+    {
+      "questionId": "Q05",
+      "field": "timepoint",
+      "value": "Day 14 primary.",
+      "status": "assessed",
+      "locators": [
+        "End Points; statistics"
+      ]
+    },
+    {
+      "questionId": "Q05",
+      "field": "endpoint_class",
+      "value": "Composite mixes a noisy physiologic measure with major clinical events.",
+      "status": "assessed",
+      "locators": [
+        "End Points; statistics"
+      ]
+    },
+    {
+      "questionId": "Q05",
+      "field": "meaningful_change_threshold",
+      "value": "Planned 35% relative reduction, not a validated universal MCID.",
+      "status": "assessed",
+      "locators": [
+        "End Points; statistics"
+      ]
+    },
+    {
+      "questionId": "Q06",
+      "field": "arm_results",
+      "value": "Primary 154/652 metformin versus 179/653 control; emergency visit/hospitalization/death 27/652 versus 48/655.",
+      "status": "assessed",
+      "locators": [
+        "Table 2; Results"
+      ]
+    },
+    {
+      "questionId": "Q06",
+      "field": "numerators_denominators",
+      "value": "Full mITT denominators 663/660; displayed event fractions are observed complete cases.",
+      "status": "assessed",
+      "locators": [
+        "Table 2; Results"
+      ]
+    },
+    {
+      "questionId": "Q06",
+      "field": "estimate_units",
+      "value": "Adjusted primary OR .84, 95% CI .66–1.09, P=.19.",
+      "status": "assessed",
+      "locators": [
+        "Table 2; Results"
+      ]
+    },
+    {
+      "questionId": "Q06",
+      "field": "contrast",
+      "value": "Secondary health-care composite OR .58, CI .35–.94; day-14 hospitalization/death OR .47, CI .20–1.11.",
+      "status": "assessed",
+      "locators": [
+        "Table 2; Results"
+      ]
+    },
+    {
+      "questionId": "Q06",
+      "field": "uncertainty",
+      "value": "Day-28 hospitalization/death 8/596 versus 19/601; secondary CIs not adjusted for multiplicity.",
+      "status": "assessed",
+      "locators": [
+        "Table 2; Results"
+      ]
+    },
+    {
+      "questionId": "Q07",
+      "field": "attrition",
+      "value": "108 excluded from mITT because no trial drug received.",
+      "status": "assessed",
+      "locators": [
+        "Methods; Discussion"
+      ]
+    },
+    {
+      "questionId": "Q07",
+      "field": "missingness",
+      "value": "Primary follow-up missing about 1.4%; symptom diary missing about 25%.",
+      "status": "assessed",
+      "locators": [
+        "Methods; Discussion"
+      ]
+    },
+    {
+      "questionId": "Q07",
+      "field": "adherence",
+      "value": "Drug discontinuation recorded; current registry contains six factorial-arm counts.",
+      "status": "assessed",
+      "locators": [
+        "Methods; Discussion"
+      ]
+    },
+    {
+      "questionId": "Q07",
+      "field": "exclusions",
+      "value": "ITT sensitivity analyses described separately from mITT.",
+      "status": "assessed",
+      "locators": [
+        "Methods; Discussion"
+      ]
+    },
+    {
+      "questionId": "Q07",
+      "field": "analysis_population",
+      "value": "mITT with multiple imputation; symptoms not imputed.",
+      "status": "assessed",
+      "locators": [
+        "Methods; Discussion"
+      ]
+    },
+    {
+      "questionId": "Q07",
+      "field": "experimental_unit",
+      "value": "Individual participant.",
+      "status": "assessed",
+      "locators": [
+        "Methods; Discussion"
+      ]
+    },
+    {
+      "questionId": "Q08",
+      "field": "harms_ascertainment",
+      "value": "Non-COVID events solicited through day 14; serious events through day 28 in registry.",
+      "status": "assessed",
+      "locators": [
+        "Safety; current NCT04510194 results"
+      ]
+    },
+    {
+      "questionId": "Q08",
+      "field": "exposure_denominator",
+      "value": "Registry six-arm safety populations total 1323.",
+      "status": "assessed",
+      "locators": [
+        "Safety; current NCT04510194 results"
+      ]
+    },
+    {
+      "questionId": "Q08",
+      "field": "events_severity",
+      "value": "No medication-related serious event reported; one all-cause death occurred in a metformin/ivermectin recipient.",
+      "status": "assessed",
+      "locators": [
+        "Safety; current NCT04510194 results"
+      ]
+    },
+    {
+      "questionId": "Q08",
+      "field": "withdrawals",
+      "value": "Metformin-only discontinuations 56/284 versus double-placebo 49/295; combination-arm counts differ.",
+      "status": "assessed",
+      "locators": [
+        "Safety; current NCT04510194 results"
+      ]
+    },
+    {
+      "questionId": "Q08",
+      "field": "observation_time",
+      "value": "Short treatment and acute follow-up.",
+      "status": "assessed",
+      "locators": [
+        "Safety; current NCT04510194 results"
+      ]
+    },
+    {
+      "questionId": "Q09",
+      "field": "bias_domains",
+      "value": "Remote oximetry, mITT exclusions and missing symptom diaries.",
+      "status": "assessed",
+      "locators": [
+        "Statistics; Discussion"
+      ]
+    },
+    {
+      "questionId": "Q09",
+      "field": "confounding",
+      "value": "Concurrent randomization and adjusted co-medication/vaccination analyses reduce confounding.",
+      "status": "assessed",
+      "locators": [
+        "Statistics; Discussion"
+      ]
+    },
+    {
+      "questionId": "Q09",
+      "field": "selective_reporting",
+      "value": "Registered protocol/SAP recovered; report explicitly identifies secondary analyses.",
+      "status": "assessed",
+      "locators": [
+        "Statistics; Discussion"
+      ]
+    },
+    {
+      "questionId": "Q09",
+      "field": "multiplicity",
+      "value": "No multiplicity correction for secondary outcomes.",
+      "status": "assessed",
+      "locators": [
+        "Statistics; Discussion"
+      ]
+    },
+    {
+      "questionId": "Q09",
+      "field": "precision",
+      "value": "Hospitalization/death events rare with wide intervals.",
+      "status": "assessed",
+      "locators": [
+        "Statistics; Discussion"
+      ]
+    },
+    {
+      "questionId": "Q09",
+      "field": "inconsistencies",
+      "value": "Wording about symptom reduction is awkward in Results; figures and conclusion indicate no symptom benefit.",
+      "status": "assessed",
+      "locators": [
+        "Statistics; Discussion"
+      ]
+    },
+    {
+      "questionId": "Q10",
+      "field": "population_indication_match",
+      "value": "Early acute outpatient infection in overweight/obese adults.",
+      "status": "assessed",
+      "locators": [
+        "Eligibility; Discussion"
+      ]
+    },
+    {
+      "questionId": "Q10",
+      "field": "formulation_route_exposure_match",
+      "value": "Fourteen-day IR course.",
+      "status": "assessed",
+      "locators": [
+        "Eligibility; Discussion"
+      ]
+    },
+    {
+      "questionId": "Q10",
+      "field": "endpoint_match",
+      "value": "Not established long-COVID treatment or a comparison with authorized antivirals.",
+      "status": "assessed",
+      "locators": [
+        "Eligibility; Discussion"
+      ]
+    },
+    {
+      "questionId": "Q10",
+      "field": "limits",
+      "value": "Variants, vaccination and enrollment criteria limit extrapolation.",
+      "status": "assessed",
+      "locators": [
+        "Eligibility; Discussion"
+      ]
+    },
+    {
+      "questionId": "Q11",
+      "field": "study_family",
+      "value": "COVID-OUT randomized family.",
+      "status": "assessed",
+      "locators": [
+        "NCT04510194"
+      ]
+    },
+    {
+      "questionId": "Q11",
+      "field": "related_reports",
+      "value": "P-COVIDOUT-2023 long-term and MF-COVID-VIRAL-2024 virologic reports.",
+      "status": "assessed",
+      "locators": [
+        "NCT04510194"
+      ]
+    },
+    {
+      "questionId": "Q11",
+      "field": "overlap",
+      "value": "Overlapping participants; count once.",
+      "status": "assessed",
+      "locators": [
+        "NCT04510194"
+      ]
+    },
+    {
+      "questionId": "Q11",
+      "field": "replication_search_scope",
+      "value": "Current inventory and linked registry.",
+      "status": "assessed",
+      "locators": [
+        "NCT04510194"
+      ]
+    },
+    {
+      "questionId": "Q12",
+      "field": "authors",
+      "value": "Carolyn Bramante and COVID-OUT collaborators.",
+      "status": "assessed",
+      "locators": [
+        "Byline; acknowledgments"
+      ]
+    },
+    {
+      "questionId": "Q12",
+      "field": "setting",
+      "value": "US investigator-led multicenter remote trial.",
+      "status": "assessed",
+      "locators": [
+        "Byline; acknowledgments"
+      ]
+    },
+    {
+      "questionId": "Q12",
+      "field": "funding",
+      "value": "Parsemus, Rainwater, Fast Grants and UnitedHealth Group Foundation; stated no funder role.",
+      "status": "assessed",
+      "locators": [
+        "Byline; acknowledgments"
+      ]
+    },
+    {
+      "questionId": "Q12",
+      "field": "supplied_products",
+      "value": "Apotex fluvoxamine placebo; Edenbridge ivermectin active/placebo; metformin donor not established here.",
+      "status": "assessed",
+      "locators": [
+        "Byline; acknowledgments"
+      ]
+    },
+    {
+      "questionId": "Q12",
+      "field": "conflicts",
+      "value": "Separate original NEJM disclosure forms not recovered; later related report provides named investigator disclosures.",
+      "status": "not_accessible",
+      "locators": [
+        "Byline; acknowledgments"
+      ]
+    },
+    {
+      "questionId": "Q13",
+      "field": "source_version",
+      "value": "NEJM 2022, DOI 10.1056/NEJMoa2201662.",
+      "status": "assessed",
+      "locators": [
+        "Full report; registry/protocol assets"
+      ]
+    },
+    {
+      "questionId": "Q13",
+      "field": "access",
+      "value": "Full text, tables and current trial record inspected.",
+      "status": "assessed",
+      "locators": [
+        "Full report; registry/protocol assets"
+      ]
+    },
+    {
+      "questionId": "Q13",
+      "field": "supplements",
+      "value": "Protocol/SAP recovered; original acute supplement not fully audited.",
+      "status": "assessed",
+      "locators": [
+        "Full report; registry/protocol assets"
+      ]
+    },
+    {
+      "questionId": "Q13",
+      "field": "registration",
+      "value": "NCT04510194.",
+      "status": "assessed",
+      "locators": [
+        "Full report; registry/protocol assets"
+      ]
+    },
+    {
+      "questionId": "Q13",
+      "field": "corrections_retractions",
+      "value": "Long-term 2023 correction belongs to the companion report, not an acute primary-result correction.",
+      "status": "assessed",
+      "locators": [
+        "Full report; registry/protocol assets"
+      ]
+    },
+    {
+      "questionId": "Q13",
+      "field": "check_date",
+      "value": "November 3–4, 2026.",
+      "status": "assessed",
+      "locators": [
+        "Full report; registry/protocol assets"
+      ]
+    },
+    {
+      "questionId": "Q14",
+      "field": "claim_links",
+      "value": "Acute severity and symptom claims.",
+      "status": "assessed",
+      "locators": [
+        "G-METFORMIN acute infection"
+      ]
+    },
+    {
+      "questionId": "Q14",
+      "field": "support_relation",
+      "value": "Primary null; secondary clinical benefit signal.",
+      "status": "assessed",
+      "locators": [
+        "G-METFORMIN acute infection"
+      ]
+    },
+    {
+      "questionId": "Q14",
+      "field": "observed_vs_author_vs_editorial",
+      "value": "Authors’ cautious primary conclusion is retained despite stronger later commentary.",
+      "status": "assessed",
+      "locators": [
+        "G-METFORMIN acute infection"
+      ]
+    },
+    {
+      "questionId": "Q15",
+      "field": "bounded_takeaway",
+      "value": "Early metformin did not significantly reduce the original primary composite.",
+      "status": "assessed",
+      "locators": [
+        "Synthesis"
+      ]
+    },
+    {
+      "questionId": "Q15",
+      "field": "unknowns",
+      "value": "Whether secondary benefits generalize remains uncertain.",
+      "status": "assessed",
+      "locators": [
+        "Synthesis"
+      ]
+    },
+    {
+      "questionId": "Q15",
+      "field": "evidence_needed_to_change_conclusion",
+      "value": "Independent current-population trials with prespecified clinical endpoints matter.",
+      "status": "assessed",
+      "locators": [
+        "Synthesis"
+      ]
+    }
+  ],
+  "appraisal": "A well-blinded factorial trial with a negative primary outcome, a noisy oximetry component and favorable but multiplicity-unadjusted secondary outcomes. It is one trial family shared with the viral-load and long-term reports.",
+  "completion": "partial",
+  "unresolvedInputs": [
+    "conflicts"
+  ],
+  "independentVerification": "pending",
+  "humanApproval": "pending",
+  "release": "private_candidate",
+  "plan": "plan.v3.json"
+}

@@ -1,0 +1,574 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "sourceId",
+    "version",
+    "sourceAssets",
+    "questions",
+    "appraisal",
+    "completion",
+    "humanApproval"
+  ],
+  "properties": {
+    "sourceId": {
+      "enum": [
+        "MF-LABEL-2025",
+        "MF-COVID-VIRAL-2024",
+        "MF-PD-MECHANISM-2016",
+        "CP017",
+        "MF-MASTERS-2019",
+        "MF-STAMPEDE-2025",
+        "MF-NRG-LU001-2021",
+        "COND-C15-MA32-2022",
+        "COND-C17-MET-2015",
+        "MF-ADENOMA-2016",
+        "MF-MYELOMA-MODELS-2018",
+        "MF-METPREVENT-2025",
+        "P-COVIDOUT-2023",
+        "P-KOREA-2026",
+        "MF-SCHIZOPHRENIA-PARENT-2023",
+        "CP016",
+        "P-ACTIV6-2026",
+        "CP018",
+        "P-REVIVE-2026",
+        "COND-C02-COVIDOUT-2022",
+        "MF-ALMERA-2021",
+        "MF-LABEL-IR-2025",
+        "MF-LABEL-ER-2025",
+        "ABRILLA-2021",
+        "INZUCCHI-2014",
+        "MF-FDA-GENERICS",
+        "COND-C15-MA32-METABOLIC",
+        "OWEN-2000",
+        "EL-MIR-2000",
+        "MF-COLON-MECHANISM-2010"
+      ]
+    },
+    "version": {
+      "type": "string"
+    },
+    "sourceAssets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "path",
+          "sha256"
+        ],
+        "properties": {
+          "path": {
+            "type": "string"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "questions": {
+      "type": "object",
+      "required": [
+        "Q01",
+        "Q02",
+        "Q03",
+        "Q04",
+        "Q05",
+        "Q06",
+        "Q07",
+        "Q08",
+        "Q09",
+        "Q10",
+        "Q11",
+        "Q12",
+        "Q13",
+        "Q14",
+        "Q15"
+      ],
+      "properties": {
+        "Q01": {
+          "type": "object",
+          "required": [
+            "answer",
+            "status",
+            "locators"
+          ],
+          "properties": {
+            "answer": {
+              "type": "string",
+              "minLength": 1
+            },
+            "status": {
+              "enum": [
+                "assessed",
+                "not_reported",
+                "not_applicable",
+                "not_identifiable",
+                "not_accessible",
+                "pending"
+              ]
+            },
+            "locators": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "Q02": {
+          "type": "object",
+          "required": [
+            "answer",
+            "status",
+            "locators"
+          ],
+          "properties": {
+            "answer": {
+              "type": "string",
+              "minLength": 1
+            },
+            "status": {
+              "enum": [
+                "assessed",
+                "not_reported",
+                "not_applicable",
+                "not_identifiable",
+                "not_accessible",
+                "pending"
+              ]
+            },
+            "locators": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "Q03": {
+          "type": "object",
+          "required": [
+            "answer",
+            "status",
+            "locators"
+          ],
+          "properties": {
+            "answer": {
+              "type": "string",
+              "minLength": 1
+            },
+            "status": {
+              "enum": [
+                "assessed",
+                "not_reported",
+                "not_applicable",
+                "not_identifiable",
+                "not_accessible",
+                "pending"
+              ]
+            },
+            "locators": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "Q04": {
+          "type": "object",
+          "required": [
+            "answer",
+            "status",
+            "locators"
+          ],
+          "properties": {
+            "answer": {
+              "type": "string",
+              "minLength": 1
+            },
+            "status": {
+              "enum": [
+                "assessed",
+                "not_reported",
+                "not_applicable",
+                "not_identifiable",
+                "not_accessible",
+                "pending"
+              ]
+            },
+            "locators": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "Q05": {
+          "type": "object",
+          "required": [
+            "answer",
+            "status",
+            "locators"
+          ],
+          "properties": {
+            "answer": {
+              "type": "string",
+              "minLength": 1
+            },
+            "status": {
+              "enum": [
+                "assessed",
+                "not_reported",
+                "not_applicable",
+                "not_identifiable",
+                "not_accessible",
+                "pending"
+              ]
+            },
+            "locators": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "Q06": {
+          "type": "object",
+          "required": [
+            "answer",
+            "status",
+            "locators"
+          ],
+          "properties": {
+            "answer": {
+              "type": "string",
+              "minLength": 1
+            },
+            "status": {
+              "enum": [
+                "assessed",
+                "not_reported",
+                "not_applicable",
+                "not_identifiable",
+                "not_accessible",
+                "pending"
+              ]
+            },
+            "locators": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "Q07": {
+          "type": "object",
+          "required": [
+            "answer",
+            "status",
+            "locators"
+          ],
+          "properties": {
+            "answer": {
+              "type": "string",
+              "minLength": 1
+            },
+            "status": {
+              "enum": [
+                "assessed",
+                "not_reported",
+                "not_applicable",
+                "not_identifiable",
+                "not_accessible",
+                "pending"
+              ]
+            },
+            "locators": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "Q08": {
+          "type": "object",
+          "required": [
+            "answer",
+            "status",
+            "locators"
+          ],
+          "properties": {
+            "answer": {
+              "type": "string",
+              "minLength": 1
+            },
+            "status": {
+              "enum": [
+                "assessed",
+                "not_reported",
+                "not_applicable",
+                "not_identifiable",
+                "not_accessible",
+                "pending"
+              ]
+            },
+            "locators": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "Q09": {
+          "type": "object",
+          "required": [
+            "answer",
+            "status",
+            "locators"
+          ],
+          "properties": {
+            "answer": {
+              "type": "string",
+              "minLength": 1
+            },
+            "status": {
+              "enum": [
+                "assessed",
+                "not_reported",
+                "not_applicable",
+                "not_identifiable",
+                "not_accessible",
+                "pending"
+              ]
+            },
+            "locators": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "Q10": {
+          "type": "object",
+          "required": [
+            "answer",
+            "status",
+            "locators"
+          ],
+          "properties": {
+            "answer": {
+              "type": "string",
+              "minLength": 1
+            },
+            "status": {
+              "enum": [
+                "assessed",
+                "not_reported",
+                "not_applicable",
+                "not_identifiable",
+                "not_accessible",
+                "pending"
+              ]
+            },
+            "locators": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "Q11": {
+          "type": "object",
+          "required": [
+            "answer",
+            "status",
+            "locators"
+          ],
+          "properties": {
+            "answer": {
+              "type": "string",
+              "minLength": 1
+            },
+            "status": {
+              "enum": [
+                "assessed",
+                "not_reported",
+                "not_applicable",
+                "not_identifiable",
+                "not_accessible",
+                "pending"
+              ]
+            },
+            "locators": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "Q12": {
+          "type": "object",
+          "required": [
+            "answer",
+            "status",
+            "locators"
+          ],
+          "properties": {
+            "answer": {
+              "type": "string",
+              "minLength": 1
+            },
+            "status": {
+              "enum": [
+                "assessed",
+                "not_reported",
+                "not_applicable",
+                "not_identifiable",
+                "not_accessible",
+                "pending"
+              ]
+            },
+            "locators": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "Q13": {
+          "type": "object",
+          "required": [
+            "answer",
+            "status",
+            "locators"
+          ],
+          "properties": {
+            "answer": {
+              "type": "string",
+              "minLength": 1
+            },
+            "status": {
+              "enum": [
+                "assessed",
+                "not_reported",
+                "not_applicable",
+                "not_identifiable",
+                "not_accessible",
+                "pending"
+              ]
+            },
+            "locators": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "Q14": {
+          "type": "object",
+          "required": [
+            "answer",
+            "status",
+            "locators"
+          ],
+          "properties": {
+            "answer": {
+              "type": "string",
+              "minLength": 1
+            },
+            "status": {
+              "enum": [
+                "assessed",
+                "not_reported",
+                "not_applicable",
+                "not_identifiable",
+                "not_accessible",
+                "pending"
+              ]
+            },
+            "locators": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "Q15": {
+          "type": "object",
+          "required": [
+            "answer",
+            "status",
+            "locators"
+          ],
+          "properties": {
+            "answer": {
+              "type": "string",
+              "minLength": 1
+            },
+            "status": {
+              "enum": [
+                "assessed",
+                "not_reported",
+                "not_applicable",
+                "not_identifiable",
+                "not_accessible",
+                "pending"
+              ]
+            },
+            "locators": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "appraisal": {
+      "type": "object"
+    },
+    "completion": {
+      "enum": [
+        "assessed",
+        "partial",
+        "integrity_disposition"
+      ]
+    },
+    "humanApproval": {
+      "const": "pending"
+    }
+  },
+  "additionalProperties": false
+}
