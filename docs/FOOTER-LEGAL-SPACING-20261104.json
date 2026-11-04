@@ -7,10 +7,17 @@
     "productionBuild": "PASS",
     "governance": "PASS: 236 preserved files; no changed guides",
     "whitespace": "PASS",
-    "browser": "PASS: measured 20px gap above the legal-link group in the built production preview"
+    "browser": "PASS: measured 20px gap above the legal-link group in the built production preview",
+    "builtClientPrivacy": "PASS: 36 payloads",
+    "liveBrowser": "PASS: 20px actual gap above legal links on the deployed Worker"
   },
   "publication": {
-    "status": "pending",
-    "pipeline": "GitHub main -> Cloudflare Worker remaprx"
+    "status": "succeeded",
+    "pipeline": "GitHub main -> Cloudflare Worker remaprx",
+    "pr": 32,
+    "commit": "b9058698c76f2683185a79bc28be6af90dde15ad",
+    "workflowRun": 41875443820,
+    "workflowUrl": "https://github.com/paleofoundation/second-look/actions/runs/41875443820",
+    "screenshot": "artifacts/footer-legal-spacing-20261104/live.png"
   }
 }
