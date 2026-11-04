@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "productId",
+    "reviewer",
+    "inputHashes",
+    "blockAudits",
+    "findings",
+    "checks",
+    "decision",
+    "humanClinicalApproval",
+    "humanEditorialApproval",
+    "commercialLegalApproval"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "productId": {
+      "const": "SL-GUIDE-METFORMIN"
+    },
+    "reviewer": {
+      "const": "Codex (OpenAI), model review; not independent human approval"
+    },
+    "inputHashes": {
+      "type": "array"
+    },
+    "blockAudits": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "chapterId",
+          "block",
+          "sourceIds",
+          "decision",
+          "rationale",
+          "sourceLocators"
+        ],
+        "properties": {
+          "chapterId": {
+            "type": "string"
+          },
+          "block": {
+            "type": "integer"
+          },
+          "sourceIds": {
+            "type": "array"
+          },
+          "decision": {
+            "enum": [
+              "verified",
+              "corrected",
+              "qualified",
+              "editorial_only"
+            ]
+          },
+          "rationale": {
+            "type": "string"
+          },
+          "sourceLocators": {
+            "type": "array"
+          }
+        }
+      }
+    },
+    "findings": {
+      "type": "array"
+    },
+    "checks": {
+      "type": "object"
+    },
+    "decision": {
+      "enum": [
+        "review_complete_with_corrections",
+        "review_complete_no_corrections",
+        "additional_source_work_required"
+      ]
+    },
+    "humanClinicalApproval": {
+      "const": "pending"
+    },
+    "humanEditorialApproval": {
+      "const": "pending"
+    },
+    "commercialLegalApproval": {
+      "const": "pending"
+    }
+  }
+}

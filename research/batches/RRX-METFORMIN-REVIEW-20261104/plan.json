@@ -1,0 +1,742 @@
+{
+  "schemaVersion": 1,
+  "id": "RRX-METFORMIN-REVIEW-20261104",
+  "ownerInstruction": "do the required review",
+  "scope": "Post-authoring source, numerical, clinical-content, editorial, disclosure and artifact review of the exact private Metformin guide; repair supported defects and render a new private version when changed.",
+  "baseCommit": "e087654baffda8514f7fa500012ff4795089b5f4",
+  "productId": "SL-GUIDE-METFORMIN",
+  "inputEditionId": "metformin-20261104-candidate-1",
+  "sourceIds": [
+    "MF-LABEL-2025",
+    "MF-COVID-VIRAL-2024",
+    "MF-PD-MECHANISM-2016",
+    "CP017",
+    "MF-MASTERS-2019",
+    "MF-STAMPEDE-2025",
+    "MF-NRG-LU001-2021",
+    "COND-C15-MA32-2022",
+    "COND-C17-MET-2015",
+    "MF-ADENOMA-2016",
+    "MF-MYELOMA-MODELS-2018",
+    "MF-METPREVENT-2025",
+    "P-COVIDOUT-2023",
+    "P-KOREA-2026",
+    "MF-SCHIZOPHRENIA-PARENT-2023",
+    "CP016",
+    "P-ACTIV6-2026",
+    "CP018",
+    "COND-C02-COVIDOUT-2022",
+    "MF-ALMERA-2021",
+    "MF-LABEL-IR-2025",
+    "MF-LABEL-ER-2025",
+    "INZUCCHI-2014",
+    "MF-FDA-GENERICS",
+    "COND-C15-MA32-METABOLIC",
+    "OWEN-2000",
+    "MF-COLON-MECHANISM-2010",
+    "REVIVE-REPLACEMENT",
+    "REVIVE-NOTICE",
+    "COVIDOUT-CORRECTION"
+  ],
+  "inputs": [
+    {
+      "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/private-guides/metformin-20261104/manuscript-source.json",
+      "sha256": "b653a06d32ec76e1ba97be1e68bc2d2c5588b5a471383f671ef031f19480d18f"
+    },
+    {
+      "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/private-guides/metformin-20261104/output/web-manuscript.json",
+      "sha256": "929540b8d03fee81f4c31d76c6d9974388ab1fa9ff8c903382b8f51a867a8403"
+    },
+    {
+      "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/metformin-guide-completion/research/batches/RRX-METFORMIN-COMPLETE-20261103/source-access.json",
+      "sha256": "30963f077de4237f6d82dd412e75bdc42e6b4bf382b96e0f11b78297824c582a"
+    },
+    {
+      "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/metformin-guide-completion/research/batches/RRX-METFORMIN-COMPLETE-20261103/coverage.json",
+      "sha256": "2ad33c10787106f34b4d41f2c0c6618bd6e458531cb4e481a86989241ea11113"
+    },
+    {
+      "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/metformin-guide-completion/research/batches/RRX-METFORMIN-COMPLETE-20261103/guide-artifacts.json",
+      "sha256": "0549e1c05a1f4ce15b3ac8bc2564c13b306429241bde51202cbe9926ec4e7e6d"
+    },
+    {
+      "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/metformin-guide-completion/research/batches/RRX-METFORMIN-COMPLETE-20261103/assessments/COND-C02-COVIDOUT-2022.json",
+      "sha256": "17699271afd410f27aaa8657268aba9efdea79ccaaf04e153cabced29f4eb2b6"
+    },
+    {
+      "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/metformin-guide-completion/research/batches/RRX-METFORMIN-COMPLETE-20261103/assessments/COND-C15-MA32-2022.json",
+      "sha256": "e854782f2004d36f6d1d5f330f3fcbb95cd0596206d424c3e8296b14d7df782b"
+    },
+    {
+      "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/metformin-guide-completion/research/batches/RRX-METFORMIN-COMPLETE-20261103/assessments/COND-C15-MA32-METABOLIC.json",
+      "sha256": "4631daefda6a471332bb09619442ec1aef486d1b2d490e3bc96bd2ee126129b1"
+    },
+    {
+      "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/metformin-guide-completion/research/batches/RRX-METFORMIN-COMPLETE-20261103/assessments/COND-C17-MET-2015.json",
+      "sha256": "331597f0333171dfe78521c3c2259209d166067d7486930330b84b5cb4d55abc"
+    },
+    {
+      "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/metformin-guide-completion/research/batches/RRX-METFORMIN-COMPLETE-20261103/assessments/CP016.json",
+      "sha256": "d85c5d88d80ed15cca651e94b36b4beb992ce1aee8dd6ac6f5f94c5d8f23f3b6"
+    },
+    {
+      "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/metformin-guide-completion/research/batches/RRX-METFORMIN-COMPLETE-20261103/assessments/CP017.json",
+      "sha256": "7df68726e7c2655353b9c89698243e7b943785967635d0e8f1ab1466142415af"
+    },
+    {
+      "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/metformin-guide-completion/research/batches/RRX-METFORMIN-COMPLETE-20261103/assessments/CP018.json",
+      "sha256": "1079b293e07669f0a889bbf1abd6e5b09721cd6ea9a111cb2aa1ef8f773ecf22"
+    },
+    {
+      "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/metformin-guide-completion/research/batches/RRX-METFORMIN-COMPLETE-20261103/assessments/INZUCCHI-2014.json",
+      "sha256": "01ee8a713fb23cd11a313573f1a1ac6fcabeb3b2fe401778a53e4df8d017f4d9"
+    },
+    {
+      "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/metformin-guide-completion/research/batches/RRX-METFORMIN-COMPLETE-20261103/assessments/MF-ADENOMA-2016.json",
+      "sha256": "aef292e0341c97c46d608e1de17980d59900aa3b4c89f468d44dc8c4c32bfed8"
+    },
+    {
+      "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/metformin-guide-completion/research/batches/RRX-METFORMIN-COMPLETE-20261103/assessments/MF-ALMERA-2021.json",
+      "sha256": "1da32b3762ab2ef13f2b5638062ce7b469f2fe3838808937c25590d04e6af8ad"
+    },
+    {
+      "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/metformin-guide-completion/research/batches/RRX-METFORMIN-COMPLETE-20261103/assessments/MF-COLON-MECHANISM-2010.json",
+      "sha256": "cecfa269aace6cfd578d5643b86eb6b0d3481629af38810d5996e7cee42fe4ff"
+    },
+    {
+      "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/metformin-guide-completion/research/batches/RRX-METFORMIN-COMPLETE-20261103/assessments/MF-COVID-VIRAL-2024.json",
+      "sha256": "8fd958253601a8bbc63be112c75988c1b48440ae818d5bc950630ad8bb195366"
+    },
+    {
+      "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/metformin-guide-completion/research/batches/RRX-METFORMIN-COMPLETE-20261103/assessments/MF-MASTERS-2019.json",
+      "sha256": "72f8c1cc637d2fe74da06f1e0ffe69b78f476f22205defd92711c6ff28657d63"
+    },
+    {
+      "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/metformin-guide-completion/research/batches/RRX-METFORMIN-COMPLETE-20261103/assessments/MF-METPREVENT-2025.json",
+      "sha256": "331501832f794c1c045ffb9eca723e2e6b285a6c3f436b1835438a13b2bbcc25"
+    },
+    {
+      "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/metformin-guide-completion/research/batches/RRX-METFORMIN-COMPLETE-20261103/assessments/MF-MYELOMA-MODELS-2018.json",
+      "sha256": "4a3e3845cf6df0ccd959ffbebe90620df99ecfec19e5d29eec92c244f0029bea"
+    },
+    {
+      "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/metformin-guide-completion/research/batches/RRX-METFORMIN-COMPLETE-20261103/assessments/MF-NRG-LU001-2021.json",
+      "sha256": "ad92923a06b3d6b270967ae5ac339dc46bf88f8569418d8028237c944f174d24"
+    },
+    {
+      "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/metformin-guide-completion/research/batches/RRX-METFORMIN-COMPLETE-20261103/assessments/MF-PD-MECHANISM-2016.json",
+      "sha256": "f25d9c6d1b30e9662b5b8abc78637d858700d6aa477bdfa05ef33da5dd306bf0"
+    },
+    {
+      "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/metformin-guide-completion/research/batches/RRX-METFORMIN-COMPLETE-20261103/assessments/MF-SCHIZOPHRENIA-PARENT-2023.json",
+      "sha256": "14440fd829f1a0e4ebee6e397a799b0d2da1dbd50de4cb5bbeb5ddd894462da7"
+    },
+    {
+      "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/metformin-guide-completion/research/batches/RRX-METFORMIN-COMPLETE-20261103/assessments/MF-STAMPEDE-2025.json",
+      "sha256": "f75514b7f7c38f52a1311190cddec72204e879d57a8bfd0aa512ebceca2a368f"
+    },
+    {
+      "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/metformin-guide-completion/research/batches/RRX-METFORMIN-COMPLETE-20261103/assessments/OWEN-2000.json",
+      "sha256": "aa15d11b9613df44e145e183f78ad66eb434d963d0a5fbfcd06aae4c5ef3c249"
+    },
+    {
+      "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/metformin-guide-completion/research/batches/RRX-METFORMIN-COMPLETE-20261103/assessments/P-ACTIV6-2026.json",
+      "sha256": "c7cda35c1ae9bc34366ab860e384e324f0dcac7e7fe39f8abdde0661ee2edd05"
+    },
+    {
+      "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/metformin-guide-completion/research/batches/RRX-METFORMIN-COMPLETE-20261103/assessments/P-COVIDOUT-2023.json",
+      "sha256": "9cccde280a0b6f2f7fbdf1009542431dbafbf289ee77fb385e12e053c37a625a"
+    },
+    {
+      "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/metformin-guide-completion/research/batches/RRX-METFORMIN-COMPLETE-20261103/assessments/P-KOREA-2026.json",
+      "sha256": "ead9392f6c62aa14b83b183353c609e8c55230c8c651d2c9cd2c5a37713335d5"
+    },
+    {
+      "path": "/Users/kmfp/Documents/ChatGPT/Drug Repurposing/metformin-guide-completion/research/batches/RRX-METFORMIN-COMPLETE-20261103/assessments/REVIVE-REPLACEMENT.json",
+      "sha256": "83f9dee4439a0505f97a00a7ad2de880f98824031e395e000c9f6c21b6b0d26c"
+    }
+  ],
+  "reviewUnits": [
+    {
+      "chapterId": "orientation",
+      "block": 1,
+      "sourceIds": [
+        "MF-LABEL-IR-2025",
+        "MF-LABEL-ER-2025"
+      ]
+    },
+    {
+      "chapterId": "orientation",
+      "block": 2,
+      "sourceIds": [
+        "COND-C15-MA32-2022",
+        "MF-STAMPEDE-2025",
+        "P-COVIDOUT-2023",
+        "P-ACTIV6-2026",
+        "P-KOREA-2026",
+        "REVIVE-REPLACEMENT"
+      ]
+    },
+    {
+      "chapterId": "orientation",
+      "block": 3,
+      "sourceIds": []
+    },
+    {
+      "chapterId": "orientation",
+      "block": 4,
+      "sourceIds": [
+        "P-COVIDOUT-2023",
+        "P-ACTIV6-2026",
+        "P-KOREA-2026",
+        "REVIVE-REPLACEMENT",
+        "CP016",
+        "MF-SCHIZOPHRENIA-PARENT-2023",
+        "COND-C15-MA32-2022",
+        "MF-STAMPEDE-2025",
+        "MF-METPREVENT-2025",
+        "MF-MASTERS-2019"
+      ]
+    },
+    {
+      "chapterId": "orientation",
+      "block": 5,
+      "sourceIds": [
+        "MF-LABEL-IR-2025",
+        "MF-LABEL-ER-2025"
+      ]
+    },
+    {
+      "chapterId": "mechanisms",
+      "block": 1,
+      "sourceIds": [
+        "MF-LABEL-IR-2025",
+        "MF-LABEL-ER-2025"
+      ]
+    },
+    {
+      "chapterId": "mechanisms",
+      "block": 2,
+      "sourceIds": [
+        "OWEN-2000"
+      ]
+    },
+    {
+      "chapterId": "mechanisms",
+      "block": 3,
+      "sourceIds": [
+        "MF-PD-MECHANISM-2016",
+        "MF-MYELOMA-MODELS-2018"
+      ]
+    },
+    {
+      "chapterId": "mechanisms",
+      "block": 4,
+      "sourceIds": [
+        "MF-MYELOMA-MODELS-2018",
+        "COND-C15-MA32-METABOLIC",
+        "MF-COVID-VIRAL-2024",
+        "COND-C15-MA32-2022"
+      ]
+    },
+    {
+      "chapterId": "mechanisms",
+      "block": 5,
+      "sourceIds": [
+        "COND-C15-MA32-METABOLIC",
+        "COND-C15-MA32-2022"
+      ]
+    },
+    {
+      "chapterId": "infection",
+      "block": 1,
+      "sourceIds": [
+        "COND-C02-COVIDOUT-2022",
+        "P-COVIDOUT-2023",
+        "P-KOREA-2026",
+        "REVIVE-REPLACEMENT"
+      ]
+    },
+    {
+      "chapterId": "infection",
+      "block": 2,
+      "sourceIds": [
+        "COND-C02-COVIDOUT-2022"
+      ]
+    },
+    {
+      "chapterId": "infection",
+      "block": 3,
+      "sourceIds": [
+        "P-COVIDOUT-2023",
+        "COVIDOUT-CORRECTION"
+      ]
+    },
+    {
+      "chapterId": "infection",
+      "block": 4,
+      "sourceIds": [
+        "P-COVIDOUT-2023",
+        "COVIDOUT-CORRECTION"
+      ]
+    },
+    {
+      "chapterId": "infection",
+      "block": 5,
+      "sourceIds": [
+        "P-ACTIV6-2026"
+      ]
+    },
+    {
+      "chapterId": "infection",
+      "block": 6,
+      "sourceIds": [
+        "P-COVIDOUT-2023",
+        "P-ACTIV6-2026"
+      ]
+    },
+    {
+      "chapterId": "infection",
+      "block": 7,
+      "sourceIds": [
+        "MF-COVID-VIRAL-2024"
+      ]
+    },
+    {
+      "chapterId": "infection",
+      "block": 8,
+      "sourceIds": [
+        "P-KOREA-2026"
+      ]
+    },
+    {
+      "chapterId": "infection",
+      "block": 9,
+      "sourceIds": [
+        "REVIVE-NOTICE",
+        "REVIVE-REPLACEMENT"
+      ]
+    },
+    {
+      "chapterId": "infection",
+      "block": 10,
+      "sourceIds": [
+        "REVIVE-REPLACEMENT",
+        "REVIVE-NOTICE"
+      ]
+    },
+    {
+      "chapterId": "infection",
+      "block": 11,
+      "sourceIds": [
+        "P-COVIDOUT-2023",
+        "P-ACTIV6-2026",
+        "P-KOREA-2026",
+        "REVIVE-REPLACEMENT"
+      ]
+    },
+    {
+      "chapterId": "neurology",
+      "block": 1,
+      "sourceIds": [
+        "CP016"
+      ]
+    },
+    {
+      "chapterId": "neurology",
+      "block": 2,
+      "sourceIds": [
+        "CP016",
+        "MF-PD-MECHANISM-2016"
+      ]
+    },
+    {
+      "chapterId": "neurology",
+      "block": 3,
+      "sourceIds": [
+        "MF-SCHIZOPHRENIA-PARENT-2023"
+      ]
+    },
+    {
+      "chapterId": "neurology",
+      "block": 4,
+      "sourceIds": [
+        "CP017",
+        "MF-SCHIZOPHRENIA-PARENT-2023"
+      ]
+    },
+    {
+      "chapterId": "neurology",
+      "block": 5,
+      "sourceIds": [
+        "CP016",
+        "CP017",
+        "MF-SCHIZOPHRENIA-PARENT-2023"
+      ]
+    },
+    {
+      "chapterId": "breast",
+      "block": 1,
+      "sourceIds": [
+        "COND-C15-MA32-2022"
+      ]
+    },
+    {
+      "chapterId": "breast",
+      "block": 2,
+      "sourceIds": [
+        "COND-C15-MA32-METABOLIC",
+        "COND-C15-MA32-2022"
+      ]
+    },
+    {
+      "chapterId": "breast",
+      "block": 3,
+      "sourceIds": [
+        "COND-C15-MA32-2022"
+      ]
+    },
+    {
+      "chapterId": "lung",
+      "block": 1,
+      "sourceIds": [
+        "MF-NRG-LU001-2021"
+      ]
+    },
+    {
+      "chapterId": "lung",
+      "block": 2,
+      "sourceIds": [
+        "MF-ALMERA-2021"
+      ]
+    },
+    {
+      "chapterId": "lung",
+      "block": 3,
+      "sourceIds": [
+        "MF-ALMERA-2021"
+      ]
+    },
+    {
+      "chapterId": "lung",
+      "block": 4,
+      "sourceIds": [
+        "MF-NRG-LU001-2021",
+        "MF-ALMERA-2021"
+      ]
+    },
+    {
+      "chapterId": "prostate",
+      "block": 1,
+      "sourceIds": [
+        "MF-STAMPEDE-2025"
+      ]
+    },
+    {
+      "chapterId": "prostate",
+      "block": 2,
+      "sourceIds": [
+        "MF-STAMPEDE-2025"
+      ]
+    },
+    {
+      "chapterId": "prostate",
+      "block": 3,
+      "sourceIds": [
+        "MF-STAMPEDE-2025"
+      ]
+    },
+    {
+      "chapterId": "prostate",
+      "block": 4,
+      "sourceIds": [
+        "MF-STAMPEDE-2025"
+      ]
+    },
+    {
+      "chapterId": "pancreas",
+      "block": 1,
+      "sourceIds": [
+        "COND-C17-MET-2015"
+      ]
+    },
+    {
+      "chapterId": "pancreas",
+      "block": 2,
+      "sourceIds": [
+        "COND-C17-MET-2015"
+      ]
+    },
+    {
+      "chapterId": "colorectal",
+      "block": 1,
+      "sourceIds": [
+        "MF-ADENOMA-2016"
+      ]
+    },
+    {
+      "chapterId": "colorectal",
+      "block": 2,
+      "sourceIds": [
+        "MF-ADENOMA-2016"
+      ]
+    },
+    {
+      "chapterId": "colorectal",
+      "block": 3,
+      "sourceIds": [
+        "MF-COLON-MECHANISM-2010"
+      ]
+    },
+    {
+      "chapterId": "colorectal",
+      "block": 4,
+      "sourceIds": [
+        "MF-ADENOMA-2016",
+        "MF-COLON-MECHANISM-2010"
+      ]
+    },
+    {
+      "chapterId": "myeloma",
+      "block": 1,
+      "sourceIds": [
+        "MF-MYELOMA-MODELS-2018"
+      ]
+    },
+    {
+      "chapterId": "myeloma",
+      "block": 2,
+      "sourceIds": [
+        "MF-MYELOMA-MODELS-2018"
+      ]
+    },
+    {
+      "chapterId": "physical",
+      "block": 1,
+      "sourceIds": [
+        "MF-MASTERS-2019"
+      ]
+    },
+    {
+      "chapterId": "physical",
+      "block": 2,
+      "sourceIds": [
+        "MF-METPREVENT-2025"
+      ]
+    },
+    {
+      "chapterId": "physical",
+      "block": 3,
+      "sourceIds": [
+        "MF-METPREVENT-2025"
+      ]
+    },
+    {
+      "chapterId": "physical",
+      "block": 4,
+      "sourceIds": [
+        "CP018",
+        "MF-METPREVENT-2025",
+        "MF-MASTERS-2019"
+      ]
+    },
+    {
+      "chapterId": "interpretation",
+      "block": 1,
+      "sourceIds": [
+        "MF-MASTERS-2019",
+        "MF-METPREVENT-2025",
+        "P-COVIDOUT-2023",
+        "REVIVE-REPLACEMENT",
+        "MF-LABEL-IR-2025",
+        "MF-LABEL-ER-2025",
+        "COND-C15-MA32-METABOLIC",
+        "COND-C15-MA32-2022"
+      ]
+    },
+    {
+      "chapterId": "interpretation",
+      "block": 2,
+      "sourceIds": [
+        "P-COVIDOUT-2023",
+        "COVIDOUT-CORRECTION"
+      ]
+    },
+    {
+      "chapterId": "interpretation",
+      "block": 3,
+      "sourceIds": [
+        "P-ACTIV6-2026",
+        "MF-NRG-LU001-2021"
+      ]
+    },
+    {
+      "chapterId": "interpretation",
+      "block": 4,
+      "sourceIds": [
+        "MF-STAMPEDE-2025"
+      ]
+    },
+    {
+      "chapterId": "interpretation",
+      "block": 5,
+      "sourceIds": [
+        "COND-C02-COVIDOUT-2022",
+        "MF-COVID-VIRAL-2024",
+        "P-COVIDOUT-2023",
+        "MF-SCHIZOPHRENIA-PARENT-2023",
+        "CP017",
+        "COND-C15-MA32-METABOLIC",
+        "COND-C15-MA32-2022"
+      ]
+    },
+    {
+      "chapterId": "safety",
+      "block": 1,
+      "sourceIds": [
+        "MF-LABEL-IR-2025",
+        "MF-LABEL-ER-2025"
+      ]
+    },
+    {
+      "chapterId": "safety",
+      "block": 2,
+      "sourceIds": [
+        "MF-LABEL-IR-2025",
+        "MF-LABEL-ER-2025",
+        "INZUCCHI-2014"
+      ]
+    },
+    {
+      "chapterId": "safety",
+      "block": 3,
+      "sourceIds": [
+        "MF-LABEL-IR-2025",
+        "MF-LABEL-ER-2025"
+      ]
+    },
+    {
+      "chapterId": "safety",
+      "block": 4,
+      "sourceIds": [
+        "MF-LABEL-IR-2025",
+        "MF-LABEL-ER-2025"
+      ]
+    },
+    {
+      "chapterId": "safety",
+      "block": 5,
+      "sourceIds": [
+        "MF-LABEL-IR-2025",
+        "MF-LABEL-ER-2025"
+      ]
+    },
+    {
+      "chapterId": "safety",
+      "block": 6,
+      "sourceIds": [
+        "MF-LABEL-IR-2025",
+        "MF-LABEL-ER-2025"
+      ]
+    },
+    {
+      "chapterId": "safety",
+      "block": 7,
+      "sourceIds": [
+        "MF-FDA-GENERICS",
+        "MF-LABEL-2025",
+        "MF-LABEL-IR-2025",
+        "MF-LABEL-ER-2025"
+      ]
+    },
+    {
+      "chapterId": "safety",
+      "block": 8,
+      "sourceIds": [
+        "MF-LABEL-IR-2025",
+        "MF-LABEL-ER-2025"
+      ]
+    },
+    {
+      "chapterId": "discussion",
+      "block": 1,
+      "sourceIds": []
+    },
+    {
+      "chapterId": "discussion",
+      "block": 2,
+      "sourceIds": []
+    },
+    {
+      "chapterId": "discussion",
+      "block": 3,
+      "sourceIds": [
+        "MF-LABEL-IR-2025",
+        "MF-LABEL-ER-2025"
+      ]
+    },
+    {
+      "chapterId": "discussion",
+      "block": 4,
+      "sourceIds": [
+        "P-COVIDOUT-2023",
+        "P-ACTIV6-2026",
+        "COND-C15-MA32-2022",
+        "MF-METPREVENT-2025"
+      ]
+    },
+    {
+      "chapterId": "discussion",
+      "block": 5,
+      "sourceIds": [
+        "COND-C02-COVIDOUT-2022",
+        "COND-C15-MA32-METABOLIC",
+        "COND-C15-MA32-2022",
+        "MF-LABEL-IR-2025"
+      ]
+    },
+    {
+      "chapterId": "sources-scope",
+      "block": 1,
+      "sourceIds": []
+    },
+    {
+      "chapterId": "sources-scope",
+      "block": 2,
+      "sourceIds": []
+    },
+    {
+      "chapterId": "sources-scope",
+      "block": 3,
+      "sourceIds": [
+        "COVIDOUT-CORRECTION",
+        "P-COVIDOUT-2023",
+        "REVIVE-NOTICE",
+        "REVIVE-REPLACEMENT",
+        "COND-C15-MA32-2022"
+      ]
+    },
+    {
+      "chapterId": "sources-scope",
+      "block": 4,
+      "sourceIds": []
+    }
+  ],
+  "acquisition": "Use verified local originals and exact assessments first. Current official label, publisher correction/replacement and source identity checks may use lawful public web; store any newly acquired bodies privately with hashes. No payments, bypasses or author messages. No new condition-wide systematic review.",
+  "assessment": "Read every manuscript block; check every substantive numerical claim against exact original section/table, preserving comparison/denominator/timepoint/uncertainty. Distinguish primary/secondary/null/harm, surrogate/clinical, independent/shared families and current-source corrections. Review safety using exact formulation labeling. Do not infer full source access from completed appraisal prose.",
+  "outputSchema": "review.schema.json",
+  "states": [
+    "model evidence/content review",
+    "editorial corrections",
+    "artifact QA",
+    "qualified human clinical approval",
+    "human editorial approval",
+    "commercial legal approval",
+    "release"
+  ],
+  "approvalBoundary": "This operation can complete a documented model review. Do not impersonate a clinician/lawyer, create human signatures, or mark independent human approval. Flag merchant-specific legal facts for actual verification.",
+  "privateOutput": "../private-guides/metformin-reviewed-20261104",
+  "merge": "Versioned candidate and additive review packet; retain candidate.1 and prior research receipts. No public release or unrelated canonical edits.",
+  "delegation": false,
+  "createdAt": "2026-11-04T10:25:16.353527+00:00"
+}

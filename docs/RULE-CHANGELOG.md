@@ -435,3 +435,12 @@ Source: the owner's direct follow-up “DO IT THEN” for outstanding assessment
 Source: the owner's explicit instruction to do the missing study assessments, fix COVID-OUT/REVIVE integrity work and finish the guide, including rejection of a fixed 24-source cap. The active batch reconciles 33 source identities and 24 substantive 67-input assessments; official contexts/notices and exclusions have separate dispositions. The private guide cites 30 sources. Missing source inputs, independent human review and actual release approvals remain explicit. COVID-OUT uses its checked corrected table with residual discrepancies disclosed; the original REVIVE remains excluded and the replacement is separately assessed. The affected diagnosis summary was reassessed, not merely rehashed. See `TOPIC-GUIDES.md`, `GUIDE-IMPLEMENTATION.md` and the batch handoff for exact artifacts and verification.
 
 A layout defect found during the full-document check is repaired in the host PDF adapter: individual source entries and worksheet prompts no longer split between pages. The vendored renderer and pinned upstream rules remain unchanged. All edition outputs remain private review candidates.
+
+## November 4, 2026: Metformin required review executed
+
+- **Source:** owner instruction, “do the required review.”
+- **Scope:** the completed private Metformin guide, all original blocks, label-backed safety, numerical/integrity claims and all rendered variants.
+- **Change:** perform the review and resolve its defects rather than stopping at readiness. Candidate `2026.11.04-candidate.2` resolves eight findings and adds two safety blocks; the bibliography remains 30 sources without a fixed cap.
+- **Verification:** prospective plan/schema/readiness; 71 original and two new block audits; preserved input/source hashes; web/PDF parity; every full/sample/summary page visually inspected; links/bookmarks and text bounds checked. Exact receipts live in `research/batches/RRX-METFORMIN-REVIEW-20261104/`.
+- **Superseded:** candidate 1 as the current portfolio manuscript; its files and previous receipts are preserved.
+- **Remaining:** actual independent clinical, human editorial and legal/commercial approvals, accessibility/reader acceptance and existing commerce release work. Model review is complete and cannot supply another person's credentials or signature. No release, deployment, Stripe mutation or payment occurred.

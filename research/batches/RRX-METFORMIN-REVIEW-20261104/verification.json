@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "inputHashesVerified": 29,
+  "priorPrivateAssetsPreserved": 6,
+  "verifiedSourceFiles": 61,
+  "sourceAssessmentStates": {
+    "partial": 15,
+    "assessed_available_packet": 9
+  },
+  "originalBlocksReviewed": 71,
+  "newBlocksReviewed": 2,
+  "references": 30,
+  "resolvedFindings": 8,
+  "pdfs": [
+    {
+      "variant": "full",
+      "pages": 27,
+      "links": 219,
+      "bookmarks": 17,
+      "sha256": "1b0d88d24a4f19933dacefdb4a5195fdb2e5526aa5fa8ff8d83565974363274b",
+      "tagged": false
+    },
+    {
+      "variant": "preview",
+      "pages": 7,
+      "links": 65,
+      "bookmarks": 5,
+      "sha256": "496fc39043209be242232d4f8fc1c693b2e69a4ad924e03ec6a9bb5c6721503a",
+      "tagged": false
+    },
+    {
+      "variant": "summary",
+      "pages": 3,
+      "links": 51,
+      "bookmarks": 1,
+      "sha256": "93995aa3d215244632114adbda88aa5a18807967466729a3781e64ec423eddf4",
+      "tagged": false
+    }
+  ],
+  "checks": [
+    "Input/source byte identity",
+    "Historical candidate preservation",
+    "All original and new block audit bindings",
+    "Reference and excluded-source closure",
+    "Only declared blocks changed",
+    "UTC timestamp not in future",
+    "Web and PDF text parity for all variants",
+    "PDF text bounds and replacement-glyph check",
+    "Bookmark/link destination checks",
+    "Private location and pending approval states"
+  ],
+  "limits": "Deterministic verification supports the authored review; it does not replace scientific judgment, visual inspection, a real reader test or human/legal approval."
+}

@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "commands": [
+    "node scripts/check-governance.mjs",
+    "node scripts/check-topic-guides.mjs",
+    "node scripts/guide-portfolio.mjs --check"
+  ],
+  "results": [
+    "236 preserved rule/history/ingest files and frozen baseline verified",
+    "64 own-topic products and pending/released/withdrawn offer behaviors verified; public article SSR checks passed",
+    "Current portfolio registers candidate 2; 64 mapped topics, one candidate, zero catalog releases"
+  ],
+  "scope": "No application runtime or public medical-content change. Private manuscript rendering and exact asset verification are recorded separately; no new production deployment is claimed."
+}
