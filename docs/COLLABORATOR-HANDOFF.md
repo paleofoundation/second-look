@@ -108,6 +108,7 @@ These commands were verified to exist in the inspected checkout. Their listing i
 | `node scripts/check-evidence-grading.mjs` | Compiled grading projection and rejection of invalid/stale assessments |
 | `node tests/readiness.test.mjs` | Metformin-grade bar: words, DOIs, mechanism, evidence, dosing, safety, study summaries, and Quality |
 | `node tests/search-indexing.test.mjs` | Production-host robots.txt and sitemap membership from that bar |
+| `node tests/require-governance-check.test.mjs` | Evidence-gate auto-merge waits for a successful governance status check |
 | `node scripts/check-wiki-links.mjs` | Wiki links, shared registry, related reading and rendered references |
 | `node scripts/verify-reader-boundary.mjs --source-only` | Public data projections and source privacy constraints |
 | `node scripts/update-guide-marketing-hashes.mjs --check` | Catalogue marketing hash freshness |

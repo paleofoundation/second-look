@@ -18,3 +18,5 @@ jobs:
         run: node tests/readiness.test.mjs
       - name: Search indexing robots and sitemap bar
         run: node tests/search-indexing.test.mjs
+      - name: Auto-merge waits for this governance check
+        run: node tests/require-governance-check.test.mjs
