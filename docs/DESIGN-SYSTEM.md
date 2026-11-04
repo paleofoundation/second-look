@@ -1,5 +1,9 @@
 # RemapRx visual design system
 
+## Footer layout repair — November 4, 2026
+
+Source: owner's “Fix the footer” request and Screenshot 2026-11-04 at 4.32.24 PM.png. Repair the shared footer's cramped brand/legal copy and unused fifth column. Keep the existing RemapRx mark, blue background, copy and link destinations. With no newsletter, use one brand block plus the three existing navigation groups across the available desktop width; stack the brand above responsive menu columns on smaller screens. Legal links wrap as whole labels with consistent gaps and no orphan separators. Preserve visible yellow keyboard focus and comfortable link targets. This supersedes the inherited five-column allocation and shrinking legal-link row for this layout. Implementation choices are responsive CSS; no evidence, access or release-policy change is included. Verification and publication are recorded in `FOOTER-FIX-20261104.json`.
+
 Adopted 12 October 2026 from the owner's palette05.png, ten supplied health-topic SVGs, and Examine brain-hero screenshot. This is the RemapRx implementation contract. The illustration conventions are reusable for PepsAnon; this change does not migrate or publish PepsAnon. Existing scientific content, evidence semantics, account access and release gates remain in force.
 
 ## Color roles
@@ -32,7 +36,7 @@ Retain PNG masters in `assets/hero-art/` and deliver alpha-preserving WebP image
 
 Use a real HTML image with alt, intrinsic dimensions, responsive srcSet/sizes and eager hero priority. The first two topic heroes show artwork in the left panel on desktop/laptop; at narrow mobile widths the image stacks above the title. Use contain, never crop meaningful subject details. Other pages retain their existing illustration until a topic asset is explicitly assigned.
 
-Provide canonical RemapRx URLs, page-specific Open Graph and Twitter images, and ImageObject linked from WebPage.primaryImageOfPage for registered topic images. These fields prepare accurate descriptions for discovery; they do not guarantee search visibility. The existing noindex/nofollow and robots disallow gates remain unchanged pending the separate scientific/indexing release decision. Remove temporary development-preview metadata from publication.
+Provide canonical RemapRx URLs, page-specific Open Graph and Twitter images, and ImageObject linked from WebPage.primaryImageOfPage for registered topic images. These fields prepare accurate descriptions for discovery; they do not guarantee search visibility. As of 2026-11-04, public hosts allow crawling, and only pages that pass the metformin-grade bar in `scripts/readiness.mjs` are indexable. Pages below that bar use `noindex,follow`. Remove temporary development-preview metadata from publication.
 
 ## References and implementation scope
 
@@ -109,3 +113,30 @@ Use the existing definitions to choose restrained conceptual subjects: cellular 
 ## Approved RemapRx atlas identity — October 12, 2026
 
 The owner approved the mapping-round-4 Rx mark and authorized its logo/favicon application and the category-claiming homepage to go live. Preserve the close heavy Rx, open concentric target rings, crosshairs, radial connectors and flat arrow; retain mapping features even at favicon size. Blue on white is the header identity, reversed white on blue the footer, and blue on yellow the favicon. The hero repeats this map geometry with distinct established/investigated routes and readable research-type labels. Category is “The drug repurposing atlas”; headline is “New targets for approved medications.” Replace current reader-facing Second Look branding and the old familiar-drug headline while preserving historical records, routes and existing topic illustrations. Contract, exact copy, production assets, scope and verification/release: `REMAPRX-IDENTITY.md`. This supersedes the preview-only status and the over-simplified round-3 design.
+
+
+## Hero sidebar alignment — November 4, 2026
+
+Owner request, with Screenshot 2026-11-04 at 4.31.04 PM.png: the dark illustration and author sidebars in topic heroes must have the same widths and vertical boundaries as the article sidebars below. Use one shared responsive column definition for both grids: the existing reading-grid columns above 1199px, and 220px / flexible center / 260px from 992px through 1199px. Stack the hero only below the reading grid’s 992px desktop breakpoint. Preserve the existing tablet/phone illustration, author, snapshot and reading order. This supersedes the independent 25%-left/280px-right hero columns and its earlier 1199px stacking threshold.
+
+
+## Footer legal-link separation — November 4, 2026
+
+Source: owner's follow-up and Screenshot 2026-11-04 at 7.09.38 PM.png: Privacy, Terms and Educational disclaimer are cramped against the paragraph above. Give the shared legal-link group its own 1.25rem top margin at every viewport. This supersedes the flush paragraph/link adjacency while preserving the accepted responsive columns and intact labels. Implement and publish under the standing routine-fix authorization. Verification/publication: `FOOTER-LEGAL-SPACING-20261104.json`.
+
+
+## November 4, 2026 - Restore the published Research Feed pilot
+
+Source: owner's request to chase the missing pilot and restore the cards with Link and Email buttons. Restore the original shared Microbiome-style implementation from Sites version 54 / GitHub draft PR #20 to the current GitHub production source. Each card retains a circular plus/minus toggle, visible finding, study year/type, topic links and separate Open / Link / Email actions. Open visits the canonical study summary, Link opens the recorded original source, and Email opens a draft without sending. Expanded cards retain the four research questions; dedicated study pages retain the compact structured design. FAQs precede Research Feed. This supersedes the older disclosure-only presentation still present in GitHub main. Preserve current footer/sidebar layout, canonical data, scientific/review states, access and indexing policy. Verification and publication are recorded in RESEARCH-FEED-RESTORATION-20261104.json.
+
+
+## November 4, 2026 - Canonical Contraindications and Status tables
+
+Source: owner request with Screenshot 2026-11-04 at 7.48.21 PM.png. The existing Contraindications table is the canonical visual style for both Contraindications and Status: two columns, pale blue header, full cell borders, alternating row shading and matching typography/spacing. In Status, retain each use, status, regulator, approval year and citation; group the latter metadata in the status cell to avoid broken narrow headings. Move the exact note “The FDA does not approve off-label uses; uses studied in research are listed as research only.” from below the table into an information card beside the Status heading. It opens on icon hover, keyboard focus or tap and supports Escape/outside dismissal. This supersedes the five-column Status presentation and below-table note. Filter Outcomes tables, their styles, data, filters and drawer behavior must not change. Preserve existing source values, citation identities and research-feed restoration. Bounded presentation implementation and verification/publication are recorded in STATUS-TABLES-20261104.json.
+
+
+## November 4, 2026 — Research Feed section breathing room
+
+Source: owner's screenshots at 8:20:31 PM and 8:20:37 PM, and request to increase the gap after the final FAQ accordion, remove “Study summaries” below Research Feed, and give the section proper breathing room. Apply to the shared article renderer across article types. Supersedes the 40px FAQ-to-feed gap and duplicate article-feed subheading. Use an 80px section break on desktop/tablet, 64px on phones up to 575px, and 32px below the Research Feed heading before its content. Preserve the existing space above FAQs, study cards and their Open/Link/Email behavior, section order, citation identities and studies/research fragments. Standalone catalog headings remain unchanged.
+
+Consulted the Microbiome Medicine canonical Research Feed card and PepsAnon FAQ/prose references read-only, with its reference tab retained. Sites and TypeSafe guidance keep this bounded presentation change in deterministic code. Verification and live publication are recorded in RESEARCH-FEED-SPACING-20261104.json; pending at adoption.

@@ -1,0 +1,79 @@
+name: Deploy to Cloudflare Workers
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: deploy-production
+  cancel-in-progress: false
+env:
+  # Non-secret names. Set these as repository variables.
+  WORKER_NAME: ${{ vars.REMAPRX_WORKER_NAME || 'remaprx' }}
+  D1_DATABASE_ID: ${{ vars.REMAPRX_D1_DATABASE_ID }}
+  D1_DATABASE_NAME: ${{ vars.REMAPRX_D1_DATABASE_NAME || 'remaprx-d1' }}
+  R2_BUCKET_NAME: ${{ vars.REMAPRX_R2_BUCKET_NAME || 'remaprx-r2' }}
+  CUSTOM_DOMAIN: ${{ vars.REMAPRX_CUSTOM_DOMAIN }}
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check Cloudflare credentials
+        id: creds
+        env:
+          CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CF_ACCOUNT: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          if [ -z "$CF_TOKEN" ] || [ -z "$CF_ACCOUNT" ] || [ -z "$D1_DATABASE_ID" ]; then
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+            echo "::warning::Deploy skipped. Needs secrets CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID and variable REMAPRX_D1_DATABASE_ID."
+          else
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          fi
+      - uses: actions/checkout@v4
+        if: steps.creds.outputs.ready == 'true'
+      - uses: actions/setup-node@v4
+        if: steps.creds.outputs.ready == 'true'
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Install
+        if: steps.creds.outputs.ready == 'true'
+        run: npm ci --no-audit --no-fund
+      - name: Build
+        if: steps.creds.outputs.ready == 'true'
+        run: npm run build
+      - name: Point the built Worker config at production resources
+        if: steps.creds.outputs.ready == 'true'
+        run: |
+          node -e '
+          const fs=require("fs"),p="dist/server/wrangler.json",c=JSON.parse(fs.readFileSync(p,"utf8"));
+          const e=process.env; c.name=e.WORKER_NAME;
+          for (const d of c.d1_databases||[]) { d.database_id=e.D1_DATABASE_ID; d.database_name=e.D1_DATABASE_NAME; }
+          for (const b of c.r2_buckets||[]) b.bucket_name=e.R2_BUCKET_NAME;
+          if (e.CUSTOM_DOMAIN) c.routes=[{pattern:e.CUSTOM_DOMAIN,custom_domain:true}];
+          delete c.dev; fs.writeFileSync(p,JSON.stringify(c,null,2));
+          console.log("worker",c.name,"d1",(c.d1_databases||[]).length,"r2",(c.r2_buckets||[]).length,"domain",e.CUSTOM_DOMAIN||"(workers.dev only)");'
+      - name: Apply D1 migrations
+        if: steps.creds.outputs.ready == 'true'
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          if [ -d drizzle ] && ls drizzle/*.sql >/dev/null 2>&1; then
+            npx wrangler d1 migrations apply "$D1_DATABASE_NAME" --remote --config dist/server/wrangler.json || echo "::warning::D1 migrations step failed; check migrations_dir"
+          fi
+      - name: Deploy
+        if: steps.creds.outputs.ready == 'true'
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: npx wrangler deploy --config dist/server/wrangler.json
+      - name: Live check
+        if: steps.creds.outputs.ready == 'true' && env.CUSTOM_DOMAIN != ''
+        run: |
+          sleep 20
+          for p in / /drugs /drugs/methylene-blue; do
+            code=$(curl -s -o /dev/null -w '%{http_code}' "https://$CUSTOM_DOMAIN$p"); echo "$p $code"
+          done

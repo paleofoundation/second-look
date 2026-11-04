@@ -172,20 +172,27 @@ sup.citation-sup + sup.citation-sup,
 sup.citation-sup a,
 .omr-theme sup.citation-sup a { padding:0 .05em; margin:0; letter-spacing:inherit; }
 
-/* Drug Status table (elon) */
-.omr-theme .status-table-wrap { margin:1rem 0 1.5rem; overflow-x:auto; }
-.omr-theme .status-table { width:100%; border-collapse:collapse; font-size:15px; line-height:1.5; color:var(--brand-ink); }
-.omr-theme .status-table th,.omr-theme .status-table td { padding:10px 12px; text-align:left; vertical-align:top; border-bottom:1px solid var(--brand-line); }
-.omr-theme .status-table thead th { font-size:12px; font-weight:650; letter-spacing:.05em; text-transform:uppercase; color:var(--brand-muted); background:var(--color-bg); }
-.omr-theme .status-table tbody th { font-weight:500; }
-.omr-theme .status-pill { display:inline-block; padding:2px 8px; border-radius:3px; font-size:13px; font-weight:600; white-space:nowrap; }
+/* Regulatory status uses the shared Contraindications table style. */
+.omr-theme .status-table-wrap { margin:1rem 0 1.5rem; }
+.omr-theme .status-table__value { display:flex; align-items:baseline; flex-wrap:wrap; gap:4px 8px; }
+.omr-theme .status-table__meta { display:flex; flex-direction:column; gap:3px; margin-top:8px; font-size:12px; line-height:1.5; color:var(--brand-muted); }
+.omr-theme .status-pill { display:inline-block; padding:2px 8px; border-radius:3px; font-size:14px; line-height:1.55; white-space:normal; }
 .omr-theme .status-pill--approved { background:var(--brand-blue-light); color:var(--color-primary); }
-.omr-theme .status-pill--research { background:var(--color-bg); color:var(--brand-muted); }
-.omr-theme .status-table .sr-only,.omr-theme .status-table caption.sr-only { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
-@media (max-width:640px){
- .omr-theme .status-table thead { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); }
- .omr-theme .status-table,.omr-theme .status-table tbody,.omr-theme .status-table tr,.omr-theme .status-table th,.omr-theme .status-table td { display:block; width:100%; }
- .omr-theme .status-table tr { padding:8px 0; border-bottom:1px solid var(--brand-line); }
- .omr-theme .status-table th,.omr-theme .status-table td { border:0; padding:3px 0; }
- .omr-theme .status-table td::before { content:attr(data-label) ": "; font-weight:600; color:var(--brand-muted); font-size:13px; }
+.omr-theme .status-pill--research { padding:0; color:var(--brand-ink); }
+.omr-theme .status-table caption.sr-only { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
+.omr-theme .status-heading { display:flex; align-items:center; gap:8px; }
+.omr-theme .status-info-trigger { display:inline-flex; align-items:center; justify-content:center; flex:0 0 44px; width:44px; height:44px; padding:0; border:0; border-radius:50%; color:var(--brand-blue); background:transparent; cursor:pointer; }
+.omr-theme .status-info-trigger svg { width:19px; height:19px; }
+.omr-theme .status-info-trigger:hover { background:var(--brand-blue-light); }
+.status-info-card { width:min(340px,calc(100vw - 32px)); padding:18px; border:1px solid #dce1ea; background:#fff; color:#20254c; font:14px/1.6 Inter,Arial,sans-serif; z-index:190; }
+.status-info-card p { margin:0; }
+
+/* Separate paragraphs inside shared section information cards. */
+.status-info-card p + p { margin-top:12px; }
+
+/* Give the article Research Feed its own section break after the FAQ accordions. */
+.omr-theme .research-content__center > #research-feed { margin-top:2.5rem; }
+.omr-theme .research-content__center > #research-feed > h2 { margin-bottom:2rem; }
+@media (max-width:575px) {
+ .omr-theme .research-content__center > #research-feed { margin-top:1.5rem; }
 }
