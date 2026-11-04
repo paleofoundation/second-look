@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-04",
+  "baseCommit": "332960a149a0896ab85dd81b37a0cee8e7133a50",
+  "requirement": "Increase the gap from the final FAQ accordion to Research Feed, remove the redundant Study summaries heading below Research Feed, and give the feed breathing room.",
+  "changes": [
+    "Article ResearchStudies hides its redundant heading; standalone catalog heading retained.",
+    "Research Feed section adds 40px top margin on desktop/tablet and 24px on phones to the existing 40px preceding section margin, yielding 80px/64px gaps.",
+    "Research Feed heading has 32px bottom margin. FAQs spacing remains unchanged."
+  ],
+  "validation": {
+    "governance": "PASS, 236 preserved files",
+    "typescript": "PASS",
+    "productionBuild": "PASS",
+    "articleNavigation": "PASS, 70 articles and authorized-summary fixtures",
+    "readerBoundary": "PASS, 41 client payloads",
+    "browser": {
+      "desktopMetformin": "80px last FAQ to Research Feed; 32px heading to first card; 25 study cards; redundant heading absent; existing 40px gap above FAQs unchanged.",
+      "mobile390px": "64px last FAQ to Research Feed; 32px heading to first card; page width 390px, no overflow."
+    }
+  },
+  "release": {
+    "status": "pending"
+  }
+}
