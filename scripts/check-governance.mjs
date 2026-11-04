@@ -58,6 +58,12 @@ if (json('docs/baseline-record.json').sha256 !== frozen) failures.push('Frozen b
 for (const path of ['AGENTS.md', 'README.md', 'CONTRIBUTING.md']) {
   if (!readFileSync(resolve(root, path), 'utf8').includes('docs/RESEARCH-INGEST.md')) failures.push(`${path} must route researchers to ingestion instructions`);
 }
+// Citation gate (2026-11-04): new or changed guides must cite on-file, Crossref-valid, unretracted DOIs.
+{
+  const { spawnSync } = await import('node:child_process');
+  const gate = spawnSync(process.execPath, [resolve(root, 'scripts/check-citation-gate.mjs')], { stdio: 'inherit', cwd: root });
+  if (gate.status !== 0) failures.push('Citation gate failed (scripts/check-citation-gate.mjs)');
+}
 if (failures.length) {
   console.error(failures.join('\n'));
   process.exitCode = 1;

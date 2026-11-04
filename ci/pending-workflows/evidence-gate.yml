@@ -1,0 +1,43 @@
+name: Evidence gate and auto-merge
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, labeled, ready_for_review]
+permissions:
+  contents: write
+  pull-requests: write
+  actions: write
+concurrency:
+  group: evidence-gate-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Governance check
+        run: node scripts/check-governance.mjs  # also runs the citation gate
+      - name: Citation gate (DOI on file, Crossref-valid, not retracted)
+        run: node scripts/check-citation-gate.mjs --base origin/${{ github.base_ref }}
+  automerge:
+    needs: gate
+    runs-on: ubuntu-latest
+    # Page PRs only: label evidence-fill, or a fill/* or claude/remaprx-fill-* branch. Drafts never merge.
+    if: >-
+      github.event.pull_request.draft == false &&
+      github.event.pull_request.head.repo.full_name == github.repository &&
+      (contains(github.event.pull_request.labels.*.name, 'evidence-fill') ||
+       startsWith(github.event.pull_request.head.ref, 'fill/') ||
+       startsWith(github.event.pull_request.head.ref, 'claude/remaprx-fill-'))
+    env:
+      GH_TOKEN: ${{ github.token }}
+      PR: ${{ github.event.pull_request.number }}
+    steps:
+      - name: Merge
+        run: gh pr merge "$PR" --repo "$GITHUB_REPOSITORY" --squash --delete-branch
+      - name: Trigger deploy (merges by GITHUB_TOKEN do not fire push workflows)
+        run: gh workflow run deploy-cloudflare.yml --repo "$GITHUB_REPOSITORY" --ref main
