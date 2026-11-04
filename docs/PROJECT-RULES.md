@@ -12,6 +12,8 @@ Adopted repository handoff: 11 October 2026. These are durable project instructi
 
 ## Authority and reading order
 
+Owner requirement and clarification, November 4, 2026: every prose section must contain at least **113 words and 845 characters including spaces** of substantive, connected, visible narrative prose, excluding citation markers, formatting and structured content. This applies across existing and future drug and condition pages, including Overview, Benefits, Mechanism of Action, Safety, Comparisons, Evidence and equivalent narrative sections. It is a per-section minimum, may span cohesive paragraphs, and is not a minimum for each paragraph or structured item. The owner explicitly corrected the initial mechanism-only interpretation and then requested work across the drug and condition pages until finished, using GPT-6.1 medium at standard speed where supported. [PROSE-SECTIONS.md](PROSE-SECTIONS.md) retains the exact benchmark and counting method. Meeting the count with repetition, unrelated claims or generic warnings fails the requirement. Existing source/protected-content, scientific and release gates remain in force. Active scope, candidates, source gaps and checks are tracked in `editorial/prose-minimum-20261104/` and `research/batches/RRX-PROSE-MINIMUM-20261104/`.
+
 1. Latest explicit owner instruction, within its stated scope.
 2. This project contract and the [rule changelog](RULE-CHANGELOG.md), including unresolved local corrections.
 3. The [pinned One Match Rule](../rules/one-match-rule/ONE-MATCH-RULE.md), with its supporting references and [snapshot manifest](../rules/one-match-rule/snapshot-manifest.json).

@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "remaprx-prose-context-extraction-v1",
+  "type": "object",
+  "required": [
+    "sourceId",
+    "url",
+    "retrievedAt",
+    "accessStatus",
+    "file",
+    "sha256",
+    "observations",
+    "gaps"
+  ],
+  "properties": {
+    "sourceId": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "retrievedAt": {
+      "type": "string"
+    },
+    "accessStatus": {
+      "enum": [
+        "full_text",
+        "partial_text",
+        "not_accessible",
+        "identity_mismatch"
+      ]
+    },
+    "file": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "sha256": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "observations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "claim",
+          "locator",
+          "scope",
+          "kind"
+        ],
+        "properties": {
+          "claim": {
+            "type": "string"
+          },
+          "locator": {
+            "type": "string"
+          },
+          "scope": {
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "original_use",
+              "mechanism",
+              "safety",
+              "contraindication",
+              "precaution",
+              "interaction",
+              "dosing",
+              "formulation",
+              "condition_context"
+            ]
+          }
+        }
+      }
+    },
+    "gaps": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "reason",
+          "status",
+          "nextAction"
+        ],
+        "properties": {
+          "reason": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "not_reported",
+              "not_extracted",
+              "not_accessible",
+              "not_applicable",
+              "not_checked",
+              "not_identifiable"
+            ]
+          },
+          "nextAction": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
