@@ -20,7 +20,7 @@ Seller selected by the owner: Microbiome Signatures LLC. Live-capable code and s
 
 | Topic | Page type | Product | Manuscript | Catalog state |
 | --- | --- | --- | --- | --- |
-| Metformin | Drug | [SL-GUIDE-METFORMIN](https://remaprx.com/guides/products/metformin) | [2026.11.04-candidate.2](../research/batches/RRX-METFORMIN-REVIEW-20261104/guide-artifacts.json) | pending |
+| Metformin | Drug | [SL-GUIDE-METFORMIN](https://remaprx.com/guides/products/metformin) | [2026.11.04-candidate.3](../research/batches/RRX-METFORMIN-CANDIDATE3-20261104/guide-artifacts.json) | pending |
 | Long COVID | Condition | [SL-GUIDE-LONG-COVID](https://remaprx.com/guides/products/long-covid) | Not registered | pending |
 | Itraconazole | Drug | [SL-GUIDE-ITRACONAZOLE-CANCER](https://remaprx.com/guides/products/itraconazole-cancer) | Not registered | pending |
 | Acute COVID-19 | Condition | [SL-GUIDE-CONDITION-ACUTE-COVID-19](https://remaprx.com/guides/products/acute-covid-19) | Not registered | pending |

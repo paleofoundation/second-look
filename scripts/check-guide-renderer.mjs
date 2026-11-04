@@ -48,4 +48,6 @@ for (const [file, asset] of Object.entries(first.assets)) {
 }
 const proof = spawnSync(python, [path.join(base, 'verify-pdfs.py'), '--out', path.join(output, 'first')], { encoding: 'utf8' });
 assert.equal(proof.status, 0, proof.stderr);
-console.log(JSON.stringify({ status: 'PASS', assertions: 'vendor integrity; schema/version/content parity; explicit sample boundary; safety retention; malformed/unsafe input; private output permissions; deterministic PDF hashes; every-block PDF content; bookmark and link destinations; page geometry', pdfs: JSON.parse(proof.stdout), output, visualReview: 'Separate every-page visual inspection is required for a changed manuscript or renderer.' }, null, 2));
+const tagging = spawnSync(python, [path.join(base, 'check-tagging.py'), '--packet', path.join(output, 'first')], { encoding: 'utf8' });
+assert.equal(tagging.status, 0, tagging.stderr);
+console.log(JSON.stringify({ status: 'PASS', assertions: 'vendor integrity; schema/version/content parity; explicit sample boundary; safety retention; malformed/unsafe input; private output permissions; deterministic PDF hashes; every-block PDF content; bookmark and link destinations; page geometry; actual tagged content and embedded fonts; broken accessibility controls rejected', pdfs: JSON.parse(proof.stdout), tagging: JSON.parse(tagging.stdout), output, visualReview: 'Separate every-page visual inspection is required for a changed manuscript or renderer.' }, null, 2));

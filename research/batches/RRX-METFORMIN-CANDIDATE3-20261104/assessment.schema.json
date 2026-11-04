@@ -1,0 +1,737 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "sourceId",
+    "version",
+    "sourceAssets",
+    "questions",
+    "appraisal",
+    "completion",
+    "humanApproval",
+    "inputs"
+  ],
+  "properties": {
+    "sourceId": {
+      "enum": [
+        "MF-LABEL-2025",
+        "MF-COVID-VIRAL-2024",
+        "MF-PD-MECHANISM-2016",
+        "CP017",
+        "MF-MASTERS-2019",
+        "MF-STAMPEDE-2025",
+        "MF-NRG-LU001-2021",
+        "COND-C15-MA32-2022",
+        "COND-C17-MET-2015",
+        "MF-ADENOMA-2016",
+        "MF-MYELOMA-MODELS-2018",
+        "MF-METPREVENT-2025",
+        "P-COVIDOUT-2023",
+        "P-KOREA-2026",
+        "MF-SCHIZOPHRENIA-PARENT-2023",
+        "CP016",
+        "P-ACTIV6-2026",
+        "CP018",
+        "P-REVIVE-2026",
+        "COND-C02-COVIDOUT-2022",
+        "MF-ALMERA-2021",
+        "MF-LABEL-IR-2025",
+        "MF-LABEL-ER-2025",
+        "ABRILLA-2021",
+        "INZUCCHI-2014",
+        "MF-FDA-GENERICS",
+        "COND-C15-MA32-METABOLIC",
+        "OWEN-2000",
+        "EL-MIR-2000",
+        "MF-COLON-MECHANISM-2010",
+        "REVIVE-REPLACEMENT",
+        "MF-ACTIV6-ACUTE-2025"
+      ]
+    },
+    "version": {
+      "type": "string"
+    },
+    "sourceAssets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "path",
+          "sha256"
+        ],
+        "properties": {
+          "path": {
+            "type": "string"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "questions": {
+      "type": "object",
+      "required": [
+        "Q01",
+        "Q02",
+        "Q03",
+        "Q04",
+        "Q05",
+        "Q06",
+        "Q07",
+        "Q08",
+        "Q09",
+        "Q10",
+        "Q11",
+        "Q12",
+        "Q13",
+        "Q14",
+        "Q15"
+      ],
+      "properties": {
+        "Q01": {
+          "type": "object",
+          "required": [
+            "answer",
+            "status",
+            "locators"
+          ],
+          "properties": {
+            "answer": {
+              "type": "string",
+              "minLength": 1
+            },
+            "status": {
+              "enum": [
+                "assessed",
+                "not_reported",
+                "not_applicable",
+                "not_identifiable",
+                "not_accessible",
+                "pending",
+                "partial"
+              ]
+            },
+            "locators": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "Q02": {
+          "type": "object",
+          "required": [
+            "answer",
+            "status",
+            "locators"
+          ],
+          "properties": {
+            "answer": {
+              "type": "string",
+              "minLength": 1
+            },
+            "status": {
+              "enum": [
+                "assessed",
+                "not_reported",
+                "not_applicable",
+                "not_identifiable",
+                "not_accessible",
+                "pending",
+                "partial"
+              ]
+            },
+            "locators": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "Q03": {
+          "type": "object",
+          "required": [
+            "answer",
+            "status",
+            "locators"
+          ],
+          "properties": {
+            "answer": {
+              "type": "string",
+              "minLength": 1
+            },
+            "status": {
+              "enum": [
+                "assessed",
+                "not_reported",
+                "not_applicable",
+                "not_identifiable",
+                "not_accessible",
+                "pending",
+                "partial"
+              ]
+            },
+            "locators": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "Q04": {
+          "type": "object",
+          "required": [
+            "answer",
+            "status",
+            "locators"
+          ],
+          "properties": {
+            "answer": {
+              "type": "string",
+              "minLength": 1
+            },
+            "status": {
+              "enum": [
+                "assessed",
+                "not_reported",
+                "not_applicable",
+                "not_identifiable",
+                "not_accessible",
+                "pending",
+                "partial"
+              ]
+            },
+            "locators": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "Q05": {
+          "type": "object",
+          "required": [
+            "answer",
+            "status",
+            "locators"
+          ],
+          "properties": {
+            "answer": {
+              "type": "string",
+              "minLength": 1
+            },
+            "status": {
+              "enum": [
+                "assessed",
+                "not_reported",
+                "not_applicable",
+                "not_identifiable",
+                "not_accessible",
+                "pending",
+                "partial"
+              ]
+            },
+            "locators": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "Q06": {
+          "type": "object",
+          "required": [
+            "answer",
+            "status",
+            "locators"
+          ],
+          "properties": {
+            "answer": {
+              "type": "string",
+              "minLength": 1
+            },
+            "status": {
+              "enum": [
+                "assessed",
+                "not_reported",
+                "not_applicable",
+                "not_identifiable",
+                "not_accessible",
+                "pending",
+                "partial"
+              ]
+            },
+            "locators": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "Q07": {
+          "type": "object",
+          "required": [
+            "answer",
+            "status",
+            "locators"
+          ],
+          "properties": {
+            "answer": {
+              "type": "string",
+              "minLength": 1
+            },
+            "status": {
+              "enum": [
+                "assessed",
+                "not_reported",
+                "not_applicable",
+                "not_identifiable",
+                "not_accessible",
+                "pending",
+                "partial"
+              ]
+            },
+            "locators": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "Q08": {
+          "type": "object",
+          "required": [
+            "answer",
+            "status",
+            "locators"
+          ],
+          "properties": {
+            "answer": {
+              "type": "string",
+              "minLength": 1
+            },
+            "status": {
+              "enum": [
+                "assessed",
+                "not_reported",
+                "not_applicable",
+                "not_identifiable",
+                "not_accessible",
+                "pending",
+                "partial"
+              ]
+            },
+            "locators": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "Q09": {
+          "type": "object",
+          "required": [
+            "answer",
+            "status",
+            "locators"
+          ],
+          "properties": {
+            "answer": {
+              "type": "string",
+              "minLength": 1
+            },
+            "status": {
+              "enum": [
+                "assessed",
+                "not_reported",
+                "not_applicable",
+                "not_identifiable",
+                "not_accessible",
+                "pending",
+                "partial"
+              ]
+            },
+            "locators": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "Q10": {
+          "type": "object",
+          "required": [
+            "answer",
+            "status",
+            "locators"
+          ],
+          "properties": {
+            "answer": {
+              "type": "string",
+              "minLength": 1
+            },
+            "status": {
+              "enum": [
+                "assessed",
+                "not_reported",
+                "not_applicable",
+                "not_identifiable",
+                "not_accessible",
+                "pending",
+                "partial"
+              ]
+            },
+            "locators": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "Q11": {
+          "type": "object",
+          "required": [
+            "answer",
+            "status",
+            "locators"
+          ],
+          "properties": {
+            "answer": {
+              "type": "string",
+              "minLength": 1
+            },
+            "status": {
+              "enum": [
+                "assessed",
+                "not_reported",
+                "not_applicable",
+                "not_identifiable",
+                "not_accessible",
+                "pending",
+                "partial"
+              ]
+            },
+            "locators": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "Q12": {
+          "type": "object",
+          "required": [
+            "answer",
+            "status",
+            "locators"
+          ],
+          "properties": {
+            "answer": {
+              "type": "string",
+              "minLength": 1
+            },
+            "status": {
+              "enum": [
+                "assessed",
+                "not_reported",
+                "not_applicable",
+                "not_identifiable",
+                "not_accessible",
+                "pending",
+                "partial"
+              ]
+            },
+            "locators": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "Q13": {
+          "type": "object",
+          "required": [
+            "answer",
+            "status",
+            "locators"
+          ],
+          "properties": {
+            "answer": {
+              "type": "string",
+              "minLength": 1
+            },
+            "status": {
+              "enum": [
+                "assessed",
+                "not_reported",
+                "not_applicable",
+                "not_identifiable",
+                "not_accessible",
+                "pending",
+                "partial"
+              ]
+            },
+            "locators": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "Q14": {
+          "type": "object",
+          "required": [
+            "answer",
+            "status",
+            "locators"
+          ],
+          "properties": {
+            "answer": {
+              "type": "string",
+              "minLength": 1
+            },
+            "status": {
+              "enum": [
+                "assessed",
+                "not_reported",
+                "not_applicable",
+                "not_identifiable",
+                "not_accessible",
+                "pending",
+                "partial"
+              ]
+            },
+            "locators": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "Q15": {
+          "type": "object",
+          "required": [
+            "answer",
+            "status",
+            "locators"
+          ],
+          "properties": {
+            "answer": {
+              "type": "string",
+              "minLength": 1
+            },
+            "status": {
+              "enum": [
+                "assessed",
+                "not_reported",
+                "not_applicable",
+                "not_identifiable",
+                "not_accessible",
+                "pending",
+                "partial"
+              ]
+            },
+            "locators": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "appraisal": {
+      "type": "string",
+      "minLength": 20
+    },
+    "completion": {
+      "enum": [
+        "assessed_available_packet",
+        "partial",
+        "integrity_disposition"
+      ]
+    },
+    "humanApproval": {
+      "const": "pending"
+    },
+    "inputs": {
+      "type": "array",
+      "minItems": 67,
+      "maxItems": 67,
+      "items": {
+        "type": "object",
+        "required": [
+          "questionId",
+          "field",
+          "value",
+          "status",
+          "locators"
+        ],
+        "properties": {
+          "questionId": {
+            "enum": [
+              "Q01",
+              "Q02",
+              "Q03",
+              "Q04",
+              "Q05",
+              "Q06",
+              "Q07",
+              "Q08",
+              "Q09",
+              "Q10",
+              "Q11",
+              "Q12",
+              "Q13",
+              "Q14",
+              "Q15"
+            ]
+          },
+          "field": {
+            "enum": [
+              "objective",
+              "prespecification",
+              "claim_outcome",
+              "population_species",
+              "eligibility_setting",
+              "recruited_treated_analyzed_counts",
+              "identity_formulation",
+              "route_exposure_schedule",
+              "cointerventions",
+              "followup",
+              "comparator",
+              "allocation",
+              "randomization",
+              "blinding",
+              "timing",
+              "outcome_hierarchy",
+              "instrument",
+              "timepoint",
+              "endpoint_class",
+              "meaningful_change_threshold",
+              "arm_results",
+              "numerators_denominators",
+              "estimate_units",
+              "contrast",
+              "uncertainty",
+              "attrition",
+              "missingness",
+              "adherence",
+              "exclusions",
+              "analysis_population",
+              "experimental_unit",
+              "harms_ascertainment",
+              "exposure_denominator",
+              "events_severity",
+              "withdrawals",
+              "observation_time",
+              "bias_domains",
+              "confounding",
+              "selective_reporting",
+              "multiplicity",
+              "precision",
+              "inconsistencies",
+              "population_indication_match",
+              "formulation_route_exposure_match",
+              "endpoint_match",
+              "limits",
+              "study_family",
+              "related_reports",
+              "overlap",
+              "replication_search_scope",
+              "authors",
+              "setting",
+              "funding",
+              "supplied_products",
+              "conflicts",
+              "source_version",
+              "access",
+              "supplements",
+              "registration",
+              "corrections_retractions",
+              "check_date",
+              "claim_links",
+              "support_relation",
+              "observed_vs_author_vs_editorial",
+              "bounded_takeaway",
+              "unknowns",
+              "evidence_needed_to_change_conclusion"
+            ]
+          },
+          "value": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "enum": [
+              "assessed",
+              "not_reported",
+              "not_applicable",
+              "not_accessible",
+              "not_checked"
+            ]
+          },
+          "locators": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "title": {
+      "type": "string"
+    },
+    "unresolvedInputs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "independentVerification": {
+      "const": "pending"
+    },
+    "release": {
+      "const": "private_candidate"
+    },
+    "plan": {
+      "const": "plan.json"
+    }
+  },
+  "additionalProperties": false
+}

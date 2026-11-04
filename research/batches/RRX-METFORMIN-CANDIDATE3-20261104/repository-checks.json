@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "baseCommit": "1e0ea1cfab1706e007ff92da473ddb138dd8738d",
+  "checks": [
+    {
+      "command": "node scripts/check-guide-renderer.mjs --python <bundled-python>",
+      "result": "PASS",
+      "details": "Pinned vendor unchanged; deterministic3-variant fixture PDFs; private-boundary assertions; actual tagging/fonts; missing structure, marking, language, invalid parent mapping and unembedded-font controls rejected."
+    },
+    {
+      "command": "node scripts/check-governance.mjs",
+      "result": "PASS",
+      "details": "236 preserved rule/history/ingest files."
+    },
+    {
+      "command": "node scripts/check-topic-guides.mjs",
+      "result": "PASS",
+      "details": "64 topic mappings, article SSR, CTAs and purchase gates; no live availability inferred."
+    },
+    {
+      "command": "node scripts/check-guide-commerce.mjs",
+      "result": "PASS",
+      "details": "SQLite and signed-webhook fixtures; no Stripe transaction."
+    },
+    {
+      "command": "node node_modules/typescript/bin/tsc --noEmit",
+      "result": "PASS"
+    },
+    {
+      "command": "node scripts/run-framework.mjs build",
+      "result": "PASS",
+      "details": "Public evidence, marketing and asset checks; production Vite build. Nonblocking existing large-chunk advisory."
+    },
+    {
+      "command": "node scripts/guide-portfolio.mjs --write --check",
+      "result": "PASS",
+      "details": "64 mapped topics;1 candidate;0 releases."
+    },
+    {
+      "command": "Ajv2020 validation of review and new study-assessment schemas; exact ordered Q01\u2013Q15/67-field map",
+      "result": "PASS"
+    },
+    {
+      "command": "python seal_packet.py",
+      "result": "PASS",
+      "receipt": "portability-check.json"
+    }
+  ],
+  "limitations": [
+    "Model checks are not independent human approvals.",
+    "No deployment or sale activated.",
+    "PDF/UA and independent screen-reader acceptance remain pending."
+  ]
+}

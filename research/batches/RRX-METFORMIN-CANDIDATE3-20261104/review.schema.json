@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "required": [
+    "issueDispositions",
+    "sourceChecks",
+    "artifactChecks",
+    "remainingApprovals"
+  ],
+  "properties": {
+    "issueDispositions": {
+      "type": "array"
+    },
+    "sourceChecks": {
+      "type": "array"
+    },
+    "artifactChecks": {
+      "type": "object"
+    },
+    "remainingApprovals": {
+      "type": "array"
+    }
+  }
+}
