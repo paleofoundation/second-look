@@ -43,11 +43,23 @@
     "screenshots": [
       "parent workspace artifacts/research-feed-restoration-20261104/preview-desktop.png",
       "parent workspace artifacts/research-feed-restoration-20261104/preview-mobile.png"
-    ]
+    ],
+    "conditionBrowser": "PASS: Long COVID shows six restored feed cards and FAQs before Research Feed.",
+    "browserConsole": "Existing Vinext RSC prefetch setup TypeError reproduced on both unchanged public production and restored local preview. Tested card expansion and ordinary source navigation function; no framework change included."
   },
   "publication": {
-    "status": "pending",
+    "status": "merged; production deployment queued awaiting a GitHub-hosted runner",
     "destination": "GitHub paleofoundation/second-look main to existing Cloudflare Worker remaprx",
-    "url": "https://remaprx.com/drugs/metformin#research-feed"
+    "url": "https://remaprx.com/drugs/metformin#research-feed",
+    "pullRequest": 33,
+    "mergedCommit": "4e86104011dccc5d973a0f8447e30f46fa8a5c2f",
+    "workflowRun": 41878707750,
+    "workflowJob": 126745227544,
+    "workflowURL": "https://github.com/paleofoundation/second-look/actions/runs/41878707750",
+    "checkedAtUTC": "2026-11-04T17:39:31Z",
+    "runner": null,
+    "stepsStarted": 0,
+    "liveVerification": "Pending deployment. Do not report the restored design as live yet.",
+    "legacyPR20": "Closed as superseded by merged PR33; historical receipt preserved."
   }
 }
