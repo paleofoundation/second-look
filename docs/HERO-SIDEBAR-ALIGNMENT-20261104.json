@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-04",
+  "baseCommit": "6fa05d576940c343c204ccf868a817351b6b216a",
+  "requirement": "Hero dark sidebars match article sidebars below on desktop.",
+  "implementation": [
+    "Shared --article-columns for topic hero and article-reader-grid.",
+    "992\u20131199px uses 220px / flexible center / 260px for both grids.",
+    "Existing <=991px layouts retained."
+  ],
+  "prerequisites": [
+    "Move unchanged readiness rules into browser-safe lib/readiness.mjs; preserve Node CLI/input loader and re-exports.",
+    "Refresh 66 stale marketing hashes only; all products remain pending, all other catalogue fields identical.",
+    "SSR loader transpiles .mjs dependencies as CommonJS for the existing in-process test harness."
+  ],
+  "validation": {
+    "build": "PASS",
+    "governance": "PASS, 236 preserved files",
+    "typescript": "PASS",
+    "readinessAndIndexingTests": "PASS, 7 tests",
+    "articleNavigation": "PASS, 70 articles and authorized summary fixtures",
+    "readerBoundary": "PASS, 36 built payloads",
+    "responsiveIvermectin": {
+      "1614": "320px 974px 320px, both grids",
+      "1920": "320px 1280px 320px, both grids",
+      "1199": "220px 719px 260px, both grids",
+      "992": "220px 512px 260px, both grids",
+      "991": "existing stacked reading layout; no horizontal overflow",
+      "768": "existing stacked reading layout; no horizontal overflow",
+      "390": "single-column hero; no horizontal overflow"
+    },
+    "conditionPage": "Acute COVID-19: both grids 320px 974px 320px at 1614px",
+    "cataloguePreservation": "PASS, only marketingSha256 changes",
+    "heroArtCheck": "Existing failure: /drugs/methylene-blue lacks required topic/glossary artwork; no artwork or page records changed.",
+    "githubChecks": "PASS: governance run 41849840047 and evidence gate run 41849840050",
+    "readinessPreservation": "PASS: extracted pure rules are byte-identical after excluding CLI/file loader and type annotation."
+  },
+  "release": "Owner explicitly approved merge and production deployment. Reconciled current main b905869; publication in progress.",
+  "pullRequest": "https://github.com/paleofoundation/second-look/pull/30"
+}
