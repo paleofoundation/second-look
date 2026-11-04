@@ -6,6 +6,7 @@ permissions:
   contents: write
   pull-requests: write
   actions: write
+  checks: read
 concurrency:
   group: evidence-gate-${{ github.event.pull_request.number }}
   cancel-in-progress: true
@@ -19,6 +20,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Metformin-grade readiness bar
+        run: node tests/readiness.test.mjs
+      - name: Search indexing robots and sitemap bar
+        run: node tests/search-indexing.test.mjs
       - name: Governance check
         run: node scripts/check-governance.mjs  # also runs the citation gate
       - name: Citation gate (DOI on file, Crossref-valid, not retracted)
@@ -37,6 +42,12 @@ jobs:
       GH_TOKEN: ${{ github.token }}
       PR: ${{ github.event.pull_request.number }}
     steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Require the governance check to pass
+        run: node scripts/require-governance-check.mjs
       - name: Merge
         run: gh pr merge "$PR" --repo "$GITHUB_REPOSITORY" --squash --delete-branch
       - name: Trigger deploy (merges by GITHUB_TOKEN do not fire push workflows)

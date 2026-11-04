@@ -1,5 +1,15 @@
 # Second Look rule changelog
 
+## 2026-11-04: readiness fixture follows the cited methylene blue mechanisms, and auto-merge waits for governance
+
+Source: investigation of pull request 42, merged 2026-11-04 20:15 UTC. Scope: the metformin-grade readiness fixture and evidence-gate auto-merge. The methylene blue fill added three cited mechanism subsections. `tests/readiness.test.mjs` still required `/drugs/methylene-blue` to fail `mechanism-subsections`, so Rules and research continuity failed on main after the merge. Supersedes that stale failure expectation only. The page stays below the indexing bar.
+
+Contract: `docs/READY.md`, `docs/PROJECT-RULES.md`, and `AGENTS.md`. The page has 1,457 substantive words, 8 distinct valid DOIs, three cited mechanism subsections, and still fails evidence groups, dosing length, contraindications, interactions, the drug-specific Quality section, and study summaries. Those gaps are left open. The deposited sources on the page do not support inventing the missing outcomes, doses, or papers. The readiness fixture now accepts the three cited subsections and still requires the other failures. Melphalan still fails every check, including mechanism subsections.
+
+Evidence-gate auto-merge did not require the governance status check. Its gate job ran `scripts/check-governance.mjs` and the citation gate, then merged fill branches. On pull request 42 the governance check failed and auto-merge still succeeded. The gate job now also runs the readiness and search-indexing tests. Auto-merge waits until the latest `governance` check succeeds, and it stops if that check fails, is cancelled, or does not appear in time.
+
+Implementation: `tests/readiness.test.mjs`, `tests/require-governance-check.test.mjs`, `scripts/require-governance-check.mjs`, `.github/workflows/evidence-gate.yml`, and `.github/workflows/governance.yml`. Verification is recorded with this change. This does not make methylene blue indexable and does not claim scientific approval. Remaining: sourced fills still have to close the open methylene blue and melphalan readiness gaps, including the 30-DOI deepening target.
+
 ## 2026-11-04 — Footer repair and standing authorization to publish routine fixes
 
 Source: owner's “Fix the footer” screenshot request, then “ALWAYS update when I request fixes like these.” A routine requested website fix includes implementing, verifying, synchronizing the bounded source and publishing to the existing live site without asking again. Supersedes stopping after a local fix; existing scientific, research, protected-content, billing and access rules remain within their current scope. Contracts: `AGENTS.md`, `PROJECT-RULES.md` and `DESIGN-SYSTEM.md`.
