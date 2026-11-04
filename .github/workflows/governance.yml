@@ -14,3 +14,5 @@ jobs:
           node-version: '22'
       - name: Verify rule package, frozen baseline and ingestion handoff
         run: node scripts/check-governance.mjs
+      - name: Search indexing robots and sitemap bar
+        run: node tests/search-indexing.test.mjs

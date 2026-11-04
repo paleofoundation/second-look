@@ -1,5 +1,11 @@
 # Second Look rule changelog
 
+## 2026-11-04: index remaprx.com above a page quality bar
+
+Source: owner instruction to make the public RemapRx hosts crawlable while keeping thin pages out of search. Scope: robots, sitemap, page metadata, and the scheduled fill handoff. Supersedes the sitewide `Disallow: /` and `noindex, nofollow` hold on `remaprx.com` and `www.remaprx.com` only. Other hosts stay disallowed.
+
+Contract: `docs/PROJECT-RULES.md`, `docs/COLLABORATOR-HANDOFF.md`, `docs/DESIGN-SYSTEM.md`, and `AGENTS.md`. Implementation: `lib/search-indexing.mjs` decides the bar, and the Worker robots and sitemap routes use it. A LIVE drug or condition page needs full Overview, Benefits or Options, Safety, and Evidence sections, at least 8 cited sources, and at least 8 non-quarantined DOI sources. Metformin qualifies. Thinner pages use `noindex,follow` until a later fill clears the bar. Qualifying pages add canonical URLs, unique titles and descriptions, and MedicalWebPage JSON-LD. The "not medical advice" wording is unchanged. Verification: `node tests/search-indexing.test.mjs` and `node scripts/check-governance.mjs`. This does not claim Search Console submission, observed indexing, or scientific approval.
+
 ## 2026-11-04 — activate scheduled-fill tool limits and hosted workflows
 
 Source: owner instruction to open one pull request that passes `DEPOSITS_READ_TOKEN` into the scheduled Claude fill action, enables full action output, sets the allowed and disallowed tool lists, and moves the staged auto-merge and Cloudflare deploy workflows into `.github/workflows/`. Scope: GitHub Actions and the citation-gate handoff. Supersedes leaving `evidence-gate.yml` and `deploy-cloudflare.yml` in `ci/pending-workflows/`. Contracts: `AGENTS.md` and `ci/pending-workflows/README.md`.

@@ -22,4 +22,6 @@ The citation gate replaces per-page human sign-off for page PRs. A page PR (labe
 
 The scheduled fill action receives `DEPOSITS_READ_TOKEN` when that secret exists, shows full action output, and limits tools to the allowlist in `.github/workflows/claude-scheduled-fill.yml`. `Bash(gh secret:*)` and `Bash(gh pr merge:*)` stay disallowed. A missing deposits token does not stop a run; the in-repo deposit inbox remains the fallback.
 
+Public search indexing follows the same gate. `remaprx.com` and `www.remaprx.com` allow crawling. A LIVE drug or condition page is added to `https://remaprx.com/sitemap.xml` and rendered without `noindex` only when `lib/search-indexing.mjs` says it has full sections and enough non-quarantined DOI sources. Pages below that bar use `noindex,follow`. A fill does not edit robots or the sitemap; the next build picks up a page that newly clears the bar. Other hosts stay `Disallow: /`.
+
 Run `node scripts/check-governance.mjs` for rule changes and the relevant checks in `docs/COLLABORATOR-HANDOFF.md` for code/content changes. Check in the requirements, source mappings, validation results and unresolved work needed by the next researcher.
