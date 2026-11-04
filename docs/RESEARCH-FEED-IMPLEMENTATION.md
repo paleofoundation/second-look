@@ -34,3 +34,8 @@ Screenshots: [desktop feed](verification/research-feed/feed-desktop.png), [expan
 This is a presentation implementation over the existing source records. No new acquisition, extraction, research appraisal, source merge or evidence grading was performed. Scientific data, private reviews, review envelopes and approval/hash fields remain unchanged. Missing facts and unreleased appraisals remain explicit. Full-text completeness and numerical verification continue through the existing research workflow.
 
 Published as Sites version 54 from source `66a0e00955febffb6879fec9a21b1ab0a5cbebd1`. Deployment `appgdep_6ae9e09e72c481919c21dc702f14c094` succeeded on November 3, 2026 at 13:25:11 UTC. Live verification confirmed Metformin and Long COVID feeds, the 171-card research library and the dedicated COVID-OUT page. [Exact release receipt](RESEARCH-FEED-DEPLOYMENT.json). Existing public audience, indexing policy, scientific gates and free-authenticated review access are retained. The pinned One Match Rule package and separate reference projects were not changed.
+
+
+## Current production restoration - November 4, 2026
+
+The Sites release above is historical. Its GitHub draft PR #20 had not merged when GitHub-to-Cloudflare became the production deployment path. Owner-requested restoration PR #33 reapplies the exact ten presentation files to current main while preserving newer footer/sidebar/indexing behavior. It is now deployed and live browser verified; see [the exact current release record](RESEARCH-FEED-RESTORATION-20261104.json) and [live screenshot](verification/research-feed-restoration/live-desktop.png). The historical Sites deployment receipt is preserved.
