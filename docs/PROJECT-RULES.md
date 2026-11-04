@@ -1,5 +1,9 @@
 # Second Look project rules
 
+## Routine fixes include live publication — November 4, 2026
+
+Owner instruction: “ALWAYS update when I request fixes like these.” A request to fix the existing website, including layout, styling, navigation presentation or an ordinary bug, authorizes implementing and validating the bounded correction, synchronizing its source to the existing production repository and publishing it to the current live site. Do not stop after local changes or ask for publishing approval again for that requested fix. Preserve the current audience, unrelated work and existing scientific, research, protected-content, billing and access gates; this standing instruction does not approve unrelated changes or waive required verification. Record exact publication results with the work.
+
 ## October 28 ready-work merge, publication and resume
 
 The owner's direct October 28 instruction authorizes merging technically ready work, deploying/publishing its checked build and beginning the next research work. For this release, preserve authoritative current main plus the latest approved version49 identity; see `RELEASE-20261028.md`. This supersedes the earlier operational draft-only/usage-pause/publication hold within this bounded scope. It does not authorize new scientific grades, clinical claims, public raw files, protected-content changes, access/indexing changes or acceptance of unfinished research. CAL07 and later packets still require their prospective plans and independent exact source/dependency audits before delivery. Historical sealed pause/checkpoint records remain unchanged.

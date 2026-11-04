@@ -1,5 +1,9 @@
 # RemapRx visual design system
 
+## Footer layout repair — November 4, 2026
+
+Source: owner's “Fix the footer” request and Screenshot 2026-11-04 at 4.32.24 PM.png. Repair the shared footer's cramped brand/legal copy and unused fifth column. Keep the existing RemapRx mark, blue background, copy and link destinations. With no newsletter, use one brand block plus the three existing navigation groups across the available desktop width; stack the brand above responsive menu columns on smaller screens. Legal links wrap as whole labels with consistent gaps and no orphan separators. Preserve visible yellow keyboard focus and comfortable link targets. This supersedes the inherited five-column allocation and shrinking legal-link row for this layout. Implementation choices are responsive CSS; no evidence, access or release-policy change is included. Verification and publication are recorded in `FOOTER-FIX-20261104.json`.
+
 Adopted 12 October 2026 from the owner's palette05.png, ten supplied health-topic SVGs, and Examine brain-hero screenshot. This is the RemapRx implementation contract. The illustration conventions are reusable for PepsAnon; this change does not migrate or publish PepsAnon. Existing scientific content, evidence semantics, account access and release gates remain in force.
 
 ## Color roles

@@ -30,7 +30,7 @@ function load(file) {
   const compiledModule = {exports: {}};
   cache.set(file, compiledModule);
   const source = ts.transpileModule(fs.readFileSync(file, 'utf8'), {
-    fileName: file,
+    fileName: file.endsWith('.mjs') ? file.slice(0, -4) + '.js' : file,
     compilerOptions: {module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022,
       jsx: ts.JsxEmit.ReactJSX, esModuleInterop: true},
   }).outputText;

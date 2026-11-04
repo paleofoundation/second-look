@@ -6,7 +6,7 @@ import suitability from '@/data/treatment-suitability.json';
 import readerEvidence from '@/data/public-reader-evidence.json';
 import outcomeSummariesFile from '@/data/outcome-summaries.json';
 import drugStatus from '@/data/drug-status-table.json';
-import {readinessContext} from '../scripts/readiness.mjs';
+import {readinessContext} from './readiness.mjs';
 import {
   INDEX_ROBOTS,
   NOINDEX_ROBOTS,
