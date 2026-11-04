@@ -1,5 +1,13 @@
 # Second Look rule changelog
 
+## 2026-11-04: replace the thin search bar with a metformin-grade bar
+
+Source: Karen Pendergrass, 4 November 2026. Methylene blue is too thin for the sitemap ready line from the indexing change earlier the same day. Scope: the indexing bar, the scheduled fill, and the readiness contract. Supersedes the 160-character section rule and the minimum of 8 non-quarantined DOIs. Host crawling rules stay as adopted earlier today.
+
+Contract: `docs/READY.md`, `docs/PROJECT-RULES.md`, `docs/COLLABORATOR-HANDOFF.md`, `docs/DESIGN-SYSTEM.md`, and `AGENTS.md`. Implementation: `scripts/readiness.mjs` is the check. Sitemap selection and index/noindex metadata use its pass result. Metformin passes. Methylene blue and melphalan fail. The indexing floor is 15 distinct valid DOIs because a raw count of about 44 DOI strings on the metformin page repeated each identifier; the distinct counts are 18, 8, and 12. Thirty distinct valid DOIs remains the deepening target printed in the gap report. The scheduled fill deepens methylene blue, then melphalan, one section at a time, runs the readiness script, and puts the gap report in the pull request body.
+
+Verification: `node tests/readiness.test.mjs`, `node tests/search-indexing.test.mjs`, and `node scripts/check-governance.mjs`. This pull request is not merged. This does not claim Search Console submission, observed indexing, or scientific approval. Remaining: fills still have to bring methylene blue and melphalan up to the bar, including the 30-DOI deepening target.
+
 ## 2026-11-04: index remaprx.com above a page quality bar
 
 Source: owner instruction to make the public RemapRx hosts crawlable while keeping thin pages out of search. Scope: robots, sitemap, page metadata, and the scheduled fill handoff. Supersedes the sitewide `Disallow: /` and `noindex, nofollow` hold on `remaprx.com` and `www.remaprx.com` only. Other hosts stay disallowed.

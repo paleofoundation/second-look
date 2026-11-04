@@ -106,7 +106,8 @@ These commands were verified to exist in the inspected checkout. Their listing i
 | `node scripts/check-article-navigation.mjs` | Matching icon navigation/body order, Research Feed summaries, dated page history, protected-summary rendering fixtures and citation stability |
 | `node scripts/check-evidence-section.mjs` | Evidence section composition and shared outcome/table rendering |
 | `node scripts/check-evidence-grading.mjs` | Compiled grading projection and rejection of invalid/stale assessments |
-| `node tests/search-indexing.test.mjs` | Production-host robots.txt and the sitemap quality bar |
+| `node tests/readiness.test.mjs` | Metformin-grade bar: words, DOIs, mechanism, evidence, dosing, safety, study summaries, and Quality |
+| `node tests/search-indexing.test.mjs` | Production-host robots.txt and sitemap membership from that bar |
 | `node scripts/check-wiki-links.mjs` | Wiki links, shared registry, related reading and rendered references |
 | `node scripts/verify-reader-boundary.mjs --source-only` | Public data projections and source privacy constraints |
 | `node scripts/update-guide-marketing-hashes.mjs --check` | Catalogue marketing hash freshness |
@@ -132,7 +133,7 @@ For affected reading interactions, check desktop and mobile layouts, navigation,
 | Research completeness | Acquisition ledgers retain missing sources, unresolved identities/corrections and pending review. Do not replace these states with a general claim of completion. |
 | Review access | Draft review bodies and metadata exist; preserve genuine release and role/intake conditions. A source record is not independent review approval. |
 | Commerce | Guide products and proposed prices are present, but releases are pending and sales/membership offers are disabled. Genuine fulfillment and required approvals remain separate work. |
-| Search indexing | `remaprx.com` and `www.remaprx.com` allow crawling and advertise `https://remaprx.com/sitemap.xml`. Other hosts stay `Disallow: /`. The sitemap and indexable metadata include only LIVE drug or condition pages that clear the bar in `lib/search-indexing.mjs`. Other public pages use `noindex,follow`. A live sitemap is not proof of Search Console submission or observed indexing. |
+| Search indexing | `remaprx.com` and `www.remaprx.com` allow crawling and advertise `https://remaprx.com/sitemap.xml`. Other hosts stay `Disallow: /`. The sitemap and indexable metadata include only LIVE drug or condition pages that pass `scripts/readiness.mjs` (`docs/READY.md`). Other public pages use `noindex,follow`. A live sitemap is not proof of Search Console submission or observed indexing. |
 | Raw source archive | Downloaded full texts and broader historical research materials are only partly represented by manifests/extractions in this repository. |
 
 Do not commit credentials, `.env*`, local databases, browser sessions, caches or downloaded full texts merely to make another checkout match this machine. Share application source, rules, provenance ledgers and reviewable changes; arrange external service access and any missing source archive with the maintainer as needed.

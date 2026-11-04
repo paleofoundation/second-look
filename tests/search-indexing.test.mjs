@@ -1,11 +1,9 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
+import {loadReadinessInputs} from '../scripts/readiness.mjs';
 import {
   INDEX_ROBOTS,
-  MIN_CITED_SOURCES,
-  MIN_DOI_SOURCES,
-  MIN_SECTION_CHARS,
   NOINDEX_ROBOTS,
   SITEMAP_PAGE_SIZE,
   canonicalUrl,
@@ -22,29 +20,9 @@ import {
 const content = JSON.parse(readFileSync(new URL('../data/public-content.json', import.meta.url), 'utf8'));
 const created = JSON.parse(readFileSync(new URL('../data/page-created-dates.json', import.meta.url), 'utf8')).dates;
 const updates = JSON.parse(readFileSync(new URL('../data/article-updates.json', import.meta.url), 'utf8')).entries;
-const sourcesById = new Map(content.sources.map((source) => [source.id, source]));
-const entries = indexableSitemapEntries(content.guides, content.sources, created, updates);
-
-function source(id, doi = `10.1000/${id}`) {
-  return {id, title: `Study ${id}`, doi, year: 2024, url: `https://doi.org/${doi}`};
-}
-
-function fullGuide(overrides = {}) {
-  const ids = Array.from({length: MIN_DOI_SOURCES}, (_, index) => `S${index}`);
-  const paragraph = 'A'.repeat(MIN_SECTION_CHARS);
-  const section = (id) => ({id, paragraph, sources: [ids[0]]});
-  return {
-    id: 'fixture',
-    slug: '/drugs/fixture',
-    title: 'Fixture',
-    type: 'Drug',
-    description: 'A fixture drug page with enough cited research to clear the index bar.',
-    sourceIds: ids,
-    faqs: [],
-    sections: ['overview', 'benefits', 'safety', 'evidence'].map(section),
-    ...overrides,
-  };
-}
+const loaded = loadReadinessInputs();
+const sourcesById = loaded.context.sourcesById;
+const entries = indexableSitemapEntries(content.guides, content.sources, created, updates, loaded.context);
 
 test('robots.txt allows only the public remaprx hosts', () => {
   for (const host of ['remaprx.com', 'www.remaprx.com', 'REMAPRX.com', 'remaprx.com:443', 'www.remaprx.com:8443']) {
@@ -60,23 +38,26 @@ test('robots.txt allows only the public remaprx hosts', () => {
   }
 });
 
-test('sitemap includes only pages that clear the quality bar', () => {
+test('sitemap includes only pages that clear the metformin-grade bar', () => {
   const metformin = content.guides.find((guide) => guide.slug === '/drugs/metformin');
-  const decision = isIndexableGuide(metformin, sourcesById, {live: true});
+  const decision = isIndexableGuide(metformin, sourcesById, {live: true, context: loaded.context});
   assert.equal(decision.indexable, true, decision.reasons.join(','));
-  assert.ok(decision.cited >= MIN_CITED_SOURCES);
-  assert.ok(decision.dois >= MIN_DOI_SOURCES);
-  assert.ok(entries.some((entry) => entry.path === '/drugs/metformin'));
+  assert.deepEqual(entries.map((entry) => entry.path), ['/drugs/metformin']);
+
+  for (const slug of ['/drugs/methylene-blue', '/drugs/melphalan']) {
+    const guide = content.guides.find((item) => item.slug === slug);
+    const thin = isIndexableGuide(guide, sourcesById, {live: true, context: loaded.context});
+    assert.equal(thin.indexable, false, slug);
+    assert.equal(entries.some((entry) => entry.path === slug), false);
+  }
 
   for (const entry of entries) {
     assert.match(entry.loc, /^https:\/\/remaprx\.com\/(?:drugs|conditions)\//);
     assert.equal(entry.loc, canonicalUrl(entry.path));
     assert.match(entry.lastmod, /^\d{4}-\d{2}-\d{2}$/);
     const guide = content.guides.find((item) => item.slug === entry.path);
-    assert.equal(isIndexableGuide(guide, sourcesById, {live: true}).indexable, true);
-    assert.ok(guide.type === 'Drug' || guide.type === 'Condition');
+    assert.equal(isIndexableGuide(guide, sourcesById, {live: true, context: loaded.context}).indexable, true);
   }
-  assert.ok(entries.length < content.guides.length, 'thin guides stay out of the sitemap');
   assert.equal(entries.some((entry) => entry.path.startsWith('/research/') || entry.path.startsWith('/glossary/') || entry.path.startsWith('/account')), false);
 
   const metforminEntry = entries.find((entry) => entry.path === '/drugs/metformin');
@@ -86,36 +67,16 @@ test('sitemap includes only pages that clear the quality bar', () => {
   const document = sitemapDocument(entries);
   assert.equal(document.kind, 'urlset');
   assert.match(document.xml, /<loc>https:\/\/remaprx\.com\/drugs\/metformin<\/loc>/);
+  assert.doesNotMatch(document.xml, /methylene-blue|melphalan/);
   assert.match(document.xml, /<lastmod>\d{4}-\d{2}-\d{2}<\/lastmod>/);
   assert.doesNotMatch(document.xml, /<(?:script|html)/i);
-  console.log(`sitemap qualifying pages: ${entries.length}`);
-});
 
-test('quality bar rejects thin, incomplete, unresolved, and non-live pages', () => {
-  const sources = new Map(Array.from({length: 8}, (_, index) => [`S${index}`, source(`S${index}`)]));
-  assert.equal(isIndexableGuide(fullGuide(), sources, {live: true}).indexable, true);
-
-  const shortSafety = fullGuide();
-  shortSafety.sections = shortSafety.sections.map((section) => section.id === 'safety' ? {...section, paragraph: 'Too short.'} : section);
-  assert.ok(isIndexableGuide(shortSafety, sources, {live: true}).reasons.includes('section:safety'));
-
-  const seven = fullGuide({sourceIds: ['S0', 'S1', 'S2', 'S3', 'S4', 'S5', 'S6']});
-  assert.ok(isIndexableGuide(seven, sources, {live: true}).reasons.includes('doi-count'));
-
-  const missing = fullGuide({sourceIds: [...fullGuide().sourceIds, 'missing-source']});
-  assert.ok(isIndexableGuide(missing, sources, {live: true}).reasons.includes('unresolved-source'));
-
-  assert.ok(isIndexableGuide(fullGuide(), sources, {live: false}).reasons.includes('not-live'));
-
-  const blocked = new Map(sources);
-  for (let index = 0; index < 3; index += 1) blocked.set(`S${index}`, {...source(`S${index}`), status: 'Quarantined'});
-  assert.ok(isIndexableGuide(fullGuide(), blocked, {live: true}).reasons.includes('doi-count'));
+  const undated = indexableSitemapEntries([metformin], content.sources, {}, [], loaded.context);
+  assert.match(undated[0].lastmod, /^\d{4}-01-01$/);
 
   const glossary = {id: 'term', slug: '/glossary/example', type: 'Glossary', description: 'A glossary page is not a drug or condition guide.', sections: [], sourceIds: []};
-  assert.ok(isIndexableGuide(glossary, sources, {live: true}).reasons.includes('type'));
-
-  const undated = indexableSitemapEntries([fullGuide()], [...sources.values()], {}, []);
-  assert.equal(undated[0].lastmod, '2024-01-01');
+  assert.ok(isIndexableGuide(glossary, sourcesById, {live: true, context: loaded.context}).reasons.includes('type'));
+  assert.ok(isIndexableGuide(metformin, sourcesById, {live: false, context: loaded.context}).reasons.includes('not-live'));
 });
 
 test('sitemap index splits after 5000 URLs', () => {
@@ -143,10 +104,10 @@ test('qualifying pages describe research with MedicalWebPage citations', () => {
   assert.equal(page.url, 'https://remaprx.com/drugs/metformin');
   assert.match(page.usageInfo, /not medical advice/);
   assert.equal(page.usageInfo.includes('—') || page.usageInfo.includes('–'), false);
-  assert.ok(page.citation.length >= MIN_DOI_SOURCES);
+  assert.ok(page.citation.length >= 15);
   assert.ok(page.citation.every((item) => item['@type'] === 'ScholarlyArticle' && item.url.startsWith('https://doi.org/')));
   assert.ok(page.citation.some((item) => item.creativeWorkStatus === 'Retracted'));
-  assert.equal(citedSourceIds(guide).length >= MIN_CITED_SOURCES, true);
+  assert.ok(citedSourceIds(guide).length >= 15);
   assert.equal(INDEX_ROBOTS, 'index,follow');
   assert.equal(NOINDEX_ROBOTS, 'noindex,follow');
 });
