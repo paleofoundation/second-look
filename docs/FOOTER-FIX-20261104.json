@@ -491,7 +491,7 @@
     "localOnlyFixtureRemoved": true
   },
   "publication": {
-    "status": "authorized_pending_cloudflare_publication",
+    "status": "succeeded",
     "sitesOrigin": {
       "version": 55,
       "commit": "5fcde7c1eeef062be2a4efd764ed2c2834ad0c64",
@@ -499,7 +499,30 @@
       "status": "succeeded",
       "apexUpdated": false
     },
-    "authorization": "Owner: ALWAYS update when I request fixes like these."
+    "authorization": "Owner: ALWAYS update when I request fixes like these.",
+    "github": {
+      "pr": 31,
+      "url": "https://github.com/paleofoundation/second-look/pull/31",
+      "head": "aa009150d15de1065568ff10363e362b2f024572",
+      "mergeCommit": "0455977e013c3aa0482664ac130bb26ad00f7170",
+      "workflowRun": 41873688397,
+      "workflowUrl": "https://github.com/paleofoundation/second-look/actions/runs/41873688397",
+      "status": "success",
+      "cloudflareVersion": "9ee83250-2882-460e-b1fe-83317c261ced",
+      "worker": "remaprx",
+      "workerUrl": "https://remaprx.remaprx.workers.dev",
+      "deployedAt": "2026-11-04T17:04:39Z"
+    },
+    "verification": {
+      "apex": "https://remaprx.com",
+      "apexHttp": "200; new HTML references index.C2TElBaO.css",
+      "apexCss": "200 text/css; footer rules present",
+      "cssSha256": "15bc8610ff337f2e354570a975d8a70fb337e9e150e93162f82e00a25ac96263",
+      "workerBrowser": "PASS: brand plus three menus, desktop grid 345.602px/768.008px, legal links nowrap",
+      "screenshot": "artifacts/footer-fix-20261104/live-desktop.png",
+      "browserCacheLimit": "Existing in-app apex tab continued displaying the prior stylesheet; fresh public HTTP responses and the direct deployed Worker independently verify the new build. No browser cache/DNS/security settings were changed.",
+      "workflowLiveCheck": "Skipped because CUSTOM_DOMAIN repository variable is unset; independently verified apex HTTP and Worker browser instead."
+    }
   },
   "productionBase": "6fa05d576940c343c204ccf868a817351b6b216a",
   "productionPipeline": "GitHub main -> deploy-cloudflare.yml -> Cloudflare Worker remaprx",
@@ -514,6 +537,6 @@
     "guideCatalogueParity": "PASS: only the 66 stale marketing fingerprints changed; all product data and approval/release states preserved",
     "buildPrerequisites": "Reused the readiness pure-module split, indexing imports and .mjs SSR-loader support from PR30; sidebar layout changes excluded.",
     "responsiveFooter": "Same verified shared footer component/styles at 320,390,768,992,1280,1920 pixels",
-    "whitespace": "PASS"
+    "whitespace": "Tracked diff passed; final staged check also noted one harmless blank line at EOF in the reused pure readiness module."
   }
 }
