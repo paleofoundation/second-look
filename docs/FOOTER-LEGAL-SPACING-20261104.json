@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-04",
+  "request": "Separate footer legal links from the preceding paragraph",
+  "base": "9f12fe55c3f5cb8c2b5497e95970066fc68a195c",
+  "change": "Add margin-top:1.25rem to the shared footer__links group",
+  "verification": {
+    "productionBuild": "PASS",
+    "governance": "PASS: 236 preserved files; no changed guides",
+    "whitespace": "PASS",
+    "browser": "PASS: measured 20px gap above the legal-link group in the built production preview"
+  },
+  "publication": {
+    "status": "pending",
+    "pipeline": "GitHub main -> Cloudflare Worker remaprx"
+  }
+}
