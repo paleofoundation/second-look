@@ -1,5 +1,15 @@
 # Second Look rule changelog
 
+## 2026-11-04: readiness fixture follows the cited methylene blue mechanisms, and auto-merge waits for governance
+
+Source: investigation of pull request 42, merged 2026-11-04 20:15 UTC. Scope: the metformin-grade readiness fixture and evidence-gate auto-merge. The methylene blue fill added three cited mechanism subsections. `tests/readiness.test.mjs` still required `/drugs/methylene-blue` to fail `mechanism-subsections`, so Rules and research continuity failed on main after the merge. Supersedes that stale failure expectation only. The page stays below the indexing bar.
+
+Contract: `docs/READY.md`, `docs/PROJECT-RULES.md`, and `AGENTS.md`. The page has 1,457 substantive words, 8 distinct valid DOIs, three cited mechanism subsections, and still fails evidence groups, dosing length, contraindications, interactions, the drug-specific Quality section, and study summaries. Those gaps are left open. The deposited sources on the page do not support inventing the missing outcomes, doses, or papers. The readiness fixture now accepts the three cited subsections and still requires the other failures. Melphalan still fails every check, including mechanism subsections.
+
+Evidence-gate auto-merge did not require the governance status check. Its gate job ran `scripts/check-governance.mjs` and the citation gate, then merged fill branches. On pull request 42 the governance check failed and auto-merge still succeeded. The gate job now also runs the readiness and search-indexing tests. Auto-merge waits until the latest `governance` check succeeds, and it stops if that check fails, is cancelled, or does not appear in time.
+
+Implementation: `tests/readiness.test.mjs`, `tests/require-governance-check.test.mjs`, `scripts/require-governance-check.mjs`, `.github/workflows/evidence-gate.yml`, and `.github/workflows/governance.yml`. Verification is recorded with this change. This does not make methylene blue indexable and does not claim scientific approval. Remaining: sourced fills still have to close the open methylene blue and melphalan readiness gaps, including the 30-DOI deepening target.
+
 ## 2026-11-04 — Footer repair and standing authorization to publish routine fixes
 
 Source: owner's “Fix the footer” screenshot request, then “ALWAYS update when I request fixes like these.” A routine requested website fix includes implementing, verifying, synchronizing the bounded source and publishing to the existing live site without asking again. Supersedes stopping after a local fix; existing scientific, research, protected-content, billing and access rules remain within their current scope. Contracts: `AGENTS.md`, `PROJECT-RULES.md` and `DESIGN-SYSTEM.md`.
@@ -25,6 +35,18 @@ Contract: `docs/PROJECT-RULES.md`, `docs/COLLABORATOR-HANDOFF.md`, `docs/DESIGN-
 Source: owner instruction to open one pull request that passes `DEPOSITS_READ_TOKEN` into the scheduled Claude fill action, enables full action output, sets the allowed and disallowed tool lists, and moves the staged auto-merge and Cloudflare deploy workflows into `.github/workflows/`. Scope: GitHub Actions and the citation-gate handoff. Supersedes leaving `evidence-gate.yml` and `deploy-cloudflare.yml` in `ci/pending-workflows/`. Contracts: `AGENTS.md` and `ci/pending-workflows/README.md`.
 
 Implementation: both workflow files are active and their job logic is unchanged. Deploy still skips its steps when `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`, or `REMAPRX_D1_DATABASE_ID` is empty. The evidence gate uses `GITHUB_TOKEN` only, so it has no optional repository secret to skip. Scheduled fill passes the deposits read token through the action environment and denies `gh secret` and `gh pr merge`. Verification: actionlint 1.7.7 reported no findings on `.github/workflows`, and `node scripts/check-governance.mjs` passed. This pull request is not merged. Remaining: the Cloudflare secrets and D1 variable must exist before a push to `main` deploys; this change does not create those credentials.
+
+## October 28, 2026 - ongoing private source-audit coordination approved
+
+Source: owner reply, Approve ongoing audit updates, explicitly covering ongoing CAL07/CAL08 private source paths, hashes and research corrections to the same coordinator bridge. Supersedes the previous one-message disclosure limit for those updates. Contract: PROJECT-RULES.md. The prepared corrected-candidate handoff was posted at11:54 Asia/Nicosia and read back; exact receipt is COORDINATOR-ONGOING-APPROVAL-20261028.json in the phase-three packet. The saved payload retains its historical pending-approval sentence; this entry and receipt record approval/posting now complete. Independent source receipts, scientific/human acceptance, grades and release remain pending. No new app/production change.
+
+## October 28, 2026 - CAL07 resumed identity and locator corrections
+
+Source: CONDUCTOR independent original/dependency audit HOLD F01-F03, preserved byte-exact in CAL07 history/v1. Current G-DRUG-D02 resolves to Fluvoxamine, while Metformin is G-METFORMIN; C21 remains Multiple myeloma. Require current registry hash/title/route binding before new downstream mappings, direct support for repeated result estimates and complete typed-field locator coverage. Contract: RESEARCH-INGEST.md. Prospective append-only CAL07 resumed plan/readiness precede V2 mapping and locator edits; original PLAN/GP,13 prior files and HOLD remain preserved. All8 estimates,22 qualifications and67 statuses are unchanged; current12dependency manifest and71 guards require exact root re-audit before candidate commit/delivery. The new guard initially used the wrong parent level for the local registry path; corrected verifier path, with no candidate or dependency changes. No canonical/app/scientific/human/release changes. Reusable upstream synchronization remains proposed, not applied to the pinned snapshot.
+
+## October 28, 2026 - private audit handoff approved and continuation
+
+Source: direct owner approval to send the prepared private audit handoff to the existing coordinator bridge and keep going. Supersedes the pending disclosure permission for that handoff only. Posted and read-back verified with exact payload hash in phase-three `COORDINATOR-HANDOFF-20261028.json`. Continued CAL08 under its prospective source plan/readiness: all6 pages and material visuals inspected,9 groups/25 qualifications/15Q/67 fields,57 guards and8 negative-mutation checks passed. CAL07 and CAL08 candidates remain uncommitted awaiting exact independent original/dependency receipts;6/24 delivered remains unchanged, with no scientific/human/grade/public release upgrade. No new app changes or deployment.
 
 ## October 28, 2026 - guide-library asset preload repair
 

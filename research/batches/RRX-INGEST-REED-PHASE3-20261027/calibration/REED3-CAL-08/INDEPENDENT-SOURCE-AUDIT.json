@@ -1,0 +1,118 @@
+{
+  "at": "2026-10-28T12:02:24.165240+02:00",
+  "reader": "conductor-root",
+  "status": "PASS_V2_EXACT_ORIGINAL_SOURCE_FIDELITY_AND_MAPPING_ONLY",
+  "scope": "Independent all6page/3figure/4table original read before candidate, exact12dependency audit; not full scientific/human approval or release",
+  "activeCheckout": "/Users/kmfp/.codex/visualizations/2026/10/26/01a1764c-1e32-7583-aefa-2330ff02b5ca/work/publish-20261028",
+  "checkpointHead": "31de92e11da7577e1f2214b9c13c0936d5441603",
+  "draftPR": "https://github.com/paleofoundation/second-look/pull/15",
+  "source": {
+    "id": "REED3-CAL-08-MAIN",
+    "pmid": "7833731",
+    "doi": null,
+    "title": "United Kingdom Prospective Diabetes Study (UKPDS). 13: Relative efficacy of randomly allocated diet, sulphonylurea, insulin, or metformin in patients with newly diagnosed non-insulin dependent diabetes followed for three years.",
+    "reportId": "REED-b66200fc5d5a9beb5a46",
+    "ref": "$REMAPRX_REED_ROOT/metformin-type-2-diabetes/pdfs/7833731-unknown-1995.pdf",
+    "sha256": "0b36c930393525128d07fb5d8b5fe6a0c4f69db4f830a80c0978d0d13a871b6f",
+    "physicalPages": 6
+  },
+  "candidateSha256": "25c39a5610d7a9772aedbc8d6cfb7e38c1b351ba784b4681828e6ca93b2b7f8a",
+  "manifestSha256": "7aaceaec8c3eccf7b689171bcb7337c73000b62f6926144e93755f8ef2bed3d4",
+  "dependencies": {
+    "SOURCE-CANDIDATE.json": "25c39a5610d7a9772aedbc8d6cfb7e38c1b351ba784b4681828e6ca93b2b7f8a",
+    "review-inputs.jsonl": "06c72dd4e7345cc899c98e5af6ccd84d5ef7624781d8ff855f10ad9aaa4f9d75",
+    "PLAN.json": "71e8e731b18813cb5950640daa296222769eab50ce8019d5071281584b2bba1e",
+    "SCHEMA.json": "c231c31a0951e839406c41e2137673905ab4d684099a1651d404754b6faf0b5f",
+    "READINESS.json": "32cc6958a1d77ae299b08257ba4556f7341fdaa57f6a271451177ff739fbb9c1",
+    "DOWNSTREAM-MAPPING.json": "95c970d02630d41332776557f359067f10b5cd8ab878b6d807de08081bef9c43",
+    "VISUAL-RECEIPT.json": "f2dcb21e3891e97b24be262a5c3ad6c7c77ee3d34d3b5a46a31d5a7265efb058",
+    "SOURCE-QUALIFICATIONS.json": "d17c6216ccb935877dd603b281445cd85bd620dcbb73396cf0d43e801b7f7f11",
+    "PRIOR-RECONCILIATION.json": "da48365c8ef672a017f624c8dfeef3d6ca426e81a7e1b6ad23b9dbb376d804fb",
+    "OVERLAP-RECONCILIATION.json": "1651d88e9567ad0ef155b2e421917e4a8a7187dca9089bb46ec29649c769d2d5",
+    "RESUME-PLAN-V2.json": "cc5cf1b666fed7dc39239967c21d6b9eb56d76381de6caff53376caae5e4b47a",
+    "RESUME-READINESS-V2.json": "5802167c21a87f8f012c9d93f41bb441cdb6c3db0ee407503643d068c0c79763"
+  },
+  "all12FreshMatch": true,
+  "indexSha256": "b642846d7622c8b899bc618a46860b96b935a9b4a91921568db4ed04c95b13d8",
+  "originalAndIndexFreshMatch": true,
+  "prospectivePlanRead": {
+    "path": "/Users/kmfp/Documents/Codex/2026-10-25/you-are-conductor-the-single-codex/work/conductor-source-review/reed3-cal08/ROOT-PLAN-READ-20261028.json",
+    "sha256": "74f647c440bf03dbeaeb4bd17e6fec943d123a75d03aca55570f177c255e980a",
+    "completedBeforeOriginalAndCandidate": true
+  },
+  "rootOriginalNotes": {
+    "path": "/Users/kmfp/Documents/Codex/2026-10-25/you-are-conductor-the-single-codex/work/conductor-source-review/reed3-cal08/root-original-read-notes.json",
+    "sha256": "d9dcea48b67796bca0f86d034c7d2b73a0d4a6405d42a4dbc0157cc58fa4b28e",
+    "completedBeforeCandidateRead": true,
+    "textAndVisualPhysicalPages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "figures": [
+      1,
+      2,
+      3
+    ],
+    "tables": [
+      "I",
+      "II",
+      "III",
+      "IV"
+    ]
+  },
+  "independentSourceFindings": [
+    "6physicalpages printed83-88; unrelated infant-feeding article below boundary on physical6 excluded. DOI remains null, no web repair.",
+    "All9 result groups and numerical cells/CIs checked against original text and visuals; 6147 referral/2769 randomized/249lostordead/2520report flow preserved; reported arm counts not total randomized arm Ns.",
+    "Metformin262 only obese; current canonical G-METFORMIN /drugs/metformin and G-CONDITION-C31 /conditions/type-2-diabetes verified by fresh registry79ac2413. Original-use diabetes context only, no MM/aging/cancer/event effect transfer.",
+    "Exact overall versus obese glycemic point estimates and95%CIs, weight and insulin endpoints/change summaries kept distinct; no equivalence inference or graph digitization. Assay proinsulin crossreactivity100% retained.",
+    "TableII all diet489+188=677 versus label664, obese214+90=304 versus291; TableIII inconsistent printed row counts and obesity boundary text>=120%/footnote>120% retained without repair.",
+    "TableIV all printed annual counts/percentages inspected; Met any16/11/8 and8.2/5.7/4.1%,major1(.5%)eachyear; meanannual6.3/.5% not cumulative risk. Exact annual denominator absent, no substitution262/summingunique people.",
+    "Quarterly symptom inquiry/severity and central major-event audit, rescue/crossover/continued-monotherapy selection,249missing,unknown concealment/blinding retained; Bonferroni explicit but multiplicity hierarchy partial.",
+    "No longtermCV/mortality benefit in this report; GLUT1 explanation and UGDP different-drug caution are cited context, no own mechanism experiment or MetCVharm estimate.",
+    "25 qualifications mirror external qualifications and limitation descriptions; Q09 inconsistency subset matches exact4 relevant qualifications.15narrative/67typed reviewed; Q06 all9 estimates/directlocator mirrors and union exact.",
+    "All13 V1 files/PLAN/GP preserved; V2 changes only additional typed locators and narrative unions, all9results/25qualifications/67values/statuses unchanged.12dependency bindings fresh."
+  ],
+  "typedStatusCounts": {
+    "answered": 35,
+    "not_checked": 6,
+    "partial": 23,
+    "not_reported": 3
+  },
+  "canonicalUnfinished": 29,
+  "guardRerun": {
+    "result": "64 PASS; all8 negative mutations rejected",
+    "copy": "/Users/kmfp/Documents/Codex/2026-10-25/you-are-conductor-the-single-codex/work/conductor-source-review/reed3-cal08/audit-v2/research/batches/RRX-INGEST-REED-PHASE3-20261027/calibration/REED3-CAL-08",
+    "validationSha256": "aa89af6b6ff02aa0b8d2bd805e58074a440851f778ff1fbc36da836278edf045",
+    "activeValidationUntouched": true,
+    "negativeCases": [
+      "randomizedN2520",
+      "nonobeseMet262",
+      "overallDiet substituted into obese comparison",
+      "repairedTableIIcounts",
+      "zeroMetmajorhypoglycemia",
+      "inventedannualN262",
+      "inferredCVbenefit",
+      "includednextarticle"
+    ]
+  },
+  "scientificAcceptance": false,
+  "fullScientificReviewComplete": false,
+  "humanApproval": false,
+  "newGrades": 0,
+  "released": false,
+  "newIndependentTrials": 0,
+  "newIndependentPatients": 0,
+  "nextAction": "Runner may seal exact private CAL08 V2/source receipt and report ordinary checkpoint plus fresh remote proof; changes reopen audit. CAL09 needs own prospective source plan and independent audit; no acceptance transfer.",
+  "progress": {
+    "delivered": 6,
+    "target": 24,
+    "undelivered": 18,
+    "CAL07": "sourcePASS checkpoint31de92e observed locally; remote delivery evidence pending",
+    "CAL08": "sourcePASS_V2; runner checkpoint pending"
+  },
+  "otherLanes": "WB2/MPI3 remain STOPPED"
+}

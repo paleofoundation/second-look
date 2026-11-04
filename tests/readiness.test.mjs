@@ -148,7 +148,7 @@ test('a complete fixture passes and each missing piece fails on its own', () => 
   assert.ok(assessGuide({...guide, type: 'Glossary'}, context).failing.includes('type'));
 });
 
-test('metformin passes and methylene blue and melphalan fail', () => {
+test('metformin passes, methylene blue keeps cited mechanism subsections and still fails, and melphalan fails', () => {
   const {guides, context} = loadReadinessInputs();
   const results = assessLibrary(guides, context);
   const byPath = new Map(results.map(result => [result.path, result]));
@@ -161,10 +161,14 @@ test('metformin passes and methylene blue and melphalan fail', () => {
   assert.ok(metformin.distinctDois < DOI_DEEPENING_TARGET);
   assert.equal(methylene.pass, false);
   assert.equal(melphalan.pass, false);
-  for (const result of [methylene, melphalan]) {
-    for (const id of ['body-words', 'distinct-dois', 'mechanism-subsections', 'evidence-table', 'dosing', 'safety', 'quality', 'study-summaries']) {
-      assert.ok(result.failing.includes(id), `${result.path} should fail ${id}`);
-    }
+  const methyleneMechanism = methylene.checks.find(item => item.id === 'mechanism-subsections');
+  assert.equal(methyleneMechanism.pass, true);
+  assert.match(methyleneMechanism.detail, /^3 named mechanism subsections/);
+  for (const id of ['body-words', 'distinct-dois', 'evidence-table', 'dosing', 'safety', 'quality', 'study-summaries']) {
+    assert.ok(methylene.failing.includes(id), `${methylene.path} should fail ${id}`);
+  }
+  for (const id of ['body-words', 'distinct-dois', 'mechanism-subsections', 'evidence-table', 'dosing', 'safety', 'quality', 'study-summaries']) {
+    assert.ok(melphalan.failing.includes(id), `${melphalan.path} should fail ${id}`);
   }
   assert.deepEqual(results.filter(result => result.pass).map(result => result.path), ['/drugs/metformin']);
   const queue = deepenQueue(results);

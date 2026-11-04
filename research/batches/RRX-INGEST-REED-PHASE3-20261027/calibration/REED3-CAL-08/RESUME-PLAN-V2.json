@@ -1,0 +1,188 @@
+{
+  "id": "REED3-CAL-08-LOCATOR-COVERAGE-v2",
+  "at": "2026-10-28T07:38:31.850847+00:00",
+  "scope": "Apply newly confirmed direct-field source support rule prospectively before CAL08 audit; no numerical/typed value/status/mapping changes.",
+  "sourceRule": "CAL07 root F03 exposed that a single nativeLocator may omit direct support for multisection values. Extend current CAL08 using explicit additionalSourceLocators, and narrative source unions.",
+  "requiredFieldCoverage": {
+    "Q01.claim_outcome": [
+      1,
+      5,
+      6
+    ],
+    "Q02.population_species": [
+      1,
+      2
+    ],
+    "Q02.eligibility_setting": [
+      1,
+      2
+    ],
+    "Q02.recruited_treated_analyzed_counts": [
+      1,
+      2
+    ],
+    "Q05.timepoint": [
+      2,
+      5
+    ],
+    "Q05.meaningful_change_threshold": [
+      2,
+      4
+    ],
+    "Q06.numerators_denominators": [
+      1,
+      2,
+      4,
+      5
+    ],
+    "Q06.estimate_units": [
+      3,
+      4,
+      5
+    ],
+    "Q06.contrast": [
+      3,
+      4,
+      5
+    ],
+    "Q06.uncertainty": [
+      3,
+      4
+    ],
+    "Q07.attrition": [
+      1,
+      2
+    ],
+    "Q07.missingness": [
+      2,
+      4
+    ],
+    "Q07.adherence": [
+      3,
+      4
+    ],
+    "Q07.exclusions": [
+      1,
+      2
+    ],
+    "Q07.analysis_population": [
+      2,
+      4
+    ],
+    "Q07.experimental_unit": [
+      2,
+      5
+    ],
+    "Q08.observation_time": [
+      2,
+      5
+    ],
+    "Q09.bias_domains": [
+      2,
+      4,
+      5
+    ],
+    "Q09.confounding": [
+      2,
+      3,
+      4
+    ],
+    "Q09.multiplicity": [
+      2,
+      3
+    ],
+    "Q09.precision": [
+      3,
+      4,
+      5
+    ],
+    "Q09.inconsistencies": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "Q10.population_indication_match": [
+      1,
+      2
+    ],
+    "Q10.formulation_route_exposure_match": [
+      1,
+      2
+    ],
+    "Q10.endpoint_match": [
+      1,
+      5
+    ],
+    "Q10.limits": [
+      1,
+      2,
+      4
+    ],
+    "Q13.source_version": [
+      1,
+      6
+    ],
+    "Q14.claim_links": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "Q14.support_relation": [
+      1,
+      3,
+      4,
+      5,
+      6
+    ],
+    "Q14.observed_vs_author_vs_editorial": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "Q15.unknowns": [
+      2,
+      4,
+      6
+    ]
+  },
+  "canonicalRegistry": {
+    "path": "data/content.json",
+    "sha256": "79ac24139b43ceeffef46c282aead6476ba61722488a69792a574a71e32eb36a",
+    "records": {
+      "G-METFORMIN": {
+        "id": "G-METFORMIN",
+        "title": "Metformin",
+        "slug": "/drugs/metformin"
+      },
+      "G-CONDITION-C31": {
+        "id": "G-CONDITION-C31",
+        "title": "Type 2 diabetes",
+        "slug": "/conditions/type-2-diabetes"
+      }
+    }
+  },
+  "preservedV1": {
+    "AUDIT-MANIFEST.json": "c15504821b995c146c255decafc4db2a8de4a715904542f2c3593755c8fa2301",
+    "DOWNSTREAM-MAPPING.json": "95c970d02630d41332776557f359067f10b5cd8ab878b6d807de08081bef9c43",
+    "OVERLAP-RECONCILIATION.json": "1651d88e9567ad0ef155b2e421917e4a8a7187dca9089bb46ec29649c769d2d5",
+    "PLAN.json": "71e8e731b18813cb5950640daa296222769eab50ce8019d5071281584b2bba1e",
+    "PRIOR-RECONCILIATION.json": "da48365c8ef672a017f624c8dfeef3d6ca426e81a7e1b6ad23b9dbb376d804fb",
+    "READINESS.json": "32cc6958a1d77ae299b08257ba4556f7341fdaa57f6a271451177ff739fbb9c1",
+    "SCHEMA.json": "c231c31a0951e839406c41e2137673905ab4d684099a1651d404754b6faf0b5f",
+    "SOURCE-CANDIDATE.json": "701a2611bca9cab28ae1be6c3f222e555ed11eb9c7efe3506ea0452d8a0275b2",
+    "SOURCE-QUALIFICATIONS.json": "d17c6216ccb935877dd603b281445cd85bd620dcbb73396cf0d43e801b7f7f11",
+    "VALIDATION.json": "a71003774f8d18f25b949ff522ad06a4e93e20ce74470c357271cbbd761b9fd3",
+    "VISUAL-RECEIPT.json": "f2dcb21e3891e97b24be262a5c3ad6c7c77ee3d34d3b5a46a31d5a7265efb058",
+    "review-inputs.jsonl": "67a52badd5e797d131d022c63a5b20816e55cdcdf39b2b6701dbf5b7e9b268a0",
+    "verify_source.py": "6b7500e8adbb99232fb1bf7ecad08916e270f500f574c693b2033e11740c453b"
+  },
+  "originalPlanAndGPRemainExact": {
+    "PLAN.json": "71e8e731b18813cb5950640daa296222769eab50ce8019d5071281584b2bba1e",
+    "READINESS.json": "32cc6958a1d77ae299b08257ba4556f7341fdaa57f6a271451177ff739fbb9c1"
+  },
+  "gates": "Private candidate; independent exact12dependency source audit before delivery. No scientific/human/grade/release or app changes."
+}

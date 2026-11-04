@@ -21,4 +21,4 @@ All of these are required:
 
 A count of DOI strings in the live page file was about 44 for metformin, 16 for methylene blue, and 24 for melphalan. That file repeats each identifier. Counted once, the current pages have 18, 8, and 12 distinct valid DOIs. Fifteen is the indexing floor metformin clears and the two thinner pages do not. Thirty distinct valid DOIs stays in the gap report as the deepening target for fills.
 
-Methylene blue (about 1,100 substantive words, 8 DOIs, no mechanism subsections, no evidence groups) and melphalan (about 2,100 substantive words, 12 DOIs) fail. Only `/drugs/metformin` passes today.
+Methylene blue (1,457 substantive words, 8 distinct valid DOIs, three cited mechanism subsections, no evidence groups) and melphalan (about 2,100 substantive words, 12 distinct valid DOIs, no mechanism subsections) fail the indexing bar. Only `/drugs/metformin` passes today.

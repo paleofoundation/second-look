@@ -1,0 +1,166 @@
+{
+  "at": "2026-10-28T09:33:26.268757+02:00",
+  "reader": "conductor-root",
+  "status": "HOLD_V1_MAPPING_AND_DIRECT_LOCATOR_CORRECTIONS_REQUIRED",
+  "scope": "Independent all13page original and exact10dependency source audit only, not full scientific/human acceptance or release",
+  "activeCheckout": "/Users/kmfp/.codex/visualizations/2026/10/26/01a1764c-1e32-7583-aefa-2330ff02b5ca/work/publish-20261028",
+  "checkpointHead": "08e49d4ed626721d347dd460ae2b692f3bb8076d",
+  "draftPR": "https://github.com/paleofoundation/second-look/pull/15",
+  "source": {
+    "id": "REED3-CAL-07-MAIN",
+    "pmid": "25847249",
+    "doi": "10.1074/jbc.m114.628826",
+    "title": "In Silico Modeling-based Identification of Glucose Transporter 4 (GLUT4)-selective Inhibitors for Cancer Therapy.",
+    "reportId": "REED-39edbc2be58169ee5366",
+    "ref": "$REMAPRX_REED_ROOT/metformin-myeloma/pdfs/25847249-mishra-2015.pdf",
+    "sha256": "41242e079005203bf25425aebb1356e5b9e5ebf3e49545ab3745331057ccb111",
+    "physicalPages": 13
+  },
+  "candidateSha256": "2ec409ea9501bf446b6dcb5670f219221e57d91b44d6adba45a48720c5e4300b",
+  "manifestSha256": "fd6ae12dfc32b64cd9bf38b279f2d9f8556404f0ed3ce868d8342cfbac9817c9",
+  "dependencies": {
+    "SOURCE-CANDIDATE.json": "2ec409ea9501bf446b6dcb5670f219221e57d91b44d6adba45a48720c5e4300b",
+    "review-inputs.jsonl": "c6f9e4affa2e6fb633f1d974c922109aabfb2c67adf024aab49ed7db73eb5617",
+    "PLAN.json": "faca0f560eeea09f0db0e9b8f75a0b9e79627135ba11c804845ac4dffd82d036",
+    "SCHEMA.json": "e6f0179eced6b7e42a30d24826311b730f4f77ea4eee564f49502e1e34573cdc",
+    "READINESS.json": "3bd2a626da9d8dfc2392d35ecbd41a464baaca736bf5ff4637ece2bcd1519e44",
+    "DOWNSTREAM-MAPPING.json": "8ee2779552191c9c41769e1bbc3d8b61940cdcdf3840a766fd4ded73b22d7f7e",
+    "VISUAL-RECEIPT.json": "3783a9e65f1c6f73cce13a7181768ac11c73ea1bcf1d1a63770c8072524952b3",
+    "SOURCE-QUALIFICATIONS.json": "80a36c2ff14731d94f96cf9e25f123c4a9f37b461caf6a7c47667388e7b3b8b2",
+    "PRIOR-RECONCILIATION.json": "09655b1140f2edd8277a3f9dee03311e457db097280b0c884c5740bdf5957ac9",
+    "OVERLAP-RECONCILIATION.json": "600939e32dcd3a1c8101fd7cbb24925158fe29b1f37a5679b9f72ec0bde5ae59"
+  },
+  "allTenFreshMatch": true,
+  "all13ActiveAndBothPreservedCopiesMatch": true,
+  "rootPlanReadRecord": {
+    "path": "/Users/kmfp/Documents/Codex/2026-10-25/you-are-conductor-the-single-codex/work/conductor-source-review/reed3-cal07/ROOT-PLAN-READ-20261028.json",
+    "sha256": "53879de7096adc751a07f1cedfd6d0bbe35d201294afcd7f4a545d5b1898d0a7"
+  },
+  "rootOriginalNotes": {
+    "path": "/Users/kmfp/Documents/Codex/2026-10-25/you-are-conductor-the-single-codex/work/conductor-source-review/reed3-cal07/root-original-read-notes.json",
+    "sha256": "fb4a3b36b9c7cb8c0fac18c1e26ba959668903c2590e7e431819c814323cb592",
+    "completedBeforeCandidateRead": true,
+    "physicalPages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "visualPhysicalPages": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "figures": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "tables": [
+      1,
+      2
+    ]
+  },
+  "sourceFidelity": {
+    "eightResultGroups": "All inspected original numbers and bounded interpretations supported; preserve values/limits while repairing mapping/locators",
+    "typedStatusCounts": {
+      "answered": 37,
+      "not_checked": 5,
+      "partial": 14,
+      "not_reported": 9,
+      "not_applicable": 2
+    },
+    "canonicalUnfinished": 19,
+    "narrativeQuestions": 15,
+    "qualifications": 22,
+    "allQualificationMirrorsExact": true,
+    "Q06NarrativeAndTypedResultMirrorsExact": true,
+    "guardRun": "60 PASS separate root copy without rewriting active historical VALIDATION; guards miss mapping/locator defects"
+  },
+  "findings": [
+    {
+      "id": "F01",
+      "severity": "HOLD",
+      "field": "DOWNSTREAM-MAPPING.json existingGuideIds and all candidate/typed/narrative mirrors",
+      "problem": "Private candidate names G-DRUG-D02 as Metformin, but exact resumed canonical registry identifies that ID as Fluvoxamine. Metformin is G-METFORMIN; C21 remains Multiple myeloma. No source support for a fluvoxamine mapping.",
+      "canonicalRegistry": {
+        "path": "/Users/kmfp/.codex/visualizations/2026/10/26/01a1764c-1e32-7583-aefa-2330ff02b5ca/work/publish-20261028/data/content.json",
+        "sha256": "79ac24139b43ceeffef46c282aead6476ba61722488a69792a574a71e32eb36a",
+        "records": {
+          "G-METFORMIN": {
+            "id": "G-METFORMIN",
+            "title": "Metformin",
+            "slug": "/drugs/metformin"
+          },
+          "G-DRUG-D02": {
+            "id": "G-DRUG-D02",
+            "title": "Fluvoxamine",
+            "slug": "/drugs/fluvoxamine"
+          },
+          "G-CONDITION-C21": {
+            "id": "G-CONDITION-C21",
+            "title": "Multiple myeloma",
+            "slug": "/conditions/multiple-myeloma"
+          }
+        }
+      },
+      "requiredCorrection": "Create append-only resumed plan/readiness reconciliation and versioned corrected candidate with G-METFORMIN + G-CONDITION-C21 across all actual mapping mirrors. Preserve original GP/PLAN/V1 and all6sealed historical packets. Record historical-ID/current-ID distinction; no silent ID relabel or prior-record edits."
+    },
+    {
+      "id": "F02",
+      "severity": "HOLD",
+      "field": "REED3-CAL-07-O01 sourceLocators and Q06 nested mirrors",
+      "problem": "O01 models embeds overall5.2,site2.2,GLUT1-comparison5.8/2.5 and centralchannel<2.5 RMSDs, but locators only physical1/3/4/5. Direct data are physical9/14449 and Fig9 physical10/14450. O08 locators do not bind O01 repeated estimates.",
+      "requiredCorrection": "Add exact physical9/10 direct source locators to O01 and regenerate its Q06 result mirrors/locator union. No value changes; preserve Table2compound38literal9145."
+    },
+    {
+      "id": "F03",
+      "severity": "HOLD",
+      "field": "typed Q05 instrument; Q06 contrast; Q02 eligibility_setting",
+      "problem": "Instrument nativepage3 omits MTS/CellTiterGlo/Annexin procedures physical2 and qPCR/trypan/AnnexinDAPI physical7. Contrast nativepage10 omits JJN3/KD/Met physical7 and transport physical8/9. Setting nativepage2 omits four institutional affiliations physical1.",
+      "requiredCorrection": "Add direct support locators physical2/3/7 for instrument,7/8/9/10 for contrast,1/2 for setting, retaining primary nativeLocator if required. Preserve all typed values/statuses. Add narrow source guards for F01/F02/F03 without weakening existing guards."
+    }
+  ],
+  "preservedLimits": [
+    "compound3 10uM+Met1mM48hexvivo three labels; no clinical administration/efficacy",
+    "normalT/stromaldata not shown, no established healthyhost safety",
+    "growthIC50 vs transportIC50,dose/glucose/time distinctions",
+    "Table2compound38literal9145,body/figure residue mismatches",
+    "donor overlap with CAL01 unresolved; no added independent trials/patients",
+    "no formal synergy,allisoform proof,clinical exposure validation or scientific grades"
+  ],
+  "nextAction": "Lane1 narrow V2 preserving V1/history; post new candidate/manifest/deps here for root reaudit before CAL07 acceptance/commit. CAL08 private serial preparation may continue without acceptance transfer.",
+  "progress": {
+    "delivered": 6,
+    "target": 24,
+    "undelivered": 18,
+    "CAL07Delivered": false
+  },
+  "scientificAcceptance": false,
+  "humanApproval": false,
+  "released": false,
+  "newGrades": 0,
+  "otherLanes": "WB2/MPI3 remain paused"
+}
