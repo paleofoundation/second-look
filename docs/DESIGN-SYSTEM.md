@@ -1,5 +1,9 @@
 # RemapRx visual design system
 
+## Footer layout repair — November 4, 2026
+
+Source: owner's “Fix the footer” request and Screenshot 2026-11-04 at 4.32.24 PM.png. Repair the shared footer's cramped brand/legal copy and unused fifth column. Keep the existing RemapRx mark, blue background, copy and link destinations. With no newsletter, use one brand block plus the three existing navigation groups across the available desktop width; stack the brand above responsive menu columns on smaller screens. Legal links wrap as whole labels with consistent gaps and no orphan separators. Preserve visible yellow keyboard focus and comfortable link targets. This supersedes the inherited five-column allocation and shrinking legal-link row for this layout. Implementation choices are responsive CSS; no evidence, access or release-policy change is included. Verification and publication are recorded in `FOOTER-FIX-20261104.json`.
+
 Adopted 12 October 2026 from the owner's palette05.png, ten supplied health-topic SVGs, and Examine brain-hero screenshot. This is the RemapRx implementation contract. The illustration conventions are reusable for PepsAnon; this change does not migrate or publish PepsAnon. Existing scientific content, evidence semantics, account access and release gates remain in force.
 
 ## Color roles
@@ -114,3 +118,8 @@ The owner approved the mapping-round-4 Rx mark and authorized its logo/favicon a
 ## Hero sidebar alignment — November 4, 2026
 
 Owner request, with Screenshot 2026-11-04 at 4.31.04 PM.png: the dark illustration and author sidebars in topic heroes must have the same widths and vertical boundaries as the article sidebars below. Use one shared responsive column definition for both grids: the existing reading-grid columns above 1199px, and 220px / flexible center / 260px from 992px through 1199px. Stack the hero only below the reading grid’s 992px desktop breakpoint. Preserve the existing tablet/phone illustration, author, snapshot and reading order. This supersedes the independent 25%-left/280px-right hero columns and its earlier 1199px stacking threshold.
+
+
+## Footer legal-link separation — November 4, 2026
+
+Source: owner's follow-up and Screenshot 2026-11-04 at 7.09.38 PM.png: Privacy, Terms and Educational disclaimer are cramped against the paragraph above. Give the shared legal-link group its own 1.25rem top margin at every viewport. This supersedes the flush paragraph/link adjacency while preserving the accepted responsive columns and intact labels. Implement and publish under the standing routine-fix authorization. Verification/publication: `FOOTER-LEGAL-SPACING-20261104.json`.

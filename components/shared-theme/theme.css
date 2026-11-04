@@ -185,6 +185,25 @@
 .omr-theme .rgbc-hero { background-color:var(--color-primary-dark); }
 .omr-theme .rgbc-hero__center { background-color:var(--omr-main); }
 .omr-theme .footer { background-color:var(--color-primary-dark); }
+/* The RemapRx footer has a brand block and three menus, with no newsletter column. */
+.omr-theme .footer__wrapper:not(:has(>.footer__right)) { grid-template-columns:minmax(0,1fr); gap:3rem; margin-top:0; padding:clamp(3rem,5vw,5rem) clamp(1.5rem,4vw,5rem); }
+.omr-theme .footer__wrapper:not(:has(>.footer__right)) .footer__left { order:0; min-width:0; }
+.omr-theme .footer__wrapper:not(:has(>.footer__right)) .footer__center { order:0; grid-column:auto; grid-template-columns:repeat(2,minmax(0,1fr)); gap:2rem; margin-top:0; text-align:left; min-width:0; }
+.omr-theme .footer__wrapper:not(:has(>.footer__right)) .footer__logo { display:block; }
+.omr-theme .footer__wrapper:not(:has(>.footer__right)) .footer__logo a { justify-content:flex-start; }
+.omr-theme .footer__wrapper:not(:has(>.footer__right)) .footer__tagline { max-width:38ch; font-size:.875rem; line-height:1.6; text-align:left; }
+.omr-theme .footer__links { flex-wrap:wrap; justify-content:flex-start; gap:.5rem 1rem; margin-top:1.25rem; }
+.omr-theme .footer__links-item { flex-shrink:0; white-space:nowrap; }
+.omr-theme .footer__links-separator { display:none; }
+.omr-theme .footer__wrapper:not(:has(>.footer__right)) .footer__title { text-align:left; }
+.omr-theme .footer__wrapper:not(:has(>.footer__right)) .footer__menu { padding:.75rem 0 0; }
+.omr-theme .footer__wrapper:not(:has(>.footer__right)) .footer__menu .menu-item>a { justify-content:flex-start; min-height:44px; padding:.5rem 0; line-height:1.5; }
+@media (min-width:600px) {
+  .omr-theme .footer__wrapper:not(:has(>.footer__right)) .footer__center { grid-template-columns:repeat(3,minmax(0,1fr)); }
+}
+@media (min-width:992px) {
+  .omr-theme .footer__wrapper:not(:has(>.footer__right)) { grid-template-columns:minmax(16rem,1.35fr) minmax(0,3fr); column-gap:clamp(3rem,5vw,5rem); }
+}
 .omr-theme :is(.research-hero,.rgbc-hero,.footer) :is(a,button,summary,input):focus-visible { outline-color:var(--omr-accent); }
 .omr-theme .header__actions .btn { background:var(--omr-accent); border-color:var(--omr-accent); color:var(--omr-ink); }
 .omr-theme .header__actions .btn:hover,.omr-theme .header__actions .btn:active { background:var(--brand-yellow-hover); border-color:var(--brand-yellow-hover); color:var(--omr-ink); }
