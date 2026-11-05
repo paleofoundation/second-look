@@ -12,7 +12,7 @@ The sole style reference was the live Metformin page. Overview and Mechanism exp
 | 2 | [#49](https://github.com/paleofoundation/second-look/pull/49) | Aspirin through fluconazole |
 | 3 | [#50](https://github.com/paleofoundation/second-look/pull/50) | Fluvoxamine through memantine |
 | 4 | [#51](https://github.com/paleofoundation/second-look/pull/51) | Methylene blue through propranolol |
-| 5 | Draft PR on codex/drug-canonical-batch-05-20261105 | Rituximab through vorinostat; final validation |
+| 5 | [#52](https://github.com/paleofoundation/second-look/pull/52) | Rituximab through vorinostat; final validation |
 
 ## Changed URLs and limits
 
