@@ -159,7 +159,7 @@ test('metformin passes, methylene blue keeps cited mechanisms and dosing and sti
   assert.equal(metformin.pass, true, metformin.failing.join(','));
   assert.ok(metformin.words >= MIN_BODY_WORDS);
   assert.ok(metformin.distinctDois >= MIN_DISTINCT_DOIS);
-  assert.ok(metformin.distinctDois < DOI_DEEPENING_TARGET);
+  assert.ok(metformin.distinctDois >= DOI_DEEPENING_TARGET);
   assert.equal(methylene.pass, false);
   assert.equal(itraconazole.pass, false);
   assert.equal(melphalan.pass, false);
