@@ -1,5 +1,11 @@
 # Second Look rule changelog
 
+## 2026-11-05: itraconazole no longer cites the uncitable myeloma cell experiment
+
+Source: citation repair for the canonical drug-page batches, 5 November 2026. PMID 27784375 points at DOI 10.7534/j.issn.1009-2137.2016.05.032, and Crossref does not resolve that DOI. The gate does not accept it. Scope: the itraconazole page and its mechanism table. The multiple myeloma condition page is unchanged.
+
+Removed claims: the benefit answer that itraconazole with arsenic trioxide inhibited Hedgehog signaling in myeloma cells and mouse tumors; the mechanism rows that repeated that cell and mouse experiment; and the overview and connection lines that named multiple myeloma from that experiment. No replacement paper was invented. Receipt: `research/deposits/RRX-DRUG-CANONICAL-CITATIONS-20261105/removed-claims.json`.
+
 ## 2026-11-05: canonical drug pages record real identifiers for sources they already cite
 
 Source: citation-gate failures on pull requests 48 through 52 after the 2026-11-05 gate reliability fix. Scope: identifiers on source records those pages already cite. This does not add studies, change grades, or change gate logic. It supersedes the batch 01 note that the gate failure would be retained.
