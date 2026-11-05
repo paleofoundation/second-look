@@ -157,1024 +157,6 @@
       ]
     },
     {
-      "drugId": "D01",
-      "presentation": "pathway-table-pilot",
-      "originalAction": {
-        "text": "Metformin’s established glucose-lowering action combines reduced glucose production by the liver, reduced intestinal glucose absorption and improved uptake and use of glucose by tissues. It improves insulin sensitivity without stimulating insulin secretion. Repurposing research asks whether changes in cellular energy sensing, growth signals and the handling of damaged cellular material can be useful beyond diabetes. AMPK is an energy-sensing enzyme, while mTOR signaling helps regulate protein production and cell growth; altering these systems can have different consequences in infected cells, tumors and healthy muscle. The evidence below distinguishes effects measured in experimental models from proposed explanations and from clinical outcomes, because demonstrating a pathway change does not establish that a treatment helps patients.",
-        "sourceIds": [
-          "MF-LABEL-2025",
-          "MF-PD-MECHANISM-2016",
-          "MF-COVID-VIRAL-2024",
-          "MF-MASTERS-2019",
-          "MF-MYELOMA-MODELS-2018",
-          "CP017",
-          "COND-C15-MA32-2022"
-        ],
-        "sentences": [
-          {
-            "text": "Metformin’s established glucose-lowering action combines reduced glucose production by the liver, reduced intestinal glucose absorption and improved uptake and use of glucose by tissues. It improves insulin sensitivity without stimulating insulin secretion.",
-            "sources": [
-              "MF-LABEL-2025"
-            ]
-          },
-          {
-            "text": "Repurposing research asks whether changes in cellular energy sensing, growth signals and the handling of damaged cellular material can be useful beyond diabetes. AMPK is an energy-sensing enzyme, while mTOR signaling helps regulate protein production and cell growth; altering these systems can have different consequences in infected cells, tumors and healthy muscle.",
-            "sources": [
-              "MF-PD-MECHANISM-2016",
-              "MF-COVID-VIRAL-2024",
-              "MF-MASTERS-2019",
-              "MF-MYELOMA-MODELS-2018"
-            ]
-          },
-          {
-            "text": "The evidence below distinguishes effects measured in experimental models from proposed explanations and from clinical outcomes, because demonstrating a pathway change does not establish that a treatment helps patients.",
-            "sources": [
-              "MF-PD-MECHANISM-2016",
-              "CP017",
-              "COND-C15-MA32-2022"
-            ]
-          }
-        ]
-      },
-      "pathways": [
-        {
-          "id": "metformin-insulin-growth",
-          "title": "Insulin sensitivity and growth signaling",
-          "text": "Improving insulin sensitivity is part of metformin’s established action in diabetes. In cancer repurposing, reducing insulin-related growth stimulation is one proposed route to benefit. The MA.32 breast-cancer trial measured changes in insulin, weight and other metabolic factors, but its clinical report did not show improved invasive disease-free survival. These findings distinguish a measured metabolic effect from an unconfirmed anticancer benefit.",
-          "sourceIds": [
-            "MF-LABEL-2025",
-            "COND-C15-MA32-METABOLIC",
-            "COND-C15-MA32-2022"
-          ],
-          "sentences": [
-            {
-              "text": "Improving insulin sensitivity is part of metformin’s established action in diabetes. In cancer repurposing, reducing insulin-related growth stimulation is one proposed route to benefit.",
-              "sources": [
-                "MF-LABEL-2025",
-                "COND-C15-MA32-METABOLIC"
-              ]
-            },
-            {
-              "text": "The MA.32 breast-cancer trial measured changes in insulin, weight and other metabolic factors, but its clinical report did not show improved invasive disease-free survival. These findings distinguish a measured metabolic effect from an unconfirmed anticancer benefit.",
-              "sources": [
-                "COND-C15-MA32-METABOLIC",
-                "COND-C15-MA32-2022"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "metformin-ampk-mtor",
-          "title": "AMPK, mTOR and the balance between energy use and growth",
-          "text": "AMPK activation and reduced mTOR signaling provide a rationale for changing cell growth and protein production. In myeloma cell lines and mouse xenografts, metformin activated AMPK, suppressed mTORC1 and mTORC2 signaling, and was associated with autophagy, cell-cycle arrest and reduced tumor growth. In viral infection, suppression of host-cell protein production is a proposed explanation for reduced SARS-CoV-2 replication; the COVID-OUT nasal-swab study measured viral RNA rather than directly proving that mTOR mediated the reduction in viral RNA. The same growth-related pathways also matter in healthy tissue: mTORC1 supports muscle growth, and metformin reduced muscle gains during resistance training in the MASTERS trial. A mechanism that appears useful in one setting can therefore work against the intended outcome in another.",
-          "sourceIds": [
-            "MF-MYELOMA-MODELS-2018",
-            "MF-COVID-VIRAL-2024",
-            "MF-MASTERS-2019"
-          ],
-          "sentences": [
-            {
-              "text": "AMPK activation and reduced mTOR signaling provide a rationale for changing cell growth and protein production. In myeloma cell lines and mouse xenografts, metformin activated AMPK, suppressed mTORC1 and mTORC2 signaling, and was associated with autophagy, cell-cycle arrest and reduced tumor growth.",
-              "sources": [
-                "MF-MYELOMA-MODELS-2018"
-              ]
-            },
-            {
-              "text": "In viral infection, suppression of host-cell protein production is a proposed explanation for reduced SARS-CoV-2 replication; the COVID-OUT nasal-swab study measured viral RNA rather than directly proving that mTOR mediated the reduction in viral RNA.",
-              "sources": [
-                "MF-COVID-VIRAL-2024"
-              ]
-            },
-            {
-              "text": "The same growth-related pathways also matter in healthy tissue: mTORC1 supports muscle growth, and metformin reduced muscle gains during resistance training in the MASTERS trial. A mechanism that appears useful in one setting can therefore work against the intended outcome in another.",
-              "sources": [
-                "MF-MASTERS-2019"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "autophagy-causality",
-          "title": "Autophagy and mitochondrial stress",
-          "text": "Autophagy is the cell’s process for recycling cellular material. In Parkinson’s disease cell and mouse models, metformin was associated with AMPK activation and autophagy, less mitochondrial oxidative stress and reduced accumulation of alpha-synuclein. Blocking AMPK or autophagy weakened protection in toxin-injured cells, supporting a contribution from these pathways within that model. Inhibitor specificity, the experimental exposure and the difference between toxin injury and human disease limit translation; these experiments do not establish that metformin slows Parkinson’s disease in people.",
-          "sourceIds": [
-            "MF-PD-MECHANISM-2016"
-          ],
-          "sentences": [
-            {
-              "text": "Autophagy is the cell’s process for recycling cellular material. In Parkinson’s disease cell and mouse models, metformin was associated with AMPK activation and autophagy, less mitochondrial oxidative stress and reduced accumulation of alpha-synuclein.",
-              "sources": [
-                "MF-PD-MECHANISM-2016"
-              ]
-            },
-            {
-              "text": "Blocking AMPK or autophagy weakened protection in toxin-injured cells, supporting a contribution from these pathways within that model. Inhibitor specificity, the experimental exposure and the difference between toxin injury and human disease limit translation; these experiments do not establish that metformin slows Parkinson’s disease in people.",
-              "sources": [
-                "MF-PD-MECHANISM-2016"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "metformin-complex-i",
-          "title": "Complex I inhibition and energy sensing",
-          "text": "Two preclinical studies in cells and isolated mitochondria show that metformin inhibits complex I of the mitochondrial respiratory chain, the enzyme that initiates electron transfer during cellular respiration. In intact hepatoma cells, 50 micromolar metformin produced time-dependent inhibition of complex I activity, reducing glutamate oxidation by 13 percent after 24 hours and 30 percent after 60 hours; succinate oxidation, which enters at complex II, was unaffected, confirming selectivity for complex I. In a complementary study using isolated rat hepatocytes, inhibition of cell respiration by metformin occurred only in intact cells and not in permeabilized cells or isolated mitochondria, demonstrating that the mechanism requires an indirect, cell-mediated signaling step rather than direct drug contact with the enzyme. In isolated sub-mitochondrial particles, half-maximal inhibition required approximately 79 mM, far above therapeutic plasma concentrations, while the effect appeared at 50 micromolar in intact cells, consistent with intracellular drug accumulation. Reduced flux through complex I lowers cellular ATP production and is proposed to be one upstream trigger for the AMPK activation described in other pathway studies. These are preclinical findings from cell lines, isolated hepatocytes, and sub-cellular fractions; they do not establish the concentrations, tissue distribution, or extent of complex I inhibition during therapeutic metformin treatment in people.",
-          "sourceIds": [
-            "OWEN-2000",
-            "EL-MIR-2000"
-          ],
-          "sentences": [
-            {
-              "text": "Two preclinical studies in cells and isolated mitochondria show that metformin inhibits complex I of the mitochondrial respiratory chain, the enzyme that initiates electron transfer during cellular respiration.",
-              "sources": [
-                "OWEN-2000",
-                "EL-MIR-2000"
-              ]
-            },
-            {
-              "text": "In intact hepatoma cells, 50 micromolar metformin produced time-dependent inhibition of complex I activity, reducing glutamate oxidation by 13 percent after 24 hours and 30 percent after 60 hours; succinate oxidation, which enters at complex II, was unaffected, confirming selectivity for complex I.",
-              "sources": [
-                "OWEN-2000"
-              ]
-            },
-            {
-              "text": "In a complementary study using isolated rat hepatocytes, inhibition of cell respiration by metformin occurred only in intact cells and not in permeabilized cells or isolated mitochondria, demonstrating that the mechanism requires an indirect, cell-mediated signaling step rather than direct drug contact with the enzyme.",
-              "sources": [
-                "EL-MIR-2000"
-              ]
-            },
-            {
-              "text": "In isolated sub-mitochondrial particles, half-maximal inhibition required approximately 79 mM, far above therapeutic plasma concentrations, while the effect appeared at 50 micromolar in intact cells, consistent with intracellular drug accumulation.",
-              "sources": [
-                "OWEN-2000"
-              ]
-            },
-            {
-              "text": "Reduced flux through complex I lowers cellular ATP production and is proposed to be one upstream trigger for the AMPK activation described in other pathway studies.",
-              "sources": [
-                "OWEN-2000",
-                "EL-MIR-2000"
-              ]
-            },
-            {
-              "text": "These are preclinical findings from cell lines, isolated hepatocytes, and sub-cellular fractions; they do not establish the concentrations, tissue distribution, or extent of complex I inhibition during therapeutic metformin treatment in people.",
-              "sources": [
-                "OWEN-2000",
-                "EL-MIR-2000"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "metformin-mgpd",
-          "title": "Mitochondrial glycerophosphate dehydrogenase inhibition and hepatic redox",
-          "text": "A 2014 preclinical study in rodent models showed that metformin inhibits mitochondrial glycerophosphate dehydrogenase (mGPD), an enzyme on the inner mitochondrial membrane that links glycerol metabolism to the electron transport chain. Inhibiting mGPD allows NADH to accumulate in the cytoplasm, increasing the cytosolic redox state; at the same time, the mitochondrial redox state decreases. This altered hepatocellular redox balance reduces the conversion of lactate and glycerol into gluconeogenic substrates, thereby suppressing hepatic glucose production. Acute and chronic low-dose metformin treatment reduced endogenous glucose production in rodents while producing the predicted redox changes in both cytosolic and mitochondrial compartments. When hepatic mGPD was knocked down in rats using antisense oligonucleotides, the animals developed a phenotype resembling chronic metformin treatment, and metformin could no longer increase cytosolic redox, lower plasma glucose, or inhibit endogenous glucose production. These findings were confirmed in whole-body mGPD knockout mice. Because mGPD inhibition suppresses gluconeogenesis through a redox mechanism that does not require AMPK activation, this pathway is proposed as an alternative or complementary route to complex I inhibition for how metformin reduces hepatic glucose output. All findings reported here are from preclinical rat and mouse models; this study does not establish the degree of mGPD inhibition during therapeutic metformin treatment in people.",
-          "sourceIds": [
-            "MADIRAJU-2014"
-          ],
-          "sentences": [
-            {
-              "text": "A 2014 preclinical study in rodent models showed that metformin inhibits mitochondrial glycerophosphate dehydrogenase (mGPD), an enzyme on the inner mitochondrial membrane that links glycerol metabolism to the electron transport chain.",
-              "sources": [
-                "MADIRAJU-2014"
-              ]
-            },
-            {
-              "text": "Inhibiting mGPD allows NADH to accumulate in the cytoplasm, increasing the cytosolic redox state; at the same time, the mitochondrial redox state decreases.",
-              "sources": [
-                "MADIRAJU-2014"
-              ]
-            },
-            {
-              "text": "This altered hepatocellular redox balance reduces the conversion of lactate and glycerol into gluconeogenic substrates, thereby suppressing hepatic glucose production.",
-              "sources": [
-                "MADIRAJU-2014"
-              ]
-            },
-            {
-              "text": "Acute and chronic low-dose metformin treatment reduced endogenous glucose production in rodents while producing the predicted redox changes in both cytosolic and mitochondrial compartments.",
-              "sources": [
-                "MADIRAJU-2014"
-              ]
-            },
-            {
-              "text": "When hepatic mGPD was knocked down in rats using antisense oligonucleotides, the animals developed a phenotype resembling chronic metformin treatment, and metformin could no longer increase cytosolic redox, lower plasma glucose, or inhibit endogenous glucose production.",
-              "sources": [
-                "MADIRAJU-2014"
-              ]
-            },
-            {
-              "text": "These findings were confirmed in whole-body mGPD knockout mice.",
-              "sources": [
-                "MADIRAJU-2014"
-              ]
-            },
-            {
-              "text": "Because mGPD inhibition suppresses gluconeogenesis through a redox mechanism that does not require AMPK activation, this pathway is proposed as an alternative or complementary route to complex I inhibition for how metformin reduces hepatic glucose output.",
-              "sources": [
-                "MADIRAJU-2014"
-              ]
-            },
-            {
-              "text": "All findings reported here are from preclinical rat and mouse models; this study does not establish the degree of mGPD inhibition during therapeutic metformin treatment in people.",
-              "sources": [
-                "MADIRAJU-2014"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "metformin-gut",
-          "title": "Gut microbiome shifts and intestinal action",
-          "text": "Metformin accumulates in intestinal tissues at concentrations exceeding plasma levels and has well-documented effects on gut microbiota composition. In a 4-month randomized double-blind trial in individuals with treatment-naive type 2 diabetes, metformin produced strong shifts in gut microbiome composition compared with placebo. Transfer of fecal samples from metformin-treated donors to germ-free mice improved glucose tolerance in the recipient animals, suggesting that at least some of the antidiabetic effect is mediated through microbiota changes. Metformin affected pathways with shared biological functions in species from two bacterial phyla, and many metformin-regulated genes encoded metalloproteins or metal transporters. A separate analysis of 784 human gut metagenomes showed that metformin treatment can confound gut microbiome signatures attributed to type 2 diabetes itself, because the two conditions have distinct but overlapping microbial signatures. Metformin was associated with increased short-chain fatty acid production, proposed as a beneficial mechanism, but also with a relative increase in Escherichia species abundance, which may underlie some intestinal adverse effects. A gut-restricted mechanism of action is supported by delayed-release metformin formulation data: a formulation targeting the distal small intestine lowered plasma glucose and enhanced fasting and postprandial GLP-1 and PYY secretion despite approximately 28% lower systemic bioavailability compared with immediate-release metformin. The maintained glucose-lowering effect at lower plasma drug levels, combined with enhanced gut hormone release, provides evidence that metformin acts directly on intestinal tissue and not solely through portal delivery to the liver.",
-          "sourceIds": [
-            "WU-2017",
-            "FORSLUND-2015",
-            "DEFRONZO-2016"
-          ],
-          "sentences": [
-            {
-              "text": "Metformin accumulates in intestinal tissues at concentrations exceeding plasma levels and has well-documented effects on gut microbiota composition.",
-              "sources": [
-                "WU-2017",
-                "DEFRONZO-2016"
-              ]
-            },
-            {
-              "text": "In a 4-month randomized double-blind trial in individuals with treatment-naive type 2 diabetes, metformin produced strong shifts in gut microbiome composition compared with placebo.",
-              "sources": [
-                "WU-2017"
-              ]
-            },
-            {
-              "text": "Transfer of fecal samples from metformin-treated donors to germ-free mice improved glucose tolerance in the recipient animals, suggesting that at least some of the antidiabetic effect is mediated through microbiota changes.",
-              "sources": [
-                "WU-2017"
-              ]
-            },
-            {
-              "text": "Metformin affected pathways with shared biological functions in species from two bacterial phyla, and many metformin-regulated genes encoded metalloproteins or metal transporters.",
-              "sources": [
-                "WU-2017"
-              ]
-            },
-            {
-              "text": "A separate analysis of 784 human gut metagenomes showed that metformin treatment can confound gut microbiome signatures attributed to type 2 diabetes itself, because the two conditions have distinct but overlapping microbial signatures.",
-              "sources": [
-                "FORSLUND-2015"
-              ]
-            },
-            {
-              "text": "Metformin was associated with increased short-chain fatty acid production, proposed as a beneficial mechanism, but also with a relative increase in Escherichia species abundance, which may underlie some intestinal adverse effects.",
-              "sources": [
-                "FORSLUND-2015"
-              ]
-            },
-            {
-              "text": "A gut-restricted mechanism of action is supported by delayed-release metformin formulation data: a formulation targeting the distal small intestine lowered plasma glucose and enhanced fasting and postprandial GLP-1 and PYY secretion despite approximately 28% lower systemic bioavailability compared with immediate-release metformin.",
-              "sources": [
-                "DEFRONZO-2016"
-              ]
-            },
-            {
-              "text": "The maintained glucose-lowering effect at lower plasma drug levels, combined with enhanced gut hormone release, provides evidence that metformin acts directly on intestinal tissue and not solely through portal delivery to the liver.",
-              "sources": [
-                "DEFRONZO-2016"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "metformin-gdf15",
-          "title": "GDF15 induction and appetite suppression",
-          "text": "Growth differentiation factor 15 (GDF15) is a stress-response cytokine that reduces food intake and body weight by acting on a brain-stem-restricted receptor called GDNF family receptor alpha-like (GFRAL). Two preclinical studies showed that GDF15 is an important mediator of metformin's effects on body weight and energy balance. In mouse models, oral metformin elevated circulating GDF15, with the increase in GDF15 expression predominantly in the distal intestine and kidney. Metformin prevented weight gain on a high-fat diet in wild-type mice but not in mice lacking GDF15 or its receptor GFRAL; a GFRAL-antagonist antibody reversed the weight-reducing effect of metformin in obese mice, confirming that GDF15 signaling through GFRAL is required for metformin to influence body weight. Notably, metformin retained its glucose-lowering action in the absence of GDF15 signaling, indicating that glucose control and body weight effects involve separate mechanisms. A complementary preclinical study found that metformin stimulates GDF15 secretion in primary mouse hepatocytes by increasing expression of the transcription factors ATF4 and CHOP/DDIT3; in GDF15 null mice, metformin did not reduce food intake, body mass, or fasting insulin. In patients with type 2 diabetes taking metformin, higher serum GDF15 concentrations were associated with weight loss, an observational human association consistent with the mouse mechanistic data. All mechanistic data are from preclinical cell and animal experiments; the human association is observational and cannot establish causation.",
-          "sourceIds": [
-            "COLL-2020",
-            "DAY-2019"
-          ],
-          "sentences": [
-            {
-              "text": "Growth differentiation factor 15 (GDF15) is a stress-response cytokine that reduces food intake and body weight by acting on a brain-stem-restricted receptor called GDNF family receptor alpha-like (GFRAL).",
-              "sources": [
-                "COLL-2020",
-                "DAY-2019"
-              ]
-            },
-            {
-              "text": "Two preclinical studies showed that GDF15 is an important mediator of metformin's effects on body weight and energy balance.",
-              "sources": [
-                "COLL-2020",
-                "DAY-2019"
-              ]
-            },
-            {
-              "text": "In mouse models, oral metformin elevated circulating GDF15, with the increase in GDF15 expression predominantly in the distal intestine and kidney.",
-              "sources": [
-                "COLL-2020"
-              ]
-            },
-            {
-              "text": "Metformin prevented weight gain on a high-fat diet in wild-type mice but not in mice lacking GDF15 or its receptor GFRAL; a GFRAL-antagonist antibody reversed the weight-reducing effect of metformin in obese mice, confirming that GDF15 signaling through GFRAL is required for metformin to influence body weight.",
-              "sources": [
-                "COLL-2020"
-              ]
-            },
-            {
-              "text": "Notably, metformin retained its glucose-lowering action in the absence of GDF15 signaling, indicating that glucose control and body weight effects involve separate mechanisms.",
-              "sources": [
-                "COLL-2020"
-              ]
-            },
-            {
-              "text": "A complementary preclinical study found that metformin stimulates GDF15 secretion in primary mouse hepatocytes by increasing expression of the transcription factors ATF4 and CHOP/DDIT3; in GDF15 null mice, metformin did not reduce food intake, body mass, or fasting insulin.",
-              "sources": [
-                "DAY-2019"
-              ]
-            },
-            {
-              "text": "In patients with type 2 diabetes taking metformin, higher serum GDF15 concentrations were associated with weight loss, an observational human association consistent with the mouse mechanistic data.",
-              "sources": [
-                "DAY-2019"
-              ]
-            },
-            {
-              "text": "All mechanistic data are from preclinical cell and animal experiments; the human association is observational and cannot establish causation.",
-              "sources": [
-                "COLL-2020",
-                "DAY-2019"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "metformin-lactate",
-          "title": "Lactate elevation and lactic acidosis risk",
-          "text": "Metformin inhibits complex I of the mitochondrial respiratory chain, reducing the rate at which the mitochondria oxidize NADH. This slows the conversion of lactate to pyruvate by altering the cytosolic NADH/NAD+ balance, shifting equilibrium toward lactate production. Lactate concentrations therefore tend to rise in tissues where metformin is active, raising the theoretical concern that this could cause lactic acidosis. The clinical significance of this pharmacological effect has been extensively studied. A Cochrane systematic review pooled 347 comparative trials and cohort studies covering 70,490 patient-years of metformin use; it found no cases of fatal or nonfatal lactic acidosis in metformin-treated patients, and the upper limit for the true incidence was 4.3 cases per 100,000 patient-years versus 5.4 in comparison groups. Mean lactate levels and net change from baseline did not differ between metformin and non-metformin antihyperglycemic treatments. A community-based cohort study subsequently examined the risk of acidosis across the full range of kidney function and found that metformin use was associated with acidosis only at eGFR below 30 mL/min per 1.73 m2. At eGFR between 30 and 44 mL/min per 1.73 m2, the association was not statistically significant in either the primary or replication cohort, supporting cautious use of metformin at eGFR at least 30 mL/min per 1.73 m2. The clinical conclusion is that metformin does increase lactate at a biochemical level through complex I inhibition, but this rarely translates into clinical lactic acidosis in patients who are otherwise healthy and have adequate kidney function; risk is substantially higher when kidney impairment prevents metformin clearance.",
-          "sourceIds": [
-            "OWEN-2000",
-            "SALPETER-2010",
-            "LAZARUS-2018"
-          ],
-          "sentences": [
-            {
-              "text": "Metformin inhibits complex I of the mitochondrial respiratory chain, reducing the rate at which the mitochondria oxidize NADH.",
-              "sources": [
-                "OWEN-2000"
-              ]
-            },
-            {
-              "text": "This slows the conversion of lactate to pyruvate by altering the cytosolic NADH/NAD+ balance, shifting equilibrium toward lactate production.",
-              "sources": [
-                "OWEN-2000"
-              ]
-            },
-            {
-              "text": "Lactate concentrations therefore tend to rise in tissues where metformin is active, raising the theoretical concern that this could cause lactic acidosis.",
-              "sources": [
-                "OWEN-2000"
-              ]
-            },
-            {
-              "text": "The clinical significance of this pharmacological effect has been extensively studied.",
-              "sources": [
-                "SALPETER-2010",
-                "LAZARUS-2018"
-              ]
-            },
-            {
-              "text": "A Cochrane systematic review pooled 347 comparative trials and cohort studies covering 70,490 patient-years of metformin use; it found no cases of fatal or nonfatal lactic acidosis in metformin-treated patients, and the upper limit for the true incidence was 4.3 cases per 100,000 patient-years versus 5.4 in comparison groups.",
-              "sources": [
-                "SALPETER-2010"
-              ]
-            },
-            {
-              "text": "Mean lactate levels and net change from baseline did not differ between metformin and non-metformin antihyperglycemic treatments.",
-              "sources": [
-                "SALPETER-2010"
-              ]
-            },
-            {
-              "text": "A community-based cohort study subsequently examined the risk of acidosis across the full range of kidney function and found that metformin use was associated with acidosis only at eGFR below 30 mL/min per 1.73 m2.",
-              "sources": [
-                "LAZARUS-2018"
-              ]
-            },
-            {
-              "text": "At eGFR between 30 and 44 mL/min per 1.73 m2, the association was not statistically significant in either the primary or replication cohort, supporting cautious use of metformin at eGFR at least 30 mL/min per 1.73 m2.",
-              "sources": [
-                "LAZARUS-2018"
-              ]
-            },
-            {
-              "text": "The clinical conclusion is that metformin does increase lactate at a biochemical level through complex I inhibition, but this rarely translates into clinical lactic acidosis in patients who are otherwise healthy and have adequate kidney function; risk is substantially higher when kidney impairment prevents metformin clearance.",
-              "sources": [
-                "OWEN-2000",
-                "SALPETER-2010",
-                "LAZARUS-2018"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "metformin-ampk-gluconeogenesis",
-          "title": "AMP accumulation links complex I inhibition to AMPK activation",
-          "text": "A proposed mechanistic chain connects metformin's inhibition of complex I to downstream AMPK activation through changes in adenine nucleotide concentrations. When complex I is inhibited, ATP synthesis slows. A preclinical study using 31P-NMR spectroscopy in isolated perfused rat hearts showed that metformin (at 10 mM) increased cytosolic free AMP concentration over time; AMPK activity and phosphorylation of its substrate acetyl-CoA carboxylase were elevated only after the rise in cytosolic free AMP, consistent with free AMP acting as the upstream trigger. Notably, total AMP content and the total AMP/ATP ratio did not increase, indicating that it is the metabolically active free cytosolic AMP rather than total AMP that signals to AMPK. A review of metformin mechanism of action in diabetes and cancer described this chain further: complex I inhibition leads to defective cAMP and protein kinase A signaling in response to glucagon, contributing to suppression of gluconeogenesis; AMPK activation, while not strictly required for the glucose-lowering effect of metformin, confers additional insulin sensitivity mainly by modulating lipid metabolism. These preclinical and review-level data describe a proposed pathway from energy perturbation to AMPK activation to metabolic changes; they do not establish the concentrations of free cytosolic AMP or the degree of AMPK activation that occur in human liver during therapeutic metformin treatment.",
-          "sourceIds": [
-            "ZHANG-2007",
-            "PERNICOVA-2014"
-          ],
-          "sentences": [
-            {
-              "text": "A proposed mechanistic chain connects metformin's inhibition of complex I to downstream AMPK activation through changes in adenine nucleotide concentrations.",
-              "sources": [
-                "ZHANG-2007",
-                "PERNICOVA-2014"
-              ]
-            },
-            {
-              "text": "When complex I is inhibited, ATP synthesis slows.",
-              "sources": [
-                "PERNICOVA-2014"
-              ]
-            },
-            {
-              "text": "A preclinical study using 31P-NMR spectroscopy in isolated perfused rat hearts showed that metformin (at 10 mM) increased cytosolic free AMP concentration over time; AMPK activity and phosphorylation of its substrate acetyl-CoA carboxylase were elevated only after the rise in cytosolic free AMP, consistent with free AMP acting as the upstream trigger.",
-              "sources": [
-                "ZHANG-2007"
-              ]
-            },
-            {
-              "text": "Notably, total AMP content and the total AMP/ATP ratio did not increase, indicating that it is the metabolically active free cytosolic AMP rather than total AMP that signals to AMPK.",
-              "sources": [
-                "ZHANG-2007"
-              ]
-            },
-            {
-              "text": "A review of metformin mechanism of action in diabetes and cancer described this chain further: complex I inhibition leads to defective cAMP and protein kinase A signaling in response to glucagon, contributing to suppression of gluconeogenesis; AMPK activation, while not strictly required for the glucose-lowering effect of metformin, confers additional insulin sensitivity mainly by modulating lipid metabolism.",
-              "sources": [
-                "PERNICOVA-2014"
-              ]
-            },
-            {
-              "text": "These preclinical and review-level data describe a proposed pathway from energy perturbation to AMPK activation to metabolic changes; they do not establish the concentrations of free cytosolic AMP or the degree of AMPK activation that occur in human liver during therapeutic metformin treatment.",
-              "sources": [
-                "ZHANG-2007",
-                "PERNICOVA-2014"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "metformin-nfkb-antiinflammatory",
-          "title": "NF-kB suppression via AMPK and anti-inflammatory signaling",
-          "text": "AMPK activation by metformin has been linked to suppression of NF-kB-driven transcription in cell-line experiments. A preclinical study in adriamycin-resistant MCF-7 breast cancer cells showed that metformin activated AMPK and reduced MDR1 (P-glycoprotein) expression by inhibiting NF-kB transcriptional activity and CREB phosphorylation. Overexpression of the p65 subunit of NF-kB increased MDR1 promoter activity, and metformin attenuated this increase; siRNA knockdown of AMPK attenuated metformin-mediated MDR1 inhibition, confirming that the effect depends on AMPK. A dominant-negative mutant of AMPK reversed metformin-mediated inhibition of both MDR1 expression and CREB phosphorylation. These cell-line findings establish a mechanistic link between AMPK activation, NF-kB suppression, and downstream transcriptional changes. Separately, a review of metformin mechanism notes that AMPK activation modulates lipid metabolism, which connects to lipogenesis regulation. The specific claims of M1 to M2 macrophage cytokine shifts and ROS reduction attributed to metformin in the anti-inflammatory literature were not examined in primary sources verified during this session; those proposed effects require additional original studies and are not described here. All findings in this section are from preclinical cell-line experiments and do not establish anti-inflammatory clinical benefit.",
-          "sourceIds": [
-            "KIM-2011",
-            "PERNICOVA-2014"
-          ],
-          "sentences": [
-            {
-              "text": "AMPK activation by metformin has been linked to suppression of NF-kB-driven transcription in cell-line experiments.",
-              "sources": [
-                "KIM-2011"
-              ]
-            },
-            {
-              "text": "A preclinical study in adriamycin-resistant MCF-7 breast cancer cells showed that metformin activated AMPK and reduced MDR1 (P-glycoprotein) expression by inhibiting NF-kB transcriptional activity and CREB phosphorylation.",
-              "sources": [
-                "KIM-2011"
-              ]
-            },
-            {
-              "text": "Overexpression of the p65 subunit of NF-kB increased MDR1 promoter activity, and metformin attenuated this increase; siRNA knockdown of AMPK attenuated metformin-mediated MDR1 inhibition, confirming that the effect depends on AMPK.",
-              "sources": [
-                "KIM-2011"
-              ]
-            },
-            {
-              "text": "A dominant-negative mutant of AMPK reversed metformin-mediated inhibition of both MDR1 expression and CREB phosphorylation.",
-              "sources": [
-                "KIM-2011"
-              ]
-            },
-            {
-              "text": "Separately, a review of metformin mechanism notes that AMPK activation modulates lipid metabolism, which connects to lipogenesis regulation.",
-              "sources": [
-                "PERNICOVA-2014"
-              ]
-            },
-            {
-              "text": "The specific claims of M1 to M2 macrophage cytokine shifts and ROS reduction attributed to metformin in the anti-inflammatory literature were not examined in primary sources verified during this session; those proposed effects require additional original studies and are not described here.",
-              "sources": [
-                "KIM-2011",
-                "PERNICOVA-2014"
-              ]
-            },
-            {
-              "text": "All findings in this section are from preclinical cell-line experiments and do not establish anti-inflammatory clinical benefit.",
-              "sources": [
-                "KIM-2011"
-              ]
-            }
-          ]
-        }
-      ],
-      "rationales": [
-        {
-          "id": "metformin-mechanism-1",
-          "condition": "Acute COVID-19 and Long COVID",
-          "conditionHref": "/conditions/long-covid",
-          "rationale": {
-            "text": "Proposed: suppression of mTOR-dependent host-cell protein production could reduce viral replication during early infection.",
-            "sourceIds": [
-              "MF-COVID-VIRAL-2024"
-            ],
-            "sentences": [
-              {
-                "text": "Proposed: suppression of mTOR-dependent host-cell protein production could reduce viral replication during early infection.",
-                "sources": [
-                  "MF-COVID-VIRAL-2024"
-                ]
-              }
-            ]
-          },
-          "tested": {
-            "text": "Measured: the COVID-OUT nasal-swab study found lower average viral RNA during acute infection with metformin than with placebo.",
-            "sourceIds": [
-              "MF-COVID-VIRAL-2024"
-            ],
-            "sentences": [
-              {
-                "text": "Measured: the COVID-OUT nasal-swab study found lower average viral RNA during acute infection with metformin than with placebo.",
-                "sources": [
-                  "MF-COVID-VIRAL-2024"
-                ]
-              }
-            ]
-          },
-          "limits": {
-            "text": "Viral RNA does not prove the pathway responsible or establish treatment benefit after Long COVID has developed. Prevention and treatment trials address different questions.",
-            "sourceIds": [
-              "MF-COVID-VIRAL-2024",
-              "P-COVIDOUT-2023",
-              "P-KOREA-2026"
-            ],
-            "sentences": [
-              {
-                "text": "Viral RNA does not prove the pathway responsible or establish treatment benefit after Long COVID has developed. Prevention and treatment trials address different questions.",
-                "sources": [
-                  "MF-COVID-VIRAL-2024",
-                  "P-COVIDOUT-2023",
-                  "P-KOREA-2026"
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "id": "metformin-mechanism-2",
-          "condition": "Parkinson’s disease",
-          "conditionHref": "/conditions/parkinson-disease",
-          "rationale": {
-            "text": "Proposed: protecting dopamine-producing nerve cells through AMPK, autophagy and reduced inflammatory and mitochondrial stress.",
-            "sourceIds": [
-              "MF-PD-MECHANISM-2016"
-            ],
-            "sentences": [
-              {
-                "text": "Proposed: protecting dopamine-producing nerve cells through AMPK, autophagy and reduced inflammatory and mitochondrial stress.",
-                "sources": [
-                  "MF-PD-MECHANISM-2016"
-                ]
-              }
-            ]
-          },
-          "tested": {
-            "text": "Cell and mouse experiments measured pathway and injury-related effects; a human pilot tested metformin alongside levodopa/carbidopa and measured symptoms and blood markers.",
-            "sourceIds": [
-              "MF-PD-MECHANISM-2016",
-              "CP016"
-            ],
-            "sentences": [
-              {
-                "text": "Cell and mouse experiments measured pathway and injury-related effects; a human pilot tested metformin alongside levodopa/carbidopa and measured symptoms and blood markers.",
-                "sources": [
-                  "MF-PD-MECHANISM-2016",
-                  "CP016"
-                ]
-              }
-            ]
-          },
-          "limits": {
-            "text": "Blood-marker changes do not demonstrate the same mechanism in brain tissue. The pilot did not establish a between-group benefit on total UPDRS or slower disease progression.",
-            "sourceIds": [
-              "CP016"
-            ],
-            "sentences": [
-              {
-                "text": "Blood-marker changes do not demonstrate the same mechanism in brain tissue. The pilot did not establish a between-group benefit on total UPDRS or slower disease progression.",
-                "sources": [
-                  "CP016"
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "id": "metformin-mechanism-3",
-          "condition": "Cognition in schizophrenia",
-          "conditionHref": "/conditions/schizophrenia",
-          "rationale": {
-            "text": "Proposed: altered energy metabolism could affect brain networks involved in memory. The tricarboxylic acid cycle helps cells convert nutrients into usable energy.",
-            "sourceIds": [
-              "CP017"
-            ],
-            "sentences": [
-              {
-                "text": "Proposed: altered energy metabolism could affect brain networks involved in memory. The tricarboxylic acid cycle helps cells convert nutrients into usable energy.",
-                "sources": [
-                  "CP017"
-                ]
-              }
-            ]
-          },
-          "tested": {
-            "text": "An exploratory analysis linked blood-metabolite changes with working memory, verbal learning and hippocampal connectivity during treatment.",
-            "sourceIds": [
-              "CP017"
-            ],
-            "sentences": [
-              {
-                "text": "An exploratory analysis linked blood-metabolite changes with working memory, verbal learning and hippocampal connectivity during treatment.",
-                "sources": [
-                  "CP017"
-                ]
-              }
-            ]
-          },
-          "limits": {
-            "text": "These are associations from an analysis of the existing trial, not an independent efficacy trial or a direct measurement of energy production in the brain.",
-            "sourceIds": [
-              "CP017",
-              "MF-SCHIZOPHRENIA-PARENT-2023"
-            ],
-            "sentences": [
-              {
-                "text": "These are associations from an analysis of the existing trial, not an independent efficacy trial or a direct measurement of energy production in the brain.",
-                "sources": [
-                  "CP017",
-                  "MF-SCHIZOPHRENIA-PARENT-2023"
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "id": "metformin-mechanism-4",
-          "condition": "Muscle aging and sarcopenia",
-          "conditionHref": "/conditions/sarcopenia",
-          "rationale": {
-            "text": "Proposed: modifying inflammation and energy sensing could preserve muscle function, but AMPK-related restraint of mTORC1 could also reduce muscle growth.",
-            "sourceIds": [
-              "MF-MASTERS-2019"
-            ],
-            "sentences": [
-              {
-                "text": "Proposed: modifying inflammation and energy sensing could preserve muscle function, but AMPK-related restraint of mTORC1 could also reduce muscle growth.",
-                "sources": [
-                  "MF-MASTERS-2019"
-                ]
-              }
-            ]
-          },
-          "tested": {
-            "text": "MASTERS examined metformin during resistance training in older adults and found smaller gains in lean and thigh muscle mass.",
-            "sourceIds": [
-              "MF-MASTERS-2019"
-            ],
-            "sentences": [
-              {
-                "text": "MASTERS examined metformin during resistance training in older adults and found smaller gains in lean and thigh muscle mass.",
-                "sources": [
-                  "MF-MASTERS-2019"
-                ]
-              }
-            ]
-          },
-          "limits": {
-            "text": "Muscle growth and physical function are distinct outcomes. These results do not establish a sarcopenia benefit; MET-PREVENT found no walking-speed improvement.",
-            "sourceIds": [
-              "MF-MASTERS-2019",
-              "MF-METPREVENT-2025"
-            ],
-            "sentences": [
-              {
-                "text": "Muscle growth and physical function are distinct outcomes. These results do not establish a sarcopenia benefit; MET-PREVENT found no walking-speed improvement.",
-                "sources": [
-                  "MF-MASTERS-2019",
-                  "MF-METPREVENT-2025"
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "id": "metformin-prostate-mechanism",
-          "condition": "Prostate cancer",
-          "conditionHref": "/conditions/prostate-cancer",
-          "rationale": {
-            "text": "Proposed: improve metabolic health during androgen deprivation, which can worsen metabolic risk.",
-            "sourceIds": [
-              "MF-STAMPEDE-2025"
-            ],
-            "sentences": [
-              {
-                "text": "Proposed: improve metabolic health during androgen deprivation, which can worsen metabolic risk.",
-                "sources": [
-                  "MF-STAMPEDE-2025"
-                ]
-              }
-            ]
-          },
-          "tested": {
-            "text": "STAMPEDE tested metformin with standard treatment and measured metabolic and cancer outcomes.",
-            "sourceIds": [
-              "MF-STAMPEDE-2025"
-            ],
-            "sentences": [
-              {
-                "text": "STAMPEDE tested metformin with standard treatment and measured metabolic and cancer outcomes.",
-                "sources": [
-                  "MF-STAMPEDE-2025"
-                ]
-              }
-            ]
-          },
-          "limits": {
-            "text": "Improved metabolic outcomes did not establish a significant overall survival benefit or a direct tumor-killing mechanism.",
-            "sourceIds": [
-              "MF-STAMPEDE-2025"
-            ],
-            "sentences": [
-              {
-                "text": "Improved metabolic outcomes did not establish a significant overall survival benefit or a direct tumor-killing mechanism.",
-                "sources": [
-                  "MF-STAMPEDE-2025"
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "id": "metformin-cancer-energy",
-          "condition": "Non-small-cell lung cancer",
-          "conditionHref": "/conditions/non-small-cell-lung-cancer",
-          "rationale": {
-            "text": "Proposed: alter tumor metabolism to increase sensitivity to chemoradiation.",
-            "sourceIds": [
-              "MF-NRG-LU001-2021",
-              "MF-ALMERA-2021"
-            ],
-            "sentences": [
-              {
-                "text": "Proposed: alter tumor metabolism to increase sensitivity to chemoradiation.",
-                "sources": [
-                  "MF-NRG-LU001-2021",
-                  "MF-ALMERA-2021"
-                ]
-              }
-            ]
-          },
-          "tested": {
-            "text": "NRG-LU001 and OCOG-ALMERA tested metformin added to chemoradiation in randomized trials.",
-            "sourceIds": [
-              "MF-NRG-LU001-2021",
-              "MF-ALMERA-2021"
-            ],
-            "sentences": [
-              {
-                "text": "NRG-LU001 and OCOG-ALMERA tested metformin added to chemoradiation in randomized trials.",
-                "sources": [
-                  "MF-NRG-LU001-2021",
-                  "MF-ALMERA-2021"
-                ]
-              }
-            ]
-          },
-          "limits": {
-            "text": "NRG-LU001 found no benefit; the small ALMERA trial reported worse survival estimates with metformin. Testing a combination does not establish that the proposed metabolic pathway mediated its results.",
-            "sourceIds": [
-              "MF-NRG-LU001-2021",
-              "MF-ALMERA-2021"
-            ],
-            "sentences": [
-              {
-                "text": "NRG-LU001 found no benefit; the small ALMERA trial reported worse survival estimates with metformin. Testing a combination does not establish that the proposed metabolic pathway mediated its results.",
-                "sources": [
-                  "MF-NRG-LU001-2021",
-                  "MF-ALMERA-2021"
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "id": "metformin-breast-mechanism",
-          "condition": "Breast cancer",
-          "conditionHref": "/conditions/breast-cancer",
-          "rationale": {
-            "text": "Proposed: lower insulin-related signaling could reduce growth stimulation in some tumors.",
-            "sourceIds": [
-              "COND-C15-MA32-METABOLIC"
-            ],
-            "sentences": [
-              {
-                "text": "Proposed: lower insulin-related signaling could reduce growth stimulation in some tumors.",
-                "sources": [
-                  "COND-C15-MA32-METABOLIC"
-                ]
-              }
-            ]
-          },
-          "tested": {
-            "text": "MA.32 measured insulin, weight and other metabolic changes as well as invasive disease-free survival.",
-            "sourceIds": [
-              "COND-C15-MA32-METABOLIC",
-              "COND-C15-MA32-2022"
-            ],
-            "sentences": [
-              {
-                "text": "MA.32 measured insulin, weight and other metabolic changes as well as invasive disease-free survival.",
-                "sources": [
-                  "COND-C15-MA32-METABOLIC",
-                  "COND-C15-MA32-2022"
-                ]
-              }
-            ]
-          },
-          "limits": {
-            "text": "Metabolic improvements did not translate into improved invasive disease-free survival in the clinical report.",
-            "sourceIds": [
-              "COND-C15-MA32-2022"
-            ],
-            "sentences": [
-              {
-                "text": "Metabolic improvements did not translate into improved invasive disease-free survival in the clinical report.",
-                "sources": [
-                  "COND-C15-MA32-2022"
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "id": "metformin-colorectal-mechanism",
-          "condition": "Colorectal adenoma prevention",
-          "conditionHref": "/conditions/colorectal-cancer",
-          "rationale": {
-            "text": "Rationale: suppress epithelial proliferation as a possible route to reducing new colorectal lesions.",
-            "sourceIds": [
-              "MF-COLON-MECHANISM-2010"
-            ],
-            "sentences": [
-              {
-                "text": "Rationale: suppress epithelial proliferation as a possible route to reducing new colorectal lesions.",
-                "sources": [
-                  "MF-COLON-MECHANISM-2010"
-                ]
-              }
-            ]
-          },
-          "tested": {
-            "text": "Short-term human research measured reduced proliferation and fewer aberrant crypt foci; a later trial measured adenoma recurrence after polyp removal.",
-            "sourceIds": [
-              "MF-COLON-MECHANISM-2010",
-              "MF-ADENOMA-2016"
-            ],
-            "sentences": [
-              {
-                "text": "Short-term human research measured reduced proliferation and fewer aberrant crypt foci; a later trial measured adenoma recurrence after polyp removal.",
-                "sources": [
-                  "MF-COLON-MECHANISM-2010",
-                  "MF-ADENOMA-2016"
-                ]
-              }
-            ]
-          },
-          "limits": {
-            "text": "These endpoints concern early lesions and recurrence prevention. They do not establish treatment efficacy or a survival benefit in established colorectal cancer.",
-            "sourceIds": [
-              "MF-COLON-MECHANISM-2010",
-              "MF-ADENOMA-2016"
-            ],
-            "sentences": [
-              {
-                "text": "These endpoints concern early lesions and recurrence prevention. They do not establish treatment efficacy or a survival benefit in established colorectal cancer.",
-                "sources": [
-                  "MF-COLON-MECHANISM-2010",
-                  "MF-ADENOMA-2016"
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "id": "metformin-pancreatic-mechanism",
-          "condition": "Pancreatic cancer",
-          "conditionHref": "/conditions/pancreatic-cancer",
-          "rationale": {
-            "text": "Proposed: induce metabolic stress in tumor cells and modify insulin-related growth signals.",
-            "sourceIds": [
-              "COND-C17-MET-2015"
-            ],
-            "sentences": [
-              {
-                "text": "Proposed: induce metabolic stress in tumor cells and modify insulin-related growth signals.",
-                "sources": [
-                  "COND-C17-MET-2015"
-                ]
-              }
-            ]
-          },
-          "tested": {
-            "text": "A randomized trial tested metformin alongside gemcitabine and erlotinib.",
-            "sourceIds": [
-              "COND-C17-MET-2015"
-            ],
-            "sentences": [
-              {
-                "text": "A randomized trial tested metformin alongside gemcitabine and erlotinib.",
-                "sources": [
-                  "COND-C17-MET-2015"
-                ]
-              }
-            ]
-          },
-          "limits": {
-            "text": "The combination did not improve survival. The proposed mechanism remains distinct from a demonstrated treatment benefit.",
-            "sourceIds": [
-              "COND-C17-MET-2015"
-            ],
-            "sentences": [
-              {
-                "text": "The combination did not improve survival. The proposed mechanism remains distinct from a demonstrated treatment benefit.",
-                "sources": [
-                  "COND-C17-MET-2015"
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "id": "metformin-myeloma-mechanism",
-          "condition": "Multiple myeloma",
-          "conditionHref": "/conditions/multiple-myeloma",
-          "rationale": {
-            "text": "Measured in models: AMPK activation and suppression of mTORC1/mTORC2, with autophagy and cell-cycle arrest.",
-            "sourceIds": [
-              "MF-MYELOMA-MODELS-2018"
-            ],
-            "sentences": [
-              {
-                "text": "Measured in models: AMPK activation and suppression of mTORC1/mTORC2, with autophagy and cell-cycle arrest.",
-                "sources": [
-                  "MF-MYELOMA-MODELS-2018"
-                ]
-              }
-            ]
-          },
-          "tested": {
-            "text": "Cell lines and mouse xenografts showed reduced tumor-cell growth.",
-            "sourceIds": [
-              "MF-MYELOMA-MODELS-2018"
-            ],
-            "sentences": [
-              {
-                "text": "Cell lines and mouse xenografts showed reduced tumor-cell growth.",
-                "sources": [
-                  "MF-MYELOMA-MODELS-2018"
-                ]
-              }
-            ]
-          },
-          "limits": {
-            "text": "These experimental models do not establish effective human exposure, clinical dosing or patient benefit.",
-            "sourceIds": [
-              "MF-MYELOMA-MODELS-2018"
-            ],
-            "sentences": [
-              {
-                "text": "These experimental models do not establish effective human exposure, clinical dosing or patient benefit.",
-                "sources": [
-                  "MF-MYELOMA-MODELS-2018"
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
       "drugId": "D02",
       "originalAction": {
         "text": "Fluvoxamine blocks serotonin reuptake, increasing serotonin signaling; its labeled use is obsessive-compulsive disorder.",
@@ -5996,6 +4978,1181 @@
               ]
             }
           ]
+        }
+      ]
+    },
+    {
+      "drugId": "D01",
+      "presentation": "pathway-table-pilot",
+      "originalAction": {
+        "text": "Metformin's established glucose-lowering action combines reduced glucose production by the liver, reduced intestinal glucose absorption and improved uptake and use of glucose by tissues. It improves insulin sensitivity without stimulating insulin secretion. Repurposing research asks whether changes in cellular energy sensing, growth signals and the handling of damaged cellular material can be useful beyond diabetes. AMPK is an energy-sensing enzyme, while mTOR signaling helps regulate protein production and cell growth; altering these systems can have different consequences in infected cells, tumors and healthy muscle. The evidence below distinguishes effects measured in experimental models from proposed explanations and from clinical outcomes, because demonstrating a pathway change does not establish that a treatment helps patients.",
+        "sourceIds": [
+          "MF-LABEL-2025",
+          "MF-PD-MECHANISM-2016",
+          "MF-COVID-VIRAL-2024",
+          "MF-MASTERS-2019",
+          "MF-MYELOMA-MODELS-2018",
+          "CP017",
+          "COND-C15-MA32-2022"
+        ],
+        "sentences": [
+          {
+            "text": "Metformin's established glucose-lowering action combines reduced glucose production by the liver, reduced intestinal glucose absorption and improved uptake and use of glucose by tissues. It improves insulin sensitivity without stimulating insulin secretion.",
+            "sources": [
+              "MF-LABEL-2025"
+            ]
+          },
+          {
+            "text": "Repurposing research asks whether changes in cellular energy sensing, growth signals and the handling of damaged cellular material can be useful beyond diabetes. AMPK is an energy-sensing enzyme, while mTOR signaling helps regulate protein production and cell growth; altering these systems can have different consequences in infected cells, tumors and healthy muscle.",
+            "sources": [
+              "MF-PD-MECHANISM-2016",
+              "MF-COVID-VIRAL-2024",
+              "MF-MASTERS-2019",
+              "MF-MYELOMA-MODELS-2018"
+            ]
+          },
+          {
+            "text": "The evidence below distinguishes effects measured in experimental models from proposed explanations and from clinical outcomes, because demonstrating a pathway change does not establish that a treatment helps patients.",
+            "sources": [
+              "MF-PD-MECHANISM-2016",
+              "CP017",
+              "COND-C15-MA32-2022"
+            ]
+          }
+        ]
+      },
+      "pathways": [
+        {
+          "id": "metformin-insulin-growth",
+          "title": "Insulin sensitivity and growth signaling",
+          "text": "Improving insulin sensitivity is part of metformin's established action in diabetes. In cancer repurposing, reducing insulin-related growth stimulation is one proposed route to benefit. The MA.32 breast-cancer trial measured changes in insulin, weight and other metabolic factors, but its clinical report did not show improved invasive disease-free survival. These findings distinguish a measured metabolic effect from an unconfirmed anticancer benefit.",
+          "sourceIds": [
+            "MF-LABEL-2025",
+            "COND-C15-MA32-METABOLIC",
+            "COND-C15-MA32-2022"
+          ],
+          "sentences": [
+            {
+              "text": "Improving insulin sensitivity is part of metformin's established action in diabetes. In cancer repurposing, reducing insulin-related growth stimulation is one proposed route to benefit.",
+              "sources": [
+                "MF-LABEL-2025",
+                "COND-C15-MA32-METABOLIC"
+              ]
+            },
+            {
+              "text": "The MA.32 breast-cancer trial measured changes in insulin, weight and other metabolic factors, but its clinical report did not show improved invasive disease-free survival. These findings distinguish a measured metabolic effect from an unconfirmed anticancer benefit.",
+              "sources": [
+                "COND-C15-MA32-METABOLIC",
+                "COND-C15-MA32-2022"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "metformin-ampk-mtor",
+          "title": "AMPK, mTOR and the balance between energy use and growth",
+          "text": "AMPK activation and reduced mTOR signaling provide a rationale for changing cell growth and protein production. In myeloma cell lines and mouse xenografts, metformin activated AMPK, suppressed mTORC1 and mTORC2 signaling, and was associated with autophagy, cell-cycle arrest and reduced tumor growth. In viral infection, suppression of host-cell protein production is a proposed explanation for reduced SARS-CoV-2 replication; the COVID-OUT nasal-swab study measured viral RNA rather than directly proving that mTOR mediated the reduction in viral RNA. The same growth-related pathways also matter in healthy tissue: mTORC1 supports muscle growth, and metformin reduced muscle gains during resistance training in the MASTERS trial. A mechanism that appears useful in one setting can therefore work against the intended outcome in another. The same restraint of mTOR-related growth signals extends to aerobic-exercise adaptations: in a randomized double-blind placebo-controlled trial of supervised aerobic exercise training in healthy older adults aged 65 years and older, metformin attenuated skeletal muscle mitochondrial biogenesis compared with placebo, with markers of mitochondrial content increasing in the exercise-plus-placebo group but not the exercise-plus-metformin group. Together, the resistance-training and aerobic-exercise trials show that metformin blunts both muscle mass gains and mitochondrial adaptations to exercise in older adults, an important consideration for individuals who rely on exercise training for health.",
+          "sourceIds": [
+            "MF-MYELOMA-MODELS-2018",
+            "MF-COVID-VIRAL-2024",
+            "MF-MASTERS-2019",
+            "KONOPKA-2019"
+          ],
+          "sentences": [
+            {
+              "text": "AMPK activation and reduced mTOR signaling provide a rationale for changing cell growth and protein production. In myeloma cell lines and mouse xenografts, metformin activated AMPK, suppressed mTORC1 and mTORC2 signaling, and was associated with autophagy, cell-cycle arrest and reduced tumor growth.",
+              "sources": [
+                "MF-MYELOMA-MODELS-2018"
+              ]
+            },
+            {
+              "text": "In viral infection, suppression of host-cell protein production is a proposed explanation for reduced SARS-CoV-2 replication; the COVID-OUT nasal-swab study measured viral RNA rather than directly proving that mTOR mediated the reduction in viral RNA.",
+              "sources": [
+                "MF-COVID-VIRAL-2024"
+              ]
+            },
+            {
+              "text": "The same growth-related pathways also matter in healthy tissue: mTORC1 supports muscle growth, and metformin reduced muscle gains during resistance training in the MASTERS trial. A mechanism that appears useful in one setting can therefore work against the intended outcome in another.",
+              "sources": [
+                "MF-MASTERS-2019"
+              ]
+            },
+            {
+              "text": "The same restraint of mTOR-related growth signals extends to aerobic-exercise adaptations: in a randomized double-blind placebo-controlled trial of supervised aerobic exercise training in healthy older adults aged 65 years and older, metformin attenuated skeletal muscle mitochondrial biogenesis compared with placebo, with markers of mitochondrial content increasing in the exercise-plus-placebo group but not the exercise-plus-metformin group.",
+              "sources": [
+                "KONOPKA-2019"
+              ]
+            },
+            {
+              "text": "Together, the resistance-training and aerobic-exercise trials show that metformin blunts both muscle mass gains and mitochondrial adaptations to exercise in older adults, an important consideration for individuals who rely on exercise training for health.",
+              "sources": [
+                "MF-MASTERS-2019",
+                "KONOPKA-2019"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "autophagy-causality",
+          "title": "Autophagy and mitochondrial stress",
+          "text": "Autophagy is the cell's process for recycling cellular material. In Parkinson's disease cell and mouse models, metformin was associated with AMPK activation and autophagy, less mitochondrial oxidative stress and reduced accumulation of alpha-synuclein. Blocking AMPK or autophagy weakened protection in toxin-injured cells, supporting a contribution from these pathways within that model. Inhibitor specificity, the experimental exposure and the difference between toxin injury and human disease limit translation; these experiments do not establish that metformin slows Parkinson's disease in people.",
+          "sourceIds": [
+            "MF-PD-MECHANISM-2016"
+          ],
+          "sentences": [
+            {
+              "text": "Autophagy is the cell's process for recycling cellular material. In Parkinson's disease cell and mouse models, metformin was associated with AMPK activation and autophagy, less mitochondrial oxidative stress and reduced accumulation of alpha-synuclein.",
+              "sources": [
+                "MF-PD-MECHANISM-2016"
+              ]
+            },
+            {
+              "text": "Blocking AMPK or autophagy weakened protection in toxin-injured cells, supporting a contribution from these pathways within that model. Inhibitor specificity, the experimental exposure and the difference between toxin injury and human disease limit translation; these experiments do not establish that metformin slows Parkinson's disease in people.",
+              "sources": [
+                "MF-PD-MECHANISM-2016"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "metformin-complex-i",
+          "title": "Complex I inhibition and energy sensing",
+          "text": "Two preclinical studies in cells and isolated mitochondria show that metformin inhibits complex I of the mitochondrial respiratory chain, the enzyme that initiates electron transfer during cellular respiration. In intact hepatoma cells, 50 micromolar metformin produced time-dependent inhibition of complex I activity, reducing glutamate oxidation by 13 percent after 24 hours and 30 percent after 60 hours; succinate oxidation, which enters at complex II, was unaffected, confirming selectivity for complex I. In a complementary study using isolated rat hepatocytes, inhibition of cell respiration by metformin occurred only in intact cells and not in permeabilized cells or isolated mitochondria, demonstrating that the mechanism requires an indirect, cell-mediated signaling step rather than direct drug contact with the enzyme. In isolated sub-mitochondrial particles, half-maximal inhibition required approximately 79 mM, far above therapeutic plasma concentrations, while the effect appeared at 50 micromolar in intact cells, consistent with intracellular drug accumulation. Reduced flux through complex I lowers cellular ATP production and is proposed to be one upstream trigger for the AMPK activation described in other pathway studies. These are preclinical findings from cell lines, isolated hepatocytes, and sub-cellular fractions; they do not establish the concentrations, tissue distribution, or extent of complex I inhibition during therapeutic metformin treatment in people.",
+          "sourceIds": [
+            "OWEN-2000",
+            "EL-MIR-2000"
+          ],
+          "sentences": [
+            {
+              "text": "Two preclinical studies in cells and isolated mitochondria show that metformin inhibits complex I of the mitochondrial respiratory chain, the enzyme that initiates electron transfer during cellular respiration.",
+              "sources": [
+                "OWEN-2000",
+                "EL-MIR-2000"
+              ]
+            },
+            {
+              "text": "In intact hepatoma cells, 50 micromolar metformin produced time-dependent inhibition of complex I activity, reducing glutamate oxidation by 13 percent after 24 hours and 30 percent after 60 hours; succinate oxidation, which enters at complex II, was unaffected, confirming selectivity for complex I.",
+              "sources": [
+                "OWEN-2000"
+              ]
+            },
+            {
+              "text": "In a complementary study using isolated rat hepatocytes, inhibition of cell respiration by metformin occurred only in intact cells and not in permeabilized cells or isolated mitochondria, demonstrating that the mechanism requires an indirect, cell-mediated signaling step rather than direct drug contact with the enzyme.",
+              "sources": [
+                "EL-MIR-2000"
+              ]
+            },
+            {
+              "text": "In isolated sub-mitochondrial particles, half-maximal inhibition required approximately 79 mM, far above therapeutic plasma concentrations, while the effect appeared at 50 micromolar in intact cells, consistent with intracellular drug accumulation.",
+              "sources": [
+                "OWEN-2000"
+              ]
+            },
+            {
+              "text": "Reduced flux through complex I lowers cellular ATP production and is proposed to be one upstream trigger for the AMPK activation described in other pathway studies.",
+              "sources": [
+                "OWEN-2000",
+                "EL-MIR-2000"
+              ]
+            },
+            {
+              "text": "These are preclinical findings from cell lines, isolated hepatocytes, and sub-cellular fractions; they do not establish the concentrations, tissue distribution, or extent of complex I inhibition during therapeutic metformin treatment in people.",
+              "sources": [
+                "OWEN-2000",
+                "EL-MIR-2000"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "metformin-mgpd",
+          "title": "Mitochondrial glycerophosphate dehydrogenase inhibition and hepatic redox",
+          "text": "A 2014 preclinical study in rodent models showed that metformin inhibits mitochondrial glycerophosphate dehydrogenase (mGPD), an enzyme on the inner mitochondrial membrane that links glycerol metabolism to the electron transport chain. Inhibiting mGPD allows NADH to accumulate in the cytoplasm, increasing the cytosolic redox state; at the same time, the mitochondrial redox state decreases. This altered hepatocellular redox balance reduces the conversion of lactate and glycerol into gluconeogenic substrates, thereby suppressing hepatic glucose production. Acute and chronic low-dose metformin treatment reduced endogenous glucose production in rodents while producing the predicted redox changes in both cytosolic and mitochondrial compartments. When hepatic mGPD was knocked down in rats using antisense oligonucleotides, the animals developed a phenotype resembling chronic metformin treatment, and metformin could no longer increase cytosolic redox, lower plasma glucose, or inhibit endogenous glucose production. These findings were confirmed in whole-body mGPD knockout mice. Because mGPD inhibition suppresses gluconeogenesis through a redox mechanism that does not require AMPK activation, this pathway is proposed as an alternative or complementary route to complex I inhibition for how metformin reduces hepatic glucose output. All findings reported here are from preclinical rat and mouse models; this study does not establish the degree of mGPD inhibition during therapeutic metformin treatment in people.",
+          "sourceIds": [
+            "MADIRAJU-2014"
+          ],
+          "sentences": [
+            {
+              "text": "A 2014 preclinical study in rodent models showed that metformin inhibits mitochondrial glycerophosphate dehydrogenase (mGPD), an enzyme on the inner mitochondrial membrane that links glycerol metabolism to the electron transport chain.",
+              "sources": [
+                "MADIRAJU-2014"
+              ]
+            },
+            {
+              "text": "Inhibiting mGPD allows NADH to accumulate in the cytoplasm, increasing the cytosolic redox state; at the same time, the mitochondrial redox state decreases.",
+              "sources": [
+                "MADIRAJU-2014"
+              ]
+            },
+            {
+              "text": "This altered hepatocellular redox balance reduces the conversion of lactate and glycerol into gluconeogenic substrates, thereby suppressing hepatic glucose production.",
+              "sources": [
+                "MADIRAJU-2014"
+              ]
+            },
+            {
+              "text": "Acute and chronic low-dose metformin treatment reduced endogenous glucose production in rodents while producing the predicted redox changes in both cytosolic and mitochondrial compartments.",
+              "sources": [
+                "MADIRAJU-2014"
+              ]
+            },
+            {
+              "text": "When hepatic mGPD was knocked down in rats using antisense oligonucleotides, the animals developed a phenotype resembling chronic metformin treatment, and metformin could no longer increase cytosolic redox, lower plasma glucose, or inhibit endogenous glucose production.",
+              "sources": [
+                "MADIRAJU-2014"
+              ]
+            },
+            {
+              "text": "These findings were confirmed in whole-body mGPD knockout mice.",
+              "sources": [
+                "MADIRAJU-2014"
+              ]
+            },
+            {
+              "text": "Because mGPD inhibition suppresses gluconeogenesis through a redox mechanism that does not require AMPK activation, this pathway is proposed as an alternative or complementary route to complex I inhibition for how metformin reduces hepatic glucose output.",
+              "sources": [
+                "MADIRAJU-2014"
+              ]
+            },
+            {
+              "text": "All findings reported here are from preclinical rat and mouse models; this study does not establish the degree of mGPD inhibition during therapeutic metformin treatment in people.",
+              "sources": [
+                "MADIRAJU-2014"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "metformin-gut",
+          "title": "Gut microbiome shifts and intestinal action",
+          "text": "Metformin accumulates in intestinal tissues at concentrations exceeding plasma levels and has well-documented effects on gut microbiota composition. In a 4-month randomized double-blind trial in individuals with treatment-naive type 2 diabetes, metformin produced strong shifts in gut microbiome composition compared with placebo. Transfer of fecal samples from metformin-treated donors to germ-free mice improved glucose tolerance in the recipient animals, suggesting that at least some of the antidiabetic effect is mediated through microbiota changes. Metformin affected pathways with shared biological functions in species from two bacterial phyla, and many metformin-regulated genes encoded metalloproteins or metal transporters. A separate analysis of 784 human gut metagenomes showed that metformin treatment can confound gut microbiome signatures attributed to type 2 diabetes itself, because the two conditions have distinct but overlapping microbial signatures. Metformin was associated with increased short-chain fatty acid production, proposed as a beneficial mechanism, but also with a relative increase in Escherichia species abundance, which may underlie some intestinal adverse effects. A gut-restricted mechanism of action is supported by delayed-release metformin formulation data: a formulation targeting the distal small intestine lowered plasma glucose and enhanced fasting and postprandial GLP-1 and PYY secretion despite approximately 28% lower systemic bioavailability compared with immediate-release metformin. The maintained glucose-lowering effect at lower plasma drug levels, combined with enhanced gut hormone release, provides evidence that metformin acts directly on intestinal tissue and not solely through portal delivery to the liver.",
+          "sourceIds": [
+            "WU-2017",
+            "FORSLUND-2015",
+            "DEFRONZO-2016"
+          ],
+          "sentences": [
+            {
+              "text": "Metformin accumulates in intestinal tissues at concentrations exceeding plasma levels and has well-documented effects on gut microbiota composition.",
+              "sources": [
+                "WU-2017",
+                "DEFRONZO-2016"
+              ]
+            },
+            {
+              "text": "In a 4-month randomized double-blind trial in individuals with treatment-naive type 2 diabetes, metformin produced strong shifts in gut microbiome composition compared with placebo.",
+              "sources": [
+                "WU-2017"
+              ]
+            },
+            {
+              "text": "Transfer of fecal samples from metformin-treated donors to germ-free mice improved glucose tolerance in the recipient animals, suggesting that at least some of the antidiabetic effect is mediated through microbiota changes.",
+              "sources": [
+                "WU-2017"
+              ]
+            },
+            {
+              "text": "Metformin affected pathways with shared biological functions in species from two bacterial phyla, and many metformin-regulated genes encoded metalloproteins or metal transporters.",
+              "sources": [
+                "WU-2017"
+              ]
+            },
+            {
+              "text": "A separate analysis of 784 human gut metagenomes showed that metformin treatment can confound gut microbiome signatures attributed to type 2 diabetes itself, because the two conditions have distinct but overlapping microbial signatures.",
+              "sources": [
+                "FORSLUND-2015"
+              ]
+            },
+            {
+              "text": "Metformin was associated with increased short-chain fatty acid production, proposed as a beneficial mechanism, but also with a relative increase in Escherichia species abundance, which may underlie some intestinal adverse effects.",
+              "sources": [
+                "FORSLUND-2015"
+              ]
+            },
+            {
+              "text": "A gut-restricted mechanism of action is supported by delayed-release metformin formulation data: a formulation targeting the distal small intestine lowered plasma glucose and enhanced fasting and postprandial GLP-1 and PYY secretion despite approximately 28% lower systemic bioavailability compared with immediate-release metformin.",
+              "sources": [
+                "DEFRONZO-2016"
+              ]
+            },
+            {
+              "text": "The maintained glucose-lowering effect at lower plasma drug levels, combined with enhanced gut hormone release, provides evidence that metformin acts directly on intestinal tissue and not solely through portal delivery to the liver.",
+              "sources": [
+                "DEFRONZO-2016"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "metformin-gdf15",
+          "title": "GDF15 induction and appetite suppression",
+          "text": "Growth differentiation factor 15 (GDF15) is a stress-response cytokine that reduces food intake and body weight by acting on a brain-stem-restricted receptor called GDNF family receptor alpha-like (GFRAL). Two preclinical studies showed that GDF15 is an important mediator of metformin's effects on body weight and energy balance. In mouse models, oral metformin elevated circulating GDF15, with the increase in GDF15 expression predominantly in the distal intestine and kidney. Metformin prevented weight gain on a high-fat diet in wild-type mice but not in mice lacking GDF15 or its receptor GFRAL; a GFRAL-antagonist antibody reversed the weight-reducing effect of metformin in obese mice, confirming that GDF15 signaling through GFRAL is required for metformin to influence body weight. Notably, metformin retained its glucose-lowering action in the absence of GDF15 signaling, indicating that glucose control and body weight effects involve separate mechanisms. A complementary preclinical study found that metformin stimulates GDF15 secretion in primary mouse hepatocytes by increasing expression of the transcription factors ATF4 and CHOP/DDIT3; in GDF15 null mice, metformin did not reduce food intake, body mass, or fasting insulin. In patients with type 2 diabetes taking metformin, higher serum GDF15 concentrations were associated with weight loss, an observational human association consistent with the mouse mechanistic data. All mechanistic data are from preclinical cell and animal experiments; the human association is observational and cannot establish causation.",
+          "sourceIds": [
+            "COLL-2020",
+            "DAY-2019"
+          ],
+          "sentences": [
+            {
+              "text": "Growth differentiation factor 15 (GDF15) is a stress-response cytokine that reduces food intake and body weight by acting on a brain-stem-restricted receptor called GDNF family receptor alpha-like (GFRAL).",
+              "sources": [
+                "COLL-2020",
+                "DAY-2019"
+              ]
+            },
+            {
+              "text": "Two preclinical studies showed that GDF15 is an important mediator of metformin's effects on body weight and energy balance.",
+              "sources": [
+                "COLL-2020",
+                "DAY-2019"
+              ]
+            },
+            {
+              "text": "In mouse models, oral metformin elevated circulating GDF15, with the increase in GDF15 expression predominantly in the distal intestine and kidney.",
+              "sources": [
+                "COLL-2020"
+              ]
+            },
+            {
+              "text": "Metformin prevented weight gain on a high-fat diet in wild-type mice but not in mice lacking GDF15 or its receptor GFRAL; a GFRAL-antagonist antibody reversed the weight-reducing effect of metformin in obese mice, confirming that GDF15 signaling through GFRAL is required for metformin to influence body weight.",
+              "sources": [
+                "COLL-2020"
+              ]
+            },
+            {
+              "text": "Notably, metformin retained its glucose-lowering action in the absence of GDF15 signaling, indicating that glucose control and body weight effects involve separate mechanisms.",
+              "sources": [
+                "COLL-2020"
+              ]
+            },
+            {
+              "text": "A complementary preclinical study found that metformin stimulates GDF15 secretion in primary mouse hepatocytes by increasing expression of the transcription factors ATF4 and CHOP/DDIT3; in GDF15 null mice, metformin did not reduce food intake, body mass, or fasting insulin.",
+              "sources": [
+                "DAY-2019"
+              ]
+            },
+            {
+              "text": "In patients with type 2 diabetes taking metformin, higher serum GDF15 concentrations were associated with weight loss, an observational human association consistent with the mouse mechanistic data.",
+              "sources": [
+                "DAY-2019"
+              ]
+            },
+            {
+              "text": "All mechanistic data are from preclinical cell and animal experiments; the human association is observational and cannot establish causation.",
+              "sources": [
+                "COLL-2020",
+                "DAY-2019"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "metformin-lactate",
+          "title": "Lactate elevation and lactic acidosis risk",
+          "text": "Metformin inhibits complex I of the mitochondrial respiratory chain, reducing the rate at which the mitochondria oxidize NADH. This slows the conversion of lactate to pyruvate by altering the cytosolic NADH/NAD+ balance, shifting equilibrium toward lactate production. Lactate concentrations therefore tend to rise in tissues where metformin is active, raising the theoretical concern that this could cause lactic acidosis. The clinical significance of this pharmacological effect has been extensively studied. A Cochrane systematic review pooled 347 comparative trials and cohort studies covering 70,490 patient-years of metformin use; it found no cases of fatal or nonfatal lactic acidosis in metformin-treated patients, and the upper limit for the true incidence was 4.3 cases per 100,000 patient-years versus 5.4 in comparison groups. Mean lactate levels and net change from baseline did not differ between metformin and non-metformin antihyperglycemic treatments. A community-based cohort study subsequently examined the risk of acidosis across the full range of kidney function and found that metformin use was associated with acidosis only at eGFR below 30 mL/min per 1.73 m2. At eGFR between 30 and 44 mL/min per 1.73 m2, the association was not statistically significant in either the primary or replication cohort, supporting cautious use of metformin at eGFR at least 30 mL/min per 1.73 m2. The clinical conclusion is that metformin does increase lactate at a biochemical level through complex I inhibition, but this rarely translates into clinical lactic acidosis in patients who are otherwise healthy and have adequate kidney function; risk is substantially higher when kidney impairment prevents metformin clearance.",
+          "sourceIds": [
+            "OWEN-2000",
+            "SALPETER-2010",
+            "LAZARUS-2018"
+          ],
+          "sentences": [
+            {
+              "text": "Metformin inhibits complex I of the mitochondrial respiratory chain, reducing the rate at which the mitochondria oxidize NADH.",
+              "sources": [
+                "OWEN-2000"
+              ]
+            },
+            {
+              "text": "This slows the conversion of lactate to pyruvate by altering the cytosolic NADH/NAD+ balance, shifting equilibrium toward lactate production.",
+              "sources": [
+                "OWEN-2000"
+              ]
+            },
+            {
+              "text": "Lactate concentrations therefore tend to rise in tissues where metformin is active, raising the theoretical concern that this could cause lactic acidosis.",
+              "sources": [
+                "OWEN-2000"
+              ]
+            },
+            {
+              "text": "The clinical significance of this pharmacological effect has been extensively studied.",
+              "sources": [
+                "SALPETER-2010",
+                "LAZARUS-2018"
+              ]
+            },
+            {
+              "text": "A Cochrane systematic review pooled 347 comparative trials and cohort studies covering 70,490 patient-years of metformin use; it found no cases of fatal or nonfatal lactic acidosis in metformin-treated patients, and the upper limit for the true incidence was 4.3 cases per 100,000 patient-years versus 5.4 in comparison groups.",
+              "sources": [
+                "SALPETER-2010"
+              ]
+            },
+            {
+              "text": "Mean lactate levels and net change from baseline did not differ between metformin and non-metformin antihyperglycemic treatments.",
+              "sources": [
+                "SALPETER-2010"
+              ]
+            },
+            {
+              "text": "A community-based cohort study subsequently examined the risk of acidosis across the full range of kidney function and found that metformin use was associated with acidosis only at eGFR below 30 mL/min per 1.73 m2.",
+              "sources": [
+                "LAZARUS-2018"
+              ]
+            },
+            {
+              "text": "At eGFR between 30 and 44 mL/min per 1.73 m2, the association was not statistically significant in either the primary or replication cohort, supporting cautious use of metformin at eGFR at least 30 mL/min per 1.73 m2.",
+              "sources": [
+                "LAZARUS-2018"
+              ]
+            },
+            {
+              "text": "The clinical conclusion is that metformin does increase lactate at a biochemical level through complex I inhibition, but this rarely translates into clinical lactic acidosis in patients who are otherwise healthy and have adequate kidney function; risk is substantially higher when kidney impairment prevents metformin clearance.",
+              "sources": [
+                "OWEN-2000",
+                "SALPETER-2010",
+                "LAZARUS-2018"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "metformin-ampk-gluconeogenesis",
+          "title": "AMP accumulation, AMPK activation, and dependence on AMPK for gluconeogenesis inhibition",
+          "text": "A proposed mechanistic chain connects metformin's inhibition of complex I to downstream AMPK activation through changes in adenine nucleotide concentrations. When complex I is inhibited, ATP synthesis slows. A preclinical study using 31P-NMR spectroscopy in isolated perfused rat hearts showed that metformin (at 10 mM) increased cytosolic free AMP concentration over time; AMPK activity and phosphorylation of its substrate acetyl-CoA carboxylase were elevated only after the rise in cytosolic free AMP, consistent with free AMP acting as the upstream trigger. Notably, total AMP content and the total AMP/ATP ratio did not increase, indicating that it is the metabolically active free cytosolic AMP rather than total AMP that signals to AMPK. A review of metformin mechanism of action in diabetes and cancer described this chain further: complex I inhibition leads to defective cAMP and protein kinase A signaling in response to glucagon, contributing to suppression of gluconeogenesis; AMPK activation, while not strictly required for the glucose-lowering effect of metformin, confers additional insulin sensitivity mainly by modulating lipid metabolism. Whether AMPK is strictly required for metformin's glucose-lowering effect has been tested across two key preclinical studies with different conclusions. A 2001 study in rat hepatocytes and L6 myotubes found that metformin activated AMPK and that a pharmacological AMPK inhibitor blocked metformin's suppression of hepatic glucose production, suggesting AMPK was necessary for the gluconeogenesis-inhibiting effect. A 2010 study using hepatocyte-specific AMPKalpha1/alpha2 double-knockout mice found that metformin still inhibited hepatic glucose production in the knockout animals; LKB1-deficient mice, which cannot activate AMPK through the canonical upstream kinase, also retained a full metformin response, with gluconeogenesis suppression actually amplified compared with wild-type animals. In that study, the gluconeogenesis-suppressing effect correlated with decreased hepatic ATP content rather than AMPK activation, supporting a direct energy-state mechanism independent of the kinase. These preclinical data indicate that AMPK activation is a real consequence of metformin's energy perturbation and may confer metabolic benefits in insulin-sensitive tissues, but that AMPK-independent mechanisms including direct effects on hepatic energy state and the mGPD pathway contribute to gluconeogenesis inhibition; the degree of AMPK dependence in humans has not been established.",
+          "sourceIds": [
+            "ZHANG-2007",
+            "PERNICOVA-2014",
+            "ZHOU-2001",
+            "FORETZ-2010"
+          ],
+          "sentences": [
+            {
+              "text": "A proposed mechanistic chain connects metformin's inhibition of complex I to downstream AMPK activation through changes in adenine nucleotide concentrations.",
+              "sources": [
+                "ZHANG-2007",
+                "PERNICOVA-2014"
+              ]
+            },
+            {
+              "text": "When complex I is inhibited, ATP synthesis slows.",
+              "sources": [
+                "PERNICOVA-2014"
+              ]
+            },
+            {
+              "text": "A preclinical study using 31P-NMR spectroscopy in isolated perfused rat hearts showed that metformin (at 10 mM) increased cytosolic free AMP concentration over time; AMPK activity and phosphorylation of its substrate acetyl-CoA carboxylase were elevated only after the rise in cytosolic free AMP, consistent with free AMP acting as the upstream trigger.",
+              "sources": [
+                "ZHANG-2007"
+              ]
+            },
+            {
+              "text": "Notably, total AMP content and the total AMP/ATP ratio did not increase, indicating that it is the metabolically active free cytosolic AMP rather than total AMP that signals to AMPK.",
+              "sources": [
+                "ZHANG-2007"
+              ]
+            },
+            {
+              "text": "A review of metformin mechanism of action in diabetes and cancer described this chain further: complex I inhibition leads to defective cAMP and protein kinase A signaling in response to glucagon, contributing to suppression of gluconeogenesis; AMPK activation, while not strictly required for the glucose-lowering effect of metformin, confers additional insulin sensitivity mainly by modulating lipid metabolism.",
+              "sources": [
+                "PERNICOVA-2014"
+              ]
+            },
+            {
+              "text": "Whether AMPK is strictly required for metformin's glucose-lowering effect has been tested across two key preclinical studies with different conclusions.",
+              "sources": [
+                "ZHOU-2001",
+                "FORETZ-2010"
+              ]
+            },
+            {
+              "text": "A 2001 study in rat hepatocytes and L6 myotubes found that metformin activated AMPK and that a pharmacological AMPK inhibitor blocked metformin's suppression of hepatic glucose production, suggesting AMPK was necessary for the gluconeogenesis-inhibiting effect.",
+              "sources": [
+                "ZHOU-2001"
+              ]
+            },
+            {
+              "text": "A 2010 study using hepatocyte-specific AMPKalpha1/alpha2 double-knockout mice found that metformin still inhibited hepatic glucose production in the knockout animals; LKB1-deficient mice, which cannot activate AMPK through the canonical upstream kinase, also retained a full metformin response, with gluconeogenesis suppression actually amplified compared with wild-type animals.",
+              "sources": [
+                "FORETZ-2010"
+              ]
+            },
+            {
+              "text": "In that study, the gluconeogenesis-suppressing effect correlated with decreased hepatic ATP content rather than AMPK activation, supporting a direct energy-state mechanism independent of the kinase.",
+              "sources": [
+                "FORETZ-2010"
+              ]
+            },
+            {
+              "text": "These preclinical data indicate that AMPK activation is a real consequence of metformin's energy perturbation and may confer metabolic benefits in insulin-sensitive tissues, but that AMPK-independent mechanisms including direct effects on hepatic energy state and the mGPD pathway contribute to gluconeogenesis inhibition; the degree of AMPK dependence in humans has not been established.",
+              "sources": [
+                "ZHOU-2001",
+                "FORETZ-2010"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "metformin-nfkb-antiinflammatory",
+          "title": "NF-kB suppression via AMPK, MDR1/P-gp chemoresistance reversal, and macrophage polarization",
+          "text": "AMPK activation by metformin has been linked to suppression of NF-kB-driven transcription in cell-line experiments. A preclinical study in adriamycin-resistant MCF-7 breast cancer cells showed that metformin activated AMPK and reduced MDR1 (P-glycoprotein) expression by inhibiting NF-kB transcriptional activity and CREB phosphorylation. Overexpression of the p65 subunit of NF-kB increased MDR1 promoter activity, and metformin attenuated this increase; siRNA knockdown of AMPK attenuated metformin-mediated MDR1 inhibition, confirming that the effect depends on AMPK. A dominant-negative mutant of AMPK reversed metformin-mediated inhibition of both MDR1 expression and CREB phosphorylation. Separately, a review of metformin mechanism notes that AMPK activation modulates lipid metabolism, which connects to lipogenesis regulation. Metformin also modulates macrophage polarization through AMPK and NF-kB-linked pathways. A preclinical study in murine bone marrow-derived macrophages found that metformin suppressed inflammatory responses induced by advanced glycation end products through AMPK activation and suppression of RAGE and NF-kB signaling; the pro-inflammatory M1 marker CD86 was reduced while the anti-inflammatory M2 marker CD206 was elevated, and pro-inflammatory cytokines IL-1beta, IL-6 and TNF-alpha were reduced while anti-inflammatory IL-10 increased. All findings in this section are from preclinical cell-line and murine macrophage experiments and do not establish anti-inflammatory clinical benefit.",
+          "sourceIds": [
+            "KIM-2011",
+            "PERNICOVA-2014",
+            "ZHOU-2016"
+          ],
+          "sentences": [
+            {
+              "text": "AMPK activation by metformin has been linked to suppression of NF-kB-driven transcription in cell-line experiments.",
+              "sources": [
+                "KIM-2011"
+              ]
+            },
+            {
+              "text": "A preclinical study in adriamycin-resistant MCF-7 breast cancer cells showed that metformin activated AMPK and reduced MDR1 (P-glycoprotein) expression by inhibiting NF-kB transcriptional activity and CREB phosphorylation.",
+              "sources": [
+                "KIM-2011"
+              ]
+            },
+            {
+              "text": "Overexpression of the p65 subunit of NF-kB increased MDR1 promoter activity, and metformin attenuated this increase; siRNA knockdown of AMPK attenuated metformin-mediated MDR1 inhibition, confirming that the effect depends on AMPK.",
+              "sources": [
+                "KIM-2011"
+              ]
+            },
+            {
+              "text": "A dominant-negative mutant of AMPK reversed metformin-mediated inhibition of both MDR1 expression and CREB phosphorylation.",
+              "sources": [
+                "KIM-2011"
+              ]
+            },
+            {
+              "text": "Separately, a review of metformin mechanism notes that AMPK activation modulates lipid metabolism, which connects to lipogenesis regulation.",
+              "sources": [
+                "PERNICOVA-2014"
+              ]
+            },
+            {
+              "text": "Metformin also modulates macrophage polarization through AMPK and NF-kB-linked pathways.",
+              "sources": [
+                "ZHOU-2016"
+              ]
+            },
+            {
+              "text": "A preclinical study in murine bone marrow-derived macrophages found that metformin suppressed inflammatory responses induced by advanced glycation end products through AMPK activation and suppression of RAGE and NF-kB signaling; the pro-inflammatory M1 marker CD86 was reduced while the anti-inflammatory M2 marker CD206 was elevated, and pro-inflammatory cytokines IL-1beta, IL-6 and TNF-alpha were reduced while anti-inflammatory IL-10 increased.",
+              "sources": [
+                "ZHOU-2016"
+              ]
+            },
+            {
+              "text": "All findings in this section are from preclinical cell-line and murine macrophage experiments and do not establish anti-inflammatory clinical benefit.",
+              "sources": [
+                "KIM-2011",
+                "ZHOU-2016"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "metformin-antitumor-immunity",
+          "title": "Anti-tumor immunity: CD8-positive T cell exhaustion rescue and PD-L1 suppression",
+          "text": "Metformin has been shown in preclinical models to influence antitumor immune responses through direct effects on CD8-positive cytotoxic T cells and through suppression of the PD-L1 immune checkpoint ligand in cancer cells. A 2015 preclinical study in solid-tumor mouse models showed that metformin promoted immune-mediated tumor rejection by protecting CD8-positive tumor-infiltrating lymphocytes from exhaustion. Metformin treatment increased the number and function of tumor-infiltrating CD8-positive T cells, enhanced their production of cytokines including interferon-gamma, and maintained a multifunctional effector memory phenotype. In immunodeficient mice lacking T cells, the antitumor effect of metformin was abolished, confirming that the observed antitumor activity in immunocompetent mice required intact T cell immunity rather than a direct anti-proliferative effect on tumor cells; AMPK activation in T cells is proposed to support metabolic fitness in the energy-poor tumor microenvironment. A 2024 preclinical study in cancer cell-line and mouse xenograft models found that metformin suppresses PD-L1 expression in cancer cells through AMPK-dependent inhibition of AKT-mediated beta-catenin phosphorylation, reducing transcription of the CD274 gene that encodes PD-L1; metformin also enhanced ubiquitin-dependent degradation of PD-1 in natural killer and T cells. These complementary mechanisms - supporting CD8-positive T cell persistence and reducing tumor-cell expression of PD-L1 - are proposed as routes by which metformin could enhance antitumor immunity in combination with established immunotherapies. All findings are from preclinical mouse and cell-line experiments and do not establish clinical immunotherapy benefit.",
+          "sourceIds": [
+            "EIKAWA-2015",
+            "PARK-2024"
+          ],
+          "sentences": [
+            {
+              "text": "Metformin has been shown in preclinical models to influence antitumor immune responses through direct effects on CD8-positive cytotoxic T cells and through suppression of the PD-L1 immune checkpoint ligand in cancer cells.",
+              "sources": [
+                "EIKAWA-2015",
+                "PARK-2024"
+              ]
+            },
+            {
+              "text": "A 2015 preclinical study in solid-tumor mouse models showed that metformin promoted immune-mediated tumor rejection by protecting CD8-positive tumor-infiltrating lymphocytes from exhaustion.",
+              "sources": [
+                "EIKAWA-2015"
+              ]
+            },
+            {
+              "text": "Metformin treatment increased the number and function of tumor-infiltrating CD8-positive T cells, enhanced their production of cytokines including interferon-gamma, and maintained a multifunctional effector memory phenotype.",
+              "sources": [
+                "EIKAWA-2015"
+              ]
+            },
+            {
+              "text": "In immunodeficient mice lacking T cells, the antitumor effect of metformin was abolished, confirming that the observed antitumor activity in immunocompetent mice required intact T cell immunity rather than a direct anti-proliferative effect on tumor cells; AMPK activation in T cells is proposed to support metabolic fitness in the energy-poor tumor microenvironment.",
+              "sources": [
+                "EIKAWA-2015"
+              ]
+            },
+            {
+              "text": "A 2024 preclinical study in cancer cell-line and mouse xenograft models found that metformin suppresses PD-L1 expression in cancer cells through AMPK-dependent inhibition of AKT-mediated beta-catenin phosphorylation, reducing transcription of the CD274 gene that encodes PD-L1; metformin also enhanced ubiquitin-dependent degradation of PD-1 in natural killer and T cells.",
+              "sources": [
+                "PARK-2024"
+              ]
+            },
+            {
+              "text": "These complementary mechanisms - supporting CD8-positive T cell persistence and reducing tumor-cell expression of PD-L1 - are proposed as routes by which metformin could enhance antitumor immunity in combination with established immunotherapies.",
+              "sources": [
+                "EIKAWA-2015",
+                "PARK-2024"
+              ]
+            },
+            {
+              "text": "All findings are from preclinical mouse and cell-line experiments and do not establish clinical immunotherapy benefit.",
+              "sources": [
+                "EIKAWA-2015",
+                "PARK-2024"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "metformin-bach1-cancer",
+          "title": "BACH1, cancer energy metabolism reprogramming, and combination strategies",
+          "text": "Cancer cells frequently reprogram energy metabolism toward aerobic glycolysis partly by suppressing mitochondrial oxidative phosphorylation, which may limit their sensitivity to agents that target mitochondrial metabolism. The transcription factor BACH1 contributes to this metabolic reprogramming in some cancers by suppressing expression of genes encoding electron transport chain components, reducing cancer cells' dependence on mitochondrial function. A 2019 Nature study showed that in triple-negative breast cancer, BACH1 protein levels and transcriptional activity suppressed mitochondrial metabolism; depleting BACH1 or accelerating its degradation using the heme-oxygenase inducer hemin shifted energy metabolism from glycolysis toward the tricarboxylic acid cycle and oxidative phosphorylation, increasing cellular dependence on the mitochondrial function that metformin impairs. The combination of BACH1 targeting with metformin suppressed tumor growth in both cancer cell-line models and patient-derived xenograft experiments, while neither agent alone showed the same degree of efficacy, suggesting a synthetic metabolic vulnerability created by the combination. These preclinical data support the cancer-hallmark concept that metformin's energy-perturbation mechanism can be leveraged in cancer cells when their mitochondrial metabolism is restored by depleting BACH1; this combination approach identifies tumor cells with high BACH1 expression as a potential biomarker-selected population for future investigation. Metformin's suppression of mTORC1 through AMPK activation, which provides a separate rationale for cancer repurposing through the PI3K-mTOR-linked growth-signaling pathway, is described in the AMPK and mTOR section above. All BACH1 findings are from preclinical cell-line and patient-derived xenograft experiments and do not establish clinical benefit in any cancer; whether metformin reaches concentrations sufficient to inhibit complex I in solid tumors at therapeutic doses in humans has not been established.",
+          "sourceIds": [
+            "LEE-2019-BACH1",
+            "MF-MYELOMA-MODELS-2018"
+          ],
+          "sentences": [
+            {
+              "text": "Cancer cells frequently reprogram energy metabolism toward aerobic glycolysis partly by suppressing mitochondrial oxidative phosphorylation, which may limit their sensitivity to agents that target mitochondrial metabolism.",
+              "sources": [
+                "LEE-2019-BACH1"
+              ]
+            },
+            {
+              "text": "The transcription factor BACH1 contributes to this metabolic reprogramming in some cancers by suppressing expression of genes encoding electron transport chain components, reducing cancer cells' dependence on mitochondrial function.",
+              "sources": [
+                "LEE-2019-BACH1"
+              ]
+            },
+            {
+              "text": "A 2019 Nature study showed that in triple-negative breast cancer, BACH1 protein levels and transcriptional activity suppressed mitochondrial metabolism; depleting BACH1 or accelerating its degradation using the heme-oxygenase inducer hemin shifted energy metabolism from glycolysis toward the tricarboxylic acid cycle and oxidative phosphorylation, increasing cellular dependence on the mitochondrial function that metformin impairs.",
+              "sources": [
+                "LEE-2019-BACH1"
+              ]
+            },
+            {
+              "text": "The combination of BACH1 targeting with metformin suppressed tumor growth in both cancer cell-line models and patient-derived xenograft experiments, while neither agent alone showed the same degree of efficacy, suggesting a synthetic metabolic vulnerability created by the combination.",
+              "sources": [
+                "LEE-2019-BACH1"
+              ]
+            },
+            {
+              "text": "These preclinical data support the cancer-hallmark concept that metformin's energy-perturbation mechanism can be leveraged in cancer cells when their mitochondrial metabolism is restored by depleting BACH1; this combination approach identifies tumor cells with high BACH1 expression as a potential biomarker-selected population for future investigation.",
+              "sources": [
+                "LEE-2019-BACH1"
+              ]
+            },
+            {
+              "text": "Metformin's suppression of mTORC1 through AMPK activation, which provides a separate rationale for cancer repurposing through the PI3K-mTOR-linked growth-signaling pathway, is described in the AMPK and mTOR section above.",
+              "sources": [
+                "MF-MYELOMA-MODELS-2018"
+              ]
+            },
+            {
+              "text": "All BACH1 findings are from preclinical cell-line and patient-derived xenograft experiments and do not establish clinical benefit in any cancer; whether metformin reaches concentrations sufficient to inhibit complex I in solid tumors at therapeutic doses in humans has not been established.",
+              "sources": [
+                "LEE-2019-BACH1"
+              ]
+            }
+          ]
+        }
+      ],
+      "rationales": [
+        {
+          "id": "metformin-mechanism-1",
+          "condition": "Acute COVID-19 and Long COVID",
+          "conditionHref": "/conditions/long-covid",
+          "rationale": {
+            "text": "Proposed: suppression of mTOR-dependent host-cell protein production could reduce viral replication during early infection.",
+            "sourceIds": [
+              "MF-COVID-VIRAL-2024"
+            ],
+            "sentences": [
+              {
+                "text": "Proposed: suppression of mTOR-dependent host-cell protein production could reduce viral replication during early infection.",
+                "sources": [
+                  "MF-COVID-VIRAL-2024"
+                ]
+              }
+            ]
+          },
+          "tested": {
+            "text": "Measured: the COVID-OUT nasal-swab study found lower average viral RNA during acute infection with metformin than with placebo.",
+            "sourceIds": [
+              "MF-COVID-VIRAL-2024"
+            ],
+            "sentences": [
+              {
+                "text": "Measured: the COVID-OUT nasal-swab study found lower average viral RNA during acute infection with metformin than with placebo.",
+                "sources": [
+                  "MF-COVID-VIRAL-2024"
+                ]
+              }
+            ]
+          },
+          "limits": {
+            "text": "Viral RNA does not prove the pathway responsible or establish treatment benefit after Long COVID has developed. Prevention and treatment trials address different questions.",
+            "sourceIds": [
+              "MF-COVID-VIRAL-2024",
+              "P-COVIDOUT-2023",
+              "P-KOREA-2026"
+            ],
+            "sentences": [
+              {
+                "text": "Viral RNA does not prove the pathway responsible or establish treatment benefit after Long COVID has developed. Prevention and treatment trials address different questions.",
+                "sources": [
+                  "MF-COVID-VIRAL-2024",
+                  "P-COVIDOUT-2023",
+                  "P-KOREA-2026"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "metformin-mechanism-2",
+          "condition": "Parkinson's disease",
+          "conditionHref": "/conditions/parkinson-disease",
+          "rationale": {
+            "text": "Proposed: protecting dopamine-producing nerve cells through AMPK, autophagy and reduced inflammatory and mitochondrial stress.",
+            "sourceIds": [
+              "MF-PD-MECHANISM-2016"
+            ],
+            "sentences": [
+              {
+                "text": "Proposed: protecting dopamine-producing nerve cells through AMPK, autophagy and reduced inflammatory and mitochondrial stress.",
+                "sources": [
+                  "MF-PD-MECHANISM-2016"
+                ]
+              }
+            ]
+          },
+          "tested": {
+            "text": "Cell and mouse experiments measured pathway and injury-related effects; a human pilot tested metformin alongside levodopa/carbidopa and measured symptoms and blood markers.",
+            "sourceIds": [
+              "MF-PD-MECHANISM-2016",
+              "CP016"
+            ],
+            "sentences": [
+              {
+                "text": "Cell and mouse experiments measured pathway and injury-related effects; a human pilot tested metformin alongside levodopa/carbidopa and measured symptoms and blood markers.",
+                "sources": [
+                  "MF-PD-MECHANISM-2016",
+                  "CP016"
+                ]
+              }
+            ]
+          },
+          "limits": {
+            "text": "Blood-marker changes do not demonstrate the same mechanism in brain tissue. The pilot did not establish a between-group benefit on total UPDRS or slower disease progression.",
+            "sourceIds": [
+              "CP016"
+            ],
+            "sentences": [
+              {
+                "text": "Blood-marker changes do not demonstrate the same mechanism in brain tissue. The pilot did not establish a between-group benefit on total UPDRS or slower disease progression.",
+                "sources": [
+                  "CP016"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "metformin-mechanism-3",
+          "condition": "Cognition in schizophrenia",
+          "conditionHref": "/conditions/schizophrenia",
+          "rationale": {
+            "text": "Proposed: altered energy metabolism could affect brain networks involved in memory. The tricarboxylic acid cycle helps cells convert nutrients into usable energy.",
+            "sourceIds": [
+              "CP017"
+            ],
+            "sentences": [
+              {
+                "text": "Proposed: altered energy metabolism could affect brain networks involved in memory. The tricarboxylic acid cycle helps cells convert nutrients into usable energy.",
+                "sources": [
+                  "CP017"
+                ]
+              }
+            ]
+          },
+          "tested": {
+            "text": "An exploratory analysis linked blood-metabolite changes with working memory, verbal learning and hippocampal connectivity during treatment.",
+            "sourceIds": [
+              "CP017"
+            ],
+            "sentences": [
+              {
+                "text": "An exploratory analysis linked blood-metabolite changes with working memory, verbal learning and hippocampal connectivity during treatment.",
+                "sources": [
+                  "CP017"
+                ]
+              }
+            ]
+          },
+          "limits": {
+            "text": "These are associations from an analysis of the existing trial, not an independent efficacy trial or a direct measurement of energy production in the brain.",
+            "sourceIds": [
+              "CP017",
+              "MF-SCHIZOPHRENIA-PARENT-2023"
+            ],
+            "sentences": [
+              {
+                "text": "These are associations from an analysis of the existing trial, not an independent efficacy trial or a direct measurement of energy production in the brain.",
+                "sources": [
+                  "CP017",
+                  "MF-SCHIZOPHRENIA-PARENT-2023"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "metformin-mechanism-4",
+          "condition": "Muscle aging and sarcopenia",
+          "conditionHref": "/conditions/sarcopenia",
+          "rationale": {
+            "text": "Proposed: modifying inflammation and energy sensing could preserve muscle function, but AMPK-related restraint of mTORC1 could also reduce muscle growth.",
+            "sourceIds": [
+              "MF-MASTERS-2019"
+            ],
+            "sentences": [
+              {
+                "text": "Proposed: modifying inflammation and energy sensing could preserve muscle function, but AMPK-related restraint of mTORC1 could also reduce muscle growth.",
+                "sources": [
+                  "MF-MASTERS-2019"
+                ]
+              }
+            ]
+          },
+          "tested": {
+            "text": "MASTERS examined metformin during resistance training in older adults and found smaller gains in lean and thigh muscle mass.",
+            "sourceIds": [
+              "MF-MASTERS-2019"
+            ],
+            "sentences": [
+              {
+                "text": "MASTERS examined metformin during resistance training in older adults and found smaller gains in lean and thigh muscle mass.",
+                "sources": [
+                  "MF-MASTERS-2019"
+                ]
+              }
+            ]
+          },
+          "limits": {
+            "text": "Muscle growth and physical function are distinct outcomes. These results do not establish a sarcopenia benefit; MET-PREVENT found no walking-speed improvement.",
+            "sourceIds": [
+              "MF-MASTERS-2019",
+              "MF-METPREVENT-2025"
+            ],
+            "sentences": [
+              {
+                "text": "Muscle growth and physical function are distinct outcomes. These results do not establish a sarcopenia benefit; MET-PREVENT found no walking-speed improvement.",
+                "sources": [
+                  "MF-MASTERS-2019",
+                  "MF-METPREVENT-2025"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "metformin-prostate-mechanism",
+          "condition": "Prostate cancer",
+          "conditionHref": "/conditions/prostate-cancer",
+          "rationale": {
+            "text": "Proposed: improve metabolic health during androgen deprivation, which can worsen metabolic risk.",
+            "sourceIds": [
+              "MF-STAMPEDE-2025"
+            ],
+            "sentences": [
+              {
+                "text": "Proposed: improve metabolic health during androgen deprivation, which can worsen metabolic risk.",
+                "sources": [
+                  "MF-STAMPEDE-2025"
+                ]
+              }
+            ]
+          },
+          "tested": {
+            "text": "STAMPEDE tested metformin with standard treatment and measured metabolic and cancer outcomes.",
+            "sourceIds": [
+              "MF-STAMPEDE-2025"
+            ],
+            "sentences": [
+              {
+                "text": "STAMPEDE tested metformin with standard treatment and measured metabolic and cancer outcomes.",
+                "sources": [
+                  "MF-STAMPEDE-2025"
+                ]
+              }
+            ]
+          },
+          "limits": {
+            "text": "Improved metabolic outcomes did not establish a significant overall survival benefit or a direct tumor-killing mechanism.",
+            "sourceIds": [
+              "MF-STAMPEDE-2025"
+            ],
+            "sentences": [
+              {
+                "text": "Improved metabolic outcomes did not establish a significant overall survival benefit or a direct tumor-killing mechanism.",
+                "sources": [
+                  "MF-STAMPEDE-2025"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "metformin-cancer-energy",
+          "condition": "Non-small-cell lung cancer",
+          "conditionHref": "/conditions/non-small-cell-lung-cancer",
+          "rationale": {
+            "text": "Proposed: alter tumor metabolism to increase sensitivity to chemoradiation.",
+            "sourceIds": [
+              "MF-NRG-LU001-2021",
+              "MF-ALMERA-2021"
+            ],
+            "sentences": [
+              {
+                "text": "Proposed: alter tumor metabolism to increase sensitivity to chemoradiation.",
+                "sources": [
+                  "MF-NRG-LU001-2021",
+                  "MF-ALMERA-2021"
+                ]
+              }
+            ]
+          },
+          "tested": {
+            "text": "NRG-LU001 and OCOG-ALMERA tested metformin added to chemoradiation in randomized trials.",
+            "sourceIds": [
+              "MF-NRG-LU001-2021",
+              "MF-ALMERA-2021"
+            ],
+            "sentences": [
+              {
+                "text": "NRG-LU001 and OCOG-ALMERA tested metformin added to chemoradiation in randomized trials.",
+                "sources": [
+                  "MF-NRG-LU001-2021",
+                  "MF-ALMERA-2021"
+                ]
+              }
+            ]
+          },
+          "limits": {
+            "text": "NRG-LU001 found no benefit; the small ALMERA trial reported worse survival estimates with metformin. Testing a combination does not establish that the proposed metabolic pathway mediated its results.",
+            "sourceIds": [
+              "MF-NRG-LU001-2021",
+              "MF-ALMERA-2021"
+            ],
+            "sentences": [
+              {
+                "text": "NRG-LU001 found no benefit; the small ALMERA trial reported worse survival estimates with metformin. Testing a combination does not establish that the proposed metabolic pathway mediated its results.",
+                "sources": [
+                  "MF-NRG-LU001-2021",
+                  "MF-ALMERA-2021"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "metformin-breast-mechanism",
+          "condition": "Breast cancer",
+          "conditionHref": "/conditions/breast-cancer",
+          "rationale": {
+            "text": "Proposed: lower insulin-related signaling could reduce growth stimulation in some tumors.",
+            "sourceIds": [
+              "COND-C15-MA32-METABOLIC"
+            ],
+            "sentences": [
+              {
+                "text": "Proposed: lower insulin-related signaling could reduce growth stimulation in some tumors.",
+                "sources": [
+                  "COND-C15-MA32-METABOLIC"
+                ]
+              }
+            ]
+          },
+          "tested": {
+            "text": "MA.32 measured insulin, weight and other metabolic changes as well as invasive disease-free survival.",
+            "sourceIds": [
+              "COND-C15-MA32-METABOLIC",
+              "COND-C15-MA32-2022"
+            ],
+            "sentences": [
+              {
+                "text": "MA.32 measured insulin, weight and other metabolic changes as well as invasive disease-free survival.",
+                "sources": [
+                  "COND-C15-MA32-METABOLIC",
+                  "COND-C15-MA32-2022"
+                ]
+              }
+            ]
+          },
+          "limits": {
+            "text": "Metabolic improvements did not translate into improved invasive disease-free survival in the clinical report.",
+            "sourceIds": [
+              "COND-C15-MA32-2022"
+            ],
+            "sentences": [
+              {
+                "text": "Metabolic improvements did not translate into improved invasive disease-free survival in the clinical report.",
+                "sources": [
+                  "COND-C15-MA32-2022"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "metformin-colorectal-mechanism",
+          "condition": "Colorectal adenoma prevention",
+          "conditionHref": "/conditions/colorectal-cancer",
+          "rationale": {
+            "text": "Rationale: suppress epithelial proliferation as a possible route to reducing new colorectal lesions.",
+            "sourceIds": [
+              "MF-COLON-MECHANISM-2010"
+            ],
+            "sentences": [
+              {
+                "text": "Rationale: suppress epithelial proliferation as a possible route to reducing new colorectal lesions.",
+                "sources": [
+                  "MF-COLON-MECHANISM-2010"
+                ]
+              }
+            ]
+          },
+          "tested": {
+            "text": "Short-term human research measured reduced proliferation and fewer aberrant crypt foci; a later trial measured adenoma recurrence after polyp removal.",
+            "sourceIds": [
+              "MF-COLON-MECHANISM-2010",
+              "MF-ADENOMA-2016"
+            ],
+            "sentences": [
+              {
+                "text": "Short-term human research measured reduced proliferation and fewer aberrant crypt foci; a later trial measured adenoma recurrence after polyp removal.",
+                "sources": [
+                  "MF-COLON-MECHANISM-2010",
+                  "MF-ADENOMA-2016"
+                ]
+              }
+            ]
+          },
+          "limits": {
+            "text": "These endpoints concern early lesions and recurrence prevention. They do not establish treatment efficacy or a survival benefit in established colorectal cancer.",
+            "sourceIds": [
+              "MF-COLON-MECHANISM-2010",
+              "MF-ADENOMA-2016"
+            ],
+            "sentences": [
+              {
+                "text": "These endpoints concern early lesions and recurrence prevention. They do not establish treatment efficacy or a survival benefit in established colorectal cancer.",
+                "sources": [
+                  "MF-COLON-MECHANISM-2010",
+                  "MF-ADENOMA-2016"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "metformin-pancreatic-mechanism",
+          "condition": "Pancreatic cancer",
+          "conditionHref": "/conditions/pancreatic-cancer",
+          "rationale": {
+            "text": "Proposed: induce metabolic stress in tumor cells and modify insulin-related growth signals.",
+            "sourceIds": [
+              "COND-C17-MET-2015"
+            ],
+            "sentences": [
+              {
+                "text": "Proposed: induce metabolic stress in tumor cells and modify insulin-related growth signals.",
+                "sources": [
+                  "COND-C17-MET-2015"
+                ]
+              }
+            ]
+          },
+          "tested": {
+            "text": "A randomized trial tested metformin alongside gemcitabine and erlotinib.",
+            "sourceIds": [
+              "COND-C17-MET-2015"
+            ],
+            "sentences": [
+              {
+                "text": "A randomized trial tested metformin alongside gemcitabine and erlotinib.",
+                "sources": [
+                  "COND-C17-MET-2015"
+                ]
+              }
+            ]
+          },
+          "limits": {
+            "text": "The combination did not improve survival. The proposed mechanism remains distinct from a demonstrated treatment benefit.",
+            "sourceIds": [
+              "COND-C17-MET-2015"
+            ],
+            "sentences": [
+              {
+                "text": "The combination did not improve survival. The proposed mechanism remains distinct from a demonstrated treatment benefit.",
+                "sources": [
+                  "COND-C17-MET-2015"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "metformin-myeloma-mechanism",
+          "condition": "Multiple myeloma",
+          "conditionHref": "/conditions/multiple-myeloma",
+          "rationale": {
+            "text": "Measured in models: AMPK activation and suppression of mTORC1/mTORC2, with autophagy and cell-cycle arrest.",
+            "sourceIds": [
+              "MF-MYELOMA-MODELS-2018"
+            ],
+            "sentences": [
+              {
+                "text": "Measured in models: AMPK activation and suppression of mTORC1/mTORC2, with autophagy and cell-cycle arrest.",
+                "sources": [
+                  "MF-MYELOMA-MODELS-2018"
+                ]
+              }
+            ]
+          },
+          "tested": {
+            "text": "Cell lines and mouse xenografts showed reduced tumor-cell growth.",
+            "sourceIds": [
+              "MF-MYELOMA-MODELS-2018"
+            ],
+            "sentences": [
+              {
+                "text": "Cell lines and mouse xenografts showed reduced tumor-cell growth.",
+                "sources": [
+                  "MF-MYELOMA-MODELS-2018"
+                ]
+              }
+            ]
+          },
+          "limits": {
+            "text": "These experimental models do not establish effective human exposure, clinical dosing or patient benefit.",
+            "sourceIds": [
+              "MF-MYELOMA-MODELS-2018"
+            ],
+            "sentences": [
+              {
+                "text": "These experimental models do not establish effective human exposure, clinical dosing or patient benefit.",
+                "sources": [
+                  "MF-MYELOMA-MODELS-2018"
+                ]
+              }
+            ]
+          }
         }
       ]
     }
