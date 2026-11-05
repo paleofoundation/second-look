@@ -12369,32 +12369,6 @@
           "id": "overview",
           "label": "Overview",
           "title": "",
-          "paragraph": "Cancer benefit: Not established. Human anticancer claims remain anecdotal. The human reports cited here describe liver injury rather than controlled cancer treatment. The selected cell and mouse studies have mixed findings and do not establish a human cancer regimen.",
-          "sources": [
-            "P-D10-LIVER-2024",
-            "P-D10-LIVER-2026",
-            "MECH-D10-MICROTUBULE-2018",
-            "P-D10-EMT6-DIET-2012",
-            "P-D10-EMT6-2013"
-          ],
-          "sentences": [
-            {
-              "text": "Cancer benefit: Not established. Human anticancer claims remain anecdotal. The human reports cited here describe liver injury rather than controlled cancer treatment. The selected cell and mouse studies have mixed findings and do not establish a human cancer regimen.",
-              "sources": [
-                "P-D10-LIVER-2024",
-                "P-D10-LIVER-2026",
-                "MECH-D10-MICROTUBULE-2018",
-                "P-D10-EMT6-DIET-2012",
-                "P-D10-EMT6-2013"
-              ]
-            }
-          ],
-          "questions": []
-        },
-        {
-          "id": "benefits",
-          "label": "Benefits",
-          "title": "",
           "paragraph": "Cancer benefit: Not established. Human anticancer claims remain anecdotal. The human reports cited here describe liver injury rather than controlled cancer treatment. The selected cell and mouse studies have mixed findings and do not establish a human cancer regimen. Models only. Confidence in clinical translation: Low. In Gao 2008, lymphoma tumors in mice were smaller with fenbendazole plus supplemented vitamins (P = 0.009). Fenbendazole alone did not differ significantly from control (P = 0.12). The combination result cannot be attributed to fenbendazole alone, and nonsignificance does not prove equivalence.",
           "sources": [
             "P-D10-LIVER-2024",
@@ -12422,6 +12396,15 @@
               ]
             }
           ],
+          "questions": []
+        },
+        {
+          "id": "benefits",
+          "label": "Benefits",
+          "title": "",
+          "paragraph": "",
+          "sources": [],
+          "sentences": [],
           "questions": [
             {
               "id": "mixed-preclinical",
@@ -12523,7 +12506,36 @@
               ]
             }
           ],
-          "questions": []
+          "questions": [
+            {
+              "id": "fenbendazole-dosing-scope",
+              "question": "Does this schedule establish a dose for every investigated use?",
+              "answer": "No single dosing schedule can be inferred across these uses. Human cancer dose: Not established. The cited cell and mouse studies do not establish a dose, duration or monitoring schedule for people. Human liver-injury reports do not define a safe threshold.",
+              "sentences": [
+                {
+                  "text": "No single dosing schedule can be inferred across these uses.",
+                  "sources": []
+                },
+                {
+                  "text": "Human cancer dose: Not established. The cited cell and mouse studies do not establish a dose, duration or monitoring schedule for people. Human liver-injury reports do not define a safe threshold.",
+                  "sources": [
+                    "MECH-D10-MICROTUBULE-2018",
+                    "P-D10-EMT6-DIET-2012",
+                    "P-D10-EMT6-2013",
+                    "P-D10-LIVER-2024",
+                    "P-D10-LIVER-2026"
+                  ]
+                }
+              ],
+              "sources": [
+                "MECH-D10-MICROTUBULE-2018",
+                "P-D10-EMT6-DIET-2012",
+                "P-D10-EMT6-2013",
+                "P-D10-LIVER-2024",
+                "P-D10-LIVER-2026"
+              ]
+            }
+          ]
         },
         {
           "id": "results",
@@ -13468,11 +13480,14 @@
           "id": "overview",
           "label": "Overview",
           "title": "",
-          "paragraph": "Atorvastatin has established lipid-lowering and cardiovascular indications. Repurposing trials include negative overall prostate biomarkers and no added vitiligo benefit with phototherapy.",
+          "paragraph": "Atorvastatin has established lipid-lowering and cardiovascular indications. Repurposing trials include negative overall prostate biomarkers and no added vitiligo benefit with phototherapy. The prostate trial did not significantly change overall Ki-67 or PSA, and atorvastatin did not add measurable benefit to narrow-band UVB in the small vitiligo trial. The glioblastoma study did not demonstrate improved six-month progression-free survival; breast and leukemia findings concern biomarkers or cell experiments.",
           "sources": [
             "CTX-D13-LABEL",
             "P-D13-PROSTATE-2018",
-            "COND-C29-ATOR-2018"
+            "COND-C29-ATOR-2018",
+            "P-D13-GBM-2021",
+            "P-D13-BREAST-2013",
+            "P-D13-AML-2019"
           ],
           "sentences": [
             {
@@ -13487,23 +13502,7 @@
                 "P-D13-PROSTATE-2018",
                 "COND-C29-ATOR-2018"
               ]
-            }
-          ],
-          "questions": []
-        },
-        {
-          "id": "benefits",
-          "label": "Benefits",
-          "title": "",
-          "paragraph": "The prostate trial did not significantly change overall Ki-67 or PSA, and atorvastatin did not add measurable benefit to narrow-band UVB in the small vitiligo trial. The glioblastoma study did not demonstrate improved six-month progression-free survival; breast and leukemia findings concern biomarkers or cell experiments.",
-          "sources": [
-            "P-D13-PROSTATE-2018",
-            "COND-C29-ATOR-2018",
-            "P-D13-GBM-2021",
-            "P-D13-BREAST-2013",
-            "P-D13-AML-2019"
-          ],
-          "sentences": [
+            },
             {
               "text": "The prostate trial did not significantly change overall Ki-67 or PSA, and atorvastatin did not add measurable benefit to narrow-band UVB in the small vitiligo trial.",
               "sources": [
@@ -13520,6 +13519,15 @@
               ]
             }
           ],
+          "questions": []
+        },
+        {
+          "id": "benefits",
+          "label": "Benefits",
+          "title": "",
+          "paragraph": "",
+          "sources": [],
+          "sentences": [],
           "questions": [
             {
               "id": "gbm-benefit",
@@ -13675,7 +13683,30 @@
               ]
             }
           ],
-          "questions": []
+          "questions": [
+            {
+              "id": "atorvastatin-dosing-scope",
+              "question": "Does this schedule establish a dose for every investigated use?",
+              "answer": "No single dosing schedule can be inferred across these uses. The prostate study used 80 mg daily until surgery for a median of 27 days; the breast study used 80 mg daily for two weeks.",
+              "sentences": [
+                {
+                  "text": "No single dosing schedule can be inferred across these uses.",
+                  "sources": []
+                },
+                {
+                  "text": "The prostate study used 80 mg daily until surgery for a median of 27 days; the breast study used 80 mg daily for two weeks.",
+                  "sources": [
+                    "P-D13-PROSTATE-2018",
+                    "P-D13-BREAST-2013"
+                  ]
+                }
+              ],
+              "sources": [
+                "P-D13-PROSTATE-2018",
+                "P-D13-BREAST-2013"
+              ]
+            }
+          ]
         },
         {
           "id": "results",
@@ -13701,13 +13732,13 @@
           "id": "quality",
           "label": "Quality",
           "title": "",
-          "paragraph": "The referenced product is an oral tablet in 10–80 mg strengths.",
+          "paragraph": "The referenced product is an oral tablet in 10-80 mg strengths.",
           "sources": [
             "CTX-D13-LABEL"
           ],
           "sentences": [
             {
-              "text": "The referenced product is an oral tablet in 10–80 mg strengths.",
+              "text": "The referenced product is an oral tablet in 10-80 mg strengths.",
               "sources": [
                 "CTX-D13-LABEL"
               ]
@@ -13833,12 +13864,6 @@
       "entityId": "D13",
       "scope": "A cholesterol-lowering statin investigated for cancer-cell metabolism and vitiligo inflammation.",
       "coverageLabel": "",
-      "originalUse": {
-        "text": "hypercholesterolemia",
-        "sourceIds": [
-          "CP027"
-        ]
-      },
       "candidateLinks": [
         {
           "id": "C04",
@@ -14180,12 +14205,14 @@
           "id": "overview",
           "label": "Overview",
           "title": "",
-          "paragraph": "Celecoxib treats pain and inflammatory conditions through COX-2 inhibition. Large breast and colon trials did not show overall disease-free survival benefit; smaller combination studies address different questions.",
+          "paragraph": "Celecoxib treats pain and inflammatory conditions through COX-2 inhibition. Large breast and colon trials did not show overall disease-free survival benefit; smaller combination studies address different questions. REACT did not improve breast-cancer disease-free survival, and CALGB/SWOG 80702 did not improve it overall in stage III colon cancer. A PIK3CA-defined colon subgroup and a small liver-cancer combination trial reported favorable findings; the latter cannot isolate celecoxib. Long COVID reports used multiple drugs without randomization.",
           "sources": [
             "CTX-D15-LABEL",
             "P-D15-BREAST-2021",
             "P-D15-COLON-2021",
-            "P-D15-HCC-2017"
+            "P-D15-HCC-2017",
+            "P-D15-COLON-2024",
+            "P-D15-LONGCOVID-2026"
           ],
           "sentences": [
             {
@@ -14201,23 +14228,7 @@
                 "P-D15-COLON-2021",
                 "P-D15-HCC-2017"
               ]
-            }
-          ],
-          "questions": []
-        },
-        {
-          "id": "benefits",
-          "label": "Benefits",
-          "title": "",
-          "paragraph": "REACT did not improve breast-cancer disease-free survival, and CALGB/SWOG 80702 did not improve it overall in stage III colon cancer. A PIK3CA-defined colon subgroup and a small liver-cancer combination trial reported favorable findings; the latter cannot isolate celecoxib. Long COVID reports used multiple drugs without randomization.",
-          "sources": [
-            "P-D15-BREAST-2021",
-            "P-D15-COLON-2021",
-            "P-D15-COLON-2024",
-            "P-D15-HCC-2017",
-            "P-D15-LONGCOVID-2026"
-          ],
-          "sentences": [
+            },
             {
               "text": "REACT did not improve breast-cancer disease-free survival, and CALGB/SWOG 80702 did not improve it overall in stage III colon cancer.",
               "sources": [
@@ -14239,17 +14250,26 @@
               ]
             }
           ],
+          "questions": []
+        },
+        {
+          "id": "benefits",
+          "label": "Benefits",
+          "title": "",
+          "paragraph": "",
+          "sources": [],
+          "sentences": [],
           "questions": [
             {
               "id": "lc-benefit",
               "question": "What was reported in Long COVID?",
-              "answer": "The 24 completers reported symptom improvements on valacyclovir–celecoxib with or without Paxlovid; convenience sampling and multiple drugs prevent attribution to celecoxib.",
+              "answer": "The 24 completers reported symptom improvements on valacyclovir-celecoxib with or without Paxlovid; convenience sampling and multiple drugs prevent attribution to celecoxib.",
               "sources": [
                 "P-D15-LONGCOVID-2026"
               ],
               "sentences": [
                 {
-                  "text": "The 24 completers reported symptom improvements on valacyclovir–celecoxib with or without Paxlovid; convenience sampling and multiple drugs prevent attribution to celecoxib.",
+                  "text": "The 24 completers reported symptom improvements on valacyclovir-celecoxib with or without Paxlovid; convenience sampling and multiple drugs prevent attribution to celecoxib.",
                   "sources": [
                     "P-D15-LONGCOVID-2026"
                   ]
@@ -14426,7 +14446,28 @@
               ]
             }
           ],
-          "questions": []
+          "questions": [
+            {
+              "id": "celecoxib-dosing-scope",
+              "question": "Does this schedule establish a dose for every investigated use?",
+              "answer": "No single dosing schedule can be inferred across these uses. REACT tested two years of adjuvant celecoxib, a different exposure from short-term pain treatment.",
+              "sentences": [
+                {
+                  "text": "No single dosing schedule can be inferred across these uses.",
+                  "sources": []
+                },
+                {
+                  "text": "REACT tested two years of adjuvant celecoxib, a different exposure from short-term pain treatment.",
+                  "sources": [
+                    "P-D15-BREAST-2021"
+                  ]
+                }
+              ],
+              "sources": [
+                "P-D15-BREAST-2021"
+              ]
+            }
+          ]
         },
         {
           "id": "results",
@@ -14587,12 +14628,6 @@
       "entityId": "D15",
       "scope": "A COX-2 inhibitor investigated in cancer combinations and multidrug Long COVID treatment.",
       "coverageLabel": "",
-      "originalUse": {
-        "text": "osteoarthritis and rheumatoid arthritis",
-        "sourceIds": [
-          "CP027"
-        ]
-      },
       "candidateLinks": [
         {
           "id": "C01",
@@ -15150,10 +15185,12 @@
           "id": "overview",
           "label": "Overview",
           "title": "",
-          "paragraph": "Doxycycline combines antibacterial action with investigated effects on inflammation and tumor biology.",
+          "paragraph": "Doxycycline combines antibacterial action with investigated effects on inflammation and tumor biology. The clearest distinction is between periodontal therapy and acute COVID-19. Low-dose doxycycline is an adjunct to mechanical periodontal treatment; PRINCIPLE did not support routine doxycycline for community COVID-19.",
           "sources": [
             "CTX-D17-LABEL",
-            "CTX-D17-MITOCHONDRIA"
+            "CTX-D17-MITOCHONDRIA",
+            "CTX-D17-PERIODONTAL",
+            "P-D17-PRINCIPLE"
           ],
           "sentences": [
             {
@@ -15161,6 +15198,13 @@
               "sources": [
                 "CTX-D17-LABEL",
                 "CTX-D17-MITOCHONDRIA"
+              ]
+            },
+            {
+              "text": "The clearest distinction is between periodontal therapy and acute COVID-19. Low-dose doxycycline is an adjunct to mechanical periodontal treatment; PRINCIPLE did not support routine doxycycline for community COVID-19.",
+              "sources": [
+                "CTX-D17-PERIODONTAL",
+                "P-D17-PRINCIPLE"
               ]
             }
           ],
@@ -15170,20 +15214,9 @@
           "id": "benefits",
           "label": "Benefits",
           "title": "",
-          "paragraph": "The clearest distinction is between periodontal therapy and acute COVID-19. Low-dose doxycycline is an adjunct to mechanical periodontal treatment; PRINCIPLE did not support routine doxycycline for community COVID-19.",
-          "sources": [
-            "CTX-D17-PERIODONTAL",
-            "P-D17-PRINCIPLE"
-          ],
-          "sentences": [
-            {
-              "text": "The clearest distinction is between periodontal therapy and acute COVID-19. Low-dose doxycycline is an adjunct to mechanical periodontal treatment; PRINCIPLE did not support routine doxycycline for community COVID-19.",
-              "sources": [
-                "CTX-D17-PERIODONTAL",
-                "P-D17-PRINCIPLE"
-              ]
-            }
-          ],
+          "paragraph": "",
+          "sources": [],
+          "sentences": [],
           "questions": [
             {
               "id": "benefits-q1",
@@ -15309,7 +15342,28 @@
               ]
             }
           ],
-          "questions": []
+          "questions": [
+            {
+              "id": "doxycycline-dosing-scope",
+              "question": "Does this schedule establish a dose for every investigated use?",
+              "answer": "No single dosing schedule can be inferred across these uses. The periodontal trial evaluated 20 mg twice daily for nine months alongside scaling and root planing.",
+              "sentences": [
+                {
+                  "text": "No single dosing schedule can be inferred across these uses.",
+                  "sources": []
+                },
+                {
+                  "text": "The periodontal trial evaluated 20 mg twice daily for nine months alongside scaling and root planing.",
+                  "sources": [
+                    "CTX-D17-PERIODONTAL"
+                  ]
+                }
+              ],
+              "sources": [
+                "CTX-D17-PERIODONTAL"
+              ]
+            }
+          ]
         },
         {
           "id": "results",
@@ -15373,7 +15427,7 @@
           "id": "evidence",
           "label": "Evidence",
           "title": "",
-          "paragraph": "PRINCIPLE compared doxycycline with usual care in a randomized community platform trial. Cancer hypotheses concern mitochondrial dependence and cannot supply a patient survival estimate for doxycycline.",
+          "paragraph": "PRINCIPLE compared doxycycline with usual care in a randomized community platform trial. Cancer hypotheses concern mitochondrial dependence and cannot supply a patient survival estimate for doxycycline. PRINCIPLE studied higher-risk community patients during acute illness. Its negative result answers an outpatient COVID-19 question; it does not assess treatment of a separate susceptible bacterial infection.",
           "sources": [
             "P-D17-PRINCIPLE",
             "CTX-D17-MITOCHONDRIA"
@@ -15384,6 +15438,12 @@
               "sources": [
                 "P-D17-PRINCIPLE",
                 "CTX-D17-MITOCHONDRIA"
+              ]
+            },
+            {
+              "text": "PRINCIPLE studied higher-risk community patients during acute illness. Its negative result answers an outpatient COVID-19 question; it does not assess treatment of a separate susceptible bacterial infection.",
+              "sources": [
+                "P-D17-PRINCIPLE"
               ]
             }
           ],
@@ -15471,12 +15531,6 @@
       "entityId": "D17",
       "scope": "An antibiotic with a separate periodontal use; COVID-19 and cancer investigations test different biological effects.",
       "coverageLabel": "",
-      "originalUse": {
-        "text": "bacterial infections",
-        "sourceIds": [
-          "CP006-R01"
-        ]
-      },
       "candidateLinks": [
         {
           "id": "C02",
@@ -15526,10 +15580,11 @@
           "id": "overview",
           "label": "Overview",
           "title": "",
-          "paragraph": "Disulfiram’s alcohol-deterrent action is distinct from its copper-dependent anticancer chemistry.",
+          "paragraph": "Disulfiram’s alcohol-deterrent action is distinct from its copper-dependent anticancer chemistry. The recurrent glioblastoma trial found no significant six-month survival advantage from adding disulfiram and copper to chemotherapy, while severe adverse events increased.",
           "sources": [
             "CTX-D18-LABEL",
-            "CTX-D18-NCI"
+            "CTX-D18-NCI",
+            "P-D18-GBM"
           ],
           "sentences": [
             {
@@ -15537,6 +15592,12 @@
               "sources": [
                 "CTX-D18-LABEL",
                 "CTX-D18-NCI"
+              ]
+            },
+            {
+              "text": "The recurrent glioblastoma trial found no significant six-month survival advantage from adding disulfiram and copper to chemotherapy, while severe adverse events increased.",
+              "sources": [
+                "P-D18-GBM"
               ]
             }
           ],
@@ -15546,29 +15607,20 @@
           "id": "benefits",
           "label": "Benefits",
           "title": "",
-          "paragraph": "The recurrent glioblastoma trial found no significant six-month survival advantage from adding disulfiram and copper to chemotherapy, while severe adverse events increased.",
-          "sources": [
-            "P-D18-GBM"
-          ],
-          "sentences": [
-            {
-              "text": "The recurrent glioblastoma trial found no significant six-month survival advantage from adding disulfiram and copper to chemotherapy, while severe adverse events increased.",
-              "sources": [
-                "P-D18-GBM"
-              ]
-            }
-          ],
+          "paragraph": "",
+          "sources": [],
+          "sentences": [],
           "questions": [
             {
               "id": "benefits-q1",
               "question": "Did disulfiram improve survival in recurrent glioblastoma?",
-              "answer": "The randomized trial did not demonstrate a significant survival improvement with the added disulfiram–copper regimen.",
+              "answer": "The randomized trial did not demonstrate a significant survival improvement with the added disulfiram-copper regimen.",
               "sources": [
                 "P-D18-GBM"
               ],
               "sentences": [
                 {
-                  "text": "The randomized trial did not demonstrate a significant survival improvement with the added disulfiram–copper regimen.",
+                  "text": "The randomized trial did not demonstrate a significant survival improvement with the added disulfiram-copper regimen.",
                   "sources": [
                     "P-D18-GBM"
                   ]
@@ -15665,7 +15717,28 @@
               ]
             }
           ],
-          "questions": []
+          "questions": [
+            {
+              "id": "disulfiram-dosing-scope",
+              "question": "Does this schedule establish a dose for every investigated use?",
+              "answer": "No single dosing schedule can be inferred across these uses. Glioblastoma treatment combined oral disulfiram and copper with alkylating chemotherapy.",
+              "sentences": [
+                {
+                  "text": "No single dosing schedule can be inferred across these uses.",
+                  "sources": []
+                },
+                {
+                  "text": "Glioblastoma treatment combined oral disulfiram and copper with alkylating chemotherapy.",
+                  "sources": [
+                    "P-D18-GBM"
+                  ]
+                }
+              ],
+              "sources": [
+                "P-D18-GBM"
+              ]
+            }
+          ]
         },
         {
           "id": "results",
@@ -15727,13 +15800,19 @@
           "id": "evidence",
           "label": "Evidence",
           "title": "",
-          "paragraph": "The glioblastoma study randomized 88 patients and compared the added regimen with chemotherapy alone. This is more direct clinical evidence than tumor-cell experiments.",
+          "paragraph": "The glioblastoma study randomized 88 patients and compared the added regimen with chemotherapy alone. This is more direct clinical evidence than tumor-cell experiments. Grade 3 or worse adverse events occurred in 34% of the combination group versus 11% of the chemotherapy-only group in the recurrent glioblastoma trial.",
           "sources": [
             "P-D18-GBM"
           ],
           "sentences": [
             {
               "text": "The glioblastoma study randomized 88 patients and compared the added regimen with chemotherapy alone. This is more direct clinical evidence than tumor-cell experiments.",
+              "sources": [
+                "P-D18-GBM"
+              ]
+            },
+            {
+              "text": "Grade 3 or worse adverse events occurred in 34% of the combination group versus 11% of the chemotherapy-only group in the recurrent glioblastoma trial.",
               "sources": [
                 "P-D18-GBM"
               ]
@@ -15788,13 +15867,13 @@
         {
           "id": "faq-1",
           "question": "Can alcohol in medicines matter during disulfiram treatment?",
-          "answer": "Yes. Alcohol-containing medicines can provoke the same disulfiram–alcohol reaction as alcoholic drinks.",
+          "answer": "Yes. Alcohol-containing medicines can provoke the same disulfiram-alcohol reaction as alcoholic drinks.",
           "sources": [
             "CTX-D18-LABEL"
           ],
           "sentences": [
             {
-              "text": "Yes. Alcohol-containing medicines can provoke the same disulfiram–alcohol reaction as alcoholic drinks.",
+              "text": "Yes. Alcohol-containing medicines can provoke the same disulfiram-alcohol reaction as alcoholic drinks.",
               "sources": [
                 "CTX-D18-LABEL"
               ]
@@ -15816,12 +15895,6 @@
       "entityId": "D18",
       "scope": "Disulfiram’s copper-dependent anticancer hypothesis has reached human trials, with a negative randomized glioblastoma result.",
       "coverageLabel": "",
-      "originalUse": {
-        "text": "alcohol dependence",
-        "sourceIds": [
-          "CP020-R01"
-        ]
-      },
       "candidateLinks": [
         {
           "id": "C04",
@@ -17300,7 +17373,7 @@
           "id": "overview",
           "label": "Overview",
           "title": "",
-          "paragraph": "Aspirin investigations span cancer recurrence, cancer prevention, and prevention of treatment-related thrombosis.",
+          "paragraph": "Aspirin investigations span cancer recurrence, cancer prevention, and prevention of treatment-related thrombosis. Aspirin reduced recurrence in mutation-selected colorectal cancer. A hepatitis cohort associated use with lower liver-cancer incidence, while selected myeloma studies address clot prevention.",
           "sources": [
             "COND-C16-ALASCCA-2025",
             "COND-C20-ASP-2020",
@@ -17314,21 +17387,7 @@
                 "COND-C20-ASP-2020",
                 "P-D23-MYELOMA"
               ]
-            }
-          ],
-          "questions": []
-        },
-        {
-          "id": "benefits",
-          "label": "Benefits",
-          "title": "",
-          "paragraph": "Aspirin reduced recurrence in mutation-selected colorectal cancer. A hepatitis cohort associated use with lower liver-cancer incidence, while selected myeloma studies address clot prevention.",
-          "sources": [
-            "COND-C16-ALASCCA-2025",
-            "COND-C20-ASP-2020",
-            "P-D23-MYELOMA"
-          ],
-          "sentences": [
+            },
             {
               "text": "Aspirin reduced recurrence in mutation-selected colorectal cancer. A hepatitis cohort associated use with lower liver-cancer incidence, while selected myeloma studies address clot prevention.",
               "sources": [
@@ -17338,17 +17397,26 @@
               ]
             }
           ],
+          "questions": []
+        },
+        {
+          "id": "benefits",
+          "label": "Benefits",
+          "title": "",
+          "paragraph": "",
+          "sources": [],
+          "sentences": [],
           "questions": [
             {
               "id": "benefits-q1",
               "question": "How large was the colorectal recurrence difference?",
-              "answer": "For PIK3CA exon 9 or 20 hotspot mutations, recurrence was 7.7% with aspirin versus 14.1% with placebo at three years: hazard ratio 0.49 (95% CI 0.24–0.98).",
+              "answer": "For PIK3CA exon 9 or 20 hotspot mutations, recurrence was 7.7% with aspirin versus 14.1% with placebo at three years: hazard ratio 0.49 (95% CI 0.24-0.98).",
               "sources": [
                 "COND-C16-ALASCCA-2025"
               ],
               "sentences": [
                 {
-                  "text": "For PIK3CA exon 9 or 20 hotspot mutations, recurrence was 7.7% with aspirin versus 14.1% with placebo at three years: hazard ratio 0.49 (95% CI 0.24–0.98).",
+                  "text": "For PIK3CA exon 9 or 20 hotspot mutations, recurrence was 7.7% with aspirin versus 14.1% with placebo at three years: hazard ratio 0.49 (95% CI 0.24-0.98).",
                   "sources": [
                     "COND-C16-ALASCCA-2025"
                   ]
@@ -17475,7 +17543,28 @@
               ]
             }
           ],
-          "questions": []
+          "questions": [
+            {
+              "id": "aspirin-dosing-scope",
+              "question": "Does this schedule establish a dose for every investigated use?",
+              "answer": "No single dosing schedule can be inferred across these uses. ALASCCA studied 160 mg daily for three years after curative treatment.",
+              "sentences": [
+                {
+                  "text": "No single dosing schedule can be inferred across these uses.",
+                  "sources": []
+                },
+                {
+                  "text": "ALASCCA studied 160 mg daily for three years after curative treatment.",
+                  "sources": [
+                    "COND-C16-ALASCCA-2025"
+                  ]
+                }
+              ],
+              "sources": [
+                "COND-C16-ALASCCA-2025"
+              ]
+            }
+          ]
         },
         {
           "id": "results",
@@ -17539,7 +17628,7 @@
           "id": "evidence",
           "label": "Evidence",
           "title": "",
-          "paragraph": "Colorectal evidence is randomized and molecularly selected; liver evidence is observational; the myeloma comparison targets thrombosis.",
+          "paragraph": "Colorectal evidence is randomized and molecularly selected; liver evidence is observational; the myeloma comparison targets thrombosis. ALASCCA concerns recurrence after surgery. The liver study concerns first HCC diagnosis in chronic viral hepatitis, a different population and purpose.",
           "sources": [
             "COND-C16-ALASCCA-2025",
             "COND-C20-ASP-2020",
@@ -17552,6 +17641,13 @@
                 "COND-C16-ALASCCA-2025",
                 "COND-C20-ASP-2020",
                 "P-D23-MYELOMA"
+              ]
+            },
+            {
+              "text": "ALASCCA concerns recurrence after surgery. The liver study concerns first HCC diagnosis in chronic viral hepatitis, a different population and purpose.",
+              "sources": [
+                "COND-C16-ALASCCA-2025",
+                "COND-C20-ASP-2020"
               ]
             }
           ],
@@ -17636,12 +17732,6 @@
       "entityId": "D23",
       "scope": "Aspirin has a mutation-selected colorectal recurrence result; its other cancer and multiple-sclerosis investigations ask different questions.",
       "coverageLabel": "",
-      "originalUse": {
-        "text": "analgesic, antipyretic and anti-inflammatory use",
-        "sourceIds": [
-          "CP027"
-        ]
-      },
       "candidateLinks": [
         {
           "id": "C03",
@@ -19404,7 +19494,7 @@
           "id": "overview",
           "label": "Overview",
           "title": "",
-          "paragraph": "Clomipramine is established for obsessive-compulsive disorder. A Crohn’s gene-expression study identified it as a separate repurposing candidate.",
+          "paragraph": "Clomipramine is established for obsessive-compulsive disorder. A Crohn’s gene-expression study identified it as a separate repurposing candidate. Clinical evidence: Low for Crohn's disease. Clomipramine was a computational candidate from gene-expression matching in anti-TNF-refractory disease. Patients were not treated with clomipramine, and remission, symptom benefit, intestinal safety and a treatment dose were not measured. Human-derived molecular data do not make this a human treatment trial.",
           "sources": [
             "CTX-D29-LABEL",
             "CP002-R01"
@@ -19416,6 +19506,12 @@
                 "CTX-D29-LABEL",
                 "CP002-R01"
               ]
+            },
+            {
+              "text": "Clinical evidence: Low for Crohn's disease. Clomipramine was a computational candidate from gene-expression matching in anti-TNF-refractory disease. Patients were not treated with clomipramine, and remission, symptom benefit, intestinal safety and a treatment dose were not measured. Human-derived molecular data do not make this a human treatment trial.",
+              "sources": [
+                "CP002-R01"
+              ]
             }
           ],
           "questions": []
@@ -19424,18 +19520,9 @@
           "id": "benefits",
           "label": "Benefits",
           "title": "",
-          "paragraph": "Clinical evidence: Low for Crohn's disease. Clomipramine was a computational candidate from gene-expression matching in anti-TNF-refractory disease. Patients were not treated with clomipramine, and remission, symptom benefit, intestinal safety and a treatment dose were not measured. Human-derived molecular data do not make this a human treatment trial.",
-          "sources": [
-            "CP002-R01"
-          ],
-          "sentences": [
-            {
-              "text": "Clinical evidence: Low for Crohn's disease. Clomipramine was a computational candidate from gene-expression matching in anti-TNF-refractory disease. Patients were not treated with clomipramine, and remission, symptom benefit, intestinal safety and a treatment dose were not measured. Human-derived molecular data do not make this a human treatment trial.",
-              "sources": [
-                "CP002-R01"
-              ]
-            }
-          ],
+          "paragraph": "",
+          "sources": [],
+          "sentences": [],
           "questions": [
             {
               "id": "benefits-q1",
@@ -19548,7 +19635,35 @@
               ]
             }
           ],
-          "questions": []
+          "questions": [
+            {
+              "id": "clomipramine-dosing-scope",
+              "question": "Does this schedule establish a dose for every investigated use?",
+              "answer": "No single dosing schedule can be inferred across these uses. Label context: Adult OCD treatment begins at 25 mg daily and rises gradually as tolerated; early divided doses are taken with meals. Later changes must account for slow accumulation. Those psychiatric dosing instructions do not establish a Crohn's disease regimen. No clomipramine dose was administered in the Crohn’s computational study; its ranking cannot determine an intestinal treatment regimen.",
+              "sentences": [
+                {
+                  "text": "No single dosing schedule can be inferred across these uses.",
+                  "sources": []
+                },
+                {
+                  "text": "Label context: Adult OCD treatment begins at 25 mg daily and rises gradually as tolerated; early divided doses are taken with meals. Later changes must account for slow accumulation. Those psychiatric dosing instructions do not establish a Crohn's disease regimen.",
+                  "sources": [
+                    "CTX-D29-LABEL"
+                  ]
+                },
+                {
+                  "text": "No clomipramine dose was administered in the Crohn’s computational study; its ranking cannot determine an intestinal treatment regimen.",
+                  "sources": [
+                    "CP002-R01"
+                  ]
+                }
+              ],
+              "sources": [
+                "CTX-D29-LABEL",
+                "CP002-R01"
+              ]
+            }
+          ]
         },
         {
           "id": "results",
@@ -19608,13 +19723,19 @@
           "id": "evidence",
           "label": "Evidence",
           "title": "",
-          "paragraph": "CMap matching compares transcriptional patterns, and the enrichment score is neither a response rate nor a safety estimate.",
+          "paragraph": "CMap matching compares transcriptional patterns, and the enrichment score is neither a response rate nor a safety estimate. Cluster 2 yielded a computational nomination. The study’s single-dataset design and absence of a drug-treated cohort limit inference about Crohn’s outcomes.",
           "sources": [
             "CP002-R01"
           ],
           "sentences": [
             {
               "text": "CMap matching compares transcriptional patterns, and the enrichment score is neither a response rate nor a safety estimate.",
+              "sources": [
+                "CP002-R01"
+              ]
+            },
+            {
+              "text": "Cluster 2 yielded a computational nomination. The study’s single-dataset design and absence of a drug-treated cohort limit inference about Crohn’s outcomes.",
               "sources": [
                 "CP002-R01"
               ]
@@ -26743,10 +26864,11 @@
           "id": "d34-overview",
           "label": "Overview",
           "title": "",
-          "paragraph": "Fluconazole is a triazole antifungal medicine used for susceptible fungal infections, including Candida infections and fungal meningitis. It slows fungal growth; its established infection uses do not establish benefit for unrelated diseases.",
+          "paragraph": "Fluconazole is a triazole antifungal medicine used for susceptible fungal infections, including Candida infections and fungal meningitis. It slows fungal growth; its established infection uses do not establish benefit for unrelated diseases. Established uses include vaginal, mouth and esophageal candidiasis, cryptococcal meningitis, and candidiasis prevention in selected bone-marrow-transplant settings.",
           "sources": [
             "CTX-D34-MEDLINEPLUS",
-            "CTX-off-label-1"
+            "CTX-off-label-1",
+            "CTX-D34-LABEL"
           ],
           "sentences": [
             {
@@ -26761,6 +26883,12 @@
                 "CTX-D34-MEDLINEPLUS",
                 "CTX-off-label-1"
               ]
+            },
+            {
+              "text": "Established uses include vaginal, mouth and esophageal candidiasis, cryptococcal meningitis, and candidiasis prevention in selected bone-marrow-transplant settings.",
+              "sources": [
+                "CTX-D34-LABEL"
+              ]
             }
           ],
           "questions": []
@@ -26769,18 +26897,9 @@
           "id": "d34-benefits",
           "label": "Benefits",
           "title": "",
-          "paragraph": "Established uses include vaginal, mouth and esophageal candidiasis, cryptococcal meningitis, and candidiasis prevention in selected bone-marrow-transplant settings.",
-          "sources": [
-            "CTX-D34-LABEL"
-          ],
-          "sentences": [
-            {
-              "text": "Established uses include vaginal, mouth and esophageal candidiasis, cryptococcal meningitis, and candidiasis prevention in selected bone-marrow-transplant settings.",
-              "sources": [
-                "CTX-D34-LABEL"
-              ]
-            }
-          ],
+          "paragraph": "",
+          "sources": [],
+          "sentences": [],
           "questions": [
             {
               "id": "d34-positive-culture",
@@ -26912,7 +27031,41 @@
               ]
             }
           ],
-          "questions": []
+          "questions": [
+            {
+              "id": "fluconazole-dosing-scope",
+              "question": "Does this schedule establish a dose for every investigated use?",
+              "answer": "No single dosing schedule can be inferred across these uses. Treatment duration ranges from a single dose to weeks or longer, depending on the infection and response; tablets and oral suspension are available. Shake oral suspension well before each use; unused liquid is discarded after 14 days according to the patient information. A regimen for one infection should not be assumed appropriate for another indication.",
+              "sentences": [
+                {
+                  "text": "No single dosing schedule can be inferred across these uses.",
+                  "sources": []
+                },
+                {
+                  "text": "Treatment duration ranges from a single dose to weeks or longer, depending on the infection and response; tablets and oral suspension are available.",
+                  "sources": [
+                    "CTX-D34-MEDLINEPLUS"
+                  ]
+                },
+                {
+                  "text": "Shake oral suspension well before each use; unused liquid is discarded after 14 days according to the patient information.",
+                  "sources": [
+                    "CTX-D34-MEDLINEPLUS"
+                  ]
+                },
+                {
+                  "text": "A regimen for one infection should not be assumed appropriate for another indication.",
+                  "sources": [
+                    "CTX-off-label-1"
+                  ]
+                }
+              ],
+              "sources": [
+                "CTX-D34-MEDLINEPLUS",
+                "CTX-off-label-1"
+              ]
+            }
+          ]
         },
         {
           "id": "d34-results",
@@ -26993,12 +27146,13 @@
           "id": "d34-evidence",
           "label": "Evidence",
           "title": "",
-          "paragraph": "Susceptibility varies by organism; Candida krusei is considered resistant to fluconazole. Persistent or recurrent vaginal symptoms call for reassessment, including consideration of resistant or non-albicans Candida. Clinical translation: Low confidence. The hypha and biofilm papers cited here study Candida cultures or clinical isolates, rather than testing a new treatment indication in patients. They do not establish improved patient outcomes from a new use of fluconazole. Its established antifungal treatment uses are a separate evidence question.",
+          "paragraph": "Susceptibility varies by organism; Candida krusei is considered resistant to fluconazole. Persistent or recurrent vaginal symptoms call for reassessment, including consideration of resistant or non-albicans Candida. Clinical translation: Low confidence. The hypha and biofilm papers cited here study Candida cultures or clinical isolates, rather than testing a new treatment indication in patients. They do not establish improved patient outcomes from a new use of fluconazole. Its established antifungal treatment uses are a separate evidence question. For vaginal candidiasis, clinical improvement and negative fungal cultures are distinct outcomes. CDC reports that azole treatment achieves both in most patients who complete treatment for uncomplicated disease. Those infection outcomes do not measure biofilm destruction or benefit in a non-fungal condition.",
           "sources": [
             "CTX-D34-LABEL",
             "CTX-CANDIDA-GUIDELINE",
             "MECH-D34-HYPHAE-1999",
-            "MECH-D34-BIOFILM-2019"
+            "MECH-D34-BIOFILM-2019",
+            "CTX-GUIDE-2"
           ],
           "sentences": [
             {
@@ -27018,6 +27172,19 @@
               "sources": [
                 "MECH-D34-HYPHAE-1999",
                 "MECH-D34-BIOFILM-2019"
+              ]
+            },
+            {
+              "text": "For vaginal candidiasis, clinical improvement and negative fungal cultures are distinct outcomes. CDC reports that azole treatment achieves both in most patients who complete treatment for uncomplicated disease.",
+              "sources": [
+                "CTX-CANDIDA-GUIDELINE"
+              ]
+            },
+            {
+              "text": "Those infection outcomes do not measure biofilm destruction or benefit in a non-fungal condition.",
+              "sources": [
+                "CTX-CANDIDA-GUIDELINE",
+                "CTX-GUIDE-2"
               ]
             }
           ],
