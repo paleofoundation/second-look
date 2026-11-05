@@ -10,6 +10,7 @@ import {renderToStaticMarkup} from 'react-dom/server';
 const root = path.resolve(import.meta.dirname, '..');
 const require = createRequire(import.meta.url);
 const cache = new Map();
+const canonicalDrugPages = JSON.parse(fs.readFileSync(path.join(root, 'data/canonical-drug-pages.json'), 'utf8')).pages;
 const publicMechanisms = JSON.parse(fs.readFileSync(path.join(root, 'data/public-mechanisms.json'), 'utf8'));
 const mechanismFixture = {
   contexts: [],
@@ -141,6 +142,7 @@ const textOf = html => html.replace(/<[^>]*>/g, '').replace(/&#x27;/g, "'").repl
   .replace(/\s+/g, ' ').trim();
 function assertMechanismLocations(profile, record, mechanismSection, page, pageSources) {
  const removedBlock=profile.id==='G-METFORMIN';
+ const canonicalDrug=canonicalDrugPages.includes(profile.slug);
  if(removedBlock){
   for(const text of ['Rationale by condition','mechanism-evidence-links','mechanism-rationale-table','For treatment outcomes'])assert(!mechanismSection.includes(text),'Metformin removed rationale block: '+text);
  }
@@ -152,7 +154,7 @@ function assertMechanismLocations(profile, record, mechanismSection, page, pageS
   const evidenceHref=mechanismEvidenceHref(profile,rationale.id);
   let selected=rationale;
   if(evidenceHref){
-   if(!removedBlock)assert(mechanismSection.includes('<span id="'+rationale.id+'"><a href="'+evidenceHref+'">'),label+': legacy anchor links to the matching evidence row');
+   if(!removedBlock&&!canonicalDrug)assert(mechanismSection.includes('<span id="'+rationale.id+'"><a href="'+evidenceHref+'">'),label+': legacy anchor links to the matching evidence row');
    assert(page.includes('id="'+evidenceHref.slice(1)+'"'),label+': evidence destination renders');
    assert(!mechanismSection.includes('<tr role="row" id="'+rationale.id+'"'),label+': moved rationale does not remain in the main table');
    const row=synthesisRows.find(row=>row.id===evidenceHref.slice(1));
@@ -163,12 +165,12 @@ function assertMechanismLocations(profile, record, mechanismSection, page, pageS
   for(const field of ['rationale','tested','limits']){
    assert.deepEqual(selected[field],rationale[field],label+': '+field+' retains exact prose and sentence citations');
    for(const sentence of rationale[field].sentences||[]){
-    if(!evidenceHref&&!removedBlock)assert(textOf(mechanismSection).includes(sentence.text),label+': unmapped rationale remains visible');
+    if((!evidenceHref||canonicalDrug)&&!removedBlock)assert(textOf(mechanismSection).includes(sentence.text),label+': unmapped rationale remains visible');
     for(const id of sentence.sources){
      assert(resolvedSources.some(source=>source.id===id),label+': mechanism source resolves '+id);
      assert(order.includes(id),label+': source retains a page citation number '+id);
      assert(page.includes('id="source-ref-'+encodeURIComponent(id)+'"'),label+': citation has a bibliography target '+id);
-     if(!evidenceHref&&!removedBlock)assert(mechanismSection.includes('data-source-id="'+id+'"'),label+': retained rationale has rendered citations');
+     if((!evidenceHref||canonicalDrug)&&!removedBlock)assert(mechanismSection.includes('data-source-id="'+id+'"'),label+': retained rationale has rendered citations');
     }
    }
   }
@@ -238,7 +240,7 @@ if (process.argv.includes('--all-profiles')) {
  let totalQuestions=0;
  for(const profile of profiles){
   const label=profile.slug;
-  const required=profile.type==='Drug'?['Overview','Benefits','Safety','Contraindications','Interactions','Dosing','Results','Quality','Status','Evidence']:['Overview','Options','Evidence','Safety','Comparisons'];
+  const required=profile.type==='Drug'?(canonicalDrugPages.includes(profile.slug)?['Overview','Safety','Contraindications','Interactions','Dosing','Status','Evidence']:['Overview','Benefits','Safety','Contraindications','Interactions','Dosing','Results','Quality','Status','Evidence']):['Overview','Options','Evidence','Safety','Comparisons'];
   for(const name of required)assert(profile.sections.some(s=>s.label===name&&s.paragraph.trim().length>25),label+': substantive '+name+' prose');
   const opening=profile.sections.find(s=>s.label===(profile.type==='Drug'?'Benefits':'Options'));
   assert(opening.questions?.length,label+': specific benefit/option questions');
@@ -302,10 +304,11 @@ const pilotSources = content.sources.filter(s=>pilot.sourceIds.includes(s.id));
 const pilotHtml = render(pilot, pilotSources);
 const pilotSection = pilotHtml.match(/<section id="mechanisms"[\s\S]*?<\/section>/)[0];
 assert(!pilotSection.includes('<details'), 'Pilot mechanisms are visible without opening disclosures');
-assert.equal((pilotSection.match(/role="rowheader"/g)||[]).length,pilotRecord.rationales.filter(row=>!mechanismEvidenceHref(pilot,row.id)).length,'Only rationales without evidence rows remain in the article table');
+assert.equal((pilotSection.match(/role="rowheader"/g)||[]).length,(canonicalDrugPages.includes(pilot.slug)?0:pilotRecord.rationales.filter(row=>!mechanismEvidenceHref(pilot,row.id)).length),'Only rationales without evidence rows remain in the article table');
 assert.equal((pilotSection.match(/class="mechanism-pathway"/g)||[]).length,5,'Five itraconazole pathway blocks');
 assert(pilotSection.indexOf('hedgehog-cellular')<pilotSection.indexOf('condition-rationales'),'Shared pathways precede condition table');
 for(const id of ['ovarian','prostate','lung','colorectal','pancreatic','melanoma','bcc','aml','myeloma','hedgehog-cellular','cholesterol-transport']) assert(pilotSection.includes('id="'+id+'"'),'Legacy mechanism fragment survives: '+id);
+if(canonicalDrugPages.includes(pilot.slug)) for(const row of pilotRecord.rationales) for(const field of ['rationale','tested','limits']) assert(textOf(pilotSection).includes(row[field].text),'Canonical visible rationale retains '+row.id+' '+field);
 assertMechanismLocations(pilot,pilotRecord,pilotSection,pilotHtml,pilotSources);
 for(const prose of [pilotRecord.originalAction,...pilotRecord.pathways,...pilotRecord.rationales.flatMap(row=>[row.rationale,row.tested,row.limits])]) {
  assert.equal(prose.sentences.map(sentence=>sentence.text).join(' '),prose.text,'Pilot sentence mapping');

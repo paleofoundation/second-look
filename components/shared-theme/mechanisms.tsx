@@ -65,7 +65,7 @@ export function MechanismSection({content, originalAction, summary, pathways = [
     </div> : pathways.map(pathway => <div className="mechanism-pathway" id={pathway.id} key={pathway.id}>
       <h3>{pathway.title}</h3>{pathway.explanation}
     </div>)}
-    {!showRationales && <><span id="condition-rationales" aria-hidden="true"/>{rationales.map(row => <span id={row.id} key={row.id} aria-hidden="true"/>)}</>}
+    {!showRationales && <><span id="condition-rationales" aria-hidden="true"/>{rationales.map(row => visibleQuestions ? <div className="mechanism-rationale-prose" id={row.id} key={row.id}><h3>{row.condition}</h3>{row.rationale}{row.tested}{row.limits}{row.evidenceHref?<p><a href={row.evidenceHref}>View the corresponding evidence</a></p>:null}</div> : <span id={row.id} key={row.id} aria-hidden="true"/>)}</>}
     {showRationales && rationales.length > 0 && <>
       <h3 id="condition-rationales">Rationale by condition</h3>
       {movedRationales.length > 0 && <div className="mechanism-evidence-links">

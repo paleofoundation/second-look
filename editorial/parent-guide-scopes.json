@@ -1269,10 +1269,11 @@
             "id": "overview",
             "label": "Overview",
             "title": "",
-            "paragraph": "Fluvoxamine is an SSRI used for OCD. In acute COVID-19, a later randomized trial did not show faster sustained recovery.",
+            "paragraph": "Fluvoxamine is an SSRI used for OCD. In acute COVID-19, a later randomized trial did not show faster sustained recovery. The ACTIV-6 higher-dose trial did not demonstrate faster recovery from acute COVID-19. The original REVIVE Long COVID fatigue report carries a retraction-and-republication notice, so its original estimate cannot support a benefit claim. For the studied acute outpatient illness, confidence in the finding of no faster sustained recovery is Moderate. ACTIV-6 defined recovery as three consecutive days without COVID-19 symptoms. The median time was 10 days in both groups; the recovery hazard ratio was 0.99, with a 95% credible interval of 0.89 to 1.09. This result concerns that symptom endpoint and population, rather than every possible use or stage of infection.",
             "sources": [
               "CTX-D02-LABEL",
-              "P-D02-ACTIV6-2023"
+              "P-D02-ACTIV6-2023",
+              "P-REVIVE-2026"
             ],
             "sentences": [
               {
@@ -1286,20 +1287,7 @@
                 "sources": [
                   "P-D02-ACTIV6-2023"
                 ]
-              }
-            ],
-            "questions": []
-          },
-          {
-            "id": "benefits",
-            "label": "Benefits",
-            "title": "",
-            "paragraph": "The ACTIV-6 higher-dose trial did not demonstrate faster recovery from acute COVID-19. The original REVIVE Long COVID fatigue report carries a retraction-and-republication notice, so its original estimate cannot support a benefit claim. For the studied acute outpatient illness, confidence in the finding of no faster sustained recovery is Moderate. ACTIV-6 defined recovery as three consecutive days without COVID-19 symptoms. The median time was 10 days in both groups; the recovery hazard ratio was 0.99, with a 95% credible interval of 0.89 to 1.09. This result concerns that symptom endpoint and population, rather than every possible use or stage of infection.",
-            "sources": [
-              "P-D02-ACTIV6-2023",
-              "P-REVIVE-2026"
-            ],
-            "sentences": [
+              },
               {
                 "text": "The ACTIV-6 higher-dose trial did not demonstrate faster recovery from acute COVID-19.",
                 "sources": [
@@ -1319,6 +1307,15 @@
                 ]
               }
             ],
+            "questions": []
+          },
+          {
+            "id": "benefits",
+            "label": "Benefits",
+            "title": "",
+            "paragraph": "",
+            "sources": [],
+            "sentences": [],
             "questions": [
               {
                 "id": "acute-benefit",
@@ -1431,7 +1428,28 @@
                 ]
               }
             ],
-            "questions": []
+            "questions": [
+              {
+                "id": "fluvoxamine-dosing-scope",
+                "question": "Does this schedule establish a dose for every investigated use?",
+                "answer": "No single dosing schedule can be inferred across these uses. ACTIV-6 studied 50 mg twice daily on day 1, followed by 100 mg twice daily for 12 additional days; that experimental course did not improve sustained recovery.",
+                "sentences": [
+                  {
+                    "text": "No single dosing schedule can be inferred across these uses.",
+                    "sources": []
+                  },
+                  {
+                    "text": "ACTIV-6 studied 50 mg twice daily on day 1, followed by 100 mg twice daily for 12 additional days; that experimental course did not improve sustained recovery.",
+                    "sources": [
+                      "P-D02-ACTIV6-2023"
+                    ]
+                  }
+                ],
+                "sources": [
+                  "P-D02-ACTIV6-2023"
+                ]
+              }
+            ]
           },
           {
             "id": "results",
@@ -5481,13 +5499,18 @@
             "id": "overview",
             "label": "Overview",
             "title": "",
-            "paragraph": "Itraconazole is an antifungal with several distinct cancer research programs. The clinical evidence includes small exploratory trials and uncontrolled chemotherapy series; other cancer findings remain preclinical.",
+            "paragraph": "Itraconazole is an antifungal with several distinct cancer research programs. The clinical evidence includes small exploratory trials and uncontrolled chemotherapy series; other cancer findings remain preclinical. Small studies found signals of activity in basal cell, prostate and lung cancers, but designs and endpoints differ. Ovarian and pancreatic reports combined itraconazole with chemotherapy, while colorectal, melanoma, AML and myeloma work cited here tested laboratory or animal models.",
             "sources": [
               "CTX-D07-LABEL",
               "P-D07-BCC-2014",
               "P-D07-LUNG-2013",
               "COND-C03-ITRA-2014",
-              "P-D07-CRC-2018"
+              "P-D07-CRC-2018",
+              "P-D07-PROSTATE-2013",
+              "P-D07-PANCREAS-2015",
+              "P-D07-MELANOMA-2017",
+              "P-D07-AML-2026",
+              "P-D07-MYELOMA-2016"
             ],
             "sentences": [
               {
@@ -5506,27 +5529,7 @@
                   "COND-C03-ITRA-2014",
                   "P-D07-CRC-2018"
                 ]
-              }
-            ],
-            "questions": []
-          },
-          {
-            "id": "benefits",
-            "label": "Benefits",
-            "title": "",
-            "paragraph": "Small studies found signals of activity in basal cell, prostate and lung cancers, but designs and endpoints differ. Ovarian and pancreatic reports combined itraconazole with chemotherapy, while colorectal, melanoma, AML and myeloma work cited here tested laboratory or animal models.",
-            "sources": [
-              "P-D07-BCC-2014",
-              "P-D07-PROSTATE-2013",
-              "P-D07-LUNG-2013",
-              "COND-C03-ITRA-2014",
-              "P-D07-PANCREAS-2015",
-              "P-D07-CRC-2018",
-              "P-D07-MELANOMA-2017",
-              "P-D07-AML-2026",
-              "P-D07-MYELOMA-2016"
-            ],
-            "sentences": [
+              },
               {
                 "text": "Small studies found signals of activity in basal cell, prostate and lung cancers, but designs and endpoints differ.",
                 "sources": [
@@ -5547,6 +5550,15 @@
                 ]
               }
             ],
+            "questions": []
+          },
+          {
+            "id": "benefits",
+            "label": "Benefits",
+            "title": "",
+            "paragraph": "",
+            "sources": [],
+            "sentences": [],
             "questions": [
               {
                 "id": "ovarian-benefit",
@@ -5764,7 +5776,28 @@
                 ]
               }
             ],
-            "questions": []
+            "questions": [
+              {
+                "id": "itraconazole-dosing-scope",
+                "question": "Does this schedule establish a dose for every investigated use?",
+                "answer": "No single dosing schedule can be inferred across these uses. The prostate study compared 200 and 600 mg daily; different oncology studies used different schedules and combinations.",
+                "sentences": [
+                  {
+                    "text": "No single dosing schedule can be inferred across these uses.",
+                    "sources": []
+                  },
+                  {
+                    "text": "The prostate study compared 200 and 600 mg daily; different oncology studies used different schedules and combinations.",
+                    "sources": [
+                      "P-D07-PROSTATE-2013"
+                    ]
+                  }
+                ],
+                "sources": [
+                  "P-D07-PROSTATE-2013"
+                ]
+              }
+            ]
           },
           {
             "id": "results",
@@ -6720,7 +6753,7 @@
             "id": "overview",
             "label": "Overview",
             "title": "",
-            "paragraph": "Mebendazole treats intestinal worm infections. Cancer research includes ovarian and oral-cell experiments plus glioma combination trials.",
+            "paragraph": "Mebendazole treats intestinal worm infections. Cancer research includes ovarian and oral-cell experiments plus glioma combination trials. In recurrent glioblastoma, neither mebendazole-containing regimen achieved its prespecified survival benchmark. Ovarian and oral-cancer findings cited here are experimental, without corresponding patient survival estimates.",
             "sources": [
               "CTX-D09-LABEL",
               "P-D09-OVARIAN-2021",
@@ -6741,21 +6774,7 @@
                   "P-D09-GBM-2022",
                   "P-D09-ORAL-2018"
                 ]
-              }
-            ],
-            "questions": []
-          },
-          {
-            "id": "benefits",
-            "label": "Benefits",
-            "title": "",
-            "paragraph": "In recurrent glioblastoma, neither mebendazole-containing regimen achieved its prespecified survival benchmark. Ovarian and oral-cancer findings cited here are experimental, without corresponding patient survival estimates.",
-            "sources": [
-              "P-D09-GBM-2022",
-              "P-D09-OVARIAN-2021",
-              "P-D09-ORAL-2018"
-            ],
-            "sentences": [
+              },
               {
                 "text": "In recurrent glioblastoma, neither mebendazole-containing regimen achieved its prespecified survival benchmark.",
                 "sources": [
@@ -6770,6 +6789,15 @@
                 ]
               }
             ],
+            "questions": []
+          },
+          {
+            "id": "benefits",
+            "label": "Benefits",
+            "title": "",
+            "paragraph": "",
+            "sources": [],
+            "sentences": [],
             "questions": [
               {
                 "id": "ovarian-benefit",
@@ -6790,13 +6818,13 @@
               {
                 "id": "gbm-benefit",
                 "question": "What did the recurrent-glioblastoma trial find?",
-                "answer": "Nine-month survival was 36.6% with temozolomide–mebendazole and 45% with lomustine–mebendazole, below the 55% benchmark; both arms included mebendazole.",
+                "answer": "Nine-month survival was 36.6% with temozolomide-mebendazole and 45% with lomustine-mebendazole, below the 55% benchmark; both arms included mebendazole.",
                 "sources": [
                   "P-D09-GBM-2022"
                 ],
                 "sentences": [
                   {
-                    "text": "Nine-month survival was 36.6% with temozolomide–mebendazole and 45% with lomustine–mebendazole, below the 55% benchmark; both arms included mebendazole.",
+                    "text": "Nine-month survival was 36.6% with temozolomide-mebendazole and 45% with lomustine-mebendazole, below the 55% benchmark; both arms included mebendazole.",
                     "sources": [
                       "P-D09-GBM-2022"
                     ]
@@ -6861,13 +6889,13 @@
             "id": "interactions",
             "label": "Interactions",
             "title": "",
-            "paragraph": "Concomitant metronidazole is avoided because serious skin reactions, including Stevens–Johnson syndrome and toxic epidermal necrolysis, have been reported.",
+            "paragraph": "Concomitant metronidazole is avoided because serious skin reactions, including Stevens-Johnson syndrome and toxic epidermal necrolysis, have been reported.",
             "sources": [
               "CTX-D09-LABEL"
             ],
             "sentences": [
               {
-                "text": "Concomitant metronidazole is avoided because serious skin reactions, including Stevens–Johnson syndrome and toxic epidermal necrolysis, have been reported.",
+                "text": "Concomitant metronidazole is avoided because serious skin reactions, including Stevens-Johnson syndrome and toxic epidermal necrolysis, have been reported.",
                 "sources": [
                   "CTX-D09-LABEL"
                 ]
@@ -6893,19 +6921,42 @@
                 ]
               }
             ],
-            "questions": []
+            "questions": [
+              {
+                "id": "mebendazole-dosing-scope",
+                "question": "Does this schedule establish a dose for every investigated use?",
+                "answer": "No single dosing schedule can be inferred across these uses. The antiparasitic label uses short courses; oncology trials examine substantially different exposure and combination treatment.",
+                "sentences": [
+                  {
+                    "text": "No single dosing schedule can be inferred across these uses.",
+                    "sources": []
+                  },
+                  {
+                    "text": "The antiparasitic label uses short courses; oncology trials examine substantially different exposure and combination treatment.",
+                    "sources": [
+                      "CTX-D09-LABEL",
+                      "P-D09-GBM-2022"
+                    ]
+                  }
+                ],
+                "sources": [
+                  "CTX-D09-LABEL",
+                  "P-D09-GBM-2022"
+                ]
+              }
+            ]
           },
           {
             "id": "results",
             "label": "Results",
             "title": "",
-            "paragraph": "The glioblastoma trial compared two chemotherapy partners, so it cannot isolate the effect of adding mebendazole to either one.",
+            "paragraph": "The glioblastoma trial compared two chemotherapy combination component, so it cannot isolate the effect of adding mebendazole to either one.",
             "sources": [
               "P-D09-GBM-2022"
             ],
             "sentences": [
               {
-                "text": "The glioblastoma trial compared two chemotherapy partners, so it cannot isolate the effect of adding mebendazole to either one.",
+                "text": "The glioblastoma trial compared two chemotherapy combination component, so it cannot isolate the effect of adding mebendazole to either one.",
                 "sources": [
                   "P-D09-GBM-2022"
                 ]
@@ -6953,13 +7004,13 @@
             "id": "evidence",
             "label": "Evidence",
             "title": "",
-            "paragraph": "The glioblastoma trial compared two chemotherapy partners, so it cannot isolate the effect of adding mebendazole to either one.",
+            "paragraph": "The glioblastoma trial compared two chemotherapy combination component, so it cannot isolate the effect of adding mebendazole to either one.",
             "sources": [
               "P-D09-GBM-2022"
             ],
             "sentences": [
               {
-                "text": "The glioblastoma trial compared two chemotherapy partners, so it cannot isolate the effect of adding mebendazole to either one.",
+                "text": "The glioblastoma trial compared two chemotherapy combination component, so it cannot isolate the effect of adding mebendazole to either one.",
                 "sources": [
                   "P-D09-GBM-2022"
                 ]
@@ -7563,7 +7614,7 @@
             "id": "overview",
             "label": "Overview",
             "title": "",
-            "paragraph": "Guanfacine extended release is an ADHD medicine. Its Long COVID evidence includes a small uncontrolled series using combination treatment.",
+            "paragraph": "Guanfacine extended release is an ADHD medicine. Its Long COVID evidence includes a small uncontrolled series using combination treatment. Clinical evidence: Low. In an open-label series, eight of twelve people reported cognitive improvement with guanfacine plus N-acetylcysteine. Four stopped treatment: two for unspecified reasons and two for hypotension or dizziness. There was no placebo group or single-drug comparison, so the report cannot isolate guanfacine's effect or predict how often patients will improve.",
             "sources": [
               "CTX-D11-LABEL",
               "P-D11-LONGCOVID-2023"
@@ -7580,6 +7631,12 @@
                 "sources": [
                   "P-D11-LONGCOVID-2023"
                 ]
+              },
+              {
+                "text": "Clinical evidence: Low. In an open-label series, eight of twelve people reported cognitive improvement with guanfacine plus N-acetylcysteine. Four stopped treatment: two for unspecified reasons and two for hypotension or dizziness. There was no placebo group or single-drug comparison, so the report cannot isolate guanfacine's effect or predict how often patients will improve.",
+                "sources": [
+                  "P-D11-LONGCOVID-2023"
+                ]
               }
             ],
             "questions": []
@@ -7588,18 +7645,9 @@
             "id": "benefits",
             "label": "Benefits",
             "title": "",
-            "paragraph": "Clinical evidence: Low. In an open-label series, eight of twelve people reported cognitive improvement with guanfacine plus N-acetylcysteine. Four stopped treatment: two for unspecified reasons and two for hypotension or dizziness. There was no placebo group or single-drug comparison, so the report cannot isolate guanfacine's effect or predict how often patients will improve.",
-            "sources": [
-              "P-D11-LONGCOVID-2023"
-            ],
-            "sentences": [
-              {
-                "text": "Clinical evidence: Low. In an open-label series, eight of twelve people reported cognitive improvement with guanfacine plus N-acetylcysteine. Four stopped treatment: two for unspecified reasons and two for hypotension or dizziness. There was no placebo group or single-drug comparison, so the report cannot isolate guanfacine's effect or predict how often patients will improve.",
-                "sources": [
-                  "P-D11-LONGCOVID-2023"
-                ]
-              }
-            ],
+            "paragraph": "",
+            "sources": [],
+            "sentences": [],
             "questions": [
               {
                 "id": "brainfog-benefit",
@@ -7696,7 +7744,35 @@
                 ]
               }
             ],
-            "questions": []
+            "questions": [
+              {
+                "id": "guanfacine-dosing-scope",
+                "question": "Does this schedule establish a dose for every investigated use?",
+                "answer": "No single dosing schedule can be inferred across these uses. Label context: Intuniv extended-release ADHD treatment starts at 1 mg daily, with increases no faster than 1 mg weekly. Tablets must be swallowed whole and cannot replace immediate-release tablets milligram for milligram. The label tapers by no more than 1 mg every 3-7 days. This ADHD schedule does not establish Long COVID dosing. The case series began with 1 mg guanfacine at night and increased to 2 mg if tolerated, alongside N-acetylcysteine.",
+                "sentences": [
+                  {
+                    "text": "No single dosing schedule can be inferred across these uses.",
+                    "sources": []
+                  },
+                  {
+                    "text": "Label context: Intuniv extended-release ADHD treatment starts at 1 mg daily, with increases no faster than 1 mg weekly. Tablets must be swallowed whole and cannot replace immediate-release tablets milligram for milligram. The label tapers by no more than 1 mg every 3-7 days. This ADHD schedule does not establish Long COVID dosing.",
+                    "sources": [
+                      "CTX-D11-LABEL"
+                    ]
+                  },
+                  {
+                    "text": "The case series began with 1 mg guanfacine at night and increased to 2 mg if tolerated, alongside N-acetylcysteine.",
+                    "sources": [
+                      "P-D11-LONGCOVID-2023"
+                    ]
+                  }
+                ],
+                "sources": [
+                  "CTX-D11-LABEL",
+                  "P-D11-LONGCOVID-2023"
+                ]
+              }
+            ]
           },
           {
             "id": "results",
@@ -7863,7 +7939,7 @@
             "id": "overview",
             "label": "Overview",
             "title": "",
-            "paragraph": "Maraviroc is used with other antiretroviral medicines for CCR5-tropic HIV-1 infection. Cancer studies investigate whether the same receptor can alter invasion or the local immune response.",
+            "paragraph": "Maraviroc is used with other antiretroviral medicines for CCR5-tropic HIV-1 infection. Cancer studies investigate whether the same receptor can alter invasion or the local immune response. Clinical evidence: Low for cancer treatment. The cited colorectal-cancer paper includes a phase I patient study, so this page is not limited to animal or cell evidence. It reports exploratory tumor and immune findings; the abstract does not provide a controlled survival comparison. This human signal does not establish a comparative cancer benefit or a broadly applicable cancer regimen.",
             "sources": [
               "CTX-D12-LABEL",
               "P-D12-BREAST-2012",
@@ -7884,6 +7960,12 @@
                   "P-D12-CRC-2016",
                   "P-D12-PANCREAS-2018"
                 ]
+              },
+              {
+                "text": "Clinical evidence: Low for cancer treatment. The cited colorectal-cancer paper includes a phase I patient study, so this page is not limited to animal or cell evidence. It reports exploratory tumor and immune findings; the abstract does not provide a controlled survival comparison. This human signal does not establish a comparative cancer benefit or a broadly applicable cancer regimen.",
+                "sources": [
+                  "P-D12-CRC-2016"
+                ]
               }
             ],
             "questions": []
@@ -7892,18 +7974,9 @@
             "id": "benefits",
             "label": "Benefits",
             "title": "",
-            "paragraph": "Clinical evidence: Low for cancer treatment. The cited colorectal-cancer paper includes a phase I patient study, so this page is not limited to animal or cell evidence. It reports exploratory tumor and immune findings; the abstract does not provide a controlled survival comparison. This human signal does not establish a comparative cancer benefit or a broadly applicable cancer regimen.",
-            "sources": [
-              "P-D12-CRC-2016"
-            ],
-            "sentences": [
-              {
-                "text": "Clinical evidence: Low for cancer treatment. The cited colorectal-cancer paper includes a phase I patient study, so this page is not limited to animal or cell evidence. It reports exploratory tumor and immune findings; the abstract does not provide a controlled survival comparison. This human signal does not establish a comparative cancer benefit or a broadly applicable cancer regimen.",
-                "sources": [
-                  "P-D12-CRC-2016"
-                ]
-              }
-            ],
+            "paragraph": "",
+            "sources": [],
+            "sentences": [],
             "questions": [
               {
                 "id": "breast-benefit",
@@ -8025,7 +8098,28 @@
                 ]
               }
             ],
-            "questions": []
+            "questions": [
+              {
+                "id": "maraviroc-dosing-scope",
+                "question": "Does this schedule establish a dose for every investigated use?",
+                "answer": "No single dosing schedule can be inferred across these uses. The HIV regimen depends on accompanying medicines and kidney function; it is not a validated cancer regimen.",
+                "sentences": [
+                  {
+                    "text": "No single dosing schedule can be inferred across these uses.",
+                    "sources": []
+                  },
+                  {
+                    "text": "The HIV regimen depends on accompanying medicines and kidney function; it is not a validated cancer regimen.",
+                    "sources": [
+                      "CTX-D12-LABEL"
+                    ]
+                  }
+                ],
+                "sources": [
+                  "CTX-D12-LABEL"
+                ]
+              }
+            ]
           },
           {
             "id": "results",
@@ -14770,11 +14864,12 @@
             "id": "overview",
             "label": "Overview",
             "title": "",
-            "paragraph": "Hydroxychloroquine has malaria and autoimmune indications; repurposing examines viral entry and autophagy.",
+            "paragraph": "Hydroxychloroquine has malaria and autoimmune indications; repurposing examines viral entry and autophagy. RECOVERY found no reduction in 28-day mortality from hydroxychloroquine in hospitalized COVID-19. A 2025 ovarian trial found no significant response or survival improvement when it was added to chemotherapy.",
             "sources": [
               "CTX-D22-LABEL",
               "CP028-CH04",
-              "P-D22-OVARIAN"
+              "P-D22-OVARIAN",
+              "P-D22-RECOVERY"
             ],
             "sentences": [
               {
@@ -14782,6 +14877,13 @@
                 "sources": [
                   "CTX-D22-LABEL",
                   "CP028-CH04",
+                  "P-D22-OVARIAN"
+                ]
+              },
+              {
+                "text": "RECOVERY found no reduction in 28-day mortality from hydroxychloroquine in hospitalized COVID-19. A 2025 ovarian trial found no significant response or survival improvement when it was added to chemotherapy.",
+                "sources": [
+                  "P-D22-RECOVERY",
                   "P-D22-OVARIAN"
                 ]
               }
@@ -14792,31 +14894,20 @@
             "id": "benefits",
             "label": "Benefits",
             "title": "",
-            "paragraph": "RECOVERY found no reduction in 28-day mortality from hydroxychloroquine in hospitalized COVID-19. A 2025 ovarian trial found no significant response or survival improvement when it was added to chemotherapy.",
-            "sources": [
-              "P-D22-RECOVERY",
-              "P-D22-OVARIAN"
-            ],
-            "sentences": [
-              {
-                "text": "RECOVERY found no reduction in 28-day mortality from hydroxychloroquine in hospitalized COVID-19. A 2025 ovarian trial found no significant response or survival improvement when it was added to chemotherapy.",
-                "sources": [
-                  "P-D22-RECOVERY",
-                  "P-D22-OVARIAN"
-                ]
-              }
-            ],
+            "paragraph": "",
+            "sources": [],
+            "sentences": [],
             "questions": [
               {
                 "id": "benefits-q1",
                 "question": "Did hydroxychloroquine reduce COVID-19 deaths?",
-                "answer": "Deaths occurred in 27.0% of hydroxychloroquine recipients and 25.0% with usual care; the rate ratio was 1.09 (95% CI 0.97–1.23).",
+                "answer": "Deaths occurred in 27.0% of hydroxychloroquine recipients and 25.0% with usual care; the rate ratio was 1.09 (95% CI 0.97-1.23).",
                 "sources": [
                   "P-D22-RECOVERY"
                 ],
                 "sentences": [
                   {
-                    "text": "Deaths occurred in 27.0% of hydroxychloroquine recipients and 25.0% with usual care; the rate ratio was 1.09 (95% CI 0.97–1.23).",
+                    "text": "Deaths occurred in 27.0% of hydroxychloroquine recipients and 25.0% with usual care; the rate ratio was 1.09 (95% CI 0.97-1.23).",
                     "sources": [
                       "P-D22-RECOVERY"
                     ]
@@ -14911,19 +15002,40 @@
                 ]
               }
             ],
-            "questions": []
+            "questions": [
+              {
+                "id": "hydroxychloroquine-dosing-scope",
+                "question": "Does this schedule establish a dose for every investigated use?",
+                "answer": "No single dosing schedule can be inferred across these uses. The ovarian trial evaluated hydroxychloroquine as an addition to chemotherapy, with response assessed after three cycles.",
+                "sentences": [
+                  {
+                    "text": "No single dosing schedule can be inferred across these uses.",
+                    "sources": []
+                  },
+                  {
+                    "text": "The ovarian trial evaluated hydroxychloroquine as an addition to chemotherapy, with response assessed after three cycles.",
+                    "sources": [
+                      "P-D22-OVARIAN"
+                    ]
+                  }
+                ],
+                "sources": [
+                  "P-D22-OVARIAN"
+                ]
+              }
+            ]
           },
           {
             "id": "results",
             "label": "Results",
             "title": "",
-            "paragraph": "Ovarian median progression-free survival was 12 versus 11 months; the hazard ratio was 0.84 (95% CI 0.45–1.57), leaving substantial uncertainty around the treatment effect.",
+            "paragraph": "Ovarian median progression-free survival was 12 versus 11 months; the hazard ratio was 0.84 (95% CI 0.45-1.57), leaving substantial uncertainty around the treatment effect.",
             "sources": [
               "P-D22-OVARIAN"
             ],
             "sentences": [
               {
-                "text": "Ovarian median progression-free survival was 12 versus 11 months; the hazard ratio was 0.84 (95% CI 0.45–1.57), leaving substantial uncertainty around the treatment effect.",
+                "text": "Ovarian median progression-free survival was 12 versus 11 months; the hazard ratio was 0.84 (95% CI 0.45-1.57), leaving substantial uncertainty around the treatment effect.",
                 "sources": [
                   "P-D22-OVARIAN"
                 ]
@@ -14971,7 +15083,7 @@
             "id": "evidence",
             "label": "Evidence",
             "title": "",
-            "paragraph": "RECOVERY studied thousands of hospitalized patients; the 59-patient ovarian study had much less survival precision.",
+            "paragraph": "RECOVERY studied thousands of hospitalized patients; the 59-patient ovarian study had much less survival precision. Ovarian median progression-free survival was 12 versus 11 months; the hazard ratio was 0.84 (95% CI 0.45-1.57), leaving substantial uncertainty around the treatment effect.",
             "sources": [
               "P-D22-RECOVERY",
               "P-D22-OVARIAN"
@@ -14981,6 +15093,12 @@
                 "text": "RECOVERY studied thousands of hospitalized patients; the 59-patient ovarian study had much less survival precision.",
                 "sources": [
                   "P-D22-RECOVERY",
+                  "P-D22-OVARIAN"
+                ]
+              },
+              {
+                "text": "Ovarian median progression-free survival was 12 versus 11 months; the hazard ratio was 0.84 (95% CI 0.45-1.57), leaving substantial uncertainty around the treatment effect.",
+                "sources": [
                   "P-D22-OVARIAN"
                 ]
               }
@@ -15899,13 +16017,19 @@
             "id": "overview",
             "label": "Overview",
             "title": "",
-            "paragraph": "Memantine’s glioblastoma investigation concerns NMDA signaling and temozolomide resistance.",
+            "paragraph": "Memantine’s glioblastoma investigation concerns NMDA signaling and temozolomide resistance. Clinical evidence: Low for glioblastoma treatment. The cited experiment tested human glioblastoma cells, not patients. Memantine increased temozolomide-related cell injury while reducing MGMT, a DNA-repair protein. The study provides no patient survival, symptom or treatment-tolerability estimate; clinical benefit and a cancer regimen are not established by this cell experiment.",
             "sources": [
               "P-D25-GBM"
             ],
             "sentences": [
               {
                 "text": "Memantine’s glioblastoma investigation concerns NMDA signaling and temozolomide resistance.",
+                "sources": [
+                  "P-D25-GBM"
+                ]
+              },
+              {
+                "text": "Clinical evidence: Low for glioblastoma treatment. The cited experiment tested human glioblastoma cells, not patients. Memantine increased temozolomide-related cell injury while reducing MGMT, a DNA-repair protein. The study provides no patient survival, symptom or treatment-tolerability estimate; clinical benefit and a cancer regimen are not established by this cell experiment.",
                 "sources": [
                   "P-D25-GBM"
                 ]
@@ -15917,18 +16041,9 @@
             "id": "benefits",
             "label": "Benefits",
             "title": "",
-            "paragraph": "Clinical evidence: Low for glioblastoma treatment. The cited experiment tested human glioblastoma cells, not patients. Memantine increased temozolomide-related cell injury while reducing MGMT, a DNA-repair protein. The study provides no patient survival, symptom or treatment-tolerability estimate; clinical benefit and a cancer regimen are not established by this cell experiment.",
-            "sources": [
-              "P-D25-GBM"
-            ],
-            "sentences": [
-              {
-                "text": "Clinical evidence: Low for glioblastoma treatment. The cited experiment tested human glioblastoma cells, not patients. Memantine increased temozolomide-related cell injury while reducing MGMT, a DNA-repair protein. The study provides no patient survival, symptom or treatment-tolerability estimate; clinical benefit and a cancer regimen are not established by this cell experiment.",
-                "sources": [
-                  "P-D25-GBM"
-                ]
-              }
-            ],
+            "paragraph": "",
+            "sources": [],
+            "sentences": [],
             "questions": [
               {
                 "id": "benefits-q1",
@@ -16041,7 +16156,35 @@
                 ]
               }
             ],
-            "questions": []
+            "questions": [
+              {
+                "id": "memantine-dosing-scope",
+                "question": "Does this schedule establish a dose for every investigated use?",
+                "answer": "No single dosing schedule can be inferred across these uses. Label context: The cited product is oral solution. For Alzheimer dementia, dosing begins at 5 mg daily, with increases of 5 mg separated by at least a week toward 10 mg twice daily. Severe renal impairment changes the target to 5 mg twice daily. This is approved-use context, not a glioblastoma regimen. The glioblastoma study tested cell concentrations and temozolomide combinations, not a patient schedule.",
+                "sentences": [
+                  {
+                    "text": "No single dosing schedule can be inferred across these uses.",
+                    "sources": []
+                  },
+                  {
+                    "text": "Label context: The cited product is oral solution. For Alzheimer dementia, dosing begins at 5 mg daily, with increases of 5 mg separated by at least a week toward 10 mg twice daily. Severe renal impairment changes the target to 5 mg twice daily. This is approved-use context, not a glioblastoma regimen.",
+                    "sources": [
+                      "CTX-D25-LABEL"
+                    ]
+                  },
+                  {
+                    "text": "The glioblastoma study tested cell concentrations and temozolomide combinations, not a patient schedule.",
+                    "sources": [
+                      "P-D25-GBM"
+                    ]
+                  }
+                ],
+                "sources": [
+                  "CTX-D25-LABEL",
+                  "P-D25-GBM"
+                ]
+              }
+            ]
           },
           {
             "id": "results",
@@ -16103,13 +16246,19 @@
             "id": "evidence",
             "label": "Evidence",
             "title": "",
-            "paragraph": "MGMT biology and the cell model delimit this mechanistic evidence.",
+            "paragraph": "MGMT biology and the cell model delimit this mechanistic evidence. NMDA signaling increased MGMT expression and resistance in the studied cells.",
             "sources": [
               "P-D25-GBM"
             ],
             "sentences": [
               {
                 "text": "MGMT biology and the cell model delimit this mechanistic evidence.",
+                "sources": [
+                  "P-D25-GBM"
+                ]
+              },
+              {
+                "text": "NMDA signaling increased MGMT expression and resistance in the studied cells.",
                 "sources": [
                   "P-D25-GBM"
                 ]
