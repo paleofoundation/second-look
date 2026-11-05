@@ -36,6 +36,11 @@ still on hold; quarantined sources cannot support a grade.
 Store the actual date and exact input fingerprint using
 `assessmentFingerprint` in `scripts/evidence-assessments.mjs`, only after examining
 the corresponding inputs. Never refresh a stale hash without reassessment.
+A source-identifier change, including a DOI added to an existing source, changes
+this fingerprint. Re-examine the row before storing the new fingerprint. Do not
+treat that identifier edit as a new efficacy result or a reason to change the
+grade when the finding, domains and integrity judgment still apply. Keep the
+original assessment date when the judgment itself is unchanged.
 Additional retrieval provenance can remain private in the editorial record.
 
 Run `node scripts/evidence-assessments.mjs --write` to validate and compile the
