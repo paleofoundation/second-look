@@ -148,25 +148,36 @@ test('a complete fixture passes and each missing piece fails on its own', () => 
   assert.ok(assessGuide({...guide, type: 'Glossary'}, context).failing.includes('type'));
 });
 
-test('metformin passes, methylene blue keeps cited mechanism subsections and still fails, and melphalan fails', () => {
+test('metformin passes, methylene blue keeps cited mechanisms and dosing and still fails, itraconazole fails dosing, and melphalan fails', () => {
   const {guides, context} = loadReadinessInputs();
   const results = assessLibrary(guides, context);
   const byPath = new Map(results.map(result => [result.path, result]));
   const metformin = byPath.get('/drugs/metformin');
   const methylene = byPath.get('/drugs/methylene-blue');
+  const itraconazole = byPath.get('/drugs/itraconazole');
   const melphalan = byPath.get('/drugs/melphalan');
   assert.equal(metformin.pass, true, metformin.failing.join(','));
   assert.ok(metformin.words >= MIN_BODY_WORDS);
   assert.ok(metformin.distinctDois >= MIN_DISTINCT_DOIS);
   assert.ok(metformin.distinctDois < DOI_DEEPENING_TARGET);
   assert.equal(methylene.pass, false);
+  assert.equal(itraconazole.pass, false);
   assert.equal(melphalan.pass, false);
   const methyleneMechanism = methylene.checks.find(item => item.id === 'mechanism-subsections');
   assert.equal(methyleneMechanism.pass, true);
   assert.match(methyleneMechanism.detail, /^3 named mechanism subsections/);
-  for (const id of ['body-words', 'distinct-dois', 'evidence-table', 'dosing', 'safety', 'quality', 'study-summaries']) {
+  const methyleneDosing = methylene.checks.find(item => item.id === 'dosing');
+  assert.equal(methyleneDosing.pass, true);
+  const methyleneDosingWords = Number(methyleneDosing.detail.match(/^(\d+) dosing words/)[1]);
+  assert.ok(methyleneDosingWords >= MIN_DOSING_WORDS);
+  for (const id of ['body-words', 'distinct-dois', 'evidence-table', 'safety', 'quality', 'study-summaries']) {
     assert.ok(methylene.failing.includes(id), `${methylene.path} should fail ${id}`);
   }
+  const itraconazoleDosing = itraconazole.checks.find(item => item.id === 'dosing');
+  assert.equal(itraconazoleDosing.pass, false);
+  const itraconazoleDosingWords = Number(itraconazoleDosing.detail.match(/^(\d+) dosing words/)[1]);
+  assert.ok(itraconazoleDosingWords < MIN_DOSING_WORDS, `${itraconazole.path} should fail dosing`);
+  assert.ok(itraconazole.failing.includes('dosing'), `${itraconazole.path} should fail dosing`);
   for (const id of ['body-words', 'distinct-dois', 'mechanism-subsections', 'evidence-table', 'dosing', 'safety', 'quality', 'study-summaries']) {
     assert.ok(melphalan.failing.includes(id), `${melphalan.path} should fail ${id}`);
   }
