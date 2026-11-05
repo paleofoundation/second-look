@@ -1,5 +1,11 @@
 # Second Look rule changelog
 
+## November 5, 2026: all-drug Metformin-style editorial batches
+
+Source: owner's explicit all-drug rewrite request, ivermectin first; sole style reference is the live Metformin page, which must not change. Contract: DRUG-CANONICAL-STYLE.md. Scope: 33 non-Metformin live drug pages, existing page citations and official U.S. labels only. Supersedes alternate reference-site style patterns, one-drug continuation stops and routine publication within this task. Work remains on bounded review branches/PRs without merging or auto-merge. Preserve supported A–F grades, independent-trial counts, companion reports, negative findings and retraction exclusions. Missing-source notes replace unsupported expansion. No scientific approval is inferred.
+
+Batch 01 implements ivermectin visible prose, oral-label dosing, suitability distinctions, eight public four-question source summaries and genuine update history. The existing source records, grades and trial identities are retained. TypeScript, canonical content, evidence grading and article navigation checks pass. All-profile section checking exposes inherited missing Contraindications prose on methylene blue. Governance invokes the citation gate, which rejects existing ivermectin records without deposited DOIs, including the official label. This gate failure is retained; no DOI is invented, retracted source concealed or gate weakened. Exact scope/gaps and subsequent validation are maintained in the batch packet. No merge or deployment.
+
 ## 2026-11-05: citation gate retries rate limits and accepts explicit non-DOI sources
 
 Source: open pull requests 44, 45, 46, and 48 through 52, investigated 5 November 2026 after GitHub Actions billing was restored. Evidence-gate runs 41952708520 and 41959397907 failed citations on Crossref HTTP 429. The same runs, and the batch-page runs, also reported FDA labels and agency pages as `has no DOI`. Scope: the citation gate only. Supersedes treating HTTP 429 as a bad citation, and supersedes requiring a DOI from a source that is explicitly typed as a regulatory label or agency page with a public URL. It does not supersede the deposit check, the retraction check, or the DOI requirement for an ordinary scholarly source.

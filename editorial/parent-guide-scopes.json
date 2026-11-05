@@ -6023,31 +6023,62 @@
             "id": "overview",
             "label": "Overview",
             "title": "",
-            "paragraph": "Oral ivermectin is used for strongyloidiasis and onchocerciasis. A higher-dose COVID-19 trial did not speed recovery; the cancer studies discussed here are preclinical.",
+            "paragraph": "Ivermectin is an oral antiparasitic medicine in the avermectin class. Its U.S. tablet label covers intestinal strongyloidiasis, caused by Strongyloides stercoralis, and onchocerciasis, caused by Onchocerca volvulus. These established parasite indications are separate from the COVID-19 and cancer investigations discussed here. The six-day higher-dose ACTIV-6 trial did not shorten sustained recovery in outpatients with COVID-19, and COVID-OUT did not demonstrate a reduction in its primary composite outcome with ivermectin. Cancer experiments have examined ovarian cancer cells, glioblastoma models, breast cancer models and WNT-TCF-dependent colorectal tumors. Those experiments address biological mechanisms and tumor growth in laboratory systems; they do not establish improved survival, symptoms or quality of life for people with cancer. The cited liver-cancer combination report is retracted and excluded from efficacy conclusions.",
             "sources": [
               "CTX-D08-LABEL",
               "P-D08-ACTIV6-2023",
               "P-D08-OVARIAN-2009",
               "P-D08-GBM-2016",
               "P-D08-BREAST-2016",
-              "P-D08-CRC-2014"
+              "P-D08-CRC-2014",
+              "COND-C02-COVIDOUT-2022"
             ],
             "sentences": [
               {
-                "text": "Oral ivermectin is used for strongyloidiasis and onchocerciasis.",
+                "text": "Ivermectin is an oral antiparasitic medicine in the avermectin class. Its U.S. tablet label covers intestinal strongyloidiasis, caused by Strongyloides stercoralis, and onchocerciasis, caused by Onchocerca volvulus.",
                 "sources": [
                   "CTX-D08-LABEL"
                 ]
               },
               {
-                "text": "A higher-dose COVID-19 trial did not speed recovery; the cancer studies discussed here are preclinical.",
+                "text": "These established parasite indications are separate from the COVID-19 and cancer investigations discussed here.",
                 "sources": [
+                  "CTX-D08-LABEL",
                   "P-D08-ACTIV6-2023",
                   "P-D08-OVARIAN-2009",
                   "P-D08-GBM-2016",
                   "P-D08-BREAST-2016",
                   "P-D08-CRC-2014"
                 ]
+              },
+              {
+                "text": "The six-day higher-dose ACTIV-6 trial did not shorten sustained recovery in outpatients with COVID-19, and COVID-OUT did not demonstrate a reduction in its primary composite outcome with ivermectin.",
+                "sources": [
+                  "P-D08-ACTIV6-2023",
+                  "COND-C02-COVIDOUT-2022"
+                ]
+              },
+              {
+                "text": "Cancer experiments have examined ovarian cancer cells, glioblastoma models, breast cancer models and WNT-TCF-dependent colorectal tumors.",
+                "sources": [
+                  "P-D08-OVARIAN-2009",
+                  "P-D08-GBM-2016",
+                  "P-D08-BREAST-2016",
+                  "P-D08-CRC-2014"
+                ]
+              },
+              {
+                "text": "Those experiments address biological mechanisms and tumor growth in laboratory systems; they do not establish improved survival, symptoms or quality of life for people with cancer.",
+                "sources": [
+                  "P-D08-OVARIAN-2009",
+                  "P-D08-GBM-2016",
+                  "P-D08-BREAST-2016",
+                  "P-D08-CRC-2014"
+                ]
+              },
+              {
+                "text": "The cited liver-cancer combination report is retracted and excluded from efficacy conclusions.",
+                "sources": []
               }
             ],
             "questions": []
@@ -6184,7 +6215,7 @@
             "id": "safety",
             "label": "Safety",
             "title": "",
-            "paragraph": "Reported harms include dizziness, low blood pressure, serious skin reactions and neurotoxicity; heavy Loa loa infection can increase the risk of severe encephalopathy.",
+            "paragraph": "The oral label reports dizziness, gastrointestinal symptoms, itching and rash in studies of intestinal strongyloidiasis. In onchocerciasis, inflammatory reactions to dying microfilariae can cause fever, skin symptoms, lymph-node tenderness and eye reactions; the disease and the treatment context affect how these events are interpreted. Postmarketing reports include low blood pressure, seizures, serious skin reactions and liver injury. The label also warns about neurotoxicity, including confusion, impaired consciousness and coma, which has been reported with recommended dosing as well as overdose. Heavy Loa loa infection creates a separate risk of severe or fatal encephalopathy; significant exposure in endemic parts of West or Central Africa calls for assessment before treatment. These label warnings apply independently of whether a repurposing experiment reports an interesting pathway effect.",
             "sources": [
               "CTX-D08-LABEL",
               "P-D08-GUZZO-2002",
@@ -6194,13 +6225,51 @@
             ],
             "sentences": [
               {
-                "text": "Reported harms include dizziness, low blood pressure, serious skin reactions and neurotoxicity; heavy Loa loa infection can increase the risk of severe encephalopathy.",
+                "text": "The oral label reports dizziness, gastrointestinal symptoms, itching and rash in studies of intestinal strongyloidiasis.",
+                "sources": [
+                  "CTX-D08-LABEL"
+                ]
+              },
+              {
+                "text": "In onchocerciasis, inflammatory reactions to dying microfilariae can cause fever, skin symptoms, lymph-node tenderness and eye reactions; the disease and the treatment context affect how these events are interpreted.",
+                "sources": [
+                  "CTX-D08-LABEL"
+                ]
+              },
+              {
+                "text": "Postmarketing reports include low blood pressure, seizures, serious skin reactions and liver injury.",
+                "sources": [
+                  "CTX-D08-LABEL"
+                ]
+              },
+              {
+                "text": "The label also warns about neurotoxicity, including confusion, impaired consciousness and coma, which has been reported with recommended dosing as well as overdose.",
+                "sources": [
+                  "CTX-D08-LABEL"
+                ]
+              },
+              {
+                "text": "Heavy Loa loa infection creates a separate risk of severe or fatal encephalopathy; significant exposure in endemic parts of West or Central Africa calls for assessment before treatment.",
+                "sources": [
+                  "CTX-D08-LABEL"
+                ]
+              },
+              {
+                "text": "These label warnings apply independently of whether a repurposing experiment reports an interesting pathway effect.",
                 "sources": [
                   "CTX-D08-LABEL"
                 ]
               }
             ],
             "questions": [
+              {
+                "id": "ivermectin-neurologic-safety",
+                "question": "Why does Loa loa exposure matter?",
+                "answer": "The label describes severe or fatal encephalopathy in heavily infected patients and calls for pretreatment assessment after significant exposure in endemic areas of West or Central Africa. Neurotoxicity has also been reported without Loa loa infection.",
+                "sources": [
+                  "CTX-D08-LABEL"
+                ]
+              },
               {
                 "id": "high-dose-safety",
                 "question": "Is ivermectin safe at higher doses?",
@@ -6262,13 +6331,25 @@
             "id": "contraindications",
             "label": "Contraindications",
             "title": "",
-            "paragraph": "Hypersensitivity to a component of Stromectol is a contraindication.",
+            "paragraph": "Hypersensitivity to any component of the oral product is the label’s formal contraindication. Pregnancy, breastfeeding, low body weight and possible Loa loa exposure are addressed separately under precautions, rather than being interchangeable with that formal contraindication. The suitability table separates these situations so that a trial exclusion or a precaution is not presented as a universal prohibition.",
             "sources": [
               "CTX-D08-LABEL"
             ],
             "sentences": [
               {
-                "text": "Hypersensitivity to a component of Stromectol is a contraindication.",
+                "text": "Hypersensitivity to any component of the oral product is the label’s formal contraindication.",
+                "sources": [
+                  "CTX-D08-LABEL"
+                ]
+              },
+              {
+                "text": "Pregnancy, breastfeeding, low body weight and possible Loa loa exposure are addressed separately under precautions, rather than being interchangeable with that formal contraindication.",
+                "sources": [
+                  "CTX-D08-LABEL"
+                ]
+              },
+              {
+                "text": "The suitability table separates these situations so that a trial exclusion or a precaution is not presented as a universal prohibition.",
                 "sources": [
                   "CTX-D08-LABEL"
                 ]
@@ -6280,16 +6361,32 @@
             "id": "interactions",
             "label": "Interactions",
             "title": "",
-            "paragraph": "Increased INR has been reported when ivermectin was used with warfarin.",
+            "paragraph": "The oral label describes rare postmarketing reports of increased INR when ivermectin was given with warfarin. INR is a measure used to monitor warfarin anticoagulation; this reported interaction is a reason for medication review, rather than evidence that every combination has been tested. The label identifies CYP3A4 as the main enzyme involved in ivermectin metabolism in laboratory studies, but that observation alone does not quantify the clinical effect of every CYP3A4 inhibitor or inducer. A complete interaction assessment for experimental cancer combinations is not on hand in the cited sources.",
             "sources": [
               "CTX-D08-LABEL"
             ],
             "sentences": [
               {
-                "text": "Increased INR has been reported when ivermectin was used with warfarin.",
+                "text": "The oral label describes rare postmarketing reports of increased INR when ivermectin was given with warfarin.",
                 "sources": [
                   "CTX-D08-LABEL"
                 ]
+              },
+              {
+                "text": "INR is a measure used to monitor warfarin anticoagulation; this reported interaction is a reason for medication review, rather than evidence that every combination has been tested.",
+                "sources": [
+                  "CTX-D08-LABEL"
+                ]
+              },
+              {
+                "text": "The label identifies CYP3A4 as the main enzyme involved in ivermectin metabolism in laboratory studies, but that observation alone does not quantify the clinical effect of every CYP3A4 inhibitor or inducer.",
+                "sources": [
+                  "CTX-D08-LABEL"
+                ]
+              },
+              {
+                "text": "A complete interaction assessment for experimental cancer combinations is not on hand in the cited sources.",
+                "sources": []
               }
             ],
             "questions": []
@@ -6298,19 +6395,63 @@
             "id": "dosing",
             "label": "Dosing",
             "title": "",
-            "paragraph": "ACTIV-6 tested a maximum target of 600 micrograms/kg daily for six days; this did not improve recovery.",
+            "paragraph": "Labeled dosing depends on the parasite indication and body weight: the oral label describes approximately 200 micrograms/kg as a single dose for intestinal strongyloidiasis and approximately 150 micrograms/kg as a single dose for onchocerciasis. The tablets are taken with water on an empty stomach, and follow-up is part of the labeled treatment context. ACTIV-6 instead tested a maximum target of 600 micrograms/kg daily for six days in outpatients with COVID-19; that research schedule did not improve sustained recovery. An experimental schedule is not an established dose for another disease, and the cited cancer experiments do not establish a human cancer-treatment regimen.",
             "sources": [
-              "P-D08-ACTIV6-2023"
+              "CTX-D08-LABEL",
+              "P-D08-ACTIV6-2023",
+              "P-D08-OVARIAN-2009",
+              "P-D08-GBM-2016",
+              "P-D08-BREAST-2016",
+              "P-D08-CRC-2014"
             ],
             "sentences": [
               {
-                "text": "ACTIV-6 tested a maximum target of 600 micrograms/kg daily for six days; this did not improve recovery.",
+                "text": "Labeled dosing depends on the parasite indication and body weight: the oral label describes approximately 200 micrograms/kg as a single dose for intestinal strongyloidiasis and approximately 150 micrograms/kg as a single dose for onchocerciasis.",
+                "sources": [
+                  "CTX-D08-LABEL"
+                ]
+              },
+              {
+                "text": "The tablets are taken with water on an empty stomach, and follow-up is part of the labeled treatment context.",
+                "sources": [
+                  "CTX-D08-LABEL"
+                ]
+              },
+              {
+                "text": "ACTIV-6 instead tested a maximum target of 600 micrograms/kg daily for six days in outpatients with COVID-19; that research schedule did not improve sustained recovery.",
                 "sources": [
                   "P-D08-ACTIV6-2023"
                 ]
+              },
+              {
+                "text": "An experimental schedule is not an established dose for another disease, and the cited cancer experiments do not establish a human cancer-treatment regimen.",
+                "sources": [
+                  "P-D08-ACTIV6-2023",
+                  "P-D08-OVARIAN-2009",
+                  "P-D08-GBM-2016",
+                  "P-D08-BREAST-2016",
+                  "P-D08-CRC-2014"
+                ]
               }
             ],
-            "questions": []
+            "questions": [
+              {
+                "id": "ivermectin-label-followup",
+                "question": "What follow-up does the oral label describe?",
+                "answer": "For intestinal strongyloidiasis, follow-up stool examinations verify parasite clearance. Onchocerciasis treatment does not kill adult parasites, so follow-up and retreatment are generally needed; the label describes retreatment intervals as short as three months for individual patients.",
+                "sources": [
+                  "CTX-D08-LABEL"
+                ]
+              },
+              {
+                "id": "ivermectin-pediatric-dose",
+                "question": "Does the label establish dosing below 15 kg?",
+                "answer": "No. Safety and effectiveness in children weighing less than 15 kg have not been established. This is a missing pediatric evidence basis, not an experimental dose recommendation.",
+                "sources": [
+                  "CTX-D08-LABEL"
+                ]
+              }
+            ]
           },
           {
             "id": "results",
@@ -6342,15 +6483,35 @@
             "id": "quality",
             "label": "Quality",
             "title": "",
-            "paragraph": "The referenced human product is a 3 mg oral tablet.",
+            "paragraph": "The cited U.S. label describes a human oral product supplied as 3 mg tablets. It also records human intoxication after exposure to veterinary ivermectin formulations, so the product and route cannot be treated as incidental details when interpreting safety. This page’s dosing and status descriptions refer to the labeled oral tablet, while the cancer studies describe experimental systems rather than an approved cancer formulation.",
             "sources": [
-              "CTX-D08-LABEL"
+              "CTX-D08-LABEL",
+              "P-D08-OVARIAN-2009",
+              "P-D08-GBM-2016",
+              "P-D08-BREAST-2016",
+              "P-D08-CRC-2014"
             ],
             "sentences": [
               {
-                "text": "The referenced human product is a 3 mg oral tablet.",
+                "text": "The cited U.S. label describes a human oral product supplied as 3 mg tablets.",
                 "sources": [
                   "CTX-D08-LABEL"
+                ]
+              },
+              {
+                "text": "It also records human intoxication after exposure to veterinary ivermectin formulations, so the product and route cannot be treated as incidental details when interpreting safety.",
+                "sources": [
+                  "CTX-D08-LABEL"
+                ]
+              },
+              {
+                "text": "This page’s dosing and status descriptions refer to the labeled oral tablet, while the cancer studies describe experimental systems rather than an approved cancer formulation.",
+                "sources": [
+                  "CTX-D08-LABEL",
+                  "P-D08-OVARIAN-2009",
+                  "P-D08-GBM-2016",
+                  "P-D08-BREAST-2016",
+                  "P-D08-CRC-2014"
                 ]
               }
             ],
@@ -6378,24 +6539,44 @@
             "id": "evidence",
             "label": "Evidence",
             "title": "",
-            "paragraph": "The negative recovery trial directly evaluated patients; the cancer mechanisms were measured in experimental systems.",
+            "paragraph": "The clinical and laboratory findings answer different questions. ACTIV-6 evaluated sustained recovery in people with acute COVID-19 and did not demonstrate a benefit from its six-day higher-dose schedule. COVID-OUT evaluated a primary composite of hypoxemia, emergency care, hospitalization or death; the existing ivermectin outcome assessment did not demonstrate a reduction. The colorectal-cancer study used pathway activation and comparison models to test whether WNT-TCF signaling contributed to the experimental growth effect. That mechanistic finding does not supply a clinical cancer-benefit estimate or an independent randomized patient trial. The table retains the existing outcome-specific benefit assessment and trial identities; it does not transfer metformin’s grades or count related reports as new trials. The retracted liver-cancer report remains visible only for source-integrity context and contributes no efficacy conclusion.",
             "sources": [
               "P-D08-ACTIV6-2023",
-              "P-D08-OVARIAN-2009",
-              "P-D08-GBM-2016",
-              "P-D08-BREAST-2016",
+              "COND-C02-COVIDOUT-2022",
               "P-D08-CRC-2014"
             ],
             "sentences": [
               {
-                "text": "The negative recovery trial directly evaluated patients; the cancer mechanisms were measured in experimental systems.",
+                "text": "The clinical and laboratory findings answer different questions. ACTIV-6 evaluated sustained recovery in people with acute COVID-19 and did not demonstrate a benefit from its six-day higher-dose schedule.",
                 "sources": [
-                  "P-D08-ACTIV6-2023",
-                  "P-D08-OVARIAN-2009",
-                  "P-D08-GBM-2016",
-                  "P-D08-BREAST-2016",
+                  "P-D08-ACTIV6-2023"
+                ]
+              },
+              {
+                "text": "COVID-OUT evaluated a primary composite of hypoxemia, emergency care, hospitalization or death; the existing ivermectin outcome assessment did not demonstrate a reduction.",
+                "sources": [
+                  "COND-C02-COVIDOUT-2022"
+                ]
+              },
+              {
+                "text": "The colorectal-cancer study used pathway activation and comparison models to test whether WNT-TCF signaling contributed to the experimental growth effect.",
+                "sources": [
                   "P-D08-CRC-2014"
                 ]
+              },
+              {
+                "text": "That mechanistic finding does not supply a clinical cancer-benefit estimate or an independent randomized patient trial.",
+                "sources": [
+                  "P-D08-CRC-2014"
+                ]
+              },
+              {
+                "text": "The table retains the existing outcome-specific benefit assessment and trial identities; it does not transfer metformin’s grades or count related reports as new trials.",
+                "sources": []
+              },
+              {
+                "text": "The retracted liver-cancer report remains visible only for source-integrity context and contributes no efficacy conclusion.",
+                "sources": []
               }
             ],
             "questions": []
@@ -6431,17 +6612,9 @@
           {
             "id": "approved-use",
             "question": "What is its established use?",
-            "answer": "Ivermectin binds parasite glutamate-gated chloride channels, increasing chloride entry and causing paralysis and death of susceptible parasites.",
+            "answer": "The cited oral tablet is approved for intestinal strongyloidiasis and onchocerciasis. Those indications do not establish a COVID-19 or cancer indication.",
             "sources": [
               "CTX-D08-LABEL"
-            ],
-            "sentences": [
-              {
-                "text": "Ivermectin binds parasite glutamate-gated chloride channels, increasing chloride entry and causing paralysis and death of susceptible parasites.",
-                "sources": [
-                  "CTX-D08-LABEL"
-                ]
-              }
             ]
           },
           {
@@ -6468,14 +6641,14 @@
           "P-D08-GBM-2016",
           "P-D08-BREAST-2016",
           "P-D08-CRC-2014",
+          "COND-C02-COVIDOUT-2022",
+          "P-D08-ANTIVIRAL-2023",
           "P-D08-GUZZO-2002",
           "P-D08-NAVARRO-2020",
           "P-D08-NICOLAS-2020",
           "P-D08-NICOLAS-2026",
-          "P-D08-ANTIVIRAL-2023",
           "P-D08-CALY-2020",
-          "P-D08-LOW-2022",
-          "COND-C02-COVIDOUT-2022"
+          "P-D08-LOW-2022"
         ],
         "related": [],
         "synthesisIds": [
