@@ -2877,6 +2877,8 @@
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=681888c9-af79-4b7d-ae80-c3f4f6f1effd",
       "year": 2025,
       "sourceType": "context",
+      "sourceTier": "official_label",
+      "nonDoiSourceType": "regulatory-label",
       "design": "Official US product label",
       "population": "Patients receiving the labeled product",
       "preview": "Approved uses, pharmacology, contraindications, adverse effects and interactions.",
@@ -2905,7 +2907,9 @@
           "basis": "abstract"
         }
       ],
-      "access": "abstract_only"
+      "access": "abstract_only",
+      "doi": "10.1001/jama.2023.1650",
+      "pmid": "36807465"
     },
     {
       "id": "P-D08-ANTIVIRAL-2023",
@@ -2923,12 +2927,16 @@
           "basis": "full_text"
         }
       ],
-      "access": "full_text_html"
+      "access": "full_text_html",
+      "doi": "10.1101/2023.10.23.563088",
+      "pmid": "37961094"
     },
     {
       "id": "P-D08-OVARIAN-2009",
       "title": "Ivermectin inactivates the kinase PAK1 and blocks the PAK1-dependent growth of human ovarian cancer and NF2 tumor cell lines",
       "url": "https://pubmed.ncbi.nlm.nih.gov/22495656/",
+      "pmid": "22495656",
+      "nonDoiSourceType": "no-doi-article",
       "year": 2009,
       "sourceType": "primary",
       "design": "Cell-culture experiment",
@@ -2959,7 +2967,8 @@
           "basis": "abstract"
         }
       ],
-      "access": "abstract_only"
+      "access": "abstract_only",
+      "doi": "10.1016/j.bbrc.2016.10.064"
     },
     {
       "id": "P-D08-BREAST-2016",
@@ -2977,12 +2986,14 @@
           "basis": "abstract"
         }
       ],
-      "access": "abstract_only"
+      "access": "abstract_only",
+      "doi": "10.1158/0008-5472.can-15-2887"
     },
     {
       "id": "P-D08-CRC-2014",
       "title": "The river blindness drug ivermectin and related macrocyclic lactones inhibit WNT-TCF pathway responses in human cancer",
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4287931/",
+      "doi": "10.15252/emmm.201404084",
       "year": 2014,
       "sourceType": "primary",
       "design": "Cell and animal experiments",
@@ -3020,7 +3031,8 @@
       "access": "full_text_html",
       "status": "Quarantined",
       "correction": "The locally delivered full-text XML links “RETRACTION: Ivermectin Synergizes Sorafenib in Hepatocellular Carcinoma via Targeting Multiple Oncogenic Pathways” (2026; DOI 10.1002/prp2.70222; PMID 41689298). The original is excluded from efficacy assessment.",
-      "decisiveLimit": "Retracted original report; no efficacy inference or benefit grade."
+      "decisiveLimit": "Retracted original report; no efficacy inference or benefit grade.",
+      "doi": "10.1002/prp2.954"
     },
     {
       "id": "CTX-D09-LABEL",
@@ -7632,6 +7644,158 @@
       "reviewState": "pending",
       "hasReviewDraft": false,
       "url": "https://pubmed.ncbi.nlm.nih.gov/21054339/"
+    },
+    {
+      "id": "P-D08-CALY-2020",
+      "title": "The FDA-approved drug ivermectin inhibits the replication of SARS-CoV-2 in vitro",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32251768/",
+      "pmid": "32251768",
+      "doi": "10.1016/j.antiviral.2020.104787",
+      "year": 2020,
+      "authors": [
+        "Caly L",
+        "Druce JD",
+        "Catton MG",
+        "Jans DA",
+        "Wagstaff KM"
+      ],
+      "sourceType": "primary",
+      "design": "Cell-culture antiviral experiment",
+      "population": "Vero-hSLAM cells infected with SARS-CoV-2",
+      "preview": "Ivermectin suppressed SARS-CoV-2 replication in cell culture; this is a preclinical in vitro finding.",
+      "locators": [
+        {
+          "section": "Abstract",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/32251768/",
+          "basis": "abstract"
+        }
+      ],
+      "access": "abstract_only"
+    },
+    {
+      "id": "P-D08-GUZZO-2002",
+      "title": "Safety, tolerability, and pharmacokinetics of escalating high doses of ivermectin in healthy adult subjects",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/12362927/",
+      "pmid": "12362927",
+      "doi": "10.1177/009127002401382731",
+      "year": 2002,
+      "authors": [
+        "Guzzo CA",
+        "Furtek CI",
+        "Porras AG",
+        "Chen C",
+        "Tipping R"
+      ],
+      "sourceType": "primary",
+      "design": "Dose-escalation pharmacokinetic study",
+      "population": "Healthy adult volunteers",
+      "preview": "Characterized safety, tolerability, and plasma pharmacokinetics of escalating single ivermectin doses in healthy subjects.",
+      "locators": [
+        {
+          "section": "Abstract",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/12362927/",
+          "basis": "abstract"
+        }
+      ],
+      "access": "abstract_only"
+    },
+    {
+      "id": "P-D08-NAVARRO-2020",
+      "title": "Safety of high-dose ivermectin: a systematic review and meta-analysis",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31960060/",
+      "pmid": "31960060",
+      "doi": "10.1093/jac/dkz524",
+      "year": 2020,
+      "authors": [
+        "Navarro M",
+        "Camprubi D",
+        "Requena-Mendez A"
+      ],
+      "sourceType": "primary",
+      "design": "Systematic review and meta-analysis",
+      "population": "Participants in trials using high-dose ivermectin regimens",
+      "preview": "Systematic review and meta-analysis of safety outcomes in high-dose ivermectin studies.",
+      "locators": [
+        {
+          "section": "Abstract",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/31960060/",
+          "basis": "abstract"
+        }
+      ],
+      "access": "abstract_only"
+    },
+    {
+      "id": "P-D08-NICOLAS-2020",
+      "title": "Safety of oral ivermectin during pregnancy: a systematic review and meta-analysis",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31839144/",
+      "pmid": "31839144",
+      "doi": "10.1016/S2214-109X(19)30453-X",
+      "year": 2020,
+      "authors": [
+        "Nicolas P",
+        "Maia MF",
+        "Bassat Q"
+      ],
+      "sourceType": "primary",
+      "design": "Systematic review and meta-analysis",
+      "population": "Pregnant women with ivermectin exposure",
+      "preview": "Systematic review and meta-analysis examining adverse pregnancy outcomes after oral ivermectin exposure.",
+      "locators": [
+        {
+          "section": "Abstract",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/31839144/",
+          "basis": "abstract"
+        }
+      ],
+      "access": "abstract_only"
+    },
+    {
+      "id": "P-D08-NICOLAS-2026",
+      "title": "Risk of adverse pregnancy outcomes following inadvertent exposure to ivermectin during the periconception period: findings from two cluster-randomized trials in Mozambique and Kenya",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42518939/",
+      "pmid": "42518939",
+      "doi": "10.1016/j.eclinm.2026.104069",
+      "year": 2026,
+      "authors": [
+        "Nicolas P"
+      ],
+      "sourceType": "primary",
+      "design": "Analysis of cluster-randomized trial data",
+      "population": "Pregnant women with periconception ivermectin exposure in Mozambique and Kenya",
+      "preview": "Analyzed adverse pregnancy outcomes from periconception ivermectin exposure in two cluster-randomized trials; did not identify a clear increase in adverse outcomes.",
+      "locators": [
+        {
+          "section": "Abstract",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/42518939/",
+          "basis": "abstract"
+        }
+      ],
+      "access": "abstract_only"
+    },
+    {
+      "id": "P-D08-LOW-2022",
+      "title": "Repositioning Ivermectin for Covid-19 treatment: Molecular mechanisms of action against SARS-CoV-2 replication",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34687900/",
+      "pmid": "34687900",
+      "doi": "10.1016/j.bbadis.2021.166294",
+      "year": 2022,
+      "authors": [
+        "Low ZY",
+        "Yip AJW",
+        "Lal SK"
+      ],
+      "sourceType": "primary",
+      "design": "Review of in vitro and in silico mechanistic studies",
+      "population": "In vitro cell models and in silico computational models",
+      "preview": "Reviews proposed SARS-CoV-2 mechanisms for ivermectin including importin alpha/beta1 nuclear transport disruption, 3CLpro inhibition, and spike protein binding; all findings are in vitro or in silico.",
+      "locators": [
+        {
+          "section": "Abstract",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/34687900/",
+          "basis": "abstract_via_efetch"
+        }
+      ],
+      "access": "abstract_only"
     }
   ],
   "guides": [
@@ -12103,8 +12267,7 @@
             "P-D08-OVARIAN-2009",
             "P-D08-GBM-2016",
             "P-D08-BREAST-2016",
-            "P-D08-CRC-2014",
-            "P-D08-HCC-2022"
+            "P-D08-CRC-2014"
           ],
           "sentences": [
             {
@@ -12120,8 +12283,7 @@
                 "P-D08-OVARIAN-2009",
                 "P-D08-GBM-2016",
                 "P-D08-BREAST-2016",
-                "P-D08-CRC-2014",
-                "P-D08-HCC-2022"
+                "P-D08-CRC-2014"
               ]
             }
           ],
@@ -12137,8 +12299,7 @@
             "P-D08-OVARIAN-2009",
             "P-D08-GBM-2016",
             "P-D08-BREAST-2016",
-            "P-D08-CRC-2014",
-            "P-D08-HCC-2022"
+            "P-D08-CRC-2014"
           ],
           "sentences": [
             {
@@ -12159,7 +12320,6 @@
             {
               "text": "The liver-cancer combination report is retracted and excluded from efficacy conclusions.",
               "sources": [
-                "P-D08-HCC-2022"
               ]
             }
           ],
@@ -12249,13 +12409,11 @@
               "question": "What has the liver cancer experiment shown?",
               "answer": "This preclinical ivermectin–sorafenib report is retracted and cannot support a liver-cancer benefit conclusion.",
               "sources": [
-                "P-D08-HCC-2022"
               ],
               "sentences": [
                 {
                   "text": "This preclinical ivermectin–sorafenib report is retracted and cannot support a liver-cancer benefit conclusion.",
                   "sources": [
-                    "P-D08-HCC-2022"
                   ]
                 }
               ]
@@ -12268,7 +12426,11 @@
           "title": "",
           "paragraph": "Reported harms include dizziness, low blood pressure, serious skin reactions and neurotoxicity; heavy Loa loa infection can increase the risk of severe encephalopathy.",
           "sources": [
-            "CTX-D08-LABEL"
+            "CTX-D08-LABEL",
+            "P-D08-GUZZO-2002",
+            "P-D08-NAVARRO-2020",
+            "P-D08-NICOLAS-2020",
+            "P-D08-NICOLAS-2026"
           ],
           "sentences": [
             {
@@ -12278,7 +12440,63 @@
               ]
             }
           ],
-          "questions": []
+          "questions": [
+            {
+              "id": "high-dose-safety",
+              "question": "Is ivermectin safe at higher doses?",
+              "answer": "A dose-escalation study in healthy adults and a systematic review and meta-analysis of high-dose regimens support that ivermectin was tolerated at doses above the standard labeled range, with generally transient adverse effects. These findings describe investigational research regimens and do not constitute a recommendation for off-label high-dose use.",
+              "sources": [
+                "P-D08-GUZZO-2002",
+                "P-D08-NAVARRO-2020"
+              ],
+              "sentences": [
+                {
+                  "text": "A dose-escalation study in healthy adults and a systematic review and meta-analysis of high-dose regimens support that ivermectin was tolerated at doses above the standard labeled range, with generally transient adverse effects.",
+                  "sources": [
+                    "P-D08-GUZZO-2002",
+                    "P-D08-NAVARRO-2020"
+                  ]
+                },
+                {
+                  "text": "These findings describe investigational research regimens and do not constitute a recommendation for off-label high-dose use.",
+                  "sources": [
+                    "P-D08-GUZZO-2002",
+                    "P-D08-NAVARRO-2020"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "pregnancy-safety",
+              "question": "Is ivermectin safe during pregnancy and lactation?",
+              "answer": "A systematic review and meta-analysis of inadvertent pregnancy exposures did not identify a significantly elevated risk of adverse pregnancy outcomes. A later cluster-randomized trial analysis examining periconception ivermectin exposure similarly did not find a clear increase in adverse outcomes. The US prescribing information notes that the safety of ivermectin in pregnant women has not been established.",
+              "sources": [
+                "P-D08-NICOLAS-2020",
+                "P-D08-NICOLAS-2026",
+                "CTX-D08-LABEL"
+              ],
+              "sentences": [
+                {
+                  "text": "A systematic review and meta-analysis of inadvertent pregnancy exposures did not identify a significantly elevated risk of adverse pregnancy outcomes.",
+                  "sources": [
+                    "P-D08-NICOLAS-2020"
+                  ]
+                },
+                {
+                  "text": "A later cluster-randomized trial analysis examining periconception ivermectin exposure similarly did not find a clear increase in adverse outcomes.",
+                  "sources": [
+                    "P-D08-NICOLAS-2026"
+                  ]
+                },
+                {
+                  "text": "The US prescribing information notes that the safety of ivermectin in pregnant women has not been established.",
+                  "sources": [
+                    "CTX-D08-LABEL"
+                  ]
+                }
+              ]
+            }
+          ]
         },
         {
           "id": "contraindications",
@@ -12344,8 +12562,7 @@
             "P-D08-OVARIAN-2009",
             "P-D08-GBM-2016",
             "P-D08-BREAST-2016",
-            "P-D08-CRC-2014",
-            "P-D08-HCC-2022"
+            "P-D08-CRC-2014"
           ],
           "sentences": [
             {
@@ -12355,8 +12572,7 @@
                 "P-D08-OVARIAN-2009",
                 "P-D08-GBM-2016",
                 "P-D08-BREAST-2016",
-                "P-D08-CRC-2014",
-                "P-D08-HCC-2022"
+                "P-D08-CRC-2014"
               ]
             }
           ],
@@ -12408,8 +12624,7 @@
             "P-D08-OVARIAN-2009",
             "P-D08-GBM-2016",
             "P-D08-BREAST-2016",
-            "P-D08-CRC-2014",
-            "P-D08-HCC-2022"
+            "P-D08-CRC-2014"
           ],
           "sentences": [
             {
@@ -12419,8 +12634,7 @@
                 "P-D08-OVARIAN-2009",
                 "P-D08-GBM-2016",
                 "P-D08-BREAST-2016",
-                "P-D08-CRC-2014",
-                "P-D08-HCC-2022"
+                "P-D08-CRC-2014"
               ]
             }
           ],
@@ -12436,8 +12650,7 @@
             "P-D08-OVARIAN-2009",
             "P-D08-GBM-2016",
             "P-D08-BREAST-2016",
-            "P-D08-CRC-2014",
-            "P-D08-HCC-2022"
+            "P-D08-CRC-2014"
           ],
           "sentences": [
             {
@@ -12447,8 +12660,7 @@
                 "P-D08-OVARIAN-2009",
                 "P-D08-GBM-2016",
                 "P-D08-BREAST-2016",
-                "P-D08-CRC-2014",
-                "P-D08-HCC-2022"
+                "P-D08-CRC-2014"
               ]
             }
           ],
@@ -12496,8 +12708,13 @@
         "P-D08-GBM-2016",
         "P-D08-BREAST-2016",
         "P-D08-CRC-2014",
-        "P-D08-HCC-2022",
+        "P-D08-GUZZO-2002",
+        "P-D08-NAVARRO-2020",
+        "P-D08-NICOLAS-2020",
+        "P-D08-NICOLAS-2026",
         "P-D08-ANTIVIRAL-2023",
+        "P-D08-CALY-2020",
+        "P-D08-LOW-2022",
         "COND-C02-COVIDOUT-2022"
       ],
       "related": [],
