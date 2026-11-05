@@ -170,7 +170,11 @@ test('metformin passes, methylene blue keeps cited mechanisms and dosing and sti
   assert.equal(methyleneDosing.pass, true);
   const methyleneDosingWords = Number(methyleneDosing.detail.match(/^(\d+) dosing words/)[1]);
   assert.ok(methyleneDosingWords >= MIN_DOSING_WORDS);
-  for (const id of ['body-words', 'distinct-dois', 'evidence-table', 'safety', 'quality', 'study-summaries']) {
+  const methyleneSafety = methylene.checks.find(item => item.id === 'safety');
+  assert.equal(methyleneSafety.pass, true);
+  assert.match(methyleneSafety.detail, /contraindications populated/);
+  assert.match(methyleneSafety.detail, /interactions populated/);
+  for (const id of ['body-words', 'distinct-dois', 'evidence-table', 'quality', 'study-summaries']) {
     assert.ok(methylene.failing.includes(id), `${methylene.path} should fail ${id}`);
   }
   const itraconazoleDosing = itraconazole.checks.find(item => item.id === 'dosing');

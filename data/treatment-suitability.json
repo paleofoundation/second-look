@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "checkedOn": "2026-10-12",
-  "scope": "Selected restrictions from U.S. labels for oral metformin tablets and itraconazole capsules. Product, formulation, indication and jurisdiction matter. This is not the complete label or an interaction checker.",
+  "scope": "Selected restrictions from U.S. labels for oral metformin tablets, itraconazole capsules, oral ivermectin tablets, and intravenous methylene blue (Provayblue). Product, formulation, indication and jurisdiction matter. This is not the complete label or an interaction checker.",
   "rows": [
     {
       "id": "itra-contraindications",
@@ -132,6 +132,26 @@
       "sourceIds": [
         "CTX-D08-LABEL"
       ]
+    },
+    {
+      "id": "mb-contraindications",
+      "drug": "Methylene blue",
+      "category": "contraindication",
+      "label": "Contraindications",
+      "text": "The U.S. label for intravenous methylene blue (Provayblue) lists severe hypersensitivity to methylene blue or another thiazine dye, and glucose-6-phosphate dehydrogenase (G6PD) deficiency because of the risk of hemolytic anemia. This applies to the injectable product labeled for acquired methemoglobinemia; other products, routes and uses are not covered.",
+      "sourceIds": [
+        "DAILYMED-PROVAYBLUE-20250528"
+      ]
+    },
+    {
+      "id": "mb-interactions",
+      "drug": "Methylene blue",
+      "category": "interaction",
+      "label": "Interactions",
+      "text": "The label carries a boxed warning for serious or fatal serotonin syndrome when methylene blue is combined with serotonergic drugs and opioids, and advises avoiding concomitant use with SSRIs, SNRIs, MAOIs and opioids. In vitro, methylene blue inhibits several CYP enzymes, including 1A2, 2B6, 2C8, 2C9, 2C19, 2D6 and 3A4/5. In a cocktail study, a 2 mg/kg dose did not change exposure to midazolam, caffeine, warfarin or dextromethorphan.",
+      "sourceIds": [
+        "DAILYMED-PROVAYBLUE-20250528"
+      ]
     }
   ],
   "sources": [
@@ -150,6 +170,22 @@
           "section": "Contraindications; Warnings: Cardiac Disease; Precautions: Drug Interactions, Pregnancy, Nursing Mothers, Hepatic Impairment"
         }
       ]
+    },
+    {
+      "id": "DAILYMED-PROVAYBLUE-20250528",
+      "title": "PROVAYBLUE (methylene blue) injection: U.S. prescribing information",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4f6848e5-35ed-4046-b13c-3032b5ba3232",
+      "year": 2025,
+      "sourceType": "context",
+      "sourceTier": "official_label",
+      "design": "Official U.S. product label",
+      "population": "Patients receiving intravenous methylene blue injection for acquired methemoglobinemia",
+      "preview": "Product-specific contraindications, boxed warning for serotonin syndrome, warnings and precautions, and drug interactions. DailyMed version 28, updated May 28, 2025.",
+      "locators": [
+        {
+          "section": "Boxed Warning; Contraindications; Warnings and Precautions 5.1 to 5.4; Drug Interactions 7.1"
+        }
+      ]
     }
   ],
   "pages": {
@@ -165,6 +201,9 @@
     ],
     "/drugs/ivermectin": [
       "Ivermectin"
+    ],
+    "/drugs/methylene-blue": [
+      "Methylene blue"
     ]
   }
 }

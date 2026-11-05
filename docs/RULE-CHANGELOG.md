@@ -1,5 +1,15 @@
 # Second Look rule changelog
 
+## 2026-11-05: methylene blue safety rows meet the contraindication and interaction check
+
+Source: pull request 56, branch `fill/remaprx-methylene-blue-safety-2026-11-05`, Evidence gate run 42107021488 and Rules and research continuity run 42107021489. Both failed `tests/readiness.test.mjs` with `/drugs/methylene-blue should fail safety` after the fill added cited contraindications and interactions. Scope: that readiness fixture, and the ProvayBlue label date on the new suitability source. Supersedes the stale expectation that methylene blue still fails `safety`. The safety rule is unchanged: a cited Safety section of at least 20 words, plus cited contraindications and interactions.
+
+Contract: `docs/READY.md` and `docs/PROJECT-RULES.md`. The rows follow the ProvayBlue intravenous label (DailyMed setid `4f6848e5-35ed-4046-b13c-3032b5ba3232`, SPL version 28, effective May 28, 2025): severe hypersensitivity to methylene blue or another thiazine dye, G6PD deficiency because of hemolytic anemia, the boxed warning for serotonin syndrome with serotonergic drugs and opioids, in vitro CYP inhibition, and the 2 mg/kg cocktail study. The source is typed `official_label` with that public URL and has no DOI. An earlier draft dated the same version June 12, 2025; the SPL `effectiveTime` is 20250528, so the source id is `DAILYMED-PROVAYBLUE-20250528`. No DOI was added.
+
+The page has 2,001 substantive words, 8 distinct valid DOIs, three cited mechanism subsections, a passing dosing check, and a passing safety check. It still fails evidence groups, the drug-specific Quality section, study summaries, body length, and the 15-DOI floor. Those gaps stay open. `/drugs/melphalan` remains the safety-failure pin: contraindications and interactions are empty. `/drugs/itraconazole` remains the dosing-failure pin. Metformin still passes. The merge with main keeps the ivermectin suitability rows from pull request 48.
+
+Implementation: `data/treatment-suitability.json` and `tests/readiness.test.mjs`. This does not make methylene blue indexable and does not claim scientific approval. Remaining: sourced fills still have to close the open methylene blue and melphalan readiness gaps, including the 30-DOI deepening target.
+
 ## November 5, 2026: all-drug Metformin-style editorial batches
 
 Source: owner's explicit all-drug rewrite request, ivermectin first; sole style reference is the live Metformin page, which must not change. Contract: DRUG-CANONICAL-STYLE.md. Scope: 33 non-Metformin live drug pages, existing page citations and official U.S. labels only. Supersedes alternate reference-site style patterns, one-drug continuation stops and routine publication within this task. Work remains on bounded review branches/PRs without merging or auto-merge. Preserve supported A–F grades, independent-trial counts, companion reports, negative findings and retraction exclusions. Missing-source notes replace unsupported expansion. No scientific approval is inferred.
