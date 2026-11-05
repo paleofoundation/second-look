@@ -87,6 +87,7 @@ Existing update scripts include:
 - `python3 scripts/reconcile-reader-sources.py` for source identity reconciliation and alias remapping.
 - `python3 scripts/apply-wiki-content.py` for the committed wiki/foundation and mechanism additions.
 - `node scripts/evidence-assessments.mjs --write` to validate assessments and compile the public assessment projection after actual reassessment.
+- `python3 editorial/outcome-summary/build.py` to compile A–F outcome summaries after `editorial/outcome-summary/authored.json` records the reviewed `assessedInputSha256`. It refuses when evidence changed and that fingerprint was not updated. Do not hand-edit `data/outcome-summaries.json` or `editorial/outcome-summary/assessments.json`.
 
 These scripts mutate tracked data. Read the script and its input format before running it, inspect the diff, and include the source packet and affected projections in the same pull request. They are not setup steps or a general request to regenerate every dataset.
 

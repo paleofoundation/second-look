@@ -1,0 +1,157 @@
+{
+  "id": "OUTCOME-SUMMARY-REASSESSMENT-2026-11-05",
+  "assessedOn": "2026-11-05",
+  "method": "selected-source-benefit-v1",
+  "reason": "Cloudflare builds of main failed in scripts/check-outcome-summaries.mjs because deposited DOI fields on existing source records changed the outcome-summary input fingerprint. The first failure reported computed prefix aef76669 against stored prefix ddf509f4. Six mismatches were introduced by the metformin fill 331d984. The ivermectin fill c779d0c added a seventh and left one confidence assessment stale. Commit 7c7b9e1 had zero mismatches.",
+  "review": "Each changed input was compared with 7c7b9e1. The only scientific-record changes were a DOI on the existing source and, for six rows, the confidence record's inputSha256 already rebound to that DOI. Findings, populations, endpoints, effects, trial identities, confidence grades, domains, integrity and benefit letters were unchanged. The letters were checked against editorial/OUTCOME-BENEFIT-GRADING.md. No letter was revised. Original judgment dates were kept because the judgments were not revised. This is not fresh full-text inspection, human approval or a new efficacy claim.",
+  "excludedDois": [
+    "10.1002/prp2.954",
+    "10.1038/s41429-021-00430-5"
+  ],
+  "records": [
+    {
+      "outcomeId": "OUTCOME-D01-C15-COND-C15-MA32-2022",
+      "synthesisId": "SYN-D01-C15-COND-C15-MA32-2022",
+      "sourceId": "COND-C15-MA32-2022",
+      "doi": "10.1001/jama.2022.6147",
+      "doiAlreadyRecordedIn": "research/deposits/MF-MECH-FILL-20261105/MANIFEST.csv",
+      "finding": "No benefit established.",
+      "benefitGrade": "E",
+      "confidenceGrade": "Moderate",
+      "judgment": "The primary MA.32 analysis still shows no demonstrated invasive disease-free survival benefit. The deposited DOI identifies that same JAMA 2022 report. Grade E remains the benefit-not-demonstrated letter."
+    },
+    {
+      "outcomeId": "OUTCOME-D01-C17-COND-C17-MET-2015",
+      "synthesisId": "SYN-D01-C17-COND-C17-MET-2015",
+      "sourceId": "COND-C17-MET-2015",
+      "doi": "10.1016/S1470-2045(15)00027-3",
+      "doiAlreadyRecordedIn": "research/deposits/MF-MECH-FILL-20261105/MANIFEST.csv",
+      "finding": "No survival improvement.",
+      "benefitGrade": "E",
+      "confidenceGrade": "Low",
+      "judgment": "The phase II pancreatic-cancer trial still does not demonstrate a survival benefit. Grade E remains, with the wide interval still limiting the conclusion to no demonstrated benefit."
+    },
+    {
+      "outcomeId": "OUTCOME-D01-C14-MF-NRG-LU001-2021-868676D72A2E752656A0",
+      "synthesisId": "SYN-D01-C14-MF-NRG-LU001-2021-868676D72A2E752656A0",
+      "sourceId": "MF-NRG-LU001-2021",
+      "doi": "10.1001/jamaoncol.2021.2318",
+      "doiAlreadyRecordedIn": "research/deposits/MF-MECH-FILL-20261105/MANIFEST.csv",
+      "finding": "Metformin did not demonstrate a progression-free-survival improvement.",
+      "benefitGrade": "E",
+      "confidenceGrade": "Moderate",
+      "judgment": "NRG-LU001 still does not demonstrate a progression-free survival benefit. Grade E remains. The separate ALMERA survival result stays unpooled."
+    },
+    {
+      "outcomeId": "OUTCOME-D01-C02-COND-C02-COVIDOUT-2022-B1E71756C16B18BBC77C",
+      "synthesisId": "SYN-D01-C02-COND-C02-COVIDOUT-2022-B1E71756C16B18BBC77C",
+      "sourceId": "COND-C02-COVIDOUT-2022",
+      "doi": "10.1056/NEJMoa2201662",
+      "doiAlreadyRecordedIn": "research/deposits/MF-MECH-FILL-20261105/MANIFEST.csv",
+      "finding": "Metformin did not demonstrate a reduction in the primary acute COVID-19 composite outcome.",
+      "benefitGrade": "E",
+      "confidenceGrade": "Moderate",
+      "judgment": "The metformin comparison in COVID-OUT still does not demonstrate a reduction in the primary acute composite. Grade E remains and stays separate from the Long COVID outcome."
+    },
+    {
+      "outcomeId": "OUTCOME-FILL2-D02-COVIDOUT-COMPOSITE",
+      "synthesisId": "SYN-FILL2-D02-COVIDOUT-COMPOSITE",
+      "sourceId": "COND-C02-COVIDOUT-2022",
+      "doi": "10.1056/NEJMoa2201662",
+      "doiAlreadyRecordedIn": "research/deposits/MF-MECH-FILL-20261105/MANIFEST.csv",
+      "finding": "Fluvoxamine did not demonstrate a reduction in the primary composite.",
+      "benefitGrade": "E",
+      "confidenceGrade": "Moderate",
+      "judgment": "The fluvoxamine comparison, adjusted odds ratio 0.94 (95% CI 0.66–1.36), still does not demonstrate benefit. Grade E remains. The 661-participant comparison basis is unchanged."
+    },
+    {
+      "outcomeId": "OUTCOME-FILL2-D08-COVIDOUT-COMPOSITE",
+      "synthesisId": "SYN-FILL2-D08-COVIDOUT-COMPOSITE",
+      "sourceId": "COND-C02-COVIDOUT-2022",
+      "doi": "10.1056/NEJMoa2201662",
+      "doiAlreadyRecordedIn": "research/deposits/MF-MECH-FILL-20261105/MANIFEST.csv",
+      "finding": "Ivermectin did not demonstrate a reduction in the primary composite.",
+      "benefitGrade": "E",
+      "confidenceGrade": "Moderate",
+      "judgment": "The ivermectin comparison, adjusted odds ratio 1.05 (95% CI 0.76–1.45), still does not demonstrate benefit. Grade E remains. The 808-participant comparison basis is unchanged."
+    },
+    {
+      "outcomeId": "OUTCOME-FILL2-D08-CRC-XENOGRAFT",
+      "synthesisId": "SYN-FILL2-D08-CRC-XENOGRAFT",
+      "sourceId": "P-D08-CRC-2014",
+      "doi": "10.15252/emmm.201404084",
+      "doiAlreadyRecordedIn": "research/deposits/RRX-IVM-FILL-20261105/MANIFEST.csv",
+      "finding": "Ivermectin inhibited growth of WNT-TCF-dependent colorectal xenografts. These experiments support a pathway hypothesis rather than clinical colorectal-cancer efficacy.",
+      "benefitGrade": null,
+      "confidenceGrade": "Low",
+      "integrity": "preclinical_only",
+      "judgment": "The report remains cell and mouse evidence. No A–F letter applies. Confidence stays Low and preclinical_only. The retracted DOI 10.1002/prp2.954 was not used."
+    }
+  ],
+  "confidenceRebind": {
+    "rowId": "SYN-FILL2-D08-CRC-XENOGRAFT",
+    "command": "assessmentFingerprint in scripts/evidence-assessments.mjs, then node scripts/evidence-assessments.mjs --write",
+    "grade": "Low",
+    "assessedAt": "2026-10-26",
+    "note": "The six other confidence rows already matched their DOI-bearing inputs. Only this row was still stale. Grade, domains, integrity and assessedAt were left unchanged."
+  },
+  "compiler": "python3 editorial/outcome-summary/build.py",
+  "humanApproval": "not recorded",
+  "commands": [
+    "assessmentFingerprint for SYN-FILL2-D08-CRC-XENOGRAFT, then node scripts/evidence-assessments.mjs --write",
+    "python3 editorial/outcome-summary/build.py",
+    "node scripts/check-outcome-summaries.mjs",
+    "node scripts/evidence-assessments.mjs --check"
+  ],
+  "fingerprints": [
+    {
+      "id": "SYN-FILL2-D08-CRC-XENOGRAFT",
+      "field": "inputSha256",
+      "previous": "a1e39725101d2d4217f6bb7073dfb53b85c7644f86c484a4953c9be2d20ced9b",
+      "reviewed": "93cb6a8527ed34751efd165083d03c2cca62ebf4d8230e2eeef4eb775e390534"
+    },
+    {
+      "id": "OUTCOME-D01-C15-COND-C15-MA32-2022",
+      "field": "assessedInputSha256",
+      "previous": "ddf509f4508bd9dde468e14f5ba2187957ea46d54cba3c9860527fc5312ba41c",
+      "reviewed": "aef76669f6017336f3df28fdebb9065d1d2a6e37b05201162474ab229992b74f"
+    },
+    {
+      "id": "OUTCOME-D01-C17-COND-C17-MET-2015",
+      "field": "assessedInputSha256",
+      "previous": "aef4547c487a0b0b7a0adbef1a9dc822c6f10daca3f7cbe96e415dca3d419dd6",
+      "reviewed": "dd474a0164ff6aa8e0511e0ce84e9587563d035b6eb3f48feeb9e07117e2fef9"
+    },
+    {
+      "id": "OUTCOME-D01-C14-MF-NRG-LU001-2021-868676D72A2E752656A0",
+      "field": "assessedInputSha256",
+      "previous": "d5ba76491696fdbc8aaee971041bad804c00886af523093dfddebdcf7b364827",
+      "reviewed": "f20d6279089231b7dcf556792102304982f15aa3615d34183d7e49a9d3432213"
+    },
+    {
+      "id": "OUTCOME-D01-C02-COND-C02-COVIDOUT-2022-B1E71756C16B18BBC77C",
+      "field": "assessedInputSha256",
+      "previous": "5fa9b2fdaecee9e8c22985096dedf1e56db6a6a6ac87bdeae307caaccf2e7b44",
+      "reviewed": "c282728aca6e573694c7c067c46b4bb1c1a73701b5a6b100f9d4e713124a5758"
+    },
+    {
+      "id": "OUTCOME-FILL2-D02-COVIDOUT-COMPOSITE",
+      "field": "assessedInputSha256",
+      "previous": "77fc601da09e6a4114bc6a8b2396d166e09ae5eb618c85d692553719f07961ca",
+      "reviewed": "213e96a64148dceaf5433776431d93aea10457b2c66a8f3cd0ff0f25372a630f"
+    },
+    {
+      "id": "OUTCOME-FILL2-D08-COVIDOUT-COMPOSITE",
+      "field": "assessedInputSha256",
+      "previous": "4242a00a7a42744b61e79f799c17f6ae05da5463c4bea87668b3ffd092fcded0",
+      "reviewed": "566e1d2fa107e2ba2d55cd354d9c6cd8c3dc72ada36963c9641aecc4205fb465"
+    },
+    {
+      "id": "OUTCOME-FILL2-D08-CRC-XENOGRAFT",
+      "field": "assessedInputSha256",
+      "previous": "fa64a489b5cca44010746e926ad6065c8e9e624f43726896e1e10e01b488d3cd",
+      "reviewed": "91b5d383a04d1a82e8ab115b9cb526e139f8960c02690e239dc81803749ecc9a"
+    }
+  ],
+  "compilerResult": "build.py compiled 68 summaries. Public outcome records and publicRecordSha256 values were unchanged. check-outcome-summaries.mjs and evidence-assessments.mjs --check passed. Grades remained High 1, Moderate 30, Low 39. Benefit letters remained A 0, B 0, C 6, D 16, E 29, F 6, ungraded 11."
+}

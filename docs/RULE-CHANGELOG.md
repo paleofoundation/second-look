@@ -537,3 +537,12 @@ Consulted the Microbiome Medicine canonical Research Feed card and PepsAnon FAQ/
 
 
 Research Feed spacing publication completed November 4, 2026. PR #40 merged as a6dcfb663778467117c12d7f7a7d6b6807bc97db. Cloudflare workflow 41887147482 succeeded; Worker version db2b588a-9386-4bdc-86a5-bdbe7ef6ace8 deployed at 18:27:13 UTC. Live Metformin confirms an 80px desktop / 64px phone gap after FAQs, 32px below Research Feed, absent duplicate Study summaries heading, all 25 cards retained and no overflow at 390px. Existing spacing above FAQs is unchanged. Receipt: RESEARCH-FEED-SPACING-20261104.json; screenshot: docs/verification/research-feed-spacing/live-desktop.jpg. This supersedes publication-pending status.
+
+
+## November 5, 2026 — Rebind outcome summaries after deposited DOIs
+
+Source: Cloudflare deploy runs 42072643841 and 42074940560 failed in `scripts/check-outcome-summaries.mjs` with “Changed evidence requires actual reassessment” (computed `aef76669` versus stored `ddf509f4`). The same pair was already on main after the metformin fill, before pull request 46. Scope: fingerprint reassessment only. Contract: `editorial/OUTCOME-BENEFIT-GRADING.md`, `editorial/EVIDENCE-GRADING.md`, and `docs/PROJECT-RULES.md`.
+
+The deploy check stops at the first stale summary, `OUTCOME-D01-C15-COND-C15-MA32-2022`. Six further summaries were stale, and `SYN-FILL2-D08-CRC-XENOGRAFT` had a stale confidence fingerprint. Compared with `7c7b9e1`, which passed, the input change on each row was a DOI already deposited for that source. Findings, effects, trial counts, confidence grades, domains and benefit letters were unchanged. Retracted DOI `10.1002/prp2.954` and Zaidi 2021 DOI `10.1038/s41429-021-00430-5` were not used.
+
+Implementation: re-examined those inputs, kept every letter and the original judgment dates, stored the reviewed fingerprints, and ran `node scripts/evidence-assessments.mjs --write` and `python3 editorial/outcome-summary/build.py`. The compiler left public outcome records unchanged. `check-outcome-summaries.mjs` and `evidence-assessments.mjs --check` passed. Receipt: `editorial/outcome-summary/reassessment-2026-11-05.json`. No page rewrite, new efficacy claim, human approval or live publication is claimed by this record.
