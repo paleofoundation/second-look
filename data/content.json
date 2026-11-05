@@ -8345,7 +8345,9 @@
           "source_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4f6848e5-35ed-4046-b13c-3032b5ba3232",
           "basis": "full_text"
         }
-      ]
+      ],
+      "nonDoiSourceType": "regulatory-label",
+      "sourceTier": "official_label"
     }
   ],
   "guides": [
@@ -29412,7 +29414,8 @@
             "MB-ONYCHO-ENDONYX-2013",
             "MB-ONYCHO-UREA-LASER-2023",
             "MB-SEPTIC-PROTOCOL-2024",
-            "MB-SEPTIC-RCT-2023"
+            "MB-SEPTIC-RCT-2023",
+            "CTX-MB-PROVAYBLUE-US-LABEL"
           ],
           "sentences": [
             {
@@ -29482,7 +29485,60 @@
               ]
             }
           ],
-          "questions": []
+          "questions": [
+            {
+              "id": "methylene-blue-labeled-dose",
+              "question": "What condition does the labeled intravenous dose treat?",
+              "answer": "For acquired methemoglobinemia, the label describes 1 mg/kg intravenously over 5 to 30 minutes, with a conditional repeat dose after one hour. Renal impairment changes the repeat-dose instructions. These are not septic-shock, disc-injection or topical-treatment schedules.",
+              "sentences": [
+                {
+                  "text": "For acquired methemoglobinemia, the label describes 1 mg/kg intravenously over 5 to 30 minutes, with a conditional repeat dose after one hour. Renal impairment changes the repeat-dose instructions. These are not septic-shock, disc-injection or topical-treatment schedules.",
+                  "sources": [
+                    "CTX-MB-PROVAYBLUE-US-LABEL"
+                  ]
+                }
+              ],
+              "sources": [
+                "CTX-MB-PROVAYBLUE-US-LABEL"
+              ]
+            },
+            {
+              "id": "methylene-blue-dosing-scope",
+              "question": "Does this schedule establish a dose for every investigated use?",
+              "answer": "No single dosing schedule can be inferred across these uses. Doses differ by use and are not interchangeable. In the septic shock trial, the median daily dose was 1.2 mg/kg. The toenail studies applied a 2% methylene blue solution to the nail and then red light at 630 nm, every two weeks for six months. Disc injection was done once, into discs confirmed by provocative discography.",
+              "sentences": [
+                {
+                  "text": "No single dosing schedule can be inferred across these uses.",
+                  "sources": []
+                },
+                {
+                  "text": "Doses differ by use and are not interchangeable. In the septic shock trial, the median daily dose was 1.2 mg/kg.",
+                  "sources": [
+                    "MB-SEPTIC-RCT-2023"
+                  ]
+                },
+                {
+                  "text": "The toenail studies applied a 2% methylene blue solution to the nail and then red light at 630 nm, every two weeks for six months.",
+                  "sources": [
+                    "MB-ONYCHO-DLSO-2014",
+                    "MB-ONYCHO-ENDONYX-2013"
+                  ]
+                },
+                {
+                  "text": "Disc injection was done once, into discs confirmed by provocative discography.",
+                  "sources": [
+                    "MB-LBP-PROSPECTIVE-2012"
+                  ]
+                }
+              ],
+              "sources": [
+                "MB-LBP-PROSPECTIVE-2012",
+                "MB-ONYCHO-DLSO-2014",
+                "MB-ONYCHO-ENDONYX-2013",
+                "MB-SEPTIC-RCT-2023"
+              ]
+            }
+          ]
         },
         {
           "id": "results",
