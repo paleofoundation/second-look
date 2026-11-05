@@ -1,5 +1,15 @@
 # Second Look rule changelog
 
+## 2026-11-05: methylene blue dosing meets the cited-schedule check, so the fixture pins itraconazole
+
+Source: pull request 44, branch `fill/remaprx-methylene-blue-dosing-2026-11-05`, investigated 2026-11-05. Scope: the metformin-grade readiness fixture only. The dosing section on `/drugs/methylene-blue` is 465 words drawn from cited trial schedules, with a dose, a schedule, and a trial or study. `tests/readiness.test.mjs` still required that page to fail `dosing`, so Rules and research continuity failed after the citation gate had passed. Supersedes that stale failure expectation only. The dosing rule is unchanged: at least 250 words, a dose, a schedule, and a trial or study, and the section must be cited.
+
+Contract: `docs/READY.md` and `docs/PROJECT-RULES.md`. The page has 1,864 substantive words, 8 distinct valid DOIs, three cited mechanism subsections, and a passing dosing check. It still fails evidence groups, safety (contraindications and interactions empty), the drug-specific Quality section, study summaries, body length, and the 15-DOI floor. Those gaps stay open. `/drugs/itraconazole` is the dosing-failure pin: 17 cited dosing words on the prostate schedule, under the 250-word line. Metformin still passes. Melphalan still fails every check, including dosing.
+
+Implementation: `tests/readiness.test.mjs`. Verification on this branch: `node tests/readiness.test.mjs`, `node tests/search-indexing.test.mjs`, `node tests/require-governance-check.test.mjs`, and `node scripts/check-governance.mjs` (citation gate PASS, 8 methylene blue DOIs on Crossref). This does not make methylene blue indexable and does not claim scientific approval. Remaining: sourced fills still have to close the open methylene blue and melphalan readiness gaps, including the 30-DOI deepening target.
+
+Pull requests 17 and 18 (29 October outline fills for metformin and ivermectin) are closed as conflicting with the citation gate, not as superseded content. Their added sources are still absent from main. Any edit to those guides rechecks every citation, including DailyMed and FDA pages that have no DOI and papers whose DOIs are not in `research/deposits` or `research/corpus`. The new DOIs are in that second group. Rebasing does not clear the gate, and this record does not weaken it or invent DOIs. The branches `claude/remaprx-fill-metformin-20261029-1358` and `claude/remaprx-fill-ivermectin-20261029-1612` stay in the repository for a later deposit-backed fill.
+
 ## 2026-11-04: readiness fixture follows the cited methylene blue mechanisms, and auto-merge waits for governance
 
 Source: investigation of pull request 42, merged 2026-11-04 20:15 UTC. Scope: the metformin-grade readiness fixture and evidence-gate auto-merge. The methylene blue fill added three cited mechanism subsections. `tests/readiness.test.mjs` still required `/drugs/methylene-blue` to fail `mechanism-subsections`, so Rules and research continuity failed on main after the merge. Supersedes that stale failure expectation only. The page stays below the indexing bar.
