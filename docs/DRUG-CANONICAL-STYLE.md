@@ -1,0 +1,11 @@
+# Drug pages: Metformin canonical style
+
+Adopted November 5, 2026 from the owner's explicit all-drug rewrite request. The only style reference for this operation is https://remaprx.com/drugs/metformin. Metformin itself must remain unchanged. This supersedes earlier reference-site layout variations and the prior one-drug/no-automatic-continuation restriction within this explicitly authorized all-drug editorial task. No delegation is authorized.
+
+Use title/dek, author, reader edition, Page Snapshot, Overview, Mechanism of Action, Safety, Contraindications, Interactions, Dosing, applicable Quality, Status, Evidence, FAQs, Research Feed, Update History and References. Main explanations remain visible prose; follow-up question accordions open with Quick answer. No narrative bullet lists. Use suitability, regulatory and outcome tables in their canonical locations. Preserve approved versus investigated uses and the cancer clinical-context notice.
+
+Only each drug page's existing cited sources and its official U.S. label may support additions. Label additions concern labeled use, dosing, contraindications, interactions and status. Reuse original study and outcome identities. Retain the A–F method, existing supported grades, independent-trial counting, companion-report deduplication and retraction exclusions. Never copy Metformin's scientific matrix or invent a grade, count, quotation or paper. Missing source support permits a short honest note and must be reported per URL; the prose minimum never authorizes filler.
+
+Research Feed answers what was studied, who was studied, important findings and implications from available source-bound material. A concise public summary is distinct from a completed protected Q01–Q15 appraisal. Preserve access and actual review state. Use American English, no em dash or en dash as a prose substitute, and never use the prohibited relationship terminology in authored explanations. Preserve exact published source titles and stable identifiers.
+
+Work sequentially, ivermectin first, in bounded branches/PRs. Do not merge, enable auto-merge or use evidence-fill/fill branch triggers. No deployment is authorized by this task. Report changed URLs, missing-source limits and exact validation failures. The source packet and GP Plan readiness are in research/batches/RRX-DRUG-CANONICAL-20261105/.

@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "date": "2026-11-05",
+  "base": "c63f817efc74afd0c7bcbef8b23dcd1d2a039c59",
+  "authorization": "Owner requests every non-metformin live drug page in sequential reviewable batches; no merge. Current request supersedes prior one-drug stop and reference-site style defaults within this task.",
+  "styleReference": "https://remaprx.com/drugs/metformin",
+  "sources": "Reuse only each page\u2019s currently cited records and original cited sources. Official U.S. product labels may supply labeled dosing, contraindications, interactions and status. No outside research discovery.",
+  "sequence": [
+    "ivermectin",
+    "remaining live index entries in bounded branches"
+  ],
+  "identity": "Preserve paper IDs, study-family IDs, outcome grades/counts, source integrity, protected reviews and release states. No new efficacy assessment or numerical synthesis.",
+  "schema": {
+    "claim": [
+      "text:string",
+      "sources:existing source IDs[]",
+      "locator:source section or existing record path",
+      "basis:existing_record|official_label|cited_original",
+      "missingness:explicit when absent"
+    ],
+    "page": [
+      "path",
+      "sections",
+      "sourceIds",
+      "gaps"
+    ],
+    "studySummary": [
+      "sourceId",
+      "question",
+      "population",
+      "findings",
+      "implications",
+      "sourceLocators",
+      "accessLimit"
+    ]
+  },
+  "checks": [
+    "sentence citation closure",
+    "metformin records unchanged",
+    "source allowlist by page",
+    "independent trial records unchanged",
+    "retractions excluded",
+    "section order and prose visibility SSR",
+    "governance",
+    "typecheck",
+    "build where available"
+  ],
+  "release": "PR/branch only; do not apply evidence-fill labels or enable auto-merge. No main push or deployment."
+}

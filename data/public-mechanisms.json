@@ -113,48 +113,27 @@
       ]
     },
     {
-      "conditionId": "GOAL-AGING",
       "guideIds": [
-        "G-GOAL-AGING"
+        "term-hyphae"
       ],
       "summary": {
-        "text": "Sirolimus binds FKBP12 and inhibits mTOR signaling, a pathway linking nutrient availability with cell growth. Metformin alters cellular energy metabolism and reduces liver glucose production; the aging studies test consequences beyond glucose control.",
+        "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
         "sourceIds": [
-          "AGING-SIROLIMUS-LABEL",
-          "MF-LABEL-2025",
-          "MF-MASTERS-2019"
+          "MECH-D34-HYPHAE-1999",
+          "MECH-AZOLE-HYPHAE-2011",
+          "MECH-KETOCONAZOLE-FILAMENTS-2008"
         ],
         "sentences": [
           {
-            "text": "Sirolimus binds FKBP12 and inhibits mTOR signaling, a pathway linking nutrient availability with cell growth. Metformin alters cellular energy metabolism and reduces liver glucose production; the aging studies test consequences beyond glucose control.",
+            "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
             "sources": [
-              "AGING-SIROLIMUS-LABEL",
-              "MF-LABEL-2025",
-              "MF-MASTERS-2019"
+              "MECH-D34-HYPHAE-1999",
+              "MECH-AZOLE-HYPHAE-2011",
+              "MECH-KETOCONAZOLE-FILAMENTS-2008"
             ]
           }
         ]
-      },
-      "questions": [
-        {
-          "id": "aging-mtor",
-          "title": "Why is mTOR inhibition being studied in aging?",
-          "text": "mTOR helps regulate growth and nutrient responses. Rapamycin experiments showed longer survival in mice, including when treatment began late in life, motivating human studies of health and function.",
-          "sourceIds": [
-            "AGING-RAPA-MICE-2009",
-            "AGING-SIROLIMUS-LABEL"
-          ],
-          "sentences": [
-            {
-              "text": "mTOR helps regulate growth and nutrient responses. Rapamycin experiments showed longer survival in mice, including when treatment began late in life, motivating human studies of health and function.",
-              "sources": [
-                "AGING-RAPA-MICE-2009",
-                "AGING-SIROLIMUS-LABEL"
-              ]
-            }
-          ]
-        }
-      ]
+      }
     },
     {
       "drugId": "D02",
@@ -1244,19 +1223,38 @@
         ]
       },
       "summary": {
-        "text": "Cancer experiments test growth signaling and mitochondrial stress; the acute-COVID clinical question has been tested in randomized trials.",
+        "text": "Repurposing studies examine actions different from parasite killing. Ovarian and breast cancer experiments investigated PAK1-related growth signaling. Glioblastoma experiments examined mitochondrial respiration and oxidative stress. Colorectal-cancer experiments tested WNT-TCF-dependent growth using pathway rescue and comparison models. These are experimental mechanisms, not demonstrated patient benefits. The antiviral membrane experiments also raise an exposure limitation: their effects occurred at concentrations above reported toxic clinical concentrations.",
         "sourceIds": [
           "P-D08-OVARIAN-2009",
+          "P-D08-BREAST-2016",
           "P-D08-GBM-2016",
-          "P-D08-ACTIV6-2023"
+          "P-D08-CRC-2014",
+          "P-D08-ANTIVIRAL-2023"
         ],
         "sentences": [
           {
-            "text": "Cancer experiments test growth signaling and mitochondrial stress; the acute-COVID clinical question has been tested in randomized trials.",
+            "text": "Repurposing studies examine actions different from parasite killing. Ovarian and breast cancer experiments investigated PAK1-related growth signaling.",
             "sources": [
               "P-D08-OVARIAN-2009",
-              "P-D08-GBM-2016",
-              "P-D08-ACTIV6-2023"
+              "P-D08-BREAST-2016"
+            ]
+          },
+          {
+            "text": "Glioblastoma experiments examined mitochondrial respiration and oxidative stress.",
+            "sources": [
+              "P-D08-GBM-2016"
+            ]
+          },
+          {
+            "text": "Colorectal-cancer experiments tested WNT-TCF-dependent growth using pathway rescue and comparison models. These are experimental mechanisms, not demonstrated patient benefits.",
+            "sources": [
+              "P-D08-CRC-2014"
+            ]
+          },
+          {
+            "text": "The antiviral membrane experiments also raise an exposure limitation: their effects occurred at concentrations above reported toxic clinical concentrations.",
+            "sources": [
+              "P-D08-ANTIVIRAL-2023"
             ]
           }
         ]
@@ -1339,6 +1337,18 @@
               "sources": [
                 "P-D08-CRC-2014"
               ]
+            }
+          ]
+        },
+        {
+          "id": "hcc",
+          "title": "Why combine it with sorafenib in liver cancer?",
+          "text": "The cited ivermectin and sorafenib report is retracted. It cannot establish a combination mechanism or support an efficacy conclusion.",
+          "sourceIds": [],
+          "sentences": [
+            {
+              "text": "The cited ivermectin and sorafenib report is retracted. It cannot establish a combination mechanism or support an efficacy conclusion.",
+              "sources": []
             }
           ]
         },
@@ -3445,1240 +3455,717 @@
       ]
     },
     {
-      "conditionId": "C01",
       "guideIds": [
-        "G-LONGCOVID"
+        "term-hyphae"
       ],
       "summary": {
-        "text": "Antiviral approaches test whether persistent viral activity contributes to ongoing illness. Metformin is also investigated for effects on host-cell protein production and inflammation; a COVID-OUT analysis found lower nasal viral RNA during acute infection.",
+        "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
         "sourceIds": [
-          "P-RECOVER-2026",
-          "MF-COVID-VIRAL-2024"
+          "MECH-D34-HYPHAE-1999",
+          "MECH-AZOLE-HYPHAE-2011",
+          "MECH-KETOCONAZOLE-FILAMENTS-2008"
         ],
         "sentences": [
           {
-            "text": "Antiviral approaches test whether persistent viral activity contributes to ongoing illness. Metformin is also investigated for effects on host-cell protein production and inflammation; a COVID-OUT analysis found lower nasal viral RNA during acute infection.",
+            "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
             "sources": [
-              "P-RECOVER-2026",
-              "MF-COVID-VIRAL-2024"
+              "MECH-D34-HYPHAE-1999",
+              "MECH-AZOLE-HYPHAE-2011",
+              "MECH-KETOCONAZOLE-FILAMENTS-2008"
             ]
           }
         ]
-      },
-      "questions": [
-        {
-          "id": "c01-mechanism-1",
-          "title": "Why might prevention and treatment have different results?",
-          "text": "Reducing viral replication early in an infection may affect what happens later. Treating an established illness tests a different biological stage, in people whose ongoing symptoms may have several causes.",
-          "sourceIds": [
-            "MF-COVID-VIRAL-2024",
-            "P-STOPPASC-2024"
-          ],
-          "sentences": [
-            {
-              "text": "Reducing viral replication early in an infection may affect what happens later. Treating an established illness tests a different biological stage, in people whose ongoing symptoms may have several causes.",
-              "sources": [
-                "MF-COVID-VIRAL-2024",
-                "P-STOPPASC-2024"
-              ]
-            }
-          ]
-        }
-      ]
+      }
     },
     {
-      "conditionId": "C02",
       "guideIds": [
-        "G-CONDITION-C02"
+        "term-hyphae"
       ],
       "summary": {
-        "text": "Nirmatrelvir targets a viral protease needed for SARS-CoV-2 replication, while ritonavir sustains nirmatrelvir exposure. Metformin research instead includes effects on host-cell pathways and viral RNA levels.",
+        "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
         "sourceIds": [
-          "COND-C02-CDC",
-          "MF-COVID-VIRAL-2024"
+          "MECH-D34-HYPHAE-1999",
+          "MECH-AZOLE-HYPHAE-2011",
+          "MECH-KETOCONAZOLE-FILAMENTS-2008"
         ],
         "sentences": [
           {
-            "text": "Nirmatrelvir targets a viral protease needed for SARS-CoV-2 replication, while ritonavir sustains nirmatrelvir exposure. Metformin research instead includes effects on host-cell pathways and viral RNA levels.",
+            "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
             "sources": [
-              "COND-C02-CDC",
-              "MF-COVID-VIRAL-2024"
+              "MECH-D34-HYPHAE-1999",
+              "MECH-AZOLE-HYPHAE-2011",
+              "MECH-KETOCONAZOLE-FILAMENTS-2008"
             ]
           }
         ]
-      },
-      "questions": [
-        {
-          "id": "c02-mechanism-1",
-          "title": "Why study a diabetes drug against a virus?",
-          "text": "In the COVID-OUT virologic study, metformin reduced nasal viral RNA. Researchers proposed inhibition of the host mTOR pathway, involved in protein production, as one possible explanation.",
-          "sourceIds": [
-            "MF-COVID-VIRAL-2024"
-          ],
-          "sentences": [
-            {
-              "text": "In the COVID-OUT virologic study, metformin reduced nasal viral RNA. Researchers proposed inhibition of the host mTOR pathway, involved in protein production, as one possible explanation.",
-              "sources": [
-                "MF-COVID-VIRAL-2024"
-              ]
-            }
-          ]
-        }
-      ]
+      }
     },
     {
-      "conditionId": "C03",
       "guideIds": [
-        "G-CONDITION-C03"
+        "term-hyphae"
       ],
       "summary": {
-        "text": "The proposed rationale combines inhibition of Hedgehog signaling, tumor blood-vessel formation and the P-glycoprotein drug-efflux pump. Reducing drug efflux could increase chemotherapy exposure within cancer cells.",
+        "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
         "sourceIds": [
-          "COND-C03-ITRA-2014"
+          "MECH-D34-HYPHAE-1999",
+          "MECH-AZOLE-HYPHAE-2011",
+          "MECH-KETOCONAZOLE-FILAMENTS-2008"
         ],
         "sentences": [
           {
-            "text": "The proposed rationale combines inhibition of Hedgehog signaling, tumor blood-vessel formation and the P-glycoprotein drug-efflux pump. Reducing drug efflux could increase chemotherapy exposure within cancer cells.",
+            "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
             "sources": [
-              "COND-C03-ITRA-2014"
+              "MECH-D34-HYPHAE-1999",
+              "MECH-AZOLE-HYPHAE-2011",
+              "MECH-KETOCONAZOLE-FILAMENTS-2008"
             ]
           }
         ]
-      },
-      "questions": [
-        {
-          "id": "c03-mechanism-1",
-          "title": "Does this rationale apply to every ovarian cancer subtype?",
-          "text": "The clinical series concerned ovarian clear cell carcinoma. Epithelial ovarian cancers include different histological and molecular groups, so that result cannot be assigned to all ovarian or fallopian-tube tumors.",
-          "sourceIds": [
-            "COND-C03-ITRA-2014",
-            "COND-C03-NCI"
-          ],
-          "sentences": [
-            {
-              "text": "The clinical series concerned ovarian clear cell carcinoma. Epithelial ovarian cancers include different histological and molecular groups, so that result cannot be assigned to all ovarian or fallopian-tube tumors.",
-              "sources": [
-                "COND-C03-ITRA-2014",
-                "COND-C03-NCI"
-              ]
-            }
-          ]
-        }
-      ]
+      }
     },
     {
-      "conditionId": "C04",
       "guideIds": [
-        "G-CONDITION-C04"
+        "term-hyphae"
       ],
       "summary": {
-        "text": "Mebendazole has been investigated for disruption of microtubules, structures needed for cancer-cell division. The clinical work asks whether an exposure usable in patients can translate laboratory activity into a useful add-on treatment.",
+        "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
         "sourceIds": [
-          "COND-C04-MEB-2021"
+          "MECH-D34-HYPHAE-1999",
+          "MECH-AZOLE-HYPHAE-2011",
+          "MECH-KETOCONAZOLE-FILAMENTS-2008"
         ],
         "sentences": [
           {
-            "text": "Mebendazole has been investigated for disruption of microtubules, structures needed for cancer-cell division. The clinical work asks whether an exposure usable in patients can translate laboratory activity into a useful add-on treatment.",
+            "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
             "sources": [
-              "COND-C04-MEB-2021"
+              "MECH-D34-HYPHAE-1999",
+              "MECH-AZOLE-HYPHAE-2011",
+              "MECH-KETOCONAZOLE-FILAMENTS-2008"
             ]
           }
         ]
-      },
-      "questions": [
-        {
-          "id": "c04-mechanism-1",
-          "title": "Why combine it with temozolomide?",
-          "text": "The trial added mebendazole after surgery and standard chemoradiation rather than replacing established treatment. That design addresses the tolerability of the combination before a randomized efficacy comparison.",
-          "sourceIds": [
-            "COND-C04-MEB-2021"
-          ],
-          "sentences": [
-            {
-              "text": "The trial added mebendazole after surgery and standard chemoradiation rather than replacing established treatment. That design addresses the tolerability of the combination before a randomized efficacy comparison.",
-              "sources": [
-                "COND-C04-MEB-2021"
-              ]
-            }
-          ]
-        }
-      ]
+      }
     },
     {
-      "conditionId": "C05",
       "guideIds": [
-        "G-CONDITION-C05"
+        "term-hyphae"
       ],
       "summary": {
-        "text": "Naltrexone blocks opioid receptors. Low-dose research also examines whether it influences central pain regulation through opioid or glial mechanisms; these are hypotheses about how symptoms might change.",
+        "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
         "sourceIds": [
-          "COND-C05-LDN-2025"
+          "MECH-D34-HYPHAE-1999",
+          "MECH-AZOLE-HYPHAE-2011",
+          "MECH-KETOCONAZOLE-FILAMENTS-2008"
         ],
         "sentences": [
           {
-            "text": "Naltrexone blocks opioid receptors. Low-dose research also examines whether it influences central pain regulation through opioid or glial mechanisms; these are hypotheses about how symptoms might change.",
+            "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
             "sources": [
-              "COND-C05-LDN-2025"
+              "MECH-D34-HYPHAE-1999",
+              "MECH-AZOLE-HYPHAE-2011",
+              "MECH-KETOCONAZOLE-FILAMENTS-2008"
             ]
           }
         ]
-      },
-      "questions": [
-        {
-          "id": "c05-mechanism-1",
-          "title": "Why can a pain-processing measure change without clear pain relief?",
-          "text": "The exploratory FINAL analysis assessed several mechanisms, while the main trial measured the pain people experienced. A difference in one physiological measure does not specify the size or durability of symptom improvement.",
-          "sourceIds": [
-            "COND-C05-LDN-2025",
-            "P-D04-FIBRO-2024"
-          ],
-          "sentences": [
-            {
-              "text": "The exploratory FINAL analysis assessed several mechanisms, while the main trial measured the pain people experienced. A difference in one physiological measure does not specify the size or durability of symptom improvement.",
-              "sources": [
-                "COND-C05-LDN-2025",
-                "P-D04-FIBRO-2024"
-              ]
-            }
-          ]
-        }
-      ]
+      }
     },
     {
-      "conditionId": "C06",
       "guideIds": [
-        "G-CONDITION-C06"
+        "term-hyphae"
       ],
       "summary": {
-        "text": "Clinical translation: Low confidence. Opioid-receptor blockade is proposed to release inhibition of TRPM3-mediated calcium entry in natural-killer cells. A cellular finding does not identify the cause of the whole illness or establish symptom benefit.",
+        "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
         "sourceIds": [
-          "COND-C06-TRPM3-2021"
+          "MECH-D34-HYPHAE-1999",
+          "MECH-AZOLE-HYPHAE-2011",
+          "MECH-KETOCONAZOLE-FILAMENTS-2008"
         ],
         "sentences": [
           {
-            "text": "Clinical translation: Low confidence. Opioid-receptor blockade is proposed to release inhibition of TRPM3-mediated calcium entry in natural-killer cells. A cellular finding does not identify the cause of the whole illness or establish symptom benefit.",
+            "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
             "sources": [
-              "COND-C06-TRPM3-2021"
+              "MECH-D34-HYPHAE-1999",
+              "MECH-AZOLE-HYPHAE-2011",
+              "MECH-KETOCONAZOLE-FILAMENTS-2008"
             ]
           }
         ]
-      },
-      "questions": [
-        {
-          "id": "c06-mechanism-1",
-          "title": "Is TRPM3 dysfunction established as the single cause of ME/CFS?",
-          "text": "The study examines one biological pathway. It does not demonstrate that this pathway explains the whole illness or the varied symptoms described in ME/CFS.",
-          "sourceIds": [
-            "COND-C06-TRPM3-2021",
-            "COND-C06-CDC"
-          ],
-          "sentences": [
-            {
-              "text": "The study examines one biological pathway. It does not demonstrate that this pathway explains the whole illness or the varied symptoms described in ME/CFS.",
-              "sources": [
-                "COND-C06-TRPM3-2021",
-                "COND-C06-CDC"
-              ]
-            }
-          ]
-        }
-      ]
+      }
     },
     {
-      "conditionId": "C07",
       "guideIds": [
-        "G-CONDITION-C07"
+        "term-hyphae"
       ],
       "summary": {
-        "text": "The rationale for naltrexone is to alter opioid-linked reward signaling and reduce reinforcement of compulsive behavior. It is a proposed explanation for changes in urges, rather than a diagnosis based on opioid dysfunction.",
+        "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
         "sourceIds": [
-          "COND-C07-NTX-2020"
+          "MECH-D34-HYPHAE-1999",
+          "MECH-AZOLE-HYPHAE-2011",
+          "MECH-KETOCONAZOLE-FILAMENTS-2008"
         ],
         "sentences": [
           {
-            "text": "The rationale for naltrexone is to alter opioid-linked reward signaling and reduce reinforcement of compulsive behavior. It is a proposed explanation for changes in urges, rather than a diagnosis based on opioid dysfunction.",
+            "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
             "sources": [
-              "COND-C07-NTX-2020"
+              "MECH-D34-HYPHAE-1999",
+              "MECH-AZOLE-HYPHAE-2011",
+              "MECH-KETOCONAZOLE-FILAMENTS-2008"
             ]
           }
         ]
-      },
-      "questions": [
-        {
-          "id": "c07-mechanism-1",
-          "title": "Is this the same problem as persistent genital arousal disorder?",
-          "text": "No. PGAD involves unwanted genital sensations that can occur without sexual desire, whereas the CSBD trials studied difficulty controlling repetitive behavior. The populations and treatment targets are different.",
-          "sourceIds": [
-            "P-D04-CSBD-2022",
-            "COND-C08-IPGAD-2023"
-          ],
-          "sentences": [
-            {
-              "text": "No. PGAD involves unwanted genital sensations that can occur without sexual desire, whereas the CSBD trials studied difficulty controlling repetitive behavior. The populations and treatment targets are different.",
-              "sources": [
-                "P-D04-CSBD-2022",
-                "COND-C08-IPGAD-2023"
-              ]
-            }
-          ]
-        }
-      ]
+      }
     },
     {
-      "conditionId": "C08",
       "guideIds": [
-        "G-CONDITION-C08"
+        "term-hyphae"
       ],
       "summary": {
-        "text": "A neurological case series identified possible lesions affecting sacral sensory pathways in some patients. The iPGAD study did not find one uniform peripheral neurophysiological abnormality, pointing to more than one possible explanation.",
+        "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
         "sourceIds": [
-          "COND-C08-NEURO-2020",
-          "COND-C08-IPGAD-2023"
+          "MECH-D34-HYPHAE-1999",
+          "MECH-AZOLE-HYPHAE-2011",
+          "MECH-KETOCONAZOLE-FILAMENTS-2008"
         ],
         "sentences": [
           {
-            "text": "A neurological case series identified possible lesions affecting sacral sensory pathways in some patients. The iPGAD study did not find one uniform peripheral neurophysiological abnormality, pointing to more than one possible explanation.",
+            "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
             "sources": [
-              "COND-C08-NEURO-2020",
-              "COND-C08-IPGAD-2023"
+              "MECH-D34-HYPHAE-1999",
+              "MECH-AZOLE-HYPHAE-2011",
+              "MECH-KETOCONAZOLE-FILAMENTS-2008"
             ]
           }
         ]
-      },
-      "questions": [
-        {
-          "id": "c08-mechanism-1",
-          "title": "What is the biological rationale for a nerve-focused assessment?",
-          "text": "Signals from genital sensory nerves travel through sacral pathways to the spinal cord and brain. Abnormal activity along these pathways can provide a model of unwanted sensation, similar to other forms of neuropathic sensory disturbance.",
-          "sourceIds": [
-            "COND-C08-NEURO-2020"
-          ],
-          "sentences": [
-            {
-              "text": "Signals from genital sensory nerves travel through sacral pathways to the spinal cord and brain. Abnormal activity along these pathways can provide a model of unwanted sensation, similar to other forms of neuropathic sensory disturbance.",
-              "sources": [
-                "COND-C08-NEURO-2020"
-              ]
-            }
-          ]
-        }
-      ]
+      }
     },
     {
-      "conditionId": "C09",
       "guideIds": [
-        "G-CONDITION-C09"
+        "term-hyphae"
       ],
       "summary": {
-        "text": "Pramipexole stimulates dopamine D2/D3 receptors. The PAX-D rationale focuses on dopamine’s role in reward processing and motivational drive, particularly anhedonia and low motivation.",
+        "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
         "sourceIds": [
-          "COND-C09-PAXD-PROTOCOL"
+          "MECH-D34-HYPHAE-1999",
+          "MECH-AZOLE-HYPHAE-2011",
+          "MECH-KETOCONAZOLE-FILAMENTS-2008"
         ],
         "sentences": [
           {
-            "text": "Pramipexole stimulates dopamine D2/D3 receptors. The PAX-D rationale focuses on dopamine’s role in reward processing and motivational drive, particularly anhedonia and low motivation.",
+            "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
             "sources": [
-              "COND-C09-PAXD-PROTOCOL"
+              "MECH-D34-HYPHAE-1999",
+              "MECH-AZOLE-HYPHAE-2011",
+              "MECH-KETOCONAZOLE-FILAMENTS-2008"
             ]
           }
         ]
-      },
-      "questions": [
-        {
-          "id": "c09-mechanism-1",
-          "title": "Does a dopamine rationale mean all depression is a dopamine deficiency?",
-          "text": "No. The trial targeted one pathway and measured a clinical response to augmentation. That design does not identify one biochemical cause for every participant’s depression.",
-          "sourceIds": [
-            "COND-C09-PAXD-PROTOCOL",
-            "P-D05-PAXD-2025"
-          ],
-          "sentences": [
-            {
-              "text": "No. The trial targeted one pathway and measured a clinical response to augmentation. That design does not identify one biochemical cause for every participant’s depression.",
-              "sources": [
-                "COND-C09-PAXD-PROTOCOL",
-                "P-D05-PAXD-2025"
-              ]
-            }
-          ]
-        }
-      ]
+      }
     },
     {
-      "conditionId": "C10",
       "guideIds": [
-        "G-CONDITION-C10"
+        "term-hyphae"
       ],
       "summary": {
-        "text": "Matrix metalloproteinases are host enzymes that can break down connective tissue. Doxycycline can inhibit these enzymes at doses used for host-response modulation, rather than relying on killing periodontal bacteria.",
+        "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
         "sourceIds": [
-          "COND-C10-MMP-2004"
+          "MECH-D34-HYPHAE-1999",
+          "MECH-AZOLE-HYPHAE-2011",
+          "MECH-KETOCONAZOLE-FILAMENTS-2008"
         ],
         "sentences": [
           {
-            "text": "Matrix metalloproteinases are host enzymes that can break down connective tissue. Doxycycline can inhibit these enzymes at doses used for host-response modulation, rather than relying on killing periodontal bacteria.",
+            "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
             "sources": [
-              "COND-C10-MMP-2004"
+              "MECH-D34-HYPHAE-1999",
+              "MECH-AZOLE-HYPHAE-2011",
+              "MECH-KETOCONAZOLE-FILAMENTS-2008"
             ]
           }
         ]
-      },
-      "questions": [
-        {
-          "id": "c10-mechanism-1",
-          "title": "Why distinguish this from an ordinary antibiotic course?",
-          "text": "The biological target and exposure differ: subantimicrobial doxycycline aims to reduce host-enzyme activity during periodontal care. Evidence for that regimen does not automatically describe a short, higher-dose infection treatment.",
-          "sourceIds": [
-            "COND-C10-MMP-2004"
-          ],
-          "sentences": [
-            {
-              "text": "The biological target and exposure differ: subantimicrobial doxycycline aims to reduce host-enzyme activity during periodontal care. Evidence for that regimen does not automatically describe a short, higher-dose infection treatment.",
-              "sources": [
-                "COND-C10-MMP-2004"
-              ]
-            }
-          ]
-        }
-      ]
+      }
     },
     {
-      "conditionId": "C11",
       "guideIds": [
-        "G-CONDITION-C11"
+        "term-hyphae"
       ],
       "summary": {
-        "text": "Vorinostat inhibits histone deacetylases, enzymes involved in regulating gene expression. The study linked this approach to a cluster enriched for inflammatory pathways, including cytokine and Toll-like-receptor signaling.",
+        "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
         "sourceIds": [
-          "CP002-R01"
+          "MECH-D34-HYPHAE-1999",
+          "MECH-AZOLE-HYPHAE-2011",
+          "MECH-KETOCONAZOLE-FILAMENTS-2008"
         ],
         "sentences": [
           {
-            "text": "Vorinostat inhibits histone deacetylases, enzymes involved in regulating gene expression. The study linked this approach to a cluster enriched for inflammatory pathways, including cytokine and Toll-like-receptor signaling.",
+            "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
             "sources": [
-              "CP002-R01"
+              "MECH-D34-HYPHAE-1999",
+              "MECH-AZOLE-HYPHAE-2011",
+              "MECH-KETOCONAZOLE-FILAMENTS-2008"
             ]
           }
         ]
-      },
-      "questions": [
-        {
-          "id": "c11-mechanism-1",
-          "title": "Why was clomipramine identified?",
-          "text": "Clomipramine appeared among compounds whose expression signatures opposed the second disease cluster in Connectivity Map analysis. This does not establish an antidepressant mechanism as a treatment for intestinal inflammation.",
-          "sourceIds": [
-            "CP002-R01"
-          ],
-          "sentences": [
-            {
-              "text": "Clomipramine appeared among compounds whose expression signatures opposed the second disease cluster in Connectivity Map analysis. This does not establish an antidepressant mechanism as a treatment for intestinal inflammation.",
-              "sources": [
-                "CP002-R01"
-              ]
-            }
-          ]
-        }
-      ]
+      }
     },
     {
-      "conditionId": "C12",
       "guideIds": [
-        "G-CONDITION-C12"
+        "term-hyphae"
       ],
       "summary": {
-        "text": "Valproic acid inhibits histone deacetylases. In head and neck cancer cell experiments, it altered tumor-cell growth and increased cisplatin-related cytotoxicity.",
+        "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
         "sourceIds": [
-          "COND-C12-VPA-CELLS-2008"
+          "MECH-D34-HYPHAE-1999",
+          "MECH-AZOLE-HYPHAE-2011",
+          "MECH-KETOCONAZOLE-FILAMENTS-2008"
         ],
         "sentences": [
           {
-            "text": "Valproic acid inhibits histone deacetylases. In head and neck cancer cell experiments, it altered tumor-cell growth and increased cisplatin-related cytotoxicity.",
+            "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
             "sources": [
-              "COND-C12-VPA-CELLS-2008"
+              "MECH-D34-HYPHAE-1999",
+              "MECH-AZOLE-HYPHAE-2011",
+              "MECH-KETOCONAZOLE-FILAMENTS-2008"
             ]
           }
         ]
-      },
-      "questions": [
-        {
-          "id": "c12-mechanism-1",
-          "title": "Why combine it with chemoradiation?",
-          "text": "The proposal was to make malignant cells more vulnerable to treatment by changing gene regulation. Clinical testing exposed a major obstacle: sensitization of cancer cells did not ensure that the full regimen would be tolerable.",
-          "sourceIds": [
-            "COND-C12-VPA-CELLS-2008",
-            "COND-C12-VPA-2021"
-          ],
-          "sentences": [
-            {
-              "text": "The proposal was to make malignant cells more vulnerable to treatment by changing gene regulation. Clinical testing exposed a major obstacle: sensitization of cancer cells did not ensure that the full regimen would be tolerable.",
-              "sources": [
-                "COND-C12-VPA-CELLS-2008",
-                "COND-C12-VPA-2021"
-              ]
-            }
-          ]
-        }
-      ]
+      }
     },
     {
-      "conditionId": "C13",
       "guideIds": [
-        "G-CONDITION-C13"
+        "term-hyphae"
       ],
       "summary": {
-        "text": "Itraconazole was investigated for inhibition of new blood-vessel formation and Hedgehog signaling, rather than for its antifungal effect.",
+        "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
         "sourceIds": [
-          "P-D07-PROSTATE-2013"
+          "MECH-D34-HYPHAE-1999",
+          "MECH-AZOLE-HYPHAE-2011",
+          "MECH-KETOCONAZOLE-FILAMENTS-2008"
         ],
         "sentences": [
           {
-            "text": "Itraconazole was investigated for inhibition of new blood-vessel formation and Hedgehog signaling, rather than for its antifungal effect.",
+            "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
             "sources": [
-              "P-D07-PROSTATE-2013"
+              "MECH-D34-HYPHAE-1999",
+              "MECH-AZOLE-HYPHAE-2011",
+              "MECH-KETOCONAZOLE-FILAMENTS-2008"
             ]
           }
         ]
-      },
-      "questions": [
-        {
-          "id": "c13-mechanism-1",
-          "title": "Did it lower testosterone?",
-          "text": "Testosterone levels were not reduced. Hedgehog signaling fell in skin biopsies, supporting biological activity outside the androgen-suppression pathway.",
-          "sourceIds": [
-            "P-D07-PROSTATE-2013"
-          ],
-          "sentences": [
-            {
-              "text": "Testosterone levels were not reduced. Hedgehog signaling fell in skin biopsies, supporting biological activity outside the androgen-suppression pathway.",
-              "sources": [
-                "P-D07-PROSTATE-2013"
-              ]
-            }
-          ]
-        }
-      ]
+      }
     },
     {
-      "conditionId": "C14",
       "guideIds": [
-        "G-CONDITION-C14"
+        "term-hyphae"
       ],
       "summary": {
-        "text": "Itraconazole was selected because preclinical experiments suggested it could inhibit angiogenesis, the development of blood vessels that help support tumor growth.",
+        "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
         "sourceIds": [
-          "COND-C14-ITRA-2013"
+          "MECH-D34-HYPHAE-1999",
+          "MECH-AZOLE-HYPHAE-2011",
+          "MECH-KETOCONAZOLE-FILAMENTS-2008"
         ],
         "sentences": [
           {
-            "text": "Itraconazole was selected because preclinical experiments suggested it could inhibit angiogenesis, the development of blood vessels that help support tumor growth.",
+            "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
             "sources": [
-              "COND-C14-ITRA-2013"
+              "MECH-D34-HYPHAE-1999",
+              "MECH-AZOLE-HYPHAE-2011",
+              "MECH-KETOCONAZOLE-FILAMENTS-2008"
             ]
           }
         ]
-      },
-      "questions": [
-        {
-          "id": "c14-mechanism-1",
-          "title": "Was itraconazole tested alone?",
-          "text": "No. The clinical comparison added itraconazole to pemetrexed, so its result concerns that combination in previously treated nonsquamous disease.",
-          "sourceIds": [
-            "COND-C14-ITRA-2013"
-          ],
-          "sentences": [
-            {
-              "text": "No. The clinical comparison added itraconazole to pemetrexed, so its result concerns that combination in previously treated nonsquamous disease.",
-              "sources": [
-                "COND-C14-ITRA-2013"
-              ]
-            }
-          ]
-        }
-      ]
+      }
     },
     {
-      "conditionId": "C15",
       "guideIds": [
-        "G-CONDITION-C15"
+        "term-hyphae"
       ],
       "summary": {
-        "text": "The rationale includes lowering circulating insulin and altering energy-sensing pathways such as AMPK and mTOR. MA.32 examined metabolic changes alongside the clinical question of cancer recurrence.",
+        "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
         "sourceIds": [
-          "COND-C15-MA32-METABOLIC"
+          "MECH-D34-HYPHAE-1999",
+          "MECH-AZOLE-HYPHAE-2011",
+          "MECH-KETOCONAZOLE-FILAMENTS-2008"
         ],
         "sentences": [
           {
-            "text": "The rationale includes lowering circulating insulin and altering energy-sensing pathways such as AMPK and mTOR. MA.32 examined metabolic changes alongside the clinical question of cancer recurrence.",
+            "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
             "sources": [
-              "COND-C15-MA32-METABOLIC"
+              "MECH-D34-HYPHAE-1999",
+              "MECH-AZOLE-HYPHAE-2011",
+              "MECH-KETOCONAZOLE-FILAMENTS-2008"
             ]
           }
         ]
-      },
-      "questions": [
-        {
-          "id": "c15-mechanism-1",
-          "title": "Why might insulin matter?",
-          "text": "Insulin-related signaling can support cell growth. Investigators tested whether reducing that metabolic stimulus could improve outcomes after treatment of early breast cancer.",
-          "sourceIds": [
-            "COND-C15-MA32-METABOLIC"
-          ],
-          "sentences": [
-            {
-              "text": "Insulin-related signaling can support cell growth. Investigators tested whether reducing that metabolic stimulus could improve outcomes after treatment of early breast cancer.",
-              "sources": [
-                "COND-C15-MA32-METABOLIC"
-              ]
-            }
-          ]
-        }
-      ]
+      }
     },
     {
-      "conditionId": "C16",
       "guideIds": [
-        "G-CONDITION-C16"
+        "term-hyphae"
       ],
       "summary": {
-        "text": "The trial’s rationale linked aspirin’s effects on inflammatory and platelet-related biology with the PI3K signaling pathway. Tumor gene testing defined eligibility.",
+        "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
         "sourceIds": [
-          "COND-C16-ALASCCA-2025"
+          "MECH-D34-HYPHAE-1999",
+          "MECH-AZOLE-HYPHAE-2011",
+          "MECH-KETOCONAZOLE-FILAMENTS-2008"
         ],
         "sentences": [
           {
-            "text": "The trial’s rationale linked aspirin’s effects on inflammatory and platelet-related biology with the PI3K signaling pathway. Tumor gene testing defined eligibility.",
+            "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
             "sources": [
-              "COND-C16-ALASCCA-2025"
+              "MECH-D34-HYPHAE-1999",
+              "MECH-AZOLE-HYPHAE-2011",
+              "MECH-KETOCONAZOLE-FILAMENTS-2008"
             ]
           }
         ]
-      },
-      "questions": [
-        {
-          "id": "c16-mechanism-1",
-          "title": "Does the trial identify one proven anticancer mechanism?",
-          "text": "No. It demonstrates a recurrence effect in selected tumors; it does not isolate the biological pathway responsible for that effect.",
-          "sourceIds": [
-            "COND-C16-ALASCCA-2025"
-          ],
-          "sentences": [
-            {
-              "text": "No. It demonstrates a recurrence effect in selected tumors; it does not isolate the biological pathway responsible for that effect.",
-              "sources": [
-                "COND-C16-ALASCCA-2025"
-              ]
-            }
-          ]
-        }
-      ]
+      }
     },
     {
-      "conditionId": "C17",
       "guideIds": [
-        "G-CONDITION-C17"
+        "term-hyphae"
       ],
       "summary": {
-        "text": "Metformin was investigated because of effects on insulin-related growth signaling and cellular energy metabolism. The trial tested whether these actions would make an effective additional cancer treatment.",
+        "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
         "sourceIds": [
-          "COND-C17-MET-2015"
+          "MECH-D34-HYPHAE-1999",
+          "MECH-AZOLE-HYPHAE-2011",
+          "MECH-KETOCONAZOLE-FILAMENTS-2008"
         ],
         "sentences": [
           {
-            "text": "Metformin was investigated because of effects on insulin-related growth signaling and cellular energy metabolism. The trial tested whether these actions would make an effective additional cancer treatment.",
+            "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
             "sources": [
-              "COND-C17-MET-2015"
+              "MECH-D34-HYPHAE-1999",
+              "MECH-AZOLE-HYPHAE-2011",
+              "MECH-KETOCONAZOLE-FILAMENTS-2008"
             ]
           }
         ]
-      },
-      "questions": [
-        {
-          "id": "c17-mechanism-1",
-          "title": "Why can metabolism be a cancer target?",
-          "text": "Tumors depend on energy and growth signals. Targeting these processes was a rationale for the trial, but the tested metformin regimen did not improve its clinical outcome.",
-          "sourceIds": [
-            "COND-C17-MET-2015"
-          ],
-          "sentences": [
-            {
-              "text": "Tumors depend on energy and growth signals. Targeting these processes was a rationale for the trial, but the tested metformin regimen did not improve its clinical outcome.",
-              "sources": [
-                "COND-C17-MET-2015"
-              ]
-            }
-          ]
-        }
-      ]
+      }
     },
     {
-      "conditionId": "C18",
       "guideIds": [
-        "G-CONDITION-C18"
+        "term-hyphae"
       ],
       "summary": {
-        "text": "Propranolol blocks beta-adrenergic receptors. The melanoma rationale is to reduce stress-hormone signaling that can influence antitumor immune responses.",
+        "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
         "sourceIds": [
-          "COND-C18-PROP-2021"
+          "MECH-D34-HYPHAE-1999",
+          "MECH-AZOLE-HYPHAE-2011",
+          "MECH-KETOCONAZOLE-FILAMENTS-2008"
         ],
         "sentences": [
           {
-            "text": "Propranolol blocks beta-adrenergic receptors. The melanoma rationale is to reduce stress-hormone signaling that can influence antitumor immune responses.",
+            "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
             "sources": [
-              "COND-C18-PROP-2021"
+              "MECH-D34-HYPHAE-1999",
+              "MECH-AZOLE-HYPHAE-2011",
+              "MECH-KETOCONAZOLE-FILAMENTS-2008"
             ]
           }
         ]
-      },
-      "questions": [
-        {
-          "id": "c18-mechanism-1",
-          "title": "How does this differ from pembrolizumab’s action?",
-          "text": "Pembrolizumab releases an immune checkpoint brake; propranolol was proposed to reduce a separate adrenergic influence on the immune environment.",
-          "sourceIds": [
-            "COND-C18-PROP-2021"
-          ],
-          "sentences": [
-            {
-              "text": "Pembrolizumab releases an immune checkpoint brake; propranolol was proposed to reduce a separate adrenergic influence on the immune environment.",
-              "sources": [
-                "COND-C18-PROP-2021"
-              ]
-            }
-          ]
-        }
-      ]
+      }
     },
     {
-      "conditionId": "C19",
       "guideIds": [
-        "G-CONDITION-C19"
+        "term-hyphae"
       ],
       "summary": {
-        "text": "Clinical translation: Low confidence. The primary assessments examined Ki67 proliferation and GLI1-related Hedgehog signaling in tumor tissue. Target and proliferation changes help test the rationale, but do not independently establish lasting cancer control.",
+        "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
         "sourceIds": [
-          "P-D07-BCC-2014"
+          "MECH-D34-HYPHAE-1999",
+          "MECH-AZOLE-HYPHAE-2011",
+          "MECH-KETOCONAZOLE-FILAMENTS-2008"
         ],
         "sentences": [
           {
-            "text": "Clinical translation: Low confidence. The primary assessments examined Ki67 proliferation and GLI1-related Hedgehog signaling in tumor tissue. Target and proliferation changes help test the rationale, but do not independently establish lasting cancer control.",
+            "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
             "sources": [
-              "P-D07-BCC-2014"
+              "MECH-D34-HYPHAE-1999",
+              "MECH-AZOLE-HYPHAE-2011",
+              "MECH-KETOCONAZOLE-FILAMENTS-2008"
             ]
           }
         ]
-      },
-      "questions": [
-        {
-          "id": "c19-mechanism-1",
-          "title": "Why measure both signaling and tumor size?",
-          "text": "The signaling measure tests whether the proposed target is affected; tumor area measures a visible cancer response. Neither measurement alone reports long-term recurrence.",
-          "sourceIds": [
-            "P-D07-BCC-2014"
-          ],
-          "sentences": [
-            {
-              "text": "The signaling measure tests whether the proposed target is affected; tumor area measures a visible cancer response. Neither measurement alone reports long-term recurrence.",
-              "sources": [
-                "P-D07-BCC-2014"
-              ]
-            }
-          ]
-        }
-      ]
+      }
     },
     {
-      "conditionId": "C20",
       "guideIds": [
-        "G-CONDITION-C20"
+        "term-hyphae"
       ],
       "summary": {
-        "text": "Aspirin was investigated in relation to inflammation and platelet-mediated processes that may contribute to liver-cancer development.",
+        "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
         "sourceIds": [
-          "COND-C20-ASP-2020"
+          "MECH-D34-HYPHAE-1999",
+          "MECH-AZOLE-HYPHAE-2011",
+          "MECH-KETOCONAZOLE-FILAMENTS-2008"
         ],
         "sentences": [
           {
-            "text": "Aspirin was investigated in relation to inflammation and platelet-mediated processes that may contribute to liver-cancer development.",
+            "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
             "sources": [
-              "COND-C20-ASP-2020"
+              "MECH-D34-HYPHAE-1999",
+              "MECH-AZOLE-HYPHAE-2011",
+              "MECH-KETOCONAZOLE-FILAMENTS-2008"
             ]
           }
         ]
-      },
-      "questions": [
-        {
-          "id": "c20-mechanism-1",
-          "title": "Did the study prove that aspirin prevented cancer?",
-          "text": "No. It followed prescribing and outcomes without random assignment, so differences between aspirin users and nonusers may partly explain the association.",
-          "sourceIds": [
-            "COND-C20-ASP-2020"
-          ],
-          "sentences": [
-            {
-              "text": "No. It followed prescribing and outcomes without random assignment, so differences between aspirin users and nonusers may partly explain the association.",
-              "sources": [
-                "COND-C20-ASP-2020"
-              ]
-            }
-          ]
-        }
-      ]
+      }
     },
     {
-      "conditionId": "C21",
       "guideIds": [
-        "G-CONDITION-C21"
+        "term-hyphae"
       ],
       "summary": {
-        "text": "Models only. Confidence in clinical translation: Low. Metformin inhibited myeloma-cell growth and mouse xenograft growth, with AMPK activation, mTOR-pathway changes, autophagy and cell-cycle arrest. The cell experiments did not show apoptosis. These model findings do not establish tumor control or survival benefit in patients.",
+        "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
         "sourceIds": [
-          "MF-MYELOMA-MODELS-2018"
+          "MECH-D34-HYPHAE-1999",
+          "MECH-AZOLE-HYPHAE-2011",
+          "MECH-KETOCONAZOLE-FILAMENTS-2008"
         ],
         "sentences": [
           {
-            "text": "Models only. Confidence in clinical translation: Low. Metformin inhibited myeloma-cell growth and mouse xenograft growth, with AMPK activation, mTOR-pathway changes, autophagy and cell-cycle arrest. The cell experiments did not show apoptosis. These model findings do not establish tumor control or survival benefit in patients.",
+            "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
             "sources": [
-              "MF-MYELOMA-MODELS-2018"
+              "MECH-D34-HYPHAE-1999",
+              "MECH-AZOLE-HYPHAE-2011",
+              "MECH-KETOCONAZOLE-FILAMENTS-2008"
             ]
           }
         ]
-      },
-      "questions": [
-        {
-          "id": "c21-mechanism-1",
-          "title": "Why is immune modulation relevant to myeloma?",
-          "text": "Myeloma involves malignant plasma cells within a marrow environment that supports their survival. Immunomodulatory treatment acts on cancer-related immune and cellular processes.",
-          "sourceIds": [
-            "COND-C21-NCI",
-            "COND-C21-IMMUNE"
-          ],
-          "sentences": [
-            {
-              "text": "Myeloma involves malignant plasma cells within a marrow environment that supports their survival. Immunomodulatory treatment acts on cancer-related immune and cellular processes.",
-              "sources": [
-                "COND-C21-NCI",
-                "COND-C21-IMMUNE"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "c21-hh-combination",
-          "title": "Does Hedgehog evidence establish a single-drug treatment?",
-          "text": "Models only. Confidence in clinical translation: Low. Itraconazole with arsenic trioxide reduced myeloma-cell growth and tumor burden in mouse experiments, with lower GLI1-related Hedgehog signaling. This combination evidence cannot establish itraconazole-alone benefit or a human myeloma regimen.",
-          "sourceIds": [
-            "P-D07-MYELOMA-2016"
-          ],
-          "sentences": [
-            {
-              "text": "Models only. Confidence in clinical translation: Low. Itraconazole with arsenic trioxide reduced myeloma-cell growth and tumor burden in mouse experiments, with lower GLI1-related Hedgehog signaling. This combination evidence cannot establish itraconazole-alone benefit or a human myeloma regimen.",
-              "sources": [
-                "P-D07-MYELOMA-2016"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "c21-cell-death",
-          "title": "Are all cell-death findings the same?",
-          "text": "Models only. Confidence in clinical translation: Low. Simvastatin reduced viability in myeloma cell lines. Cell-cycle effects and the type of cell death differed between lines. An in vitro effect does not establish an effective anticancer dose or benefit in people.",
-          "sourceIds": [
-            "P-D20-MYELOMA"
-          ],
-          "sentences": [
-            {
-              "text": "Models only. Confidence in clinical translation: Low. Simvastatin reduced viability in myeloma cell lines. Cell-cycle effects and the type of cell death differed between lines. An in vitro effect does not establish an effective anticancer dose or benefit in people.",
-              "sources": [
-                "P-D20-MYELOMA"
-              ]
-            }
-          ]
-        }
-      ]
+      }
     },
     {
-      "conditionId": "C22",
       "guideIds": [
-        "G-CONDITION-C22"
+        "term-hyphae"
       ],
       "summary": {
-        "text": "Valproate inhibits histone deacetylases, while decitabine affects DNA methylation. Combining them was intended to modify complementary parts of gene regulation in leukemia cells.",
+        "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
         "sourceIds": [
-          "COND-C22-VPA-2019"
+          "MECH-D34-HYPHAE-1999",
+          "MECH-AZOLE-HYPHAE-2011",
+          "MECH-KETOCONAZOLE-FILAMENTS-2008"
         ],
         "sentences": [
           {
-            "text": "Valproate inhibits histone deacetylases, while decitabine affects DNA methylation. Combining them was intended to modify complementary parts of gene regulation in leukemia cells.",
+            "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
             "sources": [
-              "COND-C22-VPA-2019"
+              "MECH-D34-HYPHAE-1999",
+              "MECH-AZOLE-HYPHAE-2011",
+              "MECH-KETOCONAZOLE-FILAMENTS-2008"
             ]
           }
         ]
-      },
-      "questions": [
-        {
-          "id": "c22-mechanism-1",
-          "title": "What did the trial test about that rationale?",
-          "text": "It tested whether adding valproate improved clinical outcomes, rather than assuming that stronger epigenetic effects would translate into longer survival.",
-          "sourceIds": [
-            "COND-C22-VPA-2019"
-          ],
-          "sentences": [
-            {
-              "text": "It tested whether adding valproate improved clinical outcomes, rather than assuming that stronger epigenetic effects would translate into longer survival.",
-              "sources": [
-                "COND-C22-VPA-2019"
-              ]
-            }
-          ]
-        }
-      ]
+      }
     },
     {
-      "conditionId": "C23",
       "guideIds": [
-        "G-CONDITION-C23"
+        "term-hyphae"
       ],
       "summary": {
-        "text": "Pioglitazone activates PPARγ. Laboratory work linked this to reduced STAT5 signaling and disruption of the quiescent state that helps some leukemia stem cells persist during imatinib treatment.",
+        "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
         "sourceIds": [
-          "COND-C23-PPARG-2015"
+          "MECH-D34-HYPHAE-1999",
+          "MECH-AZOLE-HYPHAE-2011",
+          "MECH-KETOCONAZOLE-FILAMENTS-2008"
         ],
         "sentences": [
           {
-            "text": "Pioglitazone activates PPARγ. Laboratory work linked this to reduced STAT5 signaling and disruption of the quiescent state that helps some leukemia stem cells persist during imatinib treatment.",
+            "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
             "sources": [
-              "COND-C23-PPARG-2015"
+              "MECH-D34-HYPHAE-1999",
+              "MECH-AZOLE-HYPHAE-2011",
+              "MECH-KETOCONAZOLE-FILAMENTS-2008"
             ]
           }
         ]
-      },
-      "questions": [
-        {
-          "id": "c23-mechanism-1",
-          "title": "Does a deeper molecular response mean the stem cells are eradicated?",
-          "text": "A very low leukemia-transcript result is a useful clinical measure, but it does not directly prove complete removal of every leukemia stem cell.",
-          "sourceIds": [
-            "COND-C23-ACTIM-2017",
-            "COND-C23-PPARG-2015"
-          ],
-          "sentences": [
-            {
-              "text": "A very low leukemia-transcript result is a useful clinical measure, but it does not directly prove complete removal of every leukemia stem cell.",
-              "sources": [
-                "COND-C23-ACTIM-2017",
-                "COND-C23-PPARG-2015"
-              ]
-            }
-          ]
-        }
-      ]
+      }
     },
     {
-      "conditionId": "C24",
       "guideIds": [
-        "G-CONDITION-C24"
+        "term-hyphae"
       ],
       "summary": {
-        "text": "In cell and mouse models, metformin has been investigated for effects on autophagy, mitochondrial oxidative stress and survival of dopamine-producing neurons.",
+        "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
         "sourceIds": [
-          "MF-PD-MECHANISM-2016"
+          "MECH-D34-HYPHAE-1999",
+          "MECH-AZOLE-HYPHAE-2011",
+          "MECH-KETOCONAZOLE-FILAMENTS-2008"
         ],
         "sentences": [
           {
-            "text": "In cell and mouse models, metformin has been investigated for effects on autophagy, mitochondrial oxidative stress and survival of dopamine-producing neurons.",
+            "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
             "sources": [
-              "MF-PD-MECHANISM-2016"
+              "MECH-D34-HYPHAE-1999",
+              "MECH-AZOLE-HYPHAE-2011",
+              "MECH-KETOCONAZOLE-FILAMENTS-2008"
             ]
           }
         ]
-      },
-      "questions": [
-        {
-          "id": "c24-mechanism-1",
-          "title": "Were these mechanisms confirmed as a clinical benefit?",
-          "text": "The pilot reported differences in several biomarkers, including alpha-synuclein and inflammatory signaling measures, but did not establish superior clinical function.",
-          "sourceIds": [
-            "CP016"
-          ],
-          "sentences": [
-            {
-              "text": "The pilot reported differences in several biomarkers, including alpha-synuclein and inflammatory signaling measures, but did not establish superior clinical function.",
-              "sources": [
-                "CP016"
-              ]
-            }
-          ]
-        }
-      ]
+      }
     },
     {
-      "conditionId": "C25",
       "guideIds": [
-        "G-CONDITION-C25"
+        "term-hyphae"
       ],
       "summary": {
-        "text": "Metformin studies explored energy metabolism and hippocampal connectivity. Minocycline was tested for proposed anti-inflammatory and neuroprotective effects.",
+        "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
         "sourceIds": [
-          "CP017",
-          "COND-C25-BENEMIN-2018"
+          "MECH-D34-HYPHAE-1999",
+          "MECH-AZOLE-HYPHAE-2011",
+          "MECH-KETOCONAZOLE-FILAMENTS-2008"
         ],
         "sentences": [
           {
-            "text": "Metformin studies explored energy metabolism and hippocampal connectivity. Minocycline was tested for proposed anti-inflammatory and neuroprotective effects.",
+            "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
             "sources": [
-              "CP017",
-              "COND-C25-BENEMIN-2018"
+              "MECH-D34-HYPHAE-1999",
+              "MECH-AZOLE-HYPHAE-2011",
+              "MECH-KETOCONAZOLE-FILAMENTS-2008"
             ]
           }
         ]
-      },
-      "questions": [
-        {
-          "id": "c25-mechanism-1",
-          "title": "Did the metabolic study prove how cognition changed?",
-          "text": "Changes in metabolites and brain connectivity were correlated with some cognitive measures in an exploratory companion analysis. Such associations did not demonstrate that those changes caused the cognitive improvement.",
-          "sourceIds": [
-            "CP017"
-          ],
-          "sentences": [
-            {
-              "text": "Changes in metabolites and brain connectivity were correlated with some cognitive measures in an exploratory companion analysis. Such associations did not demonstrate that those changes caused the cognitive improvement.",
-              "sources": [
-                "CP017"
-              ]
-            }
-          ]
-        }
-      ]
+      }
     },
     {
-      "conditionId": "C26",
       "guideIds": [
-        "G-CONDITION-C26"
+        "term-hyphae"
       ],
       "summary": {
-        "text": "Minocycline can enter the brain and inhibit proinflammatory microglial activity. Protective effects in amyloid-related laboratory models motivated the clinical trial.",
+        "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
         "sourceIds": [
-          "P-D16-AD-2020"
+          "MECH-D34-HYPHAE-1999",
+          "MECH-AZOLE-HYPHAE-2011",
+          "MECH-KETOCONAZOLE-FILAMENTS-2008"
         ],
         "sentences": [
           {
-            "text": "Minocycline can enter the brain and inhibit proinflammatory microglial activity. Protective effects in amyloid-related laboratory models motivated the clinical trial.",
+            "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
             "sources": [
-              "P-D16-AD-2020"
+              "MECH-D34-HYPHAE-1999",
+              "MECH-AZOLE-HYPHAE-2011",
+              "MECH-KETOCONAZOLE-FILAMENTS-2008"
             ]
           }
         ]
-      },
-      "questions": [
-        {
-          "id": "c26-mechanism-1",
-          "title": "Why target microglia?",
-          "text": "Microglia help clear debris and protect neurons, but altered inflammatory activity can also contribute to brain injury. The effects depend on disease stage and cellular context.",
-          "sourceIds": [
-            "COND-C26-NIA"
-          ],
-          "sentences": [
-            {
-              "text": "Microglia help clear debris and protect neurons, but altered inflammatory activity can also contribute to brain injury. The effects depend on disease stage and cellular context.",
-              "sources": [
-                "COND-C26-NIA"
-              ]
-            }
-          ]
-        }
-      ]
+      }
     },
     {
-      "conditionId": "C27",
       "guideIds": [
-        "G-CONDITION-C27"
+        "term-hyphae"
       ],
       "summary": {
-        "text": "Minocycline was investigated for anti-inflammatory and neuroprotective actions beyond its antibiotic use, aiming to limit the early inflammatory injury associated with demyelination.",
+        "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
         "sourceIds": [
-          "COND-C27-MINOCIS-2017"
+          "MECH-D34-HYPHAE-1999",
+          "MECH-AZOLE-HYPHAE-2011",
+          "MECH-KETOCONAZOLE-FILAMENTS-2008"
         ],
         "sentences": [
           {
-            "text": "Minocycline was investigated for anti-inflammatory and neuroprotective actions beyond its antibiotic use, aiming to limit the early inflammatory injury associated with demyelination.",
+            "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
             "sources": [
-              "COND-C27-MINOCIS-2017"
+              "MECH-D34-HYPHAE-1999",
+              "MECH-AZOLE-HYPHAE-2011",
+              "MECH-KETOCONAZOLE-FILAMENTS-2008"
             ]
           }
         ]
-      },
-      "questions": [
-        {
-          "id": "c27-mechanism-1",
-          "title": "Is computational drug matching the same evidence?",
-          "text": "No. A separate immune-cell transcriptome analysis nominated drugs by matching gene-expression patterns. It did not administer those candidates to patients or measure their clinical effects.",
-          "sourceIds": [
-            "CP015-ARTICLE"
-          ],
-          "sentences": [
-            {
-              "text": "No. A separate immune-cell transcriptome analysis nominated drugs by matching gene-expression patterns. It did not administer those candidates to patients or measure their clinical effects.",
-              "sources": [
-                "CP015-ARTICLE"
-              ]
-            }
-          ]
-        }
-      ]
+      }
     },
     {
-      "conditionId": "C28",
       "guideIds": [
-        "G-CONDITION-C28"
+        "term-hyphae"
       ],
       "summary": {
-        "text": "Mechanistic clinical inference: Low confidence. Laboratory anti-inflammatory and anti-apoptotic findings supplied the rationale for minocycline. They did not predict the harmful functional result in the ALS trial.",
+        "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
         "sourceIds": [
-          "COND-C28-MINO-2007"
+          "MECH-D34-HYPHAE-1999",
+          "MECH-AZOLE-HYPHAE-2011",
+          "MECH-KETOCONAZOLE-FILAMENTS-2008"
         ],
         "sentences": [
           {
-            "text": "Mechanistic clinical inference: Low confidence. Laboratory anti-inflammatory and anti-apoptotic findings supplied the rationale for minocycline. They did not predict the harmful functional result in the ALS trial.",
+            "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
             "sources": [
-              "COND-C28-MINO-2007"
+              "MECH-D34-HYPHAE-1999",
+              "MECH-AZOLE-HYPHAE-2011",
+              "MECH-KETOCONAZOLE-FILAMENTS-2008"
             ]
           }
         ]
-      },
-      "questions": [
-        {
-          "id": "c28-mechanism-1",
-          "title": "Did the human trial support that rationale?",
-          "text": "No. The primary functional endpoint worsened. The trial did not identify a mechanism that could reverse the clinical harm signal.",
-          "sourceIds": [
-            "COND-C28-MINO-2007"
-          ],
-          "sentences": [
-            {
-              "text": "No. The primary functional endpoint worsened. The trial did not identify a mechanism that could reverse the clinical harm signal.",
-              "sources": [
-                "COND-C28-MINO-2007"
-              ]
-            }
-          ]
-        }
-      ]
+      }
     },
     {
-      "conditionId": "C29",
       "guideIds": [
-        "G-CONDITION-C29"
+        "term-hyphae"
       ],
       "summary": {
-        "text": "The statin rationale involved immune signaling through CXCL10 and protection of pigment cells against oxidative stress. Much of this rationale came from preclinical work.",
+        "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
         "sourceIds": [
-          "COND-C29-ATOR-2018"
+          "MECH-D34-HYPHAE-1999",
+          "MECH-AZOLE-HYPHAE-2011",
+          "MECH-KETOCONAZOLE-FILAMENTS-2008"
         ],
         "sentences": [
           {
-            "text": "The statin rationale involved immune signaling through CXCL10 and protection of pigment cells against oxidative stress. Much of this rationale came from preclinical work.",
+            "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
             "sources": [
-              "COND-C29-ATOR-2018"
+              "MECH-D34-HYPHAE-1999",
+              "MECH-AZOLE-HYPHAE-2011",
+              "MECH-KETOCONAZOLE-FILAMENTS-2008"
             ]
           }
         ]
-      },
-      "questions": [
-        {
-          "id": "c29-mechanism-1",
-          "title": "Why test a cholesterol drug for skin disease?",
-          "text": "Statins affect inflammatory and immune pathways in addition to lowering cholesterol. The vitiligo study tested whether these actions added useful skin repigmentation or disease control.",
-          "sourceIds": [
-            "COND-C29-ATOR-2018"
-          ],
-          "sentences": [
-            {
-              "text": "Statins affect inflammatory and immune pathways in addition to lowering cholesterol. The vitiligo study tested whether these actions added useful skin repigmentation or disease control.",
-              "sources": [
-                "COND-C29-ATOR-2018"
-              ]
-            }
-          ]
-        }
-      ]
+      }
     },
     {
-      "conditionId": "C30",
       "guideIds": [
-        "G-CONDITION-C30"
+        "term-hyphae"
       ],
       "summary": {
-        "text": "Metformin affects cellular energy sensing, including AMPK and downstream anabolic signaling. These actions may influence both age-related metabolism and the muscle-building response to training.",
+        "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
         "sourceIds": [
-          "MF-MASTERS-2019"
+          "MECH-D34-HYPHAE-1999",
+          "MECH-AZOLE-HYPHAE-2011",
+          "MECH-KETOCONAZOLE-FILAMENTS-2008"
         ],
         "sentences": [
           {
-            "text": "Metformin affects cellular energy sensing, including AMPK and downstream anabolic signaling. These actions may influence both age-related metabolism and the muscle-building response to training.",
+            "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
             "sources": [
-              "MF-MASTERS-2019"
+              "MECH-D34-HYPHAE-1999",
+              "MECH-AZOLE-HYPHAE-2011",
+              "MECH-KETOCONAZOLE-FILAMENTS-2008"
             ]
           }
         ]
-      },
-      "questions": [
-        {
-          "id": "c30-mechanism-1",
-          "title": "Why can a metabolic effect reduce muscle growth?",
-          "text": "Muscle growth requires anabolic signaling and adaptation to exercise. MASTERS examined whether metformin altered that response, rather than treating metabolic changes as automatically beneficial.",
-          "sourceIds": [
-            "MF-MASTERS-2019"
-          ],
-          "sentences": [
-            {
-              "text": "Muscle growth requires anabolic signaling and adaptation to exercise. MASTERS examined whether metformin altered that response, rather than treating metabolic changes as automatically beneficial.",
-              "sources": [
-                "MF-MASTERS-2019"
-              ]
-            }
-          ]
-        }
-      ]
+      }
     },
     {
-      "conditionId": "C31",
       "guideIds": [
-        "G-CONDITION-C31"
+        "term-hyphae"
       ],
       "summary": {
-        "text": "Insulin normally helps glucose enter cells. In type 2 diabetes, reduced responsiveness and insufficient compensation leave more glucose in the blood.",
+        "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
         "sourceIds": [
-          "COND-C31-NIDDK"
+          "MECH-D34-HYPHAE-1999",
+          "MECH-AZOLE-HYPHAE-2011",
+          "MECH-KETOCONAZOLE-FILAMENTS-2008"
         ],
         "sentences": [
           {
-            "text": "Insulin normally helps glucose enter cells. In type 2 diabetes, reduced responsiveness and insufficient compensation leave more glucose in the blood.",
+            "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
             "sources": [
-              "COND-C31-NIDDK"
+              "MECH-D34-HYPHAE-1999",
+              "MECH-AZOLE-HYPHAE-2011",
+              "MECH-KETOCONAZOLE-FILAMENTS-2008"
             ]
           }
         ]
-      },
-      "questions": [
-        {
-          "id": "c31-mechanism-metformin",
-          "title": "How does metformin address glucose handling?",
-          "text": "Metformin reduces liver glucose output and intestinal glucose absorption while increasing glucose uptake and use in tissues.",
-          "sourceIds": [
-            "MF-LABEL-2025"
-          ],
-          "sentences": [
-            {
-              "text": "Metformin reduces liver glucose output and intestinal glucose absorption while increasing glucose uptake and use in tissues.",
-              "sources": [
-                "MF-LABEL-2025"
-              ]
-            }
-          ]
-        }
-      ]
+      }
     },
     {
       "drugId": "D34",
@@ -4814,50 +4301,26 @@
     },
     {
       "guideIds": [
-        "term-hedgehog-pathway"
+        "term-hyphae"
       ],
       "summary": {
-        "text": "An antifungal action and a Hedgehog pathway effect are separate observations. Itraconazole has cell and mouse evidence plus mixed human biomarker findings. Posaconazole treatment-response evidence in these reports is preclinical; baseline human surgical-tissue measurements are not a response to drug treatment. Fluconazole and voriconazole had negative reporter findings in the cited experiments.",
+        "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
         "sourceIds": [
-          "MECH-D07-HEDGEHOG-2010",
-          "MECH-D07-GLI1-LUNG-2020",
-          "P-D07-PROSTATE-2013",
-          "MECH-D07-GLI1-COMBINATION-2016",
-          "MECH-POSACONAZOLE-HEDGEHOG-2016",
-          "MECH-POSACONAZOLE-RMS-2021"
+          "MECH-D34-HYPHAE-1999",
+          "MECH-AZOLE-HYPHAE-2011",
+          "MECH-KETOCONAZOLE-FILAMENTS-2008"
         ],
         "sentences": [
           {
-            "text": "An antifungal action and a Hedgehog pathway effect are separate observations. Itraconazole has cell and mouse evidence plus mixed human biomarker findings. Posaconazole treatment-response evidence in these reports is preclinical; baseline human surgical-tissue measurements are not a response to drug treatment. Fluconazole and voriconazole had negative reporter findings in the cited experiments.",
+            "text": "Yeast-to-hypha morphogenesis describes a change in fungal form. Experiments on clinical isolates occur outside the patient and do not establish treatment benefit. Strain susceptibility, drug concentration and exposure timing changed the response in these studies. None of these observations is an animal dosing readout or a clinical treatment schedule.",
             "sources": [
-              "MECH-D07-HEDGEHOG-2010",
-              "MECH-D07-GLI1-LUNG-2020",
-              "P-D07-PROSTATE-2013",
-              "MECH-D07-GLI1-COMBINATION-2016",
-              "MECH-POSACONAZOLE-HEDGEHOG-2016",
-              "MECH-POSACONAZOLE-RMS-2021"
+              "MECH-D34-HYPHAE-1999",
+              "MECH-AZOLE-HYPHAE-2011",
+              "MECH-KETOCONAZOLE-FILAMENTS-2008"
             ]
           }
         ]
-      },
-      "pathways": [
-        {
-          "id": "glossary-bcc-unresolved",
-          "title": "Basal-cell carcinoma biomarker estimates remain unresolved",
-          "text": "The exploratory Kim 2014 basal-cell-carcinoma biomarker estimate remains unreconciled with its registry summaries. It should not be used as a settled numerical estimate of Hedgehog inhibition.",
-          "sourceIds": [
-            "P-D07-BCC-2014"
-          ],
-          "sentences": [
-            {
-              "text": "The exploratory Kim 2014 basal-cell-carcinoma biomarker estimate remains unreconciled with its registry summaries. It should not be used as a settled numerical estimate of Hedgehog inhibition.",
-              "sources": [
-                "P-D07-BCC-2014"
-              ]
-            }
-          ]
-        }
-      ]
+      }
     },
     {
       "guideIds": [
