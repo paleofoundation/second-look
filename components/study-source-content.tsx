@@ -1,3 +1,4 @@
+import drugStudySummaries from '@/data/drug-study-summaries.json';
 import {Fragment, type ReactNode} from 'react';
 import type {Source} from '@/lib/content';
 import {sourceIntegrity, studyFacts, STUDY_QUESTIONS} from '@/lib/study-presentation';
@@ -15,12 +16,13 @@ export function StudyIntegrity({source, renderProse}: {source: Source; renderPro
 }
 
 /** The public version uses public facts and the existing authored preview only. */
-export function StudyPublicSummary({source, renderProse, headingLevel = 4, idPrefix = ''}: {source: Source; renderProse: StudyProseRenderer; headingLevel?: 3 | 4; idPrefix?: string}) {
+export function StudyPublicSummary({source, renderProse, headingLevel = 4, idPrefix = '', canonicalDrug = false}: {source: Source; renderProse: StudyProseRenderer; headingLevel?: 3 | 4; idPrefix?: string; canonicalDrug?: boolean}) {
   const Heading = headingLevel === 3 ? 'h3' : 'h4';
   const sentence=(value:string)=>/[.!?]$/.test(value.trim())?value.trim():value.trim()+'.';
   const question = [source.design, source.intervention ? `Intervention: ${source.intervention}` : '', source.comparator ? `Comparator: ${source.comparator}` : ''].filter((value):value is string=>!!value).map(sentence).join(' ');
   const population = [source.population, source.randomizedN != null ? `Randomized participants: ${source.randomizedN}` : '', source.n != null && source.n !== source.randomizedN ? `Reported sample: ${source.n}` : ''].filter((value):value is string=>!!value).map(sentence).join(' ');
-  const answers = [question, population, source.preview, source.decisiveLimit];
+  const authored=canonicalDrug?(drugStudySummaries as Record<string,string[]>)[source.id]:undefined;
+  const answers = authored || [question, population, source.preview, source.decisiveLimit];
   const missing = [
     'The detailed study design and treatment comparison have not yet been summarized.',
     'The study population or experimental model has not yet been summarized.',

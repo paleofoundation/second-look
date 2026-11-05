@@ -37,7 +37,7 @@ function ContextProse({context, content, renderText}: {context: MechanismContext
 }
 
 /** One visible explanation; multiple bounded contexts reuse the canonical disclosure. */
-export function MechanismSection({content, originalAction, summary, pathways = [], collapsiblePathways = false, rationales = [], rationalePlacement = 'article', showRationales = true, questions = [], contexts = [], renderText = plainText}: {
+export function MechanismSection({content, originalAction, summary, pathways = [], collapsiblePathways = false, rationales = [], rationalePlacement = 'article', showRationales = true, visibleQuestions = false, questions = [], contexts = [], renderText = plainText}: {
   content: MechanismPresentation;
   renderText?: MechanismTextRenderer;
   originalAction?: ReactNode;
@@ -47,6 +47,7 @@ export function MechanismSection({content, originalAction, summary, pathways = [
   rationales?: {id: string; condition: string; conditionHref: string; evidenceHref?: string; rationale: ReactNode; tested: ReactNode; limits: ReactNode}[];
   rationalePlacement?: 'article' | 'evidence';
   showRationales?: boolean;
+  visibleQuestions?: boolean;
   questions?: {id: string; title: string; answer: ReactNode}[];
   contexts?: MechanismContext[];
 }) {
@@ -91,7 +92,8 @@ export function MechanismSection({content, originalAction, summary, pathways = [
       <p className="small mechanism-evidence-link">For treatment outcomes, see <a href="#section-evidence">Evidence</a>.</p>
       </>}
     </>}
-    {questions.length > 0 && <div className="rgbc-faq-block">
+    {visibleQuestions && questions.map(question => <div className="mechanism-pathway" id={question.id} key={question.id}><h3>{question.title}</h3>{question.answer}</div>)}
+    {!visibleQuestions && questions.length > 0 && <div className="rgbc-faq-block">
       {questions.map(question => <details className="rgbc-faq-item" id={question.id} key={question.id}>
         <summary><span className="rgbc-faq-icon" aria-hidden="true"/><span className="rgbc-faq-q">{question.title}</span></summary>
         <div className="rgbc-faq-a"><strong>Quick answer</strong>{question.answer}</div>
