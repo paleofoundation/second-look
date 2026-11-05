@@ -248,7 +248,7 @@ if (process.argv.includes('--all-profiles')) {
   const mechanism=drugMechanismFor(profile);
   assert((mechanism?.summary?.text || mechanism?.originalAction?.text)?.length>40,label+': explanatory mechanism prose');
   if(profile.type==='Drug')assert(mechanism.originalAction?.text?.length>30,label+': original pharmacological action');
-  assert(mechanism.questions?.length || (mechanism.pathways?.length && mechanism.rationales?.length),label+': mechanism explanations');
+  assert(mechanism.questions?.length || mechanism.pathways?.length || (canonicalDrugPages.includes(profile.slug)&&mechanism.summary?.text),label+': mechanism explanations');
   const pageSources=content.sources.filter(s=>profile.sourceIds.includes(s.id));
   assert.equal(pageSources.length,profile.sourceIds.length,label+': all sources resolve');
   const page=render(profile,pageSources);

@@ -8331,6 +8331,21 @@
       ],
       "nonDoiSourceType": "regulatory-label",
       "sourceTier": "official_label"
+    },
+    {
+      "id": "CTX-MB-PROVAYBLUE-US-LABEL",
+      "title": "PROVAYBLUE (methylene blue injection): U.S. prescribing information",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4f6848e5-35ed-4046-b13c-3032b5ba3232",
+      "sourceType": "context",
+      "design": "Official U.S. product label",
+      "preview": "Acquired-methemoglobinemia indication, intravenous dosing, contraindications and serotonergic interaction warnings.",
+      "locators": [
+        {
+          "section": "1 Indications and Usage; 2 Dosage and Administration; 3 Dosage Forms and Strengths; 4 Contraindications; 7 Drug Interactions; 12.1 Mechanism of Action",
+          "source_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4f6848e5-35ed-4046-b13c-3032b5ba3232",
+          "basis": "full_text"
+        }
+      ]
     }
   ],
   "guides": [
@@ -10382,7 +10397,7 @@
           "id": "overview",
           "label": "Overview",
           "title": "",
-          "paragraph": "Paxlovid is indicated for mild to moderate COVID-19 in adults at high risk of severe disease. Trials of longer courses for established Long COVID have not demonstrated the expected symptom advantage.",
+          "paragraph": "Paxlovid is indicated for mild to moderate COVID-19 in adults at high risk of severe disease. Trials of longer courses for established Long COVID have not demonstrated the expected symptom advantage. Early treatment of high-risk acute COVID-19 and treatment of established Long COVID are different uses. STOP-PASC and RECOVER-VITAL did not find significant primary symptom benefit from their longer courses.",
           "sources": [
             "CTX-D03-LABEL",
             "P-STOPPASC-2024",
@@ -10401,21 +10416,7 @@
                 "P-STOPPASC-2024",
                 "P-RECOVER-2026"
               ]
-            }
-          ],
-          "questions": []
-        },
-        {
-          "id": "benefits",
-          "label": "Benefits",
-          "title": "",
-          "paragraph": "Early treatment of high-risk acute COVID-19 and treatment of established Long COVID are different uses. STOP-PASC and RECOVER-VITAL did not find significant primary symptom benefit from their longer courses.",
-          "sources": [
-            "CTX-D03-LABEL",
-            "P-STOPPASC-2024",
-            "P-RECOVER-2026"
-          ],
-          "sentences": [
+            },
             {
               "text": "Early treatment of high-risk acute COVID-19 and treatment of established Long COVID are different uses.",
               "sources": [
@@ -10431,6 +10432,15 @@
               ]
             }
           ],
+          "questions": []
+        },
+        {
+          "id": "benefits",
+          "label": "Benefits",
+          "title": "",
+          "paragraph": "",
+          "sources": [],
+          "sentences": [],
           "questions": [
             {
               "id": "acute-benefit",
@@ -10545,7 +10555,35 @@
               ]
             }
           ],
-          "questions": []
+          "questions": [
+            {
+              "id": "nirmatrelvir-dosing-scope",
+              "question": "Does this schedule establish a dose for every investigated use?",
+              "answer": "No single dosing schedule can be inferred across these uses. The labeled acute-COVID course lasts five days and begins within five days of symptom onset; kidney function determines the regimen. STOP-PASC instead studied 15 days for established Long COVID.",
+              "sentences": [
+                {
+                  "text": "No single dosing schedule can be inferred across these uses.",
+                  "sources": []
+                },
+                {
+                  "text": "The labeled acute-COVID course lasts five days and begins within five days of symptom onset; kidney function determines the regimen.",
+                  "sources": [
+                    "CTX-D03-LABEL"
+                  ]
+                },
+                {
+                  "text": "STOP-PASC instead studied 15 days for established Long COVID.",
+                  "sources": [
+                    "P-STOPPASC-2024"
+                  ]
+                }
+              ],
+              "sources": [
+                "CTX-D03-LABEL",
+                "P-STOPPASC-2024"
+              ]
+            }
+          ]
         },
         {
           "id": "results",
@@ -11630,11 +11668,12 @@
           "id": "overview",
           "label": "Overview",
           "title": "",
-          "paragraph": "Naltrexone has established addiction-treatment uses. Repurposing evidence differs by condition: an uncontrolled Long COVID cohort reported improvements, while a larger fibromyalgia trial did not show a significant pain benefit.",
+          "paragraph": "Naltrexone has established addiction-treatment uses. Repurposing evidence differs by condition: an uncontrolled Long COVID cohort reported improvements, while a larger fibromyalgia trial did not show a significant pain benefit. A Long COVID cohort reported improved fatigue, post-exertional symptoms and sleep, but its uncontrolled design cannot distinguish a drug effect from other changes. Fibromyalgia pain did not improve significantly more than with placebo in the 99-woman trial; compulsive-behavior findings varied by the outcome measure.",
           "sources": [
             "CTX-D04-LABEL",
             "P-D04-LONGCOVID-2023",
-            "P-D04-FIBRO-2024"
+            "P-D04-FIBRO-2024",
+            "P-D04-CSBD-2022"
           ],
           "sentences": [
             {
@@ -11649,21 +11688,7 @@
                 "P-D04-LONGCOVID-2023",
                 "P-D04-FIBRO-2024"
               ]
-            }
-          ],
-          "questions": []
-        },
-        {
-          "id": "benefits",
-          "label": "Benefits",
-          "title": "",
-          "paragraph": "A Long COVID cohort reported improved fatigue, post-exertional symptoms and sleep, but its uncontrolled design cannot distinguish a drug effect from other changes. Fibromyalgia pain did not improve significantly more than with placebo in the 99-woman trial; compulsive-behavior findings varied by the outcome measure.",
-          "sources": [
-            "P-D04-LONGCOVID-2023",
-            "P-D04-FIBRO-2024",
-            "P-D04-CSBD-2022"
-          ],
-          "sentences": [
+            },
             {
               "text": "A Long COVID cohort reported improved fatigue, post-exertional symptoms and sleep, but its uncontrolled design cannot distinguish a drug effect from other changes.",
               "sources": [
@@ -11678,6 +11703,15 @@
               ]
             }
           ],
+          "questions": []
+        },
+        {
+          "id": "benefits",
+          "label": "Benefits",
+          "title": "",
+          "paragraph": "",
+          "sources": [],
+          "sentences": [],
           "questions": [
             {
               "id": "lc-benefit",
@@ -11833,7 +11867,30 @@
               ]
             }
           ],
-          "questions": []
+          "questions": [
+            {
+              "id": "naltrexone-dosing-scope",
+              "question": "Does this schedule establish a dose for every investigated use?",
+              "answer": "No single dosing schedule can be inferred across these uses. The fibromyalgia trial used 6 mg daily; the compulsive-behavior trial used 50 mg daily, so their results concern different regimens.",
+              "sentences": [
+                {
+                  "text": "No single dosing schedule can be inferred across these uses.",
+                  "sources": []
+                },
+                {
+                  "text": "The fibromyalgia trial used 6 mg daily; the compulsive-behavior trial used 50 mg daily, so their results concern different regimens.",
+                  "sources": [
+                    "P-D04-FIBRO-2024",
+                    "P-D04-CSBD-2022"
+                  ]
+                }
+              ],
+              "sources": [
+                "P-D04-FIBRO-2024",
+                "P-D04-CSBD-2022"
+              ]
+            }
+          ]
         },
         {
           "id": "results",
@@ -12040,7 +12097,7 @@
           "id": "overview",
           "label": "Overview",
           "title": "",
-          "paragraph": "Pramipexole is a dopamine agonist used for Parkinson’s disease and restless legs syndrome. PAX-D found improvement when it was added for treatment-resistant unipolar depression.",
+          "paragraph": "Pramipexole is a dopamine agonist used for Parkinson’s disease and restless legs syndrome. PAX-D found improvement when it was added for treatment-resistant unipolar depression. Clinical evidence: Low for the currently usable PAX-D result. The randomized trial reported greater improvement in depressive symptoms with pramipexole augmentation than placebo at twelve weeks. The existing assessment remains provisional because an indexed correction has not been reconciled. Adverse-event discontinuations were higher with pramipexole, and the trial does not establish superiority to another active augmentation treatment.",
           "sources": [
             "CTX-D05-LABEL",
             "P-D05-PAXD-2025"
@@ -12057,6 +12114,12 @@
               "sources": [
                 "P-D05-PAXD-2025"
               ]
+            },
+            {
+              "text": "Clinical evidence: Low for the currently usable PAX-D result. The randomized trial reported greater improvement in depressive symptoms with pramipexole augmentation than placebo at twelve weeks. The existing assessment remains provisional because an indexed correction has not been reconciled. Adverse-event discontinuations were higher with pramipexole, and the trial does not establish superiority to another active augmentation treatment.",
+              "sources": [
+                "P-D05-PAXD-2025"
+              ]
             }
           ],
           "questions": []
@@ -12065,18 +12128,9 @@
           "id": "benefits",
           "label": "Benefits",
           "title": "",
-          "paragraph": "Clinical evidence: Low for the currently usable PAX-D result. The randomized trial reported greater improvement in depressive symptoms with pramipexole augmentation than placebo at twelve weeks. The existing assessment remains provisional because an indexed correction has not been reconciled. Adverse-event discontinuations were higher with pramipexole, and the trial does not establish superiority to another active augmentation treatment.",
-          "sources": [
-            "P-D05-PAXD-2025"
-          ],
-          "sentences": [
-            {
-              "text": "Clinical evidence: Low for the currently usable PAX-D result. The randomized trial reported greater improvement in depressive symptoms with pramipexole augmentation than placebo at twelve weeks. The existing assessment remains provisional because an indexed correction has not been reconciled. Adverse-event discontinuations were higher with pramipexole, and the trial does not establish superiority to another active augmentation treatment.",
-              "sources": [
-                "P-D05-PAXD-2025"
-              ]
-            }
-          ],
+          "paragraph": "",
+          "sources": [],
+          "sentences": [],
           "questions": [
             {
               "id": "depression-benefit",
@@ -12173,7 +12227,35 @@
               ]
             }
           ],
-          "questions": []
+          "questions": [
+            {
+              "id": "pramipexole-dosing-scope",
+              "question": "Does this schedule establish a dose for every investigated use?",
+              "answer": "No single dosing schedule can be inferred across these uses. Label context: Immediate-release pramipexole dihydrochloride has different Parkinson and restless-legs schedules. The restless-legs starting dose is 0.125 mg once daily, 2-3 hours before bedtime. Renal function affects titration. This labeled schedule is separate from the depression trial and is not an antidepressant recommendation. PAX-D gradually increased adjunctive treatment toward a target of 2.5 mg daily; this was a depression trial regimen.",
+              "sentences": [
+                {
+                  "text": "No single dosing schedule can be inferred across these uses.",
+                  "sources": []
+                },
+                {
+                  "text": "Label context: Immediate-release pramipexole dihydrochloride has different Parkinson and restless-legs schedules. The restless-legs starting dose is 0.125 mg once daily, 2-3 hours before bedtime. Renal function affects titration. This labeled schedule is separate from the depression trial and is not an antidepressant recommendation.",
+                  "sources": [
+                    "CTX-D05-LABEL"
+                  ]
+                },
+                {
+                  "text": "PAX-D gradually increased adjunctive treatment toward a target of 2.5 mg daily; this was a depression trial regimen.",
+                  "sources": [
+                    "P-D05-PAXD-2025"
+                  ]
+                }
+              ],
+              "sources": [
+                "CTX-D05-LABEL",
+                "P-D05-PAXD-2025"
+              ]
+            }
+          ]
         },
         {
           "id": "results",
@@ -16240,12 +16322,15 @@
           "id": "overview",
           "label": "Overview",
           "title": "",
-          "paragraph": "Minocycline is an antibiotic with separate anti-inflammatory research programs. Large trials did not show benefit for mild Alzheimer’s disease or recent-onset schizophrenia, while the ALS trial found faster deterioration.",
+          "paragraph": "Minocycline is an antibiotic with separate anti-inflammatory research programs. Large trials did not show benefit for mild Alzheimer’s disease or recent-onset schizophrenia, while the ALS trial found faster deterioration. The most substantial neurological findings are mixed or unfavorable: no benefit in Alzheimer’s disease or BeneMin schizophrenia, and faster functional decline in ALS. An early-MS trial found a six-month effect; the difference was not statistically significant at 24 months; small vitiligo results address disease activity, and ovarian results are preclinical.",
           "sources": [
             "CTX-D16-LABEL",
             "P-D16-AD-2020",
             "COND-C25-BENEMIN-2018",
-            "COND-C28-MINO-2007"
+            "COND-C28-MINO-2007",
+            "P-D16-MS-2017",
+            "P-D16-VITILIGO-2014",
+            "P-D16-OVARIAN-2013"
           ],
           "sentences": [
             {
@@ -16262,24 +16347,7 @@
                 "COND-C25-BENEMIN-2018",
                 "COND-C28-MINO-2007"
               ]
-            }
-          ],
-          "questions": []
-        },
-        {
-          "id": "benefits",
-          "label": "Benefits",
-          "title": "",
-          "paragraph": "The most substantial neurological findings are mixed or unfavorable: no benefit in Alzheimer’s disease or BeneMin schizophrenia, and faster functional decline in ALS. An early-MS trial found a six-month effect; the difference was not statistically significant at 24 months; small vitiligo results address disease activity, and ovarian results are preclinical.",
-          "sources": [
-            "P-D16-AD-2020",
-            "COND-C25-BENEMIN-2018",
-            "COND-C28-MINO-2007",
-            "P-D16-MS-2017",
-            "P-D16-VITILIGO-2014",
-            "P-D16-OVARIAN-2013"
-          ],
-          "sentences": [
+            },
             {
               "text": "The most substantial neurological findings are mixed or unfavorable: no benefit in Alzheimer’s disease or BeneMin schizophrenia, and faster functional decline in ALS.",
               "sources": [
@@ -16297,6 +16365,15 @@
               ]
             }
           ],
+          "questions": []
+        },
+        {
+          "id": "benefits",
+          "label": "Benefits",
+          "title": "",
+          "paragraph": "",
+          "sources": [],
+          "sentences": [],
           "questions": [
             {
               "id": "ovarian-benefit",
@@ -16498,7 +16575,28 @@
               ]
             }
           ],
-          "questions": []
+          "questions": [
+            {
+              "id": "minocycline-dosing-scope",
+              "question": "Does this schedule establish a dose for every investigated use?",
+              "answer": "No single dosing schedule can be inferred across these uses. The Alzheimer trial tested 200 or 400 mg daily for two years; those schedules did not improve its clinical endpoints.",
+              "sentences": [
+                {
+                  "text": "No single dosing schedule can be inferred across these uses.",
+                  "sources": []
+                },
+                {
+                  "text": "The Alzheimer trial tested 200 or 400 mg daily for two years; those schedules did not improve its clinical endpoints.",
+                  "sources": [
+                    "P-D16-AD-2020"
+                  ]
+                }
+              ],
+              "sources": [
+                "P-D16-AD-2020"
+              ]
+            }
+          ]
         },
         {
           "id": "results",
@@ -17494,10 +17592,11 @@
           "id": "overview",
           "label": "Overview",
           "title": "",
-          "paragraph": "Propranolol blocks adrenergic signaling in cardiovascular use and tumor investigations.",
+          "paragraph": "Propranolol blocks adrenergic signaling in cardiovascular use and tumor investigations. A breast trial found short-term tumor-marker changes. A nine-patient melanoma combination study reported responses, but its single-arm design cannot isolate propranolol’s contribution.",
           "sources": [
             "CTX-D19-LABEL",
-            "P-D19-BREAST"
+            "P-D19-BREAST",
+            "P-D19-MELANOMA"
           ],
           "sentences": [
             {
@@ -17505,6 +17604,13 @@
               "sources": [
                 "CTX-D19-LABEL",
                 "P-D19-BREAST"
+              ]
+            },
+            {
+              "text": "A breast trial found short-term tumor-marker changes. A nine-patient melanoma combination study reported responses, but its single-arm design cannot isolate propranolol’s contribution.",
+              "sources": [
+                "P-D19-BREAST",
+                "P-D19-MELANOMA"
               ]
             }
           ],
@@ -17514,20 +17620,9 @@
           "id": "benefits",
           "label": "Benefits",
           "title": "",
-          "paragraph": "A breast trial found short-term tumor-marker changes. A nine-patient melanoma combination study reported responses, but its single-arm design cannot isolate propranolol’s contribution.",
-          "sources": [
-            "P-D19-BREAST",
-            "P-D19-MELANOMA"
-          ],
-          "sentences": [
-            {
-              "text": "A breast trial found short-term tumor-marker changes. A nine-patient melanoma combination study reported responses, but its single-arm design cannot isolate propranolol’s contribution.",
-              "sources": [
-                "P-D19-BREAST",
-                "P-D19-MELANOMA"
-              ]
-            }
-          ],
+          "paragraph": "",
+          "sources": [],
+          "sentences": [],
           "questions": [
             {
               "id": "benefits-q1",
@@ -17649,7 +17744,28 @@
               ]
             }
           ],
-          "questions": []
+          "questions": [
+            {
+              "id": "propranolol-dosing-scope",
+              "question": "Does this schedule establish a dose for every investigated use?",
+              "answer": "No single dosing schedule can be inferred across these uses. The breast trial administered propranolol during the week before surgery, a brief perioperative strategy rather than prolonged cancer treatment.",
+              "sentences": [
+                {
+                  "text": "No single dosing schedule can be inferred across these uses.",
+                  "sources": []
+                },
+                {
+                  "text": "The breast trial administered propranolol during the week before surgery, a brief perioperative strategy rather than prolonged cancer treatment.",
+                  "sources": [
+                    "P-D19-BREAST"
+                  ]
+                }
+              ],
+              "sources": [
+                "P-D19-BREAST"
+              ]
+            }
+          ]
         },
         {
           "id": "results",
@@ -17711,7 +17827,7 @@
           "id": "evidence",
           "label": "Evidence",
           "title": "",
-          "paragraph": "The breast trial randomized a short presurgical intervention; the melanoma trial evaluated dose escalation without a pembrolizumab-only control.",
+          "paragraph": "The breast trial randomized a short presurgical intervention; the melanoma trial evaluated dose escalation without a pembrolizumab-only control. The melanoma study reported a 78% objective response rate at six months, with one patient experiencing grade 3 or worse treatment-related events.",
           "sources": [
             "P-D19-BREAST",
             "P-D19-MELANOMA"
@@ -17721,6 +17837,12 @@
               "text": "The breast trial randomized a short presurgical intervention; the melanoma trial evaluated dose escalation without a pembrolizumab-only control.",
               "sources": [
                 "P-D19-BREAST",
+                "P-D19-MELANOMA"
+              ]
+            },
+            {
+              "text": "The melanoma study reported a 78% objective response rate at six months, with one patient experiencing grade 3 or worse treatment-related events.",
+              "sources": [
                 "P-D19-MELANOMA"
               ]
             }
@@ -17755,13 +17877,13 @@
           "id": "authored-research",
           "label": "Research",
           "title": "",
-          "paragraph": "The key clinical question is whether beta blockade improves cancer outcomes beyond the effects of its partner treatment.",
+          "paragraph": "The key clinical question is whether beta blockade improves cancer outcomes beyond the effects of its combination component treatment.",
           "sources": [
             "P-D19-MELANOMA"
           ],
           "sentences": [
             {
-              "text": "The key clinical question is whether beta blockade improves cancer outcomes beyond the effects of its partner treatment.",
+              "text": "The key clinical question is whether beta blockade improves cancer outcomes beyond the effects of its combination component treatment.",
               "sources": [
                 "P-D19-MELANOMA"
               ]
@@ -18208,10 +18330,14 @@
           "id": "overview",
           "label": "Overview",
           "title": "",
-          "paragraph": "Niclosamide treats intestinal tapeworms; systemic tumor treatment poses a separate absorption problem.",
+          "paragraph": "Niclosamide treats intestinal tapeworms; systemic tumor treatment poses a separate absorption problem. The five-patient prostate trial found no PSA declines and dose-limiting gastrointestinal toxicity. Other tumor findings concern experimental models.",
           "sources": [
             "CTX-D21-LABEL",
-            "P-D21-PROSTATE"
+            "P-D21-PROSTATE",
+            "P-D21-WNT",
+            "P-D21-CRC",
+            "P-D21-LUNG",
+            "CP027-CH05"
           ],
           "sentences": [
             {
@@ -18220,23 +18346,7 @@
                 "CTX-D21-LABEL",
                 "P-D21-PROSTATE"
               ]
-            }
-          ],
-          "questions": []
-        },
-        {
-          "id": "benefits",
-          "label": "Benefits",
-          "title": "",
-          "paragraph": "The five-patient prostate trial found no PSA declines and dose-limiting gastrointestinal toxicity. Other tumor findings concern experimental models.",
-          "sources": [
-            "P-D21-PROSTATE",
-            "P-D21-WNT",
-            "P-D21-CRC",
-            "P-D21-LUNG",
-            "CP027-CH05"
-          ],
-          "sentences": [
+            },
             {
               "text": "The five-patient prostate trial found no PSA declines and dose-limiting gastrointestinal toxicity. Other tumor findings concern experimental models.",
               "sources": [
@@ -18248,6 +18358,15 @@
               ]
             }
           ],
+          "questions": []
+        },
+        {
+          "id": "benefits",
+          "label": "Benefits",
+          "title": "",
+          "paragraph": "",
+          "sources": [],
+          "sentences": [],
           "questions": [
             {
               "id": "benefits-q1",
@@ -18355,20 +18474,41 @@
               ]
             }
           ],
-          "questions": []
+          "questions": [
+            {
+              "id": "niclosamide-dosing-scope",
+              "question": "Does this schedule establish a dose for every investigated use?",
+              "answer": "No single dosing schedule can be inferred across these uses. Toxicity limited escalation above 500 mg three times daily with enzalutamide.",
+              "sentences": [
+                {
+                  "text": "No single dosing schedule can be inferred across these uses.",
+                  "sources": []
+                },
+                {
+                  "text": "Toxicity limited escalation above 500 mg three times daily with enzalutamide.",
+                  "sources": [
+                    "P-D21-PROSTATE"
+                  ]
+                }
+              ],
+              "sources": [
+                "P-D21-PROSTATE"
+              ]
+            }
+          ]
         },
         {
           "id": "results",
           "label": "Results",
           "title": "",
-          "paragraph": "Corrected peak concentrations were 35.7–182 ng/mL, below consistently adequate preclinical target exposure.",
+          "paragraph": "Corrected peak concentrations were 35.7-182 ng/mL, below consistently adequate preclinical target exposure.",
           "sources": [
             "P-D21-PROSTATE",
             "P-D21-CORRECTION"
           ],
           "sentences": [
             {
-              "text": "Corrected peak concentrations were 35.7–182 ng/mL, below consistently adequate preclinical target exposure.",
+              "text": "Corrected peak concentrations were 35.7-182 ng/mL, below consistently adequate preclinical target exposure.",
               "sources": [
                 "P-D21-PROSTATE",
                 "P-D21-CORRECTION"
@@ -18421,7 +18561,7 @@
           "id": "evidence",
           "label": "Evidence",
           "title": "",
-          "paragraph": "This five-patient phase I study principally addresses exposure and toxicity; the correction amends a concentration value.",
+          "paragraph": "This five-patient phase I study principally addresses exposure and toxicity; the correction amends a concentration value. Corrected peak concentrations were 35.7-182 ng/mL, below consistently adequate preclinical target exposure.",
           "sources": [
             "P-D21-PROSTATE",
             "P-D21-CORRECTION"
@@ -18429,6 +18569,13 @@
           "sentences": [
             {
               "text": "This five-patient phase I study principally addresses exposure and toxicity; the correction amends a concentration value.",
+              "sources": [
+                "P-D21-PROSTATE",
+                "P-D21-CORRECTION"
+              ]
+            },
+            {
+              "text": "Corrected peak concentrations were 35.7-182 ng/mL, below consistently adequate preclinical target exposure.",
               "sources": [
                 "P-D21-PROSTATE",
                 "P-D21-CORRECTION"
@@ -19339,11 +19486,12 @@
           "id": "overview",
           "label": "Overview",
           "title": "",
-          "paragraph": "Pioglitazone treats type 2 diabetes; additional studies examine leukemia persistence and muscle function during weight loss.",
+          "paragraph": "Pioglitazone treats type 2 diabetes; additional studies examine leukemia persistence and muscle function during weight loss. ACTIM reported deeper molecular responses after adding pioglitazone to imatinib, without randomization. A separate older-adult trial found enhanced training-related leg-power gains in women but not men.",
           "sources": [
             "CTX-D24-LABEL",
             "COND-C23-ACTIM-2017",
-            "P-D24-BODY"
+            "P-D24-BODY",
+            "P-D24-MUSCLE"
           ],
           "sentences": [
             {
@@ -19353,20 +19501,7 @@
                 "COND-C23-ACTIM-2017",
                 "P-D24-BODY"
               ]
-            }
-          ],
-          "questions": []
-        },
-        {
-          "id": "benefits",
-          "label": "Benefits",
-          "title": "",
-          "paragraph": "ACTIM reported deeper molecular responses after adding pioglitazone to imatinib, without randomization. A separate older-adult trial found enhanced training-related leg-power gains in women but not men.",
-          "sources": [
-            "COND-C23-ACTIM-2017",
-            "P-D24-MUSCLE"
-          ],
-          "sentences": [
+            },
             {
               "text": "ACTIM reported deeper molecular responses after adding pioglitazone to imatinib, without randomization. A separate older-adult trial found enhanced training-related leg-power gains in women but not men.",
               "sources": [
@@ -19375,6 +19510,15 @@
               ]
             }
           ],
+          "questions": []
+        },
+        {
+          "id": "benefits",
+          "label": "Benefits",
+          "title": "",
+          "paragraph": "",
+          "sources": [],
+          "sentences": [],
           "questions": [
             {
               "id": "benefits-q1",
@@ -19480,7 +19624,28 @@
               ]
             }
           ],
-          "questions": []
+          "questions": [
+            {
+              "id": "pioglitazone-dosing-scope",
+              "question": "Does this schedule establish a dose for every investigated use?",
+              "answer": "No single dosing schedule can be inferred across these uses. The 16-week body-composition study tested pioglitazone 30 mg daily during a calorie-restricted program, with or without resistance training.",
+              "sentences": [
+                {
+                  "text": "No single dosing schedule can be inferred across these uses.",
+                  "sources": []
+                },
+                {
+                  "text": "The 16-week body-composition study tested pioglitazone 30 mg daily during a calorie-restricted program, with or without resistance training.",
+                  "sources": [
+                    "P-D24-BODY"
+                  ]
+                }
+              ],
+              "sources": [
+                "P-D24-BODY"
+              ]
+            }
+          ]
         },
         {
           "id": "results",
@@ -19544,7 +19709,7 @@
           "id": "evidence",
           "label": "Evidence",
           "title": "",
-          "paragraph": "ACTIM was a 24-patient single-arm phase II study. The muscle trial randomized 88 participants and found sex-dependent responses.",
+          "paragraph": "ACTIM was a 24-patient single-arm phase II study. The muscle trial randomized 88 participants and found sex-dependent responses. The muscle-power analysis found a pioglitazone-by-training interaction in women (p=0.006), but not men (p=0.88). This was a subgroup-dependent functional result.",
           "sources": [
             "COND-C23-ACTIM-2017",
             "P-D24-MUSCLE"
@@ -19554,6 +19719,12 @@
               "text": "ACTIM was a 24-patient single-arm phase II study. The muscle trial randomized 88 participants and found sex-dependent responses.",
               "sources": [
                 "COND-C23-ACTIM-2017",
+                "P-D24-MUSCLE"
+              ]
+            },
+            {
+              "text": "The muscle-power analysis found a pioglitazone-by-training interaction in women (p=0.006), but not men (p=0.88). This was a subgroup-dependent functional result.",
+              "sources": [
                 "P-D24-MUSCLE"
               ]
             }
@@ -29079,14 +29250,22 @@
           "id": "overview",
           "label": "Overview",
           "title": "",
-          "paragraph": "Methylene blue is a dye that is also used as a medicine. The open-access studies on file cover three off-label uses: an add-on treatment in septic shock, injection into a painful spinal disc, and photodynamic therapy for toenail fungus. One child case report describes its use to prevent ifosfamide-related brain toxicity.",
+          "paragraph": "The U.S. intravenous product is approved for acquired methemoglobinemia in adults and children; the studies below investigate other uses. Methylene blue is a dye that is also used as a medicine. The open-access studies on file cover three off-label uses: an add-on treatment in septic shock, injection into a painful spinal disc, and photodynamic therapy for toenail fungus. One child case report describes its use to prevent ifosfamide-related brain toxicity. Clinical evidence: Moderate for one outcome, from one single-center trial. In 91 adults with septic shock, methylene blue started within 24 hours shortened time to vasopressor discontinuation (69 versus 94 hours) and added about one vasopressor-free day by day 28. Mortality and days on a ventilator were similar between groups. Clinical evidence: Low. In an uncontrolled study of 20 adults, pain scores fell at 3 months after one intradiscal injection, but by 12 months average pain was no different from before treatment, and 5 of 20 patients (20%) kept a successful result. Clinical evidence: Low. Small studies without an untreated or standard-drug control used methylene blue with red light (photodynamic therapy) for toenail fungus. In 22 patients, clinical response was 100% in mild-to-moderate disease and 63.6% in severe disease. In a 20-toenail randomized comparison of two pretreatments, mycological cure at 40 weeks was 70% after urea and 40% after laser.",
           "sources": [
-            "MB-IFOSFAMIDE-CASE-2023",
+            "CTX-MB-PROVAYBLUE-US-LABEL",
+            "MB-SEPTIC-RCT-2023",
             "MB-LBP-PROSPECTIVE-2012",
             "MB-ONYCHO-DLSO-2014",
-            "MB-SEPTIC-RCT-2023"
+            "MB-IFOSFAMIDE-CASE-2023",
+            "MB-ONYCHO-UREA-LASER-2023"
           ],
           "sentences": [
+            {
+              "text": "The U.S. intravenous product is approved for acquired methemoglobinemia in adults and children; the studies below investigate other uses.",
+              "sources": [
+                "CTX-MB-PROVAYBLUE-US-LABEL"
+              ]
+            },
             {
               "text": "Methylene blue is a dye that is also used as a medicine.",
               "sources": [
@@ -29106,22 +29285,7 @@
               "sources": [
                 "MB-IFOSFAMIDE-CASE-2023"
               ]
-            }
-          ],
-          "questions": []
-        },
-        {
-          "id": "benefits",
-          "label": "Benefits",
-          "title": "",
-          "paragraph": "Clinical evidence: Moderate for one outcome, from one single-center trial. In 91 adults with septic shock, methylene blue started within 24 hours shortened time to vasopressor discontinuation (69 versus 94 hours) and added about one vasopressor-free day by day 28. Mortality and days on a ventilator were similar between groups. Clinical evidence: Low. In an uncontrolled study of 20 adults, pain scores fell at 3 months after one intradiscal injection, but by 12 months average pain was no different from before treatment, and 5 of 20 patients (20%) kept a successful result. Clinical evidence: Low. Small studies without an untreated or standard-drug control used methylene blue with red light (photodynamic therapy) for toenail fungus. In 22 patients, clinical response was 100% in mild-to-moderate disease and 63.6% in severe disease. In a 20-toenail randomized comparison of two pretreatments, mycological cure at 40 weeks was 70% after urea and 40% after laser.",
-          "sources": [
-            "MB-LBP-PROSPECTIVE-2012",
-            "MB-ONYCHO-DLSO-2014",
-            "MB-ONYCHO-UREA-LASER-2023",
-            "MB-SEPTIC-RCT-2023"
-          ],
-          "sentences": [
+            },
             {
               "text": "Clinical evidence: Moderate for one outcome, from one single-center trial. In 91 adults with septic shock, methylene blue started within 24 hours shortened time to vasopressor discontinuation (69 versus 94 hours) and added about one vasopressor-free day by day 28. Mortality and days on a ventilator were similar between groups.",
               "sources": [
@@ -29142,6 +29306,15 @@
               ]
             }
           ],
+          "questions": []
+        },
+        {
+          "id": "benefits",
+          "label": "Benefits",
+          "title": "",
+          "paragraph": "",
+          "sources": [],
+          "sentences": [],
           "questions": [
             {
               "id": "septic-shock",
@@ -29369,14 +29542,14 @@
           "id": "evidence",
           "label": "Evidence",
           "title": "",
-          "paragraph": "The strongest study on file is one single-center randomized placebo-controlled trial in septic shock. Evidence for back pain and toenail fungus comes from small uncontrolled or pretreatment-comparison studies. The ifosfamide report describes a single child.",
+          "paragraph": "The strongest study on file is one single-center randomized placebo-controlled trial in septic shock. Evidence for back pain and toenail fungus comes from small uncontrolled or pretreatment-comparison studies. The ifosfamide report describes a single child. The septic shock trial measured time to stopping vasopressors as its main outcome. The back pain study measured pain and disability scores up to 12 months. The toenail studies measured clinical appearance and fungal tests.",
           "sources": [
-            "MB-IFOSFAMIDE-CASE-2023",
+            "MB-SEPTIC-RCT-2023",
             "MB-LBP-PROSPECTIVE-2012",
+            "MB-ONYCHO-UREA-LASER-2023",
             "MB-ONYCHO-DLSO-2014",
             "MB-ONYCHO-ENDONYX-2013",
-            "MB-ONYCHO-UREA-LASER-2023",
-            "MB-SEPTIC-RCT-2023"
+            "MB-IFOSFAMIDE-CASE-2023"
           ],
           "sentences": [
             {
@@ -29399,12 +29572,115 @@
               "sources": [
                 "MB-IFOSFAMIDE-CASE-2023"
               ]
+            },
+            {
+              "text": "The septic shock trial measured time to stopping vasopressors as its main outcome.",
+              "sources": [
+                "MB-SEPTIC-RCT-2023"
+              ]
+            },
+            {
+              "text": "The back pain study measured pain and disability scores up to 12 months.",
+              "sources": [
+                "MB-LBP-PROSPECTIVE-2012"
+              ]
+            },
+            {
+              "text": "The toenail studies measured clinical appearance and fungal tests.",
+              "sources": [
+                "MB-ONYCHO-UREA-LASER-2023",
+                "MB-ONYCHO-DLSO-2014"
+              ]
             }
+          ],
+          "questions": []
+        },
+        {
+          "id": "authored-contraindications",
+          "label": "Contraindications",
+          "title": "",
+          "paragraph": "The intravenous product is contraindicated with severe hypersensitivity to methylene blue or other thiazine dyes, and with G6PD deficiency.",
+          "sentences": [
+            {
+              "text": "The intravenous product is contraindicated with severe hypersensitivity to methylene blue or other thiazine dyes, and with G6PD deficiency.",
+              "sources": [
+                "CTX-MB-PROVAYBLUE-US-LABEL"
+              ]
+            }
+          ],
+          "sources": [
+            "CTX-MB-PROVAYBLUE-US-LABEL"
+          ],
+          "questions": []
+        },
+        {
+          "id": "authored-interactions",
+          "label": "Interactions",
+          "title": "",
+          "paragraph": "The intravenous label warns against concurrent serotonergic medicines and opioids because potentially fatal serotonin syndrome has occurred. This warning differs from a study eligibility exclusion.",
+          "sentences": [
+            {
+              "text": "The intravenous label warns against concurrent serotonergic medicines and opioids because potentially fatal serotonin syndrome has occurred. This warning differs from a study eligibility exclusion.",
+              "sources": [
+                "CTX-MB-PROVAYBLUE-US-LABEL"
+              ]
+            }
+          ],
+          "sources": [
+            "CTX-MB-PROVAYBLUE-US-LABEL"
+          ],
+          "questions": []
+        },
+        {
+          "id": "quality",
+          "label": "Quality",
+          "title": "",
+          "paragraph": "The labeled product is a 5 mg/mL intravenous solution. The cited nail studies instead used a topical solution with light; route and formulation differ.",
+          "sentences": [
+            {
+              "text": "The labeled product is a 5 mg/mL intravenous solution.",
+              "sources": [
+                "CTX-MB-PROVAYBLUE-US-LABEL"
+              ]
+            },
+            {
+              "text": "The cited nail studies instead used a topical solution with light; route and formulation differ.",
+              "sources": [
+                "MB-ONYCHO-DLSO-2014",
+                "MB-ONYCHO-ENDONYX-2013"
+              ]
+            }
+          ],
+          "sources": [
+            "CTX-MB-PROVAYBLUE-US-LABEL",
+            "MB-ONYCHO-DLSO-2014",
+            "MB-ONYCHO-ENDONYX-2013"
           ],
           "questions": []
         }
       ],
-      "faqs": [],
+      "faqs": [
+        {
+          "id": "methylene-blue-route-specificity",
+          "question": "Do the different treatment routes use interchangeable schedules?",
+          "answer": "The cited studies used intravenous dosing for septic shock, disc injection for low back pain, and topical solution with light for nail infection. These routes investigate different conditions and cannot establish one interchangeable treatment schedule.",
+          "sentences": [
+            {
+              "text": "The cited studies used intravenous dosing for septic shock, disc injection for low back pain, and topical solution with light for nail infection. These routes investigate different conditions and cannot establish one interchangeable treatment schedule.",
+              "sources": [
+                "MB-SEPTIC-RCT-2023",
+                "MB-LBP-PROSPECTIVE-2012",
+                "MB-ONYCHO-DLSO-2014"
+              ]
+            }
+          ],
+          "sources": [
+            "MB-SEPTIC-RCT-2023",
+            "MB-LBP-PROSPECTIVE-2012",
+            "MB-ONYCHO-DLSO-2014"
+          ]
+        }
+      ],
       "sourceIds": [
         "MB-SEPTIC-RCT-2023",
         "MB-SEPTIC-PROTOCOL-2024",
@@ -29413,7 +29689,8 @@
         "MB-ONYCHO-UREA-LASER-2023",
         "MB-ONYCHO-DLSO-2014",
         "MB-ONYCHO-ENDONYX-2013",
-        "MB-IFOSFAMIDE-CASE-2023"
+        "MB-IFOSFAMIDE-CASE-2023",
+        "CTX-MB-PROVAYBLUE-US-LABEL"
       ],
       "related": [],
       "synthesisIds": [],
@@ -29933,7 +30210,28 @@
           "questions": []
         }
       ],
-      "faqs": [],
+      "faqs": [
+        {
+          "id": "melphalan-route-specificity",
+          "question": "Do the different treatment routes use interchangeable schedules?",
+          "answer": "The cited studies used liver-directed delivery, oral combination regimens and intravenous preconditioning. A schedule from one route or combination cannot be transferred to every melphalan use.",
+          "sentences": [
+            {
+              "text": "The cited studies used liver-directed delivery, oral combination regimens and intravenous preconditioning. A schedule from one route or combination cannot be transferred to every melphalan use.",
+              "sources": [
+                "MEL-HDS-FOCUS-2025",
+                "MEL-OCTANS-FINAL-2025",
+                "MEL-TIL-HAI-2026"
+              ]
+            }
+          ],
+          "sources": [
+            "MEL-HDS-FOCUS-2025",
+            "MEL-OCTANS-FINAL-2025",
+            "MEL-TIL-HAI-2026"
+          ]
+        }
+      ],
       "sourceIds": [
         "MEL-HDS-FOCUS-2025",
         "MEL-IHP-SCANDIUM-2025",
