@@ -85,7 +85,7 @@ def apply(batch,slugs):
    limits=[l['text'] for r in related for l in r.get('limitations',[]) if sid in l.get('sources',[])]
    preview=s.get('preview','');finding=' '.join(dict.fromkeys(ownfinding)) or preview
    if preview==s['title'] and not ownfinding:
-    details=[q['text'] for m in ms['drugs'] for q in m.get('questions',[]) if q.get('sourceIds')==[sid]]
+    details=[part['text'] for page in allguides for section in page['sections'] for question in section.get('questions',[]) for part in question.get('sentences',[]) if part.get('sources')==[sid]] + [q['text'] for m in ms['drugs'] for q in m.get('questions',[]) if q.get('sourceIds')==[sid]]
     finding=' '.join(dict.fromkeys(details)) or 'A numerical findings account is not on hand beyond the cited bibliographic description.'
     if not details:gaps.append(sid+': full findings and numerical results not on hand.')
    population=s.get('population') or missing_pop.get(sid) or next((r['population'] for r in related if r.get('population')),None)

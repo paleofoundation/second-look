@@ -64,7 +64,7 @@ const cellsOf = row => row.children.filter(node => node.tag === 'td' || node.tag
 const summaryViews = new Map();
 // Accepted current layout: these drug pages have generic-only Quality copy.
 // Keep this explicit so accidentally hiding a substantive Quality section fails.
-const genericQualityRoutes = new Set(['fluvoxamine', 'ivermectin', 'mebendazole', 'maraviroc', 'atorvastatin', 'rituximab', 'celecoxib', 'vorinostat', 'clomipramine', 'thalidomide', 'fluconazole'].map(slug => '/drugs/' + slug));
+const genericQualityRoutes = new Set(['fluvoxamine', 'mebendazole', 'maraviroc', 'atorvastatin', 'rituximab', 'celecoxib', 'vorinostat', 'clomipramine', 'thalidomide', 'fluconazole'].map(slug => '/drugs/' + slug));
 const drugStatusRows = JSON.parse(fs.readFileSync(path.join(root, 'data/drug-status-table.json'), 'utf8')).drugs;
 
 function assertEvidenceCount(node, summaries, label, {participants = true} = {}) {

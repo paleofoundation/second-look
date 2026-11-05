@@ -11216,13 +11216,16 @@
           "id": "overview",
           "label": "Overview",
           "title": "",
-          "paragraph": "Oral sirolimus is used to prevent kidney-transplant rejection and to treat lymphangioleiomyomatosis. Repurposing studies include several cancer combinations and a mouse study of periodontal aging.",
+          "paragraph": "Oral sirolimus is used to prevent kidney-transplant rejection and to treat lymphangioleiomyomatosis. Repurposing studies include several cancer combinations and a mouse study of periodontal aging. Rapamycin improved periodontal tissue measures in aged mice. Cancer studies have examined target inhibition and combination activity, but they do not establish one benefit across tumor types.",
           "sources": [
             "CTX-D06-LABEL",
             "CTX-D06-OVARIAN-TRIAL",
             "P-D06-BREAST-2015",
             "P-D06-AML-2018",
-            "P-D06-PERIODONTAL-2020"
+            "P-D06-PERIODONTAL-2020",
+            "P-D06-PROSTATE-2010",
+            "P-D06-RECTAL-2015",
+            "P-D06-CML-2008"
           ],
           "sentences": [
             {
@@ -11239,24 +11242,7 @@
                 "P-D06-AML-2018",
                 "P-D06-PERIODONTAL-2020"
               ]
-            }
-          ],
-          "questions": []
-        },
-        {
-          "id": "benefits",
-          "label": "Benefits",
-          "title": "",
-          "paragraph": "Rapamycin improved periodontal tissue measures in aged mice. Cancer studies have examined target inhibition and combination activity, but they do not establish one benefit across tumor types.",
-          "sources": [
-            "P-D06-PERIODONTAL-2020",
-            "P-D06-PROSTATE-2010",
-            "P-D06-BREAST-2015",
-            "P-D06-RECTAL-2015",
-            "P-D06-AML-2018",
-            "P-D06-CML-2008"
-          ],
-          "sentences": [
+            },
             {
               "text": "Rapamycin improved periodontal tissue measures in aged mice.",
               "sources": [
@@ -11274,6 +11260,15 @@
               ]
             }
           ],
+          "questions": []
+        },
+        {
+          "id": "benefits",
+          "label": "Benefits",
+          "title": "",
+          "paragraph": "",
+          "sources": [],
+          "sentences": [],
           "questions": [
             {
               "id": "ovarian-benefit",
@@ -11459,7 +11454,28 @@
               ]
             }
           ],
-          "questions": []
+          "questions": [
+            {
+              "id": "sirolimus-dosing-scope",
+              "question": "Does this schedule establish a dose for every investigated use?",
+              "answer": "No single dosing schedule can be inferred across these uses. Labeled use requires blood-level monitoring and indication-specific adjustment.",
+              "sentences": [
+                {
+                  "text": "No single dosing schedule can be inferred across these uses.",
+                  "sources": []
+                },
+                {
+                  "text": "Labeled use requires blood-level monitoring and indication-specific adjustment.",
+                  "sources": [
+                    "CTX-D06-LABEL"
+                  ]
+                }
+              ],
+              "sources": [
+                "CTX-D06-LABEL"
+              ]
+            }
+          ]
         },
         {
           "id": "results",
@@ -11627,12 +11643,6 @@
       "entityId": "D06",
       "scope": "An mTOR inhibitor investigated for periodontal aging and for disrupting cancer growth and resistance pathways.",
       "coverageLabel": "",
-      "originalUse": {
-        "text": "organ transplant rejection",
-        "sourceIds": [
-          "CP027"
-        ]
-      },
       "candidateLinks": [
         {
           "id": "C03",
@@ -14350,7 +14360,7 @@
           "id": "overview",
           "label": "Overview",
           "title": "",
-          "paragraph": "Rituximab is used in specified B-cell cancers and autoimmune diseases. Its vitiligo evidence includes an uncontrolled five-person pilot.",
+          "paragraph": "Rituximab is used in specified B-cell cancers and autoimmune diseases. Its vitiligo evidence includes an uncontrolled five-person pilot. Clinical evidence: Low. An uncontrolled vitiligo pilot treated five people with one rituximab infusion and followed them for six months. Three showed clear clinical and histological improvement, one slight improvement and one no change. Without a control group, this does not establish an average treatment effect, durability beyond follow-up or a validated retreatment schedule.",
           "sources": [
             "CTX-D14-LABEL",
             "P-D14-VITILIGO-2013"
@@ -14367,6 +14377,12 @@
               "sources": [
                 "P-D14-VITILIGO-2013"
               ]
+            },
+            {
+              "text": "Clinical evidence: Low. An uncontrolled vitiligo pilot treated five people with one rituximab infusion and followed them for six months. Three showed clear clinical and histological improvement, one slight improvement and one no change. Without a control group, this does not establish an average treatment effect, durability beyond follow-up or a validated retreatment schedule.",
+              "sources": [
+                "P-D14-VITILIGO-2013"
+              ]
             }
           ],
           "questions": []
@@ -14375,18 +14391,9 @@
           "id": "benefits",
           "label": "Benefits",
           "title": "",
-          "paragraph": "Clinical evidence: Low. An uncontrolled vitiligo pilot treated five people with one rituximab infusion and followed them for six months. Three showed clear clinical and histological improvement, one slight improvement and one no change. Without a control group, this does not establish an average treatment effect, durability beyond follow-up or a validated retreatment schedule.",
-          "sources": [
-            "P-D14-VITILIGO-2013"
-          ],
-          "sentences": [
-            {
-              "text": "Clinical evidence: Low. An uncontrolled vitiligo pilot treated five people with one rituximab infusion and followed them for six months. Three showed clear clinical and histological improvement, one slight improvement and one no change. Without a control group, this does not establish an average treatment effect, durability beyond follow-up or a validated retreatment schedule.",
-              "sources": [
-                "P-D14-VITILIGO-2013"
-              ]
-            }
-          ],
+          "paragraph": "",
+          "sources": [],
+          "sentences": [],
           "questions": [
             {
               "id": "vitiligo-benefit",
@@ -14483,7 +14490,35 @@
               ]
             }
           ],
-          "questions": []
+          "questions": [
+            {
+              "id": "rituximab-dosing-scope",
+              "question": "Does this schedule establish a dose for every investigated use?",
+              "answer": "No single dosing schedule can be inferred across these uses. Label context: Dose and retreatment schedules depend on the labeled disease. Rituxan is given by monitored intravenous infusion with premedication and appropriate medical support, never as an IV push or bolus. The vitiligo pilot used a single 1 g intravenous infusion with six months of follow-up.",
+              "sentences": [
+                {
+                  "text": "No single dosing schedule can be inferred across these uses.",
+                  "sources": []
+                },
+                {
+                  "text": "Label context: Dose and retreatment schedules depend on the labeled disease. Rituxan is given by monitored intravenous infusion with premedication and appropriate medical support, never as an IV push or bolus.",
+                  "sources": [
+                    "CTX-D14-LABEL"
+                  ]
+                },
+                {
+                  "text": "The vitiligo pilot used a single 1 g intravenous infusion with six months of follow-up.",
+                  "sources": [
+                    "P-D14-VITILIGO-2013"
+                  ]
+                }
+              ],
+              "sources": [
+                "CTX-D14-LABEL",
+                "P-D14-VITILIGO-2013"
+              ]
+            }
+          ]
         },
         {
           "id": "results",
@@ -16774,11 +16809,12 @@
           "id": "overview",
           "label": "Overview",
           "title": "",
-          "paragraph": "Simvastatin reduces cholesterol and cardiovascular risk in its established uses. Repurposing studies test effects on tumor metabolism and immune-mediated pigment loss.",
+          "paragraph": "Simvastatin reduces cholesterol and cardiovascular risk in its established uses. Repurposing studies test effects on tumor metabolism and immune-mediated pigment loss. Adding simvastatin to gemcitabine did not improve time to progression in an advanced pancreatic cancer trial. A small oral simvastatin trial also found no repigmentation advantage in vitiligo.",
           "sources": [
             "CTX-D20-LABEL",
             "CP027-CH05",
-            "P-D20-VITILIGO"
+            "P-D20-VITILIGO",
+            "P-D20-PANCREAS"
           ],
           "sentences": [
             {
@@ -16786,6 +16822,13 @@
               "sources": [
                 "CTX-D20-LABEL",
                 "CP027-CH05",
+                "P-D20-VITILIGO"
+              ]
+            },
+            {
+              "text": "Adding simvastatin to gemcitabine did not improve time to progression in an advanced pancreatic cancer trial. A small oral simvastatin trial also found no repigmentation advantage in vitiligo.",
+              "sources": [
+                "P-D20-PANCREAS",
                 "P-D20-VITILIGO"
               ]
             }
@@ -16796,20 +16839,9 @@
           "id": "benefits",
           "label": "Benefits",
           "title": "",
-          "paragraph": "Adding simvastatin to gemcitabine did not improve time to progression in an advanced pancreatic cancer trial. A small oral simvastatin trial also found no repigmentation advantage in vitiligo.",
-          "sources": [
-            "P-D20-PANCREAS",
-            "P-D20-VITILIGO"
-          ],
-          "sentences": [
-            {
-              "text": "Adding simvastatin to gemcitabine did not improve time to progression in an advanced pancreatic cancer trial. A small oral simvastatin trial also found no repigmentation advantage in vitiligo.",
-              "sources": [
-                "P-D20-PANCREAS",
-                "P-D20-VITILIGO"
-              ]
-            }
-          ],
+          "paragraph": "",
+          "sources": [],
+          "sentences": [],
           "questions": [
             {
               "id": "benefits-q1",
@@ -16931,19 +16963,40 @@
               ]
             }
           ],
-          "questions": []
+          "questions": [
+            {
+              "id": "simvastatin-dosing-scope",
+              "question": "Does this schedule establish a dose for every investigated use?",
+              "answer": "No single dosing schedule can be inferred across these uses. The pancreatic trial studied simvastatin 40 mg daily alongside gemcitabine.",
+              "sentences": [
+                {
+                  "text": "No single dosing schedule can be inferred across these uses.",
+                  "sources": []
+                },
+                {
+                  "text": "The pancreatic trial studied simvastatin 40 mg daily alongside gemcitabine.",
+                  "sources": [
+                    "P-D20-PANCREAS"
+                  ]
+                }
+              ],
+              "sources": [
+                "P-D20-PANCREAS"
+              ]
+            }
+          ]
         },
         {
           "id": "results",
           "label": "Results",
           "title": "",
-          "paragraph": "Median time to progression was 2.4 months with simvastatin–gemcitabine versus 3.6 months with placebo–gemcitabine; the difference was not significant.",
+          "paragraph": "Median time to progression was 2.4 months with simvastatin-gemcitabine versus 3.6 months with placebo-gemcitabine; the difference was not significant.",
           "sources": [
             "P-D20-PANCREAS"
           ],
           "sentences": [
             {
-              "text": "Median time to progression was 2.4 months with simvastatin–gemcitabine versus 3.6 months with placebo–gemcitabine; the difference was not significant.",
+              "text": "Median time to progression was 2.4 months with simvastatin-gemcitabine versus 3.6 months with placebo-gemcitabine; the difference was not significant.",
               "sources": [
                 "P-D20-PANCREAS"
               ]
@@ -16995,7 +17048,7 @@
           "id": "evidence",
           "label": "Evidence",
           "title": "",
-          "paragraph": "The pancreatic study randomized 114 patients. Its result concerns an add-on to gemcitabine, while the much smaller vitiligo trial evaluated a different disease and outcome.",
+          "paragraph": "The pancreatic study randomized 114 patients. Its result concerns an add-on to gemcitabine, while the much smaller vitiligo trial evaluated a different disease and outcome. Median time to progression was 2.4 months with simvastatin-gemcitabine versus 3.6 months with placebo-gemcitabine; the difference was not significant.",
           "sources": [
             "P-D20-PANCREAS",
             "P-D20-VITILIGO"
@@ -17006,6 +17059,12 @@
               "sources": [
                 "P-D20-PANCREAS",
                 "P-D20-VITILIGO"
+              ]
+            },
+            {
+              "text": "Median time to progression was 2.4 months with simvastatin-gemcitabine versus 3.6 months with placebo-gemcitabine; the difference was not significant.",
+              "sources": [
+                "P-D20-PANCREAS"
               ]
             }
           ],
@@ -17087,12 +17146,6 @@
       "entityId": "D20",
       "scope": "A cholesterol-lowering statin tested in cancer and vitiligo, with negative results in specific randomized studies.",
       "coverageLabel": "",
-      "originalUse": {
-        "text": "hypercholesterolemia",
-        "sourceIds": [
-          "CP027"
-        ]
-      },
       "candidateLinks": [
         {
           "id": "C15",
@@ -19022,11 +19075,12 @@
           "id": "overview",
           "label": "Overview",
           "title": "",
-          "paragraph": "Sildenafil is established for erectile dysfunction and pulmonary arterial hypertension. Its cancer investigations concern cell signaling and treatment combinations.",
+          "paragraph": "Sildenafil is established for erectile dysfunction and pulmonary arterial hypertension. Its cancer investigations concern cell signaling and treatment combinations. Pancreatic cell experiments found increased chemotherapy killing with PDE5 inhibitors. Glioblastoma experiments provide a counterpoint: sildenafil increased migration in one cell model.",
           "sources": [
             "CTX-D26-LABEL",
             "CTX-D26-VIAGRA",
-            "P-D26-COMBINATION"
+            "P-D26-COMBINATION",
+            "P-D26-GBM"
           ],
           "sentences": [
             {
@@ -19036,20 +19090,7 @@
                 "CTX-D26-VIAGRA",
                 "P-D26-COMBINATION"
               ]
-            }
-          ],
-          "questions": []
-        },
-        {
-          "id": "benefits",
-          "label": "Benefits",
-          "title": "",
-          "paragraph": "Pancreatic cell experiments found increased chemotherapy killing with PDE5 inhibitors. Glioblastoma experiments provide a counterpoint: sildenafil increased migration in one cell model.",
-          "sources": [
-            "P-D26-COMBINATION",
-            "P-D26-GBM"
-          ],
-          "sentences": [
+            },
             {
               "text": "Pancreatic cell experiments found increased chemotherapy killing with PDE5 inhibitors. Glioblastoma experiments provide a counterpoint: sildenafil increased migration in one cell model.",
               "sources": [
@@ -19058,6 +19099,15 @@
               ]
             }
           ],
+          "questions": []
+        },
+        {
+          "id": "benefits",
+          "label": "Benefits",
+          "title": "",
+          "paragraph": "",
+          "sources": [],
+          "sentences": [],
           "questions": [
             {
               "id": "benefits-q1",
@@ -19181,7 +19231,39 @@
               ]
             }
           ],
-          "questions": []
+          "questions": [
+            {
+              "id": "sildenafil-dosing-scope",
+              "question": "Does this schedule establish a dose for every investigated use?",
+              "answer": "No single dosing schedule can be inferred across these uses. The pancreatic experiments used drug combinations in cell models. The PAH and erectile-dysfunction schedules are separate clinical regimens, not cancer dosing schedules. The hypoxia experiment used an initial 50 mg oral dose during normal oxygen conditions and a second 50 mg dose during the hypoxia visit, with timed measurements after administration. This describes that short laboratory protocol only. It supplies neither a cancer-treatment schedule nor evidence that repeating the protocol outside the experiment is beneficial or safe.",
+              "sentences": [
+                {
+                  "text": "No single dosing schedule can be inferred across these uses.",
+                  "sources": []
+                },
+                {
+                  "text": "The pancreatic experiments used drug combinations in cell models. The PAH and erectile-dysfunction schedules are separate clinical regimens, not cancer dosing schedules.",
+                  "sources": [
+                    "P-D26-COMBINATION",
+                    "CTX-D26-LABEL",
+                    "CTX-D26-VIAGRA"
+                  ]
+                },
+                {
+                  "text": "The hypoxia experiment used an initial 50 mg oral dose during normal oxygen conditions and a second 50 mg dose during the hypoxia visit, with timed measurements after administration. This describes that short laboratory protocol only. It supplies neither a cancer-treatment schedule nor evidence that repeating the protocol outside the experiment is beneficial or safe.",
+                  "sources": [
+                    "MECH-D26-HYPOXIA-2025"
+                  ]
+                }
+              ],
+              "sources": [
+                "P-D26-COMBINATION",
+                "CTX-D26-LABEL",
+                "CTX-D26-VIAGRA",
+                "MECH-D26-HYPOXIA-2025"
+              ]
+            }
+          ]
         },
         {
           "id": "results",
@@ -19245,7 +19327,7 @@
           "id": "evidence",
           "label": "Evidence",
           "title": "",
-          "paragraph": "Pancreatic support comes from experimental combination treatment. The glioblastoma report combines tumor-expression associations with mechanistic cell work, including an opposing signal. A separate randomized crossover experiment studied cerebral circulation during acute laboratory hypoxia in 12 healthy men. It found changes in selected vascular and redox measures, rather than a demonstrated improvement in cancer or neurological disease. Confidence that these physiological findings predict benefit in another clinical condition is Low: the population, short exposure and measured endpoints do not answer those treatment questions.",
+          "paragraph": "Pancreatic support comes from experimental combination treatment. The glioblastoma report combines tumor-expression associations with mechanistic cell work, including an opposing signal. A separate randomized crossover experiment studied cerebral circulation during acute laboratory hypoxia in 12 healthy men. It found changes in selected vascular and redox measures, rather than a demonstrated improvement in cancer or neurological disease. Confidence that these physiological findings predict benefit in another clinical condition is Low: the population, short exposure and measured endpoints do not answer those treatment questions. The glioblastoma cohort associated PDE5 expression with outcome, while cell experiments tested migration directly. The observational association is not a trial of sildenafil treatment.",
           "sources": [
             "P-D26-COMBINATION",
             "P-D26-GBM",
@@ -19263,6 +19345,12 @@
               "text": "A separate randomized crossover experiment studied cerebral circulation during acute laboratory hypoxia in 12 healthy men. It found changes in selected vascular and redox measures, rather than a demonstrated improvement in cancer or neurological disease. Confidence that these physiological findings predict benefit in another clinical condition is Low: the population, short exposure and measured endpoints do not answer those treatment questions.",
               "sources": [
                 "MECH-D26-HYPOXIA-2025"
+              ]
+            },
+            {
+              "text": "The glioblastoma cohort associated PDE5 expression with outcome, while cell experiments tested migration directly. The observational association is not a trial of sildenafil treatment.",
+              "sources": [
+                "P-D26-GBM"
               ]
             }
           ],
@@ -19385,10 +19473,12 @@
           "id": "overview",
           "label": "Overview",
           "title": "",
-          "paragraph": "Valproate’s oncology rationale is epigenetic, distinct from seizure control. Its combination trials make tolerability central to interpreting any response signal.",
+          "paragraph": "Valproate’s oncology rationale is epigenetic, distinct from seizure control. Its combination trials make tolerability central to interpreting any response signal. Valproate did not improve remission or survival in a randomized older-adult AML trial. A small head and neck combination trial stopped for toxicity; breast research showed histone acetylation.",
           "sources": [
             "CTX-D27-NCI",
-            "P-D27-HNSCC"
+            "P-D27-HNSCC",
+            "COND-C22-VPA-2019",
+            "P-D27-BREAST"
           ],
           "sentences": [
             {
@@ -19397,21 +19487,7 @@
                 "CTX-D27-NCI",
                 "P-D27-HNSCC"
               ]
-            }
-          ],
-          "questions": []
-        },
-        {
-          "id": "benefits",
-          "label": "Benefits",
-          "title": "",
-          "paragraph": "Valproate did not improve remission or survival in a randomized older-adult AML trial. A small head and neck combination trial stopped for toxicity; breast research showed histone acetylation.",
-          "sources": [
-            "COND-C22-VPA-2019",
-            "P-D27-HNSCC",
-            "P-D27-BREAST"
-          ],
-          "sentences": [
+            },
             {
               "text": "Valproate did not improve remission or survival in a randomized older-adult AML trial. A small head and neck combination trial stopped for toxicity; breast research showed histone acetylation.",
               "sources": [
@@ -19421,6 +19497,15 @@
               ]
             }
           ],
+          "questions": []
+        },
+        {
+          "id": "benefits",
+          "label": "Benefits",
+          "title": "",
+          "paragraph": "",
+          "sources": [],
+          "sentences": [],
           "questions": [
             {
               "id": "benefits-q1",
@@ -19457,13 +19542,13 @@
             {
               "id": "benefits-q3",
               "question": "Did valproate improve AML remission with decitabine?",
-              "answer": "No. Remission was 17.8% with valproate versus 17.2% without it; odds ratio 1.06 (95% CI 0.51–2.21). No survival difference was observed.",
+              "answer": "No. Remission was 17.8% with valproate versus 17.2% without it; odds ratio 1.06 (95% CI 0.51-2.21). No survival difference was observed.",
               "sources": [
                 "COND-C22-VPA-2019"
               ],
               "sentences": [
                 {
-                  "text": "No. Remission was 17.8% with valproate versus 17.2% without it; odds ratio 1.06 (95% CI 0.51–2.21). No survival difference was observed.",
+                  "text": "No. Remission was 17.8% with valproate versus 17.2% without it; odds ratio 1.06 (95% CI 0.51-2.21). No survival difference was observed.",
                   "sources": [
                     "COND-C22-VPA-2019"
                   ]
@@ -19542,7 +19627,28 @@
               ]
             }
           ],
-          "questions": []
+          "questions": [
+            {
+              "id": "valproic-acid-dosing-scope",
+              "question": "Does this schedule establish a dose for every investigated use?",
+              "answer": "No single dosing schedule can be inferred across these uses. The head and neck study began valproate two weeks before cisplatin-based chemoradiation and evaluated response eight weeks after combined treatment.",
+              "sentences": [
+                {
+                  "text": "No single dosing schedule can be inferred across these uses.",
+                  "sources": []
+                },
+                {
+                  "text": "The head and neck study began valproate two weeks before cisplatin-based chemoradiation and evaluated response eight weeks after combined treatment.",
+                  "sources": [
+                    "P-D27-HNSCC"
+                  ]
+                }
+              ],
+              "sources": [
+                "P-D27-HNSCC"
+              ]
+            }
+          ]
         },
         {
           "id": "results",
@@ -19604,15 +19710,22 @@
           "id": "evidence",
           "label": "Evidence",
           "title": "",
-          "paragraph": "The AML factorial trial randomized 200 patients ineligible for intensive induction chemotherapy. Its null valproate result is distinct from the study’s retinoic-acid finding.",
+          "paragraph": "The AML factorial trial randomized 200 patients ineligible for intensive induction chemotherapy. Its null valproate result is distinct from the study’s retinoic-acid finding. The head and neck trial’s high response rate occurred with cisplatin and radiation; it cannot be attributed to valproate alone, and toxicity caused early termination.",
           "sources": [
-            "COND-C22-VPA-2019"
+            "COND-C22-VPA-2019",
+            "P-D27-HNSCC"
           ],
           "sentences": [
             {
               "text": "The AML factorial trial randomized 200 patients ineligible for intensive induction chemotherapy. Its null valproate result is distinct from the study’s retinoic-acid finding.",
               "sources": [
                 "COND-C22-VPA-2019"
+              ]
+            },
+            {
+              "text": "The head and neck trial’s high response rate occurred with cisplatin and radiation; it cannot be attributed to valproate alone, and toxicity caused early termination.",
+              "sources": [
+                "P-D27-HNSCC"
               ]
             }
           ],
@@ -19663,13 +19776,13 @@
         {
           "id": "faq-1",
           "question": "Does a high combination response rate identify which drug helped?",
-          "answer": "A single-arm valproate–chemoradiation study cannot separate valproate’s contribution from cisplatin and radiation.",
+          "answer": "A single-arm valproate-chemoradiation study cannot separate valproate’s contribution from cisplatin and radiation.",
           "sources": [
             "P-D27-HNSCC"
           ],
           "sentences": [
             {
-              "text": "A single-arm valproate–chemoradiation study cannot separate valproate’s contribution from cisplatin and radiation.",
+              "text": "A single-arm valproate-chemoradiation study cannot separate valproate’s contribution from cisplatin and radiation.",
               "sources": [
                 "P-D27-HNSCC"
               ]
@@ -19694,12 +19807,6 @@
       "entityId": "D27",
       "scope": "An antiseizure medicine studied as an epigenetic modifier in cancer, with important toxicity findings.",
       "coverageLabel": "",
-      "originalUse": {
-        "text": "epilepsy and bipolar disorder",
-        "sourceIds": [
-          "CP027"
-        ]
-      },
       "candidateLinks": [
         {
           "id": "C12",
@@ -19736,7 +19843,7 @@
           "id": "overview",
           "label": "Overview",
           "title": "",
-          "paragraph": "Vorinostat is a cancer medicine with an epigenetic mechanism. Its Crohn’s connection arises from an analysis of anti-TNF-refractory disease transcriptomes.",
+          "paragraph": "Vorinostat is a cancer medicine with an epigenetic mechanism. Its Crohn’s connection arises from an analysis of anti-TNF-refractory disease transcriptomes. Clinical evidence: Low for Crohn's disease. Vorinostat emerged from a computational analysis of anti-TNF-refractory disease transcriptomes. The study did not administer vorinostat or measure remission, symptom improvement or gastrointestinal tolerability. Its established cancer indication supplies clinical context, but cannot establish benefit for Crohn's disease.",
           "sources": [
             "CP002-R01",
             "CTX-D28-LABEL"
@@ -19748,6 +19855,12 @@
                 "CP002-R01",
                 "CTX-D28-LABEL"
               ]
+            },
+            {
+              "text": "Clinical evidence: Low for Crohn's disease. Vorinostat emerged from a computational analysis of anti-TNF-refractory disease transcriptomes. The study did not administer vorinostat or measure remission, symptom improvement or gastrointestinal tolerability. Its established cancer indication supplies clinical context, but cannot establish benefit for Crohn's disease.",
+              "sources": [
+                "CP002-R01"
+              ]
             }
           ],
           "questions": []
@@ -19756,18 +19869,9 @@
           "id": "benefits",
           "label": "Benefits",
           "title": "",
-          "paragraph": "Clinical evidence: Low for Crohn's disease. Vorinostat emerged from a computational analysis of anti-TNF-refractory disease transcriptomes. The study did not administer vorinostat or measure remission, symptom improvement or gastrointestinal tolerability. Its established cancer indication supplies clinical context, but cannot establish benefit for Crohn's disease.",
-          "sources": [
-            "CP002-R01"
-          ],
-          "sentences": [
-            {
-              "text": "Clinical evidence: Low for Crohn's disease. Vorinostat emerged from a computational analysis of anti-TNF-refractory disease transcriptomes. The study did not administer vorinostat or measure remission, symptom improvement or gastrointestinal tolerability. Its established cancer indication supplies clinical context, but cannot establish benefit for Crohn's disease.",
-              "sources": [
-                "CP002-R01"
-              ]
-            }
-          ],
+          "paragraph": "",
+          "sources": [],
+          "sentences": [],
           "questions": [
             {
               "id": "benefits-q1",
@@ -19880,7 +19984,35 @@
               ]
             }
           ],
-          "questions": []
+          "questions": [
+            {
+              "id": "vorinostat-dosing-scope",
+              "question": "Does this schedule establish a dose for every investigated use?",
+              "answer": "No single dosing schedule can be inferred across these uses. Label context: For its specified lymphoma indication, Zolinza is taken at 400 mg daily with food. Toxicity or hepatic impairment can require dose reduction. Capsules are not opened or crushed. This cancer-label regimen has not been validated by the cited Crohn's computational study. The Crohn’s transcriptome analysis administered no vorinostat regimen. Its compound ranking contains no patient dose-response comparison.",
+              "sentences": [
+                {
+                  "text": "No single dosing schedule can be inferred across these uses.",
+                  "sources": []
+                },
+                {
+                  "text": "Label context: For its specified lymphoma indication, Zolinza is taken at 400 mg daily with food. Toxicity or hepatic impairment can require dose reduction. Capsules are not opened or crushed. This cancer-label regimen has not been validated by the cited Crohn's computational study.",
+                  "sources": [
+                    "CTX-D28-LABEL"
+                  ]
+                },
+                {
+                  "text": "The Crohn’s transcriptome analysis administered no vorinostat regimen. Its compound ranking contains no patient dose-response comparison.",
+                  "sources": [
+                    "CP002-R01"
+                  ]
+                }
+              ],
+              "sources": [
+                "CTX-D28-LABEL",
+                "CP002-R01"
+              ]
+            }
+          ]
         },
         {
           "id": "results",
@@ -19942,13 +20074,19 @@
           "id": "evidence",
           "label": "Evidence",
           "title": "",
-          "paragraph": "The anti-TNF-refractory Crohn’s analysis used GSE100833 and pathway/compound matching. Reliance on one dataset limits how broadly the identified molecular pattern represents patients.",
+          "paragraph": "The anti-TNF-refractory Crohn’s analysis used GSE100833 and pathway/compound matching. Reliance on one dataset limits how broadly the identified molecular pattern represents patients. The reported result is a cluster-specific molecular association, generated from a single transcriptome dataset rather than a vorinostat-treated cohort.",
           "sources": [
             "CP002-R01"
           ],
           "sentences": [
             {
               "text": "The anti-TNF-refractory Crohn’s analysis used GSE100833 and pathway/compound matching. Reliance on one dataset limits how broadly the identified molecular pattern represents patients.",
+              "sources": [
+                "CP002-R01"
+              ]
+            },
+            {
+              "text": "The reported result is a cluster-specific molecular association, generated from a single transcriptome dataset rather than a vorinostat-treated cohort.",
               "sources": [
                 "CP002-R01"
               ]
@@ -20388,7 +20526,7 @@
           "id": "overview",
           "label": "Overview",
           "title": "",
-          "paragraph": "Thalidomide’s clinical results differ markedly between myeloma, ovarian cancer, and Alzheimer’s disease.",
+          "paragraph": "Thalidomide’s clinical results differ markedly between myeloma, ovarian cancer, and Alzheimer’s disease. Thalidomide-dexamethasone improves myeloma control. The ovarian comparison favored tamoxifen for safety, and the Alzheimer’s trial showed no cognitive benefit.",
           "sources": [
             "CTX-D30-LABEL",
             "P-D30-OVARIAN",
@@ -20402,6 +20540,14 @@
                 "P-D30-OVARIAN",
                 "P-D30-ALZHEIMER"
               ]
+            },
+            {
+              "text": "Thalidomide-dexamethasone improves myeloma control. The ovarian comparison favored tamoxifen for safety, and the Alzheimer’s trial showed no cognitive benefit.",
+              "sources": [
+                "CTX-D30-LABEL",
+                "P-D30-OVARIAN",
+                "P-D30-ALZHEIMER"
+              ]
             }
           ],
           "questions": []
@@ -20410,33 +20556,20 @@
           "id": "benefits",
           "label": "Benefits",
           "title": "",
-          "paragraph": "Thalidomide–dexamethasone improves myeloma control. The ovarian comparison favored tamoxifen for safety, and the Alzheimer’s trial showed no cognitive benefit.",
-          "sources": [
-            "CTX-D30-LABEL",
-            "P-D30-OVARIAN",
-            "P-D30-ALZHEIMER"
-          ],
-          "sentences": [
-            {
-              "text": "Thalidomide–dexamethasone improves myeloma control. The ovarian comparison favored tamoxifen for safety, and the Alzheimer’s trial showed no cognitive benefit.",
-              "sources": [
-                "CTX-D30-LABEL",
-                "P-D30-OVARIAN",
-                "P-D30-ALZHEIMER"
-              ]
-            }
-          ],
+          "paragraph": "",
+          "sources": [],
+          "sentences": [],
           "questions": [
             {
               "id": "benefits-q1",
               "question": "What happened in ovarian cancer?",
-              "answer": "Thalidomide did not reduce progression relative to tamoxifen and was associated with higher mortality: hazard ratio 1.76 (95% CI 1.16–2.68).",
+              "answer": "Thalidomide did not reduce progression relative to tamoxifen and was associated with higher mortality: hazard ratio 1.76 (95% CI 1.16-2.68).",
               "sources": [
                 "P-D30-OVARIAN"
               ],
               "sentences": [
                 {
-                  "text": "Thalidomide did not reduce progression relative to tamoxifen and was associated with higher mortality: hazard ratio 1.76 (95% CI 1.16–2.68).",
+                  "text": "Thalidomide did not reduce progression relative to tamoxifen and was associated with higher mortality: hazard ratio 1.76 (95% CI 1.16-2.68).",
                   "sources": [
                     "P-D30-OVARIAN"
                   ]
@@ -20446,13 +20579,13 @@
             {
               "id": "benefits-q2",
               "question": "Did the prostate combination show a benefit?",
-              "answer": "PSA declines greater than 50% occurred in 53% with docetaxel–thalidomide versus 37% with docetaxel alone; progression-free survival was not significantly different (p=0.32).",
+              "answer": "PSA declines greater than 50% occurred in 53% with docetaxel-thalidomide versus 37% with docetaxel alone; progression-free survival was not significantly different (p=0.32).",
               "sources": [
                 "P-D30-PROSTATE"
               ],
               "sentences": [
                 {
-                  "text": "PSA declines greater than 50% occurred in 53% with docetaxel–thalidomide versus 37% with docetaxel alone; progression-free survival was not significantly different (p=0.32).",
+                  "text": "PSA declines greater than 50% occurred in 53% with docetaxel-thalidomide versus 37% with docetaxel alone; progression-free survival was not significantly different (p=0.32).",
                   "sources": [
                     "P-D30-PROSTATE"
                   ]
@@ -20547,20 +20680,41 @@
               ]
             }
           ],
-          "questions": []
+          "questions": [
+            {
+              "id": "thalidomide-dosing-scope",
+              "question": "Does this schedule establish a dose for every investigated use?",
+              "answer": "No single dosing schedule can be inferred across these uses. The Alzheimer’s trial attempted escalation toward 400 mg daily over a 24-week treatment period; adverse effects prevented sustained target exposure.",
+              "sentences": [
+                {
+                  "text": "No single dosing schedule can be inferred across these uses.",
+                  "sources": []
+                },
+                {
+                  "text": "The Alzheimer’s trial attempted escalation toward 400 mg daily over a 24-week treatment period; adverse effects prevented sustained target exposure.",
+                  "sources": [
+                    "P-D30-ALZHEIMER"
+                  ]
+                }
+              ],
+              "sources": [
+                "P-D30-ALZHEIMER"
+              ]
+            }
+          ]
         },
         {
           "id": "results",
           "label": "Results",
           "title": "",
-          "paragraph": "The Alzheimer’s trial randomized 25 patients; 14 stopped early and cognitive outcomes did not differ from placebo. In the ovarian trial, grade 3–4 toxicity occurred in 55% versus 3% with tamoxifen.",
+          "paragraph": "The Alzheimer’s trial randomized 25 patients; 14 stopped early and cognitive outcomes did not differ from placebo. In the ovarian trial, grade 3-4 toxicity occurred in 55% versus 3% with tamoxifen.",
           "sources": [
             "P-D30-ALZHEIMER",
             "P-D30-OVARIAN"
           ],
           "sentences": [
             {
-              "text": "The Alzheimer’s trial randomized 25 patients; 14 stopped early and cognitive outcomes did not differ from placebo. In the ovarian trial, grade 3–4 toxicity occurred in 55% versus 3% with tamoxifen.",
+              "text": "The Alzheimer’s trial randomized 25 patients; 14 stopped early and cognitive outcomes did not differ from placebo. In the ovarian trial, grade 3-4 toxicity occurred in 55% versus 3% with tamoxifen.",
               "sources": [
                 "P-D30-ALZHEIMER",
                 "P-D30-OVARIAN"
@@ -20609,7 +20763,7 @@
           "id": "evidence",
           "label": "Evidence",
           "title": "",
-          "paragraph": "Myeloma labeling includes randomized efficacy studies; ovarian evidence is phase III; the small Alzheimer’s trial suffered high attrition.",
+          "paragraph": "Myeloma labeling includes randomized efficacy studies; ovarian evidence is phase III; the small Alzheimer’s trial suffered high attrition. The Alzheimer’s trial randomized 25 patients; 14 stopped early and cognitive outcomes did not differ from placebo. In the ovarian trial, grade 3-4 toxicity occurred in 55% versus 3% with tamoxifen.",
           "sources": [
             "CTX-D30-LABEL",
             "P-D30-OVARIAN",
@@ -20622,6 +20776,13 @@
                 "CTX-D30-LABEL",
                 "P-D30-OVARIAN",
                 "P-D30-ALZHEIMER"
+              ]
+            },
+            {
+              "text": "The Alzheimer’s trial randomized 25 patients; 14 stopped early and cognitive outcomes did not differ from placebo. In the ovarian trial, grade 3-4 toxicity occurred in 55% versus 3% with tamoxifen.",
+              "sources": [
+                "P-D30-ALZHEIMER",
+                "P-D30-OVARIAN"
               ]
             }
           ],
@@ -20705,12 +20866,6 @@
       "entityId": "D30",
       "scope": "An established myeloma medicine whose other repurposing trials show disease-specific benefits, limitations, and harms.",
       "coverageLabel": "",
-      "originalUse": {
-        "text": "historical sedation and pregnancy nausea",
-        "sourceIds": [
-          "CP027"
-        ]
-      },
       "candidateLinks": [
         {
           "id": "C03",
