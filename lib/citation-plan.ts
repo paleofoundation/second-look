@@ -1,3 +1,4 @@
+import canonicalDrugPages from '@/data/canonical-drug-pages.json';
 import {suitabilityCitationIds} from './treatment-suitability';
 import sentenceMapData from '@/data/outcome-sentence-maps.json';
 import {content,synthesisRows,isPrimarySource,type Guide,type Source,type SynthesisRow} from './content';
@@ -66,7 +67,7 @@ export function guideCitationOrder(guide:Guide,sources:Source[],additionalGroups
    return [sectionSources(articleModule.sections),
     articleModule.label==='Overview'?sectionSources(benefitSections.map(section=>({...section,questions:[]}))):[],
     ((guide.type==='Drug'&&articleModule.label==='Contraindications')||(guide.type==='Condition'&&articleModule.label==='Safety'))?suitabilityCitationIds(guide.slug):[],
-    articleModule.kind==='mechanisms'?mechanismCitationIds(guide,'evidence'):[],
+    articleModule.kind==='mechanisms'?mechanismCitationIds(guide,canonicalDrugPages.pages.includes(guide.slug)?'article':'evidence'):[],
     articleModule.kind==='faqs'?guide.faqs.flatMap(faq=>faq.sentences?faq.sentences.flatMap(sentence=>sentence.sources):faq.sources):[],
     articleModule.kind==='faqs'?movedQuestions.flatMap(question=>question.sentences?question.sentences.flatMap(sentence=>sentence.sources):question.sources||[]):[],
     sectionSources(articleModule.scoped?.sections||[]),

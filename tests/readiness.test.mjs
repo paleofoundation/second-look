@@ -170,17 +170,22 @@ test('metformin passes, methylene blue keeps cited mechanisms and dosing and sti
   assert.equal(methyleneDosing.pass, true);
   const methyleneDosingWords = Number(methyleneDosing.detail.match(/^(\d+) dosing words/)[1]);
   assert.ok(methyleneDosingWords >= MIN_DOSING_WORDS);
-  for (const id of ['body-words', 'distinct-dois', 'evidence-table', 'safety', 'quality', 'study-summaries']) {
+  for (const id of ['body-words', 'distinct-dois', 'evidence-table', 'study-summaries']) {
     assert.ok(methylene.failing.includes(id), `${methylene.path} should fail ${id}`);
   }
+  assert.equal(methylene.checks.find(item => item.id === 'safety').pass, true);
+  assert.equal(methylene.checks.find(item => item.id === 'quality').pass, true);
   const itraconazoleDosing = itraconazole.checks.find(item => item.id === 'dosing');
   assert.equal(itraconazoleDosing.pass, false);
   const itraconazoleDosingWords = Number(itraconazoleDosing.detail.match(/^(\d+) dosing words/)[1]);
   assert.ok(itraconazoleDosingWords < MIN_DOSING_WORDS, `${itraconazole.path} should fail dosing`);
   assert.ok(itraconazole.failing.includes('dosing'), `${itraconazole.path} should fail dosing`);
-  for (const id of ['body-words', 'distinct-dois', 'mechanism-subsections', 'evidence-table', 'dosing', 'safety', 'quality', 'study-summaries']) {
+  for (const id of ['body-words', 'distinct-dois', 'mechanism-subsections', 'evidence-table', 'study-summaries']) {
     assert.ok(melphalan.failing.includes(id), `${melphalan.path} should fail ${id}`);
   }
+  assert.equal(melphalan.checks.find(item => item.id === 'dosing').pass, true);
+  assert.equal(melphalan.checks.find(item => item.id === 'safety').pass, true);
+  assert.equal(melphalan.checks.find(item => item.id === 'quality').pass, true);
   assert.deepEqual(results.filter(result => result.pass).map(result => result.path), ['/drugs/metformin']);
   const queue = deepenQueue(results);
   assert.equal(queue[0].path, '/drugs/methylene-blue');
