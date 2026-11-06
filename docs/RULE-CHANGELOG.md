@@ -1,5 +1,11 @@
 # Second Look rule changelog
 
+## 2026-11-06: methylene blue Safety section deepened
+
+Source: scheduled fill run (`.claude/scheduled-fill-prompt.md`), branch `fill/remaprx-methylene-blue-safety-prose-2026-11-06`. Scope: the Safety section of `/drugs/methylene-blue` in `data/content.json` and `data/public-content.json` now reports, from the open-access PMC full texts, the septic shock trial adverse events (urine discoloration 42 of 45, methemoglobin 2.9% versus 0.5%, exclusion of G6PD deficiency, phenothiazine or dye allergy and recent SSRI use), the disc injection neurotoxicity caution and the child case report. DOIs used: 10.1186/s13054-023-04397-7, 10.5535/arm.2012.36.5.657, 10.7759/cureus.40213, 10.1007/s00403-022-02448-7. No new DOI, grade or outcome row.
+
+Superseded behavior: the section was three short sentences. Body words rose from 3,164 to 3,410 of 5,000. The evidence table and the 15-DOI floor stay open (the RRX-GAP-0582 deposit lists only 8 DOIs). Release status: PR with label `evidence-fill`, merged only by the evidence gate. Remaining work: evidence table, more body words, new deposit for distinct DOIs.
+
 ## 2026-11-06: methylene blue Results section deepened
 
 Source: scheduled fill run (`.claude/scheduled-fill-prompt.md`), branch `fill/remaprx-methylene-blue-results-2026-11-06`. Scope: the Results section of `/drugs/methylene-blue` in `data/content.json` and `data/public-content.json` now reports the numbers from the open-access PMC full texts of the septic shock trial (10.1186/s13054-023-04397-7), the intradiscal back pain study (10.5535/arm.2012.36.5.657) and the urea versus Er:YAG toenail trial (10.1007/s00403-022-02448-7). Figures that the source papers state inconsistently (the back pain 12-month success count, the toenail adverse-event statements) were left out. No new DOI, grade or outcome row was added.
