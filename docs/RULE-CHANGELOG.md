@@ -1,5 +1,15 @@
 # Second Look rule changelog
 
+## 2026-11-06: methylene blue Quality section meets the formulation-difference check
+
+Source: pull request 57, branch `fill/remaprx-methylene-blue-quality-2026-11-06`, Evidence gate run 42147351108 and Rules and research continuity run 42147349899. Both failed `tests/readiness.test.mjs` with `/drugs/methylene-blue should fail quality` after the fill added a cited Quality section. Scope: that readiness fixture. Supersedes the stale expectation that methylene blue still fails `quality`. The quality rule is unchanged: a cited Quality section that names a formulation or product difference, not only the generic bioequivalence sentence.
+
+Contract: `docs/READY.md` and `docs/PROJECT-RULES.md`. The section states that the preparation differed by use: each 100 mg septic-shock dose diluted in 500 ml of 0.9% sodium chloride for a 6-hour infusion, disc injection combined with 2% lidocaine (the planned trial also adds contrast, 10 mg of methylthioninium in 1 ml), and a topical 2% aqueous solution. The disc injection article does not state the concentration, and no study on file compared brands, grades, or manufacturers. The sentences cite sources already on the page from deposit `RRX-GAP-0582`. No new DOI was added.
+
+The page has 2,112 substantive words, 8 distinct valid DOIs, three cited mechanism subsections, a passing dosing check, a passing safety check, and a passing quality check. It still fails evidence groups, study summaries, body length, and the 15-DOI floor. Those gaps stay open. `/drugs/melphalan` remains the quality-failure pin: no drug-specific Quality section. It also remains the safety-failure pin. `/drugs/itraconazole` remains the dosing-failure pin. Metformin still passes.
+
+Implementation: `tests/readiness.test.mjs`. The Quality prose is already in `data/content.json` and `data/public-content.json` on this branch. Verification on this branch: `node tests/readiness.test.mjs`, `node tests/search-indexing.test.mjs`, `node tests/require-governance-check.test.mjs`, and `node scripts/check-governance.mjs` (citation gate PASS, 8 methylene blue DOIs on Crossref). This does not make methylene blue indexable and does not claim scientific approval. Remaining: sourced fills still have to close the open methylene blue and melphalan readiness gaps, including the 30-DOI deepening target.
+
 ## 2026-11-05: methylene blue safety rows meet the contraindication and interaction check
 
 Source: pull request 56, branch `fill/remaprx-methylene-blue-safety-2026-11-05`, Evidence gate run 42107021488 and Rules and research continuity run 42107021489. Both failed `tests/readiness.test.mjs` with `/drugs/methylene-blue should fail safety` after the fill added cited contraindications and interactions. Scope: that readiness fixture, and the ProvayBlue label date on the new suitability source. Supersedes the stale expectation that methylene blue still fails `safety`. The safety rule is unchanged: a cited Safety section of at least 20 words, plus cited contraindications and interactions.
