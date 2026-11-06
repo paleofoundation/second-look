@@ -1,5 +1,11 @@
 # Second Look rule changelog
 
+## 2026-11-06: methylene blue Results section deepened
+
+Source: scheduled fill run (`.claude/scheduled-fill-prompt.md`), branch `fill/remaprx-methylene-blue-results-2026-11-06`. Scope: the Results section of `/drugs/methylene-blue` in `data/content.json` and `data/public-content.json` now reports the numbers from the open-access PMC full texts of the septic shock trial (10.1186/s13054-023-04397-7), the intradiscal back pain study (10.5535/arm.2012.36.5.657) and the urea versus Er:YAG toenail trial (10.1007/s00403-022-02448-7). Figures that the source papers state inconsistently (the back pain 12-month success count, the toenail adverse-event statements) were left out. No new DOI, grade or outcome row was added.
+
+Superseded behavior: the section was three short sentences with no numbers. Body words rose from 3,136 to 3,164 of 5,000. The evidence table (no assessed outcome row exists) and the 15-DOI floor (8 distinct; the RRX-GAP-0582 deposit lists only these 8) stay open. Verification: `node scripts/readiness.mjs`, `node scripts/check-governance.mjs` (PASS) and `npm run build`. Release status: PR with label `evidence-fill`, merged only by the evidence gate. Remaining work: evidence table, more body words, and distinct DOIs, which need a new deposit.
+
 ## 2026-11-06: methylene blue study summaries meet the study-summary check
 
 Source: scheduled fill run (`.claude/scheduled-fill-prompt.md`), branch `fill/remaprx-methylene-blue-study-summaries-2026-11-06`. Scope: the eight primary sources on `/drugs/methylene-blue` (deposit RRX-GAP-0582) gained a preview of at least 20 words plus intervention, comparator, sample and decisive-limit text in `data/content.json` and `data/public-content.json`. Every value comes from the open-access PMC full text or abstract. DOIs used: 10.1186/s13054-023-04397-7, 10.1186/s13063-024-08439-5, 10.5535/arm.2012.36.5.657, 10.1186/s13063-015-1058-6, 10.1007/s00403-022-02448-7, 10.1590/abd1806-4841.20142197, 10.1590/abd1806-4841.20132180, 10.7759/cureus.40213.
