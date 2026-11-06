@@ -1,5 +1,11 @@
 # Second Look rule changelog
 
+## 2026-11-06: methylene blue study summaries meet the study-summary check
+
+Source: scheduled fill run (`.claude/scheduled-fill-prompt.md`), branch `fill/remaprx-methylene-blue-study-summaries-2026-11-06`. Scope: the eight primary sources on `/drugs/methylene-blue` (deposit RRX-GAP-0582) gained a preview of at least 20 words plus intervention, comparator, sample and decisive-limit text in `data/content.json` and `data/public-content.json`. Every value comes from the open-access PMC full text or abstract. DOIs used: 10.1186/s13054-023-04397-7, 10.1186/s13063-024-08439-5, 10.5535/arm.2012.36.5.657, 10.1186/s13063-015-1058-6, 10.1007/s00403-022-02448-7, 10.1590/abd1806-4841.20142197, 10.1590/abd1806-4841.20132180, 10.7759/cureus.40213.
+
+Superseded behavior: the page failed `study-summaries` (338 words, 0 of 8 qualifying previews). It now passes. It still fails evidence groups (no assessed outcome row exists, so none was invented), body length (3,136 of 5,000 words) and the 15-DOI floor (8 distinct). `tests/readiness.test.mjs` now expects `study-summaries` to pass. Verification: `node scripts/readiness.mjs`, `node scripts/check-governance.mjs`, `node tests/readiness.test.mjs`, `node tests/search-indexing.test.mjs` and `npm run build`. Release status: PR with label `evidence-fill`, merged only by the evidence gate. Remaining work: evidence table, body words, distinct DOIs, then melphalan.
+
 ## 2026-11-06: methylene blue Quality section meets the formulation-difference check
 
 Source: pull request 57, branch `fill/remaprx-methylene-blue-quality-2026-11-06`, Evidence gate run 42147351108 and Rules and research continuity run 42147349899. Both failed `tests/readiness.test.mjs` with `/drugs/methylene-blue should fail quality` after the fill added a cited Quality section. Scope: that readiness fixture. Supersedes the stale expectation that methylene blue still fails `quality`. The quality rule is unchanged: a cited Quality section that names a formulation or product difference, not only the generic bioequivalence sentence.
