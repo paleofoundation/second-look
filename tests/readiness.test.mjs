@@ -174,7 +174,10 @@ test('metformin passes, methylene blue keeps cited mechanisms and dosing and sti
   assert.equal(methyleneSafety.pass, true);
   assert.match(methyleneSafety.detail, /contraindications populated/);
   assert.match(methyleneSafety.detail, /interactions populated/);
-  for (const id of ['body-words', 'distinct-dois', 'evidence-table', 'quality', 'study-summaries']) {
+  const methyleneQuality = methylene.checks.find(item => item.id === 'quality');
+  assert.equal(methyleneQuality.pass, true);
+  assert.match(methyleneQuality.detail, /formulation or product difference/);
+  for (const id of ['body-words', 'distinct-dois', 'evidence-table', 'study-summaries']) {
     assert.ok(methylene.failing.includes(id), `${methylene.path} should fail ${id}`);
   }
   const itraconazoleDosing = itraconazole.checks.find(item => item.id === 'dosing');
