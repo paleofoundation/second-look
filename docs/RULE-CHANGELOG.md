@@ -1,10 +1,18 @@
 # Second Look rule changelog
 
+## 2026-11-05: canonical drug pages record real identifiers for sources they already cite
+
+Source: citation-gate failures on pull requests 48 through 52 after the 2026-11-05 gate reliability fix. Scope: identifiers on source records those pages already cite. This does not add studies, change grades, or change gate logic. It supersedes the batch 01 note that the gate failure would be retained.
+
+A regulatory label or agency page keeps its public URL and is explicitly typed `regulatory-label` or `agency-page`, which the gate already allows. A journal article received the DOI that Crossref resolved for that record. Two articles whose Europe PMC records have no DOI are typed `no-doi-article` with the PubMed id Europe PMC returned. DOI and PubMed strings that were not already in `research/deposits` or `research/corpus` are listed in `research/deposits/RRX-DRUG-CANONICAL-CITATIONS-20261105/MANIFEST.csv` as identifier records, not full texts. Retracted DOI 10.1002/prp2.954 is not used as evidence. No supplier dossier was added. Forty-three evidence assessments and forty-one outcome summaries changed only in those identifier fields. Their grades, effects, rationales, and judgment dates stay in place. Receipt: `editorial/outcome-summary/reassessment-2026-11-05-canonical-identifiers.json`.
+
 ## November 5, 2026: all-drug Metformin-style editorial batches
 
 Source: owner's explicit all-drug rewrite request, ivermectin first; sole style reference is the live Metformin page, which must not change. Contract: DRUG-CANONICAL-STYLE.md. Scope: 33 non-Metformin live drug pages, existing page citations and official U.S. labels only. Supersedes alternate reference-site style patterns, one-drug continuation stops and routine publication within this task. Work remains on bounded review branches/PRs without merging or auto-merge. Preserve supported A–F grades, independent-trial counts, companion reports, negative findings and retraction exclusions. Missing-source notes replace unsupported expansion. No scientific approval is inferred.
 
 Batch 01 implements ivermectin visible prose, oral-label dosing, suitability distinctions, eight public four-question source summaries and genuine update history. The existing source records, grades and trial identities are retained. TypeScript, canonical content, evidence grading and article navigation checks pass. All-profile section checking exposes inherited missing Contraindications prose on methylene blue. Governance invokes the citation gate, which rejects existing ivermectin records without deposited DOIs, including the official label. This gate failure is retained; no DOI is invented, retracted source concealed or gate weakened. Exact scope/gaps and subsequent validation are maintained in the batch packet. No merge or deployment.
+
+Batch 02: aspirin, atorvastatin, celecoxib, clomipramine, disulfiram, doxycycline, fenbendazole and fluconazole. Reused existing sentence maps, outcome findings and source metadata; moved Benefits prose into the visible Overview, preserved follow-up FAQs, made mechanism explanations visible, added label-supported suitability rows and completed the public four-question source-summary projections. No source, grade, result or trial-family record is invented. Thin sections and missing source details are itemized by URL in batch-02-report.json. Canonical content and navigation/citation SSR checks plus TypeScript pass; broader validation and no-merge PR state remain separately recorded. The bounded rewrite script rejects Metformin and more than eight slugs; it is not a historical corpus generator.
 
 ## 2026-11-05: citation gate retries rate limits and accepts explicit non-DOI sources
 
