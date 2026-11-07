@@ -1,5 +1,6 @@
 # Second Look rule changelog
 
+<<<<<<< HEAD
 ## November 4, 2026 — All prose-section minimum and portfolio work request
 
 Source: owner's supplied Metformin paragraph, instruction to make its word/character amount canonical, clarification “not just mechanism of action. Prose sections,” and request to chip/work through drug and condition pages until finished on GPT-6.1 medium at standard speed. This supersedes the initial mechanism-only interpretation. [PROSE-SECTIONS.md](PROSE-SECTIONS.md) records the 113-word/845-character minimum, exact retained benchmark, normalized Unicode/whitespace counting and source-bound prose expectations. The former MECHANISM-PROSE path remains a compatibility pointer. Applies per prose section across existing and future pages; structured items are not independent prose quotas.
@@ -9,6 +10,13 @@ Started from freshly fetched production main c63f817 in isolated branch `codex/p
 Existing-record editorial candidates are drafts requiring source/coherence review, not accepted public content. Sparse official-label summaries require prospective context recovery under `research/batches/RRX-PROSE-MINIMUM-20261104/PLAN-v2.md`; acquisition has not started at this checkpoint. Source/gap counts, acceptance, validation and publication must be recorded as they occur. The existing DOI-only citation gate conflicts with necessary non-DOI official contexts; no exception, fabricated DOI, gate weakening or publication is claimed. Historical receipts, protected source claims, private review bodies and current outcome/approval states are preserved. Upstream rule synchronization remains pending.
 
 Work-chip preparation checkpoint: `editorial/prose-minimum-20261104/WORK-PACKETS.md` defines separate Drugs, Conditions and final Integration tasks, with nonoverlapping candidate ownership and one canonical integrator. The per-page board covers all 66 pages. Three GPT-6.1-medium draft returns contain 329 section paragraphs and 62 mechanism summaries; direct count/paragraph-map checks pass for those candidates, but scientific/editorial acceptance remains pending. Ninety-nine explicit source-depth gaps are retained. Context-plan review is HOLD for four specified prerequisites in `plan-review.json`; no recovery/extraction started. Four prose-parser tests and governance pass. The requested work chips launch only when activated; they are not claimed as already-running independent chats or automations. No canonical scientific content was integrated or published.
+=======
+## 2026-11-07: methylene blue Results section extended with the two Brazilian toenail studies
+
+Source: scheduled fill run (`.claude/scheduled-fill-prompt.md`), branch `fill/remaprx-methylene-blue-results-onychomycosis-2026-11-07`. Scope: the Results section of `/drugs/methylene-blue` in `data/content.json` and `data/public-content.json` now reports, from the open-access PMC full texts, the 22-patient open-label study (10.1590/abd1806-4841.20142197) and the four-patient endonyx case series (10.1590/abd1806-4841.20132180): light protocol, response rates by group and week, and stated limitations. The study's 63.3% versus 63.6% inconsistency and its unquantified mycological cure are noted as the paper reports them. No new DOI, grade or outcome row.
+
+Superseded behavior: the Results section did not cover these two sources. Release status: PR with label `evidence-fill`, merged only by the evidence gate. Remaining work: evidence table, more body words, new deposit for distinct DOIs (the RRX-GAP-0582 deposit lists only 8).
+>>>>>>> origin/main
 
 ## 2026-11-06: methylene blue Safety section deepened
 
