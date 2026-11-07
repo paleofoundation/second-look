@@ -1,5 +1,11 @@
 # Second Look rule changelog
 
+## 2026-11-07: methylene blue Overview deepened from the septic shock protocol and the urea/laser toenail study
+
+Source: scheduled fill run (`.claude/scheduled-fill-prompt.md`), branch `fill/remaprx-methylene-blue-overview-2026-11-07`. Scope: the Overview section of `/drugs/methylene-blue` in `data/content.json` and `data/public-content.json` gained six cited sentences from the open-access PMC full texts of the refractory septic shock protocol (10.1186/s13063-024-08439-5: five Guangdong centers, 100 patients, 2 mg/kg bolus then 0.5 mg/kg/h for 48 hours, primary outcome total vasopressor dose) and the urea versus Er:YAG laser toenail study (10.1007/s00403-022-02448-7: 9 sessions over 16 weeks, mycological cure 70% versus 40% at 40 weeks, no side effects).
+
+Superseded behavior: the Overview was three sentences. Release status: PR with label `evidence-fill`, merged only by the evidence gate. Remaining work: evidence table (no assessed outcome row exists), more body words, new deposit for distinct DOIs (the RRX-GAP-0582 deposit lists only 8, all already cited).
+
 ## 2026-11-07: methylene blue Results section extended with the two Brazilian toenail studies
 
 Source: scheduled fill run (`.claude/scheduled-fill-prompt.md`), branch `fill/remaprx-methylene-blue-results-onychomycosis-2026-11-07`. Scope: the Results section of `/drugs/methylene-blue` in `data/content.json` and `data/public-content.json` now reports, from the open-access PMC full texts, the 22-patient open-label study (10.1590/abd1806-4841.20142197) and the four-patient endonyx case series (10.1590/abd1806-4841.20132180): light protocol, response rates by group and week, and stated limitations. The study's 63.3% versus 63.6% inconsistency and its unquantified mycological cure are noted as the paper reports them. No new DOI, grade or outcome row.
