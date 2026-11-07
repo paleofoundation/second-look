@@ -1,0 +1,24 @@
+✔ parseRetryAfter reads seconds and HTTP dates, and caps a long wait (2.501541ms)
+✔ Crossref HTTP 429 retries with backoff and then accepts the work (1.319916ms)
+✔ Crossref HTTP 429 after the retry budget does not fail the citation (0.161167ms)
+✔ a later DOI does not repeat the full 429 backoff after one identifier stays limited (0.299375ms)
+✔ HTTP 404 and a retraction fail without a retry, and HTTP 500 retries (1.842083ms)
+✔ a verified Crossref result is reused from the file cache (2.641541ms)
+✔ explicit regulatory and agency sources pass without a DOI or a Crossref call (0.3265ms)
+✔ a non-DOI type still needs a public URL, and a host name is not a type (0.110042ms)
+✔ a DOI is still checked when a non-DOI type is also set (0.131125ms)
+✔ missing, retracted, and rate-limited DOI results keep their own outcomes (0.193125ms)
+✔ a no-DOI article passes only when Europe PMC has that PubMed id and no DOI (0.314209ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 11
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 16.206958
+gate: 65 changed guide(s): /drugs/metformin, /conditions/long-covid, /drugs/nirmatrelvir, /drugs/itraconazole, /drugs/fluvoxamine, /drugs/naltrexone, /drugs/pramipexole, /drugs/sirolimus, /drugs/ivermectin, /drugs/mebendazole, /drugs/fenbendazole, /drugs/guanfacine, /drugs/maraviroc, /drugs/atorvastatin, /drugs/rituximab, /drugs/celecoxib, /drugs/minocycline, /drugs/doxycycline, /drugs/disulfiram, /drugs/propranolol, /drugs/simvastatin, /drugs/niclosamide, /drugs/hydroxychloroquine, /drugs/aspirin, /drugs/pioglitazone, /drugs/memantine, /drugs/sildenafil, /drugs/valproic-acid, /drugs/vorinostat, /drugs/clomipramine, /drugs/thalidomide, /conditions/acute-covid-19, /conditions/epithelial-ovarian-or-fallopian-tube-carcinoma, /conditions/glioblastoma, /conditions/fibromyalgia, /conditions/myalgic-encephalomyelitis-chronic-fatigue-syndrome, /conditions/compulsive-sexual-behavior-disorder, /conditions/persistent-genital-arousal-disorder-genitopelvic-dysesthesia, /conditions/treatment-resistant-depression, /conditions/periodontitis, /conditions/crohn-disease, /conditions/head-and-neck-squamous-cell-carcinoma, /conditions/prostate-cancer, /conditions/non-small-cell-lung-cancer, /conditions/breast-cancer, /conditions/colorectal-cancer, /conditions/pancreatic-cancer, /conditions/melanoma, /conditions/basal-cell-carcinoma, /conditions/hepatocellular-carcinoma, /conditions/multiple-myeloma, /conditions/acute-myeloid-leukemia, /conditions/chronic-myeloid-leukemia, /conditions/parkinson-disease, /conditions/schizophrenia, /conditions/alzheimer-disease, /conditions/multiple-sclerosis, /conditions/amyotrophic-lateral-sclerosis, /conditions/vitiligo, /conditions/sarcopenia, /conditions/type-2-diabetes, /drugs/fluconazole, /conditions/aging, /drugs/methylene-blue, /drugs/melphalan; 325 DOI(s) checked on Crossref
+gate: FAIL
+- /drugs/itraconazole: P-D07-MYELOMA-2016 DOI 10.7534/j.issn.1009-2137.2016.05.032 failed: Crossref HTTP 404
+- /conditions/multiple-myeloma: P-D07-MYELOMA-2016 DOI 10.7534/j.issn.1009-2137.2016.05.032 failed: Crossref HTTP 404
+Citation gate failed (scripts/check-citation-gate.mjs)
