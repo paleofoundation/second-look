@@ -1,0 +1,65 @@
+{
+  "id": "PROSE-MINIMUM-COMPLETION-20261107",
+  "completedAt": "2026-11-07T07:41:44Z",
+  "status": "local prose implementation complete; live publication held by existing citation gate",
+  "branch": "codex/prose-minimum-20261104",
+  "initialBase": "34b2b21a33a72dc59310d091da19db02606579c6",
+  "prose": {
+    "pages": 66,
+    "sections": 504,
+    "failures": 0,
+    "minimumWords": 113,
+    "minimumCharactersIncludingSpaces": 845,
+    "measurement": "Actual Article SSR; headings, superscript citations, details bodies, tables and hidden content excluded; empty required modules fail"
+  },
+  "preserved": [
+    "all 70 synthesis rows byte-identical",
+    "all 68 public outcome summaries byte-identical",
+    "all confidence grades and five-domain judgments unchanged",
+    "all benefit letters, effects, trial identities and counts unchanged",
+    "all private review and guide access states unchanged",
+    "existing retraction exclusions and inline drug links retained",
+    "newer production research fills retained; final synchronization recorded separately"
+  ],
+  "sourceWork": {
+    "officialContextReceipts": 42,
+    "rawBytes": "hash-addressed outside Git at /private/tmp/remaprx-prose-context-20261107",
+    "bibliography": "exact existing source identities only; manifests explicitly distinguish identifier verification from full-text possession",
+    "metadataReassessment": "metadata-identity-reassessment.json",
+    "noHumanApprovalClaim": true
+  },
+  "mechanismRepair": "mechanism-identity-repair.json",
+  "verification": {
+    "renderedProse": "PASS",
+    "newTests": "8 passed",
+    "allProfileSSR": "66 passed",
+    "canonicalContentAndReaderClosure": "PASS",
+    "types": "PASS",
+    "productionNode22Build": "PASS (Node 22.23.4)",
+    "builtClientPrivacy": "PASS; 41 client payloads scanned",
+    "navigation": "70 articles passed",
+    "evidenceSSR": "70 articles passed",
+    "readinessAndIndexing": "PASS; thresholds unchanged; only Metformin ready",
+    "sourceContextReceipts": "42 passed actual hash and identity checks",
+    "candidateReapplication": "byte-identical data files",
+    "desktopBrowser": "Melphalan; 1280px; no document overflow",
+    "mobileBrowser": "Periodontitis; 390x844; no document overflow",
+    "citationGate": "FAIL; one existing source fails on two pages"
+  },
+  "releaseBlocker": {
+    "sourceId": "P-D07-MYELOMA-2016",
+    "pmid": "27784375",
+    "doi": "10.7534/j.issn.1009-2137.2016.05.032",
+    "failure": "Crossref HTTP 404",
+    "pages": [
+      "/drugs/itraconazole",
+      "/conditions/multiple-myeloma"
+    ],
+    "handling": "Accurate Europe PMC DOI and PMID retained. No fabricated replacement, false no-DOI exception, gate weakening or silent removal of dependent claims. Remains draft; not published."
+  },
+  "publication": {
+    "merged": false,
+    "deployed": false,
+    "pullRequest": null
+  }
+}

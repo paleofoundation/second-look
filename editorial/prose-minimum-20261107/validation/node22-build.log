@@ -1,0 +1,139 @@
+v22.23.4
+
+> site-creator-vinext-starter@0.1.0 build
+> node scripts/check-prose-minimum.mjs && node scripts/run-framework.mjs build
+
+PASS: 66 pages, 504 rendered prose sections; 0 below 113 words / 845 characters.
+{
+  "status": "PASS",
+  "syntheses": 70,
+  "summaries": 68,
+  "uniqueRCTs": 45,
+  "missingRCTParticipantCounts": 3,
+  "letters": {
+    "A": 0,
+    "B": 0,
+    "C": 6,
+    "D": 16,
+    "E": 29,
+    "F": 6,
+    "ungraded": 11
+  },
+  "longCovidMetformin": {
+    "rctCount": 3,
+    "participants": 4909,
+    "participantBasis": "Participants in the included randomized comparisons, counted once per trial; see study details for enrollment and analysis populations.",
+    "trialFamilyIds": [
+      "S-COVIDOUT-2023",
+      "S-ACTIV6-2026",
+      "S-KOREA-2026"
+    ],
+    "sourceIds": [
+      "P-COVIDOUT-2023",
+      "P-ACTIV6-2026",
+      "P-KOREA-2026"
+    ],
+    "trials": [
+      {
+        "id": "S-COVIDOUT-2023",
+        "participants": 1431,
+        "participantBasis": "1431 randomized in COVID-OUT; study-level population, not the 1126-person Long COVID follow-up subset.",
+        "sourceIds": [
+          "P-COVIDOUT-2023"
+        ]
+      },
+      {
+        "id": "S-ACTIV6-2026",
+        "sourceIds": [
+          "P-ACTIV6-2026"
+        ],
+        "participants": 3214,
+        "participantBasis": "3214 randomized in ACTIV-6; 2983 in the recorded analysis population."
+      },
+      {
+        "id": "S-KOREA-2026",
+        "participants": 264,
+        "participantBasis": "264 participants in the metformin and placebo comparison (132 per arm); excludes the separate ursodeoxycholic-acid arm.",
+        "sourceIds": [
+          "P-KOREA-2026"
+        ]
+      }
+    ]
+  },
+  "checks": [
+    "source and row closure",
+    "explicit source-located assessments",
+    "stale input and projection rejection",
+    "held/computational grade rejection",
+    "overlap-aware trial and participant totals",
+    "conflicting denominator rejection",
+    "unknown is null",
+    "single-summary explanation preserved"
+  ]
+}
+{"status":"PASS","method":"selected-source-editorial-v1","assessedOutcomes":70,"grades":{"High":1,"Moderate":30,"Low":39}}
+{"status":"PASS","projections":10,"fields":30872,"payloads":0,"mechanismContexts":2}
+Verified 66 guide marketing hashes without mutation.
+Guide edition/preview hashes match; no full guide is present in public downloads.
+
+  vinext build  (Vite 8.0.13)
+
+[1/5] analyze client references...
+[2Ktransforming...✓ 394 modules transformed.
+rendering chunks...
+✓ built in 2.94s
+[2/5] analyze server references...
+[2Ktransforming...✓ 333 modules transformed.
+rendering chunks...
+✓ built in 532ms
+[3/5] build rsc environment...
+[2Ktransforming...✓ 391 modules transformed.
+rendering chunks...
+computing gzip size...
+✓ built in 1.74s
+[4/5] build client environment...
+[2Ktransforming...✓ 2137 modules transformed.
+rendering chunks...
+computing gzip size...
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 1.95s
+[5/5] build ssr environment...
+[2Ktransforming...✓ 335 modules transformed.
+rendering chunks...
+computing gzip size...
+✓ built in 848ms
+[0m
+  Route (app)
+  ┌ ƒ /                                         
+  ├ ƒ /:path+                                   
+  ├ λ /account/continue                         
+  ├ ƒ /account/intake                           
+  ├ ƒ /account/physician-packets                
+  ├ ƒ /account/profile                          
+  ├ λ /api/billing/portal                       
+  ├ λ /api/checkout                             
+  ├ λ /api/corrections                          
+  ├ λ /api/guides/:editionId/download           
+  ├ λ /api/guides/:editionId/reader             
+  ├ λ /api/library                              
+  ├ λ /api/library/guides                       
+  ├ λ /api/physician-packets                    
+  ├ λ /api/physician-packets/:condition         
+  ├ λ /api/physician-packets/:condition/download
+  ├ λ /api/profile                              
+  ├ λ /api/purchases                            
+  ├ λ /api/reviews/:id                          
+  ├ λ /api/stripe/webhook                       
+  ├ ƒ /guides/read/:editionId                   
+  ├ λ /robots.txt                               
+  ├ λ /sitemap.xml                              
+  └ λ /sitemaps/:part                           
+
+  λ API  ƒ Dynamic
+
+  Build complete. Run `vinext start` to start the production server.
+

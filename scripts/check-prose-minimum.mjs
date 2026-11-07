@@ -10,13 +10,12 @@ const load = createProseSSRLoader(root);
 const {Article} = load(path.join(root, 'components/article.tsx'));
 const {ThemeProvider} = load(path.join(root, 'components/shared-theme/theme.tsx'));
 const {content, guideUrl} = load(path.join(root, 'lib/content.ts'));
-const {drugMechanismFor} = load(path.join(root, 'lib/mechanisms.ts'));
 const guides = content.guides.filter(guide => ['Drug', 'Condition'].includes(guide.type));
 const pages = guides.map(guide => ({
   guideId: guide.id, slug: guideUrl(guide), type: guide.type,
   sections: guide.sections.filter(section => section.paragraph && section.label !== 'Connections')
     .map(section => ({id: section.id, label: section.label, required: false})),
-  hasMechanismProse: !!drugMechanismFor(guide),
+  hasMechanismProse: true,
   html: renderToStaticMarkup(React.createElement(ThemeProvider,
     {config: {mainId: 'main', identity: {name: 'RemapRx', homeHref: '/'}}},
     React.createElement(Article, {guide, sources: guide.sourceIds.map(id => content.sources.find(source => source.id === id)).filter(Boolean)}))),

@@ -1,0 +1,188 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "remaprx-prose-context-receipt-v3",
+  "type": "object",
+  "required": [
+    "sourceId",
+    "url",
+    "resolvedUrl",
+    "retrievedAt",
+    "accessStatus",
+    "mediaType",
+    "file",
+    "sha256",
+    "identity",
+    "observations",
+    "gaps"
+  ],
+  "properties": {
+    "sourceId": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "resolvedUrl": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "retrievedAt": {
+      "type": "string"
+    },
+    "accessStatus": {
+      "enum": [
+        "full_text",
+        "partial_text",
+        "not_accessible",
+        "identity_mismatch"
+      ]
+    },
+    "mediaType": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "file": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "sha256": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "identity": {
+      "type": "object",
+      "required": [
+        "kind",
+        "name",
+        "formulation",
+        "verified"
+      ],
+      "properties": {
+        "kind": {
+          "enum": [
+            "product",
+            "condition",
+            "general"
+          ]
+        },
+        "name": {
+          "type": "string"
+        },
+        "formulation": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "verified": {
+          "type": "boolean"
+        }
+      }
+    },
+    "observations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "claim",
+          "locator",
+          "scope",
+          "kind"
+        ],
+        "properties": {
+          "claim": {
+            "type": "string"
+          },
+          "locator": {
+            "type": "string"
+          },
+          "scope": {
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "original_use",
+              "mechanism",
+              "safety",
+              "contraindication",
+              "precaution",
+              "interaction",
+              "dosing",
+              "formulation",
+              "condition_context"
+            ]
+          }
+        }
+      }
+    },
+    "gaps": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "reason",
+          "status",
+          "nextAction"
+        ],
+        "properties": {
+          "reason": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "not_reported",
+              "not_extracted",
+              "not_accessible",
+              "not_applicable",
+              "not_checked",
+              "not_identifiable"
+            ]
+          },
+          "nextAction": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "accessStatus": {
+            "const": "full_text"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "file": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "resolvedUrl": {
+            "type": "string",
+            "minLength": 1
+          },
+          "mediaType": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  ]
+}

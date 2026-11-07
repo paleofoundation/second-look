@@ -148,7 +148,7 @@ test('a complete fixture passes and each missing piece fails on its own', () => 
   assert.ok(assessGuide({...guide, type: 'Glossary'}, context).failing.includes('type'));
 });
 
-test('metformin passes, methylene blue keeps cited mechanisms and dosing and still fails, itraconazole fails dosing, and melphalan fails', () => {
+test('metformin passes; source-backed prose fills do not waive the remaining topic readiness requirements', () => {
   const {guides, context} = loadReadinessInputs();
   const results = assessLibrary(guides, context);
   const byPath = new Map(results.map(result => [result.path, result]));
@@ -187,7 +187,12 @@ test('metformin passes, methylene blue keeps cited mechanisms and dosing and sti
   const itraconazoleDosingWords = Number(itraconazoleDosing.detail.match(/^(\d+) dosing words/)[1]);
   assert.ok(itraconazoleDosingWords < MIN_DOSING_WORDS, `${itraconazole.path} should fail dosing`);
   assert.ok(itraconazole.failing.includes('dosing'), `${itraconazole.path} should fail dosing`);
-  for (const id of ['body-words', 'distinct-dois', 'mechanism-subsections', 'evidence-table', 'dosing', 'safety', 'quality', 'study-summaries']) {
+  assert.equal(melphalan.checks.find(item => item.id === 'quality').pass, true, 'The source-bound HEPZATO product and preparation section supplies Quality context without changing the indexing thresholds');
+  const melphalanSafety = melphalan.checks.find(item => item.id === 'safety');
+  assert.equal(melphalanSafety.pass, true, 'Verified product-specific contraindications and interactions now populate the existing safety check');
+  assert.match(melphalanSafety.detail, /contraindications populated/);
+  assert.match(melphalanSafety.detail, /interactions populated/);
+  for (const id of ['body-words', 'distinct-dois', 'mechanism-subsections', 'evidence-table', 'dosing', 'study-summaries']) {
     assert.ok(melphalan.failing.includes(id), `${melphalan.path} should fail ${id}`);
   }
   assert.deepEqual(results.filter(result => result.pass).map(result => result.path), ['/drugs/metformin']);

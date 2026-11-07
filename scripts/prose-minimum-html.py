@@ -48,6 +48,7 @@ for page in pages:
     required = {section['id'] for section in page['sections'] if section.get('required')}
     if page['hasMechanismProse']:
         targets['mechanisms'] = 'Mechanism of Action'
+        required.add('mechanisms')
     parser = ProseParser(targets)
     parser.feed(page['html'])
     for identity, label in targets.items():
