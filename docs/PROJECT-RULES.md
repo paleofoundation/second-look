@@ -12,6 +12,8 @@ Adopted repository handoff: 11 October 2026. These are durable project instructi
 
 ## Authority and reading order
 
+Owner requirement and clarification, November 4, 2026: every prose section must contain at least **113 words and 845 characters including spaces** of substantive, connected, visible narrative prose, excluding citation markers, formatting and structured content. This applies across existing and future drug and condition pages, including Overview, Benefits, Mechanism of Action, Safety, Comparisons, Evidence and equivalent narrative sections. It is a per-section minimum, may span cohesive paragraphs, and is not a minimum for each paragraph or structured item. The owner explicitly corrected the initial mechanism-only interpretation and then requested work across the drug and condition pages until finished, using GPT-6.1 medium at standard speed where supported. [PROSE-SECTIONS.md](PROSE-SECTIONS.md) retains the exact benchmark and counting method. Meeting the count with repetition, unrelated claims or generic warnings fails the requirement. Existing source/protected-content, scientific and release gates remain in force. Active scope, candidates, source gaps and checks are tracked in `editorial/prose-minimum-20261104/` and `research/batches/RRX-PROSE-MINIMUM-20261104/`.
+
 1. Latest explicit owner instruction, within its stated scope.
 2. This project contract and the [rule changelog](RULE-CHANGELOG.md), including unresolved local corrections.
 3. The [pinned One Match Rule](../rules/one-match-rule/ONE-MATCH-RULE.md), with its supporting references and [snapshot manifest](../rules/one-match-rule/snapshot-manifest.json).
@@ -238,3 +240,8 @@ The confidence compiler and `python3 editorial/outcome-summary/build.py` bind th
 ## November 5, 2026: Metformin is the drug-page style reference
 
 The owner's current instruction adopts the live Metformin drug page as the sole style reference for all other live drug pages, beginning with ivermectin. Follow [DRUG-CANONICAL-STYLE.md](DRUG-CANONICAL-STYLE.md). Reuse only each page's already cited sources plus official U.S. labels for labeled information. Preserve Metformin, source identities, supported grades/counts, retraction exclusions and protected review states. The owner explicitly requests sequential batches and PRs without merging; this supersedes routine-fix publication and prior one-drug continuation limits within this task. Short honest missing-source notes take precedence over padding to a prose minimum.
+
+
+## November 7, 2026 — Complete drug and condition prose rollout
+
+Source: owner's “so do it” after confirming the previous canonical-minimum request remained unfinished. Apply [PROSE-SECTIONS.md](PROSE-SECTIONS.md) across all current drug and condition prose sections, not only Mechanism of Action. Each section must reach both 113 visible whitespace words and 845 normalized Unicode characters including spaces. Expand with source-bound topic-specific explanations; tables, citations, disclosures and hidden text do not satisfy the floor. Enforce the actual article render in the production build. This prose-depth rollout includes Metformin, while preserving its design, and is separate from the unmerged canonical-layout batches. It does not waive citation, scientific, protected-content or indexing gates. Exact local implementation, mechanism-identity restoration, source verification, retained grades and release state are recorded in `editorial/prose-minimum-20261107/completion.json`; no publication may be claimed while a required gate fails.

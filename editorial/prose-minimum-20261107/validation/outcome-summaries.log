@@ -1,0 +1,67 @@
+{
+  "status": "PASS",
+  "syntheses": 70,
+  "summaries": 68,
+  "uniqueRCTs": 45,
+  "missingRCTParticipantCounts": 3,
+  "letters": {
+    "A": 0,
+    "B": 0,
+    "C": 6,
+    "D": 16,
+    "E": 29,
+    "F": 6,
+    "ungraded": 11
+  },
+  "longCovidMetformin": {
+    "rctCount": 3,
+    "participants": 4909,
+    "participantBasis": "Participants in the included randomized comparisons, counted once per trial; see study details for enrollment and analysis populations.",
+    "trialFamilyIds": [
+      "S-COVIDOUT-2023",
+      "S-ACTIV6-2026",
+      "S-KOREA-2026"
+    ],
+    "sourceIds": [
+      "P-COVIDOUT-2023",
+      "P-ACTIV6-2026",
+      "P-KOREA-2026"
+    ],
+    "trials": [
+      {
+        "id": "S-COVIDOUT-2023",
+        "participants": 1431,
+        "participantBasis": "1431 randomized in COVID-OUT; study-level population, not the 1126-person Long COVID follow-up subset.",
+        "sourceIds": [
+          "P-COVIDOUT-2023"
+        ]
+      },
+      {
+        "id": "S-ACTIV6-2026",
+        "sourceIds": [
+          "P-ACTIV6-2026"
+        ],
+        "participants": 3214,
+        "participantBasis": "3214 randomized in ACTIV-6; 2983 in the recorded analysis population."
+      },
+      {
+        "id": "S-KOREA-2026",
+        "participants": 264,
+        "participantBasis": "264 participants in the metformin and placebo comparison (132 per arm); excludes the separate ursodeoxycholic-acid arm.",
+        "sourceIds": [
+          "P-KOREA-2026"
+        ]
+      }
+    ]
+  },
+  "checks": [
+    "source and row closure",
+    "explicit source-located assessments",
+    "stale input and projection rejection",
+    "held/computational grade rejection",
+    "overlap-aware trial and participant totals",
+    "conflicting denominator rejection",
+    "unknown is null",
+    "single-summary explanation preserved"
+  ]
+}

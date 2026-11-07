@@ -1,0 +1,180 @@
+{
+  "reviewId": "RRX-PROSE-MINIMUM-20261104-GP-PLAN-REVIEW-v2",
+  "reviewedAt": "2026-11-04T19:11:49.873111+00:00",
+  "reviewType": "Independent prospective planning review; not source acquisition, extraction, scientific acceptance or release",
+  "baseCommit": "c63f817efc74afd0c7bcbef8b23dcd1d2a039c59",
+  "recommendation": "HOLD",
+  "scope": "PLAN-v2 context recovery only; root integrator records actual GP Plan readiness after resolving material defects and rechecking exact changed artifacts.",
+  "inputHashes": [
+    {
+      "path": "research/batches/RRX-PROSE-MINIMUM-20261104/PLAN-v2.md",
+      "sha256": "64bff09d381db9465e6a45ed06fd45c5e608dad38e261ef652e958e4a1b3126b"
+    },
+    {
+      "path": "research/batches/RRX-PROSE-MINIMUM-20261104/context-extraction.schema.json",
+      "sha256": "1ad3a22d36af135408ea43ce15308fc69063e9c30287022ed68df3a3863573f1"
+    },
+    {
+      "path": "research/batches/RRX-PROSE-MINIMUM-20261104/source-inventory.json",
+      "sha256": "3cb681caaba9e2c1848d5b13d7c02580db48d52dcb0a4a1da7f36ded0b9e5cf7"
+    },
+    {
+      "path": "rules/one-match-rule/ONE-MATCH-RULE.md",
+      "sha256": "7fae46e83e1da5e139b0ab2d11ca02292603c63a50f764c89819b0792bc2f330"
+    },
+    {
+      "path": "docs/RESEARCH-INGEST.md",
+      "sha256": "5a23dd957a5fe86ba444c198e91e06a21f9e7f4c6f33b083749da01debbf2078"
+    },
+    {
+      "path": "docs/PROJECT-RULES.md",
+      "sha256": "ae2f84b4b5df38594f8e409101876118597a69ba26df5135e1ddeef66386bb2a"
+    },
+    {
+      "path": "docs/RULE-CHANGELOG.md",
+      "sha256": "d2c9b0f3e6a561dc55975ef888de6240eca2b2e2936cffa60ac25530b2e96df3"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "f7282c1927c4bb082bdc0603d95c376a50477e926f34af4cbd233d943c116781"
+    },
+    {
+      "path": "docs/PROSE-SECTIONS.md",
+      "sha256": "fcb62c7330cfbf5660855f82dd1d97f76510adfbdc30ff9bee640aed46a4ca71"
+    },
+    {
+      "path": "editorial/prose-minimum-20261104/baseline.json",
+      "sha256": "12ddd6d96a2d1ddc93c84e971435e57d9eb4559053203547cb689ea4680bc07d"
+    }
+  ],
+  "prerequisitesRead": {
+    "completePinnedRule": true,
+    "pinnedRuleLines": 903,
+    "researchIngest": true,
+    "currentProjectPolicies": true,
+    "sourceInventoryAllEntries": true,
+    "planAndSchema": true
+  },
+  "checks": [
+    {
+      "id": "scope-registry",
+      "status": "PASS",
+      "evidence": "Group files contain 66 distinct guide IDs: 34 Drug and 32 Condition. All resolve to existing canonical/discovery guide identities."
+    },
+    {
+      "id": "source-identity-closure",
+      "status": "PASS",
+      "evidence": "All 63 distinct inventory source IDs resolve to canonical source records with exact title and URL equality. All source/page associations are existing page sourceIds; no duplicate exact URLs."
+    },
+    {
+      "id": "same-filesystem-input-access",
+      "status": "PASS",
+      "evidence": "Plan, schema, inventory, group files and baseline are readable in the shared checkout. Same-environment operation does not require an invented external Grok transfer."
+    },
+    {
+      "id": "raw-location",
+      "status": "HOLD",
+      "evidence": "Planned raw directory does not exist yet. Its parent /Users/kmfp/Documents/ChatGPT/Drug Repurposing is itself a Git worktree. git check-ignore private-guides/prose-context-20261104/raw/example.html returned exit 1, so the planned raw location is not excluded by current enclosing-repository ignore rules."
+    },
+    {
+      "id": "schema-syntax",
+      "status": "PASS",
+      "evidence": "Schema parses as JSON and declares draft 2020-12. This is syntax inspection, not completed runtime validation of returns."
+    },
+    {
+      "id": "schema-semantic-completeness",
+      "status": "HOLD",
+      "evidence": "See PR-02 and PR-04. No sources or returns exist under this prospective batch; Python jsonschema is not installed and no declared batch validation command/example is supplied."
+    },
+    {
+      "id": "calibration-order",
+      "status": "PASS",
+      "evidence": "Plan explicitly requires Metformin plus another assigned label and integrator locator/fidelity review before scaling; calibration has not started. See advisory PA-02 for dispatch detail."
+    },
+    {
+      "id": "scientific-preservation",
+      "status": "PASS",
+      "evidence": "Existing outcome grades, study families, correction/retraction holds, Q01-Q15 review states and protected CP027/CP028 material are explicitly preserved. Workers write candidates/receipts only; exact guide/section IDs, idempotence, concurrent-main reconciliation and bounded rollback are specified."
+    },
+    {
+      "id": "release-conflict",
+      "status": "PASS",
+      "evidence": "Plan correctly distinguishes recovery readiness from release and explicitly records that official non-DOI CONTEXT sources conflict with the unchanged DOI-on-file/Crossref citation gate. This conflict is a later release blocker, not permission to alter the gate and not by itself a reason to stop compliant private context recovery."
+    }
+  ],
+  "defects": [
+    {
+      "id": "PR-01",
+      "severity": "material",
+      "artifact": "source-inventory.json + PLAN-v2.md Scope/Calibration",
+      "issue": "Inventory includes COND-C09-PAXD-PROTOCOL, a canonical Trial protocol at PMC9046747. The plan limits recovery to official regulatory/general context and says no scholarly citation is newly acquired. CONTEXT classification does not make a scholarly protocol an official label or waive its paper/review obligations.",
+      "requiredCorrection": "Exclude this entry from this recovery batch, or explicitly version the plan to include existing scholarly protocol recovery with its source/access/Q01-Q15 dependencies and separate protocol classification. Do not acquire it under the unreconciled v2 scope."
+    },
+    {
+      "id": "PR-02",
+      "severity": "material",
+      "artifact": "context-extraction.schema.json",
+      "issue": "The required receipt contract is not enforced: no resolvedUrl, mediaType, observed source version/date, identityMatch/product/formulation/route/indication/jurisdiction fields, rights/redistribution state, observation ID or plan/schema version binding. full_text currently permits file=null, sha256=null, observations=[] and gaps=[]; sha256 accepts arbitrary strings. Empty sourceId/claim/locator/scope also validate by shape.",
+      "requiredCorrection": "Add required receipt/identity/version and observation identity fields or a separately declared receipt schema with an explicit foreign key. Require real private file/hash/media evidence for successful access, validate hashes and nonempty locators/claims, and require explained missingness/next action for failed or partial source/field coverage. Keep actual original and resolved URLs distinct. Bind source membership and page/section targets by a declared cross-record validator. Retain the six distinct existing missingness states."
+    },
+    {
+      "id": "PR-03",
+      "severity": "material",
+      "artifact": "PLAN-v2.md Locations",
+      "issue": "The raw path is outside the inner application Git repository but inside the enclosing Drug Repurposing Git repository and is not currently ignored. The promise that raw sources stay outside Git is therefore not established.",
+      "requiredCorrection": "Choose a persistent private location outside both Git worktrees, or explicitly exclude the complete raw/staging tree in the enclosing repository and verify git check-ignore before receipt. Do not place raw sources in the batch return directory or public assets."
+    },
+    {
+      "id": "PR-04",
+      "severity": "material",
+      "artifact": "context-extraction.schema.json + PLAN-v2.md validation contract",
+      "issue": "The portable minimum contract requires at least one illustrative valid record; none is supplied. The plan says returns will be validated but supplies no named validator/command or adversarial receipt cases to prove the schema and relationship rules are usable before dispatch.",
+      "requiredCorrection": "Supply a clearly synthetic, production-excluded successful-receipt example and missing-access example, plus an executable validation path for schema and inventory/page/source/hash closure. Verify the examples and deliberate failures for null successful receipts, unknown source IDs, identity mismatch and missing locators before recording readiness."
+    }
+  ],
+  "advisories": [
+    {
+      "id": "PA-01",
+      "issue": "All 63 inventory entries carry the same three generic questions, including condition-care and drug-interaction questions on generic FDA/NCCIH terminology sources. Only 48 of 66 guides have an inventory association; 18 have none, including Niclosamide, Methylene blue and Melphalan.",
+      "action": "Narrow each source to relevant reader questions/active section IDs and record the excluded/no-eligible-context pages as explicit pending gaps. This bounded plan may still recover only its 63 eligible contexts; it must not claim all-page compliance from that subset.",
+      "guideIdsWithoutInventory": [
+        "G-CONDITION-C03",
+        "G-CONDITION-C04",
+        "G-CONDITION-C07",
+        "G-CONDITION-C08",
+        "G-CONDITION-C12",
+        "G-CONDITION-C13",
+        "G-CONDITION-C14",
+        "G-CONDITION-C16",
+        "G-CONDITION-C17",
+        "G-CONDITION-C18",
+        "G-CONDITION-C19",
+        "G-CONDITION-C20",
+        "G-CONDITION-C21",
+        "G-CONDITION-C22",
+        "G-CONDITION-C23",
+        "G-DRUG-D21",
+        "G-DRUG-MB01",
+        "G-DRUG-MEL01"
+      ]
+    },
+    {
+      "id": "PA-02",
+      "issue": "Calibration sequencing exists, but the second label and concrete pass/fail evidence are deferred. Inventory includes HTML labels, a PDF label and nonlabel official pages.",
+      "action": "Before calibration dispatch name exact source IDs and expected identity/scope fields. Cover format/source variation in calibration or document why a two-label check suffices before extending to PDF and nonlabel pages. Record exact calibration acceptance separately; plan review is not that acceptance."
+    },
+    {
+      "id": "PA-03",
+      "issue": "Official-source access and product identities are prospective, not verified by existing URLs.",
+      "action": "At receipt retain inaccessible/identity-mismatched sources as gaps, preserve source versions and retries, and recheck whether a changed label invalidates any dependent old claim. Never equate a DailyMed update date with an approval year."
+    }
+  ],
+  "operationsPerformed": {
+    "newSourcesAcquired": 0,
+    "sourcesExtracted": 0,
+    "canonicalRecordsModified": 0,
+    "scientificAcceptancesGranted": 0,
+    "publicationActions": 0
+  },
+  "nextSafeAction": "Root integrator resolves PR-01 through PR-04, versions plan/schema/inventory as needed and records a rechecked GP Plan decision with new hashes. Independent editorial work can continue. Calibration and other dependent context recovery remain unstarted until readiness is recorded."
+}

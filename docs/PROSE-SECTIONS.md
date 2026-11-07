@@ -1,0 +1,38 @@
+# Canonical prose-section minimum
+
+Adopted November 4, 2026 from the owner's supplied Metformin paragraph and instruction: “The number of words / characters in this paragraph is the amount of minimum prose we want in these sections. I want this to be canonical.”
+
+Scope clarified by the owner on November 4, 2026: “not just mechanism of action. Prose sections.” This supersedes the initial mechanism-only interpretation.
+
+## Requirement
+
+Every existing and future RemapRx **prose section** must contain substantive, connected, visible narrative prose of **at least 113 words and 845 characters including spaces**, measured as described below. This applies across drug, condition and other editorial article types, including Overview, Benefits, Mechanism of Action, Safety, Comparisons, Evidence and equivalent narrative sections wherever present. This is a minimum per section, not per paragraph, a target length or a maximum. The prose may span cohesive paragraphs. The supplied Metformin paragraph is the canonical length benchmark; its drug-specific statements must not be copied into other topics.
+
+The prose must answer the section's subject with useful, topic-specific explanation. For example, Overview establishes context, Benefits explains investigated benefits and findings, Mechanism of Action explains established action and repurposing rationale, Safety explains supported harms and relevant restrictions, and Evidence explains findings and their limits. Define unfamiliar terms where needed. Keep claims source-bound, distinguish experimental effects, proposed explanations and clinical outcomes, and retain meaningful scientific uncertainty. Additional length must add supported explanation rather than repetition or generic warnings.
+
+Apply the floor independently to each prose section; prose in another section cannot make up a shortfall. Count its visible narrative prose. Headings, citation markers, table contents, accordion/disclosure bodies, labels and other structured content cannot substitute for that prose. Preserve existing citations and inline term links in the rendered prose; exclude their formatting and citation labels only when counting. The floor does not require every individual paragraph, FAQ answer, study card or interface label to have 113 words, and does not turn structured modules such as References or Update History into prose sections.
+
+This adopts a site-wide prose minimum, superseding the earlier absence of a numerical floor, the initial mechanism-only interpretation and any treatment of prose depth as pilot-only. It does not adopt the Metformin accordion or itraconazole table layout site-wide. Existing page-specific section structures remain in force; condition pages retain their condition-first structure, without adding a standalone Mechanism of Action section where that contract omits one.
+
+## Counting convention and retained benchmark
+
+Count the reader-visible prose after removing citation markers and link/HTML/Markdown formatting, retaining inline link text such as “mTOR.” Trim leading/trailing whitespace and normalize each internal run of whitespace to one ordinary space. A word is a whitespace-separated token; hyphenated words and possessives remain single tokens. Count Unicode characters, including spaces and punctuation, rather than encoded bytes. Exclude the section heading and reference URLs.
+
+The following exact prose, normalized to one paragraph and with citation markers removed, contains **113 words**, **845 characters including spaces**, and **733 characters excluding whitespace**:
+
+> Metformin’s established glucose-lowering action combines reduced glucose production by the liver, reduced intestinal glucose absorption and improved uptake and use of glucose by tissues. It improves insulin sensitivity without stimulating insulin secretion. Repurposing research asks whether changes in cellular energy sensing, growth signals and the handling of damaged cellular material can be useful beyond diabetes. AMPK is an energy-sensing enzyme, while mTOR signaling helps regulate protein production and cell growth; altering these systems can have different consequences in infected cells, tumors and healthy muscle. The evidence below distinguishes effects measured in experimental models from proposed explanations and from clinical outcomes, because demonstrating a pathway change does not establish that a treatment helps patients.
+
+The owner-supplied citation mapping is retained for identification: the established-action sentences cite `MF-LABEL-2025`; the pathway/context explanation cites `MF-COVID-VIRAL-2024`, `MF-PD-MECHANISM-2016`, `MF-MASTERS-2019` and `MF-MYELOMA-MODELS-2018`. The supplied inline glossary target is `/glossary/mtor`. Recording this benchmark is not a fresh source appraisal or a change to those claims.
+
+## Adoption and verification status
+
+The contract, project-rule entry and changelog establish the requirement now. The benchmark counts were computed directly from the retained prose. Repository governance validation is recorded in the changelog. Existing-page compliance audit, any source-backed expansion and automated content-check enforcement remain separate implementation work; this adoption does not declare every current section compliant or publish revised scientific content. The pinned One Match Rule snapshot and its historical records remain unchanged; reusable upstream synchronization is pending.
+
+
+## November 7, 2026 implementation
+
+The owner requested completion of the drug and condition rollout after asking whether it had finished. The implemented floor is 113 words AND 845 Unicode characters including spaces in each rendered narrative section, with both checks applied independently. The all-page audit covers 66 drug/condition profiles and 504 rendered prose sections. It excludes citation markers, disclosure bodies, tables and hidden content; visibly empty required narrative modules fail. This completes the local prose expansion and adds `npm run check:prose` to the production build. It does not change the separate 5,000-word/15-DOI indexing criteria or declare the pages scientifically complete.
+
+The integration restores 32 condition mechanism identities and two glossary mechanism records accidentally replaced by duplicate hyphae records in a9ac0c5. It keeps the current drug mechanisms, restores the exact non-drug identities from that commit's parent, and then expands condition prose under those identities. New required Melphalan Quality and mechanism prose, and the methylene-blue established-action explanation, use the exact cited official product labels with route-specific limits. Product-label receipts and hashes are private research records; raw source bytes remain outside Git. Existing linked navigation sentences and the ivermectin retraction exclusions are preserved.
+
+Existing source identifiers were reconciled against the earlier verified citation work and exact Europe PMC/Crossref metadata. Bibliographic manifests explicitly do not claim full-text deposits. Metadata-only reassessment retained all confidence and benefit grades, findings, scopes, effect values and trial counts. The canonical and public outcome-summary projection is unchanged. Citation verification is still required before release. The unresolved Crossref identity for the existing myeloma experiment is retained as a blocker rather than inventing a DOI, pretending a DOI-bearing article has no DOI or silently deleting its claims. Final validation and release state are recorded in `editorial/prose-minimum-20261107/completion.json`. No live publication is claimed while that gate fails.
