@@ -1,5 +1,11 @@
 # Second Look rule changelog
 
+## 2026-11-07: methylene blue Results section extended with the two Brazilian toenail studies
+
+Source: scheduled fill run (`.claude/scheduled-fill-prompt.md`), branch `fill/remaprx-methylene-blue-results-onychomycosis-2026-11-07`. Scope: the Results section of `/drugs/methylene-blue` in `data/content.json` and `data/public-content.json` now reports, from the open-access PMC full texts, the 22-patient open-label study (10.1590/abd1806-4841.20142197) and the four-patient endonyx case series (10.1590/abd1806-4841.20132180): light protocol, response rates by group and week, and stated limitations. The study's 63.3% versus 63.6% inconsistency and its unquantified mycological cure are noted as the paper reports them. No new DOI, grade or outcome row.
+
+Superseded behavior: the Results section did not cover these two sources. Release status: PR with label `evidence-fill`, merged only by the evidence gate. Remaining work: evidence table, more body words, new deposit for distinct DOIs (the RRX-GAP-0582 deposit lists only 8).
+
 ## 2026-11-06: methylene blue Safety section deepened
 
 Source: scheduled fill run (`.claude/scheduled-fill-prompt.md`), branch `fill/remaprx-methylene-blue-safety-prose-2026-11-06`. Scope: the Safety section of `/drugs/methylene-blue` in `data/content.json` and `data/public-content.json` now reports, from the open-access PMC full texts, the septic shock trial adverse events (urine discoloration 42 of 45, methemoglobin 2.9% versus 0.5%, exclusion of G6PD deficiency, phenothiazine or dye allergy and recent SSRI use), the disc injection neurotoxicity caution and the child case report. DOIs used: 10.1186/s13054-023-04397-7, 10.5535/arm.2012.36.5.657, 10.7759/cureus.40213, 10.1007/s00403-022-02448-7. No new DOI, grade or outcome row.
