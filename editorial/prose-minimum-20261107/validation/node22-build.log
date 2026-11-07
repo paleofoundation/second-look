@@ -79,61 +79,65 @@ Guide edition/preview hashes match; no full guide is present in public downloads
   vinext build  (Vite 8.0.13)
 
 [1/5] analyze client references...
-[2Ktransforming...✓ 394 modules transformed.
+[2K
+transforming...✓ 394 modules transformed.
 rendering chunks...
 ✓ built in 2.94s
 [2/5] analyze server references...
-[2Ktransforming...✓ 333 modules transformed.
+[2K
+transforming...✓ 333 modules transformed.
 rendering chunks...
 ✓ built in 532ms
 [3/5] build rsc environment...
-[2Ktransforming...✓ 391 modules transformed.
+[2K
+transforming...✓ 391 modules transformed.
 rendering chunks...
 computing gzip size...
 ✓ built in 1.74s
 [4/5] build client environment...
-[2Ktransforming...✓ 2137 modules transformed.
+[2K
+transforming...✓ 2137 modules transformed.
 rendering chunks...
 computing gzip size...
-[plugin builtin:vite-reporter] 
+[plugin builtin:vite-reporter]
 (!) Some chunks are larger than 500 kB after minification. Consider:
 - Using dynamic import() to code-split the application
 - Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
 - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
 ✓ built in 1.95s
 [5/5] build ssr environment...
-[2Ktransforming...✓ 335 modules transformed.
+[2K
+transforming...✓ 335 modules transformed.
 rendering chunks...
 computing gzip size...
 ✓ built in 848ms
 [0m
   Route (app)
-  ┌ ƒ /                                         
-  ├ ƒ /:path+                                   
-  ├ λ /account/continue                         
-  ├ ƒ /account/intake                           
-  ├ ƒ /account/physician-packets                
-  ├ ƒ /account/profile                          
-  ├ λ /api/billing/portal                       
-  ├ λ /api/checkout                             
-  ├ λ /api/corrections                          
-  ├ λ /api/guides/:editionId/download           
-  ├ λ /api/guides/:editionId/reader             
-  ├ λ /api/library                              
-  ├ λ /api/library/guides                       
-  ├ λ /api/physician-packets                    
-  ├ λ /api/physician-packets/:condition         
+  ┌ ƒ /
+  ├ ƒ /:path+
+  ├ λ /account/continue
+  ├ ƒ /account/intake
+  ├ ƒ /account/physician-packets
+  ├ ƒ /account/profile
+  ├ λ /api/billing/portal
+  ├ λ /api/checkout
+  ├ λ /api/corrections
+  ├ λ /api/guides/:editionId/download
+  ├ λ /api/guides/:editionId/reader
+  ├ λ /api/library
+  ├ λ /api/library/guides
+  ├ λ /api/physician-packets
+  ├ λ /api/physician-packets/:condition
   ├ λ /api/physician-packets/:condition/download
-  ├ λ /api/profile                              
-  ├ λ /api/purchases                            
-  ├ λ /api/reviews/:id                          
-  ├ λ /api/stripe/webhook                       
-  ├ ƒ /guides/read/:editionId                   
-  ├ λ /robots.txt                               
-  ├ λ /sitemap.xml                              
-  └ λ /sitemaps/:part                           
+  ├ λ /api/profile
+  ├ λ /api/purchases
+  ├ λ /api/reviews/:id
+  ├ λ /api/stripe/webhook
+  ├ ƒ /guides/read/:editionId
+  ├ λ /robots.txt
+  ├ λ /sitemap.xml
+  └ λ /sitemaps/:part
 
   λ API  ƒ Dynamic
 
   Build complete. Run `vinext start` to start the production server.
-
